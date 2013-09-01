@@ -43,17 +43,9 @@ msgstr "Guida Add-on"
 msgid  "All"
 msgstr "Tutto"
 
-#: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
-msgstr "~Aggiorna"
-
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
 msgid  "~Close & Return to "
 msgstr "Chiudi e ritorna a "
-
-#: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
-msgid  "Visible ~Buttons"
-msgstr "~Pulsanti visibili"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
 msgid  "~Customize Toolbar..."
@@ -61,11 +53,11 @@ msgstr "~Personalizza barra degli strumenti..."
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.MENUITEM.TEXT
 msgid  "~Dock Toolbar"
-msgstr "~Ancora barra degli strumenti"
+msgstr "Aggancia barra degli strumenti"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.MENUITEM.TEXT
 msgid  "Dock ~All Toolbars"
-msgstr "Ancora ~tutte le barre degli strumenti"
+msgstr "Aggancia tutte le barre degli strumenti"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.MENUITEM.TEXT
 msgid  "~Lock Toolbar Position"
@@ -79,9 +71,13 @@ msgstr "Chiudi ~barra degli strumenti"
 msgid  "Save Copy ~as..."
 msgstr "Salva copia con ~nome..."
 
-#: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
-msgid  "No Documents"
-msgstr "Nessun documento"
+#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
+msgid  "Clear List"
+msgstr "Svuota elenco"
+
+#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
+msgid  "Clears the list with the most recently opened files. This action can not be undone."
+msgstr "Cancella l'elenco dei file aperti di recente. Questa azione non può essere annullata."
 
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
 msgid  "Add-On %num%"
@@ -115,17 +111,9 @@ msgstr "2."
 msgid  "Accept the License Agreement."
 msgstr "Accetto i termini del contratto."
 
-#: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
-msgstr "~Accetto"
-
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
 msgstr "Non accetto"
-
-#: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
-msgid  "Retry"
-msgstr "Riprova"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"

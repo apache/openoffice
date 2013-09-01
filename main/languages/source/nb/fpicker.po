@@ -31,93 +31,21 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Create New Directory"
-msgstr "Lag en ny mappe"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_LISTVIEW.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "List"
-msgstr "Liste"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_DETAILSVIEW.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Details"
-msgstr "Detaljer"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_UP.MENUBUTTON.QUICKHELPTEXT
-msgid  "Up One Level"
-msgstr "Ett nivå opp"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_STANDARD.MENUBUTTON.QUICKHELPTEXT
-msgid  "Default Directory"
-msgstr "Standardmappe"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
-msgid  "File ~name:"
-msgstr "F~ilnavn:"
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILETYPE.FIXEDTEXT.TEXT
 msgid  "File ~type:"
 msgstr "Fil~type:"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_READONLY.CHECKBOX.TEXT
-msgid  "~Read-only"
-msgstr "~Skrivebeskyttet"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_PASSWORD.CHECKBOX.TEXT
 msgid  "Save with password"
 msgstr "Lagre med passord"
 
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_AUTO_EXTENSION.CHECKBOX.TEXT
-msgid  "~Automatic file name extension"
-msgstr "~Automatisk filetternavn"
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_OPTIONS.CHECKBOX.TEXT
 msgid  "Edit ~filter settings"
 msgstr "Rediger ~filterinnstillinger"
 
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_OPEN.PUSHBUTTON.TEXT
-msgid  "~Open"
-msgstr "Å~pne"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_OPEN.STRING.TEXT
-msgid  "Open"
-msgstr "Åpne"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_SAVE.STRING.TEXT
-msgid  "Save as"
-msgstr "Lagre som"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_BUTTONSAVE.STRING.TEXT
-msgid  "~Save"
-msgstr "La~gre"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHNAME.STRING.TEXT
-msgid  "~Path:"
-msgstr "~Sti:"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHSELECT.STRING.TEXT
-msgid  "Select path"
-msgstr "Velg sti"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_BUTTONSELECT.STRING.TEXT
-msgid  "~Select"
-msgstr "~Velg"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_ACTUALVERSION.STRING.TEXT
-msgid  "Current version"
-msgstr "Gjeldende versjon"
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PREVIEW.STRING.TEXT
 msgid  "File Preview"
 msgstr "Forhåndsvisning"
-
-#: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FT_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDTEXT.TEXT
-msgid  "Na~me"
-msgstr "~Navn"
-
-#: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FL_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDLINE.TEXT
-msgid  "Create new folder"
-msgstr "Lag ny mappe"
 
 #: office/iodlg.src#RID_FILEOPEN_INVALIDFOLDER.STRING.TEXT
 msgid  "$name$ does not exist."
@@ -127,17 +55,9 @@ msgstr "$name$ finnes ikke."
 msgid  "The file $name$ does not exist.\nMake sure you have entered the correct file name."
 msgstr "Fila $name$ finnes ikke.\nPass på at du har skrevet inn det rette filnavnet."
 
-#: office/iodlg.src#STR_FILTERNAME_ALL.STRING.TEXT
-msgid  "All files (*.*)"
-msgstr "Alle filer (*.*)"
-
 #: office/iodlg.src#STR_SVT_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
 msgstr "Fila finnes fra før. Vil du skrive over den?"
-
-#: office/iodlg.src#STR_SVT_NEW_FOLDER.STRING.TEXT
-msgid  "Folder"
-msgstr "Mappe"
 
 #: office/iodlg.src#STR_SVT_NOREMOVABLEDEVICE.STRING.TEXT
 msgid  "No removable storage device detected.\nMake sure it is plugged in properly and try again."
@@ -147,57 +67,21 @@ msgstr "Ingen flyttbare lagringsenheter ble funnet.\nKontroller at den er koblet
 msgid  "All Formats"
 msgstr "Alle formater"
 
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_AUTO_EXTENSION.STRING.TEXT
-msgid  "~Automatic file name extension"
-msgstr "~Automatisk filetternavn"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_PASSWORD.STRING.TEXT
-msgid  "Save with pass~word"
-msgstr "~Lagre med passord"
-
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_OPTIONS.STRING.TEXT
 msgid  "~Edit filter settings"
 msgstr "~Rediger filterinnstillingene"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_READONLY.STRING.TEXT
-msgid  "~Read-only"
-msgstr "~Skrivebeskyttet"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_INSERT_AS_LINK.STRING.TEXT
-msgid  "~Link"
-msgstr "~Lenke"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_SHOW_PREVIEW.STRING.TEXT
-msgid  "Pr~eview"
-msgstr "For~håndsvisning"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_PLAY.STRING.TEXT
 msgid  "~Play"
 msgstr "~Spill"
 
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_VERSION.STRING.TEXT
-msgid  "~Version:"
-msgstr "~Versjon:"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_TEMPLATES.STRING.TEXT
-msgid  "S~tyles:"
-msgstr "~Maler:"
-
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_IMAGE_TEMPLATE.STRING.TEXT
 msgid  "Style:"
 msgstr "Stil:"
 
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_SELECTION.STRING.TEXT
-msgid  "~Selection"
-msgstr "U~tvalg"
-
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_TITLE.STRING.TEXT
 msgid  "File ~type:"
 msgstr "Fil~type:"
-
-#: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_TITLE.STRING.TEXT
-msgid  "Select Path"
-msgstr "Velg sti"
 
 #: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_DESCRIPTION.STRING.TEXT
 msgid  "Please select a folder."

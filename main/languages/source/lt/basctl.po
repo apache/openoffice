@@ -37,11 +37,11 @@ msgstr "Spausdinimo rėžiai"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM2.ITEMLIST.ITEM
 msgid  "All ~Pages"
-msgstr "Vis~kas"
+msgstr "Viskas"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
 msgid  "Pa~ges"
-msgstr "P~uslapiai"
+msgstr "Puslapiai"
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
 msgid  "<All>"
@@ -53,7 +53,7 @@ msgstr "< Nėra modulio >"
 
 #: basicide/basidesh.src#RID_STR_WRONGPASSWORD.STRING.TEXT
 msgid  "Incorrect Password"
-msgstr "Neteisingas slaptažodis."
+msgstr "Netaisyklingas slaptažodis."
 
 #: basicide/basidesh.src#RID_STR_OPEN.STRING.TEXT
 msgid  "Load"
@@ -61,27 +61,27 @@ msgstr "Įkelti"
 
 #: basicide/basidesh.src#RID_STR_SAVE.STRING.TEXT
 msgid  "Save"
-msgstr "Įrašyti"
+msgstr "Saugoti"
 
 #: basicide/basidesh.src#RID_STR_SOURCETOBIG.STRING.TEXT
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "Pirminis tekstas yra per ilgas ir jo negalima sukompiliuoti ar įrašyti.\nPašalinkite dalį komentarų arba perkelkite dalį metodų į kitą modulį."
+msgstr "Pirminis tekstas yra per ilgas, jo negalima nei kompiliuoti, nei saugoti.\nTrinti dalį pastabų arba perkelkite dalį metodų į kitą modulį."
 
 #: basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.STRING.TEXT
 msgid  "Error opening file"
-msgstr "Failo atvėrimo klaida"
+msgstr "Klaida atverčiant bylą"
 
 #: basicide/basidesh.src#RID_STR_ERROROPENLIB.STRING.TEXT
 msgid  "Error loading library"
-msgstr "Bibliotekos įkėlimo klaida"
+msgstr "Klaida įkeliant biblioteką"
 
 #: basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.STRING.TEXT
 msgid  "The file does not contain any BASIC libraries"
-msgstr "Faile nėra jokių „BASIC“ kalbos bibliotekų"
+msgstr "Byloje nėra beisiko bibliotekų"
 
 #: basicide/basidesh.src#RID_STR_BADSBXNAME.STRING.TEXT
 msgid  "Invalid Name"
-msgstr "Neteisingas pavadinimas"
+msgstr "Neleidžiamas pavadinimas"
 
 #: basicide/basidesh.src#RID_STR_LIBNAMETOLONG.STRING.TEXT
 msgid  "A library name can have up to 30 characters."
@@ -89,7 +89,7 @@ msgstr "Bibliotekos pavadinime gali būti iki 30 rašmenų."
 
 #: basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.STRING.TEXT
 msgid  "Macros from other documents are not accessible."
-msgstr "Kitų dokumentų makrokomandos neprieinamos."
+msgstr "Kitų dokumentų makrokomandos nepasiekiamos."
 
 #: basicide/basidesh.src#RID_STR_LIBISREADONLY.STRING.TEXT
 msgid  "This library is read-only."
@@ -97,11 +97,11 @@ msgstr "Biblioteką galima tik skaityti."
 
 #: basicide/basidesh.src#RID_STR_REPLACELIB.STRING.TEXT
 msgid  "'XX' cannot be replaced."
-msgstr "„XX“ negalima pakeisti."
+msgstr "„XX“ pakeisti negalima."
 
 #: basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.STRING.TEXT
 msgid  "'XX' cannot be added."
-msgstr "„XX“ negalima pridėti."
+msgstr "„XX“ pridėti negalima."
 
 #: basicide/basidesh.src#RID_STR_NOIMPORT.STRING.TEXT
 msgid  "'XX' was not added."
@@ -115,21 +115,17 @@ msgstr "Įrašykite „XX“ slaptažodį"
 msgid  "Name already exists"
 msgstr "Toks pavadinimas jau yra"
 
-#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
-msgid  "(Signed)"
-msgstr "(Pasirašytas)"
-
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
 msgid  "Object with same name already exists"
 msgstr "Objektas su tokiu pavadinimu jau yra"
 
 #: basicide/basidesh.src#RID_STR_FILEEXISTS.STRING.TEXT
 msgid  "The 'XX' file already exists"
-msgstr "Failas „XX“ jau yra"
+msgstr "Byla „XX“ jau yra"
 
 #: basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.STRING.TEXT
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "Saugumo sumetimais negalima vykdyti šios makrokomandos.\n\nDaugiau informacijos rasite saugumo nuostatose."
+msgstr "Saugumo sumetimais šios makrokomandos vykdyti negalite.\n\nDaugiau informacijos rasite saugumo nuostatose."
 
 #: basicide/basidesh.src#RID_STR_COMPILEERROR.STRING.TEXT
 msgid  "Compile Error: "
@@ -145,7 +141,7 @@ msgstr "Ieškinys nerastas"
 
 #: basicide/basidesh.src#RID_STR_SEARCHFROMSTART.STRING.TEXT
 msgid  "Search to last module complete. Continue at first module?"
-msgstr "Paieška atlikta iki paskutinio modulio. Ar tęsti paiešką nuo pirmo modulio?"
+msgstr "Ieškota iki paskutinio modulio. Ar ieškoti nuo pirmo modulio?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHREPLACES.STRING.TEXT
 msgid  "Search key replaced XX times"
@@ -153,23 +149,23 @@ msgstr "Ieškinys pakeistas XX kartų"
 
 #: basicide/basidesh.src#RID_STR_COULDNTREAD.STRING.TEXT
 msgid  "The file could not be read"
-msgstr "Failo negalima perskaityti"
+msgstr "Bylos perskaityti nepavyko"
 
 #: basicide/basidesh.src#RID_STR_COULDNTWRITE.STRING.TEXT
 msgid  "The file could not be saved"
-msgstr "Failo negalima įrašyti"
+msgstr "Bylos įrašyti nepavyko"
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.STRING.TEXT
 msgid  "The name of the default library cannot be changed."
-msgstr "Numatytosios bibliotekos pavadinimo negalima pakeisti."
+msgstr "Numatytosios bibliotekos pavadinimo keisti negalima."
 
 #: basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.STRING.TEXT
 msgid  "The name of a referenced library cannot be changed."
-msgstr "Nurodytos bibliotekos pavadinimo negalima pakeisti."
+msgstr "Nurodytos bibliotekos pavadinimo keisti negalima."
 
 #: basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.STRING.TEXT
 msgid  "The default library cannot be deactivated"
-msgstr "Numatytosios bibliotekos negalima išjungti"
+msgstr "Numatytosios bibliotekos nenaudoti negalima"
 
 #: basicide/basidesh.src#RID_STR_GENERATESOURCE.STRING.TEXT
 msgid  "Generating source"
@@ -177,7 +173,7 @@ msgstr "Kuriami pradiniai duomenys"
 
 #: basicide/basidesh.src#RID_STR_FILENAME.STRING.TEXT
 msgid  "File name:"
-msgstr "Failo vardas:"
+msgstr "Bylos pavadinimas:"
 
 #: basicide/basidesh.src#RID_STR_APPENDLIBS.STRING.TEXT
 msgid  "Import Libraries"
@@ -185,23 +181,23 @@ msgstr "Importuoti bibliotekas"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMACRO.STRING.TEXT
 msgid  "Do you want to delete the macro XX?"
-msgstr "Ar norite pašalinti XX makrokomandą?"
+msgstr "Ar norite ištrinti XX makrokomandą?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELDIALOG.STRING.TEXT
 msgid  "Do you want to delete the XX dialog?"
-msgstr "Ar norite pašalinti XX dialogo langą?"
+msgstr "Ar norite ištrinti XX dialogą?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIB.STRING.TEXT
 msgid  "Do you want to delete the XX library?"
-msgstr "Ar norite pašalinti XX biblioteką?"
+msgstr "Ar norite ištrinti XX biblioteką?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELLIBREF.STRING.TEXT
 msgid  "Do you want to delete the reference to the XX library?"
-msgstr "Ar norite pašalinti nuorodą į XX biblioteką?"
+msgstr "Ar norite ištrinti nuorodą į XX biblioteką?"
 
 #: basicide/basidesh.src#RID_STR_QUERYDELMODULE.STRING.TEXT
 msgid  "Do you want to delete the XX module?"
-msgstr "Ar norite pašalinti XX modulį?"
+msgstr "Ar norite ištrinti XX modulį?"
 
 #: basicide/basidesh.src#RID_STR_OBJNOTFOUND.STRING.TEXT
 msgid  "Object or method not found"
@@ -209,59 +205,35 @@ msgstr "Objektas arba metodas nerastas"
 
 #: basicide/basidesh.src#RID_STR_BASIC.STRING.TEXT
 msgid  "BASIC"
-msgstr "„BASIC“"
-
-#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
-msgid  "Ln"
-msgstr "Eil."
-
-#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
-msgid  "Col"
-msgstr "Stlp."
-
-#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
-msgid  "Document"
-msgstr "Dokumentas"
-
-#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
-msgid  "Macro Bar"
-msgstr "Makrokomandos juosta"
+msgstr "Beisikas"
 
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
 msgid  "The window cannot be closed while BASIC is running."
-msgstr "Lango negalima užverti, kol vykdoma „BASIC“ programa."
+msgstr "Veikiant beisikui lango užverti negalima."
 
 #: basicide/basidesh.src#RID_STR_REPLACESTDLIB.STRING.TEXT
 msgid  "The default library cannot be replaced."
-msgstr "Numatytosios bibliotekos negalima pakeisti."
+msgstr "Numatytosios bibliotekos pakeisti negalima."
 
 #: basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.STRING.TEXT
 msgid  "Reference to 'XX' not possible."
-msgstr "Nuoroda į „XX“ neįmanoma."
+msgstr "Nuoroda į „XX“ negalima."
 
 #: basicide/basidesh.src#RID_STR_WATCHNAME.STRING.TEXT
 msgid  "Watch"
 msgstr "Stebimoji reikšmė"
 
-#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
-msgid  "Variable"
-msgstr "Kintamasis"
-
-#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
-msgid  "Value"
-msgstr "Reikšmė"
-
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
 msgid  "Type"
-msgstr "Tipas"
+msgstr "Atmaina"
 
 #: basicide/basidesh.src#RID_STR_STACKNAME.STRING.TEXT
 msgid  "Call Stack"
-msgstr "Saugyklos iškvietimas"
+msgstr "Kreipinių dėklas"
 
 #: basicide/basidesh.src#RID_STR_INITIDE.STRING.TEXT
 msgid  "BASIC Initialization"
-msgstr "Pradedama „BASIC“ programa"
+msgstr "Pradedamas beisikas"
 
 #: basicide/basidesh.src#RID_STR_STDMODULENAME.STRING.TEXT
 msgid  "Module"
@@ -269,7 +241,7 @@ msgstr "Modulis"
 
 #: basicide/basidesh.src#RID_STR_STDDIALOGNAME.STRING.TEXT
 msgid  "Dialog"
-msgstr "Dialogo langas"
+msgstr "Dialogas"
 
 #: basicide/basidesh.src#RID_STR_STDLIBNAME.STRING.TEXT
 msgid  "Library"
@@ -285,27 +257,19 @@ msgstr "Naujas modulis"
 
 #: basicide/basidesh.src#RID_STR_NEWDLG.STRING.TEXT
 msgid  "New Dialog"
-msgstr "Naujas dialogo langas"
-
-#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
-msgid  "All"
-msgstr "Viską"
-
-#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
-msgid  "Page"
-msgstr "Puslapis"
+msgstr "Naujas dialogas"
 
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
 msgid  "A name must be entered."
-msgstr "Įrašykite pavadinimą."
+msgstr "Įvestinas pavadinimas."
 
 #: basicide/basidesh.src#RID_STR_WILLSTOPPRG.STRING.TEXT
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "Po šių pakeitimų reikės iš naujo paleisti programą.\nAr tęsti?"
+msgstr "Po šių pataisų turėsite iš naujo paleisti programą.\nAr tęsti?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHALLMODULES.STRING.TEXT
 msgid  "Do you want to replace the text in all active modules?"
-msgstr "Ar norite pakeisti tekstą visuose aktyviuose moduliuose?"
+msgstr "Ar tekstą norite pakeisti visuose naudojamuose moduliuose?"
 
 #: basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.BUTTONIMAGE.QUICKHELPTEXT
 msgid  "Remove Watch"
@@ -317,19 +281,15 @@ msgstr "Stebimoji reikšmė:"
 
 #: basicide/basidesh.src#RID_STR_STACK.STRING.TEXT
 msgid  "Calls: "
-msgstr "Iškvietimai: "
-
-#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
-msgid  "My Macros"
-msgstr "Naudotojo makrokomandos"
+msgstr "Kreipiniai: "
 
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
 msgid  "My Dialogs"
-msgstr "Naudotojo dialogo langai"
+msgstr "Naudotojo dialogai"
 
 #: basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.STRING.TEXT
 msgid  "My Macros & Dialogs"
-msgstr "Naudotojo makrokomandos ir dialogo langai"
+msgstr "Naudotojo makrokomandos ir dialogai"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROS.STRING.TEXT
 msgid  "%PRODUCTNAME Macros"
@@ -337,11 +297,11 @@ msgstr "„%PRODUCTNAME“ makrokomandos"
 
 #: basicide/basidesh.src#RID_STR_SHAREDIALOGS.STRING.TEXT
 msgid  "%PRODUCTNAME Dialogs"
-msgstr "„%PRODUCTNAME“ dialogo langai"
+msgstr "„%PRODUCTNAME“ dialogai"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.STRING.TEXT
 msgid  "%PRODUCTNAME Macros & Dialogs"
-msgstr "„%PRODUCTNAME“ makrokomandos ir dialogo langai"
+msgstr "„%PRODUCTNAME“ makrokomandos ir dialogai"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.MENU.TEXT
 msgid  "Properties"
@@ -349,7 +309,7 @@ msgstr "Savybės"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MENUITEM.TEXT
 msgid  "Active"
-msgstr "Aktyvusis"
+msgstr "Naudojamas"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MENUITEM.TEXT
 msgid  "Properties..."
@@ -361,47 +321,31 @@ msgstr "Tvarkyti stabdos taškus"
 
 #: basicide/basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.MENUITEM.TEXT
 msgid  "Manage Breakpoints..."
-msgstr "Stabdos taškai..."
+msgstr "Tvarkyti stabdos taškus..."
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.MENUITEM.TEXT
 msgid  "Insert"
-msgstr "Įterpti"
+msgstr "Terpti"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MENUITEM.TEXT
 msgid  "BASIC Module"
-msgstr "BASIC modulis"
+msgstr "Beisiko modulis"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MENUITEM.TEXT
 msgid  "BASIC Dialog"
-msgstr "BASIC dialogo langas"
+msgstr "Beisiko dialogas"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MENUITEM.TEXT
 msgid  "Delete"
-msgstr "Šalinti"
-
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
-msgid  "Rename"
-msgstr "Pervadinti"
-
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
-msgid  "Hide"
-msgstr "Slėpti"
+msgstr "Trinti"
 
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
 msgid  "Modules..."
 msgstr "Moduliai..."
 
-#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
-msgid  "Do you want to overwrite the XX macro?"
-msgstr "Ar norite perrašyti „XX“ makrokomandą?"
-
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
 msgid  "<Not localized>"
-msgstr "<Nelokalizuota>"
-
-#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
-msgid  "[Default Language]"
-msgstr "[Numatytoji kalba]"
+msgstr "<Nesuvietovinta>"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 msgid  "Document Objects"
@@ -419,137 +363,105 @@ msgstr "Moduliai"
 msgid  "Class Modules"
 msgstr "Klasių moduliai"
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
-msgid  "Replace"
-msgstr "Pakeisti"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
 msgid  "Dialog Import - Name already used"
-msgstr "Dialogo lango importavimas - toks pavadinimas jau yra"
+msgstr "Dialogo importavimas – toks pavadinimas jau yra"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.STRING.TEXT
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr "Bibliotekoje jau yra dialogo langas tokiu pavadinimu:\n\n$(ARG1)\n\nParinkite kitą dialogo lango pavadinimą, kad išsaugotumėte esamą dialogo langą, arba pakeiskite esamą dialogo langą naujuoju.\n "
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "Pridėti"
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
-msgid  "Omit"
-msgstr "Praleisti"
+msgstr "Dialogas tokiu pavadinimu bibliotekoje jau yra:\n\n$(ARG1)\n\nNorėdami išsaugoti dabartinį dialogo langą, pervadinkite jį, arba pakeiskite naujuoju.\n "
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
 msgid  "Dialog Import - Language Mismatch"
-msgstr "Dialogo lango importavimas - nesutampa kalbos"
+msgstr "Dialogo importavimas – nesuderintos kalbos"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr "Importuojamas dialogo langas suderinamas su kitomis kalbomis, nei paskirties biblioteka.\n\nPridėkite šias kalbas į biblioteką, kad galėtumėte naudotis dialogo lango kalbomis, arba praleiskite jas, kad išlaikytumėte esamas bibliotekos kalbas.\n\nPastaba: Kalboms, nesuderinamoms su dialogo langu, bus naudojami numatytosios dialogo lango kalbos ištekliai.\n "
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
-msgid  "New"
-msgstr "Naujas"
+msgstr "Importuojamas dialogas aptarnauja kitokias negu paskirties bibliotekos kalbas.\n\nPridėkite šias kalbas prie bibliotekos, jeigu dialogo langą norite papildyti naujais kalbos ištekliais, arba praleiskite jas, jeigu tenkinatės dabartinėmis bibliotekos kalbomis.\n\nĮsidėmėtina: kalboms, kurių dialogas neaptarnauja, bus taikomi numatytieji dialogo kalbos ištekliai.\n "
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
 msgid  "Delete"
-msgstr "Šalinti"
+msgstr "Trinti"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CHECKBOX.TEXT
 msgid  "Active"
-msgstr "Aktyvusis"
+msgstr "Naudojamas"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FIXEDTEXT.TEXT
 msgid  "Pass Count:"
 msgstr "Leidimų skaičius:"
 
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
-msgid  "Breakpoints"
-msgstr "Stabdos taškai"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
-msgid  "Manage Breakpoints"
-msgstr "Tvarkyti stabdos taškus"
-
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME Basic Macros"
-msgstr "„%PRODUCTNAME Basic“ makrokomandos"
+msgstr "„%PRODUCTNAME“ beisiko makrokomandos"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FIXEDTEXT.TEXT
 msgid  "Existing macros ~in:"
-msgstr "~Makrokomandos:"
+msgstr "Makrokomandos:"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FIXEDTEXT.TEXT
 msgid  "~Macro name"
-msgstr "~Makrokomandos pavadinimas"
+msgstr "Makrokomandos pavadinimas"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FIXEDTEXT.TEXT
 msgid  "Macro ~from"
-msgstr "Makrokomanda ~iš"
+msgstr "Makrokomanda iš"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FIXEDTEXT.TEXT
 msgid  "Save m~acro in"
-msgstr "Įrašyti m~akrokomandą"
+msgstr "Saugoti makrokomandą"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "De~scription"
-msgstr "A~prašas"
+msgstr "Aprašas"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PUSHBUTTON.TEXT
 msgid  "R~un"
-msgstr "~Vykdyti"
+msgstr "Vykdyti"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CANCELBUTTON.TEXT
 msgid  "Close"
-msgstr "Užverti"
+msgstr "Užversti"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PUSHBUTTON.TEXT
 msgid  "~Assign..."
-msgstr "P~arinkti..."
+msgstr "Priskirti..."
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PUSHBUTTON.TEXT
 msgid  "~Edit"
-msgstr "~Taisyti"
+msgstr "Taisyti"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PUSHBUTTON.TEXT
 msgid  "New ~Library"
-msgstr "Nauja ~biblioteka"
+msgstr "Nauja biblioteka"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PUSHBUTTON.TEXT
 msgid  "New M~odule"
-msgstr "Naujas m~odulis"
+msgstr "Naujas modulis"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PUSHBUTTON.TEXT
 msgid  "~Delete"
-msgstr "~Šalinti"
+msgstr "Trinti"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PUSHBUTTON.TEXT
 msgid  "~Organizer..."
-msgstr "~Tvarkytuvė..."
-
-#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
-msgid  "Macro"
-msgstr "Makrokomanda"
+msgstr "Tvarkytuvė..."
 
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 msgid  "~New"
-msgstr "~Naujas"
+msgstr "Naujas"
 
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
 msgid  "Choose"
 msgstr "Pasirinkti"
 
-#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "Vykdyti"
-
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
 msgid  "~Save"
-msgstr "~Įrašyti"
+msgstr "Saugoti"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.TABDIALOG.TEXT
 msgid  "%PRODUCTNAME Basic Macro Organizer"
-msgstr "„%PRODUCTNAME Basic“ makrokomandų tvarkytuvė"
+msgstr "„%PRODUCTNAME“ beisiko makrokomandų tvarkytuvė"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PAGEITEM.TEXT
 msgid  "Modules"
@@ -557,7 +469,7 @@ msgstr "Moduliai"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PAGEITEM.TEXT
 msgid  "Dialogs"
-msgstr "Dialogo langai"
+msgstr "Dialogai"
 
 #: basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.PAGEITEM.TEXT
 msgid  "Libraries"
@@ -565,55 +477,55 @@ msgstr "Bibliotekos"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FIXEDTEXT.TEXT
 msgid  "M~odule"
-msgstr "Mo~dulis arba dialogo langas"
+msgstr "Modulis"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PUSHBUTTON.TEXT
 msgid  "~Edit"
-msgstr "~Taisyti"
+msgstr "Taisyti"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CANCELBUTTON.TEXT
 msgid  "Close"
-msgstr "Užverti"
+msgstr "Užversti"
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PUSHBUTTON.TEXT
 msgid  "~New..."
-msgstr "~Naujas..."
+msgstr "Naujas..."
 
 #: basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PUSHBUTTON.TEXT
 msgid  "~Delete"
-msgstr "~Šalinti"
+msgstr "Trinti"
 
 #: basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FIXEDTEXT.TEXT
 msgid  "Dialog"
-msgstr "Dialogo langas"
+msgstr "Dialogas"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FIXEDTEXT.TEXT
 msgid  "L~ocation"
-msgstr "Programa arba do~kumentas"
+msgstr "Vieta"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FIXEDTEXT.TEXT
 msgid  "~Library"
-msgstr "~Biblioteka"
+msgstr "Biblioteka"
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PUSHBUTTON.TEXT
 msgid  "~Password..."
-msgstr "~Slaptažodis..."
+msgstr "Slaptažodis..."
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PUSHBUTTON.TEXT
 msgid  "~Import..."
-msgstr "~Importuoti..."
+msgstr "Importuoti..."
 
 #: basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PUSHBUTTON.TEXT
 msgid  "E~xport..."
-msgstr "~Eksportuoti..."
+msgstr "Eksportuoti..."
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr "Parinktys"
+msgstr "Veikimo nuostatos"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CHECKBOX.TEXT
 msgid  "Insert as reference (read-only)"
-msgstr "Įterpti nuorodą (tik skaitymui)"
+msgstr "Terpti kaip nuorodą (tik skaitymui)"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.CHECKBOX.TEXT
 msgid  "Replace existing libraries"
@@ -621,19 +533,19 @@ msgstr "Pakeisti esančias bibliotekas"
 
 #: basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FIXEDTEXT.TEXT
 msgid  "~Name:"
-msgstr "~Pavadinimas:"
+msgstr "Pavadinimas:"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.MODALDIALOG.TEXT
 msgid  "Export Basic library"
-msgstr "Eksportuoti „Basic“ biblioteką"
+msgstr "Eksportuoti beisiko biblioteką"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RADIOBUTTON.TEXT
 msgid  "Export as ~extension"
-msgstr "E~ksportuoti kaip plėtinį"
+msgstr "Eksportuoti kaip plėtinį"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RADIOBUTTON.TEXT
 msgid  "Export as BASIC library"
-msgstr "Eksportuoti kaip BASIC biblioteką"
+msgstr "Eksportuoti kaip beisiko biblioteką"
 
 #: basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.STRING.TEXT
 msgid  "Export library as extension"
@@ -647,29 +559,17 @@ msgstr "Plėtinys"
 msgid  "Description"
 msgstr "Aprašas"
 
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
-msgid  "Help information"
-msgstr "Žinyno informacija"
-
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
 msgid  "Help ID"
 msgstr "Žinyno identifikatorius"
 
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FIXEDTEXT.TEXT
 msgid  "Help file name"
-msgstr "Žinyno failo vardas"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
-msgid  "Objects"
-msgstr "Objektai"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
-msgid  "Show"
-msgstr "Rodyti"
+msgstr "Žinyno bylos pavadinimas"
 
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
-msgstr ""
+msgstr "Objektų medis"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 msgid  "Properties: "
@@ -685,59 +585,47 @@ msgstr "Daugkartinė atranka"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.MODALDIALOG.TEXT
 msgid  "Manage User Interface Languages [$1]"
-msgstr "Naudotojo sąsajos kalbų tvarkymas [$1]"
+msgstr "Tvarkyti naudotojo sąsajos kalbas [$1]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FIXEDTEXT.TEXT
 msgid  "Present Languages"
 msgstr "Esamos kalbos"
 
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "Pridėti..."
-
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
 msgid  "Delete"
-msgstr "Šalinti"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
-msgid  "Default"
-msgstr "Numatytoji"
+msgstr "Trinti"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr "Numatytoji kalba vartojama, jei nėra lokalizuotos sąsajos naudotojo lokalei. Visos numatytosios kalbos eilutės nukopijuojamos į naujai pridėtos kalbos išteklius."
+msgstr "Numatytoji kalba vartojama, jeigu nėra naudotojo vietovei skirtos vietovinimo sąsajos. Visos numatytosios kalbos eilutės nukopijuojamos į naujai pridėtos kalbos išteklius."
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
 msgid  "~Close"
-msgstr "~Užverti"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
-msgid  "[Default Language]"
-msgstr "[Numatytoji kalba]"
+msgstr "Užversti"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
 msgid  "~Delete"
-msgstr "~Šalinti"
+msgstr "Trinti"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.STRING.TEXT
 msgid  "<Press 'Add' to create language resources>"
-msgstr "<Spustelėkite „Pridėti“, jei norite sukurti kalbos išteklius>"
+msgstr "<Norėdami kurti kalbos išteklius, spustelėkite „Pridėti“>"
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.TITLE
 msgid  "Delete Language Resources"
-msgstr "Šalinti kalbos išteklius"
+msgstr "Trinti kalbos išteklius"
+
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr "Rengiatės trinti pažymėtos kalbos(-ų) išteklius. Visos naudotojo sąsajos eilutės šiai kalbai(-oms) bus ištrintos.\n\nAr norite ištrinti pažymėtos kalbos(-ų) išteklius?"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 msgid  "Set Default User Interface Language"
 msgstr "Nustatyti numatytąją naudotojo sąsajos kalbą"
 
-#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
-msgid  "Default language"
-msgstr "Numatytoji kalba"
-
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr "Parinkite numatytąją naudotojo sąsajos kalbą. Visos esamos eilutės bus priskirtos sukurtiems pasirinktos kalbos ištekliams."
+msgstr "Rinkitės numatytąją naudotojo sąsajos kalbą. Visos esamos eilutės bus priskirtos sukurtiems pasirinktos kalbos ištekliams."
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.STRING.TEXT
 msgid  "Add User Interface Languages"
@@ -745,8 +633,8 @@ msgstr "Pridėti naudojo sąsajos kalbas"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.STRING.TEXT
 msgid  "Available Languages"
-msgstr "Galimos kalbos"
+msgstr "Siūlomos kalbos"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.STRING.TEXT
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr "Pasirinkite norimas pridėti kalbas. Bibliotekoje šioms kalboms bus sukurti ištekliai. Dabartinės numatytosios naudotojo sąsajos kalbos eilutės bus nukopijuotos į naujuosius išteklius."
+msgstr "Rinkitės norimas pridėti kalbas. Bibliotekoje šioms kalboms bus sukurti ištekliai. Dabartinės numatytosios naudotojo sąsajos kalbos eilutės bus nukopijuotos į naujuosius išteklius."

@@ -39,10 +39,6 @@ msgstr "Palet Lembar Kerja ODF"
 msgid  "ODF Spreadsheet"
 msgstr "Lembar Kerja ODF"
 
-#: config/fragments/filters/calc_HTML_WebQuery_ui.xcu#CALC_HTML_WEBQUERY.UINAME
-msgid  "Web Page Query (%productname% Calc)"
-msgstr "Kuiri Halaman Web (%productname% Calc)"
-
 #: config/fragments/filters/calc_MS_Excel_2007_Binary_ui.xcu#CALC_MS_EXCEL_2007_BINARY.UINAME
 msgid  "Microsoft Excel 2007 Binary"
 msgstr "Biner Microsoft Excel 2007"
@@ -57,7 +53,7 @@ msgstr "XML Microsoft Excel 2007"
 
 #: config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#CALC_STAROFFICE_XML_CALC_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
-msgstr "Palet Lembar Kerja %productname% %formatversion%"
+msgstr "Palet Lembar Kerja %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/chart8_ui.xcu#CHART8.UINAME
 msgid  "ODF Chart"
@@ -121,11 +117,11 @@ msgstr "XML Microsoft PowerPoint 2007"
 
 #: config/fragments/filters/impress_StarOffice_XML_Draw_ui.xcu#IMPRESS_STAROFFICE_XML_DRAW.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
-msgstr "Buku Gambar %productname% %formatversion% (%productname% Impress)"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Buku Gambar (%productname% Impress)"
 
 #: config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#IMPRESS_STAROFFICE_XML_IMPRESS_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
-msgstr "Palet Presentasi %productname% %formatversion%"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Buku Gambar (%productname% Impress)"
 
 #: config/fragments/filters/math8_ui.xcu#MATH8.UINAME
 msgid  "ODF Formula"
@@ -159,10 +155,6 @@ msgstr "Palet Microsoft PowerPoint 97/2000/XP"
 msgid  "Microsoft Word 2003 XML"
 msgstr "XML Microsoft Word 2003"
 
-#: config/fragments/filters/MS_Word_2007_XML_Template_ui.xcu#MS_WORD_2007_XML_TEMPLATE.UINAME
-msgid  "Microsoft Word 2007 XML Template"
-msgstr "Palet XML Microsoft Word 2007"
-
 #: config/fragments/filters/MS_Word_2007_XML_ui.xcu#MS_WORD_2007_XML.UINAME
 msgid  "Microsoft Word 2007 XML"
 msgstr "XML Microsoft Word 2007"
@@ -174,6 +166,18 @@ msgstr "Palet Microsoft Word 95"
 #: config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS_WORD_97_VORLAGE.UINAME
 msgid  "Microsoft Word 97/2000/XP Template"
 msgstr "Palet Microsoft Word 97/2000/XP"
+
+#: config/fragments/filters/NSO_Calc_UOF2_ui.xcu#NSO_CALC_UOF2.UINAME
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr "Lembar kerja Uniform Office Format 2"
+
+#: config/fragments/filters/NSO_Impress_UOF2_ui.xcu#NSO_IMPRESS_UOF2.UINAME
+msgid  "Uniform Office Format 2 presentation"
+msgstr "Presentasi Uniform Office Format 2"
+
+#: config/fragments/filters/NSO_Writer_UOF2_ui.xcu#NSO_WRITER_UOF2.UINAME
+msgid  "Uniform Office Format 2 Text"
+msgstr "Teks Uniform Office Format 2"
 
 #: config/fragments/filters/StarCalc_3_0_Vorlage_Template_ui.xcu#STARCALC_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarCalc 3.0 Template"
@@ -219,6 +223,30 @@ msgstr "Palet StarImpress 5.0"
 msgid  "ODF Database"
 msgstr "Basis Data ODF"
 
+#: config/fragments/filters/StarOffice_XML__Calc__ui.xcu#STAROFFICE_XML_(CALC).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet"
+msgstr "Lembar Kerja %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Chart__ui.xcu#STAROFFICE_XML_(CHART).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Chart"
+msgstr "Grafik %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Draw__ui.xcu#STAROFFICE_XML_(DRAW).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing"
+msgstr "Gambar %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Impress__ui.xcu#STAROFFICE_XML_(IMPRESS).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation"
+msgstr "Presentasi %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Math__ui.xcu#STAROFFICE_XML_(MATH).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Formula"
+msgstr "Formula %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Writer__ui.xcu#STAROFFICE_XML_(WRITER).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
+msgstr "Dokumen Teks %oooxmlformatname% %oooxmlformatversion%"
+
 #: config/fragments/filters/StarWriter_3_0_Vorlage_Template_ui.xcu#STARWRITER_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarWriter 3.0 Template"
 msgstr "Palet StarWriter 3.0"
@@ -259,17 +287,9 @@ msgstr "Teks Dienkode (%productname% Writer/Web)"
 msgid  "Text Encoded"
 msgstr "Teks Dienkode"
 
-#: config/fragments/filters/Text__StarWriter_Web__ui.xcu#TEXT_(STARWRITER/WEB).UINAME
-msgid  "Text (%productname% Writer/Web)"
-msgstr "Teks (%productname% Writer/Web)"
-
 #: config/fragments/filters/Text___txt___csv__StarCalc__ui.xcu#TEXT_-_TXT_-_CSV_(STARCALC).UINAME
 msgid  "Text CSV"
 msgstr "Teks CSV"
-
-#: config/fragments/filters/Text_ui.xcu#TEXT.UINAME
-msgid  "Text"
-msgstr "Teks"
 
 #: config/fragments/filters/UOF_presentation_ui.xcu#UOF_PRESENTATION.UINAME
 msgid  "Unified Office Format presentation"
@@ -301,11 +321,11 @@ msgstr "Dokumen Teks ODF"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER_GLOBALDOCUMENT.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
-msgstr "Dokumen Induk %productname% %formatversion%"
+msgstr "Dokumen Induk %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
-msgstr "Dokumen Teks %productname% %formatversion%"
+msgstr "Dokumen Teks %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#WRITER_STAROFFICE_XML_WRITER_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
@@ -321,11 +341,11 @@ msgstr "Teks %productname% (%productname% Writer/Web)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
-msgstr "Dokumen Teks %productname% %formatversion% (%productname% Writer/Web)"
+msgstr "%oooxmlformatname% %oooxmlformatversion% Dokumen Teks (%productname% Writer/Web)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER_WEB_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
-msgstr "Palet HTML %productname% %formatversion%"
+msgstr "Palet HTML %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/internalgraphicfilters/bmp_Export.xcu#BMP_EXPORT.UINAME
 msgid  "BMP - Windows Bitmap"
@@ -515,6 +535,10 @@ msgstr "Calc 8"
 msgid  "Microsoft Excel 2003 XML"
 msgstr "Microsoft Excel 2003 XML"
 
+#: config/fragments/types/calc_NSO_UOF2.xcu#CALC_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr "Lembar Kerja Uniform Office Format 2"
+
 #: config/fragments/types/chart8.xcu#CHART8.UINAME
 msgid  "Chart 8"
 msgstr "Chart 8"
@@ -534,6 +558,10 @@ msgstr "Palet Impress 8"
 #: config/fragments/types/impress8.xcu#IMPRESS8.UINAME
 msgid  "Impress 8"
 msgstr "Impress 8"
+
+#: config/fragments/types/impress_NSO_UOF2.xcu#IMPRESS_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 presentation"
+msgstr "Presentasi Uniform Office Format 2"
 
 #: config/fragments/types/math8.xcu#MATH8.UINAME
 msgid  "Math 8"
@@ -559,6 +587,10 @@ msgstr "Dokumen Induk Writer 8"
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
 
+#: config/fragments/types/writer_NSO_UOF2.xcu#WRITER_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 text"
+msgstr "Teks Uniform Office Format 2"
+
 #: config/fragments/types/writerweb8_writer_template.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 msgid  "Writer/Web 8 Template"
 msgstr "Palet Writer/Web 8"
@@ -574,10 +606,6 @@ msgstr "1: kualitas min.\n100: kualitas maks."
 #: graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.STRING.TEXT
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
 msgstr "Peringatan: Tidak semua grafik EPS yang diimpor dapat disimpan pada tingkat1,\nbeberapa memerlukan tingkat lebih tinggi!"
-
-#: pdf/impdialog.src#STR_PDF_EXPORT.STRING.TEXT
-msgid  "E~xport"
-msgstr "E~kspor"
 
 #: pdf/impdialog.src#STR_PDF_EXPORT_UDPWD.STRING.TEXT
 msgid  "Set open password"
@@ -599,18 +627,6 @@ msgstr "Jangkauan"
 msgid  "~All"
 msgstr "Semu~a"
 
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_RANGE.RADIOBUTTON.TEXT
-msgid  "~Pages"
-msgstr "~Halaman"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_SELECTION.RADIOBUTTON.TEXT
-msgid  "~Selection"
-msgstr "~Seleksi"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FL_IMAGES.FIXEDLINE.TEXT
-msgid  "Images"
-msgstr "Gambar"
-
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_LOSSLESSCOMPRESSION.RADIOBUTTON.TEXT
 msgid  "~Lossless compression"
 msgstr "~Tingkat kompresi rendah"
@@ -618,14 +634,6 @@ msgstr "~Tingkat kompresi rendah"
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_JPEGCOMPRESSION.RADIOBUTTON.TEXT
 msgid  "~JPEG compression"
 msgstr "Kompresi ~JPEG"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_QUALITY.FIXEDTEXT.TEXT
-msgid  "~Quality"
-msgstr "~Kualitas"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_REDUCEIMAGERESOLUTION.CHECKBOX.TEXT
-msgid  "~Reduce image resolution"
-msgstr "Kurangi ~resolusi gambar"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_PDFA_1B_SELECT.CHECKBOX.TEXT
 msgid  "P~DF/A-1a"
@@ -638,10 +646,6 @@ msgstr "PDF berpa~taka"
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTFORMFIELDS.CHECKBOX.TEXT
 msgid  "~Create PDF form"
 msgstr "Buat f~ormulir PDF"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_FORMSFORMAT.FIXEDTEXT.TEXT
-msgid  "Submit ~format"
-msgstr "~Format ajuan"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ALLOWDUPLICATEFIELDNAMES.CHECKBOX.TEXT
 msgid  "Allow duplicate field ~names"
@@ -665,18 +669,19 @@ msgstr "Eksp~or halaman kosong yang disisipkan otomatis"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EMBEDSTANDARDFONTS.CHECKBOX.TEXT
 msgid  "E~mbed standard fonts"
-msgstr "Sertakan ~fonta standar"
+msgstr "S~ertakan font standar"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ADDSTREAM.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Embed this document ~inside the PDF"
-msgstr "Buat berkas ~hibrida"
+msgstr "Lekatkan dokumen ini di ~dalam PDF-nya"
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.TITLE
+#, fuzzy
 msgid  "PDF/A Export"
 msgstr "Ekspor PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.MESSAGE
+#, fuzzy
 msgid  "PDF/A does not allow encryption. The exported PDF file will not be password protected."
 msgstr "PDF/A tidak mengizinkan enkripsi. Berkas PDF yang diekspor tidak akan diamankan dengan kata sandi."
 
@@ -686,70 +691,77 @@ msgid  "Initial View"
 msgstr "Tampilan Inisial"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_INITVIEW.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Panes"
 msgstr "Panel"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_PAGEONLY.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Page only"
 msgstr "Hanya ~halaman"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_OUTLINE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Bookmarks and page"
 msgstr "Penanda ~buku dan halaman"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_THUMBS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Thumbnails and page"
 msgstr "Pra~tinjau dan halaman"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FT_MAGNF_INITIAL_PAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Open on page"
 msgstr "Buka pada halaman"
 
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_MAGNIFICATION.FIXEDLINE.TEXT
-msgid  "Magnification"
-msgstr "Perbesaran"
-
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Default"
 msgstr "~Baku"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_WIND.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Fit in window"
 msgstr "~Sesuai jendela"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_WIDTH.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Fit ~width"
 msgstr "Sesuai ~lebar"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_VISIBLE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Fit ~visible"
 msgstr "Sesuai kenam~pakan"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_ZOOM.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Zoom factor"
 msgstr "Faktor ~zum"
 
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_PAGE_LAYOUT.FIXEDLINE.TEXT
-msgid  "Page layout"
-msgstr "Tata letak halaman"
-
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "D~efault"
 msgstr "Ba~ku"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_SINGPG.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Single page"
 msgstr "Halaman ~tunggal"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_CONT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Continuous"
 msgstr "~Bersambung"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_CONTFAC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "C~ontinuous facing"
 msgstr "B~ersambung berhadapan"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.CB_PGLY_FIRSTLEFT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "First page is ~left"
 msgstr "Halaman pertama ada~lah kiri"
 
@@ -758,475 +770,443 @@ msgstr "Halaman pertama ada~lah kiri"
 msgid  "User Interface"
 msgstr "Antarmuka Pengguna"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_WINOPT.FIXEDLINE.TEXT
-msgid  "Window options"
-msgstr "Opsi jendela"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_RESINIT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Resize window to initial page"
 msgstr "Atu~r ulang jendela pada halaman inisial"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_CNTRWIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Center window on screen"
 msgstr "Posisikan jendela pada layar di ~tengah"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_OPNFULL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Open in full screen mode"
 msgstr "Buka pada m~odus layar penuh"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_DISPDOCTITLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Display document title"
 msgstr "Tampilkan ju~dul dokumen"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_USRIFOPT.FIXEDLINE.TEXT
-msgid  "User interface options"
-msgstr "Opsi antarmuka pengguna"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVMENUBAR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Hide ~menubar"
 msgstr "Sembunyikan baris ~menu"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVTOOLBAR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Hide ~toolbar"
 msgstr "Sembunyikan baris ala~t"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVWINCTRL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Hide ~window controls"
 msgstr "Sembunyikan kendali ~jendela"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_TRANSITIONS.FIXEDLINE.TEXT
-msgid  "Transitions"
-msgstr "Transisi"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_TRANSITIONEFFECTS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Use transition effects"
 msgstr "G~unakan efek transisi"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_BOOKMARKS.FIXEDLINE.TEXT
-msgid  "Bookmarks"
-msgstr "Penanda Buku"
-
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_ALLBOOKMARKLEVELS.RADIOBUTTON.TEXT
-msgid  "All bookmark levels"
-msgstr "Seluruh tingkat penanda buku"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_VISIBLEBOOKMARKLEVELS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Visible bookmark levels"
 msgstr "Tingkat penanda buku yang tampak"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.TABPAGE.TEXT
-msgid  "Security"
-msgstr "Keamanan"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PWD_GROUP.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "File encryption and permission"
 msgstr "Enkripsi dan hak akses berkas "
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.BTN_SET_PWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set ~passwords..."
 msgstr "Tentukan ~sandi..."
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_SET_PWD.STRING.TEXT
+#, fuzzy
 msgid  "Set passwords"
 msgstr "Tentukan sandi"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_SET.STRING.TEXT
+#, fuzzy
 msgid  "Open password set"
 msgstr "Sandi pembuka diset"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_ENC.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will be encrypted"
 msgstr "Dokumen PDF akan dienkripsi"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNSET.STRING.TEXT
+#, fuzzy
 msgid  "No open password set"
 msgstr "Sandi pembuka belum diset"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNENC.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will not be encrypted"
 msgstr "Dokumen PDF tidak akan dienkripsi"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will not be encrypted due to PDF/A export."
 msgstr "Dokumen PDF tidak akan dienkripsi karena diekspor sebagai PDF/A."
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_SET.STRING.TEXT
+#, fuzzy
 msgid  "Permission password set"
 msgstr "Sandi hak akses diset"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_REST.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will be restricted"
 msgstr "Dokumen PDF akan dibatasi"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNSET.STRING.TEXT
+#, fuzzy
 msgid  "No permission password set"
 msgstr "Sandi hak akses belum diset"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNREST.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will be unrestricted"
 msgstr "Dokumen PDF tidak akan dibatasi"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will not be restricted due to PDF/A export."
 msgstr "Dokumen PDF tidak akan dibatasi karena diekspor sebagai PDF/A."
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.FIXEDLINE.TEXT
-msgid  "Printing"
-msgstr "Mencetak"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_NONE.RADIOBUTTON.TEXT
-msgid  "~Not permitted"
-msgstr "Tidak diizi~nkan"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_LOWRES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Low resolution (150 dpi)"
 msgstr "Reso~lusi rendah (150 dpi)"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_HIGHRES.RADIOBUTTON.TEXT
-msgid  "~High resolution"
-msgstr "~Resolusi tinggi"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_CHANGES_ALLOWED.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Changes"
 msgstr "Perubahan"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_NONE.RADIOBUTTON.TEXT
-msgid  "No~t permitted"
-msgstr "~Tidak diizinkan"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_INSDEL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Inserting, deleting, and rotating pages"
 msgstr "S~isip, hapus, dan putar halaman"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_FILLFORM.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Filling in form fields"
 msgstr "Mengisi ruas ~formulir"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_COMMENT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Commenting, filling in form fields"
 msgstr "Mengisi ~komentar dan ruas formulir"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_ANY_NOCOPY.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Any except extracting pages"
 msgstr "Ekstr~aksi halaman apa pun diterima"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENDAB_COPY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Ena~ble copying of content"
 msgstr "Per~bolehkan menyalin isi dokumen"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENAB_ACCESS.CHECKBOX.TEXT
-msgid  "Enable text access for acce~ssibility tools"
-msgstr "Perbolehkan teks untuk akses perkakas ak~sesibilitas"
-
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.TABPAGE.TEXT
+#, fuzzy
 msgid  "---"
 msgstr "---"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_EXP_BMRK_TO_DEST.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Export bookmarks as named destinations"
 msgstr "Ekspor penanda buku sebagai nama objek tujuan"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_CNV_OOO_DOCTOPDF.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Convert document references to PDF targets"
 msgstr "Konversi dokumen referensi ke target PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_ENAB_RELLINKFSYS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Export URLs relative to file system"
 msgstr "Ekspor URL relatif terhadap sistem berkas"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.FL_DEFAULT_LINK_ACTION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Cross-document links"
 msgstr "Hubungan antardokumen"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Default mode"
 msgstr "Modus standar"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_APPLICATION.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Open with PDF reader application"
 msgstr "Buka dengan aplikasi pembaca PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_BROWSER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Open with Internet browser"
 msgstr "Buka dengan penelusur Internet"
 
 #: pdf/impdialog.src#RID_PDF_EXPORT_DLG.TABDIALOG.TEXT
+#, fuzzy
 msgid  "PDF Options"
 msgstr "Opsi PDF"
 
 #: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_LINKS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Links"
 msgstr "Taut"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Problems during PDF export"
 msgstr "Masalah saat mengekspor PDF"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.FT_PROCESS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "During PDF export the following problems occurred:"
 msgstr "Saat mengekspor PDF, masalah berikut terjadi:"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA_SHORT.STRING.TEXT
+#, fuzzy
 msgid  "PDF/A transparency"
 msgstr "Transparansi PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "PDF/A forbids transparency. A transparent object was painted opaque instead."
 msgstr "PDF/A melarang transparansi. Objek transparan akan terlihat agak kusam."
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.STRING.TEXT
+#, fuzzy
 msgid  "PDF version conflict"
 msgstr "Versi PDF konflik"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.STRING.TEXT
+#, fuzzy
 msgid  "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
 msgstr "Transparansi tidak didukung oleh versi PDF sebelum 1.4. Objek transparan akan terlihat agak kusam."
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.STRING.TEXT
+#, fuzzy
 msgid  "PDF/A form action"
 msgstr "Aksi formulir PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "A form control contained an action not supported by the PDF/A standard. The action was skipped"
 msgstr "Aksi yang dibawa formulir tidak didukung oleh standar PDF/A. Aksi tersebut diabaikan."
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.STRING.TEXT
+#, fuzzy
 msgid  "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
 msgstr "Format PDF yang diinginkan tidak mendukung transparansi. Oleh karena itu, beberapa objek diubah sebagai gambar untuk menghapus efek tersebut. Hasil lebih baik yang paling mungkin akan didapat adalah dengan menghapus objek transparan tersebut sebelum melakukan proses ekspor."
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED_SHORT.STRING.TEXT
+#, fuzzy
 msgid  "Transparencies removed"
 msgstr "Transparansi dihapus"
 
 #: pdf/pdf.src#PDF_PROGRESS_BAR.STRING.TEXT
+#, fuzzy
 msgid  "Export as PDF"
 msgstr "Ekspor sebagai PDF"
 
 #: t602/t602filter.src#T602FILTER_STR_IMPORT_DIALOG_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Settings for T602 import"
 msgstr "Pengaturan untuk impor T602"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Encoding"
 msgstr "Enkode"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
 msgstr "Otomatis"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_CP852.STRING.TEXT
+#, fuzzy
 msgid  "CP852 (Latin2)"
 msgstr "CP852 (Latin2)"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_CP895.STRING.TEXT
+#, fuzzy
 msgid  "CP895 (KEYB2CS, Kamenicky)"
 msgstr "CP895 (KEYB2CS, Kamenicky)"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_KOI8CS2.STRING.TEXT
+#, fuzzy
 msgid  "KOI8 CS2"
 msgstr "KOI8 CS2"
 
 #: t602/t602filter.src#T602FILTER_STR_CYRILLIC_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Mode for Russian language (Cyrillic)"
 msgstr "Modus untuk bahasa Rusia (Cyrillic)"
 
 #: t602/t602filter.src#T602FILTER_STR_REFORMAT_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Reformat the text"
 msgstr "Format ulang teksnya"
 
 #: t602/t602filter.src#T602FILTER_STR_DOT_COMMANDS.STRING.TEXT
+#, fuzzy
 msgid  "Display dot commands"
 msgstr "Tampilkan komando titik"
 
 #: t602/t602filter.src#T602FILTER_STR_CANCEL_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
 msgstr "Batal"
 
 #: t602/t602filter.src#T602FILTER_STR_OK_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "OK"
 msgstr "Oke"
 
 #: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.WORKWINDOW.TEXT
+#, fuzzy
 msgid  "XML Filter output"
 msgstr "Keluaran Penyaring XML"
 
-#: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PUSHBUTTON.TEXT
-msgid  "~Validate"
-msgstr "~Validasi"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.STRING.TEXT
-msgid  "Name"
-msgstr "Nama"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type"
 msgstr "Jenis"
 
-#: xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.STRING.TEXT
-msgid  "Unknown"
-msgstr "Tak Dikenal"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "import filter"
 msgstr "penyaring impor"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_EXPORT.STRING.TEXT
+#, fuzzy
 msgid  "import/export filter"
 msgstr "penyaring impor/ekspor"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_EXPORT_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "export filter"
 msgstr "penyaring ekspor"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
 msgstr "Anda yakin untuk menghapus Penyaring XML '%s'? Penyaring yang telah dihapus tidak dapat dikembalikan."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
 msgstr "Penyaring XML dengan nama '%s' sudah ada. Mohon berikan nama yang lain."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
 msgstr "Nama untuk antarmuka '%s1' sudah digunakan oleh penyaring XML '%s2'. Mohon berikan nama yang lain."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The DTD could not be found. Please enter a valid path."
 msgstr "DTD tidak ditemukan. Mohon berikan lokasi yang benar."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_EXPORT_XSLT_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The XSLT for export cannot be found. Please enter a valid path."
 msgstr "XSLT untuk aksi ekspor tidak ditemukan. Mohon berikan lokasi yang benar."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_XSLT_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The XSLT for import cannot be found. Please enter a valid path."
 msgstr "XSLT untuk aksi impor tidak ditemukan. Mohon berikan lokasi yang benar."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_TEMPLATE_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The given import template cannot be found. Please enter a valid path."
 msgstr "Palet impor yang telah ditentukan tidak ketemu. Mohon berikan lokasi yang benar."
 
-#: xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.STRING.TEXT
-msgid  "Not specified"
-msgstr "Tidak ditentukan"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.STRING.TEXT
-msgid  "New Filter"
-msgstr "Penyaring Baru"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.STRING.TEXT
-msgid  "Untitled"
-msgstr "Belum Berjudul"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "undefined filter"
 msgstr "penyaring tidak didefinisikan"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_HAS_BEEN_SAVED.STRING.TEXT
+#, fuzzy
 msgid  "The XML filter '%s' has been saved as package '%s'. "
 msgstr "Penyaring XML '%s' telah disimpan sebagai paket '%s'. "
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_HAVE_BEEN_SAVED.STRING.TEXT
+#, fuzzy
 msgid  "%s XML filters have been saved in the package '%s'."
 msgstr "Penyaring XML %s sudah disimpan pada paket '%s'."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_PACKAGE.STRING.TEXT
+#, fuzzy
 msgid  "XSLT filter package"
 msgstr "Paket penyaring XSLT"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_INSTALLED.STRING.TEXT
+#, fuzzy
 msgid  "The XML filter '%s' has been installed successfully."
 msgstr "Penyaring XML '%s' berhasil dipasang."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_INSTALLED.STRING.TEXT
+#, fuzzy
 msgid  "%s XML filters have been installed successfully."
 msgstr "Penyaring XML %s sudah berhasil dipasang."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
 msgstr "Tidak ada penyaring XML yang dapat dipasang karena paket '%s' tidak memiliki penyaring XML apa pun."
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.WORKWINDOW.TEXT
+#, fuzzy
 msgid  "XML Filter Settings"
 msgstr "Pengaturan Penyaring XML"
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
 msgstr "~Baru..."
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Sunting..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PUSHBUTTON.TEXT
-msgid  "~Test XSLTs..."
-msgstr "Uji XSL~T..."
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete..."
-msgstr "~Hapus..."
-
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Save as Package..."
 msgstr "~Simpan sebagai Paket..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PUSHBUTTON.TEXT
-msgid  "~Open Package..."
-msgstr "~Buka Paket..."
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Tutup"
-
 #: xsltdialog/xmlfiltersettingsdialog.src#STR_XML_FILTER_LISTBOX.STRING.TEXT
+#, fuzzy
 msgid  "XML Filter List"
 msgstr "Daftar Penyaring XML"
 
 #: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.TABDIALOG.TEXT
+#, fuzzy
 msgid  "XML Filter: %s"
 msgstr "Penyaring XML: %s"
 
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.PAGEITEM.TEXT
-msgid  "General"
-msgstr "Umum"
-
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PAGEITEM.TEXT
-msgid  "Transformation"
-msgstr "Transformasi"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TABPAGE.TEXT
-msgid  "General"
-msgstr "Umum"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FIXEDTEXT.TEXT
-msgid  "Filter name"
-msgstr "Nama penyaring"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FIXEDTEXT.TEXT
-msgid  "Application"
-msgstr "Aplikasi"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FIXEDTEXT.TEXT
-msgid  "Name of\nfile type"
-msgstr "Nama\njenis berkas"
-
 #: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "File extension"
 msgstr "Ekstensi berkas"
 
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Comments"
-msgstr "Komentar"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TABPAGE.TEXT
-msgid  "Transformation"
-msgstr "Transformasi"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.FIXEDTEXT.TEXT
-msgid  "DocType"
-msgstr "DocType"
-
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DTD_SCHEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "DTD"
 msgstr "DTD"
 
@@ -1235,70 +1215,32 @@ msgstr "DTD"
 msgid  "Browse..."
 msgstr "Telusur..."
 
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FIXEDTEXT.TEXT
-msgid  "XSLT for export"
-msgstr "XSLT untuk ekspor"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FIXEDTEXT.TEXT
-msgid  "XSLT for import"
-msgstr "XSLT untuk impor"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-msgid  "Template for import"
-msgstr "Palet untuk impor"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.MODALDIALOG.TEXT
-msgid  "Test XML Filter: %s"
-msgstr "Uji Penyaring XML: %s"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FIXEDLINE.TEXT
-msgid  "Export"
-msgstr "Ekspor"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FIXEDTEXT.TEXT
-msgid  "XSLT for export"
-msgstr "XSLT untuk ekspor"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FIXEDTEXT.TEXT
-msgid  "Transform document"
-msgstr "Dokumen transformasi"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Browse..."
 msgstr "~Telusur..."
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CURRENT_DOCUMENT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Current Document"
 msgstr "~Dokumen Saat Ini"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_IMPORT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Import"
 msgstr "Impor"
 
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FIXEDTEXT.TEXT
-msgid  "XSLT for import"
-msgstr "XSLT untuk impor"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-msgid  "Template for import"
-msgstr "Palet untuk impor"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FIXEDTEXT.TEXT
-msgid  "Transform file"
-msgstr "Berkas transformasi"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Display source"
 msgstr "~Tampilkan sumber"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_IMPORT_BROWSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "B~rowse..."
 msgstr "Telusu~r..."
 
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PUSHBUTTON.TEXT
-msgid  "~Recent File"
-msgstr "Dokumen Ba~ru-baru Ini"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
 msgstr "~Tutup"

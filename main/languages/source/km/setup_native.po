@@ -35,82 +35,10 @@ msgstr ""
 msgid  "Ok"
 msgstr "យល់ព្រម"
 
-#: mac/macinstall.ulf#INSTALLLABEL
-msgid  "Install"
-msgstr "ដំឡើង"
-
-#: mac/macinstall.ulf#ABORTLABEL
-msgid  "Abort"
-msgstr "បោះបង់"
-
-#: mac/macinstall.ulf#INTROTEXT1
-msgid  "Welcome to the [FULLPRODUCTNAME] Installation Wizard"
-msgstr "សូមស្វាគមន៍​មក​កាន់​អ្នកជំនួយ​ការ​ដំឡើង​របស់ [FULLPRODUCTNAME]"
-
-#: mac/macinstall.ulf#INTROTEXT2
-msgid  "This installation will update your installed versions of [PRODUCTNAME]"
-msgstr "កា​រដំឡើង​នេះ នឹង​ធ្វើ​បច្ចុប្បន្នភព​​​កំណែ [PRODUCTNAME] ​ដែលបាន​ដំឡើង​របស់​អ្នក"
-
-#: mac/macinstall.ulf#INTROTEXT3
-msgid  "This might take a moment."
-msgstr "វា​អាច​ចំណាយ​ពេល​មួយ​រយៈ ។"
-
-#: mac/macinstall.ulf#CHOOSEMYOWNTEXT
-msgid  "Not listed (choose location in an extra step)"
-msgstr "មិន​បានរាយ​ទេ (ជ្រើស​ទីតាំង​នៅ​ក្នុង​ជំហាន​បន្ថែម)"
-
-#: mac/macinstall.ulf#LISTPROMPTTEXT
-msgid  "Choose [PRODUCTNAME] [PRODUCTVERSION] installation for which you want to install the [FULLPRODUCTNAME]"
-msgstr "ជ្រើ​សកា​រដំឡើង [PRODUCTNAME] [PRODUCTVERSION] ​ដែល​អ្នក​ចង់​ដំឡើង​ [FULLPRODUCTNAME]"
-
-#: mac/macinstall.ulf#CHOOSEMANUALTEXT
-msgid  "Point the dialog to your [PRODUCTNAME] [PRODUCTVERSION] installation."
-msgstr "ដាក់​ប្រអប់​ទៅ​​កា​រដំឡើង [PRODUCTNAME] [PRODUCTVERSION] របស់​អ្នក ។"
-
-#: mac/macinstall.ulf#APPINVALIDTEXT1
-msgid  "This is not a valid [PRODUCTNAME] [PRODUCTVERSION] installation."
-msgstr "នេះ​មិនមែន​ជា​ការ​ដំឡើង [PRODUCTNAME] [PRODUCTVERSION] ត្រឹមត្រូវ​ទេ ។"
-
-#: mac/macinstall.ulf#APPINVALIDTEXT2
-msgid  "Run the installer again and choose a valid [PRODUCTNAME] [PRODUCTVERSION] installation"
-msgstr "រត់​កម្មវិធី​ដំឡើង​ម្ដង​ទៀត ហើយ​ជ្រើស​ការ​ដំឡើង [PRODUCTNAME] [PRODUCTVERSION] ដែល​ត្រឹមត្រូវ"
-
-#: mac/macinstall.ulf#STARTINSTALLTEXT1
-msgid  "Click Install to start the installation"
-msgstr "ចុច​ដំឡើង ដើម្បី​ចាប់ផ្ដើម​ការ​ដំឡើង"
-
-#: mac/macinstall.ulf#STARTINSTALLTEXT2
-msgid  "Installation might take a minute..."
-msgstr "ការ​ដំឡើង​អាច​ចំណាយ​ពេល​មួយ​រយៈ..."
-
 #: mac/macinstall.ulf#IDENTIFYQTEXT
 msgid  "Installation failed, most likely your account does not have the necessary privileges."
 msgstr "កា​រដំឡើង​បានបរាជ័យ ទំនង​ជា​គណនី​របស់អ្នក​មិន​មាន​សិទ្ធិ​ដែល​ចាំបាច់​ទេ ។"
 
-#: mac/macinstall.ulf#IDENTIFYQTEXT2
-msgid  "Do you want to identify as administrator and try again?"
-msgstr "តើ​អ្នក​ចង់​កំណត់​​ជា​អ្នក​គ្រប់គ្រង ហើយ​ព្យាយាម​ម្ដង​ទៀត​ដែរឬទេ ?"
-
-#: mac/macinstall.ulf#IDENTIFYYES
-msgid  "Yes, identify"
-msgstr "បាទ/ចាស កំណត់"
-
-#: mac/macinstall.ulf#IDENTIFYNO
-msgid  "No, abort installation"
-msgstr "ទេ បោះបង់​កា​រដំឡើង"
-
-#: mac/macinstall.ulf#INSTALLFAILEDTEXT
-msgid  "Installation failed."
-msgstr "ការ​ដំឡើង​បានបរាជ័យ ។"
-
-#: mac/macinstall.ulf#INSTALLCOMPLETETEXT
-msgid  "Installation of [PRODUCTNAME] language pack completed."
-msgstr "កា​រដំឡើង​កញ្ចប់ភាសា [PRODUCTNAME] បានបញ្ចប់​ហើយ ។"
-
 #: mac/macinstall.ulf#INSTALLCOMPLETETEXT2
 msgid  "Call '[PRODUCTNAME]-Preferences-Language Settings-Languages' to change the user interface language."
 msgstr "ហៅ '[PRODUCTNAME]-ចំណូលចិត្ត-ការ​កំណត់​ភាសា-ភាសា' ដើម្បី​ផ្លាស់ប្ដូរ​ភាសា​ចំណុច​ប្រទាក់​អ្នក​ប្រើ ។"
-
-#: mac/macinstall.ulf#INSTALLCOMPLETETEXTPATCH
-msgid  "Installation of [FULLPRODUCTNAME] completed"
-msgstr "ការ​ដំឡើង [FULLPRODUCTNAME] បាន​បញ្ចប់​ហើយ"

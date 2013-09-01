@@ -33,11 +33,11 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IF.STRING.TEXT
 msgid  "IF"
-msgstr ""
+msgstr "אם"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CHOSE.STRING.TEXT
 msgid  "CHOOSE"
-msgstr ""
+msgstr "בחר"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AND.STRING.TEXT
 msgid  "AND"
@@ -45,6 +45,10 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_OR.STRING.TEXT
 msgid  "OR"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_XOR.STRING.TEXT
+msgid  "XOR"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NOT.STRING.TEXT
@@ -57,7 +61,7 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PI.STRING.TEXT
 msgid  "PI"
-msgstr ""
+msgstr "פיי 3.14"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RANDOM.STRING.TEXT
 msgid  "RAND"
@@ -65,31 +69,31 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TRUE.STRING.TEXT
 msgid  "TRUE"
-msgstr ""
+msgstr "אמת"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FALSE.STRING.TEXT
 msgid  "FALSE"
-msgstr ""
+msgstr "שגוי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_ACT_DATE.STRING.TEXT
 msgid  "TODAY"
-msgstr ""
+msgstr "היום"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_ACT_TIME.STRING.TEXT
 msgid  "NOW"
-msgstr ""
+msgstr "עכשיו"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NO_VALUE.STRING.TEXT
 msgid  "NA"
-msgstr ""
+msgstr "לא ישים "
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CURRENT.STRING.TEXT
 msgid  "CURRENT"
-msgstr ""
+msgstr "נוכחי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DEG.STRING.TEXT
 msgid  "DEGREES"
-msgstr ""
+msgstr "מעלות"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RAD.STRING.TEXT
 msgid  "RADIANS"
@@ -117,39 +121,39 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COS.STRING.TEXT
 msgid  "ACOS"
-msgstr ""
+msgstr "ארכקוסינוס"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_TAN.STRING.TEXT
 msgid  "ATAN"
-msgstr ""
+msgstr "ארקטנגנס"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COT.STRING.TEXT
 msgid  "ACOT"
-msgstr ""
+msgstr "ארכקוטנגנס"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SIN_HYP.STRING.TEXT
 msgid  "SINH"
-msgstr ""
+msgstr "סינוס היפרבולי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COS_HYP.STRING.TEXT
 msgid  "COSH"
-msgstr ""
+msgstr "קוסינובס היפרבולי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TAN_HYP.STRING.TEXT
 msgid  "TANH"
-msgstr ""
+msgstr "טנגנס היפרבולי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COT_HYP.STRING.TEXT
 msgid  "COTH"
-msgstr ""
+msgstr "קוטנגנס היפרבולי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_SIN_HYP.STRING.TEXT
 msgid  "ASINH"
-msgstr ""
+msgstr "ארכסינוס היפרבולי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COS_HYP.STRING.TEXT
 msgid  "ACOSH"
-msgstr ""
+msgstr "ארכקוסינוס היפרבולי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_TAN_HYP.STRING.TEXT
 msgid  "ATANH"
@@ -157,6 +161,22 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COT_HYP.STRING.TEXT
 msgid  "ACOTH"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.STRING.TEXT
+msgid  "CSC"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.STRING.TEXT
+msgid  "SEC"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.STRING.TEXT
+msgid  "CSCH"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.STRING.TEXT
+msgid  "SECH"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.STRING.TEXT
@@ -169,39 +189,39 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SQRT.STRING.TEXT
 msgid  "SQRT"
-msgstr ""
+msgstr "שורש ריבועי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FACT.STRING.TEXT
 msgid  "FACT"
-msgstr ""
+msgstr "פקטריאל"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_YEAR.STRING.TEXT
 msgid  "YEAR"
-msgstr ""
+msgstr "שנה"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_MONTH.STRING.TEXT
 msgid  "MONTH"
-msgstr ""
+msgstr "חודש"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_DAY.STRING.TEXT
 msgid  "DAY"
-msgstr ""
+msgstr "יום"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_HOUR.STRING.TEXT
 msgid  "HOUR"
-msgstr ""
+msgstr "שעה"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_MIN.STRING.TEXT
 msgid  "MINUTE"
-msgstr ""
+msgstr "דקה"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_SEC.STRING.TEXT
 msgid  "SECOND"
-msgstr ""
+msgstr "שניה"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PLUS_MINUS.STRING.TEXT
 msgid  "SIGN"
-msgstr ""
+msgstr "סימן"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ABS.STRING.TEXT
 msgid  "ABS"
@@ -237,23 +257,23 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TYPE.STRING.TEXT
 msgid  "TYPE"
-msgstr ""
+msgstr "להדפיס"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CELL.STRING.TEXT
 msgid  "CELL"
-msgstr ""
+msgstr "תא"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_REF.STRING.TEXT
 msgid  "ISREF"
-msgstr ""
+msgstr "  ISREF"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_VALUE.STRING.TEXT
 msgid  "ISNUMBER"
-msgstr ""
+msgstr "האם מספר או לא ISNUMBER"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_FORMULA.STRING.TEXT
 msgid  "ISFORMULA"
-msgstr ""
+msgstr "האם פרמולה או לא ISFORMULA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_NV.STRING.TEXT
 msgid  "ISNA"
@@ -317,15 +337,15 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_VALUE.STRING.TEXT
 msgid  "VALUE"
-msgstr ""
+msgstr "ערך"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CLEAN.STRING.TEXT
 msgid  "CLEAN"
-msgstr ""
+msgstr "לנקות"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CHAR.STRING.TEXT
 msgid  "CHAR"
-msgstr ""
+msgstr "תו"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_JIS.STRING.TEXT
 msgid  "JIS"
@@ -337,7 +357,7 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_UNICODE.STRING.TEXT
 msgid  "UNICODE"
-msgstr ""
+msgstr "יוניקוד"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_UNICHAR.STRING.TEXT
 msgid  "UNICHAR"
@@ -377,15 +397,15 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ERROR_TYPE.STRING.TEXT
 msgid  "ERRORTYPE"
-msgstr ""
+msgstr "סוגשגיאה"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FORMULA.STRING.TEXT
 msgid  "FORMULA"
-msgstr ""
+msgstr "נוסחה"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARABIC.STRING.TEXT
 msgid  "ARABIC"
-msgstr ""
+msgstr "ערבית"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_TAN_2.STRING.TEXT
 msgid  "ATAN2"
@@ -393,15 +413,15 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CEIL.STRING.TEXT
 msgid  "CEILING"
-msgstr ""
+msgstr "תקרה"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FLOOR.STRING.TEXT
 msgid  "FLOOR"
-msgstr ""
+msgstr "רצפה"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ROUND.STRING.TEXT
 msgid  "ROUND"
-msgstr ""
+msgstr "עגול"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ROUND_UP.STRING.TEXT
 msgid  "ROUNDUP"
@@ -421,39 +441,42 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_POWER.STRING.TEXT
 msgid  "POWER"
-msgstr ""
+msgstr "כח"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GGT.STRING.TEXT
 msgid  "GCD"
-msgstr ""
+msgstr "המחלק משותף הגדול ביותר (GCD),"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_KGV.STRING.TEXT
 msgid  "LCM"
-msgstr ""
+msgstr "כפולה משותפת המינימאלית LCM"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MOD.STRING.TEXT
 msgid  "MOD"
-msgstr ""
+msgstr "MOD"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_PRODUCT.STRING.TEXT
 msgid  "SUMPRODUCT"
-msgstr ""
+msgstr "תוצאות סכום של חישובים על ערכים תואמים בשני מערכים (או יותר טווחים של תאים) SUMORODUCT"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_SQ.STRING.TEXT
 msgid  "SUMSQ"
-msgstr ""
+msgstr "סכום הריבועים של הטיעונים SUMSQ"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_X2MY2.STRING.TEXT
+#, fuzzy
 msgid  "SUMX2MY2"
-msgstr ""
+msgstr "סכום ההבדל של ריבועים בין שני מערכים. SUMX2MY2"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_X2DY2.STRING.TEXT
+#, fuzzy
 msgid  "SUMX2PY2"
-msgstr ""
+msgstr "סכום של סכום ריבועים של ערכים מתאימים בשני מערכים SUMX2PY2"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_XMY2.STRING.TEXT
+#, fuzzy
 msgid  "SUMXMY2"
-msgstr ""
+msgstr "סכום הריבועים של ההבדלים בין הפריטים מתאימים במערכים ומחזיר את הסכום SUMXMY2"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_DATE.STRING.TEXT
 msgid  "DATE"
@@ -480,60 +503,74 @@ msgid  "MINA"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MAX.STRING.TEXT
+#, fuzzy
 msgid  "MAX"
-msgstr ""
+msgstr "מקסימלי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MAX_A.STRING.TEXT
+#, fuzzy
 msgid  "MAXA"
-msgstr ""
+msgstr "הערך הגדול ביותר ברשימה של ארגומנטים MAXA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM.STRING.TEXT
+#, fuzzy
 msgid  "SUM"
-msgstr ""
+msgstr "סכום"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PRODUCT.STRING.TEXT
+#, fuzzy
 msgid  "PRODUCT"
-msgstr ""
+msgstr "מכפלה"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE.STRING.TEXT
+#, fuzzy
 msgid  "AVERAGE"
-msgstr ""
+msgstr "ממוצע"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_A.STRING.TEXT
+#, fuzzy
 msgid  "AVERAGEA"
-msgstr ""
+msgstr "ממוצע אריתמטי AVERAGEA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "COUNT"
-msgstr ""
+msgstr "ספירה"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_2.STRING.TEXT
+#, fuzzy
 msgid  "COUNTA"
-msgstr ""
+msgstr "סכום תאים עם ערך"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NBW.STRING.TEXT
+#, fuzzy
 msgid  "NPV"
-msgstr ""
+msgstr "החזרת ערך הנטו הנוכחי של השקעה על סמך סידרת תזרימי מזומנים תקופתיים ושיעור ניכיון NPV"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IKV.STRING.TEXT
+#, fuzzy
 msgid  "IRR"
-msgstr ""
+msgstr "החזרת שיעור התשואה הפנימי עבור סידרת תזרימי מזומנים IRR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIRR.STRING.TEXT
+#, fuzzy
 msgid  "MIRR"
-msgstr ""
+msgstr "החזרת שיעור התשואה הפנימי, כאשר תזרימי מזומנים חיוביים ושליליים ממומנים בשיעורים שונים MIRR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ISPMT.STRING.TEXT
+#, fuzzy
 msgid  "ISPMT"
-msgstr ""
+msgstr "חישוב הריבית המשולמת במהלך תקופה ספציפית של השקעה ISPMT"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_VAR.STRING.TEXT
+#, fuzzy
 msgid  "VAR"
-msgstr ""
+msgstr "שונות VAR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_VAR_A.STRING.TEXT
+#, fuzzy
 msgid  "VARA"
-msgstr ""
+msgstr "שונות ממוצעת VARA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_VAR_P.STRING.TEXT
 msgid  "VARP"
@@ -628,32 +665,39 @@ msgid  "PMT"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COLUMNS.STRING.TEXT
+#, fuzzy
 msgid  "COLUMNS"
-msgstr ""
+msgstr "עמודות"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ROWS.STRING.TEXT
+#, fuzzy
 msgid  "ROWS"
-msgstr ""
+msgstr "שורות"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "SHEETS"
-msgstr ""
+msgstr "גליונות"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "COLUMN"
-msgstr ""
+msgstr "עמודה"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ROW.STRING.TEXT
+#, fuzzy
 msgid  "ROW"
-msgstr ""
+msgstr "שורה"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "SHEET"
-msgstr ""
+msgstr "גליון"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ZGZ.STRING.TEXT
+#, fuzzy
 msgid  "RRI"
-msgstr ""
+msgstr "החזרת שיעור ריבית שווה ערך עבור הצמיחה של השקעה. RRI"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ZW.STRING.TEXT
 msgid  "FV"
@@ -684,16 +728,19 @@ msgid  "CUMPRINC"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EFFEKTIV.STRING.TEXT
+#, fuzzy
 msgid  "EFFECTIVE"
-msgstr ""
+msgstr "אפקטיבי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NOMINAL.STRING.TEXT
+#, fuzzy
 msgid  "NOMINAL"
-msgstr ""
+msgstr "נומינלי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUB_TOTAL.STRING.TEXT
+#, fuzzy
 msgid  "SUBTOTAL"
-msgstr ""
+msgstr "סכום חלקי"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_SUM.STRING.TEXT
 msgid  "DSUM"
@@ -752,8 +799,9 @@ msgid  "ADDRESS"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MATCH.STRING.TEXT
+#, fuzzy
 msgid  "MATCH"
-msgstr ""
+msgstr "תואם"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_EMPTY_CELLS.STRING.TEXT
 msgid  "COUNTBLANK"
@@ -765,6 +813,22 @@ msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_IF.STRING.TEXT
 msgid  "SUMIF"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IF.STRING.TEXT
+msgid  "AVERAGEIF"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_IFS.STRING.TEXT
+msgid  "SUMIFS"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IFS.STRING.TEXT
+msgid  "AVERAGEIFS"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_IFS.STRING.TEXT
+msgid  "COUNTIFS"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOOKUP.STRING.TEXT
@@ -796,8 +860,9 @@ msgid  "AREAS"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CURRENCY.STRING.TEXT
+#, fuzzy
 msgid  "DOLLAR"
-msgstr ""
+msgstr "דולר"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_REPLACE.STRING.TEXT
 msgid  "REPLACE"
@@ -816,24 +881,45 @@ msgid  "EXACT"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LEFT.STRING.TEXT
+#, fuzzy
 msgid  "LEFT"
-msgstr ""
+msgstr "שמאל"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RIGHT.STRING.TEXT
+#, fuzzy
 msgid  "RIGHT"
-msgstr ""
+msgstr "ימין"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SEARCH.STRING.TEXT
+#, fuzzy
 msgid  "SEARCH"
-msgstr ""
+msgstr "חפוש"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MID.STRING.TEXT
+#, fuzzy
 msgid  "MID"
+msgstr "אמצעי"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LENB.STRING.TEXT
+msgid  "LENB"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RIGHTB.STRING.TEXT
+msgid  "RIGHTB"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LEFTB.STRING.TEXT
+msgid  "LEFTB"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIDB.STRING.TEXT
+msgid  "MIDB"
 msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "TEXT"
-msgstr ""
+msgstr "טקסט"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUBSTITUTE.STRING.TEXT
 msgid  "SUBSTITUTE"

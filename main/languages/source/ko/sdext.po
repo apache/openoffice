@@ -30,3 +30,267 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
+
+#: minimizer/minimizer.src#STR_PRESENTATION_MINIMIZER.STRING.TEXT
+msgid  "Presentation Minimizer"
+msgstr "프레젠테이션 압축기"
+
+#: minimizer/minimizer.src#STR_INFO_DIALOG.STRING.TEXT
+msgid  "Presentation Minimizer - Result"
+msgstr "프레젠테이션 압축기 - 결과"
+
+#: minimizer/minimizer.src#STR_STEPS.STRING.TEXT
+msgid  "Steps"
+msgstr "단계"
+
+#: minimizer/minimizer.src#STR_HELP.STRING.TEXT
+msgid  "~Help"
+msgstr "도움말(~H)"
+
+#: minimizer/minimizer.src#STR_BACK.STRING.TEXT
+msgid  "< ~Back"
+msgstr "< 이전(~B)"
+
+#: minimizer/minimizer.src#STR_NEXT.STRING.TEXT
+msgid  "~Next >"
+msgstr "다음(~N) >"
+
+#: minimizer/minimizer.src#STR_FINISH.STRING.TEXT
+msgid  "~Finish"
+msgstr "마침(~F)"
+
+#: minimizer/minimizer.src#STR_CANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr "취소"
+
+#: minimizer/minimizer.src#STR_INTRODUCTION.STRING.TEXT
+msgid  "Introduction"
+msgstr "소개"
+
+#: minimizer/minimizer.src#STR_INTRODUCTION_T.STRING.TEXT
+msgid  "The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.\nAt the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
+msgstr "프레젠테이션 압축기는 현재 프레젠테이션의 파일 크기를 줄이는 데 사용됩니다. 이미지는 압축하고 더 이상 사용하지 않는 데이터가 있으면 제거합니다.\n마법사의 마지막 단계에서 변경 사항을 현재 프레젠테이션에 적용할 것인지 최적화된 새 버전의 프레젠테이션을 만들 것인지 선택할 수 있습니다."
+
+#: minimizer/minimizer.src#STR_CHOSE_SETTINGS.STRING.TEXT
+msgid  "~Choose settings for Presentation Minimizer"
+msgstr "프레젠테이션 압축기에 대한 설정 선택(~C)"
+
+#: minimizer/minimizer.src#STR_REMOVE.STRING.TEXT
+msgid  "~Delete"
+msgstr "삭제(~D)"
+
+#: minimizer/minimizer.src#STR_GRAPHIC_OPTIMIZATION.STRING.TEXT
+msgid  "Choose settings for optimizing pictures and graphics"
+msgstr "그림과 그래픽 최적화에 대한 설정 선택"
+
+#: minimizer/minimizer.src#STR_IMAGE_OPTIMIZATION.STRING.TEXT
+msgid  "Graphics"
+msgstr "그래픽"
+
+#: minimizer/minimizer.src#STR_LOSSLESS_COMPRESSION.STRING.TEXT
+msgid  "~Lossless compression"
+msgstr "손실없는 압축(~L)"
+
+#: minimizer/minimizer.src#STR_JPEG_COMPRESSION.STRING.TEXT
+msgid  "~JPEG compression"
+msgstr "JPEG 압축(~J)"
+
+#: minimizer/minimizer.src#STR_QUALITY.STRING.TEXT
+msgid  "~Quality in %"
+msgstr "%로 표시된 품질(~Q)"
+
+#: minimizer/minimizer.src#STR_REMOVE_CROP_AREA.STRING.TEXT
+msgid  "~Delete cropped graphic areas"
+msgstr "잘린 그래픽 영역 삭제(~D)"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION.STRING.TEXT
+msgid  "Reduce ~image resolution"
+msgstr "이미지 해상도 축소(~I)"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_0.STRING.TEXT
+msgid  "<no change>"
+msgstr "<변경 사항 없음>"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_1.STRING.TEXT
+msgid  "90;90 DPI (screen resolution)"
+msgstr "90;90 DPI (화면 해상도)"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_2.STRING.TEXT
+msgid  "150;150 DPI (projector resolution)"
+msgstr "150;150 DPI (프로젝터 해상도)"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_3.STRING.TEXT
+msgid  "300;300 DPI (print resolution)"
+msgstr "300;300 DPI (인쇄 해상도)"
+
+#: minimizer/minimizer.src#STR_EMBED_LINKED_GRAPHICS.STRING.TEXT
+msgid  "~Break links to external graphics"
+msgstr "외부 그래픽에 대한 연결 해제(~B)"
+
+#: minimizer/minimizer.src#STR_OLE_OBJECTS.STRING.TEXT
+msgid  "OLE Objects"
+msgstr "OLE 개체"
+
+#: minimizer/minimizer.src#STR_OLE_OPTIMIZATION.STRING.TEXT
+msgid  "Choose settings for replacing OLE objects"
+msgstr "OLE 개체 대체에 대한 설정 선택"
+
+#: minimizer/minimizer.src#STR_OLE_REPLACE.STRING.TEXT
+msgid  "Create static replacement graphics for OLE objects"
+msgstr "OLE 개체에 대한 정적 대체 그래픽 만들기"
+
+#: minimizer/minimizer.src#STR_ALL_OLE_OBJECTS.STRING.TEXT
+msgid  "For ~all OLE objects"
+msgstr "모든 OLE 개체(~A)"
+
+#: minimizer/minimizer.src#STR_ALIEN_OLE_OBJECTS_ONLY.STRING.TEXT
+msgid  "~For OLE objects not based on OpenDocument format"
+msgstr "OpenDocument 형식을 따르지 않는 모든 OLE 개체(~F)"
+
+#: minimizer/minimizer.src#STR_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains OLE objects."
+msgstr "Object Linking and Embedding (OLE)은 문서와 기타 개체로 내장 및 연결을 할 수 있는 기술입니다.\n현재 프레젠테이션은 OLE 개체를 포함하고 있습니다."
+
+#: minimizer/minimizer.src#STR_NO_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains no OLE objects."
+msgstr "Object Linking and Embedding (OLE)은 문서와 기타 개체로 내장 및 연결을 할 수 있는 기술입니다.\n현재 프레젠테이션은 OLE 개체를 포함하고 있지 않습니다."
+
+#: minimizer/minimizer.src#STR_SLIDES.STRING.TEXT
+msgid  "Slides"
+msgstr "슬라이드"
+
+#: minimizer/minimizer.src#STR_CHOOSE_SLIDES.STRING.TEXT
+msgid  "Choose which slides to delete"
+msgstr "삭제할 슬라이드 선택"
+
+#: minimizer/minimizer.src#STR_MASTER_PAGES.STRING.TEXT
+msgid  "Master Pages"
+msgstr "마스터 페이지"
+
+#: minimizer/minimizer.src#STR_DELETE_MASTER_PAGES.STRING.TEXT
+msgid  "Delete unused ~master pages"
+msgstr "사용하지 않은 마스터 페이지 삭제(~M)"
+
+#: minimizer/minimizer.src#STR_DELETE_NOTES_PAGES.STRING.TEXT
+msgid  "~Clear notes"
+msgstr "메모 삭제(~C)"
+
+#: minimizer/minimizer.src#STR_DELETE_HIDDEN_SLIDES.STRING.TEXT
+msgid  "Delete hidden ~slides"
+msgstr "숨긴 슬라이드 삭제(~S)"
+
+#: minimizer/minimizer.src#STR_CUSTOM_SHOW.STRING.TEXT
+msgid  "Delete slides that are not used for the ~custom slide show"
+msgstr "사용자 정의 슬라이드 쇼에서 사용하지 않는 슬라이드 삭제(~C)"
+
+#: minimizer/minimizer.src#STR_SUMMARY.STRING.TEXT
+msgid  "Summary"
+msgstr "요약"
+
+#: minimizer/minimizer.src#STR_SUMMARY_TITLE.STRING.TEXT
+msgid  "Choose where to apply the following changes"
+msgstr "다음 변경 사항을 어디에 적용할 것인지 선택"
+
+#: minimizer/minimizer.src#STR_PROGRESS.STRING.TEXT
+msgid  "Progress"
+msgstr "진행률"
+
+#: minimizer/minimizer.src#STR_OBJECTS_OPTIMIZED.STRING.TEXT
+msgid  "Objects optimized"
+msgstr "개체 최적화됨"
+
+#: minimizer/minimizer.src#STR_APPLY_TO_CURRENT.STRING.TEXT
+msgid  "~Apply changes to current presentation"
+msgstr "현재 프레젠테이션에 변경 사항 적용(~A)"
+
+#: minimizer/minimizer.src#STR_AUTOMATICALLY_OPEN.STRING.TEXT
+msgid  "~Open newly created presentation"
+msgstr "새로 만든 프레젠테이션 열기(~O)"
+
+#: minimizer/minimizer.src#STR_SAVE_SETTINGS.STRING.TEXT
+msgid  "~Save settings as"
+msgstr "다른 이름으로 설정 저장(~S)"
+
+#: minimizer/minimizer.src#STR_SAVE_AS.STRING.TEXT
+msgid  "~Duplicate presentation before applying changes"
+msgstr "변경 사항을 적용하기 전에 프레젠테이션 사본 생성(~D)"
+
+#: minimizer/minimizer.src#STR_DELETE_SLIDES.STRING.TEXT
+msgid  "Delete %SLIDES slides."
+msgstr "%SLIDES 슬라이드를 삭제합니다."
+
+#: minimizer/minimizer.src#STR_OPTIMIZE_IMAGES.STRING.TEXT
+msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
+msgstr "%IMAGES 그래픽을 %RESOLUTION DPI의 %QUALITY% JPEG 품질로 최적화합니다."
+
+#: minimizer/minimizer.src#STR_CREATE_REPLACEMENT.STRING.TEXT
+msgid  "Create replacement graphics for %OLE objects."
+msgstr "%OLE 개체에 대해 대체 그래픽을 만듭니다."
+
+#: minimizer/minimizer.src#STR_CURRENT_FILESIZE.STRING.TEXT
+msgid  "Current file size:"
+msgstr "현재 파일 크기:"
+
+#: minimizer/minimizer.src#STR_ESTIMATED_FILESIZE.STRING.TEXT
+msgid  "Estimated new file size:"
+msgstr "예상되는 새 파일 크기:"
+
+#: minimizer/minimizer.src#STR_MB.STRING.TEXT
+msgid  "%1 MB"
+msgstr "%1 MB"
+
+#: minimizer/minimizer.src#STR_MY_SETTINGS.STRING.TEXT
+msgid  "My Settings "
+msgstr "내 설정"
+
+#: minimizer/minimizer.src#STR_DEFAULT_SESSION.STRING.TEXT
+msgid  "default session"
+msgstr "기본 세션"
+
+#: minimizer/minimizer.src#STR_MODIFY_WARNING.STRING.TEXT
+msgid  "The optimization will modify the current document. Do you want to continue?"
+msgstr "최적화는 현재 문서를 변경합니다. 계속 진행하시겠습니까?"
+
+#: minimizer/minimizer.src#STR_YES.STRING.TEXT
+msgid  "~Yes"
+msgstr "예(~Y)"
+
+#: minimizer/minimizer.src#STR_OK.STRING.TEXT
+msgid  "OK"
+msgstr "확인"
+
+#: minimizer/minimizer.src#STR_INFO_1.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
+msgstr "프레젠테이션 압축기가 '%TITLE' 프레젠테이션을 성공적으로 업데이트했습니다. 파일 크기가 %OLDFILESIZE MB에서 %NEWFILESIZE MB로 바뀌었습니다."
+
+#: minimizer/minimizer.src#STR_INFO_2.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
+msgstr "프레젠테이션 압축기가 '%TITLE' 프레젠테이션을 성공적으로 업데이트했습니다. 파일 크기가 %OLDFILESIZE MB에서 약 %NEWFILESIZE MB로 바뀌었습니다."
+
+#: minimizer/minimizer.src#STR_INFO_3.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
+msgstr "프레젠테이션 압축기가 '%TITLE' 프레젠테이션을 성공적으로 업데이트했습니다. 파일 크기가 %NEWFILESIZE MB로 바뀌었습니다."
+
+#: minimizer/minimizer.src#STR_INFO_4.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
+msgstr "프레젠테이션 압축기가 '%TITLE' 프레젠테이션을 성공적으로 업데이트했습니다. 파일 크기가 약 %NEWFILESIZE MB로 바뀌었습니다."
+
+#: minimizer/minimizer.src#STR_DUPLICATING_PRESENTATION.STRING.TEXT
+msgid  "Duplicating presentation..."
+msgstr "프레젠테이션 사본 생성 중..."
+
+#: minimizer/minimizer.src#STR_DELETING_SLIDES.STRING.TEXT
+msgid  "Deleting slides..."
+msgstr "슬라이드 삭제 중..."
+
+#: minimizer/minimizer.src#STR_OPTIMIZING_GRAPHICS.STRING.TEXT
+msgid  "Optimizing graphics..."
+msgstr "그래픽 최적화 중..."
+
+#: minimizer/minimizer.src#STR_CREATING_OLE_REPLACEMENTS.STRING.TEXT
+msgid  "Creating replacement graphics for OLE objects..."
+msgstr "OLE 개체에 대한 대체 그래픽 생성 중..."
+
+#: minimizer/minimizer.src#STR_FILESIZESEPARATOR.STRING.TEXT
+msgid  "."
+msgstr "."

@@ -722,6 +722,7 @@ msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "אין אפשרות להציג את כל תוכן הטבלה, יש להחיל פילטר."
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Adabas D"
 msgstr "Adabas D"
 
@@ -741,30 +742,37 @@ msgid  "MySQL (Native)"
 msgstr "MySQL (Native)"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Outlook Address Book"
 msgstr "פנקס הכתובות של Microsoft Outlook"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Windows Address Book"
 msgstr "פנקס הכתובות של Microsoft Windows"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "SeaMonkey Address Book"
 msgstr "פנקס הכתובות של SeaMonkey"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Thunderbird Address Book"
 msgstr "פנקס הכתובות של Thunderbird"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "LDAP Address Book"
 msgstr "פנקס הכתובות של LDAP"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "SeaMonkey Address Book"
 msgstr "פנקס הכתובות של SeaMonkey"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Thunderbird Address Book"
 msgstr "פנקס הכתובות של Thunderbird"
 
@@ -774,18 +782,22 @@ msgid  "LDAP Address Book"
 msgstr "פנקס הכתובות של LDAP"
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "HSQL database engine"
 msgstr "מנוע מסד נתונים HSQL"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Mac OS X Address Book"
 msgstr "ספר הכתובות של Mac OS X"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "Groupwise"
 
@@ -795,49 +807,61 @@ msgid  "ODBC"
 msgstr "ODBC"
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "KDE Address Book"
 msgstr "פנקס הכתובות של KDE"
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Text"
 msgstr "קובץ טקסט"
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "גיליון אלקטרוני"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "JDBC"
 msgstr "JDBC"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Oracle JDBC"
 msgstr "Oracle JDBC"
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "dBASE"
 msgstr "dBASE"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution Local"
 msgstr "Evolution מקומי"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ADO"
 msgstr "ADO"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access"
 msgstr "מיקרוסופט אקסס"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access 2007"
 msgstr "מיקרוסופט אקסס 2007"

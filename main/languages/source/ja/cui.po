@@ -63,10 +63,6 @@ msgstr "範囲(~C)"
 msgid  "Function"
 msgstr "機能"
 
-#: customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#DEFINE.TEXT
-msgid  "Functions"
-msgstr "機能"
-
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FIXEDLINE.TEXT
 msgid  "Shortcut keys"
 msgstr "ショートカットキー"
@@ -85,7 +81,7 @@ msgstr "キーボード設定を保存"
 
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.STRING.TEXT
 msgid  "Configuration (*.cfg)"
-msgstr "設定"
+msgstr "設定 (*.cfg)"
 
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.STRING.TEXT
 msgid  "My Macros"
@@ -111,14 +107,6 @@ msgstr "カスタマイズ"
 msgid  "Menus"
 msgstr "メニュー"
 
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_KEYBOARD.PAGEITEM.TEXT
-msgid  "Keyboard"
-msgstr "キーボード"
-
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_TOOLBARS.PAGEITEM.TEXT
-msgid  "Toolbars"
-msgstr "ツールバー"
-
 #: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_EVENTS.PAGEITEM.TEXT
 msgid  "Events"
 msgstr "イベント"
@@ -126,14 +114,6 @@ msgstr "イベント"
 #: customize/cfg.src#TEXT_MENU.#DEFINE.TEXT
 msgid  "Menu"
 msgstr "メニュー"
-
-#: customize/cfg.src#TEXT_BEGIN_GROUP.#DEFINE.TEXT
-msgid  "Begin a Group"
-msgstr "グループ化を開始"
-
-#: customize/cfg.src#TEXT_RENAME.#DEFINE.TEXT
-msgid  "Rename..."
-msgstr "名前を変更..."
 
 #: customize/cfg.src#TEXT_DELETE.#DEFINE.TEXT
 msgid  "Delete..."
@@ -143,10 +123,6 @@ msgstr "削除..."
 msgid  "Delete"
 msgstr "削除"
 
-#: customize/cfg.src#TEXT_MOVE.#DEFINE.TEXT
-msgid  "Move..."
-msgstr "移動..."
-
 #: customize/cfg.src#TEXT_DEFAULT_STYLE.#DEFINE.TEXT
 msgid  "Restore Default Settings"
 msgstr "デフォルト設定に戻す"
@@ -154,14 +130,6 @@ msgstr "デフォルト設定に戻す"
 #: customize/cfg.src#TEXT_DEFAULT_COMMAND.#DEFINE.TEXT
 msgid  "Restore Default Command"
 msgstr "デフォルトコマンドに戻す"
-
-#: customize/cfg.src#TEXT_TEXT_ONLY.#DEFINE.TEXT
-msgid  "Text only"
-msgstr "テキストのみ"
-
-#: customize/cfg.src#TEXT_TOOLBAR_NAME.#DEFINE.TEXT
-msgid  "Toolbar Name"
-msgstr "ツールバー名"
 
 #: customize/cfg.src#TEXT_SAVE_IN.#DEFINE.TEXT
 msgid  "Save In"
@@ -171,45 +139,13 @@ msgstr "保存"
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr "%PRODUCTNAME %MODULENAME メニュー"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "新規..."
-
 #: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_SEPARATOR.FIXEDLINE.TEXT
 msgid  "Menu Content"
 msgstr "メニュー内容"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_ENTRIES.FIXEDTEXT.TEXT
-msgid  "Entries"
-msgstr "エントリ"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_ADD_COMMANDS.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "追加..."
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_CHANGE_ENTRY.MENUBUTTON.TEXT
-msgid  "Modify"
-msgstr "変更"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Description"
-msgstr "説明"
-
 #: customize/cfg.src#MODIFY_ENTRY.ID_ADD_SUBMENU.MENUITEM.TEXT
 msgid  "Add Submenu..."
 msgstr "サブメニューの追加..."
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_ONLY.MENUITEM.TEXT
-msgid  "Icons Only"
-msgstr "アイコンのみ"
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_AND_TEXT.MENUITEM.TEXT
-msgid  "Icons & Text"
-msgstr "アイコンとテキスト"
-
-#: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_CHANGE_SYMBOL.MENUITEM.TEXT
-msgid  "Change Icon..."
-msgstr "アイコンの変更..."
 
 #: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_RESET_SYMBOL.MENUITEM.TEXT
 msgid  "Reset Icon"
@@ -218,10 +154,6 @@ msgstr "アイコンのリセット"
 #: customize/cfg.src#RID_SVXSTR_NEW_MENU.STRING.TEXT
 msgid  "New Menu %n"
 msgstr "新規メニュー %n"
-
-#: customize/cfg.src#RID_SVXSTR_NEW_TOOLBAR.STRING.TEXT
-msgid  "New Toolbar %n"
-msgstr "新規ツールバー %n"
 
 #: customize/cfg.src#RID_SVXSTR_MOVE_MENU.STRING.TEXT
 msgid  "Move Menu"
@@ -251,25 +183,9 @@ msgstr "メニュー名"
 msgid  "Menu position"
 msgstr "メニュー位置"
 
-#: customize/cfg.src#MD_NEW_TOOLBAR.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "名前"
-
-#: customize/cfg.src#MD_ICONSELECTOR.MODALDIALOG.TEXT
-msgid  "Change Icon"
-msgstr "アイコンの変更"
-
-#: customize/cfg.src#MD_ICONSELECTOR.FT_SYMBOLS.FIXEDTEXT.TEXT
-msgid  "Icons"
-msgstr "アイコン"
-
-#: customize/cfg.src#MD_ICONSELECTOR.BTN_IMPORT.PUSHBUTTON.TEXT
-msgid  "Import..."
-msgstr "インポート..."
-
 #: customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FIXEDTEXT.TEXT
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr "注意: アイコンを適切に表示するには、サイズを 16x16 ピクセルにする必要があります。異なるサイズのアイコンは、自動的に拡大縮小されます。"
+msgstr "注意: \nアイコンを適切に表示するには、サイズを 16x16 ピクセルにする必要があります。異なるサイズのアイコンは、自動的に拡大縮小されます。"
 
 #: customize/cfg.src#MD_ICONCHANGE.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -302,14 +218,6 @@ msgstr "すべて「はい」"
 #: customize/cfg.src#RID_SVXSTR_PRODUCTNAME_TOOLBARS.STRING.TEXT
 msgid  "%PRODUCTNAME %MODULENAME Toolbars"
 msgstr "%PRODUCTNAME %MODULENAME ツールバー"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR.STRING.TEXT
-msgid  "Toolbar"
-msgstr "ツールバー"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR_CONTENT.STRING.TEXT
-msgid  "Toolbar Content"
-msgstr "ツールバーの内容"
 
 #: customize/cfg.src#RID_SVXSTR_COMMANDS.STRING.TEXT
 msgid  "Commands"
@@ -351,10 +259,6 @@ msgstr "新しい名前(~N)"
 msgid  "Rename Menu"
 msgstr "メニューの名前を変更"
 
-#: customize/cfg.src#RID_SVXSTR_RENAME_TOOLBAR.STRING.TEXT
-msgid  "Rename Toolbar"
-msgstr "ツールバーの名前を変更"
-
 #: customize/cfg.src#BUTTON_STR_UP.STRING.TEXT
 msgid  "Up"
 msgstr "上へ"
@@ -362,10 +266,6 @@ msgstr "上へ"
 #: customize/cfg.src#BUTTON_STR_DOWN.STRING.TEXT
 msgid  "Down"
 msgstr "下へ"
-
-#: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "イベント"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -390,10 +290,6 @@ msgstr "削除(~R)"
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.TABPAGE.TEXT
 msgid  "Assign action"
 msgstr "アクションの割り当て"
-
-#: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "イベント"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -423,17 +319,13 @@ msgstr "コンポーネントを割り当てる"
 msgid  "Component method name"
 msgstr "コンポーネントメソッド名"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_STARTAPP.STRING.TEXT
-msgid  "Start Application"
-msgstr "アプリケーションの開始時"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEAPP.STRING.TEXT
 msgid  "Close Application"
 msgstr "アプリケーション終了時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_NEWDOC.STRING.TEXT
 msgid  "New Document"
-msgstr "新規文書の開始時"
+msgstr "新規ドキュメント作成時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEDOC.STRING.TEXT
 msgid  "Document closed"
@@ -441,15 +333,15 @@ msgstr "ドキュメントを閉じた時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_PREPARECLOSEDOC.STRING.TEXT
 msgid  "Document is going to be closed"
-msgstr "文書が閉じられる直前"
+msgstr "ドキュメントが閉じられる直前"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_OPENDOC.STRING.TEXT
 msgid  "Open Document"
-msgstr "文書を開いた時"
+msgstr "ドキュメントを開いた時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SAVEDOC.STRING.TEXT
 msgid  "Save Document"
-msgstr "文書を保存する時"
+msgstr "ドキュメントを保存する時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SAVEASDOC.STRING.TEXT
 msgid  "Save Document As"
@@ -457,27 +349,27 @@ msgstr "別名で保存する時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SAVEDOCDONE.STRING.TEXT
 msgid  "Document has been saved"
-msgstr "文書を保存した時"
+msgstr "ドキュメントを保存した時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SAVEASDOCDONE.STRING.TEXT
 msgid  "Document has been saved as"
-msgstr "文書を別名で保存した時"
+msgstr "ドキュメントを別名で保存した時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_ACTIVATEDOC.STRING.TEXT
 msgid  "Activate Document"
-msgstr "ドキュメントを有効化した時"
+msgstr "ドキュメントがアクティブになった時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_DEACTIVATEDOC.STRING.TEXT
 msgid  "Deactivate Document"
-msgstr "文書を無効化した時"
+msgstr "ドキュメントが非アクティブになった時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_PRINTDOC.STRING.TEXT
 msgid  "Print Document"
-msgstr "文書の印刷時"
+msgstr "ドキュメントの印刷時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_MODIFYCHANGED.STRING.TEXT
 msgid  "'Modified' status was changed"
-msgstr "'変更' ステータス変更時"
+msgstr "「変更」 ステータス変更時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_MAILMERGE.STRING.TEXT
 msgid  "Printing of form letters started"
@@ -495,10 +387,6 @@ msgstr "フォームの入力フィールドの結合開始時"
 msgid  "Merging of form fields finished"
 msgstr "フォームの入力フィールドの結合終了時"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_PAGECOUNTCHANGE.STRING.TEXT
-msgid  "Changing the page count"
-msgstr "ページ数の変更時"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_SUBCOMPONENT_OPENED.STRING.TEXT
 msgid  "Loaded a sub component"
 msgstr "サブコンポーネントを読み込んだ時"
@@ -515,33 +403,13 @@ msgstr "パラメータ入力時"
 msgid  "Execute action"
 msgstr "実行時"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
-msgstr "更新後"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
 msgstr "更新前"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
-msgstr "レコードアクションの実行前"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
-msgstr "レコードアクションの実行後"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
 msgstr "データを削除した時"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
-msgstr "エラーが発生時"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
-msgstr "値を調整した時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
@@ -554,14 +422,6 @@ msgstr "フォーカスを失った時"
 #: customize/macropg.src#RID_SVXSTR_EVENT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
 msgstr "ステータスを変更した時"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
-msgstr "キーを押した時"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYUP.STRING.TEXT
-msgid  "Key released"
-msgstr "キーを離した時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADED.STRING.TEXT
 msgid  "When loading"
@@ -599,14 +459,6 @@ msgstr "マウスボタンを押した時"
 msgid  "Mouse button released"
 msgstr "マウスボタンを離した時"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
-msgstr "レコード変更前"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONED.STRING.TEXT
-msgid  "After record change"
-msgstr "レコード変更後"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_RESETTED.STRING.TEXT
 msgid  "After resetting"
 msgstr "リセット後"
@@ -619,14 +471,6 @@ msgstr "リセット前"
 msgid  "Approve action"
 msgstr "実行前"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_SUBMITTED.STRING.TEXT
-msgid  "Before submitting"
-msgstr "サブミットする前"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
-msgstr "テキストの変更時"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
 msgstr "アンロードする前"
@@ -635,17 +479,13 @@ msgstr "アンロードする前"
 msgid  "When unloading"
 msgstr "アンロードするとき"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_CHANGED.STRING.TEXT
-msgid  "Changed"
-msgstr "変更時"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CREATEDOC.STRING.TEXT
 msgid  "Document created"
-msgstr "文書作成時"
+msgstr "ドキュメント作成時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADDOCFINISHED.STRING.TEXT
 msgid  "Document loading finished"
-msgstr "文書の読み込み終了時"
+msgstr "ドキュメントの読み込み終了時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SAVEDOCFAILED.STRING.TEXT
 msgid  "Saving of document failed"
@@ -661,7 +501,7 @@ msgstr "文書を保存もしくはエクスポートした時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_COPYTODOCDONE.STRING.TEXT
 msgid  "Document copy has been created"
-msgstr "文書のコピーを作った時"
+msgstr "ドキュメントのコピー作成時"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_COPYTODOCFAILED.STRING.TEXT
 msgid  "Creating of document copy failed"
@@ -739,18 +579,6 @@ msgstr "範囲(~C)"
 msgid  "Commands"
 msgstr "コマンド"
 
-#: customize/selector.src#STR_SELECTOR_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "追加"
-
-#: customize/selector.src#STR_SELECTOR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "実行"
-
-#: customize/selector.src#STR_SELECTOR_CLOSE.STRING.TEXT
-msgid  "Close"
-msgstr "閉じる"
-
 #: customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.STRING.TEXT
 msgid  "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customize dialog."
 msgstr "コマンドをツールバーに追加するには、分類を選んでから、コマンドを選びます。そのコマンドをカスタマイズダイアログにあるツールバータブのコマンドリストにドラッグします。"
@@ -771,17 +599,45 @@ msgstr "ライブラリ"
 msgid  "My Macros"
 msgstr "マイマクロ"
 
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_COMMANDS.FIXEDTEXT.TEXT
-msgid  "Macro name"
-msgstr "マクロ名"
-
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.GRP_SELECTOR_DESCRIPTION.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "説明"
-
 #: dialogs/about.src#RID_DEFAULTABOUT.MODALDIALOG.TEXT
 msgid  "About %FULLPRODUCTNAME"
-msgstr "%PRODUCTNAME 情報"
+msgstr "%FULLPRODUCTNAME 情報"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PUSHBUTTON.TEXT
+msgid  "License..."
+msgstr "ライセンス..."
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT_VENDOR.STRING.TEXT
+msgid  "%OOOVENDOR"
+msgstr "%OOOVENDOR"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED.STRING.TEXT
+msgid  "This product was created by the OpenOffice community."
+msgstr "この製品は OpenOffice コミュニティにより作成されました。"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED_VENDOR.STRING.TEXT
+msgid  "This product was created by %OOOVENDOR, based on Apache OpenOffice."
+msgstr "この製品は Apache OpenOffice を元に %OOOVENDOR により作成されました。"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_ACKNOWLEDGE.STRING.TEXT
+msgid  "The OpenOffice community acknowledges all contributing members, especially those mentioned at"
+msgstr "OpenOffice コミュニティはすべての貢献者に感謝します。とりわけ以下に述べる方々に深く感謝します。"
+
+#: dialogs/about.src#RID_CUI_README_DLG.MODALDIALOG.TEXT
+msgid  "Readme, License and Notice"
+msgstr "Readme, License and Notice"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_READMEPAGE.PAGEITEM.TEXT
+msgid  "Readme"
+msgstr "Readme"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_LICENSEPAGE.PAGEITEM.TEXT
+msgid  "License"
+msgstr "License"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_NOTICEPAGE.PAGEITEM.TEXT
+msgid  "Notice"
+msgstr "Notice"
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.MODALDIALOG.TEXT
 msgid  "Special Characters"
@@ -927,10 +783,6 @@ msgstr "代用テキスト(~T)"
 msgid  "~Description"
 msgstr "説明(~D)"
 
-#: dialogs/dlgname.src#RID_SVXDLG_NAME.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "名前"
-
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FIXEDTEXT.TEXT
 msgid  "~Name"
 msgstr "名前(~N)"
@@ -946,10 +798,6 @@ msgstr "タイトル(~T)"
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FIXEDTEXT.TEXT
 msgid  "~Description"
 msgstr "説明(~D)"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.MODALDIALOG.TEXT
-msgid  "Record Search"
-msgstr "データ レコードの検索"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FIXEDLINE.TEXT
 msgid  "Search for"
@@ -997,7 +845,7 @@ msgstr "フィールドの書式設定を使用"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_CASE.CHECKBOX.TEXT
 msgid  "Match case"
-msgstr "大文字と小文字を区別する"
+msgstr "大文字と小文字を区別"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_BACKWARD.CHECKBOX.TEXT
 msgid  "Search backwards"
@@ -1015,10 +863,6 @@ msgstr "ワイルドカードの表現"
 msgid  "Regular expression"
 msgstr "正規表現"
 
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CHECKBOX.TEXT
-msgid  "Similarity Search"
-msgstr "類似スペルの検索"
-
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PUSHBUTTON.TEXT
 msgid  "..."
 msgstr "..."
@@ -1034,10 +878,6 @@ msgstr "あいまい検索(日本語)"
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FIXEDLINE.TEXT
 msgid  "State"
 msgstr "ステータス"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FIXEDTEXT.TEXT
-msgid  "Record :"
-msgstr "レコード:"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PUSHBUTTON.TEXT
 msgid  "Search"
@@ -1111,18 +951,6 @@ msgstr "ファイル"
 msgid  "Type:"
 msgstr "タイプ:"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FIXEDTEXT.TEXT
-msgid  "Location:"
-msgstr "場所:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FIXEDTEXT.TEXT
-msgid  "Contents:"
-msgstr "内容:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FIXEDTEXT.TEXT
-msgid  "Modified:"
-msgstr "変更日時:"
-
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FIXEDTEXT.TEXT
 msgid  "~File type"
 msgstr "ファイルの種類(~F)"
@@ -1143,14 +971,6 @@ msgstr "すべて追加(~D)"
 msgid  "Pr~eview"
 msgstr "プレビュー(~E)"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PUSHBUTTON.TEXT
-msgid  "Maddin1"
-msgstr "Maddin1"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PUSHBUTTON.TEXT
-msgid  "Maddin2"
-msgstr "Maddin2"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.MODALDIALOG.TEXT
 msgid  "Enter Title"
 msgstr "タイトルの入力"
@@ -1159,21 +979,9 @@ msgstr "タイトルの入力"
 msgid  "Title"
 msgstr "タイトル"
 
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.MODALDIALOG.TEXT
-msgid  "Find"
-msgstr "検索"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FIXEDLINE.TEXT
-msgid  "Directory"
-msgstr "ディレクトリ"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FIXEDLINE.TEXT
 msgid  "File type"
 msgstr "ファイルの種類"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.MODALDIALOG.TEXT
-msgid  "Apply"
-msgstr "適用"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FIXEDLINE.TEXT
 msgid  "File"
@@ -1255,14 +1063,6 @@ msgstr "エイジング"
 msgid  "Aging degree"
 msgstr "エイジング度合"
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.MODALDIALOG.TEXT
-msgid  "Posterize"
-msgstr "ポスター"
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FIXEDTEXT.TEXT
-msgid  "Poster colors"
-msgstr "ポスターカラー"
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.MODALDIALOG.TEXT
 msgid  "Relief"
 msgstr "レリーフ"
@@ -1311,10 +1111,6 @@ msgstr "ハングル(~J)"
 msgid  "Ha~nja"
 msgstr "ハンジャ(~N)"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_CONVERSION.FIXEDTEXT.TEXT
-msgid  "Conversion"
-msgstr "変換"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_HANGUL_ONLY.CHECKBOX.TEXT
 msgid  "Hangul ~only"
 msgstr "ハングルのみ(~O)"
@@ -1326,10 +1122,6 @@ msgstr "ハンジャのみ(~Y)"
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_REPLACE_BY_CHARACTER.CHECKBOX.TEXT
 msgid  "Replace b~y character"
 msgstr "１文字ずつ置換(~Y)"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANGUL.STRING.TEXT
-msgid  "Hangul"
-msgstr "ハングル"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANJA.STRING.TEXT
 msgid  "Hanja"
@@ -1359,10 +1151,6 @@ msgstr "最後に使用されたエントリを最初に表示"
 msgid  "Replace all unique entries automatically"
 msgstr "すべての一意のエントリを自動的に置き換える"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "新規作成..."
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_EDIT.PUSHBUTTON.TEXT
 msgid  "Edit..."
 msgstr "編集..."
@@ -1371,53 +1159,21 @@ msgstr "編集..."
 msgid  "Delete"
 msgstr "削除"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.MODALDIALOG.TEXT
-msgid  "New Dictionary"
-msgstr "新しい辞書"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FL_NEWDICT.FIXEDLINE.TEXT
-msgid  "Dictionary"
-msgstr "辞書"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 msgid  "~Name"
 msgstr "名前(~N)"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.MODALDIALOG.TEXT
-msgid  "Edit Custom Dictionary"
-msgstr "カスタム辞書の編集"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.STR_EDITHINT.STRING.TEXT
 msgid  "[Enter text here]"
 msgstr "[ここにテキストを入力]"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_BOOK.FIXEDTEXT.TEXT
-msgid  "Book"
-msgstr "ブック"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_ORIGINAL.FIXEDTEXT.TEXT
 msgid  "Original"
 msgstr "オリジナル"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_SUGGESTIONS.FIXEDTEXT.TEXT
-msgid  "Suggestions (max. 8)"
-msgstr "候補 (最大 8)"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_NEW.PUSHBUTTON.TEXT
-msgid  "New"
-msgstr "新規作成"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CANCELBUTTON.TEXT
 msgid  "Close"
 msgstr "閉じる"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.MODALDIALOG.TEXT
-msgid  "Target in Document"
-msgstr "ドキュメントのターゲット"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_APPLY.PUSHBUTTON.TEXT
-msgid  "Apply"
-msgstr "適用"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
@@ -1495,10 +1251,6 @@ msgstr "フォーム(~O)"
 msgid  "Text"
 msgstr "文字列"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Button"
-msgstr "ボタン"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FIXEDTEXT.TEXT
 msgid  "Te~xt"
 msgstr "テキスト(~X)"
@@ -1510,10 +1262,6 @@ msgstr "名前(~A)"
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Events"
 msgstr "イベント"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FIXEDLINE.TEXT
-msgid  "Mail & news"
-msgstr "E-mail＆ニュース"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_MAIL.RADIOBUTTON.TEXT
 msgid  "~E-mail"
@@ -1535,10 +1283,6 @@ msgstr "件名(~S)"
 msgid  "Data Sources..."
 msgstr "データソース..."
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FIXEDLINE.TEXT
-msgid  "Document"
-msgstr "ドキュメント"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_PATH_DOC.FIXEDTEXT.TEXT
 msgid  "~Path"
 msgstr "パス(~P)"
@@ -1547,25 +1291,13 @@ msgstr "パス(~P)"
 msgid  "Open File"
 msgstr "ファイルを開ける"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_TARGET.FIXEDLINE.TEXT
-msgid  "Target in document"
-msgstr "ドキュメントにあるターゲット"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TARGET_DOC.FIXEDTEXT.TEXT
 msgid  "Targ~et"
 msgstr "ターゲット(~E)"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_URL.FIXEDTEXT.TEXT
-msgid  "URL"
-msgstr "URL"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FIXEDTEXT.TEXT
 msgid  "Test text"
 msgstr "テストテキスト"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_NEWDOCUMENT.FIXEDLINE.TEXT
-msgid  "New document"
-msgstr "新しいドキュメント"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.RB_EDITNOW.RADIOBUTTON.TEXT
 msgid  "Edit ~now"
@@ -1586,10 +1318,6 @@ msgstr "ファイルの種類(~T)"
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Select Path"
 msgstr "パスを選択"
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_APPLYBUT.STRING.TEXT
-msgid  "Apply"
-msgstr "適用"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_CLOSEBUT.STRING.TEXT
 msgid  "Close"
@@ -1619,10 +1347,6 @@ msgstr "インターネット"
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
 msgstr "Webページ、FTP サーバー、または Telnet 接続にハイパーリンクを作成します。"
 
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.STRING.TEXT
-msgid  "Mail & News"
-msgstr "E-mail＆ニュース"
-
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
 msgstr "E-mail アドレスまたはニュースグループにハイパーリンクを作成します。"
@@ -1630,10 +1354,6 @@ msgstr "E-mail アドレスまたはニュースグループにハイパーリ�
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
 msgstr "既存のドキュメントまたはドキュメントにあるターゲットにハイパーリンクを作成します。"
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.STRING.TEXT
-msgid  "New Document"
-msgstr "新しいドキュメント"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.STRING.TEXT
 msgid  "This is where you create a new document to which the new link points."
@@ -1691,10 +1411,6 @@ msgstr "前に(~B)"
 msgid  "A~fter"
 msgstr "後(~F)"
 
-#: dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "位置"
-
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FIXEDTEXT.TEXT
 msgid  "~Number"
 msgstr "数(~N)"
@@ -1733,7 +1449,7 @@ msgstr "パスのリスト"
 
 #: dialogs/multipat.src#RID_MULTIPATH_DBL_ERR.STRING.TEXT
 msgid  "The path %1 already exists."
-msgstr "%1のパスは既にあります。"
+msgstr "パス %1 は既にあります。"
 
 #: dialogs/multipat.src#RID_SVXSTR_FILE_TITLE.STRING.TEXT
 msgid  "Select files"
@@ -1747,13 +1463,9 @@ msgstr "ファイル"
 msgid  "Select Archives"
 msgstr "アーカイブの選択"
 
-#: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.STRING.TEXT
-msgid  "Archives"
-msgstr "アーカイブ"
-
 #: dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.STRING.TEXT
 msgid  "The file %1 already exists."
-msgstr "%1のファイルは既にあります。"
+msgstr "%1 のファイルは既にあります。"
 
 #: dialogs/newtabledlg.src#RID_SVX_NEWTABLE_DLG.MODALDIALOG.TEXT
 msgid  "Insert Table"
@@ -1781,7 +1493,7 @@ msgstr "開くためのパスワードを入力(~E)"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_REENTER_PASSWD_TO_OPEN.FIXEDTEXT.TEXT
 msgid  "Confirm password"
-msgstr "開くためのパスワードを再入力"
+msgstr "編集するためのパスワードを再入力"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_NOTE.FIXEDTEXT.TEXT
 msgid  "Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive."
@@ -1834,10 +1546,6 @@ msgstr "作者"
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_EDIT.FIXEDTEXT.TEXT
 msgid  "~Text"
 msgstr "文字列(~T)"
-
-#: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FIXEDLINE.TEXT
-msgid  "Contents"
-msgstr "内容"
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FIXEDTEXT.TEXT
 msgid  "~Insert"
@@ -1899,17 +1607,9 @@ msgstr "ライブラリの作成"
 msgid  "Enter the name for the new library."
 msgstr "新しいライブラリの名前を入力してください。"
 
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWMACRO.STRING.TEXT
-msgid  "Create Macro"
-msgstr "マクロの作成"
-
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_NEWMACRO.STRING.TEXT
 msgid  "Enter the name for the new macro."
 msgstr "新しいマクロの名前を入力してください。"
-
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_RENAME.STRING.TEXT
-msgid  "Rename"
-msgstr "名前変更"
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_RENAME.STRING.TEXT
 msgid  "Enter the new name for the selected object."
@@ -1947,10 +1647,6 @@ msgstr "同じ名前を持つオブジェクトがすでに存在します。"
 msgid  " You do not have permission to create this object."
 msgstr "このオブジェクトを作成するアクセス権がありません。"
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILED_TITLE.STRING.TEXT
-msgid  "Error Creating Object"
-msgstr "オブジェクトの作成エラー"
-
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED.STRING.TEXT
 msgid  "The object could not be renamed."
 msgstr "オブジェクトの名前を変更できませんでした。"
@@ -1958,10 +1654,6 @@ msgstr "オブジェクトの名前を変更できませんでした。"
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILEDPERM.STRING.TEXT
 msgid  " You do not have permission to rename this object."
 msgstr "このオブジェクトの名前を変更するアクセス権がありません。"
-
-#: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED_TITLE.STRING.TEXT
-msgid  "Error Renaming Object"
-msgstr "オブジェクトの名前変更エラー"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME Error"
@@ -1999,10 +1691,6 @@ msgstr "%LANGUAGENAME のスクリプト %SCRIPTNAME の実行中に、 %LINENUM
 msgid  "Type:"
 msgstr "タイプ:"
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_MESSAGE_LABEL.STRING.TEXT
-msgid  "Message:"
-msgstr "メッセージ:"
-
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TABDIALOG.TEXT
 msgid  "Format Cells"
 msgstr "セルの書式設定"
@@ -2014,14 +1702,6 @@ msgstr "フォント"
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
 msgid  "Font Effects"
 msgstr "フォント効果"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-msgid  "Borders"
-msgstr "枠線"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-msgid  "Background"
-msgstr "背景"
 
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PUSHBUTTON.TEXT
 msgid  "Return"
@@ -2045,7 +1725,7 @@ msgstr "テキストの言語(~E)"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_NOTINDICT.FIXEDTEXT.TEXT
 msgid  "~Not in dictionary"
-msgstr "辞書にありません(~N)"
+msgstr "辞書にない語(~N)"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_SUGGESTION.FIXEDTEXT.TEXT
 msgid  "~Suggestions"
@@ -2103,10 +1783,6 @@ msgstr "閉じる(~O)"
 msgid  "Resu~me"
 msgstr "再開(~M)"
 
-#: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.STRING.TEXT
-msgid  "(no suggestions)"
-msgstr "(提案なし)"
-
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.STRING.TEXT
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
 msgstr "スペルチェック: $LANGUAGE ($LOCATION)"
@@ -2159,10 +1835,6 @@ msgstr "フォント"
 msgid  "Font Effects"
 msgstr "フォント効果"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-msgid  "Position"
-msgstr "位置"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PAGEITEM.TEXT
 msgid  "Asian Layout"
 msgstr "日本語レイアウト"
@@ -2183,21 +1855,9 @@ msgstr "テキスト処理"
 msgid  "Asian Typography"
 msgstr "日本語の体裁"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
-msgstr "背景"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.MODALDIALOG.TEXT
-msgid  "Attributes"
-msgstr "プロパティー"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FIXEDTEXT.TEXT
 msgid  "~Options"
 msgstr "オプション(~O)"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.MODALDIALOG.TEXT
-msgid  "Similarity Search"
-msgstr "類似スペルの検索"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FIXEDTEXT.TEXT
 msgid  "~Exchange characters"
@@ -2223,17 +1883,9 @@ msgstr "設定"
 msgid  "Paste Special"
 msgstr "形式を選択して貼り付け"
 
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FIXEDTEXT.TEXT
-msgid  "Source:"
-msgstr "ソース:"
-
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RADIOBUTTON.TEXT
 msgid  "~Insert as"
 msgstr "形式を選んで挿入(~I)"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RADIOBUTTON.TEXT
-msgid  "Link to"
-msgstr "ここにリンク"
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CHECKBOX.TEXT
 msgid  "~As icon"
@@ -2246,10 +1898,6 @@ msgstr "その他のアイコン(~O)..."
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.FL_CHOICE.FIXEDLINE.TEXT
 msgid  "Selection"
 msgstr "選択"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.STRING.TEXT
-msgid  "Object"
-msgstr "オブジェクト"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.MODALDIALOG.TEXT
 msgid  "Edit Links"
@@ -2266,10 +1914,6 @@ msgstr "要素:"
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE.FIXEDTEXT.TEXT
 msgid  "Type"
 msgstr "種類"
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FIXEDTEXT.TEXT
-msgid  "Status"
-msgstr "ステータス"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CANCELBUTTON.TEXT
 msgid  "~Close"
@@ -2361,7 +2005,7 @@ msgstr "ファイルへリンク(~L)"
 
 #: dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.GB_OBJECT.FIXEDLINE.TEXT
 msgid  "Object type"
-msgstr "オブジェクトの型"
+msgstr "オブジェクトの種類"
 
 #: dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.STR_FILE.STRING.TEXT
 msgid  "File"
@@ -2423,10 +2067,6 @@ msgstr "なし(~F)"
 msgid  "Au~tomatic"
 msgstr "自動(~T)"
 
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FIXEDLINE.TEXT
-msgid  "Scroll bar"
-msgstr "スクロールバー"
-
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RADIOBUTTON.TEXT
 msgid  "On"
 msgstr "あり"
@@ -2434,10 +2074,6 @@ msgstr "あり"
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_OFF.RADIOBUTTON.TEXT
 msgid  "Off"
 msgstr "なし"
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FIXEDLINE.TEXT
-msgid  "Border"
-msgstr "枠線"
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FIXEDTEXT.TEXT
 msgid  "~Width"
@@ -2463,21 +2099,9 @@ msgstr "内部との間隔"
 msgid  "Select File for Floating Frame"
 msgstr "フレーム用のファイルを選択"
 
-#: dialogs/svuidlg.src#STR_EDIT_APPLET.STRING.TEXT
-msgid  "Edit Applet"
-msgstr "アプレットを編集"
-
-#: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.MODALDIALOG.TEXT
-msgid  "Record Number"
-msgstr "レコード番号"
-
 #: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FIXEDTEXT.TEXT
 msgid  "go to record"
 msgstr "レコードへ"
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MODALDIALOG.TEXT
-msgid  "Thesaurus"
-msgstr "類義語辞典"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_WORD.FIXEDTEXT.TEXT
 msgid  "~Current word"
@@ -2494,10 +2118,6 @@ msgstr "候補(~A)"
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_REPL.FIXEDTEXT.TEXT
 msgid  "~Replace with"
 msgstr "置き換える(~W)"
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.BTN_THES_OK.OKBUTTON.TEXT
-msgid  "Replace"
-msgstr "置換(~R)"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.STR_ERR_TEXTNOTFOUND.STRING.TEXT
 msgid  "No alternatives found."
@@ -2553,15 +2173,11 @@ msgstr "ドライバを使った接続保持の設定"
 
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CHECKBOX.TEXT
 msgid  "Connection pooling enabled"
-msgstr "ドライバを使って接続を保持する"
+msgstr "ドライバを使って接続を保持"
 
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FIXEDTEXT.TEXT
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "%PRODUCTNAME で使えるドライバ"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FIXEDTEXT.TEXT
-msgid  "Current driver:"
-msgstr "現在のドライバ:"
 
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CHECKBOX.TEXT
 msgid  "Enable pooling for this driver"
@@ -2571,10 +2187,6 @@ msgstr "このドライバで接続を保持する"
 msgid  "Timeout (seconds)"
 msgstr "タイムアウト(秒)"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.STRING.TEXT
-msgid  "Driver name"
-msgstr "ドライバ名"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.STRING.TEXT
 msgid  "Pool"
 msgstr "保持"
@@ -2582,14 +2194,6 @@ msgstr "保持"
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.STRING.TEXT
 msgid  "Timeout"
 msgstr "タイムアウト"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.STRING.TEXT
-msgid  "Yes"
-msgstr "はい"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.STRING.TEXT
-msgid  "No"
-msgstr "いいえ"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.TABPAGE.TEXT
 msgid  "Registered databases"
@@ -2663,10 +2267,6 @@ msgstr "フォントの種類(~F)"
 msgid  "Re~place with"
 msgstr "置換候補(~P)"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.TOOLBOXITEM.TEXT
-msgid  "Apply"
-msgstr "適用"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.TOOLBOXITEM.TEXT
 msgid  "Delete"
 msgstr "削除"
@@ -2687,10 +2287,6 @@ msgstr "等幅フォントのみ"
 msgid  "~Size"
 msgstr "サイズ(~S)"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.STRING.TEXT
-msgid  "Always"
-msgstr "常に"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.STRING.TEXT
 msgid  "Screen only"
 msgstr "画面のみ"
@@ -2699,17 +2295,9 @@ msgstr "画面のみ"
 msgid  "Font"
 msgstr "フォントの種類"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.STRING.TEXT
-msgid  "Replace with"
-msgstr "置換候補"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.STRING.TEXT
 msgid  "Automatic"
 msgstr "自動"
-
-#: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FIXEDLINE.TEXT
-msgid  "Default text direction"
-msgstr "標準文字方向"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RADIOBUTTON.TEXT
 msgid  "~Left-to-right"
@@ -2745,27 +2333,23 @@ msgstr "読み取り専用の文書ドキュメントでテキスト選択カー
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_GRAPHICS.CHECKBOX.TEXT
 msgid  "Allow animated ~graphics"
-msgstr "アニメーション画像を許可する(~G)"
+msgstr "アニメーション画像を許可(~G)"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_TEXTS.CHECKBOX.TEXT
 msgid  "Allow animated ~text"
-msgstr "アニメーションテキストを許可する(~T)"
+msgstr "アニメーションテキストを許可(~T)"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CHECKBOX.TEXT
 msgid  "~Help tips disappear after "
 msgstr "ヒントの表示時間(~H)"
 
-#: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FIXEDTEXT.TEXT
-msgid  "seconds"
-msgstr "秒"
-
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FIXEDLINE.TEXT
 msgid  "Options for high contrast appearance"
-msgstr "高コントラスト表示のオプション"
+msgstr "ハイコントラスト表示のオプション"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTO_DETECT_HC.CHECKBOX.TEXT
 msgid  "Automatically ~detect high contrast mode of operating system"
-msgstr "オペレーティングシステムの高コントラストモードを自動検出(~D)"
+msgstr "オペレーティングシステムのハイコントラストモードを自動検出(~D)"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTOMATIC_FONT_COLOR.CHECKBOX.TEXT
 msgid  "Use automatic font ~color for screen display"
@@ -2831,10 +2415,6 @@ msgstr "ユーザー定義の改行時の禁則文字は除く"
 msgid  "Proxy"
 msgstr "プロキシ"
 
-#: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TABPAGE.TEXT
-msgid  "Default Colors"
-msgstr "基本色"
-
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FIXEDLINE.TEXT
 msgid  "Chart colors"
 msgstr "グラフの色"
@@ -2851,14 +2431,6 @@ msgstr "標準(~D)"
 msgid  "Data Series $(ROW)"
 msgstr "系列$(ROW)"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FIXEDLINE.TEXT
-msgid  "Color scheme"
-msgstr "カラーパターン"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FIXEDTEXT.TEXT
-msgid  "Scheme"
-msgstr "パターン"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PUSHBUTTON.TEXT
 msgid  "Save..."
 msgstr "保存..."
@@ -2866,10 +2438,6 @@ msgstr "保存..."
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_DELETESCHEME.PUSHBUTTON.TEXT
 msgid  "Delete"
 msgstr "削除"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FIXEDLINE.TEXT
-msgid  "Custom colors"
-msgstr "ユーザー定義の色"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.STRING.TEXT
 msgid  "On"
@@ -2887,26 +2455,6 @@ msgstr "色の設定"
 msgid  "Preview"
 msgstr "プレビュー"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FIXEDTEXT.TEXT
-msgid  "General"
-msgstr "全般"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FIXEDTEXT.TEXT
-msgid  "Document background"
-msgstr "ドキュメント背景"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CHECKBOX.TEXT
-msgid  "Text boundaries"
-msgstr "テキストの境界"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FIXEDTEXT.TEXT
-msgid  "Application background"
-msgstr "アプリケーションの背景"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CHECKBOX.TEXT
-msgid  "Object boundaries"
-msgstr "オブジェクトの境界"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CHECKBOX.TEXT
 msgid  "Table boundaries"
 msgstr "テーブルの境界"
@@ -2914,14 +2462,6 @@ msgstr "テーブルの境界"
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_FONTCOLOR.FIXEDTEXT.TEXT
 msgid  "Font color"
 msgstr "フォントの色"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CHECKBOX.TEXT
-msgid  "Unvisited links"
-msgstr "訪問していないリンク"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CHECKBOX.TEXT
-msgid  "Visited links"
-msgstr "訪問したリンク"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FIXEDTEXT.TEXT
 msgid  "AutoSpellcheck"
@@ -2955,10 +2495,6 @@ msgstr "スクリプト"
 msgid  "Section boundaries"
 msgstr "範囲の境界"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FIXEDTEXT.TEXT
-msgid  "Page and column breaks"
-msgstr "改ページ"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FIXEDTEXT.TEXT
 msgid  "Direct cursor"
 msgstr "ダイレクトカーソル"
@@ -2979,18 +2515,6 @@ msgstr "コメントの強調表示"
 msgid  "Keyword highlighting"
 msgstr "キーワードの強調表示"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FIXEDTEXT.TEXT
-msgid  "Text"
-msgstr "テキスト"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FIXEDTEXT.TEXT
-msgid  "Spreadsheet"
-msgstr "表計算ドキュメント"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FIXEDTEXT.TEXT
-msgid  "Grid lines"
-msgstr "グリッド線"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FIXEDTEXT.TEXT
 msgid  "Page breaks"
 msgstr "改ページ"
@@ -3003,21 +2527,9 @@ msgstr "手動改ページ"
 msgid  "Automatic page breaks"
 msgstr "自動改ページ"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FIXEDTEXT.TEXT
-msgid  "Detective"
-msgstr "トレース"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FIXEDTEXT.TEXT
 msgid  "Detective error"
 msgstr "トレースのエラー"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FIXEDTEXT.TEXT
-msgid  "References"
-msgstr "参照"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FIXEDTEXT.TEXT
-msgid  "Notes background"
-msgstr "ノートの背景"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FIXEDTEXT.TEXT
 msgid  "Drawing / Presentation"
@@ -3051,14 +2563,6 @@ msgstr "演算子"
 msgid  "Reserved expression"
 msgstr "予約語"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FIXEDTEXT.TEXT
-msgid  "Error"
-msgstr "エラー"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FIXEDTEXT.TEXT
-msgid  "SQL Syntax Highlighting"
-msgstr "SQL シンタックスの強調表示"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FIXEDTEXT.TEXT
 msgid  "Keyword"
 msgstr "キーワード"
@@ -3091,10 +2595,6 @@ msgstr "カラーパターンを削除する"
 msgid  "Save scheme"
 msgstr "カラーパターンを保存する"
 
-#: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.STRING.TEXT
-msgid  "Name of color scheme"
-msgstr "カラーパターンの名前"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TABPAGE.TEXT
 msgid  "Complex Text Layout"
 msgstr "複合文字言語"
@@ -3119,10 +2619,6 @@ msgstr "タイプと置換(~T)"
 msgid  "Cursor control"
 msgstr "カーソル制御"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FIXEDTEXT.TEXT
-msgid  "Movement"
-msgstr "移動"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RADIOBUTTON.TEXT
 msgid  "Lo~gical"
 msgstr "論理(~G)"
@@ -3139,25 +2635,9 @@ msgstr "一般オプション"
 msgid  "~Numerals"
 msgstr "数値 (~N)"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM1.STRINGLIST.ITEM
-msgid  "Arabic"
-msgstr "アラビア数字"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM2.STRINGLIST.ITEM
-msgid  "Hindi"
-msgstr "ヒンディー語"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM3.STRINGLIST.ITEM
-msgid  "System"
-msgstr "システム"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM4.STRINGLIST.ITEM
 msgid  "Context"
 msgstr "コンテキスト"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.MODALDIALOG.TEXT
-msgid  "New Dictionary"
-msgstr "ユーザー辞書の作成"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 msgid  "~Name"
@@ -3170,14 +2650,6 @@ msgstr "言語(~L)"
 #: options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CHECKBOX.TEXT
 msgid  "~Exception (-)"
 msgstr "例外(-) (~E)"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FIXEDLINE.TEXT
-msgid  "Dictionary"
-msgstr "辞書"
-
-#: options/optdict.src#RID_SFXDLG_EDITDICT.MODALDIALOG.TEXT
-msgid  "Edit Custom Dictionary"
-msgstr "ユーザー辞書の編集"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FIXEDTEXT.TEXT
 msgid  "~Book"
@@ -3287,10 +2759,6 @@ msgstr "Excel から %PRODUCTNAME Calc へ、またはその逆"
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
 msgstr "PowerPoint から %PRODUCTNAME Impress へ、またはその逆"
 
-#: options/optgdlg.src#OFA_TP_MISC.FL_HELP.FIXEDLINE.TEXT
-msgid  "Help"
-msgstr "ヘルプ"
-
 #: options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CHECKBOX.TEXT
 msgid  "~Tips"
 msgstr "ヒント(~T)"
@@ -3311,25 +2779,21 @@ msgstr "ヘルプエージェントをリセット(~R)"
 msgid  "Help ~formatting"
 msgstr "ヘルプの書式(~F)"
 
-#: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM1.STRINGLIST.ITEM
-msgid  "Default"
-msgstr "デフォルト"
-
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM2.STRINGLIST.ITEM
 msgid  "High Contrast #1"
-msgstr "高コントラスト #1"
+msgstr "ハイコントラスト #1"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM3.STRINGLIST.ITEM
 msgid  "High Contrast #2"
-msgstr "高コントラスト #2"
+msgstr "ハイコントラスト #2"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM4.STRINGLIST.ITEM
 msgid  "High Contrast Black"
-msgstr "高コントラスト 黒"
+msgstr "ハイコントラスト 黒"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM5.STRINGLIST.ITEM
 msgid  "High Contrast White"
-msgstr "高コントラスト 白"
+msgstr "ハイコントラスト 白"
 
 #: options/optgdlg.src#OFA_TP_MISC.FL_FILEDLG.FIXEDLINE.TEXT
 msgid  "Open/Save dialogs"
@@ -3337,7 +2801,7 @@ msgstr "「開く」ダイアログと「保存」ダイアログ"
 
 #: options/optgdlg.src#OFA_TP_MISC.CB_FILEDLG.CHECKBOX.TEXT
 msgid  "~Use %PRODUCTNAME dialogs"
-msgstr "%PRODUCTNAME ダイアログを使用する(~U)"
+msgstr "%PRODUCTNAME ダイアログを使用(~U)"
 
 #: options/optgdlg.src#OFA_TP_MISC.FL_DOCSTATUS.FIXEDLINE.TEXT
 msgid  "Document status"
@@ -3353,7 +2817,7 @@ msgstr "年 (2 桁)"
 
 #: options/optgdlg.src#OFA_TP_MISC.FT_INTERPRET.FIXEDTEXT.TEXT
 msgid  "Interpret as years between"
-msgstr "次の年の間と解釈する"
+msgstr "次の年の間と解釈"
 
 #: options/optgdlg.src#OFA_TP_MISC.FT_TOYEAR.FIXEDTEXT.TEXT
 msgid  "and "
@@ -3365,11 +2829,7 @@ msgstr "印刷ダイアログ"
 
 #: options/optgdlg.src#OFA_TP_MISC.CB_PRINTDLG.CHECKBOX.TEXT
 msgid  "Use %PRODUCTNAME ~dialogs"
-msgstr "%PRODUCTNAME ダイアログを使用する(~D)"
-
-#: options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FIXEDLINE.TEXT
-msgid  "User Interface"
-msgstr "ユーザーインタフェース"
+msgstr "%PRODUCTNAME ダイアログを使用(~D)"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FIXEDTEXT.TEXT
 msgid  "Sc~aling"
@@ -3387,25 +2847,13 @@ msgstr "アイコンサイズ"
 msgid  "Automatic"
 msgstr "自動"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM2.STRINGLIST.ITEM
-msgid  "Small"
-msgstr "小"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM3.STRINGLIST.ITEM
-msgid  "Large"
-msgstr "大"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM2.STRINGLIST.ITEM
 msgid  "Galaxy (default)"
 msgstr "ギャラクシー (デフォルト)"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM3.STRINGLIST.ITEM
 msgid  "High Contrast"
-msgstr "高コントラスト"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM4.STRINGLIST.ITEM
-msgid  "Industrial"
-msgstr "インダストリアル"
+msgstr "ハイコントラスト"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM5.STRINGLIST.ITEM
 msgid  "Classic"
@@ -3421,11 +2869,7 @@ msgstr "スクリーンフォントの縁を滑らかにする"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_LABEL.FIXEDTEXT.TEXT
 msgid  "from"
-msgstr "から"
-
-#: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FIXEDTEXT.TEXT
-msgid  "Pixels"
-msgstr "ピクセル"
+msgstr "最小"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FIXEDLINE.TEXT
 msgid  "Menu"
@@ -3461,23 +2905,15 @@ msgstr "図の出力"
 
 #: options/optgdlg.src#OFA_TP_VIEW.CB_USE_HARDACCELL.CHECKBOX.TEXT
 msgid  "Use hardware acceleration"
-msgstr "ハードウェアアクセラレータを使用する"
+msgstr "ハードウェアアクセラレータを使用"
 
 #: options/optgdlg.src#OFA_TP_VIEW.CB_USE_ANTIALIASE.CHECKBOX.TEXT
 msgid  "Use Anti-Aliasing"
-msgstr "アンチエイリアシングを使用する"
-
-#: options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FIXEDLINE.TEXT
-msgid  "Mouse"
-msgstr "マウス"
+msgstr "アンチエイリアシングを使用"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FIXEDTEXT.TEXT
 msgid  "Mouse positioning"
-msgstr "マウスの位置"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM1.STRINGLIST.ITEM
-msgid  "Default button"
-msgstr "デフォルトのボタン"
+msgstr "マウスポインタの位置"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM2.STRINGLIST.ITEM
 msgid  "Dialog center"
@@ -3495,13 +2931,9 @@ msgstr "マウスの中ボタン"
 msgid  "No function"
 msgstr "対応なし"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM2.STRINGLIST.ITEM
-msgid  "Automatic scrolling"
-msgstr "スクロール"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM3.STRINGLIST.ITEM
 msgid  "Paste clipboard"
-msgstr "クリップボードを貼り付け"
+msgstr "クリップボードから貼り付け"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_SELECTION.FIXEDLINE.TEXT
 msgid  "Selection"
@@ -3529,7 +2961,7 @@ msgstr "ロケール設定"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.FT_DECIMALSEPARATOR.FIXEDTEXT.TEXT
 msgid  "Decimal separator key"
-msgstr "十進数区切り子キー"
+msgstr "小数点文字"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_DECIMALSEPARATOR.CHECKBOX.TEXT
 msgid  "~Same as locale setting ( %1 )"
@@ -3545,7 +2977,7 @@ msgstr "ドキュメントの標準言語"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.FT_WEST_LANG.FIXEDTEXT.TEXT
 msgid  "Western"
-msgstr "西洋"
+msgstr "西欧諸言語"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.FT_ASIAN_LANG.FIXEDTEXT.TEXT
 msgid  "Asian"
@@ -3553,7 +2985,7 @@ msgstr "アジア諸言語"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.FT_COMPLEX_LANG.FIXEDTEXT.TEXT
 msgid  "C~TL"
-msgstr "C~TL"
+msgstr "複合文字言語"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_CURRENT_DOC.CHECKBOX.TEXT
 msgid  "For the current document only"
@@ -3574,10 +3006,6 @@ msgstr "複合文字言語用項目を表示(~I)"
 #: options/optgdlg.src#RID_SVX_MSGBOX_LANGUAGE_RESTART.INFOBOX.MESSAGE
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ユーザーインタフェースの言語設定が更新されました。この設定は、%PRODUCTNAME %PRODUCTVERSION を再起動後、有効になります。"
-
-#: options/optgenrl.src#RID_SFXPAGE_GENERAL.TABPAGE.TEXT
-msgid  "User Data"
-msgstr "ユーザーデータ"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FIXEDTEXT.TEXT
 msgid  "~Company"
@@ -3639,6 +3067,10 @@ msgstr "都道府県名/州名/郵便番号"
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
 msgstr "市町村名、郵便番号、都道府県名は登録キーを発行する手がかりとなります。登録が済むまではユーザーデータは変更できません。このユーザーデータを今変更しますか？"
 
+#: options/optgenrl.src#RID_SVXQB_CHANGEDATA.QUERYBOX.MESSAGE
+msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgstr "ユーザーデータが変更されました。\nユーザーデータを変更しますか。"
+
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FIXEDTEXT.TEXT
 msgid  "Size ~1"
 msgstr "サイズ ~1"
@@ -3681,7 +3113,7 @@ msgstr "数字に '%ENGLISHUSLOCALE' ロケールを使う(~U)"
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_UNKNOWN_TAGS.CHECKBOX.TEXT
 msgid  "~Import unknown HTML tags as fields"
-msgstr "不明な HTML タグはフィールドとしてインポートする(~I)"
+msgstr "不明な HTML タグはフィールドとしてインポート(~I)"
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_IGNORE_FONTNAMES.CHECKBOX.TEXT
 msgid  "Ignore ~font settings"
@@ -3767,14 +3199,6 @@ msgstr "プロキシサーバー(~E)"
 msgid  "None"
 msgstr "なし"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM2.STRINGLIST.ITEM
-msgid  "System"
-msgstr "システム"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM3.STRINGLIST.ITEM
-msgid  "Manual"
-msgstr "手動"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.STRING.TEXT
 msgid  "Use browser settings"
 msgstr "ブラウザ設定を使用"
@@ -3811,14 +3235,6 @@ msgstr "ポート(~R)"
 msgid  "~No proxy for:"
 msgstr "プロキシなし(~N)"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FIXEDTEXT.TEXT
-msgid  "Separator ;"
-msgstr "区切り記号;"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FIXEDLINE.TEXT
-msgid  "DNS server"
-msgstr "DNS サーバー"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RADIOBUTTON.TEXT
 msgid  "~Automatic"
 msgstr "自動(~A)"
@@ -3835,10 +3251,6 @@ msgstr "このフィールドでは無効です。0 ～ 255 範囲の数値を�
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
 msgstr "このフィールドでは無効です。1 ～ 255 範囲の数値を入力してください。"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TABPAGE.TEXT
-msgid  "Search"
-msgstr "検索"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FIXEDLINE.TEXT
 msgid  "Search in"
 msgstr "検索場所"
@@ -3853,7 +3265,7 @@ msgstr "タイプ"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RADIOBUTTON.TEXT
 msgid  "~And"
-msgstr "AND"
+msgstr "~And"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RADIOBUTTON.TEXT
 msgid  "~Or"
@@ -3879,14 +3291,6 @@ msgstr "区切り記号(~S)"
 msgid  "~Case match"
 msgstr "文字の区別(~C)"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM2.STRINGLIST.ITEM
-msgid  "Upper"
-msgstr "大文字"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM3.STRINGLIST.ITEM
-msgid  "Lower"
-msgstr "小文字"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PUSHBUTTON.TEXT
 msgid  "N~ew"
 msgstr "新規作成(~E)"
@@ -3906,10 +3310,6 @@ msgstr "削除(~D)"
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.MSG_MODIFY.STRING.TEXT
 msgid  "Do you want to accept the current modification?"
 msgstr "現在の変更を適用しますか。"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TABPAGE.TEXT
-msgid  "Security"
-msgstr "セキュリティ"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FIXEDLINE.TEXT
 msgid  "Security options and warnings"
@@ -3941,15 +3341,11 @@ msgstr "マスターパスワードによって保護 (推奨)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MASTERPASSWORD.FIXEDTEXT.TEXT
 msgid  "Passwords are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr "パスワードはマスターパスワードによって保護されています。 OpenOffice.org が保護されたパスワードリストからパスワードを取得する場合、セッションごとに 1 度パスワードを入力するように求められます。"
+msgstr "パスワードはマスターパスワードによって保護されています。 %PRODUCTNAME が保護されたパスワードリストからパスワードを取得する場合、セッションごとに 1 度パスワードを入力するように求められます。"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MASTERPASSWORD.PUSHBUTTON.TEXT
 msgid  "Master Password..."
 msgstr "マスターパスワード..."
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FIXEDLINE.TEXT
-msgid  "Macro security"
-msgstr "マクロセキュリティ"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FIXEDTEXT.TEXT
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
@@ -3962,6 +3358,10 @@ msgstr "マクロセキュリティ..."
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.STRING.TEXT
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
 msgstr "パスワードを継続的に保存する機能を無効にすると、保存されたパスワードのリストが削除され、マスターパスワードがリセットされます。\n\nパスワードリストを削除して、マスターパスワードをリセットしますか ?"
+
+#: options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ERRORBOX.MESSAGE
+msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
+msgstr "数値が正しくありません!\n\nポート番号の最高値は65535です。"
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FIXEDTEXT.TEXT
 msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
@@ -3982,10 +3382,6 @@ msgstr "~E-mail プログラム"
 #: options/optinet2.src#RID_SVXPAGE_INET_MAIL.STR_DEFAULT_FILENAME.STRING.TEXT
 msgid  "All files (*.*)"
 msgstr "すべてのファイル (*.*)"
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TABPAGE.TEXT
-msgid  "Java"
-msgstr "Java"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FIXEDLINE.TEXT
 msgid  "Java options"
@@ -4010,10 +3406,6 @@ msgstr "パラメータ(~P)"
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_CLASSPATH.PUSHBUTTON.TEXT
 msgid  "~Class Path..."
 msgstr "クラスパス(~C)..."
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.STRING.TEXT
-msgid  "Location: "
-msgstr "場所: "
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.STRING.TEXT
 msgid  "with accessibility support"
@@ -4051,17 +3443,9 @@ msgstr "割り当て(~A)"
 msgid  "Assig~ned start parameters"
 msgstr "割り当てられた起動パラメータ"
 
-#: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FIXEDTEXT.TEXT
-msgid  "For example: -Dmyprop=c:\\program files\\java"
-msgstr "例: -Dmyprop=c:\\program files\\java"
-
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove"
 msgstr "削除(~R)"
-
-#: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.MODALDIALOG.TEXT
-msgid  "Class Path"
-msgstr "クラスパス"
 
 #: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FIXEDTEXT.TEXT
 msgid  "A~ssigned folders and archives"
@@ -4075,9 +3459,21 @@ msgstr "アーカイブを追加(~A)..."
 msgid  "Add ~Folder"
 msgstr "フォルダを追加(~F)"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FIXEDLINE.TEXT
-msgid  "Treat as equal"
-msgstr "区別しない字種・字体・表記"
+#: options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ERRORBOX.MESSAGE
+msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+msgstr "選択されたフォルダには Java ランタイム環境がありません。\n別のフォルダを指定してください。"
+
+#: options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ERRORBOX.MESSAGE
+msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
+msgstr "選択された Java ランタイム環境は要求されたバージョンではありません。\n別のフォルダを指定してください。"
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WARNINGBOX.MESSAGE
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
+msgstr "選択した Java ランタイム環境を正常に動作させるには, %PRODUCTNAME を再起動しなければなりません。\n%PRODUCTNAME を再起動してください。"
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WARNINGBOX.MESSAGE
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
+msgstr "新しい設定値または変更した設定値を有効にするには %PRODUCTNAME を再起動しなければなりません。\n%PRODUCTNAME を再起動してください。"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CHECKBOX.TEXT
 msgid  "~uppercase/lowercase"
@@ -4105,7 +3501,7 @@ msgstr "繰り返し記号[ヽヾゝゞ々](~P)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_VARIANT_FORM_KANJI.CHECKBOX.TEXT
 msgid  "~variant-form kanji (itaiji)"
-msgstr "漢字表記のゆれ(異体字)(~V)"
+msgstr "漢字表記のゆれ (異体字)(~V)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_OLD_KANA_FORMS.CHECKBOX.TEXT
 msgid  "~old Kana forms"
@@ -4143,13 +3539,9 @@ msgstr "サ行の前のキ/ク (テキスト/テクスト)(~K)"
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "長音(カー/カア)(~G)"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FIXEDLINE.TEXT
-msgid  "Ignore"
-msgstr "無視する記号・文字"
-
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CHECKBOX.TEXT
 msgid  "Pu~nctuation characters"
-msgstr "区切り記号(~N)"
+msgstr "句読点(~N)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_WHITESPACES.CHECKBOX.TEXT
 msgid  "~Whitespace characters"
@@ -4158,10 +3550,6 @@ msgstr "空白として使用される文字(~W)"
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_MIDDLE_DOT.CHECKBOX.TEXT
 msgid  "Midd~le dots"
 msgstr "中黒(~L)"
-
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CHECKBOX.TEXT
-msgid  "Searching in Japanese"
-msgstr "日本語検索オプション"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.MODALDIALOG.TEXT
 msgid  "Edit Modules"
@@ -4202,10 +3590,6 @@ msgstr "スペルチェック"
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_HYPH.STRING.TEXT
 msgid  "Hyphenation"
 msgstr "ハイフネーション"
-
-#: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.STRING.TEXT
-msgid  "Thesaurus"
-msgstr "類義語辞典"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.STRING.TEXT
 msgid  "Grammar"
@@ -4259,21 +3643,9 @@ msgstr "オプション(~O)"
 msgid  "Edi~t..."
 msgstr "編集(~T)..."
 
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.STRING.TEXT
-msgid  "Check uppercase words"
-msgstr "大文字の単語をスペルチェック"
-
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.STRING.TEXT
 msgid  "Check words with numbers "
 msgstr "数字を含む単語のスペルチェック"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.STRING.TEXT
-msgid  "Check capitalization"
-msgstr "大文字と小文字のスペルミス"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.STRING.TEXT
-msgid  "Check special regions"
-msgstr "特別範囲のスペルチェック"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.STRING.TEXT
 msgid  "Check spelling as you type"
@@ -4319,10 +3691,6 @@ msgstr "編集オプション"
 msgid  "Do you want to delete the dictionary?"
 msgstr "辞書を削除しますか。"
 
-#: options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FIXEDLINE.TEXT
-msgid  "Undo"
-msgstr "元に戻す"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FIXEDTEXT.TEXT
 msgid  "Number of steps"
 msgstr "ステップの数"
@@ -4335,10 +3703,6 @@ msgstr "グラフィックキャッシュ"
 msgid  "Use for %PRODUCTNAME"
 msgstr "%PRODUCTNAME 用に使用"
 
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FIXEDTEXT.TEXT
-msgid  "MB"
-msgstr "MB"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FIXEDTEXT.TEXT
 msgid  "Memory per object"
 msgstr "オブジェクト当たりのメモリ"
@@ -4347,17 +3711,13 @@ msgstr "オブジェクト当たりのメモリ"
 msgid  "Remove from memory after"
 msgstr "使用後、メモリから削除"
 
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FIXEDTEXT.TEXT
-msgid  "hh:mm"
-msgstr "hh:mm"
-
 #: options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FIXEDLINE.TEXT
 msgid  "Cache for inserted objects"
 msgstr "挿入されたオブジェクト用のキャッシュ"
 
 #: options/optmemory.src#OFA_TP_MEMORY.FT_OLECACHE.FIXEDTEXT.TEXT
 msgid  "Number of objects"
-msgstr "オブジェクトの数"
+msgstr "オブジェクト数"
 
 #: options/optmemory.src#OFA_TP_MEMORY.FL_QUICKLAUNCH.FIXEDLINE.TEXT
 msgid  "%PRODUCTNAME Quickstarter"
@@ -4369,7 +3729,7 @@ msgstr "システム起動時に %PRODUCTNAME を読み込む"
 
 #: options/optmemory.src#OFA_TP_MEMORY.STR_QUICKLAUNCH_UNX.STRING.TEXT
 msgid  "Enable systray Quickstarter"
-msgstr "クイック起動 systray を有効"
+msgstr "タスクトレイのクイック起動を有効"
 
 #: options/optpath.src#RID_SFXPAGE_PATH.TABPAGE.TEXT
 msgid  "Paths"
@@ -4399,6 +3759,10 @@ msgstr "%PRODUCTNAME によって使用されるパス"
 msgid  "Edit Paths: %1"
 msgstr "パスの変更: %1"
 
+#: options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ERRORBOX.MESSAGE
+msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
+msgstr "設定用とメール保存用のディレクトリは別々でなければなりません。\n新しいパスを選択してください。"
+
 #: options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.STRING.TEXT
 msgid  "Configuration"
 msgstr "設定"
@@ -4406,22 +3770,6 @@ msgstr "設定"
 #: options/optpath.src#RID_SVXSTR_KEY_WORK_PATH.STRING.TEXT
 msgid  "My Documents"
 msgstr "マイドキュメント"
-
-#: options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.STRING.TEXT
-msgid  "Graphics"
-msgstr "グラフィックス"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.STRING.TEXT
-msgid  "Icons"
-msgstr "アイコン"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.STRING.TEXT
-msgid  "Palettes"
-msgstr "パレット"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.STRING.TEXT
-msgid  "Backups"
-msgstr "バックアップ"
 
 #: options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.STRING.TEXT
 msgid  "Modules"
@@ -4435,33 +3783,13 @@ msgstr "テンプレート"
 msgid  "AutoText"
 msgstr "テキストブロック"
 
-#: options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.STRING.TEXT
-msgid  "Dictionaries"
-msgstr "辞書"
-
-#: options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.STRING.TEXT
-msgid  "Help"
-msgstr "ヘルプ"
-
 #: options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.STRING.TEXT
 msgid  "Gallery"
 msgstr "ギャラリー"
 
-#: options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.STRING.TEXT
-msgid  "Message Storage"
-msgstr "メッセージ用メモリー"
-
 #: options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.STRING.TEXT
 msgid  "Temporary files"
 msgstr "一時ファイル"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.STRING.TEXT
-msgid  "Plug-ins"
-msgstr "プラグイン"
-
-#: options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.STRING.TEXT
-msgid  "Folder Bookmarks"
-msgstr "フォルダブックマーク"
 
 #: options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.STRING.TEXT
 msgid  "Filters"
@@ -4515,17 +3843,13 @@ msgstr "常時バックアップコピーの作成(~W)"
 msgid  "Save ~AutoRecovery information every"
 msgstr "自動回復情報を保存(~A)"
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FIXEDTEXT.TEXT
-msgid  "Minutes"
-msgstr "分毎に行う"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CHECKBOX.TEXT
 msgid  "Save URLs relative to file system"
-msgstr "ファイルシステムに関連した URL を保存"
+msgstr "ファイルシステムへのパスに相対 URL を保存"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_INET.CHECKBOX.TEXT
 msgid  "Save URLs relative to internet"
-msgstr "URL アドレスの相対保存"
+msgstr "インターネットへのパスに相対 URL を保存"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FL_FILTER.FIXEDLINE.TEXT
 msgid  "Default file format and ODF settings"
@@ -4553,7 +3877,7 @@ msgstr "ODF 形式でのサイズの最適化"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_WARNALIENFORMAT.CHECKBOX.TEXT
 msgid  "Warn when not saving in ODF or default format"
-msgstr "ODF または標準の形式で保存しない場合に警告する"
+msgstr "ODF または標準の形式で保存しない場合に警告"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.FT_APP.FIXEDTEXT.TEXT
 msgid  "D~ocument type"
@@ -4574,10 +3898,6 @@ msgstr "HTML 形式ドキュメント"
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER_GLOBAL.STRINGLIST.ITEM
 msgid  "Master document"
 msgstr "マスタードキュメント"
-
-#: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.STRINGLIST.ITEM
-msgid  "Spreadsheet"
-msgstr "表計算ドキュメント"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.STRINGLIST.ITEM
 msgid  "Presentation"
@@ -4607,10 +3927,6 @@ msgstr "スペルチェック"
 msgid  "~Edit..."
 msgstr "編集(~E)..."
 
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FIXEDLINE.TEXT
-msgid  "Dictionaries"
-msgstr "辞書"
-
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CHECKBOX.TEXT
 msgid  "~Capital words"
 msgstr "すべて大文字の単語(~C)"
@@ -4621,11 +3937,7 @@ msgstr "数字を含む単語(~W)"
 
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_UPLOW.CHECKBOX.TEXT
 msgid  "~Case sensitive "
-msgstr "大文字と小文字を区別する(~C)"
-
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FIXEDLINE.TEXT
-msgid  "Check"
-msgstr "スペルチェック"
+msgstr "大文字と小文字を区別(~C)"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TABPAGE.TEXT
 msgid  "OnlineUpdate"
@@ -4693,11 +4005,11 @@ msgstr "文書が、記録された変更、バージョン、秘匿情報、も
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SAVESENDDOCS.CHECKBOX.TEXT
 msgid  "When saving or sending"
-msgstr "保存または送信するとき"
+msgstr "保存または送信時"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SIGNDOCS.CHECKBOX.TEXT
 msgid  "When signing"
-msgstr "署名するとき"
+msgstr "署名時"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_PRINTDOCS.CHECKBOX.TEXT
 msgid  "When printing"
@@ -4713,11 +4025,11 @@ msgstr "セキュリティオプション"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_REMOVEINFO.CHECKBOX.TEXT
 msgid  "Remove personal information on saving"
-msgstr "保存するときに個人情報を取り除く"
+msgstr "保存時に個人情報を削除"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_RECOMMENDPWD.CHECKBOX.TEXT
 msgid  "Recommend password protection on saving"
-msgstr "保存するときに、パスワード保護をすすめる"
+msgstr "保存時にパスワード保護を勧める"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_CTRLHYPERLINK.CHECKBOX.TEXT
 msgid  "Ctrl-click required to follow hyperlinks"
@@ -4783,14 +4095,6 @@ msgstr "ここで、外部データソースへアクセスする全般設定を
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
 msgstr "ここで、外部書式のドキュメントを開いたり、保存したりするときの全般設定を行います。Microsoft Office ドキュメントのマクロの作動や OLE オブジェクトのコントロール、HTML 形式ドキュメントの設定などができます。"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ITEMLIST.ITEM
-msgid  "%PRODUCTNAME"
-msgstr "%PRODUCTNAME"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ITEMLIST.ITEM
-msgid  "User Data"
-msgstr "ユーザーデータ"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ITEMLIST.ITEM
 msgid  "General"
 msgstr "全般"
@@ -4811,17 +4115,9 @@ msgstr "印刷"
 msgid  "Paths"
 msgstr "パス"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ITEMLIST.ITEM
-msgid  "Colors"
-msgstr "色"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ITEMLIST.ITEM
 msgid  "Fonts"
 msgstr "フォントの種類"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ITEMLIST.ITEM
-msgid  "Security"
-msgstr "セキュリティ"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ITEMLIST.ITEM
 msgid  "Appearance"
@@ -4831,10 +4127,6 @@ msgstr "配色の調整"
 msgid  "Accessibility"
 msgstr "アクセシビリティ"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ITEMLIST.ITEM
-msgid  "Java"
-msgstr "Java"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ITEMLIST.ITEM
 msgid  "Network Identity"
 msgstr "ネットワーク ID"
@@ -4842,10 +4134,6 @@ msgstr "ネットワーク ID"
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_ONLINEUPDATE.ITEMLIST.ITEM
 msgid  "Online Update"
 msgstr "オンライン更新"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ITEMLIST.ITEM
-msgid  "Language Settings"
-msgstr "言語設定"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ITEMLIST.ITEM
 msgid  "Languages"
@@ -4855,13 +4143,9 @@ msgstr "言語"
 msgid  "Writing Aids"
 msgstr "文章作成支援"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ITEMLIST.ITEM
-msgid  "Searching in Japanese"
-msgstr "日本語検索オプション"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ITEMLIST.ITEM
 msgid  "Asian Layout"
-msgstr "日本語レイアウト"
+msgstr "複合文字言語レイアウト"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_OPTIONS_CTL.ITEMLIST.ITEM
 msgid  "Complex Text Layout"
@@ -4875,14 +4159,6 @@ msgstr "インターネット"
 msgid  "Proxy"
 msgstr "プロキシ"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ITEMLIST.ITEM
-msgid  "Search"
-msgstr "検索"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ITEMLIST.ITEM
-msgid  "E-mail"
-msgstr "E-mail"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
@@ -4893,7 +4169,7 @@ msgstr "書式サポート"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SVXPAGE_GRID.ITEMLIST.ITEM
 msgid  "Grid"
-msgstr "罫線"
+msgstr "グリッド線"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT.ITEMLIST.ITEM
 msgid  "Basic Fonts (Western)"
@@ -4905,7 +4181,7 @@ msgstr "既定のフォント(アジア諸言語)"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT_CTL.ITEMLIST.ITEM
 msgid  "Basic Fonts (CTL)"
-msgstr "基本フォント (CTL)"
+msgstr "既定のフォント (複合文字言語)"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTTABLE_PAGE.ITEMLIST.ITEM
 msgid  "Table"
@@ -4931,10 +4207,6 @@ msgstr "差し込み印刷 E-mail"
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ITEMLIST.ITEM
-msgid  "Background"
-msgstr "背景"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Math"
 msgstr "%PRODUCTNAME Math"
@@ -4942,14 +4214,6 @@ msgstr "%PRODUCTNAME Math"
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.SID_SM_TP_PRINTOPTIONS.ITEMLIST.ITEM
 msgid  "Settings"
 msgstr "設定"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ITEMLIST.ITEM
-msgid  "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Calc"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ITEMLIST.ITEM
-msgid  "International"
-msgstr "国際標準書式"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ITEMLIST.ITEM
 msgid  "Calculate"
@@ -4967,25 +4231,9 @@ msgstr "%PRODUCTNAME Impress"
 msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME Draw"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ITEMLIST.ITEM
-msgid  "Charts"
-msgstr "グラフ"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ITEMLIST.ITEM
-msgid  "Default Colors"
-msgstr "基本色"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ITEMLIST.ITEM
 msgid  "Load/Save"
 msgstr "読み込みと保存"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ITEMLIST.ITEM
-msgid  "VBA Properties"
-msgstr "VBA 属性"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ITEMLIST.ITEM
-msgid  "Microsoft Office"
-msgstr "Microsoft Office"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ITEMLIST.ITEM
 msgid  "HTML Compatibility"
@@ -5006,10 +4254,6 @@ msgstr "データベース"
 #: options/treeopt.src#RID_RIDER_SLL_SITE.STRING.TEXT
 msgid  "Site certificates"
 msgstr "サイト認証"
-
-#: options/treeopt.src#RID_RIDER_SLL_PERSONAL.STRING.TEXT
-msgid  "Personal certificates"
-msgstr "個人認証"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.MODALDIALOG.TEXT
 msgid  "Stored Web Connection Information"
@@ -5047,10 +4291,6 @@ msgstr "ユーザー名"
 msgid  "Alignment"
 msgstr "配置"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FIXEDLINE.TEXT
-msgid  "Text alignment"
-msgstr "文章の配置"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FIXEDTEXT.TEXT
 msgid  "Hori~zontal"
 msgstr "横に(~Z)"
@@ -5059,25 +4299,9 @@ msgstr "横に(~Z)"
 msgid  "Default"
 msgstr "標準"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.STRINGLIST.ITEM
-msgid  "Left"
-msgstr "左"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.STRINGLIST.ITEM
-msgid  "Center"
-msgstr "中央揃え"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.STRINGLIST.ITEM
-msgid  "Right"
-msgstr "右揃え"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.STRINGLIST.ITEM
 msgid  "Justified"
 msgstr "両端揃え"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.STRINGLIST.ITEM
-msgid  "Filled"
-msgstr "塗りつぶし"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FIXEDTEXT.TEXT
 msgid  "I~ndent"
@@ -5086,14 +4310,6 @@ msgstr "インデント(~N)"
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_VERALIGN.FIXEDTEXT.TEXT
 msgid  "~Vertical"
 msgstr "縦に(~V)"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.STRINGLIST.ITEM
-msgid  "Top"
-msgstr "上揃え"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.STRINGLIST.ITEM
-msgid  "Middle"
-msgstr "中央揃え"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.STRINGLIST.ITEM
 msgid  "Bottom"
@@ -5118,10 +4334,6 @@ msgstr "基準になる縁(~F)"
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_ASIAN_VERTICAL.TRISTATEBOX.TEXT
 msgid  "Asian layout ~mode"
 msgstr "日本語縦書きレイアウトモード(~M)"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr "体裁"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TRISTATEBOX.TEXT
 msgid  "~Wrap text automatically"
@@ -5159,10 +4371,6 @@ msgstr "オートコレクト"
 msgid  "Replace"
 msgstr "置換"
 
-#: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PAGEITEM.TEXT
-msgid  "Exceptions"
-msgstr "例外"
-
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PAGEITEM.TEXT
 msgid  "Options"
 msgstr "オプション"
@@ -5191,21 +4399,13 @@ msgstr "置換リストを使う"
 msgid  "Correct TWo INitial CApitals"
 msgstr "2文字目を小文字にする"
 
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.STRING.TEXT
-msgid  "Capitalize first letter of every sentence"
-msgstr "すべての文を大文字で始める"
-
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.STRING.TEXT
 msgid  "Automatic *bold* and _underline_"
 msgstr "自動的に *太字* を太字に _下線_ を下線付きに"
 
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.STR_NO_DBL_SPACES.STRING.TEXT
 msgid  "Ignore double spaces"
-msgstr "ダブルスペースを無視する"
-
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.STRING.TEXT
-msgid  "URL Recognition"
-msgstr "URL識別"
+msgstr "ダブルスペースを無視"
 
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.STRING.TEXT
 msgid  "Replace dashes"
@@ -5219,14 +4419,6 @@ msgstr "設定"
 msgid  "~Edit..."
 msgstr "編集(~E)..."
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.STRING.TEXT
-msgid  "[M]"
-msgstr "[M]"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.STRING.TEXT
-msgid  "[T]"
-msgstr "[T]"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "[M]: Replace while modifying existing text"
 msgstr "[M]: 既存のテキストの変更中のオートコレクト"
@@ -5238,10 +4430,6 @@ msgstr "[T]: 入力中のオートコレクト"
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_DEL_EMPTY_PARA.STRING.TEXT
 msgid  "Remove blank paragraphs"
 msgstr "空白の段落を削除"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.STRING.TEXT
-msgid  "Replace Custom Styles"
-msgstr "ユーザー定義のスタイルを置換"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.STRING.TEXT
 msgid  "Replace bullets with: "
@@ -5257,15 +4445,11 @@ msgstr "箇条書きの適用　マーク: "
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_BORDER.STRING.TEXT
 msgid  "Apply border"
-msgstr "外枠を付ける"
+msgstr "罫線を適用"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_TABLE.STRING.TEXT
 msgid  "Create table"
 msgstr "表の作成"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.STRING.TEXT
-msgid  "Apply Styles"
-msgstr "段落スタイルの適用"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.STRING.TEXT
 msgid  "Delete spaces and tabs at beginning and end of paragraph"
@@ -5314,10 +4498,6 @@ msgstr "ピリオド付きの省略語"
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOABBREV.CHECKBOX.TEXT
 msgid  "~AutoInclude"
 msgstr "自動的に追加(~A)"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FIXEDLINE.TEXT
-msgid  "Words with TWo INitial CApitals"
-msgstr "大文字2つで始まる単語"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PUSHBUTTON.TEXT
 msgid  "Ne~w"
@@ -5399,10 +4579,6 @@ msgstr "単語左の記号"
 msgid  "End quote"
 msgstr "単語右の記号"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
-msgid  "Default"
-msgstr "標準"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
 msgid  "Single quotes default"
 msgstr "シングルクォーテーションマークを標準に戻す"
@@ -5429,11 +4605,11 @@ msgstr "単語右側のダブルクォート"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 msgid  "Enable word ~completion"
-msgstr "ワードコンプリーション機能を有効にする(~C)"
+msgstr "ワードコンプリーション機能を使用(~C)"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_APPEND_SPACE.CHECKBOX.TEXT
 msgid  "~Append space"
-msgstr "スペースをつける(~A)"
+msgstr "スペースを追加(~A)"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_AS_TIP.CHECKBOX.TEXT
 msgid  "~Show as tip"
@@ -5441,7 +4617,7 @@ msgstr "ヒントとして表示(~S)"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_COLLECT.CHECKBOX.TEXT
 msgid  "C~ollect words"
-msgstr "単語の収集(~O)"
+msgstr "単語を収集(~O)"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CHECKBOX.TEXT
 msgid  "~When closing a document, remove the words collected from it from the list"
@@ -5471,25 +4647,13 @@ msgstr "スマートタグのあるラベルテキスト"
 msgid  "Currently installed smart tags"
 msgstr "現在インストールされているスマートタグ"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PUSHBUTTON.TEXT
-msgid  "Properties..."
-msgstr "プロパティー..."
-
 #: tabpages/backgrnd.src#UNLINKED_IMAGE.#DEFINE.TEXT
 msgid  "Unlinked graphic"
 msgstr "リンクされていない図"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TABPAGE.TEXT
-msgid  "Background"
-msgstr "背景"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FIXEDTEXT.TEXT
 msgid  "A~s"
 msgstr "様式(~S)"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
-msgid  "Color"
-msgstr "色"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
 msgid  "Graphic"
@@ -5499,29 +4663,9 @@ msgstr "図"
 msgid  "F~or"
 msgstr "用途(~O)"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM1.STRINGLIST.ITEM
-msgid  "Cell"
-msgstr "セル"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM2.STRINGLIST.ITEM
-msgid  "Row"
-msgstr "行"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM3.STRINGLIST.ITEM
-msgid  "Table"
-msgstr "表"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM1.STRINGLIST.ITEM
-msgid  "Paragraph"
-msgstr "段落"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM2.STRINGLIST.ITEM
 msgid  "Character"
 msgstr "文字"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FIXEDLINE.TEXT
-msgid  "Background color"
-msgstr "背景色"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FIXEDTEXT.TEXT
 msgid  "~Transparency"
@@ -5567,22 +4711,6 @@ msgstr "プレビュー(~V)"
 msgid  "Find graphics"
 msgstr "図を検索"
 
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TABDIALOG.TEXT
-msgid  "Border / Background"
-msgstr "外枠/背景"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-msgid  "Borders"
-msgstr "枠線"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
-msgstr "背景"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.TABPAGE.TEXT
-msgid  "Borders"
-msgstr "枠線"
-
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FIXEDLINE.TEXT
 msgid  "Line arrangement"
 msgstr "線を引く位置"
@@ -5594,10 +4722,6 @@ msgstr "標準(~D)"
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_USERDEF.FIXEDTEXT.TEXT
 msgid  "~User-defined"
 msgstr "ユーザー定義(~U)"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FIXEDLINE.TEXT
-msgid  "Line"
-msgstr "線"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FIXEDTEXT.TEXT
 msgid  "St~yle"
@@ -5642,14 +4766,6 @@ msgstr "間隔(~C)"
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWCOLOR.FIXEDTEXT.TEXT
 msgid  "C~olor"
 msgstr "色(~O)"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FIXEDLINE.TEXT
-msgid  "Shadow style"
-msgstr "影付き"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr "プロパティー"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CHECKBOX.TEXT
 msgid  "~Merge with next paragraph"
@@ -5707,29 +4823,9 @@ msgstr "上下の境界線と内部のすべての線を設定"
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr "左右の境界線と内部のすべての線を設定"
 
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.STRING.TEXT
-msgid  "No Shadow"
-msgstr "影なし"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.STRING.TEXT
-msgid  "Cast Shadow to Bottom Right"
-msgstr "右下に影を付ける"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.STRING.TEXT
-msgid  "Cast Shadow to Top Right"
-msgstr "右上に影を付ける"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.STRING.TEXT
-msgid  "Cast Shadow to Bottom Left"
-msgstr "左下に影を付ける"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.STRING.TEXT
-msgid  "Cast Shadow to Top Left"
-msgstr "左上に影を付ける"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FIXEDLINE.TEXT
 msgid  "Western text font"
-msgstr "西洋諸言語用フォント"
+msgstr "西欧諸言語用フォント"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_NAME.FIXEDTEXT.TEXT
 msgid  "Font"
@@ -5746,10 +4842,6 @@ msgstr "スタイル(~T)"
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM1.STRINGLIST.ITEM
 msgid  "Normal"
 msgstr "標準"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM2.STRINGLIST.ITEM
-msgid  "Italic"
-msgstr "斜体"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM3.STRINGLIST.ITEM
 msgid  "Bold"
@@ -5791,10 +4883,6 @@ msgstr "スタイル(~P)"
 msgid  "Example"
 msgstr "例"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FIXEDLINE.TEXT
-msgid  "Color"
-msgstr "色"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FIXEDTEXT.TEXT
 msgid  "Font ~color"
 msgstr "フォントの色(~C)"
@@ -5827,21 +4915,9 @@ msgstr "小文字"
 msgid  "Title"
 msgstr "タイトル"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-msgid  "Small capitals"
-msgstr "小さい大文字"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FIXEDTEXT.TEXT
 msgid  "~Relief"
 msgstr "浮き出し(~R)"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-msgid  "Embossed"
-msgstr "浮き出し"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-msgid  "Engraved"
-msgstr "浮き彫り"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TRISTATEBOX.TEXT
 msgid  "Out~line"
@@ -5870,10 +4946,6 @@ msgstr "一重"
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLE.STRINGLIST.ITEM
 msgid  "Double"
 msgstr "二重線"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
-msgid  "Dotted"
-msgstr "点線"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
 msgid  "Dotted (Bold)"
@@ -5931,14 +5003,6 @@ msgstr "上線の色(~V)"
 msgid  "~Strikethrough"
 msgstr "取り消し線(~S)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.STRINGLIST.ITEM
-msgid  "With /"
-msgstr "/ あり"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_X.STRINGLIST.ITEM
-msgid  "With X"
-msgstr "X あり"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FIXEDTEXT.TEXT
 msgid  "~Underlining"
 msgstr "下線(~U)"
@@ -5949,59 +5013,23 @@ msgstr "下線の色(~N)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_INDIVIDUALWORDS.CHECKBOX.TEXT
 msgid  "Individual ~words"
-msgstr "それぞれ語句(~W)"
+msgstr "語句ごと(~W)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_EMPHASIS.FIXEDTEXT.TEXT
 msgid  "Emp~hasis mark"
-msgstr "強調に用いる記号(~H)"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-msgid  "Dot"
-msgstr "点"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-msgid  "Circle"
-msgstr "円"
+msgstr "強調記号(~H)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
 msgid  "Disc"
 msgstr "塗りつぶしの丸"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-msgid  "Accent"
-msgstr "アクセント"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FIXEDTEXT.TEXT
 msgid  "~Position"
 msgstr "位置(~P)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.STRINGLIST.ITEM
-msgid  "Above text"
-msgstr "テキストの上"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.STRINGLIST.ITEM
-msgid  "Below text"
-msgstr "テキストの下"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.STRING.TEXT
-msgid  "Small Capitals"
-msgstr "小さい大文字"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.STRING.TEXT
 msgid  "Outline"
 msgstr "中抜き"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.STRING.TEXT
-msgid  "Shadow"
-msgstr "影"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_BLINKING.STRING.TEXT
-msgid  "Blinking"
-msgstr "点滅"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "位置"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RADIOBUTTON.TEXT
 msgid  "Superscript"
@@ -6021,15 +5049,11 @@ msgstr "自動(~U)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FT_FONTSIZE.FIXEDTEXT.TEXT
 msgid  "Relative font size"
-msgstr "相対的なフォントサイズ"
+msgstr "相対サイズ"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_ROTATION_SCALING.FIXEDLINE.TEXT
 msgid  "Rotation / scaling"
 msgstr "回転 / 倍率"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FIXEDLINE.TEXT
-msgid  "Scaling"
-msgstr "倍率"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RADIOBUTTON.TEXT
 msgid  "~0 degrees"
@@ -6056,28 +5080,16 @@ msgid  "Spacing"
 msgstr "間隔"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-msgid  "Default"
-msgstr "デフォルト"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-msgid  "Expanded"
-msgstr "広くする"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
 msgid  "Condensed"
 msgstr "狭くする"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FT_KERNING2.FIXEDTEXT.TEXT
 msgid  "b~y"
-msgstr "カーニング(~Y)"
+msgstr "変更量(~Y)"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.CB_PAIRKERNING.CHECKBOX.TEXT
 msgid  "~Pair kerning"
 msgstr "文字組みのカーニング(~P)"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FIXEDLINE.TEXT
-msgid  "Double-lined"
-msgstr "２行使い"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.CB_TWOLINES.CHECKBOX.TEXT
 msgid  "~Write in double lines"
@@ -6095,22 +5107,6 @@ msgstr "開く記号(~N)"
 msgid  "(None)"
 msgstr "(なし)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-msgid  "("
-msgstr "("
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-msgid  "["
-msgstr "["
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-msgid  "<"
-msgstr "<"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-msgid  "{"
-msgstr "{"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
 msgid  "Other Characters..."
 msgstr "その他の文字..."
@@ -6119,22 +5115,6 @@ msgstr "その他の文字..."
 msgid  "Final charact~er"
 msgstr "閉じる記号(~E)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-msgid  ")"
-msgstr ")"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-msgid  "]"
-msgstr "]"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-msgid  ">"
-msgstr ">"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-msgid  "}"
-msgstr "}"
-
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.TABPAGE.TEXT
 msgid  "Connector"
 msgstr "コネクタ"
@@ -6142,10 +5122,6 @@ msgstr "コネクタ"
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_TYPE.FIXEDTEXT.TEXT
 msgid  "~Type"
 msgstr "種類(~T)"
-
-#: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DELTA.FIXEDLINE.TEXT
-msgid  "Line skew"
-msgstr "線のずれ"
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FIXEDTEXT.TEXT
 msgid  "Line ~1"
@@ -6215,10 +5191,6 @@ msgstr "右(~R)"
 msgid  "Vertical"
 msgstr "上下"
 
-#: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RADIOBUTTON.TEXT
-msgid  "N~one"
-msgstr "なし(~O)"
-
 #: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RADIOBUTTON.TEXT
 msgid  "~Top"
 msgstr "上(~T)"
@@ -6234,14 +5206,6 @@ msgstr "間隔(~P)"
 #: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_BOTTOM.RADIOBUTTON.TEXT
 msgid  "~Bottom"
 msgstr "下(~B)"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.STRING.TEXT
-msgid  "Left-to-right"
-msgstr "左から右へ"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.STRING.TEXT
-msgid  "Right-to-left"
-msgstr "右から左へ"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.STRING.TEXT
 msgid  "Use superordinate object settings"
@@ -6323,10 +5287,6 @@ msgstr "間隔(~S)"
 msgid  "~Angle"
 msgstr "角度(~A)"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.1.STRINGLIST.ITEM
-msgid  "Free"
-msgstr "フリー"
-
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.STRINGLIST.ITEM
 msgid  "30 Degrees"
 msgstr "30度"
@@ -6350,14 +5310,6 @@ msgstr "拡張(~E)"
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.4.STRINGLIST.ITEM
 msgid  "Optimal"
 msgstr "最適"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-msgid  "From top"
-msgstr "上から"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-msgid  "From left"
-msgstr "左から"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.1.STRINGLIST.ITEM
 msgid  "Horizontal"
@@ -6386,30 +5338,6 @@ msgstr "最適(~O)"
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_1.STRING.TEXT
 msgid  "Straight Line"
 msgstr "直線"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_2.STRING.TEXT
-msgid  "Angled Line"
-msgstr "角をもつ線"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_3.STRING.TEXT
-msgid  "Angled Connector Line"
-msgstr "1つの角をもつ線"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_4.STRING.TEXT
-msgid  "Double-angled line"
-msgstr "2つの角をもつ線"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_HORZ_LIST.STRING.TEXT
-msgid  "Top;Middle;Bottom"
-msgstr "上;中;下"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_VERT_LIST.STRING.TEXT
-msgid  "Left;Middle;Right"
-msgstr "左;中央;右"
-
-#: tabpages/labdlg.src#_POS_SIZE_TEXT.#DEFINE.TEXT
-msgid  "Position and Size"
-msgstr "位置およびサイズ"
 
 #: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PAGEITEM.TEXT
 msgid  "Callout"
@@ -6447,10 +5375,6 @@ msgstr "マクロ"
 msgid  "Dimensioning"
 msgstr "寸法の記入"
 
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LINE.FIXEDLINE.TEXT
-msgid  "Line"
-msgstr "線"
-
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_LINE_DIST.FIXEDTEXT.TEXT
 msgid  "Line ~distance"
 msgstr "線の間隔(~D)"
@@ -6478,10 +5402,6 @@ msgstr "オブジェクト下方に寸法線の表示(~B)"
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_DECIMALPLACES.FIXEDTEXT.TEXT
 msgid  "Decimal places"
 msgstr "小数点以下の桁数"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LABEL.FIXEDLINE.TEXT
-msgid  "Legend"
-msgstr "凡例"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_POSITION.FIXEDTEXT.TEXT
 msgid  "~Text position"
@@ -6516,48 +5436,12 @@ msgid  "~Category"
 msgstr "分類(~C)"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "All"
-msgstr "すべて"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "User-defined"
-msgstr "ユーザ定義"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Number"
-msgstr "数字"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Percent"
-msgstr "パーセント"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Currency"
-msgstr "通貨"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Date"
-msgstr "日付"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Time"
-msgstr "時刻"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 msgid  "Scientific"
 msgstr "指数表記"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Fraction"
-msgstr "分数"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 msgid  "Boolean Value"
 msgstr "ブール値"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Text"
-msgstr "テキスト"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_EDFORMAT.FIXEDTEXT.TEXT
 msgid  "~Format code"
@@ -6585,7 +5469,7 @@ msgstr "負数は赤く(~N)"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.BTN_THOUSAND.CHECKBOX.TEXT
 msgid  "~Thousands separator"
-msgstr "千の区切り"
+msgstr "桁区切り"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FL_OPTIONS.FIXEDLINE.TEXT
 msgid  "Options"
@@ -6598,10 +5482,6 @@ msgstr "言語(~L)"
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.CB_SOURCEFORMAT.CHECKBOX.TEXT
 msgid  "So~urce format"
 msgstr "取り込んだセルと同じ書式"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Add"
-msgstr "追加"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Remove"
@@ -6643,14 +5523,6 @@ msgstr "番号付け(~N)"
 msgid  "1, 2, 3, ... "
 msgstr "1、2、3､ ..."
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0.STRINGLIST.ITEM
-msgid  "A, B, C, ... "
-msgstr "A､ B､ C､ ..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.1.STRINGLIST.ITEM
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.2.STRINGLIST.ITEM
 msgid  "I, II, III, ... "
 msgstr "I､ II､ III､ ..."
@@ -6663,14 +5535,6 @@ msgstr "i､ ii､ iii､ ..."
 msgid  "A, .., AA, .., AAA, ... "
 msgstr "A､ ..､ AA､ ..､ AAA､ ..."
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.10.STRINGLIST.ITEM
-msgid  "a, .., aa, .., aaa, ..."
-msgstr "a､ ..､ aa､ ..､ aaa､ ..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.6.STRINGLIST.ITEM
-msgid  "Bullet"
-msgstr "箇条書き"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.8.STRINGLIST.ITEM
 msgid  "Graphics"
 msgstr "図"
@@ -6678,10 +5542,6 @@ msgstr "図"
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0X88.STRINGLIST.ITEM
 msgid  "Linked graphics"
 msgstr "図をリンクする"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.5.STRINGLIST.ITEM
-msgid  "None"
-msgstr "なし"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.12.STRINGLIST.ITEM
 msgid  "Native Numbering"
@@ -6835,10 +5695,6 @@ msgstr "文字の中央"
 msgid  "Bottom of character"
 msgstr "文字の下"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM7.STRINGLIST.ITEM
-msgid  "Top of line"
-msgstr "行の上"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM8.STRINGLIST.ITEM
 msgid  "Center of line"
 msgstr "行の中央"
@@ -6846,10 +5702,6 @@ msgstr "行の中央"
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM9.STRINGLIST.ITEM
 msgid  "Bottom of line"
 msgstr "行の下"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FL_SAME_LEVEL.FIXEDLINE.TEXT
-msgid  "All levels"
-msgstr "すべてのレベル"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.CB_SAME_LEVEL.CHECKBOX.TEXT
 msgid  "~Consecutive numbering"
@@ -6915,10 +5767,6 @@ msgstr "インデントの位置"
 msgid  "Default"
 msgstr "標準"
 
-#: tabpages/numpages.src#RID_STR_EDIT_GRAPHIC.STRING.TEXT
-msgid  "Link"
-msgstr "リンク"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FL_PAPER_SIZE.FIXEDLINE.TEXT
 msgid  "Paper format"
 msgstr "用紙サイズ"
@@ -6955,10 +5803,6 @@ msgstr "文字の方向(~T)"
 msgid  "Paper ~tray"
 msgstr "給紙方法(~T)"
 
-#: tabpages/page.src#RID_SVXPAGE_PAGE.FL_MARGIN.FIXEDLINE.TEXT
-msgid  "Margins"
-msgstr "余白"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_LEFT_MARGIN.FIXEDTEXT.TEXT
 msgid  "~Left"
 msgstr "左(~L)"
@@ -6984,48 +5828,12 @@ msgid  "Page layout"
 msgstr "ページレイアウト"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-msgid  "Right and left"
-msgstr "左右"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
 msgid  "Mirrored"
 msgstr "左右対称"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-msgid  "Only right"
-msgstr "右のみ"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-msgid  "Only left"
-msgstr "左のみ"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FIXEDTEXT.TEXT
 msgid  "For~mat"
 msgstr "番号付け(~M)"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-msgid  "A, B, C, ..."
-msgstr "A, B, C, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-msgid  "I, II, III, ..."
-msgstr "I, II, III, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-msgid  "1, 2, 3, ..."
-msgstr "1, 2, 3, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-msgid  "None"
-msgstr "なし"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_TBL_ALIGN.FIXEDTEXT.TEXT
 msgid  "Table alignment"
@@ -7219,10 +6027,6 @@ msgstr "最初の行(~F)"
 msgid  "~Automatic"
 msgstr "自動(~A)"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_INDENT.FIXEDLINE.TEXT
-msgid  "Indent"
-msgstr "インデント"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_TOPDIST.FIXEDTEXT.TEXT
 msgid  "Ab~ove paragraph"
 msgstr "段落の上(~O)"
@@ -7236,24 +6040,8 @@ msgid  "Spacing"
 msgstr "間隔"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-msgid  "Single"
-msgstr "1行"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 msgid  "1.5 lines"
 msgstr "1.5行"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-msgid  "Double"
-msgstr "2行"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-msgid  "Proportional"
-msgstr "比率"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-msgid  "At least"
-msgstr "最小"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 msgid  "Leading"
@@ -7315,18 +6103,6 @@ msgstr "右/下(~T)"
 msgid  "~Last line"
 msgstr "最後の行(~L)"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-msgid  "Default"
-msgstr "標準"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-msgid  "Left"
-msgstr "左"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-msgid  "Centered"
-msgstr "中央"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CHECKBOX.TEXT
 msgid  "~Expand single word"
 msgstr "語間を広くとる(~E)"
@@ -7351,29 +6127,13 @@ msgstr "自動"
 msgid  "Base line"
 msgstr "基線"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM3.STRINGLIST.ITEM
-msgid  "Top"
-msgstr "上揃え"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM4.STRINGLIST.ITEM
-msgid  "Middle"
-msgstr "中央揃え"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM5.STRINGLIST.ITEM
 msgid  "Bottom"
 msgstr "下揃え"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_PROPERTIES.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr "属性"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_TEXTDIRECTION.FIXEDTEXT.TEXT
 msgid  "Text ~direction"
 msgstr "文字の方向(~D)"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.TABPAGE.TEXT
-msgid  "Text Flow"
-msgstr "体裁"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_HYPHEN.TRISTATEBOX.TEXT
 msgid  "A~utomatically"
@@ -7395,10 +6155,6 @@ msgstr "連続するハイフンの最大数(~M)"
 msgid  "Hyphenation"
 msgstr "ハイフネーション"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FIXEDLINE.TEXT
-msgid  "Breaks"
-msgstr "区切り"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGEBREAK.TRISTATEBOX.TEXT
 msgid  "Insert"
 msgstr "挿入"
@@ -7407,25 +6163,9 @@ msgstr "挿入"
 msgid  "~Type"
 msgstr "種類(~T)"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.0.STRINGLIST.ITEM
-msgid  "Page"
-msgstr "ページ"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.1.STRINGLIST.ITEM
-msgid  "Column"
-msgstr "列"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKPOSITION.FIXEDTEXT.TEXT
 msgid  "Position"
 msgstr "位置"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.0.STRINGLIST.ITEM
-msgid  "Before"
-msgstr "前"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.1.STRINGLIST.ITEM
-msgid  "After"
-msgstr "後"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGECOLL.TRISTATEBOX.TEXT
 msgid  "With Page St~yle"
@@ -7483,17 +6223,13 @@ msgstr "例"
 msgid  "Page Style"
 msgstr "ページスタイル"
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_GRADIENT.STRING.TEXT
-msgid  "Please enter a name for the gradient:"
-msgstr "グラデーションの名前をここに入力してください："
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_GRADIENT.STRING.TEXT
 msgid  "Do you want to delete the gradient?"
 msgstr "このグラデーションを削除してかまいませんか。"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.STRING.TEXT
 msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr "グラデーションが変更されて保存されていません。\n選択したグラデーションの変更または\n新しいグラデーションの追加ができます。"
+msgstr "グラデーションが変更されて保存されていません。\n選択したグラデーションの変更または新しいグラデーションの追加ができます。"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.STRING.TEXT
 msgid  "Please enter a name for the bitmap:"
@@ -7509,11 +6245,7 @@ msgstr "このビットマップを削除してかまいませんか。"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.STRING.TEXT
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr "ビットマップが変更されて保存されていません。\n選択したビットマップの変更または\n新しいビットマップの追加ができます。"
-
-#: tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.STRING.TEXT
-msgid  "Please enter a name for the line style:"
-msgstr "線スタイルの名前をここに入力してください："
+msgstr "ビットマップが変更されて保存されていません。\n選択したビットマップの変更または新しいビットマップの追加ができます。"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINESTYLE.STRING.TEXT
 msgid  "Do you want to delete the line style?"
@@ -7521,11 +6253,7 @@ msgstr "この線スタイルを本当に削除しますか。"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.STRING.TEXT
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr "線スタイルが変更されて保存されていません。\n選択した線スタイルの変更\nまたは新しい線スタイルの追加ができます。"
-
-#: tabpages/strings.src#RID_SVXSTR_DESC_HATCH.STRING.TEXT
-msgid  "Please enter a name for the hatching:"
-msgstr "ハッチングの名前をここに入力してください："
+msgstr "線スタイルが変更されて保存されていません。\n選択した線スタイルの変更または新しい線スタイルの追加ができます。"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_HATCH.STRING.TEXT
 msgid  "Do you want to delete the hatching?"
@@ -7533,15 +6261,7 @@ msgstr "このハッチングを削除してかまいませんか。"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.STRING.TEXT
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr "ハッチングが変更されて保存されていません。\n選択したハッチングの変更または\n新しいハッチングの追加ができます。"
-
-#: tabpages/strings.src#RID_SVXSTR_CHANGE.STRING.TEXT
-msgid  "Modify"
-msgstr "変更"
-
-#: tabpages/strings.src#RID_SVXSTR_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "追加"
+msgstr "ハッチングが変更されて保存されていません。\n選択したハッチングの変更または新しいハッチングの追加ができます。"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_COLOR.STRING.TEXT
 msgid  "Please enter a name for the new color:"
@@ -7553,7 +6273,7 @@ msgstr "この色を削除してかまいませんか。"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.STRING.TEXT
 msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr "色が変更されて保存されていません。\n選択した色の変更または\n新しい色の追加ができます。"
+msgstr "色が変更されて保存されていません。\n選択した色の変更または新しい色の追加ができます。"
 
 #: tabpages/strings.src#RID_SVXSTR_TABLE.STRING.TEXT
 msgid  "Table"
@@ -7569,7 +6289,7 @@ msgstr "ファイルは読み込みできませんでした。"
 
 #: tabpages/strings.src#RID_SVXSTR_WARN_TABLE_OVERWRITE.STRING.TEXT
 msgid  "The list was modified without saving. Would you like to save the list now?"
-msgstr "表の変更があり保存されていません。\n表を保存しますか。"
+msgstr "表の変更があり保存されていません。表を保存しますか。"
 
 #: tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.STRING.TEXT
 msgid  "The name you have entered already exists. \nPlease choose another name."
@@ -7587,14 +6307,6 @@ msgstr "この線端を削除してかまいませんか。"
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 msgstr "線端が変更されて保存されていません。\nこの線端を今すぐ保存しますか。"
 
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.TABPAGE.TEXT
-msgid  "Position and Size"
-msgstr "位置およびサイズ"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_SIZE.FIXEDLINE.TEXT
-msgid  "Size"
-msgstr "サイズ"
-
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_WIDTH.FIXEDTEXT.TEXT
 msgid  "~Width"
 msgstr "幅(~W)"
@@ -7606,10 +6318,6 @@ msgstr "高さ(~E)"
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_KEEPRATIO.CHECKBOX.TEXT
 msgid  "~Keep ratio"
 msgstr "調整(~K)"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_ANCHOR.FIXEDLINE.TEXT
-msgid  "Anchor"
-msgstr "アンカー"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOPAGE.RADIOBUTTON.TEXT
 msgid  "To ~page"
@@ -7630,10 +6338,6 @@ msgstr "文字として(~A)"
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOFRAME.RADIOBUTTON.TEXT
 msgid  "To ~frame"
 msgstr "フレームへ(~F)"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_PROTECTION.FIXEDLINE.TEXT
-msgid  "Protect"
-msgstr "保護"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_POSITION.TRISTATEBOX.TEXT
 msgid  "Position"
@@ -7712,10 +6416,6 @@ msgid  "Ellipsoid"
 msgstr "楕円"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Quadratic"
-msgstr "放物線"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
 msgid  "Square"
 msgstr "正方形"
 
@@ -7760,14 +6460,6 @@ msgid  "Fill"
 msgstr "塗りつぶし"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "None"
-msgstr "なし"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "Color"
-msgstr "色"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
 msgid  "Hatching"
 msgstr "ハッチング"
 
@@ -7787,10 +6479,6 @@ msgstr "自動(~U)"
 msgid  "~Background color"
 msgstr "背景色(~B)"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_SIZE.FIXEDLINE.TEXT
-msgid  "Size"
-msgstr "サイズ"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_ORIGINAL.TRISTATEBOX.TEXT
 msgid  "~Original"
 msgstr "オリジナル(~O)"
@@ -7807,10 +6495,6 @@ msgstr "幅(~D)"
 msgid  "H~eight"
 msgstr "高さ(~E)"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "位置"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_OFFSET.FIXEDTEXT.TEXT
 msgid  "~X Offset"
 msgstr "~X オフセット"
@@ -7826,10 +6510,6 @@ msgstr "タイル(~T)"
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_STRETCH.TRISTATEBOX.TEXT
 msgid  "Auto~Fit"
 msgstr "自動調整(~F)"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_OFFSET.FIXEDLINE.TEXT
-msgid  "Offset"
-msgstr "オフセット"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.RBT_ROW.RADIOBUTTON.TEXT
 msgid  "Ro~w"
@@ -7921,7 +6601,7 @@ msgstr "パターンエディタ"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.FT_COLOR.FIXEDTEXT.TEXT
 msgid  "~Foreground color"
-msgstr "フォアグランド色"
+msgstr "前景色"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_IMPORT.PUSHBUTTON.TEXT
 msgid  "~Import..."
@@ -7938,10 +6618,6 @@ msgstr "ビットマップのリストを保存"
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.TABPAGE.TEXT
 msgid  "Gradients"
 msgstr "グラデーション"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Rectangular"
-msgstr "四角形"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FIXEDTEXT.TEXT
 msgid  "~From"
@@ -8039,10 +6715,6 @@ msgstr "幅(~W)"
 msgid  "~Transparency"
 msgstr "透明化"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_LINE_ENDS.FIXEDLINE.TEXT
-msgid  "Arrow styles"
-msgstr "矢印の形状"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_ENDS_STYLE.FIXEDTEXT.TEXT
 msgid  "St~yle"
 msgstr "形状(~Y)"
@@ -8075,10 +6747,6 @@ msgstr "角の形状(~C)"
 msgid  "Rounded"
 msgstr "丸"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM2.STRINGLIST.ITEM
-msgid  "- none -"
-msgstr "- なし -"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM3.STRINGLIST.ITEM
 msgid  "Mitered"
 msgstr "角"
@@ -8106,10 +6774,6 @@ msgstr "四角"
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_SYMBOL_FORMAT.FIXEDLINE.TEXT
 msgid  "Icon"
 msgstr "アイコン"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_NONE.MENUITEM.TEXT
-msgid  "No Symbol"
-msgstr "シンボルなし"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_AUTO.MENUITEM.TEXT
 msgid  "Automatic"
@@ -8171,14 +6835,6 @@ msgstr "始端を矢印の中央に配置"
 msgid  "End with center"
 msgstr "末端を矢印の中央に配置"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.TABPAGE.TEXT
-msgid  "Define line styles"
-msgstr "線の形状を定義"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FL_DEFINITION.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr "プロパティー"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FT_TYPE.FIXEDTEXT.TEXT
 msgid  "~Type"
 msgstr "種類(~T)"
@@ -8222,10 +6878,6 @@ msgstr "変更(~M)..."
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_DELETE.PUSHBUTTON.TEXT
 msgid  "~Delete..."
 msgstr "削除(~D)..."
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Load Line Styles"
-msgstr "線の形状を読み込む"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Save Line Styles"
@@ -8283,22 +6935,6 @@ msgstr "矢印の形状を読み込む"
 msgid  "Save Arrow Styles"
 msgstr "矢印の形状を保存"
 
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TABDIALOG.TEXT
-msgid  "Line"
-msgstr "線"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-msgid  "Shadow"
-msgstr "影"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-msgid  "Line Styles"
-msgstr "線の形状"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-msgid  "Arrow Styles"
-msgstr "矢印の形状"
-
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.TABPAGE.TEXT
 msgid  "Tabs"
 msgstr "タブ"
@@ -8334,10 +6970,6 @@ msgstr "文字列(~C)"
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.FL_FILLCHAR.FIXEDLINE.TEXT
 msgid  "Fill character"
 msgstr "リーダー"
-
-#: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_NO.RADIOBUTTON.TEXT
-msgid  "N~one"
-msgstr "なし(~O)"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_OTHER.RADIOBUTTON.TEXT
 msgid  "Character"
@@ -8391,41 +7023,13 @@ msgstr "通過"
 msgid  "Scroll Back and Forth"
 msgstr "前後に進行"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.DEFAULT.STRINGLIST.ITEM
-msgid  "Scroll In"
-msgstr "流し込み"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DIRECTION.FIXEDTEXT.TEXT
-msgid  "Direction"
-msgstr "方向"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_UP.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "To Top"
-msgstr "上へ"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_LEFT.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "To Left"
-msgstr "左へ"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_RIGHT.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "To Right"
-msgstr "右へ"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_DOWN.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "To Bottom"
-msgstr "下へ"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FL_PROPERTIES.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr "属性"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_START_INSIDE.TRISTATEBOX.TEXT
 msgid  "S~tart inside"
 msgstr "開始時にテキストが見える(~T)"
 
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_STOP_INSIDE.TRISTATEBOX.TEXT
 msgid  "Text visible when exiting"
-msgstr "終了時にテキストが見える"
+msgstr "終了時にテキストを表示"
 
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_COUNT.FIXEDTEXT.TEXT
 msgid  "Animation cycles"
@@ -8443,17 +7047,9 @@ msgstr "ステップ数"
 msgid  "~Pixels"
 msgstr "ピクセル(~P)"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DELAY.FIXEDTEXT.TEXT
-msgid  "Delay"
-msgstr "遅くする"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_AUTO.TRISTATEBOX.TEXT
 msgid  "~Automatic"
 msgstr "自動(~A)"
-
-#: tabpages/textanim.src#RID_SVXDLG_TEXT.TABDIALOG.TEXT
-msgid  "Text"
-msgstr "テキスト"
 
 #: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
 msgid  "Text Animation"
@@ -8477,7 +7073,7 @@ msgstr "枠に合わせる(~F)"
 
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TSB_CONTOUR.TRISTATEBOX.TEXT
 msgid  "~Adjust to contour"
-msgstr "外枠に沿わせる(~A)"
+msgstr "輪郭に合わせる(~A)"
 
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TSB_WORDWRAP_TEXT.TRISTATEBOX.TEXT
 msgid  "~Word wrap text in shape"
@@ -8489,7 +7085,7 @@ msgstr "テキストに合うように形をリサイズ(~R)"
 
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_DISTANCE.FIXEDLINE.TEXT
 msgid  "Spacing to borders"
-msgstr "境界との間隔"
+msgstr "枠からの間隔"
 
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FT_LEFT.FIXEDTEXT.TEXT
 msgid  "~Left"
@@ -8506,10 +7102,6 @@ msgstr "上(~T)"
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FT_BOTTOM.FIXEDTEXT.TEXT
 msgid  "~Bottom"
 msgstr "下(~B)"
-
-#: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Text anchor"
-msgstr "テキストアンカー"
 
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TSB_FULL_WIDTH.TRISTATEBOX.TEXT
 msgid  "Full ~width"
@@ -8535,10 +7127,6 @@ msgstr "位置 Y(~Y)"
 msgid  "Base point"
 msgstr "基点"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FIXEDLINE.TEXT
-msgid  "Size"
-msgstr "サイズ"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_WIDTH.FIXEDTEXT.TEXT
 msgid  "Wi~dth"
 msgstr "幅(~D)"
@@ -8551,17 +7139,9 @@ msgstr "高さ~(~E)"
 msgid  "~Keep ratio"
 msgstr "調整(~K)"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_PROTECT.FIXEDLINE.TEXT
-msgid  "Protect"
-msgstr "保護"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_SIZEPROTECT.TRISTATEBOX.TEXT
 msgid  "~Size"
 msgstr "サイズ(~S)"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ADJUST.FIXEDLINE.TEXT
-msgid  "Adapt"
-msgstr "適合"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_AUTOGROW_WIDTH.TRISTATEBOX.TEXT
 msgid  "~Fit width to text"
@@ -8571,49 +7151,17 @@ msgstr "テキストに幅を合わせる(~W)"
 msgid  "Fit ~height to text"
 msgstr "テキストに高さを合わせる(~H)"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ANCHOR.FIXEDLINE.TEXT
-msgid  "Anchor"
-msgstr "アンカー"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ANCHOR.FIXEDTEXT.TEXT
 msgid  "~Anchor"
 msgstr "アンカー(~A)"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM1.STRINGLIST.ITEM
-msgid  "To paragraph"
-msgstr "段落に"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM2.STRINGLIST.ITEM
 msgid  "As character"
 msgstr "文字として"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM3.STRINGLIST.ITEM
-msgid  "To page"
-msgstr "ページに"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM4.STRINGLIST.ITEM
-msgid  "To frame"
-msgstr "フレームに"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ORIENT.FIXEDTEXT.TEXT
 msgid  "P~osition"
 msgstr "位置(~O)"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM1.STRINGLIST.ITEM
-msgid  "From top"
-msgstr "上から"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM2.STRINGLIST.ITEM
-msgid  "Above"
-msgstr "上"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM3.STRINGLIST.ITEM
-msgid  "Centered"
-msgstr "中央"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM4.STRINGLIST.ITEM
-msgid  "Below"
-msgstr "下"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM5.STRINGLIST.ITEM
 msgid  "Top of character"
@@ -8627,10 +7175,6 @@ msgstr "文字の中央"
 msgid  "Bottom of character"
 msgstr "文字の下"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM8.STRINGLIST.ITEM
-msgid  "Top of line"
-msgstr "行の上"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM9.STRINGLIST.ITEM
 msgid  "Center of line"
 msgstr "行の中央"
@@ -8638,10 +7182,6 @@ msgstr "行の中央"
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM10.STRINGLIST.ITEM
 msgid  "Bottom of line"
 msgstr "行の下"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.TABPAGE.TEXT
-msgid  "Angle"
-msgstr "角度"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FL_POSITION.FIXEDLINE.TEXT
 msgid  "Pivot point"
@@ -8674,10 +7214,6 @@ msgstr "回転角度"
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.TABPAGE.TEXT
 msgid  "Slant & Corner Radius"
 msgstr "傾斜角度 / 角の半径"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FL_RADIUS.FIXEDLINE.TEXT
-msgid  "Corner radius"
-msgstr "角の半径"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FT_RADIUS.FIXEDTEXT.TEXT
 msgid  "~Radius"

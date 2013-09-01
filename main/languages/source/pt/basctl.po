@@ -52,9 +52,8 @@ msgid  "<All>"
 msgstr "<Tudo>"
 
 #: basicide/basidesh.src#RID_STR_NOMODULE.STRING.TEXT
-#, fuzzy
 msgid  "< No Module >"
-msgstr "< No Module >"
+msgstr "< Módulo inexistente >"
 
 #: basicide/basidesh.src#RID_STR_WRONGPASSWORD.STRING.TEXT
 #, fuzzy
@@ -135,11 +134,6 @@ msgstr "Introduza a palavra-passe de 'XX'"
 #, fuzzy
 msgid  "Name already exists"
 msgstr "O nome já existe."
-
-#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
-#, fuzzy
-msgid  "(Signed)"
-msgstr "(Assinado)"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
 #, fuzzy
@@ -256,26 +250,6 @@ msgstr "Objecto ou método não encontrado."
 msgid  "BASIC"
 msgstr "BASIC"
 
-#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Ln"
-msgstr "Ln"
-
-#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Col"
-msgstr "Col"
-
-#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "Documento"
-
-#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
-#, fuzzy
-msgid  "Macro Bar"
-msgstr "Barra de macros"
-
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
 #, fuzzy
 msgid  "The window cannot be closed while BASIC is running."
@@ -295,16 +269,6 @@ msgstr "Não é possível a referência a 'XX'."
 #, fuzzy
 msgid  "Watch"
 msgstr "Observador"
-
-#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
-#, fuzzy
-msgid  "Variable"
-msgstr "Variável"
-
-#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
-#, fuzzy
-msgid  "Value"
-msgstr "Valor"
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
 #, fuzzy
@@ -351,16 +315,6 @@ msgstr "Novo módulo"
 msgid  "New Dialog"
 msgstr "Nova caixa de diálogo"
 
-#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
-#, fuzzy
-msgid  "All"
-msgstr "Tudo"
-
-#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Page"
-msgstr "Página"
-
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
 #, fuzzy
 msgid  "A name must be entered."
@@ -390,11 +344,6 @@ msgstr "Observador:"
 #, fuzzy
 msgid  "Calls: "
 msgstr "Chamadas: "
-
-#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
-#, fuzzy
-msgid  "My Macros"
-msgstr "As minhas macros"
 
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
 #, fuzzy
@@ -466,35 +415,15 @@ msgstr "Caixa de diálogo BASIC"
 msgid  "Delete"
 msgstr "Eliminar"
 
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Rename"
-msgstr "Mudar o nome"
-
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Hide"
-msgstr "Ocultar"
-
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
 #, fuzzy
 msgid  "Modules..."
 msgstr "Módulos..."
 
-#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to overwrite the XX macro?"
-msgstr "Pretende substituir a macro XX?"
-
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
 #, fuzzy
 msgid  "<Not localized>"
 msgstr "<Não localizado>"
-
-#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
-#, fuzzy
-msgid  "[Default Language]"
-msgstr "[Idioma predefinido]"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 #, fuzzy
@@ -516,11 +445,6 @@ msgstr "Módulos"
 msgid  "Class Modules"
 msgstr "Módulos de Classe"
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
-#, fuzzy
-msgid  "Replace"
-msgstr "Substituir"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
 #, fuzzy
 msgid  "Dialog Import - Name already used"
@@ -531,16 +455,6 @@ msgstr "Importação da caixa de diálogo - Nome já utilizado"
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
 msgstr "A biblioteca já contém uma caixa de diálogo com o nome:\n\n$(ARG1)\n\nMude o nome da caixa de diálogo para manter a caixa de diálogo actual ou substitua a caixa de diálogo existente.\n "
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "Adicionar"
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
-#, fuzzy
-msgid  "Omit"
-msgstr "Omitir"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
 #, fuzzy
 msgid  "Dialog Import - Language Mismatch"
@@ -550,11 +464,6 @@ msgstr "Importação da caixa de diálogo - Disparidade de idioma"
 #, fuzzy
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
 msgstr "A caixa de diálogo para importação suporta outros idiomas além dos idiomas da biblioteca de destino.\n\nAdicione estes idiomas à biblioteca para manter os recursos de idiomas adicionais fornecidos pela caixa de diálogo ou omita os mesmos para manter os idiomas da biblioteca actual.\n\nNota: Para os idiomas não suportados pela caixa de diálogo, serão utilizados os recursos do idioma predefinido da caixa de diálogo.\n "
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "Novo"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
 #, fuzzy
@@ -570,16 +479,6 @@ msgstr "Activo"
 #, fuzzy
 msgid  "Pass Count:"
 msgstr "Contagem de passos:"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Breakpoints"
-msgstr "Pontos de interrupção"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
-#, fuzzy
-msgid  "Manage Breakpoints"
-msgstr "Gerir pontos de interrupção"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
 #, fuzzy
@@ -651,11 +550,6 @@ msgstr "~Eliminar"
 msgid  "~Organizer..."
 msgstr "~Organizador..."
 
-#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
-#, fuzzy
-msgid  "Macro"
-msgstr "Macro"
-
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 #, fuzzy
 msgid  "~New"
@@ -665,11 +559,6 @@ msgstr "~Novo"
 #, fuzzy
 msgid  "Choose"
 msgstr "Escolher"
-
-#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
-#, fuzzy
-msgid  "Run"
-msgstr "Executar"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
 #, fuzzy
@@ -801,11 +690,6 @@ msgstr "Extensão"
 msgid  "Description"
 msgstr "Descrição"
 
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Help information"
-msgstr "Informações de ajuda"
-
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Help ID"
@@ -816,19 +700,9 @@ msgstr "ID de ajuda"
 msgid  "Help file name"
 msgstr "Nome do ficheiro de ajuda"
 
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
-#, fuzzy
-msgid  "Objects"
-msgstr "Objectos"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Show"
-msgstr "Mostrar"
-
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
-msgstr ""
+msgstr "Árvore de objectos"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 #, fuzzy
@@ -855,20 +729,10 @@ msgstr "Gerir idiomas da interface do utilizador [$1]"
 msgid  "Present Languages"
 msgstr "Idiomas actuais"
 
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Add..."
-msgstr "Adicionar..."
-
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Delete"
 msgstr "Eliminar"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "Predefinição"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
 #, fuzzy
@@ -879,11 +743,6 @@ msgstr "É utilizado o idioma predefinido se não existir qualquer localização
 #, fuzzy
 msgid  "~Close"
 msgstr "~Fechar"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
-#, fuzzy
-msgid  "[Default Language]"
-msgstr "[Idioma predefinido]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
 #, fuzzy
@@ -896,19 +755,17 @@ msgid  "<Press 'Add' to create language resources>"
 msgstr "<Prima 'Adicionar' para criar recursos de idioma>"
 
 #: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.TITLE
-#, fuzzy
 msgid  "Delete Language Resources"
-msgstr "Delete Language Resources"
+msgstr "Eliminar recursos do idioma"
+
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr "Está prestes a eliminar os recursos do(s) idioma(s) seleccionado(s). Todas as cadeias da interface do utilizador para este(s) idioma(s) serão eliminadas.\n\nPretende eliminar os recursos do(s) idioma(s) seleccionado(s)?"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Set Default User Interface Language"
 msgstr "Definir idioma predefinido da interface do utilizador"
-
-#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Default language"
-msgstr "Idioma predefinido"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
 #, fuzzy

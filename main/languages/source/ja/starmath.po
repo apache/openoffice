@@ -31,14 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.ITEM1.ITEMLIST.ITEM
-msgid  "Greek"
-msgstr "ギリシャ語"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.ITEM2.ITEMLIST.ITEM
-msgid  "Special"
-msgstr "特別"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM1.ITEMLIST.ITEM
 msgid  "alpha"
 msgstr "alpha"
@@ -66,10 +58,6 @@ msgstr "GAMMA"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM7.ITEMLIST.ITEM
 msgid  "delta"
 msgstr "delta"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM8.ITEMLIST.ITEM
-msgid  "DELTA"
-msgstr "DELTA"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM9.ITEMLIST.ITEM
 msgid  "epsilon"
@@ -103,10 +91,6 @@ msgstr "theta"
 msgid  "THETA"
 msgstr "THETA"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM17.ITEMLIST.ITEM
-msgid  "iota"
-msgstr "iota"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM18.ITEMLIST.ITEM
 msgid  "IOTA"
 msgstr "IOTA"
@@ -127,49 +111,25 @@ msgstr "lambda"
 msgid  "LAMBDA"
 msgstr "LAMBDA"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM23.ITEMLIST.ITEM
-msgid  "mu"
-msgstr "mu"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM24.ITEMLIST.ITEM
 msgid  "MU"
 msgstr "MU"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM25.ITEMLIST.ITEM
-msgid  "nu"
-msgstr "nu"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM26.ITEMLIST.ITEM
 msgid  "NU"
 msgstr "NU"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM27.ITEMLIST.ITEM
-msgid  "xi"
-msgstr "xi"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM28.ITEMLIST.ITEM
 msgid  "XI"
 msgstr "XI"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM29.ITEMLIST.ITEM
-msgid  "omicron"
-msgstr "omicron"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM30.ITEMLIST.ITEM
 msgid  "OMICRON"
 msgstr "OMICRON"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM31.ITEMLIST.ITEM
-msgid  "pi"
-msgstr "pi"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM32.ITEMLIST.ITEM
 msgid  "PI"
 msgstr "PI"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM33.ITEMLIST.ITEM
-msgid  "rho"
-msgstr "rho"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM34.ITEMLIST.ITEM
 msgid  "RHO"
@@ -190,10 +150,6 @@ msgstr "tau"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM38.ITEMLIST.ITEM
 msgid  "TAU"
 msgstr "TAU"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM39.ITEMLIST.ITEM
-msgid  "upsilon"
-msgstr "upsilon"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM40.ITEMLIST.ITEM
 msgid  "UPSILON"
@@ -230,30 +186,6 @@ msgstr "omega"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM48.ITEMLIST.ITEM
 msgid  "OMEGA"
 msgstr "OMEGA"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM49.ITEMLIST.ITEM
-msgid  "varepsilon"
-msgstr "varepsilon"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM50.ITEMLIST.ITEM
-msgid  "vartheta"
-msgstr "vartheta"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM51.ITEMLIST.ITEM
-msgid  "varpi"
-msgstr "varpi"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM52.ITEMLIST.ITEM
-msgid  "varrho"
-msgstr "varrho"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM53.ITEMLIST.ITEM
-msgid  "varsigma"
-msgstr "varsigma"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM54.ITEMLIST.ITEM
-msgid  "varphi"
-msgstr "varphi"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM55.ITEMLIST.ITEM
 msgid  "element"
@@ -889,15 +821,15 @@ msgstr "中かっこ下(自動サイズ)"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUPX.TOOLBOXITEM.TEXT
 msgid  "Superscript Left"
-msgstr "スーパースクリプト左"
+msgstr "上付き左"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUPX.TOOLBOXITEM.TEXT
 msgid  "Superscript Top"
-msgstr "スーパースクリプト上"
+msgstr "上付き上"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUPX.TOOLBOXITEM.TEXT
 msgid  "Superscript Right"
-msgstr "スーパースクリプト右"
+msgstr "上付き右"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BINOMXY.TOOLBOXITEM.TEXT
 msgid  "Vertical Stack (2 Elements)"
@@ -909,15 +841,15 @@ msgstr "改行"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUBX.TOOLBOXITEM.TEXT
 msgid  "Subscript Left"
-msgstr "サブスクリプト左"
+msgstr "下付き左"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUBX.TOOLBOXITEM.TEXT
 msgid  "Subscript Bottom"
-msgstr "サブスクリプト下"
+msgstr "下付き下"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUBX.TOOLBOXITEM.TEXT
 msgid  "Subscript Right"
-msgstr "サブスクリプト右"
+msgstr "下付き右"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_STACK.TOOLBOXITEM.TEXT
 msgid  "Vertical Stack"
@@ -1023,61 +955,13 @@ msgstr "ドット右上がり"
 msgid  "Dots to Bottom"
 msgstr "ドット右下がり"
 
-#: commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MENUITEM.TEXT
-msgid  "~Unary/Binary Operators"
-msgstr "単項・二項演算子(~U)"
-
-#: commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MENUITEM.TEXT
-msgid  "~Relations"
-msgstr "比較演算(~R)"
-
-#: commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MENUITEM.TEXT
-msgid  "~Set Operations"
-msgstr "集合演算(~S)"
-
-#: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MENUITEM.TEXT
-msgid  "~Functions"
-msgstr "関数(~F)"
-
 #: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MENUITEM.TEXT
 msgid  "More"
 msgstr "その他"
 
-#: commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MENUITEM.TEXT
-msgid  "O~perators"
-msgstr "演算子(~P)"
-
-#: commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MENUITEM.TEXT
-msgid  "~Attributes"
-msgstr "属性(~A)"
-
-#: commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MENUITEM.TEXT
-msgid  "~Brackets"
-msgstr "かっこ(~B)"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MENUITEM.TEXT
-msgid  "For~mats"
-msgstr "書式設定(~M)"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MENUITEM.TEXT
-msgid  "New Line"
-msgstr "改行"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MENUITEM.TEXT
-msgid  "Small Gap"
-msgstr "スペース小"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MENUITEM.TEXT
-msgid  "Gap"
-msgstr "スペース"
-
 #: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MENUITEM.TEXT
 msgid  "nospace {...}"
 msgstr "スペースなし{...}"
-
-#: commands.src#RID_COMMANDMENU.RID_MISC_MENU.MENUITEM.TEXT
-msgid  "~Others"
-msgstr "その他(~O)"
 
 #: smres.src#RID_FONTDIALOG.MODALDIALOG.TEXT
 msgid  "Fonts"
@@ -1087,81 +971,17 @@ msgstr "フォント"
 msgid  "~Font"
 msgstr "フォント(~F)"
 
-#: smres.src#RID_FONTDIALOG.1.CHECKBOX.TEXT
-msgid  "~Bold"
-msgstr "太字(~B)"
-
-#: smres.src#RID_FONTDIALOG.2.CHECKBOX.TEXT
-msgid  "~Italic"
-msgstr "斜体(~I)"
-
-#: smres.src#RID_FONTDIALOG.2.FIXEDTEXT.TEXT
-msgid  "Attributes"
-msgstr "属性"
-
-#: smres.src#RID_FONTSIZEDIALOG.MODALDIALOG.TEXT
-msgid  "Font Sizes"
-msgstr "フォントサイズ"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "Base ~size"
-msgstr "基本サイズ(~S)"
-
 #: smres.src#RID_FONTSIZEDIALOG.4.FIXEDTEXT.TEXT
 msgid  "~Text"
 msgstr "テキスト(~T)"
-
-#: smres.src#RID_FONTSIZEDIALOG.5.FIXEDTEXT.TEXT
-msgid  "~Indexes"
-msgstr "指数と添え字(~I)"
 
 #: smres.src#RID_FONTSIZEDIALOG.6.FIXEDTEXT.TEXT
 msgid  "~Functions"
 msgstr "関数(~F)"
 
-#: smres.src#RID_FONTSIZEDIALOG.7.FIXEDTEXT.TEXT
-msgid  "~Operators"
-msgstr "演算子(~O)"
-
-#: smres.src#RID_FONTSIZEDIALOG.8.FIXEDTEXT.TEXT
-msgid  "~Limits"
-msgstr "範囲(~L)"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Relative sizes"
-msgstr "比較サイズ"
-
 #: smres.src#RID_FONTSIZEDIALOG.1.PUSHBUTTON.TEXT
 msgid  "~Default"
 msgstr "標準(~D)"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Formula fonts"
-msgstr "数式フォント"
-
-#: smres.src#RID_FONTTYPEDIALOG.2.FIXEDLINE.TEXT
-msgid  "Custom fonts"
-msgstr "ユーザー指定のフォント"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Variables"
-msgstr "変数(~V)"
-
-#: smres.src#RID_FONTTYPEDIALOG.3.FIXEDTEXT.TEXT
-msgid  "~Numbers"
-msgstr "数値(~N)"
-
-#: smres.src#RID_FONTTYPEDIALOG.5.FIXEDTEXT.TEXT
-msgid  "~Serif"
-msgstr "~Serif"
-
-#: smres.src#RID_FONTTYPEDIALOG.6.FIXEDTEXT.TEXT
-msgid  "S~ans"
-msgstr "S~ans"
-
-#: smres.src#RID_FONTTYPEDIALOG.7.FIXEDTEXT.TEXT
-msgid  "F~ixed"
-msgstr "F~ixed"
 
 #: smres.src#RID_FONTTYPEDIALOG.1.MENUBUTTON.TEXT
 msgid  "~Modify"
@@ -1171,21 +991,9 @@ msgstr "変更(~M)"
 msgid  "Spacing"
 msgstr "間隔"
 
-#: smres.src#RID_DISTANCEDIALOG.1.METRICFIELD.CUSTOMUNITTEXT
-msgid  "%"
-msgstr "%"
-
-#: smres.src#RID_DISTANCEDIALOG.1.CHECKBOX.TEXT
-msgid  "Scale all brackets"
-msgstr "すべてのかっこを調整"
-
 #: smres.src#RID_DISTANCEDIALOG.1.MENUBUTTON.TEXT
 msgid  "~Category"
 msgstr "分類(~C)"
-
-#: smres.src#RID_DISTANCEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Category"
-msgstr "分類"
 
 #: smres.src#RID_DISTANCEDIALOG.1.2.STRING.TEXT
 msgid  "~Spacing"
@@ -1203,81 +1011,29 @@ msgstr "ルート間隔(~R)"
 msgid  "Indexes"
 msgstr "指数と添え字"
 
-#: smres.src#RID_DISTANCEDIALOG.2.2.STRING.TEXT
-msgid  "~Superscript"
-msgstr "指数(~S)"
-
-#: smres.src#RID_DISTANCEDIALOG.2.3.STRING.TEXT
-msgid  "S~ubscript"
-msgstr "添え字(~U)"
-
 #: smres.src#RID_DISTANCEDIALOG.3.1.STRING.TEXT
 msgid  "Fractions"
 msgstr "分数"
-
-#: smres.src#RID_DISTANCEDIALOG.3.2.STRING.TEXT
-msgid  "~Numerator"
-msgstr "分子(~N)"
-
-#: smres.src#RID_DISTANCEDIALOG.3.3.STRING.TEXT
-msgid  "~Denominator"
-msgstr "分母(~D)"
-
-#: smres.src#RID_DISTANCEDIALOG.4.1.STRING.TEXT
-msgid  "Fraction bar"
-msgstr "分数線"
 
 #: smres.src#RID_DISTANCEDIALOG.4.2.STRING.TEXT
 msgid  "~Excess length"
 msgstr "はり出し(~E)"
 
-#: smres.src#RID_DISTANCEDIALOG.4.3.STRING.TEXT
-msgid  "~Weight"
-msgstr "線の太さ(~W)"
-
 #: smres.src#RID_DISTANCEDIALOG.5.1.STRING.TEXT
 msgid  "Limits"
 msgstr "範囲"
-
-#: smres.src#RID_DISTANCEDIALOG.5.2.STRING.TEXT
-msgid  "~Upper limit"
-msgstr "上限(~U)"
-
-#: smres.src#RID_DISTANCEDIALOG.5.3.STRING.TEXT
-msgid  "~Lower limit"
-msgstr "下限(~L)"
 
 #: smres.src#RID_DISTANCEDIALOG.6.1.STRING.TEXT
 msgid  "Brackets"
 msgstr "かっこ"
 
-#: smres.src#RID_DISTANCEDIALOG.6.2.STRING.TEXT
-msgid  "~Excess size (left/right)"
-msgstr "上下はり出し(~E)"
-
 #: smres.src#RID_DISTANCEDIALOG.6.5.STRING.TEXT
 msgid  "~Excess size"
 msgstr "はり出し(~E)"
 
-#: smres.src#RID_DISTANCEDIALOG.7.1.STRING.TEXT
-msgid  "Matrix"
-msgstr "行列"
-
-#: smres.src#RID_DISTANCEDIALOG.7.3.STRING.TEXT
-msgid  "~Column spacing"
-msgstr "列の間隔(~C)"
-
 #: smres.src#RID_DISTANCEDIALOG.8.1.STRING.TEXT
 msgid  "Symbols"
 msgstr "数式用アクセント記号"
-
-#: smres.src#RID_DISTANCEDIALOG.8.2.STRING.TEXT
-msgid  "~Primary height"
-msgstr "基本の高さ(~P)"
-
-#: smres.src#RID_DISTANCEDIALOG.8.3.STRING.TEXT
-msgid  "~Minimum spacing"
-msgstr "最小間隔(~M)"
 
 #: smres.src#RID_DISTANCEDIALOG.9.1.STRING.TEXT
 msgid  "Operators"
@@ -1295,49 +1051,9 @@ msgstr "左(~L)"
 msgid  "~Right"
 msgstr "右(~R)"
 
-#: smres.src#RID_DISTANCEDIALOG.10.4.STRING.TEXT
-msgid  "~Top"
-msgstr "上(~T)"
-
-#: smres.src#RID_DISTANCEDIALOG.10.5.STRING.TEXT
-msgid  "~Bottom"
-msgstr "下(~B)"
-
-#: smres.src#RID_ALIGNDIALOG.MODALDIALOG.TEXT
-msgid  "Alignment"
-msgstr "配置"
-
-#: smres.src#RID_ALIGNDIALOG.2.RADIOBUTTON.TEXT
-msgid  "~Centered"
-msgstr "中央揃え(~C)"
-
-#: smres.src#RID_ALIGNDIALOG.1.FIXEDLINE.TEXT
-msgid  "Horizontal"
-msgstr "左右位置"
-
-#: smres.src#RID_PRINTOPTIONPAGE.TABPAGE.TEXT
-msgid  "Formula Options:Settings"
-msgstr "数式オプション:設定"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.FIXEDLINE.TEXT
-msgid  "Print options"
-msgstr "印刷オプション"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.CHECKBOX.TEXT
-msgid  "~Title row"
-msgstr "タイトル行(~T)"
-
 #: smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CHECKBOX.TEXT
 msgid  "~Formula text"
 msgstr "数式文字列(~F)"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CHECKBOX.TEXT
-msgid  "B~order"
-msgstr "枠(~O)"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINT_FORMAT.FIXEDLINE.TEXT
-msgid  "Print format"
-msgstr "印刷書式"
 
 #: smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RADIOBUTTON.TEXT
 msgid  "O~riginal size"
@@ -1351,85 +1067,29 @@ msgstr "ページに合わせる(~P)"
 msgid  "~Scaling"
 msgstr "倍率(~S)"
 
-#: smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FIXEDLINE.TEXT
-msgid  "Miscellaneous options"
-msgstr "詳細オプション"
-
 #: smres.src#RID_PRINTOPTIONPAGE.CB_IGNORE_SPACING.CHECKBOX.TEXT
 msgid  "Ig~nore ~~ and ` at the end of the line"
-msgstr "行末では ~~ と ` を無視する(~N)"
+msgstr "行末では ~~ と ` を無視(~N)"
 
 #: smres.src#RID_PRINTOPTIONPAGE.CB_SAVE_ONLY_USED_SYMBOLS.CHECKBOX.TEXT
 msgid  "Embed only used symbols (smaller file size)"
 msgstr "使用している記号のみ埋め込む (ファイルサイズを小さく)"
 
-#: smres.src#RID_SYMBOLDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Symbol set"
-msgstr "記号セット(~S)"
-
 #: smres.src#RID_SYMBOLDIALOG.2.FIXEDTEXT.TEXT
 msgid  "Unknown"
 msgstr "不明"
-
-#: smres.src#RID_SYMBOLDIALOG.2.PUSHBUTTON.TEXT
-msgid  "~Insert"
-msgstr "挿入(~I)"
-
-#: smres.src#RID_SYMBOLDIALOG.3.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "閉じる(~C)"
-
-#: smres.src#RID_SYMBOLDIALOG.1.PUSHBUTTON.TEXT
-msgid  "~Edit..."
-msgstr "編集(~E)..."
-
-#: smres.src#RID_SYMDEFINEDIALOG.MODALDIALOG.TEXT
-msgid  "Edit Symbols"
-msgstr "記号の編集"
-
-#: smres.src#RID_SYMDEFINEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Old symbol"
-msgstr "既存の記号(~O)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.2.FIXEDTEXT.TEXT
-msgid  "O~ld symbol set"
-msgstr "既存の記号セット(~L)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.9.FIXEDTEXT.TEXT
-msgid  "~Symbol"
-msgstr "記号(~S)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.10.FIXEDTEXT.TEXT
-msgid  "Symbol s~et"
-msgstr "記号セット(~E)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.FT_FONTS_SUBSET.FIXEDTEXT.TEXT
-msgid  "~Subset"
-msgstr "種類(~S)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.4.FIXEDTEXT.TEXT
-msgid  "~Typeface"
-msgstr "フォントのスタイル(~T)"
 
 #: smres.src#RID_SYMDEFINEDIALOG.1.PUSHBUTTON.TEXT
 msgid  "~Add"
 msgstr "追加(~A)"
 
-#: smres.src#RID_SYMDEFINEDIALOG.3.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "削除(~D)"
+#: smres.src#RID_NOMATHTYPEFACEWARNING.WARNINGBOX.MESSAGE
+msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr "\"StarMath\" フォントがインストールされていません｡\nこのフォントなしでは %PRODUCTNAME Math がうまく機能しません...\nまずフォントをインストールして %PRODUCTNAME Math を再起動してください。"
 
-#: smres.src#RID_FONTREGULAR.STRING.TEXT
-msgid  "Standard"
-msgstr "通常"
-
-#: smres.src#RID_FONTITALIC.STRING.TEXT
-msgid  "Italic"
-msgstr "斜体"
-
-#: smres.src#RID_FONTBOLD.STRING.TEXT
-msgid  "Bold"
-msgstr "太字"
+#: smres.src#RID_DEFAULTSAVEQUERY.QUERYBOX.MESSAGE
+msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
+msgstr "この変更を標準として保存しますか。\n\nこの変更はすべての新しい数式に影響します。"
 
 #: smres.src#RID_VIEWMENU.SID_VIEW050.MENUITEM.TEXT
 msgid  "~View 50%"
@@ -1451,153 +1111,17 @@ msgstr "拡大(~Z)"
 msgid  "Zoom ~Out"
 msgstr "縮小(~O)"
 
-#: smres.src#RID_VIEWMENU.SID_ADJUST.MENUITEM.TEXT
-msgid  "~Display All"
-msgstr "すべて表示(~D)"
-
-#: smres.src#RID_VIEWMENU.SID_DRAW.MENUITEM.TEXT
-msgid  "U~pdate"
-msgstr "更新(~P)"
-
-#: smres.src#RID_DISTANCEMENU.4.MENUITEM.TEXT
-msgid  "Fraction Bars"
-msgstr "分数線"
-
-#: smres.src#RID_DISTANCEMENU.7.MENUITEM.TEXT
-msgid  "Matrices"
-msgstr "行列"
-
-#: smres.src#RID_FONTMENU.1.MENUITEM.TEXT
-msgid  "Variables"
-msgstr "変数"
-
-#: smres.src#RID_FONTMENU.2.MENUITEM.TEXT
-msgid  "Functions"
-msgstr "関数"
-
-#: smres.src#RID_FONTMENU.3.MENUITEM.TEXT
-msgid  "Numbers"
-msgstr "数"
-
-#: smres.src#RID_FONTMENU.4.MENUITEM.TEXT
-msgid  "Text"
-msgstr "テキスト"
-
-#: smres.src#RID_FONTMENU.5.MENUITEM.TEXT
-msgid  "Serif"
-msgstr "Serif"
-
-#: smres.src#RID_FONTMENU.6.MENUITEM.TEXT
-msgid  "Sans"
-msgstr "Sans"
-
-#: smres.src#RID_FONTMENU.7.MENUITEM.TEXT
-msgid  "Fixed"
-msgstr "Fixed"
-
-#: smres.src#CMDBOXWINDOW_TEXT.#DEFINE.TEXT
-msgid  "Commands"
-msgstr "コマンド"
-
-#: smres.src#RID_DOCUMENTSTR.STRING.TEXT
-msgid  "Formula"
-msgstr "数式"
-
-#: smres.src#STR_STATSTR_READING.STRING.TEXT
-msgid  "Loading document..."
-msgstr "ドキュメントを読み込んでいます..."
-
-#: smres.src#STR_STATSTR_WRITING.STRING.TEXT
-msgid  "Saving document..."
-msgstr "ドキュメントを保存しています..."
-
-#: smres.src#STR_MATH_DOCUMENT_FULLTYPE_CURRENT.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Formula"
-msgstr "%PRODUCTNAME %PRODUCTVERSION 数式"
-
-#: smres.src#RID_SYMBOLFILESSTR.STRING.TEXT
-msgid  "Symbol files (*.sms)"
-msgstr "記号ファイル(*.sms)"
-
-#: smres.src#RID_ALLFILESSTR.STRING.TEXT
-msgid  "All Files (*.*)"
-msgstr "すべてのファイル(*.*)"
-
 #: smres.src#RID_ERR_IDENT.STRING.TEXT
 msgid  "ERROR : "
 msgstr "エラー :"
-
-#: smres.src#RID_ERR_UNKOWN.STRING.TEXT
-msgid  "Unknown error occurred"
-msgstr "不明なエラーが発生"
 
 #: smres.src#RID_ERR_UNEXPECTEDCHARACTER.STRING.TEXT
 msgid  "Unexpected character"
 msgstr "不適当な文字"
 
-#: smres.src#RID_ERR_OVERFLOW.STRING.TEXT
-msgid  "Formula entry too complex"
-msgstr "数式の入力が多すぎます"
-
-#: smres.src#RID_ERR_LGROUPEXPECTED.STRING.TEXT
-msgid  "'{' expected"
-msgstr "'{'が必要です"
-
-#: smres.src#RID_ERR_RGROUPEXPECTED.STRING.TEXT
-msgid  "'}' expected"
-msgstr "'}'が必要です"
-
-#: smres.src#RID_ERR_LBRACEEXPECTED.STRING.TEXT
-msgid  "'(' expected"
-msgstr "'('が必要です"
-
-#: smres.src#RID_ERR_RBRACEEXPECTED.STRING.TEXT
-msgid  "')' expected"
-msgstr "')'が必要です"
-
-#: smres.src#RID_ERR_FUNCEXPECTED.STRING.TEXT
-msgid  "Function expected"
-msgstr "関数が必要です"
-
-#: smres.src#RID_ERR_UNOPEREXPECTED.STRING.TEXT
-msgid  "Unary operator expected"
-msgstr "単項演算子が必要です"
-
-#: smres.src#RID_ERR_BINOPEREXPECTED.STRING.TEXT
-msgid  "Binary operator expected"
-msgstr "二項演算子が必要です"
-
-#: smres.src#RID_ERR_SYMBOLEXPECTED.STRING.TEXT
-msgid  "Symbol expected"
-msgstr "記号が必要です"
-
-#: smres.src#RID_ERR_IDENTEXPECTED.STRING.TEXT
-msgid  "Identifier expected"
-msgstr "識別子が必要です"
-
-#: smres.src#RID_ERR_POUNDEXPECTED.STRING.TEXT
-msgid  "'#' expected"
-msgstr "'#'が必要です"
-
-#: smres.src#RID_ERR_COLOREXPECTED.STRING.TEXT
-msgid  "Color required"
-msgstr "色が必要です"
-
-#: smres.src#RID_ERR_LPARENTEXPECTED.STRING.TEXT
-msgid  "Left limit expected"
-msgstr "左側の境界が必要です"
-
-#: smres.src#RID_ERR_RPARENTEXPECTED.STRING.TEXT
-msgid  "Right limit expected"
-msgstr "右側の境界が必要です"
-
 #: smres.src#RID_ERR_RIGHTEXPECTED.STRING.TEXT
 msgid  "'RIGHT' expected"
 msgstr "'RIGHT'が必要です"
-
-#: smres.src#RID_MATH_TOOLBOX.STRING.TEXT
-msgid  "Main Toolbar"
-msgstr "標準ツールバー"
 
 #: smres.src#RID_PRINTUIOPTIONS.ITEM1.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME %s"

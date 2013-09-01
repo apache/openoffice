@@ -47,10 +47,6 @@ msgstr "מוחלף"
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
 msgstr "ארעה שגיאה בעת טעינת הפקד. הפקד הוחלף בשומר מקום.‏"
 
-#: resource/strings.src#RID_STR_READERROR.STRING.TEXT
-msgid  "Error reading data from database"
-msgstr "שגיאה בקריאת נתונים ממסד הנתונים.‏"
-
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
 msgid  "Connection failed"
 msgstr "נסיון ההתחברות נכשל"
@@ -63,22 +59,6 @@ msgstr "לא ניתן היה לטעון את הנתונים.‏"
 msgid  "The data content could not be updated"
 msgstr "לא ניתן היה לעדכן את תכולת הנתונים"
 
-#: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
-msgid  "Error inserting the new record"
-msgstr "שגיאה בהכנסת הרשומה החדשה"
-
-#: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
-msgid  "Error updating the current record"
-msgstr "שגיאה בעדכון הרשומה הנוכחית"
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
-msgid  "Error deleting the current record"
-msgstr "שגיאה במחיקת הרשומה הנוכחית"
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
-msgid  "Error deleting the specified records"
-msgstr "שגיאה במחיקת הרשומות שצויינו"
-
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
 msgid  "The object cannot be NULL."
 msgstr "האובייקט לא יכול להיות NULL.‏"
@@ -87,17 +67,9 @@ msgstr "האובייקט לא יכול להיות NULL.‏"
 msgid  "Insert graphics from..."
 msgstr "הכנסת גרפיקה מ...‏"
 
-#: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
-msgid  "Remove graphics"
-msgstr "הסרת גרפיקה"
-
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
 msgid  "The given stream is invalid."
 msgstr "הזרימה ‏‪(stream)‬‏ שצויין אינו חוקי.‏"
-
-#: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
-msgid  "Syntax error in query expression"
-msgstr "שגיאה תחבירית בביטוי השאילתה"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
@@ -207,29 +179,9 @@ msgstr "אורך המחרוזת לא יכול לעלות על $2 תווים.‏"
 msgid  "String"
 msgstr "מחרוזת"
 
-#: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
-msgid  "Hyperlink"
-msgstr "קישור"
-
-#: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
-msgid  "True/False (Boolean)"
-msgstr "שקר/אמת (ערך בולייני)‏"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
-msgid  "Decimal"
-msgstr "מספר עשרוני"
-
-#: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
-msgid  "Floating point"
-msgstr "נקודה עשרונית צפה"
-
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
 msgid  "Double"
 msgstr "מספר כפול"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
-msgid  "Date"
-msgstr "תאריך"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
 msgid  "Time"
@@ -247,26 +199,6 @@ msgstr "חודש ושנה"
 msgid  "Year"
 msgstr "שנה"
 
-#: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
-msgid  "Month and day"
-msgstr "חודש ויום"
-
-#: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
-msgid  "Month"
-msgstr "חודש"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
-msgid  "Day"
-msgstr "יום"
-
-#: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
-msgid  "Error during evaluation"
-msgstr "שגיאה בעת שיערוך ‏‪(evaluation)‬‏‏"
-
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
 msgid  "The string '$1' does not match the required regular expression '$2'."
 msgstr "המחרוזת '$1' אינה מתאימה לביטוי הרגולרי הנדרש '$2'.‏"
-
-#: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
-msgstr "הידוק ‏‪(binding)‬‏‏"

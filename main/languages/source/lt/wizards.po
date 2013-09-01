@@ -31,49 +31,1377 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: euro/euro.src#STEP_ZERO.STRING.TEXT
+msgid  "~Cancel"
+msgstr "~Atsisakyti"
+
+#: euro/euro.src#STEP_ZERO___1.STRING.TEXT
+msgid  "~Help"
+msgstr "~Žinynas"
+
+#: euro/euro.src#STEP_ZERO___2.STRING.TEXT
+msgid  "<<~Back"
+msgstr "<<~Atgal"
+
+#: euro/euro.src#STEP_ZERO___3.STRING.TEXT
+msgid  "~Convert"
+msgstr "~Konvertuoti"
+
+#: euro/euro.src#STEP_ZERO___4.STRING.TEXT
+msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
+msgstr "Pastaba: valiutų sumų, susietų išoriniais saitais, ir valiutų koeficientų formulėse konvertuoti negalima."
+
+#: euro/euro.src#STEP_ZERO___5.STRING.TEXT
+msgid  "First, unprotect all sheets."
+msgstr "Pirmiausia panaikinkite visų lakštų apsaugą."
+
+#: euro/euro.src#STEP_ZERO___6.STRING.TEXT
+msgid  "Currencies:"
+msgstr "Valiutos:"
+
+#: euro/euro.src#STEP_ZERO___7.STRING.TEXT
+msgid  "C~ontinue>>"
+msgstr "~Tęsti>>"
+
+#: euro/euro.src#STEP_ZERO___8.STRING.TEXT
+msgid  "C~lose"
+msgstr "~Užverti"
+
+#: euro/euro.src#STEP_CONVERTER.STRING.TEXT
+msgid  "~Entire document"
+msgstr "~Visas dokumentas"
+
+#: euro/euro.src#STEP_CONVERTER___1.STRING.TEXT
+msgid  "Selection"
+msgstr "Atranka"
+
+#: euro/euro.src#STEP_CONVERTER___2.STRING.TEXT
+msgid  "Cell S~tyles"
+msgstr "Langelių s~tiliai"
+
+#: euro/euro.src#STEP_CONVERTER___3.STRING.TEXT
+msgid  "Currency cells in the current ~sheet"
+msgstr "Valiutos langeliai dabartiniame ~lakšte"
+
+#: euro/euro.src#STEP_CONVERTER___4.STRING.TEXT
+msgid  "Currency cells in the entire ~document"
+msgstr "Valiutos langeliai visame ~dokumente"
+
+#: euro/euro.src#STEP_CONVERTER___5.STRING.TEXT
+msgid  "~Selected range"
+msgstr "~Pasirinkta sritis"
+
+#: euro/euro.src#STEP_CONVERTER___6.STRING.TEXT
+msgid  "Select Cell Styles"
+msgstr "Pasirinkti langelių stilius"
+
+#: euro/euro.src#STEP_CONVERTER___7.STRING.TEXT
+msgid  "Select currency cells"
+msgstr "Pasirinkti valiutos langelius"
+
+#: euro/euro.src#STEP_CONVERTER___8.STRING.TEXT
+msgid  "Currency ranges:"
+msgstr "Valiutos rėžiai:"
+
+#: euro/euro.src#STEP_CONVERTER___9.STRING.TEXT
+msgid  "Templates:"
+msgstr "Šablonai:"
+
+#: euro/euro.src#STEP_AUTOPILOT.STRING.TEXT
+msgid  "Extent"
+msgstr "Apimtis"
+
+#: euro/euro.src#STEP_AUTOPILOT___1.STRING.TEXT
+msgid  "~Single %PRODUCTNAME Calc document"
+msgstr "~Atskiras „%PRODUCTNAME“ skaičiuoklės dokumentas"
+
+#: euro/euro.src#STEP_AUTOPILOT___2.STRING.TEXT
+msgid  "Complete ~directory"
+msgstr "~Visas aplankas"
+
+#: euro/euro.src#STEP_AUTOPILOT___3.STRING.TEXT
+msgid  "Source Document:"
+msgstr "Pradinis dokumentas:"
+
+#: euro/euro.src#STEP_AUTOPILOT___4.STRING.TEXT
+msgid  "Source directory:"
+msgstr "Pradinis aplankas:"
+
+#: euro/euro.src#STEP_AUTOPILOT___5.STRING.TEXT
+msgid  "~Including subfolders"
+msgstr "~Įtraukti poaplankius"
+
+#: euro/euro.src#STEP_AUTOPILOT___6.STRING.TEXT
+msgid  "Target directory:"
+msgstr "Paskirties aplankas:"
+
+#: euro/euro.src#STEP_AUTOPILOT___7.STRING.TEXT
+msgid  "Temporarily unprotect sheet without query"
+msgstr "Laikinai panaikinti lakšto apsaugą"
+
+#: euro/euro.src#STEP_AUTOPILOT___10.STRING.TEXT
+msgid  "Also convert fields and tables in text documents"
+msgstr "Konvertuoti laukus ir lenteles tekstiniuose dokumentuose"
+
+#: euro/euro.src#STATUSLINE.STRING.TEXT
+msgid  "Conversion status: "
+msgstr "Konvertavimo būsena: "
+
+#: euro/euro.src#STATUSLINE___1.STRING.TEXT
+msgid  "Conversion status of the cell templates:"
+msgstr "Langelių šablonų konvertavimo būsena:"
+
+#: euro/euro.src#STATUSLINE___2.STRING.TEXT
+msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr "Tinkamų rėžių registracija: lakštas %1Number%1 iš %2TotPageCount%2"
+
+#: euro/euro.src#STATUSLINE___3.STRING.TEXT
+msgid  "Entry of the ranges to be converted..."
+msgstr "Konvertuojamų rėžių elementai..."
+
+#: euro/euro.src#STATUSLINE___4.STRING.TEXT
+msgid  "Sheet protection for each sheet will be restored..."
+msgstr "Kiekvieno lakšto apsauga bus atkurta..."
+
+#: euro/euro.src#STATUSLINE___5.STRING.TEXT
+msgid  "Conversion of the currency units in the cell templates..."
+msgstr "Valiutos vienetų konvertavimas langelių šablonuose..."
+
+#: euro/euro.src#MESSAGES.STRING.TEXT
+msgid  "~Finish"
+msgstr "~Baigti"
+
+#: euro/euro.src#MESSAGES___1.STRING.TEXT
+msgid  "Select directory"
+msgstr "Pasirinkti aplanką"
+
+#: euro/euro.src#MESSAGES___2.STRING.TEXT
+msgid  "Select file"
+msgstr "Pasirinkti failą"
+
+#: euro/euro.src#MESSAGES___3.STRING.TEXT
+msgid  "Select target directory"
+msgstr "Pasirinkti paskirties aplanką"
+
+#: euro/euro.src#MESSAGES___4.STRING.TEXT
+msgid  "non-existant"
+msgstr "nesantis"
+
+#: euro/euro.src#MESSAGES___5.STRING.TEXT
+msgid  "Euro Converter"
+msgstr "Euro konvertavimas"
+
+#: euro/euro.src#MESSAGES___6.STRING.TEXT
+msgid  "Should protected spreadsheets be temporarily unprotected?"
+msgstr "Ar laikinai panaikinti apsaugotų skaičiuoklės dokumentų apsaugą?"
+
+#: euro/euro.src#MESSAGES___7.STRING.TEXT
+msgid  "Enter the password to unprotect the table %1TableName%1"
+msgstr "Įveskite slaptažodį lentelės „%1TableName%1“ apsaugai panaikinti"
+
+#: euro/euro.src#MESSAGES___8.STRING.TEXT
+msgid  "Wrong Password!"
+msgstr "Neteisingas slaptažodis!"
+
+#: euro/euro.src#MESSAGES___9.STRING.TEXT
+msgid  "Protected Sheet"
+msgstr "Apsaugotas lakštas"
+
+#: euro/euro.src#MESSAGES___10.STRING.TEXT
+msgid  "Warning!"
+msgstr "Įspėjimas!"
+
+#: euro/euro.src#MESSAGES___11.STRING.TEXT
+msgid  "Protection for the sheets will not be removed."
+msgstr "Lakštų apsauga nebus panaikinta."
+
+#: euro/euro.src#MESSAGES___12.STRING.TEXT
+msgid  "Sheet cannot be unprotected"
+msgstr "Lakštų apsaugos negalima panaikinti"
+
+#: euro/euro.src#MESSAGES___13.STRING.TEXT
+msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
+msgstr "Vediklis negali taisyti šio dokumento, nes dokumentuose su apsaugotais lakštais negalima pakeisti langelių formato."
+
+#: euro/euro.src#MESSAGES___14.STRING.TEXT
+msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
+msgstr "Pastaba: Euro konvertavimo vediklis negalės taisyti šio dokumento!"
+
+#: euro/euro.src#MESSAGES___15.STRING.TEXT
+msgid  "Please choose a currency to be converted first!"
+msgstr "Pasirinkite, kurią valiutą konvertuoti pirmiausia."
+
+#: euro/euro.src#MESSAGES___16.STRING.TEXT
+msgid  "Password:"
+msgstr "Slaptažodis:"
+
+#: euro/euro.src#MESSAGES___17.STRING.TEXT
+msgid  "OK"
+msgstr "Gerai"
+
+#: euro/euro.src#MESSAGES___18.STRING.TEXT
+msgid  "Cancel"
+msgstr "Atsisakyti"
+
+#: euro/euro.src#MESSAGES___19.STRING.TEXT
+msgid  "Please select a %PRODUCTNAME Calc document for editing!"
+msgstr "Pasirinkite taisytiną „%PRODUCTNAME“ skaičiuoklės dokumentą!"
+
+#: euro/euro.src#MESSAGES___20.STRING.TEXT
+msgid  "'<1>' is not a directory!"
+msgstr "„<1>“ nėra aplankas!"
+
+#: euro/euro.src#MESSAGES___21.STRING.TEXT
+msgid  "Document is read-only!"
+msgstr "Dokumentas skirtas tik skaitymui!"
+
+#: euro/euro.src#MESSAGES___22.STRING.TEXT
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Failas „<1>“ jau yra.<CR>Ar jį perrašyti?"
+
+#: euro/euro.src#MESSAGES___23.STRING.TEXT
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "Ar tikrai norite dabar užbaigti konvertavimą?"
+
+#: euro/euro.src#MESSAGES___24.STRING.TEXT
+msgid  "Cancel Wizard"
+msgstr "Atsisakyti vediklio"
+
+#: euro/euro.src#CURRENCIES.STRING.TEXT
+msgid  "Portuguese Escudo"
+msgstr "Portugalijos eskudas"
+
+#: euro/euro.src#CURRENCIES___1.STRING.TEXT
+msgid  "Dutch Guilder"
+msgstr "Olandijos guldenas"
+
+#: euro/euro.src#CURRENCIES___2.STRING.TEXT
+msgid  "French Franc"
+msgstr "Prancūzijos frankas"
+
+#: euro/euro.src#CURRENCIES___3.STRING.TEXT
+msgid  "Spanish Peseta"
+msgstr "Ispanijos peseta"
+
+#: euro/euro.src#CURRENCIES___4.STRING.TEXT
+msgid  "Italian Lira"
+msgstr "Italijos lira"
+
+#: euro/euro.src#CURRENCIES___5.STRING.TEXT
+msgid  "German Mark"
+msgstr "Vokietijos markė"
+
+#: euro/euro.src#CURRENCIES___6.STRING.TEXT
+msgid  "Belgian Franc"
+msgstr "Belgijos frankas"
+
+#: euro/euro.src#CURRENCIES___7.STRING.TEXT
+msgid  "Irish Punt"
+msgstr "Airijos svaras"
+
+#: euro/euro.src#CURRENCIES___8.STRING.TEXT
+msgid  "Luxembourg Franc"
+msgstr "Liuksemburgo frankas"
+
+#: euro/euro.src#CURRENCIES___9.STRING.TEXT
+msgid  "Austrian Schilling"
+msgstr "Austrijos šilingas"
+
+#: euro/euro.src#CURRENCIES___10.STRING.TEXT
+msgid  "Finnish Mark"
+msgstr "Suomijos markė"
+
+#: euro/euro.src#CURRENCIES___11.STRING.TEXT
+msgid  "Greek Drachma"
+msgstr "Graikijos drachma"
+
+#: euro/euro.src#CURRENCIES___12.STRING.TEXT
+msgid  "Slovenian Tolar"
+msgstr "Slovėnijos tolaras"
+
+#: euro/euro.src#CURRENCIES___13.STRING.TEXT
+msgid  "Cypriot Pound"
+msgstr ""
+
+#: euro/euro.src#CURRENCIES___14.STRING.TEXT
+msgid  "Maltese Lira"
+msgstr ""
+
+#: euro/euro.src#CURRENCIES___15.STRING.TEXT
+msgid  "Slovak Koruna"
+msgstr ""
+
+#: euro/euro.src#CURRENCIES___16.STRING.TEXT
+msgid  "The currency set for the document is not a European currency!"
+msgstr "Dokumente nustatyta valiuta nėra Europos valiuta!"
+
+#: euro/euro.src#CURRENCIES___17.STRING.TEXT
+msgid  "The language set for your operating system is not a language of the European Monetary Union."
+msgstr "Operacinės sistemos kalba nėra Europos Valiutų Sąjungos kalba."
+
+#: euro/euro.src#STEP_LASTPAGE.STRING.TEXT
+msgid  "Progress"
+msgstr "Eiga"
+
+#: euro/euro.src#STEP_LASTPAGE___1.STRING.TEXT
+msgid  "Retrieving the relevant documents..."
+msgstr "Tinkami dokumentai taisomi..."
+
+#: euro/euro.src#STEP_LASTPAGE___2.STRING.TEXT
+msgid  "Converting the documents..."
+msgstr "Dokumentai konvertuojami..."
+
+#: euro/euro.src#STEP_LASTPAGE___3.STRING.TEXT
+msgid  "Settings:"
+msgstr "Nuostatos:"
+
+#: euro/euro.src#STEP_LASTPAGE___4.STRING.TEXT
+msgid  "Sheet is always unprotected"
+msgstr "Lakštas visada neapsaugotas"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___0.STRING.TEXT
+msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
+msgstr "Aplanko „%1“ nepavyko sukurti.<BR>Gali būti, kad standžiajame diske nepakanka vietos."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___1.STRING.TEXT
+msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
+msgstr "Teksto dokumento nepavyko sukurti.<BR>Patikrinkite, ar įdiegta tekstų rengyklė „PRODUCTNAME Writer“."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___2.STRING.TEXT
+msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
+msgstr "Skaičiuoklės dokumento nepavyko sukurti.<BR>Patikrinkite, ar įdiegta skaičiuoklė „PRODUCTNAME Calc“."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___3.STRING.TEXT
+msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
+msgstr "Pateikties nepavyko sukurti.<BR>Patikrinkite, ar įdiegta pateikčių rengyklė „PRODUCTNAME Impress“."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___4.STRING.TEXT
+msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
+msgstr "Grafikos dokumento nepavyko sukurti.<BR>Patikrinkite, ar įdiegta grafikos rengyklė „PRODUCTNAME Draw“."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___5.STRING.TEXT
+msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
+msgstr "Matematinio dokumento nepavyko sukurti.<BR>Patikrinkite, ar įdiegta matematinė rengyklė „PRODUCTNAME Math“."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___6.STRING.TEXT
+msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
+msgstr "Reikalingi failai nerasti.<BR>Paleiskite „%PRODUCTNAME“ diegimo programą ir pažymėkite langelį „Pakartoti“."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___7.STRING.TEXT
+msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
+msgstr "Failas „<PATH>“ jau yra.<BR><BR>Ar pakeisti esamą failą?"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___8.STRING.TEXT
+msgid  "Yes"
+msgstr "Taip"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___9.STRING.TEXT
+msgid  "Yes to All"
+msgstr "Taip visiems"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___10.STRING.TEXT
+msgid  "No"
+msgstr "Ne"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___11.STRING.TEXT
+msgid  "Cancel"
+msgstr "Atsisakyti"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___12.STRING.TEXT
+msgid  "~Finish"
+msgstr "~Baigti"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___13.STRING.TEXT
+msgid  "< ~Back"
+msgstr "< ~Atgal"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___14.STRING.TEXT
+msgid  "~Next >"
+msgstr "~Toliau >"
+
 #: formwizard/dbwizres.src#RID_COMMON_START___15.STRING.TEXT
 msgid  "~Help"
 msgstr "~Žinynas"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___16.STRING.TEXT
+msgid  "Steps"
+msgstr "Žingsniai"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___17.STRING.TEXT
+msgid  "Close"
+msgstr "Užverti"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___18.STRING.TEXT
+msgid  "OK"
+msgstr "Gerai"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___19.STRING.TEXT
+msgid  "The file already exists. Do you want to overwrite it?"
+msgstr "Toks failas jau yra. Ar jį perrašyti?"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___20.STRING.TEXT
+msgid  "Template created via <wizard_name> on <current_date>."
+msgstr "Šablonas sukurtas <wizard_name> vedikliu <current_date>."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___21.STRING.TEXT
+msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
+msgstr "Vediklio negalima paleisti, nes nerasti svarbūs failai.\nLange „Priemonės → Parinktys → „%PRODUCTNAME“ → Failų vietos“ spustelėkite mygtuką „Numatyta“, kad atstatytumėte pradines nuostatas.\nTada paleiskite vediklį iš naujo."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___0.STRING.TEXT
+msgid  "C~reate"
+msgstr "~Sukurti"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___1.STRING.TEXT
+msgid  "~Cancel"
+msgstr "~Atsisakyti"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___2.STRING.TEXT
+msgid  "<< ~Back"
+msgstr "<< ~Atgal"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___3.STRING.TEXT
+msgid  "~Next >>"
+msgstr "~Toliau>>"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___4.STRING.TEXT
+msgid  "~Database"
+msgstr "~Duomenų bazė"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___5.STRING.TEXT
+msgid  "~Table name"
+msgstr "~Lentelės vardas"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___6.STRING.TEXT
+msgid  "An error occurred while running the wizard. The wizard will be terminated."
+msgstr "Paleidžiant vediklį įvyko klaida. Vediklio darbas bus nutrauktas."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___14.STRING.TEXT
+msgid  "No connection to the database could be established."
+msgstr "Negalima prisijungti prie duomenų baze."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___21.STRING.TEXT
+msgid  "~Stop"
+msgstr "~Sustoti"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___30.STRING.TEXT
+msgid  "The document could not be saved."
+msgstr "Dokumentas negali būti įrašytas."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___33.STRING.TEXT
+msgid  "Exiting the wizard"
+msgstr "Esantis vediklis"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___34.STRING.TEXT
+msgid  "Connecting to data source..."
+msgstr "Prisijungimas prie duomenų šaltinio..."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___35.STRING.TEXT
+msgid  "The connection to the data source could not be established."
+msgstr "Prisijungimas prie duomenų šaltinio negalimas."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___36.STRING.TEXT
+msgid  "The file path entered is not valid."
+msgstr "Įvestas neleistinas failo adresas."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___37.STRING.TEXT
+msgid  "Please select a data source"
+msgstr "Pasirinkite duomenų šaltinį"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___38.STRING.TEXT
+msgid  "Please select a table or query"
+msgstr "Pasirinkite lentelę arba užklausą"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___39.STRING.TEXT
+msgid  "Add field"
+msgstr "Įterpti lauką..."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___40.STRING.TEXT
+msgid  "Remove field"
+msgstr "Pašalinti lauką"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___41.STRING.TEXT
+msgid  "Add all fields"
+msgstr "Pridėti visus laukus"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___42.STRING.TEXT
+msgid  "Remove all fields"
+msgstr "Pašalinti visus laukus"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___43.STRING.TEXT
+msgid  "Move field up"
+msgstr "Pakelti lauką"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___44.STRING.TEXT
+msgid  "Move field down"
+msgstr "Nuleisti lauką"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___45.STRING.TEXT
+msgid  "The field names from '%NAME' could not be retrieved."
+msgstr "Nepavyko perskaityti laukų pavadinimų iš „%NAME“."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___0.STRING.TEXT
+msgid  "Form Wizard"
+msgstr "Formos vediklis"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___1.STRING.TEXT
+msgid  "Fields in ~the form"
+msgstr "Šios antraštės naudoti negalima. Prašome pasirinkti kitą antraštę."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___2.STRING.TEXT
+msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
+msgstr "Dvejetainius laukus visada galima pasirinkti iš sąrašo.\nJei įmanoma, jie vaizduojami paveikslais."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___3.STRING.TEXT
+msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr "Įdėtinė forma – tai forma, esanti kitoje formoje.\nĮdėtinėmis formomis patogu vaizduoti duomenis iš lentelių ir užklausų, kurios turi daug sąryšių."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___4.STRING.TEXT
+msgid  "~Add Subform"
+msgstr "(Data)"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___5.STRING.TEXT
+msgid  "~Subform based on existing relation"
+msgstr "Įdėtinė ~forma pagal esamus sąryšius"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___6.STRING.TEXT
+msgid  "Tables or queries"
+msgstr "Lentelės arba užklausos"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___7.STRING.TEXT
+msgid  "Subform based on ~manual selection of fields"
+msgstr "Į~dėtinė forma rankiniu būdu parenkant laukus"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___8.STRING.TEXT
+msgid  "~Which relation do you want to add?"
+msgstr ": Laukų lygiuotė"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___9.STRING.TEXT
+msgid  "Fields in the ~subform"
+msgstr ": Šablonai"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___12.STRING.TEXT
+msgid  "~Available fields"
+msgstr "~Esami laukai"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___13.STRING.TEXT
+msgid  "Fields in form"
+msgstr "Laukai formoje"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___19.STRING.TEXT
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
+msgstr "„<FIELDNAME1>“ ir „<FIELDNAME2>“ sąjunga pasirinkta dukart.\nSąjungas galima naudoti tik kartą."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___20.STRING.TEXT
+msgid  "~First joined subform field"
+msgstr "~Uždėtinė"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___21.STRING.TEXT
+msgid  "~Second joined subform field"
+msgstr "~Puslapio stiliai"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___22.STRING.TEXT
+msgid  "~Third joined subform field"
+msgstr "Įvesti antraštę"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___23.STRING.TEXT
+msgid  "~Fourth joined subform field"
+msgstr "~Užbaigus..."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___24.STRING.TEXT
+msgid  "F~irst joined main form field"
+msgstr "Nedelsiant naudoti dokumentą"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___25.STRING.TEXT
+msgid  "S~econd joined main form field"
+msgstr "Įrašyti dokumentą"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___26.STRING.TEXT
+msgid  "T~hird joined main form field"
+msgstr "Forma buvo sukurta ir įrašyta duomenų bazėje."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___27.STRING.TEXT
+msgid  "F~ourth joined main form field"
+msgstr "Formos vardai negali būti ilgesni nei 32 rašmenys."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___28.STRING.TEXT
+msgid  "Field border"
+msgstr "Lauko kraštinė"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___29.STRING.TEXT
+msgid  "No border"
+msgstr "Jokios"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___30.STRING.TEXT
+msgid  "3D look"
+msgstr "Trimatė"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___31.STRING.TEXT
+msgid  "Flat"
+msgstr "Dvimatė"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___32.STRING.TEXT
+msgid  "Label placement"
+msgstr "Etiketės vieta"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___33.STRING.TEXT
+msgid  "Align left"
+msgstr "Kairinė lygiuotė"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___34.STRING.TEXT
+msgid  "Align right"
+msgstr "Dešininė lygiuotė"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___35.STRING.TEXT
+msgid  "Arrangement of DB fields"
+msgstr "Duomenų bazės laukų išdėstymas"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___36.STRING.TEXT
+msgid  "Columnar - Labels Left"
+msgstr "Stulpeliai - etiketės kairėje"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___37.STRING.TEXT
+msgid  "Columnar - Labels on Top"
+msgstr "Stulpeliai - etiketės viršuje"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___38.STRING.TEXT
+msgid  "In Blocks - Labels Left"
+msgstr "Blokai - etiketės kairėje"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___39.STRING.TEXT
+msgid  "In Blocks - Labels Above"
+msgstr "Blokai - etiketės viršuje"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___40.STRING.TEXT
+msgid  "As Data Sheet"
+msgstr "Kaip duomenų lakštas"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___41.STRING.TEXT
+msgid  "Arrangement of the main form"
+msgstr "Pagrindinės formos išdėstymas"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___42.STRING.TEXT
+msgid  "Arrangement of the subform"
+msgstr "Įdėtinės formos išdėstymas"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___44.STRING.TEXT
+msgid  "The form is to be ~used for entering new data only."
+msgstr "~Forma bus naudojama tik naujiems duomenims įvesti."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___45.STRING.TEXT
+msgid  "Existing data will not be displayed "
+msgstr "duomenų bazės pasirinkimas"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___46.STRING.TEXT
+msgid  "T~he form is to display all data"
+msgstr "Formoje ~rodyti visus duomenys"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___47.STRING.TEXT
+msgid  "Do not allow ~modification of existing data"
+msgstr "Baigti"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___48.STRING.TEXT
+msgid  "Do not allow ~deletion of existing data"
+msgstr "Neleisti ~šalinti esamų duomenų"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___49.STRING.TEXT
+msgid  "Do not allow ~addition of new data"
+msgstr "~Neleisti pridėti naujų duomenų"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___50.STRING.TEXT
+msgid  "Name of ~the form"
+msgstr "Dvejetainių laukų rodymas"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___51.STRING.TEXT
+msgid  "How do you want to proceed after creating the form?"
+msgstr "Nepaisyti dvejetainių laukų"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___52.STRING.TEXT
+msgid  "~Work with the form"
+msgstr "Dvejetainiai laukai kaip paveikslai"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___53.STRING.TEXT
+msgid  "~Modify the form"
+msgstr "~Keisti formą"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___55.STRING.TEXT
+msgid  "~Page Styles"
+msgstr "Fono paveikslas"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___80.STRING.TEXT
 msgid  "Field selection"
 msgstr "Lauko pasirinkimas"
 
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___81.STRING.TEXT
+msgid  "Set up a subform"
+msgstr "Kurti įdėtinę formą"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___82.STRING.TEXT
+msgid  "Add subform fields"
+msgstr "Pridėti įdėtinės formos laukus"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___83.STRING.TEXT
+msgid  "Get joined fields"
+msgstr "Gauti sujungtus laukus"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___84.STRING.TEXT
+msgid  "Arrange controls"
+msgstr "Išdėstyti valdiklius"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___85.STRING.TEXT
+msgid  "Set data entry"
+msgstr "Nustatyti duomenų įvedimą"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___86.STRING.TEXT
+msgid  "Apply styles"
+msgstr "Taikyti stilius"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___87.STRING.TEXT
+msgid  "Set name"
+msgstr "Nustatyti pavadinimą"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___88.STRING.TEXT
+msgid  "(Date)"
+msgstr "(Data)"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___89.STRING.TEXT
+msgid  "(Time)"
+msgstr "(Laikas)"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___90.STRING.TEXT
+msgid  "Select the fields of your form"
+msgstr "Parinkti formos laukus"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___91.STRING.TEXT
+msgid  "Decide if you want to set up a subform"
+msgstr "Pasirinkti, ar kurti įdėtinę formą"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___92.STRING.TEXT
+msgid  "Select the fields of your subform"
+msgstr "Parinkti įdėtinės formos laukus"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___93.STRING.TEXT
+msgid  "Select the joins between your forms"
+msgstr "Parinkti formų sąjungas"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___94.STRING.TEXT
+msgid  "Arrange the controls on your form"
+msgstr "Išdėstyti formos valdiklius"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___95.STRING.TEXT
+msgid  "Select the data entry mode"
+msgstr "Parinkti duomenų įvedimo veikseną"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___96.STRING.TEXT
+msgid  "Apply the style of your form"
+msgstr "Taikyti formos stilių"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___97.STRING.TEXT
+msgid  "Set the name of the form"
+msgstr "Nustatyti formos pavadinimą"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___98.STRING.TEXT
+msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
+msgstr "Forma, pavadinta „%FORMNAME“, jau yra.\nParinkite kitą pavadinimą."
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___0.STRING.TEXT
 msgid  "Query Wizard"
 msgstr "Užklausos vediklis"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___1.STRING.TEXT
+msgid  "Query"
+msgstr "Užklausa"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___3.STRING.TEXT
+msgid  "~Tables"
+msgstr "~Lentelės"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___4.STRING.TEXT
 msgid  "A~vailable fields"
 msgstr "~Galimi laukai"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___5.STRING.TEXT
+msgid  "Name ~of the query"
+msgstr "~Užklausos pavadinimas"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___6.STRING.TEXT
+msgid  "Display ~Query"
+msgstr "Rodyti ~užklausą"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___7.STRING.TEXT
+msgid  "~Modify Query"
+msgstr "Keisti u~žklausą"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___8.STRING.TEXT
+msgid  "~How do you want to proceed after creating the query?"
+msgstr "~Kokius veiksmus atlikti sukūrus užklausą?"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___9.STRING.TEXT
+msgid  "Match ~all of the following"
+msgstr "Prilyginti ~visus išvardintus elementus"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___10.STRING.TEXT
+msgid  "~Match any of the following"
+msgstr "Prilyginti ~nors vieną iš išvardintų elementų"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___11.STRING.TEXT
+msgid  "~Detailed query (Shows all records of the query.)"
+msgstr "~Detali užklausa (rodomi visi užklausos įrašai)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___12.STRING.TEXT
+msgid  "~Summary query (Shows only results of aggregate functions.)"
+msgstr "~Apibendrinanti užklausa (rodomi tik apibendrinančių funkcijų rezultatai)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___16.STRING.TEXT
+msgid  "Aggregate functions"
+msgstr "Apibendrinančios funkcijos"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___17.STRING.TEXT
 msgid  "Fields"
 msgstr "Laukai"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___18.STRING.TEXT
+msgid  "~Group by"
+msgstr "~Grupuoti pagal"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___19.STRING.TEXT
 msgid  "Field"
 msgstr "Laukas"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___20.STRING.TEXT
+msgid  "Alias"
+msgstr "Alternatyvus vardas"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___21.STRING.TEXT
+msgid  "Table: "
+msgstr "Lentelė:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___22.STRING.TEXT
+msgid  "Query: "
+msgstr "Užklausa:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___24.STRING.TEXT
+msgid  "Condition"
+msgstr "Sąlyga"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___25.STRING.TEXT
+msgid  "Value"
+msgstr "Reikšmė"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___26.STRING.TEXT
+msgid  "is equal to"
+msgstr "lygu"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___27.STRING.TEXT
+msgid  "is not equal to"
+msgstr "nelygu"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___28.STRING.TEXT
+msgid  "is smaller than"
+msgstr "mažiau"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___29.STRING.TEXT
+msgid  "is greater than"
+msgstr "daugiau"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___30.STRING.TEXT
+msgid  "is equal or less than "
+msgstr "mažiau arba lygu"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___31.STRING.TEXT
+msgid  "is equal or greater than"
+msgstr "daugiau arba lygu"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___32.STRING.TEXT
+msgid  "like"
+msgstr "panašu"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___33.STRING.TEXT
+msgid  "not like"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___34.STRING.TEXT
+msgid  "is null"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___35.STRING.TEXT
+msgid  "is not null"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___36.STRING.TEXT
+msgid  "true"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___37.STRING.TEXT
+msgid  "false"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___38.STRING.TEXT
+msgid  "and"
+msgstr "ir"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___39.STRING.TEXT
+msgid  "or"
+msgstr "arba"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___40.STRING.TEXT
+msgid  "get the sum of"
+msgstr "suma"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___41.STRING.TEXT
+msgid  "get the average of"
+msgstr "vidurkis"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___42.STRING.TEXT
+msgid  "get the minimum of"
+msgstr "minimumas"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___43.STRING.TEXT
+msgid  "get the maximum of"
+msgstr "maksimumas"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___44.STRING.TEXT
+msgid  "get the sum of <FIELD>"
+msgstr "<FIELD> suma"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___45.STRING.TEXT
+msgid  "get the average of <FIELD>"
+msgstr "<FIELD> vidurkis"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___46.STRING.TEXT
+msgid  "get the minimum of <FIELD>"
+msgstr "<FIELD> minimumas"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___47.STRING.TEXT
+msgid  "get the maximum of <FIELD>"
+msgstr "<FIELD> maksimumas"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___48.STRING.TEXT
+msgid  "(none)"
+msgstr "(nieko)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___50.STRING.TEXT
+msgid  "Fie~lds in the Query: "
+msgstr "Už~klausos laukai:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___51.STRING.TEXT
+msgid  "Sorting order: "
+msgstr "Rikiavimo eilė:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___52.STRING.TEXT
+msgid  "No sorting fields were assigned."
+msgstr "Nepriskirta rikiavimo laukų."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___53.STRING.TEXT
+msgid  "Search conditions: "
+msgstr "Paieškos sąlygos:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___54.STRING.TEXT
+msgid  "No conditions were assigned."
+msgstr "Nepriskirta sąlygų."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___55.STRING.TEXT
+msgid  "Aggregate functions: "
+msgstr "Apibendrinančios funkcijos:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___56.STRING.TEXT
+msgid  "No aggregate functions were assigned."
+msgstr "Nepriskirta apibendrinančių funkcijų."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___57.STRING.TEXT
+msgid  "Grouped by: "
+msgstr "Grupuojama pagal:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___58.STRING.TEXT
+msgid  "No Groups were assigned."
+msgstr "Nepriskirta grupių."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___59.STRING.TEXT
+msgid  "Grouping conditions: "
+msgstr "Grupavimo sąlygos:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___60.STRING.TEXT
+msgid  "No grouping conditions were assigned."
+msgstr "Nepriskirta grupavimo sąlygų."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___70.STRING.TEXT
+msgid  "Select the fields (columns) for your query"
+msgstr "Parinkite užklausos laukus (stulpelius)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___71.STRING.TEXT
+msgid  "Select the sorting order"
+msgstr "Parinkite rikiavimo eilę"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___72.STRING.TEXT
+msgid  "Select the search conditions"
+msgstr "Parinkite paieškos sąlygas"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___73.STRING.TEXT
+msgid  "Select the type of query"
+msgstr "Parinkite užklausos tipą"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___74.STRING.TEXT
+msgid  "Select the groups"
+msgstr "Parinkite grupes"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___75.STRING.TEXT
+msgid  "Select the grouping conditions"
+msgstr "Parinkite grupavimo sąlygas"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___76.STRING.TEXT
+msgid  "Assign aliases if desired"
+msgstr "Jei reikia, priskirkite alternatyvius vardus"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___77.STRING.TEXT
+msgid  "Check the overview and decide how to proceed"
+msgstr "Patikrinkite ir parinkite tolesnius veiksmus"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___81.STRING.TEXT
+msgid  "Sorting order"
+msgstr "Rikiavimo eilė"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___82.STRING.TEXT
+msgid  "Search conditions"
+msgstr "Paieškos sąlygos"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___83.STRING.TEXT
+msgid  "Detail or summary"
+msgstr "Detaliai arba santrauka"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___84.STRING.TEXT
 msgid  "Grouping"
 msgstr "Grupavimas"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___85.STRING.TEXT
+msgid  "Grouping conditions"
+msgstr "Grupavimo sąlygos"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___86.STRING.TEXT
+msgid  "Aliases"
+msgstr "Alternatyvūs vardai"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___87.STRING.TEXT
+msgid  "Overview"
+msgstr "Peržiūra"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___88.STRING.TEXT
+msgid  "A field that has not been assigned an aggregate function must be used in a group."
+msgstr "Grupėje turi būti laukas, kuriam nepriskirta apibendrinanti funkcija."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___89.STRING.TEXT
+msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
+msgstr "Sąlyga „<FIELDNAME> <LOGICOPERATOR> <VALUE>“ pasirinkta dukart. Kiekvieną sąlygą galima pasirinkti tik kartą."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___90.STRING.TEXT
+msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
+msgstr "Apibendrinanti funkcija „<FUNCTION>“ dukart priskirta lauko pavadinimui „<NUMERICFIELD>“."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___91.STRING.TEXT
+msgid  ", "
+msgstr ", "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___92.STRING.TEXT
+msgid  "<FIELDTITLE> (<FIELDNAME>)"
+msgstr "<FIELDTITLE> (<FIELDNAME>)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___93.STRING.TEXT
+msgid  "<FIELDNAME> (<SORTMODE>)"
+msgstr "<FIELDNAME> (<SORTMODE>)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___94.STRING.TEXT
+msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___95.STRING.TEXT
+msgid  "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___0.STRING.TEXT
+msgid  "Report Wizard"
+msgstr "Ataskaitos vediklis"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___3.STRING.TEXT
+msgid  "~Table"
+msgstr "~Lentelė"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___4.STRING.TEXT
+msgid  "Colu~mns"
+msgstr "~Stulpeliai"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___7.STRING.TEXT
+msgid  "Report_"
+msgstr "Ataskaita_"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___8.STRING.TEXT
+msgid  "- undefined -"
+msgstr "(nieko)"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___9.STRING.TEXT
+msgid  "~Fields in report"
+msgstr "~Laukai ataskaitoje"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___12.STRING.TEXT
+msgid  "Sort options"
+msgstr "Rikiavimo parinktys"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___13.STRING.TEXT
+msgid  "Choose layout"
+msgstr "Pasirinkite maketą"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___14.STRING.TEXT
 msgid  "Create report"
 msgstr "Kurti ataskaitą"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___15.STRING.TEXT
+msgid  "Layout of data"
+msgstr "Duomenų išdėstymas"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___16.STRING.TEXT
+msgid  "Layout of headers and footers"
+msgstr "Puslapinių antraščių ir poraščių išdėstymas"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___20.STRING.TEXT
+msgid  "~Sort by"
+msgstr "~Rikiuoti pagal"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___21.STRING.TEXT
+msgid  "T~hen by"
+msgstr "~Po to pagal"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___22.STRING.TEXT
+msgid  "Orientation"
+msgstr "Padėtis"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___23.STRING.TEXT
+msgid  "Portrait"
+msgstr "Stačias"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___24.STRING.TEXT
+msgid  "Landscape"
+msgstr "Gulsčias"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___28.STRING.TEXT
+msgid  "Which fields do you want to have in your report?"
+msgstr "Kurie laukai turi būti ataskaitoje?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___29.STRING.TEXT
+msgid  "Do you want to add grouping levels?"
+msgstr "Ar pridėti grupavimo lygius?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___30.STRING.TEXT
+msgid  "According to which fields do you want to sort the data?"
+msgstr "Pagal kuriuos laukus rikiuoti duomenis?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___31.STRING.TEXT
+msgid  "How do you want your report to look?"
+msgstr "Kaip turi atrodyti ataskaita?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___32.STRING.TEXT
+msgid  "Decide how you want to proceed"
+msgstr "Ką norite daryti toliau?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___33.STRING.TEXT
+msgid  "Title of report"
+msgstr "Ataskaitos pavadinimas"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___34.STRING.TEXT
+msgid  "Display report"
+msgstr "Rodyti ataskaitą"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___36.STRING.TEXT
+msgid  "Ascending"
+msgstr "Didėjančiai"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___37.STRING.TEXT
+msgid  "Descending"
+msgstr "Mažėjančiai"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___40.STRING.TEXT
+msgid  "~Dynamic report"
+msgstr "~Dinaminė ataskaita"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___41.STRING.TEXT
+msgid  "~Create report now"
+msgstr "~Kurti ataskaitą dabar"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___42.STRING.TEXT
+msgid  "~Modify report layout"
+msgstr "Keisti ataskaitos ~maketą"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___43.STRING.TEXT
+msgid  "Static report"
+msgstr "Statinė ataskaita"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___44.STRING.TEXT
+msgid  "Save as"
+msgstr "Įrašyti taip"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___50.STRING.TEXT
+msgid  "Groupings"
+msgstr "Grupavimai"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___51.STRING.TEXT
+msgid  "Then b~y"
+msgstr "P~o to pagal"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___52.STRING.TEXT
+msgid  "~Then by"
+msgstr "Po ~to pagal"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___53.STRING.TEXT
+msgid  "Asc~ending"
+msgstr "~Didėjančiai"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___54.STRING.TEXT
+msgid  "Ascend~ing"
+msgstr "~Didėjančiai"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___55.STRING.TEXT
+msgid  "Ascendin~g"
+msgstr "~Didėjančiai"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___56.STRING.TEXT
 msgid  "De~scending"
 msgstr "Ma~žėjančiai"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___57.STRING.TEXT
+msgid  "Des~cending"
+msgstr "~Mažėjančiai"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___60.STRING.TEXT
+msgid  "Binary fields cannot be displayed in the report."
+msgstr "Ataskaitoje negali būti rodomi dvejetainiai laukai."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___61.STRING.TEXT
+msgid  "The table '<TABLENAME>' does not exist."
+msgstr "Lentelė '<TABLENAME>' neegzistuoja."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___62.STRING.TEXT
+msgid  "Creating Report..."
+msgstr "Ataskaitos kūrimas..."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___63.STRING.TEXT
+msgid  "Number of records inserted: <COUNT>"
+msgstr "Įterptų įrašų skaičius: <COUNT>"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___64.STRING.TEXT
+msgid  "The form '<REPORTFORM>' does not exist."
+msgstr "Forma '<REPORTFORM>' neegzistuoja."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___65.STRING.TEXT
+msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
+msgstr "Užklausa su sakiniu <BR>'<STATEMENT>' <BR> negali būti įvykdyta. <BR> Patikrinkite duomenų šaltinį."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___66.STRING.TEXT
+msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
+msgstr "Kitas paslėptas formos valdiklis '<REPORTFORM>' negali būti skaitomas: '<CONTROLNAME>'."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___67.STRING.TEXT
+msgid  "Importing data..."
+msgstr "Duomenų importavimas..."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___68.STRING.TEXT
+msgid  "Labeling fields"
+msgstr "Laukų pavadinimai"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___69.STRING.TEXT
+msgid  "How do you want to label the fields?"
+msgstr "Kaip norite pavadinti laukus?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___70.STRING.TEXT
+msgid  "Label"
+msgstr "Žymė"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___72.STRING.TEXT
+msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
+msgstr "Vediklyje įvyko klaida.<BR>Šablonas '%PATH' yra klaidingas.<BR>Reikalingos sekcijos arba lentelės neegzistuoja arba yra neteisingai pavadintos.<BR>Daugiau informacijos ieškokite žinyne.<BR>Prašome pasirinkti kitą šabloną."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___73.STRING.TEXT
+msgid  "There is an invalid user field in a table."
+msgstr "Neteisingas naudotojo lentelės laukas."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___74.STRING.TEXT
+msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
+msgstr "Rikiavimo kriterijus pasirinktas '<FIELDNAME>' du kartus. Kiekvienas kriterijus gali būti pasirinktas vieną kartą."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___75.STRING.TEXT
+msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
+msgstr "Pastaba: sukūrus ataskaitą fiktyvus tekstas bus pakeistas duomenimis iš duomenų bazės."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___76.STRING.TEXT
+msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
+msgstr "Ataskaita „%REPORTNAME“ jau yra duomenų bazėje. Parinkite kitą pavadinimą."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___78.STRING.TEXT
+msgid  "How do you want to proceed after creating the report?"
+msgstr "Kokius veiksmus atlikti sukūrus ataskaitą?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___79.STRING.TEXT
+msgid  "What kind of report do you want to create?"
+msgstr "Kokią ataskaitą norite kurti?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___80.STRING.TEXT
+msgid  "Tabular"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___81.STRING.TEXT
+msgid  "Columnar, single-column"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___82.STRING.TEXT
+msgid  "Columnar, two columns"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___83.STRING.TEXT
+msgid  "Columnar, three columns"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___84.STRING.TEXT
+msgid  "In blocks, labels left"
+msgstr "Blokai - etiketės kairėje"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___85.STRING.TEXT
+msgid  "In blocks, labels above"
+msgstr "Blokai - etiketės viršuje"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___86.STRING.TEXT
 msgid  "Title:"
 msgstr "Antraštė:"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___87.STRING.TEXT
+msgid  "Author:"
+msgstr "Au~torius:"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___88.STRING.TEXT
 msgid  "Date:"
 msgstr "Data: "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___89.STRING.TEXT
+msgid  "Page #page# of #count#"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___90.STRING.TEXT
+msgid  "Page number:"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___91.STRING.TEXT
+msgid  "Page count:"
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___92.STRING.TEXT
+msgid  "No valid report template was found."
+msgstr ""
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___1.STRING.TEXT
+msgid  "Table Wizard"
+msgstr "Lentelės vediklis"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___2.STRING.TEXT
+msgid  "Select fields"
+msgstr "Laukų parinkimas"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___3.STRING.TEXT
+msgid  "Set types and formats"
+msgstr "Tipų ir formatų nustatymas"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___4.STRING.TEXT
 msgid  "Set primary key"
@@ -83,13 +1411,177 @@ msgstr "Nustatyti pirminį raktą"
 msgid  "Create table"
 msgstr "Kurti lentelę"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___8.STRING.TEXT
+msgid  "Select fields for your table"
+msgstr "Parinkite lentelės laukus"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___9.STRING.TEXT
+msgid  "Set field types and formats"
+msgstr "Nustatykite laukų tipus ir formatus"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___14.STRING.TEXT
+msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
+msgstr "Šiuo vedikliu iš duomenų bazės sukuriama lentelė. Pasirinkę lentelės kategoriją ir lentelės pavyzdį, parinkite į lentelę norimus įtraukti laukus. Galima įtraukti laukus iš kelių lentelių pavyzdžių."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___15.STRING.TEXT
+msgid  "Ca~tegory"
+msgstr "Ka~tegorija"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___16.STRING.TEXT
+msgid  "B~usiness"
+msgstr "~Tarnybinė"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___17.STRING.TEXT
+msgid  "P~ersonal"
+msgstr "~Asmeninė"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___18.STRING.TEXT
+msgid  "~Sample tables"
+msgstr "~Lentelių pavyzdžiai"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___20.STRING.TEXT
+msgid  "Field information"
+msgstr "Lauko informacija"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___21.STRING.TEXT
+msgid  "+"
+msgstr "+"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___23.STRING.TEXT
+msgid  "Field name"
+msgstr "Lauko vardas"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___24.STRING.TEXT
+msgid  "Field type"
+msgstr "Lauko tipas"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___25.STRING.TEXT
+msgid  "~Selected fields"
+msgstr "~Pasirinkti laukai"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___26.STRING.TEXT
+msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
+msgstr "Pirminis raktas unikaliai identifikuoja kiekvieną įrašą duomenų bazės lentelėje. Pirminiai raktai palengvina informacijos iš skirtingų lentelių susiejimą. Rekomenduojama pirminį raktą naudoti kiekvienoje lentelėje. Be pirminio rakto nebus galima į lentelę įvesti duomenis."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___27.STRING.TEXT
+msgid  "~Create a primary key"
+msgstr "~Kurti pirminį raktą"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___28.STRING.TEXT
+msgid  "~Automatically add a primary key"
+msgstr "~Automatiškai pridėti pirminį raktą"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___29.STRING.TEXT
+msgid  "~Use an existing field as a primary key"
+msgstr "~Naudoti esamą lauką kaip pirminį raktą"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___30.STRING.TEXT
+msgid  "Define p~rimary key as a combination of several fields "
+msgstr "Ap~rašyti pirminį raktą kaip kelių laukų kombinaciją"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___31.STRING.TEXT
+msgid  "F~ieldname"
+msgstr "~Lauko pavadinimas"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___32.STRING.TEXT
+msgid  "~Primary key fields"
+msgstr "~Pirminio rakto laukai"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___33.STRING.TEXT
+msgid  "Auto ~value"
+msgstr "Au~tomatinė reikšmė"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___34.STRING.TEXT
+msgid  "What do you want to name your table?"
+msgstr "Kaip pavadinti lentelę?"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___35.STRING.TEXT
+msgid  "Congratulations. You have entered all the information needed to create your table."
+msgstr "Įvedėte visą reikiamą informaciją lentelei sukurti."
+
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___36.STRING.TEXT
 msgid  "What do you want to do next?"
 msgstr "Ką norite daryti toliau?"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___37.STRING.TEXT
+msgid  "Modify the table design"
+msgstr "Keisti lentelės projektą"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___38.STRING.TEXT
+msgid  "Insert data immediately"
+msgstr "Įterpti duomenis tiesiogiai"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___39.STRING.TEXT
+msgid  "C~reate a form based on this table"
+msgstr "Pagal šią lentelę kuri ~formą"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___40.STRING.TEXT
+msgid  "The table you have created could not be opened."
+msgstr "Sukurtos lentelės nepavyko atverti."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___41.STRING.TEXT
+msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "Lentelės pavadinime „%TABLENAME“ yra rašmuo (%SPECIALCHAR), kuris gali būti nesuderinamas su duomenų baze."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___42.STRING.TEXT
+msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "Lauko pavadinime „%FIELDNAME“ yra rašmuo (%SPECIALCHAR), kuris gali būti nesuderinamas su duomenų baze."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___44.STRING.TEXT
+msgid  "MyTable"
+msgstr "Mano lentelė"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___45.STRING.TEXT
+msgid  "Add a Field"
+msgstr "Įterpti lauką"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___46.STRING.TEXT
+msgid  "Remove the selected Field"
+msgstr "Šalinti pasirinktą lauką"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___47.STRING.TEXT
+msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
+msgstr "Lauko negalima įterpti, nes būtų viršytas didžiausias galimas laukų skaičius (%COUNT) duomenų bazės lentelėje"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___48.STRING.TEXT
+msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
+msgstr "Lentelė pavadinimu „%TABLENAME“ jau yra.\nĮveskite kitą pavadinimą."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___49.STRING.TEXT
+msgid  "Catalog of the table"
+msgstr "Lentelės katalogas"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___50.STRING.TEXT
+msgid  "Schema of the table"
+msgstr "Lentelės schema"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___51.STRING.TEXT
+msgid  "The field '%FIELDNAME' already exists."
+msgstr "Laukas „%FIELDNAME“ jau yra."
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___1.STRING.TEXT
+msgid  "Letter Wizard"
+msgstr "Laiško vediklis"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.STRING.TEXT
 msgid  "Label9"
 msgstr "Žymė9"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___3.STRING.TEXT
+msgid  "~Business letter"
+msgstr "~Tarnybinis laiškas"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___4.STRING.TEXT
+msgid  "~Formal personal letter"
+msgstr "~Formalus asmeninis laiškas"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___5.STRING.TEXT
+msgid  "~Personal letter"
+msgstr "~Asmeninis laiškas"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___6.STRING.TEXT
+msgid  "~Use letterhead paper with pre-printed elements"
+msgstr "~Naudoti laiškų popierių su iš anksto išspausdintais elementais"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.STRING.TEXT
 msgid  "~Logo"
@@ -99,13 +1591,29 @@ msgstr "~Logotipas"
 msgid  "Return address"
 msgstr "Atgalinis adresas"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___9.STRING.TEXT
+msgid  "~Include footer"
+msgstr "~Įterpti puslapinę poraštę"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.STRING.TEXT
 msgid  "~Return address in envelope window"
 msgstr "~Atgalinis adresas voko lange"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___13.STRING.TEXT
+msgid  "Letter Signs"
+msgstr "Laiško ženklai"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.STRING.TEXT
 msgid  "S~ubject line"
 msgstr "T~ema"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___15.STRING.TEXT
+msgid  "Salu~tation"
+msgstr "S~veikinimas"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___16.STRING.TEXT
+msgid  "Fold ~marks"
+msgstr "Lankstymo ~žymės"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.STRING.TEXT
 msgid  "~Complimentary close"
@@ -118,6 +1626,10 @@ msgstr "~Puslapinė poraštė"
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.STRING.TEXT
 msgid  "~Use user data for return address"
 msgstr "Atgalinį a~dresą imti iš naudotojo duomenų"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___20.STRING.TEXT
+msgid  "~New sender address:"
+msgstr "Naujas ~siuntėjo adresas:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.STRING.TEXT
 msgid  "Use placeholders for ~recipient's address"
@@ -135,9 +1647,33 @@ msgstr "Į~terpti tik antrame ir tolesniuose puslapiuose"
 msgid  "~Include page number"
 msgstr "Įterpti puslapio ~numerį"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___25.STRING.TEXT
+msgid  "Letter Template"
+msgstr "Laiško šablonas"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___26.STRING.TEXT
+msgid  "Create a ~letter from this template"
+msgstr "Kurti laišką iš šio ~šablono"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___27.STRING.TEXT
+msgid  "Make ~manual changes to this letter template"
+msgstr "~Rankiniu būdu taisyti šį laiško šabloną"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.STRING.TEXT
 msgid  "Page design"
 msgstr "Puslapio projektas"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___31.STRING.TEXT
+msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
+msgstr "Šiuo vedikliu kuriamas laiško šablonas. Sukurtą šabloną vėliau galima naudoti rašant kitus laiškus."
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___32.STRING.TEXT
+msgid  "~Height:"
+msgstr "~Aukštis:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___33.STRING.TEXT
+msgid  "~Width:"
+msgstr "~Plotis:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.STRING.TEXT
 msgid  "S~pacing to left margin:"
@@ -151,6 +1687,18 @@ msgstr "Atstumas iki ~viršutinės paraštės"
 msgid  "Height:"
 msgstr "Aukštis:"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___37.STRING.TEXT
+msgid  "Width:"
+msgstr "Plotis:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___41.STRING.TEXT
+msgid  "Use a typical letter format for this country:"
+msgstr "Naudoti šioje šalyje įprastą laiškų formatą:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___42.STRING.TEXT
+msgid  "Sender's address"
+msgstr "Siuntėjo adresas"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.STRING.TEXT
 msgid  "Name:"
 msgstr "Vardas:"
@@ -163,9 +1711,21 @@ msgstr "Gatvė:"
 msgid  "ZIP code/State/City:"
 msgstr "Pašto indeksas, apskritis (rajonas), miestas:"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___46.STRING.TEXT
+msgid  "Recipient's address"
+msgstr "Gavėjo adresas"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.STRING.TEXT
 msgid  "Footer"
 msgstr "Puslapinė poraštė"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___48.STRING.TEXT
+msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
+msgstr "Šiuo vedikliu kuriamas laiško šablonas, naudojamas daugeliui laiškų su vienodomis nuostatomis ir maketu rašyti."
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___49.STRING.TEXT
+msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
+msgstr "Jei norite sukurti naują laišką iš šablono, atverkite šablono aplanką ir dukart spustelėkite šablono pavadinimą."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.STRING.TEXT
 msgid  "Template name:"
@@ -175,21 +1735,920 @@ msgstr "Šablono pavadinimas:"
 msgid  "Location and file name:"
 msgstr "Vieta ir failo vardas:"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___52.STRING.TEXT
+msgid  "How do you want to proceed?"
+msgstr "Ką norite daryti?"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___53.STRING.TEXT
+msgid  "Please choose the type of letter and page design"
+msgstr "Parinkite laiško tipą ir puslapio projektą"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___54.STRING.TEXT
+msgid  "Select the items to be printed"
+msgstr "Parinkite spausdinsimus elementus"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___55.STRING.TEXT
+msgid  "Specify items already on your letterhead paper"
+msgstr "Nurodykite elementus, kurie jau išspausdinti ant naudojamo laiškų popieriaus"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___56.STRING.TEXT
+msgid  "Specify the sender and recipient information"
+msgstr "Nurodykite siuntėjo ir gavėjo informaciją"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___57.STRING.TEXT
+msgid  "Fill in the information you would like in the footer"
+msgstr "Įveskite puslapinės poraštės tekstą"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___58.STRING.TEXT
+msgid  "Please specify last settings"
+msgstr "Nurodykite galutines nuostatas"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___1.STRING.TEXT
+msgid  "To Whom it May Concern"
+msgstr "Tiems, kuriuos tai liečia"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___2.STRING.TEXT
+msgid  "Dear Sir or Madam"
+msgstr "Gerbiamas pone, gerbiama ponia"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___3.STRING.TEXT
+msgid  "Hello"
+msgstr "Sveiki"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___1.STRING.TEXT
 msgid  "Sincerely"
 msgstr "Pagarbiai,"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___2.STRING.TEXT
+msgid  "Best regards"
+msgstr "Su linkėjimais,"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___3.STRING.TEXT
+msgid  "Cheers"
+msgstr "Sėkmės,"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___2.STRING.TEXT
+msgid  "Letterhead layout"
+msgstr "Laiško popieriaus maketas"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___3.STRING.TEXT
+msgid  "Printed items"
+msgstr "Išspausdinti elementai"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___4.STRING.TEXT
+msgid  "Recipient and sender"
+msgstr "Gavėjas ir siuntėjas"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.STRING.TEXT
 msgid  "Name and location"
 msgstr "Vardas ir vieta"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___1.STRING.TEXT
+msgid  "Fax Wizard"
+msgstr "Faksimilės vediklis"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___3.STRING.TEXT
+msgid  "~Business Fax"
+msgstr "~Tarnybinė faksimilė"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___4.STRING.TEXT
+msgid  "~Personal Fax"
+msgstr "~Asmeninė faksimilė"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___7.STRING.TEXT
+msgid  "S~alutation"
+msgstr "S~veikinimas"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___11.STRING.TEXT
 msgid  "~New return address"
 msgstr "~Naujas atgalinis adresas"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___12.STRING.TEXT
+msgid  "My Fax Template"
+msgstr "Mano faksimilės šablonas"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___13.STRING.TEXT
+msgid  "Create a ~fax from this template"
+msgstr "Kurti ~faksimilę iš šio šablono"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___14.STRING.TEXT
+msgid  "Make ~manual changes to this fax template"
+msgstr "~Rankiniu būdu taisyti šį faksimilės šabloną"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___17.STRING.TEXT
+msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
+msgstr "Šiuo vedikliu kuriamas faksimilės šablonas. Sukurtą šabloną galima naudoti kaskart kuriant faksimilę."
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___23.STRING.TEXT
+msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
+msgstr "Šiuo vedikliu kuriamas faksimilės šablonas, naudojamas daugeliui faksimilių su vienodomis nuostatomis ir maketu kurti."
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___24.STRING.TEXT
+msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
+msgstr "Jei norite sukurti naują faksimilę iš šablono, atverkite šablono aplanką ir dukart spustelėkite šablono pavadinimą."
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___25.STRING.TEXT
+msgid  "Template Name:"
+msgstr "Šablono pavadinimas:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___28.STRING.TEXT
+msgid  "Choose the type of fax and a page design"
+msgstr "Pasirinkite faksimilės tipą ir puslapio projektą"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___29.STRING.TEXT
+msgid  "Select items to include in the fax template"
+msgstr "Pasirinkite faksimilės šablono elementus"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___30.STRING.TEXT
+msgid  "Specify sender and recipient information"
+msgstr "Nurodykite siuntėjo ir gavėjo informaciją"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___31.STRING.TEXT
+msgid  "Enter text for the footer"
+msgstr "Įveskite puslapinės poraštės tekstą"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___32.STRING.TEXT
 msgid  "Choose a name and save the template"
 msgstr "Parinkite pavadinimą ir įrašykite šabloną"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___35.STRING.TEXT
+msgid  "~Date"
+msgstr "~Data"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___36.STRING.TEXT
+msgid  "~Type of message"
+msgstr "Pranešimo ~tipas"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___37.STRING.TEXT
+msgid  "Fax Number:"
+msgstr "Fakso numeris:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___1.STRING.TEXT
+msgid  "Important Information!"
+msgstr "Svarbi informacija!"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___2.STRING.TEXT
+msgid  "For your information"
+msgstr "Jūsų žiniai"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___3.STRING.TEXT
+msgid  "News!"
+msgstr "Naujienos"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___1.STRING.TEXT
+msgid  "To whom it may concern,"
+msgstr "Tiems, kuriuos tai liečia"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___2.STRING.TEXT
+msgid  "Dear Sir or Madam,"
+msgstr "Gerbiamas pone, gerbiama ponia"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___3.STRING.TEXT
+msgid  "Hello,"
+msgstr "Sveiki"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___4.STRING.TEXT
+msgid  "Hi,"
+msgstr "Labas"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___2.STRING.TEXT
+msgid  "Yours faithfully"
+msgstr "Pagarbiai,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___3.STRING.TEXT
+msgid  "Regards"
+msgstr "Su linkėjimais,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___4.STRING.TEXT
+msgid  "Love"
+msgstr "Sėkmės,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___2.STRING.TEXT
+msgid  "Items to include"
+msgstr "Naudotini elementai"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___3.STRING.TEXT
+msgid  "Sender and Recipient"
+msgstr "Siuntėjas ir gavėjas"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__1.STRING.TEXT
+msgid  "Web Wizard"
+msgstr "Tinklalapio vediklis"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__2.STRING.TEXT
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr "Šis vediklis palengvina dokumentų publikavimą internete.\n\nVediklis konvertuoja dokumentus į interneto naršyklėms suprantamą formatą. Be to, sukuriamas turinys, iš kurio dokumentai lengvai atveriami saitais. Naudojantis vedikliu taip pat galima pakeisti tinklalapio projektą ir maketą.\n\nPublikuotus dokumentus lengva nuolat atnaujinti, bet kada galima pridėti naujus ar pašalinti esamus dokumentus."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__4.STRING.TEXT
+msgid  "~Delete"
+msgstr "~Šalinti"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__5.STRING.TEXT
+msgid  "Introduction"
+msgstr "Įžanga"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__6.STRING.TEXT
+msgid  "Select the documents you want to publish"
+msgstr "Parinkite norimus publikuoti dokumentus"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__8.STRING.TEXT
+msgid  "Document information "
+msgstr "Dokumento informacija"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__9.STRING.TEXT
+msgid  "~Title:"
+msgstr "~Antraštė:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__10.STRING.TEXT
+msgid  "~Summary: "
+msgstr "~Santrauka:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__11.STRING.TEXT
+msgid  "Au~thor:"
+msgstr "Au~torius:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__12.STRING.TEXT
+msgid  "~Export to file format:"
+msgstr "~Eksportuoti į šį formatą:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__13.STRING.TEXT
+msgid  "Enter general information for your web site"
+msgstr "Nurodykite bendrąją tinklalapio informaciją"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__16.STRING.TEXT
+msgid  "Description:"
+msgstr "Aprašas:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__18.STRING.TEXT
+msgid  "Created:"
+msgstr "Sukurta:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__20.STRING.TEXT
+msgid  "E-mail:"
+msgstr "El. paštas:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__21.STRING.TEXT
+msgid  "Copyright notice:"
+msgstr "Autorių teisės:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__22.STRING.TEXT
+msgid  "Modified:"
+msgstr "Pakeista:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__24.STRING.TEXT
+msgid  "~Preview"
+msgstr "~Peržiūra"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__25.STRING.TEXT
+msgid  "Where do you want to publish your web site?"
+msgstr "Kur norite publikuoti tinklalapius?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__26.STRING.TEXT
+msgid  "Publish the new web site:"
+msgstr "Tinklalapius publikuoti:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__27.STRING.TEXT
+msgid  "To a ~local folder"
+msgstr "~Vietiniame aplanke"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__28.STRING.TEXT
+msgid  "..."
+msgstr "..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__29.STRING.TEXT
+msgid  "To a ~web server via FTP"
+msgstr "~Interneto serveryje per FTP"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__31.STRING.TEXT
+msgid  "~Configure..."
+msgstr "Sąran~ka..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__32.STRING.TEXT
+msgid  "To a ZIP ~archive"
+msgstr "~ZIP pake"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__34.STRING.TEXT
+msgid  "~Save settings (recommended)"
+msgstr "Į~rašyti nuostatas (rekomenduojama)"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__35.STRING.TEXT
+msgid  "Save ~as:"
+msgstr "Įrašyti ~taip:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__36.STRING.TEXT
+msgid  "~Choose settings for the Web Wizard"
+msgstr "Parinkite ~tinklalapio vediklio nuostatas"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__37.STRING.TEXT
+msgid  "Web site content "
+msgstr "Tinklalapio turinys"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__38.STRING.TEXT
+msgid  "~Add..."
+msgstr "~Pridėti..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__39.STRING.TEXT
+msgid  "Remo~ve"
+msgstr "~Pašalinti"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__40.STRING.TEXT
+msgid  "Choose a layout for the table of contents of your web site"
+msgstr "Parinkite tinklalapio turinio maketą"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__41.STRING.TEXT
+msgid  "Select a style for the table of contents page"
+msgstr "Parinkite turinio puslapio stilių"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__42.STRING.TEXT
+msgid  "~Style:"
+msgstr "~Stilius:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__48.STRING.TEXT
+msgid  "~Layouts: "
+msgstr "~Maketai:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__50.STRING.TEXT
+msgid  "~Description"
+msgstr "~Aprašas"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__51.STRING.TEXT
+msgid  "~Author"
+msgstr "~Autorius"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__52.STRING.TEXT
+msgid  "Cr~eation date"
+msgstr "Sukūrimo ~data"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__53.STRING.TEXT
+msgid  "~Last change date"
+msgstr "Paskutinio pa~keitimo data"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__54.STRING.TEXT
+msgid  "~File name"
+msgstr "~Failo vardas"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__55.STRING.TEXT
+msgid  "File forma~t"
+msgstr "~Failo formatas"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__56.STRING.TEXT
+msgid  "File format ~icon"
+msgstr "Failo formato ~ženklelis"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__57.STRING.TEXT
+msgid  "Number ~of pages"
+msgstr "Puslapių skaičius"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__58.STRING.TEXT
+msgid  "~Size in KB"
+msgstr "~Dydis (KB)"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__59.STRING.TEXT
+msgid  "Click 'Preview' to see a preview in your browser:"
+msgstr "Spustelėkite „Peržiūra“, jei norite peržiūrėti tinklalapį naršyklėje:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__60.STRING.TEXT
+msgid  "Customize the selected layout"
+msgstr "Pritaikyti pasirinktą maketą"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__61.STRING.TEXT
+msgid  "Include the following information for each document in the table of contents:"
+msgstr "Kiekvienam dokumentui turinyje priskirti šią informaciją:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__62.STRING.TEXT
+msgid  "Optimize the layout for screen resolution:"
+msgstr "Pritaikyti maketą prie ekrano skiriamosios gebos:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__64.STRING.TEXT
+msgid  "~640x480"
+msgstr "~640x480"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__65.STRING.TEXT
+msgid  "~800x600"
+msgstr "~800x600"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__66.STRING.TEXT
+msgid  "~1024x768"
+msgstr "~1024x768"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__70.STRING.TEXT
+msgid  "Generating Your Web Site"
+msgstr "Kuriamas tinklalapis"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__71.STRING.TEXT
+msgid  "%START - %END/%TOTAL"
+msgstr "%START - %END/%TOTAL"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__72.STRING.TEXT
+msgid  "myWebsite"
+msgstr "Mano tinklalapis"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__73.STRING.TEXT
+msgid  "FTP target '%FILENAME' is a file."
+msgstr "FTP adresas „%FILENAME“ žymi failą."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__74.STRING.TEXT
+msgid  "The local target '%FILENAME' is a file."
+msgstr "Vietinis adresas „%FILENAME“ žymi failą."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__75.STRING.TEXT
+msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
+msgstr "ZIP pakas „%FILENAME“ jau yra. Ar jį perrašyti? "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__76.STRING.TEXT
+msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "FTP aplankas „%FILENAME“ nėra tuščias. Kai kurie failai gali būti perrašyti. Ar tęsti?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__77.STRING.TEXT
+msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "Vietinis aplankas „%FILENAME“ nėra tuščias. Kai kurie failai gali būti perrašyti. Ar tęsti?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__78.STRING.TEXT
+msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
+msgstr "Tokiu pavadinimu jau yra įrašytos nuostatos. Ar pakeisti esamas nuostatas?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__79.STRING.TEXT
+msgid  "Exporting documents..."
+msgstr "Eksportuojami dokumentai..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__80.STRING.TEXT
+msgid  "Preparing export..."
+msgstr "Ruošiamasi eksportui..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__81.STRING.TEXT
+msgid  "Copying layout files..."
+msgstr "Kopijuojami maketo failai..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__82.STRING.TEXT
+msgid  "Preparing table of contents generation..."
+msgstr "Ruošiamasi generuoti turinį..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__83.STRING.TEXT
+msgid  "Generating table of contents..."
+msgstr "Kuriamas turinys..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__84.STRING.TEXT
+msgid  "Initializing..."
+msgstr "Inicializuojama..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__86.STRING.TEXT
+msgid  "Preparing to publish..."
+msgstr "Ruošiamasi publikuoti..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__87.STRING.TEXT
+msgid  "Publishing to local directory..."
+msgstr "Publikuojama vietiniame aplanke..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__88.STRING.TEXT
+msgid  "Publishing to FTP destination..."
+msgstr "Publikuojama FTP serveryje..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__89.STRING.TEXT
+msgid  "Publishing to a ZIP archive..."
+msgstr "Publikuojama ZIP pake..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___90.STRING.TEXT
+msgid  "Finishing..."
+msgstr "Baigiama..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___94.STRING.TEXT
+msgid  "Graphic files"
+msgstr "Grafikos failai"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___95.STRING.TEXT
+msgid  "All files"
+msgstr "Visi failai"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___96.STRING.TEXT
+msgid  "~ZIP archive files"
+msgstr "~ZIP pakai"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___98.STRING.TEXT
+msgid  "Background images"
+msgstr "Fono paveikslai"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___99.STRING.TEXT
+msgid  "Choose a background image: "
+msgstr "Parinkite fono paveikslą:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___100.STRING.TEXT
+msgid  "Icon sets"
+msgstr "Mygtukų rinkiniai"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___101.STRING.TEXT
+msgid  "Choose an icon set:"
+msgstr "Parinkite mygtukų rinkinį:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__102.STRING.TEXT
+msgid  "Other..."
+msgstr "Kita..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__103.STRING.TEXT
+msgid  "None"
+msgstr "Nieko"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__104.STRING.TEXT
+msgid  "Your web site was created successfully into: %FILENAME"
+msgstr "Tinklalapis sėkmingai sukurtas: %FILENAME"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__105.STRING.TEXT
+msgid  "One or more errors occurred when generating the web site."
+msgstr "Kuriant tinklalapį įvyko viena ar daugiau klaidų."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__106.STRING.TEXT
+msgid  "An error occurred while generating the table of contents page(s). "
+msgstr "Kuriant turinį įvyko klaida."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__107.STRING.TEXT
+msgid  "An error occurred while copying the layout files. "
+msgstr "Kopijuojant maketo failus įvyko klaida."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__108.STRING.TEXT
+msgid  "An error occurred while gathering document information for '%FILENAME'. "
+msgstr "Renkant „%FILENAME“ dokumento informaciją įvyko klaida."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__109.STRING.TEXT
+msgid  "An error occurred while exporting the document '%FILENAME'."
+msgstr "Eksportuojant dokumentą „%FILENAME“ įvyko klaida."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__110.STRING.TEXT
+msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr "Kuriant aplanką „%FILENAME“ eksportui įvyko klaida."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__111.STRING.TEXT
+#, fuzzy
+msgid  "A security error occurred while exporting the document '%FILENAME'."
+msgstr "Eksportuojant dokumentą „%FILENAME“ įvyko saugumo klaida."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__112.STRING.TEXT
+#, fuzzy
+msgid  "An input/output error occurred while exporting the document '%FILENAME'."
+msgstr "Eksportuojant dokumentą „%FILENAME“ įvyko įvesties/išvesties klaida."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__113.STRING.TEXT
+#, fuzzy
+msgid  "An error occurred while copying media files to the temporary directory."
+msgstr "Kopijuojant medijos failus į laikiną aplanką įvyko klaida."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__114.STRING.TEXT
+#, fuzzy
+msgid  "The web site could not be copied to the following destination: %URL"
+msgstr "Tinklalapio nepavyko nukopijuoti į šią vietą: %URL"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__115.STRING.TEXT
+#, fuzzy
+msgid  "An unexpected error occurred: %ERROR"
+msgstr "Įvyko netikėta klaida: %ERROR"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__116.STRING.TEXT
+#, fuzzy
+msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr "Tikrinant failą: „%FILENAME“ įvyko netikėta klaida."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__117.STRING.TEXT
+#, fuzzy
+msgid  "%FILENAME' is a folder."
+msgstr "„%FILENAME“ yra aplankas."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__118.STRING.TEXT
+#, fuzzy
+msgid  "Loading Web Wizard Settings..."
+msgstr "Įkeliamos tinklalapio vediklio nuostatos..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__119.STRING.TEXT
+#, fuzzy
+msgid  "An unexpected error occurred."
+msgstr "Įvyko netikėta klaida."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__120.STRING.TEXT
+#, fuzzy
+msgid  "Validating documents..."
+msgstr "Tikrinami dokumentai..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__121.STRING.TEXT
+#, fuzzy
+msgid  "My Archive"
+msgstr "Mano pakas"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__122.STRING.TEXT
+#, fuzzy
+msgid  "Introduction "
+msgstr "Įžanga"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__123.STRING.TEXT
+#, fuzzy
+msgid  "Documents "
+msgstr "Dokumentai"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__124.STRING.TEXT
+#, fuzzy
+msgid  "Main layout"
+msgstr "Pagrindinis maketas"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__125.STRING.TEXT
+#, fuzzy
+msgid  "Layout details"
+msgstr "Maketo detalės"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__126.STRING.TEXT
+#, fuzzy
+msgid  "Style"
+msgstr "Stilius"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__127.STRING.TEXT
+#, fuzzy
+msgid  "Web site information"
+msgstr "Tinklalapio informacija"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__128.STRING.TEXT
+#, fuzzy
+msgid  "Preview"
+msgstr "Peržiūra"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__130.STRING.TEXT
+#, fuzzy
+msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
+msgstr "Pasirinktos nuostatos bus pašalintos.\n\nAr tikrai pašalinti šias nuostatas?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__131.STRING.TEXT
+#, fuzzy
+msgid  "%NUMBER pages"
+msgstr "%NUMBER puslapiai(-ių)"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__132.STRING.TEXT
+#, fuzzy
+msgid  "%NUMBER slides"
+msgstr "%NUMBER skaidrės"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__133.STRING.TEXT
+#, fuzzy
+msgid  "Created: %DATE"
+msgstr "Sukurta: %DATE"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__134.STRING.TEXT
+#, fuzzy
+msgid  "Last modified: %DATE"
+msgstr "Pakeista: %DATE"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__135.STRING.TEXT
+#, fuzzy
+msgid  "Web Wizard Settings"
+msgstr "Tinklalapio vediklio nuostatos"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__136.STRING.TEXT
+#, fuzzy
+msgid  "Background image:"
+msgstr "Fono paveikslas:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__137.STRING.TEXT
+#, fuzzy
+msgid  "Icon set:"
+msgstr "Mygtukų rinkinys:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__138.STRING.TEXT
+#, fuzzy
+msgid  "The icon set is used for presentations in HTML format."
+msgstr "Mygtukų rinkiniai naudojami HTML formato pateiktyse."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__139.STRING.TEXT
+#, fuzzy
+msgid  "HTML Metadata"
+msgstr "HTML metaduomenys"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__140.STRING.TEXT
+#, fuzzy
+msgid  "Choose..."
+msgstr "Parinkti..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__142.STRING.TEXT
+#, fuzzy
+msgid  "<default>"
+msgstr "<numatytas>"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__143.STRING.TEXT
+#, fuzzy
+msgid  "Publishing via FTP Proxy is not supported."
+msgstr "Publikavimas per įgaliotąjį FTP serverį negalimas."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__144.STRING.TEXT
+#, fuzzy
+msgid  "<no background image>"
+msgstr "<be fono paveikslo>"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__145.STRING.TEXT
+#, fuzzy
+msgid  "<no icon set>"
+msgstr "<be mygtukų rinkinio>"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__146.STRING.TEXT
+#, fuzzy
+msgid  "The FTP directory '%FILENAME' could not be created."
+msgstr "FTP aplanko „%FILENAME“ nepavyko sukurti."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__147.STRING.TEXT
+#, fuzzy
+msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr "FTP aplanko „%FILENAME“ nėra.\nAr sukurti jį dabar?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__148.STRING.TEXT
+#, fuzzy
+msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
+msgstr "Zip failo „%FILENAME“ nepavyko sukurti: aplankas tokiu vardu jau yra."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__149.STRING.TEXT
+#, fuzzy
+msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
+msgstr "Vietinio aplanko „%FILENAME“ nepavyko sukurti. \nPatikrinkite prieigos teises."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__150.STRING.TEXT
+#, fuzzy
+msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr "Vietinio aplanko „%FILENAME“ nėra. \nAr sukurti jį dabar?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__151.STRING.TEXT
+#, fuzzy
+msgid  "Size: %NUMBERKB"
+msgstr "Dydis: %NUMBERKB"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__152.STRING.TEXT
+#, fuzzy
+msgid  "File not found. Would you like to specify a new file location?"
+msgstr "Failas nerastas. Ar norite nurodyti kitą failo vietą?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__0.STRING.TEXT
+#, fuzzy
+msgid  "FTP Connection"
+msgstr "FTP ryšys"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__1.STRING.TEXT
+#, fuzzy
+msgid  "~User name:"
+msgstr "~Naudotojo vardas:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__2.STRING.TEXT
+#, fuzzy
+msgid  "~Password:"
+msgstr "~Slaptažodis:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__3.STRING.TEXT
+#, fuzzy
+msgid  "Connect"
+msgstr "Sujungti"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__4.STRING.TEXT
+#, fuzzy
+msgid  "1. Enter FTP connection information."
+msgstr "1. Nurodykite FTP ryšio informaciją."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__5.STRING.TEXT
+#, fuzzy
+msgid  "~Server name or IP address:"
+msgstr "~Serverio vardas arba IP adresas:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__6.STRING.TEXT
+#, fuzzy
+msgid  "2. Connect to the server."
+msgstr "2. Prisijunkite prie serverio."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__7.STRING.TEXT
+#, fuzzy
+msgid  "3. ~Choose a remote directory (optional)."
+msgstr "3. ~Parinkite nuotolinį aplanką (nebūtina)."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__9.STRING.TEXT
+#, fuzzy
+msgid  "Connection status is unknown"
+msgstr "Ryšio būsena nežinoma"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__10.STRING.TEXT
+#, fuzzy
+msgid  "Connection was established successfully"
+msgstr "Ryšys sėkmingai užmegztas"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__11.STRING.TEXT
+#, fuzzy
+msgid  "Username or password is wrong"
+msgstr "Neteisingas abonento vardas arba slaptažodis"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__12.STRING.TEXT
+#, fuzzy
+msgid  "Could not resolve server name"
+msgstr "Nepavyko atpažinti serverio vardo"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__13.STRING.TEXT
+#, fuzzy
+msgid  "You do not have sufficient user rights"
+msgstr "Nepakanka naudotojo teisių"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__14.STRING.TEXT
+#, fuzzy
+msgid  "Cannot connect to server"
+msgstr "Nepavyko prisijungti prie serverio"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__15.STRING.TEXT
+#, fuzzy
+msgid  "Unexpected error"
+msgstr "Netikėta klaida"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__16.STRING.TEXT
+#, fuzzy
+msgid  "FTP publishing directory"
+msgstr "FTP publikavimo aplankas"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__17.STRING.TEXT
+#, fuzzy
+msgid  "This is not an FTP folder"
+msgstr "Tai ne FTP aplankas"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__18.STRING.TEXT
+#, fuzzy
+msgid  "Connecting..."
+msgstr "Jungiamasi..."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__1.STRING.TEXT
+#, fuzzy
+msgid  "Agenda Wizard"
+msgstr "Darbotvarkės vediklis"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__2.STRING.TEXT
+#, fuzzy
+msgid  "Make ~manual changes to this agenda template"
+msgstr "~Rankiniu būdu taisyti šį darbotvarkės šabloną"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__6.STRING.TEXT
+#, fuzzy
+msgid  "Please choose the page design for the agenda"
+msgstr "Parinkite darbotvarkės puslapio projektą"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__7.STRING.TEXT
+#, fuzzy
+msgid  "Please select the headings you wish to include in your agenda template"
+msgstr "Parinkite į darbotvarkės šabloną norimas įtraukti antraštes"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__8.STRING.TEXT
+#, fuzzy
+msgid  "Please enter general information for the event"
+msgstr "Nurodykite bendrąją įvykio informaciją"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__9.STRING.TEXT
+#, fuzzy
+msgid  "Please specify items for the agenda"
+msgstr "Nurodykite darbotvarkės elementus"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__10.STRING.TEXT
+#, fuzzy
+msgid  "Please select the names you wish to include in your agenda template"
+msgstr "Parinkite darbotvarkės šablone norimus naudoti pavadinimus"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__12.STRING.TEXT
+#, fuzzy
+msgid  "Include form for recording minutes"
+msgstr "Įtraukti formą minučių apskaitai"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__13.STRING.TEXT
+#, fuzzy
+msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
+msgstr "Šiuo vedikliu kuriamas darbotvarkės šablonas. Sukurtą šabloną galima naudoti kaskart kuriant darbotvarkę."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__14.STRING.TEXT
+#, fuzzy
+msgid  "Time:"
+msgstr "Laikas:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___16.STRING.TEXT
+#, fuzzy
+msgid  "Location:"
+msgstr "Vieta:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__17.STRING.TEXT
+#, fuzzy
+msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
+msgstr "Tuščiuose laukuose bus rezervuotos vietos. Jas vėliau galėsite pakeisti tekstu."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__19.STRING.TEXT
+#, fuzzy
+msgid  "Create an ~agenda from this template"
+msgstr "Kurti ~darbotvarkę iš šio šablono"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__20.STRING.TEXT
+#, fuzzy
+msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
+msgstr "Jei norite sukurti naują darbotvarkę iš šablono, atverkite šablono aplanką ir dukart spustelėkite šablono pavadinimą."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__21.STRING.TEXT
+#, fuzzy
+msgid  "Agenda item"
+msgstr "Darbotvarkės elementai"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__22.STRING.TEXT
+#, fuzzy
+msgid  "Responsible"
+msgstr "Kas atsakingas"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__23.STRING.TEXT
+#, fuzzy
+msgid  "Duration"
+msgstr "Trukmė"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.STRING.TEXT
 #, fuzzy
@@ -206,11 +2665,6 @@ msgstr "Pirmininkas"
 msgid  "Minute keeper"
 msgstr "Laiko apskaitininkas"
 
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.STRING.TEXT
-#, fuzzy
-msgid  "Moderator"
-msgstr "Moderatorius"
-
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.STRING.TEXT
 #, fuzzy
 msgid  "Attendees"
@@ -226,35 +2680,473 @@ msgstr "Stebėtojai"
 msgid  "Facility personnel"
 msgstr "Aptarnaujantis personalas"
 
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.STRING.TEXT
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__31.STRING.TEXT
 #, fuzzy
-msgid  "Type of meeting"
-msgstr "Susitikimo tipas"
-
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.STRING.TEXT
-#, fuzzy
-msgid  "Please read"
-msgstr "Perskaityti"
+msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
+msgstr "Darbotvarkės šablone žmonių vardams bus rezervuotos vietos. Kuriant darbotvarkę iš šablono vietoj rezervuotų vietų galima įrašyti reikiamus vardus."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.STRING.TEXT
 #, fuzzy
 msgid  "Please bring"
 msgstr "Atsinešti"
 
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.STRING.TEXT
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__36.STRING.TEXT
 #, fuzzy
-msgid  "Notes"
-msgstr "Pastabos"
+msgid  "The agenda template will include placeholders for the selected items."
+msgstr "Darbotvarkės šablone parinktiems elementams bus rezervuotos vietos."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__39.STRING.TEXT
+#, fuzzy
+msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
+msgstr "Šiuo vedikliu kuriamas darbotvarkės šablonas, naudojamas daugeliui darbotvarkių su vienodomis nuostatomis ir maketu kurti."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__40.STRING.TEXT
+#, fuzzy
+msgid  "Page design:"
+msgstr "Puslapio projektas:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__41.STRING.TEXT
+#, fuzzy
+msgid  "myAgendaTemplate.stw"
+msgstr "manoDarbotvarkėsŠablonas.stw"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__42.STRING.TEXT
+#, fuzzy
+msgid  "My Agenda Template"
+msgstr "Mano darbotvarkės šablonas"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__43.STRING.TEXT
+#, fuzzy
+msgid  "An unexpected error occurred while saving the agenda template."
+msgstr "Įrašant darbotvarkės šabloną įvyko netikėta klaida."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__44.STRING.TEXT
+#, fuzzy
+msgid  "Name"
+msgstr "Pavadinimas"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__45.STRING.TEXT
+#, fuzzy
+msgid  "Date"
+msgstr "Data"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__46.STRING.TEXT
+#, fuzzy
+msgid  "Time"
+msgstr "Laikas"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___47.STRING.TEXT
+#, fuzzy
+msgid  "Location"
+msgstr "Vieta"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__48.STRING.TEXT
+#, fuzzy
+msgid  "Click to replace this text"
+msgstr "Spustelėjus rašyti tekstą"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__51.STRING.TEXT
+#, fuzzy
+msgid  "General information"
+msgstr "Bendroji informacija"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__52.STRING.TEXT
+#, fuzzy
+msgid  "Headings to include"
+msgstr "Naudotinos antraštės"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__53.STRING.TEXT
+#, fuzzy
+msgid  "Names"
+msgstr "Vardai"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__54.STRING.TEXT
+#, fuzzy
+msgid  "Agenda items"
+msgstr "Darbotvarkės elementai"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__56.STRING.TEXT
+#, fuzzy
+msgid  "An unexpected error occurred while opening the agenda template."
+msgstr "Atveriant darbotvarkės šabloną įvyko netikėta klaida."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__68.STRING.TEXT
+#, fuzzy
+msgid  "Insert"
+msgstr "Įterpti"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__69.STRING.TEXT
+#, fuzzy
+msgid  "Remove"
+msgstr "Šalinti"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__70.STRING.TEXT
+#, fuzzy
+msgid  "Move up"
+msgstr "Pakelti"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__71.STRING.TEXT
+#, fuzzy
+msgid  "Move down"
+msgstr "Nuleisti"
+
+#: importwizard/importwi.src#SHELPBUTTON.STRING.TEXT
+msgid  "~Help"
+msgstr "~Žinynas"
+
+#: importwizard/importwi.src#SCANCELBUTTON.STRING.TEXT
+msgid  "~Cancel"
+msgstr "~Atsisakyti"
+
+#: importwizard/importwi.src#SBACKBUTTON.STRING.TEXT
+msgid  "<< ~Back"
+msgstr "<< ~Atgal"
+
+#: importwizard/importwi.src#SNEXTBUTTON.STRING.TEXT
+msgid  "Ne~xt >>"
+msgstr "~Toliau >>"
+
+#: importwizard/importwi.src#SBEGINBUTTON.STRING.TEXT
+msgid  "~Convert"
+msgstr "~Konvertuoti"
+
+#: importwizard/importwi.src#SCLOSEBUTTON.STRING.TEXT
+msgid  "~Close"
+msgstr "~Užverti"
+
+#: importwizard/importwi.src#SWELCOMETEXTLABEL1.STRING.TEXT
+msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
+msgstr "Šiuo vedikliu senojo „%PRODUCTNAME“ bei „Microsoft Office“ formatų dokumentai konvertuojami į naująjį „OpenDocument“ formatą."
+
+#: importwizard/importwi.src#SWELCOMETEXTLABEL2.STRING.TEXT
+msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
+msgstr "Pastaba: konvertuojant „Microsoft“ formato dokumentus, juose esančios VBA makrokomandos nustoja veikusios."
+
+#: importwizard/importwi.src#SWELCOMETEXTLABEL3.STRING.TEXT
+msgid  "Select the document type for conversion:"
+msgstr "Parinkite konvertuojamų dokumentų tipą:"
+
+#: importwizard/importwi.src#SMSTEMPLATECHECKBOX_1_.STRING.TEXT
+msgid  "Word templates"
+msgstr "„Word“ šablonai"
+
+#: importwizard/importwi.src#SMSTEMPLATECHECKBOX_2_.STRING.TEXT
+msgid  "Excel templates"
+msgstr "„Excel“ šablonai"
+
+#: importwizard/importwi.src#SMSTEMPLATECHECKBOX_3_.STRING.TEXT
+msgid  "PowerPoint templates"
+msgstr "„PowerPoint“ šablonai"
+
+#: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_1_.STRING.TEXT
+msgid  "Word documents"
+msgstr "„Word“ dokumentai"
+
+#: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_2_.STRING.TEXT
+msgid  "Excel documents"
+msgstr "„Excel“ dokumentai"
+
+#: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_3_.STRING.TEXT
+msgid  "PowerPoint documents"
+msgstr "„PowerPoint“ dokumentai"
+
+#: importwizard/importwi.src#SSEARCHINSUBDIR.STRING.TEXT
+msgid  "Including subdirectories"
+msgstr "Drauge su poaplankiais"
+
+#: importwizard/importwi.src#SMSCONTAINERNAME.STRING.TEXT
+msgid  "Microsoft Office"
+msgstr "„Microsoft Office“"
+
+#: importwizard/importwi.src#SSUMMARYHEADER.STRING.TEXT
+msgid  "Summary:"
+msgstr "Santrauka:"
+
+#: importwizard/importwi.src#STEXTIMPORTLABEL.STRING.TEXT
+msgid  "Import from:"
+msgstr "Importuoti iš:"
+
+#: importwizard/importwi.src#STEXTEXPORTLABEL.STRING.TEXT
+msgid  "Save to:"
+msgstr "Įrašyti į:"
+
+#: importwizard/importwi.src#SGROUPNAMEDEFAULT.STRING.TEXT
+msgid  "Imported_Templates"
+msgstr "Importuoti_šablonai"
+
+#: importwizard/importwi.src#SPROGRESSDESC1.STRING.TEXT
+msgid  "Progress: "
+msgstr "Eiga: "
+
+#: importwizard/importwi.src#SPROGRESSONEDOC.STRING.TEXT
+msgid  "Document"
+msgstr "Dokumentas"
+
+#: importwizard/importwi.src#SPROGRESSMOREDOCS.STRING.TEXT
+msgid  "Documents"
+msgstr "Dokumentai"
+
+#: importwizard/importwi.src#SPROGRESSMORETEMPLATES.STRING.TEXT
+msgid  "Templates"
+msgstr "Šablonai"
+
+#: importwizard/importwi.src#SNODIRCREATION.STRING.TEXT
+msgid  "The '%1' directory cannot be created: "
+msgstr "Aplanko „%1“ negalima sukurti: "
+
+#: importwizard/importwi.src#SMSGDIRNOTTHERE.STRING.TEXT
+msgid  "The '%1' directory does not exist."
+msgstr "Aplanko „%1“ nėra."
+
+#: importwizard/importwi.src#SQUERYFORNEWCREATION.STRING.TEXT
+msgid  "Do you want to create it now?"
+msgstr "Ar sukurti jį dabar?"
+
+#: importwizard/importwi.src#SFILEEXISTS.STRING.TEXT
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Failas „<1>“ jau yra.<CR>Ar jį pakeisti?"
+
+#: importwizard/importwi.src#SMOREPATHSERROR3.STRING.TEXT
+msgid  "Directories do not exist"
+msgstr "Aplankų nėra"
+
+#: importwizard/importwi.src#SOVERWRITEALLFILES.STRING.TEXT
+msgid  "Do you want to overwrite documents without being asked?"
+msgstr "Ar perrašyti dokumentus be įspėjimo?"
+
+#: importwizard/importwi.src#SREEDITMACRO.STRING.TEXT
+msgid  "Document macro has to be revised."
+msgstr "Dokumento makrokomanda turi būti peržiūrėta."
+
+#: importwizard/importwi.src#SCOULDNOTSAVEDOCUMENT.STRING.TEXT
+msgid  "Document '<1>' could not be saved."
+msgstr "Dokumento „<1>“ nepavyko įrašyti."
+
+#: importwizard/importwi.src#SCOULDNOTOPENDOCUMENT.STRING.TEXT
+msgid  "Document '<1>' could not be opened."
+msgstr "Dokumento „<1>“ nepavyko atverti."
+
+#: importwizard/importwi.src#SCONVERTERROR1.STRING.TEXT
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "Ar tikrai dabar norite nutraukti konvertavimą?"
+
+#: importwizard/importwi.src#SCONVERTERROR2.STRING.TEXT
+msgid  "Cancel Wizard"
+msgstr "Atšaukti vediklį"
+
+#: importwizard/importwi.src#SRTERRORDESC.STRING.TEXT
+msgid  "An unexpected error has occurred in the wizard."
+msgstr "Netikėta vediklio klaida."
+
+#: importwizard/importwi.src#SRTERRORHEADER.STRING.TEXT
+msgid  "Error"
+msgstr "Klaida"
+
+#: importwizard/importwi.src#SPATHDIALOGMESSAGE.STRING.TEXT
+msgid  "Select a directory"
+msgstr "Parinkti aplanką"
+
+#: importwizard/importwi.src#SDIALOGTITLE.STRING.TEXT
+msgid  "Document Converter"
+msgstr "Dokumentų konvertavimas"
+
+#: importwizard/importwi.src#SPROGRESSPAGE1.STRING.TEXT
+msgid  "Progress"
+msgstr "Eiga"
+
+#: importwizard/importwi.src#SPROGRESSPAGE2.STRING.TEXT
+msgid  "Retrieving the relevant documents:"
+msgstr "Ieškoma dokumentų:"
+
+#: importwizard/importwi.src#SPROGRESSPAGE3.STRING.TEXT
+msgid  "Converting the documents"
+msgstr "Konvertuojami dokumentai"
+
+#: importwizard/importwi.src#SPROGRESSFOUND.STRING.TEXT
+msgid  "Found:"
+msgstr "Rasta:"
+
+#: importwizard/importwi.src#SPROGRESSPAGE5.STRING.TEXT
+msgid  "%1 found"
+msgstr "Rasta: %1"
+
+#: importwizard/importwi.src#SREADY.STRING.TEXT
+msgid  "Finished"
+msgstr "Baigta"
+
+#: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_1_.STRING.TEXT
+msgid  "Text templates"
+msgstr "Teksto šablonai"
+
+#: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_2_.STRING.TEXT
+msgid  "Spreadsheet templates"
+msgstr "Skaičiuoklės dokumentų šablonai"
+
+#: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_3_.STRING.TEXT
+msgid  "Drawing/presentation templates"
+msgstr "Grafikos dokumentų ir pateikčių šablonai"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_4_.STRING.TEXT
 #, fuzzy
 msgid  "Master documents"
 msgstr "Pagrindiniai dokumentai"
 
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_1_.STRING.TEXT
+msgid  "Text documents"
+msgstr "Teksto dokumentai"
+
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_2_.STRING.TEXT
+msgid  "Spreadsheets"
+msgstr "Skaičiuoklės dokumentai"
+
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_3_.STRING.TEXT
+msgid  "Drawing/presentation documents"
+msgstr "Grafikos dokumentai ir pateiktys"
+
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_4_.STRING.TEXT
+msgid  "Master documents/formulas"
+msgstr "Pagrindiniai ir matematiniai dokumentai"
+
+#: importwizard/importwi.src#SXMLHELPERAPPLICATIONS_2.STRING.TEXT
+msgid  "Formulas"
+msgstr "Matematiniai dokumentai"
+
+#: importwizard/importwi.src#SSOURCEDOCUMENTS.STRING.TEXT
+msgid  "Source documents"
+msgstr "Pradiniai dokumentai"
+
+#: importwizard/importwi.src#STARGETDOCUMENTS.STRING.TEXT
+msgid  "Target documents"
+msgstr "Paskirties dokumentai"
+
+#: importwizard/importwi.src#SCREATELOGFILE.STRING.TEXT
+msgid  "Create log file"
+msgstr "Sukurti žurnalo failą"
+
+#: importwizard/importwi.src#SLOGFILESUMMARY.STRING.TEXT
+msgid  "<COUNT> documents converted"
+msgstr "Konvertuota <COUNT> dokumentų"
+
+#: importwizard/importwi.src#SLOGFILEHELPTEXT.STRING.TEXT
+msgid  "A log file will be created in your work directory"
+msgstr "Žurnalo failas bus sukurtas darbiniame aplanke"
+
+#: importwizard/importwi.src#SSHOWLOGFILE.STRING.TEXT
+msgid  "Show log file"
+msgstr "Rodyti žurnalo failą"
+
+#: importwizard/importwi.src#SSUMINCLUSIVESUBDIR.STRING.TEXT
+msgid  "All subdirectories will be taken into account"
+msgstr "Bus konvertuoti dokumentai iš visų poaplankių"
+
+#: importwizard/importwi.src#SSUMSAVEDOKUMENTE.STRING.TEXT
+msgid  "These will be exported to the following directory:"
+msgstr "Bus eksportuota į šį aplanką:"
+
+#: importwizard/importwi.src#SSUMSOTEXTDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „%PRODUCTNAME“ teksto dokumentai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMSOTABLEDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „%PRODUCTNAME“ skaičiuoklės dokumentai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMSODRAWDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „%PRODUCTNAME“ grafikos ir pateikčių dokumentai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMSOMATHDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „%PRODUCTNAME“ matematiniai dokumentai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMSOTEXTTEMPLATES.STRING.TEXT
+msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „%PRODUCTNAME“ teksto šablonai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMSOTABLETEMPLATES.STRING.TEXT
+msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „%PRODUCTNAME“ lentelių šablonai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMSODRAWTEMPLATES.STRING.TEXT
+msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „%PRODUCTNAME“ grafikos ir pateikčių šablonai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMSOGLOBALDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „%PRODUCTNAME“ pagrindiniai dokumentai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMMSTEXTDOCUMENTS.STRING.TEXT
+msgid  "All Word documents contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „Word“ dokumentai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMMSTABLEDOCUMENTS.STRING.TEXT
+msgid  "All Excel documents contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „Excel“ dokumentai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMMSDRAWDOCUMENTS.STRING.TEXT
+msgid  "All PowerPoint documents contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „PowerPoint“ dokumentai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMMSTEXTTEMPLATES.STRING.TEXT
+msgid  "All Word templates contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „Word“ šablonai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMMSTABLETEMPLATES.STRING.TEXT
+msgid  "All Excel templates contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „Excel“ šablonai, esantys šiame aplanke:"
+
+#: importwizard/importwi.src#SSUMMSDRAWTEMPLATES.STRING.TEXT
+msgid  "All PowerPoint templates contained in the following directory will be imported:"
+msgstr "Bus importuoti visi „PowerPoint“ šablonai, esantys šiame aplanke:"
+
+#: schedule/schedule.src#DLGCALTITLE.STRING.TEXT
+msgid  "%PRODUCTNAME Calendar"
+msgstr "„%PRODUCTNAME“ kalendorius"
+
+#: schedule/schedule.src#DLGCALTITLEBACK.STRING.TEXT
+msgid  "Back"
+msgstr "Atgal"
+
 #: schedule/schedule.src#DLGCALTITLEOWNDATA.STRING.TEXT
 #, fuzzy
 msgid  "Personal Data"
 msgstr "Asmeniniai duomenys"
+
+#: schedule/schedule.src#DLGSCHDLTITLE.STRING.TEXT
+msgid  "Add Holidays to Calendar"
+msgstr "Papildyti kalendorių šventėmis"
+
+#: schedule/schedule.src#DLGOK.STRING.TEXT
+msgid  "Create"
+msgstr "Sukurti"
+
+#: schedule/schedule.src#DLGCANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr "Atsisakyti"
+
+#: schedule/schedule.src#DLGCALFRAMEOPTION.STRING.TEXT
+msgid  "Calendar"
+msgstr "Kalendorius"
+
+#: schedule/schedule.src#DLGCALOPTIONYEAR.STRING.TEXT
+msgid  "~Year Overview"
+msgstr "~Metų peržiūra"
+
+#: schedule/schedule.src#DLGCALOPTIONMONTH.STRING.TEXT
+msgid  "~Month"
+msgstr "~Mėnuo"
+
+#: schedule/schedule.src#DLGSCHDLDESCRIPTION.STRING.TEXT
+msgid  "Add holidays for"
+msgstr "Pridėti šventes"
+
+#: schedule/schedule.src#DLGSCHDLCOUNTRY.STRING.TEXT
+msgid  "USA"
+msgstr "JAV"
+
+#: schedule/schedule.src#DLGTIME.STRING.TEXT
+msgid  "Time Frame"
+msgstr "Laiko kadras"
 
 #: schedule/schedule.src#DLGYEAR.STRING.TEXT
 #, fuzzy
@@ -265,3 +3157,343 @@ msgstr "Metai"
 #, fuzzy
 msgid  "Month"
 msgstr "Mėnuo"
+
+#: schedule/schedule.src#DLGCALINSERT.STRING.TEXT
+msgid  "~Insert"
+msgstr "~Įterpti"
+
+#: schedule/schedule.src#DLGCALDELETE.STRING.TEXT
+msgid  "~Delete"
+msgstr "~Šalinti"
+
+#: schedule/schedule.src#DLGCALNEWEVENT.STRING.TEXT
+msgid  "New Event"
+msgstr "Naujas įvykis"
+
+#: schedule/schedule.src#DLGCALEVENT.STRING.TEXT
+msgid  "Event"
+msgstr "Įvykis"
+
+#: schedule/schedule.src#DLGCALEVENTONCE.STRING.TEXT
+msgid  "One-Time"
+msgstr "Vienu metu"
+
+#: schedule/schedule.src#DLGCALEVENTDAY.STRING.TEXT
+msgid  "Day"
+msgstr "Diena"
+
+#: schedule/schedule.src#DLGBITMAPFILE.STRING.TEXT
+msgid  "usa.bmp"
+msgstr "usa.bmp"
+
+#: schedule/schedule.src#DLGSTATE.STRING.TEXT
+msgid  "Public holidays"
+msgstr "Valstybinės šventės"
+
+#: schedule/schedule.src#DLGMONTH.STRING.TEXT
+msgid  "January"
+msgstr "Sausis"
+
+#: schedule/schedule.src#DLGMONTH_1.STRING.TEXT
+msgid  "February"
+msgstr "Vasaris"
+
+#: schedule/schedule.src#DLGMONTH_2.STRING.TEXT
+msgid  "March"
+msgstr "Kovas"
+
+#: schedule/schedule.src#DLGMONTH_3.STRING.TEXT
+msgid  "April"
+msgstr "Balandis"
+
+#: schedule/schedule.src#DLGMONTH_4.STRING.TEXT
+msgid  "May"
+msgstr "Gegužė"
+
+#: schedule/schedule.src#DLGMONTH_5.STRING.TEXT
+msgid  "June"
+msgstr "Birželis"
+
+#: schedule/schedule.src#DLGMONTH_6.STRING.TEXT
+msgid  "July"
+msgstr "Liepa"
+
+#: schedule/schedule.src#DLGMONTH_7.STRING.TEXT
+msgid  "August"
+msgstr "Rugpjūtis"
+
+#: schedule/schedule.src#DLGMONTH_8.STRING.TEXT
+msgid  "September"
+msgstr "Rugsėjis"
+
+#: schedule/schedule.src#DLGMONTH_9.STRING.TEXT
+msgid  "October"
+msgstr "Spalis"
+
+#: schedule/schedule.src#DLGMONTH_10.STRING.TEXT
+msgid  "November"
+msgstr "Lapkritis"
+
+#: schedule/schedule.src#DLGMONTH_11.STRING.TEXT
+msgid  "December"
+msgstr "Gruodis"
+
+#: schedule/schedule.src#MSGCALERRORTITLE.STRING.TEXT
+msgid  "Yearly / Monthly Calendar"
+msgstr "Kasmetinis arba kasmėnesinis kalendorius"
+
+#: schedule/schedule.src#MSGCALERROR.STRING.TEXT
+msgid  "An error occurred while creating the calendar."
+msgstr "Kuriant kalendorių įvyko klaida."
+
+#: schedule/schedule.src#MSGCALREMOVETITLE.STRING.TEXT
+msgid  "Delete event entries"
+msgstr "Šalinti įvykių įrašus"
+
+#: schedule/schedule.src#MSGCALREMOVE.STRING.TEXT
+msgid  "Delete the selected entries?"
+msgstr "Ar šalinti pasirinktus įrašus?"
+
+#: schedule/schedule.src#STLWORKDAY.STRING.TEXT
+msgid  "Workweek"
+msgstr "Darbo savaitė"
+
+#: schedule/schedule.src#STLWEEKEND.STRING.TEXT
+msgid  "Weekend"
+msgstr "Savaitgalis"
+
+#: schedule/schedule.src#SPROGRESS.STRING.TEXT
+msgid  "Progress:"
+msgstr "Eiga:"
+
+#: template/template.src#SAMPLES.STRING.TEXT
+msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
+msgstr "Norėdami naudingai pasinaudoti šiuo pavyzdžiu, sukurkite dokumentą iš šio šablono."
+
+#: template/template.src#SAMPLES___1.STRING.TEXT
+msgid  "Remarks"
+msgstr "Pastabos"
+
+#: template/template.src#STYLES.STRING.TEXT
+msgid  "Theme Selection"
+msgstr "Temos pasirinkimas"
+
+#: template/template.src#STYLES___1.STRING.TEXT
+msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
+msgstr "Įrašant dokumentą į iškarpinę įvyko klaida! Šio veiksmo atšaukti negalima."
+
+#: template/template.src#STYLES___2.STRING.TEXT
+msgid  "~Cancel"
+msgstr "~Atsisakyti"
+
+#: template/template.src#STYLES___3.STRING.TEXT
+msgid  "~OK"
+msgstr "~Gerai"
+
+#: template/template.src#AGENDADLGNAME.STRING.TEXT
+msgid  "Minutes Template"
+msgstr "Minučių šablonas"
+
+#: template/template.src#AGENDADLGNOCANCEL.STRING.TEXT
+msgid  "An option must be confirmed."
+msgstr "Parinktį būtina patvirtinti."
+
+#: template/template.src#AGENDADLGFRAME.STRING.TEXT
+msgid  "Minutes Type"
+msgstr "Minučių tipas"
+
+#: template/template.src#AGENDADLGBUTTON1.STRING.TEXT
+msgid  "Results Minutes"
+msgstr "Rodo minutes"
+
+#: template/template.src#AGENDADLGBUTTON2.STRING.TEXT
+msgid  "Evaluation Minutes"
+msgstr "Įvertinimo minutės"
+
+#: template/template.src#CORRESPONDENCENOTEXTMARK.STRING.TEXT
+msgid  "The bookmark 'Recipient' is missing."
+msgstr "Trūksta žymelės „Gavėjas“."
+
+#: template/template.src#CORRESPONDENCENOTEXTMARK_1.STRING.TEXT
+msgid  "Form letter fields can not be included."
+msgstr "Laiško blanko laukų įtraukti negalima."
+
+#: template/template.src#CORRESPONDENCEMSGERROR.STRING.TEXT
+msgid  "An error has occurred."
+msgstr "Klaida"
+
+#: template/template.src#CORRESPONDENCEDIALOG.STRING.TEXT
+msgid  "Addressee"
+msgstr "Adresatas"
+
+#: template/template.src#CORRESPONDENCEDIALOG_1.STRING.TEXT
+msgid  "One recipient"
+msgstr "Vienas gavėjas"
+
+#: template/template.src#CORRESPONDENCEDIALOG_2.STRING.TEXT
+msgid  "Several recipients (address database)"
+msgstr "Keletas gavėjų (adresų duomenų bazė)"
+
+#: template/template.src#CORRESPONDENCEDIALOG_3.STRING.TEXT
+msgid  "Use of This Template"
+msgstr "Naudoti šį šabloną"
+
+#: template/template.src#CORRESPONDENCEFIELDS.STRING.TEXT
+msgid  "Click placeholder and overwrite"
+msgstr "Spustelėkite rezervuotą vietą ir pakeiskite"
+
+#: template/template.src#CORRESPONDENCEFIELDS_1.STRING.TEXT
+msgid  "Company"
+msgstr "Įstaiga"
+
+#: template/template.src#CORRESPONDENCEFIELDS_2.STRING.TEXT
+msgid  "Department"
+msgstr "Skyrius"
+
+#: template/template.src#CORRESPONDENCEFIELDS_3.STRING.TEXT
+msgid  "First Name"
+msgstr "Vardas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_4.STRING.TEXT
+msgid  "Last Name"
+msgstr "Pavardė"
+
+#: template/template.src#CORRESPONDENCEFIELDS_5.STRING.TEXT
+msgid  "Street"
+msgstr "Gatvė"
+
+#: template/template.src#CORRESPONDENCEFIELDS_6.STRING.TEXT
+msgid  "Country"
+msgstr "Šalis"
+
+#: template/template.src#CORRESPONDENCEFIELDS_7.STRING.TEXT
+msgid  "ZIP/Postal Code"
+msgstr "Pašto kodas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_8.STRING.TEXT
+msgid  "City"
+msgstr "Miestas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_9.STRING.TEXT
+msgid  "Title"
+msgstr "Antraštė"
+
+#: template/template.src#CORRESPONDENCEFIELDS_10.STRING.TEXT
+msgid  "Position"
+msgstr "Padėtis"
+
+#: template/template.src#CORRESPONDENCEFIELDS_11.STRING.TEXT
+msgid  "Form of Address"
+msgstr "Adreso forma"
+
+#: template/template.src#CORRESPONDENCEFIELDS_12.STRING.TEXT
+msgid  "Initials"
+msgstr "Inicialai"
+
+#: template/template.src#CORRESPONDENCEFIELDS_13.STRING.TEXT
+msgid  "Salutation"
+msgstr "Pasveikinimas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_14.STRING.TEXT
+msgid  "Home Phone"
+msgstr "Namų telefonas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_15.STRING.TEXT
+msgid  "Work Phone"
+msgstr "Darbo telefonas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_16.STRING.TEXT
+msgid  "Fax"
+msgstr "Faksas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_17.STRING.TEXT
+msgid  "E-Mail"
+msgstr "El. paštas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_18.STRING.TEXT
+msgid  "URL"
+msgstr "URL adresas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_19.STRING.TEXT
+msgid  "Notes"
+msgstr "Pastabos"
+
+#: template/template.src#CORRESPONDENCEFIELDS_20.STRING.TEXT
+msgid  "Alt. Field 1"
+msgstr "1-as alternatyvus laukas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_21.STRING.TEXT
+msgid  "Alt. Field 2"
+msgstr "2-as alternatyvus laukas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_22.STRING.TEXT
+msgid  "Alt. Field 3"
+msgstr "3-as alternatyvus laukas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_23.STRING.TEXT
+msgid  "Alt. Field 4"
+msgstr "4-as alternatyvus laukas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_24.STRING.TEXT
+msgid  "ID"
+msgstr "ID"
+
+#: template/template.src#CORRESPONDENCEFIELDS_25.STRING.TEXT
+msgid  "State"
+msgstr "Apskritis, rajonas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_26.STRING.TEXT
+msgid  "Office Phone"
+msgstr "Raštinės telefonas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_27.STRING.TEXT
+msgid  "Pager"
+msgstr "Pranešimų gaviklis"
+
+#: template/template.src#CORRESPONDENCEFIELDS_28.STRING.TEXT
+msgid  "Mobile Phone"
+msgstr "Mobilusis telefonas"
+
+#: template/template.src#CORRESPONDENCEFIELDS_29.STRING.TEXT
+msgid  "Other Phone"
+msgstr "Kiti telefonai"
+
+#: template/template.src#CORRESPONDENCEFIELDS_30.STRING.TEXT
+msgid  "Calendar URL"
+msgstr "Kalendoriaus URL"
+
+#: template/template.src#CORRESPONDENCEFIELDS_31.STRING.TEXT
+msgid  "Invite"
+msgstr "Pakviesti"
+
+#: template/template.src#TEXTFIELD.STRING.TEXT
+msgid  "User data field is not defined!"
+msgstr "Neaprašytas naudotojo duomenų laukas!"
+
+#: template/template.src#NEWSLETTER.STRING.TEXT
+msgid  "General layout"
+msgstr "Įprastas maketas"
+
+#: template/template.src#NEWSLETTER___1.STRING.TEXT
+msgid  "Default layout"
+msgstr "Numatytas maketas"
+
+#: template/template.src#NEWSLETTER___2.STRING.TEXT
+msgid  "Commemorative publication layout"
+msgstr "Memorialinio leidimo maketas"
+
+#: template/template.src#NEWSLETTER___3.STRING.TEXT
+msgid  "Brochure layout"
+msgstr "Brošiūros maketas"
+
+#: template/template.src#NEWSLETTER___10.STRING.TEXT
+msgid  "Format"
+msgstr "Formatas"
+
+#: template/template.src#NEWSLETTER___11.STRING.TEXT
+msgid  "Single-sided"
+msgstr "Vienpusis"
+
+#: template/template.src#NEWSLETTER___12.STRING.TEXT
+msgid  "Double-sided"
+msgstr "Dvipusis"

@@ -63,10 +63,6 @@ msgstr "קטגוריה"
 msgid  "Function"
 msgstr "פעולה"
 
-#: customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#DEFINE.TEXT
-msgid  "Functions"
-msgstr "פונקציות"
-
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FIXEDLINE.TEXT
 msgid  "Shortcut keys"
 msgstr "מקשי קיצור"
@@ -85,7 +81,7 @@ msgstr "שמור הגדרות מקלדת"
 
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.STRING.TEXT
 msgid  "Configuration (*.cfg)"
-msgstr "הגדרות"
+msgstr "תצורה (*. Cfg)"
 
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.STRING.TEXT
 msgid  "My Macros"
@@ -111,14 +107,6 @@ msgstr "התאמה אישית"
 msgid  "Menus"
 msgstr "תפריטים"
 
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_KEYBOARD.PAGEITEM.TEXT
-msgid  "Keyboard"
-msgstr "מקלדת"
-
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_TOOLBARS.PAGEITEM.TEXT
-msgid  "Toolbars"
-msgstr "סרגלי כלים"
-
 #: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_EVENTS.PAGEITEM.TEXT
 msgid  "Events"
 msgstr "ארועים"
@@ -126,14 +114,6 @@ msgstr "ארועים"
 #: customize/cfg.src#TEXT_MENU.#DEFINE.TEXT
 msgid  "Menu"
 msgstr "תפריט"
-
-#: customize/cfg.src#TEXT_BEGIN_GROUP.#DEFINE.TEXT
-msgid  "Begin a Group"
-msgstr "התחלת קבוצה"
-
-#: customize/cfg.src#TEXT_RENAME.#DEFINE.TEXT
-msgid  "Rename..."
-msgstr "מתן שם אחר...‏"
 
 #: customize/cfg.src#TEXT_DELETE.#DEFINE.TEXT
 msgid  "Delete..."
@@ -143,10 +123,6 @@ msgstr "מחיקה...‏"
 msgid  "Delete"
 msgstr "מחיקה"
 
-#: customize/cfg.src#TEXT_MOVE.#DEFINE.TEXT
-msgid  "Move..."
-msgstr "הזזה...‏"
-
 #: customize/cfg.src#TEXT_DEFAULT_STYLE.#DEFINE.TEXT
 msgid  "Restore Default Settings"
 msgstr "לחזור להגדרות ברירת המחדל"
@@ -154,14 +130,6 @@ msgstr "לחזור להגדרות ברירת המחדל"
 #: customize/cfg.src#TEXT_DEFAULT_COMMAND.#DEFINE.TEXT
 msgid  "Restore Default Command"
 msgstr "לחזור לפקודת ברירת המחדל"
-
-#: customize/cfg.src#TEXT_TEXT_ONLY.#DEFINE.TEXT
-msgid  "Text only"
-msgstr "טקסט בלבד"
-
-#: customize/cfg.src#TEXT_TOOLBAR_NAME.#DEFINE.TEXT
-msgid  "Toolbar Name"
-msgstr "שם סרגל הכלים"
 
 #: customize/cfg.src#TEXT_SAVE_IN.#DEFINE.TEXT
 msgid  "Save In"
@@ -171,45 +139,13 @@ msgstr "שמירה ב"
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr "תפריטי ‏‪%PRODUCTNAME %MODULENAME‏"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "חדש...‏"
-
 #: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_SEPARATOR.FIXEDLINE.TEXT
 msgid  "Menu Content"
 msgstr "תוכן תפריט"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_ENTRIES.FIXEDTEXT.TEXT
-msgid  "Entries"
-msgstr "ערכים"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_ADD_COMMANDS.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "הוספה...‏"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_CHANGE_ENTRY.MENUBUTTON.TEXT
-msgid  "Modify"
-msgstr "שינוי"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Description"
-msgstr "תאור"
-
 #: customize/cfg.src#MODIFY_ENTRY.ID_ADD_SUBMENU.MENUITEM.TEXT
 msgid  "Add Submenu..."
 msgstr "הוספת תת תפריט...‏"
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_ONLY.MENUITEM.TEXT
-msgid  "Icons Only"
-msgstr "צלמים בלבד"
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_AND_TEXT.MENUITEM.TEXT
-msgid  "Icons & Text"
-msgstr "צלמים וטקסט"
-
-#: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_CHANGE_SYMBOL.MENUITEM.TEXT
-msgid  "Change Icon..."
-msgstr "החלפת צלמית...‏"
 
 #: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_RESET_SYMBOL.MENUITEM.TEXT
 msgid  "Reset Icon"
@@ -218,10 +154,6 @@ msgstr "איפוס צלמית"
 #: customize/cfg.src#RID_SVXSTR_NEW_MENU.STRING.TEXT
 msgid  "New Menu %n"
 msgstr "תפריט חדש %n‏"
-
-#: customize/cfg.src#RID_SVXSTR_NEW_TOOLBAR.STRING.TEXT
-msgid  "New Toolbar %n"
-msgstr "סרגל כלים חדש %n‏"
 
 #: customize/cfg.src#RID_SVXSTR_MOVE_MENU.STRING.TEXT
 msgid  "Move Menu"
@@ -250,22 +182,6 @@ msgstr "שם התפריט"
 #: customize/cfg.src#MD_MENU_ORGANISER.TXT_MENU.FIXEDTEXT.TEXT
 msgid  "Menu position"
 msgstr "מיקום התפריט"
-
-#: customize/cfg.src#MD_NEW_TOOLBAR.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "שם"
-
-#: customize/cfg.src#MD_ICONSELECTOR.MODALDIALOG.TEXT
-msgid  "Change Icon"
-msgstr "שינוי צלמית"
-
-#: customize/cfg.src#MD_ICONSELECTOR.FT_SYMBOLS.FIXEDTEXT.TEXT
-msgid  "Icons"
-msgstr "צלמים"
-
-#: customize/cfg.src#MD_ICONSELECTOR.BTN_IMPORT.PUSHBUTTON.TEXT
-msgid  "Import..."
-msgstr "יבוא...‏"
 
 #: customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FIXEDTEXT.TEXT
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
@@ -302,14 +218,6 @@ msgstr "כן לכל"
 #: customize/cfg.src#RID_SVXSTR_PRODUCTNAME_TOOLBARS.STRING.TEXT
 msgid  "%PRODUCTNAME %MODULENAME Toolbars"
 msgstr "סרגלי כלים ‏‪%PRODUCTNAME %MODULENAME‏"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR.STRING.TEXT
-msgid  "Toolbar"
-msgstr "סרגל כלים"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR_CONTENT.STRING.TEXT
-msgid  "Toolbar Content"
-msgstr "תוכן סרגל הכלים"
 
 #: customize/cfg.src#RID_SVXSTR_COMMANDS.STRING.TEXT
 msgid  "Commands"
@@ -351,10 +259,6 @@ msgstr "שם חדש"
 msgid  "Rename Menu"
 msgstr "שם חדש לתפריט"
 
-#: customize/cfg.src#RID_SVXSTR_RENAME_TOOLBAR.STRING.TEXT
-msgid  "Rename Toolbar"
-msgstr "שם חדש לסרגל כלים"
-
 #: customize/cfg.src#BUTTON_STR_UP.STRING.TEXT
 msgid  "Up"
 msgstr "למעלה"
@@ -362,10 +266,6 @@ msgstr "למעלה"
 #: customize/cfg.src#BUTTON_STR_DOWN.STRING.TEXT
 msgid  "Down"
 msgstr "למטה"
-
-#: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "אירוע"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -390,10 +290,6 @@ msgstr "הסרת מאקרו"
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.TABPAGE.TEXT
 msgid  "Assign action"
 msgstr "השמת פעולה"
-
-#: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "אירוע"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -422,10 +318,6 @@ msgstr "השמת רכיב"
 #: customize/macropg.src#RID_SVXDLG_ASSIGNCOMPONENT.FT_METHOD.FIXEDTEXT.TEXT
 msgid  "Component method name"
 msgstr "שם פעולת הרכיב"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_STARTAPP.STRING.TEXT
-msgid  "Start Application"
-msgstr "הפעלת היישום"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEAPP.STRING.TEXT
 msgid  "Close Application"
@@ -495,10 +387,6 @@ msgstr "מיזוג מכתבים אחידים החל"
 msgid  "Merging of form fields finished"
 msgstr "מיזוג מכתבים אחידים הסתיים"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_PAGECOUNTCHANGE.STRING.TEXT
-msgid  "Changing the page count"
-msgstr "שינוי ספירת העמודים"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_SUBCOMPONENT_OPENED.STRING.TEXT
 msgid  "Loaded a sub component"
 msgstr "טעינת רכיב משנה"
@@ -515,33 +403,13 @@ msgstr "מילוי פרמטרים"
 msgid  "Execute action"
 msgstr "ביצוע פעולה"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
-msgstr "אחרי עדכון"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
 msgstr "לפני עדכון"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
-msgstr "לפני פעולת רשומה"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
-msgstr "אחרי פעולת רשומה"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
 msgstr "אישור מחיקה"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
-msgstr "ארעה שגיאה"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
-msgstr "תוך כדי התאמה"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
@@ -554,14 +422,6 @@ msgstr "בעת איבוד מיקוד"
 #: customize/macropg.src#RID_SVXSTR_EVENT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
 msgstr "מעמד הפריט השתנה"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
-msgstr "מקש נלחץ"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYUP.STRING.TEXT
-msgid  "Key released"
-msgstr "מקש שוחרר"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADED.STRING.TEXT
 msgid  "When loading"
@@ -599,14 +459,6 @@ msgstr "כפתור העכבר נלחץ"
 msgid  "Mouse button released"
 msgstr "כפתור העכבר שוחרר"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
-msgstr "לפני שינוי רשומה"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONED.STRING.TEXT
-msgid  "After record change"
-msgstr "אחרי שינוי רשומה"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_RESETTED.STRING.TEXT
 msgid  "After resetting"
 msgstr "אחרי איפוס"
@@ -619,14 +471,6 @@ msgstr "לפני איפוס"
 msgid  "Approve action"
 msgstr "אישור פעולה"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_SUBMITTED.STRING.TEXT
-msgid  "Before submitting"
-msgstr "לפני הגשה"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
-msgstr "הטקסט שונה"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
 msgstr "לפני פריקה"
@@ -634,10 +478,6 @@ msgstr "לפני פריקה"
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADED.STRING.TEXT
 msgid  "When unloading"
 msgstr "בעת פריקה"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_CHANGED.STRING.TEXT
-msgid  "Changed"
-msgstr "שונה"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CREATEDOC.STRING.TEXT
 msgid  "Document created"
@@ -739,18 +579,6 @@ msgstr "סיווג"
 msgid  "Commands"
 msgstr "פקודות"
 
-#: customize/selector.src#STR_SELECTOR_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "הוספה"
-
-#: customize/selector.src#STR_SELECTOR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "הפעלה"
-
-#: customize/selector.src#STR_SELECTOR_CLOSE.STRING.TEXT
-msgid  "Close"
-msgstr "סגירה"
-
 #: customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.STRING.TEXT
 msgid  "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customize dialog."
 msgstr "כדי להוסיף פקודה לסרגל כלים, יש לבחור סיווג ואחר כך לבחור פקודה. אחר כך יש לגרור את הפקודה אל המקום הרצוי בסרגל הכלים. אפשרות אחרת היא לגרור את הפקודה אל רשימת ה'פקודות' שבחלונית סרגלי הכלים שבתיבת דו-שיח ה'התאמה'.‏"
@@ -771,17 +599,49 @@ msgstr "ספריה"
 msgid  "My Macros"
 msgstr "המאקרוים שלי"
 
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_COMMANDS.FIXEDTEXT.TEXT
-msgid  "Macro name"
-msgstr "שם המאקרו"
-
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.GRP_SELECTOR_DESCRIPTION.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "תאור"
-
 #: dialogs/about.src#RID_DEFAULTABOUT.MODALDIALOG.TEXT
 msgid  "About %FULLPRODUCTNAME"
 msgstr "אודות %PRODUCTNAME"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PUSHBUTTON.TEXT
+msgid  "License..."
+msgstr "רשיון..."
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT_VENDOR.STRING.TEXT
+msgid  "%OOOVENDOR"
+msgstr "%OOOVENDOR"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED.STRING.TEXT
+msgid  "This product was created by the OpenOffice community."
+msgstr "מסמך זה הוכן על ידי חברי משרדפתוח"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED_VENDOR.STRING.TEXT
+msgid  "This product was created by %OOOVENDOR, based on Apache OpenOffice."
+msgstr "מוצר זה הוכן על ידי %OOOVENDOR, בהתבסס על משרדפתוח אפאצ'י."
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_ACKNOWLEDGE.STRING.TEXT
+msgid  "The OpenOffice community acknowledges all contributing members, especially those mentioned at"
+msgstr "קהילת משרדפתוח מודה לחברים התורמים, במיוחד לאלו המוזכרים ב"
+
+#: dialogs/about.src#RID_CUI_README_DLG.MODALDIALOG.TEXT
+#, fuzzy
+msgid  "Readme, License and Notice"
+msgstr "קרא קובץ זה, רשיון והערה"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_READMEPAGE.PAGEITEM.TEXT
+#, fuzzy
+msgid  "Readme"
+msgstr "קרא קובץ זה"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_LICENSEPAGE.PAGEITEM.TEXT
+#, fuzzy
+msgid  "License"
+msgstr "רשיון"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_NOTICEPAGE.PAGEITEM.TEXT
+#, fuzzy
+msgid  "Notice"
+msgstr "הערה"
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.MODALDIALOG.TEXT
 msgid  "Special Characters"
@@ -804,68 +664,83 @@ msgid  "~Delete"
 msgstr "מחיקה"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Color Picker"
-msgstr ""
+msgstr "בורר צבע"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.PB_PICKER.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Pick a color from the document"
-msgstr ""
+msgstr "לבחור צבע מהמסמך"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_RGB.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "RGB"
-msgstr ""
+msgstr "RGB אדום ירוק כחול"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_RED.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Red"
-msgstr ""
+msgstr "~אדום"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_GREEN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Green"
-msgstr ""
+msgstr "~ירוק"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BLUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Blue"
-msgstr ""
+msgstr "~כחול"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HEX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Hex ~#"
-msgstr ""
+msgstr "בסיס 6~#"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_HSB.FIXEDLINE.TEXT
 msgid  "HSB"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "H~ue"
-msgstr ""
+msgstr "~גוון hue"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_SATURATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Saturation"
-msgstr ""
+msgstr "~רווית צבע"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BRIGHTNESS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bright~ness"
-msgstr ""
+msgstr "~בהירות"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_CMYK.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "CMYK"
-msgstr ""
+msgstr "CMYK כחול ציאן- מג'נטה סגול- צהוב - שחור"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_CYAN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Cyan"
-msgstr ""
+msgstr "~כחול"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_MAGENTA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Magenta"
-msgstr ""
+msgstr "~סגול מג'נטה"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_YELLOW.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Yellow"
-msgstr ""
+msgstr "~צהוב"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_KEY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Key"
-msgstr ""
+msgstr "~מפתח"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FIXEDTEXT.TEXT
 msgid  "Origi~nal"
@@ -927,10 +802,6 @@ msgstr "טקסט חלופי"
 msgid  "~Description"
 msgstr "~תאור"
 
-#: dialogs/dlgname.src#RID_SVXDLG_NAME.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "שם"
-
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FIXEDTEXT.TEXT
 msgid  "~Name"
 msgstr "שם"
@@ -946,10 +817,6 @@ msgstr "כותרת"
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FIXEDTEXT.TEXT
 msgid  "~Description"
 msgstr "~תאור"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.MODALDIALOG.TEXT
-msgid  "Record Search"
-msgstr "חיפוש רשומות"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FIXEDLINE.TEXT
 msgid  "Search for"
@@ -1015,10 +882,6 @@ msgstr "ביטוי עם תווים כלליים"
 msgid  "Regular expression"
 msgstr "ביטוי רגולרי"
 
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CHECKBOX.TEXT
-msgid  "Similarity Search"
-msgstr "חיפוש על בסיס דמיון"
-
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PUSHBUTTON.TEXT
 msgid  "..."
 msgstr "..."
@@ -1034,10 +897,6 @@ msgstr "נשמע כמו (יפנית)‏"
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FIXEDLINE.TEXT
 msgid  "State"
 msgstr "מחוז"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FIXEDTEXT.TEXT
-msgid  "Record :"
-msgstr "רשומה:‏"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PUSHBUTTON.TEXT
 msgid  "Search"
@@ -1111,18 +970,6 @@ msgstr "קבצים"
 msgid  "Type:"
 msgstr "סוג:‏"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FIXEDTEXT.TEXT
-msgid  "Location:"
-msgstr "מיקום:‏"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FIXEDTEXT.TEXT
-msgid  "Contents:"
-msgstr "תוכן:‏"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FIXEDTEXT.TEXT
-msgid  "Modified:"
-msgstr "עודכן:‏"
-
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FIXEDTEXT.TEXT
 msgid  "~File type"
 msgstr "סוג קובץ"
@@ -1143,14 +990,6 @@ msgstr "הוספת הכל"
 msgid  "Pr~eview"
 msgstr "תצוגה מקדימה"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PUSHBUTTON.TEXT
-msgid  "Maddin1"
-msgstr "Maddin1"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PUSHBUTTON.TEXT
-msgid  "Maddin2"
-msgstr "Maddin2"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.MODALDIALOG.TEXT
 msgid  "Enter Title"
 msgstr "הוספת כותרת"
@@ -1159,21 +998,9 @@ msgstr "הוספת כותרת"
 msgid  "Title"
 msgstr "כותרת"
 
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.MODALDIALOG.TEXT
-msgid  "Find"
-msgstr "חיפוש"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FIXEDLINE.TEXT
-msgid  "Directory"
-msgstr "מחיצה"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FIXEDLINE.TEXT
 msgid  "File type"
 msgstr "סוג קובץ"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.MODALDIALOG.TEXT
-msgid  "Apply"
-msgstr "החלה"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FIXEDLINE.TEXT
 msgid  "File"
@@ -1255,14 +1082,6 @@ msgstr "יצירת מראה בלוי"
 msgid  "Aging degree"
 msgstr "דרגת בליה"
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.MODALDIALOG.TEXT
-msgid  "Posterize"
-msgstr "יצירת פוסטר"
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FIXEDTEXT.TEXT
-msgid  "Poster colors"
-msgstr "צבעי פוסטר"
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.MODALDIALOG.TEXT
 msgid  "Relief"
 msgstr "הבלטה"
@@ -1311,10 +1130,6 @@ msgstr "הנג'ה"
 msgid  "Ha~nja"
 msgstr "הנג'ה"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_CONVERSION.FIXEDTEXT.TEXT
-msgid  "Conversion"
-msgstr "הסבה"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_HANGUL_ONLY.CHECKBOX.TEXT
 msgid  "Hangul ~only"
 msgstr "הנגול בלבד"
@@ -1326,10 +1141,6 @@ msgstr "הנג'ה בלבד"
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_REPLACE_BY_CHARACTER.CHECKBOX.TEXT
 msgid  "Replace b~y character"
 msgstr "החלפה בתו"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANGUL.STRING.TEXT
-msgid  "Hangul"
-msgstr "הנגול"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANJA.STRING.TEXT
 msgid  "Hanja"
@@ -1359,10 +1170,6 @@ msgstr "הצגת ערכים לפי סדר השימוש האחרון"
 msgid  "Replace all unique entries automatically"
 msgstr "החלפת פריטים יחודיים באופן אוטומטי"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "חדש...‏"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_EDIT.PUSHBUTTON.TEXT
 msgid  "Edit..."
 msgstr "עריכה...‏"
@@ -1371,53 +1178,21 @@ msgstr "עריכה...‏"
 msgid  "Delete"
 msgstr "מחיקה"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.MODALDIALOG.TEXT
-msgid  "New Dictionary"
-msgstr "מילון חדש"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FL_NEWDICT.FIXEDLINE.TEXT
-msgid  "Dictionary"
-msgstr "מילון"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 msgid  "~Name"
 msgstr "שם"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.MODALDIALOG.TEXT
-msgid  "Edit Custom Dictionary"
-msgstr "עריכת מילון מותאם אישית"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.STR_EDITHINT.STRING.TEXT
 msgid  "[Enter text here]"
 msgstr "[הוספת טקסט כאן]"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_BOOK.FIXEDTEXT.TEXT
-msgid  "Book"
-msgstr "ספר"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_ORIGINAL.FIXEDTEXT.TEXT
 msgid  "Original"
 msgstr "מקורי"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_SUGGESTIONS.FIXEDTEXT.TEXT
-msgid  "Suggestions (max. 8)"
-msgstr "הצעה (8 מירבי)‏"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_NEW.PUSHBUTTON.TEXT
-msgid  "New"
-msgstr "חדש"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CANCELBUTTON.TEXT
 msgid  "Close"
 msgstr "סגירה"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.MODALDIALOG.TEXT
-msgid  "Target in Document"
-msgstr "יעד במסמך"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_APPLY.PUSHBUTTON.TEXT
-msgid  "Apply"
-msgstr "החלה"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
@@ -1432,8 +1207,9 @@ msgid  "Couldn't open the document."
 msgstr "לא ניתן לפתוח את המסמך.‏"
 
 #: dialogs/hlmarkwn.src#STR_MARK_TREE.STRING.TEXT
+#, fuzzy
 msgid  "Mark Tree"
-msgstr ""
+msgstr "סמן עץ"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.TABPAGE.TEXT
 msgid  "Hyperlink"
@@ -1472,6 +1248,7 @@ msgid  "Anonymous ~user"
 msgstr "משתמש אנונימי"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_BROWSE.IMAGEBUTTON.TEXT
+#, fuzzy
 msgid  "WWW Browser"
 msgstr "WWW Browser"
 
@@ -1495,10 +1272,6 @@ msgstr "טופס"
 msgid  "Text"
 msgstr "טקסט"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Button"
-msgstr "כפתור"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FIXEDTEXT.TEXT
 msgid  "Te~xt"
 msgstr "טקסט"
@@ -1508,12 +1281,9 @@ msgid  "N~ame"
 msgstr "שם"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Events"
 msgstr "Events"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FIXEDLINE.TEXT
-msgid  "Mail & news"
-msgstr "דואר וחדשות"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_MAIL.RADIOBUTTON.TEXT
 msgid  "~E-mail"
@@ -1532,40 +1302,26 @@ msgid  "~Subject"
 msgstr "נושא"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_ADRESSBOOK.BUTTONIMAGE.TEXT
+#, fuzzy
 msgid  "Data Sources..."
 msgstr "Data Sources..."
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FIXEDLINE.TEXT
-msgid  "Document"
-msgstr "מסמך"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_PATH_DOC.FIXEDTEXT.TEXT
 msgid  "~Path"
 msgstr "נתיב"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Open File"
 msgstr "Open File"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_TARGET.FIXEDLINE.TEXT
-msgid  "Target in document"
-msgstr "יעד במסמך"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TARGET_DOC.FIXEDTEXT.TEXT
 msgid  "Targ~et"
 msgstr "יעד"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_URL.FIXEDTEXT.TEXT
-msgid  "URL"
-msgstr "URL"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FIXEDTEXT.TEXT
 msgid  "Test text"
 msgstr "טקסט בדיקה"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_NEWDOCUMENT.FIXEDLINE.TEXT
-msgid  "New document"
-msgstr "מסמך חדש"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.RB_EDITNOW.RADIOBUTTON.TEXT
 msgid  "Edit ~now"
@@ -1584,12 +1340,9 @@ msgid  "File ~type"
 msgstr "סוג קובץ"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Select Path"
 msgstr "Select Path"
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_APPLYBUT.STRING.TEXT
-msgid  "Apply"
-msgstr "החלה"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_CLOSEBUT.STRING.TEXT
 msgid  "Close"
@@ -1619,10 +1372,6 @@ msgstr "אינטרנט"
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
 msgstr "כאן ניתן ליצור קישור לדף אינטרנט, שרת ‏‪FTP‬‏ או שרת טלנט.‏"
 
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.STRING.TEXT
-msgid  "Mail & News"
-msgstr "דואר וחדשות"
-
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
 msgstr "כאן ניתן ליצור היפר קישור לכתובת דואר אלקטרוני או לקבוצת דיון.‏"
@@ -1630,10 +1379,6 @@ msgstr "כאן ניתן ליצור היפר קישור לכתובת דואר א�
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
 msgstr "כאן ניתן ליצור היפר־קישור למסמך קיים או למטרה בתוך המסמך."
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.STRING.TEXT
-msgid  "New Document"
-msgstr "מסמך חדש"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.STRING.TEXT
 msgid  "This is where you create a new document to which the new link points."
@@ -1691,10 +1436,6 @@ msgstr "לפני"
 msgid  "A~fter"
 msgstr "אחרי"
 
-#: dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "עמדה"
-
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FIXEDTEXT.TEXT
 msgid  "~Number"
 msgstr "~מספר"
@@ -1746,10 +1487,6 @@ msgstr "קבצים"
 #: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_TITLE.STRING.TEXT
 msgid  "Select Archives"
 msgstr "בחירת ארכיונים"
-
-#: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.STRING.TEXT
-msgid  "Archives"
-msgstr "ארכיונים"
 
 #: dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.STRING.TEXT
 msgid  "The file %1 already exists."
@@ -1835,10 +1572,6 @@ msgstr "מחבר"
 msgid  "~Text"
 msgstr "טקסט"
 
-#: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FIXEDLINE.TEXT
-msgid  "Contents"
-msgstr "תוכן עניינים"
-
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FIXEDTEXT.TEXT
 msgid  "~Insert"
 msgstr "הכנסה"
@@ -1899,17 +1632,9 @@ msgstr "יצירת ספריה"
 msgid  "Enter the name for the new library."
 msgstr "לציין שם לספריה החדשה.‏"
 
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWMACRO.STRING.TEXT
-msgid  "Create Macro"
-msgstr "יצירת מאקרו"
-
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_NEWMACRO.STRING.TEXT
 msgid  "Enter the name for the new macro."
 msgstr "לציין שם למאקרו החדש.‏"
-
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_RENAME.STRING.TEXT
-msgid  "Rename"
-msgstr "שינוי שם"
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_RENAME.STRING.TEXT
 msgid  "Enter the new name for the selected object."
@@ -1947,10 +1672,6 @@ msgstr " עצם בעל שם זהה כבר קיים."
 msgid  " You do not have permission to create this object."
 msgstr " אין די הרשאות ליצור עצם זה."
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILED_TITLE.STRING.TEXT
-msgid  "Error Creating Object"
-msgstr "ארעה שגיאה בעת יצירת העצם"
-
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED.STRING.TEXT
 msgid  "The object could not be renamed."
 msgstr "לא ניתן לשנות את שם העצם.‏"
@@ -1958,10 +1679,6 @@ msgstr "לא ניתן לשנות את שם העצם.‏"
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILEDPERM.STRING.TEXT
 msgid  " You do not have permission to rename this object."
 msgstr "אין די הרשאות לשנות את שם העצם.‏"
-
-#: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED_TITLE.STRING.TEXT
-msgid  "Error Renaming Object"
-msgstr "ארעה שגיאה בעת שינוי שם העצם"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME Error"
@@ -1999,10 +1716,6 @@ msgstr "ארעה שגיאה ב'מסגרת התסריטים' בעת ביצוע ת
 msgid  "Type:"
 msgstr "סוג:‏"
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_MESSAGE_LABEL.STRING.TEXT
-msgid  "Message:"
-msgstr "הודעה:‏"
-
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TABDIALOG.TEXT
 msgid  "Format Cells"
 msgstr "עיצוב תאים"
@@ -2014,14 +1727,6 @@ msgstr "גופן"
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
 msgid  "Font Effects"
 msgstr "אפקטים לגופנים"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-msgid  "Borders"
-msgstr "גבולות"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-msgid  "Background"
-msgstr "רקע"
 
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PUSHBUTTON.TEXT
 msgid  "Return"
@@ -2103,10 +1808,6 @@ msgstr "סגירה"
 msgid  "Resu~me"
 msgstr "להמשיך"
 
-#: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.STRING.TEXT
-msgid  "(no suggestions)"
-msgstr "(אין מילה מוצעת)"
-
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.STRING.TEXT
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
 msgstr "איות: $LANGUAGE ($LOCATION)"
@@ -2159,10 +1860,6 @@ msgstr "גופן"
 msgid  "Font Effects"
 msgstr "אפקטים לגופנים"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-msgid  "Position"
-msgstr "עמדה"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PAGEITEM.TEXT
 msgid  "Asian Layout"
 msgstr "פריסת המזרח הרחוק"
@@ -2183,21 +1880,9 @@ msgstr "זרימת טקסט"
 msgid  "Asian Typography"
 msgstr "טיפוגרפיית המזרח הרחוק"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
-msgstr "רקע"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.MODALDIALOG.TEXT
-msgid  "Attributes"
-msgstr "מאפיינים"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FIXEDTEXT.TEXT
 msgid  "~Options"
 msgstr "אפשרויות"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.MODALDIALOG.TEXT
-msgid  "Similarity Search"
-msgstr "חפוש על בסיס דמיון"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FIXEDTEXT.TEXT
 msgid  "~Exchange characters"
@@ -2223,17 +1908,9 @@ msgstr "הגדרות"
 msgid  "Paste Special"
 msgstr "הדבקה מיוחדת"
 
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FIXEDTEXT.TEXT
-msgid  "Source:"
-msgstr "מקור:‏"
-
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RADIOBUTTON.TEXT
 msgid  "~Insert as"
 msgstr "להכניס בתור"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RADIOBUTTON.TEXT
-msgid  "Link to"
-msgstr "קישור ל"
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CHECKBOX.TEXT
 msgid  "~As icon"
@@ -2246,10 +1923,6 @@ msgstr "צלמית אחרת...‏"
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.FL_CHOICE.FIXEDLINE.TEXT
 msgid  "Selection"
 msgstr "בחירה"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.STRING.TEXT
-msgid  "Object"
-msgstr "אובייקט"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.MODALDIALOG.TEXT
 msgid  "Edit Links"
@@ -2266,10 +1939,6 @@ msgstr "פריט:‏"
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE.FIXEDTEXT.TEXT
 msgid  "Type"
 msgstr "סוג"
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FIXEDTEXT.TEXT
-msgid  "Status"
-msgstr "מצב"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CANCELBUTTON.TEXT
 msgid  "~Close"
@@ -2423,10 +2092,6 @@ msgstr "מופסק"
 msgid  "Au~tomatic"
 msgstr "אוטומטי"
 
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FIXEDLINE.TEXT
-msgid  "Scroll bar"
-msgstr "פס גלילה"
-
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RADIOBUTTON.TEXT
 msgid  "On"
 msgstr "מופעל"
@@ -2434,10 +2099,6 @@ msgstr "מופעל"
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_OFF.RADIOBUTTON.TEXT
 msgid  "Off"
 msgstr "מופסק"
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FIXEDLINE.TEXT
-msgid  "Border"
-msgstr "גבול"
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FIXEDTEXT.TEXT
 msgid  "~Width"
@@ -2463,21 +2124,9 @@ msgstr "ריווח עד לתוכן"
 msgid  "Select File for Floating Frame"
 msgstr "בחירת קובץ למסגרת צפה"
 
-#: dialogs/svuidlg.src#STR_EDIT_APPLET.STRING.TEXT
-msgid  "Edit Applet"
-msgstr "עריכת יישומון"
-
-#: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.MODALDIALOG.TEXT
-msgid  "Record Number"
-msgstr "מספר רשומה"
-
 #: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FIXEDTEXT.TEXT
 msgid  "go to record"
 msgstr "מעבר לרשומה"
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MODALDIALOG.TEXT
-msgid  "Thesaurus"
-msgstr "מלים נרדפות"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_WORD.FIXEDTEXT.TEXT
 msgid  "~Current word"
@@ -2494,10 +2143,6 @@ msgstr "~חלופות"
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_REPL.FIXEDTEXT.TEXT
 msgid  "~Replace with"
 msgstr "~החלפה עם"
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.BTN_THES_OK.OKBUTTON.TEXT
-msgid  "Replace"
-msgstr "החלפה"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.STR_ERR_TEXTNOTFOUND.STRING.TEXT
 msgid  "No alternatives found."
@@ -2559,10 +2204,6 @@ msgstr "מאגר החיבורים הופעל"
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "מנהלי ההתקן המוכרים ב  ‏‪%PRODUCTNAME‏"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FIXEDTEXT.TEXT
-msgid  "Current driver:"
-msgstr "מנהל ההתקן הנוכחי:‏"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CHECKBOX.TEXT
 msgid  "Enable pooling for this driver"
 msgstr "איפשור השימוש במאגר עבור מנהל התקן זה"
@@ -2571,10 +2212,6 @@ msgstr "איפשור השימוש במאגר עבור מנהל התקן זה"
 msgid  "Timeout (seconds)"
 msgstr "אורך תפוגת הזמן (בשניות)‏"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.STRING.TEXT
-msgid  "Driver name"
-msgstr "שם מנהל ההתקן"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.STRING.TEXT
 msgid  "Pool"
 msgstr "מאגר"
@@ -2582,14 +2219,6 @@ msgstr "מאגר"
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.STRING.TEXT
 msgid  "Timeout"
 msgstr "פג הזמן"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.STRING.TEXT
-msgid  "Yes"
-msgstr "כן"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.STRING.TEXT
-msgid  "No"
-msgstr "לא"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.TABPAGE.TEXT
 msgid  "Registered databases"
@@ -2663,10 +2292,6 @@ msgstr "גופן"
 msgid  "Re~place with"
 msgstr "החלפה ב"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.TOOLBOXITEM.TEXT
-msgid  "Apply"
-msgstr "החלה"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.TOOLBOXITEM.TEXT
 msgid  "Delete"
 msgstr "מחיקה"
@@ -2687,10 +2312,6 @@ msgstr "רק גופנים לא-פרופורציונאלים"
 msgid  "~Size"
 msgstr "גודל"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.STRING.TEXT
-msgid  "Always"
-msgstr "תמיד"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.STRING.TEXT
 msgid  "Screen only"
 msgstr "מסך"
@@ -2699,17 +2320,9 @@ msgstr "מסך"
 msgid  "Font"
 msgstr "גופן"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.STRING.TEXT
-msgid  "Replace with"
-msgstr "החלפה ב"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.STRING.TEXT
 msgid  "Automatic"
 msgstr "אוטומטית"
-
-#: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FIXEDLINE.TEXT
-msgid  "Default text direction"
-msgstr "ברירת מחדל של כיוון הטקסט"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RADIOBUTTON.TEXT
 msgid  "~Left-to-right"
@@ -2754,10 +2367,6 @@ msgstr "אפשרות להנפשת טקסט"
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CHECKBOX.TEXT
 msgid  "~Help tips disappear after "
 msgstr "עצות העזרה נעלמות אחרי ‏"
-
-#: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FIXEDTEXT.TEXT
-msgid  "seconds"
-msgstr "שניות"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FIXEDLINE.TEXT
 msgid  "Options for high contrast appearance"
@@ -2831,10 +2440,6 @@ msgstr "ללא סימני מעבר שורה מוגדרים בידי המשתמש
 msgid  "Proxy"
 msgstr "פרוקסי"
 
-#: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TABPAGE.TEXT
-msgid  "Default Colors"
-msgstr "צבעי ברירת מחדל"
-
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FIXEDLINE.TEXT
 msgid  "Chart colors"
 msgstr "צבעי תרשים"
@@ -2851,14 +2456,6 @@ msgstr "~ברירת מחדל"
 msgid  "Data Series $(ROW)"
 msgstr "סדרת נתונים $(ROW)"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FIXEDLINE.TEXT
-msgid  "Color scheme"
-msgstr "סכימת צבעים"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FIXEDTEXT.TEXT
-msgid  "Scheme"
-msgstr "סכימה"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PUSHBUTTON.TEXT
 msgid  "Save..."
 msgstr "שמירה...‏"
@@ -2866,10 +2463,6 @@ msgstr "שמירה...‏"
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_DELETESCHEME.PUSHBUTTON.TEXT
 msgid  "Delete"
 msgstr "מחיקה"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FIXEDLINE.TEXT
-msgid  "Custom colors"
-msgstr "צבעים מותאמים אישית"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.STRING.TEXT
 msgid  "On"
@@ -2887,26 +2480,6 @@ msgstr "הגדרות צבע"
 msgid  "Preview"
 msgstr "תצוגה מקדימה"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FIXEDTEXT.TEXT
-msgid  "General"
-msgstr "כללי"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FIXEDTEXT.TEXT
-msgid  "Document background"
-msgstr "רקע מסמך"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CHECKBOX.TEXT
-msgid  "Text boundaries"
-msgstr "גבולות טקסט"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FIXEDTEXT.TEXT
-msgid  "Application background"
-msgstr "רקע יישום"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CHECKBOX.TEXT
-msgid  "Object boundaries"
-msgstr "גבולות עצם"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CHECKBOX.TEXT
 msgid  "Table boundaries"
 msgstr "גבולות טבלה"
@@ -2914,14 +2487,6 @@ msgstr "גבולות טבלה"
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_FONTCOLOR.FIXEDTEXT.TEXT
 msgid  "Font color"
 msgstr "צבע גופן"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CHECKBOX.TEXT
-msgid  "Unvisited links"
-msgstr "קישורים שעדיין לא ביקרו בהם"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CHECKBOX.TEXT
-msgid  "Visited links"
-msgstr "קישורים שביקרו בהם"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FIXEDTEXT.TEXT
 msgid  "AutoSpellcheck"
@@ -2955,10 +2520,6 @@ msgstr "מחוון הסקריפט"
 msgid  "Section boundaries"
 msgstr "גבולות מקטעים"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FIXEDTEXT.TEXT
-msgid  "Page and column breaks"
-msgstr "מעברי עמוד ועמודה"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FIXEDTEXT.TEXT
 msgid  "Direct cursor"
 msgstr "סמן ישיר"
@@ -2979,18 +2540,6 @@ msgstr "הבלטת הערות"
 msgid  "Keyword highlighting"
 msgstr "הבלטת מילות מפתח"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FIXEDTEXT.TEXT
-msgid  "Text"
-msgstr "טקסט"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FIXEDTEXT.TEXT
-msgid  "Spreadsheet"
-msgstr "גיליון אלקטרוני"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FIXEDTEXT.TEXT
-msgid  "Grid lines"
-msgstr "קווי רשת"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FIXEDTEXT.TEXT
 msgid  "Page breaks"
 msgstr "מעברי עמוד"
@@ -3003,21 +2552,9 @@ msgstr "מעברי עמוד ידניים"
 msgid  "Automatic page breaks"
 msgstr "מעברי עמוד אוטומטיים"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FIXEDTEXT.TEXT
-msgid  "Detective"
-msgstr "מצב גילוי"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FIXEDTEXT.TEXT
 msgid  "Detective error"
 msgstr "שגיאת מצב גילוי"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FIXEDTEXT.TEXT
-msgid  "References"
-msgstr "הפניות"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FIXEDTEXT.TEXT
-msgid  "Notes background"
-msgstr "רקע הערות"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FIXEDTEXT.TEXT
 msgid  "Drawing / Presentation"
@@ -3051,14 +2588,6 @@ msgstr "אופרטור"
 msgid  "Reserved expression"
 msgstr "ביטוי שמור"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FIXEDTEXT.TEXT
-msgid  "Error"
-msgstr "שגיאה"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FIXEDTEXT.TEXT
-msgid  "SQL Syntax Highlighting"
-msgstr "הבלטת תחביר ‏‪SQL"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FIXEDTEXT.TEXT
 msgid  "Keyword"
 msgstr "מילת מפתח"
@@ -3091,10 +2620,6 @@ msgstr "מחיקת סכימת הצבעים"
 msgid  "Save scheme"
 msgstr "שמירת הסכימה"
 
-#: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.STRING.TEXT
-msgid  "Name of color scheme"
-msgstr "שם סכימת הצבעים"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TABPAGE.TEXT
 msgid  "Complex Text Layout"
 msgstr "מתאר טקסט מורכב"
@@ -3119,10 +2644,6 @@ msgstr "הקלדה והחלפה"
 msgid  "Cursor control"
 msgstr "בקרת סמן"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FIXEDTEXT.TEXT
-msgid  "Movement"
-msgstr "תנועה"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RADIOBUTTON.TEXT
 msgid  "Lo~gical"
 msgstr "לוגי"
@@ -3139,25 +2660,9 @@ msgstr "אפשרויות כלליות"
 msgid  "~Numerals"
 msgstr "ספרות"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM1.STRINGLIST.ITEM
-msgid  "Arabic"
-msgstr "מערביות"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM2.STRINGLIST.ITEM
-msgid  "Hindi"
-msgstr "הינדיות"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM3.STRINGLIST.ITEM
-msgid  "System"
-msgstr "מערכת"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM4.STRINGLIST.ITEM
 msgid  "Context"
 msgstr "הקשר"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.MODALDIALOG.TEXT
-msgid  "New Dictionary"
-msgstr "מילון חדש"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 msgid  "~Name"
@@ -3170,14 +2675,6 @@ msgstr "שפה"
 #: options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CHECKBOX.TEXT
 msgid  "~Exception (-)"
 msgstr "חריג (-)‏"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FIXEDLINE.TEXT
-msgid  "Dictionary"
-msgstr "מילון"
-
-#: options/optdict.src#RID_SFXDLG_EDITDICT.MODALDIALOG.TEXT
-msgid  "Edit Custom Dictionary"
-msgstr "עריכת מילון מותאמת אישית"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FIXEDTEXT.TEXT
 msgid  "~Book"
@@ -3287,10 +2784,6 @@ msgstr "קובץ אקסל ל- %PRODUCTNAME Calc  או להפך"
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
 msgstr "קובץ PowerPoint ל- %PRODUCTNAME Impress  או להפך"
 
-#: options/optgdlg.src#OFA_TP_MISC.FL_HELP.FIXEDLINE.TEXT
-msgid  "Help"
-msgstr "עזרה"
-
 #: options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CHECKBOX.TEXT
 msgid  "~Tips"
 msgstr "עצות"
@@ -3310,10 +2803,6 @@ msgstr "איתחול סוכן העזרה"
 #: options/optgdlg.src#OFA_TP_MISC.FT_HELPFORMAT.FIXEDTEXT.TEXT
 msgid  "Help ~formatting"
 msgstr "עיצוב העזרה"
-
-#: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM1.STRINGLIST.ITEM
-msgid  "Default"
-msgstr "ברירת מחדל"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM2.STRINGLIST.ITEM
 msgid  "High Contrast #1"
@@ -3367,10 +2856,6 @@ msgstr "תיבות דו־שיח הדפסה"
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "שימוש בתיבות ~דו-שיח ‏של ‪%PRODUCTNAME"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FIXEDLINE.TEXT
-msgid  "User Interface"
-msgstr "ממשק משתמש"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FIXEDTEXT.TEXT
 msgid  "Sc~aling"
 msgstr "התאמת ~גודל"
@@ -3387,14 +2872,6 @@ msgstr "גודל צלם"
 msgid  "Automatic"
 msgstr "באופן אוטומטי"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM2.STRINGLIST.ITEM
-msgid  "Small"
-msgstr "קטן"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM3.STRINGLIST.ITEM
-msgid  "Large"
-msgstr "גדול"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM2.STRINGLIST.ITEM
 msgid  "Galaxy (default)"
 msgstr "Galaxy (ברירת מחדל)"
@@ -3402,10 +2879,6 @@ msgstr "Galaxy (ברירת מחדל)"
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM3.STRINGLIST.ITEM
 msgid  "High Contrast"
 msgstr "ניגודיות גבוהה"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM4.STRINGLIST.ITEM
-msgid  "Industrial"
-msgstr "תעשייתי"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM5.STRINGLIST.ITEM
 msgid  "Classic"
@@ -3422,10 +2895,6 @@ msgstr "איתחול גופן מסך"
 #: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_LABEL.FIXEDTEXT.TEXT
 msgid  "from"
 msgstr "מ"
-
-#: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FIXEDTEXT.TEXT
-msgid  "Pixels"
-msgstr "פיקסלים"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FIXEDLINE.TEXT
 msgid  "Menu"
@@ -3467,17 +2936,9 @@ msgstr "להשתמש במאיץ חומרה"
 msgid  "Use Anti-Aliasing"
 msgstr "שימוש בהחלקת גופנים"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FIXEDLINE.TEXT
-msgid  "Mouse"
-msgstr "עכבר"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FIXEDTEXT.TEXT
 msgid  "Mouse positioning"
 msgstr "מיקום העכבר"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM1.STRINGLIST.ITEM
-msgid  "Default button"
-msgstr "כפתור ברירת מחדל"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM2.STRINGLIST.ITEM
 msgid  "Dialog center"
@@ -3494,10 +2955,6 @@ msgstr "הכפתור האמצעי של העכבר"
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM1.STRINGLIST.ITEM
 msgid  "No function"
 msgstr "ללא תפקוד"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM2.STRINGLIST.ITEM
-msgid  "Automatic scrolling"
-msgstr "גלילה אוטומטית"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM3.STRINGLIST.ITEM
 msgid  "Paste clipboard"
@@ -3565,7 +3022,7 @@ msgstr "תמיכה מורחבת בשפות"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_ASIANSUPPORT.CHECKBOX.TEXT
 msgid  "Show UI elements for East Asia~n writings"
-msgstr ""
+msgstr "הצג אלמנטים של ממשק משתמש UI לכיתוב של שפה מזרח אסיתית"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_CTLSUPPORT.CHECKBOX.TEXT
 msgid  "Show UI elements for B~i-Directional writing"
@@ -3574,10 +3031,6 @@ msgstr ""
 #: options/optgdlg.src#RID_SVX_MSGBOX_LANGUAGE_RESTART.INFOBOX.MESSAGE
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
 msgstr "הגדרת השפה לממשק המשתמש עודכנה ותחול בהפעלה הבאה של ‏‪%PRODUCTNAME %PRODUCTVERSION‬‏.‏"
-
-#: options/optgenrl.src#RID_SFXPAGE_GENERAL.TABPAGE.TEXT
-msgid  "User Data"
-msgstr "פרטי המשתמש"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FIXEDTEXT.TEXT
 msgid  "~Company"
@@ -3638,6 +3091,10 @@ msgstr "עיר/מחוז/מיקוד"
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_QUERY_REG.STRING.TEXT
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
 msgstr "שימו לב: רחוב, מיקוד ועיר ישמשו ליצירת מפתח הרישום. לא תהיה אפשרות לשנות נתונים אלו עד לסיום הרישום. האם לשנות פרטי המשתמש עכשיו?‏"
+
+#: options/optgenrl.src#RID_SVXQB_CHANGEDATA.QUERYBOX.MESSAGE
+msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgstr ""
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FIXEDTEXT.TEXT
 msgid  "Size ~1"
@@ -3767,14 +3224,6 @@ msgstr "שרת פרוקסי"
 msgid  "None"
 msgstr "ללא"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM2.STRINGLIST.ITEM
-msgid  "System"
-msgstr "מערכת"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM3.STRINGLIST.ITEM
-msgid  "Manual"
-msgstr "ידני"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.STRING.TEXT
 msgid  "Use browser settings"
 msgstr "יש להשתמש בהגדרות הדפדפן"
@@ -3811,14 +3260,6 @@ msgstr "כניסה"
 msgid  "~No proxy for:"
 msgstr "ללא פרוקסי עבור:‏"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FIXEDTEXT.TEXT
-msgid  "Separator ;"
-msgstr "תו מפריד;‏"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FIXEDLINE.TEXT
-msgid  "DNS server"
-msgstr "שרת ‏‪DNS‏"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RADIOBUTTON.TEXT
 msgid  "~Automatic"
 msgstr "אוטומטי"
@@ -3835,10 +3276,6 @@ msgstr "אינו ערך חוקי לשדה זה. נא לציין ערך בין 0 
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
 msgstr "אינו ערך חוקי לשדה זה. נא לציין ערך בין 1 ל 255.‏"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TABPAGE.TEXT
-msgid  "Search"
-msgstr "חיפוש"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FIXEDLINE.TEXT
 msgid  "Search in"
 msgstr "חפש ב"
@@ -3853,7 +3290,7 @@ msgstr "סוג"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RADIOBUTTON.TEXT
 msgid  "~And"
-msgstr "ו"
+msgstr "~ו"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RADIOBUTTON.TEXT
 msgid  "~Or"
@@ -3879,14 +3316,6 @@ msgstr "מפריד"
 msgid  "~Case match"
 msgstr "חיפוש לפי אותיות קטנות/גדולות"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM2.STRINGLIST.ITEM
-msgid  "Upper"
-msgstr "אותיות גדולות"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM3.STRINGLIST.ITEM
-msgid  "Lower"
-msgstr "אותיות קטנות"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PUSHBUTTON.TEXT
 msgid  "N~ew"
 msgstr "חדש"
@@ -3906,10 +3335,6 @@ msgstr "~מחיקה"
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.MSG_MODIFY.STRING.TEXT
 msgid  "Do you want to accept the current modification?"
 msgstr "האם לקבל את השינוי הנוכחי?‏"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TABPAGE.TEXT
-msgid  "Security"
-msgstr "אבטחה"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FIXEDLINE.TEXT
 msgid  "Security options and warnings"
@@ -3947,10 +3372,6 @@ msgstr "סיסמאות מוגנים על ידי סיסמה ראשית. תתבק�
 msgid  "Master Password..."
 msgstr "סיסמה ראשית..."
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FIXEDLINE.TEXT
-msgid  "Macro security"
-msgstr "אבטחת מאקרויים"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FIXEDTEXT.TEXT
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
 msgstr "התאמת רמת האבטחה להפעלת מאקרויים ולציין זהותם של מפתחי מאקרויים אמינים.‏"
@@ -3962,6 +3383,10 @@ msgstr "אבטחת מאקרויים...‏"
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.STRING.TEXT
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
 msgstr "ביטול האפשרות לשמירת קבועה של סיסמאות, מוחק את רשימת הסימאות השמורות, ומאפסת את הסיסמא הראשית.האם אתה רוצה למחוק את רשימת הסיסמאות ולאפס את הסיסמא הראשית ?"
+
+#: options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ERRORBOX.MESSAGE
+msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
+msgstr "ערך לא חוקי!\n\nהערך המירבי לכניסה (פורט) הוא 65535.‏"
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FIXEDTEXT.TEXT
 msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
@@ -3982,10 +3407,6 @@ msgstr "תוכנית דוא\"ל"
 #: options/optinet2.src#RID_SVXPAGE_INET_MAIL.STR_DEFAULT_FILENAME.STRING.TEXT
 msgid  "All files (*.*)"
 msgstr "כל הקבצים (*.*)‏"
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TABPAGE.TEXT
-msgid  "Java"
-msgstr "ג'אווה"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FIXEDLINE.TEXT
 msgid  "Java options"
@@ -4010,10 +3431,6 @@ msgstr "פרמטרים...‏"
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_CLASSPATH.PUSHBUTTON.TEXT
 msgid  "~Class Path..."
 msgstr "CLASSPATH"
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.STRING.TEXT
-msgid  "Location: "
-msgstr "מיקום: ‏‪"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.STRING.TEXT
 msgid  "with accessibility support"
@@ -4051,17 +3468,9 @@ msgstr "השמה"
 msgid  "Assig~ned start parameters"
 msgstr "פרמטרי האיתחול"
 
-#: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FIXEDTEXT.TEXT
-msgid  "For example: -Dmyprop=c:\\program files\\java"
-msgstr "לדוגמה:  ‏‪-Dmyprop=c:\\program files\\java‏"
-
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove"
 msgstr "הסרה"
-
-#: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.MODALDIALOG.TEXT
-msgid  "Class Path"
-msgstr "CLASSPATH"
 
 #: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FIXEDTEXT.TEXT
 msgid  "A~ssigned folders and archives"
@@ -4075,9 +3484,21 @@ msgstr "הוספת ארכיב"
 msgid  "Add ~Folder"
 msgstr "הוספת תיקיה"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FIXEDLINE.TEXT
-msgid  "Treat as equal"
-msgstr "התייחסות כשווה"
+#: options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ERRORBOX.MESSAGE
+msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+msgstr "התיקיה שנבחרה אינה מכילה סביבת ג'אווה מתאימה.‏\nנא לבחור תיקיה אחרת.‏"
+
+#: options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ERRORBOX.MESSAGE
+msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
+msgstr "סביבת הג'אווה שנבחרה אינה הגרסא הנדרשת.‏\nנא לבחור תיקיה אחרת.‏"
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WARNINGBOX.MESSAGE
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
+msgstr "כדי שסביבת הרצה הג'אווה תתפקד כראוי, יש לאתחל מחדש את ‏‪%PRODUCTNAME‬‏.‏\nנא לאתחל את ‏‪%PRODUCTNAME‬‏ עכשיו.‏"
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WARNINGBOX.MESSAGE
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
+msgstr "כדי ששינויי ערכים יחולו, יש לאתחל מחדש את ‏‪%PRODUCTNAME‬‏.‏"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CHECKBOX.TEXT
 msgid  "~uppercase/lowercase"
@@ -4143,10 +3564,6 @@ msgstr "קי/קו (טקיסוטו/טקוסוטו)‏"
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "תנועות מאורכות (קא-/קאא)‏"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FIXEDLINE.TEXT
-msgid  "Ignore"
-msgstr "התעלמות"
-
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CHECKBOX.TEXT
 msgid  "Pu~nctuation characters"
 msgstr "סימני פיסוק"
@@ -4158,10 +3575,6 @@ msgstr "תווים 'לבנים'‏"
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_MIDDLE_DOT.CHECKBOX.TEXT
 msgid  "Midd~le dots"
 msgstr "נקודות אמצעיות"
-
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CHECKBOX.TEXT
-msgid  "Searching in Japanese"
-msgstr "חיפוש ביפנית"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.MODALDIALOG.TEXT
 msgid  "Edit Modules"
@@ -4202,10 +3615,6 @@ msgstr "איות"
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_HYPH.STRING.TEXT
 msgid  "Hyphenation"
 msgstr "מיקוף"
-
-#: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.STRING.TEXT
-msgid  "Thesaurus"
-msgstr "מלים נרדפות"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.STRING.TEXT
 msgid  "Grammar"
@@ -4259,21 +3668,9 @@ msgstr "אפשרויות"
 msgid  "Edi~t..."
 msgstr "ע~ריכה...‏"
 
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.STRING.TEXT
-msgid  "Check uppercase words"
-msgstr "בדיקת מילים עם אותיות גדולות"
-
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.STRING.TEXT
 msgid  "Check words with numbers "
 msgstr "בדיקת מילים עם מספרים"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.STRING.TEXT
-msgid  "Check capitalization"
-msgstr "בדיקת שימוש באותיות גדולות"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.STRING.TEXT
-msgid  "Check special regions"
-msgstr "בדיקת איזורים מיוחדים"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.STRING.TEXT
 msgid  "Check spelling as you type"
@@ -4319,10 +3716,6 @@ msgstr "עריכת אפשרויות"
 msgid  "Do you want to delete the dictionary?"
 msgstr "האם למחוק את המילון?‏"
 
-#: options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FIXEDLINE.TEXT
-msgid  "Undo"
-msgstr "ביטול פעולה"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FIXEDTEXT.TEXT
 msgid  "Number of steps"
 msgstr "מספר הצעדים"
@@ -4335,10 +3728,6 @@ msgstr "מטמון גרפי"
 msgid  "Use for %PRODUCTNAME"
 msgstr "לשימוש עבור ‏‪%PRODUCTNAME‏"
 
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FIXEDTEXT.TEXT
-msgid  "MB"
-msgstr "מגה-בייט"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FIXEDTEXT.TEXT
 msgid  "Memory per object"
 msgstr "הקצאת זכרון לכל עצם"
@@ -4346,10 +3735,6 @@ msgstr "הקצאת זכרון לכל עצם"
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME.FIXEDTEXT.TEXT
 msgid  "Remove from memory after"
 msgstr "מחק מהזכרון לאחר"
-
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FIXEDTEXT.TEXT
-msgid  "hh:mm"
-msgstr "hh:mm"
 
 #: options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FIXEDLINE.TEXT
 msgid  "Cache for inserted objects"
@@ -4399,6 +3784,10 @@ msgstr "ברירת מחדל"
 msgid  "Edit Paths: %1"
 msgstr "עריכת נתיבים: %1"
 
+#: options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ERRORBOX.MESSAGE
+msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
+msgstr "תיקיות התצורה והדוא\"ל חייבות להיות תיקיות נפרדות.נא לבחור נתיב תיקיה אחרת.‏"
+
 #: options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.STRING.TEXT
 msgid  "Configuration"
 msgstr "תצורה"
@@ -4406,22 +3795,6 @@ msgstr "תצורה"
 #: options/optpath.src#RID_SVXSTR_KEY_WORK_PATH.STRING.TEXT
 msgid  "My Documents"
 msgstr "המסמכים שלי"
-
-#: options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.STRING.TEXT
-msgid  "Graphics"
-msgstr "גרפיקה"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.STRING.TEXT
-msgid  "Icons"
-msgstr "צלמים"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.STRING.TEXT
-msgid  "Palettes"
-msgstr "לוחות צבעים"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.STRING.TEXT
-msgid  "Backups"
-msgstr "גיבויים"
 
 #: options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.STRING.TEXT
 msgid  "Modules"
@@ -4435,33 +3808,13 @@ msgstr "תבניות"
 msgid  "AutoText"
 msgstr "טקסט אוטומטי"
 
-#: options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.STRING.TEXT
-msgid  "Dictionaries"
-msgstr "מילונים"
-
-#: options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.STRING.TEXT
-msgid  "Help"
-msgstr "עזרה"
-
 #: options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.STRING.TEXT
 msgid  "Gallery"
 msgstr "גלריה"
 
-#: options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.STRING.TEXT
-msgid  "Message Storage"
-msgstr "איחסון הודעות"
-
 #: options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.STRING.TEXT
 msgid  "Temporary files"
 msgstr "קבצים זמניים"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.STRING.TEXT
-msgid  "Plug-ins"
-msgstr "תוספים"
-
-#: options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.STRING.TEXT
-msgid  "Folder Bookmarks"
-msgstr "סימניות לתיקיות"
 
 #: options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.STRING.TEXT
 msgid  "Filters"
@@ -4514,10 +3867,6 @@ msgstr "יש ליצור תמיד עותק גיבוי"
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_AUTOSAVE.CHECKBOX.TEXT
 msgid  "Save ~AutoRecovery information every"
 msgstr "שמירת מידע להתאוששות אוטומטית כל"
-
-#: options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FIXEDTEXT.TEXT
-msgid  "Minutes"
-msgstr "דקות"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CHECKBOX.TEXT
 msgid  "Save URLs relative to file system"
@@ -4575,10 +3924,6 @@ msgstr "מסמך ‏‪HTML‏"
 msgid  "Master document"
 msgstr "מסמך אב"
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.STRINGLIST.ITEM
-msgid  "Spreadsheet"
-msgstr "גיליון אלקטרוני"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.STRINGLIST.ITEM
 msgid  "Presentation"
 msgstr "מצגת"
@@ -4607,10 +3952,6 @@ msgstr "בדיקת איות"
 msgid  "~Edit..."
 msgstr "עריכה...‏"
 
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FIXEDLINE.TEXT
-msgid  "Dictionaries"
-msgstr "מילונים"
-
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CHECKBOX.TEXT
 msgid  "~Capital words"
 msgstr "מילים שיש בהן אותיות גדולות"
@@ -4622,10 +3963,6 @@ msgstr "מילים עם מספרים"
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_UPLOW.CHECKBOX.TEXT
 msgid  "~Case sensitive "
 msgstr "רגישות לאותיות גדולות וקטנות"
-
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FIXEDLINE.TEXT
-msgid  "Check"
-msgstr "בדיקה"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TABPAGE.TEXT
 msgid  "OnlineUpdate"
@@ -4783,14 +4120,6 @@ msgstr "כאן ניתן להגדיר הגדרות כלליות עבור גישה
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
 msgstr "כאן ניתן להגדיר הגדרות כלליות עבור פתיחה ושמירה של מסמכים בצורות קובץ חיצוניים. ניתן לקבוע את ההתנהגות של מאקרויים ועצמי ‏‪OLE‬‏ במסמכי אופיס של מיקרוסופט וגם להגדיר הגדרות עבור מסמכי אינטרנט (‏‪HTML‬‏).‏"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ITEMLIST.ITEM
-msgid  "%PRODUCTNAME"
-msgstr "%PRODUCTNAME"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ITEMLIST.ITEM
-msgid  "User Data"
-msgstr "פרטי המשתמש"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ITEMLIST.ITEM
 msgid  "General"
 msgstr "כללי"
@@ -4811,17 +4140,9 @@ msgstr "הדפסה"
 msgid  "Paths"
 msgstr "נתיבים"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ITEMLIST.ITEM
-msgid  "Colors"
-msgstr "צבעים"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ITEMLIST.ITEM
 msgid  "Fonts"
 msgstr "גופנים"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ITEMLIST.ITEM
-msgid  "Security"
-msgstr "אבטחה"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ITEMLIST.ITEM
 msgid  "Appearance"
@@ -4831,10 +4152,6 @@ msgstr "הופעה"
 msgid  "Accessibility"
 msgstr "נגישות"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ITEMLIST.ITEM
-msgid  "Java"
-msgstr "ג'אווה"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ITEMLIST.ITEM
 msgid  "Network Identity"
 msgstr "זהות הרשת"
@@ -4843,10 +4160,6 @@ msgstr "זהות הרשת"
 msgid  "Online Update"
 msgstr "עידכון מקוון"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ITEMLIST.ITEM
-msgid  "Language Settings"
-msgstr "הגדרות שפה"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ITEMLIST.ITEM
 msgid  "Languages"
 msgstr "שפות"
@@ -4854,10 +4167,6 @@ msgstr "שפות"
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SFXPAGE_LINGU.ITEMLIST.ITEM
 msgid  "Writing Aids"
 msgstr "עזרי כתיבה"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ITEMLIST.ITEM
-msgid  "Searching in Japanese"
-msgstr "חיפוש ביפנית"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ITEMLIST.ITEM
 msgid  "Asian Layout"
@@ -4874,14 +4183,6 @@ msgstr "אינטרנט"
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_PROXY.ITEMLIST.ITEM
 msgid  "Proxy"
 msgstr "פרוקסי"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ITEMLIST.ITEM
-msgid  "Search"
-msgstr "חיפוש"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ITEMLIST.ITEM
-msgid  "E-mail"
-msgstr "דוא\"ל"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Writer"
@@ -4931,10 +4232,6 @@ msgstr "מיזוג דואר בדוא\"ל"
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ITEMLIST.ITEM
-msgid  "Background"
-msgstr "רקע"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Math"
 msgstr "%PRODUCTNAME Math"
@@ -4942,14 +4239,6 @@ msgstr "%PRODUCTNAME Math"
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.SID_SM_TP_PRINTOPTIONS.ITEMLIST.ITEM
 msgid  "Settings"
 msgstr "הגדרות"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ITEMLIST.ITEM
-msgid  "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Calc"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ITEMLIST.ITEM
-msgid  "International"
-msgstr "בינלאומי"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ITEMLIST.ITEM
 msgid  "Calculate"
@@ -4967,25 +4256,9 @@ msgstr "%PRODUCTNAME מצגות"
 msgid  "%PRODUCTNAME Draw"
 msgstr "צייר %PRODUCTNAME"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ITEMLIST.ITEM
-msgid  "Charts"
-msgstr "תרשימים"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ITEMLIST.ITEM
-msgid  "Default Colors"
-msgstr "צבעי ברירת מחדל"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ITEMLIST.ITEM
 msgid  "Load/Save"
 msgstr "טעינה/שמירה"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ITEMLIST.ITEM
-msgid  "VBA Properties"
-msgstr "תכונות ‏‪VBA‏"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ITEMLIST.ITEM
-msgid  "Microsoft Office"
-msgstr "אופיס של מיקרוסופט"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ITEMLIST.ITEM
 msgid  "HTML Compatibility"
@@ -5006,10 +4279,6 @@ msgstr "מסדי נתונים"
 #: options/treeopt.src#RID_RIDER_SLL_SITE.STRING.TEXT
 msgid  "Site certificates"
 msgstr "הרשאות האתר"
-
-#: options/treeopt.src#RID_RIDER_SLL_PERSONAL.STRING.TEXT
-msgid  "Personal certificates"
-msgstr "הרשאות אישיות"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.MODALDIALOG.TEXT
 msgid  "Stored Web Connection Information"
@@ -5048,11 +4317,6 @@ msgstr "שם משתמש"
 msgid  "Alignment"
 msgstr "יישור"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text alignment"
-msgstr "יישור הטקסט"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Hori~zontal"
@@ -5063,30 +4327,10 @@ msgstr "אופקי"
 msgid  "Default"
 msgstr "ברירת מחדל"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "שמאל"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Center"
-msgstr "מרכז"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "ימין"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Justified"
 msgstr "מיושר"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Filled"
-msgstr "ממולא"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5097,16 +4341,6 @@ msgstr "הזחה"
 #, fuzzy
 msgid  "~Vertical"
 msgstr "אנכי"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "עליון"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "מרכז"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.STRINGLIST.ITEM
 #, fuzzy
@@ -5137,11 +4371,6 @@ msgstr "קצה ייחוס"
 #, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "מצב פריסה המזרח הרחוק"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "מאפיינים"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TRISTATEBOX.TEXT
 #, fuzzy
@@ -5188,11 +4417,6 @@ msgstr "תיקון אוטומטי"
 msgid  "Replace"
 msgstr "החלפה"
 
-#: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Exceptions"
-msgstr "חריגות"
-
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Options"
@@ -5228,11 +4452,6 @@ msgstr "שימוש בטבלת החלפות"
 msgid  "Correct TWo INitial CApitals"
 msgstr "תיקון שתי אותיות ראשיות עוקבות"
 
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.STRING.TEXT
-#, fuzzy
-msgid  "Capitalize first letter of every sentence"
-msgstr "אות גדולה ראשונה בכל משפט"
-
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.STRING.TEXT
 #, fuzzy
 msgid  "Automatic *bold* and _underline_"
@@ -5242,11 +4461,6 @@ msgstr "*הדגשה* ו_קו תחתון_ אוטומטיים"
 #, fuzzy
 msgid  "Ignore double spaces"
 msgstr "התעלמות מרווחים כפולים"
-
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.STRING.TEXT
-#, fuzzy
-msgid  "URL Recognition"
-msgstr "זיהוי ‏‪URL‏"
 
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.STRING.TEXT
 #, fuzzy
@@ -5263,16 +4477,6 @@ msgstr "הגדרות"
 msgid  "~Edit..."
 msgstr "עריכה...‏"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "[M]"
-msgstr "[M]"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.STRING.TEXT
-#, fuzzy
-msgid  "[T]"
-msgstr "[T]"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "[M]: Replace while modifying existing text"
@@ -5287,11 +4491,6 @@ msgstr "[T]: עיצוב אוטומטי/תיקון שגיאות אוטומטי ת
 #, fuzzy
 msgid  "Remove blank paragraphs"
 msgstr "פסקאות ריקות תימחקנה"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.STRING.TEXT
-#, fuzzy
-msgid  "Replace Custom Styles"
-msgstr "החלפת סגנונות מותאמים אישית"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.STRING.TEXT
 #, fuzzy
@@ -5317,11 +4516,6 @@ msgstr "יישום גבול"
 #, fuzzy
 msgid  "Create table"
 msgstr "יצירת טבלה"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "Apply Styles"
-msgstr "החלת סגנונות"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.STRING.TEXT
 #, fuzzy
@@ -5383,11 +4577,6 @@ msgstr "קיצורים (אין אות גדולה אחריהם)‏"
 msgid  "~AutoInclude"
 msgstr "~הכללה אוטומטית"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Words with TWo INitial CApitals"
-msgstr "מילים המתחילות בשתי אותיות גדולות"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Ne~w"
@@ -5404,10 +4593,12 @@ msgid  "A~utoInclude"
 msgstr "הכללה אוטומטית"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWABBREV.STRING.TEXT
+#, fuzzy
 msgid  "New abbreviations"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELABBREV.STRING.TEXT
+#, fuzzy
 msgid  "Delete abbreviations"
 msgstr ""
 
@@ -5486,34 +4677,33 @@ msgstr "מרכאת תחילת ציטוט"
 msgid  "End quote"
 msgstr "מרכאת סוף ציטוט"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "ברירת מחדל"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
+#, fuzzy
 msgid  "Single quotes default"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
+#, fuzzy
 msgid  "Double quotes default"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
+#, fuzzy
 msgid  "Start quote of single quotes"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
+#, fuzzy
 msgid  "Start quote of double quotes"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
 msgid  "End quote of single quotes"
-msgstr ""
+msgstr "סיים ציטוט של ציטוט בודד"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
 msgid  "End quote of double quotes"
-msgstr ""
+msgstr "סיים ציטוט של ציטוט כפול"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 #, fuzzy
@@ -5570,30 +4760,15 @@ msgstr "תווית טקסט עם תגיות חכמות"
 msgid  "Currently installed smart tags"
 msgstr "תגיות חכמות מותקנות כעת"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Properties..."
-msgstr "מאפיינים..."
-
 #: tabpages/backgrnd.src#UNLINKED_IMAGE.#DEFINE.TEXT
 #, fuzzy
 msgid  "Unlinked graphic"
 msgstr "גרפיקה לא מקושרת"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TABPAGE.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "רקע"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "A~s"
 msgstr "בתור"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "צבע"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -5605,35 +4780,10 @@ msgstr "גרפיקה"
 msgid  "F~or"
 msgstr "ל"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cell"
-msgstr "תא"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Row"
-msgstr "שורה"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Table"
-msgstr "טבלה"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Paragraph"
-msgstr "פסקה"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Character"
 msgstr "תו"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Background color"
-msgstr "צבע רקע"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5690,26 +4840,6 @@ msgstr "תצוגה מקדימה"
 msgid  "Find graphics"
 msgstr "מציאת עצם גרפי"
 
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Border / Background"
-msgstr "גבול / רקע"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "גבולות"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "רקע"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.TABPAGE.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "גבולות"
-
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Line arrangement"
@@ -5724,11 +4854,6 @@ msgstr "ברירת מחדל"
 #, fuzzy
 msgid  "~User-defined"
 msgstr "מוגדר ~משתמש"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "שורה"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5784,16 +4909,6 @@ msgstr "מרחק"
 #, fuzzy
 msgid  "C~olor"
 msgstr "צבע"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Shadow style"
-msgstr "סגנון הצללה"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "מאפיינים"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CHECKBOX.TEXT
 #, fuzzy
@@ -5865,31 +4980,6 @@ msgstr "סימון גבולות עליונים ותחתונים, וגם כל ה�
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr "סימון גבולות ימינים ושמאלים, וגם כל הקווים פנימיים"
 
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.STRING.TEXT
-#, fuzzy
-msgid  "No Shadow"
-msgstr "ללא הצללה"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Right"
-msgstr "הטלת צל לעבר הצד הימני התחתון"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Right"
-msgstr "הטלת צל לעבר הצד הימני העליון"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Left"
-msgstr "הטלת צל לעבר הצד השמאלי התחתון"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Left"
-msgstr "הטלת צל לעבר הצד השמאלי העליון"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Western text font"
@@ -5914,11 +5004,6 @@ msgstr "צורת האות"
 #, fuzzy
 msgid  "Normal"
 msgstr "כתב רגיל"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Italic"
-msgstr "נטוי"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -5970,11 +5055,6 @@ msgstr "צורת האות"
 msgid  "Example"
 msgstr "דוגמה"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color"
-msgstr "צבע"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Font ~color"
@@ -6015,25 +5095,10 @@ msgstr "אותיות קטנות"
 msgid  "Title"
 msgstr "כותרת"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small capitals"
-msgstr "אותיות גדולות קטנות"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Relief"
 msgstr "תחריט"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Embossed"
-msgstr "תבליט"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Engraved"
-msgstr "חריטה"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TRISTATEBOX.TEXT
 #, fuzzy
@@ -6069,11 +5134,6 @@ msgstr "בודד"
 #, fuzzy
 msgid  "Double"
 msgstr "כפול"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Dotted"
-msgstr "מנוקד"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
 #, fuzzy
@@ -6145,16 +5205,6 @@ msgstr "צבע קו ~חוצה"
 msgid  "~Strikethrough"
 msgstr "קו חוצה"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With /"
-msgstr "עם /‏"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_X.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With X"
-msgstr "עם‫ X‏"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Underlining"
@@ -6177,63 +5227,18 @@ msgstr "סימן הדגשה"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Dot"
-msgstr "נקודה"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Circle"
-msgstr "עיגול"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Disc"
 msgstr "דיסק"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Accent"
-msgstr "דגש"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Position"
 msgstr "מיקום"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above text"
-msgstr "מעל הטקסט"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below text"
-msgstr "מתחת לטקסט"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.STRING.TEXT
-#, fuzzy
-msgid  "Small Capitals"
-msgstr "אותיות גדולות קטנות"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.STRING.TEXT
 #, fuzzy
 msgid  "Outline"
 msgstr "מתאר"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.STRING.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "צללית"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_BLINKING.STRING.TEXT
-#, fuzzy
-msgid  "Blinking"
-msgstr "מהבהב"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "מיקום"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RADIOBUTTON.TEXT
 #, fuzzy
@@ -6264,11 +5269,6 @@ msgstr "גודל גופן יחסי"
 #, fuzzy
 msgid  "Rotation / scaling"
 msgstr "סיבוב/קביעת גודל"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scaling"
-msgstr "קביעת גודל"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RADIOBUTTON.TEXT
 #, fuzzy
@@ -6302,16 +5302,6 @@ msgstr "ריווח"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Default"
-msgstr "ברירת מחדל"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Expanded"
-msgstr "מורחב"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Condensed"
 msgstr "מרוכז"
 
@@ -6324,11 +5314,6 @@ msgstr "ע\"י"
 #, fuzzy
 msgid  "~Pair kerning"
 msgstr "ציפוף זוגי"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Double-lined"
-msgstr "ריווח כפול בין שורות מופעל"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.CB_TWOLINES.CHECKBOX.TEXT
 #, fuzzy
@@ -6350,26 +5335,6 @@ msgstr "תו ראשון"
 msgid  "(None)"
 msgstr "<ללא>"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  "("
-msgstr "("
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "["
-msgstr "["
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "<"
-msgstr "<"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "{"
-msgstr "{"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Other Characters..."
@@ -6380,26 +5345,6 @@ msgstr "תווים אחרים...‏"
 msgid  "Final charact~er"
 msgstr "תו סופי"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  ")"
-msgstr ")"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "]"
-msgstr "]"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  ">"
-msgstr ">"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "}"
-msgstr "}"
-
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.TABPAGE.TEXT
 #, fuzzy
 msgid  "Connector"
@@ -6409,11 +5354,6 @@ msgstr "מחבר"
 #, fuzzy
 msgid  "~Type"
 msgstr "סוג"
-
-#: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DELTA.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line skew"
-msgstr "הטיית קו"
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6500,11 +5440,6 @@ msgstr "מימין"
 msgid  "Vertical"
 msgstr "אנכי"
 
-#: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "ללא"
-
 #: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Top"
@@ -6524,16 +5459,6 @@ msgstr "ריווח"
 #, fuzzy
 msgid  "~Bottom"
 msgstr "מלמטה"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.STRING.TEXT
-#, fuzzy
-msgid  "Left-to-right"
-msgstr "משמאל-לימין"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.STRING.TEXT
-#, fuzzy
-msgid  "Right-to-left"
-msgstr "מימין-לשמאל"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.STRING.TEXT
 #, fuzzy
@@ -6635,11 +5560,6 @@ msgstr "~ריווח"
 msgid  "~Angle"
 msgstr "זווית"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Free"
-msgstr "חופשי"
-
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.STRINGLIST.ITEM
 #, fuzzy
 msgid  "30 Degrees"
@@ -6669,16 +5589,6 @@ msgstr "הרחבה"
 #, fuzzy
 msgid  "Optimal"
 msgstr "מיטבי"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "מלמעלה"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From left"
-msgstr "משמאל"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.1.STRINGLIST.ITEM
 #, fuzzy
@@ -6714,36 +5624,6 @@ msgstr "מיטבי"
 #, fuzzy
 msgid  "Straight Line"
 msgstr "קו ישר"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_2.STRING.TEXT
-#, fuzzy
-msgid  "Angled Line"
-msgstr "קו בעל זווית"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_3.STRING.TEXT
-#, fuzzy
-msgid  "Angled Connector Line"
-msgstr "קו מחבר בעל זווית"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_4.STRING.TEXT
-#, fuzzy
-msgid  "Double-angled line"
-msgstr "קו בעל זווית כפולה"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_HORZ_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Top;Middle;Bottom"
-msgstr "עליון;אמצע;תחתון"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_VERT_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Left;Middle;Right"
-msgstr "שמאל;אמצע;ימין"
-
-#: tabpages/labdlg.src#_POS_SIZE_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "מיקום וגודל"
 
 #: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PAGEITEM.TEXT
 #, fuzzy
@@ -6790,11 +5670,6 @@ msgstr "פקודות מאקרו"
 msgid  "Dimensioning"
 msgstr "קביעת ממדים"
 
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "שורה"
-
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_LINE_DIST.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Line ~distance"
@@ -6829,11 +5704,6 @@ msgstr "מדידה מתחת לעצם"
 #, fuzzy
 msgid  "Decimal places"
 msgstr "מקומות עשרוניים"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LABEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Legend"
-msgstr "מקרא"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6877,58 +5747,13 @@ msgstr "סיווג"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "All"
-msgstr "הכל"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "User-defined"
-msgstr "משתמש מוגדר"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "מספר"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Percent"
-msgstr "אחוזים"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Currency"
-msgstr "מטבע"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "תאריך"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Time"
-msgstr "שעה"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Scientific"
 msgstr "מדעי"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Fraction"
-msgstr "שבר"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Boolean Value"
 msgstr "ערך בוליאני"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "טקסט"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_EDFORMAT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6980,11 +5805,6 @@ msgstr "שפה"
 msgid  "So~urce format"
 msgstr "צורת מקור"
 
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Add"
-msgstr "הוספה"
-
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Remove"
@@ -7035,16 +5855,6 @@ msgstr "מספור"
 msgid  "1, 2, 3, ... "
 msgstr "1, 2, 3, ... "
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ... "
-msgstr "A, B, C, ... "
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "I, II, III, ... "
@@ -7060,16 +5870,6 @@ msgstr "i, ii, iii, ... "
 msgid  "A, .., AA, .., AAA, ... "
 msgstr "A, .., AA, .., AAA, ... "
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, .., aa, .., aaa, ..."
-msgstr "a, .., aa, .., aaa, ..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bullet"
-msgstr "תבליט"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Graphics"
@@ -7079,11 +5879,6 @@ msgstr "גרפיקה"
 #, fuzzy
 msgid  "Linked graphics"
 msgstr "גרפיקה מקושרת"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "ללא"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.12.STRINGLIST.ITEM
 #, fuzzy
@@ -7275,11 +6070,6 @@ msgstr "מרכז התו"
 msgid  "Bottom of character"
 msgstr "תחתית התו"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "ראש הקו"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -7289,11 +6079,6 @@ msgstr "מרכז הקו"
 #, fuzzy
 msgid  "Bottom of line"
 msgstr "תחתית הקו"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FL_SAME_LEVEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "All levels"
-msgstr "כל הרמות"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.CB_SAME_LEVEL.CHECKBOX.TEXT
 #, fuzzy
@@ -7375,11 +6160,6 @@ msgstr "הזחה ב"
 msgid  "Default"
 msgstr "ברירת מחדל"
 
-#: tabpages/numpages.src#RID_STR_EDIT_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Link"
-msgstr "קישור"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FL_PAPER_SIZE.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Paper format"
@@ -7425,11 +6205,6 @@ msgstr "כיוון טקסט"
 msgid  "Paper ~tray"
 msgstr "מגש נייר"
 
-#: tabpages/page.src#RID_SVXPAGE_PAGE.FL_MARGIN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Margins"
-msgstr "שוליים"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_LEFT_MARGIN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Left"
@@ -7462,58 +6237,13 @@ msgstr "פריסת עמוד"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Right and left"
-msgstr "ימין ושמאל"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Mirrored"
 msgstr "העתק ראי"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only right"
-msgstr "רק ימין"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only left"
-msgstr "רק שמאל"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "For~mat"
 msgstr "צורה"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ..."
-msgstr "A, B, C, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "I, II, III, ..."
-msgstr "I, II, III, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "1, 2, 3, ..."
-msgstr "1, 2, 3, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "ללא"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_TBL_ALIGN.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7606,9 +6336,8 @@ msgid  "Legal"
 msgstr "משפטי"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LEGAL2.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Long Bond"
-msgstr ""
+msgstr "קשר ארוך"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_TABLOID.ITEMLIST.ITEM
 #, fuzzy
@@ -7722,7 +6451,7 @@ msgstr "A0"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_DIA.ITEMLIST.ITEM
 msgid  "Dia Slide"
-msgstr ""
+msgstr "שקף Dia"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_SCREEN.ITEMLIST.ITEM
 #, fuzzy
@@ -7754,11 +6483,6 @@ msgstr "שורה ראשונה"
 msgid  "~Automatic"
 msgstr "אוטומטי"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_INDENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Indent"
-msgstr "הזחת פסקה"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_TOPDIST.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Ab~ove paragraph"
@@ -7776,28 +6500,8 @@ msgstr "ריווח"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Single"
-msgstr "בודד"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "1.5 lines"
 msgstr "שורה וחצי"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Double"
-msgstr "כפול"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Proportional"
-msgstr "גודל מותאם יחסית"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "At least"
-msgstr "לפחות"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -7874,21 +6578,6 @@ msgstr "ימין/תחתון"
 msgid  "~Last line"
 msgstr "שורה אחרונה"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "ברירת מחדל"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "שמאל"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "ממורכז"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Expand single word"
@@ -7919,35 +6608,15 @@ msgstr "אוטומטי"
 msgid  "Base line"
 msgstr "קו בסיס"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "עליון"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "מרכז"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM5.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Bottom"
 msgstr "למטה"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "מאפיינים"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_TEXTDIRECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Text ~direction"
 msgstr "~כיוון טקסט"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Text Flow"
-msgstr "זרימת טקסט"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_HYPHEN.TRISTATEBOX.TEXT
 #, fuzzy
@@ -7974,11 +6643,6 @@ msgstr "מספר מירבי של מקפים ברציפות"
 msgid  "Hyphenation"
 msgstr "מיקוף"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Breaks"
-msgstr "מעברים"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGEBREAK.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Insert"
@@ -7989,30 +6653,10 @@ msgstr "הוספה"
 msgid  "~Type"
 msgstr "סוג"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Page"
-msgstr "עמוד"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Column"
-msgstr "עמודה"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKPOSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Position"
 msgstr "מיקום"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Before"
-msgstr "לפני"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "After"
-msgstr "אחרי"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGECOLL.TRISTATEBOX.TEXT
 #, fuzzy
@@ -8084,11 +6728,6 @@ msgstr "דוגמה"
 msgid  "Page Style"
 msgstr "סגנון עמוד"
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_GRADIENT.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the gradient:"
-msgstr "יש להזין שם עבור המידרג:‏"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_GRADIENT.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the gradient?"
@@ -8119,11 +6758,6 @@ msgstr "האם אכן ברצונך למחוק את מפת הסיביות?‏"
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
 msgstr "מפת הסיביות שונתה אך לא נשמרה.\nיש לשנות את מפת הסיביות שנבחרה או להוסיף חדשה.‏"
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the line style:"
-msgstr "יש להזין שם עבור סגנון הקו:‏"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINESTYLE.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the line style?"
@@ -8134,11 +6768,6 @@ msgstr "האם ברצונך למחוק את סגנון הקו?‏"
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
 msgstr "סגנון הקו שונה אבל לא נשמר.\nיש לשנות את סגנון הקו שנבחר או להוסיף סגנון קו חדש.‏"
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_HATCH.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the hatching:"
-msgstr "יש להזין שם עבור הקווקו:‏"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_HATCH.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the hatching?"
@@ -8148,16 +6777,6 @@ msgstr "האם ברצונך למחוק את הקווקו?‏"
 #, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
 msgstr "סגנון הקיווקוו שונה אבל לא נשמר.\nיש לשנות את סגנון הקיווקוו שנבחר או להוסיף חדש.‏"
-
-#: tabpages/strings.src#RID_SVXSTR_CHANGE.STRING.TEXT
-#, fuzzy
-msgid  "Modify"
-msgstr "שינוי"
-
-#: tabpages/strings.src#RID_SVXSTR_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "הוספה"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_COLOR.STRING.TEXT
 #, fuzzy
@@ -8214,16 +6833,6 @@ msgstr "האם ברצונך למחוק את ראש החץ?‏"
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 msgstr "ראש החץ שונה אבל לא נשמר.\nהאם לשמור אותו עכשיו?‏"
 
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "מיקום וגודל"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "גודל"
-
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Width"
@@ -8238,11 +6847,6 @@ msgstr "גובה"
 #, fuzzy
 msgid  "~Keep ratio"
 msgstr "שמירה על היחס"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "עוגן"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOPAGE.RADIOBUTTON.TEXT
 #, fuzzy
@@ -8268,11 +6872,6 @@ msgstr "כתו"
 #, fuzzy
 msgid  "To ~frame"
 msgstr "למסגרת"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_PROTECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "הגנה"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_POSITION.TRISTATEBOX.TEXT
 #, fuzzy
@@ -8371,11 +6970,6 @@ msgstr "סגלגלי"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Quadratic"
-msgstr "קוודראטי"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Square"
 msgstr "ריבוע"
 
@@ -8431,16 +7025,6 @@ msgstr "מילוי"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "None"
-msgstr "ללא"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "צבע"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Hatching"
 msgstr "קווקו"
 
@@ -8464,11 +7048,6 @@ msgstr "אוטומטי"
 msgid  "~Background color"
 msgstr "צבע רקע"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "גודל"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_ORIGINAL.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Original"
@@ -8489,11 +7068,6 @@ msgstr "רוחב"
 msgid  "H~eight"
 msgstr "גובה"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "מיקום"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_OFFSET.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~X Offset"
@@ -8513,11 +7087,6 @@ msgstr "פריסה ללא חפיפה"
 #, fuzzy
 msgid  "Auto~Fit"
 msgstr "התאמה אוטומטית"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_OFFSET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Offset"
-msgstr "היסט"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.RBT_ROW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -8654,11 +7223,6 @@ msgstr "Save Bitmap List"
 msgid  "Gradients"
 msgstr "מידרגים"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Rectangular"
-msgstr "מלבני"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~From"
@@ -8741,11 +7305,11 @@ msgstr "מפות סיביות"
 
 #: tabpages/tabarea.src#STR_LB_HATCHINGSTYLE.STRING.TEXT
 msgid  "Hatching Style"
-msgstr ""
+msgstr "סגנון בקיעה"
 
 #: tabpages/tabarea.src#STR_CUI_COLORMODEL.STRING.TEXT
 msgid  "Color Mode"
-msgstr ""
+msgstr "מצב צבע"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.TABPAGE.TEXT
 #, fuzzy
@@ -8777,11 +7341,6 @@ msgstr "רוחב"
 msgid  "~Transparency"
 msgstr "שקיפות"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_LINE_ENDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Arrow styles"
-msgstr "סגנונות חץ"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_ENDS_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "St~yle"
@@ -8809,22 +7368,16 @@ msgstr "תיזמון קצוות"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_EDGE_STYLE.FIXEDLINE.TEXT
 msgid  "Corner and cap styles"
-msgstr ""
+msgstr "סגנון פינה וקו"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_EDGE_STYLE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Corner style"
-msgstr "סגנון פינות"
+msgstr "~ סגנון פינה"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Rounded"
 msgstr "מעוגל"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "- none -"
-msgstr "- ללא -"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -8837,14 +7390,17 @@ msgid  "Beveled"
 msgstr "משופע"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_CAP_STYLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ca~p style"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Flat"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Round"
 msgstr ""
 
@@ -8857,11 +7413,6 @@ msgstr "ריבוע"
 #, fuzzy
 msgid  "Icon"
 msgstr "צלם"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_NONE.MENUITEM.TEXT
-#, fuzzy
-msgid  "No Symbol"
-msgstr "ללא סמל"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_AUTO.MENUITEM.TEXT
 #, fuzzy
@@ -8938,16 +7489,6 @@ msgstr "התחלה עם מירכוז"
 msgid  "End with center"
 msgstr "סיום עם מירכוז"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.TABPAGE.TEXT
-#, fuzzy
-msgid  "Define line styles"
-msgstr "הגדרת סגנונות קו"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FL_DEFINITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "מאפיינים"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FT_TYPE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Type"
@@ -9003,11 +7544,6 @@ msgstr "שינוי...‏"
 msgid  "~Delete..."
 msgstr "מחיקה"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Load Line Styles"
-msgstr "Load Line Styles"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Save Line Styles"
@@ -9021,23 +7557,27 @@ msgstr "התחלת סגנון"
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_TYPE.STRING.TEXT
 #, fuzzy
 msgid  "End type"
-msgstr "סוף סגנון"
+msgstr "לסיים סגנון"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_NUM.STRING.TEXT
+#, fuzzy
 msgid  "Start number"
-msgstr ""
+msgstr "מספר התחלה"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_NUM.STRING.TEXT
+#, fuzzy
 msgid  "End number"
-msgstr ""
+msgstr "מספר סיום"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Start length"
-msgstr ""
+msgstr "אורך התחלה"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "End length"
-msgstr ""
+msgstr "אורך סיום"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.TABPAGE.TEXT
 #, fuzzy
@@ -9073,26 +7613,6 @@ msgstr "Load Arrow Styles"
 #, fuzzy
 msgid  "Save Arrow Styles"
 msgstr "Save Arrow Styles"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "שורה"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "צללית"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Line Styles"
-msgstr "סגנונות קו"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Arrow Styles"
-msgstr "סגנונות חץ"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.TABPAGE.TEXT
 #, fuzzy
@@ -9138,11 +7658,6 @@ msgstr "תו"
 #, fuzzy
 msgid  "Fill character"
 msgstr "תו מילוי"
-
-#: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "ללא"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_OTHER.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9209,41 +7724,6 @@ msgstr "גלילה"
 msgid  "Scroll Back and Forth"
 msgstr "גלילה קדימה ואחורה"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Scroll In"
-msgstr "גלילה פנימה"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DIRECTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Direction"
-msgstr "כיוון"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_UP.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Top"
-msgstr "למעלה"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_LEFT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Left"
-msgstr "לשמאל"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_RIGHT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Right"
-msgstr "לימין"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_DOWN.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Bottom"
-msgstr "למטה"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "מאפיינים"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_START_INSIDE.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "S~tart inside"
@@ -9274,20 +7754,10 @@ msgstr "תוספת"
 msgid  "~Pixels"
 msgstr "פיקסלים"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DELAY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Delay"
-msgstr "עיכוב"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_AUTO.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Automatic"
 msgstr "אוטומטי"
-
-#: tabpages/textanim.src#RID_SVXDLG_TEXT.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "טקסט"
 
 #: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
 #, fuzzy
@@ -9354,11 +7824,6 @@ msgstr "למעלה"
 msgid  "~Bottom"
 msgstr "למטה"
 
-#: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text anchor"
-msgstr "עוגן טקסט"
-
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TSB_FULL_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Full ~width"
@@ -9389,11 +7854,6 @@ msgstr "מיקום ‏‪Y‏"
 msgid  "Base point"
 msgstr "Base point"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "גודל"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Wi~dth"
@@ -9409,20 +7869,10 @@ msgstr "גובה"
 msgid  "~Keep ratio"
 msgstr "שמירה על היחס"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_PROTECT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "הגנה"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_SIZEPROTECT.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Size"
 msgstr "גודל"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ADJUST.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Adapt"
-msgstr "התאמה"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_AUTOGROW_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9434,60 +7884,20 @@ msgstr "~התאמת רוחב לטקסט"
 msgid  "Fit ~height to text"
 msgstr "התאמת גובה לטקסט"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "עוגן"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ANCHOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Anchor"
 msgstr "עיגון"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To paragraph"
-msgstr "לפסקה"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "As character"
 msgstr "כתו"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To page"
-msgstr "לעמוד"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To frame"
-msgstr "למסגרת"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ORIENT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "P~osition"
 msgstr "מיקום"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "מלמעלה"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above"
-msgstr "מעל"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "ממורכז"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below"
-msgstr "מתחת"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM5.STRINGLIST.ITEM
 #, fuzzy
@@ -9504,11 +7914,6 @@ msgstr "מרכז התו"
 msgid  "Bottom of character"
 msgstr "תחתית התו"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "ראש הקו"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM9.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -9518,11 +7923,6 @@ msgstr "מרכז הקו"
 #, fuzzy
 msgid  "Bottom of line"
 msgstr "תחתית הקו"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Angle"
-msgstr "זווית"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FL_POSITION.FIXEDLINE.TEXT
 #, fuzzy
@@ -9563,11 +7963,6 @@ msgstr "זווית סיבוב"
 #, fuzzy
 msgid  "Slant & Corner Radius"
 msgstr "הטייה ורדיוס פינה"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FL_RADIUS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Corner radius"
-msgstr "רדיוס פינה"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FT_RADIUS.FIXEDTEXT.TEXT
 #, fuzzy

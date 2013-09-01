@@ -49,7 +49,7 @@ msgstr "%productname% %formatversion%-rapportdiagram"
 
 #: ../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu#EXTENDEDCOLORSCHEME.ENTRYNAMES.SUNREPORTBUILDER.DISPLAYNAME
 msgid  "Apache OpenOffice Report Builder"
-msgstr "Oracle Report Builder"
+msgstr ""
 
 #: ../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu#EXTENDEDCOLORSCHEME.ENTRYNAMES.SUNREPORTBUILDER.ENTRIES.REPORTHEADER.DISPLAYNAME
 msgid  "Report Header"
@@ -95,6 +95,21 @@ msgstr "Overlappende kontrollelement"
 msgid  "Text Box Bound Content"
 msgstr "Innhold bundet til en tekstboks"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:COLUMNHEADERFOOTER.LABEL
+#, fuzzy
+msgid  "Column Header/Footer"
+msgstr "~Topp-/bunntekst i kolonnen"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:CONDITIONALFORMATTING.LABEL
+#, fuzzy
+msgid  "Conditional Formatting..."
+msgstr "~Betinget formatering"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DBSORTINGANDGROUPING.LABEL
+#, fuzzy
+msgid  "Sorting and Grouping"
+msgstr "~Sortering og gruppering"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DISTRIBUTION.LABEL
 msgid  "Distribution..."
 msgstr "Fordeling ..."
@@ -110,6 +125,11 @@ msgstr "Tilpass til største høyde"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:GREATESTWIDTH.LABEL
 msgid  "Fit to greatest width"
 msgstr "Tilpass til største bredde"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:INSERTDATETIMEFIELD.LABEL
+#, fuzzy
+msgid  "Date and Time..."
+msgstr "~Dato og tid ..."
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:PAGEHEADERFOOTER.LABEL
 msgid  "Page Header/Footer"
@@ -163,9 +183,19 @@ msgstr "Forminsk ovenfra"
 msgid  "Select all Formatted Fields"
 msgstr "Velg alle formaterte felter"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLINSECTION.LABEL
+#, fuzzy
+msgid  "Select Objects in Section"
+msgstr "~Velg objekter i bolk"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLLABELS.LABEL
 msgid  "Select all Labels"
 msgstr "Velg alle etiketter"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTREPORT.LABEL
+#, fuzzy
+msgid  "Select Report"
+msgstr "~Velg rapport"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SMALLESTHEIGHT.LABEL
 msgid  "Fit to smallest height"
@@ -178,6 +208,11 @@ msgstr "Tilpass til minste bredde"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SPREADSHEET.LABEL
 msgid  "Spreadsheet Document"
 msgstr "Regneark"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SUBREPORTINNEWWINDOW.LABEL
+#, fuzzy
+msgid  "Subreport in New Window..."
+msgstr "~Delrapport i nytt vindu"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:TEXTDOCUMENT.LABEL
 msgid  "Text Document"
@@ -216,8 +251,9 @@ msgid  "FlowChart Shapes"
 msgstr "Flytdiagrammer"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.POPUPS..UNO:OBJECTRESIZE.LABEL
+#, fuzzy
 msgid  "Object Resizing"
-msgstr "Skaler objekt"
+msgstr "Skalering av objekt"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.POPUPS..UNO:REPORTCONTROLMENU.LABEL
 msgid  "Report Controls"

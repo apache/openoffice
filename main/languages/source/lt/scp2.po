@@ -31,30 +31,1034 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ADOBE
-#, fuzzy
-msgid  "Adobe Photoshop Import Filter"
-msgstr "„Adobe PhotoShop“ dokumentų importavimo filtras"
+#: kde/module_kde.ulf#STR_NAME_MODULE_OPTIONAL_KDE
+msgid  "KDE Integration"
+msgstr "KDE integravimas"
+
+#: kde/module_kde.ulf#STR_DESC_MODULE_OPTIONAL_KDE
+msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into KDE."
+msgstr "Sisteminis „%PRODUCTNAME %PRODUCTVERSION“ integravimas į KDE."
+
+#: quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
+msgid  "Quickstarter"
+msgstr "Sparčioji paleistis"
+
+#: quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
+msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
+msgstr "Sistemos paleidimo metu įkeliami pagrindiniai paketo komponentai taip paspartinant „%PRODUCTNAME %PRODUCTVERSION“ paleidimą."
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
+msgid  "Graphics Filters"
+msgstr "Grafiniai filtrai"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT
+msgid  "Additional filters required to read alien graphic formats."
+msgstr "Svetimiems grafiniams formatams perskaityti reikia papildomų filtrų."
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_TGA
+msgid  "TGA Import"
+msgstr "TGA dokumentų importavimo filtras"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_TGA
+msgid  "TGA TrueVision TARGA Import Filter"
+msgstr "„TGA TrueVision TARGA“ dokumentų importavimo filtras"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_EPS
+msgid  "EPS Import/Export Filter"
+msgstr "EPS dokumentų importavimo ir eksportavimo filtrai"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_EPS
+msgid  "Encapsulated Postscript Import/Export Filter"
+msgstr "„Encapsulated Postscript“ formato dokumentų importavimo ir eksportavimo filtrai"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_XPM
 #, fuzzy
 msgid  "XPM Export Filter"
 msgstr "XPM formato paveikslų eksportavimo filtras"
 
-#: xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_PBMP
+msgid  "Portable Bitmap Import/Export"
+msgstr "„Portale Bitmap“ formato paveikslų importavimo ir eksportavimo filtrai"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_PBMP
+msgid  "Portable Bitmap Import/Export Filters"
+msgstr "„Portale Bitmap“ formato paveikslų importavimo ir eksportavimo filtrai"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_SUNRST
+msgid  "SUN Rasterfile Import/Export"
+msgstr "„SUN-Rasterfile“ formato dokumentų importavimo ir eksportavimo filtrai"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_SUNRST
+msgid  "SUN Rasterfile Import/Export Filters"
+msgstr "„SUN-Rasterfile“ formato dokumentų importavimo ir eksportavimo filtrai"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ACAD
+msgid  "AutoCAD Import"
+msgstr "„AutoCAD“ dokumentų importavimo filtras"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_ACAD
+msgid  "AutoCAD Import Filter"
+msgstr "„AutoCAD“ dokumentų importavimo filtras"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_KODAC
+msgid  "Kodak Photo-CD Import"
+msgstr "„Kodak Photo-CD“ formato paveikslų importavimo filtras"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_KODAC
+msgid  "Kodak Photo-CD Import Filter"
+msgstr "„Kodak Photo-CD“ formato paveikslų importavimo filtras"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_MACPICT
+msgid  "Mac-Pict Import/Export"
+msgstr "„Mac-Pict“ formato paveikslų importavimo ir eksportavimo filtrai"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_MACPICT
+msgid  "Mac-Pict Import/Export Filters"
+msgstr "„Mac-Pict“ formato paveikslų importavimo ir eksportavimo filtrai"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_OS2META
+msgid  "OS/2 Metafile Import/Export"
+msgstr "„OS/2 Metafile“ formato dokumentų importavimo ir eksportavimo filtrai"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_OS2META
+msgid  "OS/2 Metafile Import/Export Filters"
+msgstr "„OS/2 Metafile“ formato dokumentų importavimo ir eksportavimo filtrai"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_PCX
+msgid  "PCX Import"
+msgstr "PCX formato paveikslų importavimo filtras"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_PCX
+msgid  "Z-Soft PCX Import"
+msgstr "„Z-Soft PCX“ formato paveikslų importavimo filtras"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_TIFF
+msgid  "TIFF Import/Export"
+msgstr "TIFF formato paveikslų importavimo ir eksportavimo filtras"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_TIFF
+msgid  "TIFF Import and Export Filter"
+msgstr "TIFF formato paveikslų importavimo ir eksportavimo filtras"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_SVG
+msgid  "SVG Export"
+msgstr "SVG formato paveikslų eksportavimo filtras"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_SVG
+msgid  "SVG Export Filter"
+msgstr "SVG formato paveikslų eksportavimo filtras"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_FLASH
+msgid  "Macromedia Flash (SWF)"
+msgstr "„Macromedia Flash (SWF)“"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_FLASH
+msgid  "Macromedia Flash (SWF) Export Filter"
+msgstr "„Macromedia Flash (SWF)“ formato dokumentų eksportavimo filtras"
+
+#: onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
+msgid  "Online Update"
+msgstr "Atnaujinimas internetu"
+
+#: onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
+msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
+msgstr "Automatiškai pranešama, kai išleidžiamas „%PRODUCTNAME“ programos naujinimas."
+
+#: impress/folderitem_impress.ulf#STR_FI_NAME_PRAESENTATION
+msgid  "Presentation"
+msgstr "Pateiktis"
+
+#: impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
+msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
+msgstr "Pateikčių rengykle rengiamos pateiktys pranešimams, pateiktis galima įkelti į tinklalapį."
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Naujas"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
+msgid  "Show"
+msgstr "Rodyti"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_SO60_PRESENT
 #, fuzzy
-msgid  "XSLT Sample Filters"
-msgstr "XSLT pavyzdžių filtrai"
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Presentation"
+msgstr "„%PRODUCTNAME %SXWFORMATVERSION“ pateiktis"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_SO60_IMPRESS_TEMPLATE
+#, fuzzy
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Presentation Template"
+msgstr "„%PRODUCTNAME %SXWFORMATVERSION“ pateikties šablonas"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_OO_PRESENT
+#, fuzzy
+msgid  "OpenDocument Presentation"
+msgstr "„OpenDocument“ pateiktis"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_OO_PRESENT_TEMPLATE
+#, fuzzy
+msgid  "OpenDocument Presentation Template"
+msgstr "„OpenDocument“ pateikties šablonas"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_PRESENTATION_OLD
+#, fuzzy
+msgid  "Microsoft PowerPoint 97-2003 Presentation"
+msgstr "„Microsoft PowerPoint 97-2003“ pateiktis"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_SHOW
+#, fuzzy
+msgid  "Microsoft PowerPoint Show"
+msgstr "„Microsoft PowerPoint“ demonstracija"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_PRESENTATION
+#, fuzzy
+msgid  "Microsoft PowerPoint Presentation"
+msgstr "„Microsoft PowerPoint“ pateiktis"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_TEMPLATE_OLD
+#, fuzzy
+msgid  "Microsoft PowerPoint 97-2003 Template"
+msgstr "„Microsoft PowerPoint 97-2003“ šablonas"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_TEMPLATE
+#, fuzzy
+msgid  "Microsoft PowerPoint Template"
+msgstr "„Microsoft PowerPoint“ šablonas"
+
+#: impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
+msgid  "%PRODUCTNAME Impress"
+msgstr "„%PRODUCTNAME“ pateikčių rengyklė"
+
+#: impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
+msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
+msgstr "„%PRODUCTNAME“ pateikčių rengykle rengiamos pateiktys pranešimams, pateiktis galima įkelti į tinklalapį."
+
+#: impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
+msgid  "Program Module"
+msgstr "Programos modulis"
+
+#: impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS_BIN
+msgid  "The application %PRODUCTNAME Impress"
+msgstr "„%PRODUCTNAME“ pateikčių rengyklė"
+
+#: impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_HELP
+msgid  "%PRODUCTNAME Impress Help"
+msgstr "„%PRODUCTNAME“ pateikčių rengyklės žinynas"
+
+#: impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS_HELP
+msgid  "Help about %PRODUCTNAME Impress"
+msgstr "„%PRODUCTNAME“ pateikčių rengyklės žinynas."
+
+#: impress/module_ogltrans.ulf#STR_NAME_MODULE_OPTIONAL_OGLTRANS
+msgid  "OpenGL slide transitions for %PRODUCTNAME Impress"
+msgstr ""
+
+#: impress/module_ogltrans.ulf#STR_DESC_MODULE_MODULE_OPTIONAL_OGLTRANS
+msgid  "OpenGL slide transitions for %PRODUCTNAME Impress."
+msgstr ""
+
+#: sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
+msgid  "Software Development Kit (SDK)"
+msgstr "Programinės įrangos plėtojimo komplektas (SDK)"
+
+#: sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
+msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
+msgstr "SDK komplekte yra priemonės, pavyzdžiai ir dokumentacija, reikalinga plėtoti biuro programas."
+
+#: writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
+msgid  "HTML Document"
+msgstr "HTML dokumentas"
+
+#: writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
+msgid  "Text Document"
+msgstr "Teksto dokumentas"
+
+#: writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
+msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
+msgstr "Tekstų rengykle galima kurti laiškus, ataskaitas, kitus dokumentus ir tinklalapius, įterpti į juos paveikslus."
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Naujas"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
+#, fuzzy
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
+msgstr "„%PRODUCTNAME %SXWFORMATVERSION“ teksto dokumentas"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
+#, fuzzy
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
+msgstr "„%PRODUCTNAME %SXWFORMATVERSION“ pagrindinis dokumentas"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
+#, fuzzy
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
+msgstr "„%PRODUCTNAME %SXWFORMATVERSION“ teksto šablonas"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
+#, fuzzy
+msgid  "OpenDocument Text"
+msgstr "„OpenDocument“ teksto dokumentas"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
+#, fuzzy
+msgid  "OpenDocument Text Template"
+msgstr "„OpenDocument“ teksto šablonas"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
+#, fuzzy
+msgid  "OpenDocument Master Document"
+msgstr "„OpenDocument“ pagrindinis dokumentas"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
+#, fuzzy
+msgid  "HTML Document Template"
+msgstr "HTML dokumento šablonas"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
+#, fuzzy
+msgid  "Microsoft Word 97-2003 Document"
+msgstr "„Microsoft Word 97-2003“ dokumentas"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
+#, fuzzy
+msgid  "Microsoft Word Document"
+msgstr "„Microsoft Word“ dokumentas"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
+#, fuzzy
+msgid  "Microsoft Word 97-2003 Template"
+msgstr "„Microsoft Word 97-2003“ šablonas"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
+#, fuzzy
+msgid  "Microsoft Word Template"
+msgstr "„Microsoft Word“ šablonas"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
+#, fuzzy
+msgid  "Rich Text Document"
+msgstr "Raiškiojo teksto dokumentas"
+
+#: writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
+msgid  "%PRODUCTNAME Writer"
+msgstr "„%PRODUCTNAME“ tekstų rengyklė"
+
+#: writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
+msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
+msgstr "„%PRODUCTNAME“ Tekstų rengykle galima kurti laiškus, ataskaitas, kitus dokumentus ir tinklalapius, įterpti į juos paveikslus."
+
+#: writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
+msgid  "Program Module"
+msgstr "Programos modulis"
+
+#: writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
+msgid  "The application %PRODUCTNAME Writer"
+msgstr "„%PRODUCTNAME“ tekstų rengyklė"
+
+#: writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
+msgid  "%PRODUCTNAME Writer Help"
+msgstr "„%PRODUCTNAME“ tekstų rengyklės žinynas"
+
+#: writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
+msgid  "Help about %PRODUCTNAME Writer"
+msgstr "„%PRODUCTNAME“ tekstų rengyklės žinynas"
+
+#: writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
+msgid  "LaTeX Export"
+msgstr "„LaTeX“ eksportas"
+
+#: writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
+msgid  "LaTeX export filter for Writer documents."
+msgstr "„LaTeX“ eksporto filtras „Writer“ teksto dokumentams."
+
+#: math/module_math.ulf#STR_NAME_MODULE_PRG_MATH
+msgid  "%PRODUCTNAME Math"
+msgstr "„%PRODUCTNAME“ matematinė rengyklė"
+
+#: math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
+msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
+msgstr "„%PRODUCTNAME“ matematinė rengyklė skirta formulėms ir lygtims rašyti."
+
+#: math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
+msgid  "Program Module"
+msgstr "Programos modulis"
+
+#: math/module_math.ulf#STR_DESC_MODULE_PRG_MATH_BIN
+msgid  "The application %PRODUCTNAME Math"
+msgstr "„%PRODUCTNAME“ matematinė rengyklė"
+
+#: math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_HELP
+msgid  "%PRODUCTNAME Math Help"
+msgstr "„%PRODUCTNAME“ matematinės rengyklės žinynas"
+
+#: math/module_math.ulf#STR_DESC_MODULE_PRG_MATH_HELP
+msgid  "Help about %PRODUCTNAME Math"
+msgstr "„%PRODUCTNAME“ matematinės rengyklės žinynas"
+
+#: math/folderitem_math.ulf#STR_FI_TOOLTIP_MATH
+msgid  "Create and edit scientific formulas and equations by using Math."
+msgstr "Matematinė rengyklė skirta formulėms ir lygtims rašyti."
+
+#: math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Naujas"
+
+#: math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
+#, fuzzy
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
+msgstr "„%PRODUCTNAME %SXWFORMATVERSION“ matematinis dokumentas"
+
+#: math/registryitem_math.ulf#STR_REG_VAL_OO_FORMULA
+#, fuzzy
+msgid  "OpenDocument Formula"
+msgstr "„OpenDocument“ matematinis dokumentas"
+
+#: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER
+msgid  "Mobile Device Filters"
+msgstr "Mobiliųjų įtaisų filtrai"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
+msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
+msgstr "Teksto ir skaičiuoklės dokumentų importavimo ir eksportavimo į „Palm“ delninukų ir „Pocket PC“ dokumentų formatą filtrai (reikalinga Java)."
+
+#: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
+msgid  "Palm"
+msgstr "„Palm“ delninukas"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_PALM
+msgid  "Filters for Palm OS compatible handhelds"
+msgstr "Filtrai „Palm OS“ delnininukams"
+
+#: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM_APORTISDOC
+msgid  "AportisDoc"
+msgstr "„AportisDoc“"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_PALM_APORTISDOC
+msgid  "Support for the AportisDoc format"
+msgstr "„AportisDoc“ formato pažinimas"
+
+#: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC
+msgid  "Pocket PC"
+msgstr "Kišeninis kompiuteris"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT
+msgid  "Filters and ActiveSync support for Pocket PC compatible handhelds"
+msgstr "Filtrų ir kitų galimybių suderinamumas su „Pocket PC“ kišeniniais kompiuteriais"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX
+msgid  "Filters for Pocket PC compatible handhelds."
+msgstr "Filtrai „Pocket PC“ kišeniniams kompiuteriams."
+
+#: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD
+msgid  "Pocket Word"
+msgstr "„Pocket Word“"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD
+msgid  "Support for Pocket Word"
+msgstr "„Pocket Word“ formato dokumentų pažinimas"
+
+#: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_EXCEL
+msgid  "Pocket Excel"
+msgstr "„Pocket Excel“"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_EXCEL
+msgid  "Support for Pocket Excel"
+msgstr "„Pocket Excel“ formato dokumentų pažinimas"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__43887C67_4D5D_4127_BAAC_87A288494C7C_
+msgid  "Pocket Excel"
+msgstr "„Pocket Excel“"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__43887C67_4D5D_4127_BAAC_87A288494C7C__PEGASUSFILTER_DESCRIPTION
+msgid  "Pocket Excel Workbook"
+msgstr "„Pocket Excel“ skaičiuoklės (darbo) knyga"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__BDD611C3_7BAB_460F_8711_5B9AC9EF6020_
+msgid  "%PRODUCTNAME Writer"
+msgstr "„%PRODUCTNAME“ tekstų rengyklė"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__BDD611C3_7BAB_460F_8711_5B9AC9EF6020__PEGASUSFILTER_DESCRIPTION
+msgid  "%PRODUCTNAME Writer XML Document"
+msgstr "„%PRODUCTNAME“ tekstų rengyklės XML dokumentas"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__C6AB3E74_9F4F_4370_8120_A8A6FABB7A7C_
+msgid  "%PRODUCTNAME Calc"
+msgstr "„%PRODUCTNAME“ skaičiuoklė"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__C6AB3E74_9F4F_4370_8120_A8A6FABB7A7C__PEGASUSFILTER_DESCRIPTION
+msgid  "%PRODUCTNAME Calc XML Document"
+msgstr "„%PRODUCTNAME“ skaičiuoklės XML dokumentas"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__CB43F086_838D_4FA4_B5F6_3406B9A57439_
+msgid  "Pocket Word"
+msgstr "„Pocket Word“"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__CB43F086_838D_4FA4_B5F6_3406B9A57439__PEGASUSFILTER_DESCRIPTION
+msgid  "Pocket Word Document - Pocket PC"
+msgstr "„Pocket Word“ dokumentas"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_CLASSPATH
+msgid  "The %PRODUCTNAME mobile device filters cannot be located."
+msgstr "„%PRODUCTNAME“ mobilių įtaisų filtrų nepavyko rasti."
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVA
+msgid  "A Java 1.4 installation cannot be located."
+msgstr "Java 1.4 diegimas nerastas."
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVAINIT
+msgid  "There was an error while initializing the Java Runtime Environment."
+msgstr "Inicializuojant Java vykdymo aplinką įvyko klaida."
+
+#: winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+msgid  "Windows Explorer Extension"
+msgstr "„Windows Explorer“ plėtinys"
+
+#: winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
+msgstr "Įdiegiama galimybė „Microsoft Windows Explorer“ failų tvarkytuvėje matyti informaciją apie „%PRODUCTNAME“ dokumentus, dokumentų miniatiūras."
+
+#: draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Naujas"
+
+#: draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
+#, fuzzy
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
+msgstr "„%PRODUCTNAME %SXWFORMATVERSION“ grafikos dokumentas"
+
+#: draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAW_TEMPLATE
+#, fuzzy
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing Template"
+msgstr "„%PRODUCTNAME %SXWFORMATVERSION“ grafikos šablonas"
+
+#: draw/registryitem_draw.ulf#STR_REG_VAL_OO_DRAW
+#, fuzzy
+msgid  "OpenDocument Drawing"
+msgstr "„OpenDocument“ grafikos dokumentas"
+
+#: draw/registryitem_draw.ulf#STR_REG_VAL_OO_DRAW_TEMPLATE
+#, fuzzy
+msgid  "OpenDocument Drawing Template"
+msgstr "„OpenDocument“ grafikos šablonas"
+
+#: draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
+msgid  "Drawing"
+msgstr "Grafikos dokumentas"
+
+#: draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
+msgid  "Create and edit drawings, flow charts, and logos by using Draw."
+msgstr "Grafikos rengykle galima braižyti brėžinius, blokines schemas, kurti logotipus."
+
+#: draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
+msgid  "%PRODUCTNAME Draw"
+msgstr "„%PRODUCTNAME“ grafikos rengyklė"
+
+#: draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
+msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
+msgstr "„%PRODUCTNAME“ grafikos rengykle galima braižyti brėžinius, blokines schemas, kurti logotipus."
+
+#: draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
+msgid  "Program Module"
+msgstr "Programos modulis"
+
+#: draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW_BIN
+msgid  "The application %PRODUCTNAME Draw"
+msgstr "„%PRODUCTNAME“ grafikos rengyklė"
+
+#: draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_HELP
+msgid  "%PRODUCTNAME Draw Help"
+msgstr "„%PRODUCTNAME“ grafikos rengyklės žinynas"
+
+#: draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW_HELP
+msgid  "Help about %PRODUCTNAME Draw"
+msgstr "„%PRODUCTNAME“ grafikos rengyklės žinynas"
+
+#: calc/folderitem_calc.ulf#STR_FI_NAME_TABELLENDOKUMENT
+msgid  "Spreadsheet"
+msgstr "Skaičiuoklės dokumentas"
+
+#: calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
+msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
+msgstr "Skaičiuokle galima atlikti įvairius skaičiavimus, analizuoti informaciją, tvarkyti sąrašus lentelėse."
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Naujas"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
+#, fuzzy
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
+msgstr "„%PRODUCTNAME %SXWFORMATVERSION“ skaičiuoklės dokumentas"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_SO60_CALC_TEMPLATE
+#, fuzzy
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet Template"
+msgstr "„%PRODUCTNAME %SXWFORMATVERSION“ skaičiuoklės šablonas"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_OO_CALC
+#, fuzzy
+msgid  "OpenDocument Spreadsheet"
+msgstr "„OpenDocument“ skaičiuoklės dokumentas"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_OO_CALC_TEMPLATE
+#, fuzzy
+msgid  "OpenDocument Spreadsheet Template"
+msgstr "„OpenDocument“ skaičiuoklės šablonas"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_WORKSHEET_OLD
+#, fuzzy
+msgid  "Microsoft Excel 97-2003 Worksheet"
+msgstr "„Microsoft Excel 97-2003“ skaičiuoklės lakštas"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_WORKSHEET
+#, fuzzy
+msgid  "Microsoft Excel Worksheet"
+msgstr "„Microsoft Excel“ skaičiuoklės lakštas"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_TEMPLATE_OLD
+#, fuzzy
+msgid  "Microsoft Excel 97-2003 Template"
+msgstr "„Microsoft Excel 97-2003“ šablonas"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_TEMPLATE
+#, fuzzy
+msgid  "Microsoft Excel Template"
+msgstr "„Microsoft Excel“ šablonas"
+
+#: calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
+msgid  "%PRODUCTNAME Calc"
+msgstr "„%PRODUCTNAME“ skaičiuoklė"
+
+#: calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
+msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
+msgstr "„%PRODUCTNAME“ skaičiuokle galima atlikti įvairius skaičiavimus, analizuoti informaciją, tvarkyti sąrašus lentelėse. Calc."
+
+#: calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
+msgid  "Program Module"
+msgstr "Programos modulis"
+
+#: calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC_BIN
+msgid  "The application %PRODUCTNAME Calc"
+msgstr "„%PRODUCTNAME“ skaičiuoklė"
+
+#: calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_HELP
+msgid  "%PRODUCTNAME Calc Help"
+msgstr "„%PRODUCTNAME“ skaičiuoklės žinynas"
+
+#: calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC_HELP
+msgid  "Help about %PRODUCTNAME Calc"
+msgstr "„%PRODUCTNAME“ skaičiuoklės žinynas"
+
+#: calc/module_calc.ulf#STR_NAME_MODULE_OPTIONAL_ADDINS
+msgid  "Add-in"
+msgstr "Papildinys"
+
+#: calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
+msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
+msgstr "Papildiniai – tai programos, pridedančios naujų funkcijų „%PRODUCTNAME“ skaičiuoklėje."
+
+#: ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "&Naujas"
+
+#: ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
+#, fuzzy
+msgid  "&Install"
+msgstr "&Įdiegti"
+
+#: ooo/registryitem_ooo.ulf#STR_REG_VAL_SO60_CONFIGFILE
+msgid  "OpenOffice.org 1.1 Configuration File"
+msgstr ""
+
+#: ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
+#, fuzzy
+msgid  "StarOffice 5.0 Template"
+msgstr "„StarOffice 5.0“ šablonas"
+
+#: ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
+
+#: ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
+#, fuzzy
+msgid  "Desktop integration"
+msgstr "Darbalaukio integravimas"
+
+#: ooo/module_systemint.ulf#STR_DESC_MODULE_OPTIONAL_SYSTEMINTEGRATION
+#, fuzzy
+msgid  "Desktop integration of %PRODUCTNAME %PRODUCTVERSION."
+msgstr "„%PRODUCTNAME %PRODUCTVERSION“ integravimas į darbalaukį."
+
+#: ooo/module_ooo.ulf#STR_NAME_MODULE_ROOT_OSL
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "„%PRODUCTNAME %PRODUCTVERSION“"
+
+#: ooo/module_ooo.ulf#STR_NAME_MODULE_PRG
+#, fuzzy
+msgid  "%PRODUCTNAME Program Modules"
+msgstr "„%PRODUCTNAME“ programos moduliai"
+
+#: ooo/module_ooo.ulf#STR_DESC_MODULE_PRG
+#, fuzzy
+msgid  "List of all installable %PRODUCTNAME modules."
+msgstr "Visų galimų „%PRODUCTNAME“ modulių sąrašas."
+
+#: ooo/module_ooo.ulf#STR_NAME_MODULE_OPTIONAL
+#, fuzzy
+msgid  "Optional Components"
+msgstr "Pasirenkami komponentai"
+
+#: ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
+#, fuzzy
+msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
+msgstr "Bendri komponentai ir papildomos programos, naudojamos visų „%PRODUCTNAME“ paketo programų."
+
+#: ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
+msgid  "Dictionaries"
+msgstr ""
+
+#: ooo/module_ooo.ulf#STR_DESC_MODULE_DICTIONARIES
+msgid  "Spelling and hyphenation dictionaries and thesauri."
+msgstr ""
+
+#: ooo/module_java.ulf#STR_NAME_MODULE_OPTIONAL_JAVA
+#, fuzzy
+msgid  "Java Runtime Environment (%JAVAVERSION)"
+msgstr "Java aplinka (%JAVAVERSION)"
+
+#: ooo/module_java.ulf#STR_DESC_MODULE_OPTIONAL_JAVA
+#, fuzzy
+msgid  "Component for setting up the Java Environment"
+msgstr "„Java“ aplinkos įdiegimo komponentas"
+
+#: ooo/module_headless.ulf#STR_NAME_MODULE_OPTIONAL_HEADLESS
+#, fuzzy
+msgid  "Headless application support"
+msgstr "Suderinamumas su programomis be grafinės sąsajos"
+
+#: ooo/module_headless.ulf#STR_DESC_MODULE_OPTIONAL_HEADLESS
+#, fuzzy
+msgid  "Component for enabling use %PRODUCTNAME without a display"
+msgstr "Komponentas, leidžiantis naudoti „%PRODUCTNAME“ be vaizduoklio"
+
+#: ooo/directory_ooo.ulf#STR_DIR_INFO
+msgid  "Information"
+msgstr "Informacija"
+
+#: ooo/directory_ooo.ulf#STR_DIR_INTERNET
+msgid  "Internet"
+msgstr "Internetas"
+
+#: ooo/directory_ooo.ulf#STR_DIR_JAVA
+msgid  "Java"
+msgstr "Java"
+
+#: ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
+msgid  "Fun&More"
+msgstr "Pokštai ir kita"
+
+#: ooo/directory_ooo.ulf#STR_DIR_STARONE
+msgid  "%PRODUCTNAME API"
+msgstr "„%PRODUCTNAME“ programų sąsaja (API)"
+
+#: ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
+msgid  "Travel"
+msgstr "Kelionė"
+
+#: ooo/directory_ooo.ulf#STR_DIR_KAPITEL
+msgid  "Chapters"
+msgstr "Skyriai"
+
+#: ooo/directory_ooo.ulf#STR_DIR_DATEIEN
+msgid  "Files"
+msgstr "Failai"
+
+#: ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
+msgid  "From Template"
+msgstr "Dokumentas iš šablono"
+
+#: ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
+msgid  "Open Document"
+msgstr "Atverti dokumentą"
+
+#: ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
+#, fuzzy
+msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
+msgstr "Biuro programų rinkinys, suderinamas su atviru ir standartizuotu biuro dokumentų formatu ODF. Remiamas „Sun Microsystems“."
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 #, fuzzy
 msgid  "Additional language packs"
 msgstr "Papildomi kalbų paketai"
 
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_US
+#, fuzzy
+msgid  "English"
+msgstr "Anglų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_US
+#, fuzzy
+msgid  "Installs English support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama anglų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DE
+#, fuzzy
+msgid  "German"
+msgstr "Vokiečių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DE
+#, fuzzy
+msgid  "Installs German support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama vokiečių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FR
+#, fuzzy
+msgid  "French"
+msgstr "Prancūzų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FR
+#, fuzzy
+msgid  "Installs French support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama prancūzų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IT
+#, fuzzy
+msgid  "Italian"
+msgstr "Italų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IT
+#, fuzzy
+msgid  "Installs Italian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama italų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ES
+#, fuzzy
+msgid  "Spanish"
+msgstr "Ispanų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ES
+#, fuzzy
+msgid  "Installs Spanish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama ispanų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SV
+#, fuzzy
+msgid  "Swedish"
+msgstr "Švedų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SV
+#, fuzzy
+msgid  "Installs Swedish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama švedų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT
+#, fuzzy
+msgid  "Portuguese"
+msgstr "Portugalų"
+
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT
 #, fuzzy
 msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama portugalų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT_BR
+#, fuzzy
+msgid  "Portuguese (Brazil)"
+msgstr "Portugalų (Brazilija)"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_JA
+#, fuzzy
+msgid  "Japanese"
+msgstr "Japonų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_JA
+#, fuzzy
+msgid  "Installs Japanese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama japonų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KO
+#, fuzzy
+msgid  "Korean"
+msgstr "Korėjiečių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KO
+#, fuzzy
+msgid  "Installs Korean support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama korėjiečių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_CN
+#, fuzzy
+msgid  "Chinese (simplified)"
+msgstr "Kinų (supaprastinta)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
+#, fuzzy
+msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama supaprastinta kinų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
+#, fuzzy
+msgid  "Chinese (traditional)"
+msgstr "Kinų (tradicinė)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
+#, fuzzy
+msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama tradicinė kinų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
+#, fuzzy
+msgid  "Dutch"
+msgstr "Olandų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NL
+#, fuzzy
+msgid  "Installs Dutch support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama olandų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HU
+#, fuzzy
+msgid  "Hungarian"
+msgstr "Vengrų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HU
+#, fuzzy
+msgid  "Installs Hungarian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama vengrų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PL
+#, fuzzy
+msgid  "Polish"
+msgstr "Lenkų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PL
+#, fuzzy
+msgid  "Installs Polish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama lenkų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RU
+#, fuzzy
+msgid  "Russian"
+msgstr "Rusų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RU
+#, fuzzy
+msgid  "Installs Russian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama rusų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TR
+#, fuzzy
+msgid  "Turkish"
+msgstr "Turkų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TR
+#, fuzzy
+msgid  "Installs Turkish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama turkų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EL
+#, fuzzy
+msgid  "Greek"
+msgstr "Graikų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EL
+#, fuzzy
+msgid  "Installs Greek support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama graikų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TH
+#, fuzzy
+msgid  "Thai"
+msgstr "Tajų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TH
+#, fuzzy
+msgid  "Installs Thai support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama tajų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CS
+#, fuzzy
+msgid  "Czech"
+msgstr "Čekų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CS
+#, fuzzy
+msgid  "Installs Czech support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama čekų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SK
+#, fuzzy
+msgid  "Slovak"
+msgstr "Slovakų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SK
+#, fuzzy
+msgid  "Installs Slovak support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama slovakų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HR
+#, fuzzy
+msgid  "Croatian"
+msgstr "Kroatų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HR
+#, fuzzy
+msgid  "Installs Croatian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama kroatų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ET
+#, fuzzy
+msgid  "Estonian"
+msgstr "Estų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ET
+#, fuzzy
+msgid  "Installs Estonian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama estų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VI
+#, fuzzy
+msgid  "Vietnamese"
+msgstr "Vietnamiečių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VI
+#, fuzzy
+msgid  "Installs Vietnamese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama vietnamiečių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BG
+#, fuzzy
+msgid  "Bulgarian"
+msgstr "Bulgarų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BG
+#, fuzzy
+msgid  "Installs Bulgarian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama bulgarų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KM
+#, fuzzy
+msgid  "Khmer"
+msgstr "Khmerų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KM
+#, fuzzy
+msgid  "Installs Khmer support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama khmerų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PA_IN
+#, fuzzy
+msgid  "Punjabi"
+msgstr "Pendžabų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PA_IN
+#, fuzzy
+msgid  "Installs Punjabi support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama pendžabų kalba"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU_IN
 #, fuzzy
@@ -65,6 +1069,11 @@ msgstr "Gudžaratų"
 #, fuzzy
 msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama gudžaratų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA
+#, fuzzy
+msgid  "Tamil"
+msgstr "Tamilų"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TA
 #, fuzzy
@@ -81,10 +1090,115 @@ msgstr "Hindi"
 msgid  "Installs Hindi support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama hindi kalba"
 
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ST
+#, fuzzy
+msgid  "Southern Sotho (Sutu)"
+msgstr "Pietų sotų (Sutu)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST
+#, fuzzy
+msgid  "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama Pietų sotų (sutu) kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN
+#, fuzzy
+msgid  "Tswana"
+msgstr "Tsvanų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TN
+#, fuzzy
+msgid  "Installs Tswana support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama tsvanų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_XH
+#, fuzzy
+msgid  "Xhosa"
+msgstr "Kosų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_XH
+#, fuzzy
+msgid  "Installs Xhosa support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama kosų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZU
+#, fuzzy
+msgid  "Zulu"
+msgstr "Zulų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZU
+#, fuzzy
+msgid  "Installs Zulu support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama zulų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AF
+#, fuzzy
+msgid  "Afrikaans"
+msgstr "Afrikanų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AF
+#, fuzzy
+msgid  "Installs Afrikaans support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama afrikanų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW
+#, fuzzy
+msgid  "Swahili"
+msgstr "Svahilių"
+
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW
 #, fuzzy
 msgid  "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama svahilių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LO
+#, fuzzy
+msgid  "Lao"
+msgstr "Laosiečių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LO
+#, fuzzy
+msgid  "Installs Lao support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama laosiečių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NS
+#, fuzzy
+msgid  "Northern Sotho"
+msgstr "Šiaurės sotų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NS
+#, fuzzy
+msgid  "Installs Northern Sotho support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama Šiaurės sotų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN
+#, fuzzy
+msgid  "Bengali"
+msgstr "Bengalų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN
+#, fuzzy
+msgid  "Installs Bengali support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama bengalų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_BD
+#, fuzzy
+msgid  "Bengali (Bangladesh)"
+msgstr "Bengalų (Bangladešas)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
+#, fuzzy
+msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama bengalų (Bangladešas) kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
+#, fuzzy
+msgid  "Bengali (India)"
+msgstr "Bengalų (Indija)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_IN
+#, fuzzy
+msgid  "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama bengalų (Indija) kalba"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR
 #, fuzzy
@@ -106,6 +1220,16 @@ msgstr "Marathų"
 msgid  "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama marathų kalba"
 
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NE
+#, fuzzy
+msgid  "Nepali"
+msgstr "Nepalų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NE
+#, fuzzy
+msgid  "Installs Nepali support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama nepalų kalba"
+
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR
 #, fuzzy
 msgid  "Arabic"
@@ -115,6 +1239,106 @@ msgstr "Arabų"
 #, fuzzy
 msgid  "Installs Arabic support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama arabų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CA
+#, fuzzy
+msgid  "Catalan"
+msgstr "Katalonų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CA
+#, fuzzy
+msgid  "Installs Catalan support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama katalonų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DA
+#, fuzzy
+msgid  "Danish"
+msgstr "Danų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DA
+#, fuzzy
+msgid  "Installs Danish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama danų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FI
+#, fuzzy
+msgid  "Finnish"
+msgstr "Suomių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FI
+#, fuzzy
+msgid  "Installs Finnish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama suomių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HE
+#, fuzzy
+msgid  "Hebrew"
+msgstr "Hebrajų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HE
+#, fuzzy
+msgid  "Installs Hebrew support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama hebrajų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IS
+#, fuzzy
+msgid  "Icelandic"
+msgstr "Islandų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IS
+#, fuzzy
+msgid  "Installs Icelandic support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama islandų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NB
+#, fuzzy
+msgid  "Norwegian (Bokmål)"
+msgstr "Norvegų (Bokmal)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
+#, fuzzy
+msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama norvegų (Bokmal) kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
+#, fuzzy
+msgid  "Norwegian (Nynorsk)"
+msgstr "Norvegų (Nynorsk)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
+#, fuzzy
+msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama norvegų (Nynorsk) kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
+#, fuzzy
+msgid  "Rhaeto-Romance"
+msgstr "Retoromanų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RM
+#, fuzzy
+msgid  "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama retoromanų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO
+#, fuzzy
+msgid  "Romanian"
+msgstr "Rumunų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RO
+#, fuzzy
+msgid  "Installs Romanian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama rumunų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SQ
+#, fuzzy
+msgid  "Albanian"
+msgstr "Albanų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SQ
+#, fuzzy
+msgid  "Installs Albanian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama albanų kalba"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR
 #, fuzzy
@@ -126,6 +1350,126 @@ msgstr "Urdu"
 msgid  "Installs Urdu support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama urdu kalba"
 
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ID
+#, fuzzy
+msgid  "Indonesian"
+msgstr "Indoneziečių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ID
+#, fuzzy
+msgid  "Installs Indonesian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama indoneziečių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UK
+#, fuzzy
+msgid  "Ukrainian"
+msgstr "Ukrainiečių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UK
+#, fuzzy
+msgid  "Installs Ukrainian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama ukrainiečių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BE_BY
+#, fuzzy
+msgid  "Belarusian"
+msgstr "Baltarusių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BE_BY
+#, fuzzy
+msgid  "Installs Belarusian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama baltarusių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SL
+#, fuzzy
+msgid  "Slovenian"
+msgstr "Slovėnų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SL
+#, fuzzy
+msgid  "Installs Slovenian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama slovėnų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LV
+#, fuzzy
+msgid  "Latvian"
+msgstr "Latvių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LV
+#, fuzzy
+msgid  "Installs Latvian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama latvių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LT
+#, fuzzy
+msgid  "Lithuanian"
+msgstr "Lietuvių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LT
+#, fuzzy
+msgid  "Installs Lithuanian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama lietuvių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HY
+#, fuzzy
+msgid  "Armenian"
+msgstr "Armėnų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HY
+#, fuzzy
+msgid  "Installs Armenian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama armėnų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EU
+#, fuzzy
+msgid  "Basque"
+msgstr "Baskų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EU
+#, fuzzy
+msgid  "Installs Basque support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama baskų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MK
+#, fuzzy
+msgid  "Macedonian"
+msgstr "Makedonų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MK
+#, fuzzy
+msgid  "Installs Macedonian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama makedonų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MT
+#, fuzzy
+msgid  "Maltese"
+msgstr "Maltiečių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MT
+#, fuzzy
+msgid  "Installs Maltese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama maltiečių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CY
+#, fuzzy
+msgid  "Welsh"
+msgstr "Valų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CY
+#, fuzzy
+msgid  "Installs Welsh support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama valų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GL
+#, fuzzy
+msgid  "Galician"
+msgstr "Galų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GL
+#, fuzzy
+msgid  "Installs Galician support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama galų kalba"
+
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH_YU
 #, fuzzy
 msgid  "Serbian (Latin)"
@@ -136,6 +1480,16 @@ msgstr "Serbų (lotynų)"
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama serbų (lotynų) kalba"
 
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA
+#, fuzzy
+msgid  "Irish"
+msgstr "Airių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GA
+#, fuzzy
+msgid  "Installs Irish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama airių kalba"
+
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR_CS
 #, fuzzy
 msgid  "Serbian (Cyrillic)"
@@ -145,3 +1499,400 @@ msgstr "Serbų (kirilica)"
 #, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama serbų (kirilica) kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
+#, fuzzy
+msgid  "Bosnian"
+msgstr "Bosnių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BS
+#, fuzzy
+msgid  "Installs Bosnian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama bosnių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AS_IN
+#, fuzzy
+msgid  "Assamese"
+msgstr "Asamių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AS_IN
+#, fuzzy
+msgid  "Installs Assamese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama asamių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RW
+#, fuzzy
+msgid  "Kinyarwanda"
+msgstr "Kinyarwanda"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RW
+#, fuzzy
+msgid  "Installs Kinyarwanda support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama Kinyarwanda kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SA
+#, fuzzy
+msgid  "Sanskrit"
+msgstr "Sanskrito"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SA
+#, fuzzy
+msgid  "Installs Sanskrit support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama sanskrito kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FA
+msgid  "Persian"
+msgstr ""
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FA
+#, fuzzy
+msgid  "Installs Persian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama gruzinų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FO
+#, fuzzy
+msgid  "Faroese"
+msgstr "Farerų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FO
+#, fuzzy
+msgid  "Installs Faroese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama farerų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SB
+#, fuzzy
+msgid  "Sorbian"
+msgstr "Sorbių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SB
+#, fuzzy
+msgid  "Installs Sorbian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama sorbių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TT
+#, fuzzy
+msgid  "Tatar"
+msgstr "Totorių"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TT
+#, fuzzy
+msgid  "Installs Tatar support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama totorių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TS
+#, fuzzy
+msgid  "Tsonga"
+msgstr "Tsonga"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TS
+#, fuzzy
+msgid  "Installs Tsonga support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama tsonga kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_YI
+#, fuzzy
+msgid  "Yiddish"
+msgstr "Jidiš"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_YI
+#, fuzzy
+msgid  "Installs Yiddish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama jidiš kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BR
+#, fuzzy
+msgid  "Breton"
+msgstr "Breton"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BR
+#, fuzzy
+msgid  "Installs Breton support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama Breton kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NR
+#, fuzzy
+msgid  "Ndebele South"
+msgstr "Ndebele"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NR
+#, fuzzy
+msgid  "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama Ndebele kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SS
+#, fuzzy
+msgid  "Swazi"
+msgstr "Svazi"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SS
+#, fuzzy
+msgid  "Installs Swazi support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama svazi kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VE
+#, fuzzy
+msgid  "Venda"
+msgstr "Venda"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VE
+#, fuzzy
+msgid  "Installs Venda support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama Venda kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KN
+#, fuzzy
+msgid  "Kannada"
+msgstr "Kannada"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KN
+#, fuzzy
+msgid  "Installs Kannada support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama Kannada kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MS
+#, fuzzy
+msgid  "Malay (Malaysian)"
+msgstr "Malajų (Malaizija)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MS
+#, fuzzy
+msgid  "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama malajų (Malaizija) kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TG
+#, fuzzy
+msgid  "Tajik"
+msgstr "Tadžikų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TG
+#, fuzzy
+msgid  "Installs Tajik support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama tadžikų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KU
+#, fuzzy
+msgid  "Kurdish"
+msgstr "Kurdų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KU
+#, fuzzy
+msgid  "Installs Kurdish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama kurdų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DZ
+#, fuzzy
+msgid  "Dzongkha"
+msgstr "Džonka"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DZ
+#, fuzzy
+msgid  "Installs Dzongkha support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama Džonka kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KA
+#, fuzzy
+msgid  "Georgian"
+msgstr "Gruzinų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KA
+#, fuzzy
+msgid  "Installs Georgian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama gruzinų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EO
+#, fuzzy
+msgid  "Esperanto"
+msgstr "Esperanto"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EO
+#, fuzzy
+msgid  "Installs Esperanto support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama esperanto kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_ZA
+#, fuzzy
+msgid  "English (South Africa)"
+msgstr "Anglų (Pietų Afrika)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
+#, fuzzy
+msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama anglų (Pietų Afrikos) kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
+#, fuzzy
+msgid  "English (United Kingdom)"
+msgstr "Anglų (Jungtinė Karalystė)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
+#, fuzzy
+msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama anglų (Jungtinės Karalystės) kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ML_IN
+#, fuzzy
+msgid  "Malayalam"
+msgstr "Malayalam"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ML_IN
+#, fuzzy
+msgid  "Installs Malayalam support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama Malayalam kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TE_IN
+#, fuzzy
+msgid  "Telugu"
+msgstr "Telugu"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TE_IN
+#, fuzzy
+msgid  "Installs Telugu support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama Telugu kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TI_ER
+#, fuzzy
+msgid  "Tigrinya"
+msgstr "Tigrinya"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TI_ER
+#, fuzzy
+msgid  "Installs Tigrinya support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama Tigrinya kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UZ
+#, fuzzy
+msgid  "Uzbek"
+msgstr "Uzbekų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UZ
+#, fuzzy
+msgid  "Installs Uzbek support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama uzbekų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MN
+#, fuzzy
+msgid  "Mongolian"
+msgstr "Mongolų"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MN
+#, fuzzy
+msgid  "Installs Mongolian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama mongolų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OC
+msgid  "Occitan"
+msgstr ""
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OC
+#, fuzzy
+msgid  "Installs Occitan support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama orijų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UG
+msgid  "Uighur"
+msgstr ""
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UG
+#, fuzzy
+msgid  "Installs Uighur support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama urdu kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SI
+msgid  "Sinhala"
+msgstr ""
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SI
+#, fuzzy
+msgid  "Installs Sinhala support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama svahilių kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OM
+msgid  "Oromo"
+msgstr ""
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OM
+#, fuzzy
+msgid  "Installs Oromo support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama orijų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AST
+msgid  "Asturian"
+msgstr ""
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AST
+#, fuzzy
+msgid  "Installs Asturian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama estų kalba"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GD
+msgid  "Gaelic (Scotland)"
+msgstr ""
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GD
+#, fuzzy
+msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Į „%PRODUCTNAME %PRODUCTVERSION“ įdiegiama galų kalba"
+
+#: gnome/module_gnome.ulf#STR_NAME_MODULE_OPTIONAL_GNOME
+msgid  "GNOME Integration"
+msgstr "„Gnome“ integravimas"
+
+#: gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
+msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
+msgstr "„%PRODUCTNAME %PRODUCTVERSION“ integravimas į „Gnome“ darbalaukio aplinką."
+
+#: base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
+msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
+msgstr "Duomenų bazių tvarkymui, užklausų ir ataskaitų rašymui skirta programa Base."
+
+#: base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
+msgid  "OpenDocument Database"
+msgstr "„OpenDocument“ duomenų bazė"
+
+#: base/module_base.ulf#STR_NAME_MODULE_PRG_BASE
+msgid  "%PRODUCTNAME Base"
+msgstr "„%PRODUCTNAME“ duomenų bazių programa"
+
+#: base/module_base.ulf#STR_DESC_MODULE_PRG_BASE
+msgid  "Create and edit databases by using %PRODUCTNAME Base."
+msgstr "„%PRODUCTNAME“ duomenų bazių programa galima kurti ir tvarkyti duomenų bazes."
+
+#: base/module_base.ulf#STR_NAME_MODULE_PRG_BASE_BIN
+msgid  "Program Module"
+msgstr "Programos modulis"
+
+#: base/module_base.ulf#STR_DESC_MODULE_PRG_BASE_BIN
+msgid  "The application %PRODUCTNAME Base"
+msgstr "„%PRODUCTNAME“ duomenų bazių programa"
+
+#: base/module_base.ulf#STR_NAME_MODULE_PRG_BASE_HELP
+msgid  "%PRODUCTNAME Base Help"
+msgstr "„%PRODUCTNAME“ duomenų bazių programos žinynas"
+
+#: base/module_base.ulf#STR_DESC_MODULE_PRG_BASE_HELP
+msgid  "Help about %PRODUCTNAME Base"
+msgstr "„%PRODUCTNAME“ duomenų bazių programos žinynas"
+
+#: activex/module_activex.ulf#STR_NAME_MODULE_OPTIONAL_ACTIVEXCONTROL
+msgid  "ActiveX Control"
+msgstr "ActiveX valdiklis"
+
+#: activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
+msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
+msgstr "Komponentas, leidžiantis peržiūrėti „%PRODUCTNAME“ dokumentus „Microsoft Internet Explorer“ naršykle."
+
+#: python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
+msgid  "E-mail Mailmerge"
+msgstr "Elektroninių laiškų komponavimas"
+
+#: python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
+msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
+msgstr "„%PRODUCTNAME“ modulis elektroniniams laiškams komponuoti"
+
+#: python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
+msgid  "Python-UNO Bridge"
+msgstr "Python-UNO Bridge"
+
+#: python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
+msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
+msgstr "„Python“ skriptų kalbos įdiegimas į „%PRODUCTNAME“. Išsamesnė informacija tinklalapyje http://udk.openoffice.org/python/python-bridge.html."

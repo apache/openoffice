@@ -49,135 +49,135 @@ msgstr "आउटलुक (एमएपीआई) एक्सप्रेस �
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
 msgid  "Creating tables is not supported for this kind of address books."
-msgstr "इस तरह की पता पुस्तिका के लिए सारणी निर्माण समर्थित नहीं है."
+msgstr "इस तरह की पता पुस्तिका के लिए सारणी निर्माण समर्थित नहीं है।"
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr "मोजिला चालू रहने के दौरान नयी पता पुस्तिका नहीं बना सकता है."
+msgstr "मोजिला के चालू रहने के दौरान नयी पता पुस्तिका नहीं बना सकता।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr "एक पता पुस्तिका की प्रविष्टि फिर नहीं वापस की जा सकी, एक अनजान त्रुटि हुई."
+msgstr "एक पता पुस्तिका की प्रविष्टि फिर वापस नहीं लाया जा सका, एक अनजान त्रुटि हुई।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr "एक पता पुस्तिका निर्देशिका फिर नहीं मिल सकी, एक अनजान त्रुटि आई."
+msgstr "एक पता पुस्तिका निर्देशिका फिर नहीं मिल सकी, एक अनजान त्रुटि आई।"
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
 msgid  "Timed out while waiting for the result."
-msgstr "परिणाम की प्रतीक्षा के दौरान समय समाप्ति."
+msgstr "परिणाम की प्रतीक्षा के दौरान समय समाप्ति।"
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
 msgid  "An error occurred while executing the query."
-msgstr "प्रश्न के निष्पादन के समय एक त्रुटि हुई."
+msgstr "प्रश्न के निष्पादन के दौरान एक त्रुटि हुई।"
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr "जब मोजिला चल रहा हो, तो आप मोजिला पता पुस्तिका में परिवर्तन नहीं कर सकते हैं."
+msgstr "जब मोजिला चल रहा हो, तो आप मोजिला पता पुस्तिका में परिवर्तन नहीं कर सकते हैं।"
 
 #: resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.STRING.TEXT
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr "मोजिला पता पुस्तिका इस प्रक्रिया के लिए बदली गई है, हम इस स्थिति में सुधार नहीं कर सकते हैं."
+msgstr "मोजिला पता पुस्तिका इस प्रक्रिया के द्वारा बदली गई है, हम इसमें इस स्थिति में सुधार नहीं कर सकते हैं।"
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
 msgid  "Can't find the requested row."
-msgstr "निवेदित पंक्ति पा नहीं सकता है."
+msgstr "निवेदित पंक्ति नहीं खोज सका।"
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
 msgid  "Can't find the card for the requested row."
-msgstr "निवेदित पंक्ति के लिए कार्ड नहीं पा सकता है."
+msgstr "निवेदित पंक्ति के लिए कार्ड नहीं खोज सका।"
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
 msgid  "The query can not be executed. It needs at least one table."
-msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है. इसके लिए कम से कम एक सारणी चाहिए."
+msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है। इसके लिए कम से कम एक सारणी चाहिए।"
 
 #: resource/conn_shared_res.src#STR_NO_COUNT_SUPPORT.STRING.TEXT
 msgid  "The driver does not support the 'COUNT' function."
-msgstr "यह ड्राइवर 'COUNT' प्रकार्य का समर्थन नहीं करता है."
+msgstr "यह ड्राइवर 'COUNT' प्रकार्य का समर्थन नहीं करता है।"
 
 #: resource/conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.STRING.TEXT
 msgid  "This statement type not supported by this database driver."
-msgstr "इस डेटाबेस ड्राइवर के साथ कथन प्रकार समर्थित नहीं."
+msgstr "इस डेटाबेस ड्राइवर के साथ कथन प्रकार समर्थित नहीं।"
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
 msgid  "An unknown error occured."
-msgstr "एक अनजान त्रुटि आई."
+msgstr "एक अनजान त्रुटि आई।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid  "Could not create a new address book. Mozilla error code is $1$."
-msgstr "एक नई पता पुस्तिका नहीं बना सका. मोज़िला त्रुटि कोड $1$ है."
+msgstr "एक नई पता पुस्तिका नहीं बना सका। मोज़िला त्रुटि कोड $1$ है।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.STRING.TEXT
 msgid  "The library '$libname$' could not be loaded."
-msgstr "'$libname$' लाइब्रेरी लोड नहीं किया जा सकता है."
+msgstr "'$libname$' लेखागार अभिभारित नहीं किया जा सकता है।"
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
 msgid  "An error occured while refreshing the current row."
-msgstr "मौजूदा पंक्ति ताज़ा करने के दौरान एक त्रुटि आई."
+msgstr "मौजूदा पंक्ति ताज़ा करने के दौरान एक त्रुटि आई।"
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
 msgid  "An error occured while getting the current row."
-msgstr "मौजूदा पंक्ति पाने के दौरान एक त्रुटि आई."
+msgstr "मौजूदा पंक्ति पाने के दौरान एक त्रुटि आई।"
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid  "The row update can not be canceled."
-msgstr "यह पंक्ति अद्यतन रद्द नहीं किया जा सकता है."
+msgstr "पंक्ति अद्यतन रद्द नहीं किया जा सकता है।"
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.STRING.TEXT
 msgid  "A new row can not be created."
-msgstr "एक नई पंक्ति नहीं बनाई जा सकती है."
+msgstr "एक नई पंक्ति नहीं बनाई जा सकती है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.STRING.TEXT
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है. 'IS NULL' को स्तंभ नाम के साथ ही केवल प्रयोग किया जा सकता है."
+msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है। 'IS NULL' को केवल स्तंभ नाम के साथ ही प्रयोग किया जा सकता है।"
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
 msgid  "Illegal cursor movement occured."
-msgstr "अवैध कर्सर गति उत्पन्न हुई."
+msgstr "अवैध संकेतक गति उत्पन्न हुई।"
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr "पंक्ति सुपुर्द करने के पहले या नई पंक्ति डालने के पहले कृपया पंक्ति '$position$' सुपुर्द करें."
+msgstr "पंक्ति सुपुर्द करने के पहले या नई पंक्ति डालने के पहले कृपया पंक्ति '$position$' सुपुर्द करें।"
 
 #: resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.STRING.TEXT
 msgid  "The update call can not be executed. The row is invalid."
-msgstr "यह अद्यतन निष्पादित नहीं की जा सकती है. यह पंक्ति अवैध है."
+msgstr "यह अद्यतन निष्पादित नहीं की जा सकती है। यह पंक्ति अवैध है।"
 
 #: resource/conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.STRING.TEXT
 msgid  "The current row can not be saved."
-msgstr "यह मौजूदा पंक्ति सहेजी नहीं जा सकती है."
+msgstr "यह मौजूदा पंक्ति सहेजी नहीं जा सकती है।"
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
 msgid  "No hostname was provided."
-msgstr "कोई होस्टनाम नहीं दिया गया था."
+msgstr "कोई आतिथय नाम नहीं दिया गया था।"
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
 msgid  "No Base DN was provided."
-msgstr "कोई बेस DN नहीं दिया गया था."
+msgstr "कोई बेस DN नहीं दिया गया था।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.STRING.TEXT
 msgid  "The connection to the LDAP server could not be established."
-msgstr ""
+msgstr "LDAP सर्वर के साथ संयोजन नहीं किया जा सका।"
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
 msgid  "It doesn't exist a connection to the database."
-msgstr "इस डेटाबेस में कनेक्शन मौजूद नहीं है."
+msgstr "इस डेटाबेस में संयोजन मौजूद नहीं है।"
 
 #: resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.STRING.TEXT
 msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
-msgstr "आपने '$pos$' स्थिति पर एक पैरामीटर सेट करने की कोशिश की लेकिन वहाँ केवल '$count$' पैरामीटर स्वीकार्य हैं. एक कारण संभव है कि डेटा स्रोत में गुण \"ParameterNameSubstitution\" सही पर सेट नहीं है."
+msgstr "आपने '$pos$' स्थिति पर एक प्राचल सेट करने की कोशिश की लेकिन वहाँ केवल '$count$' प्राचल ही स्वीकार्य है। एक कारण संभव है कि आँकड़ा स्रोत में गुण \"ParameterNameSubstitution\" सही पर सेट नहीं है।"
 
 #: resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.STRING.TEXT
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr "निर्दिष्ट संतोषजनक लंबाई पहुँचने के पहले InputStream समाप्ति आ गई जब InputStream सेट था."
+msgstr "निविष्ट-प्रवाह नियत करने पर निर्दिष्ट संतोषजनक लंबाई पहुँचने के पहले निविष्ट-प्रवाह समाप्त हो गई।"
 
 #: resource/conn_shared_res.src#STR_NO_INPUTSTREAM.STRING.TEXT
 msgid  "The input stream was not set."
-msgstr "इनपुट धारा सेट नहीं था."
+msgstr "निविष्ट-प्रवाह नियत नहीं था।"
 
 #: resource/conn_shared_res.src#STR_NO_ELEMENT_NAME.STRING.TEXT
 msgid  "There is no element named '$name$'."
-msgstr "'$name$' नामक कोई तत्व नहीं है."
+msgstr "'$name$' नामक कोई तत्व नहीं है।"
 
 #: resource/conn_shared_res.src#STR_INVALID_BOOKMARK.STRING.TEXT
 msgid  "Invalid bookmark value"
@@ -185,517 +185,542 @@ msgstr "अवैध पुस्तचिह्न मान"
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.STRING.TEXT
 msgid  "Privilege not granted: Only table privileges can be granted."
-msgstr "अधिकार नहीं दिया गया: केवल सारणी अधिकार दिया जा सकता है."
+msgstr "अधिकार नहीं दिया गया: केवल सारणी अधिकार दिया जा सकता है।"
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.STRING.TEXT
 msgid  "Privilege not revoked: Only table privileges can be revoked."
-msgstr "अधिकार वापस नहीं लिया गया: केवल सारणी अधिकार वापस लिया जा सकता है."
+msgstr "अधिकार वापस नहीं लिया गया: केवल सारणी अधिकार वापस लिया जा सकता है।"
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.STRING.TEXT
 msgid  "The column name '$columnname$' is unknown."
-msgstr "स्तंभ नाम '$columnname$' अनजान है."
+msgstr "स्तंभ नाम '$columnname$' अनजान है।"
 
 #: resource/conn_shared_res.src#STR_ERRORMSG_SEQUENCE.STRING.TEXT
 msgid  "Function sequence error."
-msgstr "प्रकार्य शृंखला त्रुटि."
+msgstr "प्रकार्य अनुक्रम त्रुटि।"
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX.STRING.TEXT
 msgid  "Invalid descriptor index."
-msgstr "अवैध विवेचक सूची."
+msgstr "अवैध विवेचक सूची।"
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.STRING.TEXT
 msgid  "The driver does not support the function '$functionname$'."
-msgstr "यह ड्राइवर '$functionname$' प्रकार्य का समर्थन नहीं करता है."
+msgstr "यह ड्राइवर '$functionname$' प्रकार्य का समर्थन नहीं करता है।"
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.STRING.TEXT
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr "यह ड्राइवर '$featurename$' के लिए प्रकार्यात्मकता का समर्थन नहीं करती है. यह लागू नहीं है."
+msgstr "यह ड्राइवर '$featurename$' के लिए प्रकार्यात्मकता का समर्थन नहीं करती है। यह लागू नहीं है।"
 
 #: resource/conn_shared_res.src#STR_FORMULA_WRONG.STRING.TEXT
 msgid  "The formula for TypeInfoSettings is wrong!"
-msgstr ""
+msgstr "TypeInfoSettings के लिये सूत्र गलत है!"
 
 #: resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.STRING.TEXT
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr "स्ट्रिंग '$string$' $maxlen$ वर्ण की अधिकतम लम्बाई से अधिक है जब लक्ष्य वर्ण सेट '$charset$' में बदला जाता है."
+msgstr "स्ट्रिंग '$string$' $maxlen$ अक्षर की अधिकतम लम्बाई से अधिक है जब लक्ष्य अक्षर सेट '$charset$' में बदला जाता है।"
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr "स्ट्रिंग '$string$' केँ '$charset$' एन्कोडिंग के प्रयोग से बदला नहीं जा सका."
+msgstr "स्ट्रिंग '$string$' को '$charset$' कुट-लेखन के प्रयोग से बदला नहीं जा सका।"
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
 msgid  "The connection URL is invalid."
-msgstr "कनेक्शन URL अवैध है."
+msgstr "संयोजन URL अवैध है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. It is too complex."
-msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है. यह बहुत जटिल है."
+msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है। यह बहुत जटिल है।"
 
 #: resource/conn_shared_res.src#STR_OPERATOR_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. The operator is too complex."
-msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है. यह ऑपरेटर बहुत जटिल है."
+msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है। प्रचालक बहुत जटिल है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.STRING.TEXT
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है. 'LIKE' स्तंभ नाम के साथ केवल प्रयोग किया जा सकता है."
+msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है। इस तरह के स्तंभ नाम के साथ 'LIKE'  का प्रयोग नहीं किया जा सकता है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.STRING.TEXT
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है. 'LIKE' स्ट्रिंग वितर्क के साथ प्रयोग किया जा सकता है."
+msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है। 'LIKE' स्ट्रिंग वितर्क के साथ ही प्रयोग किया जा सकता है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
-msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है. 'NOT LIKE' स्थिति बहुत जटिल है."
+msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है। 'NOT LIKE' स्थिति बहुत जटिल है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.STRING.TEXT
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है. 'LIKE' स्थिति कथन में बीच में वाइल्ड कार्ड समाहित है."
+msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है। 'LIKE' स्थिति कथन के बीच में वाइल्ड कार्ड समाहित है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.STRING.TEXT
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है. 'LIKE' स्थिति में कई वाइल्ड कार्ड समाहित है."
+msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है। 'LIKE' स्थिति में कई वाइल्ड कार्ड समाहित है।"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.STRING.TEXT
 msgid  "The column name '$columnname$' is not valid."
-msgstr "यह स्तंभ नाम '$columnname$' वैध नहीं है."
+msgstr "यह स्तंभ नाम '$columnname$' वैध नहीं है।"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.STRING.TEXT
 msgid  "The statement contains an invalid selection of columns."
-msgstr "इस कथन में स्तंभों के अवैध चुनाव हैं."
+msgstr "इस कथन में स्तंभों के अवैध चुनाव हैं।"
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.STRING.TEXT
 msgid  "The column at position '$position$' could not be updated."
-msgstr "स्थिति '$position$' पर स्तंभ को अद्यतन नहीं किया जा सकता है."
+msgstr "स्थिति '$position$' पर स्तंभ को अद्यतन नहीं किया जा सकता है।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.STRING.TEXT
 msgid  "The file $filename$ could not be loaded."
-msgstr "फ़ाइल $filename$ को लोड नहीं किया जा सका."
+msgstr "फ़ाइल $filename$ को अभिभारित नहीं किया जा सका।"
 
 #: resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.STRING.TEXT
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr "फ़ाइल को लोड करने के प्रयास निम्नलिखित त्रुटि संदेश के रूप में ($exception_type$) आया:\n\n$error_message$"
+msgstr "फ़ाइल को अभिभारित करने के प्रयास में निम्नलिखित त्रुटि संदेश ($exception_type$) आया:\n\n$error_message$"
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
 msgid  "The type could not be converted."
-msgstr "यह प्रकार नहीं बदला जा सका."
+msgstr "यह प्रकार नहीं बदला जा सका।"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not append column: invalid column descriptor."
-msgstr "स्तंभ जोड़ नहीं सका: अवैध वस्तु विवेचक."
+msgstr "स्तंभ जोड़ नहीं सका: अवैध वस्तु विवेचक।"
 
 #: resource/conn_shared_res.src#STR_INVALID_GROUP_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create group: invalid object descriptor."
-msgstr "समूह नहीं बना सका: अवैध वस्तु विवेचक."
+msgstr "समूह नहीं बना सका: अवैध वस्तु विवेचक।"
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create index: invalid object descriptor."
-msgstr "सूची नहीं बना सका: अवैध वस्तु विवेचक."
+msgstr "सूची नहीं बना सका: अवैध वस्तु विवेचक।"
 
 #: resource/conn_shared_res.src#STR_INVALID_KEY_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create key: invalid object descriptor."
-msgstr "कुंजी नहीं बना सका: अवैध वस्तु विवेचक."
+msgstr "कुंजी नहीं बना सका: अवैध वस्तु विवेचक।"
 
 #: resource/conn_shared_res.src#STR_INVALID_TABLE_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create table: invalid object descriptor."
-msgstr "सारणी नहीं बना सका: अवैध वस्तु विवेचक."
+msgstr "सारणी नहीं बना सका: अवैध वस्तु विवेचक।"
 
 #: resource/conn_shared_res.src#STR_INVALID_USER_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create user: invalid object descriptor."
-msgstr "उपयोक्ता नहीं बना सका: अवैध वस्तु विवेचक."
+msgstr "उपयोक्ता नहीं बना सका: अवैध वस्तु विवेचक।"
 
 #: resource/conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.STRING.TEXT
 msgid  "Could not create view: invalid object descriptor."
-msgstr "दृश्य नहीं बना सका: अवैध वस्तु विवेचक."
+msgstr "दृश्य नहीं बना सका: अवैध वस्तु विवेचक।"
 
 #: resource/conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.STRING.TEXT
 msgid  "Could not create view: no command object."
-msgstr "दृश्य नहीं बना सका: कोई कमांड वस्तु नहीं."
+msgstr "दृश्य नहीं बना सका: कोई कमांड वस्तु नहीं।"
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION.STRING.TEXT
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr "यह कनेक्शन नहीं बनाई जा सकी. संभवतः जरुरी डेटा प्रदाता संस्थापित नहीं है."
+msgstr "यह संयोजन नहीं बनाई जा सकी। संभवतः जरुरी आकड़ा प्रदाता संस्थापित नहीं है।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr "यह सूची मिटाई नहीं जा सकी. फ़ाइल तंत्र की पहुँच लेने के दौरान एक अनजान त्रुटि आई."
+msgstr "यह सूची मिटाई नहीं जा सकी। फ़ाइल तंत्र की पहुँच लेने के दौरान एक अनजान त्रुटि आई।"
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
 msgid  "The index could not be created. Only one column per index is allowed."
-msgstr "यह सूची बनाई नहीं जा सकी. प्रति सूची केवल एक स्तंभ अनुमति प्राप्त है."
+msgstr "यह सूची बनाई नहीं जा सकी। केवल एक स्तंभ प्रति सूची को ही अनुमति प्राप्त है।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.STRING.TEXT
 msgid  "The index could not be created. The values are not unique."
-msgstr "यह सूची बनाई नहीं जा सकी. यह मान अद्वितीय नहीं है."
+msgstr "यह सूची बनाई नहीं जा सकी। यह मान अद्वितीय नहीं है।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.STRING.TEXT
 msgid  "The index could not be created. An unknown error appeared."
-msgstr "यह सूची बनाई नहीं जा सकी. एक अनजान त्रुटि आई."
+msgstr "यह सूची बनाई नहीं जा सकी। एक अनजान त्रुटि आई।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.STRING.TEXT
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr "यह सूची बनाई नहीं जा सकी. यह फ़ाइल '$filename$' दूसरी सूची के द्वारा प्रयोग की गई है."
+msgstr "यह सूची बनाई नहीं जा सकी। यह फ़ाइल '$filename$' दूसरी सूची के द्वारा प्रयोग की गई है।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.STRING.TEXT
 #, fuzzy
 msgid  "The index could not be created. The size of the chosen column is too big."
-msgstr "सूची बनाई नहीं जा सकी. चुने गए स्तंभ का आकार काफी बड़ा है."
+msgstr "सूची बनाई नहीं जा सकी। चुने गए स्तंभ का आकार काफी बड़ा है।"
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
 msgid  "The name '$name$' doesn't match SQL naming constraints."
-msgstr "यह '$name$' नाम SQL नामकरण निर्धारकों से मेल नहीं खाता है."
+msgstr "यह '$name$' नाम SQL नामकरण निर्धारकों से मेल नहीं खाता है।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
 msgid  "The file $filename$ could not be deleted."
-msgstr "यह फ़ाइल $filename$ मिटायी नहीं जा सकी."
+msgstr "यह फ़ाइल $filename$ मिटायी नहीं जा सकी।"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
 msgid  "Invalid column type for column '$columnname$'."
-msgstr "स्तंभ '$columnname$' के लिए अवैध स्तंभ प्रकार."
+msgstr "स्तंभ '$columnname$' के लिए अवैध स्तंभ प्रकार।"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.STRING.TEXT
 msgid  "Invalid precision for column '$columnname$'."
-msgstr "स्तंभ '$columnname$' के लिए अवैध शुद्धता."
+msgstr "स्तंभ '$columnname$' के लिए अवैध शुद्धता।"
 
 #: resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.STRING.TEXT
 msgid  "Precision is less than scale for column '$columnname$'."
-msgstr "स्तंभ '$columnname$' के लिए शुद्धता मापक से कम है."
+msgstr "स्तंभ '$columnname$' के लिए शुद्धता परिमाप से कम है।"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.STRING.TEXT
 msgid  "Invalid column name length for column '$columnname$'."
-msgstr "'$columnname$' स्तंभ के लिए अवैध स्तंभ नाम लंबाई."
+msgstr "'$columnname$' स्तंभ के लिए अवैध स्तंभ नाम लंबाई।"
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
 msgid  "Duplicate value found in column '$columnname$'."
-msgstr "'$columnname$' स्तंभ में मान की नक़ल पाई गई."
+msgstr "'$columnname$' स्तंभ में मान की नक़ल पाई गई।"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr "'$columnname$' स्तंभ एक \"Decimal\" प्रकार के रूप में परिभाषित किया गया है, अधिकतम लंबाई $precision$ वर्ण ($scale$ दाशमिक स्थान) है.\n\nयह निर्दिष्ट \"$value$ मान स्वीकार्य अंकों की संख्या से अधिक लंबी है."
+msgstr "'$columnname$' स्तंभ एक \"Decimal\" प्रकार के रूप में परिभाषित किया गया है, अधिकतम लंबाई $precision$ अक्षर ($scale$ दाशमिक स्थान) है।\n\nयह निर्दिष्ट \"$value$ मान स्वीकार्य अंकों की संख्या से अधिक लंबी है।"
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr "यह '$columnname$' स्तंभ बदली नहीं जा सकी. संभवतः यह फ़ाइल तंत्र संरक्षित है."
+msgstr "यह '$columnname$' स्तंभ बदली नहीं जा सकी। संभवतः फ़ाइल तंत्र लेखन-रक्षित है।"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr "यह '$columnname$' स्तंभ अद्यतन नहीं किया जा सका. यह मान उस स्तंभ के लिए अवैध है."
+msgstr "यह '$columnname$' स्तंभ अद्यतन नहीं किया जा सका। यह मान उस स्तंभ के लिए अवैध है।"
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr "यह '$columnname$' स्तंभ जोड़ा नहीं जा सका. संभवतः फ़ाइल तंत्र लिखे जाने से रक्षित है."
+msgstr "यह '$columnname$' स्तंभ जोड़ा नहीं जा सका। संभवतः फ़ाइल तंत्र लेखन-रक्षित है।"
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr "'$position$' स्थिति पर यह स्तंभ नहीं छोड़ा जा सका. संभवतः फ़ाइल तंत्र लेखन रक्षित हो सकता है."
+msgstr "यह स्तंभ इस '$position$' स्थिति पर नहीं छोड़ा जा सका। संभवतः फ़ाइल तंत्र लेखन-रक्षित है।"
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr "यह सारणी '$tablename$' छोड़ी नहीं जा सकती है. संभवतः फ़ाइल तंत्र लेखन रक्षित हो सकता है."
+msgstr "यह सारणी '$tablename$' छोड़ी नहीं जा सकती है। संभवतः फ़ाइल तंत्र लेखन-रक्षित है।"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
 msgid  "The table could not be altered."
-msgstr "यह सारणी नहीं बदली जा सकी."
+msgstr "यह सारणी नहीं बदली जा सकी।"
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
 msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
-msgstr "यह '$filename$' फ़ाइल एक अवैध (या अपरिचित) dBase फ़ाइल है."
+msgstr "यह '$filename$' फ़ाइल एक अवैध (या अपरिचित) dBase फ़ाइल है।"
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
 msgid  "Cannot open Evolution address book."
-msgstr "एवोल्यूशन पता पुस्तिका खोल नहीं सका."
+msgstr "एवोल्यूशन पता पुस्तिका खोल नहीं सका।"
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
 msgid  "Can only sort by table columns."
-msgstr "सारणी स्तंभ से केवल छाँट सकता है."
+msgstr "सारणी स्तंभ से केवल छाँट सकता है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.STRING.TEXT
 msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
-msgstr "यह प्रश्न निष्पादित नहीं की जा सकती है. यह बहुत जटिल है. केवल \"COUNT(*)\" समर्थित है."
+msgstr "यह प्रश्न निष्पादित नहीं की जा सकती है। यह बहुत जटिल है. केवल \"COUNT(*)\" समर्थित है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.STRING.TEXT
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
-msgstr "यह प्रश्न निष्पादित नहीं की जा सकती है. 'BETWEEN' तर्क सही नहीं है."
+msgstr "यह प्रश्न निष्पादित नहीं की जा सकती है। 'BETWEEN' तर्क सही नहीं है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.STRING.TEXT
 msgid  "The query can not be executed. The function is not supported."
-msgstr "यह प्रश्न निष्पादित नहीं की जा सकती है. यह प्रकार्य समर्थित नहीं है."
+msgstr "यह प्रश्न निष्पादित नहीं की जा सकती है। यह प्रकार्य समर्थित नहीं है।"
 
 #: resource/conn_shared_res.src#STR_TABLE_READONLY.STRING.TEXT
 msgid  "The table can not be changed. It is read only."
-msgstr "यह सारणी बदली नहीं जा सकती है. यह केवल पढ़ने के लिए है."
+msgstr "यह सारणी बदली नहीं जा सकती है। यह केवल पढ़ने के लिए है।"
 
 #: resource/conn_shared_res.src#STR_DELETE_ROW.STRING.TEXT
 msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
-msgstr "यह पंक्ति मिटाई नहीं जा सकी. यह विकल्प \"Display inactive records\" सेट है."
+msgstr "यह पंक्ति मिटाई नहीं जा सकी। यह विकल्प \"Display inactive records\" सेट है।"
 
 #: resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.STRING.TEXT
 msgid  "The row could not be deleted. It is already deleted."
-msgstr "यह पंक्ति मिटाई नहीं जा सकी. यह पहले से मिटाया हुआ है."
+msgstr "यह पंक्ति मिटाई नहीं जा सकी। यह पहले से मिटाया हुआ है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.STRING.TEXT
 msgid  "The query can not be executed. It contains more than one table."
-msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है. इसमें एकाधिक सारणी है."
+msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है। इसमें एकाधिक सारणी है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_TABLE.STRING.TEXT
 msgid  "The query can not be executed. It contains no valid table."
-msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है. इसमें कोई वैध सारणी नहीं है."
+msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है। इसमें कोई वैध सारणी नहीं है।"
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.STRING.TEXT
 msgid  "The query can not be executed. It contains no valid columns."
-msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है. इसमें कोई वैध स्तंभ नहीं है."
+msgstr "यह प्रश्न निष्पादित नहीं किया जा सकता है। इसमें कोई वैध स्तंभ नहीं है।"
 
 #: resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.STRING.TEXT
 msgid  "The count of the given parameter values doesn't match the parameters."
-msgstr "दिए गए पैरामीटर मान की गिनती इस पैरामीटर से मेल नहीं खाती है."
+msgstr "दिए गए प्रचाल मान की गिनती इस प्रचाल से मेल नहीं खाती है।"
 
 #: resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.STRING.TEXT
 msgid  "The URL '$URL$' is not valid. A connection can not be created."
-msgstr ""
+msgstr "यह URL '$URL$' मान्य नहीं है। संयोजन नहीं किया जा सकता।"
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME.STRING.TEXT
 msgid  "The driver class '$classname$' could not be loaded."
-msgstr "'$classname$' ड्राइवर वर्ग लोड नहीं किया जा सका."
+msgstr "'$classname$' ड्राइवर वर्ग लोड नहीं किया जा सका।"
 
 #: resource/conn_shared_res.src#STR_NO_JAVA.STRING.TEXT
 msgid  "No Java installation could be found. Please check your installation."
-msgstr "कोई जावा संस्थापन नहीं मिल सका. कृपया अपना संस्थापन जाँचें."
+msgstr "कोई जावा संस्थापन नहीं मिल सका। कृपया अपना संस्थापन जाँचें।"
 
 #: resource/conn_shared_res.src#STR_NO_RESULTSET.STRING.TEXT
 msgid  "The execution of the query doesn't return a valid result set."
-msgstr "इस प्रश्न का निष्पादन कोई वैध परिणाम सेट नहीं देता है."
+msgstr "इस प्रश्न का निष्पादन कोई वैध परिणाम समूह नहीं देता है।"
 
 #: resource/conn_shared_res.src#STR_NO_ROWCOUNT.STRING.TEXT
 msgid  "The execution of the update statement doesn't effect any rows."
-msgstr "अद्यतन कथन का निष्पादन किसी पंक्ति को प्रभावित नहीं करता है."
+msgstr "अद्यतन कथन का निष्पादन किसी पंक्ति को प्रभावित नहीं करता है।"
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME_PATH.STRING.TEXT
 msgid  "The additional driver class path is '$classpath$'."
-msgstr "अतिरिक्त ड्राइवर वर्ग पथ '$classpath$' है."
+msgstr "अतिरिक्त ड्राइवर वर्ग पथ '$classpath$' है।"
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.STRING.TEXT
 msgid  "The type of parameter at position '$position$' is unknown."
-msgstr "'$position$' स्थिति पर पैरामीटर का प्रकार अज्ञात है."
+msgstr "इस प्रकार का प्राचल '$position$' स्थिति पर अज्ञात है।"
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.STRING.TEXT
 msgid  "The type of column at position '$position$' is unknown."
-msgstr "'$position$' स्थिति पर स्तंभ का प्रकार अज्ञात है."
+msgstr "इस प्रकार का स्तंभ '$position$' स्थिति पर अज्ञात है।"
 
 #: resource/conn_shared_res.src#STR_NO_KDE_INST.STRING.TEXT
 msgid  "No suitable KDE installation was found."
-msgstr "कोई उपयुक्त KDE संस्थापन नहीं मिला."
+msgstr "कोई उपयुक्त KDE संस्थापन नहीं मिला।"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.STRING.TEXT
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "KDE पता पुस्तिका के अभिगमन के लिये KDE संस्करण $major$.$minor$ या उच्च की जरुरत है।"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr "पाई गई यह केडीई संस्करण बहुत नई है. केवल केडीई का अद्यतन संस्करण $major$.$minor$ ही इस उत्पाद के साथ काम करने के जाना जाता है.\n"
+msgstr "पाया गया KDE संस्करण नवीनतम है। KDE का केवल इस संस्करण तक  $major$.$minor$ ही इस उत्पाद के साथ काम करता है।\n"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr "यदि आप निश्चित हैं कि आपका केडीई संस्करण काम करता है, आप निम्नलिखित मूल मैक्रोज को इस संस्करण जाँच को निष्क्रिय करने के लिए निष्दातित कर सकते हैं:\n\n"
+msgstr "यदि आप निश्चिंत हैं कि आपका KDE संस्करण काम करता है, तो आप निम्नलिखित मूल मैक्रोज को निष्दातित कर इसके संस्करण जाँच को निष्क्रिय कर सकते हैं:\n\n"
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
 msgid  "Parameters can appear only in prepared statements."
-msgstr "पैरामीटर केवल तैयार कथनों में प्रकट होता है."
+msgstr "केवल तैयार कथनों में प्राचल प्रकट होता है।"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "No such table!"
 msgstr "कोई ऐसी सारणी नहीं!"
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
 msgid  "No suitable Mac OS installation was found."
-msgstr "कोई उपयुक्त मैक ओएस संस्थापन नहीं मिला."
+msgstr "कोई उपयुक्त मैक ओएस संस्थापन नहीं मिला।"
 
 #: resource/conn_shared_res.src#STR_NO_DISK_SPACE.STRING.TEXT
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr "यह डेटाबेस फ़ाइल '$filename$' बनाई नहीं जा सकी. कृपया अपना डिस्क स्थान जाँचें."
+msgstr "यह डेटाबेस फ़ाइल '$filename$' बनाई नहीं जा सकी। कृपया अपना डिस्क स्थान जाँचें।"
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr "यह डेटाबेस '$databasename$' बनाई नहीं जा सकी क्योंकि कमांड '$progname$' निष्पादित नहीं किया जा सका."
+msgstr "यह डेटाबेस '$databasename$' बनाई नहीं जा सकी क्योंकि कमांड '$progname$' निष्पादित नहीं किया जा सका।"
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr "मौजूदा डेटाबेस को बदलने की जरूरत है. कृपया नियंत्रण उपयोक्ता और कूटशब्द को डालें."
+msgstr "मौजूदा डेटाबेस को बदलने की जरूरत है। कृपया नियंत्रण उपयोक्ता और कूटशब्द को डालें।"
 
 #: resource/conn_shared_res.src#STR_USER_NO_DELETE.STRING.TEXT
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr "यह उपयोक्ता मिटाया नहीं जा सकता. अन्यथा डेटाबेस एक स्थिर स्थिति में रहता है."
+msgstr "यह उपयोक्ता मिटाया नहीं जा सकता। अन्यथा डेटाबेस एक अस्थिर स्थिति में रहेगा।"
 
 #: resource/conn_shared_res.src#STR_NO_STROAGE.STRING.TEXT
 msgid  "The connection can not be established. No storage or URL was given."
-msgstr "यह कनेक्शन स्थापित नहीं किया जा सकता है. कोई स्टोरेज या URL नहीं दिया गया था."
+msgstr "यह संयोजन स्थापित नहीं किया जा सकता है। कोई स्टोरेज या URL नहीं दिया गया था।"
 
 #: resource/conn_shared_res.src#STR_INVALID_FILE_URL.STRING.TEXT
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr "इस दिए गए यूआरएल में कोई वैध स्थानीय फ़ाइल तंत्र पथ नहीं है. यह दिया गया यूआरएल का कोई वैध स्थानीय फ़ाइल तंत्र पथ नहीं है. कृपया इस स्थान को अपने डेटाबेस फ़ाइल में जाँचें."
+msgstr "इस दिए गए URL में कोई वैध स्थानीय फ़ाइल तंत्र पथ नहीं है। कृपया अपने डेटाबेस फ़ाइल के स्थान को जाँचें।"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
 msgid  "An error occured while obtaining the connection's table container."
-msgstr "एक त्रुटि आई जब कनेक्शन के सारणी कंटेनर को पाया जा रहा था."
+msgstr "एक त्रुटि आई जब संयोजन के सारणी कंटेनर को पाया जा रहा था।"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
 msgid  "An error occured while creating the table editor dialog."
-msgstr "सारणी संपादक संवाद बनाने के दौरान एक त्रुटि आई."
+msgstr "सारणी संपादक संवाद बनाने के दौरान एक त्रुटि आई।"
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 msgid  "There is no table named '$tablename$'."
-msgstr "'$tablename$' नामक कोई सारणी नहीं है."
+msgstr "'$tablename$' नामक कोई सारणी नहीं है।"
 
 #: resource/conn_shared_res.src#STR_NO_DOCUMENTUI.STRING.TEXT
 msgid  "The provided DocumentUI is not allowed to be NULL."
-msgstr "यह दिया गया DocumentUI रिक्त होने के लिए अनुमति प्राप्त नहीं है."
+msgstr "यह दिया गया दस्तावेजUI को रिक्त होने के लिए अनुमति प्राप्त नहीं है।"
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
 msgid  "The record operation has been vetoed."
-msgstr "रिकार्ड संक्रिया को बीटो किया गया है."
+msgstr "अभिलेख प्रचालन को निषिद्ध किया गया।"
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
 msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr "कथन में एक या अधिक प्रश्नों में चक्रीय संदर्भ समाहित है."
+msgstr "कथन में एक या अधिक उप-प्रश्नों के चक्रीय संदर्भ समाहित है।"
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
 msgid  "The name must not contain any slashes ('/')."
-msgstr "नाम को निश्चित रूप से किसी ('/') स्लैश को शामिल नहीं करना चाहिए."
+msgstr "नाम में ('/') स्लैश को निश्चित रूप से शामिल नहीं करना चाहिए।"
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
 msgid  "$1$ is no SQL conform identifier."
-msgstr ""
+msgstr "$1$  SQL का अनुरुप पहचान कर्त्ता नहीं है।"
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
 msgid  "Query names must not contain quote characters."
-msgstr "प्रश्न नाम उद्धरण वर्ण जरूर समाहित नहीं रखना चाहिए."
+msgstr "प्रश्न नाम में उद्धरण अक्षर निश्चित रुप से समाहित नहीं रखना चाहिए।"
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
 msgid  "The name '$1$' is already in use in the database."
-msgstr "नाम '$1$' पहले से डेटाबेस में प्रयोग में है."
+msgstr "नाम '$1$' पहले से डेटाबेस में प्रयुक्त है।"
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
 msgid  "No connection to the database exists."
-msgstr "डेटाबेस में कोई कनेक्शन मौजूद नहीं है."
+msgstr "डेटाबेस से कोई संयोजन उपलब्ध नहीं है।"
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
 msgid  "No $1$ exists."
-msgstr "कोई $1$ मौजूद नहीं है."
+msgstr "कोई $1$ मौजूद नहीं है।"
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr "पूरे सारणी अंतर्वस्तु दिखाने में असमर्थ. कृपया फ़िल्टर लागू करें."
+msgstr "सारणी के सम्पुर्ण अंतर्वस्तु दिखाने में असमर्थ है। कृपया छलनी लगाएँ।"
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Adabas D"
 msgstr "एडाबेस डी"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
 msgid  "MySQL (JDBC)"
-msgstr "माइएसक्यूए (जेडीबीसी)"
+msgstr "माइएसक्यूएल (जेडीबीसी)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
 msgid  "MySQL (ODBC)"
-msgstr "माइएसक्यूए (ओडीबीसी)"
+msgstr "माइएसक्यूएल (ओडीबीसी)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
 msgid  "MySQL (Native)"
-msgstr ""
+msgstr "माइएसक्यूएल (मूल )"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Outlook Address Book"
 msgstr "माइक्रोसॉफ़्ट आउटलुक पता पुस्तिका"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Windows Address Book"
 msgstr "माइक्रोसॉफ़्ट विंडोज़ पता पुस्तिका"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
 msgid  "SeaMonkey Address Book"
-msgstr ""
+msgstr "सीमंकी पता पुस्तिका"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Thunderbird Address Book"
 msgstr "थंडरबर्ड पता पुस्तिका"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "LDAP Address Book"
 msgstr "एलडीएपी पता पुस्तिका"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
 msgid  "SeaMonkey Address Book"
-msgstr ""
+msgstr "सीमंकी पता पुस्तिका"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Thunderbird Address Book"
 msgstr "थंडरबर्ड पता पुस्तिका"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "LDAP Address Book"
 msgstr "एलडीएपी पता पुस्तिका"
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "HSQL database engine"
 msgstr "एचएसक्यूएल डेटाबेस इंजन"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Mac OS X Address Book"
 msgstr "मैक ओएस एक्स पता पुस्तिका"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "एवोल्यूशन एलडीएपी"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "ग्रूपवाइज"
 
 #: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ODBC"
 msgstr "ओडीबीसी"
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "KDE Address Book"
 msgstr "केडीई पता पुस्तिका"
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Text"
 msgstr "पाठ"
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "स्प्रेडशीट"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "JDBC"
 msgstr "जेडीबीसी"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Oracle JDBC"
 msgstr "ओरेकल जेडीबीसी"
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "dBASE"
 msgstr "डीबेस"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution Local"
 msgstr "एवोल्यूशन स्थानीय"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "एवोल्यूशन एलडीएपी"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "ग्रूपवाइज"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ADO"
 msgstr "एडीओ"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access"
 msgstr "माइक्रोसॉफ़्ट एक्सेस"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access 2007"
 msgstr "माइक्रोसॉफ़्ट एक्सेस 2007"

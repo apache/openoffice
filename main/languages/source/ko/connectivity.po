@@ -341,361 +341,451 @@ msgid  "The index could not be created. The size of the chosen column is too big
 msgstr "색인을 만들 수 없습니다. 선택된 열의 크기가 너무 큽니다."
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The name '$name$' doesn't match SQL naming constraints."
 msgstr "이름 '$name$'은(는) SQL 명명 규칙에 위반됩니다."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The file $filename$ could not be deleted."
 msgstr "$filename$ 파일을 삭제할 수 없습니다."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Invalid column type for column '$columnname$'."
 msgstr "'$columnname$' 행에 사용할 수 없는 행 형식"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.STRING.TEXT
+#, fuzzy
 msgid  "Invalid precision for column '$columnname$'."
 msgstr "'$columnname$' 행이 부정확합니다."
 
 #: resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Precision is less than scale for column '$columnname$'."
 msgstr "정확도가 '$columnname$' 행의 배율보다 낮습니다."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Invalid column name length for column '$columnname$'."
 msgstr "'$columnname$' 행의 행 이름 길이가 잘못되었습니다."
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Duplicate value found in column '$columnname$'."
 msgstr "'$columnname$' 행의 값 복제하기"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 msgstr "'$columnname$' 행은 최대 길이가 $precision$ 개 문자인  \"십진수\" 형식으로 설정되었습니다.($scale$ 십진수 위치)\n\n입력된 값 \"$value$ 은(는) 허용된 자리수보다 깁니다."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
 msgstr "'$columnname$' 행은 변경할 수 없습니다. 파일 시스템에서 쓰기 보호를 설정했습니다."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
 msgstr "'$columnname$' 행은 업데이트할 수 없습니다. 행의 값이 잘못된 값입니다."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
 msgstr "'$columnname$' 행에 추가를 할 수 없습니다. 파일 시스템에서 쓰기 보호를 설정했습니다."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
+#, fuzzy
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
 msgstr "'$position$' 위치의 행은 삭제할 수 없습니다. 파일 시스템에서 쓰기 보호 설정을 했습니다."
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
+#, fuzzy
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
 msgstr "'$tablename$' 테이블은 삭제할 수 없습니다. 파일 시스템에서 쓰기 보호 설정을 했습니다."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "The table could not be altered."
 msgstr "테이블을 바꿀 수 없습니다."
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
 msgstr "'$filename$' 파일은 잘못되었거나 알 수 없는 dBase 파일입니다."
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
+#, fuzzy
 msgid  "Cannot open Evolution address book."
 msgstr "Evolution 주소록을 열 수 없습니다."
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "Can only sort by table columns."
 msgstr "표의 컬럼으로만 정렬할 수 있습니다."
 
 #: resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
 msgstr "쿼리가 너무 복잡하여 실행할 수 없습니다. \"COUNT(*)\" 만 지원됩니다."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
 msgstr "쿼리를 실행할 수 없습니다. 'BETWEEN' 인수가 정확하지 않습니다."
 
 #: resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. The function is not supported."
 msgstr "쿼리를 실행할 수 없습니다. 지원하지 않는 기능입니다."
 
 #: resource/conn_shared_res.src#STR_TABLE_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "The table can not be changed. It is read only."
 msgstr "테이블을 변경할 수 없습니다. 읽기 전용입니다."
 
 #: resource/conn_shared_res.src#STR_DELETE_ROW.STRING.TEXT
+#, fuzzy
 msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
 msgstr "열을 삭제할 수 없습니다.  \"비활성 레코드 표시\" 옵션이 설정되어 있습니다."
 
 #: resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The row could not be deleted. It is already deleted."
 msgstr "열을 삭제할 수 없습니다. 이미 삭제된 열입니다."
 
 #: resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It contains more than one table."
 msgstr "쿼리를 실행할 수 없습니다. 하나 이상의 테이블을 포함하고 있습니다."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It contains no valid table."
 msgstr "쿼리를 실행할 수 없습니다. 유효한 테이블을 포함하고 있지 않습니다."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It contains no valid columns."
 msgstr "쿼리를 실행할 수 없습니다. 유효한 행을 포함하고 있지 않습니다."
 
 #: resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "The count of the given parameter values doesn't match the parameters."
 msgstr "주어진 매개 변수 값의 개수가 매개 변수와 일치하지 않습니다."
 
 #: resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.STRING.TEXT
+#, fuzzy
 msgid  "The URL '$URL$' is not valid. A connection can not be created."
 msgstr "URL '$URL$' 이(가) 올바르지 않아 연결이 생성되지 않았습니다."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME.STRING.TEXT
+#, fuzzy
 msgid  "The driver class '$classname$' could not be loaded."
 msgstr "'$classname$' 드라이버 클래스를 불러올 수 없습니다."
 
 #: resource/conn_shared_res.src#STR_NO_JAVA.STRING.TEXT
+#, fuzzy
 msgid  "No Java installation could be found. Please check your installation."
 msgstr "Java 설치본을 찾을 수 없습니다. 설치본을 확인하십시오."
 
 #: resource/conn_shared_res.src#STR_NO_RESULTSET.STRING.TEXT
+#, fuzzy
 msgid  "The execution of the query doesn't return a valid result set."
 msgstr "쿼리가 유효하지 않은 결과 집합을 반환합니다."
 
 #: resource/conn_shared_res.src#STR_NO_ROWCOUNT.STRING.TEXT
+#, fuzzy
 msgid  "The execution of the update statement doesn't effect any rows."
 msgstr "업데이트 명령은 열에 영향을 주지 않습니다."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME_PATH.STRING.TEXT
+#, fuzzy
 msgid  "The additional driver class path is '$classpath$'."
 msgstr "추가 드라이버 클래스의 경로는 '$classpath$'입니다."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "The type of parameter at position '$position$' is unknown."
 msgstr "'$position$' 위치의 매개 변수 형식을 알 수 없습니다."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "The type of column at position '$position$' is unknown."
 msgstr "'$position$' 위치의 행 형식을 알 수 없습니다."
 
 #: resource/conn_shared_res.src#STR_NO_KDE_INST.STRING.TEXT
+#, fuzzy
 msgid  "No suitable KDE installation was found."
 msgstr "적절한 KDE 설치 파일을 찾을 수 없습니다."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.STRING.TEXT
+#, fuzzy
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
 msgstr "KDE 주수록에 접근하려면 KDE $major$.$minor$ 버전이나 그 이상의 버전이 필요합니다."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
+#, fuzzy
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
 msgstr "KDE 버전이 너무 높습니다. $major$.$minor$ 버전의 KDE 에서만 이 제품을 사용할 수 있습니다.\n"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
+#, fuzzy
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
 msgstr "KDE가 잘 동작하면 다음 매크로를 실행시켜 버전 확인 기능을 동작하지 않게 하십시오.\n\n"
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
+#, fuzzy
 msgid  "Parameters can appear only in prepared statements."
 msgstr "매개 변수는 준비된 명령문에만 표시될 수 있습니다."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "No such table!"
 msgstr "해당 테이블이 없습니다!"
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "No suitable Mac OS installation was found."
 msgstr "Mac OS 용 설치 파일을 찾을 수 없습니다."
 
 #: resource/conn_shared_res.src#STR_NO_DISK_SPACE.STRING.TEXT
+#, fuzzy
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
 msgstr "데이터베이스 파일 '$filename$'을(를) 생성할 수 없습니다. 디스크의 여유공간을 확인하십시오."
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
 msgstr "'$progname$' 명령을 실행할 수 없어, 데이터베이스 '$databasename$'을(를) 시작할 수 없습니다."
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
+#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
 msgstr "현재 데이터베이스를 변환해야 합니다. 콘트롤 사용자 및 암호를 입력하십시오."
 
 #: resource/conn_shared_res.src#STR_USER_NO_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
 msgstr "이 사용자를 삭제할 수 없습니다. 아니면 데이터베이스가 불안정한 상태입니다."
 
 #: resource/conn_shared_res.src#STR_NO_STROAGE.STRING.TEXT
+#, fuzzy
 msgid  "The connection can not be established. No storage or URL was given."
 msgstr "연결을 할 수 없습니다. 저장소가 없거나 URL 이 잘못되었습니다."
 
 #: resource/conn_shared_res.src#STR_INVALID_FILE_URL.STRING.TEXT
+#, fuzzy
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
 msgstr "입력된 URL 에 유효한 로컬 파일 시스템 경로가 없습니다. 데이터베이스 파일의 위치를 확인하십시오."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "An error occured while obtaining the connection's table container."
 msgstr "연결 테이블 컨테이너를 가져오는 도중 오류가 발생하였습니다."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
+#, fuzzy
 msgid  "An error occured while creating the table editor dialog."
 msgstr "테이블 편집기 대화 상자를 생성하던 도중 오류가 발생하였습니다."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
+#, fuzzy
 msgid  "There is no table named '$tablename$'."
 msgstr "'$tablename$' 테이블이 없습니다."
 
 #: resource/conn_shared_res.src#STR_NO_DOCUMENTUI.STRING.TEXT
+#, fuzzy
 msgid  "The provided DocumentUI is not allowed to be NULL."
 msgstr "제공된 DocumentUI 는 NULL 값을 가질 수 없습니다."
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
+#, fuzzy
 msgid  "The record operation has been vetoed."
 msgstr "레코드 작업이 거부되었습니다."
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
+#, fuzzy
 msgid  "The statement contains a cyclic reference to one or more sub queries."
 msgstr "문장에 하나 이상의 하위 쿼리에 대한 순환참조를 포함하고 있습니다."
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
+#, fuzzy
 msgid  "The name must not contain any slashes ('/')."
 msgstr "이름에 슬래시('/')를 사용할 수 없습니다."
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
+#, fuzzy
 msgid  "$1$ is no SQL conform identifier."
 msgstr "$1$은(는) 올바른 SQL 식별자가 아닙니다."
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
+#, fuzzy
 msgid  "Query names must not contain quote characters."
 msgstr "쿼리 이름에는 따옴표를 사용할 수 없습니다."
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
+#, fuzzy
 msgid  "The name '$1$' is already in use in the database."
 msgstr "$1$'은(는) 데이터베이스에서 이미 사용되고 있는 이름입니다."
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
+#, fuzzy
 msgid  "No connection to the database exists."
 msgstr "존재하는 데이터베이스로의 연결이 없습니다."
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
+#, fuzzy
 msgid  "No $1$ exists."
 msgstr "$1$ 이 존재하지 않습니다."
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
+#, fuzzy
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "완전한 표 내용을 표시할 수 없습니다. 필터를 적용하십시오."
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Adabas D"
 msgstr "Adabas D"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (ODBC)"
 msgstr "MySQL (ODBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (Native)"
 msgstr "MySQL (Native)"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Outlook Address Book"
 msgstr "Microsoft Outlook 주소록"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Windows Address Book"
 msgstr "Microsoft Windows 주소록"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "SeaMonkey Address Book"
 msgstr "SeaMonkey 주소록"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Thunderbird Address Book"
 msgstr "Thunderbird 주소록"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "LDAP Address Book"
 msgstr "LDAP 주소록"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "SeaMonkey Address Book"
 msgstr "SeaMonkey 주소록"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Thunderbird Address Book"
 msgstr "Thunderbird 주소록"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "LDAP Address Book"
 msgstr "LDAP 주소록"
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "HSQL database engine"
 msgstr "HSQL 데이터베이스 엔진"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Mac OS X Address Book"
 msgstr "Mac OS X 주소록"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ODBC"
 msgstr "ODBC"
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "KDE Address Book"
 msgstr "KDE 주소록"
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Text"
 msgstr "텍스트"
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "스프레드시트"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "JDBC"
 msgstr "JDBC"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Oracle JDBC"
 msgstr "Oracle JDBC"
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "dBASE"
 msgstr "dBASE"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution Local"
 msgstr "Evolution Local"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ADO"
 msgstr "ADO"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access"
 msgstr "Microsoft Access"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"

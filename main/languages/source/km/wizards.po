@@ -31,49 +31,1377 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: euro/euro.src#STEP_ZERO.STRING.TEXT
+msgid  "~Cancel"
+msgstr "បោះបង់ "
+
+#: euro/euro.src#STEP_ZERO___1.STRING.TEXT
+msgid  "~Help"
+msgstr "ជំនួយ "
+
+#: euro/euro.src#STEP_ZERO___2.STRING.TEXT
+msgid  "<<~Back"
+msgstr "ថយក្រោយ "
+
+#: euro/euro.src#STEP_ZERO___3.STRING.TEXT
+msgid  "~Convert"
+msgstr "បម្លែង "
+
+#: euro/euro.src#STEP_ZERO___4.STRING.TEXT
+msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
+msgstr "ចំណាំ ៖ មិន​អាច​បម្លែង​ចំនួន​រូបិយប័ណ្ណ​ពី​តំណ​ខាង​ក្រៅ​ និង​កត្តា​បម្លែង​រូបិយប័ណ្ណ​​រូបមន្ត ។"
+
+#: euro/euro.src#STEP_ZERO___5.STRING.TEXT
+msgid  "First, unprotect all sheets."
+msgstr "ដំបូង មិន​ការពារ​សន្លឹក​ទាំងអស់ ។"
+
+#: euro/euro.src#STEP_ZERO___6.STRING.TEXT
+msgid  "Currencies:"
+msgstr "រូបិយប័ណ្ណ ៖"
+
+#: euro/euro.src#STEP_ZERO___7.STRING.TEXT
+msgid  "C~ontinue>>"
+msgstr "បន្ត​>> "
+
+#: euro/euro.src#STEP_ZERO___8.STRING.TEXT
+msgid  "C~lose"
+msgstr "បិទ "
+
+#: euro/euro.src#STEP_CONVERTER.STRING.TEXT
+msgid  "~Entire document"
+msgstr "ឯកសារ​​ទាំងមូល "
+
+#: euro/euro.src#STEP_CONVERTER___1.STRING.TEXT
+msgid  "Selection"
+msgstr "ជម្រើស"
+
+#: euro/euro.src#STEP_CONVERTER___2.STRING.TEXT
+msgid  "Cell S~tyles"
+msgstr "រចនាប័ទ្ម​​ក្រឡា "
+
+#: euro/euro.src#STEP_CONVERTER___3.STRING.TEXT
+msgid  "Currency cells in the current ~sheet"
+msgstr "ក្រឡា​រូបិយប័ណ្ណ​ ក្នុង​សន្លឹក​បច្ចុប្បន្ន "
+
+#: euro/euro.src#STEP_CONVERTER___4.STRING.TEXT
+msgid  "Currency cells in the entire ~document"
+msgstr "ក្រឡា​ទទឹង​រូបិយប័ណ្ណ​ ក្នុង​ឯកសារ​ទាំង​មូល "
+
+#: euro/euro.src#STEP_CONVERTER___5.STRING.TEXT
+msgid  "~Selected range"
+msgstr "ជួរ​​ដែល​​​បាន​​ជ្រើស "
+
+#: euro/euro.src#STEP_CONVERTER___6.STRING.TEXT
+msgid  "Select Cell Styles"
+msgstr "ជ្រើស​​រចនាប័ទ្ម​​ក្រឡា"
+
+#: euro/euro.src#STEP_CONVERTER___7.STRING.TEXT
+msgid  "Select currency cells"
+msgstr "ជ្រើស​​ក្រឡា​​រូបិយប័ណ្ណ"
+
+#: euro/euro.src#STEP_CONVERTER___8.STRING.TEXT
+msgid  "Currency ranges:"
+msgstr "ជួរ​រូបិយប័ណ្ណ ៖"
+
+#: euro/euro.src#STEP_CONVERTER___9.STRING.TEXT
+msgid  "Templates:"
+msgstr "ពុម្ព ៖"
+
+#: euro/euro.src#STEP_AUTOPILOT.STRING.TEXT
+msgid  "Extent"
+msgstr "វិសាលភាព"
+
+#: euro/euro.src#STEP_AUTOPILOT___1.STRING.TEXT
+msgid  "~Single %PRODUCTNAME Calc document"
+msgstr "ឯកសារ %PRODUCTNAME Calc តែ​មួយ "
+
+#: euro/euro.src#STEP_AUTOPILOT___2.STRING.TEXT
+msgid  "Complete ~directory"
+msgstr "ថត​ទាំង​មូល "
+
+#: euro/euro.src#STEP_AUTOPILOT___3.STRING.TEXT
+msgid  "Source Document:"
+msgstr "ឯកសារ​​ប្រភព ៖"
+
+#: euro/euro.src#STEP_AUTOPILOT___4.STRING.TEXT
+msgid  "Source directory:"
+msgstr "ថត​​ប្រភព ៖"
+
+#: euro/euro.src#STEP_AUTOPILOT___5.STRING.TEXT
+msgid  "~Including subfolders"
+msgstr "រួម​បញ្ចូល​ទាំង​ថត​រង "
+
+#: euro/euro.src#STEP_AUTOPILOT___6.STRING.TEXT
+msgid  "Target directory:"
+msgstr "ថត​គោលដៅ ៖"
+
+#: euro/euro.src#STEP_AUTOPILOT___7.STRING.TEXT
+msgid  "Temporarily unprotect sheet without query"
+msgstr "មិន​ការពារ​សន្លឹក​ដែល​គ្មាន​សំណួរ​ជា​បណ្តោះ​អាសន្ន​"
+
+#: euro/euro.src#STEP_AUTOPILOT___10.STRING.TEXT
+msgid  "Also convert fields and tables in text documents"
+msgstr "បម្លែងវាល និង​តារាង​ជា​ឯកសារ​អត្ថបទ"
+
+#: euro/euro.src#STATUSLINE.STRING.TEXT
+msgid  "Conversion status: "
+msgstr "ស្ថានភាព​​បម្លែង ៖"
+
+#: euro/euro.src#STATUSLINE___1.STRING.TEXT
+msgid  "Conversion status of the cell templates:"
+msgstr "ស្ថានភាព​​បម្លែង​របស់​ពុម្ព​​ក្រឡា ៖"
+
+#: euro/euro.src#STATUSLINE___2.STRING.TEXT
+msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr "ការ​ចុះ​ឈ្មោះ​នៃ​ជួរ​ដែល​ពាក់​ព័ន្ធ ៖ %1Number%1 នៃ %2TotPageCount%2"
+
+#: euro/euro.src#STATUSLINE___3.STRING.TEXT
+msgid  "Entry of the ranges to be converted..."
+msgstr "ធាតុ​​របស់​​ជួរ​​ដែល​​​​ត្រូវ​​​បម្លែង ..."
+
+#: euro/euro.src#STATUSLINE___4.STRING.TEXT
+msgid  "Sheet protection for each sheet will be restored..."
+msgstr "ការ​​ការពារ​​​សន្លឹក​ សម្រាប់​​​សន្លឹក​​​នីមួយៗ ​​នឹង​​​ត្រូវ​​បាន​​​ស្តារ​​​ឡើង​​​វិញ ..."
+
+#: euro/euro.src#STATUSLINE___5.STRING.TEXT
+msgid  "Conversion of the currency units in the cell templates..."
+msgstr "ការ​បម្លែង​ឯកតា​រូបិយប័ណ្ណ​ក្នុង​ពុម្ព​ក្រឡា​ទទឹង ..."
+
+#: euro/euro.src#MESSAGES.STRING.TEXT
+msgid  "~Finish"
+msgstr "បញ្ចប់ "
+
+#: euro/euro.src#MESSAGES___1.STRING.TEXT
+msgid  "Select directory"
+msgstr "ជ្រើស​ថត"
+
+#: euro/euro.src#MESSAGES___2.STRING.TEXT
+msgid  "Select file"
+msgstr "ជ្រើស​ឯកសារ"
+
+#: euro/euro.src#MESSAGES___3.STRING.TEXT
+msgid  "Select target directory"
+msgstr "ជ្រើស​ថត​គោលដៅ"
+
+#: euro/euro.src#MESSAGES___4.STRING.TEXT
+msgid  "non-existant"
+msgstr "មិន​មាន"
+
+#: euro/euro.src#MESSAGES___5.STRING.TEXT
+msgid  "Euro Converter"
+msgstr "កម្មវិធី​បម្លែង​​អឺរ៉ូ"
+
+#: euro/euro.src#MESSAGES___6.STRING.TEXT
+msgid  "Should protected spreadsheets be temporarily unprotected?"
+msgstr "តើ​​សៀវភៅ​បញ្ជី​ដែល​​បាន​ការពារ​ គួរ​តែ​មិន​ត្រូវ​បាន​ការពារ​ជា​បណ្តោះ​អាសន្ន​ឬ​ទេ ?"
+
+#: euro/euro.src#MESSAGES___7.STRING.TEXT
+msgid  "Enter the password to unprotect the table %1TableName%1"
+msgstr "បញ្ចូល​​ពាក្យ​សម្ងាត់ ​ដើម្បី​មិន​ការពារ​តារាង​ %1TableName%1"
+
+#: euro/euro.src#MESSAGES___8.STRING.TEXT
+msgid  "Wrong Password!"
+msgstr "​ពាក្យ​​សម្ងាត់​ខុស !"
+
+#: euro/euro.src#MESSAGES___9.STRING.TEXT
+msgid  "Protected Sheet"
+msgstr "សន្លឹក​ដែល​ត្រូវ​បាន​ការពារ"
+
+#: euro/euro.src#MESSAGES___10.STRING.TEXT
+msgid  "Warning!"
+msgstr "ព្រមាន !"
+
+#: euro/euro.src#MESSAGES___11.STRING.TEXT
+msgid  "Protection for the sheets will not be removed."
+msgstr "ការ​ការពារ​ទាំងឡាយ​សម្រាប់​សន្លឹក​ នឹង​មិន​ត្រូវ​បាន​យក​ចេញ​ឡើយ ។"
+
+#: euro/euro.src#MESSAGES___12.STRING.TEXT
+msgid  "Sheet cannot be unprotected"
+msgstr "មិន​អាច​មិន​ការពារ​សន្លឹក"
+
+#: euro/euro.src#MESSAGES___13.STRING.TEXT
+msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
+msgstr "អ្នក​ជំនួយការ​មិន​អាច​កែសម្រួល​ឯកសារ​នេះ​បាន​ឡើយ ដោយ​សារ​តែ​ទ្រង់ទ្រាយ​ក្រឡា​មិន​អាច​ត្រូវ​បាន​កែប្រែ​នៅ​ក្នុង​ឯកសារ​ដែល​មាន​សៀវភៅ​បញ្ជី ដែល​បាន​ការពារ ។"
+
+#: euro/euro.src#MESSAGES___14.STRING.TEXT
+msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
+msgstr "សូម​ចំណាំ​ថា​ កម្ម​វិធី​បម្លែង​ជា​អឺរ៉ូ​ នឹង​មិន​អាច​កែ​សម្រួល​ឯកសារ​នេះ តាម​របៀប​ផ្សេង​ទេ​​ !"
+
+#: euro/euro.src#MESSAGES___15.STRING.TEXT
+msgid  "Please choose a currency to be converted first!"
+msgstr "សូម​ជ្រើស​រូបិយប័ណ្ណ​ដែល​ត្រូវ​បម្លែង​ជា​មុន​ !"
+
+#: euro/euro.src#MESSAGES___16.STRING.TEXT
+msgid  "Password:"
+msgstr "ពាក្យ​សម្ងាត់ ៖"
+
+#: euro/euro.src#MESSAGES___17.STRING.TEXT
+msgid  "OK"
+msgstr "យល់​​ព្រម​"
+
+#: euro/euro.src#MESSAGES___18.STRING.TEXT
+msgid  "Cancel"
+msgstr "បោះបង់"
+
+#: euro/euro.src#MESSAGES___19.STRING.TEXT
+msgid  "Please select a %PRODUCTNAME Calc document for editing!"
+msgstr "សូម​​ជ្រើស​ឯកសារ​ %PRODUCTNAME  Calc មួយ ​សម្រាប់​​​​កែ​​សម្រួល​ !"
+
+#: euro/euro.src#MESSAGES___20.STRING.TEXT
+msgid  "'<1>' is not a directory!"
+msgstr "'<1>' មិន​មែន​ជា​ថត​​ឡើយ !"
+
+#: euro/euro.src#MESSAGES___21.STRING.TEXT
+msgid  "Document is read-only!"
+msgstr "ឯកសារ​​គឺ​​បាន​តែ​​​អាន !"
+
+#: euro/euro.src#MESSAGES___22.STRING.TEXT
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "ឯកសារ​ '<1>' មាន​រួច​ហើយ ។ <CR> ​តើ​អ្នក​ចង់​សរសេរ​ជាន់​​លើ​​វា​​ឬ​​ទេ ?"
+
+#: euro/euro.src#MESSAGES___23.STRING.TEXT
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "តើ​​អ្នក​​ពិត​​ជា​​ចង់​​បញ្ឈប់​​ការ​​បម្លែង នៅ​​ត្រង់​​ចំនុច​​នេះ​​ឬ​ទេ ?"
+
+#: euro/euro.src#MESSAGES___24.STRING.TEXT
+msgid  "Cancel Wizard"
+msgstr "បោះបង់​អ្នក​ជំនួយការ"
+
+#: euro/euro.src#CURRENCIES.STRING.TEXT
+msgid  "Portuguese Escudo"
+msgstr "អេស្គូដូ ព័រទុយហ្គាល់"
+
+#: euro/euro.src#CURRENCIES___1.STRING.TEXT
+msgid  "Dutch Guilder"
+msgstr "ហ្គីលដឺរ ​ហូឡង់"
+
+#: euro/euro.src#CURRENCIES___2.STRING.TEXT
+msgid  "French Franc"
+msgstr "ហ្វ្រង់ ​បារាំង"
+
+#: euro/euro.src#CURRENCIES___3.STRING.TEXT
+msgid  "Spanish Peseta"
+msgstr "ប៉េសេតា អេស្ប៉ាញ"
+
+#: euro/euro.src#CURRENCIES___4.STRING.TEXT
+msgid  "Italian Lira"
+msgstr "លីរា អ៊ីតាលី"
+
+#: euro/euro.src#CURRENCIES___5.STRING.TEXT
+msgid  "German Mark"
+msgstr "ម៉ាក អាល្លឺម៉ង់"
+
+#: euro/euro.src#CURRENCIES___6.STRING.TEXT
+msgid  "Belgian Franc"
+msgstr "ហ្វ្រង់ បែលហ្ស៊ិក"
+
+#: euro/euro.src#CURRENCIES___7.STRING.TEXT
+msgid  "Irish Punt"
+msgstr "ផាន់ អៀរឡង់"
+
+#: euro/euro.src#CURRENCIES___8.STRING.TEXT
+msgid  "Luxembourg Franc"
+msgstr "ហ្វ្រង់ លុចហ្សំបួរ"
+
+#: euro/euro.src#CURRENCIES___9.STRING.TEXT
+msgid  "Austrian Schilling"
+msgstr "ស្គីល៉ីង អូទ្រីស"
+
+#: euro/euro.src#CURRENCIES___10.STRING.TEXT
+msgid  "Finnish Mark"
+msgstr "ម៉ាក ហ្វាំង​ឡង់"
+
+#: euro/euro.src#CURRENCIES___11.STRING.TEXT
+msgid  "Greek Drachma"
+msgstr "ដ្រាច្ឆម៉ា ក្រិក"
+
+#: euro/euro.src#CURRENCIES___12.STRING.TEXT
+msgid  "Slovenian Tolar"
+msgstr "តូឡា ស្លូវ៉ានី"
+
+#: euro/euro.src#CURRENCIES___13.STRING.TEXT
+msgid  "Cypriot Pound"
+msgstr "ស៊ីព្រយ ផោន"
+
+#: euro/euro.src#CURRENCIES___14.STRING.TEXT
+msgid  "Maltese Lira"
+msgstr "ម៉ាល់តេស លីរ៉ា"
+
+#: euro/euro.src#CURRENCIES___15.STRING.TEXT
+msgid  "Slovak Koruna"
+msgstr "ស្លូវ៉ាក់ កូរ៉ុណា"
+
+#: euro/euro.src#CURRENCIES___16.STRING.TEXT
+msgid  "The currency set for the document is not a European currency!"
+msgstr "សំណុំ​រូបិយប័ណ្ណ​​សម្រាប់​ឯកសារ​​នេះ មិន​មែន​ជា​រូបិយប័ណ្ណ​អឺរ៉ុប !"
+
+#: euro/euro.src#CURRENCIES___17.STRING.TEXT
+msgid  "The language set for your operating system is not a language of the European Monetary Union."
+msgstr "សំណុំ​ភាសា​សម្រាប់​ប្រព័ន្ធ​ប្រតិបត្តិការ​របស់​អ្នក​ មិន​មែន​ជា​ភាសា​របស់​សហព័ន្ធ​រូបិយប័ណ្ណ​អឺរ៉ុប ។"
+
+#: euro/euro.src#STEP_LASTPAGE.STRING.TEXT
+msgid  "Progress"
+msgstr "វឌ្ឍន​​ភាព"
+
+#: euro/euro.src#STEP_LASTPAGE___1.STRING.TEXT
+msgid  "Retrieving the relevant documents..."
+msgstr "កំពុង​​ទទួល​យក​ឯកសារ​ដែល​ពាក់ព័ន្ធ ..."
+
+#: euro/euro.src#STEP_LASTPAGE___2.STRING.TEXT
+msgid  "Converting the documents..."
+msgstr "កំពុង​​បម្លែង​​ឯកសារ ..."
+
+#: euro/euro.src#STEP_LASTPAGE___3.STRING.TEXT
+msgid  "Settings:"
+msgstr "ការ​កំណត់ ៖"
+
+#: euro/euro.src#STEP_LASTPAGE___4.STRING.TEXT
+msgid  "Sheet is always unprotected"
+msgstr "សន្លឹក​តែង​តែ​មិន​ត្រូវ​បាន​ការពារ"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___0.STRING.TEXT
+msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
+msgstr "មិន​​អាច​​បង្កើត​​ថត '%1' ។​​<BR>​​​​​ប្រហែល​ជា​ទំហំ​ថាស​រឹង​របស់​អ្នក​ មិន​មាន​សល់​គ្រប់គ្រាន់ ។"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___1.STRING.TEXT
+msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
+msgstr "មិន​អាច​បង្កើត​ឯកសារ​អត្ថបទ​បាន​ទេ ។<BR>សូម​ពិនិត្យ​មើល​បើ​ម៉ូឌុល 'PRODUCTNAME Writer' ត្រូវ​បាន​ដំឡើង ។"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___2.STRING.TEXT
+msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
+msgstr "មិន​អាច​បង្កើត​សៀវភៅ​បញ្ជី​បាន​ទេ ។<BR>សូម​ពិនិត្យ​មើល​បើ​ម៉ូឌុល 'PRODUCTNAME Calc' ត្រូវ​បាន​ដំឡើង ។"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___3.STRING.TEXT
+msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
+msgstr "មិន​អាច​បង្កើត​ការ​បង្ហាញ​បាន​ទេ ។<BR>សូម​ពិនិត្យ​មើល​បើ​ម៉ូឌុល 'PRODUCTNAME Impress' ត្រូវ​បាន​ដំឡើង ។"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___4.STRING.TEXT
+msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
+msgstr "មិន​អាច​បង្កើត​គំនូរ​បាន​ទេ ។<BR>សូម​ពិនិត្យ​មើល​បើ​ម៉ូឌុល 'PRODUCTNAME Draw' ត្រូវ​បាន​ដំឡើង ។"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___5.STRING.TEXT
+msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
+msgstr "មិន​អាច​បង្កើត​រូបមន្ត​បាន​ទេ ។<BR>សូម​ពិនិត្យ​មើល​បើ​ម៉ូឌុល 'PRODUCTNAME Math' ត្រូវ​បាន​ដំឡើង ។"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___6.STRING.TEXT
+msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
+msgstr "មិន​​អាច​​រកឃើញ​​ឯកសារ​​ដែល​​ទាមទារ ។ ​<BR>​សូម​​ចាប់ផ្តើម '​​​ដំឡើង %PRODUCTNAME' និង​​ជ្រើស​ 'ជួសជុល' ។"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___7.STRING.TEXT
+msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
+msgstr "ឯកសារ '<PATH>' មាន​​រួច​​ហើយ ។​ <BR><BR>​តើ​​អ្នក​​ចង់​​សរសេរ​​ជាន់​​លើ​​ឯកសារ​​ដែល​​មាន​​រួច​ហើយ​​ឬ​​ទេ ?"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___8.STRING.TEXT
+msgid  "Yes"
+msgstr "បាទ"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___9.STRING.TEXT
+msgid  "Yes to All"
+msgstr "បាទ ទាំងអស់"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___10.STRING.TEXT
+msgid  "No"
+msgstr "ទេ"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___11.STRING.TEXT
+msgid  "Cancel"
+msgstr "បោះបង់"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___12.STRING.TEXT
+msgid  "~Finish"
+msgstr "បញ្ចប់ "
+
+#: formwizard/dbwizres.src#RID_COMMON_START___13.STRING.TEXT
+msgid  "< ~Back"
+msgstr "< ថយក្រោយ "
+
+#: formwizard/dbwizres.src#RID_COMMON_START___14.STRING.TEXT
+msgid  "~Next >"
+msgstr "បន្ទាប់ >"
+
 #: formwizard/dbwizres.src#RID_COMMON_START___15.STRING.TEXT
 msgid  "~Help"
 msgstr "ជំនួយ "
+
+#: formwizard/dbwizres.src#RID_COMMON_START___16.STRING.TEXT
+msgid  "Steps"
+msgstr "ជំហាន"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___17.STRING.TEXT
+msgid  "Close"
+msgstr "បិទ​"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___18.STRING.TEXT
+msgid  "OK"
+msgstr "យល់​​ព្រម​"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___19.STRING.TEXT
+msgid  "The file already exists. Do you want to overwrite it?"
+msgstr "ឯកសារ​មាន​រួច​ហើយ ។ តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ ?"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___20.STRING.TEXT
+msgid  "Template created via <wizard_name> on <current_date>."
+msgstr "ពុម្ព​បាន​បង្កើត​តាម​រយៈ <wizard_name> លើ <current_date> ។"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___21.STRING.TEXT
+msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
+msgstr "មិន​អាច​រត់​អ្នកជំនួយការ ពីព្រោះ​ឯកសារ​សំខាន់ មិនត្រូវ​បាន​រកឃើញ ។\nក្រោម 'ឧបករណ៍-ជម្រើស- %PRODUCTNAME - ផ្លូវ' ចុចប៊ូតុង 'លំនាំដើម' ដើម្បី​កំណត់​ផ្លូវ​ទៅ​ការ​កំណត់​លំនាំដើម​ឡើង​វិញ ។\nបន្ទាប់​មក​រត់​អ្នក​ជំនួយការ​ម្តងទៀត ។"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___0.STRING.TEXT
+msgid  "C~reate"
+msgstr "បង្កើត "
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___1.STRING.TEXT
+msgid  "~Cancel"
+msgstr "បោះបង់ "
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___2.STRING.TEXT
+msgid  "<< ~Back"
+msgstr "<< ថយ​​ក្រោយ​  "
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___3.STRING.TEXT
+msgid  "~Next >>"
+msgstr "បន្ទាប់​ >>"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___4.STRING.TEXT
+msgid  "~Database"
+msgstr "មូលដ្ឋាន​ទិន្នន័យ "
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___5.STRING.TEXT
+msgid  "~Table name"
+msgstr "ឈ្មោះ​តារាង "
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___6.STRING.TEXT
+msgid  "An error occurred while running the wizard. The wizard will be terminated."
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​រត់​អ្នក​ជំនួយការ ។ អ្នក​ជំនួយការ​នឹង​ត្រូវ​បាន​បញ្ចប់​ដំណើរការ ។"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___14.STRING.TEXT
+msgid  "No connection to the database could be established."
+msgstr "មិន​អាច​បង្កើត​ការ​ត​ភ្ជាប់​ទៅ​មូលដ្ឋាន​ទិន្នន័យ ។"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___21.STRING.TEXT
+msgid  "~Stop"
+msgstr "បញ្ឈប់"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___30.STRING.TEXT
+msgid  "The document could not be saved."
+msgstr "មិន​អាច​រក្សាទុក​ឯកសារ ។"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___33.STRING.TEXT
+msgid  "Exiting the wizard"
+msgstr "ចេញ​ពី​អ្នក​ជំនួយការ"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___34.STRING.TEXT
+msgid  "Connecting to data source..."
+msgstr "កំពុង​​ត​ភ្ជាប់​​ទៅ​​ប្រភព​​ទិន្នន័យ ..."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___35.STRING.TEXT
+msgid  "The connection to the data source could not be established."
+msgstr "មិន​​អាច​​បង្កើត​​ការ​​ត​ភ្ជាប់​​ទៅ​​ប្រភព​​ទិន្នន័យ​ ។"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___36.STRING.TEXT
+msgid  "The file path entered is not valid."
+msgstr "ផ្លូវ​​ឯកសារ​ដែល​​​បាន​​បញ្ចូល​ មិន​​ត្រឹម​ត្រូវ​​ទេ ។"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___37.STRING.TEXT
+msgid  "Please select a data source"
+msgstr "សូម​​ជ្រើស​​ប្រភព​​ទិន្នន័យ​​មួយ"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___38.STRING.TEXT
+msgid  "Please select a table or query"
+msgstr "សូម​​ជ្រើស​​តារាង ឬ សំណួរ​​មួយ"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___39.STRING.TEXT
+msgid  "Add field"
+msgstr "បន្ថែម​​វាល"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___40.STRING.TEXT
+msgid  "Remove field"
+msgstr "យក​​វាល​​ចេញ"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___41.STRING.TEXT
+msgid  "Add all fields"
+msgstr "បន្ថែមវាលទាំងអស់"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___42.STRING.TEXT
+msgid  "Remove all fields"
+msgstr "យក​​វាល​​​ទាំងអស់​​ចេញ"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___43.STRING.TEXT
+msgid  "Move field up"
+msgstr "ផ្លាស់ទី​វាលឡើង​លើ"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___44.STRING.TEXT
+msgid  "Move field down"
+msgstr "ផ្លាស់ទី​វាល​ចុះ​​ក្រោម"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___45.STRING.TEXT
+msgid  "The field names from '%NAME' could not be retrieved."
+msgstr "មិន​អាច​ទៅ​យក​ឈ្មោះ​វាល​ពី '%NAME' ។"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___0.STRING.TEXT
+msgid  "Form Wizard"
+msgstr "អ្នក​ជំនួយការ​សំណុំ​បែបបទ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___1.STRING.TEXT
+msgid  "Fields in ~the form"
+msgstr "វាល​​​ក្នុង​​សំណុំ​​បែបបទ "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___2.STRING.TEXT
+msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
+msgstr "វាល​​គោល​ពីរ តែងតែ​​បាន​រាយ និង​អាច​ជ្រើស​បាន​ពី​បញ្ជី​ខាង​ឆ្វេង ។​\nប្រសិន​បើ​អាច  ពួកវា​ត្រូវ​បាន​បកប្រែ​ជា​រូបភាព ។"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___3.STRING.TEXT
+msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr "សំណុំ​បែបបទ​រង គឺ​ជា​សំណុំ​បែបបទ​ដែល​​បាន​បញ្ចូល​ក្នុង​សំណុំ​បែបបទ​​មួយ​ផ្សេង​ទៀត ។\nប្រើ​សំណុំ​បែបបទ​រង ដើម្បី​បង្ហាញ​ទិន្នន័យ​ពី​តារាង ឬ សំណួរ ដោយ​ប្រើ​​ទំនាក់​ទំនង មួយ-ទៅ-ច្រើន ។"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___4.STRING.TEXT
+msgid  "~Add Subform"
+msgstr "បន្ថែម​សំណុំ​បែបបទ​រង "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___5.STRING.TEXT
+msgid  "~Subform based on existing relation"
+msgstr "សំណុំ​បែបបទ​រង​ដែល​ផ្អែក​លើ​ទំនាក់​ទំនង​ដែល​មាន​ស្រាប់ "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___6.STRING.TEXT
+msgid  "Tables or queries"
+msgstr "តារាង ឬ សំណួរ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___7.STRING.TEXT
+msgid  "Subform based on ~manual selection of fields"
+msgstr "សំណុំ​បែបបទ​រង​ដែល​ផ្អែក​លើ​ជម្រើស​ដោយ​ដៃ​នៃ​វាល "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___8.STRING.TEXT
+msgid  "~Which relation do you want to add?"
+msgstr "តើ​ទំនាក់​ទំនង​ណា​មួយ ដែល​អ្នក​ចង់​បន្ថែម ? "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___9.STRING.TEXT
+msgid  "Fields in the ~subform"
+msgstr "វាល​​ក្នុង​សំណុំ​បែបបទ​រង "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___12.STRING.TEXT
+msgid  "~Available fields"
+msgstr "វាល​​ដែល​អាច​រក​បាន"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___13.STRING.TEXT
+msgid  "Fields in form"
+msgstr "វាល​​​ក្នុង​​សំណុំ​​បែបបទ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___19.STRING.TEXT
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
+msgstr "ការ​ចូល​រួម​ '<FIELDNAME1>' និង​ '<FIELDNAME2>' ត្រូវ​បាន​ជ្រើ​ស​ពីរ​ដង​ ។ \nប៉ុន្តែ​ការ​ចូល​រួម​អាច​ត្រូវ​បាន​ប្រើ​តែ​ម្តង​គត់​ ។"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___20.STRING.TEXT
+msgid  "~First joined subform field"
+msgstr "វាល​​របស់​សំណុំ​បែប​បទ​រង​​ដែល​​រួម​ដំបូង "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___21.STRING.TEXT
+msgid  "~Second joined subform field"
+msgstr "វាល​​​សំណុំ​បែប​បទ​រង​​ដែលរួម​​ទី​ពីរ​ "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___22.STRING.TEXT
+msgid  "~Third joined subform field"
+msgstr "វាល​​​សំណុំ​បែប​បទ​រង​ដែល​​រួម​​ទី​បី​ "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___23.STRING.TEXT
+msgid  "~Fourth joined subform field"
+msgstr "វាល​​​សំណុំ​បែប​បទ​រង​ដែល​​​រួម​ទី​បួន "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___24.STRING.TEXT
+msgid  "F~irst joined main form field"
+msgstr "វាល​សំណុំ​បែប​បទ​មេ​ដែល​​​រួមដំបូង "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___25.STRING.TEXT
+msgid  "S~econd joined main form field"
+msgstr "វាល​សំណុំ​បែប​បទ​មេ​ដែល​​រួម​ទី​ពីរ​ "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___26.STRING.TEXT
+msgid  "T~hird joined main form field"
+msgstr "វាល​​​សំណុំ​បែប​បទ​មេ​​ដែល​​រួម​​ទី​បី "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___27.STRING.TEXT
+msgid  "F~ourth joined main form field"
+msgstr "វាល​សំណុំ​បែប​បទមេ​​ដែល​​​រួម​​​ទី​បួន​ "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___28.STRING.TEXT
+msgid  "Field border"
+msgstr "ស៊ុម​​​របស់​វាល​"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___29.STRING.TEXT
+msgid  "No border"
+msgstr "គ្មាន​​ស៊ុម"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___30.STRING.TEXT
+msgid  "3D look"
+msgstr "រូបរាងត្រីមាត្រ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___31.STRING.TEXT
+msgid  "Flat"
+msgstr "រាប​ស្មើ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___32.STRING.TEXT
+msgid  "Label placement"
+msgstr "ការ​ដាក់​ស្លាក"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___33.STRING.TEXT
+msgid  "Align left"
+msgstr "តម្រឹម​ឆ្វេង"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___34.STRING.TEXT
+msgid  "Align right"
+msgstr "តម្រឹម​ស្តាំ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___35.STRING.TEXT
+msgid  "Arrangement of DB fields"
+msgstr "ការ​​រៀបចំ​​វាល​ DB"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___36.STRING.TEXT
+msgid  "Columnar - Labels Left"
+msgstr "រាង​ជួរឈរ - ស្លាក​ខាង​ឆ្វេង"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___37.STRING.TEXT
+msgid  "Columnar - Labels on Top"
+msgstr "រាងជួរ - ស្លាក​​នៅ​លើ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___38.STRING.TEXT
+msgid  "In Blocks - Labels Left"
+msgstr "ជា​បណ្តុំ - ស្លាក​ខាង​ឆ្វេង"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___39.STRING.TEXT
+msgid  "In Blocks - Labels Above"
+msgstr "ជា​បណ្តុំ- ស្លាក​ខាង​​លើ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___40.STRING.TEXT
+msgid  "As Data Sheet"
+msgstr "ជា​​សន្លឹក​​ទិន្នន័យ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___41.STRING.TEXT
+msgid  "Arrangement of the main form"
+msgstr "រៀបចំ​សំណុំ​បែបបទ​មេ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___42.STRING.TEXT
+msgid  "Arrangement of the subform"
+msgstr "ការ​រៀបចំ​សំណុំ​បែបបទ​រង"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___44.STRING.TEXT
+msgid  "The form is to be ~used for entering new data only."
+msgstr "សំណុំ​បែបបទ​ដែល​​ប្រើ សម្រាប់​បញ្ចូល​​តែ​ទិន្នន័យ​ថ្មី​ ។"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___45.STRING.TEXT
+msgid  "Existing data will not be displayed "
+msgstr "ទិន្នន័យ​ដែល​មាន​ស្រាប់ នឹង​មិន​​បង្ហាញ​ឡើយ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___46.STRING.TEXT
+msgid  "T~he form is to display all data"
+msgstr "សំណុំ​បែបបទ​គឺសម្រាប់​បង្ហាញ​ទិន្នន័យ​ទាំងអស់ "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___47.STRING.TEXT
+msgid  "Do not allow ~modification of existing data"
+msgstr "មិន​​អនុញ្ញាត​ឲ្យ​កែប្រែ​ទិន្នន័យ​ដែល​មាន​ស្រាប់ "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___48.STRING.TEXT
+msgid  "Do not allow ~deletion of existing data"
+msgstr "មិន​​អនុញ្ញាតឲ្យ​​លុប​ទិន្នន័យ​ដែល​មាន​ស្រាប់ "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___49.STRING.TEXT
+msgid  "Do not allow ~addition of new data"
+msgstr "មិន​​អនុញ្ញាត​ឲ្យ​បន្ថែម​ទិន្នន័យ​ថ្មី "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___50.STRING.TEXT
+msgid  "Name of ~the form"
+msgstr "ឈ្មោះ​សំណុំ​បែបបទ "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___51.STRING.TEXT
+msgid  "How do you want to proceed after creating the form?"
+msgstr "តើ​អ្នក​ចង់​​ដំណើរការ​បែប​ណា បន្ទាប់​ពី​បង្កើត​សំណុំ​បែបបទ ?"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___52.STRING.TEXT
+msgid  "~Work with the form"
+msgstr "ធ្វើ​ការ​ជាមួយ​សំណុំ​បែបបទ "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___53.STRING.TEXT
+msgid  "~Modify the form"
+msgstr "កែប្រែ​សំណុំ​បែបបទ "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___55.STRING.TEXT
+msgid  "~Page Styles"
+msgstr "រចនាប័ទ្ម​របស់​ទំព័រ "
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___80.STRING.TEXT
 msgid  "Field selection"
 msgstr "ជម្រើស​វាល​"
 
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___81.STRING.TEXT
+msgid  "Set up a subform"
+msgstr "ដំឡើង​សំណុំ​បែបបទ​រង"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___82.STRING.TEXT
+msgid  "Add subform fields"
+msgstr "បន្ថែម​វាល​​សំណុំ​បែបបទ​រង"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___83.STRING.TEXT
+msgid  "Get joined fields"
+msgstr "យក​វាល​ដែល​រួម​"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___84.STRING.TEXT
+msgid  "Arrange controls"
+msgstr "រៀបចំ​វត្ថុ​បញ្ជា"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___85.STRING.TEXT
+msgid  "Set data entry"
+msgstr "កំណត់​ធាតុ​ទិន្នន័យ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___86.STRING.TEXT
+msgid  "Apply styles"
+msgstr "អនុវត្ត​​រចនាប័ទ្ម"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___87.STRING.TEXT
+msgid  "Set name"
+msgstr "កំណត់​ឈ្មោះ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___88.STRING.TEXT
+msgid  "(Date)"
+msgstr "(កាល​បរិច្ឆេទ)"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___89.STRING.TEXT
+msgid  "(Time)"
+msgstr "(ពេលវេលា)"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___90.STRING.TEXT
+msgid  "Select the fields of your form"
+msgstr "ជ្រើស​វាល​​ក្នុង​សំណុំ​បែបបទ​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___91.STRING.TEXT
+msgid  "Decide if you want to set up a subform"
+msgstr "សម្រេចចិត្ត​ថា​តើ​​អ្នក​ចង់​ដំឡើង​សំណុំ​បែបបទ​រង​មួយឬ​ទេ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___92.STRING.TEXT
+msgid  "Select the fields of your subform"
+msgstr "ជ្រើស​វាល​ នៃ​សំណុំ​បែបបទ​រង​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___93.STRING.TEXT
+msgid  "Select the joins between your forms"
+msgstr "ជ្រើស​ការ​ចូលរួម​រវាង​សំណុំ​បែបបទ​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___94.STRING.TEXT
+msgid  "Arrange the controls on your form"
+msgstr "រៀបចំ​វត្ថុ​បញ្ជា​លើ​សំណុំ​បែបបទ​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___95.STRING.TEXT
+msgid  "Select the data entry mode"
+msgstr "ជ្រើស​របៀប​បញ្ចូល​ទិន្នន័យ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___96.STRING.TEXT
+msgid  "Apply the style of your form"
+msgstr "អនុវត្ត​រចនាប័ទ្ម​​សំណុំ​បែបបទ​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___97.STRING.TEXT
+msgid  "Set the name of the form"
+msgstr "កំណត់​ឈ្មោះ​សំណុំ​បែបបទ"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___98.STRING.TEXT
+msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
+msgstr "មាន​សំណុំបែបបទ​ឈ្មោះ '%FORMNAME' រួច​ហើយ ។\nសូម​ជ្រើស​ឈ្មោះ​មួយ​ទៀត ។"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___0.STRING.TEXT
 msgid  "Query Wizard"
 msgstr "អ្នក​ជំនួយការ \"សំណួរ\""
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___1.STRING.TEXT
+msgid  "Query"
+msgstr "សំណួរ​"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___3.STRING.TEXT
+msgid  "~Tables"
+msgstr "តារាង "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___4.STRING.TEXT
 msgid  "A~vailable fields"
 msgstr "វាល​​ដែល​មាន "
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___5.STRING.TEXT
+msgid  "Name ~of the query"
+msgstr "ឈ្មោះ​​សំណួរ "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___6.STRING.TEXT
+msgid  "Display ~Query"
+msgstr "បង្ហាញ​សំណួរ "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___7.STRING.TEXT
+msgid  "~Modify Query"
+msgstr "កែប្រែ​សំណួរ "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___8.STRING.TEXT
+msgid  "~How do you want to proceed after creating the query?"
+msgstr "តើ​អ្នក​ចង់​ដំណើរការ​​បែប​ណា បន្ទាប់​ពី​បង្កើត​សំណួរ ? "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___9.STRING.TEXT
+msgid  "Match ~all of the following"
+msgstr "ដូច​ខាង​ក្រោម​ទាំង​អស់ "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___10.STRING.TEXT
+msgid  "~Match any of the following"
+msgstr "ដូច​ទៅ​នឹង​ផ្នែក​ណាមួយ​នៃ​ខាង​ក្រោម "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___11.STRING.TEXT
+msgid  "~Detailed query (Shows all records of the query.)"
+msgstr "សÆណួរ​លម្អិត (បង្ហាញ​កំណត់ត្រា​ទាំងអស់​របស់​​សំណួរ ។) "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___12.STRING.TEXT
+msgid  "~Summary query (Shows only results of aggregate functions.)"
+msgstr "សំណួរ​សង្ខេប (បង្ហាញ​តែ​លទ្ធផល​នៃ​អនុគមន៍ផ្គុំ ។​) "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___16.STRING.TEXT
+msgid  "Aggregate functions"
+msgstr "អនុគមន៍​​​ផ្តុំ"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___17.STRING.TEXT
 msgid  "Fields"
 msgstr "វាល​"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___18.STRING.TEXT
+msgid  "~Group by"
+msgstr "ដាក់​ជា​ក្រុម​តាម "
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___19.STRING.TEXT
 msgid  "Field"
 msgstr "វាល​"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___20.STRING.TEXT
+msgid  "Alias"
+msgstr "ឈ្មោះ​ក្លែងក្លាយ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___21.STRING.TEXT
+msgid  "Table: "
+msgstr "តារាង ៖"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___22.STRING.TEXT
+msgid  "Query: "
+msgstr "សំណួរ ៖"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___24.STRING.TEXT
+msgid  "Condition"
+msgstr "លក្ខខណ្ឌ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___25.STRING.TEXT
+msgid  "Value"
+msgstr "តម្លៃ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___26.STRING.TEXT
+msgid  "is equal to"
+msgstr "ស្មើ​ទៅ​នឹង"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___27.STRING.TEXT
+msgid  "is not equal to"
+msgstr "មិន​ស្មើ​ទៅ​នឹង"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___28.STRING.TEXT
+msgid  "is smaller than"
+msgstr "តូច​ជាង"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___29.STRING.TEXT
+msgid  "is greater than"
+msgstr "ធំ​ជាង"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___30.STRING.TEXT
+msgid  "is equal or less than "
+msgstr "ស្មើ ឬ តូច​ជាង"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___31.STRING.TEXT
+msgid  "is equal or greater than"
+msgstr "ស្មើ ឬ ធំ​ជាង"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___32.STRING.TEXT
+msgid  "like"
+msgstr "ដូច"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___33.STRING.TEXT
+msgid  "not like"
+msgstr "មិន​ដូច"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___34.STRING.TEXT
+msgid  "is null"
+msgstr "ទទេ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___35.STRING.TEXT
+msgid  "is not null"
+msgstr "មិន​ទទេ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___36.STRING.TEXT
+msgid  "true"
+msgstr "ពិត"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___37.STRING.TEXT
+msgid  "false"
+msgstr "មិន​ពិត"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___38.STRING.TEXT
+msgid  "and"
+msgstr "និង"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___39.STRING.TEXT
+msgid  "or"
+msgstr "ឬ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___40.STRING.TEXT
+msgid  "get the sum of"
+msgstr "ទទួល​យក​​​ផលបូក​នៃ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___41.STRING.TEXT
+msgid  "get the average of"
+msgstr "ទទួល​យក​​​មធ្យម​នៃ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___42.STRING.TEXT
+msgid  "get the minimum of"
+msgstr "ទទួល​យក​​អប្បបរមា​នៃ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___43.STRING.TEXT
+msgid  "get the maximum of"
+msgstr "ទទួល​យក​​​អតិបរមា​នៃ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___44.STRING.TEXT
+msgid  "get the sum of <FIELD>"
+msgstr "ទទួល​យក​​ផលបូក​នៃ <FIELD>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___45.STRING.TEXT
+msgid  "get the average of <FIELD>"
+msgstr "ទទួល​យក​​​មធ្យម​នៃ <FIELD>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___46.STRING.TEXT
+msgid  "get the minimum of <FIELD>"
+msgstr "ទទួល​យក​​អប្បបរមា​នៃ <FIELD>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___47.STRING.TEXT
+msgid  "get the maximum of <FIELD>"
+msgstr "ទទួល​យក​​អតិបរមា​នៃ <FIELD>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___48.STRING.TEXT
+msgid  "(none)"
+msgstr "​(គ្មាន)​"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___50.STRING.TEXT
+msgid  "Fie~lds in the Query: "
+msgstr "ក្រឡា​ទទឹង​ក្នុង​សំណួរ ៖"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___51.STRING.TEXT
+msgid  "Sorting order: "
+msgstr "លំដាប់​តម្រៀប ៖"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___52.STRING.TEXT
+msgid  "No sorting fields were assigned."
+msgstr "មិន​បាន​ផ្តល់​វាល​តម្រៀប ។"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___53.STRING.TEXT
+msgid  "Search conditions: "
+msgstr "លក្ខខណ្ឌ​ស្វែងរក ៖"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___54.STRING.TEXT
+msgid  "No conditions were assigned."
+msgstr "មិន​បាន​ផ្តល់​លក្ខខណ្ឌ ។"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___55.STRING.TEXT
+msgid  "Aggregate functions: "
+msgstr "អនុគមន៍​​ផ្តុំ ៖"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___56.STRING.TEXT
+msgid  "No aggregate functions were assigned."
+msgstr "មិន​បាន​ផ្តល់​អនុគមន៍​ផ្តុំ ។"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___57.STRING.TEXT
+msgid  "Grouped by: "
+msgstr "ដាក់​ជា​ក្រុម​ដោយ ៖"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___58.STRING.TEXT
+msgid  "No Groups were assigned."
+msgstr "មិន​បាន​ផ្តល់​​ក្រុម ។"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___59.STRING.TEXT
+msgid  "Grouping conditions: "
+msgstr "លក្ខខណ្ឌ​ដាក់​ជា​ក្រុម ៖"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___60.STRING.TEXT
+msgid  "No grouping conditions were assigned."
+msgstr "មិន​បាន​ផ្តល់​​លក្ខខណ្ឌ​ដាក់​ជា​ក្រុម ។"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___70.STRING.TEXT
+msgid  "Select the fields (columns) for your query"
+msgstr "ជ្រើសវាល​ (ជួរ​ឈរ) សម្រាប់​សំណួរ​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___71.STRING.TEXT
+msgid  "Select the sorting order"
+msgstr "ជ្រើស​លំដាប់​តម្រៀប"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___72.STRING.TEXT
+msgid  "Select the search conditions"
+msgstr "ជ្រើស​លក្ខខណ្ឌ​ស្វែងរក"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___73.STRING.TEXT
+msgid  "Select the type of query"
+msgstr "ជ្រើស​ប្រភេទ​នៃ​សំណួរ​"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___74.STRING.TEXT
+msgid  "Select the groups"
+msgstr "ជ្រើស​ក្រុម"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___75.STRING.TEXT
+msgid  "Select the grouping conditions"
+msgstr "ជ្រើស​លក្ខខណ្ឌ​ដាក់​ជា​​ក្រុម"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___76.STRING.TEXT
+msgid  "Assign aliases if desired"
+msgstr "ផ្តល់​ឈ្មោះ​ក្លែងក្លាយ បើ​ចង់​បាន"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___77.STRING.TEXT
+msgid  "Check the overview and decide how to proceed"
+msgstr "ពិនិត្យមើល​ទិដ្ឋភាព​ទូទៅ រួច​សម្រេច​ចិត្ត​ថា​តើ​​ដំណើរការ​​តាម​របៀប​ណា ?"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___81.STRING.TEXT
+msgid  "Sorting order"
+msgstr "លំដាប់​តម្រៀប"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___82.STRING.TEXT
+msgid  "Search conditions"
+msgstr "លក្ខខណ្ឌ​ស្វែងរក"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___83.STRING.TEXT
+msgid  "Detail or summary"
+msgstr "សេចក្តី​លម្អិត ឬ សង្ខេប"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___84.STRING.TEXT
 msgid  "Grouping"
 msgstr "ដាក់​​ជា​​ក្រុម"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___85.STRING.TEXT
+msgid  "Grouping conditions"
+msgstr "លក្ខខណ្ឌ​ដាក់​ជា​​ក្រុម"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___86.STRING.TEXT
+msgid  "Aliases"
+msgstr "ឈ្មោះ​ក្លែងក្លាយ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___87.STRING.TEXT
+msgid  "Overview"
+msgstr "ទិដ្ឋភាព​ទូទៅ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___88.STRING.TEXT
+msgid  "A field that has not been assigned an aggregate function must be used in a group."
+msgstr "វាល​​ដែល​មិន​ត្រូវ​បាន​ផ្តល់​អនុគមន៍​ផ្គុំ​មួយ ត្រូវ​តែ​ប្រើ​ក្នុង​ក្រុមមួយ ។"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___89.STRING.TEXT
+msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
+msgstr "លក្ខខណ្ឌ '<FIELDNAME> <LOGICOPERATOR> <VALUE>' ត្រូវ​បាន​ជ្រើស​ពីរ​ដង ។ លក្ខខណ្ឌ​និមួយ​ៗ អាច​ត្រូវ​បាន​ជ្រើស​តែ​ម្តង​ប៉ុណ្ណោះ"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___90.STRING.TEXT
+msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
+msgstr "អនុគមន៍​ផ្គុំ​ <FUNCTION> ត្រូវ​បាន​ផ្តល់​ពីរ​ដងទៅ​ឈ្មោះ​វាល​ '<NUMERICFIELD>' ។"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___91.STRING.TEXT
+msgid  ", "
+msgstr ", "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___92.STRING.TEXT
+msgid  "<FIELDTITLE> (<FIELDNAME>)"
+msgstr "<FIELDTITLE> (<FIELDNAME>)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___93.STRING.TEXT
+msgid  "<FIELDNAME> (<SORTMODE>)"
+msgstr "<FIELDNAME> (<SORTMODE>)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___94.STRING.TEXT
+msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___95.STRING.TEXT
+msgid  "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___0.STRING.TEXT
+msgid  "Report Wizard"
+msgstr "អ្នក​ជំនួយការ របាយការណ៍"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___3.STRING.TEXT
+msgid  "~Table"
+msgstr "តារាង "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___4.STRING.TEXT
+msgid  "Colu~mns"
+msgstr "ជួរ​ឈរ "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___7.STRING.TEXT
+msgid  "Report_"
+msgstr "របាយការណ៍_"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___8.STRING.TEXT
+msgid  "- undefined -"
+msgstr "- មិន​បាន​​ចង្អុល​​បង្ហាញ -"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___9.STRING.TEXT
+msgid  "~Fields in report"
+msgstr "វាល​​​ក្នុង​​របាយ​ការណ៍ "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___12.STRING.TEXT
+msgid  "Sort options"
+msgstr "ជម្រើស​​តម្រៀប"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___13.STRING.TEXT
+msgid  "Choose layout"
+msgstr "ជ្រើស​​​​ប្លង់"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___14.STRING.TEXT
 msgid  "Create report"
 msgstr "បង្កើត​របាយការណ៍"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___15.STRING.TEXT
+msgid  "Layout of data"
+msgstr "ប្លង់​​ទិន្នន័យ"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___16.STRING.TEXT
+msgid  "Layout of headers and footers"
+msgstr "ប្លង់​​ បឋមកថា និង​បាតកថា"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___20.STRING.TEXT
+msgid  "~Sort by"
+msgstr "តម្រៀប​​តាម "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___21.STRING.TEXT
+msgid  "T~hen by"
+msgstr "បន្ទាប់​មក​តាម "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___22.STRING.TEXT
+msgid  "Orientation"
+msgstr "ទិស"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___23.STRING.TEXT
+msgid  "Portrait"
+msgstr "បពា្ឈរ"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___24.STRING.TEXT
+msgid  "Landscape"
+msgstr "ផ្ដេក"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___28.STRING.TEXT
+msgid  "Which fields do you want to have in your report?"
+msgstr "តើ​​វាល​​ណា​​មួយ​​ដែល​​អ្នក​​ចង់​​មាន​​ក្នុង​​របាយការណ៍​​របស់​​អ្នក ?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___29.STRING.TEXT
+msgid  "Do you want to add grouping levels?"
+msgstr "តើ​អ្នក​ចង់​បន្ថែម​កម្រិត​ដាក់​ជា​ក្រុម​ឬ​ទេ ?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___30.STRING.TEXT
+msgid  "According to which fields do you want to sort the data?"
+msgstr "តើ​​​អ្នក​​ចង់​​តម្រៀប​​ទិន្នន័យ យោង​ទៅ​តាម​​វាល​​ណា​​មួយ?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___31.STRING.TEXT
+msgid  "How do you want your report to look?"
+msgstr "តើ​​អ្នក​​ចង់​​ឲ្យ​​របាយការណ៍​​របស់​​អ្នក មាន​​សភាព​​បែប​​ណា ?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___32.STRING.TEXT
+msgid  "Decide how you want to proceed"
+msgstr "សម្រេច​ចិត្ត​ថា​តើ​អ្នក​ចង់ដំណើរការ​​តាម​របៀប​ណា ?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___33.STRING.TEXT
+msgid  "Title of report"
+msgstr "ចំណងជើង​​របាយការណ៍"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___34.STRING.TEXT
+msgid  "Display report"
+msgstr "បង្ហាញ​​របាយការណ៍"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___36.STRING.TEXT
+msgid  "Ascending"
+msgstr "ឡើង"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___37.STRING.TEXT
+msgid  "Descending"
+msgstr "ចុះ"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___40.STRING.TEXT
+msgid  "~Dynamic report"
+msgstr "របាយការណ៍​ថាមវន្ត"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___41.STRING.TEXT
+msgid  "~Create report now"
+msgstr "បង្កើត​របាយការណ៍​ឥឡូវ "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___42.STRING.TEXT
+msgid  "~Modify report layout"
+msgstr "កែប្រែ​ប្លង់​របាយការណ៍ "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___43.STRING.TEXT
+msgid  "Static report"
+msgstr "របាយការណ៍​​ឋិតិវន្ត"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___44.STRING.TEXT
+msgid  "Save as"
+msgstr "រក្សាទុក​​ជា"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___50.STRING.TEXT
+msgid  "Groupings"
+msgstr "ដាក់​​ជា​​ក្រុម"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___51.STRING.TEXT
+msgid  "Then b~y"
+msgstr "បន្ទាប់​មក​តាម "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___52.STRING.TEXT
+msgid  "~Then by"
+msgstr "បន្ទាប់​មក​តាម "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___53.STRING.TEXT
+msgid  "Asc~ending"
+msgstr "​ឡើង "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___54.STRING.TEXT
+msgid  "Ascend~ing"
+msgstr "​ឡើង "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___55.STRING.TEXT
+msgid  "Ascendin~g"
+msgstr "​ឡើង "
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___56.STRING.TEXT
 msgid  "De~scending"
 msgstr "​ចុះ "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___57.STRING.TEXT
+msgid  "Des~cending"
+msgstr "​ចុះ "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___60.STRING.TEXT
+msgid  "Binary fields cannot be displayed in the report."
+msgstr "មិន​​អាច​​បង្ហាញ​​វាល​​គោល​​ពីរ​​ក្នុង​​របាយ​ការណ៍​ ។"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___61.STRING.TEXT
+msgid  "The table '<TABLENAME>' does not exist."
+msgstr "តារាង '<TABLENAME>' មិន​ទាន់​មាន​ទេ ។"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___62.STRING.TEXT
+msgid  "Creating Report..."
+msgstr "កំពុង​បង្កើត​​របាយការណ៍ ..."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___63.STRING.TEXT
+msgid  "Number of records inserted: <COUNT>"
+msgstr "ចំនួន​​កំណត់​​​ត្រា​ដែល​​​បាន​​បញ្ចូល ៖ <COUNT>"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___64.STRING.TEXT
+msgid  "The form '<REPORTFORM>' does not exist."
+msgstr "សំណុំ​បែបបទ '<REPORTFORM>' មិន​ទាន់​មាន​ទេ ។"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___65.STRING.TEXT
+msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
+msgstr "មិន​អាច​​រត់​​សំណួរ​​ជាមួយ​​សេចក្តី​​ថ្លែងការណ៍ <BR>'<STATEMENT>' <BR> ។ <BR> ពិនិត្យ​មើល​​ប្រភព​​ទិន្នន័យ​​របស់​​អ្នក ។ "
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___66.STRING.TEXT
+msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
+msgstr "មិន​អាច​អាន​វត្ថុ​បញ្ជា​ដែល​លាក់​​ខាង​ក្រោម​​ក្នុង​សំណុំ​បែបបទ '<REPORTFORM>' ៖ '<CONTROLNAME>' ។"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___67.STRING.TEXT
+msgid  "Importing data..."
+msgstr "កំពុង​​នាំ​ចូល​​ទិន្នន័យ ..."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___68.STRING.TEXT
+msgid  "Labeling fields"
+msgstr "កំពុង​ដាក់​ស្លាក​វាល"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___69.STRING.TEXT
+msgid  "How do you want to label the fields?"
+msgstr "តើ​​អ្នក​​ចង់​​ដាក់​​ស្លាក​​វាល​​របៀប​ណា ?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___70.STRING.TEXT
+msgid  "Label"
+msgstr "ស្លាក​"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___72.STRING.TEXT
+msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
+msgstr "កំហុស​មួយ​បាន​កើតឡើង​ក្នុង​អ្នក​ជំនួយការ ។​<BR> ពុម្ព '%PATH' អាច​នឹង​ភាន់​ច្រឡំ ។​<BR>​ភាគ​ដែល​ទាមទារ ឬ តារាង​មិន​មាន ឬ មាន​នៅ​ក្រោម​ឈ្មោះ​​ខុស ។​<BR> មើល​ជំនួយ ​សម្រាប់​ព័ត៌មាន​លម្អិត​បន្ថែម ។​<BR> សូម​ជ្រើស​ពុម្ព​ផ្សេង​ទៀត ។"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___73.STRING.TEXT
+msgid  "There is an invalid user field in a table."
+msgstr "មាន​វាល​អ្នក​ប្រើ​មិន​ត្រឹមត្រូវ​​ក្នុង​តារាង​ ។"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___74.STRING.TEXT
+msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
+msgstr "លក្ខណៈ​​វិនិច្ឆ័យ​​តម្រៀប '<FIELDNAME>' ត្រូវ​បាន​​ជ្រើស​​ពីរ​​ដង ។ លក្ខណៈ​​វិនិច្ឆ័យ​​នីមួយៗ​​អាច​ជ្រើស​​បាន​​តែ​​ម្តង​គត់​ ។"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___75.STRING.TEXT
+msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
+msgstr "ចំណាំ ៖  អត្ថបទ​​ឥត​​បាន​ការ​​នឹង​​ត្រូវ​បាន​​ជំនួស​​ដោយ​​ទិន្នន័យ​​ពី​​មូល​ដ្ឋាន​​ទិន្នន័យ ​​ពេល​​របាយ​ការណ៍​​ត្រូវ​​បាន​​បង្កើត ។"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___76.STRING.TEXT
+msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
+msgstr "របាយការណ៍ '%REPORTNAME' មាន​រួច​ហើយ ក្នុង​មូលដ្ឋាន​ទិន្នន័យ ។ សូម​ផ្តល់​ឈ្មោះ​ផ្សេង​ទៀត"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___78.STRING.TEXT
+msgid  "How do you want to proceed after creating the report?"
+msgstr "តើ​អ្នក​ចង់​ដំណើរការ​​តាម​របៀប​ណា បន្ទាប់​ពី​បង្កើត​របាយការណ៍ ?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___79.STRING.TEXT
+msgid  "What kind of report do you want to create?"
+msgstr "តើ​ប្រភេទ​របាយការណ៍​របៀប​ណា ដែលអ្នក​ចង់​បង្កើត ?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___80.STRING.TEXT
+msgid  "Tabular"
+msgstr "ជា​តារាង"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___81.STRING.TEXT
+msgid  "Columnar, single-column"
+msgstr "ជា​ជួរ​ឈរ ជួរ​ឈរ​តែ​មួយ"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___82.STRING.TEXT
+msgid  "Columnar, two columns"
+msgstr "ជា​ជួរឈរ ជួរ​ឈរ​ពីរ"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___83.STRING.TEXT
+msgid  "Columnar, three columns"
+msgstr "ជា​ជួរ​ឈរ ជួរ​ឈរ​បី"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___84.STRING.TEXT
+msgid  "In blocks, labels left"
+msgstr "ជា​បណ្តុំ - ស្លាក​ខាង​ឆ្វេង"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___85.STRING.TEXT
+msgid  "In blocks, labels above"
+msgstr "ជា​បណ្តុំ- ស្លាក​ខាង​​លើ"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___86.STRING.TEXT
 msgid  "Title:"
 msgstr "ចំណងជើង ៖"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___87.STRING.TEXT
+msgid  "Author:"
+msgstr "អ្នក​និពន្ធ ៖"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___88.STRING.TEXT
 msgid  "Date:"
 msgstr "កាលបរិច្ឆេទ ៖"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___89.STRING.TEXT
+msgid  "Page #page# of #count#"
+msgstr "ទំព័រទី #page# នៃ #count#"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___90.STRING.TEXT
+msgid  "Page number:"
+msgstr "លេខ​ទំព័រ ៖"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___91.STRING.TEXT
+msgid  "Page count:"
+msgstr "ចំនួន​ទំព័រ ៖"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___92.STRING.TEXT
+msgid  "No valid report template was found."
+msgstr "រក​មិនឃើញ​ពុម្ព​របាយការណ៍​ដែល​ត្រឹមត្រូវ​ទេ ។"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___1.STRING.TEXT
+msgid  "Table Wizard"
+msgstr "អ្នក​ជំនួយការ​តារាង"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___2.STRING.TEXT
+msgid  "Select fields"
+msgstr "ជ្រើស​វាល"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___3.STRING.TEXT
+msgid  "Set types and formats"
+msgstr "កំណត់​ប្រភេទ និង​ទ្រង់ទ្រាយ"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___4.STRING.TEXT
 msgid  "Set primary key"
@@ -83,13 +1411,177 @@ msgstr "កំណត់​កូន​សោ​សំខាន់"
 msgid  "Create table"
 msgstr "បង្កើត​​តារាង"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___8.STRING.TEXT
+msgid  "Select fields for your table"
+msgstr "ជ្រើស​វាល សម្រាប់​តារាង​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___9.STRING.TEXT
+msgid  "Set field types and formats"
+msgstr "កំណត់​ប្រភេទ និង​ទ្រង់ទ្រាយ​របស់​វាល"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___14.STRING.TEXT
+msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
+msgstr "អ្នក​ជំនួយការ​នេះ​ជួយ​អ្នក ​ក្នុង​ការ​បង្កើត​តារាង​មួយ សម្រាប់​មូលដ្ឋាន​ទិន្នន័យ​របស់​អ្នក ។ បន្ទាប់​ពី​ជ្រើស​ប្រភេទ​តារាង​មួយ និង​តារាង​គំរូ​មួយ  ជ្រើស​វាល​​ដែល​អ្នក​ចង់​រួម​បញ្ចូល​ក្នុង​តារាង​របស់​អ្នក ។ អ្នក​អាច​រួម​បញ្ចូល​វាល​ពី​តារាង​គំរូ​ច្រើន​ជាង​មួយ ។"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___15.STRING.TEXT
+msgid  "Ca~tegory"
+msgstr "ប្រភេទ "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___16.STRING.TEXT
+msgid  "B~usiness"
+msgstr "ពាណិជ្ជកម្ម "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___17.STRING.TEXT
+msgid  "P~ersonal"
+msgstr "ផ្ទាល់​ខ្លួន "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___18.STRING.TEXT
+msgid  "~Sample tables"
+msgstr "តារាង​គំរូ "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___20.STRING.TEXT
+msgid  "Field information"
+msgstr "ព័ត៌មាន​របស់​វាល"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___21.STRING.TEXT
+msgid  "+"
+msgstr "+"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___23.STRING.TEXT
+msgid  "Field name"
+msgstr "ឈ្មោះ​វាល​"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___24.STRING.TEXT
+msgid  "Field type"
+msgstr "ប្រភេទ​វាល​"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___25.STRING.TEXT
+msgid  "~Selected fields"
+msgstr "វាល​​ដែល​បាន​ជ្រើស "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___26.STRING.TEXT
+msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
+msgstr "កូនសោ​សំខាន់​ចង្អុល​បង្ហាញ​​ថា​​កំណត់​ត្រា​នីមួយៗ​មាន​តែ​មួយ​គត់ ​​ក្នុង​តារាង​មូល​ដ្ឋាន​ទិន្នន័យ ។ កូនសោ​សំខាន់​​សម្រួល​ការ​​តភ្ជាប់​ព័ត៌មាន​ក្នុង​តារាង​ផ្សេងៗ​គ្នា និង​​ជាអនុសាសន៍​ អ្នក​គួរ​តែ​មាន​កូនសោ​សំខាន់​មួយ​ក្នុង​តារាង​នីមួយៗ ។ ដោយ​គ្មាន​កូនសោ​សំខាន់ អ្នក​នឹង​មិន​អាច​បញ្ចូល​ទិន្នន័យ​ចូល​ក្នុង​តារាង​នេះ​ឡើយ ។"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___27.STRING.TEXT
+msgid  "~Create a primary key"
+msgstr "បង្កើត​កូន​សោ​សំខាន់​មួយ "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___28.STRING.TEXT
+msgid  "~Automatically add a primary key"
+msgstr "បន្ថែម​កូន​សោ​សំខាន់​មួយ​ដោយ​ស្វ័យ​ប្រវត្តិ "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___29.STRING.TEXT
+msgid  "~Use an existing field as a primary key"
+msgstr "ប្រើ​វាល​ដែល​មាន​ស្រាប់​មួយ ជា​កូនសោ​សំខាន់​មួយ "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___30.STRING.TEXT
+msgid  "Define p~rimary key as a combination of several fields "
+msgstr "កូន​សោ​សំខាន់​បង្កើត​ឡើង​ដោយ​បន្សំ​នៃ​ក្រឡា​ទទឹង​ច្រើន​"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___31.STRING.TEXT
+msgid  "F~ieldname"
+msgstr "ឈ្មោះ​ក្រឡា​ទទឹង "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___32.STRING.TEXT
+msgid  "~Primary key fields"
+msgstr "វាល​កូន​សោ​សំខាន់ "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___33.STRING.TEXT
+msgid  "Auto ~value"
+msgstr "តម្លៃ​ស្វ័យ​ប្រវត្តិ "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___34.STRING.TEXT
+msgid  "What do you want to name your table?"
+msgstr "តើ​អ្នក​ចង់​ដាក់​ឈ្មោះ​អ្វី ឲ្យ​តារាង​របស់​អ្នក ?"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___35.STRING.TEXT
+msgid  "Congratulations. You have entered all the information needed to create your table."
+msgstr "អបអរសាទរ ។ អ្នក​បាន​បញ្ចូល​គ្រប់​ព័ត៌មាន​ទាំងអស់​ដែល​ត្រូវការ​ ដើម្បី​បង្កើត​តារាង​របស់​អ្នកហើយ"
+
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___36.STRING.TEXT
 msgid  "What do you want to do next?"
 msgstr "តើ​អ្នក​ចង់​ធ្វើ​អ្វី​បន្ត​ទៅ​ទៀត ?"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___37.STRING.TEXT
+msgid  "Modify the table design"
+msgstr "កែប្រែ​រចនា​តារាង"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___38.STRING.TEXT
+msgid  "Insert data immediately"
+msgstr "បញ្ចូល​ទិន្នន័យ​ភ្លាមៗ"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___39.STRING.TEXT
+msgid  "C~reate a form based on this table"
+msgstr "បង្កើត​សំណុំ​បែបបទ​មួយ ដោយ​​ផ្អែក​លើ​តារាង​នេះ "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___40.STRING.TEXT
+msgid  "The table you have created could not be opened."
+msgstr "មិន​អាច​បើក​តារាង​ដែល​អ្នក​បាន​បង្កើត ។"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___41.STRING.TEXT
+msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "ឈ្មោះ​តារាង '%TABLENAME' មាន​តួ​អក្សរ​មួយ ('%SPECIALCHAR') ដែល​អាច​មិន​ត្រូវ​បាន​គាំទ្រ ដោយ​មូលដ្ឋាន​ទិន្នន័យ ។"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___42.STRING.TEXT
+msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "ឈ្មោះ​វាល '%FIELDNAME' មាន​តួ​អក្សរ​ពិសេស​មួយ ('%SPECIALCHAR') ដែល​អាច​មិន​ត្រូវ​បាន​គាំទ្រ ដោយ​មូលដ្ឋាន​ទិន្នន័យ ។"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___44.STRING.TEXT
+msgid  "MyTable"
+msgstr "តារាង​ខ្ញុំ"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___45.STRING.TEXT
+msgid  "Add a Field"
+msgstr "បន្ថែម​​វាល​​មួយ"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___46.STRING.TEXT
+msgid  "Remove the selected Field"
+msgstr "យក​វាល​ដែល​បាន​ជ្រើស​ចេញ"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___47.STRING.TEXT
+msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
+msgstr "មិន​អាច​បញ្ចូល​វាល​បាន​ទេ ព្រោះ​វា​នឹង​លើស​ចំនួន​អតិបរមា​នៃ​វាល %COUNT ដែល​អាច​ធ្វើ​បាន​ក្នុង​តារាង​មូលដ្ឋាន​ទិន្នន័យ ។"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___48.STRING.TEXT
+msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
+msgstr "មាន​ឈ្មោះ '%TABLENAME' រួច​ហើយ ។\nសូម​បញ្ចូល​ឈ្មោះ​មួយ​ទៀត ។"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___49.STRING.TEXT
+msgid  "Catalog of the table"
+msgstr "កាតាឡុក​តារាង"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___50.STRING.TEXT
+msgid  "Schema of the table"
+msgstr "គំនូរ​បំព្រួញ​នៃ​តារាង"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___51.STRING.TEXT
+msgid  "The field '%FIELDNAME' already exists."
+msgstr "មាន​វាល '%FIELDNAME' រួច​ហើយ ។"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___1.STRING.TEXT
+msgid  "Letter Wizard"
+msgstr "អ្នក​ជំនួយការ សំបុត្រ"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.STRING.TEXT
 msgid  "Label9"
 msgstr "ស្លាក ​៩"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___3.STRING.TEXT
+msgid  "~Business letter"
+msgstr "សំបុត្រ​ពាណិជ្ជកម្ម "
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___4.STRING.TEXT
+msgid  "~Formal personal letter"
+msgstr "សំបុត្រ​ផ្ទាល់​ខ្លួន​ត្រឹមត្រូវ "
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___5.STRING.TEXT
+msgid  "~Personal letter"
+msgstr "សំបុត្រ​​ផ្ទាល់​ខ្លួន "
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___6.STRING.TEXT
+msgid  "~Use letterhead paper with pre-printed elements"
+msgstr "ប្រើ​ក្រដាស​ក្បាល​លិខិត​ជាមួយ​ធាតុ​ដែល​បាន​បោះ​ពុម្ព​ជា​មុន"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.STRING.TEXT
 msgid  "~Logo"
@@ -99,13 +1591,29 @@ msgstr "រូប​សញ្ញា "
 msgid  "Return address"
 msgstr "អាសយដ្ឋាន​ត្រឡប់"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___9.STRING.TEXT
+msgid  "~Include footer"
+msgstr "រួម​បញ្ចូល​បាតកថា "
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.STRING.TEXT
 msgid  "~Return address in envelope window"
 msgstr "អាសយដ្ឋាន​ត្រឡប់ ក្នុង​បង្អួច​ស្រោម​សំបុត្រ "
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___13.STRING.TEXT
+msgid  "Letter Signs"
+msgstr "ហត្ថលេខា​សំបុត្រ"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.STRING.TEXT
 msgid  "S~ubject line"
 msgstr "បន្ទាត់​ប្រធានបទ "
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___15.STRING.TEXT
+msgid  "Salu~tation"
+msgstr "វន្ទនាការ "
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___16.STRING.TEXT
+msgid  "Fold ~marks"
+msgstr "ចំណុច​របត់ "
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.STRING.TEXT
 msgid  "~Complimentary close"
@@ -118,6 +1626,10 @@ msgstr "បាតកថា "
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.STRING.TEXT
 msgid  "~Use user data for return address"
 msgstr "ប្រើ​ទិន្នន័យ​អ្នក​ប្រើ សម្រាប់​អាសយដ្ឋាន​ត្រឡប់ "
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___20.STRING.TEXT
+msgid  "~New sender address:"
+msgstr "អាសយដ្ឋាន​អ្នក​ផ្ញើ​ថ្មី ៖ "
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.STRING.TEXT
 msgid  "Use placeholders for ~recipient's address"
@@ -135,9 +1647,33 @@ msgstr "រួម​បញ្ចូល​តែ​លើ​ទំព័រ​ទ
 msgid  "~Include page number"
 msgstr "រួម​បញ្ចូល​លេខ​ទំព័រ "
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___25.STRING.TEXT
+msgid  "Letter Template"
+msgstr "ពុម្ព​សំបុត្រ"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___26.STRING.TEXT
+msgid  "Create a ~letter from this template"
+msgstr "បង្កើត​សំបុត្រ​មួយ​ពី​ពុម្ព​នេះ "
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___27.STRING.TEXT
+msgid  "Make ~manual changes to this letter template"
+msgstr "ធ្វើ​​ការ​ផ្លាស់ប្តូរ​ដោយ​ដៃ ចំពោះ​​ពុម្ព​សំបុត្រ​នេះ "
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.STRING.TEXT
 msgid  "Page design"
 msgstr "រចនា​ទំព័រ"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___31.STRING.TEXT
+msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
+msgstr "អ្នក​ជំនួយការ​នេះ ជួយ​អ្នក​​បង្កើត​ពុម្ព​សំបុត្រ​មួយ ។ បន្ទាប់​មក អ្នក​អាច​ប្រើ​ពុម្ព​ជា​មូលដ្ឋាន​សម្រាប់​សរសេរ​សំបុត្រ តាម​ដែល​អ្នក​ចង់​បាន ។"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___32.STRING.TEXT
+msgid  "~Height:"
+msgstr "កម្ពស់ ៖ "
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___33.STRING.TEXT
+msgid  "~Width:"
+msgstr "ទទឹង ៖ "
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.STRING.TEXT
 msgid  "S~pacing to left margin:"
@@ -151,6 +1687,18 @@ msgstr "គម្លាត​ទៅ​រឹមកំពូល ៖ "
 msgid  "Height:"
 msgstr "កម្ពស់ ៖"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___37.STRING.TEXT
+msgid  "Width:"
+msgstr "ទទឹង ៖"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___41.STRING.TEXT
+msgid  "Use a typical letter format for this country:"
+msgstr "ប្រើ​ទ្រង់ទ្រាយ​សំបុត្រ​ធម្មតា​មួយ សម្រាប់​ប្រទេស​នេះ ៖"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___42.STRING.TEXT
+msgid  "Sender's address"
+msgstr "អាសយដ្ឋាន​អ្នក​ផ្ញើ"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.STRING.TEXT
 msgid  "Name:"
 msgstr "ឈ្មោះ ៖"
@@ -163,9 +1711,21 @@ msgstr "វិថី ៖"
 msgid  "ZIP code/State/City:"
 msgstr "លេខ​តំបន់​/​រដ្ឋ​/​រាជធានី ៖"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___46.STRING.TEXT
+msgid  "Recipient's address"
+msgstr "អាសយដ្ឋាន​អ្នក​ទទួល"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.STRING.TEXT
 msgid  "Footer"
 msgstr "បាតកថា​"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___48.STRING.TEXT
+msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
+msgstr "អ្នក​ជំនួយការ​នេះ បង្កើត​ពុម្ព​សំបុត្រ​មួយ ដែល​អាច​ឲ្យ​អ្នក​បង្កើត​សំបុត្រ​ច្រើន​ ជាមួយការ​កំណត់ និង​ប្លង់​ដូចគ្នា ។"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___49.STRING.TEXT
+msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
+msgstr "ដើម្បី​បង្កើត​សំបុត្រ​ថ្មី​ផ្សេង​​ចេញ​ពី​ពុម្ព  គ្រាន់​តែ​ស្វែងរក​ផ្លូវ​ទៅ​កាន់​ទីតាំង​ពុម្ព រួច​ចុច​ពីរ​​ដង​លើ​វា ។"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.STRING.TEXT
 msgid  "Template name:"
@@ -175,21 +1735,845 @@ msgstr "ឈ្មោះ​ពុម្ព ៖"
 msgid  "Location and file name:"
 msgstr "ទីតាំង និង​ឈ្មោះ​ឯកសារ ៖"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___52.STRING.TEXT
+msgid  "How do you want to proceed?"
+msgstr "តើ​អ្នក​ចង់​ដំណើរការ​​តាម​របៀប​ណា ?"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___53.STRING.TEXT
+msgid  "Please choose the type of letter and page design"
+msgstr "សូម​ជ្រើស​ប្រភេទ​រចនា​សំបុត្រ និង​ទំព័រ ?"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___54.STRING.TEXT
+msgid  "Select the items to be printed"
+msgstr "ជ្រើស​ធាតុ​ដែល​​ត្រូវ​បោះពុម្ព"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___55.STRING.TEXT
+msgid  "Specify items already on your letterhead paper"
+msgstr "បញ្ជាក់​ធាតុ​ដែល​មាន​រួច​ហើយ​ លើ​ក្រដាស​ក្បាល​លិខិត​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___56.STRING.TEXT
+msgid  "Specify the sender and recipient information"
+msgstr "បញ្ជាក់​​លម្អិត​អំពី​ព័ត៌មាន​អ្នក​ទទួល និង​អ្នក​ផ្ញើ"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___57.STRING.TEXT
+msgid  "Fill in the information you would like in the footer"
+msgstr "បំពេញ​ព័ត៌មាន​ដែល​អ្នក​ចង់​មាន​ក្នុង​បាតកថា"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___58.STRING.TEXT
+msgid  "Please specify last settings"
+msgstr "សូម​បញ្ជាក់​លម្អិត​អំពី​​ការ​កំណត់​ចុង​ក្រោយ"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___1.STRING.TEXT
+msgid  "To Whom it May Concern"
+msgstr "សូម​គោរព​ជូន​លោក​ លោក​ស្រី​ដែល​ពាក់​ព័ន្ធ​"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___2.STRING.TEXT
+msgid  "Dear Sir or Madam"
+msgstr "ជូន​ចំពោះ លោក/លោក​ស្រី ជា​ទី​រាប់​អាន"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___3.STRING.TEXT
+msgid  "Hello"
+msgstr "សួស្តី"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___1.STRING.TEXT
 msgid  "Sincerely"
 msgstr "ដោយ​សេចក្តី​ស្មោះ​ត្រង់"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___2.STRING.TEXT
+msgid  "Best regards"
+msgstr "ដោយ​សេចក្តី​គោរព​ដ៏ខ្ពង់ខ្ពស់​បំផុត"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___3.STRING.TEXT
+msgid  "Cheers"
+msgstr "អបអរ​សាទរ"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___2.STRING.TEXT
+msgid  "Letterhead layout"
+msgstr "ប្លង់​ក្បាល​លិខិត"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___3.STRING.TEXT
+msgid  "Printed items"
+msgstr "ធាតុ​ដែលបាន​បោះពុម្ព"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___4.STRING.TEXT
+msgid  "Recipient and sender"
+msgstr "អ្នក​ទទួល និង​អ្នក​ផ្ញើ"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.STRING.TEXT
 msgid  "Name and location"
 msgstr "ឈ្មោះ និង​ទីតាំង"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___1.STRING.TEXT
+msgid  "Fax Wizard"
+msgstr "អ្នក​ជំនួយការ ទូរសារ"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___3.STRING.TEXT
+msgid  "~Business Fax"
+msgstr "ទូរសារ​ពាណិជ្ជកម្ម "
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___4.STRING.TEXT
+msgid  "~Personal Fax"
+msgstr "ទូរសារ​ផ្ទាល់​ខ្លួន "
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___7.STRING.TEXT
+msgid  "S~alutation"
+msgstr "វន្ទនាការ "
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___11.STRING.TEXT
 msgid  "~New return address"
 msgstr "អាសយដ្ឋាន​ត្រឡប់​ថ្មី "
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___12.STRING.TEXT
+msgid  "My Fax Template"
+msgstr "ពុម្ព​ទូរសារ​របស់​ខ្ញុំ"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___13.STRING.TEXT
+msgid  "Create a ~fax from this template"
+msgstr "បង្កើត​ទូរសារ​មួយ​ពី​ពុម្ព​នេះ "
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___14.STRING.TEXT
+msgid  "Make ~manual changes to this fax template"
+msgstr "ធ្វើ​ការ​ផ្លាស់ប្តូរ​ដោយ​ដៃ ទៅ​ពុម្ព​ទូរសារ​នេះ "
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___17.STRING.TEXT
+msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
+msgstr "អ្នក​ជំនួយការ​នេះ​ជួយ​អ្នក ដើម្បី​បង្កើត​ពុម្ព​ទូរសារ​មួយ ។ បន្ទាប់​មក​ពុម្ព​អាច​ត្រូវ​បាន​ប្រើ​ ដើម្បី​បង្កើត​ទូរសារ​មួយ តាម​សេចក្តី​ត្រូវការ ។"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___23.STRING.TEXT
+msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
+msgstr "អ្នក​ជំនួយការ​នេះ​បង្កើត​ពុម្ព​ទូរសារ​មួយ ដែល​អាច​ឲ្យ​អ្នក​បង្កើត​ទូរសារច្រើន ជាមួយ​ប្លង់​ និង​ការកំណត់​ដូចគ្នា ។"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___24.STRING.TEXT
+msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
+msgstr "ដើម្បី​បង្កើត​ទូរសារ​ថ្មី​ផ្សេង​ទៀត​ចេញ​ពី​ពុម្ព, ទៅ​​កាន់​ទីតាំង​ដែល​អ្នក​រក្សាទុក​ពុម្ព រួច​ចុចពីរ​​ដង​លើ​ឯកសារ ។"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___25.STRING.TEXT
+msgid  "Template Name:"
+msgstr "ឈ្មោះ​ពុម្ព ៖"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___28.STRING.TEXT
+msgid  "Choose the type of fax and a page design"
+msgstr "ជ្រើស​ប្រភេទ​នៃ​ការ​រចនា​ទូរសារ និង​ទំព័រ​មួយ"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___29.STRING.TEXT
+msgid  "Select items to include in the fax template"
+msgstr "ជ្រើស​ធាតុ​ដែល​ត្រូវ​រួម​បញ្ចូល​ក្នុង​ពុម្ព​ទូរសារ"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___30.STRING.TEXT
+msgid  "Specify sender and recipient information"
+msgstr "បញ្ជាក់​លម្អិតអំពី​​ព័ត៌មាន​អ្នក​ផ្ញើ និង​អ្នក​ទទួល"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___31.STRING.TEXT
+msgid  "Enter text for the footer"
+msgstr "បញ្ចូល​អត្ថបទ សម្រាប់​បាតកថា"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___32.STRING.TEXT
 msgid  "Choose a name and save the template"
 msgstr "ជ្រើស​ឈ្មោះ​មួយ និង​រក្សាទុក​ពុម្ព"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___35.STRING.TEXT
+msgid  "~Date"
+msgstr "កាល​បរិច្ឆេទ "
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___36.STRING.TEXT
+msgid  "~Type of message"
+msgstr "ប្រភេទ​សារ "
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___37.STRING.TEXT
+msgid  "Fax Number:"
+msgstr "លេខ​​ទូរសារ ៖"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___1.STRING.TEXT
+msgid  "Important Information!"
+msgstr "ព័ត៌មាន​សំខាន់ ​!"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___2.STRING.TEXT
+msgid  "For your information"
+msgstr "សម្រាប់​​ព័ត៌មាន​​របស់​​អ្នក"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___3.STRING.TEXT
+msgid  "News!"
+msgstr "ព័ត៌មាន !"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___1.STRING.TEXT
+msgid  "To whom it may concern,"
+msgstr "សូម​គោរព​ជូន​លោក​ លោក​ស្រី​ដែល​ពាក់​ព័ន្ធ​​"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___2.STRING.TEXT
+msgid  "Dear Sir or Madam,"
+msgstr "ជូន​ចំពោះ លោក/លោក​ស្រី ជា​ទី​រាប់​អាន"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___3.STRING.TEXT
+msgid  "Hello,"
+msgstr "សួស្តី "
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___4.STRING.TEXT
+msgid  "Hi,"
+msgstr "សួស្តី "
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___2.STRING.TEXT
+msgid  "Yours faithfully"
+msgstr "ដោយ​ភក្តីភាព​"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___3.STRING.TEXT
+msgid  "Regards"
+msgstr "ដោយ​ការ​គោរព"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___4.STRING.TEXT
+msgid  "Love"
+msgstr "សេចក្តី​ស្រឡាញ់"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___2.STRING.TEXT
+msgid  "Items to include"
+msgstr "ធាតុ​ត្រូវ​​រួម​បញ្ចូល"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___3.STRING.TEXT
+msgid  "Sender and Recipient"
+msgstr "អ្នក​ផ្ញើ និង​អ្នក​ទទួល"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__1.STRING.TEXT
+msgid  "Web Wizard"
+msgstr "អ្នក​ជំនួយការ បណ្តាញ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__2.STRING.TEXT
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr "អ្នក​​ជំនួយការ​​បណ្តាញ​នេះ​នឹង​ជួយ​អ្នក​ក្នុង​ការ​បោះពុម្ព​ផ្សាយ​ឯកសារ​លើ​អ៊ីនធឺណិត ។​\n\nវា​នឹង​បម្លែង​ឯកសារ ដូច្នេះ​ពួកវា​អាច​ត្រូវ​បានបង្ហាញ​​ដោយ​កម្មវិធី​រុករក​បណ្តាញ ។ ជា​បន្ថែម វា​នឹង​បង្កើត​ទំព័រ​តារាង​មាតិកា​មួយ​ជាមួយ​តំណ សម្រាប់​ភាព​ងាយស្រួល​ចូល​ដំណើរការ​​​ឯកសារ ។ អ្នក​ជំនួយការ​បណ្តាញ​នឹង​អនុញ្ញាត​ផង​ដែរ​ឲ្យ​អ្នក​ប្តូរ​ការ​រចនា និងប្លង់​​​​នៃ​តំបន់​បណ្តាញ​របស់​អ្នក​តាម​បំណង ។​\n\nអ្នក​នឹង​អាច​រក្សា​ឯកសារ​ដែល​អ្នក​បាន​បោះពុម្ព​ផ្សាយ​លើ​បណ្តាញ ឲ្យ​ទាន់​សម័យ និង​អាច​បន្ថែម ឬ យក​ឯកសារ​ចេញ​នៅ​ពេល​ណា​ក៏​បាន ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__4.STRING.TEXT
+msgid  "~Delete"
+msgstr "លុប​ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__5.STRING.TEXT
+msgid  "Introduction"
+msgstr "សេចក្តី​ណែនាំ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__6.STRING.TEXT
+msgid  "Select the documents you want to publish"
+msgstr "ជ្រើស​ឯកសារ ដែល​អ្នក​ចង់​បោះពុម្ព​ផ្សាយ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__8.STRING.TEXT
+msgid  "Document information "
+msgstr "ព័ត៌មាន​ឯកសារ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__9.STRING.TEXT
+msgid  "~Title:"
+msgstr "ចំណង​ជើង ៖ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__10.STRING.TEXT
+msgid  "~Summary: "
+msgstr "សង្ខេប ៖ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__11.STRING.TEXT
+msgid  "Au~thor:"
+msgstr "អ្នក​និពន្ធ ៖ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__12.STRING.TEXT
+msgid  "~Export to file format:"
+msgstr "នាំ​ចេញ​ទៅ​ទ្រង់ទ្រាយ​ឯកសារ ៖ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__13.STRING.TEXT
+msgid  "Enter general information for your web site"
+msgstr "បញ្ចូល​ព័ត៌មាន​ទូទៅ សម្រាប់​តំបន់​បណ្តាញ​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__16.STRING.TEXT
+msgid  "Description:"
+msgstr "ពិពណ៌នា ៖"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__18.STRING.TEXT
+msgid  "Created:"
+msgstr "​បាន​បង្កើត​ ៖"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__20.STRING.TEXT
+msgid  "E-mail:"
+msgstr "អ៊ីមែល ៖"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__21.STRING.TEXT
+msgid  "Copyright notice:"
+msgstr "ប្រកាស​រក្សា​សិទ្ធិ ៖"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__22.STRING.TEXT
+msgid  "Modified:"
+msgstr "បាន​កែប្រែ ៖"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__24.STRING.TEXT
+msgid  "~Preview"
+msgstr "​មើល​ជា​​​មុន "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__25.STRING.TEXT
+msgid  "Where do you want to publish your web site?"
+msgstr "តើ​អ្នក​ចង់​បោះពុម្ព​ផ្សាយ​ទំព័រ​បណ្តាញ​របស់​អ្នក​នៅ​កន្លែង​ណា ?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__26.STRING.TEXT
+msgid  "Publish the new web site:"
+msgstr "បោះពុម្ព​ផ្សាយ​តំបន់​បណ្តាញ​ថ្មី ៖"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__27.STRING.TEXT
+msgid  "To a ~local folder"
+msgstr "ទៅ​ថត​មូលដ្ឋាន​មួយ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__28.STRING.TEXT
+msgid  "..."
+msgstr "..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__29.STRING.TEXT
+msgid  "To a ~web server via FTP"
+msgstr "ទៅ​ម៉ាស៊ីន​បម្រើ​បណ្តាញ​តាម​រយៈ FTP "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__31.STRING.TEXT
+msgid  "~Configure..."
+msgstr "កំណត់​​រចនា​សម្ព័ន្ធ... "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__32.STRING.TEXT
+msgid  "To a ZIP ~archive"
+msgstr "ទៅ​ប័ណ្ណសារ ZIP មួយ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__34.STRING.TEXT
+msgid  "~Save settings (recommended)"
+msgstr "រក្សា​ទុក​ការ​កំណត់ (អនុសាសន៍) "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__35.STRING.TEXT
+msgid  "Save ~as:"
+msgstr "រក្សាទុក​ជា ៖ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__36.STRING.TEXT
+msgid  "~Choose settings for the Web Wizard"
+msgstr "ជ្រើស​ការ​កំណត់ សម្រាប់​អ្នក​ជំនួយការ​បណ្តាញ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__37.STRING.TEXT
+msgid  "Web site content "
+msgstr "មាតិកា​តំបន់​បណ្តាញ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__38.STRING.TEXT
+msgid  "~Add..."
+msgstr "បន្ថែម... "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__39.STRING.TEXT
+msgid  "Remo~ve"
+msgstr "យក​ចេញ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__40.STRING.TEXT
+msgid  "Choose a layout for the table of contents of your web site"
+msgstr "ជ្រើស​ប្លង់​មួយ សម្រាប់​តារាង​មាតិកា​នៃ​តំបន់​បណ្តាញ​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__41.STRING.TEXT
+msgid  "Select a style for the table of contents page"
+msgstr "ជ្រើស​រចនាប័ទ្ម​មួយ សម្រាប់​​ទំព័រ​តារាង​មាតិកា ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__42.STRING.TEXT
+msgid  "~Style:"
+msgstr "រចនាប័ទ្ម ៖ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__48.STRING.TEXT
+msgid  "~Layouts: "
+msgstr "ប្លង់ ៖ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__50.STRING.TEXT
+msgid  "~Description"
+msgstr "ពិពណ៌នា "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__51.STRING.TEXT
+msgid  "~Author"
+msgstr "អ្នក​និពន្ធ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__52.STRING.TEXT
+msgid  "Cr~eation date"
+msgstr "កាលបរិច្ឆេទ​បង្កើត "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__53.STRING.TEXT
+msgid  "~Last change date"
+msgstr "កាលបរិច្ឆេទ​កែប្រែ​ចុង​ក្រោយ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__54.STRING.TEXT
+msgid  "~File name"
+msgstr "ឈ្មោះ​ឯកសារ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__55.STRING.TEXT
+msgid  "File forma~t"
+msgstr "ទ្រង់ទ្រាយ​ឯកសារ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__56.STRING.TEXT
+msgid  "File format ~icon"
+msgstr "រូបតំណាង​ទ្រង់ទ្រាយ​ឯកសារ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__57.STRING.TEXT
+msgid  "Number ~of pages"
+msgstr "ចំនួន​ទំព័រ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__58.STRING.TEXT
+msgid  "~Size in KB"
+msgstr "ទំហំ​គិត​ជា KB "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__59.STRING.TEXT
+msgid  "Click 'Preview' to see a preview in your browser:"
+msgstr "ចុច 'មើល​ជា​មុន' ដើម្បី​ឃើញ​ជា​មុន​ក្នុង​កម្មវិធី​រុក​រក​របស់​អ្នក ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__60.STRING.TEXT
+msgid  "Customize the selected layout"
+msgstr "ប្តូរ​ប្លង់​ដែលបាន​ជ្រើស​តាម​បំណង"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__61.STRING.TEXT
+msgid  "Include the following information for each document in the table of contents:"
+msgstr "រួម​បញ្ចូល​ព័ត៌មាន​ខាងក្រោម​នេះ សម្រាប់​ឯកសារ​និមួយ​ៗ ក្នុង​តារាង​មាតិកា ៖"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__62.STRING.TEXT
+msgid  "Optimize the layout for screen resolution:"
+msgstr "បង្កើន​ប្រសិទ្ធភាព​ប្លង់ សម្រាប់​គុណភាព​បង្ហាញ​លើ​អេក្រង់ ៖"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__64.STRING.TEXT
+msgid  "~640x480"
+msgstr "៦៤០ x ៤៨០ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__65.STRING.TEXT
+msgid  "~800x600"
+msgstr "៨០០ x ៦០០ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__66.STRING.TEXT
+msgid  "~1024x768"
+msgstr "១០២៤ x ៧៦៨ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__70.STRING.TEXT
+msgid  "Generating Your Web Site"
+msgstr "បង្កើត​តំបន់​បណ្តាញ​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__71.STRING.TEXT
+msgid  "%START - %END/%TOTAL"
+msgstr "%START - %END/%TOTAL"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__72.STRING.TEXT
+msgid  "myWebsite"
+msgstr "តំបន់​បណ្តាញ​របស់​ខ្ញុំ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__73.STRING.TEXT
+msgid  "FTP target '%FILENAME' is a file."
+msgstr "គោលដៅ FTP '%FILENAME' គឺ​ជា​ឯកសារ​មួយ ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__74.STRING.TEXT
+msgid  "The local target '%FILENAME' is a file."
+msgstr "គោលដៅ​មូលដ្ឋាន '%FILENAME' គឺ​ជា​ឯកសារ​មួយ ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__75.STRING.TEXT
+msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
+msgstr "គោលដៅ ZIP '%FILENAME' មាន​រួច​ហើយ ។ តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ គោលដៅ​ដែល​មាន​ស្រាប់​ឬ​ទេ ?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__76.STRING.TEXT
+msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "ថត​គោលដៅ FTP '%FILENAME' មិន​មែន​ទទេ ។ ឯកសារ​ខ្លះ​អាច​នឹង​ត្រូវ​បាន​សរសេរ​លើ ។ តើ​អ្នក​ចង់​បន្ត​ឬ ?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__77.STRING.TEXT
+msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "ថត​គោលដៅ​មូលដ្ឋាន '%FILENAME' មិន​មែន​ទទេ ។ ឯកសារ​ខ្លះ​អាច​នឹង​ត្រូវ​បាន​សរសេរ​​ជាន់​លើ ។ តើ​អ្នក​ចង់​បន្ត​ឬ ?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__78.STRING.TEXT
+msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
+msgstr "ការ​កំណត់​មាន​រួច​ហើយ​ក្រោម​ឈ្មោះ​ដែល​បាន​ផ្តល់ ។ តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​ការ​កំណត់​ដែល​មាន​ស្រាប់​ឬ​ទេ ?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__79.STRING.TEXT
+msgid  "Exporting documents..."
+msgstr "កំពុង​នាំ​ចេញ​ឯកសារ ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__80.STRING.TEXT
+msgid  "Preparing export..."
+msgstr "កំពុង​រៀបចំ​​នាំ​ចេញ ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__81.STRING.TEXT
+msgid  "Copying layout files..."
+msgstr "កំពុង​ចម្លង​ឯកសារ​ប្លង់ ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__82.STRING.TEXT
+msgid  "Preparing table of contents generation..."
+msgstr "កំពុង​រៀបចំ​ការ​បង្កើត​តារាង​មាតិកា ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__83.STRING.TEXT
+msgid  "Generating table of contents..."
+msgstr "កំពុង​បង្កើត​តារាង​មាតិកា ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__84.STRING.TEXT
+msgid  "Initializing..."
+msgstr "កំពុង​ចាប់ផ្តើម ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__86.STRING.TEXT
+msgid  "Preparing to publish..."
+msgstr "កំពុង​រៀបចំ​បោះពុម្ព​ផ្សាយ ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__87.STRING.TEXT
+msgid  "Publishing to local directory..."
+msgstr "កំពុង​បោះពុម្ព​ផ្សាយ​ទៅ​ថត​មូលដ្ឋាន ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__88.STRING.TEXT
+msgid  "Publishing to FTP destination..."
+msgstr "កំពុង​បោះពុម្ព​ផ្សាយ​ទៅ​ទិសដៅ FTP ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__89.STRING.TEXT
+msgid  "Publishing to a ZIP archive..."
+msgstr "កំពុង​បោះពុម្ព​ផ្សាយ​ទៅ​ប័ណ្ណសារ​ ZIP ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___90.STRING.TEXT
+msgid  "Finishing..."
+msgstr "កំពុង​បញ្ចប់ ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___94.STRING.TEXT
+msgid  "Graphic files"
+msgstr "ឯកសារ​ក្រាហ្វិក"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___95.STRING.TEXT
+msgid  "All files"
+msgstr "ឯកសារ​ទាំងអស់"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___96.STRING.TEXT
+msgid  "~ZIP archive files"
+msgstr "ឯកសារ​ប័ណ្ណសារ ZIP "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___98.STRING.TEXT
+msgid  "Background images"
+msgstr "រូបភាព​ផ្ទៃ​ខាង​ក្រោយ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___99.STRING.TEXT
+msgid  "Choose a background image: "
+msgstr "ជ្រើស​រូបភាព​ផ្ទៃ​ខាង​ក្រោយ​មួយ ៖"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___100.STRING.TEXT
+msgid  "Icon sets"
+msgstr "សំណុំ​រូបតំណាង"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___101.STRING.TEXT
+msgid  "Choose an icon set:"
+msgstr "ជ្រើស​សំណុំ​រូបតំណាង​មួយ ៖"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__102.STRING.TEXT
+msgid  "Other..."
+msgstr "ផ្សេងៗ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__103.STRING.TEXT
+msgid  "None"
+msgstr "គ្មាន"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__104.STRING.TEXT
+msgid  "Your web site was created successfully into: %FILENAME"
+msgstr "ទំព័រ​បណ្តាញ​របស់​អ្នក ត្រូវ​បាន​បង្កើត​ដោយ​ជោគ​ជ័យ​ក្នុង ៖ %FILENAME"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__105.STRING.TEXT
+msgid  "One or more errors occurred when generating the web site."
+msgstr "កំហុស​មួយ ឬ ច្រើន​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​បង្កើត​តំបន់​បណ្តាញ ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__106.STRING.TEXT
+msgid  "An error occurred while generating the table of contents page(s). "
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​បង្កើត​ទំព័រ​តារាង​មាតិកា ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__107.STRING.TEXT
+msgid  "An error occurred while copying the layout files. "
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​ចម្លង​ឯកសារ​ប្លង់ ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__108.STRING.TEXT
+msgid  "An error occurred while gathering document information for '%FILENAME'. "
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​ប្រមូល​ព័ត៌មាន​ឯកសារ​សម្រាប់ '%FILENAME' ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__109.STRING.TEXT
+msgid  "An error occurred while exporting the document '%FILENAME'."
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​នាំ​ចេញ​ឯកសារ '%FILENAME' ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__110.STRING.TEXT
+msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​បង្កើត​ថត​មួយ សម្រាប់​នាំ​ចេញ '%FILENAME' ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__111.STRING.TEXT
+msgid  "A security error occurred while exporting the document '%FILENAME'."
+msgstr "កំហុស​សុវត្ថភាព​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​នាំ​ចេញ​ឯកសារ '%FILENAME' ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__112.STRING.TEXT
+msgid  "An input/output error occurred while exporting the document '%FILENAME'."
+msgstr "កំហុស បញ្ចេញ​/​បញ្ចូល មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​នាំ​ចេញ​ឯកសារ '%FILENAME' ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__113.STRING.TEXT
+msgid  "An error occurred while copying media files to the temporary directory."
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​ចម្លង​ឯកសារ​មេឌៀ​ទៅ​ថត​បណ្តោះ​អាសន្ន ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__114.STRING.TEXT
+msgid  "The web site could not be copied to the following destination: %URL"
+msgstr "មិន​អាច​ចម្លង​តំបន់​បណ្តាញ ទៅ​ទិសដៅ​ដូច​ត​ទៅ​នេះ ៖ %URL"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__115.STRING.TEXT
+msgid  "An unexpected error occurred: %ERROR"
+msgstr "កំហុស​ស្មាន​មិន​ដល់​មួយ​បាន​កើត​ឡើង ៖ %ERROR"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__116.STRING.TEXT
+msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr "កំហុស​ស្មាន​មិន​ដល់​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​ធ្វើ​ឯកសារ​ឲ្យ​មាន​សុពលភាព ៖ '%FILENAME'"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__117.STRING.TEXT
+msgid  "%FILENAME' is a folder."
+msgstr "%FILENAME' គឺ​ជា​ថត​មួយ ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__118.STRING.TEXT
+msgid  "Loading Web Wizard Settings..."
+msgstr "កំពុង​ផ្ទុក​ការ​កំណត់​អ្នក​ជំនួយការ​បណ្តាញ ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__119.STRING.TEXT
+msgid  "An unexpected error occurred."
+msgstr "កំហុស​ស្មាន​មិន​ដល់​មួយ បាន​កើត​ឡើង ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__120.STRING.TEXT
+msgid  "Validating documents..."
+msgstr "កំពុង​ធ្វើ​ឯកសារ​ឲ្យ​មាន​សុពលភាព ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__121.STRING.TEXT
+msgid  "My Archive"
+msgstr "ប័ណ្ណសារ​របស់ខ្ញុំ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__122.STRING.TEXT
+msgid  "Introduction "
+msgstr "សេចក្តី​ណែនាំ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__123.STRING.TEXT
+msgid  "Documents "
+msgstr "ឯកសារ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__124.STRING.TEXT
+msgid  "Main layout"
+msgstr "ប្លង់​សំខាន់"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__125.STRING.TEXT
+msgid  "Layout details"
+msgstr "សេចក្តី​លម្អិត​​អំពីប្លង់"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__126.STRING.TEXT
+msgid  "Style"
+msgstr "រចនាប័ទ្ម"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__127.STRING.TEXT
+msgid  "Web site information"
+msgstr "ព័ត៌មាន​តំបន់​បណ្តាញ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__128.STRING.TEXT
+msgid  "Preview"
+msgstr "មើល​ជា​​​មុន"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__130.STRING.TEXT
+msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
+msgstr "ការ​កំណត់​ដែល​បាន​ជ្រើស នឹង​ត្រូវ​បាន​លុប ។​\n\nតើ​អ្នក​ពិត​ជា​ចង់​លុប​ការ​កំណត់​ទាំងនេះ​ឬ ?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__131.STRING.TEXT
+msgid  "%NUMBER pages"
+msgstr "ទំព័រ %NUMBER "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__132.STRING.TEXT
+msgid  "%NUMBER slides"
+msgstr "ស្លាយ %NUMBER "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__133.STRING.TEXT
+msgid  "Created: %DATE"
+msgstr "បាន​បង្កើត ៖ %DATE"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__134.STRING.TEXT
+msgid  "Last modified: %DATE"
+msgstr "បាន​កែប្រែ​ចុង​ក្រោយ ៖ %DATE"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__135.STRING.TEXT
+msgid  "Web Wizard Settings"
+msgstr "ការ​កំណត់​អ្នក​ជំនួយការ​បណ្តាញ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__136.STRING.TEXT
+msgid  "Background image:"
+msgstr "រូបភាព​​ផ្ទៃ​​ខាង​​ក្រោយ ៖"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__137.STRING.TEXT
+msgid  "Icon set:"
+msgstr "សំណុំ​រូបតំណាង ៖"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__138.STRING.TEXT
+msgid  "The icon set is used for presentations in HTML format."
+msgstr "សំណុំ​រូបតំណាង​ត្រូវ​បាន​ប្រើ សម្រាប់​ការ​បង្ហាញ​ក្នុង​ទ្រង់ទ្រាយ HTML ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__139.STRING.TEXT
+msgid  "HTML Metadata"
+msgstr "ទិន្នន័យ​មេតា HTML"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__140.STRING.TEXT
+msgid  "Choose..."
+msgstr "ជ្រើស ..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__142.STRING.TEXT
+msgid  "<default>"
+msgstr "<លំនាំដើម>"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__143.STRING.TEXT
+msgid  "Publishing via FTP Proxy is not supported."
+msgstr "បោះពុម្ព​ផ្សាយ​តាម​ប្រូកស៊ី FTP មិន​ត្រូវ​បាន​គាំទ្រ​ឡើយ ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__144.STRING.TEXT
+msgid  "<no background image>"
+msgstr "<​គ្មាន​រូបភាព​ផ្ទៃ​ខាង​ក្រោយ​>"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__145.STRING.TEXT
+msgid  "<no icon set>"
+msgstr "<​គ្មាន​សំណុំ​រូបតំណាង​>"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__146.STRING.TEXT
+msgid  "The FTP directory '%FILENAME' could not be created."
+msgstr "មិន​អាច​បង្កើត​ថត FTP '%FILENAME' ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__147.STRING.TEXT
+msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr "ថត FTP '%FILENAME' មិន​ទាន់​មាន​ទេ ។ \nបង្កើត​ថត​ឥឡូវ​ឬ ?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__148.STRING.TEXT
+msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
+msgstr "មិន​អាចបង្កើត​ឯកសារ ZIP '%FILENAME' ៖ ថត​មួយ​ដែល​មាន​ឈ្មោះ​ដូចគ្នា មាន​រួច​ហើយ ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__149.STRING.TEXT
+msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
+msgstr "មិន​អាច​បង្កើត​ថត​មូលដ្ឋាន '%FILENAME' ។​\nសូម​ពិនិត្យមើល​សិទ្ធ​ចូល​ដំណើរការ​សរសេរ​របស់​អ្នក ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__150.STRING.TEXT
+msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr "មិន​មាន​ថត​​មូលដ្ឋាន '%FILENAME' ។​\nបង្កើត​ថត​ឥឡូវ​ឬ ?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__151.STRING.TEXT
+msgid  "Size: %NUMBERKB"
+msgstr "ទំហំ ៖ %NUMBERKB"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__152.STRING.TEXT
+msgid  "File not found. Would you like to specify a new file location?"
+msgstr "រក​មិន​ឃើញ​ឯកសារ ។ តើ​អ្នក​ចង់​បញ្ជាក់​ទីតាំង​ឯកសារ​ថ្មី​ឬ​ទេ ?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__0.STRING.TEXT
+msgid  "FTP Connection"
+msgstr "ការ​តភ្ជាប់ FTP"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__1.STRING.TEXT
+msgid  "~User name:"
+msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__2.STRING.TEXT
+msgid  "~Password:"
+msgstr "ពាក្យសម្ងាត់ ៖ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__3.STRING.TEXT
+msgid  "Connect"
+msgstr "ត​ភ្ជាប់"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__4.STRING.TEXT
+msgid  "1. Enter FTP connection information."
+msgstr "១. បញ្ចូល​ព័ត៌មាន​​តភ្ជាប់ FTP ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__5.STRING.TEXT
+msgid  "~Server name or IP address:"
+msgstr "ឈ្មោះ​ម៉ាស៊ីន​បម្រើ ឬ អាសយដ្ឋាន IP "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__6.STRING.TEXT
+msgid  "2. Connect to the server."
+msgstr "២. ត​ភ្ជាប់​ទៅ​ម៉ាស៊ីន​បម្រើ ។"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__7.STRING.TEXT
+msgid  "3. ~Choose a remote directory (optional)."
+msgstr "៣ . ជ្រើស​ថត​ឆ្ងាយ​មួយ (ស្រេច​​ចិត្ត) ។ "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__9.STRING.TEXT
+msgid  "Connection status is unknown"
+msgstr "មិន​ស្គាល់​ស្ថានភាព​​ត​ភ្ជាប់"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__10.STRING.TEXT
+msgid  "Connection was established successfully"
+msgstr "ការ​ត​ភ្ជាប់​ត្រូវ​បាន​បង្កើត​ដោយ​ជោគជ័យ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__11.STRING.TEXT
+msgid  "Username or password is wrong"
+msgstr "ឈ្មោះ​អ្នក​ប្រើ ឬ ពាក្យ​សម្ងាត់​ខុស"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__12.STRING.TEXT
+msgid  "Could not resolve server name"
+msgstr "មិន​អាច​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន​បម្រើ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__13.STRING.TEXT
+msgid  "You do not have sufficient user rights"
+msgstr "អ្នក​គ្មាន​សិទ្ធ​អ្នក​ប្រើ​គ្រប់គ្រាន់"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__14.STRING.TEXT
+msgid  "Cannot connect to server"
+msgstr "មិន​អាច​ត​ភ្ជាប់​ទៅ​ម៉ាស៊ីន​បម្រើ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__15.STRING.TEXT
+msgid  "Unexpected error"
+msgstr "កំហុស​ស្មាន​មិន​ដល់"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__16.STRING.TEXT
+msgid  "FTP publishing directory"
+msgstr "ថត​បោះពុម្ព​ផ្សាយ FTP"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__17.STRING.TEXT
+msgid  "This is not an FTP folder"
+msgstr "នេះ​មិន​មែន​ជា​ថត FTP មួយ"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__18.STRING.TEXT
+msgid  "Connecting..."
+msgstr "កំពុង​ត​ភ្ជាប់ ..."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__1.STRING.TEXT
+msgid  "Agenda Wizard"
+msgstr "អ្នក​ជំនួយការ​របៀប​វារៈ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__2.STRING.TEXT
+msgid  "Make ~manual changes to this agenda template"
+msgstr "ធ្វើ​​ការ​ផ្លាស់ប្តូរ​ដោយ​ដៃ ចំពោះ​​ពុម្ព​របៀបវារៈ​នេះ "
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__6.STRING.TEXT
+msgid  "Please choose the page design for the agenda"
+msgstr "សូម​ជ្រើស​រចនា​ទំព័រ សម្រាប់​របៀបវារៈ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__7.STRING.TEXT
+msgid  "Please select the headings you wish to include in your agenda template"
+msgstr "សូម​ជ្រើស​ក្បាល​ដែល​អ្នក​ចង់​បញ្ចូល​ក្នុង​ពុម្ព​របៀប​វារៈ​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__8.STRING.TEXT
+msgid  "Please enter general information for the event"
+msgstr "សូម​បញ្ចូល​ព័ត៌មាន​ទូទៅ សម្រាប់​ព្រឹត្តិការណ៍"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__9.STRING.TEXT
+msgid  "Please specify items for the agenda"
+msgstr "សូម​បញ្ជាក់​​លម្អិត​អំពី​វត្ថុ​ទាំងឡាយ សម្រាប់​របៀបវារៈ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__10.STRING.TEXT
+msgid  "Please select the names you wish to include in your agenda template"
+msgstr "សូម​ជ្រើស​ឈ្មោះ​ដែល​អ្នក​ចង់​រួម​បញ្ចូល​​ក្នុង​ពុម្ព​របៀបវារៈ​របស់​អ្នក"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__12.STRING.TEXT
+msgid  "Include form for recording minutes"
+msgstr "រួម​បញ្ចូល​សំណុំ​បែប​បទ សម្រាប់​កត់ត្រា​កំណត់​ហេតុ​ប្រជុំ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__13.STRING.TEXT
+msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
+msgstr "អ្នក​ជំនួយការ​នេះ​ជួយ​អ្នក ដើម្បី​​បង្កើត​ពុម្ព​របៀបវារៈ​មួយ ។ បន្ទាប់​មក​ពុម្ព​អាច​ត្រូវ​បាន​ប្រើ​ ដើម្បី​បង្កើត​របៀបវារៈ​មួយ តាម​សេចក្តី​ត្រូវការ ។"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__14.STRING.TEXT
+msgid  "Time:"
+msgstr "ពេលវេលា ៖"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___16.STRING.TEXT
+msgid  "Location:"
+msgstr "ទីតាំង ៖​"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__17.STRING.TEXT
+msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
+msgstr "កន្លែង​ដាក់​នឹង​ត្រូវ​បាន​ប្រើ​ក្នុង​វាល​ទទេ ។ អ្នក​អាច​ជំនួស​កន្លែង​ដាក់​ជាមួយ​អត្ថបទ​ពេល​ក្រោយ ។"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__19.STRING.TEXT
+msgid  "Create an ~agenda from this template"
+msgstr "បង្កើត​របៀបវារៈ​មួយ​ពី​ពុម្ព​នេះ "
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__20.STRING.TEXT
+msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
+msgstr "ដើម្បី​បង្កើត​របៀបវារៈ​ថ្មី​មួយ​ចេញ​ពី​ពុម្ព, ទៅ​កាន់​ទីតាំង​ដែល​អ្នក​បាន​រក្សាទុក​ពុម្ព រួច​ចុច​ពីរ​ដង​លើ​ឯកសារ ។"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__21.STRING.TEXT
+msgid  "Agenda item"
+msgstr "ធាតុ​របៀបវារៈ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__22.STRING.TEXT
+msgid  "Responsible"
+msgstr "ទទួល​​ខុស​​ត្រូវ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__23.STRING.TEXT
+msgid  "Duration"
+msgstr "ថិរវេលា"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.STRING.TEXT
 msgid  "Meeting called by"
@@ -203,10 +2587,6 @@ msgstr "ប្រធាន"
 msgid  "Minute keeper"
 msgstr "អ្នក​រក្សាទុក​កំណត់ហេតុ​ប្រជុំ"
 
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.STRING.TEXT
-msgid  "Moderator"
-msgstr "អន្តរការី​"
-
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.STRING.TEXT
 msgid  "Attendees"
 msgstr "អ្នក​ចូលរួម"
@@ -219,29 +2599,449 @@ msgstr "អ្នក​​សង្កេត​ការណ៍"
 msgid  "Facility personnel"
 msgstr "បុគ្គលិក​​បន្ទប់ឧបករណ៍"
 
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.STRING.TEXT
-msgid  "Type of meeting"
-msgstr "ប្រភេទ​ប្រជុំ"
-
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.STRING.TEXT
-msgid  "Please read"
-msgstr "សូម​អាន"
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__31.STRING.TEXT
+msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
+msgstr "ពុមÒព​របៀប​វារៈ​នឹង​រួម​បញ្ចូល​កន្លែង​ដាក់ សម្រាប់​ឈ្មោះ​នៃ​បុគ្គលិក​ទាំង​ឡាយ​ដែល​បាន​ជ្រើស ។ ពេល​បង្កើត​របៀប​វារៈ​ពីពុម្ព អ្នក​អាច​ជំនួស​កន្លែង​ដាក់​ទាំង​នេះ ដោយ​ឈ្មោះ​សមរម្យ​មួយ ។"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.STRING.TEXT
 msgid  "Please bring"
 msgstr "សូម​នាំយក​មក​នូវ​"
 
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.STRING.TEXT
-msgid  "Notes"
-msgstr "ចំណាំ"
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__36.STRING.TEXT
+msgid  "The agenda template will include placeholders for the selected items."
+msgstr "ពុម្ព​របៀបវារៈ​នឹង​រួម​បញ្ចូល​កន្លែង​ដាក់ សម្រាប់​ធាតុ​ដែល​ត្រូវ​បាន​ជ្រើស ។"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__39.STRING.TEXT
+msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
+msgstr "អ្នក​ជំនួយការ​នេះ បង្កើត​ពុម្ព​របៀបវារៈ​មួយ ដែល​អាច​ឲ្យ​អ្នក​បង្កើត​របៀបវារៈ​ច្រើន​ជាមួយ​ប្លង់​ និង​ការ​កំណត់​ដូចគ្នា ។"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__40.STRING.TEXT
+msgid  "Page design:"
+msgstr "រចនា​ទំព័រ ៖"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__41.STRING.TEXT
+msgid  "myAgendaTemplate.stw"
+msgstr "myAgendaTemplate.stw"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__42.STRING.TEXT
+msgid  "My Agenda Template"
+msgstr "ពុម្ព​របៀបវារៈ​របស់​ខ្ញុំ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__43.STRING.TEXT
+msgid  "An unexpected error occurred while saving the agenda template."
+msgstr "កំហុស​ស្មាន​មិន​ដល់​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​រក្សាទុក​ពុម្ព​របៀបវារៈ ។"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__44.STRING.TEXT
+msgid  "Name"
+msgstr "ឈ្មោះ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__45.STRING.TEXT
+msgid  "Date"
+msgstr "កាល​​បរិច្ឆេទ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__46.STRING.TEXT
+msgid  "Time"
+msgstr "ពេល​វេលា​"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___47.STRING.TEXT
+msgid  "Location"
+msgstr "ទី​តាំង"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__48.STRING.TEXT
+msgid  "Click to replace this text"
+msgstr "ចុច ដើម្បី​ជំនួស​អត្ថបទ​នេះ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__51.STRING.TEXT
+msgid  "General information"
+msgstr "ព័ត៌មាន​ទូទៅ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__52.STRING.TEXT
+msgid  "Headings to include"
+msgstr "ក្បាល​ដែល​ត្រូវ​រួម​បញ្ចូល"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__53.STRING.TEXT
+msgid  "Names"
+msgstr "ឈ្មោះ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__54.STRING.TEXT
+msgid  "Agenda items"
+msgstr "ធាតុរបៀបវារៈ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__56.STRING.TEXT
+msgid  "An unexpected error occurred while opening the agenda template."
+msgstr "កំហុស​ស្មាន​មិន​ដល់​មួយ​បាន​កើតឡើង ខណៈ​​ពេល​កំពុង​បើក​ពុម្ព​របៀបវារៈ ។"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__68.STRING.TEXT
+msgid  "Insert"
+msgstr "បញ្ចូល​"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__69.STRING.TEXT
+msgid  "Remove"
+msgstr "យក​ចេញ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__70.STRING.TEXT
+msgid  "Move up"
+msgstr "​ឡើង​លើ"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__71.STRING.TEXT
+msgid  "Move down"
+msgstr "​ចុះក្រោម"
+
+#: importwizard/importwi.src#SHELPBUTTON.STRING.TEXT
+msgid  "~Help"
+msgstr "ជំនួយ"
+
+#: importwizard/importwi.src#SCANCELBUTTON.STRING.TEXT
+msgid  "~Cancel"
+msgstr "បោះបង់ "
+
+#: importwizard/importwi.src#SBACKBUTTON.STRING.TEXT
+msgid  "<< ~Back"
+msgstr "<< ថយ​​ក្រោយ​  "
+
+#: importwizard/importwi.src#SNEXTBUTTON.STRING.TEXT
+msgid  "Ne~xt >>"
+msgstr "បន្ទាប់ >> "
+
+#: importwizard/importwi.src#SBEGINBUTTON.STRING.TEXT
+msgid  "~Convert"
+msgstr "បម្លែង "
+
+#: importwizard/importwi.src#SCLOSEBUTTON.STRING.TEXT
+msgid  "~Close"
+msgstr "បិទ "
+
+#: importwizard/importwi.src#SWELCOMETEXTLABEL1.STRING.TEXT
+msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
+msgstr "អ្នក​ជំនួយការ​នេះ​នឹង​បម្លែង​ឯកសារ​ដែល​មាន​ទ្រង់ទ្រាយ​ជា %PRODUCTNAME និង Microsoft Office ទៅ​ជា​ទ្រង់ទ្រាយ OpenDocument ថ្មី ។"
+
+#: importwizard/importwi.src#SWELCOMETEXTLABEL2.STRING.TEXT
+msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
+msgstr "សូម​ចំណាំ​ថា​ ពេល​កំពុង​បម្លែង​ឯកសារ​ Microsoft  ម៉ាក្រូ​ VBA ណា​មួយ​ដែល​ភ្ជាប់​ជាមួយ​ឯកសារ​ នឹង​បាត់​មុខងារ​របស់​ពួក​វា​ ។"
+
+#: importwizard/importwi.src#SWELCOMETEXTLABEL3.STRING.TEXT
+msgid  "Select the document type for conversion:"
+msgstr "ជ្រើស​ប្រភេទ​ឯកសារ​ សម្រាប់​ការ​បម្លែង ៖"
+
+#: importwizard/importwi.src#SMSTEMPLATECHECKBOX_1_.STRING.TEXT
+msgid  "Word templates"
+msgstr "ពុម្ព Word"
+
+#: importwizard/importwi.src#SMSTEMPLATECHECKBOX_2_.STRING.TEXT
+msgid  "Excel templates"
+msgstr "ពុម្ព Excel"
+
+#: importwizard/importwi.src#SMSTEMPLATECHECKBOX_3_.STRING.TEXT
+msgid  "PowerPoint templates"
+msgstr "ពុម្ព PowerPoint"
+
+#: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_1_.STRING.TEXT
+msgid  "Word documents"
+msgstr "ឯកសារ Word"
+
+#: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_2_.STRING.TEXT
+msgid  "Excel documents"
+msgstr "ឯកសារ Excel"
+
+#: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_3_.STRING.TEXT
+msgid  "PowerPoint documents"
+msgstr "ឯកសារ PowerPoint"
+
+#: importwizard/importwi.src#SSEARCHINSUBDIR.STRING.TEXT
+msgid  "Including subdirectories"
+msgstr "រួម​​បញ្ចូល​​​ទាំង​​​ថត​​​រង"
+
+#: importwizard/importwi.src#SMSCONTAINERNAME.STRING.TEXT
+msgid  "Microsoft Office"
+msgstr "Microsoft Office"
+
+#: importwizard/importwi.src#SSUMMARYHEADER.STRING.TEXT
+msgid  "Summary:"
+msgstr "សង្ខេប ៖"
+
+#: importwizard/importwi.src#STEXTIMPORTLABEL.STRING.TEXT
+msgid  "Import from:"
+msgstr "នាំ​ចូល​ពី​ ៖"
+
+#: importwizard/importwi.src#STEXTEXPORTLABEL.STRING.TEXT
+msgid  "Save to:"
+msgstr "រក្សាទុក​ទៅ ៖"
+
+#: importwizard/importwi.src#SGROUPNAMEDEFAULT.STRING.TEXT
+msgid  "Imported_Templates"
+msgstr "ពុម្ព​​ដែល​​បាន​​នាំ​​ចូល"
+
+#: importwizard/importwi.src#SPROGRESSDESC1.STRING.TEXT
+msgid  "Progress: "
+msgstr "វឌ្ឍនភាព ៖"
+
+#: importwizard/importwi.src#SPROGRESSONEDOC.STRING.TEXT
+msgid  "Document"
+msgstr "ឯកសារ​"
+
+#: importwizard/importwi.src#SPROGRESSMOREDOCS.STRING.TEXT
+msgid  "Documents"
+msgstr "ឯកសារ"
+
+#: importwizard/importwi.src#SPROGRESSMORETEMPLATES.STRING.TEXT
+msgid  "Templates"
+msgstr "ពុម្ព"
+
+#: importwizard/importwi.src#SNODIRCREATION.STRING.TEXT
+msgid  "The '%1' directory cannot be created: "
+msgstr "មិន​​អាច​​បង្កើត​​ថត ​'%1' ៖"
+
+#: importwizard/importwi.src#SMSGDIRNOTTHERE.STRING.TEXT
+msgid  "The '%1' directory does not exist."
+msgstr "ថត '%1' មិន​ទាន់​មាន​ទេ ។"
+
+#: importwizard/importwi.src#SQUERYFORNEWCREATION.STRING.TEXT
+msgid  "Do you want to create it now?"
+msgstr "តើ​​អ្នក​​ចង់​​បង្កើត​​វា​​ឥឡូវ​​ឬ​​ទេ ?"
+
+#: importwizard/importwi.src#SFILEEXISTS.STRING.TEXT
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "ឯកសារ​ '<1>' មាន​រួច​ហើយ ។ <CR> ​តើ​អ្នក​ចង់​សរសេរ​ជាន់​​លើ​​វា​​ឬ​​ទេ ?"
+
+#: importwizard/importwi.src#SMOREPATHSERROR3.STRING.TEXT
+msgid  "Directories do not exist"
+msgstr "ថត​​មិន​​ទាន់​​មាន​​ទេ"
+
+#: importwizard/importwi.src#SOVERWRITEALLFILES.STRING.TEXT
+msgid  "Do you want to overwrite documents without being asked?"
+msgstr "តើ​​អ្នក​​ចង់​​សរសេរ​​ជាន់​​លើ​​ឯកសារ​ ដោយ​មិន​ត្រូវ​បាន​សួរ​ឬ ?"
+
+#: importwizard/importwi.src#SREEDITMACRO.STRING.TEXT
+msgid  "Document macro has to be revised."
+msgstr "ត្រូវ​តែ​ពិនិត្យ​ម៉ាក្រូ​ឯកសារ​ឡើង​វិញ ។"
+
+#: importwizard/importwi.src#SCOULDNOTSAVEDOCUMENT.STRING.TEXT
+msgid  "Document '<1>' could not be saved."
+msgstr "មិន​​អាច​​រក្សាទុក​​ឯកសារ '<1>' ។"
+
+#: importwizard/importwi.src#SCOULDNOTOPENDOCUMENT.STRING.TEXT
+msgid  "Document '<1>' could not be opened."
+msgstr "មិន​​អាច​​បើក​​ឯកសារ '<1>' ។"
+
+#: importwizard/importwi.src#SCONVERTERROR1.STRING.TEXT
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "តើ​​អ្នក​​ពិត​​ជា​​ចង់​​បញ្ឈប់​​ការ​​បម្លែង នៅ​​ត្រង់​​ចំនុច​​នេះ​​ឬ​ទេ ?"
+
+#: importwizard/importwi.src#SCONVERTERROR2.STRING.TEXT
+msgid  "Cancel Wizard"
+msgstr "បោះបង់​អ្នក​ជំនួយការ"
+
+#: importwizard/importwi.src#SRTERRORDESC.STRING.TEXT
+msgid  "An unexpected error has occurred in the wizard."
+msgstr "កំហុស​​​​ស្មាន​​​មិន​​ដល់​​មួយ​បាន​​កើត​ឡើង​​ក្នុង​​អ្នក​​ជំនួយការ ។"
+
+#: importwizard/importwi.src#SRTERRORHEADER.STRING.TEXT
+msgid  "Error"
+msgstr "កំហុស"
+
+#: importwizard/importwi.src#SPATHDIALOGMESSAGE.STRING.TEXT
+msgid  "Select a directory"
+msgstr "ជ្រើស​​ថត​​មួយ"
+
+#: importwizard/importwi.src#SDIALOGTITLE.STRING.TEXT
+msgid  "Document Converter"
+msgstr "កម្មវិធី​បម្លែង​ឯកសារ"
+
+#: importwizard/importwi.src#SPROGRESSPAGE1.STRING.TEXT
+msgid  "Progress"
+msgstr "វឌ្ឍន​​ភាព"
+
+#: importwizard/importwi.src#SPROGRESSPAGE2.STRING.TEXT
+msgid  "Retrieving the relevant documents:"
+msgstr "កំពុង​យក​ឯកសារ​ដែល​ទាក់ទង ៖"
+
+#: importwizard/importwi.src#SPROGRESSPAGE3.STRING.TEXT
+msgid  "Converting the documents"
+msgstr "កំពុង​​បម្លែង​​ឯកសារ"
+
+#: importwizard/importwi.src#SPROGRESSFOUND.STRING.TEXT
+msgid  "Found:"
+msgstr "បាន​រកឃើញ ៖"
+
+#: importwizard/importwi.src#SPROGRESSPAGE5.STRING.TEXT
+msgid  "%1 found"
+msgstr "បាន​រក​​ឃើញ %1"
+
+#: importwizard/importwi.src#SREADY.STRING.TEXT
+msgid  "Finished"
+msgstr "បាន​បញ្ចប់"
+
+#: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_1_.STRING.TEXT
+msgid  "Text templates"
+msgstr "ពុម្ព​​អត្ថបទ"
+
+#: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_2_.STRING.TEXT
+msgid  "Spreadsheet templates"
+msgstr "ពុម្ព​សៀវភៅ​បញ្ជី"
+
+#: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_3_.STRING.TEXT
+msgid  "Drawing/presentation templates"
+msgstr "ពុម្ព ការ​បង្ហាញ​/​គំនូរ"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_4_.STRING.TEXT
 msgid  "Master documents"
 msgstr "ឯកសារ​​មេ"
 
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_1_.STRING.TEXT
+msgid  "Text documents"
+msgstr "ឯកសារ​អត្ថបទ"
+
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_2_.STRING.TEXT
+msgid  "Spreadsheets"
+msgstr "សៀវភៅ​បញ្ជី"
+
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_3_.STRING.TEXT
+msgid  "Drawing/presentation documents"
+msgstr "ឯកសារ ការ​បង្ហាញ​/​គំនូរ"
+
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_4_.STRING.TEXT
+msgid  "Master documents/formulas"
+msgstr "ឯកសារ​មេ​/​រូបមន្ត"
+
+#: importwizard/importwi.src#SXMLHELPERAPPLICATIONS_2.STRING.TEXT
+msgid  "Formulas"
+msgstr "រូបមន្ត"
+
+#: importwizard/importwi.src#SSOURCEDOCUMENTS.STRING.TEXT
+msgid  "Source documents"
+msgstr "ឯកសារ​​ប្រភព"
+
+#: importwizard/importwi.src#STARGETDOCUMENTS.STRING.TEXT
+msgid  "Target documents"
+msgstr "ឯកសារ​​គោលដៅ"
+
+#: importwizard/importwi.src#SCREATELOGFILE.STRING.TEXT
+msgid  "Create log file"
+msgstr "បង្កើត​​ឯកសារ​​កំណត់ហេតុ"
+
+#: importwizard/importwi.src#SLOGFILESUMMARY.STRING.TEXT
+msgid  "<COUNT> documents converted"
+msgstr "បាន​បម្លែង​ឯកសារ <COUNT>"
+
+#: importwizard/importwi.src#SLOGFILEHELPTEXT.STRING.TEXT
+msgid  "A log file will be created in your work directory"
+msgstr "ឯកសារ​​​កំណត់​​​ហេតុ​​មួយ​ នឹង​​ត្រូវ​​បាន​​បង្កើត​​ក្នុង​​ថត​​ការងារ​​របស់​​អ្នក"
+
+#: importwizard/importwi.src#SSHOWLOGFILE.STRING.TEXT
+msgid  "Show log file"
+msgstr "បង្ហាញ​​ឯកសារ​​កំណត់ហេតុ"
+
+#: importwizard/importwi.src#SSUMINCLUSIVESUBDIR.STRING.TEXT
+msgid  "All subdirectories will be taken into account"
+msgstr "​ថត​​​រង​​​ទាំងអស់ នឹង​ត្រូវ​បាន​យក​មក​ពិចារណា"
+
+#: importwizard/importwi.src#SSUMSAVEDOKUMENTE.STRING.TEXT
+msgid  "These will be exported to the following directory:"
+msgstr "ទាំងនេះ​​នឹង​​​ត្រូវ​​​បាន​​​នាំ​​​ចេញ​​ទៅ​​កាន់​​ថត​​ដូច​ខាង​ក្រោម​ ៖"
+
+#: importwizard/importwi.src#SSUMSOTEXTDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
+msgstr "រាល់​ឯកសារ​អត្ថបទ %PRODUCTNAME ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: importwizard/importwi.src#SSUMSOTABLEDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
+msgstr "រាល់​សៀវភៅ​បញ្ជី​ %PRODUCTNAME ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល​ ៖"
+
+#: importwizard/importwi.src#SSUMSODRAWDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
+msgstr "រាល់​ឯកសារ​​ការ​បង្ហាញ និង​គំនូរ %PRODUCTNAME ទាំងអស់​​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: importwizard/importwi.src#SSUMSOMATHDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
+msgstr "រាល់​ឯកសារ​រូបមន្ត %PRODUCTNAME ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: importwizard/importwi.src#SSUMSOTEXTTEMPLATES.STRING.TEXT
+msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
+msgstr "រាល់​ពុម្ព​អត្ថបទ %PRODUCTNAME ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: importwizard/importwi.src#SSUMSOTABLETEMPLATES.STRING.TEXT
+msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
+msgstr "រាល់​ពុម្ព​តារាង %PRODUCTNAME ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: importwizard/importwi.src#SSUMSODRAWTEMPLATES.STRING.TEXT
+msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
+msgstr "រាល់​ពុម្ព​ការ​បង្ហាញ និង​គំនូរ %PRODUCTNAME ទាំងអស់​​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: importwizard/importwi.src#SSUMSOGLOBALDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
+msgstr "រាល់​ឯកសារ​មេ %PRODUCTNAME ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: importwizard/importwi.src#SSUMMSTEXTDOCUMENTS.STRING.TEXT
+msgid  "All Word documents contained in the following directory will be imported:"
+msgstr "រាល់​ឯកសារ Word ទាំងអស់​​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: importwizard/importwi.src#SSUMMSTABLEDOCUMENTS.STRING.TEXT
+msgid  "All Excel documents contained in the following directory will be imported:"
+msgstr "រាល់​ឯកសារ Excel ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: importwizard/importwi.src#SSUMMSDRAWDOCUMENTS.STRING.TEXT
+msgid  "All PowerPoint documents contained in the following directory will be imported:"
+msgstr "រាល់​ឯកសារ PowerPoint ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: importwizard/importwi.src#SSUMMSTEXTTEMPLATES.STRING.TEXT
+msgid  "All Word templates contained in the following directory will be imported:"
+msgstr "រាល់​ពុម្ព Word ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: importwizard/importwi.src#SSUMMSTABLETEMPLATES.STRING.TEXT
+msgid  "All Excel templates contained in the following directory will be imported:"
+msgstr "រាល់​ពុម្ព Excel ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: importwizard/importwi.src#SSUMMSDRAWTEMPLATES.STRING.TEXT
+msgid  "All PowerPoint templates contained in the following directory will be imported:"
+msgstr "រាល់​ពុម្ព PowerPoint ទាំងអស់​ដែល​មាន​ក្នុង​​ថត​​ដូច​​ខាង​ក្រោម​ នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
+
+#: schedule/schedule.src#DLGCALTITLE.STRING.TEXT
+msgid  "%PRODUCTNAME Calendar"
+msgstr "ប្រតិទិន %PRODUCTNAME"
+
+#: schedule/schedule.src#DLGCALTITLEBACK.STRING.TEXT
+msgid  "Back"
+msgstr "ថយ​​ក្រោយ"
+
 #: schedule/schedule.src#DLGCALTITLEOWNDATA.STRING.TEXT
 msgid  "Personal Data"
 msgstr "ទិន្នន័យ​ផ្ទាល់​ខ្លួន"
+
+#: schedule/schedule.src#DLGSCHDLTITLE.STRING.TEXT
+msgid  "Add Holidays to Calendar"
+msgstr "បន្ថែម​​​ថ្ងៃ​​ឈប់​​សម្រាក​​ ទៅ​​ប្រតិទិន"
+
+#: schedule/schedule.src#DLGOK.STRING.TEXT
+msgid  "Create"
+msgstr "បង្កើត"
+
+#: schedule/schedule.src#DLGCANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr "បោះបង់"
+
+#: schedule/schedule.src#DLGCALFRAMEOPTION.STRING.TEXT
+msgid  "Calendar"
+msgstr "ប្រតិទិន"
+
+#: schedule/schedule.src#DLGCALOPTIONYEAR.STRING.TEXT
+msgid  "~Year Overview"
+msgstr "ទិដ្ឋភាព​​ទូទៅ​​​នៃ​ឆ្នាំ "
+
+#: schedule/schedule.src#DLGCALOPTIONMONTH.STRING.TEXT
+msgid  "~Month"
+msgstr "ខែ "
+
+#: schedule/schedule.src#DLGSCHDLDESCRIPTION.STRING.TEXT
+msgid  "Add holidays for"
+msgstr "បន្ថែម​​ថ្ងៃ​​ឈប់​​សម្រាក​​"
+
+#: schedule/schedule.src#DLGSCHDLCOUNTRY.STRING.TEXT
+msgid  "USA"
+msgstr "សហរដ្ឋ​​អាមេរិក"
+
+#: schedule/schedule.src#DLGTIME.STRING.TEXT
+msgid  "Time Frame"
+msgstr "ស៊ុម​​ពេល​​វេលា"
 
 #: schedule/schedule.src#DLGYEAR.STRING.TEXT
 msgid  "Year"
@@ -250,3 +3050,343 @@ msgstr "ឆ្នាំ"
 #: schedule/schedule.src#DLGCALMONTH.STRING.TEXT
 msgid  "Month"
 msgstr "ខែ"
+
+#: schedule/schedule.src#DLGCALINSERT.STRING.TEXT
+msgid  "~Insert"
+msgstr "បញ្ចូល"
+
+#: schedule/schedule.src#DLGCALDELETE.STRING.TEXT
+msgid  "~Delete"
+msgstr "លុប​ "
+
+#: schedule/schedule.src#DLGCALNEWEVENT.STRING.TEXT
+msgid  "New Event"
+msgstr "ព្រឹត្តិការណ៍​ថ្មី"
+
+#: schedule/schedule.src#DLGCALEVENT.STRING.TEXT
+msgid  "Event"
+msgstr "ព្រឹត្តិការណ៍"
+
+#: schedule/schedule.src#DLGCALEVENTONCE.STRING.TEXT
+msgid  "One-Time"
+msgstr "មួយ​ដង"
+
+#: schedule/schedule.src#DLGCALEVENTDAY.STRING.TEXT
+msgid  "Day"
+msgstr "ថ្ងៃ"
+
+#: schedule/schedule.src#DLGBITMAPFILE.STRING.TEXT
+msgid  "usa.bmp"
+msgstr "usa.bmp"
+
+#: schedule/schedule.src#DLGSTATE.STRING.TEXT
+msgid  "Public holidays"
+msgstr "ថ្ងៃ​​ឈប់​​សម្រាក​​សាធារណៈ"
+
+#: schedule/schedule.src#DLGMONTH.STRING.TEXT
+msgid  "January"
+msgstr "មករា"
+
+#: schedule/schedule.src#DLGMONTH_1.STRING.TEXT
+msgid  "February"
+msgstr "កុម្ភៈ"
+
+#: schedule/schedule.src#DLGMONTH_2.STRING.TEXT
+msgid  "March"
+msgstr "មីនា"
+
+#: schedule/schedule.src#DLGMONTH_3.STRING.TEXT
+msgid  "April"
+msgstr "មេសា"
+
+#: schedule/schedule.src#DLGMONTH_4.STRING.TEXT
+msgid  "May"
+msgstr "ឧសភា"
+
+#: schedule/schedule.src#DLGMONTH_5.STRING.TEXT
+msgid  "June"
+msgstr "មិថុនា"
+
+#: schedule/schedule.src#DLGMONTH_6.STRING.TEXT
+msgid  "July"
+msgstr "កក្កដា"
+
+#: schedule/schedule.src#DLGMONTH_7.STRING.TEXT
+msgid  "August"
+msgstr "សីហា"
+
+#: schedule/schedule.src#DLGMONTH_8.STRING.TEXT
+msgid  "September"
+msgstr "កញ្ញា"
+
+#: schedule/schedule.src#DLGMONTH_9.STRING.TEXT
+msgid  "October"
+msgstr "តុលា"
+
+#: schedule/schedule.src#DLGMONTH_10.STRING.TEXT
+msgid  "November"
+msgstr "វិច្ឆិកា"
+
+#: schedule/schedule.src#DLGMONTH_11.STRING.TEXT
+msgid  "December"
+msgstr "ធ្នូ"
+
+#: schedule/schedule.src#MSGCALERRORTITLE.STRING.TEXT
+msgid  "Yearly / Monthly Calendar"
+msgstr "ប្រតិទិន ប្រចាំ​ឆ្នាំ/ប្រចាំ​ខែ"
+
+#: schedule/schedule.src#MSGCALERROR.STRING.TEXT
+msgid  "An error occurred while creating the calendar."
+msgstr "កំហុស​មួយ​បាន​កើត​ឡើង​ ខណៈ​ពេល​កំពុង​បង្កើត​ប្រតិទិន ។"
+
+#: schedule/schedule.src#MSGCALREMOVETITLE.STRING.TEXT
+msgid  "Delete event entries"
+msgstr "លុប​​​ធាតុ​​ព្រឹត្តិការណ៍"
+
+#: schedule/schedule.src#MSGCALREMOVE.STRING.TEXT
+msgid  "Delete the selected entries?"
+msgstr "លុប​​ធាតុ​​ដែល​​​​ជ្រើស​​ឬ​​ទេ ?"
+
+#: schedule/schedule.src#STLWORKDAY.STRING.TEXT
+msgid  "Workweek"
+msgstr "ថ្ងៃ​​​ធ្វើការ"
+
+#: schedule/schedule.src#STLWEEKEND.STRING.TEXT
+msgid  "Weekend"
+msgstr "ចុង​​សប្តាហ៍"
+
+#: schedule/schedule.src#SPROGRESS.STRING.TEXT
+msgid  "Progress:"
+msgstr "វឌ្ឍនភាព ៖"
+
+#: template/template.src#SAMPLES.STRING.TEXT
+msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
+msgstr "ដើម្បី​ប្រើ​មុខងារ​ពេញ​លេញ​របស់​គំរូ​នេះ បង្កើត​ឯកសារ​មួយ​ដោយ​​ពឹង​​ផ្អែក​លើ​ពុម្ព​នេះ ។"
+
+#: template/template.src#SAMPLES___1.STRING.TEXT
+msgid  "Remarks"
+msgstr "កំណត់​សម្គាល់"
+
+#: template/template.src#STYLES.STRING.TEXT
+msgid  "Theme Selection"
+msgstr "ការ​ជ្រើស​ស្បែក"
+
+#: template/template.src#STYLES___1.STRING.TEXT
+msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
+msgstr "មាន​កំហុស​ ខណៈ​ពេល​កំពុង​រក្សាទុក​ឯកសារ​ទៅ​ក្តារ​តម្បៀត​ខ្ទាស់ ! អំពើ​ខាង​ក្រោម​មិន​អាច​មិន​ធ្វើ​​វិញបាន​ទេ ។"
+
+#: template/template.src#STYLES___2.STRING.TEXT
+msgid  "~Cancel"
+msgstr "បោះបង់ "
+
+#: template/template.src#STYLES___3.STRING.TEXT
+msgid  "~OK"
+msgstr "យល់ព្រម "
+
+#: template/template.src#AGENDADLGNAME.STRING.TEXT
+msgid  "Minutes Template"
+msgstr "ពុម្ព​របស់​កំណត់ហេតុ​ប្រជុំ"
+
+#: template/template.src#AGENDADLGNOCANCEL.STRING.TEXT
+msgid  "An option must be confirmed."
+msgstr "ត្រូវ​តែ​អះអាង​ជម្រើស​មួយ ។"
+
+#: template/template.src#AGENDADLGFRAME.STRING.TEXT
+msgid  "Minutes Type"
+msgstr "ប្រភេទ​កំណត់ហេតុ​ប្រជុំ"
+
+#: template/template.src#AGENDADLGBUTTON1.STRING.TEXT
+msgid  "Results Minutes"
+msgstr "លទ្ធផល​កំណត់ហេតុ​ប្រជុំ"
+
+#: template/template.src#AGENDADLGBUTTON2.STRING.TEXT
+msgid  "Evaluation Minutes"
+msgstr "កំណត់ហេតុ​ប្រជុំ​នៃ​ការ​វាយ​តម្លៃ"
+
+#: template/template.src#CORRESPONDENCENOTEXTMARK.STRING.TEXT
+msgid  "The bookmark 'Recipient' is missing."
+msgstr "បាត់​​កន្លែង​​ចំណាំ 'អ្នក​ទទួល' ។"
+
+#: template/template.src#CORRESPONDENCENOTEXTMARK_1.STRING.TEXT
+msgid  "Form letter fields can not be included."
+msgstr "មិន​​​អាច​​​រួម​​​បញ្ចូល​​​វាល​សំបុត្រ​​​​របស់​សំណុំ​​​បែបបទ ។"
+
+#: template/template.src#CORRESPONDENCEMSGERROR.STRING.TEXT
+msgid  "An error has occurred."
+msgstr "កំហុស​​​មួយ​​​បាន​​កើត​​ឡើង ។"
+
+#: template/template.src#CORRESPONDENCEDIALOG.STRING.TEXT
+msgid  "Addressee"
+msgstr "អ្នក​​ទទួល​​សំបុត្រ"
+
+#: template/template.src#CORRESPONDENCEDIALOG_1.STRING.TEXT
+msgid  "One recipient"
+msgstr "អ្នក​​ទទួល​​ម្នាក់"
+
+#: template/template.src#CORRESPONDENCEDIALOG_2.STRING.TEXT
+msgid  "Several recipients (address database)"
+msgstr "អ្នក​​​ទទួល​​​ច្រើន​ (មូលដ្ឋាន​​ទិន្នន័យ​​​​អាសយដ្ឋាន)"
+
+#: template/template.src#CORRESPONDENCEDIALOG_3.STRING.TEXT
+msgid  "Use of This Template"
+msgstr "ប្រើ​​ពុម្ព​នេះ"
+
+#: template/template.src#CORRESPONDENCEFIELDS.STRING.TEXT
+msgid  "Click placeholder and overwrite"
+msgstr "ចុច​កន្លែង​ដាក់​ និង​សរសេរ​ជាន់​លើ"
+
+#: template/template.src#CORRESPONDENCEFIELDS_1.STRING.TEXT
+msgid  "Company"
+msgstr "ក្រុមហ៊ុន"
+
+#: template/template.src#CORRESPONDENCEFIELDS_2.STRING.TEXT
+msgid  "Department"
+msgstr "នាយកដ្ឋាន"
+
+#: template/template.src#CORRESPONDENCEFIELDS_3.STRING.TEXT
+msgid  "First Name"
+msgstr "នាម​ខ្លួន"
+
+#: template/template.src#CORRESPONDENCEFIELDS_4.STRING.TEXT
+msgid  "Last Name"
+msgstr "នាម​ត្រកូល"
+
+#: template/template.src#CORRESPONDENCEFIELDS_5.STRING.TEXT
+msgid  "Street"
+msgstr "វិថី"
+
+#: template/template.src#CORRESPONDENCEFIELDS_6.STRING.TEXT
+msgid  "Country"
+msgstr "ប្រទេស"
+
+#: template/template.src#CORRESPONDENCEFIELDS_7.STRING.TEXT
+msgid  "ZIP/Postal Code"
+msgstr "លេខ​តំបន់/ប្រៃសណីយ៍"
+
+#: template/template.src#CORRESPONDENCEFIELDS_8.STRING.TEXT
+msgid  "City"
+msgstr "ទីក្រុង​"
+
+#: template/template.src#CORRESPONDENCEFIELDS_9.STRING.TEXT
+msgid  "Title"
+msgstr "ចំណងជើង"
+
+#: template/template.src#CORRESPONDENCEFIELDS_10.STRING.TEXT
+msgid  "Position"
+msgstr "ឋានៈ"
+
+#: template/template.src#CORRESPONDENCEFIELDS_11.STRING.TEXT
+msgid  "Form of Address"
+msgstr "សំណុំ​​បែបបទ​របស់​​​​អាសយដ្ឋាន"
+
+#: template/template.src#CORRESPONDENCEFIELDS_12.STRING.TEXT
+msgid  "Initials"
+msgstr "អាទិសង្កេត"
+
+#: template/template.src#CORRESPONDENCEFIELDS_13.STRING.TEXT
+msgid  "Salutation"
+msgstr "វន្ទនាការ"
+
+#: template/template.src#CORRESPONDENCEFIELDS_14.STRING.TEXT
+msgid  "Home Phone"
+msgstr "ទូរស័ព្ទ​​​​ផ្ទះ"
+
+#: template/template.src#CORRESPONDENCEFIELDS_15.STRING.TEXT
+msgid  "Work Phone"
+msgstr "ទូរស័ព្ទ​​​កន្លែង​​​ធ្វើការ"
+
+#: template/template.src#CORRESPONDENCEFIELDS_16.STRING.TEXT
+msgid  "Fax"
+msgstr "ទូរសារ"
+
+#: template/template.src#CORRESPONDENCEFIELDS_17.STRING.TEXT
+msgid  "E-Mail"
+msgstr "អ៊ីមែល"
+
+#: template/template.src#CORRESPONDENCEFIELDS_18.STRING.TEXT
+msgid  "URL"
+msgstr "URL"
+
+#: template/template.src#CORRESPONDENCEFIELDS_19.STRING.TEXT
+msgid  "Notes"
+msgstr "ចំណាំ"
+
+#: template/template.src#CORRESPONDENCEFIELDS_20.STRING.TEXT
+msgid  "Alt. Field 1"
+msgstr "Alt. ​វាល ១"
+
+#: template/template.src#CORRESPONDENCEFIELDS_21.STRING.TEXT
+msgid  "Alt. Field 2"
+msgstr "Alt. ​វាល ២"
+
+#: template/template.src#CORRESPONDENCEFIELDS_22.STRING.TEXT
+msgid  "Alt. Field 3"
+msgstr "Alt. វាល ៣"
+
+#: template/template.src#CORRESPONDENCEFIELDS_23.STRING.TEXT
+msgid  "Alt. Field 4"
+msgstr "Alt. ​វាល ៤"
+
+#: template/template.src#CORRESPONDENCEFIELDS_24.STRING.TEXT
+msgid  "ID"
+msgstr "លេខ​សម្គាល់"
+
+#: template/template.src#CORRESPONDENCEFIELDS_25.STRING.TEXT
+msgid  "State"
+msgstr "ស្ថានភាព"
+
+#: template/template.src#CORRESPONDENCEFIELDS_26.STRING.TEXT
+msgid  "Office Phone"
+msgstr "ទូរស័ព្ទ​​ការិយាល័យ"
+
+#: template/template.src#CORRESPONDENCEFIELDS_27.STRING.TEXT
+msgid  "Pager"
+msgstr "Pager"
+
+#: template/template.src#CORRESPONDENCEFIELDS_28.STRING.TEXT
+msgid  "Mobile Phone"
+msgstr "ទូរស័ព្ទ​​ចល័ត"
+
+#: template/template.src#CORRESPONDENCEFIELDS_29.STRING.TEXT
+msgid  "Other Phone"
+msgstr "​ទូរស័ព្ទ​​ផ្សេងៗ"
+
+#: template/template.src#CORRESPONDENCEFIELDS_30.STRING.TEXT
+msgid  "Calendar URL"
+msgstr "URL ប្រតិទិន"
+
+#: template/template.src#CORRESPONDENCEFIELDS_31.STRING.TEXT
+msgid  "Invite"
+msgstr "អញ្ជើញ"
+
+#: template/template.src#TEXTFIELD.STRING.TEXT
+msgid  "User data field is not defined!"
+msgstr "មិន​​​បាន​​បញ្ជាក់វាល​​ទិន្នន័យរបស់​​​​អ្នក​ប្រើ​ឡើយ !"
+
+#: template/template.src#NEWSLETTER.STRING.TEXT
+msgid  "General layout"
+msgstr "ប្លង់​​ទូទៅ"
+
+#: template/template.src#NEWSLETTER___1.STRING.TEXT
+msgid  "Default layout"
+msgstr "ប្លង់​​លំនាំដើម"
+
+#: template/template.src#NEWSLETTER___2.STRING.TEXT
+msgid  "Commemorative publication layout"
+msgstr "ប្លង់​​បោះពុម្ពផ្សាយ​​​​អនុស្សរណៈ"
+
+#: template/template.src#NEWSLETTER___3.STRING.TEXT
+msgid  "Brochure layout"
+msgstr "ប្លង់​​ប័ណ្ណ​​ផ្សាយ​​ពាណិជ្ជកម្ម"
+
+#: template/template.src#NEWSLETTER___10.STRING.TEXT
+msgid  "Format"
+msgstr "ទ្រង់ទ្រាយ"
+
+#: template/template.src#NEWSLETTER___11.STRING.TEXT
+msgid  "Single-sided"
+msgstr "តែ​មួយ​ខាង"
+
+#: template/template.src#NEWSLETTER___12.STRING.TEXT
+msgid  "Double-sided"
+msgstr "សងខាង"

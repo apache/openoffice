@@ -39,10 +39,6 @@ msgstr "תבנית גליון עבודה ‏‪OpenDocument‏"
 msgid  "ODF Spreadsheet"
 msgstr "גליון עבודה ‏‪OpenDocument‏"
 
-#: config/fragments/filters/calc_HTML_WebQuery_ui.xcu#CALC_HTML_WEBQUERY.UINAME
-msgid  "Web Page Query (%productname% Calc)"
-msgstr "שאילתת דף אינטרנט ‏‪(%productname% Calc)‏"
-
 #: config/fragments/filters/calc_MS_Excel_2007_Binary_ui.xcu#CALC_MS_EXCEL_2007_BINARY.UINAME
 msgid  "Microsoft Excel 2007 Binary"
 msgstr "קובץ אקסל 2007 בינרי"
@@ -57,7 +53,7 @@ msgstr "קובץ XML אקסל 2007"
 
 #: config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#CALC_STAROFFICE_XML_CALC_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
-msgstr "תבנית גליון עבודה ‏‪%productname% %formatversion%‏"
+msgstr ""
 
 #: config/fragments/filters/chart8_ui.xcu#CHART8.UINAME
 msgid  "ODF Chart"
@@ -77,7 +73,7 @@ msgstr "מסמך ‏‪HTML‬‏ ‏‪(%productname% Draw)‏"
 
 #: config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#DRAW_STAROFFICE_XML_DRAW_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
-msgstr "תבנית ציור ‏‪%productname% %formatversion%‏"
+msgstr ""
 
 #: config/fragments/filters/HTML_MasterDoc_ui.xcu#HTML_MASTERDOC.UINAME
 msgid  "HTML Document (%productname% Master Document)"
@@ -121,11 +117,11 @@ msgstr "קובץ XML פוורפוינט 2007"
 
 #: config/fragments/filters/impress_StarOffice_XML_Draw_ui.xcu#IMPRESS_STAROFFICE_XML_DRAW.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
-msgstr "ציור ‏‪%productname% %formatversion%‬‏ ‏‪(%productname% Impress)‬‏‏"
+msgstr "שרטוט ‏‪%productname% %formatversion%‬‏ ‏‪(%productname% Impress)‬‏‏"
 
 #: config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#IMPRESS_STAROFFICE_XML_IMPRESS_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
-msgstr "תבנית מצגת ‏‪%productname% %formatversion%‏"
+msgstr "תבנית מצגת oooxmlformatname%%%% oooxmlformatversion "
 
 #: config/fragments/filters/math8_ui.xcu#MATH8.UINAME
 msgid  "ODF Formula"
@@ -159,10 +155,6 @@ msgstr "תבנית ‏‪Microsoft PowerPoint 97/2000/XP‏"
 msgid  "Microsoft Word 2003 XML"
 msgstr "‏‪Microsoft Word 2003 XML"
 
-#: config/fragments/filters/MS_Word_2007_XML_Template_ui.xcu#MS_WORD_2007_XML_TEMPLATE.UINAME
-msgid  "Microsoft Word 2007 XML Template"
-msgstr "קובץ תבנית XML וורד 2007"
-
 #: config/fragments/filters/MS_Word_2007_XML_ui.xcu#MS_WORD_2007_XML.UINAME
 msgid  "Microsoft Word 2007 XML"
 msgstr "קובץ XML וורד 2007"
@@ -174,6 +166,21 @@ msgstr "תבנית ‏‪Microsoft Word 95‏"
 #: config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS_WORD_97_VORLAGE.UINAME
 msgid  "Microsoft Word 97/2000/XP Template"
 msgstr "תבנית ‏‪Microsoft Word 97/2000/XP‏"
+
+#: config/fragments/filters/NSO_Calc_UOF2_ui.xcu#NSO_CALC_UOF2.UINAME
+#, fuzzy
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr "קובץ גליון עבודה בצורתעיצוב משרד אחיד-UOF"
+
+#: config/fragments/filters/NSO_Impress_UOF2_ui.xcu#NSO_IMPRESS_UOF2.UINAME
+#, fuzzy
+msgid  "Uniform Office Format 2 presentation"
+msgstr "קובץ מצגת בצורת עיצוב משרד אחיד-UOF מספר 2"
+
+#: config/fragments/filters/NSO_Writer_UOF2_ui.xcu#NSO_WRITER_UOF2.UINAME
+#, fuzzy
+msgid  "Uniform Office Format 2 Text"
+msgstr "טקסט בפורמט אופיס אחיד מספר 2"
 
 #: config/fragments/filters/StarCalc_3_0_Vorlage_Template_ui.xcu#STARCALC_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarCalc 3.0 Template"
@@ -219,6 +226,32 @@ msgstr "תבנית ‏‪StarImpress 5.0‏"
 msgid  "ODF Database"
 msgstr "מסד נתונים ‏‪OpenDocument‏"
 
+#: config/fragments/filters/StarOffice_XML__Calc__ui.xcu#STAROFFICE_XML_(CALC).UINAME
+#, fuzzy
+msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet"
+msgstr "קובץ גליון עבודה %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Chart__ui.xcu#STAROFFICE_XML_(CHART).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Chart"
+msgstr ""
+
+#: config/fragments/filters/StarOffice_XML__Draw__ui.xcu#STAROFFICE_XML_(DRAW).UINAME
+#, fuzzy
+msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing"
+msgstr "שרטוט %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Impress__ui.xcu#STAROFFICE_XML_(IMPRESS).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation"
+msgstr ""
+
+#: config/fragments/filters/StarOffice_XML__Math__ui.xcu#STAROFFICE_XML_(MATH).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Formula"
+msgstr ""
+
+#: config/fragments/filters/StarOffice_XML__Writer__ui.xcu#STAROFFICE_XML_(WRITER).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
+msgstr ""
+
 #: config/fragments/filters/StarWriter_3_0_Vorlage_Template_ui.xcu#STARWRITER_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarWriter 3.0 Template"
 msgstr "תבנית ‏‪StarWriter 3.0‏"
@@ -259,17 +292,9 @@ msgstr "טקסט מקודד ‏‪(%productname% Writer/Web)‏"
 msgid  "Text Encoded"
 msgstr "טקסט מקודד"
 
-#: config/fragments/filters/Text__StarWriter_Web__ui.xcu#TEXT_(STARWRITER/WEB).UINAME
-msgid  "Text (%productname% Writer/Web)"
-msgstr "טקסט ‏‪(%productname% Writer/Web)‏"
-
 #: config/fragments/filters/Text___txt___csv__StarCalc__ui.xcu#TEXT_-_TXT_-_CSV_(STARCALC).UINAME
 msgid  "Text CSV"
 msgstr "טקסט ‏‪CSV‬‏"
-
-#: config/fragments/filters/Text_ui.xcu#TEXT.UINAME
-msgid  "Text"
-msgstr "טקסט"
 
 #: config/fragments/filters/UOF_presentation_ui.xcu#UOF_PRESENTATION.UINAME
 msgid  "Unified Office Format presentation"
@@ -300,16 +325,19 @@ msgid  "ODF Text Document"
 msgstr "טקסט ‏‪OpenDocument‏"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER_GLOBALDOCUMENT.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
-msgstr "מסמך אב ‏‪%productname% %formatversion%‏"
+msgstr ""
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
-msgstr "מסמך טקסט %productname% %formatversion%‏"
+msgstr ""
 
 #: config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#WRITER_STAROFFICE_XML_WRITER_TEMPLATE.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
-msgstr "תבנית מסמך טקסט %productname% %formatversion%‏"
+msgstr ""
 
 #: config/fragments/filters/writerweb8_writer_template_ui.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 msgid  "HTML Document Template"
@@ -324,8 +352,9 @@ msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Wr
 msgstr "מסמך טקסט %productname% %formatversion%‬‏ ‏‪(%productname% Writer/Web)‏"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER_WEB_TEMPLATE.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
-msgstr "תבנית מסמך ‏‪HTML‬‏ ‏‪%productname% %formatversion%‏"
+msgstr ""
 
 #: config/fragments/internalgraphicfilters/bmp_Export.xcu#BMP_EXPORT.UINAME
 #, fuzzy
@@ -398,6 +427,7 @@ msgid  "PBM - Portable Bitmap"
 msgstr "PBM - Portable Bitmap"
 
 #: config/fragments/internalgraphicfilters/pbm_Import.xcu#PBM_IMPORT.UINAME
+#, fuzzy
 msgid  "PBM - Portable Bitmap"
 msgstr "PBM - Portable Bitmap"
 
@@ -452,6 +482,7 @@ msgid  "PNG - Portable Network Graphic"
 msgstr "PNG - Portable Network Graphic"
 
 #: config/fragments/internalgraphicfilters/ppm_Export.xcu#PPM_EXPORT.UINAME
+#, fuzzy
 msgid  "PPM - Portable Pixelmap"
 msgstr "PPM - מפת פיקלים ניידת"
 
@@ -476,6 +507,7 @@ msgid  "RAS - Sun Raster Image"
 msgstr "RAS - Sun Raster Image"
 
 #: config/fragments/internalgraphicfilters/sgf_Import.xcu#SGF_IMPORT.UINAME
+#, fuzzy
 msgid  "SGF - StarWriter Graphics Format"
 msgstr "SGF - StarWriter Graphics Format"
 
@@ -492,7 +524,7 @@ msgstr "SVG - Scalable Vector Graphics"
 #: config/fragments/internalgraphicfilters/svg_Import.xcu#SVG_IMPORT.UINAME
 #, fuzzy
 msgid  "SVG - Scalable Vector Graphics"
-msgstr "SVG - Scalable Vector Graphics"
+msgstr "SVG - Scalable Vector Graphics גרפיקה וקטורית הנתנת להרחבה"
 
 #: config/fragments/internalgraphicfilters/svm_Export.xcu#SVM_EXPORT.UINAME
 #, fuzzy
@@ -559,6 +591,10 @@ msgstr "'גליונות' של אופן אופיס, גרסת 8"
 msgid  "Microsoft Excel 2003 XML"
 msgstr "אקסל XML 2003"
 
+#: config/fragments/types/calc_NSO_UOF2.xcu#CALC_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr ""
+
 #: config/fragments/types/chart8.xcu#CHART8.UINAME
 #, fuzzy
 msgid  "Chart 8"
@@ -583,6 +619,10 @@ msgstr "תבנית 'מצגות' של אופן אופיס גרסת 8"
 #, fuzzy
 msgid  "Impress 8"
 msgstr "'מצגות' של אופן אופיס, גרסת 8"
+
+#: config/fragments/types/impress_NSO_UOF2.xcu#IMPRESS_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 presentation"
+msgstr "מצגת  מסוג עיצוב משרד אחיד-UFO מספר 2"
 
 #: config/fragments/types/math8.xcu#MATH8.UINAME
 #, fuzzy
@@ -614,6 +654,10 @@ msgstr "'כתבן' של אופן אופיס, גרסת 8"
 msgid  "Microsoft Word 2003 XML"
 msgstr "וורד XML 2003"
 
+#: config/fragments/types/writer_NSO_UOF2.xcu#WRITER_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 text"
+msgstr "טקסט  מסוג עיצוב משרד אחיד-UFO מספר 2"
+
 #: config/fragments/types/writerweb8_writer_template.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 #, fuzzy
 msgid  "Writer/Web 8 Template"
@@ -633,11 +677,6 @@ msgstr "‏1: איכות מזערית\n‏100: איכות מירבית"
 #, fuzzy
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
 msgstr "אזהרה: לא כל אובייקטי הגרפיקה EPS יכולים להשמר בשלב 1\nהיות וכמה מהם בעלי רמה גבוהה יותר!"
-
-#: pdf/impdialog.src#STR_PDF_EXPORT.STRING.TEXT
-#, fuzzy
-msgid  "E~xport"
-msgstr "יצוא"
 
 #: pdf/impdialog.src#STR_PDF_EXPORT_UDPWD.STRING.TEXT
 #, fuzzy
@@ -664,21 +703,6 @@ msgstr "טווח"
 msgid  "~All"
 msgstr "הכל"
 
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_RANGE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Pages"
-msgstr "עמודים"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_SELECTION.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Selection"
-msgstr "בחירה"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FL_IMAGES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Images"
-msgstr "תמונות"
-
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_LOSSLESSCOMPRESSION.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Lossless compression"
@@ -688,16 +712,6 @@ msgstr "דחיסה ללא אובדן נתונים"
 #, fuzzy
 msgid  "~JPEG compression"
 msgstr "דחיסת ‏‪JPEG‏"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_QUALITY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Quality"
-msgstr "איכות"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_REDUCEIMAGERESOLUTION.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Reduce image resolution"
-msgstr "~הורדת רזולוציה"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_PDFA_1B_SELECT.CHECKBOX.TEXT
 #, fuzzy
@@ -713,11 +727,6 @@ msgstr "‏‪PDF‬‏ עם סימון ‏‪(tags)"
 #, fuzzy
 msgid  "~Create PDF form"
 msgstr "יצירת טופס ‏‪PDF‬‏"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_FORMSFORMAT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Submit ~format"
-msgstr "טפסים יוגשו בצורת:‏"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ALLOWDUPLICATEFIELDNAMES.CHECKBOX.TEXT
 #, fuzzy
@@ -750,9 +759,8 @@ msgid  "E~mbed standard fonts"
 msgstr "ה~טמעת גופנים סטנדרטיים"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ADDSTREAM.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Embed this document ~inside the PDF"
-msgstr "יצירת קובץ היברידי"
+msgstr "הטמע את המסמך הזה ~ בתוך ה-PDF"
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.TITLE
 #, fuzzy
@@ -794,11 +802,6 @@ msgstr "תמונות ציפורן ודפים"
 msgid  "Open on page"
 msgstr "פתיחה בדף"
 
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_MAGNIFICATION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Magnification"
-msgstr "הגדלה"
-
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_DEFAULT.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Default"
@@ -823,11 +826,6 @@ msgstr "התאמה לנראה"
 #, fuzzy
 msgid  "~Zoom factor"
 msgstr "מקדם שינוי המיקוד"
-
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_PAGE_LAYOUT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Page layout"
-msgstr "פריסת הדף"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_DEFAULT.RADIOBUTTON.TEXT
 #, fuzzy
@@ -859,11 +857,6 @@ msgstr "דף ראשון שמאלי"
 msgid  "User Interface"
 msgstr "ממשק משתמש"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_WINOPT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Window options"
-msgstr "אפשרויות חלון"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_RESINIT.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Resize window to initial page"
@@ -884,11 +877,6 @@ msgstr "פתיחה בכל רוחב המסך"
 msgid  "~Display document title"
 msgstr "תצוגת כותרת המסמך"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_USRIFOPT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User interface options"
-msgstr "אפשרויות ממשק המשתמש"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVMENUBAR.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Hide ~menubar"
@@ -904,35 +892,15 @@ msgstr "הסתרת סרגל הכלים"
 msgid  "Hide ~window controls"
 msgstr "הסתרת פקדי החלון"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_TRANSITIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Transitions"
-msgstr "מעברים"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_TRANSITIONEFFECTS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Use transition effects"
 msgstr "שימוש בתוצאות המעברים "
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_BOOKMARKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Bookmarks"
-msgstr "סימניות"
-
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_ALLBOOKMARKLEVELS.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "All bookmark levels"
-msgstr "כל רמות הסימניות"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_VISIBLEBOOKMARKLEVELS.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Visible bookmark levels"
 msgstr "רמות הסימניות הנגישות"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.TABPAGE.TEXT
-#, fuzzy
-msgid  "Security"
-msgstr "אבטחה"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PWD_GROUP.FIXEDLINE.TEXT
 #, fuzzy
@@ -999,35 +967,15 @@ msgstr "מסמך ה־PDF לא יוגבל"
 msgid  "PDF document will not be restricted due to PDF/A export."
 msgstr "מסמך ה־PDF לא יוגבל בגלל ייצוא כ־PDF/A."
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Printing"
-msgstr "הדפסה"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Not permitted"
-msgstr "~לא תאופשר"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_LOWRES.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Low resolution (150 dpi)"
 msgstr "רזולוציה ~נמוכה (150 ‏‪dpi‬‏)‏"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_HIGHRES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~High resolution"
-msgstr "רזולוציה ~גבוהה"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_CHANGES_ALLOWED.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Changes"
 msgstr "שינויים"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "No~t permitted"
-msgstr "ל~א יאופשרו"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_INSDEL.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1053,11 +1001,6 @@ msgstr "הכל חוץ מדפים חולצים"
 #, fuzzy
 msgid  "Ena~ble copying of content"
 msgstr "א~פשר העתקת המסמך"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENAB_ACCESS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Enable text access for acce~ssibility tools"
-msgstr "אפשר גישה לטקסט עבור כלי נ~גישות"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.TABPAGE.TEXT
 #, fuzzy
@@ -1224,25 +1167,10 @@ msgstr "אישור"
 msgid  "XML Filter output"
 msgstr "פלט מסנן ‏‪XML‬‏‏"
 
-#: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Validate"
-msgstr "לאמת"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "שם"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.STRING.TEXT
 #, fuzzy
 msgid  "Type"
 msgstr "סוג"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.STRING.TEXT
-#, fuzzy
-msgid  "Unknown"
-msgstr "לא מוכר"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.STRING.TEXT
 #, fuzzy
@@ -1294,21 +1222,6 @@ msgstr "קובץ ה ‏‪XSLT‬‏ ליבוא לא אותר. נא לציין �
 msgid  "The given import template cannot be found. Please enter a valid path."
 msgstr "קובץ התבנית לצורך יבוא לא אותר. נא לציין נתיב חוקי לקובץ התבנית.‏"
 
-#: xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.STRING.TEXT
-#, fuzzy
-msgid  "Not specified"
-msgstr "לא מוגדר"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "New Filter"
-msgstr "מסנן חדש"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Untitled"
-msgstr "ללא כותרת"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.STRING.TEXT
 #, fuzzy
 msgid  "undefined filter"
@@ -1359,30 +1272,10 @@ msgstr "חדש...‏"
 msgid  "~Edit..."
 msgstr "עריכה...‏"
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Test XSLTs..."
-msgstr "לבדוק ‏‪XSLT‬‏ים...‏"
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete..."
-msgstr "מחיקה...‏"
-
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Save as Package..."
 msgstr "לשמור בתור חבילה...‏"
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Open Package..."
-msgstr "לפתוח חבילה...‏"
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "סגירה"
 
 #: xsltdialog/xmlfiltersettingsdialog.src#STR_XML_FILTER_LISTBOX.STRING.TEXT
 #, fuzzy
@@ -1394,55 +1287,10 @@ msgstr "רשימת פילטרים של XML"
 msgid  "XML Filter: %s"
 msgstr "מסנן ‏‪XML‬‏: ‏‪%s‬‏‏"
 
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "כללי"
-
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Transformation"
-msgstr "תמורה"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TABPAGE.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "כללי"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Filter name"
-msgstr "שם מסנן"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Application"
-msgstr "יישום"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Name of\nfile type"
-msgstr "שם של\nטיפוס קובץ"
-
 #: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "File extension"
 msgstr "סיומת קובץ"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Comments"
-msgstr "הערות"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TABPAGE.TEXT
-#, fuzzy
-msgid  "Transformation"
-msgstr "תמורה"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "DocType"
-msgstr "טיפוס מסמך ‏‪(DocType)‬‏‏"
 
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DTD_SCHEMA.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1453,41 +1301,6 @@ msgstr "DTD"
 #, fuzzy
 msgid  "Browse..."
 msgstr "דפדוף...‏"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for export"
-msgstr "‏‪XSLT‬‏ ליצוא"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for import"
-msgstr "‏‪XSLT‬‏ ליבוא"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template for import"
-msgstr "תבנית ליבוא"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Test XML Filter: %s"
-msgstr "לבדוק מסנן ‏‪XML‬‏: ‏‪%s‬‏‏"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "יצוא"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for export"
-msgstr "‏‪XSLT‬‏ ליצוא"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Transform document"
-msgstr "מסמך התמורה"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1504,21 +1317,6 @@ msgstr "מסמך הנוכחי"
 msgid  "Import"
 msgstr "יבוא"
 
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "XSLT for import"
-msgstr "‏‪XSLT‬‏ ליבוא"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template for import"
-msgstr "תבנית ליבוא"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Transform file"
-msgstr "קובץ התמורה"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Display source"
@@ -1528,11 +1326,6 @@ msgstr "להציג מקור"
 #, fuzzy
 msgid  "B~rowse..."
 msgstr "דפדוף...‏"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Recent File"
-msgstr "קבצים אחרונים"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy

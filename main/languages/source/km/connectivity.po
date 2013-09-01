@@ -341,361 +341,451 @@ msgid  "The index could not be created. The size of the chosen column is too big
 msgstr "លិបិក្រម​មិនអាច​ត្រូវ​បានបង្កើត​ទេ ។ ទំហំ​របស់​ជួរឈរ​ដែល​បានជ្រើស​ធំពេក ។"
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The name '$name$' doesn't match SQL naming constraints."
 msgstr "ឈ្មោះ '$name$' មិន​ត្រូវ​គ្នា​នឹង​ការ​ដាក់​ឈ្មោះ SQL ទេ ។"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The file $filename$ could not be deleted."
 msgstr "មិនអាច​លុប​ឯកសារ $filename$ បានទេ ។"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Invalid column type for column '$columnname$'."
 msgstr "ប្រភេទ​ជួរ​ឈរ​មិនត្រឹមត្រូវ​សម្រាប់​ជួរ​ឈរ '$columnname$' ។"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.STRING.TEXT
+#, fuzzy
 msgid  "Invalid precision for column '$columnname$'."
 msgstr "ចំនួន​ខ្ទង់​មិនត្រឹមត្រូវ សម្រាប់​ជួរ​ឈរ '$columnname$' ។"
 
 #: resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Precision is less than scale for column '$columnname$'."
 msgstr "ចំនួន​ខ្ទង់ តិចជាង​មាត្រដ្ឋាន​សម្រាប់​ជួរ​ឈរ '$columnname$' ។"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Invalid column name length for column '$columnname$'."
 msgstr "ប្រវែង​ឈ្មោះ​ជួរឈរ​មិនត្រឹមត្រូវ​សម្រាប់​ជួរ​ឈរ '$columnname$' ។"
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Duplicate value found in column '$columnname$'."
 msgstr "ចម្លង​តម្លៃ​ដែល​បាន​រកឃើញ​នៅ​ក្នុង​ជួរ​ឈរ '$columnname$' ។"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 msgstr "ជួរ​ឈរ '$columnname$' ត្រូវបាន​កំណត់​ជា​ប្រភេទ \"ទសភាគ\" ដែល​មាន​ប្រវែង​អតិបរមា $precision$ តួអក្សរ (ដោយមាន​កន្លែងទសភាគ $scale$) ។\n\nតម្លៃ​ដែល​បាន​បញ្ជាក់ \"$value$ គឺ​វែងជាង​ចំនួន​គោល​ពីរ​ដែល​បាន​អនុញ្ញាត ។"
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
 msgstr "ជួរ​ឈរ '$columnname$' មិនអាច​ផ្លាស់ប្ដូរ​បានទេ ។ ប្រហែល​ជា​ប្រព័ន្ធ​ឯកសារ​គឺ​ការពារ​ពី​ការ​សរសេរ ។"
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
 msgstr "ជួរ​ឈរ '$columnname$' មិនអាច​ធ្វើ​បច្ចុប្បន្នភាពភាព​​បានទេ​។ តម្លៃ​គឺ​មិនត្រឹមត្រូវ​សម្រាប់​ជួរ​ឈរ​នោះ​ទេ ។"
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
 msgstr "ជួរ​ឈរ '$columnname$' មិនអាច​បន្ថែម​បានទេ ។ ប្រហែល​ជា​ប្រព័ន្ធ​ឯកសារ​គឺ​មាន​ការការពារ​ពី​ការ​សរសេរ ។"
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
+#, fuzzy
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
 msgstr "ជួរ​ឈរ​នៅ​ទីតាំង '$position$' មិនអាច​ទម្លាក់​បានទេ ។ ប្រហែល​ជា​ប្រព័ន្ធ​ឯកសារ​គឺ​មាន​ការ​ការពារ​ពី​ការ​សរសេរ ។"
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
+#, fuzzy
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
 msgstr "តារាង '$tablename$' មិនអាច​ទម្លាក់​បានទេ ។ ប្រហែល​ជា​ប្រព័ន្ធ​ឯកសារ​គឺ​មាន​ការការពារ​ពី​ការ​សរសេរ ។"
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "The table could not be altered."
 msgstr "តារាង មិនអាច​ផ្លាស់ប្ដូរ​បានទេ ។"
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
 msgstr "ឯកសារ​ '$filename$' គឺ​ជា​ឯកសារ dBase ដែល​មិនត្រឹមត្រូវ (ឬ​មិន​ទទួល​ស្គាល់) ។"
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
+#, fuzzy
 msgid  "Cannot open Evolution address book."
 msgstr "មិនអាច​បើក​សៀវភៅ​អាសយដ្ឋាន Evolution បាន​ទេ ។"
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "Can only sort by table columns."
 msgstr "អាច​តម្រៀប​តែ​តាម​ជួរឈរ​របស់​តារាង​ប៉ុណ្ណោះ ។"
 
 #: resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
 msgstr "សំណួរ មិនអាច​ប្រតិបត្តិ​បានទេ ។ វា​ស្មុគស្មាញ​ណាស់ ។ មានតែ \"COUNT(*)\" ប៉ុណ្ណោះ​ដែល​បាន​គាំទ្រ ។"
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
 msgstr "សំណួរ​ដែល​មិនអាច​ប្រតិបត្តិ​បាន ។ អាគុយម៉ង់ 'BETWEEN' គឺ​មិនត្រឹមត្រូវ ។"
 
 #: resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. The function is not supported."
 msgstr "សំណួរ មិនអាច​ប្រតិបត្តិ​បានទេ ។ មុខងារ គឺ​មិនត្រូវបាន​គាំទ្រ​ទេ ។"
 
 #: resource/conn_shared_res.src#STR_TABLE_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "The table can not be changed. It is read only."
 msgstr "មិនអាច​ផ្លាស់ប្ដូរ​តារាង​បានទេ ។ វា​គឺ បានតែ​អាន ។"
 
 #: resource/conn_shared_res.src#STR_DELETE_ROW.STRING.TEXT
+#, fuzzy
 msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
 msgstr "មិនអាច​លុប​ជួរដេក​បានទេ ។ បាន​កំណត់​ជម្រើស \"បង្ហាញ​កំណត់ត្រា​ដែល​មិន​សកម្ម\" ។"
 
 #: resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The row could not be deleted. It is already deleted."
 msgstr "មិនអាច​លុប​ជួរដេក​បានទេ ។ វា​ត្រូវបាន​លុប​រួចរាល់​ហើយ ។"
 
 #: resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It contains more than one table."
 msgstr "មិនអាច​ប្រតិបត្តិ​សំណួរ​បានទេ ។ វា​មាន​តារាង​ច្រើន​ជាង​មួយ ។"
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It contains no valid table."
 msgstr "មិនអាច​ប្រតិបត្តិ​សំណួរ​បានទេ ។ វា​មាន​តារាង​ដែល​មិនត្រឹមត្រូវ ។"
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It contains no valid columns."
 msgstr "មិនអាច​ប្រតិបត្តិ​សំណួរ​បានទេ ។ វា​មិនមាន​ជួរឈរ​ដែល​ត្រឹមត្រូវទេ ។"
 
 #: resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "The count of the given parameter values doesn't match the parameters."
 msgstr "ចំនួន​តម្លៃ​ប៉ារ៉ាម៉ែត្រ​ដែល​បាន​ផ្ដល់ មិន​ត្រូវគ្នា​ជាមួយ​នឹង​ប៉ារ៉ាម៉ែត្រ​ទេ ។"
 
 #: resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.STRING.TEXT
+#, fuzzy
 msgid  "The URL '$URL$' is not valid. A connection can not be created."
 msgstr "URL '$URL$' គឺ​មិនត្រឹមត្រូវ ។ មិនអាច​បង្កើត​ការ​តភ្ជាប់​​ទេ ។"
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME.STRING.TEXT
+#, fuzzy
 msgid  "The driver class '$classname$' could not be loaded."
 msgstr "មិនអាច​ផ្ទុក​ថ្នាក់​កម្មវិធី​បញ្ជា '$classname$' ។"
 
 #: resource/conn_shared_res.src#STR_NO_JAVA.STRING.TEXT
+#, fuzzy
 msgid  "No Java installation could be found. Please check your installation."
 msgstr "រកមិនឃើញ​ការ​ដំឡើង Java ។ សូម​ពិនិត្យ​ការ​ដំឡើង​របស់​អ្នក ។"
 
 #: resource/conn_shared_res.src#STR_NO_RESULTSET.STRING.TEXT
+#, fuzzy
 msgid  "The execution of the query doesn't return a valid result set."
 msgstr "ការ​ប្រតិបត្តិ​សំណួរ មិន​ត្រឡប់​សំណុំ​លទ្ធផល​ដែល​ត្រឹមត្រូវ​នោះ​ទេ ។"
 
 #: resource/conn_shared_res.src#STR_NO_ROWCOUNT.STRING.TEXT
+#, fuzzy
 msgid  "The execution of the update statement doesn't effect any rows."
 msgstr "ការ​ប្រតិបត្តិ​ឃ្លា​បច្ចុប្បន្ន​ភាព មិន​ប៉ះពាល់​ដល់​ជួរ​ដេក​ណាមួយ​ទេ ។"
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME_PATH.STRING.TEXT
+#, fuzzy
 msgid  "The additional driver class path is '$classpath$'."
 msgstr "ផ្លូវ​ថ្នាក់​កម្មវិធី​បញ្ជា​​បន្ថែម​គឺ '$classpath$' ។"
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "The type of parameter at position '$position$' is unknown."
 msgstr "ប្រភេទ​ប៉ារ៉ាម៉ែត្រ​នៅ​ទីតាំង '$position$' គឺ​មិនស្គាល់ ។"
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "The type of column at position '$position$' is unknown."
 msgstr "ប្រភេទ​ជួរ​ឈរ​នៅ​ទីតាំង '$position$' គឺ​មិនស្គាល់ ។"
 
 #: resource/conn_shared_res.src#STR_NO_KDE_INST.STRING.TEXT
+#, fuzzy
 msgid  "No suitable KDE installation was found."
 msgstr "រកមិនឃើញ​ការ​ដំឡើង KDE ដែល​ត្រឹមត្រូវ​ទេ ។"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.STRING.TEXT
+#, fuzzy
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
 msgstr "ត្រូវការ​កំណែ KDE $major$.$minor$ ឬ ខ្ពស់​ជាង​ដើម្បី​ចូល​ដំណើរការ​សៀវភៅ​អាសយដ្ឋាន KDE ។"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
+#, fuzzy
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
 msgstr "កំណែ KDE ដែល​រកឃើញ​គឺ​ថ្មី​ពេក ។ មាន​តែ KDE មាន​កំណែ $major$.$minor$ ដែល​ដំណើរការ​ជាមួយ​នឹង​ផលិតផល​នេះ ។\n"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
+#, fuzzy
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
 msgstr "ប្រសិន​បើ​អ្នក​ច្បាស់​ថា កំណែ KDE របស់​អ្នក​ដំណើរការ​នោះ អ្នក​អាច​ប្រតិបត្តិ​​ម៉ាក្រូ​​មូលដ្ឋាន​ដូចខាងក្រោម ដើម្បី​បិទ​ការ​ពិនិត្យ​មើល​កំណែ​នេះ ៖\n\n"
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
+#, fuzzy
 msgid  "Parameters can appear only in prepared statements."
 msgstr "ប៉ារ៉ាម៉ែត្រ អាច​កើតឡើង​តែ​នៅ​ក្នុង​ស្ថានភាព​ដែល​បាន​រៀបចំ​ទុក​តែ​ប៉ុណ្ណោះ ។"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "No such table!"
 msgstr "គ្មាន​តារាង​ដូចនោះ​ទេ !"
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "No suitable Mac OS installation was found."
 msgstr "រក​មិនឃើញ​ការ​ដំឡើង Mac OS ដែល​ត្រឹមត្រូវ​នោះ​ទេ ។"
 
 #: resource/conn_shared_res.src#STR_NO_DISK_SPACE.STRING.TEXT
+#, fuzzy
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
 msgstr "មិនអាច​បង្កើត​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ '$filename$' បានទេ ។ សូម​ពិនិត្យ​មើល​ទំហំ​ថាស​របស់​អ្នក ។"
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
 msgstr "មិនអាច​ចាប់ផ្ដើម​មូលដ្ឋាន​ទិន្នន័យ '$databasename$' បានទេ ព្រោះ​មិនអាច​ប្រតិបត្តិ​ពាក្យ​បញ្ជា '$progname$' ។"
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
+#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
 msgstr "មូលដ្ឋាន​ទិន្នន័យ​បច្ចុប្បន្ន​ត្រូវការ​បម្លែង ។ សូម​បញ្ចូល​អ្នក​គ្រប់គ្រង និង​ពាក្យ​សម្ងាត់ ។"
 
 #: resource/conn_shared_res.src#STR_USER_NO_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
 msgstr "មិនអាច​លុប​អ្នកប្រើ​នេះ​បានទេ ។ ម្យ៉ាងទៀត មូលដ្ឋាន​ទិន្នន័យ​គឺ​ស្ថិត​ក្នុង​សភាព​អស្ថេរភាព ។"
 
 #: resource/conn_shared_res.src#STR_NO_STROAGE.STRING.TEXT
+#, fuzzy
 msgid  "The connection can not be established. No storage or URL was given."
 msgstr "មិនអាច​បង្កើត​ការ​តភ្ជាប់​បានទេ ។ គ្មាន​ឧបករណ៍​ផ្ទុក ឬ URL ដែល​បាន​ផ្ដល់​ទេ ។"
 
 #: resource/conn_shared_res.src#STR_INVALID_FILE_URL.STRING.TEXT
+#, fuzzy
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
 msgstr "URL ដែល​បាន​ផ្ដល់ មិនមាន​ផ្លូវ​ប្រព័ន្ធ​ឯកសារ​មូលដ្ឋាន​ត្រឹមត្រូវ​ទេ ។ សូម​ពិនិត្យ​មើល​ទីតាំង​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ​របស់​អ្នក ។"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "An error occured while obtaining the connection's table container."
 msgstr "មាន​កំហុស​កើតឡើង នៅពេល​ទទួល​យក​កម្មវិធី​ផ្ទុក​តារាង​របស់​ការ​តភ្ជាប់ ។"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
+#, fuzzy
 msgid  "An error occured while creating the table editor dialog."
 msgstr "មាន​កំហុស​កើតឡើង នៅពេល​បង្កើត​ប្រអប់​កម្មវិធី​និពន្ធ​តារាង ។"
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
+#, fuzzy
 msgid  "There is no table named '$tablename$'."
 msgstr "គ្មាន​តារាង​ដែល​មាន​ឈ្មោះ '$tablename$' ។"
 
 #: resource/conn_shared_res.src#STR_NO_DOCUMENTUI.STRING.TEXT
+#, fuzzy
 msgid  "The provided DocumentUI is not allowed to be NULL."
 msgstr "DocumentUI ដែល​បាន​ផ្ដល់ គឺ​មិនត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​ស្មើ​នឹង NULL ទេ ។"
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
+#, fuzzy
 msgid  "The record operation has been vetoed."
 msgstr "ប្រតិបត្តិការ​កត់ត្រា​ត្រូវបាន​បដិសេធ ។"
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
+#, fuzzy
 msgid  "The statement contains a cyclic reference to one or more sub queries."
 msgstr "សេចក្ដីថ្លែងការណ៍ មានសេចក្ដី​យោង​ដដែល ទៅសំណួរ​រង​មួយ ឬច្រើន ។"
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
+#, fuzzy
 msgid  "The name must not contain any slashes ('/')."
 msgstr "ឈ្មោះ​មិនត្រូវ​មាន​សញ្ញា ('/') ទេ ។"
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
+#, fuzzy
 msgid  "$1$ is no SQL conform identifier."
 msgstr "$1$ មិនមែនជា​អ្នក​កំណត់​អត្តសញ្ញាណ​អះអាង SQL ទេ ។"
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
+#, fuzzy
 msgid  "Query names must not contain quote characters."
 msgstr "ឈ្មោះ​សំណួរ​មិនត្រូវ​មាន​តួអក្សរ​សម្រង់​ទេ ។"
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
+#, fuzzy
 msgid  "The name '$1$' is already in use in the database."
 msgstr "ឈ្មោះ '$1$' គឺ​ត្រូវបាន​ប្រើ​នៅ​ក្នុង​មូលដ្ឋានទិន្នន័យ​រួចហើយ ។"
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
+#, fuzzy
 msgid  "No connection to the database exists."
 msgstr "គ្មានការ​តភ្ជាប់​ទៅ​កាន់​មូលដ្ឋាន​ទិន្នន័យ​ដែលមាន​ស្រាប់​ទេ ។"
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
+#, fuzzy
 msgid  "No $1$ exists."
 msgstr "មិនមាន $1$ ទេ ។"
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
+#, fuzzy
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "មិនអាច​បង្ហាញ​មាតិកា​តារាង​ពេញលេញ​បានទេ ។ សូម អនុវត្ត​តម្រង ។"
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Adabas D"
 msgstr "Adabas D"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (ODBC)"
 msgstr "MySQL (ODBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (Native)"
 msgstr "MySQL (Native)"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Outlook Address Book"
 msgstr "សៀវភៅ​អាសយដ្ឋាន​របស់ Microsoft Outlook"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Windows Address Book"
 msgstr "សៀវភៅ​អាសយដ្ឋាន​របស់ Microsoft Windows"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "SeaMonkey Address Book"
 msgstr "សៀវភៅ​អាសយដ្ឋាន​​របស់ Mozilla"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Thunderbird Address Book"
 msgstr "សៀវភៅ​អាសយដ្ឋាន​​របស់ Thunderbird"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "LDAP Address Book"
 msgstr "សៀវភៅ​អាសយដ្ឋាន​​របស់ LDAP"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "SeaMonkey Address Book"
 msgstr "សៀវភៅ​អាសយដ្ឋាន​​របស់ Mozilla"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Thunderbird Address Book"
 msgstr "សៀវភៅ​អាសយដ្ឋាន​​របស់ Thunderbird"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "LDAP Address Book"
 msgstr "សៀវភៅ​អាសយដ្ឋាន​​របស់ LDAP"
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "HSQL database engine"
 msgstr "ម៉ាស៊ីន​មូលដ្ឋាន​ទិន្នន័យ HSQL"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Mac OS X Address Book"
 msgstr "សៀវភៅ​អាសយដ្ឋាន​របស់ Mac OS X"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ODBC"
 msgstr "ODBC"
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "KDE Address Book"
 msgstr "សៀវភៅ​អាសយដ្ឋាន​របស់ KDE"
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Text"
 msgstr "អត្ថបទ"
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Spreadsheet"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "JDBC"
 msgstr "JDBC"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Oracle JDBC"
 msgstr "Oracle JDBC"
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "dBASE"
 msgstr "dBASE"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution Local"
 msgstr "Evolution Local"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ADO"
 msgstr "ADO"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access"
 msgstr "Microsoft Access"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"

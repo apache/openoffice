@@ -31,6 +31,98 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: ../desktop/share/documents.ulf#TEXT
+msgid  "%PRODUCTNAME Text Document"
+msgstr "%PRODUCTNAME 文書ドキュメント"
+
+#: ../desktop/share/documents.ulf#TEXT-TEMPLATE
+msgid  "%PRODUCTNAME Text Document Template"
+msgstr "%PRODUCTNAME 文書ドキュメントテンプレート"
+
+#: ../desktop/share/documents.ulf#MASTER-DOCUMENT
+msgid  "%PRODUCTNAME Master Document"
+msgstr "%PRODUCTNAME マスタードキュメント"
+
+#: ../desktop/share/documents.ulf#FORMULA
+msgid  "%PRODUCTNAME Formula"
+msgstr "%PRODUCTNAME 数式"
+
+#: ../desktop/share/documents.ulf#PRESENTATION
+msgid  "%PRODUCTNAME Presentation"
+msgstr "%PRODUCTNAME プレゼンテーション"
+
+#: ../desktop/share/documents.ulf#PRESENTATION-TEMPLATE
+msgid  "%PRODUCTNAME Presentation Template"
+msgstr "%PRODUCTNAME プレゼンテーションテンプレート"
+
+#: ../desktop/share/documents.ulf#DRAWING
+msgid  "%PRODUCTNAME Drawing"
+msgstr "%PRODUCTNAME 図形描画"
+
+#: ../desktop/share/documents.ulf#DRAWING-TEMPLATE
+msgid  "%PRODUCTNAME Drawing Template"
+msgstr "%PRODUCTNAME 図形描画テンプレート"
+
+#: ../desktop/share/documents.ulf#SPREADSHEET
+msgid  "%PRODUCTNAME Spreadsheet"
+msgstr "%PRODUCTNAME 表計算ドキュメント"
+
+#: ../desktop/share/documents.ulf#SPREADSHEET-TEMPLATE
+msgid  "%PRODUCTNAME Spreadsheet Template"
+msgstr "%PRODUCTNAME 表計算ドキュメントテンプレート"
+
+#: ../desktop/share/documents.ulf#OASIS-TEXT
+msgid  "OpenDocument Text"
+msgstr "OpenDocument テキスト"
+
+#: ../desktop/share/documents.ulf#OASIS-TEXT-TEMPLATE
+msgid  "OpenDocument Text Template"
+msgstr "OpenDocument テキストテンプレート"
+
+#: ../desktop/share/documents.ulf#OASIS-MASTER-DOCUMENT
+msgid  "OpenDocument Master Document"
+msgstr "OpenDocument マスタードキュメント"
+
+#: ../desktop/share/documents.ulf#OASIS-FORMULA
+msgid  "OpenDocument Formula"
+msgstr "OpenDocument 数式"
+
+#: ../desktop/share/documents.ulf#OASIS-PRESENTATION
+msgid  "OpenDocument Presentation"
+msgstr "OpenDocument プレゼンテーション"
+
+#: ../desktop/share/documents.ulf#OASIS-PRESENTATION-TEMPLATE
+msgid  "OpenDocument Presentation Template"
+msgstr "OpenDocument プレゼンテーションテンプレート"
+
+#: ../desktop/share/documents.ulf#OASIS-DRAWING
+msgid  "OpenDocument Drawing"
+msgstr "OpenDocument 図形描画"
+
+#: ../desktop/share/documents.ulf#OASIS-DRAWING-TEMPLATE
+msgid  "OpenDocument Drawing Template"
+msgstr "OpenDocument 図形描画テンプレート"
+
+#: ../desktop/share/documents.ulf#OASIS-SPREADSHEET
+msgid  "OpenDocument Spreadsheet"
+msgstr "OpenDocument 表計算"
+
+#: ../desktop/share/documents.ulf#OASIS-SPREADSHEET-TEMPLATE
+msgid  "OpenDocument Spreadsheet Template"
+msgstr "OpenDocument 表計算テンプレート"
+
+#: ../desktop/share/documents.ulf#OASIS-DATABASE
+msgid  "OpenDocument Database"
+msgstr "OpenDocument データベース"
+
+#: ../desktop/share/documents.ulf#OASIS-WEB-TEMPLATE
+msgid  "HTML Document Template"
+msgstr "HTML ドキュメントのテンプレート"
+
+#: ../desktop/share/documents.ulf#EXTENSION
+msgid  "%PRODUCTNAME Extension"
+msgstr "%PRODUCTNAME 拡張機能"
+
 #: ../desktop/share/documents.ulf#MS-EXCEL-SHEET-12
 msgid  "Microsoft Excel Worksheet"
 msgstr "Microsoft Excel ワークシート"
@@ -54,3 +146,67 @@ msgstr "Microsoft Word ドキュメント"
 #: ../desktop/share/documents.ulf#MS-WORD-TEMPLATE-12
 msgid  "Microsoft Word Document Template"
 msgstr "Microsoft Word ドキュメントテンプレート"
+
+#: ../desktop/share/launcher_genericname.ulf#WRITER
+msgid  "Word Processor"
+msgstr "ワードプロセッサ"
+
+#: ../desktop/share/launcher_genericname.ulf#IMPRESS
+msgid  "Presentation"
+msgstr "プレゼンテーション"
+
+#: ../desktop/share/launcher_genericname.ulf#CALC
+msgid  "Spreadsheet"
+msgstr "表計算ドキュメント"
+
+#: ../desktop/share/launcher_genericname.ulf#BASE
+msgid  "Database Development"
+msgstr "データベース開発"
+
+#: ../desktop/share/launcher_genericname.ulf#MATH
+msgid  "Formula Editor"
+msgstr "数式エディタ"
+
+#: ../desktop/share/launcher_genericname.ulf#DRAW
+msgid  "Drawing Program"
+msgstr "図形描画プログラム"
+
+#: ../desktop/share/launcher_genericname.ulf#STARTCENTER
+msgid  "Office"
+msgstr "Office"
+
+#: ../desktop/share/launcher_genericname.ulf#JAVAFILTER
+msgid  "Small Device Format Importer"
+msgstr "小型機器形式のインポート"
+
+#: ../desktop/share/launcher_name.ulf#PRINTERADMIN
+msgid  "%PRODUCTNAME Printer Administration"
+msgstr "%PRODUCTNAME プリンタの管理"
+
+#: ../desktop/share/launcher_comment.ulf#WRITER
+msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
+msgstr "Writer を使用して、レター、レポート、ドキュメントおよび Web ページのテキストおよび図を作成および編集します。"
+
+#: ../desktop/share/launcher_comment.ulf#IMPRESS
+msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
+msgstr "Impress を使用して、スライドショー、ミーティングおよび Web ページ用のプレゼンテーションを作成して編集します。"
+
+#: ../desktop/share/launcher_comment.ulf#DRAW
+msgid  "Create and edit drawings, flow charts, and logos by using Draw."
+msgstr "Draw を使用して、図形描画、フローチャート、およびロゴを作成および編集します。"
+
+#: ../desktop/share/launcher_comment.ulf#CALC
+msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
+msgstr "Calc を使用して、表計算ドキュメントで計算を実行し、情報を分析し、リストを管理します。"
+
+#: ../desktop/share/launcher_comment.ulf#MATH
+msgid  "Create and edit scientific formulas and equations by using Math."
+msgstr "Math を使用して、科学の公式や方程式を作成し、編集します。"
+
+#: ../desktop/share/launcher_comment.ulf#BASE
+msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
+msgstr "Base を使用することで、データベースを管理し、クエリーとレポートを作成して、情報を追跡および管理します。"
+
+#: ../desktop/share/launcher_comment.ulf#STARTCENTER
+msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by Apache OpenOffice."
+msgstr "オープンで標準化された ODF ドキュメント形式対応の統合オフィスツール。Apache OpenOffice によってサポートされています。"

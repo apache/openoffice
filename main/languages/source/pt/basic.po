@@ -277,7 +277,7 @@ msgstr "DDE requer o ficheiro DDEML.DLL."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_CANNOT_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Module cannot be loaded; invalid format."
-msgstr "Não foi possível carregar módulo. Formato inválido."
+msgstr "Não foi possível carregar módulo; formato inválido."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_INDEX_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid object index."
@@ -469,7 +469,7 @@ msgstr "Os parâmetros não correspondem ao procedimento."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_CHAR_IN_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid character in number."
-msgstr "Carácter inválido no número."
+msgstr "Caractere inválido no número."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_MUST_HAVE_DIMS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Array must be dimensioned."
@@ -527,10 +527,6 @@ msgstr "Expressão demasiado complexa."
 msgid  "Can't perform requested operation."
 msgstr "Não é possível realizar a operação solicitada."
 
-#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Too many DLL application clients."
-msgstr "Demasiados clientes de aplicação DLL."
-
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "For loop not initialized."
 msgstr "Para ciclo não inicializado."
@@ -581,11 +577,11 @@ msgstr "Desactivar"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_TRUE.STRING.TEXT
 msgid  "True"
-msgstr "Verdadeiro"
+msgstr "True"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_FALSE.STRING.TEXT
 msgid  "False"
-msgstr "Falso"
+msgstr "False"
 
 #: sbx/format.src#STR_BASICKEY_FORMAT_YES.STRING.TEXT
 msgid  "Yes"

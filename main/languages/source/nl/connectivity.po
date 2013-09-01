@@ -341,361 +341,451 @@ msgid  "The index could not be created. The size of the chosen column is too big
 msgstr "De index kon niet worden gemaakt. De grootte van de gekozen kolom is te groot."
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The name '$name$' doesn't match SQL naming constraints."
 msgstr "De naam '$name$' voldoet niet aan de beperkingen voor naamgeving in SQL."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The file $filename$ could not be deleted."
 msgstr "Het bestand $filename$ kon niet worden verwijderd."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Invalid column type for column '$columnname$'."
 msgstr "Ongeldig kolomtype voor de kolom '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.STRING.TEXT
+#, fuzzy
 msgid  "Invalid precision for column '$columnname$'."
 msgstr "Ongeldige precisie voor de kolom '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Precision is less than scale for column '$columnname$'."
 msgstr "Precisie is kleiner dan de schaal voor de kolom '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Invalid column name length for column '$columnname$'."
 msgstr "Ongeldige lengte van de kolomnaam voor de kolom '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Duplicate value found in column '$columnname$'."
 msgstr "Dubbele waarde gevonden in de kolom '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 msgstr "De kolom '$columnname$' is gedefinieerd als het type \"Decimaal\", de max. lengte is $precision$ tekens (met $scale$ plaatsen achter de komma).\n\nDe opgegeven waarde \"$value$ is langer dan het toegestane aantal getallen."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
 msgstr "De kolom '$columnname$' kon niet worden gewijzigd. Misschien is het bestandssysteem beveiligd tegen schrijven."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
 msgstr "De kolom '$columnname$' kon niet worden bijgewerkt. De waarde is ongeldig voor die kolom."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
+#, fuzzy
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
 msgstr "De kolom '$columnname$' kon niet worden toegevoegd. Misschien is het bestandssysteem beveiligd tegen schrijven."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
+#, fuzzy
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
 msgstr "De kolom op positie '$position$' kon niet worden verwijderd. Misschien is het bestandssysteem beveiligd tegen schrijven."
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
+#, fuzzy
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
 msgstr "De tabel '$tablename$' kon niet worden verwijderd. Misschien is het bestandssysteem beveiligd tegen schrijven."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "The table could not be altered."
 msgstr "De tabel kon niet worden gewijzigd."
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
 msgstr "Het bestand '$filename$' is een ongeldig (of niet-herkend) dBase-bestand."
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
+#, fuzzy
 msgid  "Cannot open Evolution address book."
 msgstr "Kan het Evolution adresboek niet openen."
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "Can only sort by table columns."
 msgstr "Kan alleen sorteren op tabelkolommen."
 
 #: resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
 msgstr "De query kan niet worden uitgevoerd. Hij is te complex. Alleen \"COUNT(*)\" wordt ondersteund."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
 msgstr "De query kan niet worden uitgevoerd. De argumenten voor 'BETWEEN' zijn niet juist."
 
 #: resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. The function is not supported."
 msgstr "De query kan niet worden uitgevoerd. De functie wordt niet ondersteund."
 
 #: resource/conn_shared_res.src#STR_TABLE_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "The table can not be changed. It is read only."
 msgstr "De tabel kan niet worden gewijzigd. Hij is alleen-lezen."
 
 #: resource/conn_shared_res.src#STR_DELETE_ROW.STRING.TEXT
+#, fuzzy
 msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
 msgstr "De rij kon niet worden verwijderd. De optie \"Inactieve records weergeven\" is ingesteld."
 
 #: resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The row could not be deleted. It is already deleted."
 msgstr "De rij kon niet worden verwijderd. Hij was al verwijderd."
 
 #: resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It contains more than one table."
 msgstr "De query kan niet worden uitgevoerd. Hij bevat meer dan één tabel."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It contains no valid table."
 msgstr "De query kan niet worden uitgevoerd. Hij bevat geen geldige tabel."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "The query can not be executed. It contains no valid columns."
 msgstr "De query kan niet worden uitgevoerd. Hij bevat geen geldige kolommen."
 
 #: resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "The count of the given parameter values doesn't match the parameters."
 msgstr "Het aantal opgegeven waarden voor de parameters komt niet overeen met de parameters."
 
 #: resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.STRING.TEXT
+#, fuzzy
 msgid  "The URL '$URL$' is not valid. A connection can not be created."
 msgstr "De URL '$URL$' is ongeldig. Een verbinding kan niet worden gemaakt."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME.STRING.TEXT
+#, fuzzy
 msgid  "The driver class '$classname$' could not be loaded."
 msgstr "De klasse '$classname$' van het stuurprogramma kon niet worden geladen."
 
 #: resource/conn_shared_res.src#STR_NO_JAVA.STRING.TEXT
+#, fuzzy
 msgid  "No Java installation could be found. Please check your installation."
 msgstr "Er werd geen JAVA-installatie gevonden. Controleer uw installatie."
 
 #: resource/conn_shared_res.src#STR_NO_RESULTSET.STRING.TEXT
+#, fuzzy
 msgid  "The execution of the query doesn't return a valid result set."
 msgstr "De uitvoering van de query levert geen geldige resultaten op."
 
 #: resource/conn_shared_res.src#STR_NO_ROWCOUNT.STRING.TEXT
+#, fuzzy
 msgid  "The execution of the update statement doesn't effect any rows."
 msgstr "De uitvoering van de instructie om bij te werken heeft geen effect op enige rij."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME_PATH.STRING.TEXT
+#, fuzzy
 msgid  "The additional driver class path is '$classpath$'."
 msgstr "Het aanvullende klassenpad voor het stuurprogramma is '$classpath$'."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "The type of parameter at position '$position$' is unknown."
 msgstr "Het type parameter op positie '$position$' is onbekend."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "The type of column at position '$position$' is unknown."
 msgstr "Het type kolom op positie '$position$' is onbekend."
 
 #: resource/conn_shared_res.src#STR_NO_KDE_INST.STRING.TEXT
+#, fuzzy
 msgid  "No suitable KDE installation was found."
 msgstr "Er werd geen geschikte KDE-installatie gevonden."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.STRING.TEXT
+#, fuzzy
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
 msgstr "KDE-versie $major$.$minor$ of hoger is vereist om toegang te verkrijgen tot het KDE Adresboek."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
+#, fuzzy
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
 msgstr "De gevonden KDE-versie is te nieuw. Alleen van versies KDE tot versie $major$.$minor$ is bekend dat zij werken met dit product.\n"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
+#, fuzzy
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
 msgstr "Indien u er zeker van bent dat uw versie van KDE werkt, wilt u misschien de volgende BASIC-macro uitvoeren om de versiecontrole uit te schakelen:\n\n"
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
+#, fuzzy
 msgid  "Parameters can appear only in prepared statements."
 msgstr "Parameters mogen alleen in vooraf gemaakte instructies voorkomen."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "No such table!"
 msgstr "Die tabel bestaat niet!"
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "No suitable Mac OS installation was found."
 msgstr "Er werd geen geschikte installatie voor Mac OS gevonden."
 
 #: resource/conn_shared_res.src#STR_NO_DISK_SPACE.STRING.TEXT
+#, fuzzy
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
 msgstr "Het databasebestand '$filename$' kon niet worden gemaakt. Controleer de ruimte op uw schijf."
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
 msgstr "De database '$databasename$' kon niet worden gestart omdat de opdracht '$progname$' niet kon worden uitgevoerd."
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
+#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
 msgstr "De huidige database moet worden geconverteerd. Voer de beheerdernaam en wachtwoord in."
 
 #: resource/conn_shared_res.src#STR_USER_NO_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
 msgstr "Deze gebruiker kon niet worden verwijderd. Anders blijft de database in een inconsistente status."
 
 #: resource/conn_shared_res.src#STR_NO_STROAGE.STRING.TEXT
+#, fuzzy
 msgid  "The connection can not be established. No storage or URL was given."
 msgstr "De verbinding kon niet tot stand worden gebracht. Er werd geen opslag of URL opgegeven."
 
 #: resource/conn_shared_res.src#STR_INVALID_FILE_URL.STRING.TEXT
+#, fuzzy
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
 msgstr "De opgegeven URL bevat geen geldig pad voor het lokale bestandssysteem. Controleer de locatie van uw databasebestand."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
+#, fuzzy
 msgid  "An error occured while obtaining the connection's table container."
 msgstr "Er trad een fout op tijdens het verkrijgen van de tabelcontainer van de verbinding."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
+#, fuzzy
 msgid  "An error occured while creating the table editor dialog."
 msgstr "Er trad een fout op tijdens het maken van het dialoogvenster voor het bewerken van de tabel."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
+#, fuzzy
 msgid  "There is no table named '$tablename$'."
 msgstr "Er is geen tabel die '$tablename$' heet."
 
 #: resource/conn_shared_res.src#STR_NO_DOCUMENTUI.STRING.TEXT
+#, fuzzy
 msgid  "The provided DocumentUI is not allowed to be NULL."
 msgstr "De opgegeven DocumentUI mag niet NULL zijn."
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
+#, fuzzy
 msgid  "The record operation has been vetoed."
 msgstr "De recordbewerking is verboden."
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
+#, fuzzy
 msgid  "The statement contains a cyclic reference to one or more sub queries."
 msgstr "De instructie bevat een cyclische verwijzing naar één of meer subquery's."
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
+#, fuzzy
 msgid  "The name must not contain any slashes ('/')."
 msgstr "De naam mag geen schuine strepen ('/') bevatten."
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
+#, fuzzy
 msgid  "$1$ is no SQL conform identifier."
 msgstr "$1$ is geen SQL-conforme identifier."
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
+#, fuzzy
 msgid  "Query names must not contain quote characters."
 msgstr "Querynamen mogen geen aanhalingstekens bevatten."
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
+#, fuzzy
 msgid  "The name '$1$' is already in use in the database."
 msgstr "De naam '$1$' is al in gebruik in de database."
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
+#, fuzzy
 msgid  "No connection to the database exists."
 msgstr "Er bestaat geen verbinding met de database."
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
+#, fuzzy
 msgid  "No $1$ exists."
 msgstr "$1$ bestaat niet."
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
+#, fuzzy
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "Niet mogelijk om de gehele inhoud van de tabel weer te geven. Pas alstublieft een filter toe."
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Adabas D"
 msgstr "Adabas D"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (ODBC)"
 msgstr "MySQL (ODBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (Native)"
 msgstr "MySQL (Native)"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Outlook Address Book"
 msgstr "Microsoft Outlook adresboek"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Windows Address Book"
 msgstr "Microsoft Windows adresboek"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "SeaMonkey Address Book"
 msgstr "SeaMonkey adresboek"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Thunderbird Address Book"
 msgstr "Thunderbird adresboek"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "LDAP Address Book"
 msgstr "LDAP adresboek"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "SeaMonkey Address Book"
 msgstr "SeaMonkey adresboek"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Thunderbird Address Book"
 msgstr "Thunderbird adresboek"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "LDAP Address Book"
 msgstr "LDAP adresboek"
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "HSQL database engine"
 msgstr "HSQL database"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Mac OS X Address Book"
 msgstr "Mac OS X adresboek"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ODBC"
 msgstr "ODBC"
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "KDE Address Book"
 msgstr "KDE adresboek"
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Text"
 msgstr "Tekst"
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Werkblad"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "JDBC"
 msgstr "JDBC"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Oracle JDBC"
 msgstr "Oracle JDBC"
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "dBASE"
 msgstr "dBASE"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution Local"
 msgstr "Evolution lokaal"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "Evolution LDAP"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "Groupwise"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ADO"
 msgstr "ADO"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access"
 msgstr "Microsoft Access"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access 2007"
 msgstr "Microsoft Access 2007"

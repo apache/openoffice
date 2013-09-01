@@ -33,39 +33,39 @@ msgstr ""
 
 #: resource/conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.STRING.TEXT
 msgid  "Mozilla/Seamonkey Addressbook Directory"
-msgstr "„Mozilla/Seamonkey“ adresų knygos katalogas"
+msgstr "„Mozilla/Seamonkey“ adresų knygelės katalogas"
 
 #: resource/conn_shared_res.src#STR_THUNDERBIRD_ADDRESSBOOKS.STRING.TEXT
 msgid  "Thunderbird Addressbook Directory"
-msgstr "„Thunderbird“ adresų knygos katalogas"
+msgstr "„Thunderbird“ adresų knygelės katalogas"
 
 #: resource/conn_shared_res.src#STR_OE_ADDRESSBOOK.STRING.TEXT
 msgid  "Outlook Express Addressbook"
-msgstr "„Outlook Express“ adresų knyga"
+msgstr "„Outlook Express“ adresų knygelė"
 
 #: resource/conn_shared_res.src#STR_OUTLOOK_MAPI_ADDRESSBOOK.STRING.TEXT
 msgid  "Outlook (MAPI) Addressbook"
-msgstr "„Outlook“ (MAPI) adresų knyga"
+msgstr "„Outlook“ (MAPI) adresų knygelė"
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.STRING.TEXT
 msgid  "Creating tables is not supported for this kind of address books."
-msgstr "Iš tokio tipo adresų knygų negalima kurti lentelių."
+msgstr "Galimybė kurti lenteles tokios atmainos adresų knygelėms neaptarnaujama."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.STRING.TEXT
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr "Nepavyko sukurti naujų adresų knygų, nes veikia „Mozilla“."
+msgstr "Veikiant programai „Mozilla“ adresų knygelių kurti negalima."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.STRING.TEXT
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr "Adresų knygos įrašo nepavyko nuskaityti, įvyko nežinoma klaida."
+msgstr "Adresų knygelės įrašo atgauti nepavyko, įvyko nežinoma klaida."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.STRING.TEXT
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr "Adresų knygos katalogo vardo nepavyko nuskaityti, įvyko nežinoma klaida."
+msgstr "Adresų knygelės katalogo pavadinimo atgauti nepavyko: įvyko nežinoma klaida."
 
 #: resource/conn_shared_res.src#STR_TIMEOUT_WAITING.STRING.TEXT
 msgid  "Timed out while waiting for the result."
-msgstr "Laukiant rezultato baigėsi operacijai skirtas laikas."
+msgstr "Laukiant rezultato baigėsi veiksmui skirtas laikas."
 
 #: resource/conn_shared_res.src#STR_ERR_EXECUTING_QUERY.STRING.TEXT
 msgid  "An error occurred while executing the query."
@@ -73,31 +73,31 @@ msgstr "Vykdant užklausą įvyko klaida."
 
 #: resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.STRING.TEXT
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr "Negalima keisti „Mozilla“ adresų knygos, kai „Mozilla“ programa veikia."
+msgstr "Veikiant programai „Mozilla“ keisti „Mozilla“ adresų knygelės negalima."
 
 #: resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.STRING.TEXT
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr "„Mozilla“ adresų knyga buvo pakeista kito proceso, dabar jos negalima pakeisti."
+msgstr "„Mozilla“ adresų knygelę pakeitė kita programa: dabartinėje būsenoje jos keisti negalima."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_ROW.STRING.TEXT
 msgid  "Can't find the requested row."
-msgstr "Nepavyko rasti reikiamos eilutės."
+msgstr "Nerandama prašoma eilutė."
 
 #: resource/conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.STRING.TEXT
 msgid  "Can't find the card for the requested row."
-msgstr "Nepavyko rasti reikiamos eilutės kortelės."
+msgstr "Nerandama prašomos eilutės kortelė."
 
 #: resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.STRING.TEXT
 msgid  "The query can not be executed. It needs at least one table."
-msgstr "Užklausai įvykdyti reikia bent vienos lentelės."
+msgstr "Užklausos vykdyti negalima: reikalinga bent viena lentelė."
 
 #: resource/conn_shared_res.src#STR_NO_COUNT_SUPPORT.STRING.TEXT
 msgid  "The driver does not support the 'COUNT' function."
-msgstr "Tvarkyklė nesuderinama su funkcija COUNT."
+msgstr "Funkcijos COUNT tvarkyklė neaptarnauja."
 
 #: resource/conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.STRING.TEXT
 msgid  "This statement type not supported by this database driver."
-msgstr "Toks sakinio tipas nesuderinamas su duomenų bazės tvarkykle."
+msgstr "Tokios sakinio atmainos duomenyno tvarkyklė neaptarnauja."
 
 #: resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.STRING.TEXT
 msgid  "An unknown error occured."
@@ -105,51 +105,51 @@ msgstr "Įvyko nežinoma klaida."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.STRING.TEXT
 msgid  "Could not create a new address book. Mozilla error code is $1$."
-msgstr "Nepavyko sukurti naujos adresų knygos. „Mozilla“ klaidos kodas $1$."
+msgstr "Nepavyko sukurti naujos adresų knygelės: programos „Mozilla“ klaidos kodas $1$."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.STRING.TEXT
 msgid  "The library '$libname$' could not be loaded."
-msgstr "Nepavyko įkelti bibliotekos „$libname$“."
+msgstr "Bibliotekos „$libname$“ įkelti nepavyko."
 
 #: resource/conn_shared_res.src#STR_ERROR_REFRESH_ROW.STRING.TEXT
 msgid  "An error occured while refreshing the current row."
-msgstr "Atnaujinant eilutę įvyko klaida."
+msgstr "Atnaujinant dabartinę eilutę įvyko klaida."
 
 #: resource/conn_shared_res.src#STR_ERROR_GET_ROW.STRING.TEXT
 msgid  "An error occured while getting the current row."
-msgstr "Įkeliant eilutę įvyko klaida."
+msgstr "Įkeliant dabartinę eilutę įvyko klaida."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.STRING.TEXT
 msgid  "The row update can not be canceled."
-msgstr "Eilutės atnaujinimo negalima nutraukti."
+msgstr "Eilutės naujinimo nutraukti negalima."
 
 #: resource/conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.STRING.TEXT
 msgid  "A new row can not be created."
-msgstr "Naujos eilutės sukurti negalima."
+msgstr "Naujos eilutės kurti negalima."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.STRING.TEXT
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr "Užklausos įvykdyti negalima - sąlygą IS NULL galima naudoti tik su stulpelio vardu."
+msgstr "Užklausos vykdyti negalima: sąlygą IS NULL galima naudoti tik su stulpelio pavadinimu."
 
 #: resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.STRING.TEXT
 msgid  "Illegal cursor movement occured."
-msgstr "Įvykdytas neleistinas žymeklio judesys."
+msgstr "Atliktas neteisėtas kryptuko judesys."
 
 #: resource/conn_shared_res.src#STR_COMMIT_ROW.STRING.TEXT
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr "Prieš atnaujindami arba įterpdami naujas eilutes, įrašykite eilutę „$position$“."
+msgstr "Prieš naujindami eilutes arba terpdami naujas eilutes, įrašykite eilutę „$position$“."
 
 #: resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.STRING.TEXT
 msgid  "The update call can not be executed. The row is invalid."
-msgstr "Atnaujinimo kreipinio įvykdyti negalima. Eilutė netinkama."
+msgstr "Naujinimo kreipinio įvykdyti negalima: neleidžiama eilutė."
 
 #: resource/conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.STRING.TEXT
 msgid  "The current row can not be saved."
-msgstr "Eilutės įrašyti negalima."
+msgstr "Dabartinės eilutės saugoti negalima."
 
 #: resource/conn_shared_res.src#STR_NO_HOSTNAME.STRING.TEXT
 msgid  "No hostname was provided."
-msgstr "Nenurodytas serverio vardas."
+msgstr "Nenurodytas serverio pavadinimas."
 
 #: resource/conn_shared_res.src#STR_NO_BASEDN.STRING.TEXT
 msgid  "No Base DN was provided."
@@ -161,35 +161,35 @@ msgstr "Nepavyko užmegzti ryšio su LDAP serveriu."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION_GIVEN.STRING.TEXT
 msgid  "It doesn't exist a connection to the database."
-msgstr "Ryšio su duomenų baze nėra."
+msgstr "Nėra ryšio su duomenynu."
 
 #: resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.STRING.TEXT
 msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
-msgstr "Bandėte nustatyti parametrą pozicijoje „$pos$“, bet leidžiamas(-i) tik „$count$“ parametras(-ai). Gali būti, kad duomenų šaltinyje savybės „ParameterNameSubstitution“ reikšmė nėra TRUE."
+msgstr "Bandėte nustatyti parametrą, kurio padėtis „$pos$“, bet leidžiamas(-i) tik „$count$“ parametras(-ai). Galbūt duomenų šaltinyje savybės „ParameterNameSubstitution“ reikšmė nėra TRUE."
 
 #: resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.STRING.TEXT
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr "Įvesties srauto pabaiga pasiekta anksčiau nei nurodytas įvesties srauto ilgis."
+msgstr "Duomenų įvedimo srauto pabaiga pasiekta, nepatenkinus ilgio, nurodyto nustatant duomenų įvedimo srautą."
 
 #: resource/conn_shared_res.src#STR_NO_INPUTSTREAM.STRING.TEXT
 msgid  "The input stream was not set."
-msgstr "Nenurodytas įvesties srautas."
+msgstr "Nenurodytas duomenų įvedimo srautas."
 
 #: resource/conn_shared_res.src#STR_NO_ELEMENT_NAME.STRING.TEXT
 msgid  "There is no element named '$name$'."
-msgstr "Nėra elemento pavadinimu „$name$“."
+msgstr "Dėmens pavadinimu „$name$“ nėra."
 
 #: resource/conn_shared_res.src#STR_INVALID_BOOKMARK.STRING.TEXT
 msgid  "Invalid bookmark value"
-msgstr "Neleistina žymelės reikšmė"
+msgstr "Neleidžiama žymelės reikšmė"
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.STRING.TEXT
 msgid  "Privilege not granted: Only table privileges can be granted."
-msgstr "Teisės nesuteiktos. Teisės gali būti suteiktos tik lentelėms."
+msgstr "Teisė nesuteikta: teisės gali būti suteiktos tik lentelėms."
 
 #: resource/conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.STRING.TEXT
 msgid  "Privilege not revoked: Only table privileges can be revoked."
-msgstr "Teisės neatimtos. Teisės gali būti atimtos tik lentelėms."
+msgstr "Teisė neatimta: teisės gali būti atimtos tik lentelėms."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.STRING.TEXT
 msgid  "The column name '$columnname$' is unknown."
@@ -201,15 +201,15 @@ msgstr "Funkcijos sekos klaida."
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX.STRING.TEXT
 msgid  "Invalid descriptor index."
-msgstr "Netinkama deskriptoriaus rodyklė."
+msgstr "Neleidžiama numerio rodyklė."
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.STRING.TEXT
 msgid  "The driver does not support the function '$functionname$'."
-msgstr "Tvarkyklė nesuderinama su funkcija „$functionname$“."
+msgstr "Funkcijos „$functionname$“ tvarkyklė neaptarnauja."
 
 #: resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.STRING.TEXT
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr "Tvarkyklė nesuderinama su „$featurename$“ funkcionalumu - jis neįdiegtas."
+msgstr "„$featurename$“ funkcionalumo tvarkyklė neaptarnauja: funkcionalumas neįgyvendintas."
 
 #: resource/conn_shared_res.src#STR_FORMULA_WRONG.STRING.TEXT
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -217,177 +217,152 @@ msgstr "„TypeInfoSettings“ formulė yra neteisinga!"
 
 #: resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.STRING.TEXT
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr "Eilutė „$string$“, pakeitus jos koduotę į „$charset$“, viršija didžiausią leistiną ženklų skaičių ($maxlen$)."
+msgstr "Eilutė „$string$“, išvertus jos koduotę į „$charset$“, viršija didžiausią leistiną ženklų skaičių ($maxlen$)."
 
 #: resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.STRING.TEXT
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr "Eilutės „$string$“ koduotės negalima pakeisti į „$charset“."
+msgstr "Eilutės „$string$“ koduotės išversti į „$charset“ negalima."
 
 #: resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.STRING.TEXT
 msgid  "The connection URL is invalid."
-msgstr "Ryšio URL netinkamas."
+msgstr "Neleidžiamas ryšio URL."
 
 #: resource/conn_shared_res.src#STR_QUERY_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. It is too complex."
-msgstr "Užklausos įvykdyti negalima: ji per sudėtinga."
+msgstr "Užklausos vykdyti negalima: ji per sudėtinga."
 
 #: resource/conn_shared_res.src#STR_OPERATOR_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. The operator is too complex."
-msgstr "Užklausos įvykdyti negalima: operatorius per sudėtingas."
+msgstr "Užklausos vykdyti negalima: per sudėtingas operatorius."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.STRING.TEXT
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr "Užklausos įvykdyti negalima: operacijos LIKE negalima naudoti su šio tipo stulpeliais."
+msgstr "Užklausos vykdyti negalima: operacijos LIKE negalima naudoti su šios atmainos stulpeliais."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.STRING.TEXT
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr "Užklausos įvykdyti negalima: sąlygą LIKE galima naudoti tik su tekstiniu argumentu."
+msgstr "Užklausos vykdyti negalima: sąlygą LIKE galima naudoti tik su tekstiniu argumentu."
 
 #: resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.STRING.TEXT
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
-msgstr "Užklausos įvykdyti negalima: sąlyga NOT LIKE yra per sudėtinga."
+msgstr "Užklausos vykdyti negalima: per sudėtinga sąlyga NOT LIKE."
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.STRING.TEXT
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr "Užklausos įvykdyti negalima: sąlygos LIKE viduryje yra pakaitos simbolis."
+msgstr "Užklausos vykdyti negalima: sąlygos LIKE viduryje yra pakaitos simbolis."
 
 #: resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.STRING.TEXT
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr "Užklausos įvykdyti negalima: sąlygoje LIKE yra per daug pakaitos simbolių."
+msgstr "Užklausos vykdyti negalima: sąlygoje LIKE yra per daug pakaitos simbolių."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.STRING.TEXT
-#, fuzzy
 msgid  "The column name '$columnname$' is not valid."
-msgstr "Nežinomas stulpelio pavadinimas „$columnname$“."
+msgstr "Neleidžiamas stulpelio pavadinimas „$columnname$“."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.STRING.TEXT
-#, fuzzy
 msgid  "The statement contains an invalid selection of columns."
-msgstr "Sakinyje neteisingai atrinkti stulpeliai."
+msgstr "Neleidžiamu būdu atrinkti stulpeliai sakinyje."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.STRING.TEXT
-#, fuzzy
 msgid  "The column at position '$position$' could not be updated."
-msgstr "Nepavyko atnaujinti stulpelio „$position$“."
+msgstr "Stulpelio, kurio padėtis „$position$“, atnaujinti nepavyko."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.STRING.TEXT
-#, fuzzy
 msgid  "The file $filename$ could not be loaded."
-msgstr "Nepavyko įkelti failo $filename$."
+msgstr "Bylos $filename$ įkelti nepavyko."
 
 #: resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.STRING.TEXT
-#, fuzzy
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr "Bandant įkelti failą gautas klaidos pranešimas ($exception_type$):\n\n$error_message$"
+msgstr "Bandant įkelti bylą gautas klaidos pranešimas ($exception_type$):\n\n$error_message$"
 
 #: resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.STRING.TEXT
-#, fuzzy
 msgid  "The type could not be converted."
-msgstr "Tipo nepavyko konvertuoti."
+msgstr "Šios atmainos išversti nepavyko."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.STRING.TEXT
-#, fuzzy
 msgid  "Could not append column: invalid column descriptor."
-msgstr "Nepavyko pridėti stulpelio: neteisingas stulpelio deskriptorius."
+msgstr "Nepavyko pridurti stulpelio: neleidžiamas stulpelio numeris."
 
 #: resource/conn_shared_res.src#STR_INVALID_GROUP_DESCRIPTOR_ERROR.STRING.TEXT
-#, fuzzy
 msgid  "Could not create group: invalid object descriptor."
-msgstr "Nepavyko sukurti grupės: neteisingas objekto deskriptorius."
+msgstr "Nepavyko sukurti grupės: neleidžiamas objekto numeris."
 
 #: resource/conn_shared_res.src#STR_INVALID_INDEX_DESCRIPTOR_ERROR.STRING.TEXT
-#, fuzzy
 msgid  "Could not create index: invalid object descriptor."
-msgstr "Nepavyko sukurti rodyklės: neteisingas objekto deskriptorius."
+msgstr "Nepavyko sukurti rodyklės: neleidžiamas objekto numeris."
 
 #: resource/conn_shared_res.src#STR_INVALID_KEY_DESCRIPTOR_ERROR.STRING.TEXT
-#, fuzzy
 msgid  "Could not create key: invalid object descriptor."
-msgstr "Nepavyko sukurti rakto: neteisingas objekto deskriptorius."
+msgstr "Nepavyko sukurti rakto: neleidžiamas objekto numeris."
 
 #: resource/conn_shared_res.src#STR_INVALID_TABLE_DESCRIPTOR_ERROR.STRING.TEXT
-#, fuzzy
 msgid  "Could not create table: invalid object descriptor."
-msgstr "Nepavyko sukurti lentelės: neteisingas objekto deskriptorius."
+msgstr "Nepavyko sukurti lentelės: neleidžiamas objekto numeris."
 
 #: resource/conn_shared_res.src#STR_INVALID_USER_DESCRIPTOR_ERROR.STRING.TEXT
-#, fuzzy
 msgid  "Could not create user: invalid object descriptor."
-msgstr "Nepavyko sukurti naudotojo: neteisingas objekto deskriptorius."
+msgstr "Nepavyko sukurti naudotojo: neleidžiamas objekto numeris."
 
 #: resource/conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.STRING.TEXT
-#, fuzzy
 msgid  "Could not create view: invalid object descriptor."
-msgstr "Nepavyko sukurti rodinio: neteisingas objekto deskriptorius."
+msgstr "Nepavyko sukurti rodinio: neleidžiamas objekto numeris."
 
 #: resource/conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.STRING.TEXT
-#, fuzzy
 msgid  "Could not create view: no command object."
-msgstr "Nepavyko sukurti rodinio: nėra objekto komandos."
+msgstr "Nepavyko sukurti rodinio: nėra komandos objekto."
 
 #: resource/conn_shared_res.src#STR_NO_CONNECTION.STRING.TEXT
-#, fuzzy
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr "Ryšio užmegzti nepavyko. Galbūt neįdiegtas reikiamas duomenų šaltinis."
+msgstr "Ryšio užmegzti nepavyko: galbūt neįdiegtas reikalingas duomenų šaltinis."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.STRING.TEXT
-#, fuzzy
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr "Nepavyko pašalinti rodyklės: kreipiantis į failų sistemą įvyko nežinoma klaida."
+msgstr "Rodyklės ištrinti nepavyko: pasiekiant bylų sistemą įvyko nežinoma klaida."
 
 #: resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.STRING.TEXT
-#, fuzzy
 msgid  "The index could not be created. Only one column per index is allowed."
-msgstr "Nepavyko sukurti rodyklės: vienoje rodyklėje leidžiamas tik vienas stulpelis."
+msgstr "Rodyklės sukurti nepavyko: vienoje rodyklėje leidžiamas tik vienas stulpelis."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.STRING.TEXT
-#, fuzzy
 msgid  "The index could not be created. The values are not unique."
-msgstr "Nepavyko sukurti rodyklės: reikšmės nėra unikalios."
+msgstr "Rodyklės sukurti nepavyko: reikšmės nėra vienetinės."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.STRING.TEXT
-#, fuzzy
 msgid  "The index could not be created. An unknown error appeared."
-msgstr "Nepavyko sukurti rodyklės: įvyko nežinoma klaida."
+msgstr "Rodyklės sukurti nepavyko: įvyko nežinoma klaida."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.STRING.TEXT
-#, fuzzy
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr "Nepavyko sukurti rodyklės: failą „$filename$“ naudoja kita rodyklė."
+msgstr "Rodyklės sukurti nepavyko: bylą „$filename$“ naudoja kita rodyklė."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.STRING.TEXT
 #, fuzzy
 msgid  "The index could not be created. The size of the chosen column is too big."
-msgstr "Nepavyko sukurti rodyklės: pasirinktas stulpelis yra per didelis."
+msgstr "Rodyklės sukurti nepavyko: pasirinktas stulpelis yra per didelis."
 
 #: resource/conn_shared_res.src#STR_SQL_NAME_ERROR.STRING.TEXT
-#, fuzzy
 msgid  "The name '$name$' doesn't match SQL naming constraints."
-msgstr "Vardas „$name$“ neatitinka SQL vardų reikalavimų."
+msgstr "Pavadinimas „$name$“ neatitinka SQL pavadinimų tvarkos reikalavimų."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.STRING.TEXT
-#, fuzzy
 msgid  "The file $filename$ could not be deleted."
-msgstr "Nepavyko pašalinti failo „$filename$“."
+msgstr "Bylos „$filename$“ ištrinti nepavyko."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_TYPE.STRING.TEXT
-#, fuzzy
 msgid  "Invalid column type for column '$columnname$'."
-msgstr "Netinkamas stulpelio „$columnname$“ tipas."
+msgstr "Neleidžiama stulpelio „$columnname$“ atmaina."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.STRING.TEXT
-#, fuzzy
 msgid  "Invalid precision for column '$columnname$'."
-msgstr "Netinkamas stulpelio „$columnname$“ tikslumas."
+msgstr "Neleidžiamas stulpelio „$columnname$“ tikslumas."
 
 #: resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.STRING.TEXT
 msgid  "Precision is less than scale for column '$columnname$'."
-msgstr ""
+msgstr "Tikslumas mažesnis už stulpelio mastelį '$columnname$'."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.STRING.TEXT
-#, fuzzy
 msgid  "Invalid column name length for column '$columnname$'."
-msgstr "Netinkamas stulpelio „$columnname$“ vardo ilgis."
+msgstr "Neleidžiamas stulpelio „$columnname$“ pavadinimo ilgis."
 
 #: resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.STRING.TEXT
 #, fuzzy
@@ -396,192 +371,187 @@ msgstr "Stulpelyje „$columnname$“ rasta pasikartojanti reikšmė."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.STRING.TEXT
 msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
-msgstr ""
+msgstr "Stulpelis „$columnname$“ apibrėžtas kaip „dešimtainis“, didžiausiausias leidžiamas ilgis – $precision$ rašmenų (su $scale$ dešimtainėmis(-ų)skiltimis(-ų)).\n\nNurodyta reikšmė \"$value$ yra ilgesnė už leidžiamą skaitmenų skaičių."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.STRING.TEXT
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Stulpelio „$columnname$“ pakeisti nepavyko: galbūt bylų sistema apsaugota nuo rašymo."
 
 #: resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.STRING.TEXT
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "Stulpelio „$columnname$“ atnaujinti nepavyko: neleidžiama stulpelio reikšmė."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.STRING.TEXT
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Stulpelis „$columnname$“ pridėti nepavyko: galbūt bylų sistema apsaugota nuo rašymo."
 
 #: resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.STRING.TEXT
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Stulpelio, kurio padėtis „$position$“, pašalinti nepavyko: galbūt bylų sistema apsaugota nuo rašymo."
 
 #: resource/conn_shared_res.src#STR_TABLE_NOT_DROP.STRING.TEXT
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Lentelės „$tablename$“ pašalinti nepavyko: galbūt bylų sistema apsaugota nuo rašymo."
 
 #: resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.STRING.TEXT
-#, fuzzy
 msgid  "The table could not be altered."
-msgstr "Tipo nepavyko konvertuoti."
+msgstr "Lentelės pakeisti nepavyko."
 
 #: resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.STRING.TEXT
 msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
-msgstr ""
+msgstr "Byla „$filename$“ yra neleidžiama (arba neatpažįstama) sistemos „dBase“ byla."
 
 #: resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.STRING.TEXT
 msgid  "Cannot open Evolution address book."
-msgstr ""
+msgstr "Negalima atversti „Evolution“ adresų knygelės."
 
 #: resource/conn_shared_res.src#STR_SORT_BY_COL_ONLY.STRING.TEXT
 msgid  "Can only sort by table columns."
-msgstr ""
+msgstr "Rūšiuoti galima tik pagal lentelės stulpelius."
 
 #: resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.STRING.TEXT
 msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
-msgstr ""
+msgstr "Užklausos vykdyti negalima: ji per sudėtinga. Aptarnaujama tik funkcija \"COUNT(*)\"."
 
 #: resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.STRING.TEXT
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
-msgstr ""
+msgstr "Užklausos vykdyti negalima: netaisyklingi argumentai „BETWEEN“."
 
 #: resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.STRING.TEXT
 msgid  "The query can not be executed. The function is not supported."
-msgstr ""
+msgstr "Užklausos vykdyti negalima: neaptarnaujama funkcija."
 
 #: resource/conn_shared_res.src#STR_TABLE_READONLY.STRING.TEXT
 msgid  "The table can not be changed. It is read only."
-msgstr ""
+msgstr "Lentelės keisti negalima: ji skirta tik skaityti."
 
 #: resource/conn_shared_res.src#STR_DELETE_ROW.STRING.TEXT
 msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
-msgstr ""
+msgstr "Eilutės ištrinti nepavyko: pasirinkta nuostata „Rodyti nenaudojamus įrašus“."
 
 #: resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.STRING.TEXT
 msgid  "The row could not be deleted. It is already deleted."
-msgstr ""
+msgstr "Eilutės ištrinti nepavyko: ji jau ištrinta."
 
 #: resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.STRING.TEXT
-#, fuzzy
 msgid  "The query can not be executed. It contains more than one table."
-msgstr "Užklausai įvykdyti reikia bent vienos lentelės."
+msgstr "Užkausos vykdyti negalima: joje yra daugiau negu viena lentelė."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_TABLE.STRING.TEXT
-#, fuzzy
 msgid  "The query can not be executed. It contains no valid table."
-msgstr "Užklausai įvykdyti reikia bent vienos lentelės."
+msgstr "Užklausos vykdyti negalima: joje nėra leidžiamos lentelės."
 
 #: resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.STRING.TEXT
-#, fuzzy
 msgid  "The query can not be executed. It contains no valid columns."
-msgstr "Užklausai įvykdyti reikia bent vienos lentelės."
+msgstr "Užklausos vykdyti negalima: joje nėra leidžiamų stulpelių."
 
 #: resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.STRING.TEXT
 msgid  "The count of the given parameter values doesn't match the parameters."
-msgstr ""
+msgstr "Duotų parametro reikšmių skaičius neatitinka parametrų."
 
 #: resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.STRING.TEXT
 msgid  "The URL '$URL$' is not valid. A connection can not be created."
-msgstr ""
+msgstr "Neleidžiamas URL „$URL$“: ryšio kurti negalima."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME.STRING.TEXT
 msgid  "The driver class '$classname$' could not be loaded."
-msgstr ""
+msgstr "Tvarkyklės klasės „$classname$“ įkelti nepavyko."
 
 #: resource/conn_shared_res.src#STR_NO_JAVA.STRING.TEXT
 msgid  "No Java installation could be found. Please check your installation."
-msgstr ""
+msgstr "Nerasta įdiegtos javos. Tikrinkite, ar įdiegėte."
 
 #: resource/conn_shared_res.src#STR_NO_RESULTSET.STRING.TEXT
 msgid  "The execution of the query doesn't return a valid result set."
-msgstr ""
+msgstr "Vykdant užklausą negaunama leidžiamų rezultatų aibė."
 
 #: resource/conn_shared_res.src#STR_NO_ROWCOUNT.STRING.TEXT
 msgid  "The execution of the update statement doesn't effect any rows."
-msgstr ""
+msgstr "Vykdant naujinimo sakinį eilutėms poveikis nedaromas."
 
 #: resource/conn_shared_res.src#STR_NO_CLASSNAME_PATH.STRING.TEXT
 msgid  "The additional driver class path is '$classpath$'."
-msgstr ""
+msgstr "Papildomas tvarkyklės klasės adresas yra „$classpath$“."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.STRING.TEXT
 msgid  "The type of parameter at position '$position$' is unknown."
-msgstr ""
+msgstr "Nežinoma parametro, kurio padėtis „$position$“, atmaina."
 
 #: resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.STRING.TEXT
 msgid  "The type of column at position '$position$' is unknown."
-msgstr ""
+msgstr "Nežinoma stulpelio, kurio padėtis „$position$“, atmaina."
 
 #: resource/conn_shared_res.src#STR_NO_KDE_INST.STRING.TEXT
 msgid  "No suitable KDE installation was found."
-msgstr ""
+msgstr "Nerasta tinkamai įdiegtos KDE."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.STRING.TEXT
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "Norint pasiekti KDE adresų knygelę reikalinga $major$.$minor$ arba aukštesnė KDE laida."
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.STRING.TEXT
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "Rasta KDE laida yra per nauja. Kol kas su šiuo gaminiu veikia tik KDE laidos iki $major$.$minor$.\n"
 
 #: resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.STRING.TEXT
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "Jeigu esate įsitikinę tinkamu savo KDF laidos veikimu, norėdami išjungti laidos tikrinimą, galite įvykdyti šią beisiko makrokomandą:\n\n"
 
 #: resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.STRING.TEXT
 msgid  "Parameters can appear only in prepared statements."
-msgstr ""
+msgstr "Parametrus galima rodyti tik paruoštuose sakiniuose."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE.STRING.TEXT
 msgid  "No such table!"
-msgstr ""
+msgstr "Tokios lentelės nėra!"
 
 #: resource/conn_shared_res.src#STR_NO_MAC_OS_FOUND.STRING.TEXT
 msgid  "No suitable Mac OS installation was found."
-msgstr ""
+msgstr "Nėra tinkamai įdiegtos „Mac OS“."
 
 #: resource/conn_shared_res.src#STR_NO_DISK_SPACE.STRING.TEXT
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "Duomenyno bylos „$filename$“ sukurti nepavyko. Tikrinkite, ar užtenka vietos diske."
 
 #: resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.STRING.TEXT
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "Duomenyno „$databasename$“ paleisti nepavyko, nes nepavyko įvykdyti komandos „$progname$“."
 
 #: resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.STRING.TEXT
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Dabartinį duomenyną reikia versti. Įterpkite valdančiojo naudotojo vardą ir slaptažodį."
 
 #: resource/conn_shared_res.src#STR_USER_NO_DELETE.STRING.TEXT
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "Šio naudotojo ištrinti nepavyko. Kitais požiūriais duomenynas lieka nenuoseklioje būsenoje."
 
 #: resource/conn_shared_res.src#STR_NO_STROAGE.STRING.TEXT
 msgid  "The connection can not be established. No storage or URL was given."
-msgstr ""
+msgstr "Ryšio užmegzti negalima: nesuteikta atmintis arba URL."
 
 #: resource/conn_shared_res.src#STR_INVALID_FILE_URL.STRING.TEXT
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "Duotame URL nėra leidžiamo vietinės bylų sistemos adreso. Tikrinkite duomenyno bylos vietą."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.STRING.TEXT
 msgid  "An error occured while obtaining the connection's table container."
-msgstr ""
+msgstr "Klaida gaunant ryšio lentelių talpyklą."
 
 #: resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.STRING.TEXT
 msgid  "An error occured while creating the table editor dialog."
-msgstr ""
+msgstr "Klaida kuriant lentelių rengyklės dialogą."
 
 #: resource/conn_shared_res.src#STR_NO_TABLENAME.STRING.TEXT
 msgid  "There is no table named '$tablename$'."
-msgstr ""
+msgstr "Lentelės pavadinimu „$tablename$“ nėra."
 
 #: resource/conn_shared_res.src#STR_NO_DOCUMENTUI.STRING.TEXT
 msgid  "The provided DocumentUI is not allowed to be NULL."
-msgstr ""
+msgstr "Pateiktas DocumentUI negali būti NULL."
 
 #: resource/conn_error_message.src#256___2_100___0.STRING.TEXT
-#, fuzzy
 msgid  "The record operation has been vetoed."
-msgstr "Įrašo operacija uždrausta."
+msgstr "Įrašymo veiksmas atmestas."
 
 #: resource/conn_error_message.src#256___2_200___0.STRING.TEXT
 #, fuzzy
@@ -589,9 +559,8 @@ msgid  "The statement contains a cyclic reference to one or more sub queries."
 msgstr "Sakinyje yra ciklinė nuoroda į vieną ar daugiau žemesnio lygio užklausų."
 
 #: resource/conn_error_message.src#256___2_300___0.STRING.TEXT
-#, fuzzy
 msgid  "The name must not contain any slashes ('/')."
-msgstr "Varde negali būti pasvirųjų brūkšnių („/“)."
+msgstr "Pavadinime negali būti pasvirųjų brūkšnių („/“)."
 
 #: resource/conn_error_message.src#256___2_301___0.STRING.TEXT
 #, fuzzy
@@ -599,142 +568,156 @@ msgid  "$1$ is no SQL conform identifier."
 msgstr "$1$ nėra SQL atitinkantis identifikatorius."
 
 #: resource/conn_error_message.src#256___2_302___0.STRING.TEXT
-#, fuzzy
 msgid  "Query names must not contain quote characters."
-msgstr "Užklausų varduose negali būti kabučių."
+msgstr "Užklausų pavadinimuose negali būti kabučių."
 
 #: resource/conn_error_message.src#256___2_303___0.STRING.TEXT
-#, fuzzy
 msgid  "The name '$1$' is already in use in the database."
-msgstr "Vardas „$1$“ jau naudojamas duomenų bazėje."
+msgstr "Duomenynas pavadinimu „$1$“ jau yra."
 
 #: resource/conn_error_message.src#256___2_304___0.STRING.TEXT
-#, fuzzy
 msgid  "No connection to the database exists."
-msgstr "Nėra ryšio su duomenų baze."
+msgstr "Nėra ryšio su duomenynu."
 
 #: resource/conn_error_message.src#256___2_500___0.STRING.TEXT
-#, fuzzy
 msgid  "No $1$ exists."
-msgstr "$1$ neegzistuoja."
+msgstr "Nėra $1$."
 
 #: resource/conn_error_message.src#256___2_550___0.STRING.TEXT
-#, fuzzy
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr "Nepavyko atvaizduoti visos turinio lentelės. Prašom pritaikyti filtrą."
+msgstr "Nepavyko parodyti visos turinio lentelės. Prašome pritaikyti filtrą."
 
 #: drivers/adabas/adabas.xcu#DRIVERS.INSTALLED.SDBC:ADABAS:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Adabas D"
 msgstr "„Adabas D“"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:JDBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (JDBC)"
 msgstr "„MySQL“ (JDBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:ODBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (ODBC)"
 msgstr "„MySQL“ (ODBC)"
 
 #: drivers/mysql/mysql.xcu#DRIVERS.INSTALLED.SDBC:MYSQL:MYSQLC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "MySQL (Native)"
 msgstr "„MySQL“ (savas)"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOK.DRIVERTYPEDISPLAYNAME
 msgid  "Microsoft Outlook Address Book"
-msgstr "„Microsoft Outlook“ adresų knyga"
+msgstr "„Microsoft Outlook“ adresų knygelė"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:OUTLOOKEXP.DRIVERTYPEDISPLAYNAME
 msgid  "Microsoft Windows Address Book"
-msgstr "„Microsoft Windows“ adresų knyga"
+msgstr "„Microsoft Windows“ adresų knygelė"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
 msgid  "SeaMonkey Address Book"
-msgstr ""
+msgstr "„SeaMonkey“ adresų knygelė"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
 msgid  "Thunderbird Address Book"
-msgstr "„Thunderbird“ adresų knyga"
+msgstr "„Thunderbird“ adresų knygelė"
 
 #: drivers/mozab/mozab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
 msgid  "LDAP Address Book"
-msgstr "LDAP adresų knyga"
+msgstr "LDAP adresų knygelė"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MOZILLA:.DRIVERTYPEDISPLAYNAME
 msgid  "SeaMonkey Address Book"
-msgstr ""
+msgstr "„SeaMonkey“ adresų knygelė"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:THUNDERBIRD:.DRIVERTYPEDISPLAYNAME
 msgid  "Thunderbird Address Book"
-msgstr "„Thunderbird“ adresų knyga"
+msgstr "„Thunderbird“ adresų knygelė"
 
 #: drivers/mozab/mozab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:LDAP:_.DRIVERTYPEDISPLAYNAME
 msgid  "LDAP Address Book"
-msgstr "LDAP adresų knyga"
+msgstr "LDAP adresų knygelė"
 
 #: drivers/hsqldb/hsqldb.xcu#DRIVERS.INSTALLED.SDBC:EMBEDDED:HSQLDB.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "HSQL database engine"
 msgstr "HSQL duomenų bazių variklis"
 
 #: drivers/macab/macab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:MACAB.DRIVERTYPEDISPLAYNAME
 msgid  "Mac OS X Address Book"
-msgstr "„Mac OS X“ adresų knyga"
+msgstr "„Mac OS X“ adresų knygelė"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "„Evolution“ LDAP"
 
 #: drivers/evoab/evoab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "„Groupwise“"
 
 #: drivers/odbc/odbc.xcu#DRIVERS.INSTALLED.SDBC:ODBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ODBC"
 msgstr "ODBC"
 
 #: drivers/kab/kab.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:KAB.DRIVERTYPEDISPLAYNAME
 msgid  "KDE Address Book"
-msgstr "KDE adresų knyga"
+msgstr "KDE adresų knygelė"
 
 #: drivers/flat/flat.xcu#DRIVERS.INSTALLED.SDBC:FLAT:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Text"
 msgstr "Tekstas"
 
 #: drivers/calc/calc.xcu#DRIVERS.INSTALLED.SDBC:CALC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Skaičiuoklė"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "JDBC"
 msgstr "JDBC"
 
 #: drivers/jdbc/jdbc.xcu#DRIVERS.INSTALLED.JDBC:ORACLE:THIN:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Oracle JDBC"
 msgstr "„Oracle JDBC“"
 
 #: drivers/dbase/dbase.xcu#DRIVERS.INSTALLED.SDBC:DBASE:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "dBASE"
 msgstr "„dBASE“"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LOCAL.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution Local"
 msgstr "Vietinis „Evolution“"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:LDAP.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Evolution LDAP"
 msgstr "„Evolution“ LDAP"
 
 #: drivers/evoab2/evoab2.xcu#DRIVERS.INSTALLED.SDBC:ADDRESS:EVOLUTION:GROUPWISE.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Groupwise"
 msgstr "„Groupwise“"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "ADO"
 msgstr "ADO"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access"
 msgstr "„Microsoft Access“"
 
 #: drivers/ado/ado.xcu#DRIVERS.INSTALLED.SDBC:ADO:ACCESS:PROVIDER=MICROSOFT.ACE.OLEDB.12.0;DATA_SOURCE=_.DRIVERTYPEDISPLAYNAME
+#, fuzzy
 msgid  "Microsoft Access 2007"
 msgstr "„Microsoft Access 2007“"

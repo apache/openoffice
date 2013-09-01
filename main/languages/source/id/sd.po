@@ -31,14 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.MODALDIALOG.TEXT
-msgid  "HTML Export"
-msgstr "Ekspor HTML"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_TITEL.FIXEDLINE.TEXT
-msgid  "Assign design"
-msgstr "Tentukan desain"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_NEW_DESIGN.RADIOBUTTON.TEXT
 msgid  "New design"
 msgstr "Desain baru"
@@ -55,14 +47,6 @@ msgstr "Hapus Desain yang Dipilih"
 msgid  "Select an existing design or create a new one"
 msgstr "Pilih desain yang sudah ada atau buat yang baru"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL.FIXEDLINE.TEXT
-msgid  "Publication type"
-msgstr "Jenis publikasi"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_STANDARD.RADIOBUTTON.TEXT
-msgid  "Standard H~TML format"
-msgstr "Format standar H~TML"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_FRAMES.RADIOBUTTON.TEXT
 msgid  "Standard HTML with ~frames"
 msgstr "HTML standar dengan ~bingkai"
@@ -70,14 +54,6 @@ msgstr "HTML standar dengan ~bingkai"
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RADIOBUTTON.TEXT
 msgid  "~Automatic"
 msgstr "Otom~atis"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RADIOBUTTON.TEXT
-msgid  "~WebCast"
-msgstr "~WebCast"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_HTML.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Opsi"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CONTENT.CHECKBOX.TEXT
 msgid  "Create title page"
@@ -87,45 +63,9 @@ msgstr "Buat halaman judul"
 msgid  "Show notes"
 msgstr "Tampilkan catatan"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_KIOSK.FIXEDLINE.TEXT
-msgid  "Advance slides"
-msgstr "Salindia lanjutan"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_DEFAULT.RADIOBUTTON.TEXT
-msgid  "~As stated in document"
-msgstr "Seb~agaimana disebutkan pada dokumen"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TXT.FIXEDTEXT.TEXT
-msgid  "~Slide view time:"
-msgstr "Lamanya ~salindia ditampilkan:"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TMF.TIMEFIELD.QUICKHELPTEXT
-msgid  "~Duration of page"
-msgstr "~Durasi halaman"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ENDLESS.CHECKBOX.TEXT
-msgid  "~Endless"
-msgstr "~Tanpa akhir"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_WEBCAST.FIXEDLINE.TEXT
-msgid  "WebCast"
-msgstr "WebCast"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ASP.RADIOBUTTON.TEXT
-msgid  "~Active Server Pages (ASP)"
-msgstr "~Active Server Pages (ASP)"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_PERL.RADIOBUTTON.TEXT
 msgid  "Perl"
 msgstr "Perl"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_INDEX_TXT.FIXEDTEXT.TEXT
-msgid  "~URL for listeners"
-msgstr "~URL untuk pendengar"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_URL_TXT.FIXEDTEXT.TEXT
-msgid  "URL for ~presentation:"
-msgstr "URL untuk ~presentasi:"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CGI_TXT.FIXEDTEXT.TEXT
 msgid  "URL for ~Perl scripts:"
@@ -135,61 +75,9 @@ msgstr "URL untuk skrip ~Perl:"
 msgid  "Save graphics as"
 msgstr "Simpan grafik sebagai"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_PNG.RADIOBUTTON.TEXT
-msgid  "~PNG"
-msgstr "~PNG"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_GIF.RADIOBUTTON.TEXT
-msgid  "~GIF"
-msgstr "~GIF"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_JPG.RADIOBUTTON.TEXT
-msgid  "~JPG"
-msgstr "~JPG"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_QUALITY_TXT.FIXEDTEXT.TEXT
-msgid  "Quality"
-msgstr "Kualitas"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_2.FIXEDLINE.TEXT
-msgid  "Monitor resolution"
-msgstr "Resolusi monitor"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_1.RADIOBUTTON.TEXT
-msgid  "Low resolution (~640x480 pixels)"
-msgstr "Resolusi rendah (~640x480 piksel)"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_2.RADIOBUTTON.TEXT
-msgid  "Medium resolution (~800x600 pixels)"
-msgstr "Resolusi menengah (~800x600 piksel)"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_3.RADIOBUTTON.TEXT
-msgid  "High resolution (~1024x768 pixels)"
-msgstr "Resolusi tinggi (~1024x768 piksel)"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_3.FIXEDLINE.TEXT
-msgid  "Effects"
-msgstr "Efek"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_SLD_SOUND.CHECKBOX.TEXT
-msgid  "~Export sounds when slide advances"
-msgstr "~Ekspor suara ketika salindia berganti"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_HIDDEN_SLIDES.CHECKBOX.TEXT
 msgid  "Export ~hidden slides"
 msgstr "Ekspor ~salindia yang tersembunyi"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_1.FIXEDLINE.TEXT
-msgid  "Information for the title page"
-msgstr "Informasi untuk halaman judul"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_AUTHOR_TXT.FIXEDTEXT.TEXT
-msgid  "~Author"
-msgstr "~Penulis"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_EMAIL_TXT.FIXEDTEXT.TEXT
-msgid  "E-~mail address"
-msgstr "Ala~mat Surel"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_WWW_TXT.FIXEDTEXT.TEXT
 msgid  "Your hom~epage"
@@ -199,57 +87,9 @@ msgstr "La~man Anda"
 msgid  "Additional ~information"
 msgstr "~Informasi tambahan"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_DOWNLOAD.CHECKBOX.TEXT
-msgid  "Link to a copy of the ~original presentation"
-msgstr "Taut ke salinan presentasi yang ~asli"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_CREATED.CHECKBOX.TEXT
-msgid  "Note: 'Created with %PRODUCTNAME'"
-msgstr "Catatan: 'Dibuat dengan %PRODUCTNAME'"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TITEL.FIXEDLINE.TEXT
-msgid  "Select button style"
-msgstr "Pilih gaya tombol"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TEXTONLY.CHECKBOX.TEXT
-msgid  "~Text only"
-msgstr "Hanya ~teks"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TITEL.FIXEDLINE.TEXT
-msgid  "Select color scheme"
-msgstr "Pilih skema warna"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DOCCOLORS.RADIOBUTTON.TEXT
-msgid  "~Apply color scheme from document"
-msgstr "Ter~apkan skema warna dari dokumen"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Use ~browser colors"
-msgstr "Gunakan warna milik peram~ban"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_USER.RADIOBUTTON.TEXT
-msgid  "~Use custom color scheme"
-msgstr "G~unakan skema warna yang diubah"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TEXT.PUSHBUTTON.TEXT
 msgid  "Text"
 msgstr "Teks"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_LINK.PUSHBUTTON.TEXT
-msgid  "Hyper~link"
-msgstr "Taut-~Luar"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_ALINK.PUSHBUTTON.TEXT
-msgid  "Active Li~nk"
-msgstr "Taut ~Aktif"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_VLINK.PUSHBUTTON.TEXT
-msgid  "~Visited Link"
-msgstr "Taut yang Telah Di~kunjungi"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_BACK.PUSHBUTTON.TEXT
-msgid  "Bac~kground"
-msgstr "Latar Bela~kang"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_LAST.PUSHBUTTON.TEXT
 msgid  "<< Back"
@@ -259,73 +99,21 @@ msgstr "<< Kembali"
 msgid  "Next >>"
 msgstr "Lanjut >>"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_FINISH.OKBUTTON.TEXT
-msgid  "~Create"
-msgstr "~Buat"
-
-#: filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_SAVE.OKBUTTON.TEXT
-msgid  "~Save"
-msgstr "~Simpan"
-
 #: filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_NOSAVE.CANCELBUTTON.TEXT
 msgid  "Do Not Save"
 msgstr "Jangan Simpan"
-
-#: filter/html/pubdlg.src#DLG_DESIGNNAME.CANCELBUTTON.TEXT
-msgid  "Name HTML Design"
-msgstr "Nama Desain HTML"
 
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FIXEDTEXT.TEXT
 msgid  "~Select a slide design"
 msgstr "Pilih desain ~salindia"
 
-#: ui/dlg/sdpreslt.src#DLG_PRESLT.CBX_MASTER_PAGE.CHECKBOX.TEXT
-msgid  "~Exchange background page"
-msgstr "Tukar halaman latar belakang"
-
-#: ui/dlg/sdpreslt.src#DLG_PRESLT.CBX_CHECK_MASTERS.CHECKBOX.TEXT
-msgid  "~Delete unused backgrounds"
-msgstr "Hapus latar belakang yang tidak digunakan"
-
-#: ui/dlg/sdpreslt.src#DLG_PRESLT.BTN_LOAD.PUSHBUTTON.TEXT
-msgid  "~Load..."
-msgstr "Memuat..."
-
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.HELPBUTTON.TEXT
 msgid  "Slide Design"
 msgstr "Desain Salindia"
 
-#: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.MODALDIALOG.TEXT
-msgid  "Insert Slides/Objects"
-msgstr "Sisip Salindia/Objek"
-
-#: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.CBX_LINK.CHECKBOX.TEXT
-msgid  "~Link"
-msgstr "~Taut"
-
 #: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.CBX_CHECK_MASTERS.CHECKBOX.TEXT
 msgid  "Delete unused backg~rounds"
 msgstr "Hapus latar belakang yang tidak dipakai"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.MODALDIALOG.TEXT
-msgid  "New Snap Object"
-msgstr "Objek Kancing Baru"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.BTN_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "~Hapus"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "Posisi"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.FL_DIRECTION.FIXEDLINE.TEXT
-msgid  "Type"
-msgstr "Jenis"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_POINT.IMAGERADIOBUTTON.TEXT
-msgid  "~Point"
-msgstr "~Poin"
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_VERTICAL.IMAGERADIOBUTTON.TEXT
 msgid  "~Vertical"
@@ -335,41 +123,9 @@ msgstr "~Vertikal"
 msgid  "Hori~zontal"
 msgstr "Hori~sontal"
 
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.GRP_TYPE.FIXEDLINE.TEXT
-msgid  "Field type"
-msgstr "Jenis ruas"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.RBT_FIX.RADIOBUTTON.TEXT
-msgid  "~Fixed"
-msgstr "~Tetap"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.RBT_VAR.RADIOBUTTON.TEXT
-msgid  "~Variable"
-msgstr "~Variabel"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.FT_LANGUAGE.FIXEDTEXT.TEXT
-msgid  "~Language"
-msgstr "~Bahasa"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.FT_FORMAT.FIXEDTEXT.TEXT
-msgid  "F~ormat"
-msgstr "F~ormat"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.HELPBUTTON.TEXT
-msgid  "Edit Field"
-msgstr "Sunting ruas"
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.MODALDIALOG.TEXT
-msgid  "Convert to Polygon"
-msgstr "Konversi ke Poligon"
-
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.BTN_PREVIEW.PUSHBUTTON.TEXT
 msgid  "Preview"
 msgstr "Pratinjau"
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.GRP_SETTINGS.FIXEDLINE.TEXT
-msgid  "Settings"
-msgstr "Pengaturan"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_LAYERS.FIXEDTEXT.TEXT
 msgid  "Number of colors:"
@@ -387,17 +143,9 @@ msgstr "Isi lubang:"
 msgid  "Tile size:"
 msgstr "Ukuran ubin:"
 
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_ORIGINAL.FIXEDTEXT.TEXT
-msgid  "Source picture:"
-msgstr "Gambar sumber:"
-
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CTL_BMP.CONTROL.TEXT
 msgid  "Source picture"
 msgstr "Gambar sumber"
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_VECTORIZED.FIXEDTEXT.TEXT
-msgid  "Vectorized image:"
-msgstr "Gambar bervektor:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CTL_WMF.CONTROL.TEXT
 msgid  "Vectorized image"
@@ -407,145 +155,21 @@ msgstr "Gambar bervektor"
 msgid  "Progress"
 msgstr "Proses"
 
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.TABDIALOG.TEXT
-msgid  "Graphics Styles"
-msgstr "Gaya Grafik"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
-msgid  "Line"
-msgstr "Garis"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-msgid  "Area"
-msgstr "Area"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-msgid  "Shadowing"
-msgstr "Pembayangan"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
-msgid  "Transparency"
-msgstr "Transparansi"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
-msgid  "Font"
-msgstr "Fonta"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-msgid  "Font Effect"
-msgstr "Efek Fonta"
-
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 msgid  "Indents & Spacing"
 msgstr "Inden dan & Spasi"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
-msgid  "Text"
-msgstr "Teks"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
-msgid  "Text Animation"
-msgstr "Animasi Teks"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_MEASURE.PAGEITEM.TEXT
-msgid  "Dimensioning"
-msgstr "Pendimensian"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CONNECTION.PAGEITEM.TEXT
 msgid  "Connector"
 msgstr "Konektor"
 
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-msgid  "Alignment"
-msgstr "Perataan"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-msgid  "Asian Typography"
-msgstr "Tipografi Asia"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
-msgid  "Tabs"
-msgstr "Tabulasi"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.PUSHBUTTON.TEXT
-msgid  "Back"
-msgstr "Kembali"
-
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_NEW.PUSHBUTTON.TEXT
 msgid  "~New..."
 msgstr "~Baru..."
 
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit..."
-msgstr "~Sunting..."
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_REMOVE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "~Hapus"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_COPY.PUSHBUTTON.TEXT
-msgid  "Cop~y"
-msgstr "Sal~in"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_STARTSHOW.PUSHBUTTON.TEXT
-msgid  "~Start"
-msgstr "~Awali"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_OK.OKBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Tutup"
-
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.LB_CUSTOMSHOWS.LISTBOX.QUICKHELPTEXT
 msgid  "Custom Screen Show"
 msgstr "Pertunjukan Layar Ubahan"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.CBX_USE_CUSTOMSHOW.CHECKBOX.TEXT
-msgid  "~Use Custom Slide Show"
-msgstr "G~unakan Pertunjukan Salindia Ubahan"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.CHECKBOX.TEXT
-msgid  "Custom Slide Shows"
-msgstr "Pertunjukan Salindia Ubahan"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_NAME.FIXEDTEXT.TEXT
-msgid  "Name"
-msgstr "Nama"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_PAGES.FIXEDTEXT.TEXT
-msgid  "Existing slides"
-msgstr "Salindia yang ada"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_CUSTOM_PAGES.FIXEDTEXT.TEXT
-msgid  "Selected slides"
-msgstr "Salindia yang dipilih"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FIXEDTEXT.TEXT
-msgid  "Define Custom Slide Show"
-msgstr "Tentukan Pertunjukan Salindia Ubahan"
-
-#: ui/dlg/dlgass.src#DLG_ASS.MODALDIALOG.TEXT
-msgid  "Presentation Wizard"
-msgstr "Wahana Pandu Presentasi"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_PREVIEW.CHECKBOX.TEXT
-msgid  "Previe~w"
-msgstr "~Pratinjau"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_STARTWITH.CHECKBOX.TEXT
-msgid  "~Do not show this wizard again"
-msgstr "~Jangan tampilkan wahana ini lagi"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE1_ARTGROUP.FIXEDLINE.TEXT
-msgid  "Type"
-msgstr "Jenis"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_EMPTY.RADIOBUTTON.TEXT
-msgid  "~Empty presentation"
-msgstr "Pr~esentasi kosong"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_TEMPLATE.RADIOBUTTON.TEXT
-msgid  "~From template"
-msgstr "Dari pale~t"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_OPEN.RADIOBUTTON.TEXT
 msgid  "O~pen existing presentation"
@@ -555,97 +179,21 @@ msgstr "Dari ~presentasi yang sudah ada"
 msgid  "~Select a slide design"
 msgstr "~Pilih desain salindia"
 
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE2_OUTPUTTYPES.FIXEDLINE.TEXT
-msgid  "Select an output medium"
-msgstr "Pilih media keluaran"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM5.RADIOBUTTON.TEXT
-msgid  "~Original"
-msgstr "As~li"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM1.RADIOBUTTON.TEXT
-msgid  "Sc~reen"
-msgstr "Laya~r"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM2.RADIOBUTTON.TEXT
-msgid  "Sli~de"
-msgstr "Salin~dia"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM3.RADIOBUTTON.TEXT
-msgid  "O~verhead sheet"
-msgstr "~Transparan"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM4.RADIOBUTTON.TEXT
-msgid  "P~aper"
-msgstr "Kert~as"
-
 #: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE3_EFFECT.FIXEDLINE.TEXT
 msgid  "Select a slide transition"
 msgstr "Pilih transisi salindia"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_EFFECT.FIXEDTEXT.TEXT
-msgid  "~Effect"
-msgstr "~Efek"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_SPEED.FIXEDTEXT.TEXT
-msgid  "~Speed"
-msgstr "~Kecepatan"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE3_PRESTYPE.FIXEDLINE.TEXT
-msgid  "Select the presentation type"
-msgstr "Pilih jenis presentasi"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE3_LIVE.RADIOBUTTON.TEXT
 msgid  "~Default"
 msgstr "Stan~dar"
 
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE3_KIOSK.RADIOBUTTON.TEXT
-msgid  "~Automatic"
-msgstr "Otom~atis"
-
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_TIME.FIXEDTEXT.TEXT
 msgid  "D~uration of page"
 msgstr "D~urasi halaman"
 
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_BREAK.FIXEDTEXT.TEXT
-msgid  "Du~ration of pause"
-msgstr "Du~rasi jeda"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_PAGE3_LOGO.CHECKBOX.TEXT
-msgid  "Sh~ow logo"
-msgstr "Tampilkan l~ogo"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE4_PERSONAL.FIXEDLINE.TEXT
-msgid  "Describe your basic ideas"
-msgstr "Jelaskan ide dasar Anda"
-
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKNAME.FIXEDTEXT.TEXT
 msgid  "What is your name or the name of your company?"
 msgstr "Siapa nama Anda atau apa nama perusahaan Anda?"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKTOPIC.FIXEDTEXT.TEXT
-msgid  "What is the subject of your presentation?"
-msgstr "Apa subjek dari presentasi Anda?"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKINFORMATION.FIXEDTEXT.TEXT
-msgid  "Further ideas to be presented?"
-msgstr "Ada Ide lagi yang hendak dipresentasikan?"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE5_PAGELIST.FIXEDTEXT.TEXT
-msgid  "Ch~oose your pages"
-msgstr "Pilih halaman An~da"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_PAGE5_SUMMARY.CHECKBOX.TEXT
-msgid  "C~reate summary"
-msgstr "Buat ikhtisa~r"
-
-#: ui/dlg/dlgass.src#DLG_ASS.BUT_LAST.PUSHBUTTON.TEXT
-msgid  "<< ~Back"
-msgstr "<< Kem~bali"
-
-#: ui/dlg/dlgass.src#DLG_ASS.BUT_NEXT.PUSHBUTTON.TEXT
-msgid  "~Next >>"
-msgstr "La~njut >>"
 
 #: ui/dlg/dlgass.src#DLG_ASS.BUT_FINISH.OKBUTTON.TEXT
 msgid  "~Create"
@@ -655,41 +203,9 @@ msgstr "B~uat"
 msgid  "~Open"
 msgstr "~Buka"
 
-#: ui/dlg/PaneDockingWindow.src#FLT_LEFT_PANE_IMPRESS_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
-msgid  "Slide Pane"
-msgstr "Panel Salindia"
-
-#: ui/dlg/PaneDockingWindow.src#FLT_LEFT_PANE_DRAW_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
-msgid  "Page Pane"
-msgstr "Panel Halaman"
-
-#: ui/dlg/PaneDockingWindow.src#FLT_TOOL_PANEL_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
-msgid  "Task Pane"
-msgstr "Panel Tugas"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.TABDIALOG.TEXT
-msgid  "Header and Footer"
-msgstr "Tajuk dan Kaki"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.1.RID_SD_TABPAGE_HEADERFOOTER_SLIDE.PAGEITEM.TEXT
-msgid  "Slide"
-msgstr "Salindia"
-
 #: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.1.RID_SD_TABPAGE_HEADERFOOTER_NOTESHANDOUT.PAGEITEM.TEXT
 msgid  "Notes and Handouts"
 msgstr "Catatan dan Kliping"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FL_INCLUDE_ON_PAGE.FIXEDLINE.TEXT
-msgid  "Include on slide"
-msgstr "Sertakan pada salindia"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_HEADER.CHECKBOX.TEXT
-msgid  "Header"
-msgstr "Tajuk"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Header text"
-msgstr "Teks tajuk"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_DATETIME.CHECKBOX.TEXT
 msgid  "~Date and time"
@@ -707,42 +223,6 @@ msgstr "~Variabel"
 msgid  "~Language:"
 msgstr "~Bahasa:"
 
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_FOOTER.CHECKBOX.TEXT
-msgid  "Footer"
-msgstr "Kaki"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_FOOTER.FIXEDTEXT.TEXT
-msgid  "Footer text"
-msgstr "Teks kaki"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_SLIDENUMBER.CHECKBOX.TEXT
-msgid  "Slide number"
-msgstr "Nomor salindia"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_NOTONTITLE.CHECKBOX.TEXT
-msgid  "Do not show on first slide"
-msgstr "Jangan tampilkan di salindia pertama"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.BT_APPLYTOALL.PUSHBUTTON.TEXT
-msgid  "Apply to All"
-msgstr "Terapkan untuk Semua"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.BT_APPLY.PUSHBUTTON.TEXT
-msgid  "Apply"
-msgstr "Terapkan"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.STR_PAGE_NUMBER.STRING.TEXT
-msgid  "Page number"
-msgstr "Nomor halaman"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.STR_INCLUDE_ON_PAGE.STRING.TEXT
-msgid  "Include on page"
-msgstr "Sertakan pada halaman"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.MODALDIALOG.TEXT
-msgid  "Slide Show"
-msgstr "Pertunjukan Salindia"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_RANGE.FIXEDLINE.TEXT
 msgid  "Range"
 msgstr "Jangkauan"
@@ -751,41 +231,9 @@ msgstr "Jangkauan"
 msgid  "All ~slides"
 msgstr "Semua ~salindia"
 
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_AT_DIA.RADIOBUTTON.TEXT
-msgid  "~From:"
-msgstr "~Dari:"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_CUSTOMSHOW.RADIOBUTTON.TEXT
-msgid  "~Custom Slide Show"
-msgstr "Pertunjukan ~Salindia Ubahan"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_KIND.FIXEDLINE.TEXT
-msgid  "Type"
-msgstr "Jenis"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_STANDARD.RADIOBUTTON.TEXT
 msgid  "~Default"
 msgstr "~Baku"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_WINDOW.RADIOBUTTON.TEXT
-msgid  "~Window"
-msgstr "Jendela"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_AUTO.RADIOBUTTON.TEXT
-msgid  "A~uto"
-msgstr "Otomatis"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.TMF_PAUSE.TIMEFIELD.QUICKHELPTEXT
-msgid  "Duration of pause"
-msgstr "Waktu jeda"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_AUTOLOGO.CHECKBOX.TEXT
-msgid  "Show ~logo"
-msgstr "Tampilkan logo"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_OPTIONS.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Opsi"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_MANUEL.CHECKBOX.TEXT
 msgid  "Change slides ~manually"
@@ -795,45 +243,13 @@ msgstr "Ubah salindia secara ~manual"
 msgid  "Mouse pointer ~visible"
 msgstr "Pointer mouse tampak"
 
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_PEN.CHECKBOX.TEXT
-msgid  "Mouse pointer as ~pen"
-msgstr "Pointer mouse seperti pena"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_NAVIGATOR.CHECKBOX.TEXT
 msgid  "~Navigator visible"
 msgstr "Navigator tampak"
 
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_ANIMATION_ALLOWED.CHECKBOX.TEXT
-msgid  "~Animations allowed"
-msgstr "Animasi dibolehkan"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_CHANGE_PAGE.CHECKBOX.TEXT
 msgid  "Change slides by clic~king on background"
 msgstr "Ubah salindia saat mengklik latar belakang"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_ALWAYS_ON_TOP.CHECKBOX.TEXT
-msgid  "Presentation always ~on top"
-msgstr "Presentasi selalu di atas"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_MONITOR.FIXEDLINE.TEXT
-msgid  "Multiple displays"
-msgstr "Banyak tampilan"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.FT_MONITOR.FIXEDTEXT.TEXT
-msgid  "P~resentation display"
-msgstr "Tampilan p~resentasi"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_PRIMARY_MONITOR.STRING.TEXT
-msgid  "Display %1 (primary)"
-msgstr "Tampilan %1 (utama)"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_MONITOR.STRING.TEXT
-msgid  "Display %1"
-msgstr "Tampilan %1"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_ALL_MONITORS.STRING.TEXT
-msgid  "All displays"
-msgstr "Semua tampilan"
 
 #: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.TABDIALOG.TEXT
 msgid  "Bullets and Numbering"
@@ -843,97 +259,17 @@ msgstr "Bulatan dan Penomoran"
 msgid  "Bullets"
 msgstr "Bulatan"
 
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_SINGLE_NUM.PAGEITEM.TEXT
-msgid  "Numbering type"
-msgstr "Jenis penomoran"
-
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_BMP.PAGEITEM.TEXT
-msgid  "Graphics"
-msgstr "Grafik"
-
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_NUM_POSITION.PAGEITEM.TEXT
-msgid  "Position"
-msgstr "Posisi"
-
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_NUM_OPTIONS.PAGEITEM.TEXT
-msgid  "Customize"
-msgstr "Kustomisasi"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.TABDIALOG.TEXT
-msgid  "Presentation Layout"
-msgstr "Tata Letak Presentasi"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
-msgid  "Line"
-msgstr "Garis"
-
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
 msgid  "Area"
 msgstr "Area"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-msgid  "Shadow"
-msgstr "Bayangan"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
-msgid  "Transparency"
-msgstr "Transparansi"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
-msgid  "Font"
-msgstr "Fonta"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-msgid  "Font Effects"
-msgstr "Efek Fonta"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 msgid  "Indents & Spacing"
 msgstr "Indentasi & Jarak"
 
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
-msgid  "Text"
-msgstr "Teks"
-
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_BULLET.PAGEITEM.TEXT
 msgid  "Bullets"
 msgstr "Bulatan"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_SINGLE_NUM.PAGEITEM.TEXT
-msgid  "Numbering type"
-msgstr "Jenis penomoran"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_BMP.PAGEITEM.TEXT
-msgid  "Graphics"
-msgstr "Grafik"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_NUM_OPTIONS.PAGEITEM.TEXT
-msgid  "Customize"
-msgstr "Kustomisasi"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-msgid  "Alignment"
-msgstr "Perataan"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-msgid  "Asian Typography"
-msgstr "Tipografi Asia"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
-msgid  "Tabs"
-msgstr "Tabulasi"
-
-#: ui/dlg/copydlg.src#DLG_COPY.MODALDIALOG.TEXT
-msgid  "Duplicate"
-msgstr "Duplikat"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_COPIES.FIXEDTEXT.TEXT
-msgid  "Number of ~copies"
-msgstr "Jumlah ~salinan"
-
-#: ui/dlg/copydlg.src#DLG_COPY.BTN_SET_VIEWDATA.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Values from Selection"
-msgstr "Nilai dari Seleksi"
 
 #: ui/dlg/copydlg.src#DLG_COPY.BTN_SET_DEFAULT.PUSHBUTTON.TEXT
 msgid  "~Default"
@@ -943,113 +279,17 @@ msgstr "~Baku"
 msgid  " degrees"
 msgstr " derajat"
 
-#: ui/dlg/copydlg.src#DLG_COPY.FT_ANGLE.FIXEDTEXT.TEXT
-msgid  "~Angle"
-msgstr "~Sudut"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_MOVE_X.FIXEDTEXT.TEXT
-msgid  "~X axis"
-msgstr "Sumbu ~X"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_MOVE_Y.FIXEDTEXT.TEXT
-msgid  "~Y axis"
-msgstr "Sumbu ~Y"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_WIDTH.FIXEDTEXT.TEXT
-msgid  "~Width"
-msgstr "~Lebar"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_HEIGHT.FIXEDTEXT.TEXT
-msgid  "~Height"
-msgstr "~Tinggi"
-
-#: ui/dlg/copydlg.src#DLG_COPY.GRP_MOVEMENT.FIXEDLINE.TEXT
-msgid  "Placement"
-msgstr "Peletakan"
-
-#: ui/dlg/copydlg.src#DLG_COPY.GRP_ENLARGEMENT.FIXEDLINE.TEXT
-msgid  "Enlargement"
-msgstr "Perbesaran"
-
-#: ui/dlg/copydlg.src#DLG_COPY.GRP_COLOR.FIXEDLINE.TEXT
-msgid  "Colors"
-msgstr "Warna"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_START_COLOR.FIXEDTEXT.TEXT
-msgid  "~Start"
-msgstr "~Awali"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_END_COLOR.FIXEDTEXT.TEXT
-msgid  "~End"
-msgstr "~Akhiri"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.TABDIALOG.TEXT
-msgid  "Paragraph"
-msgstr "Paragraf"
-
 #: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 msgid  "Indents & Spacing"
 msgstr "Inden & Spasi"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-msgid  "Alignment"
-msgstr "Perataan"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-msgid  "Asian Typography"
-msgstr "Tipografi Asia"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
-msgid  "Tabs"
-msgstr "Tabulasi"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr "Kembali"
 
 #: ui/dlg/dlg_char.src#TAB_CHAR.TABDIALOG.TEXT
 msgid  "Character"
 msgstr "Karakter"
 
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
-msgid  "Font"
-msgstr "Fonta"
-
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-msgid  "Font Effects"
-msgstr "Efek Fonta"
-
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-msgid  "Position"
-msgstr "Posisi"
-
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr "Kembali"
-
-#: ui/dlg/dlgpage.src#TAB_PAGE.TABDIALOG.TEXT
-msgid  "Page Setup"
-msgstr "Pengaturan Halaman"
-
-#: ui/dlg/dlgpage.src#TAB_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
-msgid  "Page"
-msgstr "Halaman"
-
 #: ui/dlg/dlgpage.src#TAB_PAGE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
 msgid  "Background"
 msgstr "Latar Belakang"
-
-#: ui/dlg/dlgpage.src#TAB_PAGE.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr "Kembali"
-
-#: ui/dlg/tpaction.src#TP_ANIMATION.FT_ACTION.FIXEDTEXT.TEXT
-msgid  "Action at mouse click"
-msgstr "Aksi saat mouse diklik"
-
-#: ui/dlg/tpaction.src#TP_ANIMATION.BTN_SEARCH.PUSHBUTTON.TEXT
-msgid  "~Browse..."
-msgstr "Telusur..."
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.BTN_SEEK.PUSHBUTTON.TEXT
 msgid  "~Find"
@@ -1059,89 +299,13 @@ msgstr "Cari"
 msgid  "Path Name"
 msgstr "Nama Lokasi"
 
-#: ui/dlg/tpaction.src#TP_ANIMATION.STRING.TEXT
-msgid  "Interaction"
-msgstr "Interaksi"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.FT_OBJ_INFO.FIXEDTEXT.TEXT
-msgid  "Processing metafile:"
-msgstr "Memproses berkas meta:"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.FT_ACT_INFO.FIXEDTEXT.TEXT
-msgid  "Broken down metaobjects:"
-msgstr "Objek meta rusak:"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.FT_INS_INFO.FIXEDTEXT.TEXT
-msgid  "Inserted drawing objects:"
-msgstr "Objek gambar disisipkan:"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.CANCELBUTTON.TEXT
-msgid  "Break"
-msgstr "Putus"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.FL_PLACEHOLDERS.FIXEDLINE.TEXT
-msgid  "Placeholders"
-msgstr "Tempat letak"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_HEADER.CHECKBOX.TEXT
-msgid  "Header"
-msgstr "Tajuk"
-
 #: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_DATE.CHECKBOX.TEXT
 msgid  "Date/time"
 msgstr "Tanggal/waktu"
 
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_FOOTER.CHECKBOX.TEXT
-msgid  "Footer"
-msgstr "Kaki"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_PAGE_NUMBER.CHECKBOX.TEXT
-msgid  "Page number"
-msgstr "Nomor halaman"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.STR_SLIDE_NUMBER.STRING.TEXT
-msgid  "Slide number"
-msgstr "Nomor salindia"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.STR_MASTER_LAYOUT_TITLE.STRING.TEXT
-msgid  "Master Elements"
-msgstr "Elemen Induk"
-
-#: ui/dlg/tpoption.src#SCALE_TEXT.#DEFINE.TEXT
-msgid  "Scale"
-msgstr "Skala"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TABPAGE.TEXT
-msgid  "Contents"
-msgstr "Isi"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.GRP_DISPLAY.FIXEDLINE.TEXT
-msgid  "Display"
-msgstr "Tampilan"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_RULER.CHECKBOX.TEXT
-msgid  "~Rulers visible"
-msgstr "Penggaris ditampakkan"
-
 #: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_HELPLINES.CHECKBOX.TEXT
 msgid  "~Guides when moving"
 msgstr "Pandu semasa berpindah"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_HANDLES_BEZIER.CHECKBOX.TEXT
-msgid  "~All control points in Bézier editor"
-msgstr "Semua kontrol menunjuk pada penyunting Bézier"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_MOVE_OUTLINE.CHECKBOX.TEXT
-msgid  "~Contour of each individual object"
-msgstr "Kontur setiap objek individual"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.TABPAGE.TEXT
-msgid  "Other"
-msgstr "Lainnya"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_TEXT.FIXEDLINE.TEXT
-msgid  "Text objects"
-msgstr "Objek teks"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_QUICKEDIT.CHECKBOX.TEXT
 msgid  "Allow quick editing"
@@ -1151,17 +315,9 @@ msgstr "Perbolehkan sunting cepat"
 msgid  "Only text area selectable"
 msgstr "Hanya area teks yang bisa disorot"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_PROGRAMSTART.FIXEDLINE.TEXT
-msgid  "New document"
-msgstr "Dokumen baru"
-
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_TEMPLATE.CHECKBOX.TEXT
 msgid  "Start with ~wizard"
 msgstr "Mulai dengan ~wahana pandu"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_SETTINGS.FIXEDLINE.TEXT
-msgid  "Settings"
-msgstr "Pengaturan"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_MASTERPAGE_CACHE.CHECKBOX.TEXT
 msgid  "Use background cache"
@@ -1179,25 +335,17 @@ msgstr "Objek selalu bisa dipindahkan"
 msgid  "Do not distort objects in curve"
 msgstr "Jangan kacaukan objek berbentuk kurva"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_METRIC.FIXEDTEXT.TEXT
-msgid  "Unit of ~measurement"
-msgstr "Satuan ukur"
-
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_TABSTOP.FIXEDTEXT.TEXT
 msgid  "Ta~b stops"
 msgstr "Perhentian tab"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_START_WITH_ACTUAL_PAGE.FIXEDLINE.TEXT
-msgid  "Start presentation"
-msgstr "Mulai presentasi"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_ACTUAL_PAGE.CHECKBOX.TEXT
 msgid  "Always with current page"
 msgstr "Selalu bersama halaman ini"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_COMPATIBILITY.FIXEDLINE.TEXT
-msgid  "Compatibility"
-msgstr "Kompatibilitas"
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_PRESENTER_SCREEN.CHECKBOX.TEXT
+msgid  "With Presenter Screen"
+msgstr ""
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CB_USE_PRINTER_METRICS.CHECKBOX.TEXT
 msgid  "Us~e printer metrics for document formatting"
@@ -1207,157 +355,25 @@ msgstr "Gunakan satuan ukur printer untuk memformat dokumen"
 msgid  "Add ~spacing between paragraphs and tables (in current document)"
 msgstr "Tambahkan spasi antar paragraf dan tabel (pada dokumen ini)"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_ORIGINAL.FIXEDTEXT.TEXT
-msgid  "Original"
-msgstr "Asli"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_EQUIVALENT.FIXEDTEXT.TEXT
-msgid  "Equivalent to"
-msgstr "Setara dengan"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_SCALE.FIXEDTEXT.TEXT
-msgid  "~Drawing scale"
-msgstr "Skala gambar"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEWIDTH.FIXEDTEXT.TEXT
-msgid  "Page ~width"
-msgstr "Lebar halaman"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FIXEDTEXT.TEXT
-msgid  "Page ~height"
-msgstr "Tinggi halaman"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FIXEDLINE.TEXT
-msgid  "Settings"
-msgstr "Pengaturan"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.FT_STEPS.FIXEDTEXT.TEXT
-msgid  "Increments"
-msgstr "Kenaikan"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.CBX_ATTRIBUTES.CHECKBOX.TEXT
-msgid  "Cross-fade attributes"
-msgstr "Atribut pudar-silang"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.CBX_ORIENTATION.CHECKBOX.TEXT
-msgid  "Same orientation"
-msgstr "Orientasi sama"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.CHECKBOX.TEXT
-msgid  "Cross-fading"
-msgstr "Memudar-silang"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_PEN.TOOLBOXITEM.TEXT
-msgid  "Pointer"
-msgstr "Penunjuk"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_FIRST.TOOLBOXITEM.TEXT
-msgid  "First Slide"
-msgstr "Salindia Pertama"
-
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_PREVIOUS.TOOLBOXITEM.TEXT
 msgid  "Previous Slide"
 msgstr "Salindia Sebelumnya"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_NEXT.TOOLBOXITEM.TEXT
-msgid  "Next Slide"
-msgstr "Salindia Selanjutnya"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_LAST.TOOLBOXITEM.TEXT
-msgid  "Last Slide"
-msgstr "Salindia Terakhir"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_DRAGTYPE.TOOLBOXITEM.TEXT
-msgid  "Drag Mode"
-msgstr "Modus Seret"
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_SHAPE_FILTER.TOOLBOXITEM.TEXT
 msgid  "Show Shapes"
 msgstr "Tampilkan bentuk"
 
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.LB_DOCS.LISTBOX.QUICKHELPTEXT
-msgid  "Documents"
-msgstr "Dokumen"
-
 #: ui/dlg/navigatr.src#STR_OBJECTS_TREE.STRING.TEXT
 msgid  "Page Tree"
 msgstr "Pohon Halaman"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.MODALDIALOG.TEXT
-msgid  "Insert Layer"
-msgstr "Sisip Lapisan"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_NAME.FIXEDTEXT.TEXT
-msgid  "~Name"
-msgstr "~Nama"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_TITLE.FIXEDTEXT.TEXT
-msgid  "~Title"
-msgstr "~Judul"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "~Description"
-msgstr "~Deskripsi"
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_VISIBLE.CHECKBOX.TEXT
 msgid  "~Visible"
 msgstr "~Terlihat"
 
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_PRINTABLE.CHECKBOX.TEXT
-msgid  "~Printable"
-msgstr "~Dapat Dicetak"
-
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_LOCKED.CHECKBOX.TEXT
 msgid  "~Locked"
 msgstr "~Dikunci"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "Posisi"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RB_BEFORE.RADIOBUTTON.TEXT
-msgid  "~Before"
-msgstr "Se~belum"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RB_AFTER.RADIOBUTTON.TEXT
-msgid  "A~fter"
-msgstr "Sesuda~h"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RADIOBUTTON.TEXT
-msgid  "Insert Slides"
-msgstr "Sisip Salindia"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.DOCKINGWINDOW.TEXT
-msgid  "Animation"
-msgstr "Animasi"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "First Image"
-msgstr "Citra Pertama"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Backwards"
-msgstr "Mundur"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Stop"
-msgstr "Henti"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Play"
-msgstr "Putar"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Last Image"
-msgstr "Citra Terakhir"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NUMERICFIELD.QUICKHELPTEXT
-msgid  "Image Number"
-msgstr "Nomor Citra"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TIMEFIELD.QUICKHELPTEXT
-msgid  "Duration"
-msgstr "Durasi"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM1.STRINGLIST.ITEM
 msgid  "1"
@@ -1375,233 +391,21 @@ msgstr "3"
 msgid  "4"
 msgstr "4"
 
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM5.STRINGLIST.ITEM
-msgid  "5"
-msgstr "5"
-
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM6.STRINGLIST.ITEM
 msgid  "6"
 msgstr "6"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM7.STRINGLIST.ITEM
-msgid  "7"
-msgstr "7"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM8.STRINGLIST.ITEM
-msgid  "8"
-msgstr "8"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM9.STRINGLIST.ITEM
 msgid  "9"
 msgstr "9"
 
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM10.STRINGLIST.ITEM
-msgid  "10"
-msgstr "10"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM11.STRINGLIST.ITEM
-msgid  "12"
-msgstr "12"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM12.STRINGLIST.ITEM
-msgid  "15"
-msgstr "15"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM13.STRINGLIST.ITEM
-msgid  "20"
-msgstr "20"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM14.STRINGLIST.ITEM
-msgid  "25"
-msgstr "25"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM15.STRINGLIST.ITEM
-msgid  "50"
-msgstr "50"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM16.STRINGLIST.ITEM
-msgid  "100"
-msgstr "100"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM17.STRINGLIST.ITEM
-msgid  "500"
-msgstr "500"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM18.STRINGLIST.ITEM
-msgid  "1000"
-msgstr "1000"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM19.STRINGLIST.ITEM
-msgid  "Max."
-msgstr "Maks."
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.STRINGLIST.QUICKHELPTEXT
-msgid  "Loop Count"
-msgstr "Cacah Putaran"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Apply Object"
-msgstr "Terapkan Objek"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Apply Objects Individually"
-msgstr "Terapkan Objek Secara Individual"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Delete Current Image"
-msgstr "Hapus Citra Bersangkutan"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Delete All Images"
-msgstr "Hapus Semua Gambar"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FIXEDTEXT.TEXT
-msgid  "Number"
-msgstr "Nomor"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FIXEDLINE.TEXT
-msgid  "Image"
-msgstr "Citra"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RADIOBUTTON.TEXT
-msgid  "Group object"
-msgstr "Objek kelompok"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RADIOBUTTON.TEXT
-msgid  "Bitmap object"
-msgstr "Objek bitmap"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FIXEDTEXT.TEXT
-msgid  "Alignment"
-msgstr "Perataan"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Top Left"
-msgstr "Atas Kiri"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Left"
-msgstr "Kiri"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Bottom Left"
-msgstr "Bawah Kiri"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Top"
-msgstr "Atas"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Centered"
-msgstr "Tengah"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Bottom"
-msgstr "Bawah"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Top Right"
-msgstr "Atas Kanan"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Right"
-msgstr "Kanan"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Bottom Right"
-msgstr "Bawah Kanan"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PUSHBUTTON.TEXT
-msgid  "Create"
-msgstr "Buat"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FIXEDLINE.TEXT
-msgid  "Animation group"
-msgstr "Kelompok animasi"
-
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.STRING.TEXT
 msgid  "Preview"
 msgstr "Pratinjau"
 
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TABPAGE.TEXT
-msgid  "Options"
-msgstr "Opsi"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PRINT.FIXEDLINE.TEXT
-msgid  "Contents"
-msgstr "Isi"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_DRAW.CHECKBOX.TEXT
-msgid  "~Drawing"
-msgstr "~Gambar"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_NOTES.CHECKBOX.TEXT
-msgid  "~Notes"
-msgstr "Catata~n"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_HANDOUTS.CHECKBOX.TEXT
-msgid  "Hando~uts"
-msgstr "Klipin~g"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_OUTLINE.CHECKBOX.TEXT
-msgid  "Out~line"
-msgstr "Kerangka"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_OUTPUT.FIXEDLINE.TEXT
-msgid  "Quality"
-msgstr "Kualitas"
-
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RADIOBUTTON.TEXT
 msgid  "Default"
 msgstr "Baku"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RADIOBUTTON.TEXT
-msgid  "Gra~yscale"
-msgstr "Derajat kehitaman"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_BLACKWHITE.RADIOBUTTON.TEXT
-msgid  "Black & ~white"
-msgstr "Hitam & putih"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PRINT_EXT.FIXEDLINE.TEXT
-msgid  "Print"
-msgstr "Cetak"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_PAGENAME.CHECKBOX.TEXT
-msgid  "~Page name"
-msgstr "Nama halam~an"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_DATE.CHECKBOX.TEXT
-msgid  "D~ate"
-msgstr "T~anggal"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_TIME.CHECKBOX.TEXT
-msgid  "Ti~me"
-msgstr "Wak~tu"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_HIDDEN_PAGES.CHECKBOX.TEXT
-msgid  "H~idden pages"
-msgstr "Halaman tersembunyi"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PAGE.FIXEDLINE.TEXT
-msgid  "Page options"
-msgstr "Opsi halaman"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_PAGESIZE.RADIOBUTTON.TEXT
-msgid  "~Fit to page"
-msgstr "Cukupkan satu halaman"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_PAGETILE.RADIOBUTTON.TEXT
-msgid  "~Tile pages"
-msgstr "Posisikan halaman sisi ke sisi"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_BOOKLET.RADIOBUTTON.TEXT
-msgid  "B~rochure"
-msgstr "Brosur"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_FRONT.CHECKBOX.TEXT
-msgid  "Fr~ont"
-msgstr "Depan"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_BACK.CHECKBOX.TEXT
 msgid  "Ba~ck"
@@ -1615,33 +419,9 @@ msgstr "Baki kertas sesuai pengaturan printer"
 msgid  "~Reply"
 msgstr "Ba~las"
 
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_WEIGHT.MENUITEM.TEXT
-msgid  "~Bold"
-msgstr "Te~bal"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_POSTURE.MENUITEM.TEXT
-msgid  "~Italic"
-msgstr "M~iring"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_UNDERLINE.MENUITEM.TEXT
-msgid  "~Underline"
-msgstr "~Garis Bawah"
-
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_STRIKEOUT.MENUITEM.TEXT
 msgid  "~Strikethrough"
 msgstr "Coret Gari~s"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_COPY.MENUITEM.TEXT
-msgid  "~Copy"
-msgstr "~Salin"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_PASTE.MENUITEM.TEXT
-msgid  "~Paste"
-msgstr "Tem~pel"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MENUITEM.TEXT
-msgid  "~Delete Comment"
-msgstr "Hapus Komenta~r"
 
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MENUITEM.TEXT
 msgid  "Delete All Comments b~y %1"
@@ -1655,93 +435,17 @@ msgstr "Hapus Semu~a Komentar"
 msgid  "Delete All Comments ~by %1"
 msgstr "~Hapus Semua Komentar %1"
 
-#: ui/annotations/annotations.src#STR_ANNOTATION_TODAY.STRING.TEXT
-msgid  "Today,"
-msgstr "Hari ini,"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_YESTERDAY.STRING.TEXT
-msgid  "Yesterday,"
-msgstr "Kemarin,"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_NOAUTHOR.STRING.TEXT
-msgid  "(no author)"
-msgstr "(tidak ada penulis)"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.STRING.TEXT
-msgid  "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
-msgstr "%PRODUCTNAME Impress telah sampai di akhir presentasi. Anda ingin lanjut dari awal?"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.STRING.TEXT
-msgid  "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
-msgstr "%PRODUCTNAME Impress telah sampai di awal presentasi. Anda ingin lanjut dari akhir?"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
-msgstr "%PRODUCTNAME Draw telah sampai di akhir dokumen. Anda ingin lanjut dari awal?"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
-msgstr "%PRODUCTNAME Draw telah sampai di awal dokumen. Anda ingin lanjut dari akhir?"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.STRING.TEXT
-msgid  "Insert Comment"
-msgstr "Sisip Komentar"
-
 #: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_DELETE.STRING.TEXT
 msgid  "Delete Comment(s)"
 msgstr "Hapus Komentar"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_MOVE.STRING.TEXT
-msgid  "Move Comment"
-msgstr "Pindah Komentar"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_EDIT.STRING.TEXT
-msgid  "Edit Comment"
-msgstr "Sunting Komentar"
 
 #: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_REPLY.STRING.TEXT
 msgid  "Reply to Comment"
 msgstr "Balas Komentar"
 
-#: ui/annotations/annotations.src#STR_ANNOTATION_REPLY.STRING.TEXT
-msgid  "Reply to %1"
-msgstr "Balas ke %1"
-
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.STRING.TEXT
 msgid  "Drawing View"
 msgstr "Tampilan Menggambar"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.STRING.TEXT
-msgid  "This is where you create and edit drawings."
-msgstr "Ini tempat membuat dan menyunting gambar."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_D.STRING.TEXT
-msgid  "This is where you create and edit slides."
-msgstr "Ini tempat membuat dan menyunting salindia."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_N.STRING.TEXT
-msgid  "Outline View"
-msgstr "Tampilan Kerangka"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_D.STRING.TEXT
-msgid  "This is where you enter or edit text in list form."
-msgstr "Ini tempat memasukan atau menyunting teks dalam bentuk senarai."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_N.STRING.TEXT
-msgid  "Slides View"
-msgstr "Tampilan Salindia"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_D.STRING.TEXT
-msgid  "This is where you sort slides."
-msgstr "Ini tempat mengurutkan salindia."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_N.STRING.TEXT
-msgid  "Notes View"
-msgstr "Tampilan Catatan"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_D.STRING.TEXT
-msgid  "This is where you enter and view notes."
-msgstr "Ini tempat memasukan dan melihat catatan."
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_N.STRING.TEXT
 msgid  "Handout View"
@@ -1750,26 +454,6 @@ msgstr "Tampilan Kliping"
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_D.STRING.TEXT
 msgid  "This is where you decide on the layout for handouts."
 msgstr "Ini tempat mengatur tata letak kliping salindia."
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MENUITEM.TEXT
-msgid  "~Next"
-msgstr "Berikut~nya"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MENUITEM.TEXT
-msgid  "~Previous"
-msgstr "~Sebelumnya"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MENUITEM.TEXT
-msgid  "~Go to Slide"
-msgstr "~Melompat ke Salindia"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MENUITEM.TEXT
-msgid  "~First Slide"
-msgstr "Salindia ~Pertama"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MENUITEM.TEXT
-msgid  "~Last Slide"
-msgstr "Sa~lindia Terakhir"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PEN_MODE.MENUITEM.TEXT
 #, fuzzy
@@ -1816,59 +500,8 @@ msgstr "~Ubah Warna Pena..."
 msgid  "~Erase all ink on Slide"
 msgstr "Hapus S~emua Tinta pada Salindia"
 
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Screen"
-msgstr "Laya~r"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Black"
-msgstr "~Hitam"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~White"
-msgstr "P~utih"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~End Show"
-msgstr "Akhiri P~ertunjukan"
-
-#: ui/app/menuids4_tmpl.src#MNSUB_GRAPHIC_PORTAL.MN_SUB_GRAPHIC.MENUITEM.TEXT
-msgid  "~Graphics"
-msgstr "~Grafik"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.SID_FORMAT_TABLE_DLG.MENUITEM.TEXT
-msgid  "~Table..."
-msgstr "~Tabel..."
-
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
-msgid  "~Cell"
-msgstr "~Sel"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MENUITEM.TEXT
-msgid  "~Merge"
-msgstr "~Gabung"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MENUITEM.TEXT
-msgid  "~Split..."
-msgstr "~Bagi..."
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MENUITEM.TEXT
-msgid  "~Top"
-msgstr "A~tas"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MENUITEM.TEXT
-msgid  "C~enter"
-msgstr "T~engah"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MENUITEM.TEXT
-msgid  "~Bottom"
-msgstr "~Bawah"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Row"
 msgstr "Ba~ris"
 
@@ -1877,54 +510,23 @@ msgstr "Ba~ris"
 msgid  "Space ~Equally"
 msgstr "Spasi ~Rata"
 
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Select"
-msgstr "~Pilih"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Insert..."
-msgstr "S~isip..."
-
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Delete"
 msgstr "~Hapus"
 
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
-msgid  "Colu~mn"
-msgstr "Kolo~m"
-
-#: ui/app/strings.src#STR_DRAW_TOOLBOX.STRING.TEXT
-msgid  "Drawings Toolbar"
-msgstr "Baris Alat Menggambar"
-
-#: ui/app/strings.src#STR_GRAPHIC_TOOLBOX.STRING.TEXT
-msgid  "Draw toolbar/Graphics"
-msgstr "Baris Alat Menggambar/Grafik"
-
-#: ui/app/strings.src#STR_SLIDE_TOOLBOX.STRING.TEXT
-msgid  "Slide Bar"
-msgstr "Baris Salindia"
-
-#: ui/app/strings.src#STR_OUTLINE_TOOLBOX.STRING.TEXT
-msgid  "Outline Bar"
-msgstr "Baris Kerangka"
-
-#: ui/app/strings.src#STR_DRAW_OBJ_TOOLBOX.STRING.TEXT
-msgid  "Draw Object Bar"
-msgstr "Baris Objek Menggambar"
-
 #: ui/app/strings.src#STR_GRAPHIC_OBJ_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Draw object bar/Graphics"
 msgstr "Baris objek Menggambar/Grafik"
 
 #: ui/app/strings.src#STR_DRAW_OPTIONS_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Options Bar"
 msgstr "Baris Opsi"
 
 #: ui/app/strings.src#STR_GRAPHIC_OPTIONS_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Options bar/Graphics"
 msgstr "Baris Opsi/Grafik"
 
@@ -1933,93 +535,10 @@ msgstr "Baris Opsi/Grafik"
 msgid  "Presentation"
 msgstr "Presentasi"
 
-#: ui/app/strings.src#STR_SLIDE_OBJ_TOOLBOX.STRING.TEXT
-msgid  "Slide Object Bar"
-msgstr "Baris Objek Salindia"
-
-#: ui/app/strings.src#STR_BEZIER_TOOLBOX.STRING.TEXT
-msgid  "Bézier object bar"
-msgstr "Baris Objek Bezier"
-
-#: ui/app/strings.src#STR_GLUEPOINTS_TOOLBOX.STRING.TEXT
-msgid  "Glue Point Object Bar"
-msgstr "Baris Objek Titik Lengket"
-
-#: ui/app/strings.src#STR_DRAW_TEXT_TOOLBOX.STRING.TEXT
-msgid  "Text Object Bar"
-msgstr "Baris Objek Teks"
-
-#: ui/app/strings.src#STR_GRAPHIC_TEXT_TOOLBOX.STRING.TEXT
-msgid  "Text Object Bar/Draw"
-msgstr "Baris Objek Teks/Menggambar"
-
-#: ui/app/strings.src#STR_NULL.STRING.TEXT
-msgid  "None"
-msgstr "Nihil"
-
-#: ui/app/strings.src#STR_INSERTPAGE.STRING.TEXT
-msgid  "Insert Slide"
-msgstr "Sisip Salindia"
-
-#: ui/app/strings.src#STR_INSERTLAYER.STRING.TEXT
-msgid  "Insert Layer"
-msgstr "Sisip Lapisan"
-
-#: ui/app/strings.src#STR_MODIFYLAYER.STRING.TEXT
-msgid  "Modify Layer"
-msgstr "Ubah Lapisan"
-
-#: ui/app/strings.src#STR_UNDO_SLIDE_PARAMS.STRING.TEXT
-msgid  "Slide parameter"
-msgstr "Parameter salindia"
-
-#: ui/app/strings.src#STR_UNDO_SLIDE_MOVE.STRING.TEXT
-msgid  "Move slide"
-msgstr "Pindahkan salindia"
-
-#: ui/app/strings.src#STR_UNDO_CUT.STRING.TEXT
-msgid  "Cut"
-msgstr "Potong"
-
-#: ui/app/strings.src#STR_UNDO_REPLACE.STRING.TEXT
-msgid  "Replace"
-msgstr "Ganti"
-
-#: ui/app/strings.src#STR_UNDO_DRAGDROP.STRING.TEXT
-msgid  "Drag and Drop"
-msgstr "Seret dan Lepas"
-
 #: ui/app/strings.src#STR_INSERTGRAPHIC.STRING.TEXT
+#, fuzzy
 msgid  "Insert picture"
 msgstr "Sisip gambar"
-
-#: ui/app/strings.src#STR_SLOW.STRING.TEXT
-msgid  "Slow"
-msgstr "Lambat"
-
-#: ui/app/strings.src#STR_MEDIUM.STRING.TEXT
-msgid  "Medium"
-msgstr "Sedang"
-
-#: ui/app/strings.src#STR_FAST.STRING.TEXT
-msgid  "Fast"
-msgstr "Cepat"
-
-#: ui/app/strings.src#STR_UNDO_BEZCLOSE.STRING.TEXT
-msgid  "Close Polygon"
-msgstr "Tutup Poligon"
-
-#: ui/app/strings.src#STR_SLIDE_MODE.STRING.TEXT
-msgid  "Slide Sorter"
-msgstr "Penyusun Salindia"
-
-#: ui/app/strings.src#STR_DRAW_MODE.STRING.TEXT
-msgid  "Normal"
-msgstr "Normal"
-
-#: ui/app/strings.src#STR_OUTLINE_MODE.STRING.TEXT
-msgid  "Outline"
-msgstr "Kerangka"
 
 #: ui/app/strings.src#STR_NOTES_MODE.STRING.TEXT
 #, fuzzy
@@ -2027,136 +546,54 @@ msgid  "Notes"
 msgstr "Catatan"
 
 #: ui/app/strings.src#STR_HANDOUT_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Handout"
 msgstr "Kliping"
 
-#: ui/app/strings.src#STR_AUTOLAYOUT_NONE.STRING.TEXT
-msgid  "Blank Slide"
-msgstr "Salindia Kosong"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_ONLY_TITLE.STRING.TEXT
-msgid  "Title Only"
-msgstr "Hanya Judul"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_ONLY_TEXT.STRING.TEXT
-msgid  "Centered Text"
-msgstr "Teks di Tengah"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_TITLE.STRING.TEXT
-msgid  "Title Slide"
-msgstr "Salindia Judul"
-
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, Content"
 msgstr "Judul, Isi"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title and 2 Content"
 msgstr "Judul dan 2 Isi"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_2CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, Content and 2 Content"
 msgstr "Judul, Isi, dan 2 Isi"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, 2 Content and Content"
 msgstr "Judul, 2 Isi, dan Isi"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_OVER_2CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, Content over 2 Content"
 msgstr "Judul, Isi di atas 2 Isi"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT_OVER_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, 2 Content over Content"
 msgstr "Judul, 2 Isi di atas Isi"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_OVER_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, Content over Content"
 msgstr "Judul, Isi di atas Isi"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_4CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, 4 Content"
 msgstr "Judul, 4 Isi"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_6CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, 6 Content"
 msgstr "Judul, 6 Isi"
-
-#: ui/app/strings.src#STR_AL_TITLE_VERT_OUTLINE.STRING.TEXT
-msgid  "Title, Vertical Text"
-msgstr "Judul, Teks Vertikal"
-
-#: ui/app/strings.src#STR_AL_TITLE_VERT_OUTLINE_CLIPART.STRING.TEXT
-msgid  "Title, Vertical Text, Clipart"
-msgstr "Judul, Teks Vertikal, Gambar"
-
-#: ui/app/strings.src#STR_AL_VERT_TITLE_TEXT_CHART.STRING.TEXT
-msgid  "Vertical Title, Text, Chart"
-msgstr "Judul Vertikal, Teks, Bagan"
-
-#: ui/app/strings.src#STR_AL_VERT_TITLE_VERT_OUTLINE.STRING.TEXT
-msgid  "Vertical Title, Vertical Text"
-msgstr "Judul Vertikal, Teks Vertikal"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT1.STRING.TEXT
-msgid  "One Slide"
-msgstr "Satu Salindia"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT2.STRING.TEXT
-msgid  "Two Slides"
-msgstr "Dua Salindia"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT3.STRING.TEXT
-msgid  "Three Slides"
-msgstr "Tiga Salindia"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT4.STRING.TEXT
-msgid  "Four Slides"
-msgstr "Empat Salindia"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT6.STRING.TEXT
-msgid  "Six Slides"
-msgstr "Enam Salindia"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT9.STRING.TEXT
-msgid  "Nine Slides"
-msgstr "Sembilan Salindia"
-
-#: ui/app/strings.src#STR_TRANSFORM.STRING.TEXT
-msgid  "transform"
-msgstr "transformasi"
-
-#: ui/app/strings.src#STR_LINEEND.STRING.TEXT
-msgid  "Line Ends"
-msgstr "Akhir Baris"
-
-#: ui/app/strings.src#STR_DESC_LINEEND.STRING.TEXT
-msgid  "Please enter a name for the new arrowhead:"
-msgstr "Silakan masukkan nama untuk pointer panah yang baru:"
-
-#: ui/app/strings.src#STR_WARN_NAME_DUPLICATE.STRING.TEXT
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "Nama seperti itu sudah ada.\nSilakan masukkan nama lain."
-
-#: ui/app/strings.src#STR_UNDO_ANIMATION.STRING.TEXT
-msgid  "Animation parameters"
-msgstr "Parameter Animasi"
-
-#: ui/app/strings.src#STR_EXPORT_HTML_NAME.STRING.TEXT
-msgid  "Web Page"
-msgstr "Halaman Web"
-
-#: ui/app/strings.src#STR_EXPORT_DIALOG_TITLE.STRING.TEXT
-msgid  "Export"
-msgstr "Ekspor"
-
-#: ui/app/strings.src#STR_UNDO_COPYOBJECTS.STRING.TEXT
-msgid  "Duplicate"
-msgstr "Duplikat"
-
-#: ui/app/strings.src#STR_TITLE_NAMEGROUP.STRING.TEXT
-msgid  "Name Object"
-msgstr "Nama Objek"
 
 #: ui/app/strings.src#STR_DESC_NAMEGROUP.STRING.TEXT
 #, fuzzy
@@ -2164,903 +601,239 @@ msgid  "Name"
 msgstr "Nama"
 
 #: ui/app/strings.src#STR_WARN_PAGE_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The slide name already exists or is invalid. Please enter another name."
 msgstr "Nama salindia sudah ada atau tak sah. Silakan masukkan nama lain."
 
-#: ui/app/strings.src#STR_SNAPDLG_SETLINE.STRING.TEXT
-msgid  "Edit Snap Line"
-msgstr "Sunting Garis Kancing"
-
-#: ui/app/strings.src#STR_SNAPDLG_SETPOINT.STRING.TEXT
-msgid  "Edit Snap Point"
-msgstr "Sunting Titik Kancing"
-
-#: ui/app/strings.src#STR_POPUP_EDIT_SNAPLINE.STRING.TEXT
-msgid  "Edit Snap Line..."
-msgstr "Sunting Garis Kancing..."
-
 #: ui/app/strings.src#STR_POPUP_EDIT_SNAPPOINT.STRING.TEXT
+#, fuzzy
 msgid  "Edit Snap Point..."
 msgstr "Sunting Titik Kancing..."
-
-#: ui/app/strings.src#STR_POPUP_DELETE_SNAPLINE.STRING.TEXT
-msgid  "Delete Snap Line"
-msgstr "Hapus Garis Kancing"
-
-#: ui/app/strings.src#STR_POPUP_DELETE_SNAPPOINT.STRING.TEXT
-msgid  "Delete Snap Point"
-msgstr "Hapus Titik Kancing"
-
-#: ui/app/strings.src#STR_IMPRESS.STRING.TEXT
-msgid  "StarImpress 4.0"
-msgstr "StarImpress 4.0"
-
-#: ui/app/strings.src#STR_LAYER.STRING.TEXT
-msgid  "Layer"
-msgstr "Lapisan"
 
 #: ui/app/strings.src#STR_UNDO_DELETEPAGES.STRING.TEXT
 #, fuzzy
 msgid  "Delete slides"
 msgstr "Hapus salindia"
 
-#: ui/app/strings.src#STR_UNDO_INSERTPAGES.STRING.TEXT
-msgid  "Insert slides"
-msgstr "Sisip salindia"
-
 #: ui/app/strings.src#STR_ASK_DELETE_LAYER.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
 msgstr "Anda yakin akan menghapus tingkat \"$\"?\nCatatan: Semua objek pada tingkat ini akan dihapus!"
-
-#: ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.STRING.TEXT
-msgid  "Do you really want to delete all images?"
-msgstr "Apakah semua citra akan dihapus?"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_TITLE_AND_LAYOUT.STRING.TEXT
-msgid  "Modify title and outline"
-msgstr "Ubah judul dan kerangka"
 
 #: ui/app/strings.src#STR_WAV_FILE.STRING.TEXT
 #, fuzzy
 msgid  "Sound"
 msgstr "Bunyi"
 
-#: ui/app/strings.src#STR_MIDI_FILE.STRING.TEXT
-msgid  "MIDI"
-msgstr "MIDI"
-
-#: ui/app/strings.src#STR_AU_FILE.STRING.TEXT
-msgid  "Sun/NeXT Audio"
-msgstr "Sun/NeXT Audio"
-
-#: ui/app/strings.src#STR_VOC_FILE.STRING.TEXT
-msgid  "Creative Labs Audio"
-msgstr "Creative Labs Audio"
-
-#: ui/app/strings.src#STR_AIFF_FILE.STRING.TEXT
-msgid  "Apple/SGI Audio"
-msgstr "Apple/SGI Audio"
-
-#: ui/app/strings.src#STR_SVX_FILE.STRING.TEXT
-msgid  "Amiga SVX Audio"
-msgstr "Amiga SVX Audio"
-
-#: ui/app/strings.src#STR_SD_PAGE.STRING.TEXT
-msgid  "Slide"
-msgstr "Salindia"
-
-#: ui/app/strings.src#STR_ALL_FILES.STRING.TEXT
-msgid  "All files (*.*)"
-msgstr "Semua berkas (*.*)"
-
-#: ui/app/strings.src#STR_UNDO_INSERT_TEXTFRAME.STRING.TEXT
-msgid  "Insert text frame"
-msgstr "Sisip bingkai teks"
-
-#: ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.STRING.TEXT
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "Fungsi ini tak dapat dijalankan \nterhadap objek yang dipilih."
-
-#: ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.STRING.TEXT
-msgid  "Insert File"
-msgstr "Sisip berkas"
-
-#: ui/app/strings.src#STR_READ_DATA_ERROR.STRING.TEXT
-msgid  "The file could not be loaded!"
-msgstr "Berkas tak dapat dimuat!"
-
-#: ui/app/strings.src#STR_SCALE_OBJECTS.STRING.TEXT
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "Format halaman baru akan disesuaikan.\nApakah objeknya perlu disesuaikan?"
-
-#: ui/app/strings.src#STR_CREATE_PAGES.STRING.TEXT
-msgid  "Create slides"
-msgstr "Buat salindia"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_PAGEFORMAT.STRING.TEXT
-msgid  "Modify page format"
-msgstr "Ubah format halaman"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_PAGEBORDER.STRING.TEXT
-msgid  "Modify page margins"
-msgstr "Ubah marjin halaman"
-
-#: ui/app/strings.src#STR_EDIT_OBJ.STRING.TEXT
-msgid  "~Edit"
-msgstr "~Sunting"
-
 #: ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
 msgstr "Tindakan ini akan menghapus senarai aksi yang\ndapat dibatalkan (undo). Perubahan yang telah ada\npada dokumen tetap sah. Apakah Anda ingin terus\ndan menggunakan desain salindia yang baru?"
 
-#: ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CHECKBOX.TEXT
-msgid  "~Do not show this warning again"
-msgstr "Jangan tampilkan lagi peringatan ini"
-
-#: ui/app/strings.src#RID_UNDO_DELETE_WARNING.CANCELBUTTON.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: ui/app/strings.src#STR_WARN_PRINTFORMAT_FAILURE.STRING.TEXT
-msgid  "The document format could not be set on the specified printer."
-msgstr "Format dokumen tak dapat digunakan untuk printer yang dipilih."
-
-#: ui/app/strings.src#STR_REMOVE_LINK.STRING.TEXT
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "Grafik ini bertaut ke sebuah dokumen.\nApakah taut dibuang supaya grafik bisa disunting?"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.STRING.TEXT
-msgid  "Graphics file cannot be opened"
-msgstr "Berkas grafik tak dapat dibuka"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_IOERROR.STRING.TEXT
-msgid  "Graphics file cannot be read"
-msgstr "Berkas grafik tak dapat dibaca"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_FORMATERROR.STRING.TEXT
-msgid  "Unknown graphics format"
-msgstr "Format grafik tak dikenal"
-
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_VERSIONERROR.STRING.TEXT
+#, fuzzy
 msgid  "This graphics file version is not supported"
 msgstr "Versi berkas grafik tidak didukung."
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_FILTERERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics filter not found"
 msgstr "Penyaring grafik tidak ditemukan."
 
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_TOOBIG.STRING.TEXT
-msgid  "Not enough memory to import graphics"
-msgstr "Memori tak cukup untuk mengimpor grafik"
-
-#: ui/app/strings.src#STR_OBJECTS.STRING.TEXT
-msgid  "Objects"
-msgstr "Objek"
-
 #: ui/app/strings.src#STR_END_SEARCHING.STRING.TEXT
+#, fuzzy
 msgid  "The document search is finished."
 msgstr "Pencarian dokumen selesai."
 
 #: ui/app/strings.src#STR_END_SPELLING.STRING.TEXT
+#, fuzzy
 msgid  "Spellcheck of entire document has been completed."
 msgstr "Pemeriksaan ejaan pada dokumen telah selesai."
 
 #: ui/app/strings.src#STR_END_SPELLING_OBJ.STRING.TEXT
+#, fuzzy
 msgid  "The spellcheck for the selected objects has been completed."
 msgstr "Pemeriksaan ejaan pada objek yang dipilih telah selesai."
 
-#: ui/app/strings.src#STR_NOLANGUAGE.STRING.TEXT
-msgid  "The selected language is not available."
-msgstr "Bahasa yang dipilih tidak tersedia."
-
-#: ui/app/strings.src#STR_ASK_FOR_CONVERT_TO_BEZIER.STRING.TEXT
-msgid  "Convert selected object to curve?"
-msgstr "Konversi objek yang dipilih menjadi kurva?"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_PRES_OBJECT.STRING.TEXT
-msgid  "Modify presentation object '$'"
-msgstr "Ubah objek presentasi '$'"
-
 #: ui/app/strings.src#STR_UNDO_MODIFY_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Slide layout"
 msgstr "Tata letak salindia"
 
-#: ui/app/strings.src#STR_STATSTR_PRINT.STRING.TEXT
-msgid  "Printing..."
-msgstr "Pencetakan..."
-
-#: ui/app/strings.src#STR_UNDO_INSERT_FILE.STRING.TEXT
-msgid  "Insert file"
-msgstr "Sisip berkas"
-
-#: ui/app/strings.src#STR_SCALE_OBJS_TO_PAGE.STRING.TEXT
-msgid  "Should the graphics be scaled to the new slide format?"
-msgstr "Apakah skala grafik diubah sesuai format salindia yang baru?"
-
-#: ui/app/strings.src#STR_UNDO_INSERT_SPECCHAR.STRING.TEXT
-msgid  "Insert special character"
-msgstr "Sisip karakter khusus"
-
-#: ui/app/strings.src#STR_UNDO_SET_PRESLAYOUT.STRING.TEXT
-msgid  "Apply presentation layout"
-msgstr "Terapkan tata letak presentasi"
-
-#: ui/app/strings.src#STR_STRING_NOTFOUND.STRING.TEXT
-msgid  "Search key not found."
-msgstr "Kunci pencarian tidak ketemu."
-
-#: ui/app/strings.src#STR_PLAY.STRING.TEXT
-msgid  "~Play"
-msgstr "Putar"
-
-#: ui/app/strings.src#STR_STOP.STRING.TEXT
-msgid  "Sto~p"
-msgstr "Hentikan"
-
-#: ui/app/strings.src#STR_UNDO_ORIGINALSIZE.STRING.TEXT
-msgid  "Original Size"
-msgstr "Ukuran asli"
-
 #: ui/app/strings.src#STR_PRINT_DRAWING.STRING.TEXT
+#, fuzzy
 msgid  " (Drawing)"
 msgstr "(Gambar)"
 
 #: ui/app/strings.src#STR_PRINT_NOTES.STRING.TEXT
+#, fuzzy
 msgid  " (Notes)"
 msgstr "(Catatan)"
 
 #: ui/app/strings.src#STR_PRINT_HANDOUT.STRING.TEXT
+#, fuzzy
 msgid  " (Handout)"
 msgstr " (Kliping)"
 
 #: ui/app/strings.src#STR_PRINT_OUTLINE.STRING.TEXT
+#, fuzzy
 msgid  " (Outline)"
 msgstr "(Kerangka)"
 
-#: ui/app/strings.src#STR_WARN_SCALE_FAIL.STRING.TEXT
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "Skala yang dipilih tidak sah.\nAnda ingin memasukkan nilai baru?"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_NONE.STRING.TEXT
-msgid  "No action"
-msgstr "Tanpa aksi"
-
 #: ui/app/strings.src#STR_CLICK_ACTION_PREVPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Go to previous slide"
 msgstr "Ke salindia sebelumnya"
 
-#: ui/app/strings.src#STR_CLICK_ACTION_NEXTPAGE.STRING.TEXT
-msgid  "Go to next slide"
-msgstr "Ke salindia selanjutnya"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_FIRSTPAGE.STRING.TEXT
-msgid  "Go to first slide"
-msgstr "Ke salindia pertama"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_LASTPAGE.STRING.TEXT
-msgid  "Go to last slide"
-msgstr "Ke salindia terakhir"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_BOOKMARK.STRING.TEXT
-msgid  "Go to page or object"
-msgstr "Ke halaman atau objek"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_DOCUMENT.STRING.TEXT
-msgid  "Go to document"
-msgstr "Ke dokumen"
-
 #: ui/app/strings.src#STR_CLICK_ACTION_VANISH.STRING.TEXT
+#, fuzzy
 msgid  "Fade object"
 msgstr "Kaburkan objek"
 
-#: ui/app/strings.src#STR_CLICK_ACTION_INVISIBLE.STRING.TEXT
-msgid  "Hide object"
-msgstr "Sembunyikan objek"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_SOUND.STRING.TEXT
-msgid  "Play sound"
-msgstr "Bunyikan"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_VERB.STRING.TEXT
-msgid  "Start object action"
-msgstr "Awali aksi objek"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_PROGRAM.STRING.TEXT
-msgid  "Run program"
-msgstr "Jalankan program"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_MACRO.STRING.TEXT
-msgid  "Run macro"
-msgstr "Jalankan makro"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_STOPPRESENTATION.STRING.TEXT
-msgid  "Exit presentation"
-msgstr "Keluar dari presentasi"
-
 #: ui/app/strings.src#STR_EFFECTDLG_JUMP.STRING.TEXT
+#, fuzzy
 msgid  "Target"
 msgstr "Target"
 
-#: ui/app/strings.src#STR_EFFECTDLG_ACTION.STRING.TEXT
-msgid  "Act~ion"
-msgstr "Aksi"
-
-#: ui/app/strings.src#STR_EFFECTDLG_PAGE_OBJECT.STRING.TEXT
-msgid  "Slide / Object"
-msgstr "Salindia / Objek"
-
-#: ui/app/strings.src#STR_EFFECTDLG_DOCUMENT.STRING.TEXT
-msgid  "Document"
-msgstr "Dokumen"
-
-#: ui/app/strings.src#STR_EFFECTDLG_PROGRAM.STRING.TEXT
-msgid  "Program"
-msgstr "Program"
-
-#: ui/app/strings.src#STR_EFFECTDLG_MACRO.STRING.TEXT
-msgid  "Macro"
-msgstr "Makro"
-
-#: ui/app/strings.src#STR_EFFECT_NONE.STRING.TEXT
-msgid  "No Effect"
-msgstr "Tanpa Efek"
-
-#: ui/app/strings.src#STR_INSERT_TEXT.STRING.TEXT
-msgid  "Insert Text"
-msgstr "Sisip Teks"
-
-#: ui/app/strings.src#STR_SLIDE_SINGULAR.STRING.TEXT
-msgid  " Slide"
-msgstr " Salindia"
-
-#: ui/app/strings.src#STR_SLIDE_PLURAL.STRING.TEXT
-msgid  " Slides"
-msgstr " Salindia"
-
 #: ui/app/strings.src#STR_LOAD_PRESENTATION_LAYOUT.STRING.TEXT
+#, fuzzy
 msgid  "Load Slide Design"
 msgstr "Muat Desain Salindia"
 
-#: ui/app/strings.src#STR_DRAGTYPE_URL.STRING.TEXT
-msgid  "Insert as hyperlink"
-msgstr "Sisip sebagai taut-luar"
-
-#: ui/app/strings.src#STR_DRAGTYPE_EMBEDDED.STRING.TEXT
-msgid  "Insert as copy"
-msgstr "Sisip sebagai salinan"
-
-#: ui/app/strings.src#STR_DRAGTYPE_LINK.STRING.TEXT
-msgid  "Insert as link"
-msgstr "Sisip sebagai taut"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_SMART.STRING.TEXT
-msgid  "Smart"
-msgstr "Cerdik"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_LEFT.STRING.TEXT
-msgid  "Left"
-msgstr "Kiri"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_RIGHT.STRING.TEXT
-msgid  "Right"
-msgstr "Kanan"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_TOP.STRING.TEXT
-msgid  "Top"
-msgstr "Atas"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_BOTTOM.STRING.TEXT
-msgid  "Bottom"
-msgstr "Bawah"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_LO.STRING.TEXT
-msgid  "Top Left?"
-msgstr "Kiri Atas?"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_LU.STRING.TEXT
-msgid  "Bottom Left?"
-msgstr "Kiri Bawah?"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_RO.STRING.TEXT
-msgid  "Top Right?"
-msgstr "Kanan Atas?"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_RU.STRING.TEXT
-msgid  "Bottom Right?"
-msgstr "Kanan Bawah?"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_HORZ.STRING.TEXT
-msgid  "Horizontal"
-msgstr "Horisontal"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_VERT.STRING.TEXT
-msgid  "Vertical"
-msgstr "Vertikal"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_ALL.STRING.TEXT
-msgid  "All?"
-msgstr "Semua?"
-
 #: ui/app/strings.src#STR_CANT_PERFORM_IN_LIVEMODE.STRING.TEXT
+#, fuzzy
 msgid  "This action can't be run in the live mode."
 msgstr "Aksi ini tidak bisa dijalankan pada modus langsung."
 
-#: ui/app/strings.src#STR_PUBLISH_BACK.STRING.TEXT
-msgid  "Back"
-msgstr "Kembali"
-
-#: ui/app/strings.src#STR_PUBLISH_NEXT.STRING.TEXT
-msgid  "Continue"
-msgstr "Teruskan"
-
-#: ui/app/strings.src#STR_PUBLISH_OUTLINE.STRING.TEXT
-msgid  "Overview"
-msgstr "Kilasan"
-
 #: ui/app/strings.src#STR_EYEDROPPER.STRING.TEXT
+#, fuzzy
 msgid  "Color Replacer"
 msgstr "Pengganti Warna"
 
-#: ui/app/strings.src#STR_UNDO_MORPHING.STRING.TEXT
-msgid  "Cross-fading"
-msgstr "Memudar silang"
-
-#: ui/app/strings.src#STR_UNDO_COLORRESOLUTION.STRING.TEXT
-msgid  "Color resolution"
-msgstr "Resolusi warna"
-
 #: ui/app/strings.src#STR_UNDO_EXPAND_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Expand Slide"
 msgstr "Perluas Salindia"
 
-#: ui/app/strings.src#STR_UNDO_SUMMARY_PAGE.STRING.TEXT
-msgid  "Table of Contents Slide"
-msgstr "Daftar Isi Salindia"
-
-#: ui/app/strings.src#STR_TWAIN_NO_SOURCE_UNX.STRING.TEXT
-msgid  "No SANE source is available at the moment."
-msgstr "Sumber SANE tidak tersedia saat ini."
-
-#: ui/app/strings.src#STR_TWAIN_NO_SOURCE.STRING.TEXT
-msgid  "At present, no TWAIN source is available."
-msgstr "Sumber TWAIN tidak tersedia saat ini."
-
-#: ui/app/strings.src#STR_FIX.STRING.TEXT
-msgid  "Fixed"
-msgstr "Tetap"
-
-#: ui/app/strings.src#STR_VAR.STRING.TEXT
-msgid  "Variable"
-msgstr "Variabel"
-
-#: ui/app/strings.src#STR_STANDARD_NORMAL.STRING.TEXT
-msgid  "Standard"
-msgstr "Standar"
-
-#: ui/app/strings.src#STR_STANDARD_SMALL.STRING.TEXT
-msgid  "Standard (short)"
-msgstr "Standar (pendek)"
-
-#: ui/app/strings.src#STR_STANDARD_BIG.STRING.TEXT
-msgid  "Standard (long)"
-msgstr "Standar (panjang)"
-
-#: ui/app/strings.src#STR_FILEFORMAT_NAME_EXT.STRING.TEXT
-msgid  "File name"
-msgstr "Nama berkas"
-
-#: ui/app/strings.src#STR_FILEFORMAT_FULLPATH.STRING.TEXT
-msgid  "Path/File name"
-msgstr "Nama direktori/berkas"
-
-#: ui/app/strings.src#STR_FILEFORMAT_PATH.STRING.TEXT
-msgid  "Path"
-msgstr "Direktori"
-
-#: ui/app/strings.src#STR_FILEFORMAT_NAME.STRING.TEXT
-msgid  "File name without extension"
-msgstr "Nama berkas tanpa ekstensi"
-
-#: ui/app/strings.src#STR_RELEASE_GRAPHICLINK.STRING.TEXT
-msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr "Grafik ini bertaut ke sebuah dokumen. Apakah taut akan dibuang supaya grafik bisa disunting?"
-
-#: ui/app/strings.src#STR_NEW_CUSTOMSHOW.STRING.TEXT
-msgid  "New Custom Slide Show"
-msgstr "Pertunjukan Salindia Ubahan Baru"
-
-#: ui/app/strings.src#STR_COPY_CUSTOMSHOW.STRING.TEXT
-msgid  "Copy "
-msgstr "Salin"
-
-#: ui/app/strings.src#STR_IMPRESS_DOCUMENT_FULLTYPE_60.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Presentation"
-msgstr "%PRODUCTNAME %PRODUCTVERSION Presentation"
-
-#: ui/app/strings.src#STR_GRAPHIC_DOCUMENT.STRING.TEXT
-msgid  "Drawing"
-msgstr "Gambar"
-
-#: ui/app/strings.src#STR_GRAPHIC_DOCUMENT_FULLTYPE_60.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Drawing"
-msgstr "%PRODUCTNAME %PRODUCTVERSION Drawing"
-
 #: ui/app/strings.src#STR_BREAK_METAFILE.STRING.TEXT
+#, fuzzy
 msgid  "Ungroup Metafile(s)..."
 msgstr "Bubarkan Kelompok Metafile"
 
 #: ui/app/strings.src#STR_BREAK_FAIL.STRING.TEXT
+#, fuzzy
 msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Tidak mungkin membubarkan kelompok objek gambar."
 
-#: ui/app/strings.src#STR_PUBDLG_SAMENAME.STRING.TEXT
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "Sudah ada desain dengan nama seperti ini.\nApakah desain itu akan diganti?"
-
-#: ui/app/strings.src#STR_HTMLATTR_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Teks"
-
-#: ui/app/strings.src#STR_HTMLATTR_LINK.STRING.TEXT
-msgid  "Hyperlink"
-msgstr "Taut-luar"
-
-#: ui/app/strings.src#STR_HTMLATTR_VLINK.STRING.TEXT
-msgid  "Visited link"
-msgstr "Taut telah dikunjungi"
-
-#: ui/app/strings.src#STR_HTMLATTR_ALINK.STRING.TEXT
-msgid  "Active link"
-msgstr "Taut aktif"
-
-#: ui/app/strings.src#STR_HTMLEXP_CONTENTS.STRING.TEXT
-msgid  "Table of contents"
-msgstr "Daftar isi"
-
-#: ui/app/strings.src#STR_HTMLEXP_CLICKSTART.STRING.TEXT
-msgid  "Click here to start"
-msgstr "Kllik di sini untuk memulai"
-
-#: ui/app/strings.src#STR_HTMLEXP_AUTHOR.STRING.TEXT
-msgid  "Author"
-msgstr "Penulis"
-
-#: ui/app/strings.src#STR_HTMLEXP_EMAIL.STRING.TEXT
-msgid  "E-mail"
-msgstr "Email"
-
-#: ui/app/strings.src#STR_HTMLEXP_HOMEPAGE.STRING.TEXT
-msgid  "Homepage"
-msgstr "Homepage"
-
-#: ui/app/strings.src#STR_HTMLEXP_INFO.STRING.TEXT
-msgid  "Further information"
-msgstr "Informasi tambahan"
-
-#: ui/app/strings.src#STR_HTMLEXP_DOWNLOAD.STRING.TEXT
-msgid  "Download presentation"
-msgstr "Unduh presentasi"
-
 #: ui/app/strings.src#STR_HTMLEXP_NOFRAMES.STRING.TEXT
+#, fuzzy
 msgid  "Unfortunately your browser does not support floating frames."
 msgstr "Penelusur Internet Anda tidak mendukung bingkai ambang."
 
-#: ui/app/strings.src#STR_HTMLEXP_FIRSTPAGE.STRING.TEXT
-msgid  "First page"
-msgstr "Halaman pertama"
-
-#: ui/app/strings.src#STR_HTMLEXP_LASTPAGE.STRING.TEXT
-msgid  "Last page"
-msgstr "Halaman terakhir"
-
-#: ui/app/strings.src#STR_HTMLEXP_SETGRAPHIC.STRING.TEXT
-msgid  "Graphics"
-msgstr "Grafik"
-
-#: ui/app/strings.src#STR_HTMLEXP_OUTLINE.STRING.TEXT
-msgid  "With contents"
-msgstr "Dengan isi"
-
-#: ui/app/strings.src#STR_HTMLEXP_NOOUTLINE.STRING.TEXT
-msgid  "Without contents"
-msgstr "Tanpa isi"
-
-#: ui/app/strings.src#STR_WEBVIEW_SAVE.STRING.TEXT
-msgid  "To given page"
-msgstr "Ke halaman tertentu"
-
-#: ui/app/strings.src#STR_UNDO_VECTORIZE.STRING.TEXT
-msgid  "Convert bitmap to polygon"
-msgstr "Konversi bitmap ke poligon"
-
-#: ui/app/strings.src#STR_PRES_SOFTEND.STRING.TEXT
-msgid  "Click to exit presentation..."
-msgstr "Klik untuk keluar dari presentasi..."
-
-#: ui/app/strings.src#STR_PRES_PAUSE.STRING.TEXT
-msgid  "Pause..."
-msgstr "Jeda..."
-
-#: ui/app/strings.src#STR_WIZARD_ORIGINAL.STRING.TEXT
-msgid  "<Original>"
-msgstr "<Asli>"
-
-#: ui/app/strings.src#STR_ISLOADING.STRING.TEXT
-msgid  "Loading..."
-msgstr "Memuat..."
-
-#: ui/app/strings.src#STR_DRAW_GRAF_TOOLBOX.STRING.TEXT
-msgid  "Graphics Object Bar"
-msgstr "Baris Objek Grafik"
-
 #: ui/app/strings.src#STR_UNDO_APPLY_3D_FAVOURITE.STRING.TEXT
+#, fuzzy
 msgid  "Apply 3D favorite"
 msgstr "Pakai 3D favorit"
 
 #: ui/app/strings.src#STR_UNDO_GRAFFILTER.STRING.TEXT
+#, fuzzy
 msgid  "Graphics filter"
 msgstr "Penyaring Grafik"
 
 #: ui/app/strings.src#STR_WARNING_NOSOUNDFILE.STRING.TEXT
+#, fuzzy
 msgid  "The file %\nis not a valid sound file !"
 msgstr "Berkas %\nbukan berkas bunyi yang sah."
 
-#: ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.STRING.TEXT
-msgid  "Convert to metafile"
-msgstr "Konversi ke metafile"
-
-#: ui/app/strings.src#STR_UNDO_CONVERT_TO_BITMAP.STRING.TEXT
-msgid  "Convert to bitmap"
-msgstr "Konversi ke bitmap"
-
-#: ui/app/strings.src#STR_HTMLEXP_ERROR_CREATE_FILE.STRING.TEXT
-msgid  "Cannot create the file $(URL1)."
-msgstr "Tidak bisa membuat berkas $(URL1)"
-
-#: ui/app/strings.src#STR_HTMLEXP_ERROR_OPEN_FILE.STRING.TEXT
-msgid  "Could not open the file $(URL1)."
-msgstr "Tidak bisa membuka berkas $(URL1)"
-
-#: ui/app/strings.src#STR_HTMLEXP_ERROR_COPY_FILE.STRING.TEXT
-msgid  "The file $(URL1) could not be copied to $(URL2)"
-msgstr "Berkas $(URL1) tak dapat disalin ke $(URL2)"
-
-#: ui/app/strings.src#STR_PAGE_BACKGROUND_TITLE.STRING.TEXT
-msgid  "Page Settings"
-msgstr "Pengaturan Halaman"
-
-#: ui/app/strings.src#STR_PAGE_BACKGROUND_TXT.STRING.TEXT
-msgid  "Background settings for all pages?"
-msgstr "Pengaturan latarbelakang untuk semua halaman?"
-
-#: ui/app/strings.src#STR_TITLE_RENAMESLIDE.STRING.TEXT
-msgid  "Rename Slide"
-msgstr "Ganti Nama Salindia"
-
 #: ui/app/strings.src#STR_TITLE_SAVE_AS_PICTURE.STRING.TEXT
+#, fuzzy
 msgid  "Save as Picture"
 msgstr "Simpan sebagai Gambar"
 
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_TITLE.STRING.TEXT
-msgid  "Title Area for AutoLayouts"
-msgstr "Area Judul untuk Tata Letak Otomatis"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_OUTLINE.STRING.TEXT
-msgid  "Object Area for AutoLayouts"
-msgstr "Area Objek untuk Tata Letak Otomatis"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_FOOTER.STRING.TEXT
-msgid  "Footer Area"
-msgstr "Area Kaki"
-
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Header Area"
 msgstr "Area Tajuk"
 
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_DATETIME.STRING.TEXT
-msgid  "Date Area"
-msgstr "Area Data"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_SLIDE.STRING.TEXT
-msgid  "Slide Number Area"
-msgstr "Area Nomor Salindia"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_NUMBER.STRING.TEXT
-msgid  "Page Number Area"
-msgstr "Area Nomor Halaman"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_HEADER.STRING.TEXT
-msgid  "<header>"
-msgstr "<tajuk>"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_FOOTER.STRING.TEXT
-msgid  "<footer>"
-msgstr "<kaki>"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_DATETIME.STRING.TEXT
-msgid  "<date/time>"
-msgstr "<tanggal/jam>"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_NUMBER.STRING.TEXT
-msgid  "<number>"
-msgstr "<nomor>"
-
 #: ui/app/strings.src#STR_FIELD_PLACEHOLDER_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "<count>"
 msgstr "<hitung>"
 
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_NOTES.STRING.TEXT
-msgid  "Notes Area"
-msgstr "Area Catatan"
-
 #: ui/app/strings.src#STR_UNDO_HANGULHANJACONVERSION.STRING.TEXT
+#, fuzzy
 msgid  "Hangul/Hanja Conversion"
 msgstr "Konversi Hangul/Hanja"
 
-#: ui/app/strings.src#STR_LEFT_PANE_IMPRESS_TITLE.STRING.TEXT
-msgid  "Slides"
-msgstr "Salindia"
-
-#: ui/app/strings.src#STR_LEFT_PANE_DRAW_TITLE.STRING.TEXT
-msgid  "Pages"
-msgstr "Halaman"
-
-#: ui/app/strings.src#STR_RIGHT_PANE_TITLE.STRING.TEXT
-msgid  "Tasks"
-msgstr "Tugas"
-
-#: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_TITLE.STRING.TEXT
-msgid  "Master Pages"
-msgstr "Halaman Induk"
-
-#: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_TITLE.STRING.TEXT
-msgid  "View"
-msgstr "Yang Ditampilkan"
-
 #: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_LOCK.STRING.TEXT
+#, fuzzy
 msgid  "~Dock Task Pane"
 msgstr "Tambatkan Panel Tu~gas"
 
 #: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_UNLOCK.STRING.TEXT
+#, fuzzy
 msgid  "~Undock Task Pane"
 msgstr "Lepaskan Panel T~ugas"
 
-#: ui/app/strings.src#STR_TASKPANEL_CURRENT_MASTER_PAGES_TITLE.STRING.TEXT
-msgid  "Used in This Presentation"
-msgstr "Digunakan oleh Presentasi ini"
-
-#: ui/app/strings.src#STR_TASKPANEL_RECENT_MASTER_PAGES_TITLE.STRING.TEXT
-msgid  "Recently Used"
-msgstr "Digunakan Baru-baru ini"
-
-#: ui/app/strings.src#STR_TASKPANEL_ALL_MASTER_PAGES_TITLE.STRING.TEXT
-msgid  "Available for Use"
-msgstr "Tersedia untuk Digunakan"
-
-#: ui/app/strings.src#STR_TASKPANEL_NOT_AVAILABLE_SUBSTITUTION.STRING.TEXT
-msgid  "Preview not available"
-msgstr "Pratinjau tidak tersedia"
-
-#: ui/app/strings.src#STR_TASKPANEL_PREPARING_PREVIEW_SUBSTITUTION.STRING.TEXT
-msgid  "Preparing preview"
-msgstr "Menyiapkan pratinjau"
-
-#: ui/app/strings.src#STR_TASKPANEL_LAYOUT_MENU_TITLE.STRING.TEXT
-msgid  "Layouts"
-msgstr "Tata Letak"
-
-#: ui/app/strings.src#STR_GRAPHICS_STYLE_FAMILY.STRING.TEXT
-msgid  "Graphics Styles"
-msgstr "Gaya Grafik"
-
-#: ui/app/strings.src#STR_CELL_STYLE_FAMILY.STRING.TEXT
-msgid  "Cell Styles"
-msgstr "Gaya Sel"
-
-#: ui/app/strings.src#DLG_TABLEDESIGNPANE.STRING.TEXT
-msgid  "Table Designs"
-msgstr "Desain Tabel"
-
 #: ui/app/strings.src#STR_CUSTOMANIMATIONPANE.STRING.TEXT
+#, fuzzy
 msgid  "Custom Animation"
 msgstr "Animasi Ubahan..."
 
 #: ui/app/strings.src#STR_SLIDE_TRANSITION_PANE.STRING.TEXT
+#, fuzzy
 msgid  "Slide Transition"
 msgstr "~Transisi Salindia"
 
 #: ui/app/strings.src#STR_NAVIGATOR_SHOW_NAMED_SHAPES.STRING.TEXT
+#, fuzzy
 msgid  "Named shapes"
 msgstr "Bentuk dengan nama"
 
-#: ui/app/strings.src#STR_NAVIGATOR_SHOW_ALL_SHAPES.STRING.TEXT
-msgid  "All shapes"
-msgstr "Semua bentuk"
-
-#: ui/app/strings.src#STR_NAVIGATOR_SHAPE_BASE_NAME.STRING.TEXT
-msgid  "Shape %1"
-msgstr "Bentuk %1"
-
 #: ui/app/strings.src#STR_SET_BACKGROUND_PICTURE.STRING.TEXT
+#, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "Atur Gambar Latar untuk Salindia..."
 
 #: ui/app/strings.src#STR_ACC_DIALOG_DESC.STRING.TEXT
+#, fuzzy
 msgid  "Select a template from which to import page designs."
 msgstr "Memilih palet dari desain halaman yang akan diimpor."
 
-#: ui/app/strings.src#RID_ANNOTATIONS_START.STRING.TEXT
-msgid  "Comments"
-msgstr "Komentar"
-
 #: ui/app/strings.src#STR_RESET_LAYOUT.STRING.TEXT
+#, fuzzy
 msgid  "Reset Slide Layout"
 msgstr "Atur Ulang Tata Letak Salindia"
 
-#: ui/app/strings.src#STR_INSERT_TABLE.STRING.TEXT
-msgid  "Insert Table"
-msgstr "Sisip berkas"
-
 #: ui/app/strings.src#STR_INSERT_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Insert Chart"
 msgstr "Sisip Bagan"
 
 #: ui/app/strings.src#STR_INSERT_PICTURE.STRING.TEXT
+#, fuzzy
 msgid  "Insert Picture"
 msgstr "Sisip gambar"
 
 #: ui/app/strings.src#STR_INSERT_MOVIE.STRING.TEXT
+#, fuzzy
 msgid  "Insert Movie"
 msgstr "Sisip Film"
 
-#: ui/app/res_bmp.src#SFXSTYLEFAMILIESRES1.#DEFINE.TEXT
-msgid  "Graphics Styles"
-msgstr "Gaya Grafik"
-
-#: ui/app/res_bmp.src#SFXSTYLEFAMILIESRES2.#DEFINE.TEXT
-msgid  "Presentation Styles"
-msgstr "Gaya Presentasi"
-
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_USED.STRING.TEXT
+#, fuzzy
 msgid  "Applied Styles"
 msgstr "Gaya yang Dipakai"
 
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_USERDEF.STRING.TEXT
+#, fuzzy
 msgid  "Custom Styles"
 msgstr "Gaya Ubahan"
 
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All Styles"
 msgstr "Semua Gaya"
-
-#: ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MENUITEM.TEXT
-msgid  "~Distribution..."
-msgstr "~Distribusi..."
-
-#: ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MENUITEM.TEXT
-msgid  "~Drawing View"
-msgstr "Tampilan Menggam~bar"
-
-#: ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MENUITEM.TEXT
-msgid  "~Outline View"
-msgstr "Tampilan ~Kerangka"
-
-#: ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MENUITEM.TEXT
-msgid  "~Slide Sorter"
-msgstr "Pengurut ~Salindia"
-
-#: ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MENUITEM.TEXT
-msgid  "Slide Sho~w"
-msgstr "~Pertunjukan Salindia"
-
-#: ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MENUITEM.TEXT
-msgid  "~Insert Snap Point/Line..."
-msgstr "~Sisipkan Titik/Garis Kancing..."
-
-#: ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MENUITEM.TEXT
-msgid  "~Edit..."
-msgstr "~Sunting..."
 
 #: ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MENUITEM.TEXT
 #, fuzzy
@@ -3068,209 +841,79 @@ msgid  "~Delete"
 msgstr "~Hapus"
 
 #: ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Slide ~Layout"
 msgstr "Tata ~Letak Salindia"
 
-#: ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MENUITEM.TEXT
-msgid  "~Page Setup..."
-msgstr "Setup ~Halaman..."
-
-#: ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MENUITEM.TEXT
-msgid  "~New Slide"
-msgstr "Salindia ~Baru"
-
-#: ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MENUITEM.TEXT
-msgid  "~New Master"
-msgstr "Induk ~Baru"
-
-#: ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MENUITEM.TEXT
-msgid  "~New Page"
-msgstr "Halaman ~Baru"
-
 #: ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MENUITEM.TEXT
+#, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "Atur Gambar Latar untuk Salindia"
-
-#: ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MENUITEM.TEXT
-msgid  "Display Background of Master"
-msgstr "Tampilkan Latar Belakang Induk"
-
-#: ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MENUITEM.TEXT
-msgid  "Display Objects from Master"
-msgstr "Tampilkan Objek dari Induk"
-
-#: ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ITEMLIST.TEXT
-msgid  "Pag~e"
-msgstr "Hala~man"
-
-#: ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ITEMLIST.TEXT
-msgid  "Slid~e"
-msgstr "~Salindia"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MENUITEM.TEXT
-msgid  "~Rename Layer..."
-msgstr "~Ganti Nama Lapisan..."
-
-#: ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MENUITEM.TEXT
-msgid  "D~elete Slide"
-msgstr "~Hapus Salindia"
-
-#: ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MENUITEM.TEXT
-msgid  "D~elete Master"
-msgstr "~Hapus Induk"
-
-#: ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MENUITEM.TEXT
-msgid  "D~elete Page"
-msgstr "~Hapus Halaman"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MENUITEM.TEXT
-msgid  "~Rename Slide"
-msgstr "~Ganti Nama Salindia"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MENUITEM.TEXT
-msgid  "~Rename Master"
-msgstr "~Ganti Nama Induk"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MENUITEM.TEXT
-msgid  "~Rename Page"
-msgstr "~Ganti Nama Halaman"
-
-#: ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MENUITEM.TEXT
-msgid  "L~ine..."
-msgstr "Gar~is..."
-
-#: ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MENUITEM.TEXT
-msgid  "~Area..."
-msgstr "Wil~ayah..."
-
-#: ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MENUITEM.TEXT
-msgid  "~Text..."
-msgstr "~Teks..."
-
-#: ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MENUITEM.TEXT
-msgid  "~Connector..."
-msgstr "~Konektor..."
-
-#: ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MENUITEM.TEXT
-msgid  "Reset ~Routing"
-msgstr "Ulangi ~Routing"
-
-#: ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MENUITEM.TEXT
-msgid  "Dimen~sions..."
-msgstr "Dimen~si..."
-
-#: ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MENUITEM.TEXT
-msgid  "Position and Si~ze..."
-msgstr "Posisi dan Uk~uran..."
 
 #: ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MENUITEM.TEXT
 #, fuzzy
 msgid  "Edit ~Points"
 msgstr "Sunting ~Titik"
 
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MENUITEM.TEXT
-msgid  "Arra~nge"
-msgstr "Susu~n"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MENUITEM.TEXT
-msgid  "~Bring to Front"
-msgstr "~Bawa ke Depan"
-
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Maju ~Selangkah"
 
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MENUITEM.TEXT
-msgid  "Send Back~ward"
-msgstr "Mundur Selan~gkah"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MENUITEM.TEXT
-msgid  "~Send to Back"
-msgstr "~Kirim ke Belakang"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MENUITEM.TEXT
-msgid  "In Front of ~Object"
-msgstr "Di Depan ~Objek"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MENUITEM.TEXT
-msgid  "Be~hind Object"
-msgstr "Dibelakang Objek"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MENUITEM.TEXT
-msgid  "~Reverse"
-msgstr "Keba~likan"
-
 #: ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "C~haracter..."
 msgstr "Ka~rakter..."
 
-#: ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MENUITEM.TEXT
-msgid  "P~aragraph..."
-msgstr "P~aragraf..."
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MENUITEM.TEXT
-msgid  "~Font"
-msgstr "~Fonta"
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MENUITEM.TEXT
-msgid  "~Size"
-msgstr "~Ukuran"
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MENUITEM.TEXT
-msgid  "St~yle"
-msgstr "Ga~ya"
-
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Bold"
 msgstr "Tebal"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Italic"
 msgstr "Italik"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_OVERLINE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Overline"
 msgstr "Garis Atas"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Underline"
 msgstr "Garis Bawah"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "Coret"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MENUITEM.TEXT
+#, fuzzy
 msgid  "Shadow"
 msgstr "Bayangan"
 
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MENUITEM.TEXT
-msgid  "~Contour"
-msgstr "~Kontur"
-
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "Spasi baris"
 
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MENUITEM.TEXT
+#, fuzzy
 msgid  "Single Line Spacing"
 msgstr "Spasi Tunggal"
 
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MENUITEM.TEXT
+#, fuzzy
 msgid  "1.5 Lines"
 msgstr "1,5 Spasi"
 
-#: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MENUITEM.TEXT
-msgid  "~Double"
-msgstr "Gan~da"
-
 #: ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MENUITEM.TEXT
+#, fuzzy
 msgid  "S~pecial Character..."
 msgstr "Karakter Kh~usus..."
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MENUITEM.TEXT
-msgid  "A~lignment"
-msgstr "Perata~an"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MENUITEM.TEXT
 #, fuzzy
@@ -3287,12 +930,9 @@ msgid  "~Centered"
 msgstr "T~engah"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MENUITEM.TEXT
+#, fuzzy
 msgid  "Justified"
 msgstr "Kiri Kanan"
-
-#: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MENUITEM.TEXT
-msgid  "Al~ignment"
-msgstr "Perataa~n"
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MENUITEM.TEXT
 #, fuzzy
@@ -3300,6 +940,7 @@ msgid  "~Top"
 msgstr "A~tas"
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MENUITEM.TEXT
+#, fuzzy
 msgid  "C~enter"
 msgstr "T~engah"
 
@@ -3313,388 +954,147 @@ msgstr "~Bawah"
 msgid  "Close ~Object"
 msgstr "Tutup Objek"
 
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MENUITEM.TEXT
-msgid  "~Move Points"
-msgstr "Pindahkan Titik"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MENUITEM.TEXT
-msgid  "Insert ~Points"
-msgstr "Sisip titik"
-
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Delete Points"
 msgstr "Hapus titik"
 
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MENUITEM.TEXT
-msgid  "~Split Curve"
-msgstr "~Belah Kurva"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MENUITEM.TEXT
-msgid  "Con~vert to Curve"
-msgstr "Kon~versi ke Kurva"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MENUITEM.TEXT
-msgid  "~Corner"
-msgstr "~Sudut"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MENUITEM.TEXT
-msgid  "Smoot~h"
-msgstr "~Halus"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MENUITEM.TEXT
-msgid  "S~ymmetric"
-msgstr "~Simetris"
-
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Reduce Points"
 msgstr "Ku~rangi Titik"
 
-#: ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MENUITEM.TEXT
-msgid  "~Group"
-msgstr "~Kelompokkan"
-
-#: ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MENUITEM.TEXT
-msgid  "~Ungroup"
-msgstr "Pisa~hkan Kelompok"
-
-#: ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MENUITEM.TEXT
-msgid  "Comb~ine"
-msgstr "~Gabungkan"
-
-#: ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MENUITEM.TEXT
-msgid  "~Split"
-msgstr "Pi~sah"
-
-#: ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MENUITEM.TEXT
-msgid  "~Enter Group"
-msgstr "Masuki K~elompok"
-
-#: ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MENUITEM.TEXT
-msgid  "E~xit Group"
-msgstr "Kelua~r Kelompok"
-
-#: ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MENUITEM.TEXT
-msgid  "Name..."
-msgstr "Nama..."
-
-#: ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MENUITEM.TEXT
-msgid  "Description..."
-msgstr "Deskripsi..."
-
-#: ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MENUITEM.TEXT
-msgid  "~Rehearse Timings"
-msgstr "Be~rlatih Waktu"
-
 #: ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Custom Animation..."
 msgstr "Animasi Ubahan..."
 
-#: ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MENUITEM.TEXT
-msgid  "Int~eraction..."
-msgstr "Int~eraksi..."
-
-#: ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MENUITEM.TEXT
-msgid  "Presentation ~Object..."
-msgstr "~Objek Presentasi..."
-
-#: ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MENUITEM.TEXT
-msgid  "~Default"
-msgstr "~Baku"
-
 #: ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MENUITEM.TEXT
+#, fuzzy
 msgid  "F~ontwork"
 msgstr "F~ontwork"
 
-#: ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MENUITEM.TEXT
-msgid  "~Original Size"
-msgstr "Ukuran ~Asli"
-
 #: ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MENUITEM.TEXT
+#, fuzzy
 msgid  "Save as Picture..."
 msgstr "Simpan sebagai Gambar..."
 
 #: ui/app/menuids_tmpl.src#MN_CROP.SID_ATTR_GRAF_CROP.MENUITEM.TEXT
+#, fuzzy
 msgid  "Crop Picture..."
 msgstr "Potong Gambar..."
 
-#: ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MENUITEM.TEXT
-msgid  "Na~vigator"
-msgstr "Na~vigator"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MENUITEM.TEXT
-msgid  "Insert ~Point"
-msgstr "Sisip Titik"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_PERCENT.SID_GLUE_PERCENT.MENUITEM.TEXT
-msgid  "~Adapt Position to Object"
-msgstr "Sesuaikan posisi ke objek"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_LEFT.SID_GLUE_HORZALIGN_LEFT.MENUITEM.TEXT
-msgid  "Fixed ~Horizontal Left"
-msgstr "Kiri Horisontal Tetap"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_CENTER.SID_GLUE_HORZALIGN_CENTER.MENUITEM.TEXT
-msgid  "Fixed Horizontal ~Center"
-msgstr "Tengah Horisontal Tetap"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_RIGHT.SID_GLUE_HORZALIGN_RIGHT.MENUITEM.TEXT
-msgid  "Fixed Hori~zontal Right"
-msgstr "Kanan Horisontal Tetap"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_TOP.SID_GLUE_VERTALIGN_TOP.MENUITEM.TEXT
-msgid  "Fixed ~Vertical Top"
-msgstr "Atas Vertikal Tetap"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_CENTER.SID_GLUE_VERTALIGN_CENTER.MENUITEM.TEXT
-msgid  "Fixed V~ertical Center"
-msgstr "Tengah Vertikal Tetap"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_BOTTOM.SID_GLUE_VERTALIGN_BOTTOM.MENUITEM.TEXT
-msgid  "Fixed Ver~tical Bottom"
-msgstr "Bawah Vertikal Tetap"
-
-#: ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MENUITEM.TEXT
-msgid  "~Visible Grid"
-msgstr "Perliha~tkan Kisi"
-
 #: ui/app/menuids_tmpl.src#MN_GRID_USE.SID_GRID_USE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Snap to Grid"
 msgstr "Kancingkan ke Kisi"
 
-#: ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MENUITEM.TEXT
-msgid  "Grid to ~Front"
-msgstr "Kisi ke D~epan"
-
-#: ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ITEMLIST.TEXT
-msgid  "~Grid"
-msgstr "~Kisi"
-
-#: ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MENUITEM.TEXT
-msgid  "~Snap Lines Visible"
-msgstr "Gari~s Kancing Terlihat"
-
 #: ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Snap to Snap Lines"
 msgstr "Kancingkan ke Garis Kancing"
 
 #: ui/app/menuids_tmpl.src#MN_HELPLINES_FRONT.SID_HELPLINES_FRONT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Snap Lines to Front"
 msgstr "Garis Kancing ke Depan"
 
-#: ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ITEMLIST.TEXT
-msgid  "~Snap Lines"
-msgstr "Gari~s Kancing"
-
-#: ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MENUITEM.TEXT
-msgid  "Propert~ies..."
-msgstr "Propert~i..."
-
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_THRESHOLD.SID_CONVERT_TO_1BIT_THRESHOLD.MENUITEM.TEXT
-msgid  "1Bit ~Threshold"
-msgstr "Ambang Batas 1 Bit"
-
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MENUITEM.TEXT
-msgid  "1 Bit ~Dithering"
-msgstr "1 Bit ~Dithering"
-
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MENUITEM.TEXT
+#, fuzzy
 msgid  "4 Bit G~rayscales"
 msgstr "Abu-abu 4"
 
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MENUITEM.TEXT
-msgid  "4 Bit ~Color Palette"
-msgstr "Palet Warna 4"
-
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MENUITEM.TEXT
+#, fuzzy
 msgid  "8 Bit Gr~ayscales"
 msgstr "Abu-abu 8 Bit"
 
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MENUITEM.TEXT
-msgid  "8 Bit C~olor Palette"
-msgstr "Palet Warna 8 Bit"
-
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "24 Bit ~True Colors"
 msgstr "Warna Nyata 24 Bit"
 
 #: ui/app/menuids_tmpl.src#MN_COLORRESOLUTION.DUMMY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "~Color Resolution"
 msgstr "Resolusi Warna"
 
-#: ui/app/menuids_tmpl.src#MNSUB_CONVERT.SID_CONVERT.MENUITEM.TEXT
-msgid  "Con~vert"
-msgstr "Konversi"
-
-#: ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MENUITEM.TEXT
-msgid  "~Flip"
-msgstr "Lipat"
-
-#: ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MENUITEM.TEXT
-msgid  "~Rotate"
-msgstr "Putar"
-
-#: ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MENUITEM.TEXT
-msgid  "C~onnect"
-msgstr "Sambung"
-
-#: ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MENUITEM.TEXT
-msgid  "~Break"
-msgstr "Putus"
-
 #: ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Edit Style..."
 msgstr "Sunting Gaya..."
 
-#: ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MENUITEM.TEXT
-msgid  "H~yperlink..."
-msgstr "Taut~-Luar..."
-
-#: ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MENUITEM.TEXT
-msgid  "Poi~nts"
-msgstr "Titik"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MENUITEM.TEXT
-msgid  "~Glue Points"
-msgstr "Titik Len~gket"
-
-#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MENUITEM.TEXT
-msgid  "La~yer"
-msgstr "Lapisan"
-
-#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MENUITEM.TEXT
-msgid  "~Insert"
-msgstr "~Sisipkan"
-
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Modify"
 msgstr "~Modifikasi"
 
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_DELETE_LAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
 msgstr "Hapus"
 
-#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MENUITEM.TEXT
-msgid  "~Rename"
-msgstr "Ganti nama"
-
-#: ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MENUITEM.TEXT
-msgid  "To ~Curve"
-msgstr "Ke ~Kurva"
-
-#: ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MENUITEM.TEXT
-msgid  "To ~Polygon"
-msgstr "Ke ~Poligon"
-
-#: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MENUITEM.TEXT
-msgid  "To C~ontour"
-msgstr "Ke ~Kontur"
-
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MENUITEM.TEXT
+#, fuzzy
 msgid  "To 3~D"
 msgstr "Ke 3~D"
 
-#: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MENUITEM.TEXT
-msgid  "To ~Bitmap"
-msgstr "Ke ~Bitmap"
-
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MENUITEM.TEXT
+#, fuzzy
 msgid  "To ~Metafile"
 msgstr "Ke ~Metafile"
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MENUITEM.TEXT
+#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "Ke ~Rotasi Objek 3D"
 
 #: ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Vertically"
 msgstr "Secara ~Vertikal"
 
 #: ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Horizontally"
 msgstr "Secara ~Horisontal"
 
 #: ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MENUITEM.TEXT
+#, fuzzy
 msgid  "~3D Effects"
 msgstr "Efek ~3D"
 
 #: ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Slide Design"
 msgstr "Desain ~Salindia"
 
 #: ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "~Transisi Salindia"
-
-#: ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MENUITEM.TEXT
-msgid  "~Show Slide"
-msgstr "Tampilkan ~Salindia"
-
-#: ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MENUITEM.TEXT
-msgid  "~Hide Slide"
-msgstr "Sembun~yikan Salindia"
 
 #: ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MENUITEM.TEXT
 msgid  "~Group"
 msgstr "~Kelompokkan"
 
-#: ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MENUITEM.TEXT
-msgid  "~Ungroup"
-msgstr "Pisa~hkan Kelompok"
-
-#: ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MENUITEM.TEXT
-msgid  "~Edit Group"
-msgstr "~Sunting Kelompok"
-
-#: ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MENUITEM.TEXT
-msgid  "E~xit group"
-msgstr "~Keluar Kelompok"
-
 #: ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Toolbars"
 msgstr "Baris Ala~t"
 
-#: ui/app/toolbox.src#RID_DRAW_VIEWER_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Function Bar (viewing mode)"
-msgstr "Baris Fungsi (modus tinjau)"
-
 #: ui/app/toolbox.src#RID_DRAW_MEDIA_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Media Playback"
 msgstr "Putar Media"
 
-#: ui/app/toolbox.src#RID_DRAW_TABLE_TOOLBOX.STRING.TEXT
-msgid  "Table"
-msgstr "Tabel"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.SID_FORMAT_TABLE_DLG.MENUITEM.TEXT
-msgid  "~Table..."
-msgstr "~Tabel..."
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
-msgid  "~Cell"
-msgstr "~Sel"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MENUITEM.TEXT
-msgid  "~Merge"
-msgstr "~Gabung"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MENUITEM.TEXT
-msgid  "~Split..."
-msgstr "~Bagi..."
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MENUITEM.TEXT
-msgid  "~Top"
-msgstr "A~tas"
-
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MENUITEM.TEXT
+#, fuzzy
 msgid  "C~enter"
 msgstr "T~engah"
 
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MENUITEM.TEXT
-msgid  "~Bottom"
-msgstr "~Bawah"
-
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Row"
 msgstr "Ba~ris"
 
@@ -3718,22 +1118,6 @@ msgstr "S~isip..."
 msgid  "~Delete"
 msgstr "~Hapus"
 
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
-msgid  "Colu~mn"
-msgstr "Kolo~m"
-
-#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_INSERTLAYER.MENUITEM.TEXT
-msgid  "~Insert Layer..."
-msgstr "Sisip Lapisan"
-
-#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_MODIFYLAYER.MENUITEM.TEXT
-msgid  "Modify La~yer..."
-msgstr "Ubah Lapisan"
-
-#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_DELETE_LAYER.MENUITEM.TEXT
-msgid  "Delete ~Layer..."
-msgstr "Hapus Lapisan..."
-
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Apply to All Slides"
@@ -3754,171 +1138,38 @@ msgstr "Lihat Pratinja~u Besar"
 msgid  "Show S~mall Preview"
 msgstr "Lihat Prati~njau Kecil"
 
-#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MENUITEM.TEXT
-msgid  "~Edit Master..."
-msgstr "~Sunting Induk..."
-
 #: ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_INSERTPAGE_LAYOUT_MENU.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Insert Slide"
 msgstr "S~isip Salindia"
 
-#: ui/app/sdstring.src#STR_SAR_NOT_FOUND.STRING.TEXT
-msgid  "Search key not found."
-msgstr "Kunci pencarian tidak ketemu"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.STRING.TEXT
-msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr "%PRODUCTNAME Impress sudah mencari hingga akhir presentasi. Apakah pencarian dilanjutkan dari awal?"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.STRING.TEXT
-msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr "%PRODUCTNAME Impress sudah mencari hingga awal presentasi. Apakah pencarian dilanjutkan dari akhir?"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr "%PRODUCTNAME Draw sudah mencari hingga akhir dokumen. Apakah pencarian dilanjutkan dari awal?"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr "%PRODUCTNAME Draw sudah mencari hingga awal presentasi. Apakah pencarian dilanjutkan dari akhir dokumen?"
-
-#: ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MENUITEM.TEXT
-msgid  "~New"
-msgstr "~Baru"
-
-#: ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MENUITEM.TEXT
-msgid  "~Export..."
-msgstr "~Ekspor"
-
-#: ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MENUITEM.TEXT
-msgid  "Export as PDF..."
-msgstr "Ekspor sebagai PDF..."
-
-#: ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MENUITEM.TEXT
-msgid  "Sen~d"
-msgstr "Kiri~m"
-
-#: ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MENUITEM.TEXT
-msgid  "~Page..."
-msgstr "~Halaman..."
-
-#: ui/app/menuids2_tmpl.src#20.#DEFINE.TEXT
-msgid  "~Edit"
-msgstr "~Sunting"
-
 #: ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MENUITEM.TEXT
+#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "Tempel Khu~sus..."
 
-#: ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MENUITEM.TEXT
-msgid  "Duplicat~e..."
-msgstr "Duplika~t..."
-
-#: ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MENUITEM.TEXT
-msgid  "Cross-fading..."
-msgstr "Memudar-silang..."
-
-#: ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MENUITEM.TEXT
-msgid  "F~ields..."
-msgstr "K~olom..."
-
-#: ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MENUITEM.TEXT
-msgid  "Delete ~Layer..."
-msgstr "Hapus ~Lapisan..."
-
-#: ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MENUITEM.TEXT
-msgid  "Lin~ks..."
-msgstr "Taut..."
-
-#: ui/app/menuids2_tmpl.src#23.#DEFINE.TEXT
-msgid  "~View"
-msgstr "Ta~mpilan"
-
-#: ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MENUITEM.TEXT
-msgid  "Main ~Toolbar"
-msgstr "~Toolbar Utama"
-
-#: ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MENUITEM.TEXT
-msgid  "Optio~n Bar"
-msgstr "Baris Ops~i"
-
-#: ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MENUITEM.TEXT
-msgid  "~Presentation"
-msgstr "~Presentasi"
-
-#: ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MENUITEM.TEXT
-msgid  "Customi~ze..."
-msgstr "Ku~stomisasi..."
-
-#: ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MENUITEM.TEXT
-msgid  "~Rulers"
-msgstr "~Penggaris"
-
-#: ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MENUITEM.TEXT
-msgid  "~Notes View"
-msgstr "Tampila~n Catatan"
-
 #: ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Handout View"
 msgstr "Tampilan K~liping"
 
-#: ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MENUITEM.TEXT
-msgid  "~Preview"
-msgstr "~Pratinjau"
-
-#: ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MENUITEM.TEXT
-msgid  "S~lide"
-msgstr "Sa~lindia"
-
-#: ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MENUITEM.TEXT
-msgid  "~Slide Master"
-msgstr "~Salindia Induk"
-
-#: ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MENUITEM.TEXT
-msgid  "~Title"
-msgstr "~Judul"
-
-#: ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MENUITEM.TEXT
-msgid  "~Notes"
-msgstr "~Catatan"
-
 #: ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Handout"
 msgstr "~Kliping"
 
-#: ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MENUITEM.TEXT
-msgid  "La~yer"
-msgstr "Lapisan"
-
 #: ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Wor~kspace"
 msgstr "Wor~kspace"
 
-#: ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MENUITEM.TEXT
-msgid  "~Master"
-msgstr "~Induk"
-
-#: ui/app/menuids2_tmpl.src#21.#DEFINE.TEXT
-msgid  "~Insert"
-msgstr "S~isip"
-
 #: ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Slid~e..."
 msgstr "~Salindia..."
 
-#: ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MENUITEM.TEXT
-msgid  "Slid~e"
-msgstr "~Salindia"
-
-#: ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MENUITEM.TEXT
-msgid  "D~uplicate Slide"
-msgstr "Gandakan ~Salindia"
-
-#: ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MENUITEM.TEXT
-msgid  "E~xpand Slide"
-msgstr "~Kembangkan Salindia"
-
 #: ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "Salindia Rangku~man"
 
@@ -3927,167 +1178,38 @@ msgstr "Salindia Rangku~man"
 msgid  "~Layer..."
 msgstr "~Lapisan..."
 
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MENUITEM.TEXT
-msgid  "~Date (fixed)"
-msgstr "~Tanggal (tetap)"
-
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MENUITEM.TEXT
-msgid  "Dat~e (variable)"
-msgstr "Tang~gal (variabel)"
-
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MENUITEM.TEXT
-msgid  "~Time (fixed)"
-msgstr "~Waktu (tetap)"
-
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MENUITEM.TEXT
+#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "W~aktu (variabel)"
 
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MENUITEM.TEXT
-msgid  "~Page Number"
-msgstr "~Nomor Halaman"
-
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~File Name"
 msgstr "Nama ~Berkas"
 
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MENUITEM.TEXT
-msgid  "~Author"
-msgstr "~Penulis"
-
-#: ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MENUITEM.TEXT
-msgid  "~Select Source..."
-msgstr "~Pilih Sumber..."
-
-#: ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MENUITEM.TEXT
-msgid  "~Request..."
-msgstr "~Minta..."
-
-#: ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MENUITEM.TEXT
-msgid  "Sp~readsheet"
-msgstr "Sp~readsheet"
-
 #: ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MENUITEM.TEXT
+#, fuzzy
 msgid  "From ~File..."
 msgstr "Dari ~Berkas..."
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MENUITEM.TEXT
+#, fuzzy
 msgid  "Chart"
 msgstr "Bagan"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "Bingkai Mengambang..."
 
 #: ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~File..."
 msgstr "~Berkas..."
 
-#: ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MENUITEM.TEXT
-msgid  "Fiel~ds"
-msgstr "Ruas"
-
-#: ui/app/menuids2_tmpl.src#22.#DEFINE.TEXT
-msgid  "F~ormat"
-msgstr "F~ormat"
-
-#: ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MENUITEM.TEXT
-msgid  "Te~xt..."
-msgstr "Te~ks..."
-
-#: ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MENUITEM.TEXT
-msgid  "Dimen~sions..."
-msgstr "Dimen~si..."
-
-#: ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MENUITEM.TEXT
-msgid  "~Connector..."
-msgstr "~Konektor..."
-
-#: ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MENUITEM.TEXT
-msgid  "Modify ~Layout..."
-msgstr "Ubah Tata Letak..."
-
-#: ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MENUITEM.TEXT
-msgid  "Styl~es"
-msgstr "Gaya"
-
-#: ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#DEFINE.TEXT
-msgid  "~Tools"
-msgstr "Perka~kas"
-
-#: ui/app/menuids2_tmpl.src#26.#DEFINE.TEXT
-msgid  "~Slide Show"
-msgstr "Pertunjukan ~Salindia"
-
-#: ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MENUITEM.TEXT
-msgid  "~Check..."
-msgstr "~Periksa..."
-
-#: ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MENUITEM.TEXT
-msgid  "~AutoSpellcheck"
-msgstr "Periksa Ejaan ~Otomatis"
-
-#: ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MENUITEM.TEXT
-msgid  "~Thesaurus..."
-msgstr "Keterangan Ka~ta..."
-
-#: ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MENUITEM.TEXT
-msgid  "~Hyphenation"
-msgstr "~Pengaturan Tanda Hubung"
-
-#: ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MENUITEM.TEXT
-msgid  "~AutoCorrect..."
-msgstr "~KoreksiOtomatis..."
-
-#: ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MENUITEM.TEXT
-msgid  "~Slide Show Settings..."
-msgstr "~Pengaturan Tampilan Slid..."
-
-#: ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MENUITEM.TEXT
-msgid  "~Custom Slide Show..."
-msgstr "Pertunjukan Ubahan ~Salindia..."
-
-#: ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MENUITEM.TEXT
-msgid  "~Animation"
-msgstr "~Animasi"
-
-#: ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MENUITEM.TEXT
-msgid  "~Interaction..."
-msgstr "~Interaksi..."
-
-#: ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MENUITEM.TEXT
-msgid  "~Spellcheck"
-msgstr "Pemeriksaan ~Ejaan"
-
-#: ui/app/menuids2_tmpl.src#24.#DEFINE.TEXT
-msgid  "~Modify"
-msgstr "~Ubah"
-
-#: ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MENUITEM.TEXT
-msgid  "Bring ~Forward"
-msgstr "Maju ~Selangkah"
-
-#: ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MENUITEM.TEXT
-msgid  "Send Back~ward"
-msgstr "Mundur Selan~gkah"
-
-#: ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MENUITEM.TEXT
-msgid  "In Front of ~Object"
-msgstr "Di Depan ~Objek"
-
-#: ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MENUITEM.TEXT
-msgid  "Be~hind Object"
-msgstr "Di Belakang Objek"
-
-#: ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MENUITEM.TEXT
-msgid  "~Reverse"
-msgstr "Keba~likan"
-
-#: ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MENUITEM.TEXT
-msgid  "~Eyedropper"
-msgstr "~Eyedropper"
-
 #: ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Gallery"
 msgstr "~Galeri"
 
@@ -4097,9 +1219,8 @@ msgid  "~Color"
 msgstr "~Warna"
 
 #: ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MENUITEM.TEXT
-#, fuzzy
 msgid  "~Grayscale"
-msgstr "~Skala kehitaman"
+msgstr "~Skala abu-abu"
 
 #: ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MENUITEM.TEXT
 #, fuzzy
@@ -4112,629 +1233,114 @@ msgid  "~High Contrast"
 msgstr "~Sangat Kontras"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Arrange"
 msgstr "~Atur"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "~Display Quality"
 msgstr "Kualitas ~Tampilan"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "Modus Pratinjau"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.CONTROL.TEXT
+#, fuzzy
 msgid  "Custom Animation"
 msgstr "Animasi Ubahan"
 
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_EFFECT.FIXEDLINE.TEXT
-msgid  "Effect"
-msgstr "Efek"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_ADD_EFFECT.PUSHBUTTON.TEXT
-msgid  "~Add..."
-msgstr "T~ambah..."
-
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_CHANGE_EFFECT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Change..."
 msgstr "~Ubah..."
 
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_REMOVE_EFFECT.PUSHBUTTON.TEXT
-msgid  "~Remove"
-msgstr "~Buang"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_MODIFY.FIXEDLINE.TEXT
-msgid  "Modify effect"
-msgstr "Ubah efek"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_START.FIXEDTEXT.TEXT
-msgid  "~Start"
-msgstr "Mula~i"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM1.STRINGLIST.ITEM
-msgid  "On click"
-msgstr "Saat diklik"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM2.STRINGLIST.ITEM
-msgid  "With previous"
-msgstr "Bersama sebelumnya"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM3.STRINGLIST.ITEM
-msgid  "After previous"
-msgstr "Setelah sebelumnya"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_PROPERTY.FIXEDTEXT.TEXT
-msgid  "Property"
-msgstr "Properti"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PUSHBUTTON.TEXT
-msgid  "~..."
-msgstr "~..."
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PUSHBUTTON.QUICKHELPTEXT
-msgid  "Effect Options"
-msgstr "Opsi Efek"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_SPEED.FIXEDTEXT.TEXT
-msgid  "Sp~eed"
-msgstr "K~ecepatan"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_CHANGE_ORDER.FIXEDTEXT.TEXT
-msgid  "Change order:"
-msgstr "Ubah urutan:"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PLAY.PUSHBUTTON.TEXT
-msgid  "~Play"
-msgstr "~Putar"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_SLIDE_SHOW.PUSHBUTTON.TEXT
-msgid  "Slide Sho~w"
-msgstr "Pertunjukan ~Salindia"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.CB_AUTOPREVIEW.CHECKBOX.TEXT
-msgid  "Automatic pre~view"
-msgstr "Pratinja~u otomatis"
-
 #: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Custom Animation"
 msgstr "Animasi Ubahan"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_ENTRANCE.PAGEITEM.TEXT
-msgid  "Entrance"
-msgstr "Masuk"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EMPHASIS.PAGEITEM.TEXT
-msgid  "Emphasis"
-msgstr "Penekanan"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EXIT.PAGEITEM.TEXT
-msgid  "Exit"
-msgstr "Keluar"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MOTIONPATH.PAGEITEM.TEXT
-msgid  "Motion Paths"
-msgstr "Alur Gerakan"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MISCEFFECTS.PAGEITEM.TEXT
-msgid  "Misc Effects"
-msgstr "Efek Lainnya"
-
-#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.FT_SPEED.FIXEDTEXT.TEXT
-msgid  "Speed"
-msgstr "Kecepatan"
-
-#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.CBX_PREVIEW.CHECKBOX.TEXT
-msgid  "Automatic preview"
-msgstr "Pratinjau otomatis"
-
-#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.STR_USERPATH.STRING.TEXT
-msgid  "User paths"
-msgstr "Jalur pengguna"
-
-#: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.TABDIALOG.TEXT
-msgid  "Effect Options"
-msgstr "Opsi Efek"
 
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_EFFECT.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Effect"
 msgstr "Efek"
 
-#: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_DURATION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Timing"
-msgstr "Waktu"
-
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_TEXT.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Text Animation"
 msgstr "Animasi Teks"
 
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_SETTINGS.FIXEDLINE.TEXT
-msgid  "Settings"
-msgstr "Pengaturan"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_START.CHECKBOX.TEXT
-msgid  "Accelerated start"
-msgstr "Awalan yang dipercepat"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_END.CHECKBOX.TEXT
-msgid  "Decelerated end"
-msgstr "Akhiran yang diperlambat"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_AUTORESTART.CHECKBOX.TEXT
-msgid  "Reverse automatically"
-msgstr "Putar balik otomatis"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_ENHANCEMENTS.FIXEDLINE.TEXT
-msgid  "Enhancement"
-msgstr "Peningkatan"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_SOUND.FIXEDTEXT.TEXT
-msgid  "Sound"
-msgstr "Suara"
-
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_AFTER_EFFECT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "After animation "
 msgstr "Setelah animasi "
 
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM1.STRINGLIST.ITEM
-msgid  "Don't dim"
-msgstr "Jangan diredupkan"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM2.STRINGLIST.ITEM
-msgid  "Dim with color"
-msgstr "Redup dengan warna"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM3.STRINGLIST.ITEM
-msgid  "Hide after animation"
-msgstr "Sembunyikan setelah animasi"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM4.STRINGLIST.ITEM
-msgid  "Hide on next animation"
-msgstr "Sembunyikan pada animasi selanjutnya"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_DIMCOLOR.FIXEDTEXT.TEXT
-msgid  "Dim Color"
-msgstr "Redupkan warna"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_ANIM.FIXEDTEXT.TEXT
-msgid  "Text animation"
-msgstr "Animasi teks"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM1.STRINGLIST.ITEM
-msgid  "All at once"
-msgstr "Semua sekaligus"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM2.STRINGLIST.ITEM
-msgid  "Word by word"
-msgstr "Kata demi kata"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM3.STRINGLIST.ITEM
-msgid  "Letter by letter"
-msgstr "Huruf demi huruf"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_DELAY.FIXEDTEXT.TEXT
-msgid  "delay between characters"
-msgstr "Jeda antarkarakter"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.MF_TEXT_DELAY.METRICFIELD.CUSTOMUNITTEXT
-msgid  "%"
-msgstr "%"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START.FIXEDTEXT.TEXT
-msgid  "Start"
-msgstr "Mulai"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM1.STRINGLIST.ITEM
-msgid  "On click"
-msgstr "Saat diklik"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM2.STRINGLIST.ITEM
-msgid  "With previous"
-msgstr "Bersama sebelumnya"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM3.STRINGLIST.ITEM
-msgid  "After previous"
-msgstr "Sesudah sebelumnya"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START_DELAY.FIXEDTEXT.TEXT
-msgid  "Delay"
-msgstr "Tunda"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.MF_START_DELAY.METRICFIELD.CUSTOMUNITTEXT
-#, fuzzy
-msgid  "sec"
-msgstr "detik"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_DURATION.FIXEDTEXT.TEXT
-msgid  "Speed"
-msgstr "Kecepatan"
-
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_REPEAT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Repeat"
 msgstr "Ulang"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.CBX_REWIND.CHECKBOX.TEXT
-msgid  "Rewind when done playing"
-msgstr "Putar lagi setelah selesai"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FL_TRIGGER.FIXEDLINE.TEXT
-msgid  "Trigger"
-msgstr "Picu"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_CLICKSEQUENCE.RADIOBUTTON.TEXT
-msgid  "Animate as part of click sequence"
-msgstr "Jalankan animasi sebagai bagian dari tahapan klik"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_INTERACTIVE.RADIOBUTTON.TEXT
-msgid  "Start effect on click of"
-msgstr "Mulai efek saat menklik"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.FT_GROUP_TEXT.FIXEDTEXT.TEXT
-msgid  "Group text"
-msgstr "Kelompokkan teks"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM1.STRINGLIST.ITEM
-msgid  "As one object"
-msgstr "Sebagai satu objek"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM2.STRINGLIST.ITEM
-msgid  "All paragraphs at once"
-msgstr "Semua paragraf sekaligus"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM3.STRINGLIST.ITEM
-msgid  "By 1st level paragraphs"
-msgstr "Pada paragraf tingkat 1"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM4.STRINGLIST.ITEM
-msgid  "By 2nd level paragraphs"
-msgstr "Pada paragraf tingkat 2"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM5.STRINGLIST.ITEM
-msgid  "By 3rd level paragraphs"
-msgstr "Pada paragraf tingkat 3"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM6.STRINGLIST.ITEM
-msgid  "By 4th level paragraphs"
-msgstr "Pada paragraf tingkat 4"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM7.STRINGLIST.ITEM
-msgid  "By 5th level paragraphs"
-msgstr "Pada paragraf tingkat 5"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_GROUP_AUTO.CHECKBOX.TEXT
-msgid  "Automatically after"
-msgstr "Otomatis setelah"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_ANIMATE_FORM.CHECKBOX.TEXT
-msgid  "Animate attached shape"
-msgstr "Jalankan animasi bangun bentuk yang dilampirkan"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_REVERSE.CHECKBOX.TEXT
-msgid  "In reverse order"
-msgstr "Dalam urutan terbalik"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_CLICK.MENUITEM.TEXT
-msgid  "Start On ~Click"
-msgstr "Mulai Saat ~Diklik"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_PREVIOUS.MENUITEM.TEXT
-msgid  "Start ~With Previous"
-msgstr "Mula~i Bersama Sebelumnya"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_AFTER_PREVIOUS.MENUITEM.TEXT
-msgid  "Start ~After Previous"
-msgstr "Mulai Setel~ah Sebelumnya"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_OPTIONS.MENUITEM.TEXT
-msgid  "~Effect Options..."
-msgstr "Opsi ~Efek..."
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_DURATION.MENUITEM.TEXT
-msgid  "~Timing..."
-msgstr "Wak~tu..."
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_REMOVE.MENUITEM.TEXT
-msgid  "~Remove"
-msgstr "~Buang"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_25.MENUITEM.TEXT
 #, fuzzy
 msgid  "Tiny"
 msgstr "Sangat kecil"
 
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_50.MENUITEM.TEXT
-#, fuzzy
-msgid  "Smaller"
-msgstr "Lebih kecil"
-
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MENUITEM.TEXT
 #, fuzzy
 msgid  "Larger"
 msgstr "Lebih besar"
 
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MENUITEM.TEXT
-#, fuzzy
-msgid  "Extra large"
-msgstr "Sangat besar"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_HORIZONTAL.MENUITEM.TEXT
-msgid  "Horizontal"
-msgstr "Horisontal"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_VERTICAL.MENUITEM.TEXT
-msgid  "Vertical"
-msgstr "Vertikal"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_BOTH.MENUITEM.TEXT
-msgid  "Both"
-msgstr "Keduanya"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_QUARTER_SPIN.MENUITEM.TEXT
-msgid  "Quarter spin"
-msgstr "Seperempat putaran"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_HALF_SPIN.MENUITEM.TEXT
-msgid  "Half spin"
-msgstr "Setengah putaran"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_FULL_SPIN.MENUITEM.TEXT
-msgid  "Full spin"
-msgstr "Putaran penuh"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_TWO_SPINS.MENUITEM.TEXT
-msgid  "Two spins"
-msgstr "Dua putaran"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_CLOCKWISE.MENUITEM.TEXT
-msgid  "Clockwise"
-msgstr "Searah jarum jam"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_COUNTERCLOCKWISE.MENUITEM.TEXT
-msgid  "Counter-clockwise"
-msgstr "Berlawanan jarum jam"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_BOLD.MENUITEM.TEXT
-msgid  "Bold"
-msgstr "Tebal"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_ITALIC.MENUITEM.TEXT
-msgid  "Italic"
-msgstr "Miring"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_UNDERLINED.MENUITEM.TEXT
-msgid  "Underlined"
-msgstr "Garis bawah"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_SLOW.STRING.TEXT
-msgid  "Very slow"
-msgstr "Sangat lambat"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_SLOW.STRING.TEXT
-msgid  "Slow"
-msgstr "Lambat"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_NORMAL.STRING.TEXT
-msgid  "Medium"
-msgstr "Menengah"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_FAST.STRING.TEXT
-msgid  "Fast"
-msgstr "Cepat"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_FAST.STRING.TEXT
-msgid  "Very fast"
-msgstr "Sangat cepat"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_NONE.STRING.TEXT
-msgid  "none"
-msgstr "nihil"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_NEXT_CLICK.STRING.TEXT
-msgid  "Until next click"
-msgstr "Hingga klik selanjutnya"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_END_OF_SLIDE.STRING.TEXT
-msgid  "Until end of slide"
-msgstr "Hingga akhir salindia"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DIRECTION_PROPERTY.STRING.TEXT
-msgid  "Direction"
-msgstr "Arah"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_ZOOM_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Zoom"
 msgstr "Zum"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SPOKES_PROPERTY.STRING.TEXT
-msgid  "Spokes"
-msgstr "Jari-jari"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FIRST_COLOR_PROPERTY.STRING.TEXT
-msgid  "First color"
-msgstr "Warna pertama"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SECOND_COLOR_PROPERTY.STRING.TEXT
-msgid  "Second color"
-msgstr "Warna kedua"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FILL_COLOR_PROPERTY.STRING.TEXT
-msgid  "Fill color"
-msgstr "Warna isi"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STYLE_PROPERTY.STRING.TEXT
 #, fuzzy
 msgid  "Style"
 msgstr "Gaya"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_PROPERTY.STRING.TEXT
-msgid  "Font"
-msgstr "Fonta"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_COLOR_PROPERTY.STRING.TEXT
-msgid  "Font color"
-msgstr "Warna fonta"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_STYLE_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Typeface"
 msgstr "Tampilan"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LINE_COLOR_PROPERTY.STRING.TEXT
-msgid  "Line color"
-msgstr "Warna garis"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SIZE_PROPERTY.STRING.TEXT
-msgid  "Font size"
-msgstr "Ukuran fonta"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SCALE_PROPERTY.STRING.TEXT
-msgid  "Size"
-msgstr "Ukuran"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_AMOUNT_PROPERTY.STRING.TEXT
-msgid  "Amount"
-msgstr "Jumlah"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_COLOR_PROPERTY.STRING.TEXT
-msgid  "Color"
-msgstr "Warna"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_NO_SOUND.STRING.TEXT
+#, fuzzy
 msgid  "(No sound)"
 msgstr "(Tanpa suara)"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STOP_PREVIOUS_SOUND.STRING.TEXT
-msgid  "(Stop previous sound)"
-msgstr "(Hentikan suara sebelumnya)"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_BROWSE_SOUND.STRING.TEXT
-msgid  "Other sound..."
-msgstr "Suara lainnya..."
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SAMPLE.STRING.TEXT
-msgid  "Sample"
-msgstr "Contoh"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_1_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "1 Spoke"
 msgstr "1 Jari-jari"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_2_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "2 Spokes"
 msgstr "2 Jari-jari"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_3_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "3 Spokes"
 msgstr "3 Jari-jari"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_4_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "4 Spokes"
 msgstr "4 Jari-jari"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_8_SPOKES.STRING.TEXT
-msgid  "8 Spokes"
-msgstr "8 Jari-jari"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_INSTANT.STRING.TEXT
-msgid  "Instant"
-msgstr "Instan"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_GRADUAL.STRING.TEXT
-msgid  "Gradual"
-msgstr "Bertahap"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_TRIGGER.STRING.TEXT
-msgid  "Trigger"
-msgstr "Picu"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.STRING.TEXT
-msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr "Pertama-tama, klik elemen salindia kemudian klik 'Tambah...' untuk memberikan efek animasi."
-
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CONTROL.TEXT
+#, fuzzy
 msgid  "Slide Transition"
 msgstr "Transisi Salindia"
 
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_APPLY_TRANSITION.FIXEDLINE.TEXT
-msgid  "Apply to selected slides"
-msgstr "Terapkan pada salindia yang dipilih"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_MODIFY_TRANSITION.FIXEDLINE.TEXT
-msgid  "Modify transition"
-msgstr "Ubah transisi"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SPEED.FIXEDTEXT.TEXT
-msgid  "Speed"
-msgstr "Kecepatan"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM1.STRINGLIST.ITEM
-msgid  "Slow"
-msgstr "Pelan"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM2.STRINGLIST.ITEM
-msgid  "Medium"
-msgstr "Menengah"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM3.STRINGLIST.ITEM
-msgid  "Fast"
-msgstr "Cepat"
-
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SOUND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Sound"
 msgstr "Suara"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM1.STRINGLIST.ITEM
-msgid  "<No Sound>"
-msgstr "<Tanpa Suara>"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM2.STRINGLIST.ITEM
-msgid  "<Stop Previous Sound>"
-msgstr "<Hentikan Suara Sebelumnya>"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM3.STRINGLIST.ITEM
-msgid  "Other Sound..."
-msgstr "Suara Lainnya..."
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_LOOP_SOUND.CHECKBOX.TEXT
-msgid  "Loop until next sound"
-msgstr "Putar ulang hingga suara berikutnya"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_ADVANCE_SLIDE.FIXEDLINE.TEXT
-msgid  "Advance slide"
-msgstr "Salindia lanjutan"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_ON_MOUSE.RADIOBUTTON.TEXT
-msgid  "On mouse click"
-msgstr "Saat tetikus diklik"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_AUTO.RADIOBUTTON.TEXT
-msgid  "Automatically after"
-msgstr "Otomatis setelah"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.MF_ADVANCE_AUTO_AFTER.METRICFIELD.CUSTOMUNITTEXT
-msgid  "sec"
-msgstr "detik"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_APPLY_TO_ALL.PUSHBUTTON.TEXT
-msgid  "Apply to All Slides"
-msgstr "Terapkan pada Seluruh Salindia"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_PLAY.PUSHBUTTON.TEXT
-msgid  "Play"
-msgstr "Putar"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_SLIDE_SHOW.PUSHBUTTON.TEXT
-msgid  "Slide Show"
-msgstr "Pertunjukan Salindia"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_AUTO_PREVIEW.CHECKBOX.TEXT
-msgid  "Automatic preview"
-msgstr "Pratinjau otomatis"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.STR_NO_TRANSITION.STRING.TEXT
-msgid  "No Transition"
-msgstr "Tanpa Transisi"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_PAGES.STRING.TEXT
 #, fuzzy
@@ -4766,50 +1372,15 @@ msgstr "Tampilkan Salindia"
 msgid  "Duplicate Slide"
 msgstr "Gandakan Salinda"
 
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_GROUP_NAME.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %s"
-msgstr "%PRODUCTNAME %s"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_CONTENT.STRING.TEXT
-#, fuzzy
-msgid  "Print content"
-msgstr "Cetak isi"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_GROUP.STRING.TEXT
-#, fuzzy
-msgid  "Print"
-msgstr "Cetak"
-
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT.STRING.TEXT
 #, fuzzy
 msgid  "Document"
 msgstr "Dokumen"
 
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Slides"
-msgstr "Salindia"
-
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM2.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Handouts"
 msgstr "Kliping"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM3.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Notes"
-msgstr "Catatan"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM4.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Outline"
-msgstr "Kerangka"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Slides per page"
-msgstr "Salindia per halaman"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM1.ITEMLIST.ITEM
 #, fuzzy
@@ -4845,81 +1416,6 @@ msgstr "6"
 #, fuzzy
 msgid  "9"
 msgstr "9"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER.STRING.TEXT
-#, fuzzy
-msgid  "Order"
-msgstr "Urutan"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Left to right, then down"
-msgstr "Kiri ke kanan, lalu turun"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Top to bottom, then right"
-msgstr "Atas ke bawah, lalu ke kanan"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT.STRING.TEXT
-#, fuzzy
-msgid  "~Contents"
-msgstr "~Isi"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_NAME.STRING.TEXT
-#, fuzzy
-msgid  "~Slide name"
-msgstr "Nama ~salindia"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_IS_PRINT_NAME.STRING.TEXT
-#, fuzzy
-msgid  "P~age name"
-msgstr "Nama h~alaman"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_DATE.STRING.TEXT
-#, fuzzy
-msgid  "~Date and time"
-msgstr "Tanggal ~dan waktu"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_HIDDEN.STRING.TEXT
-#, fuzzy
-msgid  "Hidden pages"
-msgstr "Halaman tersembunyi"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_OUTPUT_OPTIONS_GROUP.STRING.TEXT
-#, fuzzy
-msgid  "Output options"
-msgstr "Opsi keluaran"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY.STRING.TEXT
-#, fuzzy
-msgid  "Color"
-msgstr "Warna"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Original colors"
-msgstr "Warna asli"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Grayscale"
-msgstr "Skala abu-abu"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM3.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Black & white"
-msgstr "Hitam & putih"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "~Size"
-msgstr "~Ukuran"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Original size"
-msgstr "Ukuran asli"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM2.ITEMLIST.ITEM
 #, fuzzy
@@ -4991,11 +1487,6 @@ msgstr "Jangkauan cetak"
 msgid  "~All slides"
 msgstr "Semu~a salindia"
 
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "~Slides"
-msgstr "~Salindia"
-
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM3.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Se~lection"
@@ -5016,47 +1507,8 @@ msgstr "Ha~laman"
 msgid  "Table Design"
 msgstr "Desain Tabel"
 
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS_1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Show"
-msgstr "Tampilkan"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Header Row"
-msgstr "Baris Tajuk"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Total Row"
-msgstr "Baris Total"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Banded Rows"
-msgstr "Alur Baris"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "First Column"
-msgstr "Kolom Pertama"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Last Column"
-msgstr "Kolom Terakhir"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Banded Columns"
-msgstr "Alur Kolom"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES_1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Styles"
-msgstr "Gaya"
-
 #: ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DOCKINGWINDOW.TEXT
+#, fuzzy
 msgid  "Notes Window"
 msgstr "Jendela Catatan"
 
@@ -5069,151 +1521,50 @@ msgstr "Latar belakang"
 msgid  "Background objects"
 msgstr "Objek latar belakang"
 
-#: core/glob.src#STR_LAYER_LAYOUT.STRING.TEXT
-msgid  "Layout"
-msgstr "Tata Letak"
-
 #: core/glob.src#STR_LAYER_CONTROLS.STRING.TEXT
+#, fuzzy
 msgid  "Controls"
 msgstr "Kontrol"
-
-#: core/glob.src#STR_LAYER_MEASURELINES.STRING.TEXT
-msgid  "Dimension Lines"
-msgstr "Garis Dimensi"
 
 #: core/glob.src#STR_PAGE.STRING.TEXT
 #, fuzzy
 msgid  "Slide"
 msgstr "Salindia"
 
-#: core/glob.src#STR_PAGE_NAME.STRING.TEXT
-msgid  "Page"
-msgstr "Halaman"
-
-#: core/glob.src#STR_NOTES.STRING.TEXT
-msgid  "(Notes)"
-msgstr "(Catatan)"
-
 #: core/glob.src#STR_HANDOUT.STRING.TEXT
+#, fuzzy
 msgid  "Handouts"
 msgstr "Kliping"
 
-#: core/glob.src#STR_PRESOBJ_MPTITLE.STRING.TEXT
-msgid  "Click to edit the title text format"
-msgstr "Klik untuk menyunting format teks judul"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLINE.STRING.TEXT
-msgid  "Click to edit the outline text format"
-msgstr "Klik untuk menyunting teks kerangka"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER2.STRING.TEXT
-msgid  "Second Outline Level"
-msgstr "Tingkat Tajuk Kedua"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER3.STRING.TEXT
-msgid  "Third Outline Level"
-msgstr "Tingkat Tajuk Ketiga"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER4.STRING.TEXT
-msgid  "Fourth Outline Level"
-msgstr "Tingkat Tajuk Keempat"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER5.STRING.TEXT
-msgid  "Fifth Outline Level"
-msgstr "Tingkat Tajuk Kelima"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER6.STRING.TEXT
-msgid  "Sixth Outline Level"
-msgstr "Tingkat Tajuk Keenam"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER7.STRING.TEXT
-msgid  "Seventh Outline Level"
-msgstr "Tingkat Tajuk Ketujuh"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER8.STRING.TEXT
-msgid  "Eighth Outline Level"
-msgstr "Tingkat Tajuk Kedelapan"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER9.STRING.TEXT
-msgid  "Ninth Outline Level"
-msgstr "Tingkat Tajuk Kesembilan"
-
 #: core/glob.src#STR_PRESOBJ_MPNOTESTITLE.STRING.TEXT
+#, fuzzy
 msgid  "Click to move the slide"
 msgstr "Klik untuk memindahkan salindia"
-
-#: core/glob.src#STR_PRESOBJ_MPNOTESTEXT.STRING.TEXT
-msgid  "Click to edit the notes format"
-msgstr "Klik untuk menyunting format catatan"
-
-#: core/glob.src#STR_PRESOBJ_TITLE.STRING.TEXT
-msgid  "Click to add title"
-msgstr "Klik untuk menambah judul"
 
 #: core/glob.src#STR_PRESOBJ_OUTLINE.STRING.TEXT
 #, fuzzy
 msgid  "Click to add text"
 msgstr "Klik untuk menambah teks"
 
-#: core/glob.src#STR_PRESOBJ_NOTESTEXT.STRING.TEXT
-msgid  "Click to add notes"
-msgstr "Klik untuk menambah catatan"
-
-#: core/glob.src#STR_PRESOBJ_GRAPHIC.STRING.TEXT
-msgid  "Double-click to add graphics"
-msgstr "Klik ganda untuk menambah grafik"
-
-#: core/glob.src#STR_PRESOBJ_OBJECT.STRING.TEXT
-msgid  "Double-click to add an object"
-msgstr "Klik ganda untuk menambah objek"
-
 #: core/glob.src#STR_PRESOBJ_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Double-click to add a chart"
 msgstr "Klik ganda untuk menambah bagan"
 
 #: core/glob.src#STR_PRESOBJ_ORGCHART.STRING.TEXT
+#, fuzzy
 msgid  "Double-click to add an organization chart"
 msgstr "Klik ganda untuk menambah bagan organisasi"
 
-#: core/glob.src#STR_PRESOBJ_TABLE.STRING.TEXT
-msgid  "Double-click to add a spreadsheet"
-msgstr "Klik ganda untuk menambah lembar kerja"
-
 #: core/glob.src#STR_OUTLINEVIEWSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Outline View"
 msgstr "Tampilan Kerangka"
 
 #: core/glob.src#STR_DRAWVIEWSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Drawing View"
 msgstr "Tampilan Menggambar"
-
-#: core/glob.src#STR_PRESVIEWSHELL.STRING.TEXT
-msgid  "Presentation mode"
-msgstr "Modus presentasi"
-
-#: core/glob.src#STR_PREVIEWVIEWSHELL.STRING.TEXT
-msgid  "Preview Window"
-msgstr "Jendela Pratinjau"
-
-#: core/glob.src#STR_TEXTOBJECTBARSHELL.STRING.TEXT
-msgid  "Text Mode"
-msgstr "Modus Teks"
-
-#: core/glob.src#STR_STDOBJECTBARSHELL.STRING.TEXT
-msgid  "Document Mode"
-msgstr "Modus Dokumen"
-
-#: core/glob.src#STR_BEZIEROBJECTBARSHELL.STRING.TEXT
-msgid  "Bézier mode"
-msgstr "Modus Bézier"
-
-#: core/glob.src#STR_APPLICATIONOBJECTBAR.STRING.TEXT
-msgid  "StarImpress 4.0"
-msgstr "StarImpress 4.0"
-
-#: core/glob.src#STR_GLUEPOINTSOBJECTBARSHELL.STRING.TEXT
-msgid  "Glue Points Mode"
-msgstr "Modus Titik Lengket"
 
 #: core/glob.src#STR_LAYOUT_DEFAULT_NAME.STRING.TEXT
 #, fuzzy
@@ -5225,115 +1576,47 @@ msgstr "Baku"
 msgid  "Title"
 msgstr "Judul"
 
-#: core/glob.src#STR_BAD_PASSWORD_OR_FILE_CORRUPTED.STRING.TEXT
-msgid  "The password is incorrect or the file is damaged."
-msgstr "Sandi salah atau berkasnya rusak."
-
 #: core/glob.src#STR_UNDO_MOVEPAGES.STRING.TEXT
+#, fuzzy
 msgid  "Move slides"
 msgstr "Pindahkan salindia"
 
-#: core/glob.src#STR_NOT_ENOUGH_MEMORY.STRING.TEXT
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "Tidak cukup memori!\nAksinya akan dibatalkan."
-
 #: core/glob.src#STR_POOLSHEET_MEASURE.STRING.TEXT
+#, fuzzy
 msgid  "Dimension Line"
 msgstr "Garis Dimensi"
 
-#: core/glob.src#STR_POOLSHEET_OBJWITHARROW.STRING.TEXT
-msgid  "Object with arrow"
-msgstr "Objek dengan panah"
-
-#: core/glob.src#STR_POOLSHEET_OBJWITHSHADOW.STRING.TEXT
-msgid  "Object with shadow"
-msgstr "Objek dengan bayang"
-
-#: core/glob.src#STR_POOLSHEET_OBJWITHOUTFILL.STRING.TEXT
-msgid  "Object without fill"
-msgstr "Objek tanpa isi"
-
-#: core/glob.src#STR_POOLSHEET_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr "Teks"
-
-#: core/glob.src#STR_POOLSHEET_TEXTBODY.STRING.TEXT
-msgid  "Text body"
-msgstr "Teks badan"
-
-#: core/glob.src#STR_POOLSHEET_TEXTBODY_JUSTIFY.STRING.TEXT
-msgid  "Text body justified"
-msgstr "Teks badan rata kiri kanan"
+#: core/glob.src#STR_POOLSHEET_OBJNOLINENOFILL.STRING.TEXT
+msgid  "Object with no fill and no line"
+msgstr ""
 
 #: core/glob.src#STR_POOLSHEET_TEXTBODY_INDENT.STRING.TEXT
+#, fuzzy
 msgid  "First line indent"
 msgstr "Indentasi baris pertama"
 
-#: core/glob.src#STR_POOLSHEET_TITLE1.STRING.TEXT
-msgid  "Title1"
-msgstr "Judul1"
-
-#: core/glob.src#STR_POOLSHEET_TITLE2.STRING.TEXT
-msgid  "Title2"
-msgstr "Judul2"
-
 #: core/glob.src#STR_POOLSHEET_HEADLINE.STRING.TEXT
+#, fuzzy
 msgid  "Heading"
 msgstr "Tajuk"
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE1.STRING.TEXT
+#, fuzzy
 msgid  "Heading1"
 msgstr "Tajuk1"
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE2.STRING.TEXT
+#, fuzzy
 msgid  "Heading2"
 msgstr "Tajuk2"
 
-#: core/glob.src#STR_EMPTY_STYLESHEET_NAME.STRING.TEXT
-msgid  "Blank template"
-msgstr "Palet kosong"
-
-#: core/glob.src#STR_PSEUDOSHEET_SUBTITLE.STRING.TEXT
-msgid  "Subtitle"
-msgstr "Subjudul"
-
-#: core/glob.src#STR_PSEUDOSHEET_OUTLINE.STRING.TEXT
-msgid  "Outline"
-msgstr "Kerangka"
-
-#: core/glob.src#STR_PSEUDOSHEET_NOTES.STRING.TEXT
-msgid  "Notes"
-msgstr "Catatan"
-
-#: core/glob.src#STR_GRAFOBJECTBARSHELL.STRING.TEXT
-msgid  "Graphics mode"
-msgstr "Modus grafik"
-
 #: core/glob.src#STR_MEDIAOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Media Playback"
 msgstr "Pemutar Media"
 
-#: core/glob.src#STR_TABLEOBJECTBARSHELL.STRING.TEXT
-msgid  "Table"
-msgstr "Tabel"
-
-#: core/glob.src#STR_POWERPOINT_IMPORT.STRING.TEXT
-msgid  "PowerPoint Import"
-msgstr "Impor PowerPoint"
-
-#: core/glob.src#STR_POOLSHEET_ARROW.STRING.TEXT
-msgid  "Arrow"
-msgstr "Panah"
-
-#: core/glob.src#STR_LOAD_DOC.STRING.TEXT
-msgid  "Load Document"
-msgstr "Muat Dokumen"
-
-#: core/glob.src#STR_SAVE_DOC.STRING.TEXT
-msgid  "Save Document"
-msgstr "Simpan Dokumen"
-
 #: core/glob.src#RID_SD_ERRHDL.ERR_CODE_(_ERRCODE_CLASS_READ_,_ERR_FORMAT_ROWCOL_).STRING.TEXT
+#, fuzzy
 msgid  "File format error found at $(ARG1)(row,col)."
 msgstr "Kesalahan format berkas ditemukan pada $(ARG1)(brs,kol)."
 
@@ -5343,29 +1626,11 @@ msgid  "Format error discovered in the file in sub-document $(ARG1) at position 
 msgstr "Kesalahan format ditemukan dalam berkas pada subdokumen $(ARG1) di posisi $(ARG2)(baris,kolom)."
 
 #: core/glob.src#STR_3DOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "3-D Settings"
 msgstr "Pengaturan 3D"
 
 #: core/glob.src#STR_FONTWORKOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Fontwork"
 msgstr "Fontwork"
-
-#: core/glob.src#STR_POOLSHEET_BANDED_CELL.STRING.TEXT
-msgid  "Banding cell"
-msgstr "Sel banding"
-
-#: core/glob.src#STR_POOLSHEET_HEADER.STRING.TEXT
-msgid  "Header"
-msgstr "Tajuk"
-
-#: core/glob.src#STR_POOLSHEET_TOTAL.STRING.TEXT
-msgid  "Total line"
-msgstr "Total baris"
-
-#: core/glob.src#STR_POOLSHEET_FIRST_COLUMN.STRING.TEXT
-msgid  "First column"
-msgstr "Kolom pertama"
-
-#: core/glob.src#STR_POOLSHEET_LAST_COLUMN.STRING.TEXT
-msgid  "Last column"
-msgstr "Kolom terakhir"

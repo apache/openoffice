@@ -43,17 +43,9 @@ msgstr "アドオンヘルプ(~O)"
 msgid  "All"
 msgstr "すべて"
 
-#: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
-msgstr "更新(~U)"
-
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
 msgid  "~Close & Return to "
 msgstr "閉じる & 戻る(~C)"
-
-#: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
-msgid  "Visible ~Buttons"
-msgstr "ボタンを表示/非表示(~B)"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
 msgid  "~Customize Toolbar..."
@@ -79,9 +71,13 @@ msgstr "ツールバーを閉じる(~T)"
 msgid  "Save Copy ~as..."
 msgstr "コピーに名前を付けて保存(~A)..."
 
-#: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
-msgid  "No Documents"
-msgstr "ドキュメントなし"
+#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
+msgid  "Clear List"
+msgstr "履歴消去"
+
+#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
+msgid  "Clears the list with the most recently opened files. This action can not be undone."
+msgstr "最近開いたファイルのリストを消去します。この操作は元に戻せません。"
 
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
 msgid  "Add-On %num%"
@@ -115,17 +111,9 @@ msgstr "2."
 msgid  "Accept the License Agreement."
 msgstr "ライセンス条項に同意します。"
 
-#: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
-msgstr "同意する(~A)"
-
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
 msgstr "同意しない"
-
-#: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
-msgid  "Retry"
-msgstr "再試行"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"

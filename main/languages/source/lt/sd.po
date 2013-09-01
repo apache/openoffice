@@ -31,16 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "HTML Export"
-msgstr "HTML eksportas"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_TITEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Assign design"
-msgstr "Projekto priskyrimas"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_NEW_DESIGN.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "New design"
@@ -61,16 +51,6 @@ msgstr "Šalinti pasirinktą projektą"
 msgid  "Select an existing design or create a new one"
 msgstr "Parenkamas esamas projektas arba sukuriamas naujas"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Publication type"
-msgstr "Eksportuojamo dokumento tipas"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_STANDARD.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Standard H~TML format"
-msgstr "Įprastas H~TML formatas"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_FRAMES.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Standard HTML with ~frames"
@@ -80,16 +60,6 @@ msgstr "Įprastas HTML su ~kadrais"
 #, fuzzy
 msgid  "~Automatic"
 msgstr "~Automatinis"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~WebCast"
-msgstr "„~WebCast“"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_HTML.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Options"
-msgstr "Parinktys"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CONTENT.CHECKBOX.TEXT
 #, fuzzy
@@ -101,55 +71,10 @@ msgstr "Sukurti antraštinį puslapį"
 msgid  "Show notes"
 msgstr "Rodyti pastabas"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_KIOSK.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Advance slides"
-msgstr "Skaidrių keitimas"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_DEFAULT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~As stated in document"
-msgstr "~Kaip nurodyta dokumente"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Slide view time:"
-msgstr "~Trukmė:"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TMF.TIMEFIELD.QUICKHELPTEXT
-#, fuzzy
-msgid  "~Duration of page"
-msgstr "~Puslapio tąsa"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ENDLESS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Endless"
-msgstr "~Ciklas"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_WEBCAST.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "WebCast"
-msgstr "„WebCast“"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ASP.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Active Server Pages (ASP)"
-msgstr "~„Active Server Pages“ (ASP)"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_PERL.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Perl"
 msgstr "„Perl“"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_INDEX_TXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~URL for listeners"
-msgstr "~URL klausytojams"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_URL_TXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "URL for ~presentation:"
-msgstr "URL ~demonstravimui:"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CGI_TXT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -161,75 +86,10 @@ msgstr "„~Perl“ skriptų URL:"
 msgid  "Save graphics as"
 msgstr "Paveikslus įrašyti šiuo formatu:"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_PNG.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~PNG"
-msgstr "~PNG"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_GIF.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~GIF"
-msgstr "~GIF"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_JPG.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~JPG"
-msgstr "~JPG"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_QUALITY_TXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Quality"
-msgstr "Kokybė"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Monitor resolution"
-msgstr "Ekrano skiriamoji geba"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_1.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Low resolution (~640x480 pixels)"
-msgstr "Žema (~640x480 taškų)"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_2.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Medium resolution (~800x600 pixels)"
-msgstr "Vidutinė (~800x600 taškų)"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_3.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "High resolution (~1024x768 pixels)"
-msgstr "Aukšta (~1024x768 taškų)"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_3.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Effects"
-msgstr "Efektai"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_SLD_SOUND.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Export sounds when slide advances"
-msgstr "~Eksportuoti garsus"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_HIDDEN_SLIDES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Export ~hidden slides"
 msgstr "E~ksportuoti paslėptus lapus"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Information for the title page"
-msgstr "Informacija antraštiniam puslapiui"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_AUTHOR_TXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Author"
-msgstr "~Autorius"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_EMAIL_TXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "E-~mail address"
-msgstr "El. ~pašto adresas"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_WWW_TXT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -241,70 +101,10 @@ msgstr "~Žiniatinklio svetainė"
 msgid  "Additional ~information"
 msgstr "Papildoma ~informacija"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_DOWNLOAD.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Link to a copy of the ~original presentation"
-msgstr "Susieti su ~originalios pateikties kopija"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_CREATED.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Note: 'Created with %PRODUCTNAME'"
-msgstr "Pastaba: sukurtas naudojantis „%PRODUCTNAME“"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TITEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Select button style"
-msgstr "Parinkite mygtukų stilių"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TEXTONLY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Text only"
-msgstr "~Tik tekstas"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TITEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Select color scheme"
-msgstr "Parinkite spalvų schemą"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DOCCOLORS.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Apply color scheme from document"
-msgstr "~Dokumento spalvos"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DEFAULT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Use ~browser colors"
-msgstr "~Naršyklės spalvos"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_USER.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Use custom color scheme"
-msgstr "~Žemiau pasirinktos:"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TEXT.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Text"
 msgstr "Tekstas"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_LINK.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Hyper~link"
-msgstr "Hiper~saitas"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_ALINK.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Active Li~nk"
-msgstr "Aktyvusis sai~tas"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_VLINK.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Visited Link"
-msgstr "~Aplankytas saitas"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_BACK.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Bac~kground"
-msgstr "~Fonas"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_LAST.PUSHBUTTON.TEXT
 #, fuzzy
@@ -316,90 +116,25 @@ msgstr "<< Atgal"
 msgid  "Next >>"
 msgstr "Toliau >>"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_FINISH.OKBUTTON.TEXT
-#, fuzzy
-msgid  "~Create"
-msgstr "~Kurti"
-
-#: filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_SAVE.OKBUTTON.TEXT
-#, fuzzy
-msgid  "~Save"
-msgstr "~Įrašyti"
-
 #: filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_NOSAVE.CANCELBUTTON.TEXT
 #, fuzzy
 msgid  "Do Not Save"
 msgstr "Neįrašyti"
-
-#: filter/html/pubdlg.src#DLG_DESIGNNAME.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "Name HTML Design"
-msgstr "Pavadinti HTML projektą"
 
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Select a slide design"
 msgstr "Pa~rinkti lapo projektą"
 
-#: ui/dlg/sdpreslt.src#DLG_PRESLT.CBX_MASTER_PAGE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Exchange background page"
-msgstr "~Pakeisti fono puslapį"
-
-#: ui/dlg/sdpreslt.src#DLG_PRESLT.CBX_CHECK_MASTERS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Delete unused backgrounds"
-msgstr "~Šalinti nenaudojamus fonus"
-
-#: ui/dlg/sdpreslt.src#DLG_PRESLT.BTN_LOAD.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Load..."
-msgstr "~Įkelti..."
-
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.HELPBUTTON.TEXT
 #, fuzzy
 msgid  "Slide Design"
 msgstr "Lapo projektas"
 
-#: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Insert Slides/Objects"
-msgstr "Įterpti skaidres arba objektus"
-
-#: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.CBX_LINK.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Link"
-msgstr "~Saitas"
-
 #: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.CBX_CHECK_MASTERS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Delete unused backg~rounds"
 msgstr "Šalinti ~nenaudojamus fonus"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Snap Object"
-msgstr "Naujas traukos objektas"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.BTN_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "~Šalinti"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Padėtis"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.FL_DIRECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Type"
-msgstr "Tipas"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_POINT.IMAGERADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Point"
-msgstr "~Taškas"
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_VERTICAL.IMAGERADIOBUTTON.TEXT
 #, fuzzy
@@ -411,50 +146,10 @@ msgstr "~Vertikali linija"
 msgid  "Hori~zontal"
 msgstr "~Horizontali linija"
 
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.GRP_TYPE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Field type"
-msgstr "Lauko tipas"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.RBT_FIX.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Fixed"
-msgstr "~Fiksuotas"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.RBT_VAR.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Variable"
-msgstr "~Kintamas"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.FT_LANGUAGE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Language"
-msgstr "~Kalba"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.FT_FORMAT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "F~ormat"
-msgstr "F~ormatas"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Edit Field"
-msgstr "Taisyti lauką"
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Convert to Polygon"
-msgstr "Konvertavimas į laužtę"
-
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.BTN_PREVIEW.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Preview"
 msgstr "Peržiūra"
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.GRP_SETTINGS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Settings"
-msgstr "Nuostatos"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_LAYERS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -476,20 +171,10 @@ msgstr "~Užpildyti skyles:"
 msgid  "Tile size:"
 msgstr "Plokštelės dydis:"
 
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_ORIGINAL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Source picture:"
-msgstr "Pradinis paveikslas:"
-
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CTL_BMP.CONTROL.TEXT
 #, fuzzy
 msgid  "Source picture"
 msgstr "Pradinis paveikslas:"
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_VECTORIZED.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Vectorized image:"
-msgstr "Vektorizuotas paveikslas:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CTL_WMF.CONTROL.TEXT
 #, fuzzy
@@ -501,179 +186,25 @@ msgstr "Vektorizuotas paveikslas:"
 msgid  "Progress"
 msgstr "Eiga"
 
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Graphics Styles"
-msgstr "Grafikos stiliai"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Linija"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Area"
-msgstr "Sritis"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Shadowing"
-msgstr "Šešėlis"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Transparency"
-msgstr "Skaidrumas"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Font"
-msgstr "Šriftas"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Font Effect"
-msgstr "Šrifto efektas"
-
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Įtraukos ir intervalai"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Tekstas"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Text Animation"
-msgstr "Teksto animacija"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_MEASURE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Dimensioning"
-msgstr "Matmenų linija"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CONNECTION.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Connector"
 msgstr "Jungiamoji linija"
 
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Lygiuoti"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Asian Typography"
-msgstr "Azijos šriftai"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Tabs"
-msgstr "Tabuliavimo žymės"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Back"
-msgstr "Atgal"
-
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_NEW.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~New..."
 msgstr "~Naujas..."
 
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Edit..."
-msgstr "~Taisyti..."
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_REMOVE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "~Šalinti"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_COPY.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Cop~y"
-msgstr "Kop~ijuoti"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_STARTSHOW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Start"
-msgstr "~Pradžia"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~Užverti"
-
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.LB_CUSTOMSHOWS.LISTBOX.QUICKHELPTEXT
+#, fuzzy
 msgid  "Custom Screen Show"
 msgstr ""
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.CBX_USE_CUSTOMSHOW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Use Custom Slide Show"
-msgstr "~Naudoti aprašytą pateikties demonstravimą"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Custom Slide Shows"
-msgstr "Aprašyti pateikčių demonstravimai"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Pavadinimas"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_PAGES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Existing slides"
-msgstr "Esamos skaidrės"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_CUSTOM_PAGES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Selected slides"
-msgstr "Pasirinktos skaidrės"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Define Custom Slide Show"
-msgstr "Aprašyti pateikties demonstravimą"
-
-#: ui/dlg/dlgass.src#DLG_ASS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Presentation Wizard"
-msgstr "Pateikties vediklis"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_PREVIEW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Previe~w"
-msgstr "Peržiūra"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_STARTWITH.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Do not show this wizard again"
-msgstr "~Daugiau nerodyti šio vediklio"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE1_ARTGROUP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Type"
-msgstr "Tipas"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_EMPTY.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Empty presentation"
-msgstr "~Nauja pateiktis"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_TEMPLATE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~From template"
-msgstr "~Pasirinkti šabloną"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_OPEN.RADIOBUTTON.TEXT
 #, fuzzy
@@ -685,120 +216,25 @@ msgstr "At~verti sukurtą pateiktį"
 msgid  "~Select a slide design"
 msgstr "Pa~rinkti lapo projektą"
 
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE2_OUTPUTTYPES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Select an output medium"
-msgstr "Skaidrės tipas"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM5.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Original"
-msgstr "~Autentiška"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM1.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Sc~reen"
-msgstr "~Demonstracinė"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM2.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Sli~de"
-msgstr "Įprasta skai~drė"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM3.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "O~verhead sheet"
-msgstr "An~traštinė"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM4.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "P~aper"
-msgstr "~Spausdinama"
-
 #: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE3_EFFECT.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Select a slide transition"
 msgstr "Skaidrės keitimas"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_EFFECT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Effect"
-msgstr "~Efektai"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_SPEED.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Speed"
-msgstr "~Sparta"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE3_PRESTYPE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Select the presentation type"
-msgstr "Tipas"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE3_LIVE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Default"
 msgstr "~Numatyta"
 
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE3_KIOSK.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Automatic"
-msgstr "~Automatinis"
-
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_TIME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "D~uration of page"
 msgstr "~Rodymo trukmė"
 
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_BREAK.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Du~ration of pause"
-msgstr "Pau~zės trukmė"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_PAGE3_LOGO.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Sh~ow logo"
-msgstr "R~odyti logotipą"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE4_PERSONAL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Describe your basic ideas"
-msgstr "Apibūdinkite pagrindines pateikties idėjas"
-
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKNAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "What is your name or the name of your company?"
 msgstr "Jūsų vardas arba įmonės pavadinimas?"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKTOPIC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "What is the subject of your presentation?"
-msgstr "Pateikties tema?"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKINFORMATION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Further ideas to be presented?"
-msgstr "Tolesnės pateikiamos idėjos"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE5_PAGELIST.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Ch~oose your pages"
-msgstr "Pasi~rinkti skaidres"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_PAGE5_SUMMARY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "C~reate summary"
-msgstr "K~urti santrauką"
-
-#: ui/dlg/dlgass.src#DLG_ASS.BUT_LAST.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "<< ~Back"
-msgstr "<< ~Atgal"
-
-#: ui/dlg/dlgass.src#DLG_ASS.BUT_NEXT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Next >>"
-msgstr "~Toliau >>"
 
 #: ui/dlg/dlgass.src#DLG_ASS.BUT_FINISH.OKBUTTON.TEXT
 #, fuzzy
@@ -806,53 +242,14 @@ msgid  "~Create"
 msgstr "~Sukurti"
 
 #: ui/dlg/dlgass.src#DLG_ASS.STR_OPEN.STRING.TEXT
+#, fuzzy
 msgid  "~Open"
 msgstr ""
-
-#: ui/dlg/PaneDockingWindow.src#FLT_LEFT_PANE_IMPRESS_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
-#, fuzzy
-msgid  "Slide Pane"
-msgstr "Skaidrių polangis"
-
-#: ui/dlg/PaneDockingWindow.src#FLT_LEFT_PANE_DRAW_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
-#, fuzzy
-msgid  "Page Pane"
-msgstr "Lapų polangis"
-
-#: ui/dlg/PaneDockingWindow.src#FLT_TOOL_PANEL_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
-#, fuzzy
-msgid  "Task Pane"
-msgstr "Užduočių polangis"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Header and Footer"
-msgstr "Puslapinė antraštė ir poraštė"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.1.RID_SD_TABPAGE_HEADERFOOTER_SLIDE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Slide"
-msgstr "Lapas"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.1.RID_SD_TABPAGE_HEADERFOOTER_NOTESHANDOUT.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Notes and Handouts"
 msgstr "Pastabos ir dalijamoji medžiaga"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FL_INCLUDE_ON_PAGE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Include on slide"
-msgstr "Rodyti skaidrėje"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_HEADER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Header"
-msgstr "Puslapinė antraštė"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_HEADER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Header text"
-msgstr "Puslapinės antraštės tekstas"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_DATETIME.CHECKBOX.TEXT
 #, fuzzy
@@ -874,51 +271,6 @@ msgstr "~Kintamas"
 msgid  "~Language:"
 msgstr "~Kalba:"
 
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_FOOTER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Footer"
-msgstr "Puslapinė poraštė"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_FOOTER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Footer text"
-msgstr "Puslapinės poraštės tekstas"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_SLIDENUMBER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Slide number"
-msgstr "Skaidrės numeris"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_NOTONTITLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Do not show on first slide"
-msgstr "Nerodyti pirmoje skaidrėje"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.BT_APPLYTOALL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Apply to All"
-msgstr "Taikyti visoms skaidrėms"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.BT_APPLY.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Taikyti"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.STR_PAGE_NUMBER.STRING.TEXT
-#, fuzzy
-msgid  "Page number"
-msgstr "Puslapio numeris"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.STR_INCLUDE_ON_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Include on page"
-msgstr "Rodyti lape"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Slide Show"
-msgstr "Pateikties demonstravimas"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_RANGE.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Range"
@@ -929,50 +281,10 @@ msgstr "Apimtis"
 msgid  "All ~slides"
 msgstr "~Visos skaidrės"
 
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_AT_DIA.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~From:"
-msgstr "~Nuo:"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_CUSTOMSHOW.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Custom Slide Show"
-msgstr "~Aprašytas pateikties demonstravimas"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_KIND.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Type"
-msgstr "Тipas"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_STANDARD.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Default"
 msgstr "~Numatyta"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_WINDOW.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Window"
-msgstr "~Langas"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_AUTO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "A~uto"
-msgstr "A~utomatinis"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.TMF_PAUSE.TIMEFIELD.QUICKHELPTEXT
-#, fuzzy
-msgid  "Duration of pause"
-msgstr "Pauzės trukmė"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_AUTOLOGO.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Show ~logo"
-msgstr "Rodyti ~logotipą"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_OPTIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Options"
-msgstr "Parinktys"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_MANUEL.CHECKBOX.TEXT
 #, fuzzy
@@ -984,55 +296,15 @@ msgstr "~Skaidres keisti rankiniu būdu"
 msgid  "Mouse pointer ~visible"
 msgstr "Pelės žymeklis ~matomas"
 
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_PEN.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Mouse pointer as ~pen"
-msgstr "Pelės žymeklis ~rašiklio formos"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_NAVIGATOR.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Navigator visible"
 msgstr "~Žvalgiklis matomas"
 
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_ANIMATION_ALLOWED.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Animations allowed"
-msgstr "~Animacija leistina"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_CHANGE_PAGE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Change slides by clic~king on background"
 msgstr "Keisti skaidres ~spustelint fone"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_ALWAYS_ON_TOP.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Presentation always ~on top"
-msgstr "Skaidrė visada ~viršuje"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_MONITOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Multiple displays"
-msgstr "Keletas ekranų"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.FT_MONITOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "P~resentation display"
-msgstr "~Demonstravimo ekranas"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_PRIMARY_MONITOR.STRING.TEXT
-#, fuzzy
-msgid  "Display %1 (primary)"
-msgstr "%1 ekranas (pagrindinis)"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_MONITOR.STRING.TEXT
-#, fuzzy
-msgid  "Display %1"
-msgstr "%1 ekranas"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_ALL_MONITORS.STRING.TEXT
-#, fuzzy
-msgid  "All displays"
-msgstr "Visi ekranai"
 
 #: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.TABDIALOG.TEXT
 #, fuzzy
@@ -1044,120 +316,20 @@ msgstr "Ženklinimas ir numeravimas"
 msgid  "Bullets"
 msgstr "Ženkleliai"
 
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_SINGLE_NUM.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Numbering type"
-msgstr "Numeravimo tipas"
-
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_BMP.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "Paveikslai"
-
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_NUM_POSITION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Padėtis"
-
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_NUM_OPTIONS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Customize"
-msgstr "Sąranka"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Presentation Layout"
-msgstr "Pateikties maketas"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Linija"
-
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Area"
 msgstr "Sritis"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "Šešėlis"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Transparency"
-msgstr "Skaidrumas"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Font"
-msgstr "Šriftas"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Font Effects"
-msgstr "Rašmenų savybės"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Įtraukos ir intervalai"
 
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Tekstas"
-
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_BULLET.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Bullets"
 msgstr "Ženkleliai"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_SINGLE_NUM.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Numbering type"
-msgstr "Numeravimo tipas"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_BMP.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "Paveikslai"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_NUM_OPTIONS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Customize"
-msgstr "Sąranka"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Lygiuoti"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Asian Typography"
-msgstr "Azijos šriftai"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Tabs"
-msgstr "Tabuliavimo žymės"
-
-#: ui/dlg/copydlg.src#DLG_COPY.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Duplicate"
-msgstr "Kopija"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_COPIES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Number of ~copies"
-msgstr "~Kopijų skaičius"
-
-#: ui/dlg/copydlg.src#DLG_COPY.BTN_SET_VIEWDATA.BUTTONIMAGE.QUICKHELPTEXT
-#, fuzzy
-msgid  "Values from Selection"
-msgstr "Reikšmės iš atrankos"
 
 #: ui/dlg/copydlg.src#DLG_COPY.BTN_SET_DEFAULT.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1169,140 +341,20 @@ msgstr "~Numatyta"
 msgid  " degrees"
 msgstr " laipsniai"
 
-#: ui/dlg/copydlg.src#DLG_COPY.FT_ANGLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Angle"
-msgstr "~Kampas"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_MOVE_X.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~X axis"
-msgstr "~X ašis"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_MOVE_Y.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Y axis"
-msgstr "~Y ašis"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_WIDTH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Width"
-msgstr "~Plotis"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_HEIGHT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Height"
-msgstr "~Aukštis"
-
-#: ui/dlg/copydlg.src#DLG_COPY.GRP_MOVEMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Placement"
-msgstr "Padėtis"
-
-#: ui/dlg/copydlg.src#DLG_COPY.GRP_ENLARGEMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Enlargement"
-msgstr "Didinimas"
-
-#: ui/dlg/copydlg.src#DLG_COPY.GRP_COLOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Colors"
-msgstr "Spalvos"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_START_COLOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Start"
-msgstr "~Pradžia"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_END_COLOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~End"
-msgstr "~Pabaiga"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Paragraph"
-msgstr "Pastraipa"
-
 #: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Įtraukos ir intervalai"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Lygiuoti"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Asian Typography"
-msgstr "Azijos šriftai"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Tabs"
-msgstr "Tabuliavimo žymės"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Return"
-msgstr "Grįžti"
 
 #: ui/dlg/dlg_char.src#TAB_CHAR.TABDIALOG.TEXT
 #, fuzzy
 msgid  "Character"
 msgstr "Rašmenys"
 
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Font"
-msgstr "Šriftas"
-
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Font Effects"
-msgstr "Rašmenų savybės"
-
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Padėtis"
-
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Return"
-msgstr "Grįžti"
-
-#: ui/dlg/dlgpage.src#TAB_PAGE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Page Setup"
-msgstr "Puslapio parametrai"
-
-#: ui/dlg/dlgpage.src#TAB_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Page"
-msgstr "Puslapis"
-
 #: ui/dlg/dlgpage.src#TAB_PAGE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Background"
 msgstr "Fonas"
-
-#: ui/dlg/dlgpage.src#TAB_PAGE.1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Return"
-msgstr "Grįžti"
-
-#: ui/dlg/tpaction.src#TP_ANIMATION.FT_ACTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Action at mouse click"
-msgstr "Veiksmas spustelėjus pele"
-
-#: ui/dlg/tpaction.src#TP_ANIMATION.BTN_SEARCH.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Browse..."
-msgstr "~Parinkti..."
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.BTN_SEEK.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1310,113 +362,19 @@ msgid  "~Find"
 msgstr "~Ieškoti"
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.STR_PATHNAME.STRING.TEXT
+#, fuzzy
 msgid  "Path Name"
 msgstr ""
-
-#: ui/dlg/tpaction.src#TP_ANIMATION.STRING.TEXT
-#, fuzzy
-msgid  "Interaction"
-msgstr "Sąveika"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.FT_OBJ_INFO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Processing metafile:"
-msgstr "Apdorojamas metafailas:"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.FT_ACT_INFO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Broken down metaobjects:"
-msgstr "Perlaužti metaobjektai:"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.FT_INS_INFO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Inserted drawing objects:"
-msgstr "Įterpti grafikos objektai:"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "Break"
-msgstr "Lūžis"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.FL_PLACEHOLDERS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Placeholders"
-msgstr "Rezervuotos vietos"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_HEADER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Header"
-msgstr "Puslapinė antraštė"
 
 #: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_DATE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Date/time"
 msgstr "Data ir laikas"
 
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_FOOTER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Footer"
-msgstr "Puslapinė poraštė"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_PAGE_NUMBER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Page number"
-msgstr "Puslapio numeris"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.STR_SLIDE_NUMBER.STRING.TEXT
-#, fuzzy
-msgid  "Slide number"
-msgstr "Skaidrės numeris"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.STR_MASTER_LAYOUT_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Master Elements"
-msgstr "Pagrindo elementai"
-
-#: ui/dlg/tpoption.src#SCALE_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Scale"
-msgstr "Mastelis"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TABPAGE.TEXT
-#, fuzzy
-msgid  "Contents"
-msgstr "Turinys"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.GRP_DISPLAY.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Display"
-msgstr "Rodyti"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_RULER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Rulers visible"
-msgstr "~Matomos liniuotės"
-
 #: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_HELPLINES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Guides when moving"
 msgstr "Rodyti ~orientacines linijas"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_HANDLES_BEZIER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~All control points in Bézier editor"
-msgstr "~Visi valdymo taškai Bezjė objektų rengyklėje"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_MOVE_OUTLINE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Contour of each individual object"
-msgstr "~Kiekvieno objekto kontūras atskirai"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.TABPAGE.TEXT
-#, fuzzy
-msgid  "Other"
-msgstr "Kita"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_TEXT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text objects"
-msgstr "Teksto objektai"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_QUICKEDIT.CHECKBOX.TEXT
 #, fuzzy
@@ -1428,20 +386,10 @@ msgstr "Spartusis taisymas"
 msgid  "Only text area selectable"
 msgstr "Pasirinkimas tik teksto srityje"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_PROGRAMSTART.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New document"
-msgstr "Naujas dokumentas"
-
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_TEMPLATE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Start with ~wizard"
 msgstr "Pradėti su vedikliu"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_SETTINGS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Settings"
-msgstr "Nuostatos"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_MASTERPAGE_CACHE.CHECKBOX.TEXT
 #, fuzzy
@@ -1463,30 +411,19 @@ msgstr "Objektai visada pajudinami"
 msgid  "Do not distort objects in curve"
 msgstr "Nepaversti objekto kreive"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_METRIC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Unit of ~measurement"
-msgstr "~Matavimo vienetas"
-
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_TABSTOP.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Ta~b stops"
 msgstr "Ta~buliatoriaus vietos"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_START_WITH_ACTUAL_PAGE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Start presentation"
-msgstr "Pradėti demonstravimą"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_ACTUAL_PAGE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Always with current page"
 msgstr "Visada su dabartiniu puslapiu"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_COMPATIBILITY.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Compatibility"
-msgstr "Suderinimas"
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_PRESENTER_SCREEN.CHECKBOX.TEXT
+msgid  "With Presenter Screen"
+msgstr ""
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CB_USE_PRINTER_METRICS.CHECKBOX.TEXT
 #, fuzzy
@@ -1498,194 +435,30 @@ msgstr "Nau~doti spausdinimo metrikas teksto formatavimui"
 msgid  "Add ~spacing between paragraphs and tables (in current document)"
 msgstr "Pridėti ~intervalą tarp dabartinio dokumento pastraipų ir lentelių"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_ORIGINAL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Original"
-msgstr "Originalas"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_EQUIVALENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Equivalent to"
-msgstr "Ekvivalentus"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_SCALE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Drawing scale"
-msgstr "~Brėžinio mastelis"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEWIDTH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Page ~width"
-msgstr "Puslapio ~plotis"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Page ~height"
-msgstr "Puslapio ~aukštis"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Settings"
-msgstr "Nuostatos"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.FT_STEPS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Increments"
-msgstr "Žingsniai"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.CBX_ATTRIBUTES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Cross-fade attributes"
-msgstr "Virsmo savybės"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.CBX_ORIENTATION.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Same orientation"
-msgstr "Tokia pat orientacija"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Cross-fading"
-msgstr "Virsmas"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_PEN.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Pointer"
-msgstr "Žymeklis"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_FIRST.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "First Slide"
-msgstr "Pirmoji skaidrė"
-
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_PREVIOUS.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Previous Slide"
 msgstr "Ankstesnė skaidrė"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_NEXT.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Next Slide"
-msgstr "Kita skaidrė"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_LAST.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Last Slide"
-msgstr "Paskutinė skaidrė"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_DRAGTYPE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Drag Mode"
-msgstr "Tempimo veiksena"
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_SHAPE_FILTER.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Show Shapes"
 msgstr "Rodyti figūras"
 
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.LB_DOCS.LISTBOX.QUICKHELPTEXT
-#, fuzzy
-msgid  "Documents"
-msgstr "Dokumentai"
-
 #: ui/dlg/navigatr.src#STR_OBJECTS_TREE.STRING.TEXT
+#, fuzzy
 msgid  "Page Tree"
 msgstr ""
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Insert Layer"
-msgstr "Įterpti sluoksnį"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Name"
-msgstr "~Pavadinimas"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "~Pavadinimas"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_DESCRIPTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Description"
-msgstr "~Aprašas"
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_VISIBLE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Visible"
 msgstr "~Matomas"
 
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_PRINTABLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Printable"
-msgstr "~Spausdintinas"
-
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_LOCKED.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Locked"
 msgstr "~Užblokuotas"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Padėtis"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RB_BEFORE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Before"
-msgstr "~Prieš"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RB_AFTER.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "A~fter"
-msgstr "P~o"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Insert Slides"
-msgstr "Įterpti skaidres"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.DOCKINGWINDOW.TEXT
-#, fuzzy
-msgid  "Animation"
-msgstr "Animacija"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "First Image"
-msgstr "Pirmas paveikslas"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Backwards"
-msgstr "Atgal"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Stop"
-msgstr "Sustoti"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Play"
-msgstr "Rodyti animaciją"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Last Image"
-msgstr "Paskutinis paveikslas"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NUMERICFIELD.QUICKHELPTEXT
-#, fuzzy
-msgid  "Image Number"
-msgstr "Paveikslo numeris"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TIMEFIELD.QUICKHELPTEXT
-#, fuzzy
-msgid  "Duration"
-msgstr "Rodymo trukmė"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM1.STRINGLIST.ITEM
 #, fuzzy
@@ -1707,290 +480,25 @@ msgstr "3"
 msgid  "4"
 msgstr "4"
 
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "5"
-msgstr "5"
-
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM6.STRINGLIST.ITEM
 #, fuzzy
 msgid  "6"
 msgstr "6"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "7"
-msgstr "7"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "8"
-msgstr "8"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM9.STRINGLIST.ITEM
 #, fuzzy
 msgid  "9"
 msgstr "9"
 
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "10"
-msgstr "10"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM11.STRINGLIST.ITEM
-#, fuzzy
-msgid  "12"
-msgstr "12"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM12.STRINGLIST.ITEM
-#, fuzzy
-msgid  "15"
-msgstr "15"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM13.STRINGLIST.ITEM
-#, fuzzy
-msgid  "20"
-msgstr "20"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM14.STRINGLIST.ITEM
-#, fuzzy
-msgid  "25"
-msgstr "25"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM15.STRINGLIST.ITEM
-#, fuzzy
-msgid  "50"
-msgstr "50"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM16.STRINGLIST.ITEM
-#, fuzzy
-msgid  "100"
-msgstr "100"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM17.STRINGLIST.ITEM
-#, fuzzy
-msgid  "500"
-msgstr "500"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM18.STRINGLIST.ITEM
-#, fuzzy
-msgid  "1000"
-msgstr "1000"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM19.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Max."
-msgstr "Maks."
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.STRINGLIST.QUICKHELPTEXT
-#, fuzzy
-msgid  "Loop Count"
-msgstr "Ciklų skaičius"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.BUTTONIMAGE.QUICKHELPTEXT
-#, fuzzy
-msgid  "Apply Object"
-msgstr "Įtraukti objektą"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.BUTTONIMAGE.QUICKHELPTEXT
-#, fuzzy
-msgid  "Apply Objects Individually"
-msgstr "Įtraukti objektus po vieną"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.BUTTONIMAGE.QUICKHELPTEXT
-#, fuzzy
-msgid  "Delete Current Image"
-msgstr "Šalinti šį paveikslą"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.BUTTONIMAGE.QUICKHELPTEXT
-#, fuzzy
-msgid  "Delete All Images"
-msgstr "Šalinti visus paveikslus"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Number"
-msgstr "Skaičius"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Image"
-msgstr "Paveikslas"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Group object"
-msgstr "Objektų grupė"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Bitmap object"
-msgstr "Paveikslas"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Lygiuoti"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top Left"
-msgstr "viršutinius kairiuosius kampus"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "kairiuosius kraštus"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bottom Left"
-msgstr "apatinius kairiuosius kampus"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "viršus"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "centrus"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bottom"
-msgstr "apačias"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top Right"
-msgstr "viršutinius dešiniuosius kampus"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "dešiniuosius kraštus"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bottom Right"
-msgstr "apatinius dešiniuosius kampus"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Create"
-msgstr "Kurti"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Animation group"
-msgstr "Animacinis objektas"
-
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.STRING.TEXT
 #, fuzzy
 msgid  "Preview"
 msgstr "Peržiūra"
 
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TABPAGE.TEXT
-#, fuzzy
-msgid  "Options"
-msgstr "Parinktys"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PRINT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Contents"
-msgstr "Turinys"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_DRAW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Drawing"
-msgstr "~Brėžinys"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_NOTES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Notes"
-msgstr "~Pastabos"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_HANDOUTS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Hando~uts"
-msgstr "~Dalijamoji medžiaga"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_OUTLINE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Out~line"
-msgstr "Pateikties ~struktūra"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_OUTPUT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Quality"
-msgstr "Kokybė"
-
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Default"
 msgstr "Numatyta"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Gra~yscale"
-msgstr "Nespalvotas su pu~stoniais"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_BLACKWHITE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Black & ~white"
-msgstr "Nespalvotas"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PRINT_EXT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Print"
-msgstr "Spausdinti"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_PAGENAME.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Page name"
-msgstr "~Puslapio pavadinimą"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_DATE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "D~ate"
-msgstr "D~atą"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_TIME.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Ti~me"
-msgstr "Lai~ką"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_HIDDEN_PAGES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "H~idden pages"
-msgstr "~Paslėptus puslapius"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PAGE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Page options"
-msgstr "Puslapio parinktys"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_PAGESIZE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Fit to page"
-msgstr "~Pritaikyti prie puslapio"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_PAGETILE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Tile pages"
-msgstr "~Išdėstyti puslapius greta"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_BOOKLET.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "B~rochure"
-msgstr "B~rošiūra"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_FRONT.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Fr~ont"
-msgstr "Geroji ~pusė"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_BACK.CHECKBOX.TEXT
 #, fuzzy
@@ -2007,36 +515,13 @@ msgstr "Lapo padavimas pagal ~spausdintuvo nuostatas"
 msgid  "~Reply"
 msgstr ""
 
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_WEIGHT.MENUITEM.TEXT
-msgid  "~Bold"
-msgstr ""
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_POSTURE.MENUITEM.TEXT
-msgid  "~Italic"
-msgstr ""
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_UNDERLINE.MENUITEM.TEXT
-msgid  "~Underline"
-msgstr ""
-
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_STRIKEOUT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Strikethrough"
 msgstr ""
 
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_COPY.MENUITEM.TEXT
-msgid  "~Copy"
-msgstr ""
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_PASTE.MENUITEM.TEXT
-msgid  "~Paste"
-msgstr ""
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Delete Comment"
-msgstr ""
-
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete All Comments b~y %1"
 msgstr ""
 
@@ -2046,105 +531,24 @@ msgid  "Delete ~All Comments"
 msgstr ""
 
 #: ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete All Comments ~by %1"
 msgstr ""
 
-#: ui/annotations/annotations.src#STR_ANNOTATION_TODAY.STRING.TEXT
-msgid  "Today,"
-msgstr ""
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_YESTERDAY.STRING.TEXT
-msgid  "Yesterday,"
-msgstr ""
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_NOAUTHOR.STRING.TEXT
-msgid  "(no author)"
-msgstr ""
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.STRING.TEXT
-msgid  "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.STRING.TEXT
-msgid  "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
-msgstr ""
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
-msgstr ""
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.STRING.TEXT
-msgid  "Insert Comment"
-msgstr ""
-
 #: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Comment(s)"
 msgstr ""
 
-#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_MOVE.STRING.TEXT
-msgid  "Move Comment"
-msgstr ""
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_EDIT.STRING.TEXT
-msgid  "Edit Comment"
-msgstr ""
-
 #: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_REPLY.STRING.TEXT
+#, fuzzy
 msgid  "Reply to Comment"
-msgstr ""
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_REPLY.STRING.TEXT
-msgid  "Reply to %1"
 msgstr ""
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.STRING.TEXT
 #, fuzzy
 msgid  "Drawing View"
 msgstr "Lapo eskizas"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.STRING.TEXT
-#, fuzzy
-msgid  "This is where you create and edit drawings."
-msgstr "Čia galima kurti ir taisyti brėžinius."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_D.STRING.TEXT
-#, fuzzy
-msgid  "This is where you create and edit slides."
-msgstr "Čia kuriamos ir taisomos skaidrės."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_N.STRING.TEXT
-#, fuzzy
-msgid  "Outline View"
-msgstr "Pateikties struktūra"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_D.STRING.TEXT
-#, fuzzy
-msgid  "This is where you enter or edit text in list form."
-msgstr "Čia galima įvesti ir taisyti tekstą, pateiktą sąrašo forma."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_N.STRING.TEXT
-#, fuzzy
-msgid  "Slides View"
-msgstr "Skaidrių rodymas"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_D.STRING.TEXT
-#, fuzzy
-msgid  "This is where you sort slides."
-msgstr "Čia rikiuojamos skaidrės."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_N.STRING.TEXT
-#, fuzzy
-msgid  "Notes View"
-msgstr "Pastabos"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_D.STRING.TEXT
-#, fuzzy
-msgid  "This is where you enter and view notes."
-msgstr "Čia įvedamos ir rodomos pastabos."
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_N.STRING.TEXT
 #, fuzzy
@@ -2156,126 +560,50 @@ msgstr "Dalijamoji medžiaga"
 msgid  "This is where you decide on the layout for handouts."
 msgstr "Šiame lange galima parinkti dalijamosios medžiagos maketą."
 
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Next"
-msgstr "~Toliau"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Previous"
-msgstr "A~tgal"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Go to Slide"
-msgstr "~Eiti į skaidrę"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~First Slide"
-msgstr "~Pirmoji skaidrė"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Last Slide"
-msgstr "Pa~skutinė skaidrė"
-
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PEN_MODE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Mouse pointer as ~Pen"
 msgstr ""
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Pen Width"
 msgstr ""
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_VERY_THIN.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Very thin"
 msgstr ""
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_THIN.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Thin"
 msgstr ""
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_NORMAL.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Normal"
 msgstr ""
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_THICK.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Thick"
 msgstr ""
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_VERY_THICK.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Very Thick"
 msgstr ""
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_COLOR_PEN.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Change pen Color..."
 msgstr ""
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ERASE_ALLINK.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Erase all ink on Slide"
 msgstr ""
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Screen"
-msgstr "E~kranas"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Black"
-msgstr "~Juodas"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~White"
-msgstr "~Baltas"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~End Show"
-msgstr "~Baigti demonstravimą"
-
-#: ui/app/menuids4_tmpl.src#MNSUB_GRAPHIC_PORTAL.MN_SUB_GRAPHIC.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Graphics"
-msgstr "~Paveikslai"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.SID_FORMAT_TABLE_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Table..."
-msgstr "~Lentelė..."
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Cell"
-msgstr "~Langelis"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Merge"
-msgstr "~Sujungti"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Split..."
-msgstr "~Skaidyti..."
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Top"
-msgstr "~Viršutinė"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MENUITEM.TEXT
-#, fuzzy
-msgid  "C~enter"
-msgstr "Vertikalioji c~entrinė"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Bottom"
-msgstr "~Apatinė"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
 #, fuzzy
@@ -2287,50 +615,10 @@ msgstr "~Eilutė"
 msgid  "Space ~Equally"
 msgstr "Su~vienodinti tarpus"
 
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Select"
-msgstr "~Pasirinkti"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Insert..."
-msgstr ""
-
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Delete"
 msgstr "~Šalinti"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "Colu~mn"
-msgstr "S~tulpelis"
-
-#: ui/app/strings.src#STR_DRAW_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Drawings Toolbar"
-msgstr "Braižymo priemonės"
-
-#: ui/app/strings.src#STR_GRAPHIC_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Draw toolbar/Graphics"
-msgstr "Braižymo priemonės arba paveikslai"
-
-#: ui/app/strings.src#STR_SLIDE_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Slide Bar"
-msgstr "Skaidrių juosta"
-
-#: ui/app/strings.src#STR_OUTLINE_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Outline Bar"
-msgstr "Struktūros juosta"
-
-#: ui/app/strings.src#STR_DRAW_OBJ_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Draw Object Bar"
-msgstr "Grafikos objektų formatų juosta"
 
 #: ui/app/strings.src#STR_GRAPHIC_OBJ_TOOLBOX.STRING.TEXT
 #, fuzzy
@@ -2352,115 +640,10 @@ msgstr "Parinkčių ir paveikslų juosta"
 msgid  "Presentation"
 msgstr "Pateiktis"
 
-#: ui/app/strings.src#STR_SLIDE_OBJ_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Slide Object Bar"
-msgstr "Skaidrių formatų juosta"
-
-#: ui/app/strings.src#STR_BEZIER_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Bézier object bar"
-msgstr "Bezjė objektų formatų juosta"
-
-#: ui/app/strings.src#STR_GLUEPOINTS_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Glue Point Object Bar"
-msgstr "Jungimo taškų formatų juosta"
-
-#: ui/app/strings.src#STR_DRAW_TEXT_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Text Object Bar"
-msgstr "Teksto formatų juosta"
-
-#: ui/app/strings.src#STR_GRAPHIC_TEXT_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Text Object Bar/Draw"
-msgstr "Teksto ir braižymo formatų juosta"
-
-#: ui/app/strings.src#STR_NULL.STRING.TEXT
-#, fuzzy
-msgid  "None"
-msgstr "Nieko"
-
-#: ui/app/strings.src#STR_INSERTPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Insert Slide"
-msgstr "Lapo įterpimas"
-
-#: ui/app/strings.src#STR_INSERTLAYER.STRING.TEXT
-#, fuzzy
-msgid  "Insert Layer"
-msgstr "Įterpti sluoksnį"
-
-#: ui/app/strings.src#STR_MODIFYLAYER.STRING.TEXT
-#, fuzzy
-msgid  "Modify Layer"
-msgstr "Sluoksnio keitimas"
-
-#: ui/app/strings.src#STR_UNDO_SLIDE_PARAMS.STRING.TEXT
-#, fuzzy
-msgid  "Slide parameter"
-msgstr "Lapo parametrai"
-
-#: ui/app/strings.src#STR_UNDO_SLIDE_MOVE.STRING.TEXT
-#, fuzzy
-msgid  "Move slide"
-msgstr "Perkelti lapą"
-
-#: ui/app/strings.src#STR_UNDO_CUT.STRING.TEXT
-#, fuzzy
-msgid  "Cut"
-msgstr "Iškirpti"
-
-#: ui/app/strings.src#STR_UNDO_REPLACE.STRING.TEXT
-#, fuzzy
-msgid  "Replace"
-msgstr "Pakeisti"
-
-#: ui/app/strings.src#STR_UNDO_DRAGDROP.STRING.TEXT
-#, fuzzy
-msgid  "Drag and Drop"
-msgstr "Pertempti"
-
 #: ui/app/strings.src#STR_INSERTGRAPHIC.STRING.TEXT
 #, fuzzy
 msgid  "Insert picture"
 msgstr "Paveikslo įterpimas"
-
-#: ui/app/strings.src#STR_SLOW.STRING.TEXT
-#, fuzzy
-msgid  "Slow"
-msgstr "Lėtai"
-
-#: ui/app/strings.src#STR_MEDIUM.STRING.TEXT
-#, fuzzy
-msgid  "Medium"
-msgstr "Vidutiniškai"
-
-#: ui/app/strings.src#STR_FAST.STRING.TEXT
-#, fuzzy
-msgid  "Fast"
-msgstr "Greitai"
-
-#: ui/app/strings.src#STR_UNDO_BEZCLOSE.STRING.TEXT
-#, fuzzy
-msgid  "Close Polygon"
-msgstr "Uždaryti daugiakampį"
-
-#: ui/app/strings.src#STR_SLIDE_MODE.STRING.TEXT
-#, fuzzy
-msgid  "Slide Sorter"
-msgstr "Skaidrių rikiavimas"
-
-#: ui/app/strings.src#STR_DRAW_MODE.STRING.TEXT
-#, fuzzy
-msgid  "Normal"
-msgstr "Skaidrė"
-
-#: ui/app/strings.src#STR_OUTLINE_MODE.STRING.TEXT
-#, fuzzy
-msgid  "Outline"
-msgstr "Struktūra"
 
 #: ui/app/strings.src#STR_NOTES_MODE.STRING.TEXT
 #, fuzzy
@@ -2472,156 +655,50 @@ msgstr "Pastabos"
 msgid  "Handout"
 msgstr "Dalijamoji medžiaga"
 
-#: ui/app/strings.src#STR_AUTOLAYOUT_NONE.STRING.TEXT
-#, fuzzy
-msgid  "Blank Slide"
-msgstr "Tuščia skaidrė"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_ONLY_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Title Only"
-msgstr "Tik antraštė"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_ONLY_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Centered Text"
-msgstr "Centruotas tekstas"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Title Slide"
-msgstr "Antraštė ir patikslinimas"
-
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, Content"
 msgstr ""
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title and 2 Content"
 msgstr ""
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_2CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, Content and 2 Content"
 msgstr ""
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, 2 Content and Content"
 msgstr ""
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_OVER_2CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, Content over 2 Content"
 msgstr ""
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT_OVER_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, 2 Content over Content"
 msgstr ""
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_OVER_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, Content over Content"
 msgstr ""
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_4CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, 4 Content"
 msgstr ""
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_6CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, 6 Content"
 msgstr ""
-
-#: ui/app/strings.src#STR_AL_TITLE_VERT_OUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "Title, Vertical Text"
-msgstr "Pavadinimas, vertikalus tekstas"
-
-#: ui/app/strings.src#STR_AL_TITLE_VERT_OUTLINE_CLIPART.STRING.TEXT
-#, fuzzy
-msgid  "Title, Vertical Text, Clipart"
-msgstr "Pavadinimas, vertikalus tekstas, paveiksliukas"
-
-#: ui/app/strings.src#STR_AL_VERT_TITLE_TEXT_CHART.STRING.TEXT
-#, fuzzy
-msgid  "Vertical Title, Text, Chart"
-msgstr "Vertikalus pavadinimas, tekstas, diagrama"
-
-#: ui/app/strings.src#STR_AL_VERT_TITLE_VERT_OUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "Vertical Title, Vertical Text"
-msgstr "Vertikalus pavadinimas, vertikalus tekstas"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT1.STRING.TEXT
-#, fuzzy
-msgid  "One Slide"
-msgstr "Viena skaidrė"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT2.STRING.TEXT
-#, fuzzy
-msgid  "Two Slides"
-msgstr "Dvi skaidrės"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT3.STRING.TEXT
-#, fuzzy
-msgid  "Three Slides"
-msgstr "Trys skaidrės"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT4.STRING.TEXT
-#, fuzzy
-msgid  "Four Slides"
-msgstr "Keturios skaidrės"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT6.STRING.TEXT
-#, fuzzy
-msgid  "Six Slides"
-msgstr "Šešios skaidrės"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT9.STRING.TEXT
-#, fuzzy
-msgid  "Nine Slides"
-msgstr "Devyni lapai"
-
-#: ui/app/strings.src#STR_TRANSFORM.STRING.TEXT
-#, fuzzy
-msgid  "transform"
-msgstr "Transformuoti"
-
-#: ui/app/strings.src#STR_LINEEND.STRING.TEXT
-#, fuzzy
-msgid  "Line Ends"
-msgstr "Linijos pabaiga"
-
-#: ui/app/strings.src#STR_DESC_LINEEND.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the new arrowhead:"
-msgstr "Įveskite naujo rodyklės galo pavadinimą:"
-
-#: ui/app/strings.src#STR_WARN_NAME_DUPLICATE.STRING.TEXT
-#, fuzzy
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "Pasirinktas vardas jau yra. \nĮveskite kitą."
-
-#: ui/app/strings.src#STR_UNDO_ANIMATION.STRING.TEXT
-#, fuzzy
-msgid  "Animation parameters"
-msgstr "Animacijos parametrai"
-
-#: ui/app/strings.src#STR_EXPORT_HTML_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Web Page"
-msgstr "Tinklalapis"
-
-#: ui/app/strings.src#STR_EXPORT_DIALOG_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "Eksportas"
-
-#: ui/app/strings.src#STR_UNDO_COPYOBJECTS.STRING.TEXT
-#, fuzzy
-msgid  "Duplicate"
-msgstr "Kopija"
-
-#: ui/app/strings.src#STR_TITLE_NAMEGROUP.STRING.TEXT
-#, fuzzy
-msgid  "Name Object"
-msgstr "Pavadinti objektą"
 
 #: ui/app/strings.src#STR_DESC_NAMEGROUP.STRING.TEXT
 #, fuzzy
@@ -2633,195 +710,30 @@ msgstr "Pavadinimas"
 msgid  "The slide name already exists or is invalid. Please enter another name."
 msgstr "Toks lapo pavadinimas jau yra arba šis yra neteisingas. Įveskite kitą."
 
-#: ui/app/strings.src#STR_SNAPDLG_SETLINE.STRING.TEXT
-#, fuzzy
-msgid  "Edit Snap Line"
-msgstr "Taisyti traukos liniją"
-
-#: ui/app/strings.src#STR_SNAPDLG_SETPOINT.STRING.TEXT
-#, fuzzy
-msgid  "Edit Snap Point"
-msgstr "Taisyti traukos tašką"
-
-#: ui/app/strings.src#STR_POPUP_EDIT_SNAPLINE.STRING.TEXT
-#, fuzzy
-msgid  "Edit Snap Line..."
-msgstr "Taisyti traukos liniją..."
-
 #: ui/app/strings.src#STR_POPUP_EDIT_SNAPPOINT.STRING.TEXT
 #, fuzzy
 msgid  "Edit Snap Point..."
 msgstr "Taisyti traukos tašką..."
-
-#: ui/app/strings.src#STR_POPUP_DELETE_SNAPLINE.STRING.TEXT
-#, fuzzy
-msgid  "Delete Snap Line"
-msgstr "Šalinti traukos liniją"
-
-#: ui/app/strings.src#STR_POPUP_DELETE_SNAPPOINT.STRING.TEXT
-#, fuzzy
-msgid  "Delete Snap Point"
-msgstr "Šalinti traukos tašką"
-
-#: ui/app/strings.src#STR_IMPRESS.STRING.TEXT
-#, fuzzy
-msgid  "StarImpress 4.0"
-msgstr "„StarImpress 4.0“"
-
-#: ui/app/strings.src#STR_LAYER.STRING.TEXT
-#, fuzzy
-msgid  "Layer"
-msgstr "Sluoksnis"
 
 #: ui/app/strings.src#STR_UNDO_DELETEPAGES.STRING.TEXT
 #, fuzzy
 msgid  "Delete slides"
 msgstr "Šalinti lapus"
 
-#: ui/app/strings.src#STR_UNDO_INSERTPAGES.STRING.TEXT
-#, fuzzy
-msgid  "Insert slides"
-msgstr "Įterpti lapus"
-
 #: ui/app/strings.src#STR_ASK_DELETE_LAYER.STRING.TEXT
 #, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
 msgstr "Ar tikrai pašalinti sluoksnį „$“?\nĮspėjimas: visi šio sluoksnio objektai bus pašalinti!"
-
-#: ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.STRING.TEXT
-#, fuzzy
-msgid  "Do you really want to delete all images?"
-msgstr "Ar tikrai pašalinti visus paveikslus?"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_TITLE_AND_LAYOUT.STRING.TEXT
-#, fuzzy
-msgid  "Modify title and outline"
-msgstr "Keisti pavadinimą ir struktūrą"
 
 #: ui/app/strings.src#STR_WAV_FILE.STRING.TEXT
 #, fuzzy
 msgid  "Sound"
 msgstr "Garsas"
 
-#: ui/app/strings.src#STR_MIDI_FILE.STRING.TEXT
-#, fuzzy
-msgid  "MIDI"
-msgstr "MIDI"
-
-#: ui/app/strings.src#STR_AU_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Sun/NeXT Audio"
-msgstr "„Sun/NeXT Audio“"
-
-#: ui/app/strings.src#STR_VOC_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Creative Labs Audio"
-msgstr "„Creative Labs Audio“"
-
-#: ui/app/strings.src#STR_AIFF_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Apple/SGI Audio"
-msgstr "„Apple/SGI Audio“"
-
-#: ui/app/strings.src#STR_SVX_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Amiga SVX Audio"
-msgstr "„Amiga SVX Audio“"
-
-#: ui/app/strings.src#STR_SD_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Slide"
-msgstr "Lapas"
-
-#: ui/app/strings.src#STR_ALL_FILES.STRING.TEXT
-#, fuzzy
-msgid  "All files (*.*)"
-msgstr "Visi failai (*.*)"
-
-#: ui/app/strings.src#STR_UNDO_INSERT_TEXTFRAME.STRING.TEXT
-#, fuzzy
-msgid  "Insert text frame"
-msgstr "Įterpti teksto kadrą"
-
-#: ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.STRING.TEXT
-#, fuzzy
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "Ši funkcija negali būti vykdoma \nsu pasirinktais objektais."
-
-#: ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Insert File"
-msgstr "Failo įterpimas"
-
-#: ui/app/strings.src#STR_READ_DATA_ERROR.STRING.TEXT
-#, fuzzy
-msgid  "The file could not be loaded!"
-msgstr "Failo įkelti nepavyko!"
-
-#: ui/app/strings.src#STR_SCALE_OBJECTS.STRING.TEXT
-#, fuzzy
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "Bus pritaikytas naujo puslapio formatas.\nAr pritaikyti ir objektus?"
-
-#: ui/app/strings.src#STR_CREATE_PAGES.STRING.TEXT
-#, fuzzy
-msgid  "Create slides"
-msgstr "Kurti skaidres"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_PAGEFORMAT.STRING.TEXT
-#, fuzzy
-msgid  "Modify page format"
-msgstr "Keisti puslapio formatą"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_PAGEBORDER.STRING.TEXT
-#, fuzzy
-msgid  "Modify page margins"
-msgstr "Keisti puslapio paraštes"
-
-#: ui/app/strings.src#STR_EDIT_OBJ.STRING.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Taisa"
-
 #: ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
 msgstr "Šis veiksmas pašalina visų veiksmų, kuriuos galima \natšaukti, sąrašą. Ankstesni dokumento pakeitimai išliks,\ntik jų nebus galima atšaukti. Ar norite tęsti ir\npriskirti naują lapo projektą?"
-
-#: ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Do not show this warning again"
-msgstr "~Daugiau nerodyti šio pranešimo"
-
-#: ui/app/strings.src#RID_UNDO_DELETE_WARNING.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "„%PRODUCTNAME %PRODUCTVERSION“"
-
-#: ui/app/strings.src#STR_WARN_PRINTFORMAT_FAILURE.STRING.TEXT
-#, fuzzy
-msgid  "The document format could not be set on the specified printer."
-msgstr "Negalima spausdintuvui nustatyti šio dokumento formato."
-
-#: ui/app/strings.src#STR_REMOVE_LINK.STRING.TEXT
-#, fuzzy
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "Šis paveikslas susietas su dokumentu. \nAr atsieti, kad galėtumėte taisyti paveikslą?"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.STRING.TEXT
-#, fuzzy
-msgid  "Graphics file cannot be opened"
-msgstr "Grafikos failo negalima atverti"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_IOERROR.STRING.TEXT
-#, fuzzy
-msgid  "Graphics file cannot be read"
-msgstr "Grafikos failo negalima skaityti"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_FORMATERROR.STRING.TEXT
-#, fuzzy
-msgid  "Unknown graphics format"
-msgstr "Nežinomas grafikos formatas"
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_VERSIONERROR.STRING.TEXT
 #, fuzzy
@@ -2832,16 +744,6 @@ msgstr "Šio grafikos failo versija nepriimtina"
 #, fuzzy
 msgid  "Graphics filter not found"
 msgstr "Grafikos filtro nerasta"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_TOOBIG.STRING.TEXT
-#, fuzzy
-msgid  "Not enough memory to import graphics"
-msgstr "Paveikslui importuoti nepakanka atminties"
-
-#: ui/app/strings.src#STR_OBJECTS.STRING.TEXT
-#, fuzzy
-msgid  "Objects"
-msgstr "Objektai"
 
 #: ui/app/strings.src#STR_END_SEARCHING.STRING.TEXT
 #, fuzzy
@@ -2858,70 +760,10 @@ msgstr "Rašybos tikrinimas dokumente baigtas.."
 msgid  "The spellcheck for the selected objects has been completed."
 msgstr "Pasirinkto objekto rašybos tikrinimas baigtas."
 
-#: ui/app/strings.src#STR_NOLANGUAGE.STRING.TEXT
-#, fuzzy
-msgid  "The selected language is not available."
-msgstr "Pasirinktos kalbos nėra."
-
-#: ui/app/strings.src#STR_ASK_FOR_CONVERT_TO_BEZIER.STRING.TEXT
-#, fuzzy
-msgid  "Convert selected object to curve?"
-msgstr "Konvertuoti pasirinktą objektą į kreivę?"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_PRES_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Modify presentation object '$'"
-msgstr "Keisti objektą „$“"
-
 #: ui/app/strings.src#STR_UNDO_MODIFY_PAGE.STRING.TEXT
 #, fuzzy
 msgid  "Slide layout"
 msgstr "Lapo maketas"
-
-#: ui/app/strings.src#STR_STATSTR_PRINT.STRING.TEXT
-#, fuzzy
-msgid  "Printing..."
-msgstr "Spausdinama..."
-
-#: ui/app/strings.src#STR_UNDO_INSERT_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Insert file"
-msgstr "Įterpti failą"
-
-#: ui/app/strings.src#STR_SCALE_OBJS_TO_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Should the graphics be scaled to the new slide format?"
-msgstr "Ar priderinti paveikslų dydį prie naujo lapo formato?"
-
-#: ui/app/strings.src#STR_UNDO_INSERT_SPECCHAR.STRING.TEXT
-#, fuzzy
-msgid  "Insert special character"
-msgstr "Įterpti specialųjį rašmenį"
-
-#: ui/app/strings.src#STR_UNDO_SET_PRESLAYOUT.STRING.TEXT
-#, fuzzy
-msgid  "Apply presentation layout"
-msgstr "Taikyti pateikties maketą"
-
-#: ui/app/strings.src#STR_STRING_NOTFOUND.STRING.TEXT
-#, fuzzy
-msgid  "Search key not found."
-msgstr "Ieškinys nerastas."
-
-#: ui/app/strings.src#STR_PLAY.STRING.TEXT
-#, fuzzy
-msgid  "~Play"
-msgstr "~Groti"
-
-#: ui/app/strings.src#STR_STOP.STRING.TEXT
-#, fuzzy
-msgid  "Sto~p"
-msgstr "Sus~toti"
-
-#: ui/app/strings.src#STR_UNDO_ORIGINALSIZE.STRING.TEXT
-#, fuzzy
-msgid  "Original Size"
-msgstr "Originalus dydis"
 
 #: ui/app/strings.src#STR_PRINT_DRAWING.STRING.TEXT
 #, fuzzy
@@ -2943,339 +785,40 @@ msgstr " (Dalijamoji medžiaga)"
 msgid  " (Outline)"
 msgstr " (Struktūra)"
 
-#: ui/app/strings.src#STR_WARN_SCALE_FAIL.STRING.TEXT
-#, fuzzy
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "Įvestas mastelis neteisingas.\nAr norite įvesti kitą?"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_NONE.STRING.TEXT
-#, fuzzy
-msgid  "No action"
-msgstr "Nėra veiksmo"
-
 #: ui/app/strings.src#STR_CLICK_ACTION_PREVPAGE.STRING.TEXT
 #, fuzzy
 msgid  "Go to previous slide"
 msgstr "Pereiti į ankstesnę skaidrę"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_NEXTPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Go to next slide"
-msgstr "Pereiti į kitą skaidrę"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_FIRSTPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Go to first slide"
-msgstr "Pereiti į pirmą skaidrę"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_LASTPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Go to last slide"
-msgstr "Pereiti į paskutinę skaidrę"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_BOOKMARK.STRING.TEXT
-#, fuzzy
-msgid  "Go to page or object"
-msgstr "Pereiti į lapą arba objektą"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "Go to document"
-msgstr "Pereiti į dokumentą"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_VANISH.STRING.TEXT
 #, fuzzy
 msgid  "Fade object"
 msgstr "Blukinti objektą"
 
-#: ui/app/strings.src#STR_CLICK_ACTION_INVISIBLE.STRING.TEXT
-#, fuzzy
-msgid  "Hide object"
-msgstr "Slėpti objektą"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_SOUND.STRING.TEXT
-#, fuzzy
-msgid  "Play sound"
-msgstr "Groti garsą"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_VERB.STRING.TEXT
-#, fuzzy
-msgid  "Start object action"
-msgstr "Pradėti objekto veiksmą"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_PROGRAM.STRING.TEXT
-#, fuzzy
-msgid  "Run program"
-msgstr "Vykdyti programą"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_MACRO.STRING.TEXT
-#, fuzzy
-msgid  "Run macro"
-msgstr "Vykdyti makrokomandą"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_STOPPRESENTATION.STRING.TEXT
-#, fuzzy
-msgid  "Exit presentation"
-msgstr "Baigti demonstravimą"
-
 #: ui/app/strings.src#STR_EFFECTDLG_JUMP.STRING.TEXT
 #, fuzzy
 msgid  "Target"
 msgstr "Tikslas"
-
-#: ui/app/strings.src#STR_EFFECTDLG_ACTION.STRING.TEXT
-#, fuzzy
-msgid  "Act~ion"
-msgstr "Vei~ksmas"
-
-#: ui/app/strings.src#STR_EFFECTDLG_PAGE_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Slide / Object"
-msgstr "Lapas arba objektas"
-
-#: ui/app/strings.src#STR_EFFECTDLG_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "Dokumentas"
-
-#: ui/app/strings.src#STR_EFFECTDLG_PROGRAM.STRING.TEXT
-#, fuzzy
-msgid  "Program"
-msgstr "Programa"
-
-#: ui/app/strings.src#STR_EFFECTDLG_MACRO.STRING.TEXT
-#, fuzzy
-msgid  "Macro"
-msgstr "Makrokomanda"
-
-#: ui/app/strings.src#STR_EFFECT_NONE.STRING.TEXT
-#, fuzzy
-msgid  "No Effect"
-msgstr "Nėra efekto"
-
-#: ui/app/strings.src#STR_INSERT_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Insert Text"
-msgstr "Įterpti tekstą"
-
-#: ui/app/strings.src#STR_SLIDE_SINGULAR.STRING.TEXT
-#, fuzzy
-msgid  " Slide"
-msgstr " Lapas"
-
-#: ui/app/strings.src#STR_SLIDE_PLURAL.STRING.TEXT
-#, fuzzy
-msgid  " Slides"
-msgstr " Lapai"
 
 #: ui/app/strings.src#STR_LOAD_PRESENTATION_LAYOUT.STRING.TEXT
 #, fuzzy
 msgid  "Load Slide Design"
 msgstr "Lapo projekto įkėlimas"
 
-#: ui/app/strings.src#STR_DRAGTYPE_URL.STRING.TEXT
-#, fuzzy
-msgid  "Insert as hyperlink"
-msgstr "Įterpti hipersaitu"
-
-#: ui/app/strings.src#STR_DRAGTYPE_EMBEDDED.STRING.TEXT
-#, fuzzy
-msgid  "Insert as copy"
-msgstr "Įterpti kopija"
-
-#: ui/app/strings.src#STR_DRAGTYPE_LINK.STRING.TEXT
-#, fuzzy
-msgid  "Insert as link"
-msgstr "Įterpti saitu"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_SMART.STRING.TEXT
-#, fuzzy
-msgid  "Smart"
-msgstr "Greitai"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_LEFT.STRING.TEXT
-#, fuzzy
-msgid  "Left"
-msgstr "Kairė"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_RIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Right"
-msgstr "Dešinė"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_TOP.STRING.TEXT
-#, fuzzy
-msgid  "Top"
-msgstr "Viršus"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_BOTTOM.STRING.TEXT
-#, fuzzy
-msgid  "Bottom"
-msgstr "Apačia"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_LO.STRING.TEXT
-#, fuzzy
-msgid  "Top Left?"
-msgstr "Viršutinis kairysis kampas?"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_LU.STRING.TEXT
-#, fuzzy
-msgid  "Bottom Left?"
-msgstr "Apatinis kairysis kampas?"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_RO.STRING.TEXT
-#, fuzzy
-msgid  "Top Right?"
-msgstr "Viršutinis dešinysis kampas?"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_RU.STRING.TEXT
-#, fuzzy
-msgid  "Bottom Right?"
-msgstr "Apatinis dešinysis kampas?"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_HORZ.STRING.TEXT
-#, fuzzy
-msgid  "Horizontal"
-msgstr "Horizontaliai"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_VERT.STRING.TEXT
-#, fuzzy
-msgid  "Vertical"
-msgstr "Vertikaliai"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_ALL.STRING.TEXT
-#, fuzzy
-msgid  "All?"
-msgstr "Visi?"
-
 #: ui/app/strings.src#STR_CANT_PERFORM_IN_LIVEMODE.STRING.TEXT
 #, fuzzy
 msgid  "This action can't be run in the live mode."
 msgstr "Šio veiksmo aktyviojoje veiksenoje atlikti neįmanoma."
 
-#: ui/app/strings.src#STR_PUBLISH_BACK.STRING.TEXT
-#, fuzzy
-msgid  "Back"
-msgstr "Atgal"
-
-#: ui/app/strings.src#STR_PUBLISH_NEXT.STRING.TEXT
-#, fuzzy
-msgid  "Continue"
-msgstr "Tęsti"
-
-#: ui/app/strings.src#STR_PUBLISH_OUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "Overview"
-msgstr "Peržiūra"
-
 #: ui/app/strings.src#STR_EYEDROPPER.STRING.TEXT
+#, fuzzy
 msgid  "Color Replacer"
 msgstr ""
-
-#: ui/app/strings.src#STR_UNDO_MORPHING.STRING.TEXT
-#, fuzzy
-msgid  "Cross-fading"
-msgstr "Virsmas"
-
-#: ui/app/strings.src#STR_UNDO_COLORRESOLUTION.STRING.TEXT
-#, fuzzy
-msgid  "Color resolution"
-msgstr "Spalvų skiriamoji geba"
 
 #: ui/app/strings.src#STR_UNDO_EXPAND_PAGE.STRING.TEXT
 #, fuzzy
 msgid  "Expand Slide"
 msgstr "Išplėstas lapas"
-
-#: ui/app/strings.src#STR_UNDO_SUMMARY_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Table of Contents Slide"
-msgstr "Turinio lapas"
-
-#: ui/app/strings.src#STR_TWAIN_NO_SOURCE_UNX.STRING.TEXT
-#, fuzzy
-msgid  "No SANE source is available at the moment."
-msgstr "SANE šaltinis dabar nepasiekiamas."
-
-#: ui/app/strings.src#STR_TWAIN_NO_SOURCE.STRING.TEXT
-#, fuzzy
-msgid  "At present, no TWAIN source is available."
-msgstr "Dabar TWAIN šaltinis nepasiekiamas."
-
-#: ui/app/strings.src#STR_FIX.STRING.TEXT
-#, fuzzy
-msgid  "Fixed"
-msgstr "Fiksuotas"
-
-#: ui/app/strings.src#STR_VAR.STRING.TEXT
-#, fuzzy
-msgid  "Variable"
-msgstr "Kintamas"
-
-#: ui/app/strings.src#STR_STANDARD_NORMAL.STRING.TEXT
-#, fuzzy
-msgid  "Standard"
-msgstr "Įprastas"
-
-#: ui/app/strings.src#STR_STANDARD_SMALL.STRING.TEXT
-#, fuzzy
-msgid  "Standard (short)"
-msgstr "Įprastas (trumpas)"
-
-#: ui/app/strings.src#STR_STANDARD_BIG.STRING.TEXT
-#, fuzzy
-msgid  "Standard (long)"
-msgstr "Įprastas (ilgas)"
-
-#: ui/app/strings.src#STR_FILEFORMAT_NAME_EXT.STRING.TEXT
-#, fuzzy
-msgid  "File name"
-msgstr "Failo vardas"
-
-#: ui/app/strings.src#STR_FILEFORMAT_FULLPATH.STRING.TEXT
-#, fuzzy
-msgid  "Path/File name"
-msgstr "Failo vardas arba adresas"
-
-#: ui/app/strings.src#STR_FILEFORMAT_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Path"
-msgstr "Adresas"
-
-#: ui/app/strings.src#STR_FILEFORMAT_NAME.STRING.TEXT
-#, fuzzy
-msgid  "File name without extension"
-msgstr "Failo vardas be prievardžio"
-
-#: ui/app/strings.src#STR_RELEASE_GRAPHICLINK.STRING.TEXT
-#, fuzzy
-msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr "Paveikslas susietas su dokumentu. Ar pašalinti saitą, kad galėtumėte taisyti paveikslą?"
-
-#: ui/app/strings.src#STR_NEW_CUSTOMSHOW.STRING.TEXT
-#, fuzzy
-msgid  "New Custom Slide Show"
-msgstr "Naujai aprašytas pateikties demonstravimas"
-
-#: ui/app/strings.src#STR_COPY_CUSTOMSHOW.STRING.TEXT
-#, fuzzy
-msgid  "Copy "
-msgstr "Kopijuoti "
-
-#: ui/app/strings.src#STR_IMPRESS_DOCUMENT_FULLTYPE_60.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION Presentation"
-msgstr "„%PRODUCTNAME %PRODUCTVERSION“ pateiktis"
-
-#: ui/app/strings.src#STR_GRAPHIC_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "Drawing"
-msgstr "Grafikos dokumentas"
-
-#: ui/app/strings.src#STR_GRAPHIC_DOCUMENT_FULLTYPE_60.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION Drawing"
-msgstr "„%PRODUCTNAME %PRODUCTVERSION“ grafikos dokumentas"
 
 #: ui/app/strings.src#STR_BREAK_METAFILE.STRING.TEXT
 #, fuzzy
@@ -3287,130 +830,10 @@ msgstr "Išgrupuoti metafailus..."
 msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Neįmanoma išgrupuoti visų grafikos objektų."
 
-#: ui/app/strings.src#STR_PUBDLG_SAMENAME.STRING.TEXT
-#, fuzzy
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "Projektas tokiu pavadinimu jau yra.\nAr jį pakeisti?"
-
-#: ui/app/strings.src#STR_HTMLATTR_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Tekstas"
-
-#: ui/app/strings.src#STR_HTMLATTR_LINK.STRING.TEXT
-#, fuzzy
-msgid  "Hyperlink"
-msgstr "Hipersaitas"
-
-#: ui/app/strings.src#STR_HTMLATTR_VLINK.STRING.TEXT
-#, fuzzy
-msgid  "Visited link"
-msgstr "Aplankytas saitas"
-
-#: ui/app/strings.src#STR_HTMLATTR_ALINK.STRING.TEXT
-#, fuzzy
-msgid  "Active link"
-msgstr "Aktyvus saitas"
-
-#: ui/app/strings.src#STR_HTMLEXP_CONTENTS.STRING.TEXT
-#, fuzzy
-msgid  "Table of contents"
-msgstr "Turinys"
-
-#: ui/app/strings.src#STR_HTMLEXP_CLICKSTART.STRING.TEXT
-#, fuzzy
-msgid  "Click here to start"
-msgstr "Spustelėkite čia, kad galėtumėte pradėti"
-
-#: ui/app/strings.src#STR_HTMLEXP_AUTHOR.STRING.TEXT
-#, fuzzy
-msgid  "Author"
-msgstr "Autorius"
-
-#: ui/app/strings.src#STR_HTMLEXP_EMAIL.STRING.TEXT
-#, fuzzy
-msgid  "E-mail"
-msgstr "El. paštas"
-
-#: ui/app/strings.src#STR_HTMLEXP_HOMEPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Homepage"
-msgstr "Tinklalapis"
-
-#: ui/app/strings.src#STR_HTMLEXP_INFO.STRING.TEXT
-#, fuzzy
-msgid  "Further information"
-msgstr "Papildoma informacija"
-
-#: ui/app/strings.src#STR_HTMLEXP_DOWNLOAD.STRING.TEXT
-#, fuzzy
-msgid  "Download presentation"
-msgstr "Parsisiųsti pateiktį"
-
 #: ui/app/strings.src#STR_HTMLEXP_NOFRAMES.STRING.TEXT
 #, fuzzy
 msgid  "Unfortunately your browser does not support floating frames."
 msgstr "Jūsų naršyklė nesuderinama su slankiaisiais kadrais."
-
-#: ui/app/strings.src#STR_HTMLEXP_FIRSTPAGE.STRING.TEXT
-#, fuzzy
-msgid  "First page"
-msgstr "Pirmas lapas"
-
-#: ui/app/strings.src#STR_HTMLEXP_LASTPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Last page"
-msgstr "Paskutinis lapas"
-
-#: ui/app/strings.src#STR_HTMLEXP_SETGRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "Paveikslai"
-
-#: ui/app/strings.src#STR_HTMLEXP_OUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "With contents"
-msgstr "Su turiniu"
-
-#: ui/app/strings.src#STR_HTMLEXP_NOOUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "Without contents"
-msgstr "Be turinio"
-
-#: ui/app/strings.src#STR_WEBVIEW_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "To given page"
-msgstr "Į duota puslapį"
-
-#: ui/app/strings.src#STR_UNDO_VECTORIZE.STRING.TEXT
-#, fuzzy
-msgid  "Convert bitmap to polygon"
-msgstr "Konvertuoti paveikslą į daugiakampį"
-
-#: ui/app/strings.src#STR_PRES_SOFTEND.STRING.TEXT
-#, fuzzy
-msgid  "Click to exit presentation..."
-msgstr "Spustelėkite, kad užbaigtumėte demonstravimą..."
-
-#: ui/app/strings.src#STR_PRES_PAUSE.STRING.TEXT
-#, fuzzy
-msgid  "Pause..."
-msgstr "Pauzė..."
-
-#: ui/app/strings.src#STR_WIZARD_ORIGINAL.STRING.TEXT
-#, fuzzy
-msgid  "<Original>"
-msgstr "<Originalas>"
-
-#: ui/app/strings.src#STR_ISLOADING.STRING.TEXT
-#, fuzzy
-msgid  "Loading..."
-msgstr "Įkeliama..."
-
-#: ui/app/strings.src#STR_DRAW_GRAF_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Graphics Object Bar"
-msgstr "Paveikslų formatų juosta"
 
 #: ui/app/strings.src#STR_UNDO_APPLY_3D_FAVOURITE.STRING.TEXT
 #, fuzzy
@@ -3427,144 +850,25 @@ msgstr "Grafikos filtras"
 msgid  "The file %\nis not a valid sound file !"
 msgstr "Failas %\nnėra garso failas!"
 
-#: ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.STRING.TEXT
-#, fuzzy
-msgid  "Convert to metafile"
-msgstr "Konvertuoti į metafailą"
-
-#: ui/app/strings.src#STR_UNDO_CONVERT_TO_BITMAP.STRING.TEXT
-#, fuzzy
-msgid  "Convert to bitmap"
-msgstr "Konvertuoti į paveikslą"
-
-#: ui/app/strings.src#STR_HTMLEXP_ERROR_CREATE_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Cannot create the file $(URL1)."
-msgstr "Negalima sukurti failo $(URL1)."
-
-#: ui/app/strings.src#STR_HTMLEXP_ERROR_OPEN_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Could not open the file $(URL1)."
-msgstr "Negalima atverti failo $(URL1)."
-
-#: ui/app/strings.src#STR_HTMLEXP_ERROR_COPY_FILE.STRING.TEXT
-#, fuzzy
-msgid  "The file $(URL1) could not be copied to $(URL2)"
-msgstr "Failo $(URL1) negalima nukopijuoti į $(URL2)"
-
-#: ui/app/strings.src#STR_PAGE_BACKGROUND_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Page Settings"
-msgstr "Puslapio nuostatos"
-
-#: ui/app/strings.src#STR_PAGE_BACKGROUND_TXT.STRING.TEXT
-#, fuzzy
-msgid  "Background settings for all pages?"
-msgstr "Fono nuostatas taikyti visiems lapams?"
-
-#: ui/app/strings.src#STR_TITLE_RENAMESLIDE.STRING.TEXT
-#, fuzzy
-msgid  "Rename Slide"
-msgstr "Pervadinti lapą"
-
 #: ui/app/strings.src#STR_TITLE_SAVE_AS_PICTURE.STRING.TEXT
 #, fuzzy
 msgid  "Save as Picture"
 msgstr "Įrašyti kaip paveikslą"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Title Area for AutoLayouts"
-msgstr "Antraštės sritis automatiniams maketams"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_OUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "Object Area for AutoLayouts"
-msgstr "Objektų sritis automatiniams maketams"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_FOOTER.STRING.TEXT
-#, fuzzy
-msgid  "Footer Area"
-msgstr "Puslapinės poraštės sritis"
 
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_HEADER.STRING.TEXT
 #, fuzzy
 msgid  "Header Area"
 msgstr "Puslapinės antraštės sritis"
 
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_DATETIME.STRING.TEXT
-#, fuzzy
-msgid  "Date Area"
-msgstr "Datos sritis"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_SLIDE.STRING.TEXT
-#, fuzzy
-msgid  "Slide Number Area"
-msgstr "Skaidrės numerio sritis"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_NUMBER.STRING.TEXT
-#, fuzzy
-msgid  "Page Number Area"
-msgstr "Lapo numerio sritis"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_HEADER.STRING.TEXT
-#, fuzzy
-msgid  "<header>"
-msgstr "<puslapinė antraštė>"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_FOOTER.STRING.TEXT
-#, fuzzy
-msgid  "<footer>"
-msgstr "<puslapinė poraštė>"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_DATETIME.STRING.TEXT
-#, fuzzy
-msgid  "<date/time>"
-msgstr "<data ir laikas>"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_NUMBER.STRING.TEXT
-#, fuzzy
-msgid  "<number>"
-msgstr "<numeris>"
-
 #: ui/app/strings.src#STR_FIELD_PLACEHOLDER_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "<count>"
 msgstr ""
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_NOTES.STRING.TEXT
-#, fuzzy
-msgid  "Notes Area"
-msgstr "Pastabų sritis"
 
 #: ui/app/strings.src#STR_UNDO_HANGULHANJACONVERSION.STRING.TEXT
 #, fuzzy
 msgid  "Hangul/Hanja Conversion"
 msgstr "Hangul/Kanja keitimas"
-
-#: ui/app/strings.src#STR_LEFT_PANE_IMPRESS_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Slides"
-msgstr "Skaidrės"
-
-#: ui/app/strings.src#STR_LEFT_PANE_DRAW_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Pages"
-msgstr "Lapai"
-
-#: ui/app/strings.src#STR_RIGHT_PANE_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Tasks"
-msgstr "Užduotys"
-
-#: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Master Pages"
-msgstr "Pagrindai"
-
-#: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "View"
-msgstr "Rodymas"
 
 #: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_LOCK.STRING.TEXT
 #, fuzzy
@@ -3575,51 +879,6 @@ msgstr "Įtvirtinti ~užduočių sritį"
 #, fuzzy
 msgid  "~Undock Task Pane"
 msgstr "~Atlaisvinti užduočių sritį"
-
-#: ui/app/strings.src#STR_TASKPANEL_CURRENT_MASTER_PAGES_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Used in This Presentation"
-msgstr "Naudojami šioje pateiktyje"
-
-#: ui/app/strings.src#STR_TASKPANEL_RECENT_MASTER_PAGES_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Recently Used"
-msgstr "Neseniai naudoti"
-
-#: ui/app/strings.src#STR_TASKPANEL_ALL_MASTER_PAGES_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Available for Use"
-msgstr "Galimi"
-
-#: ui/app/strings.src#STR_TASKPANEL_NOT_AVAILABLE_SUBSTITUTION.STRING.TEXT
-#, fuzzy
-msgid  "Preview not available"
-msgstr "Peržiūra negalima"
-
-#: ui/app/strings.src#STR_TASKPANEL_PREPARING_PREVIEW_SUBSTITUTION.STRING.TEXT
-#, fuzzy
-msgid  "Preparing preview"
-msgstr "Peržiūra ruošiama"
-
-#: ui/app/strings.src#STR_TASKPANEL_LAYOUT_MENU_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Layouts"
-msgstr "Maketai"
-
-#: ui/app/strings.src#STR_GRAPHICS_STYLE_FAMILY.STRING.TEXT
-#, fuzzy
-msgid  "Graphics Styles"
-msgstr "Grafikos stiliai"
-
-#: ui/app/strings.src#STR_CELL_STYLE_FAMILY.STRING.TEXT
-#, fuzzy
-msgid  "Cell Styles"
-msgstr "Langelio stiliai"
-
-#: ui/app/strings.src#DLG_TABLEDESIGNPANE.STRING.TEXT
-#, fuzzy
-msgid  "Table Designs"
-msgstr "Lentelės projektai"
 
 #: ui/app/strings.src#STR_CUSTOMANIMATIONPANE.STRING.TEXT
 #, fuzzy
@@ -3636,39 +895,23 @@ msgstr "~Skaidrių keitimas"
 msgid  "Named shapes"
 msgstr "Pavadintos figūros"
 
-#: ui/app/strings.src#STR_NAVIGATOR_SHOW_ALL_SHAPES.STRING.TEXT
-#, fuzzy
-msgid  "All shapes"
-msgstr "Visos figūros"
-
-#: ui/app/strings.src#STR_NAVIGATOR_SHAPE_BASE_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Shape %1"
-msgstr "Figūra %1"
-
 #: ui/app/strings.src#STR_SET_BACKGROUND_PICTURE.STRING.TEXT
 #, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "Nustatyti lapo fono paveikslą..."
 
 #: ui/app/strings.src#STR_ACC_DIALOG_DESC.STRING.TEXT
+#, fuzzy
 msgid  "Select a template from which to import page designs."
 msgstr ""
 
-#: ui/app/strings.src#RID_ANNOTATIONS_START.STRING.TEXT
-msgid  "Comments"
-msgstr ""
-
 #: ui/app/strings.src#STR_RESET_LAYOUT.STRING.TEXT
+#, fuzzy
 msgid  "Reset Slide Layout"
 msgstr ""
 
-#: ui/app/strings.src#STR_INSERT_TABLE.STRING.TEXT
-#, fuzzy
-msgid  "Insert Table"
-msgstr "Failo įterpimas"
-
 #: ui/app/strings.src#STR_INSERT_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Insert Chart"
 msgstr ""
 
@@ -3678,24 +921,17 @@ msgid  "Insert Picture"
 msgstr "Paveikslo įterpimas"
 
 #: ui/app/strings.src#STR_INSERT_MOVIE.STRING.TEXT
+#, fuzzy
 msgid  "Insert Movie"
 msgstr ""
 
-#: ui/app/res_bmp.src#SFXSTYLEFAMILIESRES1.#DEFINE.TEXT
-#, fuzzy
-msgid  "Graphics Styles"
-msgstr "Grafikos stiliai"
-
-#: ui/app/res_bmp.src#SFXSTYLEFAMILIESRES2.#DEFINE.TEXT
-#, fuzzy
-msgid  "Presentation Styles"
-msgstr "Pateikčių stiliai"
-
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_USED.STRING.TEXT
+#, fuzzy
 msgid  "Applied Styles"
 msgstr ""
 
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_USERDEF.STRING.TEXT
+#, fuzzy
 msgid  "Custom Styles"
 msgstr ""
 
@@ -3703,41 +939,6 @@ msgstr ""
 #, fuzzy
 msgid  "All Styles"
 msgstr "Langelio stiliai"
-
-#: ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Distribution..."
-msgstr "~Išdėstyti vienodais atstumais..."
-
-#: ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Drawing View"
-msgstr "~Skaidrės eskizas"
-
-#: ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Outline View"
-msgstr "~Pateikties struktūra"
-
-#: ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Slide Sorter"
-msgstr "Skaidrių ~rikiavimas"
-
-#: ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MENUITEM.TEXT
-#, fuzzy
-msgid  "Slide Sho~w"
-msgstr "~Pateikties demonstravimas"
-
-#: ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Insert Snap Point/Line..."
-msgstr "Į~terpti traukos tašką arba liniją..."
-
-#: ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Edit..."
-msgstr "~Taisyti..."
 
 #: ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MENUITEM.TEXT
 #, fuzzy
@@ -3749,190 +950,25 @@ msgstr "~Šalinti"
 msgid  "Slide ~Layout"
 msgstr "Lapo ~maketas"
 
-#: ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Page Setup..."
-msgstr "~Lapo parametrai..."
-
-#: ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New Slide"
-msgstr "~Naujas lapas"
-
-#: ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New Master"
-msgstr "~Naujas pagrindas"
-
-#: ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New Page"
-msgstr "~Naujas lapas"
-
 #: ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MENUITEM.TEXT
 #, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "Nustatyti lapo fono paveikslą..."
-
-#: ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MENUITEM.TEXT
-#, fuzzy
-msgid  "Display Background of Master"
-msgstr "Rodyti pagrindo foną"
-
-#: ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MENUITEM.TEXT
-#, fuzzy
-msgid  "Display Objects from Master"
-msgstr "Rodyti pagrindo objektus"
-
-#: ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ITEMLIST.TEXT
-#, fuzzy
-msgid  "Pag~e"
-msgstr "~Lapas"
-
-#: ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ITEMLIST.TEXT
-#, fuzzy
-msgid  "Slid~e"
-msgstr "~Lapas"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rename Layer..."
-msgstr "~Pervadinti sluoksnį..."
-
-#: ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "D~elete Slide"
-msgstr "~Šalinti lapą"
-
-#: ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "D~elete Master"
-msgstr "~Šalinti pagrindą"
-
-#: ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "D~elete Page"
-msgstr "~Šalinti lapą"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rename Slide"
-msgstr "~Pervadinti lapą"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rename Master"
-msgstr "Per~vadinti pagrindą"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rename Page"
-msgstr "~Pervadinti lapą"
-
-#: ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MENUITEM.TEXT
-#, fuzzy
-msgid  "L~ine..."
-msgstr "~Linija..."
-
-#: ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Area..."
-msgstr "~Sritis..."
-
-#: ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Text..."
-msgstr "~Tekstas..."
-
-#: ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Connector..."
-msgstr "~Jungiamoji linija..."
-
-#: ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MENUITEM.TEXT
-#, fuzzy
-msgid  "Reset ~Routing"
-msgstr "Atstatyti ~maršrutą"
-
-#: ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "Dimen~sions..."
-msgstr "~Matmenys..."
-
-#: ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MENUITEM.TEXT
-#, fuzzy
-msgid  "Position and Si~ze..."
-msgstr "~Padėtis ir dydis..."
 
 #: ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MENUITEM.TEXT
 #, fuzzy
 msgid  "Edit ~Points"
 msgstr "~Taisyti taškus"
 
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MENUITEM.TEXT
-#, fuzzy
-msgid  "Arra~nge"
-msgstr "Iš~dėstymas"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Bring to Front"
-msgstr "~Perkelti į priekį"
-
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MENUITEM.TEXT
 #, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~Perkelti priekio link"
 
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MENUITEM.TEXT
-#, fuzzy
-msgid  "Send Back~ward"
-msgstr "Perkelti p~agrindo link"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Send to Back"
-msgstr "~Perkelti į pagrindą"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MENUITEM.TEXT
-#, fuzzy
-msgid  "In Front of ~Object"
-msgstr "Prieš ~objektą"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MENUITEM.TEXT
-#, fuzzy
-msgid  "Be~hind Object"
-msgstr "~Už objekto"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Reverse"
-msgstr "~Sukeisti vietomis"
-
 #: ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MENUITEM.TEXT
 #, fuzzy
 msgid  "C~haracter..."
 msgstr "~Rašmenys..."
-
-#: ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "P~aragraph..."
-msgstr "~Pastraipa..."
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Font"
-msgstr "~Šriftas"
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Size"
-msgstr "~Dydis"
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "St~yle"
-msgstr "St~ilius"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MENUITEM.TEXT
 #, fuzzy
@@ -3964,11 +1000,6 @@ msgstr "Perbrauktas"
 msgid  "Shadow"
 msgstr "Šešėlis"
 
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Contour"
-msgstr "~Kontūras"
-
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Line Spacing"
@@ -3984,20 +1015,10 @@ msgstr "Vienos eilutės intervalas"
 msgid  "1.5 Lines"
 msgstr "1,5 eilutės"
 
-#: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Double"
-msgstr "~Dvigubas"
-
 #: ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MENUITEM.TEXT
 #, fuzzy
 msgid  "S~pecial Character..."
 msgstr "~Specialieji rašmenys..."
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "A~lignment"
-msgstr "~Lygiuotė"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MENUITEM.TEXT
 #, fuzzy
@@ -4010,7 +1031,6 @@ msgid  "~Right"
 msgstr "~Dešininė"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MENUITEM.TEXT
-#, fuzzy
 msgid  "~Centered"
 msgstr "Horizontalioji ~centrinė"
 
@@ -4018,11 +1038,6 @@ msgstr "Horizontalioji ~centrinė"
 #, fuzzy
 msgid  "Justified"
 msgstr "Abipusė"
-
-#: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MENUITEM.TEXT
-#, fuzzy
-msgid  "Al~ignment"
-msgstr "~Lygiuotė"
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MENUITEM.TEXT
 #, fuzzy
@@ -4044,125 +1059,25 @@ msgstr "~Apatinė"
 msgid  "Close ~Object"
 msgstr "Užverti ~objektą"
 
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Move Points"
-msgstr "~Perkelti taškus"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Insert ~Points"
-msgstr "Įterpti ~taškus"
-
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Delete Points"
 msgstr "~Šalinti taškus"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Split Curve"
-msgstr "~Skaidyti kreivę"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Con~vert to Curve"
-msgstr "Kon~vertuoti į kreivę"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Corner"
-msgstr "~Kampas"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MENUITEM.TEXT
-#, fuzzy
-msgid  "Smoot~h"
-msgstr "~Glotnus"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MENUITEM.TEXT
-#, fuzzy
-msgid  "S~ymmetric"
-msgstr "S~imetrinis"
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Reduce Points"
 msgstr "~Sumažinti taškus"
 
-#: ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Group"
-msgstr "~Grupuoti"
-
-#: ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Ungroup"
-msgstr "~Išgrupuoti"
-
-#: ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Comb~ine"
-msgstr "Be persi~dengimų"
-
-#: ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Split"
-msgstr "~Skaidyti"
-
-#: ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Enter Group"
-msgstr "~Taisyti grupės objektus"
-
-#: ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "E~xit Group"
-msgstr "~Baigti grupės objektų taisymą"
-
-#: ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "Name..."
-msgstr "Pavadinimas..."
-
-#: ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MENUITEM.TEXT
-#, fuzzy
-msgid  "Description..."
-msgstr "Aprašas..."
-
-#: ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rehearse Timings"
-msgstr "~Rodyti laiką"
-
 #: ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MENUITEM.TEXT
 #, fuzzy
 msgid  "Custom Animation..."
 msgstr "Naudotojo aprašyta animacija..."
 
-#: ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MENUITEM.TEXT
-#, fuzzy
-msgid  "Int~eraction..."
-msgstr "Są~veika..."
-
-#: ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Presentation ~Object..."
-msgstr "Pateikties ~objektas..."
-
-#: ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Default"
-msgstr "~Numatyta"
-
 #: ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MENUITEM.TEXT
 #, fuzzy
 msgid  "F~ontwork"
 msgstr "~Dekoratyvusis tekstas"
-
-#: ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Original Size"
-msgstr "O~riginalus dydis"
 
 #: ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MENUITEM.TEXT
 #, fuzzy
@@ -4174,75 +1089,10 @@ msgstr "Įrašyti kaip paveikslą..."
 msgid  "Crop Picture..."
 msgstr "Apkirpti paveikslą..."
 
-#: ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MENUITEM.TEXT
-#, fuzzy
-msgid  "Na~vigator"
-msgstr "~Žvalgiklis"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Insert ~Point"
-msgstr "Įterpti ~tašką"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_PERCENT.SID_GLUE_PERCENT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Adapt Position to Object"
-msgstr "~Parinkti objektui vietą"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_LEFT.SID_GLUE_HORZALIGN_LEFT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fixed ~Horizontal Left"
-msgstr "Fiksuotas ~horizontaliai kairėje"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_CENTER.SID_GLUE_HORZALIGN_CENTER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fixed Horizontal ~Center"
-msgstr "Fiksuotas horizontaliai ~centre"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_RIGHT.SID_GLUE_HORZALIGN_RIGHT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fixed Hori~zontal Right"
-msgstr "Fiksuotas hori~zontaliai dešinėje"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_TOP.SID_GLUE_VERTALIGN_TOP.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fixed ~Vertical Top"
-msgstr "Fiksuotas ~vertikaliai viršuje"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_CENTER.SID_GLUE_VERTALIGN_CENTER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fixed V~ertical Center"
-msgstr "Fiksuotas v~ertikaliai centre"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_BOTTOM.SID_GLUE_VERTALIGN_BOTTOM.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fixed Ver~tical Bottom"
-msgstr "Fiksuotas ver~tikaliai apačioje"
-
-#: ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Visible Grid"
-msgstr "~Rodyti tinklelį"
-
 #: ui/app/menuids_tmpl.src#MN_GRID_USE.SID_GRID_USE.MENUITEM.TEXT
 #, fuzzy
 msgid  "Snap to Grid"
 msgstr "Pritraukti prie tinklelio"
-
-#: ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Grid to ~Front"
-msgstr "~Tinklelis priešakyje"
-
-#: ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ITEMLIST.TEXT
-#, fuzzy
-msgid  "~Grid"
-msgstr "~Tinklelis"
-
-#: ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Snap Lines Visible"
-msgstr "~Rodyti traukos linijas"
 
 #: ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MENUITEM.TEXT
 #, fuzzy
@@ -4254,45 +1104,15 @@ msgstr "Pritraukti prie traukos linijų"
 msgid  "Snap Lines to Front"
 msgstr "Traukos linijos priešakyje"
 
-#: ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ITEMLIST.TEXT
-#, fuzzy
-msgid  "~Snap Lines"
-msgstr "~Traukos linijos"
-
-#: ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Propert~ies..."
-msgstr "Savy~bės..."
-
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_THRESHOLD.SID_CONVERT_TO_1BIT_THRESHOLD.MENUITEM.TEXT
-#, fuzzy
-msgid  "1Bit ~Threshold"
-msgstr "1 bito ~ribinės reikšmės"
-
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MENUITEM.TEXT
-#, fuzzy
-msgid  "1 Bit ~Dithering"
-msgstr "1 bito ~pseudopustonis"
-
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MENUITEM.TEXT
 #, fuzzy
 msgid  "4 Bit G~rayscales"
 msgstr "4 bitų pi~lkos spalvos atspalviai"
 
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MENUITEM.TEXT
-#, fuzzy
-msgid  "4 Bit ~Color Palette"
-msgstr "4 bitų ~spalvų paletė"
-
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MENUITEM.TEXT
 #, fuzzy
 msgid  "8 Bit Gr~ayscales"
 msgstr "8 bitų pil~kos spalvos atspalviai"
-
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MENUITEM.TEXT
-#, fuzzy
-msgid  "8 Bit C~olor Palette"
-msgstr "8 bitų s~palvų paletė"
 
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MENUITEM.TEXT
 #, fuzzy
@@ -4304,60 +1124,10 @@ msgstr "24 bitų ~spalvos"
 msgid  "~Color Resolution"
 msgstr "~Spalvų skiriamoji geba"
 
-#: ui/app/menuids_tmpl.src#MNSUB_CONVERT.SID_CONVERT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Con~vert"
-msgstr "~Konvertuoti"
-
-#: ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Flip"
-msgstr "~Apversti"
-
-#: ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rotate"
-msgstr "~Pasukti"
-
-#: ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MENUITEM.TEXT
-#, fuzzy
-msgid  "C~onnect"
-msgstr "S~ujungti linijas"
-
-#: ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Break"
-msgstr "~Skaidyti linijas"
-
 #: ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MENUITEM.TEXT
 #, fuzzy
 msgid  "Edit Style..."
 msgstr "Taisyti stilių..."
-
-#: ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MENUITEM.TEXT
-#, fuzzy
-msgid  "H~yperlink..."
-msgstr "H~ipersaitas..."
-
-#: ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Poi~nts"
-msgstr "Ta~škai"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Glue Points"
-msgstr "~Jungimo taškai"
-
-#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "La~yer"
-msgstr "S~luoksnis"
-
-#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Insert"
-msgstr "~Įterpti"
 
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MENUITEM.TEXT
 #, fuzzy
@@ -4369,35 +1139,10 @@ msgstr "~Keisti"
 msgid  "Delete"
 msgstr "Šalinti"
 
-#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rename"
-msgstr "~Pervadinti"
-
-#: ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MENUITEM.TEXT
-#, fuzzy
-msgid  "To ~Curve"
-msgstr "Į ~kreivę"
-
-#: ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MENUITEM.TEXT
-#, fuzzy
-msgid  "To ~Polygon"
-msgstr "Į ~laužtę"
-
-#: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MENUITEM.TEXT
-#, fuzzy
-msgid  "To C~ontour"
-msgstr "Į k~ontūrą"
-
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MENUITEM.TEXT
 #, fuzzy
 msgid  "To 3~D"
 msgstr "Į t~rimatį"
-
-#: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MENUITEM.TEXT
-#, fuzzy
-msgid  "To ~Bitmap"
-msgstr "Į ~paveikslą"
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MENUITEM.TEXT
 #, fuzzy
@@ -4434,90 +1179,25 @@ msgstr "~Lapo projektas"
 msgid  "Slide ~Transition"
 msgstr "~Skaidrių keitimas"
 
-#: ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Show Slide"
-msgstr "~Rodyti lapą"
-
-#: ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Hide Slide"
-msgstr "~Slėpti lapą"
-
 #: ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Group"
 msgstr "~Grupuoti"
-
-#: ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Ungroup"
-msgstr "~Išgrupuoti"
-
-#: ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Edit Group"
-msgstr "~Taisyti grupės objektus"
-
-#: ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "E~xit group"
-msgstr "~Baigti grupės objektų taisymą"
 
 #: ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Toolbars"
 msgstr "~Mygtukų juostos"
 
-#: ui/app/toolbox.src#RID_DRAW_VIEWER_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Function Bar (viewing mode)"
-msgstr "Standartinė priemonių juosta (peržiūros veiksena)"
-
 #: ui/app/toolbox.src#RID_DRAW_MEDIA_TOOLBOX.STRING.TEXT
 #, fuzzy
 msgid  "Media Playback"
 msgstr "Medijos grojimas"
 
-#: ui/app/toolbox.src#RID_DRAW_TABLE_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Table"
-msgstr "Lentelė"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.SID_FORMAT_TABLE_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Table..."
-msgstr "~Lentelė..."
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Cell"
-msgstr "~Langelis"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Merge"
-msgstr "~Sujungti"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Split..."
-msgstr "~Skaidyti..."
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Top"
-msgstr "~Viršutinė"
-
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MENUITEM.TEXT
 #, fuzzy
 msgid  "C~enter"
 msgstr "Vertikalioji c~entrinė"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Bottom"
-msgstr "~Apatinė"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
 #, fuzzy
@@ -4544,26 +1224,6 @@ msgstr ""
 msgid  "~Delete"
 msgstr "~Šalinti"
 
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "Colu~mn"
-msgstr "S~tulpelis"
-
-#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_INSERTLAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Insert Layer..."
-msgstr "Į~terpti sluoksnį..."
-
-#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_MODIFYLAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Modify La~yer..."
-msgstr "Keisti sl~uoksnį..."
-
-#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_DELETE_LAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Delete ~Layer..."
-msgstr "Šalinti ~sluoksnį..."
-
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Apply to All Slides"
@@ -4584,209 +1244,35 @@ msgstr "Rodyti ~didelę peržiūrą"
 msgid  "Show S~mall Preview"
 msgstr "Rodyti ~mažą peržiūrą"
 
-#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MENUITEM.TEXT
-msgid  "~Edit Master..."
-msgstr ""
-
 #: ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_INSERTPAGE_LAYOUT_MENU.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Insert Slide"
 msgstr "Įterpti ~lapą"
-
-#: ui/app/sdstring.src#STR_SAR_NOT_FOUND.STRING.TEXT
-#, fuzzy
-msgid  "Search key not found."
-msgstr "Ieškinys nerastas."
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr "„%PRODUCTNAME“ pateikčių rengyklė atliko paiešką iki pateikties pabaigos. Ar tęsti paiešką nuo pradžios?"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr "„%PRODUCTNAME“ pateikčių rengyklė atliko paiešką iki pateikties pradžios. Ar tęsti paiešką nuo pabaigos?"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr "„%PRODUCTNAME“ grafikos rengyklė atliko paiešką iki dokumento pabaigos. Ar tęsti paiešką nuo pradžios?"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr "„%PRODUCTNAME“ grafikos rengyklė atliko paiešką iki dokumento pradžios. Ar tęsti paiešką nuo pabaigos?"
-
-#: ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New"
-msgstr "~Naujas"
-
-#: ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Export..."
-msgstr "~Eksportuoti..."
-
-#: ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MENUITEM.TEXT
-#, fuzzy
-msgid  "Export as PDF..."
-msgstr "Eksportuoti PDF formatu..."
-
-#: ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MENUITEM.TEXT
-#, fuzzy
-msgid  "Sen~d"
-msgstr "Siųs~ti"
-
-#: ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Page..."
-msgstr "P~uslapis..."
-
-#: ui/app/menuids2_tmpl.src#20.#DEFINE.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Taisa"
 
 #: ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MENUITEM.TEXT
 #, fuzzy
 msgid  "Paste ~Special..."
 msgstr "Įdė~ti kitaip..."
 
-#: ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MENUITEM.TEXT
-#, fuzzy
-msgid  "Duplicat~e..."
-msgstr "K~opija..."
-
-#: ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MENUITEM.TEXT
-#, fuzzy
-msgid  "Cross-fading..."
-msgstr "Figūrų virsmas..."
-
-#: ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MENUITEM.TEXT
-#, fuzzy
-msgid  "F~ields..."
-msgstr "L~aukai..."
-
-#: ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Delete ~Layer..."
-msgstr "Šalinti ~sluoksnį..."
-
-#: ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MENUITEM.TEXT
-#, fuzzy
-msgid  "Lin~ks..."
-msgstr "~Saitai..."
-
-#: ui/app/menuids2_tmpl.src#23.#DEFINE.TEXT
-#, fuzzy
-msgid  "~View"
-msgstr "~Rodymas"
-
-#: ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MENUITEM.TEXT
-#, fuzzy
-msgid  "Main ~Toolbar"
-msgstr "Pagrindinių ~mygtukų juosta"
-
-#: ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MENUITEM.TEXT
-#, fuzzy
-msgid  "Optio~n Bar"
-msgstr "P~arinkčių juosta"
-
-#: ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Presentation"
-msgstr "Pa~teikties meniu"
-
-#: ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MENUITEM.TEXT
-#, fuzzy
-msgid  "Customi~ze..."
-msgstr "~Parinkti..."
-
-#: ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rulers"
-msgstr "~Liniuotės"
-
-#: ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Notes View"
-msgstr "Pasta~bos"
-
 #: ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Handout View"
 msgstr "~Dalijamoji medžiaga"
-
-#: ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Preview"
-msgstr "~Peržiūra"
-
-#: ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "S~lide"
-msgstr "~Lapas"
-
-#: ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Slide Master"
-msgstr "~Skaidrės pagrindas"
-
-#: ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "~Antraštė"
-
-#: ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Notes"
-msgstr "~Pastabos"
 
 #: ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Handout"
 msgstr "~Dalijamoji medžiaga"
 
-#: ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "La~yer"
-msgstr "S~luoksnis"
-
 #: ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MENUITEM.TEXT
 #, fuzzy
 msgid  "Wor~kspace"
 msgstr "~Darbinė veiksena"
 
-#: ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Master"
-msgstr "Pag~rindas"
-
-#: ui/app/menuids2_tmpl.src#21.#DEFINE.TEXT
-#, fuzzy
-msgid  "~Insert"
-msgstr "~Įterpti"
-
 #: ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MENUITEM.TEXT
 #, fuzzy
 msgid  "Slid~e..."
 msgstr "~Lapas..."
-
-#: ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Slid~e"
-msgstr "~Lapas"
-
-#: ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "D~uplicate Slide"
-msgstr "Lapo ~kopija"
-
-#: ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "E~xpand Slide"
-msgstr "~Išplėstas lapas"
 
 #: ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MENUITEM.TEXT
 #, fuzzy
@@ -4798,55 +1284,15 @@ msgstr "Api~bendrinantis lapas"
 msgid  "~Layer..."
 msgstr "~Sluoksnis..."
 
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Date (fixed)"
-msgstr "~Data (fiksuota)"
-
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MENUITEM.TEXT
-#, fuzzy
-msgid  "Dat~e (variable)"
-msgstr "D~ata (kintama)"
-
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Time (fixed)"
-msgstr "~Laikas (fiksuotas)"
-
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MENUITEM.TEXT
 #, fuzzy
 msgid  "T~ime (variable)"
 msgstr "La~ikas (kintamas)"
 
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Page Number"
-msgstr "~Lapo numeris"
-
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MENUITEM.TEXT
 #, fuzzy
 msgid  "~File Name"
 msgstr "~Failo vardas"
-
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Author"
-msgstr "~Autorius"
-
-#: ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Select Source..."
-msgstr "~Parinkti šaltinį..."
-
-#: ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Request..."
-msgstr "~Užklausti..."
-
-#: ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Sp~readsheet"
-msgstr "Sk~aičiuoklės dokumentas"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MENUITEM.TEXT
 #, fuzzy
@@ -4867,136 +1313,6 @@ msgstr "Slankusis ~kadras..."
 #, fuzzy
 msgid  "~File..."
 msgstr "~Failas..."
-
-#: ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fiel~ds"
-msgstr "~Laukai"
-
-#: ui/app/menuids2_tmpl.src#22.#DEFINE.TEXT
-#, fuzzy
-msgid  "F~ormat"
-msgstr "~Formatas"
-
-#: ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "Te~xt..."
-msgstr "~Tekstas..."
-
-#: ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "Dimen~sions..."
-msgstr "~Matmenys..."
-
-#: ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Connector..."
-msgstr "~Jungiamoji linija..."
-
-#: ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Modify ~Layout..."
-msgstr "Lapo ma~ketas..."
-
-#: ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MENUITEM.TEXT
-#, fuzzy
-msgid  "Styl~es"
-msgstr "Sti~liai"
-
-#: ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#DEFINE.TEXT
-#, fuzzy
-msgid  "~Tools"
-msgstr "~Priemonės"
-
-#: ui/app/menuids2_tmpl.src#26.#DEFINE.TEXT
-#, fuzzy
-msgid  "~Slide Show"
-msgstr "~Demonstravimas"
-
-#: ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Check..."
-msgstr "~Tikrinti..."
-
-#: ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MENUITEM.TEXT
-#, fuzzy
-msgid  "~AutoSpellcheck"
-msgstr "~Automatinis rašybos tikrinimas"
-
-#: ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Thesaurus..."
-msgstr "~Tezauras..."
-
-#: ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Hyphenation"
-msgstr "~Skiemenavimas"
-
-#: ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~AutoCorrect..."
-msgstr "A~utomatinis rašybos taisymas..."
-
-#: ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Slide Show Settings..."
-msgstr "Pateikties ~demonstravimo nuostatos..."
-
-#: ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Custom Slide Show..."
-msgstr "~Aprašyti pateikčių demonstravimai..."
-
-#: ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Animation"
-msgstr "~Animacija"
-
-#: ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Interaction..."
-msgstr "~Sąveika..."
-
-#: ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Spellcheck"
-msgstr "~Rašybos tikrinimas"
-
-#: ui/app/menuids2_tmpl.src#24.#DEFINE.TEXT
-#, fuzzy
-msgid  "~Modify"
-msgstr "~Keisti"
-
-#: ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Bring ~Forward"
-msgstr "~Perkelti priekio link"
-
-#: ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MENUITEM.TEXT
-#, fuzzy
-msgid  "Send Back~ward"
-msgstr "Perkelti p~agrindo link"
-
-#: ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MENUITEM.TEXT
-#, fuzzy
-msgid  "In Front of ~Object"
-msgstr "Prieš ~objektą"
-
-#: ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MENUITEM.TEXT
-#, fuzzy
-msgid  "Be~hind Object"
-msgstr "~Už objekto"
-
-#: ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Reverse"
-msgstr "~Sukeisti vietomis"
-
-#: ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Eyedropper"
-msgstr "~Pipetė"
 
 #: ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MENUITEM.TEXT
 #, fuzzy
@@ -5043,605 +1359,65 @@ msgstr "P~eržiūros kokybė"
 msgid  "Custom Animation"
 msgstr "Animacija"
 
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_EFFECT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Effect"
-msgstr "Efektas"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_ADD_EFFECT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Add..."
-msgstr "~Pridėti..."
-
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_CHANGE_EFFECT.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Change..."
 msgstr "~Keisti..."
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_REMOVE_EFFECT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Remove"
-msgstr "~Šalinti"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_MODIFY.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Modify effect"
-msgstr "Keisti efektą"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_START.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Start"
-msgstr "~Pradžia"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "On click"
-msgstr "Spustelėjus"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With previous"
-msgstr "Nuo ankstesnio"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "After previous"
-msgstr "Po ankstesnio"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_PROPERTY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Property"
-msgstr "Savybė"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~..."
-msgstr "~..."
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PUSHBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Effect Options"
-msgstr "Efekto parinktys"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_SPEED.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Sp~eed"
-msgstr "~Sparta"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_CHANGE_ORDER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Change order:"
-msgstr "Keisti tvarką:"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PLAY.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Play"
-msgstr "~Vykdyti"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_SLIDE_SHOW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Slide Sho~w"
-msgstr "~Pateikties demonstravimas"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.CB_AUTOPREVIEW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Automatic pre~view"
-msgstr "Automatinė per~žiūra"
 
 #: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.TABDIALOG.TEXT
 #, fuzzy
 msgid  "Custom Animation"
 msgstr "Animacija"
 
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_ENTRANCE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Entrance"
-msgstr "Pasirodymas"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EMPHASIS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Emphasis"
-msgstr "Paryškinimas"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EXIT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Exit"
-msgstr "Pabaiga"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MOTIONPATH.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Motion Paths"
-msgstr "Judėjimo kelias"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MISCEFFECTS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Misc Effects"
-msgstr "Įvairūs efektai"
-
-#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.FT_SPEED.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Speed"
-msgstr "Sparta"
-
-#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.CBX_PREVIEW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Automatic preview"
-msgstr "Automatinė peržiūra"
-
-#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.STR_USERPATH.STRING.TEXT
-#, fuzzy
-msgid  "User paths"
-msgstr "Naudotojo aprašyti keliai"
-
-#: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Effect Options"
-msgstr "Efekto parinktys"
-
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_EFFECT.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Effect"
 msgstr "Efektas"
-
-#: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_DURATION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Timing"
-msgstr "Laikas"
 
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_TEXT.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Text Animation"
 msgstr "Teksto animacija"
 
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_SETTINGS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Settings"
-msgstr "Nuostatos"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_START.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Accelerated start"
-msgstr "Pagreitinta pradžia"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_END.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Decelerated end"
-msgstr "Sulėtinta pabaiga"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_AUTORESTART.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Reverse automatically"
-msgstr "Apgręžti automatiškai"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_ENHANCEMENTS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Enhancement"
-msgstr "Sustiprinimas"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_SOUND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Sound"
-msgstr "Garsas"
-
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_AFTER_EFFECT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "After animation "
 msgstr "Po animacijos"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Don't dim"
-msgstr "Neblukinti"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Dim with color"
-msgstr "Blukinti spalva"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Hide after animation"
-msgstr "Slėpti po animacijos"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Hide on next animation"
-msgstr "Slėpti nuo kitos animacijos"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_DIMCOLOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Dim Color"
-msgstr "Blukinimo spalva"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_ANIM.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Text animation"
-msgstr "Teksto animacija"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "All at once"
-msgstr "Viską vienu metu"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Word by word"
-msgstr "Pažodžiui"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Letter by letter"
-msgstr "Paraidžiui"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_DELAY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "delay between characters"
-msgstr "delsa tarp ženklų"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.MF_TEXT_DELAY.METRICFIELD.CUSTOMUNITTEXT
-#, fuzzy
-msgid  "%"
-msgstr "%"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Start"
-msgstr "Pradžia"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "On click"
-msgstr "Spustelėjus"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With previous"
-msgstr "Nuo ankstesnio"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "After previous"
-msgstr "Po ankstesnio"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START_DELAY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Delay"
-msgstr "Gaištis"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.MF_START_DELAY.METRICFIELD.CUSTOMUNITTEXT
-#, fuzzy
-msgid  "sec"
-msgstr " sek."
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_DURATION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Speed"
-msgstr "Sparta"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_REPEAT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Repeat"
 msgstr "Kartoti"
 
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.CBX_REWIND.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Rewind when done playing"
-msgstr "Baigus atsukti į pradžią"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FL_TRIGGER.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Trigger"
-msgstr "Sužadinimas"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_CLICKSEQUENCE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Animate as part of click sequence"
-msgstr "Animacija pradedama spragsint"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_INTERACTIVE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Start effect on click of"
-msgstr "Pradėti efektą spustelėjus"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.FT_GROUP_TEXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Group text"
-msgstr "Grupuoti tekstą"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "As one object"
-msgstr "Kaip vieną objektą"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "All paragraphs at once"
-msgstr "Visas pastraipas kartu"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "By 1st level paragraphs"
-msgstr "Pagal 1-o lygio pastraipas"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "By 2nd level paragraphs"
-msgstr "Pagal 2-o lygio pastraipas"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "By 3rd level paragraphs"
-msgstr "Pagal 3-o lygio pastraipas"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "By 4th level paragraphs"
-msgstr "Pagal 4-o lygio pastraipas"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "By 5th level paragraphs"
-msgstr "Pagal 5-o lygio pastraipas"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_GROUP_AUTO.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Automatically after"
-msgstr "Automatiškai po"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_ANIMATE_FORM.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Animate attached shape"
-msgstr "Pridėtos figūros animacija"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_REVERSE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "In reverse order"
-msgstr "Atvirkščia tvarka"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_CLICK.MENUITEM.TEXT
-#, fuzzy
-msgid  "Start On ~Click"
-msgstr "Pradėti ~spustelėjus"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_PREVIOUS.MENUITEM.TEXT
-#, fuzzy
-msgid  "Start ~With Previous"
-msgstr "Pradėti ~nuo ankstesnio"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_AFTER_PREVIOUS.MENUITEM.TEXT
-#, fuzzy
-msgid  "Start ~After Previous"
-msgstr "Pradėti po ~ankstesnio"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_OPTIONS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Effect Options..."
-msgstr "~Efekto parinktys..."
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_DURATION.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Timing..."
-msgstr "~Laikas..."
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_REMOVE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Remove"
-msgstr "~Šalinti"
-
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_25.MENUITEM.TEXT
 #, fuzzy
 msgid  "Tiny"
 msgstr "Labai mažas"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_50.MENUITEM.TEXT
-#, fuzzy
-msgid  "Smaller"
-msgstr "Mažas"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MENUITEM.TEXT
 #, fuzzy
 msgid  "Larger"
 msgstr "Didelis"
 
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MENUITEM.TEXT
-#, fuzzy
-msgid  "Extra large"
-msgstr "Labai didelis"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_HORIZONTAL.MENUITEM.TEXT
-#, fuzzy
-msgid  "Horizontal"
-msgstr "Horizontaliai"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_VERTICAL.MENUITEM.TEXT
-#, fuzzy
-msgid  "Vertical"
-msgstr "Vertikaliai"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_BOTH.MENUITEM.TEXT
-#, fuzzy
-msgid  "Both"
-msgstr "Abu"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_QUARTER_SPIN.MENUITEM.TEXT
-#, fuzzy
-msgid  "Quarter spin"
-msgstr "Ketvirtadalis apsisukimo"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_HALF_SPIN.MENUITEM.TEXT
-#, fuzzy
-msgid  "Half spin"
-msgstr "Pusė apsisukimo"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_FULL_SPIN.MENUITEM.TEXT
-#, fuzzy
-msgid  "Full spin"
-msgstr "Visas apsisukimas"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_TWO_SPINS.MENUITEM.TEXT
-#, fuzzy
-msgid  "Two spins"
-msgstr "Du apsisukimai"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_CLOCKWISE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Clockwise"
-msgstr "Pagal laikrodžio rodyklę"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_COUNTERCLOCKWISE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Counter-clockwise"
-msgstr "Prieš laikrodžio rodyklę"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_BOLD.MENUITEM.TEXT
-#, fuzzy
-msgid  "Bold"
-msgstr "Pusjuodis"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_ITALIC.MENUITEM.TEXT
-#, fuzzy
-msgid  "Italic"
-msgstr "Kursyvas"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_UNDERLINED.MENUITEM.TEXT
-#, fuzzy
-msgid  "Underlined"
-msgstr "Pabrauktas"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_SLOW.STRING.TEXT
-#, fuzzy
-msgid  "Very slow"
-msgstr "Labai lėtai"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_SLOW.STRING.TEXT
-#, fuzzy
-msgid  "Slow"
-msgstr "Lėtai"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_NORMAL.STRING.TEXT
-#, fuzzy
-msgid  "Medium"
-msgstr "Vidutiniškai"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_FAST.STRING.TEXT
-#, fuzzy
-msgid  "Fast"
-msgstr "Greitai"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_FAST.STRING.TEXT
-#, fuzzy
-msgid  "Very fast"
-msgstr "Labai greitai"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_NONE.STRING.TEXT
-#, fuzzy
-msgid  "none"
-msgstr "nieko"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_NEXT_CLICK.STRING.TEXT
-#, fuzzy
-msgid  "Until next click"
-msgstr "Iki kito spustelėjimo"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_END_OF_SLIDE.STRING.TEXT
-#, fuzzy
-msgid  "Until end of slide"
-msgstr "Iki skaidrės pabaigos"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DIRECTION_PROPERTY.STRING.TEXT
-#, fuzzy
-msgid  "Direction"
-msgstr "Kryptis"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_ZOOM_PROPERTY.STRING.TEXT
 #, fuzzy
 msgid  "Zoom"
 msgstr "Mastelis"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SPOKES_PROPERTY.STRING.TEXT
-#, fuzzy
-msgid  "Spokes"
-msgstr "Stipinai"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FIRST_COLOR_PROPERTY.STRING.TEXT
-#, fuzzy
-msgid  "First color"
-msgstr "Pirma spalva"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SECOND_COLOR_PROPERTY.STRING.TEXT
-#, fuzzy
-msgid  "Second color"
-msgstr "Antra spalva"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FILL_COLOR_PROPERTY.STRING.TEXT
-#, fuzzy
-msgid  "Fill color"
-msgstr "Užpildo spalva"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STYLE_PROPERTY.STRING.TEXT
 #, fuzzy
 msgid  "Style"
 msgstr "Stilius"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_PROPERTY.STRING.TEXT
-#, fuzzy
-msgid  "Font"
-msgstr "Šriftas"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_COLOR_PROPERTY.STRING.TEXT
-#, fuzzy
-msgid  "Font color"
-msgstr "Teksto spalva"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_STYLE_PROPERTY.STRING.TEXT
 #, fuzzy
 msgid  "Typeface"
 msgstr "Šrifto stilius"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LINE_COLOR_PROPERTY.STRING.TEXT
-#, fuzzy
-msgid  "Line color"
-msgstr "Linijos spalva"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SIZE_PROPERTY.STRING.TEXT
-#, fuzzy
-msgid  "Font size"
-msgstr "Šrifto dydis"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SCALE_PROPERTY.STRING.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Dydis"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_AMOUNT_PROPERTY.STRING.TEXT
-#, fuzzy
-msgid  "Amount"
-msgstr "Kiekis"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_COLOR_PROPERTY.STRING.TEXT
-#, fuzzy
-msgid  "Color"
-msgstr "Spalva"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_NO_SOUND.STRING.TEXT
 #, fuzzy
 msgid  "(No sound)"
 msgstr "(Be garso)"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STOP_PREVIOUS_SOUND.STRING.TEXT
-#, fuzzy
-msgid  "(Stop previous sound)"
-msgstr "(Stabdyti ankstesnį garsą)"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_BROWSE_SOUND.STRING.TEXT
-#, fuzzy
-msgid  "Other sound..."
-msgstr "Kitas garsas..."
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SAMPLE.STRING.TEXT
-#, fuzzy
-msgid  "Sample"
-msgstr "Pavyzdys"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_1_SPOKES.STRING.TEXT
 #, fuzzy
@@ -5663,282 +1439,89 @@ msgstr "3 stipinai"
 msgid  "4 Spokes"
 msgstr "4 stipinai"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_8_SPOKES.STRING.TEXT
-#, fuzzy
-msgid  "8 Spokes"
-msgstr "8 stipinai"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_INSTANT.STRING.TEXT
-#, fuzzy
-msgid  "Instant"
-msgstr "Akimirksniu"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_GRADUAL.STRING.TEXT
-#, fuzzy
-msgid  "Gradual"
-msgstr "Palaipsniui"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_TRIGGER.STRING.TEXT
-#, fuzzy
-msgid  "Trigger"
-msgstr "Sužadinimas"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.STRING.TEXT
-#, fuzzy
-msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr "Pirmiausia pažymėkite objektą lape, tada spustelėkite „Pridėti...“ ir parinkite animacijos efektą."
-
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CONTROL.TEXT
 #, fuzzy
 msgid  "Slide Transition"
 msgstr "Skaidrių keitimas"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_APPLY_TRANSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Apply to selected slides"
-msgstr "Taikyti pažymėtoms skaidrėms"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_MODIFY_TRANSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Modify transition"
-msgstr "Keisti perėjimą"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SPEED.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Speed"
-msgstr "Sparta"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Slow"
-msgstr "Lėtai"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Medium"
-msgstr "Vidutiniškai"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Fast"
-msgstr "Greitai"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SOUND.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Sound"
 msgstr "Garsas"
 
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "<No Sound>"
-msgstr "<Be garso>"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "<Stop Previous Sound>"
-msgstr "<Stabdyti ankstesnį garsą>"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Other Sound..."
-msgstr "Kitas garsas..."
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_LOOP_SOUND.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Loop until next sound"
-msgstr "Kartoti iki kito garso"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_ADVANCE_SLIDE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Advance slide"
-msgstr "Keisti skaidrę"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_ON_MOUSE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "On mouse click"
-msgstr "Spustelėjus"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_AUTO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Automatically after"
-msgstr "Automatiškai po"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.MF_ADVANCE_AUTO_AFTER.METRICFIELD.CUSTOMUNITTEXT
-#, fuzzy
-msgid  "sec"
-msgstr " sek."
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_APPLY_TO_ALL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Apply to All Slides"
-msgstr "Taikyti visoms skaidrėms"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_PLAY.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Play"
-msgstr "Vykdyti"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_SLIDE_SHOW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Slide Show"
-msgstr "Pateikties demonstravimas"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_AUTO_PREVIEW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Automatic preview"
-msgstr "Automatinė peržiūra"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.STR_NO_TRANSITION.STRING.TEXT
-#, fuzzy
-msgid  "No Transition"
-msgstr "Jokio efekto"
-
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_PAGES.STRING.TEXT
+#, fuzzy
 msgid  "Drag and Drop Pages"
 msgstr ""
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_SLIDES.STRING.TEXT
+#, fuzzy
 msgid  "Drag and Drop Slides"
 msgstr ""
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND1.STRING.TEXT
+#, fuzzy
 msgid  "Start Slide Show"
 msgstr ""
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND2_A.STRING.TEXT
+#, fuzzy
 msgid  "Hide Slide"
 msgstr ""
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND2_B.STRING.TEXT
+#, fuzzy
 msgid  "Show Slide"
 msgstr ""
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND3.STRING.TEXT
+#, fuzzy
 msgid  "Duplicate Slide"
 msgstr ""
 
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_GROUP_NAME.STRING.TEXT
-msgid  "%PRODUCTNAME %s"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_CONTENT.STRING.TEXT
-msgid  "Print content"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_GROUP.STRING.TEXT
-msgid  "Print"
-msgstr ""
-
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Document"
 msgstr ""
 
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM1.ITEMLIST.ITEM
-msgid  "Slides"
-msgstr ""
-
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM2.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Handouts"
 msgstr ""
 
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM3.ITEMLIST.ITEM
-msgid  "Notes"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM4.ITEMLIST.ITEM
-msgid  "Outline"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE.STRING.TEXT
-msgid  "Slides per page"
-msgstr ""
-
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM1.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Default"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM2.ITEMLIST.ITEM
+#, fuzzy
 msgid  "1"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM3.ITEMLIST.ITEM
+#, fuzzy
 msgid  "2"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM4.ITEMLIST.ITEM
+#, fuzzy
 msgid  "3"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM5.ITEMLIST.ITEM
+#, fuzzy
 msgid  "4"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM6.ITEMLIST.ITEM
+#, fuzzy
 msgid  "6"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM7.ITEMLIST.ITEM
+#, fuzzy
 msgid  "9"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER.STRING.TEXT
-msgid  "Order"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.ITEM1.ITEMLIST.ITEM
-msgid  "Left to right, then down"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.ITEM2.ITEMLIST.ITEM
-msgid  "Top to bottom, then right"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT.STRING.TEXT
-msgid  "~Contents"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_NAME.STRING.TEXT
-msgid  "~Slide name"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_IS_PRINT_NAME.STRING.TEXT
-msgid  "P~age name"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_DATE.STRING.TEXT
-msgid  "~Date and time"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_HIDDEN.STRING.TEXT
-msgid  "Hidden pages"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_OUTPUT_OPTIONS_GROUP.STRING.TEXT
-msgid  "Output options"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY.STRING.TEXT
-msgid  "Color"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM1.ITEMLIST.ITEM
-msgid  "Original colors"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM2.ITEMLIST.ITEM
-msgid  "Grayscale"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM3.ITEMLIST.ITEM
-msgid  "Black & white"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS.STRING.TEXT
-msgid  "~Size"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM1.ITEMLIST.ITEM
-msgid  "Original size"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM2.ITEMLIST.ITEM
@@ -5952,55 +1535,63 @@ msgid  "Distribute on multiple sheets of paper"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM4.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Tile sheet of paper with repeated slides"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.ITEM4.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Tile sheet of paper with repeated pages"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE.STRING.TEXT
+#, fuzzy
 msgid  "Brochure"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_SIDES.STRING.TEXT
+#, fuzzy
 msgid  "Page sides"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE.STRING.TEXT
+#, fuzzy
 msgid  "Include"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.ITEM1.ITEMLIST.ITEM
+#, fuzzy
 msgid  "All pages"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.ITEM2.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Front sides / right pages"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.ITEM3.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Back sides / left pages"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAPER_TRAY_GROUP.STRING.TEXT
+#, fuzzy
 msgid  "Paper tray"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAPER_TRAY.STRING.TEXT
+#, fuzzy
 msgid  "~Use only paper tray from printer preferences"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE.STRING.TEXT
+#, fuzzy
 msgid  "Print range"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM1.ITEMLIST.ITEM
+#, fuzzy
 msgid  "~All slides"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM2.ITEMLIST.ITEM
-msgid  "~Slides"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM3.ITEMLIST.ITEM
@@ -6009,10 +1600,12 @@ msgid  "Se~lection"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.ITEM1.ITEMLIST.ITEM
+#, fuzzy
 msgid  "~All pages"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.ITEM2.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Pa~ges"
 msgstr ""
 
@@ -6020,46 +1613,6 @@ msgstr ""
 #, fuzzy
 msgid  "Table Design"
 msgstr "Lentelės projektas"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS_1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Show"
-msgstr "Rodyti"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Header Row"
-msgstr "Antraštės eilutė"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Total Row"
-msgstr "Visa eilutė"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Banded Rows"
-msgstr "Sujungtos eilutės"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "First Column"
-msgstr "Pirmas stulpelis"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Last Column"
-msgstr "Paskutinis stulpelis"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Banded Columns"
-msgstr "Sujungti stulpeliai"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES_1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Styles"
-msgstr "Stiliai"
 
 #: ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DOCKINGWINDOW.TEXT
 #, fuzzy
@@ -6076,105 +1629,29 @@ msgstr "Fonas"
 msgid  "Background objects"
 msgstr "Fono objektai"
 
-#: core/glob.src#STR_LAYER_LAYOUT.STRING.TEXT
-msgid  "Layout"
-msgstr "Maketas"
-
 #: core/glob.src#STR_LAYER_CONTROLS.STRING.TEXT
+#, fuzzy
 msgid  "Controls"
 msgstr "Valdiklio elementai"
-
-#: core/glob.src#STR_LAYER_MEASURELINES.STRING.TEXT
-msgid  "Dimension Lines"
-msgstr "Matmenų linijos"
 
 #: core/glob.src#STR_PAGE.STRING.TEXT
 msgid  "Slide"
 msgstr "Skaidrė"
 
-#: core/glob.src#STR_PAGE_NAME.STRING.TEXT
-msgid  "Page"
-msgstr "Lapas"
-
-#: core/glob.src#STR_NOTES.STRING.TEXT
-msgid  "(Notes)"
-msgstr "(Pastabos)"
-
 #: core/glob.src#STR_HANDOUT.STRING.TEXT
+#, fuzzy
 msgid  "Handouts"
 msgstr "Dalijamoji medžiaga"
 
-#: core/glob.src#STR_PRESOBJ_MPTITLE.STRING.TEXT
-msgid  "Click to edit the title text format"
-msgstr "Pavadinimas"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLINE.STRING.TEXT
-msgid  "Click to edit the outline text format"
-msgstr "Pirmas struktūros lygis"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER2.STRING.TEXT
-msgid  "Second Outline Level"
-msgstr "Antras struktūros lygis"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER3.STRING.TEXT
-msgid  "Third Outline Level"
-msgstr "Trečias struktūros lygis"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER4.STRING.TEXT
-msgid  "Fourth Outline Level"
-msgstr "Ketvirtas struktūros lygis"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER5.STRING.TEXT
-msgid  "Fifth Outline Level"
-msgstr "Penktas struktūros lygis"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER6.STRING.TEXT
-msgid  "Sixth Outline Level"
-msgstr "Šeštas struktūros lygis"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER7.STRING.TEXT
-msgid  "Seventh Outline Level"
-msgstr "Septintas struktūros lygis"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER8.STRING.TEXT
-msgid  "Eighth Outline Level"
-msgstr "Aštuntas struktūros lygis"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER9.STRING.TEXT
-msgid  "Ninth Outline Level"
-msgstr "Devintas struktūros lygis"
-
 #: core/glob.src#STR_PRESOBJ_MPNOTESTITLE.STRING.TEXT
+#, fuzzy
 msgid  "Click to move the slide"
 msgstr "Spustelėjus tempti lapą ar keisti jo dydį"
-
-#: core/glob.src#STR_PRESOBJ_MPNOTESTEXT.STRING.TEXT
-msgid  "Click to edit the notes format"
-msgstr "Dukart spustelėjus rašyti pastabas"
-
-#: core/glob.src#STR_PRESOBJ_TITLE.STRING.TEXT
-msgid  "Click to add title"
-msgstr "Rašyti pavadinimą"
 
 #: core/glob.src#STR_PRESOBJ_OUTLINE.STRING.TEXT
 #, fuzzy
 msgid  "Click to add text"
 msgstr "Rašyti tekstą"
-
-#: core/glob.src#STR_PRESOBJ_NOTESTEXT.STRING.TEXT
-#, fuzzy
-msgid  "Click to add notes"
-msgstr "Dukart spustelėjus rašyti pastabas"
-
-#: core/glob.src#STR_PRESOBJ_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Double-click to add graphics"
-msgstr "Dukart spustelėjus įterpti paveikslą"
-
-#: core/glob.src#STR_PRESOBJ_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Double-click to add an object"
-msgstr "Dukart spustelėjus įterpti objektą"
 
 #: core/glob.src#STR_PRESOBJ_CHART.STRING.TEXT
 #, fuzzy
@@ -6186,11 +1663,6 @@ msgstr "Dukart spustelėjus įterpti diagramą"
 msgid  "Double-click to add an organization chart"
 msgstr "Dukart spustelėjus įterpti organizacinę diagramą"
 
-#: core/glob.src#STR_PRESOBJ_TABLE.STRING.TEXT
-#, fuzzy
-msgid  "Double-click to add a spreadsheet"
-msgstr "Dukart spustelėjus įterpti skaičiuoklės dokumentą"
-
 #: core/glob.src#STR_OUTLINEVIEWSHELL.STRING.TEXT
 #, fuzzy
 msgid  "Outline View"
@@ -6200,41 +1672,6 @@ msgstr "Pateikties struktūra"
 #, fuzzy
 msgid  "Drawing View"
 msgstr "Skaidrės eskizas"
-
-#: core/glob.src#STR_PRESVIEWSHELL.STRING.TEXT
-#, fuzzy
-msgid  "Presentation mode"
-msgstr "Pateikties veiksena"
-
-#: core/glob.src#STR_PREVIEWVIEWSHELL.STRING.TEXT
-#, fuzzy
-msgid  "Preview Window"
-msgstr "Peržiūros langas"
-
-#: core/glob.src#STR_TEXTOBJECTBARSHELL.STRING.TEXT
-#, fuzzy
-msgid  "Text Mode"
-msgstr "Teksto veiksena"
-
-#: core/glob.src#STR_STDOBJECTBARSHELL.STRING.TEXT
-#, fuzzy
-msgid  "Document Mode"
-msgstr "Dokumento veiksena"
-
-#: core/glob.src#STR_BEZIEROBJECTBARSHELL.STRING.TEXT
-#, fuzzy
-msgid  "Bézier mode"
-msgstr "Bezjė veiksena"
-
-#: core/glob.src#STR_APPLICATIONOBJECTBAR.STRING.TEXT
-#, fuzzy
-msgid  "StarImpress 4.0"
-msgstr "„StarImpress 4.0“"
-
-#: core/glob.src#STR_GLUEPOINTSOBJECTBARSHELL.STRING.TEXT
-#, fuzzy
-msgid  "Glue Points Mode"
-msgstr "Jungimo taško veiksena"
 
 #: core/glob.src#STR_LAYOUT_DEFAULT_NAME.STRING.TEXT
 #, fuzzy
@@ -6246,70 +1683,24 @@ msgstr "Numatyta"
 msgid  "Title"
 msgstr "Antraštė"
 
-#: core/glob.src#STR_BAD_PASSWORD_OR_FILE_CORRUPTED.STRING.TEXT
-#, fuzzy
-msgid  "The password is incorrect or the file is damaged."
-msgstr "Neteisingas slaptažodis arba sugadintas failas."
-
 #: core/glob.src#STR_UNDO_MOVEPAGES.STRING.TEXT
 #, fuzzy
 msgid  "Move slides"
 msgstr "Perkelti lapus"
-
-#: core/glob.src#STR_NOT_ENOUGH_MEMORY.STRING.TEXT
-#, fuzzy
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "Nepakanka atminties!\nVeiksmas bus nutrauktas."
 
 #: core/glob.src#STR_POOLSHEET_MEASURE.STRING.TEXT
 #, fuzzy
 msgid  "Dimension Line"
 msgstr "Matmenų linija"
 
-#: core/glob.src#STR_POOLSHEET_OBJWITHARROW.STRING.TEXT
-#, fuzzy
-msgid  "Object with arrow"
-msgstr "Objektas su rodykle"
-
-#: core/glob.src#STR_POOLSHEET_OBJWITHSHADOW.STRING.TEXT
-#, fuzzy
-msgid  "Object with shadow"
-msgstr "Objektas su šešėliu"
-
-#: core/glob.src#STR_POOLSHEET_OBJWITHOUTFILL.STRING.TEXT
-#, fuzzy
-msgid  "Object without fill"
-msgstr "Neužpildytas objektas"
-
-#: core/glob.src#STR_POOLSHEET_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Tekstas"
-
-#: core/glob.src#STR_POOLSHEET_TEXTBODY.STRING.TEXT
-#, fuzzy
-msgid  "Text body"
-msgstr "Teksto turinys"
-
-#: core/glob.src#STR_POOLSHEET_TEXTBODY_JUSTIFY.STRING.TEXT
-#, fuzzy
-msgid  "Text body justified"
-msgstr "Abipusiai išlygiuotas tekstas"
+#: core/glob.src#STR_POOLSHEET_OBJNOLINENOFILL.STRING.TEXT
+msgid  "Object with no fill and no line"
+msgstr ""
 
 #: core/glob.src#STR_POOLSHEET_TEXTBODY_INDENT.STRING.TEXT
 #, fuzzy
 msgid  "First line indent"
 msgstr "Pirmos eilutės įtrauka"
-
-#: core/glob.src#STR_POOLSHEET_TITLE1.STRING.TEXT
-#, fuzzy
-msgid  "Title1"
-msgstr "Pavadinimas 1"
-
-#: core/glob.src#STR_POOLSHEET_TITLE2.STRING.TEXT
-#, fuzzy
-msgid  "Title2"
-msgstr "Pavadinimas 2"
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE.STRING.TEXT
 #, fuzzy
@@ -6326,60 +1717,10 @@ msgstr "Antraštė 1"
 msgid  "Heading2"
 msgstr "Antraštė 2"
 
-#: core/glob.src#STR_EMPTY_STYLESHEET_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Blank template"
-msgstr "Tuščias šablonas"
-
-#: core/glob.src#STR_PSEUDOSHEET_SUBTITLE.STRING.TEXT
-#, fuzzy
-msgid  "Subtitle"
-msgstr "Paantraštė"
-
-#: core/glob.src#STR_PSEUDOSHEET_OUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "Outline"
-msgstr "Struktūra"
-
-#: core/glob.src#STR_PSEUDOSHEET_NOTES.STRING.TEXT
-#, fuzzy
-msgid  "Notes"
-msgstr "Pastabos"
-
-#: core/glob.src#STR_GRAFOBJECTBARSHELL.STRING.TEXT
-#, fuzzy
-msgid  "Graphics mode"
-msgstr "Paveikslo veiksena"
-
 #: core/glob.src#STR_MEDIAOBJECTBARSHELL.STRING.TEXT
 #, fuzzy
 msgid  "Media Playback"
 msgstr "Medijos grotuvas"
-
-#: core/glob.src#STR_TABLEOBJECTBARSHELL.STRING.TEXT
-#, fuzzy
-msgid  "Table"
-msgstr "Lentelė"
-
-#: core/glob.src#STR_POWERPOINT_IMPORT.STRING.TEXT
-#, fuzzy
-msgid  "PowerPoint Import"
-msgstr "„PowerPoint“ Importas"
-
-#: core/glob.src#STR_POOLSHEET_ARROW.STRING.TEXT
-#, fuzzy
-msgid  "Arrow"
-msgstr "Rodyklė"
-
-#: core/glob.src#STR_LOAD_DOC.STRING.TEXT
-#, fuzzy
-msgid  "Load Document"
-msgstr "Įkeliamas dokumentas"
-
-#: core/glob.src#STR_SAVE_DOC.STRING.TEXT
-#, fuzzy
-msgid  "Save Document"
-msgstr "Įrašomas dokumentas"
 
 #: core/glob.src#RID_SD_ERRHDL.ERR_CODE_(_ERRCODE_CLASS_READ_,_ERR_FORMAT_ROWCOL_).STRING.TEXT
 #, fuzzy
@@ -6400,28 +1741,3 @@ msgstr "Trimačio vaizdo nuostatos"
 #, fuzzy
 msgid  "Fontwork"
 msgstr "Dekoratyvusis tekstas"
-
-#: core/glob.src#STR_POOLSHEET_BANDED_CELL.STRING.TEXT
-#, fuzzy
-msgid  "Banding cell"
-msgstr "Sujungtas langelis"
-
-#: core/glob.src#STR_POOLSHEET_HEADER.STRING.TEXT
-#, fuzzy
-msgid  "Header"
-msgstr "Antraštė"
-
-#: core/glob.src#STR_POOLSHEET_TOTAL.STRING.TEXT
-#, fuzzy
-msgid  "Total line"
-msgstr "Visa eilutė"
-
-#: core/glob.src#STR_POOLSHEET_FIRST_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "First column"
-msgstr "Pirmas stulpelis"
-
-#: core/glob.src#STR_POOLSHEET_LAST_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Last column"
-msgstr "Paskutinis stulpelis"

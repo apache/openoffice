@@ -31,30 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
-msgid  "Configuration Menu"
-msgstr "ម៉ឺនុយ​​កំណត់​​រចនា​សម្ព័ន្ធ"
-
-#: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
-msgid  "~Add-Ons"
-msgstr "កម្មវិធី​បន្ថែម"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
-msgid  "Cu~t"
-msgstr "កាត់"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
-msgid  "~Copy"
-msgstr "ចម្លង"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
-msgid  "~Paste"
-msgstr "បិទភ្ជាប់"
-
-#: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
-msgid  "Leave Full-Screen Mode"
-msgstr "ចេញ​ពី​បៀប​ពេញ​អេក្រង់"
-
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
 msgid  "Add-~On Help"
 msgstr "ជំនួយ​របស់​កម្មវិធី​បន្ថែម "
@@ -71,73 +47,25 @@ msgstr "(គ្មាន)"
 msgid  "~Thesaurus..."
 msgstr "កម្រង​វេវចនសព្ទ​​..."
 
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
-msgid  "My Templates"
-msgstr "ពុម្ព​របស់​ខ្ញុំ"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
-msgid  "Business Correspondence"
-msgstr "សំបុត្រ​ឆ្លើយ​ឆ្លង​ជំនួញ"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
-msgid  "Other Business Documents"
-msgstr "ឯកសារ​​ជំនួញ​ផ្សេងៗ"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
-msgid  "Personal Correspondence and Documents"
-msgstr "សំបុត្រ​ឆ្លើយឆ្លង និង​ឯកសារ​ផ្ទាល់​ខ្លួន"
-
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
 msgid  "Forms and Contracts"
 msgstr "សំណុំ​បែបបទ និង​កិច្ចសន្យា"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
-msgid  "Finances"
-msgstr "ហិរញ្ញវត្ថុ"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
-msgid  "Education"
-msgstr "ការ​អប់រំ"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
-msgid  "Presentation Backgrounds"
-msgstr "ផ្ទៃ​ខាង​ក្រោយ​ការ​បង្ហាញ"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
-msgid  "Presentations"
-msgstr "ការ​បង្ហាញ"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
-msgid  "Miscellaneous"
-msgstr "ផ្សេងៗ​"
-
-#: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
-msgid  "The templates are being initialized for first-time usage."
-msgstr "ពុម្ព​កំពុង​ត្រូវ​បាន​ចាប់ផ្តើម សម្រាប់​ការ​ប្រើ​លើក​ដំបូង ។"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
 msgid  "Templates"
 msgstr "ពុម្ព"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
-msgid  "New template"
-msgstr "ពុម្ព​ថ្មី"
-
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 msgid  "~Categories"
 msgstr "ប្រភេទ "
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
-msgid  "~Templates"
-msgstr "ពុម្ព "
+#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr "រក្សាទុកជា​​ទ្រង់ទ្រាយ​ខាង​ក្រៅ អាច​បណ្តាល​ឲ្យ​\n បាត់បង់​ព័ត៌មាន ។ តើ​អ្នក​នៅ​តែ​ចង់​បិទ​ឬ ?"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr "កែ​សម្រួល​ "
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
-msgid  "~Organizer..."
-msgstr "អ្នក​រៀប​ចំ ​... "
+#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr "ឈ្មោះ​ត្រូវ​បាន​ប្រើ​រួច​ហើយ ។​\nតើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​ពុម្ព​ឯកសារ​ឬ​ទេ ?"
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
 msgid  "Are you sure you want to delete the region \"$1\"?"
@@ -147,137 +75,45 @@ msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​ត
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​ធាតុ \"$1\" ឬ​ទេ ?"
 
-#: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "ឯកសារ \"$(DOC)\" ត្រូវ​បាន​កែប្រែ ។​\nតើ​អ្នក​ចង់​រក្សាទុកការ​ផ្លាស់ប្តូរ​របស់​អ្នក​ឬ​ទេ ?"
-
-#: doc/doc.src#STR_STYLES.STRING.TEXT
-msgid  "Styles"
-msgstr "រចនាប័ទ្ម"
-
-#: doc/doc.src#STR_MACROS.STRING.TEXT
-msgid  "Macros"
-msgstr "ម៉ាក្រូ"
-
-#: doc/doc.src#STR_CONFIG.STRING.TEXT
-msgid  "Configuration"
-msgstr "​កំណត់​​រចនាសម្ព័ន្ធ"
+#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr "ប្រភេទ​​មិន​មែ​ន​ទទេ ។​\nយ៉ាង​ណា​ក៏​ដោយ លុប​ឬ ?"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
 msgid  "Styles in "
 msgstr "រចនាប័ទ្ម​ក្នុង "
 
-#: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
-msgid  "Printing Styles"
-msgstr "រចនាប័ទ្ម​បោះពុម្ព"
-
-#: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
-msgid  "The print job could not be started."
-msgstr "មិន​អាច​ចាប់ផ្តើម​ការងារ​បោះពុម្ព ។"
-
-#: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
-msgid  "Copy"
-msgstr "ចម្លង"
-
-#: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
-msgid  "The template could not be opened."
-msgstr "មិន​អាច​បើក​ពុម្ព ។"
-
-#: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
-msgid  "Document already open for editing."
-msgstr "ឯកសារ​​បាន​បើក​រួច​ហើយ សម្រាប់​កែសម្រួល ។"
-
-#: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
-msgid  "Error recording document "
-msgstr "កំហុស​ពេល​ថត​ឯកសារ "
-
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
 msgid  "Templates"
 msgstr "ពុម្ព"
-
-#: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "កំហុស​​ក្នុងការ​ចម្លង​ពុម្ព \"$1\" ។ \nពុម្ព​​ដែល​មាន​ឈ្មោះ​នេះ អាច​មាន​រួច​ហើយ ។"
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
 msgid  "The template \"$1\" can not be deleted."
 msgstr "មិន​អាច​លុប​ពុម្ព \"$1\" ។"
 
-#: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
-msgid  "Error moving template \"$1\"."
-msgstr "កំហុស​ពេល​កំពុង​ផ្លាស់ទី​ពុម្ព \"$1\" ។"
-
-#: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
-msgid  "The update could not be saved."
-msgstr "មិន​អាច​រក្សាទុក​បច្ចុប្បន្នភាព​បានទេ ។"
-
-#: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-msgid  "Error saving template "
-msgstr "កំហុស​រក្សាទុក​ពុម្ព"
-
-#: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
-msgid  "Error renaming template."
-msgstr "កំហុស​ពេល​ប្តួរ​ឈ្មោះ​ពុម្ព ។"
-
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
 msgid  "Error renaming template category."
 msgstr "កំហុស​ពេល​ប្តូរ​ឈ្មោះ​ប្រភេទ​ពុម្ព ។"
 
-#: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
-msgid  "Please specify a name."
-msgstr "សូម​បញ្ជាក់​លម្អិត​ឈ្មោះ​មួយ ។"
+#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr "សូម​បញ្ជាក់​​ឈ្មោះ​​​ដែល​មាន​តែ​មួយ​គត់ ។\n ឈ្មោះ​អក្សរធំ និង​អក្សរតូច​​គឺ​ដូចគ្នា ។"
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr "តើ​ពុម្ព \"$(TEXT)\" គួរ​តែ​ក្លាយ​ជា​ពុម្ព​លំនាំដើម​ឬ​ទេ ?"
 
-#: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
-msgid  "Do you want to reset the default template?"
-msgstr "តើ​អ្នក​ចង់​កំណត់​ពុម្ព​លំនាំដើម​ឡើង​វិញ​ឬ​ទេ ?"
-
-#: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
-msgid  "Document info cannot be read."
-msgstr "មិន​អាច​អាន​ព័ត៌មាន​ឯកសារ ។"
-
-#: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
-msgid  "The selected file has an incorrect format."
-msgstr "ឯកសារ​ដែល​បាន​ជ្រើស​មាន​ទ្រង់ទ្រាយ​មិន​ត្រឹមត្រូវ ។"
+#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr "ថត​ពុម្ព\n$(DIR)\nមិនមាន​ឡើយ ។"
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
 msgstr "មិន​អាច​រក្សាទុក​ឯកសារជា​ទ្រង់ទ្រាយ $(FORMAT) ។ តើ​អ្នក​\nចង់​រក្សាទុក​ការ​ផ្លាស់ប្តូរ​របស់​អ្នក ដោយ​ប្រើ​ទ្រង់ទ្រាយ $(OWNFORMAT) ឬ​ទេ ?"
 
-#: doc/doc.src#STR_SAVEDOC.STRING.TEXT
-msgid  "~Save"
-msgstr "រក្សាទុក "
-
-#: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
-msgstr "ធ្វើ​បច្ចុប្បន្នភាពភាព "
-
-#: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
-msgid  "Save ~As..."
-msgstr "រក្សាទុក​ជា​... "
-
-#: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
-msgid  "Save Copy ~as..."
-msgstr "រក្សាទុក​​ច្បាប់​ចម្លង​ជា... "
-
-#: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
-msgid  "~Close"
-msgstr "បិទ "
-
-#: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-msgid  "~Close & Return to "
-msgstr "បិទ ​និង​​ត្រឡប់​ទៅ "
-
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
 msgid  " AutoPilot"
 msgstr " អ្នក​ជំនួយការ"
-
-#: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
-msgid  "Configurations"
-msgstr "​កំណត់​​រចនាសម្ព័ន្ធ"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
 msgid  "%PRODUCTNAME Basic libraries"
@@ -287,209 +123,37 @@ msgstr "បណ្ណាល័យ %PRODUCTNAME Basic"
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "តើ​គួរ​ជំនួស​រចនាប័ទ្ម \"$(ARG1)\" ឬ​ទេ ?"
 
-#: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
-msgid  "Loading Document"
-msgstr "កំពុង​ផ្ទុក​ឯកសារ"
-
-#: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
-msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr "តភ្ជាប់​ទៅ ៖ $(HOST) ។ កំពុង​រង់ចាំ​ការ​ឆ្លើយតប​..."
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
-msgid  "Opening $(TARGET) at $(HOST)"
-msgstr "កំពុង​បើក​ $(TARGET) នៅ $(HOST)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
-msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "កំពុង​ផ្ទុក ៖ $(TARGET) ពី $(HOST) ។ បាន​ផ្ទុក ៖ $(BYTE)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
-msgid  "Disconnected"
-msgstr "មិន​បាន​តភ្ជាប់"
-
-#: doc/doc.src#STR_EDIT.STRING.TEXT
-msgid  "Edit"
-msgstr "កែ​សម្រួល"
-
-#: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
-msgid  "%PRODUCTNAME Documents"
-msgstr "ឯកសារ %PRODUCTNAME"
+#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr "មិន​អាច​បើក​ឯកសារ សម្រាប់​កែសម្រួល ។​\nតើ​អ្នក​ចង់​បើក​វាជា​របៀប​បាន​តែ​អាន​ឬ​ទេ ?"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
 msgid  "Propert~ies..."
 msgstr "លក្ខណសម្បត្តិ... "
 
-#: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
-msgid  "HTML (FrameSet)"
-msgstr "HTML (សំណុំ​ស៊ុម)​"
-
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "ឯកសារ​ស៊ុម ​%PRODUCTNAME"
-
-#: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
-msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr "រក​មិន​ឃើញ​ពុម្ព \"$(TEMPLATE)\" នៅ​ទីតាំង​ដើម ។ ពុម្ព​ដែល​មាន​ឈ្មោះ​ដូច​គ្នា​មួយ មាន​រួច​ហើយ​នៅ \"$(FOUND)\" ។ តើ​គួរ​ប្រើ​ពុម្ព​នេះ​ពេល​ប្រៀប​ធៀប​ក្នុង​អនាគត​ឬ​ទេ ?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "ពុម្ព \"$(TEMPLATE)\" មិន​ត្រូវ​បាន​រកឃើញ ។ តើ​គួរ​ស្វែងរក​ពុម្ព នៅ​ពេល​បើក​ឯកសារ​លើក​ក្រោយ​ឬ​ទេ ?"
 
-#: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
-msgid  "Automatically saved version"
-msgstr "កំណែ​ដែល​បាន​រក្សាទុក​​ស្វ័យប្រវត្តិ"
-
-#: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
-msgid  "Text Document"
-msgstr "ឯកសារ​​អត្ថបទ"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
-msgid  "HTML Document"
-msgstr "ឯកសារ ​HTML"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
-msgid  "Master Document"
-msgstr "ឯកសារ​មេ"
-
-#: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
-msgid  "Spreadsheet"
-msgstr "សៀវភៅ​បញ្ជី"
-
-#: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
-msgid  "Presentation"
-msgstr "ការ​បង្ហាញ"
-
-#: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
-msgid  "Drawing"
-msgstr "គំនូរ"
-
-#: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
-msgid  "Message"
-msgstr "សារ"
-
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
 msgid  "~Discard"
 msgstr "មិន​រក្សា​ទុក "
-
-#: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
-msgid  "Access to the current data medium not possible."
-msgstr "មិន​អាច​ចូល​ដំណើរការ​ទៅ​ឧបករណ៍​ផ្ទុក​ទិន្នន័យ​បច្ចុប្បន្ន ។"
-
-#: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
-msgid  "Insert the next data carrier and click OK."
-msgstr "បញ្ចូល​អ្នក​បញ្ជូន​ទិន្នន័យ​បន្ទាប់ រួច​ចុច 'យល់ព្រម' ។"
-
-#: doc/doc.src#STR_OBJECT.STRING.TEXT
-msgid  "Object"
-msgstr "វត្ថុ"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
-msgid  "Run Macro"
-msgstr "រត់​ម៉ាក្រូ"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
-msgid  "This document contains macros. $(TEXT)"
-msgstr "ឯកសារ​នេះ​មាន​ម៉ាក្រូ ។ $(TEXT)"
-
-#: doc/doc.src#BTN_OK.STRING.TEXT
-msgid  "Run"
-msgstr "រត់​"
-
-#: doc/doc.src#BTN_CANCEL.STRING.TEXT
-msgid  "Do Not Run"
-msgstr "កុំ​រត់"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "ដោយ​យោង​តាម​ការ​កំណត់​សុវត្ថិភាព ម៉ាក្រូ​ក្នុង​​ឯកសារ​នេះ មិន​គួរ​ត្រូវ​បាន​រត់​ទេ ។ យ៉ាង​ណា​ក៏​ដោយ តើ​អ្នក​ចង់​រត់​ពួកវា​ឬ​ទេ ?"
 
-#: doc/doc.src#FT_OK.STRING.TEXT
-msgid  "Do you want to allow these macros to be run?"
-msgstr "តើ​អ្នក​ចង់​អនុញ្ញាត​ឲ្យ​រត់​ម៉ាក្រូ​ទាំងនេះ​ឬ​ទេ ?"
-
-#: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
-msgid  "Export as PDF"
-msgstr "នាំ​ចេញ​ជា PDF"
-
-#: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
-msgid  "Export..."
-msgstr "នាំចេញ​..."
-
-#: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
-msgid  "Export"
-msgstr "នាំចេញ"
-
-#: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
-msgid  "Add this directory to the list of secure paths: "
-msgstr "បន្ថែម​ថត​នេះ​ទៅ​កាន់​បញ្ជី​នៃ​ផ្លូវ​សុវត្ថិភាព ៖"
-
-#: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
-msgid  "File format:"
-msgstr "ទ្រង់ទ្រាយ​ឯកសារ ៖"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
-msgid  "This document contains:\n\n"
-msgstr "ឯកសារ​នេះ​មាន ៖​\n\n"
-
-#: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
-msgid  "Recorded changes"
-msgstr "ភាព​ផ្លាស់​ប្តូ​ដែល​បាន​កត់​ត្រា"
-
-#: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
-msgid  "Notes"
-msgstr "ចំណាំ"
-
-#: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
-msgid  "Document versions"
-msgstr "កំណែ​ឯកសារ​"
-
-#: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
-msgid  "Fields"
-msgstr "វាល​"
-
-#: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
-msgid  "Linked data..."
-msgstr "ទិន្នន័យ​ដែល​បាន​តភ្ជាប់​..."
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
-msgid  "Do you want to continue saving the document?"
-msgstr "តើ​អ្នក​ចង់​បន្ត​រក្សាទុក​ឯកសារ​ឬ​ទេ ?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
-msgid  "Do you want to continue printing the document?"
-msgstr "តើ​អ្នក​ចង់​បន្ត​បោះពុម្ព​ឯកសារ​ឬ​ទេ ?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
-msgid  "Do you want to continue signing the document?"
-msgstr "តើ​អ្នក​ចង់​បន្ត​ចុះ​ហត្ថលេខា​ឯកសារ​ឬ​ទេ ?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
-msgid  "Do you want to continue creating a PDF file?"
-msgstr "តើ​អ្នក​ចង់​បន្ត​បង្កើត​ឯកសារ PDF ឬ​ទេ ?"
-
-#: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
-msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "ប្រសិនបើ​អ្នក​មិន​ចង់​សរសេរ​ជាន់លើ​ឯកសារ​ដើម អ្នក​គួរ​តែ​រក្សាទុក​ការងារ​របស់​អ្នក​ក្រោម​ឈ្មោះ​ឯកសារ​ថ្មី ។"
-
-#: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
-msgid  "Some template files are protected and can not be deleted."
-msgstr "ឯកសារ​ពុម្ព​មួយចំនួន គឺ​ត្រូវបាន​ការពារ ហើយ មិនអាច​លុបបានទេ ។"
-
-#: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
-msgid  "Info %1"
-msgstr "ព័ត៌មាន %1"
-
 #: doc/doc.src#STR_SHARED.STRING.TEXT
 msgid  " (shared)"
 msgstr " (បាន​ចែករំលែក)"
 
-#: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
-msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr "កំណែ​ទ្រង់ទ្រាយ​ឯកសារ​ត្រូវ​កំណត់​ទៅ ODF 1.1 (OpenOffice.org 2.x) នៅ​ក្នុង​ ឧបករណ៍-ជម្រើស-ផ្ទុក/រក្សាទុក-ទូទៅ ។ ចុះហត្ថលេខា​ត្រូវការ ODF 1.2 (OpenOffice.org 3.x) ។"
-
-#: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
-msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr "ពុម្ព '$(ARG1)' ដែល​ឯកសារ​នេះ​មាន​មូលដ្ឋាន​លើ ត្រូវបាន​កែប្រែ ។ តើ​អ្នក​ចង់​ធ្វើ​បច្ចុប្បន្ន​ភាព​​ទ្រង់ទ្រាយ​ដែល​មាន​មូលដ្ឋាន​លើ​រចនាប័ទ្ម​ ដោយ​យោង​លើ​ពុម្ព​ដែល​បាន​កែប្រែ​ដែរឬ​ទេ ?"
+#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr "ឯកសារ​ត្រូវ​បាន​រក្សាទុកវា​អាច​ត្រូវ​បានចុះហត្ថលេខា ។ រក្សាទុក​ឯកសារ​យកហត្ថលេខា​បច្ចុប្បន្ន​ចេញ​ទាំងអស់ ។\nតើអ្នក​ចង់​រក្សាទុក​ឯកសារ​ឬ ?"
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
 msgid  "~Update Styles"
@@ -499,18 +163,6 @@ msgstr "ធ្វើ​បច្ចុប្បន្នភាព​យ​រច
 msgid  "~Keep Old Styles"
 msgstr "ទុក​រចនាប័ទ្ម​ចាស់ "
 
-#: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
-msgid  "Template Management"
-msgstr "គ្រប់គ្រង​ពុម្ព"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
-msgid  "Close"
-msgstr "បិទ​"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
-msgid  "~File..."
-msgstr "ឯកសារ... "
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
 msgid  "~Address Book..."
 msgstr "សៀវភៅ​អាសយដ្ឋាន​... "
@@ -519,25 +171,9 @@ msgstr "សៀវភៅ​អាសយដ្ឋាន​... "
 msgid  "Templates"
 msgstr "ពុម្ព"
 
-#: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Documents"
-msgstr "ឯកសារ"
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
 msgid  "Commands"
 msgstr "ពាក្យ​បញ្ជា"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
-msgid  "~New"
-msgstr "ថ្មី​ "
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
-msgid  "~Delete"
-msgstr "លុប​ "
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
-msgid  "~Edit"
-msgstr "កែ​សម្រួល​ "
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
 msgid  "Import Template..."
@@ -546,10 +182,6 @@ msgstr "នាំ​ចូល​ពុម្ព​... "
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MENUITEM.TEXT
 msgid  "Export Template..."
 msgstr "នាំចេញ​ពុម្ព..."
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
-msgid  "~Print"
-msgstr "ោះពុម្ព "
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
 msgid  "Printer Settings..."
@@ -567,153 +199,29 @@ msgstr "កំណត់​ជា​ពុម្ព​លំនាំដើម"
 msgid  "Reset Default Template"
 msgstr "កំណត់​ពុម្ព​លំនាំដើម​ឡើង​វិញ"
 
-#: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
-msgid  "New"
-msgstr "ថ្មី​"
-
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
 msgid  "~Categories"
 msgstr "ប្រភេទ "
-
-#: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
-msgid  "T~emplates"
-msgstr "ពុម្ព "
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
 msgid  "~More"
 msgstr "ច្រើន​ជាង "
 
-#: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
-msgid  "Pre~view"
-msgstr "មើល​ជា​មុន "
-
-#: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "ពិពណ៌​នា​"
-
-#: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
-msgid  "Te~xt"
-msgstr "អត្ថបទ "
-
-#: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
-msgid  "~Frame"
-msgstr "ស៊ុម "
-
-#: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
-msgid  "~Pages"
-msgstr "ទំព័រ "
-
-#: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
-msgid  "N~umbering"
-msgstr "លេខរៀង "
-
-#: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
-msgid  "~Overwrite"
-msgstr "សរសេរ​ជាន់​លើ "
-
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
 msgid  "From File..."
 msgstr "ពី​ឯកសារ​..."
-
-#: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
-msgid  "Load Styles"
-msgstr "ផ្ទុក​រចនាប័ទ្ម"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
-msgid  "~Title"
-msgstr "ចំណងជើង"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
 msgid  "Subject"
 msgstr "ប្រធាន​បទ"
 
-#: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
-msgid  "~Key words"
-msgstr "ពាក្យ​គន្លឹះ "
-
-#: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
-msgid  "~Description"
-msgstr "ពិពណ៌នា "
-
-#: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "តម្រង​ដែល​បាន​ជ្រើស $(FILTER) មិន​ត្រូវ​បាន​ដំឡើង ។\nតើ​អ្នក​ចង់​ធ្វើ​ដូច្នេះ​ឥឡូវ​នេះ​ឬ ?"
-
-#: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "តម្រង $(FILTER) ដែល​បាន​ជ្រើស មិន​ត្រូវ​បាន​រួមបញ្ចូល​ក្នុង​ស្នាដៃ​របស់​អ្នក ។​\nអ្នក​អាច​រក​ព័ត៌មាន​អំពី​​បញ្ជា ​លើ​គេហទំព័រ​របស់​ពួកយើង ។"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
-msgid  "Reduce print data"
-msgstr "កាត់​បន្ថយ​ទិន្នន័យ​បោះពុម្ព"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
-msgid  "Settings for"
-msgstr "កំណត់​សម្រាប់"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
-msgid  "~Printer"
-msgstr "ម៉ាស៊ីន​បោះពុម្ព​ "
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
-msgid  "Print to ~file"
-msgstr "បោះពុម្ព​ទៅ​ឯកសារ "
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
-msgid  "~Reduce transparency"
-msgstr "កាត់​បន្ថយ​ភាព​ថ្លា "
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
-msgid  "Auto~matically"
-msgstr "ដោយ​ស្វ័យប្រវត្តិ "
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
-msgid  "~No transparency"
-msgstr "មិន​ថ្លា "
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
-msgid  "Reduce ~gradients"
-msgstr "បន្ថយ​ជម្រាល "
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
 msgid  "Gradient ~stripes"
 msgstr "ឆ្នូត​ជម្រាល "
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
-msgid  "Intermediate ~color"
-msgstr "ពណ៌​មធ្យម "
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
-msgid  "Reduce ~bitmaps"
-msgstr "កាត់​បន្ថយ​រូបភាព​ "
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
-msgid  "~High print quality"
-msgstr "គុណភាព​បោះពុម្ព​ខ្ពស់ "
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
-msgid  "N~ormal print quality"
-msgstr "គុណភាព​បោះពុម្ព​ធម្មតា "
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
 msgid  "Reso~lution"
 msgstr "គុណភាព​បង្ហាញ "
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "72 DPI"
-msgstr "72 DPI"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "96 DPI"
-msgstr "96 DPI"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "150 DPI (Fax)"
-msgstr "150 DPI (ទូរសារ)"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "200 DPI (default)"
-msgstr "200 DPI (លំនាំដើម)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 msgid  "300 DPI"
@@ -723,69 +231,17 @@ msgstr "300 DPI"
 msgid  "600 DPI"
 msgstr "600 DPI"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
-msgid  "Include transparent ob~jects"
-msgstr "រួមបញ្ចូល​វត្ថុ​ថ្លា  "
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
 msgid  "Con~vert colors to grayscale"
 msgstr "បម្លែង​ពណ៌​ទៅ​ជា​មាត្រដ្ឋាន​ប្រផេះ "
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
-msgid  "Printer warnings"
-msgstr "ព្រមាន​ពី​ម៉ាស៊ីន​បោះពុម្ព"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
-msgid  "P~aper size"
-msgstr "ទំហំ​ក្រដាស "
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
 msgid  "Pap~er orientation"
 msgstr "ទិស​ក្រដាស "
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
-msgid  "~Transparency"
-msgstr "ភាព​ថ្លា "
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
-msgid  "Warning"
-msgstr "ការព្រមាន"
-
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr "ឯកសារ​របស់​អ្នក​មាន​វត្ថុ​ថ្លា ។\nនេះ​អាច​បណ្តាល​ឲ្យ​មាន​ការ​បោះពុម្ព​យូរ​លើ​\\ម៉ាស៊ីន​បោះពុម្ព​ខ្លះ ។ តើ​ទិដ្ឋភាព​ថ្លា​គួរ​តែ\nត្រូវ​បាន​កាត់​បន្ថយ​ឬ​ទេ ?"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
-msgid  "~Yes"
-msgstr "បាទ "
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
-msgid  "~No"
-msgstr "ទេ "
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
-msgid  "~Cancel"
-msgstr "បោះបង់ "
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
-msgid  "~Do not show warning again"
-msgstr "កុំ​បង្ហាញ​ព្រមាន​ម្តង​ទៀត "
-
-#: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
-msgid  "Style Catalog"
-msgstr "កាតាឡុក​រចនាប័ទ្ម"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
-msgid  "~Organizer..."
-msgstr "អ្នក​រៀប​ចំ ​... "
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
-msgid  "~Delete..."
-msgstr "លុប... "
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
-msgid  "~Modify..."
-msgstr "កែប្រែ​... "
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
 msgid  "~New..."
@@ -795,25 +251,9 @@ msgstr "ថ្មី​... "
 msgid  "Style List"
 msgstr "បញ្ជី​រចនាប័ទ្ម"
 
-#: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
-msgid  "Hierarchical"
-msgstr "​ឋានានុក្រម"
-
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
 msgid  "Styles and Formatting"
 msgstr "រចនាប័ទ្ម និង​​ទ្រង់ទ្រាយ"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
-msgid  "Fill Format Mode"
-msgstr "បំពេញ​របៀប​ទ្រង់ទ្រាយ"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
-msgid  "New Style from Selection"
-msgstr "រចនាប័ទ្ម​ថ្មី​ពី​ជម្រើស"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
-msgid  "Update Style"
-msgstr "ធ្វើ​​បច្ចុប្បន្នភាព​រចនាប័ទ្ម​"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 msgid  "File encryption password"
@@ -875,89 +315,13 @@ msgstr "មិន​ការពារ​កំណត់ត្រា"
 msgid  "Incorrect password"
 msgstr "ពាក្យ​សម្ងាត់​មិន​ត្រឹម​ត្រូវ"
 
-#: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
-msgid  "New versions"
-msgstr "កំណែ​ថ្មី"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
-msgid  "Save ~New Version"
-msgstr "រក្សាទុក​កំណែ​ថ្មី "
-
-#: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
-msgid  "~Always save a version on closing"
-msgstr "តែងតែ​រក្សាទុក​កំណែ​មួយ នៅ​ពេល​បិទ "
-
-#: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
-msgid  "Existing versions"
-msgstr "កំណែ​ដែល​មាន​ស្រាប់"
-
-#: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
-msgid  "Date and time"
-msgstr "កាលបរិច្ចេទ និង​ពេលវេលា"
-
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
 msgid  "Saved by"
 msgstr "បាន​រក្សាទុក​ដោយ"
 
-#: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
-msgid  "Comments"
-msgstr "មតិយោបល់"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
-msgstr "បិទ​"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
-msgid  "Open"
-msgstr "បើក"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
-msgid  "~Show..."
-msgstr "បង្ហាញ... "
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "លុប​ "
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
-msgid  "Compare"
-msgstr "ប្រៀបធៀប"
-
-#: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
-msgid  "Versions of"
-msgstr "កំណែ​នៃ"
-
-#: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
-msgid  "Date and time : "
-msgstr "កាលបរិច្ចេទ និង​ពេលវេលា ៖"
-
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
 msgid  "Saved by "
 msgstr "បាន​រក្សាទុក​ដោយ"
-
-#: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "បិទ "
-
-#: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
-msgid  "Insert Version Comment"
-msgstr "បញ្ចូលមតិយោបល់​​កំណែ"
-
-#: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
-msgid  "Version comment"
-msgstr "មតិយោបល់​​កំណែ"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
-msgid  "~Name"
-msgstr "ឈ្មោះ "
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
-msgid  "~AutoUpdate"
-msgstr "ធ្វើ​បច្ចុប្បន្ន​ភាព​ដោយ​ស្វ័យ​ប្រវត្តិ "
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
-msgid  "Ne~xt Style"
-msgstr "រចនាប័ទ្ម​បន្ទាប់ "
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
 msgid  "Linked with"
@@ -967,133 +331,21 @@ msgstr "បាន​តភ្ជាប់​ជាមួយ"
 msgid  "~Category"
 msgstr "ប្រភេទ​ "
 
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
-msgid  "Contains"
-msgstr "មាន"
-
-#: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
-msgid  "Current version"
-msgstr "កំណែ​បច្ចុប្បន្ន"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
-msgid  "Export"
-msgstr "នាំចេញ"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "បញ្ចូល​"
-
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
 msgid  "~Insert"
 msgstr "បញ្ចូល "
-
-#: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
-msgid  "<All formats>"
-msgstr "<ទ្រង់ទ្រាយ​ទាំងអស់>"
-
-#: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
-msgid  "~Automatic file name extension"
-msgstr "កន្ទុយ​នៃ​ឈ្មោះ​ឯកសារ​ស្វ័យ​ប្រវត្តិ "
-
-#: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
-msgid  "~Selection"
-msgstr "ជម្រើស "
-
-#: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
-msgid  "~Link"
-msgstr "តំណ "
-
-#: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
-msgid  "Pr~eview"
-msgstr "មើល​ជា​​មុន "
-
-#: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
-msgid  "~Read-only"
-msgstr "បាន​តែ​អាន "
-
-#: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
-msgid  "Save with ~password"
-msgstr "រក្សាទុក​ដោយ​ពាក្យ​សម្ងាត់  "
-
-#: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
-msgid  "Edit ~filter settings"
-msgstr "កែ​សម្រួល​កំណត់​តម្រង "
-
-#: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
-msgid  "~Play"
-msgstr "លេង"
-
-#: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
-msgid  "Sto~p"
-msgstr "ឈប់ "
-
-#: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
-msgid  "~Open"
-msgstr "បើក "
-
-#: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
-msgid  "~Save"
-msgstr "រក្សាទុក "
-
-#: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
-msgid  "Style:"
-msgstr "រចនាប័ទ្ម ៖"
-
-#: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
-msgid  "~Templates:"
-msgstr "ពុម្ព ៖ "
-
-#: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
-msgid  "~Version:"
-msgstr "កំណែ ៖ "
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
 msgid  "Find on this Page"
 msgstr "រក​លើ​ទំព័រ​នេះ"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-msgid  "~Search for"
-msgstr "ស្វែងរក "
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
-msgid  "~Whole words only"
-msgstr "តែ​ពាក្យ​ទាំងមូល "
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
-msgid  "~Match case"
-msgstr "ករណី​ដំណូច "
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
 msgid  "Wrap ~around"
 msgstr "រុំ​ជុំ​វិញ "
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
-msgid  "~Backwards"
-msgstr "ថយ​ក្រោយ "
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
 msgid  "~Find"
 msgstr "រក "
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
-msgid  "~Close"
-msgstr "បិទ "
-
-#: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
-msgid  "Enter Password"
-msgstr "បញ្ចូល​ពាក្យ​សម្ងាត់"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
-msgid  "~User"
-msgstr "អ្នកប្រើ "
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
-msgid  "~Password"
-msgstr "ពាក្យសម្ងាត់ "
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
-msgid  "~Confirm"
-msgstr "អះអាង "
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
 msgid  "Password"
@@ -1111,46 +363,6 @@ msgstr "បញ្ជាក់"
 msgid  "%PRODUCTNAME document"
 msgstr "ឯកសារ %PRODUCTNAME"
 
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
-msgid  "~Title"
-msgstr "ចំណងជើង "
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
-msgid  "~Subject"
-msgstr "ប្រធានបទ "
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
-msgid  "~Keywords"
-msgstr "ពាក្យ​គន្លឹះ "
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
-msgid  "~Comments"
-msgstr "មតិយោបល់ "
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
-msgid  "Type:"
-msgstr "ប្រភេទ ៖"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
-msgid  "~Read-only"
-msgstr "បាន​តែ​អាន "
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
-msgid  "Location:"
-msgstr "ទីតាំង ៖​"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
-msgid  "Size:"
-msgstr "ទំហំ ៖"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
-msgid  "Created:"
-msgstr "​បាន​បង្កើត​ ៖"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
-msgid  "Modified:"
-msgstr "បាន​កែប្រែ ៖"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
 msgid  "Digitally signed:"
 msgstr "បាន​ចុះ​ហត្ថលេខា​ជា​លេខ ៖"
@@ -1158,22 +370,6 @@ msgstr "បាន​ចុះ​ហត្ថលេខា​ជា​លេខ �
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PUSHBUTTON.TEXT
 msgid  "Digital Signature..."
 msgstr "ហត្ថលេខា​ជា​លេខ..."
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
-msgid  "Multiply signed document"
-msgstr "ឯកសារ​ដែល​បាន​ចុះ​ហត្ថលេខា​ជា​ច្រើនបែប"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
-msgid  "Last printed:"
-msgstr "​បោះពុម្ព​ចុង​ក្រោយ ៖"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
-msgid  "Total editing time:"
-msgstr "រយៈពេល​កែសម្រួល​សរុប ៖"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
-msgid  "Revision number:"
-msgstr "ចំនួន​ពិនិត្យ​ឡើង​វិញ ៖"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
 msgid  "Reset"
@@ -1183,33 +379,13 @@ msgstr "កំណត់​ឡើង​វិញ"
 msgid  "~Apply user data"
 msgstr "អនុវត្ត​ទិន្នន័យ​អ្នក​ប្រើ "
 
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
-msgid  "Template:"
-msgstr "ពុម្ព ៖"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
-msgid  "unknown"
-msgstr "មិន​ស្គាល់"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
 msgid  "File Name"
 msgstr "ឈ្មោះ​ឯកសារ"
 
-#: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
-msgid  "~Info fields..."
-msgstr "វាល​ព័ត៌មាន​... "
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
-msgid  "Do not refresh automatically"
-msgstr "កុំ​ធ្វើ​ឲ្យ​ស្រស់​ដោយ​ស្វ័យ​ប្រវត្តិ"
-
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
 msgid  "Refresh this document"
 msgstr "ធ្វើ​ឲ្យ​ឯកសារ​នេះ​ស្រស់"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
-msgid  "every"
-msgstr "រៀងរាល់"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
 msgid  "seconds"
@@ -1218,14 +394,6 @@ msgstr "វិនាទី"
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RADIOBUTTON.TEXT
 msgid  "Redirect from this document"
 msgstr "ប្តូរ​ទិស​ពី​ឯកសារ​នេះ"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
-msgid  "after"
-msgstr "បន្ទាប់​ពី"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
-msgid  "to URL"
-msgstr "ទៅ​ URL"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
 msgid  "to frame"
@@ -1239,165 +407,17 @@ msgstr "ប្រសិន​បើ​អ្នក​ជ្រើស​ជម្
 msgid  "~Properties"
 msgstr "លក្ខណសម្បត្តិ​"
 
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
-msgid  "Name"
-msgstr "ឈ្មោះ"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
-msgid  "Type"
-msgstr "ប្រភេទ"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
-msgid  "Value"
-msgstr "តម្លៃ"
-
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
 msgid  "~Add"
 msgstr "បន្ថែម"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
-msgid  "Property Name"
-msgstr "ឈ្មោះ​លក្ខណសម្បត្តិ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
-msgid  "Checked by"
-msgstr "ពិនិត្យ​ដោយ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
-msgid  "Client"
-msgstr "ម៉ាស៊ីន​ភ្ញៀវ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
-msgid  "Date completed"
-msgstr "បាន​បំពេញ​កាលបរិច្ឆេទ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
-msgid  "Department"
-msgstr "ផ្នែក"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
-msgid  "Destinations"
-msgstr "ទិស"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
-msgid  "Disposition"
-msgstr "ការ​រៀបចំ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
-msgid  "Division"
-msgstr "ការ​បែងចែក"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
-msgid  "Document number"
-msgstr "លេខ​ឯកសារ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
-msgid  "Editor"
-msgstr "កម្មវិធី​កែសម្រួល"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
-msgid  "E-Mail"
-msgstr "អ៊ីមែល"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
-msgid  "Forward to"
-msgstr "បញ្ជូន​បន្ត​ទៅកាន់"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
-msgid  "Group"
-msgstr "ក្រុម"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
-msgid  "Info"
-msgstr "ព័ត៌មាន"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
-msgid  "Language"
-msgstr "ភាសា"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
-msgid  "Mailstop"
-msgstr "Mailstop"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
-msgid  "Matter"
-msgstr "រូបធាតុ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
-msgid  "Office"
-msgstr "ការិយាល័យ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
-msgid  "Owner"
-msgstr "ម្ចាស់"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
-msgid  "Project"
-msgstr "គម្រោង"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
-msgid  "Publisher"
-msgstr "អ្នក​​បោះពុម្ព​​ផ្សាយ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
-msgid  "Purpose"
-msgstr "គោលបំណង"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
-msgid  "Received from"
-msgstr "បានទទួល​ពី"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
-msgid  "Recorded by"
-msgstr "បាន​កត់ត្រា​ដោយ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
-msgid  "Recorded date"
-msgstr "កាលបរិច្ឆេទ​កត់ត្រា"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
-msgid  "Reference"
-msgstr "សេចក្ដី​យោង"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
-msgid  "Source"
-msgstr "ធនធាន"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
-msgid  "Status"
-msgstr "ស្ថានភាព"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
-msgid  "Telephone number"
-msgstr "លេខទូរស័ព្ទ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
-msgid  "Typist"
-msgstr "អ្នកវាយអត្ថបទ"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
-msgid  "URL"
-msgstr "URL"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
-msgid  "Text"
-msgstr "អត្ថបទ"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 msgid  "DateTime"
 msgstr "ពេលវេលា​កាលបរិច្ឆេទ"
 
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
-msgid  "Date"
-msgstr "កាលបរិច្ឆេទ"
-
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
 msgid  "Duration"
 msgstr "ថិរវេលា"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
-msgid  "Number"
-msgstr "លេខ"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
 msgid  "Yes or no"
@@ -1407,37 +427,9 @@ msgstr "បាទ ឬ ចាស"
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
-msgid  "Yes"
-msgstr "បាទ"
-
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
-msgid  "No"
-msgstr "ទេ"
-
-#: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Remove Property"
-msgstr "យក​លក្ខណសម្បត្តិ​ចេញ"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
-msgid  "Properties of "
-msgstr "លក្ខណសម្បត្តិរបស់​ "
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
-msgid  "General"
-msgstr "ទូទៅ"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
-msgid  "Description"
-msgstr "ពិពណ៌​នា​"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
-msgid  "Custom Properties"
-msgstr "លក្ខណសម្បត្តិ​ផ្ទាល់ខ្លួន"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
-msgid  "Internet"
-msgstr "អ៊ីនធឺណិត"
+#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr "តម្លៃ​ដែល​បាន​បញ្ចូល មិន​ត្រូវ​គ្នា​នឹង​ប្រភេទ​ដែល​បាន​បញ្ជាក់​ទេ ។\nតម្លៃ​នឹង​ត្រូវបាន​រក្សាទុក​ជា​អត្ថបទ ។"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 msgid  "Security"
@@ -1471,10 +463,6 @@ msgstr "ម៉ោង "
 msgid  "Min~utes"
 msgstr "នាទី "
 
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
-msgid  "~Seconds"
-msgstr "វិនាទី "
-
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 msgid  "Millise~conds"
 msgstr "មិល្លីវិនាទី "
@@ -1482,22 +470,6 @@ msgstr "មិល្លីវិនាទី "
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.MODALDIALOG.TEXT
 msgid  "Edit Field Names"
 msgstr "កែសម្រួល​ឈ្មោះវាល​"
-
-#: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
-msgid  "Names"
-msgstr "ឈ្មោះ"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
-msgid  "Create Style"
-msgstr "បង្កើត​រចនាប័ទ្ម"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
-msgid  "Style name"
-msgstr "ឈ្មោះ​រចនាប័ទ្ម"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
-msgid  "Style already exists. Overwrite?"
-msgstr "រចនាប័ទ្ម​មាន​រួច​ហើយ ។ សរសេរ​ជាន់​លើ​ឬទេ ?"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
 msgid  "Record Macro"
@@ -1515,61 +487,29 @@ msgstr "បោះបង់​​ការ​កត់​ត្រា"
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
 msgstr "%PRODUCTNAME មិន​អាច​រក​ឃើញ​ការ​កំណត់​រចនា​សម្ព័ន្ធ​ដែល​ធ្វើការ ។ សូម​រក្សា​ទុក​ឯកសារ​នេះ​ក្នុង​មូលដ្ឋាន​ជំនួស​វិញ និង​​ភ្ជាប់​វា​ពី​ក្នុង​កម្មវិធី​អ៊ីមែល​របស់​អ្នក ។"
 
-#: dialog/dialog.src#STR_RESET.STRING.TEXT
-msgid  "~Reset"
-msgstr "កំណត់​ឡើង​វិញ "
-
-#: dialog/dialog.src#STR_APPLY.STRING.TEXT
-msgid  "Apply"
-msgstr "អនុវត្ត"
-
-#: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
-msgid  "Organizer"
-msgstr "អ្នក​រៀបចំ​"
-
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
 msgid  "This name is already in use."
 msgstr "ឈ្មោះ​នេះ​បាន​ប្រើ​រួច​ហើយ ។"
 
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
-msgid  "This Style does not exist."
-msgstr "គ្មាន​​រចនាប័ទ្ម​នេះ ។"
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr "រចនាប័ទ្ម​នេះ​មិន​អាច​ប្រើ​ជា​រចនាប័ទ្ម​គោល​​បាន​ទេ \nពីព្រោះ​វា​នឹង​ផ្តល់​លទ្ធផល​ជា​សេចក្តីយោង​ដដែលៗ ។"
+
+#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr "ឈ្មោះ​មាន​រួចហើយ ជា​រចនាប័ទ្ម​លំនាំដើម ។\nសូម​ជ្រើស​ឈ្មោះ​ផ្សេង​ ។"
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 msgid  "Do you really want to delete Style $1?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​រចនាប័ទ្ម $1 ឬ ?"
 
-#: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
-msgid  "You are deleting an applied Style!\n"
-msgstr "អ្នក​កំពុង​លុប​រចនាប័ទ្ម​ដែល​បាន​អនុវត្ត !​\n"
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
-msgid  "New..."
-msgstr "ថ្មី​..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
-msgid  "Modify..."
-msgstr "កែប្រែ​..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
-msgid  "Delete..."
-msgstr "លុប​..."
-
-#: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
-msgid  "Navigator"
-msgstr "កម្មវិធី​រុករក​"
-
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 msgid  "Task Pane"
 msgstr "បន្ទះ​ភារកិច្ច"
 
-#: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
-msgid  "Faulty password confirmation"
-msgstr "អះអាង​ពាក្យ​សម្ងាត់​ខុស"
-
-#: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
-msgid  "Send"
-msgstr "ផ្ញើ"
+#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
+msgid  "Sidebar"
+msgstr "របារ​ចំហៀង"
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 msgid  "Dock"
@@ -1595,57 +535,9 @@ msgstr "ឯកសារ​នេះ​អាចមាន​ទ្រង់ទ្
 msgid  "~Keep Current Format"
 msgstr "រក្សាទុក​ទ្រង់ទ្រាយ​បច្ចុប្បន្ន"
 
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
-msgid  "~Save in ODF Format"
-msgstr "រក្សាទុក​ជា​ទ្រង់ទ្រាយ ODF"
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
-msgid  "~More Information..."
-msgstr "ព័ត៌មាន​បន្ថែម..."
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
-msgid  "~Ask when not saving in ODF format"
-msgstr "សួរ​នៅពេល​ដែល​មិន​រក្សាទុក​ជា​ទ្រង់ទ្រាយ ODF"
-
-#: view/view.src#STR_NODEFPRINTER.STRING.TEXT
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "រក​មិន​ឃើញ​ម៉ាស៊ីន​បោះពុម្ព​លំនាំដើម ។​\nសូម​ជ្រើស​ម៉ាស៊ីន​បោះពុម្ព​មួយ រួចព្យាយាម​ម្តង​ទៀត ។"
-
-#: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "មិន​អាច​ចាប់ផ្តើម​ម៉ាស៊ីន​បោះពុម្ព ។\nសូម​ពិនិត្យ​មើល​ការ​កំណត់​រចនា​សម្ព័ន្ធ​ម៉ាស៊ីន​បោះពុម្ព​របស់​អ្នក ។"
-
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
 msgstr "ឯកសារ​នេះ​ត្រូវ​បាន​ធ្វើ​ទ្រង់ទ្រាយ សម្រាប់​ម៉ាស៊ីន​បោះពុម្ព $1 ។ មិន​អាច​រក​បាន​​ម៉ាស៊ីន​បោះពុម្ព​ដែល​បាន​បញ្ជាក់ ។ \nតើ​អ្នក​ចង់​ប្រើ​ម៉ាស៊ីន​បោះពុម្ព​ស្តងដារ $2 ឬ​ទេ ?"
-
-#: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
-msgid  "Options..."
-msgstr "ជម្រើស..."
-
-#: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
-msgid  "Printer Options"
-msgstr "ជម្រើស​ម៉ាស៊ីន​បោះពុម្ព"
-
-#: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
-msgid  "Printer busy"
-msgstr "ម៉ាស៊ីន​បោះពុម្ព ជាប់​រវល់"
-
-#: view/view.src#STR_ERROR_PRINT.STRING.TEXT
-msgid  "Error while printing"
-msgstr "កំហុស​​ ​ខណៈ​ពេល​កំពុង​បោះពុម្ព"
-
-#: view/view.src#STR_PRINTING.STRING.TEXT
-msgid  "Printing"
-msgstr "បោះពុម្ព"
-
-#: view/view.src#STR_PAGE.STRING.TEXT
-msgid  "Page "
-msgstr "ទំព័រ"
-
-#: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-msgid  "Error saving template "
-msgstr "កំហុស​រក្សាទុក​ពុម្ព"
 
 #: view/view.src#STR_READONLY.STRING.TEXT
 msgid  " (read-only)"
@@ -1663,53 +555,45 @@ msgstr "ទំហំ​ទំព័រ​ត្រូវ​បាន​កែប
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Khmer OS System\"><dl><dt><b>ចំណងជើង ៖</b><dd>$(TITEL)<dt><b>​ប្រធានបទ ៖​</b><dd>$(THEME)<dt><b>​ពាក្យ​គន្លឹះ ៖​</b><dd>$(KEYWORDS)<dt><b>​ពិពណ៌នា ៖​</b><dd>$(TEXT)</dl></font></body></html>"
 
-#: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
-msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Khmer OS System\"><B>​រក​មិន​ឃើញ​លក្ខណសម្បត្តិ​ឯកសារ ។​</B></FONT></P></BODY></HTML>"
+#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr "មិន​អាច​បិទ​ឯកសារ ពីព្រោះ​\nការងារ​បោះពុម្ព​មួយ​កំពុង​ត្រូវ​បាន​អនុវត្ត ។"
 
-#: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
-msgid  "Print Monitor"
-msgstr "អ្នក​ត្រួតពិនិត្យ​បោះពុម្ព"
-
-#: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
-msgid  "is being printed on"
-msgstr "កំពុង​ត្រូវ​បាន​បោះពុម្ព​លើ"
-
-#: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
-msgid  "is being prepared for printing"
-msgstr "កំពុង​ត្រូវ​បាន​រៀបចំ​ដើម្បីបោះពុម្ព"
+#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr "កំហុស​​​ផ្ញើ​សារ​មួយ​​បាន​កើតឡើង ។ កំហុស​អាច​ជា​ការ​បាត់​គណនី​អ្នក​ប្រើ ឬ​​ការ​ដំឡើង​មិន​ដំឡើង ។​\nសូម​ពិនិត្យមើល​ការ​កំណត់ %PRODUCTNAME ឬ​ការ​កំណត់​កម្មវិធី​អ៊ីមែល​របស់​អ្នក ។"
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "មិន​អាច​កែសម្រួល​ឯកសារ​នេះ អាច​ប្រហែល​ជា​ដោយ​សារ បាត់​សិទ្ធិ​ដំណើរការ ។ តើ​អ្នក​ចង់​កែសម្រួល​ច្បាប់​ចម្លង​នៃ​ឯកសារ​ឬ​ទេ ?"
 
-#: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
-msgid  " (repaired document)"
-msgstr "(ឯកសារ​ដែល​បាន​ជួសជុល)"
-
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME មិន​អាច​រក​ឃើញ​កម្មវិធី​រុករក​បណ្ដាញ​លើ​ប្រព័ន្ធ​របស់​អ្នក ។ សូម​ពិនិត្យ​ចំណូល​ចិត្ត​ផ្ទៃ​តុ​របស់​អ្នក ឬ​ដំឡើង​កម្មវិធី​រុករក​បណ្ដាញ (ឧ. Mozilla) ក្នុង​ទីតាំង​លំនាំ​ដើម​ដែល​បាន​ស្នើ​កំឡុង​ពេល​ការ​ដំឡើង​កម្មវិធី​រុករក ។"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
-msgid  "Modify Link"
-msgstr "កែប្រែ​តំណ"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
+msgid  "Customization"
+msgstr "ប្ដូរ​តាម​តម្រូវការ"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
-msgid  "~Application:"
-msgstr "កម្មវិធី ៖ "
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
+msgid  "Restore Default"
+msgstr "ស្ដារ​លំនាំដើម​ឡើងវិញ"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
-msgid  "~File:"
-msgstr "ឯកសារ ៖ "
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
+msgid  "More Options"
+msgstr "ជម្រើស​ផ្សេង​ទៀត"
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
+msgid  "Close Sidebar Deck"
+msgstr "ជ្រើស​កម្រិត​របារ​ចំហៀង"
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
+msgid  "Panel: "
+msgstr "បន្ទះ៖"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
 msgid  "~Category:"
 msgstr "ប្រភេទ ៖ "
-
-#: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
-msgid  "Modify link"
-msgstr "កែប្រែ​តំណ"
 
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
 msgid  "%PRODUCTNAME"
@@ -1751,37 +635,9 @@ msgstr "ជីកាបៃ"
 msgid  "Cancel all changes?"
 msgstr "បោះបង់​ការ​ផ្លាស់ប្ដូរ​ទាំងអស់ ?"
 
-#: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
-msgid  "Document already open."
-msgstr "ឯកសារ​បានបើក​រួ​ចហើយ ។"
-
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME មិន​អាច​រក​ឃើញ​កម្មវិធី​រុក​រក​ទំព័រ​បណ្តាញ​លើ​ប្រព័ន្ធ​របស់​អ្នក ។ សូម​ពិនិត្យ​មើល ​ចំណង់​ចំណូល​ចិត្ត​ផ្ទៃ​តុ ​របស់​អ្នក ឬ​ដំឡើង​កម្មវិធី​រុក​រក​ទំព័រ​បណ្តាញ​មួយ (ឧទាហរណ៍ Mozilla) ក្នុង​ទីតាំង​លំនាំដើម​ដែលបាន​ស្នើ​សុំ​ កុំឡុង​ពេល​​ដំឡើង​កម្មវិធី​រុក​រក ។"
-
-#: appl/app.src#GID_INTERN.STRING.TEXT
-msgid  "Internal"
-msgstr "ខាង​ក្នុង"
-
-#: appl/app.src#GID_APPLICATION.STRING.TEXT
-msgid  "Application"
-msgstr "កម្មវិធី"
-
-#: appl/app.src#GID_VIEW.STRING.TEXT
-msgid  "View"
-msgstr "ទិដ្ឋភាព"
-
-#: appl/app.src#GID_DOCUMENT.STRING.TEXT
-msgid  "Documents"
-msgstr "ឯកសារ"
-
-#: appl/app.src#GID_EDIT.STRING.TEXT
-msgid  "Edit"
-msgstr "កែ​សម្រួល"
-
-#: appl/app.src#GID_MACRO.STRING.TEXT
-msgid  "BASIC"
-msgstr "BASIC"
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
 msgid  "Options"
@@ -1791,49 +647,9 @@ msgstr "ជម្រើស​"
 msgid  "Math"
 msgstr "គណិតវិទ្យា"
 
-#: appl/app.src#GID_NAVIGATOR.STRING.TEXT
-msgid  "Navigate"
-msgstr "រុករក"
-
-#: appl/app.src#GID_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "បញ្ចូល​"
-
-#: appl/app.src#GID_FORMAT.STRING.TEXT
-msgid  "Format"
-msgstr "ទ្រង់​ទ្រាយ"
-
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
 msgid  "Templates"
 msgstr "ពុម្ព"
-
-#: appl/app.src#GID_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr "អត្ថបទ"
-
-#: appl/app.src#GID_FRAME.STRING.TEXT
-msgid  "Frame"
-msgstr "ស៊ុម"
-
-#: appl/app.src#GID_GRAPHIC.STRING.TEXT
-msgid  "Graphic"
-msgstr "ក្រាហ្វិក"
-
-#: appl/app.src#GID_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "តារាង"
-
-#: appl/app.src#GID_ENUMERATION.STRING.TEXT
-msgid  "Numbering"
-msgstr "លេខរៀង"
-
-#: appl/app.src#GID_DATA.STRING.TEXT
-msgid  "Data"
-msgstr "ទិន្នន័យ​"
-
-#: appl/app.src#GID_SPECIAL.STRING.TEXT
-msgid  "Special Functions"
-msgstr "អនុគមន៍​ពិសេស"
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
 msgid  "Image"
@@ -1843,101 +659,29 @@ msgstr "រូបភាព"
 msgid  "Chart"
 msgstr "គំនូសតាង"
 
-#: appl/app.src#GID_EXPLORER.STRING.TEXT
-msgid  "Explorer"
-msgstr "កម្មវិធី​រុករក"
-
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
 msgid  "Connector"
 msgstr "អ្នក​ត​ភ្ជាប់"
 
-#: appl/app.src#GID_MODIFY.STRING.TEXT
-msgid  "Modify"
-msgstr "កែប្រែ"
-
-#: appl/app.src#GID_DRAWING.STRING.TEXT
-msgid  "Drawing"
-msgstr "គំនូរ"
-
-#: appl/app.src#GID_CONTROLS.STRING.TEXT
-msgid  "Controls"
-msgstr "វត្ថុ​​បញ្ជា​"
-
-#: appl/app.src#STR_ISMODIFIED.STRING.TEXT
-msgid  "Do you want to save the changes to %1?"
-msgstr "តើ​អ្នក​ចង់​រក្សាទុក​ភាព​ផ្លាស់ប្តូរ​ចំពោះ %1 ឬ​ទេ ?"
-
-#: appl/app.src#STR_QUITAPP.STRING.TEXT
-msgid  "E~xit"
-msgstr "ចេញ "
-
-#: appl/app.src#RID_STR_HELP.STRING.TEXT
-msgid  "Help"
-msgstr "ជំនួយ"
-
-#: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
-msgid  "No automatic start at 'XX'"
-msgstr "គ្មាន​ការ​ចាប់ផ្តើម​ដោយ​ស្វ័យប្រវត្តិ​ពី ​'XX'"
-
-#: appl/app.src#RID_HELPBAR.STRING.TEXT
-msgid  "Help Bar"
-msgstr "របា​រ​ជំនួយ"
-
-#: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
-msgid  "The help file for this topic is not installed."
-msgstr "ឯកសារ​ជំនួយ សម្រាប់​ប្រធានបទ​នេះ មិន​ត្រូវ​បាន​ដំឡើង ។"
-
-#: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
-msgid  "Function Bar"
-msgstr "របារ​អនុគមន៍"
+#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr "មិន​អាច​បញ្ចប់​ដំណើរការ​កម្មវិធី នៅ​ពេល​បច្ចុប្បន្ន ។​\nសូម​រង់ចាំ​រហូត​ដល់ ការងារ​បោះពុម្ព​ទាំងអស់ និង​/​ឬ​\nសកម្មភាព OLE ត្រូវ​បាន​បញ្ចប់ រួច បិទ​​ប្រអប់​ទាំងអស់ ។"
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr "កំហុស​មួយ​បាន​កើតឡើង​ក្នុង​ការ​​កំណត់​​រចនាសម្ព័ន្ធ​ពិសេស ។​\nសូម​ទាក់ទង​អ្នក​គ្រប់គ្រង​របស់​អ្នក ។"
 
-#: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
-msgid  "Exit Quickstarter"
-msgstr "ចេញពី Quickstarter"
-
-#: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "អ្នក​ចាប់ផ្តើមរហ័ស​របស់​ %PRODUCTNAME %PRODUCTVERSION"
-
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
 msgid  "Open Document..."
 msgstr "បើក​ឯកសារ..."
 
-#: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
-msgid  "From Template..."
-msgstr "ពី​ពុម្ព..."
-
-#: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
-msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr "ផ្ទុក %PRODUCTNAME កំឡុង​ពេល​ប្រព័ន្ធ​ចាប់ផ្តើម"
-
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
 msgid  "Disable Quickstarter"
-msgstr "មិន​អនុញ្ញាត​កម្មវិធី​ចាប់​ផ្ដើម​ថាស​ប្រព័ន្ធ​រហ័ស"
-
-#: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
-msgid  "File"
-msgstr "ឯកសារ"
-
-#: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
-msgid  "Startcenter"
-msgstr "មជ្ឈមណ្ឌល​ចាប់ផ្ដើម"
+msgstr "បិទ​កម្មវិធីចាប់ផ្ដើម​រហ័ស"
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
 msgid  "Recent Documents"
 msgstr "ឯកសារ​ថ្មីៗ"
-
-#: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
-msgid  "Update all links?"
-msgstr "ធ្វើ​បច្ចុប្បន្នភាព​តំណ​ទាំងអស់ ?"
 
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
 msgid  "DDE link to % for % area % are not available."
@@ -1947,9 +691,17 @@ msgstr "មិន​មាន​តំណ DDE ​ទៅ % សម្រាប់ 
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "តំណ​ខ្ពស់​នេះ​នឹង​បើក \"%s\" ។  តើ​អ្នក​ចង់​បន្ត​ឬ​ទេ ?"
 
-#: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
-msgid  "Security Warning"
-msgstr "ការ​ព្រមាន​​​សុវត្ថិភាព"
+#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr "ដោយ​សារ​ហេតុផល​សុវត្ថិភាព តំណខ្ពស់​មិន​អាច​ប្រតិបត្តិ​បាន​ឡើយ ។\nអាសយដ្ឋាន​ដែល​បាន​បញ្ជាក់ នឹង​មិន​បើក​ឡើយ ។"
+
+#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr "ការ​រក្សទុក​នឹង​យក​ហត្ថលេខា​ដែល​មាន​ស្រាប់​ចេញ​ទាំង​អស់ ។\nតើ​អ្នក​ពិត​ជា​ចង់​បន្ត​រក្សាទុក​ឯកសារ​នេះ​មែនទេ ?"
+
+#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr "ឯកសារ​ត្រូវ​តែ​បាន​រក្សាទុក​មុន​ពេល​វា​ត្រូវ​បាន​ដាក់​សញ្ញា​ ។\nតើ​អ្នក​ចង់​រក្សាទុក​ឯកសារ​ដែរ​ឬទេ ?"
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
@@ -1958,10 +710,6 @@ msgstr "ឯកសារ​នេះ​ត្រូវ​តែ​រក្សា
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
 msgid  " (Signed)"
 msgstr " (​បាន​ចុះ​ហត្ថលេខា​)"
-
-#: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
-msgid  "Document"
-msgstr "ឯកសារ"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
 msgid  "- None -"
@@ -2003,49 +751,21 @@ msgstr "រក​មិនឃើញ​តម្រង​ក្រាហ្វិ
 msgid  "Not enough memory to insert graphic"
 msgstr "គ្មាន​អង្គចងចាំ​គ្រប់គ្រង​ ដើម្បី​បញ្ចូល​ក្រាហ្វិក"
 
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
-msgid  "Contents"
-msgstr "មាតិកា"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
-msgid  "Index"
-msgstr "លិបិក្រម"
-
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
 msgid  "Find"
 msgstr "រក"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
-msgid  "Bookmarks"
-msgstr "កន្លែង​ចំណាំ"
-
-#: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
-msgid  "~Search term"
-msgstr "ស្វែងរក​ពាក្យ "
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
 msgid  "~Display"
 msgstr "បង្ហាញ "
 
-#: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-msgid  "S~earch term"
-msgstr "ស្វែងរក​ពាក្យ "
-
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
 msgid  "~Find"
 msgstr "រក "
 
-#: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
-msgid  "~Complete words only"
-msgstr "តែ​ពាក្យ​ពេញលេញ "
-
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
 msgid  "Find in ~headings only"
 msgstr "រក​តែ​ក្នុង​ក្បាល​ "
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
-msgid  "~Bookmarks"
-msgstr "កន្លែង​ចំណាំ "
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME Help"
@@ -2059,77 +779,21 @@ msgstr "បង្ហាញ​ស្លាបព្រិល​រុករក"
 msgid  "Hide Navigation Pane"
 msgstr "លាក់​ស្លាបព្រិល​រុករក"
 
-#: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
-msgid  "First Page"
-msgstr "ទំព័រ​ទី​មួយ"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
-msgid  "Previous Page"
-msgstr "ទំព័រ​មុន"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
-msgid  "Next Page"
-msgstr "ទំព័រ​បន្ទាប់"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
-msgid  "Print..."
-msgstr "បោះពុម្ព​..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
-msgid  "Add to Bookmarks..."
-msgstr "បន្ថែម​ទៅ​កន្លែង​ចំណាំ​...​"
-
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
 msgid  "Find on this Page..."
 msgstr "រក​ក្នុង​ទំព័រ​នេះ​...​"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
-msgid  "HTML Source"
-msgstr "ប្រភព​ HTML"
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
 msgid  "The Help is being started..."
 msgstr "ជំនួយ​កំពុង​ត្រូវ​បាន​ចាប់ផ្តើម​...​"
 
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
-msgid  "Select Text"
-msgstr "ជ្រើស​អត្ថបទ"
-
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
-msgid  "~Copy"
-msgstr "ចម្លង "
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
-msgid  "Add to Bookmarks"
-msgstr "បន្ថែម​ទៅ​កន្លែង​ចំណាំ"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
-msgid  "Bookmark:"
-msgstr "កន្លែង​ចំណាំ ៖"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
-msgid  "Rename Bookmark"
-msgstr "ប្តូរ​ឈ្មោះ​កន្លែង​ចំណាំ"
-
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
 msgid  "Display"
 msgstr "បង្ហាញ"
 
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
-msgid  "Rename..."
-msgstr "ប្តូរ​ឈ្មោះ..."
-
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
-msgid  "Delete"
-msgstr "លុប​"
-
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
 msgid  "No topics found."
 msgstr "រក​មិន​ឃើញ​ប្រធានបទ ។"
-
-#: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
-msgid  "The text you entered was not found."
-msgstr "រក​មិន​ឃើញ​អត្ថបទ ដែល​អ្នក​បាន​វាយបញ្ចូល ។"
 
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
 msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"

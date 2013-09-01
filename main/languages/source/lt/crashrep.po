@@ -33,128 +33,204 @@ msgstr ""
 
 #: all/crashrep.ulf#_WELCOME_CAPTION_
 msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "„%PRODUCTNAME% %PRODUCTVERSION%“ pranešimo apie klaidas priemonė"
+msgstr "„%PRODUCTNAME% %PRODUCTVERSION%“ klaidų ataskaita"
 
 #: all/crashrep.ulf#_WELCOME_HEADER_
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "Tai „%PRODUCTNAME% %PRODUCTVERSION%“ pranešimo apie klaidas priemonė"
+msgstr "Kviečiame susipažinti su „%PRODUCTNAME% %PRODUCTVERSION%“ klaidų ataskaita"
+
+#: all/crashrep.ulf#_WELCOME_BODY1_
+#, fuzzy
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr "Klaidų ataskaitos priemonė renka informaciją apie „%PRODUCTNAME%“ veikimą ir siunčia į „Oracle“, kad programuotojams būtų lengviau tobulinti programą.\n\n"
+
+#: all/crashrep.ulf#_WELCOME_BODY2_
+#, fuzzy
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr "Išsiųsti ataskaitą lengva – galite arba iškart spustelėti mygtuką „Siųsti“ sekančiame dialoge, arba, prieš išsiųsdami, dar glaustai apibūdinti klaidos atsiradimo aplinkybes. Jeigu ataskaitą norite peržiūrėti, spustelėkite mygtuką „Rodyti ataskaitą“. Spustelėjus „Nesiųsti“ jokie duomenys nebus siunčiami.\n\n"
+
+#: all/crashrep.ulf#_WELCOME_BODY3_
+#, fuzzy
+msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr "Naudotojo privatumas\nRenkama tik informacija apie „%PRODUCTNAME% %PRODUCTVERSION%“ veikimą tuo metu, kai įvyko klaida. Jokia informacija apie slaptažodžius ar dokumento turinį nerenkama.\n\nSurinkta informacija bus naudojama tik „%PRODUCTNAME%“ programos tobulinimui ir nebus perduota trečiosioms šalims.\nDaugiau informacijos apie „Oracle“ privatumo taisykles galite rasti tinklalapyje\n"
+
+#: all/crashrep.ulf#_PRIVACY_URL_
+msgid  "http://www.openoffice.org/privacy.html"
+msgstr ""
 
 #: all/crashrep.ulf#_NEXT_BUTTON_
+#, fuzzy
 msgid  "~Next >>"
-msgstr "~Toliau >>"
+msgstr "Toliau >>"
 
 #: all/crashrep.ulf#_CANCEL_BUTTON_
+#, fuzzy
 msgid  "Cancel"
-msgstr "Atsisakyti"
+msgstr "Nutraukti"
 
 #: all/crashrep.ulf#_OK_BUTTON_
+#, fuzzy
 msgid  "OK"
-msgstr "Gerai"
+msgstr "Tęsti"
 
 #: all/crashrep.ulf#_REPORT_HEADER_
+#, fuzzy
 msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
-msgstr "Dirbant programa „%PRODUCTNAME% %PRODUCTVERSION%“ įvyko klaida"
+msgstr "Veikiant programai „%PRODUCTNAME% %PRODUCTVERSION%“ įvyko klaida"
+
+#: all/crashrep.ulf#_REPORT_BODY_
+#, fuzzy
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr "„%PRODUCTNAME% %PRODUCTVERSION%“ klaidų ataskaitos priemonė surinko informaciją, kuri padėtų „Oracle“ programuotojams patobulinti %PRODUCTNAME% programą.\nŽemiau esančiuose laukeliuose galite įvesti strigties ataskaitos pavadinimą bei aprašyti veiksmus, kuriuos mėginote atlikti, kai įvyko klaida. Tada spustelėkite „Siųsti“.\n"
 
 #: all/crashrep.ulf#_ENTER_TITLE_
+#, fuzzy
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr "Kuria programa dirbant (pvz. pateikčių rengykle) įvyko klaida?"
+msgstr "Kokį dokumentą tvarkant (pvz. skaidrių juostą) įvyko klaida?"
+
+#: all/crashrep.ulf#_ALLOW_CONTACT_
+#, fuzzy
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr "Aš sutinku, kad „Oracle“ susisiektų su manimi dėl šios klaidos."
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
 msgid  "Please enter your e-mail address."
 msgstr "Įveskite savo el. pašto adresą."
 
 #: all/crashrep.ulf#_ENTER_DESCRIPTION_
+#, fuzzy
 msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr "~Kokius veiksmus atlikote programa „%PRODUCTNAME%“, kai įvyko klaida?"
+msgstr "Kokius veiksmus atlikote programa „%PRODUCTNAME%“, kai įvyko klaida?"
 
 #: all/crashrep.ulf#_BACK_BUTTON_
+#, fuzzy
 msgid  " << ~Back"
-msgstr " << ~Atgal"
+msgstr " << Atgal"
 
 #: all/crashrep.ulf#_SEND_BUTTON_
+#, fuzzy
 msgid  "S~end"
-msgstr "S~iųsti"
+msgstr "Siųsti"
 
 #: all/crashrep.ulf#_DONOT_SEND_BUTTON_
+#, fuzzy
 msgid  "Do ~Not Send"
-msgstr "~Nesiųsti"
+msgstr "Nesiųsti"
 
 #: all/crashrep.ulf#_SHOW_REPORT_BUTTON_
+#, fuzzy
 msgid  "Show ~Report..."
-msgstr "Rodyti ~pranešimą..."
+msgstr "Rodyti ataskaitą..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_BUTTON_
+#, fuzzy
 msgid  "~Save Report..."
-msgstr "~Įrašyti pranešimą..."
+msgstr "Saugoti ataskaitą..."
 
 #: all/crashrep.ulf#_SAVE_REPORT_TITLE_
+#, fuzzy
 msgid  "Save Report to"
-msgstr "Įrašyti pranešimą į"
+msgstr "Saugoti ataskaitą pavadinimu"
+
+#: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
+#, fuzzy
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr "Klaidų ataskaitos nepavyko išsiųsti, nes numatytoji e. pašto programa neaptarnauja MAPI.\nNaudokite su MAPI suderinamą el. pašto programą."
 
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
+#, fuzzy
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr "Pranešimo apie klaidą nepavyko laikinai įrašyti, todėl jis nebuvo išsiųstas."
+msgstr "Klaidų ataskaitos kol kas nepavyko įrašyti, todėl nepavyko ir išsiųsti."
+
+#: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
+#, fuzzy
+msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr "Klaidų ataskaitos išsiųsti nepavyko, nes nebuvo galima paleisti priemonės „sendmail“.\nTikrinkite priemonės „sendmail“ nuostatas."
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
+#, fuzzy
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr "Pranešimo apie klaidą nepavyko išsiųsti. Patikrinkite įgaliotojo serverio nuostatas pranešimo apie klaidą parinkčių lange."
+msgstr "Klaidų ataskaitos išsiųsti nepavyko. Tikrinkite įgaliotojo serverio nuostatas klaidų ataskaitos priemonės nuostatų lange."
 
 #: all/crashrep.ulf#_ERROR_MSG_NOCONNECT_
+#, fuzzy
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr "Pranešimo apie klaidą nepavyko išsiųsti, nes nėra interneto ryšio. Patikrinkite interneto nuostatas."
+msgstr "Klaidų ataskaitos išsiųsti nepavyko, nes nėra interneto ryšio. Tikrinkite interneto nuostatas."
 
 #: all/crashrep.ulf#_OPTIONS_BUTTON_
+#, fuzzy
 msgid  "~Options..."
-msgstr "~Parinktys..."
+msgstr "Nuostatos..."
 
 #: all/crashrep.ulf#_OPTIONS_TITLE_
+#, fuzzy
 msgid  "Options"
-msgstr "Parinktys"
+msgstr "Nuostatos"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_HEADER_
 msgid  "Proxy settings"
 msgstr "Įgaliotojo serverio nuostatos"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_SYSTEM_
+#, fuzzy
 msgid  "Use ~system settings"
-msgstr "Naudoti ~sistemos nuostatas"
+msgstr "Naudoti sistemos nuostatas"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_DIRECT_
+#, fuzzy
 msgid  "Use ~direct connection to the Internet"
-msgstr "Prie interneto jungtis ~tiesiogiai"
+msgstr "Prie interneto jungtis tiesiogiai"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_MANUAL_
+#, fuzzy
 msgid  "Use ~manual settings"
-msgstr "~Parinkti nuostatas rankiniu būdu"
+msgstr "Parinkti nuostatas rankiniu būdu"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_ADDRESS_
+#, fuzzy
 msgid  "HT~TP Proxy"
-msgstr "HT~TP įgaliotasis serveris"
+msgstr "HTTP įgaliotasis serveris"
 
 #: all/crashrep.ulf#_PROXY_SETTINGS_PORT_
+#, fuzzy
 msgid  "~Port"
-msgstr "~Prievadas"
+msgstr "Prievadas"
+
+#: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
+#, fuzzy
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr "Klaidų ataskaitai išsiųsti „%PRODUCTNAME%“ klaidų ataskaitos priemonė turi prisijungti prie interneto.\n\nTinklo saugumo sumetimais įmonėse dažnai naudojami įgaliotieji serveriai kartu su užkarda.\n\nJei prie interneto jungiatės per įgaliotąjį serverį, nurodykite serverio adresą ir prievadą."
 
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
+#, fuzzy
 msgid  "Sending Error Report"
-msgstr "Pranešimo apie klaidą siuntimas"
+msgstr "Klaidų ataskaitos siuntimas"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_
+#, fuzzy
 msgid  "Status: Sending error report"
-msgstr "Būsena: siunčiamas pranešimas apie klaidą"
+msgstr "Būsena: siunčiama klaidų ataskaita"
 
 #: all/crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_
+#, fuzzy
 msgid  "Status: The error report has been sent successfully."
-msgstr "Būsena: pranešimas apie klaidą sėkmingai išsiųstas."
+msgstr "Būsena: klaidų ataskaita sėkmingai išsiųsta."
 
-#: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
-msgid  "Usage:"
-msgstr "Naudojimas:"
+#: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
+#, fuzzy
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr "Jūs pažymėjote nuostatą „Aš sutinku, kad „Oracle“ susisiektų su manimi dėl šios klaidos“.\nĮveskite savo el. pašto adresą."
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
 msgid  "-p <process ID>"
 msgstr "-p <proceso identifikatorius>"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
+#, fuzzy
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr "„%PRODUCTNAME%“ proceso identifikatorius (PID) priskiriamas pranešimo apie klaidas priemonei"
+msgstr "„%PRODUCTNAME%“ proceso identifikatorius (PID) priskiriamas klaidų ataskaitos priemonei"
+
+#: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
+#, fuzzy
+msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr "Rodomas paaiškinimas.\nSmulkesnę informaciją galima rasti diegimo apraše."

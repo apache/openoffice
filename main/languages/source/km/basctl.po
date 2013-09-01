@@ -115,10 +115,6 @@ msgstr "បញ្ចូល​​​​ពាក្យ​​​​សម្ងា
 msgid  "Name already exists"
 msgstr "ឈ្មោះ​​​​​មាន​​​​​រួច​​​​​​ហើយ​​"
 
-#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
-msgid  "(Signed)"
-msgstr "(​បាន​ចុះ​ហត្ថលេខា​)"
-
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
 msgid  "Object with same name already exists"
 msgstr "វត្ថុ​​​​មាន​​​​ឈ្មោះ​​​​​ដូច​​​គ្នា​​​ ​​មាន​​​​រួច​​​​ហើយ​"
@@ -211,22 +207,6 @@ msgstr "​រក​​មិន​​ឃើញ​វត្ថុ​​ ឬ​�
 msgid  "BASIC"
 msgstr "BASIC"
 
-#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
-msgid  "Ln"
-msgstr "បន្ទាត់​"
-
-#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
-msgid  "Col"
-msgstr "ជួរ​​ឈរ"
-
-#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
-msgid  "Document"
-msgstr "ឯកសារ​"
-
-#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
-msgid  "Macro Bar"
-msgstr "របា​រម៉ាក្រូ​"
-
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
 msgid  "The window cannot be closed while BASIC is running."
 msgstr "មិន​អាច​បិទ​បង្អួច​បាន​ទេ​​ ខណៈ​ពេល​ BASIC កំពុង​រត់​ ។​"
@@ -242,14 +222,6 @@ msgstr "មិន​​អាច​​យោង​​​ទៅ 'XX' ។"
 #: basicide/basidesh.src#RID_STR_WATCHNAME.STRING.TEXT
 msgid  "Watch"
 msgstr "ឃ្លាំ​មើល​​"
-
-#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
-msgid  "Variable"
-msgstr "អថេរ"
-
-#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
-msgid  "Value"
-msgstr "តម្លៃ"
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
 msgid  "Type"
@@ -287,14 +259,6 @@ msgstr "ម៉ូ​ឌុល​​ថ្មី​"
 msgid  "New Dialog"
 msgstr "ប្រអប់​​​ថ្មី​"
 
-#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
-msgid  "All"
-msgstr "ទាំង​អស់"
-
-#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
-msgid  "Page"
-msgstr "ទំព័រ​​"
-
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
 msgid  "A name must be entered."
 msgstr "ត្រូវ​តែ​បញ្ចូល​ឈ្មោះ​មួយ ។​"
@@ -318,10 +282,6 @@ msgstr "ឃ្លាំ​មើល​ ៖"
 #: basicide/basidesh.src#RID_STR_STACK.STRING.TEXT
 msgid  "Calls: "
 msgstr "ហៅ​ ៖"
-
-#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
-msgid  "My Macros"
-msgstr "ម៉ាក្រូ​​របស់​​ខ្ញុំ​"
 
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
 msgid  "My Dialogs"
@@ -379,29 +339,13 @@ msgstr "​​ប្រអប់​ BASIC"
 msgid  "Delete"
 msgstr "លុប​"
 
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
-msgid  "Rename"
-msgstr "ប្តូរ​​ឈ្មោះ​"
-
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
-msgid  "Hide"
-msgstr "លាក់​"
-
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
 msgid  "Modules..."
 msgstr "ម៉ូឌុល​..."
 
-#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
-msgid  "Do you want to overwrite the XX macro?"
-msgstr "តើ​​អ្នក​​ចង់​​​សរសេរ​​ជាន់​​​លើ​​ម៉ាក្រូ​ XX ឬទេ​ ?"
-
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
 msgid  "<Not localized>"
 msgstr "<មិន​បាន​បកប្រែ>"
-
-#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
-msgid  "[Default Language]"
-msgstr "[ភាសា​លំនាំដើម]"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 msgid  "Document Objects"
@@ -419,10 +363,6 @@ msgstr "ម៉ូ​ឌុល​"
 msgid  "Class Modules"
 msgstr "ម៉ូឌុល​ថ្នាក់"
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
-msgid  "Replace"
-msgstr "ជំនួស"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
 msgid  "Dialog Import - Name already used"
 msgstr "ប្រអប់​នាំចូល - ឈ្មោះបានប្រើ​រួច​ហើយ"
@@ -431,14 +371,6 @@ msgstr "ប្រអប់​នាំចូល - ឈ្មោះបានប្
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
 msgstr "បណ្ណាល័យ​មាន​ប្រអប់​ដែលមាន​ឈ្មោះ ៖\n\n$(ARG1) រួច​ហើយ​\n\nប្ដូរ​ឈ្មោះ​ប្រអប់ ដើម្បី​ទុក​ប្រអប់​បច្ចុប្បន្ន​ ឬ​ជំនួស​ប្រអប់ដែល​មាន​ស្រាប់ ។\n "
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "បន្ថែម"
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
-msgid  "Omit"
-msgstr "លុប"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
 msgid  "Dialog Import - Language Mismatch"
 msgstr "ប្រអប់​នាំចូល - ភាសា​មិន​ត្រូវ​គ្នា"
@@ -446,10 +378,6 @@ msgstr "ប្រអប់​នាំចូល - ភាសា​មិន​ត
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
 msgstr "ប្រអប់​ត្រូវ​នាំចូល​គាំទ្រ​ភាសា​ផ្សេងៗ​ពី​បណ្ណាល័យ​គោលដៅ ។\n\nបន្ថែម​ភាសា​ទាំង​នេះ​ទៅ​បណ្ណាល័យ​ដើម្បី​ទុក​ធនធាន​ភាសា​បន្ថែម ដែល​បាន​ផ្ដល់​ដោយ​ប្រអប់ ឬ​លុប​ពួកវា​ ដើម្បី​ទុក​ភាសា​​បណ្ណាល័យ​បច្ចុប្បន្ន ។\n\nចំណាំ ៖ ចំពោះ​ភាសា​ដែល​មិនបានគាំទ្រ​ដោយ​​ធនធាន​ប្រអប់​​នៃ​ភាសា​លំនាំដើម​របស់​ប្រអប់​នឹង​ត្រូវ​បានប្រើ ។\n "
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
-msgid  "New"
-msgstr "ថ្មី​"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
 msgid  "Delete"
@@ -462,14 +390,6 @@ msgstr "សកម្ម"
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FIXEDTEXT.TEXT
 msgid  "Pass Count:"
 msgstr "ចំនួន​ហុច​ ៖"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
-msgid  "Breakpoints"
-msgstr "ចំណុច​​ឈប់​"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
-msgid  "Manage Breakpoints"
-msgstr "គ្រប់​​គ្រង​​ចំណុច​​ឈប់"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME Basic Macros"
@@ -527,10 +447,6 @@ msgstr "លុប​ "
 msgid  "~Organizer..."
 msgstr "អ្នក​រៀប​ចំ ​... "
 
-#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
-msgid  "Macro"
-msgstr "ម៉ាក្រូ​"
-
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 msgid  "~New"
 msgstr "ថ្មី​ "
@@ -538,10 +454,6 @@ msgstr "ថ្មី​ "
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
 msgid  "Choose"
 msgstr "ជ្រើស​"
-
-#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "រត់​"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
 msgid  "~Save"
@@ -647,10 +559,6 @@ msgstr "ផ្នែក​បន្ថែម​"
 msgid  "Description"
 msgstr "ពិពណ៌​នា​"
 
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
-msgid  "Help information"
-msgstr "ព័ត៌​មាន​ជំនួយ​"
-
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
 msgid  "Help ID"
 msgstr "លេខ​សម្គាល់​ជំនួយ​"
@@ -658,14 +566,6 @@ msgstr "លេខ​សម្គាល់​ជំនួយ​"
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FIXEDTEXT.TEXT
 msgid  "Help file name"
 msgstr "ឈ្មោះ​ឯកសារ​​ជំនួយ​​"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
-msgid  "Objects"
-msgstr "វត្ថុ​"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
-msgid  "Show"
-msgstr "បង្ហាញ​"
 
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
@@ -691,17 +591,9 @@ msgstr "គ្រប់គ្រង​ភាសា​ចំណុច​ប្រ
 msgid  "Present Languages"
 msgstr "បង្ហាញ​ភាសា"
 
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "បន្ថែម..."
-
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
 msgid  "Delete"
 msgstr "លុប"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
-msgid  "Default"
-msgstr "លំនាំដើម"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
@@ -710,10 +602,6 @@ msgstr "ភាសា​លំនាំដើម​ត្រូវ​បាន​
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
 msgid  "~Close"
 msgstr "បិទ"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
-msgid  "[Default Language]"
-msgstr "[ភាសា​លំនាំដើម]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
 msgid  "~Delete"
@@ -727,13 +615,13 @@ msgstr "<ចុច 'បន្ថែម' ដើម្បី​បង្កើត�
 msgid  "Delete Language Resources"
 msgstr "លុប​ធនធាន​ភាសា"
 
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr "អ្នក​រៀប​នឹង​លុប​ធនធាន​សម្រាប់​ភាសា​ដែល​បាន​ជ្រើស ។ ខ្សែ​អក្សរ​ចំណុច​ប្រទាក់​អ្នក​ប្រើ​ទាំងអស់​សម្រាប់​ភាសា​នេះ​នឹង​ត្រូវ​បាន​លុប ។\n\nតើ​អ្នក​ចង់​លុប​ធនធាន​របស់​ភាសា​ដែល​បាន​ជ្រើស​ឬ ?"
+
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 msgid  "Set Default User Interface Language"
 msgstr "កំណត់​ភាសា​ចំណុច​ប្រទាក់​អ្នក​ប្រើ​លំនាំដើម"
-
-#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
-msgid  "Default language"
-msgstr "ភាសា​លំនាំដើម"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."

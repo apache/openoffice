@@ -31,27 +31,317 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WARNINGBOX.MESSAGE
+msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
+msgstr "डिजिटल हस्ताक्षर प्रकार्यात्मकता को प्रयोग नहीं किया जा सका, क्योंकि कोई मोजिला उपयोक्ता प्रोफ़ाइल नहीं पाया गया. कृपया मोजिला संस्थापन जाँचें."
+
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.MODALDIALOG.TEXT
+msgid  "Select Certificate"
+msgstr "प्रमाणपत्र चुनें"
+
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FIXEDTEXT.TEXT
+msgid  "Select the certificate you want to use for signing"
+msgstr "प्रमाणपत्र चुनें आप जिसे हस्ताक्षरित करने के लिए प्रयोग करना चाहते हैं"
+
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.STRING.TEXT
+msgid  "Issued to\tIssued by\tExpiration date"
+msgstr "इसे निर्गत\tइसके द्वारा निर्गत\tसमय समाप्ति तिथि"
+
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PUSHBUTTON.TEXT
+msgid  "View Certificate..."
+msgstr "प्रमाणपत्र देखें..."
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TABDIALOG.TEXT
+msgid  "View Certificate"
+msgstr "प्रमाणपत्र देखें"
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.PAGEITEM.TEXT
+msgid  "General"
+msgstr "सामान्य"
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.PAGEITEM.TEXT
+msgid  "Details"
+msgstr "विवरण"
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.PAGEITEM.TEXT
+msgid  "Certification Path"
+msgstr "प्रमाणन पथ"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.FIXEDTEXT.TEXT
+msgid  " Certificate Information"
+msgstr " प्रमाणपत्र सूचना"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.FIXEDTEXT.TEXT
+msgid  "This certificate is intended for the following purpose(s):"
+msgstr "प्रमाणपत्र निम्नलिखित उद्देश्य के लिए इच्छित है:"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.FIXEDTEXT.TEXT
+msgid  "Issued to:"
+msgstr "इसमें निर्गत:"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.FIXEDTEXT.TEXT
+msgid  "Issued by:"
+msgstr "इसके द्वारा निर्गत:"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.FIXEDTEXT.TEXT
+msgid  "Valid from %SDATE% to %EDATE%"
+msgstr "%SDATE% से %EDATE% तक मान्य"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FIXEDTEXT.TEXT
+msgid  "You have a private key that corresponds to this certificate."
+msgstr "आपके पास एक निजी कुंजी है जो इस प्रमाणपत्र से जुड़ता है."
+
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.STRING.TEXT
 #, fuzzy
 msgid  "The certificate could not be validated."
 msgstr "प्रमाणपत्र वैध नहीं किया जा सका."
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.STRING.TEXT
+msgid  "Field\tValue"
+msgstr "क्षेत्र\tमान"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.STRING.TEXT
+msgid  "Version"
+msgstr "संस्करण"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.STRING.TEXT
+msgid  "Serial Number"
+msgstr "क्रम संख्या"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.STRING.TEXT
 #, fuzzy
 msgid  "Signature Algorithm"
 msgstr "हस्ताक्षर अलगोरिथम"
 
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.STRING.TEXT
+msgid  "Issuer"
+msgstr "निर्गतकर्ता"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.STRING.TEXT
+msgid  "Issuer Unique ID"
+msgstr "निर्गतकर्ता अद्वितीय ID"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.STRING.TEXT
+msgid  "Valid From"
+msgstr "इससे वैध"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.STRING.TEXT
+msgid  "Valid to"
+msgstr "यहाँ तक वैध"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.STRING.TEXT
+msgid  "Subject"
+msgstr "विषय"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.STRING.TEXT
+msgid  "Subject Unique ID"
+msgstr "विषय अद्वितीय ID"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.STRING.TEXT
+msgid  "Subject Algorithm"
+msgstr "विषय अलगोरिथम"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.STRING.TEXT
+msgid  "Public Key"
+msgstr "सार्वजनिक कुंजी"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.STRING.TEXT
+msgid  "Thumbprint SHA1"
+msgstr "अंगूठे का निशान SHA1"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.STRING.TEXT
+msgid  "Thumbprint MD5"
+msgstr "अंगूठे का निशान MD5"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.FIXEDTEXT.TEXT
+msgid  "Certification path"
+msgstr "प्रमाणपत्र पथ"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.PUSHBUTTON.TEXT
+msgid  "View Certificate..."
+msgstr "प्रमाणपत्र देखें..."
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.FIXEDTEXT.TEXT
+msgid  "Certification status"
+msgstr "प्रमाणपत्र स्थिति"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.STRING.TEXT
+msgid  "The certificate is OK."
+msgstr "प्रमाणपत्र ठीक है."
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.MODALDIALOG.TEXT
+msgid  "Digital Signatures"
+msgstr "डिजिटल हस्ताक्षर"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.FIXEDTEXT.TEXT
+msgid  "The following have signed the document content:"
+msgstr "निम्नलिखित ने दस्तावेज़ सामग्री को हस्ताक्षरित कर दिया है:"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.FIXEDTEXT.TEXT
+msgid  "The following have signed the document macro:"
+msgstr "निम्नलिखित ने दस्तावेज़ मैक्रो को हस्ताक्षरित कर दिया है:"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.FIXEDTEXT.TEXT
+msgid  "The following have signed this package:"
+msgstr "निम्नलिखित ने इस संकुल को हस्ताक्षरित कर दिया है:"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.STRING.TEXT
+msgid  "\tSigned by\tDigital ID issued by\tDate"
+msgstr "\tइसके द्वारा हस्ताक्षरित\tइसके द्वारा निर्गत डिजिटल ID\tतिथि"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.STRING.TEXT
+msgid  "Valid signature"
+msgstr "वैध हस्ताक्षर"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.STRING.TEXT
+msgid  "Certificate could not be validated"
+msgstr "प्रमाणपत्र वैध नहीं किया जा सका"
+
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.STRING.TEXT
 #, fuzzy
 msgid  "The signatures in this document are invalid"
 msgstr "इस दस्तावेज़ में हस्ताक्षर अवैध है"
 
-#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Add..."
-msgstr "जोड़ें..."
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FIXEDTEXT.TEXT
+msgid  "The signatures in this document are valid"
+msgstr "इस दस्तावेज़ में हस्ताक्षर मान्य है"
 
-#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.PUSHBUTTON.TEXT
-#, fuzzy
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.FIXEDTEXT.TEXT
+msgid  "Not all parts of the document are signed"
+msgstr "दस्तावेज़ के सभी हिस्से हस्ताक्षर नहीं किए हुए हैं"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.PUSHBUTTON.TEXT
+msgid  "View Certificate..."
+msgstr "प्रमाणपत्र देखें..."
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.PUSHBUTTON.TEXT
+msgid  "Sign Document..."
+msgstr "दस्तावेज़ हस्ताक्षर करें..."
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.PUSHBUTTON.TEXT
 msgid  "Remove"
 msgstr "हटाएँ"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.OKBUTTON.TEXT
+msgid  "Close"
+msgstr "बन्द करें"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgstr "इस दस्तावेज़ हस्ताक्षर को ODF 1.1 (OpenOffice.org 2.x) प्रारूप में शामिल करता है. %PRODUCTNAME%PRODUCTVERSION में दस्तावेज़ हस्ताक्षर करने के लिए ODF 1.2 प्रारूप संस्करण की जरूरत होती है. इसलिए इस दस्तावेज़ में किसी हस्ताक्षर को जोड़ा अथवा हटाया नहीं जा सकता है.\n\nODF 1.2 प्रारूप में दस्तावेज़ सहेजें और सभी इच्छित हस्ताक्षर को फिर से जोड़ें."
+
+#: dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QUERYBOX.MESSAGE
+#, fuzzy
+msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
+msgstr "किसी मैक्रो हस्ताक्षर को जोड़ना या हटाना सभी दस्तावेज़ हस्ताक्षरों को हटा देगा.\nक्या आप वाकई जारी रखना चाहते हैं?"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TABDIALOG.TEXT
+#, fuzzy
+msgid  "Macro Security"
+msgstr "मैक्रो सुरक्षा"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.PAGEITEM.TEXT
+#, fuzzy
+msgid  "Security Level"
+msgstr "सुरक्षा स्तर"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.PAGEITEM.TEXT
+#, fuzzy
+msgid  "Trusted Sources"
+msgstr "विश्वसनीय स्रोत"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "Reset"
+msgstr "फिर सेट करें"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RADIOBUTTON.TEXT
+#, fuzzy
+msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr "अति उच्च (~V).\nविश्वस्त फ़ाइल अवस्थिति से सिर्फ मैक्रो चलाने के लिए अनुमति प्राप्त है. सारे अन्य मैक्रो, हस्ताक्षरित हो या नहीं, को निष्क्रिय किया जाता है."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RADIOBUTTON.TEXT
+#, fuzzy
+msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr "उच्च (~i).\nविश्वस्त स्रोत से सिर्फ हस्ताक्षरित मैक्रो चलाने के लिए अनुमति प्राप्त है. गैर हस्ताक्षरित मैक्रो को निष्क्रिय किया जाता है."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RADIOBUTTON.TEXT
+#, fuzzy
+msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
+msgstr "मध्यम (~M).\nगैर विश्वस्त स्रोत से मैक्रो चलाने के पहले संपुष्टि जरूरी है."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RADIOBUTTON.TEXT
+#, fuzzy
+msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr "कम (अनुशंसित नहीं) (~L).\nमैक्रो को बिना संपुष्टि के निष्पादन किया जाएगा. इस सेटिंग को सिर्फ तभी प्रयोग करें अगर सभी दस्तावेज़ जो खोले जाएँगे सुरक्षित हैं."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FIXEDLINE.TEXT
+#, fuzzy
+msgid  "Trusted certificates"
+msgstr "विश्वसनीय प्रमाणपत्र"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.STRING.TEXT
+#, fuzzy
+msgid  "Issued to\tIssued by\tExpiration date"
+msgstr "इसे निर्गत\tइसके द्वारा निर्गत\tसमय समाप्ति तिथि"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "View..."
+msgstr "दृश्य..."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.FIXEDLINE.TEXT
+#, fuzzy
+msgid  "Trusted file locations"
+msgstr "विश्वसनीय फ़ाइल अवस्थिति"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Document macros are always executed if they have been opened from one of the following locations."
+msgstr "दस्तावेज़ मैक्रो हमेशा निष्पादित होता है अगर उसे इनमें से एक अवस्थिति में खोला जाता है."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.STRING.TEXT
+#, fuzzy
+msgid  "This setting is protected by the Administrator"
+msgstr "सेटिंग प्रशासक के द्वारा संरक्षित है"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.MODALDIALOG.TEXT
+#, fuzzy
+msgid  "Security Warning"
+msgstr "सुरक्षा चेतावनी"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "The document contains document macros signed by:"
+msgstr "दस्तावेज़ में इसके द्वारा हस्ताक्षरित दस्तावेज़ मैक्रो समाहित है:"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "The document contains document macros."
+msgstr "दस्तावेज़ दस्तावेज़ मैक्रो को शामिल करता है."
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "View Signatures..."
+msgstr "हस्ताक्षर देखें..."
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr "मैक्रोज में वायरस शामिल हो सकता है. मैक्रोज को निष्क्रिय करना दस्तावेज़ के लिए हमेशा सुरक्षित रहता है. यदि आप मैक्रोज निष्क्रिय करते हैं आपकी कार्यशीलता नष्ट हो सकती है जो आपको मैक्रोज द्वारा दी गई है."
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CHECKBOX.TEXT
+#, fuzzy
+msgid  "Always trust macros from this source"
+msgstr "इस स्रोत से हमेशा मैक्रोज पर भरोसा करें"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "Enable Macros"
+msgstr "मैक्रो सक्रिय करें"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.CANCELBUTTON.TEXT
+#, fuzzy
+msgid  "Disable Macros"
+msgstr "मैक्रो निष्क्रिय करें"

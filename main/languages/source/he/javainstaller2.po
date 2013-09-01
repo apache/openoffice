@@ -31,405 +31,45 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: ../src/Localization/setupstrings.ulf#STRING_PREVIOUS
-msgid  "Back"
-msgstr "הקודם"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEXT
-msgid  "Next"
-msgstr "הבא"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL
-msgid  "Cancel"
-msgstr "ביטול"
-
-#: ../src/Localization/setupstrings.ulf#STRING_FINISH
-msgid  "Finish"
-msgstr "סיום"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DECLINE
-msgid  "Decline"
-msgstr "דחייה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALL
-msgid  "Install now"
-msgstr "להתקין כעת"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALL
-msgid  "Remove Now"
-msgstr "להסיר כעת"
-
-#: ../src/Localization/setupstrings.ulf#STRING_HELP
-msgid  "Help"
-msgstr "עזרה"
-
 #: ../src/Localization/setupstrings.ulf#STRING_OK
 msgid  "OK"
 msgstr "אישור"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ERROR
-msgid  "Error"
-msgstr "שגיאה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_FILE_NOT_FOUND
-msgid  "Error: File not found"
-msgstr "שגיאה: הקובץ לא נמצא"
-
-#: ../src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLE
-msgid  "${PRODUCT_FULLNAME} Installation Wizard"
-msgstr "אשף ההתקנה של ${PRODUCT_FULLNAME}"
-
-#: ../src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION
-msgid  "${PRODUCT_FULLNAME} Uninstallation Wizard"
-msgstr "אשף הסרת התוכנות של ${PRODUCT_FULLNAME}"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE
-msgid  "Exit"
-msgstr "יציאה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG
-msgid  "Do you really want to exit the Installation Wizard?"
-msgstr "האם אכן לצאת מאשף ההתקנה?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION
-msgid  "Do you really want to exit the Uninstallation Wizard?"
-msgstr "האם אכן לצאת מאשף ההסרה?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG
-msgid  "Do you really want to abort the installation process?"
-msgstr "האם אכן לנטוש את תהליך ההתקנה?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE
-msgid  "Abort installation?"
-msgstr "לנטוש את ההתקנה?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION
-msgid  "Do you really want to abort the uninstallation process?"
-msgstr "האם אכן לנטוש את תהליך ההסרה?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION
-msgid  "Abort uninstallation?"
-msgstr "לנטוש את ההסרה?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE
-msgid  "Accept License"
-msgstr "קבלת תנאי הרישוי"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE1
-msgid  "Software License Agreement"
-msgstr "הסכם רישוי התוכנה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE2
-msgid  "Please read the following license agreement carefully."
-msgstr "נא לקרוא בעיון את הסכם רישוי התוכנה."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
 msgstr "אם קראת וקיבלת את כל תנאי הסכם הרישוי של התוכנה אז יש ללחוץ 'קבלת תנאי הרישוי' כדי להמשיך את תהליך ההתקנה."
 
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
-msgid  "Select Installation Directory"
-msgstr "בחירת נתיב ההתקנה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE
-msgid  "Update the Installed Version"
-msgstr "עדכון נתיב ההתקנה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN
-msgid  "Adding Components to the Installed Version"
-msgstr "הוספת מרכיבים לגרסה המותקנת"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY2
-msgid  "Install ${PRODUCT_FULLNAME} in this directory"
-msgstr "התקנת ${PRODUCT_FULLNAME} בנתיב זה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY3
-msgid  "Browse..."
-msgstr "דפדוף..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE
-msgid  "Create New Directory"
-msgstr "יצירת ספריה חדשה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "ספרית '${DIR}' אינה קיימת.\nהאם ליצור אותה כעת?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "ספרית '${DIR}' אינה קיימת.\nהאם ליצור אותה כעת או לבחור ספריה אחרת?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
-msgid  "Select root directory"
-msgstr "בחירת ספרית השורש"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS
-msgid  "You do not have write access in the directory"
-msgstr "אין הרשאות כתיבה לספריה זו"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED
-msgid  "You are not allowed to create the directory"
-msgstr "אין הרשאות יצירה לספריה בנתיב זה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS
-msgid  "Failed to create the directory"
-msgstr "יצירת הספריה נכשלה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1
-msgid  "Select Components"
-msgstr "בחירת המרכיבים"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN
-msgid  "Select Additional Components"
-msgstr "בחירת מרכיבים נוספים"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
-msgid  "Marked components will be installed. Please mark them accordingly"
-msgstr "כל מרכיב מסומן יותקן. נא לסמן בהתאם."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
-msgid  "Feature Description"
-msgstr "תאור תפקוד"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS4
-msgid  "Size (kB):"
-msgstr "גודל (בקילובייטים):"
-
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1
 msgid  "Select the Type of Installation"
 msgstr "בחירת סוג ההתקנה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2
-msgid  "Select the type of installation that best suits your needs:"
-msgstr "יש לבחור את סוג ההתקנה המתאים לצרכים:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
-msgid  "The main components will be installed. Recommended for most users."
-msgstr "התקנת המרכיבים העיקריים בלבד. מומלץ למשתמשים רגילים."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
-msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr "בחירת המרכיבים ונתיבי ההתקנה באופן פרטני - למשתמשים מתקדמים."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
-msgid  "Typical"
-msgstr "רגיל"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7
-msgid  "Custom"
-msgstr "מותאם"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1
-msgid  "Ready to Install"
-msgstr "מוכן להתקנה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE
-msgid  "Ready to Update"
-msgstr "מוכן לעדכן"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT2
 msgid  "The following ${PRODUCT_FULLNAME} components will be installed:"
 msgstr "הרכיבים הבאים של ${PRODUCT_FULLNAME} יותקנו:"
 
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING1
-msgid  "Installing..."
-msgstr "ההתקנה מתבצעת..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING3
-msgid  "Stop"
-msgstr "עצירת ההתקנה"
-
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND
 msgid  "ERROR: Path with installation packages not found!"
 msgstr "שגיאה: לא נמצא נתיב שמכיל חבילות התקנה!"
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE1
-msgid  "Welcome"
-msgstr "ברוכים הבאים"
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE2
-msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr "אשף התקנות זה יתקין ${PRODUCT_FULLNAME} במחשב זה."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE3
-msgid  "To continue, click 'Next'."
-msgstr "כדי להמשיך, יש ללחוץ 'הבא'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "הערה: לא ניתן לבצע את התקנת סביבת הביצוע של ג'אווה (הJRE) ללא הרשאות 'root', תוצאת התקנת היישום ללא הJRE תהיה התקנה ללא התפקודים השונים התלוים בJRE.\nאם רצונך בכל התפקודים אזי יש ללחוץ 'ביטול', לקבל הרשאות 'root' ולהתקין מחדש."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
-msgid  "Installation Completed"
-msgstr "ההתקנה הושלמה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT
-msgid  "Installation Aborted"
-msgstr "ההתקנה בוטלה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR
-msgid  "Installation Failed"
-msgstr "ההתקנה נכשלה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
-msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr "אשף ההתקנות סיים את התקנת ${PRODUCT_FULLNAME} במחשב זה בהצלחה."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
-msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr "אשף ההתקנות ננטש. ${PRODUCT_NAME} אינו מותקן במחשב זה."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
-msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr "ארעה שגיאה, אשף ההתקנות לא הצליח להתקין את ${PRODUCT_NAME} במחשב זה. יש ללחוץ 'פרטים..' למידע נוסף."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
-msgid  "Click 'Finish' to exit the Wizard."
-msgstr "יש ללחוץ 'סיום' כדי לצאת מהאשף."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON
-msgid  "Details..."
-msgstr "פרטים..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
 msgstr "אשף ההסרה של ${PRODUCT_NAME} יסיר את ${PRODUCT_NAME} ממחשב זה."
 
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
-msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr "מצטער, הרשאות ההסרה (root) אינן מתאימות להרשאות ההתקנה (משתמש). "
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
-msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr "מצטער, הרשאות ההסרה (משתמש) אינן מתאימות להרשאות ההתקנה (root). "
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
-msgid  "Select the Type of Uninstallation"
-msgstr "בחירת סוג ההסרה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2
-msgid  "Select the type of uninstallation that best suits your needs:"
-msgstr "יש לבחור את סוג ההסרה המתאים לצרכים שלך:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3
-msgid  "Partial"
-msgstr "חלקי"
-
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
 msgstr "מסיר לחלוטין את ${PRODUCT_FULLNAME} על כל מרכיביו ממחשב זה."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
-msgid  "You choose the program features you want to remove."
-msgstr "לפי בחירת מרכיבי היישום להסרה."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6
-msgid  "Complete"
-msgstr "שלם"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
-msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr "המרכיבים המסומנים בX יוסרו. יש לסמן את המרכיבים להסיר."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
-msgid  "Ready to Remove"
-msgstr "מוכן להסיר"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2
 msgid  "The following ${PRODUCT_FULLNAME} components will be removed: "
 msgstr "מרכיבי ${PRODUCT_FULLNAME} הבאים יוסרו:"
 
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING1
-msgid  "Uninstalling..."
-msgstr "מסיר..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1
-msgid  "Uninstallation Completed"
-msgstr "ההסרה הושלמה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT
-msgid  "Uninstallation Aborted"
-msgstr "ההסרה ננטשה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR
-msgid  "Uninstallation Failed"
-msgstr "ההסרה נכשלה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
-msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr "אשף ההסרה הצליח להסיר את ${PRODUCT_FULLNAME} ממחשב זה."
-
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
 msgstr "אשף ההסרה הצליח להסיר את המרכיבים הנבחרים של ${PRODUCT_FULLNAME} ממחשב זה."
 
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
-msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr "אשף ההסרה ננטש לפני השלמת ההסרה של ${PRODUCT_FULLNAME} ממחשב זה."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
-msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr "ארעה שגיאה. אשף ההסרה לא הצליח להסיר את ${PRODUCT_NAME} ממחשב זה. יש ללחוץ 'פרטים...' למידע נוסף."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
-msgid  "Sorry, this Operating System is not supported yet."
-msgstr "מצטער, מערכת הפעלה זו עדיין לא נתמכת."
-
-#: ../src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND
-msgid  "An older version of ${PRODUCT_NAME} was found on your system in:"
-msgstr "גרסה ישנה של ${PRODUCT_NAME} נמצאה במחשב זה בנתיב:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
-msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr "חייבים להסיר את הגרסה ישנה של ${PRODUCT_NAME} לפני התקנת גרסה חדשה יותר."
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
-msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
-msgstr "גרסה חדשה יותר של ${PRODUCT_NAME} נמצאה במחשב זה בנתיב:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
-msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr "חייבים להסיר את הגרסה החדשה יותר של ${PRODUCT_NAME} לפני התקנת הגרסה הישנה."
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
-msgid  "Database"
-msgstr "מסד נתונים"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_TIP
-msgid  "Please choose another installation directory."
-msgstr "נא לבחור נתיב התקנה אחר."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
-msgid  "The user you are logged in as cannot run the Installation Wizard."
-msgstr "המשתמש הנוכחי אינו רשאי להפעיל את אשף ההתקנות."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
-msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr "נא לצאת מהמערכת ולהכנס מחדש בתור משתמש בעל הרשאות אדמיניסטראטור."
-
 #: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
 msgstr "אין מספיק שטח דיסק להתקנה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_REQUIRED
-msgid  "Required disc space"
-msgstr "שטח דיסק נדרש"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_AVAILABLE
-msgid  "Available disc space"
-msgstr "שטח דיסק זמין"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
-msgid  "Please use another directory for installation or change your module selection."
-msgstr "נא לבחור ספריה אחרת להקנה או לצמצם את רשימת המרכיבים להתקנה."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
-msgid  "Analyzing ..."
-msgstr "בודקים..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "נא להמתין..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
@@ -467,118 +107,30 @@ msgstr "'ביטול' מוציא מהאשף ללא הסרה של תוכנה."
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
 msgstr "'אישור' מוציא מדף העזרה ומחזיר לאשף ההסרה."
 
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
-msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr "לפני התקנת המוצר יש לקרוא ולהסכים להסכם הרישוי לתוכנה המגדיר את תנאי השימוש במוצר."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
-msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr "אם ההסכם לא מקובל על כל פסקאותיו אזי יש ללחוץ 'דחייה' והאשף יצא מבלי להתקין את המוצר."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
-msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr "יש לבחור את סוג ההתקנה מהרשימה הבאה. בחירת סוג ההתקנה משפיעה על היקף המידע הנדרש לתצורת היישום."
-
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
 msgstr "מומלץ להתקין את המוצר בנתיב שנבחר על ידי האשף.<p>לבחירת נתיב אחר יש ללחוץ 'דפדוף...' או לציין את הנתיב המלא בתיבת הטקסט למטה.<p>אם מוצר זה כבר מותקן, אזי אין אפשרות לשנות את נתיב ההתקנה."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
-msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr "המרכיבים המסומנים בצבע יותקנו. לחיצה על צלם מרכיב מסמן או מסיר את הסימון ממנו.<p>לא ניתן לשנות את סימון המרכיבים המסומנים על ידי האשף."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
-msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr "המרכיבים הרשומים מוכנים להתקנה לפי בחירת התצורה שלך.<p>אם הרשימה מתאימה לצרכים שלך יש ללחוץ 'התקנה עכשיו' כדי להתחיל.<p>לבחון מחדש את הרשימה או לשנותה יש ללחוץ 'חזרה'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
-msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr "המרכיבים הרשומים מוכנים להסרה לפי בחירת התצורה שלך.<p>אם הרשימה מתאימה לצרכים שלך יש ללחוץ 'הסרה עכשיו' כדי להתחיל.<p>לבחון מחדש את הרשימה או לשנותה יש ללחוץ 'חזרה'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
-msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr "דף זה מראה את ההתקדמות של ההתקנה באמצעות סרגל התקדמות. לנטוש את ההתקנה יש ללחוץ 'עצירה'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
-msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr "דף זה מראה את ההתקדמות של ההסרה באמצעות סרגל התקדמות. לנטוש את ההסרה יש ללחוץ 'עצירה'."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
-msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr "הכל: מסיר כל המרכיבים המותקנים.<p>חלקי: מסיר רק את המרכיבים שמסמנים ברשימת המרכיבים."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
-msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr "המרכיבים המסומנים בX יוסרו. יש ללחוץ לייד שם המרכיב כדי להסיר את הX."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
-msgid  "This package format is currently not supported for your operating system!"
-msgstr "צורה זו של קובץ חבילת התקנה אינה נתמכת במערכת הפעלה זו!"
-
-#: ../src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
-msgid  "Operating system"
-msgstr "מערכת הפעלה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT
-msgid  "Package format"
-msgstr "צורת חבילת התקנה"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NOTHING_TO_INSTALL
-msgid  "Nothing to install"
-msgstr "אין מה להתקין"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1
-msgid  "No components have been selected for installation."
-msgstr "לא נבחרו מרכיבי יישום להתקנה"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
 msgstr "יש ללחוץ 'אישור' לבחור מרכיבי יישום להתקנה או לצאת לחלוטין מאשף ההתקנות."
 
-#: ../src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
-msgid  "No languages have been selected for installation."
-msgstr "לא נבחרו מרכיבי תמיכה בשפות להתקנה"
-
 #: ../src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
 msgstr "יש ללחוץ 'אישור' לבחור מרכיבי תמיכה בשפות להתקנה או לצאת לחלוטין מאשף ההתקנות."
-
-#: ../src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
-msgid  "No applications have been selected for installation."
-msgstr "לא נבחרו מרכיבי יישום להתקנה"
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
 msgstr "יש ללחוץ 'אישור' לבחור מרכיבים להתקנה או לצאת לחלוטין מאשף ההתקנות."
 
-#: ../src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
-msgid  "Nothing to uninstall"
-msgstr "אין מה להסיר"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1
-msgid  "No components have been selected for uninstallation."
-msgstr "לא נבחרו מרכיבים להסרה."
-
 #: ../src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
 msgstr "יש ללחוץ 'אישור' לבחור מרכיבים להסרה או לצאת לחלוטין מאשף ההסרה."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
-msgid  "All language components have been selected for uninstallation."
-msgstr "כל מרכיבי השפות נבחרו להסרה"
 
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
 msgstr "יש ללחוץ 'אישור' לבחור מרכיבי תמיכה בשפות שלא יוסרו או לצאת לחלוטין מאשף ההסרה."
 
-#: ../src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
-msgid  "All application components have been selected for uninstallation."
-msgstr "כל מרכיבי היישום נבחרו להסרה."
-
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
 msgstr "יש ללחוץ 'אישור' כדי לבחור מרכיבי היישום שלא יוסרו או לצאת לחלוטין מאשף ההסרה."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
-msgid  "Please change selection"
-msgstr "נא לשנות את הבחירה"

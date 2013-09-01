@@ -59,10 +59,6 @@ msgstr "Não foi possível estabelecer ligação à origem de dados externa. Nã
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
 msgstr "Não foi possível estabelecer ligação à origem de dados externa. Não foi possível carregar o gestor de controladores de SDBC."
 
-#: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
-msgid  "Form"
-msgstr "Formulário"
-
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
 msgstr "Relatório"
@@ -245,21 +241,19 @@ msgstr "O resultado definido é apenas de leitura."
 
 #: core/resource/strings.src#RID_STR_NO_DELETE_PRIVILEGE.STRING.TEXT
 msgid  "DELETE privilege not available."
-msgstr "Privilégio ELIMINAR não está disponível."
+msgstr "O privilégio ELIMINAR não está disponível."
 
 #: core/resource/strings.src#RID_STR_ROW_ALREADY_DELETED.STRING.TEXT
 msgid  "Current row is already deleted."
 msgstr "A linha actual já foi eliminada."
 
 #: core/resource/strings.src#RID_STR_UPDATE_FAILED.STRING.TEXT
-#, fuzzy
 msgid  "Current row could not be updated."
-msgstr "Não foi possível eliminar a linha actual."
+msgstr "Não foi possível actualizar a linha actual."
 
 #: core/resource/strings.src#RID_STR_NO_INSERT_PRIVILEGE.STRING.TEXT
-#, fuzzy
 msgid  "INSERT privilege not available."
-msgstr "Privilégio INSERIR não está disponível."
+msgstr "O privilégio INSERIR não está disponível."
 
 #: core/resource/strings.src#RID_STR_INTERNAL_ERROR.STRING.TEXT
 #, fuzzy
@@ -492,9 +486,8 @@ msgid  "No default names could be set for the database files. The total length i
 msgstr "Foi impossível definir a configuração para os ficheiros da base de dados. O comprimento é superior a 40 caracteres."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.STRING.TEXT
-#, fuzzy
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr "Foi impossível definir os parâmetros para os ficheiros da base de dados por falta de direitos de escrita."
+msgstr "Foi impossível atribuir nomes predefinidos aos ficheiros da base de dados. Não tem permissão de escrita."
 
 #: ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.STRING.TEXT
 #, fuzzy
@@ -707,9 +700,8 @@ msgid  "Invalid number of initialization arguments. Expected 1."
 msgstr "Número de argumentos de inicialização inválido. Previsto 1."
 
 #: ext/macromigration/macromigration.src#STR_NO_DATABASE.STRING.TEXT
-#, fuzzy
 msgid  "No database document found in the initialization arguments."
-msgstr "Não foi encontrado nenhum documento da base de dados nos argumentos de inicialização."
+msgstr "Não foi encontrada nenhuma base de dados nos argumentos de inicialização."
 
 #: ext/macromigration/macromigration.src#STR_NOT_READONLY.STRING.TEXT
 #, fuzzy
@@ -720,16 +712,6 @@ msgstr "Não aplicável a documentos apenas de leitura."
 #, fuzzy
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 msgstr "Não pode atribuir o mesmo nome a uma tabela e a uma consulta. Utilize um nome que ainda não tenha sido utilizado por uma consulta ou tabela."
-
-#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
-#, fuzzy
-msgid  "Table"
-msgstr "Tabela"
-
-#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
-#, fuzzy
-msgid  "Query"
-msgstr "Consulta"
 
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
 #, fuzzy
@@ -756,11 +738,6 @@ msgstr "Tipo de comando inválido - apenas são permitidos TABELA e CONSULTA de 
 msgid  "Create Form in Design View..."
 msgstr "Criar formulário na vista de desenho..."
 
-#: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
-#, fuzzy
-msgid  "Use Wizard to Create Form..."
-msgstr "Utilizar o Assistente para criar formulário..."
-
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
 #, fuzzy
 msgid  "Use Wizard to Create Report..."
@@ -781,30 +758,10 @@ msgstr "Criar consulta na vista de desenho..."
 msgid  "Create Query in SQL View..."
 msgstr "Criar consulta na vista de SQL..."
 
-#: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
-#, fuzzy
-msgid  "Use Wizard to Create Query..."
-msgstr "Utilizar o Assistente para criar consulta..."
-
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
 #, fuzzy
 msgid  "Create Table in Design View..."
 msgstr "Criar tabela na vista de desenho..."
-
-#: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
-#, fuzzy
-msgid  "Use Wizard to Create Table..."
-msgstr "Utilizar o Assistente para criar tabela..."
-
-#: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
-#, fuzzy
-msgid  "Create View..."
-msgstr "Criar vista..."
-
-#: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
-#, fuzzy
-msgid  "Forms"
-msgstr "Formulários"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
 #, fuzzy
@@ -836,16 +793,6 @@ msgstr "Colar especial..."
 msgid  "Delete"
 msgstr "Eliminar"
 
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
-#, fuzzy
-msgid  "Rename"
-msgstr "Mudar o nome"
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Edit"
-msgstr "Editar"
-
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
 #, fuzzy
 msgid  "Edit in SQL View..."
@@ -855,11 +802,6 @@ msgstr "Editar na vista SQL..."
 #, fuzzy
 msgid  "Open"
 msgstr "Abrir"
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "Create as View"
-msgstr "Criar como vista"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 #, fuzzy
@@ -956,20 +898,10 @@ msgstr "Seleccione um exemplo de tabela profissional ou pessoal, que pode person
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
 msgstr "Permite criar uma vista especificando as tabelas e os nomes dos campos que pretende que fiquem visíveis."
 
-#: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
-#, fuzzy
-msgid  "Opens the view wizard"
-msgstr "Abre o Assistente de vista"
-
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
 #, fuzzy
 msgid  "Database"
 msgstr "Base de dados"
-
-#: ui/app/app.src#STR_TASKS.STRING.TEXT
-#, fuzzy
-msgid  "Tasks"
-msgstr "Tarefas"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
 #, fuzzy
@@ -986,25 +918,13 @@ msgstr "Pré-visualizar"
 msgid  "Disable Preview"
 msgstr "Desactivar pré-visualização"
 
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "None"
-msgstr "Nenhum(a)"
+#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The database has been modified.\nDo you want to save the changes?"
+msgstr "A base de dados sofreu alterações.\nPretende guardar as alterações?"
 
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "Document Information"
-msgstr "Informações sobre o documento"
-
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "Documento"
-
-#: ui/app/app.src#RID_STR_FORM.STRING.TEXT
-#, fuzzy
-msgid  "Form"
-msgstr "Formulário"
+#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
+msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
+msgstr "O tipo de ligação foi alterado.\nPara que as alterações fiquem activas, todos os formulários, relatórios, consultas e tabelas têm de ser fechados.\n\nPretende fechar agora todos os documentos?"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
 #, fuzzy
@@ -1051,10 +971,9 @@ msgstr "Não é possível seleccionar categorias diferentes."
 msgid  "Unsupported object type found ($type$)."
 msgstr "Encontrado um tipo de objecto não suportado ($type$)."
 
-#: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Table #"
-msgstr "Tabela #"
+#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The current record has been changed.\nDo you want to save the changes?"
+msgstr "O registo actual foi alterado.\nPretende guardar as alterações?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
 #, fuzzy
@@ -1080,16 +999,6 @@ msgstr "Erro ao definir os critérios de filtro"
 #, fuzzy
 msgid  "Connection lost"
 msgstr "Ligação interrompida"
-
-#: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
-#, fuzzy
-msgid  "Queries"
-msgstr "Consultas"
-
-#: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
-#, fuzzy
-msgid  "Tables"
-msgstr "Tabelas"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
 #, fuzzy
@@ -1161,11 +1070,6 @@ msgstr "Não foi possível encontrar um formato de tabela."
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "Não foi possível estabelecer a ligação à origem de dados \"$name$\"."
 
-#: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
-#, fuzzy
-msgid  "Rebuild"
-msgstr "Reconstruir"
-
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
 #, fuzzy
 msgid  "Column ~Format..."
@@ -1181,35 +1085,10 @@ msgstr "Copiar ~descrição da coluna"
 msgid  "Table Format..."
 msgstr "Formato de tabela..."
 
-#: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Row Height..."
-msgstr "Altura da linha..."
-
-#: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
-#, fuzzy
-msgid  "Undo: Data Input"
-msgstr "Anular: Entrada de dados"
-
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
 #, fuzzy
 msgid  "Save current record"
 msgstr "Guardar registo actual"
-
-#: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Query #"
-msgstr "Consulta #"
-
-#: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Table #"
-msgstr "Tabela #"
-
-#: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "View #"
-msgstr "Vista #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
 #, fuzzy
@@ -1236,105 +1115,15 @@ msgstr "Vista da tabela origens dos dados"
 msgid  "Shows the selected table or query."
 msgstr "Mostra a tabela ou consulta seleccionada."
 
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Table name"
-msgstr "Nome da tabela"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
-#, fuzzy
-msgid  "Insert data"
-msgstr "Inserir dados"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
-#, fuzzy
-msgid  "Delete data"
-msgstr "Eliminar dados"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
-#, fuzzy
-msgid  "Modify data"
-msgstr "Modificar dados"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
-#, fuzzy
-msgid  "Alter structure"
-msgstr "Alterar estrutura"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
-#, fuzzy
-msgid  "Read data"
-msgstr "Ler dados"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
-#, fuzzy
-msgid  "Modify references"
-msgstr "Modificar referências"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
-#, fuzzy
-msgid  "Drop structure"
-msgstr "Largar estrutura"
-
-#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
-#, fuzzy
-msgid  "Sort Ascending"
-msgstr "Ordenação ascendente"
-
-#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
-#, fuzzy
-msgid  "Sort Descending"
-msgstr "Ordenação descendente"
-
-#: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
-#, fuzzy
-msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr "Não foi possível estabelecer ligação ao gestor de controladores de SDBC (#servicename#)."
-
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
 #, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "Não existe qualquer controlador registado para o URL #connurl#."
 
-#: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
-#, fuzzy
-msgid  "No connection could be established for the URL #connurl#."
-msgstr "Não foi possível estabelecer ligação para o URL #connurl#."
-
-#: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
-#, fuzzy
-msgid  "Please check the current settings, for example user name and password."
-msgstr "Verifique as definições actuais, por exemplo, nome de utilizador e palavra-passe."
-
-#: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
-#, fuzzy
-msgid  "Successfully connected, but information about database tables is not available."
-msgstr "A ligação foi estabelecida com êxito, mas não estão disponíveis informações sobre tabelas de base de dados."
-
-#: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
-#, fuzzy
-msgid  "All tables"
-msgstr "Todas as tabelas"
-
-#: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
-#, fuzzy
-msgid  "All views"
-msgstr "Todas as vistas"
-
-#: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
-#, fuzzy
-msgid  "All tables and views"
-msgstr "Todas as tabelas e vistas"
-
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
 #, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "Modificar instrução(ões) SQL"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Database files"
-msgstr "Ficheiros de base de dados"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1351,60 +1140,10 @@ msgstr "~TRANSACTIONLOG:"
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Database sizes"
-msgstr "Tamanhos de bases de dados"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "S~ize (MB):"
-msgstr "~Capacidade (MB:"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Free memory space (MB):"
-msgstr "Espaço disponível em ~memória (MB):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Memory utilization (in %):"
-msgstr "~Memória utilizada (em %):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Database Statistics"
-msgstr "Estatísticas da base de dados"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
-#, fuzzy
-msgid  "Contains the system tables"
-msgstr "Contém as tabelas do sistema"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
-#, fuzzy
-msgid  "Contains information about transaction"
-msgstr "Contém informações sobre transacções"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
-#, fuzzy
-msgid  "Contains all data files"
-msgstr "Contém todos os ficheiros de dados"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
-#, fuzzy
-msgid  "Total size of the database files"
-msgstr "Tamanho total dos ficheiros de base de dados"
-
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
 #, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Espaço em memória disponível antes da criação de um novo ficheiro Datadev."
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
-#, fuzzy
-msgid  "Currently used memory"
-msgstr "Memória actualmente em utilização"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
 #, fuzzy
@@ -1431,55 +1170,14 @@ msgstr "~Servidor"
 msgid  "~Port"
 msgstr "~Porta"
 
-#: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Default: 3306"
-msgstr "Predefinição: 3306"
-
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "So~cket"
-msgstr "So~cket"
+msgstr "Tomada"
 
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Named p~ipe"
 msgstr "Direccionamento ident~ificado"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Tables"
-msgstr "Tabelas"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Queries"
-msgstr "Consultas"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Add"
-msgstr "~Adicionar"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "Fec~har"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
-#, fuzzy
-msgid  "Add Tables"
-msgstr "Adicionar tabelas"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
-#, fuzzy
-msgid  "Add Table or Query"
-msgstr "Adicionar tabela ou consulta"
-
-#: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Options"
-msgstr "Opções"
 
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
 #, fuzzy
@@ -1490,11 +1188,6 @@ msgstr "Utilizar restrições de nomenclatura de SQL92"
 #, fuzzy
 msgid  "Append the table alias name on SELECT statements"
 msgstr "Anexar o nome alternativo da tabela em instruções SELECT"
-
-#: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Use keyword AS before table alias names"
-msgstr "Utilizar palavra-chave AS antes dos nomes alternativos da tabela"
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
 #, fuzzy
@@ -1510,11 +1203,6 @@ msgstr "Ignorar os privilégios do controlador da base de dados"
 #, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "Substituir parâmetros com nome por '?'"
-
-#: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Display version columns (when available)"
-msgstr "Apresentar colunas de versão (se disponíveis)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
 #, fuzzy
@@ -1558,7 +1246,7 @@ msgstr "Suporta chaves primárias"
 
 #: ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CHECKBOX.TEXT
 msgid  "Respect the result set type from the database driver"
-msgstr ""
+msgstr "Respeitar o tipo do conjunto de resultados oriundo do controlador da base de dados"
 
 #: ui/dlg/advancedsettings.src#WORKAROUND.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -1580,14 +1268,9 @@ msgstr "Misto"
 msgid  "MS Access"
 msgstr "MS Access"
 
-#: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Comparison of Boolean values"
-msgstr "Comparação de valores booleanos"
-
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
-msgstr ""
+msgstr "Linhas para analisar os tipos de colunas"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FIXEDLINE.TEXT
 #, fuzzy
@@ -1600,19 +1283,8 @@ msgid  "Re~trieve generated values"
 msgstr "Ob~ter valores gerados"
 
 #: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Auto-increment statement"
-msgstr "Instrução de incremento ~automático"
-
-#: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Query of generated values"
-msgstr "Cons~ulta de valores gerados"
-
-#: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
-#, fuzzy
-msgid  "Generated Values"
-msgstr "Valores gerados"
+msgstr "Incremento ~automático"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
 #, fuzzy
@@ -1621,27 +1293,7 @@ msgstr "Definições especiais"
 
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
-msgstr ""
-
-#: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Path to the dBASE files"
-msgstr "Caminho dos ficheiros dBASE"
-
-#: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Path to the text files"
-msgstr "Caminho dos ficheiros de texto"
-
-#: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Path to the spreadsheet document"
-msgstr "Caminho do documento de folha de cálculo"
-
-#: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
-#, fuzzy
-msgid  "Name of the ODBC data source on your system"
-msgstr "Nome da origem de dados ODBC no sistema"
+msgstr "Definições avançadas"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
 #, fuzzy
@@ -1658,11 +1310,6 @@ msgstr "Nome da base de dados Oracle"
 msgid  "Name of the Adabas D database"
 msgstr "Nome da base de dados Adabas D"
 
-#: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Microsoft Access database file"
-msgstr "Ficheiro de base de dados do Microsoft Access"
-
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
 #, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
@@ -1674,19 +1321,13 @@ msgid  "Datasource URL"
 msgstr "URL de origem de dados"
 
 #: ui/dlg/AutoControls.src#STR_HOSTNAME.STRING.TEXT
-#, fuzzy
 msgid  "~Host name"
-msgstr "~Nome do sistema central"
+msgstr "Nome do sistema ~hospedeiro"
 
 #: ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.STRING.TEXT
 #, fuzzy
 msgid  "~Mozilla profile name"
 msgstr "Nome do perfil de ~Mozilla"
-
-#: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
-#, fuzzy
-msgid  "~Thunderbird profile name"
-msgstr "Nome do perfil de ~Thunderbird"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1703,16 +1344,6 @@ msgstr "Nome da base de dados"
 msgid  "Server"
 msgstr "Servidor"
 
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Base ~DN"
-msgstr "~DN base"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Port number"
-msgstr "Número de ~porta"
-
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Data conversion"
@@ -1728,20 +1359,10 @@ msgstr "~Conjunto de caracteres"
 msgid  "Specify the type of files you want to access"
 msgstr "Especifique o tipo de ficheiros aos quais pretende aceder"
 
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Plain text files (*.txt)"
-msgstr "Ficheiros de texto simples (*.txt)"
-
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "'Comma separated value' files (*.csv)"
 msgstr "Ficheiros de valores separados por vírgula (*.csv)"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Custom:"
-msgstr "Personalizado:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1773,15 +1394,9 @@ msgstr "Separador decimal"
 msgid  "Thousands separator"
 msgstr "Separador de milhares"
 
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Text contains headers"
-msgstr "~Texto inclui cabeçalhos"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
-#, fuzzy
-msgid  "{None}"
-msgstr "{Nenhum}"
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
+msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgstr ";\t59\t,\t44\t:\t58\t{Tabulação}\t9\t{Espaço}\t32"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
 #, fuzzy
@@ -1809,84 +1424,28 @@ msgid  "Test class"
 msgstr "Testar classe"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Socket"
-msgstr "Socket"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Save"
-msgstr "Guardar"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Create New Directory"
-msgstr "Criar novo directório"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Up One Level"
-msgstr "Um nível acima"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "File ~name:"
-msgstr "~Nome de ficheiro:"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
-#, fuzzy
-msgid  "~Path:"
-msgstr "~Caminho:"
-
-#: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
-#, fuzzy
-msgid  "Folder"
-msgstr "Pasta"
+msgstr "Tomada"
 
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
 #, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "O ficheiro já existe. Pretende substituí-lo?"
 
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Geral"
-
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Host name"
 msgstr "Nome do ~sistema central"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User authentication"
-msgstr "Autenticação de utilizadores"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~User name"
 msgstr "Nome de ~utilizador"
 
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Password required"
-msgstr "Palavra-passe requerida"
-
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "JDBC properties"
 msgstr "Propriedades JDBC"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~JDBC driver class"
-msgstr "Classe do controlador ~JDBC"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Test Class"
-msgstr "Testar classe"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1948,25 +1507,10 @@ msgstr "O directório\n\n$path$\n\nnão existe. Pretende criá-lo?"
 msgid  "The directory $name$ could not be created."
 msgstr "Não foi possível criar o directório $name$."
 
-#: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Convert Database"
-msgstr "Converter base de dados"
-
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Please enter the ~password for the user 'DOMAIN'."
 msgstr "Introduza a ~palavra-passe do utilizador 'DOMAIN'."
-
-#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
-#, fuzzy
-msgid  "Tables Filter"
-msgstr "Filtro de tabelas"
-
-#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Tables and table filter"
-msgstr "Tabelas e filtro de tabelas"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1974,14 +1518,8 @@ msgid  "Mark the tables that should be visible for the applications."
 msgstr "Marque as tabelas que devem estar visíveis para as aplicações."
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
-#, fuzzy
 msgid  "Database Wizard"
 msgstr "Assistente de Bases de Dados"
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Select database"
-msgstr "Seleccionar base de dados"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
 #, fuzzy
@@ -2048,16 +1586,6 @@ msgstr "Configurar autenticação de utilizador"
 msgid  "Set up MySQL server data"
 msgstr "Configurar dados do servidor MySQL"
 
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
-#, fuzzy
-msgid  "Save and proceed"
-msgstr "Guardar e prosseguir"
-
-#: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
-#, fuzzy
-msgid  "New Database"
-msgstr "Nova base de dados"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Set up a connection to a MySQL database"
@@ -2098,11 +1626,6 @@ msgstr "Configurar a autenticação de utilizador"
 msgid  "Some databases require you to enter a user name."
 msgstr "Algumas bases de dados requerem a introdução de um nome de utilizador."
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~User name"
-msgstr "~Nome de utilizador"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Password re~quired"
@@ -2112,11 +1635,6 @@ msgstr "Re~querida palavra-passe"
 #, fuzzy
 msgid  "~Test Connection"
 msgstr "~Testar ligação"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Decide how to proceed after saving the database"
-msgstr "Determine como pretende proceder após guardar a base de dados"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2132,11 +1650,6 @@ msgstr "~Sim, pretendo que o assistente registe a base de dados"
 #, fuzzy
 msgid  "N~o, do not register the database"
 msgstr "Nã~o, não pretendo registar a base de dados"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "After the database file has been saved, what do you want to do?"
-msgstr "Após guardar o ficheiro da base de dados, o que pretende fazer?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
 #, fuzzy
@@ -2162,11 +1675,6 @@ msgstr "Configurar ligação a uma base de dados MySQL utilizando JDBC"
 #, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr "Introduza as informações requeridas para estabelecer ligação a uma base de dados MySQL utilizando JDBC. Note que tem de estar intalada no sistema uma classe de controlador JDBC e registada no %PRODUCTNAME.\nSe não estiver certo das definições a seguir indicadas, contacte o administrador do sistema."
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
-#, fuzzy
-msgid  "MySQL JDBC d~river class:"
-msgstr "Classe de cont~rolador JDBC MySQL:"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
 #, fuzzy
@@ -2198,20 +1706,10 @@ msgstr "Seleccione a pasta na qual os ficheiros de dBASE estão armazenados."
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
 msgstr "Seleccione a pasta na qual os ficheiros CSV (valores separados por vírgulas) estão armazenados. O %PRODUCTNAME Base abrirá estes ficheiros no modo só de leitura."
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Path to text files"
-msgstr "Caminho dos ficheiros de texto"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
 #, fuzzy
 msgid  "Set up a connection to a Microsoft Access database"
 msgstr "Configurar uma ligação a uma base de dados do Microsoft Access"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
-#, fuzzy
-msgid  "Please select the Microsoft Access file you want to access."
-msgstr "Seleccione o ficheiro do Microsoft Access ao qual pretende aceder."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2222,11 +1720,6 @@ msgstr "Configurar uma ligação a um directório LDAP"
 #, fuzzy
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr "Introduza as informações requeridas para estabelecer ligação a um directório LDAP.\nSe não estiver certo das definições a seguir indicadas, contacte o administrador do sistema."
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
-#, fuzzy
-msgid  "Default: 389"
-msgstr "Predefinição: 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
 #, fuzzy
@@ -2278,20 +1771,9 @@ msgstr "Introduza as informações requeridas para estabelecer ligação a uma b
 msgid  "Set up a connection to an Oracle database"
 msgstr "Configurar uma ligação a uma base de dados Oracle"
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
-#, fuzzy
-msgid  "Default: 1521"
-msgstr "Predefinição: 1521"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
-#, fuzzy
-msgid  "Oracle JDBC ~driver class"
-msgstr "Classe de controla~dor Oracle JDBC"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
-#, fuzzy
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Introduza as informações requeridas para estabelecer ligação a uma base de dados Oracle. Note que tem de estar instalada no sistema uma classe de controlador JDBC e registada no %PRODUCTNAME.\nSe não estiver certo das definições a seguir indicadas, contacte o administrador do sistema."
+msgstr "Introduza as informações requeridas para estabelecer ligação a uma base de dados Oracle. Note que tem de estar instalada no sistema uma classe de controlador JDBC e registada no %PRODUCTNAME.\nSe não estiver seguro das definições a seguir indicadas, contacte o administrador do sistema."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
 #, fuzzy
@@ -2312,11 +1794,6 @@ msgstr "~Localização e nome do ficheiro"
 #, fuzzy
 msgid  "~Password required"
 msgstr "Requerida ~palavra-passe"
-
-#: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Use catalog for file-based databases"
-msgstr "Utilizar catálogo para bases de dados baseadas em ficheiros"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
 #, fuzzy
@@ -2348,11 +1825,6 @@ msgstr "Definições adicionais"
 msgid  "Connection settings"
 msgstr "Definições de ligação"
 
-#: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
-#, fuzzy
-msgid  "Database properties"
-msgstr "Propriedades da base de dados"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
@@ -2363,60 +1835,15 @@ msgstr "Bem-vindo ao Assistente de bases de dados do %PRODUCTNAME"
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
 msgstr "Utilize o Assistente de bases de dados para criar uma nova base de dados, abrir um ficheiro de base de dados já existente ou estabelecer ligação a uma base de dados armazenada no servidor."
 
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "What do you want to do?"
-msgstr "O que pretende fazer?"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Create a n~ew database"
-msgstr "Criar uma n~ova base de dados"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Open an existing database ~file"
-msgstr "Abrir um ~ficheiro de base de dados já existente"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Recently used"
-msgstr "Recentemente utilizados"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Connect to an e~xisting database"
-msgstr "Estabelecer ligação a uma base de dados já e~xistente"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Select the type of database to which you want to establish a connection."
 msgstr "Seleccione o tipo de base de dados à qual pretende estabelecer uma ligação."
 
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Database ~type "
-msgstr "~Tipo de base de dados "
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Database"
-msgstr "Base de dados"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
 msgstr "Nas páginas seguintes, pode especificar definições detalhadas para a ligação.\n\nAs novas definições que especificar substituirão as definições já existentes."
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
-#, fuzzy
-msgid  "MySQL"
-msgstr "MySQL"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
-#, fuzzy
-msgid  "Data Source Properties: #"
-msgstr "Propriedades da origem de dados: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
 #, fuzzy
@@ -2427,11 +1854,6 @@ msgstr "Não foi possível carregar a biblioteca de programas #lib# ou a bibliot
 #, fuzzy
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
 msgstr "Este tipo de origem de dados não é suportado nesta plataforma.\nEstá autorizado a alterar as definições, mas provavelmente não poderá estabelecer ligação à base de dados."
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Geral"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
 #, fuzzy
@@ -2444,9 +1866,8 @@ msgid  "Display deleted records as well"
 msgstr "Apresentar igualmente registos eliminados"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr "Nota: Quando eliminados e, por conseguinte, inactivos, os registos são apresentados. Não será possível eliminá-los da origem de dados."
+msgstr "Nota: quando eliminados e, por conseguinte, inactivos, os registos são  mostrados, mas não será possível eliminá-los da origem dos dados."
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PUSHBUTTON.TEXT
 #, fuzzy
@@ -2458,80 +1879,20 @@ msgstr "Índices..."
 msgid  "Optional Settings"
 msgstr "Definições opcionais"
 
-#: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "ODBC ~options"
-msgstr "~Opções de ODBC"
-
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Data ~buffer size (MB)"
 msgstr "~Tam. da memória intermédia (MB)"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Data increment (MB)"
-msgstr "~Incremento de dados (MB)"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Administration"
-msgstr "Administração"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Control ~user name"
-msgstr "Nome de ~utilizador de Control"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Control ~password"
-msgstr "~Palavra-passe de Control"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Shut down service when closing %PRODUCTNAME"
 msgstr "~Encerrar o serviço ao fechar o %PRODUCTNAME"
 
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "E~xtended..."
-msgstr "A~vançado..."
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "MySQL JDBC d~river class"
-msgstr "Classe de cont~rolador JDBC MySQL"
-
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Test class"
 msgstr "Testar classe"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User authentication"
-msgstr "Autenticação de utilizadores"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~User name"
-msgstr "~Nome de utilizador"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Password required"
-msgstr "Palavra-passe requerida"
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Oracle JDBC d~river class"
-msgstr "Classe de controla~dor Oracle JDBC"
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Base DN"
-msgstr "DN ~base"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
 #, fuzzy
@@ -2558,60 +1919,10 @@ msgstr "~Definições de controlador"
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
 msgstr "Seleccione 'Estabelecer ligação a uma base de dados existente' para, em alternativa, estabelecer ligação a uma base de dados já existente."
 
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Indexes"
-msgstr "Índices remissivos"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Table"
-msgstr "~Tabela"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Assignment"
-msgstr "Atribuição"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "T~able indexes"
-msgstr "Índices remissivos de t~abelas"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Free indexes"
-msgstr "Índices remissivos ~livres"
-
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "SQL command"
 msgstr "Comando SQL"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Command to execute"
-msgstr "Comando a executar"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Execute"
-msgstr "Executar"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Previous commands"
-msgstr "Comandos anteriores"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Status"
-msgstr "Estado"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "Fechar"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
 #, fuzzy
@@ -2633,205 +1944,40 @@ msgstr "Perdeu-se a ligação à base de dados. A caixa de diálogo será fechad
 msgid  "Field Format"
 msgstr "Formato do campo"
 
-#: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Bac~k"
-msgstr "An~terior"
-
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
 #, fuzzy
 msgid  "Font"
 msgstr "Tipo de letra"
-
-#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
-#, fuzzy
-msgid  "Format"
-msgstr "Formato"
-
-#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Alinhamento"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
 #, fuzzy
 msgid  "Table Format"
 msgstr "Formato da tabela"
 
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Save As"
-msgstr "Guardar como"
-
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Please enter a name for the object to be created:"
 msgstr "Indique um nome para o objecto a ser criado:"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Catalog"
-msgstr "~Catálogo"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Schema"
-msgstr "Es~quema"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "~Table Name"
-msgstr "~Nome da tabela"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "~Name of table view"
-msgstr "Nome da ~vista de tabela"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "~Query name"
-msgstr "Nome da ~consulta"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
-#, fuzzy
-msgid  "Rename to"
-msgstr "Mudar o nome para"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
 #, fuzzy
 msgid  "Insert as"
 msgstr "Inserir como"
 
-#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Height"
-msgstr "A~ltura"
-
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Automatic"
 msgstr "~Automático(a)"
-
-#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Row Height"
-msgstr "Altura da linha"
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Width"
-msgstr "~Largura"
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Column Width"
-msgstr "Largura da coluna"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Data Source"
-msgstr "Origem de dados"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Choose a data source:"
-msgstr "Seleccionar origem de dados:"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Organize..."
-msgstr "Organizar..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Create..."
 msgstr "Criar..."
 
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
-#, fuzzy
-msgid  "Local Databases"
-msgstr "Bases de dados locais"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
-#, fuzzy
-msgid  "Choose a database"
-msgstr "Seleccione uma base de dados"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Indexes"
-msgstr "Índices remissivos"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "New Index"
-msgstr "Novo índice remissivo"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Delete Current Index"
-msgstr "Eliminar índice remissivo actual"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Rename Current Index"
-msgstr "Mudar o nome do índice remissivo actual"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Save Current Index"
-msgstr "Guardar índice remissivo actual"
-
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Reset Current Index"
 msgstr "Repor índice remissivo actual"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Index details"
-msgstr "Detalhes do índice remissivo"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Index identifier:"
-msgstr "Identificador de índice remissivo:"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Unique"
-msgstr "E~xclusivo"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Fields"
-msgstr "Campos"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "Fec~har"
-
-#: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
-#, fuzzy
-msgid  "Sort order"
-msgstr "Sequência de ordenação"
-
-#: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
-#, fuzzy
-msgid  "Index field"
-msgstr "Campo de índice remissivo"
-
-#: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
-#, fuzzy
-msgid  "Ascending"
-msgstr "Ascendente"
-
-#: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
-#, fuzzy
-msgid  "Descending"
-msgstr "Descendente"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
 #, fuzzy
@@ -2843,11 +1989,6 @@ msgstr "Tem a certeza de que pretende eliminar o índice remissivo '$name$'?"
 msgid  "index"
 msgstr "índice remissivo"
 
-#: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
-#, fuzzy
-msgid  "Save Index"
-msgstr "Guardar índice remissivo"
-
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "The index must contain at least one field."
@@ -2857,11 +1998,6 @@ msgstr "O índice remissivo tem de conter, pelo menos, um campo."
 #, fuzzy
 msgid  "Exit Index Design"
 msgstr "Fechar desenho do índice remissivo"
-
-#: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "Do you want to save the changes made to the current index?"
-msgstr "Pretende guardar as alterações efectuadas ao índice remissivo actual?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
 #, fuzzy
@@ -2878,16 +2014,6 @@ msgstr "Numa definição de índice remissivo, cada coluna de tabela só pode te
 msgid  "~Parameters"
 msgstr "~Parâmetros"
 
-#: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Value"
-msgstr "~Valor"
-
-#: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Next"
-msgstr "Se~guinte"
-
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
 #, fuzzy
 msgid  "Parameter Input"
@@ -2898,45 +2024,18 @@ msgstr "Entrada de parâmetros"
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
 msgstr "Não foi possível converter a entrada num valor válido para a coluna \"$name$\"."
 
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Standard Filter"
-msgstr "Filtro padrão"
-
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "AND"
-msgstr "AND"
+msgstr "E"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "OR"
-msgstr "OR"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Field name"
-msgstr "Nome do campo"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Condition"
-msgstr "Condição"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Value"
-msgstr "Valor"
+msgstr "OU"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Operator"
 msgstr "Operador"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Criteria"
-msgstr "Critérios"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
 #, fuzzy
@@ -2948,11 +2047,6 @@ msgstr "- nenhum -"
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
 
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Sort Order"
-msgstr "Sequência de ordenação"
-
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
 msgid  "ascending"
@@ -2962,11 +2056,6 @@ msgstr "ascendente"
 #, fuzzy
 msgid  "descending"
 msgstr "descendente"
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Field name"
-msgstr "Nome do campo"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2978,120 +2067,37 @@ msgstr "depois"
 msgid  "Operator"
 msgstr "Operador"
 
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Order"
-msgstr "Ordem"
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Sort order"
-msgstr "Sequência de ordenação"
-
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
 #, fuzzy
 msgid  "<none>"
 msgstr "<nenhum(a)>"
 
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Relations"
-msgstr "Relações"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Tables involved"
-msgstr "Tabelas consideradas"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Fields involved"
-msgstr "Campos considerados"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Update options"
-msgstr "Opções de actualização"
-
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~No action"
 msgstr "N~enhuma acção"
 
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Update cascade"
-msgstr "Actualizar ~cascata"
-
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Set null"
 msgstr "De~finir como nulo"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "Set ~default"
 msgstr "Especificar predefini~ção"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Delete options"
-msgstr "Opções de eliminação"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Delete ~cascade"
-msgstr "Eli~minar cascata"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Base"
-msgstr "%PRODUCTNAME Base"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Details"
 msgstr "Detalhes"
 
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Error ~list:"
-msgstr "~Lista de erros:"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Description:"
-msgstr "~Descrição:"
-
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
 #, fuzzy
 msgid  "SQL Status"
 msgstr "Estado SQL"
 
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
-#, fuzzy
-msgid  "Error code"
-msgstr "Código de erro"
-
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
 #, fuzzy
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
 msgstr "Normalmente, este erro está relacionado com a utilização de um conjunto de caracteres inadequado ao idioma da base de dados. Verifique a definição, seleccionando Editar - Base de dados - Propridades."
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
-#, fuzzy
-msgid  "Error"
-msgstr "Erro"
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
-#, fuzzy
-msgid  "Warning"
-msgstr "Aviso"
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
-#, fuzzy
-msgid  "Information"
-msgstr "Informações"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
 #, fuzzy
@@ -3103,41 +2109,6 @@ msgstr "Definições de ligação de texto"
 msgid  "User Settings"
 msgstr "Definições do utilizador"
 
-#: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
-#, fuzzy
-msgid  "User administration"
-msgstr "Administração de utilizadores"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User selection"
-msgstr "Selecção do utilizador"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Us~er:"
-msgstr "~Utilizador:"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Add User..."
-msgstr "~Adicionar utilizador..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Change ~Password..."
-msgstr "~Mudar palavra-passe..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete User..."
-msgstr "~Eliminar utilizador..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Access rights for selected user"
-msgstr "Direitos de acesso para utilizador seleccionado"
-
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
 #, fuzzy
 msgid  "Do you really want to delete the user?"
@@ -3148,40 +2119,15 @@ msgstr "Tem a certeza de que pretende eliminar o utilizador?"
 msgid  "The database does not support user administration."
 msgstr "A base de dados não suporta administração de utilizadores."
 
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User \"$name$:  $\""
-msgstr "Utilizador \"$name$:  $\""
-
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Old p~assword"
-msgstr "Palavra-pa~sse antiga"
-
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Password"
-msgstr "~Palavra-passe"
-
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Confirm  password"
 msgstr "~Confirmar palavra-passe"
 
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Change Password"
-msgstr "Alterar palavra-passe"
-
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
 #, fuzzy
 msgid  "The passwords do not match. Please enter the password again."
 msgstr "As palavras-passe não correspondem. Introduza de novo a palavra-passe."
-
-#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
-#, fuzzy
-msgid  "Refresh"
-msgstr "Actualizar"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
 #, fuzzy
@@ -3193,55 +2139,20 @@ msgstr "No~vo desenho de vista"
 msgid  "New ~Table Design"
 msgstr "Novo de~senho de tabela"
 
-#: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
-#, fuzzy
-msgid  "Query AutoPilot..."
-msgstr "Assistente automático de consultas..."
-
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
 #, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "~Novo desenho de consulta (Vista de desenho)"
-
-#: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
-#, fuzzy
-msgid  "~Edit Query"
-msgstr "~Editar consulta"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
 #, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "Novo comando ~SQL (Vista SQL)"
 
-#: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
-#, fuzzy
-msgid  "Edit..."
-msgstr "Editar..."
-
-#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
-#, fuzzy
-msgid  "Column ~Width..."
-msgstr "~Largura de coluna..."
-
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
 #, fuzzy
 msgid  "Report Wizard..."
 msgstr "Assistente de relatórios..."
-
-#: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Form AutoPilot..."
-msgstr "Assistente automático de formulários..."
-
-#: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
-#, fuzzy
-msgid  "System"
-msgstr "Sistema"
-
-#: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
-#, fuzzy
-msgid  "Error during creation"
-msgstr "Erro ao criar objecto"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
 #, fuzzy
@@ -3262,11 +2173,6 @@ msgstr "Não foi possível eliminar a tabela porque a ligação à base de dados
 #, fuzzy
 msgid  "~All"
 msgstr "~Tudo"
-
-#: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
-#, fuzzy
-msgid  "Undo:"
-msgstr "Anular:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
 #, fuzzy
@@ -3294,69 +2200,23 @@ msgid  "The name '$#$' already exists.\nPlease enter another name."
 msgstr "O nome '$#$' já existe.\nIntroduza outro nome."
 
 #: ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.STRING.TEXT
-#, fuzzy
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
-msgstr "O relatório , \"$file$\", requer a extensão do Sun Report Builder."
-
-#: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
-#, fuzzy
-msgid  "Apply columns"
-msgstr "Aplicar colunas"
+msgstr "O relatório \"$file$\", requer a extensão Sun Report Builder."
 
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
 #, fuzzy
 msgid  "Type formatting"
 msgstr "Formatação de tipo"
 
-#: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
-#, fuzzy
-msgid  "The following fields have already been set as primary keys:\n"
-msgstr "Já foram definidos como chaves principais os seguintes campos:\n"
-
-#: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
-#, fuzzy
-msgid  "Assign columns"
-msgstr "Atribuir colunas"
-
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Copy RTF Table"
 msgstr "Copiar tabela RTF"
 
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "~Help"
-msgstr "~Ajuda"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Cancel"
-msgstr "~Cancelar"
-
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "< ~Back"
 msgstr "< ~Anterior"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Next>"
-msgstr "Se~guinte >"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "C~reate"
-msgstr "~Criar"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Existing columns"
-msgstr "Colunas existentes"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Column information"
-msgstr "Informações sobre colunas"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
 #, fuzzy
@@ -3364,59 +2224,13 @@ msgid  "Automatic type recognition"
 msgstr "Reconhecimento automático do tipo"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Lines (ma~x)"
-msgstr "Linhas (máx.)"
-
-#: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
-#, fuzzy
-msgid  "Primary Key"
-msgstr "Chave principal"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Source table: \n"
-msgstr "Tabela origem: \n"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Destination table: \n"
-msgstr "Tabela destino: \n"
+msgstr "Linhas (má~x)"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~All"
 msgstr "~Tudo"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Non~e"
-msgstr "Nen~hum(a)"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Ta~ble name"
-msgstr "Nome da ta~bela"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Options"
-msgstr "Opções"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "De~finition and data"
-msgstr "Definição e ~dados"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Def~inition"
-msgstr "~Definição"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "A~s table view"
-msgstr "Como ~vista de tabela"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
 #, fuzzy
@@ -3427,16 +2241,6 @@ msgstr "A~nexar dados"
 #, fuzzy
 msgid  "Use first ~line as column names"
 msgstr "Utilizar primeira ~linha como nomes das colunas"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Crea~te primary key"
-msgstr "Criar chave ~principal"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Nome"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
 #, fuzzy
@@ -3457,16 +2261,6 @@ msgstr "Seleccione a opção 'Acrescentar dados' na primeira página para acresc
 #, fuzzy
 msgid  "Please change the table name. It is too long."
 msgstr "Altere o nome da tabela. É demasiado longo."
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Options"
-msgstr "Opções"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Type"
-msgstr "~Tipo"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
 #, fuzzy
@@ -3497,21 +2291,6 @@ msgstr "Junção cruzada"
 #, fuzzy
 msgid  "Natural"
 msgstr "Natural"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Tables involved"
-msgstr "Tabelas consideradas"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Fields involved"
-msgstr "Campos considerados"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Join Properties"
-msgstr "Propriedades de junção"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
 #, fuzzy
@@ -3548,11 +2327,6 @@ msgstr "Contém apenas uma coluna para cada par de colunas com o mesmo nome de '
 msgid  "Add Table Window"
 msgstr "Adicionar janela de tabela"
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
-#, fuzzy
-msgid  "Move table window"
-msgstr "Mover janela de tabela"
-
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
 #, fuzzy
 msgid  "Insert Join"
@@ -3563,65 +2337,29 @@ msgstr "Inserir junção"
 msgid  "Delete Join"
 msgstr "Eliminar junção"
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
-#, fuzzy
-msgid  "Resize table window"
-msgstr "Redimensionar janela de tabela"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
-#, fuzzy
-msgid  "Delete Column"
-msgstr "Eliminar coluna"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
-#, fuzzy
-msgid  "Move column"
-msgstr "Mover coluna"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
-#, fuzzy
-msgid  "Add Column"
-msgstr "Adicionar coluna"
-
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
 #, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "Expressão inválida, a tabela '$name$' não existe."
 
 #: ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.STRING.TEXT
-#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
-msgstr "Expressão inválida. O nome de campo '$name$' não existe."
+msgstr "Expressão inválida, o nome de campo '$name$' não existe."
 
 #: ui/querydesign/query.src#RID_STR_TOMUCHTABLES.STRING.TEXT
 #, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "A consulta tem #num# tabelas. Contudo, o tipo de base de dados seleccionado processa apenas um máximo de #maxnum# tabela(s) por instrução."
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
-#, fuzzy
-msgid  "Delete Table Window"
-msgstr "Eliminar janela de tabela"
-
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
 #, fuzzy
 msgid  "Edit Column Description"
 msgstr "Editar descrição das colunas"
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Adjust column width"
-msgstr "Ajustar largura de coluna"
-
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
 #, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "(sem ordenação);ascendente;descendente"
-
-#: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
-#, fuzzy
-msgid  "(no function);Group"
-msgstr "(sem função);Agrupar"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
 #, fuzzy
@@ -3633,26 +2371,6 @@ msgstr "(nenhuma tabela)"
 msgid  "The database only supports sorting for visible fields."
 msgstr "A base de dados só suporta ordenação de campos visíveis."
 
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
-#, fuzzy
-msgid  "Functions"
-msgstr "Funções"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
-#, fuzzy
-msgid  "Table Name"
-msgstr "Nome da tabela"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
-#, fuzzy
-msgid  "Alias"
-msgstr "Nome alternativo"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Distinct Values"
-msgstr "Valores distintos"
-
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
 #, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
@@ -3663,30 +2381,15 @@ msgstr "Campo;Nome alternativo;Tabela;Ordenar;Visível;Função;Critério;Ou;Ou"
 msgid  "There are too many columns."
 msgstr "Existem demasiadas colunas."
 
-#: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "A condition cannot be applied to field [*]"
-msgstr "Não é possível aplicar uma condição ao campo [*]."
-
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
 #, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "A instrução SQL criada é demasiado extensa."
 
-#: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
-#, fuzzy
-msgid  "Query is too complex"
-msgstr "Consulta demasiado complexa"
-
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
 #, fuzzy
 msgid  "Nothing has been selected."
 msgstr "Nenhuma selecção efectuada."
-
-#: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
-#, fuzzy
-msgid  "Too many search criteria"
-msgstr "Foram especificados demasiados critérios de procura"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
 #, fuzzy
@@ -3707,16 +2410,6 @@ msgstr "Existem demasiadas tabelas."
 #, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "A instrução não será aplicada em consultas baseadas na linguagem SQL da base de dados."
-
-#: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Field name not found or not unique"
-msgstr "Nome de campo não encontrado ou não exclusivo"
-
-#: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
-#, fuzzy
-msgid  "Join could not be processed"
-msgstr "Não foi possível processar a junção."
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
 #, fuzzy
@@ -3791,22 +2484,12 @@ msgstr "O $object$ foi alterado.\nPretende guardar as alterações?"
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
 #, fuzzy
 msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr "O $object$ baseia-se num comando SQL que não foi possível analisar."
+msgstr "$object$ é baseado num comando SQL que não pôde ser analisado.(excepto \"SQL command\", que não faz sentido aqui) vai ser inserido."
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
 #, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr "O $object$ será aberto na vista SQL."
-
-#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
-#, fuzzy
-msgid  "The table view"
-msgstr "A vista da tabela"
-
-#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
-#, fuzzy
-msgid  "The query"
-msgstr "A consulta"
+msgstr "$object$ vai ser aberto na vista SQL.(excepto \"SQL command\", que não faz sentido aqui) vai ser inserido."
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
 #, fuzzy
@@ -3819,9 +2502,8 @@ msgid  "The query does not create a result set, and thus cannot be part of anoth
 msgstr "A consulta não cria um conjunto de resultados e, por este motivo, não pode fazer parte de outra consulta."
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
-#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr "O parâmetro ActiveConnection e DataSourceName estão em falta ou incorrectos - não é possível inicializar o criador de consulta."
+msgstr "Os parâmetros ActiveConnection e DataSourceName estão em falta ou incorrectos - não é possível inicializar o criador de consulta."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
 #, fuzzy
@@ -3848,6 +2530,10 @@ msgstr " - %PRODUCTNAME Base: concepção de relação"
 msgid  "The database does not support relations."
 msgstr "A base de dados não suporta relações."
 
+#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The relation design has been changed.\nDo you want to save the changes?"
+msgstr "A concepção da relação foi alterada.\nPretende guardar as alterações?"
+
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
 #, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
@@ -3859,54 +2545,18 @@ msgid  "The database could not create the relation. May be foreign keys for this
 msgstr "Não foi possível a base de dados criar a relação. As chaves externas podem não ser suportadas para este tipo de tabela.\nConsulte a documentação da base de dados."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
-#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr "Desconhecido; Texto; Número;Data/Hora;Data;Hora;Sim/Não;Moeda;Nota;Contador;Imagem;Texto (fixo);Decimal;Binário (fixo);Binário;BigInt;Duplo;Flutuar;Real;Número inteiro;Número inteiro pequeno;Número inteiro muito pequeno;SQL Null;Objecto;Distinto;Estrutura;Campo;BLOB;CLOB;REF;OUTRO;Bit (fixo)"
+msgstr "Desconhecido; Texto; Número;Data/Hora;Data;Hora;Sim/Não;Moeda;Nota;Contador;Imagem;Texto (fixo);Decimal;Binário (fixo);Binário;BigInt;Duplo;Flutuante;Real;Número inteiro;Número inteiro pequeno;Número inteiro muito pequeno;SQL Null;Objecto;Distinto;Estrutura;Campo;BLOB;CLOB;REF;OUTRO;Bit (fixo)"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.STRING.TEXT
 #, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Introduzir/remover chave principal"
 
-#: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "Sim"
-
-#: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "Não"
-
-#: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
-#, fuzzy
-msgid  "Ascending"
-msgstr "Ascendente"
-
-#: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
-#, fuzzy
-msgid  "Descending"
-msgstr "Descendente"
-
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
 #, fuzzy
 msgid  "<none>"
 msgstr "<nenhum>"
-
-#: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Field name"
-msgstr "Nome do campo"
-
-#: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Field Name"
-msgstr "Nome do campo"
-
-#: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
-#, fuzzy
-msgid  "Field ~type"
-msgstr "~Tipo de campo"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
 #, fuzzy
@@ -3918,11 +2568,6 @@ msgstr "Tipo de campo"
 msgid  "Field length"
 msgstr "Comprimento do campo"
 
-#: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "Descrição"
-
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
 #, fuzzy
 msgid  "Column Description"
@@ -3932,31 +2577,6 @@ msgstr "Descrição da Coluna"
 #, fuzzy
 msgid  "Input required"
 msgstr "Entrada requerida"
-
-#: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
-#, fuzzy
-msgid  "~AutoValue"
-msgstr "~Valor automático"
-
-#: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
-#, fuzzy
-msgid  "Field Properties"
-msgstr "Propriedades do campo"
-
-#: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Geral"
-
-#: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
-#, fuzzy
-msgid  "Description:"
-msgstr "Descrição:"
-
-#: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
-#, fuzzy
-msgid  "Table properties"
-msgstr "Propriedades da tabela"
 
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
 #, fuzzy
@@ -3968,26 +2588,6 @@ msgstr "O texto introduzido não é um elemento da lista. "
 msgid  "Insert Rows"
 msgstr "Inserir linhas"
 
-#: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
-#, fuzzy
-msgid  "Primary Key"
-msgstr "Chave principal"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
-#, fuzzy
-msgid  "Modify cell"
-msgstr "Modificar célula"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
-#, fuzzy
-msgid  "Delete row"
-msgstr "Eliminar linha"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
-#, fuzzy
-msgid  "Modify field type"
-msgstr "Modificar tipo de campo"
-
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
 #, fuzzy
 msgid  "Insert row"
@@ -3998,35 +2598,10 @@ msgstr "Inserir linha"
 msgid  "Insert new row"
 msgstr "Inserir nova linha"
 
-#: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
-#, fuzzy
-msgid  "~Default value"
-msgstr "Valor ~predefinido"
-
-#: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
-#, fuzzy
-msgid  "~Entry required"
-msgstr "~Entrada requerida"
-
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
 #, fuzzy
 msgid  "~Length"
 msgstr "~Comprimento"
-
-#: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
-#, fuzzy
-msgid  "~Type"
-msgstr "~Tipo"
-
-#: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
-#, fuzzy
-msgid  "Decimal ~places"
-msgstr "Casas ~decimais"
-
-#: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
-#, fuzzy
-msgid  "Format example"
-msgstr "Exemplo de formato"
 
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
 #, fuzzy
@@ -4093,25 +2668,13 @@ msgstr "Não é possível guardar a tabela, porque o nome da coluna \"$column$\"
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "A coluna \"$column$\" pertence à chave principal. Se eliminar a mesma, a chave principal será igualmente eliminada. Tem a certeza de que pretende continuar?"
 
-#: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Primary Key Affected"
-msgstr "Chave principal afectada"
+#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The table has been changed.\nDo you want to save the changes?"
+msgstr "A tabela foi alterada.\nPretende guardar as alterações?"
 
-#: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Column"
-msgstr "Coluna"
-
-#: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
-#, fuzzy
-msgid  "Continue anyway?"
-msgstr "Pretende continuar?"
-
-#: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
-#, fuzzy
-msgid  "Warning!"
-msgstr "Aviso!"
+#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
+msgstr "Perdeu-se a ligação à base de dados! Sem uma ligação, o desenho de tabela só pode ser utilizado com funcionalidade limitada.\nPretende restabelecer a ligação?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
 #, fuzzy
@@ -4123,10 +2686,9 @@ msgstr "Não foi possível guardar a tabela devido a problemas na ligação à b
 msgid  "The table filter could not be adjusted because the data source has been deleted."
 msgstr "Não foi possível ajustar o filtro da tabela porque a origem dos dados foi eliminada."
 
-#: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
-#, fuzzy
-msgid  "No primary key"
-msgstr "Sem chave principal"
+#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
+msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
+msgstr "Para poder editar os índices remissivos de uma tabela, terá de guardar a mesma.\nPretende guardar agora as alterações?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
 #, fuzzy
@@ -4159,9 +2721,8 @@ msgid  "You are trying to delete all the columns in the table. A table cannot ex
 msgstr "Foi feita uma tentativa para eliminar todas as colunas da tabela. A tabela não pode existir sem colunas. Pretende que a tabela seja eliminada da base de dados? Em caso negativo, a tabela não será modificada."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
-#, fuzzy
 msgid  "A~uto-increment statement"
-msgstr "Instrução de incremento a~utomático"
+msgstr "Incremento a~utomático"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
 #, fuzzy
@@ -4247,13 +2808,3 @@ msgstr "A sua ligação deve ter a capacidade de fornecer consultas para copiar 
 #, fuzzy
 msgid  "The given interaction handler is invalid."
 msgstr "O identificador de interacção indicado é inválido."
-
-#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
-#, fuzzy
-msgid  "~Remember password until end of session"
-msgstr "~Recordar a palavra-passe até ao fim da sessão"
-
-#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
-#, fuzzy
-msgid  "~Remember password"
-msgstr "~Memorizar palavra-passe"

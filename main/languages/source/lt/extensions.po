@@ -35,17 +35,9 @@ msgstr ""
 msgid  "Address Book Data Source Wizard"
 msgstr "Adresų knygelės duomenų šaltinio vediklis"
 
-#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
-msgid  "Address book type"
-msgstr "Adresų knygelės tipas"
-
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
 msgid  "Connection Settings"
 msgstr "Ryšio nuostatos"
-
-#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
-msgid  "Table selection"
-msgstr "Lentelės pasirinkimas"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
 msgid  "Field Assignment"
@@ -66,10 +58,6 @@ msgstr "Pasirinkite išorinės adresų knygelės tipą:"
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
 msgid  "Evolution"
 msgstr "„Evolution“"
-
-#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
-msgid  "Groupwise"
-msgstr "„Groupwise“"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
 msgid  "Evolution LDAP"
@@ -103,10 +91,6 @@ msgstr "„Outlook“ adresų knygelė"
 msgid  "Windows system address book"
 msgstr "„Windows“ adresų knygelė"
 
-#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
-msgid  "Other external data source"
-msgstr "Kitas išorinis duomenų šaltinis"
-
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
 msgstr "Norint nustatyti naują duomenų šaltinį, būtina papildoma informacija.\n\nSpustelėkite žemiau esantį mygtuką ir atsivėrusiame lange įveskite reikiamą informaciją."
@@ -131,10 +115,6 @@ msgstr "Norint naudoti adresų duomenis dokumentų šablonuose, „%PRODUCTNAME�
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
 msgstr "Surinkta visa reikalinga informacija adresų duomenims į „%PRODUCTNAME“ įtraukti.\n\nLiko tik nurodyti pavadinimą, kuriuo norite užregistruoti duomenų šaltinį „%PRODUCTNAME“ programoje."
 
-#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
-msgid  "Location"
-msgstr "Vieta"
-
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
 msgid  "Browse..."
 msgstr "Parinkti..."
@@ -142,10 +122,6 @@ msgstr "Parinkti..."
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
 msgstr "Šia adresų knygelę naudoti visuose „%PRODUCTNAME“ moduliuose."
-
-#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
-msgid  "Address book name"
-msgstr "Adresų knygelės pavadinimas"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
@@ -155,13 +131,9 @@ msgstr "Kitas duomenų šaltinis jau turi tokį pavadinimą. Duomenų šaltiniai
 msgid  "Please select a type of address book."
 msgstr "Pasirinkite adresų knygelės tipą."
 
-#: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
-msgid  "Addresses"
-msgstr "Adresai"
-
-#: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
-msgid  "Create Address Data Source"
-msgstr "Kurti adresų duomenų šaltinį"
+#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
+msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
+msgstr "Duomenų šaltinyje nėra lentelių.\nAr vis tiek naudoti šį adresų duomenų šaltinį?"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
 msgid  "The connection could not be established."
@@ -171,21 +143,9 @@ msgstr "Ryšio užmegzti nepavyko."
 msgid  "Please check the settings made for the data source."
 msgstr "Patikrinkite duomenų šaltinio nuostatas"
 
-#: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
-msgid  "Address Data - Field Assignment"
-msgstr "Adresų duomenys – lauko priskyrimas"
-
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
 msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
 msgstr "Šiuo metu nėra priskirto lauko.\nGalima priskirti laukus dabar arba padaryti tai vėliau lange\nFailas –> Šablonai –> Adresų knygelė..."
-
-#: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Field selection:"
-msgstr "Lauko pasirinkimas:"
-
-#: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
-msgid  "Table;Query;Sql;Sql [Native]"
-msgstr "Lentelė;Užklausa;SQL;SQL [Vietinė]"
 
 #: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
 msgid  "Bibliography Database"
@@ -195,37 +155,9 @@ msgstr "Bibliografijos duomenų bazė"
 msgid  "Do you want to edit the column arrangement?"
 msgstr "Ar norite taisyti stulpelių išdėstymą?"
 
-#: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
-msgid  "Column names"
-msgstr "Stulpelio pavadinimas"
-
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
 msgid  "<none>"
 msgstr "<nieko>"
-
-#: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
-msgid  "Column Layout for Table %1"
-msgstr "Stulpelių išdėstymas lentelėje %1"
-
-#: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
-msgid  "Choose Data Source"
-msgstr "Pasirinkite duomenų šaltinį"
-
-#: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
-msgid  "Entry"
-msgstr "Įrašas"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
-msgid  "The following column names could not be assigned:\n"
-msgstr "Šių stulpelių pavadinimų nepavyko priskirti:\n"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
-msgid  "Article"
-msgstr "Straipsnis"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
-msgid  "Book"
-msgstr "Knyga"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
 msgid  "Brochures"
@@ -243,10 +175,6 @@ msgstr "Knygos citata"
 msgid  "Book excerpt with title"
 msgstr "Knygos citata su pavadinimu"
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
-msgid  "Journal"
-msgstr "Žurnalas"
-
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
 msgid  "Techn. documentation"
 msgstr "Technikos dokumentacija"
@@ -254,10 +182,6 @@ msgstr "Technikos dokumentacija"
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
 msgid  "Thesis"
 msgstr "Tezės"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
-msgid  "Miscellaneous"
-msgstr "Kita"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
 msgid  "Dissertation"
@@ -267,10 +191,6 @@ msgstr "Disertacija"
 msgid  "Research report"
 msgstr "Tyrimų ataskaita"
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
-msgid  "Unpublished"
-msgstr "Nepublikuota"
-
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
 msgid  "e-mail"
 msgstr "el. paštas"
@@ -279,77 +199,17 @@ msgstr "el. paštas"
 msgid  "WWW document"
 msgstr "Žiniatinklio dokumentas"
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
-msgid  "User-defined1"
-msgstr "Naudotojo aprašyta 1"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
-msgid  "User-defined2"
-msgstr "Naudotojo aprašyta 2"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
-msgid  "User-defined3"
-msgstr "Naudotojo aprašyta 3"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
-msgid  "User-defined4"
-msgstr "Naudotojo aprašyta 4"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
-msgid  "User-defined5"
-msgstr "Naudotojo aprašyta 5"
-
-#: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
-msgid  "General"
-msgstr "Bendroji informacija"
-
-#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
-msgid  "Insert Section..."
-msgstr "Įterpti sekciją..."
-
-#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
-msgid  "Delete Section..."
-msgstr "Šalinti sekciją..."
-
-#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
-msgid  "Modify Name..."
-msgstr "Keisti pavadinimą..."
-
-#: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
-msgid  "~Short name"
-msgstr "~Trumpas pavadinimas"
-
-#: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
-msgid  "~Type"
-msgstr "~Tipas"
-
-#: bibliography/sections.src#ST_YEAR.STRING.TEXT
-msgid  "~Year"
-msgstr "~Metai"
-
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
 msgid  "Author(s)"
 msgstr "Autorius(iai)"
-
-#: bibliography/sections.src#ST_TITLE.STRING.TEXT
-msgid  "Tit~le"
-msgstr "~Antraštė"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
 msgid  "~Publisher"
 msgstr "~Leidėjas"
 
-#: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
-msgid  "A~ddress"
-msgstr "A~dresas"
-
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
 msgid  "~ISBN"
 msgstr "~ISBN"
-
-#: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
-msgid  "~Chapter"
-msgstr "~Skyrius"
 
 #: bibliography/sections.src#ST_PAGE.STRING.TEXT
 msgid  "Pa~ge(s)"
@@ -363,25 +223,9 @@ msgstr "Redaktorius"
 msgid  "Ed~ition"
 msgstr "L~eidimas"
 
-#: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
-msgid  "~Book title"
-msgstr "~Knygos pavadinimas"
-
-#: bibliography/sections.src#ST_VOLUME.STRING.TEXT
-msgid  "Volume"
-msgstr "Tomas"
-
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
 msgid  "Publication t~ype"
 msgstr "Publikacijos t~ipas"
-
-#: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
-msgid  "Organi~zation"
-msgstr "~Organizacija"
-
-#: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
-msgid  "Instit~ution"
-msgstr "~Įstaiga"
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
 msgid  "University"
@@ -391,29 +235,13 @@ msgstr "Universitetas"
 msgid  "Type of re~port"
 msgstr "Ataskaitos ti~pas"
 
-#: bibliography/sections.src#ST_MONTH.STRING.TEXT
-msgid  "~Month"
-msgstr "~Mėnuo"
-
-#: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
-msgid  "~Journal"
-msgstr "~Žurnalas"
-
 #: bibliography/sections.src#ST_NUMBER.STRING.TEXT
 msgid  "Numb~er"
 msgstr "~Numeris"
 
-#: bibliography/sections.src#ST_SERIES.STRING.TEXT
-msgid  "Se~ries"
-msgstr "Se~rija"
-
 #: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
 msgid  "Ann~otation"
 msgstr "An~otacija"
-
-#: bibliography/sections.src#ST_NOTE.STRING.TEXT
-msgid  "~Note"
-msgstr "~Pastaba"
 
 #: bibliography/sections.src#ST_URL.STRING.TEXT
 msgid  "URL"
@@ -439,61 +267,25 @@ msgstr "Naudotojo aprašytas ~4 laukas"
 msgid  "User-defined field ~5"
 msgstr "Naudotojo aprašytas ~5 laukas"
 
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
-msgid  "Table"
-msgstr "Lentelė"
-
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
 msgid  "Search Key"
 msgstr "Ieškinys"
-
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
-msgid  "AutoFilter"
-msgstr "Automatinis filtras"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
 msgid  "Standard Filter"
 msgstr "Įprastas filtras"
 
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
-msgid  "Remove Filter"
-msgstr "Šalinti filtrą"
-
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
 msgid  "Column Arrangement"
 msgstr "Stulpelių išdėstymas"
-
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
-msgid  "Data Source"
-msgstr "Duomenų šaltinis"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
-msgid  "Data"
-msgstr "Duomenys"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
 msgstr "Forma, kurioje yra valdiklis, nesusieta (arba tik dalinai susieta) su duomenų šaltiniu.\n\nPasirinkite duomenų šaltinį ir lentelę.\n\n\nPastaba: nuostatos, pakeistos šiame lange, įsigalios iškart, užvėrus šį langą."
 
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
-msgid  "~Data source:"
-msgstr "~Duomenų šaltinis:"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
-msgid  "~..."
-msgstr "~..."
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
-msgid  "~Table / Query:"
-msgstr "~Lentelė arba užklausa:"
-
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
 msgid  "Database Field"
 msgstr "Duomenų bazės laukas"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
-msgid  "Do you want to save the value in a database field?"
-msgstr "Ar įrašyti reikšmę duomenų bazės lauke?"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, I want to save it in the following database field:"
@@ -503,97 +295,17 @@ msgstr "~Taip, įrašyti nurodytame duomenų bazės lauke:"
 msgid  "~No, I only want to save the value in the form."
 msgstr "~Ne, reikšmę įrašyti tik į formą ."
 
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
-msgid  "Form"
-msgstr "Forma"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
-msgid  "Data source"
-msgstr "Duomenų šaltinis"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
-msgid  "Content type"
-msgstr "Turinio tipas"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
-msgid  "Content"
-msgstr "Turinys"
-
-#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Lentelė"
-
-#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
-msgid  "Query"
-msgstr "Užklausa"
-
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
 msgid  "SQL command"
 msgstr "SQL komanda"
-
-#: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
-msgid  "Group Element Wizard"
-msgstr "Grupės elemento vediklis"
-
-#: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
-msgid  "Table Element Wizard"
-msgstr "Lentelės elemento vediklis"
-
-#: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
-msgid  "List Box Wizard"
-msgstr "Sąrašo lauko vediklis"
-
-#: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
-msgid  "Combo Box Wizard"
-msgstr "Pasirinktinio įvedimo lauko vediklis"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
 msgid  "The table connection to the data source could not be established."
 msgstr "Nepavyko užmegzti lentelės ryšio su duomenų šaltiniu."
 
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
-msgid  "Field Selection"
-msgstr "Lauko parinkimas"
-
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
-msgid  "Table element"
-msgstr "Lentelės elementas"
-
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
-msgid  "Existing fields"
-msgstr "Esami laukai"
-
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
-msgid  "Selected fields"
-msgstr "Parinkti laukai"
-
-#: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
-msgid  " (Date)"
-msgstr " (Data)"
-
-#: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
-msgid  " (Time)"
-msgstr " (Laikas)"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
-msgid  "Data"
-msgstr "Duomenys"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
-msgid  "Which ~names do you want to give the option fields?"
-msgstr "Kaip pavadinti parinkčių laukus?"
-
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
 msgid  "~Option fields"
 msgstr "~Parinkčių laukai"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
-msgid  "Default Field Selection"
-msgstr "Numatytojo lauko pasirinkimas"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
-msgid  "Should one option field be selected as a default?"
-msgstr "Ar pažymėti vieną parinkties lauką numatytuoju?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, the following:"
@@ -603,10 +315,6 @@ msgstr "~Taip, šį:"
 msgid  "No, one particular field is not going to be selected."
 msgstr "Ne, vieno lauko nereikia specialiai pažymėti."
 
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
-msgid  "Field Values"
-msgstr "Lauko reikšmės"
-
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
 msgid  "When you select an option, the option group is given a specific value."
 msgstr "Kai pažymite parinktį, parinkčių grupei suteikiama atitinkama reikšmė."
@@ -614,10 +322,6 @@ msgstr "Kai pažymite parinktį, parinkčių grupei suteikiama atitinkama reikš
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
 msgid  "Which ~value do you want to assign to each option?"
 msgstr "Kurią ~reikšmę priskirti kiekvienai parinkčiai?"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
-msgid  "Create Option Group"
-msgstr "Parinkčių grupės kūrimas"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
 msgid  "Which ~caption is to be given to your option group?"
@@ -630,14 +334,6 @@ msgstr "Surinkta visa informacija, reikalinga parinkčių grupei sukurti."
 #: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
 msgstr "Galima įrašyti parinkčių grupės reikšmę į duomenų bazę arba panaudoti ją tolesniam veiksmui."
-
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
-msgid  "Table Selection"
-msgstr "Lentelės pasirinkimas"
-
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
-msgid  "Control"
-msgstr "Valdiklis"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
@@ -663,41 +359,13 @@ msgstr "Pasirinkto lauko turinys bus matomas pasirinktinio įvedimo lauke."
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
 msgstr "Pasirinkto lauko turinys bus matomas sąrašo lauke, jei susieti laukai yra vienodi."
 
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
-msgid  "Field Link"
-msgstr "Lauko saitas"
-
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
 msgstr "Čia pasirinkite laukus su atitinkamu turiniu taip, kad būtų matoma pažymėto lauko reikšmė."
 
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
-msgid  "Field from the ~Value Table"
-msgstr "~Reikšmių lentelės laukas"
-
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
-msgid  "Field from the ~List Table"
-msgstr "~Sąrašo lentelės laukas"
-
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
 msgstr "Pasirinktinio įvedimo lauko reikšmę galima įrašyti į duomenų bazės lauką arba panaudoti ją rodymui."
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
-msgid  "<< Back"
-msgstr "<< Atgal"
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
-msgid  "Next >>"
-msgstr "Toliau >>"
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
-msgid  "Accept"
-msgstr "Priimti"
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
-msgid  "Finish"
-msgstr "Baigti"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 msgid  " - Software License Agreement"
@@ -731,10 +399,6 @@ msgstr "1."
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr "Perskaičius visą licencijos sutartį. Visą licencijos sutartį perskaityti (ar bent peržvelgti) galite naudodamiesi slankjuoste arba mygtuku „%PAGEDOWN“."
 
-#: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
-msgid  "Page Down"
-msgstr "Žemyn"
-
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
 msgid  "2."
 msgstr "2."
@@ -746,10 +410,6 @@ msgstr "Sutikus su visomis licencijos sutarties sąlygomis."
 #: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
 msgid  "I accept the terms of the Agreement."
 msgstr "Su sutarties sąlygomis sutinku."
-
-#: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
-msgstr "~Sutinku"
 
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
@@ -780,11 +440,6 @@ msgstr "Susieti laukus"
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
 msgstr "Įdėtinėse formose galima pateikti išsamius duomenis apie dabartinį pagrindinės formos įrašą. Tam reikia nurodyti, kurie įdėtinės formos laukai kuriuos pagrindinės formos laukus atitinka."
 
-#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Suggest"
-msgstr "Pasiūlymas"
-
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
 #, fuzzy
 msgid  "Sub Form"
@@ -800,44 +455,15 @@ msgstr "Pagrindinė forma"
 msgid  "The columns of '#' could not be retrieved."
 msgstr "Nepavyko perskaityti  „#“ stulpelių."
 
-#: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
-#, fuzzy
-msgid  "Edit mask"
-msgstr "Taisyti kaukę"
-
-#: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
-#, fuzzy
-msgid  "Literal mask"
-msgstr "Ženklų kaukė"
-
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
 #, fuzzy
 msgid  "Read-only"
 msgstr "Tik skaitymui"
 
-#: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
-#, fuzzy
-msgid  "Enabled"
-msgstr "Veiksnus"
-
 #: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
+#, fuzzy
 msgid  "Visible"
 msgstr ""
-
-#: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
-#, fuzzy
-msgid  "AutoFill"
-msgstr "Automatinis užpildymas"
-
-#: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
-#, fuzzy
-msgid  "Line count"
-msgstr "Eilučių skaičius"
-
-#: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
-#, fuzzy
-msgid  "Max. text length"
-msgstr "Maksimalus teksto ilgis"
 
 #: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
 #, fuzzy
@@ -849,12 +475,8 @@ msgstr "Suktukas"
 msgid  "Strict format"
 msgstr "Tikslus formatas"
 
-#: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
-#, fuzzy
-msgid  "Thousands separator"
-msgstr "Tūkstančių skirtukas"
-
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
+#, fuzzy
 msgid  "Printable"
 msgstr ""
 
@@ -867,21 +489,6 @@ msgstr "URL"
 #, fuzzy
 msgid  "Frame"
 msgstr "Kadras"
-
-#: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
-#, fuzzy
-msgid  "Help text"
-msgstr "Paaiškinančioji etiketė"
-
-#: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
-#, fuzzy
-msgid  "Help URL"
-msgstr "Žinyno URL"
-
-#: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
-#, fuzzy
-msgid  "Additional information"
-msgstr "Papildoma informacija"
 
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
 #, fuzzy
@@ -898,85 +505,15 @@ msgstr "Trys būsenos"
 msgid  "Empty string is NULL"
 msgstr "Tuščia eilutė yra nulinė"
 
-#: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
-#, fuzzy
-msgid  "Decimal accuracy"
-msgstr "Dešimtainės skiltys"
-
-#: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "Paveikslas"
-
-#: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
-#, fuzzy
-msgid  "Default selection"
-msgstr "Numatytoji atranka"
-
-#: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Default button"
-msgstr "Numatytasis mygtukas"
-
-#: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
-#, fuzzy
-msgid  "Label Field"
-msgstr "Žymės laukas"
-
-#: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Label"
-msgstr "Žymė"
-
-#: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Lygiuotė"
-
 #: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
 #, fuzzy
 msgid  "Vert. Alignment"
 msgstr "Vertikalioji lygiuotė"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
-#, fuzzy
-msgid  "Top"
-msgstr "Viršutinė"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
-#, fuzzy
-msgid  "Middle"
-msgstr "Centrinė"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
-#, fuzzy
-msgid  "Bottom"
-msgstr "Apatinė"
-
-#: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
-#, fuzzy
-msgid  "Graphics alignment"
-msgstr "Paveikslų lygiuotė"
-
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
 #, fuzzy
 msgid  "Font"
 msgstr "Šriftas"
-
-#: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
-#, fuzzy
-msgid  "Background color"
-msgstr "Fono spalva"
-
-#: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
-#, fuzzy
-msgid  "Border"
-msgstr "Rėmelis"
-
-#: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
-#, fuzzy
-msgid  "Icon size"
-msgstr "Mygtukų ~dydis"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
 #, fuzzy
@@ -988,55 +525,10 @@ msgstr "Maži"
 msgid  "Large"
 msgstr "Dideli"
 
-#: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
-#, fuzzy
-msgid  "Positioning"
-msgstr "Padėtis"
-
-#: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
-#, fuzzy
-msgid  "Navigation"
-msgstr "Žvalgymas"
-
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
 #, fuzzy
 msgid  "Acting on a record"
 msgstr "Reakcija į įrašą"
-
-#: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
-#, fuzzy
-msgid  "Filtering / Sorting"
-msgstr "Filtravimas ir rikiavimas"
-
-#: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
-#, fuzzy
-msgid  "Horizontal scroll bar"
-msgstr "Horizontalioji slankjuostė"
-
-#: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
-#, fuzzy
-msgid  "Vertical scroll bar"
-msgstr "Vertikalioji slankjuostė"
-
-#: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
-#, fuzzy
-msgid  "Word break"
-msgstr "Žodžių laužymas"
-
-#: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
-#, fuzzy
-msgid  "Multiline input"
-msgstr "Daugelio eilučių įvestis"
-
-#: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
-#, fuzzy
-msgid  "Multiselection"
-msgstr "Sudėtinė atranka"
-
-#: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Pavadinimas"
 
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
 #, fuzzy
@@ -1044,113 +536,24 @@ msgid  "Tab order"
 msgstr "Tabuliavimo eilė"
 
 #: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
+#, fuzzy
 msgid  "Mouse wheel scroll"
 msgstr ""
-
-#: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
-#, fuzzy
-msgid  "Filter"
-msgstr "Filtras"
-
-#: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
-#, fuzzy
-msgid  "Sort"
-msgstr "Rikiavimas"
-
-#: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
-#, fuzzy
-msgid  "Record marker"
-msgstr "Įrašo žymeklis"
-
-#: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
-#, fuzzy
-msgid  "Filter proposal"
-msgstr "Filtro pasiūla"
 
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
 #, fuzzy
 msgid  "Navigation bar"
 msgstr "Žvalgymo juosta"
 
-#: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
-#, fuzzy
-msgid  "Cycle"
-msgstr "Ciklas"
-
 #: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
 #, fuzzy
 msgid  "Tabstop"
 msgstr "Tab. vieta"
 
-#: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
-#, fuzzy
-msgid  "Data field"
-msgstr "Duomenų laukas"
-
-#: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
-#, fuzzy
-msgid  "Dropdown"
-msgstr "Išskleidžiamas"
-
-#: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Bound field"
-msgstr "Susietasis laukas"
-
-#: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
-#, fuzzy
-msgid  "List content"
-msgstr "Sąrašo turinys"
-
-#: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
-#, fuzzy
-msgid  "Type of list contents"
-msgstr "Sąrašo turinio tipas"
-
-#: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
-#, fuzzy
-msgid  "Content"
-msgstr "Turinys"
-
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
 #, fuzzy
 msgid  "Content type"
 msgstr "Turinio tipas"
-
-#: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
-#, fuzzy
-msgid  "Allow additions"
-msgstr "Leisti papildyti"
-
-#: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
-#, fuzzy
-msgid  "Allow deletions"
-msgstr "Leisti šalinti"
-
-#: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
-#, fuzzy
-msgid  "Allow modifications"
-msgstr "Leisti keisti"
-
-#: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
-#, fuzzy
-msgid  "Add data only"
-msgstr "Duomenis tik pridėti"
-
-#: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
-#, fuzzy
-msgid  "Data source"
-msgstr "Duomenų šaltinis"
-
-#: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
-#, fuzzy
-msgid  "Link master fields"
-msgstr "Pagrindinių laukų susiejimas"
-
-#: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
-#, fuzzy
-msgid  "Link slave fields"
-msgstr "Pagalbinių laukų susiejimas"
 
 #: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
 #, fuzzy
@@ -1162,16 +565,6 @@ msgstr "Mažiausia reikšmė"
 msgid  "Value max."
 msgstr "Didžiausia reikšmė"
 
-#: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
-#, fuzzy
-msgid  "Incr./decrement value"
-msgstr "Didinimo (mažinimo) reikšmė"
-
-#: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
-#, fuzzy
-msgid  "Currency symbol"
-msgstr "Valiutos simbolis"
-
 #: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
 #, fuzzy
 msgid  "Date min."
@@ -1181,16 +574,6 @@ msgstr "Mažiausia data"
 #, fuzzy
 msgid  "Date max."
 msgstr "Didžiausia data"
-
-#: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
-#, fuzzy
-msgid  "Date format"
-msgstr "Datos formatas"
-
-#: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
-#, fuzzy
-msgid  "Selection"
-msgstr "Atranka"
 
 #: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
 #, fuzzy
@@ -1202,26 +585,6 @@ msgstr "Mažiausias laikas"
 msgid  "Time max."
 msgstr "Didžiausias laikas"
 
-#: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
-#, fuzzy
-msgid  "Time format"
-msgstr "Laiko formatas"
-
-#: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
-#, fuzzy
-msgid  "Prefix symbol"
-msgstr "Simbolis priekyje"
-
-#: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
-#, fuzzy
-msgid  "Value"
-msgstr "Reikšmė"
-
-#: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
-#, fuzzy
-msgid  "Formatting"
-msgstr "Formatas"
-
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
 #, fuzzy
 msgid  "Class ID"
@@ -1232,55 +595,10 @@ msgstr "Klasės identifikatorius"
 msgid  "Height"
 msgstr "Aukštis"
 
-#: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
-#, fuzzy
-msgid  "Width"
-msgstr "Plotis"
-
-#: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
-#, fuzzy
-msgid  "List index"
-msgstr "Sąrašo rodyklė"
-
 #: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
 #, fuzzy
 msgid  "Row height"
 msgstr "Eilutės aukštis"
-
-#: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
-#, fuzzy
-msgid  "Fill color"
-msgstr "Užpildymo spalva"
-
-#: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
-#, fuzzy
-msgid  "Line color"
-msgstr "Linijos spalva"
-
-#: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
-#, fuzzy
-msgid  "Reference value (on)"
-msgstr "Nuorodos reikšmė (įjungta)"
-
-#: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
-#, fuzzy
-msgid  "Reference value (off)"
-msgstr "Nuorodos reikšmė (išjungta)"
-
-#: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
-#, fuzzy
-msgid  "List entries"
-msgstr "Sąrašo įrašai"
-
-#: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
-#, fuzzy
-msgid  "Action"
-msgstr "Veiksmas"
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
-#, fuzzy
-msgid  "Type of submission"
-msgstr "Pateikimo tipas"
 
 #: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
 #, fuzzy
@@ -1291,26 +609,6 @@ msgstr "Numatytoji būsena"
 #, fuzzy
 msgid  "Submission encoding"
 msgstr "Pateikimo kodavimas"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
-#, fuzzy
-msgid  "Default value"
-msgstr "Numatytoji reikšmė"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
-#, fuzzy
-msgid  "Default text"
-msgstr "Numatytasis tekstas"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
-#, fuzzy
-msgid  "Default date"
-msgstr "Numatytoji data"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
-#, fuzzy
-msgid  "Default time"
-msgstr "Numatytasis laikas"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
 #, fuzzy
@@ -1361,11 +659,6 @@ msgstr "Lentelių laukai"
 #, fuzzy
 msgid  "Left"
 msgstr "Kairinė"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
-#, fuzzy
-msgid  "Center"
-msgstr "Centrinė"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
 #, fuzzy
@@ -1603,38 +896,9 @@ msgid  "Fill parameters"
 msgstr "Parametrų priskyrimas"
 
 #: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
+#, fuzzy
 msgid  "Execute action"
 msgstr ""
-
-#: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
-#, fuzzy
-msgid  "After updating"
-msgstr "Atnaujinus"
-
-#: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
-#, fuzzy
-msgid  "Before updating"
-msgstr "Prieš atnaujinant"
-
-#: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
-#, fuzzy
-msgid  "Before record action"
-msgstr "Prieš įrašant"
-
-#: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
-#, fuzzy
-msgid  "After record action"
-msgstr "Įrašius"
-
-#: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
-#, fuzzy
-msgid  "Confirm deletion"
-msgstr "Šalinimo patvirtinimas"
-
-#: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
-#, fuzzy
-msgid  "Error occurred"
-msgstr "Klaida"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
 #, fuzzy
@@ -1651,16 +915,6 @@ msgstr "Valdiklis praranda židinį"
 msgid  "Item status changed"
 msgstr "Pakeista būsena"
 
-#: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
-#, fuzzy
-msgid  "Key pressed"
-msgstr "Klavišas paspaustas"
-
-#: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
-#, fuzzy
-msgid  "Key released"
-msgstr "Klavišas atleistas"
-
 #: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
 #, fuzzy
 msgid  "When loading"
@@ -1676,57 +930,13 @@ msgstr "Prieš įkeliant iš naujo"
 msgid  "When reloading"
 msgstr "Įkeliant iš naujo"
 
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
-#, fuzzy
-msgid  "Mouse moved while key pressed"
-msgstr "Tempiama pele, kai paspaustas klavišas"
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
-#, fuzzy
-msgid  "Mouse inside"
-msgstr "Pelės žymeklis viduje"
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
-#, fuzzy
-msgid  "Mouse outside"
-msgstr "Pelės žymeklis išorėje"
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
-#, fuzzy
-msgid  "Mouse moved"
-msgstr "Pelės žymeklio judėjimas"
-
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
 #, fuzzy
 msgid  "Mouse button pressed"
 msgstr "Pelės klavišas paspaustas"
 
-#: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
-#, fuzzy
-msgid  "Mouse button released"
-msgstr "Pelės klavišas atleistas"
-
-#: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
-#, fuzzy
-msgid  "Before record change"
-msgstr "Prieš pereinant prie kito įrašo"
-
-#: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
-#, fuzzy
-msgid  "After record change"
-msgstr "Perėjus prie kito įrašo"
-
-#: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
-#, fuzzy
-msgid  "After resetting"
-msgstr "Atstačius"
-
-#: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
-#, fuzzy
-msgid  "Prior to reset"
-msgstr "Prieš atstatant"
-
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
+#, fuzzy
 msgid  "Approve action"
 msgstr ""
 
@@ -1734,11 +944,6 @@ msgstr ""
 #, fuzzy
 msgid  "Before submitting"
 msgstr "Prieš pateikiant"
-
-#: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
-#, fuzzy
-msgid  "Text modified"
-msgstr "Pakeistas tekstas"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
 #, fuzzy
@@ -1750,45 +955,10 @@ msgstr "Prieš iškeliant"
 msgid  "When unloading"
 msgstr "Iškeliant"
 
-#: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
-#, fuzzy
-msgid  "Changed"
-msgstr "Pakeistas"
-
-#: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
-#, fuzzy
-msgid  "Events"
-msgstr "Įvykiai"
-
 #: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
 #, fuzzy
 msgid  "Analyze SQL command"
 msgstr "Analizuoti SQL komandą"
-
-#: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
-#, fuzzy
-msgid  "PositionX"
-msgstr "Padėtis X atžvilgiu"
-
-#: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
-#, fuzzy
-msgid  "PositionY"
-msgstr "Padėtis Y atžvilgiu"
-
-#: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Title"
-msgstr "Antraštė"
-
-#: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
-#, fuzzy
-msgid  "Page (step)"
-msgstr "Puslapis (žingsnis)"
-
-#: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
-#, fuzzy
-msgid  "Progress value"
-msgstr "Eigos intervalas"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
 #, fuzzy
@@ -1800,11 +970,6 @@ msgstr "Mažiausias eigos intervalas"
 msgid  "Progress value max."
 msgstr "Didžiausias eigos intervalas"
 
-#: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
-#, fuzzy
-msgid  "Scroll value"
-msgstr "Slinkties intervalas"
-
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
 #, fuzzy
 msgid  "Scroll value max."
@@ -1814,26 +979,6 @@ msgstr "Didžiausias slinkties intervalas"
 #, fuzzy
 msgid  "Scroll value min."
 msgstr "Mažiausias slinkties intervalas"
-
-#: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
-#, fuzzy
-msgid  "Default scroll value"
-msgstr "Numatytasis slinkties intervalas"
-
-#: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
-#, fuzzy
-msgid  "Small change"
-msgstr "Mažas pokytis"
-
-#: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
-#, fuzzy
-msgid  "Large change"
-msgstr "Didelis pokytis"
-
-#: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
-#, fuzzy
-msgid  "Delay"
-msgstr "Gaištis"
 
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
 #, fuzzy
@@ -1845,11 +990,6 @@ msgstr "Kartoti"
 msgid  "Visible size"
 msgstr "Matomas dydis"
 
-#: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
-#, fuzzy
-msgid  "Orientation"
-msgstr "Orientacija"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
 #, fuzzy
 msgid  "Horizontal"
@@ -1860,40 +1000,10 @@ msgstr "Horizontaliai"
 msgid  "Vertical"
 msgstr "Vertikaliai"
 
-#: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-#, fuzzy
-msgid  "While adjusting"
-msgstr "Pritaikant"
-
-#: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
-#, fuzzy
-msgid  "Date"
-msgstr "Data"
-
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
 #, fuzzy
 msgid  "State"
 msgstr "Būsena"
-
-#: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
-#, fuzzy
-msgid  "Time"
-msgstr "Laikas"
-
-#: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
-#, fuzzy
-msgid  "Scale"
-msgstr "Mastelis"
-
-#: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
-#, fuzzy
-msgid  "Button type"
-msgstr "Mygtuko tipas"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "Numatyta"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
 #, fuzzy
@@ -1905,11 +1015,6 @@ msgstr "Gerai"
 msgid  "Cancel"
 msgstr "Atsisakyti"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "Žinynas"
-
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
 #, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
@@ -1919,11 +1024,6 @@ msgstr "Ryšio su duomenų šaltiniu „$name$“ nepavyko užmegzti."
 #, fuzzy
 msgid  "Linked cell"
 msgstr "Susietas langelis"
-
-#: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
-#, fuzzy
-msgid  "Source cell range"
-msgstr "Source cell range"
 
 #: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
 #, fuzzy
@@ -1940,85 +1040,20 @@ msgstr "Pažymėtas įrašas"
 msgid  "Position of the selected entry"
 msgstr "Pažymėto įrašo vieta"
 
-#: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
-#, fuzzy
-msgid  "Scrollbars"
-msgstr "Slankjuostės"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
-#, fuzzy
-msgid  "Single-line"
-msgstr "Viena eilutė"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
-#, fuzzy
-msgid  "Multi-line"
-msgstr "Kelios eilutės"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
-#, fuzzy
-msgid  "Multi-line with formatting"
-msgstr "Kelios formatuotos eilutės"
-
-#: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
-#, fuzzy
-msgid  "Symbol color"
-msgstr "Simbolių spalva"
-
-#: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
-#, fuzzy
-msgid  "Text lines end with"
-msgstr "Eilučių pabaigos ženklas"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
-#, fuzzy
-msgid  "LF (Unix)"
-msgstr "LF (Unix)"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
-#, fuzzy
-msgid  "CR+LF (Windows)"
-msgstr "CR+LF (Windows)"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
-#, fuzzy
-msgid  "Both"
-msgstr "Abu"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
 #, fuzzy
 msgid  "SQL command"
 msgstr "SQL komanda"
-
-#: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
-#, fuzzy
-msgid  "Toggle"
-msgstr "Perjungti"
 
 #: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
 #, fuzzy
 msgid  "Take Focus on Click"
 msgstr "Spustelėjus nustatyti židinį"
 
-#: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
-#, fuzzy
-msgid  "Hide selection"
-msgstr "Slėpti atranką"
-
-#: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
-#, fuzzy
-msgid  "Style"
-msgstr "Stilius"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
 #, fuzzy
 msgid  "3D"
 msgstr "Trimatė"
-
-#: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
-#, fuzzy
-msgid  "Border color"
-msgstr "Kraštinių spalva"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
 #, fuzzy
@@ -2055,11 +1090,6 @@ msgstr "Dešinėje apačioje"
 msgid  "Above left"
 msgstr "Viršuje kairėje"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
-#, fuzzy
-msgid  "Above centered"
-msgstr "Viršuje centruota"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
 #, fuzzy
 msgid  "Above right"
@@ -2070,30 +1100,10 @@ msgstr "Viršuje dešinėje"
 msgid  "Below left"
 msgstr "Apačioje kairėje"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
-#, fuzzy
-msgid  "Below centered"
-msgstr "Apačioje centruota"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
 #, fuzzy
 msgid  "Below right"
 msgstr "Apačioje dešinėje"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
-#, fuzzy
-msgid  "Centered"
-msgstr "Centruota"
-
-#: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
-#, fuzzy
-msgid  "Wrap text automatically"
-msgstr "Automatinis teksto laužymas"
-
-#: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
-#, fuzzy
-msgid  "Text type"
-msgstr "Teksto tipas"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
 #, fuzzy
@@ -2110,85 +1120,10 @@ msgstr "Rodyti"
 msgid  "XML data model"
 msgstr "XML duomenų modelis"
 
-#: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
-#, fuzzy
-msgid  "Binding expression"
-msgstr "Sąsajos išraiška"
-
-#: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
-#, fuzzy
-msgid  "Required"
-msgstr "Reikalinga"
-
-#: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
-#, fuzzy
-msgid  "List entry source"
-msgstr "Sąrašo įrašo šaltinis"
-
-#: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
-#, fuzzy
-msgid  "Relevant"
-msgstr "Atitinkamas"
-
-#: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
-#, fuzzy
-msgid  "Constraint"
-msgstr "Ribojamas"
-
-#: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
-#, fuzzy
-msgid  "Calculation"
-msgstr "Skaičiavimas"
-
 #: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
 #, fuzzy
 msgid  "Data type"
 msgstr "Duomenų tipas"
-
-#: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
-#, fuzzy
-msgid  "Whitespaces"
-msgstr "Matomi tarpai"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
-#, fuzzy
-msgid  "Preserve"
-msgstr "Išlaikyti"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
-#, fuzzy
-msgid  "Replace"
-msgstr "Pakeisti"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
-#, fuzzy
-msgid  "Collapse"
-msgstr "Suskleisti"
-
-#: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
-#, fuzzy
-msgid  "Pattern"
-msgstr "Raštas"
-
-#: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
-#, fuzzy
-msgid  "Length"
-msgstr "Ilgis"
-
-#: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
-#, fuzzy
-msgid  "Length (at least)"
-msgstr "Ilgis (mažiausias)"
-
-#: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
-#, fuzzy
-msgid  "Length (at most)"
-msgstr "Ilgis (didžiausias)"
-
-#: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
-#, fuzzy
-msgid  "Digits (total)"
-msgstr "Skaitmenys (iš viso)"
 
 #: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
 #, fuzzy
@@ -2214,16 +1149,6 @@ msgstr "Minimumas (imtinai)"
 #, fuzzy
 msgid  "Min. (exclusive)"
 msgstr "Minimumas"
-
-#: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
-#, fuzzy
-msgid  "Submission"
-msgstr "Pateikimas"
-
-#: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Binding"
-msgstr "Sąsaja"
 
 #: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
 #, fuzzy
@@ -2301,22 +1226,27 @@ msgid  "Use superordinate object settings"
 msgstr "Naudoti ankstesnio objekto nuostatas"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
+#, fuzzy
 msgid  "Never"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
+#, fuzzy
 msgid  "When focused"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
+#, fuzzy
 msgid  "Always"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Anchor"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "To Paragraph"
 msgstr ""
 
@@ -2331,6 +1261,7 @@ msgid  "To Page"
 msgstr ""
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "To Frame"
 msgstr ""
 
@@ -2340,29 +1271,29 @@ msgid  "To Character"
 msgstr "Rašmenys"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "To Cell"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
+#, fuzzy
 msgid  "Regular"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
+#, fuzzy
 msgid  "Bold Italic"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
+#, fuzzy
 msgid  "Italic"
 msgstr ""
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
+#, fuzzy
 msgid  "Bold"
 msgstr ""
-
-#: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
-#, fuzzy
-msgid  "(Default)"
-msgstr "Numatyta"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
 #, fuzzy
@@ -2379,121 +1310,6 @@ msgstr "Įveskite naujojo duomenų tipo pavadinimą:"
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
 msgstr "Ar pašalinti duomenų tipą „#type#“ iš modelio?\nPastaba: tai turės įtakos visiems valdikliams, susietiems su šiuo duomenų tipu."
 
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Button"
-msgstr "Mygtukas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Option Button"
-msgstr "Akutė"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
-#, fuzzy
-msgid  "Check Box"
-msgstr "Žymimasis langelis"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-#, fuzzy
-msgid  "Label Field"
-msgstr "Žymės laukas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
-#, fuzzy
-msgid  "Group Box"
-msgstr "Valdiklių grupė"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
-#, fuzzy
-msgid  "Text Box"
-msgstr "Teksto laukelis"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-#, fuzzy
-msgid  "Formatted Field"
-msgstr "Formatuotas laukas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
-#, fuzzy
-msgid  "List Box"
-msgstr "Sąrašo laukas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
-#, fuzzy
-msgid  "Combo Box"
-msgstr "Pasirinktinio įvedimo laukas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Image Button"
-msgstr "Paveikslo mygtukas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
-#, fuzzy
-msgid  "Hidden Control"
-msgstr "Paslėptas valdiklis"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
-#, fuzzy
-msgid  "Control (unknown type)"
-msgstr "Valdiklis (nežinomas tipas)"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-#, fuzzy
-msgid  "Image Control"
-msgstr "Paveikslo valdiklis"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
-#, fuzzy
-msgid  "File Selection"
-msgstr "Failo parinkimas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
-#, fuzzy
-msgid  "Date Field"
-msgstr "Datos laukas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
-#, fuzzy
-msgid  "Time Field"
-msgstr "Laiko laukas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
-#, fuzzy
-msgid  "Numeric Field"
-msgstr "Skaitinis laukas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
-#, fuzzy
-msgid  "Currency Field"
-msgstr "Valiutos laukas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
-#, fuzzy
-msgid  "Pattern Field"
-msgstr "Šablono laukas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
-#, fuzzy
-msgid  "Table Control "
-msgstr "Lentelės valdiklis "
-
-#: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "Numatyta"
-
-#: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Bendrosios"
-
-#: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
-#, fuzzy
-msgid  "Data"
-msgstr "Duomenys"
-
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
 #, fuzzy
 msgid  "No"
@@ -2504,110 +1320,30 @@ msgstr "Ne"
 msgid  "Yes"
 msgstr "Taip"
 
-#: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "Žinynas"
-
 #: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
 #, fuzzy
 msgid  "<Embedded-Image>"
 msgstr "<Įterptasis_paveikslas>"
-
-#: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Tekstas"
 
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
 msgstr "Čia išvardyti valdikliai, kuriuos galima parinkti valdiklio „$control_class$“ (vardas: „$control_name$“) žymės lauku."
 
-#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~No assignment"
-msgstr "~Nepriskirti žymės"
-
-#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "Label Field Selection"
-msgstr "Žymės lauko parinkimas"
-
-#: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
-#, fuzzy
-msgid  "Forms"
-msgstr "Formos"
-
 #: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Tab Order"
 msgstr "Tabuliavimo eilė"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Controls"
-msgstr "Valdikliai"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Move Up"
-msgstr "Pakelti"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Move Down"
-msgstr "Nuleisti"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Automatic Sort"
-msgstr "Rikiuojama automatiškai"
 
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Set"
 msgstr "Nustatyti"
 
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
-#, fuzzy
-msgid  "Linear ascending"
-msgstr "Tiesinis didėjimas"
-
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
-#, fuzzy
-msgid  "Linear descending"
-msgstr "Tiesinis mažėjimas"
-
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
-#, fuzzy
-msgid  "Original values"
-msgstr "Pradinės reikšmės"
-
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
-#, fuzzy
-msgid  "Exponential increasing"
-msgstr "Eksponentinis augimas"
-
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "About\n Dev~ice"
-msgstr "Apie\n įreng~inį"
-
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Create\nPreview"
 msgstr "Kurti\n peržiūrą"
-
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Preview"
-msgstr "Peržiūra"
-
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scan area"
-msgstr "Nuskaityti sritį"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2644,11 +1380,6 @@ msgstr "Skiriamoji geba [~DPI]"
 msgid  "Show advanced options"
 msgstr "Rodyti papildomas parinktis"
 
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Options:"
-msgstr "Parinktys:"
-
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Vector element"
@@ -2658,11 +1389,6 @@ msgstr "Vektoriaus elementas"
 #, fuzzy
 msgid  "Set"
 msgstr "Nustatyti"
-
-#: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
-#, fuzzy
-msgid  "Scanner"
-msgstr "Skaitytuvas"
 
 #: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
 #, fuzzy
@@ -2785,14 +1511,17 @@ msgid  "A file with that name already exists! Do you want to overwrite the exist
 msgstr "Failas tokiu vardu jau yra. Ar perrašyti esamą failą?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.STRING.TEXT
+#, fuzzy
 msgid  "Reload File"
 msgstr ""
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.STRING.TEXT
+#, fuzzy
 msgid  "Continue"
 msgstr ""
 

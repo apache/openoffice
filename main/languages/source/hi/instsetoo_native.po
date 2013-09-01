@@ -31,81 +31,17 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: Property.ulf#OOO_ARPCOMMENTSTEMPLATE
-msgid  "Comment in the Add-Remove-Programs Applet"
-msgstr "जोड़ो-हटाओ प्रोग्राम्स ऐप्लेट में टिप्पणी"
-
-#: Property.ulf#OOO_ARPCONTACTTEMPLATE
-msgid  "Department for technical support"
-msgstr "तकनीकी समर्थन के लिए विभाग"
-
 #: Property.ulf#OOO_ARPHELPLINKTEMPLATE
 msgid  "http://www.openoffice.org"
 msgstr "http://www.openoffice.org"
-
-#: Property.ulf#OOO_ARPHELPTELEPHONETEMPLATE
-msgid  "x-xxx-xxx-xxx"
-msgstr "x-xxx-xxx-xxx"
-
-#: Property.ulf#OOO_STR_NEW_DISPLAY_NAME
-msgid  "~New"
-msgstr "नया (~N)"
-
-#: Property.ulf#OOO_STR_EDIT
-msgid  "~Edit"
-msgstr "संपादन करें(~E)"
-
-#: Property.ulf#OOO_STR_MS_WORD_DOCUMENT
-msgid  "Microsoft Word Document"
-msgstr ""
-
-#: Property.ulf#OOO_STR_MS_WORD_TEMPLATE
-msgid  "Microsoft Word Template"
-msgstr ""
 
 #: Property.ulf#OOO_STR_MS_EXCEL_WORKSHEET
 msgid  "Microsoft Excel Worksheet"
 msgstr ""
 
-#: Property.ulf#OOO_STR_MS_EXCEL_TEMPLATE
-msgid  "Microsoft Excel Template"
-msgstr ""
-
-#: Property.ulf#OOO_STR_MS_POWERPOINT_PRESENTATION
-msgid  "Microsoft PowerPoint Presentation"
-msgstr ""
-
-#: Property.ulf#OOO_STR_MS_POWERPOINT_TEMPLATE
-msgid  "Microsoft PowerPoint Template"
-msgstr ""
-
-#: Property.ulf#OOO_STR_MS_POWERPOINT_SHOW
-msgid  "Microsoft PowerPoint Show"
-msgstr ""
-
-#: Property.ulf#OOO_STR_INSTALLATION_WIZARD
-msgid  "Installation Wizard"
-msgstr "संस्थापन सहायक"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_1
-msgid  "{&MSSansBold8}&Modify"
-msgstr "{&MSSansBold8} बदलें (&M)"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_2
-msgid  "{&MSSansBold8}Re&pair"
-msgstr "{&MSSansBold8} मरम्मत करें (&p)"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_3
-msgid  "{&MSSansBold8}&Remove"
-msgstr "{&MSSansBold8} हटाएं (&R)"
-
 #: RadioBut.ulf#OOO_RADIOBUTTON_4
 msgid  "{&MSSansBold8}&Typical"
 msgstr ""
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_5
-msgid  "{&MSSansBold8}Cu&stom"
-msgstr "{&MSSansBold8}मनपसंद (&s)"
 
 #: RadioBut.ulf#OOO_RADIOBUTTON_6
 msgid  "I &do not accept the terms in the license agreement"
@@ -115,53 +51,9 @@ msgstr "मैं अनुबंध मसौदा के शर्त स्�
 msgid  "I &accept the terms in the license agreement"
 msgstr "मैं अनुबंध मसौदा के शर्त स्वीकार करता हूं (&a)"
 
-#: RadioBut.ulf#OOO_RADIOBUTTON_8
-msgid  "&Anyone who uses this computer (all users)"
-msgstr "कोई भी जो इस कंप्यूटर का प्रयोग करेगा (सभी उपयोक्ता) (&A)"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_9
-msgid  "Only for &me ([USERNAME])"
-msgstr "सिर्फ मेरे लिए ([USERNAME]) (&m)"
-
-#: Error.ulf#OOO_ERROR_1
-msgid  "{{Fatal error: }}"
-msgstr "{{गंभीर त्रुटि: }}"
-
-#: Error.ulf#OOO_ERROR_2
-msgid  "Error [1]."
-msgstr "त्रुटि [1]."
-
-#: Error.ulf#OOO_ERROR_3
-msgid  "Warning [1]."
-msgstr "चेतावनी [1]."
-
-#: Error.ulf#OOO_ERROR_4
-msgid  "Info [1]."
-msgstr "सूचना [1]."
-
-#: Error.ulf#OOO_ERROR_5
-msgid  "Internal Error [1]. [2]{, [3]}{, [4]}"
-msgstr "भीतरी त्रुटि [1]. [2]{, [3]}{, [4]}"
-
-#: Error.ulf#OOO_ERROR_6
-msgid  "{{Disk full: }}"
-msgstr "{{डिस्क पूर्ण: }}"
-
 #: Error.ulf#OOO_ERROR_7
 msgid  "Action [Time]: [1]. [2]"
 msgstr "क्रिया [समय]: [1]. [2]"
-
-#: Error.ulf#OOO_ERROR_8
-msgid  "[ProductName]"
-msgstr "[उत्पादनाम]"
-
-#: Error.ulf#OOO_ERROR_9
-msgid  "{[2]}{, [3]}{, [4]}"
-msgstr ""
-
-#: Error.ulf#OOO_ERROR_10
-msgid  "Message type: [1], Argument: [2]"
-msgstr "संदेश प्रकार: [1], तर्क: [2]"
 
 #: Error.ulf#OOO_ERROR_11
 msgid  "=== Logging started: [Date]  [Time] ==="
@@ -175,41 +67,9 @@ msgstr "=== लॉगिंग रूका हुआ: [तिथि]  [सम�
 msgid  "Action start [Time]: [1]."
 msgstr "क्रिया आरंभ [समय]: [1]."
 
-#: Error.ulf#OOO_ERROR_14
-msgid  "Action ended [Time]: [1]. Return value [2]."
-msgstr "क्रिया समाप्त [समय]: [1]. वापसी मान [2]."
-
-#: Error.ulf#OOO_ERROR_15
-msgid  "Time remaining: {[1] minutes }{[2] seconds}"
-msgstr "शेष समय: {[1] मिनट }{[2] सेकेंड}"
-
 #: Error.ulf#OOO_ERROR_16
 msgid  "Out of memory. Shut down other applications before retrying."
 msgstr "स्मृति के अधिक. फिर कोशिश करने के पहले अन्य अऩुप्रयोग बंद करें."
-
-#: Error.ulf#OOO_ERROR_17
-msgid  "Installer is no longer responding."
-msgstr "संस्थापक अनुक्रिया नहीं देता है."
-
-#: Error.ulf#OOO_ERROR_18
-msgid  "Installer terminated prematurely."
-msgstr "संस्थापक पहले खत्म हो गया."
-
-#: Error.ulf#OOO_ERROR_19
-msgid  "Please wait while Windows configures [ProductName]"
-msgstr "कृपया प्रतीक्षा करें जब Windows [ProductName] विन्यस्त करता है."
-
-#: Error.ulf#OOO_ERROR_20
-msgid  "Gathering required information..."
-msgstr "जरूरी सूचना पा रहा है..."
-
-#: Error.ulf#OOO_ERROR_21
-msgid  "Removing older versions of this application"
-msgstr "यह अनुप्रयोग के पुराने संस्करण हटा रहा है"
-
-#: Error.ulf#OOO_ERROR_22
-msgid  "Preparing to remove older versions of this application"
-msgstr "यह अनुप्रयोग के पुराने संस्करण को हटाने की तैयारी कर रहा है"
 
 #: Error.ulf#OOO_ERROR_23
 msgid  "{[ProductName] }Setup completed successfully."
@@ -226,10 +86,6 @@ msgstr "फ़ाइल से पढ़ने में त्रुटि: [2]
 #: Error.ulf#OOO_ERROR_26
 msgid  "Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location."
 msgstr "फ़ाइल [3] नहीं बना सकता है. इस नाम के साथ निर्देशिका पहले से मौजूद है.  संस्थापन को रद्द करें और भिन्न स्थान में संस्थापन की कोशिश करें."
-
-#: Error.ulf#OOO_ERROR_27
-msgid  "Please insert the disk: [2]"
-msgstr "कृपया एक डिस्क डालें: [2]"
 
 #: Error.ulf#OOO_ERROR_28
 msgid  "The installer has insufficient privileges to access this directory: [2].  The installation cannot continue.  Log on as an administrator or contact your system administrator."
@@ -275,37 +131,9 @@ msgstr "निर्देशिका [2] नहीं बना सका.ए�
 msgid  "The volume [2] is currently unavailable.  Please select another."
 msgstr "वॉल्यूम [2] अभी मौजूद नहीं है.  कृपया दूसरे को चुनें."
 
-#: Error.ulf#OOO_ERROR_39
-msgid  "The specified path [2] is unavailable."
-msgstr "निर्दिष्ट पथ [2] अनुपलब्ध है."
-
-#: Error.ulf#OOO_ERROR_40
-msgid  "Unable to write to the specified folder [2]."
-msgstr "निर्दिष्ट फ़ोल्डर [2] में लिखने में असमर्थ."
-
-#: Error.ulf#OOO_ERROR_41
-msgid  "A network error occurred while attempting to read from the file [2]"
-msgstr "एक संजाल त्रुटि हुई जब फ़ाइल [2] से पढ़ने की कोशिश हुई."
-
-#: Error.ulf#OOO_ERROR_42
-msgid  "An error occurred while attempting to create the directory [2]"
-msgstr "एक त्रुटि हुई जब निर्देशिका [2] बनाने की कोशिश हुई."
-
 #: Error.ulf#OOO_ERROR_43
 msgid  "A network error occurred while attempting to create the directory [2]"
 msgstr "एक संजाल की त्रुटि हुई जब निर्देशिका [2] बनाने की कोशिश की गई."
-
-#: Error.ulf#OOO_ERROR_44
-msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr "एक संजाल त्रुटि हुई जब स्रोत की फ़ाइल कैबिनेट [2]  को खोलने की कोशिश हुई."
-
-#: Error.ulf#OOO_ERROR_45
-msgid  "The specified path is too long [2]."
-msgstr "निर्दिष्ट पथ बहुत लंबा है [2]."
-
-#: Error.ulf#OOO_ERROR_46
-msgid  "The Installer has insufficient privileges to modify the file [2]."
-msgstr "संस्थापक के अपर्याप्त अधिकार हैं फ़ाइल [2]  को रूपांतरित करने के लिए."
 
 #: Error.ulf#OOO_ERROR_47
 msgid  "A portion of the path [2] exceeds the length allowed by the system."
@@ -319,45 +147,9 @@ msgstr "पथ [2] में शब्द शामिल है जो फ़�
 msgid  "The path [2] contains an invalid character."
 msgstr "पथ [2] में एक अवैध वर्ण है."
 
-#: Error.ulf#OOO_ERROR_50
-msgid  "[2] is not a valid short file name."
-msgstr ""
-
-#: Error.ulf#OOO_ERROR_51
-msgid  "Error getting file security: [3] GetLastError: [2]"
-msgstr "फ़ाइल सुरक्षा पाने में त्रुटि: [3] अंतिम त्रुटि पाएं: [2]"
-
-#: Error.ulf#OOO_ERROR_52
-msgid  "Invalid Drive: [2]"
-msgstr "अवैध ड्राइव: [2]"
-
-#: Error.ulf#OOO_ERROR_53
-msgid  "Error applying patch to file [2].  It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor.  {{System Error: [3]}}"
-msgstr "फ़ाइल में पैच लागू करने में त्रुटि [2].  इसको दूसरे साधन से अद्यतन किया गया, और इस पैच से रूपांतरित नहीं किया गया.  अधिक सूचना के लिए अपने पैच विक्रेता से संपर्क करें. {{तंत्र की त्रुटि: [3]}}"
-
-#: Error.ulf#OOO_ERROR_54
-msgid  "Could not create key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "कुंजी नहीं बना सका [2]. {{ तंत्र की त्रुटि [3].}}  जाँचे कि आपके पास कुंजी में पर्याप्त अभिगम है, अथवा अपने समर्थन कार्मिक को संपर्क करें."
-
-#: Error.ulf#OOO_ERROR_55
-msgid  "Could not open key: [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "कुंजी नहीं खोल सका: [2]. {{ तंत्र की त्रुटि [3].}}  जाँचे कि आपके पास कुंजी में पर्याप्त अभिगम है, अथवा अपने समर्थन कार्मिक को संपर्क करें."
-
-#: Error.ulf#OOO_ERROR_56
-msgid  "Could not delete value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "[2] मान को [3] कुंजी से मिटा नहीं सका. {{ तंत्र की त्रुटि [4].}}  जाँचे कि आपके पास कुंजी में पर्याप्त अभिगम है, अथवा अपने समर्थन कार्मिक को संपर्क करें."
-
-#: Error.ulf#OOO_ERROR_57
-msgid  "Could not delete key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "[2] कुंजी को मिटा नहीं सका. {{ तंत्र की त्रुटि [3].}}  जाँचे कि आपके पास कुंजी में पर्याप्त अभिगम है, अथवा अपने समर्थन कार्मिक को संपर्क करें."
-
 #: Error.ulf#OOO_ERROR_58
 msgid  "Could not read value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
 msgstr "[2] मान के [3] कुंजी से पढ नहीं सका. {{ तंत्र की त्रुटि [4].}}  जाँचे कि आपके पास कुंजी में पर्याप्त अभिगम है, अथवा अपने समर्थन कार्मिक को संपर्क करें."
-
-#: Error.ulf#OOO_ERROR_59
-msgid  "Could not write value [2] to key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "[2] मान को [3] कुंजी में लिख नहीं सका. {{ तंत्र की त्रुटि [4].}}  जाँचे कि आपके पास कुंजी में पर्याप्त अभिगम है, अथवा अपने समर्थन कार्मिक को संपर्क करें."
 
 #: Error.ulf#OOO_ERROR_60
 msgid  "Could not get value names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
@@ -375,61 +167,9 @@ msgstr "कुंजी [2] के लिए सुरक्षा सूचन�
 msgid  "Could not increase the available registry space. [2] KB of free registry space is required for the installation of this application."
 msgstr "मौजूदा पंजीयन स्थान को बढ़ा नहीं सका. [2] KB का मुक्त रजिस्ट्री इस अनुप्रयोग के संस्थापन के लिए जरूरी है."
 
-#: Error.ulf#OOO_ERROR_64
-msgid  "Another installation is in progress. You must complete that installation before continuing this one."
-msgstr "दूसरा संस्थापन प्रगति में है. आप जरूर पूर्ण करें संस्थापन को इसके शुरू करने के पहले."
-
-#: Error.ulf#OOO_ERROR_65
-msgid  "Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again."
-msgstr "सुरक्षित आँकड़ा पहुंचने में त्रुटि. सुनिश्चित करें कि Windows संस्थापक विन्यस्त है और फिर संस्थापन की कोशिश करें."
-
-#: Error.ulf#OOO_ERROR_66
-msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.  Your current installation will now continue."
-msgstr "उपयोक्ता [2] उत्पाद [3] के लिए संस्थापन को शुरू किया.  वह उपयोक्ता उस संस्थापन को चलाने की कोशिश करें उस उत्पाद के प्रयोग के पहले. आपका मौजूदा संस्थापन अब जारी रहेगा."
-
-#: Error.ulf#OOO_ERROR_67
-msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product."
-msgstr "उपयोक्ता [2] उत्पाद [3] के लिए संस्थापन को शुरू किया. वह उपयोक्ता उस संस्थापन को चलाने की कोशिश करें उस उत्पाद के प्रयोग के पहले."
-
-#: Error.ulf#OOO_ERROR_68
-msgid  "Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB.  Free some disk space and retry."
-msgstr "डिस्क से अधिक स्थान -- आयतन: '[2]'; जरूरी स्थान: [3] KB; मौजूदा स्थान: [4] KB.  कुछ डिस्क स्थान को मुक्त करें और फिर कोशिश करें."
-
-#: Error.ulf#OOO_ERROR_69
-msgid  "Are you sure you want to cancel?"
-msgstr "क्या आप रद्द करने के लिए निश्चित हैं?"
-
-#: Error.ulf#OOO_ERROR_70
-msgid  "The file [2][3] is being held in use {by the following process: Name: [4], ID: [5], Window Title: [6]}.  Close that application and retry."
-msgstr "फ़ाइल [2][3] प्रयोग में रखा है { निम्न प्रक्रिया के द्वारा: नाम: [4], ID: [5], विंडो शीर्षक: [6]}.  उस अनुप्रयोग को बंद करें और फिर कोशिश करें."
-
-#: Error.ulf#OOO_ERROR_71
-msgid  "The product [2] is already installed, preventing the installation of this product.  The two products are incompatible."
-msgstr "उत्पाद [2] पहले से संस्थापित है, यह उत्पादक संस्थापन को रोकेगा.  दोनों उत्पाद असंगत नहीं है."
-
-#: Error.ulf#OOO_ERROR_72
-msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
-msgstr "डिस्क से अधिक स्थान -- आयतन: [2]; जरूरी स्थान: [3] KB; मौजूद स्थान: [4] KB.  यदि रॉलबैक निष्क्रिय किया जाता है, पर्याप्त स्थान मौजूद है. छोड़ने के लिए रद्द करें, मौजूद डिस्क स्थान फिर जाँचने के लिए फिर कोशिश करें, अथवा बिना पीछे किए जारी रखने के लिए नजरअंदाज करें पर क्लिक करें."
-
-#: Error.ulf#OOO_ERROR_73
-msgid  "Could not access network location [2]."
-msgstr "संजाल स्थान [2] अभिगम नहीं कर सकेगा."
-
-#: Error.ulf#OOO_ERROR_74
-msgid  "The following applications should be closed before continuing the installation:"
-msgstr "निम्न अनुप्रयोग बंद किया जाना चाहिए संस्थापन को जारी रखने के पहले:"
-
-#: Error.ulf#OOO_ERROR_75
-msgid  "Could not find any previously installed compliant products on the machine for installing this product."
-msgstr "किसी पहले से संस्थापित सुसंगत उत्पाद संस्थापित नहीं पाया मशीन पर इस उत्पाद के संस्थापन के लिए ."
-
 #: Error.ulf#OOO_ERROR_76
 msgid  "The key [2] is not valid.  Verify that you entered the correct key."
 msgstr "कुंजी [2] वैध नहीं है.  जाँचे कि आपने सही कुंजी दाखिल किया है."
-
-#: Error.ulf#OOO_ERROR_77
-msgid  "The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later."
-msgstr "संस्थापक को अपने तंत्र को फिर आरंभ करें [2]  को विन्यास के जारी रखने के पहले.  अब हां  को क्लिक करें फिर आरंभ करने के लिए अथवा नहीं यदि आप बाद में फिर आरंभ करने के लिए सोचा है."
 
 #: Error.ulf#OOO_ERROR_78
 msgid  "You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later."
@@ -443,26 +183,6 @@ msgstr "एक संस्थापन [2] के लिए अभी स्थ
 msgid  "A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
 msgstr "इस उत्पाद के लिए एक पीछे का संस्थापन प्रगत में है. आप जरूर परिवर्तनों को वापसलें' संसथापनों को जारी करने के लिए.क्या आप उस परिवर्तनों को वापस लाना चाहते हैं?"
 
-#: Error.ulf#OOO_ERROR_81
-msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
-msgstr "कोई वैध स्रोत [2] उत्पाद के लिए नहीं पाया जा सका.  Windows संस्थापक जारी नहीं रख सकता है."
-
-#: Error.ulf#OOO_ERROR_82
-msgid  "Installation operation completed successfully."
-msgstr "संस्थापन की संक्रिया सफलतापूर्वक समाप्त हुई."
-
-#: Error.ulf#OOO_ERROR_83
-msgid  "Installation operation failed."
-msgstr "संस्थापन की संक्रिया विफल हुई."
-
-#: Error.ulf#OOO_ERROR_84
-msgid  "Product: [2] -- [3]"
-msgstr "उत्पाद: [2] -- [3]"
-
-#: Error.ulf#OOO_ERROR_85
-msgid  "You may either restore your computer to its previous state or continue the installation later. Would you like to restore?"
-msgstr "आप या तो अपने कंप्यूटर को फिर भंडारित कर सकते हैं इसके पीछे की स्थिति में अथवा संस्थापन को बाद में जारी रखने के लिए. क्या आप फिर भंडारित करना चाहते हैं?"
-
 #: Error.ulf#OOO_ERROR_86
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
 msgstr "एक त्रुटि हुई डिस्क में संस्थापन सूचना लिखते समय.  यह निश्चित करने के लिए जाँचे कि पर्याप्त डिस्क स्थान उपलब्ध है, और फिर कोशिश करें  को क्लिक करें, अथवा संस्थापन को समाप्त करने के लिए रद्द करें पर क्लिक करें."
@@ -470,10 +190,6 @@ msgstr "एक त्रुटि हुई डिस्क में संस�
 #: Error.ulf#OOO_ERROR_87
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
 msgstr "आपके कंप्यूटर को फिर भंडारित करने के लिए एक अथवा अधिक फ़ाइल जरूरी है पीछे की स्थिति नहीं पाई जा सकती है. पुनर्भंडारण संभव नहीं होगा."
-
-#: Error.ulf#OOO_ERROR_88
-msgid  "[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}"
-msgstr ""
 
 #: Error.ulf#OOO_ERROR_89
 msgid  "The older version of [2] cannot be removed.  Contact your technical support group.  {{System Error [3].}}"
@@ -494,22 +210,6 @@ msgstr "ड्राइव [2] में कोई डिस्क नहीं 
 #: Error.ulf#OOO_ERROR_94
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
 msgstr "फ़ोल्डर [2] मौजूद नहीं है.  कृपया एक मौजूदा फ़ोल्डर में एक पथ दें."
-
-#: Error.ulf#OOO_ERROR_95
-msgid  "You have insufficient privileges to read this folder."
-msgstr "आपके पास इस फ़ोल्डर को पढ़ने का अपर्याप्त अधिकार है."
-
-#: Error.ulf#OOO_ERROR_96
-msgid  "A valid destination folder for the installation could not be determined."
-msgstr "एक वैध गंतव्य फ़ोल्डर संस्थापन के लिए निर्धारित नहीं किया जा सका."
-
-#: Error.ulf#OOO_ERROR_97
-msgid  "Error attempting to read from the source installation database: [2]."
-msgstr "स्रोत का संस्थापन डेटाबेस से पढ़ने के प्रयास में त्रुटि: [2]."
-
-#: Error.ulf#OOO_ERROR_98
-msgid  "Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation."
-msgstr "रिबूट ऑपरेशन का अनुसूचन कर रहा है: [2] से [3] फ़ाइल में फिर नामकरण. संक्रिया पूर्ण करने के लिए जरूर रिबूट करें."
 
 #: Error.ulf#OOO_ERROR_99
 msgid  "Scheduling reboot operation: Deleting file [2]. Must reboot to complete operation."
@@ -535,14 +235,6 @@ msgstr "फ़ॉन्ट [2]  को पंजीयन नहीं कर �
 msgid  "Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts."
 msgstr "फ़ॉन्ट [2]  को पंजीयन वापस नहीं कर सका.  जाँचे कि आपके पास फ़ॉन्ट हटाने की पर्याप्त अऩुमति है."
 
-#: Error.ulf#OOO_ERROR_105
-msgid  "Could not create shortcut [2]. Verify that the destination folder exists and that you can access it."
-msgstr "शार्टकट [2] नहीं बना सका. जाँचे कि गंतव्य फ़ोल्डर मौजूद है और आप इसका अभिगम रख सकते हैं."
-
-#: Error.ulf#OOO_ERROR_106
-msgid  "Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it."
-msgstr "शार्टकट [2] नहीं हटा सका. जाँचे कि शार्टकट फ़ाइल मौजूद है और आप इसमें अभिगम कर सकते हैं."
-
 #: Error.ulf#OOO_ERROR_107
 msgid  "Could not register type library for file [2].  Contact your support personnel."
 msgstr "फ़ाइल [2] के लिए लाइब्रेरी पंजीयन नहीं कर सका.  अपने समर्थन कार्मिक से संपर्क करें."
@@ -565,18 +257,6 @@ msgstr ""
 
 #: Error.ulf#OOO_ERROR_112
 msgid  "Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
-
-#: Error.ulf#OOO_ERROR_113
-msgid  "Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers."
-msgstr ""
-
-#: Error.ulf#OOO_ERROR_114
-msgid  "Error installing ODBC driver [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
-
-#: Error.ulf#OOO_ERROR_115
-msgid  "Error configuring ODBC data source [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
 msgstr ""
 
 #: Error.ulf#OOO_ERROR_116
@@ -635,165 +315,25 @@ msgstr "Windows संस्थापक सेवा तंत्र संर�
 msgid  "This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher."
 msgstr "यह सेटअप के लिए इंटरनेट सूचना सर्वर 4.0 अथवा अधिक उच्च IIS वर्चुअल रूट के विन्यास के लिए. सुनिश्चित करें कि आपके पास IIS 4.0 अथवा उच्चतर है."
 
-#: Error.ulf#OOO_ERROR_130
-msgid  "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-msgstr "इस सेटअप के लिए IIS वर्चुअल रूट के विन्यासन के लिए प्रशासनिक अधिकार जरूरी है."
-
 #: CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
 msgstr "एक [ProductName] का नवीन संस्करण मिला. एक पुराना संस्करण संस्थापित करने के लिए, नवीन संस्करण के पहले हटाने की जरूरत है."
-
-#: CustomAc.ulf#OOO_CUSTOMACTION_2
-msgid  "The same version of this product is already installed."
-msgstr "इस उत्पाद का समान संस्करण पहले से संस्थापित है."
 
 #: CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
 msgstr "एक [ProductName] का नवीन संस्करण मिला. एक पुराना संस्करण संस्थापित करने के लिए, नवीन संस्करण के पहले हटाने की जरूरत है."
 
-#: CustomAc.ulf#OOO_CUSTOMACTION_4
-msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr "कृपया [DEFINEDPRODUCT] [DEFINEDVERSION] और [DEFINEDPRODUCT] [DEFINEDVERSION] क्विकस्टार्टर से जारी रखने के पहले बाहर निकलें. यदि आप बहुल उपयोक्ता तंत्र का प्रयोग नहीं कर रहे हैं साथ ही सुनिश्चित करें कि किसी दूसरे उपयोक्ता के पास [DEFINEDPRODUCT] [DEFINEDVERSION] खुला हुआ नहीं है."
-
-#: UIText.ulf#OOO_UITEXT_1
-msgid  "bytes"
-msgstr ""
-
-#: UIText.ulf#OOO_UITEXT_2
-msgid  "GB"
-msgstr "गी.बा."
-
-#: UIText.ulf#OOO_UITEXT_3
-msgid  "KB"
-msgstr "कि.बा."
-
-#: UIText.ulf#OOO_UITEXT_4
-msgid  "MB"
-msgstr "मे.बा."
-
-#: UIText.ulf#OOO_UITEXT_5
-msgid  "This feature will not be available."
-msgstr "यह फीचर मौजूद नहीं रहेगा."
-
-#: UIText.ulf#OOO_UITEXT_6
-msgid  "This feature will be installed when required."
-msgstr "जरूरी होने पर इस फीचर को संस्थापित किया जाएगा."
-
-#: UIText.ulf#OOO_UITEXT_7
-msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr "यह फीचर, और सभी उपफीचरों को CD से चलाने के लिए संस्थापित किया जाएगा."
-
-#: UIText.ulf#OOO_UITEXT_8
-msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr "इस फीचर, और सभी उपफीचरों, को स्थानीय हार्ड ड्राइव पर संस्थापित किया जाएगा."
-
-#: UIText.ulf#OOO_UITEXT_9
-msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr "इस फीचर, और सभी उपफीचरों,  को संजाल से चलाने के लिए संस्थापित किया जाएगा."
-
 #: UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
 msgstr "यह फीचर को CD से चलाने के लिए संस्थापित किया जायेगा."
-
-#: UIText.ulf#OOO_UITEXT_11
-msgid  "This feature will be installed on local hard drive."
-msgstr "इस फीचर को स्थानीय हार्डड्राइव पर संस्थापित किया जायेगा."
-
-#: UIText.ulf#OOO_UITEXT_12
-msgid  "This feature will be installed to run from network."
-msgstr "इस फीचर को संजाल से चलाने के लिए संस्थापित किया जायेगा."
-
-#: UIText.ulf#OOO_UITEXT_13
-msgid  "Fldr|New Folder"
-msgstr ""
-
-#: UIText.ulf#OOO_UITEXT_14
-msgid  "This feature will remain uninstalled."
-msgstr "यह फीचर संस्थापित नहीं रहेगा."
 
 #: UIText.ulf#OOO_UITEXT_15
 msgid  "This feature will be set to be installed when required."
 msgstr "यह फीचर को जरूरी पड़ने पर संस्थापित करने के लिए सेट किया जाएगा."
 
-#: UIText.ulf#OOO_UITEXT_17
-msgid  "This feature will be installed on the local hard drive."
-msgstr "यह फीचर स्थानीय हार्ड ड्राइव पर संस्थापित किया जाएगा."
-
-#: UIText.ulf#OOO_UITEXT_18
-msgid  "This feature will be installed to run from the network."
-msgstr "इस फीचर को संजाल से चलाने के लिए संस्थापित किया जाएगा."
-
-#: UIText.ulf#OOO_UITEXT_19
-msgid  "This feature will become unavailable."
-msgstr "यह फीचर मौजूद नहीं रहेगा."
-
-#: UIText.ulf#OOO_UITEXT_20
-msgid  "Will be installed when required."
-msgstr "जरूरी पड़ने पर संस्थापित कर दिया जाएगा."
-
-#: UIText.ulf#OOO_UITEXT_21
-msgid  "This feature will be available to run from CD."
-msgstr "यह फीचर CD से चलाने के लिए मौजूद रहेगा."
-
-#: UIText.ulf#OOO_UITEXT_22
-msgid  "This feature will be installed on your local hard drive."
-msgstr "यह फीचर आपके स्थानीय हार्ड ड्राइव पर मौजूद रहेगा."
-
-#: UIText.ulf#OOO_UITEXT_23
-msgid  "This feature will be available to run from the network."
-msgstr "यह फीचर संजाल से चलाने के लिए मौजूद रहेगा."
-
-#: UIText.ulf#OOO_UITEXT_24
-msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr "इस फीचर को पूरी तरह से निकाल दिया जाएगा, और आप इसको CD से चलाने में असमर्थ रहेंगे."
-
 #: UIText.ulf#OOO_UITEXT_25
 msgid  "This feature was run from the CD but will be set to be installed when required."
 msgstr "यह फीचर CD से चला था लेकिन जरूरी समय में संस्थापित रूप में सेट हो जाएगा."
-
-#: UIText.ulf#OOO_UITEXT_26
-msgid  "This feature will continue to be run from the CD"
-msgstr "यह फीचर CD से चलाना जारी रखेगा"
-
-#: UIText.ulf#OOO_UITEXT_27
-msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr "यह फीचर CD से चला था लेकिन स्थानीय हार्ड ड्राइव पर संस्थापित किया जाएगा."
-
-#: UIText.ulf#OOO_UITEXT_28
-msgid  "This feature frees up [1] on your hard drive."
-msgstr "यह फीचर के लिए [1]  को आपके हार्ड ड्राइव पर मुक्त है."
-
-#: UIText.ulf#OOO_UITEXT_29
-msgid  "This feature requires [1] on your hard drive."
-msgstr "यह फीचर के लिए [1]  को आपके हार्ड ड्राइव पर जरूरत है."
-
-#: UIText.ulf#OOO_UITEXT_30
-msgid  "Compiling cost for this feature..."
-msgstr "इस फीचर के लिए कंपाइलिंग लागेगा..."
-
-#: UIText.ulf#OOO_UITEXT_31
-msgid  "This feature will be completely removed."
-msgstr "इस फीचर को पूरी तरह से निकाल दिया जाएगा."
-
-#: UIText.ulf#OOO_UITEXT_32
-msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr "इस फीचर को आपके स्थानीय हार्डड्राइव से हटा दिया जाएगा, लेकिन जरूरी होने पर संस्थापित होने के लिए सेट कर दिया जाएगा."
-
-#: UIText.ulf#OOO_UITEXT_33
-msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr "इस फीचर को आपके स्थानीय हार्डड्राइव से हटा दिया जाएगा, लेकिन CD से चलाने के लिए अभी मौजूद रहेगा."
-
-#: UIText.ulf#OOO_UITEXT_34
-msgid  "This feature will remain on your local hard drive."
-msgstr "यह विशेषता आपके स्थानीय हार्ड ड्राइव में बनी रहेगी."
-
-#: UIText.ulf#OOO_UITEXT_35
-msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr "इस फीचर को आपके स्थानीय हार्ड ड्राइव से हटा दिया जाएगा, लेकिन संजाल से चलाने के लिए अभी मौजूद रहेगा."
-
-#: UIText.ulf#OOO_UITEXT_36
-msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr "इस फीचर को पूरी तरह से विसंस्थापित किया जाएगा, और आप संजाल से इसको चलाने में समर्थ नहीं रहेंगे."
 
 #: UIText.ulf#OOO_UITEXT_37
 msgid  "This feature was run from the network but will be installed when required."
@@ -807,81 +347,9 @@ msgstr "यह फीचर संजाल से चलाया गया ल
 msgid  "This feature will continue to be run from the network"
 msgstr "इस फीचर को संजाल से चलाना जारी रखेगा"
 
-#: UIText.ulf#OOO_UITEXT_40
-msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr "यह फीचर [1] को आपके हार्ड ड्राइव पर मुक्त करता है. इसमें [2] [3] का उपफीचर चयनित है. उपफीचर [4] को आपके हार्डड्राइव पर मुक्त करता है."
-
-#: UIText.ulf#OOO_UITEXT_41
-msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr "यह फीचर [1] को आपके हार्ड ड्राइव पर मुक्त करता है. इसमें [2] [3] का उपफीचर चयनित है. उपफीचर [4] को आपके हार्डड्राइव पर जरूरी है."
-
-#: UIText.ulf#OOO_UITEXT_42
-msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr "यह फीचर [1] को आपके हार्ड ड्राइव पर जरूरी मानता है. इसमें [2] [3] का उपफीचर चयनित है. उपफीचर [4] को आपके हार्डड्राइव पर मुक्त करता है."
-
-#: UIText.ulf#OOO_UITEXT_43
-msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr "यह फीचर [1] को आपके हार्ड ड्राइव पर जरूरी रखता है. इसमें [2] [3] का उपफीचर चयनित है. उपफीचर [4] को आपके हार्डड्राइव पर मुक्त करता है."
-
-#: UIText.ulf#OOO_UITEXT_44
-msgid  "Time remaining: {[1] min }[2] sec"
-msgstr "शेष समय: {[1] मिनट }[2] सेकेंड"
-
-#: UIText.ulf#OOO_UITEXT_45
-msgid  "Available"
-msgstr "उपलब्ध"
-
-#: UIText.ulf#OOO_UITEXT_46
-msgid  "Differences"
-msgstr "भिन्नता"
-
-#: UIText.ulf#OOO_UITEXT_47
-msgid  "Required"
-msgstr "आवश्यक"
-
-#: UIText.ulf#OOO_UITEXT_48
-msgid  "Disk Size"
-msgstr "डिस्क आकार"
-
-#: UIText.ulf#OOO_UITEXT_49
-msgid  "Volume"
-msgstr "आवाज़ निर्धारक"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_1
-msgid  "Advertising application"
-msgstr "विज्ञापन अनुप्रयोग"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_2
-msgid  "Allocating registry space"
-msgstr "पंजीयन स्थान दे रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_3
-msgid  "Free space: [1]"
-msgstr "मुक्त स्थान: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_4
-msgid  "Searching for installed applications"
-msgstr "संस्थापित अनुप्रयोग के लिए ढूंढ रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_5
-msgid  "Property: [1], Signature: [2]"
-msgstr "गुण: [1], हस्ताक्षर: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_6
-msgid  "Binding executables"
-msgstr "निष्पादनीय बांध रहा है"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_7
 msgid  "File: [1]"
 msgstr "फ़ाइल: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_8
-msgid  "Creating IIS Virtual Roots..."
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_9
-msgid  "Removing IIS Virtual Roots..."
-msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_10
 msgid  "Searching for qualifying products"
@@ -891,117 +359,21 @@ msgstr "सफल उत्पाद के लिए ढूंढ़ रहा 
 msgid  "Computing space requirements"
 msgstr "कंप्यूटिंग स्थान जरूरत"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_13
-msgid  "Creating folders"
-msgstr "फ़ोल्डर बनाया जा रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_14
-msgid  "Folder: [1]"
-msgstr "फ़ोल्डर : [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_15
-msgid  "Creating shortcuts"
-msgstr "शॉर्टकट बनाया जा रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_16
-msgid  "Shortcut: [1]"
-msgstr "शॉर्टकट: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_17
-msgid  "Deleting services"
-msgstr "सेवा मिटा रहा है"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_18
 msgid  "Service: [1]"
 msgstr "सेवा: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_19
-msgid  "Creating duplicate files"
-msgstr "नकल फ़ाइलें बना रहा है"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_20
 msgid  "File: [1],  Directory: [9],  Size: [6]"
 msgstr "फ़ाइल: [1],  निर्देशिका: [9],  आकार: [6]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_22
-msgid  "Searching for related applications"
-msgstr "संबंधित अनुप्रयोग के लिए ढूंढ रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_23
-msgid  "Found application"
-msgstr "अनुप्रयोग पाया: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_24
-msgid  "Generating script operations for action:"
-msgstr "क्रिया के लिए स्क्रिप्ट ऑपरेशन उत्पन्न कर रहा है:"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_25
-msgid  "[1]"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_26
-msgid  "Copying files to the network"
-msgstr "संजाल में फ़ाइलें प्रतिलिपि कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_27
-msgid  "File: [1], Directory: [9], Size: [6]"
-msgstr "फ़ाइल: [1], निर्देशिका: [9], आकार: [6]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_28
-msgid  "Copying new files"
-msgstr "नयी फ़ाइलें नक़ल कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_30
-msgid  "Installing ODBC components"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_31
-msgid  "Installing new services"
-msgstr "नयी सेवा संस्थापन कर रहा है "
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_32
-msgid  "Service: [2]"
-msgstr "सेवा: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_33
-msgid  "Installing system catalog"
-msgstr "तंत्र कैटालॉग संस्थापन कर रहा है"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_34
 msgid  "File: [1],  Dependencies: [2]"
 msgstr "फ़ाइल: [1],  निर्भरता: [2]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_35
-msgid  "Validating install"
-msgstr "संस्थापन वैधीकृत कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_36
-msgid  "Evaluating launch conditions"
-msgstr "लांच स्थिति का मूल्यांकन कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_37
-msgid  "Migrating feature states from related applications"
-msgstr "संबंधित अनुप्रयोग से फीचर स्थिति का उत्प्रवासन कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_38
-msgid  "Application: [1]"
-msgstr "अनुप्रयोग: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_39
-msgid  "Moving files"
-msgstr "फ़ाइलें हटा रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_41
-msgid  "Patching files"
-msgstr "फ़ाइल पैच कर रहा है"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_42
 msgid  "File: [1],  Directory: [2],  Size: [3]"
 msgstr "फ़ाइल: [1],  निर्देशिका: [2],  आकार: [3]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_43
-msgid  "Updating component registration"
-msgstr "अवयव पंजीयन अद्यतन कर रहा है"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_44
 msgid  "Publishing qualified components"
@@ -1011,37 +383,9 @@ msgstr "गुणवत्ता घटक प्रकाशित कर र�
 msgid  "Component ID: [1], Qualifier: [2]"
 msgstr "घटक ID: [1], क्वालिफाई: [2]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_46
-msgid  "Publishing product features"
-msgstr "उत्पाद विशेषता प्रकाशित कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_47
-msgid  "Feature: [1]"
-msgstr "विशेषता: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_48
-msgid  "Publishing product information"
-msgstr "उत्पाद सूचना प्रकाशित कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_49
-msgid  "Registering class servers"
-msgstr "वर्ग सर्वर पंजीयन कर रहा है"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_50
 msgid  "Class ID: [1]"
 msgstr "वर्ग ID: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_51
-msgid  "Registering COM+ Applications and Components"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_52
-msgid  "AppId: [1]{{, AppType: [2], Users: [3], RSN: [4]}}"
-msgstr "लागू: [1]{{, अनुप्रयोग प्रकार: [2], उपयोक्ता: [3], RSN: [4]}}"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_53
-msgid  "Registering extension servers"
-msgstr "विस्तार सर्वर पंजीयन कर रहा है"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_54
 msgid  "Extension: [1]"
@@ -1063,33 +407,13 @@ msgstr ""
 msgid  "MIME Content Type: [1], Extension: [2]"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_59
-msgid  "Registering product"
-msgstr "उत्पाद पंजीयन कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_61
-msgid  "Registering program identifiers"
-msgstr "प्रोग्राम पंजीयन कर रहा है"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_62
 msgid  "ProgID: [1]"
 msgstr "प्रोग्रामID: [1]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_63
-msgid  "Registering type libraries"
-msgstr "लाइब्रेरी प्रकार पंजीयन कर रहा है"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_64
 msgid  "LibID: [1]"
 msgstr "लाइब्रेरीID: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_65
-msgid  "Registering user"
-msgstr "उपयोक्ता पंजीयन कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_67
-msgid  "Removing duplicated files"
-msgstr "नकल फ़ाइलें हटा रहा है"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_68
 msgid  "File: [1], Directory: [9]"
@@ -1103,22 +427,6 @@ msgstr "वातावरण स्ट्रिंग अद्यतन कर
 msgid  "Name: [1], Value: [2], Action [3]"
 msgstr "नाम: [1], मान: [2], क्रिया [3]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_71
-msgid  "Removing applications"
-msgstr "अनुप्रयोग हटा रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_72
-msgid  "Application: [1], Command line: [2]"
-msgstr "अनुप्रयोग: [1], समादेश रेखा: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_73
-msgid  "Removing files"
-msgstr "फ़ाइलें हटा रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_75
-msgid  "Removing folders"
-msgstr "फ़ोल्डर हटा रहा है"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_77
 msgid  "Removing INI file entries"
 msgstr ""
@@ -1126,66 +434,6 @@ msgstr ""
 #: ActionTe.ulf#OOO_ACTIONTEXT_78
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
 msgstr "फ़ाइल: [1],  खंड: [2],  कुंजी: [3], मान: [4]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_79
-msgid  "Removing ODBC components"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_80
-msgid  "Removing system registry values"
-msgstr "तंत्र पंजीयन मान हटा रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_81
-msgid  "Key: [1], Name: [2]"
-msgstr "कुंजी: [1], नाम: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_82
-msgid  "Removing shortcuts"
-msgstr "शार्टकट हटा रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_85
-msgid  "Rolling back action:"
-msgstr "क्रिया वापस कर रहा है:"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_87
-msgid  "Removing backup files"
-msgstr "बैकअप फ़ाइलें हटा रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_89
-msgid  "Registering modules"
-msgstr "मौड्यूल पंजीयन कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_90
-msgid  "File: [1], Folder: [2]"
-msgstr "फ़ाइल: [1], फ़ोल्डर: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_91
-msgid  "Unregistering modules"
-msgstr "मौड्यूल का पंजीयन वापस कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_93
-msgid  "Initializing ODBC directories"
-msgstr "ODBC निर्देशिका को आरंभीकृत कर रहा है "
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_94
-msgid  "Starting services"
-msgstr "सेवा आरंभ कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_96
-msgid  "Stopping services"
-msgstr "सेवा रोक रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_98
-msgid  "Removing moved files"
-msgstr "खिसकाये गए फ़ाइल को हटा रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_100
-msgid  "Unpublishing Qualified Components"
-msgstr "उत्तीर्ण घटक का प्रकाशन वापस कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_102
-msgid  "Unpublishing product features"
-msgstr "उत्पाद विशेषता का प्रकाशन वापस कर रहा है"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_104
 msgid  "Unpublishing product information"
@@ -1195,69 +443,21 @@ msgstr "उत्पाद सूचना का प्रकाशन वा�
 msgid  "Unregister class servers"
 msgstr "वर्ग सर्वर का पंजीयन रद्द कर रहा है"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_107
-msgid  "Unregistering COM+ Applications and Components"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_108
-msgid  "AppId: [1]{{, AppType: [2]}}"
-msgstr "AppId: [1]{{, AppType: [2]}}"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_109
-msgid  "Unregistering extension servers"
-msgstr "विस्तार सर्वर का पंजीयन रद्द कर रहा है"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_111
 msgid  "Unregistering fonts"
 msgstr "फ़ॉन्ट का पंजीयन रद्द कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_113
-msgid  "Unregistering MIME info"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_115
-msgid  "Unregistering program identifiers"
-msgstr "प्रोग्राम पहचानकर्ता का पंजीयन रद्द कर रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_117
-msgid  "Unregistering type libraries"
-msgstr "लाइब्रेरी प्रकार का पंजीयन रद्द कर रहा है"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_121
 msgid  "Writing INI file values"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_123
-msgid  "Writing system registry values"
-msgstr "तंत्र पंजीयन मान लिख रहा है"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_124
-msgid  "Key: [1], Name: [2], Value: [3]"
-msgstr "कुंजी: [1], नाम: [2], मान: [3]"
-
-#: LaunchCo.ulf#OOO_LAUNCH_1
-msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr "संस्थापन सहायक ठीक से कार्य नहीं कर सकता है क्योंकि आप एक उपयोक्ता की तरह लॉग हैं इस तंत्र के लिए बिना पर्याप्त प्रशासक अधिकार के लिए."
-
 #: LaunchCo.ulf#OOO_LAUNCH_2
 msgid  "Please use the file setup.exe to start the installation."
 msgstr ""
 
-#: Nsis.ulf#SETUPCAPTION
-msgid  "%PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr ""
-
-#: Nsis.ulf#MUI_TEXT_WELCOME_INFO_TITLE
-msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
-msgstr "%PRODUCTNAME %PRODUCTVERSION अधिभारण के लिए आपको धन्यवाद."
-
 #: Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
 msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\n\\r\nClick \\'Next\\' to continue."
 msgstr "संस्थापन फ़ाइल को जरूर खोला जाना चाहिये और आपके हार्ड डिस्क में नक़ल किया जाना चाहिये संस्थापन की तैयारी में. उसके बाद, %PRODUCTNAME संस्थापन स्वतः आरंभ हो जायेगा.\r\n\r\n\\'आगे\\' को जारी रखने के लिए क्लिक करें."
-
-#: Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
-msgid  "Select Folder"
-msgstr "फ़ोल्डर चुनें"
 
 #: Nsis.ulf#MUI_TEXT_DIRECTORY_SUBTITLE
 msgid  "Select the folder in which to save the unpacked files."
@@ -1270,10 +470,6 @@ msgstr "पैक खोलें (&U)"
 #: Nsis.ulf#DIRTEXT
 msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
 msgstr ""
-
-#: Nsis.ulf#DIRSUBTEXT
-msgid  "Destination Folder"
-msgstr "गंतव्य फ़ोल्डर"
 
 #: Nsis.ulf#SPACEREQUIRED
 msgid  "Space required: "
@@ -1291,41 +487,14 @@ msgstr "खोला जा रहा है"
 msgid  "Please wait while the installation files are being unpacked."
 msgstr "कृपया प्रतीक्षा करें जबतक संस्थापन फ़ाइल को खोली जा रही है."
 
-#: Nsis.ulf#EXTRACT
-msgid  "Extract: "
-msgstr "निकालें: "
-
-#: Nsis.ulf#MUI_TEXT_ABORTWARNING
-msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr "क्या आप %PRODUCTNAME %PRODUCTVERSION संस्थापन तैयारी के लिए छोड़ना चाहते हैं"
-
 #: SIS.ulf#OOO_SIS_TITLE
 msgid  "Installation database"
 msgstr "संस्थापन डेटाबेस"
 
-#: SIS.ulf#OOO_SIS_AUTHOR
-msgid  "Author"
-msgstr "लेखक"
-
-#: SIS.ulf#OOO_SIS_SUBJECT
-msgid  "Subject"
-msgstr "विषय"
-
-#: SIS.ulf#OOO_SIS_COMMENT
-msgid  "Comment"
-msgstr "टिप्पणी"
-
-#: SIS.ulf#OOO_SIS_KEYWORDS
-msgid  "Install,MSI"
-msgstr "संस्थापित करें,MSI"
-
-#: SIS.ulf#OOO_SIS_APPNAME
-msgid  "Windows Installer"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_3
+#, fuzzy
 msgid  "Cancel"
-msgstr "रद्द करें"
+msgstr "अलग फ़ोल्डर चुनने के लिये, क्लिक करें"
 
 #: Control.ulf#OOO_CONTROL_5
 msgid  "&Look in:"
@@ -1339,10 +508,6 @@ msgstr "गंतव्य फ़ोल्डर में ब्राउज़
 msgid  "{&MSSansBold8}Change Current Destination Folder"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_9
-msgid  "Create new folder|"
-msgstr "नया फ़ोल्डर बनाएं|"
-
 #: Control.ulf#OOO_CONTROL_10
 msgid  "OK"
 msgstr "ठीक"
@@ -1350,10 +515,6 @@ msgstr "ठीक"
 #: Control.ulf#OOO_CONTROL_12
 msgid  "&Folder name:"
 msgstr "फ़ोल्डर नाम(&F):"
-
-#: Control.ulf#OOO_CONTROL_13
-msgid  "Up one level|"
-msgstr "एक स्तर ऊपर|"
 
 #: Control.ulf#OOO_CONTROL_14
 msgid  "< &Back"
@@ -1363,25 +524,13 @@ msgstr "<पीछे (&B)"
 msgid  "&Change..."
 msgstr "बदलें... (&C)"
 
-#: Control.ulf#OOO_CONTROL_19
-msgid  "Specify a network location for the server image of the product."
-msgstr "उत्पाद के सर्वर चित्र के लिए संजाल स्थान निर्दिष्ट करें."
-
 #: Control.ulf#OOO_CONTROL_20
 msgid  "Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard."
 msgstr "संजाल अवस्थिति डालें या एक स्थान में ब्राउज़ में बदलें पर क्लिक करें.  [ProductName] के सर्वर चित्र को बनाने के लिए संस्थापन पर क्लिक करें या सहायक से बाहर निकलने के लिए रद्द करें पर क्लिक करें."
 
-#: Control.ulf#OOO_CONTROL_21
-msgid  "{&MSSansBold8}Network Location"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_22
 msgid  "&Install"
 msgstr "संस्थापित करें (&I)"
-
-#: Control.ulf#OOO_CONTROL_23
-msgid  "&Network location:"
-msgstr "संजाल स्थान (&N):"
 
 #: Control.ulf#OOO_CONTROL_26
 msgid  "&Next >"
@@ -1391,153 +540,29 @@ msgstr "आगे (&N) >"
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
 msgstr "{&TahomaBold10}[उत्पादनाम] के लिए संस्थापन सहायक में आपका स्वागत है"
 
-#: Control.ulf#OOO_CONTROL_28
-msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr "संस्थापन सहायक [ProductName] का सर्वर चित्र बनायेगा एक विशेष संजाल स्थान पर. जारी रखने के लिये, आगे को क्लिक करें."
-
 #: Control.ulf#OOO_CONTROL_29
 msgid  "&No"
 msgstr "नहीं (&N)"
-
-#: Control.ulf#OOO_CONTROL_30
-msgid  "Are you sure you want to cancel [ProductName] installation?"
-msgstr "क्या आप [उत्पादनाम] संस्थापन रद्द करने के लिए निश्चित हैं?"
-
-#: Control.ulf#OOO_CONTROL_31
-msgid  "&Yes"
-msgstr "हाँ (&Y)"
 
 #: Control.ulf#OOO_CONTROL_36
 msgid  "{\\Tahoma8}{80}"
 msgstr "{\\Tahoma8}{80}"
 
-#: Control.ulf#OOO_CONTROL_37
-msgid  "&Organization:"
-msgstr "संगठनः (&O)"
-
-#: Control.ulf#OOO_CONTROL_38
-msgid  "Please enter your information."
-msgstr "अपनी सूचना डालिये"
-
-#: Control.ulf#OOO_CONTROL_39
-msgid  "Install this application for:"
-msgstr "इसके लिए यह अनुप्रयोग संस्थापित करें:"
-
-#: Control.ulf#OOO_CONTROL_40
-msgid  "{&MSSansBold8}Customer Information"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_41
 msgid  "{\\Tahoma8}{50}"
 msgstr "{\\Tahoma8}{50}"
-
-#: Control.ulf#OOO_CONTROL_42
-msgid  "&User Name:"
-msgstr "उपयोक्ता नाम (&U):"
-
-#: Control.ulf#OOO_CONTROL_45
-msgid  "&Serial Number:"
-msgstr "क्रम संख्या (&S):"
-
-#: Control.ulf#OOO_CONTROL_51
-msgid  "&Space"
-msgstr "खाली जगह (&S)"
-
-#: Control.ulf#OOO_CONTROL_52
-msgid  "Select the program features you want installed."
-msgstr "प्रोग्राम विशेषता चुनें जिसे आप संस्थापित करना चाहते हैं."
-
-#: Control.ulf#OOO_CONTROL_53
-msgid  "Click on an icon in the list below to change how a feature is installed."
-msgstr "नीचे सूची में प्रतीक पर क्लिक करें यह बदलने के लिए कि किस तरह यह फीचर संस्थापित है."
-
-#: Control.ulf#OOO_CONTROL_54
-msgid  "{&MSSansBold8}Custom Setup"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_55
-msgid  "Feature Description:"
-msgstr "विशेषता वर्णन:"
-
-#: Control.ulf#OOO_CONTROL_56
-msgid  "&Help"
-msgstr "मदद (&H)"
-
-#: Control.ulf#OOO_CONTROL_57
-msgid  "Install to:"
-msgstr "इसमें संस्थापित करें:"
-
-#: Control.ulf#OOO_CONTROL_58
-msgid  "Multiline description of the currently selected item"
-msgstr "मौजूदा चयनित मद का बहुपंक्ति विवरण"
 
 #: Control.ulf#OOO_CONTROL_59
 msgid  "<selected feature path>"
 msgstr "<चुना फीचर पथ>"
 
-#: Control.ulf#OOO_CONTROL_61
-msgid  "Feature size"
-msgstr "विशेषता आकार"
-
 #: Control.ulf#OOO_CONTROL_64
 msgid  "Custom Setup allows you to selectively install program features."
 msgstr "मनपसंद सेटअप आपको प्रोग्राम विशेषता को चयनित रूप में संस्थापन की अनुमति देता है."
 
-#: Control.ulf#OOO_CONTROL_65
-msgid  "{&MSSansBold8}Custom Setup Tips"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_66
-msgid  "Will not be installed."
-msgstr "संस्थापित नहीं होगा"
-
-#: Control.ulf#OOO_CONTROL_67
-msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr "पहले प्रयोग में संस्थापित किया जायेगा. (सिर्फ तभी उपलब्ध जब फीचर इस विकल्प का समर्थन करता है.)"
-
-#: Control.ulf#OOO_CONTROL_68
-msgid  "This install state means the feature..."
-msgstr "इस संस्थापन स्थिति का अर्थ है विशेषता..."
-
-#: Control.ulf#OOO_CONTROL_69
-msgid  "Will be completely installed to the local hard drive."
-msgstr "स्थानीय हार्डड्राइव में पूरी तरह से संस्थापित होगा."
-
-#: Control.ulf#OOO_CONTROL_70
-msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr "फीचर नाम के साथ का प्रतीक विशेषता की संस्थापन स्थिति को बताता है. हर विशेषता के लिए स्थिति मेनू के संस्थापन को छोड़ने के लिए प्रतीक पर क्लिक करें."
-
-#: Control.ulf#OOO_CONTROL_71
-msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr "संजाल से चलाने के लिए संस्थापित किया जायेगा. (सिर्फ तभी उपलब्ध जब फीचर इस विकल्प का समर्थन करता है.)"
-
-#: Control.ulf#OOO_CONTROL_73
-msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr "स्थानीय हार्ड ड्राइव में कुछ उपफीचर को संस्थापित किया जायेगा. (सिर्फ तभी उपलब्ध जब फीचर में उपफीचर है.)"
-
 #: Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
 msgstr "इस फ़ोल्डर में संस्थापन के लिए आगे को क्लिक करें, या अलग फ़ोल्डर में संस्थापन के लिए बदलें पर क्लिक करें."
-
-#: Control.ulf#OOO_CONTROL_80
-msgid  "{&MSSansBold8}Database Folder"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_81
-msgid  "[DATABASEDIR]"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_82
-msgid  "Install [ProductName] database to:"
-msgstr "[उत्पादनाम] डेटाबेस संस्थापित करें:"
-
-#: Control.ulf#OOO_CONTROL_90
-msgid  "{&MSSansBold8}Destination Folder"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_91
-msgid  "[INSTALLDIR]"
-msgstr ""
 
 #: Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
@@ -1551,26 +576,6 @@ msgstr "चयनित फीचर के संस्थापन के ल�
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
 msgstr "उभारा गया वॉल्यूम के पास पर्याप्त डिस्क स्थान उपलब्ध नहीं है अभी चुने गए फीचर के लिये. आप उभारे गए वॉल्यूम से फ़ाइल हटा सकते हैं, कम फीचर संस्थापित करने के लिए चुन सकते हैं स्थानीय चालन पर, या भिन्न गंतव्य चालन चुन सकते हैं."
 
-#: Control.ulf#OOO_CONTROL_98
-msgid  "{&MSSansBold8}Disk Space Requirements"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_103
-msgid  "Some files that need to be updated are currently in use."
-msgstr "कुछ फ़ाइलें जिसे अद्यतन किया जाना है वह अभी उपयोग में है."
-
-#: Control.ulf#OOO_CONTROL_104
-msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
-msgstr "निम्नलिखित अनुप्रयोग फ़ाइल को प्रयोग कर रहा है जो यह सेटअप के द्वारा अद्यतन किये जाने की जरूरत है.इस अनुप्रयोग को बंद करें और जारी रखने के लिए फिर कोशिश करें पर क्लिक करें."
-
-#: Control.ulf#OOO_CONTROL_105
-msgid  "{&MSSansBold8}Files in Use"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_106
-msgid  "&Exit"
-msgstr "निकास (&E)"
-
 #: Control.ulf#OOO_CONTROL_107
 msgid  "&Ignore"
 msgstr "नज़रअंदाज़ करें (&I)"
@@ -1579,45 +584,9 @@ msgstr "नज़रअंदाज़ करें (&I)"
 msgid  "&Retry"
 msgstr "फिर कोशिश करें (&R)"
 
-#: Control.ulf#OOO_CONTROL_117
-msgid  "Create New Folder|"
-msgstr "नया फ़ोल्डर बनाएं|"
-
-#: Control.ulf#OOO_CONTROL_121
-msgid  "Up One Level|"
-msgstr "एक स्तर ऊपर|"
-
 #: Control.ulf#OOO_CONTROL_124
 msgid  "This Program is based on the 'Apache OpenOffice' project which is supported by members of the Apache Community. For credits please see: http://www.openoffice.org/welcome/credits.html"
 msgstr ""
-
-#: Control.ulf#OOO_CONTROL_127
-msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr "संस्थापन सहायक  [ProductName] को आपके कंप्यूटर पर संस्थापित करेगा. जारी रखने के लिए, आगे क्लिक करें."
-
-#: Control.ulf#OOO_CONTROL_132
-msgid  "Please read the following license agreement carefully."
-msgstr "निम्न लाइसेंस मसौदे को ध्यान से पढ़ें."
-
-#: Control.ulf#OOO_CONTROL_133
-msgid  "{&MSSansBold8}License Agreement"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_139
-msgid  "Modify, repair, or remove the program."
-msgstr "प्रोग्राम बदलें, मरम्मत करें, या हटाएँ."
-
-#: Control.ulf#OOO_CONTROL_140
-msgid  "{&MSSansBold8}Program Maintenance"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_143
-msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
-msgstr "बदलें कौन प्रोग्राम फीचर संस्थापित है. यह विकल्प मनपसंद चयन संवाद दिखाएगा जिसमें आप वह तरीका बदल सकते हैं जैसे फीचर संस्थापित है."
-
-#: Control.ulf#OOO_CONTROL_144
-msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
-msgstr "प्रोग्राम में संस्थापन की त्रुटि को सुधारें. यह विकल्प गुम अथवा खराब फ़ाइल, शार्टकट, और पंजीयन प्रविष्टि सभी को सुधारता है."
 
 #: Control.ulf#OOO_CONTROL_145
 msgid  "Remove [ProductName] from your computer."
@@ -1627,81 +596,21 @@ msgstr "अपने कंप्यूटर से [ProductName] हटाए�
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
 msgstr "संस्थापन सहायक आपके [ProductName] को बदलने, सुधारने, अथवा हटाने की अनुमति देता है. जारी रखने के लिए, आगे पर क्लिक करें."
 
-#: Control.ulf#OOO_CONTROL_153
-msgid  "Disk space required for the installation exceeds available disk space."
-msgstr "संस्थापन के लिए जरूरी डिस्क स्थान उपलब्ध डिस्क स्थान से अधिक है."
-
 #: Control.ulf#OOO_CONTROL_155
 msgid  "{&MSSansBold8}Out of Disk Space"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_156
-msgid  "{120}{70}{70}{70}{70}"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_160
-msgid  "&Update >"
-msgstr "अद्यतन (&U) >"
-
-#: Control.ulf#OOO_CONTROL_161
-msgid  "{&TahomaBold10}Welcome to the Patch for [ProductName]"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
 msgstr "संस्थापन सहायक आपके कंप्यूटर पर पैच को संस्थापित करेगा. जारी रखने के लिए, अद्यतन पर क्लिक करें."
 
-#: Control.ulf#OOO_CONTROL_167
-msgid  "The wizard is ready to begin installation."
-msgstr "सहायक संस्थापन शुरू करने के लिए तैयार है."
-
-#: Control.ulf#OOO_CONTROL_168
-msgid  "Click Install to begin the installation."
-msgstr "संस्थापन शुरू करने के लिए संस्थापन करें पर क्लिक करें."
-
 #: Control.ulf#OOO_CONTROL_169
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
 msgstr "यदि आप अपने संस्थापन सेटिंग को बदलने अथवा समीक्षा करना चाहते हैं पीछे क्लिक करें. सहायक से निकलने के लिए रद्द करें."
 
-#: Control.ulf#OOO_CONTROL_170
-msgid  "{&MSSansBold8}Ready to Modify the Program"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_171
-msgid  "{&MSSansBold8}Ready to Repair the Program"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_172
-msgid  "{&MSSansBold8}Ready to Install the Program"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_178
-msgid  "You have chosen to remove the program from your system."
-msgstr "आप अपने सिस्मट से प्रोग्राम को हटाना चाहते हैं."
-
-#: Control.ulf#OOO_CONTROL_179
-msgid  "Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use."
-msgstr "[ProductName]  को अपने कंप्यूटर से हटाने के लिए हटाएं पर क्लिक करें, हटाने के पश्चात प्रोग्राम प्रयोग के लिए नहीं उपलब्ध रहेगा."
-
-#: Control.ulf#OOO_CONTROL_180
-msgid  "If you want to review or change any settings, click Back."
-msgstr "यदि आप समीक्षा अथवा किसी सेटिंग बदलना चाहते हैं, पीछें क्लिक करें."
-
-#: Control.ulf#OOO_CONTROL_181
-msgid  "{&MSSansBold8}Remove the Program"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_182
-msgid  "&Remove"
-msgstr "हटाएँ (&R)"
-
 #: Control.ulf#OOO_CONTROL_185
 msgid  "&Finish"
 msgstr "समाप्त (&F)"
-
-#: Control.ulf#OOO_CONTROL_186
-msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr "आपका तंत्र बदल दिया गया है. दूसरे समय पर संस्थापन पूर्ण करने के लिए, कृपया सेटअप फिर चलाएं."
 
 #: Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
@@ -1723,45 +632,9 @@ msgstr ""
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
 msgstr "सहायक में व्यवधान आया इससे पहले कि [ProductName] पूरी तरह से संस्थापित हो पाता."
 
-#: Control.ulf#OOO_CONTROL_194
-msgid  "&Yes, check for program updates (Recommended) after the setup completes."
-msgstr "हां, प्रोग्राम के अद्यतन के लिए जाँचे (अनुशंसित) सेटअप प्रक्रिया के पूरा होने के बाद (&Y)."
-
-#: Control.ulf#OOO_CONTROL_195
-msgid  "Launch the program"
-msgstr "प्रोग्राम शुरू करें"
-
-#: Control.ulf#OOO_CONTROL_196
-msgid  "Show the readme file"
-msgstr "readme फ़ाइल दिखाएँ"
-
-#: Control.ulf#OOO_CONTROL_199
-msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr "संस्थापन का सहायक सफलता पूर्वक [ProductName]  को संस्थापित किया. समाप्त के सहायक से बाहर निकलने के लिए क्लिक करें."
-
-#: Control.ulf#OOO_CONTROL_200
-msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr "संस्थापन का सहायक सफलता पूर्वक [ProductName]  को विसंस्थापित किया. समाप्त के सहायक से बाहर निकलने के लिए क्लिक करें."
-
 #: Control.ulf#OOO_CONTROL_201
 msgid  "Setup has finished installing [ProductName]."
 msgstr "सेटअप [ProductName] संस्थापन पूर्ण किया."
-
-#: Control.ulf#OOO_CONTROL_202
-msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
-msgstr "कुछ प्रोग्राम फ़ाइलें अद्यतन हो गयी हैं जब से आपने [ProductName] की नक़ल खरीदी है."
-
-#: Control.ulf#OOO_CONTROL_203
-msgid  "Your Internet connection can be used to make sure that you have the latest updates."
-msgstr "आपका इंटरनेट कनेक्शन यह सुनिश्चित करने के लिए प्रयोग किया जा सकता है जो आपके पास नवीनतम अद्यतन है."
-
-#: Control.ulf#OOO_CONTROL_204
-msgid  "&Abort"
-msgstr "छोड़ें (&A)"
-
-#: Control.ulf#OOO_CONTROL_205
-msgid  "&Cancel"
-msgstr "रद्द करें (&C)"
 
 #: Control.ulf#OOO_CONTROL_206
 msgid  "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
@@ -1775,108 +648,20 @@ msgstr "ठीक (&O)"
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
 msgstr "[ProductName] सेटअप संस्थापन सहायक को तैयार कर रहा है जो आपके प्रोग्राम सेटअप के लिए निर्देश देगा. कृपया धैर्य रखें."
 
-#: Control.ulf#OOO_CONTROL_222
-msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr "आपका तंत्र बदला नहीं गया है. बाद मे इस प्रोग्राम को संस्थापित करने के लिए, कृपया संस्थापन को फिर चलाएं."
-
-#: Control.ulf#OOO_CONTROL_228
-msgid  "Progress done"
-msgstr "प्रगति सम्पन्न"
-
-#: Control.ulf#OOO_CONTROL_234
-msgid  "The program features you selected are being installed."
-msgstr "प्रोग्राम गुण जिसे आपने चुना है संस्थापित हो रहा है."
-
-#: Control.ulf#OOO_CONTROL_235
-msgid  "The program features you selected are being uninstalled."
-msgstr "प्रोग्राम का फीचर जिसे आपने चुना है को विसंस्थापित किया जा रहा है."
-
-#: Control.ulf#OOO_CONTROL_236
-msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
-msgstr "कृपया प्रतीक्षा करें जब तक संस्थापन सहायक [ProductName] को संस्थापित करता है. यह कई मिनट ले सकता है."
-
-#: Control.ulf#OOO_CONTROL_237
-msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
-msgstr "कृपया प्रतीक्षा करें जब तक संस्थापन सहायक [ProductName] को विसंस्थापित करता है. यह कई मिनट ले सकता है."
-
-#: Control.ulf#OOO_CONTROL_238
-msgid  "{&MSSansBold8}Installing [ProductName]"
-msgstr "{&MSSansBold8}विसंस्थापित कर रहा है [उत्पाद नाम] "
-
 #: Control.ulf#OOO_CONTROL_239
 msgid  "{&MSSansBold8}Uninstalling [ProductName]"
 msgstr "{&MSSansBold8}विसंस्थापित कर रहा है [उत्पाद नाम] "
 
-#: Control.ulf#OOO_CONTROL_240
-msgid  "Sec."
-msgstr "सेकेंड"
-
-#: Control.ulf#OOO_CONTROL_241
-msgid  "Status:"
-msgstr "स्थिति:"
-
-#: Control.ulf#OOO_CONTROL_244
-msgid  "Estimated time remaining:"
-msgstr "शेष समय अनुमानित कर रहा है:"
-
-#: Control.ulf#OOO_CONTROL_248
-msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr "संस्थापन सहायक पूरा कर आपके कंप्यूटर पर [ProductName] का संस्थापन जारी रखने के लिए, आगे को क्लिक करें."
-
-#: Control.ulf#OOO_CONTROL_249
-msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr "संस्थापन सहायक पूरा कर आपके कंप्यूटर पर [ProductName] का स्थगित संस्थापन जारी रखने के लिए, आगे को क्लिक करें."
-
-#: Control.ulf#OOO_CONTROL_250
-msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}[उत्पादनाम] के लिए संस्थापन सहायक में आपका स्वागत है"
-
 #: Control.ulf#OOO_CONTROL_255
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_256
-msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr "चुने कि कौन प्रोग्राम फीचर आप संस्थापित करना चाहते हैं और कहां वह संस्थापित होगा. उन्नत उपयोक्ता के लिए सलाह दीजिए'."
-
-#: Control.ulf#OOO_CONTROL_257
-msgid  "Choose the setup type that best suits your needs."
-msgstr "सेटअप प्रकार चुनें जो आपकी जरूरत से मिलता है."
-
-#: Control.ulf#OOO_CONTROL_258
-msgid  "Please select a setup type."
-msgstr "एक सेटअप प्रकार चुनें."
-
-#: Control.ulf#OOO_CONTROL_259
-msgid  "{&MSSansBold8}Setup Type"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_267
 msgid  "Please select the product language for [ProductName]."
 msgstr "[ProductName] के लिए उत्पाद भाषा चुनें."
 
-#: Control.ulf#OOO_CONTROL_268
-msgid  "{&MSSansBold8}Language Selection"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_269
-msgid  "Repair or remove the program."
-msgstr "मरम्मत करें या प्रोग्राम हटाएं ."
-
-#: Control.ulf#OOO_CONTROL_270
-msgid  "&Microsoft Word Documents"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_271
-msgid  "Microsoft &Excel Spreadsheets"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_272
 msgid  "Microsoft Po&werPoint Presentations"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_273
-msgid  "&[ProductName] Writer/Web"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_274
@@ -1887,78 +672,22 @@ msgstr "[DEFINEDPRODUCT] को इन सभी फ़ाइल प्रका
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
 msgstr "[ProductName]  को तयशुदा अनुप्रयोग के रूप में सेट किया जा सकता है निम्न फ़ाइल प्रकार को खोलने के लिए.इसका मतलब है, उदाहरण के लिए, यदि आप इन फ़ाइलों को दो बार क्लिक करते हैं, [ProductName] इसको खोलेगा, नहीं वह प्रोग्राम जो इसको अभी खोलता है."
 
-#: Control.ulf#OOO_CONTROL_276
-msgid  "File types"
-msgstr "फ़ाइल प्रकार"
-
-#: Control.ulf#OOO_CONTROL_277
-msgid  "Default HTML editor"
-msgstr "तयशुदा HTML संपादक"
-
-#: Control.ulf#OOO_CONTROL_278
-msgid  "{&MSSansBold8}File Type"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_300
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
 msgstr ""
-
-#: Control.ulf#OOO_CONTROL_301
-msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
-msgstr "नीचे निर्दिष्ट गंतव्य फ़ोल्डर एक [DEFINEDPRODUCT] [DEFINEDVERSION] संस्करण को नहीं रखता है."
 
 #: Control.ulf#OOO_CONTROL_302
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
 msgstr "एक नवीन [DEFINEDPRODUCT] [DEFINEDVERSION] मिला."
 
-#: Control.ulf#OOO_CONTROL_303
-msgid  "The version specified in the folder below cannot be updated."
-msgstr "नीचे निर्दिष्ट फ़ोल्डर को अद्यतन नहीं किया जा सकता है."
-
 #: Control.ulf#OOO_CONTROL_304
 msgid  "Check the destination folder."
 msgstr "गंतव्य फ़ोल्डर जाँचें."
-
-#: Control.ulf#OOO_CONTROL_305
-msgid  "To continue, click \"Next\"."
-msgstr "जारी रखने के लिए क्लिक करें"
-
-#: Control.ulf#OOO_CONTROL_306
-msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
-msgstr "अलग संस्करण चुनने के लिये, क्लिक करें"
-
-#: Control.ulf#OOO_CONTROL_307
-msgid  "To select a different folder, click \"Change\"."
-msgstr "अलग फ़ोल्डर चुनने के लिये, क्लिक करें"
 
 #: Control.ulf#OOO_CONTROL_309
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
 msgstr "यदि आप [ProductName]  को आजमा रहे हैं, आप संभवत इसको नहीं होने देना चाहते हैं, इसलिए  बॉक्स बिना चेक किए छोड़ दें."
 
-#: Control.ulf#OOO_CONTROL_317
-msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."
-msgstr "किसी भाषा को संस्थापन के लिए चुना नहीं गया है. एक अथवा अधिक भाषा को संस्थापन के लिए चुनने के लिए ठीक को क्लिक करें."
-
-#: Control.ulf#OOO_CONTROL_318
-msgid  "No applications have been selected for installation. Click OK to select one or more applications for installation."
-msgstr "किसी अनुप्रयोग को संस्थापन के लिए चुना नहीं गया है. एक अथवा अधिक अनुप्रयोग को संस्थापन के लिए चुनने के लिए ठीक को क्लिक करें."
-
 #: Control.ulf#OOO_CONTROL_319
 msgid  "Create a start link on desktop"
 msgstr "डेस्कटॉप पर आरंभ कड़ी बनाएँ"
-
-#: Control.ulf#OOO_CONTROL_320
-msgid  "Remove all older product versions"
-msgstr "सभी पुराने उत्पाद संस्करण हटाएँ"
-
-#: Control.ulf#OOO_CONTROL_LANG_1033
-msgid  "English"
-msgstr "अंग्रेज़ी"
-
-#: Control.ulf#OOO_CONTROL_LANG_1031
-msgid  "German"
-msgstr "जर्मन"
-
-#: Control.ulf#OOO_CONTROL_LANG_1034
-msgid  "Spanish"
-msgstr "स्पेनी"

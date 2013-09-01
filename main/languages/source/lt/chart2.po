@@ -31,35 +31,25 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Data Table"
-msgstr "Duomenų lentelė"
-
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.TOOLBOXITEM.TEXT
-#, fuzzy
 msgid  "Insert Row"
-msgstr "Įterpti eilutę"
+msgstr "Terpti eilutę"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.TOOLBOXITEM.TEXT
-#, fuzzy
 msgid  "Insert Series"
-msgstr "Įterpti seką"
+msgstr "Terpti seką"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.TOOLBOXITEM.TEXT
-#, fuzzy
 msgid  "Insert Text Column"
-msgstr "Įterpti teksto stulpelį"
+msgstr "Terpti teksto stulpelį"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.TOOLBOXITEM.TEXT
-#, fuzzy
 msgid  "Delete Row"
-msgstr "Šalinti eilutę"
+msgstr "Trinti eilutę"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.TOOLBOXITEM.TEXT
-#, fuzzy
 msgid  "Delete Series"
-msgstr "Šalinti seką"
+msgstr "Trinti seką"
 
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.TOOLBOXITEM.TEXT
 #, fuzzy
@@ -76,35 +66,22 @@ msgstr "Perkelti eilutę žemyn"
 msgid  "Data Ranges"
 msgstr "Duomenų sritys"
 
-#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Axes"
-msgstr "Ašys"
-
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Major grids"
 msgstr "Pagrindiniai tinkleliai"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~X axis"
-msgstr "~X ašis"
+msgstr "X ašis"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Y axis"
-msgstr "~Y ašis"
+msgstr "Y ašis"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Z axis"
-msgstr "~Z ašis"
-
-#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Secondary axes"
-msgstr "Antrinės ašys"
+msgstr "Z ašis"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
 #, fuzzy
@@ -122,9 +99,8 @@ msgid  "Font"
 msgstr "Šriftas"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-#, fuzzy
 msgid  "Font Effects"
-msgstr "Rašmenų savybės"
+msgstr "Šrifto pagražai"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
 #, fuzzy
@@ -137,19 +113,12 @@ msgid  "Paragraph"
 msgstr "Pastraipa"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
-#, fuzzy
 msgid  "Indents & Spacing"
-msgstr "Įtraukos ir intervalai"
-
-#: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Lygiuotė"
+msgstr "Įtraukos ir tarpai"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-#, fuzzy
 msgid  "Asian Typography"
-msgstr "Azijos tipografija"
+msgstr "Azijinė tipografija"
 
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
 #, fuzzy
@@ -161,445 +130,204 @@ msgstr "Tabuliavimo žymė"
 msgid  "3D View"
 msgstr "Trimatė"
 
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Box"
-msgstr "Stačiakampio gretasienio"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cylinder"
-msgstr "Cilindro"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cone"
-msgstr "Kūgio"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Pyramid"
-msgstr "Piramidės"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Best fit"
-msgstr "Sutalpinti"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Center"
-msgstr "Centruoti"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above"
-msgstr "Viršuje"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top left"
-msgstr "Viršuje kairėje"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "Kairėje"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bottom left"
-msgstr "Apačioje kairėje"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below"
-msgstr "Apačioje"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bottom right"
-msgstr "Apačioje dešinėje"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM9.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "Dešinėje"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top right"
-msgstr "Viršuje dešinėje"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM11.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Inside"
-msgstr "Viduje"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM12.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Outside"
-msgstr "Išorėje"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM13.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Near origin"
-msgstr "Netoli pradžios"
-
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_NUMBER.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Show value as ~number"
-msgstr "Reikšmę atvaizduoti ~skaičiumi"
+msgstr "Reikšmę rodyti skaičiumi"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).PB_NUMBERFORMAT.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "Number ~format..."
-msgstr "Skaičiaus ~formatas..."
+msgstr "Skaičiaus formuotė..."
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_PERCENTAGE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Show value as ~percentage"
-msgstr "Reikšmę atvaizduoti p~rocentais"
+msgstr "Reikšmę rodyti procentais"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).PB_PERCENT_NUMBERFORMAT.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "Percentage f~ormat..."
-msgstr "Procentų f~ormatas..."
+msgstr "Procentų formuotė..."
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_CATEGORY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Show ~category"
-msgstr "Rodyti ~kategoriją"
+msgstr "Rodyti kategoriją"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_SYMBOL.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Show ~legend key"
-msgstr "Rodyti ~legendą"
+msgstr "Rodyti legendos ženklą"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_PLACEMENT.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Place~ment"
-msgstr "Pa~dėtis"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FL_LABEL_ROTATE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Rotate Text"
-msgstr "Pasukti tekstą"
+msgstr "Padėtis"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_DEGREES.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Degrees"
-msgstr "~Laipsniai"
+msgstr "Laipsniai"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_TEXTDIR.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Te~xt direction"
-msgstr "T~eksto pasukimas"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Standard Error"
-msgstr "Standartinė paklaida"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Standard Deviation"
-msgstr "Standartinis nuokrypis"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Variance"
-msgstr "Variantiškumas"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Error Margin"
-msgstr "Paklaidos riba"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_ERROR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Error Category"
-msgstr "Paklaidos kategorija"
+msgstr "Teksto pasukimas"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~None"
-msgstr "~Nieko"
+msgstr "Nieko"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_CONST.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Constant Value"
-msgstr "~Konstanta"
+msgstr "Pastovioji reikšmė"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_PERCENT.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Percentage"
-msgstr "~Santykinė vertė"
+msgstr "Santykinė vertė"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_RANGE.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "Cell ~Range"
-msgstr "~Langelių sritis"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_PARAMETERS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Parameters"
-msgstr "Parametrai"
+msgstr "Langelių sritis"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_POSITIVE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "P~ositive (+)"
-msgstr "~Teigiamas (+)"
+msgstr "Teigiamas (+)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_NEGATIVE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Negative (-)"
-msgstr "~Neigiamas (-)"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).CB_SYN_POS_NEG.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Same value for both"
-msgstr "Abiems vienoda reikšmė"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_INDICATE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Error Indicator"
-msgstr "Klaidos indikatorius"
+msgstr "Neigiamas (-)"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_BOTH.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "Positive ~and Negative"
-msgstr "T~eigiamas ir neigiamas"
+msgstr "Teigiamas ir neigiamas"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_POSITIVE.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "Pos~itive"
-msgstr "~Teigiamas"
+msgstr "Teigiamas"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NEGATIVE.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "Ne~gative"
-msgstr "~Neigiamas"
+msgstr "Neigiamas"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDDISPLAY(_XPOS_,_YPOS_).CBX_SHOWLEGEND.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Display legend"
-msgstr "~Rodyti legendą"
+msgstr "Rodyti legendą"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_LEFT.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Left"
-msgstr "~Kairėje"
+msgstr "Kairėje"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_RIGHT.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Right"
-msgstr "~Dešinėje"
+msgstr "Dešinėje"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_TOP.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Top"
-msgstr "~Viršuje"
+msgstr "Viršuje"
 
 #: controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION(_XPOS_,_YPOS_).RBT_BOTTOM.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Bottom"
-msgstr "~Apačioje"
+msgstr "Apačioje"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_X_SECONDARY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "X ~axis"
-msgstr "X ~ašis"
+msgstr "X ašis"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Y_SECONDARY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Y ax~is"
-msgstr "Y a~šis"
+msgstr "Y ašis"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Z_SECONDARY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Z axi~s"
-msgstr "Z aši~s"
+msgstr "Z ašis"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM1.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Space"
 msgstr "Tarpas"
 
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Comma"
-msgstr "Kablelis"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Semicolon"
-msgstr "Kabliataškis"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "New line"
-msgstr "Nauja eilutė"
-
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_MAINTITLE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Title"
-msgstr "Pavadinimas"
+msgstr "Antraštė"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_SUBTITLE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Subtitle"
-msgstr "~Paantraštė"
-
-#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_AXES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Axes"
-msgstr "Ašys"
+msgstr "Paantraštė"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_X_AXIS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~X axis"
-msgstr "~X ašis"
+msgstr "X ašis"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Y_AXIS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Y axis"
-msgstr "~Y ašis"
+msgstr "Y ašis"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Z_AXIS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Z axis"
-msgstr "~Z ašis"
-
-#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_SECONDARY_AXES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Secondary Axes"
-msgstr "Antrinės ašys"
+msgstr "Z ašis"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_X_AXIS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "X ~axis"
-msgstr "X ~ašis"
+msgstr "X ašis"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_Y_AXIS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Y ax~is"
-msgstr "Y a~šis"
+msgstr "Y ašis"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_TYPE.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Regression Type"
-msgstr "Regresijos tipas"
+msgstr "Regresijos atmaina"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~None"
-msgstr "~Jokios"
+msgstr "Jokios"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_LINEAR.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Linear"
-msgstr "~Tiesinė"
+msgstr "Tiesinė"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_LOGARITHMIC.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "L~ogarithmic"
-msgstr "L~ogaritminė"
+msgstr "Logaritminė"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_EXPONENTIAL.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "E~xponential"
-msgstr "E~ksponentinė"
+msgstr "Rodiklinė"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).RB_POWER.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Power"
-msgstr "~Laipsninė"
-
-#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_EQUATION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Equation"
-msgstr "Lygtis"
+msgstr "Laipsninė"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_EQUATION.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Show ~equation"
-msgstr "Rodyti ~lygtį"
+msgstr "Rodyti lygtį"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_CORRELATION_COEFF.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Show ~coefficient of determination (R²)"
-msgstr "Rodyti apibrėžtumo ~koeficientą (R²)"
+msgstr "Rodyti apibrėžtumo koeficientą (R²)"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.STRING.TEXT
-#, fuzzy
 msgid  "Simple"
-msgstr "Paprasta"
+msgstr "Paprastas"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.STRING.TEXT
-#, fuzzy
 msgid  "Realistic"
-msgstr "Realistiška"
+msgstr "Tikroviškas"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.STRING.TEXT
-#, fuzzy
 msgid  "Custom"
-msgstr "Kita"
+msgstr "Naudotojo"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_BAR_GEOMETRY.STRING.TEXT
-#, fuzzy
 msgid  "Shape"
-msgstr "Forma"
+msgstr "Pavidalas"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.STRING.TEXT
-#, fuzzy
 msgid  "~Number of lines"
-msgstr "~Eilučių kiekis"
+msgstr "Eilučių skaičius"
 
 #: controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.STRING.TEXT
 #, fuzzy
 msgid  "Separator"
 msgstr "Skirtukas"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Column"
-msgstr "Stulpelinė"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.STRING.TEXT
-#, fuzzy
-msgid  "Bar"
-msgstr "Juostinė"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.STRING.TEXT
-#, fuzzy
-msgid  "Area"
-msgstr "Plokštuminė"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.STRING.TEXT
-#, fuzzy
-msgid  "Pie"
-msgstr "Skritulinė"
-
 #: controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.STRING.TEXT
 #, fuzzy
 msgid  "Exploded Pie Chart"
 msgstr "Išskleista skritulinė diagrama"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.STRING.TEXT
-#, fuzzy
-msgid  "Exploded Donut Chart"
-msgstr "Išskleista žiedinė diagrama"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT.STRING.TEXT
-#, fuzzy
-msgid  "Donut"
-msgstr "Žiedinė"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Linijinė"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.STRING.TEXT
 #, fuzzy
@@ -607,44 +335,18 @@ msgid  "XY (Scatter)"
 msgstr "Dviejų reikšmių"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_POINTS_AND_LINES.STRING.TEXT
-#, fuzzy
 msgid  "Points and Lines"
-msgstr "Taškinė-linijinė"
+msgstr "Taškinė linijinė"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_POINTS_ONLY.STRING.TEXT
 #, fuzzy
 msgid  "Points Only"
 msgstr "Taškinė"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.STRING.TEXT
-#, fuzzy
-msgid  "Lines Only"
-msgstr "Linijinė"
-
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.STRING.TEXT
 #, fuzzy
 msgid  "3D Lines"
 msgstr "Trimatė linijinė"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Column and Line"
-msgstr "Stulpelinė linijinė"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Columns and Lines"
-msgstr "Stulpelinė linijinė"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Stacked Columns and Lines"
-msgstr "Linijinė sudurtinė"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
-#, fuzzy
-msgid  "Net"
-msgstr "Spindulinė"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.STRING.TEXT
 #, fuzzy
@@ -671,73 +373,29 @@ msgstr "Akcinė 3"
 msgid  "Stock Chart 4"
 msgstr "Akcinė 4"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
-#, fuzzy
-msgid  "Normal"
-msgstr "Normalioji"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
-#, fuzzy
-msgid  "Stacked"
-msgstr "Sudurtinė"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
-#, fuzzy
-msgid  "Percent Stacked"
-msgstr "Procentinė sudurtinė"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DEEP.STRING.TEXT
-#, fuzzy
-msgid  "Deep"
-msgstr "Giluminė"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_FILLED.STRING.TEXT
-#, fuzzy
-msgid  "Filled"
-msgstr "Užpildyta"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.STRING.TEXT
-#, fuzzy
-msgid  "Bubble"
-msgstr "Burbulinė"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.STRING.TEXT
-#, fuzzy
-msgid  "Bubble Chart"
-msgstr "Burbulinė diagrama"
-
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.STRING.TEXT
-#, fuzzy
 msgid  "Numbers are required. Check your input."
-msgstr "Reikalingi skaičiai. Patikrinkite įvestus duomenis."
+msgstr "Reikalingi skaičiai. Tikrinkite įvestus duomenis."
 
 #: controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.STRING.TEXT
-#, fuzzy
 msgid  "The major interval requires a positive number. Check your input."
-msgstr "Pagrindiniam intervalui reikalingi skaičiai. Patikrinkite įvestus duomenis."
+msgstr "Pagrindiniam intervalui reikalingi skaičiai. Tikrinkite įvestus duomenis."
 
 #: controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.STRING.TEXT
-#, fuzzy
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr "Logaritminiam masteliui reikalingi skaičiai. Patikrinkite įvestus duomenis."
+msgstr "Logaritminiam masteliui reikalingi skaičiai. Tikrinkite įvestus duomenis."
 
 #: controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.STRING.TEXT
-#, fuzzy
 msgid  "The minimum must be lower than the maximum. Check your input."
-msgstr "Mažiausia reikšmė turi būti mažesnė už didžiausią. Patikrinkite įvestus duomenis."
+msgstr "Mažiausia reikšmė turi būti mažesnė už didžiausią. Tikrinkite įvestus duomenis."
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.STRING.TEXT
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
-msgstr ""
+msgstr "Pagrindinis intervalas turi būti didesnis už šalutinį. Tikrinkite įvestus duomenis."
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.STRING.TEXT
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
-msgstr ""
-
-#: controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.STRING.TEXT
-#, fuzzy
-msgid  "Chart Wizard"
-msgstr "Diagramos vediklis"
+msgstr "Pagrindinis ir šalutinis intervalai turi būti didesni už suskaidymą. Tikrinkite įvestus duomenis."
 
 #: controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.STRING.TEXT
 #, fuzzy
@@ -745,44 +403,25 @@ msgid  "Smooth Lines"
 msgstr "Glotnios linijos"
 
 #: controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.STRING.TEXT
-#, fuzzy
 msgid  "Number Format for Percentage Value"
-msgstr "Skaičiaus formatas procentinei reikšmei"
+msgstr "Skaitinė procentinės reikšmės formuotė"
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.STRING.TEXT
-#, fuzzy
 msgid  "Chart Type"
-msgstr "Diagramos tipas"
-
-#: controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.STRING.TEXT
-#, fuzzy
-msgid  "Data Range"
-msgstr "Duomenų sritis"
+msgstr "Diagramos atmaina"
 
 #: controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.STRING.TEXT
-#, fuzzy
 msgid  "Chart Elements"
-msgstr "Diagramos elementai"
-
-#: controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.STRING.TEXT
-#, fuzzy
-msgid  "Chart Location"
-msgstr "Diagramos vieta"
+msgstr "Diagramos dėmenys"
 
 #: controller/dialogs/Strings.src#STR_PAGE_LINE.STRING.TEXT
 #, fuzzy
 msgid  "Line"
 msgstr "Linijinė"
 
-#: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Kraštinės"
-
 #: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
-#, fuzzy
 msgid  "Area"
-msgstr "Sritis"
+msgstr "Plotas"
 
 #: controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.STRING.TEXT
 #, fuzzy
@@ -795,72 +434,38 @@ msgid  "Font"
 msgstr "Šriftas"
 
 #: controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.STRING.TEXT
-#, fuzzy
 msgid  "Font Effects"
-msgstr "Rašmenų savybės"
-
-#: controller/dialogs/Strings.src#STR_PAGE_NUMBERS.STRING.TEXT
-#, fuzzy
-msgid  "Numbers"
-msgstr "Skaičiai"
-
-#: controller/dialogs/Strings.src#STR_PAGE_POSITION.STRING.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Padėtis"
+msgstr "Šrifto pagražai"
 
 #: controller/dialogs/Strings.src#STR_BUTTON_UP.STRING.TEXT
 msgid  "Up"
-msgstr ""
+msgstr "Aukštyn"
 
 #: controller/dialogs/Strings.src#STR_BUTTON_DOWN.STRING.TEXT
 msgid  "Down"
-msgstr ""
+msgstr "Žemyn"
 
 #: controller/dialogs/Strings.src#STR_PAGE_LAYOUT.STRING.TEXT
-#, fuzzy
 msgid  "Layout"
-msgstr "Išdėstymas"
+msgstr "Maketas"
 
 #: controller/dialogs/Strings.src#STR_PAGE_OPTIONS.STRING.TEXT
-#, fuzzy
 msgid  "Options"
-msgstr "Parinktys"
+msgstr "Nuostatos"
 
 #: controller/dialogs/Strings.src#STR_PAGE_SCALE.STRING.TEXT
 #, fuzzy
 msgid  "Scale"
 msgstr "Mastelis"
 
-#: controller/dialogs/Strings.src#STR_PAGE_POSITIONING.STRING.TEXT
-#, fuzzy
-msgid  "Positioning"
-msgstr "Padėtis"
-
 #: controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.STRING.TEXT
-#, fuzzy
 msgid  "Type"
-msgstr "Tipas"
+msgstr "Atmaina"
 
 #: controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.STRING.TEXT
 #, fuzzy
 msgid  "Y Error Bars"
 msgstr "Y paklaidos juostos"
-
-#: controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.STRING.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Lygiuotė"
-
-#: controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.STRING.TEXT
-#, fuzzy
-msgid  "Perspective"
-msgstr "Perspektyva"
-
-#: controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.STRING.TEXT
-#, fuzzy
-msgid  "Appearance"
-msgstr "Išvaizda"
 
 #: controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.STRING.TEXT
 #, fuzzy
@@ -868,19 +473,8 @@ msgid  "Illumination"
 msgstr "Apšvietimas"
 
 #: controller/dialogs/Strings.src#STR_PAGE_ASIAN.STRING.TEXT
-#, fuzzy
 msgid  "Asian Typography"
-msgstr "Azijos tipografija"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.STRING.TEXT
-#, fuzzy
-msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr "Vidurkio linija su reikšme %AVERAGE_VALUE ir standartiniu nuokrypiu %STD_DEVIATION"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AXIS.STRING.TEXT
-#, fuzzy
-msgid  "Axis"
-msgstr "Ašis"
+msgstr "Azijinė tipografija"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.STRING.TEXT
 #, fuzzy
@@ -896,21 +490,6 @@ msgstr "Y ašis"
 #, fuzzy
 msgid  "Z Axis"
 msgstr "Z ašis"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.STRING.TEXT
-#, fuzzy
-msgid  "Secondary X Axis"
-msgstr "Antrinė X ašis"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.STRING.TEXT
-#, fuzzy
-msgid  "Secondary Y Axis"
-msgstr "Antrinė Y ašis"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AXES.STRING.TEXT
-#, fuzzy
-msgid  "Axes"
-msgstr "Ašys"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRIDS.STRING.TEXT
 #, fuzzy
@@ -952,70 +531,45 @@ msgstr "Šalutinis Y ašies tinklelis"
 msgid  "Z Axis Minor Grid"
 msgstr "Šalutinis Z ašies tinklelis"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_LEGEND.STRING.TEXT
-#, fuzzy
-msgid  "Legend"
-msgstr "Legenda"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE.STRING.TEXT
-#, fuzzy
 msgid  "Title"
-msgstr "Pavadinimas"
+msgstr "Antraštė"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLES.STRING.TEXT
-#, fuzzy
 msgid  "Titles"
-msgstr "Pavadinimai"
+msgstr "Antraštės"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.STRING.TEXT
-#, fuzzy
 msgid  "Main Title"
-msgstr "Pagrindinis pavadinimas"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.STRING.TEXT
-#, fuzzy
-msgid  "Subtitle"
-msgstr "Paantraštė"
+msgstr "Pagrindinė antraštė"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.STRING.TEXT
-#, fuzzy
 msgid  "X Axis Title"
-msgstr "X ašies pavadinimas"
+msgstr "X ašies antraštė"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_Y_AXIS.STRING.TEXT
-#, fuzzy
 msgid  "Y Axis Title"
-msgstr "Y ašies pavadinimas"
+msgstr "Y ašies antraštė"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_Z_AXIS.STRING.TEXT
-#, fuzzy
 msgid  "Z Axis Title"
-msgstr "Z ašies pavadinimas"
+msgstr "Z ašies antraštė"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.STRING.TEXT
-#, fuzzy
 msgid  "Secondary X Axis Title"
-msgstr "Antrinės X ašies pavadinimas"
+msgstr "Antrinės X ašies antraštė"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.STRING.TEXT
-#, fuzzy
 msgid  "Secondary Y Axis Title"
-msgstr "Antrinės Y ašies pavadinimas"
+msgstr "Antrinės Y ašies antraštė"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LABEL.STRING.TEXT
-#, fuzzy
 msgid  "Label"
-msgstr "Žymė"
+msgstr "Žymena"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.STRING.TEXT
-#, fuzzy
 msgid  "Data Labels"
-msgstr "Duomenų žymės"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.STRING.TEXT
-#, fuzzy
-msgid  "Data Point"
-msgstr "Duomenų taškas"
+msgstr "Duomenų žymenos"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.STRING.TEXT
 #, fuzzy
@@ -1023,49 +577,28 @@ msgid  "Data Points"
 msgstr "Duomenų taškai"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.STRING.TEXT
-#, fuzzy
 msgid  "Legend Key"
-msgstr "Legendos paaiškinimas"
+msgstr "Legendos ženklas"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.STRING.TEXT
-#, fuzzy
 msgid  "Data Series"
 msgstr "Duomenų sekos"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVE.STRING.TEXT
-#, fuzzy
 msgid  "Trend Line"
-msgstr "Tendencijos linija"
+msgstr "Krypties linija"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVES.STRING.TEXT
-#, fuzzy
 msgid  "Trend Lines"
-msgstr "Tendencijos linijos"
+msgstr "Krypties linijos"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.STRING.TEXT
-#, fuzzy
 msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
-msgstr "Tendencijos linija %FORMULA su tikslumu R² = %RSQUARED"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Mean Value Line"
-msgstr "Vidurkio linija"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.STRING.TEXT
-#, fuzzy
-msgid  "Equation"
-msgstr "Lygtis"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.STRING.TEXT
-#, fuzzy
-msgid  "Error Bars"
-msgstr "Paklaidos juostos"
+msgstr "Krypties linija %FORMULA su tikslumu R² = %RSQUARED"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.STRING.TEXT
-#, fuzzy
 msgid  "Stock Loss"
-msgstr "Akcijų nuostoliai"
+msgstr "Akcijų nuostolis"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_GAIN.STRING.TEXT
 #, fuzzy
@@ -1077,35 +610,17 @@ msgstr "Akcijų pelnas"
 msgid  "Chart Area"
 msgstr "Diagramos plotas"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.STRING.TEXT
-#, fuzzy
-msgid  "Chart"
-msgstr "Diagrama"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.STRING.TEXT
-#, fuzzy
-msgid  "Chart Wall"
-msgstr "Diagramos siena"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.STRING.TEXT
-#, fuzzy
-msgid  "Chart Floor"
-msgstr "Diagramos pagrindas"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_SHAPE.STRING.TEXT
-#, fuzzy
 msgid  "Drawing Object"
-msgstr "Grafikos objektas"
+msgstr "Braižybos objektas"
 
 #: controller/dialogs/Strings.src#STR_TIP_SELECT_RANGE.STRING.TEXT
-#, fuzzy
 msgid  "Select data range"
-msgstr "Pasirinkite duomenų sritį"
+msgstr "Rinktis duomenų sritį"
 
 #: controller/dialogs/Strings.src#STR_TIP_CHOOSECOLOR.STRING.TEXT
-#, fuzzy
 msgid  "Select a color using the color dialog"
-msgstr "Spalvų dialogo lange pasirinkite spalvą"
+msgstr "Spalvų dialoge rinkitės spalvą"
 
 #: controller/dialogs/Strings.src#STR_TIP_LIGHTSOURCE_X.STRING.TEXT
 #, fuzzy
@@ -1116,16 +631,6 @@ msgstr "Šviesos šaltinis %LIGHTNUMBER"
 #, fuzzy
 msgid  "Data Series '%SERIESNAME'"
 msgstr "Duomenų seka „%SERIESNAME“"
-
-#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.STRING.TEXT
-#, fuzzy
-msgid  "Data Point %POINTNUMBER"
-msgstr "Duomenų taškas %POINTNUMBER"
-
-#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.STRING.TEXT
-#, fuzzy
-msgid  "Values: %POINTVALUES"
-msgstr "Reikšmės: %POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT.STRING.TEXT
 #, fuzzy
@@ -1158,9 +663,8 @@ msgid  "%OBJECTNAME for all Data Series"
 msgstr "Objektas „%OBJECTNAME“ visoms duomenų sekoms"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_CHARTTYPE.STRING.TEXT
-#, fuzzy
 msgid  "Edit chart type"
-msgstr "Taisyti diagramos tipą"
+msgstr "Taisyti diagramos atmainą"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_DATA_RANGES.STRING.TEXT
 #, fuzzy
@@ -1168,9 +672,8 @@ msgid  "Edit data ranges"
 msgstr "Taisyti duomenų sritis"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.STRING.TEXT
-#, fuzzy
 msgid  "Edit 3D view"
-msgstr "Taisyti trimatį rodymą"
+msgstr "Taisyti trimatį rodinį"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.STRING.TEXT
 #, fuzzy
@@ -1183,9 +686,8 @@ msgid  "Legend on/off"
 msgstr "Legenda rodoma arba nerodoma"
 
 #: controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.STRING.TEXT
-#, fuzzy
 msgid  "Horizontal grid on/off"
-msgstr "Horizontalus tinklelis rodomas arba nerodomas"
+msgstr "Statmenas tinklelis rodomas arba nerodomas"
 
 #: controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.STRING.TEXT
 #, fuzzy
@@ -1193,9 +695,8 @@ msgid  "Scale Text"
 msgstr "Keisti teksto dydį"
 
 #: controller/dialogs/Strings.src#STR_ACTION_REARRANGE_CHART.STRING.TEXT
-#, fuzzy
 msgid  "Automatic Layout"
-msgstr "Automatinis išdėstymas"
+msgstr "Savaiminis maketas"
 
 #: controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.STRING.TEXT
 #, fuzzy
@@ -1204,17 +705,7 @@ msgstr "Šios funkcijos su pažymėtais objektais negalima įvykdyti."
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.STRING.TEXT
 msgid  "Edit text"
-msgstr ""
-
-#: controller/dialogs/Strings.src#STR_COLUMN_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Column %COLUMNNUMBER"
-msgstr "%COLUMNNUMBER stulpelis"
-
-#: controller/dialogs/Strings.src#STR_ROW_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Row %ROWNUMBER"
-msgstr "%ROWNUMBER eilutė"
+msgstr "Taisyti tekstą"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.STRING.TEXT
 #, fuzzy
@@ -1230,11 +721,6 @@ msgstr "X reikšmės"
 #, fuzzy
 msgid  "Y-Values"
 msgstr "Y reikšmės"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.STRING.TEXT
-#, fuzzy
-msgid  "Bubble Sizes"
-msgstr "Burbulų dydžiai"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.STRING.TEXT
 #, fuzzy
@@ -1267,79 +753,41 @@ msgid  "Negative Y-Error-Bars"
 msgstr "Neigiamos Y paklaidos juostos"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_FIRST.STRING.TEXT
-#, fuzzy
 msgid  "Open Values"
-msgstr "Atverti reikšmes"
+msgstr "Atversti reikšmes"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LAST.STRING.TEXT
-#, fuzzy
 msgid  "Close Values"
-msgstr "Užverti reikšmes"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.STRING.TEXT
-#, fuzzy
-msgid  "Low Values"
-msgstr "Mažos reikšmės"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.STRING.TEXT
-#, fuzzy
-msgid  "High Values"
-msgstr "Didelės reikšmės"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.STRING.TEXT
-#, fuzzy
-msgid  "Categories"
-msgstr "Kategorijos"
+msgstr "Užversti reikšmes"
 
 #: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.STRING.TEXT
 #, fuzzy
 msgid  "Unnamed Series"
 msgstr "Nepavadinta seka"
 
-#: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.STRING.TEXT
-#, fuzzy
-msgid  "Unnamed Series %NUMBER"
-msgstr "Nepavadinta seka %NUMBER"
-
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.STRING.TEXT
-#, fuzzy
 msgid  "Select Range for %VALUETYPE of %SERIESNAME"
-msgstr "Pasirinkite sekos „%SERIESNAME“ reikšmių „%VALUETYPE“ sritį"
+msgstr "Rinktis sekos „%SERIESNAME“ reikšmių „%VALUETYPE“ sritį"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.STRING.TEXT
-#, fuzzy
 msgid  "Select Range for Categories"
-msgstr "Pasirinkite kategorijų sritį"
+msgstr "Rinktis kategorijų sritį"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.STRING.TEXT
-#, fuzzy
 msgid  "Select Range for data labels"
-msgstr "Pasirinkite duomenų žymių sritį"
+msgstr "Rinktis duomenų žymenų sritį"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.STRING.TEXT
-#, fuzzy
 msgid  "Select Range for Positive Error Bars"
-msgstr "Pasirinkite teigiamų paklaidos juostų sritį"
+msgstr "Rinktis teigiamų paklaidos juostų sritį"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.STRING.TEXT
-#, fuzzy
 msgid  "Select Range for Negative Error Bars"
-msgstr "Pasirinkite neigiamų paklaidos juostų sritį"
+msgstr "Rinktis neigiamų paklaidos juostų sritį"
 
 #: controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.STRING.TEXT
-#, fuzzy
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr "Paskutinis įvestas duomuo neteisingas.\nAr ignoruoti pakeitimą ir uždaryti dialogo langą?"
-
-#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.STRING.TEXT
-#, fuzzy
-msgid  "Left-to-right"
-msgstr "Iš kairės į dešinę"
-
-#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.STRING.TEXT
-#, fuzzy
-msgid  "Right-to-left"
-msgstr "Iš dešinės į kairę"
+msgstr "Paskutinis įvestas duomuo netaisyklingas.\nAr keitinio nepaisyti ir užverti dialogą?"
 
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.STRING.TEXT
 #, fuzzy
@@ -1351,109 +799,77 @@ msgstr "Naudoti ankstesnio objekto nuostatas"
 msgid  "Negative and Positive"
 msgstr "Neigiama ir teigiama"
 
-#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.STRING.TEXT
-#, fuzzy
-msgid  "Negative"
-msgstr "Neigiama"
-
-#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
-#, fuzzy
-msgid  "Positive"
-msgstr "Teigiama"
-
-#: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
-#, fuzzy
-msgid  "From Data Table"
-msgstr "Iš duomenų lentelės"
-
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.STRING.TEXT
 msgid  "Linear (%SERIESNAME)"
-msgstr ""
+msgstr "Tiesinė (%SERIESNAME)"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LOG.STRING.TEXT
 msgid  "Logarithmic (%SERIESNAME)"
-msgstr ""
+msgstr "Logaritminė (%SERIESNAME)"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_EXP.STRING.TEXT
 msgid  "Exponential (%SERIESNAME)"
-msgstr ""
+msgstr "Rodiklinė (%SERIESNAME)"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_POWER.STRING.TEXT
 msgid  "Power (%SERIESNAME)"
-msgstr ""
+msgstr "Laipsninė (%SERIESNAME)"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_MEAN.STRING.TEXT
 msgid  "Mean (%SERIESNAME)"
-msgstr ""
+msgstr "Vidurkinė (%SERIESNAME)"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Sche~me"
-msgstr "Sche~ma"
+msgstr "Schema"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Shading"
-msgstr "~Šešėliai"
+msgstr "Šešėliai"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Object borders"
-msgstr "~Objekto kraštinės"
+msgstr "Objekto kraštinės"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Rounded edges"
-msgstr "~Užapvalinti kraštai"
-
-#: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
-#, fuzzy
-msgid  " degrees"
-msgstr " laipsnių"
+msgstr "Užapvalintos briaunos"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Right-angled axes"
-msgstr "~Stačiakampės ašys"
+msgstr "Stačiakampės ašys"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~X rotation"
-msgstr "~X posūkis"
+msgstr "X posūkis"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Y rotation"
-msgstr "~Y posūkis"
+msgstr "Y posūkis"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Z rotation"
-msgstr "~Z posūkis"
+msgstr "Z posūkis"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Perspective"
-msgstr "~Perspektyva"
+msgstr "Perspektyva"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Light source"
-msgstr "~Šviesos šaltinis"
+msgstr "Šviesos šaltinis"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Ambient light"
-msgstr "~Neapšviestoji pusė"
+msgstr "Neapšviestoji pusė"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.STRING.TEXT
 msgid  "Light Preview"
-msgstr ""
+msgstr "Peržiūrėti šviesą"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Sho~w labels"
-msgstr "R~odyti žymes"
+msgstr "Rodyti žymenas"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FIXEDLINE.TEXT
 #, fuzzy
@@ -1461,29 +877,20 @@ msgid  "Text orientation"
 msgstr "Teksto kryptis"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TRISTATEBOX.TEXT
-#, fuzzy
 msgid  "Ve~rtically stacked"
-msgstr "Išdėstyta ve~rtikaliai"
+msgstr "Išdėstyta statmenai"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Degrees"
-msgstr "~Laipsniai"
-
-#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text flow"
-msgstr "Teksto laužymas"
+msgstr "Laipsniai"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
-#, fuzzy
 msgid  "O~verlap"
-msgstr "P~ersidengia"
+msgstr "Persidengia"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Break"
-msgstr "~Lūžis"
+msgstr "Lūžis"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FIXEDLINE.TEXT
 #, fuzzy
@@ -1491,154 +898,77 @@ msgid  "Order"
 msgstr "Eilė"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Tile"
-msgstr "~Išklotinė"
+msgstr "Išklotinė"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "St~agger odd"
-msgstr "~Nelygines aukščiau"
+msgstr "Nelygines aukščiau"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "Stagger ~even"
-msgstr "~Lygines aukščiau"
+msgstr "Lygines aukščiau"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "A~utomatic"
-msgstr "A~utomatinė"
+msgstr "Savaiminė"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Te~xt direction"
-msgstr "T~eksto pasukimas"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Axis line"
-msgstr "Ašies linija"
+msgstr "Teksto pasukimas"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Cross other axis at"
-msgstr "~Kitos ašys susikerta ties"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Start"
-msgstr "Pradžia"
+msgstr "Kitos ašys susikerta ties"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "End"
 msgstr "Pabaiga"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Value"
-msgstr "Reikšmė"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Category"
-msgstr "Kategorija"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Axis ~between categories"
-msgstr "Ašis ~tarp kategorijų"
+msgstr "Ašis tarp kategorijų"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Labels"
-msgstr "Žymės"
+msgstr "Žymenos"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Place labels"
-msgstr "~Uždėti žymes"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Near axis"
-msgstr "Artimoji ašis"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Near axis (other side)"
-msgstr "Artimoji ašis (kita pusė)"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Outside start"
-msgstr "Išorinė pradžia"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Outside end"
-msgstr "Išorinė pabaiga"
+msgstr "Uždėti žymenas"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Distance"
-msgstr "~Atstumas"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Interval marks"
-msgstr "Intervalo žymos"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Major:"
-msgstr "Pagrindinis:"
+msgstr "Atstumas"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Inner"
-msgstr "~Vidinis"
+msgstr "Vidinis"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Outer"
-msgstr "~išorėje"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Minor:"
-msgstr "Šalutinis:"
+msgstr "išorėje"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CHECKBOX.TEXT
-#, fuzzy
 msgid  "I~nner"
-msgstr "vi~duje"
+msgstr "viduje"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.CHECKBOX.TEXT
-#, fuzzy
 msgid  "O~uter"
-msgstr "~Išorinis"
+msgstr "Išorinis"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Place ~marks"
-msgstr "U~ždėti žymas"
+msgstr "Uždėti žymas"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
 msgid  "At labels"
-msgstr "Ant žymių"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "At axis"
-msgstr "Ant ašių"
+msgstr "Ant žymenų"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM3.STRINGLIST.ITEM
-#, fuzzy
 msgid  "At axis and labels"
-msgstr "Ant ašių ir žymių"
+msgstr "Ant ašies ir žymenų"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FIXEDLINE.TEXT
 #, fuzzy
@@ -1646,29 +976,24 @@ msgid  "Grids"
 msgstr "Tinkleliai"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Show major ~grid"
-msgstr "Rodyti pagrindinį ~tinklelį"
+msgstr "Rodyti pagrindinį tinklelį"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "Mo~re..."
-msgstr "~Daugiau…"
+msgstr "Daugiau…"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Show minor grid"
-msgstr "R~odyti šalutinį tinklelį"
+msgstr "Rodyti šalutinį tinklelį"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "Mor~e..."
-msgstr "Da~ugiau"
+msgstr "Daugiau"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Choose a chart type"
-msgstr "Pasirinkite diagramos tipą"
+msgstr "Rinktis diagramos atmainą"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.CHECKBOX.TEXT
 #, fuzzy
@@ -1676,44 +1001,20 @@ msgid  "X axis with Categories"
 msgstr "X ašis su kategorijomis"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~3D Look"
-msgstr "~Trimatė"
+msgstr "Trimatė"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Stack series"
-msgstr "~Išdėstyti sekas"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "On top"
-msgstr "Iš viršaus"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Percent"
-msgstr "Procentais"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Deep"
-msgstr "Giluminė"
+msgstr "Išdėstyti sekas"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CHECKBOX.TEXT
-#, fuzzy
 msgid  "S~mooth lines"
-msgstr "~Glotnios linijos"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Properties..."
-msgstr "Savybės…"
+msgstr "Glotnios linijos"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Sort by X values"
-msgstr "~Rikiuoti pagal X reikšmes"
+msgstr "Rikiuoti pagal X reikšmes"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1726,59 +1027,40 @@ msgid  "B-Spline"
 msgstr "B-splainas"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Resolution"
-msgstr "~Suskaidymas"
+msgstr "Suskaidymas"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Degree of polynomials"
-msgstr "~Duomenų taškų išdėstymo tvarka"
-
-#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Customize data ranges for individual data series"
-msgstr "Pritaikyti duomenų sritis atskiroms duomenų sekoms"
+msgstr ""
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Data ~series"
-msgstr "Duomenų ~seka"
+msgstr "Duomenų seka"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Data ranges"
-msgstr "~Duomenų sritys"
+msgstr "Duomenų sritys"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Ran~ge for %VALUETYPE"
-msgstr "%VALUETYPE s~ritis"
+msgstr "%VALUETYPE sritis"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Categories"
-msgstr "~Kategorijos"
+msgstr "Kategorijos"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Data ~labels"
-msgstr "Duomenų ~žymės"
+msgstr "Duomenų žymenos"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~Add"
-msgstr "~Pridėti"
+msgstr "Pridėti"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~Remove"
-msgstr "~Šalinti"
-
-#: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Padėtis"
+msgstr "Šalinti"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
 #, fuzzy
@@ -1786,9 +1068,8 @@ msgid  "Text orientation"
 msgstr "Teksto kryptis"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Te~xt direction"
-msgstr "T~eksto pasukimas"
+msgstr "Teksto pasukimas"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FIXEDLINE.TEXT
 #, fuzzy
@@ -1796,14 +1077,12 @@ msgid  "Place chart"
 msgstr "Padėti diagramą"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Insert in sheet"
-msgstr "Į~terpti į lakštą"
+msgstr "Terpti į lakštą"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Clockwise direction"
-msgstr "~Pagal laikrodžio rodyklę"
+msgstr "Pagal laikrodžio rodyklę"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FIXEDLINE.TEXT
 #, fuzzy
@@ -1811,61 +1090,52 @@ msgid  "Starting angle"
 msgstr "Pradinis kampas"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Degrees"
-msgstr "~Laipsniai"
+msgstr "Laipsniai"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Plot options"
-msgstr "Grafiko nustatymai"
+msgstr "Grafiko nuostatos"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Include ~values from hidden cells"
-msgstr "Įtraukti ~reikšmes iš paslėptų langelių"
+msgstr "Įtraukti reikšmes iš paslėptų langelių"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Choose a data range"
-msgstr "Pasirinkite duomenų sritį"
+msgstr "Rinktis duomenų sritį"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Data range"
-msgstr "~Duomenų sritis"
+msgstr "Duomenų sritis"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "Data series in ~rows"
-msgstr "Duomenų seka ~eilutėse"
+msgstr "Duomenų seka eilutėse"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "Data series in ~columns"
-msgstr "Duomenų seka ~stulpeliuose"
+msgstr "Duomenų seka stulpeliuose"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~First row as label"
-msgstr "~Pirmoji eilutė – žymė"
+msgstr "Pirmoji eilutė kaip žymena"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CHECKBOX.TEXT
-#, fuzzy
 msgid  "F~irst column as label"
-msgstr "Pi~rmasis stulpelis – žymė"
+msgstr "Pirmasis stulpelis kaip žymena"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM1.STRINGLIST.ITEM
 msgid  "Days"
-msgstr ""
+msgstr "Dienos"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM2.STRINGLIST.ITEM
 msgid  "Months"
-msgstr ""
+msgstr "Mėnesiai"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM3.STRINGLIST.ITEM
 msgid  "Years"
-msgstr ""
+msgstr "Metai"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FIXEDLINE.TEXT
 #, fuzzy
@@ -1873,101 +1143,84 @@ msgid  "Scale"
 msgstr "Mastelis"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Reverse direction"
-msgstr "~Priešinga kryptimi"
+msgstr "Priešinga kryptimi"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Logarithmic scale"
-msgstr "Logaritminis ~mastelis"
+msgstr "Logaritminis mastelis"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "T~ype"
-msgstr "Tipas"
+msgstr "Atmaina"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM1.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Automatic"
-msgstr "A~utomatinė"
+msgstr "Savaiminė"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM2.STRINGLIST.ITEM
 msgid  "Text"
-msgstr ""
+msgstr "Tekstas"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM3.STRINGLIST.ITEM
 msgid  "Date"
-msgstr ""
+msgstr "Data"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Minimum"
-msgstr "~Mažiausia:"
+msgstr "Mažiausia:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Automatic"
-msgstr "~Automatiškai"
+msgstr "Savaime"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Ma~ximum"
-msgstr "~Didžiausia:"
+msgstr "Didžiausia:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CHECKBOX.TEXT
-#, fuzzy
 msgid  "A~utomatic"
-msgstr "A~utomatinė"
+msgstr "Savaiminė"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "R~esolution"
-msgstr "~Suskaidymas"
+msgstr "Suskaidymas"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Automat~ic"
-msgstr "Aut~omatiškai"
+msgstr "Savaime"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Ma~jor interval"
-msgstr "Pagrindinis ~intervalas:"
+msgstr "Pagrindinis intervalas:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Au~tomatic"
-msgstr "A~utomatiškai"
+msgstr "Savaime"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Minor inter~val count"
-msgstr "Ma~žojo intervalo žingsnis:"
+msgstr "Mažojo intervalo žingsnis:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FIXEDTEXT.TEXT
 msgid  "Minor inter~val"
-msgstr ""
+msgstr "Šalutinis intervalas"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Aut~omatic"
-msgstr "Au~tomatiškai"
+msgstr "Savaime"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Re~ference value"
-msgstr "Pradinė ~reikšmė:"
+msgstr "Pradinė reikšmė:"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Align data series to"
-msgstr "Lygiuoti duomenų sekas"
+msgstr "Lygiuoti duomenų sekas pagal"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "Primary Y axis"
-msgstr "Pirmoji Y ašis"
+msgstr "Pirminė Y ašis"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1980,14 +1233,12 @@ msgid  "Settings"
 msgstr "Nuostatos"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Overlap"
-msgstr "Persi~dengimas"
+msgstr "Persidengimas"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Spacing"
-msgstr "~Tarpai"
+msgstr "Tarpai"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CHECKBOX.TEXT
 #, fuzzy
@@ -1995,14 +1246,12 @@ msgid  "Connection lines"
 msgstr "Sujungimo linijos"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Show ~bars side by side"
-msgstr "Ro~dyti juostas vieną šalia kitos"
+msgstr "Rodyti juostas vieną šalia kitos"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Plot options"
-msgstr "Grafiko nustatymai"
+msgstr "Grafiko nuostatos"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2010,34 +1259,28 @@ msgid  "Plot missing values"
 msgstr "Trūkstamų reikšmių atidėjimas"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Leave gap"
-msgstr "~Palikti tarpą"
+msgstr "Palikti tarpą"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Assume zero"
-msgstr "~Laikyti lygias 0"
+msgstr "Laikyti lygias 0"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "~Continue line"
-msgstr "~Tęsti liniją"
+msgstr "Tęsti liniją"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Include ~values from hidden cells"
-msgstr "Įtraukti ~reikšmes iš paslėptų langelių"
+msgstr "Įtraukti reikšmes iš paslėptų langelių"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TRISTATEBOX.TEXT
-#, fuzzy
 msgid  "Ve~rtically stacked"
-msgstr "Išdėstyta ve~rtikaliai"
+msgstr "Išdėstyta statmenai"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Degrees"
-msgstr "~Laipsniai"
+msgstr "Laipsniai"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FIXEDLINE.TEXT
 #, fuzzy
@@ -2045,14 +1288,12 @@ msgid  "Text orientation"
 msgstr "Teksto kryptis"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Te~xt direction"
-msgstr "T~eksto pasukimas"
+msgstr "Teksto pasukimas"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Choose titles, legend, and grid settings"
-msgstr "Parinkite pavadinimus, legendą ir tinklelio nuostatas"
+msgstr "Rinktis antraštes, legendą ir tinklelio nuostatas"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.FIXEDLINE.TEXT
 #, fuzzy
