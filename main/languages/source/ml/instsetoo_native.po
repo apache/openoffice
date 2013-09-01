@@ -47,14 +47,6 @@ msgstr ""
 msgid  "x-xxx-xxx-xxx"
 msgstr ""
 
-#: Property.ulf#OOO_ARPURLINFOABOUTTEMPLATE
-msgid  "http://www.openoffice.org"
-msgstr ""
-
-#: Property.ulf#OOO_ARPURLUPDATEINFOTEMPLATE
-msgid  "http://www.openoffice.org"
-msgstr ""
-
 #: Property.ulf#OOO_STR_NEW_DISPLAY_NAME
 msgid  "~New"
 msgstr ""
@@ -491,10 +483,6 @@ msgstr ""
 msgid  "The path [2] is not valid.  Please specify a valid path."
 msgstr ""
 
-#: Error.ulf#OOO_ERROR_91
-msgid  "Out of memory. Shut down other applications before retrying."
-msgstr ""
-
 #: Error.ulf#OOO_ERROR_92
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to go back to the previously selected volume."
 msgstr ""
@@ -653,19 +641,19 @@ msgstr ""
 
 #: CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
-msgstr ""
+msgstr "[ProductName] - പുതിയ പതിപ്പു് ലഭ്യമാണു്. പഴയ പതിപ്പു് ഇന്‍സ്റ്റോള്‍ ചെയ്യണമെങ്കില്‍ ഈ പുതിയ പതിപ്പു് നീക്കം ചെയ്യുക."
 
 #: CustomAc.ulf#OOO_CUSTOMACTION_2
 msgid  "The same version of this product is already installed."
-msgstr ""
+msgstr "ഈ പ്രോഗ്രാമിന്റെ അതേ പതിപ്പു് നിലവില്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്തിട്ടുണ്ടു്."
 
 #: CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
-msgstr ""
+msgstr "[ProductName] - പഴയ പതിപ്പു് ലഭ്യമാണു്. പുതിയ പതിപ്പു് ഇന്‍സ്റ്റോള്‍ ചെയ്യണമെങ്കില്‍ പഴയ പതിപ്പു് നീക്കം ചെയ്യുക."
 
 #: CustomAc.ulf#OOO_CUSTOMACTION_4
 msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr ""
+msgstr "തുടരുന്നതിനായി, [DEFINEDPRODUCT] [DEFINEDVERSION]-ല്‍നിന്നും [DEFINEDPRODUCT] [DEFINEDVERSION] ക്വിക്ക്സ്റ്റാര്‍ട്ടറില്‍ നിന്നും പുറത്തു് കടക്കുക. മള്‍ട്ടി-യൂസര്‍ സിസ്റ്റം ആണുപയോഗിക്കുന്നതെങ്കില്‍, ആരും [DEFINEDPRODUCT] [DEFINEDVERSION] ഉപയോഗിക്കുന്നില്ലെന്നുറപ്പാക്കുക."
 
 #: UIText.ulf#OOO_UITEXT_1
 msgid  "bytes"
@@ -725,10 +713,6 @@ msgstr ""
 
 #: UIText.ulf#OOO_UITEXT_15
 msgid  "This feature will be set to be installed when required."
-msgstr ""
-
-#: UIText.ulf#OOO_UITEXT_16
-msgid  "This feature will be installed to run from CD."
 msgstr ""
 
 #: UIText.ulf#OOO_UITEXT_17
@@ -907,10 +891,6 @@ msgstr ""
 msgid  "Computing space requirements"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_12
-msgid  "Computing space requirements"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_13
 msgid  "Creating folders"
 msgstr ""
@@ -943,10 +923,6 @@ msgstr ""
 msgid  "File: [1],  Directory: [9],  Size: [6]"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_21
-msgid  "Computing space requirements"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_22
 msgid  "Searching for related applications"
 msgstr ""
@@ -973,10 +949,6 @@ msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_28
 msgid  "Copying new files"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_29
-msgid  "File: [1],  Directory: [9],  Size: [6]"
 msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_30
@@ -1017,10 +989,6 @@ msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_39
 msgid  "Moving files"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_40
-msgid  "File: [1],  Directory: [9],  Size: [6]"
 msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_41
@@ -1099,10 +1067,6 @@ msgstr ""
 msgid  "Registering product"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_60
-msgid  "[1]"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_61
 msgid  "Registering program identifiers"
 msgstr ""
@@ -1121,10 +1085,6 @@ msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_65
 msgid  "Registering user"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_66
-msgid  "[1]"
 msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_67
@@ -1155,16 +1115,8 @@ msgstr ""
 msgid  "Removing files"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_74
-msgid  "File: [1], Directory: [9]"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_75
 msgid  "Removing folders"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_76
-msgid  "Folder: [1]"
 msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_77
@@ -1191,28 +1143,12 @@ msgstr ""
 msgid  "Removing shortcuts"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_83
-msgid  "Shortcut: [1]"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_84
-msgid  "Searching for qualifying products"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_85
 msgid  "Rolling back action:"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_86
-msgid  "[1]"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_87
 msgid  "Removing backup files"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_88
-msgid  "File: [1]"
 msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_89
@@ -1227,10 +1163,6 @@ msgstr ""
 msgid  "Unregistering modules"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_92
-msgid  "File: [1], Folder: [2]"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_93
 msgid  "Initializing ODBC directories"
 msgstr ""
@@ -1239,40 +1171,20 @@ msgstr ""
 msgid  "Starting services"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_95
-msgid  "Service: [1]"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_96
 msgid  "Stopping services"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_97
-msgid  "Service: [1]"
 msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_98
 msgid  "Removing moved files"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_99
-msgid  "File: [1], Directory: [9]"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_100
 msgid  "Unpublishing Qualified Components"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_101
-msgid  "Component ID: [1], Qualifier: [2]"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_102
 msgid  "Unpublishing product features"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_103
-msgid  "Feature: [1]"
 msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_104
@@ -1281,10 +1193,6 @@ msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_105
 msgid  "Unregister class servers"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_106
-msgid  "Class ID: [1]"
 msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_107
@@ -1299,56 +1207,24 @@ msgstr ""
 msgid  "Unregistering extension servers"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_110
-msgid  "Extension: [1]"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_111
 msgid  "Unregistering fonts"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_112
-msgid  "Font: [1]"
 msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_113
 msgid  "Unregistering MIME info"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_114
-msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_115
 msgid  "Unregistering program identifiers"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_116
-msgid  "ProgID: [1]"
 msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_117
 msgid  "Unregistering type libraries"
 msgstr ""
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_118
-msgid  "LibID: [1]"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_119
-msgid  "Updating environment strings"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_120
-msgid  "Name: [1], Value: [2], Action [3]"
-msgstr ""
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_121
 msgid  "Writing INI file values"
-msgstr ""
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_122
-msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
 msgstr ""
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_123
@@ -1487,10 +1363,6 @@ msgstr ""
 msgid  "&Change..."
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_18
-msgid  "Cancel"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_19
 msgid  "Specify a network location for the server image of the product."
 msgstr ""
@@ -1509,14 +1381,6 @@ msgstr ""
 
 #: Control.ulf#OOO_CONTROL_23
 msgid  "&Network location:"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_24
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_25
-msgid  "Cancel"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_26
@@ -1541,14 +1405,6 @@ msgstr ""
 
 #: Control.ulf#OOO_CONTROL_31
 msgid  "&Yes"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_32
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_35
-msgid  "Cancel"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_36
@@ -1579,24 +1435,8 @@ msgstr ""
 msgid  "&User Name:"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_43
-msgid  "&Next >"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_45
 msgid  "&Serial Number:"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_46
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_49
-msgid  "Cancel"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_50
-msgid  "&Change..."
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_51
@@ -1635,10 +1475,6 @@ msgstr ""
 msgid  "<selected feature path>"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_60
-msgid  "&Next >"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_61
 msgid  "Feature size"
 msgstr ""
@@ -1675,24 +1511,8 @@ msgstr ""
 msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_72
-msgid  "OK"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_73
 msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_74
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_77
-msgid  "Cancel"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_78
-msgid  "&Change..."
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_79
@@ -1711,26 +1531,6 @@ msgstr ""
 msgid  "Install [ProductName] database to:"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_83
-msgid  "&Next >"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_84
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_87
-msgid  "Cancel"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_88
-msgid  "&Change..."
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_89
-msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_90
 msgid  "{&MSSansBold8}Destination Folder"
 msgstr ""
@@ -1743,10 +1543,6 @@ msgstr ""
 msgid  "Install [ProductName] to:"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_93
-msgid  "&Next >"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_96
 msgid  "The disk space required for the installation of the selected features."
 msgstr ""
@@ -1757,10 +1553,6 @@ msgstr ""
 
 #: Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_100
-msgid  "OK"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_103
@@ -1787,68 +1579,20 @@ msgstr ""
 msgid  "&Retry"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_111
-msgid  "Cancel"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_113
-msgid  "&Look in:"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_114
-msgid  "Browse to the destination folder."
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_115
-msgid  "{&MSSansBold8}Change Current Destination Folder"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_117
 msgid  "Create New Folder|"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_118
-msgid  "OK"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_120
-msgid  "&Folder name:"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_121
 msgid  "Up One Level|"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_122
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_123
-msgid  "Cancel"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_124
 msgid  "This Program is based on the 'Apache OpenOffice' project which is supported by members of the Apache Community. For credits please see: http://www.openoffice.org/welcome/credits.html"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_125
-msgid  "&Next >"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_126
-msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_128
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_131
-msgid  "Cancel"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_132
@@ -1859,28 +1603,12 @@ msgstr ""
 msgid  "{&MSSansBold8}License Agreement"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_134
-msgid  "&Next >"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_135
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_138
-msgid  "Cancel"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_139
 msgid  "Modify, repair, or remove the program."
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_140
 msgid  "{&MSSansBold8}Program Maintenance"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_141
-msgid  "&Next >"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_143
@@ -1895,22 +1623,6 @@ msgstr ""
 msgid  "Remove [ProductName] from your computer."
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_146
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_147
-msgid  "Cancel"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_148
-msgid  "&Next >"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_149
-msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_150
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
 msgstr ""
@@ -1919,28 +1631,12 @@ msgstr ""
 msgid  "Disk space required for the installation exceeds available disk space."
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_154
-msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_155
 msgid  "{&MSSansBold8}Out of Disk Space"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_156
 msgid  "{120}{70}{70}{70}{70}"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_157
-msgid  "OK"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_158
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_159
-msgid  "Cancel"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_160
@@ -1953,14 +1649,6 @@ msgstr ""
 
 #: Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_163
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_166
-msgid  "Cancel"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_167
@@ -1987,18 +1675,6 @@ msgstr ""
 msgid  "{&MSSansBold8}Ready to Install the Program"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_173
-msgid  "&Install"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_174
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_177
-msgid  "Cancel"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_178
 msgid  "You have chosen to remove the program from your system."
 msgstr ""
@@ -2017,14 +1693,6 @@ msgstr ""
 
 #: Control.ulf#OOO_CONTROL_182
 msgid  "&Remove"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_183
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_184
-msgid  "Cancel"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_185
@@ -2055,14 +1723,6 @@ msgstr ""
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_192
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_193
-msgid  "Cancel"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_194
 msgid  "&Yes, check for program updates (Recommended) after the setup completes."
 msgstr ""
@@ -2073,14 +1733,6 @@ msgstr ""
 
 #: Control.ulf#OOO_CONTROL_196
 msgid  "Show the readme file"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_197
-msgid  "&Finish"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_198
-msgid  "{&TahomaBold10}Installation Wizard Completed"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_199
@@ -2115,92 +1767,20 @@ msgstr ""
 msgid  "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_207
-msgid  "&Ignore"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_208
-msgid  "&No"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_209
 msgid  "&OK"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_210
-msgid  "&Retry"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_211
-msgid  "&Yes"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_214
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_215
-msgid  "Cancel"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_216
-msgid  "&Next >"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_217
-msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_218
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_219
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_220
-msgid  "Cancel"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_221
-msgid  "&Finish"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_222
 msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_223
-msgid  "Click Finish to exit the wizard."
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_224
-msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_225
-msgid  "Click Restore or Continue Later to exit the wizard."
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_226
-msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_227
-msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_228
 msgid  "Progress done"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_230
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_233
-msgid  "Cancel"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_234
@@ -2235,24 +1815,8 @@ msgstr ""
 msgid  "Status:"
 msgstr ""
 
-#: Control.ulf#OOO_CONTROL_242
-msgid  "&Next >"
-msgstr ""
-
 #: Control.ulf#OOO_CONTROL_244
 msgid  "Estimated time remaining:"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_245
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_246
-msgid  "Cancel"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_247
-msgid  "&Next >"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_248
@@ -2265,14 +1829,6 @@ msgstr ""
 
 #: Control.ulf#OOO_CONTROL_250
 msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_251
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_254
-msgid  "Cancel"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_255
@@ -2293,22 +1849,6 @@ msgstr ""
 
 #: Control.ulf#OOO_CONTROL_259
 msgid  "{&MSSansBold8}Setup Type"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_260
-msgid  "&Next >"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_262
-msgid  "< &Back"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_265
-msgid  "Cancel"
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_266
-msgid  "&Next >"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_267
@@ -2389,10 +1929,6 @@ msgstr ""
 
 #: Control.ulf#OOO_CONTROL_307
 msgid  "To select a different folder, click \"Change\"."
-msgstr ""
-
-#: Control.ulf#OOO_CONTROL_308
-msgid  "Install [ProductName] to:"
 msgstr ""
 
 #: Control.ulf#OOO_CONTROL_309
