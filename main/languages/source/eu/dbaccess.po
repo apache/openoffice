@@ -59,10 +59,6 @@ msgstr "Kanpoko datu-iturburuarekin ezin izan da konexiorik ezarri. SDBC kontrol
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
 msgstr "Kanpoko datu-iturburuarekin ezin izan da konexiorik ezarri. SDBC kontrolatzailearen kudeatzailea ezin izan da kargatu."
 
-#: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
-msgid  "Form"
-msgstr "Inprimakia"
-
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
 msgstr "Txostena"
@@ -627,14 +623,6 @@ msgstr "Ez da aplikagarria irakurtzeko soilik motako dokumentuetan."
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 msgstr "Ezin diezu izen bera eman taula bati eta kontsulta bati. Erabili oraindik kontsulta edo taula batek erabiltzen ez duen izen bat."
 
-#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Taula"
-
-#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
-msgid  "Query"
-msgstr "Kontsulta"
-
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
 msgid  "The given connection is no valid query and/or tables supplier."
 msgstr "Emandako konexioa ez da baliozko kontsulta- edota taula-hornitzailea."
@@ -655,10 +643,6 @@ msgstr "Komando mota baliogabea - Soilik TABLE eta QUERY komando motak daude bai
 msgid  "Create Form in Design View..."
 msgstr "Sortu inprimakia diseinu-ikuspegian..."
 
-#: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Form..."
-msgstr "Erabili morroia inprimakia sortzeko..."
-
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Report..."
 msgstr "Erabili morroia txostena sortzeko..."
@@ -675,25 +659,9 @@ msgstr "Sortu kontsulta diseinu-ikuspegian..."
 msgid  "Create Query in SQL View..."
 msgstr "Sortu kontsulta SQL ikuspegian..."
 
-#: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Query..."
-msgstr "Erabili morroia kontsulta sortzeko..."
-
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
 msgid  "Create Table in Design View..."
 msgstr "Sortu taula diseinu-ikuspegian..."
-
-#: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Table..."
-msgstr "Erabili morroia taula sortzeko..."
-
-#: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
-msgid  "Create View..."
-msgstr "Sortu ikuspegia..."
-
-#: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
-msgid  "Forms"
-msgstr "Inprimakiak"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
 msgid  "Reports"
@@ -719,14 +687,6 @@ msgstr "Itsatsi berezia..."
 msgid  "Delete"
 msgstr "Ezabatu"
 
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
-msgid  "Rename"
-msgstr "Izena aldatu"
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
-msgid  "Edit"
-msgstr "Editatu"
-
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
 msgid  "Edit in SQL View..."
 msgstr "Editatu SQL ikuspegian..."
@@ -734,10 +694,6 @@ msgstr "Editatu SQL ikuspegian..."
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
 msgid  "Open"
 msgstr "Ireki"
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
-msgid  "Create as View"
-msgstr "Sortu ikuspegi gisa"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Form Wizard..."
@@ -815,17 +771,9 @@ msgstr "Hautatu laneko taulen edo taula pertsonalen eredu bat, eta hura pertsona
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
 msgstr "Sortu ikuspegia, ikusgai eduki nahi dituzun taulak eta eremu-izenak zehaztuz."
 
-#: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
-msgid  "Opens the view wizard"
-msgstr "Ikuspegien morroia irekitzen du"
-
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
 msgid  "Database"
 msgstr "Datu-basea"
-
-#: ui/app/app.src#STR_TASKS.STRING.TEXT
-msgid  "Tasks"
-msgstr "Atazak"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
 msgid  "Description"
@@ -839,21 +787,13 @@ msgstr "Aurrebista"
 msgid  "Disable Preview"
 msgstr "Desgaitu aurrebista"
 
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
-msgid  "None"
-msgstr "Bat ere ez"
+#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The database has been modified.\nDo you want to save the changes?"
+msgstr "Datu-basea aldatu egin da.\nAldaketak gorde nahi dituzu?"
 
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
-msgid  "Document Information"
-msgstr "Dokumentu-informazioa"
-
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
-msgid  "Document"
-msgstr "Dokumentua"
-
-#: ui/app/app.src#RID_STR_FORM.STRING.TEXT
-msgid  "Form"
-msgstr "Inprimakia"
+#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
+msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
+msgstr "Konexio mota aldatu egin da.\nAldaketek eragina izateko, inprimaki, txosten, kontsulta eta taula guztiak itxi behar dituzu.\n\nDokumentu guztiak itxi nahi dituzu orain?"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
@@ -891,9 +831,9 @@ msgstr "Ezin duzu kategoria desberdinik hautatu."
 msgid  "Unsupported object type found ($type$)."
 msgstr "Onartu gabeko objektu mota aurkitu da ($type$)."
 
-#: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
-msgid  "Table #"
-msgstr "Taula #"
+#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The current record has been changed.\nDo you want to save the changes?"
+msgstr "Erregistroan aldaketak egin dira.\nGorde nahi dituzu?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
 msgid  "Do you want to delete the selected data?"
@@ -914,14 +854,6 @@ msgstr "Errorea iragazteko irizpideak ezartzean"
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
 msgid  "Connection lost"
 msgstr "Konexioa galdu egin da"
-
-#: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
-msgid  "Queries"
-msgstr "Kontsultak"
-
-#: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
-msgid  "Tables"
-msgstr "Taulak"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
 msgid  "Edit ~Database File..."
@@ -979,10 +911,6 @@ msgstr "Ez da taula-formaturik aurkitu."
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "\"$name$\" datu-iturburuarekin ezin izan da konexiorik ezarri."
 
-#: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
-msgid  "Rebuild"
-msgstr "Berreraiki"
-
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
 msgid  "Column ~Format..."
 msgstr "Zutabe-~formatua..."
@@ -995,29 +923,9 @@ msgstr "Kopiatu zutabeen azalp~ena"
 msgid  "Table Format..."
 msgstr "Taularen formatua..."
 
-#: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
-msgid  "Row Height..."
-msgstr "Errenkada-altuera..."
-
-#: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
-msgid  "Undo: Data Input"
-msgstr "Desegin: datu-sarrera"
-
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
 msgid  "Save current record"
 msgstr "Gorde uneko erregistroa"
-
-#: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
-msgid  "Query #"
-msgstr "Kontsulta #"
-
-#: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
-msgid  "Table #"
-msgstr "Taula #"
-
-#: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
-msgid  "View #"
-msgstr "Ikuspegi #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name \"#\" already exists."
@@ -1039,85 +947,13 @@ msgstr "Datu-iturburuaren taulen ikuspegia"
 msgid  "Shows the selected table or query."
 msgstr "Hautatutako taula edo kontsulta erakusten du."
 
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
-msgid  "Table name"
-msgstr "Taularen izena"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
-msgid  "Insert data"
-msgstr "Txertatu datuak"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
-msgid  "Delete data"
-msgstr "Datuak ezabatzea"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
-msgid  "Modify data"
-msgstr "Aldatu datuak"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
-msgid  "Alter structure"
-msgstr "Aldatu egitura"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
-msgid  "Read data"
-msgstr "Irakurri datuak"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
-msgid  "Modify references"
-msgstr "Aldatu erreferentziak"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
-msgid  "Drop structure"
-msgstr "Kendu egitura"
-
-#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
-msgid  "Sort Ascending"
-msgstr "Ordenatu gorantz"
-
-#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
-msgid  "Sort Descending"
-msgstr "Ordenatu beherantz"
-
-#: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
-msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr "Ezin da konexiorik ezarri SDBC kontrolatzaile-kudeatzailearekin (#servicename#)."
-
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "Ez dago kontrolatzailerik erregistratuta #connurl# URLarentzat"
 
-#: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
-msgid  "No connection could be established for the URL #connurl#."
-msgstr "Ezin izan da konexiorik ezarri #connurl# URLarekin."
-
-#: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
-msgid  "Please check the current settings, for example user name and password."
-msgstr "Begiratu ezarpenak ongi dauden; esate baterako, erabiltzaile-izena eta pasahitza."
-
-#: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
-msgid  "Successfully connected, but information about database tables is not available."
-msgstr "Konexioa ongi ezarri da, baina ezin izan da aurkitu datu-baseko taulei buruzko informaziorik."
-
-#: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
-msgid  "All tables"
-msgstr "Taula guztiak"
-
-#: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
-msgid  "All views"
-msgstr "Ikuspegi guztiak"
-
-#: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
-msgid  "All tables and views"
-msgstr "Taula eta ikuspegi guztiak"
-
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
 msgid  "Modify SQL statement(s)"
 msgstr "Aldatu SQL instrukzioa(k)"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
-msgid  "Database files"
-msgstr "Datu-basearen fitxategiak"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE:"
@@ -1131,49 +967,9 @@ msgstr "~TRANSACTIONLOG:"
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
-msgid  "Database sizes"
-msgstr "Datu-baseen tamainak"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
-msgid  "S~ize (MB):"
-msgstr "Tama~ina (MB):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
-msgid  "~Free memory space (MB):"
-msgstr "L~eku librea (MB):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
-msgid  "~Memory utilization (in %):"
-msgstr "~Memoria-erabilera (%):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
-msgid  "Database Statistics"
-msgstr "Datu-basearen estatistikak"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
-msgid  "Contains the system tables"
-msgstr "Sistema-taulak dauzka"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
-msgid  "Contains information about transaction"
-msgstr "Transakzioei buruzko informazioa dauka"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
-msgid  "Contains all data files"
-msgstr "Datu-fitxategi guztiak dauzka"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
-msgid  "Total size of the database files"
-msgstr "Datu-basearen fitxategien tamaina guztira"
-
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Unean libre dagoen lekua datadev fitxategi berria sortu aurretik."
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
-msgid  "Currently used memory"
-msgstr "Erabiltzen ari den memoria"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
 msgid  "No information could be displayed because no access rights exist for the required system tables."
@@ -1195,10 +991,6 @@ msgstr "~Zerbitzaria"
 msgid  "~Port"
 msgstr "~Ataka"
 
-#: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
-msgid  "Default: 3306"
-msgstr "Lehenetsia: 3306"
-
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
 msgid  "So~cket"
 msgstr "~Socket-a"
@@ -1207,34 +999,6 @@ msgstr "~Socket-a"
 msgid  "Named p~ipe"
 msgstr "Izendatutako ~kanalizazioa"
 
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
-msgid  "Tables"
-msgstr "Taulak"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
-msgid  "Queries"
-msgstr "Kontsultak"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
-msgid  "~Add"
-msgstr "Ge~hitu"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "~Close"
-msgstr "It~xi"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
-msgid  "Add Tables"
-msgstr "Gehitu taulak"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
-msgid  "Add Table or Query"
-msgstr "Gehitu taula edo kontsulta"
-
-#: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Aukerak"
-
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
 msgid  "Use SQL92 naming constraints"
 msgstr "Erabili SQL92 izen-murriztapenak"
@@ -1242,10 +1006,6 @@ msgstr "Erabili SQL92 izen-murriztapenak"
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
 msgid  "Append the table alias name on SELECT statements"
 msgstr "Erantsi taularen alias-izena SELECT instrukzioetan"
-
-#: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
-msgid  "Use keyword AS before table alias names"
-msgstr "Erabili AS gako-hitza taulen alias-izenen aurretik"
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
 msgid  "Use Outer Join syntax '{OJ }'"
@@ -1258,10 +1018,6 @@ msgstr "Ez ikusi egin datu-baseko kontrolatzaileko pribilejioei"
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
 msgid  "Replace named parameters with '?'"
 msgstr "Ordeztu parametro izendunak '?' ikurrarekin"
-
-#: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
-msgid  "Display version columns (when available)"
-msgstr "Erakutsi bertsio-zutabeak (daudenean)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
 msgid  "Use catalog name in SELECT statements"
@@ -1315,10 +1071,6 @@ msgstr "Nahastua"
 msgid  "MS Access"
 msgstr "MS Access"
 
-#: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
-msgid  "Comparison of Boolean values"
-msgstr "Balio logikoen konparazioa"
-
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
 msgstr "Zutabe motak lortzeko arakatu beharreko lerroak"
@@ -1335,14 +1087,6 @@ msgstr "Es~kuratu sortutako balioak"
 msgid  "~Auto-increment statement"
 msgstr "~Gehikuntza automatikoko instrukzioa"
 
-#: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
-msgid  "~Query of generated values"
-msgstr "~Sortutako balioen kontsulta"
-
-#: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
-msgid  "Generated Values"
-msgstr "Sortutako balioak"
-
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
 msgid  "Special Settings"
 msgstr "Ezarpen bereziak"
@@ -1350,22 +1094,6 @@ msgstr "Ezarpen bereziak"
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
 msgstr "Propietate aurreratuak"
-
-#: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to the dBASE files"
-msgstr "dBASE fitxategien bide-izena"
-
-#: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to the text files"
-msgstr "Testu-fitxategien bide-izena"
-
-#: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to the spreadsheet document"
-msgstr "Kalkulu-orriaren bide-izena"
-
-#: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
-msgid  "Name of the ODBC data source on your system"
-msgstr "Zure sistemako ODBC datu-iturburuaren izena"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the MySQL database"
@@ -1378,10 +1106,6 @@ msgstr "Oracle datu-basearen izena"
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Adabas D database"
 msgstr "Adabas D datu-basearen izena"
-
-#: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
-msgid  "Microsoft Access database file"
-msgstr "Microsoft Access datu-basearen fitxategia"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
@@ -1399,10 +1123,6 @@ msgstr "~Ostalari-izena"
 msgid  "~Mozilla profile name"
 msgstr "~Mozilla profil-izena"
 
-#: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
-msgid  "~Thunderbird profile name"
-msgstr "~Thunderbird profil-izena"
-
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
 msgid  "Browse"
 msgstr "Arakatu"
@@ -1414,14 +1134,6 @@ msgstr "Datu-basearen izena"
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
 msgid  "Server"
 msgstr "Zerbitzaria"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
-msgid  "Base ~DN"
-msgstr "Base ~DN"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr "~Ataka-zenbakia"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
 msgid  "Data conversion"
@@ -1435,17 +1147,9 @@ msgstr "~Karaktere-jokoa"
 msgid  "Specify the type of files you want to access"
 msgstr "Zehaztu zein motatako fitxategiak atzitu nahi dituzun"
 
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
-msgid  "Plain text files (*.txt)"
-msgstr "Testu soileko fitxategiak (*.txt)"
-
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
 msgid  "'Comma separated value' files (*.csv)"
 msgstr "'Komaz bereiztutako balioak' fitxategiak (*.csv)"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
-msgid  "Custom:"
-msgstr "Pertsonalizatua:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Custom: *.abc"
@@ -1471,13 +1175,9 @@ msgstr "~Dezimalen bereizlea"
 msgid  "Thousands separator"
 msgstr "Milakoen bereizlea"
 
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
-msgid  "~Text contains headers"
-msgstr "~Testuak goiburukoa du"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
-msgid  "{None}"
-msgstr "{Bat ere ez}"
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
+msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
 msgid  "#1 must be set."
@@ -1497,71 +1197,27 @@ msgstr "JDBC kontrolatzaile mota"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y,_AUTO_HID,_AUTO_HID2).PB_AUTOTESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test class"
-msgstr "Frogarako mota"
+msgstr "Proba-klasea"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP(AUTO_Y).FT_SOCKET.FIXEDTEXT.TEXT
 msgid  "Socket"
 msgstr "Socket-a"
 
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
-msgid  "Save"
-msgstr "Gorde"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Create New Directory"
-msgstr "Sortu direktorio berria"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Up One Level"
-msgstr "Igo maila bat"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
-msgid  "File ~name:"
-msgstr "~Fitxategi-izena:"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
-msgid  "~Path:"
-msgstr "~Bide-izena:"
-
-#: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
-msgid  "Folder"
-msgstr "Karpeta"
-
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
 msgstr "Fitxategia badago lehendik. Gainidatzi?"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "General"
-msgstr "Orokorra"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Host name"
 msgstr "~Ostalari-izena"
 
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "User authentication"
-msgstr "Erabiltzailearen autentifikazioa"
-
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
 msgstr "~Erabiltzaile-izena"
 
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
-msgid  "Password required"
-msgstr "Pasahitza behar da"
-
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
 msgid  "JDBC properties"
 msgstr "JDBC propietateak"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "~JDBC driver class"
-msgstr "~JDBC kontrolatzaile-klasea"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test Class"
-msgstr "Probatu klasea"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "Test Connection"
@@ -1611,21 +1267,9 @@ msgstr "$path$\n\ndirektorioa ez dago.\nSortu nahi duzu?"
 msgid  "The directory $name$ could not be created."
 msgstr "$name$ direktorioa ezin izan da sortu."
 
-#: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
-msgid  "Convert Database"
-msgstr "Bihurtu datu-basea"
-
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
 msgid  "Please enter the ~password for the user 'DOMAIN'."
 msgstr "Idatzi 'DOMAIN' erabiltzailearen ~pasahitza"
-
-#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
-msgid  "Tables Filter"
-msgstr "Taula-iragazkia"
-
-#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Tables and table filter"
-msgstr "Taulak eta taula-iragazkia"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Mark the tables that should be visible for the applications."
@@ -1634,10 +1278,6 @@ msgstr "Markatu aplikazioetarako ikusgai egon behar duten taulak."
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
 msgid  "Database Wizard"
 msgstr "Datu-baseen morroia"
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
-msgid  "Select database"
-msgstr "Hautatu datu-basea"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
 msgid  "Set up dBASE connection"
@@ -1691,14 +1331,6 @@ msgstr "Konfiguratu erabiltzaile-autentifikazioa"
 msgid  "Set up MySQL server data"
 msgstr "Konfiguratu MySQL zerbitzariaren datuak"
 
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
-msgid  "Save and proceed"
-msgstr "Gorde eta jarraitu"
-
-#: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
-msgid  "New Database"
-msgstr "Datu-base berria"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to a MySQL database"
 msgstr "Konfiguratu MySQL datu-base baterako konexioa"
@@ -1731,10 +1363,6 @@ msgstr "Konfiguratu erabiltzaile-autentifikazioa"
 msgid  "Some databases require you to enter a user name."
 msgstr "Datu-base batzuek erabiltzaile-izena idaztea eskatzen dute."
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
-msgid  "~User name"
-msgstr "~Erabiltzaile-izena"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "Password re~quired"
 msgstr "Pasahitza be~harrezkoa"
@@ -1742,10 +1370,6 @@ msgstr "Pasahitza be~harrezkoa"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "~Test Connection"
 msgstr "~Probatu konexioa"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
-msgid  "Decide how to proceed after saving the database"
-msgstr "Erabaki nola jarraitu nahi duzun datu-basea gordetakoan"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
@@ -1758,10 +1382,6 @@ msgstr "~Bai, erregistratu datu-basea"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "N~o, do not register the database"
 msgstr "~Ez, ez erregistratu datu-basea"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
-msgid  "After the database file has been saved, what do you want to do?"
-msgstr "Datu-basearen fitxategia gorde ostean, zer egitea nahi duzu?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
 msgid  "Open the database for editing"
@@ -1782,10 +1402,6 @@ msgstr "Konfiguratu MySQL datu-base baterako konexioa JDBCrekin"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr "Sartu JDBCrekin MySQL datu-base batera konektatzeko behar den informazioa. Kontuan izan JDBC kontrolatzaile klase bat instalatuta eta %PRODUCTNAME(r)ekin erregistratuta eduki behar duzula.\nHonako ezarpenei buruzko zalantzarik izanez gero, galdetu sistema-administratzaileari."
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
-msgid  "MySQL JDBC d~river class:"
-msgstr "MySQL JDBC ~kontrolatzaile klasea:"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
 msgid  "Default: 3306"
@@ -1811,17 +1427,9 @@ msgstr "Hautatu dBASE fitxategiak gordetako karpeta."
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
 msgstr "Hautatu CSV (Komaz Bereiztutako Balioak) testu-fitxategiak gordetako karpeta. %PRODUCTNAME Base-k irakurtzeko soilik irekiko ditu fitxategiak."
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to text files"
-msgstr "Testu-fitxategien bide-izena"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a Microsoft Access database"
 msgstr "Konfiguratu Microsoft Access datu-base baterako konexioa"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
-msgid  "Please select the Microsoft Access file you want to access."
-msgstr "Hautatu atzitu nahi duzun Microsoft Access fitxategia."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to an LDAP directory"
@@ -1830,10 +1438,6 @@ msgstr "Konfiguratu LDAP direktorio baterako konexioa"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr "Sartu LDAP direktorio batera konektatzeko beharrezko informazioa.\nHonako ezarpenei buruzko zalantzarik izanez gero, galdetu sistema-administratzaileari."
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
-msgid  "Default: 389"
-msgstr "Lehenetsia: 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
 msgid  "Use ~secure connection (SSL)"
@@ -1875,14 +1479,6 @@ msgstr "Sartu JDBC direktorio batera konektatzeko beharrezko informazioa.\nHonak
 msgid  "Set up a connection to an Oracle database"
 msgstr "Konfiguratu Oracle datu-base baterako konexioa"
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
-msgid  "Default: 1521"
-msgstr "Lehenetsia: 1521"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
-msgid  "Oracle JDBC ~driver class"
-msgstr "~Oracle JDBC kontrolatzaile-klasea"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr "Sartu Oracle datu-base batera konektatzeko beharrezko informazioa. Kontuan izan JDBC kontrolatzaile klase bat instalatuta eta %PRODUCTNAME(r)ekin erregistratuta eduki behar duzula.\nHonako ezarpenei buruzko zalantzarik izanez gero, galdetu sistema-administratzaileari."
@@ -1902,10 +1498,6 @@ msgstr "~Kokalekua eta fitxategi-izena"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "~Password required"
 msgstr "~Pasahitza behar da"
-
-#: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
-msgid  "Use catalog for file-based databases"
-msgstr "Erabili katalogoa fitxategian oinarritutako datu-baseetan"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Connection Settings"
@@ -1931,10 +1523,6 @@ msgstr "Ezarpen osagarriak"
 msgid  "Connection settings"
 msgstr "Konexioaren ezarpenak"
 
-#: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
-msgid  "Database properties"
-msgstr "Datu-baseen propietateak"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
 msgstr "Ongi etorri %PRODUCTNAME datu-baseen morroira"
@@ -1943,49 +1531,13 @@ msgstr "Ongi etorri %PRODUCTNAME datu-baseen morroira"
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
 msgstr "Erabili datu-baseen morroia datu-base berri bat sortzeko, lehendik dagoen datu-base bat irekitzeko, edo zerbitzarian gordetako datu-base batera konektatzeko."
 
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
-msgid  "What do you want to do?"
-msgstr "Zer egin nahi duzu?"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
-msgid  "Create a n~ew database"
-msgstr "Sortu ~datu-base berria"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
-msgid  "Open an existing database ~file"
-msgstr "Ireki lehendik dagoen datu-base bat"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
-msgid  "Recently used"
-msgstr "Erabilitako azkenak"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
-msgid  "Connect to an e~xisting database"
-msgstr "Konektatu ~lehendik dagoen datu-base batera"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
 msgid  "Select the type of database to which you want to establish a connection."
 msgstr "Hautatu zein motatako datu basera konektatu nahi duzun."
 
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
-msgid  "Database ~type "
-msgstr "Datu-basearen ~mota "
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
-msgid  "Database"
-msgstr "Datu-basea"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
 msgstr "Honako orrietan, konexioaren ezarpen xehatuak egin ditzakezu.\n\nEzarpen berriek ordeztu egingo dituzte lehendik daudenak."
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
-msgid  "MySQL"
-msgstr "MySQL"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
-msgid  "Data Source Properties: #"
-msgstr "Datu-iturburuaren propietateak: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
@@ -1994,10 +1546,6 @@ msgstr "#lib# programa-liburutegia ezin izan da kargatu edo hondatuta dago. ODBC
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
 msgstr "Era honetako datu-iturbururik ez da onartzen plataforma honetan.\nEzarpenak alda ditzakezu, baina seguru asko ezingo zara konektatu datu-basearekin."
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
-msgid  "General"
-msgstr "Orokorra"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional settings"
@@ -2019,65 +1567,17 @@ msgstr "~Indizeak..."
 msgid  "Optional Settings"
 msgstr "Aukerako ezarpenak"
 
-#: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
-msgid  "ODBC ~options"
-msgstr "~ODBC aukerak"
-
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
 msgstr "Datu-~bufferraren tamaina (MB)"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
-msgid  "~Data increment (MB)"
-msgstr "~Gehikuntza (MB)"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "Administration"
-msgstr "Administrazioa"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
-msgid  "Control ~user name"
-msgstr "Kontroleko e~rabiltzaile-izena"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
-msgid  "Control ~password"
-msgstr "Kontroleko ~pasahitza"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
 msgid  "~Shut down service when closing %PRODUCTNAME"
 msgstr "It~xi zerbitzua %PRODUCTNAME ixtean"
 
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
-msgid  "E~xtended..."
-msgstr "~Hedatua..."
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "MySQL JDBC d~river class"
-msgstr "MySQL JDBC ~kontrolatzaile klasea"
-
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test class"
 msgstr "Probatu klasea"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "User authentication"
-msgstr "Erabiltzailearen autentifikazioa"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
-msgid  "~User name"
-msgstr "~Erabiltzaile-izena"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
-msgid  "Password required"
-msgstr "Pasahitza behar da"
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "Oracle JDBC d~river class"
-msgstr "Oracle JDBC ~kontrolatzaile klasea"
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
-msgid  "~Base DN"
-msgstr "O~inarrizko DNa"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
 msgid  "Use secure connection(SSL)"
@@ -2099,49 +1599,9 @@ msgstr "Kon~trolatzailearen ezarpenak"
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
 msgstr "Aukeratu 'Konektatu lehendik dagoen datu-basera' existitzen den datu-base batera konektatzeko."
 
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
-msgid  "Indexes"
-msgstr "Indizeak"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
-msgid  "~Table"
-msgstr "~Taula"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
-msgid  "Assignment"
-msgstr "Esleipena"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
-msgid  "T~able indexes"
-msgstr "T~aula-indizeak"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
-msgid  "~Free indexes"
-msgstr "In~dize libreak"
-
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
 msgid  "SQL command"
 msgstr "SQL komandoa"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
-msgid  "Command to execute"
-msgstr "Exekutatu beharreko komandoa"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
-msgid  "Execute"
-msgstr "Exekutatu"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
-msgid  "Previous commands"
-msgstr "Aurreko komandoak"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
-msgid  "Status"
-msgstr "Egoera"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
-msgid  "Close"
-msgstr "Itxi"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
 msgid  "Execute SQL Statement"
@@ -2159,165 +1619,33 @@ msgstr "Datu-basearekiko konexioa galdu egin da. Elkarrizketa itxi egingo da."
 msgid  "Field Format"
 msgstr "Eremu-formatua"
 
-#: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
-msgid  "Bac~k"
-msgstr "Atze~ra"
-
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
 msgid  "Font"
 msgstr "Letra-tipoa"
-
-#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
-msgid  "Format"
-msgstr "Formatua"
-
-#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
-msgid  "Alignment"
-msgstr "Lerrokatzea"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
 msgid  "Table Format"
 msgstr "Taularen formatua"
 
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
-msgid  "Save As"
-msgstr "Gorde honela"
-
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the object to be created:"
 msgstr "Idatzi izen bat objektu berriarentzat:"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
-msgid  "~Catalog"
-msgstr "~Katalogoa"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
-msgid  "~Schema"
-msgstr "~Eskema"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
-msgid  "~Table Name"
-msgstr "~Taularen izena"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
-msgid  "~Name of table view"
-msgstr "T~aula-ikuspegiaren izena"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
-msgid  "~Query name"
-msgstr "K~ontsultaren izena"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
-msgid  "Rename to"
-msgstr "Aldatu izena:"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
 msgid  "Insert as"
 msgstr "Txertatu honela:"
 
-#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
-msgid  "~Height"
-msgstr "~Altuera"
-
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
 msgid  "~Automatic"
 msgstr "Auto~matikoa"
-
-#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
-msgid  "Row Height"
-msgstr "Errenkada-altuera"
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
-msgid  "~Width"
-msgstr "~Zabalera"
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
-msgid  "Column Width"
-msgstr "Zutabe-zabalera"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
-msgid  "Data Source"
-msgstr "Datu-iturburua"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Choose a data source:"
-msgstr "Aukeratu datu-iturburu bat:"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
-msgid  "Organize..."
-msgstr "Antolatu..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
 msgid  "Create..."
 msgstr "Sortu..."
 
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
-msgid  "Local Databases"
-msgstr "Datu-base lokalak"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
-msgid  "Choose a database"
-msgstr "Hautatu datu-base bat"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
-msgid  "Indexes"
-msgstr "Indizeak"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
-msgid  "New Index"
-msgstr "Indize berria"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
-msgid  "Delete Current Index"
-msgstr "Ezabatu uneko indizea"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
-msgid  "Rename Current Index"
-msgstr "Aldatu izena uneko indizeari"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
-msgid  "Save Current Index"
-msgstr "Gorde uneko indizea"
-
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
 msgid  "Reset Current Index"
 msgstr "Berrezarri uneko indizea"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
-msgid  "Index details"
-msgstr "Indizearen xehetasunak"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
-msgid  "Index identifier:"
-msgstr "Indize-identifikadorea:"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
-msgid  "~Unique"
-msgstr "~Bakarra"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
-msgid  "Fields"
-msgstr "Eremuak"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "It~xi"
-
-#: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
-msgid  "Sort order"
-msgstr "Ordenatu"
-
-#: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
-msgid  "Index field"
-msgstr "Indize-eremua"
-
-#: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
-msgid  "Ascending"
-msgstr "Gorantz"
-
-#: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
-msgid  "Descending"
-msgstr "Beherantz"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
 msgid  "Do you really want to delete the index '$name$'?"
@@ -2327,10 +1655,6 @@ msgstr "Benetan ezabatu nahi duzu '$name$' indizea?"
 msgid  "index"
 msgstr "indizea"
 
-#: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
-msgid  "Save Index"
-msgstr "Gorde indizea"
-
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
 msgid  "The index must contain at least one field."
 msgstr "Indizeak eremu bat izan behar du gutxienez."
@@ -2338,10 +1662,6 @@ msgstr "Indizeak eremu bat izan behar du gutxienez."
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
 msgid  "Exit Index Design"
 msgstr "Itxi indize-diseinua"
-
-#: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
-msgid  "Do you want to save the changes made to the current index?"
-msgstr "Uneko indizean egindako aldaketak gorde nahi dituzu?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There is already another index named \"$name$\"."
@@ -2355,14 +1675,6 @@ msgstr "Indize-definizioan, behin bakarrik agertu behar du taulako zutabe bakoit
 msgid  "~Parameters"
 msgstr "~Parametroak"
 
-#: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
-msgid  "~Value"
-msgstr "~Balioa"
-
-#: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
-msgid  "~Next"
-msgstr "~Hurrengoa"
-
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
 msgid  "Parameter Input"
 msgstr "Parametro-sarrera"
@@ -2370,10 +1682,6 @@ msgstr "Parametro-sarrera"
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
 msgstr "Emandako sarrera ezin da baliozko balio bihurtu \"$name$\" zutabearentzat"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
-msgid  "Standard Filter"
-msgstr "Iragazki estandarra"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "AND"
@@ -2383,25 +1691,9 @@ msgstr "ETA"
 msgid  "OR"
 msgstr "EDO"
 
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
-msgid  "Field name"
-msgstr "Eremu-izena"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
-msgid  "Condition"
-msgstr "Baldintza"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
-msgid  "Value"
-msgstr "Balioa"
-
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
 msgid  "Operator"
 msgstr "Eragilea"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
-msgid  "Criteria"
-msgstr "Irizpideak"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "- none -"
@@ -2411,10 +1703,6 @@ msgstr "- bat ere ez -"
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;berdina;desberdina;hutsa;ez hutsa"
 
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
-msgid  "Sort Order"
-msgstr "Ordenatu"
-
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "ascending"
 msgstr "gorantz"
@@ -2422,10 +1710,6 @@ msgstr "gorantz"
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "descending"
 msgstr "beherantz"
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
-msgid  "Field name"
-msgstr "Eremu-izena"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
 msgid  "and then"
@@ -2435,41 +1719,13 @@ msgstr "eta ondoren"
 msgid  "Operator"
 msgstr "Eragilea"
 
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
-msgid  "Order"
-msgstr "Ordena"
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
-msgid  "Sort order"
-msgstr "Ordenatu"
-
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "<none>"
 msgstr "<bat ere ez>"
 
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
-msgid  "Relations"
-msgstr "Erlazioak"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
-msgid  "Tables involved"
-msgstr "Hartzen diren taulak"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
-msgid  "Fields involved"
-msgstr "Hartzen diren eremuak"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
-msgid  "Update options"
-msgstr "Eguneratzeko aukerak"
-
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~No action"
 msgstr "~Ekintzarik ez"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
-msgid  "~Update cascade"
-msgstr "Eguneratu ~kaskada"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
 msgid  "~Set null"
@@ -2479,53 +1735,17 @@ msgstr "~Ezarri hutsa"
 msgid  "Set ~default"
 msgstr "Ezarri ~lehenetsia"
 
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
-msgid  "Delete options"
-msgstr "Ezabatzeko aukerak"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "Delete ~cascade"
-msgstr "Ezabatu ka~skada"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
-msgid  "%PRODUCTNAME Base"
-msgstr "%PRODUCTNAME Base"
-
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
 msgid  "Details"
 msgstr "Xehetasunak"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
-msgid  "Error ~list:"
-msgstr "Errore-zerre~nda:"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "~Description:"
-msgstr "Aza~lpena:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
 msgid  "SQL Status"
 msgstr "SQL egoera"
 
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
-msgid  "Error code"
-msgstr "Errore-kodea"
-
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
 msgstr "Errore honen arrazoia izaten da, sarritan, karaktere-joko desegokia ezartzea datu-basearen hizkuntzarentzat. Begiratu ezarpena, Editatu - Datu-basea - Propietateak hautatuz."
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
-msgid  "Error"
-msgstr "Errorea"
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
-msgid  "Warning"
-msgstr "Abisua"
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
-msgid  "Information"
-msgstr "Informazioa"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
 msgid  "Text Connection Settings"
@@ -2535,34 +1755,6 @@ msgstr "Testu-konexioaren ezarpenak"
 msgid  "User Settings"
 msgstr "Erabiltzailearen ezarpenak"
 
-#: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
-msgid  "User administration"
-msgstr "Erabiltzaile-administrazioa"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
-msgid  "User selection"
-msgstr "Erabiltzailearen hautapena"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
-msgid  "Us~er:"
-msgstr "Erabi~ltzailea:"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
-msgid  "~Add User..."
-msgstr "~Gehitu erabiltzailea..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
-msgid  "Change ~Password..."
-msgstr "Aldatu ~pasahitza..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
-msgid  "~Delete User..."
-msgstr "Eza~batu erabiltzailea..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
-msgid  "Access rights for selected user"
-msgstr "Hautatutako erabiltzailearen eskubideak"
-
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
 msgid  "Do you really want to delete the user?"
 msgstr "Benetan ezabatu nahi duzu erabiltzailea?"
@@ -2571,33 +1763,13 @@ msgstr "Benetan ezabatu nahi duzu erabiltzailea?"
 msgid  "The database does not support user administration."
 msgstr "Datu-baseak ez du erabiltzaile-administraziorik onartzen."
 
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
-msgid  "User \"$name$:  $\""
-msgstr "Erabiltzailea, \"$name$:  $\""
-
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
-msgid  "Old p~assword"
-msgstr "P~asahitz zaharra"
-
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
-msgid  "~Password"
-msgstr "~Pasahitza"
-
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
 msgid  "~Confirm  password"
 msgstr "Be~rretsi pasahitza"
 
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
-msgid  "Change Password"
-msgstr "Aldatu pasahitza"
-
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
 msgid  "The passwords do not match. Please enter the password again."
 msgstr "Pasahitzak ez datoz bat. Idatz ezazu berriro."
-
-#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
-msgid  "Refresh"
-msgstr "Freskatu"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
 msgid  "New ~View Design"
@@ -2607,45 +1779,17 @@ msgstr "I~kuspegi-diseinu berria"
 msgid  "New ~Table Design"
 msgstr "T~aula-diseinu berria"
 
-#: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
-msgid  "Query AutoPilot..."
-msgstr "Kontsulta: AutoPilotua..."
-
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "New ~Query (Design View)"
 msgstr "K~ontsulta berria (Diseinu-ikuspegia)"
-
-#: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
-msgid  "~Edit Query"
-msgstr "~Editatu kontsulta"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
 msgid  "New Query (~SQL View)"
 msgstr "Kontsulta berria (~SQL ikuspegia)"
 
-#: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
-msgid  "Edit..."
-msgstr "Editatu..."
-
-#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
-msgid  "Column ~Width..."
-msgstr "Zutabe-~zabalera..."
-
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
 msgid  "Report Wizard..."
 msgstr "Txostenen morroia..."
-
-#: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
-msgid  "Form AutoPilot..."
-msgstr "Inprimakien AutoPilotua..."
-
-#: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
-msgid  "System"
-msgstr "Sistema"
-
-#: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
-msgid  "Error during creation"
-msgstr "Errorea sortzean"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
 msgid  "An unexpected error occurred. The operation could not be performed."
@@ -2662,10 +1806,6 @@ msgstr "Taula ezin izan da ezabatu, datu-baserako konexioak ez duelako onartzen 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
 msgid  "~All"
 msgstr "~Denak"
-
-#: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
-msgid  "Undo:"
-msgstr "Desegin:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
 msgid  "Redo:"
@@ -2691,53 +1831,17 @@ msgstr "'$#$' izena badago.\nIdatzi beste izen bat."
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr "\"$file$\" txotenak 'Sun txostenen diseinatzailea' hedapena behar du."
 
-#: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
-msgid  "Apply columns"
-msgstr "Aplikatu zutabeak"
-
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
 msgid  "Type formatting"
 msgstr "Mota-formateatzea"
-
-#: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
-msgid  "The following fields have already been set as primary keys:\n"
-msgstr "Honako eremuak lehen mailako gako gisa ezarrita daude:\n"
-
-#: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
-msgid  "Assign columns"
-msgstr "Esleitu zutabeak"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
 msgid  "Copy RTF Table"
 msgstr "Kopiatu RTF taula"
 
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
-msgstr "~Laguntza"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
-msgid  "~Cancel"
-msgstr "~Utzi"
-
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
 msgid  "< ~Back"
 msgstr "< At~zera"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
-msgid  "~Next>"
-msgstr "~Hurrengoa>"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
-msgid  "C~reate"
-msgstr "So~rtu"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
-msgid  "Existing columns"
-msgstr "Dauden zutabeak"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
-msgid  "Column information"
-msgstr "Zutabe-informazioa"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
 msgid  "Automatic type recognition"
@@ -2747,45 +1851,9 @@ msgstr "Mota-ezagutze automatikoa"
 msgid  "Lines (ma~x)"
 msgstr "Lerroak (ge~h.)"
 
-#: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
-msgid  "Primary Key"
-msgstr "Lehen mailako gakoa"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
-msgid  "Source table: \n"
-msgstr "Iturburu-taula: \n"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
-msgid  "Destination table: \n"
-msgstr "Helburuko taula: \n"
-
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
 msgid  "~All"
 msgstr "~Denak"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
-msgid  "Non~e"
-msgstr "Bat ~ere ez"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
-msgid  "Ta~ble name"
-msgstr "~Taula-izena"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Aukerak"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
-msgid  "De~finition and data"
-msgstr "De~finizioa eta datuak"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
-msgid  "Def~inition"
-msgstr "Def~inizioa"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
-msgid  "A~s table view"
-msgstr "Taula-ikuspegi gi~sa"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
 msgid  "Append ~data"
@@ -2794,14 +1862,6 @@ msgstr "Era~ntsi datuak"
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
 msgid  "Use first ~line as column names"
 msgstr "Erabili aurreneko ~lerroa zutabeen izen gisa"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
-msgid  "Crea~te primary key"
-msgstr "So~rtu lehen mailako gakoa"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
-msgid  "Name"
-msgstr "Izena"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
 msgid  "Copy table"
@@ -2818,14 +1878,6 @@ msgstr "Hautatu 'Erantsi datuak' aukera lehen orrian, lehendik dagoen taula bati
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
 msgid  "Please change the table name. It is too long."
 msgstr "Aldatu taularen izena. Luzeegia da."
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Aukerak"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
-msgid  "~Type"
-msgstr "M~ota"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
 msgid  "Inner join"
@@ -2850,18 +1902,6 @@ msgstr "Gurutzatua"
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
 msgid  "Natural"
 msgstr "Naturala"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
-msgid  "Tables involved"
-msgstr "Hartzen diren taulak"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
-msgid  "Fields involved"
-msgstr "Hartzen diren eremuak"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
-msgid  "Join Properties"
-msgstr "Elkartzeko propietateak"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
 msgid  "Please note that some databases may not support this join type."
@@ -2891,10 +1931,6 @@ msgstr "Zutabe bakarra du berdin izendatutako zutabe bikote ('%1'-(e)tik '%2'-(r
 msgid  "Add Table Window"
 msgstr "Gehitu taula-leihoa"
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
-msgid  "Move table window"
-msgstr "Lekuz aldatu taula-leihoa"
-
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
 msgid  "Insert Join"
 msgstr "Txertatu lotura"
@@ -2902,22 +1938,6 @@ msgstr "Txertatu lotura"
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
 msgid  "Delete Join"
 msgstr "Ezabatu lotura"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
-msgid  "Resize table window"
-msgstr "Tamaina aldatu taula-leihoari"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
-msgid  "Delete Column"
-msgstr "Ezabatu zutabea"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
-msgid  "Move column"
-msgstr "Lekuz aldatu zutabea"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
-msgid  "Add Column"
-msgstr "Gehitu zutabea"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, table '$name$' does not exist."
@@ -2931,25 +1951,13 @@ msgstr "Adierazpen baliogabea, '$name$' eremu-izena ez dago."
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "Kontsultak #num# taula hartzen ditu. Hautatutako motako datu-baseek, ordea, #maxnum# taula prozesa ditzakete gehienez ere instrukzio bakoitzeko."
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
-msgid  "Delete Table Window"
-msgstr "Ezabatu taula-leihoa"
-
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
 msgid  "Edit Column Description"
 msgstr "Editatu zutabeen azalpena"
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
-msgid  "Adjust column width"
-msgstr "Doitu zutabe-zabalera"
-
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
 msgid  "(not sorted);ascending;descending"
 msgstr "(ordenatu gabe);gorantz;beherantz"
-
-#: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
-msgid  "(no function);Group"
-msgstr "(funtziorik ez);Elkartu"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
 msgid  "(no table)"
@@ -2959,22 +1967,6 @@ msgstr "(taularik ez)"
 msgid  "The database only supports sorting for visible fields."
 msgstr "Datu-baseak ikusgai dauden eremuak bakarrik ordena ditzake."
 
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
-msgid  "Functions"
-msgstr "Funtzioak"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
-msgid  "Table Name"
-msgstr "Taularen izena"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
-msgid  "Alias"
-msgstr "Aliasa"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
-msgid  "Distinct Values"
-msgstr "Balio unibokoak"
-
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Eremua;Aliasa;Taula;Ordenatu;Ikusgai;Funtzioa;Irizpidea;Edo;Edo"
@@ -2983,25 +1975,13 @@ msgstr "Eremua;Aliasa;Taula;Ordenatu;Ikusgai;Funtzioa;Irizpidea;Edo;Edo"
 msgid  "There are too many columns."
 msgstr "Zutabe gehiegi daude."
 
-#: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
-msgid  "A condition cannot be applied to field [*]"
-msgstr "Baldintza bat ezin zaio aplikatu [*] eremuari"
-
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
 msgid  "The SQL statement created is too long."
 msgstr "Sortutako SQL instrukzioa luzeegia da."
 
-#: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
-msgid  "Query is too complex"
-msgstr "Kontsulta konplexuegia da"
-
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
 msgid  "Nothing has been selected."
 msgstr "Ez da ezer hautatu."
-
-#: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
-msgid  "Too many search criteria"
-msgstr "Bilaketa-irizpide gehiegi"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
 msgid  "SQL syntax error"
@@ -3018,14 +1998,6 @@ msgstr "Taula gehiegi daude."
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "Instrukzioa ez da aplikatuko datu-basearen SQL dialektoan egiten denean kontsulta."
-
-#: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
-msgid  "Field name not found or not unique"
-msgstr "Eremu-izena ez da aurkitu edo ez da bakarra"
-
-#: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
-msgid  "Join could not be processed"
-msgstr "Elkartzea ezin izan da prozesatu"
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
 msgid  "Syntax error in SQL statement"
@@ -3086,62 +2058,69 @@ msgstr "$object$ aldatu egin da.\nAldaketa gordetzea nahi dituzu?"
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
 #, fuzzy
 msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr "Analiza ezin daitekeen SQL komando batean oinarrituta dago $object$."
+msgstr "$object$ aztertu ezin izan den SQL agindu batean oinarrituta dago. (except \"SQL agindua\", hemen zentzurik ez duena) sartuko da."
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
 #, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr "$object$ SQL ikuspegian irekiko da."
-
-#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
-msgid  "The table view"
-msgstr "Taularen ikuspegia"
-
-#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
-msgid  "The query"
-msgstr "Kontsulta"
+msgstr "$object$ SQL ikuspegian irekiko da.(except \"SQL agindua\", hemen zentzurik ez duena) sartuko da."
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "The SQL statement"
 msgstr "SQL instrukzioa"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
+#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
 msgstr "Kontsultak ez du sortzen emaitzarik, eta, beraz, ezin da izan beste kontsulta baten zati."
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "Bi parametro, ActiveConnection eta DataSourceName, falta dira edo oker daude - ezin da kontsulta-diseinatzailea hasieratu."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "Erlazio hori badago lehendik ere. Editatzea nahi duzu edo berri bat sortzea?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit..."
 msgstr "Editatu..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
+#, fuzzy
 msgid  "Create..."
 msgstr "Sortu..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " - %PRODUCTNAME Base: erlazio-diseinua"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "The database does not support relations."
 msgstr "Datu-baseak ez du erlaziorik onartzen!"
 
+#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The relation design has been changed.\nDo you want to save the changes?"
+msgstr "Erlazio-diseinuan aldaketak egin dira.\nGorde nahi dituzu?"
+
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "Taula hau ezabatzen baduzu, dagozkion erlazio guztiak ere ezabatu egingo dira. Jarraitu nahi duzu?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
+#, fuzzy
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
 msgstr "Datu-baseak ezin izan du erlazioa sortu. Agian taula mota honen kanpoko gakoak ez daude onartuta.\nEgiaztatu datu-basearen dokumentazioa."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
+#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 msgstr "Ezezaguna;Testua;Zenbakia;Data/Ordua;Data;Ordua;Bai/Ez;Moneta;Zirkularra;Kontagailua;Irudia;Testua (finkoa);Hamartarra;Bitarra (finkoa);Bitarra;Osoko handia;Bikoitza;Mugikorra;Erreala;Osokoa;Osoko txikia;Osoko oso txikia;SQL nulua;Objektua;Unibokoa;Egitura;Eremua;BLOB;CLOB;REF;BESTELAKOA;Bita (finkoa)"
 
@@ -3150,315 +2129,259 @@ msgstr "Ezezaguna;Testua;Zenbakia;Data/Ordua;Data;Ordua;Bai/Ez;Moneta;Zirkularra
 msgid  "Insert/remove primary key"
 msgstr "Txertatu/kendu gako lehenetsia"
 
-#: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
-msgid  "Yes"
-msgstr "Bai"
-
-#: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
-msgid  "No"
-msgstr "Ez"
-
-#: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
-msgid  "Ascending"
-msgstr "Gorantz"
-
-#: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
-msgid  "Descending"
-msgstr "Beherantz"
-
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
 msgstr "<bat ere ez>"
 
-#: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
-msgid  "Field name"
-msgstr "Eremu-izena"
-
-#: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
-msgid  "Field Name"
-msgstr "Eremu-izena"
-
-#: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
-msgid  "Field ~type"
-msgstr "Eremu ~mota"
-
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
+#, fuzzy
 msgid  "Field Type"
 msgstr "Eremu mota"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Field length"
 msgstr "Eremuaren luzera"
 
-#: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
-msgid  "Description"
-msgstr "Iruzkina"
-
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Column Description"
 msgstr "Zutabearen azalpena"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
+#, fuzzy
 msgid  "Input required"
 msgstr "Sarrera behar da"
 
-#: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
-msgid  "~AutoValue"
-msgstr "~Balio automatikoa"
-
-#: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
-msgid  "Field Properties"
-msgstr "Eremuaren propietateak"
-
-#: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
-msgid  "General"
-msgstr "Orokorra"
-
-#: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
-msgid  "Description:"
-msgstr "Azalpena:"
-
-#: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
-msgid  "Table properties"
-msgstr "Taularen propietateak"
-
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The text you entered is not a list element. "
 msgstr "Idatzi duzun testua ez da zerrendako elementua. "
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Insert Rows"
 msgstr "Txertatu errenkadak"
 
-#: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
-msgid  "Primary Key"
-msgstr "Lehen mailako gakoa"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
-msgid  "Modify cell"
-msgstr "Aldatu gelaxka"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
-msgid  "Delete row"
-msgstr "Ezabatu errenkada"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
-msgid  "Modify field type"
-msgstr "Aldatu eremu mota"
-
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert row"
 msgstr "Txertatu errenkada"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert new row"
 msgstr "Txertatu errenkada berria"
-
-#: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
-msgid  "~Default value"
-msgstr "~Balio lehenetsia"
-
-#: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
-msgid  "~Entry required"
-msgstr "~Sarrera behar da"
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
 #, fuzzy
 msgid  "~Length"
 msgstr "~Luzera"
 
-#: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
-msgid  "~Type"
-msgstr "M~ota"
-
-#: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
-msgid  "Decimal ~places"
-msgstr "~Dezimalak"
-
-#: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
-msgid  "Format example"
-msgstr "Formatu-adibidea"
-
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
 msgstr "Hautatu erregistro berri guztietan lehenetsi gisa agertu behar duen balioa.\nEremuak balio lehenetsirik ez badu, hautatu kate hutsa."
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
 msgstr "Idatzi eremu honen balio lehenetsia.\n\nTaulan datuak sartzen dituzunean, kate hori zuzenean sartuko da hautatuta dagoen eremuan erregistro berri guztietan. Beraz, egokia izan behar du behean adierazi behar den gelaxka-formaturako."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
 msgstr "Hautatu aukera hau eremuak balio HUTSIK onartzen ez badu, hau da, eremua nahitaez betetzekoa bada."
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Enter the maximum text length permitted."
 msgstr "Idatzi gehienez onartuko den testu-luzera."
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Enter the number format."
 msgstr "Adierazi zenbaki-formatua."
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
 msgstr "Zehaztu zenbateko luzera izan dezaketen eremu honetako datuek.\n\nEremu hamartarra bada, zenbakiaren gehieneko luzera izango da, eremu bitarra bada, datu-blokearen luzera.\nBalioa zuzendu egingo da gehieneko muga gainditzen badu."
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
 msgstr "Zehaztu zenbat dezimal onartuko diren eremu honetan."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
+#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
 msgstr "Hemen ikus dezakezu datuak nola azalduko diren uneko formatuan (erabili eskuineko botoia formatua aldatzeko)."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "This is where you determine the output format of the data."
 msgstr "Hemen zehatz dezakezu datuen irteerako formatua."
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
 msgstr "Aukeratu eremu honen balioa automatikoki gehituko den.\n\nHorrelako eremuetan ezingo duzu daturik sartu. Erregistro berri bakoitzean automatikoki esleituko da balio intrintseko bat (aurreko erregistroko balioari gehikuntza aplikatuta)."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "Taula ezin da gorde, \"$column$\" zutabe-izena bi aldiz esleitu delako."
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "\"$column$\" zutabea lehen mailako gakoari dagokio. Zutabea ezabatzen bada, lehen mailako gakoa ere ezabatu egingo da. Benetan jarraitu nahi duzu?"
 
-#: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
-msgid  "Primary Key Affected"
-msgstr "Lehen mailako gakoa ukitzen du"
+#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The table has been changed.\nDo you want to save the changes?"
+msgstr "Taulan aldaketak egin dira.\nGorde nahi dituzu?"
 
-#: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
-msgid  "Column"
-msgstr "Zutabea"
-
-#: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
-msgid  "Continue anyway?"
-msgstr "Hala ere jarraitu nahi duzu?"
-
-#: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
-msgid  "Warning!"
-msgstr "Abisua!"
+#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
+msgstr "Datu-basearekiko konexioa galdu egin da! Taula-diseinua funtzionalitate gutxiagorekin erabil daiteke konexiorik ez badago.\nBerriro konektatu nahi duzu?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
 msgstr "Taula ezin izan da gorde, arazoak izan direlako datu-basearekin konektatzeko."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
 msgstr "Taularen iragazkia ezin izan da gorde, datu-iturburua ezabatu egin delako."
 
-#: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
-msgid  "No primary key"
-msgstr "Lehen mailako gakorik ez"
+#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
+msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
+msgstr "Taularen indizeak editatu ahal izateko, gorde egin behar duzu.\nAldaketak gorde nahi dituzu?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
+#, fuzzy
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
 msgstr "Indize unibokoa edo lehen mailako gakoa behar da datu-base honetan datu-erregistroak identifikatzeko.\nBi baldintza horietako bat betetzen bada bakarrik sartu ahal izango dituzu datuak taula honetan.\nLehen mailako gako bat sortu nahi duzu?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " - %PRODUCTNAME Base: taula-diseinua"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr "\"$column$\" zutabea ezin izan da aldatu. Zutabea ezabatu eta formatu berria erantsi nahi duzu?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "Errorea taula-diseinua gordetzean"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
+#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "$column$ zutabea ezin izan da ezabatu."
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
 msgstr "Taulako zutabe guztiak ezabatu nahian zabiltza. Taulek zutaberen bat eduki behar dute. Taula datu-basetik ezabatu nahi duzu? Ez baduzu nahi, ez da aldaketarik egingo taulan."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "Ge~hikuntza automatikoko instrukzioa"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
 msgstr "Sartu SQL instrukzio bat gehikuntza automatikoko eremurako.\n\nInstrukzio hori zuzenean transferituko da datu-basera taula sortzean."
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
 msgstr "Ezin izan da motari buruzko informaziorik eskuratu datu-basetik.\nTaula-diseinuaren ikuspegia ez dago erabilgarri datu-iturburu honentzat."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "change field name"
 msgstr "aldatu eremu-izena"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "change field type"
 msgstr "aldatu eremu mota"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "change field description"
 msgstr "aldatu eremu-azalpena"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
+#, fuzzy
 msgid  "change field attribute"
 msgstr "aldatu eremu-atributua"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "Helburuko datu-baseak ez ditu ikuspegiak onartzen."
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "Helburuko datu-baseak ez du lehen mailako gakorik onartzen."
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
+#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "ez da datuak atzitzeko deskriptorerik aurkitu, edo datuak atzitzeko deskriptoreak ezin du behar den informazio guztia eman"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "Oraingoz taulak eta kontsultak soilik daude onartuta."
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
+#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "Kopiaren iturburuko emaitzen multzoak laster-markak onartu behar ditu."
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "Onartu gabeko iturburuko zutabe mota ($type$) $pos$ zutabe-posizioan."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "Parametroen hasieratze-kopuru baliogabea."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "Errorea gertatu da hasieratzean."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported setting in the copy source descriptor: $name$."
 msgstr "Onartu gabeko ezarpena iturburuko deskriptorearen kopian: $name$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "To copy a query, your connection must be able to provide queries."
 msgstr "Kontsulta bat kopiatzeko, konexioak kontsultak eskaintzeko gai izan behar da."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.STRING.TEXT
+#, fuzzy
 msgid  "The given interaction handler is invalid."
 msgstr "Emandako elkarreragiketaren kudeatzailea baliogabea da."
-
-#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
-msgid  "~Remember password until end of session"
-msgstr "~Gogoratu pasahitza saioa amaitu arte"
-
-#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
-msgid  "~Remember password"
-msgstr "~Gogoratu pasahitza"

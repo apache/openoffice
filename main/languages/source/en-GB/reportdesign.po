@@ -783,81 +783,9 @@ msgstr "Properties: "
 msgid  "No Control marked"
 msgstr "No Control marked"
 
-#: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
-msgid  "Multiselection"
-msgstr "Multiselection"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
-msgstr "Image Control"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-msgid  "Label field"
-msgstr "Label field"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
-msgid  "Line"
-msgstr "Line"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid  "Formatted Field"
-msgstr "Formatted Field"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
-msgid  "Shape"
-msgstr "Shape"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
-msgid  "Report"
-msgstr "Report"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
-msgid  "Section"
-msgstr "Section"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
-msgid  "Function"
-msgstr "Function"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
-msgid  "Group"
-msgstr "Group"
-
-#: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
-msgid  "Show ruler"
-msgstr "Show ruler"
-
-#: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
-msgid  "Show grid"
-msgstr "Show grid"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
-msgid  "Change Object"
-msgstr "Change Object"
-
 #: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
 msgid  "Move Group(s)"
 msgstr "Move Group(s)"
-
-#: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
-msgid  "Conditional Formatting"
-msgstr "Conditional Formatting"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Remove report header / report footer"
-msgstr "Remove report header / report footer"
-
-#: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Add report header / report footer"
-msgstr "Add report header / report footer"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Remove page header / page footer"
-msgstr "Remove page header / page footer"
-
-#: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Add page header / page footer"
-msgstr "Add page header / page footer"
 
 #: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
 msgid  "Change property '#'"
@@ -879,105 +807,9 @@ msgstr "Add group footer "
 msgid  "Remove group footer "
 msgstr "Remove group footer "
 
-#: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
-msgid  "Add function"
-msgstr "Add function"
-
-#: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
-msgid  "Delete function"
-msgstr "Delete function"
-
-#: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
-msgid  "Design"
-msgstr "Design"
-
-#: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
-msgid  "Preview"
-msgstr "Preview"
-
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
 msgid  "Report #"
 msgstr "Report #"
-
-#: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
-msgid  "~Report name"
-msgstr "~Report name"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
-msgid  "Delete Group"
-msgstr "Delete Group"
-
-#: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
-msgid  "Add Group"
-msgstr "Add Group"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
-msgid  "Delete Selection"
-msgstr "Delete Selection"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
-msgid  "Delete Function"
-msgstr "Delete Function"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
-msgid  "Change Size"
-msgstr "Change Size"
-
-#: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
-msgid  "Paste"
-msgstr "Paste"
-
-#: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
-msgid  "Insert Control"
-msgstr "Insert Control"
-
-#: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
-msgid  "Delete Control"
-msgstr "Delete Control"
-
-#: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
-msgid  "Insert Group"
-msgstr "Insert Group"
-
-#: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
-msgid  "GroupHeader"
-msgstr "GroupHeader"
-
-#: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
-msgid  "GroupFooter"
-msgstr "GroupFooter"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
-msgid  "Sorting and Grouping..."
-msgstr "Sorting and Grouping..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
-msgid  "Background Color..."
-msgstr "Background Colour..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
-msgid  "Ruler..."
-msgstr "Ruler..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
-msgid  "Grid..."
-msgstr "Grid..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
-msgid  "~Arrange"
-msgstr "~Arrange"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
-msgid  "Bring ~Forward"
-msgstr "Bring ~Forward"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
-msgid  "Send Back~ward"
-msgstr "Send Back~ward"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
-msgid  "~Object Resizing"
-msgstr "~Object Resizing"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
 msgid  "~Fit to smallest width"
@@ -987,85 +819,13 @@ msgstr "~Fit to smallest width"
 msgid  "~Fit to greatest width"
 msgstr "~Fit to greatest width"
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
-msgid  "~Fit to smallest height"
-msgstr "~Fit to smallest height"
-
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
 msgid  "~Fit to greatest height"
 msgstr "~Fit to greatest height"
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
-msgid  "Shrink"
-msgstr "Shrink"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
-msgid  "Shrink from top"
-msgstr "Shrink from top"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
-msgid  "Shrink from bottom"
-msgstr "Shrink from bottom"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
-msgid  "Distribution..."
-msgstr "Distribution..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
-msgstr "Properties..."
-
-#: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Add field:"
-msgstr "Add field:"
-
-#: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
-msgid  "Filter"
-msgstr "Filter"
-
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base Report"
 msgstr " - %PRODUCTNAME Base Report"
-
-#: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
-msgid  "Untitled"
-msgstr "Untitled"
-
-#: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
-msgid  "Change Alignment"
-msgstr "Change Alignment"
-
-#: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
-msgid  "# Header"
-msgstr "# Header"
-
-#: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
-msgid  "# Footer"
-msgstr "# Footer"
-
-#: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
-msgid  "Insert graphics"
-msgstr "Insert graphics"
-
-#: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
-msgid  "Delete"
-msgstr "Delete"
-
-#: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
-msgid  "An error occurred while creating the report."
-msgstr "An error occurred while creating the report."
-
-#: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
-msgid  "An exception of type $type$ was caught."
-msgstr "An exception of type $type$ was caught."
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
-msgid  "Change font"
-msgstr "Change font"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
-msgid  "Change page attributes"
-msgstr "Change page attributes"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Page Header/Footer"
@@ -1090,42 +850,6 @@ msgstr "Insert Report Header/Footer"
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Report Header/Footer"
 msgstr "Delete Report Header/Footer"
-
-#: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
-msgid  "The report can not be executed unless it is bound to content."
-msgstr "The report can not be executed unless it is bound to content."
-
-#: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
-msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr "The report can not be executed unless at least one object has been inserted."
-
-#: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
-msgid  "Shrink Section"
-msgstr "Shrink Section"
-
-#: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
-msgid  "Detail"
-msgstr "Detail"
-
-#: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
-msgid  "Page Header"
-msgstr "Page Header"
-
-#: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
-msgid  "Page Footer"
-msgstr "Page Footer"
-
-#: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
-msgid  "Report Header"
-msgstr "Report Header"
-
-#: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
-msgid  "Report Footer"
-msgstr "Report Footer"
-
-#: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Insert"
 
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
 msgid  "Detail"

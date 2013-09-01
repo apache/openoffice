@@ -31,26 +31,786 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FIXEDTEXT.TEXT
+msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
+msgstr "Seleccione o cartafol desde o cal desexa importar os tipos de letra. Engada os tipos de letra seleccionados premendo no botón Aceptar."
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FIXEDLINE.TEXT
+msgid  "Source directory"
+msgstr "Cartafol de orixe"
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CHECKBOX.TEXT
+msgid  "Sea~rch Subdirectories"
+msgstr "~Buscar Subcartafoles"
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FIXEDLINE.TEXT
+msgid  "Target options"
+msgstr "Opcións de destino"
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CHECKBOX.TEXT
+msgid  "Create ~soft links only"
+msgstr "Crear ~só ligazóns simbólicas"
+
 #: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PUSHBUTTON.TEXT
 msgid  "~Select All"
 msgstr "~Seleccionar todo"
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.STRING.TEXT
+msgid  "Add fonts"
+msgstr "Engadir tipos de letra"
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.STRING.TEXT
+msgid  "Do you really want to overwrite this font file?\n   %s"
+msgstr "Desexa realmente substituír este ficheiro de tipo de letra?\n   %s"
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.STRING.TEXT
+msgid  "All"
+msgstr "Todo"
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.STRING.TEXT
+msgid  "None"
+msgstr "Ningún"
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.STRING.TEXT
+msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr "Non se atopou ningún ficheiro de formato (con extensión .afm) para o tipo de letra \n%s\ne por tanto o tipo de letra non pode ser instalado. É posíbel crear ficheiros de formato con Ghostscript, por exemplo, e deben colocarse no mesmo cartafol que os ficheiros de formato, ou no seu propio subcartafol afm."
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.STRING.TEXT
+msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr "Non se puido copiar o ficheiro de métrica para o ficheiro de tipo de letra\n   %s\n. Non se instalará o tipo de letra."
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.STRING.TEXT
+msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr "Non se puido copiar o ficheiro de tipo de letra\n   %s\n. Non se instalará o tipo de letra."
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.STRING.TEXT
+msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
+msgstr "En Fontpath non hai ningún cartafol con ficheiros fonts.dir editábeis. Por tanto, non se pode instalar os tipos de letra."
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.STRING.TEXT
+msgid  "%d new fonts were added."
+msgstr "%d Engadíronse tipos de letra novos."
+
+#: padialog.src#RID_FONTIMPORT_DIALOG.STRING.TEXT
+msgid  "Add Fonts"
+msgstr "Engadir tipos de letra"
+
+#: padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FIXEDLINE.TEXT
+msgid  "CUPS support"
+msgstr "Compatibilidade con CUPS"
+
+#: padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CHECKBOX.TEXT
+msgid  "Disable CUPS Support"
+msgstr "Desactivar compatibilidade con CUPS"
 
 #: padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CANCELBUTTON.TEXT
 msgid  "Close"
 msgstr "Pechar"
 
+#: padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FIXEDLINE.TEXT
+msgid  "Installed ~printers"
+msgstr "Im~presoras instaladas"
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FIXEDTEXT.TEXT
+msgid  "Command:"
+msgstr "Orde:"
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FIXEDTEXT.TEXT
+msgid  "Driver:"
+msgstr "Controlador:"
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FIXEDTEXT.TEXT
+msgid  "Location:"
+msgstr "Localización:"
+
+#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FIXEDTEXT.TEXT
+msgid  "Comment:"
+msgstr "Comentario:"
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PUSHBUTTON.TEXT
+msgid  "Properties..."
+msgstr "Propiedades..."
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PUSHBUTTON.TEXT
+msgid  "R~ename..."
+msgstr "~Renomear..."
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PUSHBUTTON.TEXT
+msgid  "~Default"
+msgstr "Pre~determinado"
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PUSHBUTTON.TEXT
+msgid  "Remo~ve..."
+msgstr "Elimi~nar..."
+
+#: padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PUSHBUTTON.TEXT
+msgid  "Test ~Page"
+msgstr "~Páxina de proba"
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PUSHBUTTON.TEXT
+msgid  "Fon~ts..."
+msgstr "~Tipos de letra..."
+
+#: padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PUSHBUTTON.TEXT
+msgid  "New Printer..."
+msgstr "Nova impresora..."
+
+#: padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.STRING.TEXT
+msgid  "Default printer"
+msgstr "Impresora predeterminada"
+
+#: padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.STRING.TEXT
+msgid  "Rename"
+msgstr "Renomear"
+
+#: padialog.src#RID_PADIALOG.STRING.TEXT
+msgid  "Printer Administration"
+msgstr "Administración de impresoras"
+
+#: padialog.src#RID_ERR_NOPRINTER.STRING.TEXT
+msgid  "Could not open printer %s."
+msgstr "Non se puido abrir a impresora %s."
+
+#: padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.STRING.TEXT
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr "A páxina de proba foi impresa correctamente. Comprobe o resultado."
+
+#: padialog.src#RID_ERR_NOWRITE.STRING.TEXT
+msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgstr "Non se puido instalar ningunha impresora porque o sistema de ficheiros só permite lectura.\nContacte co administrador do sistema."
+
+#: padialog.src#RID_QRY_PRTNAME.STRING.TEXT
+msgid  "~New printer name"
+msgstr "~Nome da nova impresora"
+
+#: padialog.src#RID_TXT_TESTPAGE_MODEL.STRING.TEXT
+msgid  "Model"
+msgstr "Modelo"
+
+#: padialog.src#RID_TXT_TESTPAGE_NAME.STRING.TEXT
+msgid  "Name"
+msgstr "Nome"
+
+#: padialog.src#RID_TXT_TESTPAGE_COMMENT.STRING.TEXT
+msgid  "Comment"
+msgstr "Comentario"
+
+#: padialog.src#RID_TXT_TESTPAGE_QUEUE.STRING.TEXT
+msgid  "Queue"
+msgstr "Fila"
+
+#: padialog.src#RID_TXT_TESTPAGE_DATE.STRING.TEXT
+msgid  "Date"
+msgstr "Data"
+
+#: padialog.src#RID_TXT_TESTPAGE_TIME.STRING.TEXT
+msgid  "Time"
+msgstr "Hora"
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PUSHBUTTON.TEXT
+msgid  "Re~name..."
+msgstr "~Renomear..."
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PUSHBUTTON.TEXT
+msgid  "~Remove..."
+msgstr "~Retirar..."
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PUSHBUTTON.TEXT
+msgid  "~Add..."
+msgstr "~Engadir..."
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FIXEDTEXT.TEXT
+msgid  "Note: The fonts are only available to the applications."
+msgstr "Nota: Os tipos de letra só están dispoñíbeis para os aplicativos."
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.STRING.TEXT
+msgid  "~New name for %s"
+msgstr "~Nome novo para %s"
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.STRING.TEXT
+msgid  "~New name for %s (%d1 of %d2)"
+msgstr "~Nome novo para %s (%d1 de %d2)"
+
+#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.STRING.TEXT
+msgid  "The font %s cannot be renamed due to missing write permission."
+msgstr "Non é posíbel mudar o nome do tipo de letra %s por non estar dispoñíbel o permiso de escritura."
+
+#: padialog.src#RID_FONTNAMEDIALOG.STRING.TEXT
+msgid  "Fonts"
+msgstr "Tipos de letra"
+
+#: padialog.src#RID_BXT_TESTPAGE.STRING.TEXT
+msgid  "Test page"
+msgstr "Páxina de proba"
+
+#: padialog.src#RID_BXT_ENVIRONMENT.STRING.TEXT
+msgid  "Wrong environment"
+msgstr "Entorno incorrecto"
+
+#: padialog.src#RID_YOU_SURE.STRING.TEXT
+msgid  "Are you sure ?"
+msgstr "Está seguro?"
+
+#: padialog.src#RID_AFMERROR_OK.STRING.TEXT
+msgid  "No error"
+msgstr "Ningún erro"
+
+#: padialog.src#RID_AFMERROR_NO_FONT_NAME.STRING.TEXT
+msgid  "The metric does not contain a 'FontName' entry."
+msgstr "A métrica non contén ningunha entrada 'FontName'."
+
+#: padialog.src#RID_AFMERROR_NO_FULL_NAME.STRING.TEXT
+msgid  "The metric does not contain a 'FullName' entry."
+msgstr "A métrica non contén ningunha entrada 'FullName'."
+
+#: padialog.src#RID_AFMERROR_NO_FAMILY_NAME.STRING.TEXT
+msgid  "The metric does not contain a 'FamilyName' entry."
+msgstr "A métrica non contén ningunha entrada 'FamilyName'."
+
+#: padialog.src#RID_AFMERROR_MOVETO_FAILED.STRING.TEXT
+msgid  "The converted metric could not be written."
+msgstr "Non se puido escribir a métrica convertida."
+
+#: padialog.src#RID_AFMERROR_STREAM_READ_FAILED.STRING.TEXT
+msgid  "The metric could not be read."
+msgstr "Non se puido ler a métrica."
+
+#: padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.STRING.TEXT
+msgid  "A temporary file could not be created."
+msgstr "Non se puido crear un ficheiro temporal."
+
+#: padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.TEXT
+msgid  "The file does not contain a metric."
+msgstr "O ficheiro non contén unha métrica."
+
+#: padialog.src#RID_AFMERROR_BOX_TXT.STRING.TEXT
+msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
+msgstr "A métrica\n\n%s\n\nnon pode ser convertida pola seguinte razón:\n\n"
+
+#: padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FIXEDTEXT.TEXT
+msgid  "Progress"
+msgstr "Progreso"
+
+#: padialog.src#RID_PROGRESS_DLG.FIXEDTEXT.TEXT
+msgid  "Please wait"
+msgstr "Agarde"
+
+#: padialog.src#RID_OPERATION_CONVERTMETRIC.STRING.TEXT
+msgid  "Font metrics conversion"
+msgstr "Conversión das métricas de tipo de letra"
+
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FIXEDLINE.TEXT
+msgid  "Dri~ver directory"
+msgstr "Ca~rtafol de controlador"
+
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FIXEDTEXT.TEXT
+msgid  "Please select the driver directory."
+msgstr "Seleccione o cartafol do controlador."
+
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PUSHBUTTON.TEXT
+msgid  "Browse..."
+msgstr "Explorar..."
+
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FIXEDLINE.TEXT
+msgid  "~Selection of drivers"
+msgstr "~Selección de controladores"
+
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FIXEDTEXT.TEXT
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Seleccione controladores para a súa instalación e prema en \"%s\"."
+
+#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.STRING.TEXT
+msgid  "Searching for drivers"
+msgstr "Buscando controladores"
+
+#: padialog.src#RID_PPDIMPORT_DLG.CANCELBUTTON.TEXT
+msgid  "Driver Installation"
+msgstr "Instalación do controlador"
+
+#: padialog.src#RID_QUERY_REMOVEDRIVER.STRING.TEXT
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "Seguro que quere retirar o controlador \"%s\"?"
+
+#: padialog.src#RID_QUERY_REMOVEPRINTER.STRING.TEXT
+msgid  "Do you really want to remove this printer ?"
+msgstr "Seguro que quere retirar esta impresora?"
+
+#: padialog.src#RID_QUERY_REMOVEFONTFROMLIST.STRING.TEXT
+msgid  "Do you really want to remove the selected fonts ?"
+msgstr "Seguro que quere retirar os tipos de letra seleccionados?"
+
+#: padialog.src#RID_QUERY_DRIVERUSED.STRING.TEXT
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "Algunhas impresoras están a utilizar aínda o controlador \"%s\". Seguro que quere retiralo? As impresoras correspondentes serán tamén retiradas."
+
+#: padialog.src#RID_ERR_REMOVESGENPRT.STRING.TEXT
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "O controlador \"%s\" é obrigatório e, por tanto, non pode ser retirado."
+
+#: padialog.src#RID_ERR_REMOVEDRIVERFAILED.STRING.TEXT
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "O controlador \"%s1\" non pode ser retirado. Non se puido retirar o ficheiro\n\n%s2."
+
+#: padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.STRING.TEXT
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "A súa impresora predeterminada utiliza o controlador \"%s\". Por tanto, non pode ser retirado."
+
+#: padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.STRING.TEXT
+msgid  "The printer %s cannot be removed."
+msgstr "A impresora %s non se pode retirar."
+
+#: padialog.src#RID_TXT_PRINTERALREADYEXISTS.STRING.TEXT
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "Xa existe unha impresora co nome de \"%s\". Esta impresora non será importada."
+
+#: padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.STRING.TEXT
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "A impresora \"%s\" non ten unha configuración válida; por tanto, non pode ser importada."
+
+#: padialog.src#RID_TXT_DRIVERDOESNOTEXIST.STRING.TEXT
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "O controlador para a impresora \"%s1\" (%s2) non está instalado. Por tanto, a impresora non pode ser importada."
+
+#: padialog.src#RID_TXT_PRINTERADDFAILED.STRING.TEXT
+msgid  "The printer \"%s\" could not be added."
+msgstr "Non se puido engadir a impresora \"%s\"."
+
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKBUTTON.TEXT
+msgid  "~Finish"
+msgstr "~Rematar"
+
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PUSHBUTTON.TEXT
+msgid  "~Next >>"
+msgstr "~Seguinte >>"
+
+#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PUSHBUTTON.TEXT
+msgid  "<< ~Back"
+msgstr "<< ~Volver"
+
+#: padialog.src#RID_ADD_PRINTER_DIALOG.PUSHBUTTON.TEXT
+msgid  "Add Printer"
+msgstr "Engadir impresora"
+
 #: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.STRING.TEXT
 msgid  "Choose a driver"
 msgstr "Escolla un controlador"
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FIXEDTEXT.TEXT
+msgid  "Please select a s~uitable driver."
+msgstr "Seleccione ~un controlador compatíbel."
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PUSHBUTTON.TEXT
+msgid  "~Import..."
+msgstr "~Importar..."
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PUSHBUTTON.TEXT
+msgid  "~Delete"
+msgstr "~Eliminar"
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.STRING.TEXT
+msgid  "Delete driver"
+msgstr "Eliminar controlador"
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid  "Choose a device type"
+msgstr "Escolla un tipo de dispositivo"
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FIXEDTEXT.TEXT
+msgid  "Do you want to"
+msgstr "Quere"
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RADIOBUTTON.TEXT
+msgid  "Add a ~printer"
+msgstr "Engadir unha im~presora"
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RADIOBUTTON.TEXT
+msgid  "Connect a fa~x device"
+msgstr "Conectar un dispositivo de fa~x"
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RADIOBUTTON.TEXT
+msgid  "Connect a P~DF converter"
+msgstr "Conectar un conversor de P~DF"
+
+#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RADIOBUTTON.TEXT
+msgid  "~Import printers from a StarOffice installation"
+msgstr "~Importar impresoras desde unha instalación de StarOffice"
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid  "Choose a name"
+msgstr "Escolla un nome"
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FIXEDTEXT.TEXT
+msgid  "Please enter a name for the printer."
+msgstr "Introduza un nome para a impresora."
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FIXEDTEXT.TEXT
+msgid  "Please enter a name for the fax connection."
+msgstr "Introduza un nome para a conexión do fax."
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FIXEDTEXT.TEXT
+msgid  "Please enter a name for the PDF connection."
+msgstr "Introduza un nome para a conexión PDF."
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.EDIT.TEXT
+msgid  "Fax printer"
+msgstr "Impresora de fax"
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.EDIT.TEXT
+msgid  "PDF converter"
+msgstr "Conversor de PDF"
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CHECKBOX.TEXT
+msgid  "~Use as default printer"
+msgstr "~Usar como impresora predeterminada"
+
+#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CHECKBOX.TEXT
+msgid  "Remo~ve fax number from output"
+msgstr "~Eliminar número de fax da saída"
+
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid  "Choose a command line"
+msgstr "Escolla unha liña de ordes"
+
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FIXEDTEXT.TEXT
+msgid  "Please enter a c~ommand line appropriate for this device."
+msgstr "Introduza unha liña de c~omando apropiada para este dispositivo."
+
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
+msgid  "PDF ~target directory"
+msgstr "Dire~ctorio de destino PDF"
+
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PUSHBUTTON.TEXT
+msgid  "~Help"
+msgstr "~Axuda"
+
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.STRING.TEXT
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "A liña de ordes para os conversores PDF execútase como sigue: para cada un dos documentos impresos, substitúese na liña da orde \"(TMP)\" por un ficheiro temporal e \"(OUTFILE)\" polo nome do ficheiro PDF destino. Se \"(TMP)\" se inclúe na liña de ordes, o código PostScritp será proporcionado por un ficheiro, doutro xeito obterase pola entrada estándar (p.e. unha tubaría)."
+
+#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.STRING.TEXT
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "A liña de ordes para conexións de fax execútase da seguinte maneira: para cada fax enviado, \"(TMP)\" na liña de ordes substitúese por un ficheiro temporal e \"(PHONE)\" na liña de ordes, polo número de fax. Cando \"(TPM)\" está na liña de ordes, o código PostScript chega a través dun ficheiro ou vía de entrada estándar (por exemplo, unha canalización)."
+
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.STRING.TEXT
+msgid  "Import printers from old versions"
+msgstr "Importar impresoras de versións anteriores"
+
+#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FIXEDTEXT.TEXT
+msgid  "~These printers can be imported. Please select the ones you want to import."
+msgstr "~Estas impresoras poden ser importadas. Seleccione aquelas que desexe importar."
+
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FIXEDTEXT.TEXT
+msgid  "Use the following driver for this fax connection"
+msgstr "Con esta conexión de fax, use o seguinte controlador"
 
 #: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RADIOBUTTON.TEXT
 msgid  "T~he default driver"
 msgstr "O con~trolador predeterminado"
 
+#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RADIOBUTTON.TEXT
+msgid  "A speci~fic driver, to adapt the format to another printer"
+msgstr "Un controlador especí~fico, que adapta este formato para outra impresora"
+
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FIXEDTEXT.TEXT
+msgid  "Use the following driver for this PDF converter"
+msgstr "Use o seguinte controlador para este conversor de PDF"
+
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RADIOBUTTON.TEXT
+msgid  "The Adobe D~istiller(tm) driver"
+msgstr "O controlador Adobe D~istiller(tm)"
+
+#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RADIOBUTTON.TEXT
+msgid  "A spec~ific driver, to adapt the format to another printer"
+msgstr "Un controlador específ~ico, que adapta este formato para outra impresora"
+
+#: padialog.src#RID_TXT_FONT_ITALIC.STRING.TEXT
+msgid  "Italic"
+msgstr "Cursiva"
+
+#: padialog.src#RID_TXT_FONT_OBLIQUE.STRING.TEXT
+msgid  "Oblique"
+msgstr "Oblicuo"
+
+#: padialog.src#RID_TXT_FONT_THIN.STRING.TEXT
+msgid  "Thin"
+msgstr "Fino"
+
+#: padialog.src#RID_TXT_FONT_ULTRALIGHT.STRING.TEXT
+msgid  "Ultralight"
+msgstr "Ultraclaro"
+
+#: padialog.src#RID_TXT_FONT_SEMILIGHT.STRING.TEXT
+msgid  "Semilight"
+msgstr "Semiclaro"
+
+#: padialog.src#RID_TXT_FONT_LIGHT.STRING.TEXT
+msgid  "Light"
+msgstr "Claro"
+
+#: padialog.src#RID_TXT_FONT_SEMIBOLD.STRING.TEXT
+msgid  "Semibold"
+msgstr "Semigrosa"
+
+#: padialog.src#RID_TXT_FONT_BOLD.STRING.TEXT
+msgid  "Bold"
+msgstr "Grosa"
+
+#: padialog.src#RID_TXT_FONT_ULTRABOLD.STRING.TEXT
+msgid  "Ultrabold"
+msgstr "Ultragrosa"
+
+#: padialog.src#RID_TXT_FONT_ULTRACONDENSED.STRING.TEXT
+msgid  "Ultracondensed"
+msgstr "Ultracondensado"
+
+#: padialog.src#RID_TXT_FONT_EXTRACONDENSED.STRING.TEXT
+msgid  "Extracondensed"
+msgstr "Extracondensado"
+
+#: padialog.src#RID_TXT_FONT_CONDENSED.STRING.TEXT
+msgid  "Condensed"
+msgstr "Condensado"
+
+#: padialog.src#RID_TXT_FONT_SEMICONDENSED.STRING.TEXT
+msgid  "Semicondensed"
+msgstr "Semicondensado"
+
+#: padialog.src#RID_TXT_FONT_SEMIEXPANDED.STRING.TEXT
+msgid  "Semiexpanded"
+msgstr "Semiexpandido"
+
+#: padialog.src#RID_TXT_FONT_EXPANDED.STRING.TEXT
+msgid  "Expanded"
+msgstr "Expandido"
+
+#: padialog.src#RID_TXT_FONT_EXTRAEXPANDED.STRING.TEXT
+msgid  "Extraexpanded"
+msgstr "Extraexpandido"
+
+#: padialog.src#RID_TXT_FONT_ULTRAEXPANDED.STRING.TEXT
+msgid  "Ultraexpanded"
+msgstr "Ultraexpandido"
+
+#: padialog.src#RID_TXT_FONT_REGULAR.STRING.TEXT
+msgid  "Regular"
+msgstr "Estándar"
+
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PAGEITEM.TEXT
+msgid  "Command"
+msgstr "Orde"
+
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PAGEITEM.TEXT
+msgid  "Paper"
+msgstr "Papel"
+
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PAGEITEM.TEXT
+msgid  "Device"
+msgstr "Dispositivo"
+
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PAGEITEM.TEXT
+msgid  "Font Replacement"
+msgstr "Substitución de tipo de letra"
+
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PAGEITEM.TEXT
+msgid  "Other Settings"
+msgstr "Outra configuración"
+
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.STRING.TEXT
+msgid  "from driver"
+msgstr "do controlador"
+
+#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.STRING.TEXT
+msgid  "<ignore>"
+msgstr "<ignorar>"
+
+#: rtsetup.src#RID_RTS_RTSDIALOG.STRING.TEXT
+msgid  "Properties of %s"
+msgstr "Propiedades de %s"
+
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FIXEDTEXT.TEXT
+msgid  "~Paper size"
+msgstr "Tamaño do ~papel"
+
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FIXEDTEXT.TEXT
+msgid  "~Orientation"
+msgstr "~Orientación"
+
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FIXEDTEXT.TEXT
+msgid  "~Duplex"
+msgstr "~Dobre"
+
+#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FIXEDTEXT.TEXT
+msgid  "Paper tray"
+msgstr "Bandexa de papel"
+
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.STRING.TEXT
+msgid  "Color"
+msgstr "Cor"
+
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.STRING.TEXT
+msgid  "Grayscale"
+msgstr "Escala de grises"
+
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FIXEDTEXT.TEXT
+msgid  "~Option"
+msgstr "~Opción"
+
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FIXEDTEXT.TEXT
+msgid  "Current ~value"
+msgstr "~Valor actual"
+
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FIXEDTEXT.TEXT
+msgid  "Printer ~Language type"
+msgstr "Tipo de ~linguaxe de impresora"
+
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.STRINGLIST.ITEM
+msgid  "PostScript (Level from driver)"
+msgstr "PostScript (Nivel conforme o controlador)"
+
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.STRINGLIST.ITEM
+msgid  "PostScript Level 1"
+msgstr "PostScript nivel 1"
+
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.STRINGLIST.ITEM
+msgid  "PostScript Level 2"
+msgstr "PostScript nivel 2"
+
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.STRINGLIST.ITEM
+msgid  "PostScript Level 3"
+msgstr "PostScript nivel 3"
+
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.STRINGLIST.ITEM
+msgid  "PDF"
+msgstr "PDF"
+
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FIXEDTEXT.TEXT
+msgid  "~Color"
+msgstr "~Cor"
+
+#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FIXEDTEXT.TEXT
+msgid  "Color ~depth"
+msgstr "Profun~didade de cor"
+
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CHECKBOX.TEXT
+msgid  "~Enable font replacement"
+msgstr "Activar substitución de tip~os de letra"
+
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FIXEDTEXT.TEXT
+msgid  "Replaced ~fonts"
+msgstr "~Tipos de letra substituídos"
+
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PUSHBUTTON.TEXT
+msgid  "~Add"
+msgstr "~Engadir"
+
 #: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PUSHBUTTON.TEXT
 msgid  "~Remove"
 msgstr "~Retirar"
 
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FIXEDTEXT.TEXT
+msgid  "Repla~ce font"
+msgstr "~Substituír tipo de letra"
+
+#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FIXEDTEXT.TEXT
+msgid  "by ~printer font"
+msgstr "co tipo de letra da im~presora"
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CHECKBOX.TEXT
+msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+msgstr "~Usar o diálogo de impresión do sistema, desactivar o diálogo de impresión de %PRODUCTNAME"
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FIXEDTEXT.TEXT
+msgid  "Command for quick printing without dialog (optional)"
+msgstr "Orde para a impresión rápida sen diálogo (opcional)"
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FIXEDLINE.TEXT
+msgid  "Select command"
+msgstr "Seleccionar orde"
+
 #: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.STRING.TEXT
 msgid  "Printer"
 msgstr "Impresora"
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.STRING.TEXT
+msgid  "Fax"
+msgstr "Fax"
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.STRING.TEXT
+msgid  "PDF converter"
+msgstr "Conversor de PDF"
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FIXEDTEXT.TEXT
+msgid  "~Configure as"
+msgstr "~Configurar como"
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CHECKBOX.TEXT
+msgid  "~Fax number will be removed from output"
+msgstr "O número do ~fax retirarase na saída"
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FIXEDTEXT.TEXT
+msgid  "PDF target directory :"
+msgstr "Cartafol de destino de PDF:"
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FIXEDTEXT.TEXT
+msgid  "Command: "
+msgstr "Orde: "
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PUSHBUTTON.TEXT
+msgid  "~Help"
+msgstr "~Axuda"
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.STRING.TEXT
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "A liña de ordes para os conversores PDF execútase como sigue: para cada un dos documentos impresos, substitúese na liña da orde \"(TMP)\" por un ficheiro temporal e \"(OUTFILE)\" polo nome do ficheiro PDF destino. Se \"(TMP)\" se inclúe na liña de ordes, o código PostScritp será proporcionado por un ficheiro, doutro xeito obterase pola entrada estándar (p.e. unha tubaría)."
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.STRING.TEXT
+msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
+msgstr "A liña de ordes para os dispositivos de impresión execútase da seguinte maneira: o código PostScript xerado chega á liña de ordes como entrada estándar (por exemplo, como unha canalización)."
+
+#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.STRING.TEXT
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "A liña de ordes para os dispositivos de fax execútase da seguinte maneira: ao enviar un, \"(TMP)\" na liña de ordes é substituído por un ficheiro temporal, e \"(PHONE)\" na liña de ordes é substituído por un número de fax. Cando \"(TMP)\" está na liña de ordes, o código PostScript chegará a través dun ficheiro; do contrario, chegará á liña de ordes como entrada estándar (por exemplo, como unha canalización)."
+
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FIXEDTEXT.TEXT
+msgid  "~Left margin"
+msgstr "Marxe ~esquerda"
+
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FIXEDTEXT.TEXT
+msgid  "~Top margin"
+msgstr "Marxe ~superior"
+
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FIXEDTEXT.TEXT
+msgid  "~Right margin"
+msgstr "Marxe de~reita"
+
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FIXEDTEXT.TEXT
+msgid  "~Bottom margin"
+msgstr "Marxe ~inferior"
+
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FIXEDTEXT.TEXT
+msgid  "~Comment"
+msgstr "~Comentario"
+
+#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PUSHBUTTON.TEXT
+msgid  "~Default"
+msgstr "Pre~determinado"
+
+#: rtsetup.src#RID_TXT_QUERYFAXNUMBER.STRING.TEXT
+msgid  "Please enter the fax number."
+msgstr "Introduza o número do fax."
+
+#: rtsetup.src#RID_RTS_PWDIALOG.MODALDIALOG.TEXT
+msgid  "Authentication request"
+msgstr "Solicitude de autenticación"
+
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FIXEDTEXT.TEXT
+msgid  "Please enter your authentication data for server %s"
+msgstr "Introduza os seus datos de autenticación do servidor %s"
+
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FIXEDTEXT.TEXT
+msgid  "~User"
+msgstr "~Usuario"
+
+#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FIXEDTEXT.TEXT
+msgid  "~Password"
+msgstr "~Contrasinal"

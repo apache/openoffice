@@ -30,3 +30,267 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
+
+#: minimizer/minimizer.src#STR_PRESENTATION_MINIMIZER.STRING.TEXT
+msgid  "Presentation Minimizer"
+msgstr "Aurkezpen-minimizatzailea"
+
+#: minimizer/minimizer.src#STR_INFO_DIALOG.STRING.TEXT
+msgid  "Presentation Minimizer - Result"
+msgstr "Aurkezpen-minimizatzailea - Emaitza"
+
+#: minimizer/minimizer.src#STR_STEPS.STRING.TEXT
+msgid  "Steps"
+msgstr "Urratsak"
+
+#: minimizer/minimizer.src#STR_HELP.STRING.TEXT
+msgid  "~Help"
+msgstr "~Laguntza"
+
+#: minimizer/minimizer.src#STR_BACK.STRING.TEXT
+msgid  "< ~Back"
+msgstr "< At~zera"
+
+#: minimizer/minimizer.src#STR_NEXT.STRING.TEXT
+msgid  "~Next >"
+msgstr "~Hurrengoa >"
+
+#: minimizer/minimizer.src#STR_FINISH.STRING.TEXT
+msgid  "~Finish"
+msgstr "A~maitu"
+
+#: minimizer/minimizer.src#STR_CANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr "Utzi"
+
+#: minimizer/minimizer.src#STR_INTRODUCTION.STRING.TEXT
+msgid  "Introduction"
+msgstr "Sarrera"
+
+#: minimizer/minimizer.src#STR_INTRODUCTION_T.STRING.TEXT
+msgid  "The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.\nAt the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
+msgstr "Aurkezpen-minimizatzailea uneko aurkezpenaren fitxategi-tamaina txikitzeko erabilten da. Irudiak konprimitu eta dagoeneko behar ez diren datuak kentzen dira.\nlaguntzailearen azken urratsean aldaketak uneko aurkezpenean egin edo aurkezpenaren optimizatutako bertsio berri bat sortzea aukeratu ahal da."
+
+#: minimizer/minimizer.src#STR_CHOSE_SETTINGS.STRING.TEXT
+msgid  "~Choose settings for Presentation Minimizer"
+msgstr "~Aukeratu aurkezpen-minimizatzailearen ezarpenak"
+
+#: minimizer/minimizer.src#STR_REMOVE.STRING.TEXT
+msgid  "~Delete"
+msgstr "E~zabatu"
+
+#: minimizer/minimizer.src#STR_GRAPHIC_OPTIMIZATION.STRING.TEXT
+msgid  "Choose settings for optimizing pictures and graphics"
+msgstr "Aukeratu ezarpenak irudiak eta grafikoak optimizatzeko"
+
+#: minimizer/minimizer.src#STR_IMAGE_OPTIMIZATION.STRING.TEXT
+msgid  "Graphics"
+msgstr "Grafikoak"
+
+#: minimizer/minimizer.src#STR_LOSSLESS_COMPRESSION.STRING.TEXT
+msgid  "~Lossless compression"
+msgstr "~Galerarik gabeko konpresioa"
+
+#: minimizer/minimizer.src#STR_JPEG_COMPRESSION.STRING.TEXT
+msgid  "~JPEG compression"
+msgstr "~JPEG konpresioa"
+
+#: minimizer/minimizer.src#STR_QUALITY.STRING.TEXT
+msgid  "~Quality in %"
+msgstr "~Kalitatea (%)"
+
+#: minimizer/minimizer.src#STR_REMOVE_CROP_AREA.STRING.TEXT
+msgid  "~Delete cropped graphic areas"
+msgstr "~Ezabatu grafikoaren moztutako areak"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION.STRING.TEXT
+msgid  "Reduce ~image resolution"
+msgstr "~Murriztu irudi-bereizmena"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_0.STRING.TEXT
+msgid  "<no change>"
+msgstr "<no change>"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_1.STRING.TEXT
+msgid  "90;90 DPI (screen resolution)"
+msgstr "90;90 DPI (pantailaren bereizmena)"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_2.STRING.TEXT
+msgid  "150;150 DPI (projector resolution)"
+msgstr "150;150 DPI (proiektorearen bereizmena)"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_3.STRING.TEXT
+msgid  "300;300 DPI (print resolution)"
+msgstr "300;300 DPI (inprimagailuaren bereizmena)"
+
+#: minimizer/minimizer.src#STR_EMBED_LINKED_GRAPHICS.STRING.TEXT
+msgid  "~Break links to external graphics"
+msgstr "~Eten kanpoko grafikoen estekak"
+
+#: minimizer/minimizer.src#STR_OLE_OBJECTS.STRING.TEXT
+msgid  "OLE Objects"
+msgstr "OLE objektuak"
+
+#: minimizer/minimizer.src#STR_OLE_OPTIMIZATION.STRING.TEXT
+msgid  "Choose settings for replacing OLE objects"
+msgstr "Aukeratu ezarpenak OLE objektuak ordezteko"
+
+#: minimizer/minimizer.src#STR_OLE_REPLACE.STRING.TEXT
+msgid  "Create static replacement graphics for OLE objects"
+msgstr "Sortu ordezko grafiko estatikoak OLE objektuentzako"
+
+#: minimizer/minimizer.src#STR_ALL_OLE_OBJECTS.STRING.TEXT
+msgid  "For ~all OLE objects"
+msgstr "OLE objektu ~guztientzako"
+
+#: minimizer/minimizer.src#STR_ALIEN_OLE_OBJECTS_ONLY.STRING.TEXT
+msgid  "~For OLE objects not based on OpenDocument format"
+msgstr "OpenDocument formatuan oinarrituta ez dauden ~OLE objektuentzako"
+
+#: minimizer/minimizer.src#STR_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains OLE objects."
+msgstr "OLE (Object Linking and Embedding) dokumentu eta objektu batzuk beste dokumentu bati lotzea edo dokumentu horretan txertatzea ahalbidetzen duen teknologia bat da.Aurkezpenak honek OLE objektuak ditu."
+
+#: minimizer/minimizer.src#STR_NO_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains no OLE objects."
+msgstr "OLE (Object Linking and Embedding) dokumentu eta objektu batzuk beste dokumentu bati lotzea edo dokumentu horretan txertatzea ahalbidetzen duen teknologia bat da.\nAurkezpenak honek OLE objektuak ditu."
+
+#: minimizer/minimizer.src#STR_SLIDES.STRING.TEXT
+msgid  "Slides"
+msgstr "Diapositibak"
+
+#: minimizer/minimizer.src#STR_CHOOSE_SLIDES.STRING.TEXT
+msgid  "Choose which slides to delete"
+msgstr "Aukeratu diapositibak ezabatzeko"
+
+#: minimizer/minimizer.src#STR_MASTER_PAGES.STRING.TEXT
+msgid  "Master Pages"
+msgstr "Orrialde nagusiak"
+
+#: minimizer/minimizer.src#STR_DELETE_MASTER_PAGES.STRING.TEXT
+msgid  "Delete unused ~master pages"
+msgstr "Ezabatu erabili gabeko orrialde ~nagusiak"
+
+#: minimizer/minimizer.src#STR_DELETE_NOTES_PAGES.STRING.TEXT
+msgid  "~Clear notes"
+msgstr "~Garbitu oharrak"
+
+#: minimizer/minimizer.src#STR_DELETE_HIDDEN_SLIDES.STRING.TEXT
+msgid  "Delete hidden ~slides"
+msgstr "Ezabatu ezkutuko ~diapositibak"
+
+#: minimizer/minimizer.src#STR_CUSTOM_SHOW.STRING.TEXT
+msgid  "Delete slides that are not used for the ~custom slide show"
+msgstr "Diapositiba-aurkezpen ~pertsonalizatuan erabiltzen ez diren diapositibak ezabatu"
+
+#: minimizer/minimizer.src#STR_SUMMARY.STRING.TEXT
+msgid  "Summary"
+msgstr "Laburpena"
+
+#: minimizer/minimizer.src#STR_SUMMARY_TITLE.STRING.TEXT
+msgid  "Choose where to apply the following changes"
+msgstr "Aukeratu honako aldaketak non aplikatu"
+
+#: minimizer/minimizer.src#STR_PROGRESS.STRING.TEXT
+msgid  "Progress"
+msgstr "Aurrerapena"
+
+#: minimizer/minimizer.src#STR_OBJECTS_OPTIMIZED.STRING.TEXT
+msgid  "Objects optimized"
+msgstr "Objektuak optimizatuta"
+
+#: minimizer/minimizer.src#STR_APPLY_TO_CURRENT.STRING.TEXT
+msgid  "~Apply changes to current presentation"
+msgstr "~Aplikatu aldaketak uneko aurkezpenari"
+
+#: minimizer/minimizer.src#STR_AUTOMATICALLY_OPEN.STRING.TEXT
+msgid  "~Open newly created presentation"
+msgstr "~Ireki sortu berri den aurkezpena"
+
+#: minimizer/minimizer.src#STR_SAVE_SETTINGS.STRING.TEXT
+msgid  "~Save settings as"
+msgstr "~Gorde ezarpenak honela"
+
+#: minimizer/minimizer.src#STR_SAVE_AS.STRING.TEXT
+msgid  "~Duplicate presentation before applying changes"
+msgstr "~Bikoiztu aurkezpena aldaketak aplikatu baino lehenago"
+
+#: minimizer/minimizer.src#STR_DELETE_SLIDES.STRING.TEXT
+msgid  "Delete %SLIDES slides."
+msgstr "Ezabatu %SLIDES diapositibak"
+
+#: minimizer/minimizer.src#STR_OPTIMIZE_IMAGES.STRING.TEXT
+msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
+msgstr "Optimizatu %IMAGES grafikoak JPEG %QUALITY% kalitatera %RESOLUTION DPI-ko (puntu hazbetekoko) bereizmenarekin."
+
+#: minimizer/minimizer.src#STR_CREATE_REPLACEMENT.STRING.TEXT
+msgid  "Create replacement graphics for %OLE objects."
+msgstr "Sortu ordezko grafikoak %OLE objektuentzako."
+
+#: minimizer/minimizer.src#STR_CURRENT_FILESIZE.STRING.TEXT
+msgid  "Current file size:"
+msgstr "Uneko fitxategi-tamaina:"
+
+#: minimizer/minimizer.src#STR_ESTIMATED_FILESIZE.STRING.TEXT
+msgid  "Estimated new file size:"
+msgstr "Aurreikusitako fitxategi-tamaina berria:"
+
+#: minimizer/minimizer.src#STR_MB.STRING.TEXT
+msgid  "%1 MB"
+msgstr "%1 MB"
+
+#: minimizer/minimizer.src#STR_MY_SETTINGS.STRING.TEXT
+msgid  "My Settings "
+msgstr "Nire ezarpenak "
+
+#: minimizer/minimizer.src#STR_DEFAULT_SESSION.STRING.TEXT
+msgid  "default session"
+msgstr "saio lehenetsia"
+
+#: minimizer/minimizer.src#STR_MODIFY_WARNING.STRING.TEXT
+msgid  "The optimization will modify the current document. Do you want to continue?"
+msgstr "Optimizazioak uneko dokumentua aldatuko du. Jarraitzea nahi duzu?"
+
+#: minimizer/minimizer.src#STR_YES.STRING.TEXT
+msgid  "~Yes"
+msgstr "~Bai"
+
+#: minimizer/minimizer.src#STR_OK.STRING.TEXT
+msgid  "OK"
+msgstr "Ados"
+
+#: minimizer/minimizer.src#STR_INFO_1.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
+msgstr "Aurkezpen minimizatzaileak ongi eguneratu du '%TITLE' aurkezpena. Fitxategia %OLDFILESIZE MB tamainatik %NEWFILESIZE MB tamainara aldatu da."
+
+#: minimizer/minimizer.src#STR_INFO_2.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
+msgstr "Aurkezpen minimizatzaileak ongi eguneratu du '%TITLE' aurkezpena. Fitxategia %OLDFILESIZE MB tamainatik gutxi gorabeherako %NEWFILESIZE MB tamainara aldatu da."
+
+#: minimizer/minimizer.src#STR_INFO_3.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
+msgstr "Aurkezpen Minimizatzaileak ongi eguneratu du '%TITLE' aurkezpena. Fitxategia %NEWFILESIZE MB tamainara aldatu da."
+
+#: minimizer/minimizer.src#STR_INFO_4.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
+msgstr "Aurkezpen Minimizatzaileak ongi eguneratu du '%TITLE' aurkezpena. Fitxategia gutxi gorabehera %NEWFILESIZE MB tamainara aldatu da."
+
+#: minimizer/minimizer.src#STR_DUPLICATING_PRESENTATION.STRING.TEXT
+msgid  "Duplicating presentation..."
+msgstr "Aurkezpena bikoizten..."
+
+#: minimizer/minimizer.src#STR_DELETING_SLIDES.STRING.TEXT
+msgid  "Deleting slides..."
+msgstr "Diapositibak ezabatzen..."
+
+#: minimizer/minimizer.src#STR_OPTIMIZING_GRAPHICS.STRING.TEXT
+msgid  "Optimizing graphics..."
+msgstr "Grafikoak optimizatzen..."
+
+#: minimizer/minimizer.src#STR_CREATING_OLE_REPLACEMENTS.STRING.TEXT
+msgid  "Creating replacement graphics for OLE objects..."
+msgstr "OLE objektuen ordeko grafikoak sortzen..."
+
+#: minimizer/minimizer.src#STR_FILESIZESEPARATOR.STRING.TEXT
+msgid  "."
+msgstr "."

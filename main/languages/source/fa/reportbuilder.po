@@ -49,7 +49,7 @@ msgstr "نمودار گزارش %productname% %formatversion%"
 
 #: ../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu#EXTENDEDCOLORSCHEME.ENTRYNAMES.SUNREPORTBUILDER.DISPLAYNAME
 msgid  "Apache OpenOffice Report Builder"
-msgstr "گزارش‌ساز اراکل"
+msgstr ""
 
 #: ../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu#EXTENDEDCOLORSCHEME.ENTRYNAMES.SUNREPORTBUILDER.ENTRIES.REPORTHEADER.DISPLAYNAME
 msgid  "Report Header"
@@ -95,6 +95,21 @@ msgstr "کنترل دارای اشتراک"
 msgid  "Text Box Bound Content"
 msgstr "محتوای محدود به کادر متنی"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:COLUMNHEADERFOOTER.LABEL
+#, fuzzy
+msgid  "Column Header/Footer"
+msgstr "سرآیند/ته‌آیند ~ستون"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:CONDITIONALFORMATTING.LABEL
+#, fuzzy
+msgid  "Conditional Formatting..."
+msgstr "~قالب‌بندی شرطی..."
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DBSORTINGANDGROUPING.LABEL
+#, fuzzy
+msgid  "Sorting and Grouping"
+msgstr "~مرتب‌سازی و گروه‌بندی"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DISTRIBUTION.LABEL
 msgid  "Distribution..."
 msgstr "توزیع..."
@@ -110,6 +125,11 @@ msgstr "تطابق با بیشترین ارتفاع"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:GREATESTWIDTH.LABEL
 msgid  "Fit to greatest width"
 msgstr "تطابق با بیشترین عرض"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:INSERTDATETIMEFIELD.LABEL
+#, fuzzy
+msgid  "Date and Time..."
+msgstr "~تاریخ و ساعت"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:PAGEHEADERFOOTER.LABEL
 msgid  "Page Header/Footer"
@@ -163,9 +183,19 @@ msgstr "جمع شدن از بالا"
 msgid  "Select all Formatted Fields"
 msgstr "انتخاب همه فیلدهای قالب‌بندی شده"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLINSECTION.LABEL
+#, fuzzy
+msgid  "Select Objects in Section"
+msgstr "~انتخاب اشیاء بخش"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLLABELS.LABEL
 msgid  "Select all Labels"
 msgstr "انتخاب همه برچسب‌ها"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTREPORT.LABEL
+#, fuzzy
+msgid  "Select Report"
+msgstr "~انتخاب گزارش"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SMALLESTHEIGHT.LABEL
 msgid  "Fit to smallest height"
@@ -178,6 +208,11 @@ msgstr "تطابق با کمترین عرض"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SPREADSHEET.LABEL
 msgid  "Spreadsheet Document"
 msgstr "پرونده صفحه گسترده"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SUBREPORTINNEWWINDOW.LABEL
+#, fuzzy
+msgid  "Subreport in New Window..."
+msgstr "~زیرگزارش در صفحه جدید"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:TEXTDOCUMENT.LABEL
 msgid  "Text Document"

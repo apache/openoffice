@@ -35,29 +35,9 @@ msgstr ""
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Bienvenue dans %PRODUCTNAME %PRODUCTVERSION"
 
-#: migration/wizard.src#STR_STATE_WELCOME.STRING.TEXT
-msgid  "Welcome"
-msgstr "Bienvenue"
-
-#: migration/wizard.src#STR_STATE_LICENSE.STRING.TEXT
-msgid  "License Agreement"
-msgstr "Contrat de licence"
-
-#: migration/wizard.src#STR_STATE_MIGRATION.STRING.TEXT
-msgid  "Personal Data"
-msgstr "Données personnelles"
-
-#: migration/wizard.src#STR_STATE_USER.STRING.TEXT
-msgid  "User name"
-msgstr "Nom d'utilisateur"
-
 #: migration/wizard.src#STR_STATE_UPDATE_CHECK.STRING.TEXT
 msgid  "Online Update"
 msgstr "Mise à jour en ligne"
-
-#: migration/wizard.src#STR_STATE_REGISTRATION.STRING.TEXT
-msgid  "Registration"
-msgstr "Enregistrement"
 
 #: migration/wizard.src#STR_WELCOME_MIGRATION.STRING.TEXT
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
@@ -67,13 +47,13 @@ msgstr "Cet assistant vous guidera dans l'acceptation du contrat de licence, le 
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
 msgstr "Cet assistant vous guidera tout au long de l'enregistrement de %PRODUCTNAME.\n\nPour continuer, cliquez sur 'Suivant'."
 
-#: migration/wizard.src#STR_FINISH.STRING.TEXT
-msgid  "~Finish"
-msgstr "~Terminer"
-
 #: migration/wizard.src#STR_REGISTRATION_OOO.STRING.TEXT
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
 msgstr "Vous avez maintenant l'opportunité de contribuer à la communauté Open Source ayant la croissance la plus rapide dans le monde.\n\nAidez-nous à prouver que %PRODUCTNAME possède déjà une part de marché importante en enregistrant %PRODUCTNAME.\n\nL'enregistrement est facultatif et sans obligation."
+
+#: migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ERRORBOX.MESSAGE
+msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr "Erreur lors du démarrage du navigateur Web.\nVérifiez les paramètres de %PRODUCTNAME et ceux du navigateur Web."
 
 #: migration/wizard.src#QB_ASK_DECLINE.QUERYBOX.MESSAGE
 msgid  "Do you really want to decline?"
@@ -103,14 +83,6 @@ msgstr "2."
 msgid  "Click 'Accept' to accept the terms of the Agreement."
 msgstr "Pour accepter les termes du contrat, cliquez sur 'Accepter'."
 
-#: migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
-msgid  "Scroll Do~wn"
-msgstr "Faire dé~filer"
-
-#: migration/wizard.src#STR_LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
-msgstr "~Accepter"
-
 #: migration/wizard.src#STR_LICENSE_DECLINE.STRING.TEXT
 msgid  "~Decline"
 msgstr "~Refuser"
@@ -127,10 +99,6 @@ msgstr "La majorité des données personnelles saisies lors de l'installation de
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
 msgstr "%PRODUCTNAME recherche automatiquement et régulièrement les nouvelles versions.\nCette recherche ne nécessite aucun transfert de données personnelles.\nLe système vous avertit dès qu'une version plus récente est disponible.\n\nPour configurer cette fonction, cliquez sur Outils / Options... / %PRODUCTNAME / Mise à jour en ligne."
 
-#: migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CHECKBOX.TEXT
-msgid  "~Check for updates automatically"
-msgstr "~Vérifier automatiquement les mises à jour disponibles"
-
 #: migration/wizard.src#TP_USER.FT_USER_HEADER.FIXEDTEXT.TEXT
 msgid  "Provide your full name and initials below"
 msgstr "Indiquez votre nom complet et vos initiales ci-dessous"
@@ -138,22 +106,6 @@ msgstr "Indiquez votre nom complet et vos initiales ci-dessous"
 #: migration/wizard.src#TP_USER.FT_USER_BODY.FIXEDTEXT.TEXT
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
 msgstr "Le nom d'utilisateur sera utilisé dans les propriétés du document et dans les modèles, ainsi qu'au moment de l'enregistrement de modifications apportées aux documents."
-
-#: migration/wizard.src#TP_USER.FT_USER_FIRST.FIXEDTEXT.TEXT
-msgid  "~First name"
-msgstr "~Prénom"
-
-#: migration/wizard.src#TP_USER.FT_USER_LAST.FIXEDTEXT.TEXT
-msgid  "~Last name"
-msgstr "~Nom"
-
-#: migration/wizard.src#TP_USER.FT_USER_INITIALS.FIXEDTEXT.TEXT
-msgid  "~Initials"
-msgstr "~Initiales"
-
-#: migration/wizard.src#TP_USER.FT_USER_FATHER.FIXEDTEXT.TEXT
-msgid  "~Father's name"
-msgstr "~Patronyme"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME Registration"
@@ -183,9 +135,9 @@ msgstr "Nous vous souhaitons un agréable travail avec %PRODUCTNAME.\n\nPour qui
 msgid  "Should the file \"$1\" be restored?"
 msgstr "Restaurer le fichier \"$1\" ?"
 
-#: app/desktop.src#STR_RECOVER_TITLE.STRING.TEXT
-msgid  "File Recovery"
-msgstr "Restauration de fichier"
+#: app/desktop.src#STR_RECOVER_PREPARED.WARNINGBOX.MESSAGE
+msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
+msgstr "Une erreur irrécupérable s'est produite.\n\nTous les fichiers modifiés ont été sauvegardés\net devraient être restaurés au\nredémarrage du programme."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.STRING.TEXT
 msgid  "The application cannot be started. "
@@ -263,9 +215,9 @@ msgstr "Stockage central des paramètres personnels modifiés impossible : droit
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
 msgstr "Impossible de démarrer %PRODUCTNAME en raison d'une erreur lors de l'accès aux données de configuration %PRODUCTNAME.\n\nVeuillez contacter votre administrateur système."
 
-#: app/desktop.src#STR_INTERNAL_ERRMSG.STRING.TEXT
-msgid  "The following internal error has occurred: "
-msgstr "Erreur interne : "
+#: app/desktop.src#QBX_USERDATALOCKED.QUERYBOX.MESSAGE
+msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
+msgstr "Une autre instance de %PRODUCTNAME a accès à vos paramètres personnels ou les bloque.\nUn accès simultané peut provoquer des incohérences dans vos paramètres personnels. Avant de continuer, assurez-vous que l'utilisateur '$u' quitte bien %PRODUCTNAME sur l'hôte '$h'.\n\nÊtes-vous sûr de vouloir continuer ?"
 
 #: app/desktop.src#STR_TITLE_USERDATALOCKED.STRING.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -274,6 +226,10 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 #: app/desktop.src#EBX_ERR_PRINTDISABLED.ERRORBOX.MESSAGE
 msgid  "Printing is disabled. No documents can be printed."
 msgstr "L'impression est désactivée. Impossible d'imprimer des documents."
+
+#: app/desktop.src#INFOBOX_EXPIRED.INFOBOX.MESSAGE
+msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
+msgstr "Cette version d'évaluation a expiré. Pour en savoir plus sur %PRODUCTNAME,\nvisitez http://www.openoffice.org/fr"
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.STRING.TEXT
 msgid  "The path manager is not available.\n"
@@ -303,17 +259,9 @@ msgstr "[Saisissez \"oui\" ou \"non\"] :"
 msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "Erreur de saisie. Veuillez saisir \"oui\" ou \"non\" :"
 
-#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.STRING.TEXT
-msgid  "YES"
-msgstr "OUI"
-
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.STRING.TEXT
 msgid  "Y"
 msgstr "O"
-
-#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.STRING.TEXT
-msgid  "NO"
-msgstr "NON"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.STRING.TEXT
 msgid  "N"
@@ -327,17 +275,13 @@ msgstr "unopkg ne peut pas être démarré. Le fichier verrou l'indique comme en
 msgid  "ERROR: "
 msgstr "ERREUR : "
 
-#: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.STRING.TEXT
-msgid  "Unknown"
-msgstr "Inconnu"
-
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.STRING.TEXT
 msgid  "Extension requires at least Apache OpenOffice %VERSION"
-msgstr "L'extension nécessite au moins OpenOffice.org %VERSION"
+msgstr "L'extension nécessite au minimum Apache OpenOffice %VERSION"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.STRING.TEXT
 msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
-msgstr "L'extension ne prend pas en charge les versions supérieures à : OpenOffice.org %VERSION"
+msgstr "L'extension ne supporte pas les versions supérieures à Apache OpenOffice %VERSION"
 
 #: deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.STRING.TEXT
 msgid  "%PRODUCTNAME Basic Library"
@@ -363,41 +307,9 @@ msgstr "Activation : "
 msgid  "Disabling: "
 msgstr "Désactivation : "
 
-#: deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.STRING.TEXT
-msgid  "Cannot detect media-type: "
-msgstr "Impossible de détecter le type de média : "
-
-#: deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.STRING.TEXT
-msgid  "This media-type is not supported: "
-msgstr "Ce type de média n'est pas supporté : "
-
-#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.STRING.TEXT
-msgid  "An error occurred while enabling: "
-msgstr "Une erreur s'est produite lors de l'activation : "
-
-#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.STRING.TEXT
-msgid  "An error occurred while disabling: "
-msgstr "Une erreur s'est produite lors de la désactivation : "
-
-#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.STRING.TEXT
-msgid  "Configuration Schema"
-msgstr "Schéma de configuration"
-
-#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.STRING.TEXT
-msgid  "Configuration Data"
-msgstr "Données de configuration"
-
-#: deployment/registry/help/dp_help.src#RID_STR_HELP.STRING.TEXT
-msgid  "Help"
-msgstr "Aide"
-
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.STRING.TEXT
 msgid  "The extension cannot be installed because:\n"
 msgstr "Impossible d'installer l'extension pour la raison suivante :\n"
-
-#: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.STRING.TEXT
-msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr "L'extension ne sera pas installée parce qu'une erreur s'est produite dans les fichiers d'aide :\n"
 
 #: deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.STRING.TEXT
 msgid  "%MACROLANG Library"
@@ -455,21 +367,29 @@ msgstr "Aucune extension de ce type n'est déployée : "
 msgid  "Synchronizing repository for %NAME extensions"
 msgstr "Synchronisation du dépôt des extensions %NAME"
 
+#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WARNINGBOX.MESSAGE
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
+msgstr "Vous êtes sur le point d'installer la version $NEW de l'extension \\'$NAME\\'.\nLa version $DEPLOYED, plus récente, est déjà installée.\nCliquez sur \\'OK\\' pour remplacer l'extension installée.\nCliquez sur \\'Annuler\\' pour interrompre l'installation."
+
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
 msgstr "Vous êtes sur le point d'installer la version $NEW de l'extension \\'$NAME\\'.\nLa version plus récente $DEPLOYED, nommée \\'$OLDNAME\\', est déjà installée.\nCliquez sur \\'OK\\' pour remplacer l'extension installée.\nCliquez sur \\'Annuler\\' pour interrompre l'installation."
+
+#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WARNINGBOX.MESSAGE
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
+msgstr "Vous êtes sur le point d'installer la version $NEW de l'extension \\'$NAME\\'.\nCette version est déjà installée.\nCliquez sur \\'OK\\' pour remplacer l'extension installée.\nCliquez sur \\'Annuler\\' pour interrompre l'installation."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
 msgstr "Vous êtes sur le point d'installer la version $NEW de l'extension \\'$NAME\\'.\nCette version, nommée \\'$OLDNAME\\', est déjà installée.\nCliquez sur \\'OK\\' pour remplacer l'extension installée.\nCliquez sur \\'Annuler\\' pour interrompre l'installation."
 
+#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WARNINGBOX.MESSAGE
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
+msgstr "Vous êtes sur le point d'installer la version $NEW de l'extension \\'$NAME\\'.\nL'ancienne version $DEPLOYED est déjà installée.\nCliquez sur \\'OK\\' pour remplacer l'extension installée.\nCliquez sur \\'Annuler\\' pour interrompre l'installation."
+
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
 msgstr "Vous êtes sur le point d'installer la version $NEW de l'extension \\'$NAME\\'.\nL'ancienne version $DEPLOYED, nommée \\'$OLDNAME\\', est déjà installée.\nCliquez sur \\'OK\\' pour remplacer l'extension installée.\nCliquez sur \\'Annuler\\' pour interrompre l'installation."
-
-#: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.MODALDIALOG.TEXT
-msgid  "System dependencies check"
-msgstr "Vérification des dépendances système"
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FIXEDTEXT.TEXT
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
@@ -479,41 +399,9 @@ msgstr "Impossible d'installer l'extension, car les dépendances\nsystème suiva
 msgid  "Add Extension(s)"
 msgstr "Ajouter des extensions"
 
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.STRING.TEXT
-msgid  "~Remove"
-msgstr "Supp~rimer"
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.STRING.TEXT
-msgid  "~Enable"
-msgstr "~Activer"
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.STRING.TEXT
-msgid  "~Disable"
-msgstr "~Désactiver"
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.STRING.TEXT
-msgid  "~Update..."
-msgstr "Mise à jo~ur..."
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.STRING.TEXT
-msgid  "~Options..."
-msgstr "Opt~ions..."
-
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.STRING.TEXT
 msgid  "Adding %EXTENSION_NAME"
 msgstr "Ajout de %EXTENSION_NAME"
-
-#: deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.STRING.TEXT
-msgid  "Removing %EXTENSION_NAME"
-msgstr "Suppression de %EXTENSION_NAME"
-
-#: deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.STRING.TEXT
-msgid  "Enabling %EXTENSION_NAME"
-msgstr "Activation de %EXTENSION_NAME"
-
-#: deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.STRING.TEXT
-msgid  "Disabling %EXTENSION_NAME"
-msgstr "Désactivation de %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.STRING.TEXT
 msgid  "Accept license for %EXTENSION_NAME"
@@ -522,10 +410,6 @@ msgstr "Accepter la licence de %EXTENSION_NAME"
 #: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.STRING.TEXT
 msgid  "~For all users"
 msgstr "~Pour tous les utilisateurs"
-
-#: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.STRING.TEXT
-msgid  "~Only for me"
-msgstr "~Seulement pour moi"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.STRING.TEXT
 msgid  "Error: The status of this extension is unknown"
@@ -579,17 +463,29 @@ msgstr "2."
 msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
 msgstr "Pour accepter les termes du contrat de licence de l'extension, appuyez sur le bouton \\'Accepter\\'."
 
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
-msgid  "~Scroll Down"
-msgstr "Défiler vers le ba~s"
-
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKBUTTON.TEXT
-msgid  "Accept"
-msgstr "Accepter"
-
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CANCELBUTTON.TEXT
 msgid  "Decline"
 msgstr "Refuser"
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "You are about to install the extension \\'%NAME\\'.\nClick \\'OK\\' to proceed with the installation.\nClick \\'Cancel\\' to stop the installation."
+msgstr "Vous êtes sur le point d'installer l'extension \\'%NAME\\'.\nCliquez sur \\'OK\\' pour poursuivre l'installation.\nCliquez sur \\'Annuler\\' pour interrompre l'installation."
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "You are about to remove the extension \\'%NAME\\'.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
+msgstr "Vous êtes sur le point de supprimer l'extension \\'%NAME\\'.\nCliquez sur \\'OK\\' pour supprimer l'extension.\nCliquez sur \\'Annuler\\' pour interrompre la suppression de l'extension."
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
+msgstr "Assurez-vous qu'aucun autre utilisateur ne travaille avec le même %PRODUCTNAME lors de la modification d'extensions partagées dans un environnement multi-utilisateur.\nCliquez sur \\'OK\\' pour supprimer l'extension.\nCliquez sur \\'Annuler\\' pour interrompre la suppression de l'extension."
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to enable the extension.\nClick \\'Cancel\\' to stop enabling the extension."
+msgstr "Assurez-vous qu'aucun autre utilisateur ne travaille avec le même %PRODUCTNAME lors de la modification d'extensions partagées dans un environnement multi-utilisateur.\nCliquez sur \\'OK\\' pour activer l'extension.\nCliquez sur \\'Annuler\\' pour interrompre l'activation de l'extension."
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to disable the extension.\nClick \\'Cancel\\' to stop disabling the extension."
+msgstr "Assurez-vous qu'aucun autre utilisateur ne travaille avec le même %PRODUCTNAME lors de la modification d'extensions partagées dans un environnement multi-utilisateur.\nCliquez sur \\'OK\\' pour désactiver l'extension.\nCliquez sur \\'Annuler\\' pour interrompre la désactivation de l'extension."
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.STRING.TEXT
 msgid  "The extension \\'%Name\\' does not work on this computer."
@@ -603,25 +499,13 @@ msgstr "Téléchargement et installation"
 msgid  "Downloading extensions..."
 msgstr "Téléchargement des extensions..."
 
-#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FIXEDTEXT.TEXT
-msgid  "Result"
-msgstr "Résultat"
-
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKBUTTON.TEXT
 msgid  "OK"
 msgstr "OK"
 
-#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CANCELBUTTON.TEXT
-msgid  "Cancel Update"
-msgstr "Annuler la mise à jour"
-
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.STRING.TEXT
 msgid  "Installing extensions..."
 msgstr "Installation des extensions..."
-
-#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.STRING.TEXT
-msgid  "Installation finished"
-msgstr "Installation terminée"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.STRING.TEXT
 msgid  "No errors."
@@ -651,45 +535,17 @@ msgstr "L'extension ne sera pas installée."
 msgid  "Extension Update"
 msgstr "Mise à jour de l'extension"
 
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FIXEDTEXT.TEXT
-msgid  "Checking..."
-msgstr "Vérification..."
-
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FIXEDTEXT.TEXT
 msgid  "~Available extension updates"
 msgstr "~Mises à jour d'extension disponibles"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CHECKBOX.TEXT
-msgid  "~Show all updates"
-msgstr "Afficher toute~s les mises à jour"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "Description"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FIXEDTEXT.TEXT
-msgid  "Publisher:"
-msgstr "Éditeur :"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FIXEDTEXT.TEXT
-msgid  "What is new:"
-msgstr "Ce qui est nouveau :"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FIXEDTEXT.TEXT
 msgid  "Release Notes"
 msgstr "Notes de version"
 
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PUSHBUTTON.TEXT
-msgid  "~Install"
-msgstr "~Installer"
-
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
 msgstr "Fermer"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.STRING.TEXT
-msgid  "Error"
-msgstr "Erreur"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.STRING.TEXT
 msgid  "No new updates are available."
@@ -698,10 +554,6 @@ msgstr "Aucune nouvelle mise à jour n'est disponible."
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.STRING.TEXT
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
 msgstr "Aucune mise à jour installable de disponible. Pour voir celles ignorées ou désactivées, cochez la case 'Afficher toutes les mises à jour'."
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.STRING.TEXT
-msgid  "An error occurred:"
-msgstr "Une erreur s'est produite :"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.STRING.TEXT
 msgid  "Unknown error."
@@ -717,19 +569,15 @@ msgstr "Impossible de mettre à jour l'extension pour la raison suivante :"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.STRING.TEXT
 msgid  "Required Apache OpenOffice version doesn't match:"
-msgstr "La version requise de OpenOffice.org ne correspond pas :"
+msgstr "La version requise de Apache OpenOffice ne correspond pas :"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.STRING.TEXT
 msgid  "You have Apache OpenOffice %VERSION"
-msgstr "Vous avez OpenOffice.org %VERSION"
+msgstr "Vous avez Apache OpenOffice %VERSION"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.STRING.TEXT
 msgid  "browser based update"
 msgstr "mise à jour basée sur un navigateur"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.STRING.TEXT
-msgid  "Version"
-msgstr "Version"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.STRING.TEXT
 msgid  "Ignore this Update"
@@ -747,13 +595,13 @@ msgstr "Activer les mises à jour"
 msgid  "This update will be ignored.\n"
 msgstr "Cette mise à jour sera ignoré.\n"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to update the extensions.\nClick \\'Cancel\\' to stop updating the extensions."
+msgstr "Assurez-vous qu'aucun autre utilisateur ne travaille avec le même %PRODUCTNAME lors de la modification d'extensions partagées dans un environnement multiutilisateur.\nCliquez sur \\'OK\\' pour mettre à jour les extensions.\nCliquez sur \\'Annuler\\' pour interrompre la mise à jour des extensions."
+
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.MODELESSDIALOG.TEXT
 msgid  "Extension Manager"
 msgstr "Gestionnaire des extensions"
-
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Add..."
-msgstr "A~jouter..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
 msgid  "Check for ~Updates..."
@@ -767,10 +615,6 @@ msgstr "Obtenez des extensions supplémentaires en ligne..."
 msgid  "Adding %EXTENSION_NAME"
 msgstr "Ajout de %EXTENSION_NAME"
 
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
-msgid  "Close"
-msgstr "Fermer"
-
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.MODALDIALOG.TEXT
 msgid  "Extension Update Required"
 msgstr "Mise à jour de l'extension nécessaire"
@@ -779,13 +623,9 @@ msgstr "Mise à jour de l'extension nécessaire"
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
 msgstr "%PRODUCTNAME a été mis à jour vers une nouvelle version. Certaines extensions de %PRODUCTNAME installées ne sont pas compatibles avec cette version et nécessitent d'être mises à jour avant de pouvoir être utilisées."
 
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PUSHBUTTON.TEXT
-msgid  "Disable all"
-msgstr "Tout désactiver"
-
-#: ../win32/source/rebase/rebasegui.ulf#_APP_TITLE_
-msgid  "Installation Status"
-msgstr "Statut de l'installation"
+#: deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QUERYBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
+msgstr "Assurez-vous qu'aucun utilisateur ne travaille avec le même %PRODUCTNAME lors de l'installation d'une extension pour tous les utilisateurs dans un environnement multiutilisateur.\n\nPour qui souhaitez-vous installer cette extension ?\n"
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_
 msgid  "Installation is optimized for clients."
@@ -831,13 +671,21 @@ msgstr "Le fichier '%s' est introuvable."
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "Option de ligne de commande '%s' non valide. Pour obtenir de l'aide, veuillez utiliser '/?'."
 
+#: ../win32/source/setup/setup.ulf#_SETUP_TO_OLD_
+msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
+msgstr "Ce package nécessite au moins la version '%s' de Windows Installer. \nIl y a le Windows Installer '%s' sur votre système !"
+
+#: ../win32/source/setup/setup.ulf#_SETUP_NOT_FOUND_
+msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
+msgstr "Ce package nécessite Windows Installer. \nVous devez avoir au moins Windows Installer '%s' sur votre système !"
+
+#: ../win32/source/setup/setup.ulf#_USAGE_
+msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr "Utilisation :\n   /? :  Affiche cette boîte de dialogue.\n   /a :  Effectue une installation administrative.\n   /j[u|m] :  Effectue une installation publicitaire.\n   /q[n] : N'affiche aucune interface utilisateur (mode silencieux).\n"
+
 #: ../win32/source/setup/setup.ulf#_ALREADY_RUNNING_
 msgid  "There is already a setup process running."
 msgstr "Un processus d'installation est déjà en cours d'exécution."
-
-#: ../win32/source/setup/setup.ulf#_UNKNOWN_ERROR_
-msgid  "An Unknown Error occured!"
-msgstr "Une erreur inconnue s'est produite !"
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PROFILE_
 msgid  "Invalid or incomplete profile."
@@ -847,106 +695,14 @@ msgstr "Profil non valide ou incomplet."
 msgid  "Unknown Language: %d"
 msgstr "Langue inconnue : %d"
 
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_TW_
-msgid  "Chinese (traditional)"
-msgstr "Chinois (traditionnel)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_CS_
-msgid  "Czech"
-msgstr "Tchèque"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_DA_
-msgid  "Danish"
-msgstr "Danois"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_DE_DE_
-msgid  "German (Germany)"
-msgstr "Allemand (Allemagne)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_EL_
-msgid  "Greek"
-msgstr "Grec"
-
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EN_US_
 msgid  "English (USA)"
 msgstr "Anglais (U.S.A.)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_ES_
-msgid  "Spanish (Spain)"
-msgstr "Espagnol (Espagne)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_FI_
-msgid  "Finnish"
-msgstr "Finnois"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_FR_FR_
-msgid  "French (France)"
-msgstr "Français (France)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_HE_
-msgid  "Hebrew"
-msgstr "Hébreu"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_HU_
-msgid  "Hungarian"
-msgstr "Hongrois"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_IT_IT_
-msgid  "Italian (Italy)"
-msgstr "Italien (Italie)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_JA_
-msgid  "Japanese"
-msgstr "Japonais"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_KO_
-msgid  "Korean"
-msgstr "Coréen"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_NL_NL_
-msgid  "Dutch (Netherlands)"
-msgstr "Néerlandais (Pays-Bas)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_NO_NO_
-msgid  "Norwegian (Bokmål)"
-msgstr "Norvégien (Bokmål)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_PL_
-msgid  "Polish"
-msgstr "Polonais"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_BR_
-msgid  "Portuguese (Brazil)"
-msgstr "Portugais (Brésil)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_RU_
-msgid  "Russian"
-msgstr "Russe"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SK_
 msgid  "Slovak"
 msgstr "Slovaque"
 
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_SV_SE_
-msgid  "Swedish (Sweden)"
-msgstr "Suédois (Suède)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_TH_
-msgid  "Thai"
-msgstr "Thaï"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_TR_
-msgid  "Turkish"
-msgstr "Turc"
-
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ET_
 msgid  "Estonian"
 msgstr "Estonien"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_CN_
-msgid  "Chinese (Simplified)"
-msgstr "Chinois (simplifié)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_PT_
-msgid  "Portuguese (Portugal)"
-msgstr "Portugais (Portugal)"

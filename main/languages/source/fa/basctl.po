@@ -115,10 +115,6 @@ msgstr "گذرواژهٔ «XX» را وارد کنید"
 msgid  "Name already exists"
 msgstr "نام از قبل وجود دارد"
 
-#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
-msgid  "(Signed)"
-msgstr "(امضا شده)"
-
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
 msgid  "Object with same name already exists"
 msgstr "شیئی با همین نام از قبل وجود دارد"
@@ -211,22 +207,6 @@ msgstr "شیء یا متد پیدا نشد"
 msgid  "BASIC"
 msgstr "بیسیک"
 
-#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
-msgid  "Ln"
-msgstr "سطر"
-
-#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
-msgid  "Col"
-msgstr "ستون"
-
-#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
-msgid  "Document"
-msgstr "نوشتار"
-
-#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
-msgid  "Macro Bar"
-msgstr "نوار ماکرو"
-
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
 msgid  "The window cannot be closed while BASIC is running."
 msgstr "در حین اجرا شدن بیسیک نمی‌توان این پنجره را بست."
@@ -242,14 +222,6 @@ msgstr "ارجاع به «XX» امکان‌پذیر نیست."
 #: basicide/basidesh.src#RID_STR_WATCHNAME.STRING.TEXT
 msgid  "Watch"
 msgstr "مشاهده"
-
-#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
-msgid  "Variable"
-msgstr "متغیر"
-
-#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
-msgid  "Value"
-msgstr "مقدار"
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
 msgid  "Type"
@@ -287,14 +259,6 @@ msgstr "پیمانهٔ جدید"
 msgid  "New Dialog"
 msgstr "محاورهٔ جدید"
 
-#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
-msgid  "All"
-msgstr "همه"
-
-#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
-msgid  "Page"
-msgstr "صفحه"
-
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
 msgid  "A name must be entered."
 msgstr "باید نامی وارد کنید."
@@ -318,10 +282,6 @@ msgstr "تماشا:"
 #: basicide/basidesh.src#RID_STR_STACK.STRING.TEXT
 msgid  "Calls: "
 msgstr "فراخوانی‌ها: "
-
-#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
-msgid  "My Macros"
-msgstr "ماکروهای شما"
 
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
 msgid  "My Dialogs"
@@ -379,29 +339,13 @@ msgstr "کادر محاوره‌ای بیسیک"
 msgid  "Delete"
 msgstr "حذف"
 
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
-msgid  "Rename"
-msgstr "تغییر نام"
-
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
-msgid  "Hide"
-msgstr "پنهان کردن"
-
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
 msgid  "Modules..."
 msgstr "پیمانه‌ها..."
 
-#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
-msgid  "Do you want to overwrite the XX macro?"
-msgstr "آیا می‌خواهید روی ماکروی XX بنویسید؟"
-
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
 msgid  "<Not localized>"
 msgstr "<ترجمه نشده>"
-
-#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
-msgid  "[Default Language]"
-msgstr "[زبان پیش‌گزیده]"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 msgid  "Document Objects"
@@ -419,10 +363,6 @@ msgstr "پیمانه‌ها"
 msgid  "Class Modules"
 msgstr "پیمانه‌های کلاس"
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
-msgid  "Replace"
-msgstr "جای‌گزین کردن"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
 msgid  "Dialog Import - Name already used"
 msgstr "درون‌ریزی محاوره - نام قبلاً  استفاده شده است"
@@ -431,14 +371,6 @@ msgstr "درون‌ریزی محاوره - نام قبلاً  استفاده ش�
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
 msgstr "کتابخانه پیش از این حاوی یک کادر محاوره‌ای با نام زیر می‌باشد:\n\n$(ARG1)\n\nکادر محاوره‌ای را تغییر نام دهید تا کادر موجود حفظ گردد یا کادر جدید را جایگزین نمائید. "
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "اضافه کردن"
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
-msgid  "Omit"
-msgstr "حذف"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
 msgid  "Dialog Import - Language Mismatch"
 msgstr "درون‌ریزی کادر محاوره‌ای - عدم تطابق زبان"
@@ -446,10 +378,6 @@ msgstr "درون‌ریزی کادر محاوره‌ای - عدم تطابق ز�
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
 msgstr "کادر محاوره‌ای انتخاب شده برای ورود، زبانی غیر از کتابخانه هدف را پشتیبانی می‌کند.\n\nبرای نگه‌داری زبان‌های اضافی منابع ارائه شده توسط کادر محاوره‌ای این زبان‌ها را به کتابخانه اضافه کنید یا برای ماندن با زبانهای کتابخانه جاری، آن را حذف کنید.\n\nتوجه: برای زبانهایی که توسط کادر محاوره‌ای منابع پشتیبانی نمی‌شوند، از زبان پیش‌گزیده کادر محاوره‌ای استفاده می‌گردد.\n "
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
-msgid  "New"
-msgstr "جدید"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
 msgid  "Delete"
@@ -462,14 +390,6 @@ msgstr "فعال"
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FIXEDTEXT.TEXT
 msgid  "Pass Count:"
 msgstr "تعداد گذر"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
-msgid  "Breakpoints"
-msgstr "نقاط انفصال"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
-msgid  "Manage Breakpoints"
-msgstr "مدیریت نقاط انفصال"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME Basic Macros"
@@ -527,10 +447,6 @@ msgstr "~حذف"
 msgid  "~Organizer..."
 msgstr "~سازمان‌دهنده..."
 
-#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
-msgid  "Macro"
-msgstr "ماکرو"
-
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 msgid  "~New"
 msgstr "~جدید"
@@ -538,10 +454,6 @@ msgstr "~جدید"
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
 msgid  "Choose"
 msgstr "انتخاب"
-
-#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "اجرا"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
 msgid  "~Save"
@@ -647,10 +559,6 @@ msgstr "افزونه"
 msgid  "Description"
 msgstr "شرح"
 
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
-msgid  "Help information"
-msgstr "اطلاعات راهنما"
-
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
 msgid  "Help ID"
 msgstr "شناسهٔ راهنما"
@@ -658,14 +566,6 @@ msgstr "شناسهٔ راهنما"
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FIXEDTEXT.TEXT
 msgid  "Help file name"
 msgstr "نام پروندهٔ راهنما"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
-msgid  "Objects"
-msgstr "اشیاء"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
-msgid  "Show"
-msgstr "نمایش"
 
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
@@ -691,17 +591,9 @@ msgstr "مدیریت زبان‌های رابط کاربر [$1]"
 msgid  "Present Languages"
 msgstr "زبان‌های حاضر"
 
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "اضافه کردن..."
-
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
 msgid  "Delete"
 msgstr "حذف"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
-msgid  "Default"
-msgstr "پیش‌گزیده"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
@@ -710,10 +602,6 @@ msgstr "اگر محلی‌سازی برای رابط محلی کاربر موج�
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
 msgid  "~Close"
 msgstr "~بستن"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
-msgid  "[Default Language]"
-msgstr "[زبان پیش‌گزیده]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
 msgid  "~Delete"
@@ -727,13 +615,13 @@ msgstr "<برای ایجاد کردن منابع زبان 'اضافه‌کردن
 msgid  "Delete Language Resources"
 msgstr "حذف کردن منابع زبان"
 
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr "شما در حال حذف کردن منابع برای زبان‌(ها)ی انتخاب‌شده هستید. تمام رشته‌های رابط کاربری برای این زبان(ها) حذف خواهند شد.\n\nآیا می‌خواهید که منابع زبان‌(ها)ی انتخاب‌شده را حذف کنید؟"
+
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 msgid  "Set Default User Interface Language"
 msgstr "تنظیم زبان پیش‌گزیده رابط کاربری"
-
-#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
-msgid  "Default language"
-msgstr "زبان پیش‌گزیده"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."

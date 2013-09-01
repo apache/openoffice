@@ -31,30 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
-msgid  "Configuration Menu"
-msgstr "Menú de configuració"
-
-#: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
-msgid  "~Add-Ons"
-msgstr "~Programes afegits"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
-msgid  "Cu~t"
-msgstr "Re~talla"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
-msgid  "~Copy"
-msgstr "~Copia"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
-msgid  "~Paste"
-msgstr "~Enganxa"
-
-#: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
-msgid  "Leave Full-Screen Mode"
-msgstr "Surt del mode de pantalla completa"
-
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
 msgid  "Add-~On Help"
 msgstr "Ajuda dels programes afegits"
@@ -71,73 +47,25 @@ msgstr "(cap)"
 msgid  "~Thesaurus..."
 msgstr "~Tesaurus..."
 
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
-msgid  "My Templates"
-msgstr "Les meves plantilles"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
-msgid  "Business Correspondence"
-msgstr "Correspondència comercial"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
-msgid  "Other Business Documents"
-msgstr "Altres documents comercials"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
-msgid  "Personal Correspondence and Documents"
-msgstr "Correspondència i documents privats"
-
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
 msgid  "Forms and Contracts"
 msgstr "Formularis i contractes"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
-msgid  "Finances"
-msgstr "Finances"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
-msgid  "Education"
-msgstr "Educació"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
-msgid  "Presentation Backgrounds"
-msgstr "Fons de presentació"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
-msgid  "Presentations"
-msgstr "Presentacions"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
-msgid  "Miscellaneous"
-msgstr "Diversos"
-
-#: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
-msgid  "The templates are being initialized for first-time usage."
-msgstr "S'estan inicialitzant les plantilles per al primer ús."
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
 msgid  "Templates"
 msgstr "Plantilles"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
-msgid  "New template"
-msgstr "Plantilla nova"
-
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 msgid  "~Categories"
 msgstr "~Categories"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
-msgid  "~Templates"
-msgstr "~Plantilles"
+#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr "Desar en formats externs pot haver causat\n una pèrdua d'informació. Encara voleu tancar?"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr "~Edita"
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
-msgid  "~Organizer..."
-msgstr "~Organitzador..."
+#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr "El nom ja és en ús.\nVoleu sobreescriure el nom de la plantilla?"
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
 msgid  "Are you sure you want to delete the region \"$1\"?"
@@ -147,137 +75,45 @@ msgstr "Voleu suprimir l'àrea \"$1\"?"
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "Voleu suprimir l'entrada \"$1\"?"
 
-#: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "El document \"$(DOC)\" s'ha modificat.\nVoleu desar els canvis?"
-
-#: doc/doc.src#STR_STYLES.STRING.TEXT
-msgid  "Styles"
-msgstr "Estils"
-
-#: doc/doc.src#STR_MACROS.STRING.TEXT
-msgid  "Macros"
-msgstr "Macros"
-
-#: doc/doc.src#STR_CONFIG.STRING.TEXT
-msgid  "Configuration"
-msgstr "Configuració"
+#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr "La categoria no és buida.\nVoleu suprimir-la igualment?"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
 msgid  "Styles in "
 msgstr "Estils a "
 
-#: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
-msgid  "Printing Styles"
-msgstr "Estils d'impressió"
-
-#: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
-msgid  "The print job could not be started."
-msgstr "No s'ha pogut iniciar la feina d'impressió."
-
-#: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
-msgid  "Copy"
-msgstr "Copia"
-
-#: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
-msgid  "The template could not be opened."
-msgstr "No s'ha pogut obrir la plantilla."
-
-#: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
-msgid  "Document already open for editing."
-msgstr "Aquest document ja està obert per editar."
-
-#: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
-msgid  "Error recording document "
-msgstr "S'ha produït un error en escriure al document "
-
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
 msgid  "Templates"
 msgstr "Plantilles"
-
-#: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "S'ha produït un error en copiar la plantilla \"$1\". \nPotser ja hi ha una plantilla amb aquest nom."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
 msgid  "The template \"$1\" can not be deleted."
 msgstr "No es pot suprimir la plantilla \"$1\"."
 
-#: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
-msgid  "Error moving template \"$1\"."
-msgstr "S'ha produït un error en moure la plantilla \"$1\"."
-
-#: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
-msgid  "The update could not be saved."
-msgstr "No s'han pogut desar les actualitzacions."
-
-#: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-msgid  "Error saving template "
-msgstr "S'ha produït un error en desar la plantilla "
-
-#: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
-msgid  "Error renaming template."
-msgstr "S'ha produït un error en canviar el nom de la plantilla."
-
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
 msgid  "Error renaming template category."
 msgstr "S'ha produït un error en canviar el nom de la categoria de plantilla."
 
-#: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
-msgid  "Please specify a name."
-msgstr "Especifiqueu un nom."
+#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr "Especifiqueu un nom únic.\nNo es distingeix entre majúscules i minúscules."
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr "Voleu que la plantilla \"$(TEXT)\" sigui la plantilla per defecte?"
 
-#: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
-msgid  "Do you want to reset the default template?"
-msgstr "Voleu reinicialitzar la plantilla per defecte?"
-
-#: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
-msgid  "Document info cannot be read."
-msgstr "No es poden llegir les propietats del document."
-
-#: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
-msgid  "The selected file has an incorrect format."
-msgstr "El fitxer seleccionat té un format incorrecte."
+#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr "El directori de plantilles\n$(DIR)\nno existeix."
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
 msgstr "Els documents no es poden desar en el format $(FORMAT). Voleu\ndesar els canvis en el format $(OWNFORMAT)?"
 
-#: doc/doc.src#STR_SAVEDOC.STRING.TEXT
-msgid  "~Save"
-msgstr "~Desa"
-
-#: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
-msgstr "~Actualitza"
-
-#: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
-msgid  "Save ~As..."
-msgstr "~Anomena i desa..."
-
-#: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
-msgid  "Save Copy ~as..."
-msgstr "~Anomena i desa la còpia..."
-
-#: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
-msgid  "~Close"
-msgstr "~Tanca"
-
-#: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-msgid  "~Close & Return to "
-msgstr "~Tanca i retorna a "
-
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
 msgid  " AutoPilot"
 msgstr " AutoPilot"
-
-#: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
-msgid  "Configurations"
-msgstr "Configuracions"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
 msgid  "%PRODUCTNAME Basic libraries"
@@ -287,209 +123,37 @@ msgstr "Biblioteques de l'%PRODUCTNAME Basic"
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "Voleu substituir l'estil \"$(ARG1)\"?"
 
-#: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
-msgid  "Loading Document"
-msgstr "S'està carregant el document"
-
-#: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
-msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr "Connexió amb: $(HOST). Esperant resposta..."
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
-msgid  "Opening $(TARGET) at $(HOST)"
-msgstr "Obrint $(TARGET) en $(HOST)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
-msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "Carregant: $(TARGET) des de $(HOST). Carregat: $(BYTE)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
-msgid  "Disconnected"
-msgstr "Desconnectat"
-
-#: doc/doc.src#STR_EDIT.STRING.TEXT
-msgid  "Edit"
-msgstr "Edita"
-
-#: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
-msgid  "%PRODUCTNAME Documents"
-msgstr "Documents de l'%PRODUCTNAME"
+#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr "No es pot obrir el document per editar-lo.\nVoleu obrir-lo com a només de lectura?"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
 msgid  "Propert~ies..."
 msgstr "Prop~ietats..."
 
-#: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
-msgid  "HTML (FrameSet)"
-msgstr "HTML (conjunt de marcs)"
-
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "Document de marc de l'%PRODUCTNAME "
-
-#: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
-msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr "La plantilla \"$(TEMPLATE)\" no s'ha trobat en la seva ubicació original. Hi ha una plantilla amb el mateix nom a \"$(FOUND)\". Voleu utilitzar aquesta plantilla en comparar a partir d'ara?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "No s'ha trobat la plantilla \"$(TEMPLATE)\". Voleu que es cerqui la propera vegada que s'obri el document?"
 
-#: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
-msgid  "Automatically saved version"
-msgstr "Versió desada automàticament"
-
-#: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
-msgid  "Text Document"
-msgstr "Document de text"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
-msgid  "HTML Document"
-msgstr "Document HTML"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
-msgid  "Master Document"
-msgstr "Document mestre"
-
-#: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
-msgid  "Spreadsheet"
-msgstr "Full de càlcul"
-
-#: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
-msgid  "Presentation"
-msgstr "Presentació"
-
-#: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
-msgid  "Drawing"
-msgstr "Dibuix"
-
-#: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
-msgid  "Message"
-msgstr "Missatge"
-
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
 msgid  "~Discard"
 msgstr "Des~carta"
-
-#: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
-msgid  "Access to the current data medium not possible."
-msgstr "No s'ha pogut accedir al mitjà actual."
-
-#: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
-msgid  "Insert the next data carrier and click OK."
-msgstr "Inseriu el mitjà següent i feu clic a D'acord."
-
-#: doc/doc.src#STR_OBJECT.STRING.TEXT
-msgid  "Object"
-msgstr "Objecte"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
-msgid  "Run Macro"
-msgstr "Executa macro"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
-msgid  "This document contains macros. $(TEXT)"
-msgstr "Aquest document conté macros. $(TEXT)"
-
-#: doc/doc.src#BTN_OK.STRING.TEXT
-msgid  "Run"
-msgstr "Executa"
-
-#: doc/doc.src#BTN_CANCEL.STRING.TEXT
-msgid  "Do Not Run"
-msgstr "No executis"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "Segons la configuració de seguretat, les macros d'aquest document no es poden executar. Voleu executar-les igualment?"
 
-#: doc/doc.src#FT_OK.STRING.TEXT
-msgid  "Do you want to allow these macros to be run?"
-msgstr "Voleu permetre que s'executin aquestes macros?"
-
-#: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
-msgid  "Export as PDF"
-msgstr "Exporta a PDF"
-
-#: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
-msgid  "Export..."
-msgstr "Exporta..."
-
-#: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
-msgid  "Export"
-msgstr "Exporta"
-
-#: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
-msgid  "Add this directory to the list of secure paths: "
-msgstr "Afegeix aquest directori al llistat de camins segurs: "
-
-#: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
-msgid  "File format:"
-msgstr "Format del fitxer:"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
-msgid  "This document contains:\n\n"
-msgstr "Aquest document conté:\n\n"
-
-#: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
-msgid  "Recorded changes"
-msgstr "Canvis registrats"
-
-#: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
-msgid  "Notes"
-msgstr "Notes"
-
-#: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
-msgid  "Document versions"
-msgstr "Versions dels documents"
-
-#: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
-msgid  "Fields"
-msgstr "Camps"
-
-#: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
-msgid  "Linked data..."
-msgstr "Dades enllaçades..."
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
-msgid  "Do you want to continue saving the document?"
-msgstr "Voleu desar el document?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
-msgid  "Do you want to continue printing the document?"
-msgstr "Voleu imprimir el document?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
-msgid  "Do you want to continue signing the document?"
-msgstr "Voleu signar el document?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
-msgid  "Do you want to continue creating a PDF file?"
-msgstr "Voleu crear un fitxer PDF?"
-
-#: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
-msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "Si no voleu sobreescriure el document original, heu de desar la vostra feina amb un nom de fitxer nou."
-
-#: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
-msgid  "Some template files are protected and can not be deleted."
-msgstr "Algunes plantilles estan protegides i no es poden suprimir."
-
-#: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
-msgid  "Info %1"
-msgstr "Informació %1"
-
 #: doc/doc.src#STR_SHARED.STRING.TEXT
 msgid  " (shared)"
 msgstr " (compartit)"
 
-#: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
-msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr "El format de versió del document està establert a ODF 1.1 (OpenOffice.org 2.x) a Eines-Opcions-Carrega/Desa-General. La signatura de documents requereix ODF 1.2 (OpenOffice.org 3.x)."
-
-#: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
-msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr "La plantilla '$(ARG1)', en la qual es basa aquest document, ha estat modificada. Voleu actualitzar la formatació basada en estils segons la plantilla modificada?"
+#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr "Cal desar el document abans de poder-lo signar. Si deseu el document eliminareu totes les signatures actuals.\nVoleu desar el document?"
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
 msgid  "~Update Styles"
@@ -499,18 +163,6 @@ msgstr "~Actualitza els estils"
 msgid  "~Keep Old Styles"
 msgstr "~Conserva els estils anteriors"
 
-#: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
-msgid  "Template Management"
-msgstr "Gestió de plantilles"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
-msgid  "Close"
-msgstr "Tanca"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
-msgid  "~File..."
-msgstr "~Fitxer..."
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
 msgid  "~Address Book..."
 msgstr "Llibreta d'~adreces..."
@@ -519,25 +171,9 @@ msgstr "Llibreta d'~adreces..."
 msgid  "Templates"
 msgstr "Plantilles"
 
-#: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Documents"
-msgstr "Documents"
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
 msgid  "Commands"
 msgstr "Ordres"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
-msgid  "~New"
-msgstr "~Nou"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
-msgid  "~Delete"
-msgstr "~Suprimeix"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
-msgid  "~Edit"
-msgstr "~Edita"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
 msgid  "Import Template..."
@@ -546,10 +182,6 @@ msgstr "Importa plantilla..."
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MENUITEM.TEXT
 msgid  "Export Template..."
 msgstr "Exporta plantilla..."
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
-msgid  "~Print"
-msgstr "~Imprimeix"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
 msgid  "Printer Settings..."
@@ -567,153 +199,29 @@ msgstr "Estableix com a plantilla per defecte"
 msgid  "Reset Default Template"
 msgstr "Reinicialitza la plantilla per defecte"
 
-#: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
-msgid  "New"
-msgstr "Nou"
-
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
 msgid  "~Categories"
 msgstr "~Categories"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
-msgid  "T~emplates"
-msgstr "~Plantilles"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
 msgid  "~More"
 msgstr "~Més"
 
-#: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
-msgid  "Pre~view"
-msgstr "Pre~visualització"
-
-#: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "Descripció"
-
-#: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
-msgid  "Te~xt"
-msgstr "Te~xt"
-
-#: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
-msgid  "~Frame"
-msgstr "~Marc"
-
-#: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
-msgid  "~Pages"
-msgstr "~Pàgines"
-
-#: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
-msgid  "N~umbering"
-msgstr "N~umeració"
-
-#: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
-msgid  "~Overwrite"
-msgstr "~Sobreescriu"
-
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
 msgid  "From File..."
 msgstr "Des d'un fitxer..."
-
-#: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
-msgid  "Load Styles"
-msgstr "Carrega els estils"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
-msgid  "~Title"
-msgstr "~Títol"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
 msgid  "Subject"
 msgstr "Assumpte"
 
-#: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
-msgid  "~Key words"
-msgstr "~Paraules clau"
-
-#: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
-msgid  "~Description"
-msgstr "~Descripció"
-
-#: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "El filtre seleccionat $(FILTER) no s'ha instal·lat.\nVoleu fer-ho ara?"
-
-#: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "El filtre seleccionat $(FILTER) no està inclòs en aquesta edició.\nEn la nostra pàgina d'Internet trobareu la informació per poder demanar-los."
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
-msgid  "Reduce print data"
-msgstr "Redueix les dades d'impressió"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
-msgid  "Settings for"
-msgstr "Paràmetres de"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
-msgid  "~Printer"
-msgstr "Im~pressora"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
-msgid  "Print to ~file"
-msgstr "Imprimeix a un ~fitxer"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
-msgid  "~Reduce transparency"
-msgstr "~Redueix la transparència"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
-msgid  "Auto~matically"
-msgstr "Auto~màticament"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
-msgid  "~No transparency"
-msgstr "~Sense transparència"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
-msgid  "Reduce ~gradients"
-msgstr "Redueix els degradats"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
 msgid  "Gradient ~stripes"
 msgstr "~Tires de degradats"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
-msgid  "Intermediate ~color"
-msgstr "~Color intermedi"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
-msgid  "Reduce ~bitmaps"
-msgstr "Redueix els mapes de ~bits"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
-msgid  "~High print quality"
-msgstr "~Bona qualitat"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
-msgid  "N~ormal print quality"
-msgstr "Qualitat n~ormal"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
 msgid  "Reso~lution"
 msgstr "Reso~lució"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "72 DPI"
-msgstr "72 PPP"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "96 DPI"
-msgstr "96 PPP"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "150 DPI (Fax)"
-msgstr "150 PPP (fax)"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "200 DPI (default)"
-msgstr "200 PPP (per defecte)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 msgid  "300 DPI"
@@ -723,69 +231,17 @@ msgstr "300 PPP"
 msgid  "600 DPI"
 msgstr "600 PPP"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
-msgid  "Include transparent ob~jects"
-msgstr "Inclou els ob~jectes transparents"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
 msgid  "Con~vert colors to grayscale"
 msgstr "Con~verteix els colors a escala de grisos"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
-msgid  "Printer warnings"
-msgstr "Avisos de la impressora"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
-msgid  "P~aper size"
-msgstr "Mida del p~aper"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
 msgid  "Pap~er orientation"
 msgstr "Orientació del pap~er"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
-msgid  "~Transparency"
-msgstr "~Transparència"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
-msgid  "Warning"
-msgstr "Avís"
-
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr "El document conté objectes transparents.\nAixò pot provocar temps d'impressió superiors en algunes impressores. Voleu que es redueixi\nl'aspecte de transparència?"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
-msgid  "~Yes"
-msgstr "~Sí"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
-msgid  "~No"
-msgstr "~No"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
-msgid  "~Cancel"
-msgstr "~Cancel·la"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
-msgid  "~Do not show warning again"
-msgstr "No ~tornis a mostrar aquest avís"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
-msgid  "Style Catalog"
-msgstr "Catàleg d'estils"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
-msgid  "~Organizer..."
-msgstr "~Organitzador..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
-msgid  "~Delete..."
-msgstr "~Suprimeix..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
-msgid  "~Modify..."
-msgstr "~Modifica..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
 msgid  "~New..."
@@ -795,25 +251,9 @@ msgstr "~Nou..."
 msgid  "Style List"
 msgstr "Llista d'estils"
 
-#: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
-msgid  "Hierarchical"
-msgstr "Jeràrquic"
-
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
 msgid  "Styles and Formatting"
 msgstr "Estils i formatació"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
-msgid  "Fill Format Mode"
-msgstr "Mode format d'emplenament"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
-msgid  "New Style from Selection"
-msgstr "Estil nou a partir de la selecció"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
-msgid  "Update Style"
-msgstr "Actualitza l'estil"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 msgid  "File encryption password"
@@ -875,89 +315,13 @@ msgstr "Desprotegeix els registres"
 msgid  "Incorrect password"
 msgstr "Contrasenya incorrecta"
 
-#: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
-msgid  "New versions"
-msgstr "Versions noves"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
-msgid  "Save ~New Version"
-msgstr "~Desa una versió nova"
-
-#: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
-msgid  "~Always save a version on closing"
-msgstr "Desa una ~versió sempre en tancar"
-
-#: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
-msgid  "Existing versions"
-msgstr "Versions existents"
-
-#: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
-msgid  "Date and time"
-msgstr "Data i hora"
-
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
 msgid  "Saved by"
 msgstr "Desat per"
 
-#: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
-msgid  "Comments"
-msgstr "Comentaris"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
-msgstr "Tanca"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
-msgid  "Open"
-msgstr "Obre"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
-msgid  "~Show..."
-msgstr "~Mostra..."
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "~Suprimeix"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
-msgid  "Compare"
-msgstr "Compara"
-
-#: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
-msgid  "Versions of"
-msgstr "Versions de"
-
-#: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
-msgid  "Date and time : "
-msgstr "Data i hora : "
-
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
 msgid  "Saved by "
 msgstr "Desat per "
-
-#: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Tanca"
-
-#: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
-msgid  "Insert Version Comment"
-msgstr "Escriu un comentari sobre la versió"
-
-#: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
-msgid  "Version comment"
-msgstr "Comentari sobre la versió"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
-msgid  "~Name"
-msgstr "~Nom"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
-msgid  "~AutoUpdate"
-msgstr "~Actualitza automàticament"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
-msgid  "Ne~xt Style"
-msgstr "~Estil següent"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
 msgid  "Linked with"
@@ -967,133 +331,21 @@ msgstr "~Basat en"
 msgid  "~Category"
 msgstr "~Categoria"
 
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
-msgid  "Contains"
-msgstr "Conté"
-
-#: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
-msgid  "Current version"
-msgstr "Versió actual"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
-msgid  "Export"
-msgstr "Exporta"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Insereix"
-
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
 msgid  "~Insert"
 msgstr "~Insereix"
-
-#: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
-msgid  "<All formats>"
-msgstr "<Tots els formats>"
-
-#: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
-msgid  "~Automatic file name extension"
-msgstr "Extensió del nom del fitxer ~automàtica"
-
-#: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
-msgid  "~Selection"
-msgstr "~Selecció"
-
-#: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
-msgid  "~Link"
-msgstr "~Enllaç"
-
-#: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
-msgid  "Pr~eview"
-msgstr "Pr~evisualitza"
-
-#: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
-msgid  "~Read-only"
-msgstr "Només de lectu~ra"
-
-#: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
-msgid  "Save with ~password"
-msgstr "Desa amb c~ontrasenya"
-
-#: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
-msgid  "Edit ~filter settings"
-msgstr "Edita els paràmetres del ~filtre"
-
-#: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
-msgid  "~Play"
-msgstr "~Reprodueix"
-
-#: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
-msgid  "Sto~p"
-msgstr "~Atura"
-
-#: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
-msgid  "~Open"
-msgstr "~Obre"
-
-#: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
-msgid  "~Save"
-msgstr "~Desa"
-
-#: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
-msgid  "Style:"
-msgstr "Estil:"
-
-#: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
-msgid  "~Templates:"
-msgstr "P~lantilles:"
-
-#: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
-msgid  "~Version:"
-msgstr "~Versió:"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
 msgid  "Find on this Page"
 msgstr "Cerca en aquesta pàgina"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-msgid  "~Search for"
-msgstr "~Cerca"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
-msgid  "~Whole words only"
-msgstr "Només para~ules senceres"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
-msgid  "~Match case"
-msgstr "Distingeix entre ~majúscules i minúscules"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
 msgid  "Wrap ~around"
 msgstr "Ajusta ~al voltant"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
-msgid  "~Backwards"
-msgstr "Ca~p enrere"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
 msgid  "~Find"
 msgstr "C~erca"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Tanca"
-
-#: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
-msgid  "Enter Password"
-msgstr "Introduïu la contrasenya"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
-msgid  "~User"
-msgstr "~Usuari"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
-msgid  "~Password"
-msgstr "Con~trasenya"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
-msgid  "~Confirm"
-msgstr "~Confirma"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
 msgid  "Password"
@@ -1111,46 +363,6 @@ msgstr "~Confirma"
 msgid  "%PRODUCTNAME document"
 msgstr "Document de l'%PRODUCTNAME"
 
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
-msgid  "~Title"
-msgstr "~Títol"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
-msgid  "~Subject"
-msgstr "~Assumpte"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
-msgid  "~Keywords"
-msgstr "~Paraules clau"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
-msgid  "~Comments"
-msgstr "~Comentaris"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
-msgid  "Type:"
-msgstr "Tipus:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
-msgid  "~Read-only"
-msgstr "Només de lectu~ra"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
-msgid  "Location:"
-msgstr "Ubicació:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
-msgid  "Size:"
-msgstr "Mida:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
-msgid  "Created:"
-msgstr "Creat el:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
-msgid  "Modified:"
-msgstr "Modificat el:"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
 msgid  "Digitally signed:"
 msgstr "Signat digitalment:"
@@ -1158,22 +370,6 @@ msgstr "Signat digitalment:"
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PUSHBUTTON.TEXT
 msgid  "Digital Signature..."
 msgstr "Signatura digital..."
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
-msgid  "Multiply signed document"
-msgstr "Document signat molts cops"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
-msgid  "Last printed:"
-msgstr "Última impressió:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
-msgid  "Total editing time:"
-msgstr "Temps total d'edició:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
-msgid  "Revision number:"
-msgstr "Número de revisió:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
 msgid  "Reset"
@@ -1183,33 +379,13 @@ msgstr "Reinicialitza"
 msgid  "~Apply user data"
 msgstr "~Aplica les dades de l'usuari"
 
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
-msgid  "Template:"
-msgstr "Plantilla:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
-msgid  "unknown"
-msgstr "desconegut"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
 msgid  "File Name"
 msgstr "Nom del fitxer"
 
-#: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
-msgid  "~Info fields..."
-msgstr "Ca~mps d'informació..."
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
-msgid  "Do not refresh automatically"
-msgstr "No facis un refrescament automàtic"
-
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
 msgid  "Refresh this document"
 msgstr "Actualitza aquest document"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
-msgid  "every"
-msgstr "cada"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
 msgid  "seconds"
@@ -1218,14 +394,6 @@ msgstr "segons"
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RADIOBUTTON.TEXT
 msgid  "Redirect from this document"
 msgstr "Redirigeix des d'aquest document"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
-msgid  "after"
-msgstr "després de"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
-msgid  "to URL"
-msgstr "a l'~URL"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
 msgid  "to frame"
@@ -1239,165 +407,17 @@ msgstr "Si seleccioneu l'opció \"%PLACEHOLDER%\", heu d'introduir un URL."
 msgid  "~Properties"
 msgstr "~Propietats"
 
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
-msgid  "Name"
-msgstr "Nom"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
-msgid  "Type"
-msgstr "Tipus"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
-msgid  "Value"
-msgstr "Valor"
-
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
 msgid  "~Add"
 msgstr "~Afegeix"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
-msgid  "Property Name"
-msgstr "Nom de la propietat"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
-msgid  "Checked by"
-msgstr "Verificat per"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
-msgid  "Client"
-msgstr "Client"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
-msgid  "Date completed"
-msgstr "Data d'acabament"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
-msgid  "Department"
-msgstr "Departament"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
-msgid  "Destinations"
-msgstr "Destinacions"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
-msgid  "Disposition"
-msgstr "Disposició"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
-msgid  "Division"
-msgstr "Divisió"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
-msgid  "Document number"
-msgstr "Nombre de document"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
-msgid  "Editor"
-msgstr "Editor"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
-msgid  "E-Mail"
-msgstr "Correu electrònic"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
-msgid  "Forward to"
-msgstr "Enviar a"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
-msgid  "Group"
-msgstr "Grup"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
-msgid  "Info"
-msgstr "Informació"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
-msgid  "Language"
-msgstr "Llengua"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
-msgid  "Mailstop"
-msgstr "Bústia"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
-msgid  "Matter"
-msgstr "Assumpte"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
-msgid  "Office"
-msgstr "Oficina"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
-msgid  "Owner"
-msgstr "Propietari"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
-msgid  "Project"
-msgstr "Projecte"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
-msgid  "Publisher"
-msgstr "Editorial"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
-msgid  "Purpose"
-msgstr "Propòsit"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
-msgid  "Received from"
-msgstr "Rebut de"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
-msgid  "Recorded by"
-msgstr "Enregistrat per"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
-msgid  "Recorded date"
-msgstr "Data d'enregistrament"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
-msgid  "Reference"
-msgstr "Referència"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
-msgid  "Source"
-msgstr "Font"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
-msgid  "Status"
-msgstr "Estat"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
-msgid  "Telephone number"
-msgstr "Número de telèfon"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
-msgid  "Typist"
-msgstr "Mecanògraf"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
-msgid  "URL"
-msgstr "URL"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
-msgid  "Text"
-msgstr "Text"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 msgid  "DateTime"
 msgstr "Data i hora"
 
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
-msgid  "Date"
-msgstr "Data"
-
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
 msgid  "Duration"
 msgstr "Durada"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
-msgid  "Number"
-msgstr "Nombre"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
 msgid  "Yes or no"
@@ -1407,37 +427,9 @@ msgstr "Sí o no"
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr "A: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
-msgid  "Yes"
-msgstr "Sí"
-
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
-msgid  "No"
-msgstr "No"
-
-#: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Remove Property"
-msgstr "Elimina la propietat"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
-msgid  "Properties of "
-msgstr "Propietats de "
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
-msgid  "General"
-msgstr "General"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
-msgid  "Description"
-msgstr "Descripció"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
-msgid  "Custom Properties"
-msgstr "Propietats personalitzades"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
-msgid  "Internet"
-msgstr "Internet"
+#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr "El valor introduït no coincideix amb el tipus especificat.\nEl valor es desarà com a text."
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 msgid  "Security"
@@ -1471,10 +463,6 @@ msgstr "H~ores"
 msgid  "Min~utes"
 msgstr "Min~uts"
 
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
-msgid  "~Seconds"
-msgstr "~Segons"
-
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 msgid  "Millise~conds"
 msgstr "Mil·lise~gons"
@@ -1482,22 +470,6 @@ msgstr "Mil·lise~gons"
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.MODALDIALOG.TEXT
 msgid  "Edit Field Names"
 msgstr "Edita els noms dels camps"
-
-#: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
-msgid  "Names"
-msgstr "Noms"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
-msgid  "Create Style"
-msgstr "Crea un estil"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
-msgid  "Style name"
-msgstr "Nom de l'estil"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
-msgid  "Style already exists. Overwrite?"
-msgstr "Ja existeix l'estil. Voleu sobreescriure'l?"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
 msgid  "Record Macro"
@@ -1515,61 +487,29 @@ msgstr "Cancel·la l'enregistrament"
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
 msgstr "L'%PRODUCTNAME no ha pogut trobar una configuració de correu electrònic que funcioni. Deseu aquest document localment i adjunteu-lo des del client de correu electrònic."
 
-#: dialog/dialog.src#STR_RESET.STRING.TEXT
-msgid  "~Reset"
-msgstr "~Reinicialitza"
-
-#: dialog/dialog.src#STR_APPLY.STRING.TEXT
-msgid  "Apply"
-msgstr "Aplica"
-
-#: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
-msgid  "Organizer"
-msgstr "Organitzador"
-
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
 msgid  "This name is already in use."
 msgstr "Aquest nom ja s'utilitza per a una plantilla."
 
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
-msgid  "This Style does not exist."
-msgstr "Aquest estil no existeix."
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr "Aquest estil no pot utilitzar-se com a estil base,\nperquè implicaria una referència recursiva."
+
+#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr "El nom ja existeix com a estil per defecte.\n Trieu-ne un altre."
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 msgid  "Do you really want to delete Style $1?"
 msgstr "Voleu suprimir realment l'estil $1?"
 
-#: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
-msgid  "You are deleting an applied Style!\n"
-msgstr "Esteu suprimint un estil que s'ha aplicat!\n"
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
-msgid  "New..."
-msgstr "Nou..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
-msgid  "Modify..."
-msgstr "Modifica..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
-msgid  "Delete..."
-msgstr "Suprimeix..."
-
-#: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
-msgid  "Navigator"
-msgstr "Navegador"
-
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 msgid  "Task Pane"
 msgstr "Subfinestra de tasques"
 
-#: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
-msgid  "Faulty password confirmation"
-msgstr "Confirmació incorrecta de la contrasenya"
-
-#: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
-msgid  "Send"
-msgstr "Envia"
+#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
+msgid  "Sidebar"
+msgstr ""
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 msgid  "Dock"
@@ -1595,57 +535,9 @@ msgstr "Aquest document pot contenir formatació o dades que no es poden desar e
 msgid  "~Keep Current Format"
 msgstr "~Conserva el format actual"
 
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
-msgid  "~Save in ODF Format"
-msgstr "De~sa en format ODF"
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
-msgid  "~More Information..."
-msgstr "~Més informació..."
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
-msgid  "~Ask when not saving in ODF format"
-msgstr "Dem~ana què fer quan no es desi en format ODF"
-
-#: view/view.src#STR_NODEFPRINTER.STRING.TEXT
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "No s'ha trobat cap impressora per defecte.\nTrieu-ne una i torneu-ho a provar. "
-
-#: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "No s'ha pogut iniciar la impressora.\nReviseu-ne la configuració."
-
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
 msgstr "El format d'aquest document és per a la impressora $1, la qual no es troba disponible.\nVoleu utilitzar la impressora estàndard $2?"
-
-#: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
-msgid  "Options..."
-msgstr "Opcions..."
-
-#: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
-msgid  "Printer Options"
-msgstr "Opcions de la impressora"
-
-#: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
-msgid  "Printer busy"
-msgstr "La impressora està ocupada."
-
-#: view/view.src#STR_ERROR_PRINT.STRING.TEXT
-msgid  "Error while printing"
-msgstr "S'ha produït un error en imprimir."
-
-#: view/view.src#STR_PRINTING.STRING.TEXT
-msgid  "Printing"
-msgstr "S'està imprimint"
-
-#: view/view.src#STR_PAGE.STRING.TEXT
-msgid  "Page "
-msgstr "Pàgina "
-
-#: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-msgid  "Error saving template "
-msgstr "S'ha produït un error en desar la plantilla."
 
 #: view/view.src#STR_READONLY.STRING.TEXT
 msgid  " (read-only)"
@@ -1663,53 +555,45 @@ msgstr "S'ha modificat la mida de la pàgina.\nVoleu desar la nova configuració
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Títol:</b><dd>$(TITEL)<dt><b>Assumpte:</b><dd>$(THEME)<dt><b>Paraules clau:</b><dd>$(KEYWORDS)<dt><b>Descripció:</b><dd>$(TEXT)</dl></font></body></html>"
 
-#: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
-msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No s'han trobat propietats del document.</B></FONT></P></BODY></HTML>"
+#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr "El document no es pot tancar perquè\n s'està duent a terme una feina d'impressió."
 
-#: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
-msgid  "Print Monitor"
-msgstr "Monitor d'impressió"
-
-#: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
-msgid  "is being printed on"
-msgstr "s'està imprimint a"
-
-#: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
-msgid  "is being prepared for printing"
-msgstr "s'està preparant per imprimir"
+#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr "S'ha produït un error en enviar el missatge. És possible que no hi hagi cap compte d'usuari o que la configuració sigui incorrecta.\nReviseu la configuració de l'%PRODUCTNAME o del programa de correu."
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "No es pot editar el document, segurament per falta de drets d'accés. Voleu editar una còpia del document?"
 
-#: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
-msgid  " (repaired document)"
-msgstr " (document reparat)"
-
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "L'%PRODUCTNAME no ha pogut trobar un navegador web al sistema. Comproveu les preferències d'escriptori o instal·leu un navegador web (per exemple, Mozilla) en la ubicació per defecte que es demana en la instal·lació del navegador."
 
-#: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
-msgid  "Modify Link"
-msgstr "Modifica l'enllaç"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
+msgid  "Customization"
+msgstr ""
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
-msgid  "~Application:"
-msgstr "~Aplicació:"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
+msgid  "Restore Default"
+msgstr ""
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
-msgid  "~File:"
-msgstr "~Fitxer:"
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
+msgid  "More Options"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
+msgid  "Close Sidebar Deck"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
+msgid  "Panel: "
+msgstr ""
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
 msgid  "~Category:"
 msgstr "~Categoria:"
-
-#: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
-msgid  "Modify link"
-msgstr "Modifica l'enllaç"
 
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
 msgid  "%PRODUCTNAME"
@@ -1751,37 +635,9 @@ msgstr "GB"
 msgid  "Cancel all changes?"
 msgstr "Voleu cancel·lar tots els canvis?"
 
-#: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
-msgid  "Document already open."
-msgstr "Document ja obert."
-
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "L'%PRODUCTNAME no pot trobar un navegador web en el sistema. Comproveu les preferències d'escriptori o bé instal·leu-ne un (per exemple, el Mozilla) en la localització per defecte sol·licitada durant la instal·lació del navegador."
-
-#: appl/app.src#GID_INTERN.STRING.TEXT
-msgid  "Internal"
-msgstr "Intern"
-
-#: appl/app.src#GID_APPLICATION.STRING.TEXT
-msgid  "Application"
-msgstr "Aplicació"
-
-#: appl/app.src#GID_VIEW.STRING.TEXT
-msgid  "View"
-msgstr "Visualització"
-
-#: appl/app.src#GID_DOCUMENT.STRING.TEXT
-msgid  "Documents"
-msgstr "Documents"
-
-#: appl/app.src#GID_EDIT.STRING.TEXT
-msgid  "Edit"
-msgstr "Edita"
-
-#: appl/app.src#GID_MACRO.STRING.TEXT
-msgid  "BASIC"
-msgstr "BASIC"
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
 msgid  "Options"
@@ -1791,49 +647,9 @@ msgstr "Opcions"
 msgid  "Math"
 msgstr "Matemàtiques"
 
-#: appl/app.src#GID_NAVIGATOR.STRING.TEXT
-msgid  "Navigate"
-msgstr "Navega"
-
-#: appl/app.src#GID_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Insereix"
-
-#: appl/app.src#GID_FORMAT.STRING.TEXT
-msgid  "Format"
-msgstr "Formata"
-
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
 msgid  "Templates"
 msgstr "Plantilles"
-
-#: appl/app.src#GID_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr "Text"
-
-#: appl/app.src#GID_FRAME.STRING.TEXT
-msgid  "Frame"
-msgstr "Marc"
-
-#: appl/app.src#GID_GRAPHIC.STRING.TEXT
-msgid  "Graphic"
-msgstr "Gràfic"
-
-#: appl/app.src#GID_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Taula"
-
-#: appl/app.src#GID_ENUMERATION.STRING.TEXT
-msgid  "Numbering"
-msgstr "Numeració"
-
-#: appl/app.src#GID_DATA.STRING.TEXT
-msgid  "Data"
-msgstr "Dades"
-
-#: appl/app.src#GID_SPECIAL.STRING.TEXT
-msgid  "Special Functions"
-msgstr "Funcions especials"
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
 msgid  "Image"
@@ -1843,101 +659,29 @@ msgstr "Imatge"
 msgid  "Chart"
 msgstr "Diagrama"
 
-#: appl/app.src#GID_EXPLORER.STRING.TEXT
-msgid  "Explorer"
-msgstr "Explorador"
-
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
 msgid  "Connector"
 msgstr "Connector"
 
-#: appl/app.src#GID_MODIFY.STRING.TEXT
-msgid  "Modify"
-msgstr "Modifica"
-
-#: appl/app.src#GID_DRAWING.STRING.TEXT
-msgid  "Drawing"
-msgstr "Dibuix"
-
-#: appl/app.src#GID_CONTROLS.STRING.TEXT
-msgid  "Controls"
-msgstr "Controls"
-
-#: appl/app.src#STR_ISMODIFIED.STRING.TEXT
-msgid  "Do you want to save the changes to %1?"
-msgstr "Voleu desar les modificacions a %1?"
-
-#: appl/app.src#STR_QUITAPP.STRING.TEXT
-msgid  "E~xit"
-msgstr "~Surt"
-
-#: appl/app.src#RID_STR_HELP.STRING.TEXT
-msgid  "Help"
-msgstr "Ajuda"
-
-#: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
-msgid  "No automatic start at 'XX'"
-msgstr "No iniciar automàticament amb 'XX'"
-
-#: appl/app.src#RID_HELPBAR.STRING.TEXT
-msgid  "Help Bar"
-msgstr "Barra d'ajuda"
-
-#: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
-msgid  "The help file for this topic is not installed."
-msgstr "No s'ha instal·lat el fitxer d'ajuda per a aquest tema."
-
-#: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
-msgid  "Function Bar"
-msgstr "Barra de funcions"
+#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr "L'aplicació ara mateix no es pot tancar.\nEspereu que s'acabin totes les feines d'impressió i/o\nles accions d'OLE i tanqueu tots els quadres de diàleg."
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr "S'ha produït un error en la configuració especial.\nPoseu-vos en contacte amb l'administrador."
 
-#: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
-msgid  "Exit Quickstarter"
-msgstr "Surt de l'inici ràpid"
-
-#: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "Inici ràpid de l'%PRODUCTNAME %PRODUCTVERSION"
-
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
 msgid  "Open Document..."
 msgstr "Obre un document..."
 
-#: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
-msgid  "From Template..."
-msgstr "Des d'una plantilla..."
-
-#: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
-msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr "Carrega l'%PRODUCTNAME en iniciar el sistema"
-
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
 msgid  "Disable Quickstarter"
-msgstr "Inhabilita l'inici ràpid a la safata del sistema"
-
-#: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
-msgid  "File"
-msgstr "Fitxer"
-
-#: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
-msgid  "Startcenter"
-msgstr "Centre d'inici"
+msgstr ""
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
 msgid  "Recent Documents"
 msgstr "Documents recents"
-
-#: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
-msgid  "Update all links?"
-msgstr "Voleu actualitzar tots els enllaços?"
 
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
 msgid  "DDE link to % for % area % are not available."
@@ -1947,9 +691,17 @@ msgstr "Els enllaços DDE a % per % l'àrea % no estan disponibles."
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "S'obrirà l'enllaç «%s». Voleu continuar?"
 
-#: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
-msgid  "Security Warning"
-msgstr "Avís de seguretat"
+#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr "Per motius de seguretat, l'enllaç no es pot executar.\nL'adreça indicada no s'obrirà."
+
+#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr "En desar, s'eliminaran totes les signatures existents.\nVoleu continuar desant el document?"
+
+#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr "Cal que deseu el document per poder signar-lo.\nVoleu desar el document?"
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
@@ -1958,10 +710,6 @@ msgstr "Cal que deseu aquest document en format OpenDocument per poder signar-lo
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
 msgid  " (Signed)"
 msgstr " (Signat)"
-
-#: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
-msgid  "Document"
-msgstr "Document"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
 msgid  "- None -"
@@ -2003,49 +751,21 @@ msgstr "No s'ha trobat el filtre gràfic"
 msgid  "Not enough memory to insert graphic"
 msgstr "No hi ha prou memòria per inserir el gràfic"
 
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
-msgid  "Contents"
-msgstr "Contingut"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
-msgid  "Index"
-msgstr "Índex"
-
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
 msgid  "Find"
 msgstr "Cerca"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
-msgid  "Bookmarks"
-msgstr "Adreces d'interès"
-
-#: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
-msgid  "~Search term"
-msgstr "Terme de ~cerca"
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
 msgid  "~Display"
 msgstr "~Visualitza"
 
-#: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-msgid  "S~earch term"
-msgstr "T~erme de cerca"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
 msgid  "~Find"
 msgstr "~Cerca"
 
-#: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
-msgid  "~Complete words only"
-msgstr "~Només paraules senceres"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
 msgid  "Find in ~headings only"
 msgstr "Cerca només als ~encapçalaments"
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
-msgid  "~Bookmarks"
-msgstr "A~dreces d'interès"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME Help"
@@ -2059,77 +779,21 @@ msgstr "Mostra la subfinestra de navegació"
 msgid  "Hide Navigation Pane"
 msgstr "Amaga la subfinestra de navegació"
 
-#: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
-msgid  "First Page"
-msgstr "Primera pàgina"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
-msgid  "Previous Page"
-msgstr "Pàgina anterior"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
-msgid  "Next Page"
-msgstr "Pàgina següent"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
-msgid  "Print..."
-msgstr "Imprimeix..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
-msgid  "Add to Bookmarks..."
-msgstr "Afegeix a les adreces d'interès..."
-
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
 msgid  "Find on this Page..."
 msgstr "Cerca en aquesta pàgina..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
-msgid  "HTML Source"
-msgstr "Font HTML"
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
 msgid  "The Help is being started..."
 msgstr "S'està iniciant l'ajuda..."
 
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
-msgid  "Select Text"
-msgstr "Selecciona el text"
-
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
-msgid  "~Copy"
-msgstr "~Copia"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
-msgid  "Add to Bookmarks"
-msgstr "Afegeix a les adreces d'interès"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
-msgid  "Bookmark:"
-msgstr "Adreça d'interès:"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
-msgid  "Rename Bookmark"
-msgstr "Canvia el nom de l'adreça d'interès"
-
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
 msgid  "Display"
 msgstr "Mostra"
 
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
-msgid  "Rename..."
-msgstr "Canvia el nom..."
-
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
-msgid  "Delete"
-msgstr "Suprimeix"
-
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
 msgid  "No topics found."
 msgstr "No s'han trobat temes."
-
-#: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
-msgid  "The text you entered was not found."
-msgstr "El text que heu introduït no s'ha trobat."
 
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
 msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"

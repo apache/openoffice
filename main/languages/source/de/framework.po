@@ -43,17 +43,9 @@ msgstr "Add-~On-Hilfe"
 msgid  "All"
 msgstr "Alle"
 
-#: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
-msgstr "Aktuali~siere"
-
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
 msgid  "~Close & Return to "
 msgstr "S~chließen & zurück zu "
-
-#: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
-msgid  "Visible ~Buttons"
-msgstr "Sichtbare ~Schaltflächen"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
 msgid  "~Customize Toolbar..."
@@ -79,9 +71,13 @@ msgstr "Symbolleiste s~chließen"
 msgid  "Save Copy ~as..."
 msgstr "Kopie speichern ~unter..."
 
-#: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
-msgid  "No Documents"
-msgstr "Keine Dokumente"
+#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
+msgid  "Clear List"
+msgstr "Liste leeren"
+
+#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
+msgid  "Clears the list with the most recently opened files. This action can not be undone."
+msgstr "Leert die Liste mit den zuletzt geöffneten Dateien. Diese Aktion kann nicht rückgängig gemacht werden!"
 
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
 msgid  "Add-On %num%"
@@ -101,7 +97,7 @@ msgstr "1."
 
 #: classes/resource.src#DLG_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr "Lesen Sie den gesamten Lizenzvertrag. Verwenden Sie die Bildlaufleiste oder die %PAGEDOWN Schaltfläche in diesem Dialog um den gesamten Text sichtbar zu machen."
+msgstr "Lesen Sie den gesamten Lizenzvertrag. Verwenden Sie die Bildlaufleiste oder die '%PAGEDOWN' Schaltfläche in diesem Dialog, um den gesamten Text sichtbar zu machen."
 
 #: classes/resource.src#DLG_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
 msgid  "Scroll Down"
@@ -115,17 +111,9 @@ msgstr "2."
 msgid  "Accept the License Agreement."
 msgstr "Akzeptieren Sie den Lizenzvertrag."
 
-#: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
-msgstr "~Akzeptieren"
-
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
 msgstr "Ablehnen"
-
-#: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
-msgid  "Retry"
-msgstr "Wiederholen"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
@@ -197,7 +185,7 @@ msgstr "~Vorlagen..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_FILE.STRING.TEXT
 msgid  "~Open..."
-msgstr "~Öffnen..."
+msgstr "Ö~ffnen..."
 
 #: services/fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.STRING.TEXT
 msgid  "Add new features to %PRODUCTNAME"

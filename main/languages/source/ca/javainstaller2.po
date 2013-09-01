@@ -31,405 +31,45 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: ../src/Localization/setupstrings.ulf#STRING_PREVIOUS
-msgid  "Back"
-msgstr "Enrere"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEXT
-msgid  "Next"
-msgstr "Següent"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL
-msgid  "Cancel"
-msgstr "Cancel·la"
-
-#: ../src/Localization/setupstrings.ulf#STRING_FINISH
-msgid  "Finish"
-msgstr "Finalitza"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DECLINE
-msgid  "Decline"
-msgstr "Declina"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALL
-msgid  "Install now"
-msgstr "Instal·la"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALL
-msgid  "Remove Now"
-msgstr "Suprimeix"
-
-#: ../src/Localization/setupstrings.ulf#STRING_HELP
-msgid  "Help"
-msgstr "Ajuda"
-
 #: ../src/Localization/setupstrings.ulf#STRING_OK
 msgid  "OK"
 msgstr "D'acord"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ERROR
-msgid  "Error"
-msgstr "Error"
-
-#: ../src/Localization/setupstrings.ulf#STRING_FILE_NOT_FOUND
-msgid  "Error: File not found"
-msgstr "S'ha produït un error: no s'ha trobat el fitxer"
-
-#: ../src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLE
-msgid  "${PRODUCT_FULLNAME} Installation Wizard"
-msgstr "Auxiliar d'instal·lació de l'${PRODUCT_FULLNAME}"
-
-#: ../src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION
-msgid  "${PRODUCT_FULLNAME} Uninstallation Wizard"
-msgstr "Auxiliar de desinstal·lació de l'${PRODUCT_FULLNAME}"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE
-msgid  "Exit"
-msgstr "Surt"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG
-msgid  "Do you really want to exit the Installation Wizard?"
-msgstr "Esteu segur que voleu sortir de l'auxiliar d'instal·lació?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION
-msgid  "Do you really want to exit the Uninstallation Wizard?"
-msgstr "Esteu segur que voleu sortir de l'auxiliar de desinstal·lació?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG
-msgid  "Do you really want to abort the installation process?"
-msgstr "Esteu segur que voleu interrompre el procés d'instal·lació?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE
-msgid  "Abort installation?"
-msgstr "Voleu interrompre la instal·lació?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION
-msgid  "Do you really want to abort the uninstallation process?"
-msgstr "Esteu segur que voleu interrompre el procés de desinstal·lació?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION
-msgid  "Abort uninstallation?"
-msgstr "Voleu interrompre la desinstal·lació?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE
-msgid  "Accept License"
-msgstr "Accepta la llicència"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE1
-msgid  "Software License Agreement"
-msgstr "Acord de llicència"
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE2
-msgid  "Please read the following license agreement carefully."
-msgstr "Llegiu l'acord de llicència següent amb deteniment."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
 msgstr "Si heu llegit i acceptat tots els termes de l'acord de llicència, feu clic a \"Accepta la llicència\" per continuar amb la instal·lació."
 
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
-msgid  "Select Installation Directory"
-msgstr "Seleccioneu el directori d'instal·lació"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE
-msgid  "Update the Installed Version"
-msgstr "Actualitza la versió instal·lada"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN
-msgid  "Adding Components to the Installed Version"
-msgstr "S'estan afegint components a la versió instal·lada"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY2
-msgid  "Install ${PRODUCT_FULLNAME} in this directory"
-msgstr "Instal·la l'${PRODUCT_FULLNAME} en aquest directori"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY3
-msgid  "Browse..."
-msgstr "Navega..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE
-msgid  "Create New Directory"
-msgstr "Crea un directori nou"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "El directori '${DIR}' no existeix.\nVoleu crear-lo ara?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "El directori '${DIR}' no existeix.\nVoleu crear-lo ara o triar-ne un altre?"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
-msgid  "Select root directory"
-msgstr "Seleccioneu el directori arrel"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS
-msgid  "You do not have write access in the directory"
-msgstr "No teniu permís d'escriptura en el directori"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED
-msgid  "You are not allowed to create the directory"
-msgstr "No teniu permisos per crear el directori"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS
-msgid  "Failed to create the directory"
-msgstr "No s'ha pogut crear el directori"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1
-msgid  "Select Components"
-msgstr "Seleccioneu els components"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN
-msgid  "Select Additional Components"
-msgstr "Seleccioneu els components addicionals"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
-msgid  "Marked components will be installed. Please mark them accordingly"
-msgstr "S'instal·laran els components marcats. Marqueu aquells que vulgueu."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
-msgid  "Feature Description"
-msgstr "Descripció de la funció"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS4
-msgid  "Size (kB):"
-msgstr "Mida (kB):"
-
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1
 msgid  "Select the Type of Installation"
 msgstr "Seleccioneu el tipus d'instal·lació"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2
-msgid  "Select the type of installation that best suits your needs:"
-msgstr "Seleccioneu el tipus d'instal·lació que millor s'adapti a les vostres necessitats:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
-msgid  "The main components will be installed. Recommended for most users."
-msgstr "S'instal·laran els components principals. Recomanat per a la majoria d'usuaris."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
-msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr "Podreu triar quins components voleu instal·lar i on es desaran. Recomanat per a usuaris avançats."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
-msgid  "Typical"
-msgstr "Típica"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7
-msgid  "Custom"
-msgstr "Personalitzada"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1
-msgid  "Ready to Install"
-msgstr "Preparat per instal·lar"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE
-msgid  "Ready to Update"
-msgstr "Preparat per actualitzar"
 
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT2
 msgid  "The following ${PRODUCT_FULLNAME} components will be installed:"
 msgstr "S'instal·laran els següents components de l'${PRODUCT_FULLNAME}:"
 
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING1
-msgid  "Installing..."
-msgstr "S'està instal·lant..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING3
-msgid  "Stop"
-msgstr "Atura"
-
 #: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND
 msgid  "ERROR: Path with installation packages not found!"
 msgstr "S'ha produït un error: no s'ha trobat el camí als paquets d'instal·lació."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE1
-msgid  "Welcome"
-msgstr "Benvinguda"
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE2
-msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr "L'auxiliar d'instal·lació instal·larà l'${PRODUCT_FULLNAME} a l'ordinador."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE3
-msgid  "To continue, click 'Next'."
-msgstr "Per continuar, feu clic a \"Següent\"."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "Nota: Aquesta instal·lació es farà sense permisos d'administrador. Per tant, la funcionalitat es veurà reduïda (el JRE no serà instal·lable ni es podrà integrar l'aplicació al sistema).\nFeu clic a \"Cancel·la\" i eleveu els vostres privilegis a administrador si voleu utilitzar totes les funcions."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
-msgid  "Installation Completed"
-msgstr "S'ha completat la instal·lació"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT
-msgid  "Installation Aborted"
-msgstr "S'ha interromput la instal·lació"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR
-msgid  "Installation Failed"
-msgstr "Ha fallat la instal·lació"
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
-msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr "L'auxiliar d'instal·lació ha instal·lat amb èxit l'${PRODUCT_FULLNAME} a l'ordinador."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
-msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr "Heu interromput l'auxiliar d'instal·lació. L'${PRODUCT_NAME} no s'ha instal·lat a l'ordinador."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
-msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr "S'ha produït un error. L'auxiliar d'instal·lació no ha pogut instal·lar amb èxit l'${PRODUCT_NAME} a l'ordinador. Feu clic a \"Detalls...\" per a més informació."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
-msgid  "Click 'Finish' to exit the Wizard."
-msgstr "Feu clic a \"Finalitza\" per sortir de l'auxiliar."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON
-msgid  "Details..."
-msgstr "Detalls..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
 msgstr "L'auxiliar de desinstal·lació de l'${PRODUCT_FULLNAME} eliminarà l'${PRODUCT_FULLNAME} de l'ordinador."
 
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
-msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr "Els privilegis són incorrectes. La instal·lació es va fer amb privilegis d'usuari, però ara teniu privilegis d'administrador."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
-msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr "Els privilegis són incorrectes. La instal·lació es va fer amb privilegis d'administrador, però ara teniu privilegis d'usuari."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
-msgid  "Select the Type of Uninstallation"
-msgstr "Seleccioneu el tipus de desinstal·lació"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2
-msgid  "Select the type of uninstallation that best suits your needs:"
-msgstr "Seleccioneu el tipus de desinstal·lació que millor s'adapti a les vostres necessitats:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3
-msgid  "Partial"
-msgstr "Parcial"
-
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
 msgstr "Elimina completament l'${PRODUCT_FULLNAME} i tots els seus components del sistema."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
-msgid  "You choose the program features you want to remove."
-msgstr "Us permet triar les característiques del programa que vulgueu eliminar."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6
-msgid  "Complete"
-msgstr "Completa"
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
-msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr "S'eliminaran els components marcats amb una X. Marqueu aquells components que vulgueu eliminar."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
-msgid  "Ready to Remove"
-msgstr "Preparat per eliminar"
 
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2
 msgid  "The following ${PRODUCT_FULLNAME} components will be removed: "
 msgstr "S'eliminaran els següents components de l'${PRODUCT_FULLNAME}:"
 
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING1
-msgid  "Uninstalling..."
-msgstr "S'està desinstal·lant..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1
-msgid  "Uninstallation Completed"
-msgstr "S'ha completat la desinstal·lació"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT
-msgid  "Uninstallation Aborted"
-msgstr "S'ha interromput la desinstal·lació"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR
-msgid  "Uninstallation Failed"
-msgstr "Ha fallat la desinstal·lació"
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
-msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr "L'auxiliar de desinstal·lació ha eliminat amb èxit l'${PRODUCT_FULLNAME} de l'ordinador."
-
 #: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
 msgstr "L'auxiliar de desinstal·lació ha eliminat amb èxit els components seleccionats de l'${PRODUCT_FULLNAME} de l'ordinador."
 
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
-msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr "Heu interromput l'auxiliar de desinstal·lació abans d'eliminar completament l'${PRODUCT_NAME} de l'ordinador."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
-msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr "S'ha produït un error. L'auxiliar de desinstal·lació no ha pogut eliminar amb èxit l'${PRODUCT_NAME} de l'ordinador. Feu clic a \"Detalls...\" per a més informació."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
-msgid  "Sorry, this Operating System is not supported yet."
-msgstr "El programa encara no és compatible amb aquest sistema operatiu."
-
-#: ../src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND
-msgid  "An older version of ${PRODUCT_NAME} was found on your system in:"
-msgstr "S'ha trobat una versió més antiga de l'${PRODUCT_NAME} en el sistema a:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
-msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr "Cal que elimineu la versió més antiga de l'${PRODUCT_NAME} abans d'instal·lar la nova."
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
-msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
-msgstr "S'ha trobat una versió més nova de l'${PRODUCT_NAME} en el sistema a:"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
-msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr "Cal que elimineu la versió més nova de l'${PRODUCT_NAME} abans d'instal·lar l'antiga."
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
-msgid  "Database"
-msgstr "Base de dades"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_TIP
-msgid  "Please choose another installation directory."
-msgstr "Trieu un altre directori d'instal·lació."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
-msgid  "The user you are logged in as cannot run the Installation Wizard."
-msgstr "L'usuari amb què heu iniciat la sessió no pot executar l'auxiliar d'instal·lació."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
-msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr "Sortiu de la sessió i torneu a entrar amb un usuari que tingui permisos d'administrador."
-
 #: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
 msgstr "No teniu prou espai de disc disponible per a la instal·lació."
-
-#: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_REQUIRED
-msgid  "Required disc space"
-msgstr "Espai de disc requerit"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_AVAILABLE
-msgid  "Available disc space"
-msgstr "Espai de disc disponible"
-
-#: ../src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
-msgid  "Please use another directory for installation or change your module selection."
-msgstr "Utilitzeu un altre directori per a la instal·lació o canvieu la selecció de mòduls."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
-msgid  "Analyzing ..."
-msgstr "S'està analitzant..."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "S'està analitzant la base de dades\nEspereu un moment..."
 
 #: ../src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
@@ -467,118 +107,30 @@ msgstr "\"Cancel·la\" finalitza l'auxiliar de desinstal·lació sense eliminar 
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
 msgstr "\"D'acord\" surt de la pàgina d'ajuda i us retorna a l'auxiliar de desinstal·lació."
 
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
-msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr "Abans d'instal·lar aquest producte, heu de llegir i acceptar l'acord de llicència sota el qual s'ha llicenciat aquest programa perquè l'utilitzeu."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
-msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr "Si no accepteu tots els termes de l'acord de llicència, feu clic a \"Declina\" per finalitzar l'auxiliar d'instal·lació sense instal·lar el producte."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
-msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr "Seleccioneu el tipus d'instal·lació entre les opcions següents. Això determinarà quanta informació cal que proporcioneu per configurar el producte."
-
 #: ../src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
 msgstr "És recomanable que instal·leu aquest producte en el directori suggerit per aquest auxiliar d'instal·lació.<p>Per seleccionar una ubicació diferent, feu clic a \"Navega...\" o especifiqueu al quadre de text de sota el camí sencer del directori que s'ha d'utilitzar.<p>Si aquest producte ja està instal·lat, no podreu canviar el directori de destinació."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
-msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr "S'instal·laran els components marcats en color. Feu clic a la icona d'un component per marcar-lo o desmarcar-lo.<p>Els components que ja estan instal·lats no es poden seleccionar."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
-msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr "Els components llistats estan preparats per a la instal·lació segons els paràmetres de configuració. <p>Si esteu satisfet amb la vostra selecció, feu clic a \"Instal·la\" per començar. <p>Per comprovar o modificar els paràmetres de les pàgines anteriors, feu clic a \"Enrere\"."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
-msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr "Els components llistats estan preparats per a la desinstal·lació segons els vostres paràmetres de configuració. <p>Si esteu satisfet amb la vostra selecció, feu clic a \"Suprimeix\" per començar. <p>Per comprovar o modificar els paràmetres de les pàgines anteriors, feu clic a \"Enrere\"."
-
-#: ../src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
-msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr "Aquesta pàgina indica el progrés de la instal·lació amb l'ajuda d'una barra de progrés. Per interrompre el procés d'instal·lació, feu clic a \"Atura\"."
-
-#: ../src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
-msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr "Aquesta pàgina indica el progrés de la desinstal·lació amb l'ajuda d'una barra de progrés. Per interrompre la desinstal·lació, feu clic a \"Atura\"."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
-msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr "Completa: Això eliminarà tots els components instal·lats de la vostra versió.<p>Parcial: Això eliminarà només els components que seleccioneu a la llista de components."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
-msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr "S'eliminaran els components marcats amb una X. Feu clic al costat d'un component per marcar-lo o desmarcar-lo amb una X."
-
-#: ../src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
-msgid  "This package format is currently not supported for your operating system!"
-msgstr "Aquest format de paquet no és actualment compatible amb el sistema operatiu."
-
-#: ../src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
-msgid  "Operating system"
-msgstr "Sistema operatiu"
-
-#: ../src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT
-msgid  "Package format"
-msgstr "Format de paquet"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NOTHING_TO_INSTALL
-msgid  "Nothing to install"
-msgstr "Res a instal·lar"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1
-msgid  "No components have been selected for installation."
-msgstr "No heu seleccionat cap component per a la instal·lació."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
 msgstr "Feu clic a \"D'acord\" per seleccionar un o més components per a la instal·lació o per sortir de l'auxiliar d'instal·lació."
 
-#: ../src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
-msgid  "No languages have been selected for installation."
-msgstr "No heu seleccionat cap llengua per a la instal·lació."
-
 #: ../src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
 msgstr "Feu clic a \"D'acord\" per seleccionar una o més llengües per a la instal·lació o per sortir de l'auxiliar d'instal·lació."
-
-#: ../src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
-msgid  "No applications have been selected for installation."
-msgstr "No heu seleccionat cap aplicació per a la instal·lació."
 
 #: ../src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
 msgstr "Feu clic a \"D'acord\" per seleccionar una o més aplicacions per a la instal·lació o per sortir de l'auxiliar d'instal·lació."
 
-#: ../src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
-msgid  "Nothing to uninstall"
-msgstr "Res a desinstal·lar"
-
-#: ../src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1
-msgid  "No components have been selected for uninstallation."
-msgstr "No heu seleccionat cap component per a la desinstal·lació."
-
 #: ../src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
 msgstr "Feu clic a \"D'acord\" per seleccionar un o més components per a la desinstal·lació o per sortir de l'auxiliar de desinstal·lació."
-
-#: ../src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
-msgid  "All language components have been selected for uninstallation."
-msgstr "Heu seleccionat tots els components de llengua per a la desinstal·lació."
 
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
 msgstr "Feu clic a \"D'acord\" per seleccionar un o més components de llengua que no s'hagin de desinstal·lar o per sortir de l'auxiliar de desinstal·lació."
 
-#: ../src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
-msgid  "All application components have been selected for uninstallation."
-msgstr "Heu seleccionat tots els components de l'aplicació per a la desinstal·lació."
-
 #: ../src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
 msgstr "Feu clic a \"D'acord\" per seleccionar un o més components de l'aplicació que no s'hagin de desinstal·lar o per sortir de l'auxiliar de desinstal·lació."
-
-#: ../src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
-msgid  "Please change selection"
-msgstr "Cal que canvieu la selecció"

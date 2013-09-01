@@ -95,6 +95,21 @@ msgstr "التحكم المتراكب"
 msgid  "Text Box Bound Content"
 msgstr "محتوى منضم لمربع نص"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:COLUMNHEADERFOOTER.LABEL
+#, fuzzy
+msgid  "Column Header/Footer"
+msgstr "~رأس/تذييل العمود"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:CONDITIONALFORMATTING.LABEL
+#, fuzzy
+msgid  "Conditional Formatting..."
+msgstr "~تنسيق شرطي..."
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DBSORTINGANDGROUPING.LABEL
+#, fuzzy
+msgid  "Sorting and Grouping"
+msgstr "~فرز وتجميع"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DISTRIBUTION.LABEL
 msgid  "Distribution..."
 msgstr "توزيع..."
@@ -110,6 +125,11 @@ msgstr "الملاءمة لأقصى ارتفاع"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:GREATESTWIDTH.LABEL
 msgid  "Fit to greatest width"
 msgstr "الملاءمة لأقصى عرض"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:INSERTDATETIMEFIELD.LABEL
+#, fuzzy
+msgid  "Date and Time..."
+msgstr "~تاريخ ووقت..."
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:PAGEHEADERFOOTER.LABEL
 msgid  "Page Header/Footer"
@@ -163,9 +183,19 @@ msgstr "تقليص من أعلى"
 msgid  "Select all Formatted Fields"
 msgstr "تحديد كافة الحقول المنسّقة"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLINSECTION.LABEL
+#, fuzzy
+msgid  "Select Objects in Section"
+msgstr "~تحديد كائنات في المقطع"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLLABELS.LABEL
 msgid  "Select all Labels"
 msgstr "تحديد كافة التسميات"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTREPORT.LABEL
+#, fuzzy
+msgid  "Select Report"
+msgstr "ت~حديد تقرير"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SMALLESTHEIGHT.LABEL
 msgid  "Fit to smallest height"
@@ -178,6 +208,11 @@ msgstr "الملاءمة لأقل عرض"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SPREADSHEET.LABEL
 msgid  "Spreadsheet Document"
 msgstr "مستند جدول بيانات"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SUBREPORTINNEWWINDOW.LABEL
+#, fuzzy
+msgid  "Subreport in New Window..."
+msgstr "~تقرير فرعي في إطار جديد..."
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:TEXTDOCUMENT.LABEL
 msgid  "Text Document"

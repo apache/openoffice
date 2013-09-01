@@ -31,30 +31,932 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ADOBE
-#, fuzzy
-msgid  "Adobe Photoshop Import Filter"
-msgstr "Importní filtr Adobe Photoshop"
+#: kde/module_kde.ulf#STR_NAME_MODULE_OPTIONAL_KDE
+msgid  "KDE Integration"
+msgstr "Integrace s KDE"
+
+#: kde/module_kde.ulf#STR_DESC_MODULE_OPTIONAL_KDE
+msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into KDE."
+msgstr "Systémová integrace %PRODUCTNAME %PRODUCTVERSION s desktop prostředím KDE."
+
+#: quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
+msgid  "Quickstarter"
+msgstr "Rychlé spuštění"
+
+#: quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
+msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
+msgstr "Načte základní komponenty při startu systému pro zkrácení času při spuštění %PRODUCTNAME %PRODUCTVERSION."
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
+msgid  "Graphics Filters"
+msgstr "Grafické filtry"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT
+msgid  "Additional filters required to read alien graphic formats."
+msgstr "Dodatečné filtry potřebné pro čtení jiných grafických formátů."
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_TGA
+msgid  "TGA Import"
+msgstr "Import TGA"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_TGA
+msgid  "TGA TrueVision TARGA Import Filter"
+msgstr "Importní filtr TGA TrueVision TARGA"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_EPS
+msgid  "EPS Import/Export Filter"
+msgstr "Importní a exportní filtr EPS"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_EPS
+msgid  "Encapsulated Postscript Import/Export Filter"
+msgstr "Importní a exportní filtr EPS"
 
 #: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_XPM
 #, fuzzy
 msgid  "XPM Export Filter"
 msgstr "Exportní filtr XPM"
 
-#: xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
-msgid  "XSLT Sample Filters"
-msgstr "Příklady XSLT filtrů"
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_PBMP
+msgid  "Portable Bitmap Import/Export"
+msgstr "Importní a exportní filtr PBM"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_PBMP
+msgid  "Portable Bitmap Import/Export Filters"
+msgstr "Importní a exportní filtr PBM"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_SUNRST
+msgid  "SUN Rasterfile Import/Export"
+msgstr "Importní a exportní filtr SUN Rasterfile"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_SUNRST
+msgid  "SUN Rasterfile Import/Export Filters"
+msgstr "Importní a exportní filtr SUN Rasterfile"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ACAD
+msgid  "AutoCAD Import"
+msgstr "Import AutoCAD"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_ACAD
+msgid  "AutoCAD Import Filter"
+msgstr "Importní filtr AutoCAD"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_KODAC
+msgid  "Kodak Photo-CD Import"
+msgstr "Import Kodak Photo-CD"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_KODAC
+msgid  "Kodak Photo-CD Import Filter"
+msgstr "Importní filtr Kodak Photo-CD"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_MACPICT
+msgid  "Mac-Pict Import/Export"
+msgstr "Import/Export Mac-Pict"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_MACPICT
+msgid  "Mac-Pict Import/Export Filters"
+msgstr "Importní a exportní filtr Mac-Pict"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_OS2META
+msgid  "OS/2 Metafile Import/Export"
+msgstr "Import/Export OS/2 Metafile"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_OS2META
+msgid  "OS/2 Metafile Import/Export Filters"
+msgstr "Importní a exportní filtr pro OS/2 Metafile"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_PCX
+msgid  "PCX Import"
+msgstr "Import PCX"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_PCX
+msgid  "Z-Soft PCX Import"
+msgstr "Import Z-Soft PCX"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_TIFF
+msgid  "TIFF Import/Export"
+msgstr "Import TIFF"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_TIFF
+msgid  "TIFF Import and Export Filter"
+msgstr "Importní filtr TIFF"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_SVG
+msgid  "SVG Export"
+msgstr "Export SVG"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_SVG
+msgid  "SVG Export Filter"
+msgstr "Exportní filtr SVG"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_FLASH
+msgid  "Macromedia Flash (SWF)"
+msgstr "Macromedia Flash (SWF)"
+
+#: graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_FLASH
+msgid  "Macromedia Flash (SWF) Export Filter"
+msgstr "Exportní filtr Macromedia Flash (SWF)"
+
+#: onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
+msgid  "Online Update"
+msgstr "Online aktualizace"
+
+#: onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
+msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
+msgstr "Automatické upozornění při vydání aktualizované verze %PRODUCTNAME."
+
+#: impress/folderitem_impress.ulf#STR_FI_NAME_PRAESENTATION
+msgid  "Presentation"
+msgstr "Prezentace"
+
+#: impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
+msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
+msgstr "Vytvářejte a upravujte prezentace pro ukázky, porady a webové stránky pomocí Impress."
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "Nový"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
+msgid  "Show"
+msgstr "Zobrazit"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_SO60_PRESENT
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Presentation"
+msgstr "Prezentace %SXWFORMATNAME %SXWFORMATVERSION "
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_SO60_IMPRESS_TEMPLATE
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Presentation Template"
+msgstr "Šablona prezentace %SXWFORMATNAME %SXWFORMATVERSION "
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_OO_PRESENT
+msgid  "OpenDocument Presentation"
+msgstr "Prezentace OpenDocument"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_OO_PRESENT_TEMPLATE
+msgid  "OpenDocument Presentation Template"
+msgstr "Šablona prezentace OpenDocument"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_PRESENTATION_OLD
+msgid  "Microsoft PowerPoint 97-2003 Presentation"
+msgstr "Prezentace Microsoft PowerPoint 97-2003"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_SHOW
+msgid  "Microsoft PowerPoint Show"
+msgstr "Show Microsoft PowerPoint"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_PRESENTATION
+msgid  "Microsoft PowerPoint Presentation"
+msgstr "Prezentace Microsoft PowerPoint"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_TEMPLATE_OLD
+msgid  "Microsoft PowerPoint 97-2003 Template"
+msgstr "Šablona prezentace Microsoft PowerPoint 97-2003"
+
+#: impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_TEMPLATE
+msgid  "Microsoft PowerPoint Template"
+msgstr "Šablona Microsoft PowerPoint"
+
+#: impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
+msgid  "%PRODUCTNAME Impress"
+msgstr "%PRODUCTNAME Impress"
+
+#: impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
+msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
+msgstr "Vytvářejte a upravujte prezentace pro ukázky, porady a webové stránky pomocí %PRODUCTNAME Impress."
+
+#: impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
+msgid  "Program Module"
+msgstr "Programový modul"
+
+#: impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS_BIN
+msgid  "The application %PRODUCTNAME Impress"
+msgstr "Aplikace %PRODUCTNAME"
+
+#: impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_HELP
+msgid  "%PRODUCTNAME Impress Help"
+msgstr "Nápověda k %PRODUCTNAME Impress"
+
+#: impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS_HELP
+msgid  "Help about %PRODUCTNAME Impress"
+msgstr "Nápověda: Impress"
+
+#: impress/module_ogltrans.ulf#STR_NAME_MODULE_OPTIONAL_OGLTRANS
+msgid  "OpenGL slide transitions for %PRODUCTNAME Impress"
+msgstr "OpenGL přechod pro %PRODUCTNAME Impress"
+
+#: impress/module_ogltrans.ulf#STR_DESC_MODULE_MODULE_OPTIONAL_OGLTRANS
+msgid  "OpenGL slide transitions for %PRODUCTNAME Impress."
+msgstr "OpenGL přechod pro %PRODUCTNAME Impress."
+
+#: sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
+msgid  "Software Development Kit (SDK)"
+msgstr "Software Development Kit (SDK)"
+
+#: sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
+msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
+msgstr "SDK poskytuje všechny potřebné nástroje, příklady a dokumentaci pro programování kancelářského balíku."
+
+#: writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
+msgid  "HTML Document"
+msgstr "HTML dokument"
+
+#: writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
+msgid  "Text Document"
+msgstr "Textový dokument"
+
+#: writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
+msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
+msgstr "Vytvářejte a upravujte text a obrázky v dopisech, sestavách, dokumentech a webových stránkách pomocí Writer."
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "Nový"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
+msgstr "Textový dokument %SXWFORMATNAME %SXWFORMATVERSION "
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
+msgstr "Hlavní dokument %SXWFORMATNAME %SXWFORMATVERSION "
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
+msgstr "Šablona textového dokumentu %SXWFORMATNAME %SXWFORMATVERSION "
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
+msgid  "OpenDocument Text"
+msgstr "Textový dokument OpenDocument"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
+msgid  "OpenDocument Text Template"
+msgstr "Šablona textového dokumentu OpenDocument"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
+msgid  "OpenDocument Master Document"
+msgstr "Hlavní dokument OpenDocument"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
+msgid  "HTML Document Template"
+msgstr "Šablona HTML stránky"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
+msgid  "Microsoft Word 97-2003 Document"
+msgstr "Dokument Microsoft Word 97-2003"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
+msgid  "Microsoft Word Document"
+msgstr "Dokument Microsoft Word"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
+msgid  "Microsoft Word 97-2003 Template"
+msgstr "Šablona Microsoft Word 97-2003"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
+msgid  "Microsoft Word Template"
+msgstr "Šablona Microsoft Word"
+
+#: writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
+msgid  "Rich Text Document"
+msgstr "Dokument RTF"
+
+#: writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
+msgid  "%PRODUCTNAME Writer"
+msgstr "%PRODUCTNAME Writer"
+
+#: writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
+msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
+msgstr "Vytvářejte a upravujte text a obrázky v dopisech, sestavách, dokumentech a webových stránkách pomocí %PRODUCTNAME Writer."
+
+#: writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
+msgid  "Program Module"
+msgstr "Programový modul"
+
+#: writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
+msgid  "The application %PRODUCTNAME Writer"
+msgstr "Aplikace %PRODUCTNAME Writer"
+
+#: writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
+msgid  "%PRODUCTNAME Writer Help"
+msgstr "Nápověda k %PRODUCTNAME Writer"
+
+#: writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
+msgid  "Help about %PRODUCTNAME Writer"
+msgstr "Nápověda: Writer"
+
+#: writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
+msgid  "LaTeX Export"
+msgstr "LaTeX Export"
+
+#: writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
+msgid  "LaTeX export filter for Writer documents."
+msgstr "Exportní filtr z dokumentů Writer do LaTeX."
+
+#: math/module_math.ulf#STR_NAME_MODULE_PRG_MATH
+msgid  "%PRODUCTNAME Math"
+msgstr "%PRODUCTNAME Math"
+
+#: math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
+msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
+msgstr "Vytvářejte a upravujte vědecké výpočty a vzorce pomocí %PRODUCTNAME Math."
+
+#: math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
+msgid  "Program Module"
+msgstr "Programový modul"
+
+#: math/module_math.ulf#STR_DESC_MODULE_PRG_MATH_BIN
+msgid  "The application %PRODUCTNAME Math"
+msgstr "Aplikace %PRODUCTNAME Math"
+
+#: math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_HELP
+msgid  "%PRODUCTNAME Math Help"
+msgstr "Nápověda k %PRODUCTNAME Math"
+
+#: math/module_math.ulf#STR_DESC_MODULE_PRG_MATH_HELP
+msgid  "Help about %PRODUCTNAME Math"
+msgstr "Nápověda: Math"
+
+#: math/folderitem_math.ulf#STR_FI_TOOLTIP_MATH
+msgid  "Create and edit scientific formulas and equations by using Math."
+msgstr "Vytvářejte a upravujte vědecké výpočty a vzorce pomocí Math."
+
+#: math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "Nový"
+
+#: math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
+msgstr "Vzorec %SXWFORMATNAME %SXWFORMATVERSION "
+
+#: math/registryitem_math.ulf#STR_REG_VAL_OO_FORMULA
+msgid  "OpenDocument Formula"
+msgstr "Vzorec OpenDocument"
+
+#: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER
+msgid  "Mobile Device Filters"
+msgstr "Filtry pro mobilní zařízení"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
+msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
+msgstr "Filtry pro dokumenty a sešity pro podporu importu a exportu pro kapesní počítač Palm nebo Pocket PC (vyžadována podpora Javy)."
+
+#: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
+msgid  "Palm"
+msgstr "Palm"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_PALM
+msgid  "Filters for Palm OS compatible handhelds"
+msgstr "Filtry pro kapesní počítače kompatibilní s Palm OS"
+
+#: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM_APORTISDOC
+msgid  "AportisDoc"
+msgstr "AportisDoc"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_PALM_APORTISDOC
+msgid  "Support for the AportisDoc format"
+msgstr "Podpora pro formát AportisDoc"
+
+#: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC
+msgid  "Pocket PC"
+msgstr "Pocket PC"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT
+msgid  "Filters and ActiveSync support for Pocket PC compatible handhelds"
+msgstr "Filtry a podpora ActiveSync pro Pocket PC kompatibilní počítače."
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX
+msgid  "Filters for Pocket PC compatible handhelds."
+msgstr "Filtry pro Pocket PC kompatibilní počítače."
+
+#: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD
+msgid  "Pocket Word"
+msgstr "Pocket Word"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD
+msgid  "Support for Pocket Word"
+msgstr "Podpora pro Pocket Word"
+
+#: javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_EXCEL
+msgid  "Pocket Excel"
+msgstr "Pocket Excel"
+
+#: javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_EXCEL
+msgid  "Support for Pocket Excel"
+msgstr "Podpora pro Pocket Excel"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__43887C67_4D5D_4127_BAAC_87A288494C7C_
+msgid  "Pocket Excel"
+msgstr "Pocket Excel"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__43887C67_4D5D_4127_BAAC_87A288494C7C__PEGASUSFILTER_DESCRIPTION
+msgid  "Pocket Excel Workbook"
+msgstr "Sešit Pocket Excel"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__BDD611C3_7BAB_460F_8711_5B9AC9EF6020_
+msgid  "%PRODUCTNAME Writer"
+msgstr "%PRODUCTNAME Writer"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__BDD611C3_7BAB_460F_8711_5B9AC9EF6020__PEGASUSFILTER_DESCRIPTION
+msgid  "%PRODUCTNAME Writer XML Document"
+msgstr "XML dokument %PRODUCTNAME Writer"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__C6AB3E74_9F4F_4370_8120_A8A6FABB7A7C_
+msgid  "%PRODUCTNAME Calc"
+msgstr "%PRODUCTNAME Calc"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__C6AB3E74_9F4F_4370_8120_A8A6FABB7A7C__PEGASUSFILTER_DESCRIPTION
+msgid  "%PRODUCTNAME Calc XML Document"
+msgstr "XML dokument %PRODUCTNAME Calc"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__CB43F086_838D_4FA4_B5F6_3406B9A57439_
+msgid  "Pocket Word"
+msgstr "Pocket Word"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE__CB43F086_838D_4FA4_B5F6_3406B9A57439__PEGASUSFILTER_DESCRIPTION
+msgid  "Pocket Word Document - Pocket PC"
+msgstr "Pocket Word dokument - Pocket PC"
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_CLASSPATH
+msgid  "The %PRODUCTNAME mobile device filters cannot be located."
+msgstr "Nelze najít %PRODUCTNAME filtry pro mobilní zařízení."
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVA
+msgid  "A Java 1.4 installation cannot be located."
+msgstr "Nelze najít instalaci Java 1.4."
+
+#: javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVAINIT
+msgid  "There was an error while initializing the Java Runtime Environment."
+msgstr "Nastala chyba při inicializaci JRE."
+
+#: winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+msgid  "Windows Explorer Extension"
+msgstr "Rozšíření Průzkumníka Windows"
+
+#: winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
+msgstr "Umožní Průzkumníku Microsoft Windows zobrazit informace o dokumentech %PRODUCTNAME, jako náhledy apod."
+
+#: draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "Nový"
+
+#: draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
+msgstr "Kresba %SXWFORMATNAME %SXWFORMATVERSION "
+
+#: draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAW_TEMPLATE
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing Template"
+msgstr "Šablona kresby %SXWFORMATNAME %SXWFORMATVERSION "
+
+#: draw/registryitem_draw.ulf#STR_REG_VAL_OO_DRAW
+msgid  "OpenDocument Drawing"
+msgstr "Kresba OpenDocument"
+
+#: draw/registryitem_draw.ulf#STR_REG_VAL_OO_DRAW_TEMPLATE
+msgid  "OpenDocument Drawing Template"
+msgstr "Šablona kresby OpenDocument"
+
+#: draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
+msgid  "Drawing"
+msgstr "Kresba"
+
+#: draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
+msgid  "Create and edit drawings, flow charts, and logos by using Draw."
+msgstr "Vytvářejte a upravujte kresby, bloková schémata a loga pomocí Draw."
+
+#: draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
+msgid  "%PRODUCTNAME Draw"
+msgstr "%PRODUCTNAME Draw"
+
+#: draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
+msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
+msgstr "Vytvářejte a upravujte kresby, bloková schémata a loga pomocí %PRODUCTNAME Draw."
+
+#: draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
+msgid  "Program Module"
+msgstr "Programový modul"
+
+#: draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW_BIN
+msgid  "The application %PRODUCTNAME Draw"
+msgstr "Aplikace %PRODUCTNAME Draw"
+
+#: draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_HELP
+msgid  "%PRODUCTNAME Draw Help"
+msgstr "Nápověda k %PRODUCTNAME Draw"
+
+#: draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW_HELP
+msgid  "Help about %PRODUCTNAME Draw"
+msgstr "Nápověda: Draw"
+
+#: calc/folderitem_calc.ulf#STR_FI_NAME_TABELLENDOKUMENT
+msgid  "Spreadsheet"
+msgstr "Sešit"
+
+#: calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
+msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
+msgstr "Provádějte výpočty, analyzujte informace a ovládejte seznamy v sešitech pomocí Calc."
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "Nový"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
+msgstr "Sešit %SXWFORMATNAME %SXWFORMATVERSION "
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_SO60_CALC_TEMPLATE
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet Template"
+msgstr "Šablona sešitu %SXWFORMATNAME %SXWFORMATVERSION "
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_OO_CALC
+msgid  "OpenDocument Spreadsheet"
+msgstr "Sešit OpenDocument"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_OO_CALC_TEMPLATE
+msgid  "OpenDocument Spreadsheet Template"
+msgstr "Šablona sešitu OpenDocument"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_WORKSHEET_OLD
+msgid  "Microsoft Excel 97-2003 Worksheet"
+msgstr "Pracovní sešit Microsoft Excel 97-2003"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_WORKSHEET
+msgid  "Microsoft Excel Worksheet"
+msgstr "Pracovní sešit Microsoft Excel"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_TEMPLATE_OLD
+msgid  "Microsoft Excel 97-2003 Template"
+msgstr "Šablona Microsoft Excel 97-2003"
+
+#: calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_TEMPLATE
+msgid  "Microsoft Excel Template"
+msgstr "Šablona Microsoft Excel"
+
+#: calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
+msgid  "%PRODUCTNAME Calc"
+msgstr "%PRODUCTNAME Calc"
+
+#: calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
+msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
+msgstr "Provádějte výpočty, analyzujte informace a ovládejte seznamy v sešitech pomocí Calc."
+
+#: calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
+msgid  "Program Module"
+msgstr "Programový modul"
+
+#: calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC_BIN
+msgid  "The application %PRODUCTNAME Calc"
+msgstr "Aplikace %PRODUCTNAME"
+
+#: calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_HELP
+msgid  "%PRODUCTNAME Calc Help"
+msgstr "Nápověda k %PRODUCTNAME Calc"
+
+#: calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC_HELP
+msgid  "Help about %PRODUCTNAME Calc"
+msgstr "Nápověda: Calc"
+
+#: calc/module_calc.ulf#STR_NAME_MODULE_OPTIONAL_ADDINS
+msgid  "Add-in"
+msgstr "Doplňky"
+
+#: calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
+msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
+msgstr "Doplňky jsou programy, které doplňují funkce dostupné v %PRODUCTNAME Calc."
+
+#: ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "Nový"
+
+#: ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
+msgid  "&Install"
+msgstr "Instalovat"
+
+#: ooo/registryitem_ooo.ulf#STR_REG_VAL_SO60_CONFIGFILE
+msgid  "OpenOffice.org 1.1 Configuration File"
+msgstr "Konfigurační soubor OpenOffice.org 1.1"
+
+#: ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
+msgid  "StarOffice 5.0 Template"
+msgstr "Šablona StarOffice 5.0"
+
+#: ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr "kancelářský balík založený na základě projektu Apache OpenOffice"
+
+#: ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
+msgid  "Desktop integration"
+msgstr "Integrace s desktopem"
+
+#: ooo/module_systemint.ulf#STR_DESC_MODULE_OPTIONAL_SYSTEMINTEGRATION
+msgid  "Desktop integration of %PRODUCTNAME %PRODUCTVERSION."
+msgstr "Integrace %PRODUCTNAME %PRODUCTVERSION s desktopem."
+
+#: ooo/module_ooo.ulf#STR_NAME_MODULE_ROOT_OSL
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: ooo/module_ooo.ulf#STR_NAME_MODULE_PRG
+msgid  "%PRODUCTNAME Program Modules"
+msgstr "Programové moduly %PRODUCTNAME"
+
+#: ooo/module_ooo.ulf#STR_DESC_MODULE_PRG
+msgid  "List of all installable %PRODUCTNAME modules."
+msgstr "Seznam instalovatelných modulů %PRODUCTNAME."
+
+#: ooo/module_ooo.ulf#STR_NAME_MODULE_OPTIONAL
+msgid  "Optional Components"
+msgstr "Volitelné součásti"
+
+#: ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
+msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
+msgstr "Obecné komponenty a další programy sdílené všemi aplikacemi %PRODUCTNAME."
+
+#: ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
+msgid  "Dictionaries"
+msgstr "Slovníky"
+
+#: ooo/module_ooo.ulf#STR_DESC_MODULE_DICTIONARIES
+msgid  "Spelling and hyphenation dictionaries and thesauri."
+msgstr "Kontrola pravopisu, slovníky, dělení slov"
+
+#: ooo/module_java.ulf#STR_NAME_MODULE_OPTIONAL_JAVA
+msgid  "Java Runtime Environment (%JAVAVERSION)"
+msgstr "Java Runtime Environment (%JAVAVERSION)"
+
+#: ooo/module_java.ulf#STR_DESC_MODULE_OPTIONAL_JAVA
+msgid  "Component for setting up the Java Environment"
+msgstr "Součásti pro nastavení Java Runtime Environment."
+
+#: ooo/module_headless.ulf#STR_NAME_MODULE_OPTIONAL_HEADLESS
+msgid  "Headless application support"
+msgstr "Podpora režimu bez grafiky"
+
+#: ooo/module_headless.ulf#STR_DESC_MODULE_OPTIONAL_HEADLESS
+msgid  "Component for enabling use %PRODUCTNAME without a display"
+msgstr "Komponenta umožňující použití %PRODUCTNAME bez grafického prostředí"
+
+#: ooo/directory_ooo.ulf#STR_DIR_INFO
+msgid  "Information"
+msgstr "Informace"
+
+#: ooo/directory_ooo.ulf#STR_DIR_INTERNET
+msgid  "Internet"
+msgstr "Internet"
+
+#: ooo/directory_ooo.ulf#STR_DIR_JAVA
+msgid  "Java"
+msgstr "Java"
+
+#: ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
+msgid  "Fun&More"
+msgstr "Zábava a více"
+
+#: ooo/directory_ooo.ulf#STR_DIR_STARONE
+msgid  "%PRODUCTNAME API"
+msgstr "%PRODUCTNAME API"
+
+#: ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
+msgid  "Travel"
+msgstr "Cestovat"
+
+#: ooo/directory_ooo.ulf#STR_DIR_KAPITEL
+msgid  "Chapters"
+msgstr "Kapitoly"
+
+#: ooo/directory_ooo.ulf#STR_DIR_DATEIEN
+msgid  "Files"
+msgstr "Soubory"
+
+#: ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
+msgid  "From Template"
+msgstr "Ze šablony"
+
+#: ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
+msgid  "Open Document"
+msgstr "Otevřít dokument"
+
+#: ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
+msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
+msgstr "Kancelářský balík kompatibilní s otevřeným a standardizovaným formátem ODF. Podporován organizací The Apache Software Foundation."
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 #, fuzzy
 msgid  "Additional language packs"
 msgstr "Doplňující jazykové balíčky"
 
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_US
+msgid  "English"
+msgstr "angličtina"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_US
+msgid  "Installs English support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu angličtiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DE
+msgid  "German"
+msgstr "Němčina"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DE
+msgid  "Installs German support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu němčiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FR
+msgid  "French"
+msgstr "francouzština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FR
+msgid  "Installs French support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu francouzštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IT
+msgid  "Italian"
+msgstr "italština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IT
+msgid  "Installs Italian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu italštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ES
+msgid  "Spanish"
+msgstr "španělština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ES
+msgid  "Installs Spanish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu španělštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SV
+msgid  "Swedish"
+msgstr "švédština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SV
+msgid  "Installs Swedish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu švédštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT
+msgid  "Portuguese"
+msgstr "Portugalština"
+
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT
 #, fuzzy
 msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu portugalštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT_BR
+msgid  "Portuguese (Brazil)"
+msgstr "Portugalština (Brazílie)"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_JA
+msgid  "Japanese"
+msgstr "Japonština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_JA
+msgid  "Installs Japanese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu japonštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KO
+msgid  "Korean"
+msgstr "Korejština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KO
+msgid  "Installs Korean support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu korejštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_CN
+msgid  "Chinese (simplified)"
+msgstr "Čínština (zjedn.)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
+msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu čínštiny (zjednodušené)"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
+msgid  "Chinese (traditional)"
+msgstr "Čínština (tradiční)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
+msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu čínštiny (tradiční)"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
+msgid  "Dutch"
+msgstr "holandština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NL
+msgid  "Installs Dutch support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu holandštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HU
+msgid  "Hungarian"
+msgstr "maďarština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HU
+msgid  "Installs Hungarian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu maďarštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PL
+msgid  "Polish"
+msgstr "polština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PL
+msgid  "Installs Polish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu polštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RU
+msgid  "Russian"
+msgstr "ruština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RU
+msgid  "Installs Russian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu ruštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TR
+msgid  "Turkish"
+msgstr "Turečtina"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TR
+msgid  "Installs Turkish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu turečtiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EL
+msgid  "Greek"
+msgstr "Řečtina"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EL
+msgid  "Installs Greek support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu řečtiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TH
+msgid  "Thai"
+msgstr "thajština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TH
+msgid  "Installs Thai support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu thajštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CS
+msgid  "Czech"
+msgstr "čeština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CS
+msgid  "Installs Czech support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu češtiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SK
+msgid  "Slovak"
+msgstr "slovenština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SK
+msgid  "Installs Slovak support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu slovenštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HR
+msgid  "Croatian"
+msgstr "Chorvatština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HR
+msgid  "Installs Croatian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu chorvatštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ET
+msgid  "Estonian"
+msgstr "estonština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ET
+msgid  "Installs Estonian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu estonštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VI
+msgid  "Vietnamese"
+msgstr "vietnamština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VI
+msgid  "Installs Vietnamese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu vietnamštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BG
+msgid  "Bulgarian"
+msgstr "Bulharština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BG
+msgid  "Installs Bulgarian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu bulharštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KM
+msgid  "Khmer"
+msgstr "Khmérština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KM
+msgid  "Installs Khmer support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu khmérštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PA_IN
+msgid  "Punjabi"
+msgstr "Punjabi"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PA_IN
+msgid  "Installs Punjabi support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Punjabi"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU_IN
 #, fuzzy
@@ -65,6 +967,10 @@ msgstr "Gujarati"
 #, fuzzy
 msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Gujarati"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA
+msgid  "Tamil"
+msgstr "Tamilština"
 
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TA
 #, fuzzy
@@ -81,10 +987,94 @@ msgstr "Hindi"
 msgid  "Installs Hindi support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu hindštiny"
 
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ST
+msgid  "Southern Sotho (Sutu)"
+msgstr "Jižní Sotho (Sutu)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST
+msgid  "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Jižní Sotho (Sutu)"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN
+msgid  "Tswana"
+msgstr "Tswana"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TN
+msgid  "Installs Tswana support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Tswana"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_XH
+msgid  "Xhosa"
+msgstr "Xhosa"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_XH
+msgid  "Installs Xhosa support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Xhosa"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZU
+msgid  "Zulu"
+msgstr "jazyk Zulu"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZU
+msgid  "Installs Zulu support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Zulu"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AF
+msgid  "Afrikaans"
+msgstr "afrikánština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AF
+msgid  "Installs Afrikaans support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu afrikánštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW
+msgid  "Swahili"
+msgstr "Swahili"
+
 #: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW
 #, fuzzy
 msgid  "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Swahili"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LO
+msgid  "Lao"
+msgstr "Lao"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LO
+msgid  "Installs Lao support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Lao"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NS
+msgid  "Northern Sotho"
+msgstr "Severní Sotho"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NS
+msgid  "Installs Northern Sotho support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Severní Sotho"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN
+msgid  "Bengali"
+msgstr "Bengálština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN
+msgid  "Installs Bengali support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu bengálštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_BD
+msgid  "Bengali (Bangladesh)"
+msgstr "Bengálština (Bangladéš)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
+msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu bengálštiny (Bangladéš)"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
+msgid  "Bengali (India)"
+msgstr "Bengálština (Indie)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_IN
+msgid  "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu bengálštiny (Indie)"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR
 #, fuzzy
@@ -106,6 +1096,14 @@ msgstr "Marathi"
 msgid  "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Marathi"
 
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NE
+msgid  "Nepali"
+msgstr "nepálština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NE
+msgid  "Installs Nepali support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu nepálštiny"
+
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR
 #, fuzzy
 msgid  "Arabic"
@@ -116,8 +1114,87 @@ msgstr "Arabština"
 msgid  "Installs Arabic support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu arabštiny"
 
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CA
+msgid  "Catalan"
+msgstr "katalánština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CA
+msgid  "Installs Catalan support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu katalánštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DA
+msgid  "Danish"
+msgstr "dánština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DA
+msgid  "Installs Danish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu dánštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FI
+msgid  "Finnish"
+msgstr "Finština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FI
+msgid  "Installs Finnish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu finštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HE
+msgid  "Hebrew"
+msgstr "hebrejština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HE
+msgid  "Installs Hebrew support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu hebrejštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IS
+msgid  "Icelandic"
+msgstr "Islandština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IS
+msgid  "Installs Icelandic support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu islandštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NB
+msgid  "Norwegian (Bokmål)"
+msgstr "Norsky (Bokmål)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
+msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu norštiny (Bokmål)"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
+msgid  "Norwegian (Nynorsk)"
+msgstr "Norština (Nynorsk)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
+msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu norštiny (Nynorsk)"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
+msgid  "Rhaeto-Romance"
+msgstr "Rhaeto-Romance"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RM
+msgid  "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Rhaeto-Romance "
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO
+msgid  "Romanian"
+msgstr "rumunština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RO
+msgid  "Installs Romanian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu rumunštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SQ
+msgid  "Albanian"
+msgstr "Albánština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SQ
+msgid  "Installs Albanian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu albánštiny"
+
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR
-#, fuzzy
 msgid  "Urdu"
 msgstr "Urdština"
 
@@ -125,6 +1202,102 @@ msgstr "Urdština"
 #, fuzzy
 msgid  "Installs Urdu support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu urdštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ID
+msgid  "Indonesian"
+msgstr "Indonéština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ID
+msgid  "Installs Indonesian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu indonéštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UK
+msgid  "Ukrainian"
+msgstr "Ukrajinština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UK
+msgid  "Installs Ukrainian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu ukrajinštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BE_BY
+msgid  "Belarusian"
+msgstr "Běloruština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BE_BY
+msgid  "Installs Belarusian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu běloruštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SL
+msgid  "Slovenian"
+msgstr "slovinština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SL
+msgid  "Installs Slovenian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu slovinštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LV
+msgid  "Latvian"
+msgstr "Lotyština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LV
+msgid  "Installs Latvian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu lotyštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LT
+msgid  "Lithuanian"
+msgstr "litevština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LT
+msgid  "Installs Lithuanian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu litevštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HY
+msgid  "Armenian"
+msgstr "Arménština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HY
+msgid  "Installs Armenian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu arménštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EU
+msgid  "Basque"
+msgstr "Baskičtina"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EU
+msgid  "Installs Basque support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu baskičtiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MK
+msgid  "Macedonian"
+msgstr "Makedónština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MK
+msgid  "Installs Macedonian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu makedónštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MT
+msgid  "Maltese"
+msgstr "Maltéština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MT
+msgid  "Installs Maltese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu maltéštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CY
+msgid  "Welsh"
+msgstr "Welština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CY
+msgid  "Installs Welsh support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu welštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GL
+msgid  "Galician"
+msgstr "galština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GL
+msgid  "Installs Galician support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu galštiny"
 
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH_YU
 #, fuzzy
@@ -136,6 +1309,14 @@ msgstr "Srbština (Latinka)"
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu srbštiny (latinka)"
 
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA
+msgid  "Irish"
+msgstr "Irština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GA
+msgid  "Installs Irish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu irštiny"
+
 #: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR_CS
 #, fuzzy
 msgid  "Serbian (Cyrillic)"
@@ -145,3 +1326,339 @@ msgstr "Srbština (Cyrilice)"
 #, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu srbštiny (cyrilice)"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
+msgid  "Bosnian"
+msgstr "Bosenština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BS
+msgid  "Installs Bosnian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu bosenštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AS_IN
+msgid  "Assamese"
+msgstr "Assamese"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AS_IN
+msgid  "Installs Assamese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Assamese"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RW
+msgid  "Kinyarwanda"
+msgstr "Kinyarwanda"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RW
+msgid  "Installs Kinyarwanda support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Kinyarwanda"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SA
+msgid  "Sanskrit"
+msgstr "Sanskrt"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SA
+msgid  "Installs Sanskrit support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu sanskrtu"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FA
+msgid  "Persian"
+msgstr "perština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FA
+msgid  "Installs Persian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu perštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FO
+msgid  "Faroese"
+msgstr "Faroese"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FO
+msgid  "Installs Faroese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Faroese"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SB
+msgid  "Sorbian"
+msgstr "Srbština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SB
+msgid  "Installs Sorbian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu srbštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TT
+msgid  "Tatar"
+msgstr "Tatarština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TT
+msgid  "Installs Tatar support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu tatarštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TS
+msgid  "Tsonga"
+msgstr "Tsonga"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TS
+msgid  "Installs Tsonga support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Tsonga"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_YI
+msgid  "Yiddish"
+msgstr "Jidiš"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_YI
+msgid  "Installs Yiddish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu jidiš"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BR
+msgid  "Breton"
+msgstr "Bretonština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BR
+msgid  "Installs Breton support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu bretonštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NR
+msgid  "Ndebele South"
+msgstr "Ndebele South"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NR
+msgid  "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Ndebele South"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SS
+msgid  "Swazi"
+msgstr "Svazijština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SS
+msgid  "Installs Swazi support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu svazijštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VE
+msgid  "Venda"
+msgstr "Venda"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VE
+msgid  "Installs Venda support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Venda"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KN
+msgid  "Kannada"
+msgstr "Kannarština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KN
+msgid  "Installs Kannada support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu kannarštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MS
+msgid  "Malay (Malaysian)"
+msgstr "Malajština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MS
+msgid  "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu malajštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TG
+msgid  "Tajik"
+msgstr "Tádžičtina"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TG
+msgid  "Installs Tajik support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Nainstaluje do %PRODUCTNAME %PRODUCTVERSION podporu tádžičtiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KU
+msgid  "Kurdish"
+msgstr "Kurdština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KU
+msgid  "Installs Kurdish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu kurdštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DZ
+msgid  "Dzongkha"
+msgstr "Dzongkä"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DZ
+msgid  "Installs Dzongkha support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Dzongkä"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KA
+msgid  "Georgian"
+msgstr "Gruzínština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KA
+msgid  "Installs Georgian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu gruzínštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EO
+msgid  "Esperanto"
+msgstr "Esperanto"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EO
+msgid  "Installs Esperanto support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu esperanta"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_ZA
+msgid  "English (South Africa)"
+msgstr "Angličtina (Jižní Afrika)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
+msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu angličtiny (Jižní Afrika)"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
+msgid  "English (United Kingdom)"
+msgstr "Angličtina (Velká Británie)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
+msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu angličtiny (Velká Británie)"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ML_IN
+msgid  "Malayalam"
+msgstr "Malayalam"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ML_IN
+msgid  "Installs Malayalam support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Malayalam "
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TE_IN
+msgid  "Telugu"
+msgstr "Telugu"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TE_IN
+msgid  "Installs Telugu support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Telugu"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TI_ER
+msgid  "Tigrinya"
+msgstr "Tigrinya"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TI_ER
+msgid  "Installs Tigrinya support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Tigrinya "
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UZ
+msgid  "Uzbek"
+msgstr "Uzbečtina"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UZ
+msgid  "Installs Uzbek support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu uzbečtiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MN
+msgid  "Mongolian"
+msgstr "Mongolština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MN
+msgid  "Installs Mongolian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu mongolštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OC
+msgid  "Occitan"
+msgstr "Okcitánština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OC
+msgid  "Installs Occitan support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu okcitánštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UG
+msgid  "Uighur"
+msgstr "Ujgurština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UG
+msgid  "Installs Uighur support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu ujgurštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SI
+msgid  "Sinhala"
+msgstr "Sinhálština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SI
+msgid  "Installs Sinhala support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu sinhálštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OM
+msgid  "Oromo"
+msgstr "Oromo"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OM
+msgid  "Installs Oromo support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu Oromo"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AST
+msgid  "Asturian"
+msgstr "Asturština"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AST
+msgid  "Installs Asturian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu asturštiny"
+
+#: ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GD
+msgid  "Gaelic (Scotland)"
+msgstr "gaelština (Skotsko)"
+
+#: ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GD
+msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu gaelštiny (Skotsko)"
+
+#: gnome/module_gnome.ulf#STR_NAME_MODULE_OPTIONAL_GNOME
+msgid  "GNOME Integration"
+msgstr "Integrace s GNOME"
+
+#: gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
+msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
+msgstr "Systémová integrace %PRODUCTNAME %PRODUCTVERSION s desktop prostředím Gnome."
+
+#: base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
+msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
+msgstr "Spravujte databáze, vytvářejte dotazy a sestavy pro sledování a řízení vašich informací pomocí Base."
+
+#: base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
+msgid  "OpenDocument Database"
+msgstr "Databáze OpenDocument"
+
+#: base/module_base.ulf#STR_NAME_MODULE_PRG_BASE
+msgid  "%PRODUCTNAME Base"
+msgstr "%PRODUCTNAME Base"
+
+#: base/module_base.ulf#STR_DESC_MODULE_PRG_BASE
+msgid  "Create and edit databases by using %PRODUCTNAME Base."
+msgstr "Pomocí %PRODUCTNAME Base můžete vytvářet a upravovat databáze."
+
+#: base/module_base.ulf#STR_NAME_MODULE_PRG_BASE_BIN
+msgid  "Program Module"
+msgstr "Programový modul"
+
+#: base/module_base.ulf#STR_DESC_MODULE_PRG_BASE_BIN
+msgid  "The application %PRODUCTNAME Base"
+msgstr "Aplikace %PRODUCTNAME Base"
+
+#: base/module_base.ulf#STR_NAME_MODULE_PRG_BASE_HELP
+msgid  "%PRODUCTNAME Base Help"
+msgstr "Nápověda k %PRODUCTNAME Base"
+
+#: base/module_base.ulf#STR_DESC_MODULE_PRG_BASE_HELP
+msgid  "Help about %PRODUCTNAME Base"
+msgstr "Nápověda: Base"
+
+#: activex/module_activex.ulf#STR_NAME_MODULE_OPTIONAL_ACTIVEXCONTROL
+msgid  "ActiveX Control"
+msgstr "Ovládací prvek ActiveX"
+
+#: activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
+msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
+msgstr "Komponenta umožňující zobrazení dokumentů %PRODUCTNAME v aplikaci Microsoft Internet Explorer."
+
+#: python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
+msgid  "E-mail Mailmerge"
+msgstr "Hromadná korespondence elektronickou poštou"
+
+#: python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
+msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
+msgstr "Modul hromadné korespondence elektronickou poštou %PRODUCTNAME "
+
+#: python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
+msgid  "Python-UNO Bridge"
+msgstr "Python-UNO Bridge"
+
+#: python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
+msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
+msgstr "Doplňuje možnost automatizace %PRODUCTNAME pomocí skriptového jazyka Python. Kompletní dokumentaci naleznete na http://udk.openoffice.org/python/python-bridge.html"

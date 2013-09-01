@@ -31,193 +31,17 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.STRING.TEXT
-msgid  "Title"
-msgstr "Título"
-
-#: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.STRING.TEXT
-msgid  "Size"
-msgstr "Tamaño"
-
-#: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.STRING.TEXT
-msgid  "Date modified"
-msgstr "Fecha de modificación"
-
-#: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.STRING.TEXT
-msgid  "Type"
-msgstr "Tipo"
-
-#: contnr/fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.STRING.TEXT
-msgid  "Could not create the folder %1."
-msgstr "No se pudo crear la carpeta %1."
-
-#: contnr/fileview.src#STR_SVT_BYTES.STRING.TEXT
-msgid  "Bytes"
-msgstr "Bytes"
-
-#: contnr/fileview.src#STR_SVT_KB.STRING.TEXT
-msgid  "KB"
-msgstr "KB"
-
-#: contnr/fileview.src#STR_SVT_MB.STRING.TEXT
-msgid  "MB"
-msgstr "MB"
-
-#: contnr/fileview.src#STR_SVT_GB.STRING.TEXT
-msgid  "GB"
-msgstr "GB"
-
 #: contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.MENUITEM.TEXT
 msgid  "~Delete"
 msgstr "~Eliminar"
-
-#: contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.MENUITEM.TEXT
-msgid  "~Rename"
-msgstr "~Cambiar nombre"
-
-#: contnr/fileview.src#DLG_SVT_QUERYDELETE.MODALDIALOG.TEXT
-msgid  "Confirm Delete"
-msgstr "Confirmar eliminación"
-
-#: contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_ENTRY.FIXEDTEXT.TEXT
-msgid  "Entry:"
-msgstr "Entrada:"
-
-#: contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.FIXEDTEXT.TEXT
-msgid  "Are you sure you want to delete the selected data?"
-msgstr "¿Desea realmente eliminar los datos seleccionados?"
-
-#: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.PUSHBUTTON.TEXT
-msgid  "Delete ~All"
-msgstr "~Eliminar todos"
-
-#: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_NO.PUSHBUTTON.TEXT
-msgid  "Do ~Not Delete"
-msgstr "~No eliminar"
-
-#: contnr/svcontnr.src#STR_SVT_ACC_DESC_TABLISTBOX.STRING.TEXT
-msgid  "Row: %1, Column: %2"
-msgstr "Fila: %1, columna: %2"
-
-#: contnr/svcontnr.src#STR_SVT_ACC_DESC_FILEVIEW.STRING.TEXT
-msgid  ", Type: %1, URL: %2"
-msgstr ", Tipo: %1, URL: %2"
-
-#: contnr/svcontnr.src#STR_SVT_ACC_DESC_FOLDER.STRING.TEXT
-msgid  "Folder"
-msgstr "Carpeta"
-
-#: contnr/svcontnr.src#STR_SVT_ACC_DESC_FILE.STRING.TEXT
-msgid  "File"
-msgstr "Archivo"
-
-#: contnr/svcontnr.src#STR_SVT_ACC_EMPTY_FIELD.STRING.TEXT
-msgid  "Empty Field"
-msgstr "Campo vacío"
-
-#: contnr/templwin.src#STR_SVT_NEWDOC.STRING.TEXT
-msgid  "New Document"
-msgstr "Nuevo documento"
-
-#: contnr/templwin.src#STR_SVT_MYDOCS.STRING.TEXT
-msgid  "My Documents"
-msgstr "Mis documentos"
-
-#: contnr/templwin.src#STR_SVT_TEMPLATES.STRING.TEXT
-msgid  "Templates"
-msgstr "Plantillas"
-
-#: contnr/templwin.src#STR_SVT_SAMPLES.STRING.TEXT
-msgid  "Samples"
-msgstr "Ejemplos"
-
-#: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_BACK.TOOLBOXITEM.TEXT
-msgid  "Back"
-msgstr "Regresar"
-
-#: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PREV.TOOLBOXITEM.TEXT
-msgid  "Up One Level"
-msgstr "Subir un nivel"
-
-#: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PRINT.TOOLBOXITEM.TEXT
-msgid  "Print"
-msgstr "Imprimir"
-
-#: contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_DOCINFO.TOOLBOXITEM.TEXT
-msgid  "Document Properties"
-msgstr "Propiedades del documento"
 
 #: contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_PREVIEW.TOOLBOXITEM.TEXT
 msgid  "Preview"
 msgstr "Previsualización"
 
-#: contnr/templwin.src#DLG_DOCTEMPLATE.MODALDIALOG.TEXT
-msgid  "Templates and Documents"
-msgstr "Plantillas y documentos"
-
 #: contnr/templwin.src#DLG_DOCTEMPLATE.FT_DOCTEMPLATE_LINK.FIXEDTEXT.TEXT
 msgid  "~Get more templates online..."
 msgstr "~Obten mas plantillas en linea..."
-
-#: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_MANAGE.PUSHBUTTON.TEXT
-msgid  "Organi~ze..."
-msgstr "~Administrar..."
-
-#: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr "Edi~tar"
-
-#: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_OPEN.OKBUTTON.TEXT
-msgid  "~Open"
-msgstr "~Abrir"
-
-#: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_TITLE.ITEMLIST.ITEM
-msgid  "Title"
-msgstr "Título"
-
-#: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_FROM.ITEMLIST.ITEM
-msgid  "By"
-msgstr "De"
-
-#: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DATE.ITEMLIST.ITEM
-msgid  "Date"
-msgstr "Fecha"
-
-#: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_KEYWORDS.ITEMLIST.ITEM
-msgid  "Keywords"
-msgstr "Palabras clave"
-
-#: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DESCRIPTION.ITEMLIST.ITEM
-msgid  "Description"
-msgstr "Descripción"
-
-#: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MIMETYPE.ITEMLIST.ITEM
-msgid  "Type"
-msgstr "Tipo de contenido"
-
-#: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDDATE.ITEMLIST.ITEM
-msgid  "Modified on"
-msgstr "Fecha de modificación"
-
-#: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDBY.ITEMLIST.ITEM
-msgid  "Modified by"
-msgstr "Modificado por"
-
-#: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTDATE.ITEMLIST.ITEM
-msgid  "Printed on"
-msgstr "Fecha de impresión"
-
-#: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTBY.ITEMLIST.ITEM
-msgid  "Printed by"
-msgstr "Impreso por"
-
-#: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_THEME.ITEMLIST.ITEM
-msgid  "Subject"
-msgstr "Tema"
-
-#: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_SIZE.ITEMLIST.ITEM
-msgid  "Size"
-msgstr "Tamaño"
 
 #: contnr/templwin.src#STR_SVT_NEWDOC_HELP.STRING.TEXT
 msgid  "Click here to create new documents."
@@ -235,38 +59,6 @@ msgstr "Contiene plantillas para la creación de documentos nuevos."
 msgid  "Contains a selection of sample letters, reports and other documents"
 msgstr "Contiene ejemplos de cartas, informes y otros documentos."
 
-#: control/calendar.src#STR_SVT_CALENDAR_DAY.STRING.TEXT
-msgid  "Day"
-msgstr "Día"
-
-#: control/calendar.src#STR_SVT_CALENDAR_WEEK.STRING.TEXT
-msgid  "Week"
-msgstr "Semana"
-
-#: control/calendar.src#STR_SVT_CALENDAR_TODAY.STRING.TEXT
-msgid  "Today"
-msgstr "Hoy"
-
-#: control/calendar.src#STR_SVT_CALENDAR_NONE.STRING.TEXT
-msgid  "None"
-msgstr "Ninguno"
-
-#: control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.STRING.TEXT
-msgid  "Automatic"
-msgstr "Automático"
-
-#: control/ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.STRING.TEXT
-msgid  "Alphanumeric"
-msgstr "Alfanumérico"
-
-#: control/ctrlbox.src#STR_SVT_COLLATE_NORMAL.STRING.TEXT
-msgid  "Normal"
-msgstr "Normal"
-
-#: control/ctrlbox.src#STR_SVT_COLLATE_CHARSET.STRING.TEXT
-msgid  "Character set"
-msgstr "Juego de caracteres"
-
 #: control/ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.STRING.TEXT
 msgid  "Dictionary"
 msgstr "Diccionario"
@@ -283,14 +75,6 @@ msgstr "Trazo"
 msgid  "Radical"
 msgstr "Radical"
 
-#: control/ctrlbox.src#STR_SVT_COLLATE_UNICODE.STRING.TEXT
-msgid  "Unicode"
-msgstr "Unicode"
-
-#: control/ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.STRING.TEXT
-msgid  "Zhuyin"
-msgstr "Zhuyin"
-
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONEBOOK.STRING.TEXT
 msgid  "Phone book"
 msgstr "Listín telefónico"
@@ -299,85 +83,9 @@ msgstr "Listín telefónico"
 msgid  "Phonetic (alphanumeric first)"
 msgstr "Fonético (alfanumérico primero)"
 
-#: control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.STRING.TEXT
-msgid  "Phonetic (alphanumeric last)"
-msgstr "Fonético (alfanumérico por último)"
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.STRING.TEXT
-msgid  "Phonetic (alphanumeric first, grouped by syllables)"
-msgstr "Fonético (alfanumérico primero, agrupado por sílabas)"
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FC.STRING.TEXT
-msgid  "Phonetic (alphanumeric first, grouped by consonants)"
-msgstr "Fonético (alfanumérico primero, agrupado por consonantes)"
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LS.STRING.TEXT
-msgid  "Phonetic (alphanumeric last, grouped by syllables)"
-msgstr "Fonético (alfanumérico por último, agrupado por sílabas)"
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LC.STRING.TEXT
-msgid  "Phonetic (alphanumeric last, grouped by consonants)"
-msgstr "Fonético (alfanumérico por último, agrupado por consonantes)"
-
-#: control/ctrltool.src#STR_SVT_STYLE_LIGHT.STRING.TEXT
-msgid  "Light"
-msgstr "Light"
-
-#: control/ctrltool.src#STR_SVT_STYLE_LIGHT_ITALIC.STRING.TEXT
-msgid  "Light Italic"
-msgstr "Cursiva light"
-
-#: control/ctrltool.src#STR_SVT_STYLE_NORMAL.STRING.TEXT
-msgid  "Regular"
-msgstr "Predeterminado"
-
-#: control/ctrltool.src#STR_SVT_STYLE_NORMAL_ITALIC.STRING.TEXT
-msgid  "Italic"
-msgstr "Cursiva"
-
-#: control/ctrltool.src#STR_SVT_STYLE_BOLD.STRING.TEXT
-msgid  "Bold"
-msgstr "Negrita"
-
-#: control/ctrltool.src#STR_SVT_STYLE_BOLD_ITALIC.STRING.TEXT
-msgid  "Bold Italic"
-msgstr "Negrita cursiva"
-
-#: control/ctrltool.src#STR_SVT_STYLE_BLACK.STRING.TEXT
-msgid  "Black"
-msgstr "Black"
-
-#: control/ctrltool.src#STR_SVT_STYLE_BLACK_ITALIC.STRING.TEXT
-msgid  "Black Italic"
-msgstr "Cursiva black"
-
-#: control/ctrltool.src#STR_SVT_FONTMAP_BOTH.STRING.TEXT
-msgid  "The same font will be used on both your printer and your screen."
-msgstr "Se usará la misma fuente en la impresora y en la pantalla."
-
-#: control/ctrltool.src#STR_SVT_FONTMAP_PRINTERONLY.STRING.TEXT
-msgid  "This is a printer font. The screen image may differ."
-msgstr "Fuente de impresora. La imagen en pantalla podría ser diferente."
-
-#: control/ctrltool.src#STR_SVT_FONTMAP_SCREENONLY.STRING.TEXT
-msgid  "This is a screen font. The printer image may differ."
-msgstr "Fuente de pantalla. La imagen en la impresora podría ser diferente."
-
-#: control/ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.STRING.TEXT
-msgid  "This font size has not been installed. The closest available size will be used."
-msgstr "Este tamaño de fuente no está instalado. Se usará el tamaño disponible más adecuado."
-
-#: control/ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.STRING.TEXT
-msgid  "This font style will be simulated or the closest matching style will be used."
-msgstr "Se imitará este estilo de fuente o se usará el más adecuado."
-
 #: control/ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.STRING.TEXT
 msgid  "This font has not been installed. The closest available font will be used."
 msgstr "Esta fuente no está instalada. Se usará la fuente existente más adecuada."
-
-#: control/filectrl.src#STR_FILECTRL_BUTTONTEXT.STRING.TEXT
-msgid  "Browse..."
-msgstr "Examinar..."
 
 #: control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVET0HOME.STRING.TEXT
 msgid  "Move To Home"
@@ -395,84 +103,16 @@ msgstr "Mover a la derecha"
 msgid  "Move To End"
 msgstr "Mover al final"
 
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.MODALDIALOG.TEXT
-msgid  "Templates: Address Book Assignment"
-msgstr "Plantillas: Asignación de libreta de direcciones"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FIXEDLINE.TEXT
-msgid  "Address Book Source"
-msgstr "Fuente de libreta de direcciones"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FIXEDTEXT.TEXT
-msgid  "Data source"
-msgstr "Fuente de datos"
-
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PUSHBUTTON.TEXT
 msgid  "~Address Data Source..."
 msgstr "~Direccion de Fuente de datos..."
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FIXEDTEXT.TEXT
-msgid  "Table"
-msgstr "Tabla"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FIXEDTEXT.TEXT
-msgid  "Field assignment"
-msgstr "Asignación de campo"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.STRING.TEXT
-msgid  "<none>"
-msgstr "<ninguno>"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.STRING.TEXT
-msgid  "Company"
-msgstr "Empresa"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.STRING.TEXT
-msgid  "Department"
-msgstr "Departamento"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.STRING.TEXT
-msgid  "First name"
-msgstr "Nombre"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.STRING.TEXT
-msgid  "Last name"
-msgstr "Nombre"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.STRING.TEXT
-msgid  "Street"
-msgstr "Calle"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.STRING.TEXT
-msgid  "Country"
-msgstr "País"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.STRING.TEXT
 msgid  "ZIP Code"
 msgstr "C.P."
 
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.STRING.TEXT
-msgid  "City"
-msgstr "Ciudad"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.STRING.TEXT
-msgid  "Title"
-msgstr "Título"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.STRING.TEXT
-msgid  "Position"
-msgstr "Posición"
-
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.STRING.TEXT
 msgid  "Addr. Form"
-msgstr "Tratamiento"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.STRING.TEXT
-msgid  "Initials"
-msgstr "Iniciales"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.STRING.TEXT
-msgid  "Complimentary close"
 msgstr "Tratamiento"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.STRING.TEXT
@@ -487,34 +127,6 @@ msgstr "Teléfono trabajo"
 msgid  "FAX"
 msgstr "FAX"
 
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.STRING.TEXT
-msgid  "E-mail"
-msgstr "E-mail"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.STRING.TEXT
-msgid  "URL"
-msgstr "URL"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.STRING.TEXT
-msgid  "Note"
-msgstr "Nota"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.STRING.TEXT
-msgid  "User 1"
-msgstr "Usuario 1"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.STRING.TEXT
-msgid  "User 2"
-msgstr "Usuario 2"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.STRING.TEXT
-msgid  "User 3"
-msgstr "Usuario 3"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.STRING.TEXT
-msgid  "User 4"
-msgstr "Usuario 4"
-
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.STRING.TEXT
 msgid  "ID"
 msgstr "ID"
@@ -527,297 +139,29 @@ msgstr "Provincia"
 msgid  "Tel: Office"
 msgstr "Teléfono trabajo"
 
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.STRING.TEXT
-msgid  "Pager"
-msgstr "Radioteléfono"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.STRING.TEXT
-msgid  "Mobile"
-msgstr "Móvil"
-
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.STRING.TEXT
 msgid  "Tel: Other"
 msgstr "Teléfono: otros"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.STRING.TEXT
-msgid  "Calendar"
-msgstr "Calendario"
-
-#: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.STRING.TEXT
-msgid  "Invite"
-msgstr "Invitar"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_SELECT.STRING.TEXT
-msgid  "Select Directory"
-msgstr "Seleccionar directorio"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.STRING.TEXT
-msgid  "Cannot change to directory"
-msgstr "No es posible cambiar en directorio"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_OPEN.STRING.TEXT
-msgid  "Open"
-msgstr "Abrir"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_FILE.STRING.TEXT
-msgid  "~File"
-msgstr "~Archivo"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_DIR.STRING.TEXT
-msgid  "~Directory"
-msgstr "~Directorio"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_TYPE.STRING.TEXT
-msgid  "File ~type"
-msgstr "Tipo de ar~chivo"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.STRING.TEXT
-msgid  "Can't open file"
-msgstr "No es posible abrir el archivo"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.STRING.TEXT
-msgid  "Can't open directory"
-msgstr "No es posible abrir el directorio"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.STRING.TEXT
-msgid  "This file already exists. \nOverwrite ?"
-msgstr "El archivo ya existe.\n¿Desea sobrescribirlo?"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_GOUP.STRING.TEXT
-msgid  "Up One Level"
-msgstr "Subir un nivel"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_SAVE.STRING.TEXT
-msgid  "Save"
-msgstr "Guardar"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_DRIVES.STRING.TEXT
-msgid  "D~rive"
-msgstr "~Unidades"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_HOME.STRING.TEXT
-msgid  "User Directory"
-msgstr "Directorio de usuario"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.STRING.TEXT
-msgid  "Create Directory"
-msgstr "Crear directorio"
-
-#: dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.STRING.TEXT
-msgid  "Do you want the directory %s to be created ?"
-msgstr "¿Desea crear el directorio %s?"
-
-#: dialogs/formats.src#STR_FORMAT_STRING.STRING.TEXT
-msgid  "Unformatted text"
-msgstr "Texto sin formato"
-
-#: dialogs/formats.src#STR_FORMAT_BITMAP.STRING.TEXT
-msgid  "Bitmap"
-msgstr "Bitmap"
-
-#: dialogs/formats.src#STR_FORMAT_GDIMETAFILE.STRING.TEXT
-msgid  "GDI metafile"
-msgstr "GDI metafile"
-
-#: dialogs/formats.src#STR_FORMAT_RTF.STRING.TEXT
-msgid  "Formatted text [RTF]"
-msgstr "Texto formateado [RTF]"
-
-#: dialogs/formats.src#STR_FORMAT_ID_DRAWING.STRING.TEXT
-msgid  "Drawing format"
-msgstr "Formato de dibujo"
-
-#: dialogs/formats.src#STR_FORMAT_ID_SVXB.STRING.TEXT
-msgid  "SVXB (StarView bitmap/animation)"
-msgstr "SVXB (StarView Bitmap/Animation)"
-
-#: dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.STRING.TEXT
-msgid  "Status Info from Svx Internal Link"
-msgstr "Información del estado de Svx Internal Link"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SOLK.STRING.TEXT
 msgid  "SOLK (%PRODUCTNAME Link)"
 msgstr "SOLK (%PRODUCTNAME Link)"
 
-#: dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.STRING.TEXT
-msgid  "Netscape Bookmark"
-msgstr "Marcador de Netscape"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARSERVER.STRING.TEXT
-msgid  "Star server format"
-msgstr "Formato Star Server"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.STRING.TEXT
-msgid  "Star object format"
-msgstr "Star, formato de objeto"
-
-#: dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.STRING.TEXT
-msgid  "Applet object"
-msgstr "Objeto Applet"
-
-#: dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.STRING.TEXT
-msgid  "Plug-in object"
-msgstr "Objeto Plug-in"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.STRING.TEXT
-msgid  "StarWriter 3.0 object"
-msgstr "Objeto StarWriter 3.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.STRING.TEXT
-msgid  "StarWriter 4.0 object"
-msgstr "Objeto StarWriter 4.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.STRING.TEXT
-msgid  "StarWriter 5.0 object"
-msgstr "Objeto StarWriter 5.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.STRING.TEXT
-msgid  "StarWriter/Web 4.0 object"
-msgstr "Objeto StarWriter/Web 4.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.STRING.TEXT
-msgid  "StarWriter/Web 5.0 object"
-msgstr "Objeto StarWriter/Web 5.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.STRING.TEXT
-msgid  "StarWriter/Master 4.0 object"
-msgstr "Objeto StarWriter/Global 4.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.STRING.TEXT
-msgid  "StarWriter/Master 5.0 object"
-msgstr "Objeto StarWriter/Global 5.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARDRAW.STRING.TEXT
-msgid  "StarDraw object"
-msgstr "Objeto StarDraw"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.STRING.TEXT
-msgid  "StarDraw 4.0 object"
-msgstr "Objeto StarDraw 4.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.STRING.TEXT
-msgid  "StarImpress 5.0 object"
-msgstr "Objeto StarImpress 5.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.STRING.TEXT
-msgid  "StarDraw 5.0 object"
-msgstr "Objeto StarDraw 5.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARCALC.STRING.TEXT
-msgid  "StarCalc object"
-msgstr "Objeto StarCalc"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.STRING.TEXT
-msgid  "StarCalc  4.0 object"
-msgstr "Objeto StarCalc 4.0"
-
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.STRING.TEXT
 msgid  "StarCalc 5.0 object"
 msgstr "Objeto StarCalc 5.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARCHART.STRING.TEXT
-msgid  "StarChart object"
-msgstr "Objeto StarChart"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.STRING.TEXT
-msgid  "StarChart 4.0 object"
-msgstr "Objeto StarChart 4.0"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.STRING.TEXT
 msgid  "StarChart 5.0 object"
 msgstr "Objeto StarChart 5.0"
 
-#: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.STRING.TEXT
-msgid  "StarImage object"
-msgstr "Objeto StarImage"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.STRING.TEXT
-msgid  "StarImage 4.0 object"
-msgstr "Objeto StarImage 4.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.STRING.TEXT
-msgid  "StarImage 5.0 object"
-msgstr "Objeto StarImage 5.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARMATH.STRING.TEXT
-msgid  "StarMath object"
-msgstr "Objeto StarMath"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.STRING.TEXT
-msgid  "StarMath 4.0 object"
-msgstr "Objeto StarMath 4.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.STRING.TEXT
-msgid  "StarMath 5.0 object"
-msgstr "Objeto StarMath 5.0"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.STRING.TEXT
-msgid  "StarObject Paint object"
-msgstr "Objeto StarObject Paint"
-
-#: dialogs/formats.src#STR_FORMAT_ID_HTML.STRING.TEXT
-msgid  "HTML (HyperText Markup Language)"
-msgstr "HTML (HyperText Markup Language)"
-
-#: dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.STRING.TEXT
-msgid  "HTML format"
-msgstr "Formato HTML"
-
-#: dialogs/formats.src#STR_FORMAT_ID_BIFF_5.STRING.TEXT
-msgid  "Biff5 (Microsoft Excel 5.0/95)"
-msgstr "Biff5 (Microsoft Excel 5.0/95)"
-
-#: dialogs/formats.src#STR_FORMAT_ID_BIFF_8.STRING.TEXT
-msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
-msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
-
-#: dialogs/formats.src#STR_FORMAT_ID_SYLK.STRING.TEXT
-msgid  "Sylk"
-msgstr "Sylk"
-
-#: dialogs/formats.src#STR_FORMAT_ID_LINK.STRING.TEXT
-msgid  "DDE link"
-msgstr "Vínculo DDE"
-
-#: dialogs/formats.src#STR_FORMAT_ID_DIF.STRING.TEXT
-msgid  "DIF"
-msgstr "DIF"
-
-#: dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.STRING.TEXT
-msgid  "Microsoft Word object"
-msgstr "Objeto Microsoft Word"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.STRING.TEXT
-msgid  "StarFrameSet object"
-msgstr "Objeto StarFrameSet"
-
 #: dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.STRING.TEXT
 msgid  "Office document object"
 msgstr "Documento de Office"
 
-#: dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.STRING.TEXT
-msgid  "Notes document info"
-msgstr "Información de documento Notes"
-
 #: dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.STRING.TEXT
 msgid  "Sfx document"
 msgstr "Documento Sfx"
-
-#: dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.STRING.TEXT
-msgid  "Graphic object"
-msgstr "Objeto gráfico"
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
-msgstr "Objeto de %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer "
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
-msgstr "Objeto de %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web "
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.STRING.TEXT
-msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
-msgstr "Objeto de %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master "
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
@@ -843,101 +187,13 @@ msgstr "Objeto de %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math"
 msgid  "Windows metafile"
 msgstr "Metaarchivo de Windows"
 
-#: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.STRING.TEXT
-msgid  "Data source object"
-msgstr "Objeto fuentes de datos"
-
-#: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.STRING.TEXT
-msgid  "Data source table"
-msgstr "Tabla de fuentes de datos"
-
-#: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.STRING.TEXT
-msgid  "SQL query"
-msgstr "Consulta SQL"
-
 #: dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
 msgstr "Diálogo de %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
-#: dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.STRING.TEXT
-msgid  "Link"
-msgstr "Hiperenlace"
-
-#: dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.STRING.TEXT
-msgid  "HTML format without comments"
-msgstr "Formato HTML sin comentarios"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_READY.STRING.TEXT
-msgid  "Ready"
-msgstr "Preparado"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAUSED.STRING.TEXT
-msgid  "Paused"
-msgstr "Detenido"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_PENDING.STRING.TEXT
-msgid  "Pending deletion"
-msgstr "Eliminación pendiente"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_BUSY.STRING.TEXT
-msgid  "Busy"
-msgstr "Ocupado"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_INITIALIZING.STRING.TEXT
-msgid  "Initializing"
-msgstr "Inicializar"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_WAITING.STRING.TEXT
-msgid  "Waiting"
-msgstr "En espera"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_WARMING_UP.STRING.TEXT
-msgid  "Warming up"
-msgstr "Arranque"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_PROCESSING.STRING.TEXT
-msgid  "Processing"
-msgstr "Procesar"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_PRINTING.STRING.TEXT
-msgid  "Printing"
-msgstr "Imprimir"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_OFFLINE.STRING.TEXT
-msgid  "Offline"
-msgstr "Desconectado"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_ERROR.STRING.TEXT
-msgid  "Error"
-msgstr "Error"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_SERVER_UNKNOWN.STRING.TEXT
-msgid  "Unknown Server"
-msgstr "Servidor desconocido"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_JAM.STRING.TEXT
-msgid  "Paper jam"
-msgstr "Bloqueo de papel"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_OUT.STRING.TEXT
-msgid  "Not enough paper"
-msgstr "Falta de papel"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_MANUAL_FEED.STRING.TEXT
-msgid  "Manual feed"
-msgstr "Alimentación manual"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_PROBLEM.STRING.TEXT
-msgid  "Paper problem"
-msgstr "Problema de papel"
-
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_IO_ACTIVE.STRING.TEXT
 msgid  "I/O active"
 msgstr "I/O activos"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_OUTPUT_BIN_FULL.STRING.TEXT
-msgid  "Output bin full"
-msgstr "La papelera de salida está llena"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_TONER_LOW.STRING.TEXT
 msgid  "Toner low"
@@ -947,65 +203,9 @@ msgstr "Tóner bajo"
 msgid  "No toner"
 msgstr "No hay tóner"
 
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAGE_PUNT.STRING.TEXT
-msgid  "Delete Page"
-msgstr "Eliminar página"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_USER_INTERVENTION.STRING.TEXT
-msgid  "User intervention necessary"
-msgstr "Intervención necesaria del usuario "
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_OUT_OF_MEMORY.STRING.TEXT
-msgid  "Insufficient memory"
-msgstr "Memoria insuficiente"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_DOOR_OPEN.STRING.TEXT
-msgid  "Cover open"
-msgstr "Abrir cubierta"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_POWER_SAVE.STRING.TEXT
-msgid  "Power save mode"
-msgstr "Modo de ahorro energético"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_DEFPRINTER.STRING.TEXT
-msgid  "Default printer"
-msgstr "Predeterminada"
-
-#: dialogs/prnsetup.src#STR_SVT_PRNDLG_JOBCOUNT.STRING.TEXT
-msgid  "%d documents"
-msgstr "%d documentos"
-
-#: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.MODALDIALOG.TEXT
-msgid  "Printer Setup"
-msgstr "Configurar impresora"
-
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FL_PRINTER.FIXEDLINE.TEXT
 msgid  "Printer"
 msgstr "Impresora"
-
-#: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_NAME.FIXEDTEXT.TEXT
-msgid  "~Name"
-msgstr "~Nombre"
-
-#: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_PROPERTIES.PUSHBUTTON.TEXT
-msgid  "Propert~ies..."
-msgstr "~Propiedades..."
-
-#: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_STATUS.FIXEDTEXT.TEXT
-msgid  "Status"
-msgstr "Estado"
-
-#: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_TYPE.FIXEDTEXT.TEXT
-msgid  "Type"
-msgstr "Tipo"
-
-#: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_LOCATION.FIXEDTEXT.TEXT
-msgid  "Location"
-msgstr "Ubicación"
-
-#: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_COMMENT.FIXEDTEXT.TEXT
-msgid  "Comment"
-msgstr "Comentario"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_OPTIONS.PUSHBUTTON.TEXT
 msgid  "~Options..."
@@ -1014,10 +214,6 @@ msgstr "~Opciones..."
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_GENERALERROR&S_MAX.STRING.TEXT
 msgid  "General OLE error."
 msgstr "Error general de OLE."
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANT_BINDTOSOURCE&S_MAX.STRING.TEXT
-msgid  "The connection to the object cannot be established."
-msgstr "No se puede crear la conexión al objeto"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOCACHE_UPDATED&S_MAX.STRING.TEXT
 msgid  "No cache files were updated."
@@ -1035,17 +231,9 @@ msgstr "No se puede determinar eficazmente el estado del objeto. "
 msgid  "Source of the OLE link has been converted."
 msgstr "Se ha convertido el origen del vínculo OLE."
 
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_OBJECT&S_MAX.STRING.TEXT
-msgid  "The object could not be found."
-msgstr "No se pudo encontrar el objeto"
-
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_EXCEEDED_DEADLINE&S_MAX.STRING.TEXT
 msgid  "The process could not be completed within the specified time period."
 msgstr "El proceso no se pudo terminar en el tiempo especificado"
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_MANUALLY&S_MAX.STRING.TEXT
-msgid  "OLE could not connect to a network device (server)."
-msgstr "No se ha podido conectar OLE a un dispositivo de red (servidor)."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED&S_MAX.STRING.TEXT
 msgid  "The object found does not support the interface required for the desired operation."
@@ -1063,18 +251,6 @@ msgstr "Memoria insuficiente."
 msgid  "The connection name could not be processed."
 msgstr "El nombre del enlace no se pudo editar"
 
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_REDUCED_TO_SELF&S_MAX.STRING.TEXT
-msgid  "The connection name could not be reduced further."
-msgstr "No se ha podido reducir más el nombre de la conexión."
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_INVERSE&S_MAX.STRING.TEXT
-msgid  "The connection name has no inverse."
-msgstr "El nombre del enlace no tiene ninguna forma inversa"
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_PREFIX&S_MAX.STRING.TEXT
-msgid  "No common prefix exists."
-msgstr "No existe ningún prefijo común."
-
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM&S_MAX.STRING.TEXT
 msgid  "The connection name is contained in the other one."
 msgstr "El nombre del enlace es parte de otro nombre"
@@ -1083,81 +259,13 @@ msgstr "El nombre del enlace es parte de otro nombre"
 msgid  "The connection names (the receiver and the other moniker) are identical."
 msgstr "Los nombres de conexión (el receptor y el otro apodo) son iguales."
 
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE&S_MAX.STRING.TEXT
-msgid  "The connection name cannot be connected. This is a relative name."
-msgstr "El nombre del enlace no se puede utilizar. Se trata de un nombre relativo"
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_IMPLEMENTED&S_MAX.STRING.TEXT
-msgid  "Operation not implemented."
-msgstr "No se ha implementado la operación."
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_STORAGE&S_MAX.STRING.TEXT
-msgid  "No storage."
-msgstr "Sin almacenamiento."
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_FALSE&S_MAX.STRING.TEXT
-msgid  "False."
-msgstr "Falso."
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NEED_GENERIC&S_MAX.STRING.TEXT
-msgid  "Monikers must be composed generically."
-msgstr "Los monikers se deben componer genéricamente."
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_PENDING&S_MAX.STRING.TEXT
-msgid  "Data not available at this time."
-msgstr "No hay datos disponibles en este momento."
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_INPLACEACTIVE_&_S_MAX.STRING.TEXT
-msgid  "Object could not be activated InPlace."
-msgstr "No se ha podido activar el objeto en su sitio."
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_LINDEX_&_S_MAX.STRING.TEXT
-msgid  "Invalid index."
-msgstr "Índice no válido."
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANNOT_DOVERB_NOW_&_S_MAX.STRING.TEXT
-msgid  "The action cannot be executed in the object's current state."
-msgstr "El objeto no puede ejecutar la acción en el estado actual"
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OLEOBJ_INVALIDHWND_&_S_MAX.STRING.TEXT
-msgid  "An invalid window was passed when activated."
-msgstr "Al activar se transfirió una ventana no válida"
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOVERBS_&_S_MAX.STRING.TEXT
-msgid  "The object does not support any actions."
-msgstr "El objeto no admite ninguna acción."
-
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_INVALIDVERB_&_S_MAX.STRING.TEXT
 msgid  "The action is not defined. The default action will be executed."
 msgstr "La acción no está definida. Se ejecutará la acción predeterminada"
 
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_&_S_MAX.STRING.TEXT
-msgid  "A link to the network could not be re-established."
-msgstr "No se pudo restablecer el enlace con la red"
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOTIMPL_&_S_MAX.STRING.TEXT
-msgid  "Object does not support this action."
-msgstr "El objeto no admite esta acción."
-
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CANTOPENFILE_&_S_MAX.STRING.TEXT
 msgid  "The specified file could not be opened."
 msgstr "No se pudo abrir el archivo especificado"
-
-#: dialogs/so3res.src#RID_SO_ERRCTX.ERRCTX_SO_DOVERB.STRING.TEXT
-msgid  "$(ERR) activating object"
-msgstr "$(ERR) al activar el objeto"
-
-#: dialogs/so3res.src#STR_INS_OBJECT.STRING.TEXT
-msgid  "Inserts a new %1-Object into your document."
-msgstr "Inserta un objeto %1 en su documento."
-
-#: dialogs/so3res.src#STR_INS_OBJECT_ICON.STRING.TEXT
-msgid  "Inserts a new %1-Object into your document as a symbol."
-msgstr "Inserta un objeto %1 como símbolo en su documento."
-
-#: dialogs/so3res.src#STR_INS_FILE.STRING.TEXT
-msgid  "Inserts the contents of the file into your document to enable later editing in the original application."
-msgstr "Inserta el contenido del archivo en su documento, de manera que lo pueda editar utilizando la aplicación original."
 
 #: dialogs/so3res.src#STR_INS_PLUGIN.STRING.TEXT
 msgid  "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
@@ -1167,25 +275,9 @@ msgstr "Inserta un objeto Plug-in en su documento con una referencia a los datos
 msgid  "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
 msgstr "Inserta en su documento un objeto Applet. Cuando el objeto es activado se inicia el Applet automáticamente."
 
-#: dialogs/so3res.src#STR_INS_FILE_ICON.STRING.TEXT
-msgid  "Inserts the contents of the file as an icon into your document."
-msgstr "Inserta el contenido del archivo como un icono en el documento."
-
-#: dialogs/so3res.src#STR_INS_FILE_LINK.STRING.TEXT
-msgid  "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
-msgstr "Inserta el contenido del archivo en su documento y crea un vínculo con el archivo fuente. Las modificaciones en el archivo fuente aparecen también en su documento."
-
-#: dialogs/so3res.src#STR_INS_FILE_ICON_LINK.STRING.TEXT
-msgid  "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
-msgstr "Inserta un símbolo, que representa el contenido, en su documento. Las modificaciones en el archivo fuente también aparecen en su documento."
-
-#: dialogs/so3res.src#STR_PASTE.STRING.TEXT
-msgid  "Pastes the contents of the clipboard as %1 in your document."
-msgstr "Inserta el contenido del portapapeles como %1 en su documento."
-
 #: dialogs/so3res.src#STR_CONVERT_TO.STRING.TEXT
 msgid  "Converts the selected %1object to the object type %2."
-msgstr "Modifica el objeto %1 seleccionado en el tipo de objeto %2."
+msgstr "Convierte el objeto %1 seleccionado en el tipo de objeto %2."
 
 #: dialogs/so3res.src#STR_ACTIVATE_AS.STRING.TEXT
 msgid  "All objects of type %1 are activated as %2, but not converted"
@@ -1194,10 +286,6 @@ msgstr "Cada %1 será activado como objeto %2, pero no será convertido."
 #: dialogs/so3res.src#STR_VERB_OPEN.STRING.TEXT
 msgid  "~Open"
 msgstr "~Abrir"
-
-#: dialogs/so3res.src#STR_VERB_PROPS.STRING.TEXT
-msgid  "~Properties"
-msgstr "~Propiedades"
 
 #: dialogs/so3res.src#STR_PLUGIN_CANT_SHOW.STRING.TEXT
 msgid  "Plug-in % cannot be displayed."
@@ -1219,41 +307,9 @@ msgstr "No se puede insertar el objeto del archivo % ."
 msgid  "Plug-in from document % could not be inserted."
 msgstr "No se puede insertar el Plug-in como documento %."
 
-#: dialogs/so3res.src#STR_QUERYUPDATELINKS.STRING.TEXT
-msgid  "Update all links?"
-msgstr "¿Desea actualizar todos los vínculos?"
-
-#: dialogs/so3res.src#STR_FURTHER_OBJECT.STRING.TEXT
-msgid  "Further objects"
-msgstr "Otros objetos"
-
-#: dialogs/so3res.src#STR_EDIT_APPLET.STRING.TEXT
-msgid  "Edit Applet"
-msgstr "Editar Applet"
-
 #: dialogs/so3res.src#MI_PLUGIN.MI_PLUGIN_DEACTIVATE.MENUITEM.TEXT
 msgid  "Deactivate"
 msgstr "~Desactivar"
-
-#: dialogs/so3res.src#STR_UNKNOWN_SOURCE.STRING.TEXT
-msgid  "Unknown source"
-msgstr "Fuente desconocida"
-
-#: dialogs/wizardmachine.src#STR_WIZDLG_FINISH.STRING.TEXT
-msgid  "~Finish"
-msgstr "~Finalizar"
-
-#: dialogs/wizardmachine.src#STR_WIZDLG_NEXT.STRING.TEXT
-msgid  "~Next >>"
-msgstr "~Siguiente >>"
-
-#: dialogs/wizardmachine.src#STR_WIZDLG_PREVIOUS.STRING.TEXT
-msgid  "<< Bac~k"
-msgstr "<< ~Regresar"
-
-#: dialogs/wizardmachine.src#STR_WIZDLG_ROADMAP_TITLE.STRING.TEXT
-msgid  "Steps"
-msgstr "Pasos"
 
 #: filter/exportdialog.src#DLG_EXPORT_TITLE.STRING.TEXT
 msgid  " Options"
@@ -1491,73 +547,13 @@ msgstr "Activar el JRE"
 msgid  "JRE is Defective"
 msgstr "El JRE es defectuoso"
 
-#: misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.STRING.TEXT
-msgid  "Source code"
-msgstr "Código fuente"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.STRING.TEXT
-msgid  "Bookmark file"
-msgstr "Archivo de marcadores"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.STRING.TEXT
-msgid  "Graphics"
-msgstr "Imagen"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.STRING.TEXT
-msgid  "Configuration file"
-msgstr "Archivo de configuración"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.STRING.TEXT
-msgid  "Application"
-msgstr "Aplicación"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.STRING.TEXT
-msgid  "Database table"
-msgstr "Tabla de base de datos"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.STRING.TEXT
-msgid  "System file"
-msgstr "Archivo del sistema"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.STRING.TEXT
-msgid  "MS Word document"
-msgstr "Documento de MS Word"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.STRING.TEXT
-msgid  "Help file"
-msgstr "Archivo de ayuda"
-
 #: misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.STRING.TEXT
 msgid  "HTML document"
 msgstr "Documento HTML"
 
-#: misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.STRING.TEXT
-msgid  "Archive file"
-msgstr "Archivo de archivo"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.STRING.TEXT
-msgid  "Log file"
-msgstr "Archivo de protocolo"
-
 #: misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.STRING.TEXT
 msgid  "%STAROFFICE Database"
 msgstr "Base de datos de %STAROFFICE"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.STRING.TEXT
-msgid  "StarWriter 4.0 / 5.0 Master Document"
-msgstr "Documento maestro de StarWriter 4.0 / 5.0"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.STRING.TEXT
-msgid  "%STAROFFICE Image"
-msgstr "Imagen de %STAROFFICE"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.STRING.TEXT
-msgid  "Text file"
-msgstr "Archivo de texto"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_LINK.STRING.TEXT
-msgid  "Link"
-msgstr "Vínculo"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.STRING.TEXT
 msgid  "%STAROFFICE 3.0 - 5.0 Template"
@@ -1567,125 +563,49 @@ msgstr "Plantilla de %STAROFFICE 3.0 - 5.0"
 msgid  "MS Excel document"
 msgstr "Documento de MS Excel"
 
-#: misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.STRING.TEXT
-msgid  "MS Excel template"
-msgstr "MS Excel - Plantilla"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.STRING.TEXT
-msgid  "Batch file"
-msgstr "Archivo de lotes"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FILE.STRING.TEXT
-msgid  "File"
-msgstr "Archivo"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FOLDER.STRING.TEXT
-msgid  "Folder"
-msgstr "Carpeta"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.STRING.TEXT
-msgid  "Text Document"
-msgstr "Documento de texto"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.STRING.TEXT
-msgid  "Spreadsheet"
-msgstr "Hoja de cálculo"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.STRING.TEXT
-msgid  "Presentation"
-msgstr "Presentación"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.STRING.TEXT
-msgid  "Drawing"
-msgstr "Dibujo"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.STRING.TEXT
-msgid  "Master document"
-msgstr "Documento maestro"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.STRING.TEXT
-msgid  "Formula"
-msgstr "Fórmula"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.STRING.TEXT
-msgid  "Database"
-msgstr "Base de datos"
-
 #: misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr "Plantilla de hoja de cálculo de %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION plantilla de hoja de cálculo"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr "Plantilla de dibujo de %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION plantilla de dibujo"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr "Plantilla de presentación de %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION plantilla de presentación"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr "Plantilla de documento de texto de %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.STRING.TEXT
-msgid  "Local drive"
-msgstr "Unidad local"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.STRING.TEXT
-msgid  "Disk drive"
-msgstr "Unidad de disco"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.STRING.TEXT
-msgid  "CD-ROM drive"
-msgstr "Unidad de CD ROM "
-
-#: misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.STRING.TEXT
-msgid  "Network connection"
-msgstr "Conexión de red"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.STRING.TEXT
-msgid  "MS PowerPoint Document"
-msgstr "Documento MS PowerPoint "
-
-#: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.STRING.TEXT
-msgid  "MS PowerPoint Template"
-msgstr "Plantilla MS PowerPoint "
-
-#: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.STRING.TEXT
-msgid  "MS PowerPoint Show"
-msgstr "MS PowerPoint Show"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION plantilla de documento de texto"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Fórmula"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Fórmula"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Diagrama"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION  Dibujo"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dibujo"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION  Hoja de cálculo"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION hoja de cálculo"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentación"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentación"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Documento de texto"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION documento de texto"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION  Documento maestro"
-
-#: misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.STRING.TEXT
-msgid  "MathML Document"
-msgstr "Documento MathML"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION documento maestro"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.STRING.TEXT
 msgid  "OpenDocument Database"
@@ -1735,137 +655,9 @@ msgstr "Plantilla de texto en formato OpenDocument"
 msgid  "%PRODUCTNAME Extension"
 msgstr "Extensión de %PRODUCTNAME"
 
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PAIREDLIST.ITEM
-msgid  "[None]"
-msgstr "[Ninguno]"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PAIREDLIST.ITEM
-msgid  "Unknown"
-msgstr "Desconocido"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PAIREDLIST.ITEM
-msgid  "Default"
-msgstr "Predeterminado"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PAIREDLIST.ITEM
-msgid  "Afrikaans (South Africa)"
-msgstr "Africáans (Suráfrica)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.PAIREDLIST.ITEM
-msgid  "Albanian"
-msgstr "Albanés"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PAIREDLIST.ITEM
-msgid  "Arabic"
-msgstr "Árabe"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PAIREDLIST.ITEM
-msgid  "Arabic (Algeria)"
-msgstr "Árabe (Argelia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.PAIREDLIST.ITEM
-msgid  "Arabic (Bahrain)"
-msgstr "Árabe (Bahrain)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.PAIREDLIST.ITEM
-msgid  "Arabic (Chad)"
-msgstr "Árabe (Iraq)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.PAIREDLIST.ITEM
-msgid  "Arabic (Comoros)"
-msgstr "Árabe (Comoros)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.PAIREDLIST.ITEM
-msgid  "Arabic (Djibouti)"
-msgstr "Árabe (Djibouti)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.PAIREDLIST.ITEM
-msgid  "Arabic (Egypt)"
-msgstr "Árabe (Egipto)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.PAIREDLIST.ITEM
-msgid  "Arabic (Eritrea)"
-msgstr "Árabe (Eritrea)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.PAIREDLIST.ITEM
-msgid  "Arabic (Iraq)"
-msgstr "Árabe (Iraq)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.PAIREDLIST.ITEM
-msgid  "Arabic (Israel)"
-msgstr "Árabe (Israel)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.PAIREDLIST.ITEM
-msgid  "Arabic (Jordan)"
-msgstr "Árabe (Jordania)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.PAIREDLIST.ITEM
-msgid  "Arabic (Kuwait)"
-msgstr "Árabe (Kuwait)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.PAIREDLIST.ITEM
-msgid  "Arabic (Lebanon)"
-msgstr "Árabe (Líbano)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.PAIREDLIST.ITEM
-msgid  "Arabic (Libya)"
-msgstr "Árabe (Libia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.PAIREDLIST.ITEM
-msgid  "Arabic (Mauritania)"
-msgstr "Árabe (Mauritania)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.PAIREDLIST.ITEM
-msgid  "Arabic (Morocco)"
-msgstr "Árabe (Marruecos)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.PAIREDLIST.ITEM
-msgid  "Arabic (Oman)"
-msgstr "Árabe (Omán)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.PAIREDLIST.ITEM
-msgid  "Arabic (Palestine)"
-msgstr "Árabe (Palestina)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.PAIREDLIST.ITEM
-msgid  "Arabic (Qatar)"
-msgstr "Árabe (Qatar)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.PAIREDLIST.ITEM
-msgid  "Arabic (Saudi Arabia)"
-msgstr "Árabe (Arabia Saudí)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.PAIREDLIST.ITEM
-msgid  "Arabic (Somalia)"
-msgstr "Árabe (Somalia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.PAIREDLIST.ITEM
-msgid  "Arabic (Sudan)"
-msgstr "Árabe (Sudán)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.PAIREDLIST.ITEM
-msgid  "Arabic (Syria)"
-msgstr "Árabe (Siria)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.PAIREDLIST.ITEM
-msgid  "Arabic (Tunisia)"
-msgstr "Árabe (Túnez)"
-
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.PAIREDLIST.ITEM
 msgid  "Arabic (UAE)"
 msgstr "Árabe (Emiratos Árabes Unidos)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.PAIREDLIST.ITEM
-msgid  "Arabic (Yemen)"
-msgstr "Árabe (Yemen)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PAIREDLIST.ITEM
-msgid  "Armenian"
-msgstr "Armenio"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PAIREDLIST.ITEM
-msgid  "Assami"
-msgstr "Assami"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PAIREDLIST.ITEM
 msgid  "Azerbaijani Latin"
@@ -1875,66 +667,6 @@ msgstr "Latín Azerbaiyano"
 msgid  "Azerbaijani Cyrillic"
 msgstr "Cirílico Azerbaiyano"
 
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.PAIREDLIST.ITEM
-msgid  "Basque"
-msgstr "Vasco"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.PAIREDLIST.ITEM
-msgid  "Bengali (India)"
-msgstr "Bengalí (India)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PAIREDLIST.ITEM
-msgid  "Bulgarian"
-msgstr "Búlgaro"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PAIREDLIST.ITEM
-msgid  "Belarusian"
-msgstr "Bielorruso"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.PAIREDLIST.ITEM
-msgid  "Catalan"
-msgstr "Catalán"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PAIREDLIST.ITEM
-msgid  "Chinese (traditional)"
-msgstr "Chino (tradicional)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PAIREDLIST.ITEM
-msgid  "Chinese (simplified)"
-msgstr "Chino (simplificado)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.PAIREDLIST.ITEM
-msgid  "Chinese (Hong Kong)"
-msgstr "Chino (Hong Kong)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PAIREDLIST.ITEM
-msgid  "Chinese (Singapore)"
-msgstr "Chino (Singapur)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PAIREDLIST.ITEM
-msgid  "Chinese (Macau)"
-msgstr "Chino (Macao)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PAIREDLIST.ITEM
-msgid  "Croatian"
-msgstr "Croata"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PAIREDLIST.ITEM
-msgid  "Czech"
-msgstr "Checo"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PAIREDLIST.ITEM
-msgid  "Danish"
-msgstr "Danés"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.PAIREDLIST.ITEM
-msgid  "Dutch (Netherlands)"
-msgstr "Holandés (Países Bajos)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PAIREDLIST.ITEM
-msgid  "Dutch (Belgium)"
-msgstr "Holandés (Bélgica)"
-
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PAIREDLIST.ITEM
 msgid  "English (USA)"
 msgstr "Inglés (EE.UU.)"
@@ -1943,217 +675,25 @@ msgstr "Inglés (EE.UU.)"
 msgid  "English (UK)"
 msgstr "Inglés (Reino Unido)"
 
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PAIREDLIST.ITEM
-msgid  "English (Australia)"
-msgstr "Inglés (Australia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PAIREDLIST.ITEM
-msgid  "English (Canada)"
-msgstr "Inglés (Canadá)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PAIREDLIST.ITEM
-msgid  "English (New Zealand)"
-msgstr "Inglés (Nueva Zelanda)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PAIREDLIST.ITEM
-msgid  "English (Eire)"
-msgstr "Inglés (Irlanda)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PAIREDLIST.ITEM
-msgid  "English (South Africa)"
-msgstr "Inglés (Sudáfrica)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PAIREDLIST.ITEM
-msgid  "English (Jamaica)"
-msgstr "Inglés (Jamaica)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PAIREDLIST.ITEM
-msgid  "English (Caribbean)"
-msgstr "Inglés (Caribe)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PAIREDLIST.ITEM
-msgid  "English (Belize)"
-msgstr "Inglés (Belice)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PAIREDLIST.ITEM
-msgid  "English (Trinidad)"
-msgstr "Inglés (Trinidad)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PAIREDLIST.ITEM
-msgid  "English (Zimbabwe)"
-msgstr "Inglés (Zimbabue)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PAIREDLIST.ITEM
-msgid  "English (Philippines)"
-msgstr "Inglés (Filipinas)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PAIREDLIST.ITEM
-msgid  "English (India)"
-msgstr "Inglés (India)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PAIREDLIST.ITEM
-msgid  "Estonian"
-msgstr "Estonio"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PAIREDLIST.ITEM
-msgid  "Finnish"
-msgstr "Finlandés"
-
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PAIREDLIST.ITEM
 msgid  "Faroese"
 msgstr "Faroés"
 
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PAIREDLIST.ITEM
-msgid  "French (France)"
-msgstr "Francés (Francia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PAIREDLIST.ITEM
-msgid  "French (Belgium)"
-msgstr "Francés (Bélgica)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PAIREDLIST.ITEM
-msgid  "French (Canada)"
-msgstr "Francés (Canadá)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PAIREDLIST.ITEM
-msgid  "French (Switzerland)"
-msgstr "Francés (Suiza)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PAIREDLIST.ITEM
-msgid  "French (Luxembourg)"
-msgstr "Francés (Luxemburgo)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PAIREDLIST.ITEM
-msgid  "French (Monaco)"
-msgstr "Francés (Mónaco)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.PAIREDLIST.ITEM
-msgid  "Gascon"
-msgstr "Gascón"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PAIREDLIST.ITEM
-msgid  "German (Germany)"
-msgstr "Alemán (Alemania)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PAIREDLIST.ITEM
-msgid  "German (Switzerland)"
-msgstr "Alemán (Suiza)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PAIREDLIST.ITEM
-msgid  "German (Austria)"
-msgstr "Alemán (Austria)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PAIREDLIST.ITEM
-msgid  "German (Luxembourg)"
-msgstr "Alemán (Luxemburgo)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PAIREDLIST.ITEM
-msgid  "German (Liechtenstein)"
-msgstr "Alemán (Liechtenstein)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PAIREDLIST.ITEM
-msgid  "Greek"
-msgstr "Griego"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PAIREDLIST.ITEM
-msgid  "Gujarati"
-msgstr "Gujaratí"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PAIREDLIST.ITEM
-msgid  "Hebrew"
-msgstr "Hebreo"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PAIREDLIST.ITEM
-msgid  "Hindi"
-msgstr "Hindi"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PAIREDLIST.ITEM
-msgid  "Hungarian"
-msgstr "Húngaro"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PAIREDLIST.ITEM
-msgid  "Icelandic"
-msgstr "Islandés"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.PAIREDLIST.ITEM
-msgid  "Indonesian"
-msgstr "Indonesio"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PAIREDLIST.ITEM
-msgid  "Italian (Italy)"
-msgstr "Italiano (Italia)"
+#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.PAIREDLIST.ITEM
+msgid  "Persian"
+msgstr "Persa"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PAIREDLIST.ITEM
 msgid  "Italian (Switzerland)"
 msgstr "Italiano (Suiza)"
 
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PAIREDLIST.ITEM
-msgid  "Japanese"
-msgstr "Japonés"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PAIREDLIST.ITEM
-msgid  "Kannada"
-msgstr "Kannada"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PAIREDLIST.ITEM
-msgid  "Kashmiri (Kashmir)"
-msgstr "Cachemirí (Cachemir)"
-
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.PAIREDLIST.ITEM
 msgid  "Kashmiri (India)"
 msgstr "Cachemirí (India)"
 
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.PAIREDLIST.ITEM
-msgid  "Kazak"
-msgstr "Kazajio"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.PAIREDLIST.ITEM
-msgid  "Konkani"
-msgstr "Konkani"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.PAIREDLIST.ITEM
-msgid  "Korean (RoK)"
-msgstr "Coreano (República de Corea)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PAIREDLIST.ITEM
-msgid  "Latvian"
-msgstr "Letón"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PAIREDLIST.ITEM
-msgid  "Lithuanian"
-msgstr "Lituano"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PAIREDLIST.ITEM
-msgid  "Macedonian"
-msgstr "Macedonio"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.PAIREDLIST.ITEM
-msgid  "Malay (Malaysia)"
-msgstr "Malayo (Malasia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.PAIREDLIST.ITEM
-msgid  "Malay (Brunei Darussalam)"
-msgstr "Malayo (Brunei Darusalam)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PAIREDLIST.ITEM
-msgid  "Malayalam"
-msgstr "Malayalam"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.PAIREDLIST.ITEM
-msgid  "Manipuri"
-msgstr "Manipuri"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.PAIREDLIST.ITEM
-msgid  "Marathi"
-msgstr "Marathi"
-
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.PAIREDLIST.ITEM
 msgid  "Nepali (Nepal)"
 msgstr "Nepalí (Nepal)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.PAIREDLIST.ITEM
-msgid  "Nepali (India)"
-msgstr "Nepalí (India)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.PAIREDLIST.ITEM
 msgid  "Norwegian, Bokmål"
@@ -2163,201 +703,13 @@ msgstr "Noruego, Bokmal"
 msgid  "Norwegian, Nynorsk"
 msgstr "Noruego, Nynorsk"
 
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PAIREDLIST.ITEM
-msgid  "Oriya"
-msgstr "Oriya"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PAIREDLIST.ITEM
-msgid  "Polish"
-msgstr "Polaco"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.PAIREDLIST.ITEM
-msgid  "Portuguese (Portugal)"
-msgstr "Portugués (Portugal)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.PAIREDLIST.ITEM
-msgid  "Portuguese (Brazil)"
-msgstr "Portugués (Brasil)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.PAIREDLIST.ITEM
-msgid  "Punjabi"
-msgstr "Punjabi"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.PAIREDLIST.ITEM
-msgid  "Rhaeto-Romance"
-msgstr "Retorrománico"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.PAIREDLIST.ITEM
-msgid  "Romanian"
-msgstr "Rumano"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.PAIREDLIST.ITEM
-msgid  "Russian"
-msgstr "Ruso"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.PAIREDLIST.ITEM
-msgid  "Sanskrit"
-msgstr "Sánscrito"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.PAIREDLIST.ITEM
-msgid  "Serbian Cyrillic (Serbia and Montenegro)"
-msgstr "Serbio (Cirílico)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.PAIREDLIST.ITEM
-msgid  "Serbian Latin (Serbia and Montenegro)"
-msgstr "Serbio (Latín)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.PAIREDLIST.ITEM
-msgid  "Serbian Cyrillic (Serbia)"
-msgstr "Serbian Cyrillic (Serbia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.PAIREDLIST.ITEM
-msgid  "Serbian Latin (Serbia)"
-msgstr "Serbian Latin (Serbia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.PAIREDLIST.ITEM
-msgid  "Serbian Cyrillic (Montenegro)"
-msgstr "Serbian Cyrillic (Montenegro)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.PAIREDLIST.ITEM
-msgid  "Serbian Latin (Montenegro)"
-msgstr "Serbian Latin (Montenegro)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.PAIREDLIST.ITEM
-msgid  "Sindhi"
-msgstr "Sindhi"
-
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVAK.PAIREDLIST.ITEM
 msgid  "Slovak"
 msgstr "Eslovaco"
 
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.PAIREDLIST.ITEM
-msgid  "Slovenian"
-msgstr "Esloveno"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.PAIREDLIST.ITEM
-msgid  "Spanish (Spain)"
-msgstr "Español (España)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.PAIREDLIST.ITEM
-msgid  "Spanish (Mexico)"
-msgstr "Español (México)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.PAIREDLIST.ITEM
-msgid  "Spanish (Guatemala)"
-msgstr "Español (Guatemala)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.PAIREDLIST.ITEM
-msgid  "Spanish (Costa Rica)"
-msgstr "Español (Costa Rica)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.PAIREDLIST.ITEM
-msgid  "Spanish (Panama)"
-msgstr "Español (Panamá)"
-
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.PAIREDLIST.ITEM
 msgid  "Spanish (Dom. Rep.)"
 msgstr "Español (Rep. Dominicana)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.PAIREDLIST.ITEM
-msgid  "Spanish (Venezuela)"
-msgstr "Español (Venezuela)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.PAIREDLIST.ITEM
-msgid  "Spanish (Colombia)"
-msgstr "Español (Colombia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.PAIREDLIST.ITEM
-msgid  "Spanish (Peru)"
-msgstr "Español (Perú)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.PAIREDLIST.ITEM
-msgid  "Spanish (Argentina)"
-msgstr "Español (Argentina)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.PAIREDLIST.ITEM
-msgid  "Spanish (Ecuador)"
-msgstr "Español (Ecuador)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.PAIREDLIST.ITEM
-msgid  "Spanish (Chile)"
-msgstr "Español (Chile)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.PAIREDLIST.ITEM
-msgid  "Spanish (Uruguay)"
-msgstr "Español (Uruguay)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.PAIREDLIST.ITEM
-msgid  "Spanish (Paraguay)"
-msgstr "Español (Paraguay)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.PAIREDLIST.ITEM
-msgid  "Spanish (Bolivia)"
-msgstr "Español (Bolivia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.PAIREDLIST.ITEM
-msgid  "Spanish (El Salvador)"
-msgstr "Español (El Salvador)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.PAIREDLIST.ITEM
-msgid  "Spanish (Honduras)"
-msgstr "Español (Honduras)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.PAIREDLIST.ITEM
-msgid  "Spanish (Nicaragua)"
-msgstr "Español (Nicaragua)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.PAIREDLIST.ITEM
-msgid  "Spanish (Puerto Rico)"
-msgstr "Español (Puerto Rico)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.PAIREDLIST.ITEM
-msgid  "Swahili (Kenya)"
-msgstr "Suajili (Kenia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.PAIREDLIST.ITEM
-msgid  "Swedish (Sweden)"
-msgstr "Sueco (Suecia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.PAIREDLIST.ITEM
-msgid  "Swedish (Finland)"
-msgstr "Sueco (Finlandia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.PAIREDLIST.ITEM
-msgid  "Tajik"
-msgstr "Tayic"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PAIREDLIST.ITEM
-msgid  "Tamil"
-msgstr "Tamil"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.PAIREDLIST.ITEM
-msgid  "Tatar"
-msgstr "Tatar"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PAIREDLIST.ITEM
-msgid  "Telugu"
-msgstr "Telugu"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PAIREDLIST.ITEM
-msgid  "Thai"
-msgstr "Tailandés"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PAIREDLIST.ITEM
-msgid  "Turkish"
-msgstr "Turco"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.PAIREDLIST.ITEM
-msgid  "Urdu (Pakistan)"
-msgstr "Urdu (Pakistán)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.PAIREDLIST.ITEM
-msgid  "Urdu (India)"
-msgstr "Urdu (India)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.PAIREDLIST.ITEM
-msgid  "Ukrainian"
-msgstr "Ucraniano"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.PAIREDLIST.ITEM
 msgid  "Uzbek Latin"
@@ -2367,453 +719,25 @@ msgstr "Uzbeco, Latín"
 msgid  "Welsh"
 msgstr "Galés"
 
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.PAIREDLIST.ITEM
-msgid  "User 1"
-msgstr "Usuario 1"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.PAIREDLIST.ITEM
-msgid  "User 2"
-msgstr "Usuario 2"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.PAIREDLIST.ITEM
-msgid  "User 3"
-msgstr "Usuario 3"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.PAIREDLIST.ITEM
-msgid  "User 4"
-msgstr "Usuario 4"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.PAIREDLIST.ITEM
-msgid  "User 5"
-msgstr "Usuario 5"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.PAIREDLIST.ITEM
-msgid  "User 6"
-msgstr "Usuario 6"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.PAIREDLIST.ITEM
-msgid  "User 7"
-msgstr "Usuario 7"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.PAIREDLIST.ITEM
-msgid  "User 8"
-msgstr "Usuario 8"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.PAIREDLIST.ITEM
-msgid  "User 9"
-msgstr "Usuario 9"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.PAIREDLIST.ITEM
-msgid  "Latin"
-msgstr "Latín"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.PAIREDLIST.ITEM
-msgid  "Esperanto"
-msgstr "Esperanto"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.PAIREDLIST.ITEM
-msgid  "Kinyarwanda (Rwanda)"
-msgstr "Kinyarwanda (Ruanda)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.PAIREDLIST.ITEM
-msgid  "Maori (New Zealand)"
-msgstr "Maorí (Nueva Zelanda)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.PAIREDLIST.ITEM
-msgid  "Galician"
-msgstr "Gallego"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.PAIREDLIST.ITEM
-msgid  "Dhivehi"
-msgstr "Dhivehi"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.PAIREDLIST.ITEM
-msgid  "Northern Sotho"
-msgstr "Sotho del norte"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.PAIREDLIST.ITEM
-msgid  "Gaelic (Scotland)"
-msgstr "Gaélico (Escocia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PAIREDLIST.ITEM
-msgid  "Mongolian"
-msgstr "Mongol"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.PAIREDLIST.ITEM
-msgid  "Interlingua"
-msgstr "Interlingua"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.PAIREDLIST.ITEM
-msgid  "Bosnian"
-msgstr "Bosnio"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.PAIREDLIST.ITEM
-msgid  "Bengali (Bangladesh)"
-msgstr "Bengalí (Bangladesh)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.PAIREDLIST.ITEM
-msgid  "Occitan"
-msgstr "Occitano"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PAIREDLIST.ITEM
-msgid  "Khmer"
-msgstr "Jemer"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.PAIREDLIST.ITEM
-msgid  "Kurdish (Turkey)"
-msgstr "Kurdo (Turquía)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.PAIREDLIST.ITEM
-msgid  "Kurdish (Syria)"
-msgstr "Kurdo (Siria)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.PAIREDLIST.ITEM
-msgid  "Kurdish (Iraq)"
-msgstr "Kurdo (Irak)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.PAIREDLIST.ITEM
-msgid  "Kurdish (Iran)"
-msgstr "Kurdo (Irán)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.PAIREDLIST.ITEM
-msgid  "Sardinian"
-msgstr "Sardo"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.PAIREDLIST.ITEM
-msgid  "Dzongkha"
-msgstr "Dzongja"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.PAIREDLIST.ITEM
-msgid  "Swahili (Tanzania)"
-msgstr "Suajili (Tanzania)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PAIREDLIST.ITEM
-msgid  "Lao"
-msgstr "Laos"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.PAIREDLIST.ITEM
-msgid  "Irish"
-msgstr "Irlandés"
-
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.PAIREDLIST.ITEM
 msgid  "Tibetan (PR China)"
 msgstr "Tibetano (RP China)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PAIREDLIST.ITEM
-msgid  "Georgian"
-msgstr "Georgiano"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.PAIREDLIST.ITEM
-msgid  "Frisian"
-msgstr "Frisón"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.PAIREDLIST.ITEM
-msgid  "Tswana (South Africa)"
-msgstr "Tswana (Suráfrica)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.PAIREDLIST.ITEM
-msgid  "Zulu"
-msgstr "Zulú"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PAIREDLIST.ITEM
-msgid  "Vietnamese"
-msgstr "Vietnamita"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.PAIREDLIST.ITEM
-msgid  "Breton"
-msgstr "Bretón"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.PAIREDLIST.ITEM
-msgid  "Kalaallisut"
-msgstr "Groenlandés"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.PAIREDLIST.ITEM
 msgid  "Ndebele, South"
 msgstr "Ndebele, Sur"
 
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.PAIREDLIST.ITEM
-msgid  "Southern Sotho"
-msgstr "Sotho del sur"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.PAIREDLIST.ITEM
-msgid  "Swazi"
-msgstr "Swazilandés"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.PAIREDLIST.ITEM
-msgid  "Tsonga"
-msgstr "Tsonga"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.PAIREDLIST.ITEM
-msgid  "Venda"
-msgstr "Venda"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.PAIREDLIST.ITEM
-msgid  "Tswana (Botswana)"
-msgstr "Tswana (Botswana)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.PAIREDLIST.ITEM
-msgid  "Xhosa"
-msgstr "Xhosa"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PAIREDLIST.ITEM
-msgid  "Sinhala"
-msgstr "Sinhala"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.PAIREDLIST.ITEM
-msgid  "Moore"
-msgstr "Mooré"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.PAIREDLIST.ITEM
-msgid  "Bambara"
-msgstr "Bambara"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.PAIREDLIST.ITEM
-msgid  "Akan"
-msgstr "Akan"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.PAIREDLIST.ITEM
-msgid  "Luxembourgish"
-msgstr "Luxemburgués"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.PAIREDLIST.ITEM
-msgid  "Friulian"
-msgstr "Friulano"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.PAIREDLIST.ITEM
-msgid  "Fijian"
-msgstr "Fidji"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.PAIREDLIST.ITEM
-msgid  "Afrikaans (Namibia)"
-msgstr "Africáans (Namibia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.PAIREDLIST.ITEM
-msgid  "English (Namibia)"
-msgstr "Inglés (Namibia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.PAIREDLIST.ITEM
-msgid  "Walloon"
-msgstr "Valona"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.PAIREDLIST.ITEM
-msgid  "Coptic"
-msgstr "Copto"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.PAIREDLIST.ITEM
-msgid  "Tigrigna (Eritrea)"
-msgstr "Tigrinya (Eritrea)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.PAIREDLIST.ITEM
-msgid  "Tigrigna (Ethiopia)"
-msgstr "Tigrinya (Etiopía)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.PAIREDLIST.ITEM
-msgid  "Amharic"
-msgstr "Amárico"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.PAIREDLIST.ITEM
-msgid  "Kirghiz"
-msgstr "Kirghiz"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.PAIREDLIST.ITEM
-msgid  "German (Belgium)"
-msgstr "Alemán (Bélgica)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.PAIREDLIST.ITEM
-msgid  "Chuvash"
-msgstr "Chuvash"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.PAIREDLIST.ITEM
-msgid  "Burmese"
-msgstr "Burmese"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.PAIREDLIST.ITEM
-msgid  "Hausa (Nigeria)"
-msgstr "Hausa (Nigeria)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.PAIREDLIST.ITEM
-msgid  "Hausa (Ghana)"
-msgstr "Hausa (Ghana)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.PAIREDLIST.ITEM
-msgid  "Éwé"
-msgstr "Éwé"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.PAIREDLIST.ITEM
-msgid  "English (Ghana)"
-msgstr "Ingles (Ghana)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.PAIREDLIST.ITEM
-msgid  "Sango"
-msgstr "Sango"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.PAIREDLIST.ITEM
-msgid  "Tagalog"
-msgstr "Tagalog"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.PAIREDLIST.ITEM
-msgid  "Ganda"
-msgstr "Ganda"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.PAIREDLIST.ITEM
-msgid  "Lingala"
-msgstr "Lingala"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.PAIREDLIST.ITEM
-msgid  "Low German"
-msgstr "Alemán Bajo"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.PAIREDLIST.ITEM
-msgid  "Hiligaynon"
-msgstr "Hiligaynon"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.PAIREDLIST.ITEM
-msgid  "Nyanja"
-msgstr "Nianja"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.PAIREDLIST.ITEM
-msgid  "Kashubian"
-msgstr "Kashubian"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.PAIREDLIST.ITEM
-msgid  "Spanish (Cuba)"
-msgstr "Español (Cuba)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.PAIREDLIST.ITEM
-msgid  "Tetun (Indonesia)"
-msgstr "Tetun (Indonesia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.PAIREDLIST.ITEM
-msgid  "Quechua (Bolivia, North)"
-msgstr "Quechua (Norte de Bolivia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.PAIREDLIST.ITEM
-msgid  "Quechua (Bolivia, South)"
-msgstr "Quechua (Sur de Bolivia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.PAIREDLIST.ITEM
-msgid  "Somali"
-msgstr "Somalí"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.PAIREDLIST.ITEM
-msgid  "Sami, Inari (Finland)"
-msgstr "Sami, Inari (Finlandia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.PAIREDLIST.ITEM
-msgid  "Sami, Lule (Norway)"
-msgstr "Sami, Lule (Noruega)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.PAIREDLIST.ITEM
-msgid  "Sami, Lule (Sweden)"
-msgstr "Sami, Lule (Suecia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.PAIREDLIST.ITEM
-msgid  "Sami, Northern (Finland)"
-msgstr "Sami, Northern (Finlandia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.PAIREDLIST.ITEM
-msgid  "Sami, Northern (Norway)"
-msgstr "Sami, Northern (Noruega)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.PAIREDLIST.ITEM
-msgid  "Sami, Northern (Sweden)"
-msgstr "Sami, Northern (Suecia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.PAIREDLIST.ITEM
-msgid  "Sami, Skolt (Finland)"
-msgstr "Sami, Skolt (Finlandia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.PAIREDLIST.ITEM
-msgid  "Sami, Southern (Norway)"
-msgstr "Sami, Southern (Noruega)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.PAIREDLIST.ITEM
-msgid  "Sami, Southern (Sweden)"
-msgstr "Sami, Southern (Suecia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.PAIREDLIST.ITEM
-msgid  "Sami, Kildin (Russia)"
-msgstr "Sami, Kildin (Rusia)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.PAIREDLIST.ITEM
-msgid  "Guaraní, Paraguayan"
-msgstr "Guaraní, Paraguayan"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.PAIREDLIST.ITEM
-msgid  "Bodo"
-msgstr "Bodo"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.PAIREDLIST.ITEM
-msgid  "Dogri"
-msgstr "Dogri"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.PAIREDLIST.ITEM
-msgid  "Maithili"
-msgstr "Maithili"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.PAIREDLIST.ITEM
-msgid  "Santali"
-msgstr "Santali"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.PAIREDLIST.ITEM
-msgid  "Tetun (Timor-Leste)"
-msgstr "Tetun (República Democrática de Timor-Leste)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.PAIREDLIST.ITEM
-msgid  "Turkmen"
-msgstr "Turkmeno"
-
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.PAIREDLIST.ITEM
 msgid  "Maltese"
 msgstr "Maltés"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.PAIREDLIST.ITEM
-msgid  "Tok Pisin"
-msgstr "Tok Pisin"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.PAIREDLIST.ITEM
-msgid  "Shuswap"
-msgstr "Shuswap"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_OROMO.PAIREDLIST.ITEM
-msgid  "Oromo"
-msgstr "Oromo"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ANCIENT_GREEK.PAIREDLIST.ITEM
-msgid  "Greek, Ancient"
-msgstr "Griego, antiguo"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YIDDISH.PAIREDLIST.ITEM
 msgid  "Yiddish (Israel)"
 msgstr "Yidis (Israel)"
 
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_QUECHUA_ECUADOR.PAIREDLIST.ITEM
-msgid  "Quechua (Ecuador)"
-msgstr "Quechua (Ecuador)"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UIGHUR_CHINA.PAIREDLIST.ITEM
-msgid  "Uyghur"
-msgstr "Uyghur"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ASTURIAN.PAIREDLIST.ITEM
-msgid  "Asturian"
-msgstr "Asturiano"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UPPER_SORBIAN_GERMANY.PAIREDLIST.ITEM
-msgid  "Sorbian, Upper"
-msgstr "Serbio, Norte"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LOWER_SORBIAN_GERMANY.PAIREDLIST.ITEM
-msgid  "Sorbian, Lower"
-msgstr "Serbio, Sureño"
-
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LATGALIAN.PAIREDLIST.ITEM
 msgid  "Latgalian"
 msgstr "Latgalio"
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.PAIREDLIST.ITEM
-msgid  "Maore"
-msgstr "Maore"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BUSHI.PAIREDLIST.ITEM
 msgid  "Bushi"
@@ -2907,85 +831,13 @@ msgstr "Re~hacer: "
 msgid  "~Repeat: "
 msgstr "~Repetir: "
 
-#: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_SHOW.TOOLBOXITEM.TEXT
-msgid  "Display IDs"
-msgstr "Mostrar IDs"
-
-#: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_OUTPUT.TOOLBOXITEM.TEXT
-msgid  "This is the input window"
-msgstr "Esta es la ventana de ingreso"
-
-#: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_SEND_DATA.TOOLBOXITEM.TEXT
-msgid  "Transfer to TestTool"
-msgstr "Transferir a TestTool"
-
-#: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_ALLWIN.TOOLBOXITEM.TEXT
-msgid  "Show all windows"
-msgstr "Mostrar todas las ventanas"
-
-#: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_KURZNAME.TOOLBOXITEM.TEXT
-msgid  "Show short names (if available)"
-msgstr "Mostrar nombres cortos (si esta disponible)"
-
-#: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_LANGNAME.TOOLBOXITEM.TEXT
-msgid  "Always show long-name"
-msgstr "Siempre mostrar nombres-largos"
-
-#: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TOOLBOXITEM.TEXT
-msgid  "DisplayHID"
-msgstr "DisplayHID"
-
-#: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GROUPBOX.TEXT
-msgid  "Translation"
-msgstr "Traducción"
-
-#: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.EDIT.TEXT
-msgid  "~Edit"
-msgstr "~Editar"
-
-#: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FIXEDTEXT.TEXT
-msgid  "Original Text"
-msgstr "Texto original"
-
-#: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GROUPBOX.TEXT
-msgid  "Comment"
-msgstr "Comentario"
-
-#: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.EDIT.TEXT
-msgid  "~Comment"
-msgstr "~Comentario"
-
-#: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PUSHBUTTON.TEXT
-msgid  "~Select"
-msgstr "~Seleccionar"
-
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PUSHBUTTON.TEXT
 msgid  "~Restore"
 msgstr "Restaurar"
 
-#: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PUSHBUTTON.TEXT
-msgid  "~Accept"
-msgstr "~Aceptar"
-
-#: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PUSHBUTTON.TEXT
-msgid  "~Next"
-msgstr "~Siguiente"
-
-#: plugapp/testtool.src#TT_INLINE_TRANSLATION.PUSHBUTTON.TEXT
-msgid  "Inplace Translation"
-msgstr "Traducción actual"
-
 #: plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MESSBOX.MESSAGE
 msgid  "The Translation will be lost. Proceed anyway?"
 msgstr "La traducción se perderá. Desea proceder?"
-
-#: plugapp/testtool.src#TT_NO_CONTROL.ERRORBOX.MESSAGE
-msgid  "The Control is no longer valid. The Translation cannot be saved."
-msgstr "El control ya no es válido. La traducción no puede ser guardada."
-
-#: plugapp/testtool.src#TT_GPF.STRING.TEXT
-msgid  "GPF occurred"
-msgstr "ocurrió un GPF"
 
 #: plugapp/testtool.src#TT_ALTERNATE_CAPTION.STRING.TEXT
 msgid  "HelpID does not match UniqueID: "
@@ -2998,23 +850,3 @@ msgstr "Botón de desplazamiento del panel de pestañas, anterior"
 #: toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_BACK.STRING.TEXT
 msgid  "Tab Panel Scroll Button, forward"
 msgstr "Botón de desplazamiento del panel de pestañas, siguiente"
-
-#: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.MODALDIALOG.TEXT
-msgid  "Roadmap Skeleton Demo"
-msgstr "Demo del esqueleto del mapa del camino"
-
-#: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.STRING.TEXT
-msgid  "Welcome"
-msgstr "Bienvenido"
-
-#: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.STRING.TEXT
-msgid  "Prepare"
-msgstr "Preparar"
-
-#: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.STRING.TEXT
-msgid  "Setup"
-msgstr "Configurar"
-
-#: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.STRING.TEXT
-msgid  "Finish"
-msgstr "Finalizar"

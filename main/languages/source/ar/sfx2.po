@@ -31,36 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
-#, fuzzy
-msgid  "Configuration Menu"
-msgstr "قائمة التهيئة"
-
-#: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
-#, fuzzy
-msgid  "~Add-Ons"
-msgstr "إ~ضافات"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Cu~t"
-msgstr "~قص"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Copy"
-msgstr "~نسخ"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Paste"
-msgstr "~لصق"
-
-#: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
-#, fuzzy
-msgid  "Leave Full-Screen Mode"
-msgstr "إبقاء نمط الشاشة الكاملة"
-
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
 #, fuzzy
 msgid  "Add-~On Help"
@@ -81,90 +51,28 @@ msgstr "(بلا)"
 msgid  "~Thesaurus..."
 msgstr "قا~موس المترادفات..."
 
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "My Templates"
-msgstr "قوالبي"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Business Correspondence"
-msgstr "مراسلات تجارية"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Other Business Documents"
-msgstr "مستندات تجارية أخرى"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Personal Correspondence and Documents"
-msgstr "مراسلات ومستندات خاصة"
-
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Forms and Contracts"
 msgstr "نماذج وعقود"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Finances"
-msgstr "مالية"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Education"
-msgstr "تعليم"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Presentation Backgrounds"
-msgstr "خلفيات عروض تقديمية"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Presentations"
-msgstr "عروض تقديمية"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Miscellaneous"
-msgstr "منوعات"
-
-#: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
-#, fuzzy
-msgid  "The templates are being initialized for first-time usage."
-msgstr "جارٍ الآن تهيئة مكونات للمرة الأولى."
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Templates"
 msgstr "قوالب"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New template"
-msgstr "قالب جديد"
-
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Categories"
 msgstr "ال~فئات"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Templates"
-msgstr "~قوالب"
+#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr "الحفظ في صيغ خارجية ربما يحدث \nفقدًا في المعلومات. هل مازلت ترغب في الإغلاق؟"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "ت~حرير"
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Organizer..."
-msgstr "المن~ظم..."
+#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr "هذا الاسم قيد الاستخدام.\nهل تريد أن تستبدل قالب المستند؟"
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
 #, fuzzy
@@ -176,170 +84,52 @@ msgstr "هل تريد بالفعل حذف المنطقة \"$1\"؟"
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "هل تريد بالفعل حذف الإدخال \"$1\"؟"
 
-#: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "لقد تم تعديل المستند \"$(DOC)\" .\nهل تريد حفظ تغييراتك؟"
-
-#: doc/doc.src#STR_STYLES.STRING.TEXT
-#, fuzzy
-msgid  "Styles"
-msgstr "أنماط"
-
-#: doc/doc.src#STR_MACROS.STRING.TEXT
-#, fuzzy
-msgid  "Macros"
-msgstr "وحدات الماكرو"
-
-#: doc/doc.src#STR_CONFIG.STRING.TEXT
-#, fuzzy
-msgid  "Configuration"
-msgstr "تكوين"
+#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr "هذا التصنيف ليس فارغًا.\nهل تحذفه على أية حال؟"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
 #, fuzzy
 msgid  "Styles in "
 msgstr "أنماط في "
 
-#: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
-#, fuzzy
-msgid  "Printing Styles"
-msgstr "أنماط الطباعة"
-
-#: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "The print job could not be started."
-msgstr "تعذر بدء عملية الطباعة"
-
-#: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
-#, fuzzy
-msgid  "Copy"
-msgstr "نسخ"
-
-#: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "The template could not be opened."
-msgstr "لا يمكن فتح قالب المستند."
-
-#: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "Document already open for editing."
-msgstr "المستند مفتوح بشكل مسبق للتحرير."
-
-#: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "Error recording document "
-msgstr "حدث خطأ أثناء تسجيل المستند "
-
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
 #, fuzzy
 msgid  "Templates"
 msgstr "قوالب"
-
-#: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "حدث خطأ أثناء نسخ القالب \"$1\".\nيوجد قالب بنفس الاسم."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
 #, fuzzy
 msgid  "The template \"$1\" can not be deleted."
 msgstr "لا يمكن حذف القالب \"$1\"."
 
-#: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error moving template \"$1\"."
-msgstr "حدث خطأ أثناء تحريك القالب \"$1\"."
-
-#: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "The update could not be saved."
-msgstr "تعذر حفظ التحديثات."
-
-#: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error saving template "
-msgstr "خطأ أثناء حفظ القالب "
-
-#: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Error renaming template."
-msgstr "حدث خطأ أثناء إعادة تسمية القالب."
-
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "Error renaming template category."
 msgstr "حدث خطأ أثناء إعادة تسمية فئة القالب."
 
-#: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Please specify a name."
-msgstr "الرجاء تحديد اسم."
+#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr "الرجاء تحديد اسم فريد. \nيجب أن تكون المدخلات غير حساسة لحالة الحروف."
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
 #, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr "هل تريد جعل القالب \"$(TEXT)\" قالبًا افتراضيًا؟"
 
-#: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "Do you want to reset the default template?"
-msgstr "هل تريد إعادة تعيين القالب الافتراضي؟"
-
-#: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "Document info cannot be read."
-msgstr "لا يمكن قراءة معلومات المستند."
-
-#: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
-#, fuzzy
-msgid  "The selected file has an incorrect format."
-msgstr "تنسيق الملف المحدد غير صحيح."
+#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr "دليل القالب \n$(DIR)\nغير موجود."
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
 #, fuzzy
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
 msgstr "لا يمكن حفظ المستند على صيغة $(FORMAT). هل ترغب \nفي حفظ التغييرات باستخدام تنسيق $(OWNFORMAT)?"
 
-#: doc/doc.src#STR_SAVEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Save"
-msgstr "حف~ظ"
-
-#: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Update"
-msgstr "~تحديث"
-
-#: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
-#, fuzzy
-msgid  "Save ~As..."
-msgstr "حفظ باس~م..."
-
-#: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
-#, fuzzy
-msgid  "Save Copy ~as..."
-msgstr "حف~ظ النسخة باسم..."
-
-#: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "إ~غلاق"
-
-#: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-#, fuzzy
-msgid  "~Close & Return to "
-msgstr "إغلا~ق ورجوع إلى "
-
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
 #, fuzzy
 msgid  " AutoPilot"
 msgstr " المعالج التلقائي"
-
-#: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
-#, fuzzy
-msgid  "Configurations"
-msgstr "عمليات تكوين"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
 #, fuzzy
@@ -351,260 +141,43 @@ msgstr "مكتبات قاعدة %PRODUCTNAME"
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "هل تريد استبدال النمط \"$(ARG1)\"؟"
 
-#: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
-#, fuzzy
-msgid  "Loading Document"
-msgstr "جارٍ تحميل المستند"
-
-#: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
-#, fuzzy
-msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr "الاتصال بـ: $(HOST). في انتظار الرد..."
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
-#, fuzzy
-msgid  "Opening $(TARGET) at $(HOST)"
-msgstr "يتم فتح $(TARGET) على $(HOST)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
-#, fuzzy
-msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "جارٍ تحميل: $(TARGET) من $(HOST). تم تحميل: $(BYTE)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
-#, fuzzy
-msgid  "Disconnected"
-msgstr "تم قطع الاتصال"
-
-#: doc/doc.src#STR_EDIT.STRING.TEXT
-#, fuzzy
-msgid  "Edit"
-msgstr "تحرير"
-
-#: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Documents"
-msgstr "مستندات %PRODUCTNAME "
+#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr "لا يمكن فتح المستند للتحرير.\nهل ترغب بفتحه للقراءة فقط؟"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
 #, fuzzy
 msgid  "Propert~ies..."
 msgstr "~خصائص..."
 
-#: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
-#, fuzzy
-msgid  "HTML (FrameSet)"
-msgstr "(HTML (FrameSet"
-
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
 #, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
 msgstr " مستند إطار %PRODUCTNAME "
-
-#: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
-#, fuzzy
-msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr "تعذر العثور على القالب \"$(TEMPLATE)\" في موضعه الأصلي. يوجد قالب بنفس الاسم في الموضع \"$(FOUND)\". هل تريد استخدام هذا القالب في المستقبل عند المقارنة؟"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
 #, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "تعذر العثور على القالب \"$(TEMPLATE)\". هل تريد متابعة البحث عنه في المستقبل؟"
 
-#: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
-#, fuzzy
-msgid  "Automatically saved version"
-msgstr "إصدار محفوظ بشكل تلقائي"
-
-#: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
-#, fuzzy
-msgid  "Text Document"
-msgstr "مستند نصي"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
-#, fuzzy
-msgid  "HTML Document"
-msgstr "مستند HTML"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
-#, fuzzy
-msgid  "Master Document"
-msgstr "مستند رئيسي"
-
-#: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "جدول بيانات"
-
-#: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
-#, fuzzy
-msgid  "Presentation"
-msgstr "عرض تقديمي"
-
-#: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
-#, fuzzy
-msgid  "Drawing"
-msgstr "الرسم"
-
-#: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
-#, fuzzy
-msgid  "Message"
-msgstr "رسالة"
-
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
 #, fuzzy
 msgid  "~Discard"
 msgstr "ر~فض"
-
-#: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
-#, fuzzy
-msgid  "Access to the current data medium not possible."
-msgstr "تعذر الوصول إلى الوسيط الحالي للبيانات."
-
-#: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
-#, fuzzy
-msgid  "Insert the next data carrier and click OK."
-msgstr "الرجاء إدخال ناقل البيانات التالي، ثم النقر فوق \"موافق\"."
-
-#: doc/doc.src#STR_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Object"
-msgstr "كائن"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
-#, fuzzy
-msgid  "Run Macro"
-msgstr "تنفيذ الماكروو"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "This document contains macros. $(TEXT)"
-msgstr "هذا المستند يحتوي على وحدات ماكرو. $(TEXT)"
-
-#: doc/doc.src#BTN_OK.STRING.TEXT
-#, fuzzy
-msgid  "Run"
-msgstr "تشغيل"
-
-#: doc/doc.src#BTN_CANCEL.STRING.TEXT
-#, fuzzy
-msgid  "Do Not Run"
-msgstr "عدم التنفيذ"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
 #, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "وفقا لإعدادات الأمان، فإنه لا يُسمح لوحدات الماكرو بالتشغيل في هذا المستند. هل تريد تشغيلها على أية حال؟ "
 
-#: doc/doc.src#FT_OK.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to allow these macros to be run?"
-msgstr "هل تريد السماح لوحدات الماكرو هذه بالتشغيل؟"
-
-#: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Export as PDF"
-msgstr "تصدير بتنسيق PDF"
-
-#: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Export..."
-msgstr "تصدير..."
-
-#: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "تصدير"
-
-#: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
-#, fuzzy
-msgid  "Add this directory to the list of secure paths: "
-msgstr "إضافة هذا الدليل إلى قائمة المسارات الآمنة: "
-
-#: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
-#, fuzzy
-msgid  "File format:"
-msgstr "تنسيق الملف:"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
-#, fuzzy
-msgid  "This document contains:\n\n"
-msgstr "هذا المستند يحتضمن:\n\n"
-
-#: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
-#, fuzzy
-msgid  "Recorded changes"
-msgstr "التغييرات المسجلة"
-
-#: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
-#, fuzzy
-msgid  "Notes"
-msgstr "ملاحظات"
-
-#: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
-#, fuzzy
-msgid  "Document versions"
-msgstr "إصدارات المستند"
-
-#: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
-#, fuzzy
-msgid  "Fields"
-msgstr "الحقول"
-
-#: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
-#, fuzzy
-msgid  "Linked data..."
-msgstr "بيانات مرتبطة..."
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue saving the document?"
-msgstr "هل تريد أن تستمر في حفظ المستند؟"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue printing the document?"
-msgstr "هل تريد في الاستمرار في طباعة المستند؟"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue signing the document?"
-msgstr "هل تريد في الاستمرار في توقيع المستند؟."
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue creating a PDF file?"
-msgstr "هل تريد المتابعة في إنشاء ملف PDF؟"
-
-#: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "إذا لم تكن تريد استبدال مستندك الأصلي، فيجب عليك حفظ عملك ضمن اسم ملف جديد."
-
-#: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Some template files are protected and can not be deleted."
-msgstr "بعض قوالب الملفات محمية ولا يمكن حذفها."
-
-#: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
-#, fuzzy
-msgid  "Info %1"
-msgstr "معلومات %1"
-
 #: doc/doc.src#STR_SHARED.STRING.TEXT
 #, fuzzy
 msgid  " (shared)"
 msgstr " (مشترك)"
 
-#: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
-#, fuzzy
-msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr "يتم تعيين إصدار تنسيق المستند إلى ODF 1.1 (OpenOffice.org 2.x) في \"أدوات - خيارات - تحميل /حفظ - عام\". يتطلب توقيع المستندات وجود ODF 1.2 (OpenOffice.org 3.x)"
-
-#: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
-#, fuzzy
-msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr "تم تعديل القالب '$(ARG1)' الذي يستند إليه هذا المستند. هل تريد تحديث التنسيقات التي تستند إلى النمط وفقًا للقالب المُعدّل؟"
+#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr "يجب حفظ المستند قبل توقيعه. يؤدي حفظ المستند إلى إزالة كافة التواقيع الموجودة.\nهل تريد حفظ المستند؟"
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
 #, fuzzy
@@ -616,21 +189,6 @@ msgstr "~تحديث الأنماط"
 msgid  "~Keep Old Styles"
 msgstr "الاح~تفاظ بالأنماط القديمة"
 
-#: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Template Management"
-msgstr "إدارة القوالب"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "إغلاق"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~File..."
-msgstr "~ملف..."
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Address Book..."
@@ -641,30 +199,10 @@ msgstr "دف~تر العناوين..."
 msgid  "Templates"
 msgstr "قوالب"
 
-#: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Documents"
-msgstr "مستندات"
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
 #, fuzzy
 msgid  "Commands"
 msgstr "تعليقات"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New"
-msgstr "ج~ديد"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "ح~ذف"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "ت~حرير"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
 #, fuzzy
@@ -675,11 +213,6 @@ msgstr "استيراد قالب..."
 #, fuzzy
 msgid  "Export Template..."
 msgstr "تصدير قالب..."
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Print"
-msgstr "~طباعة"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
 #, fuzzy
@@ -701,188 +234,35 @@ msgstr "التعيين كقالب افتراضي"
 msgid  "Reset Default Template"
 msgstr "إعادة تعيين القالب الافتراضي"
 
-#: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "جديد"
-
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Categories"
 msgstr "ال~فئات"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "T~emplates"
-msgstr "ق~والب"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
 #, fuzzy
 msgid  "~More"
 msgstr "المز~يد"
 
-#: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Pre~view"
-msgstr "م~عاينة"
-
-#: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "الوصف"
-
-#: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Te~xt"
-msgstr "ن~ص"
-
-#: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Frame"
-msgstr "إ~طار"
-
-#: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Pages"
-msgstr "ال~صفحات"
-
-#: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "N~umbering"
-msgstr "ت~رقيم"
-
-#: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Overwrite"
-msgstr "اس~تبدال"
-
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "From File..."
 msgstr "من ملف..."
-
-#: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Load Styles"
-msgstr "تحميل أنماط"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "الع~نوان"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Subject"
 msgstr "الموضوع"
 
-#: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Key words"
-msgstr "ال~كلمات الأساسية"
-
-#: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Description"
-msgstr "ال~وصف"
-
-#: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "لم يتم تثبيت عامل التصفية المحدد $(FILTER).\nهل تريد القيام بذلك الآن؟"
-
-#: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "عامل التصفية المحدد $(FILTER) غير متضمن في الإصدار لديك.\nيمكن العثور على معلومات حول الطلبات على صفحتنا الرئيسية."
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Reduce print data"
-msgstr "تقليص البيانات المطبوعة"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Settings for"
-msgstr "إعدادات"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Printer"
-msgstr "~طابعة"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Print to ~file"
-msgstr "الطباعة إلى ~ملف"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Reduce transparency"
-msgstr "ت~قليص الشفافية"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Auto~matically"
-msgstr "~تلقائيًا"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~No transparency"
-msgstr "~بدون شفافية"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Reduce ~gradients"
-msgstr "تقليص ال~تدرجات"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Gradient ~stripes"
 msgstr "تدرج ال~تخطيطات"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Intermediate ~color"
-msgstr "اللون ال~متوسط"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Reduce ~bitmaps"
-msgstr "تقليص ~الصورة النقطية"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~High print quality"
-msgstr "طباعة ~عالية الجودة"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~ormal print quality"
-msgstr "طباعة ذات جودة عا~دية"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Reso~lution"
 msgstr "ال~دقة"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "72 DPI"
-msgstr "72 نقطة لكل بوصة"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "96 DPI"
-msgstr "96 نقطة لكل بوصة"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "150 DPI (Fax)"
-msgstr "150 نقطة لكل بوصة (فاكس)"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "200 DPI (default)"
-msgstr "200 نقطة لكل بوصة (افتراضي)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 #, fuzzy
@@ -894,85 +274,20 @@ msgstr "300 نقطة لكل بوصة"
 msgid  "600 DPI"
 msgstr "600 نقطة لكل بوصة"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Include transparent ob~jects"
-msgstr "تضمين ~كائن شفاف"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Con~vert colors to grayscale"
 msgstr "~تحويل الألوان إلى تدرجات الرمادي"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Printer warnings"
-msgstr "تحذيرات الطابعة"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "P~aper size"
-msgstr "حج~م الورق"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Pap~er orientation"
 msgstr "ات~جاه الورق"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Transparency"
-msgstr "ا~لشفافية"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Warning"
-msgstr "تحذير"
-
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr "يحتوي مستندك على كائنات شفافة.\nقد يؤدي هذا إلى استغراق وقت أطول في طابعات\nمحددة. هل يجب تقليص مستوى\nالشفافية؟"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
-#, fuzzy
-msgid  "~Yes"
-msgstr "~نعم"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~No"
-msgstr "~لا"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Cancel"
-msgstr "إل~غاء الأمر"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Do not show warning again"
-msgstr "~عدم إظهار هذا التحذير مرة أخرى"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Style Catalog"
-msgstr "كتالوج الأنماط"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Organizer..."
-msgstr "المن~ظم..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete..."
-msgstr "~حذف..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Modify..."
-msgstr "~تعديل..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
 #, fuzzy
@@ -980,33 +295,14 @@ msgid  "~New..."
 msgstr "~جديد..."
 
 #: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
+#, fuzzy
 msgid  "Style List"
 msgstr ""
-
-#: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
-#, fuzzy
-msgid  "Hierarchical"
-msgstr "هيكلي"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
 #, fuzzy
 msgid  "Styles and Formatting"
 msgstr "الأنماط والتنسيق"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Fill Format Mode"
-msgstr "وضع تنسيق التعبئة"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "New Style from Selection"
-msgstr "نمط جديد من التحديد"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Update Style"
-msgstr "تحديث النمط"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 #, fuzzy
@@ -1083,110 +379,15 @@ msgstr "إلغاء حماية السجلات"
 msgid  "Incorrect password"
 msgstr "كلمة مرور غير صحيحة"
 
-#: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New versions"
-msgstr "إصدارات جديدة"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Save ~New Version"
-msgstr "حفظ الإ~صدار الجديد"
-
-#: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Always save a version on closing"
-msgstr "~حفظ الإصدار عند الإغلاق دائمًا"
-
-#: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Existing versions"
-msgstr "الإصدارات الموجودة"
-
-#: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Date and time"
-msgstr "التاريخ والوقت"
-
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Saved by"
 msgstr "قام بعملية الحفظ"
 
-#: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Comments"
-msgstr "تعليقات"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "إغلاق"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Open"
-msgstr "فتح"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Show..."
-msgstr "إ~ظهار..."
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "ح~ذف"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Compare"
-msgstr "مقارنة"
-
-#: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Versions of"
-msgstr "إصدارات"
-
-#: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Date and time : "
-msgstr "التاريخ والوقت : "
-
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Saved by "
 msgstr "قام بعملية الحفظ "
-
-#: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "إ~غلاق"
-
-#: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Insert Version Comment"
-msgstr "إدراج تعليق الإصدار"
-
-#: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
-#, fuzzy
-msgid  "Version comment"
-msgstr "تعليق الإصدار"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Name"
-msgstr "الا~سم"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~AutoUpdate"
-msgstr "~تحديث تلقائي"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Ne~xt Style"
-msgstr "ال~نمط التالي"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1198,165 +399,25 @@ msgstr "مرتبط بـ"
 msgid  "~Category"
 msgstr "ال~فئة"
 
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Contains"
-msgstr "يحتوي"
-
-#: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
-#, fuzzy
-msgid  "Current version"
-msgstr "الإصدار الحالي"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "تصدير"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
-#, fuzzy
-msgid  "Insert"
-msgstr "إدراج"
-
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
 #, fuzzy
 msgid  "~Insert"
 msgstr "إ~دراج"
-
-#: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
-#, fuzzy
-msgid  "<All formats>"
-msgstr "<كل التنسيقات>"
-
-#: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
-#, fuzzy
-msgid  "~Automatic file name extension"
-msgstr "ام~تداد اسم ملف تلقائي"
-
-#: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
-#, fuzzy
-msgid  "~Selection"
-msgstr "ال~تحديد"
-
-#: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
-#, fuzzy
-msgid  "~Link"
-msgstr "الارتبا~ط"
-
-#: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
-#, fuzzy
-msgid  "Pr~eview"
-msgstr "م~عاينة"
-
-#: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
-#, fuzzy
-msgid  "~Read-only"
-msgstr "للق~راءة فقط"
-
-#: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
-#, fuzzy
-msgid  "Save with ~password"
-msgstr "حفظ بكلمة ~مرور"
-
-#: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "Edit ~filter settings"
-msgstr "تحرير إ~عدادات عامل التصفية"
-
-#: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
-#, fuzzy
-msgid  "~Play"
-msgstr "~تشغيل"
-
-#: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
-#, fuzzy
-msgid  "Sto~p"
-msgstr "إي~قاف"
-
-#: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
-#, fuzzy
-msgid  "~Open"
-msgstr "~فتح"
-
-#: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "~Save"
-msgstr "حف~ظ"
-
-#: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Style:"
-msgstr "النمط:"
-
-#: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "~Templates:"
-msgstr "~قوالب:"
-
-#: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
-#, fuzzy
-msgid  "~Version:"
-msgstr "الإ~صدار:"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
 #, fuzzy
 msgid  "Find on this Page"
 msgstr "البحث في هذه الصفحة"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Search for"
-msgstr "ال~بحث عن"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Whole words only"
-msgstr "~كلمات كاملة فقط"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Match case"
-msgstr "~مطابقة حالة الأحرف"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Wrap ~around"
 msgstr "التفا~ف حول"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Backwards"
-msgstr "~للخلف"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Find"
 msgstr "~بحث..."
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "إ~غلاق"
-
-#: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Enter Password"
-msgstr "إدخال كلمة المرور"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~User"
-msgstr "ال~مستخدم"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Password"
-msgstr "~كلمة المرور"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Confirm"
-msgstr "~تأكيد"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
 #, fuzzy
@@ -1378,56 +439,6 @@ msgstr "~تأكيد"
 msgid  "%PRODUCTNAME document"
 msgstr "مستند %PRODUCTNAME"
 
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "الع~نوان"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Subject"
-msgstr "المو~ضوع"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Keywords"
-msgstr "ال~كلمات الأساسية"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Comments"
-msgstr "~تعليقات"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Type:"
-msgstr "النوع:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Read-only"
-msgstr "للق~راءة فقط"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Location:"
-msgstr "الموقع:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Size:"
-msgstr "الحجم:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Created:"
-msgstr "إنشاء:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Modified:"
-msgstr "عُدّل:"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Digitally signed:"
@@ -1437,26 +448,6 @@ msgstr "مُوقّع رقميًا:"
 #, fuzzy
 msgid  "Digital Signature..."
 msgstr "توقيع رقمي..."
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
-#, fuzzy
-msgid  "Multiply signed document"
-msgstr "مستند موقّع مرارًا"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Last printed:"
-msgstr "تاريخ آخر طباعة:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Total editing time:"
-msgstr "إجمالي وقت التحرير:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Revision number:"
-msgstr "رقم المراجعة:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1468,39 +459,15 @@ msgstr "إعادة تعيين"
 msgid  "~Apply user data"
 msgstr "ا~ستخدام بيانات المستخدم"
 
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template:"
-msgstr "قالب:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
-#, fuzzy
-msgid  "unknown"
-msgstr "غير معروف"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "File Name"
 msgstr ""
-
-#: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Info fields..."
-msgstr "~حقول معلومات..."
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Do not refresh automatically"
-msgstr "عدم التحديث التلقائي"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Refresh this document"
 msgstr "تحديث هذا المستند"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "every"
-msgstr "كل"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1511,16 +478,6 @@ msgstr "ثوانٍ"
 #, fuzzy
 msgid  "Redirect from this document"
 msgstr "إعادة توجيه بدءًا من هذا المستند"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "after"
-msgstr "بعد"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "to URL"
-msgstr "إلى URL"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1537,205 +494,20 @@ msgstr "إن قمت بتحديد الخيار \"%PLACEHOLDER%\"، فيجب إد�
 msgid  "~Properties"
 msgstr "~خصائص"
 
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "الاسم"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
-#, fuzzy
-msgid  "Type"
-msgstr "النوع"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
-#, fuzzy
-msgid  "Value"
-msgstr "القيمة"
-
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Add"
 msgstr "إضا~فة"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
-#, fuzzy
-msgid  "Property Name"
-msgstr "اسم الخاصيةe"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Checked by"
-msgstr "قام بالتدقيق"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Client"
-msgstr "العميل"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date completed"
-msgstr "تاريخ الإكمال"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Department"
-msgstr "القسم"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Destinations"
-msgstr "الوجهات"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Disposition"
-msgstr "الترتيب"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Division"
-msgstr "القسم"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Document number"
-msgstr "رقم المستند"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Editor"
-msgstr "المُحرر"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "E-Mail"
-msgstr "البريد الإلكتروني"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Forward to"
-msgstr "إعادة توجيه إلى"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Group"
-msgstr "تجميع"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Info"
-msgstr "معلومات"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Language"
-msgstr "اللغة"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Mailstop"
-msgstr "توقف البريد"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Matter"
-msgstr "الموضوع"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Office"
-msgstr "مكتب"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Owner"
-msgstr "المالك"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Project"
-msgstr "مشروع"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Publisher"
-msgstr "الناشر"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Purpose"
-msgstr "الهدف"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Received from"
-msgstr "متلقاة من"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Recorded by"
-msgstr "قام بالتسجيل"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Recorded date"
-msgstr "تاريخ التسجيل"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Reference"
-msgstr "المرجع"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Source"
-msgstr "المصدر"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Status"
-msgstr "الحالة"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Telephone number"
-msgstr "رقم الهاتف"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Typist"
-msgstr "الكاتب"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
-#, fuzzy
-msgid  "URL"
-msgstr "عنوان URL"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "النص"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 #, fuzzy
 msgid  "DateTime"
 msgstr "التاريخ والوقت"
 
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "التاريخ"
-
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Duration"
 msgstr "المدة"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "الرقم"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
 #, fuzzy
@@ -1747,45 +519,9 @@ msgstr "نعم أم لا"
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr " سنة: %1 شهر: %2 يوم: %3 ساعة: %4 دقيقة: %5 ثانية: %6"
 
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "نعم"
-
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "لا"
-
-#: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Remove Property"
-msgstr "إزالة الخاصيةy"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Properties of "
-msgstr "خصائص "
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "عام"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "الوصف"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Custom Properties"
-msgstr "خصائص مخصصة"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Internet"
-msgstr "إنترنت"
+#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr "لا تتوافق القيمة التي تم إدخالها مع النوع المحدد.\nسيتم تخزين القيمة كنص."
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 #, fuzzy
@@ -1827,11 +563,6 @@ msgstr "سا~عات"
 msgid  "Min~utes"
 msgstr "د~قائق"
 
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Seconds"
-msgstr "ثوا~ني"
-
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Millise~conds"
@@ -1841,26 +572,6 @@ msgstr "مللي ~ثانية"
 #, fuzzy
 msgid  "Edit Field Names"
 msgstr "تحرير أسماء الحقول"
-
-#: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Names"
-msgstr "الأسماء"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Create Style"
-msgstr "إنشاء نمط"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Style name"
-msgstr "اسم النمط"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "Style already exists. Overwrite?"
-msgstr "النمط موجود بالفعل. هل تريد الاستبدال؟"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
 #, fuzzy
@@ -1882,75 +593,32 @@ msgstr "إلغاء التسجيل"
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
 msgstr "لم يستطع %PRODUCTNAME العثور على تكوين بريد إلكتروني يمكن استخدامه. الرجاء حفظ هذا المستند محليًا بدلاً من إرفاقه من خلال عميل البريد الإلكتروني."
 
-#: dialog/dialog.src#STR_RESET.STRING.TEXT
-#, fuzzy
-msgid  "~Reset"
-msgstr "إ~عادة تعيين"
-
-#: dialog/dialog.src#STR_APPLY.STRING.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "تطبيق"
-
-#: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
-#, fuzzy
-msgid  "Organizer"
-msgstr "المنظم"
-
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
 #, fuzzy
 msgid  "This name is already in use."
 msgstr "هذا الاسم مستخدم حاليًا."
 
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "This Style does not exist."
-msgstr "هذا النمط غير موجود."
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr "هذا النمط لا يمكن استخدامه كنمط أساسي،\nبسبب أنه سوف يحدث مراجع تشير إلى نفسها بشكل لا نهائي. "
+
+#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr "الاسم موجود بالفعل كنمط افتراضي.\nالرجاء اختيار اسم آخر."
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 #, fuzzy
 msgid  "Do you really want to delete Style $1?"
 msgstr "هل تريد بالفعل حذف النمط $1؟"
 
-#: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
-#, fuzzy
-msgid  "You are deleting an applied Style!\n"
-msgstr "إنك تقوم بحذف نمط مستخدم!\n"
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "New..."
-msgstr "جديد..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Modify..."
-msgstr "تعديل..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Delete..."
-msgstr "حذف..."
-
-#: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
-#, fuzzy
-msgid  "Navigator"
-msgstr "المستكشف"
-
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 #, fuzzy
 msgid  "Task Pane"
 msgstr "قسم المهام"
 
-#: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Faulty password confirmation"
-msgstr "تأكيد غير صحيح لكلمة المرور"
-
-#: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
-#, fuzzy
-msgid  "Send"
-msgstr "أرسل"
+#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
+msgid  "Sidebar"
+msgstr ""
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 #, fuzzy
@@ -1982,70 +650,10 @@ msgstr "قد يحتوي هذا المستند على تنسيق أو محتوى 
 msgid  "~Keep Current Format"
 msgstr "الا~حتفاظ بالتنسيق الحالي"
 
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Save in ODF Format"
-msgstr "~حفظ بتنسيق ODF"
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "~More Information..."
-msgstr "~مزيد من المعلومات..."
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Ask when not saving in ODF format"
-msgstr "ال~سؤال عند عدم الحفظ بتنسيق ODF"
-
-#: view/view.src#STR_NODEFPRINTER.STRING.TEXT
-#, fuzzy
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "لا توجد طابعة افتراضية.\nالرجاء اختيار طابعة والمحاولة من جديد."
-
-#: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
-#, fuzzy
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "تعذر تشغيل الطابعة.\nالرجاء مراجعة إعدادات الطابعة."
-
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
 #, fuzzy
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
 msgstr "تم تنسيق هذا المستند للطابعة $1. ولكن الطابعة المحددة غير متوفرة.\nهل تريد استخدام الطابعة القياسية $2؟"
-
-#: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "Options..."
-msgstr "خيارات..."
-
-#: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Printer Options"
-msgstr "خيارات الطابعة"
-
-#: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
-#, fuzzy
-msgid  "Printer busy"
-msgstr "الطابعة مشغولة"
-
-#: view/view.src#STR_ERROR_PRINT.STRING.TEXT
-#, fuzzy
-msgid  "Error while printing"
-msgstr "خطأ أثناء الطباعة"
-
-#: view/view.src#STR_PRINTING.STRING.TEXT
-#, fuzzy
-msgid  "Printing"
-msgstr "طباعة"
-
-#: view/view.src#STR_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Page "
-msgstr "الصفحة "
-
-#: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error saving template "
-msgstr "خطأ أثناء حفظ القالب "
 
 #: view/view.src#STR_READONLY.STRING.TEXT
 #, fuzzy
@@ -2067,483 +675,295 @@ msgstr "تم تعديل حجم الورقة. \nهل ترغب في حفظ الإ�
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>العنوان:</b><dd>$(TITEL)<dt><b>الموضوع:</b><dd>$(THEME)<dt><b>كلمات البحث:</b><dd>$(KEYWORDS)<dt><b>الوصف:</b><dd>$(TEXT)</dl></font></body></html>"
 
-#: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
-#, fuzzy
-msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>لم يُعثر على خصائص المستند.</B></FONT></P></BODY></HTML>"
+#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr "لا يمكن إغلاق المستند بسبب \nوجود مهمة طباعة قيد التنفيذ. "
 
-#: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Print Monitor"
-msgstr "شاشة الطباعة"
-
-#: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "is being printed on"
-msgstr "سوف يُطبع على"
-
-#: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
-#, fuzzy
-msgid  "is being prepared for printing"
-msgstr "يجري إعداده للطباعة"
+#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr "حدث خطأ أثناء إرسال الرسالة. ربما يكون الخطأ في عدم وجود حساب مستخدم أو أن تثبيت البرنامج به خلل.\nالرجاء التأكد من إعدادات %PRODUCTNAME أو إعدادات برنامج البريد الإلكتروني الخاص بك."
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 #, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "لا يمكن تحرير المستند، ربما بسبب حقوق الوصول المفقودة. هل تريد تحرير نسخة من المستند؟"
 
-#: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  " (repaired document)"
-msgstr " (مستند تم إصلاحه)"
-
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "تعذر على %PRODUCTNAME العثور على مستعرض ويب على نظامك. الرجاء مراجعة تفضيلات سطح المكتب أو تثبيت مستعرض ويب (مثل Mozilla) في المكان الافتراضي المطلوب أثناء تثبيت المستعرض."
 
-#: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
-msgid  "Modify Link"
-msgstr "تعديل الرابط"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
+msgid  "Customization"
+msgstr ""
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
-msgid  "~Application:"
-msgstr "ت~طبيق:"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
+msgid  "Restore Default"
+msgstr ""
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
-msgid  "~File:"
-msgstr "ال~ملف:"
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
+msgid  "More Options"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
+msgid  "Close Sidebar Deck"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
+msgid  "Panel: "
+msgstr ""
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Category:"
 msgstr "ال~فئة:"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
-msgid  "Modify link"
-msgstr "تعديل الرابط"
-
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: appl/app.src#STR_NONAME.STRING.TEXT
+#, fuzzy
 msgid  "Untitled"
 msgstr "بلا عنوان"
 
 #: appl/app.src#STR_CLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close"
 msgstr "إغلاق"
 
 #: appl/app.src#STR_STYLE_FILTER_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
 msgstr "تلقائي"
 
 #: appl/app.src#STR_STANDARD_SHORTCUT.STRING.TEXT
+#, fuzzy
 msgid  "Standard"
 msgstr ""
 
 #: appl/app.src#STR_BYTES.STRING.TEXT
+#, fuzzy
 msgid  "Bytes"
 msgstr "بايتات"
 
 #: appl/app.src#STR_KB.STRING.TEXT
+#, fuzzy
 msgid  "KB"
 msgstr "كيلوبايت"
 
 #: appl/app.src#STR_MB.STRING.TEXT
+#, fuzzy
 msgid  "MB"
 msgstr "ميغابايت"
 
 #: appl/app.src#STR_GB.STRING.TEXT
+#, fuzzy
 msgid  "GB"
 msgstr "غيغابايت"
 
 #: appl/app.src#MSG_QUERY_LASTVERSION.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Cancel all changes?"
 msgstr "هل تريد إلغاء جميع التغييرات؟"
 
-#: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
-msgid  "Document already open."
-msgstr "المستند مفتوح بالفعل."
-
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "تعذر على %PRODUCTNAME العثور على مستعرض ويب على نظامك. الرجاء مراجعة تفضيلات سطح المكتب أو تثبيت مستعرض ويب (مثل Mozilla) في المكان الافتراضي المطلوب أثناء تثبيت المستعرض."
 
-#: appl/app.src#GID_INTERN.STRING.TEXT
-msgid  "Internal"
-msgstr "داخلي"
-
-#: appl/app.src#GID_APPLICATION.STRING.TEXT
-msgid  "Application"
-msgstr "التطبيق"
-
-#: appl/app.src#GID_VIEW.STRING.TEXT
-msgid  "View"
-msgstr "عرض"
-
-#: appl/app.src#GID_DOCUMENT.STRING.TEXT
-msgid  "Documents"
-msgstr "مستندات"
-
-#: appl/app.src#GID_EDIT.STRING.TEXT
-msgid  "Edit"
-msgstr "تحرير"
-
-#: appl/app.src#GID_MACRO.STRING.TEXT
-msgid  "BASIC"
-msgstr "BASIC"
-
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options"
 msgstr ""
 
 #: appl/app.src#GID_MATH.STRING.TEXT
+#, fuzzy
 msgid  "Math"
 msgstr "الرياضيات"
 
-#: appl/app.src#GID_NAVIGATOR.STRING.TEXT
-msgid  "Navigate"
-msgstr "تنقل"
-
-#: appl/app.src#GID_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "إدراج"
-
-#: appl/app.src#GID_FORMAT.STRING.TEXT
-msgid  "Format"
-msgstr "التنسيق"
-
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Templates"
 msgstr ""
 
-#: appl/app.src#GID_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr "النص"
-
-#: appl/app.src#GID_FRAME.STRING.TEXT
-msgid  "Frame"
-msgstr "الإطار"
-
-#: appl/app.src#GID_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Graphic"
-msgstr "الرسم"
-
-#: appl/app.src#GID_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "الجدول"
-
-#: appl/app.src#GID_ENUMERATION.STRING.TEXT
-msgid  "Numbering"
-msgstr "تعداد رقمي"
-
-#: appl/app.src#GID_DATA.STRING.TEXT
-msgid  "Data"
-msgstr "البيانات"
-
-#: appl/app.src#GID_SPECIAL.STRING.TEXT
-msgid  "Special Functions"
-msgstr "وظائف خاصة"
-
 #: appl/app.src#GID_IMAGE.STRING.TEXT
+#, fuzzy
 msgid  "Image"
 msgstr "صورة"
 
 #: appl/app.src#GID_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Chart"
 msgstr "المخطط البياني"
 
-#: appl/app.src#GID_EXPLORER.STRING.TEXT
-msgid  "Explorer"
-msgstr "المستعرض"
-
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
+#, fuzzy
 msgid  "Connector"
 msgstr "موصل"
 
-#: appl/app.src#GID_MODIFY.STRING.TEXT
-msgid  "Modify"
-msgstr "تعديل"
-
-#: appl/app.src#GID_DRAWING.STRING.TEXT
-msgid  "Drawing"
-msgstr "الرسم"
-
-#: appl/app.src#GID_CONTROLS.STRING.TEXT
-msgid  "Controls"
-msgstr "عناصر تحكم"
-
-#: appl/app.src#STR_ISMODIFIED.STRING.TEXT
-msgid  "Do you want to save the changes to %1?"
-msgstr "هل تريد حفظ التغييرات في %1؟"
-
-#: appl/app.src#STR_QUITAPP.STRING.TEXT
-msgid  "E~xit"
-msgstr "إ~نهاء"
-
-#: appl/app.src#RID_STR_HELP.STRING.TEXT
-msgid  "Help"
-msgstr ""
-
-#: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
-msgid  "No automatic start at 'XX'"
-msgstr "عدم البدء التلقائي عند 'XX'"
-
-#: appl/app.src#RID_HELPBAR.STRING.TEXT
-msgid  "Help Bar"
-msgstr "شريط التعليمات"
-
-#: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
-msgid  "The help file for this topic is not installed."
-msgstr "ملف التعليمات الخاص بهذا الموضوع غير مثبت."
-
-#: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
-msgid  "Function Bar"
-msgstr "شريط الوظائف"
+#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr "لا يمكن إنهاء التطبيق في الوقت الحالي. \nالرجاء الانتظار حتى يتم الانتهاء من جميع مهام الطباعة و/أو \nمهام OLE وإغلاق جميع مربعات الحوار."
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr "حدث خطأ في الإعدادات الخاصة .\nالرجاء الاتصال بالمسؤول."
 
-#: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
-msgid  "Exit Quickstarter"
-msgstr "إغلاق المشغل السريع"
-
-#: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "مشغل %PRODUCTNAME %PRODUCTVERSION السريع"
-
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
+#, fuzzy
 msgid  "Open Document..."
 msgstr "فتح المستند..."
 
-#: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
-msgid  "From Template..."
-msgstr "من القالب..."
-
-#: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
-msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr "تحميل %PRODUCTNAME أثناء بدء تشغيل النظام"
-
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
 msgid  "Disable Quickstarter"
-msgstr "تعطيل التشغيل السريع لعلبة النظام"
-
-#: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
-msgid  "File"
-msgstr "ملف"
-
-#: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
-msgid  "Startcenter"
-msgstr "Startcenter"
+msgstr ""
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
+#, fuzzy
 msgid  "Recent Documents"
 msgstr "المستندات الحالية"
 
-#: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
-msgid  "Update all links?"
-msgstr "هل تريد تحديث جميع الارتباطات؟"
-
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "DDE link to % for % area % are not available."
 msgstr "الارتباط DDE مع % إلى % النطاق % غير متوفر."
 
 #: appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WARNINGBOX.MESSAGE
+#, fuzzy
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "هذا الارتباط التشعبي سيفتح \"%s\". هل تريد التقدم؟"
 
-#: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
-msgid  "Security Warning"
-msgstr "تحذير أماني"
+#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr "لأسباب أمنية، لا يمكن تنفيذ الارتباط التشعبي.\nلن يتم فتح العنوان المذكور."
+
+#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr "سيؤدي الحفظ إلى إزالة كافة التواقيع الموجودة.\nهل ترغب في متابعة حفظ المستند؟"
+
+#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr "يلزم حفظ المستند قبل توقيعه.\nهل تريد حفظ المستند؟"
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
 msgstr "يجب حفظ هذا المستند بتنسيق ملف OpenDocument قبل توقيعه رقميًا."
 
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
+#, fuzzy
 msgid  " (Signed)"
 msgstr " (مُوقّع)"
 
-#: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
-msgid  "Document"
-msgstr "المستند"
-
 #: appl/app.src#STR_NONE.STRING.TEXT
+#, fuzzy
 msgid  "- None -"
 msgstr "- بدون -"
 
 #: appl/app.src#STR_SFX_FILTERNAME_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All files (*.*)"
 msgstr "كل الملفات (*.*)"
 
 #: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
+#, fuzzy
 msgid  "Link graphics"
 msgstr "رسومات الارتباط"
 
 #: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
+#, fuzzy
 msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
 msgstr "تعذر العثور على طريقة المكون المناسبة %1\n.\n\nراجع تهجئة اسم الطريقة."
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics file cannot be opened"
 msgstr "لا يمكن فتح ملف الرسومات"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics file cannot be read"
 msgstr "لا يمكن قراءة ملف الرسومات"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.STRING.TEXT
+#, fuzzy
 msgid  "Unknown graphics format"
 msgstr "تنسيق رسومات غير معروف"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.STRING.TEXT
+#, fuzzy
 msgid  "This version of the graphics file is not supported"
 msgstr "هذا الإصدار من ملف الرسومات غير مدعوم"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics filter not found"
 msgstr "عامل تصفية الرسومات غير موجود"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.STRING.TEXT
+#, fuzzy
 msgid  "Not enough memory to insert graphic"
 msgstr "لا توجد ذاكرة كافية لإدراج رسم"
 
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
-msgid  "Contents"
-msgstr "المحتويات"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
-msgid  "Index"
-msgstr "الفهرس"
-
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Find"
 msgstr "بحث"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
-msgid  "Bookmarks"
-msgstr "الإشارات المرجعية"
-
-#: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
-msgid  "~Search term"
-msgstr "~مصطلح البحث"
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Display"
 msgstr "~عرض"
 
-#: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-msgid  "S~earch term"
-msgstr "م~صطلح البحث"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
 msgstr "~بحث..."
 
-#: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
-msgid  "~Complete words only"
-msgstr "إ~كمال الكلمات فقط"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Find in ~headings only"
 msgstr "البحث في ال~رؤوس فقط"
 
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
-msgid  "~Bookmarks"
-msgstr "إ~شارات مرجعية"
-
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Help"
 msgstr "تعليمات %PRODUCTNAME"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.STRING.TEXT
+#, fuzzy
 msgid  "Show Navigation Pane"
 msgstr "إظهار قسم التنقل"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.STRING.TEXT
+#, fuzzy
 msgid  "Hide Navigation Pane"
 msgstr "إخفاء قسم التنقل"
 
-#: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
-msgid  "First Page"
-msgstr "الصفحة الأولى"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
-msgid  "Previous Page"
-msgstr "الصفحة السابقة"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
-msgid  "Next Page"
-msgstr "الصفحة التالية"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
-msgid  "Print..."
-msgstr "طباعة..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
-msgid  "Add to Bookmarks..."
-msgstr "إضافة إلى الإشارات المرجعية..."
-
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
+#, fuzzy
 msgid  "Find on this Page..."
 msgstr "البحث في هذه الصفحة..."
 
-#: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
-msgid  "HTML Source"
-msgstr "مصدر HTML"
-
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "The Help is being started..."
 msgstr "جارٍ بدء التعليمات..."
 
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
-msgid  "Select Text"
-msgstr "تحديد النص"
-
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
-msgid  "~Copy"
-msgstr "~نسخ"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
-msgid  "Add to Bookmarks"
-msgstr "إضافة إلى الإشارات المرجعية"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
-msgid  "Bookmark:"
-msgstr "إشارة مرجعية:"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
-msgid  "Rename Bookmark"
-msgstr "إعادة تسمية الإشارة المرجعية"
-
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Display"
 msgstr "عرض"
 
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
-msgid  "Rename..."
-msgstr "إعادة تسمية..."
-
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
-msgid  "Delete"
-msgstr "حذف"
-
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "No topics found."
 msgstr "لم يُعثر على مواضيع."
 
-#: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
-msgid  "The text you entered was not found."
-msgstr "لم يتم العثور على النص الذي أدخلته."
-
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
 msgstr "~عرض تعليمات %PRODUCTNAME %MODULENAME عند بدء التشغيل"

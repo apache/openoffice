@@ -31,21 +31,9 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.1.STRING.TEXT
-msgid  "Calculates the number of weeks in a specific period"
-msgstr "Изчислява броя седмици в определен период"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.2.STRING.TEXT
-msgid  "Start date"
-msgstr "Начална дата"
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.3.STRING.TEXT
 msgid  "First day of the period"
 msgstr "Първи ден на периода"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.4.STRING.TEXT
-msgid  "End date"
-msgstr "Крайна дата"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.5.STRING.TEXT
 msgid  "Last day of the period"
@@ -54,34 +42,6 @@ msgstr "Последен ден на периода"
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.6.STRING.TEXT
 msgid  "Type"
 msgstr "Тип"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr "Тип изчисление: Тип=0 означава времевия интервал, Тип=1 означава календарни седмици."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.1.STRING.TEXT
-msgid  "Determines the number of months in a specific period."
-msgstr "Изчислява броя месеци в определен период."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.3.STRING.TEXT
-msgid  "First day of the period."
-msgstr "Първи ден на периода"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.5.STRING.TEXT
-msgid  "Last day of the period."
-msgstr "Последен ден на периода"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr "Тип изчисление: Тип=0 означава времевия интервал, Тип=1 означава календарни месеци."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.1.STRING.TEXT
-msgid  "Calculates the number of years in a specific period."
-msgstr "Изчислява броя години в определен период"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr "Тип изчисление: Тип=0 означава времевия интервал, Тип=1 означава календарни години."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.1.STRING.TEXT
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
@@ -99,46 +59,6 @@ msgstr "Който и да е ден от желаната година"
 msgid  "Returns the number of days of the month in which the date entered occurs"
 msgstr "Връща броя на дните от месеца, в които настъпва въведената дата."
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.3.STRING.TEXT
-msgid  "Any day in the desired month"
-msgstr "Който и да е ден от желания месец"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.1.STRING.TEXT
-msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr "Връща броя на дните от годината, в които настъпва въведената дата."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.1.STRING.TEXT
-msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr "Връща броя на седмиците от годината, в които настъпва въведената дата."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.1.STRING.TEXT
-msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr "Шифрова или разшифрова текст с алгоритъма ROT13"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.2.STRING.TEXT
-msgid  "Text"
-msgstr "Текст"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.3.STRING.TEXT
-msgid  "Text to be encrypted or text already encrypted"
-msgstr "Текстът, който предстои да бъде шифрован или е вече шифрован"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFWEEKS.STRING.TEXT
-msgid  "WEEKS"
-msgstr "WEEKS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFMONTHS.STRING.TEXT
-msgid  "MONTHS"
-msgstr "MONTHS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFYEARS.STRING.TEXT
-msgid  "YEARS"
-msgstr "YEARS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ISLEAPYEAR.STRING.TEXT
-msgid  "ISLEAPYEAR"
-msgstr "ISLEAPYEAR"
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINMONTH.STRING.TEXT
 msgid  "DAYSINMONTH"
 msgstr "DAYSINMONTH"
@@ -147,193 +67,9 @@ msgstr "DAYSINMONTH"
 msgid  "DAYSINYEAR"
 msgstr "DAYSINYEAR"
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WEEKSINYEAR.STRING.TEXT
-msgid  "WEEKSINYEAR"
-msgstr "WEEKSINYEAR"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ROT13.STRING.TEXT
-msgid  "ROT13"
-msgstr "ROT13"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WORKDAY.STRING.TEXT
-msgid  "WORKDAY"
-msgstr "WORKDAY"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YEARFRAC.STRING.TEXT
-msgid  "YEARFRAC"
-msgstr "YEARFRAC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EDATE.STRING.TEXT
-msgid  "EDATE"
-msgstr "EDATE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WEEKNUM.STRING.TEXT
-msgid  "WEEKNUM"
-msgstr "WEEKNUM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EOMONTH.STRING.TEXT
-msgid  "EOMONTH"
-msgstr "EOMONTH"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NETWORKDAYS.STRING.TEXT
-msgid  "NETWORKDAYS"
-msgstr "NETWORKDAYS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORDEGRC.STRING.TEXT
-msgid  "AMORDEGRC"
-msgstr "AMORDEGRC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORLINC.STRING.TEXT
-msgid  "AMORLINC"
-msgstr "AMORLINC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINT.STRING.TEXT
-msgid  "ACCRINT"
-msgstr "ACCRINT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINTM.STRING.TEXT
-msgid  "ACCRINTM"
-msgstr "ACCRINTM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RECEIVED.STRING.TEXT
-msgid  "RECEIVED"
-msgstr "RECEIVED"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DISC.STRING.TEXT
-msgid  "DISC"
-msgstr "DISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DURATION.STRING.TEXT
-msgid  "DURATION"
-msgstr "DURATION"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EFFECT.STRING.TEXT
-msgid  "EFFECT"
-msgstr "EFFECT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMPRINC.STRING.TEXT
-msgid  "CUMPRINC"
-msgstr "CUMPRINC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMIPMT.STRING.TEXT
-msgid  "CUMIPMT"
-msgstr "CUMIPMT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICE.STRING.TEXT
-msgid  "PRICE"
-msgstr "PRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEDISC.STRING.TEXT
-msgid  "PRICEDISC"
-msgstr "PRICEDISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEMAT.STRING.TEXT
-msgid  "PRICEMAT"
-msgstr "PRICEMAT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MDURATION.STRING.TEXT
-msgid  "MDURATION"
-msgstr "MDURATION"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NOMINAL.STRING.TEXT
-msgid  "NOMINAL"
-msgstr "NOMINAL"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARFR.STRING.TEXT
-msgid  "DOLLARFR"
-msgstr "DOLLARFR"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARDE.STRING.TEXT
-msgid  "DOLLARDE"
-msgstr "DOLLARDE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELD.STRING.TEXT
-msgid  "YIELD"
-msgstr "YIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDDISC.STRING.TEXT
-msgid  "YIELDDISC"
-msgstr "YIELDDISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDMAT.STRING.TEXT
-msgid  "YIELDMAT"
-msgstr "YIELDMAT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLEQ.STRING.TEXT
-msgid  "TBILLEQ"
-msgstr "TBILLEQ"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLPRICE.STRING.TEXT
-msgid  "TBILLPRICE"
-msgstr "TBILLPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLYIELD.STRING.TEXT
-msgid  "TBILLYIELD"
-msgstr "TBILLYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFPRICE.STRING.TEXT
-msgid  "ODDFPRICE"
-msgstr "ODDFPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFYIELD.STRING.TEXT
-msgid  "ODDFYIELD"
-msgstr "ODDFYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLPRICE.STRING.TEXT
-msgid  "ODDLPRICE"
-msgstr "ODDLPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLYIELD.STRING.TEXT
-msgid  "ODDLYIELD"
-msgstr "ODDLYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XIRR.STRING.TEXT
-msgid  "XIRR"
-msgstr "XIRR"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XNPV.STRING.TEXT
-msgid  "XNPV"
-msgstr "XNPV"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_INTRATE.STRING.TEXT
-msgid  "INTRATE"
-msgstr "INTRATE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNCD.STRING.TEXT
-msgid  "COUPNCD"
-msgstr "COUPNCD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYS.STRING.TEXT
-msgid  "COUPDAYS"
-msgstr "COUPDAYS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYSNC.STRING.TEXT
-msgid  "COUPDAYSNC"
-msgstr "COUPDAYSNC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYBS.STRING.TEXT
-msgid  "COUPDAYBS"
-msgstr "COUPDAYBS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPPCD.STRING.TEXT
-msgid  "COUPPCD"
-msgstr "COUPPCD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNUM.STRING.TEXT
-msgid  "COUPNUM"
-msgstr "COUPNUM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FVSCHEDULE.STRING.TEXT
-msgid  "FVSCHEDULE"
-msgstr "FVSCHEDULE"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISEVEN.STRING.TEXT
 msgid  "ISEVEN"
 msgstr "ISEVEN"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISODD.STRING.TEXT
-msgid  "ISODD"
-msgstr "ISODD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GCD.STRING.TEXT
 msgid  "GCD"
@@ -343,45 +79,9 @@ msgstr "GCD"
 msgid  "LCM"
 msgstr "LCM"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MULTINOMIAL.STRING.TEXT
-msgid  "MULTINOMIAL"
-msgstr "MULTINOMIAL"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SERIESSUM.STRING.TEXT
-msgid  "SERIESSUM"
-msgstr "SERIESSUM"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_QUOTIENT.STRING.TEXT
 msgid  "QUOTIENT"
 msgstr "QUOTIENT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MROUND.STRING.TEXT
-msgid  "MROUND"
-msgstr "MROUND"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SQRTPI.STRING.TEXT
-msgid  "SQRTPI"
-msgstr "SQRTPI"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RANDBETWEEN.STRING.TEXT
-msgid  "RANDBETWEEN"
-msgstr "RANDBETWEEN"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELI.STRING.TEXT
-msgid  "BESSELI"
-msgstr "BESSELI"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELJ.STRING.TEXT
-msgid  "BESSELJ"
-msgstr "BESSELJ"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELK.STRING.TEXT
-msgid  "BESSELK"
-msgstr "BESSELK"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELY.STRING.TEXT
-msgid  "BESSELY"
-msgstr "BESSELY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2DEC.STRING.TEXT
 msgid  "BIN2DEC"
@@ -395,10 +95,6 @@ msgstr "BIN2HEX"
 msgid  "BIN2OCT"
 msgstr "BIN2OCT"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DELTA.STRING.TEXT
-msgid  "DELTA"
-msgstr "DELTA"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2BIN.STRING.TEXT
 msgid  "DEC2BIN"
 msgstr "DEC2BIN"
@@ -410,18 +106,6 @@ msgstr "DEC2HEX"
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2OCT.STRING.TEXT
 msgid  "DEC2OCT"
 msgstr "DEC2OCT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERF.STRING.TEXT
-msgid  "ERF"
-msgstr "ERF"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERFC.STRING.TEXT
-msgid  "ERFC"
-msgstr "ERFC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GESTEP.STRING.TEXT
-msgid  "GESTEP"
-msgstr "GESTEP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2BIN.STRING.TEXT
 msgid  "HEX2BIN"
@@ -438,10 +122,6 @@ msgstr "HEX2OCT"
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMABS.STRING.TEXT
 msgid  "IMABS"
 msgstr "IMABS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMAGINARY.STRING.TEXT
-msgid  "IMAGINARY"
-msgstr "IMAGINARY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPOWER.STRING.TEXT
 msgid  "IMPOWER"
@@ -503,9 +183,40 @@ msgstr "IMSUM"
 msgid  "IMSQRT"
 msgstr "IMSQRT"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COMPLEX.STRING.TEXT
-msgid  "COMPLEX"
-msgstr "COMPLEX"
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMTAN.STRING.TEXT
+msgid  "IMTAN"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSEC.STRING.TEXT
+msgid  "IMSEC"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSC.STRING.TEXT
+msgid  "IMCSC"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOT.STRING.TEXT
+#, fuzzy
+msgid  "IMCOT"
+msgstr "IMCOS"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSINH.STRING.TEXT
+#, fuzzy
+msgid  "IMSINH"
+msgstr "IMSIN"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOSH.STRING.TEXT
+#, fuzzy
+msgid  "IMCOSH"
+msgstr "IMCOS"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSECH.STRING.TEXT
+msgid  "IMSECH"
+msgstr ""
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSCH.STRING.TEXT
+msgid  "IMCSCH"
+msgstr ""
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2BIN.STRING.TEXT
 msgid  "OCT2BIN"
@@ -519,41 +230,17 @@ msgstr "OCT2DEC"
 msgid  "OCT2HEX"
 msgstr "OCT2HEX"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CONVERT.STRING.TEXT
-msgid  "CONVERT"
-msgstr "CONVERT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FACTDOUBLE.STRING.TEXT
-msgid  "FACTDOUBLE"
-msgstr "FACTDOUBLE"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.1.STRING.TEXT
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
 msgstr "Връща числовото представяне на дата преди или след зададен брой работни дни"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.2.STRING.TEXT
-msgid  "Start date"
-msgstr "Начална дата"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.3.STRING.TEXT
 msgid  "The start date"
 msgstr "Началната дата"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.4.STRING.TEXT
-msgid  "Days"
-msgstr "Дни"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.5.STRING.TEXT
-msgid  "The number of workdays before or after the start date"
-msgstr "Броят работни дни преди или след началната дата"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.6.STRING.TEXT
 msgid  "Holidays"
 msgstr "Празници"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.7.STRING.TEXT
-msgid  "List of date values of days off (vacation, holidays, etc.)"
-msgstr "Списък от датите на неработните дни (ваканции, празници и пр.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.1.STRING.TEXT
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
@@ -563,61 +250,13 @@ msgstr "Връща броя цели дни между началната и к�
 msgid  "End date"
 msgstr "Крайна дата"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.5.STRING.TEXT
-msgid  "The end date"
-msgstr "Крайната дата"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.6.STRING.TEXT
 msgid  "Basis"
 msgstr "Основа"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.7.STRING.TEXT
-msgid  "Basis for determining the interest days"
-msgstr "Основа за определяне на дните за лихвата"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.1.STRING.TEXT
-msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr "Връща числовото представяне на дата зададен брой месеци преди или след зададената"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.4.STRING.TEXT
-msgid  "Months"
-msgstr "Месеци"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.5.STRING.TEXT
 msgid  "Number of months before or after the start date"
 msgstr "Броят месеци преди или след началната дата"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.1.STRING.TEXT
-msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr "Връща номера на календарната седмица, в която се пада зададената дата."
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.2.STRING.TEXT
-msgid  "Date"
-msgstr "Дата"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.3.STRING.TEXT
-msgid  "The date"
-msgstr "Датата"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.4.STRING.TEXT
-msgid  "Return type"
-msgstr "Тип на резултата"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.5.STRING.TEXT
-msgid  "A number from 1 to 3 that specifies the day with which a week begins"
-msgstr "Число от 1 до 3, което показва с кой ден започва седмицата"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.1.STRING.TEXT
-msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr "Връща числовото представяне на последния ден от месеца, който се пада даден брой месеци преди или след зададена дата"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.1.STRING.TEXT
-msgid  "Returns the number of workdays between two dates"
-msgstr "Връща броя работни дни между две дати"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.7.STRING.TEXT
-msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr "Списък от датите на неработните дни (ваканции, празници и пр.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.1.STRING.TEXT
 msgid  "Returns the value 'true' if the number is even"
@@ -635,57 +274,17 @@ msgstr "Числото"
 msgid  "Returns the value 'true' if the number is odd"
 msgstr "Връща стойност 'вярно', ако числото е нечетно"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.1.STRING.TEXT
-msgid  "Returns the multinomial coefficient of a set of numbers"
-msgstr "Връща мултиномния коефициент на набор от числа"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.2.STRING.TEXT
 msgid  "Number(s)"
 msgstr "Число(числа)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.3.STRING.TEXT
-msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr "Число или списък от числа, за които се търси мултиномният коефициент"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.1.STRING.TEXT
-msgid  "Returns the sum of a power series"
-msgstr "Връща сумата на степенен ред"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.2.STRING.TEXT
 msgid  "X"
 msgstr "X"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.3.STRING.TEXT
-msgid  "The independent variable of the power series"
-msgstr "Независимата променлива на степенния ред"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.4.STRING.TEXT
 msgid  "N"
 msgstr "N"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.5.STRING.TEXT
-msgid  "The initial power to which x is to be raised"
-msgstr "Началната степен, на която да се повдига x"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.6.STRING.TEXT
-msgid  "M"
-msgstr "M"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.7.STRING.TEXT
-msgid  "The increment by which to increase n for each term in the series"
-msgstr "Нарастването на N за всеки член на реда"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.8.STRING.TEXT
-msgid  "Coefficients"
-msgstr "Коефициенти"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.9.STRING.TEXT
-msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr "Набор от коефициенти, с които се умножава всяка последователна степен на променливата x"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.1.STRING.TEXT
-msgid  "Returns the integer portion of a division"
-msgstr "Връща цялата част на резултата от деление"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.2.STRING.TEXT
 msgid  "Numerator"
@@ -695,17 +294,9 @@ msgstr "Числител"
 msgid  "The dividend"
 msgstr "Делимото"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.4.STRING.TEXT
-msgid  "Denominator"
-msgstr "Знаменател"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.5.STRING.TEXT
 msgid  "The divisor"
 msgstr "Делителят"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.1.STRING.TEXT
-msgid  "Returns a number rounded to a specified multiple"
-msgstr "Връща число, закръглено до кратно на дадена стъпка"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.3.STRING.TEXT
 msgid  "The number to round off"
@@ -715,53 +306,13 @@ msgstr "Числото за закръгляване"
 msgid  "Multiple"
 msgstr "Стъпка"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.5.STRING.TEXT
-msgid  "The multiple to which you want to round number"
-msgstr "Числото, на което трябва да е кратно закръгленото"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.1.STRING.TEXT
-msgid  "Returns the square root of a number which has been multiplied by pi"
-msgstr "Връща квадратен корен на число, умножено по Пи"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.3.STRING.TEXT
-msgid  "The number by which pi is multiplied"
-msgstr "Числото, което се умножава с Пи"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.1.STRING.TEXT
 msgid  "Returns a random integer between the numbers you specify"
 msgstr "Връща случайно цяло число между две зададени числа"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.2.STRING.TEXT
-msgid  "Bottom"
-msgstr "ДолнаГраница"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.3.STRING.TEXT
-msgid  "The smallest integer returned"
-msgstr "Най-малкият допустим резултат"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.4.STRING.TEXT
-msgid  "Top"
-msgstr "ГорнаГраница"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.5.STRING.TEXT
-msgid  "The largest integer returned"
-msgstr "Най-големият допустим резултат"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.1.STRING.TEXT
-msgid  "Returns the greatest common divisor"
-msgstr "Връща най-големия общ делител"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.3.STRING.TEXT
 msgid  "Number or list of numbers"
 msgstr "Число или списък от числа"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.1.STRING.TEXT
-msgid  "Returns the least common multiple"
-msgstr "Връща най-малкото общо кратно"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.1.STRING.TEXT
-msgid  "Returns the modified Bessel function In(x)"
-msgstr "Връща модифицираната Беселова функция In(x)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.3.STRING.TEXT
 msgid  "The value at which the function is to be evaluated"
@@ -770,18 +321,6 @@ msgstr "Стойността, за която се изчислява функц
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.5.STRING.TEXT
 msgid  "The order of the Bessel function"
 msgstr "Редът на Беселовата функция"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.1.STRING.TEXT
-msgid  "Returns the Bessel function Jn(x)"
-msgstr "Връща Беселовата функция Jn(x)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.1.STRING.TEXT
-msgid  "Returns the Bessel function Kn(x)"
-msgstr "Връща Беселовата функция Kn(x)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.1.STRING.TEXT
-msgid  "Returns the Bessel function Yn(x)"
-msgstr "Връща Беселовата функция Yn(x)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.1.STRING.TEXT
 msgid  "Converts a binary number to an octal number"
@@ -803,89 +342,21 @@ msgstr "Желаният брой разреди"
 msgid  "Converts a binary number to a decimal number"
 msgstr "Преобразува двоично число в десетично"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.1.STRING.TEXT
-msgid  "Converts a binary number to a hexadecimal number"
-msgstr "Преобразува двоично число в шестнайсетично"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.5.STRING.TEXT
-msgid  "Number of places used."
-msgstr "Желаният брой разреди"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.1.STRING.TEXT
-msgid  "Converts an octal number to a binary number"
-msgstr "Преобразува осмично число в двоично"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.3.STRING.TEXT
 msgid  "The octal number to be converted (as text)"
 msgstr "Осмичното число за преобразуване (като текст)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.1.STRING.TEXT
-msgid  "Converts an octal number to a decimal number"
-msgstr "Преобразува осмично число в десетично"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.1.STRING.TEXT
-msgid  "Converts an octal number to a hexadecimal number"
-msgstr "Преобразува осмично число в шестнайсетично"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.1.STRING.TEXT
-msgid  "Converts a decimal number to a binary number"
-msgstr "Преобразува десетично число в двоично"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.3.STRING.TEXT
 msgid  "The decimal integer to be converted"
 msgstr "Цялото десетично число за преобразуване"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.1.STRING.TEXT
-msgid  "Converts a decimal number to a hexadecimal number"
-msgstr "Преобразува десетично число в шестнайсетично"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.1.STRING.TEXT
-msgid  "Converts a decimal number into an octal number"
-msgstr "Преобразува десетично число в осмично"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.3.STRING.TEXT
 msgid  "The decimal number"
 msgstr "Цялото десетично число за преобразуване"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to a binary number"
-msgstr "Преобразува шестнайсетично число в двоично"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.3.STRING.TEXT
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "Шестнайсетичното число за преобразуване (като текст)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to a decimal number"
-msgstr "Преобразува шестнайсетично число в десетично"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to an octal number"
-msgstr "Преобразува шестнайсетично число в осмично"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.1.STRING.TEXT
-msgid  "Tests whether two values are equal"
-msgstr "Проверява дали две стойности са равни"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.2.STRING.TEXT
-msgid  "Number 1"
-msgstr "Число 1"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.3.STRING.TEXT
-msgid  "The first number"
-msgstr "Първото число"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.4.STRING.TEXT
-msgid  "Number 2"
-msgstr "Число 2"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.5.STRING.TEXT
-msgid  "The second number"
-msgstr "Второто число"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.1.STRING.TEXT
-msgid  "Returns the error function"
-msgstr "Връща функцията на грешките"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.2.STRING.TEXT
 msgid  "Lower limit"
@@ -895,89 +366,21 @@ msgstr "Долна граница"
 msgid  "The lower limit for integration"
 msgstr "Долната граница за интегрирането"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.4.STRING.TEXT
-msgid  "Upper limit"
-msgstr "Горна граница"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.5.STRING.TEXT
-msgid  "The upper limit for integration"
-msgstr "Горната граница за интегрирането"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.1.STRING.TEXT
-msgid  "Returns the complementary error function"
-msgstr "Връща допълнителната функция на грешките"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.1.STRING.TEXT
-msgid  "Tests whether a number is greater than a threshold value"
-msgstr "Проверява дали число е по-голямо от прагова стойност"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.3.STRING.TEXT
-msgid  "The value to test against step"
-msgstr "Стойността за проверка"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.4.STRING.TEXT
-msgid  "Step"
-msgstr "Праг"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.5.STRING.TEXT
-msgid  "The threshhold value"
-msgstr "Праговата стойност"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.1.STRING.TEXT
-msgid  "Returns the double factorial of Number"
-msgstr "Връща двойния факториел на число"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.1.STRING.TEXT
 msgid  "Returns the absolute value (modulus) of a complex number"
 msgstr "Връща абсолютната стойност (модул) на комплексно число"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.2.STRING.TEXT
 msgid  "Complex number"
-msgstr ""
+msgstr "Комплексно число"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.3.STRING.TEXT
 msgid  "The complex number"
 msgstr "Комплексното число"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.1.STRING.TEXT
-msgid  "Returns the imaginary coefficient of a complex number"
-msgstr "Връща имагинерния коефициент на комплексно число"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.1.STRING.TEXT
-msgid  "Returns a complex number raised to an integer power"
-msgstr "Връща комплексно число, повдигнато на цяла степен"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.5.STRING.TEXT
-msgid  "Power to which the complex number is raised"
-msgstr "Степенният показател за степенуването"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.1.STRING.TEXT
-msgid  "Returns the argument theta, an angle expressed in radians"
-msgstr "Връща аргумента тета, ъгъл в радиани"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.3.STRING.TEXT
 msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.1.STRING.TEXT
-msgid  "Returns the cosine of a complex number"
-msgstr "Връща косинуса на комплексно число"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.1.STRING.TEXT
-msgid  "Returns the quotient of two complex numbers"
-msgstr "Връща частното на две комплексни числа"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.1.STRING.TEXT
-msgid  "Returns the algebraic form of the exponential of a complex number"
-msgstr "Връща алгебричната форма на е на степен комплексно число"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.1.STRING.TEXT
-msgid  "Returns the complex conjugate of a complex number"
-msgstr "Връща комплексно спрегнатото на комплексно число"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.1.STRING.TEXT
-msgid  "Returns the natural logarithm of a complex number"
-msgstr "Връща натуралния логаритъм на комплексно число"
+msgstr "Комплексно число"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.1.STRING.TEXT
 msgid  "Returns the base-10 logarithm of a complex number"
@@ -987,30 +390,6 @@ msgstr "Връща десетичния логаритъм на комплекс
 msgid  "Returns the base-2 logarithm of a complex number"
 msgstr "Връща двоичния логаритъм на комплексно число"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.1.STRING.TEXT
-msgid  "Returns the product of several complex numbers"
-msgstr "Връща произведението на няколко комплексни числа"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.3.STRING.TEXT
-msgid  "The first complex number"
-msgstr "Първото комплексно число"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.5.STRING.TEXT
-msgid  "Another complex number"
-msgstr "Друго комплексно число"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.1.STRING.TEXT
-msgid  "Returns the real coefficient of a complex number"
-msgstr "Връща реалния коефициент на комплексно число"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.1.STRING.TEXT
-msgid  "Returns the sine of a complex number"
-msgstr "Връща синуса на комплексно число"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.1.STRING.TEXT
-msgid  "Returns the difference of two complex numbers"
-msgstr "Връща разликата на две комплексни числа"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.2.STRING.TEXT
 msgid  "Complex number 1"
 msgstr "Комплексно число 1"
@@ -1019,61 +398,43 @@ msgstr "Комплексно число 1"
 msgid  "Complex number 2"
 msgstr "Комплексно число 2"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.1.STRING.TEXT
-msgid  "Returns the square root of a complex number"
-msgstr "Връща квадратния корен на комплексно число"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.1.STRING.TEXT
+#, fuzzy
+msgid  "Returns the tangent of a complex number"
+msgstr "Връща синуса на комплексно число"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.1.STRING.TEXT
-msgid  "Returns the sum of complex numbers"
-msgstr "Връща сбора на комплексни числа"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.1.STRING.TEXT
+#, fuzzy
+msgid  "Returns the secant of a complex number"
+msgstr "Връща синуса на комплексно число"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.1.STRING.TEXT
-msgid  "Converts real and imaginary coefficients into a complex number"
-msgstr "Преобразува реален и имагинерен коефициент в комплексно число"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.1.STRING.TEXT
+#, fuzzy
+msgid  "Returns the cosecant of a complex number"
+msgstr "Връща косинуса на комплексно число"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.2.STRING.TEXT
-msgid  "Real num"
-msgstr "Re"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.1.STRING.TEXT
+#, fuzzy
+msgid  "Returns the cotangent of a complex number"
+msgstr "Връща косинуса на комплексно число"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.3.STRING.TEXT
-msgid  "The real coefficient"
-msgstr "Реалният коефициент"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.1.STRING.TEXT
+#, fuzzy
+msgid  "Returns the hyperbolic sine of a complex number"
+msgstr "Връща косинуса на комплексно число"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.4.STRING.TEXT
-msgid  "I num"
-msgstr "Im"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.1.STRING.TEXT
+#, fuzzy
+msgid  "Returns the hyperbolic cosine of a complex number"
+msgstr "Връща косинуса на комплексно число"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.5.STRING.TEXT
-msgid  "The imaginary coefficient"
-msgstr "Имагинерният коефициент"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.1.STRING.TEXT
+msgid  "Returns the hyperbolic secant of a complex number"
+msgstr ""
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.6.STRING.TEXT
-msgid  "Suffix"
-msgstr "Суфикс"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.7.STRING.TEXT
-msgid  "The suffix"
-msgstr "Суфиксът"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.1.STRING.TEXT
-msgid  "Converts a number from one measurement system to another"
-msgstr "Преобразува число от една мерна единица в друга"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.4.STRING.TEXT
-msgid  "From unit"
-msgstr "От единица"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.5.STRING.TEXT
-msgid  "Unit of measure for number"
-msgstr "Мерна единица за числото"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.6.STRING.TEXT
-msgid  "To unit"
-msgstr "Към единица"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.7.STRING.TEXT
-msgid  "Unit of measure for the result"
-msgstr "Мерна единица за резултата"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.1.STRING.TEXT
+msgid  "Returns the hyperbolic cosecant of a complex number"
+msgstr ""
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.1.STRING.TEXT
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
@@ -1099,27 +460,12 @@ msgstr "Датата на закупуване на актива"
 msgid  "First period"
 msgstr "Първи период"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.7.STRING.TEXT
-msgid  "Date the first period ends"
-msgstr "Датата, на която завърша първият период"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.8.STRING.TEXT
-msgid  "Salvage"
-msgstr "Ликв_стойност"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.9.STRING.TEXT
-msgid  "Salvage value of an asset at the end of its life"
-msgstr "Остатъчната стойност в края на живота на актива"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.10.STRING.TEXT
-msgid  "Period"
-msgstr "Период"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.11.STRING.TEXT
 msgid  "The period"
 msgstr "Периодът"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.12.STRING.TEXT
+#, fuzzy
 msgid  "Rate"
 msgstr "Лихва"
 
@@ -1131,33 +477,9 @@ msgstr "Нормата на амортизация"
 msgid  "The year basis to be used"
 msgstr "Типът на използваната годишна база"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.7.STRING.TEXT
-msgid  "The date the first period ends"
-msgstr "Датата, на която завърша първият период"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.9.STRING.TEXT
-msgid  "The salvage value of an asset at the end of its life"
-msgstr "Остатъчната стойност в края на живота на актива"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.1.STRING.TEXT
-msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr "Връща натрупаната лихва за ценна книга, която изплаща периодична лихва"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.2.STRING.TEXT
 msgid  "Issue"
 msgstr "Дата на издаване"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.3.STRING.TEXT
-msgid  "Issue date of the security"
-msgstr "Датата на издаване на ценната книга"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.4.STRING.TEXT
-msgid  "First interest"
-msgstr "Първа лихва"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.5.STRING.TEXT
-msgid  "First interest date of the security"
-msgstr "Датата на първата лихва на ценната книга"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.6.STRING.TEXT
 msgid  "Settlement"
@@ -1168,6 +490,7 @@ msgid  "The settlement"
 msgstr "Датата на сделката с ценната книга"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.9.STRING.TEXT
+#, fuzzy
 msgid  "The rate"
 msgstr "Лихвата"
 
@@ -1178,10 +501,6 @@ msgstr "Номинал"
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.11.STRING.TEXT
 msgid  "The par value"
 msgstr "Номиналната стойност на ценната книга"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.12.STRING.TEXT
-msgid  "Frequency"
-msgstr "Честота"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.13.STRING.TEXT
 msgid  "The frequency"
@@ -1198,14 +517,6 @@ msgstr "Връща натрупаната лихва от ценна книга,
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.3.STRING.TEXT
 msgid  "The issue date"
 msgstr "Датата на издаване"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.1.STRING.TEXT
-msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr "Връща сумата, получен при падежа за напълно инвестирана ценна книга"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.4.STRING.TEXT
-msgid  "Maturity"
-msgstr "Падеж"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.5.STRING.TEXT
 msgid  "The maturity"
@@ -1227,10 +538,6 @@ msgstr "Дисконто"
 msgid  "The discount"
 msgstr "Дисконтовата ставка на ценната книга"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.1.STRING.TEXT
-msgid  "Returns the discount rate for a security"
-msgstr "Връща дисконтовата ставка на ценна книга"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.6.STRING.TEXT
 msgid  "Price"
 msgstr "Цена"
@@ -1247,14 +554,6 @@ msgstr "Пог_стойност"
 msgid  "The redemption value"
 msgstr "Погасителната стойност на книгата за 100 валутни единици номинална стойност"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.1.STRING.TEXT
-msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr "Връща годишното времетраене на Macaulay за ценна книга с периодична лихва"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.6.STRING.TEXT
-msgid  "Coupon"
-msgstr "Купон"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.7.STRING.TEXT
 msgid  "The coupon rate"
 msgstr "Годишната процентна ставка на купона на ценната книга"
@@ -1267,18 +566,6 @@ msgstr "Доходност"
 msgid  "The yield"
 msgstr "Годишната доходност на ценната книга"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.1.STRING.TEXT
-msgid  "Returns the effective annual interest rate"
-msgstr "Връща действителната годишна лихва"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.2.STRING.TEXT
-msgid  "Nominal rate"
-msgstr "Номинална лихва"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.3.STRING.TEXT
-msgid  "The nominal rate"
-msgstr "Номиналната лихва"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.4.STRING.TEXT
 msgid  "Npery"
 msgstr "БрПерОл"
@@ -1286,14 +573,6 @@ msgstr "БрПерОл"
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.5.STRING.TEXT
 msgid  "The periods"
 msgstr "Броят на периодите на олихвяване за година"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.1.STRING.TEXT
-msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr "Връща натрупаната главница, платена по заем между два периода"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.4.STRING.TEXT
-msgid  "Nper"
-msgstr "БрПерПл"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.5.STRING.TEXT
 msgid  "Number of payment periods"
@@ -1306,10 +585,6 @@ msgstr "НС"
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.7.STRING.TEXT
 msgid  "The present value"
 msgstr "Настоящата стойност"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.8.STRING.TEXT
-msgid  "Start period"
-msgstr "Първи период"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.9.STRING.TEXT
 msgid  "The start period"
@@ -1331,14 +606,6 @@ msgstr "Тип"
 msgid  "The type of maturity"
 msgstr "Времето за плащане"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.1.STRING.TEXT
-msgid  "Returns the cumulative interest to be paid between two periods"
-msgstr "Връща натрупаната лихва, платена между два периода"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.1.STRING.TEXT
-msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr "Връща цената за 100 валутни единици номинална стойност на ценна книга, която изплаща периодична лихва"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.1.STRING.TEXT
 msgid  "Returns the price per 100 currency units face value of a discounted security"
 msgstr "Връща цената за 100 валутни единици номинална стойност на сконтирана ценна книга"
@@ -1351,57 +618,9 @@ msgstr "Връща цената за 100 валутни единици номи�
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
 msgstr "Връща модифицираното времетраене на Macauley за ценна книга с предполагаема номинална стойност от 100 валутни единици"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.1.STRING.TEXT
-msgid  "Returns the annual nominal interest rate"
-msgstr "Връща годишната номинална лихва"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.2.STRING.TEXT
-msgid  "Effective rate"
-msgstr "Действителна лихва"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.3.STRING.TEXT
-msgid  "The effective interest rate"
-msgstr "Действителната лихва"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.1.STRING.TEXT
-msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr "Превръща цена, изразена като десетично число, в цена, изразена като дроб"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.2.STRING.TEXT
-msgid  "Decimal dollar"
-msgstr "Десетични долари"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.4.STRING.TEXT
 msgid  "Fraction"
 msgstr "Знаменател"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.1.STRING.TEXT
-msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr "Превръща цена, изразена като дроб, в цена, изразена като десетично число"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.2.STRING.TEXT
-msgid  "Fractional dollar"
-msgstr "Дробни долари"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.3.STRING.TEXT
-msgid  "The number as a fraction"
-msgstr "Число, изразено като дроб"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.1.STRING.TEXT
-msgid  "Returns the yield on a security that pays periodic interest"
-msgstr "Връща доходността на ценна книга, която изплаща периодична лихва"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.1.STRING.TEXT
-msgid  "Returns the annual yield for a discounted security"
-msgstr "Връща годишната доходност на сконтирана ценна книга"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.1.STRING.TEXT
-msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr "Връща годишната доходност на ценна книга, която изплаща лихва при падежа"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.1.STRING.TEXT
-msgid  "Returns the bond-equivalent yield for a treasury bill"
-msgstr "Връща дохода на съкровищен бон, еквивалентен на дохода на облигация"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.7.STRING.TEXT
 msgid  "The discount rate"
@@ -1410,10 +629,6 @@ msgstr "Дисконтовата ставка на съкровищния бон
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.1.STRING.TEXT
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
 msgstr "Връща цената на съкровищен бон за 100 валутни единици номинална стойност"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.1.STRING.TEXT
-msgid  "Returns the yield for a treasury bill"
-msgstr "Връща дохода на съкровищен бон"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.1.STRING.TEXT
 msgid  "Returns the price per $100 face value of a security with an odd first period"
@@ -1427,29 +642,13 @@ msgstr "Първи купон"
 msgid  "The first coupon date"
 msgstr "Дата на първия купон на ценната книга"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.1.STRING.TEXT
-msgid  "Returns the yield of a security with an odd first period"
-msgstr "Връща доходността на ценна книга с нерегулярен първи период"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.1.STRING.TEXT
 msgid  "Returns the price per $100 face value of a security with an odd last period"
 msgstr "Връща цената за $100 номинална стойност на ценна книга с нерегулярен последен период"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.6.STRING.TEXT
-msgid  "Last interest"
-msgstr "Последна лихва"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.7.STRING.TEXT
 msgid  "The last interest date"
 msgstr "Дата на последния купон на ценната книга"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.1.STRING.TEXT
-msgid  "Returns the yield of a security with an odd last period"
-msgstr "Връща доходността на ценна книга с нерегулярен последен период"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.1.STRING.TEXT
-msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr "Връща вътрешна норма на печалба за разписание на парични потоци, които не са непременно периодични"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.2.STRING.TEXT
 msgid  "Values"
@@ -1467,62 +666,6 @@ msgstr "Дати"
 msgid  "The dates"
 msgstr "Датите за плащане"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.6.STRING.TEXT
-msgid  "Guess"
-msgstr "Предположение"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.7.STRING.TEXT
-msgid  "The guess"
-msgstr "Число, за което предполагате, че е близо до резултата от XIRR"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.1.STRING.TEXT
-msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr "Връща настоящата нетна стойност за разписание на парични потоци, които не са непременно периодични"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.1.STRING.TEXT
-msgid  "Returns the interest rate for a fully invested security"
-msgstr "Връща лихвения процент за напълно инвестирана ценна книга"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.1.STRING.TEXT
 msgid  "Returns the first coupon date after the settlement date"
 msgstr "Връща следващата купонна дата след датата на сделката"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.1.STRING.TEXT
-msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr "Връща броя на дните в купонния период, съдържащ датата на сделката"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.1.STRING.TEXT
-msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr "Връща броя на дните от датата на сделката до следващата купонна дата"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.1.STRING.TEXT
-msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr "Връща броя на дните от началото на купонния период до датата на сделката"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.1.STRING.TEXT
-msgid  "Returns the last coupon date preceding the settlement date"
-msgstr "Връща предишната купонна дата преди датата на сделката"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.1.STRING.TEXT
-msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr "Връща броя на купоните, платими между датата на сделката и датата на падежа"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.1.STRING.TEXT
-msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr "Връща бъдещата стойност на начална главница след прилагане на последователност от сложни лихви"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.2.STRING.TEXT
-msgid  "Principal"
-msgstr "Главница"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.3.STRING.TEXT
-msgid  "The principal"
-msgstr "Настоящата стойност"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.4.STRING.TEXT
-msgid  "Schedule"
-msgstr "Разписание"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.5.STRING.TEXT
-msgid  "The schedule"
-msgstr "Масивът от приложени лихви"

@@ -31,14 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.MODALDIALOG.TEXT
-msgid  "HTML Export"
-msgstr "Експортиране на HTML"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_TITEL.FIXEDLINE.TEXT
-msgid  "Assign design"
-msgstr "Приписване на дизайн"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_NEW_DESIGN.RADIOBUTTON.TEXT
 msgid  "New design"
 msgstr "Нов дизайн"
@@ -55,14 +47,6 @@ msgstr "Изтриване на избрания дизайн"
 msgid  "Select an existing design or create a new one"
 msgstr "Изберете съществуващ дизайн или създайте нов"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL.FIXEDLINE.TEXT
-msgid  "Publication type"
-msgstr "Тип на публикацията"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_STANDARD.RADIOBUTTON.TEXT
-msgid  "Standard H~TML format"
-msgstr "~Стандартен формат HTML"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_FRAMES.RADIOBUTTON.TEXT
 msgid  "Standard HTML with ~frames"
 msgstr "Стандартен HTML с ~рамки"
@@ -70,14 +54,6 @@ msgstr "Стандартен HTML с ~рамки"
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RADIOBUTTON.TEXT
 msgid  "~Automatic"
 msgstr "~Автоматично"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RADIOBUTTON.TEXT
-msgid  "~WebCast"
-msgstr "~WebCast"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_HTML.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Настройки"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CONTENT.CHECKBOX.TEXT
 msgid  "Create title page"
@@ -87,45 +63,9 @@ msgstr "Създаване на заглавна страница"
 msgid  "Show notes"
 msgstr "Показване на бележките"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_KIOSK.FIXEDLINE.TEXT
-msgid  "Advance slides"
-msgstr "Смяна на кадрите"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_DEFAULT.RADIOBUTTON.TEXT
-msgid  "~As stated in document"
-msgstr "~Както е зададено в документа"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TXT.FIXEDTEXT.TEXT
-msgid  "~Slide view time:"
-msgstr "~През даден интервал:"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TMF.TIMEFIELD.QUICKHELPTEXT
-msgid  "~Duration of page"
-msgstr "~Времетраене на страницата"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ENDLESS.CHECKBOX.TEXT
-msgid  "~Endless"
-msgstr "~Безкрайно"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_WEBCAST.FIXEDLINE.TEXT
-msgid  "WebCast"
-msgstr "WebCast"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ASP.RADIOBUTTON.TEXT
-msgid  "~Active Server Pages (ASP)"
-msgstr "~Active Server Pages (ASP)"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_PERL.RADIOBUTTON.TEXT
 msgid  "Perl"
 msgstr "Perl"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_INDEX_TXT.FIXEDTEXT.TEXT
-msgid  "~URL for listeners"
-msgstr "~URL за слушатели"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_URL_TXT.FIXEDTEXT.TEXT
-msgid  "URL for ~presentation:"
-msgstr "URL за ~презентация:"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CGI_TXT.FIXEDTEXT.TEXT
 msgid  "URL for ~Perl scripts:"
@@ -135,61 +75,9 @@ msgstr "URL за скриптове на ~Perl:"
 msgid  "Save graphics as"
 msgstr "Съхраняване на графиките като"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_PNG.RADIOBUTTON.TEXT
-msgid  "~PNG"
-msgstr "~PNG"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_GIF.RADIOBUTTON.TEXT
-msgid  "~GIF"
-msgstr "~GIF"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_JPG.RADIOBUTTON.TEXT
-msgid  "~JPG"
-msgstr "~JPG"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_QUALITY_TXT.FIXEDTEXT.TEXT
-msgid  "Quality"
-msgstr "Качество"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_2.FIXEDLINE.TEXT
-msgid  "Monitor resolution"
-msgstr "Разделителна способност на монитора"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_1.RADIOBUTTON.TEXT
-msgid  "Low resolution (~640x480 pixels)"
-msgstr "Ниска (~640x480 пиксела)"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_2.RADIOBUTTON.TEXT
-msgid  "Medium resolution (~800x600 pixels)"
-msgstr "Средна (~800x600 пиксела)"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_3.RADIOBUTTON.TEXT
-msgid  "High resolution (~1024x768 pixels)"
-msgstr "Висока (~1024x768 пиксела)"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_3.FIXEDLINE.TEXT
-msgid  "Effects"
-msgstr "Ефекти"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_SLD_SOUND.CHECKBOX.TEXT
-msgid  "~Export sounds when slide advances"
-msgstr "~Експортиране на звуците при смяна на кадър"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_HIDDEN_SLIDES.CHECKBOX.TEXT
 msgid  "Export ~hidden slides"
 msgstr "~Експортиране на скритите кадри"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_1.FIXEDLINE.TEXT
-msgid  "Information for the title page"
-msgstr "Информация за заглавната страница"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_AUTHOR_TXT.FIXEDTEXT.TEXT
-msgid  "~Author"
-msgstr "~Автор"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_EMAIL_TXT.FIXEDTEXT.TEXT
-msgid  "E-~mail address"
-msgstr "Адрес за ~е-поща"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_WWW_TXT.FIXEDTEXT.TEXT
 msgid  "Your hom~epage"
@@ -199,57 +87,9 @@ msgstr "~Домашна страница"
 msgid  "Additional ~information"
 msgstr "Допълнителна ~информация"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_DOWNLOAD.CHECKBOX.TEXT
-msgid  "Link to a copy of the ~original presentation"
-msgstr "~Връзка към копие на оригиналната презентация"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_CREATED.CHECKBOX.TEXT
-msgid  "Note: 'Created with %PRODUCTNAME'"
-msgstr "Бележка: \"Създадено с %PRODUCTNAME\""
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TITEL.FIXEDLINE.TEXT
-msgid  "Select button style"
-msgstr "Избор на стил за бутоните"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TEXTONLY.CHECKBOX.TEXT
-msgid  "~Text only"
-msgstr "С~амо текст"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TITEL.FIXEDLINE.TEXT
-msgid  "Select color scheme"
-msgstr "Избор на цветова схема"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DOCCOLORS.RADIOBUTTON.TEXT
-msgid  "~Apply color scheme from document"
-msgstr "Цветова схема от ~документа"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Use ~browser colors"
-msgstr "Използване на цветовете на ~браузъра"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_USER.RADIOBUTTON.TEXT
-msgid  "~Use custom color scheme"
-msgstr "Цветова схема по ~избор"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TEXT.PUSHBUTTON.TEXT
 msgid  "Text"
 msgstr "Текст"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_LINK.PUSHBUTTON.TEXT
-msgid  "Hyper~link"
-msgstr "~Хипервръзка"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_ALINK.PUSHBUTTON.TEXT
-msgid  "Active Li~nk"
-msgstr "~Активнa връзкa"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_VLINK.PUSHBUTTON.TEXT
-msgid  "~Visited Link"
-msgstr "П~осетенa връзкa"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_BACK.PUSHBUTTON.TEXT
-msgid  "Bac~kground"
-msgstr "~Фон"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_LAST.PUSHBUTTON.TEXT
 msgid  "<< Back"
@@ -259,73 +99,21 @@ msgstr "<< Назад"
 msgid  "Next >>"
 msgstr "Напред >>"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_FINISH.OKBUTTON.TEXT
-msgid  "~Create"
-msgstr "~Създаване"
-
-#: filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_SAVE.OKBUTTON.TEXT
-msgid  "~Save"
-msgstr "~Съхраняване"
-
 #: filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_NOSAVE.CANCELBUTTON.TEXT
 msgid  "Do Not Save"
 msgstr "Без съхраняване"
-
-#: filter/html/pubdlg.src#DLG_DESIGNNAME.CANCELBUTTON.TEXT
-msgid  "Name HTML Design"
-msgstr "Наименуване на дизайна за HTML"
 
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FIXEDTEXT.TEXT
 msgid  "~Select a slide design"
 msgstr "~Избор на дизайн на кадър"
 
-#: ui/dlg/sdpreslt.src#DLG_PRESLT.CBX_MASTER_PAGE.CHECKBOX.TEXT
-msgid  "~Exchange background page"
-msgstr "~Смяна на фонова страница"
-
-#: ui/dlg/sdpreslt.src#DLG_PRESLT.CBX_CHECK_MASTERS.CHECKBOX.TEXT
-msgid  "~Delete unused backgrounds"
-msgstr "~Изтриване на неизползваните фонове"
-
-#: ui/dlg/sdpreslt.src#DLG_PRESLT.BTN_LOAD.PUSHBUTTON.TEXT
-msgid  "~Load..."
-msgstr "~Зареждане..."
-
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.HELPBUTTON.TEXT
 msgid  "Slide Design"
 msgstr "Дизайн на кадър"
 
-#: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.MODALDIALOG.TEXT
-msgid  "Insert Slides/Objects"
-msgstr "Вмъкване на кадри/обекти"
-
-#: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.CBX_LINK.CHECKBOX.TEXT
-msgid  "~Link"
-msgstr "~Връзка"
-
 #: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.CBX_CHECK_MASTERS.CHECKBOX.TEXT
 msgid  "Delete unused backg~rounds"
 msgstr "~Изтриване на неизползваните фонове"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.MODALDIALOG.TEXT
-msgid  "New Snap Object"
-msgstr "Нов обект за прилепване"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.BTN_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "~Изтриване"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "Позиция"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.FL_DIRECTION.FIXEDLINE.TEXT
-msgid  "Type"
-msgstr "Тип"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_POINT.IMAGERADIOBUTTON.TEXT
-msgid  "~Point"
-msgstr "~Точка"
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_VERTICAL.IMAGERADIOBUTTON.TEXT
 msgid  "~Vertical"
@@ -335,41 +123,9 @@ msgstr "~Вертикала"
 msgid  "Hori~zontal"
 msgstr "~Хоризонтала"
 
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.GRP_TYPE.FIXEDLINE.TEXT
-msgid  "Field type"
-msgstr "Тип на полето"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.RBT_FIX.RADIOBUTTON.TEXT
-msgid  "~Fixed"
-msgstr "~Фиксирано"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.RBT_VAR.RADIOBUTTON.TEXT
-msgid  "~Variable"
-msgstr "~Променливо"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.FT_LANGUAGE.FIXEDTEXT.TEXT
-msgid  "~Language"
-msgstr "~Език"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.FT_FORMAT.FIXEDTEXT.TEXT
-msgid  "F~ormat"
-msgstr "~Форматиране"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.HELPBUTTON.TEXT
-msgid  "Edit Field"
-msgstr "Редактиране на поле"
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.MODALDIALOG.TEXT
-msgid  "Convert to Polygon"
-msgstr "Преобразуване в многоъгълник"
-
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.BTN_PREVIEW.PUSHBUTTON.TEXT
 msgid  "Preview"
 msgstr "Мостра"
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.GRP_SETTINGS.FIXEDLINE.TEXT
-msgid  "Settings"
-msgstr "Настройки"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_LAYERS.FIXEDTEXT.TEXT
 msgid  "Number of colors:"
@@ -387,17 +143,9 @@ msgstr "~Запълване на дупки:"
 msgid  "Tile size:"
 msgstr "Големина на плочката:"
 
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_ORIGINAL.FIXEDTEXT.TEXT
-msgid  "Source picture:"
-msgstr "Картина - източник:"
-
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CTL_BMP.CONTROL.TEXT
 msgid  "Source picture"
 msgstr "Картина - източник"
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_VECTORIZED.FIXEDTEXT.TEXT
-msgid  "Vectorized image:"
-msgstr "Векторизирано изображение:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CTL_WMF.CONTROL.TEXT
 msgid  "Vectorized image"
@@ -407,145 +155,21 @@ msgstr "Векторизирано изображение"
 msgid  "Progress"
 msgstr "Ход на операцията"
 
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.TABDIALOG.TEXT
-msgid  "Graphics Styles"
-msgstr "Графични стилове"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
-msgid  "Line"
-msgstr "Линия"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-msgid  "Area"
-msgstr "Област"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-msgid  "Shadowing"
-msgstr "Засенчване"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
-msgid  "Transparency"
-msgstr "Прозрачност"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
-msgid  "Font"
-msgstr "Шрифт"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-msgid  "Font Effect"
-msgstr "Ефект за шрифта"
-
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 msgid  "Indents & Spacing"
 msgstr "Отстъпи и разредка"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
-msgid  "Text"
-msgstr "Текст"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
-msgid  "Text Animation"
-msgstr "Анимиран текст"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_MEASURE.PAGEITEM.TEXT
-msgid  "Dimensioning"
-msgstr "Оразмеряване"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CONNECTION.PAGEITEM.TEXT
 msgid  "Connector"
 msgstr "Съединителна линия"
 
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-msgid  "Alignment"
-msgstr "Подравняване"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-msgid  "Asian Typography"
-msgstr "Азиатска типография"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
-msgid  "Tabs"
-msgstr "Табулатори"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.PUSHBUTTON.TEXT
-msgid  "Back"
-msgstr "Назад"
-
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_NEW.PUSHBUTTON.TEXT
 msgid  "~New..."
 msgstr "~Нова..."
 
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit..."
-msgstr "~Редактиране..."
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_REMOVE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "~Изтриване"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_COPY.PUSHBUTTON.TEXT
-msgid  "Cop~y"
-msgstr "~Копиране"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_STARTSHOW.PUSHBUTTON.TEXT
-msgid  "~Start"
-msgstr "~Стартиране"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_OK.OKBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Затваряне"
-
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.LB_CUSTOMSHOWS.LISTBOX.QUICKHELPTEXT
 msgid  "Custom Screen Show"
 msgstr "Прожекция по избор"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.CBX_USE_CUSTOMSHOW.CHECKBOX.TEXT
-msgid  "~Use Custom Slide Show"
-msgstr "~Използване на прожекция по избор"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.CHECKBOX.TEXT
-msgid  "Custom Slide Shows"
-msgstr "Прожекции по избор"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_NAME.FIXEDTEXT.TEXT
-msgid  "Name"
-msgstr "Име"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_PAGES.FIXEDTEXT.TEXT
-msgid  "Existing slides"
-msgstr "Съществуващи кадри"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_CUSTOM_PAGES.FIXEDTEXT.TEXT
-msgid  "Selected slides"
-msgstr "Избрани кадри"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FIXEDTEXT.TEXT
-msgid  "Define Custom Slide Show"
-msgstr "Дефиниране на прожекция по избор"
-
-#: ui/dlg/dlgass.src#DLG_ASS.MODALDIALOG.TEXT
-msgid  "Presentation Wizard"
-msgstr "Помощник за презентация"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_PREVIEW.CHECKBOX.TEXT
-msgid  "Previe~w"
-msgstr "Мос~тра"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_STARTWITH.CHECKBOX.TEXT
-msgid  "~Do not show this wizard again"
-msgstr "~Прескачане на помощника в бъдеще"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE1_ARTGROUP.FIXEDLINE.TEXT
-msgid  "Type"
-msgstr "Тип"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_EMPTY.RADIOBUTTON.TEXT
-msgid  "~Empty presentation"
-msgstr "~Празна презентация"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_TEMPLATE.RADIOBUTTON.TEXT
-msgid  "~From template"
-msgstr "От ~шаблон"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_OPEN.RADIOBUTTON.TEXT
 msgid  "O~pen existing presentation"
@@ -555,97 +179,21 @@ msgstr "~Отваряне на съществуваща презентация"
 msgid  "~Select a slide design"
 msgstr "~Избор на дизайн на кадър"
 
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE2_OUTPUTTYPES.FIXEDLINE.TEXT
-msgid  "Select an output medium"
-msgstr "Начин на представяне на презентацията"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM5.RADIOBUTTON.TEXT
-msgid  "~Original"
-msgstr "~Оригинал"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM1.RADIOBUTTON.TEXT
-msgid  "Sc~reen"
-msgstr "~Екран"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM2.RADIOBUTTON.TEXT
-msgid  "Sli~de"
-msgstr "~Диапозитиви"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM3.RADIOBUTTON.TEXT
-msgid  "O~verhead sheet"
-msgstr "~Прозрачно фолио"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM4.RADIOBUTTON.TEXT
-msgid  "P~aper"
-msgstr "~Хартия"
-
 #: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE3_EFFECT.FIXEDLINE.TEXT
 msgid  "Select a slide transition"
 msgstr "Избор на преход между кадрите"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_EFFECT.FIXEDTEXT.TEXT
-msgid  "~Effect"
-msgstr "~Ефект"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_SPEED.FIXEDTEXT.TEXT
-msgid  "~Speed"
-msgstr "~Скорост"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE3_PRESTYPE.FIXEDLINE.TEXT
-msgid  "Select the presentation type"
-msgstr "Избор на вида на презентацията"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE3_LIVE.RADIOBUTTON.TEXT
 msgid  "~Default"
 msgstr "~По подразбиране"
 
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE3_KIOSK.RADIOBUTTON.TEXT
-msgid  "~Automatic"
-msgstr "~Автоматично"
-
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_TIME.FIXEDTEXT.TEXT
 msgid  "D~uration of page"
 msgstr "~Време за страница"
 
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_BREAK.FIXEDTEXT.TEXT
-msgid  "Du~ration of pause"
-msgstr "В~реме за пауза"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_PAGE3_LOGO.CHECKBOX.TEXT
-msgid  "Sh~ow logo"
-msgstr "~Показване на емблема"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE4_PERSONAL.FIXEDLINE.TEXT
-msgid  "Describe your basic ideas"
-msgstr "Опишете основните си идеи"
-
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKNAME.FIXEDTEXT.TEXT
 msgid  "What is your name or the name of your company?"
 msgstr "Какво е името на фирмата Ви?"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKTOPIC.FIXEDTEXT.TEXT
-msgid  "What is the subject of your presentation?"
-msgstr "Каква е темата на презентацията?"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKINFORMATION.FIXEDTEXT.TEXT
-msgid  "Further ideas to be presented?"
-msgstr "Допълнителни идеи за представяне?"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE5_PAGELIST.FIXEDTEXT.TEXT
-msgid  "Ch~oose your pages"
-msgstr "~Изберете страници"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_PAGE5_SUMMARY.CHECKBOX.TEXT
-msgid  "C~reate summary"
-msgstr "~Създаване на обобщение"
-
-#: ui/dlg/dlgass.src#DLG_ASS.BUT_LAST.PUSHBUTTON.TEXT
-msgid  "<< ~Back"
-msgstr "<< На~зад"
-
-#: ui/dlg/dlgass.src#DLG_ASS.BUT_NEXT.PUSHBUTTON.TEXT
-msgid  "~Next >>"
-msgstr "На~пред >>"
 
 #: ui/dlg/dlgass.src#DLG_ASS.BUT_FINISH.OKBUTTON.TEXT
 msgid  "~Create"
@@ -655,41 +203,9 @@ msgstr "~Създаване"
 msgid  "~Open"
 msgstr "~Отваряне"
 
-#: ui/dlg/PaneDockingWindow.src#FLT_LEFT_PANE_IMPRESS_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
-msgid  "Slide Pane"
-msgstr "Панел с кадри"
-
-#: ui/dlg/PaneDockingWindow.src#FLT_LEFT_PANE_DRAW_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
-msgid  "Page Pane"
-msgstr "Панел със страници"
-
-#: ui/dlg/PaneDockingWindow.src#FLT_TOOL_PANEL_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
-msgid  "Task Pane"
-msgstr "Панел със задачи"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.TABDIALOG.TEXT
-msgid  "Header and Footer"
-msgstr "Горен и долен колонтитул"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.1.RID_SD_TABPAGE_HEADERFOOTER_SLIDE.PAGEITEM.TEXT
-msgid  "Slide"
-msgstr "Кадър"
-
 #: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.1.RID_SD_TABPAGE_HEADERFOOTER_NOTESHANDOUT.PAGEITEM.TEXT
 msgid  "Notes and Handouts"
 msgstr "Бележки и листовки"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FL_INCLUDE_ON_PAGE.FIXEDLINE.TEXT
-msgid  "Include on slide"
-msgstr "Включване в кадър"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_HEADER.CHECKBOX.TEXT
-msgid  "Header"
-msgstr "Горен колонтитул"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_HEADER.FIXEDTEXT.TEXT
-msgid  "Header text"
-msgstr "Текст на горен колонтитул"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_DATETIME.CHECKBOX.TEXT
 msgid  "~Date and time"
@@ -707,42 +223,6 @@ msgstr "~Променливи"
 msgid  "~Language:"
 msgstr "~Език:"
 
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_FOOTER.CHECKBOX.TEXT
-msgid  "Footer"
-msgstr "Долен колонтитул"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_FOOTER.FIXEDTEXT.TEXT
-msgid  "Footer text"
-msgstr "Текст на долен колонтитул"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_SLIDENUMBER.CHECKBOX.TEXT
-msgid  "Slide number"
-msgstr "Номер на кадър"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_NOTONTITLE.CHECKBOX.TEXT
-msgid  "Do not show on first slide"
-msgstr "Не се показва на първия кадър"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.BT_APPLYTOALL.PUSHBUTTON.TEXT
-msgid  "Apply to All"
-msgstr "Прилагане върху всички"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.BT_APPLY.PUSHBUTTON.TEXT
-msgid  "Apply"
-msgstr "Прилагане"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.STR_PAGE_NUMBER.STRING.TEXT
-msgid  "Page number"
-msgstr "Номер на страница"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.STR_INCLUDE_ON_PAGE.STRING.TEXT
-msgid  "Include on page"
-msgstr "Включване в страница"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.MODALDIALOG.TEXT
-msgid  "Slide Show"
-msgstr "Прожекция"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_RANGE.FIXEDLINE.TEXT
 msgid  "Range"
 msgstr "Обхват"
@@ -751,41 +231,9 @@ msgstr "Обхват"
 msgid  "All ~slides"
 msgstr "~Всички кадри"
 
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_AT_DIA.RADIOBUTTON.TEXT
-msgid  "~From:"
-msgstr "~От:"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_CUSTOMSHOW.RADIOBUTTON.TEXT
-msgid  "~Custom Slide Show"
-msgstr "~Прожекция по избор"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_KIND.FIXEDLINE.TEXT
-msgid  "Type"
-msgstr "Тип"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_STANDARD.RADIOBUTTON.TEXT
 msgid  "~Default"
 msgstr "~По подразбиране"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_WINDOW.RADIOBUTTON.TEXT
-msgid  "~Window"
-msgstr "~Прозорец"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_AUTO.RADIOBUTTON.TEXT
-msgid  "A~uto"
-msgstr "~Автоматично"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.TMF_PAUSE.TIMEFIELD.QUICKHELPTEXT
-msgid  "Duration of pause"
-msgstr "Времетраене на пауза"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_AUTOLOGO.CHECKBOX.TEXT
-msgid  "Show ~logo"
-msgstr "П~оказване емблема"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_OPTIONS.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Настройки"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_MANUEL.CHECKBOX.TEXT
 msgid  "Change slides ~manually"
@@ -795,45 +243,13 @@ msgstr "~Ръчна смяна на кадрите"
 msgid  "Mouse pointer ~visible"
 msgstr "~Видим показалец на мишката"
 
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_PEN.CHECKBOX.TEXT
-msgid  "Mouse pointer as ~pen"
-msgstr "~Молив като показалец на мишката"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_NAVIGATOR.CHECKBOX.TEXT
 msgid  "~Navigator visible"
 msgstr "Видим ~навигатор"
 
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_ANIMATION_ALLOWED.CHECKBOX.TEXT
-msgid  "~Animations allowed"
-msgstr "~Анимациите са разрешени"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_CHANGE_PAGE.CHECKBOX.TEXT
 msgid  "Change slides by clic~king on background"
 msgstr "~Смяна на кадрите с щракване върху фона"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_ALWAYS_ON_TOP.CHECKBOX.TEXT
-msgid  "Presentation always ~on top"
-msgstr "Презентацията е винаги ~отпред"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_MONITOR.FIXEDLINE.TEXT
-msgid  "Multiple displays"
-msgstr "Няколко монитора"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.FT_MONITOR.FIXEDTEXT.TEXT
-msgid  "P~resentation display"
-msgstr "~Монитор на презентацията"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_PRIMARY_MONITOR.STRING.TEXT
-msgid  "Display %1 (primary)"
-msgstr "Монитор %1 (главен)"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_MONITOR.STRING.TEXT
-msgid  "Display %1"
-msgstr "Монитор %1"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_ALL_MONITORS.STRING.TEXT
-msgid  "All displays"
-msgstr "Всички монитори"
 
 #: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.TABDIALOG.TEXT
 msgid  "Bullets and Numbering"
@@ -843,97 +259,17 @@ msgstr "Водачи и номерация"
 msgid  "Bullets"
 msgstr "Водачи"
 
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_SINGLE_NUM.PAGEITEM.TEXT
-msgid  "Numbering type"
-msgstr "Тип номерация"
-
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_BMP.PAGEITEM.TEXT
-msgid  "Graphics"
-msgstr "Графика"
-
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_NUM_POSITION.PAGEITEM.TEXT
-msgid  "Position"
-msgstr "Позиция"
-
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_NUM_OPTIONS.PAGEITEM.TEXT
-msgid  "Customize"
-msgstr "Персонализиране"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.TABDIALOG.TEXT
-msgid  "Presentation Layout"
-msgstr "Оформление на презентацията"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
-msgid  "Line"
-msgstr "Линия"
-
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
 msgid  "Area"
 msgstr "Област"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-msgid  "Shadow"
-msgstr "Сянка"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
-msgid  "Transparency"
-msgstr "Прозрачност"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
-msgid  "Font"
-msgstr "Шрифт"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-msgid  "Font Effects"
-msgstr "Ефекти за шрифт"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 msgid  "Indents & Spacing"
 msgstr "Отстъпи и разредка"
 
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
-msgid  "Text"
-msgstr "Текст"
-
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_BULLET.PAGEITEM.TEXT
 msgid  "Bullets"
 msgstr "Водачи"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_SINGLE_NUM.PAGEITEM.TEXT
-msgid  "Numbering type"
-msgstr "Тип номерация"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_BMP.PAGEITEM.TEXT
-msgid  "Graphics"
-msgstr "Графика"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_NUM_OPTIONS.PAGEITEM.TEXT
-msgid  "Customize"
-msgstr "Персонализиране"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-msgid  "Alignment"
-msgstr "Подравняване"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-msgid  "Asian Typography"
-msgstr "Азиатска типография"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
-msgid  "Tabs"
-msgstr "Табулатори"
-
-#: ui/dlg/copydlg.src#DLG_COPY.MODALDIALOG.TEXT
-msgid  "Duplicate"
-msgstr "Дублиране"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_COPIES.FIXEDTEXT.TEXT
-msgid  "Number of ~copies"
-msgstr "~Брой копия"
-
-#: ui/dlg/copydlg.src#DLG_COPY.BTN_SET_VIEWDATA.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Values from Selection"
-msgstr "Стойности от избора"
 
 #: ui/dlg/copydlg.src#DLG_COPY.BTN_SET_DEFAULT.PUSHBUTTON.TEXT
 msgid  "~Default"
@@ -943,113 +279,17 @@ msgstr "~По подразбиране"
 msgid  " degrees"
 msgstr " градуса"
 
-#: ui/dlg/copydlg.src#DLG_COPY.FT_ANGLE.FIXEDTEXT.TEXT
-msgid  "~Angle"
-msgstr "~Ъгъл"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_MOVE_X.FIXEDTEXT.TEXT
-msgid  "~X axis"
-msgstr "~Ос x"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_MOVE_Y.FIXEDTEXT.TEXT
-msgid  "~Y axis"
-msgstr "~Ос y"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_WIDTH.FIXEDTEXT.TEXT
-msgid  "~Width"
-msgstr "~Ширина"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_HEIGHT.FIXEDTEXT.TEXT
-msgid  "~Height"
-msgstr "~Височина"
-
-#: ui/dlg/copydlg.src#DLG_COPY.GRP_MOVEMENT.FIXEDLINE.TEXT
-msgid  "Placement"
-msgstr "Разположение"
-
-#: ui/dlg/copydlg.src#DLG_COPY.GRP_ENLARGEMENT.FIXEDLINE.TEXT
-msgid  "Enlargement"
-msgstr "Уголемяване"
-
-#: ui/dlg/copydlg.src#DLG_COPY.GRP_COLOR.FIXEDLINE.TEXT
-msgid  "Colors"
-msgstr "Цветове"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_START_COLOR.FIXEDTEXT.TEXT
-msgid  "~Start"
-msgstr "~Начало"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_END_COLOR.FIXEDTEXT.TEXT
-msgid  "~End"
-msgstr "~Край"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.TABDIALOG.TEXT
-msgid  "Paragraph"
-msgstr "Абзац"
-
 #: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 msgid  "Indents & Spacing"
 msgstr "Отстъпи и разредка"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-msgid  "Alignment"
-msgstr "Подравняване"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-msgid  "Asian Typography"
-msgstr "Азиатска типография"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
-msgid  "Tabs"
-msgstr "Табулатори"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr "Връщане"
 
 #: ui/dlg/dlg_char.src#TAB_CHAR.TABDIALOG.TEXT
 msgid  "Character"
 msgstr "Знак"
 
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
-msgid  "Font"
-msgstr "Шрифт"
-
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-msgid  "Font Effects"
-msgstr "Ефекти за шрифт"
-
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-msgid  "Position"
-msgstr "Позиция"
-
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr "Връщане"
-
-#: ui/dlg/dlgpage.src#TAB_PAGE.TABDIALOG.TEXT
-msgid  "Page Setup"
-msgstr "Настройка на страницата"
-
-#: ui/dlg/dlgpage.src#TAB_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
-msgid  "Page"
-msgstr "Страница"
-
 #: ui/dlg/dlgpage.src#TAB_PAGE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
 msgid  "Background"
 msgstr "Фон"
-
-#: ui/dlg/dlgpage.src#TAB_PAGE.1.PUSHBUTTON.TEXT
-msgid  "Return"
-msgstr "Връщане"
-
-#: ui/dlg/tpaction.src#TP_ANIMATION.FT_ACTION.FIXEDTEXT.TEXT
-msgid  "Action at mouse click"
-msgstr "Действие при щракване с мишката"
-
-#: ui/dlg/tpaction.src#TP_ANIMATION.BTN_SEARCH.PUSHBUTTON.TEXT
-msgid  "~Browse..."
-msgstr "~Преглед..."
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.BTN_SEEK.PUSHBUTTON.TEXT
 msgid  "~Find"
@@ -1059,89 +299,13 @@ msgstr "~Търсене"
 msgid  "Path Name"
 msgstr "Име на път"
 
-#: ui/dlg/tpaction.src#TP_ANIMATION.STRING.TEXT
-msgid  "Interaction"
-msgstr "Интерактивност"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.FT_OBJ_INFO.FIXEDTEXT.TEXT
-msgid  "Processing metafile:"
-msgstr "Обработка на метафайл:"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.FT_ACT_INFO.FIXEDTEXT.TEXT
-msgid  "Broken down metaobjects:"
-msgstr "Анализирани метаобекти:"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.FT_INS_INFO.FIXEDTEXT.TEXT
-msgid  "Inserted drawing objects:"
-msgstr "Вмъкнати графични обекти:"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.CANCELBUTTON.TEXT
-msgid  "Break"
-msgstr "Разделител"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.FL_PLACEHOLDERS.FIXEDLINE.TEXT
-msgid  "Placeholders"
-msgstr "Запазени места"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_HEADER.CHECKBOX.TEXT
-msgid  "Header"
-msgstr "Горен колонтитул"
-
 #: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_DATE.CHECKBOX.TEXT
 msgid  "Date/time"
 msgstr "Дата/час"
 
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_FOOTER.CHECKBOX.TEXT
-msgid  "Footer"
-msgstr "Долен колонтитул"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_PAGE_NUMBER.CHECKBOX.TEXT
-msgid  "Page number"
-msgstr "Номер на страница"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.STR_SLIDE_NUMBER.STRING.TEXT
-msgid  "Slide number"
-msgstr "Номер на кадър"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.STR_MASTER_LAYOUT_TITLE.STRING.TEXT
-msgid  "Master Elements"
-msgstr "Елементи на образци"
-
-#: ui/dlg/tpoption.src#SCALE_TEXT.#DEFINE.TEXT
-msgid  "Scale"
-msgstr "Мащаб"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TABPAGE.TEXT
-msgid  "Contents"
-msgstr "Съдържание"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.GRP_DISPLAY.FIXEDLINE.TEXT
-msgid  "Display"
-msgstr "Визуализиране"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_RULER.CHECKBOX.TEXT
-msgid  "~Rulers visible"
-msgstr "~Видими скали"
-
 #: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_HELPLINES.CHECKBOX.TEXT
 msgid  "~Guides when moving"
 msgstr "~Помощни линии при местене"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_HANDLES_BEZIER.CHECKBOX.TEXT
-msgid  "~All control points in Bézier editor"
-msgstr "~Всички контролни точки в кривите на Безие"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_MOVE_OUTLINE.CHECKBOX.TEXT
-msgid  "~Contour of each individual object"
-msgstr "~Контур на всеки отделен обект"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.TABPAGE.TEXT
-msgid  "Other"
-msgstr "Други"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_TEXT.FIXEDLINE.TEXT
-msgid  "Text objects"
-msgstr "Текстови обекти"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_QUICKEDIT.CHECKBOX.TEXT
 msgid  "Allow quick editing"
@@ -1151,17 +315,9 @@ msgstr "Бързо редактиране"
 msgid  "Only text area selectable"
 msgstr "Само текстовата част е избираема"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_PROGRAMSTART.FIXEDLINE.TEXT
-msgid  "New document"
-msgstr "Нов документ"
-
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_TEMPLATE.CHECKBOX.TEXT
 msgid  "Start with ~wizard"
 msgstr "Стартиране с ~помощник"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_SETTINGS.FIXEDLINE.TEXT
-msgid  "Settings"
-msgstr "Настройки"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_MASTERPAGE_CACHE.CHECKBOX.TEXT
 msgid  "Use background cache"
@@ -1179,25 +335,17 @@ msgstr "Подвижни обекти - винаги"
 msgid  "Do not distort objects in curve"
 msgstr "Обектите в крива не се деформират"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_METRIC.FIXEDTEXT.TEXT
-msgid  "Unit of ~measurement"
-msgstr "~Мерна единица"
-
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_TABSTOP.FIXEDTEXT.TEXT
 msgid  "Ta~b stops"
 msgstr "~Позиции за табулация"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_START_WITH_ACTUAL_PAGE.FIXEDLINE.TEXT
-msgid  "Start presentation"
-msgstr "Стартиране на презентация"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_ACTUAL_PAGE.CHECKBOX.TEXT
 msgid  "Always with current page"
 msgstr "Винаги с текущата страница"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_COMPATIBILITY.FIXEDLINE.TEXT
-msgid  "Compatibility"
-msgstr "Съвместимост"
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_PRESENTER_SCREEN.CHECKBOX.TEXT
+msgid  "With Presenter Screen"
+msgstr ""
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CB_USE_PRINTER_METRICS.CHECKBOX.TEXT
 msgid  "Us~e printer metrics for document formatting"
@@ -1207,157 +355,25 @@ msgstr "~Форматиране на документа чрез метрики�
 msgid  "Add ~spacing between paragraphs and tables (in current document)"
 msgstr "~Добавяне на отстояния между абзаците и таблиците (в текущия документ)"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_ORIGINAL.FIXEDTEXT.TEXT
-msgid  "Original"
-msgstr "Оригинал"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_EQUIVALENT.FIXEDTEXT.TEXT
-msgid  "Equivalent to"
-msgstr "Равносилно на"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_SCALE.FIXEDTEXT.TEXT
-msgid  "~Drawing scale"
-msgstr "~Мащаб на рисунка"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEWIDTH.FIXEDTEXT.TEXT
-msgid  "Page ~width"
-msgstr "~Ширина на страница"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FIXEDTEXT.TEXT
-msgid  "Page ~height"
-msgstr "~Височина на страница"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FIXEDLINE.TEXT
-msgid  "Settings"
-msgstr "Настройки"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.FT_STEPS.FIXEDTEXT.TEXT
-msgid  "Increments"
-msgstr "Стъпки"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.CBX_ATTRIBUTES.CHECKBOX.TEXT
-msgid  "Cross-fade attributes"
-msgstr "Преливане на атрибути"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.CBX_ORIENTATION.CHECKBOX.TEXT
-msgid  "Same orientation"
-msgstr "Еднаква ориентация"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.CHECKBOX.TEXT
-msgid  "Cross-fading"
-msgstr "Преливане"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_PEN.TOOLBOXITEM.TEXT
-msgid  "Pointer"
-msgstr "Показалец"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_FIRST.TOOLBOXITEM.TEXT
-msgid  "First Slide"
-msgstr "Първи кадър"
-
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_PREVIOUS.TOOLBOXITEM.TEXT
 msgid  "Previous Slide"
 msgstr "Предходен кадър"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_NEXT.TOOLBOXITEM.TEXT
-msgid  "Next Slide"
-msgstr "Следващ кадър"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_LAST.TOOLBOXITEM.TEXT
-msgid  "Last Slide"
-msgstr "Последен кадър"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_DRAGTYPE.TOOLBOXITEM.TEXT
-msgid  "Drag Mode"
-msgstr "Режим при плъзгане"
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_SHAPE_FILTER.TOOLBOXITEM.TEXT
 msgid  "Show Shapes"
 msgstr "Показване на фигури"
 
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.LB_DOCS.LISTBOX.QUICKHELPTEXT
-msgid  "Documents"
-msgstr "Документи"
-
 #: ui/dlg/navigatr.src#STR_OBJECTS_TREE.STRING.TEXT
 msgid  "Page Tree"
 msgstr "Дърво на страниците"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.MODALDIALOG.TEXT
-msgid  "Insert Layer"
-msgstr "Вмъкване на слой"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_NAME.FIXEDTEXT.TEXT
-msgid  "~Name"
-msgstr "~Име"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_TITLE.FIXEDTEXT.TEXT
-msgid  "~Title"
-msgstr "~Заглавие"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "~Description"
-msgstr "~Описание"
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_VISIBLE.CHECKBOX.TEXT
 msgid  "~Visible"
 msgstr "~Видим"
 
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_PRINTABLE.CHECKBOX.TEXT
-msgid  "~Printable"
-msgstr "~Печата се"
-
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_LOCKED.CHECKBOX.TEXT
 msgid  "~Locked"
 msgstr "~Заключен"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "Позиция"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RB_BEFORE.RADIOBUTTON.TEXT
-msgid  "~Before"
-msgstr "~Преди"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RB_AFTER.RADIOBUTTON.TEXT
-msgid  "A~fter"
-msgstr "~След"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RADIOBUTTON.TEXT
-msgid  "Insert Slides"
-msgstr "Вмъкване на кадри"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.DOCKINGWINDOW.TEXT
-msgid  "Animation"
-msgstr "Анимация"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "First Image"
-msgstr "Първо изображение"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Backwards"
-msgstr "Назад"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Stop"
-msgstr "Спиране"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Play"
-msgstr "Възпроизвеждане"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Last Image"
-msgstr "Последно изображение"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NUMERICFIELD.QUICKHELPTEXT
-msgid  "Image Number"
-msgstr "Номер на изображение"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TIMEFIELD.QUICKHELPTEXT
-msgid  "Duration"
-msgstr "Времетраене"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM1.STRINGLIST.ITEM
 msgid  "1"
@@ -1375,233 +391,21 @@ msgstr "3"
 msgid  "4"
 msgstr "4"
 
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM5.STRINGLIST.ITEM
-msgid  "5"
-msgstr "5"
-
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM6.STRINGLIST.ITEM
 msgid  "6"
 msgstr "6"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM7.STRINGLIST.ITEM
-msgid  "7"
-msgstr "7"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM8.STRINGLIST.ITEM
-msgid  "8"
-msgstr "8"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM9.STRINGLIST.ITEM
 msgid  "9"
 msgstr "9"
 
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM10.STRINGLIST.ITEM
-msgid  "10"
-msgstr "10"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM11.STRINGLIST.ITEM
-msgid  "12"
-msgstr "12"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM12.STRINGLIST.ITEM
-msgid  "15"
-msgstr "15"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM13.STRINGLIST.ITEM
-msgid  "20"
-msgstr "20"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM14.STRINGLIST.ITEM
-msgid  "25"
-msgstr "25"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM15.STRINGLIST.ITEM
-msgid  "50"
-msgstr "50"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM16.STRINGLIST.ITEM
-msgid  "100"
-msgstr "100"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM17.STRINGLIST.ITEM
-msgid  "500"
-msgstr "500"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM18.STRINGLIST.ITEM
-msgid  "1000"
-msgstr "1000"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM19.STRINGLIST.ITEM
-msgid  "Max."
-msgstr "Макс."
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.STRINGLIST.QUICKHELPTEXT
-msgid  "Loop Count"
-msgstr "Брой повторения"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Apply Object"
-msgstr "Прилагане на обект"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Apply Objects Individually"
-msgstr "Индивидуално прилагане на обекти"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Delete Current Image"
-msgstr "Изтриване на текущото изображение"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Delete All Images"
-msgstr "Изтриване на всички изображения"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FIXEDTEXT.TEXT
-msgid  "Number"
-msgstr "Число"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FIXEDLINE.TEXT
-msgid  "Image"
-msgstr "Изображение"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RADIOBUTTON.TEXT
-msgid  "Group object"
-msgstr "Групиращ обект"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RADIOBUTTON.TEXT
-msgid  "Bitmap object"
-msgstr "Растерен обект"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FIXEDTEXT.TEXT
-msgid  "Alignment"
-msgstr "Подравняване"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Top Left"
-msgstr "Горе ляво"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Left"
-msgstr "Ляво"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Bottom Left"
-msgstr "Долу ляво"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Top"
-msgstr "Горе"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Centered"
-msgstr "Центрирано"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Bottom"
-msgstr "Долу"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Top Right"
-msgstr "Горе дясно"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Right"
-msgstr "Дясно"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-msgid  "Bottom Right"
-msgstr "Долу дясно"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PUSHBUTTON.TEXT
-msgid  "Create"
-msgstr "Създаване"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FIXEDLINE.TEXT
-msgid  "Animation group"
-msgstr "Група за анимация"
-
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.STRING.TEXT
 msgid  "Preview"
 msgstr "Мостра"
 
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TABPAGE.TEXT
-msgid  "Options"
-msgstr "Настройки"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PRINT.FIXEDLINE.TEXT
-msgid  "Contents"
-msgstr "Съдържание"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_DRAW.CHECKBOX.TEXT
-msgid  "~Drawing"
-msgstr "~Рисунки"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_NOTES.CHECKBOX.TEXT
-msgid  "~Notes"
-msgstr "~Бележки"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_HANDOUTS.CHECKBOX.TEXT
-msgid  "Hando~uts"
-msgstr "~Листовки"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_OUTLINE.CHECKBOX.TEXT
-msgid  "Out~line"
-msgstr "~План"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_OUTPUT.FIXEDLINE.TEXT
-msgid  "Quality"
-msgstr "Качество"
-
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RADIOBUTTON.TEXT
 msgid  "Default"
 msgstr "По подразбиране"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RADIOBUTTON.TEXT
-msgid  "Gra~yscale"
-msgstr "~Степени на сивото"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_BLACKWHITE.RADIOBUTTON.TEXT
-msgid  "Black & ~white"
-msgstr "~Черно-бяло"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PRINT_EXT.FIXEDLINE.TEXT
-msgid  "Print"
-msgstr "Отпечатвани елементи"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_PAGENAME.CHECKBOX.TEXT
-msgid  "~Page name"
-msgstr "~Име на страница"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_DATE.CHECKBOX.TEXT
-msgid  "D~ate"
-msgstr "~Дата"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_TIME.CHECKBOX.TEXT
-msgid  "Ti~me"
-msgstr "Ч~ас"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_HIDDEN_PAGES.CHECKBOX.TEXT
-msgid  "H~idden pages"
-msgstr "С~крити страници"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PAGE.FIXEDLINE.TEXT
-msgid  "Page options"
-msgstr "Настройки на страница"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_PAGESIZE.RADIOBUTTON.TEXT
-msgid  "~Fit to page"
-msgstr "~Напасване към страницата"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_PAGETILE.RADIOBUTTON.TEXT
-msgid  "~Tile pages"
-msgstr "~Страници в мозайка"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_BOOKLET.RADIOBUTTON.TEXT
-msgid  "B~rochure"
-msgstr "~Брошура"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_FRONT.CHECKBOX.TEXT
-msgid  "Fr~ont"
-msgstr "~Лицева страна"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_BACK.CHECKBOX.TEXT
 msgid  "Ba~ck"
@@ -1615,33 +419,9 @@ msgstr "Подаване на хартията както в  настройки
 msgid  "~Reply"
 msgstr "~Отговор"
 
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_WEIGHT.MENUITEM.TEXT
-msgid  "~Bold"
-msgstr "~Получер"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_POSTURE.MENUITEM.TEXT
-msgid  "~Italic"
-msgstr "К~урсив"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_UNDERLINE.MENUITEM.TEXT
-msgid  "~Underline"
-msgstr "Под~чертаване"
-
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_STRIKEOUT.MENUITEM.TEXT
 msgid  "~Strikethrough"
 msgstr "~Зачертаване"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_COPY.MENUITEM.TEXT
-msgid  "~Copy"
-msgstr "~Копиране"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_PASTE.MENUITEM.TEXT
-msgid  "~Paste"
-msgstr "Поста~вяне"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MENUITEM.TEXT
-msgid  "~Delete Comment"
-msgstr "~Изтриване на коментара"
 
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MENUITEM.TEXT
 msgid  "Delete All Comments b~y %1"
@@ -1655,93 +435,17 @@ msgstr "Изт~риване на всички коментари"
 msgid  "Delete All Comments ~by %1"
 msgstr "Из~триване на всички коментари от %1"
 
-#: ui/annotations/annotations.src#STR_ANNOTATION_TODAY.STRING.TEXT
-msgid  "Today,"
-msgstr "Днес,"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_YESTERDAY.STRING.TEXT
-msgid  "Yesterday,"
-msgstr "Вчера,"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_NOAUTHOR.STRING.TEXT
-msgid  "(no author)"
-msgstr "(няма автор)"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.STRING.TEXT
-msgid  "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
-msgstr "%PRODUCTNAME Impress достигна до края на презентацията. Желаете ли да започнете отначало?"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.STRING.TEXT
-msgid  "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
-msgstr "%PRODUCTNAME Impress достигна до началото на презентацията. Желаете ли да продължите към края?"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
-msgstr "%PRODUCTNAME Draw достигна до края на документа. Желаете ли да продължите към началото?"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
-msgstr "%PRODUCTNAME Draw достигна до началото на документа. Желаете ли да продължите към края?"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.STRING.TEXT
-msgid  "Insert Comment"
-msgstr "Вмъкване на коментар"
-
 #: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_DELETE.STRING.TEXT
 msgid  "Delete Comment(s)"
 msgstr "Изтриване на коментар(и)"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_MOVE.STRING.TEXT
-msgid  "Move Comment"
-msgstr "Преместване на коментар"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_EDIT.STRING.TEXT
-msgid  "Edit Comment"
-msgstr "Редакция на коментар"
 
 #: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_REPLY.STRING.TEXT
 msgid  "Reply to Comment"
 msgstr "Отговор на коментар"
 
-#: ui/annotations/annotations.src#STR_ANNOTATION_REPLY.STRING.TEXT
-msgid  "Reply to %1"
-msgstr "Отговор до %1"
-
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.STRING.TEXT
 msgid  "Drawing View"
 msgstr "Изглед Рисуване"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.STRING.TEXT
-msgid  "This is where you create and edit drawings."
-msgstr "Тук създавате и редактирате рисунки."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_D.STRING.TEXT
-msgid  "This is where you create and edit slides."
-msgstr "Тук създавате и редактирате кадри."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_N.STRING.TEXT
-msgid  "Outline View"
-msgstr "Изглед План"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_D.STRING.TEXT
-msgid  "This is where you enter or edit text in list form."
-msgstr "Тук въвеждате и редактирате текст във вид на списък."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_N.STRING.TEXT
-msgid  "Slides View"
-msgstr "Изглед Кадри"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_D.STRING.TEXT
-msgid  "This is where you sort slides."
-msgstr "Тук подреждате кадри."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_N.STRING.TEXT
-msgid  "Notes View"
-msgstr "Изглед Бележки"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_D.STRING.TEXT
-msgid  "This is where you enter and view notes."
-msgstr "Тук въвеждате и редактирате бележки."
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_N.STRING.TEXT
 msgid  "Handout View"
@@ -1750,26 +454,6 @@ msgstr "Изглед Листовки"
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_D.STRING.TEXT
 msgid  "This is where you decide on the layout for handouts."
 msgstr "Тук избирате оформлението на листовките."
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MENUITEM.TEXT
-msgid  "~Next"
-msgstr "С~ледващ"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MENUITEM.TEXT
-msgid  "~Previous"
-msgstr "Пр~едишен"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MENUITEM.TEXT
-msgid  "~Go to Slide"
-msgstr "~Скок към кадър"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MENUITEM.TEXT
-msgid  "~First Slide"
-msgstr "~Първи кадър"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MENUITEM.TEXT
-msgid  "~Last Slide"
-msgstr "П~оследен кадър"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PEN_MODE.MENUITEM.TEXT
 #, fuzzy
@@ -1816,59 +500,8 @@ msgstr "~Цвят на молива…"
 msgid  "~Erase all ink on Slide"
 msgstr "~Изтриване на мастилото от кадъра"
 
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Screen"
-msgstr "Е~кран"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Black"
-msgstr "~Черно"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~White"
-msgstr "~Бяло"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~End Show"
-msgstr "Кр~ай на прожекцията"
-
-#: ui/app/menuids4_tmpl.src#MNSUB_GRAPHIC_PORTAL.MN_SUB_GRAPHIC.MENUITEM.TEXT
-msgid  "~Graphics"
-msgstr "~Графика"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.SID_FORMAT_TABLE_DLG.MENUITEM.TEXT
-msgid  "~Table..."
-msgstr "~Таблица…"
-
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
-msgid  "~Cell"
-msgstr "~Клетка"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MENUITEM.TEXT
-msgid  "~Merge"
-msgstr "~Сливане"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MENUITEM.TEXT
-msgid  "~Split..."
-msgstr "~Разделяне…"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MENUITEM.TEXT
-msgid  "~Top"
-msgstr "От~горе"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MENUITEM.TEXT
-msgid  "C~enter"
-msgstr "Ц~ентрирано"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MENUITEM.TEXT
-msgid  "~Bottom"
-msgstr "От~долу"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Row"
 msgstr "~Ред"
 
@@ -1876,54 +509,23 @@ msgstr "~Ред"
 msgid  "Space ~Equally"
 msgstr "~Равни ширини"
 
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Select"
-msgstr "~Избор"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Insert..."
-msgstr "~Вмъкване…"
-
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Delete"
 msgstr "Из~триване"
 
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
-msgid  "Colu~mn"
-msgstr "~Колона"
-
-#: ui/app/strings.src#STR_DRAW_TOOLBOX.STRING.TEXT
-msgid  "Drawings Toolbar"
-msgstr "Лента Чертане"
-
-#: ui/app/strings.src#STR_GRAPHIC_TOOLBOX.STRING.TEXT
-msgid  "Draw toolbar/Graphics"
-msgstr "Лента Чертане (графика)"
-
-#: ui/app/strings.src#STR_SLIDE_TOOLBOX.STRING.TEXT
-msgid  "Slide Bar"
-msgstr "Лента Кадри"
-
-#: ui/app/strings.src#STR_OUTLINE_TOOLBOX.STRING.TEXT
-msgid  "Outline Bar"
-msgstr "Лента План"
-
-#: ui/app/strings.src#STR_DRAW_OBJ_TOOLBOX.STRING.TEXT
-msgid  "Draw Object Bar"
-msgstr "Лента Обекти - чертане"
-
 #: ui/app/strings.src#STR_GRAPHIC_OBJ_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Draw object bar/Graphics"
 msgstr "Лента Обекти - чертане (графика)"
 
 #: ui/app/strings.src#STR_DRAW_OPTIONS_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Options Bar"
 msgstr "Лента Настройки"
 
 #: ui/app/strings.src#STR_GRAPHIC_OPTIONS_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Options bar/Graphics"
 msgstr "Лента Настройки (графика)"
 
@@ -1932,93 +534,10 @@ msgstr "Лента Настройки (графика)"
 msgid  "Presentation"
 msgstr "Презентация"
 
-#: ui/app/strings.src#STR_SLIDE_OBJ_TOOLBOX.STRING.TEXT
-msgid  "Slide Object Bar"
-msgstr "Лента Обекти - кадър"
-
-#: ui/app/strings.src#STR_BEZIER_TOOLBOX.STRING.TEXT
-msgid  "Bézier object bar"
-msgstr "Лента Обекти - Безие"
-
-#: ui/app/strings.src#STR_GLUEPOINTS_TOOLBOX.STRING.TEXT
-msgid  "Glue Point Object Bar"
-msgstr "Лента Обекти - точки за съединяване"
-
-#: ui/app/strings.src#STR_DRAW_TEXT_TOOLBOX.STRING.TEXT
-msgid  "Text Object Bar"
-msgstr "Лента Обекти - текст"
-
-#: ui/app/strings.src#STR_GRAPHIC_TEXT_TOOLBOX.STRING.TEXT
-msgid  "Text Object Bar/Draw"
-msgstr "Лента Обекти - текст (рисуване)"
-
-#: ui/app/strings.src#STR_NULL.STRING.TEXT
-msgid  "None"
-msgstr "Няма"
-
-#: ui/app/strings.src#STR_INSERTPAGE.STRING.TEXT
-msgid  "Insert Slide"
-msgstr "Вмъкване на кадър"
-
-#: ui/app/strings.src#STR_INSERTLAYER.STRING.TEXT
-msgid  "Insert Layer"
-msgstr "Вмъкване на слой"
-
-#: ui/app/strings.src#STR_MODIFYLAYER.STRING.TEXT
-msgid  "Modify Layer"
-msgstr "Промяна на слой"
-
-#: ui/app/strings.src#STR_UNDO_SLIDE_PARAMS.STRING.TEXT
-msgid  "Slide parameter"
-msgstr "Параметри на кадъра"
-
-#: ui/app/strings.src#STR_UNDO_SLIDE_MOVE.STRING.TEXT
-msgid  "Move slide"
-msgstr "Местене на кадър"
-
-#: ui/app/strings.src#STR_UNDO_CUT.STRING.TEXT
-msgid  "Cut"
-msgstr "Изрязване"
-
-#: ui/app/strings.src#STR_UNDO_REPLACE.STRING.TEXT
-msgid  "Replace"
-msgstr "Замяна"
-
-#: ui/app/strings.src#STR_UNDO_DRAGDROP.STRING.TEXT
-msgid  "Drag and Drop"
-msgstr "Влачене и пускане"
-
 #: ui/app/strings.src#STR_INSERTGRAPHIC.STRING.TEXT
+#, fuzzy
 msgid  "Insert picture"
 msgstr "Вмъкване на картина"
-
-#: ui/app/strings.src#STR_SLOW.STRING.TEXT
-msgid  "Slow"
-msgstr "Бавно"
-
-#: ui/app/strings.src#STR_MEDIUM.STRING.TEXT
-msgid  "Medium"
-msgstr "Средно"
-
-#: ui/app/strings.src#STR_FAST.STRING.TEXT
-msgid  "Fast"
-msgstr "Бързо"
-
-#: ui/app/strings.src#STR_UNDO_BEZCLOSE.STRING.TEXT
-msgid  "Close Polygon"
-msgstr "Затваряне на многоъгълник"
-
-#: ui/app/strings.src#STR_SLIDE_MODE.STRING.TEXT
-msgid  "Slide Sorter"
-msgstr "Сортиране на кадри"
-
-#: ui/app/strings.src#STR_DRAW_MODE.STRING.TEXT
-msgid  "Normal"
-msgstr "Обикновен"
-
-#: ui/app/strings.src#STR_OUTLINE_MODE.STRING.TEXT
-msgid  "Outline"
-msgstr "План"
 
 #: ui/app/strings.src#STR_NOTES_MODE.STRING.TEXT
 #, fuzzy
@@ -2026,136 +545,54 @@ msgid  "Notes"
 msgstr "Бележки"
 
 #: ui/app/strings.src#STR_HANDOUT_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Handout"
 msgstr "Листовка"
 
-#: ui/app/strings.src#STR_AUTOLAYOUT_NONE.STRING.TEXT
-msgid  "Blank Slide"
-msgstr "Празен кадър"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_ONLY_TITLE.STRING.TEXT
-msgid  "Title Only"
-msgstr "Само заглавие"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_ONLY_TEXT.STRING.TEXT
-msgid  "Centered Text"
-msgstr "Центриран текст"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_TITLE.STRING.TEXT
-msgid  "Title Slide"
-msgstr "Заглавен кадър"
-
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, Content"
 msgstr "Заглавие, съдържание"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title and 2 Content"
 msgstr "Заглавие и 2 съдържание"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_2CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, Content and 2 Content"
 msgstr "Заглавие, съдържание и 2 съдържание"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, 2 Content and Content"
 msgstr "Заглавие, 2 съдържание и съдържание"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_OVER_2CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, Content over 2 Content"
 msgstr "Заглавие, съдържание над 2 съдържание"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT_OVER_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, 2 Content over Content"
 msgstr "Заглавие, 2 съдържание над съдържание"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_OVER_CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, Content over Content"
 msgstr "Заглавие, съдържание над съдържание"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_4CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, 4 Content"
 msgstr "Заглавие, 4 съдържание"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_6CONTENT.STRING.TEXT
+#, fuzzy
 msgid  "Title, 6 Content"
 msgstr "Заглавие, 6 съдържание"
-
-#: ui/app/strings.src#STR_AL_TITLE_VERT_OUTLINE.STRING.TEXT
-msgid  "Title, Vertical Text"
-msgstr "Заглавие, вертикален текст"
-
-#: ui/app/strings.src#STR_AL_TITLE_VERT_OUTLINE_CLIPART.STRING.TEXT
-msgid  "Title, Vertical Text, Clipart"
-msgstr "Заглавие, вертикален текст, графика"
-
-#: ui/app/strings.src#STR_AL_VERT_TITLE_TEXT_CHART.STRING.TEXT
-msgid  "Vertical Title, Text, Chart"
-msgstr "Вертикално заглавие, текст, диаграма"
-
-#: ui/app/strings.src#STR_AL_VERT_TITLE_VERT_OUTLINE.STRING.TEXT
-msgid  "Vertical Title, Vertical Text"
-msgstr "Вертикално заглавие, вертикален текст"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT1.STRING.TEXT
-msgid  "One Slide"
-msgstr "Един кадър"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT2.STRING.TEXT
-msgid  "Two Slides"
-msgstr "Два кадъра"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT3.STRING.TEXT
-msgid  "Three Slides"
-msgstr "Три кадъра"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT4.STRING.TEXT
-msgid  "Four Slides"
-msgstr "Четири кадъра"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT6.STRING.TEXT
-msgid  "Six Slides"
-msgstr "Шест кадъра"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT9.STRING.TEXT
-msgid  "Nine Slides"
-msgstr "Девет кадъра"
-
-#: ui/app/strings.src#STR_TRANSFORM.STRING.TEXT
-msgid  "transform"
-msgstr "трансформиране"
-
-#: ui/app/strings.src#STR_LINEEND.STRING.TEXT
-msgid  "Line Ends"
-msgstr "Краища на линия"
-
-#: ui/app/strings.src#STR_DESC_LINEEND.STRING.TEXT
-msgid  "Please enter a name for the new arrowhead:"
-msgstr "Моля, въведете име за новия край на линия:"
-
-#: ui/app/strings.src#STR_WARN_NAME_DUPLICATE.STRING.TEXT
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "Избраното име вече съществува. \nМоля, въведете друго име."
-
-#: ui/app/strings.src#STR_UNDO_ANIMATION.STRING.TEXT
-msgid  "Animation parameters"
-msgstr "Параметри на анимацията"
-
-#: ui/app/strings.src#STR_EXPORT_HTML_NAME.STRING.TEXT
-msgid  "Web Page"
-msgstr "Уебстраница"
-
-#: ui/app/strings.src#STR_EXPORT_DIALOG_TITLE.STRING.TEXT
-msgid  "Export"
-msgstr "Експортиране"
-
-#: ui/app/strings.src#STR_UNDO_COPYOBJECTS.STRING.TEXT
-msgid  "Duplicate"
-msgstr "Дублиране"
-
-#: ui/app/strings.src#STR_TITLE_NAMEGROUP.STRING.TEXT
-msgid  "Name Object"
-msgstr "Име на обект"
 
 #: ui/app/strings.src#STR_DESC_NAMEGROUP.STRING.TEXT
 #, fuzzy
@@ -2163,903 +600,239 @@ msgid  "Name"
 msgstr "Име"
 
 #: ui/app/strings.src#STR_WARN_PAGE_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The slide name already exists or is invalid. Please enter another name."
 msgstr "Името на кадър вече съществува или е невалидно. Моля, въведете друго име."
 
-#: ui/app/strings.src#STR_SNAPDLG_SETLINE.STRING.TEXT
-msgid  "Edit Snap Line"
-msgstr "Редактиране на помощна линия"
-
-#: ui/app/strings.src#STR_SNAPDLG_SETPOINT.STRING.TEXT
-msgid  "Edit Snap Point"
-msgstr "Редактиране на помощна точка"
-
-#: ui/app/strings.src#STR_POPUP_EDIT_SNAPLINE.STRING.TEXT
-msgid  "Edit Snap Line..."
-msgstr "Редактиране на помощна линия..."
-
 #: ui/app/strings.src#STR_POPUP_EDIT_SNAPPOINT.STRING.TEXT
+#, fuzzy
 msgid  "Edit Snap Point..."
 msgstr "Редактиране на помощна точка..."
-
-#: ui/app/strings.src#STR_POPUP_DELETE_SNAPLINE.STRING.TEXT
-msgid  "Delete Snap Line"
-msgstr "Изтриване на помощна линия"
-
-#: ui/app/strings.src#STR_POPUP_DELETE_SNAPPOINT.STRING.TEXT
-msgid  "Delete Snap Point"
-msgstr "Изтриване на помощна точка"
-
-#: ui/app/strings.src#STR_IMPRESS.STRING.TEXT
-msgid  "StarImpress 4.0"
-msgstr "StarImpress 4.0"
-
-#: ui/app/strings.src#STR_LAYER.STRING.TEXT
-msgid  "Layer"
-msgstr "Слой"
 
 #: ui/app/strings.src#STR_UNDO_DELETEPAGES.STRING.TEXT
 #, fuzzy
 msgid  "Delete slides"
 msgstr "Изтриване на кадри"
 
-#: ui/app/strings.src#STR_UNDO_INSERTPAGES.STRING.TEXT
-msgid  "Insert slides"
-msgstr "Вмъкване на кадри"
-
 #: ui/app/strings.src#STR_ASK_DELETE_LAYER.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
 msgstr "Наистина ли желаете нивото \"$\" да бъде изтрито?\nБележка: ще бъдат изтрити всички обекти на това ниво!"
-
-#: ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.STRING.TEXT
-msgid  "Do you really want to delete all images?"
-msgstr "Наистина ли желаете всички изображения да бъдат изтрити?"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_TITLE_AND_LAYOUT.STRING.TEXT
-msgid  "Modify title and outline"
-msgstr "Промяна на заглавие и план"
 
 #: ui/app/strings.src#STR_WAV_FILE.STRING.TEXT
 #, fuzzy
 msgid  "Sound"
 msgstr "Звук"
 
-#: ui/app/strings.src#STR_MIDI_FILE.STRING.TEXT
-msgid  "MIDI"
-msgstr "MIDI"
-
-#: ui/app/strings.src#STR_AU_FILE.STRING.TEXT
-msgid  "Sun/NeXT Audio"
-msgstr "Звук - Sun/NeXT"
-
-#: ui/app/strings.src#STR_VOC_FILE.STRING.TEXT
-msgid  "Creative Labs Audio"
-msgstr "Звук - Creative Labs"
-
-#: ui/app/strings.src#STR_AIFF_FILE.STRING.TEXT
-msgid  "Apple/SGI Audio"
-msgstr "Звук - Apple/SGI"
-
-#: ui/app/strings.src#STR_SVX_FILE.STRING.TEXT
-msgid  "Amiga SVX Audio"
-msgstr "Звук - Amiga SVX"
-
-#: ui/app/strings.src#STR_SD_PAGE.STRING.TEXT
-msgid  "Slide"
-msgstr "Кадър"
-
-#: ui/app/strings.src#STR_ALL_FILES.STRING.TEXT
-msgid  "All files (*.*)"
-msgstr "Всички файлове (*.*)"
-
-#: ui/app/strings.src#STR_UNDO_INSERT_TEXTFRAME.STRING.TEXT
-msgid  "Insert text frame"
-msgstr "Вмъкване на текстова рамка"
-
-#: ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.STRING.TEXT
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "Тази функция не може да работи \nс избраните обекти."
-
-#: ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.STRING.TEXT
-msgid  "Insert File"
-msgstr "Вмъкване на файл"
-
-#: ui/app/strings.src#STR_READ_DATA_ERROR.STRING.TEXT
-msgid  "The file could not be loaded!"
-msgstr "Зареждането на файла бе невъзможно!"
-
-#: ui/app/strings.src#STR_SCALE_OBJECTS.STRING.TEXT
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "Форматът на новите страници ще бъде приспособен.\nЖелаете ли приспособяване и на обектите?"
-
-#: ui/app/strings.src#STR_CREATE_PAGES.STRING.TEXT
-msgid  "Create slides"
-msgstr "Създаване на кадри"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_PAGEFORMAT.STRING.TEXT
-msgid  "Modify page format"
-msgstr "Промяна на формата на страницата"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_PAGEBORDER.STRING.TEXT
-msgid  "Modify page margins"
-msgstr "Промяна на полетата на страницата"
-
-#: ui/app/strings.src#STR_EDIT_OBJ.STRING.TEXT
-msgid  "~Edit"
-msgstr "~Редактиране"
-
 #: ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
 msgstr "Това действие изтрива списъка с действия, които\nмогат да бъдат отменени. Досегашните промени\nв документа остават в сила, но не могат да бъдат\nотменени. Желаете ли да продължите с приписването на \nнов дизайн на кадъра?"
 
-#: ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CHECKBOX.TEXT
-msgid  "~Do not show this warning again"
-msgstr "~Това предупреждение да не се показва повече"
-
-#: ui/app/strings.src#RID_UNDO_DELETE_WARNING.CANCELBUTTON.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: ui/app/strings.src#STR_WARN_PRINTFORMAT_FAILURE.STRING.TEXT
-msgid  "The document format could not be set on the specified printer."
-msgstr "Форматът на документа не е съвместим със зададения принтер."
-
-#: ui/app/strings.src#STR_REMOVE_LINK.STRING.TEXT
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "Графиката е свързана с документ. \nЖелаете ли да прекъснете връзката, за да можете да редактирате?"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.STRING.TEXT
-msgid  "Graphics file cannot be opened"
-msgstr "Невъзможно е отварянето на графичен файл"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_IOERROR.STRING.TEXT
-msgid  "Graphics file cannot be read"
-msgstr "Невъзможно е четенето от графичен файл"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_FORMATERROR.STRING.TEXT
-msgid  "Unknown graphics format"
-msgstr "Непознат графичен формат"
-
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_VERSIONERROR.STRING.TEXT
+#, fuzzy
 msgid  "This graphics file version is not supported"
 msgstr "Версията на графичния файл не се поддържа"
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_FILTERERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics filter not found"
 msgstr "Не е намерен графичен филтър"
 
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_TOOBIG.STRING.TEXT
-msgid  "Not enough memory to import graphics"
-msgstr "Няма достатъчно памет за импортиране на графика"
-
-#: ui/app/strings.src#STR_OBJECTS.STRING.TEXT
-msgid  "Objects"
-msgstr "Обекти"
-
 #: ui/app/strings.src#STR_END_SEARCHING.STRING.TEXT
+#, fuzzy
 msgid  "The document search is finished."
 msgstr "Търсенето в документа е завършено."
 
 #: ui/app/strings.src#STR_END_SPELLING.STRING.TEXT
+#, fuzzy
 msgid  "Spellcheck of entire document has been completed."
 msgstr "Проверката на правописа в целия документ е завършена."
 
 #: ui/app/strings.src#STR_END_SPELLING_OBJ.STRING.TEXT
+#, fuzzy
 msgid  "The spellcheck for the selected objects has been completed."
 msgstr "Проверката на правописа за избраните обекти е завършена."
 
-#: ui/app/strings.src#STR_NOLANGUAGE.STRING.TEXT
-msgid  "The selected language is not available."
-msgstr "Избраният език не е достъпен."
-
-#: ui/app/strings.src#STR_ASK_FOR_CONVERT_TO_BEZIER.STRING.TEXT
-msgid  "Convert selected object to curve?"
-msgstr "Желаете ли преобразуване на избрания обект в крива?"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_PRES_OBJECT.STRING.TEXT
-msgid  "Modify presentation object '$'"
-msgstr "Промяна на обекта \"$\""
-
 #: ui/app/strings.src#STR_UNDO_MODIFY_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Slide layout"
 msgstr "Оформление на кадър"
 
-#: ui/app/strings.src#STR_STATSTR_PRINT.STRING.TEXT
-msgid  "Printing..."
-msgstr "Извършва се печатане..."
-
-#: ui/app/strings.src#STR_UNDO_INSERT_FILE.STRING.TEXT
-msgid  "Insert file"
-msgstr "Вмъкване на файл"
-
-#: ui/app/strings.src#STR_SCALE_OBJS_TO_PAGE.STRING.TEXT
-msgid  "Should the graphics be scaled to the new slide format?"
-msgstr "Желаете ли мащабиране на графиката до новия формат на кадъра?"
-
-#: ui/app/strings.src#STR_UNDO_INSERT_SPECCHAR.STRING.TEXT
-msgid  "Insert special character"
-msgstr "Вмъкване на специален знак"
-
-#: ui/app/strings.src#STR_UNDO_SET_PRESLAYOUT.STRING.TEXT
-msgid  "Apply presentation layout"
-msgstr "Прилагане на оформление за презентация"
-
-#: ui/app/strings.src#STR_STRING_NOTFOUND.STRING.TEXT
-msgid  "Search key not found."
-msgstr "Търсеният низ не е намерен."
-
-#: ui/app/strings.src#STR_PLAY.STRING.TEXT
-msgid  "~Play"
-msgstr "~Възпроизвеждане"
-
-#: ui/app/strings.src#STR_STOP.STRING.TEXT
-msgid  "Sto~p"
-msgstr "~Спиране"
-
-#: ui/app/strings.src#STR_UNDO_ORIGINALSIZE.STRING.TEXT
-msgid  "Original Size"
-msgstr "Оригинален размер"
-
 #: ui/app/strings.src#STR_PRINT_DRAWING.STRING.TEXT
+#, fuzzy
 msgid  " (Drawing)"
 msgstr " (Рисунка)"
 
 #: ui/app/strings.src#STR_PRINT_NOTES.STRING.TEXT
+#, fuzzy
 msgid  " (Notes)"
 msgstr " (Бележки)"
 
 #: ui/app/strings.src#STR_PRINT_HANDOUT.STRING.TEXT
+#, fuzzy
 msgid  " (Handout)"
 msgstr " (Листовки)"
 
 #: ui/app/strings.src#STR_PRINT_OUTLINE.STRING.TEXT
+#, fuzzy
 msgid  " (Outline)"
 msgstr " (План)"
 
-#: ui/app/strings.src#STR_WARN_SCALE_FAIL.STRING.TEXT
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "Зададеният мащаб е невалиден.\nЖелаете ли да въведете нов?"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_NONE.STRING.TEXT
-msgid  "No action"
-msgstr "Без действие"
-
 #: ui/app/strings.src#STR_CLICK_ACTION_PREVPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Go to previous slide"
 msgstr "Преход към предходния кадър"
 
-#: ui/app/strings.src#STR_CLICK_ACTION_NEXTPAGE.STRING.TEXT
-msgid  "Go to next slide"
-msgstr "Преход към следващия кадър"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_FIRSTPAGE.STRING.TEXT
-msgid  "Go to first slide"
-msgstr "Преход към първия кадър"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_LASTPAGE.STRING.TEXT
-msgid  "Go to last slide"
-msgstr "Преход към последния кадър"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_BOOKMARK.STRING.TEXT
-msgid  "Go to page or object"
-msgstr "Преход към страница или обект"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_DOCUMENT.STRING.TEXT
-msgid  "Go to document"
-msgstr "Преход към документ"
-
 #: ui/app/strings.src#STR_CLICK_ACTION_VANISH.STRING.TEXT
+#, fuzzy
 msgid  "Fade object"
 msgstr "Плавно изчезване на обект"
 
-#: ui/app/strings.src#STR_CLICK_ACTION_INVISIBLE.STRING.TEXT
-msgid  "Hide object"
-msgstr "Скриване на обект"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_SOUND.STRING.TEXT
-msgid  "Play sound"
-msgstr "Възпроизвеждане на звук"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_VERB.STRING.TEXT
-msgid  "Start object action"
-msgstr "Изпълняване на действието на обекта"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_PROGRAM.STRING.TEXT
-msgid  "Run program"
-msgstr "Стартиране на програма"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_MACRO.STRING.TEXT
-msgid  "Run macro"
-msgstr "Стартиране на макрос"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_STOPPRESENTATION.STRING.TEXT
-msgid  "Exit presentation"
-msgstr "Изход от презентацията"
-
 #: ui/app/strings.src#STR_EFFECTDLG_JUMP.STRING.TEXT
+#, fuzzy
 msgid  "Target"
 msgstr "Цел"
 
-#: ui/app/strings.src#STR_EFFECTDLG_ACTION.STRING.TEXT
-msgid  "Act~ion"
-msgstr "~Действие"
-
-#: ui/app/strings.src#STR_EFFECTDLG_PAGE_OBJECT.STRING.TEXT
-msgid  "Slide / Object"
-msgstr "Кадър/обект"
-
-#: ui/app/strings.src#STR_EFFECTDLG_DOCUMENT.STRING.TEXT
-msgid  "Document"
-msgstr "Документ"
-
-#: ui/app/strings.src#STR_EFFECTDLG_PROGRAM.STRING.TEXT
-msgid  "Program"
-msgstr "Програма"
-
-#: ui/app/strings.src#STR_EFFECTDLG_MACRO.STRING.TEXT
-msgid  "Macro"
-msgstr "Макрос"
-
-#: ui/app/strings.src#STR_EFFECT_NONE.STRING.TEXT
-msgid  "No Effect"
-msgstr "Без ефект"
-
-#: ui/app/strings.src#STR_INSERT_TEXT.STRING.TEXT
-msgid  "Insert Text"
-msgstr "Вмъкване на текст"
-
-#: ui/app/strings.src#STR_SLIDE_SINGULAR.STRING.TEXT
-msgid  " Slide"
-msgstr " Кадър"
-
-#: ui/app/strings.src#STR_SLIDE_PLURAL.STRING.TEXT
-msgid  " Slides"
-msgstr " Кадри"
-
 #: ui/app/strings.src#STR_LOAD_PRESENTATION_LAYOUT.STRING.TEXT
+#, fuzzy
 msgid  "Load Slide Design"
 msgstr "Зареждане на дизайн на кадър"
 
-#: ui/app/strings.src#STR_DRAGTYPE_URL.STRING.TEXT
-msgid  "Insert as hyperlink"
-msgstr "Вмъкване като хипервръзка"
-
-#: ui/app/strings.src#STR_DRAGTYPE_EMBEDDED.STRING.TEXT
-msgid  "Insert as copy"
-msgstr "Вмъкване като копие"
-
-#: ui/app/strings.src#STR_DRAGTYPE_LINK.STRING.TEXT
-msgid  "Insert as link"
-msgstr "Вмъкване като връзка"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_SMART.STRING.TEXT
-msgid  "Smart"
-msgstr "Интелигентно"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_LEFT.STRING.TEXT
-msgid  "Left"
-msgstr "Ляво"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_RIGHT.STRING.TEXT
-msgid  "Right"
-msgstr "Дясно"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_TOP.STRING.TEXT
-msgid  "Top"
-msgstr "Горе"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_BOTTOM.STRING.TEXT
-msgid  "Bottom"
-msgstr "Долу"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_LO.STRING.TEXT
-msgid  "Top Left?"
-msgstr "Горе ляво?"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_LU.STRING.TEXT
-msgid  "Bottom Left?"
-msgstr "Долу ляво?"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_RO.STRING.TEXT
-msgid  "Top Right?"
-msgstr "Горе дясно?"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_RU.STRING.TEXT
-msgid  "Bottom Right?"
-msgstr "Горе дясно?"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_HORZ.STRING.TEXT
-msgid  "Horizontal"
-msgstr "Хоризонтално"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_VERT.STRING.TEXT
-msgid  "Vertical"
-msgstr "Вертикално"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_ALL.STRING.TEXT
-msgid  "All?"
-msgstr "Всички?"
-
 #: ui/app/strings.src#STR_CANT_PERFORM_IN_LIVEMODE.STRING.TEXT
+#, fuzzy
 msgid  "This action can't be run in the live mode."
 msgstr "Това действие е недопустимо в режим \"на живо\"."
 
-#: ui/app/strings.src#STR_PUBLISH_BACK.STRING.TEXT
-msgid  "Back"
-msgstr "Назад"
-
-#: ui/app/strings.src#STR_PUBLISH_NEXT.STRING.TEXT
-msgid  "Continue"
-msgstr "Продължение"
-
-#: ui/app/strings.src#STR_PUBLISH_OUTLINE.STRING.TEXT
-msgid  "Overview"
-msgstr "Обзор"
-
 #: ui/app/strings.src#STR_EYEDROPPER.STRING.TEXT
+#, fuzzy
 msgid  "Color Replacer"
 msgstr "Замяна на цветове"
 
-#: ui/app/strings.src#STR_UNDO_MORPHING.STRING.TEXT
-msgid  "Cross-fading"
-msgstr "Преливане"
-
-#: ui/app/strings.src#STR_UNDO_COLORRESOLUTION.STRING.TEXT
-msgid  "Color resolution"
-msgstr "Цветова разделителна способност"
-
 #: ui/app/strings.src#STR_UNDO_EXPAND_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Expand Slide"
 msgstr "Разширяване на кадъра"
 
-#: ui/app/strings.src#STR_UNDO_SUMMARY_PAGE.STRING.TEXT
-msgid  "Table of Contents Slide"
-msgstr "Кадър - съдържание"
-
-#: ui/app/strings.src#STR_TWAIN_NO_SOURCE_UNX.STRING.TEXT
-msgid  "No SANE source is available at the moment."
-msgstr "В момента не е достъпен източник SANE."
-
-#: ui/app/strings.src#STR_TWAIN_NO_SOURCE.STRING.TEXT
-msgid  "At present, no TWAIN source is available."
-msgstr "В момента не е достъпен източник TWAIN."
-
-#: ui/app/strings.src#STR_FIX.STRING.TEXT
-msgid  "Fixed"
-msgstr "Фиксиран"
-
-#: ui/app/strings.src#STR_VAR.STRING.TEXT
-msgid  "Variable"
-msgstr "Променлив"
-
-#: ui/app/strings.src#STR_STANDARD_NORMAL.STRING.TEXT
-msgid  "Standard"
-msgstr "Стандартен"
-
-#: ui/app/strings.src#STR_STANDARD_SMALL.STRING.TEXT
-msgid  "Standard (short)"
-msgstr "Стандартен (къс)"
-
-#: ui/app/strings.src#STR_STANDARD_BIG.STRING.TEXT
-msgid  "Standard (long)"
-msgstr "Стандартен (дълъг)"
-
-#: ui/app/strings.src#STR_FILEFORMAT_NAME_EXT.STRING.TEXT
-msgid  "File name"
-msgstr "Име на файл"
-
-#: ui/app/strings.src#STR_FILEFORMAT_FULLPATH.STRING.TEXT
-msgid  "Path/File name"
-msgstr "Път/име на файл"
-
-#: ui/app/strings.src#STR_FILEFORMAT_PATH.STRING.TEXT
-msgid  "Path"
-msgstr "Път"
-
-#: ui/app/strings.src#STR_FILEFORMAT_NAME.STRING.TEXT
-msgid  "File name without extension"
-msgstr "Име на файл без разширението"
-
-#: ui/app/strings.src#STR_RELEASE_GRAPHICLINK.STRING.TEXT
-msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr "Графиката е свързана с документ. Желаете ли да прекъснете връзката, за да можете да редактирате?"
-
-#: ui/app/strings.src#STR_NEW_CUSTOMSHOW.STRING.TEXT
-msgid  "New Custom Slide Show"
-msgstr "Нова прожекция по избор"
-
-#: ui/app/strings.src#STR_COPY_CUSTOMSHOW.STRING.TEXT
-msgid  "Copy "
-msgstr "Копиране "
-
-#: ui/app/strings.src#STR_IMPRESS_DOCUMENT_FULLTYPE_60.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Presentation"
-msgstr "Презентация на %PRODUCTNAME %PRODUCTVERSION"
-
-#: ui/app/strings.src#STR_GRAPHIC_DOCUMENT.STRING.TEXT
-msgid  "Drawing"
-msgstr "Рисунка"
-
-#: ui/app/strings.src#STR_GRAPHIC_DOCUMENT_FULLTYPE_60.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Drawing"
-msgstr "Рисунка на %PRODUCTNAME %PRODUCTVERSION"
-
 #: ui/app/strings.src#STR_BREAK_METAFILE.STRING.TEXT
+#, fuzzy
 msgid  "Ungroup Metafile(s)..."
 msgstr "Разгрупиране на метафайл(ове)..."
 
 #: ui/app/strings.src#STR_BREAK_FAIL.STRING.TEXT
+#, fuzzy
 msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Разгрупирането на всички графични обекти не бе възможно."
 
-#: ui/app/strings.src#STR_PUBDLG_SAMENAME.STRING.TEXT
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "Дизайн с това име вече съществува.\nЖелаете ли да го замените?"
-
-#: ui/app/strings.src#STR_HTMLATTR_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Текст"
-
-#: ui/app/strings.src#STR_HTMLATTR_LINK.STRING.TEXT
-msgid  "Hyperlink"
-msgstr "Хипервръзка"
-
-#: ui/app/strings.src#STR_HTMLATTR_VLINK.STRING.TEXT
-msgid  "Visited link"
-msgstr "Посетена връзка"
-
-#: ui/app/strings.src#STR_HTMLATTR_ALINK.STRING.TEXT
-msgid  "Active link"
-msgstr "Активна връзка"
-
-#: ui/app/strings.src#STR_HTMLEXP_CONTENTS.STRING.TEXT
-msgid  "Table of contents"
-msgstr "Съдържание"
-
-#: ui/app/strings.src#STR_HTMLEXP_CLICKSTART.STRING.TEXT
-msgid  "Click here to start"
-msgstr "Щракнете тук за старт"
-
-#: ui/app/strings.src#STR_HTMLEXP_AUTHOR.STRING.TEXT
-msgid  "Author"
-msgstr "Автор"
-
-#: ui/app/strings.src#STR_HTMLEXP_EMAIL.STRING.TEXT
-msgid  "E-mail"
-msgstr "Е-поща"
-
-#: ui/app/strings.src#STR_HTMLEXP_HOMEPAGE.STRING.TEXT
-msgid  "Homepage"
-msgstr "Домашна страница"
-
-#: ui/app/strings.src#STR_HTMLEXP_INFO.STRING.TEXT
-msgid  "Further information"
-msgstr "Допълнителна информация"
-
-#: ui/app/strings.src#STR_HTMLEXP_DOWNLOAD.STRING.TEXT
-msgid  "Download presentation"
-msgstr "Сваляне на презентацията"
-
 #: ui/app/strings.src#STR_HTMLEXP_NOFRAMES.STRING.TEXT
+#, fuzzy
 msgid  "Unfortunately your browser does not support floating frames."
 msgstr "За съжаление Вашият браузър не поддържа плаващи рамки."
 
-#: ui/app/strings.src#STR_HTMLEXP_FIRSTPAGE.STRING.TEXT
-msgid  "First page"
-msgstr "Първа страница"
-
-#: ui/app/strings.src#STR_HTMLEXP_LASTPAGE.STRING.TEXT
-msgid  "Last page"
-msgstr "Последна страница"
-
-#: ui/app/strings.src#STR_HTMLEXP_SETGRAPHIC.STRING.TEXT
-msgid  "Graphics"
-msgstr "Графика"
-
-#: ui/app/strings.src#STR_HTMLEXP_OUTLINE.STRING.TEXT
-msgid  "With contents"
-msgstr "Със съдържание"
-
-#: ui/app/strings.src#STR_HTMLEXP_NOOUTLINE.STRING.TEXT
-msgid  "Without contents"
-msgstr "Без съдържание"
-
-#: ui/app/strings.src#STR_WEBVIEW_SAVE.STRING.TEXT
-msgid  "To given page"
-msgstr "Към дадена страница"
-
-#: ui/app/strings.src#STR_UNDO_VECTORIZE.STRING.TEXT
-msgid  "Convert bitmap to polygon"
-msgstr "Преобразуване на растер в многоъгълник"
-
-#: ui/app/strings.src#STR_PRES_SOFTEND.STRING.TEXT
-msgid  "Click to exit presentation..."
-msgstr "Щракнете за изход от презентацията..."
-
-#: ui/app/strings.src#STR_PRES_PAUSE.STRING.TEXT
-msgid  "Pause..."
-msgstr "Пауза..."
-
-#: ui/app/strings.src#STR_WIZARD_ORIGINAL.STRING.TEXT
-msgid  "<Original>"
-msgstr "<Оригинал>"
-
-#: ui/app/strings.src#STR_ISLOADING.STRING.TEXT
-msgid  "Loading..."
-msgstr "Зареждане..."
-
-#: ui/app/strings.src#STR_DRAW_GRAF_TOOLBOX.STRING.TEXT
-msgid  "Graphics Object Bar"
-msgstr "Лента Обекти - графика"
-
 #: ui/app/strings.src#STR_UNDO_APPLY_3D_FAVOURITE.STRING.TEXT
+#, fuzzy
 msgid  "Apply 3D favorite"
 msgstr "Предпочитан 3-И ефект"
 
 #: ui/app/strings.src#STR_UNDO_GRAFFILTER.STRING.TEXT
+#, fuzzy
 msgid  "Graphics filter"
 msgstr "Графичен филтър"
 
 #: ui/app/strings.src#STR_WARNING_NOSOUNDFILE.STRING.TEXT
+#, fuzzy
 msgid  "The file %\nis not a valid sound file !"
 msgstr "Файлът %\nне е валиден звуков файл!"
 
-#: ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.STRING.TEXT
-msgid  "Convert to metafile"
-msgstr "Преобразуване в метафайл"
-
-#: ui/app/strings.src#STR_UNDO_CONVERT_TO_BITMAP.STRING.TEXT
-msgid  "Convert to bitmap"
-msgstr "Преобразуване в растерно изображение"
-
-#: ui/app/strings.src#STR_HTMLEXP_ERROR_CREATE_FILE.STRING.TEXT
-msgid  "Cannot create the file $(URL1)."
-msgstr "Създаването на файла $(URL1) е невъзможно."
-
-#: ui/app/strings.src#STR_HTMLEXP_ERROR_OPEN_FILE.STRING.TEXT
-msgid  "Could not open the file $(URL1)."
-msgstr "Отварянето на файла $(URL1) е невъзможно."
-
-#: ui/app/strings.src#STR_HTMLEXP_ERROR_COPY_FILE.STRING.TEXT
-msgid  "The file $(URL1) could not be copied to $(URL2)"
-msgstr "Файлът $(URL1) не може да бъде копиран в $(URL2)"
-
-#: ui/app/strings.src#STR_PAGE_BACKGROUND_TITLE.STRING.TEXT
-msgid  "Page Settings"
-msgstr "Настройка на страницата"
-
-#: ui/app/strings.src#STR_PAGE_BACKGROUND_TXT.STRING.TEXT
-msgid  "Background settings for all pages?"
-msgstr "Желаете ли смяна на фона за всички страници?"
-
-#: ui/app/strings.src#STR_TITLE_RENAMESLIDE.STRING.TEXT
-msgid  "Rename Slide"
-msgstr "Преименуване на кадър"
-
 #: ui/app/strings.src#STR_TITLE_SAVE_AS_PICTURE.STRING.TEXT
+#, fuzzy
 msgid  "Save as Picture"
 msgstr "Съхраняване като рисунка"
 
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_TITLE.STRING.TEXT
-msgid  "Title Area for AutoLayouts"
-msgstr "Заглавна област за автооформление"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_OUTLINE.STRING.TEXT
-msgid  "Object Area for AutoLayouts"
-msgstr "Обектна област за автооформление"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_FOOTER.STRING.TEXT
-msgid  "Footer Area"
-msgstr "Област за долен колонтитул"
-
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Header Area"
 msgstr "Област за горен колонтитул"
 
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_DATETIME.STRING.TEXT
-msgid  "Date Area"
-msgstr "Област за дата"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_SLIDE.STRING.TEXT
-msgid  "Slide Number Area"
-msgstr "Област за номер на кадър"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_NUMBER.STRING.TEXT
-msgid  "Page Number Area"
-msgstr "Област за номер на страница"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_HEADER.STRING.TEXT
-msgid  "<header>"
-msgstr "<горен колонтитул>"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_FOOTER.STRING.TEXT
-msgid  "<footer>"
-msgstr "<долен колонтитул>"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_DATETIME.STRING.TEXT
-msgid  "<date/time>"
-msgstr "<дата/час>"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_NUMBER.STRING.TEXT
-msgid  "<number>"
-msgstr "<число>"
-
 #: ui/app/strings.src#STR_FIELD_PLACEHOLDER_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "<count>"
 msgstr "<брой>"
 
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_NOTES.STRING.TEXT
-msgid  "Notes Area"
-msgstr "Област за бележки"
-
 #: ui/app/strings.src#STR_UNDO_HANGULHANJACONVERSION.STRING.TEXT
+#, fuzzy
 msgid  "Hangul/Hanja Conversion"
 msgstr "Преобразуване хангул/ханджа"
 
-#: ui/app/strings.src#STR_LEFT_PANE_IMPRESS_TITLE.STRING.TEXT
-msgid  "Slides"
-msgstr " Кадри"
-
-#: ui/app/strings.src#STR_LEFT_PANE_DRAW_TITLE.STRING.TEXT
-msgid  "Pages"
-msgstr "Страници"
-
-#: ui/app/strings.src#STR_RIGHT_PANE_TITLE.STRING.TEXT
-msgid  "Tasks"
-msgstr "Задачи"
-
-#: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_TITLE.STRING.TEXT
-msgid  "Master Pages"
-msgstr "Образци за страници"
-
-#: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_TITLE.STRING.TEXT
-msgid  "View"
-msgstr "Изглед"
-
 #: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_LOCK.STRING.TEXT
+#, fuzzy
 msgid  "~Dock Task Pane"
 msgstr "Скачен ~панел за задачи"
 
 #: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_UNLOCK.STRING.TEXT
+#, fuzzy
 msgid  "~Undock Task Pane"
 msgstr "Плаващ па~нел за задачи"
 
-#: ui/app/strings.src#STR_TASKPANEL_CURRENT_MASTER_PAGES_TITLE.STRING.TEXT
-msgid  "Used in This Presentation"
-msgstr "Използвани в тази презентация"
-
-#: ui/app/strings.src#STR_TASKPANEL_RECENT_MASTER_PAGES_TITLE.STRING.TEXT
-msgid  "Recently Used"
-msgstr "Последно използвани"
-
-#: ui/app/strings.src#STR_TASKPANEL_ALL_MASTER_PAGES_TITLE.STRING.TEXT
-msgid  "Available for Use"
-msgstr "Достъпни за използване"
-
-#: ui/app/strings.src#STR_TASKPANEL_NOT_AVAILABLE_SUBSTITUTION.STRING.TEXT
-msgid  "Preview not available"
-msgstr "Няма мостра"
-
-#: ui/app/strings.src#STR_TASKPANEL_PREPARING_PREVIEW_SUBSTITUTION.STRING.TEXT
-msgid  "Preparing preview"
-msgstr "Създава се мостра"
-
-#: ui/app/strings.src#STR_TASKPANEL_LAYOUT_MENU_TITLE.STRING.TEXT
-msgid  "Layouts"
-msgstr "Оформления"
-
-#: ui/app/strings.src#STR_GRAPHICS_STYLE_FAMILY.STRING.TEXT
-msgid  "Graphics Styles"
-msgstr "Графични стилове"
-
-#: ui/app/strings.src#STR_CELL_STYLE_FAMILY.STRING.TEXT
-msgid  "Cell Styles"
-msgstr "Стилове за клетки"
-
-#: ui/app/strings.src#DLG_TABLEDESIGNPANE.STRING.TEXT
-msgid  "Table Designs"
-msgstr "Ди~зайн на таблица"
-
 #: ui/app/strings.src#STR_CUSTOMANIMATIONPANE.STRING.TEXT
+#, fuzzy
 msgid  "Custom Animation"
 msgstr "Анимация по избор"
 
 #: ui/app/strings.src#STR_SLIDE_TRANSITION_PANE.STRING.TEXT
+#, fuzzy
 msgid  "Slide Transition"
 msgstr "Преход между кадрите"
 
 #: ui/app/strings.src#STR_NAVIGATOR_SHOW_NAMED_SHAPES.STRING.TEXT
+#, fuzzy
 msgid  "Named shapes"
 msgstr "Наименувани фигури"
 
-#: ui/app/strings.src#STR_NAVIGATOR_SHOW_ALL_SHAPES.STRING.TEXT
-msgid  "All shapes"
-msgstr "Всички фигури"
-
-#: ui/app/strings.src#STR_NAVIGATOR_SHAPE_BASE_NAME.STRING.TEXT
-msgid  "Shape %1"
-msgstr "Фигура %1"
-
 #: ui/app/strings.src#STR_SET_BACKGROUND_PICTURE.STRING.TEXT
+#, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "Задаване на картина за фон на кадър..."
 
 #: ui/app/strings.src#STR_ACC_DIALOG_DESC.STRING.TEXT
+#, fuzzy
 msgid  "Select a template from which to import page designs."
 msgstr "Изберете шаблон, от който да се импортира оформление на страница."
 
-#: ui/app/strings.src#RID_ANNOTATIONS_START.STRING.TEXT
-msgid  "Comments"
-msgstr "Коментари"
-
 #: ui/app/strings.src#STR_RESET_LAYOUT.STRING.TEXT
+#, fuzzy
 msgid  "Reset Slide Layout"
 msgstr "Нулиране на оформление на кадър"
 
-#: ui/app/strings.src#STR_INSERT_TABLE.STRING.TEXT
-msgid  "Insert Table"
-msgstr "Вмъкване на таблица"
-
 #: ui/app/strings.src#STR_INSERT_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Insert Chart"
 msgstr "Вмъкване на диаграма"
 
 #: ui/app/strings.src#STR_INSERT_PICTURE.STRING.TEXT
+#, fuzzy
 msgid  "Insert Picture"
 msgstr "Вмъкване на картина"
 
 #: ui/app/strings.src#STR_INSERT_MOVIE.STRING.TEXT
+#, fuzzy
 msgid  "Insert Movie"
 msgstr "Вмъкване на филм"
 
-#: ui/app/res_bmp.src#SFXSTYLEFAMILIESRES1.#DEFINE.TEXT
-msgid  "Graphics Styles"
-msgstr "Графични стилове"
-
-#: ui/app/res_bmp.src#SFXSTYLEFAMILIESRES2.#DEFINE.TEXT
-msgid  "Presentation Styles"
-msgstr "Стилове за презентации"
-
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_USED.STRING.TEXT
+#, fuzzy
 msgid  "Applied Styles"
 msgstr "Приложени стилове"
 
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_USERDEF.STRING.TEXT
+#, fuzzy
 msgid  "Custom Styles"
 msgstr "Стилове по избор"
 
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All Styles"
 msgstr "Всички стилове"
-
-#: ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MENUITEM.TEXT
-msgid  "~Distribution..."
-msgstr "~Разпределяне…"
-
-#: ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MENUITEM.TEXT
-msgid  "~Drawing View"
-msgstr "Изглед за ~рисуване"
-
-#: ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MENUITEM.TEXT
-msgid  "~Outline View"
-msgstr "Изглед с ~план"
-
-#: ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MENUITEM.TEXT
-msgid  "~Slide Sorter"
-msgstr "~Сортиране на кадри"
-
-#: ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MENUITEM.TEXT
-msgid  "Slide Sho~w"
-msgstr "П~рожекция"
-
-#: ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MENUITEM.TEXT
-msgid  "~Insert Snap Point/Line..."
-msgstr "~Вмъкване на помощна линия/точка…"
-
-#: ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MENUITEM.TEXT
-msgid  "~Edit..."
-msgstr "~Редактиране…"
 
 #: ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MENUITEM.TEXT
 #, fuzzy
@@ -3067,208 +840,78 @@ msgid  "~Delete"
 msgstr "Из~триване"
 
 #: ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Slide ~Layout"
 msgstr "~Оформление на кадър"
 
-#: ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MENUITEM.TEXT
-msgid  "~Page Setup..."
-msgstr "Н~астройка на страницата…"
-
-#: ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MENUITEM.TEXT
-msgid  "~New Slide"
-msgstr "~Нов кадър"
-
-#: ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MENUITEM.TEXT
-msgid  "~New Master"
-msgstr "~Нов образец"
-
-#: ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MENUITEM.TEXT
-msgid  "~New Page"
-msgstr "~Нова страница"
-
 #: ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MENUITEM.TEXT
+#, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "Задаване на картина за фон на кадър..."
-
-#: ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MENUITEM.TEXT
-msgid  "Display Background of Master"
-msgstr "Показване фона на образеца"
-
-#: ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MENUITEM.TEXT
-msgid  "Display Objects from Master"
-msgstr "Показване на обектите от образеца"
-
-#: ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ITEMLIST.TEXT
-msgid  "Pag~e"
-msgstr "Стран~ица"
-
-#: ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ITEMLIST.TEXT
-msgid  "Slid~e"
-msgstr "~Кадър"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MENUITEM.TEXT
-msgid  "~Rename Layer..."
-msgstr "П~реименуване на слой…"
-
-#: ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MENUITEM.TEXT
-msgid  "D~elete Slide"
-msgstr "Из~триване на кадър"
-
-#: ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MENUITEM.TEXT
-msgid  "D~elete Master"
-msgstr "Из~триване на образец"
-
-#: ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MENUITEM.TEXT
-msgid  "D~elete Page"
-msgstr "Из~триване на страница"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MENUITEM.TEXT
-msgid  "~Rename Slide"
-msgstr "~Преименуване на кадър"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MENUITEM.TEXT
-msgid  "~Rename Master"
-msgstr "~Преименуване на образец"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MENUITEM.TEXT
-msgid  "~Rename Page"
-msgstr "~Преименуване на страница"
-
-#: ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MENUITEM.TEXT
-msgid  "L~ine..."
-msgstr "~Линия…"
-
-#: ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MENUITEM.TEXT
-msgid  "~Area..."
-msgstr "Обл~аст…"
-
-#: ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MENUITEM.TEXT
-msgid  "~Text..."
-msgstr "~Текст…"
-
-#: ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MENUITEM.TEXT
-msgid  "~Connector..."
-msgstr "~Съединителна линия…"
-
-#: ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MENUITEM.TEXT
-msgid  "Reset ~Routing"
-msgstr "Възстановяване п~ътя на линията"
-
-#: ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MENUITEM.TEXT
-msgid  "Dimen~sions..."
-msgstr "О~размеряване…"
-
-#: ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MENUITEM.TEXT
-msgid  "Position and Si~ze..."
-msgstr "По~зиция и размер…"
 
 #: ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MENUITEM.TEXT
 msgid  "Edit ~Points"
 msgstr "Р~едактиране на възли"
 
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MENUITEM.TEXT
-msgid  "Arra~nge"
-msgstr "Под~реждане"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MENUITEM.TEXT
-msgid  "~Bring to Front"
-msgstr "~Изнасяне отпред"
-
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Преместване на~пред"
 
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MENUITEM.TEXT
-msgid  "Send Back~ward"
-msgstr "Преместване на~зад"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MENUITEM.TEXT
-msgid  "~Send to Back"
-msgstr "Изн~асяне отзад"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MENUITEM.TEXT
-msgid  "In Front of ~Object"
-msgstr "Пред ~обекта"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MENUITEM.TEXT
-msgid  "Be~hind Object"
-msgstr "За~д обекта"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MENUITEM.TEXT
-msgid  "~Reverse"
-msgstr "В обратен ~ред"
-
 #: ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "C~haracter..."
 msgstr "~Знак…"
 
-#: ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MENUITEM.TEXT
-msgid  "P~aragraph..."
-msgstr "~Абзац…"
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MENUITEM.TEXT
-msgid  "~Font"
-msgstr "~Шрифт"
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MENUITEM.TEXT
-msgid  "~Size"
-msgstr "~Размер на шрифта"
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MENUITEM.TEXT
-msgid  "St~yle"
-msgstr "На~чертание"
-
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Bold"
 msgstr "Получер"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Italic"
 msgstr "Курсив"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_OVERLINE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Overline"
 msgstr "Надчертан"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Underline"
 msgstr "Подчертан"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "Зачертан"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MENUITEM.TEXT
+#, fuzzy
 msgid  "Shadow"
 msgstr "Сянка"
 
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MENUITEM.TEXT
-msgid  "~Contour"
-msgstr "~Контур"
-
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~Междуредия"
 
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MENUITEM.TEXT
+#, fuzzy
 msgid  "Single Line Spacing"
 msgstr "Единични междуредия"
 
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MENUITEM.TEXT
+#, fuzzy
 msgid  "1.5 Lines"
 msgstr "Междуредия 1,5"
 
-#: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MENUITEM.TEXT
-msgid  "~Double"
-msgstr "~Двойни междуредия"
-
 #: ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MENUITEM.TEXT
+#, fuzzy
 msgid  "S~pecial Character..."
 msgstr "~Специален знак…"
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MENUITEM.TEXT
-msgid  "A~lignment"
-msgstr "П~одравняване"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MENUITEM.TEXT
 msgid  "~Left"
@@ -3284,18 +927,16 @@ msgid  "~Centered"
 msgstr "~Центрирано"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MENUITEM.TEXT
+#, fuzzy
 msgid  "Justified"
 msgstr "Двустранно"
-
-#: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MENUITEM.TEXT
-msgid  "Al~ignment"
-msgstr "П~одравняване"
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MENUITEM.TEXT
 msgid  "~Top"
 msgstr "На~горе"
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MENUITEM.TEXT
+#, fuzzy
 msgid  "C~enter"
 msgstr "Ц~ентрирано"
 
@@ -3308,389 +949,148 @@ msgstr "Над~олу"
 msgid  "Close ~Object"
 msgstr "Затваряне на ~обект"
 
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MENUITEM.TEXT
-msgid  "~Move Points"
-msgstr "~Местене на възли"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MENUITEM.TEXT
-msgid  "Insert ~Points"
-msgstr "~Вмъкване на възли"
-
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Delete Points"
 msgstr "Из~триване на възли"
 
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MENUITEM.TEXT
-msgid  "~Split Curve"
-msgstr "~Разделяне на крива"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MENUITEM.TEXT
-msgid  "Con~vert to Curve"
-msgstr "Преобраз~уване в крива"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MENUITEM.TEXT
-msgid  "~Corner"
-msgstr "~Ъгъл"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MENUITEM.TEXT
-msgid  "Smoot~h"
-msgstr "~Гладко"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MENUITEM.TEXT
-msgid  "S~ymmetric"
-msgstr "~Симетрично"
-
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Reduce Points"
 msgstr "~Елиминиране на възли"
 
-#: ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MENUITEM.TEXT
-msgid  "~Group"
-msgstr "~Групиране"
-
-#: ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MENUITEM.TEXT
-msgid  "~Ungroup"
-msgstr "~Разгрупиране"
-
-#: ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MENUITEM.TEXT
-msgid  "Comb~ine"
-msgstr "Ком~биниране"
-
-#: ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MENUITEM.TEXT
-msgid  "~Split"
-msgstr "Раздел~яне"
-
-#: ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MENUITEM.TEXT
-msgid  "~Enter Group"
-msgstr "В~лизане в група"
-
-#: ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MENUITEM.TEXT
-msgid  "E~xit Group"
-msgstr "Из~лизане от група"
-
-#: ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MENUITEM.TEXT
-msgid  "Name..."
-msgstr "Име…"
-
-#: ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MENUITEM.TEXT
-msgid  "Description..."
-msgstr "Описание…"
-
-#: ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MENUITEM.TEXT
-msgid  "~Rehearse Timings"
-msgstr "~Репетиране на темпото"
-
 #: ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Custom Animation..."
 msgstr "Анимация по избор…"
 
-#: ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MENUITEM.TEXT
-msgid  "Int~eraction..."
-msgstr "Инт~ерактивност…"
-
-#: ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MENUITEM.TEXT
-msgid  "Presentation ~Object..."
-msgstr "~Обект в презентация…"
-
-#: ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MENUITEM.TEXT
-msgid  "~Default"
-msgstr "~По подразбиране"
-
 #: ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MENUITEM.TEXT
+#, fuzzy
 msgid  "F~ontwork"
 msgstr "F~ontwork"
 
-#: ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MENUITEM.TEXT
-msgid  "~Original Size"
-msgstr "~Оригинален размер"
-
 #: ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MENUITEM.TEXT
+#, fuzzy
 msgid  "Save as Picture..."
 msgstr "Съхраняване като картина…"
 
 #: ui/app/menuids_tmpl.src#MN_CROP.SID_ATTR_GRAF_CROP.MENUITEM.TEXT
+#, fuzzy
 msgid  "Crop Picture..."
 msgstr "Подрязване на картина…"
 
-#: ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MENUITEM.TEXT
-msgid  "Na~vigator"
-msgstr "~Навигатор"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MENUITEM.TEXT
-msgid  "Insert ~Point"
-msgstr "~Вмъкване на точка"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_PERCENT.SID_GLUE_PERCENT.MENUITEM.TEXT
-msgid  "~Adapt Position to Object"
-msgstr "~Приспособяване на позицията към обекта"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_LEFT.SID_GLUE_HORZALIGN_LEFT.MENUITEM.TEXT
-msgid  "Fixed ~Horizontal Left"
-msgstr "~Хоризонтално фиксиране отляво"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_CENTER.SID_GLUE_HORZALIGN_CENTER.MENUITEM.TEXT
-msgid  "Fixed Horizontal ~Center"
-msgstr "Хоризонтално фиксиране в ~центъра"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_RIGHT.SID_GLUE_HORZALIGN_RIGHT.MENUITEM.TEXT
-msgid  "Fixed Hori~zontal Right"
-msgstr "Хори~зонтално фиксиране отдясно"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_TOP.SID_GLUE_VERTALIGN_TOP.MENUITEM.TEXT
-msgid  "Fixed ~Vertical Top"
-msgstr "~Вертикално фиксиране отгоре"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_CENTER.SID_GLUE_VERTALIGN_CENTER.MENUITEM.TEXT
-msgid  "Fixed V~ertical Center"
-msgstr "В~ертикално фиксиране в центъра"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_BOTTOM.SID_GLUE_VERTALIGN_BOTTOM.MENUITEM.TEXT
-msgid  "Fixed Ver~tical Bottom"
-msgstr "Вер~тикално фиксиране отдолу"
-
-#: ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MENUITEM.TEXT
-msgid  "~Visible Grid"
-msgstr "~Видима мрежа"
-
 #: ui/app/menuids_tmpl.src#MN_GRID_USE.SID_GRID_USE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Snap to Grid"
 msgstr "~Прилепване към мрежата"
 
-#: ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MENUITEM.TEXT
-msgid  "Grid to ~Front"
-msgstr "~Мрежата отпред"
-
-#: ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ITEMLIST.TEXT
-msgid  "~Grid"
-msgstr "~Мрежа"
-
-#: ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MENUITEM.TEXT
-msgid  "~Snap Lines Visible"
-msgstr "~Видими помощни линии"
-
 #: ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Snap to Snap Lines"
 msgstr "Прилепване към помощните линии"
 
 #: ui/app/menuids_tmpl.src#MN_HELPLINES_FRONT.SID_HELPLINES_FRONT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Snap Lines to Front"
 msgstr "Помощните линии отпред"
 
-#: ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ITEMLIST.TEXT
-msgid  "~Snap Lines"
-msgstr "~Помощни линии"
-
-#: ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MENUITEM.TEXT
-msgid  "Propert~ies..."
-msgstr "Сво~йства…"
-
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_THRESHOLD.SID_CONVERT_TO_1BIT_THRESHOLD.MENUITEM.TEXT
-msgid  "1Bit ~Threshold"
-msgstr "1 бит с ~праг"
-
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MENUITEM.TEXT
-msgid  "1 Bit ~Dithering"
-msgstr "1 бит с ~дифузия"
-
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MENUITEM.TEXT
+#, fuzzy
 msgid  "4 Bit G~rayscales"
 msgstr "4 бита в ~степени на сивото"
 
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MENUITEM.TEXT
-msgid  "4 Bit ~Color Palette"
-msgstr "4 бита с ~цветова палитра"
-
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MENUITEM.TEXT
+#, fuzzy
 msgid  "8 Bit Gr~ayscales"
 msgstr "8 бита в ст~епени на сивото"
 
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MENUITEM.TEXT
-msgid  "8 Bit C~olor Palette"
-msgstr "8 бита с ц~ветова палитра"
-
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "24 Bit ~True Colors"
 msgstr "24 ~бита (true color)"
 
 #: ui/app/menuids_tmpl.src#MN_COLORRESOLUTION.DUMMY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "~Color Resolution"
 msgstr "~Цветова разделителна способност"
 
-#: ui/app/menuids_tmpl.src#MNSUB_CONVERT.SID_CONVERT.MENUITEM.TEXT
-msgid  "Con~vert"
-msgstr "Преобраз~уване"
-
-#: ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MENUITEM.TEXT
-msgid  "~Flip"
-msgstr "~Огледално обръщане"
-
-#: ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MENUITEM.TEXT
-msgid  "~Rotate"
-msgstr "~Въртене"
-
-#: ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MENUITEM.TEXT
-msgid  "C~onnect"
-msgstr "~Свързване"
-
-#: ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MENUITEM.TEXT
-msgid  "~Break"
-msgstr "~Разбиване"
-
 #: ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Edit Style..."
 msgstr "Редактиране на стил…"
 
-#: ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MENUITEM.TEXT
-msgid  "H~yperlink..."
-msgstr "~Хипервръзка…"
-
-#: ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MENUITEM.TEXT
-msgid  "Poi~nts"
-msgstr "То~межчки"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MENUITEM.TEXT
-msgid  "~Glue Points"
-msgstr "~Точки за съединяване"
-
-#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MENUITEM.TEXT
-msgid  "La~yer"
-msgstr "~Слой"
-
-#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MENUITEM.TEXT
-msgid  "~Insert"
-msgstr "~Вмъкване"
-
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Modify"
 msgstr "~Промяна"
 
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_DELETE_LAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
 msgstr "Изтриване"
 
-#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MENUITEM.TEXT
-msgid  "~Rename"
-msgstr "П~реименуване"
-
-#: ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MENUITEM.TEXT
-msgid  "To ~Curve"
-msgstr "В ~крива"
-
-#: ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MENUITEM.TEXT
-msgid  "To ~Polygon"
-msgstr "В ~многоъгълник"
-
-#: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MENUITEM.TEXT
-msgid  "To C~ontour"
-msgstr "В ~очертание"
-
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MENUITEM.TEXT
+#, fuzzy
 msgid  "To 3~D"
 msgstr "В тр~иизмерен обект"
 
-#: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MENUITEM.TEXT
-msgid  "To ~Bitmap"
-msgstr "В ~растерно изображение"
-
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MENUITEM.TEXT
+#, fuzzy
 msgid  "To ~Metafile"
 msgstr "В м~етафайл"
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MENUITEM.TEXT
+#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "В ро~тационен обект"
 
 #: ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Vertically"
 msgstr "~Вертикално"
 
 #: ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Horizontally"
 msgstr "~Хоризонтално"
 
 #: ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MENUITEM.TEXT
+#, fuzzy
 msgid  "~3D Effects"
 msgstr "Триизмерни е~фекти"
 
 #: ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Slide Design"
 msgstr "Ди~зайн на кадър"
 
 #: ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "~Преход между кадрите"
-
-#: ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MENUITEM.TEXT
-msgid  "~Show Slide"
-msgstr "П~оказване на кадър"
-
-#: ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MENUITEM.TEXT
-msgid  "~Hide Slide"
-msgstr "~Скриване на кадър"
 
 #: ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Group"
 msgstr "~Групиране"
 
-#: ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MENUITEM.TEXT
-msgid  "~Ungroup"
-msgstr "~Разгрупиране"
-
-#: ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MENUITEM.TEXT
-msgid  "~Edit Group"
-msgstr "~Редактиране на група"
-
-#: ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MENUITEM.TEXT
-msgid  "E~xit group"
-msgstr "Из~лизане от група"
-
 #: ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Toolbars"
 msgstr "~Ленти с инструменти"
 
-#: ui/app/toolbox.src#RID_DRAW_VIEWER_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Function Bar (viewing mode)"
-msgstr "Лента Функции (при разглеждане)"
-
 #: ui/app/toolbox.src#RID_DRAW_MEDIA_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Media Playback"
 msgstr "Възпроизвеждане"
 
-#: ui/app/toolbox.src#RID_DRAW_TABLE_TOOLBOX.STRING.TEXT
-msgid  "Table"
-msgstr "Таблица"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.SID_FORMAT_TABLE_DLG.MENUITEM.TEXT
-msgid  "~Table..."
-msgstr "~Таблица…"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
-msgid  "~Cell"
-msgstr "~Клетка"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MENUITEM.TEXT
-msgid  "~Merge"
-msgstr "~Сливане"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MENUITEM.TEXT
-msgid  "~Split..."
-msgstr "~Разделяне…"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MENUITEM.TEXT
-msgid  "~Top"
-msgstr "От~горе"
-
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MENUITEM.TEXT
+#, fuzzy
 msgid  "C~enter"
 msgstr "Ц~ентрирано"
 
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MENUITEM.TEXT
-msgid  "~Bottom"
-msgstr "От~долу"
-
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Row"
 msgstr "~Ред"
 
@@ -3714,22 +1114,6 @@ msgstr "~Вмъкване…"
 msgid  "~Delete"
 msgstr "Из~триване"
 
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
-msgid  "Colu~mn"
-msgstr "~Колона"
-
-#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_INSERTLAYER.MENUITEM.TEXT
-msgid  "~Insert Layer..."
-msgstr "~Вмъкване на слой…"
-
-#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_MODIFYLAYER.MENUITEM.TEXT
-msgid  "Modify La~yer..."
-msgstr "~Промяна на слой…"
-
-#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_DELETE_LAYER.MENUITEM.TEXT
-msgid  "Delete ~Layer..."
-msgstr "Изтриване на ~слой…"
-
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Apply to All Slides"
@@ -3750,171 +1134,38 @@ msgstr "~Голяма мостра"
 msgid  "Show S~mall Preview"
 msgstr "~Малка мостра"
 
-#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MENUITEM.TEXT
-msgid  "~Edit Master..."
-msgstr "~Редактиране на образец…"
-
 #: ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_INSERTPAGE_LAYOUT_MENU.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Insert Slide"
 msgstr "~Вмъкване на кадър…"
 
-#: ui/app/sdstring.src#STR_SAR_NOT_FOUND.STRING.TEXT
-msgid  "Search key not found."
-msgstr "Търсеният низ не е намерен."
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.STRING.TEXT
-msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr "%PRODUCTNAME Impress стигна до края на документа. Желаете ли търсенето да продължи от началото?"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.STRING.TEXT
-msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr "%PRODUCTNAME Impress стигна до началото на документа. Желаете ли търсенето да продължи от края?"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr "%PRODUCTNAME Draw стигна до края на документа. Желаете ли търсенето да продължи от началото?"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr "%PRODUCTNAME Draw стигна до началото на документа. Желаете ли търсенето да продължи от края?"
-
-#: ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MENUITEM.TEXT
-msgid  "~New"
-msgstr "~Нов"
-
-#: ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MENUITEM.TEXT
-msgid  "~Export..."
-msgstr "~Експортиране…"
-
-#: ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MENUITEM.TEXT
-msgid  "Export as PDF..."
-msgstr "Експортиране като PDF…"
-
-#: ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MENUITEM.TEXT
-msgid  "Sen~d"
-msgstr "~Изпращане"
-
-#: ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MENUITEM.TEXT
-msgid  "~Page..."
-msgstr "~Страница…"
-
-#: ui/app/menuids2_tmpl.src#20.#DEFINE.TEXT
-msgid  "~Edit"
-msgstr "~Редактиране"
-
 #: ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MENUITEM.TEXT
+#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "~Специално поставяне…"
 
-#: ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MENUITEM.TEXT
-msgid  "Duplicat~e..."
-msgstr "~Дублиране…"
-
-#: ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MENUITEM.TEXT
-msgid  "Cross-fading..."
-msgstr "Преливане…"
-
-#: ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MENUITEM.TEXT
-msgid  "F~ields..."
-msgstr "~Полета…"
-
-#: ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MENUITEM.TEXT
-msgid  "Delete ~Layer..."
-msgstr "Изтриване на ~слой…"
-
-#: ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MENUITEM.TEXT
-msgid  "Lin~ks..."
-msgstr "~Връзки…"
-
-#: ui/app/menuids2_tmpl.src#23.#DEFINE.TEXT
-msgid  "~View"
-msgstr "~Изглед"
-
-#: ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MENUITEM.TEXT
-msgid  "Main ~Toolbar"
-msgstr "~Главна лента с инструменти"
-
-#: ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MENUITEM.TEXT
-msgid  "Optio~n Bar"
-msgstr "Лента ~Настройки"
-
-#: ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MENUITEM.TEXT
-msgid  "~Presentation"
-msgstr "~Презентация"
-
-#: ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MENUITEM.TEXT
-msgid  "Customi~ze..."
-msgstr "Пе~рсонализиране…"
-
-#: ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MENUITEM.TEXT
-msgid  "~Rulers"
-msgstr "~Скали"
-
-#: ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MENUITEM.TEXT
-msgid  "~Notes View"
-msgstr "Изглед за ~бележки"
-
 #: ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Handout View"
 msgstr "Изглед за ~листовка"
 
-#: ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MENUITEM.TEXT
-msgid  "~Preview"
-msgstr "~Мостра"
-
-#: ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MENUITEM.TEXT
-msgid  "S~lide"
-msgstr "~Кадър"
-
-#: ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MENUITEM.TEXT
-msgid  "~Slide Master"
-msgstr "Образец за ~кадър"
-
-#: ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MENUITEM.TEXT
-msgid  "~Title"
-msgstr "~Заглавие"
-
-#: ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MENUITEM.TEXT
-msgid  "~Notes"
-msgstr "~Бележки"
-
 #: ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Handout"
 msgstr "~Листовка"
 
-#: ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MENUITEM.TEXT
-msgid  "La~yer"
-msgstr "~Слой"
-
 #: ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Wor~kspace"
 msgstr "Ра~ботна площ"
 
-#: ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MENUITEM.TEXT
-msgid  "~Master"
-msgstr "~Образец"
-
-#: ui/app/menuids2_tmpl.src#21.#DEFINE.TEXT
-msgid  "~Insert"
-msgstr "~Вмъкване"
-
 #: ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Slid~e..."
 msgstr "~Кадър…"
 
-#: ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MENUITEM.TEXT
-msgid  "Slid~e"
-msgstr "~Кадър"
-
-#: ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MENUITEM.TEXT
-msgid  "D~uplicate Slide"
-msgstr "~Дублиране на кадър"
-
-#: ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MENUITEM.TEXT
-msgid  "E~xpand Slide"
-msgstr "~Разширяване на кадъра"
-
 #: ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "~Обобщаващ кадър"
 
@@ -3923,167 +1174,38 @@ msgstr "~Обобщаващ кадър"
 msgid  "~Layer..."
 msgstr "~Слой…"
 
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MENUITEM.TEXT
-msgid  "~Date (fixed)"
-msgstr "Д~ата (фиксирана)"
-
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MENUITEM.TEXT
-msgid  "Dat~e (variable)"
-msgstr "Да~та (променлива)"
-
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MENUITEM.TEXT
-msgid  "~Time (fixed)"
-msgstr "~Час (фиксиран)"
-
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MENUITEM.TEXT
+#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "Час (про~менлив)"
 
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MENUITEM.TEXT
-msgid  "~Page Number"
-msgstr "~Номер на страница"
-
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~File Name"
 msgstr "~Име на файл"
 
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MENUITEM.TEXT
-msgid  "~Author"
-msgstr "~Автор"
-
-#: ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MENUITEM.TEXT
-msgid  "~Select Source..."
-msgstr "~Избор на източник…"
-
-#: ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MENUITEM.TEXT
-msgid  "~Request..."
-msgstr "~Заявка…"
-
-#: ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MENUITEM.TEXT
-msgid  "Sp~readsheet"
-msgstr "~Електронна таблица"
-
 #: ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MENUITEM.TEXT
+#, fuzzy
 msgid  "From ~File..."
 msgstr "От ~файл..."
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MENUITEM.TEXT
+#, fuzzy
 msgid  "Chart"
 msgstr "Диаграма"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "П~лаваща рамка…"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~File..."
 msgstr "~Файл…"
 
-#: ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MENUITEM.TEXT
-msgid  "Fiel~ds"
-msgstr "Пол~ета"
-
-#: ui/app/menuids2_tmpl.src#22.#DEFINE.TEXT
-msgid  "F~ormat"
-msgstr "~Форматиране"
-
-#: ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MENUITEM.TEXT
-msgid  "Te~xt..."
-msgstr "Те~кст…"
-
-#: ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MENUITEM.TEXT
-msgid  "Dimen~sions..."
-msgstr "О~размеряване…"
-
-#: ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MENUITEM.TEXT
-msgid  "~Connector..."
-msgstr "~Съединителна линия…"
-
-#: ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MENUITEM.TEXT
-msgid  "Modify ~Layout..."
-msgstr "См~яна на оформлението…"
-
-#: ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MENUITEM.TEXT
-msgid  "Styl~es"
-msgstr "С~тилове"
-
-#: ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#DEFINE.TEXT
-msgid  "~Tools"
-msgstr "~Инструменти"
-
-#: ui/app/menuids2_tmpl.src#26.#DEFINE.TEXT
-msgid  "~Slide Show"
-msgstr "~Прожекция"
-
-#: ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MENUITEM.TEXT
-msgid  "~Check..."
-msgstr "~Проверка…"
-
-#: ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MENUITEM.TEXT
-msgid  "~AutoSpellcheck"
-msgstr "~Автопроверка на правописа"
-
-#: ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MENUITEM.TEXT
-msgid  "~Thesaurus..."
-msgstr "~Синонимен речник…"
-
-#: ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MENUITEM.TEXT
-msgid  "~Hyphenation"
-msgstr "С~ричкопренасяне"
-
-#: ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MENUITEM.TEXT
-msgid  "~AutoCorrect..."
-msgstr "~Автокорекция…"
-
-#: ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MENUITEM.TEXT
-msgid  "~Slide Show Settings..."
-msgstr "~Настройки за прожекция…"
-
-#: ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MENUITEM.TEXT
-msgid  "~Custom Slide Show..."
-msgstr "Прожекция по ~избор…"
-
-#: ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MENUITEM.TEXT
-msgid  "~Animation"
-msgstr "~Анимация"
-
-#: ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MENUITEM.TEXT
-msgid  "~Interaction..."
-msgstr "Инт~ерактивност…"
-
-#: ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MENUITEM.TEXT
-msgid  "~Spellcheck"
-msgstr "П~роверка на правописа"
-
-#: ui/app/menuids2_tmpl.src#24.#DEFINE.TEXT
-msgid  "~Modify"
-msgstr "~Промяна"
-
-#: ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MENUITEM.TEXT
-msgid  "Bring ~Forward"
-msgstr "Преместване на~пред"
-
-#: ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MENUITEM.TEXT
-msgid  "Send Back~ward"
-msgstr "Преместване на~зад"
-
-#: ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MENUITEM.TEXT
-msgid  "In Front of ~Object"
-msgstr "Пред ~обекта"
-
-#: ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MENUITEM.TEXT
-msgid  "Be~hind Object"
-msgstr "За~д обекта"
-
-#: ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MENUITEM.TEXT
-msgid  "~Reverse"
-msgstr "В обратен ~ред"
-
-#: ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MENUITEM.TEXT
-msgid  "~Eyedropper"
-msgstr "~Пипета"
-
 #: ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Gallery"
 msgstr "~Галерия"
 
@@ -4108,629 +1230,114 @@ msgid  "~High Contrast"
 msgstr "~Висок контраст"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Arrange"
 msgstr "Под~реждане"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "~Display Quality"
 msgstr "Качество на о~браза"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "Режим на ~мостра"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.CONTROL.TEXT
+#, fuzzy
 msgid  "Custom Animation"
 msgstr "Анимация по избор"
 
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_EFFECT.FIXEDLINE.TEXT
-msgid  "Effect"
-msgstr "Ефект"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_ADD_EFFECT.PUSHBUTTON.TEXT
-msgid  "~Add..."
-msgstr "~Добавяне..."
-
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_CHANGE_EFFECT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Change..."
 msgstr "~Промяна..."
 
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_REMOVE_EFFECT.PUSHBUTTON.TEXT
-msgid  "~Remove"
-msgstr "~Премахване"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_MODIFY.FIXEDLINE.TEXT
-msgid  "Modify effect"
-msgstr "Промяна на ефект"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_START.FIXEDTEXT.TEXT
-msgid  "~Start"
-msgstr "~Начало"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM1.STRINGLIST.ITEM
-msgid  "On click"
-msgstr "При щракване"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM2.STRINGLIST.ITEM
-msgid  "With previous"
-msgstr "Заедно с предишния"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM3.STRINGLIST.ITEM
-msgid  "After previous"
-msgstr "След предишния"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_PROPERTY.FIXEDTEXT.TEXT
-msgid  "Property"
-msgstr "Свойство"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PUSHBUTTON.TEXT
-msgid  "~..."
-msgstr "~..."
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PUSHBUTTON.QUICKHELPTEXT
-msgid  "Effect Options"
-msgstr "Настройки на ефект"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_SPEED.FIXEDTEXT.TEXT
-msgid  "Sp~eed"
-msgstr "Скор~ост"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_CHANGE_ORDER.FIXEDTEXT.TEXT
-msgid  "Change order:"
-msgstr "Смяна на реда:"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PLAY.PUSHBUTTON.TEXT
-msgid  "~Play"
-msgstr "~Възпроизвеждане"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_SLIDE_SHOW.PUSHBUTTON.TEXT
-msgid  "Slide Sho~w"
-msgstr "П~рожекция"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.CB_AUTOPREVIEW.CHECKBOX.TEXT
-msgid  "Automatic pre~view"
-msgstr "Автоматична ~мостра"
-
 #: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Custom Animation"
 msgstr "Анимация по избор"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_ENTRANCE.PAGEITEM.TEXT
-msgid  "Entrance"
-msgstr "Въвеждане"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EMPHASIS.PAGEITEM.TEXT
-msgid  "Emphasis"
-msgstr "Акцентиране"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EXIT.PAGEITEM.TEXT
-msgid  "Exit"
-msgstr "Завършване"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MOTIONPATH.PAGEITEM.TEXT
-msgid  "Motion Paths"
-msgstr "Траектории"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MISCEFFECTS.PAGEITEM.TEXT
-msgid  "Misc Effects"
-msgstr "Други ефекти"
-
-#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.FT_SPEED.FIXEDTEXT.TEXT
-msgid  "Speed"
-msgstr "Скорост"
-
-#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.CBX_PREVIEW.CHECKBOX.TEXT
-msgid  "Automatic preview"
-msgstr "Автоматичен преглед"
-
-#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.STR_USERPATH.STRING.TEXT
-msgid  "User paths"
-msgstr "Потребителски траектории"
-
-#: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.TABDIALOG.TEXT
-msgid  "Effect Options"
-msgstr "Настройки на ефект"
 
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_EFFECT.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Effect"
 msgstr "Ефект"
 
-#: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_DURATION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Timing"
-msgstr "Темпо"
-
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_TEXT.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Text Animation"
 msgstr "Анимиран текст"
 
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_SETTINGS.FIXEDLINE.TEXT
-msgid  "Settings"
-msgstr "Настройки"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_START.CHECKBOX.TEXT
-msgid  "Accelerated start"
-msgstr "Ускорен старт"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_END.CHECKBOX.TEXT
-msgid  "Decelerated end"
-msgstr "Забавен край"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_AUTORESTART.CHECKBOX.TEXT
-msgid  "Reverse automatically"
-msgstr "Автоматично обръщане"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_ENHANCEMENTS.FIXEDLINE.TEXT
-msgid  "Enhancement"
-msgstr "Подсилване"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_SOUND.FIXEDTEXT.TEXT
-msgid  "Sound"
-msgstr "Звук"
-
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_AFTER_EFFECT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "After animation "
 msgstr "След аним."
 
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM1.STRINGLIST.ITEM
-msgid  "Don't dim"
-msgstr "Без избледняване"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM2.STRINGLIST.ITEM
-msgid  "Dim with color"
-msgstr "Избледняване с цвят"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM3.STRINGLIST.ITEM
-msgid  "Hide after animation"
-msgstr "Скриване след анимацията"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM4.STRINGLIST.ITEM
-msgid  "Hide on next animation"
-msgstr "Скриване при следваща анимация"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_DIMCOLOR.FIXEDTEXT.TEXT
-msgid  "Dim Color"
-msgstr "Цвят"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_ANIM.FIXEDTEXT.TEXT
-msgid  "Text animation"
-msgstr "Анимиран текст"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM1.STRINGLIST.ITEM
-msgid  "All at once"
-msgstr "Всичко едновременно"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM2.STRINGLIST.ITEM
-msgid  "Word by word"
-msgstr "Дума по дума"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM3.STRINGLIST.ITEM
-msgid  "Letter by letter"
-msgstr "Знак по знак"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_DELAY.FIXEDTEXT.TEXT
-msgid  "delay between characters"
-msgstr "с пауза между знаците"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.MF_TEXT_DELAY.METRICFIELD.CUSTOMUNITTEXT
-msgid  "%"
-msgstr "%"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START.FIXEDTEXT.TEXT
-msgid  "Start"
-msgstr "Начало"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM1.STRINGLIST.ITEM
-msgid  "On click"
-msgstr "При щракване"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM2.STRINGLIST.ITEM
-msgid  "With previous"
-msgstr "Заедно с предишния"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM3.STRINGLIST.ITEM
-msgid  "After previous"
-msgstr "След предишния"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START_DELAY.FIXEDTEXT.TEXT
-msgid  "Delay"
-msgstr "Закъснение"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.MF_START_DELAY.METRICFIELD.CUSTOMUNITTEXT
-#, fuzzy
-msgid  "sec"
-msgstr "сек."
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_DURATION.FIXEDTEXT.TEXT
-msgid  "Speed"
-msgstr "Скорост"
-
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_REPEAT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Repeat"
 msgstr "Повтаряне"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.CBX_REWIND.CHECKBOX.TEXT
-msgid  "Rewind when done playing"
-msgstr "Превъртане, когато приключи възпроизвеждането"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FL_TRIGGER.FIXEDLINE.TEXT
-msgid  "Trigger"
-msgstr "Спусък"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_CLICKSEQUENCE.RADIOBUTTON.TEXT
-msgid  "Animate as part of click sequence"
-msgstr "Анимиране като част от последователност от щраквания"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_INTERACTIVE.RADIOBUTTON.TEXT
-msgid  "Start effect on click of"
-msgstr "Старт на ефект при щракване върху"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.FT_GROUP_TEXT.FIXEDTEXT.TEXT
-msgid  "Group text"
-msgstr "Групиране на текст"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM1.STRINGLIST.ITEM
-msgid  "As one object"
-msgstr "Като един обект"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM2.STRINGLIST.ITEM
-msgid  "All paragraphs at once"
-msgstr "Всички абзаци заедно"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM3.STRINGLIST.ITEM
-msgid  "By 1st level paragraphs"
-msgstr "По абзаците от 1-во ниво"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM4.STRINGLIST.ITEM
-msgid  "By 2nd level paragraphs"
-msgstr "По абзаците от 2-ро ниво"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM5.STRINGLIST.ITEM
-msgid  "By 3rd level paragraphs"
-msgstr "По абзаците от 3-то ниво"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM6.STRINGLIST.ITEM
-msgid  "By 4th level paragraphs"
-msgstr "По абзаците от 4-то ниво"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM7.STRINGLIST.ITEM
-msgid  "By 5th level paragraphs"
-msgstr "По абзаците от 5-то ниво"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_GROUP_AUTO.CHECKBOX.TEXT
-msgid  "Automatically after"
-msgstr "Автоматично след"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_ANIMATE_FORM.CHECKBOX.TEXT
-msgid  "Animate attached shape"
-msgstr "Анимиране на прикачената фигура"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_REVERSE.CHECKBOX.TEXT
-msgid  "In reverse order"
-msgstr "В обратен ред"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_CLICK.MENUITEM.TEXT
-msgid  "Start On ~Click"
-msgstr "Старт при ~щракване"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_PREVIOUS.MENUITEM.TEXT
-msgid  "Start ~With Previous"
-msgstr "Старт с ~предишен"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_AFTER_PREVIOUS.MENUITEM.TEXT
-msgid  "Start ~After Previous"
-msgstr "Старт ~след предишен"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_OPTIONS.MENUITEM.TEXT
-msgid  "~Effect Options..."
-msgstr "Настройки на ~ефект..."
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_DURATION.MENUITEM.TEXT
-msgid  "~Timing..."
-msgstr "~Темпо..."
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_REMOVE.MENUITEM.TEXT
-msgid  "~Remove"
-msgstr "~Премахване"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_25.MENUITEM.TEXT
 #, fuzzy
 msgid  "Tiny"
 msgstr "Миниатюрен"
 
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_50.MENUITEM.TEXT
-#, fuzzy
-msgid  "Smaller"
-msgstr "Малък"
-
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MENUITEM.TEXT
 #, fuzzy
 msgid  "Larger"
 msgstr "Голям"
 
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MENUITEM.TEXT
-#, fuzzy
-msgid  "Extra large"
-msgstr "Огромен"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_HORIZONTAL.MENUITEM.TEXT
-msgid  "Horizontal"
-msgstr "Хоризонтално"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_VERTICAL.MENUITEM.TEXT
-msgid  "Vertical"
-msgstr "Вертикално"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_BOTH.MENUITEM.TEXT
-msgid  "Both"
-msgstr "Двата"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_QUARTER_SPIN.MENUITEM.TEXT
-msgid  "Quarter spin"
-msgstr "Четвърт оборот"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_HALF_SPIN.MENUITEM.TEXT
-msgid  "Half spin"
-msgstr "Половин оборот"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_FULL_SPIN.MENUITEM.TEXT
-msgid  "Full spin"
-msgstr "Цял оборот"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_TWO_SPINS.MENUITEM.TEXT
-msgid  "Two spins"
-msgstr "Два оборота"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_CLOCKWISE.MENUITEM.TEXT
-msgid  "Clockwise"
-msgstr "По часовниковата стрелка"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_COUNTERCLOCKWISE.MENUITEM.TEXT
-msgid  "Counter-clockwise"
-msgstr "Срещу часовниковата стрелка"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_BOLD.MENUITEM.TEXT
-msgid  "Bold"
-msgstr "Получер"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_ITALIC.MENUITEM.TEXT
-msgid  "Italic"
-msgstr "Курсив"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_UNDERLINED.MENUITEM.TEXT
-msgid  "Underlined"
-msgstr "Подчертан"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_SLOW.STRING.TEXT
-msgid  "Very slow"
-msgstr "Много бавно"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_SLOW.STRING.TEXT
-msgid  "Slow"
-msgstr "Бавно"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_NORMAL.STRING.TEXT
-msgid  "Medium"
-msgstr "Средно"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_FAST.STRING.TEXT
-msgid  "Fast"
-msgstr "Бързо"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_FAST.STRING.TEXT
-msgid  "Very fast"
-msgstr "Много бързо"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_NONE.STRING.TEXT
-msgid  "none"
-msgstr "няма"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_NEXT_CLICK.STRING.TEXT
-msgid  "Until next click"
-msgstr "До следващото щракване"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_END_OF_SLIDE.STRING.TEXT
-msgid  "Until end of slide"
-msgstr "До края на кадъра"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DIRECTION_PROPERTY.STRING.TEXT
-msgid  "Direction"
-msgstr "Посока"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_ZOOM_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Zoom"
 msgstr "Мащаб"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SPOKES_PROPERTY.STRING.TEXT
-msgid  "Spokes"
-msgstr "Спици"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FIRST_COLOR_PROPERTY.STRING.TEXT
-msgid  "First color"
-msgstr "Първи цвят"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SECOND_COLOR_PROPERTY.STRING.TEXT
-msgid  "Second color"
-msgstr "Втори цвят"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FILL_COLOR_PROPERTY.STRING.TEXT
-msgid  "Fill color"
-msgstr "Цвят за запълване"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STYLE_PROPERTY.STRING.TEXT
 #, fuzzy
 msgid  "Style"
 msgstr "Стил"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_PROPERTY.STRING.TEXT
-msgid  "Font"
-msgstr "Шрифт"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_COLOR_PROPERTY.STRING.TEXT
-msgid  "Font color"
-msgstr "Цвят на шрифта"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_STYLE_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Typeface"
 msgstr "Шрифт"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LINE_COLOR_PROPERTY.STRING.TEXT
-msgid  "Line color"
-msgstr "Цвят на контура"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SIZE_PROPERTY.STRING.TEXT
-msgid  "Font size"
-msgstr "Размер на шрифта"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SCALE_PROPERTY.STRING.TEXT
-msgid  "Size"
-msgstr "Размер"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_AMOUNT_PROPERTY.STRING.TEXT
-msgid  "Amount"
-msgstr "Количество"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_COLOR_PROPERTY.STRING.TEXT
-msgid  "Color"
-msgstr "Цвят"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_NO_SOUND.STRING.TEXT
+#, fuzzy
 msgid  "(No sound)"
 msgstr "(Без звук)"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STOP_PREVIOUS_SOUND.STRING.TEXT
-msgid  "(Stop previous sound)"
-msgstr "(Спиране на предишния звук)"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_BROWSE_SOUND.STRING.TEXT
-msgid  "Other sound..."
-msgstr "Друг звук..."
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SAMPLE.STRING.TEXT
-msgid  "Sample"
-msgstr "Извадка"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_1_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "1 Spoke"
 msgstr "1 спица"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_2_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "2 Spokes"
 msgstr "2 спици"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_3_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "3 Spokes"
 msgstr "3 спици"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_4_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "4 Spokes"
 msgstr "4 спици"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_8_SPOKES.STRING.TEXT
-msgid  "8 Spokes"
-msgstr "8 спици"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_INSTANT.STRING.TEXT
-msgid  "Instant"
-msgstr "Незабавно"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_GRADUAL.STRING.TEXT
-msgid  "Gradual"
-msgstr "Постепенно"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_TRIGGER.STRING.TEXT
-msgid  "Trigger"
-msgstr "Спусък"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.STRING.TEXT
-msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr "Изберете елемент от кадъра, после натиснете \"Добавяне...\", за да прибавите анимационен ефект."
-
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CONTROL.TEXT
+#, fuzzy
 msgid  "Slide Transition"
 msgstr "Преход между кадрите"
 
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_APPLY_TRANSITION.FIXEDLINE.TEXT
-msgid  "Apply to selected slides"
-msgstr "Прилагане върху избрания кадър"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_MODIFY_TRANSITION.FIXEDLINE.TEXT
-msgid  "Modify transition"
-msgstr "Промяна на преход"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SPEED.FIXEDTEXT.TEXT
-msgid  "Speed"
-msgstr "Скорост"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM1.STRINGLIST.ITEM
-msgid  "Slow"
-msgstr "Бавно"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM2.STRINGLIST.ITEM
-msgid  "Medium"
-msgstr "Средно"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM3.STRINGLIST.ITEM
-msgid  "Fast"
-msgstr "Бързо"
-
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SOUND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Sound"
 msgstr "Звук"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM1.STRINGLIST.ITEM
-msgid  "<No Sound>"
-msgstr "<Без звук>"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM2.STRINGLIST.ITEM
-msgid  "<Stop Previous Sound>"
-msgstr "<Спиране на предишния звук>"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM3.STRINGLIST.ITEM
-msgid  "Other Sound..."
-msgstr "Друг звук..."
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_LOOP_SOUND.CHECKBOX.TEXT
-msgid  "Loop until next sound"
-msgstr "Повтаряне до следващия звук"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_ADVANCE_SLIDE.FIXEDLINE.TEXT
-msgid  "Advance slide"
-msgstr "Следващ кадър"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_ON_MOUSE.RADIOBUTTON.TEXT
-msgid  "On mouse click"
-msgstr "При щракване с мишката"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_AUTO.RADIOBUTTON.TEXT
-msgid  "Automatically after"
-msgstr "Автоматично след"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.MF_ADVANCE_AUTO_AFTER.METRICFIELD.CUSTOMUNITTEXT
-msgid  "sec"
-msgstr "сек."
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_APPLY_TO_ALL.PUSHBUTTON.TEXT
-msgid  "Apply to All Slides"
-msgstr "Прилагане върху всички кадри"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_PLAY.PUSHBUTTON.TEXT
-msgid  "Play"
-msgstr "Възпроизвеждане"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_SLIDE_SHOW.PUSHBUTTON.TEXT
-msgid  "Slide Show"
-msgstr "Прожекция"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_AUTO_PREVIEW.CHECKBOX.TEXT
-msgid  "Automatic preview"
-msgstr "Автоматичен преглед"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.STR_NO_TRANSITION.STRING.TEXT
-msgid  "No Transition"
-msgstr "Без преход"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_PAGES.STRING.TEXT
 #, fuzzy
@@ -4762,50 +1369,15 @@ msgstr "Показване на кадър"
 msgid  "Duplicate Slide"
 msgstr "Дублиране на кадър"
 
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_GROUP_NAME.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %s"
-msgstr "%PRODUCTNAME %s"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_CONTENT.STRING.TEXT
-#, fuzzy
-msgid  "Print content"
-msgstr "Съдържание за печат"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_GROUP.STRING.TEXT
-#, fuzzy
-msgid  "Print"
-msgstr "Печат"
-
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT.STRING.TEXT
 #, fuzzy
 msgid  "Document"
 msgstr "Документ"
 
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Slides"
-msgstr " Кадри"
-
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM2.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Handouts"
 msgstr "Листовки"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM3.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Notes"
-msgstr "Бележки"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM4.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Outline"
-msgstr "Очертан"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Slides per page"
-msgstr "Кадри на страница"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM1.ITEMLIST.ITEM
 #, fuzzy
@@ -4841,81 +1413,6 @@ msgstr "6"
 #, fuzzy
 msgid  "9"
 msgstr "9"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER.STRING.TEXT
-#, fuzzy
-msgid  "Order"
-msgstr "Подреждане"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Left to right, then down"
-msgstr "Отляво надясно, после надолу"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Top to bottom, then right"
-msgstr "Отгоре надолу, после надясно"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT.STRING.TEXT
-#, fuzzy
-msgid  "~Contents"
-msgstr "~Съдържание"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_NAME.STRING.TEXT
-#, fuzzy
-msgid  "~Slide name"
-msgstr "~Име на кадър"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_IS_PRINT_NAME.STRING.TEXT
-#, fuzzy
-msgid  "P~age name"
-msgstr "И~ме на страница"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_DATE.STRING.TEXT
-#, fuzzy
-msgid  "~Date and time"
-msgstr "~Дата и час"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_HIDDEN.STRING.TEXT
-#, fuzzy
-msgid  "Hidden pages"
-msgstr "Скрити страници"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_OUTPUT_OPTIONS_GROUP.STRING.TEXT
-#, fuzzy
-msgid  "Output options"
-msgstr "Настройки за изход"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY.STRING.TEXT
-#, fuzzy
-msgid  "Color"
-msgstr "Цвят"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Original colors"
-msgstr "Оригинални цветове"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Grayscale"
-msgstr "Степени на сивото"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM3.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Black & white"
-msgstr "Черно и бяло"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "~Size"
-msgstr "~Размер"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Original size"
-msgstr "Оригинален размер"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM2.ITEMLIST.ITEM
 #, fuzzy
@@ -4987,11 +1484,6 @@ msgstr "Област за печат"
 msgid  "~All slides"
 msgstr "Вс~ички кадри"
 
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "~Slides"
-msgstr " ~Кадри"
-
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM3.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Se~lection"
@@ -5012,47 +1504,8 @@ msgstr "Стр~аници"
 msgid  "Table Design"
 msgstr "Дизайн на таблица"
 
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS_1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Show"
-msgstr "Показване"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Header Row"
-msgstr "Заглавен ред"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Total Row"
-msgstr "Цял ред"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Banded Rows"
-msgstr "Свързани редове"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "First Column"
-msgstr "Първа колона"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Last Column"
-msgstr "Последна колона"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Banded Columns"
-msgstr "Свързани колони"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES_1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Styles"
-msgstr "Стилове"
-
 #: ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DOCKINGWINDOW.TEXT
+#, fuzzy
 msgid  "Notes Window"
 msgstr "Прозорец за бележки"
 
@@ -5066,151 +1519,50 @@ msgstr "Фон"
 msgid  "Background objects"
 msgstr "Фонови обекти"
 
-#: core/glob.src#STR_LAYER_LAYOUT.STRING.TEXT
-msgid  "Layout"
-msgstr "Оформление"
-
 #: core/glob.src#STR_LAYER_CONTROLS.STRING.TEXT
+#, fuzzy
 msgid  "Controls"
 msgstr "Елементи за управление"
-
-#: core/glob.src#STR_LAYER_MEASURELINES.STRING.TEXT
-msgid  "Dimension Lines"
-msgstr "Размерни линии"
 
 #: core/glob.src#STR_PAGE.STRING.TEXT
 #, fuzzy
 msgid  "Slide"
 msgstr "Кадър"
 
-#: core/glob.src#STR_PAGE_NAME.STRING.TEXT
-msgid  "Page"
-msgstr "Страница"
-
-#: core/glob.src#STR_NOTES.STRING.TEXT
-msgid  "(Notes)"
-msgstr "(Бележки)"
-
 #: core/glob.src#STR_HANDOUT.STRING.TEXT
+#, fuzzy
 msgid  "Handouts"
 msgstr "Листовки"
 
-#: core/glob.src#STR_PRESOBJ_MPTITLE.STRING.TEXT
-msgid  "Click to edit the title text format"
-msgstr "Щракнете, за да редактирате формата на заглавието"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLINE.STRING.TEXT
-msgid  "Click to edit the outline text format"
-msgstr "Щракнете, за да редактирате формата на плана"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER2.STRING.TEXT
-msgid  "Second Outline Level"
-msgstr "Второ ниво на плана"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER3.STRING.TEXT
-msgid  "Third Outline Level"
-msgstr "Трето ниво на плана"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER4.STRING.TEXT
-msgid  "Fourth Outline Level"
-msgstr "Четвърто ниво на плана"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER5.STRING.TEXT
-msgid  "Fifth Outline Level"
-msgstr "Пето ниво на плана"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER6.STRING.TEXT
-msgid  "Sixth Outline Level"
-msgstr "Шесто ниво на плана"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER7.STRING.TEXT
-msgid  "Seventh Outline Level"
-msgstr "Седмо ниво на плана"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER8.STRING.TEXT
-msgid  "Eighth Outline Level"
-msgstr "Осмо ниво на плана"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER9.STRING.TEXT
-msgid  "Ninth Outline Level"
-msgstr "Девето ниво на плана"
-
 #: core/glob.src#STR_PRESOBJ_MPNOTESTITLE.STRING.TEXT
+#, fuzzy
 msgid  "Click to move the slide"
 msgstr "Щракнете, за да преместите кадъра"
-
-#: core/glob.src#STR_PRESOBJ_MPNOTESTEXT.STRING.TEXT
-msgid  "Click to edit the notes format"
-msgstr "Щракнете, за да редактирате формата на бележките"
-
-#: core/glob.src#STR_PRESOBJ_TITLE.STRING.TEXT
-msgid  "Click to add title"
-msgstr "Щракнете, за да добавите заглавие"
 
 #: core/glob.src#STR_PRESOBJ_OUTLINE.STRING.TEXT
 #, fuzzy
 msgid  "Click to add text"
 msgstr "Щракнете, за да добавите текст"
 
-#: core/glob.src#STR_PRESOBJ_NOTESTEXT.STRING.TEXT
-msgid  "Click to add notes"
-msgstr "Щракнете, за да добавите бележки"
-
-#: core/glob.src#STR_PRESOBJ_GRAPHIC.STRING.TEXT
-msgid  "Double-click to add graphics"
-msgstr "Щракнете двукратно, за да добавите графика"
-
-#: core/glob.src#STR_PRESOBJ_OBJECT.STRING.TEXT
-msgid  "Double-click to add an object"
-msgstr "Щракнете двукратно, за да добавите обект"
-
 #: core/glob.src#STR_PRESOBJ_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Double-click to add a chart"
 msgstr "Щракнете двукратно, за да добавите диаграма"
 
 #: core/glob.src#STR_PRESOBJ_ORGCHART.STRING.TEXT
+#, fuzzy
 msgid  "Double-click to add an organization chart"
 msgstr "Щракнете двукратно, за да добавите йерархична диаграма"
 
-#: core/glob.src#STR_PRESOBJ_TABLE.STRING.TEXT
-msgid  "Double-click to add a spreadsheet"
-msgstr "Щракнете двукратно, за да добавите електронна таблица"
-
 #: core/glob.src#STR_OUTLINEVIEWSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Outline View"
 msgstr "Изглед План"
 
 #: core/glob.src#STR_DRAWVIEWSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Drawing View"
 msgstr "Изглед Рисуване"
-
-#: core/glob.src#STR_PRESVIEWSHELL.STRING.TEXT
-msgid  "Presentation mode"
-msgstr "Режим Прожекция"
-
-#: core/glob.src#STR_PREVIEWVIEWSHELL.STRING.TEXT
-msgid  "Preview Window"
-msgstr "Прозорец за мостра"
-
-#: core/glob.src#STR_TEXTOBJECTBARSHELL.STRING.TEXT
-msgid  "Text Mode"
-msgstr "Режим Текст"
-
-#: core/glob.src#STR_STDOBJECTBARSHELL.STRING.TEXT
-msgid  "Document Mode"
-msgstr "Режим Документ"
-
-#: core/glob.src#STR_BEZIEROBJECTBARSHELL.STRING.TEXT
-msgid  "Bézier mode"
-msgstr "Режим Безие"
-
-#: core/glob.src#STR_APPLICATIONOBJECTBAR.STRING.TEXT
-msgid  "StarImpress 4.0"
-msgstr "StarImpress 4.0"
-
-#: core/glob.src#STR_GLUEPOINTSOBJECTBARSHELL.STRING.TEXT
-msgid  "Glue Points Mode"
-msgstr "Режим Точки за съединяване"
 
 #: core/glob.src#STR_LAYOUT_DEFAULT_NAME.STRING.TEXT
 #, fuzzy
@@ -5222,115 +1574,47 @@ msgstr "По подразбиране"
 msgid  "Title"
 msgstr "Заглавие"
 
-#: core/glob.src#STR_BAD_PASSWORD_OR_FILE_CORRUPTED.STRING.TEXT
-msgid  "The password is incorrect or the file is damaged."
-msgstr "Паролата е неправилна или файлът е повреден."
-
 #: core/glob.src#STR_UNDO_MOVEPAGES.STRING.TEXT
+#, fuzzy
 msgid  "Move slides"
 msgstr "Местене на кадри"
 
-#: core/glob.src#STR_NOT_ENOUGH_MEMORY.STRING.TEXT
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "Няма достатъчно памет!\nДействието ще бъде прекратено."
-
 #: core/glob.src#STR_POOLSHEET_MEASURE.STRING.TEXT
+#, fuzzy
 msgid  "Dimension Line"
 msgstr "Размерна линия"
 
-#: core/glob.src#STR_POOLSHEET_OBJWITHARROW.STRING.TEXT
-msgid  "Object with arrow"
-msgstr "Обект със стрелка"
-
-#: core/glob.src#STR_POOLSHEET_OBJWITHSHADOW.STRING.TEXT
-msgid  "Object with shadow"
-msgstr "Обект със сянка"
-
-#: core/glob.src#STR_POOLSHEET_OBJWITHOUTFILL.STRING.TEXT
-msgid  "Object without fill"
-msgstr "Обект без запълване"
-
-#: core/glob.src#STR_POOLSHEET_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr "Текст"
-
-#: core/glob.src#STR_POOLSHEET_TEXTBODY.STRING.TEXT
-msgid  "Text body"
-msgstr "Основен текст"
-
-#: core/glob.src#STR_POOLSHEET_TEXTBODY_JUSTIFY.STRING.TEXT
-msgid  "Text body justified"
-msgstr "Основен текст, двустранно подравнен"
+#: core/glob.src#STR_POOLSHEET_OBJNOLINENOFILL.STRING.TEXT
+msgid  "Object with no fill and no line"
+msgstr ""
 
 #: core/glob.src#STR_POOLSHEET_TEXTBODY_INDENT.STRING.TEXT
+#, fuzzy
 msgid  "First line indent"
 msgstr "Отстъп на първия ред"
 
-#: core/glob.src#STR_POOLSHEET_TITLE1.STRING.TEXT
-msgid  "Title1"
-msgstr "Заглавие1"
-
-#: core/glob.src#STR_POOLSHEET_TITLE2.STRING.TEXT
-msgid  "Title2"
-msgstr "Заглавие2"
-
 #: core/glob.src#STR_POOLSHEET_HEADLINE.STRING.TEXT
+#, fuzzy
 msgid  "Heading"
 msgstr "Заглавие"
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE1.STRING.TEXT
+#, fuzzy
 msgid  "Heading1"
 msgstr "Заглавие1"
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE2.STRING.TEXT
+#, fuzzy
 msgid  "Heading2"
 msgstr "Заглавие2"
 
-#: core/glob.src#STR_EMPTY_STYLESHEET_NAME.STRING.TEXT
-msgid  "Blank template"
-msgstr "Празен шаблон"
-
-#: core/glob.src#STR_PSEUDOSHEET_SUBTITLE.STRING.TEXT
-msgid  "Subtitle"
-msgstr "Подзаглавие"
-
-#: core/glob.src#STR_PSEUDOSHEET_OUTLINE.STRING.TEXT
-msgid  "Outline"
-msgstr "План"
-
-#: core/glob.src#STR_PSEUDOSHEET_NOTES.STRING.TEXT
-msgid  "Notes"
-msgstr "Бележки"
-
-#: core/glob.src#STR_GRAFOBJECTBARSHELL.STRING.TEXT
-msgid  "Graphics mode"
-msgstr "Режим на графиката"
-
 #: core/glob.src#STR_MEDIAOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Media Playback"
 msgstr "Възпроизвеждане"
 
-#: core/glob.src#STR_TABLEOBJECTBARSHELL.STRING.TEXT
-msgid  "Table"
-msgstr "Таблица"
-
-#: core/glob.src#STR_POWERPOINT_IMPORT.STRING.TEXT
-msgid  "PowerPoint Import"
-msgstr "Импортиране от PowerPoint"
-
-#: core/glob.src#STR_POOLSHEET_ARROW.STRING.TEXT
-msgid  "Arrow"
-msgstr "Стрелка"
-
-#: core/glob.src#STR_LOAD_DOC.STRING.TEXT
-msgid  "Load Document"
-msgstr "Зареждане на документ"
-
-#: core/glob.src#STR_SAVE_DOC.STRING.TEXT
-msgid  "Save Document"
-msgstr "Съхраняване на документ"
-
 #: core/glob.src#RID_SD_ERRHDL.ERR_CODE_(_ERRCODE_CLASS_READ_,_ERR_FORMAT_ROWCOL_).STRING.TEXT
+#, fuzzy
 msgid  "File format error found at $(ARG1)(row,col)."
 msgstr "Открита е грешка във формата на файла на позиция $(ARG1)(row,col)."
 
@@ -5340,29 +1624,11 @@ msgid  "Format error discovered in the file in sub-document $(ARG1) at position 
 msgstr "Открита е грешка във формата на файла в поддокумент $(ARG1) на позиция $(ARG2)(row,col)."
 
 #: core/glob.src#STR_3DOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "3-D Settings"
 msgstr "Настройки за тримерни обекти"
 
 #: core/glob.src#STR_FONTWORKOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Fontwork"
 msgstr "Обект Fontwork"
-
-#: core/glob.src#STR_POOLSHEET_BANDED_CELL.STRING.TEXT
-msgid  "Banding cell"
-msgstr "Свързване на клетка"
-
-#: core/glob.src#STR_POOLSHEET_HEADER.STRING.TEXT
-msgid  "Header"
-msgstr "Заглавие"
-
-#: core/glob.src#STR_POOLSHEET_TOTAL.STRING.TEXT
-msgid  "Total line"
-msgstr "Сумарен ред"
-
-#: core/glob.src#STR_POOLSHEET_FIRST_COLUMN.STRING.TEXT
-msgid  "First column"
-msgstr "Първа колона"
-
-#: core/glob.src#STR_POOLSHEET_LAST_COLUMN.STRING.TEXT
-msgid  "Last column"
-msgstr "Последна колона"

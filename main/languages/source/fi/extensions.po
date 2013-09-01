@@ -35,17 +35,9 @@ msgstr ""
 msgid  "Address Book Data Source Wizard"
 msgstr "Ohjattu toiminto - osoitekirjan tietolähde"
 
-#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
-msgid  "Address book type"
-msgstr "Osoitekirjan tyyppi"
-
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
 msgid  "Connection Settings"
 msgstr "Yhteysasetukset"
-
-#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
-msgid  "Table selection"
-msgstr "Taulun valinta"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
 msgid  "Field Assignment"
@@ -57,7 +49,7 @@ msgstr "Tietolähteen otsikko"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "%PRODUCTNAME kykenee käyttämään järjestelmässäsi jo olemassa olevia osoitetietoja. Tätä varten täytyy luoda %PRODUCTNAMEin tietolähde, jossa osoitetietosi ovat taulukkomuodossa. Tällä ohjatulla toiminnolla voit luoda tarvittavan tietolähteen."
+msgstr "%PRODUCTNAME kykenee käyttämään järjestelmässäsi jo olemassa olevia osoitetietoja. Tätä varten täytyy luoda %PRODUCTNAMEen tietolähde, jossa osoitetietosi ovat taulukkomuodossa. \n\nTällä ohjatulla toiminnolla voit luoda tarvittavan tietolähteen."
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FIXEDLINE.TEXT
 msgid  "Please select the type of your external address book:"
@@ -66,10 +58,6 @@ msgstr "Valitse ulkoisen osoitekirjan tyyppi:"
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
 msgid  "Evolution"
 msgstr "Evolution"
-
-#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
-msgid  "Groupwise"
-msgstr "Groupwise"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
 msgid  "Evolution LDAP"
@@ -103,10 +91,6 @@ msgstr "Outlook-osoitekirja"
 msgid  "Windows system address book"
 msgstr "Windows-järjestelmän osoitekirja"
 
-#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
-msgid  "Other external data source"
-msgstr "Muu ulkoinen tietolähde"
-
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
 msgstr "Lisätietoja vaaditaan uuden tietolähteen asentamiseksi.\n\nAvaa seuraavaa painiketta napsauttamalla toinen valintaikkuna, johon voit syöttää tarvittavat tiedot."
@@ -125,15 +109,11 @@ msgstr "Valitsemasi ulkoinen tietolähde sisältää useita osoitekirjoja.\nVali
 
 #: abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FIXEDTEXT.TEXT
 msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "Jotta osoitetietojen yhdistäminen malleihin onnistuisi, %PRODUCTNAMEin on tiedettävä, missä kentissä on mitäkin tietoa.\n\nSähköpostiosoitteet voivat olla esimerkiksi kentässä \"sähköposti\", \"s-posti\", \"email\", tms.\n\nAvaa alla olevaa painiketta napsauttamalla toinen valintaikkuna, johon voit syöttää tietolähteen asetukset."
+msgstr "Jotta osoitetietojen yhdistäminen malleihin onnistuisi, %PRODUCTNAMEn on tiedettävä, missä kentissä on mitäkin tietoa.\n\nSähköpostiosoitteet voivat olla esimerkiksi kentässä \"sähköposti\", \"s-posti\", \"email\", tms.\n\nAvaa alla olevaa painiketta napsauttamalla toinen valintaikkuna, johon voit syöttää tietolähteen asetukset."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FIXEDTEXT.TEXT
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "Siinä olivat kaikki tarvittavat tiedot osoitetietojen yhdistämiseksi %PRODUCTNAME-ohjelmistoon.\n\nAnna nyt nimi, jolla haluat rekisteröidä tietolähteen %PRODUCTNAMEissa."
-
-#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
-msgid  "Location"
-msgstr "Sijainti"
+msgstr "Siinä olivat kaikki tarvittavat tiedot osoitetietojen yhdistämiseksi %PRODUCTNAME -ohjelmistoon.\n\nAnna nyt nimi, jolla haluat rekisteröidä tietolähteen %PRODUCTNAMEssa."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
 msgid  "Browse..."
@@ -141,11 +121,7 @@ msgstr "Selaa..."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr "Aseta tämä osoitekirja näkyviin kaikkiin %PRODUCTNAME-moduuleihin."
-
-#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
-msgid  "Address book name"
-msgstr "Osoitekirjan nimi"
+msgstr "Aseta tämä osoitekirja näkyviin kaikkiin %PRODUCTNAME -moduuleihin."
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
@@ -155,13 +131,9 @@ msgstr "Toisella tietolähteellä on jo sama nimi. Tietolähteillä on oltava yk
 msgid  "Please select a type of address book."
 msgstr "Valitse osoitekirjan tyyppi."
 
-#: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
-msgid  "Addresses"
-msgstr "Osoitteet"
-
-#: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
-msgid  "Create Address Data Source"
-msgstr "Luo osoitetietolähde"
+#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
+msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
+msgstr "Tietolähteessä ei ole yhtään taulua.\nHaluatko asettaa sen osoitetietolähteeksi joka tapauksessa?"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
 msgid  "The connection could not be established."
@@ -171,21 +143,9 @@ msgstr "Yhteyden muodostaminen ei onnistunut."
 msgid  "Please check the settings made for the data source."
 msgstr "Tarkista tietolähteen asetukset."
 
-#: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
-msgid  "Address Data - Field Assignment"
-msgstr "Osoitetiedot - kenttien määritys"
-
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
 msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
 msgstr "Tällä hetkellä ei ole määritettyjä kenttiä.\nVoit määrittää ne nyt tai myöhemmin valitsemalla ensin\n\"Tiedosto - Mallit - Osoitekirjan lähde\""
-
-#: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Field selection:"
-msgstr "Kenttävalinta:"
-
-#: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
-msgid  "Table;Query;Sql;Sql [Native]"
-msgstr "Taulu;kysely;Sql;Sql [suora]"
 
 #: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
 msgid  "Bibliography Database"
@@ -195,37 +155,9 @@ msgstr "Lähdeluettelotietokanta"
 msgid  "Do you want to edit the column arrangement?"
 msgstr "Haluatko muokata sarakejärjestystä?"
 
-#: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
-msgid  "Column names"
-msgstr "Sarakkeiden nimet"
-
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
 msgid  "<none>"
 msgstr "<ei mitään>"
-
-#: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
-msgid  "Column Layout for Table %1"
-msgstr "Taulun %1 sarakeasettelu"
-
-#: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
-msgid  "Choose Data Source"
-msgstr "Valitse tietolähde"
-
-#: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
-msgid  "Entry"
-msgstr "Merkintä"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
-msgid  "The following column names could not be assigned:\n"
-msgstr "Seuraavia sarakenimiä ei voitu liittää:\n"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
-msgid  "Article"
-msgstr "Lehtiartikkeli"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
-msgid  "Book"
-msgstr "Kirja"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
 msgid  "Brochures"
@@ -243,10 +175,6 @@ msgstr "Kirjan otos"
 msgid  "Book excerpt with title"
 msgstr "Kirjan otos ja otsikko"
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
-msgid  "Journal"
-msgstr "Aikakausjulkaisu"
-
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
 msgid  "Techn. documentation"
 msgstr "Tekninen asiakirja"
@@ -254,10 +182,6 @@ msgstr "Tekninen asiakirja"
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
 msgid  "Thesis"
 msgstr "Tutkielma"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
-msgid  "Miscellaneous"
-msgstr "Sekalaiset"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
 msgid  "Dissertation"
@@ -267,10 +191,6 @@ msgstr "Väitöskirja"
 msgid  "Research report"
 msgstr "Tutkimusraportti"
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
-msgid  "Unpublished"
-msgstr "Julkaisematon"
-
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
 msgid  "e-mail"
 msgstr "sähköposti"
@@ -279,77 +199,17 @@ msgstr "sähköposti"
 msgid  "WWW document"
 msgstr "Web-asiakirja"
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
-msgid  "User-defined1"
-msgstr "Käyttäjän määrittämä1"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
-msgid  "User-defined2"
-msgstr "Käyttäjän määrittämä2"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
-msgid  "User-defined3"
-msgstr "Käyttäjän määrittämä3"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
-msgid  "User-defined4"
-msgstr "Käyttäjän määrittämä4"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
-msgid  "User-defined5"
-msgstr "Käyttäjän määrittämä5"
-
-#: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
-msgid  "General"
-msgstr "Yleistä"
-
-#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
-msgid  "Insert Section..."
-msgstr "Lisää osa..."
-
-#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
-msgid  "Delete Section..."
-msgstr "Poista osa..."
-
-#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
-msgid  "Modify Name..."
-msgstr "Muuta nimeä..."
-
-#: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
-msgid  "~Short name"
-msgstr "~Lyhyt nimi"
-
-#: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
-msgid  "~Type"
-msgstr "~Tyyppi"
-
-#: bibliography/sections.src#ST_YEAR.STRING.TEXT
-msgid  "~Year"
-msgstr "~Vuosi"
-
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
 msgid  "Author(s)"
 msgstr "Tekijä(t)"
-
-#: bibliography/sections.src#ST_TITLE.STRING.TEXT
-msgid  "Tit~le"
-msgstr "~Otsikko"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
 msgid  "~Publisher"
 msgstr "~Julkaisija"
 
-#: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
-msgid  "A~ddress"
-msgstr "O~soite"
-
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
 msgid  "~ISBN"
 msgstr "IS~BN"
-
-#: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
-msgid  "~Chapter"
-msgstr "~Luku"
 
 #: bibliography/sections.src#ST_PAGE.STRING.TEXT
 msgid  "Pa~ge(s)"
@@ -363,25 +223,9 @@ msgstr "Muokkaaja"
 msgid  "Ed~ition"
 msgstr "~Laitos"
 
-#: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
-msgid  "~Book title"
-msgstr "~Kirjan otsikko"
-
-#: bibliography/sections.src#ST_VOLUME.STRING.TEXT
-msgid  "Volume"
-msgstr "Osan numero"
-
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
 msgid  "Publication t~ype"
 msgstr "~Julkaisun laji"
-
-#: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
-msgid  "Organi~zation"
-msgstr "~Organisaatio"
-
-#: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
-msgid  "Instit~ution"
-msgstr "~Instituutio"
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
 msgid  "University"
@@ -391,29 +235,13 @@ msgstr "Yliopisto"
 msgid  "Type of re~port"
 msgstr "~Raportin tyyppi"
 
-#: bibliography/sections.src#ST_MONTH.STRING.TEXT
-msgid  "~Month"
-msgstr "~Kuukausi"
-
-#: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
-msgid  "~Journal"
-msgstr "~Aikakausjulkaisu"
-
 #: bibliography/sections.src#ST_NUMBER.STRING.TEXT
 msgid  "Numb~er"
 msgstr "~Luku"
 
-#: bibliography/sections.src#ST_SERIES.STRING.TEXT
-msgid  "Se~ries"
-msgstr "Julkaisusa~rja"
-
 #: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
 msgid  "Ann~otation"
 msgstr "Hu~omautus"
-
-#: bibliography/sections.src#ST_NOTE.STRING.TEXT
-msgid  "~Note"
-msgstr "~Muistiinpano"
 
 #: bibliography/sections.src#ST_URL.STRING.TEXT
 msgid  "URL"
@@ -439,61 +267,25 @@ msgstr "Käyttäjän määrittämä ~4"
 msgid  "User-defined field ~5"
 msgstr "Käyttäjän määrittämä ~5"
 
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
-msgid  "Table"
-msgstr "Taulu"
-
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
 msgid  "Search Key"
 msgstr "Etsi"
-
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
-msgid  "AutoFilter"
-msgstr "Automaattinen suodatus"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
 msgid  "Standard Filter"
 msgstr "Oletussuodatin"
 
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
-msgid  "Remove Filter"
-msgstr "Poista suodatin"
-
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
 msgid  "Column Arrangement"
 msgstr "Sarakejärjestys"
-
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
-msgid  "Data Source"
-msgstr "Tietolähde"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
-msgid  "Data"
-msgstr "Tiedot"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
 msgstr "Tällä hetkellä lomaketta, johon ohjausobjekti kuuluu, ei ole sidottu tietolähteeseen (tai ei ole täysin sidottu).\n\nValitse tietolähde ja taulu.\n\n\nHuomaa, että tällä sivulla tehdyt asetukset tulevat voimaan heti sivulta siirryttäessä."
 
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
-msgid  "~Data source:"
-msgstr "~Tietolähde:"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
-msgid  "~..."
-msgstr "~..."
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
-msgid  "~Table / Query:"
-msgstr "~Taulu / Kysely:"
-
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
 msgid  "Database Field"
 msgstr "Tietokantakenttä"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
-msgid  "Do you want to save the value in a database field?"
-msgstr "Haluatko tallentaa arvon tietokannan kenttään?"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, I want to save it in the following database field:"
@@ -503,97 +295,17 @@ msgstr "~Kyllä, tallennan arvon seuraavaan tietokannan kenttään:"
 msgid  "~No, I only want to save the value in the form."
 msgstr "~Ei, haluan tallentaa vain lomakkeen arvon."
 
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
-msgid  "Form"
-msgstr "Lomake"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
-msgid  "Data source"
-msgstr "Tietolähde"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
-msgid  "Content type"
-msgstr "Sisältölaji"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
-msgid  "Content"
-msgstr "Sisältö"
-
-#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Taulukko"
-
-#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
-msgid  "Query"
-msgstr "Kysely"
-
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
 msgid  "SQL command"
 msgstr "SQL-lauseke"
-
-#: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
-msgid  "Group Element Wizard"
-msgstr "Ohjattu ryhmäelementin luominen"
-
-#: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
-msgid  "Table Element Wizard"
-msgstr "Ohjattu taulukkoelementin luominen"
-
-#: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
-msgid  "List Box Wizard"
-msgstr "Ohjattu luetteloruudun luominen"
-
-#: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
-msgid  "Combo Box Wizard"
-msgstr "Ohjattu yhdistelmäruudun luominen"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
 msgid  "The table connection to the data source could not be established."
 msgstr "Taulun tietolähteeseen ei voitu muodostaa yhteyttä."
 
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
-msgid  "Field Selection"
-msgstr "Kentän valinta"
-
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
-msgid  "Table element"
-msgstr "Tauluelementti"
-
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
-msgid  "Existing fields"
-msgstr "Nykyiset kentät"
-
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
-msgid  "Selected fields"
-msgstr "Valitut kentät"
-
-#: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
-msgid  " (Date)"
-msgstr " (Päivämäärä)"
-
-#: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
-msgid  " (Time)"
-msgstr " (Aika)"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
-msgid  "Data"
-msgstr "Tiedot"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
-msgid  "Which ~names do you want to give the option fields?"
-msgstr "Miten haluat ~nimetä valintakentät?"
-
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
 msgid  "~Option fields"
 msgstr "~Valintakentät"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
-msgid  "Default Field Selection"
-msgstr "Kentän oletusvalinta"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
-msgid  "Should one option field be selected as a default?"
-msgstr "Valitaanko yksi valintakenttä oletuskentäksi?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, the following:"
@@ -603,10 +315,6 @@ msgstr "~Kyllä, seuraavat:"
 msgid  "No, one particular field is not going to be selected."
 msgstr "Yhtään kenttää ei valita."
 
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
-msgid  "Field Values"
-msgstr "Kenttien arvot"
-
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
 msgid  "When you select an option, the option group is given a specific value."
 msgstr "Kun asetus valitaan, valintaryhmälle annetaan tietty arvo."
@@ -614,10 +322,6 @@ msgstr "Kun asetus valitaan, valintaryhmälle annetaan tietty arvo."
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
 msgid  "Which ~value do you want to assign to each option?"
 msgstr "Minkä ~arvot haluat antaa valinnoille?"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
-msgid  "Create Option Group"
-msgstr "Luo valintaryhmä"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
 msgid  "Which ~caption is to be given to your option group?"
@@ -630,14 +334,6 @@ msgstr "Kaikki valintaryhmän luontiin tarvittavat tiedot on nyt määritetty."
 #: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
 msgstr "Voit joko tallentaa valintaryhmän arvon tietokannan kenttään tai käyttää sitä myöhemmässä toiminnossa."
-
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
-msgid  "Table Selection"
-msgstr "Taulun valinta"
-
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
-msgid  "Control"
-msgstr "Ohjausobjekti"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
@@ -663,41 +359,13 @@ msgstr "Valitun kentän sisältö näytetään yhdistelmäruudun luettelossa."
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
 msgstr "Valitun kentän sisältö näytetään luetteloruudussa, jos linkitetyt kentät ovat identtiset."
 
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
-msgid  "Field Link"
-msgstr "Kenttälinkki"
-
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
 msgstr "Tästä voit valita kentät, joiden sisällön täytyy täsmätä, jotta valitun näyttökentän arvo tulee näkyviin."
 
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
-msgid  "Field from the ~Value Table"
-msgstr "~Arvotaulun kenttä"
-
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
-msgid  "Field from the ~List Table"
-msgstr "~Luettelotaulun kenttä"
-
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
 msgstr "Voit joko tallentaa yhdistelmäruudun arvon tietokannan kenttään tai käyttää sitä näyttämiseen."
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
-msgid  "<< Back"
-msgstr "<< Edellinen"
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
-msgid  "Next >>"
-msgstr "Seuraava >>"
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
-msgid  "Accept"
-msgstr "Hyväksy"
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
-msgid  "Finish"
-msgstr "Valmis"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 msgid  " - Software License Agreement"
@@ -712,132 +380,111 @@ msgid  "Welcome"
 msgstr "Tervetuloa"
 
 #: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
-msgstr "Tämä on %PRODUCTNAME %PRODUCTVERSION OEM.\n\nVoit käynnistää %PRODUCTNAME %PRODUCTVERSION OEM -ohjelman kirjoittamalla henkilökohtaiset tietosi käyttöoikeustekstin jälkeiseen valintaikkunaan. Tärkeät tiedot löytyvät README-tiedostoista, jotka sijaitsevat %PRODUCTNAME-ohjelmiston asennushakemistossa. Lue nämä tiedostot huolellisesti. Tarkempia tietoa löydät myös Oraclen Web-sivustosta osoitteessa\n\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr "Tämä on %PRODUCTNAME %PRODUCTVERSION OEM.\n\nVoit käynnistää %PRODUCTNAME %PRODUCTVERSION OEM -ohjelman kirjoittamalla henkilökohtaiset tietosi käyttöoikeustekstin jälkeiseen valintaikkunaan. Tärkeät tiedot löytyvät README-tiedostoista, jotka sijaitsevat %PRODUCTNAME -ohjelmiston asennushakemistossa. Lue nämä tiedostot huolellisesti. Tarkempia tietoa löydät myös OpenOffice Web-sivustosta osoitteessa\n\nhttp://www.openoffice.org."
 
 #: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
+#, fuzzy
 msgid  "License Agreement"
 msgstr "Lisenssisopimus"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please follow these steps to proceed with the installation:"
 msgstr "Suorita seuraavat toimenpiteet jatkaaksesi asennusta:"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr "Lue koko lisenssisopimus läpi. Käytä vierityspalkkia tai '%PAGEDOWN'-painiketta nähdäksesi koko lisenssitekstin."
 
-#: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
-msgid  "Page Down"
-msgstr "Sivu alas"
-
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Accept the License Agreement."
 msgstr "Hyväksy lisenssisopimus."
 
 #: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "I accept the terms of the Agreement."
 msgstr "Hyväksyn lisenssisopimuksen."
 
-#: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
-msgstr "~Hyväksy"
-
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
+#, fuzzy
 msgid  "Decline"
 msgstr "~Kieltäydy"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Character"
 msgstr "Merkki"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font"
 msgstr "Fontti"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font Effects"
 msgstr "Fonttitehosteet"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Link fields"
 msgstr "Linkitä kentät"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
 msgstr "Alilomakkeiden avulla voidaan näyttää yksityiskohtaista tietoa päälomakkeen nykyisestä tietueesta. Tätä varten täytyy määrittää, mitkä alalomakkeen sarakkeet vastaavat mitäkin päälomakkeen sarakkeita."
 
-#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
-msgid  "Suggest"
-msgstr "Ehdota"
-
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Sub Form"
 msgstr "Alilomake"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Master Form"
 msgstr "Päälomake"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
+#, fuzzy
 msgid  "The columns of '#' could not be retrieved."
 msgstr "Kohteesta '#' ei saatu haettua sarakkeita."
-
-#: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
-msgid  "Edit mask"
-msgstr "Rajoituslauseke"
-
-#: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
-msgid  "Literal mask"
-msgstr "Oletusteksti"
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
 #, fuzzy
 msgid  "Read-only"
 msgstr "Kirjoitussuojattu"
 
-#: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
-msgid  "Enabled"
-msgstr "Käytössä"
-
 #: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
+#, fuzzy
 msgid  "Visible"
 msgstr "Näkyvissä"
 
-#: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
-msgid  "AutoFill"
-msgstr "Automaattinen täyttö"
-
-#: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
-msgid  "Line count"
-msgstr "Rivimäärä"
-
-#: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
-msgid  "Max. text length"
-msgstr "Suurin tekstin pituus"
-
 #: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
+#, fuzzy
 msgid  "Spin Button"
 msgstr "Askelluspainike"
 
 #: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Strict format"
 msgstr "Ehdoton rajoitus"
 
-#: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
-msgid  "Thousands separator"
-msgstr "Tuhatlukuerotin"
-
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
+#, fuzzy
 msgid  "Printable"
 msgstr "Tulostettava"
 
@@ -850,367 +497,133 @@ msgstr "URL"
 msgid  "Frame"
 msgstr "Kehys"
 
-#: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
-msgid  "Help text"
-msgstr "Ohjeteksti"
-
-#: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
-msgid  "Help URL"
-msgstr "Ohjeen URL-osoite"
-
-#: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
-msgid  "Additional information"
-msgstr "Lisätietoja"
-
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
+#, fuzzy
 msgid  "Password character"
 msgstr "Salasanan merkki"
 
 #: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
+#, fuzzy
 msgid  "Tristate"
 msgstr "Kolmiarvoinen"
 
 #: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
+#, fuzzy
 msgid  "Empty string is NULL"
 msgstr "Tyhjän merkkijonon arvo on NULL"
 
-#: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
-msgid  "Decimal accuracy"
-msgstr "Desimaalitarkkuus"
-
-#: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
-msgid  "Graphics"
-msgstr "Kuvat"
-
-#: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
-msgid  "Default selection"
-msgstr "Oletusvalinta"
-
-#: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
-msgid  "Default button"
-msgstr "Oletuspainike"
-
-#: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
-msgid  "Label Field"
-msgstr "Selitekenttä"
-
-#: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
-msgid  "Label"
-msgstr "Selite"
-
-#: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
-msgid  "Alignment"
-msgstr "Tasaus"
-
 #: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
+#, fuzzy
 msgid  "Vert. Alignment"
 msgstr "Pystytasaus"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
-msgid  "Top"
-msgstr "Yläreuna"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
-msgid  "Middle"
-msgstr "Keskikohta"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
-msgid  "Bottom"
-msgstr "Alareuna"
-
-#: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
-msgid  "Graphics alignment"
-msgstr "Grafiikan tasaus"
-
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
+#, fuzzy
 msgid  "Font"
 msgstr "Fontti"
 
-#: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
-msgid  "Background color"
-msgstr "Taustaväri"
-
-#: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
-msgid  "Border"
-msgstr "Reuna"
-
-#: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
-msgid  "Icon size"
-msgstr "Kuvakkeen koko"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Small"
 msgstr "Pieni"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Large"
 msgstr "Suuri"
 
-#: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
-msgid  "Positioning"
-msgstr "Sijoittelu"
-
-#: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
-msgid  "Navigation"
-msgstr "Siirtyminen"
-
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Acting on a record"
 msgstr "Tietueen käsittely"
 
-#: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
-msgid  "Filtering / Sorting"
-msgstr "Suodatus / lajittelu"
-
-#: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
-msgid  "Horizontal scroll bar"
-msgstr "Vaakavierityspalkki"
-
-#: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
-msgid  "Vertical scroll bar"
-msgstr "Pystyvierityspalkki"
-
-#: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
-msgid  "Word break"
-msgstr "Sanajako"
-
-#: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
-msgid  "Multiline input"
-msgstr "Usean rivin syöttö"
-
-#: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
-msgid  "Multiselection"
-msgstr "Monivalinta"
-
-#: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
-msgid  "Name"
-msgstr "Nimi"
-
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
+#, fuzzy
 msgid  "Tab order"
 msgstr "Sarkainjärjestys"
 
 #: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
+#, fuzzy
 msgid  "Mouse wheel scroll"
 msgstr "Muokkaus hiiren rullalla"
 
-#: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
-msgid  "Filter"
-msgstr "Suodatus"
-
-#: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
-msgid  "Sort"
-msgstr "Lajittele"
-
-#: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
-msgid  "Record marker"
-msgstr "Tietuemerkki"
-
-#: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
-msgid  "Filter proposal"
-msgstr "Suodata ehdotus"
-
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
+#, fuzzy
 msgid  "Navigation bar"
 msgstr "Siirtymistyökalurivi"
 
-#: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
-msgid  "Cycle"
-msgstr "Kierto"
-
 #: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
+#, fuzzy
 msgid  "Tabstop"
 msgstr "Sarkain"
 
-#: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
-msgid  "Data field"
-msgstr "Tietokenttä"
-
-#: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
-msgid  "Dropdown"
-msgstr "Pudotus"
-
-#: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
-msgid  "Bound field"
-msgstr "Sidottu kenttä"
-
-#: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
-msgid  "List content"
-msgstr "Luettelon sisältö"
-
-#: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
-msgid  "Type of list contents"
-msgstr "Luettelon sisältötyyppi"
-
-#: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
-msgid  "Content"
-msgstr "Sisältö"
-
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
+#, fuzzy
 msgid  "Content type"
 msgstr "Sisältölaji"
 
-#: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
-msgid  "Allow additions"
-msgstr "Salli lisäykset"
-
-#: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
-msgid  "Allow deletions"
-msgstr "Salli poistot"
-
-#: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
-msgid  "Allow modifications"
-msgstr "Salli muutokset"
-
-#: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
-msgid  "Add data only"
-msgstr "Lisää vain tietoja"
-
-#: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
-msgid  "Data source"
-msgstr "Tietolähde"
-
-#: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
-msgid  "Link master fields"
-msgstr "Linkitä pääkentät"
-
-#: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
-msgid  "Link slave fields"
-msgstr "Linkitä alisteiset kentät"
-
 #: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
+#, fuzzy
 msgid  "Value min."
 msgstr "Arvo väh."
 
 #: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
+#, fuzzy
 msgid  "Value max."
 msgstr "Arvo enint."
 
-#: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
-msgid  "Incr./decrement value"
-msgstr "Lisäys-/vähennysarvo"
-
-#: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
-msgid  "Currency symbol"
-msgstr "Valuuttasymboli"
-
 #: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
+#, fuzzy
 msgid  "Date min."
 msgstr "Päivämäärä vähint."
 
 #: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
+#, fuzzy
 msgid  "Date max."
 msgstr "Päivämäärä enint."
 
-#: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
-msgid  "Date format"
-msgstr "Päivämäärämuoto"
-
-#: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
-msgid  "Selection"
-msgstr "Valinta"
-
 #: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
+#, fuzzy
 msgid  "Time min."
 msgstr "Aika väh."
 
 #: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
+#, fuzzy
 msgid  "Time max."
 msgstr "Aika enint."
 
-#: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
-msgid  "Time format"
-msgstr "Ajan muoto"
-
-#: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
-msgid  "Prefix symbol"
-msgstr "Symboli etuliitteenä"
-
-#: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
-msgid  "Value"
-msgstr "Arvo"
-
-#: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
-msgid  "Formatting"
-msgstr "Muotoilu"
-
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
+#, fuzzy
 msgid  "Class ID"
 msgstr "Luokan tunniste"
 
 #: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
+#, fuzzy
 msgid  "Height"
 msgstr "Korkeus"
 
-#: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
-msgid  "Width"
-msgstr "Leveys"
-
-#: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
-msgid  "List index"
-msgstr "Luettelohakemisto"
-
 #: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
+#, fuzzy
 msgid  "Row height"
 msgstr "Rivin korkeus"
 
-#: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
-msgid  "Fill color"
-msgstr "Täyttöväri"
-
-#: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
-msgid  "Line color"
-msgstr "Viivan väri"
-
-#: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
-msgid  "Reference value (on)"
-msgstr "Viitteen arvo (päälle)"
-
-#: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
-msgid  "Reference value (off)"
-msgstr "Viitteen arvo (pois)"
-
-#: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
-msgid  "List entries"
-msgstr "Luettelomerkinnät"
-
-#: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
-msgid  "Action"
-msgstr "Toiminto"
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
-msgid  "Type of submission"
-msgstr "Lähetyksen tyyppi"
-
 #: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
+#, fuzzy
 msgid  "Default status"
 msgstr "Oletustila"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
+#, fuzzy
 msgid  "Submission encoding"
 msgstr "Lähetyskoodaus"
 
-#: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
-msgid  "Default value"
-msgstr "Oletusarvo"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
-msgid  "Default text"
-msgstr "Oletusteksti"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
-msgid  "Default date"
-msgstr "Oletuspäivämäärä"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
-msgid  "Default time"
-msgstr "Oletusaika"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Without frame"
 msgstr "Ilman kehystä"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "3D look"
 msgstr "Kolmiulotteinen ulkoasu"
 
@@ -1220,6 +633,7 @@ msgid  "Flat"
 msgstr "Litteä"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Valuelist"
 msgstr "Arvoluettelo"
 
@@ -1233,26 +647,27 @@ msgid  "Query"
 msgstr "Kysely"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Sql"
 msgstr "Sql"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "Sql [Native]"
 msgstr "Sql [suora]"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.STRING.TEXT
+#, fuzzy
 msgid  "Tablefields"
 msgstr "Taulun kentät"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
+#, fuzzy
 msgid  "Left"
 msgstr "Vasen"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
-msgid  "Center"
-msgstr "Keskitetty"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
+#, fuzzy
 msgid  "Right"
 msgstr "Oikea"
 
@@ -1262,62 +677,77 @@ msgid  "None"
 msgstr "Ei mitään"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Submit form"
 msgstr "Lähetä lomake"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Reset form"
 msgstr "Tyhjennä lomake"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Open document/web page"
 msgstr "Avaa asiakirja/web-sivu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "First record"
 msgstr "Ensimmäinen tietue"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
+#, fuzzy
 msgid  "Previous record"
 msgstr "Edellinen tietue"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
+#, fuzzy
 msgid  "Next record"
 msgstr "Seuraava tietue"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
+#, fuzzy
 msgid  "Last record"
 msgstr "Viimeinen tietue"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
+#, fuzzy
 msgid  "Save record"
 msgstr "Tallenna tietue"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
+#, fuzzy
 msgid  "Undo data entry"
 msgstr "Kumoa tietomerkintä"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
+#, fuzzy
 msgid  "New record"
 msgstr "Uusi tietue"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
+#, fuzzy
 msgid  "Delete record"
 msgstr "Poista tietue"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
+#, fuzzy
 msgid  "Refresh form"
 msgstr "Päivitä lomake"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.STRING.TEXT
+#, fuzzy
 msgid  "Get"
 msgstr "Get"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.STRING.TEXT
+#, fuzzy
 msgid  "Post"
 msgstr "Post"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
+#, fuzzy
 msgid  "Multipart"
 msgstr "Moniosainen"
 
@@ -1327,90 +757,112 @@ msgid  "Text"
 msgstr "Teksti"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short)"
 msgstr "Vakio (lyhyt)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short YY)"
 msgstr "Vakio (lyhyt VV)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short YYYY)"
 msgstr "Vakio (lyhyt VVVV)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.STRING.TEXT
+#, fuzzy
 msgid  "Standard (long)"
 msgstr "Vakio (pitkä)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
+#, fuzzy
 msgid  "DD/MM/YY"
 msgstr "PP/KK/VV"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
+#, fuzzy
 msgid  "MM/DD/YY"
 msgstr "KK/PP/VV"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
+#, fuzzy
 msgid  "YY/MM/DD"
 msgstr "VV/KK/PP"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
+#, fuzzy
 msgid  "DD/MM/YYYY"
 msgstr "PP/KK/VVVV"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
+#, fuzzy
 msgid  "MM/DD/YYYY"
 msgstr "KK/PP/VVVV"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
+#, fuzzy
 msgid  "YYYY/MM/DD"
 msgstr "VVVV/KK/PP"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
+#, fuzzy
 msgid  "YY-MM-DD"
 msgstr "VV-KK-PP"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
+#, fuzzy
 msgid  "YYYY-MM-DD"
 msgstr "VVVV-KK-PP"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
+#, fuzzy
 msgid  "13:45"
 msgstr "13:45"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
+#, fuzzy
 msgid  "13:45:00"
 msgstr "13:45:00"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
+#, fuzzy
 msgid  "01:45 PM"
 msgstr "01:45 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
+#, fuzzy
 msgid  "01:45:00 PM"
 msgstr "01:45:00 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
+#, fuzzy
 msgid  "Not Selected"
 msgstr "Ei valittu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
+#, fuzzy
 msgid  "Selected"
 msgstr "Valittu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
+#, fuzzy
 msgid  "Not Defined"
 msgstr "Ei määritetty"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
+#, fuzzy
 msgid  "All records"
 msgstr "Kaikki tietueet"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
+#, fuzzy
 msgid  "Active record"
 msgstr "Aktiivinen tietue"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
+#, fuzzy
 msgid  "Current page"
 msgstr "Nykyinen sivu"
 
@@ -1420,228 +872,128 @@ msgid  "No"
 msgstr "Ei"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
 msgstr "Kyllä"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
+#, fuzzy
 msgid  "Parent Form"
 msgstr "Päälomake"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Single"
 msgstr "Yksittäinen valinta"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Multi"
 msgstr "Monivalinta"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Range"
 msgstr "Yhtenäinen valinta"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
+#, fuzzy
 msgid  "Fill parameters"
 msgstr "Täytä parametrit"
 
 #: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
+#, fuzzy
 msgid  "Execute action"
 msgstr "Suorita toiminto"
 
-#: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
-msgstr "Päivityksen jälkeen"
-
-#: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
-msgid  "Before updating"
-msgstr "Ennen päivitystä"
-
-#: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
-msgstr "Ennen tietuetoimintoa"
-
-#: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
-msgstr "Tietuetoiminnon jälkeen"
-
-#: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
-msgid  "Confirm deletion"
-msgstr "Vahvista poistaminen"
-
-#: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
-msgstr "On ilmennyt virhe"
-
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
+#, fuzzy
 msgid  "When receiving focus"
 msgstr "Kun kohdistus saavutetaan"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
+#, fuzzy
 msgid  "When losing focus"
 msgstr "Kun kohdistus menetetään"
 
 #: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Item status changed"
 msgstr "Objektin tilaa muutettu"
 
-#: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
-msgstr "Näppäintä painettu"
-
-#: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
-msgid  "Key released"
-msgstr "Näppäin vapautettu"
-
 #: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
+#, fuzzy
 msgid  "When loading"
 msgstr "Ladattaessa"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
+#, fuzzy
 msgid  "Before reloading"
 msgstr "Ennen uudelleenlatausta"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
+#, fuzzy
 msgid  "When reloading"
 msgstr "Uudelleenlatauksen yhteydessä"
 
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
-msgid  "Mouse moved while key pressed"
-msgstr "Hiirtä siirretty näppäintä painettaessa"
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
-msgid  "Mouse inside"
-msgstr "Hiiri sisäpuolella"
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
-msgid  "Mouse outside"
-msgstr "Hiiri ulkopuolella"
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
-msgid  "Mouse moved"
-msgstr "Hiirtä siirretty"
-
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse button pressed"
 msgstr "Hiiren painiketta painettu"
 
-#: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
-msgid  "Mouse button released"
-msgstr "Hiiren painike vapautettu"
-
-#: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
-msgstr "Ennen tietueen muuttamista"
-
-#: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
-msgid  "After record change"
-msgstr "Tietueen muuttamisen jälkeen"
-
-#: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
-msgid  "After resetting"
-msgstr "Palauttamisen jälkeen"
-
-#: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
-msgid  "Prior to reset"
-msgstr "Ennen palauttamista"
-
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
+#, fuzzy
 msgid  "Approve action"
 msgstr "Hyväksy toiminto"
 
 #: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
+#, fuzzy
 msgid  "Before submitting"
 msgstr "Ennen lähettämistä"
 
-#: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
-msgstr "Tekstiä muokattu"
-
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Before unloading"
 msgstr "Ennen muistista poistamista"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
+#, fuzzy
 msgid  "When unloading"
 msgstr "Poistettaessa muistista"
 
-#: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
-msgid  "Changed"
-msgstr "Muutettu"
-
-#: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
-msgid  "Events"
-msgstr "Tapahtumat"
-
 #: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
+#, fuzzy
 msgid  "Analyze SQL command"
 msgstr "Analysoi SQL-komento"
 
-#: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
-msgid  "PositionX"
-msgstr "SijaintiX"
-
-#: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
-msgid  "PositionY"
-msgstr "SijaintiY"
-
-#: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
-msgid  "Title"
-msgstr "Otsikko"
-
-#: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
-msgid  "Page (step)"
-msgstr "Sivu (vaihe)"
-
-#: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
-msgid  "Progress value"
-msgstr "Etenemisen arvo"
-
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
+#, fuzzy
 msgid  "Progress value min."
 msgstr "Etenemisen arvo vähint."
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Progress value max."
 msgstr "Etenemisen arvo enint."
 
-#: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
-msgid  "Scroll value"
-msgstr "Vierityksen määrä"
-
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Scroll value max."
 msgstr "Vierityksen määrä enint."
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
+#, fuzzy
 msgid  "Scroll value min."
 msgstr "Vierityksen määrä väh."
 
-#: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
-msgid  "Default scroll value"
-msgstr "Vierityksen määrän oletus"
-
-#: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
-msgid  "Small change"
-msgstr "Pieni muutos"
-
-#: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
-msgid  "Large change"
-msgstr "Iso muutos"
-
-#: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
-msgid  "Delay"
-msgstr "Viivytä"
-
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
 msgid  "Repeat"
-msgstr "Toista"
+msgstr "Kertaa"
 
 #: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
+#, fuzzy
 msgid  "Visible size"
 msgstr "Näkyvä koko"
-
-#: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
-msgid  "Orientation"
-msgstr "Suunta"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
 #, fuzzy
@@ -1653,379 +1005,258 @@ msgstr "Vaakataso"
 msgid  "Vertical"
 msgstr "Pystytaso"
 
-#: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
-msgstr "Säädettäessä"
-
-#: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
-msgid  "Date"
-msgstr "Päivämäärä"
-
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
+#, fuzzy
 msgid  "State"
 msgstr "Tila"
 
-#: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
-msgid  "Time"
-msgstr "Aika"
-
-#: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
-msgid  "Scale"
-msgstr "Skaalaa"
-
-#: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
-msgid  "Button type"
-msgstr "Painikkeen tyyppi"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
-msgid  "Default"
-msgstr "Oletus"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "OK"
 msgstr "OK"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
 msgstr "Peruuta"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
-msgid  "Help"
-msgstr "Ohje"
-
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "Yhteyttä tietolähteeseen $name$ ei voitu muodostaa."
 
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
+#, fuzzy
 msgid  "Linked cell"
 msgstr "Linkitetty solu"
 
-#: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
-msgid  "Source cell range"
-msgstr "Lähdesolun alue"
-
 #: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Contents of the linked cell"
 msgstr "Linkitetyn solun sisältö"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "The selected entry"
 msgstr "Valittu merkintä"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Position of the selected entry"
 msgstr "Valitun merkinnän sijainti"
 
-#: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
-msgid  "Scrollbars"
-msgstr "Vierityspalkit"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
-msgid  "Single-line"
-msgstr "Yksirivinen"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
-msgid  "Multi-line"
-msgstr "Monirivinen"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
-msgid  "Multi-line with formatting"
-msgstr "Muotoiltu monirivinen"
-
-#: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
-msgid  "Symbol color"
-msgstr "Symbolin väri"
-
-#: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
-msgid  "Text lines end with"
-msgstr "Tekstirivit päättyvät merkintään"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
-msgid  "LF (Unix)"
-msgstr "LF (Unix)"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
-msgid  "CR+LF (Windows)"
-msgstr "CR+LF (Windows)"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
-msgid  "Both"
-msgstr "Molemmat"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "SQL command"
 msgstr "SQL-lause"
 
-#: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
-msgid  "Toggle"
-msgstr "Vaihda"
-
 #: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
+#, fuzzy
 msgid  "Take Focus on Click"
 msgstr "Kohdistus napsauttamalla"
 
-#: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
-msgid  "Hide selection"
-msgstr "Piilota valinta"
-
-#: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
-msgid  "Style"
-msgstr "Tyyli"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
+#, fuzzy
 msgid  "3D"
 msgstr "Kolmiulotteinen"
 
-#: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
-msgid  "Border color"
-msgstr "Reunan väri"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
+#, fuzzy
 msgid  "Left top"
 msgstr "Ylävasen"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
+#, fuzzy
 msgid  "Left centered"
 msgstr "Keskellä vasemmalla"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
+#, fuzzy
 msgid  "Left bottom"
 msgstr "Alavasen"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
+#, fuzzy
 msgid  "Right top"
 msgstr "Yläoikea"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
+#, fuzzy
 msgid  "Right centered"
 msgstr "Keskellä oikealla"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
+#, fuzzy
 msgid  "Right bottom"
 msgstr "Alaoikea"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
+#, fuzzy
 msgid  "Above left"
 msgstr "Yläpuolella vasemmalla"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
-msgid  "Above centered"
-msgstr "Yläpuolella keskellä"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
+#, fuzzy
 msgid  "Above right"
 msgstr "Yläpuolella oikealla"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
+#, fuzzy
 msgid  "Below left"
 msgstr "Alapuolella vasemmalla"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
-msgid  "Below centered"
-msgstr "Alapuolella keskellä"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
+#, fuzzy
 msgid  "Below right"
 msgstr "Alapuolella oikealla"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
-msgid  "Centered"
-msgstr "Keskitetty"
-
-#: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
-msgid  "Wrap text automatically"
-msgstr "Rivitä teksti automaattisesti"
-
-#: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
-msgid  "Text type"
-msgstr "Tekstityyppi"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
+#, fuzzy
 msgid  "Hide"
 msgstr "Piilota"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
+#, fuzzy
 msgid  "Show"
 msgstr "Näytä"
 
 #: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
+#, fuzzy
 msgid  "XML data model"
 msgstr "XML-tietomalli"
 
-#: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
-msgid  "Binding expression"
-msgstr "Sidoslauseke"
-
-#: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
-msgid  "Required"
-msgstr "Vaadittu"
-
-#: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
-msgid  "List entry source"
-msgstr "Luetteloi merkinnän lähde"
-
-#: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
-msgid  "Relevant"
-msgstr "Relevantti"
-
-#: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
-msgid  "Constraint"
-msgstr "Rajoite"
-
-#: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
-msgid  "Calculation"
-msgstr "Laskenta"
-
 #: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Data type"
 msgstr "Tietotyyppi"
 
-#: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
-msgid  "Whitespaces"
-msgstr "Tyhjät välit"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
-msgid  "Preserve"
-msgstr "Säilytä"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
-msgid  "Replace"
-msgstr "Korvaa"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
-msgid  "Collapse"
-msgstr "Pienennä"
-
-#: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
-msgid  "Pattern"
-msgstr "Lauseke"
-
-#: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
-msgid  "Length"
-msgstr "Pituus"
-
-#: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
-msgid  "Length (at least)"
-msgstr "Pituus (vähintään)"
-
-#: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
-msgid  "Length (at most)"
-msgstr "Pituus (enintään)"
-
-#: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
-msgid  "Digits (total)"
-msgstr "Numerot (kaikkiaan)"
-
 #: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
+#, fuzzy
 msgid  "Digits (fraction)"
 msgstr "Numerot (desimaalit)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
+#, fuzzy
 msgid  "Max. (inclusive)"
 msgstr "Enint. (sisältäen)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
+#, fuzzy
 msgid  "Max. (exclusive)"
 msgstr "Enint. (ilman)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
+#, fuzzy
 msgid  "Min. (inclusive)"
 msgstr "Väh. (sisältäen)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
+#, fuzzy
 msgid  "Min. (exclusive)"
 msgstr "Väh. (ilman)"
 
-#: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
-msgid  "Submission"
-msgstr "Lähetys"
-
-#: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
-msgstr "Sidos"
-
 #: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Selection type"
 msgstr "Valintatyyppi"
 
 #: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
+#, fuzzy
 msgid  "Root displayed"
 msgstr "Näytä juuri"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_HANDLES.STRING.TEXT
+#, fuzzy
 msgid  "Show handles"
 msgstr "Näytä kahvat"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.STRING.TEXT
+#, fuzzy
 msgid  "Show root handles"
 msgstr "Näytä juuren kahvat"
 
 #: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
+#, fuzzy
 msgid  "Editable"
 msgstr "Muokattava"
 
 #: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
+#, fuzzy
 msgid  "Invokes stop node editing"
 msgstr "Tallennus solmun muokkauksen keskeytyessä"
 
 #: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
+#, fuzzy
 msgid  "With title bar"
 msgstr "Otsikkopalkin kanssa"
 
 #: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
+#, fuzzy
 msgid  "No Label"
 msgstr "Ei selitettä"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
+#, fuzzy
 msgid  "Keep Ratio"
 msgstr "Säilytä suhde"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.STRING.TEXT
+#, fuzzy
 msgid  "Fit to Size"
 msgstr "Sovita kokoon"
 
 #: propctrlr/formres.src#RID_STR_INPUT_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Input required"
 msgstr "Syöte vaaditaan"
 
 #: propctrlr/formres.src#RID_STR_WRITING_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Text direction"
 msgstr "Tekstin suunta"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.STRING.TEXT
+#, fuzzy
 msgid  "Left-to-right"
 msgstr "Vasemmalta oikealle"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.STRING.TEXT
+#, fuzzy
 msgid  "Right-to-left"
 msgstr "Oikealta vasemmalle"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.STRING.TEXT
+#, fuzzy
 msgid  "Use superordinate object settings"
 msgstr "Käytä ensisijaista objektiasetusta"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
+#, fuzzy
 msgid  "Never"
 msgstr "Ei koskaan"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
+#, fuzzy
 msgid  "When focused"
 msgstr "Kohdistettuna"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
+#, fuzzy
 msgid  "Always"
 msgstr "Aina"
 
 #: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Anchor"
 msgstr "Ankkuroi"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "To Paragraph"
 msgstr "Kappaleeseen"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "As Character"
 msgstr "Merkkinä"
 
@@ -2035,418 +1266,312 @@ msgid  "To Page"
 msgstr "Sivuun"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "To Frame"
 msgstr "Kehykseen"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "To Character"
 msgstr "Merkkiin"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "To Cell"
 msgstr "Soluun"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
+#, fuzzy
 msgid  "Regular"
 msgstr "Tavallinen"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
+#, fuzzy
 msgid  "Bold Italic"
 msgstr "Lihavoitu ja kursivoitu"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
+#, fuzzy
 msgid  "Italic"
 msgstr "Kursivoitu"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
+#, fuzzy
 msgid  "Bold"
 msgstr "Lihavoitu"
 
-#: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
-msgid  "(Default)"
-msgstr "(Oletus)"
-
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "New Data Type"
 msgstr "Uusi tietotyyppi"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type a name for the new data type:"
 msgstr "Uuden tietotyypin tyyppi ja nimi:"
 
 #: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
 msgstr "Haluatko poistaa tietotyypin '#type#' mallista?\nHuomaa, että tämä vaikuttaa kaikkiin ohjausobjekteihin, jotka on sidottu tähän tietotyyppiin."
 
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
-msgid  "Button"
-msgstr "Painike"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
-msgid  "Option Button"
-msgstr "Valintapainike"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
-msgid  "Check Box"
-msgstr "Valintaruutu"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-msgid  "Label Field"
-msgstr "Selitekenttä"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
-msgid  "Group Box"
-msgstr "Ryhmäruutu"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
-msgid  "Text Box"
-msgstr "Tekstikehys"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid  "Formatted Field"
-msgstr "Muotoiltu kenttä"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
-msgid  "List Box"
-msgstr "Luetteloruutu"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
-msgid  "Combo Box"
-msgstr "Yhdistelmäruutu"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
-msgid  "Image Button"
-msgstr "Kuvapainike"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
-msgid  "Hidden Control"
-msgstr "Piilotettu ohjausobjekti"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
-msgid  "Control (unknown type)"
-msgstr "Ohjausobjekti (tuntematon tyyppi)"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
-msgstr "Kuvan ohjaus"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
-msgid  "File Selection"
-msgstr "Tiedoston valinta"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
-msgid  "Date Field"
-msgstr "Päivämääräkenttä"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
-msgid  "Time Field"
-msgstr "Aikakenttä"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
-msgid  "Numeric Field"
-msgstr "Numeerinen kenttä"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
-msgid  "Currency Field"
-msgstr "Valuuttakenttä"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
-msgid  "Pattern Field"
-msgstr "Rajoitettu kenttä"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
-msgid  "Table Control "
-msgstr "Taulukon ohjausobjekti "
-
-#: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
-msgid  "Default"
-msgstr "Oletus"
-
-#: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
-msgid  "General"
-msgstr "Yleistä"
-
-#: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
-msgid  "Data"
-msgstr "Tiedot"
-
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
+#, fuzzy
 msgid  "No"
 msgstr "Ei"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
 msgstr "Kyllä"
 
-#: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
-msgid  "Help"
-msgstr "Ohje"
-
 #: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
+#, fuzzy
 msgid  "<Embedded-Image>"
 msgstr "<upotettu-kuva>"
 
-#: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
-msgid  "Text"
-msgstr "Teksti"
-
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
 msgstr "Nämä kentät ovat ohjauskenttiä, joita voi käyttää ohjausobjektin $control_class$ $control_name$ selitekenttinä."
 
-#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
-msgid  "~No assignment"
-msgstr "~Ei määritystä"
-
-#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
-msgid  "Label Field Selection"
-msgstr "Selitekentän valinta"
-
-#: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
-msgid  "Forms"
-msgstr "Lomakkeet"
-
 #: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Tab Order"
 msgstr "Sarkainjärjestys"
 
-#: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
-msgid  "Controls"
-msgstr "Ohjausobjektit"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
-msgid  "Move Up"
-msgstr "Siirrä ylemmäs"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
-msgid  "Move Down"
-msgstr "Siirrä alemmas"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
-msgid  "Automatic Sort"
-msgstr "Automaattinen järjestys"
-
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set"
 msgstr "Määritä"
 
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
-msgid  "Linear ascending"
-msgstr "Lineaarinen nouseva"
-
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
-msgid  "Linear descending"
-msgstr "Lineaarinen laskeva"
-
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
-msgid  "Original values"
-msgstr "Alkuperäiset arvot"
-
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
-msgid  "Exponential increasing"
-msgstr "Eksponentiaalinen lisäys"
-
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
-msgid  "About\n Dev~ice"
-msgstr "Tietoja\n la~itteesta"
-
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Create\nPreview"
 msgstr "Luo\nesikatselu"
 
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
-msgid  "Preview"
-msgstr "Esikatselu"
-
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
-msgid  "Scan area"
-msgstr "Skannausalue"
-
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Left:"
 msgstr "Vasen:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Top:"
 msgstr "Yläreuna:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Right:"
 msgstr "Oikea:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bottom:"
 msgstr "Alareuna:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Device used:"
 msgstr "Käytetty laite:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Resolution [~DPI]"
 msgstr "Tarkkuus [~DPI]"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Show advanced options"
 msgstr "Näytä lisäasetukset"
 
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
-msgid  "Options:"
-msgstr "Asetukset:"
-
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Vector element"
 msgstr "Vektorielementti"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set"
 msgstr "Määritä"
 
-#: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
-msgid  "Scanner"
-msgstr "Skanneri"
-
 #: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
+#, fuzzy
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
 msgstr "Laite: %s\nToimittaja: %s\nMalli: %s\nTyyppi: %s"
 
 #: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred while scanning."
 msgstr "Skannauksessa on ilmennyt virhe."
 
 #: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
+#, fuzzy
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
 msgstr "Laitteessa ei ole esikatselutoimintoa. Tavallista skannausta käytetään esikatseluskannauksen sijasta. Tavallinen skannaus saattaa kestää huomattavan kauan."
 
 #: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
+#, fuzzy
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
 msgstr "SANE-liittymää ei voitu alustaa. Skannausta ei voida suorittaa."
 
 #: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
+#, fuzzy
 msgid  "Check for ~Updates..."
 msgstr "Tarkista ~päivitysten saatavuus..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
+#, fuzzy
 msgid  "Checking..."
 msgstr "Tarkistetaan..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
+#, fuzzy
 msgid  "Checking for an update failed."
 msgstr "Päivitysten saatavuuden tarkistus epäonnistui."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION on ajan tasalla."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
 msgstr "%PRODUCTNAME %NEXTVERSION on saatavilla.\n\nNykyinen asennettu versio on %PRODUCTNAME %PRODUCTVERSION.\n\nEnnen päivityksen lataamista varmista, että sinulla on riittävät oikeudet sen asentamiseen.\nAsentaminen voi vaatia pääkäyttäjän salasanan."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Check for Updates"
 msgstr "Tarkista päivitysten saatavuus"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
 msgstr "%PRODUCTNAME %NEXTVERSION:n lataaminen pysäytetty kohdassa..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "%PRODUCTNAME %NEXTVERSION:n lataaminen ei edisty kohdassa"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
+#, fuzzy
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
 msgstr "Ladataan kansioon %DOWNLOAD_PATH.\n\nVoit vaihtaa latauskansiota valitsemalla Työkalut – Asetukset... – %PRODUCTNAME – Ohjelmapäivitys verkosta."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
+#, fuzzy
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME on tallennettu kansioon %DOWNLOAD_PATH."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
+#, fuzzy
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
 msgstr "Päivityksen automaattinen lataus ei juuri nyt onnistu.\n\nNapsauta 'Lataa...' ladataksesi %PRODUCTNAME %NEXTVERSION:n manuaalisesti www-sivulta."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
 msgstr "Ladataan %PRODUCTNAME %NEXTVERSION:ta..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
+#, fuzzy
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
 msgstr "%PRODUCTNAME %NEXTVERSION on ladattu. Asennus voidaan aloittaa."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to cancel the download?"
 msgstr "Haluatko varmasti peruuttaa latauksen?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
+#, fuzzy
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
 msgstr "Asentaaksesi päivityksen %PRODUCTNAME %PRODUCTVERSION täytyy sulkea. Haluatko asentaa päivityksen nyt?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
+#, fuzzy
 msgid  "Install ~now"
 msgstr "Asenna ~nyt"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
+#, fuzzy
 msgid  "Install ~later"
 msgstr "Asenna ~myöhemmin"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
 msgstr "Asennusohjelman suoritus epäonnistui. Suorita %FILE_NAME kansiossa %DOWNLOAD_PATH manuaalisesti."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
 msgstr "Saman niminen tiedosto on jo olemassa. Haluatko korvata sen?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
 msgstr "Tiedosto '%FILENAME' on jo olemassa kansiossa '%DOWNLOAD_PATH'. Haluatko ladata sen uudelleen verkosta vai poistaa ja avata olemassa olevan tiedoston?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.STRING.TEXT
+#, fuzzy
 msgid  "Reload File"
 msgstr "Avaa nykyinen"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.STRING.TEXT
+#, fuzzy
 msgid  "Continue"
 msgstr "Jatka latausta"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
+#, fuzzy
 msgid  "%PERCENT%"
 msgstr "%PERCENT%"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "Status"
 msgstr "Tila"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description"
 msgstr "Kuvaus"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close"
 msgstr "Sulje"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
+#, fuzzy
 msgid  "~Download"
 msgstr "Lataa"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
+#, fuzzy
 msgid  "~Install"
 msgstr "Asenna"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
+#, fuzzy
 msgid  "~Pause"
 msgstr "Pysäytä"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
+#, fuzzy
 msgid  "~Resume"
 msgstr "Jatka"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
 msgstr "Peruuta"
 
@@ -2456,6 +1581,7 @@ msgid  "%PRODUCTNAME update available"
 msgstr "Ohjelman %PRODUCTNAME päivitys saatavilla"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Click here to start the download."
 msgstr "Napsauta tästä aloittaaksesi latauksen."
 
@@ -2465,33 +1591,41 @@ msgid  "Click here for more information."
 msgstr "Napsauta tästä katsoaksesi lisätietoja."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
+#, fuzzy
 msgid  "Download of update begins."
 msgstr "Päivityksen lataus alkaa."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Download of update in progress"
 msgstr "Päivityksen lataus on meneillään"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
+#, fuzzy
 msgid  "Download of update paused"
 msgstr "Päivityksen lataus on pysäytetty"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
+#, fuzzy
 msgid  "Click here to resume."
 msgstr "Napsauta tästä jatkaaksesi latausta."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Download of update stalled"
 msgstr "Päivityksen lataus ei edisty"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Download of update completed"
 msgstr "Päivityksen lataus on valmis"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Click here to start the installation."
 msgstr "Napsauta tästä aloittaaksesi asennuksen."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Updates for extensions available"
 msgstr "Lisäosille on saatavilla päivityksiä"

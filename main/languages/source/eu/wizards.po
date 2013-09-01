@@ -31,49 +31,1377 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: euro/euro.src#STEP_ZERO.STRING.TEXT
+msgid  "~Cancel"
+msgstr "~Utzi"
+
+#: euro/euro.src#STEP_ZERO___1.STRING.TEXT
+msgid  "~Help"
+msgstr "~Laguntza"
+
+#: euro/euro.src#STEP_ZERO___2.STRING.TEXT
+msgid  "<<~Back"
+msgstr "<< At~zera"
+
+#: euro/euro.src#STEP_ZERO___3.STRING.TEXT
+msgid  "~Convert"
+msgstr "~Bihurtu"
+
+#: euro/euro.src#STEP_ZERO___4.STRING.TEXT
+msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
+msgstr "Oharra: kanpoko esteketako diru kopuruak eta formuletako moneta-bihurketako faktoreak ezin dira bihurtu."
+
+#: euro/euro.src#STEP_ZERO___5.STRING.TEXT
+msgid  "First, unprotect all sheets."
+msgstr "Hasteko, kendu babesa orri guztiei."
+
+#: euro/euro.src#STEP_ZERO___6.STRING.TEXT
+msgid  "Currencies:"
+msgstr "Monetak:"
+
+#: euro/euro.src#STEP_ZERO___7.STRING.TEXT
+msgid  "C~ontinue>>"
+msgstr "~Jarraitu >>"
+
+#: euro/euro.src#STEP_ZERO___8.STRING.TEXT
+msgid  "C~lose"
+msgstr "It~xi"
+
+#: euro/euro.src#STEP_CONVERTER.STRING.TEXT
+msgid  "~Entire document"
+msgstr "Do~kumentu osoa"
+
+#: euro/euro.src#STEP_CONVERTER___1.STRING.TEXT
+msgid  "Selection"
+msgstr "Hautapena"
+
+#: euro/euro.src#STEP_CONVERTER___2.STRING.TEXT
+msgid  "Cell S~tyles"
+msgstr "Gelaxka-es~tiloak"
+
+#: euro/euro.src#STEP_CONVERTER___3.STRING.TEXT
+msgid  "Currency cells in the current ~sheet"
+msgstr "Uneko ~orriko moneta-gelaxkak"
+
+#: euro/euro.src#STEP_CONVERTER___4.STRING.TEXT
+msgid  "Currency cells in the entire ~document"
+msgstr "~Dokumentu osoko moneta-gelaxkak"
+
+#: euro/euro.src#STEP_CONVERTER___5.STRING.TEXT
+msgid  "~Selected range"
+msgstr "~Hautatutako area"
+
+#: euro/euro.src#STEP_CONVERTER___6.STRING.TEXT
+msgid  "Select Cell Styles"
+msgstr "Hautatu gelaxka-estiloak"
+
+#: euro/euro.src#STEP_CONVERTER___7.STRING.TEXT
+msgid  "Select currency cells"
+msgstr "Hautatu moneta-gelaxkak"
+
+#: euro/euro.src#STEP_CONVERTER___8.STRING.TEXT
+msgid  "Currency ranges:"
+msgstr "Moneta-areak:"
+
+#: euro/euro.src#STEP_CONVERTER___9.STRING.TEXT
+msgid  "Templates:"
+msgstr "Txantiloiak:"
+
+#: euro/euro.src#STEP_AUTOPILOT.STRING.TEXT
+msgid  "Extent"
+msgstr "Hedadura"
+
+#: euro/euro.src#STEP_AUTOPILOT___1.STRING.TEXT
+msgid  "~Single %PRODUCTNAME Calc document"
+msgstr "%PRODUCTNAME ~Calc dokumentu bakarra"
+
+#: euro/euro.src#STEP_AUTOPILOT___2.STRING.TEXT
+msgid  "Complete ~directory"
+msgstr "Direktorio o~soa"
+
+#: euro/euro.src#STEP_AUTOPILOT___3.STRING.TEXT
+msgid  "Source Document:"
+msgstr "Iturburuko dokumentua:"
+
+#: euro/euro.src#STEP_AUTOPILOT___4.STRING.TEXT
+msgid  "Source directory:"
+msgstr "Iturburuko direktorioa:"
+
+#: euro/euro.src#STEP_AUTOPILOT___5.STRING.TEXT
+msgid  "~Including subfolders"
+msgstr "~Azpikarpetak ere bai"
+
+#: euro/euro.src#STEP_AUTOPILOT___6.STRING.TEXT
+msgid  "Target directory:"
+msgstr "Helburuko direktorioa:"
+
+#: euro/euro.src#STEP_AUTOPILOT___7.STRING.TEXT
+msgid  "Temporarily unprotect sheet without query"
+msgstr "Kendu babesa orriari aldi baterako galdetu gabe"
+
+#: euro/euro.src#STEP_AUTOPILOT___10.STRING.TEXT
+msgid  "Also convert fields and tables in text documents"
+msgstr "Testu-dokumentuetako eremuak eta taulak ere bihurtu"
+
+#: euro/euro.src#STATUSLINE.STRING.TEXT
+msgid  "Conversion status: "
+msgstr "Bihurketaren egoera: "
+
+#: euro/euro.src#STATUSLINE___1.STRING.TEXT
+msgid  "Conversion status of the cell templates:"
+msgstr "Gelaxka-txantiloien bihurketa-egoera:"
+
+#: euro/euro.src#STATUSLINE___2.STRING.TEXT
+msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr "Bihurtu beharreko areen erregistroa: %1Number%1 / %2TotPageCount%2 orria"
+
+#: euro/euro.src#STATUSLINE___3.STRING.TEXT
+msgid  "Entry of the ranges to be converted..."
+msgstr "Bihurtu beharreko areen erregistroa..."
+
+#: euro/euro.src#STATUSLINE___4.STRING.TEXT
+msgid  "Sheet protection for each sheet will be restored..."
+msgstr "Orri guztien babesa berrezartzen..."
+
+#: euro/euro.src#STATUSLINE___5.STRING.TEXT
+msgid  "Conversion of the currency units in the cell templates..."
+msgstr "Gelaxka-txantiloietako moneta-unitateak bihurtzen..."
+
+#: euro/euro.src#MESSAGES.STRING.TEXT
+msgid  "~Finish"
+msgstr "A~maitu"
+
+#: euro/euro.src#MESSAGES___1.STRING.TEXT
+msgid  "Select directory"
+msgstr "Hautatu direktorioa"
+
+#: euro/euro.src#MESSAGES___2.STRING.TEXT
+msgid  "Select file"
+msgstr "Hautatu fitxategia"
+
+#: euro/euro.src#MESSAGES___3.STRING.TEXT
+msgid  "Select target directory"
+msgstr "Hautatu helburuko direktorioa"
+
+#: euro/euro.src#MESSAGES___4.STRING.TEXT
+msgid  "non-existant"
+msgstr "ez dago"
+
+#: euro/euro.src#MESSAGES___5.STRING.TEXT
+msgid  "Euro Converter"
+msgstr "Euro-bihurtzailea"
+
+#: euro/euro.src#MESSAGES___6.STRING.TEXT
+msgid  "Should protected spreadsheets be temporarily unprotected?"
+msgstr "Babestutako kalkulu-orriei aldi baterako babesa kendu nahi diezu?"
+
+#: euro/euro.src#MESSAGES___7.STRING.TEXT
+msgid  "Enter the password to unprotect the table %1TableName%1"
+msgstr "Idatzi %1TableName%1 taulari babesa kentzeko pasahitza"
+
+#: euro/euro.src#MESSAGES___8.STRING.TEXT
+msgid  "Wrong Password!"
+msgstr "Okerreko pasahitza!"
+
+#: euro/euro.src#MESSAGES___9.STRING.TEXT
+msgid  "Protected Sheet"
+msgstr "Orri babestua"
+
+#: euro/euro.src#MESSAGES___10.STRING.TEXT
+msgid  "Warning!"
+msgstr "Abisua!"
+
+#: euro/euro.src#MESSAGES___11.STRING.TEXT
+msgid  "Protection for the sheets will not be removed."
+msgstr "Orriei ez zaie babesa kenduko."
+
+#: euro/euro.src#MESSAGES___12.STRING.TEXT
+msgid  "Sheet cannot be unprotected"
+msgstr "Orriari ezin zaio babesa kendu"
+
+#: euro/euro.src#MESSAGES___13.STRING.TEXT
+msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
+msgstr "Morroiak ezin du editatu dokumentu hau, kalkulu-orri babestuak dituzten dokumentuetako gelaxka-formatuak ezin direlako aldatu."
+
+#: euro/euro.src#MESSAGES___14.STRING.TEXT
+msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
+msgstr "Kontuan izan, bestela, Euro-bihurtzaileak ezingo duela editatu dokumentua!"
+
+#: euro/euro.src#MESSAGES___15.STRING.TEXT
+msgid  "Please choose a currency to be converted first!"
+msgstr "Hasteko, aukeratu bihurtu nahi duzun moneta!"
+
+#: euro/euro.src#MESSAGES___16.STRING.TEXT
+msgid  "Password:"
+msgstr "Pasahitza:"
+
+#: euro/euro.src#MESSAGES___17.STRING.TEXT
+msgid  "OK"
+msgstr "Ados"
+
+#: euro/euro.src#MESSAGES___18.STRING.TEXT
+msgid  "Cancel"
+msgstr "Utzi"
+
+#: euro/euro.src#MESSAGES___19.STRING.TEXT
+msgid  "Please select a %PRODUCTNAME Calc document for editing!"
+msgstr "Hautatu editatu nahi duzun %PRODUCTNAME Calc dokumentua!"
+
+#: euro/euro.src#MESSAGES___20.STRING.TEXT
+msgid  "'<1>' is not a directory!"
+msgstr "'<1>' ez da direktorioa!"
+
+#: euro/euro.src#MESSAGES___21.STRING.TEXT
+msgid  "Document is read-only!"
+msgstr "Dokumentua soilik irakurtzekoa da!"
+
+#: euro/euro.src#MESSAGES___22.STRING.TEXT
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "'<1>' fitxategia badago.<CR>Gainidatzi nahi duzu?"
+
+#: euro/euro.src#MESSAGES___23.STRING.TEXT
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "Benetan eten nahi duzu bihurketa puntu honetan?"
+
+#: euro/euro.src#MESSAGES___24.STRING.TEXT
+msgid  "Cancel Wizard"
+msgstr "Gelditu morroia"
+
+#: euro/euro.src#CURRENCIES.STRING.TEXT
+msgid  "Portuguese Escudo"
+msgstr "Eskudo portugaldarra"
+
+#: euro/euro.src#CURRENCIES___1.STRING.TEXT
+msgid  "Dutch Guilder"
+msgstr "Florin holandarra"
+
+#: euro/euro.src#CURRENCIES___2.STRING.TEXT
+msgid  "French Franc"
+msgstr "Franko frantsesa"
+
+#: euro/euro.src#CURRENCIES___3.STRING.TEXT
+msgid  "Spanish Peseta"
+msgstr "Espainiako pezeta"
+
+#: euro/euro.src#CURRENCIES___4.STRING.TEXT
+msgid  "Italian Lira"
+msgstr "Lira italiarra"
+
+#: euro/euro.src#CURRENCIES___5.STRING.TEXT
+msgid  "German Mark"
+msgstr "Marko alemana"
+
+#: euro/euro.src#CURRENCIES___6.STRING.TEXT
+msgid  "Belgian Franc"
+msgstr "Franko belgikarra"
+
+#: euro/euro.src#CURRENCIES___7.STRING.TEXT
+msgid  "Irish Punt"
+msgstr "Libera irlandarra"
+
+#: euro/euro.src#CURRENCIES___8.STRING.TEXT
+msgid  "Luxembourg Franc"
+msgstr "Franko luxenburgotarra"
+
+#: euro/euro.src#CURRENCIES___9.STRING.TEXT
+msgid  "Austrian Schilling"
+msgstr "Austriako txelina"
+
+#: euro/euro.src#CURRENCIES___10.STRING.TEXT
+msgid  "Finnish Mark"
+msgstr "Marko finlandiarra"
+
+#: euro/euro.src#CURRENCIES___11.STRING.TEXT
+msgid  "Greek Drachma"
+msgstr "Drakma greziarra"
+
+#: euro/euro.src#CURRENCIES___12.STRING.TEXT
+msgid  "Slovenian Tolar"
+msgstr "Esloveniako tolarra"
+
+#: euro/euro.src#CURRENCIES___13.STRING.TEXT
+msgid  "Cypriot Pound"
+msgstr "Zipreko libra"
+
+#: euro/euro.src#CURRENCIES___14.STRING.TEXT
+msgid  "Maltese Lira"
+msgstr "Lira maltarra"
+
+#: euro/euro.src#CURRENCIES___15.STRING.TEXT
+msgid  "Slovak Koruna"
+msgstr "Eslovakiar koroa"
+
+#: euro/euro.src#CURRENCIES___16.STRING.TEXT
+msgid  "The currency set for the document is not a European currency!"
+msgstr "Dokumentuan ezarritako moneta ez da Europakoa!"
+
+#: euro/euro.src#CURRENCIES___17.STRING.TEXT
+msgid  "The language set for your operating system is not a language of the European Monetary Union."
+msgstr "Sistema eragilean ezarritako hizkuntza ez da Europako Moneta Batasunekoa."
+
+#: euro/euro.src#STEP_LASTPAGE.STRING.TEXT
+msgid  "Progress"
+msgstr "Progresioa"
+
+#: euro/euro.src#STEP_LASTPAGE___1.STRING.TEXT
+msgid  "Retrieving the relevant documents..."
+msgstr "Dokumentu garrantzitsuak eskuratzen..."
+
+#: euro/euro.src#STEP_LASTPAGE___2.STRING.TEXT
+msgid  "Converting the documents..."
+msgstr "Dokumentuak bihurtzen..."
+
+#: euro/euro.src#STEP_LASTPAGE___3.STRING.TEXT
+msgid  "Settings:"
+msgstr "Ezarpenak:"
+
+#: euro/euro.src#STEP_LASTPAGE___4.STRING.TEXT
+msgid  "Sheet is always unprotected"
+msgstr "Beti kendu babesa orriari"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___0.STRING.TEXT
+msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
+msgstr "Ezin izan da sortu '%1' direktorioa.<BR>Beharbada ez duzu edukiko behar adina leku disko gogorrean."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___1.STRING.TEXT
+msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
+msgstr "Ezin izan da sortu testu-dokumentua.<BR>Egiaztatu 'PRODUCTNAME Writer' instalatuta dagoela."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___2.STRING.TEXT
+msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
+msgstr "Ezin izan da sortu kalkulu-orria.<BR>Egiaztatu 'PRODUCTNAME Calc' instalatuta dagoela."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___3.STRING.TEXT
+msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
+msgstr "Ezin izan da sortu aurkezpena.<BR>Egiaztatu 'PRODUCTNAME Impress' instalatuta dagoela."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___4.STRING.TEXT
+msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
+msgstr "Ezin izan da sortu marrazkia.<BR>Egiaztatu 'PRODUCTNAME Draw' instalatuta dagoela."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___5.STRING.TEXT
+msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
+msgstr "Ezin izan da sortu formula.<BR>Egiaztatu 'PRODUCTNAME Math' instalatuta dagoela."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___6.STRING.TEXT
+msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
+msgstr "Beharrezko fitxategiak ezin izan dira aurkitu.<BR>Abiarazi %PRODUCTNAME instalazioa eta aukeratu 'Konpondu'."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___7.STRING.TEXT
+msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
+msgstr "'<PATH>' fitxategia badago lehendik ere.<BR><BR>Gainidatzi nahi duzu lehendik dagoen fitxategia?"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___8.STRING.TEXT
+msgid  "Yes"
+msgstr "Bai"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___9.STRING.TEXT
+msgid  "Yes to All"
+msgstr "Bai guztiari"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___10.STRING.TEXT
+msgid  "No"
+msgstr "Ez"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___11.STRING.TEXT
+msgid  "Cancel"
+msgstr "Utzi"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___12.STRING.TEXT
+msgid  "~Finish"
+msgstr "A~maitu"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___13.STRING.TEXT
+msgid  "< ~Back"
+msgstr "< At~zera"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___14.STRING.TEXT
+msgid  "~Next >"
+msgstr "~Hurrengoa >"
+
 #: formwizard/dbwizres.src#RID_COMMON_START___15.STRING.TEXT
 msgid  "~Help"
 msgstr "~Laguntza"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___16.STRING.TEXT
+msgid  "Steps"
+msgstr "Urratsak"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___17.STRING.TEXT
+msgid  "Close"
+msgstr "Itxi"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___18.STRING.TEXT
+msgid  "OK"
+msgstr "Ados"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___19.STRING.TEXT
+msgid  "The file already exists. Do you want to overwrite it?"
+msgstr "Fitxategia badago lehendik. Gainidatzi nahi duzu?"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___20.STRING.TEXT
+msgid  "Template created via <wizard_name> on <current_date>."
+msgstr "Txantiloia honekin sortu da: <wizard_name>, egun honetan: <current_date>."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___21.STRING.TEXT
+msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
+msgstr "Ezin izan da morroia exekutatu, fitxategi garrantzitsu batzuk ez direlako aurkitu.\nBide-izenak jatorrizko ezarpen lehenetsien arabera leheneratzeko, egin klik 'Tresnak - Aukerak - %PRODUCTNAME – bide-izenak'aukerako 'Lehenetsia' botoian.\nOndoren, exekutatu morroia berriro."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___0.STRING.TEXT
+msgid  "C~reate"
+msgstr "So~rtu"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___1.STRING.TEXT
+msgid  "~Cancel"
+msgstr "~Utzi"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___2.STRING.TEXT
+msgid  "<< ~Back"
+msgstr "<< At~zera"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___3.STRING.TEXT
+msgid  "~Next >>"
+msgstr "~Hurrengoa >>"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___4.STRING.TEXT
+msgid  "~Database"
+msgstr "~Datu-basea"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___5.STRING.TEXT
+msgid  "~Table name"
+msgstr "~Taularen izena"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___6.STRING.TEXT
+msgid  "An error occurred while running the wizard. The wizard will be terminated."
+msgstr "Errore bat gertatu da Morroia exekutatzean. Morroia itxi egingo da."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___14.STRING.TEXT
+msgid  "No connection to the database could be established."
+msgstr "Datu-basearekin ezin izan da konexiorik ezarri."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___21.STRING.TEXT
+msgid  "~Stop"
+msgstr "~Gelditu"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___30.STRING.TEXT
+msgid  "The document could not be saved."
+msgstr "Dokumentua ezin izan da gorde."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___33.STRING.TEXT
+msgid  "Exiting the wizard"
+msgstr "Morroitik irteten"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___34.STRING.TEXT
+msgid  "Connecting to data source..."
+msgstr "Datu-iturburura konektatzen..."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___35.STRING.TEXT
+msgid  "The connection to the data source could not be established."
+msgstr "Datu-iturburuarekin ezin izan da konexiorik ezarri."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___36.STRING.TEXT
+msgid  "The file path entered is not valid."
+msgstr "Sartutako bide-izena ez da baliozkoa."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___37.STRING.TEXT
+msgid  "Please select a data source"
+msgstr "Hautatu datu-iturburu bat"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___38.STRING.TEXT
+msgid  "Please select a table or query"
+msgstr "Hautatu taula edo kontsulta bat"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___39.STRING.TEXT
+msgid  "Add field"
+msgstr "Gehitu eremua"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___40.STRING.TEXT
+msgid  "Remove field"
+msgstr "Kendu eremua"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___41.STRING.TEXT
+msgid  "Add all fields"
+msgstr "Gehitu eremu guztiak"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___42.STRING.TEXT
+msgid  "Remove all fields"
+msgstr "Kendu eremu guztiak"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___43.STRING.TEXT
+msgid  "Move field up"
+msgstr "Eraman eremua gora"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___44.STRING.TEXT
+msgid  "Move field down"
+msgstr "Eraman eremua behera"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___45.STRING.TEXT
+msgid  "The field names from '%NAME' could not be retrieved."
+msgstr "'%NAME' –> eremu-izenak ezin izan dira eskuratu."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___0.STRING.TEXT
+msgid  "Form Wizard"
+msgstr "Inprimakien morroia"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___1.STRING.TEXT
+msgid  "Fields in ~the form"
+msgstr "~Inprimakiko eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___2.STRING.TEXT
+msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
+msgstr "Eremu bitarrak beti zerrendatzen dira eta hautagarri egoten dira ezkerreko zerrendan.\nAhal bada, irudi gisa interpretatzen da."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___3.STRING.TEXT
+msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr "Beste inprimaki batean txertatutako inprimakia da azpinprimakia.\nAzpinprimakiak erabil ditzakezu tauletako eta kontsultetako datuak erakusteko “batetik hainbatera” motako erlazioarekin."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___4.STRING.TEXT
+msgid  "~Add Subform"
+msgstr "~Gehitu azpinprimakia"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___5.STRING.TEXT
+msgid  "~Subform based on existing relation"
+msgstr "~Lehendik dagoen erlazioan oinarritutako azpinprimakia"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___6.STRING.TEXT
+msgid  "Tables or queries"
+msgstr "Taulak edo kontsultak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___7.STRING.TEXT
+msgid  "Subform based on ~manual selection of fields"
+msgstr "~Eskuz hautatutako eremuetan oinarritutako azpinprimakia"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___8.STRING.TEXT
+msgid  "~Which relation do you want to add?"
+msgstr "~Zein erlazio gehitu nahi duzu?"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___9.STRING.TEXT
+msgid  "Fields in the ~subform"
+msgstr "Az~pinprimakiko eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___12.STRING.TEXT
+msgid  "~Available fields"
+msgstr "Ere~mu erabilgarriak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___13.STRING.TEXT
+msgid  "Fields in form"
+msgstr "~Inprimakiko eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___19.STRING.TEXT
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
+msgstr "'<FIELDNAME1>' eta '<FIELDNAME2>' elkartzea bi aldiz hautatu da.\nBaina elkartzeak behin bakarrik erabil daitezke."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___20.STRING.TEXT
+msgid  "~First joined subform field"
+msgstr "~Lehen azpinprimaki-eremu elkartua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___21.STRING.TEXT
+msgid  "~Second joined subform field"
+msgstr "~Bigarren azpinprimaki-eremu elkartua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___22.STRING.TEXT
+msgid  "~Third joined subform field"
+msgstr "~Hirugarren azpinprimaki-eremu elkartua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___23.STRING.TEXT
+msgid  "~Fourth joined subform field"
+msgstr "~Laugarren azpinprimaki-eremu elkartua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___24.STRING.TEXT
+msgid  "F~irst joined main form field"
+msgstr "Lehe~n inprimaki nagusiko eremu elkartua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___25.STRING.TEXT
+msgid  "S~econd joined main form field"
+msgstr "Bi~garren inprimaki nagusiko eremu elkartua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___26.STRING.TEXT
+msgid  "T~hird joined main form field"
+msgstr "Hi~rugarren inprimaki nagusiko eremu elkartua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___27.STRING.TEXT
+msgid  "F~ourth joined main form field"
+msgstr "La~ugarren inprimaki nagusiko eremu elkartua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___28.STRING.TEXT
+msgid  "Field border"
+msgstr "Eremu-ertza"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___29.STRING.TEXT
+msgid  "No border"
+msgstr "Ertzik ez"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___30.STRING.TEXT
+msgid  "3D look"
+msgstr "3D itxura"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___31.STRING.TEXT
+msgid  "Flat"
+msgstr "Laua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___32.STRING.TEXT
+msgid  "Label placement"
+msgstr "Etiketen posizioa"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___33.STRING.TEXT
+msgid  "Align left"
+msgstr "Lerrokatu ezkerrean"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___34.STRING.TEXT
+msgid  "Align right"
+msgstr "Lerrokatu eskuinean"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___35.STRING.TEXT
+msgid  "Arrangement of DB fields"
+msgstr "DBko eremuen antolamendua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___36.STRING.TEXT
+msgid  "Columnar - Labels Left"
+msgstr "Zutabetan – Etiketak ezkerrean"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___37.STRING.TEXT
+msgid  "Columnar - Labels on Top"
+msgstr "Zutabetan – Etiketak goian"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___38.STRING.TEXT
+msgid  "In Blocks - Labels Left"
+msgstr "Bloketan – Etiketak ezkerrean"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___39.STRING.TEXT
+msgid  "In Blocks - Labels Above"
+msgstr "Bloketan – Etiketak goian"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___40.STRING.TEXT
+msgid  "As Data Sheet"
+msgstr "Datu-orri gisa"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___41.STRING.TEXT
+msgid  "Arrangement of the main form"
+msgstr "Inprimaki nagusiko antolamendua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___42.STRING.TEXT
+msgid  "Arrangement of the subform"
+msgstr "Azpinprimakiko antolamendua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___44.STRING.TEXT
+msgid  "The form is to be ~used for entering new data only."
+msgstr "Datu berriak sartzeko bakarrik erabiliko da inprimakia."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___45.STRING.TEXT
+msgid  "Existing data will not be displayed "
+msgstr "Lehendik dauden datuak ez dira bistaratuko "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___46.STRING.TEXT
+msgid  "T~he form is to display all data"
+msgstr "~Datu guztiak bistaratuko ditu inprimakiak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___47.STRING.TEXT
+msgid  "Do not allow ~modification of existing data"
+msgstr "Ez onartu lehendik dauden datuak a~ldatzea"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___48.STRING.TEXT
+msgid  "Do not allow ~deletion of existing data"
+msgstr "Ez onartu lehendik dauden datuak ~ezabatzea"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___49.STRING.TEXT
+msgid  "Do not allow ~addition of new data"
+msgstr "Ez onartu datu berriak ~gehitzea"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___50.STRING.TEXT
+msgid  "Name of ~the form"
+msgstr "~Inprimakiaren izena"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___51.STRING.TEXT
+msgid  "How do you want to proceed after creating the form?"
+msgstr "Nola jarraitu nahi duzu inprimakia sortu ondoren?"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___52.STRING.TEXT
+msgid  "~Work with the form"
+msgstr "~Lan egin inprimakiarekin"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___53.STRING.TEXT
+msgid  "~Modify the form"
+msgstr "Alda~tu inprimakia"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___55.STRING.TEXT
+msgid  "~Page Styles"
+msgstr "~Orrialde-estiloak"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___80.STRING.TEXT
 msgid  "Field selection"
 msgstr "Eremu-hautapena"
 
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___81.STRING.TEXT
+msgid  "Set up a subform"
+msgstr "Konfiguratu azpinprimaki bat"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___82.STRING.TEXT
+msgid  "Add subform fields"
+msgstr "Gehitu azpinprimaki-eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___83.STRING.TEXT
+msgid  "Get joined fields"
+msgstr "Eskuratu elkartutako eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___84.STRING.TEXT
+msgid  "Arrange controls"
+msgstr "Antolatu kontrolak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___85.STRING.TEXT
+msgid  "Set data entry"
+msgstr "Ezarri datu-sarrera"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___86.STRING.TEXT
+msgid  "Apply styles"
+msgstr "Aplikatu estiloak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___87.STRING.TEXT
+msgid  "Set name"
+msgstr "Ezarri izena"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___88.STRING.TEXT
+msgid  "(Date)"
+msgstr "(Data)"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___89.STRING.TEXT
+msgid  "(Time)"
+msgstr "(Ordua)"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___90.STRING.TEXT
+msgid  "Select the fields of your form"
+msgstr "Hautatu inprimakiko eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___91.STRING.TEXT
+msgid  "Decide if you want to set up a subform"
+msgstr "Erabaki azpinprimaki bat konfiguratu nahi duzun"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___92.STRING.TEXT
+msgid  "Select the fields of your subform"
+msgstr "Hautatu azpinprimakiko eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___93.STRING.TEXT
+msgid  "Select the joins between your forms"
+msgstr "Hautatu inprimakien arteko elkartzeak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___94.STRING.TEXT
+msgid  "Arrange the controls on your form"
+msgstr "Antolatu inprimakiko kontrolak"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___95.STRING.TEXT
+msgid  "Select the data entry mode"
+msgstr "Hautatu datuak sartzeko modua"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___96.STRING.TEXT
+msgid  "Apply the style of your form"
+msgstr "Aplikatu inprimakiaren estiloa"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___97.STRING.TEXT
+msgid  "Set the name of the form"
+msgstr "Ezarri inprimakiaren izena"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___98.STRING.TEXT
+msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
+msgstr "Lehendik ere badago '%FORMNAME' izeneko inprimakia.\nHautatu beste izen bat."
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___0.STRING.TEXT
 msgid  "Query Wizard"
 msgstr "Kontsulten morroia"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___1.STRING.TEXT
+msgid  "Query"
+msgstr "Kontsulta"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___3.STRING.TEXT
+msgid  "~Tables"
+msgstr "~Taulak"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___4.STRING.TEXT
 msgid  "A~vailable fields"
 msgstr "~Eremu erabilgarriak"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___5.STRING.TEXT
+msgid  "Name ~of the query"
+msgstr "Kontsultaren ize~na"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___6.STRING.TEXT
+msgid  "Display ~Query"
+msgstr "Bistaratu ~kontsulta"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___7.STRING.TEXT
+msgid  "~Modify Query"
+msgstr "~Aldatu kontsulta"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___8.STRING.TEXT
+msgid  "~How do you want to proceed after creating the query?"
+msgstr "~Nola jarraitu nahi duzu kontsulta sortu ondoren?"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___9.STRING.TEXT
+msgid  "Match ~all of the following"
+msgstr "Bat etorri ~honako guztiekin"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___10.STRING.TEXT
+msgid  "~Match any of the following"
+msgstr "Bat etorri ~honako edozeinekin"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___11.STRING.TEXT
+msgid  "~Detailed query (Shows all records of the query.)"
+msgstr "~Kontsulta xehatua (kontsultako erregistro guztiak erakusten ditu)."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___12.STRING.TEXT
+msgid  "~Summary query (Shows only results of aggregate functions.)"
+msgstr "~Laburpen-kontsulta (Agregazio-funtzioen emaitzak bakarrik erakusten ditu)."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___16.STRING.TEXT
+msgid  "Aggregate functions"
+msgstr "Agregazio-funtzioak"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___17.STRING.TEXT
 msgid  "Fields"
 msgstr "Eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___18.STRING.TEXT
+msgid  "~Group by"
+msgstr "Elkartu ~honen arabera"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___19.STRING.TEXT
 msgid  "Field"
 msgstr "Eremua"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___20.STRING.TEXT
+msgid  "Alias"
+msgstr "Aliasa"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___21.STRING.TEXT
+msgid  "Table: "
+msgstr "Taula: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___22.STRING.TEXT
+msgid  "Query: "
+msgstr "Kontsulta: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___24.STRING.TEXT
+msgid  "Condition"
+msgstr "Baldintza"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___25.STRING.TEXT
+msgid  "Value"
+msgstr "Balioa"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___26.STRING.TEXT
+msgid  "is equal to"
+msgstr "honen berdina da:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___27.STRING.TEXT
+msgid  "is not equal to"
+msgstr "ez da honen berdina:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___28.STRING.TEXT
+msgid  "is smaller than"
+msgstr "hau baino txikiagoa da:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___29.STRING.TEXT
+msgid  "is greater than"
+msgstr "hau baino handiagoa da:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___30.STRING.TEXT
+msgid  "is equal or less than "
+msgstr "honen berdina edo txikiagoa da: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___31.STRING.TEXT
+msgid  "is equal or greater than"
+msgstr "honen berdina edo handiagoa da:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___32.STRING.TEXT
+msgid  "like"
+msgstr "honen berdina:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___33.STRING.TEXT
+msgid  "not like"
+msgstr "ez da honen berdina"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___34.STRING.TEXT
+msgid  "is null"
+msgstr "hutsik dago"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___35.STRING.TEXT
+msgid  "is not null"
+msgstr "ez da nulua"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___36.STRING.TEXT
+msgid  "true"
+msgstr "egia"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___37.STRING.TEXT
+msgid  "false"
+msgstr "faltsua"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___38.STRING.TEXT
+msgid  "and"
+msgstr "eta"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___39.STRING.TEXT
+msgid  "or"
+msgstr "edo"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___40.STRING.TEXT
+msgid  "get the sum of"
+msgstr "kalkulatu batura:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___41.STRING.TEXT
+msgid  "get the average of"
+msgstr "kalkulatu batez bestekoa:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___42.STRING.TEXT
+msgid  "get the minimum of"
+msgstr "kalkulatu minimoa:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___43.STRING.TEXT
+msgid  "get the maximum of"
+msgstr "kalkulatu maximoa:"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___44.STRING.TEXT
+msgid  "get the sum of <FIELD>"
+msgstr "kalkulatu batura: <FIELD>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___45.STRING.TEXT
+msgid  "get the average of <FIELD>"
+msgstr "kalkulatu batez bestekoa: <FIELD>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___46.STRING.TEXT
+msgid  "get the minimum of <FIELD>"
+msgstr "kalkulatu minimoa: <FIELD>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___47.STRING.TEXT
+msgid  "get the maximum of <FIELD>"
+msgstr "kalkulatu maximoa: <FIELD>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___48.STRING.TEXT
+msgid  "(none)"
+msgstr "(bat ere ez)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___50.STRING.TEXT
+msgid  "Fie~lds in the Query: "
+msgstr "Kontsultako ere~muak: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___51.STRING.TEXT
+msgid  "Sorting order: "
+msgstr "Ordenatu: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___52.STRING.TEXT
+msgid  "No sorting fields were assigned."
+msgstr "Ez da ordenatzeko eremurik esleitu."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___53.STRING.TEXT
+msgid  "Search conditions: "
+msgstr "Bilaketaren baldintzak: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___54.STRING.TEXT
+msgid  "No conditions were assigned."
+msgstr "Ez da baldintzarik esleitu."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___55.STRING.TEXT
+msgid  "Aggregate functions: "
+msgstr "Agregazio-funtzioak: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___56.STRING.TEXT
+msgid  "No aggregate functions were assigned."
+msgstr "Ez da agregazio-funtziorik esleitu."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___57.STRING.TEXT
+msgid  "Grouped by: "
+msgstr "Honen arabera elkartuta: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___58.STRING.TEXT
+msgid  "No Groups were assigned."
+msgstr "Ez da Elkartzerik esleitu."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___59.STRING.TEXT
+msgid  "Grouping conditions: "
+msgstr "Elkartzeko baldintzak: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___60.STRING.TEXT
+msgid  "No grouping conditions were assigned."
+msgstr "Ez da elkartzeko baldintzarik esleitu."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___70.STRING.TEXT
+msgid  "Select the fields (columns) for your query"
+msgstr "Hautatu kontsultaren eremuak (zutabeak)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___71.STRING.TEXT
+msgid  "Select the sorting order"
+msgstr "Hautatu ordena"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___72.STRING.TEXT
+msgid  "Select the search conditions"
+msgstr "Hautatu bilaketaren baldintzak"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___73.STRING.TEXT
+msgid  "Select the type of query"
+msgstr "Hautatu kontsulta mota"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___74.STRING.TEXT
+msgid  "Select the groups"
+msgstr "Hautatu taldeak"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___75.STRING.TEXT
+msgid  "Select the grouping conditions"
+msgstr "Hautatu elkartzeko baldintzak"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___76.STRING.TEXT
+msgid  "Assign aliases if desired"
+msgstr "Esleitu aliasak, nahi izanez gero"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___77.STRING.TEXT
+msgid  "Check the overview and decide how to proceed"
+msgstr "Begiratu ikuspegi orokorra eta zehaztu nola jarraitu"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___81.STRING.TEXT
+msgid  "Sorting order"
+msgstr "Ordena"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___82.STRING.TEXT
+msgid  "Search conditions"
+msgstr "Bilaketaren baldintzak"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___83.STRING.TEXT
+msgid  "Detail or summary"
+msgstr "Xehetasuna eta laburpena"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___84.STRING.TEXT
 msgid  "Grouping"
 msgstr "Elkartzea"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___85.STRING.TEXT
+msgid  "Grouping conditions"
+msgstr "Elkartzeko baldintzak"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___86.STRING.TEXT
+msgid  "Aliases"
+msgstr "Aliasak"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___87.STRING.TEXT
+msgid  "Overview"
+msgstr "Ikuspegi orokorra"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___88.STRING.TEXT
+msgid  "A field that has not been assigned an aggregate function must be used in a group."
+msgstr "Agregazio-funtziorik esleitu ez zaion eremua talde batean erabili behar da."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___89.STRING.TEXT
+msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
+msgstr "'<FIELDNAME> <LOGICOPERATOR> <VALUE>' baldintza bi aldiz aukeratu da. Baldintza bakoitza behin bakarrik aukera daiteke."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___90.STRING.TEXT
+msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
+msgstr "<FUNCTION> agregazio-funtzioa bi aldiz esleitu zaio '<NUMERICFIELD>'eremu-izenari."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___91.STRING.TEXT
+msgid  ", "
+msgstr ", "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___92.STRING.TEXT
+msgid  "<FIELDTITLE> (<FIELDNAME>)"
+msgstr "<FIELDTITLE> (<FIELDNAME>)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___93.STRING.TEXT
+msgid  "<FIELDNAME> (<SORTMODE>)"
+msgstr "<FIELDNAME> (<SORTMODE>)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___94.STRING.TEXT
+msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___95.STRING.TEXT
+msgid  "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___0.STRING.TEXT
+msgid  "Report Wizard"
+msgstr "Txostenen morroia"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___3.STRING.TEXT
+msgid  "~Table"
+msgstr "~Taula"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___4.STRING.TEXT
+msgid  "Colu~mns"
+msgstr "~Zutabeak"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___7.STRING.TEXT
+msgid  "Report_"
+msgstr "Txostena_"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___8.STRING.TEXT
+msgid  "- undefined -"
+msgstr "- definitu gabea -"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___9.STRING.TEXT
+msgid  "~Fields in report"
+msgstr "~Txosteneko eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___12.STRING.TEXT
+msgid  "Sort options"
+msgstr "Ordenatzeko aukerak"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___13.STRING.TEXT
+msgid  "Choose layout"
+msgstr "Aukeratu diseinua"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___14.STRING.TEXT
 msgid  "Create report"
 msgstr "Sortu txostena"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___15.STRING.TEXT
+msgid  "Layout of data"
+msgstr "Datuen diseinua"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___16.STRING.TEXT
+msgid  "Layout of headers and footers"
+msgstr "Goiburuen eta orri-oinen diseinua"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___20.STRING.TEXT
+msgid  "~Sort by"
+msgstr "~Ordenatu honen arabera:"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___21.STRING.TEXT
+msgid  "T~hen by"
+msgstr "On~doren, honen arabera:"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___22.STRING.TEXT
+msgid  "Orientation"
+msgstr "Orientazioa"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___23.STRING.TEXT
+msgid  "Portrait"
+msgstr "Bertikala"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___24.STRING.TEXT
+msgid  "Landscape"
+msgstr "Horizontala"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___28.STRING.TEXT
+msgid  "Which fields do you want to have in your report?"
+msgstr "Zein eremu eduki nahi dituzu txostenean?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___29.STRING.TEXT
+msgid  "Do you want to add grouping levels?"
+msgstr "Elkartze-mailak gehitu nahi dituzu?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___30.STRING.TEXT
+msgid  "According to which fields do you want to sort the data?"
+msgstr "Zein eremuren arabera ordenatu nahi dituzu datuak?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___31.STRING.TEXT
+msgid  "How do you want your report to look?"
+msgstr "Zein itxura nahi duzu izatea txostenak?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___32.STRING.TEXT
+msgid  "Decide how you want to proceed"
+msgstr "Erabaki nola jarraitu nahi duzun aurrera"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___33.STRING.TEXT
+msgid  "Title of report"
+msgstr "Txostenaren titulua"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___34.STRING.TEXT
+msgid  "Display report"
+msgstr "Erakutsi txostena"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___36.STRING.TEXT
+msgid  "Ascending"
+msgstr "Gorantz"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___37.STRING.TEXT
+msgid  "Descending"
+msgstr "Beherantz"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___40.STRING.TEXT
+msgid  "~Dynamic report"
+msgstr "~Txosten dinamikoa"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___41.STRING.TEXT
+msgid  "~Create report now"
+msgstr "~Sortu txostena orain"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___42.STRING.TEXT
+msgid  "~Modify report layout"
+msgstr "~Aldatu txostenaren diseinua"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___43.STRING.TEXT
+msgid  "Static report"
+msgstr "Txosten estatikoa"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___44.STRING.TEXT
+msgid  "Save as"
+msgstr "Gorde honela"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___50.STRING.TEXT
+msgid  "Groupings"
+msgstr "Elkartzeak"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___51.STRING.TEXT
+msgid  "Then b~y"
+msgstr "O~ndoren, honen arabera:"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___52.STRING.TEXT
+msgid  "~Then by"
+msgstr "~Ondoren, honen arabera:"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___53.STRING.TEXT
+msgid  "Asc~ending"
+msgstr "Go~rantz"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___54.STRING.TEXT
+msgid  "Ascend~ing"
+msgstr "G~orantz"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___55.STRING.TEXT
+msgid  "Ascendin~g"
+msgstr "Gora~ntz"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___56.STRING.TEXT
 msgid  "De~scending"
 msgstr "Be~herantz"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___57.STRING.TEXT
+msgid  "Des~cending"
+msgstr "Behe~rantz"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___60.STRING.TEXT
+msgid  "Binary fields cannot be displayed in the report."
+msgstr "Eremu bitarrak ezin dira bistaratu txostenean."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___61.STRING.TEXT
+msgid  "The table '<TABLENAME>' does not exist."
+msgstr "'<TABLENAME>' taula ez dago."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___62.STRING.TEXT
+msgid  "Creating Report..."
+msgstr "Txostena sortzen..."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___63.STRING.TEXT
+msgid  "Number of records inserted: <COUNT>"
+msgstr "Txertatutako erregistroen kopurua: <COUNT>"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___64.STRING.TEXT
+msgid  "The form '<REPORTFORM>' does not exist."
+msgstr "'<REPORTFORM>' inprimakia ez dago."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___65.STRING.TEXT
+msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
+msgstr "Ezin izan da exekutatu <BR>'<STATEMENT>' <BR> instrukzioko kontsulta. <BR> Egiaztatu datu-iturburua."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___66.STRING.TEXT
+msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
+msgstr "Ezin izan da irakurri '<REPORTFORM>' inprimakiko ezkutuko kontrol hau: '<CONTROLNAME>'."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___67.STRING.TEXT
+msgid  "Importing data..."
+msgstr "Datuak inportatzen..."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___68.STRING.TEXT
+msgid  "Labeling fields"
+msgstr "Eremuak etiketatzea"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___69.STRING.TEXT
+msgid  "How do you want to label the fields?"
+msgstr "Nola etiketatu nahi dituzu eremuak?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___70.STRING.TEXT
+msgid  "Label"
+msgstr "Etiketa"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___72.STRING.TEXT
+msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
+msgstr "Errorea gertatu da morroian..<BR>'%PATH' txantiloiak errorea eduki dezake.<BR>Beharrezko sekzioak edo taulak ez daude, edo, bestela, okerreko izena daukate.<BR>Xehetasun gehiago nahi izanez gero, ikus Laguntza.<BR>Hautatu beste txantiloi bat."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___73.STRING.TEXT
+msgid  "There is an invalid user field in a table."
+msgstr "Erabiltzaile-izen baliogabe bat dago taulan."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___74.STRING.TEXT
+msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
+msgstr "Bi aldiz hautatu da '<FIELDNAME>' ordenatzeko baldintza. Baldintza bakoitza behin bakarrik aukera daiteke."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___75.STRING.TEXT
+msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
+msgstr "Oharra: adibide-testua datu-baseko datuekin ordeztuko da txostena sortzean."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___76.STRING.TEXT
+msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
+msgstr "'%REPORTNAME' txostena badago lehendik ere datu-basean. Eman beste izen bat."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___78.STRING.TEXT
+msgid  "How do you want to proceed after creating the report?"
+msgstr "Nola jarraitu nahi duzu txostena sortu ondoren?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___79.STRING.TEXT
+msgid  "What kind of report do you want to create?"
+msgstr "Zein motatako txostena sortu nahi duzu?"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___80.STRING.TEXT
+msgid  "Tabular"
+msgstr "Tabularra"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___81.STRING.TEXT
+msgid  "Columnar, single-column"
+msgstr "Zutabetan, zutabe bakuna"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___82.STRING.TEXT
+msgid  "Columnar, two columns"
+msgstr "Zutabetan, bi zutabe"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___83.STRING.TEXT
+msgid  "Columnar, three columns"
+msgstr "Zutabetan, hiru zutabe"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___84.STRING.TEXT
+msgid  "In blocks, labels left"
+msgstr "Bloketan, etiketak ezkerrean"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___85.STRING.TEXT
+msgid  "In blocks, labels above"
+msgstr "Bloketan, etiketak goian"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___86.STRING.TEXT
 msgid  "Title:"
 msgstr "Titulua:"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___87.STRING.TEXT
+msgid  "Author:"
+msgstr "Egilea:"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___88.STRING.TEXT
 msgid  "Date:"
 msgstr "Data:"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___89.STRING.TEXT
+msgid  "Page #page# of #count#"
+msgstr "#page#/#count# orrialdea"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___90.STRING.TEXT
+msgid  "Page number:"
+msgstr "Orrialde-zenbakia:"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___91.STRING.TEXT
+msgid  "Page count:"
+msgstr "Orrialde-kopurua:"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___92.STRING.TEXT
+msgid  "No valid report template was found."
+msgstr "Ez da baliozko txosten-txantiloirik aurkitu."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___1.STRING.TEXT
+msgid  "Table Wizard"
+msgstr "Taulen morroia"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___2.STRING.TEXT
+msgid  "Select fields"
+msgstr "Hautatu eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___3.STRING.TEXT
+msgid  "Set types and formats"
+msgstr "Ezarri motak eta formatuak"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___4.STRING.TEXT
 msgid  "Set primary key"
@@ -83,13 +1411,177 @@ msgstr "Ezarri lehen mailako gakoa"
 msgid  "Create table"
 msgstr "Sortu taula"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___8.STRING.TEXT
+msgid  "Select fields for your table"
+msgstr "Hautatu taularako eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___9.STRING.TEXT
+msgid  "Set field types and formats"
+msgstr "Ezarri eremu motak eta formatuak"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___14.STRING.TEXT
+msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
+msgstr "Datu-baserako taula bat sortzen lagunduko dizu morroi honek. Taula-kategoria eta ereduzko taula bat hautatu ondoren, aukeratu zein eremu sartu nahi dituzun taulan. Ereduzko taula batetik baino gehiagotatik hartutako eremuak sar ditzakezu."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___15.STRING.TEXT
+msgid  "Ca~tegory"
+msgstr "Ka~tegoria"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___16.STRING.TEXT
+msgid  "B~usiness"
+msgstr "~Lanekoa"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___17.STRING.TEXT
+msgid  "P~ersonal"
+msgstr "~Pertsonala"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___18.STRING.TEXT
+msgid  "~Sample tables"
+msgstr "~Ereduzko taulak"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___20.STRING.TEXT
+msgid  "Field information"
+msgstr "Eremu-informazioa"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___21.STRING.TEXT
+msgid  "+"
+msgstr "+"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___23.STRING.TEXT
+msgid  "Field name"
+msgstr "Eremu-izena"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___24.STRING.TEXT
+msgid  "Field type"
+msgstr "Eremu mota"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___25.STRING.TEXT
+msgid  "~Selected fields"
+msgstr "~Hautatutako eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___26.STRING.TEXT
+msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
+msgstr "Lehen mailako gako batek esklusiboki identifikatzen du erregistro bakoitza datu-baseko taula batean. Aparteko tauletako informazioa lotzen laguntzen duten lehen mailako gakoek, eta gomendagarria da taula bakoitzean lehen mailako gako bat edukitzea. Lehen mailako gakorik gabe ezingo duzu daturik sartu taula honetan."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___27.STRING.TEXT
+msgid  "~Create a primary key"
+msgstr "~Sortu lehen mailako gakoa"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___28.STRING.TEXT
+msgid  "~Automatically add a primary key"
+msgstr "~Automatikoki gehitu lehen mailako gako bat"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___29.STRING.TEXT
+msgid  "~Use an existing field as a primary key"
+msgstr "~Erabili lehendik dagoen eremu bat lehen mailako gako gisa"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___30.STRING.TEXT
+msgid  "Define p~rimary key as a combination of several fields "
+msgstr "Definitu ~lehen mailako gako bat hainbat eremuren konbinazio gisa "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___31.STRING.TEXT
+msgid  "F~ieldname"
+msgstr "E~remu-izena"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___32.STRING.TEXT
+msgid  "~Primary key fields"
+msgstr "~Lehen mailako gakoaren eremuak"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___33.STRING.TEXT
+msgid  "Auto ~value"
+msgstr "~Balio automatikoa"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___34.STRING.TEXT
+msgid  "What do you want to name your table?"
+msgstr "Zein izen jarri nahi diozu taulari?"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___35.STRING.TEXT
+msgid  "Congratulations. You have entered all the information needed to create your table."
+msgstr "Zorionak. Taula sortzeko beharrezko informazio guztia sartu duzu."
+
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___36.STRING.TEXT
 msgid  "What do you want to do next?"
 msgstr "Zer egin nahi duzu orain?"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___37.STRING.TEXT
+msgid  "Modify the table design"
+msgstr "Taularen diseinua aldatu"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___38.STRING.TEXT
+msgid  "Insert data immediately"
+msgstr "Datuak sartu berehala"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___39.STRING.TEXT
+msgid  "C~reate a form based on this table"
+msgstr "~Inprimaki bat sortu taula honetan oinarrituta"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___40.STRING.TEXT
+msgid  "The table you have created could not be opened."
+msgstr "Sortu duzun taula ezin izan da ireki."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___41.STRING.TEXT
+msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "Baliteke '%TABLENAME' taula-izenaren karaktere bat ('%SPECIALCHAR') ez onartzea datu-baseak."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___42.STRING.TEXT
+msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "Baliteke '%FIELDNAME' eremu-izenaren karaktere bat ('%SPECIALCHAR') ez onartzea datu-baseak."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___44.STRING.TEXT
+msgid  "MyTable"
+msgstr "NireTaula"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___45.STRING.TEXT
+msgid  "Add a Field"
+msgstr "Gehitu eremu bat"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___46.STRING.TEXT
+msgid  "Remove the selected Field"
+msgstr "Kendu hautatutako eremua"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___47.STRING.TEXT
+msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
+msgstr "Eremua ezin da txertatu, gainditu egiten baitu datu-baseko taulan egon daitekeen eremuen gehieneko kopurua: %COUNT."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___48.STRING.TEXT
+msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
+msgstr "'%TABLENAME' izena badago.\nIdatzi beste izen bat."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___49.STRING.TEXT
+msgid  "Catalog of the table"
+msgstr "Taularen katalogoa"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___50.STRING.TEXT
+msgid  "Schema of the table"
+msgstr "Taularen eskema"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___51.STRING.TEXT
+msgid  "The field '%FIELDNAME' already exists."
+msgstr "'%FIELDNAME' eremua badago lehendik."
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___1.STRING.TEXT
+msgid  "Letter Wizard"
+msgstr "Gutunen morroia"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.STRING.TEXT
 msgid  "Label9"
 msgstr "Etiketa9"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___3.STRING.TEXT
+msgid  "~Business letter"
+msgstr "Gutun ~komertziala"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___4.STRING.TEXT
+msgid  "~Formal personal letter"
+msgstr "Gutun ~pertsonal formala"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___5.STRING.TEXT
+msgid  "~Personal letter"
+msgstr "~Gutun pertsonala"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___6.STRING.TEXT
+msgid  "~Use letterhead paper with pre-printed elements"
+msgstr "~Erabili gutun-burudun papera aurrez inprimatutako elementuekin"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.STRING.TEXT
 msgid  "~Logo"
@@ -99,13 +1591,29 @@ msgstr "~Logotipoa"
 msgid  "Return address"
 msgstr "Bidaltzailearen helbidea"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___9.STRING.TEXT
+msgid  "~Include footer"
+msgstr "~Sartu orri-oina"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.STRING.TEXT
 msgid  "~Return address in envelope window"
 msgstr "~Bidaltzailearen helbidea gutun-azalaren leihoan"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___13.STRING.TEXT
+msgid  "Letter Signs"
+msgstr "Letra-ikurrak"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.STRING.TEXT
 msgid  "S~ubject line"
 msgstr "~Gaiaren lerroa"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___15.STRING.TEXT
+msgid  "Salu~tation"
+msgstr "Agu~rra"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___16.STRING.TEXT
+msgid  "Fold ~marks"
+msgstr "~Tolestura-markak"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.STRING.TEXT
 msgid  "~Complimentary close"
@@ -118,6 +1626,10 @@ msgstr "~Orri-oina"
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.STRING.TEXT
 msgid  "~Use user data for return address"
 msgstr "~Erabili erabiltzailearen datuak bidaltzailearen helbidea zehazteko"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___20.STRING.TEXT
+msgid  "~New sender address:"
+msgstr "~Bidaltzaile-helbide berria:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.STRING.TEXT
 msgid  "Use placeholders for ~recipient's address"
@@ -135,9 +1647,33 @@ msgstr "Sartu ~bigarren orrialdean eta ondorengoetan bakarrik"
 msgid  "~Include page number"
 msgstr "~Sartu orrialde-zenbakia"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___25.STRING.TEXT
+msgid  "Letter Template"
+msgstr "Gutun-txantiloia"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___26.STRING.TEXT
+msgid  "Create a ~letter from this template"
+msgstr "Sortu ~gutuna txantiloi honetatik"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___27.STRING.TEXT
+msgid  "Make ~manual changes to this letter template"
+msgstr "Egin aldaketak ~eskuz gutun-txantiloi honi"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.STRING.TEXT
 msgid  "Page design"
 msgstr "Orrialde-diseinua"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___31.STRING.TEXT
+msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
+msgstr "Gutun-txantiloi bat sortzen lagunduko dizu morroi honek. Ondoren txantiloia erabil dezakezu gutunak idazteko oinarri gisa nahi duzun guztietan."
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___32.STRING.TEXT
+msgid  "~Height:"
+msgstr "A~ltuera:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___33.STRING.TEXT
+msgid  "~Width:"
+msgstr "~Zabalera:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.STRING.TEXT
 msgid  "S~pacing to left margin:"
@@ -151,6 +1687,18 @@ msgstr "Tartea ~goiko marjinan:"
 msgid  "Height:"
 msgstr "Altuera:"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___37.STRING.TEXT
+msgid  "Width:"
+msgstr "Zabalera:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___41.STRING.TEXT
+msgid  "Use a typical letter format for this country:"
+msgstr "Erabili herrialde honetako gutun-formatu tipiko bat:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___42.STRING.TEXT
+msgid  "Sender's address"
+msgstr "Bidaltzailearen helbidea"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.STRING.TEXT
 msgid  "Name:"
 msgstr "Izena:"
@@ -163,9 +1711,21 @@ msgstr "Kalea:"
 msgid  "ZIP code/State/City:"
 msgstr "Posta-kodea/Probintzia/Herria:"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___46.STRING.TEXT
+msgid  "Recipient's address"
+msgstr "Hartzailearen helbidea"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.STRING.TEXT
 msgid  "Footer"
 msgstr "Orri-oina"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___48.STRING.TEXT
+msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
+msgstr "Gutun-txantiloi bat sortzen lagunduko dizu morroiak, eta gero gutunak sortu ahal izango dituzu diseinu eta ezarpen horiekin."
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___49.STRING.TEXT
+msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
+msgstr "Txantiloitik beste gutun bat sortzeko, joan txantiloiaren kokalekura eta egin klik bikoitza gainean."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.STRING.TEXT
 msgid  "Template name:"
@@ -175,21 +1735,845 @@ msgstr "Txantiloiaren izena:"
 msgid  "Location and file name:"
 msgstr "Kokalekua eta fitxategi-izena:"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___52.STRING.TEXT
+msgid  "How do you want to proceed?"
+msgstr "Nola jarraitu nahi duzu?"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___53.STRING.TEXT
+msgid  "Please choose the type of letter and page design"
+msgstr "Aukeratu gutun mota eta orrialde-diseinua"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___54.STRING.TEXT
+msgid  "Select the items to be printed"
+msgstr "Hautatu inprimatu nahi dituzun elementuak"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___55.STRING.TEXT
+msgid  "Specify items already on your letterhead paper"
+msgstr "Zehaztu jada gutun-burudun paperean dituzun elementuak"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___56.STRING.TEXT
+msgid  "Specify the sender and recipient information"
+msgstr "Zehaztu bidaltzailearen eta hartzailearen datuak"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___57.STRING.TEXT
+msgid  "Fill in the information you would like in the footer"
+msgstr "Bete orri-oinean agertzea nahi duzun informazioa"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___58.STRING.TEXT
+msgid  "Please specify last settings"
+msgstr "Zehaztu azken ezarpenak"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___1.STRING.TEXT
+msgid  "To Whom it May Concern"
+msgstr "Dagokionari"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___2.STRING.TEXT
+msgid  "Dear Sir or Madam"
+msgstr "Jaun/Andre agurgarria"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___3.STRING.TEXT
+msgid  "Hello"
+msgstr "Kaixo"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___1.STRING.TEXT
 msgid  "Sincerely"
 msgstr "Begirunez"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___2.STRING.TEXT
+msgid  "Best regards"
+msgstr "Agur bero bat zuri"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___3.STRING.TEXT
+msgid  "Cheers"
+msgstr "Agur bero bat,"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___2.STRING.TEXT
+msgid  "Letterhead layout"
+msgstr "Gutun-buruaren diseinua"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___3.STRING.TEXT
+msgid  "Printed items"
+msgstr "Inprimatutako elementuak"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___4.STRING.TEXT
+msgid  "Recipient and sender"
+msgstr "Hartzailea eta bidaltzailea"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.STRING.TEXT
 msgid  "Name and location"
 msgstr "Izena eta lekua"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___1.STRING.TEXT
+msgid  "Fax Wizard"
+msgstr "Fax morroia"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___3.STRING.TEXT
+msgid  "~Business Fax"
+msgstr "~Laneko faxa"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___4.STRING.TEXT
+msgid  "~Personal Fax"
+msgstr "~Fax pertsonala"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___7.STRING.TEXT
+msgid  "S~alutation"
+msgstr "A~gurra"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___11.STRING.TEXT
 msgid  "~New return address"
 msgstr "~Bidaltzaile-helbide berria"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___12.STRING.TEXT
+msgid  "My Fax Template"
+msgstr "Fax-txantiloia"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___13.STRING.TEXT
+msgid  "Create a ~fax from this template"
+msgstr "Sortu ~faxa txantiloi honetatik"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___14.STRING.TEXT
+msgid  "Make ~manual changes to this fax template"
+msgstr "Egin aldaketak ~eskuz fax-txantiloi honi"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___17.STRING.TEXT
+msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
+msgstr "Fax-txantiloi bat sortzen lagunduko dizu morroi honek. Gero txantiloia erabili ahal izango duzu faxa sortu behar duzun guztietan."
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___23.STRING.TEXT
+msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
+msgstr "Fax-txantiloi bat sortzen lagunduko dizu morroiak, eta gero faxak sortu ahal izango dituzu diseinu eta ezarpen horiekin."
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___24.STRING.TEXT
+msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
+msgstr "Beste fax berri bat sortzeko txantiloia erabiliz, joan txantiloia gordetako kokalekura eta egin klik txantiloiaren gainean."
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___25.STRING.TEXT
+msgid  "Template Name:"
+msgstr "Txantiloiaren izena:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___28.STRING.TEXT
+msgid  "Choose the type of fax and a page design"
+msgstr "Aukeratu fax mota eta orrialde-diseinua"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___29.STRING.TEXT
+msgid  "Select items to include in the fax template"
+msgstr "Hautatu fax-txantiloian sartu nahi dituzun elementuak"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___30.STRING.TEXT
+msgid  "Specify sender and recipient information"
+msgstr "Zehaztu bidaltzailearen eta hartzailearen datuak"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___31.STRING.TEXT
+msgid  "Enter text for the footer"
+msgstr "Sartu orri-oinerako testua"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___32.STRING.TEXT
 msgid  "Choose a name and save the template"
 msgstr "Aukeratu izen bat eta gorde txantiloia"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___35.STRING.TEXT
+msgid  "~Date"
+msgstr "~Data"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___36.STRING.TEXT
+msgid  "~Type of message"
+msgstr "~Mezu mota"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___37.STRING.TEXT
+msgid  "Fax Number:"
+msgstr "Fax-zenbakia:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___1.STRING.TEXT
+msgid  "Important Information!"
+msgstr "Informazio garrantzitsua!"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___2.STRING.TEXT
+msgid  "For your information"
+msgstr "Zure informaziorako"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___3.STRING.TEXT
+msgid  "News!"
+msgstr "Berriak!"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___1.STRING.TEXT
+msgid  "To whom it may concern,"
+msgstr "Dagokionari,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___2.STRING.TEXT
+msgid  "Dear Sir or Madam,"
+msgstr "Jaun/Andre agurgarria,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___3.STRING.TEXT
+msgid  "Hello,"
+msgstr "Kaixo,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___4.STRING.TEXT
+msgid  "Hi,"
+msgstr "Epa,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___2.STRING.TEXT
+msgid  "Yours faithfully"
+msgstr "Adeitasunez,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___3.STRING.TEXT
+msgid  "Regards"
+msgstr "Ondo izan"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___4.STRING.TEXT
+msgid  "Love"
+msgstr "Maitasunez,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___2.STRING.TEXT
+msgid  "Items to include"
+msgstr "Sartzeko elementuak"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___3.STRING.TEXT
+msgid  "Sender and Recipient"
+msgstr "Bidaltzailea eta hartzailea"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__1.STRING.TEXT
+msgid  "Web Wizard"
+msgstr "Web morroia"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__2.STRING.TEXT
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr "Interneten dokumentuak argitaratzen lagunduko dizu morroi honek.\n\nDokumentuak bihurtu egingo ditu, web arakatzaile batekin ikusi ahal izateko. Gainera, aurkibide-orri bat sortuko du, dokumentuak erraz atzitzeko estekekin. Bestalde, zure web gunearen diseinua eta itxura pertsonalizatzeko aukera ere emango dizu.\n\nWeb-ean argitaratu dituzun dokumentuak eguneratuta mantendu ahal izango dituzu, eta dokumentuak gehitu edo kendu edozein unetan."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__4.STRING.TEXT
+msgid  "~Delete"
+msgstr "E~zabatu"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__5.STRING.TEXT
+msgid  "Introduction"
+msgstr "Sarrera"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__6.STRING.TEXT
+msgid  "Select the documents you want to publish"
+msgstr "Hautatu argitaratu nahi dituzun dokumentuak"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__8.STRING.TEXT
+msgid  "Document information "
+msgstr "Dokumentu-informazioa "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__9.STRING.TEXT
+msgid  "~Title:"
+msgstr "~Titulua:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__10.STRING.TEXT
+msgid  "~Summary: "
+msgstr "~Laburpena: "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__11.STRING.TEXT
+msgid  "Au~thor:"
+msgstr "E~gilea:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__12.STRING.TEXT
+msgid  "~Export to file format:"
+msgstr "~Esportatu fitxategi-formatu honetara:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__13.STRING.TEXT
+msgid  "Enter general information for your web site"
+msgstr "Sartu zure web gunerako informazio orokorra"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__16.STRING.TEXT
+msgid  "Description:"
+msgstr "Azalpena:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__18.STRING.TEXT
+msgid  "Created:"
+msgstr "Sortze-data:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__20.STRING.TEXT
+msgid  "E-mail:"
+msgstr "Helbide elektronikoa:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__21.STRING.TEXT
+msgid  "Copyright notice:"
+msgstr "Copyright oharra:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__22.STRING.TEXT
+msgid  "Modified:"
+msgstr "Aldatze-data:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__24.STRING.TEXT
+msgid  "~Preview"
+msgstr "A~urrebista"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__25.STRING.TEXT
+msgid  "Where do you want to publish your web site?"
+msgstr "Non argitaratu nahi duzu web gunea?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__26.STRING.TEXT
+msgid  "Publish the new web site:"
+msgstr "Argitaratu web gune berria"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__27.STRING.TEXT
+msgid  "To a ~local folder"
+msgstr "~Karpeta lokal batera"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__28.STRING.TEXT
+msgid  "..."
+msgstr "..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__29.STRING.TEXT
+msgid  "To a ~web server via FTP"
+msgstr "~Web zerbitzari batera FTP bidez"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__31.STRING.TEXT
+msgid  "~Configure..."
+msgstr "~Konfiguratu..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__32.STRING.TEXT
+msgid  "To a ZIP ~archive"
+msgstr "~ZIP artxibo batera"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__34.STRING.TEXT
+msgid  "~Save settings (recommended)"
+msgstr "~Gorde ezarpenak (gomendatua)"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__35.STRING.TEXT
+msgid  "Save ~as:"
+msgstr "Gorde ~honela:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__36.STRING.TEXT
+msgid  "~Choose settings for the Web Wizard"
+msgstr "Aukeratu web ~morroiaren ezarpenak"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__37.STRING.TEXT
+msgid  "Web site content "
+msgstr "Web guneko edukia "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__38.STRING.TEXT
+msgid  "~Add..."
+msgstr "~Gehitu..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__39.STRING.TEXT
+msgid  "Remo~ve"
+msgstr "~Kendu"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__40.STRING.TEXT
+msgid  "Choose a layout for the table of contents of your web site"
+msgstr "Aukeratu diseinu bat web guneko aurkibidearentzat"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__41.STRING.TEXT
+msgid  "Select a style for the table of contents page"
+msgstr "Aukeratu estilo bat aurkibidearen orriarentzat"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__42.STRING.TEXT
+msgid  "~Style:"
+msgstr "~Estiloa:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__48.STRING.TEXT
+msgid  "~Layouts: "
+msgstr "Di~seinuak: "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__50.STRING.TEXT
+msgid  "~Description"
+msgstr "~Azalpena"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__51.STRING.TEXT
+msgid  "~Author"
+msgstr "~Egilea"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__52.STRING.TEXT
+msgid  "Cr~eation date"
+msgstr "So~rtze-data"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__53.STRING.TEXT
+msgid  "~Last change date"
+msgstr "Az~ken aldaketaren data"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__54.STRING.TEXT
+msgid  "~File name"
+msgstr "~Fitxategi-izena"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__55.STRING.TEXT
+msgid  "File forma~t"
+msgstr "Fitxategi-for~matua"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__56.STRING.TEXT
+msgid  "File format ~icon"
+msgstr "Fitxategi-formatuaren ~ikonoa"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__57.STRING.TEXT
+msgid  "Number ~of pages"
+msgstr "Orrialde ~kopurua"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__58.STRING.TEXT
+msgid  "~Size in KB"
+msgstr "~Tamaina KBtan"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__59.STRING.TEXT
+msgid  "Click 'Preview' to see a preview in your browser:"
+msgstr "Aurrebista bat ikusteko zure arakatzailean, egin klik 'Aurrebista'n:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__60.STRING.TEXT
+msgid  "Customize the selected layout"
+msgstr "Pertsonalizatu hautatutako diseinua"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__61.STRING.TEXT
+msgid  "Include the following information for each document in the table of contents:"
+msgstr "Sartu dokumentu bakoitzaren informazio hau aurkibidean:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__62.STRING.TEXT
+msgid  "Optimize the layout for screen resolution:"
+msgstr "Optimizatu diseinua pantaila-bereizmenaren arabera:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__64.STRING.TEXT
+msgid  "~640x480"
+msgstr "~640x480"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__65.STRING.TEXT
+msgid  "~800x600"
+msgstr "~800x600"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__66.STRING.TEXT
+msgid  "~1024x768"
+msgstr "~1024x768"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__70.STRING.TEXT
+msgid  "Generating Your Web Site"
+msgstr "Sortu zure web gunea"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__71.STRING.TEXT
+msgid  "%START - %END/%TOTAL"
+msgstr "%START - %END/%TOTAL"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__72.STRING.TEXT
+msgid  "myWebsite"
+msgstr "nireWebgunea"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__73.STRING.TEXT
+msgid  "FTP target '%FILENAME' is a file."
+msgstr "'%FILENAME' FTP helburua fitxategi bat da."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__74.STRING.TEXT
+msgid  "The local target '%FILENAME' is a file."
+msgstr "'%FILENAME' helburu lokala fitxategi bat da."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__75.STRING.TEXT
+msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
+msgstr "'%FILENAME' ZIP helburua badago lehendik. Lehendik dagoen helburua gainidatzi nahi duzu? "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__76.STRING.TEXT
+msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "'%FILENAME' FTP helburuaren direktorioa ez dago hutsik. Fitxategi batzuk gainidatzi egingo ziren beharbada. Jarraitu nahi duzu?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__77.STRING.TEXT
+msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "'%FILENAME' helburu lokalaren direktorioa ez dago hutsik. Fitxategi batzuk gainidatzi egingo ziren beharbada. Jarraitu nahi duzu?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__78.STRING.TEXT
+msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
+msgstr "Dagoeneko badaude ezarpenak emandako izenarekin. Lehendik dauden ezarpenak gainidatzi nahi dituzu? "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__79.STRING.TEXT
+msgid  "Exporting documents..."
+msgstr "Dokumentuak esportatzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__80.STRING.TEXT
+msgid  "Preparing export..."
+msgstr "Esportazioa prestatzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__81.STRING.TEXT
+msgid  "Copying layout files..."
+msgstr "Diseinu-fitxategiak kopiatzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__82.STRING.TEXT
+msgid  "Preparing table of contents generation..."
+msgstr "Edukiak sortzeko taula prestatzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__83.STRING.TEXT
+msgid  "Generating table of contents..."
+msgstr "Aurkibidea sortzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__84.STRING.TEXT
+msgid  "Initializing..."
+msgstr "Hasieratzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__86.STRING.TEXT
+msgid  "Preparing to publish..."
+msgstr "Argitaratzeko prestatzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__87.STRING.TEXT
+msgid  "Publishing to local directory..."
+msgstr "Direktorio lokalera argitaratzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__88.STRING.TEXT
+msgid  "Publishing to FTP destination..."
+msgstr "FTP helburura argitaratzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__89.STRING.TEXT
+msgid  "Publishing to a ZIP archive..."
+msgstr "ZIP artxibo batera argitaratzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___90.STRING.TEXT
+msgid  "Finishing..."
+msgstr "Amaitzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___94.STRING.TEXT
+msgid  "Graphic files"
+msgstr "Grafiko-fitxategiak"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___95.STRING.TEXT
+msgid  "All files"
+msgstr "Fitxategi guztiak"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___96.STRING.TEXT
+msgid  "~ZIP archive files"
+msgstr "~ZIP artxibo-fitxategiak"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___98.STRING.TEXT
+msgid  "Background images"
+msgstr "Atzeko planoko irudiak"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___99.STRING.TEXT
+msgid  "Choose a background image: "
+msgstr "Aukeratu atzeko planoko irudia: "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___100.STRING.TEXT
+msgid  "Icon sets"
+msgstr "Ikono-jokoak"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___101.STRING.TEXT
+msgid  "Choose an icon set:"
+msgstr "Aukeratu ikono-jokoa:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__102.STRING.TEXT
+msgid  "Other..."
+msgstr "Beste bat..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__103.STRING.TEXT
+msgid  "None"
+msgstr "Bat ere ez"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__104.STRING.TEXT
+msgid  "Your web site was created successfully into: %FILENAME"
+msgstr "Web gunea behar bezala sortu da hemen: %FILENAME"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__105.STRING.TEXT
+msgid  "One or more errors occurred when generating the web site."
+msgstr "Errore bat edo gehiago gertatu da web gunea sortzean."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__106.STRING.TEXT
+msgid  "An error occurred while generating the table of contents page(s). "
+msgstr "Errore bat gertatu da aurkibidearen orria(k) sortzean. "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__107.STRING.TEXT
+msgid  "An error occurred while copying the layout files. "
+msgstr "Errore bat gertatu da diseinu-fitxategiak kopiatzean. "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__108.STRING.TEXT
+msgid  "An error occurred while gathering document information for '%FILENAME'. "
+msgstr "'%FILENAME': errore bat gertatu da dokumentu-informazioa biltzean. "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__109.STRING.TEXT
+msgid  "An error occurred while exporting the document '%FILENAME'."
+msgstr "Errore bat gertatu da '%FILENAME' dokumentua esportatzean."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__110.STRING.TEXT
+msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr "Errore bat gertatu da '%FILENAME' esportatzeko direktorio bat sortzean."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__111.STRING.TEXT
+msgid  "A security error occurred while exporting the document '%FILENAME'."
+msgstr "Segurtasuneko errorea gertatu da '%FILENAME' dokumentua esportatzean."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__112.STRING.TEXT
+msgid  "An input/output error occurred while exporting the document '%FILENAME'."
+msgstr "Sarrera/irteerako errore bat gertatu da '%FILENAME' dokumentua esportatzean."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__113.STRING.TEXT
+msgid  "An error occurred while copying media files to the temporary directory."
+msgstr "Errore bat gertatu da euskarri-fitxategiak aldi baterako direktorioan kopiatzean."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__114.STRING.TEXT
+msgid  "The web site could not be copied to the following destination: %URL"
+msgstr "Ezin izan da web gunea kopiatu helburu honetan: %URL"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__115.STRING.TEXT
+msgid  "An unexpected error occurred: %ERROR"
+msgstr "Ustekabeko errore bat gertatu da: %ERROR"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__116.STRING.TEXT
+msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr "Ustekabeko errore bat gertatu da '%FILENAME' fitxategia balidatzean."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__117.STRING.TEXT
+msgid  "%FILENAME' is a folder."
+msgstr "%FILENAME' karpeta bat da."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__118.STRING.TEXT
+msgid  "Loading Web Wizard Settings..."
+msgstr "Web morroiaren ezarpenak kargatzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__119.STRING.TEXT
+msgid  "An unexpected error occurred."
+msgstr "Ustekabeko errore bat gertatu da."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__120.STRING.TEXT
+msgid  "Validating documents..."
+msgstr "Dokumentuak balidatzen..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__121.STRING.TEXT
+msgid  "My Archive"
+msgstr "Artxiboa"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__122.STRING.TEXT
+msgid  "Introduction "
+msgstr "Sarrera "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__123.STRING.TEXT
+msgid  "Documents "
+msgstr "Dokumentuak "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__124.STRING.TEXT
+msgid  "Main layout"
+msgstr "Diseinu nagusia"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__125.STRING.TEXT
+msgid  "Layout details"
+msgstr "Diseinuaren xehetasunak"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__126.STRING.TEXT
+msgid  "Style"
+msgstr "Estiloa"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__127.STRING.TEXT
+msgid  "Web site information"
+msgstr "Web guneari buruzko informazioa"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__128.STRING.TEXT
+msgid  "Preview"
+msgstr "Aurrebista"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__130.STRING.TEXT
+msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
+msgstr "Hautatutako ezarpenak ezabatu egingo dira.\n\nZiur zaude ezarpen horiek ezabatu nahi dituzula? "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__131.STRING.TEXT
+msgid  "%NUMBER pages"
+msgstr "%NUMBER orri"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__132.STRING.TEXT
+msgid  "%NUMBER slides"
+msgstr "%NUMBER diapositiba"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__133.STRING.TEXT
+msgid  "Created: %DATE"
+msgstr "Sortze-data: %DATE"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__134.STRING.TEXT
+msgid  "Last modified: %DATE"
+msgstr "Azken aldaketa: %DATE"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__135.STRING.TEXT
+msgid  "Web Wizard Settings"
+msgstr "Web morroiaren ezarpenak"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__136.STRING.TEXT
+msgid  "Background image:"
+msgstr "Atzeko planoko irudia:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__137.STRING.TEXT
+msgid  "Icon set:"
+msgstr "Ikono-jokoa:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__138.STRING.TEXT
+msgid  "The icon set is used for presentations in HTML format."
+msgstr "HTML formatuko aurkezpenetarako erabiltzen da ikono-jokoa."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__139.STRING.TEXT
+msgid  "HTML Metadata"
+msgstr "HTML metadatuak"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__140.STRING.TEXT
+msgid  "Choose..."
+msgstr "Aukeratu..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__142.STRING.TEXT
+msgid  "<default>"
+msgstr "<lehenetsia>"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__143.STRING.TEXT
+msgid  "Publishing via FTP Proxy is not supported."
+msgstr "Ez da onartzen FTP proxy bidez argitaratzea."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__144.STRING.TEXT
+msgid  "<no background image>"
+msgstr "<atzeko planoko irudirik ez>"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__145.STRING.TEXT
+msgid  "<no icon set>"
+msgstr "<ikono-jokorik ez>"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__146.STRING.TEXT
+msgid  "The FTP directory '%FILENAME' could not be created."
+msgstr "'%FILENAME' FTP direktorioa ezin izan da sortu."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__147.STRING.TEXT
+msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr "'%FILENAME' FTP direktorioa ez dago. \nOrain sortu nahi duzu?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__148.STRING.TEXT
+msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
+msgstr "Ezin da sortu '%FILENAME' zip fitxategia: badago lehendik izen bereko direktorio bat."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__149.STRING.TEXT
+msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
+msgstr "Ezin da sortu '%FILENAME' direktorio lokala: \nEgiaztatu idazteko baimena badaukazula."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__150.STRING.TEXT
+msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr "'%FILENAME' direktorio lokala ez dago. \nOrain sortu nahi duzu?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__151.STRING.TEXT
+msgid  "Size: %NUMBERKB"
+msgstr "Tamaina: %NUMBERKB"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__152.STRING.TEXT
+msgid  "File not found. Would you like to specify a new file location?"
+msgstr "Fitxategia ez da aurkitu. Kokaleku berri bat zehaztu nahi duzu?"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__0.STRING.TEXT
+msgid  "FTP Connection"
+msgstr "FTP konexioa"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__1.STRING.TEXT
+msgid  "~User name:"
+msgstr "~Erabiltzaile-izena:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__2.STRING.TEXT
+msgid  "~Password:"
+msgstr "~Pasahitza:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__3.STRING.TEXT
+msgid  "Connect"
+msgstr "Konektatu"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__4.STRING.TEXT
+msgid  "1. Enter FTP connection information."
+msgstr "1. Sartu FTP konexioaren informazioa."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__5.STRING.TEXT
+msgid  "~Server name or IP address:"
+msgstr "~Zerbitzariaren izena edo IP helbidea:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__6.STRING.TEXT
+msgid  "2. Connect to the server."
+msgstr "2. Konektatu zerbitzarira."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__7.STRING.TEXT
+msgid  "3. ~Choose a remote directory (optional)."
+msgstr "3. ~Aukeratu urruneko direktorio bat (aukerakoa)."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__9.STRING.TEXT
+msgid  "Connection status is unknown"
+msgstr "Konexioaren egoera ezezaguna da"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__10.STRING.TEXT
+msgid  "Connection was established successfully"
+msgstr "Konexioa behar bezala ezarri da"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__11.STRING.TEXT
+msgid  "Username or password is wrong"
+msgstr "Erabiltzaile-izena edo pasahitza oker dago"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__12.STRING.TEXT
+msgid  "Could not resolve server name"
+msgstr "Ezin izan da ebatzi zerbitzari-izena"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__13.STRING.TEXT
+msgid  "You do not have sufficient user rights"
+msgstr "Ez daukazu behar adina erabiltzaile-eskubide"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__14.STRING.TEXT
+msgid  "Cannot connect to server"
+msgstr "Ezin da konektatu zerbitzarira"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__15.STRING.TEXT
+msgid  "Unexpected error"
+msgstr "Ustekabeko errorea"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__16.STRING.TEXT
+msgid  "FTP publishing directory"
+msgstr "FTP argitaratzeen direktorioa"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__17.STRING.TEXT
+msgid  "This is not an FTP folder"
+msgstr "Hau ez da FTP karpeta bat"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__18.STRING.TEXT
+msgid  "Connecting..."
+msgstr "Konektatzen..."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__1.STRING.TEXT
+msgid  "Agenda Wizard"
+msgstr "Agendaren morroia"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__2.STRING.TEXT
+msgid  "Make ~manual changes to this agenda template"
+msgstr "Egin aldaketak ~eskuz agenda-txantiloi honi"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__6.STRING.TEXT
+msgid  "Please choose the page design for the agenda"
+msgstr "Aukeratu agendarako orrialde-diseinua"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__7.STRING.TEXT
+msgid  "Please select the headings you wish to include in your agenda template"
+msgstr "Aukeratu agenda-txantiloian sartu nahi dituzun goiburukoak"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__8.STRING.TEXT
+msgid  "Please enter general information for the event"
+msgstr "Sartu gertaerari buruzko informazio orokorra"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__9.STRING.TEXT
+msgid  "Please specify items for the agenda"
+msgstr "Zehaztu agendarako elementuak"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__10.STRING.TEXT
+msgid  "Please select the names you wish to include in your agenda template"
+msgstr "Aukeratu agenda-txantiloian sartu nahi dituzun izenak"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__12.STRING.TEXT
+msgid  "Include form for recording minutes"
+msgstr "Sartu minutuak grabatzeko inprimakia"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__13.STRING.TEXT
+msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
+msgstr "Agenda-txantiloi bat sortzen lagunduko dizu morroi honek. Gero txantiloia erabili ahal izango duzu agenda sortu behar duzun guztietan."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__14.STRING.TEXT
+msgid  "Time:"
+msgstr "Ordua:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___16.STRING.TEXT
+msgid  "Location:"
+msgstr "Kokalekua:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__17.STRING.TEXT
+msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
+msgstr "Leku-markak erabiliko dira hutsik dauden eremuetan. Gero testuarekin ordez ditzakezu leku-markak."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__19.STRING.TEXT
+msgid  "Create an ~agenda from this template"
+msgstr "Sortu ~agenda txantiloi honetatik"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__20.STRING.TEXT
+msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
+msgstr "Agenda berri bat sortzeko txantiloia erabiliz, joan txantiloia gordetako kokalekura eta egin klik txantiloiaren gainean."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__21.STRING.TEXT
+msgid  "Agenda item"
+msgstr "Agenda-elementua"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__22.STRING.TEXT
+msgid  "Responsible"
+msgstr "Arduraduna"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__23.STRING.TEXT
+msgid  "Duration"
+msgstr "Iraupena"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.STRING.TEXT
 msgid  "Meeting called by"
@@ -203,10 +2587,6 @@ msgstr "Lehendakaria"
 msgid  "Minute keeper"
 msgstr "Minutu-kontrolatzailea"
 
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.STRING.TEXT
-msgid  "Moderator"
-msgstr "Moderatzailea"
-
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.STRING.TEXT
 msgid  "Attendees"
 msgstr "Parte-hartzaileak"
@@ -219,29 +2599,449 @@ msgstr "Behatzaileak"
 msgid  "Facility personnel"
 msgstr "Instalazioetako langileak"
 
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.STRING.TEXT
-msgid  "Type of meeting"
-msgstr "Bilera mota"
-
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.STRING.TEXT
-msgid  "Please read"
-msgstr "Irakurri mesedez"
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__31.STRING.TEXT
+msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
+msgstr "Agenda-txantiloiak leku-markak ipiniko ditu hautatutako pertsonen izenentzat. Txantiloitik agenda bat sortzean, dagozkien izenekin ordez ditzakezu leku-markak."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.STRING.TEXT
 msgid  "Please bring"
 msgstr "Ekarri mesedez"
 
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.STRING.TEXT
-msgid  "Notes"
-msgstr "Oharrak"
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__36.STRING.TEXT
+msgid  "The agenda template will include placeholders for the selected items."
+msgstr "Agenda-txantiloiak leku-markak ipiniko ditu hautatutako elementuentzat."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__39.STRING.TEXT
+msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
+msgstr "Agenda-txantiloi bat sortzen lagunduko dizu morroiak, eta gero agendak sortu ahal izango dituzu diseinu eta ezarpen horiekin."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__40.STRING.TEXT
+msgid  "Page design:"
+msgstr "Orrialde-diseinua:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__41.STRING.TEXT
+msgid  "myAgendaTemplate.stw"
+msgstr "nireAgendarenTxantiloia.stw"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__42.STRING.TEXT
+msgid  "My Agenda Template"
+msgstr "Agenda-txantiloia"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__43.STRING.TEXT
+msgid  "An unexpected error occurred while saving the agenda template."
+msgstr "Ustekabeko errorea gertatu da agenda-txantiloia gordetzean."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__44.STRING.TEXT
+msgid  "Name"
+msgstr "Izena"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__45.STRING.TEXT
+msgid  "Date"
+msgstr "Data"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__46.STRING.TEXT
+msgid  "Time"
+msgstr "Denbora"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___47.STRING.TEXT
+msgid  "Location"
+msgstr "Kokalekua"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__48.STRING.TEXT
+msgid  "Click to replace this text"
+msgstr "Egin klik testu hau ordezteko"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__51.STRING.TEXT
+msgid  "General information"
+msgstr "Informazio orokorra"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__52.STRING.TEXT
+msgid  "Headings to include"
+msgstr "Sartu beharreko goiburuak"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__53.STRING.TEXT
+msgid  "Names"
+msgstr "Izenak"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__54.STRING.TEXT
+msgid  "Agenda items"
+msgstr "Agenda-elementuak"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__56.STRING.TEXT
+msgid  "An unexpected error occurred while opening the agenda template."
+msgstr "Ustekabeko errorea gertatu da agenda-txantiloia irekitzean."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__68.STRING.TEXT
+msgid  "Insert"
+msgstr "Txertatu"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__69.STRING.TEXT
+msgid  "Remove"
+msgstr "Kendu"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__70.STRING.TEXT
+msgid  "Move up"
+msgstr "Eraman gora"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__71.STRING.TEXT
+msgid  "Move down"
+msgstr "Eraman behera"
+
+#: importwizard/importwi.src#SHELPBUTTON.STRING.TEXT
+msgid  "~Help"
+msgstr "~Laguntza"
+
+#: importwizard/importwi.src#SCANCELBUTTON.STRING.TEXT
+msgid  "~Cancel"
+msgstr "~Utzi"
+
+#: importwizard/importwi.src#SBACKBUTTON.STRING.TEXT
+msgid  "<< ~Back"
+msgstr "<< At~zera"
+
+#: importwizard/importwi.src#SNEXTBUTTON.STRING.TEXT
+msgid  "Ne~xt >>"
+msgstr "~Hurrengoa >>"
+
+#: importwizard/importwi.src#SBEGINBUTTON.STRING.TEXT
+msgid  "~Convert"
+msgstr "~Bihurtu"
+
+#: importwizard/importwi.src#SCLOSEBUTTON.STRING.TEXT
+msgid  "~Close"
+msgstr "It~xi"
+
+#: importwizard/importwi.src#SWELCOMETEXTLABEL1.STRING.TEXT
+msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
+msgstr "%PRODUCTNAME formatuko dokumentuak eta Microsoft Office-eko dokumentuak OpenDocument formatu berrira bihurtzen ditu morroi honek."
+
+#: importwizard/importwi.src#SWELCOMETEXTLABEL2.STRING.TEXT
+msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
+msgstr "Kontuan izan, Microsoft dokumentuak bihurtzean, erantsitako VBA makroen funtzionalitatea galdu egiten dela."
+
+#: importwizard/importwi.src#SWELCOMETEXTLABEL3.STRING.TEXT
+msgid  "Select the document type for conversion:"
+msgstr "Hautatu bihurtu beharreko dokumentu mota:"
+
+#: importwizard/importwi.src#SMSTEMPLATECHECKBOX_1_.STRING.TEXT
+msgid  "Word templates"
+msgstr "Word txantiloiak"
+
+#: importwizard/importwi.src#SMSTEMPLATECHECKBOX_2_.STRING.TEXT
+msgid  "Excel templates"
+msgstr "Excel txantiloiak"
+
+#: importwizard/importwi.src#SMSTEMPLATECHECKBOX_3_.STRING.TEXT
+msgid  "PowerPoint templates"
+msgstr "PowerPoint txantiloiak"
+
+#: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_1_.STRING.TEXT
+msgid  "Word documents"
+msgstr "Word dokumentuak"
+
+#: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_2_.STRING.TEXT
+msgid  "Excel documents"
+msgstr "Excel dokumentuak"
+
+#: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_3_.STRING.TEXT
+msgid  "PowerPoint documents"
+msgstr "PowerPoint dokumentuak"
+
+#: importwizard/importwi.src#SSEARCHINSUBDIR.STRING.TEXT
+msgid  "Including subdirectories"
+msgstr "Azpidirektorioetakoak ere bai"
+
+#: importwizard/importwi.src#SMSCONTAINERNAME.STRING.TEXT
+msgid  "Microsoft Office"
+msgstr "Microsoft Office"
+
+#: importwizard/importwi.src#SSUMMARYHEADER.STRING.TEXT
+msgid  "Summary:"
+msgstr "Laburpena:"
+
+#: importwizard/importwi.src#STEXTIMPORTLABEL.STRING.TEXT
+msgid  "Import from:"
+msgstr "Inportatu hemendik:"
+
+#: importwizard/importwi.src#STEXTEXPORTLABEL.STRING.TEXT
+msgid  "Save to:"
+msgstr "Gorde hemen:"
+
+#: importwizard/importwi.src#SGROUPNAMEDEFAULT.STRING.TEXT
+msgid  "Imported_Templates"
+msgstr "Txantiloi_inportatuak"
+
+#: importwizard/importwi.src#SPROGRESSDESC1.STRING.TEXT
+msgid  "Progress: "
+msgstr "Progresioa: "
+
+#: importwizard/importwi.src#SPROGRESSONEDOC.STRING.TEXT
+msgid  "Document"
+msgstr "Dokumentua"
+
+#: importwizard/importwi.src#SPROGRESSMOREDOCS.STRING.TEXT
+msgid  "Documents"
+msgstr "Dokumentuak"
+
+#: importwizard/importwi.src#SPROGRESSMORETEMPLATES.STRING.TEXT
+msgid  "Templates"
+msgstr "Txantiloiak"
+
+#: importwizard/importwi.src#SNODIRCREATION.STRING.TEXT
+msgid  "The '%1' directory cannot be created: "
+msgstr "'%1' direktorioa ezin da sortu: "
+
+#: importwizard/importwi.src#SMSGDIRNOTTHERE.STRING.TEXT
+msgid  "The '%1' directory does not exist."
+msgstr "'%1' direktorioa ez dago."
+
+#: importwizard/importwi.src#SQUERYFORNEWCREATION.STRING.TEXT
+msgid  "Do you want to create it now?"
+msgstr "Sortu nahi duzu?"
+
+#: importwizard/importwi.src#SFILEEXISTS.STRING.TEXT
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "'<1>' fitxategia badago.<CR>Gainidatzi nahi duzu?"
+
+#: importwizard/importwi.src#SMOREPATHSERROR3.STRING.TEXT
+msgid  "Directories do not exist"
+msgstr "Ez dago horrelako direktoriorik"
+
+#: importwizard/importwi.src#SOVERWRITEALLFILES.STRING.TEXT
+msgid  "Do you want to overwrite documents without being asked?"
+msgstr "Dokumentuak galdetu gabe gainidatzi nahi dituzu?"
+
+#: importwizard/importwi.src#SREEDITMACRO.STRING.TEXT
+msgid  "Document macro has to be revised."
+msgstr "Dokumentu-makroa berrikusi egin behar da."
+
+#: importwizard/importwi.src#SCOULDNOTSAVEDOCUMENT.STRING.TEXT
+msgid  "Document '<1>' could not be saved."
+msgstr "'<1>' dokumentua ezin izan da gorde."
+
+#: importwizard/importwi.src#SCOULDNOTOPENDOCUMENT.STRING.TEXT
+msgid  "Document '<1>' could not be opened."
+msgstr "'<1>' dokumentua ezin izan da ireki."
+
+#: importwizard/importwi.src#SCONVERTERROR1.STRING.TEXT
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "Benetan eten nahi duzu bihurketa puntu honetan?"
+
+#: importwizard/importwi.src#SCONVERTERROR2.STRING.TEXT
+msgid  "Cancel Wizard"
+msgstr "Gelditu morroia"
+
+#: importwizard/importwi.src#SRTERRORDESC.STRING.TEXT
+msgid  "An unexpected error has occurred in the wizard."
+msgstr "Ustekabeko errorea gertatu da morroian."
+
+#: importwizard/importwi.src#SRTERRORHEADER.STRING.TEXT
+msgid  "Error"
+msgstr "Errorea"
+
+#: importwizard/importwi.src#SPATHDIALOGMESSAGE.STRING.TEXT
+msgid  "Select a directory"
+msgstr "Hautatu direktorio bat"
+
+#: importwizard/importwi.src#SDIALOGTITLE.STRING.TEXT
+msgid  "Document Converter"
+msgstr "Dokumentu-bihurtzailea"
+
+#: importwizard/importwi.src#SPROGRESSPAGE1.STRING.TEXT
+msgid  "Progress"
+msgstr "Progresioa"
+
+#: importwizard/importwi.src#SPROGRESSPAGE2.STRING.TEXT
+msgid  "Retrieving the relevant documents:"
+msgstr "Dokumentu garrantzitsuak eskuratzen:"
+
+#: importwizard/importwi.src#SPROGRESSPAGE3.STRING.TEXT
+msgid  "Converting the documents"
+msgstr "Dokumentuak bihurtzen"
+
+#: importwizard/importwi.src#SPROGRESSFOUND.STRING.TEXT
+msgid  "Found:"
+msgstr "Aurkitua(k):"
+
+#: importwizard/importwi.src#SPROGRESSPAGE5.STRING.TEXT
+msgid  "%1 found"
+msgstr "%1 aurkitu d(ir)a"
+
+#: importwizard/importwi.src#SREADY.STRING.TEXT
+msgid  "Finished"
+msgstr "Amaituta"
+
+#: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_1_.STRING.TEXT
+msgid  "Text templates"
+msgstr "Testu-txantiloiak"
+
+#: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_2_.STRING.TEXT
+msgid  "Spreadsheet templates"
+msgstr "Kalkulu-orrien txantiloiak"
+
+#: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_3_.STRING.TEXT
+msgid  "Drawing/presentation templates"
+msgstr "Marrazki/aurkezpenen txantiloiak"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_4_.STRING.TEXT
 msgid  "Master documents"
 msgstr "Dokumentu maisuak"
 
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_1_.STRING.TEXT
+msgid  "Text documents"
+msgstr "Testu-dokumentuak"
+
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_2_.STRING.TEXT
+msgid  "Spreadsheets"
+msgstr "Kalkulu-orriak"
+
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_3_.STRING.TEXT
+msgid  "Drawing/presentation documents"
+msgstr "Marrazki/aurkezpenen dokumentuak"
+
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_4_.STRING.TEXT
+msgid  "Master documents/formulas"
+msgstr "Dokumentu maisuak/formulak"
+
+#: importwizard/importwi.src#SXMLHELPERAPPLICATIONS_2.STRING.TEXT
+msgid  "Formulas"
+msgstr "Formulak"
+
+#: importwizard/importwi.src#SSOURCEDOCUMENTS.STRING.TEXT
+msgid  "Source documents"
+msgstr "Iturburuko dokumentuak"
+
+#: importwizard/importwi.src#STARGETDOCUMENTS.STRING.TEXT
+msgid  "Target documents"
+msgstr "Helburuko dokumentuak"
+
+#: importwizard/importwi.src#SCREATELOGFILE.STRING.TEXT
+msgid  "Create log file"
+msgstr "Sortu egunkari-fitxategia"
+
+#: importwizard/importwi.src#SLOGFILESUMMARY.STRING.TEXT
+msgid  "<COUNT> documents converted"
+msgstr "<COUNT> dokumentu bihurtu"
+
+#: importwizard/importwi.src#SLOGFILEHELPTEXT.STRING.TEXT
+msgid  "A log file will be created in your work directory"
+msgstr "Egunkari-fitxategi bat sortuko da laneko direktorioan"
+
+#: importwizard/importwi.src#SSHOWLOGFILE.STRING.TEXT
+msgid  "Show log file"
+msgstr "Erakutsi egunkari-fitxategia"
+
+#: importwizard/importwi.src#SSUMINCLUSIVESUBDIR.STRING.TEXT
+msgid  "All subdirectories will be taken into account"
+msgstr "Azpidirektorio guztiak hartuko dira kontuan"
+
+#: importwizard/importwi.src#SSUMSAVEDOKUMENTE.STRING.TEXT
+msgid  "These will be exported to the following directory:"
+msgstr "Direktorio honetara esportatuko dira:"
+
+#: importwizard/importwi.src#SSUMSOTEXTDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
+msgstr "Honako direktorioko %PRODUCTNAME testu-dokumentu guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMSOTABLEDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
+msgstr "Honako direktorioko %PRODUCTNAME kalkulu-orri guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMSODRAWDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
+msgstr "Honako direktorioko %PRODUCTNAME marrazki- eta aurkezpen-dokumentu guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMSOMATHDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
+msgstr "Honako direktorioko %PRODUCTNAME formula-dokumentu guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMSOTEXTTEMPLATES.STRING.TEXT
+msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
+msgstr "Honako direktorioko %PRODUCTNAME testu-txantiloi guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMSOTABLETEMPLATES.STRING.TEXT
+msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
+msgstr "Honako direktorioko %PRODUCTNAME taula-txantiloi guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMSODRAWTEMPLATES.STRING.TEXT
+msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
+msgstr "Honako direktorioko %PRODUCTNAME marrazki- eta aurkezpen-txantiloi guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMSOGLOBALDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
+msgstr "Honako direktorioko %PRODUCTNAME dokumentu maisu guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMMSTEXTDOCUMENTS.STRING.TEXT
+msgid  "All Word documents contained in the following directory will be imported:"
+msgstr "Honako direktorioko Word dokumentu guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMMSTABLEDOCUMENTS.STRING.TEXT
+msgid  "All Excel documents contained in the following directory will be imported:"
+msgstr "Honako direktorioko Excel dokumentu guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMMSDRAWDOCUMENTS.STRING.TEXT
+msgid  "All PowerPoint documents contained in the following directory will be imported:"
+msgstr "Honako direktorioko PowerPoint dokumentu guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMMSTEXTTEMPLATES.STRING.TEXT
+msgid  "All Word templates contained in the following directory will be imported:"
+msgstr "Honako direktorioko Word txantiloi guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMMSTABLETEMPLATES.STRING.TEXT
+msgid  "All Excel templates contained in the following directory will be imported:"
+msgstr "Honako direktorioko Excel txantiloi guztiak inportatuko dira:"
+
+#: importwizard/importwi.src#SSUMMSDRAWTEMPLATES.STRING.TEXT
+msgid  "All PowerPoint templates contained in the following directory will be imported:"
+msgstr "Honako direktorioko PowerPoint txantiloi guztiak inportatuko dira:"
+
+#: schedule/schedule.src#DLGCALTITLE.STRING.TEXT
+msgid  "%PRODUCTNAME Calendar"
+msgstr "%PRODUCTNAME egutegia"
+
+#: schedule/schedule.src#DLGCALTITLEBACK.STRING.TEXT
+msgid  "Back"
+msgstr "Atzera"
+
 #: schedule/schedule.src#DLGCALTITLEOWNDATA.STRING.TEXT
 msgid  "Personal Data"
 msgstr "Datu pertsonalak"
+
+#: schedule/schedule.src#DLGSCHDLTITLE.STRING.TEXT
+msgid  "Add Holidays to Calendar"
+msgstr "Jaiegunen kalkulua"
+
+#: schedule/schedule.src#DLGOK.STRING.TEXT
+msgid  "Create"
+msgstr "Sortu"
+
+#: schedule/schedule.src#DLGCANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr "Utzi"
+
+#: schedule/schedule.src#DLGCALFRAMEOPTION.STRING.TEXT
+msgid  "Calendar"
+msgstr "Egutegia"
+
+#: schedule/schedule.src#DLGCALOPTIONYEAR.STRING.TEXT
+msgid  "~Year Overview"
+msgstr "~Urtearen ikuspegia"
+
+#: schedule/schedule.src#DLGCALOPTIONMONTH.STRING.TEXT
+msgid  "~Month"
+msgstr "~Hilabetea"
+
+#: schedule/schedule.src#DLGSCHDLDESCRIPTION.STRING.TEXT
+msgid  "Add holidays for"
+msgstr "Jaiegunen kalkulua:"
+
+#: schedule/schedule.src#DLGSCHDLCOUNTRY.STRING.TEXT
+msgid  "USA"
+msgstr "Euskal Herria"
+
+#: schedule/schedule.src#DLGTIME.STRING.TEXT
+msgid  "Time Frame"
+msgstr "Denboraldia"
 
 #: schedule/schedule.src#DLGYEAR.STRING.TEXT
 msgid  "Year"
@@ -250,3 +3050,343 @@ msgstr "Urtea"
 #: schedule/schedule.src#DLGCALMONTH.STRING.TEXT
 msgid  "Month"
 msgstr "Hilabetea"
+
+#: schedule/schedule.src#DLGCALINSERT.STRING.TEXT
+msgid  "~Insert"
+msgstr "T~xertatu"
+
+#: schedule/schedule.src#DLGCALDELETE.STRING.TEXT
+msgid  "~Delete"
+msgstr "E~zabatu"
+
+#: schedule/schedule.src#DLGCALNEWEVENT.STRING.TEXT
+msgid  "New Event"
+msgstr "Gertaera berria"
+
+#: schedule/schedule.src#DLGCALEVENT.STRING.TEXT
+msgid  "Event"
+msgstr "Gertaera"
+
+#: schedule/schedule.src#DLGCALEVENTONCE.STRING.TEXT
+msgid  "One-Time"
+msgstr "Aldi bakarrekoa"
+
+#: schedule/schedule.src#DLGCALEVENTDAY.STRING.TEXT
+msgid  "Day"
+msgstr "Eguna"
+
+#: schedule/schedule.src#DLGBITMAPFILE.STRING.TEXT
+msgid  "usa.bmp"
+msgstr "euskalh.bmp"
+
+#: schedule/schedule.src#DLGSTATE.STRING.TEXT
+msgid  "Public holidays"
+msgstr "Jaiegunak"
+
+#: schedule/schedule.src#DLGMONTH.STRING.TEXT
+msgid  "January"
+msgstr "Urtarrila"
+
+#: schedule/schedule.src#DLGMONTH_1.STRING.TEXT
+msgid  "February"
+msgstr "Otsaila"
+
+#: schedule/schedule.src#DLGMONTH_2.STRING.TEXT
+msgid  "March"
+msgstr "Martxoa"
+
+#: schedule/schedule.src#DLGMONTH_3.STRING.TEXT
+msgid  "April"
+msgstr "Apirila"
+
+#: schedule/schedule.src#DLGMONTH_4.STRING.TEXT
+msgid  "May"
+msgstr "Maiatza"
+
+#: schedule/schedule.src#DLGMONTH_5.STRING.TEXT
+msgid  "June"
+msgstr "Ekaina"
+
+#: schedule/schedule.src#DLGMONTH_6.STRING.TEXT
+msgid  "July"
+msgstr "Uztaila"
+
+#: schedule/schedule.src#DLGMONTH_7.STRING.TEXT
+msgid  "August"
+msgstr "Abuztua"
+
+#: schedule/schedule.src#DLGMONTH_8.STRING.TEXT
+msgid  "September"
+msgstr "Iraila"
+
+#: schedule/schedule.src#DLGMONTH_9.STRING.TEXT
+msgid  "October"
+msgstr "Urria"
+
+#: schedule/schedule.src#DLGMONTH_10.STRING.TEXT
+msgid  "November"
+msgstr "Azaroa"
+
+#: schedule/schedule.src#DLGMONTH_11.STRING.TEXT
+msgid  "December"
+msgstr "Abendua"
+
+#: schedule/schedule.src#MSGCALERRORTITLE.STRING.TEXT
+msgid  "Yearly / Monthly Calendar"
+msgstr "Urteko / Hileko egutegia"
+
+#: schedule/schedule.src#MSGCALERROR.STRING.TEXT
+msgid  "An error occurred while creating the calendar."
+msgstr "Errorea gertatu da egutegia sortzean."
+
+#: schedule/schedule.src#MSGCALREMOVETITLE.STRING.TEXT
+msgid  "Delete event entries"
+msgstr "Ezabatu gertaeren sarrerak"
+
+#: schedule/schedule.src#MSGCALREMOVE.STRING.TEXT
+msgid  "Delete the selected entries?"
+msgstr "Hautatutako sarrerak ezabatu nahi dituzu?"
+
+#: schedule/schedule.src#STLWORKDAY.STRING.TEXT
+msgid  "Workweek"
+msgstr "Lanastea"
+
+#: schedule/schedule.src#STLWEEKEND.STRING.TEXT
+msgid  "Weekend"
+msgstr "Asteburua"
+
+#: schedule/schedule.src#SPROGRESS.STRING.TEXT
+msgid  "Progress:"
+msgstr "Progresioa:"
+
+#: template/template.src#SAMPLES.STRING.TEXT
+msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
+msgstr "Lagin honen funtzionalitate osoa izateko, txantiloi honetan oinarritutako dokumentu bat sortu behar duzu."
+
+#: template/template.src#SAMPLES___1.STRING.TEXT
+msgid  "Remarks"
+msgstr "Aholkuak"
+
+#: template/template.src#STYLES.STRING.TEXT
+msgid  "Theme Selection"
+msgstr "Hautatu gaia"
+
+#: template/template.src#STYLES___1.STRING.TEXT
+msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
+msgstr "Errorea dokumentua arbelean gordetzean! Honako ekintza ezin da desegin."
+
+#: template/template.src#STYLES___2.STRING.TEXT
+msgid  "~Cancel"
+msgstr "~Utzi"
+
+#: template/template.src#STYLES___3.STRING.TEXT
+msgid  "~OK"
+msgstr "A~dos"
+
+#: template/template.src#AGENDADLGNAME.STRING.TEXT
+msgid  "Minutes Template"
+msgstr "Protokolo-txantiloia"
+
+#: template/template.src#AGENDADLGNOCANCEL.STRING.TEXT
+msgid  "An option must be confirmed."
+msgstr "Aukera bat berretsi behar da."
+
+#: template/template.src#AGENDADLGFRAME.STRING.TEXT
+msgid  "Minutes Type"
+msgstr "Protokolo mota"
+
+#: template/template.src#AGENDADLGBUTTON1.STRING.TEXT
+msgid  "Results Minutes"
+msgstr "Emaitzen protokoloa"
+
+#: template/template.src#AGENDADLGBUTTON2.STRING.TEXT
+msgid  "Evaluation Minutes"
+msgstr "Pasatze-protokoloa"
+
+#: template/template.src#CORRESPONDENCENOTEXTMARK.STRING.TEXT
+msgid  "The bookmark 'Recipient' is missing."
+msgstr "'Recipient' laster-marka falta da."
+
+#: template/template.src#CORRESPONDENCENOTEXTMARK_1.STRING.TEXT
+msgid  "Form letter fields can not be included."
+msgstr "Ezin da posta-batzeko eremurik sartu."
+
+#: template/template.src#CORRESPONDENCEMSGERROR.STRING.TEXT
+msgid  "An error has occurred."
+msgstr "Errore bat gertatu da."
+
+#: template/template.src#CORRESPONDENCEDIALOG.STRING.TEXT
+msgid  "Addressee"
+msgstr "Hartzailea"
+
+#: template/template.src#CORRESPONDENCEDIALOG_1.STRING.TEXT
+msgid  "One recipient"
+msgstr "Hartzaile bakarra"
+
+#: template/template.src#CORRESPONDENCEDIALOG_2.STRING.TEXT
+msgid  "Several recipients (address database)"
+msgstr "Hainbat hartzaile (helbideen datu-basea)"
+
+#: template/template.src#CORRESPONDENCEDIALOG_3.STRING.TEXT
+msgid  "Use of This Template"
+msgstr "Txantiloiaren erabilera"
+
+#: template/template.src#CORRESPONDENCEFIELDS.STRING.TEXT
+msgid  "Click placeholder and overwrite"
+msgstr "Egin klik leku-markan eta gainidatzi"
+
+#: template/template.src#CORRESPONDENCEFIELDS_1.STRING.TEXT
+msgid  "Company"
+msgstr "Enpresa"
+
+#: template/template.src#CORRESPONDENCEFIELDS_2.STRING.TEXT
+msgid  "Department"
+msgstr "Saila"
+
+#: template/template.src#CORRESPONDENCEFIELDS_3.STRING.TEXT
+msgid  "First Name"
+msgstr "Izena"
+
+#: template/template.src#CORRESPONDENCEFIELDS_4.STRING.TEXT
+msgid  "Last Name"
+msgstr "Deitura"
+
+#: template/template.src#CORRESPONDENCEFIELDS_5.STRING.TEXT
+msgid  "Street"
+msgstr "Kalea"
+
+#: template/template.src#CORRESPONDENCEFIELDS_6.STRING.TEXT
+msgid  "Country"
+msgstr "Herrialdea/Estatua"
+
+#: template/template.src#CORRESPONDENCEFIELDS_7.STRING.TEXT
+msgid  "ZIP/Postal Code"
+msgstr "ZIP/Posta-kodea"
+
+#: template/template.src#CORRESPONDENCEFIELDS_8.STRING.TEXT
+msgid  "City"
+msgstr "Herria"
+
+#: template/template.src#CORRESPONDENCEFIELDS_9.STRING.TEXT
+msgid  "Title"
+msgstr "Titulua"
+
+#: template/template.src#CORRESPONDENCEFIELDS_10.STRING.TEXT
+msgid  "Position"
+msgstr "Posizioa"
+
+#: template/template.src#CORRESPONDENCEFIELDS_11.STRING.TEXT
+msgid  "Form of Address"
+msgstr "Tratamendua"
+
+#: template/template.src#CORRESPONDENCEFIELDS_12.STRING.TEXT
+msgid  "Initials"
+msgstr "Inizialak"
+
+#: template/template.src#CORRESPONDENCEFIELDS_13.STRING.TEXT
+msgid  "Salutation"
+msgstr "Hasierako agurra"
+
+#: template/template.src#CORRESPONDENCEFIELDS_14.STRING.TEXT
+msgid  "Home Phone"
+msgstr "Etxeko telefonoa"
+
+#: template/template.src#CORRESPONDENCEFIELDS_15.STRING.TEXT
+msgid  "Work Phone"
+msgstr "Laneko telefonoa"
+
+#: template/template.src#CORRESPONDENCEFIELDS_16.STRING.TEXT
+msgid  "Fax"
+msgstr "Faxa"
+
+#: template/template.src#CORRESPONDENCEFIELDS_17.STRING.TEXT
+msgid  "E-Mail"
+msgstr "Posta elektronikoa"
+
+#: template/template.src#CORRESPONDENCEFIELDS_18.STRING.TEXT
+msgid  "URL"
+msgstr "URLa"
+
+#: template/template.src#CORRESPONDENCEFIELDS_19.STRING.TEXT
+msgid  "Notes"
+msgstr "Oharrak"
+
+#: template/template.src#CORRESPONDENCEFIELDS_20.STRING.TEXT
+msgid  "Alt. Field 1"
+msgstr "Eremu osag. 1"
+
+#: template/template.src#CORRESPONDENCEFIELDS_21.STRING.TEXT
+msgid  "Alt. Field 2"
+msgstr "Eremu osag. 2"
+
+#: template/template.src#CORRESPONDENCEFIELDS_22.STRING.TEXT
+msgid  "Alt. Field 3"
+msgstr "Eremu osag. 3"
+
+#: template/template.src#CORRESPONDENCEFIELDS_23.STRING.TEXT
+msgid  "Alt. Field 4"
+msgstr "Eremu osag. 4"
+
+#: template/template.src#CORRESPONDENCEFIELDS_24.STRING.TEXT
+msgid  "ID"
+msgstr "IDa"
+
+#: template/template.src#CORRESPONDENCEFIELDS_25.STRING.TEXT
+msgid  "State"
+msgstr "Egoera"
+
+#: template/template.src#CORRESPONDENCEFIELDS_26.STRING.TEXT
+msgid  "Office Phone"
+msgstr "Bulegoko telefonoa"
+
+#: template/template.src#CORRESPONDENCEFIELDS_27.STRING.TEXT
+msgid  "Pager"
+msgstr "Bilagailua"
+
+#: template/template.src#CORRESPONDENCEFIELDS_28.STRING.TEXT
+msgid  "Mobile Phone"
+msgstr "Telefono mugikorra"
+
+#: template/template.src#CORRESPONDENCEFIELDS_29.STRING.TEXT
+msgid  "Other Phone"
+msgstr "Beste telefono bat"
+
+#: template/template.src#CORRESPONDENCEFIELDS_30.STRING.TEXT
+msgid  "Calendar URL"
+msgstr "Egutegiaren URLa"
+
+#: template/template.src#CORRESPONDENCEFIELDS_31.STRING.TEXT
+msgid  "Invite"
+msgstr "Gonbidatu"
+
+#: template/template.src#TEXTFIELD.STRING.TEXT
+msgid  "User data field is not defined!"
+msgstr "Erabiltzailearen datu-eremua ez dago definituta!"
+
+#: template/template.src#NEWSLETTER.STRING.TEXT
+msgid  "General layout"
+msgstr "Diseinu orokorra"
+
+#: template/template.src#NEWSLETTER___1.STRING.TEXT
+msgid  "Default layout"
+msgstr "Diseinu lehenetsia"
+
+#: template/template.src#NEWSLETTER___2.STRING.TEXT
+msgid  "Commemorative publication layout"
+msgstr "Festako diseinua"
+
+#: template/template.src#NEWSLETTER___3.STRING.TEXT
+msgid  "Brochure layout"
+msgstr "Liburuxka-diseinua"
+
+#: template/template.src#NEWSLETTER___10.STRING.TEXT
+msgid  "Format"
+msgstr "Formatua"
+
+#: template/template.src#NEWSLETTER___11.STRING.TEXT
+msgid  "Single-sided"
+msgstr "Orrialde bakarra"
+
+#: template/template.src#NEWSLETTER___12.STRING.TEXT
+msgid  "Double-sided"
+msgstr "Bi orrialde"

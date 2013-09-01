@@ -349,7 +349,7 @@ msgstr "Argument ist nicht optional."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_WRONG_ARGS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid number of arguments."
-msgstr "Falsche Anzahl an Argumenten."
+msgstr "Ungültige Anzahl von Argumenten."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_NOT_A_COLL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Object is not a list."
@@ -526,10 +526,6 @@ msgstr "Ausdruck zu komplex."
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Can't perform requested operation."
 msgstr "Die angeforderte Operation kann nicht ausgeführt werden."
-
-#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Too many DLL application clients."
-msgstr "Zu viele DLL-Application Clients."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "For loop not initialized."

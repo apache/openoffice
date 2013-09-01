@@ -115,10 +115,6 @@ msgstr "Indtast adgangskode for 'XX'"
 msgid  "Name already exists"
 msgstr "Navnet findes allerede"
 
-#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
-msgid  "(Signed)"
-msgstr "(Signeret)"
-
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
 msgid  "Object with same name already exists"
 msgstr "Der findes allerede et objekt med dette navn"
@@ -211,22 +207,6 @@ msgstr "Objektet eller metoden blev ikke fundet"
 msgid  "BASIC"
 msgstr "BASIC"
 
-#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
-msgid  "Ln"
-msgstr "Ln"
-
-#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
-msgid  "Col"
-msgstr "Kol"
-
-#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
-msgid  "Document"
-msgstr "Dokument"
-
-#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
-msgid  "Macro Bar"
-msgstr "Makrolinje"
-
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
 msgid  "The window cannot be closed while BASIC is running."
 msgstr "Vinduet kan ikke lukkes, mens BASIC-programmet kører."
@@ -242,14 +222,6 @@ msgstr "Reference til 'XX' ikke mulig."
 #: basicide/basidesh.src#RID_STR_WATCHNAME.STRING.TEXT
 msgid  "Watch"
 msgstr "Observatør"
-
-#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
-msgid  "Variable"
-msgstr "Variabel"
-
-#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
-msgid  "Value"
-msgstr "Værdi"
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
 msgid  "Type"
@@ -287,14 +259,6 @@ msgstr "Nyt modul"
 msgid  "New Dialog"
 msgstr "Ny dialog"
 
-#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
-msgid  "All"
-msgstr "Alle"
-
-#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
-msgid  "Page"
-msgstr "Side"
-
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
 msgid  "A name must be entered."
 msgstr "Et navn skal indtastes."
@@ -318,10 +282,6 @@ msgstr "Observatør:"
 #: basicide/basidesh.src#RID_STR_STACK.STRING.TEXT
 msgid  "Calls: "
 msgstr "Kommandoer: "
-
-#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
-msgid  "My Macros"
-msgstr "Mine makroer"
 
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
 msgid  "My Dialogs"
@@ -379,29 +339,13 @@ msgstr "BASIC-dialog"
 msgid  "Delete"
 msgstr "Slet"
 
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
-msgid  "Rename"
-msgstr "Omdøb"
-
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
-msgid  "Hide"
-msgstr "Skjul"
-
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
 msgid  "Modules..."
 msgstr "Moduler..."
 
-#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
-msgid  "Do you want to overwrite the XX macro?"
-msgstr "Ønsker du at overskrive makroen XX?"
-
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
 msgid  "<Not localized>"
 msgstr "<Ikke lokaliseret>"
-
-#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
-msgid  "[Default Language]"
-msgstr "[Standardsprog]"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 msgid  "Document Objects"
@@ -419,10 +363,6 @@ msgstr "Moduler"
 msgid  "Class Modules"
 msgstr "Klassemoduler"
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
-msgid  "Replace"
-msgstr "Erstat"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
 msgid  "Dialog Import - Name already used"
 msgstr "Dialog Importer - Navnet er allerede brugt"
@@ -431,14 +371,6 @@ msgstr "Dialog Importer - Navnet er allerede brugt"
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
 msgstr "Bibliotek indeholder allerede en dialog med navnet:\n\n$(ARG1)\n\nOmdøb dialogen for at beholde den aktuelle dialog eller erstat den eksisterende dialog.\n "
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "Adder"
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
-msgid  "Omit"
-msgstr "Udelad"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
 msgid  "Dialog Import - Language Mismatch"
 msgstr "Dialog Importer - Sprog uforenelig"
@@ -446,10 +378,6 @@ msgstr "Dialog Importer - Sprog uforenelig"
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
 msgstr "Dialogen som skal importeres understøtter andre sprog end målbibliotek.\n\nTilføj disse sprog til biblioteket for at holde yderligere sprogresourcer tilgængelige for dialogen eller undlad dem for at forblive med det aktuelle biblioteksprog.\n\nNote:For sprog som ikke understøttes af dialogen, vil resourcene for dialogens standardsprog blive brugt.\n "
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
-msgid  "New"
-msgstr "Ny(t)"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
 msgid  "Delete"
@@ -462,14 +390,6 @@ msgstr "Aktiv"
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FIXEDTEXT.TEXT
 msgid  "Pass Count:"
 msgstr "Gennemløb:"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
-msgid  "Breakpoints"
-msgstr "Pausepunkter"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
-msgid  "Manage Breakpoints"
-msgstr "Ret pausepunkter"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME Basic Macros"
@@ -527,10 +447,6 @@ msgstr "~Slet"
 msgid  "~Organizer..."
 msgstr "~Administration..."
 
-#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
-msgid  "Macro"
-msgstr "Makro"
-
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 msgid  "~New"
 msgstr "~Ny(t)"
@@ -538,10 +454,6 @@ msgstr "~Ny(t)"
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
 msgid  "Choose"
 msgstr "Vælg"
-
-#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "Udfør"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
 msgid  "~Save"
@@ -647,10 +559,6 @@ msgstr "Udvidelse"
 msgid  "Description"
 msgstr "Beskrivelse"
 
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
-msgid  "Help information"
-msgstr "Hjælpeinformation"
-
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
 msgid  "Help ID"
 msgstr "Hjælpeidentifikation"
@@ -658,14 +566,6 @@ msgstr "Hjælpeidentifikation"
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FIXEDTEXT.TEXT
 msgid  "Help file name"
 msgstr "Hjælpefilnavn"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
-msgid  "Objects"
-msgstr "Objekter"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
-msgid  "Show"
-msgstr "Vis"
 
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
@@ -691,17 +591,9 @@ msgstr "Administrer brugergrænsefladesprog [$1]"
 msgid  "Present Languages"
 msgstr "Nuværende sprog"
 
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "Tilføj..."
-
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
 msgid  "Delete"
 msgstr "Slet"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
-msgid  "Default"
-msgstr "Standard"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
@@ -710,10 +602,6 @@ msgstr "Standardsproget anvendes, hvis der ikke er en lokalisering af brugergræ
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
 msgid  "~Close"
 msgstr "~Luk"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
-msgid  "[Default Language]"
-msgstr "[Standardsprog]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
 msgid  "~Delete"
@@ -727,13 +615,13 @@ msgstr "<Tryk 'Tilføj' for at oprette sprogressourcer>"
 msgid  "Delete Language Resources"
 msgstr "Slet sprogressourcer"
 
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr "Du er ved at slette ressourcerne for de valgte sprog. Alle strenge i brugergrænsefladen for disse sprog vil blive slettet.\n\nVil du slette ressourcerne for de valgte sprog?"
+
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 msgid  "Set Default User Interface Language"
 msgstr "Sæt standardsprog for brugergrænsefladen"
-
-#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
-msgid  "Default language"
-msgstr "Standardsprog"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."

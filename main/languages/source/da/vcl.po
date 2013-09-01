@@ -31,14 +31,694 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: src/btntext.src#SV_BUTTONTEXT_OK.STRING.TEXT
+msgid  "OK"
+msgstr "OK"
+
+#: src/btntext.src#SV_BUTTONTEXT_CANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr "Annuller"
+
+#: src/btntext.src#SV_BUTTONTEXT_YES.STRING.TEXT
+msgid  "~Yes"
+msgstr "~Ja"
+
+#: src/btntext.src#SV_BUTTONTEXT_NO.STRING.TEXT
+msgid  "~No"
+msgstr "~Nej"
+
+#: src/btntext.src#SV_BUTTONTEXT_RETRY.STRING.TEXT
+msgid  "~Retry"
+msgstr "~Prøv igen"
+
+#: src/btntext.src#SV_BUTTONTEXT_HELP.STRING.TEXT
+msgid  "~Help"
+msgstr "~Hjælp"
+
 #: src/btntext.src#SV_BUTTONTEXT_MORE.STRING.TEXT
 msgid  "~More"
 msgstr "~Flere"
 
-#: src/helptext.src#SV_HELPTEXT_HELP.STRING.TEXT
-msgid  "Help"
-msgstr "Hjælp"
+#: src/btntext.src#SV_BUTTONTEXT_IGNORE.STRING.TEXT
+msgid  "~Ignore"
+msgstr "~Ignorer"
+
+#: src/btntext.src#SV_BUTTONTEXT_ABORT.STRING.TEXT
+msgid  "~Abort"
+msgstr "~Afbryd"
+
+#: src/helptext.src#SV_HELPTEXT_CLOSE.STRING.TEXT
+msgid  "Close"
+msgstr "Luk"
+
+#: src/helptext.src#SV_HELPTEXT_CLOSEDOCUMENT.STRING.TEXT
+msgid  "Close Document"
+msgstr "Luk dokument"
+
+#: src/helptext.src#SV_HELPTEXT_MINIMIZE.STRING.TEXT
+msgid  "Minimize"
+msgstr "Minimer"
+
+#: src/helptext.src#SV_HELPTEXT_MAXIMIZE.STRING.TEXT
+msgid  "Maximize"
+msgstr "Maksimer"
+
+#: src/helptext.src#SV_HELPTEXT_RESTORE.STRING.TEXT
+msgid  "Restore"
+msgstr "Gendan"
+
+#: src/helptext.src#SV_HELPTEXT_ROLLDOWN.STRING.TEXT
+msgid  "Drop down"
+msgstr "Fold ud"
+
+#: src/helptext.src#SV_HELPTEXT_ROLLUP.STRING.TEXT
+msgid  "Roll up"
+msgstr "Fold sammen"
+
+#: src/helptext.src#SV_HELPTEXT_ALWAYSVISIBLE.STRING.TEXT
+msgid  "Always visible"
+msgstr "Altid synlig"
+
+#: src/helptext.src#SV_HELPTEXT_FADEIN.STRING.TEXT
+msgid  "Show"
+msgstr "Vis"
+
+#: src/helptext.src#SV_HELPTEXT_FADEOUT.STRING.TEXT
+msgid  "Hide"
+msgstr "Skjul"
+
+#: src/helptext.src#SV_HELPTEXT_SPLITFLOATING.STRING.TEXT
+msgid  "Floating"
+msgstr "Flydende"
+
+#: src/helptext.src#SV_HELPTEXT_SPLITFIXED.STRING.TEXT
+msgid  "Stick"
+msgstr "Fasthold"
+
+#: src/helptext.src#SV_SHORTCUT_CONTEXTHELP.STRING.TEXT
+msgid  "Context Help"
+msgstr "Kontekst hjælp"
+
+#: src/helptext.src#SV_SHORTCUT_ACTIVEHELP.STRING.TEXT
+msgid  "Extended Tips"
+msgstr "Udvidede tips"
+
+#: src/helptext.src#SV_SHORTCUT_DOCKUNDOCK.STRING.TEXT
+msgid  "Dock/Undock Windows"
+msgstr "Fastgør/frigør vinduer"
+
+#: src/helptext.src#SV_SHORTCUT_NEXTSUBWINDOW.STRING.TEXT
+msgid  "To Next Toolbar/Window"
+msgstr "Til næste værktøjslinje/vindue"
+
+#: src/helptext.src#SV_SHORTCUT_PREVSUBWINDOW.STRING.TEXT
+msgid  "To Previous Toolbar/Window"
+msgstr "Til forrige værktøjslinje/vindue"
+
+#: src/helptext.src#SV_SHORTCUT_TODOCUMENT.STRING.TEXT
+msgid  "To Document"
+msgstr "Til dokument"
+
+#: src/helptext.src#SV_SHORTCUT_MENUBAR.STRING.TEXT
+msgid  "To Menu Bar"
+msgstr "Til menulinje"
+
+#: src/helptext.src#SV_SHORTCUT_SPLITTER.STRING.TEXT
+msgid  "Split window separator"
+msgstr "Opdel vindueskilletegn"
+
+#: src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.STRING.TEXT
+msgid  "<No selection possible>"
+msgstr "<Intet valg muligt>"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MENUITEM.TEXT
+msgid  "~Undo"
+msgstr "Fortr~yd"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MENUITEM.TEXT
+msgid  "Cu~t"
+msgstr "~Klip"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MENUITEM.TEXT
+msgid  "~Copy"
+msgstr "K~opier"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MENUITEM.TEXT
+msgid  "~Paste"
+msgstr "Sæt i~nd"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MENUITEM.TEXT
+msgid  "~Delete"
+msgstr "~Slet"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MENUITEM.TEXT
+msgid  "Select ~All"
+msgstr "~Marker alt"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MENUITEM.TEXT
+msgid  "~Special Character..."
+msgstr "~Specialtegn..."
+
+#: src/menu.src#SV_MENU_MAC_SERVICES.STRING.TEXT
+msgid  "Services"
+msgstr "Tjenester"
+
+#: src/menu.src#SV_MENU_MAC_HIDEAPP.STRING.TEXT
+msgid  "Hide %PRODUCTNAME"
+msgstr "Skjul %PRODUCTNAME"
+
+#: src/menu.src#SV_MENU_MAC_HIDEALL.STRING.TEXT
+msgid  "Hide Others"
+msgstr "Skjul øvrige"
+
+#: src/menu.src#SV_MENU_MAC_SHOWALL.STRING.TEXT
+msgid  "Show All"
+msgstr "Vis alle"
+
+#: src/menu.src#SV_MENU_MAC_QUITAPP.STRING.TEXT
+msgid  "Quit %PRODUCTNAME"
+msgstr "Afslut %PRODUCTNAME"
+
+#: src/print.src#SV_DLG_PRINT.MODALDIALOG.TEXT
+msgid  "Print"
+msgstr "Udskriv"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKBUTTON.TEXT
+msgid  "~Print"
+msgstr "~Udskriv"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FIXEDTEXT.TEXT
+msgid  "/ %n"
+msgstr "/ %n"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.STRING.TEXT
+msgid  "No pages"
+msgstr "Ingen sider"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.STRING.TEXT
+msgid  "Print to File..."
+msgstr "Udskriv til fil..."
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.STRING.TEXT
+msgid  "Default printer"
+msgstr "Standardprinter"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.STRING.TEXT
+msgid  "Print preview"
+msgstr "Udskrifteksempel"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.TABPAGE.TEXT
+msgid  "Page Layout"
+msgstr "Sidelayout"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FIXEDLINE.TEXT
+msgid  "Layout"
+msgstr "Layout"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RADIOBUTTON.TEXT
+msgid  "Pa~ges per sheet"
+msgstr "~Sider pr ark"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.STRINGLIST.ITEM
+msgid  "1"
+msgstr "1"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.STRINGLIST.ITEM
+msgid  "2"
+msgstr "2"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.STRINGLIST.ITEM
+msgid  "4"
+msgstr "4"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.STRINGLIST.ITEM
+msgid  "6"
+msgstr "6"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.STRINGLIST.ITEM
+msgid  "9"
+msgstr "9"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.STRINGLIST.ITEM
+msgid  "16"
+msgstr "16"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0XFFFF.STRINGLIST.ITEM
+msgid  "Custom"
+msgstr "Brugerdefineret"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FIXEDTEXT.TEXT
+msgid  "P~ages"
+msgstr "~Sider"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FIXEDTEXT.TEXT
+msgid  "b~y"
+msgstr "~med"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FIXEDTEXT.TEXT
+msgid  "~Distance"
+msgstr "~Afstand"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FIXEDTEXT.TEXT
+msgid  "between pages"
+msgstr "mellem sider"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FIXEDTEXT.TEXT
+msgid  "~Margin"
+msgstr "~Margen"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FIXEDTEXT.TEXT
+msgid  "to sheet border"
+msgstr "til arkkant"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FIXEDTEXT.TEXT
+msgid  "~Orientation"
+msgstr "~Papirretning"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.STRINGLIST.ITEM
+msgid  "Automatic"
+msgstr "Automatisk"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.STRINGLIST.ITEM
+msgid  "Portrait"
+msgstr "Stående"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.STRINGLIST.ITEM
+msgid  "Landscape"
+msgstr "Liggende"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FIXEDTEXT.TEXT
+msgid  "Order"
+msgstr "Rækkefølge"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.STRINGLIST.ITEM
+msgid  "left to right, then down"
+msgstr "venstre mod højre,så nedad"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.STRINGLIST.ITEM
+msgid  "top to bottom, then right"
+msgstr "top til bund, så mod højre"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBRL.STRINGLIST.ITEM
+msgid  "top to bottom, then left"
+msgstr "top til bund, så mod højre"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_RLTB.STRINGLIST.ITEM
+msgid  "right to left, then down"
+msgstr "Højre mod venstre, så nedad"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_BORDER_CB.CHECKBOX.TEXT
+msgid  "Draw a border around each page"
+msgstr "Tegn en kant omkring hver side"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.TABPAGE.TEXT
+msgid  "General"
+msgstr "Generelt"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRINTERS_FL.FIXEDLINE.TEXT
+msgid  "Prin~ter"
+msgstr "Prin~ter"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_DETAILS_BTN.CHECKBOX.TEXT
+msgid  "Details"
+msgstr "Detaljer"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_STATUS_TXT.FIXEDTEXT.TEXT
+msgid  "Status:"
+msgstr "Status:"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_LOCATION_TXT.FIXEDTEXT.TEXT
+msgid  "Location:"
+msgstr "Placering:"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COMMENT_TXT.FIXEDTEXT.TEXT
+msgid  "Comment:"
+msgstr "Kommentar:"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRT_SETUP.PUSHBUTTON.TEXT
+msgid  "Properties..."
+msgstr "Egenskaber..."
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPIES.FIXEDLINE.TEXT
+msgid  "Range and copies"
+msgstr "Område og Kopier"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPYCOUNT.FIXEDTEXT.TEXT
+msgid  "Number of copies"
+msgstr "Antal kopier"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COLLATE.CHECKBOX.TEXT
+msgid  "Collate"
+msgstr "Samle"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_OPT_REVERSE.CHECKBOX.TEXT
+msgid  "Print in ~reverse page order"
+msgstr "Udskriv i ~modsat siderækkefølge"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.TABPAGE.TEXT
 msgid  "Options"
 msgstr "Indstillinger"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_TOFILE.CHECKBOX.TEXT
+msgid  "Print to ~file"
+msgstr "Skriv til ~fil"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_SINGLEJOBS.CHECKBOX.TEXT
+msgid  "~Create single print jobs for collated output"
+msgstr "~Opret enkelte udskrivningsjob for samlet output"
+
+#: src/print.src#SV_DLG_PRINT_PROGRESS.MODELESSDIALOG.TEXT
+msgid  "Printing"
+msgstr "Udskrivning"
+
+#: src/print.src#SV_DLG_PRINT_PROGRESS.SV_PRINT_PROGRESS_TEXT.FIXEDTEXT.TEXT
+msgid  "Page %p of %n"
+msgstr "Side %p af %n"
+
+#: src/print.src#SV_PRINT_NOPRINTERWARNING.ERRORBOX.MESSAGE
+msgid  "No default printer found.\nPlease choose a printer and try again."
+msgstr "Der blev ikke fundet en standardprinter.\nVælg en printer og prøv igen."
+
+#: src/print.src#SV_PRINT_NOCONTENT.ERRORBOX.MESSAGE
+msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
+msgstr "Der er ingen sider, der skal udskrives. Kontroller dit dokument for områder til udskrivning."
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM1.ITEMLIST.ITEM
+msgid  "Preview"
+msgstr "Forhåndsvisning"
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM2.ITEMLIST.ITEM
+msgid  "Page number"
+msgstr "Sidetal"
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM3.ITEMLIST.ITEM
+msgid  "Number of pages"
+msgstr "Antal sider"
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM4.ITEMLIST.ITEM
+msgid  "More"
+msgstr "Flere"
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM5.ITEMLIST.ITEM
+msgid  "Print selection only"
+msgstr "Udskriv kun markering"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM1.ITEMLIST.ITEM
+msgid  "A0"
+msgstr "A0"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM2.ITEMLIST.ITEM
+msgid  "A1"
+msgstr "A1"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM3.ITEMLIST.ITEM
+msgid  "A2"
+msgstr "A2"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM4.ITEMLIST.ITEM
+msgid  "A3"
+msgstr "A3"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM5.ITEMLIST.ITEM
+msgid  "A4"
+msgstr "A4"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM6.ITEMLIST.ITEM
+msgid  "A5"
+msgstr "A5"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM7.ITEMLIST.ITEM
+msgid  "B4 (ISO)"
+msgstr "B4 (ISO)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM8.ITEMLIST.ITEM
+msgid  "B5 (ISO)"
+msgstr "B5 (ISO)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM9.ITEMLIST.ITEM
+msgid  "Letter"
+msgstr "Brev"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM10.ITEMLIST.ITEM
+msgid  "Legal"
+msgstr "Legal"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM11.ITEMLIST.ITEM
+msgid  "Tabloid"
+msgstr "Avis"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM12.ITEMLIST.ITEM
+msgid  "User Defined"
+msgstr "Bruger defineret"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM13.ITEMLIST.ITEM
+msgid  "B6 (ISO)"
+msgstr "B6 (ISO)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM14.ITEMLIST.ITEM
+msgid  "C4 Envelope"
+msgstr "C4 Konvolut"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM15.ITEMLIST.ITEM
+msgid  "C5 Envelope"
+msgstr "C5 Konvolut"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM16.ITEMLIST.ITEM
+msgid  "C6 Envelope"
+msgstr "C6 Konvolut"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM17.ITEMLIST.ITEM
+msgid  "C6/5 Envelope"
+msgstr "C6/5 Konvolut"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM18.ITEMLIST.ITEM
+msgid  "DL Envelope"
+msgstr "DL Konvolut"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM19.ITEMLIST.ITEM
+msgid  "Dia Slide"
+msgstr "Dia Slide"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM20.ITEMLIST.ITEM
+msgid  "Screen"
+msgstr "Skærm"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM21.ITEMLIST.ITEM
+msgid  "C"
+msgstr "C"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM22.ITEMLIST.ITEM
+msgid  "D"
+msgstr "D"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM23.ITEMLIST.ITEM
+msgid  "E"
+msgstr "E"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM24.ITEMLIST.ITEM
+msgid  "Executive"
+msgstr "Ledelse"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM25.ITEMLIST.ITEM
+msgid  "Long Bond"
+msgstr "Long Bond"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM26.ITEMLIST.ITEM
+msgid  "#8 (Monarch) Envelope"
+msgstr "#8 (Monarch) Kuvert"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM27.ITEMLIST.ITEM
+msgid  "#6 3/4 (Personal) Envelope"
+msgstr "#6 3/4 (Personal) Kuvert"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM28.ITEMLIST.ITEM
+msgid  "#9 Envelope"
+msgstr "#9 Kuvert"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM29.ITEMLIST.ITEM
+msgid  "#10 Envelope"
+msgstr "#10 Kuvert"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM30.ITEMLIST.ITEM
+msgid  "#11 Envelope"
+msgstr "#11 Kuvert"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM31.ITEMLIST.ITEM
+msgid  "#12 Envelope"
+msgstr "#12 Kuvert"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM32.ITEMLIST.ITEM
+msgid  "16 Kai"
+msgstr "16 Kai"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM33.ITEMLIST.ITEM
+msgid  "32 Kai"
+msgstr "32 Kai"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM34.ITEMLIST.ITEM
+msgid  "Big 32 Kai"
+msgstr "Stor 32 Kai"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM35.ITEMLIST.ITEM
+msgid  "B4 (JIS)"
+msgstr "B4 (JIS)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM36.ITEMLIST.ITEM
+msgid  "B5 (JIS)"
+msgstr "B5 (JIS)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM37.ITEMLIST.ITEM
+msgid  "B6 (JIS)"
+msgstr "B6 (JIS)"
+
+#: src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.STRING.TEXT
+msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
+msgstr "Komponenten (%s) kunne ikke indlæses.\nStart venligst installationsprogrammet og udfør en reparation."
+
+#: src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.STRING.TEXT
+msgid  "Do not show this information again."
+msgstr "Vis ikke den oplysning igen."
+
+#: src/stdtext.src#SV_STDTEXT_DONTASKAGAIN.STRING.TEXT
+msgid  "Do not show this question again."
+msgstr "Vis ikke dette spørgsmål igen."
+
+#: src/stdtext.src#SV_STDTEXT_DONTWARNAGAIN.STRING.TEXT
+msgid  "Do not show warning again."
+msgstr "Vis ikke denne advarsel igen."
+
+#: src/stdtext.src#SV_ACCESSERROR_WRONG_VERSION.STRING.TEXT
+msgid  "Wrong Version"
+msgstr "Forkert version"
+
+#: src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.STRING.TEXT
+msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
+msgstr "%PRODUCTNAME %PRODUCTVERSION kræver Java Access Bridge 1.03 eller nyere for at understøtte tilgængelighedsfunktioner."
+
+#: src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.STRING.TEXT
+msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
+msgstr "Klik på '%OK' for at starte %PRODUCTNAME %PRODUCTVERSION uden understøttelse af tilgængelighedsfunktioner eller klik på '%CANCEL' for at afslutte %PRODUCTNAME %PRODUCTVERSION."
+
+#: src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.STRING.TEXT
+msgid  "No Java Access Bridge"
+msgstr "Ingen Java Access Bridge"
+
+#: src/stdtext.src#SV_ACCESSERROR_FAULTY_JAVA.STRING.TEXT
+msgid  "Faulty Java Installation"
+msgstr "Fejlholdig Java-installation"
+
+#: src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.STRING.TEXT
+msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
+msgstr "%PRODUCTNAME %PRODUCTVERSION kræver Java 1.4.0_02 eller nyere for at understøtte tilgængelighedsfunktioner."
+
+#: src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.STRING.TEXT
+msgid  "No Java Installation"
+msgstr "Ingen Java-installation"
+
+#: src/stdtext.src#SV_ACCESSERROR_JAVA_NOT_CONFIGURED.STRING.TEXT
+msgid  "Missing Java Configuration"
+msgstr "Mangler Java-konfiguration"
+
+#: src/stdtext.src#SV_ACCESSERROR_JAVA_DISABLED.STRING.TEXT
+msgid  "Java Disabled"
+msgstr "Java deaktiveret"
+
+#: src/stdtext.src#SV_ACCESSERROR_TURNAROUND_MSG.STRING.TEXT
+msgid  "The Java Access Bridge could not be started."
+msgstr "Java Access Bridge kunne ikke startes."
+
+#: src/stdtext.src#SV_ACCESSERROR_NO_FONTS.STRING.TEXT
+msgid  "No fonts could be found on the system."
+msgstr "Der blev ikke fundet nogen skrifttyper i systemet"
+
+#: src/stdtext.src#SV_STDTEXT_ABOUT.STRING.TEXT
+msgid  "About %PRODUCTNAME"
+msgstr "Om %PRODUCTNAME"
+
+#: src/stdtext.src#SV_STDTEXT_PREFERENCES.STRING.TEXT
+msgid  "Preferences..."
+msgstr "Indstillinger..."
+
+#: src/stdtext.src#SV_EDIT_WARNING_BOX.WARNINGBOX.MESSAGE
+msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
+msgstr "Den indsatte tekst overstiger maksimumlængden for dette tekstfelt. Teksten blev afkortet."
+
+#: src/stdtext.src#SV_MAC_SCREENNNAME.STRING.TEXT
+msgid  "Screen %d"
+msgstr "Skærm %d"
+
+#: src/stdtext.src#SV_STDTEXT_ALLFILETYPES.STRING.TEXT
+msgid  "Any type"
+msgstr "Vilkårlig type"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_MM.ITEMLIST.ITEM
+msgid  "mm"
+msgstr "mm"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_CM.ITEMLIST.ITEM
+msgid  "cm"
+msgstr "cm"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_M.ITEMLIST.ITEM
+msgid  "m"
+msgstr "m"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_KM.ITEMLIST.ITEM
+msgid  "km"
+msgstr "km"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
+msgid  "twips"
+msgstr "twips"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
+msgid  "twip"
+msgstr "twip"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_POINT.ITEMLIST.ITEM
+msgid  "pt"
+msgstr "pkt."
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_PICA.ITEMLIST.ITEM
+msgid  "pi"
+msgstr "pi"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
+msgid  "\""
+msgstr "\""
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
+msgid  "in"
+msgstr "tomme"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
+msgid  "inch"
+msgstr "tommer"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
+msgid  "'"
+msgstr "'"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
+msgid  "ft"
+msgstr "fod"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
+msgid  "foot"
+msgstr "fod"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
+msgid  "feet"
+msgstr "fod"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
+msgid  "miles"
+msgstr "mil"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
+msgid  "mile"
+msgstr "mil"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ITEMLIST.ITEM
+msgid  "%"
+msgstr "%"

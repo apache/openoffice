@@ -59,10 +59,6 @@ msgstr "No s'ha pogut establir la connexió a la base de dades externa. No s'ha 
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
 msgstr "No s'ha pogut establir la connexió a la base de dades externa. No s'ha pogut carregar el controlador SDBC."
 
-#: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
-msgid  "Form"
-msgstr "Formulari"
-
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
 msgstr "Informe"
@@ -627,14 +623,6 @@ msgstr "No s'aplica als documents només de lectura."
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 msgstr "No podeu donar el mateix nom a una taula i a una consulta. Utilitzeu un nom que encara no s'utilitzi en una consulta o taula."
 
-#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Taula"
-
-#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
-msgid  "Query"
-msgstr "Consulta"
-
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
 msgid  "The given connection is no valid query and/or tables supplier."
 msgstr "La connexió proporcionada no és una consulta vàlida ni un subministrador de taules."
@@ -655,10 +643,6 @@ msgstr "Tipus d'ordre no vàlida. Només es permet l'ús de TABLE i QUERY de com
 msgid  "Create Form in Design View..."
 msgstr "Crea un formulari en vista de disseny..."
 
-#: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Form..."
-msgstr "Crea un formulari utilitzant l'auxiliar..."
-
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Report..."
 msgstr "Crea un informe utilitzant l'auxiliar..."
@@ -675,25 +659,9 @@ msgstr "Crea una consulta en vista de disseny..."
 msgid  "Create Query in SQL View..."
 msgstr "Crea una consulta en vista SQL..."
 
-#: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Query..."
-msgstr "Crea una consulta utilitzant l'auxiliar..."
-
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
 msgid  "Create Table in Design View..."
 msgstr "Crea una taula en vista de disseny..."
-
-#: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Table..."
-msgstr "Crea una taula utilitzant l'auxiliar..."
-
-#: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
-msgid  "Create View..."
-msgstr "Crea una vista..."
-
-#: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
-msgid  "Forms"
-msgstr "Formularis"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
 msgid  "Reports"
@@ -719,14 +687,6 @@ msgstr "Enganxament especial..."
 msgid  "Delete"
 msgstr "Suprimeix"
 
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
-msgid  "Rename"
-msgstr "Canvia el nom"
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
-msgid  "Edit"
-msgstr "Edita"
-
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
 msgid  "Edit in SQL View..."
 msgstr "Edita en vista SQL..."
@@ -734,10 +694,6 @@ msgstr "Edita en vista SQL..."
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
 msgid  "Open"
 msgstr "Obre"
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
-msgid  "Create as View"
-msgstr "Crea com a vista"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Form Wizard..."
@@ -815,17 +771,9 @@ msgstr "Creeu una taula a partir d'una mostra de taules personals i de treball q
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
 msgstr "Creeu una vista especificant els noms de les taules i els camps que voleu que siguin visibles."
 
-#: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
-msgid  "Opens the view wizard"
-msgstr "Obre l'auxiliar de la vista"
-
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
 msgid  "Database"
 msgstr "Base de dades"
-
-#: ui/app/app.src#STR_TASKS.STRING.TEXT
-msgid  "Tasks"
-msgstr "Tasques"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
 msgid  "Description"
@@ -839,21 +787,13 @@ msgstr "Previsualització"
 msgid  "Disable Preview"
 msgstr "Inhabilita la previsualització"
 
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
-msgid  "None"
-msgstr "Cap"
+#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The database has been modified.\nDo you want to save the changes?"
+msgstr "S'ha modificat la base de dades.\nVoleu desar els canvis?"
 
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
-msgid  "Document Information"
-msgstr "Informació del document"
-
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
-msgid  "Document"
-msgstr "Document"
-
-#: ui/app/app.src#RID_STR_FORM.STRING.TEXT
-msgid  "Form"
-msgstr "Formulari"
+#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
+msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
+msgstr "S'ha modificat el tipus de connexió.\nPerquè els canvis tinguin efecte, s'han de tancar tots els formularis, informes, consultes i taules.\n\nVoleu tancar tots els documents ara?"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
@@ -891,9 +831,9 @@ msgstr "No podeu seleccionar categories diferents."
 msgid  "Unsupported object type found ($type$)."
 msgstr "S'ha trobat un tipus d'objecte no admès ($type$)."
 
-#: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
-msgid  "Table #"
-msgstr "Taula #"
+#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The current record has been changed.\nDo you want to save the changes?"
+msgstr "El registre actual ha canviat.\nVoleu desar els canvis?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
 msgid  "Do you want to delete the selected data?"
@@ -914,14 +854,6 @@ msgstr "S'ha produït un error en definir els criteris de filtratge"
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
 msgid  "Connection lost"
 msgstr "S'ha perdut la connexió"
-
-#: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
-msgid  "Queries"
-msgstr "Consultes"
-
-#: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
-msgid  "Tables"
-msgstr "Taules"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
 msgid  "Edit ~Database File..."
@@ -979,10 +911,6 @@ msgstr "No s'ha pogut trobar cap format de taula."
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "No s'ha pogut establir la connexió a la font de dades \"$name$\"."
 
-#: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
-msgid  "Rebuild"
-msgstr "Reconstrueix"
-
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
 msgid  "Column ~Format..."
 msgstr "~Format de la columna..."
@@ -995,29 +923,9 @@ msgstr "Copia la d~escripció de la columna"
 msgid  "Table Format..."
 msgstr "Format de la taula..."
 
-#: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
-msgid  "Row Height..."
-msgstr "Alçada de la fila..."
-
-#: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
-msgid  "Undo: Data Input"
-msgstr "Desfés: entrada de dades"
-
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
 msgid  "Save current record"
 msgstr "Desa el registre actual"
-
-#: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
-msgid  "Query #"
-msgstr "Consulta #"
-
-#: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
-msgid  "Table #"
-msgstr "Taula #"
-
-#: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
-msgid  "View #"
-msgstr "Vista #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name \"#\" already exists."
@@ -1039,85 +947,13 @@ msgstr "Vista de taula de font de dades"
 msgid  "Shows the selected table or query."
 msgstr "Mostra la taula o consulta seleccionada."
 
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
-msgid  "Table name"
-msgstr "Nom de la taula"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
-msgid  "Insert data"
-msgstr "Insereix les dades"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
-msgid  "Delete data"
-msgstr "Suprimeix les dades"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
-msgid  "Modify data"
-msgstr "Modifica les dades"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
-msgid  "Alter structure"
-msgstr "Modifica l'estructura"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
-msgid  "Read data"
-msgstr "Llegeix les dades"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
-msgid  "Modify references"
-msgstr "Modifica les referències"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
-msgid  "Drop structure"
-msgstr "Suprimeix l'estructura"
-
-#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
-msgid  "Sort Ascending"
-msgstr "Ordre ascendent"
-
-#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
-msgid  "Sort Descending"
-msgstr "Ordre descendent"
-
-#: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
-msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr "No es pot establir una connexió amb el gestor del controlador SDBC (#servicename#)."
-
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "Hi ha un controlador que no està registrat per a l'URL #connurl#."
 
-#: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
-msgid  "No connection could be established for the URL #connurl#."
-msgstr "No s'ha pogut establir una connexió per a l'URL #connurl#."
-
-#: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
-msgid  "Please check the current settings, for example user name and password."
-msgstr "Comproveu els paràmetres actuals, com ara el nom d'usuari i la contrasenya."
-
-#: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
-msgid  "Successfully connected, but information about database tables is not available."
-msgstr "S'ha pogut establir la connexió, però la informació sobre les taules de la base de dades no està disponible."
-
-#: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
-msgid  "All tables"
-msgstr "Totes les taules"
-
-#: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
-msgid  "All views"
-msgstr "Totes les visualitzacions"
-
-#: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
-msgid  "All tables and views"
-msgstr "Totes les taules i les visualitzacions"
-
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
 msgid  "Modify SQL statement(s)"
 msgstr "Modifica les expressions SQL"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
-msgid  "Database files"
-msgstr "Fitxers de la base de dades"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE:"
@@ -1131,49 +967,9 @@ msgstr "~TRANSACTIONLOG:"
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
-msgid  "Database sizes"
-msgstr "Mida de la base de dades"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
-msgid  "S~ize (MB):"
-msgstr "Mida ~total (MB):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
-msgid  "~Free memory space (MB):"
-msgstr "~Memòria lliure (MB):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
-msgid  "~Memory utilization (in %):"
-msgstr "~Memòria utilitzada (en %):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
-msgid  "Database Statistics"
-msgstr "Estadístiques de la base de dades"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
-msgid  "Contains the system tables"
-msgstr "Conté les taules del sistema"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
-msgid  "Contains information about transaction"
-msgstr "Conté informació sobre transaccions"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
-msgid  "Contains all data files"
-msgstr "Conté tots els fitxers de dades"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
-msgid  "Total size of the database files"
-msgstr "Mida total dels fitxers de la base de dades"
-
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Memòria lliure disponible abans de crear un nou fitxer datadev."
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
-msgid  "Currently used memory"
-msgstr "Memòria actualment en ús"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
 msgid  "No information could be displayed because no access rights exist for the required system tables."
@@ -1195,10 +991,6 @@ msgstr "~Servidor"
 msgid  "~Port"
 msgstr "~Port"
 
-#: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
-msgid  "Default: 3306"
-msgstr "Per defecte: 3306"
-
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
 msgid  "So~cket"
 msgstr "Sò~col"
@@ -1207,34 +999,6 @@ msgstr "Sò~col"
 msgid  "Named p~ipe"
 msgstr "Conducte amb ~nom"
 
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
-msgid  "Tables"
-msgstr "Taules"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
-msgid  "Queries"
-msgstr "Consultes"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
-msgid  "~Add"
-msgstr "~Afegeix"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Tanca"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
-msgid  "Add Tables"
-msgstr "Afegeix taules"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
-msgid  "Add Table or Query"
-msgstr "Afegeix taula o consulta"
-
-#: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Opcions"
-
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
 msgid  "Use SQL92 naming constraints"
 msgstr "Utilitza les restriccions de noms SQL92"
@@ -1242,10 +1006,6 @@ msgstr "Utilitza les restriccions de noms SQL92"
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
 msgid  "Append the table alias name on SELECT statements"
 msgstr "Afegeix el nom d'àlies de taula a les expressions SELECT"
-
-#: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
-msgid  "Use keyword AS before table alias names"
-msgstr "Utilitza la paraula clau AS abans dels noms d'àlies de les taules"
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
 msgid  "Use Outer Join syntax '{OJ }'"
@@ -1258,10 +1018,6 @@ msgstr "Ignora els privilegis del controlador de la base de dades"
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
 msgid  "Replace named parameters with '?'"
 msgstr "Reemplaça els paràmetres anomenats amb '?'"
-
-#: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
-msgid  "Display version columns (when available)"
-msgstr "Mostra les columnes de versió (quan estigui disponible)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
 msgid  "Use catalog name in SELECT statements"
@@ -1315,10 +1071,6 @@ msgstr "Barrejada"
 msgid  "MS Access"
 msgstr "MS Access"
 
-#: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
-msgid  "Comparison of Boolean values"
-msgstr "Comparació de valors booleans"
-
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
 msgstr "Files per escanejar els tipus de columna"
@@ -1335,14 +1087,6 @@ msgstr "Ob~té els valors generats"
 msgid  "~Auto-increment statement"
 msgstr "Expressió d'increment a~utomàtic"
 
-#: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
-msgid  "~Query of generated values"
-msgstr "~Consulta dels valors generats"
-
-#: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
-msgid  "Generated Values"
-msgstr "Valors generats"
-
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
 msgid  "Special Settings"
 msgstr "Paràmetres especials"
@@ -1350,22 +1094,6 @@ msgstr "Paràmetres especials"
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
 msgstr "Paràmetres avançats"
-
-#: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to the dBASE files"
-msgstr "Camí als fitxers dBASE"
-
-#: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to the text files"
-msgstr "Camí als fitxers de text"
-
-#: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to the spreadsheet document"
-msgstr "Camí als documents de full de càlcul"
-
-#: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
-msgid  "Name of the ODBC data source on your system"
-msgstr "Nom de la font de dades ODBC al sistema"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the MySQL database"
@@ -1378,10 +1106,6 @@ msgstr "Nom de la base de dades Oracle"
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Adabas D database"
 msgstr "Nom de la base de dades Adabas D"
-
-#: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
-msgid  "Microsoft Access database file"
-msgstr "Fitxer de base de dades Microsoft Access"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
@@ -1399,10 +1123,6 @@ msgstr "Nom de l'~amfitrió"
 msgid  "~Mozilla profile name"
 msgstr "Nom del perfil del ~Mozilla"
 
-#: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
-msgid  "~Thunderbird profile name"
-msgstr "Nom del perfil del ~Thunderbird"
-
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
 msgid  "Browse"
 msgstr "Navega"
@@ -1414,14 +1134,6 @@ msgstr "Nom de la base de dades"
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
 msgid  "Server"
 msgstr "Servidor"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
-msgid  "Base ~DN"
-msgstr "~DN base"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr "Número de ~port"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
 msgid  "Data conversion"
@@ -1435,17 +1147,9 @@ msgstr "Joc de ~caràcters"
 msgid  "Specify the type of files you want to access"
 msgstr "Especifiqueu els tipus de fitxer als quals voleu accedir"
 
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
-msgid  "Plain text files (*.txt)"
-msgstr "Fitxer de text (*.txt)"
-
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
 msgid  "'Comma separated value' files (*.csv)"
 msgstr "Fitxers de valors separats per comes (*.csv)"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
-msgid  "Custom:"
-msgstr "Personalitzat:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Custom: *.abc"
@@ -1471,13 +1175,9 @@ msgstr "Separador decimal"
 msgid  "Thousands separator"
 msgstr "Separador de milers"
 
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
-msgid  "~Text contains headers"
-msgstr "El ~text conté capçaleres"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
-msgid  "{None}"
-msgstr "{Cap}"
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
+msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgstr ";\t59\t,\t44\t:\t58\t{Tabulació}\t9\t{Espai}\t32"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
 msgid  "#1 must be set."
@@ -1503,65 +1203,21 @@ msgstr "Classe de prova"
 msgid  "Socket"
 msgstr "Sòcol"
 
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
-msgid  "Save"
-msgstr "Desa"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Create New Directory"
-msgstr "Crea un directori nou"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Up One Level"
-msgstr "Puja un nivell"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
-msgid  "File ~name:"
-msgstr "~Nom de fitxer:"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
-msgid  "~Path:"
-msgstr "~Camí:"
-
-#: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
-msgid  "Folder"
-msgstr "Carpeta"
-
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
 msgstr "El fitxer ja existeix. Voleu sobreescriure'l?"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "General"
-msgstr "General"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Host name"
 msgstr "Nom de l'~amfitrió"
 
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "User authentication"
-msgstr "Autenticació de l'usuari"
-
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
 msgstr "Nom d'~usuari"
 
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
-msgid  "Password required"
-msgstr "Es necessita la contrasenya"
-
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
 msgid  "JDBC properties"
 msgstr "Propietats JDBC"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "~JDBC driver class"
-msgstr "Classe de controlador ~JDBC"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test Class"
-msgstr "Classe Test"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "Test Connection"
@@ -1611,21 +1267,9 @@ msgstr "El directori\n\n$path$\n\nno existeix. Voleu crear-lo?"
 msgid  "The directory $name$ could not be created."
 msgstr "No s'ha pogut crear el directori $name$."
 
-#: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
-msgid  "Convert Database"
-msgstr "Converteix la base de dades"
-
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
 msgid  "Please enter the ~password for the user 'DOMAIN'."
 msgstr "Entreu la contrasenya ~per l'usuari 'DOMAIN'."
-
-#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
-msgid  "Tables Filter"
-msgstr "Filtre de taules"
-
-#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Tables and table filter"
-msgstr "Taules i filtre de taula"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Mark the tables that should be visible for the applications."
@@ -1634,10 +1278,6 @@ msgstr "Marca les taules que han de ser visibles per a les aplicacions."
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
 msgid  "Database Wizard"
 msgstr "Auxiliar de bases de dades"
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
-msgid  "Select database"
-msgstr "Selecciona la base de dades"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
 msgid  "Set up dBASE connection"
@@ -1691,14 +1331,6 @@ msgstr "Estableix l'autenticació de l'usuari"
 msgid  "Set up MySQL server data"
 msgstr "Estableix les dades del servidor MySQL"
 
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
-msgid  "Save and proceed"
-msgstr "Desa i continua"
-
-#: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
-msgid  "New Database"
-msgstr "Base de dades nova"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to a MySQL database"
 msgstr "Estableix una connexió a una base de dades MySQL"
@@ -1731,10 +1363,6 @@ msgstr "Estableix l'autenticació de l'usuari"
 msgid  "Some databases require you to enter a user name."
 msgstr "Algunes bases de dades requereixen que entreu un nom d'usuari."
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
-msgid  "~User name"
-msgstr "Nom d'~usuari"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "Password re~quired"
 msgstr "Es re~quereix una contrasenya"
@@ -1742,10 +1370,6 @@ msgstr "Es re~quereix una contrasenya"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "~Test Connection"
 msgstr "~Prova la connexió"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
-msgid  "Decide how to proceed after saving the database"
-msgstr "Decidiu com continuar després de desar la base de dades"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
@@ -1758,10 +1382,6 @@ msgstr "~Sí, registra la base de dades"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "N~o, do not register the database"
 msgstr "N~o, no registris la base de dades"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
-msgid  "After the database file has been saved, what do you want to do?"
-msgstr "Després de desar la base de dades, què voleu fer?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
 msgid  "Open the database for editing"
@@ -1782,10 +1402,6 @@ msgstr "Estableix una connexió a MySQL utilitzant JDBC"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr "Introduïu la informació sol·licitada per connectar a una base de dades MySQL utilitzant JDBC. Recordeu que hi ha d'haver instal·lada una classe de controlador JDBC al sistema i ha d'estar registrada amb l'%PRODUCTNAME.\nPoseu-vos en contacte amb l'administrador de sistemes si no esteu segur dels paràmetres següents."
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
-msgid  "MySQL JDBC d~river class:"
-msgstr "Classe de cont~rolador MySQL JDBC:"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
 msgid  "Default: 3306"
@@ -1811,17 +1427,9 @@ msgstr "Selecciona la carpeta on són desats els fitxers dBASE."
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
 msgstr "Selecciona la carpeta on hi ha els fitxers de text CSV (valors separats per comes). L'%PRODUCTNAME Base obrirà aquests fitxers en mode només de lectura."
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to text files"
-msgstr "Camí als fitxers de text"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a Microsoft Access database"
 msgstr "Estableix una connexió a una base de dades Microsoft Access"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
-msgid  "Please select the Microsoft Access file you want to access."
-msgstr "Seleccioneu el fitxer de Microsoft Access al qual voleu accedir."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to an LDAP directory"
@@ -1830,10 +1438,6 @@ msgstr "Estableix una connexió a un directori LDAP"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr "Entreu la informació sol·licitada per connectar a un directori LDAP.\nPoseu-vos en contacte amb l'administrador de sistemes si teniu dubtes sobre els paràmetres següents."
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
-msgid  "Default: 389"
-msgstr "Per defecte: 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
 msgid  "Use ~secure connection (SSL)"
@@ -1875,14 +1479,6 @@ msgstr "Introduïu la informació requerida per connectar a una base de dades JD
 msgid  "Set up a connection to an Oracle database"
 msgstr "Estableix una connexió a una base de dades Oracle"
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
-msgid  "Default: 1521"
-msgstr "Per defecte: 1521"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
-msgid  "Oracle JDBC ~driver class"
-msgstr "Classe ~de controlador Oracle JDBC"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr "Introduïu la informació sol·licitada per connectar a una base de dades Oracle. Recordeu que cal tenir una classe de controlador JDBC instal·lada al vostre sistema i registrada amb l'%PRODUCTNAME.\nPoseu-vos en contacte amb l'administrador de sistemes si teniu dubtes sobre els paràmetres següents."
@@ -1902,10 +1498,6 @@ msgstr "~Ubicació i nom del fitxer"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "~Password required"
 msgstr "Es requereix una co~ntrasenya"
-
-#: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
-msgid  "Use catalog for file-based databases"
-msgstr "Utilitza el catàleg per a bases de dades basades en fitxers"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Connection Settings"
@@ -1931,10 +1523,6 @@ msgstr "Paràmetres addicionals"
 msgid  "Connection settings"
 msgstr "Paràmetres de connexió"
 
-#: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
-msgid  "Database properties"
-msgstr "Propietats de la base de dades"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
 msgstr "Us donem la benvinguda a l'auxiliar de base de dades de l'%PRODUCTNAME"
@@ -1943,49 +1531,13 @@ msgstr "Us donem la benvinguda a l'auxiliar de base de dades de l'%PRODUCTNAME"
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
 msgstr "Utilitzeu l'auxiliar de base de dades per crear una base de dades nova, per obrir un fitxer de base de dades existent o per connectar-vos a una base de dades emmagatzemada en un servidor."
 
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
-msgid  "What do you want to do?"
-msgstr "Què voleu fer?"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
-msgid  "Create a n~ew database"
-msgstr "Crear una bas~e de dades nova"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
-msgid  "Open an existing database ~file"
-msgstr "Obrir una ba~se de dades existent"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
-msgid  "Recently used"
-msgstr "Utilitzades recentment"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
-msgid  "Connect to an e~xisting database"
-msgstr "Connectar amb una base de dades e~xistent"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
 msgid  "Select the type of database to which you want to establish a connection."
 msgstr "Seleccioneu el tipus de base de dades amb el qual voleu establir una connexió."
 
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
-msgid  "Database ~type "
-msgstr "~Tipus de base de dades"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
-msgid  "Database"
-msgstr "Base de dades"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
 msgstr "A les pàgines següents podeu seleccionar els paràmetres detallats de connexió.\n\nEls nous paràmetres que trieu suprimiran els actuals."
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
-msgid  "MySQL"
-msgstr "MySQL"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
-msgid  "Data Source Properties: #"
-msgstr "Propietats de la font de dades: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
@@ -1994,10 +1546,6 @@ msgstr "No s'ha pogut carregar la biblioteca de programes #lib# o està corrompu
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
 msgstr "Aquest tipus de font de dades no pot utilitzar-se en aquesta plataforma.\nTeniu permís per canviar les opcions, però probablement no podreu connectar amb la base de dades."
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
-msgid  "General"
-msgstr "General"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional settings"
@@ -2019,65 +1567,17 @@ msgstr "Índexs..."
 msgid  "Optional Settings"
 msgstr "Paràmetres opcionals"
 
-#: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
-msgid  "ODBC ~options"
-msgstr "~Opcions d'ODBC"
-
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
 msgstr "Mida de la ~memòria intermèdia de dades (MB)"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
-msgid  "~Data increment (MB)"
-msgstr "Increment de ~dades (MB)"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "Administration"
-msgstr "Administració"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
-msgid  "Control ~user name"
-msgstr "Nom d'~usuari de control"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
-msgid  "Control ~password"
-msgstr "~Contrasenya de control"
 
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
 msgid  "~Shut down service when closing %PRODUCTNAME"
 msgstr "~Atura el servei en tancar l'%PRODUCTNAME"
 
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
-msgid  "E~xtended..."
-msgstr "A~mpliat..."
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "MySQL JDBC d~river class"
-msgstr "Classe de cont~rolador MySQL JDBC"
-
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test class"
 msgstr "Classe de prova"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "User authentication"
-msgstr "Autenticació de l'usuari"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
-msgid  "~User name"
-msgstr "Nom d'~usuari"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
-msgid  "Password required"
-msgstr "Es necessita la contrasenya"
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "Oracle JDBC d~river class"
-msgstr "Classe de cont~rolador Oracle JDBC"
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
-msgid  "~Base DN"
-msgstr "DN ~base"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
 msgid  "Use secure connection(SSL)"
@@ -2099,49 +1599,9 @@ msgstr "Paràmetres ~del controlador"
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
 msgstr "Trieu 'Connecta a una base de dades existent' per connectar-vos a una base de dades que ja estigui en funcionament."
 
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
-msgid  "Indexes"
-msgstr "Índexs"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
-msgid  "~Table"
-msgstr "~Taula"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
-msgid  "Assignment"
-msgstr "Assignació"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
-msgid  "T~able indexes"
-msgstr "Índexs de la t~aula:"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
-msgid  "~Free indexes"
-msgstr "Í~ndexs lliures:"
-
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
 msgid  "SQL command"
 msgstr "Ordre SQL"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
-msgid  "Command to execute"
-msgstr "Ordre per executar"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
-msgid  "Execute"
-msgstr "Executa"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
-msgid  "Previous commands"
-msgstr "Ordres anteriors"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
-msgid  "Status"
-msgstr "Estat"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
-msgid  "Close"
-msgstr "Tanca"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
 msgid  "Execute SQL Statement"
@@ -2159,165 +1619,33 @@ msgstr "S'ha perdut la connexió amb la base de dades. Aquest quadre de diàleg 
 msgid  "Field Format"
 msgstr "Format del camp"
 
-#: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
-msgid  "Bac~k"
-msgstr "Enre~re"
-
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
 msgid  "Font"
 msgstr "Tipus de lletra"
-
-#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
-msgid  "Format"
-msgstr "Format"
-
-#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
-msgid  "Alignment"
-msgstr "Alineació"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
 msgid  "Table Format"
 msgstr "Format de la taula"
 
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
-msgid  "Save As"
-msgstr "Anomena i desa"
-
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the object to be created:"
 msgstr "Introduïu un nom per a l'objecte que s'ha de crear:"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
-msgid  "~Catalog"
-msgstr "~Catàleg"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
-msgid  "~Schema"
-msgstr "E~squema"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
-msgid  "~Table Name"
-msgstr "Nom de la ~taula"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
-msgid  "~Name of table view"
-msgstr "~Nom de la vista de la taula"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
-msgid  "~Query name"
-msgstr "Nom de la ~consulta"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
-msgid  "Rename to"
-msgstr "Canvia el nom a"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
 msgid  "Insert as"
 msgstr "Insereix com a"
 
-#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
-msgid  "~Height"
-msgstr "~Alçada"
-
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
 msgid  "~Automatic"
 msgstr "~Automàtic"
-
-#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
-msgid  "Row Height"
-msgstr "Alçada de la fila"
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
-msgid  "~Width"
-msgstr "~Amplada"
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
-msgid  "Column Width"
-msgstr "Amplada de la columna"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
-msgid  "Data Source"
-msgstr "Font de dades"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Choose a data source:"
-msgstr "Trieu una font de dades:"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
-msgid  "Organize..."
-msgstr "Organitza..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
 msgid  "Create..."
 msgstr "Crea..."
 
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
-msgid  "Local Databases"
-msgstr "Fonts locals de dades"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
-msgid  "Choose a database"
-msgstr "Trieu una base de dades"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
-msgid  "Indexes"
-msgstr "Índexs"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
-msgid  "New Index"
-msgstr "Índex nou"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
-msgid  "Delete Current Index"
-msgstr "Suprimeix l'índex actual"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
-msgid  "Rename Current Index"
-msgstr "Canvia de nom l'índex actual"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
-msgid  "Save Current Index"
-msgstr "Desa l'índex actual"
-
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
 msgid  "Reset Current Index"
 msgstr "Reinicialitza l'índex actual"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
-msgid  "Index details"
-msgstr "Detalls de l'índex"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
-msgid  "Index identifier:"
-msgstr "Identificador de l'índex:"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
-msgid  "~Unique"
-msgstr "Ú~nic"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
-msgid  "Fields"
-msgstr "Camps"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Tanca"
-
-#: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
-msgid  "Sort order"
-msgstr "Ordenació"
-
-#: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
-msgid  "Index field"
-msgstr "Camp de l'índex"
-
-#: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
-msgid  "Ascending"
-msgstr "Ascendent"
-
-#: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
-msgid  "Descending"
-msgstr "Descendent"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
 msgid  "Do you really want to delete the index '$name$'?"
@@ -2327,10 +1655,6 @@ msgstr "Esteu segur que voleu suprimir l'índex '$name$'?"
 msgid  "index"
 msgstr "índex"
 
-#: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
-msgid  "Save Index"
-msgstr "Desa l'índex"
-
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
 msgid  "The index must contain at least one field."
 msgstr "L'índex ha de contenir un camp com a mínim."
@@ -2338,10 +1662,6 @@ msgstr "L'índex ha de contenir un camp com a mínim."
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
 msgid  "Exit Index Design"
 msgstr "Tanca el disseny de l'índex"
-
-#: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
-msgid  "Do you want to save the changes made to the current index?"
-msgstr "Voleu desar els canvis realitzats a l'índex actual?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There is already another index named \"$name$\"."
@@ -2355,14 +1675,6 @@ msgstr "En una definició d'índex, cap columna de la taula no pot estar repetid
 msgid  "~Parameters"
 msgstr "~Paràmetres"
 
-#: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
-msgid  "~Value"
-msgstr "~Valor"
-
-#: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
-msgid  "~Next"
-msgstr "~Següent"
-
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
 msgid  "Parameter Input"
 msgstr "Entrada de paràmetres"
@@ -2370,10 +1682,6 @@ msgstr "Entrada de paràmetres"
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
 msgstr "No s'ha pogut convertir l'entrada en un valor vàlid per a la columna \"$name$\""
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
-msgid  "Standard Filter"
-msgstr "Filtre estàndard"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "AND"
@@ -2383,25 +1691,9 @@ msgstr "I"
 msgid  "OR"
 msgstr "O"
 
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
-msgid  "Field name"
-msgstr "Nom del camp"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
-msgid  "Condition"
-msgstr "Condició"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
-msgid  "Value"
-msgstr "Valor"
-
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
 msgid  "Operator"
 msgstr "Operador"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
-msgid  "Criteria"
-msgstr "Criteris"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "- none -"
@@ -2411,10 +1703,6 @@ msgstr "- cap -"
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;com;no com;nul;no nul"
 
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
-msgid  "Sort Order"
-msgstr "Ordenació"
-
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "ascending"
 msgstr "ascendent"
@@ -2422,10 +1710,6 @@ msgstr "ascendent"
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "descending"
 msgstr "descendent"
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
-msgid  "Field name"
-msgstr "Nom del camp"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
 msgid  "and then"
@@ -2435,41 +1719,13 @@ msgstr "i llavors"
 msgid  "Operator"
 msgstr "Operador"
 
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
-msgid  "Order"
-msgstr "Ordre"
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
-msgid  "Sort order"
-msgstr "Ordenació"
-
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "<none>"
 msgstr "<cap>"
 
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
-msgid  "Relations"
-msgstr "Relacions"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
-msgid  "Tables involved"
-msgstr "Taules implicades"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
-msgid  "Fields involved"
-msgstr "Camps implicats"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
-msgid  "Update options"
-msgstr "Opcions d'actualització"
-
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~No action"
 msgstr "Se~nse acció"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
-msgid  "~Update cascade"
-msgstr "~Actualitza en cascada"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
 msgid  "~Set null"
@@ -2479,53 +1735,17 @@ msgstr "Po~sa-ho a nul"
 msgid  "Set ~default"
 msgstr "Per ~defecte"
 
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
-msgid  "Delete options"
-msgstr "Opcions de supressió"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "Delete ~cascade"
-msgstr "Suprimeix en ~cascada"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
-msgid  "%PRODUCTNAME Base"
-msgstr "%PRODUCTNAME Base"
-
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
 msgid  "Details"
 msgstr "Detalls"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
-msgid  "Error ~list:"
-msgstr "~Llista d'errors:"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "~Description:"
-msgstr "~Descripció:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
 msgid  "SQL Status"
 msgstr "Estat de l'SQL"
 
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
-msgid  "Error code"
-msgstr "Codi d'error"
-
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
 msgstr "Una causa freqüent d'aquest error és una selecció inapropiada del joc de caràcters per a la llengua de la vostra base de dades. Verifiqueu l'opció seleccionant Edita - Base de dades - Propietats."
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
-msgid  "Error"
-msgstr "Error"
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
-msgid  "Warning"
-msgstr "Advertiment"
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
-msgid  "Information"
-msgstr "Informació"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
 msgid  "Text Connection Settings"
@@ -2535,34 +1755,6 @@ msgstr "Paràmetres de connexió de text"
 msgid  "User Settings"
 msgstr "Paràmetres de l'usuari"
 
-#: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
-msgid  "User administration"
-msgstr "Administració de l'usuari"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
-msgid  "User selection"
-msgstr "Selecció de l'usuari"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
-msgid  "Us~er:"
-msgstr "Us~uari:"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
-msgid  "~Add User..."
-msgstr "Usuari ~nou..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
-msgid  "Change ~Password..."
-msgstr "Canvia la ~contrasenya..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
-msgid  "~Delete User..."
-msgstr "~Suprimeix l'usuari..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
-msgid  "Access rights for selected user"
-msgstr "Drets d'accés per a l'usuari seleccionat"
-
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
 msgid  "Do you really want to delete the user?"
 msgstr "Segur que voleu suprimir l'usuari seleccionat?"
@@ -2571,33 +1763,13 @@ msgstr "Segur que voleu suprimir l'usuari seleccionat?"
 msgid  "The database does not support user administration."
 msgstr "La base de dades no permet que l'usuari l'administri."
 
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
-msgid  "User \"$name$:  $\""
-msgstr "Usuari \"$name$:  $\""
-
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
-msgid  "Old p~assword"
-msgstr "Contrasenya ~antiga"
-
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
-msgid  "~Password"
-msgstr "~Contrasenya"
-
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
 msgid  "~Confirm  password"
 msgstr "~Verificació de la contrasenya"
 
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
-msgid  "Change Password"
-msgstr "Canvia la contrasenya"
-
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
 msgid  "The passwords do not match. Please enter the password again."
 msgstr "Les contrasenyes són diferents, torneu-les a escriure."
-
-#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
-msgid  "Refresh"
-msgstr "Actualitza"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
 msgid  "New ~View Design"
@@ -2607,45 +1779,17 @@ msgstr "Disseny de ~vista nou"
 msgid  "New ~Table Design"
 msgstr "Disseny de ~taula nou"
 
-#: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
-msgid  "Query AutoPilot..."
-msgstr "AutoPilot per a consultes..."
-
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "New ~Query (Design View)"
 msgstr "~Consulta nova (vista de disseny)"
-
-#: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
-msgid  "~Edit Query"
-msgstr "~Edita consulta"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
 msgid  "New Query (~SQL View)"
 msgstr "Consulta nova (vista ~SQL)"
 
-#: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
-msgid  "Edit..."
-msgstr "Edita..."
-
-#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
-msgid  "Column ~Width..."
-msgstr "Amplada de ~columna..."
-
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
 msgid  "Report Wizard..."
 msgstr "Auxiliar d'informes..."
-
-#: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
-msgid  "Form AutoPilot..."
-msgstr "Auxiliar de formularis..."
-
-#: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
-msgid  "System"
-msgstr "Sistema"
-
-#: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
-msgid  "Error during creation"
-msgstr "S'ha produït un error durant el procés de creació"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
 msgid  "An unexpected error occurred. The operation could not be performed."
@@ -2662,10 +1806,6 @@ msgstr "No es pot suprimir la taula perquè la connexió de la base de dades no 
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
 msgid  "~All"
 msgstr "~Tot"
-
-#: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
-msgid  "Undo:"
-msgstr "Desfés:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
 msgid  "Redo:"
@@ -2691,53 +1831,17 @@ msgstr "El nom '$#$' ja existeix.\nIntroduïu un altre nom."
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr "L'informe \"$file$\" requereix l'extensió Constructor d'informes d'Oracle."
 
-#: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
-msgid  "Apply columns"
-msgstr "Aplica les columnes"
-
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
 msgid  "Type formatting"
 msgstr "Formatació de tipus"
-
-#: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
-msgid  "The following fields have already been set as primary keys:\n"
-msgstr "Els camps següents s'han definit com a claus primàries:\n"
-
-#: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
-msgid  "Assign columns"
-msgstr "Assigna les columnes"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
 msgid  "Copy RTF Table"
 msgstr "Copia la taula RTF"
 
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
-msgstr "~Ajuda"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
-msgid  "~Cancel"
-msgstr "~Cancel·la"
-
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
 msgid  "< ~Back"
 msgstr "< ~Enrere"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
-msgid  "~Next>"
-msgstr "~Següent>"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
-msgid  "C~reate"
-msgstr "C~rea"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
-msgid  "Existing columns"
-msgstr "Columnes existents"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
-msgid  "Column information"
-msgstr "Informació sobre columnes"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
 msgid  "Automatic type recognition"
@@ -2747,45 +1851,9 @@ msgstr "Reconeixement automàtic del tipus"
 msgid  "Lines (ma~x)"
 msgstr "Línies (mà~x):"
 
-#: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
-msgid  "Primary Key"
-msgstr "Clau primària"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
-msgid  "Source table: \n"
-msgstr "Taula font: \n"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
-msgid  "Destination table: \n"
-msgstr "Taula de destinació: \n"
-
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
 msgid  "~All"
 msgstr "~Tot"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
-msgid  "Non~e"
-msgstr "Ca~p"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
-msgid  "Ta~ble name"
-msgstr "No~m de la taula:"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Opcions"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
-msgid  "De~finition and data"
-msgstr "De~finició i dades"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
-msgid  "Def~inition"
-msgstr "Def~inició"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
-msgid  "A~s table view"
-msgstr "Com a vista de t~aula"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
 msgid  "Append ~data"
@@ -2794,14 +1862,6 @@ msgstr "~Afegeix dades"
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
 msgid  "Use first ~line as column names"
 msgstr "Usa la primera ~línia com a noms de les columnes"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
-msgid  "Crea~te primary key"
-msgstr "~Crea una clau primària"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
-msgid  "Name"
-msgstr "Nom"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
 msgid  "Copy table"
@@ -2818,14 +1878,6 @@ msgstr "Seleccioneu l'opció 'Afegeix dades' de la primera pàgina per afegir da
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
 msgid  "Please change the table name. It is too long."
 msgstr "Canvieu el nom de la taula. És massa llarg."
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Opcions"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
-msgid  "~Type"
-msgstr "~Tipus"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
 msgid  "Inner join"
@@ -2850,18 +1902,6 @@ msgstr "Unió creuada"
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
 msgid  "Natural"
 msgstr "Natural"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
-msgid  "Tables involved"
-msgstr "Taules implicades"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
-msgid  "Fields involved"
-msgstr "Camps implicats"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
-msgid  "Join Properties"
-msgstr "Propietats de la unió"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
 msgid  "Please note that some databases may not support this join type."
@@ -2891,10 +1931,6 @@ msgstr "Conté només una columna per a cada parell de columnes amb el mateix no
 msgid  "Add Table Window"
 msgstr "Afegeix la finestra de la taula"
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
-msgid  "Move table window"
-msgstr "Mou la finestra de la taula"
-
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
 msgid  "Insert Join"
 msgstr "Insereix una unió"
@@ -2902,22 +1938,6 @@ msgstr "Insereix una unió"
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
 msgid  "Delete Join"
 msgstr "Suprimeix la unió"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
-msgid  "Resize table window"
-msgstr "Canvia la mida de la finestra de la taula"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
-msgid  "Delete Column"
-msgstr "Suprimeix la columna"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
-msgid  "Move column"
-msgstr "Mou la columna"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
-msgid  "Add Column"
-msgstr "Afegeix una columna"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, table '$name$' does not exist."
@@ -2931,25 +1951,13 @@ msgstr "L'expressió no és vàlida, el nom del camp '$name$' no existeix."
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "La consulta inclou #num# taules. Tanmateix, el tipus de base de dades seleccionat només pot processar un màxim de #maxnum# taula(es) per expressió."
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
-msgid  "Delete Table Window"
-msgstr "Suprimeix la finestra de la taula"
-
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
 msgid  "Edit Column Description"
 msgstr "Edita la descripció de la columna"
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
-msgid  "Adjust column width"
-msgstr "Ajusta l'amplada de la columna"
-
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
 msgid  "(not sorted);ascending;descending"
 msgstr "(sense ordenar);ascendent;descendent"
-
-#: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
-msgid  "(no function);Group"
-msgstr "(cap funció);Mitjana;Compta;Màxim;Mínim;Suma;Grup"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
 msgid  "(no table)"
@@ -2959,22 +1967,6 @@ msgstr "(sense taula)"
 msgid  "The database only supports sorting for visible fields."
 msgstr "La base de dades només permet l'ordenació pels camps visibles."
 
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
-msgid  "Functions"
-msgstr "Funcions"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
-msgid  "Table Name"
-msgstr "Nom de la taula"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
-msgid  "Alias"
-msgstr "Àlies"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
-msgid  "Distinct Values"
-msgstr "Valors diferents"
-
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Camp;Àlies;Taula;Ordenació;Visible;Funció;Criteri;O;O"
@@ -2983,25 +1975,13 @@ msgstr "Camp;Àlies;Taula;Ordenació;Visible;Funció;Criteri;O;O"
 msgid  "There are too many columns."
 msgstr "Hi ha massa columnes."
 
-#: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
-msgid  "A condition cannot be applied to field [*]"
-msgstr "No es pot aplicar cap condició al camp [*]"
-
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
 msgid  "The SQL statement created is too long."
 msgstr "L'expressió SQL que s'ha creat és massa llarga."
 
-#: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
-msgid  "Query is too complex"
-msgstr "La consulta és massa complexa"
-
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
 msgid  "Nothing has been selected."
 msgstr "No s'ha seleccionat res."
-
-#: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
-msgid  "Too many search criteria"
-msgstr "Massa criteris de cerca"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
 msgid  "SQL syntax error"
@@ -3018,14 +1998,6 @@ msgstr "Hi ha massa taules."
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "L'expressió no s'aplicarà en consultar en el dialecte SQL de la base de dades."
-
-#: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
-msgid  "Field name not found or not unique"
-msgstr "No s'ha trobat el nom del camp o no és únic"
-
-#: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
-msgid  "Join could not be processed"
-msgstr "No s'ha pogut processar la unió"
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
 msgid  "Syntax error in SQL statement"
@@ -3086,62 +2058,69 @@ msgstr "S'ha modificat l'objecte $object$.\nVoleu desar els canvis?"
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
 #, fuzzy
 msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr "L'objecte $object$ està basat en una ordre SQL que no s'ha pogut analitzar."
+msgstr ""
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
 #, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr "L'objecte $object$ s'obrirà en vista SQL."
-
-#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
-msgid  "The table view"
-msgstr "La vista de taula"
-
-#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
-msgid  "The query"
-msgstr "La consulta"
+msgstr ""
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "The SQL statement"
 msgstr "L'expressió SQL"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
+#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
 msgstr "La consulta no crea un grup de resultats i, per tant no pot ser part d'una altra consulta."
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "Els paràmetres ActiveConnection (connexió activa) i DataSourceName (nom de la font de dades) no existeixen o contenen algun error. No s'ha pogut inicialitzar el dissenyador de consultes."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "Aquesta relació ja existeix. Voleu editar-la o voleu crear-ne una de nova?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit..."
 msgstr "Edita..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
+#, fuzzy
 msgid  "Create..."
 msgstr "Crea..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " - %PRODUCTNAME Base: Disseny de la relació"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "The database does not support relations."
 msgstr "La base de dades no permet les relacions."
 
+#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The relation design has been changed.\nDo you want to save the changes?"
+msgstr "El disseny de la relació ha canviat.\nVoleu desar els canvis?"
+
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "Quan s'elimini aquesta taula també se suprimiran les relacions associades. Voleu continuar?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
+#, fuzzy
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
 msgstr "La base de dades no ha pogut crear la relació. Potser les claus alienes per a aquest tipus de taula no són compatibles.\nConsulteu la documentació de la base de dades."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
+#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 msgstr "Desconegut;Text;Nombre;Data/Hora;Data;Hora;Sí/No;Moneda;Memo;Comptador;Imatge;Text (fix);Decimal;Binari (fix);Binari;BigInt;Doble;Flotant;Real;Enter;Enter petit;Enter minúscul;SQL Nul;Objecte;Diferent;Estructura;Camp;BLOB;CLOB;REF;ALTRES;Bit (fix)"
 
@@ -3150,315 +2129,259 @@ msgstr "Desconegut;Text;Nombre;Data/Hora;Data;Hora;Sí/No;Moneda;Memo;Comptador;
 msgid  "Insert/remove primary key"
 msgstr "Insereix/suprimeix la clau primària"
 
-#: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
-msgid  "Yes"
-msgstr "Sí"
-
-#: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
-msgid  "No"
-msgstr "No"
-
-#: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
-msgid  "Ascending"
-msgstr "Ascendent"
-
-#: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
-msgid  "Descending"
-msgstr "Descendent"
-
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
 msgstr "<cap>"
 
-#: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
-msgid  "Field name"
-msgstr "Nom del camp"
-
-#: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
-msgid  "Field Name"
-msgstr "Nom del camp"
-
-#: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
-msgid  "Field ~type"
-msgstr "~Tipus del camp"
-
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
+#, fuzzy
 msgid  "Field Type"
 msgstr "Tipus del camp"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Field length"
 msgstr "Longitud del camp"
 
-#: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
-msgid  "Description"
-msgstr "Descripció"
-
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Column Description"
 msgstr "Descripció de la columna"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
+#, fuzzy
 msgid  "Input required"
 msgstr "Es necessita una entrada"
 
-#: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
-msgid  "~AutoValue"
-msgstr "V~alor automàtic"
-
-#: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
-msgid  "Field Properties"
-msgstr "Propietats del camp"
-
-#: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
-msgid  "General"
-msgstr "General"
-
-#: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
-msgid  "Description:"
-msgstr "Descripció:"
-
-#: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
-msgid  "Table properties"
-msgstr "Propietats de la taula"
-
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The text you entered is not a list element. "
 msgstr "El text que heu introduït no és un element de la llista. "
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Insert Rows"
 msgstr "Insereix files"
 
-#: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
-msgid  "Primary Key"
-msgstr "Clau primària"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
-msgid  "Modify cell"
-msgstr "Modifica la cel·la"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
-msgid  "Delete row"
-msgstr "Suprimeix la fila"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
-msgid  "Modify field type"
-msgstr "Modifica el tipus del camp"
-
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert row"
 msgstr "Insereix una fila"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert new row"
 msgstr "Insereix una fila nova"
-
-#: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
-msgid  "~Default value"
-msgstr "Valor per ~defecte"
-
-#: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
-msgid  "~Entry required"
-msgstr "Es necessita una ~entrada"
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
 #, fuzzy
 msgid  "~Length"
 msgstr "~Longitud"
 
-#: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
-msgid  "~Type"
-msgstr "~Tipus"
-
-#: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
-msgid  "Decimal ~places"
-msgstr "Xifres ~decimals"
-
-#: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
-msgid  "Format example"
-msgstr "Exemple de format"
-
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
 msgstr "Seleccioneu el valor que ha d'aparèixer per defecte en tots els registres nous.\nSi el camp no ha de tenir un valor per defecte, seleccioneu la cadena buida."
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
 msgstr "Introduïu un valor per defecte per a aquest camp.\n\nQuan introduïu dades en els registres nous de la taula, s'utilitzarà aquesta cadena per al camp seleccionat. Per tant, s'ha de correspondre amb el format de cel·la que s'ha d'introduir a sota."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
 msgstr "Activeu aquesta opció en cas que aquest camp no pugui contenir valors NULL. És a dir, l'usuari sempre hi haurà d'introduir alguna dada."
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Enter the maximum text length permitted."
 msgstr "Introduïu la longitud màxima de text permesa."
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Enter the number format."
 msgstr "Introduïu el format numèric."
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
 msgstr "Determineu la longitud que poden tenir les dades d'aquest camp.\n\nSi són camps decimals, fixeu la longitud màxima del nombre que s'ha d'introduir; si són camps binaris, la longitud del bloc de dades.\nEl valor es corregirà quan superi el màxim permès per a aquesta base de dades."
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
 msgstr "Indiqueu el nombre de llocs decimals permesos en aquest camp."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
+#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
 msgstr "Aquí podeu veure com es visualitzarien les dades en el format actual (utilitzeu el botó de la dreta per modificar el format)."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "This is where you determine the output format of the data."
 msgstr "Aquí podeu determinar el format de sortida de les dades."
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
 msgstr "Trieu si aquest camp ha de contenir valors d'increment automàtic.\n\nNo podeu introduir dades en aquest tipus de camps. S'assignarà un valor intrínsec a cada registre nou de manera automàtica (aquest valor provindrà de l'increment del registre anterior)."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "No es pot desar la taula perquè el nom de la columna \"$column$\" s'ha assignat dos cops."
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "La columna \"$column$\" pertany a la clau primària. Si se suprimeix la columna, la clau primària també se suprimirà. Segur que voleu continuar?"
 
-#: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
-msgid  "Primary Key Affected"
-msgstr "La clau primària s'ha modificat"
+#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The table has been changed.\nDo you want to save the changes?"
+msgstr "S'ha canviat la taula.\nVoleu desar els canvis?"
 
-#: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
-msgid  "Column"
-msgstr "Columna"
-
-#: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
-msgid  "Continue anyway?"
-msgstr "Voleu continuar igualment?"
-
-#: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
-msgid  "Warning!"
-msgstr "Avís"
+#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
+msgstr "S'ha perdut la connexió amb la base de dades. Sense connexió, el disseny de la taula només es pot fer servir de manera limitada.\nVoleu provar de tornar-vos a connectar?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
 msgstr "No s'ha pogut desar la taula per problemes de connexió."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
 msgstr "El filtre de la taula no s'ha pogut desar perquè la font de dades s'ha suprimit anteriorment."
 
-#: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
-msgid  "No primary key"
-msgstr "Sense clau primària"
+#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
+msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
+msgstr "S'ha de desar la taula abans de poder editar els índexs.\nVoleu desar els canvis ara?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
+#, fuzzy
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
 msgstr "Es necessita una clau primària o un índex únic per poder accedir a aquesta base de dades.\nNomés podeu entrar dades en aquesta taula si una d'aquestes dues condicions estructurals es compleix.\n\nVoleu crear una clau primària ara?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr "- %PRODUCTNAME Base: Disseny de la taula"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr "No s'ha pogut modificar la columna \"$column$\". Voleu suprimir-la i aplicar el format nou?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "S'ha produït un error mentre es desava el disseny de la taula"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
+#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "La columna $column$ no s'ha pogut suprimir."
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
 msgstr "Esteu intentant suprimir totes les columnes d'una taula. Una taula no pot existir sense columnes. Voleu suprimir la taula de la base de dades? Si no, la taula no es modificarà."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "Expressió d'increment a~utomàtic"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
 msgstr "Introduïu una expressió SQL per al camp d'increment automàtic.\n\nAquesta expressió es transferirà a la base de dades quan es creï la taula."
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
 msgstr "No s'ha pogut recuperar la informació sobre el tipus de dades.\nEl mode de disseny de la taula no està disponible per a aquest origen de dades."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "change field name"
 msgstr "canvia el nom del camp"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "change field type"
 msgstr "canvia el tipus de camp"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "change field description"
 msgstr "canvia la descripció del camp"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
+#, fuzzy
 msgid  "change field attribute"
 msgstr "canvia l'atribut del camp"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "La base de dades de destinació no permet l'ús de visualitzacions."
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "La base de dades de destinació no permet l'ús de claus primàries."
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
+#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "No s'ha trobat cap descriptor d'accés a dades o no hi ha cap descriptor d'accés a dades capaç de proporcionar tota la informació necessària."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "Només es permet l'ús de taules i consultes, de moment."
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
+#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "El conjunt de resultats de l'origen de la còpia ha de permetre l'ús de marcadors."
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "S'ha trobat un tipus de columna d'origen no permès ($type$) a la posició de columna $pos$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "El nombre de paràmetres d'inicialització no és vàlid."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "S'ha produït un error durant la inicialització."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported setting in the copy source descriptor: $name$."
 msgstr "El descriptor d'origen de la còpia conté un paràmetre no admès: $name$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "To copy a query, your connection must be able to provide queries."
 msgstr "Per copiar una consulta, cal que la connexió pugui proporcionar consultes."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.STRING.TEXT
+#, fuzzy
 msgid  "The given interaction handler is invalid."
 msgstr "El gestor d'interacció indicat no és vàlid."
-
-#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
-msgid  "~Remember password until end of session"
-msgstr "~Recorda la contrasenya fins al final de la sessió"
-
-#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
-msgid  "~Remember password"
-msgstr "~Recorda la contrasenya"

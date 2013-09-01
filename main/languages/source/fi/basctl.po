@@ -37,11 +37,11 @@ msgstr "Tulostusalue"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM2.ITEMLIST.ITEM
 msgid  "All ~Pages"
-msgstr "Kaikki sivut"
+msgstr "~Kaikki sivut"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
 msgid  "Pa~ges"
-msgstr "Tulosta tulostettavan sisällön kaikki sivut."
+msgstr "~Sivut"
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
 msgid  "<All>"
@@ -114,10 +114,6 @@ msgstr "Anna salasana kohteelle 'XX'"
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.STRING.TEXT
 msgid  "Name already exists"
 msgstr "Nimi on jo olemassa"
-
-#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
-msgid  "(Signed)"
-msgstr "(Etumerkillinen)"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
 msgid  "Object with same name already exists"
@@ -211,22 +207,6 @@ msgstr "Objektia tai menetelmää ei löytynyt"
 msgid  "BASIC"
 msgstr "BASIC"
 
-#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
-msgid  "Ln"
-msgstr "Rv"
-
-#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
-msgid  "Col"
-msgstr "Sar"
-
-#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
-msgid  "Document"
-msgstr "Asiakirja"
-
-#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
-msgid  "Macro Bar"
-msgstr "Makrorivi"
-
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
 msgid  "The window cannot be closed while BASIC is running."
 msgstr "Ikkunaa ei voi sulkea, kun BASIC on käynnissä."
@@ -242,14 +222,6 @@ msgstr "Viittaus kohteeseen 'XX' ei ole mahdollinen."
 #: basicide/basidesh.src#RID_STR_WATCHNAME.STRING.TEXT
 msgid  "Watch"
 msgstr "Seuranta"
-
-#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
-msgid  "Variable"
-msgstr "Muuttuja"
-
-#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
-msgid  "Value"
-msgstr "Arvo"
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
 msgid  "Type"
@@ -287,14 +259,6 @@ msgstr "Uusi moduuli"
 msgid  "New Dialog"
 msgstr "Uusi valintaikkuna"
 
-#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
-msgid  "All"
-msgstr "Kaikki"
-
-#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
-msgid  "Page"
-msgstr "Sivu"
-
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
 msgid  "A name must be entered."
 msgstr "Nimi on määritettävä."
@@ -319,10 +283,6 @@ msgstr "Seuranta:"
 msgid  "Calls: "
 msgstr "Kutsut: "
 
-#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
-msgid  "My Macros"
-msgstr "Omat makrot"
-
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
 msgid  "My Dialogs"
 msgstr "Omat valintaikkunat"
@@ -333,15 +293,15 @@ msgstr "Omat makrot ja valintaikkunat"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROS.STRING.TEXT
 msgid  "%PRODUCTNAME Macros"
-msgstr "%PRODUCTNAME-makrot"
+msgstr "%PRODUCTNAME -makrot"
 
 #: basicide/basidesh.src#RID_STR_SHAREDIALOGS.STRING.TEXT
 msgid  "%PRODUCTNAME Dialogs"
-msgstr "%PRODUCTNAME-valintaikkunat"
+msgstr "%PRODUCTNAME -valintaikkunat"
 
 #: basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.STRING.TEXT
 msgid  "%PRODUCTNAME Macros & Dialogs"
-msgstr "%PRODUCTNAME-makrot ja -valintaikkunat"
+msgstr "%PRODUCTNAME -makrot ja -valintaikkunat"
 
 #: basicide/basidesh.src#RID_POPUP_BRKPROPS.MENU.TEXT
 msgid  "Properties"
@@ -379,29 +339,13 @@ msgstr "BASIC-valintaikkuna"
 msgid  "Delete"
 msgstr "Poista"
 
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
-msgid  "Rename"
-msgstr "Nimeä uudelleen"
-
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
-msgid  "Hide"
-msgstr "Piilota"
-
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
 msgid  "Modules..."
 msgstr "Moduulit..."
 
-#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
-msgid  "Do you want to overwrite the XX macro?"
-msgstr "Haluatko korvata makron XX?"
-
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
 msgid  "<Not localized>"
 msgstr "<Ei lokalisoitu>"
-
-#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
-msgid  "[Default Language]"
-msgstr "[Oletuskieli]"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 msgid  "Document Objects"
@@ -419,10 +363,6 @@ msgstr "Moduulit"
 msgid  "Class Modules"
 msgstr "Luokkamoduulit"
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
-msgid  "Replace"
-msgstr "Korvaa"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
 msgid  "Dialog Import - Name already used"
 msgstr "Valintaikkunan tuonti - Nimi on jo käytössä"
@@ -431,14 +371,6 @@ msgstr "Valintaikkunan tuonti - Nimi on jo käytössä"
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
 msgstr "Kirjastossa on jo valintaikkuna nimellä:\n\n$(ARG1)\n\nAnna valintaikkunalle uusi nimi säilyttääksesi nykyisen valintaikkunan, tai korvaa nykyinen valintaikkuna.\n "
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "Lisää"
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
-msgid  "Omit"
-msgstr "Jätä pois"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
 msgid  "Dialog Import - Language Mismatch"
 msgstr "Valintaikkunan tuonti - Kielet"
@@ -446,10 +378,6 @@ msgstr "Valintaikkunan tuonti - Kielet"
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
 msgstr "Tuotava valintaikkuna tukee eri kieliä kuin kohteena oleva kirjasto.\n\nLisää nämä kielet kirjastoon säilyttääksesi valintaikkunan kieliresurssit, tai jätä ne pois, jos et halua muuttaa kohdekirjaston kieliä. \n\nHuomaa, että niille kirjaston kielille, joita valintaikkuna ei tue, käytetään valintaikkunan oletuskieltä.\n "
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
-msgid  "New"
-msgstr "Uusi"
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
 msgid  "Delete"
@@ -462,14 +390,6 @@ msgstr "Aktiivinen"
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FIXEDTEXT.TEXT
 msgid  "Pass Count:"
 msgstr "Kertojen #:"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
-msgid  "Breakpoints"
-msgstr "Keskeytyspisteet"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
-msgid  "Manage Breakpoints"
-msgstr "Keskeytyspisteiden hallinta"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME Basic Macros"
@@ -527,10 +447,6 @@ msgstr "~Poista"
 msgid  "~Organizer..."
 msgstr "~Järjestele..."
 
-#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
-msgid  "Macro"
-msgstr "Makro"
-
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 msgid  "~New"
 msgstr "~Uusi"
@@ -538,10 +454,6 @@ msgstr "~Uusi"
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
 msgid  "Choose"
 msgstr "Valitse"
-
-#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "Suorita"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
 msgid  "~Save"
@@ -647,10 +559,6 @@ msgstr "Lisäosa"
 msgid  "Description"
 msgstr "Kuvaus"
 
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
-msgid  "Help information"
-msgstr "Ohjetiedot"
-
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
 msgid  "Help ID"
 msgstr "Ohjetunnus"
@@ -658,14 +566,6 @@ msgstr "Ohjetunnus"
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FIXEDTEXT.TEXT
 msgid  "Help file name"
 msgstr "Ohjetiedoston nimi"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
-msgid  "Objects"
-msgstr "Objektit"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
-msgid  "Show"
-msgstr "Näytä"
 
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
@@ -691,17 +591,9 @@ msgstr "Hallinnoi käyttöliittymäkieliä [$1]"
 msgid  "Present Languages"
 msgstr "Nykyiset kielet"
 
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "Lisää..."
-
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
 msgid  "Delete"
 msgstr "Poista"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
-msgid  "Default"
-msgstr "Oletus"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
@@ -710,10 +602,6 @@ msgstr "Oletuskieltä käytetään, jos lokalisoitua käyttöliittymää ei ole 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
 msgid  "~Close"
 msgstr "~Sulje"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
-msgid  "[Default Language]"
-msgstr "[Oletuskieli]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
 msgid  "~Delete"
@@ -727,13 +615,13 @@ msgstr "<Paina 'Lisää' luodaksesi kieliresurssit>"
 msgid  "Delete Language Resources"
 msgstr "Poista kieliresurssit"
 
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr "Olet poistamassa valittuun kieleen tai kieliin liittyviä resursseja. Kielen kaikki käyttöliittymämerkkijonot poistetaan.\n\nHaluatko varmasti poistaa valittuun kieleen tai kieliin liittyvät resurssit?"
+
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 msgid  "Set Default User Interface Language"
 msgstr "Aseta käyttöliittymän oletuskieli"
-
-#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
-msgid  "Default language"
-msgstr "Oletuskieli"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."

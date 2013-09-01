@@ -43,17 +43,9 @@ msgstr "~Complementu (add-on) - Ayuda"
 msgid  "All"
 msgstr "Too"
 
-#: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
-msgstr "~Anovar"
-
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
 msgid  "~Close & Return to "
 msgstr "~Pesllar y tornar a "
-
-#: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
-msgid  "Visible ~Buttons"
-msgstr "Botones ~visibles"
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
 msgid  "~Customize Toolbar..."
@@ -79,9 +71,13 @@ msgstr "Zarrar la barra de ferramien~tes"
 msgid  "Save Copy ~as..."
 msgstr "Grab~ar Copia como..."
 
-#: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
-msgid  "No Documents"
-msgstr "Ensin documentos"
+#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
+msgid  "Clear List"
+msgstr "Llimpiar llista"
+
+#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
+msgid  "Clears the list with the most recently opened files. This action can not be undone."
+msgstr "Llimpiar la llista de ficheros abiertos de recién. Esta aición nun pue desfacese."
 
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
 msgid  "Add-On %num%"
@@ -115,17 +111,9 @@ msgstr "2."
 msgid  "Accept the License Agreement."
 msgstr "Aceptar el Contratu de Llicencia."
 
-#: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
-msgstr "~Aceutar"
-
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
 msgstr "Refugar"
-
-#: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
-msgid  "Retry"
-msgstr "Reintentar"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"

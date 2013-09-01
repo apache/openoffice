@@ -47,6 +47,10 @@ msgstr "Y"
 msgid  "OR"
 msgstr "O"
 
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_XOR.STRING.TEXT
+msgid  "XOR"
+msgstr "XO"
+
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NOT.STRING.TEXT
 msgid  "NOT"
 msgstr "NO"
@@ -159,6 +163,22 @@ msgstr "ATANH"
 msgid  "ACOTH"
 msgstr "ACOTH"
 
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.STRING.TEXT
+msgid  "CSC"
+msgstr "CSC"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.STRING.TEXT
+msgid  "SEC"
+msgstr "SEC"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.STRING.TEXT
+msgid  "CSCH"
+msgstr "CSCH"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.STRING.TEXT
+msgid  "SECH"
+msgstr "SECH"
+
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.STRING.TEXT
 msgid  "EXP"
 msgstr "EXP"
@@ -185,7 +205,7 @@ msgstr "MES"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_DAY.STRING.TEXT
 msgid  "DAY"
-msgstr "DÍA"
+msgstr "DIA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_HOUR.STRING.TEXT
 msgid  "HOUR"
@@ -249,11 +269,11 @@ msgstr "ESREF"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_VALUE.STRING.TEXT
 msgid  "ISNUMBER"
-msgstr "ESNÚMERO"
+msgstr "ESNUMERO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_FORMULA.STRING.TEXT
 msgid  "ISFORMULA"
-msgstr "ESFÓRMULA"
+msgstr "ESFORMULA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_NV.STRING.TEXT
 msgid  "ISNA"
@@ -269,11 +289,11 @@ msgstr "ESERROR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_EVEN.STRING.TEXT
 msgid  "ISEVEN"
-msgstr "ESPAR"
+msgstr "ES.PAR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_IS_ODD.STRING.TEXT
 msgid  "ISODD"
-msgstr "ESIMPAR"
+msgstr "ES.IMPAR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_N.STRING.TEXT
 msgid  "N"
@@ -281,15 +301,15 @@ msgstr "N"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_DATE_VALUE.STRING.TEXT
 msgid  "DATEVALUE"
-msgstr "FECHANÚMERO"
+msgstr "FECHANUMERO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_TIME_VALUE.STRING.TEXT
 msgid  "TIMEVALUE"
-msgstr "HORANÚMERO"
+msgstr "HORANUMERO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CODE.STRING.TEXT
 msgid  "CODE"
-msgstr "CÓDIGO"
+msgstr "CODIGO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TRIM.STRING.TEXT
 msgid  "TRIM"
@@ -297,7 +317,7 @@ msgstr "REDUCIR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_UPPER.STRING.TEXT
 msgid  "UPPER"
-msgstr "MAYÚSC"
+msgstr "MAYUSC"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PROPPER.STRING.TEXT
 msgid  "PROPER"
@@ -305,7 +325,7 @@ msgstr "NOMPROPIO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOWER.STRING.TEXT
 msgid  "LOWER"
-msgstr "MINÚSC"
+msgstr "MINUSC"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LEN.STRING.TEXT
 msgid  "LEN"
@@ -325,7 +345,7 @@ msgstr "LIMPIAR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CHAR.STRING.TEXT
 msgid  "CHAR"
-msgstr "CARÁCTER"
+msgstr "CARACTER"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_JIS.STRING.TEXT
 msgid  "JIS"
@@ -381,11 +401,11 @@ msgstr "TIPO.DE.ERROR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FORMULA.STRING.TEXT
 msgid  "FORMULA"
-msgstr "FÓRMULA"
+msgstr "FORMULA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARABIC.STRING.TEXT
 msgid  "ARABIC"
-msgstr "ÁRABE"
+msgstr "ARABE"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_TAN_2.STRING.TEXT
 msgid  "ATAN2"
@@ -393,11 +413,11 @@ msgstr "ATAN2"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CEIL.STRING.TEXT
 msgid  "CEILING"
-msgstr "MÚLTIPLO.SUPERIOR"
+msgstr "MULTIPLO.SUPERIOR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FLOOR.STRING.TEXT
 msgid  "FLOOR"
-msgstr "MÚLTIPLO.INFERIOR"
+msgstr "MULTIPLO.INFERIOR"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ROUND.STRING.TEXT
 msgid  "ROUND"
@@ -473,19 +493,19 @@ msgstr "DIAS360"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIN.STRING.TEXT
 msgid  "MIN"
-msgstr "MÍN"
+msgstr "MIN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIN_A.STRING.TEXT
 msgid  "MINA"
-msgstr "MÍNA"
+msgstr "MINA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MAX.STRING.TEXT
 msgid  "MAX"
-msgstr "MÁX"
+msgstr "MAX"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MAX_A.STRING.TEXT
 msgid  "MAXA"
-msgstr "MÁXA"
+msgstr "MAXA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM.STRING.TEXT
 msgid  "SUM"
@@ -617,7 +637,7 @@ msgstr "DVS"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LAUFZ.STRING.TEXT
 msgid  "DURATION"
-msgstr "DURACIÓN"
+msgstr "DURACION"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LIA.STRING.TEXT
 msgid  "SLN"
@@ -717,11 +737,11 @@ msgstr "BDEXTRAER"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_MAX.STRING.TEXT
 msgid  "DMAX"
-msgstr "BDMÁX"
+msgstr "BDMAX"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_MIN.STRING.TEXT
 msgid  "DMIN"
-msgstr "BDMÍN"
+msgstr "BDMIN"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_DB_PRODUCT.STRING.TEXT
 msgid  "DPRODUCT"
@@ -749,7 +769,7 @@ msgstr "INDIRECTO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ADDRESS.STRING.TEXT
 msgid  "ADDRESS"
-msgstr "DIRECCIÓN"
+msgstr "DIRECCION"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MATCH.STRING.TEXT
 msgid  "MATCH"
@@ -766,6 +786,22 @@ msgstr "CONTAR.SI"
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_IF.STRING.TEXT
 msgid  "SUMIF"
 msgstr "SUMAR.SI"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IF.STRING.TEXT
+msgid  "AVERAGEIF"
+msgstr "PROMEDIO.SI"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_IFS.STRING.TEXT
+msgid  "SUMIFS"
+msgstr "SUMAR.SIS"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IFS.STRING.TEXT
+msgid  "AVERAGEIFS"
+msgstr "PROMEDIO.SIS"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_IFS.STRING.TEXT
+msgid  "COUNTIFS"
+msgstr "CONTAR.SIS"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOOKUP.STRING.TEXT
 msgid  "LOOKUP"
@@ -789,11 +825,11 @@ msgstr "DESREF"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_INDEX.STRING.TEXT
 msgid  "INDEX"
-msgstr "ÍNDICE"
+msgstr "INDICE"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AREAS.STRING.TEXT
 msgid  "AREAS"
-msgstr "ÁREAS"
+msgstr "AREAS"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CURRENCY.STRING.TEXT
 msgid  "DOLLAR"
@@ -830,6 +866,22 @@ msgstr "HALLAR"
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MID.STRING.TEXT
 msgid  "MID"
 msgstr "MID"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LENB.STRING.TEXT
+msgid  "LENB"
+msgstr "LARGOB"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RIGHTB.STRING.TEXT
+msgid  "RIGHTB"
+msgstr "DERECHAB"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LEFTB.STRING.TEXT
+msgid  "LEFTB"
+msgstr "IZQUIERDAB"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIDB.STRING.TEXT
+msgid  "MIDB"
+msgstr "MIDB"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TEXT.STRING.TEXT
 msgid  "TEXT"
@@ -921,7 +973,7 @@ msgstr "MEDIA.GEOM"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_STANDARD.STRING.TEXT
 msgid  "STANDARDIZE"
-msgstr "NORMALIZACIÓN"
+msgstr "NORMALIZACION"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVE_DEV.STRING.TEXT
 msgid  "AVEDEV"
@@ -953,7 +1005,7 @@ msgstr "PRUEBA.T"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RANK.STRING.TEXT
 msgid  "RANK"
-msgstr "JERARQUÍA"
+msgstr "JERARQUIA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_PERCENTILE.STRING.TEXT
 msgid  "PERCENTILE"
@@ -1017,7 +1069,7 @@ msgstr "COEFICIENTE.R2"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_STEYX.STRING.TEXT
 msgid  "STEYX"
-msgstr "ERROR.TÍPICO.XY"
+msgstr "ERROR.TIPICO.XY"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SLOPE.STRING.TEXT
 msgid  "SLOPE"
@@ -1025,7 +1077,7 @@ msgstr "PENDIENTE"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_INTERCEPT.STRING.TEXT
 msgid  "INTERCEPT"
-msgstr "INTERSECCIÓN.EJE"
+msgstr "INTERSECCION.EJE"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TREND.STRING.TEXT
 msgid  "TREND"
@@ -1037,15 +1089,15 @@ msgstr "CRECIMIENTO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RGP.STRING.TEXT
 msgid  "LINEST"
-msgstr "ESTIMACIÓN.LINEAL"
+msgstr "ESTIMACION.LINEAL"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RKP.STRING.TEXT
 msgid  "LOGEST"
-msgstr "ESTIMACIÓN.LOGARÍTMICA"
+msgstr "ESTIMACION.LOGARITMICA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_FORECAST.STRING.TEXT
 msgid  "FORECAST"
-msgstr "PRONÓSTICO"
+msgstr "PRONOSTICO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_CHI_INV.STRING.TEXT
 msgid  "CHIINV"
@@ -1097,7 +1149,7 @@ msgstr "DOMINGOPASCUA"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_GET_DAY_OF_WEEK.STRING.TEXT
 msgid  "WEEKDAY"
-msgstr "DÍASEM"
+msgstr "DIASEM"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NO_NAME.STRING.TEXT
 msgid  "#NAME!"
@@ -1129,7 +1181,7 @@ msgstr "ROMANO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_HYPERLINK.STRING.TEXT
 msgid  "HYPERLINK"
-msgstr "HIPERVÍNCULO"
+msgstr "HIPERVINCULO"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_INFO.STRING.TEXT
 msgid  "INFO"
@@ -1233,7 +1285,7 @@ msgstr "Fór~mula"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_RESULT.FIXEDTEXT.TEXT
 msgid  "Function result"
-msgstr "Resultado de Función"
+msgstr "Resultado de función"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_FORMULA_RESULT.FIXEDTEXT.TEXT
 msgid  "Result"
@@ -1241,7 +1293,7 @@ msgstr "Resultado"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_MATRIX.CHECKBOX.TEXT
 msgid  "Array"
-msgstr "Matríz"
+msgstr "Arreglo"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.RB_REF.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Maximize"
@@ -1249,7 +1301,7 @@ msgstr "Maximizar"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_BACKWARD.PUSHBUTTON.TEXT
 msgid  "<< ~Back"
-msgstr "<< ~Volver"
+msgstr "<< ~Anterior"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_FORWARD.PUSHBUTTON.TEXT
 msgid  "~Next >>"
@@ -1257,15 +1309,15 @@ msgstr "~Siguiente >>"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE1.STRING.TEXT
 msgid  "Function Wizard"
-msgstr "Asistente de Funciones"
+msgstr "Asistente de función"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE2.STRING.TEXT
 msgid  "Function Wizard  -"
-msgstr "Asistente de Función  -"
+msgstr "Asistente de función -"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_END.STRING.TEXT
 msgid  "~End"
-msgstr "~Fin"
+msgstr "~Fín"
 
 #: ui/dlg/parawin.src#RB_ARGBLOCK(_Y_).#DEFINE.QUICKHELPTEXT
 msgid  "Select"

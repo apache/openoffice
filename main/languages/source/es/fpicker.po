@@ -31,93 +31,21 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Create New Directory"
-msgstr "Crear nuevo directorio"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_LISTVIEW.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "List"
-msgstr "Lista"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_DETAILSVIEW.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Details"
-msgstr "Detalles"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_UP.MENUBUTTON.QUICKHELPTEXT
-msgid  "Up One Level"
-msgstr "Subir un nivel"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_STANDARD.MENUBUTTON.QUICKHELPTEXT
-msgid  "Default Directory"
-msgstr "Directorio predeterminado"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
-msgid  "File ~name:"
-msgstr "~Nombre del archivo:"
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILETYPE.FIXEDTEXT.TEXT
 msgid  "File ~type:"
 msgstr "~Tipo de archivo:"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_READONLY.CHECKBOX.TEXT
-msgid  "~Read-only"
-msgstr "Sólo ~lectura"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_PASSWORD.CHECKBOX.TEXT
 msgid  "Save with password"
 msgstr "Guardar con contraseña"
 
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_AUTO_EXTENSION.CHECKBOX.TEXT
-msgid  "~Automatic file name extension"
-msgstr "Extensión de archivo ~automática"
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_OPTIONS.CHECKBOX.TEXT
 msgid  "Edit ~filter settings"
 msgstr "Editar ~configuración de filtros"
 
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_OPEN.PUSHBUTTON.TEXT
-msgid  "~Open"
-msgstr "~Abrir"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_OPEN.STRING.TEXT
-msgid  "Open"
-msgstr "Abrir"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_SAVE.STRING.TEXT
-msgid  "Save as"
-msgstr "Guardar como"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_BUTTONSAVE.STRING.TEXT
-msgid  "~Save"
-msgstr "~Guardar"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHNAME.STRING.TEXT
-msgid  "~Path:"
-msgstr "~Ruta:"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHSELECT.STRING.TEXT
-msgid  "Select path"
-msgstr "Seleccionar ruta"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_BUTTONSELECT.STRING.TEXT
-msgid  "~Select"
-msgstr "Seleccionar"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_ACTUALVERSION.STRING.TEXT
-msgid  "Current version"
-msgstr "Versión actual"
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PREVIEW.STRING.TEXT
 msgid  "File Preview"
 msgstr "Vista preliminar del archivo"
-
-#: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FT_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDTEXT.TEXT
-msgid  "Na~me"
-msgstr "~Nombre"
-
-#: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FL_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDLINE.TEXT
-msgid  "Create new folder"
-msgstr "Crear nueva carpeta"
 
 #: office/iodlg.src#RID_FILEOPEN_INVALIDFOLDER.STRING.TEXT
 msgid  "$name$ does not exist."
@@ -127,17 +55,9 @@ msgstr "$name$ no existe."
 msgid  "The file $name$ does not exist.\nMake sure you have entered the correct file name."
 msgstr "No existe el archivo $name$.\nCompruebe si ha introducido el nombre correcto."
 
-#: office/iodlg.src#STR_FILTERNAME_ALL.STRING.TEXT
-msgid  "All files (*.*)"
-msgstr "Todos los archivos (*.*)"
-
 #: office/iodlg.src#STR_SVT_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
 msgstr "El archivo ya existe. ¿Desea sobrescribirlo?"
-
-#: office/iodlg.src#STR_SVT_NEW_FOLDER.STRING.TEXT
-msgid  "Folder"
-msgstr "Carpeta"
 
 #: office/iodlg.src#STR_SVT_NOREMOVABLEDEVICE.STRING.TEXT
 msgid  "No removable storage device detected.\nMake sure it is plugged in properly and try again."
@@ -147,57 +67,21 @@ msgstr "No se ha detectado un dispositivo de almacenamiento extraíble.\nAsegúr
 msgid  "All Formats"
 msgstr "Todos los formatos"
 
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_AUTO_EXTENSION.STRING.TEXT
-msgid  "~Automatic file name extension"
-msgstr "Extensión de archivo ~automática"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_PASSWORD.STRING.TEXT
-msgid  "Save with pass~word"
-msgstr "Guardar con c~ontraseña"
-
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_OPTIONS.STRING.TEXT
 msgid  "~Edit filter settings"
 msgstr "~Editar configuración de filtros"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_READONLY.STRING.TEXT
-msgid  "~Read-only"
-msgstr "Sólo ~lectura"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_INSERT_AS_LINK.STRING.TEXT
-msgid  "~Link"
-msgstr "~Vincular"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_SHOW_PREVIEW.STRING.TEXT
-msgid  "Pr~eview"
-msgstr "~Previsualización"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_PLAY.STRING.TEXT
 msgid  "~Play"
 msgstr "~Reproducir"
 
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_VERSION.STRING.TEXT
-msgid  "~Version:"
-msgstr "~Versión:"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_TEMPLATES.STRING.TEXT
-msgid  "S~tyles:"
-msgstr "Es~tilos:"
-
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_IMAGE_TEMPLATE.STRING.TEXT
 msgid  "Style:"
 msgstr "Estilo:"
 
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_SELECTION.STRING.TEXT
-msgid  "~Selection"
-msgstr "~Selección"
-
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_TITLE.STRING.TEXT
 msgid  "File ~type:"
 msgstr "~Tipo de archivo:"
-
-#: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_TITLE.STRING.TEXT
-msgid  "Select Path"
-msgstr "Seleccionar ruta"
 
 #: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_DESCRIPTION.STRING.TEXT
 msgid  "Please select a folder."

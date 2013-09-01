@@ -31,55 +31,1383 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: euro/euro.src#STEP_ZERO.STRING.TEXT
+msgid  "~Cancel"
+msgstr "Ά~κυρο"
+
+#: euro/euro.src#STEP_ZERO___1.STRING.TEXT
+msgid  "~Help"
+msgstr "~Βοήθεια"
+
+#: euro/euro.src#STEP_ZERO___2.STRING.TEXT
+msgid  "<<~Back"
+msgstr "<<~Πίσω"
+
+#: euro/euro.src#STEP_ZERO___3.STRING.TEXT
+msgid  "~Convert"
+msgstr "~Μετατροπή"
+
+#: euro/euro.src#STEP_ZERO___4.STRING.TEXT
+msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
+msgstr "Συμβουλή: Δεν είναι δυνατή η μετατροπή ενός ποσού που είναι συνδεδεμένο με εξωτερικές αναφορές, όπως και η μετατροπή παραγόντων μετατροπής νομισμάτων σε τύπους."
+
+#: euro/euro.src#STEP_ZERO___5.STRING.TEXT
+msgid  "First, unprotect all sheets."
+msgstr "Πρώτα, καταργήστε την προστασία όλων των φύλλων."
+
+#: euro/euro.src#STEP_ZERO___6.STRING.TEXT
+msgid  "Currencies:"
+msgstr "Νομίσματα:"
+
+#: euro/euro.src#STEP_ZERO___7.STRING.TEXT
+msgid  "C~ontinue>>"
+msgstr "Σ~υνέχεια>>"
+
+#: euro/euro.src#STEP_ZERO___8.STRING.TEXT
+msgid  "C~lose"
+msgstr "~Κλείσιμο"
+
+#: euro/euro.src#STEP_CONVERTER.STRING.TEXT
+msgid  "~Entire document"
+msgstr "~Ολόκληρο έγγραφο"
+
+#: euro/euro.src#STEP_CONVERTER___1.STRING.TEXT
+msgid  "Selection"
+msgstr "Επιλογή"
+
+#: euro/euro.src#STEP_CONVERTER___2.STRING.TEXT
+msgid  "Cell S~tyles"
+msgstr "Πρότυπα ~κελιών"
+
+#: euro/euro.src#STEP_CONVERTER___3.STRING.TEXT
+msgid  "Currency cells in the current ~sheet"
+msgstr "Κελιά νομίσματος στο τρέχον ~φύλλο"
+
+#: euro/euro.src#STEP_CONVERTER___4.STRING.TEXT
+msgid  "Currency cells in the entire ~document"
+msgstr "Κελιά νομίσματος σε ολόκληρο το ~αρχείο"
+
+#: euro/euro.src#STEP_CONVERTER___5.STRING.TEXT
+msgid  "~Selected range"
+msgstr "~Επιλεγμένη περιοχή"
+
+#: euro/euro.src#STEP_CONVERTER___6.STRING.TEXT
+msgid  "Select Cell Styles"
+msgstr "Επιλογή πρότυπων κελιών"
+
+#: euro/euro.src#STEP_CONVERTER___7.STRING.TEXT
+msgid  "Select currency cells"
+msgstr "Επιλογή κελιών νομισμάτων"
+
+#: euro/euro.src#STEP_CONVERTER___8.STRING.TEXT
+msgid  "Currency ranges:"
+msgstr "Διακυμάνσεις νομίσματος:"
+
+#: euro/euro.src#STEP_CONVERTER___9.STRING.TEXT
+msgid  "Templates:"
+msgstr "Πρότυπα:"
+
+#: euro/euro.src#STEP_AUTOPILOT.STRING.TEXT
+msgid  "Extent"
+msgstr "Εύρος"
+
+#: euro/euro.src#STEP_AUTOPILOT___1.STRING.TEXT
+msgid  "~Single %PRODUCTNAME Calc document"
+msgstr "Μ~εμονωμένο έγγραφο του %PRODUCTNAME Calc"
+
+#: euro/euro.src#STEP_AUTOPILOT___2.STRING.TEXT
+msgid  "Complete ~directory"
+msgstr "~Ολόκληρος κατάλογος"
+
+#: euro/euro.src#STEP_AUTOPILOT___3.STRING.TEXT
+msgid  "Source Document:"
+msgstr "Έγγραφο προέλευσης:"
+
+#: euro/euro.src#STEP_AUTOPILOT___4.STRING.TEXT
+msgid  "Source directory:"
+msgstr "Κατάλογος προέλευσης:"
+
+#: euro/euro.src#STEP_AUTOPILOT___5.STRING.TEXT
+msgid  "~Including subfolders"
+msgstr "~Συμπεριλαμβανομένων των υποκαταλόγων"
+
+#: euro/euro.src#STEP_AUTOPILOT___6.STRING.TEXT
+msgid  "Target directory:"
+msgstr "Κατάλογος προορισμού:"
+
+#: euro/euro.src#STEP_AUTOPILOT___7.STRING.TEXT
+msgid  "Temporarily unprotect sheet without query"
+msgstr "Προσωρινή κατάργηση προστασίας φύλλου χωρίς διευκρίνιση"
+
+#: euro/euro.src#STEP_AUTOPILOT___10.STRING.TEXT
+msgid  "Also convert fields and tables in text documents"
+msgstr "Μετατροπή πεδίων και πινάκων σε έγγραφα κειμένου"
+
+#: euro/euro.src#STATUSLINE.STRING.TEXT
+msgid  "Conversion status: "
+msgstr "Πρόοδος της μετατροπής: "
+
+#: euro/euro.src#STATUSLINE___1.STRING.TEXT
+msgid  "Conversion status of the cell templates:"
+msgstr "Πρόοδος της μετατροπής για τα πρότυπα κελιών:"
+
+#: euro/euro.src#STATUSLINE___2.STRING.TEXT
+msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr "Καταγραφή των συναφών περιοχών προς μετατροπή: Φύλλο %1Number%1 από %2TotPageCount%2"
+
+#: euro/euro.src#STATUSLINE___3.STRING.TEXT
+msgid  "Entry of the ranges to be converted..."
+msgstr "Καταγραφή των περιοχών που πρόκειται να μετατραπούν..."
+
+#: euro/euro.src#STATUSLINE___4.STRING.TEXT
+msgid  "Sheet protection for each sheet will be restored..."
+msgstr "Επαναφορά της προστασίας για κάθε φύλλο..."
+
+#: euro/euro.src#STATUSLINE___5.STRING.TEXT
+msgid  "Conversion of the currency units in the cell templates..."
+msgstr "Μετατροπή των νομισματικών μονάδων στα πρότυπα κελιών..."
+
+#: euro/euro.src#MESSAGES.STRING.TEXT
+msgid  "~Finish"
+msgstr "~Τέλος"
+
+#: euro/euro.src#MESSAGES___1.STRING.TEXT
+msgid  "Select directory"
+msgstr "Επιλογή κατάλογο"
+
+#: euro/euro.src#MESSAGES___2.STRING.TEXT
+msgid  "Select file"
+msgstr "Επιλέξτε αρχείο"
+
+#: euro/euro.src#MESSAGES___3.STRING.TEXT
+msgid  "Select target directory"
+msgstr "Επιλέξτε τον κατάλογο του στόχου"
+
+#: euro/euro.src#MESSAGES___4.STRING.TEXT
+msgid  "non-existant"
+msgstr "δεν υπάρχει"
+
+#: euro/euro.src#MESSAGES___5.STRING.TEXT
+msgid  "Euro Converter"
+msgstr "Μετατροπέας Ευρώ"
+
+#: euro/euro.src#MESSAGES___6.STRING.TEXT
+msgid  "Should protected spreadsheets be temporarily unprotected?"
+msgstr "Θέλετε να καταργηθεί προσωρινά η προστασία όλων των φύλλων;"
+
+#: euro/euro.src#MESSAGES___7.STRING.TEXT
+msgid  "Enter the password to unprotect the table %1TableName%1"
+msgstr "Εισάγετε τον κωδικό για να καταργήσετε την προστασία του πίνακα %1TableName%1"
+
+#: euro/euro.src#MESSAGES___8.STRING.TEXT
+msgid  "Wrong Password!"
+msgstr "Λανθασμένος κωδικός!"
+
+#: euro/euro.src#MESSAGES___9.STRING.TEXT
+msgid  "Protected Sheet"
+msgstr "Προστατευόμενο φύλλο"
+
+#: euro/euro.src#MESSAGES___10.STRING.TEXT
+msgid  "Warning!"
+msgstr "Προειδοποίηση!"
+
+#: euro/euro.src#MESSAGES___11.STRING.TEXT
+msgid  "Protection for the sheets will not be removed."
+msgstr "Δεν θα καταργηθεί η προστασία των φύλλων."
+
+#: euro/euro.src#MESSAGES___12.STRING.TEXT
+msgid  "Sheet cannot be unprotected"
+msgstr "Δεν θα γίνει κατάργηση της προστασίας του φύλλου"
+
+#: euro/euro.src#MESSAGES___13.STRING.TEXT
+msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
+msgstr "Η επεξεργασία αυτού του εγγράφου με τον Αυτόματο Πιλότο δεν είναι δυνατή, επειδή δεν μπορεί να εκτελεστεί η τροποποίηση πρότυπων κελιών σε έγγραφα με προστατευόμενα υπολογιστικά φύλλα."
+
+#: euro/euro.src#MESSAGES___14.STRING.TEXT
+msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
+msgstr "Παρακαλώ προσέξτε ότι διαφορετικά δεν θα είναι δυνατόν να γίνει επεξεργασία του εγγράφου αυτού από τον Μετατροπέα του Ευρώ!"
+
+#: euro/euro.src#MESSAGES___15.STRING.TEXT
+msgid  "Please choose a currency to be converted first!"
+msgstr "Παρακαλώ επιλέξτε πρώτα ένα νόμισμα πριν την έναρξη της μετατροπής!"
+
+#: euro/euro.src#MESSAGES___16.STRING.TEXT
+msgid  "Password:"
+msgstr "Κωδικός πρόσβασης:"
+
+#: euro/euro.src#MESSAGES___17.STRING.TEXT
+msgid  "OK"
+msgstr "OK"
+
+#: euro/euro.src#MESSAGES___18.STRING.TEXT
+msgid  "Cancel"
+msgstr "Ακύρωση"
+
+#: euro/euro.src#MESSAGES___19.STRING.TEXT
+msgid  "Please select a %PRODUCTNAME Calc document for editing!"
+msgstr "Παρακαλώ επιλέξτε για την επεξεργασία ένα έγγραφο του %PRODUCTNAME Calc!"
+
+#: euro/euro.src#MESSAGES___20.STRING.TEXT
+msgid  "'<1>' is not a directory!"
+msgstr "'<1>' δεν είναι κατάλογος!"
+
+#: euro/euro.src#MESSAGES___21.STRING.TEXT
+msgid  "Document is read-only!"
+msgstr "Το έγγραφο είναι μόνο για ανάγνωση!"
+
+#: euro/euro.src#MESSAGES___22.STRING.TEXT
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Το αρχείο '<1>' υπάρχει ήδη.<CR>Θέλετε να το αντικαταστήσετε;"
+
+#: euro/euro.src#MESSAGES___23.STRING.TEXT
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "Είστε βέβαιοι ότι θέλετε να τερματίσετε τη μετατροπή σε αυτό το σημείο;"
+
+#: euro/euro.src#MESSAGES___24.STRING.TEXT
+msgid  "Cancel Wizard"
+msgstr "Ακύρωση πιλότου"
+
+#: euro/euro.src#CURRENCIES.STRING.TEXT
+msgid  "Portuguese Escudo"
+msgstr "Εσκούδο Πορτογαλίας"
+
+#: euro/euro.src#CURRENCIES___1.STRING.TEXT
+msgid  "Dutch Guilder"
+msgstr "Φιορίνι Ολλανδίας"
+
+#: euro/euro.src#CURRENCIES___2.STRING.TEXT
+msgid  "French Franc"
+msgstr "Φράγκο Γαλλίας"
+
+#: euro/euro.src#CURRENCIES___3.STRING.TEXT
+msgid  "Spanish Peseta"
+msgstr "Πεσέτα Ισπανίας"
+
+#: euro/euro.src#CURRENCIES___4.STRING.TEXT
+msgid  "Italian Lira"
+msgstr "Λιρέτα Ιταλίας"
+
+#: euro/euro.src#CURRENCIES___5.STRING.TEXT
+msgid  "German Mark"
+msgstr "Μάρκο Γερμανίας"
+
+#: euro/euro.src#CURRENCIES___6.STRING.TEXT
+msgid  "Belgian Franc"
+msgstr "Φράγκο Βελγίου"
+
+#: euro/euro.src#CURRENCIES___7.STRING.TEXT
+msgid  "Irish Punt"
+msgstr "Λίρα Ιρλανδίας"
+
+#: euro/euro.src#CURRENCIES___8.STRING.TEXT
+msgid  "Luxembourg Franc"
+msgstr "Φράγκο Λουξεμβούργου"
+
+#: euro/euro.src#CURRENCIES___9.STRING.TEXT
+msgid  "Austrian Schilling"
+msgstr "Σελλίνι Αυστρίας"
+
+#: euro/euro.src#CURRENCIES___10.STRING.TEXT
+msgid  "Finnish Mark"
+msgstr "Μάρκο Φινλανδίας"
+
+#: euro/euro.src#CURRENCIES___11.STRING.TEXT
+msgid  "Greek Drachma"
+msgstr "Δραχμή Ελλάδος"
+
+#: euro/euro.src#CURRENCIES___12.STRING.TEXT
+msgid  "Slovenian Tolar"
+msgstr "Δολάριο Σλοβενίας"
+
+#: euro/euro.src#CURRENCIES___13.STRING.TEXT
+msgid  "Cypriot Pound"
+msgstr "Κυπριακή λίρα"
+
+#: euro/euro.src#CURRENCIES___14.STRING.TEXT
+msgid  "Maltese Lira"
+msgstr "Λίρα Μάλτας"
+
+#: euro/euro.src#CURRENCIES___15.STRING.TEXT
+msgid  "Slovak Koruna"
+msgstr "Κορώνα Σλοβακίας"
+
+#: euro/euro.src#CURRENCIES___16.STRING.TEXT
+msgid  "The currency set for the document is not a European currency!"
+msgstr "Το σύνολο νομισμάτων για το έγγραφο δεν είναι ευρωπαϊκό νόμισμα!"
+
+#: euro/euro.src#CURRENCIES___17.STRING.TEXT
+msgid  "The language set for your operating system is not a language of the European Monetary Union."
+msgstr "Η γλώσσα την οποία επιλέξατε για το λειτουργικό σας σύστημα δεν είναι γλώσσα της ευρωπαϊκής νομισματικής ένωσης."
+
+#: euro/euro.src#STEP_LASTPAGE.STRING.TEXT
+msgid  "Progress"
+msgstr "Πρόοδος εργασίας"
+
+#: euro/euro.src#STEP_LASTPAGE___1.STRING.TEXT
+msgid  "Retrieving the relevant documents..."
+msgstr "Ανάκτηση των σχετικών εγγράφων..."
+
+#: euro/euro.src#STEP_LASTPAGE___2.STRING.TEXT
+msgid  "Converting the documents..."
+msgstr "Μετατροπή των εγγράφων..."
+
+#: euro/euro.src#STEP_LASTPAGE___3.STRING.TEXT
+msgid  "Settings:"
+msgstr "Ρυθμίσεις:"
+
+#: euro/euro.src#STEP_LASTPAGE___4.STRING.TEXT
+msgid  "Sheet is always unprotected"
+msgstr "Πάντα κατάργηση της προστασίας του φύλλου"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___0.STRING.TEXT
+msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
+msgstr "Αδυναμία δημιουργίας του '%1' καταλόγου.<BR>Ίσως δεν υπάρχει αρκετός χώρος στο δίσκο."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___1.STRING.TEXT
+msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
+msgstr "Αδυναμία δημιουργίας του εγγράφου κειμένου.<BR>Παρακαλώ ελέγξτε ότι το άρθρωμα 'PRODUCTNAME Writer' έχει εγκατασταθεί."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___2.STRING.TEXT
+msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
+msgstr "Αδυναμία δημιουργίας του λογιστικού φύλλου.<BR>Παρακαλώ ελέγξτε ότι το άρθρωμα 'PRODUCTNAME Calc' έχει εγκατασταθεί."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___3.STRING.TEXT
+msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
+msgstr "Αδυναμία δημιουργίας της παρουσίασης.<BR>Παρακαλώ ελέγξτε ότι το άρθρωμα 'PRODUCTNAME Impress' έχει εγκατασταθεί."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___4.STRING.TEXT
+msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
+msgstr "Αδυναμία δημιουργίας του σχεδίου.<BR>Παρακαλώ ελέγξτε ότι το άρθρωμα 'PRODUCTNAME Draw' έχει εγκατασταθεί."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___5.STRING.TEXT
+msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
+msgstr "Αδυναμία δημιουργίας του μαθηματικού τύπου.<BR>Παρακαλώ ελέγξτε ότι το άρθρωμα 'PRODUCTNAME Math' έχει εγκατασταθεί."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___6.STRING.TEXT
+msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
+msgstr "Αδυναμία εύρεσης των απαιτουμένων αρχείων.<BR>Παρακαλώ εκκινήστε το %PRODUCTNAME Ρυθμίσεις και επιλέξτε 'Επισκευή'."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___7.STRING.TEXT
+msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
+msgstr "Το αρχείο '<PATH>' υπάρχει ήδη.<BR><BR>Θέλετε να αντικατασταθεί το υπάρχον αρχείο;"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___8.STRING.TEXT
+msgid  "Yes"
+msgstr "Ναι"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___9.STRING.TEXT
+msgid  "Yes to All"
+msgstr "Ναι σε όλα"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___10.STRING.TEXT
+msgid  "No"
+msgstr "Όχι"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___11.STRING.TEXT
+msgid  "Cancel"
+msgstr "Ακύρωση"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___12.STRING.TEXT
+msgid  "~Finish"
+msgstr "~Τέλος"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___13.STRING.TEXT
+msgid  "< ~Back"
+msgstr "< ~Πίσω"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___14.STRING.TEXT
+msgid  "~Next >"
+msgstr "~Επόμενο >"
+
 #: formwizard/dbwizres.src#RID_COMMON_START___15.STRING.TEXT
 msgid  "~Help"
 msgstr "~Βοήθεια"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___16.STRING.TEXT
+msgid  "Steps"
+msgstr "Βήματα"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___17.STRING.TEXT
+msgid  "Close"
+msgstr "Κλείσιμο"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___18.STRING.TEXT
+msgid  "OK"
+msgstr "OK"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___19.STRING.TEXT
+msgid  "The file already exists. Do you want to overwrite it?"
+msgstr "Το αρχείο υπάρχει ήδη. Θέλετε να αντικατασταθεί;"
+
+#: formwizard/dbwizres.src#RID_COMMON_START___20.STRING.TEXT
+msgid  "Template created via <wizard_name> on <current_date>."
+msgstr "Πρότυπο που δημιουργήθηκε με το <wizard_name> στις <current_date>."
+
+#: formwizard/dbwizres.src#RID_COMMON_START___21.STRING.TEXT
+msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
+msgstr "Αδυναμία εκτέλεσης του αυτόματου πιλότου, λόγω μη εύρεσης απαραίτητων αρχείων.\nΣτο 'Εργαλεία - Ρυθμίσεις - %PRODUCTNAME - Διαδρομές' πατήστε το πλήκτρο 'Προκαθορισμένα' για να επαναφέρετε τις διαδρομές στις προκαθορισμένες ρυθμίσεις.\nΜετά εκτελέσετε ξανά τον αυτόματο πιλότο."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___0.STRING.TEXT
+msgid  "C~reate"
+msgstr "~Δημιουργία"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___1.STRING.TEXT
+msgid  "~Cancel"
+msgstr "Α~κύρωση"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___2.STRING.TEXT
+msgid  "<< ~Back"
+msgstr "<< ~Πίσω"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___3.STRING.TEXT
+msgid  "~Next >>"
+msgstr "~Επόμενο >>"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___4.STRING.TEXT
+msgid  "~Database"
+msgstr "Βάση ~δεδομένων"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___5.STRING.TEXT
+msgid  "~Table name"
+msgstr "Όνομα ~πίνακα"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___6.STRING.TEXT
+msgid  "An error occurred while running the wizard. The wizard will be terminated."
+msgstr "Παρουσιάστηκε σφάλμα κατά την εκτέλεση του αυτόματου πιλότου. Ο αυτόματος πιλότος θα τερματιστεί."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___14.STRING.TEXT
+msgid  "No connection to the database could be established."
+msgstr "Δεν ήταν δυνατή η δημιουργία σύνδεσης με τη βάση δεδομένων."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___21.STRING.TEXT
+msgid  "~Stop"
+msgstr "~Διακοπή"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___30.STRING.TEXT
+msgid  "The document could not be saved."
+msgstr "Δεν είναι δυνατή η αποθήκευση του εγγράφου."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___33.STRING.TEXT
+msgid  "Exiting the wizard"
+msgstr "Έξοδος από τον αυτόματο πιλότο"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___34.STRING.TEXT
+msgid  "Connecting to data source..."
+msgstr "Σύνδεση στη προέλευση δεδομένων..."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___35.STRING.TEXT
+msgid  "The connection to the data source could not be established."
+msgstr "Δεν ήταν δυνατή η σύνδεση με τη προέλευση δεδομένων."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___36.STRING.TEXT
+msgid  "The file path entered is not valid."
+msgstr "Η διαδρομή αρχείου που εισήχθηκε δεν είναι έγκυρη."
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___37.STRING.TEXT
+msgid  "Please select a data source"
+msgstr "Παρακαλώ επιλέξτε μία προέλευση δεδομένων"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___38.STRING.TEXT
+msgid  "Please select a table or query"
+msgstr "Παρακαλώ επιλέξτε ένα πίνακα ή ερώτημα"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___39.STRING.TEXT
+msgid  "Add field"
+msgstr "Προσθήκη πεδίου"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___40.STRING.TEXT
+msgid  "Remove field"
+msgstr "Αφαίρεση πεδίου"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___41.STRING.TEXT
+msgid  "Add all fields"
+msgstr "Προσθήκη όλων των πεδίων"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___42.STRING.TEXT
+msgid  "Remove all fields"
+msgstr "Αφαίρεση όλων των πεδίων"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___43.STRING.TEXT
+msgid  "Move field up"
+msgstr "Μετακίνηση πεδίου πάνω"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___44.STRING.TEXT
+msgid  "Move field down"
+msgstr "Μετακίνηση πεδίου κάτω"
+
+#: formwizard/dbwizres.src#RID_DB_COMMON_START___45.STRING.TEXT
+msgid  "The field names from '%NAME' could not be retrieved."
+msgstr "Αδυναμία ανάκλησης των ονομάτων πεδίων από το '%NAME'."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___0.STRING.TEXT
+msgid  "Form Wizard"
+msgstr "Αυτόματος πιλότος για φόρμες"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___1.STRING.TEXT
+msgid  "Fields in ~the form"
+msgstr "Πεδία ~μέσα στη φόρμα"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___2.STRING.TEXT
+msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
+msgstr "Τα δυαδικά πεδία παρατίθενται πάντα και είναι επιλέξιμα από την αριστερή λίστα.\nΑν είναι δυνατόν, αναλύονται ως εικόνες."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___3.STRING.TEXT
+msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr "Μια υποφόρμα είναι μια φόρμα που εισάγεται σε μια άλλη φόρμα.\nΧρησιμοποιήστε υποφόρμες για να παρουσιάσετε δεδομένα από πίνακες ή ερωτήματα με σχέση μια-σε-πολλές."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___4.STRING.TEXT
+msgid  "~Add Subform"
+msgstr "~Προσθήκη Υποφόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___5.STRING.TEXT
+msgid  "~Subform based on existing relation"
+msgstr "~Υποφόρμα βασισμένη σε υπάρχουσα σχέση"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___6.STRING.TEXT
+msgid  "Tables or queries"
+msgstr "Πίνακες ή ερωτήματα"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___7.STRING.TEXT
+msgid  "Subform based on ~manual selection of fields"
+msgstr "Υποφόρμα βασιζόμενη σε ~χειρωνακτική επιλογή πεδίων"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___8.STRING.TEXT
+msgid  "~Which relation do you want to add?"
+msgstr "~Ποια σχέση θέλετε να προσθέσετε;"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___9.STRING.TEXT
+msgid  "Fields in the ~subform"
+msgstr "Πεδία μέσα στην ~υποφόρμα"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___12.STRING.TEXT
+msgid  "~Available fields"
+msgstr "~Διαθέσιμα πεδία"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___13.STRING.TEXT
+msgid  "Fields in form"
+msgstr "Πεδία μέσα στη φόρμα"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___19.STRING.TEXT
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
+msgstr "Ο σύνδεσμος '<FIELDNAME1>' και '<FIELDNAME2>' έχει επιλεγεί δύο φορές.\nΑλλά οι σύνδεσμοι μπορούν να χρησιμοποιηθούν μόνο μια φορά."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___20.STRING.TEXT
+msgid  "~First joined subform field"
+msgstr "~1ο Συνδεδεμένο πεδίο υποφόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___21.STRING.TEXT
+msgid  "~Second joined subform field"
+msgstr "~2ο Συνδεδεμένο πεδίο υποφόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___22.STRING.TEXT
+msgid  "~Third joined subform field"
+msgstr "~3ο Συνδεδεμένο πεδίο υποφόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___23.STRING.TEXT
+msgid  "~Fourth joined subform field"
+msgstr "~4ο Συνδεδεμένο πεδίο υποφόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___24.STRING.TEXT
+msgid  "F~irst joined main form field"
+msgstr "1ο ~Συνδεδεμένο πεδίο κύριας φόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___25.STRING.TEXT
+msgid  "S~econd joined main form field"
+msgstr "2ο Συν~δεδεμένο πεδίο κύριας φόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___26.STRING.TEXT
+msgid  "T~hird joined main form field"
+msgstr "3ο Συνδεδε~μένο πεδίο κύριας φόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___27.STRING.TEXT
+msgid  "F~ourth joined main form field"
+msgstr "4ο Συνδεδεμέν~ο πεδίο κύριας φόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___28.STRING.TEXT
+msgid  "Field border"
+msgstr "Περίγραμμα πεδίου"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___29.STRING.TEXT
+msgid  "No border"
+msgstr "Χωρίς περίγραμμα"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___30.STRING.TEXT
+msgid  "3D look"
+msgstr "όψη 3D"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___31.STRING.TEXT
+msgid  "Flat"
+msgstr "Επίπεδο"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___32.STRING.TEXT
+msgid  "Label placement"
+msgstr "Τοποθέτηση ετικέτας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___33.STRING.TEXT
+msgid  "Align left"
+msgstr "Στοίχιση αριστερά"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___34.STRING.TEXT
+msgid  "Align right"
+msgstr "Στοίχιση δεξιά"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___35.STRING.TEXT
+msgid  "Arrangement of DB fields"
+msgstr "Διάταξη των πεδίων της βάσης δεδομένων DB"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___36.STRING.TEXT
+msgid  "Columnar - Labels Left"
+msgstr "Σε στήλες - Οι ετικέτες αριστερά"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___37.STRING.TEXT
+msgid  "Columnar - Labels on Top"
+msgstr "Σε στήλες - Οι ετικέτες επάνω"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___38.STRING.TEXT
+msgid  "In Blocks - Labels Left"
+msgstr "Σε τμήματα - Οι ετικέτες αριστερά"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___39.STRING.TEXT
+msgid  "In Blocks - Labels Above"
+msgstr "Σε τμήματα - Οι ετικέτες επάνω"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___40.STRING.TEXT
+msgid  "As Data Sheet"
+msgstr "Ως φύλλο δεδομένων"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___41.STRING.TEXT
+msgid  "Arrangement of the main form"
+msgstr "Διάταξη της κύριας φόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___42.STRING.TEXT
+msgid  "Arrangement of the subform"
+msgstr "Διάταξη της υποφόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___44.STRING.TEXT
+msgid  "The form is to be ~used for entering new data only."
+msgstr "Η φόρμα θα ~χρησιμοποιηθεί μόνο για την εισαγωγή νέων δεδομένων."
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___45.STRING.TEXT
+msgid  "Existing data will not be displayed "
+msgstr "Τα υπάρχοντα δεδομένα δεν θα εμφανισθούν "
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___46.STRING.TEXT
+msgid  "T~he form is to display all data"
+msgstr "Η φόρμα θα εμφανίσει ό~λα τα δεδομένα"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___47.STRING.TEXT
+msgid  "Do not allow ~modification of existing data"
+msgstr "Δεν επιτρέπεται ~μεταβολή των υπαρχόντων δεδομένων"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___48.STRING.TEXT
+msgid  "Do not allow ~deletion of existing data"
+msgstr "Δεν επιτρέπεται ~διαγραφή των υπαρχόντων δεδομένων"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___49.STRING.TEXT
+msgid  "Do not allow ~addition of new data"
+msgstr "Δεν επιτρέπεται ~προσθήκη νέων δεδομένων"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___50.STRING.TEXT
+msgid  "Name of ~the form"
+msgstr "Ό~νομα της φόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___51.STRING.TEXT
+msgid  "How do you want to proceed after creating the form?"
+msgstr "Πώς θέλετε να συνεχίσετε μετά τη δημιουργία της φόρμας;"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___52.STRING.TEXT
+msgid  "~Work with the form"
+msgstr "~Εργασία με τη φόρμα"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___53.STRING.TEXT
+msgid  "~Modify the form"
+msgstr "~Τροποποίηση της φόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___55.STRING.TEXT
+msgid  "~Page Styles"
+msgstr "Πρότυπα σε~λίδων"
 
 #: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___80.STRING.TEXT
 msgid  "Field selection"
 msgstr "Επιλογή πεδίου"
 
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___81.STRING.TEXT
+msgid  "Set up a subform"
+msgstr "Δημιουργία υποφόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___82.STRING.TEXT
+msgid  "Add subform fields"
+msgstr "Προσθήκη πεδίων υποφόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___83.STRING.TEXT
+msgid  "Get joined fields"
+msgstr "Λήψη συνδεδεμένων πεδίων"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___84.STRING.TEXT
+msgid  "Arrange controls"
+msgstr "Διάταξη ελέγχων"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___85.STRING.TEXT
+msgid  "Set data entry"
+msgstr "Ρύθμιση εισαγωγής δεδομένων"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___86.STRING.TEXT
+msgid  "Apply styles"
+msgstr "Εφαρμογή στυλ εμφάνισης"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___87.STRING.TEXT
+msgid  "Set name"
+msgstr "Καθορισμός ονόματος"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___88.STRING.TEXT
+msgid  "(Date)"
+msgstr "(Ημερομηνία)"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___89.STRING.TEXT
+msgid  "(Time)"
+msgstr "(Ώρα)"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___90.STRING.TEXT
+msgid  "Select the fields of your form"
+msgstr "Επιλέξτε τα πεδία της φόρμας σας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___91.STRING.TEXT
+msgid  "Decide if you want to set up a subform"
+msgstr "Αποφασίστε αν θέλετε να δημιουργήσετε υποφόρμα"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___92.STRING.TEXT
+msgid  "Select the fields of your subform"
+msgstr "Επιλέξτε τα πεδία της υποφόρμας σας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___93.STRING.TEXT
+msgid  "Select the joins between your forms"
+msgstr "Επιλέξτε τους συνδέσμους μεταξύ των φορμών σας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___94.STRING.TEXT
+msgid  "Arrange the controls on your form"
+msgstr "Διάταξη ελέγχων στη φόρμα σας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___95.STRING.TEXT
+msgid  "Select the data entry mode"
+msgstr "Επιλογή λειτουργίας εισαγωγής δεδομένων"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___96.STRING.TEXT
+msgid  "Apply the style of your form"
+msgstr "Εφαρμογή στυλ εμφάνισης της φόρμας σας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___97.STRING.TEXT
+msgid  "Set the name of the form"
+msgstr "Καθορισμός του ονόματος της φόρμας"
+
+#: formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START___98.STRING.TEXT
+msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
+msgstr "Μια φόρμα με το όνομα '%FORMNAME' υπάρχει ήδη.\nΠαρακαλώ, επιλέξτε ένα άλλο όνομα."
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___0.STRING.TEXT
 msgid  "Query Wizard"
 msgstr "Αυτόματος πιλότος για ερωτήματα"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___1.STRING.TEXT
+msgid  "Query"
+msgstr "Ερώτημα"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___3.STRING.TEXT
+msgid  "~Tables"
+msgstr "~Πίνακες"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___4.STRING.TEXT
 msgid  "A~vailable fields"
 msgstr "~Διαθέσιμα πεδία"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___5.STRING.TEXT
+msgid  "Name ~of the query"
+msgstr "Όνο~μα ερωτήματος"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___6.STRING.TEXT
+msgid  "Display ~Query"
+msgstr "Εμφάνιση ~ερωτήματος"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___7.STRING.TEXT
+msgid  "~Modify Query"
+msgstr "~Τροποποίηση ερωτήματος"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___8.STRING.TEXT
+msgid  "~How do you want to proceed after creating the query?"
+msgstr "Πώς ~θέλετε να συνεχίσετε μετά τη δημιουργία του ερωτήματος;"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___9.STRING.TEXT
+msgid  "Match ~all of the following"
+msgstr "Ταίριαξε ό~λα τα ακόλουθα"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___10.STRING.TEXT
+msgid  "~Match any of the following"
+msgstr "Ταίριαξε οποιο~δήποτε από τα ακόλουθα"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___11.STRING.TEXT
+msgid  "~Detailed query (Shows all records of the query.)"
+msgstr "~Αναλυτικό ερώτημα (Εμφάνιση όλων των εγγραφών που απαντούν στο ερώτημα.)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___12.STRING.TEXT
+msgid  "~Summary query (Shows only results of aggregate functions.)"
+msgstr "~Περιληπτικό ερώτημα (Εμφάνιση μόνο των αποτελεσμάτων των περιληπτικών συναρτήσεων.)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___16.STRING.TEXT
+msgid  "Aggregate functions"
+msgstr "Περιληπτικές συναρτήσεις"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___17.STRING.TEXT
 msgid  "Fields"
 msgstr "Πεδία"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___18.STRING.TEXT
+msgid  "~Group by"
+msgstr "~Ομαδοποίηση κατά"
 
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___19.STRING.TEXT
 #, fuzzy
 msgid  "Field"
 msgstr "Πεδίο"
 
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___20.STRING.TEXT
+msgid  "Alias"
+msgstr "Ψευδώνυμο"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___21.STRING.TEXT
+msgid  "Table: "
+msgstr "Πίνακας: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___22.STRING.TEXT
+msgid  "Query: "
+msgstr "Ερώτημα: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___24.STRING.TEXT
+msgid  "Condition"
+msgstr "Συνθήκη"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___25.STRING.TEXT
+msgid  "Value"
+msgstr "Τιμή"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___26.STRING.TEXT
+msgid  "is equal to"
+msgstr "ισούται με"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___27.STRING.TEXT
+msgid  "is not equal to"
+msgstr "δεν ισούται με"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___28.STRING.TEXT
+msgid  "is smaller than"
+msgstr "είναι μικρότερο από"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___29.STRING.TEXT
+msgid  "is greater than"
+msgstr "είναι μεγαλύτερο από"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___30.STRING.TEXT
+msgid  "is equal or less than "
+msgstr "ισούται με ή είναι μικρότερο από "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___31.STRING.TEXT
+msgid  "is equal or greater than"
+msgstr "ισούται με ή είναι μεγαλύτερο από"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___32.STRING.TEXT
+msgid  "like"
+msgstr "μοιάζει"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___33.STRING.TEXT
+msgid  "not like"
+msgstr "δεν μοιάζει"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___34.STRING.TEXT
+msgid  "is null"
+msgstr "είναι null"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___35.STRING.TEXT
+msgid  "is not null"
+msgstr "δεν είναι null"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___36.STRING.TEXT
+msgid  "true"
+msgstr "αληθής"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___37.STRING.TEXT
+msgid  "false"
+msgstr "ψευδής"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___38.STRING.TEXT
+msgid  "and"
+msgstr "και"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___39.STRING.TEXT
+msgid  "or"
+msgstr "or"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___40.STRING.TEXT
+msgid  "get the sum of"
+msgstr "βρες το σύνολο από"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___41.STRING.TEXT
+msgid  "get the average of"
+msgstr "βρες το μέσο όρο από"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___42.STRING.TEXT
+msgid  "get the minimum of"
+msgstr "βρες το ελάχιστο από"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___43.STRING.TEXT
+msgid  "get the maximum of"
+msgstr "βρες το μέγιστο από"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___44.STRING.TEXT
+msgid  "get the sum of <FIELD>"
+msgstr "βρες το σύνολο του πεδίου <FIELD>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___45.STRING.TEXT
+msgid  "get the average of <FIELD>"
+msgstr "βρες το μέσο όρο του πεδίου <FIELD>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___46.STRING.TEXT
+msgid  "get the minimum of <FIELD>"
+msgstr "βρες το ελάχιστο του πεδίου <FIELD>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___47.STRING.TEXT
+msgid  "get the maximum of <FIELD>"
+msgstr "βρες το μέγιστο του πεδίου <FIELD>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___48.STRING.TEXT
+msgid  "(none)"
+msgstr "(κανένα)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___50.STRING.TEXT
+msgid  "Fie~lds in the Query: "
+msgstr "Πεδί~α στο ερώτημα: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___51.STRING.TEXT
+msgid  "Sorting order: "
+msgstr "Σειρά ταξινόμησης: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___52.STRING.TEXT
+msgid  "No sorting fields were assigned."
+msgstr "Δεν ορίστηκαν πεδία ταξινόμησης."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___53.STRING.TEXT
+msgid  "Search conditions: "
+msgstr "Συνθήκες εύρεσης: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___54.STRING.TEXT
+msgid  "No conditions were assigned."
+msgstr "Δεν ορίστηκαν συνθήκες."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___55.STRING.TEXT
+msgid  "Aggregate functions: "
+msgstr "Συνολικές συναρτήσεις: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___56.STRING.TEXT
+msgid  "No aggregate functions were assigned."
+msgstr "Δεν ορίστηκαν συνολικές συναρτήσεις."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___57.STRING.TEXT
+msgid  "Grouped by: "
+msgstr "Ομαδοποιημένα κατά: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___58.STRING.TEXT
+msgid  "No Groups were assigned."
+msgstr "Δεν ορίστηκαν ομαδοποιήσεις."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___59.STRING.TEXT
+msgid  "Grouping conditions: "
+msgstr "Συνθήκες ομαδοποίησης: "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___60.STRING.TEXT
+msgid  "No grouping conditions were assigned."
+msgstr "Δεν ορίστηκαν συνθήκες ομαδοποίησης."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___70.STRING.TEXT
+msgid  "Select the fields (columns) for your query"
+msgstr "Επιλέξτε τα πεδία (στήλες) για το ερώτημά σας"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___71.STRING.TEXT
+msgid  "Select the sorting order"
+msgstr "Επιλέξτε τη σειρά ταξινόμησης"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___72.STRING.TEXT
+msgid  "Select the search conditions"
+msgstr "Επιλέξτε τις συνθήκες εύρεσης"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___73.STRING.TEXT
+msgid  "Select the type of query"
+msgstr "Επιλέξτε τον τύπο ερωτήματος"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___74.STRING.TEXT
+msgid  "Select the groups"
+msgstr "Επιλέξτε ομάδες"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___75.STRING.TEXT
+msgid  "Select the grouping conditions"
+msgstr "Επιλέξτε συνθήκες ομαδοποίησης"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___76.STRING.TEXT
+msgid  "Assign aliases if desired"
+msgstr "Ορίστε ψευδώνυμα αν το επιθυμείτε"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___77.STRING.TEXT
+msgid  "Check the overview and decide how to proceed"
+msgstr "Ελέγξτε την προεπισκόπηση και αποφασίστε πώς θα συνεχίσετε"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___81.STRING.TEXT
+msgid  "Sorting order"
+msgstr "Σειρά ταξινόμησης"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___82.STRING.TEXT
+msgid  "Search conditions"
+msgstr "Συνθήκες εύρεσης"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___83.STRING.TEXT
+msgid  "Detail or summary"
+msgstr "Λεπτομερές ή περιληπτικό"
+
 #: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___84.STRING.TEXT
 #, fuzzy
 msgid  "Grouping"
 msgstr "Ομαδοποίηση"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___85.STRING.TEXT
+msgid  "Grouping conditions"
+msgstr "Συνθήκες ομαδοποίησης"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___86.STRING.TEXT
+msgid  "Aliases"
+msgstr "Ψευδώνυμα"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___87.STRING.TEXT
+msgid  "Overview"
+msgstr "Σύνοψη"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___88.STRING.TEXT
+msgid  "A field that has not been assigned an aggregate function must be used in a group."
+msgstr "Για την ομαδοποίηση πρέπει να χρησιμοποιηθεί πεδίο που δεν έχει οριστεί ως συνολική συνάρτηση."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___89.STRING.TEXT
+msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
+msgstr "Η συνθήκη '<FIELDNAME> <LOGICOPERATOR> <VALUE>' έχει επιλεγεί δύο φορές. Κάθε συνθήκη μπορεί να επιλεγεί μόνο μία φορά"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___90.STRING.TEXT
+msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
+msgstr "Η συνολική συνάρτηση <FUNCTION> έχει οριστεί δύο φορές στο πεδίο με όνομα '<NUMERICFIELD>'."
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___91.STRING.TEXT
+msgid  ", "
+msgstr ", "
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___92.STRING.TEXT
+msgid  "<FIELDTITLE> (<FIELDNAME>)"
+msgstr "<FIELDTITLE> (<FIELDNAME>)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___93.STRING.TEXT
+msgid  "<FIELDNAME> (<SORTMODE>)"
+msgstr "<FIELDNAME> (<SORTMODE>)"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___94.STRING.TEXT
+msgid  "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START___95.STRING.TEXT
+msgid  "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___0.STRING.TEXT
+msgid  "Report Wizard"
+msgstr "Αυτόματος πιλότος για αναφορές"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___3.STRING.TEXT
+msgid  "~Table"
+msgstr "~Πίνακας"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___4.STRING.TEXT
+msgid  "Colu~mns"
+msgstr "~Στήλες"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___7.STRING.TEXT
+msgid  "Report_"
+msgstr "Αναφορά_"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___8.STRING.TEXT
+msgid  "- undefined -"
+msgstr "- ακαθόριστο -"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___9.STRING.TEXT
+msgid  "~Fields in report"
+msgstr "~Πεδία στην αναφορά"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___12.STRING.TEXT
+msgid  "Sort options"
+msgstr "Επιλογές ταξινόμησης"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___13.STRING.TEXT
+msgid  "Choose layout"
+msgstr "Επιλογή διάταξης"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___14.STRING.TEXT
 #, fuzzy
 msgid  "Create report"
 msgstr "Δημιουργία αναφοράς"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___15.STRING.TEXT
+msgid  "Layout of data"
+msgstr "Διάταξη δεδομένων"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___16.STRING.TEXT
+msgid  "Layout of headers and footers"
+msgstr "Διάταξη κεφαλίδων και υποσέλιδων"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___20.STRING.TEXT
+msgid  "~Sort by"
+msgstr "Ταξινόμη~ση κατά"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___21.STRING.TEXT
+msgid  "T~hen by"
+msgstr "Και ~κατά"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___22.STRING.TEXT
+msgid  "Orientation"
+msgstr "Προσανατολισμός"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___23.STRING.TEXT
+msgid  "Portrait"
+msgstr "Κατακόρυφα"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___24.STRING.TEXT
+msgid  "Landscape"
+msgstr "Οριζόντια"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___28.STRING.TEXT
+msgid  "Which fields do you want to have in your report?"
+msgstr "Ποια πεδία θέλετε να είναι στην αναφορά σας;"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___29.STRING.TEXT
+msgid  "Do you want to add grouping levels?"
+msgstr "Θέλετε να προσθέσετε επίπεδα ομαδοποίησης;"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___30.STRING.TEXT
+msgid  "According to which fields do you want to sort the data?"
+msgstr "Σύμφωνα με ποια πεδία θέλετε να ταξινομήσετε τα δεδομένα;"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___31.STRING.TEXT
+msgid  "How do you want your report to look?"
+msgstr "Πως θέλετε να μοιάζει η αναφορά σας;"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___32.STRING.TEXT
+msgid  "Decide how you want to proceed"
+msgstr "Αποφασίστε πώς θέλετε να συνεχίσετε"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___33.STRING.TEXT
+msgid  "Title of report"
+msgstr "Τίτλος αναφοράς"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___34.STRING.TEXT
+msgid  "Display report"
+msgstr "Εμφάνιση αναφοράς"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___36.STRING.TEXT
+msgid  "Ascending"
+msgstr "Αύξουσα"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___37.STRING.TEXT
+msgid  "Descending"
+msgstr "Φθίνουσα"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___40.STRING.TEXT
+msgid  "~Dynamic report"
+msgstr "~Δυναμική αναφορά"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___41.STRING.TEXT
+msgid  "~Create report now"
+msgstr "Δημιουργία αναφοράς ~τώρα"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___42.STRING.TEXT
+msgid  "~Modify report layout"
+msgstr "~Τροποποίηση διάταξης αναφοράς"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___43.STRING.TEXT
+msgid  "Static report"
+msgstr "Στατική αναφορά"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___44.STRING.TEXT
+msgid  "Save as"
+msgstr "Αποθήκευση ως"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___50.STRING.TEXT
+msgid  "Groupings"
+msgstr "Ομαδοποιήσεις"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___51.STRING.TEXT
+msgid  "Then b~y"
+msgstr "~Και κατά"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___52.STRING.TEXT
+msgid  "~Then by"
+msgstr "Και κα~τά"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___53.STRING.TEXT
+msgid  "Asc~ending"
+msgstr "Αύ~ξουσα"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___54.STRING.TEXT
+msgid  "Ascend~ing"
+msgstr "Αύξου~σα"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___55.STRING.TEXT
+msgid  "Ascendin~g"
+msgstr "~Αύξουσα"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___56.STRING.TEXT
 #, fuzzy
 msgid  "De~scending"
 msgstr "Φ~θίνουσα"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___57.STRING.TEXT
+msgid  "Des~cending"
+msgstr "~Φθίνουσα"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___60.STRING.TEXT
+msgid  "Binary fields cannot be displayed in the report."
+msgstr "Τα δυαδικά πεδία δεν μπορούν να απεικονίζονται στην αναφορά."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___61.STRING.TEXT
+msgid  "The table '<TABLENAME>' does not exist."
+msgstr "Ο πίνακας '<TABLENAME>' δεν υπάρχει."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___62.STRING.TEXT
+msgid  "Creating Report..."
+msgstr "Δημιουργία αναφοράς..."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___63.STRING.TEXT
+msgid  "Number of records inserted: <COUNT>"
+msgstr "Αριθμός εγγραφών που εισήχθησαν: <COUNT>"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___64.STRING.TEXT
+msgid  "The form '<REPORTFORM>' does not exist."
+msgstr "Η φόρμα '<REPORTFORM>' δεν υπάρχει."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___65.STRING.TEXT
+msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
+msgstr "Το ερώτημα με τη δήλωση <BR>'<STATEMENT>' <BR> δεν μπόρεσε να εκτελεστεί. <BR> Ελέγξτε την προέλευση δεδομένων σας."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___66.STRING.TEXT
+msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
+msgstr "Δεν ήταν δυνατή η ανάγνωση του ακόλουθου κρυμμένου στοιχείου ελέγχου στη φόρμα '<REPORTFORM>' : '<CONTROLNAME>'."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___67.STRING.TEXT
+msgid  "Importing data..."
+msgstr "Εισαγωγή δεδομένων..."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___68.STRING.TEXT
+msgid  "Labeling fields"
+msgstr "Ονομασία πεδίων"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___69.STRING.TEXT
+msgid  "How do you want to label the fields?"
+msgstr "Πως θέλετε να ονομάσετε τα πεδία;"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___70.STRING.TEXT
+msgid  "Label"
+msgstr "Ετικέτα"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___72.STRING.TEXT
+msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
+msgstr "Συνέβη ένα σφάλμα στον Αυτόματο Πιλότο.<BR>Το πρότυπο '%PATH' μπορεί να είναι λάθος.<BR>Είτε τα απαιτούμενα πεδία ή πίνακες δεν υπάρχουν ή υπάρχουν με άλλα ονόματα.<BR>Δείτε τη βοήθεια για πιο λεπτομερείς πληροφορίες.<BR>Παρακαλούμε επιλέξτε ένα άλλο πρότυπο."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___73.STRING.TEXT
+msgid  "There is an invalid user field in a table."
+msgstr "Υπάρχει ένα μη έγκυρο πεδίο χρήστη σε ένα πίνακα."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___74.STRING.TEXT
+msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
+msgstr "Το κριτήριο ταξινόμησης '<FIELDNAME>' έχει επιλεγεί δύο φορές. Κάθε κριτήριο πρέπει να επιλεγεί μόνο μία φορά."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___75.STRING.TEXT
+msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
+msgstr "Σημείωση: Το τυχαίο κείμενο θα αντικατασταθεί με δεδομένα από τη βάση δεδομένων όταν δημιουργηθεί η αναφορά."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___76.STRING.TEXT
+msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
+msgstr "Μία αναφορά με το όνομα '%REPORTNAME' υπάρχει ήδη στη βάση δεδομένων. Εισαγάγετε ένα άλλο όνομα."
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___78.STRING.TEXT
+msgid  "How do you want to proceed after creating the report?"
+msgstr "Πως θέλετε να συνεχίσετε μετά τη δημιουργία της αναφοράς;"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___79.STRING.TEXT
+msgid  "What kind of report do you want to create?"
+msgstr "Τι τύπο αναφοράς θέλετε να δημιουργήσετε;"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___80.STRING.TEXT
+msgid  "Tabular"
+msgstr "Σε διάταξη λίστας"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___81.STRING.TEXT
+msgid  "Columnar, single-column"
+msgstr "Σε στήλες, απλή στήλη"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___82.STRING.TEXT
+msgid  "Columnar, two columns"
+msgstr "Σε στήλη, δύο στήλες"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___83.STRING.TEXT
+msgid  "Columnar, three columns"
+msgstr "Σε στήλη, τρεις στήλες"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___84.STRING.TEXT
+msgid  "In blocks, labels left"
+msgstr "Σε τμήματα, οι ετικέτες αριστερά"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___85.STRING.TEXT
+msgid  "In blocks, labels above"
+msgstr "Σε τμήματα, οι ετικέτες επάνω"
 
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___86.STRING.TEXT
 #, fuzzy
 msgid  "Title:"
 msgstr "Τίτλος:"
 
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___87.STRING.TEXT
+msgid  "Author:"
+msgstr "Συγγραφέας:"
+
 #: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___88.STRING.TEXT
 #, fuzzy
 msgid  "Date:"
 msgstr "Ημερομηνία:"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___89.STRING.TEXT
+msgid  "Page #page# of #count#"
+msgstr "Σελίδα #page# από #count#"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___90.STRING.TEXT
+msgid  "Page number:"
+msgstr "Αριθμός σελίδας:"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___91.STRING.TEXT
+msgid  "Page count:"
+msgstr "Αρίθμηση σελίδων:"
+
+#: formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START___92.STRING.TEXT
+msgid  "No valid report template was found."
+msgstr "Δεν βρέθηκε έγκυρο πρότυπο αναφοράς."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___1.STRING.TEXT
+msgid  "Table Wizard"
+msgstr "Αυτόματος πιλότος για πίνακες"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___2.STRING.TEXT
+msgid  "Select fields"
+msgstr "Επιλογή πεδίων"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___3.STRING.TEXT
+msgid  "Set types and formats"
+msgstr "Ορισμός τύπων και μορφοποίησης"
 
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___4.STRING.TEXT
 #, fuzzy
@@ -91,15 +1419,178 @@ msgstr "Ορισμός πρωτεύοντος κλειδιού"
 msgid  "Create table"
 msgstr "Δημιουργία πίνακα"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___8.STRING.TEXT
+msgid  "Select fields for your table"
+msgstr "Επιλέξτε πεδία για τον πίνακά σας"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___9.STRING.TEXT
+msgid  "Set field types and formats"
+msgstr "Ορισμός τύπων πεδίων και μορφοποίησης"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___14.STRING.TEXT
+msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
+msgstr "Αυτός ο αυτόματος πιλότος θα σας βοηθήσει να δημιουργήσετε έναν πίνακα για τη βάση δεδομένων σας. Αφού επιλέξετε κατηγορία πίνακα και κάποιο δείγμα πίνακα, επιλέξτε ποια πεδία θέλετε να περιέχει. Μπορείτε να συμπεριλάβετε πεδία από περισσότερα από ένα δείγματα πινάκων, αν το επιθυμείτε."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___15.STRING.TEXT
+msgid  "Ca~tegory"
+msgstr "~Κατηγορία"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___16.STRING.TEXT
+msgid  "B~usiness"
+msgstr "~Επαγγελματικός"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___17.STRING.TEXT
+msgid  "P~ersonal"
+msgstr "~Προσωπικός"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___18.STRING.TEXT
+msgid  "~Sample tables"
+msgstr "~Δείγματα πινάκων"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___20.STRING.TEXT
+msgid  "Field information"
+msgstr "Πληροφορίες πεδίων"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___21.STRING.TEXT
+msgid  "+"
+msgstr "+"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___23.STRING.TEXT
+msgid  "Field name"
+msgstr "Όνομα πεδίου"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___24.STRING.TEXT
+msgid  "Field type"
+msgstr "Τύπος πεδίου"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___25.STRING.TEXT
+msgid  "~Selected fields"
+msgstr "Επιλεγμέν~α πεδία"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___26.STRING.TEXT
+msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
+msgstr "Το πρωτεύον κλειδί ταυτοποιεί μονοσήμαντα κάθε εγγραφή σε έναν πίνακα της βάση δεδομένων. Τα πρωτεύοντα κλειδιά διευκολύνουν τη σύνδεση πληροφοριών σε διαφορετικούς πίνακες, και συνιστάται να ορίζετε ένα πρωτεύον κλειδί σε κάθε πίνακα. Χωρίς πρωτεύον κλειδί, δεν θα είναι δυνατή η εισαγωγή δεδομένων σε αυτό τον πίνακα."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___27.STRING.TEXT
+msgid  "~Create a primary key"
+msgstr "~Δημιουργία πρωτεύοντος κλειδιού"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___28.STRING.TEXT
+msgid  "~Automatically add a primary key"
+msgstr "~Αυτόματη προσθήκη πρωτεύοντος κλειδιού"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___29.STRING.TEXT
+msgid  "~Use an existing field as a primary key"
+msgstr "~Χρήση υπάρχοντος πεδίου ως πρωτεύον κλειδί"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___30.STRING.TEXT
+msgid  "Define p~rimary key as a combination of several fields "
+msgstr "Ορισμός π~ρωτεύοντος κλειδιού ως συνδυασμός διαφόρων πεδίων "
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___31.STRING.TEXT
+msgid  "F~ieldname"
+msgstr "Ό~νομα πεδίου"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___32.STRING.TEXT
+msgid  "~Primary key fields"
+msgstr "~Πεδία πρωτευόντων κλειδιών"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___33.STRING.TEXT
+msgid  "Auto ~value"
+msgstr "Αυτόματη ~τιμή"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___34.STRING.TEXT
+msgid  "What do you want to name your table?"
+msgstr "Πώς θέλετε να ονομάσετε τον πίνακά σας;"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___35.STRING.TEXT
+msgid  "Congratulations. You have entered all the information needed to create your table."
+msgstr "Συγχαρητήρια. Έχετε εισάγει όλη την απαιτούμενη πληροφορία για τη δημιουργία του πίνακά σας."
+
 #: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___36.STRING.TEXT
 #, fuzzy
 msgid  "What do you want to do next?"
 msgstr "Πώς θέλετε να συνεχίσετε;"
 
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___37.STRING.TEXT
+msgid  "Modify the table design"
+msgstr "Τροποποίηση του σχεδίου του πίνακα"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___38.STRING.TEXT
+msgid  "Insert data immediately"
+msgstr "Άμεση εισαγωγή δεδομένων"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___39.STRING.TEXT
+msgid  "C~reate a form based on this table"
+msgstr "~Δημιουργία φόρμας βασισμένης σε αυτό τον πίνακα"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___40.STRING.TEXT
+msgid  "The table you have created could not be opened."
+msgstr "Δεν ήταν δυνατό να ανοιχτεί ο πίνακας που δημιουργήσατε."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___41.STRING.TEXT
+msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "Το όνομα πίνακα '%TABLENAME' περιέχει ένα χαρακτήρα ('%SPECIALCHAR') που μπορεί να μην υποστηρίζεται από την βάση δεδομένων."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___42.STRING.TEXT
+msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
+msgstr "Το όνομα πεδίου '%FIELDNAME' περιέχει έναν ειδικό χαρακτήρα ('%SPECIALCHAR') που μπορεί να μην υποστηρίζεται από την βάση δεδομένων."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___44.STRING.TEXT
+msgid  "MyTable"
+msgstr "ΟπίνακαςΜου"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___45.STRING.TEXT
+msgid  "Add a Field"
+msgstr "Προσθήκη πεδίου"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___46.STRING.TEXT
+msgid  "Remove the selected Field"
+msgstr "Αφαίρεση των επιλεγμένων πεδίων"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___47.STRING.TEXT
+msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
+msgstr "Αδυναμία εισαγωγής πεδίου γιατί θα υπερβαίνεται ο μέγιστος επιτρεπόμενος αριθμός πεδίων %COUNT για τον πίνακα της βάσης δεδομένων"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___48.STRING.TEXT
+msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
+msgstr "Το όνομα '%TABLENAME' υπάρχει ήδη στη βάση δεδομένων.\nΠαρακαλώ, εισαγάγετε ένα άλλο όνομα."
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___49.STRING.TEXT
+msgid  "Catalog of the table"
+msgstr "Κατάλογος πίνακα"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___50.STRING.TEXT
+msgid  "Schema of the table"
+msgstr "Δομή πίνακα"
+
+#: formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START___51.STRING.TEXT
+msgid  "The field '%FIELDNAME' already exists."
+msgstr "Το πεδίο '%FIELDNAME' υπάρχει ήδη."
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___1.STRING.TEXT
+msgid  "Letter Wizard"
+msgstr "Αυτόματος πιλότων επιστολών"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.STRING.TEXT
-#, fuzzy
 msgid  "Label9"
 msgstr "Ετικέτα9"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___3.STRING.TEXT
+msgid  "~Business letter"
+msgstr "~Επαγγελματική επιστολή"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___4.STRING.TEXT
+msgid  "~Formal personal letter"
+msgstr "~Επίσημη προσωπική επιστολή"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___5.STRING.TEXT
+msgid  "~Personal letter"
+msgstr "~Προσωπική επιστολή"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___6.STRING.TEXT
+msgid  "~Use letterhead paper with pre-printed elements"
+msgstr "~Χρήση επιστολόχαρτου με προτυπωμένα στοιχεία"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.STRING.TEXT
 #, fuzzy
@@ -111,15 +1602,30 @@ msgstr "~Λογότυπο"
 msgid  "Return address"
 msgstr "Διεύθυνση αποστολέα"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___9.STRING.TEXT
+msgid  "~Include footer"
+msgstr "~Συμπερίληψη υποσέλιδου"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.STRING.TEXT
 #, fuzzy
 msgid  "~Return address in envelope window"
 msgstr "~Διεύθυνση αποστολέα στο πλαίσιο του φακέλου"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___13.STRING.TEXT
+msgid  "Letter Signs"
+msgstr "Σύμβολα"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.STRING.TEXT
-#, fuzzy
 msgid  "S~ubject line"
 msgstr "Γραμμή ~θέματος"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___15.STRING.TEXT
+msgid  "Salu~tation"
+msgstr "~Χαιρετισμός"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___16.STRING.TEXT
+msgid  "Fold ~marks"
+msgstr "Σημάδια ~διπλώματος"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.STRING.TEXT
 #, fuzzy
@@ -132,17 +1638,18 @@ msgid  "~Footer"
 msgstr "~Υποσέλιδο"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.STRING.TEXT
-#, fuzzy
 msgid  "~Use user data for return address"
 msgstr "~Χρήση δεδομένων του χρήστη για διεύθυνση αποστολέα"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___20.STRING.TEXT
+msgid  "~New sender address:"
+msgstr "~Νέα διεύθυνση αποστολέα:"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.STRING.TEXT
-#, fuzzy
 msgid  "Use placeholders for ~recipient's address"
 msgstr "Χρήση επιλογών ένδειξης θέσης για διεύθυνση παρα~λήπτη"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.STRING.TEXT
-#, fuzzy
 msgid  "Use address database for ~mail merge"
 msgstr "Χρήση βάσης δεδομένων διευθύνσεων για συγχώνευση στο ηλεκτρονικό ~γράμμα"
 
@@ -156,18 +1663,40 @@ msgstr "Να συμπεριλαμβάνεται ~μόνο από τη δεύτε
 msgid  "~Include page number"
 msgstr "~Συμπερίληψη αριθμού σελίδας"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___25.STRING.TEXT
+msgid  "Letter Template"
+msgstr "Πρότυπο επιστολής"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___26.STRING.TEXT
+msgid  "Create a ~letter from this template"
+msgstr "Δημιουργία ~επιστολής από αυτό το πρότυπο"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___27.STRING.TEXT
+msgid  "Make ~manual changes to this letter template"
+msgstr "~Χειροκίνητες αλλαγές σε αυτό το πρότυπο επιστολής"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.STRING.TEXT
 #, fuzzy
 msgid  "Page design"
 msgstr "Σχεδίαση σελίδας"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___31.STRING.TEXT
+msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
+msgstr "Αυτός ο Αυτόματος πιλότος σας βοηθά να δημιουργήσετε ένα πρότυπο επιστολής. Μπορείτε τότε να χρησιμοποιήσετε το πρότυπο σαν βάση για την συγγραφή επιστολών όσο συχνά επιθυμήτε."
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___32.STRING.TEXT
+msgid  "~Height:"
+msgstr "Ύ~ψος:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___33.STRING.TEXT
+msgid  "~Width:"
+msgstr "~Πλάτος:"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.STRING.TEXT
-#, fuzzy
 msgid  "S~pacing to left margin:"
 msgstr "Δ~ιάστιχο στο αριστερό περιθώριο:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.STRING.TEXT
-#, fuzzy
 msgid  "Spacing ~to top margin:"
 msgstr "Διάστιχο ~στο πάνω περιθώριο:"
 
@@ -175,6 +1704,18 @@ msgstr "Διάστιχο ~στο πάνω περιθώριο:"
 #, fuzzy
 msgid  "Height:"
 msgstr "Ύψος:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___37.STRING.TEXT
+msgid  "Width:"
+msgstr "Πλάτος:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___41.STRING.TEXT
+msgid  "Use a typical letter format for this country:"
+msgstr "Χρήση τυπικής διάταξης επιστολής για αυτήν την χώρα:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___42.STRING.TEXT
+msgid  "Sender's address"
+msgstr "Διεύθυνση αποστολέα"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.STRING.TEXT
 #, fuzzy
@@ -187,14 +1728,25 @@ msgid  "Street:"
 msgstr "Οδός:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.STRING.TEXT
-#, fuzzy
 msgid  "ZIP code/State/City:"
-msgstr "Ταχυδρομικός κώδικας/Νομός/Πόλη:"
+msgstr "ΤΚ ZIP/Νομός/Πόλη:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___46.STRING.TEXT
+msgid  "Recipient's address"
+msgstr "Διεύθυνση παραλήπτη"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.STRING.TEXT
 #, fuzzy
 msgid  "Footer"
 msgstr "Υποσέλιδο"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___48.STRING.TEXT
+msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
+msgstr "Αυτός ο αυτόματος πιλότος δημιουργεί ένα πρότυπο επιστολής, το οποίο σας επιτρέπει να δημιουργήσετε διάφορες επιστολές με την ίδια διάταξη και ρυθμίσεις."
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___49.STRING.TEXT
+msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
+msgstr "Για να δημιουργήσετε μία νέα επιστολή από το πρότυπο, απλά προχωρήστε στη διαδρομή μέχρι την τοποθεσία του προτύπου και κάντε διπλό κλικ πάνω του."
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.STRING.TEXT
 #, fuzzy
@@ -202,29 +1754,852 @@ msgid  "Template name:"
 msgstr "Όνομα προτύπου:"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.STRING.TEXT
-#, fuzzy
 msgid  "Location and file name:"
-msgstr "Τοποθεσία και όνομα αρχείου"
+msgstr "Τοποθεσία και όνομα αρχείου:"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___52.STRING.TEXT
+msgid  "How do you want to proceed?"
+msgstr "Πώς θέλετε να συνεχίσετε;"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___53.STRING.TEXT
+msgid  "Please choose the type of letter and page design"
+msgstr "Παρακαλώ επιλέξτε τον τύπο της επιστολής και σχέδιο σελίδας"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___54.STRING.TEXT
+msgid  "Select the items to be printed"
+msgstr "Επιλέξτε ποια αντικείμενα να τυπωθούν"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___55.STRING.TEXT
+msgid  "Specify items already on your letterhead paper"
+msgstr "Καθορίστε αντικείμενα που υπάρχουν ήδη στο επιστολόχαρτό σας"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___56.STRING.TEXT
+msgid  "Specify the sender and recipient information"
+msgstr "Καθορίστε πληροφορίες για τον αποστολέα και παραλήπτη"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___57.STRING.TEXT
+msgid  "Fill in the information you would like in the footer"
+msgstr "Εισάγετε την επιθυμητή πληροφορία στο υποσέλιδο"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START___58.STRING.TEXT
+msgid  "Please specify last settings"
+msgstr "Παρακαλώ καθορίστε τις τελικές ρυθμίσεις"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___1.STRING.TEXT
+msgid  "To Whom it May Concern"
+msgstr "Προς όποιον αφορά"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___2.STRING.TEXT
+msgid  "Dear Sir or Madam"
+msgstr "Αγαπητέ κύριε ή Αγαπητή κυρία"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START___3.STRING.TEXT
+msgid  "Hello"
+msgstr "Χαίρετε"
 
 #: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___1.STRING.TEXT
 #, fuzzy
 msgid  "Sincerely"
 msgstr "Ειλικρινά"
 
+#: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___2.STRING.TEXT
+msgid  "Best regards"
+msgstr "Χαιρετίσματα"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START___3.STRING.TEXT
+msgid  "Cheers"
+msgstr "Γειά χαρά"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___2.STRING.TEXT
+msgid  "Letterhead layout"
+msgstr "Διάταξη επιστολόχαρτου"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___3.STRING.TEXT
+msgid  "Printed items"
+msgstr "Τυπωμένα αντικείμενα"
+
+#: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___4.STRING.TEXT
+msgid  "Recipient and sender"
+msgstr "Παραλήπτης και αποστολέας"
+
 #: formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.STRING.TEXT
 #, fuzzy
 msgid  "Name and location"
 msgstr "Όνομα και τοποθεσία"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___1.STRING.TEXT
+msgid  "Fax Wizard"
+msgstr "Αυτόματος πιλότος για φαξ"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___3.STRING.TEXT
+msgid  "~Business Fax"
+msgstr "~Επαγγελματικό φαξ"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___4.STRING.TEXT
+msgid  "~Personal Fax"
+msgstr "~Προσωπικό φαξ"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___7.STRING.TEXT
+msgid  "S~alutation"
+msgstr "~Χαιρετισμός"
 
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___11.STRING.TEXT
 #, fuzzy
 msgid  "~New return address"
 msgstr "~Νέα διεύθυνση αποστολέα"
 
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___12.STRING.TEXT
+msgid  "My Fax Template"
+msgstr "Το πρότυπό μου φαξ"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___13.STRING.TEXT
+msgid  "Create a ~fax from this template"
+msgstr "Δημιουργία ~φαξ από αυτό το πρότυπο"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___14.STRING.TEXT
+msgid  "Make ~manual changes to this fax template"
+msgstr "~Χειρωνακτική τροποποίηση αυτού του προτύπου φαξ"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___17.STRING.TEXT
+msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
+msgstr "Αυτός ο οδηγός σας βοηθά να δημιουργήσετε ένα πρότυπο fax. Το πρότυπο μπορεί τότε να χρησιμοποιηθεί για την δημιουργία ενός fax όποτε χρειάζεται."
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___23.STRING.TEXT
+msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
+msgstr "Αυτός ο οδηγός δημιουργεί ένα πρότυπο fax που σας επιτρέπει να δημιουργήσετε πολλαπλά fax με την ίδια διάταξη και ρυθμίσεις."
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___24.STRING.TEXT
+msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
+msgstr "Για να δημιουργήσετε άλλο ένα νέο fax απο το πρότυπο, πηγαίνετε στην τοποθεσία που αποθηκεύσατε το πρότυπο και κάντε διπλό κλικ στο αρχείο."
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___25.STRING.TEXT
+msgid  "Template Name:"
+msgstr "Όνομα προτύπου:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___28.STRING.TEXT
+msgid  "Choose the type of fax and a page design"
+msgstr "Επιλέξτε τύπο φαξ και σχέδιο σελίδας"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___29.STRING.TEXT
+msgid  "Select items to include in the fax template"
+msgstr "Επιλέξτε ποια αντικείμενα να περιέχονται στο πρότυπο φαξ"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___30.STRING.TEXT
+msgid  "Specify sender and recipient information"
+msgstr "Καθορίστε πληροφορίες αποστολέα και παραλήπτη"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___31.STRING.TEXT
+msgid  "Enter text for the footer"
+msgstr "Εισαγωγή κειμένου για το υποσέλιδο"
+
 #: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___32.STRING.TEXT
 #, fuzzy
 msgid  "Choose a name and save the template"
 msgstr "Επιλογή ονόματος και αποθήκευση του προτύπου"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___35.STRING.TEXT
+msgid  "~Date"
+msgstr "~Ημερομηνία"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___36.STRING.TEXT
+msgid  "~Type of message"
+msgstr "~Τύπος μηνύματος"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START___37.STRING.TEXT
+msgid  "Fax Number:"
+msgstr "Αριθμός φαξ:"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___1.STRING.TEXT
+msgid  "Important Information!"
+msgstr "Σημαντική ενημέρωση!"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___2.STRING.TEXT
+msgid  "For your information"
+msgstr "Για ενημέρωσή σας"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___3.STRING.TEXT
+msgid  "News!"
+msgstr "Νέα!"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___1.STRING.TEXT
+msgid  "To whom it may concern,"
+msgstr "Προς όποιον αφορά,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___2.STRING.TEXT
+msgid  "Dear Sir or Madam,"
+msgstr "Αγαπητέ κύριε ή Αγαπητή κυρία,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___3.STRING.TEXT
+msgid  "Hello,"
+msgstr "Χαίρετε,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START___4.STRING.TEXT
+msgid  "Hi,"
+msgstr "Γειά,"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___2.STRING.TEXT
+msgid  "Yours faithfully"
+msgstr "Με τιμή"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___3.STRING.TEXT
+msgid  "Regards"
+msgstr "Χαιρετίσματα"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START___4.STRING.TEXT
+msgid  "Love"
+msgstr "Με αγάπη"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___2.STRING.TEXT
+msgid  "Items to include"
+msgstr "Αντικείμενα που θα συμπεριληφθούν"
+
+#: formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START___3.STRING.TEXT
+msgid  "Sender and Recipient"
+msgstr "Αποστολέας και παραλήπτης"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__1.STRING.TEXT
+msgid  "Web Wizard"
+msgstr "Αυτόματος πιλότος ιστοσελίδας"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__2.STRING.TEXT
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr "Αυτός ο Αυτόματος πιλότος ιστοσελίδας πρόκειται να σας βοηθήσει στην δημοσίευση εγγράφων στο διαδίκτυο.\n\nΘα μετατρέψει τα έγγραφα έτσι ώστε να μπορούν να προβληθούν από έναν περιηγητή ιστού. Επιπλέον, θα δημιουργήσει μια σελίδα περιεχομένων με συνδέσμους για εύκολη πρόσβαση στα έγγραφα. Ο Αυτόματος πιλότος γιστοσελίδας θα σας επιτρέψει επίσης να προσαρμόσετε τον σχεδιασμό και την διάταξη της ιστοσελίδας σας.\n\nΘα μπορείτε να κρατάτε ενήμερα τα έγγραφα που έχετε δημοσιεύσει στο Διαδίκτυο και να προσθέτετε ή να αφαιρείτε έγγραφα οποιαδήποτε στιγμή."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__4.STRING.TEXT
+msgid  "~Delete"
+msgstr "~Διαγραφή"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__5.STRING.TEXT
+msgid  "Introduction"
+msgstr "Εισαγωγή"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__6.STRING.TEXT
+msgid  "Select the documents you want to publish"
+msgstr "Επιλέξτε ποια έγγραφα επιθυμείτε να δημοσιευθούν"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__8.STRING.TEXT
+msgid  "Document information "
+msgstr "Πληροφορίες εγγράφου "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__9.STRING.TEXT
+msgid  "~Title:"
+msgstr "~Τίτλος:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__10.STRING.TEXT
+msgid  "~Summary: "
+msgstr "~Περίληψη: "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__11.STRING.TEXT
+msgid  "Au~thor:"
+msgstr "~Συγγραφέας:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__12.STRING.TEXT
+msgid  "~Export to file format:"
+msgstr "~Εξαγωγή σε αρχείο μορφής:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__13.STRING.TEXT
+msgid  "Enter general information for your web site"
+msgstr "Εισάγετε γενικές πληροφορίες για τον ιστότοπό σας"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__16.STRING.TEXT
+msgid  "Description:"
+msgstr "Περιγραφή:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__18.STRING.TEXT
+msgid  "Created:"
+msgstr "Δημιουργήθηκε:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__20.STRING.TEXT
+msgid  "E-mail:"
+msgstr "Ηλ. διεύθυνση:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__21.STRING.TEXT
+msgid  "Copyright notice:"
+msgstr "Δικαιώματα χρήσης/αντιγραφής:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__22.STRING.TEXT
+msgid  "Modified:"
+msgstr "Τροποποιήθηκε:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__24.STRING.TEXT
+msgid  "~Preview"
+msgstr "~Προεπισκόπηση"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__25.STRING.TEXT
+msgid  "Where do you want to publish your web site?"
+msgstr "Πού θέλετε να δημοσιεύσετε τον ιστότοπό σας;"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__26.STRING.TEXT
+msgid  "Publish the new web site:"
+msgstr "Δημοσιεύστε το νέο ιστότοπο:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__27.STRING.TEXT
+msgid  "To a ~local folder"
+msgstr "Σε ~τοπικό κατάλογο"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__28.STRING.TEXT
+msgid  "..."
+msgstr "..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__29.STRING.TEXT
+msgid  "To a ~web server via FTP"
+msgstr "Σε έναν ~εξυπηρετητή ιστού με FTP"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__31.STRING.TEXT
+msgid  "~Configure..."
+msgstr "~Προσαρμογή..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__32.STRING.TEXT
+msgid  "To a ZIP ~archive"
+msgstr "Σε ~αρχειοθήκη ZIP"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__34.STRING.TEXT
+msgid  "~Save settings (recommended)"
+msgstr "~Αποθήκευση ρυθμίσεων (συνιστάται)"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__35.STRING.TEXT
+msgid  "Save ~as:"
+msgstr "Αποθήκευση ~ως:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__36.STRING.TEXT
+msgid  "~Choose settings for the Web Wizard"
+msgstr "~Επιλογή ρυθμίσεων για τον αυτόματο πιλότο ιστοσελίδας"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__37.STRING.TEXT
+msgid  "Web site content "
+msgstr "Περιεχόμενο ιστοσελίδας "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__38.STRING.TEXT
+msgid  "~Add..."
+msgstr "~Προσθήκη..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__39.STRING.TEXT
+msgid  "Remo~ve"
+msgstr "~Αφαίρεση"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__40.STRING.TEXT
+msgid  "Choose a layout for the table of contents of your web site"
+msgstr "Επιλέξτε διάταξη για τον πίνακα περιεχομένων του ιστοτόπου σας"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__41.STRING.TEXT
+msgid  "Select a style for the table of contents page"
+msgstr "Επιλέξτε ένα στυλ για τη σελίδα του πίνακα περιεχομένων"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__42.STRING.TEXT
+msgid  "~Style:"
+msgstr "~Στυλ:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__48.STRING.TEXT
+msgid  "~Layouts: "
+msgstr "~Διατάξεις: "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__50.STRING.TEXT
+msgid  "~Description"
+msgstr "~Περιγραφή"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__51.STRING.TEXT
+msgid  "~Author"
+msgstr "~Συντάκτης"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__52.STRING.TEXT
+msgid  "Cr~eation date"
+msgstr "Ημερομηνία δ~ημιουργίας"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__53.STRING.TEXT
+msgid  "~Last change date"
+msgstr "~Ημερομηνία τροποποίησης"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__54.STRING.TEXT
+msgid  "~File name"
+msgstr "Ό~νομα αρχείου"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__55.STRING.TEXT
+msgid  "File forma~t"
+msgstr "Μορ~φή αρχείου"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__56.STRING.TEXT
+msgid  "File format ~icon"
+msgstr "Μορφή αρχείου ε~ικονιδίου"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__57.STRING.TEXT
+msgid  "Number ~of pages"
+msgstr "Αριθμός ~σελίδων"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__58.STRING.TEXT
+msgid  "~Size in KB"
+msgstr "~Μέγεθος σε KB"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__59.STRING.TEXT
+msgid  "Click 'Preview' to see a preview in your browser:"
+msgstr "Κάντε κλικ στο 'Προεπισκόπηση' για να δείτε μια προεπισκόπηση στον περιηγητή σας:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__60.STRING.TEXT
+msgid  "Customize the selected layout"
+msgstr "Προσαρμογή της επιλεγμένης διάταξης"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__61.STRING.TEXT
+msgid  "Include the following information for each document in the table of contents:"
+msgstr "Να συμπεριλαμβάνονται οι ακόλουθες πληροφορίες για κάθε έγγραφο στον πίνακα περιεχομένων:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__62.STRING.TEXT
+msgid  "Optimize the layout for screen resolution:"
+msgstr "Βελτιστοποίηση της διάταξης για την ανάλυση οθόνης:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__64.STRING.TEXT
+msgid  "~640x480"
+msgstr "~640x480"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__65.STRING.TEXT
+msgid  "~800x600"
+msgstr "~800x600"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__66.STRING.TEXT
+msgid  "~1024x768"
+msgstr "~1024x768"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__70.STRING.TEXT
+msgid  "Generating Your Web Site"
+msgstr "Δημιουργία της ιστοσελίδας σας"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__71.STRING.TEXT
+msgid  "%START - %END/%TOTAL"
+msgstr "%START - %END/%TOTAL"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__72.STRING.TEXT
+msgid  "myWebsite"
+msgstr "ηΙστοσελίδαΜου"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__73.STRING.TEXT
+msgid  "FTP target '%FILENAME' is a file."
+msgstr "Ο προορισμός FTP '%FILENAME' είναι ένα αρχείο."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__74.STRING.TEXT
+msgid  "The local target '%FILENAME' is a file."
+msgstr "Ο τοπικός προορισμός '%FILENAME' είναι ένα αρχείο."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__75.STRING.TEXT
+msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
+msgstr "Ο προορισμός ZIP '%FILENAME' υπάρχει ήδη. Θέλετε να διαγράψετε τον υπάρχοντα προορισμό; "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__76.STRING.TEXT
+msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "Ο φάκελος προορισμού FTP '%FILENAME' δεν είναι άδειος. Κάποια αρχεία μπορεί να διαγραφούν. Θέλετε να συνεχίσετε;"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__77.STRING.TEXT
+msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
+msgstr "Ο τοπικός φάκελος προορισμού '%FILENAME' δεν είναι άδειος. Κάποια αρχεία μπορεί να διαγραφούν. Θέλετε να συνεχίσετε;"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__78.STRING.TEXT
+msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
+msgstr "Υπάρχουν ήδη ρυθμίσεις με το τρέχον όνομα. Θέλετε να διαγράψετε τις υπάρχουσες ρυθμίσεις; "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__79.STRING.TEXT
+msgid  "Exporting documents..."
+msgstr "Εξαγωγή εγγράφων..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__80.STRING.TEXT
+msgid  "Preparing export..."
+msgstr "Προετοιμασία για εξαγωγή..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__81.STRING.TEXT
+msgid  "Copying layout files..."
+msgstr "Αντιγραφή αρχείων διάταξης..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__82.STRING.TEXT
+msgid  "Preparing table of contents generation..."
+msgstr "Προετοιμασία δημιουργίας πίνακα περιεχομένων..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__83.STRING.TEXT
+msgid  "Generating table of contents..."
+msgstr "Δημιουργία πίνακα περιεχομένων..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__84.STRING.TEXT
+msgid  "Initializing..."
+msgstr "Φόρτωση..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__86.STRING.TEXT
+msgid  "Preparing to publish..."
+msgstr "Προετοιμασία για δημοσίευση..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__87.STRING.TEXT
+msgid  "Publishing to local directory..."
+msgstr "Δημοσίευση σε τοπικό κατάλογο..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__88.STRING.TEXT
+msgid  "Publishing to FTP destination..."
+msgstr "Έκδοση στον προορισμό FTP..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__89.STRING.TEXT
+msgid  "Publishing to a ZIP archive..."
+msgstr "Έκδοση σε αρχείο ZIP..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___90.STRING.TEXT
+msgid  "Finishing..."
+msgstr "Ολοκλήρωση..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___94.STRING.TEXT
+msgid  "Graphic files"
+msgstr "Αρχεία γραφικών"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___95.STRING.TEXT
+msgid  "All files"
+msgstr "Όλα τα αρχεία"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___96.STRING.TEXT
+msgid  "~ZIP archive files"
+msgstr "Συμπιεσμένα αρχεία ~ZIP"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___98.STRING.TEXT
+msgid  "Background images"
+msgstr "Εικόνες παρασκηνίου"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___99.STRING.TEXT
+msgid  "Choose a background image: "
+msgstr "Επιλέξτε μια εικόνα παρασκηνίου: "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___100.STRING.TEXT
+msgid  "Icon sets"
+msgstr "Ομάδες εικονιδίων"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START___101.STRING.TEXT
+msgid  "Choose an icon set:"
+msgstr "Επιλέξτε ομάδα εικονιδίων:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__102.STRING.TEXT
+msgid  "Other..."
+msgstr "Άλλο..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__103.STRING.TEXT
+msgid  "None"
+msgstr "Κανένα"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__104.STRING.TEXT
+msgid  "Your web site was created successfully into: %FILENAME"
+msgstr "Η ιστοσελίδα σας δημιουργήθηκε επιτυχώς στο: %FILENAME"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__105.STRING.TEXT
+msgid  "One or more errors occurred when generating the web site."
+msgstr "Ένα ή περισσότερα σφάλματα προέκυψαν κατά την παραγωγή της ιστοσελίδας."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__106.STRING.TEXT
+msgid  "An error occurred while generating the table of contents page(s). "
+msgstr "Προέκυψε ένα σφάλμα κατά τη δημιουργία του πίνακα περιεχομένων σελίδας(-ων). "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__107.STRING.TEXT
+msgid  "An error occurred while copying the layout files. "
+msgstr "Παρουσιάστηκε σφάλμα κατά την αντιγραφή αρχείων διάταξης. "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__108.STRING.TEXT
+msgid  "An error occurred while gathering document information for '%FILENAME'. "
+msgstr "Σφάλμα κατά τη συλλογή των πληροφοριών για το έγγραφο '%FILENAME'. "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__109.STRING.TEXT
+msgid  "An error occurred while exporting the document '%FILENAME'."
+msgstr "Σφάλμα κατά την εξαγωγή του εγγράφου '%FILENAME'."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__110.STRING.TEXT
+msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr "Σφάλμα κατά την δημιουργία φακέλου για την εξαγωγή του '%FILENAME'."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__111.STRING.TEXT
+msgid  "A security error occurred while exporting the document '%FILENAME'."
+msgstr "Πρόεκυψε σφάλμα ασφάλειας κατά την εξαγωγή του εγγράφου '%FILENAME'."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__112.STRING.TEXT
+msgid  "An input/output error occurred while exporting the document '%FILENAME'."
+msgstr "Σφάλμα i/o κατά την εξαγωγή του εγγράφου '%FILENAME'."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__113.STRING.TEXT
+msgid  "An error occurred while copying media files to the temporary directory."
+msgstr "Σφάλμα κατά την αντιγραφή των αρχείων media στον προσωρινό φάκελο."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__114.STRING.TEXT
+msgid  "The web site could not be copied to the following destination: %URL"
+msgstr "Η ιστοσελίδα δεν μπόρεσε να αντιγραφεί στον ακόλουθο προορισμό: %URL"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__115.STRING.TEXT
+msgid  "An unexpected error occurred: %ERROR"
+msgstr "Ένα απροσδόκητο σφάλμα συνέβη : %ERROR"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__116.STRING.TEXT
+msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr "Ένα απροσδόκητο σφάλμα συνέβη κατά την επαλήθευση του αρχείου: '%FILENAME'"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__117.STRING.TEXT
+msgid  "%FILENAME' is a folder."
+msgstr "Το %FILENAME' είναι φάκελος."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__118.STRING.TEXT
+msgid  "Loading Web Wizard Settings..."
+msgstr "Φόρτωση των ρυθμίσεων του πιλότου ιστοσελίδας..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__119.STRING.TEXT
+msgid  "An unexpected error occurred."
+msgstr "Ένα απροσδόκητο σφάλμα συνέβη."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__120.STRING.TEXT
+msgid  "Validating documents..."
+msgstr "Επαλήθευση εγγράφων..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__121.STRING.TEXT
+msgid  "My Archive"
+msgstr "Το Αρχείο μου"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__122.STRING.TEXT
+msgid  "Introduction "
+msgstr "Εισαγωγή "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__123.STRING.TEXT
+msgid  "Documents "
+msgstr "Έγγραφα "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__124.STRING.TEXT
+msgid  "Main layout"
+msgstr "Κύρια διάταξη"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__125.STRING.TEXT
+msgid  "Layout details"
+msgstr "Λεπτομέρειες διάταξης"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__126.STRING.TEXT
+msgid  "Style"
+msgstr "Πρότυπο"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__127.STRING.TEXT
+msgid  "Web site information"
+msgstr "Πληροφορίες ιστοσελίδας"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__128.STRING.TEXT
+msgid  "Preview"
+msgstr "Προεπισκόπηση"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__130.STRING.TEXT
+msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
+msgstr "Οι επιλεγμένες ρυθμίσεις θα διαγραφούν.\n\nΘέλετε σίγουρα να διαγράψετε αυτές τις ρυθμίσεις; "
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__131.STRING.TEXT
+msgid  "%NUMBER pages"
+msgstr "%NUMBER σελίδες"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__132.STRING.TEXT
+msgid  "%NUMBER slides"
+msgstr "%NUMBER διαφάνειες"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__133.STRING.TEXT
+msgid  "Created: %DATE"
+msgstr "Δημιουργήθηκε: %DATE"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__134.STRING.TEXT
+msgid  "Last modified: %DATE"
+msgstr "Τελευταία τροποποίηση: %DATE"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__135.STRING.TEXT
+msgid  "Web Wizard Settings"
+msgstr "Ρυθμίσεις Αυτόματου πιλότου ιστοσελίδας"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__136.STRING.TEXT
+msgid  "Background image:"
+msgstr "Εικόνα παρασκηνίου:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__137.STRING.TEXT
+msgid  "Icon set:"
+msgstr "Ομάδα εικονιδίων:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__138.STRING.TEXT
+msgid  "The icon set is used for presentations in HTML format."
+msgstr "Η ομάδα εικονιδίων χρησιμοποιείται για παρουσιάσεις σε μορφή HTML."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__139.STRING.TEXT
+msgid  "HTML Metadata"
+msgstr "Μετα-δεδομένα HTML"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__140.STRING.TEXT
+msgid  "Choose..."
+msgstr "Επιλογή..."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__142.STRING.TEXT
+msgid  "<default>"
+msgstr "<προεπιλογή>"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__143.STRING.TEXT
+msgid  "Publishing via FTP Proxy is not supported."
+msgstr "Η δημοσίευση μέσω FTP Proxy δεν υποστηρίζεται."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__144.STRING.TEXT
+msgid  "<no background image>"
+msgstr "<χωρίς εικόνα παρασκηνίου>"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__145.STRING.TEXT
+msgid  "<no icon set>"
+msgstr "<δεν έχει ορισθεί εικονίδιο>"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__146.STRING.TEXT
+msgid  "The FTP directory '%FILENAME' could not be created."
+msgstr "Ο κατάλογος FTP '%FILENAME' δεν μπόρεσε να δημιουργηθεί."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__147.STRING.TEXT
+msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr "Ο φάκελος FTP '%FILENAME' δεν υπάρχει. \nΝα δημιουργηθεί ο φάκελος τώρα;"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__148.STRING.TEXT
+msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
+msgstr "Το αρχείο Zip '%FILENAME' δεν μπορεί να δημιουργηθεί: υπάρχει ένας κατάλογος με το ίδιο όνομα."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__149.STRING.TEXT
+msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
+msgstr "Δεν είναι δυνατή η δημιουργία του τοπικού '%FILENAME' καταλόγου. \nΠαρακαλώ ελέγξτε τα δικαιώματα εγγραφής."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__150.STRING.TEXT
+msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgstr "Ο τοπικός κατάλογος '%FILENAME' δεν υπάρχει. \nΝα δημιουργηθεί ο κατάλογος τώρα;"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__151.STRING.TEXT
+msgid  "Size: %NUMBERKB"
+msgstr "Μέγεθος: %NUMBERKB"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START__152.STRING.TEXT
+msgid  "File not found. Would you like to specify a new file location?"
+msgstr "Το αρχείο δεν βρέθηκε. Θέλετε να ορίσετε μια νέα τοποθεσία;"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__0.STRING.TEXT
+msgid  "FTP Connection"
+msgstr "Σύνδεση FTP"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__1.STRING.TEXT
+msgid  "~User name:"
+msgstr "Όνομα ~χρήστη:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__2.STRING.TEXT
+msgid  "~Password:"
+msgstr "Κωδικός ~πρόσβασης:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__3.STRING.TEXT
+msgid  "Connect"
+msgstr "Σύνδεση"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__4.STRING.TEXT
+msgid  "1. Enter FTP connection information."
+msgstr "1. Εισάγετε τις πληροφορίες σύνδεσης FTP."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__5.STRING.TEXT
+msgid  "~Server name or IP address:"
+msgstr "Ό~νομα διακομιστή ή διεύθυνση IP:"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__6.STRING.TEXT
+msgid  "2. Connect to the server."
+msgstr "2. Σύνδεση στο εξυπηρετητή."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__7.STRING.TEXT
+msgid  "3. ~Choose a remote directory (optional)."
+msgstr "3. ~Επιλέξτε έναν απομακρυσμένο κατάλογο (προαιρετικό)."
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__9.STRING.TEXT
+msgid  "Connection status is unknown"
+msgstr "Η κατάσταση της σύνδεσης είναι άγνωστη"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__10.STRING.TEXT
+msgid  "Connection was established successfully"
+msgstr "Η σύνδεση επιτεύχθηκε επιτυχώς"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__11.STRING.TEXT
+msgid  "Username or password is wrong"
+msgstr "Λανθασμένο όνομα χρήστη ή κωδικός πρόσβασης"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__12.STRING.TEXT
+msgid  "Could not resolve server name"
+msgstr "Δεν ήταν δυνατόν γίνει ανάλυση του ονόματος του υπολογιστή"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__13.STRING.TEXT
+msgid  "You do not have sufficient user rights"
+msgstr "Δεν έχετε τα απαραίτητα δικαιώματα χρήστη"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__14.STRING.TEXT
+msgid  "Cannot connect to server"
+msgstr "Δεν ήταν δυνατή η σύνδεση με τον εξυπηρετητή"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__15.STRING.TEXT
+msgid  "Unexpected error"
+msgstr "Απροσδόκητο σφάλμα"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__16.STRING.TEXT
+msgid  "FTP publishing directory"
+msgstr "Φάκελος δημοσίευσης FTP"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__17.STRING.TEXT
+msgid  "This is not an FTP folder"
+msgstr "Αυτός δεν είναι ένας φάκελος FTP"
+
+#: formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP__18.STRING.TEXT
+msgid  "Connecting..."
+msgstr "Σύνδεση..."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__1.STRING.TEXT
+msgid  "Agenda Wizard"
+msgstr "Αυτόματος πιλότος Προγράμματος Εργασίας"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__2.STRING.TEXT
+msgid  "Make ~manual changes to this agenda template"
+msgstr "~Χειροκίνητες αλλαγές σε αυτό το πρότυπο προγράμματος εργασίας"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__6.STRING.TEXT
+msgid  "Please choose the page design for the agenda"
+msgstr "Παρακαλώ επιλέξτε το σχέδιο σελίδας για το πρόγραμμα εργασίας"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__7.STRING.TEXT
+msgid  "Please select the headings you wish to include in your agenda template"
+msgstr "Παρακαλώ επιλέξτε τις επικεφαλίδες που θέλετε να συμπεριλάβετε στο πρότυπο προγράμματος εργασίας σας"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__8.STRING.TEXT
+msgid  "Please enter general information for the event"
+msgstr "Παρακαλώ εισάγετε γενικές πληροφορίες για το γεγονός"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__9.STRING.TEXT
+msgid  "Please specify items for the agenda"
+msgstr "Παρακαλώ υποδείξτε αντικείμενα για το πρόγραμμα εργασίας"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__10.STRING.TEXT
+msgid  "Please select the names you wish to include in your agenda template"
+msgstr "Παρακαλώ επιλέξτε τα ονόματα που επιθυμείτε να συμπεριλάβετε στο πρότυπο προγράμματος εργασίας σας"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__12.STRING.TEXT
+msgid  "Include form for recording minutes"
+msgstr "Συμπερίληψη φόρμας για την καταγραφή λεπτών"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__13.STRING.TEXT
+msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
+msgstr "Αυτός ο οδηγός θα σας βοηθήσει να δημιουργήσετε ένα πρότυπο προγράμματος εργασίας. Το πρότυπο μπορεί τότε να χρησιμοποιηθεί για την δημιουργία ενός προγράμματος εργασίας όποτε είναι επιθυμητό."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__14.STRING.TEXT
+msgid  "Time:"
+msgstr "Ώρα:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___16.STRING.TEXT
+msgid  "Location:"
+msgstr "Τοποθεσία:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__17.STRING.TEXT
+msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
+msgstr "Τα σύμβολα κράτησης θέσης θα χρησιμοποιηθούν σε κενά πεδία. Μπορείτε να αντικαταστήσετε τα σύμβολα κράτησης θέσης με κείμενο αργότερα."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__19.STRING.TEXT
+msgid  "Create an ~agenda from this template"
+msgstr "Δημιουργία ενός προγράμματος ερ~γασίας από αυτό το πρότυπο"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__20.STRING.TEXT
+msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
+msgstr "Για να δημιουργήσετε ένα νέο πρόγραμμα εργασίας από το πρότυπο, πηγαίνετε στην τοποθεσία όπου αποθηκεύσατε το πρότυπο και κάντε διπλό κλικ στο αρχείο."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__21.STRING.TEXT
+msgid  "Agenda item"
+msgstr "Αντικείμενο εργασίας"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__22.STRING.TEXT
+msgid  "Responsible"
+msgstr "Υπεύθυνος"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__23.STRING.TEXT
+msgid  "Duration"
+msgstr "Διάρκεια"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.STRING.TEXT
 #, fuzzy
@@ -241,11 +2616,6 @@ msgstr "Πρόεδρος"
 msgid  "Minute keeper"
 msgstr "Χρονομέτρης"
 
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.STRING.TEXT
-#, fuzzy
-msgid  "Moderator"
-msgstr "Επιμελητής"
-
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.STRING.TEXT
 #, fuzzy
 msgid  "Attendees"
@@ -257,39 +2627,455 @@ msgid  "Observers"
 msgstr "Παρατηρητές"
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.STRING.TEXT
-#, fuzzy
 msgid  "Facility personnel"
 msgstr "Προσωπικό διοίκησης"
 
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.STRING.TEXT
-#, fuzzy
-msgid  "Type of meeting"
-msgstr "Είδος συνάντησης"
-
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.STRING.TEXT
-#, fuzzy
-msgid  "Please read"
-msgstr "Παρακαλώ συνεχίστε την ανάγνωση"
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__31.STRING.TEXT
+msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
+msgstr "Το πρότυπο προγράμματος εργασίας θα συμπεριλάβει σύμβολα κράτησης θέσης για τα ονόματα των επιλεγμένων ατόμων. Κατά την δημιουργία ενός προγράμματος εργασίας από πρότυπο, μπορείτε να αντικαταστήσετε αυτά τα σύμβολα κράτησης θέσης με τα κατάλληλα ονόματα."
 
 #: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.STRING.TEXT
 #, fuzzy
 msgid  "Please bring"
 msgstr "Παρακαλώ προσκομίστε"
 
-#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.STRING.TEXT
-#, fuzzy
-msgid  "Notes"
-msgstr "Σημειώσεις"
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__36.STRING.TEXT
+msgid  "The agenda template will include placeholders for the selected items."
+msgstr "Το πρότυπο πρόγραμμα εργασίας θα συμπεριλαμβάνει σύμβολα κράτησης θέσης για τα επιλεγμένα αντικείμενα."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__39.STRING.TEXT
+msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
+msgstr "Αυτός ο οδηγός δημιουργεί ένα πρότυπο προγράμματος εργασίας που σας επιτρέπει να δημιουργήσετε πολλαπλά προγράμματα εργασίας με την ίδια διάταξη και ρυθμίσεις."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__40.STRING.TEXT
+msgid  "Page design:"
+msgstr "Σχεδίαση σελίδας:"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__41.STRING.TEXT
+msgid  "myAgendaTemplate.stw"
+msgstr "τοΠρότυποΕργασίαςμου.stw"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__42.STRING.TEXT
+msgid  "My Agenda Template"
+msgstr "Πρότυπο προγράμματος εργασίας"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__43.STRING.TEXT
+msgid  "An unexpected error occurred while saving the agenda template."
+msgstr "Ένα απροσδόκητο σφάλμα συνέβη κατά την αποθήκευση του προτύπου του προγράμματος εργασίας."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__44.STRING.TEXT
+msgid  "Name"
+msgstr "Όνομα"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__45.STRING.TEXT
+msgid  "Date"
+msgstr "Ημερομηνία"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__46.STRING.TEXT
+msgid  "Time"
+msgstr "Ώρα"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START___47.STRING.TEXT
+msgid  "Location"
+msgstr "Τοποθεσία"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__48.STRING.TEXT
+msgid  "Click to replace this text"
+msgstr "Κάντε κλίκ για να αντικαταστήσετε αυτό το κείμενο"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__51.STRING.TEXT
+msgid  "General information"
+msgstr "Γενικές πληροφορίες"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__52.STRING.TEXT
+msgid  "Headings to include"
+msgstr "Επικεφαλίδες προς συμπερίληψη"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__53.STRING.TEXT
+msgid  "Names"
+msgstr "Ονόματα"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__54.STRING.TEXT
+msgid  "Agenda items"
+msgstr "Αντικείμενα προγράμματος εργασίας"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__56.STRING.TEXT
+msgid  "An unexpected error occurred while opening the agenda template."
+msgstr "Παρουσιάστηκε ένα απροσδόκητο σφάλμα κατά το άνοιγμα του προτύπου του προγράμματος εργασίας."
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__68.STRING.TEXT
+msgid  "Insert"
+msgstr "Εισαγωγή"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__69.STRING.TEXT
+msgid  "Remove"
+msgstr "Αφαίρεση"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__70.STRING.TEXT
+msgid  "Move up"
+msgstr "Πάνω"
+
+#: formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START__71.STRING.TEXT
+msgid  "Move down"
+msgstr "Κάτω"
+
+#: importwizard/importwi.src#SHELPBUTTON.STRING.TEXT
+msgid  "~Help"
+msgstr "~Βοήθεια"
+
+#: importwizard/importwi.src#SCANCELBUTTON.STRING.TEXT
+msgid  "~Cancel"
+msgstr "Α~κύρωση"
+
+#: importwizard/importwi.src#SBACKBUTTON.STRING.TEXT
+msgid  "<< ~Back"
+msgstr "<< ~Πίσω"
+
+#: importwizard/importwi.src#SNEXTBUTTON.STRING.TEXT
+msgid  "Ne~xt >>"
+msgstr "Επόμε~νο >>"
+
+#: importwizard/importwi.src#SBEGINBUTTON.STRING.TEXT
+msgid  "~Convert"
+msgstr "~Μετατροπή"
+
+#: importwizard/importwi.src#SCLOSEBUTTON.STRING.TEXT
+msgid  "~Close"
+msgstr "~Κλείσιμο"
+
+#: importwizard/importwi.src#SWELCOMETEXTLABEL1.STRING.TEXT
+msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
+msgstr "Αυτό το πρόγραμμα αυτόματου πιλότου μετατρέπει εγγράφα που δημιουργήθηκαν με μορφή του %PRODUCTNAME και του Microsoft Office σε έγγραφα με μορφή OpenDocument."
+
+#: importwizard/importwi.src#SWELCOMETEXTLABEL2.STRING.TEXT
+msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
+msgstr "Παρακαλώ προσέξτε ότι κατά την μετατροπή των εγγράφων της Microsoft παύουν να ισχύουν οι τυχόν συνημμένες μακροεντολές του VBA."
+
+#: importwizard/importwi.src#SWELCOMETEXTLABEL3.STRING.TEXT
+msgid  "Select the document type for conversion:"
+msgstr "Επιλέξτε τους τύπους εγγράφων που θέλετε να μετατρέψετε:"
+
+#: importwizard/importwi.src#SMSTEMPLATECHECKBOX_1_.STRING.TEXT
+msgid  "Word templates"
+msgstr "Πρότυπα word"
+
+#: importwizard/importwi.src#SMSTEMPLATECHECKBOX_2_.STRING.TEXT
+msgid  "Excel templates"
+msgstr "Πρότυπα excel"
+
+#: importwizard/importwi.src#SMSTEMPLATECHECKBOX_3_.STRING.TEXT
+msgid  "PowerPoint templates"
+msgstr "Πρότυπα PowerPoint"
+
+#: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_1_.STRING.TEXT
+msgid  "Word documents"
+msgstr "Έγγραφα word"
+
+#: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_2_.STRING.TEXT
+msgid  "Excel documents"
+msgstr "Έγγραφα excel"
+
+#: importwizard/importwi.src#SMSDOCUMENTCHECKBOX_3_.STRING.TEXT
+msgid  "PowerPoint documents"
+msgstr "Έγγραφα PowerPoint"
+
+#: importwizard/importwi.src#SSEARCHINSUBDIR.STRING.TEXT
+msgid  "Including subdirectories"
+msgstr "Μαζί με υποκαταλόγους"
+
+#: importwizard/importwi.src#SMSCONTAINERNAME.STRING.TEXT
+msgid  "Microsoft Office"
+msgstr "Microsoft Office"
+
+#: importwizard/importwi.src#SSUMMARYHEADER.STRING.TEXT
+msgid  "Summary:"
+msgstr "Σύνοψη:"
+
+#: importwizard/importwi.src#STEXTIMPORTLABEL.STRING.TEXT
+msgid  "Import from:"
+msgstr "Εισαγωγή από:"
+
+#: importwizard/importwi.src#STEXTEXPORTLABEL.STRING.TEXT
+msgid  "Save to:"
+msgstr "Αποθήκευση σε:"
+
+#: importwizard/importwi.src#SGROUPNAMEDEFAULT.STRING.TEXT
+msgid  "Imported_Templates"
+msgstr "Εισαχθέντα_Πρότυπα"
+
+#: importwizard/importwi.src#SPROGRESSDESC1.STRING.TEXT
+msgid  "Progress: "
+msgstr "Πρόοδος: "
+
+#: importwizard/importwi.src#SPROGRESSONEDOC.STRING.TEXT
+msgid  "Document"
+msgstr "Έγγραφο"
+
+#: importwizard/importwi.src#SPROGRESSMOREDOCS.STRING.TEXT
+msgid  "Documents"
+msgstr "Έγγραφα"
+
+#: importwizard/importwi.src#SPROGRESSMORETEMPLATES.STRING.TEXT
+msgid  "Templates"
+msgstr "Πρότυπα"
+
+#: importwizard/importwi.src#SNODIRCREATION.STRING.TEXT
+msgid  "The '%1' directory cannot be created: "
+msgstr "Δεν είναι δυνατόν να δημιουργηθεί ο '%1' κατάλογος: "
+
+#: importwizard/importwi.src#SMSGDIRNOTTHERE.STRING.TEXT
+msgid  "The '%1' directory does not exist."
+msgstr "Ο κατάλογος '%1' δεν υπάρχει."
+
+#: importwizard/importwi.src#SQUERYFORNEWCREATION.STRING.TEXT
+msgid  "Do you want to create it now?"
+msgstr "Θέλετε να δημιουργηθεί τώρα;"
+
+#: importwizard/importwi.src#SFILEEXISTS.STRING.TEXT
+msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Το αρχείο '<1>' υπάρχει ήδη.<CR>Θέλετε να αντικατασταθεί;"
+
+#: importwizard/importwi.src#SMOREPATHSERROR3.STRING.TEXT
+msgid  "Directories do not exist"
+msgstr "Οι κατάλογοι δεν υπάρχουν"
+
+#: importwizard/importwi.src#SOVERWRITEALLFILES.STRING.TEXT
+msgid  "Do you want to overwrite documents without being asked?"
+msgstr "Θέλετε να αντικατασταθούν τα έγγραφα χωρίς να ερωτηθείτε;"
+
+#: importwizard/importwi.src#SREEDITMACRO.STRING.TEXT
+msgid  "Document macro has to be revised."
+msgstr "Πρέπει να αναθεωρηθεί η μακροεντολή του εγγράφου."
+
+#: importwizard/importwi.src#SCOULDNOTSAVEDOCUMENT.STRING.TEXT
+msgid  "Document '<1>' could not be saved."
+msgstr "Το έγγραφο '<1>' δε μπόρεσε να αποθηκευτεί."
+
+#: importwizard/importwi.src#SCOULDNOTOPENDOCUMENT.STRING.TEXT
+msgid  "Document '<1>' could not be opened."
+msgstr "Το έγγραφο '<1>' δε μπόρεσε να φορτωθεί."
+
+#: importwizard/importwi.src#SCONVERTERROR1.STRING.TEXT
+msgid  "Do you really want to terminate conversion at this point?"
+msgstr "Θέλετε πραγματικά να διακοπεί η μετατροπή σε αυτό το σημείο;"
+
+#: importwizard/importwi.src#SCONVERTERROR2.STRING.TEXT
+msgid  "Cancel Wizard"
+msgstr "Ακύρωση πιλότου"
+
+#: importwizard/importwi.src#SRTERRORDESC.STRING.TEXT
+msgid  "An unexpected error has occurred in the wizard."
+msgstr "Παρουσιάστηκε ένα μη αναμενόμενο σφάλμα στον αυτόματο πιλότο."
+
+#: importwizard/importwi.src#SRTERRORHEADER.STRING.TEXT
+msgid  "Error"
+msgstr "Σφάλμα"
+
+#: importwizard/importwi.src#SPATHDIALOGMESSAGE.STRING.TEXT
+msgid  "Select a directory"
+msgstr "Επιλέξτε κατάλογο"
+
+#: importwizard/importwi.src#SDIALOGTITLE.STRING.TEXT
+msgid  "Document Converter"
+msgstr "Μετατροπέας εγγράφων"
+
+#: importwizard/importwi.src#SPROGRESSPAGE1.STRING.TEXT
+msgid  "Progress"
+msgstr "Πρόοδος εργασίας"
+
+#: importwizard/importwi.src#SPROGRESSPAGE2.STRING.TEXT
+msgid  "Retrieving the relevant documents:"
+msgstr "Εύρεση των σχετικών εγγράφων:"
+
+#: importwizard/importwi.src#SPROGRESSPAGE3.STRING.TEXT
+msgid  "Converting the documents"
+msgstr "Μετατροπή των εγγράφων"
+
+#: importwizard/importwi.src#SPROGRESSFOUND.STRING.TEXT
+msgid  "Found:"
+msgstr "Βρέθηκαν:"
+
+#: importwizard/importwi.src#SPROGRESSPAGE5.STRING.TEXT
+msgid  "%1 found"
+msgstr "βρέθηκαν %1"
+
+#: importwizard/importwi.src#SREADY.STRING.TEXT
+msgid  "Finished"
+msgstr "Ολοκληρώθηκε"
+
+#: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_1_.STRING.TEXT
+msgid  "Text templates"
+msgstr "Πρότυπα κειμένων"
+
+#: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_2_.STRING.TEXT
+msgid  "Spreadsheet templates"
+msgstr "Πρότυπα υπολογιστικών φύλλων"
+
+#: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_3_.STRING.TEXT
+msgid  "Drawing/presentation templates"
+msgstr "Πρότυπα παρουσιάσεων/σχεδίων"
 
 #: importwizard/importwi.src#SXMLTEMPLATECHECKBOX_4_.STRING.TEXT
 #, fuzzy
 msgid  "Master documents"
 msgstr "Κύρια έγγραφα"
 
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_1_.STRING.TEXT
+msgid  "Text documents"
+msgstr "Έγγραφα κειμένων"
+
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_2_.STRING.TEXT
+msgid  "Spreadsheets"
+msgstr "Έγγραφα υπολογιστικών φύλλων"
+
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_3_.STRING.TEXT
+msgid  "Drawing/presentation documents"
+msgstr "Έγγραφα παρουσιάσεων/σχεδίων"
+
+#: importwizard/importwi.src#SXMLDOCUMENTCHECKBOX_4_.STRING.TEXT
+msgid  "Master documents/formulas"
+msgstr "Κύρια έγγραφα/τύποι"
+
+#: importwizard/importwi.src#SXMLHELPERAPPLICATIONS_2.STRING.TEXT
+msgid  "Formulas"
+msgstr "Τύποι"
+
+#: importwizard/importwi.src#SSOURCEDOCUMENTS.STRING.TEXT
+msgid  "Source documents"
+msgstr "Έγγραφα προέλευσης"
+
+#: importwizard/importwi.src#STARGETDOCUMENTS.STRING.TEXT
+msgid  "Target documents"
+msgstr "Έγγραφα προορισμού"
+
+#: importwizard/importwi.src#SCREATELOGFILE.STRING.TEXT
+msgid  "Create log file"
+msgstr "Δημιουργία αρχείου καταγραφής"
+
+#: importwizard/importwi.src#SLOGFILESUMMARY.STRING.TEXT
+msgid  "<COUNT> documents converted"
+msgstr "<COUNT> documents converted"
+
+#: importwizard/importwi.src#SLOGFILEHELPTEXT.STRING.TEXT
+msgid  "A log file will be created in your work directory"
+msgstr "Ένα αρχείο καταγραφής θα δημιουργηθεί στον κατάλογο εργασίας"
+
+#: importwizard/importwi.src#SSHOWLOGFILE.STRING.TEXT
+msgid  "Show log file"
+msgstr "Εμφάνιση αρχείου καταγραφής"
+
+#: importwizard/importwi.src#SSUMINCLUSIVESUBDIR.STRING.TEXT
+msgid  "All subdirectories will be taken into account"
+msgstr "Θα εξεταστούν όλοι οι υποκατάλογοι"
+
+#: importwizard/importwi.src#SSUMSAVEDOKUMENTE.STRING.TEXT
+msgid  "These will be exported to the following directory:"
+msgstr "Η εξαγωγή τους θα γίνει στον εξής κατάλογο:"
+
+#: importwizard/importwi.src#SSUMSOTEXTDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα έγγραφα κειμένου %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMSOTABLEDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα υπολογιστικά φύλλα %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMSODRAWDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα έγγραφα σχεδίασης και παρουσίασης %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMSOMATHDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα έγγραφα τύπων %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMSOTEXTTEMPLATES.STRING.TEXT
+msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα πρότυπα κειμένου %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMSOTABLETEMPLATES.STRING.TEXT
+msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα πρότυπα πίνακα %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMSODRAWTEMPLATES.STRING.TEXT
+msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα πρότυπα σχεδίασης και παρουσίασης %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMSOGLOBALDOCUMENTS.STRING.TEXT
+msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα κύρια έγγραφα %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMMSTEXTDOCUMENTS.STRING.TEXT
+msgid  "All Word documents contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα έγγραφα Word που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMMSTABLEDOCUMENTS.STRING.TEXT
+msgid  "All Excel documents contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα έγγραφα του Excel που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMMSDRAWDOCUMENTS.STRING.TEXT
+msgid  "All PowerPoint documents contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα έγγραφα του PowerPoint που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMMSTEXTTEMPLATES.STRING.TEXT
+msgid  "All Word templates contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα πρότυπα του Word που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMMSTABLETEMPLATES.STRING.TEXT
+msgid  "All Excel templates contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα πρότυπα του Excel που περιέχονται στον παρακάτω κατάλογο:"
+
+#: importwizard/importwi.src#SSUMMSDRAWTEMPLATES.STRING.TEXT
+msgid  "All PowerPoint templates contained in the following directory will be imported:"
+msgstr "Θα εισαχθούν όλα τα πρότυπα του PowerPoint που περιέχονται στον παρακάτω κατάλογο:"
+
+#: schedule/schedule.src#DLGCALTITLE.STRING.TEXT
+msgid  "%PRODUCTNAME Calendar"
+msgstr "Ημερολόγιο %PRODUCTNAME"
+
+#: schedule/schedule.src#DLGCALTITLEBACK.STRING.TEXT
+msgid  "Back"
+msgstr "Πίσω"
+
 #: schedule/schedule.src#DLGCALTITLEOWNDATA.STRING.TEXT
 #, fuzzy
 msgid  "Personal Data"
 msgstr "Προσωπικά δεδομένα"
+
+#: schedule/schedule.src#DLGSCHDLTITLE.STRING.TEXT
+msgid  "Add Holidays to Calendar"
+msgstr "Υπολογισμός ημερών αργίας"
+
+#: schedule/schedule.src#DLGOK.STRING.TEXT
+msgid  "Create"
+msgstr "Δημιουργία"
+
+#: schedule/schedule.src#DLGCANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr "Ακύρωση"
+
+#: schedule/schedule.src#DLGCALFRAMEOPTION.STRING.TEXT
+msgid  "Calendar"
+msgstr "Ημερολόγιο"
+
+#: schedule/schedule.src#DLGCALOPTIONYEAR.STRING.TEXT
+msgid  "~Year Overview"
+msgstr "~Σύνοψη έτους"
+
+#: schedule/schedule.src#DLGCALOPTIONMONTH.STRING.TEXT
+msgid  "~Month"
+msgstr "~Μήνας"
+
+#: schedule/schedule.src#DLGSCHDLDESCRIPTION.STRING.TEXT
+msgid  "Add holidays for"
+msgstr "Υπολογισμός ημερών αργίας για"
+
+#: schedule/schedule.src#DLGSCHDLCOUNTRY.STRING.TEXT
+msgid  "USA"
+msgstr "USA-ΗΠΑ"
+
+#: schedule/schedule.src#DLGTIME.STRING.TEXT
+msgid  "Time Frame"
+msgstr "Χρονικό διάστημα"
 
 #: schedule/schedule.src#DLGYEAR.STRING.TEXT
 #, fuzzy
@@ -300,3 +3086,343 @@ msgstr "Έτος"
 #, fuzzy
 msgid  "Month"
 msgstr "Μήνας"
+
+#: schedule/schedule.src#DLGCALINSERT.STRING.TEXT
+msgid  "~Insert"
+msgstr "~Εισαγωγή"
+
+#: schedule/schedule.src#DLGCALDELETE.STRING.TEXT
+msgid  "~Delete"
+msgstr "Διαγρα~φή"
+
+#: schedule/schedule.src#DLGCALNEWEVENT.STRING.TEXT
+msgid  "New Event"
+msgstr "Νέο συμβάν"
+
+#: schedule/schedule.src#DLGCALEVENT.STRING.TEXT
+msgid  "Event"
+msgstr "Συμβάν"
+
+#: schedule/schedule.src#DLGCALEVENTONCE.STRING.TEXT
+msgid  "One-Time"
+msgstr "Μοναδική φορά"
+
+#: schedule/schedule.src#DLGCALEVENTDAY.STRING.TEXT
+msgid  "Day"
+msgstr "Ημέρα"
+
+#: schedule/schedule.src#DLGBITMAPFILE.STRING.TEXT
+msgid  "usa.bmp"
+msgstr "usa.bmp"
+
+#: schedule/schedule.src#DLGSTATE.STRING.TEXT
+msgid  "Public holidays"
+msgstr "Γενικές αργίες"
+
+#: schedule/schedule.src#DLGMONTH.STRING.TEXT
+msgid  "January"
+msgstr "Ιανουαρίου"
+
+#: schedule/schedule.src#DLGMONTH_1.STRING.TEXT
+msgid  "February"
+msgstr "Φεβρουαρίου"
+
+#: schedule/schedule.src#DLGMONTH_2.STRING.TEXT
+msgid  "March"
+msgstr "Μαρτίου"
+
+#: schedule/schedule.src#DLGMONTH_3.STRING.TEXT
+msgid  "April"
+msgstr "Απριλίου"
+
+#: schedule/schedule.src#DLGMONTH_4.STRING.TEXT
+msgid  "May"
+msgstr "Μαΐου"
+
+#: schedule/schedule.src#DLGMONTH_5.STRING.TEXT
+msgid  "June"
+msgstr "Ιουνίου"
+
+#: schedule/schedule.src#DLGMONTH_6.STRING.TEXT
+msgid  "July"
+msgstr "Ιουλίου"
+
+#: schedule/schedule.src#DLGMONTH_7.STRING.TEXT
+msgid  "August"
+msgstr "Αυγούστου"
+
+#: schedule/schedule.src#DLGMONTH_8.STRING.TEXT
+msgid  "September"
+msgstr "Σεπτεμβρίου"
+
+#: schedule/schedule.src#DLGMONTH_9.STRING.TEXT
+msgid  "October"
+msgstr "Οκτωβρίου"
+
+#: schedule/schedule.src#DLGMONTH_10.STRING.TEXT
+msgid  "November"
+msgstr "Νοεμβρίου"
+
+#: schedule/schedule.src#DLGMONTH_11.STRING.TEXT
+msgid  "December"
+msgstr "Δεκεμβρίου"
+
+#: schedule/schedule.src#MSGCALERRORTITLE.STRING.TEXT
+msgid  "Yearly / Monthly Calendar"
+msgstr "Ημερολόγιο Ετήσιο / Mηνιαίο"
+
+#: schedule/schedule.src#MSGCALERROR.STRING.TEXT
+msgid  "An error occurred while creating the calendar."
+msgstr "Παρουσιάστηκε σφάλμα κατά την δημιουργία του ημερολογίου."
+
+#: schedule/schedule.src#MSGCALREMOVETITLE.STRING.TEXT
+msgid  "Delete event entries"
+msgstr "Διαγραφή εγγραφών συμβάντων"
+
+#: schedule/schedule.src#MSGCALREMOVE.STRING.TEXT
+msgid  "Delete the selected entries?"
+msgstr "Διαγραφή των επιλεγμένων εγγραφών;"
+
+#: schedule/schedule.src#STLWORKDAY.STRING.TEXT
+msgid  "Workweek"
+msgstr "Εργάσιμη εβδομάδα"
+
+#: schedule/schedule.src#STLWEEKEND.STRING.TEXT
+msgid  "Weekend"
+msgstr "Σαββατοκύριακο"
+
+#: schedule/schedule.src#SPROGRESS.STRING.TEXT
+msgid  "Progress:"
+msgstr "Πρόοδος:"
+
+#: template/template.src#SAMPLES.STRING.TEXT
+msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
+msgstr "Για να μπορέσετε να χρησιμοποιήσετε όλες τις λειτουργίες αυτού του παραδείγματος θα πρέπει να δημιουργήσετε ένα νέο έγγραφο βασισμένο σε αυτό το πρότυπο."
+
+#: template/template.src#SAMPLES___1.STRING.TEXT
+msgid  "Remarks"
+msgstr "Συμβουλή"
+
+#: template/template.src#STYLES.STRING.TEXT
+msgid  "Theme Selection"
+msgstr "Επιλογή θεμάτων"
+
+#: template/template.src#STYLES___1.STRING.TEXT
+msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
+msgstr "Σφάλμα κατά την προσωρινή αποθήκευση του τρέχοντος εγγράφου! Δεν είναι δυνατή η αναίρεση της ακόλουθης ενέργειας."
+
+#: template/template.src#STYLES___2.STRING.TEXT
+msgid  "~Cancel"
+msgstr "Α~κύρωση"
+
+#: template/template.src#STYLES___3.STRING.TEXT
+msgid  "~OK"
+msgstr "~OK"
+
+#: template/template.src#AGENDADLGNAME.STRING.TEXT
+msgid  "Minutes Template"
+msgstr "Πρότυπο πρωτόκολλου"
+
+#: template/template.src#AGENDADLGNOCANCEL.STRING.TEXT
+msgid  "An option must be confirmed."
+msgstr "Πρέπει να γίνει επιβεβαίωση μιας επιλογής."
+
+#: template/template.src#AGENDADLGFRAME.STRING.TEXT
+msgid  "Minutes Type"
+msgstr "Τύπος πρωτόκολλου"
+
+#: template/template.src#AGENDADLGBUTTON1.STRING.TEXT
+msgid  "Results Minutes"
+msgstr "Πρωτόκολλο αποτελεσμάτων"
+
+#: template/template.src#AGENDADLGBUTTON2.STRING.TEXT
+msgid  "Evaluation Minutes"
+msgstr "Πρωτόκολλο εξέλιξης"
+
+#: template/template.src#CORRESPONDENCENOTEXTMARK.STRING.TEXT
+msgid  "The bookmark 'Recipient' is missing."
+msgstr "Ο 'Αποδέκτης' ο σελιδοδείκτης λείπει."
+
+#: template/template.src#CORRESPONDENCENOTEXTMARK_1.STRING.TEXT
+msgid  "Form letter fields can not be included."
+msgstr "Δεν είναι δυνατόν να γίνει εισαγωγή των πεδίων των εγκυκλίων επιστολών."
+
+#: template/template.src#CORRESPONDENCEMSGERROR.STRING.TEXT
+msgid  "An error has occurred."
+msgstr "Προέκυψε ένα σφάλμα."
+
+#: template/template.src#CORRESPONDENCEDIALOG.STRING.TEXT
+msgid  "Addressee"
+msgstr "Παραλήπτης"
+
+#: template/template.src#CORRESPONDENCEDIALOG_1.STRING.TEXT
+msgid  "One recipient"
+msgstr "Ένας παραλήπτης"
+
+#: template/template.src#CORRESPONDENCEDIALOG_2.STRING.TEXT
+msgid  "Several recipients (address database)"
+msgstr "Πολλοί παραλήπτες (βάση δεδομένων διευθύνσεων)"
+
+#: template/template.src#CORRESPONDENCEDIALOG_3.STRING.TEXT
+msgid  "Use of This Template"
+msgstr "Χρήση αυτού του προτύπου"
+
+#: template/template.src#CORRESPONDENCEFIELDS.STRING.TEXT
+msgid  "Click placeholder and overwrite"
+msgstr "Κάντε κλικ στο πλαίσιο δείκτη τοποθέτησης και αντικαταστήστε τον"
+
+#: template/template.src#CORRESPONDENCEFIELDS_1.STRING.TEXT
+msgid  "Company"
+msgstr "Εταιρία"
+
+#: template/template.src#CORRESPONDENCEFIELDS_2.STRING.TEXT
+msgid  "Department"
+msgstr "Τμήμα"
+
+#: template/template.src#CORRESPONDENCEFIELDS_3.STRING.TEXT
+msgid  "First Name"
+msgstr "Όνομα"
+
+#: template/template.src#CORRESPONDENCEFIELDS_4.STRING.TEXT
+msgid  "Last Name"
+msgstr "Επώνυμο"
+
+#: template/template.src#CORRESPONDENCEFIELDS_5.STRING.TEXT
+msgid  "Street"
+msgstr "Οδός"
+
+#: template/template.src#CORRESPONDENCEFIELDS_6.STRING.TEXT
+msgid  "Country"
+msgstr "Χώρα"
+
+#: template/template.src#CORRESPONDENCEFIELDS_7.STRING.TEXT
+msgid  "ZIP/Postal Code"
+msgstr "Ταχυδρομικός κώδικας"
+
+#: template/template.src#CORRESPONDENCEFIELDS_8.STRING.TEXT
+msgid  "City"
+msgstr "Πόλη"
+
+#: template/template.src#CORRESPONDENCEFIELDS_9.STRING.TEXT
+msgid  "Title"
+msgstr "Τίτλος"
+
+#: template/template.src#CORRESPONDENCEFIELDS_10.STRING.TEXT
+msgid  "Position"
+msgstr "Θέση"
+
+#: template/template.src#CORRESPONDENCEFIELDS_11.STRING.TEXT
+msgid  "Form of Address"
+msgstr "Προσφώνηση"
+
+#: template/template.src#CORRESPONDENCEFIELDS_12.STRING.TEXT
+msgid  "Initials"
+msgstr "Αρχικά"
+
+#: template/template.src#CORRESPONDENCEFIELDS_13.STRING.TEXT
+msgid  "Salutation"
+msgstr "Χαιρετισμός"
+
+#: template/template.src#CORRESPONDENCEFIELDS_14.STRING.TEXT
+msgid  "Home Phone"
+msgstr "Τηλέφωνο οικίας"
+
+#: template/template.src#CORRESPONDENCEFIELDS_15.STRING.TEXT
+msgid  "Work Phone"
+msgstr "Τηλέφωνο εργασίας"
+
+#: template/template.src#CORRESPONDENCEFIELDS_16.STRING.TEXT
+msgid  "Fax"
+msgstr "Φαξ"
+
+#: template/template.src#CORRESPONDENCEFIELDS_17.STRING.TEXT
+msgid  "E-Mail"
+msgstr "Διεύθυνση ηλεκτρονικού ταχυδρομείου"
+
+#: template/template.src#CORRESPONDENCEFIELDS_18.STRING.TEXT
+msgid  "URL"
+msgstr "URL"
+
+#: template/template.src#CORRESPONDENCEFIELDS_19.STRING.TEXT
+msgid  "Notes"
+msgstr "Σημειώσεις"
+
+#: template/template.src#CORRESPONDENCEFIELDS_20.STRING.TEXT
+msgid  "Alt. Field 1"
+msgstr "Εναλλ. Πεδίο 1"
+
+#: template/template.src#CORRESPONDENCEFIELDS_21.STRING.TEXT
+msgid  "Alt. Field 2"
+msgstr "Εναλλ. Πεδίο 2"
+
+#: template/template.src#CORRESPONDENCEFIELDS_22.STRING.TEXT
+msgid  "Alt. Field 3"
+msgstr "Εναλλ. Πεδίο 3"
+
+#: template/template.src#CORRESPONDENCEFIELDS_23.STRING.TEXT
+msgid  "Alt. Field 4"
+msgstr "Εναλλ. Πεδίο 4"
+
+#: template/template.src#CORRESPONDENCEFIELDS_24.STRING.TEXT
+msgid  "ID"
+msgstr "ID"
+
+#: template/template.src#CORRESPONDENCEFIELDS_25.STRING.TEXT
+msgid  "State"
+msgstr "Νομός"
+
+#: template/template.src#CORRESPONDENCEFIELDS_26.STRING.TEXT
+msgid  "Office Phone"
+msgstr "Τηλέφωνο γραφείου"
+
+#: template/template.src#CORRESPONDENCEFIELDS_27.STRING.TEXT
+msgid  "Pager"
+msgstr "Βομβητής"
+
+#: template/template.src#CORRESPONDENCEFIELDS_28.STRING.TEXT
+msgid  "Mobile Phone"
+msgstr "Κινητό τηλέφωνο"
+
+#: template/template.src#CORRESPONDENCEFIELDS_29.STRING.TEXT
+msgid  "Other Phone"
+msgstr "Άλλο τηλέφωνο"
+
+#: template/template.src#CORRESPONDENCEFIELDS_30.STRING.TEXT
+msgid  "Calendar URL"
+msgstr "URL ημερολογίου"
+
+#: template/template.src#CORRESPONDENCEFIELDS_31.STRING.TEXT
+msgid  "Invite"
+msgstr "Πρόσκληση"
+
+#: template/template.src#TEXTFIELD.STRING.TEXT
+msgid  "User data field is not defined!"
+msgstr "Δεν ορίστηκε το πεδίο των δεδομένων του χρήστη!"
+
+#: template/template.src#NEWSLETTER.STRING.TEXT
+msgid  "General layout"
+msgstr "Γενική διάταξη"
+
+#: template/template.src#NEWSLETTER___1.STRING.TEXT
+msgid  "Default layout"
+msgstr "Προεπιλεγμένη διάταξη"
+
+#: template/template.src#NEWSLETTER___2.STRING.TEXT
+msgid  "Commemorative publication layout"
+msgstr "Διάταξη δημοσίευσης υπενθύμισης"
+
+#: template/template.src#NEWSLETTER___3.STRING.TEXT
+msgid  "Brochure layout"
+msgstr "Διάταξη φυλλαδίου"
+
+#: template/template.src#NEWSLETTER___10.STRING.TEXT
+msgid  "Format"
+msgstr "Μορφή"
+
+#: template/template.src#NEWSLETTER___11.STRING.TEXT
+msgid  "Single-sided"
+msgstr "Μονής όψης"
+
+#: template/template.src#NEWSLETTER___12.STRING.TEXT
+msgid  "Double-sided"
+msgstr "Διπλής όψης"

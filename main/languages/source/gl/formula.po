@@ -47,6 +47,10 @@ msgstr "AND"
 msgid  "OR"
 msgstr "OR"
 
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_XOR.STRING.TEXT
+msgid  "XOR"
+msgstr "XOR"
+
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NOT.STRING.TEXT
 msgid  "NOT"
 msgstr "NOT"
@@ -158,6 +162,22 @@ msgstr "ATANH"
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COT_HYP.STRING.TEXT
 msgid  "ACOTH"
 msgstr "ACOTH"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.STRING.TEXT
+msgid  "CSC"
+msgstr "CSC"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.STRING.TEXT
+msgid  "SEC"
+msgstr "SEC"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.STRING.TEXT
+msgid  "CSCH"
+msgstr "CSCH"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.STRING.TEXT
+msgid  "SECH"
+msgstr "SECH"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.STRING.TEXT
 msgid  "EXP"
@@ -767,6 +787,22 @@ msgstr "CONTARSE"
 msgid  "SUMIF"
 msgstr "SUMARSE"
 
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IF.STRING.TEXT
+msgid  "AVERAGEIF"
+msgstr "MEDIASE"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_IFS.STRING.TEXT
+msgid  "SUMIFS"
+msgstr "SUMAR.SES"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IFS.STRING.TEXT
+msgid  "AVERAGEIFS"
+msgstr "MEDIASES"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_IFS.STRING.TEXT
+msgid  "COUNTIFS"
+msgstr "CONTAR.SES"
+
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOOKUP.STRING.TEXT
 msgid  "LOOKUP"
 msgstr "BUSCAR"
@@ -830,6 +866,22 @@ msgstr "BUSCAR"
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MID.STRING.TEXT
 msgid  "MID"
 msgstr "MEDIO"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LENB.STRING.TEXT
+msgid  "LENB"
+msgstr "LONXB"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RIGHTB.STRING.TEXT
+msgid  "RIGHTB"
+msgstr "DEREITAB"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LEFTB.STRING.TEXT
+msgid  "LEFTB"
+msgstr "ESQUERDAB"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIDB.STRING.TEXT
+msgid  "MIDB"
+msgstr "MEDIOB"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TEXT.STRING.TEXT
 msgid  "TEXT"

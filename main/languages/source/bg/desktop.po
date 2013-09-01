@@ -35,29 +35,9 @@ msgstr ""
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Добре дошли в %PRODUCTNAME %PRODUCTVERSION"
 
-#: migration/wizard.src#STR_STATE_WELCOME.STRING.TEXT
-msgid  "Welcome"
-msgstr "Добре дошли"
-
-#: migration/wizard.src#STR_STATE_LICENSE.STRING.TEXT
-msgid  "License Agreement"
-msgstr "Лицензионно споразумение"
-
-#: migration/wizard.src#STR_STATE_MIGRATION.STRING.TEXT
-msgid  "Personal Data"
-msgstr "Лични данни"
-
-#: migration/wizard.src#STR_STATE_USER.STRING.TEXT
-msgid  "User name"
-msgstr "Потребителско име"
-
 #: migration/wizard.src#STR_STATE_UPDATE_CHECK.STRING.TEXT
 msgid  "Online Update"
 msgstr "Обновяване по Интернет"
-
-#: migration/wizard.src#STR_STATE_REGISTRATION.STRING.TEXT
-msgid  "Registration"
-msgstr "Регистрация"
 
 #: migration/wizard.src#STR_WELCOME_MIGRATION.STRING.TEXT
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
@@ -67,13 +47,13 @@ msgstr "Този помощник ще ви води през лицензион
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
 msgstr "Този помощник ще ви води през регистрацията на %PRODUCTNAME.\n\nНатиснете \"Напред\", за да продължите."
 
-#: migration/wizard.src#STR_FINISH.STRING.TEXT
-msgid  "~Finish"
-msgstr "~Готово"
-
 #: migration/wizard.src#STR_REGISTRATION_OOO.STRING.TEXT
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
 msgstr "Сега имате възможност да поддържате и подпомагате най-бързо растящата общност за софтуер с отворен код в света.\n\n\"Помогнете ни да покажем, че %PRODUCTNAME вече има значителен пазарен дял, като се регистрирате.\n\nРегистрацията е доброволна и без задължения."
+
+#: migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ERRORBOX.MESSAGE
+msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr "Възникнала е грешка при стартиране на уеббраузъра.\nМоля, проверете настройките на %PRODUCTNAME и на браузъра."
 
 #: migration/wizard.src#QB_ASK_DECLINE.QUERYBOX.MESSAGE
 msgid  "Do you really want to decline?"
@@ -103,14 +83,6 @@ msgstr "2."
 msgid  "Click 'Accept' to accept the terms of the Agreement."
 msgstr "Натиснете \"Приемане\", за да приемете условията на споразумението. "
 
-#: migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
-msgid  "Scroll Do~wn"
-msgstr "~Надолу"
-
-#: migration/wizard.src#STR_LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
-msgstr "~Приемане"
-
 #: migration/wizard.src#STR_LICENSE_DECLINE.STRING.TEXT
 msgid  "~Decline"
 msgstr "~Отказ"
@@ -127,10 +99,6 @@ msgstr "Повечето лични данни от инсталацията н�
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
 msgstr "%PRODUCTNAME проверява периодично за нови версии.\nПри това не се предават лични данни.\nКогато стане достъпна нова версия, ще бъдете уведомени.\n\nМожете да конфигурирате тази възможност с Инструменти / Настройки... / %PRODUCTNAME / Обновяване по Интернет."
 
-#: migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CHECKBOX.TEXT
-msgid  "~Check for updates automatically"
-msgstr "Автоматична ~проверка за обновявания"
-
 #: migration/wizard.src#TP_USER.FT_USER_HEADER.FIXEDTEXT.TEXT
 msgid  "Provide your full name and initials below"
 msgstr "Попълнете по-долу цялото си име и инициалите си"
@@ -138,22 +106,6 @@ msgstr "Попълнете по-долу цялото си име и иници�
 #: migration/wizard.src#TP_USER.FT_USER_BODY.FIXEDTEXT.TEXT
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
 msgstr "Потребителското име ще бъде използвано в свойствата на документи и шаблони и при следене на промените в документи."
-
-#: migration/wizard.src#TP_USER.FT_USER_FIRST.FIXEDTEXT.TEXT
-msgid  "~First name"
-msgstr "~Име"
-
-#: migration/wizard.src#TP_USER.FT_USER_LAST.FIXEDTEXT.TEXT
-msgid  "~Last name"
-msgstr "~Фамилия"
-
-#: migration/wizard.src#TP_USER.FT_USER_INITIALS.FIXEDTEXT.TEXT
-msgid  "~Initials"
-msgstr "~Инициали"
-
-#: migration/wizard.src#TP_USER.FT_USER_FATHER.FIXEDTEXT.TEXT
-msgid  "~Father's name"
-msgstr "~Бащино име"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FIXEDTEXT.TEXT
 msgid  "%PRODUCTNAME Registration"
@@ -183,9 +135,9 @@ msgstr "Надяваме се работата с %PRODUCTNAME да е удов�
 msgid  "Should the file \"$1\" be restored?"
 msgstr "Желаете ли файлът \"$1\" да бъде възстановен?"
 
-#: app/desktop.src#STR_RECOVER_TITLE.STRING.TEXT
-msgid  "File Recovery"
-msgstr "Възстановяване на файл"
+#: app/desktop.src#STR_RECOVER_PREPARED.WARNINGBOX.MESSAGE
+msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
+msgstr "Възникна непоправима грешка.\n\nВсички променени файлове са съхранени и вероятно\nмогат да се възстановят след рестартиране на програмата."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.STRING.TEXT
 msgid  "The application cannot be started. "
@@ -263,9 +215,9 @@ msgstr "Промените в личните Ви настройки не мог
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
 msgstr "%PRODUCTNAME не може да бъде стартирана поради грешка при достъп до конфигурационните данни за %PRODUCTNAME.\n\nМоля, свържете се със системния си администратор."
 
-#: app/desktop.src#STR_INTERNAL_ERRMSG.STRING.TEXT
-msgid  "The following internal error has occurred: "
-msgstr "Възникнала е следната вътрешна грешка: "
+#: app/desktop.src#QBX_USERDATALOCKED.QUERYBOX.MESSAGE
+msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
+msgstr "Или %PRODUCTNAME в момента осъществява достъп до личните Ви настройки, или те са заключени.\nЕдновременният достъп може да причини несъответствия в личните Ви настройки. Преди да продължите, уверете се, че потребителят '$u' е затворил %PRODUCTNAME на машината '$h'.\n\nНаистина ли желаете да продължите?"
 
 #: app/desktop.src#STR_TITLE_USERDATALOCKED.STRING.TEXT
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -274,6 +226,10 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 #: app/desktop.src#EBX_ERR_PRINTDISABLED.ERRORBOX.MESSAGE
 msgid  "Printing is disabled. No documents can be printed."
 msgstr "Печатът е забранен. Не могат да се печатат документи."
+
+#: app/desktop.src#INFOBOX_EXPIRED.INFOBOX.MESSAGE
+msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
+msgstr ""
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.STRING.TEXT
 msgid  "The path manager is not available.\n"
@@ -303,17 +259,9 @@ msgstr "[въведете \"да\" или \"не\"]:"
 msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "Въведената стойност е некоректна. Моля, въведете \"да\" или \"не\":"
 
-#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.STRING.TEXT
-msgid  "YES"
-msgstr "ДА"
-
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.STRING.TEXT
 msgid  "Y"
 msgstr "Д"
-
-#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.STRING.TEXT
-msgid  "NO"
-msgstr "НЕ"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.STRING.TEXT
 msgid  "N"
@@ -326,10 +274,6 @@ msgstr "Не може да бъде стартиран unopkg. Заключва�
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.STRING.TEXT
 msgid  "ERROR: "
 msgstr "ГРЕШКА: "
-
-#: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.STRING.TEXT
-msgid  "Unknown"
-msgstr "Неизвестен"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.STRING.TEXT
 msgid  "Extension requires at least Apache OpenOffice %VERSION"
@@ -363,41 +307,9 @@ msgstr "Разрешава се: "
 msgid  "Disabling: "
 msgstr "Забранява се: "
 
-#: deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.STRING.TEXT
-msgid  "Cannot detect media-type: "
-msgstr "Не може да бъде установен типът на носителя: "
-
-#: deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.STRING.TEXT
-msgid  "This media-type is not supported: "
-msgstr "Този тип на носител не се поддържа: "
-
-#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.STRING.TEXT
-msgid  "An error occurred while enabling: "
-msgstr "Възникна грешка при разрешаване на: "
-
-#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.STRING.TEXT
-msgid  "An error occurred while disabling: "
-msgstr "Възникна грешка при забраняване на: "
-
-#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.STRING.TEXT
-msgid  "Configuration Schema"
-msgstr "Конфигурационна схема"
-
-#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.STRING.TEXT
-msgid  "Configuration Data"
-msgstr "Конфигурационни данни"
-
-#: deployment/registry/help/dp_help.src#RID_STR_HELP.STRING.TEXT
-msgid  "Help"
-msgstr "Помощ"
-
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.STRING.TEXT
 msgid  "The extension cannot be installed because:\n"
 msgstr "Разширението не може да бъде инсталирано, защото:\n"
-
-#: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.STRING.TEXT
-msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr "Разширението няма да бъде инсталирано, защото е възникнала грешка във файловете на помощта:\n"
 
 #: deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.STRING.TEXT
 msgid  "%MACROLANG Library"
@@ -455,21 +367,32 @@ msgstr "Няма инсталиран такова разширение: "
 msgid  "Synchronizing repository for %NAME extensions"
 msgstr "Синхронизиране на хранилището за разширенията %NAME"
 
+#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WARNINGBOX.MESSAGE
+#, fuzzy
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
+msgstr "Ще инсталирате версия $NEW на разширението \"$NAME\".\nНовата версия $DEPLOYED е вече инсталирана.\nНатиснете \"OK\", за да замените инсталираното разширение.\nНатиснете \"Отказ\", за да прекъснете инсталирането."
+
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
 msgstr "Ще инсталирате версия $NEW на разширението \"$NAME\".\nНовата версия $DEPLOYED, с име \\'$OLDNAME\\', е вече инсталирана.\nНатиснете \"OK\", за да замените инсталираното разширение.\nНатиснете \"Отказ\", за да прекъснете инсталирането."
+
+#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WARNINGBOX.MESSAGE
+#, fuzzy
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
+msgstr "Ще инсталирате версия $NEW на разширението \"$NAME\".\nТази версия е вече инсталирана.\nНатиснете \"OK\", за да замените инсталираното разширение.\nНатиснете \"Отказ\", за да прекъснете инсталирането."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
 msgstr "Ще инсталирате версия $NEW на разширението \"$NAME\".\nТази версия, с име \\'$OLDNAME\\', е вече инсталирана.\nНатиснете \"OK\", за да замените инсталираното разширение.\nНатиснете \"Отказ\", за да прекъснете инсталирането."
 
+#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WARNINGBOX.MESSAGE
+#, fuzzy
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
+msgstr "Ще инсталирате версия $NEW на разширението \"$NAME\".\nСтарата версия $DEPLOYED е вече инсталирана.\nНатиснете \"OK\", за да замените инсталираното разширение.\nНатиснете \"Отказ\", за да прекъснете инсталирането."
+
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.STRING.TEXT
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
 msgstr "Ще инсталирате версия $NEW на разширението \"$NAME\".\nСтарата версия $DEPLOYED, с име \\'$OLDNAME\\', е вече инсталирана.\nНатиснете \"OK\", за да замените инсталираното разширение.\nНатиснете \"Отказ\", за да прекъснете инсталирането."
-
-#: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.MODALDIALOG.TEXT
-msgid  "System dependencies check"
-msgstr "Проверка за системните зависимости"
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FIXEDTEXT.TEXT
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
@@ -479,41 +402,9 @@ msgstr "Разширението не може да бъде инсталира�
 msgid  "Add Extension(s)"
 msgstr "Добавяне на разширения"
 
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.STRING.TEXT
-msgid  "~Remove"
-msgstr "~Премахване"
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.STRING.TEXT
-msgid  "~Enable"
-msgstr "Разр~ешаване"
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.STRING.TEXT
-msgid  "~Disable"
-msgstr "~Забраняване"
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.STRING.TEXT
-msgid  "~Update..."
-msgstr "~Обновяване..."
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.STRING.TEXT
-msgid  "~Options..."
-msgstr "~Настройки..."
-
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.STRING.TEXT
 msgid  "Adding %EXTENSION_NAME"
 msgstr "Протича добавяне на %EXTENSION_NAME"
-
-#: deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.STRING.TEXT
-msgid  "Removing %EXTENSION_NAME"
-msgstr "Протича премахване на %EXTENSION_NAME"
-
-#: deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.STRING.TEXT
-msgid  "Enabling %EXTENSION_NAME"
-msgstr "Протича разрешаване на %EXTENSION_NAME"
-
-#: deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.STRING.TEXT
-msgid  "Disabling %EXTENSION_NAME"
-msgstr "Протича забраняване на %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.STRING.TEXT
 msgid  "Accept license for %EXTENSION_NAME"
@@ -522,10 +413,6 @@ msgstr "Приемане на лиценза за %EXTENSION_NAME"
 #: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.STRING.TEXT
 msgid  "~For all users"
 msgstr "~За всички потребители"
-
-#: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.STRING.TEXT
-msgid  "~Only for me"
-msgstr "~Само за мен"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.STRING.TEXT
 msgid  "Error: The status of this extension is unknown"
@@ -579,17 +466,29 @@ msgstr "2."
 msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
 msgstr "Приемете лицензионното споразумение за разширението, като натиснете бутона  \"Приемам\"."
 
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
-msgid  "~Scroll Down"
-msgstr "~Надолу"
-
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKBUTTON.TEXT
-msgid  "Accept"
-msgstr "Приемам"
-
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CANCELBUTTON.TEXT
 msgid  "Decline"
 msgstr "Отказ"
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "You are about to install the extension \\'%NAME\\'.\nClick \\'OK\\' to proceed with the installation.\nClick \\'Cancel\\' to stop the installation."
+msgstr "Ще инсталирате разширението \"%NAME\".\nНатиснете \"OK\", за да започнете инсталирането.\nНатиснете \"Отказ\", за да прекратите инсталирането."
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "You are about to remove the extension \\'%NAME\\'.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
+msgstr "Ще деинсталирате разширението \"%NAME\".\nНатиснете \"OK\", за да започнете деинсталирането.\nНатиснете \"Отказ\", за да прекратите деинсталирането."
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
+msgstr "Когато променяте споделени разширения в многопотребителска среда, уверете се, че в момента друг потребител не работи със същото копие на %PRODUCTNAME.\nНатиснете \"OK\", за да премахнете разширението.\nНатиснете \"Отказ\", за да спрете премахването на разширението."
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to enable the extension.\nClick \\'Cancel\\' to stop enabling the extension."
+msgstr "Когато променяте споделени разширения в многопотребителска среда, уверете се, че в момента друг потребител не работи със същото копие на %PRODUCTNAME.\nНатиснете \"OK\", за да разрешите разширението.\nНатиснете \"Отказ\", за да спрете разрешаването на разширението."
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to disable the extension.\nClick \\'Cancel\\' to stop disabling the extension."
+msgstr "Когато променяте споделени разширения в многопотребителска среда, уверете се, че в момента друг потребител не работи със същото копие на %PRODUCTNAME.\nНатиснете \"OK\", за да забраните разширението.\nНатиснете \"Отказ\", за да спрете забраняването на разширението."
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.STRING.TEXT
 msgid  "The extension \\'%Name\\' does not work on this computer."
@@ -603,25 +502,13 @@ msgstr "Изтегляне и инсталиране"
 msgid  "Downloading extensions..."
 msgstr "Изтеглят се разширения..."
 
-#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FIXEDTEXT.TEXT
-msgid  "Result"
-msgstr "Резултат"
-
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKBUTTON.TEXT
 msgid  "OK"
 msgstr "ОК"
 
-#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CANCELBUTTON.TEXT
-msgid  "Cancel Update"
-msgstr "Отказ от обновяване"
-
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.STRING.TEXT
 msgid  "Installing extensions..."
 msgstr "Инсталират се разширения..."
-
-#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.STRING.TEXT
-msgid  "Installation finished"
-msgstr "Инсталирането завърши"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.STRING.TEXT
 msgid  "No errors."
@@ -651,45 +538,17 @@ msgstr "Разширението няма да бъде инсталирано."
 msgid  "Extension Update"
 msgstr "Обновяване на разширение"
 
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FIXEDTEXT.TEXT
-msgid  "Checking..."
-msgstr "Протича проверка..."
-
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FIXEDTEXT.TEXT
 msgid  "~Available extension updates"
 msgstr "~Налични обновявания на разширения"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CHECKBOX.TEXT
-msgid  "~Show all updates"
-msgstr "~Показване на всички обновявания"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "Описание"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FIXEDTEXT.TEXT
-msgid  "Publisher:"
-msgstr "Издател:"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FIXEDTEXT.TEXT
-msgid  "What is new:"
-msgstr "Какво ново:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FIXEDTEXT.TEXT
 msgid  "Release Notes"
 msgstr "Бележки за изданието"
 
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PUSHBUTTON.TEXT
-msgid  "~Install"
-msgstr "~Инсталиране"
-
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
 msgstr "Затваряне"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.STRING.TEXT
-msgid  "Error"
-msgstr "Грешка"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.STRING.TEXT
 msgid  "No new updates are available."
@@ -698,10 +557,6 @@ msgstr "Няма налични обновявания."
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.STRING.TEXT
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
 msgstr "Не са достъпни обновявания за инсталиране. За да видите игнорираните и забранените обновявания, отметнете \"Показване на всички обновявания\"."
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.STRING.TEXT
-msgid  "An error occurred:"
-msgstr "Възникна грешка:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.STRING.TEXT
 msgid  "Unknown error."
@@ -720,16 +575,13 @@ msgid  "Required Apache OpenOffice version doesn't match:"
 msgstr "Необходимата версия на OpenOffice.org не съвпада:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.STRING.TEXT
+#, fuzzy
 msgid  "You have Apache OpenOffice %VERSION"
-msgstr "Имате OpenOffice.org %VERSION"
+msgstr ""
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.STRING.TEXT
 msgid  "browser based update"
 msgstr "обновяване през браузър"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.STRING.TEXT
-msgid  "Version"
-msgstr "Версия"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.STRING.TEXT
 msgid  "Ignore this Update"
@@ -747,13 +599,14 @@ msgstr "Разрешаване на обновяванията"
 msgid  "This update will be ignored.\n"
 msgstr "Това обновяване ще бъде игнорирано.\n"
 
+#: deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+#, fuzzy
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to update the extensions.\nClick \\'Cancel\\' to stop updating the extensions."
+msgstr "Когато променяте споделени разширения в многопотребителска среда, уверете се, че в момента друг потребител не работи със същото копие на %PRODUCTNAME.\nНатиснете \"OK\", за да обновите разширението.\nНатиснете \"Отказ\", за да спрете обновяването на разширението."
+
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.MODELESSDIALOG.TEXT
 msgid  "Extension Manager"
 msgstr "Диспечер на разширения"
-
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PUSHBUTTON.TEXT
-msgid  "~Add..."
-msgstr "~Добавяне..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
 msgid  "Check for ~Updates..."
@@ -767,10 +620,6 @@ msgstr "Вземете още разширения от Интернет..."
 msgid  "Adding %EXTENSION_NAME"
 msgstr "Протича добавяне на %EXTENSION_NAME"
 
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
-msgid  "Close"
-msgstr "Затваряне"
-
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.MODALDIALOG.TEXT
 msgid  "Extension Update Required"
 msgstr "Изисква се обновяване на разширение"
@@ -779,13 +628,9 @@ msgstr "Изисква се обновяване на разширение"
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
 msgstr "%PRODUCTNAME е обновен до нова версия. Някои исталирани разширения на %PRODUCTNAME не са съвместими с текущата версия и трябва да бъдат обновени, преди да се използват."
 
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PUSHBUTTON.TEXT
-msgid  "Disable all"
-msgstr "Забрана всичко"
-
-#: ../win32/source/rebase/rebasegui.ulf#_APP_TITLE_
-msgid  "Installation Status"
-msgstr "Статус на инсталацията"
+#: deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QUERYBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
+msgstr "Когато променяте споделени разширения в многопотребителска среда, уверете се, че в момента друг потребител не работи със същото копие на %PRODUCTNAME.\n\nЗа кого желаете да инсталирате разширението?\n"
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_
 msgid  "Installation is optimized for clients."
@@ -831,13 +676,21 @@ msgstr "Инсталаторът не може да намери файла \"%s
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "Неправилен параметър в командния ред: \"%s\". Моля, използвайте \"/?\" за помощ."
 
+#: ../win32/source/setup/setup.ulf#_SETUP_TO_OLD_
+msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
+msgstr "Пакетът изисква поне версия '%s' на Windows Installer. \nВашата система разполага с Windows Installer '%s'!"
+
+#: ../win32/source/setup/setup.ulf#_SETUP_NOT_FOUND_
+msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
+msgstr "Пакетът изисква Windows Installer. \nНеобходим ви е поне Windows Installer '%s'!"
+
+#: ../win32/source/setup/setup.ulf#_USAGE_
+msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr "Употреба:\n   /? :  Показва този диалогов прозорец.\n   /a :  Изпълнява административна инсталация.\n   /j[u|m] :  Изпълнява рекламна инсталация.\n   /q[n] : Не показва потребителски интерфейс (тих режим).\n"
+
 #: ../win32/source/setup/setup.ulf#_ALREADY_RUNNING_
 msgid  "There is already a setup process running."
 msgstr "Вече има стартирана инсталация."
-
-#: ../win32/source/setup/setup.ulf#_UNKNOWN_ERROR_
-msgid  "An Unknown Error occured!"
-msgstr "Възникнала е непозната грешка!"
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PROFILE_
 msgid  "Invalid or incomplete profile."
@@ -847,106 +700,14 @@ msgstr "Неправилен или непълен профил."
 msgid  "Unknown Language: %d"
 msgstr "Непознат език: %d"
 
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_TW_
-msgid  "Chinese (traditional)"
-msgstr "Китайски (традиционен)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_CS_
-msgid  "Czech"
-msgstr "Чешки"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_DA_
-msgid  "Danish"
-msgstr "Датски"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_DE_DE_
-msgid  "German (Germany)"
-msgstr "Немски (Германия)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_EL_
-msgid  "Greek"
-msgstr "Гръцки"
-
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EN_US_
 msgid  "English (USA)"
 msgstr "Английски (САЩ)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_ES_
-msgid  "Spanish (Spain)"
-msgstr "Испански (Испания)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_FI_
-msgid  "Finnish"
-msgstr "Финландски"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_FR_FR_
-msgid  "French (France)"
-msgstr "Френски (Франция)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_HE_
-msgid  "Hebrew"
-msgstr "Иврит"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_HU_
-msgid  "Hungarian"
-msgstr "Унгарски"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_IT_IT_
-msgid  "Italian (Italy)"
-msgstr "Италиански (Италия)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_JA_
-msgid  "Japanese"
-msgstr "Японски"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_KO_
-msgid  "Korean"
-msgstr "Корейски"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_NL_NL_
-msgid  "Dutch (Netherlands)"
-msgstr "Холандски (Холандия)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_NO_NO_
-msgid  "Norwegian (Bokmål)"
-msgstr "Норвежки (букмал)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_PL_
-msgid  "Polish"
-msgstr "Полски"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_BR_
-msgid  "Portuguese (Brazil)"
-msgstr "Португалски (Бразилия)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_RU_
-msgid  "Russian"
-msgstr "Руски"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SK_
 msgid  "Slovak"
 msgstr ""
 
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_SV_SE_
-msgid  "Swedish (Sweden)"
-msgstr "Шведски (Швеция)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_TH_
-msgid  "Thai"
-msgstr "Тайландски"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_TR_
-msgid  "Turkish"
-msgstr "Турски"
-
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ET_
 msgid  "Estonian"
 msgstr "Естонски"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_CN_
-msgid  "Chinese (Simplified)"
-msgstr "Китайски (опростен)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_PT_
-msgid  "Portuguese (Portugal)"
-msgstr "Португалски (Португалия)"

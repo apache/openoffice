@@ -35,17 +35,9 @@ msgstr ""
 msgid  "Address Book Data Source Wizard"
 msgstr "Αυτόματος πιλότος προέλευσης δεδομένων βιβλίου διευθύνσεων"
 
-#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
-msgid  "Address book type"
-msgstr "Τύπος βιβλίου διευθύνσεων"
-
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
 msgid  "Connection Settings"
 msgstr "Ρυθμίσεις σύνδεσης"
-
-#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
-msgid  "Table selection"
-msgstr "Επιλογή πίνακα"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
 msgid  "Field Assignment"
@@ -66,10 +58,6 @@ msgstr "Επιλέξτε τον τύπο του εξωτερικού σας βι
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
 msgid  "Evolution"
 msgstr "Evolution"
-
-#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
-msgid  "Groupwise"
-msgstr "Groupwise"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
 msgid  "Evolution LDAP"
@@ -97,15 +85,11 @@ msgstr "Δεδομένα διεύθυνσης LDAP"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RADIOBUTTON.TEXT
 msgid  "Outlook address book"
-msgstr "Βιβλίο διευθύνσεων του Outlook"
+msgstr "Βιβλίο διευθύνσεων του outlook"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RADIOBUTTON.TEXT
 msgid  "Windows system address book"
-msgstr "Βιβλίο διευθύνσεων των Windows"
-
-#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
-msgid  "Other external data source"
-msgstr "Άλλη εξωτερική προέλευση δεδομένων"
+msgstr "Βιβλίο διευθύνσεων των windows"
 
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
@@ -131,10 +115,6 @@ msgstr "Για να ενσωματώσει τα δεδομένα διευθύν�
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
 msgstr "Αυτές ήταν όλες οι απαραίτητες πληροφορίες για την ενσωμάτωση των δεδομένων διευθύνσεων στο %PRODUCTNAME.\n\nΤώρα, δώστε απλώς το όνομα με το οποίο θέλετε να δηλώσετε την προέλευση δεδομένων στο %PRODUCTNAME."
 
-#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
-msgid  "Location"
-msgstr "Τοποθεσία"
-
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
 msgid  "Browse..."
 msgstr "Αναζήτηση..."
@@ -142,10 +122,6 @@ msgstr "Αναζήτηση..."
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
 msgstr "Κάνε αυτό το βιβλίου διευθύνσεων διαθέσιμο σε όλα τα αρθρώματα του %PRODUCTNAME."
-
-#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
-msgid  "Address book name"
-msgstr "Όνομα βιβλίου διευθύνσεων"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
@@ -155,13 +131,9 @@ msgstr "Μία άλλη προέλευση δεδομένων έχει ήδη α
 msgid  "Please select a type of address book."
 msgstr "Επιλέξτε έναν τύπο βιβλίου διευθύνσεων."
 
-#: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
-msgid  "Addresses"
-msgstr "Διευθύνσεις"
-
-#: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
-msgid  "Create Address Data Source"
-msgstr "Δημιουργία προέλευσης δεδομένων διευθύνσεων"
+#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
+msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
+msgstr "Η προέλευση δεδομένων δεν περιέχει πίνακες.\nΕίστε βέβαιοι ότι θέλετε να την ορίσετε ως προέλευση δεδομένων διευθύνσεων;"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
 msgid  "The connection could not be established."
@@ -171,21 +143,9 @@ msgstr "Δεν ήταν δυνατή η δημιουργία σύνδεσης."
 msgid  "Please check the settings made for the data source."
 msgstr "Ελέγξτε τις ρυθμίσεις που έχουν γίνει για την προέλευση δεδομένων."
 
-#: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
-msgid  "Address Data - Field Assignment"
-msgstr "Δεδομένα διευθύνσεων - Ανάθεση πεδίων"
-
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
 msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
 msgstr "Δεν έχει γίνει ακόμα ανάθεση πεδίων.\nΜπορείτε να κάνετε ανάθεση πεδίων τώρα ή να το κάνετε αργότερα επιλέγοντας πρώτα:\n\"Αρχείο - Πρότυπο - Δομή βιβλίου διευθύνσεων...\""
-
-#: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Field selection:"
-msgstr "Επιλογή πεδίου:"
-
-#: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
-msgid  "Table;Query;Sql;Sql [Native]"
-msgstr "Πίνακας;Ερώτημα;Sql;Sql [Native]"
 
 #: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
 msgid  "Bibliography Database"
@@ -195,37 +155,9 @@ msgstr "Βάση δεδομένων βιβλιογραφίας"
 msgid  "Do you want to edit the column arrangement?"
 msgstr "Θέλετε να γίνει επεξεργασία της αντιστοίχησης στηλών;"
 
-#: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
-msgid  "Column names"
-msgstr "Ονόματα στηλών"
-
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
 msgid  "<none>"
 msgstr "<τίποτα>"
-
-#: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
-msgid  "Column Layout for Table %1"
-msgstr "Διάταξη στηλών για τον πίνακα %1"
-
-#: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
-msgid  "Choose Data Source"
-msgstr "Επιλογή προέλευσης δεδομένων"
-
-#: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
-msgid  "Entry"
-msgstr "Καταχώριση"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
-msgid  "The following column names could not be assigned:\n"
-msgstr "Δεν ήταν δυνατόν να γίνει ανάθεση των ακόλουθων ονομάτων στήλης:\n"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
-msgid  "Article"
-msgstr "Άρθρο"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
-msgid  "Book"
-msgstr "Βιβλίο"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
 msgid  "Brochures"
@@ -243,10 +175,6 @@ msgstr "Απόσπασμα βιβλίου"
 msgid  "Book excerpt with title"
 msgstr "Απόσπασμα βιβλίου με τίτλο"
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
-msgid  "Journal"
-msgstr "Περιοδικό"
-
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
 msgid  "Techn. documentation"
 msgstr "Τεχνικό εγχειρίδιο"
@@ -254,10 +182,6 @@ msgstr "Τεχνικό εγχειρίδιο"
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
 msgid  "Thesis"
 msgstr "Διπλωματική εργασία"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
-msgid  "Miscellaneous"
-msgstr "Διάφορα"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
 msgid  "Dissertation"
@@ -267,93 +191,29 @@ msgstr "Διατριβή"
 msgid  "Research report"
 msgstr "Αναφορά έρευνας"
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
-msgid  "Unpublished"
-msgstr "Αδημοσίευτο"
-
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
 msgid  "e-mail"
-msgstr "Ηλεκτρονική διεύθυνση"
+msgstr "ηλεκτρονική διεύθυνση"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.STRING.TEXT
 msgid  "WWW document"
 msgstr "Έγγραφο WWW"
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
-msgid  "User-defined1"
-msgstr "Καθορισμένο από το χρήστη 1"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
-msgid  "User-defined2"
-msgstr "Ορισμένο από χρήστη2"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
-msgid  "User-defined3"
-msgstr "Ορισμένο από χρήστη3"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
-msgid  "User-defined4"
-msgstr "Ορισμένο από χρήστη4"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
-msgid  "User-defined5"
-msgstr "Ορισμένο από χρήστη5"
-
-#: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
-msgid  "General"
-msgstr "Γενικά"
-
-#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
-msgid  "Insert Section..."
-msgstr "Εισαγωγή ενότητας..."
-
-#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
-msgid  "Delete Section..."
-msgstr "Διαγραφή ενότητας..."
-
-#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
-msgid  "Modify Name..."
-msgstr "Τροποποίηση ονόματος..."
-
-#: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
-msgid  "~Short name"
-msgstr "Συντο~μογραφία"
-
-#: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
-msgid  "~Type"
-msgstr "~Τύπος"
-
-#: bibliography/sections.src#ST_YEAR.STRING.TEXT
-msgid  "~Year"
-msgstr "Έτ~ος"
-
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
 msgid  "Author(s)"
 msgstr "Συντάκτης(-ες)"
-
-#: bibliography/sections.src#ST_TITLE.STRING.TEXT
-msgid  "Tit~le"
-msgstr "Τίτ~λος"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
 msgid  "~Publisher"
 msgstr "Εκ~δότης"
 
-#: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
-msgid  "A~ddress"
-msgstr "Διεύ~θυνση"
-
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
 msgid  "~ISBN"
 msgstr "I~SBN"
 
-#: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
-msgid  "~Chapter"
-msgstr "Κε~φάλαιο"
-
 #: bibliography/sections.src#ST_PAGE.STRING.TEXT
 msgid  "Pa~ge(s)"
-msgstr "Σελίδ~α(ες)"
+msgstr "Σελίδ~α(-ες)"
 
 #: bibliography/sections.src#ST_EDITOR.STRING.TEXT
 msgid  "Editor"
@@ -363,25 +223,9 @@ msgstr "Εκδότης"
 msgid  "Ed~ition"
 msgstr "Έκδοσ~η"
 
-#: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
-msgid  "~Book title"
-msgstr "Τίτλος ~βιβλίου"
-
-#: bibliography/sections.src#ST_VOLUME.STRING.TEXT
-msgid  "Volume"
-msgstr "Τόμος"
-
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
 msgid  "Publication t~ype"
 msgstr "Τύ~πος έκδοσης"
-
-#: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
-msgid  "Organi~zation"
-msgstr "Ορ~γανισμός"
-
-#: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
-msgid  "Instit~ution"
-msgstr "Ίδρ~υμα"
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
 msgid  "University"
@@ -391,33 +235,17 @@ msgstr "Πανεπιστήμιο"
 msgid  "Type of re~port"
 msgstr "Τύπος αναφο~ράς"
 
-#: bibliography/sections.src#ST_MONTH.STRING.TEXT
-msgid  "~Month"
-msgstr "~Μήνας"
-
-#: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
-msgid  "~Journal"
-msgstr "~Περιοδικό"
-
 #: bibliography/sections.src#ST_NUMBER.STRING.TEXT
 msgid  "Numb~er"
-msgstr "Αριθμό~ς"
-
-#: bibliography/sections.src#ST_SERIES.STRING.TEXT
-msgid  "Se~ries"
-msgstr "Σε~ιρά"
+msgstr "Αριθ~μός"
 
 #: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
 msgid  "Ann~otation"
 msgstr "~Σχολιασμός"
 
-#: bibliography/sections.src#ST_NOTE.STRING.TEXT
-msgid  "~Note"
-msgstr "Σημεί~ωση"
-
 #: bibliography/sections.src#ST_URL.STRING.TEXT
 msgid  "URL"
-msgstr "Ιστοσελίδα"
+msgstr "URL"
 
 #: bibliography/sections.src#ST_CUSTOM1.STRING.TEXT
 msgid  "User-defined field ~1"
@@ -439,61 +267,25 @@ msgstr "Προσαρμοσμένο πεδίο ~4"
 msgid  "User-defined field ~5"
 msgstr "Προσαρμοσμένο πεδίο ~5"
 
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
-msgid  "Table"
-msgstr "Πίνακας"
-
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
 msgid  "Search Key"
 msgstr "Όρος αναζήτησης"
-
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
-msgid  "AutoFilter"
-msgstr "Αυτόματο φίλτρο"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
 msgid  "Standard Filter"
 msgstr "Τυπικό φιλτράρισμα"
 
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
-msgid  "Remove Filter"
-msgstr "Φίλτρο φίλτρου"
-
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
 msgid  "Column Arrangement"
 msgstr "Διάταξη στηλών"
 
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
-msgid  "Data Source"
-msgstr "Προέλευση δεδομένων"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
-msgid  "Data"
-msgstr "Δεδομένα"
-
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "Αυτή τη στιγμή, η φόρμα στην οποία ανήκει στο στοιχείο ελέγχου , δεν είναι συνδεδεμένη ολοκληρωτικά με μια προέλευση δεδομένων.\n\nΠαρακαλώ επιλέξτε μια προέλευση δεδομένων και ένα πίνακα.\n\n\nΣημειώστε ότι οι ρυθμίσεις που κάνατε σε αυτή τη σελίδα θα πραγματοποιηθούν αμέσως μετά την έξοδο σας από τη σελίδα."
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
-msgid  "~Data source:"
-msgstr "Προέλευση ~δεδομένων:"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
-msgid  "~..."
-msgstr "~..."
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
-msgid  "~Table / Query:"
-msgstr "~Πίνακας / Ερώτημα:"
+msgstr "Αυτή τη στιγμή, η φόρμα στην οποία ανήκει το στοιχείο ελέγχου, δεν είναι συνδεδεμένη (ή όχι εξολοκλήρου) με μια προέλευση δεδομένων.\n\nΠαρακαλώ επιλέξτε μια προέλευση δεδομένων και ένα πίνακα.\n\n\nΣημειώστε ότι οι ρυθμίσεις που κάνατε σε αυτή τη σελίδα θα πραγματοποιηθούν αμέσως μετά την έξοδο σας από τη σελίδα."
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
 msgid  "Database Field"
 msgstr "Πεδίο βάσης δεδομένων"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
-msgid  "Do you want to save the value in a database field?"
-msgstr "Θέλετε να αποθηκευτεί η τιμή σε ένα πεδίο βάσης δεδομένων;"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, I want to save it in the following database field:"
@@ -503,97 +295,17 @@ msgstr "~Ναι, στο ακόλουθο πεδίο βάσης δεδομένω�
 msgid  "~No, I only want to save the value in the form."
 msgstr "Ό~χι, θέλω να γίνει η αποθήκευση της τιμής μόνο στη φόρμα."
 
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
-msgid  "Form"
-msgstr "Φόρμα"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
-msgid  "Data source"
-msgstr "Προέλευση δεδομένων"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
-msgid  "Content type"
-msgstr "Τύπος περιεχομένων"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
-msgid  "Content"
-msgstr "Περιεχόμενα"
-
-#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Πίνακας"
-
-#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
-msgid  "Query"
-msgstr "Ερώτημα"
-
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
 msgid  "SQL command"
 msgstr "Εντολή SQL"
-
-#: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
-msgid  "Group Element Wizard"
-msgstr "Αυτόματος πιλότος στοιχείου ομαδοποίησης"
-
-#: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
-msgid  "Table Element Wizard"
-msgstr "Αυτόματος πιλότος πίνακα στοιχείων"
-
-#: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
-msgid  "List Box Wizard"
-msgstr "Αυτόματος πιλότος πεδίου λίστας"
-
-#: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
-msgid  "Combo Box Wizard"
-msgstr "Αυτόματος πιλότος πεδίου συνδυασμού"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
 msgid  "The table connection to the data source could not be established."
 msgstr "Δεν ήταν δυνατόν να πραγματοποιηθεί η σύνδεση με την προέλευση των δεδομένων."
 
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
-msgid  "Field Selection"
-msgstr "Επιλογή πεδίου"
-
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
-msgid  "Table element"
-msgstr "Στοιχείο πίνακα"
-
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
-msgid  "Existing fields"
-msgstr "Υπάρχοντα πεδία"
-
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
-msgid  "Selected fields"
-msgstr "Επιλεγμένα πεδία"
-
-#: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
-msgid  " (Date)"
-msgstr " (Ημερομηνία)"
-
-#: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
-msgid  " (Time)"
-msgstr " (Ώρα)"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
-msgid  "Data"
-msgstr "Δεδομένα"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
-msgid  "Which ~names do you want to give the option fields?"
-msgstr "Ποιές ο~νομασίες θέλετε να ισχύσουν για τα πεδία επιλογών;"
-
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
 msgid  "~Option fields"
 msgstr "~Πεδία επιλογών"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
-msgid  "Default Field Selection"
-msgstr "Προκαθορισμένη επιλογή πεδίου"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
-msgid  "Should one option field be selected as a default?"
-msgstr "Θέλετε να είναι επιλεγμένο ως προεπιλογή κάποιο πεδίο επιλογής;"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, the following:"
@@ -603,10 +315,6 @@ msgstr "Ναι, το ε~ξής:"
 msgid  "No, one particular field is not going to be selected."
 msgstr "Όχι, να μην είναι επιλεγμένο κάποιο πεδίο."
 
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
-msgid  "Field Values"
-msgstr "Πεδίο τιμών"
-
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
 msgid  "When you select an option, the option group is given a specific value."
 msgstr "Όταν κάνετε μια επιλογή, η ομάδα επιλογής παίρνει μια συγκεκριμένη τιμή."
@@ -614,10 +322,6 @@ msgstr "Όταν κάνετε μια επιλογή, η ομάδα επιλογ�
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
 msgid  "Which ~value do you want to assign to each option?"
 msgstr "Ποιά ~τιμή θέλετε να ανατεθεί σε κάθε επιλογή;"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
-msgid  "Create Option Group"
-msgstr "Δημιουργία ομάδας επιλογών"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
 msgid  "Which ~caption is to be given to your option group?"
@@ -631,21 +335,13 @@ msgstr "Αυτά ήταν τα δεδομένα που απαιτούνται γ
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
 msgstr "Μπορείτε να αποθηκεύσετε την τιμή της ομάδας επιλογής σε ένα πεδίο βάσης δεδομένων ή να το χρησιμοποιήσετε μελλοντικά για κάποια ενέργεια."
 
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
-msgid  "Table Selection"
-msgstr "Επιλογή πίνακα"
-
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
-msgid  "Control"
-msgstr "Πεδίο ελέγχου"
-
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
 msgstr "Στη δεξιά πλευρά, βλέπετε όλους τους πίνακες από την προέλευση δεδομένων της φόρμας.\n\n\nΕπιλέξτε τον πίνακα του οποίου τα δεδομένα θα χρησιμοποιηθούν σαν βάση για τα περιεχόμενα της λίστας:"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TABPAGE.TEXT
 msgid  "Field Selection"
-msgstr "Επιλογή πεδίου."
+msgstr "Επιλογή Πεδίου"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FIXEDTEXT.TEXT
 msgid  "Existing fields"
@@ -663,41 +359,13 @@ msgstr "Το περιεχόμενο του επιλεγμένου πεδίου �
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
 msgstr "Το περιεχόμενο του επιλεγμένου πεδίου εμφανίζεται στο πλαίσιο λίστας όταν τα συνδεδεμένα πεδία είναι πανομοιότυπα."
 
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
-msgid  "Field Link"
-msgstr "Πεδίο δεσμού"
-
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
 msgstr "Εδώ επιλέγετε πεδία των οποίων τα περιεχόμενα συμφωνούν, ώστε να εμφανιστεί η τιμή του πεδίου εμφάνισης."
 
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
-msgid  "Field from the ~Value Table"
-msgstr "Πεδίο από τον πίνακα ~τιμών"
-
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
-msgid  "Field from the ~List Table"
-msgstr "Πεδίο από τον πίνακα ~λίστας"
-
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
 msgstr "Μπορείτε να αποθηκεύσετε την τιμή του πλαισίου συνδυασμού σε ένα πεδίο βάσης δεδομένων ή να την χρησιμοποιήσετε για λόγους εμφάνισης."
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
-msgid  "<< Back"
-msgstr "<< Προηγούμενο"
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
-msgid  "Next >>"
-msgstr "Επόμενο >>"
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
-msgid  "Accept"
-msgstr "Αποδοχή"
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
-msgid  "Finish"
-msgstr "Τέλος"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 msgid  " - Software License Agreement"
@@ -705,141 +373,117 @@ msgstr " - Άδεια χρήσης λογισμικού"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.STRING.TEXT
 msgid  "- User Data"
-msgstr " -Δεδομένα χρήστη"
+msgstr "- Δεδομένα Χρήστη"
 
 #: preload/preload.src#RID_TP_WELCOME.TABPAGE.TEXT
 msgid  "Welcome"
 msgstr "Καλώς ήλθατε"
 
 #: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
-msgstr "Καλώς ορίσατε στο %PRODUCTNAME %PRODUCTVERSION OEM\n\nΓια να ξεκινήσει το %PRODUCTNAME %PRODUCTVERSION OEM, εισαγάγετε τα προσωπικά σας δεδομένα στο παράθυρο διαλόγου που ακολουθεί το κείμενο της άδειας. Τα αρχεία readme που βρίσκονται στον κατάλογο προϊόντος του %PRODUCTNAME περιέχουν σημαντικές πληροφορίες. Διαβάστε αυτά τα αρχεία προσεκτικά. Μπορείτε επίσης να βρείτε αναλυτικές πληροφορίες στην τοποθεσία Web της Oracle στη διεύθυνση\n\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr "Καλώς ορίσατε στο %PRODUCTNAME %PRODUCTVERSION OEM\n\nΓια να ξεκινήσει το %PRODUCTNAME %PRODUCTVERSION OEM, εισαγάγετε τα προσωπικά σας δεδομένα στο παράθυρο διαλόγου που ακολουθεί το κείμενο της άδειας. Τα αρχεία readme που βρίσκονται στον κατάλογο προϊόντος του %PRODUCTNAME περιέχουν σημαντικές πληροφορίες. Διαβάστε αυτά τα αρχεία προσεκτικά. Μπορείτε επίσης να βρείτε αναλυτικές πληροφορίες στην τοποθεσία Web της OpenOffice στη διεύθυνση\n\nhttp://www.openoffice.org."
 
 #: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
+#, fuzzy
 msgid  "License Agreement"
 msgstr "Άδεια χρήσης"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please follow these steps to proceed with the installation:"
 msgstr "Παρακαλώ ακολουθήστε αυτά τα βήματα για να συνεχίσετε με την εγκατάσταση:"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr "Προβολή ολόκληρης της άδειας χρήσης. Παρακαλώ χρησιμοποιήστε την μπάρα κύλισης ή το πλήκτρο '%PAGEDOWN' για να διαβάσετε όλο το κείμενο της άδειας."
 
-#: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
-msgid  "Page Down"
-msgstr "Σελίδα κάτω"
-
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Accept the License Agreement."
 msgstr "Αποδοχή της Άδειας χρήσης."
 
 #: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "I accept the terms of the Agreement."
 msgstr "Αποδέχομαι τους όρους της Άδειας χρήσης."
 
-#: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
-msgstr "~Αποδοχή"
-
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
+#, fuzzy
 msgid  "Decline"
 msgstr "Απόρριψη"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Character"
 msgstr "Χαρακτήρας"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font"
 msgstr "Γραμματοσειρά"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font Effects"
 msgstr "Εφέ γραμματοσειράς"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Link fields"
 msgstr "Σύνδεση πεδίων"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
 msgstr "Μπορούν να χρησιμοποιηθούν υποφόρμες για την εμφάνιση λεπτομερών δεδομένων σχετικά με την τρέχουσα εγγραφή της κύρια φόρμας. Για να γίνει αυτό, θα πρέπει να καθορίσετε ποιες στήλες της υποφόρμας ταιριάζουν με ποιες στήλες της κύριας φόρμας."
 
-#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
-msgid  "Suggest"
-msgstr "Πρόταση"
-
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Sub Form"
 msgstr "Υποφόρμα"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Master Form"
 msgstr "Κύρια φόρμα"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
 msgid  "The columns of '#' could not be retrieved."
-msgstr "Δεν ήταν δυνατή η ανάκτηση των στηλών της  '#'"
-
-#: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
-msgid  "Edit mask"
-msgstr "Μάσκα εισαγωγής"
-
-#: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
-msgid  "Literal mask"
-msgstr "Μάσκα χαρακτήρων"
+msgstr "Οι στήλες της '#' δεν ανακτήθηκαν."
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
 #, fuzzy
 msgid  "Read-only"
 msgstr "Μόνο για ανάγνωση"
 
-#: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
-msgid  "Enabled"
-msgstr "Ενεργοποιημένη"
-
 #: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
+#, fuzzy
 msgid  "Visible"
 msgstr "Ορατό"
 
-#: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
-msgid  "AutoFill"
-msgstr "Αυτόματο γέμισμα"
-
-#: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
-msgid  "Line count"
-msgstr "Αριθμός γραμμών"
-
-#: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
-msgid  "Max. text length"
-msgstr "Μέγιστο μήκος κειμένου"
-
 #: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
+#, fuzzy
 msgid  "Spin Button"
 msgstr "Πεδίο περιστροφής"
 
 #: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
 msgid  "Strict format"
-msgstr "Έλεγχος μορφής"
-
-#: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
-msgid  "Thousands separator"
-msgstr "Διαχωριστικό χιλιάδων"
+msgstr "Εκτυπώσιμο"
 
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
 msgid  "Printable"
-msgstr "Εκτυπώσιμο "
+msgstr "Εκτυπώσιμο"
 
 #: propctrlr/formres.src#RID_STR_TARGET_URL.STRING.TEXT
 #, fuzzy
@@ -848,371 +492,127 @@ msgstr "URL"
 
 #: propctrlr/formres.src#RID_STR_TARGET_FRAME.STRING.TEXT
 msgid  "Frame"
-msgstr "πλαίσιο"
-
-#: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
-msgid  "Help text"
-msgstr "Κείμενο βοήθειας"
-
-#: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
-msgid  "Help URL"
-msgstr "URL βοήθειας"
-
-#: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
-msgid  "Additional information"
-msgstr "Πρόσθετες πληροφορίες"
+msgstr "Πλαίσιο"
 
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
+#, fuzzy
 msgid  "Password character"
 msgstr "Χαρακτήρες για κωδικούς πρόσβασης"
 
 #: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
+#, fuzzy
 msgid  "Tristate"
 msgstr "Τριπλή κατάσταση"
 
 #: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
 msgid  "Empty string is NULL"
-msgstr "Κενή ακολουθία χαρακτήρων είναι NULL (μηδενικών χαρακτήρων)"
-
-#: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
-msgid  "Decimal accuracy"
-msgstr "Δεκαδικά ψηφία"
-
-#: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
-msgid  "Graphics"
-msgstr "Γραφικά"
-
-#: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
-msgid  "Default selection"
-msgstr "Επιλογή προεπιλογής"
-
-#: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
-msgid  "Default button"
-msgstr "Προεπιλεγμένο κουμπί"
-
-#: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
-msgid  "Label Field"
-msgstr "Πεδίο ετικέτας"
-
-#: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
-msgid  "Label"
-msgstr "Ετικέτα"
-
-#: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
-msgid  "Alignment"
-msgstr "Στοίχιση"
+msgstr "Κενή ακολουθία χαρακτήρων είναι NULL"
 
 #: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
+#, fuzzy
 msgid  "Vert. Alignment"
 msgstr "Κατακ. Στοίχιση"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
-msgid  "Top"
-msgstr "Πάνω"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
-msgid  "Middle"
-msgstr "Μέση"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
-msgid  "Bottom"
-msgstr "Κάτω"
-
-#: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
-msgid  "Graphics alignment"
-msgstr "Στοίχιση γραφικών"
-
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
+#, fuzzy
 msgid  "Font"
 msgstr "Γραμματοσειρά"
 
-#: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
-msgid  "Background color"
-msgstr "Χρώμα φόντου"
-
-#: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
-msgid  "Border"
-msgstr "Περίγραμμα"
-
-#: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
-msgid  "Icon size"
-msgstr "Μέγεθος εικονιδίων"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Small"
 msgstr "Μικρό"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Large"
 msgstr "Μεγάλο"
 
-#: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
-msgid  "Positioning"
-msgstr "Θέση"
-
-#: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
-msgid  "Navigation"
-msgstr "Γραμμή πλοήγησης"
-
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Acting on a record"
 msgstr "Ενέργεια σε μία εγγραφή"
 
-#: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
-msgid  "Filtering / Sorting"
-msgstr "Φιλτράρισμα / Ταξινόμηση"
-
-#: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
-msgid  "Horizontal scroll bar"
-msgstr "Οριζόντια γραμμή κύλισης"
-
-#: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
-msgid  "Vertical scroll bar"
-msgstr "Κατακόρυφη γραμμή κύλισης"
-
-#: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
-msgid  "Word break"
-msgstr "Χωρισμός λέξης"
-
-#: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
-msgid  "Multiline input"
-msgstr "Εισαγωγή σε πολλές γραμμές"
-
-#: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
-msgid  "Multiselection"
-msgstr "Πολλαπλή επιλογή"
-
-#: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
-msgid  "Name"
-msgstr "Όνομα"
-
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
 msgid  "Tab order"
-msgstr "Σειρά Tab"
+msgstr "Σειρά tab"
 
 #: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
+#, fuzzy
 msgid  "Mouse wheel scroll"
 msgstr "Κύλιση ροδέλας ποντικιού"
 
-#: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
-msgid  "Filter"
-msgstr "Φίλτρο"
-
-#: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
-msgid  "Sort"
-msgstr "Ταξινόμηση"
-
-#: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
-msgid  "Record marker"
-msgstr "Σήμανση εγγραφής"
-
-#: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
-msgid  "Filter proposal"
-msgstr "Προτεινόμενο φίλτρο"
-
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
+#, fuzzy
 msgid  "Navigation bar"
 msgstr "Γραμμή πλοήγησης"
 
-#: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
-msgid  "Cycle"
-msgstr "Κύκλος"
-
 #: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
+#, fuzzy
 msgid  "Tabstop"
 msgstr "Στηλοθέτης"
 
-#: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
-msgid  "Data field"
-msgstr "Πεδίο δεδομένων"
-
-#: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
-msgid  "Dropdown"
-msgstr "Αναπτυσσόμενο"
-
-#: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
-msgid  "Bound field"
-msgstr "Δεσμευμένο πεδίο"
-
-#: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
-msgid  "List content"
-msgstr "Περιεχόμενο λίστας"
-
-#: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
-msgid  "Type of list contents"
-msgstr "Τύπος του περιεχομένου λίστας"
-
-#: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
-msgid  "Content"
-msgstr "Περιεχόμενο"
-
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
+#, fuzzy
 msgid  "Content type"
 msgstr "Τύπος περιεχομένων"
 
-#: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
-msgid  "Allow additions"
-msgstr "Να επιτρέπεται προσθήκη δεδομένων"
-
-#: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
-msgid  "Allow deletions"
-msgstr "Να επιτρέπεται διαγραφή δεδομένων"
-
-#: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
-msgid  "Allow modifications"
-msgstr "Να επιτρέπεται τροποποίηση δεδομένων"
-
-#: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
-msgid  "Add data only"
-msgstr "Μόνο προσθήκη δεδομένων"
-
-#: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
-msgid  "Data source"
-msgstr "Προέλευση δεδομένων"
-
-#: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
-msgid  "Link master fields"
-msgstr "Σύνδεση κύριων πεδίων"
-
-#: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
-msgid  "Link slave fields"
-msgstr "Σύνδεση με βοηθητικά πεδία"
-
 #: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
 msgid  "Value min."
-msgstr "Ελάχιστη τιμή"
+msgstr "Ελάχιστη τιμή."
 
 #: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
 msgid  "Value max."
-msgstr "Μέγιστη τιμή"
-
-#: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
-msgid  "Incr./decrement value"
-msgstr "Τιμή αύξησης/μείωσης"
-
-#: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
-msgid  "Currency symbol"
-msgstr "Σύμβολο νομίσματος"
+msgstr "Μέγιστη τιμή."
 
 #: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
 msgid  "Date min."
-msgstr "Ελαχ. ημερομηνία"
+msgstr "Ελαχ. ημερομηνία."
 
 #: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
 msgid  "Date max."
-msgstr "Μεγ. ημερομηνία"
-
-#: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
-msgid  "Date format"
-msgstr "Μορφή ημερομηνίας"
-
-#: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
-msgid  "Selection"
-msgstr "Επιλογή"
+msgstr "Μεγ. ημερομηνία."
 
 #: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
 msgid  "Time min."
-msgstr "Ελαχ. ώρα"
+msgstr "Ελαχ. ώρα."
 
 #: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
 msgid  "Time max."
-msgstr "Μεγ. ώρα"
-
-#: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
-msgid  "Time format"
-msgstr "Μορφή ώρας"
-
-#: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
-msgid  "Prefix symbol"
-msgstr "Σύμβολο προθέματος"
-
-#: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
-msgid  "Value"
-msgstr "Τιμή"
-
-#: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
-msgid  "Formatting"
-msgstr "Μορφοποίηση"
+msgstr "Μεγ. ώρα."
 
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
 msgid  "Class ID"
-msgstr "Αναγνωριστικό κλάσης"
+msgstr "Class ID"
 
 #: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
+#, fuzzy
 msgid  "Height"
 msgstr "Ύψος"
 
-#: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
-msgid  "Width"
-msgstr "Πλάτος"
-
-#: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
-msgid  "List index"
-msgstr "Ευρετήριο λίστας"
-
 #: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
+#, fuzzy
 msgid  "Row height"
 msgstr "Ύψος γραμμής"
 
-#: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
-msgid  "Fill color"
-msgstr "Χρώμα γεμίσματος"
-
-#: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
-msgid  "Line color"
-msgstr "Χρώμα γραμμής"
-
-#: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
-msgid  "Reference value (on)"
-msgstr "Τιμή αναφοράς (on)"
-
-#: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
-msgid  "Reference value (off)"
-msgstr "Τιμή αναφοράς (off)"
-
-#: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
-msgid  "List entries"
-msgstr "Εγγραφές λιστών"
-
-#: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
-msgid  "Action"
-msgstr "Ενέργεια"
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
-msgid  "Type of submission"
-msgstr "Τύπος υποβολής"
-
 #: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
+#, fuzzy
 msgid  "Default status"
 msgstr "Προεπιλεγμένη κατάσταση"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
+#, fuzzy
 msgid  "Submission encoding"
 msgstr "Κωδικοποίηση κατά την υποβολή"
 
-#: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
-msgid  "Default value"
-msgstr "Προεπιλεγμένη τιμή"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
-msgid  "Default text"
-msgstr "Προκαθορισμένο κείμενο"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
-msgid  "Default date"
-msgstr "Προκαθορισμένη ημερομηνία"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
-msgid  "Default time"
-msgstr "Προκαθορισμένη ώρα"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Without frame"
 msgstr "Χωρίς πλαίσιο"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
 msgid  "3D look"
-msgstr "Όψη 3Δ"
+msgstr "3D όψη"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.STRING.TEXT
 #, fuzzy
@@ -1220,6 +620,7 @@ msgid  "Flat"
 msgstr "Επίπεδο"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Valuelist"
 msgstr "Λίστα τιμών"
 
@@ -1234,26 +635,27 @@ msgid  "Query"
 msgstr "Ερώτημα"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Sql"
 msgstr "Sql"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "Sql [Native]"
 msgstr "Sql [Native]"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.STRING.TEXT
+#, fuzzy
 msgid  "Tablefields"
 msgstr "Πεδία πίνακα"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
+#, fuzzy
 msgid  "Left"
 msgstr "Αριστερά"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
-msgid  "Center"
-msgstr "Στο κέντρο"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
+#, fuzzy
 msgid  "Right"
 msgstr "Δεξιά"
 
@@ -1263,62 +665,75 @@ msgid  "None"
 msgstr "Τίποτα"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Submit form"
 msgstr "Υποβολή φόρμας"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Reset form"
 msgstr "Επαναφορά φόρμας"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
 msgid  "Open document/web page"
-msgstr "Άνοιγμα εγγράφου/Ιστοσελίδας"
+msgstr "Άνοιγμα εγγράφου/ιστοσελίδας"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "First record"
 msgstr "Πρώτη εγγραφή"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
 msgid  "Previous record"
-msgstr "Προηγούμενη έγγραφή "
+msgstr "Προηγούμενη έγγραφή"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
+#, fuzzy
 msgid  "Next record"
 msgstr "Επόμενη εγγραφή"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
+#, fuzzy
 msgid  "Last record"
 msgstr "Τελευταία εγγραφή"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
+#, fuzzy
 msgid  "Save record"
 msgstr "Αποθήκευση εγγραφής"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
+#, fuzzy
 msgid  "Undo data entry"
 msgstr "Αναίρεση δεδομένων εγγραφής"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
+#, fuzzy
 msgid  "New record"
 msgstr "Δημιουργία εγγραφής"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
+#, fuzzy
 msgid  "Delete record"
 msgstr "Διαγραφή εγγραφής"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
+#, fuzzy
 msgid  "Refresh form"
 msgstr "Ανανέωση από"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.STRING.TEXT
+#, fuzzy
 msgid  "Get"
 msgstr "Get"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.STRING.TEXT
+#, fuzzy
 msgid  "Post"
 msgstr "Post"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
+#, fuzzy
 msgid  "Multipart"
 msgstr "Multipart"
 
@@ -1328,90 +743,112 @@ msgid  "Text"
 msgstr "Κείμενο"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short)"
 msgstr "Προεπιλογή (σύντομη)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short YY)"
 msgstr "Τυπική (σύντομη YY)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short YYYY)"
 msgstr "Τυπική (σύντομη YYYY)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.STRING.TEXT
+#, fuzzy
 msgid  "Standard (long)"
 msgstr "Προεπιλογή (μεγάλη)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
+#, fuzzy
 msgid  "DD/MM/YY"
 msgstr "DD/MM/YY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
+#, fuzzy
 msgid  "MM/DD/YY"
 msgstr "MM/DD/YY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
+#, fuzzy
 msgid  "YY/MM/DD"
 msgstr "YY/MM/DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
+#, fuzzy
 msgid  "DD/MM/YYYY"
 msgstr "DD/MM/YYYY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
+#, fuzzy
 msgid  "MM/DD/YYYY"
 msgstr "MM/DD/YYYY"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
+#, fuzzy
 msgid  "YYYY/MM/DD"
 msgstr "YYYY/MM/DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
+#, fuzzy
 msgid  "YY-MM-DD"
 msgstr "YY-MM-DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
+#, fuzzy
 msgid  "YYYY-MM-DD"
 msgstr "YYYY-MM-DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
+#, fuzzy
 msgid  "13:45"
 msgstr "13:45"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
+#, fuzzy
 msgid  "13:45:00"
 msgstr "13:45:00"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
+#, fuzzy
 msgid  "01:45 PM"
 msgstr "01:45 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
+#, fuzzy
 msgid  "01:45:00 PM"
 msgstr "01:45:00 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
+#, fuzzy
 msgid  "Not Selected"
 msgstr "Δεν έχει επιλεχθεί"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
+#, fuzzy
 msgid  "Selected"
 msgstr "Επιλογή"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
+#, fuzzy
 msgid  "Not Defined"
 msgstr "Δεν έχει ορισθεί"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
+#, fuzzy
 msgid  "All records"
 msgstr "Όλες οι εγγραφές"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
+#, fuzzy
 msgid  "Active record"
 msgstr "Ενεργή εγγραφή"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
+#, fuzzy
 msgid  "Current page"
 msgstr "Τρέχουσα σελίδα"
 
@@ -1421,228 +858,124 @@ msgid  "No"
 msgstr "Όχι"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
 msgstr "Ναι"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
+#, fuzzy
 msgid  "Parent Form"
 msgstr "Γονική φόρμα"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Single"
 msgstr "Μονή"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Multi"
 msgstr "Πολλαπλή"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Range"
 msgstr "Περιοχή"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
+#, fuzzy
 msgid  "Fill parameters"
 msgstr "Παράμετροι γεμίσματος"
 
 #: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
+#, fuzzy
 msgid  "Execute action"
 msgstr "Εκτέλεση ενέργειας"
 
-#: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
-msgstr "Μετά την ενημέρωση"
-
-#: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
-msgid  "Before updating"
-msgstr "Πριν την ενημέρωση"
-
-#: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
-msgstr "Πριν την ενέργεια εγγραφής"
-
-#: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
-msgstr "Μετά την ενέργεια εγγραφής"
-
-#: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
-msgid  "Confirm deletion"
-msgstr "Επιβεβαίωση διαγραφής"
-
-#: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
-msgstr "Παρουσιάστηκε σφάλμα"
-
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
+#, fuzzy
 msgid  "When receiving focus"
 msgstr "Σε περίπτωση εστίασης"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
+#, fuzzy
 msgid  "When losing focus"
 msgstr "Στην περίπτωση απώλειας εστίασης"
 
 #: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Item status changed"
 msgstr "Η κατάσταση του αντικειμένου τροποποιήθηκε"
 
-#: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
-msgstr "Πάτημα πληκτρου"
-
-#: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
-msgid  "Key released"
-msgstr "Απελευθέρωση πλήκτρου"
-
 #: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
+#, fuzzy
 msgid  "When loading"
 msgstr "Κατά τη φόρτωση"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
+#, fuzzy
 msgid  "Before reloading"
 msgstr "Πριν από την επαναφόρτωση"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
+#, fuzzy
 msgid  "When reloading"
 msgstr "Κατά την επαναφόρτωση"
 
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
-msgid  "Mouse moved while key pressed"
-msgstr "Κίνηση ποντικιού με πατημένο πλήκτρο"
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
-msgid  "Mouse inside"
-msgstr "Ποντίκι εντός"
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
-msgid  "Mouse outside"
-msgstr "Ποντίκι εκτός"
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
-msgid  "Mouse moved"
-msgstr "Κίνηση ποντικιού"
-
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
 msgid  "Mouse button pressed"
-msgstr "Πάτημα κουμπιού ποντικιού "
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
-msgid  "Mouse button released"
-msgstr "Απελευθέρωση κουμπιού ποντικιού"
-
-#: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
-msgstr "Πριν την αλλαγή εγγραφής"
-
-#: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
-msgid  "After record change"
-msgstr "Μετά την αλλαγή εγγραφής"
-
-#: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
-msgid  "After resetting"
-msgstr "Μετά από επαναφορά"
-
-#: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
-msgid  "Prior to reset"
-msgstr "Πριν την επαναφορά"
+msgstr "Πάτημα κουμπιού ποντικιού"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
+#, fuzzy
 msgid  "Approve action"
 msgstr "Έγκριση ενέργειας"
 
 #: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
+#, fuzzy
 msgid  "Before submitting"
 msgstr "Πριν την υποβολή"
 
-#: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
-msgstr "Τροποποίηση κειμένου"
-
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Before unloading"
 msgstr "Πριν την αποφόρτωση"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
+#, fuzzy
 msgid  "When unloading"
 msgstr "Κατά την αποφόρτωση"
 
-#: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
-msgid  "Changed"
-msgstr "Τροποποιημένο"
-
-#: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
-msgid  "Events"
-msgstr "Γεγονότα"
-
 #: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
+#, fuzzy
 msgid  "Analyze SQL command"
 msgstr "Ανάλυση εντολής SQL"
 
-#: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
-msgid  "PositionX"
-msgstr "ΘέσηX"
-
-#: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
-msgid  "PositionY"
-msgstr "ΘέσηY"
-
-#: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
-msgid  "Title"
-msgstr "Τίτλος"
-
-#: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
-msgid  "Page (step)"
-msgstr "Σελίδα (βήμα)"
-
-#: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
-msgid  "Progress value"
-msgstr "Τιμή προόδου"
-
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
 msgid  "Progress value min."
-msgstr "Ελάχιστη τιμή προόδου"
+msgstr "Ελάχιστη τιμή προόδου."
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
 msgid  "Progress value max."
-msgstr "Μέγιστη τιμή προόδου"
-
-#: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
-msgid  "Scroll value"
-msgstr "Τιμή κύλισης"
+msgstr "Μέγιστη τιμή προόδου."
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
 msgid  "Scroll value max."
-msgstr "Μέγιστη τιμή κύλισης"
+msgstr "Μέγιστη τιμή κύλισης."
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
 msgid  "Scroll value min."
-msgstr "Ελάχιστη τιμή κύλισης"
-
-#: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
-msgid  "Default scroll value"
-msgstr "Προκαθορισμένη τιμή κύλισης"
-
-#: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
-msgid  "Small change"
-msgstr "Μικρή αλλαγή"
-
-#: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
-msgid  "Large change"
-msgstr "Μεγάλη αλλαγή"
-
-#: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
-msgid  "Delay"
-msgstr "Καθυστέρηση"
+msgstr "Ελάχιστη τιμή κύλισης."
 
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
+#, fuzzy
 msgid  "Repeat"
 msgstr "Επανάληψη"
 
 #: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
+#, fuzzy
 msgid  "Visible size"
 msgstr "Ορατό μέγεθος"
-
-#: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
-msgid  "Orientation"
-msgstr "Προσανατολισμός"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
 #, fuzzy
@@ -1654,379 +987,248 @@ msgstr "Οριζόντια"
 msgid  "Vertical"
 msgstr "Κατακόρυφα"
 
-#: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
-msgstr "Κατά την προσαρμογή"
-
-#: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
-msgid  "Date"
-msgstr "Ημερομηνία"
-
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
+#, fuzzy
 msgid  "State"
 msgstr "Νομός"
 
-#: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
-msgid  "Time"
-msgstr "Ώρα"
-
-#: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
-msgid  "Scale"
-msgstr "Κλίμακα"
-
-#: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
-msgid  "Button type"
-msgstr "Τύπος κουμπιού"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
-msgid  "Default"
-msgstr "Προεπιλογή"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "OK"
 msgstr "OK"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
 msgstr "Ακύρωση"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
-msgid  "Help"
-msgstr "Βοήθεια"
-
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
 msgid  "The connection to the data source \"$name$\" could not be established."
-msgstr "Δεν ήταν δυνατή η δημιουργία σύνδεσης με την προέλευση δεδομένων\"$name$\"."
+msgstr "Δεν ήταν δυνατή η δημιουργία σύνδεσης με την προέλευση \"$name$\" δεδομένων."
 
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
+#, fuzzy
 msgid  "Linked cell"
 msgstr "Συνδεδεμένο κελί"
 
-#: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
-msgid  "Source cell range"
-msgstr "Προέλευση κελιών με τιμές"
-
 #: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Contents of the linked cell"
 msgstr "Περιεχόμενα συνδεδεμένου κελιού"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "The selected entry"
 msgstr "Η επιλεγμένη εγγραφή"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Position of the selected entry"
 msgstr "Θέση της επιλεγμένης εγγραφής"
 
-#: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
-msgid  "Scrollbars"
-msgstr "Γραμμές κύλισης"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
-msgid  "Single-line"
-msgstr "Μονή γραμμή"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
-msgid  "Multi-line"
-msgstr "Πολλαπλές γραμμές"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
-msgid  "Multi-line with formatting"
-msgstr "Πολλαπλές γραμμές με διαμόρφωση"
-
-#: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
-msgid  "Symbol color"
-msgstr "Σύμβολο χρώματος"
-
-#: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
-msgid  "Text lines end with"
-msgstr "Οι γραμμές κειμένου τελειώνουν με"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
-msgid  "LF (Unix)"
-msgstr "LF (Unix)"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
-msgid  "CR+LF (Windows)"
-msgstr "CR+LF (Windows)"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
-msgid  "Both"
-msgstr "Και τα δύο"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "SQL command"
 msgstr "Εντολή SQL"
 
-#: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
-msgid  "Toggle"
-msgstr "Εναλλαγή"
-
 #: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
+#, fuzzy
 msgid  "Take Focus on Click"
 msgstr "Λήψη εστίασης με το κλικ"
 
-#: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
-msgid  "Hide selection"
-msgstr "Απόκρυψη επιλογής"
-
-#: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
-msgid  "Style"
-msgstr "Πρότυπο"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
 msgid  "3D"
-msgstr "3Δ"
-
-#: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
-msgid  "Border color"
-msgstr "Χρώμα περιγράμματος"
+msgstr "3D"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
+#, fuzzy
 msgid  "Left top"
 msgstr "Αριστερά πάνω"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
+#, fuzzy
 msgid  "Left centered"
 msgstr "Αριστερά κεντραρισμένα"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
+#, fuzzy
 msgid  "Left bottom"
 msgstr "Αριστερά κάτω"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
+#, fuzzy
 msgid  "Right top"
 msgstr "Δεξιά πάνω"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
+#, fuzzy
 msgid  "Right centered"
 msgstr "Δεξιά κεντραρισμένα"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
+#, fuzzy
 msgid  "Right bottom"
 msgstr "Δεξιά κάτω"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
+#, fuzzy
 msgid  "Above left"
 msgstr "Πάνω αριστερά"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
-msgid  "Above centered"
-msgstr "Κεντραρισμένα πάνω"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
+#, fuzzy
 msgid  "Above right"
 msgstr "Πάνω δεξιά"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
+#, fuzzy
 msgid  "Below left"
 msgstr "Κάτω αριστερά"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
-msgid  "Below centered"
-msgstr "Κεντραρισμένα κάτω"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
+#, fuzzy
 msgid  "Below right"
 msgstr "Κάτω δεξιά"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
-msgid  "Centered"
-msgstr "Στο κέντρο"
-
-#: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
-msgid  "Wrap text automatically"
-msgstr "Αυτόματη αναδίπλωση κειμένου"
-
-#: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
-msgid  "Text type"
-msgstr "Τύπος κειμένου"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
+#, fuzzy
 msgid  "Hide"
 msgstr "Απόκρυψη"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
+#, fuzzy
 msgid  "Show"
 msgstr "Προβολή"
 
 #: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
+#, fuzzy
 msgid  "XML data model"
 msgstr "Μοντέλο δεδομένων XML"
 
-#: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
-msgid  "Binding expression"
-msgstr "Έκφραση διασύνδεσης"
-
-#: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
-msgid  "Required"
-msgstr "Απαιτείται"
-
-#: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
-msgid  "List entry source"
-msgstr "Προέλευση εγγραφής λίστας"
-
-#: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
-msgid  "Relevant"
-msgstr "Σχετικό"
-
-#: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
-msgid  "Constraint"
-msgstr "Περιορισμός"
-
-#: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
-msgid  "Calculation"
-msgstr "Υπολογισμός"
-
 #: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Data type"
 msgstr "Τύπος δεδομένων"
 
-#: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
-msgid  "Whitespaces"
-msgstr "Κενά"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
-msgid  "Preserve"
-msgstr "Διατήρηση"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
-msgid  "Replace"
-msgstr "Αντικατάσταση"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
-msgid  "Collapse"
-msgstr "Σύμπτυξη"
-
-#: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
-msgid  "Pattern"
-msgstr "Μοτίβο"
-
-#: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
-msgid  "Length"
-msgstr "Μήκος"
-
-#: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
-msgid  "Length (at least)"
-msgstr "Μήκος (ελάχιστο)"
-
-#: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
-msgid  "Length (at most)"
-msgstr "Μήκος (μέγιστο)"
-
-#: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
-msgid  "Digits (total)"
-msgstr "Ψηφία (συνολικά)"
-
 #: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
+#, fuzzy
 msgid  "Digits (fraction)"
 msgstr "Ψηφία (κλάσμα)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
 msgid  "Max. (inclusive)"
-msgstr "Μέγιστο (συμπεριλ)"
+msgstr "Μέγιστο. (συμπεριλαμβανομένου)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
 msgid  "Max. (exclusive)"
-msgstr "Μέγιστο (αποκλειστ)"
+msgstr "Μέγιστο. (εξαιρουμένου)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
 msgid  "Min. (inclusive)"
-msgstr "Ελαχ (συμπερ)"
+msgstr "Ελάχιστο. (συμπεριλαμβανομένου του ορίου)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
 msgid  "Min. (exclusive)"
-msgstr "Ελαχ (αποκλ)"
-
-#: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
-msgid  "Submission"
-msgstr "Υποβολή"
-
-#: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
-msgstr "Διασύνδεση"
+msgstr "Ελάχιστο. (εξαιρουμένου)"
 
 #: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Selection type"
 msgstr "Τύπος επιλογής"
 
 #: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
 msgid  "Root displayed"
-msgstr "Root displayed"
+msgstr "Εμφανίζετε η ρίζα"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_HANDLES.STRING.TEXT
 msgid  "Show handles"
-msgstr "Show handles"
+msgstr "Εμφάνιση διαχειριστών"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.STRING.TEXT
 msgid  "Show root handles"
-msgstr "Show root handles"
+msgstr "Εμφάνιση ρίζα διαχειριστών"
 
 #: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
+#, fuzzy
 msgid  "Editable"
 msgstr "Δυνατότητα επεξεργασίας"
 
 #: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
 msgid  "Invokes stop node editing"
-msgstr "Invokes stop node editing"
+msgstr "Ενεργοποιεί την διακοπή επεξεργασίας κόμβου"
 
 #: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
+#, fuzzy
 msgid  "With title bar"
 msgstr "Με την γραμμή τίτλου"
 
 #: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
+#, fuzzy
 msgid  "No Label"
 msgstr "Χωρίς ετικέτα"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
+#, fuzzy
 msgid  "Keep Ratio"
 msgstr "Διατήρηση αναλογίας"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.STRING.TEXT
+#, fuzzy
 msgid  "Fit to Size"
 msgstr "Προσαρμογή στο μέγεθος"
 
 #: propctrlr/formres.src#RID_STR_INPUT_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Input required"
 msgstr "Απαιτείται εισαγωγή"
 
 #: propctrlr/formres.src#RID_STR_WRITING_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Text direction"
 msgstr "Κατεύθυνση κειμένου"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.STRING.TEXT
+#, fuzzy
 msgid  "Left-to-right"
 msgstr "Δεξιά"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.STRING.TEXT
+#, fuzzy
 msgid  "Right-to-left"
 msgstr "Αριστερά"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.STRING.TEXT
+#, fuzzy
 msgid  "Use superordinate object settings"
 msgstr "Χρήση γενικών ρυθμίσεων αντικειμένου"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
+#, fuzzy
 msgid  "Never"
 msgstr "Ποτέ"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
+#, fuzzy
 msgid  "When focused"
 msgstr "Κατά την εστίαση"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
+#, fuzzy
 msgid  "Always"
 msgstr "Πάντα"
 
 #: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Anchor"
 msgstr "Αγκύρωση"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "To Paragraph"
 msgstr "Σε παράγραφο"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "As Character"
 msgstr "Ως χαρακτήρας"
 
@@ -2036,427 +1238,313 @@ msgid  "To Page"
 msgstr "Σε σελίδα"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "To Frame"
 msgstr "Σε πλαίσιο"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "To Character"
 msgstr "Σε χαρακτήρα"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "To Cell"
 msgstr "Σε κελί"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
+#, fuzzy
 msgid  "Regular"
 msgstr "Κανονικά"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
+#, fuzzy
 msgid  "Bold Italic"
 msgstr "Πλάγια Έντονα"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
+#, fuzzy
 msgid  "Italic"
 msgstr "Πλάγια"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
+#, fuzzy
 msgid  "Bold"
 msgstr "Έντονη"
 
-#: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
-msgid  "(Default)"
-msgstr "(Προεπιλογή)"
-
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "New Data Type"
 msgstr "Νέος τύπος δεδομένων"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type a name for the new data type:"
 msgstr "Δώστε ένα όνομα για το νέο τύπο δεδομένων:"
 
 #: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
 msgstr "Θέλετε να διαγράψετε τον τύπο δεδομένων '#type#' από το μοντέλο;\nΣημειώστε ότι αυτό θα επηρεάσει όλα στα στοιχεία ελέγχου που είναι συνδεδεμένα με αυτό το τύπο δεδομένων."
 
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
-msgid  "Button"
-msgstr "Κουμπί"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
-msgid  "Option Button"
-msgstr "Κουμπί επιλογών"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
-msgid  "Check Box"
-msgstr "Πεδίο σήμανσης"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-msgid  "Label Field"
-msgstr "Πεδίο ετικέτας"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
-msgid  "Group Box"
-msgstr "Πλαίσιο ομαδοποίησης"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
-msgid  "Text Box"
-msgstr "Πεδίο κειμένου"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid  "Formatted Field"
-msgstr "Μορφοποιημένο πεδίο"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
-msgid  "List Box"
-msgstr "Πεδίο λίστας"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
-msgid  "Combo Box"
-msgstr "Πεδίο συνδυασμού"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
-msgid  "Image Button"
-msgstr "Γραφικό πεδίο επιλογής"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
-msgid  "Hidden Control"
-msgstr "Κρυμμένο πεδίο ελέγχου"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
-msgid  "Control (unknown type)"
-msgstr "Πεδίο ελέγχου (άγνωστος τύπος)"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
-msgstr "Γραφικό πεδίο ελέγχου"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
-msgid  "File Selection"
-msgstr "Επιλογή αρχείου"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
-msgid  "Date Field"
-msgstr "Πεδίο ημερομηνίας"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
-msgid  "Time Field"
-msgstr "Πεδίο ώρας"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
-msgid  "Numeric Field"
-msgstr "Αριθμητικό πεδίο"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
-msgid  "Currency Field"
-msgstr "Πεδίο νομίσματος"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
-msgid  "Pattern Field"
-msgstr "Πεδίο μοτίβου"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
-msgid  "Table Control "
-msgstr "Πεδίο ελέγχου πίνακα "
-
-#: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
-msgid  "Default"
-msgstr "Προεπιλογή"
-
-#: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
-msgid  "General"
-msgstr "Γενικά"
-
-#: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
-msgid  "Data"
-msgstr "Δεδομένα"
-
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
+#, fuzzy
 msgid  "No"
 msgstr "Όχι"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
 msgstr "Ναι"
 
-#: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
-msgid  "Help"
-msgstr "Βοήθεια"
-
 #: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
+#, fuzzy
 msgid  "<Embedded-Image>"
 msgstr "<Embedded-Image>"
 
-#: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
-msgid  "Text"
-msgstr "Κείμενο"
-
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
 msgstr "Αυτά είναι πεδία ελέγχου τα οποία μπορούν να χρησιμοποιηθούν ως πεδία επισήμανσης για το $control_class$ $control_name$."
 
-#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
-msgid  "~No assignment"
-msgstr "~Χωρίς ανάθεση"
-
-#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
-msgid  "Label Field Selection"
-msgstr "Επιλογή πεδίου ετικέτας"
-
-#: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
-msgid  "Forms"
-msgstr "Φόρμες"
-
 #: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Tab Order"
 msgstr "Σειρά Tab"
 
-#: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
-msgid  "Controls"
-msgstr "Στοιχεία ελέγχου"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
-msgid  "Move Up"
-msgstr "Μετακίνηση πάνω"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
-msgid  "Move Down"
-msgstr "Μετακίνηση κάτω"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
-msgid  "Automatic Sort"
-msgstr "Αυτόματη ταξινόμηση"
-
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set"
 msgstr "Ορισμός"
 
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
-msgid  "Linear ascending"
-msgstr "Γραμμική αύξηση"
-
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
-msgid  "Linear descending"
-msgstr "Γραμμική μείωση"
-
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
-msgid  "Original values"
-msgstr "Αρχικές τιμές"
-
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
-msgid  "Exponential increasing"
-msgstr "Εκθετική αύξηση"
-
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
-msgid  "About\n Dev~ice"
-msgstr "Πληροφορίες\n συσκ~ευής"
-
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Create\nPreview"
 msgstr "Δημιουργία\nπροεπισκόπησης"
 
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
-msgid  "Preview"
-msgstr "Προεπισκόπηση"
-
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
-msgid  "Scan area"
-msgstr "Περιοχή σάρωσης"
-
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Left:"
 msgstr "Αριστερά:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Top:"
 msgstr "Πάνω:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Right:"
 msgstr "Δεξιά:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bottom:"
 msgstr "Κάτω:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Device used:"
 msgstr "Χρησιμοποιούμενη συσκευή:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
 msgid  "Resolution [~DPI]"
-msgstr "Ανάλυση [~DPI]:"
+msgstr "Ανάλυση [~DPI]"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Show advanced options"
 msgstr "Εμφάνιση περισσότερων επιλογών"
 
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
-msgid  "Options:"
-msgstr "Επιλογές:"
-
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Vector element"
 msgstr "Στοιχείο διανύσματος"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set"
 msgstr "Ορισμός"
 
-#: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
-msgid  "Scanner"
-msgstr "Σαρωτής"
-
 #: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
+#, fuzzy
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
 msgstr "Συσκευή: %s\nΚατασκευαστής: %s\nΜοντέλο: %s\nΤύπος: %s"
 
 #: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred while scanning."
 msgstr "Παρουσιάστηκε σφάλμα κατά την σάρωση."
 
 #: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
+#, fuzzy
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
 msgstr "Η συσκευή δε διαθέτει επιλογή προεπισκόπησης. Για αυτό το λόγο, μία κανονική σάρωση θα χρησιμοποιηθεί σαν προεπισκόπηση. Αυτό μπορεί να πάρει πολύ χρόνο."
 
 #: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
+#, fuzzy
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
 msgstr "Αδύνατη η αρχικοποίηση της διασύνδεσης SANE. Η σάρωση δεν είναι δυνατή."
 
 #: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
 msgid  "Check for ~Updates..."
-msgstr "'Ελεγχος για εν~ημερώσεις..."
+msgstr "Έλεγχος για Εν~ημερώσεις..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
+#, fuzzy
 msgid  "Checking..."
 msgstr "Έλεγχος..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
+#, fuzzy
 msgid  "Checking for an update failed."
 msgstr "Ο έλεγχος ενημερώσεων απέτυχε."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION είναι ενημερωμένο."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr "%PRODUCTNAME %NEXTVERSION είναι διαθέσιμο.\n\nΗ εγκατεστημένη έκδοση είναι %PRODUCTNAME %PRODUCTVERSION.\n\nΣημείωση: Πριν κάνετε λήψη μιας ενημέρωσης, παρακαλώ ελέγξτε ότι έχετε επαρκή δικαιώματα πρόσβασης για την εγκατάσταση της.\nΟ κωδικός πρόσβασης, συνήθως του διαχειριστή ή του χρήση root, μπορεί να ζητηθεί."
+msgstr "Το %PRODUCTNAME %NEXTVERSION είναι διαθέσιμο.\n\nΗ εγκατεστημένη έκδοση είναι %PRODUCTNAME %PRODUCTVERSION.\n\nΣημείωση: Πριν κάνετε λήψη   μιας ενημέρωσης, παρακαλώ ελέγξτε ότι έχετε επαρκή δικαιώματα στον υπολογιστή σας για την εγκατάσταση.\nΜπορεί να απαιτηθεί ο κωδικός του διαχειριστή ή του χρήστη root για την επιτυχή ολοκλήρωση."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
 msgid  "Check for Updates"
-msgstr "'Ελεγχος για ενημερώσεις"
+msgstr "Έλεγχος για Ενημερώσεις"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
 msgstr "Η λήψη του %PRODUCTNAME %NEXTVERSION σταμάτησε στο..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "Η λήψη του %PRODUCTNAME %NEXTVERSION κόλλησε στο"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "Η τοποθεσία λήψης  είναι: %DOWNLOAD_PATH.\n\nΣτα Εργαλεία – Επιλογές... - %PRODUCTNAME – Ενημέρωση μέσω διαδικτύου μπορείτε να αλλάξετε τη τοποθεσία λήψης ."
+msgstr "Η τοποθεσία λήψης είναι: %DOWNLOAD_PATH.\n\nΣτα Εργαλεία – Επιλογές... - %PRODUCTNAME – Ενημέρωση μέσω διαδικτύου μπορείτε να αλλάξετε την τοποθεσία λήψης."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
+#, fuzzy
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME έχει ληφθεί στο %DOWNLOAD_PATH."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "Η αυτόματη λήψη της ενημέρωσης προσωρινά δεν είναι διαθέσιμη.\n\nΠατήστε 'Λήψη...' για να κάνετε λήψη του  το %PRODUCTNAME %NEXTVERSION χειροκίνητα από τον δικτυακό τόπο."
+msgstr "Η αυτόματη λήψη της ενημέρωσης προσωρινά δεν είναι διαθέσιμη.\n\nΠατήστε 'Λήψη...' για να κάνετε λήψη του το %PRODUCTNAME %NEXTVERSION χειροκίνητα από την ιστοσελίδα."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
 msgstr "Λήψη του %PRODUCTNAME %NEXTVERSION..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
+#, fuzzy
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
 msgstr "Η λήψη του %PRODUCTNAME %NEXTVERSION ολοκληρώθηκε. Έτοιμο για εγκατάσταση."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to cancel the download?"
 msgstr "Θέλετε πραγματικά να ακυρώσετε τη λήψη;"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
+#, fuzzy
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
 msgstr "Για να εγκατασταθεί η ενημέρωση, %PRODUCTNAME %PRODUCTVERSION πρέπει να κλείσει. Θέλετε να εγκαταστήσετε την ενημέρωση τώρα;"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
+#, fuzzy
 msgid  "Install ~now"
 msgstr "Εγκατάσταση ~τώρα"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
 msgid  "Install ~later"
-msgstr "Εγκαταστήστε  α~ργότερα"
+msgstr "Εγκαταστήστε α~ργότερα"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
 msgstr "Δεν μπορεί να εκτελεστεί η εφαρμογή εγκατάστασης, παρακαλώ εκτελέστε το %FILE_NAME στο %DOWNLOAD_PATH χειροκίνητα."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
 msgstr "Ένα αρχείο με το ίδιο όνομα υπάρχει ήδη! Θέλετε να επικαλύψετε το υπάρχον αρχείο;"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
 msgstr "Ένα αρχείο με το όνομα '%FILENAME' υπάρχει ήδη στο '%DOWNLOAD_PATH'! Θέλετε να συνεχίσετε με τη λήψη του αρχείου ή να διαγράψετε και να επαναφορτώσετε το αρχείο;"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.STRING.TEXT
+#, fuzzy
 msgid  "Reload File"
 msgstr "Επαναφόρτωση αρχείου"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.STRING.TEXT
+#, fuzzy
 msgid  "Continue"
 msgstr "Συνέχεια"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
+#, fuzzy
 msgid  "%PERCENT%"
 msgstr "%PERCENT%"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "Status"
 msgstr "Κατάσταση"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description"
 msgstr "Περιγραφή"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close"
 msgstr "Κλείσιμο"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
+#, fuzzy
 msgid  "~Download"
 msgstr "Λή~ψη"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
 msgid  "~Install"
-msgstr "~Εγκατάσταση "
+msgstr "~Εγκατάσταση"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
+#, fuzzy
 msgid  "~Pause"
 msgstr "Π~αύση"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
+#, fuzzy
 msgid  "~Resume"
 msgstr "~Συνέχεια"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
 msgstr "Άκυρο"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.STRING.TEXT
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
-msgstr "Υπάρχει διαθέσιμη ενημέρωση του %PRODUCTNAME "
+msgstr "%PRODUCTNAME διαθέσιμη μια ενημέρωση"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Click here to start the download."
 msgstr "Πατήστε εδώ για να αρχίσετε την λήψη."
 
@@ -2466,33 +1554,41 @@ msgid  "Click here for more information."
 msgstr "Πατήστε εδώ για περισσότερες πληροφορίες."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
+#, fuzzy
 msgid  "Download of update begins."
 msgstr "Η λήψη της ενημέρωσης αρχίζει."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Download of update in progress"
 msgstr "Η λήψη της ενημέρωσης είναι σε εξέλιξη"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
+#, fuzzy
 msgid  "Download of update paused"
 msgstr "Η λήψη της ενημέρωσης σταμάτησε"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
+#, fuzzy
 msgid  "Click here to resume."
 msgstr "Πατήστε εδώ για να συνεχίσετε."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Download of update stalled"
 msgstr "Η λήψη της ενημέρωσης χρονοτριβεί"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Download of update completed"
 msgstr "Η λήψη της ενημέρωσης ολοκληρώθηκε"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Click here to start the installation."
 msgstr "Πατήστε εδώ για να αρχίσετε την εγκατάσταση."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Updates for extensions available"
 msgstr "Υπάρχουν διαθέσιμες ενημερώσεις για τις επεκτάσεις"

@@ -47,10 +47,6 @@ msgstr "air a chur 'na àite"
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
 msgstr "Thachair mearachd fhad 's a bha an t-inneal-smachd seo 'ga luchdadh. Chaidh glèidheadair-àite a chur 'na àite air sgàth sin."
 
-#: resource/strings.src#RID_STR_READERROR.STRING.TEXT
-msgid  "Error reading data from database"
-msgstr "Thachair mearachd le leughadh an dàta on stòr-dàta"
-
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
 msgid  "Connection failed"
 msgstr "Dh'fhàillig an ceangal"
@@ -63,22 +59,6 @@ msgstr "Cha do ghabh an t-susbaint dàta a luchdadh."
 msgid  "The data content could not be updated"
 msgstr "Cha do ghabh an t-susbaint dàta ùrachadh"
 
-#: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
-msgid  "Error inserting the new record"
-msgstr "Thachair mearachd rè cur a-steach an reacoird ùir"
-
-#: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
-msgid  "Error updating the current record"
-msgstr "Thachair mearachd rè ùrachadh an reacoird làithrich"
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
-msgid  "Error deleting the current record"
-msgstr "Thachair mearachd rè sguabadh às an reacoird làithrich"
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
-msgid  "Error deleting the specified records"
-msgstr "Thachair mearachd rè sguabadh às nan reacordan a shònraich thu"
-
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
 msgid  "The object cannot be NULL."
 msgstr "Chan fhaod an t-oibseact seo a bhith 'na NULL."
@@ -87,17 +67,9 @@ msgstr "Chan fhaod an t-oibseact seo a bhith 'na NULL."
 msgid  "Insert graphics from..."
 msgstr "Cuir a-steach grafaigean o..."
 
-#: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
-msgid  "Remove graphics"
-msgstr "Thoir air falbh grafaigean"
-
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
 msgid  "The given stream is invalid."
 msgstr "Tha an sruth a shònraich thu mì-dhligheach."
-
-#: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
-msgid  "Syntax error in query expression"
-msgstr "Tha mearachd co-chàraidh sa cheist"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
@@ -207,29 +179,9 @@ msgstr "Chan fhaod an t-sreang a bhith ach $2 caractair(ean) a dh'fhaid air a' c
 msgid  "String"
 msgstr "Sreang"
 
-#: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
-msgid  "Hyperlink"
-msgstr "Ceangal-lìn"
-
-#: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
-msgid  "True/False (Boolean)"
-msgstr "Fìor/Breugach (Booleach)"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
-msgid  "Decimal"
-msgstr "Deicheach"
-
-#: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
-msgid  "Floating point"
-msgstr "Puing air fleod"
-
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
 msgid  "Double"
 msgstr "Dùblaich"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
-msgid  "Date"
-msgstr "Ceann-là"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
 msgid  "Time"
@@ -247,26 +199,6 @@ msgstr "Mìos agus bliadhna"
 msgid  "Year"
 msgstr "Bliadhna"
 
-#: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
-msgid  "Month and day"
-msgstr "Mìos agus latha"
-
-#: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
-msgid  "Month"
-msgstr "Mìos"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
-msgid  "Day"
-msgstr "Latha"
-
-#: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
-msgid  "Error during evaluation"
-msgstr "Thachair mearachd rè an luachaidh"
-
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
 msgid  "The string '$1' does not match the required regular expression '$2'."
 msgstr "Chan eil an t-sreang '$1' a' freagairt ris an Regular Expression '$2' air a bheil feum."
-
-#: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
-msgstr "Ceangladh"

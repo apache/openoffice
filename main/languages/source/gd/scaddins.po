@@ -31,21 +31,9 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.1.STRING.TEXT
-msgid  "Calculates the number of weeks in a specific period"
-msgstr "Àireamhaichidh seo àireamh de sheachdainean ann an ùine shònraichte"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.2.STRING.TEXT
-msgid  "Start date"
-msgstr "Ceann-là tòiseachaidh"
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.3.STRING.TEXT
 msgid  "First day of the period"
 msgstr "A' chiad latha dhen ùine"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.4.STRING.TEXT
-msgid  "End date"
-msgstr "Ceann-là crìochnachaidh"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.5.STRING.TEXT
 msgid  "Last day of the period"
@@ -54,34 +42,6 @@ msgstr "An latha mu dheireadh dhen ùine"
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.6.STRING.TEXT
 msgid  "Type"
 msgstr "Seòrsa"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr "Seòrsa an àireamhachaidh: Tha seòrsa=0 a' sònrachadh an t-eadaramh ùine, seòrsa=1 seachdainean a' mhìosachain."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.1.STRING.TEXT
-msgid  "Determines the number of months in a specific period."
-msgstr "Lorgaidh seo àireamh de mhìosan ann an ùine shònraichte."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.3.STRING.TEXT
-msgid  "First day of the period."
-msgstr "A' chiad latha dhen ùine."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.5.STRING.TEXT
-msgid  "Last day of the period."
-msgstr "An latha mu dheireadh dhen ùine."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr "Seòrsa an àireamhachaidh: Tha seòrsa=0 a' sònrachadh an t-eadaramh ùine, seòrsa=1 mìosan a' mhìosachain."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.1.STRING.TEXT
-msgid  "Calculates the number of years in a specific period."
-msgstr "Àireamhaichidh seo àireamh de bhliadhnaichean ann an ùine shònraichte."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr "Seòrsa an àireamhachaidh: Tha seòrsa=0 a' sònrachadh an t-eadaramh ùine, seòrsa=1 bliadhnaichean a' mhìosachain."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.1.STRING.TEXT
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
@@ -99,46 +59,6 @@ msgstr "Latha sam bith sa bhliadhna a tha thu ag iarraidh"
 msgid  "Returns the number of days of the month in which the date entered occurs"
 msgstr "Tillidh seo àireamh nan làithean sa mhìos sa bheil an ceann-là a chuir thu a-steach"
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.3.STRING.TEXT
-msgid  "Any day in the desired month"
-msgstr "Latha sam bith sa mhìos a tha thu ag iarraidh"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.1.STRING.TEXT
-msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr "Tillidh seo àireamh na làithean sa bhliadhna sa bheil an ceann-là a chuir thu a-steach."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.1.STRING.TEXT
-msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr "Tillidh seo àireamh nan seachdainean sa bhliadhna sa bheil an ceann-là a chuir thu a-steach"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.1.STRING.TEXT
-msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr "Dubh-cheilidh seo (no bheir e air falbh e) teacsa leis an algairim ROT13"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.2.STRING.TEXT
-msgid  "Text"
-msgstr "Teacsa"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.3.STRING.TEXT
-msgid  "Text to be encrypted or text already encrypted"
-msgstr "An teacsa a thèid a dhubh-cheileadh no a tha fo dhubh-cheileadh mu thràth"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFWEEKS.STRING.TEXT
-msgid  "WEEKS"
-msgstr "WEEKS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFMONTHS.STRING.TEXT
-msgid  "MONTHS"
-msgstr "MONTHS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFYEARS.STRING.TEXT
-msgid  "YEARS"
-msgstr "YEARS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ISLEAPYEAR.STRING.TEXT
-msgid  "ISLEAPYEAR"
-msgstr "ISLEAPYEAR"
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINMONTH.STRING.TEXT
 msgid  "DAYSINMONTH"
 msgstr "DAYSINMONTH"
@@ -147,193 +67,9 @@ msgstr "DAYSINMONTH"
 msgid  "DAYSINYEAR"
 msgstr "DAYSINYEAR"
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WEEKSINYEAR.STRING.TEXT
-msgid  "WEEKSINYEAR"
-msgstr "WEEKSINYEAR"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ROT13.STRING.TEXT
-msgid  "ROT13"
-msgstr "ROT13"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WORKDAY.STRING.TEXT
-msgid  "WORKDAY"
-msgstr "WORKDAY"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YEARFRAC.STRING.TEXT
-msgid  "YEARFRAC"
-msgstr "YEARFRAC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EDATE.STRING.TEXT
-msgid  "EDATE"
-msgstr "EDATE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WEEKNUM.STRING.TEXT
-msgid  "WEEKNUM"
-msgstr "WEEKNUM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EOMONTH.STRING.TEXT
-msgid  "EOMONTH"
-msgstr "EOMONTH"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NETWORKDAYS.STRING.TEXT
-msgid  "NETWORKDAYS"
-msgstr "NETWORKDAYS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORDEGRC.STRING.TEXT
-msgid  "AMORDEGRC"
-msgstr "AMORDEGRC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORLINC.STRING.TEXT
-msgid  "AMORLINC"
-msgstr "AMORLINC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINT.STRING.TEXT
-msgid  "ACCRINT"
-msgstr "ACCRINT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINTM.STRING.TEXT
-msgid  "ACCRINTM"
-msgstr "ACCRINTM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RECEIVED.STRING.TEXT
-msgid  "RECEIVED"
-msgstr "RECEIVED"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DISC.STRING.TEXT
-msgid  "DISC"
-msgstr "DISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DURATION.STRING.TEXT
-msgid  "DURATION"
-msgstr "DURATION"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EFFECT.STRING.TEXT
-msgid  "EFFECT"
-msgstr "EFFECT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMPRINC.STRING.TEXT
-msgid  "CUMPRINC"
-msgstr "CUMPRINC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMIPMT.STRING.TEXT
-msgid  "CUMIPMT"
-msgstr "CUMIPMT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICE.STRING.TEXT
-msgid  "PRICE"
-msgstr "PRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEDISC.STRING.TEXT
-msgid  "PRICEDISC"
-msgstr "PRICEDISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEMAT.STRING.TEXT
-msgid  "PRICEMAT"
-msgstr "PRICEMAT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MDURATION.STRING.TEXT
-msgid  "MDURATION"
-msgstr "MDURATION"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NOMINAL.STRING.TEXT
-msgid  "NOMINAL"
-msgstr "NOMINAL"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARFR.STRING.TEXT
-msgid  "DOLLARFR"
-msgstr "DOLLARFR"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARDE.STRING.TEXT
-msgid  "DOLLARDE"
-msgstr "DOLLARDE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELD.STRING.TEXT
-msgid  "YIELD"
-msgstr "YIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDDISC.STRING.TEXT
-msgid  "YIELDDISC"
-msgstr "YIELDDISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDMAT.STRING.TEXT
-msgid  "YIELDMAT"
-msgstr "YIELDMAT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLEQ.STRING.TEXT
-msgid  "TBILLEQ"
-msgstr "TBILLEQ"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLPRICE.STRING.TEXT
-msgid  "TBILLPRICE"
-msgstr "TBILLPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLYIELD.STRING.TEXT
-msgid  "TBILLYIELD"
-msgstr "TBILLYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFPRICE.STRING.TEXT
-msgid  "ODDFPRICE"
-msgstr "ODDFPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFYIELD.STRING.TEXT
-msgid  "ODDFYIELD"
-msgstr "ODDFYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLPRICE.STRING.TEXT
-msgid  "ODDLPRICE"
-msgstr "ODDLPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLYIELD.STRING.TEXT
-msgid  "ODDLYIELD"
-msgstr "ODDLYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XIRR.STRING.TEXT
-msgid  "XIRR"
-msgstr "XIRR"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XNPV.STRING.TEXT
-msgid  "XNPV"
-msgstr "XNPV"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_INTRATE.STRING.TEXT
-msgid  "INTRATE"
-msgstr "INTRATE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNCD.STRING.TEXT
-msgid  "COUPNCD"
-msgstr "COUPNCD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYS.STRING.TEXT
-msgid  "COUPDAYS"
-msgstr "COUPDAYS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYSNC.STRING.TEXT
-msgid  "COUPDAYSNC"
-msgstr "COUPDAYSNC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYBS.STRING.TEXT
-msgid  "COUPDAYBS"
-msgstr "COUPDAYBS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPPCD.STRING.TEXT
-msgid  "COUPPCD"
-msgstr "COUPPCD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNUM.STRING.TEXT
-msgid  "COUPNUM"
-msgstr "COUPNUM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FVSCHEDULE.STRING.TEXT
-msgid  "FVSCHEDULE"
-msgstr "FVSCHEDULE"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISEVEN.STRING.TEXT
 msgid  "ISEVEN"
 msgstr "ISEVEN"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISODD.STRING.TEXT
-msgid  "ISODD"
-msgstr "ISODD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GCD.STRING.TEXT
 msgid  "GCD"
@@ -343,45 +79,9 @@ msgstr "GCD"
 msgid  "LCM"
 msgstr "LCM"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MULTINOMIAL.STRING.TEXT
-msgid  "MULTINOMIAL"
-msgstr "MULTINOMIAL"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SERIESSUM.STRING.TEXT
-msgid  "SERIESSUM"
-msgstr "SERIESSUM"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_QUOTIENT.STRING.TEXT
 msgid  "QUOTIENT"
 msgstr "QUOTIENT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MROUND.STRING.TEXT
-msgid  "MROUND"
-msgstr "MROUND"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SQRTPI.STRING.TEXT
-msgid  "SQRTPI"
-msgstr "SQRTPI"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RANDBETWEEN.STRING.TEXT
-msgid  "RANDBETWEEN"
-msgstr "RANDBETWEEN"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELI.STRING.TEXT
-msgid  "BESSELI"
-msgstr "BESSELI"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELJ.STRING.TEXT
-msgid  "BESSELJ"
-msgstr "BESSELJ"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELK.STRING.TEXT
-msgid  "BESSELK"
-msgstr "BESSELK"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELY.STRING.TEXT
-msgid  "BESSELY"
-msgstr "BESSELY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2DEC.STRING.TEXT
 msgid  "BIN2DEC"
@@ -395,10 +95,6 @@ msgstr "BIN2HEX"
 msgid  "BIN2OCT"
 msgstr "BIN2OCT"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DELTA.STRING.TEXT
-msgid  "DELTA"
-msgstr "DELTA"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2BIN.STRING.TEXT
 msgid  "DEC2BIN"
 msgstr "DEC2BIN"
@@ -410,18 +106,6 @@ msgstr "DEC2HEX"
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2OCT.STRING.TEXT
 msgid  "DEC2OCT"
 msgstr "DEC2OCT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERF.STRING.TEXT
-msgid  "ERF"
-msgstr "ERF"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERFC.STRING.TEXT
-msgid  "ERFC"
-msgstr "ERFC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GESTEP.STRING.TEXT
-msgid  "GESTEP"
-msgstr "GESTEP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2BIN.STRING.TEXT
 msgid  "HEX2BIN"
@@ -438,10 +122,6 @@ msgstr "HEX2OCT"
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMABS.STRING.TEXT
 msgid  "IMABS"
 msgstr "IMABS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMAGINARY.STRING.TEXT
-msgid  "IMAGINARY"
-msgstr "IMAGINARY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPOWER.STRING.TEXT
 msgid  "IMPOWER"
@@ -503,9 +183,37 @@ msgstr "IMSUM"
 msgid  "IMSQRT"
 msgstr "IMSQRT"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COMPLEX.STRING.TEXT
-msgid  "COMPLEX"
-msgstr "COMPLEX"
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMTAN.STRING.TEXT
+msgid  "IMTAN"
+msgstr "IMTAN"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSEC.STRING.TEXT
+msgid  "IMSEC"
+msgstr "IMSEC"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSC.STRING.TEXT
+msgid  "IMCSC"
+msgstr "IMCSC"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOT.STRING.TEXT
+msgid  "IMCOT"
+msgstr "IMCOT"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSINH.STRING.TEXT
+msgid  "IMSINH"
+msgstr "IMSINH"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOSH.STRING.TEXT
+msgid  "IMCOSH"
+msgstr "IMCOSH"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSECH.STRING.TEXT
+msgid  "IMSECH"
+msgstr "IMSECH"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSCH.STRING.TEXT
+msgid  "IMCSCH"
+msgstr "IMCSCH"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2BIN.STRING.TEXT
 msgid  "OCT2BIN"
@@ -519,41 +227,17 @@ msgstr "OCT2DEC"
 msgid  "OCT2HEX"
 msgstr "OCT2HEX"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CONVERT.STRING.TEXT
-msgid  "CONVERT"
-msgstr "CONVERT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FACTDOUBLE.STRING.TEXT
-msgid  "FACTDOUBLE"
-msgstr "FACTDOUBLE"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.1.STRING.TEXT
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
 msgstr "Tillidh seo an àireamh shreathach dhen cheann-là ro no as dèidh àireamh shònraichte de làithean-obrach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.2.STRING.TEXT
-msgid  "Start date"
-msgstr "Ceann-là tòiseachaidh"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.3.STRING.TEXT
 msgid  "The start date"
 msgstr "An ceann-là tòiseachaidh"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.4.STRING.TEXT
-msgid  "Days"
-msgstr "Làithean"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.5.STRING.TEXT
-msgid  "The number of workdays before or after the start date"
-msgstr "Àireamh nan làithean-obrach ro no as dèidh a' chinn-là tòiseachaidh"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.6.STRING.TEXT
 msgid  "Holidays"
 msgstr "Saor-làithean"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.7.STRING.TEXT
-msgid  "List of date values of days off (vacation, holidays, etc.)"
-msgstr "Liosta nan ceann-là dheth (mar shaor-làithean is msaa.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.1.STRING.TEXT
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
@@ -563,61 +247,13 @@ msgstr "Tillidh seo an àireamh de làithean slàna eadar an ceann-là tòiseach
 msgid  "End date"
 msgstr "Ceann-là crìochnachaidh"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.5.STRING.TEXT
-msgid  "The end date"
-msgstr "An ceann-là crìochnachaidh"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.6.STRING.TEXT
 msgid  "Basis"
 msgstr "Bunait"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.7.STRING.TEXT
-msgid  "Basis for determining the interest days"
-msgstr "A' bhunait a chleachdar gus làithean an rèidh àireamhachadh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.1.STRING.TEXT
-msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr "Tillidh seo an àireamh shreathach dhen cheann-là a tha uiread a mhìosan ro no as dèidh a' chinn-là tòiseachaidh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.4.STRING.TEXT
-msgid  "Months"
-msgstr "Mìosan"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.5.STRING.TEXT
 msgid  "Number of months before or after the start date"
 msgstr "Àireamh nam mìosan ro no as dèidh a' chinn-là tòiseachaidh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.1.STRING.TEXT
-msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr "Tillidh seo àireamh seachdainean a' mhìosachain sa bheil an ceann-là a shonraich thu."
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.2.STRING.TEXT
-msgid  "Date"
-msgstr "Ceann-là"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.3.STRING.TEXT
-msgid  "The date"
-msgstr "An ceann-là"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.4.STRING.TEXT
-msgid  "Return type"
-msgstr "Seòrsa an toraidh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.5.STRING.TEXT
-msgid  "A number from 1 to 3 that specifies the day with which a week begins"
-msgstr "Àireamh eadar 1 is 3 a shònraicheas an latha air a thòisicheas seachdain"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.1.STRING.TEXT
-msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr "Tillidh seo an àireamh shreathach dhen cheann-là mu dheireadh a' mhìos a tha uiread a mhìosan ro no as dèidh a' chinn-là tòiseachaidh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.1.STRING.TEXT
-msgid  "Returns the number of workdays between two dates"
-msgstr "Tillidh seo àireamh de làithean-obrach eadar dà cheann-là"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.7.STRING.TEXT
-msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr "Liosta nan luachan cinn-là a tha a' riochdachadh làithean dheth (mar shaor-làithean is msaa.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.1.STRING.TEXT
 msgid  "Returns the value 'true' if the number is even"
@@ -635,57 +271,17 @@ msgstr "An àireamh"
 msgid  "Returns the value 'true' if the number is odd"
 msgstr "Tillidh seo an luach TRUE mas a àireamh chorr a tha ann"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.1.STRING.TEXT
-msgid  "Returns the multinomial coefficient of a set of numbers"
-msgstr "Tillidh seo co-èifeachd ioma-nòmach de sheata àireamhan"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.2.STRING.TEXT
 msgid  "Number(s)"
 msgstr "Àireamh(an)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.3.STRING.TEXT
-msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr "Àireamh no liosta de dh'àireamhan a tha thu ag iarraidh a' cho-èifeachd ioma-nòmach air a shon"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.1.STRING.TEXT
-msgid  "Returns the sum of a power series"
-msgstr "Tillidh seo an t-suim de shreath cumhachd"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.2.STRING.TEXT
 msgid  "X"
 msgstr "X"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.3.STRING.TEXT
-msgid  "The independent variable of the power series"
-msgstr "Caochladair neo-eisimeileach an t-sreatha chumhachd"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.4.STRING.TEXT
 msgid  "N"
 msgstr "N"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.5.STRING.TEXT
-msgid  "The initial power to which x is to be raised"
-msgstr "A' chumhachd thòiseachail a thèid x àrdachadh thuige"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.6.STRING.TEXT
-msgid  "M"
-msgstr "M"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.7.STRING.TEXT
-msgid  "The increment by which to increase n for each term in the series"
-msgstr "An ioncramaid a thèid n àrdachadh gach teirm san t-sreath"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.8.STRING.TEXT
-msgid  "Coefficients"
-msgstr "Co-èifeachdan"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.9.STRING.TEXT
-msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr "Seata de cho-èifeachdan a thèid gach cumhachd cho-leantach a' chaochladair x iomadachadh leis"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.1.STRING.TEXT
-msgid  "Returns the integer portion of a division"
-msgstr "Tillidh seo pàirt shlàn-àireamhach de roinneadh"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.2.STRING.TEXT
 msgid  "Numerator"
@@ -695,17 +291,9 @@ msgstr "Àireamhaiche"
 msgid  "The dividend"
 msgstr "An dibhinne"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.4.STRING.TEXT
-msgid  "Denominator"
-msgstr "An seòrsaiche"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.5.STRING.TEXT
 msgid  "The divisor"
 msgstr "An roinneadair"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.1.STRING.TEXT
-msgid  "Returns a number rounded to a specified multiple"
-msgstr "Tillidh seo àireamh a chaidh a chuartachadh dhan iomad a shònraich thu"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.3.STRING.TEXT
 msgid  "The number to round off"
@@ -715,53 +303,13 @@ msgstr "An àireamh a thèid a chuartachadh dheth"
 msgid  "Multiple"
 msgstr "Iomad"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.5.STRING.TEXT
-msgid  "The multiple to which you want to round number"
-msgstr "An t-iomad a bu toigh leat àireamh a chuartachadh thuige"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.1.STRING.TEXT
-msgid  "Returns the square root of a number which has been multiplied by pi"
-msgstr "Tillidh seo am freumh ceàrnagach de dh'àireamh a thèid iomadachadh le π"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.3.STRING.TEXT
-msgid  "The number by which pi is multiplied"
-msgstr "An àireamh a thèid π iomadachadh leis"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.1.STRING.TEXT
 msgid  "Returns a random integer between the numbers you specify"
 msgstr "Tillidh seo àireamh shlàn thuaireamach eadar na h-àireamhan a thaghas tu"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.2.STRING.TEXT
-msgid  "Bottom"
-msgstr "Bonn"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.3.STRING.TEXT
-msgid  "The smallest integer returned"
-msgstr "An àireamh shlàn as lugha a thèid a thilleadh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.4.STRING.TEXT
-msgid  "Top"
-msgstr "Barr"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.5.STRING.TEXT
-msgid  "The largest integer returned"
-msgstr "An àireamh shlàn as motha a thèid a thilleadh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.1.STRING.TEXT
-msgid  "Returns the greatest common divisor"
-msgstr "Tillidh seo an roinneadair coitcheann as motha"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.3.STRING.TEXT
 msgid  "Number or list of numbers"
 msgstr "Àireamh no liosta de dh'àireamhan"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.1.STRING.TEXT
-msgid  "Returns the least common multiple"
-msgstr "Tillidh seo an t-iomad coitcheann as lugha"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.1.STRING.TEXT
-msgid  "Returns the modified Bessel function In(x)"
-msgstr "Tillidh seo am foincsean Bessel atharraichte In(x)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.3.STRING.TEXT
 msgid  "The value at which the function is to be evaluated"
@@ -770,18 +318,6 @@ msgstr "An luach a thèid am foincsean a luachadh ann"
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.5.STRING.TEXT
 msgid  "The order of the Bessel function"
 msgstr "Òrdugh an fhoincsein Bessel"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.1.STRING.TEXT
-msgid  "Returns the Bessel function Jn(x)"
-msgstr "Tillidh seo am foincsean Bessel Jn(x)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.1.STRING.TEXT
-msgid  "Returns the Bessel function Kn(x)"
-msgstr "Tillidh seo am foincsean Bessel Kn(x)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.1.STRING.TEXT
-msgid  "Returns the Bessel function Yn(x)"
-msgstr "Tillidh seo am foincsean Bessel Yn(x)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.1.STRING.TEXT
 msgid  "Converts a binary number to an octal number"
@@ -803,89 +339,21 @@ msgstr "Àireamh de dh'àitichean a chaidh a chleachdadh"
 msgid  "Converts a binary number to a decimal number"
 msgstr "Iompaichidh seo àireamh bhìnearaidh 'na àireamh dheicheach"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.1.STRING.TEXT
-msgid  "Converts a binary number to a hexadecimal number"
-msgstr "Iompaichidh seo àireamh bhìnearaidh 'na àireamh shia-dheicheach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.5.STRING.TEXT
-msgid  "Number of places used."
-msgstr "Àireamh de dh'àitichean a chaidh a chleachdadh."
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.1.STRING.TEXT
-msgid  "Converts an octal number to a binary number"
-msgstr "Iompaichidh seo àireamh ochdach 'na àireamh bhìnearaidh"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.3.STRING.TEXT
 msgid  "The octal number to be converted (as text)"
 msgstr "An àireamh ochdach a thèid iompachadh (mar theacsa)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.1.STRING.TEXT
-msgid  "Converts an octal number to a decimal number"
-msgstr "Iompaichidh seo àireamh ochdach 'na àireamh dheicheach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.1.STRING.TEXT
-msgid  "Converts an octal number to a hexadecimal number"
-msgstr "Iompaichidh seo àireamh ochdach 'na àireamh shia-dheicheach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.1.STRING.TEXT
-msgid  "Converts a decimal number to a binary number"
-msgstr "Iompaichidh seo àireamh dheicheach 'na àireamh bhìnearaidh"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.3.STRING.TEXT
 msgid  "The decimal integer to be converted"
 msgstr "An àireamh shlàn dheicheach a thèid iompachadh"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.1.STRING.TEXT
-msgid  "Converts a decimal number to a hexadecimal number"
-msgstr "Iompaichidh seo àireamh dheicheach 'na àireamh shia-dheicheach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.1.STRING.TEXT
-msgid  "Converts a decimal number into an octal number"
-msgstr "Iompaichidh seo àireamh dheicheach 'na àireamh ochdach"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.3.STRING.TEXT
 msgid  "The decimal number"
 msgstr "An àireamh dheicheach"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to a binary number"
-msgstr "Iompaichidh seo àireamh shia-dheicheach 'na àireamh bhìnearaidh"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.3.STRING.TEXT
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "An àireamh shia-dheicheach a thèid iompachadh (mar theacsa)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to a decimal number"
-msgstr "Iompaichidh seo àireamh shia-dheicheach 'na àireamh dheicheach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to an octal number"
-msgstr "Iompaichidh seo àireamh shia-dheicheach 'na àireamh ochdach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.1.STRING.TEXT
-msgid  "Tests whether two values are equal"
-msgstr "Feuchaidh seo a bheil dà luach co-ionnann"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.2.STRING.TEXT
-msgid  "Number 1"
-msgstr "Àireamh 1"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.3.STRING.TEXT
-msgid  "The first number"
-msgstr "A' chiad àireamh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.4.STRING.TEXT
-msgid  "Number 2"
-msgstr "Àireamh 2"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.5.STRING.TEXT
-msgid  "The second number"
-msgstr "An dàrna àireamh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.1.STRING.TEXT
-msgid  "Returns the error function"
-msgstr "Tillidh seo am foincsean mearachd"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.2.STRING.TEXT
 msgid  "Lower limit"
@@ -895,89 +363,21 @@ msgstr "Cioch ìochdarach"
 msgid  "The lower limit for integration"
 msgstr "A' chrìoch ìochdarach airson innteagrachadh"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.4.STRING.TEXT
-msgid  "Upper limit"
-msgstr "Crìoch uachdarach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.5.STRING.TEXT
-msgid  "The upper limit for integration"
-msgstr "A' chrìoch uachdarach airson innteagrachadh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.1.STRING.TEXT
-msgid  "Returns the complementary error function"
-msgstr "Tillidh seo am foincsean mearachd co-shlànach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.1.STRING.TEXT
-msgid  "Tests whether a number is greater than a threshold value"
-msgstr "Feuchaidh seo a bheil àireamh nas motha na luach stairsniche"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.3.STRING.TEXT
-msgid  "The value to test against step"
-msgstr "An luach a thèid a chur fo dheuchainn mu choinneamh a' cheuma"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.4.STRING.TEXT
-msgid  "Step"
-msgstr "Ceum"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.5.STRING.TEXT
-msgid  "The threshhold value"
-msgstr "An luach stairsniche"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.1.STRING.TEXT
-msgid  "Returns the double factorial of Number"
-msgstr "Tillidh seo an fhactarail dhùbailte de dh'àireamh"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.1.STRING.TEXT
 msgid  "Returns the absolute value (modulus) of a complex number"
 msgstr "Tillidh seo luach absaloideach (modulus) de dh'àireamh iom-fhillte"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.2.STRING.TEXT
 msgid  "Complex number"
-msgstr ""
+msgstr "Àireamh iom-fhillte"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.3.STRING.TEXT
 msgid  "The complex number"
 msgstr "An àireamh iom-fhillte"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.1.STRING.TEXT
-msgid  "Returns the imaginary coefficient of a complex number"
-msgstr "Tillidh co-èifeachd mas fhìor de dh'àireamh iom-fhillte"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.1.STRING.TEXT
-msgid  "Returns a complex number raised to an integer power"
-msgstr "Tillidh seo àireamh iom-fhillte a chaidh a h-àrachadh gu cumhachd àireimhe shlàn"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.5.STRING.TEXT
-msgid  "Power to which the complex number is raised"
-msgstr "A' chumhachd a thèid an àireamh iom-fhillte àrdachadh thuice"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.1.STRING.TEXT
-msgid  "Returns the argument theta, an angle expressed in radians"
-msgstr "Tillidh seo argamaid θ, ceàrn ann an rèideanan"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.3.STRING.TEXT
 msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.1.STRING.TEXT
-msgid  "Returns the cosine of a complex number"
-msgstr "Tillidh seo co-shìneas de dh'àireamh iom-fhillte"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.1.STRING.TEXT
-msgid  "Returns the quotient of two complex numbers"
-msgstr "Tillidh seo roinn de dhà àireamh iom-fhillte"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.1.STRING.TEXT
-msgid  "Returns the algebraic form of the exponential of a complex number"
-msgstr "Tillidh seo an cruth ailseabrach dhen easbonantail de dh'àireamh iom-fhillte"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.1.STRING.TEXT
-msgid  "Returns the complex conjugate of a complex number"
-msgstr "Tillidh seo co-nasgadh iom-fhillte de dh'àireamh iom-fhillte"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.1.STRING.TEXT
-msgid  "Returns the natural logarithm of a complex number"
-msgstr "Tillidh seo log-àireamh nàdarra de dh'àireamh iom-fhillte"
+msgstr "Àireamh iom-fhillte"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.1.STRING.TEXT
 msgid  "Returns the base-10 logarithm of a complex number"
@@ -987,30 +387,6 @@ msgstr "Tillidh seo log-àireamh bunait 10 de dh'àireamh iom-fhillte"
 msgid  "Returns the base-2 logarithm of a complex number"
 msgstr "Tillidh seo log-àireamh bunait 2 de dh'àireamh iom-fhillte"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.1.STRING.TEXT
-msgid  "Returns the product of several complex numbers"
-msgstr "Tillidh seo toradh de ghrunn àireamhan iom-fhillte"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.3.STRING.TEXT
-msgid  "The first complex number"
-msgstr "A' chiad àireamh iom-fhillte"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.5.STRING.TEXT
-msgid  "Another complex number"
-msgstr "Àireamh iom-fhillte eile"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.1.STRING.TEXT
-msgid  "Returns the real coefficient of a complex number"
-msgstr "Tillidh fìor-cho-èifeachd de dh'àireamh iom-fhillte"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.1.STRING.TEXT
-msgid  "Returns the sine of a complex number"
-msgstr "Tillidh seo sìneas de dh'àireamh iom-fhillte"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.1.STRING.TEXT
-msgid  "Returns the difference of two complex numbers"
-msgstr "Tillidh seo diofar eadar dà àireamh iom-fhillte"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.2.STRING.TEXT
 msgid  "Complex number 1"
 msgstr "Àireamh iom-fhillte 1"
@@ -1019,61 +395,37 @@ msgstr "Àireamh iom-fhillte 1"
 msgid  "Complex number 2"
 msgstr "Àireamh iom-fhillte 2"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.1.STRING.TEXT
-msgid  "Returns the square root of a complex number"
-msgstr "Tillidh seo am freumh ceàrnagach de dh'àireamh iom-fhillte"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.1.STRING.TEXT
+msgid  "Returns the tangent of a complex number"
+msgstr "Tillidh seo beantan de dh'àireamh iom-fhillte"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.1.STRING.TEXT
-msgid  "Returns the sum of complex numbers"
-msgstr "Tillidh seo suim de dh'àireamhan iom-fhillte"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.1.STRING.TEXT
+msgid  "Returns the secant of a complex number"
+msgstr "Tillidh seo sgrìob-ghearraidh de dh'àireamh iom-fhillte"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.1.STRING.TEXT
-msgid  "Converts real and imaginary coefficients into a complex number"
-msgstr "Iompaichidh seo fìor-cho-èifeachdan agus feadhainn mas fhìor 'nan àireamhan iom-fhillte"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.1.STRING.TEXT
+msgid  "Returns the cosecant of a complex number"
+msgstr "Tillidh seo co-sgrìob-ghearraidh de dh'àireamh iom-fhillte"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.2.STRING.TEXT
-msgid  "Real num"
-msgstr "Àireamh fhìrinneach"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.1.STRING.TEXT
+msgid  "Returns the cotangent of a complex number"
+msgstr "Tillidh seo co-bheantan de dh'àireamh iom-fhillte"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.3.STRING.TEXT
-msgid  "The real coefficient"
-msgstr "Co-èifeachd fhìrinneach"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.1.STRING.TEXT
+msgid  "Returns the hyperbolic sine of a complex number"
+msgstr "Tillidh seo sìneas os-bhoileach de dh'àireamh iom-fhillte"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.4.STRING.TEXT
-msgid  "I num"
-msgstr "Àireamh mas fhìor"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.1.STRING.TEXT
+msgid  "Returns the hyperbolic cosine of a complex number"
+msgstr "Tillidh seo co-shìneas os-bhoileach de dh'àireamh iom-fhillte"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.5.STRING.TEXT
-msgid  "The imaginary coefficient"
-msgstr "A' cho-èifeachd mas fhìor"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.1.STRING.TEXT
+msgid  "Returns the hyperbolic secant of a complex number"
+msgstr "Tillidh seo sgrìob-ghearraidh os-bhoileach de dh'àireamh iom-fhillte"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.6.STRING.TEXT
-msgid  "Suffix"
-msgstr "Leasachan"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.7.STRING.TEXT
-msgid  "The suffix"
-msgstr "An leasachan"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.1.STRING.TEXT
-msgid  "Converts a number from one measurement system to another"
-msgstr "Iompaichidh seo àireamh on dàrna siostam tomhais gu siostam eile"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.4.STRING.TEXT
-msgid  "From unit"
-msgstr "On aonad"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.5.STRING.TEXT
-msgid  "Unit of measure for number"
-msgstr "Aonad tomhais na h-àireimhe"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.6.STRING.TEXT
-msgid  "To unit"
-msgstr "Gun aonad"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.7.STRING.TEXT
-msgid  "Unit of measure for the result"
-msgstr "Aonad tomhais an toraidh"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.1.STRING.TEXT
+msgid  "Returns the hyperbolic cosecant of a complex number"
+msgstr "Tillidh seo co-sgrìob-ghearraidh os-bhoileach de dh'àireamh iom-fhillte"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.1.STRING.TEXT
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
@@ -1099,22 +451,6 @@ msgstr "An latha a chaidh a' mhaoin a cheannach"
 msgid  "First period"
 msgstr "A' chiad ùine"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.7.STRING.TEXT
-msgid  "Date the first period ends"
-msgstr "An latha a thig a' chiad ùine gu crìoch"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.8.STRING.TEXT
-msgid  "Salvage"
-msgstr "Tarrthalas"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.9.STRING.TEXT
-msgid  "Salvage value of an asset at the end of its life"
-msgstr "Luach tarrthalais de mhaoin aig deireadh a bheatha"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.10.STRING.TEXT
-msgid  "Period"
-msgstr "Ùine"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.11.STRING.TEXT
 msgid  "The period"
 msgstr "An ùine"
@@ -1131,33 +467,9 @@ msgstr "Reat an dìmeasaidh"
 msgid  "The year basis to be used"
 msgstr "A' bhunait bliadhna a thèid a chleachdadh"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.7.STRING.TEXT
-msgid  "The date the first period ends"
-msgstr "An latha a thig a' chiad ùine gu crìoch"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.9.STRING.TEXT
-msgid  "The salvage value of an asset at the end of its life"
-msgstr "An luach tarrthalais de mhaoin aig deireadh a bheatha"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.1.STRING.TEXT
-msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr "Tillidh seo an riadh tàrmaichte de thèarainteachd a phàigheas riadh ùineach"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.2.STRING.TEXT
 msgid  "Issue"
 msgstr "Foillseachadh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.3.STRING.TEXT
-msgid  "Issue date of the security"
-msgstr "Latha foillseachaidh na tèarainteachd"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.4.STRING.TEXT
-msgid  "First interest"
-msgstr "A' chiad riadh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.5.STRING.TEXT
-msgid  "First interest date of the security"
-msgstr "A' chiad ceann-là riadh na tèarainteachd"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.6.STRING.TEXT
 msgid  "Settlement"
@@ -1179,10 +491,6 @@ msgstr "Pàr"
 msgid  "The par value"
 msgstr "An luach pàr"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.12.STRING.TEXT
-msgid  "Frequency"
-msgstr "Tricead"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.13.STRING.TEXT
 msgid  "The frequency"
 msgstr "An tricead"
@@ -1198,14 +506,6 @@ msgstr "Tillidh seo an riadh tàrmaichte de thèarainteachd a phàigheas riadh n
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.3.STRING.TEXT
 msgid  "The issue date"
 msgstr "An latha foillseachaidh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.1.STRING.TEXT
-msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr "Tillidh seo an t-suim a thèid a phàigheadh nuair a ruigeas tèarainteachd a tha làn-seilbhichte inbheachd"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.4.STRING.TEXT
-msgid  "Maturity"
-msgstr "Inbheachd"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.5.STRING.TEXT
 msgid  "The maturity"
@@ -1227,10 +527,6 @@ msgstr "Meachainn"
 msgid  "The discount"
 msgstr "A' mheachainn"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.1.STRING.TEXT
-msgid  "Returns the discount rate for a security"
-msgstr "Tillidh seo an reat dìmeasaidh de thèarainteachd"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.6.STRING.TEXT
 msgid  "Price"
 msgstr "Prìs"
@@ -1247,14 +543,6 @@ msgstr "Ath-cheannach"
 msgid  "The redemption value"
 msgstr "An luach ath-cheannaich"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.1.STRING.TEXT
-msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr "Tillidh seo mairsinn MhicAmhlaigh bhliadhnail de thèarainteachd a phàigheas riadh gu ùineach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.6.STRING.TEXT
-msgid  "Coupon"
-msgstr "Cùpon"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.7.STRING.TEXT
 msgid  "The coupon rate"
 msgstr "An reat cùpoin"
@@ -1267,18 +555,6 @@ msgstr "Toradh"
 msgid  "The yield"
 msgstr "An toradh"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.1.STRING.TEXT
-msgid  "Returns the effective annual interest rate"
-msgstr "Tillidh seo reat an rèidh bhliadhnail èifeachdach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.2.STRING.TEXT
-msgid  "Nominal rate"
-msgstr "Reat ainmeach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.3.STRING.TEXT
-msgid  "The nominal rate"
-msgstr "An reat ainmeach"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.4.STRING.TEXT
 msgid  "Npery"
 msgstr "Npery"
@@ -1286,14 +562,6 @@ msgstr "Npery"
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.5.STRING.TEXT
 msgid  "The periods"
 msgstr "Na h-ùineachan"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.1.STRING.TEXT
-msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr "Tillidh seo am prionnsabal tionalach de dh'iasad a tha ri phàigheadh eadar dà ùine"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.4.STRING.TEXT
-msgid  "Nper"
-msgstr "Nper"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.5.STRING.TEXT
 msgid  "Number of payment periods"
@@ -1306,10 +574,6 @@ msgstr "Pv"
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.7.STRING.TEXT
 msgid  "The present value"
 msgstr "An luach làithreach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.8.STRING.TEXT
-msgid  "Start period"
-msgstr "Ùine tòiseachaidh"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.9.STRING.TEXT
 msgid  "The start period"
@@ -1331,14 +595,6 @@ msgstr "Seòrsa"
 msgid  "The type of maturity"
 msgstr "Seòrsa na h-inbheachd"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.1.STRING.TEXT
-msgid  "Returns the cumulative interest to be paid between two periods"
-msgstr "Tillidh seo an riadh tionalach de dh'iasad a tha ri phàigheadh eadar dà ùine"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.1.STRING.TEXT
-msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr "Tillidh seo a' phrìs a-rèir 100 aonad airgeadra de luach follaiseach de thèarainteachd a phàigheas riadh ùineach"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.1.STRING.TEXT
 msgid  "Returns the price per 100 currency units face value of a discounted security"
 msgstr "Tillidh seo a' phrìs a-rèir 100 aonad airgeadra de luach follaiseach de thèarainteachd mheachainnichte"
@@ -1351,57 +607,9 @@ msgstr "Tillidh seo a' phrìs a-rèir 100 aonad airgeadra de luach follaiseach d
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
 msgstr "Tillidh seo a' mhairsinn atharraichte a-rèir MhicAmhlaigh de thèarainteachd a thathar a' cur mar fhiacham gu bheil luach pàr de 100 aonad airgeadra aige"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.1.STRING.TEXT
-msgid  "Returns the annual nominal interest rate"
-msgstr "Tillidh seo reat an rèidh ainmich bhliadhnail"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.2.STRING.TEXT
-msgid  "Effective rate"
-msgstr "Reat èifeachdach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.3.STRING.TEXT
-msgid  "The effective interest rate"
-msgstr "Reat èifeachdach an rèidh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.1.STRING.TEXT
-msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr "Iompaichidh seo prìs ann an cruth deicheach 'na phrìs ann an cruth bloigheach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.2.STRING.TEXT
-msgid  "Decimal dollar"
-msgstr "Dolar deicheach"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.4.STRING.TEXT
 msgid  "Fraction"
 msgstr "Bloigh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.1.STRING.TEXT
-msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr "Iompaichidh seo prìs ann an cruth bloigheach 'na phrìs ann an cruth deicheach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.2.STRING.TEXT
-msgid  "Fractional dollar"
-msgstr "Dolar bloigheach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.3.STRING.TEXT
-msgid  "The number as a fraction"
-msgstr "An àireamh mar bhloigh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.1.STRING.TEXT
-msgid  "Returns the yield on a security that pays periodic interest"
-msgstr "Tillidh seo an toradh de thèarainteachd a phàigheas riadh ùineach"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.1.STRING.TEXT
-msgid  "Returns the annual yield for a discounted security"
-msgstr "Tillidh seo an toradh bliadhnail de thèarainteachd mheachainnichte"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.1.STRING.TEXT
-msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr "Tillidh seo an toradh bliadhnail de thèarainteachd a phàigheas riadh nuair a ruigeas e inbheachd"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.1.STRING.TEXT
-msgid  "Returns the bond-equivalent yield for a treasury bill"
-msgstr "Tillidh seo toradh co-ionnannachd banna de bhile an ionmhais"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.7.STRING.TEXT
 msgid  "The discount rate"
@@ -1410,10 +618,6 @@ msgstr "Reat na meachainne"
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.1.STRING.TEXT
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
 msgstr "Tillidh seo a' phrìs de 100 aonad airgeadra de luach follaiseach de bhile an ionmhais"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.1.STRING.TEXT
-msgid  "Returns the yield for a treasury bill"
-msgstr "Tillidh seo an toradh de bhile an ionmhais"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.1.STRING.TEXT
 msgid  "Returns the price per $100 face value of a security with an odd first period"
@@ -1427,29 +631,13 @@ msgstr "A' chiad chùpon"
 msgid  "The first coupon date"
 msgstr "Ceann-là a' chiad chùpon"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.1.STRING.TEXT
-msgid  "Returns the yield of a security with an odd first period"
-msgstr "Tillidh seo toradh de thèarainteachd le ùine thòiseachail chorr"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.1.STRING.TEXT
 msgid  "Returns the price per $100 face value of a security with an odd last period"
 msgstr "Tillidh seo a' phrìs a-rèir $100 de luach follaiseach le ùine crìochnachaidh chorr"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.6.STRING.TEXT
-msgid  "Last interest"
-msgstr "Riadh crìochnachaidh"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.7.STRING.TEXT
 msgid  "The last interest date"
 msgstr "Ceann-là an rèidh chrìochnachaidh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.1.STRING.TEXT
-msgid  "Returns the yield of a security with an odd last period"
-msgstr "Tillidh seo toradh de thèarainteachd le ùine crìochnachaidh chorr"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.1.STRING.TEXT
-msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr "Tillidh seo reat tillidh inntearnail airson sgeideal neo-ùineach de shuimean a thèid a phàigheadh"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.2.STRING.TEXT
 msgid  "Values"
@@ -1467,62 +655,6 @@ msgstr "Cinn-là"
 msgid  "The dates"
 msgstr "Na cinn-là"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.6.STRING.TEXT
-msgid  "Guess"
-msgstr "Tomhas"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.7.STRING.TEXT
-msgid  "The guess"
-msgstr "An tomhas"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.1.STRING.TEXT
-msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr "Tillidh seo luach glan làithreach airson sgeideal neo-ùineach de shuimean a thèid a phàigheadh"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.1.STRING.TEXT
-msgid  "Returns the interest rate for a fully invested security"
-msgstr "Tillidh seo reat an rèidh airson tèarainteachd làn-seilbhichte"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.1.STRING.TEXT
 msgid  "Returns the first coupon date after the settlement date"
 msgstr "Tillidh seo a' chiad cheann-là a' chùpoin an dèidh ceann-là na rèite"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.1.STRING.TEXT
-msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr "Tillidh seo an àireamh de làithean ann an ùine a' chùpoin a tha ceann-là na rèite 'na bhroinn"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.1.STRING.TEXT
-msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr "Tillidh seo an àireamh de làithean eadar ceann-là na rèite agus ath-cheann-là a' chùpoin"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.1.STRING.TEXT
-msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr "Tillidh seo an àireamh de làithean eadar toiseach ùine a' chùpoin gu ceann-là na rèite"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.1.STRING.TEXT
-msgid  "Returns the last coupon date preceding the settlement date"
-msgstr "Tillidh seo ceann-là crìochnachaidh a' chùpoin ro cheann-là na reite"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.1.STRING.TEXT
-msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr "Tillidh seo an àireamh de chùponan a tha ri phàigheadh eadar cinn-là na rèite 's na h-inbheachd"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.1.STRING.TEXT
-msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr "Tillidh seo luach an ama ri teachd dhen phrionnsabal tòiseachail an dèidh cur an sàs de shreath reataichean de riadh fillte"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.2.STRING.TEXT
-msgid  "Principal"
-msgstr "Prionnsabal"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.3.STRING.TEXT
-msgid  "The principal"
-msgstr "Am prionnsabal"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.4.STRING.TEXT
-msgid  "Schedule"
-msgstr "Sgeideal"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.5.STRING.TEXT
-msgid  "The schedule"
-msgstr "An sgeideal"

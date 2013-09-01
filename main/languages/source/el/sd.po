@@ -31,14 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.MODALDIALOG.TEXT
-msgid  "HTML Export"
-msgstr "Εξαγωγή HTML"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_TITEL.FIXEDLINE.TEXT
-msgid  "Assign design"
-msgstr "Ορισμός σχεδίου"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_NEW_DESIGN.RADIOBUTTON.TEXT
 msgid  "New design"
 msgstr "Νέο σχέδιο"
@@ -55,14 +47,6 @@ msgstr "Διαγραφή επιλεγμένου σχεδίου"
 msgid  "Select an existing design or create a new one"
 msgstr "Παρακαλώ επιλέξτε ένα υπάρχον σχέδιο ή δημιουργήστε κάποιο νέο σχέδιο"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL.FIXEDLINE.TEXT
-msgid  "Publication type"
-msgstr "Τύπος έκδοσης"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_STANDARD.RADIOBUTTON.TEXT
-msgid  "Standard H~TML format"
-msgstr "Τυπική μορφή H~TML"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_FRAMES.RADIOBUTTON.TEXT
 msgid  "Standard HTML with ~frames"
 msgstr "Τυπική HTML με π~λαίσια"
@@ -70,14 +54,6 @@ msgstr "Τυπική HTML με π~λαίσια"
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RADIOBUTTON.TEXT
 msgid  "~Automatic"
 msgstr "Α~υτόματα"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RADIOBUTTON.TEXT
-msgid  "~WebCast"
-msgstr "~WebCast"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_HTML.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Επιλογές"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CONTENT.CHECKBOX.TEXT
 msgid  "Create title page"
@@ -87,169 +63,33 @@ msgstr "Δημιουργία εξώφυλλου"
 msgid  "Show notes"
 msgstr "Εμφάνιση σημειώσεων"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_KIOSK.FIXEDLINE.TEXT
-msgid  "Advance slides"
-msgstr "Αλλαγή σελίδας"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_DEFAULT.RADIOBUTTON.TEXT
-msgid  "~As stated in document"
-msgstr "Όπως ο~ρίστηκε στο έγγραφο"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TXT.FIXEDTEXT.TEXT
-msgid  "~Slide view time:"
-msgstr "Διά~ρκεια στάσης:"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TMF.TIMEFIELD.QUICKHELPTEXT
-msgid  "~Duration of page"
-msgstr "Διά~ρκεια στάσης"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ENDLESS.CHECKBOX.TEXT
-msgid  "~Endless"
-msgstr "Συν~εχόμενα"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_WEBCAST.FIXEDLINE.TEXT
-msgid  "WebCast"
-msgstr "WebCast"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ASP.RADIOBUTTON.TEXT
-msgid  "~Active Server Pages (ASP)"
-msgstr "~Active Server Pages (ASP)"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_PERL.RADIOBUTTON.TEXT
 msgid  "Perl"
 msgstr "Perl"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_INDEX_TXT.FIXEDTEXT.TEXT
-msgid  "~URL for listeners"
-msgstr "~URL για ακροατές"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_URL_TXT.FIXEDTEXT.TEXT
-msgid  "URL for ~presentation:"
-msgstr "URL για ~παρουσίαση:"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CGI_TXT.FIXEDTEXT.TEXT
 msgid  "URL for ~Perl scripts:"
-msgstr "URL για ~perl scripts"
+msgstr "URL για ~perl scripts:"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_1.FIXEDLINE.TEXT
 msgid  "Save graphics as"
 msgstr "Αποθήκευση γραφικών ως"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_PNG.RADIOBUTTON.TEXT
-msgid  "~PNG"
-msgstr "~PNG"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_GIF.RADIOBUTTON.TEXT
-msgid  "~GIF"
-msgstr "~GIF"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_JPG.RADIOBUTTON.TEXT
-msgid  "~JPG"
-msgstr "~JPG"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_QUALITY_TXT.FIXEDTEXT.TEXT
-msgid  "Quality"
-msgstr "Ποιότητα"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_2.FIXEDLINE.TEXT
-msgid  "Monitor resolution"
-msgstr "Ανάλυση οθόνης"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_1.RADIOBUTTON.TEXT
-msgid  "Low resolution (~640x480 pixels)"
-msgstr "Χαμηλή ανάλυση (~640x480 pixel)"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_2.RADIOBUTTON.TEXT
-msgid  "Medium resolution (~800x600 pixels)"
-msgstr "Μεσαία ανάλυση (~800x600 pixel)"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_3.RADIOBUTTON.TEXT
-msgid  "High resolution (~1024x768 pixels)"
-msgstr "Υψηλή ανάλυση (~1024x768 pixel)"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_3.FIXEDLINE.TEXT
-msgid  "Effects"
-msgstr "Εφέ"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_SLD_SOUND.CHECKBOX.TEXT
-msgid  "~Export sounds when slide advances"
-msgstr "Εξαγωγή ήχων ~κατά την αλλαγή διαφάνειας"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_HIDDEN_SLIDES.CHECKBOX.TEXT
 msgid  "Export ~hidden slides"
 msgstr "Εξαγωγή κρυ~φών διαφανειών"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_1.FIXEDLINE.TEXT
-msgid  "Information for the title page"
-msgstr "Πληροφορίες για την σελίδα τίτλου"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_AUTHOR_TXT.FIXEDTEXT.TEXT
-msgid  "~Author"
-msgstr "Σ~υντάκτης"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_EMAIL_TXT.FIXEDTEXT.TEXT
-msgid  "E-~mail address"
-msgstr "Ηλε~κτρονική διεύθυνση"
-
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_WWW_TXT.FIXEDTEXT.TEXT
 msgid  "Your hom~epage"
-msgstr "~Η δική σας αρχική σελίδα:"
+msgstr "~Η δική σας αρχική σελίδα"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_2.FIXEDTEXT.TEXT
 msgid  "Additional ~information"
-msgstr "Πρόσθετες πλη~ροφορίες:"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_DOWNLOAD.CHECKBOX.TEXT
-msgid  "Link to a copy of the ~original presentation"
-msgstr "Σύνδεση σε αντίγραφο της αρ~χικής παρουσίασης"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_CREATED.CHECKBOX.TEXT
-msgid  "Note: 'Created with %PRODUCTNAME'"
-msgstr "Σημείωση: 'Δημιουργήθηκε με %PRODUCTNAME'"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TITEL.FIXEDLINE.TEXT
-msgid  "Select button style"
-msgstr "Επιλογή του στυλ των πεδίων επιλογής"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TEXTONLY.CHECKBOX.TEXT
-msgid  "~Text only"
-msgstr "~Μόνο κείμενο"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TITEL.FIXEDLINE.TEXT
-msgid  "Select color scheme"
-msgstr "Επιλογή συνδυασμού χρωμάτων"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DOCCOLORS.RADIOBUTTON.TEXT
-msgid  "~Apply color scheme from document"
-msgstr "Εφαρμογή συνδυασμού ~χρωμάτων από έγγραφο"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Use ~browser colors"
-msgstr "Χρήση ~χρωμάτων προγράμματος ανάγνωσης ιστοσελίδων"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_USER.RADIOBUTTON.TEXT
-msgid  "~Use custom color scheme"
-msgstr "Χρήσ~η προσωπικού συνδυασμού χρωμάτων"
+msgstr "Πρόσθετες πλη~ροφορίες"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TEXT.PUSHBUTTON.TEXT
 msgid  "Text"
 msgstr "Κείμενο"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_LINK.PUSHBUTTON.TEXT
-msgid  "Hyper~link"
-msgstr "Υπε~ρσύνδεση"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_ALINK.PUSHBUTTON.TEXT
-msgid  "Active Li~nk"
-msgstr "Ενερ~γός δεσμός"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_VLINK.PUSHBUTTON.TEXT
-msgid  "~Visited Link"
-msgstr "Αναγνω~σμένος δεσμός"
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_BACK.PUSHBUTTON.TEXT
-msgid  "Bac~kground"
-msgstr "~Φόντο"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_LAST.PUSHBUTTON.TEXT
 msgid  "<< Back"
@@ -259,86 +99,23 @@ msgstr "<< Πίσω"
 msgid  "Next >>"
 msgstr "Επόμενο >>"
 
-#: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_FINISH.OKBUTTON.TEXT
-msgid  "~Create"
-msgstr "~Δημιουργία"
-
-#: filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_SAVE.OKBUTTON.TEXT
-msgid  "~Save"
-msgstr "Απο~θήκευση"
-
 #: filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_NOSAVE.CANCELBUTTON.TEXT
 msgid  "Do Not Save"
 msgstr "Όχι αποθήκευση"
-
-#: filter/html/pubdlg.src#DLG_DESIGNNAME.CANCELBUTTON.TEXT
-msgid  "Name HTML Design"
-msgstr "Όνομα σχεδίου HTML"
 
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Select a slide design"
 msgstr "Επι~λογή ενός προτύπου διαφάνειας"
 
-#: ui/dlg/sdpreslt.src#DLG_PRESLT.CBX_MASTER_PAGE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Exchange background page"
-msgstr "~Αλλαγή φόντου σελίδας"
-
-#: ui/dlg/sdpreslt.src#DLG_PRESLT.CBX_CHECK_MASTERS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Delete unused backgrounds"
-msgstr "Διαγραφή αχρησιμοποίητων ~φόντων"
-
-#: ui/dlg/sdpreslt.src#DLG_PRESLT.BTN_LOAD.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Load..."
-msgstr "~Φόρτωση..."
-
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.HELPBUTTON.TEXT
 #, fuzzy
 msgid  "Slide Design"
 msgstr "Πρότυπο διαφάνειας"
 
-#: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Insert Slides/Objects"
-msgstr "Εισαγωγή διαφανειών/αντικειμένων"
-
-#: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.CBX_LINK.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Link"
-msgstr "Σύν~δεση"
-
 #: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.CBX_CHECK_MASTERS.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Delete unused backg~rounds"
-msgstr "Διαγραφή αχρησιμοποίητων ~φόντων."
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Snap Object"
-msgstr "Νέο αντικείμενο συγκράτησης"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.BTN_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "~Διαγραφή"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Θέση"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.FL_DIRECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Type"
-msgstr "Τύπος"
-
-#: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_POINT.IMAGERADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Point"
-msgstr "~Σημείο"
+msgstr "Διαγραφή αχρησιμοποίητων ~φόντων"
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_VERTICAL.IMAGERADIOBUTTON.TEXT
 #, fuzzy
@@ -350,50 +127,10 @@ msgstr "Κα~τακόρυφα"
 msgid  "Hori~zontal"
 msgstr "Ορι~ζόντια"
 
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.GRP_TYPE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Field type"
-msgstr "Τύπος πεδίου"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.RBT_FIX.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Fixed"
-msgstr "Στα~θερά"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.RBT_VAR.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Variable"
-msgstr "~Μεταβλητά"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.FT_LANGUAGE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Language"
-msgstr "Γ~λώσσα"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.FT_FORMAT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "F~ormat"
-msgstr "Μ~ορφή"
-
-#: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Edit Field"
-msgstr "Επεξεργασία εντολής πεδίου"
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Convert to Polygon"
-msgstr "Μετατροπή σε πολύγωνο"
-
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.BTN_PREVIEW.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Preview"
 msgstr "Προεπισκόπηση"
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.GRP_SETTINGS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Settings"
-msgstr "Ρυθμίσεις"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_LAYERS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -406,213 +143,45 @@ msgid  "Point reduction:"
 msgstr "Μείωση σημείων:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CB_FILLHOLES.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Fill holes:"
-msgstr "Γέ~μιση οπών"
+msgstr "Γέ~μιση οπών:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_FILLHOLES.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Tile size:"
 msgstr "Μέγεθος παράθεσης:"
 
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_ORIGINAL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Source picture:"
-msgstr "Αρχική εικόνα:"
-
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CTL_BMP.CONTROL.TEXT
-#, fuzzy
 msgid  "Source picture"
-msgstr "Αρχική εικόνα:"
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_VECTORIZED.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Vectorized image:"
-msgstr "Διανυσματική εικόνα:"
+msgstr "Αρχική εικόνα"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CTL_WMF.CONTROL.TEXT
-#, fuzzy
 msgid  "Vectorized image"
-msgstr "Διανυσματική εικόνα:"
+msgstr "Διανυσματική εικόνα"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.GRP_PRGS.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Progress"
 msgstr "Πρόοδος"
 
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Graphics Styles"
-msgstr "Στυλ γραφικών"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Γραμμή"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Area"
-msgstr "Περιοχή"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Shadowing"
-msgstr "Σκιά"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Transparency"
-msgstr "Διαφάνεια"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Font"
-msgstr "Γραμματοσειρά"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Font Effect"
-msgstr "Εφέ χαρακτήρων"
-
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Εσοχές και αποστάσεις"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Κείμενο"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Text Animation"
-msgstr "Κινούμενο κείμενο"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_MEASURE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Dimensioning"
-msgstr "Διαστασιολόγηση"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CONNECTION.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Connector"
 msgstr "Γραμμή σύνδεσης"
 
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Στοίχιση"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Asian Typography"
-msgstr "Ασιατική τυπογραφία"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Tabs"
-msgstr "Στηλοθέτες"
-
-#: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Back"
-msgstr "Πίσω"
-
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_NEW.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~New..."
 msgstr "~Δημιουργία..."
 
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Edit..."
-msgstr "~Επεξεργασία..."
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_REMOVE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "Διαγρα~φή"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_COPY.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Cop~y"
-msgstr "Αντι~γραφή"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_STARTSHOW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Start"
-msgstr "Έναρ~ξη"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~Κλείσιμο"
-
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.LB_CUSTOMSHOWS.LISTBOX.QUICKHELPTEXT
 msgid  "Custom Screen Show"
-msgstr ""
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.CBX_USE_CUSTOMSHOW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Use Custom Slide Show"
-msgstr "Χρήση προσαρμοσμέν~ης παρουσίασης οθόνης"
-
-#: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Custom Slide Shows"
-msgstr "Προσαρμοσμένη παρουσίαση οθόνης"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Όνομα"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_PAGES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Existing slides"
-msgstr "Διαφάνειες της παρουσίασης"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_CUSTOM_PAGES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Selected slides"
-msgstr "Επιλεγμένες διαφάνειες"
-
-#: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Define Custom Slide Show"
-msgstr "Ορισμός προσαρμοσμένης παρουσίασης οθόνης"
-
-#: ui/dlg/dlgass.src#DLG_ASS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Presentation Wizard"
-msgstr "Αυτόματος πιλότος παρουσίασης"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_PREVIEW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Previe~w"
-msgstr "Προεπισκόπ~ηση"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_STARTWITH.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Do not show this wizard again"
-msgstr "Να μην εμφα~νιστεί ξανά αυτός ο διάλογος"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE1_ARTGROUP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Type"
-msgstr "Τύπος"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_EMPTY.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Empty presentation"
-msgstr "Κ~ενή παρουσίαση"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_TEMPLATE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~From template"
-msgstr "Α~πό πρότυπο"
+msgstr "Προσαρμοσμένη Παρουσίαση Οθόνης"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_OPEN.RADIOBUTTON.TEXT
 #, fuzzy
@@ -624,120 +193,24 @@ msgstr "Ά~νοιγμα υπάρχουσας παρουσίασης"
 msgid  "~Select a slide design"
 msgstr "Επι~λογή ενός προτύπου διαφάνειας"
 
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE2_OUTPUTTYPES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Select an output medium"
-msgstr "Επιλέξτε μια συσκευή εξόδου"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM5.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Original"
-msgstr "Αρ~χικό"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM1.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Sc~reen"
-msgstr "Ο~θόνη"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM2.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Sli~de"
-msgstr "Δια~φάνεια"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM3.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "O~verhead sheet"
-msgstr "Φύλλο διαφά~νειας"
-
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM4.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "P~aper"
-msgstr "~Χαρτί"
-
 #: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE3_EFFECT.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Select a slide transition"
 msgstr "Επιλογή αλλαγής διαφανειών"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_EFFECT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Effect"
-msgstr "~Εφέ"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_SPEED.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Speed"
-msgstr "~Ταχύτητα"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE3_PRESTYPE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Select the presentation type"
-msgstr "Επιλέξτε τον τύπο της παρουσίασης"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE3_LIVE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Default"
 msgstr "~Προεπιλογή"
 
-#: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE3_KIOSK.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Automatic"
-msgstr "~Αυτόματα"
-
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_TIME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "D~uration of page"
 msgstr "Δ~ιάρκεια στάσης"
 
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_BREAK.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Du~ration of pause"
-msgstr "Δ~ιάρκεια παύσης"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_PAGE3_LOGO.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Sh~ow logo"
-msgstr "Εμφάνιση ~λογότυπου"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE4_PERSONAL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Describe your basic ideas"
-msgstr "Εκφράστε τις βασικές σας ιδέες"
-
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKNAME.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "What is your name or the name of your company?"
-msgstr "Το όνομά σας ή το όνομα της εταιρίας σας:"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKTOPIC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "What is the subject of your presentation?"
-msgstr "Ποιό είναι το αντικείμενο της παρουσίασης σας;"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKINFORMATION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Further ideas to be presented?"
-msgstr "Περισσότερες ιδέες προς παρουσίαση;"
-
-#: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE5_PAGELIST.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Ch~oose your pages"
-msgstr "Επι~λέξτε τις σελίδες που επιθυμείτε"
-
-#: ui/dlg/dlgass.src#DLG_ASS.CB_PAGE5_SUMMARY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "C~reate summary"
-msgstr "Δ~ημιουργία σύνοψης"
-
-#: ui/dlg/dlgass.src#DLG_ASS.BUT_LAST.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "<< ~Back"
-msgstr "<< ~Πίσω"
-
-#: ui/dlg/dlgass.src#DLG_ASS.BUT_NEXT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Next >>"
-msgstr "Επόμε~νο >>"
+msgstr "Το όνομά σας ή το όνομα της εταιρίας σας;"
 
 #: ui/dlg/dlgass.src#DLG_ASS.BUT_FINISH.OKBUTTON.TEXT
 #, fuzzy
@@ -749,50 +222,10 @@ msgstr "~Δημιουργία"
 msgid  "~Open"
 msgstr "Άν~οιγμα"
 
-#: ui/dlg/PaneDockingWindow.src#FLT_LEFT_PANE_IMPRESS_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
-#, fuzzy
-msgid  "Slide Pane"
-msgstr "Πίνακας διαφάνειας"
-
-#: ui/dlg/PaneDockingWindow.src#FLT_LEFT_PANE_DRAW_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
-#, fuzzy
-msgid  "Page Pane"
-msgstr "Παράθυρο περιήγησης σελίδας"
-
-#: ui/dlg/PaneDockingWindow.src#FLT_TOOL_PANEL_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
-#, fuzzy
-msgid  "Task Pane"
-msgstr "Πίνακας εργασίας"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Header and Footer"
-msgstr "Κεφαλίδα και Υποσέλιδο"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.1.RID_SD_TABPAGE_HEADERFOOTER_SLIDE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Slide"
-msgstr "Διαφάνεια"
-
 #: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.1.RID_SD_TABPAGE_HEADERFOOTER_NOTESHANDOUT.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Notes and Handouts"
 msgstr "Σημειώσεις και Σημειώματα"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FL_INCLUDE_ON_PAGE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Include on slide"
-msgstr "Να συμπεριλαμβάνονται στη διαφάνεια"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_HEADER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Header"
-msgstr "Κεφαλίδα"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_HEADER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Header text"
-msgstr "Κείμενο κεφαλίδας"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_DATETIME.CHECKBOX.TEXT
 #, fuzzy
@@ -814,165 +247,37 @@ msgstr "~Μεταβλητά"
 msgid  "~Language:"
 msgstr "~Γλώσσα:"
 
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_FOOTER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Footer"
-msgstr "Υποσέλιδο"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_FOOTER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Footer text"
-msgstr "Κείμενο υποσέλιδου"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_SLIDENUMBER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Slide number"
-msgstr "Αριθμός διαφάνειας"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_NOTONTITLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Do not show on first slide"
-msgstr "Να μην εμφανίζεται στη πρώτη διαφάνεια"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.BT_APPLYTOALL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Apply to All"
-msgstr "Εφαρμογή παντού"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.BT_APPLY.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Εφαρμογή"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.STR_PAGE_NUMBER.STRING.TEXT
-#, fuzzy
-msgid  "Page number"
-msgstr "Αρ. σελίδας"
-
-#: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.STR_INCLUDE_ON_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Include on page"
-msgstr "Να συμπεριλαμβάνονται στη σελίδα"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Slide Show"
-msgstr "Παρουσίαση οθόνης"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_RANGE.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Range"
 msgstr "Περιοχή"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_ALL.RADIOBUTTON.TEXT
-#, fuzzy
 msgid  "All ~slides"
-msgstr "Όλες οι δι~αφάνειες (slides)"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_AT_DIA.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~From:"
-msgstr "Από τη ~διαφάνεια:"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_CUSTOMSHOW.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Custom Slide Show"
-msgstr "Προσαρμοσμέν~η παρουσίαση οθόνης"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_KIND.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Type"
-msgstr "Τύπος"
+msgstr "Όλες οι δι~αφάνειες"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_STANDARD.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Default"
 msgstr "~Προεπιλογή"
 
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_WINDOW.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Window"
-msgstr "~Παράθυρο"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_AUTO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "A~uto"
-msgstr "Α~υτόματα"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.TMF_PAUSE.TIMEFIELD.QUICKHELPTEXT
-#, fuzzy
-msgid  "Duration of pause"
-msgstr "Διάρκεια παύσης"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_AUTOLOGO.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Show ~logo"
-msgstr "Εμφάνιση ~λογότυπου"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_OPTIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Options"
-msgstr "Επιλογές"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_MANUEL.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Change slides ~manually"
-msgstr "Αλλαγή δια~φανειών (slides) χειροκίνητα"
+msgstr "Αλλαγή δια~φανειών χειροκίνητα"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_MOUSEPOINTER.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Mouse pointer ~visible"
 msgstr "Δείκτης ποντικιού ο~ρατός"
 
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_PEN.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Mouse pointer as ~pen"
-msgstr "Δείκτης ποντικιού ως ~πένα"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_NAVIGATOR.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Navigator visible"
 msgstr "Περιή~γηση ορατή"
 
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_ANIMATION_ALLOWED.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Animations allowed"
-msgstr "Επιτρέπ~ονται κινούμενες εικόνες"
-
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_CHANGE_PAGE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Change slides by clic~king on background"
-msgstr "Αλλαγή διαφάν. (slides) με ~κλικ του φόντου"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_ALWAYS_ON_TOP.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Presentation always ~on top"
-msgstr "Παρουσίαση οθόνης πάντα σε π~ρώτο πλάνο"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_MONITOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Multiple displays"
-msgstr "Πολλαπλές οθόνες"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.FT_MONITOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "P~resentation display"
-msgstr "Οθόνη παρου~σίασης"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_PRIMARY_MONITOR.STRING.TEXT
-#, fuzzy
-msgid  "Display %1 (primary)"
-msgstr "Οθόνη %1 (κύρια)"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_MONITOR.STRING.TEXT
-#, fuzzy
-msgid  "Display %1"
-msgstr "Οθόνη %1"
-
-#: ui/dlg/present.src#DLG_START_PRESENTATION.STR_ALL_MONITORS.STRING.TEXT
-#, fuzzy
-msgid  "All displays"
-msgstr "Όλες οι οθόνες"
+msgstr "Αλλαγή διαφάνειας με ~κλικ του φόντου"
 
 #: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.TABDIALOG.TEXT
 #, fuzzy
@@ -984,120 +289,20 @@ msgstr "Κουκίδες και αρίθμηση"
 msgid  "Bullets"
 msgstr "Κουκίδες"
 
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_SINGLE_NUM.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Numbering type"
-msgstr "Στυλ αρίθμησης"
-
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_BMP.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "Γραφικά"
-
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_NUM_POSITION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Θέση"
-
-#: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_NUM_OPTIONS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Customize"
-msgstr "Προσαρμογή"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Presentation Layout"
-msgstr "Διάταξη παρουσίασης"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Γραμμή"
-
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Area"
 msgstr "Περιοχή"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "Σκιά"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Transparency"
-msgstr "Διαφάνεια"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Font"
-msgstr "Γραμματοσειρά"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Font Effects"
-msgstr "Εφέ γραμματοσειράς"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Εσοχές και αποστάσεις"
 
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Κείμενο"
-
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_BULLET.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Bullets"
 msgstr "Κουκίδες"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_SINGLE_NUM.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Numbering type"
-msgstr "Τύπος αρίθμησης"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_BMP.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "Γραφικά"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_NUM_OPTIONS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Customize"
-msgstr "Προσαρμογή"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Στοίχιση"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Asian Typography"
-msgstr "Ασιατική τυπογραφία"
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Tabs"
-msgstr "Στηλοθέτες"
-
-#: ui/dlg/copydlg.src#DLG_COPY.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Duplicate"
-msgstr "Αναπαραγωγή"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_COPIES.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Number of ~copies"
-msgstr "Αριθμός αντι~γράφων"
-
-#: ui/dlg/copydlg.src#DLG_COPY.BTN_SET_VIEWDATA.BUTTONIMAGE.QUICKHELPTEXT
-#, fuzzy
-msgid  "Values from Selection"
-msgstr "Τιμές από επιλογή"
 
 #: ui/dlg/copydlg.src#DLG_COPY.BTN_SET_DEFAULT.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1105,144 +310,23 @@ msgid  "~Default"
 msgstr "~Προεπιλογή"
 
 #: ui/dlg/copydlg.src#DLG_COPY.MTR_FLD_ANGLE.METRICFIELD.CUSTOMUNITTEXT
-#, fuzzy
 msgid  " degrees"
-msgstr "Μοίρες"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_ANGLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Angle"
-msgstr "~Γωνία περιστροφής"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_MOVE_X.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~X axis"
-msgstr "Άξονας ~X"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_MOVE_Y.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Y axis"
-msgstr "Άξονας ~Υ"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_WIDTH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Width"
-msgstr "~Πλάτος"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_HEIGHT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Height"
-msgstr "Ύ~ψος"
-
-#: ui/dlg/copydlg.src#DLG_COPY.GRP_MOVEMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Placement"
-msgstr "Τοποθέτηση"
-
-#: ui/dlg/copydlg.src#DLG_COPY.GRP_ENLARGEMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Enlargement"
-msgstr "Μεγέθυνση"
-
-#: ui/dlg/copydlg.src#DLG_COPY.GRP_COLOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Colors"
-msgstr "Χρώματα"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_START_COLOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Start"
-msgstr "Έναρ~ξη"
-
-#: ui/dlg/copydlg.src#DLG_COPY.FT_END_COLOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~End"
-msgstr "Τέ~λος"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Paragraph"
-msgstr "Παράγραφος"
+msgstr " μοίρες"
 
 #: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Εσοχές και αποστάσεις"
 
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Στοίχιση"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Asian Typography"
-msgstr "Ασιατική τυπογραφία"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Tabs"
-msgstr "Στηλοθέτες"
-
-#: ui/dlg/paragr.src#TAB_PARAGRAPH.1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Return"
-msgstr "Εκτέλεση"
-
 #: ui/dlg/dlg_char.src#TAB_CHAR.TABDIALOG.TEXT
 #, fuzzy
 msgid  "Character"
 msgstr "Χαρακτήρες"
 
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Font"
-msgstr "Γραμματοσειρά"
-
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Font Effects"
-msgstr "Εφέ γραμματοσειράς"
-
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Θέση"
-
-#: ui/dlg/dlg_char.src#TAB_CHAR.1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Return"
-msgstr "Εκτέλεση"
-
-#: ui/dlg/dlgpage.src#TAB_PAGE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Page Setup"
-msgstr "Διαμόρφωση σελίδας"
-
-#: ui/dlg/dlgpage.src#TAB_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Page"
-msgstr "Σελίδα"
-
 #: ui/dlg/dlgpage.src#TAB_PAGE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Background"
 msgstr "Φόντο"
-
-#: ui/dlg/dlgpage.src#TAB_PAGE.1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Return"
-msgstr "Εκτέλεση"
-
-#: ui/dlg/tpaction.src#TP_ANIMATION.FT_ACTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Action at mouse click"
-msgstr "Ενέργεια με κλικ του ποντικιού"
-
-#: ui/dlg/tpaction.src#TP_ANIMATION.BTN_SEARCH.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Browse..."
-msgstr "~Αναζήτηση..."
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.BTN_SEEK.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1251,112 +335,16 @@ msgstr "~Εύρεση"
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.STR_PATHNAME.STRING.TEXT
 msgid  "Path Name"
-msgstr ""
-
-#: ui/dlg/tpaction.src#TP_ANIMATION.STRING.TEXT
-#, fuzzy
-msgid  "Interaction"
-msgstr "Αλληλεπίδραση"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.FT_OBJ_INFO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Processing metafile:"
-msgstr "Διεργασία metafile:"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.FT_ACT_INFO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Broken down metaobjects:"
-msgstr "Χαλασμένα metaobjects:"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.FT_INS_INFO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Inserted drawing objects:"
-msgstr "Εισηγμένα αντικείμενα σχεδίασης:"
-
-#: ui/dlg/brkdlg.src#DLG_BREAK.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "Break"
-msgstr "Κατάργηση"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.FL_PLACEHOLDERS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Placeholders"
-msgstr "Πλαίσια δείκτες τοποθέτησης κειμένου"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_HEADER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Header"
-msgstr "Κεφαλίδα"
+msgstr "Όνομα διαδρομής"
 
 #: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_DATE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Date/time"
-msgstr "Ημερομηνία/Ώρα"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_FOOTER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Footer"
-msgstr "Υποσέλιδο"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_PAGE_NUMBER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Page number"
-msgstr "Αρ. σελίδας"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.STR_SLIDE_NUMBER.STRING.TEXT
-#, fuzzy
-msgid  "Slide number"
-msgstr "Αριθμός διαφάνειας"
-
-#: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.STR_MASTER_LAYOUT_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Master Elements"
-msgstr "Κύρια στοιχεία"
-
-#: ui/dlg/tpoption.src#SCALE_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Scale"
-msgstr "Κλίμακα"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TABPAGE.TEXT
-#, fuzzy
-msgid  "Contents"
-msgstr "Περιεχόμενα"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.GRP_DISPLAY.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Display"
-msgstr "Εμφάνιση"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_RULER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Rulers visible"
-msgstr "~Χάρακες ορατοί"
+msgstr "Ημερομηνία/ώρα"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_HELPLINES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Guides when moving"
 msgstr "Βοη~θητ. γραμμές κατά τη μετακίνηση"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_HANDLES_BEZIER.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~All control points in Bézier editor"
-msgstr "Ό~λα τα σημεία ελέγχου σε Bezier"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_MOVE_OUTLINE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Contour of each individual object"
-msgstr "Περίγραμμα κάθε ~μεμονωμένου αντικειμένου"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.TABPAGE.TEXT
-#, fuzzy
-msgid  "Other"
-msgstr "Άλλα"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_TEXT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text objects"
-msgstr "Αντικείμενα κειμένου"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_QUICKEDIT.CHECKBOX.TEXT
 #, fuzzy
@@ -1368,25 +356,13 @@ msgstr "Με γρήγορη επεξεργασία"
 msgid  "Only text area selectable"
 msgstr "Επιλογή μό~νο περιοχής κειμένου"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_PROGRAMSTART.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New document"
-msgstr "Δημιουργία εγγράφου"
-
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_TEMPLATE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Start with ~wizard"
-msgstr "Εκκίνηση με ~Αυτόματο πιλότο"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_SETTINGS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Settings"
-msgstr "Ρυθμίσεις"
+msgstr "Εκκίνηση με ~αυτόματο πιλότο"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_MASTERPAGE_CACHE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Use background cache"
-msgstr "Χρήση λανθάνουσας μνήμης "
+msgstr "Χρήση λανθάνουσας μνήμης"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_COPY.CHECKBOX.TEXT
 #, fuzzy
@@ -1403,30 +379,18 @@ msgstr "Πάντα δυνατότητα μετακίνησης αντικειμ�
 msgid  "Do not distort objects in curve"
 msgstr "Χωρίς παραμόρφωση αντικειμένων σε καμπύλη"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_METRIC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Unit of ~measurement"
-msgstr "~Μονάδα μέτρησης"
-
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_TABSTOP.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Ta~b stops"
-msgstr "Θέση στηλοθ."
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_START_WITH_ACTUAL_PAGE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Start presentation"
-msgstr "Εκκίνηση παρουσίασης"
+msgstr "Θ~έση στηλοθετών"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_ACTUAL_PAGE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Always with current page"
 msgstr "Πάντα με την τρέχουσα σελίδα"
 
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_COMPATIBILITY.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Compatibility"
-msgstr "Συμβατότητα"
+#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_PRESENTER_SCREEN.CHECKBOX.TEXT
+msgid  "With Presenter Screen"
+msgstr "Με χρήση οθόνης Παρουσιαστή"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CB_USE_PRINTER_METRICS.CHECKBOX.TEXT
 #, fuzzy
@@ -1434,198 +398,32 @@ msgid  "Us~e printer metrics for document formatting"
 msgstr "Χ~ρήση διαστάσεων εκτύπωσης για την μορφοποίηση του κειμένου"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CB_MERGE_PARA_DIST.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Add ~spacing between paragraphs and tables (in current document)"
-msgstr "Προσθήκη αποστάσεων μεταξύ των παραγράφ~ων στο τρέχον έγγραφο"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_ORIGINAL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Original"
-msgstr "Αρχικό"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_EQUIVALENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Equivalent to"
-msgstr "Ισοδύναμο με"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_SCALE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Drawing scale"
-msgstr "Κλίμακα σχεδ~ιασμού"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEWIDTH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Page ~width"
-msgstr "~Πλάτος σελίδας"
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Page ~height"
-msgstr "Ύψ~ος σελίδας"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Settings"
-msgstr "Ρυθμίσεις"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.FT_STEPS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Increments"
-msgstr "Βήματα"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.CBX_ATTRIBUTES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Cross-fade attributes"
-msgstr "Ιδιότητες σε πρώτο πλάνο"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.CBX_ORIENTATION.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Same orientation"
-msgstr "Ίδιος προσανατολισμός"
-
-#: ui/dlg/morphdlg.src#DLG_MORPH.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Cross-fading"
-msgstr "Βαθμιαίος αποχρωματισμός"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_PEN.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Pointer"
-msgstr "Πένα"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_FIRST.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "First Slide"
-msgstr "Πρώτη διαφάνεια"
+msgstr "Προσθήκη απ~οστάσεων μεταξύ των παραγράφων και πινάκων (στο τρέχον έγγραφο)"
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_PREVIOUS.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Previous Slide"
 msgstr "Προηγούμενη διαφάνεια"
 
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_NEXT.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Next Slide"
-msgstr "Επόμενη διαφάνεια"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_LAST.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Last Slide"
-msgstr "Τελευταία διαφάνεια"
-
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_DRAGTYPE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Drag Mode"
-msgstr "Κατάσταση μετακίνησης"
-
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_SHAPE_FILTER.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Show Shapes"
 msgstr "Προβολή σχημάτων"
 
-#: ui/dlg/navigatr.src#FLT_NAVIGATOR.LB_DOCS.LISTBOX.QUICKHELPTEXT
-#, fuzzy
-msgid  "Documents"
-msgstr "Έγγραφα"
-
 #: ui/dlg/navigatr.src#STR_OBJECTS_TREE.STRING.TEXT
 msgid  "Page Tree"
-msgstr ""
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Insert Layer"
-msgstr "Εισαγωγή επιπέδου"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Name"
-msgstr "Ό~νομα"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "~Τίτλος"
-
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_DESCRIPTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Description"
-msgstr "~Περιγραφή"
+msgstr "Ιεραρχικό δένδρο σελίδας"
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_VISIBLE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Visible"
 msgstr "Ορ~ατά"
 
-#: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_PRINTABLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Printable"
-msgstr "Εκ~τυπώσιμο"
-
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_LOCKED.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Locked"
 msgstr "Κλει~δωμένο"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Θέση"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RB_BEFORE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Before"
-msgstr "~Πριν από"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RB_AFTER.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "A~fter"
-msgstr "Με~τά από"
-
-#: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Insert Slides"
-msgstr "Εισαγωγή διαφανειών"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.DOCKINGWINDOW.TEXT
-#, fuzzy
-msgid  "Animation"
-msgstr "Εφέ κίνησης"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "First Image"
-msgstr "Πρώτη εικόνα"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Backwards"
-msgstr "~Προς τα πίσω"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Stop"
-msgstr "Διακοπή"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Play"
-msgstr "Αναπαραγωγή"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Last Image"
-msgstr "Τελευταία εικόνα"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NUMERICFIELD.QUICKHELPTEXT
-#, fuzzy
-msgid  "Image Number"
-msgstr "Αριθμός εικόνας"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TIMEFIELD.QUICKHELPTEXT
-#, fuzzy
-msgid  "Duration"
-msgstr "Διάρκεια"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM1.STRINGLIST.ITEM
 #, fuzzy
@@ -1647,290 +445,25 @@ msgstr "3"
 msgid  "4"
 msgstr "4"
 
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "5"
-msgstr "5"
-
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM6.STRINGLIST.ITEM
 #, fuzzy
 msgid  "6"
 msgstr "6"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "7"
-msgstr "7"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "8"
-msgstr "8"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM9.STRINGLIST.ITEM
 #, fuzzy
 msgid  "9"
 msgstr "9"
 
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "10"
-msgstr "10"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM11.STRINGLIST.ITEM
-#, fuzzy
-msgid  "12"
-msgstr "12"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM12.STRINGLIST.ITEM
-#, fuzzy
-msgid  "15"
-msgstr "15"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM13.STRINGLIST.ITEM
-#, fuzzy
-msgid  "20"
-msgstr "20"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM14.STRINGLIST.ITEM
-#, fuzzy
-msgid  "25"
-msgstr "25"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM15.STRINGLIST.ITEM
-#, fuzzy
-msgid  "50"
-msgstr "50"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM16.STRINGLIST.ITEM
-#, fuzzy
-msgid  "100"
-msgstr "100"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM17.STRINGLIST.ITEM
-#, fuzzy
-msgid  "500"
-msgstr "500"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM18.STRINGLIST.ITEM
-#, fuzzy
-msgid  "1000"
-msgstr "1000"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM19.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Max."
-msgstr "Μεγ."
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.STRINGLIST.QUICKHELPTEXT
-#, fuzzy
-msgid  "Loop Count"
-msgstr "Πλήθος επαναλήψεων"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.BUTTONIMAGE.QUICKHELPTEXT
-#, fuzzy
-msgid  "Apply Object"
-msgstr "Εφαρμογή αντικειμένου"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.BUTTONIMAGE.QUICKHELPTEXT
-#, fuzzy
-msgid  "Apply Objects Individually"
-msgstr "Εφαρμογή αντικειμένων μεμονωμένα"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.BUTTONIMAGE.QUICKHELPTEXT
-#, fuzzy
-msgid  "Delete Current Image"
-msgstr "Διαγραφή τρέχουσας εικόνας"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.BUTTONIMAGE.QUICKHELPTEXT
-#, fuzzy
-msgid  "Delete All Images"
-msgstr "Διαγραφή όλων των εικόνων"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Number"
-msgstr "Αριθμός"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Image"
-msgstr "Εικόνα"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Group object"
-msgstr "Αντικείμενο ομάδας"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Bitmap object"
-msgstr "Αντικείμενο Bitmap"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Στοίχιση"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top Left"
-msgstr "Πάνω αριστερά"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "Αριστερά"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bottom Left"
-msgstr "Κάτω αριστερά"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "Πάνω"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "Στο κέντρο"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bottom"
-msgstr "Κάτω"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top Right"
-msgstr "Πάνω/Δεξιά"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "Δεξιά"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bottom Right"
-msgstr "Κάτω δεξιά"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Create"
-msgstr "Δημιουργία"
-
-#: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Animation group"
-msgstr "Ομάδα κίνησης"
-
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.STRING.TEXT
 #, fuzzy
 msgid  "Preview"
 msgstr "Προεπισκόπηση"
 
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TABPAGE.TEXT
-#, fuzzy
-msgid  "Options"
-msgstr "Επιλογές"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PRINT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Contents"
-msgstr "Περιεχόμενα"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_DRAW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Drawing"
-msgstr "Σχέ~διο"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_NOTES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Notes"
-msgstr "~Σημειώσεις"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_HANDOUTS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Hando~uts"
-msgstr "Ση~μειώματα"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_OUTLINE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Out~line"
-msgstr "Διάρ~θρωση"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_OUTPUT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Quality"
-msgstr "Ποιότητα"
-
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Default"
 msgstr "Προεπιλογή"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Gra~yscale"
-msgstr "Διαβά~θμιση του γκρι"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_BLACKWHITE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Black & ~white"
-msgstr "Ασπρόμα~υρο"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PRINT_EXT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Print"
-msgstr "Εκτύπωση"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_PAGENAME.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Page name"
-msgstr "Όνο~μα σελίδας"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_DATE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "D~ate"
-msgstr "Ημ~ερομηνία"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_TIME.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Ti~me"
-msgstr "Ώ~ρα"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_HIDDEN_PAGES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "H~idden pages"
-msgstr "Κρυ~φές σελίδες"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PAGE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Page options"
-msgstr "Επιλογές σελίδας"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_PAGESIZE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Fit to page"
-msgstr "Προσ~αρμογή στη σελίδα"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_PAGETILE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Tile pages"
-msgstr "Σε~λίδες σε παράθεση"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_BOOKLET.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "B~rochure"
-msgstr "Διαφημιστικό φυ~λλάδιο"
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_FRONT.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Fr~ont"
-msgstr "Π~ρόσοψη"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_BACK.CHECKBOX.TEXT
 #, fuzzy
@@ -1947,36 +480,13 @@ msgstr "~Τροφοδοσία χαρτιού από ρυθμίσεις εκτυ�
 msgid  "~Reply"
 msgstr "~Απάντηση"
 
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_WEIGHT.MENUITEM.TEXT
-msgid  "~Bold"
-msgstr "Έ~ντονα"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_POSTURE.MENUITEM.TEXT
-msgid  "~Italic"
-msgstr "Π~λάγια"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_UNDERLINE.MENUITEM.TEXT
-msgid  "~Underline"
-msgstr "~Υπογράμμιση"
-
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_STRIKEOUT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Strikethrough"
 msgstr "Δια~κριτή γραφή"
 
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_COPY.MENUITEM.TEXT
-msgid  "~Copy"
-msgstr "Αντι~γραφή"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_PASTE.MENUITEM.TEXT
-msgid  "~Paste"
-msgstr "Επ~ικόλληση"
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Delete Comment"
-msgstr "~Διαγραφή σχολίου"
-
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete All Comments b~y %1"
 msgstr "Διαγραφή όλων των σχολίων α~πό %1"
 
@@ -1986,280 +496,83 @@ msgid  "Delete ~All Comments"
 msgstr "Διαγραφή όλω~ν των σχολίων"
 
 #: ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete All Comments ~by %1"
 msgstr "Διαγραφή όλων των σχολίων ~από %1"
 
-#: ui/annotations/annotations.src#STR_ANNOTATION_TODAY.STRING.TEXT
-msgid  "Today,"
-msgstr "Σήμερα,"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_YESTERDAY.STRING.TEXT
-msgid  "Yesterday,"
-msgstr "Χθες,"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_NOAUTHOR.STRING.TEXT
-msgid  "(no author)"
-msgstr "(χωρίς συντάκτη)"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.STRING.TEXT
-msgid  "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
-msgstr "Το %PRODUCTNAME Impress έφτασε στο τέλος της παρουσίασης. Θέλετε να συνεχίσετε από την αρχή;"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.STRING.TEXT
-msgid  "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
-msgstr "Το %PRODUCTNAME Impress έφτασε στην αρχή της παρουσίασης. Θέλετε να συνεχίσετε από το τέλος;"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
-msgstr "Το %PRODUCTNAME Draw έφτασε στο τέλος του εγγράφου. Θέλετε να συνεχίσετε από την αρχή;"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.STRING.TEXT
-msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
-msgstr "Το %PRODUCTNAME Draw έφτασε στην αρχή του εγγράφου. Θέλετε να συνεχίσετε από το τέλος;"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.STRING.TEXT
-msgid  "Insert Comment"
-msgstr "Εισαγωγή σχολίου"
-
 #: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_DELETE.STRING.TEXT
 msgid  "Delete Comment(s)"
-msgstr "Διαγραφή σχολίων"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_MOVE.STRING.TEXT
-msgid  "Move Comment"
-msgstr "Μετακίνηση σχολίου"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_EDIT.STRING.TEXT
-msgid  "Edit Comment"
-msgstr "Επεξεργασία σχολίου"
+msgstr "Διαγραφή Σχολίου(-ίων)"
 
 #: ui/annotations/annotations.src#STR_ANNOTATION_UNDO_REPLY.STRING.TEXT
+#, fuzzy
 msgid  "Reply to Comment"
 msgstr "Απάντηση σε σχόλιο"
-
-#: ui/annotations/annotations.src#STR_ANNOTATION_REPLY.STRING.TEXT
-msgid  "Reply to %1"
-msgstr "Απάντηση στο %1"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.STRING.TEXT
 #, fuzzy
 msgid  "Drawing View"
 msgstr "Προβολή σχεδίασης"
 
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.STRING.TEXT
-msgid  "This is where you create and edit drawings."
-msgstr "Εδώ δημιουργείτε και επεξεργάζεστε σχέδια."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_D.STRING.TEXT
-msgid  "This is where you create and edit slides."
-msgstr "Εδώ δημιουργείτε και επεξεργάζεστε διαφάνειες."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_N.STRING.TEXT
-msgid  "Outline View"
-msgstr "Προβολή διάρθρωσης"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_D.STRING.TEXT
-msgid  "This is where you enter or edit text in list form."
-msgstr "Εδώ εισάγετε ή επεξεργάζεστε κείμενο σε μορφή λίστας."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_N.STRING.TEXT
-msgid  "Slides View"
-msgstr "Προβολή διαφανειών"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_D.STRING.TEXT
-msgid  "This is where you sort slides."
-msgstr "Εδώ ταξινομείτε τις διαφάνειες."
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_N.STRING.TEXT
-msgid  "Notes View"
-msgstr "Προβολή σημειώσεων"
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_D.STRING.TEXT
-msgid  "This is where you enter and view notes."
-msgstr "Εδώ εισάγετε και βλέπετε σημειώσεις."
-
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_N.STRING.TEXT
+#, fuzzy
 msgid  "Handout View"
 msgstr "Προβολή σημειωμάτων"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_D.STRING.TEXT
+#, fuzzy
 msgid  "This is where you decide on the layout for handouts."
 msgstr "Εδώ αποφασίζετε τη διάταξη των σημειωμάτων."
 
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Next"
-msgstr "Επόμε~νο"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Previous"
-msgstr "~Προηγούμενο"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Go to Slide"
-msgstr "~Μετάβαση σε διαφάνεια"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~First Slide"
-msgstr "Π~ρώτη διαφάνεια"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Last Slide"
-msgstr "~Τελευταία διαφάνεια"
-
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PEN_MODE.MENUITEM.TEXT
 msgid  "Mouse pointer as ~Pen"
-msgstr ""
+msgstr "Δείκτης ποντικιού ως ~Πένα"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.MENUITEM.TEXT
 msgid  "~Pen Width"
-msgstr ""
+msgstr "~Πλάτος Πένας"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_VERY_THIN.MENUITEM.TEXT
 msgid  "~Very thin"
-msgstr ""
+msgstr "~Πολύ λεπτή"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_THIN.MENUITEM.TEXT
 msgid  "~Thin"
-msgstr ""
+msgstr "~Λεπτή"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_NORMAL.MENUITEM.TEXT
 msgid  "~Normal"
-msgstr ""
+msgstr "~Κανονική"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_THICK.MENUITEM.TEXT
 msgid  "~Thick"
-msgstr ""
+msgstr "Πα~χιά"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_WIDTH_PEN.CM_WIDTH_PEN_VERY_THICK.MENUITEM.TEXT
 msgid  "~Very Thick"
-msgstr ""
+msgstr "Π~ολύ Παχιά"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_COLOR_PEN.MENUITEM.TEXT
 msgid  "~Change pen Color..."
-msgstr ""
+msgstr "Αλλα~γή Χρώματος πένας..."
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ERASE_ALLINK.MENUITEM.TEXT
 msgid  "~Erase all ink on Slide"
-msgstr ""
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Screen"
-msgstr "Ο~θόνη"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Black"
-msgstr "~Μαύρο"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~White"
-msgstr "~Λευκό"
-
-#: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~End Show"
-msgstr "Τέ~λος αναπαραγωγής"
-
-#: ui/app/menuids4_tmpl.src#MNSUB_GRAPHIC_PORTAL.MN_SUB_GRAPHIC.MENUITEM.TEXT
-msgid  "~Graphics"
-msgstr "~Γραφικά"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.SID_FORMAT_TABLE_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Table..."
-msgstr "~Πίνακας..."
+msgstr "~Σβήστε όλο το μελάνι στην Παρουσίαση Slide"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Cell"
-msgstr "Κε~λί"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Merge"
-msgstr "Συ~γχώνευση"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Split..."
-msgstr "~Διαίρεση..."
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Top"
-msgstr "~Πάνω"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MENUITEM.TEXT
-#, fuzzy
-msgid  "C~enter"
-msgstr "~Κέντρο"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Bottom"
-msgstr "~Κάτω"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
-#, fuzzy
 msgid  "~Row"
-msgstr "Ε~ισαγωγή..."
+msgstr "~Γραμμή"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MENUITEM.TEXT
 #, fuzzy
 msgid  "Space ~Equally"
 msgstr "Με ί~σα διαστήματα"
 
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Select"
-msgstr "Επιλο~γή"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Insert..."
-msgstr "Ε~ισαγωγή..."
-
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Delete"
 msgstr "~Διαγραφή"
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "Colu~mn"
-msgstr "Στή~λη"
-
-#: ui/app/strings.src#STR_DRAW_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Drawings Toolbar"
-msgstr "Γραμμή εργαλείων σχεδίασης"
-
-#: ui/app/strings.src#STR_GRAPHIC_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Draw toolbar/Graphics"
-msgstr "Γραμμή σχεδίασης/Γραφικά"
-
-#: ui/app/strings.src#STR_SLIDE_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Slide Bar"
-msgstr "Γραμμή εργαλείων διαφανειών"
-
-#: ui/app/strings.src#STR_OUTLINE_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Outline Bar"
-msgstr "Γραμμή εργαλειών διάρθρωσης"
-
-#: ui/app/strings.src#STR_DRAW_OBJ_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Draw Object Bar"
-msgstr "Γραμμή αντικειμένων σχεδίασης"
 
 #: ui/app/strings.src#STR_GRAPHIC_OBJ_TOOLBOX.STRING.TEXT
 #, fuzzy
@@ -2281,115 +594,10 @@ msgstr "Γραμμή επιλογών/Γραφικά"
 msgid  "Presentation"
 msgstr "Παρουσίαση"
 
-#: ui/app/strings.src#STR_SLIDE_OBJ_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Slide Object Bar"
-msgstr "Γραμμή αντικειμένων διαφανειών"
-
-#: ui/app/strings.src#STR_BEZIER_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Bézier object bar"
-msgstr "Γραμμή αντικειμένων καμπύλης"
-
-#: ui/app/strings.src#STR_GLUEPOINTS_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Glue Point Object Bar"
-msgstr "Γραμμή αντικειμένων σημείων κόλλησης"
-
-#: ui/app/strings.src#STR_DRAW_TEXT_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Text Object Bar"
-msgstr "Γραμμή αντικειμένων κειμένου"
-
-#: ui/app/strings.src#STR_GRAPHIC_TEXT_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Text Object Bar/Draw"
-msgstr "Γραμμή αντικειμένων κειμένου/Σχεδίαση"
-
-#: ui/app/strings.src#STR_NULL.STRING.TEXT
-#, fuzzy
-msgid  "None"
-msgstr "Κανένα"
-
-#: ui/app/strings.src#STR_INSERTPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Insert Slide"
-msgstr "Εισαγωγή διαφάνειας"
-
-#: ui/app/strings.src#STR_INSERTLAYER.STRING.TEXT
-#, fuzzy
-msgid  "Insert Layer"
-msgstr "Εισαγωγή επιπέδου"
-
-#: ui/app/strings.src#STR_MODIFYLAYER.STRING.TEXT
-#, fuzzy
-msgid  "Modify Layer"
-msgstr "Αλλαγή επιπέδου"
-
-#: ui/app/strings.src#STR_UNDO_SLIDE_PARAMS.STRING.TEXT
-#, fuzzy
-msgid  "Slide parameter"
-msgstr "Παράμετροι διαφανειών"
-
-#: ui/app/strings.src#STR_UNDO_SLIDE_MOVE.STRING.TEXT
-#, fuzzy
-msgid  "Move slide"
-msgstr "Μετακίνηση διαφάνειας"
-
-#: ui/app/strings.src#STR_UNDO_CUT.STRING.TEXT
-#, fuzzy
-msgid  "Cut"
-msgstr "Αποκοπή"
-
-#: ui/app/strings.src#STR_UNDO_REPLACE.STRING.TEXT
-#, fuzzy
-msgid  "Replace"
-msgstr "Αντικατάσταση"
-
-#: ui/app/strings.src#STR_UNDO_DRAGDROP.STRING.TEXT
-#, fuzzy
-msgid  "Drag and Drop"
-msgstr "Μεταφορά και απόθεση"
-
 #: ui/app/strings.src#STR_INSERTGRAPHIC.STRING.TEXT
 #, fuzzy
 msgid  "Insert picture"
 msgstr "Εισαγωγή εικόνας"
-
-#: ui/app/strings.src#STR_SLOW.STRING.TEXT
-#, fuzzy
-msgid  "Slow"
-msgstr "Αργά"
-
-#: ui/app/strings.src#STR_MEDIUM.STRING.TEXT
-#, fuzzy
-msgid  "Medium"
-msgstr "Μεσαίο"
-
-#: ui/app/strings.src#STR_FAST.STRING.TEXT
-#, fuzzy
-msgid  "Fast"
-msgstr "Γρήγορα"
-
-#: ui/app/strings.src#STR_UNDO_BEZCLOSE.STRING.TEXT
-#, fuzzy
-msgid  "Close Polygon"
-msgstr "Κλείσιμο πολυγώνου"
-
-#: ui/app/strings.src#STR_SLIDE_MODE.STRING.TEXT
-#, fuzzy
-msgid  "Slide Sorter"
-msgstr "Ταξινόμηση διαφανειών"
-
-#: ui/app/strings.src#STR_DRAW_MODE.STRING.TEXT
-#, fuzzy
-msgid  "Normal"
-msgstr "Κανονικά"
-
-#: ui/app/strings.src#STR_OUTLINE_MODE.STRING.TEXT
-#, fuzzy
-msgid  "Outline"
-msgstr "Διάρθρωση"
 
 #: ui/app/strings.src#STR_NOTES_MODE.STRING.TEXT
 #, fuzzy
@@ -2400,26 +608,6 @@ msgstr "Σημειώσεις"
 #, fuzzy
 msgid  "Handout"
 msgstr "Σημείωμα"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_NONE.STRING.TEXT
-#, fuzzy
-msgid  "Blank Slide"
-msgstr "Κενή διαφάνεια"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_ONLY_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Title Only"
-msgstr "Μόνο τίτλος"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_ONLY_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Centered Text"
-msgstr "Κεντραρισμένο κείμενο"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Title Slide"
-msgstr "Διαφάνεια τίτλου"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT.STRING.TEXT
 #, fuzzy
@@ -2437,9 +625,8 @@ msgid  "Title, Content and 2 Content"
 msgstr "Τίτλος, Περιεχόμενο και Περιεχόμενο 2"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT_CONTENT.STRING.TEXT
-#, fuzzy
 msgid  "Title, 2 Content and Content"
-msgstr "Τίτλος, Περιεχόμενο 2 και Περιεχόμενο "
+msgstr "Τίτλος, Περιεχόμενο 2 και Περιεχόμενο"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_OVER_2CONTENT.STRING.TEXT
 #, fuzzy
@@ -2447,9 +634,8 @@ msgid  "Title, Content over 2 Content"
 msgstr "Τίτλος, Περιεχόμενο πάνω από Περιεχόμενο 2"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_2CONTENT_OVER_CONTENT.STRING.TEXT
-#, fuzzy
 msgid  "Title, 2 Content over Content"
-msgstr "Τίτλος, Περιεχόμενο 2 πάνω από Περιεχόμενο "
+msgstr "Τίτλος, Περιεχόμενο 2 πάνω από Περιεχόμενο"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT_OVER_CONTENT.STRING.TEXT
 #, fuzzy
@@ -2466,895 +652,128 @@ msgstr "Τίτλος, Περιεχόμενο 4"
 msgid  "Title, 6 Content"
 msgstr "Τίτλος, Περιεχόμενο 6"
 
-#: ui/app/strings.src#STR_AL_TITLE_VERT_OUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "Title, Vertical Text"
-msgstr "Τίτλος, κατακόρυφο κείμενο"
-
-#: ui/app/strings.src#STR_AL_TITLE_VERT_OUTLINE_CLIPART.STRING.TEXT
-#, fuzzy
-msgid  "Title, Vertical Text, Clipart"
-msgstr "Τίτλος, κατακόρυφο κείμενο, Clipart"
-
-#: ui/app/strings.src#STR_AL_VERT_TITLE_TEXT_CHART.STRING.TEXT
-#, fuzzy
-msgid  "Vertical Title, Text, Chart"
-msgstr "Kατακόρυφος τίτλος, κείμενο, διάγραμμα"
-
-#: ui/app/strings.src#STR_AL_VERT_TITLE_VERT_OUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "Vertical Title, Vertical Text"
-msgstr "Κατακόρυφος τίτλος, κατακόρυφο κείμενο"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT1.STRING.TEXT
-#, fuzzy
-msgid  "One Slide"
-msgstr "Μια διαφάνεια"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT2.STRING.TEXT
-#, fuzzy
-msgid  "Two Slides"
-msgstr "Δύο διαφάνειες"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT3.STRING.TEXT
-#, fuzzy
-msgid  "Three Slides"
-msgstr "Τρεις διαφάνειες"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT4.STRING.TEXT
-#, fuzzy
-msgid  "Four Slides"
-msgstr "Τέσσερις διαφάνειες"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT6.STRING.TEXT
-#, fuzzy
-msgid  "Six Slides"
-msgstr "Έξι διαφάνειες"
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT9.STRING.TEXT
-#, fuzzy
-msgid  "Nine Slides"
-msgstr "Εννέα διαφάνειες"
-
-#: ui/app/strings.src#STR_TRANSFORM.STRING.TEXT
-#, fuzzy
-msgid  "transform"
-msgstr "μετασχηματισμός"
-
-#: ui/app/strings.src#STR_LINEEND.STRING.TEXT
-#, fuzzy
-msgid  "Line Ends"
-msgstr "Τέλος γραμμής"
-
-#: ui/app/strings.src#STR_DESC_LINEEND.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the new arrowhead:"
-msgstr "Παρακαλώ εισάγετε ένα όνομα για το νέο τέλος της γραμμής:"
-
-#: ui/app/strings.src#STR_WARN_NAME_DUPLICATE.STRING.TEXT
-#, fuzzy
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "Το επιλεγμένο όνομα υπάρχει ήδη. \nΠαρακαλώ εισαγάγετε κάποιο άλλο όνομα."
-
-#: ui/app/strings.src#STR_UNDO_ANIMATION.STRING.TEXT
-#, fuzzy
-msgid  "Animation parameters"
-msgstr "Παράμετροι εφέ κινήσεων"
-
-#: ui/app/strings.src#STR_EXPORT_HTML_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Web Page"
-msgstr "Ιστοσελίδα"
-
-#: ui/app/strings.src#STR_EXPORT_DIALOG_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "Εξαγωγή"
-
-#: ui/app/strings.src#STR_UNDO_COPYOBJECTS.STRING.TEXT
-#, fuzzy
-msgid  "Duplicate"
-msgstr "Αναπαραγωγή"
-
-#: ui/app/strings.src#STR_TITLE_NAMEGROUP.STRING.TEXT
-#, fuzzy
-msgid  "Name Object"
-msgstr "Ονομασία αντικειμένου"
-
 #: ui/app/strings.src#STR_DESC_NAMEGROUP.STRING.TEXT
 #, fuzzy
 msgid  "Name"
 msgstr "Όνομα"
 
 #: ui/app/strings.src#STR_WARN_PAGE_EXISTS.STRING.TEXT
-#, fuzzy
 msgid  "The slide name already exists or is invalid. Please enter another name."
-msgstr "Το όνομα της διαφάνειας υπάρχει ήδη ή δεν είναι έγκυρο. Παρακαλώ εισαγάγετε κάποιο άλλο όνομα"
-
-#: ui/app/strings.src#STR_SNAPDLG_SETLINE.STRING.TEXT
-#, fuzzy
-msgid  "Edit Snap Line"
-msgstr "Επεξεργασία γραμμής συγκράτησης"
-
-#: ui/app/strings.src#STR_SNAPDLG_SETPOINT.STRING.TEXT
-#, fuzzy
-msgid  "Edit Snap Point"
-msgstr "Επεξεργασία σημείου συγκράτησης"
-
-#: ui/app/strings.src#STR_POPUP_EDIT_SNAPLINE.STRING.TEXT
-#, fuzzy
-msgid  "Edit Snap Line..."
-msgstr "Επεξεργασία γραμμής συγκράτησης..."
+msgstr "Το όνομα της διαφάνειας υπάρχει ήδη ή δεν είναι έγκυρο. Παρακαλώ εισαγάγετε κάποιο άλλο όνομα."
 
 #: ui/app/strings.src#STR_POPUP_EDIT_SNAPPOINT.STRING.TEXT
-#, fuzzy
 msgid  "Edit Snap Point..."
-msgstr "Επεξεργασία σημείου συγκράτησης"
-
-#: ui/app/strings.src#STR_POPUP_DELETE_SNAPLINE.STRING.TEXT
-#, fuzzy
-msgid  "Delete Snap Line"
-msgstr "Διαγραφή γραμμής συγκράτησης"
-
-#: ui/app/strings.src#STR_POPUP_DELETE_SNAPPOINT.STRING.TEXT
-#, fuzzy
-msgid  "Delete Snap Point"
-msgstr "Διαγραφή σημείου συγκράτησης"
-
-#: ui/app/strings.src#STR_IMPRESS.STRING.TEXT
-#, fuzzy
-msgid  "StarImpress 4.0"
-msgstr "StarImpress 4.0"
-
-#: ui/app/strings.src#STR_LAYER.STRING.TEXT
-#, fuzzy
-msgid  "Layer"
-msgstr "Επίπεδο"
+msgstr "Επεξεργασία Σημείου Συγκράτησης..."
 
 #: ui/app/strings.src#STR_UNDO_DELETEPAGES.STRING.TEXT
 #, fuzzy
 msgid  "Delete slides"
 msgstr "Διαγραφή διαφανειών"
 
-#: ui/app/strings.src#STR_UNDO_INSERTPAGES.STRING.TEXT
-#, fuzzy
-msgid  "Insert slides"
-msgstr "Εισαγωγή διαφανειών"
-
 #: ui/app/strings.src#STR_ASK_DELETE_LAYER.STRING.TEXT
 #, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
 msgstr "Θέλετε σίγουρα να διαγραφεί το επίπεδο \"$\";\nΌλα τα αντικείμενα αυτού του επιπέδου θα διαγραφούν!"
-
-#: ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.STRING.TEXT
-#, fuzzy
-msgid  "Do you really want to delete all images?"
-msgstr "Θέλετε πραγματικά να διαγραφούν όλες οι εικόνες;"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_TITLE_AND_LAYOUT.STRING.TEXT
-#, fuzzy
-msgid  "Modify title and outline"
-msgstr "Τροποποίηση τίτλου και διάρθρωσης"
 
 #: ui/app/strings.src#STR_WAV_FILE.STRING.TEXT
 #, fuzzy
 msgid  "Sound"
 msgstr "Ήχος"
 
-#: ui/app/strings.src#STR_MIDI_FILE.STRING.TEXT
-#, fuzzy
-msgid  "MIDI"
-msgstr "MIDI"
-
-#: ui/app/strings.src#STR_AU_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Sun/NeXT Audio"
-msgstr "Sun/NeXT Audio"
-
-#: ui/app/strings.src#STR_VOC_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Creative Labs Audio"
-msgstr "Creative Labs Audio"
-
-#: ui/app/strings.src#STR_AIFF_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Apple/SGI Audio"
-msgstr "Apple/SGI Audio"
-
-#: ui/app/strings.src#STR_SVX_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Amiga SVX Audio"
-msgstr "Amiga SVX Audio"
-
-#: ui/app/strings.src#STR_SD_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Slide"
-msgstr "Διαφάνεια"
-
-#: ui/app/strings.src#STR_ALL_FILES.STRING.TEXT
-#, fuzzy
-msgid  "All files (*.*)"
-msgstr "Όλα τα αρχεία (*.*)"
-
-#: ui/app/strings.src#STR_UNDO_INSERT_TEXTFRAME.STRING.TEXT
-#, fuzzy
-msgid  "Insert text frame"
-msgstr "Εισαγωγή πλαισίου κειμένου"
-
-#: ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.STRING.TEXT
-#, fuzzy
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "Δεν είναι δυνατόν να εκτελεστεί η \nλειτουργία αυτή με τα επιλεγμένα αντικείμενα."
-
-#: ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Insert File"
-msgstr "Εισαγωγή αρχείου"
-
-#: ui/app/strings.src#STR_READ_DATA_ERROR.STRING.TEXT
-#, fuzzy
-msgid  "The file could not be loaded!"
-msgstr "Δεν ήταν δυνατόν να φορτωθεί το αρχείο!"
-
-#: ui/app/strings.src#STR_SCALE_OBJECTS.STRING.TEXT
-#, fuzzy
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "Η μορφή των νέων σελίδων θα προσαρμοστεί.\nΘέλετε να γίνει προσαρμογή και των αντικειμένων;"
-
-#: ui/app/strings.src#STR_CREATE_PAGES.STRING.TEXT
-#, fuzzy
-msgid  "Create slides"
-msgstr "Δημιουργία διαφανειών"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_PAGEFORMAT.STRING.TEXT
-#, fuzzy
-msgid  "Modify page format"
-msgstr "Αλλαγή μορφής σελίδας"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_PAGEBORDER.STRING.TEXT
-#, fuzzy
-msgid  "Modify page margins"
-msgstr "Αλλαγή περιθωρίων σελίδας"
-
-#: ui/app/strings.src#STR_EDIT_OBJ.STRING.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Επεξεργασία"
-
 #: ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "Αυτή η ενέργεια διαγράφει τη λίστα των ενεργειών που μπορούν\nνα αναιρεθούν. Οι προηγούμενες αλλαγές που  έγιναν στο έγγραφο είναι ακόμα έγκυρες,\nαλλά δεν μπορούν να αναιρεθούν. Θέλετε να συνεχίσετε και\nεπομένως να αντιστοιχίσετε το νέο πρότυπο διαφάνειας;"
-
-#: ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Do not show this warning again"
-msgstr "~Να μην εμφανιστεί ξανά αυτό το μήνυμα"
-
-#: ui/app/strings.src#RID_UNDO_DELETE_WARNING.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: ui/app/strings.src#STR_WARN_PRINTFORMAT_FAILURE.STRING.TEXT
-#, fuzzy
-msgid  "The document format could not be set on the specified printer."
-msgstr "Δεν ήταν δυνατόν να οριστεί η μορφή εγγράφου στον εκτυπωτή."
-
-#: ui/app/strings.src#STR_REMOVE_LINK.STRING.TEXT
-#, fuzzy
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "Το γραφικό αυτό είναι συνδεδεμένο με το έγγραφο. \nΘέλετε να καταργηθεί η σύνδεση για να επεξεργαστείτε το γραφικό;"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.STRING.TEXT
-#, fuzzy
-msgid  "Graphics file cannot be opened"
-msgstr "Δεν είναι δυνατό το άνοιγμα του αρχείου γραφικών"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_IOERROR.STRING.TEXT
-#, fuzzy
-msgid  "Graphics file cannot be read"
-msgstr "Δεν είναι δυνατή η ανάγνωση του αρχείου γραφικών"
-
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_FORMATERROR.STRING.TEXT
-#, fuzzy
-msgid  "Unknown graphics format"
-msgstr "Άγνωστη μορφή γραφικών"
+msgstr "Αυτή η ενέργεια διαγράφει τη λίστα των ενεργειών που μπορούν\nνα αναιρεθούν. Οι προηγούμενες αλλαγές που έγιναν στο έγγραφο είναι ακόμα έγκυρες,\nαλλά δεν μπορούν να αναιρεθούν. Θέλετε να συνεχίσετε και\nεπομένως να αντιστοιχίσετε το νέο πρότυπο διαφάνειας;"
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_VERSIONERROR.STRING.TEXT
-#, fuzzy
 msgid  "This graphics file version is not supported"
-msgstr "Δεν υποστηρίζεται η έκδοση αυτού του γραφικού αρχείου."
+msgstr "Δεν υποστηρίζεται η έκδοση αυτού του γραφικού αρχείου"
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_FILTERERROR.STRING.TEXT
 #, fuzzy
 msgid  "Graphics filter not found"
 msgstr "Δεν βρέθηκε το φίλτρο γραφικών"
 
-#: ui/app/strings.src#STR_IMPORT_GRFILTER_TOOBIG.STRING.TEXT
-#, fuzzy
-msgid  "Not enough memory to import graphics"
-msgstr "Δεν υπάρχει αρκετή μνήμη για την εισαγωγή του γραφικού"
-
-#: ui/app/strings.src#STR_OBJECTS.STRING.TEXT
-#, fuzzy
-msgid  "Objects"
-msgstr "Αντικείμενα"
-
 #: ui/app/strings.src#STR_END_SEARCHING.STRING.TEXT
-#, fuzzy
 msgid  "The document search is finished."
-msgstr "Η αναζήτηση του εγγράφου ολοκληρώθηκε!"
+msgstr "Η αναζήτηση του εγγράφου ολοκληρώθηκε."
 
 #: ui/app/strings.src#STR_END_SPELLING.STRING.TEXT
-#, fuzzy
 msgid  "Spellcheck of entire document has been completed."
-msgstr "Ο ορθογραφικός έλεγχος για ολόκληρο το έγγραφο ολοκληρώθηκε!"
+msgstr "Ο ορθογραφικός έλεγχος για ολόκληρο το έγγραφο ολοκληρώθηκε."
 
 #: ui/app/strings.src#STR_END_SPELLING_OBJ.STRING.TEXT
-#, fuzzy
 msgid  "The spellcheck for the selected objects has been completed."
-msgstr "Ο ορθογραφικός έλεγχος για τα επιλεγμένα αντικείμενα ολοκληρώθηκε!"
-
-#: ui/app/strings.src#STR_NOLANGUAGE.STRING.TEXT
-#, fuzzy
-msgid  "The selected language is not available."
-msgstr "Η επιλεγμένη γλώσσα δεν είναι διαθέσιμη."
-
-#: ui/app/strings.src#STR_ASK_FOR_CONVERT_TO_BEZIER.STRING.TEXT
-#, fuzzy
-msgid  "Convert selected object to curve?"
-msgstr "Μετατροπή επιλεγμένου αντικειμένου σε καμπύλη;"
-
-#: ui/app/strings.src#STR_UNDO_CHANGE_PRES_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Modify presentation object '$'"
-msgstr "Τροποποίηση αντικειμένου παρουσίασης '$'"
+msgstr "Ο ορθογραφικός έλεγχος για τα επιλεγμένα αντικείμενα ολοκληρώθηκε."
 
 #: ui/app/strings.src#STR_UNDO_MODIFY_PAGE.STRING.TEXT
 #, fuzzy
 msgid  "Slide layout"
 msgstr "Διάταξη διαφάνειας"
 
-#: ui/app/strings.src#STR_STATSTR_PRINT.STRING.TEXT
-#, fuzzy
-msgid  "Printing..."
-msgstr "Εκτύπωση..."
-
-#: ui/app/strings.src#STR_UNDO_INSERT_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Insert file"
-msgstr "Εισαγωγή αρχείου"
-
-#: ui/app/strings.src#STR_SCALE_OBJS_TO_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Should the graphics be scaled to the new slide format?"
-msgstr "Θέλετε να γίνει προσαρμογή των αντικειμένων γραφικών στη μορφή της διαφάνειας;"
-
-#: ui/app/strings.src#STR_UNDO_INSERT_SPECCHAR.STRING.TEXT
-#, fuzzy
-msgid  "Insert special character"
-msgstr "Εισαγωγή ειδικού χαρακτήρα"
-
-#: ui/app/strings.src#STR_UNDO_SET_PRESLAYOUT.STRING.TEXT
-#, fuzzy
-msgid  "Apply presentation layout"
-msgstr "Εφαρμογή διάταξης παρουσίασης"
-
-#: ui/app/strings.src#STR_STRING_NOTFOUND.STRING.TEXT
-#, fuzzy
-msgid  "Search key not found."
-msgstr "Δεν βρέθηκε ο όρος αναζήτησης."
-
-#: ui/app/strings.src#STR_PLAY.STRING.TEXT
-#, fuzzy
-msgid  "~Play"
-msgstr "Αναπαρα~γωγή"
-
-#: ui/app/strings.src#STR_STOP.STRING.TEXT
-#, fuzzy
-msgid  "Sto~p"
-msgstr "Δια~κοπή"
-
-#: ui/app/strings.src#STR_UNDO_ORIGINALSIZE.STRING.TEXT
-#, fuzzy
-msgid  "Original Size"
-msgstr "Αρχικό μέγεθος"
-
 #: ui/app/strings.src#STR_PRINT_DRAWING.STRING.TEXT
-#, fuzzy
 msgid  " (Drawing)"
-msgstr "(Σχεδίαση)"
+msgstr " (Σχεδίαση)"
 
 #: ui/app/strings.src#STR_PRINT_NOTES.STRING.TEXT
-#, fuzzy
 msgid  " (Notes)"
-msgstr "(Σημειώσεις)"
+msgstr " (Σημειώσεις)"
 
 #: ui/app/strings.src#STR_PRINT_HANDOUT.STRING.TEXT
-#, fuzzy
 msgid  " (Handout)"
-msgstr "(Σημείωμα)"
+msgstr " (Σημείωμα)"
 
 #: ui/app/strings.src#STR_PRINT_OUTLINE.STRING.TEXT
-#, fuzzy
 msgid  " (Outline)"
-msgstr "(Διάρθρωση)"
-
-#: ui/app/strings.src#STR_WARN_SCALE_FAIL.STRING.TEXT
-#, fuzzy
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "Η κλίμακα που έχετε εισάγει δεν είναι έγκυρη.\nΘέλετε να εισαγάγετε άλλη;"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_NONE.STRING.TEXT
-#, fuzzy
-msgid  "No action"
-msgstr "Καμία ενέργεια"
+msgstr " (Περίγραμμα)"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_PREVPAGE.STRING.TEXT
 #, fuzzy
 msgid  "Go to previous slide"
 msgstr "Μετάβαση προς την προηγούμενη διαφάνεια"
 
-#: ui/app/strings.src#STR_CLICK_ACTION_NEXTPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Go to next slide"
-msgstr "Μετάβαση προς την επόμενη διαφάνεια"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_FIRSTPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Go to first slide"
-msgstr "Μετάβαση προς την πρώτη διαφάνεια"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_LASTPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Go to last slide"
-msgstr "Μετάβαση προς τη τελευταία διαφάνεια"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_BOOKMARK.STRING.TEXT
-#, fuzzy
-msgid  "Go to page or object"
-msgstr "Μετάβαση σε σελίδα ή αντικείμενο"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "Go to document"
-msgstr "Μετάβαση στο έγγραφο"
-
 #: ui/app/strings.src#STR_CLICK_ACTION_VANISH.STRING.TEXT
 #, fuzzy
 msgid  "Fade object"
 msgstr "Απόκρυψη αντικειμένου"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_INVISIBLE.STRING.TEXT
-#, fuzzy
-msgid  "Hide object"
-msgstr "Αντικείμενα κρυφά"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_SOUND.STRING.TEXT
-#, fuzzy
-msgid  "Play sound"
-msgstr "Εκτέλεση ήχου"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_VERB.STRING.TEXT
-#, fuzzy
-msgid  "Start object action"
-msgstr "Εκτέλεση ενέργειας αντικειμένου"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_PROGRAM.STRING.TEXT
-#, fuzzy
-msgid  "Run program"
-msgstr "Εκτέλεση προγράμματος"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_MACRO.STRING.TEXT
-#, fuzzy
-msgid  "Run macro"
-msgstr "Εκτέλεση μακροεντολής"
-
-#: ui/app/strings.src#STR_CLICK_ACTION_STOPPRESENTATION.STRING.TEXT
-#, fuzzy
-msgid  "Exit presentation"
-msgstr "Τερματισμός παρουσίασης"
 
 #: ui/app/strings.src#STR_EFFECTDLG_JUMP.STRING.TEXT
 #, fuzzy
 msgid  "Target"
 msgstr "Προορισμός"
 
-#: ui/app/strings.src#STR_EFFECTDLG_ACTION.STRING.TEXT
-#, fuzzy
-msgid  "Act~ion"
-msgstr "Ενέρ~γεια"
-
-#: ui/app/strings.src#STR_EFFECTDLG_PAGE_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Slide / Object"
-msgstr "Διαφάνεια / Αντικείμενο"
-
-#: ui/app/strings.src#STR_EFFECTDLG_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "Έγγραφο"
-
-#: ui/app/strings.src#STR_EFFECTDLG_PROGRAM.STRING.TEXT
-#, fuzzy
-msgid  "Program"
-msgstr "Πρόγραμμα"
-
-#: ui/app/strings.src#STR_EFFECTDLG_MACRO.STRING.TEXT
-#, fuzzy
-msgid  "Macro"
-msgstr "Μακροεντολή"
-
-#: ui/app/strings.src#STR_EFFECT_NONE.STRING.TEXT
-#, fuzzy
-msgid  "No Effect"
-msgstr "Χωρίς εφέ"
-
-#: ui/app/strings.src#STR_INSERT_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Insert Text"
-msgstr "Εισαγωγή κειμένου"
-
-#: ui/app/strings.src#STR_SLIDE_SINGULAR.STRING.TEXT
-#, fuzzy
-msgid  " Slide"
-msgstr " Διαφάνεια"
-
-#: ui/app/strings.src#STR_SLIDE_PLURAL.STRING.TEXT
-#, fuzzy
-msgid  " Slides"
-msgstr " Διαφάνειες"
-
 #: ui/app/strings.src#STR_LOAD_PRESENTATION_LAYOUT.STRING.TEXT
 #, fuzzy
 msgid  "Load Slide Design"
 msgstr "Φόρτωση προτύπου διαφάνειας"
 
-#: ui/app/strings.src#STR_DRAGTYPE_URL.STRING.TEXT
-#, fuzzy
-msgid  "Insert as hyperlink"
-msgstr "Εισαγωγή ως υπερσύνδεση"
-
-#: ui/app/strings.src#STR_DRAGTYPE_EMBEDDED.STRING.TEXT
-#, fuzzy
-msgid  "Insert as copy"
-msgstr "Εισαγωγή ως αντίγραφο"
-
-#: ui/app/strings.src#STR_DRAGTYPE_LINK.STRING.TEXT
-#, fuzzy
-msgid  "Insert as link"
-msgstr "Εισαγωγή ως σύνδεση"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_SMART.STRING.TEXT
-#, fuzzy
-msgid  "Smart"
-msgstr "Smart"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_LEFT.STRING.TEXT
-#, fuzzy
-msgid  "Left"
-msgstr "Αριστερά"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_RIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Right"
-msgstr "Δεξιά"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_TOP.STRING.TEXT
-#, fuzzy
-msgid  "Top"
-msgstr "Πάνω"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_BOTTOM.STRING.TEXT
-#, fuzzy
-msgid  "Bottom"
-msgstr "Κάτω"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_LO.STRING.TEXT
-#, fuzzy
-msgid  "Top Left?"
-msgstr "Πάνω δεξιά;"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_LU.STRING.TEXT
-#, fuzzy
-msgid  "Bottom Left?"
-msgstr "Κάτω αριστερά;"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_RO.STRING.TEXT
-#, fuzzy
-msgid  "Top Right?"
-msgstr "Πάνω δεξιά;"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_RU.STRING.TEXT
-#, fuzzy
-msgid  "Bottom Right?"
-msgstr "Κάτω δεξιά;"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_HORZ.STRING.TEXT
-#, fuzzy
-msgid  "Horizontal"
-msgstr "Οριζόντια"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_VERT.STRING.TEXT
-#, fuzzy
-msgid  "Vertical"
-msgstr "Κατακόρυφα"
-
-#: ui/app/strings.src#STR_GLUE_ESCDIR_ALL.STRING.TEXT
-#, fuzzy
-msgid  "All?"
-msgstr "Όλα;"
-
 #: ui/app/strings.src#STR_CANT_PERFORM_IN_LIVEMODE.STRING.TEXT
-#, fuzzy
 msgid  "This action can't be run in the live mode."
-msgstr "Η ενέργεια αυτή δεν είναι δυνατόν να εκτελεστεί σε 'ενεργή' κατάσταση."
-
-#: ui/app/strings.src#STR_PUBLISH_BACK.STRING.TEXT
-#, fuzzy
-msgid  "Back"
-msgstr "Πίσω"
-
-#: ui/app/strings.src#STR_PUBLISH_NEXT.STRING.TEXT
-#, fuzzy
-msgid  "Continue"
-msgstr "Συνέχεια"
-
-#: ui/app/strings.src#STR_PUBLISH_OUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "Overview"
-msgstr "Σύνοψη"
+msgstr "Η ενέργεια αυτή δεν είναι δυνατόν να εκτελεστεί σε ενεργή κατάσταση."
 
 #: ui/app/strings.src#STR_EYEDROPPER.STRING.TEXT
 #, fuzzy
 msgid  "Color Replacer"
 msgstr "Σταγονόμετρο"
 
-#: ui/app/strings.src#STR_UNDO_MORPHING.STRING.TEXT
-#, fuzzy
-msgid  "Cross-fading"
-msgstr "Βαθμιαίος αποχρωματισμός"
-
-#: ui/app/strings.src#STR_UNDO_COLORRESOLUTION.STRING.TEXT
-#, fuzzy
-msgid  "Color resolution"
-msgstr "Ανάλυση χρωμάτων"
-
 #: ui/app/strings.src#STR_UNDO_EXPAND_PAGE.STRING.TEXT
-#, fuzzy
 msgid  "Expand Slide"
-msgstr "Ανάπτυξη  διαφάνειας"
-
-#: ui/app/strings.src#STR_UNDO_SUMMARY_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Table of Contents Slide"
-msgstr "Κατάλογος περιεχομένων-Διαφάνεια"
-
-#: ui/app/strings.src#STR_TWAIN_NO_SOURCE_UNX.STRING.TEXT
-#, fuzzy
-msgid  "No SANE source is available at the moment."
-msgstr "Δεν υπάρχει διαθέσιμη προέλευση SANE αυτή τη στιγμή."
-
-#: ui/app/strings.src#STR_TWAIN_NO_SOURCE.STRING.TEXT
-#, fuzzy
-msgid  "At present, no TWAIN source is available."
-msgstr "Προς το παρόν δεν είναι διαθέσιμη καμιά προέλευση TWAIN."
-
-#: ui/app/strings.src#STR_FIX.STRING.TEXT
-#, fuzzy
-msgid  "Fixed"
-msgstr "Σταθερά"
-
-#: ui/app/strings.src#STR_VAR.STRING.TEXT
-#, fuzzy
-msgid  "Variable"
-msgstr "Μεταβλητή"
-
-#: ui/app/strings.src#STR_STANDARD_NORMAL.STRING.TEXT
-#, fuzzy
-msgid  "Standard"
-msgstr "Προεπιλογή"
-
-#: ui/app/strings.src#STR_STANDARD_SMALL.STRING.TEXT
-#, fuzzy
-msgid  "Standard (short)"
-msgstr "Προεπιλογή (σύντομη)"
-
-#: ui/app/strings.src#STR_STANDARD_BIG.STRING.TEXT
-#, fuzzy
-msgid  "Standard (long)"
-msgstr "Προεπιλογή (μακρύ)"
-
-#: ui/app/strings.src#STR_FILEFORMAT_NAME_EXT.STRING.TEXT
-#, fuzzy
-msgid  "File name"
-msgstr "Όνομα αρχείου"
-
-#: ui/app/strings.src#STR_FILEFORMAT_FULLPATH.STRING.TEXT
-#, fuzzy
-msgid  "Path/File name"
-msgstr "Όνομα διαδρομής/αρχείου"
-
-#: ui/app/strings.src#STR_FILEFORMAT_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Path"
-msgstr "Διαδρομή"
-
-#: ui/app/strings.src#STR_FILEFORMAT_NAME.STRING.TEXT
-#, fuzzy
-msgid  "File name without extension"
-msgstr "Όνομα αρχείου χωρίς επέκταση"
-
-#: ui/app/strings.src#STR_RELEASE_GRAPHICLINK.STRING.TEXT
-#, fuzzy
-msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr "Το γραφικό αυτό είναι συνδεδεμένο με το έγγραφο. Θέλετε να καταργηθεί η σύνδεση για να επεξεργαστείτε το γραφικό;"
-
-#: ui/app/strings.src#STR_NEW_CUSTOMSHOW.STRING.TEXT
-#, fuzzy
-msgid  "New Custom Slide Show"
-msgstr "Δημιουργία προσαρμοσμένης παρουσίασης οθόνης"
-
-#: ui/app/strings.src#STR_COPY_CUSTOMSHOW.STRING.TEXT
-#, fuzzy
-msgid  "Copy "
-msgstr "Αντίγραφο "
-
-#: ui/app/strings.src#STR_IMPRESS_DOCUMENT_FULLTYPE_60.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION Presentation"
-msgstr "%PRODUCTNAME %PRODUCTVERSION Παρουσίαση"
-
-#: ui/app/strings.src#STR_GRAPHIC_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "Drawing"
-msgstr "Σχεδίαση"
-
-#: ui/app/strings.src#STR_GRAPHIC_DOCUMENT_FULLTYPE_60.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTVERSION Drawing"
-msgstr "%PRODUCTNAME %PRODUCTVERSION Σχεδίαση"
+msgstr "Ανάπτυξη Διαφάνειας"
 
 #: ui/app/strings.src#STR_BREAK_METAFILE.STRING.TEXT
-#, fuzzy
 msgid  "Ungroup Metafile(s)..."
-msgstr "Κατάργηση ομαδοποίησης Metafile..."
+msgstr "Κατάργηση Ομαδοποίησης Metafile(s)..."
 
 #: ui/app/strings.src#STR_BREAK_FAIL.STRING.TEXT
-#, fuzzy
 msgid  "It was not possible to ungroup all drawing objects."
-msgstr "Δεν ήταν δυνατόν να καταργηθεί η ομαδοποίηση όλων των αντικειμένων σχεδίασης!"
-
-#: ui/app/strings.src#STR_PUBDLG_SAMENAME.STRING.TEXT
-#, fuzzy
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "Υπάρχει ήδη ένα σχέδιο με αυτό το όνομα.\nΘέλετε να αντικατασταθεί;"
-
-#: ui/app/strings.src#STR_HTMLATTR_TEXT.STRING.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Κείμενο"
-
-#: ui/app/strings.src#STR_HTMLATTR_LINK.STRING.TEXT
-#, fuzzy
-msgid  "Hyperlink"
-msgstr "Υπερσύνδεση"
-
-#: ui/app/strings.src#STR_HTMLATTR_VLINK.STRING.TEXT
-#, fuzzy
-msgid  "Visited link"
-msgstr "Σύνδεση που επισκέφθηκε"
-
-#: ui/app/strings.src#STR_HTMLATTR_ALINK.STRING.TEXT
-#, fuzzy
-msgid  "Active link"
-msgstr "Ενεργός σύνδεσμος"
-
-#: ui/app/strings.src#STR_HTMLEXP_CONTENTS.STRING.TEXT
-#, fuzzy
-msgid  "Table of contents"
-msgstr "Πίνακας περιεχομένων"
-
-#: ui/app/strings.src#STR_HTMLEXP_CLICKSTART.STRING.TEXT
-#, fuzzy
-msgid  "Click here to start"
-msgstr "Πατήστε εδώ για την εκκίνηση"
-
-#: ui/app/strings.src#STR_HTMLEXP_AUTHOR.STRING.TEXT
-#, fuzzy
-msgid  "Author"
-msgstr "Συντάκτης"
-
-#: ui/app/strings.src#STR_HTMLEXP_EMAIL.STRING.TEXT
-#, fuzzy
-msgid  "E-mail"
-msgstr "Ηλεκτρονική διεύθυνση"
-
-#: ui/app/strings.src#STR_HTMLEXP_HOMEPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Homepage"
-msgstr "Αρχική σελίδα"
-
-#: ui/app/strings.src#STR_HTMLEXP_INFO.STRING.TEXT
-#, fuzzy
-msgid  "Further information"
-msgstr "Επιπλέον πληροφορίες"
-
-#: ui/app/strings.src#STR_HTMLEXP_DOWNLOAD.STRING.TEXT
-#, fuzzy
-msgid  "Download presentation"
-msgstr "Λήψη αρχείων προορισμού παρουσίασης"
+msgstr "Δεν ήταν δυνατόν να καταργηθεί η ομαδοποίηση όλων των αντικειμένων σχεδίασης."
 
 #: ui/app/strings.src#STR_HTMLEXP_NOFRAMES.STRING.TEXT
-#, fuzzy
 msgid  "Unfortunately your browser does not support floating frames."
-msgstr "Δυστηχώς, το πρόγραμμα ανάγνωσης ιστοσελίδων σας δεν υποστηρίζει πλαίσια"
-
-#: ui/app/strings.src#STR_HTMLEXP_FIRSTPAGE.STRING.TEXT
-#, fuzzy
-msgid  "First page"
-msgstr "Πρώτη σελίδα"
-
-#: ui/app/strings.src#STR_HTMLEXP_LASTPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Last page"
-msgstr "Τελευταία σελίδα"
-
-#: ui/app/strings.src#STR_HTMLEXP_SETGRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "Γραφικά"
-
-#: ui/app/strings.src#STR_HTMLEXP_OUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "With contents"
-msgstr "Με περιεχόμενο"
-
-#: ui/app/strings.src#STR_HTMLEXP_NOOUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "Without contents"
-msgstr "Δίχως περιεχόμενο"
-
-#: ui/app/strings.src#STR_WEBVIEW_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "To given page"
-msgstr "Προς την επιλεγμένη σελίδα"
-
-#: ui/app/strings.src#STR_UNDO_VECTORIZE.STRING.TEXT
-#, fuzzy
-msgid  "Convert bitmap to polygon"
-msgstr "Μετατροπή bitmap σε πολύγωνο"
-
-#: ui/app/strings.src#STR_PRES_SOFTEND.STRING.TEXT
-#, fuzzy
-msgid  "Click to exit presentation..."
-msgstr "Παρακαλώ κάνετε κλικ για το τέλος την παρουσίασης..."
-
-#: ui/app/strings.src#STR_PRES_PAUSE.STRING.TEXT
-#, fuzzy
-msgid  "Pause..."
-msgstr "Προσωρινή διακοπή..."
-
-#: ui/app/strings.src#STR_WIZARD_ORIGINAL.STRING.TEXT
-#, fuzzy
-msgid  "<Original>"
-msgstr "<Αρχικό>"
-
-#: ui/app/strings.src#STR_ISLOADING.STRING.TEXT
-#, fuzzy
-msgid  "Loading..."
-msgstr "Φορτώνεται..."
-
-#: ui/app/strings.src#STR_DRAW_GRAF_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Graphics Object Bar"
-msgstr "Γραμμή αντικειμένων γραφικών"
+msgstr "Δυστυχώς, το πρόγραμμα ανάγνωσης ιστοσελίδων σας δεν υποστηρίζει πλαίσια."
 
 #: ui/app/strings.src#STR_UNDO_APPLY_3D_FAVOURITE.STRING.TEXT
-#, fuzzy
 msgid  "Apply 3D favorite"
-msgstr "Αντιστοίχιση αγαπημένου 3Δ"
+msgstr "Αντιστοίχιση αγαπημένου 3D"
 
 #: ui/app/strings.src#STR_UNDO_GRAFFILTER.STRING.TEXT
 #, fuzzy
@@ -3362,149 +781,28 @@ msgid  "Graphics filter"
 msgstr "Φίλτρο γραφικών"
 
 #: ui/app/strings.src#STR_WARNING_NOSOUNDFILE.STRING.TEXT
-#, fuzzy
 msgid  "The file %\nis not a valid sound file !"
-msgstr "Το αρχείο %\nδεν είναι έγκυρο αρχείο ήχου!"
-
-#: ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.STRING.TEXT
-#, fuzzy
-msgid  "Convert to metafile"
-msgstr "Μετατροπή σε Metafile"
-
-#: ui/app/strings.src#STR_UNDO_CONVERT_TO_BITMAP.STRING.TEXT
-#, fuzzy
-msgid  "Convert to bitmap"
-msgstr "Μετατροπή σε bitmap"
-
-#: ui/app/strings.src#STR_HTMLEXP_ERROR_CREATE_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Cannot create the file $(URL1)."
-msgstr "Δεν είναι δυνατόν να δημιουργηθεί το αρχείο $(URL1)."
-
-#: ui/app/strings.src#STR_HTMLEXP_ERROR_OPEN_FILE.STRING.TEXT
-#, fuzzy
-msgid  "Could not open the file $(URL1)."
-msgstr "Δεν ήταν δυνατόν να ανοιχθεί το αρχείο $(URL1)."
-
-#: ui/app/strings.src#STR_HTMLEXP_ERROR_COPY_FILE.STRING.TEXT
-#, fuzzy
-msgid  "The file $(URL1) could not be copied to $(URL2)"
-msgstr "Δεν ήταν δυνατόν να γίνει αντιγραφή του αρχείου $(URL1) προς $(URL2)"
-
-#: ui/app/strings.src#STR_PAGE_BACKGROUND_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Page Settings"
-msgstr "Ρυθμίσεις σελίδας"
-
-#: ui/app/strings.src#STR_PAGE_BACKGROUND_TXT.STRING.TEXT
-#, fuzzy
-msgid  "Background settings for all pages?"
-msgstr "Ρυθμίσεις φόντου για όλες τις σελίδες;"
-
-#: ui/app/strings.src#STR_TITLE_RENAMESLIDE.STRING.TEXT
-#, fuzzy
-msgid  "Rename Slide"
-msgstr "Μετονομασία διαφάνειας"
+msgstr "Το αρχείο %\nδεν είναι έγκυρο αρχείο ήχου !"
 
 #: ui/app/strings.src#STR_TITLE_SAVE_AS_PICTURE.STRING.TEXT
 #, fuzzy
 msgid  "Save as Picture"
 msgstr "Αποθηκευση ως εικόνα"
 
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Title Area for AutoLayouts"
-msgstr "Περιοχή τίτλου για αυτόματες διατάξεις"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_OUTLINE.STRING.TEXT
-#, fuzzy
-msgid  "Object Area for AutoLayouts"
-msgstr "Περιοχή αντικειμένου για αυτόματες διατάξεις"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_FOOTER.STRING.TEXT
-#, fuzzy
-msgid  "Footer Area"
-msgstr "Περιοχή υποσέλιδου"
-
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_HEADER.STRING.TEXT
 #, fuzzy
 msgid  "Header Area"
 msgstr "Περιοχή κεφαλίδας"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_DATETIME.STRING.TEXT
-#, fuzzy
-msgid  "Date Area"
-msgstr "Περιοχή ημερομηνίας"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_SLIDE.STRING.TEXT
-#, fuzzy
-msgid  "Slide Number Area"
-msgstr "Περιοχή αριθμού διαφάνειας"
-
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_NUMBER.STRING.TEXT
-#, fuzzy
-msgid  "Page Number Area"
-msgstr "Περιοχή αριθμού σελίδας"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_HEADER.STRING.TEXT
-#, fuzzy
-msgid  "<header>"
-msgstr "<κεφαλίδα>"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_FOOTER.STRING.TEXT
-#, fuzzy
-msgid  "<footer>"
-msgstr "<υποσέλιδο>"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_DATETIME.STRING.TEXT
-#, fuzzy
-msgid  "<date/time>"
-msgstr "<ημερομηνία/ώρα>"
-
-#: ui/app/strings.src#STR_FIELD_PLACEHOLDER_NUMBER.STRING.TEXT
-#, fuzzy
-msgid  "<number>"
-msgstr "<αριθμός>"
 
 #: ui/app/strings.src#STR_FIELD_PLACEHOLDER_COUNT.STRING.TEXT
 #, fuzzy
 msgid  "<count>"
 msgstr "<καταμέτρηση>"
 
-#: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_NOTES.STRING.TEXT
-#, fuzzy
-msgid  "Notes Area"
-msgstr "Περιοχή σημειώσεων"
-
 #: ui/app/strings.src#STR_UNDO_HANGULHANJACONVERSION.STRING.TEXT
 #, fuzzy
 msgid  "Hangul/Hanja Conversion"
 msgstr "Μετατροπή Hangul/Hanja"
-
-#: ui/app/strings.src#STR_LEFT_PANE_IMPRESS_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Slides"
-msgstr "Διαφάνειες"
-
-#: ui/app/strings.src#STR_LEFT_PANE_DRAW_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Pages"
-msgstr "Σελίδες"
-
-#: ui/app/strings.src#STR_RIGHT_PANE_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Tasks"
-msgstr "Εργασίες"
-
-#: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Master Pages"
-msgstr "Κύριες σελίδες"
-
-#: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "View"
-msgstr "Προβολή"
 
 #: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_LOCK.STRING.TEXT
 #, fuzzy
@@ -3515,51 +813,6 @@ msgstr "Α~γκύρωση πίνακα εργασίας"
 #, fuzzy
 msgid  "~Undock Task Pane"
 msgstr "Απελευ~θέρωση πίνακα εργασίας"
-
-#: ui/app/strings.src#STR_TASKPANEL_CURRENT_MASTER_PAGES_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Used in This Presentation"
-msgstr "Χρησιμοποιείται σε αυτή την παρουσίαση"
-
-#: ui/app/strings.src#STR_TASKPANEL_RECENT_MASTER_PAGES_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Recently Used"
-msgstr "Πρόσφατα"
-
-#: ui/app/strings.src#STR_TASKPANEL_ALL_MASTER_PAGES_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Available for Use"
-msgstr "Διαθέσιμες για χρήση"
-
-#: ui/app/strings.src#STR_TASKPANEL_NOT_AVAILABLE_SUBSTITUTION.STRING.TEXT
-#, fuzzy
-msgid  "Preview not available"
-msgstr "Η προεπισκόπηση δεν είναι διαθέσιμη"
-
-#: ui/app/strings.src#STR_TASKPANEL_PREPARING_PREVIEW_SUBSTITUTION.STRING.TEXT
-#, fuzzy
-msgid  "Preparing preview"
-msgstr "Προετοιμασία προεπισκόπησης"
-
-#: ui/app/strings.src#STR_TASKPANEL_LAYOUT_MENU_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Layouts"
-msgstr "Διατάξεις"
-
-#: ui/app/strings.src#STR_GRAPHICS_STYLE_FAMILY.STRING.TEXT
-#, fuzzy
-msgid  "Graphics Styles"
-msgstr "Στυλ γραφικών"
-
-#: ui/app/strings.src#STR_CELL_STYLE_FAMILY.STRING.TEXT
-#, fuzzy
-msgid  "Cell Styles"
-msgstr "Πρότυπα κελιού"
-
-#: ui/app/strings.src#DLG_TABLEDESIGNPANE.STRING.TEXT
-#, fuzzy
-msgid  "Table Designs"
-msgstr "Σχέδια πινάκων"
 
 #: ui/app/strings.src#STR_CUSTOMANIMATIONPANE.STRING.TEXT
 #, fuzzy
@@ -3576,39 +829,18 @@ msgstr "Εναλλαγή διάφάνειας"
 msgid  "Named shapes"
 msgstr "Σχήματα με όνομα"
 
-#: ui/app/strings.src#STR_NAVIGATOR_SHOW_ALL_SHAPES.STRING.TEXT
-#, fuzzy
-msgid  "All shapes"
-msgstr "Όλα τα σχήματα"
-
-#: ui/app/strings.src#STR_NAVIGATOR_SHAPE_BASE_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Shape %1"
-msgstr "Σχήμα %1"
-
 #: ui/app/strings.src#STR_SET_BACKGROUND_PICTURE.STRING.TEXT
-#, fuzzy
 msgid  "Set Background Picture for Slide ..."
-msgstr "Ορισμός εικόνας φόντου για διαφάνεια..."
+msgstr "Ορισμός Εικόνας Φόντου για Διαφάνεια ..."
 
 #: ui/app/strings.src#STR_ACC_DIALOG_DESC.STRING.TEXT
 msgid  "Select a template from which to import page designs."
-msgstr ""
-
-#: ui/app/strings.src#RID_ANNOTATIONS_START.STRING.TEXT
-#, fuzzy
-msgid  "Comments"
-msgstr "Σχόλια"
+msgstr "Επιλογή ενός προτύπου από το οποίο θα εισαχθούν τα σχέδια σελίδας."
 
 #: ui/app/strings.src#STR_RESET_LAYOUT.STRING.TEXT
 #, fuzzy
 msgid  "Reset Slide Layout"
 msgstr "Επαναφορά διάταξη διαφάνειας"
-
-#: ui/app/strings.src#STR_INSERT_TABLE.STRING.TEXT
-#, fuzzy
-msgid  "Insert Table"
-msgstr "Εισαγωγή πίνακα"
 
 #: ui/app/strings.src#STR_INSERT_CHART.STRING.TEXT
 #, fuzzy
@@ -3625,63 +857,17 @@ msgstr "Εισαγωγή εικόνας"
 msgid  "Insert Movie"
 msgstr "Εισαγωγή ταινίας"
 
-#: ui/app/res_bmp.src#SFXSTYLEFAMILIESRES1.#DEFINE.TEXT
-#, fuzzy
-msgid  "Graphics Styles"
-msgstr "Στυλ γραφικών"
-
-#: ui/app/res_bmp.src#SFXSTYLEFAMILIESRES2.#DEFINE.TEXT
-#, fuzzy
-msgid  "Presentation Styles"
-msgstr "Πρότυπα αντικειμένων παρουσίασης"
-
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_USED.STRING.TEXT
 msgid  "Applied Styles"
-msgstr ""
+msgstr "Εφαρμοζόμενα Στυλ"
 
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_USERDEF.STRING.TEXT
 msgid  "Custom Styles"
-msgstr ""
+msgstr "Προσαρμοσμένα Στυλ"
 
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.STRING.TEXT
-#, fuzzy
 msgid  "All Styles"
-msgstr "Πρότυπα κελιού"
-
-#: ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Distribution..."
-msgstr "~Κατανομή..."
-
-#: ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Drawing View"
-msgstr "Προβολή σχε~δίασης"
-
-#: ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Outline View"
-msgstr "Προβολή διά~ρθρωσης"
-
-#: ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Slide Sorter"
-msgstr "Τα~ξινόμηση διαφανειών"
-
-#: ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MENUITEM.TEXT
-#, fuzzy
-msgid  "Slide Sho~w"
-msgstr "~Παρουσίαση οθόνης"
-
-#: ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Insert Snap Point/Line..."
-msgstr "Εισαγωγή σημείου/γρ~αμμής συγκράτησης..."
-
-#: ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Edit..."
-msgstr "~Επεξεργασία..."
+msgstr "Όλα τα Στυλ"
 
 #: ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MENUITEM.TEXT
 #, fuzzy
@@ -3693,190 +879,24 @@ msgstr "~Διαγραφή"
 msgid  "Slide ~Layout"
 msgstr "Διάταξη δια~φανειών"
 
-#: ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Page Setup..."
-msgstr "Δ~ιαμόρφωση σελίδας..."
-
-#: ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New Slide"
-msgstr "~Νέα διαφάνεια"
-
-#: ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New Master"
-msgstr "~Δημιουργία νέου κύριου εγγράφου"
-
-#: ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New Page"
-msgstr "~Νέα σελίδα"
-
 #: ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MENUITEM.TEXT
-#, fuzzy
 msgid  "Set Background Picture for Slide ..."
-msgstr "Ορισμός εικόνας φόντου για διαφάνεια..."
-
-#: ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MENUITEM.TEXT
-#, fuzzy
-msgid  "Display Background of Master"
-msgstr "Εμφάνιση φόντου του κύριου"
-
-#: ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MENUITEM.TEXT
-#, fuzzy
-msgid  "Display Objects from Master"
-msgstr "Εμφάνιση αντικειμένων από κύριο έγγραφο"
-
-#: ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ITEMLIST.TEXT
-#, fuzzy
-msgid  "Pag~e"
-msgstr "~Σελίδα"
-
-#: ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ITEMLIST.TEXT
-#, fuzzy
-msgid  "Slid~e"
-msgstr "Δια~φάνεια"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rename Layer..."
-msgstr "Μ~ετονομασία επιπέδου..."
-
-#: ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "D~elete Slide"
-msgstr "Δ~ιαγραφή διαφάνειας"
-
-#: ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "D~elete Master"
-msgstr "Δια~γραφή κυρίου εγγράφου"
-
-#: ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "D~elete Page"
-msgstr "Διαγρα~φή σελίδας"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rename Slide"
-msgstr "Με~τονομασία διαφάνειας"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rename Master"
-msgstr "Μετονομα~σία κυρίου εγγράφου"
-
-#: ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rename Page"
-msgstr "Μετο~νομασία σελίδας"
-
-#: ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MENUITEM.TEXT
-#, fuzzy
-msgid  "L~ine..."
-msgstr "~Γραμμή..."
-
-#: ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Area..."
-msgstr "Περιο~χή..."
-
-#: ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Text..."
-msgstr "Κεί~μενο..."
-
-#: ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Connector..."
-msgstr "Γραμμή σύν~δεσης..."
-
-#: ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MENUITEM.TEXT
-#, fuzzy
-msgid  "Reset ~Routing"
-msgstr "Επαναφορά διαδ~ρομής"
-
-#: ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "Dimen~sions..."
-msgstr "Δια~στάσεις..."
-
-#: ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MENUITEM.TEXT
-#, fuzzy
-msgid  "Position and Si~ze..."
-msgstr "Θέση και μέγεθ~ος..."
+msgstr "Ορισμός Εικόνας Φόντου για Διαφάνεια ..."
 
 #: ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MENUITEM.TEXT
 #, fuzzy
 msgid  "Edit ~Points"
 msgstr "Ε~πεξεργασία σημείων"
 
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MENUITEM.TEXT
-#, fuzzy
-msgid  "Arra~nge"
-msgstr "Τα~κτοποίηση"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Bring to Front"
-msgstr "Μεταφορά σε π~ρώτο πλάνο"
-
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MENUITEM.TEXT
 #, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Μεταφορά ένα επίπεδο ε~μπρός"
 
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MENUITEM.TEXT
-#, fuzzy
-msgid  "Send Back~ward"
-msgstr "Μετα~φορά ένα επίπεδο πίσω"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Send to Back"
-msgstr "Μετα~φορά πίσω"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MENUITEM.TEXT
-#, fuzzy
-msgid  "In Front of ~Object"
-msgstr "Μπροστά από α~ντικείμενο"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MENUITEM.TEXT
-#, fuzzy
-msgid  "Be~hind Object"
-msgstr "Πί~σω από το αντικείμενο"
-
-#: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Reverse"
-msgstr "Αντα~λλαγή"
-
 #: ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MENUITEM.TEXT
 #, fuzzy
 msgid  "C~haracter..."
 msgstr "~Χαρακτήρας..."
-
-#: ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "P~aragraph..."
-msgstr "~Παράγραφος..."
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Font"
-msgstr "Γραμ~ματοσειρά"
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Size"
-msgstr "Μέ~γεθος"
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "St~yle"
-msgstr "~Πρότυπο"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MENUITEM.TEXT
 #, fuzzy
@@ -3908,11 +928,6 @@ msgstr "Διακριτή διαγραφή"
 msgid  "Shadow"
 msgstr "Σκιά"
 
-#: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Contour"
-msgstr "~Περίγραμμα"
-
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Line Spacing"
@@ -3928,20 +943,10 @@ msgstr "Απλό"
 msgid  "1.5 Lines"
 msgstr "1.5 γραμμή"
 
-#: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Double"
-msgstr "Δι~πλό"
-
 #: ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MENUITEM.TEXT
 #, fuzzy
 msgid  "S~pecial Character..."
 msgstr "Ειδικοί ~χαρακτήρες..."
-
-#: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "A~lignment"
-msgstr "Στοί~χιση"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MENUITEM.TEXT
 #, fuzzy
@@ -3963,11 +968,6 @@ msgstr "Στο ~κέντρο"
 msgid  "Justified"
 msgstr "Πλήρης στοίχιση"
 
-#: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MENUITEM.TEXT
-#, fuzzy
-msgid  "Al~ignment"
-msgstr "Σ~τοίχιση"
-
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Top"
@@ -3988,125 +988,24 @@ msgstr "~Κάτω"
 msgid  "Close ~Object"
 msgstr "Κλείσιμο α~ντικειμένου"
 
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Move Points"
-msgstr "Μετακί~νηση σημείων"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Insert ~Points"
-msgstr "Εισαγωγή σημ~είων"
-
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Delete Points"
 msgstr "~Διαγραφή σημείων"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Split Curve"
-msgstr "Δι~αίρεση καμπύλης"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Con~vert to Curve"
-msgstr "Μετατροπή ~σε καμπύλη"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Corner"
-msgstr "~Γωνία"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MENUITEM.TEXT
-#, fuzzy
-msgid  "Smoot~h"
-msgstr "Ομα~λά"
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MENUITEM.TEXT
-#, fuzzy
-msgid  "S~ymmetric"
-msgstr "~Συμμετρικά"
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Reduce Points"
 msgstr "~Μείωση σημείων"
 
-#: ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Group"
-msgstr "Ομα~δοποίηση"
-
-#: ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Ungroup"
-msgstr "Κ~ατάργηση ομαδοποίησης"
-
-#: ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Comb~ine"
-msgstr "~Συνδυασμός"
-
-#: ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Split"
-msgstr "~Διαίρεση"
-
-#: ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Enter Group"
-msgstr "~Είσοδος στην ομάδα"
-
-#: ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "E~xit Group"
-msgstr "Έ~ξοδος από ομαδοποίηση"
-
-#: ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "Name..."
-msgstr "Όνομα..."
-
-#: ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MENUITEM.TEXT
-#, fuzzy
-msgid  "Description..."
-msgstr "Περιγραφή..."
-
-#: ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rehearse Timings"
-msgstr "Δοκιμαστικοί συγ~χρονισμοί"
-
 #: ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MENUITEM.TEXT
 #, fuzzy
 msgid  "Custom Animation..."
 msgstr "Προσαρμοσμένη κινούμενη εικόνα..."
 
-#: ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MENUITEM.TEXT
-#, fuzzy
-msgid  "Int~eraction..."
-msgstr "Αλληλεπίδρα~ση..."
-
-#: ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Presentation ~Object..."
-msgstr "Αντικείμενο ~παρουσίασης..."
-
-#: ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Default"
-msgstr "~Προεπιλογή"
-
 #: ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MENUITEM.TEXT
-#, fuzzy
 msgid  "F~ontwork"
-msgstr "Font~Work"
-
-#: ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Original Size"
-msgstr "Α~ρχικό μέγεθος"
+msgstr "F~ontwork"
 
 #: ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MENUITEM.TEXT
 #, fuzzy
@@ -4118,75 +1017,10 @@ msgstr "Αποθήκευση ως εικόνα..."
 msgid  "Crop Picture..."
 msgstr "Περικοπή εικόνας..."
 
-#: ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MENUITEM.TEXT
-#, fuzzy
-msgid  "Na~vigator"
-msgstr "~Περιήγηση"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Insert ~Point"
-msgstr "Εισαγωγή ~σημείου"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_PERCENT.SID_GLUE_PERCENT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Adapt Position to Object"
-msgstr "Προσαρμ~ογή θέσης ως προς το αντικείμενο"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_LEFT.SID_GLUE_HORZALIGN_LEFT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fixed ~Horizontal Left"
-msgstr "Ορι~ζόντια αριστερά - σταθερά"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_CENTER.SID_GLUE_HORZALIGN_CENTER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fixed Horizontal ~Center"
-msgstr "Οριζόντια στο κέντρο- στα~θερά"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_RIGHT.SID_GLUE_HORZALIGN_RIGHT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fixed Hori~zontal Right"
-msgstr "Ορι~ζόντια δεξιά - σταθερά"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_TOP.SID_GLUE_VERTALIGN_TOP.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fixed ~Vertical Top"
-msgstr "Πάνω κατακόρυ~φα - σταθερά"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_CENTER.SID_GLUE_VERTALIGN_CENTER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fixed V~ertical Center"
-msgstr "Κατακόρυφα κ~εντραρισμένα - σταθερά"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_BOTTOM.SID_GLUE_VERTALIGN_BOTTOM.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fixed Ver~tical Bottom"
-msgstr "Κάτω ~κατακόρυφα - σταθερά"
-
-#: ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Visible Grid"
-msgstr "Ο~ρατό πλέγμα"
-
 #: ui/app/menuids_tmpl.src#MN_GRID_USE.SID_GRID_USE.MENUITEM.TEXT
 #, fuzzy
 msgid  "Snap to Grid"
 msgstr "Συγκράτηση στο πλέγμα"
-
-#: ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Grid to ~Front"
-msgstr "Πλέγμα σε π~ρώτο πλάνο"
-
-#: ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ITEMLIST.TEXT
-#, fuzzy
-msgid  "~Grid"
-msgstr "~Πλέγμα"
-
-#: ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Snap Lines Visible"
-msgstr "Γραμμές ~συγκράτησης - ορατές"
 
 #: ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MENUITEM.TEXT
 #, fuzzy
@@ -4198,45 +1032,15 @@ msgstr "Συγκράτηση σε γραμμές συγκράτησης"
 msgid  "Snap Lines to Front"
 msgstr "Γραμμές συγκράτησης σε πρώτο πλάνο"
 
-#: ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ITEMLIST.TEXT
-#, fuzzy
-msgid  "~Snap Lines"
-msgstr "~Γραμμές συγκράτησης"
-
-#: ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Propert~ies..."
-msgstr "Ιδιότητ~ες..."
-
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_THRESHOLD.SID_CONVERT_TO_1BIT_THRESHOLD.MENUITEM.TEXT
-#, fuzzy
-msgid  "1Bit ~Threshold"
-msgstr "~Οριακή τιμή 1-Bit"
-
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MENUITEM.TEXT
-#, fuzzy
-msgid  "1 Bit ~Dithering"
-msgstr "Απόδοση ~χρωμάτων 1-Bit"
-
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MENUITEM.TEXT
 #, fuzzy
 msgid  "4 Bit G~rayscales"
 msgstr "Παλέτα διαβάθμισης του γκ~ρι 4-Bit"
 
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MENUITEM.TEXT
-#, fuzzy
-msgid  "4 Bit ~Color Palette"
-msgstr "Παλέτα ~χρωμάτων 4 bit"
-
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MENUITEM.TEXT
 #, fuzzy
 msgid  "8 Bit Gr~ayscales"
 msgstr "Παλέτα δι~αβάθμισης του γκρι 8-Bit"
-
-#: ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MENUITEM.TEXT
-#, fuzzy
-msgid  "8 Bit C~olor Palette"
-msgstr "~Παλέτα χρωμάτων 8 bit"
 
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MENUITEM.TEXT
 #, fuzzy
@@ -4248,60 +1052,10 @@ msgstr "Φ~υσικά χρώματα 24-Bit"
 msgid  "~Color Resolution"
 msgstr "Α~νάλυση χρωμάτων"
 
-#: ui/app/menuids_tmpl.src#MNSUB_CONVERT.SID_CONVERT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Con~vert"
-msgstr "~Μετατροπή"
-
-#: ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Flip"
-msgstr "Αναστρο~φή"
-
-#: ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rotate"
-msgstr "~Περιστροφή"
-
-#: ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MENUITEM.TEXT
-#, fuzzy
-msgid  "C~onnect"
-msgstr "Σύ~νδεση"
-
-#: ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Break"
-msgstr "Κατάρ~γηση"
-
 #: ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MENUITEM.TEXT
 #, fuzzy
 msgid  "Edit Style..."
 msgstr "Επεξεργασία προτύπου..."
-
-#: ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MENUITEM.TEXT
-#, fuzzy
-msgid  "H~yperlink..."
-msgstr "~Υπερσύνδεση..."
-
-#: ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Poi~nts"
-msgstr "Ση~μεία"
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Glue Points"
-msgstr "~Σημεία κόλλησης"
-
-#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "La~yer"
-msgstr "Επίπε~δο"
-
-#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Insert"
-msgstr "~Εισαγωγή"
 
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MENUITEM.TEXT
 #, fuzzy
@@ -4313,35 +1067,9 @@ msgstr "Τ~ροποποίηση"
 msgid  "Delete"
 msgstr "Διαγραφή"
 
-#: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rename"
-msgstr "~Μετονομασία"
-
-#: ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MENUITEM.TEXT
-#, fuzzy
-msgid  "To ~Curve"
-msgstr "Σε ~καμπύλη"
-
-#: ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MENUITEM.TEXT
-#, fuzzy
-msgid  "To ~Polygon"
-msgstr "Σε ~πολύγωνο"
-
-#: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MENUITEM.TEXT
-#, fuzzy
-msgid  "To C~ontour"
-msgstr "Σε πε~ρίγραμμα"
-
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MENUITEM.TEXT
-#, fuzzy
 msgid  "To 3~D"
-msgstr "Σε ~3Δ"
-
-#: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MENUITEM.TEXT
-#, fuzzy
-msgid  "To ~Bitmap"
-msgstr "Σε ~Bitmap"
+msgstr "Σε ~3D"
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MENUITEM.TEXT
 #, fuzzy
@@ -4349,9 +1077,8 @@ msgid  "To ~Metafile"
 msgstr "Σε ~MetaFile"
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MENUITEM.TEXT
-#, fuzzy
 msgid  "To 3D ~Rotation Object"
-msgstr "Σε περιστρεφόμενο αντικείμενο 3~Δ"
+msgstr "Σε περιστρεφόμενο αντικείμενο 3D"
 
 #: ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MENUITEM.TEXT
 #, fuzzy
@@ -4364,109 +1091,41 @@ msgid  "~Horizontally"
 msgstr "Ορι~ζόντια"
 
 #: ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MENUITEM.TEXT
-#, fuzzy
 msgid  "~3D Effects"
-msgstr "Εφέ ~3Δ"
+msgstr "Εφέ ~3D"
 
 #: ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MENUITEM.TEXT
-#, fuzzy
 msgid  "~Slide Design"
-msgstr "~Πρότυπο διαφάνειας..."
+msgstr "~Σχεδίαση Διαφάνειας"
 
 #: ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MENUITEM.TEXT
 #, fuzzy
 msgid  "Slide ~Transition"
 msgstr "Αλλαγή διαφάνεια~ς"
 
-#: ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Show Slide"
-msgstr "Προ~βολή διαφάνειας"
-
-#: ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Hide Slide"
-msgstr "Απόκρυψη ~διαφάνειας"
-
 #: ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Group"
 msgstr "Ομα~δοποίηση"
-
-#: ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Ungroup"
-msgstr "Κ~ατάργηση ομαδοποίησης"
-
-#: ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Edit Group"
-msgstr "Ε~πεξεργασία ομάδας"
-
-#: ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "E~xit group"
-msgstr "Έ~ξοδος από την ομαδοποίηση"
 
 #: ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Toolbars"
 msgstr "Γραμμές ε~ργαλείων"
 
-#: ui/app/toolbox.src#RID_DRAW_VIEWER_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Function Bar (viewing mode)"
-msgstr "Γραμμή συναρτήσεων (λειτουργία προβολής)"
-
 #: ui/app/toolbox.src#RID_DRAW_MEDIA_TOOLBOX.STRING.TEXT
 #, fuzzy
 msgid  "Media Playback"
 msgstr "Εφαρμογή αναπαραγωγής πολυμέσων"
-
-#: ui/app/toolbox.src#RID_DRAW_TABLE_TOOLBOX.STRING.TEXT
-#, fuzzy
-msgid  "Table"
-msgstr "Πίνακας"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.SID_FORMAT_TABLE_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Table..."
-msgstr "~Πίνακας..."
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Cell"
-msgstr "Κε~λί"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Merge"
-msgstr "Συ~γχώνευση"
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Split..."
-msgstr "~Διαίρεση..."
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Top"
-msgstr "~Πάνω"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MENUITEM.TEXT
 #, fuzzy
 msgid  "C~enter"
 msgstr "~Κέντρο"
 
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Bottom"
-msgstr "~Κάτω"
-
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
-#, fuzzy
 msgid  "~Row"
-msgstr "Ε~ισαγωγή..."
+msgstr "Γραμ~μή"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MENUITEM.TEXT
 #, fuzzy
@@ -4488,33 +1147,12 @@ msgstr "Ε~ισαγωγή..."
 msgid  "~Delete"
 msgstr "~Διαγραφή"
 
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
-#, fuzzy
-msgid  "Colu~mn"
-msgstr "Στή~λη"
-
-#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_INSERTLAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Insert Layer..."
-msgstr "~Eισαγωγή επιπέδου..."
-
-#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_MODIFYLAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Modify La~yer..."
-msgstr "Τροποποίηση ε~πιπέδου..."
-
-#: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_DELETE_LAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Delete ~Layer..."
-msgstr "Διαγραφή επι~πέδου..."
-
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Apply to All Slides"
 msgstr "Ε~φαρμογή σε όλες τις διαφάνειες"
 
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MENUITEM.TEXT
-#, fuzzy
 msgid  "Apply to ~Selected Slides"
 msgstr "Ε~φαρμογή στις επιλεγμένες διαφάνειες"
 
@@ -4528,210 +1166,33 @@ msgstr "Προβολή με~γάλης προεπισκόπησης"
 msgid  "Show S~mall Preview"
 msgstr "Προβολή ~μικρής προεπισκόπησης"
 
-#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Edit Master..."
-msgstr "Επε~ξεργασία κύριου εγγράφου..."
-
 #: ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_INSERTPAGE_LAYOUT_MENU.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Insert Slide"
 msgstr "Ε~ισαγωγή διαφάνειας"
-
-#: ui/app/sdstring.src#STR_SAR_NOT_FOUND.STRING.TEXT
-#, fuzzy
-msgid  "Search key not found."
-msgstr "Δεν βρέθηκε ο όρος αναζήτησης."
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr "Το %PRODUCTNAME Impress ολοκλήρωσε την αναζήτηση ως το τέλος της παρουσίασης. Θέλετε να συνεχιστεί η αναζήτηση από την αρχή;"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr "Το %PRODUCTNAME Impress ολοκλήρωσε την αναζήτηση ως την αρχή της παρουσίασης. Θέλετε να συνεχιστεί η αναζήτηση από το τέλος;"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr "Το %PRODUCTNAME Draw ολοκλήρωσε την αναζήτηση ως το τέλος του εγγράφου. Θέλετε να συνεχιστεί η αναζήτηση από την αρχή του εγγράφου;"
-
-#: ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr "Το %PRODUCTNAME Draw ολοκλήρωσε την αναζήτηση ως την αρχή του εγγράφου. Θέλετε να συνεχιστεί η αναζήτηση από το τέλος;"
-
-#: ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New"
-msgstr "~Δημιουργία"
-
-#: ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Export..."
-msgstr "Ε~ξαγωγή..."
-
-#: ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MENUITEM.TEXT
-#, fuzzy
-msgid  "Export as PDF..."
-msgstr "Εξαγωγή ως PDF..."
-
-#: ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MENUITEM.TEXT
-#, fuzzy
-msgid  "Sen~d"
-msgstr "Α~ποστολή"
-
-#: ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Page..."
-msgstr "~Σελίδα..."
-
-#: ui/app/menuids2_tmpl.src#20.#DEFINE.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Επεξεργασία"
 
 #: ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MENUITEM.TEXT
 #, fuzzy
 msgid  "Paste ~Special..."
 msgstr "Ειδική επικόλλ~ηση..."
 
-#: ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MENUITEM.TEXT
-#, fuzzy
-msgid  "Duplicat~e..."
-msgstr "Διπ~λότυπο..."
-
-#: ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MENUITEM.TEXT
-#, fuzzy
-msgid  "Cross-fading..."
-msgstr "Βαθμιαίος αποχρωματισμός..."
-
-#: ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MENUITEM.TEXT
-#, fuzzy
-msgid  "F~ields..."
-msgstr "Πε~δία..."
-
-#: ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Delete ~Layer..."
-msgstr "Διαγραφή επι~πέδου..."
-
-#: ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MENUITEM.TEXT
-#, fuzzy
-msgid  "Lin~ks..."
-msgstr "Συ~νδέσεις..."
-
-#: ui/app/menuids2_tmpl.src#23.#DEFINE.TEXT
-#, fuzzy
-msgid  "~View"
-msgstr "Προ~βολή"
-
-#: ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MENUITEM.TEXT
-#, fuzzy
-msgid  "Main ~Toolbar"
-msgstr "Κύρια ~γραμμή εργαλειών"
-
-#: ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MENUITEM.TEXT
-#, fuzzy
-msgid  "Optio~n Bar"
-msgstr "Γραμμή ε~πιλογών"
-
-#: ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Presentation"
-msgstr "Παρο~υσίαση"
-
-#: ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MENUITEM.TEXT
-#, fuzzy
-msgid  "Customi~ze..."
-msgstr "Προ~σαρμογή..."
-
-#: ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Rulers"
-msgstr "~Χάρακες"
-
-#: ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Notes View"
-msgstr "Προβολή ση~μειώσεων"
-
 #: ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Handout View"
 msgstr "Προβολή σ~ημειωμάτων"
-
-#: ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Preview"
-msgstr "~Προεπισκόπηση"
-
-#: ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "S~lide"
-msgstr "Δια~φάνεια"
-
-#: ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Slide Master"
-msgstr "Κύρια δια~φάνεια"
-
-#: ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "~Τίτλος"
-
-#: ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Notes"
-msgstr "~Σημειώσεις"
 
 #: ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MENUITEM.TEXT
 #, fuzzy
 msgid  "~Handout"
 msgstr "Σ~ημείωμα"
 
-#: ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MENUITEM.TEXT
-#, fuzzy
-msgid  "La~yer"
-msgstr "Επίπε~δο"
-
 #: ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MENUITEM.TEXT
-#, fuzzy
 msgid  "Wor~kspace"
-msgstr "Χώρος  εργ~ασίας"
-
-#: ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Master"
-msgstr "~Κύρια"
-
-#: ui/app/menuids2_tmpl.src#21.#DEFINE.TEXT
-#, fuzzy
-msgid  "~Insert"
-msgstr "~Εισαγωγή"
+msgstr "Χώρος εργ~ασίας"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MENUITEM.TEXT
-#, fuzzy
 msgid  "Slid~e..."
-msgstr "Δια~φάνεια"
-
-#: ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Slid~e"
-msgstr "Δια~φάνεια"
-
-#: ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "D~uplicate Slide"
-msgstr "~Διπλότυπο διαφάνειας"
-
-#: ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "E~xpand Slide"
-msgstr "Α~νάπτυξη διαφάνειας"
+msgstr "Δια~φάνεια..."
 
 #: ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MENUITEM.TEXT
 #, fuzzy
@@ -4743,55 +1204,14 @@ msgstr "Διαφάνεια σύνο~ψης"
 msgid  "~Layer..."
 msgstr "Επί~πεδο..."
 
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Date (fixed)"
-msgstr "~Ημερομηνία (σταθερά)"
-
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MENUITEM.TEXT
-#, fuzzy
-msgid  "Dat~e (variable)"
-msgstr "Ημερομηνί~α (μεταβλητή)"
-
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Time (fixed)"
-msgstr "Ώρα (στα~θερά)"
-
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MENUITEM.TEXT
-#, fuzzy
 msgid  "T~ime (variable)"
-msgstr "΄~Ωρα (μεταβλητή)"
-
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Page Number"
-msgstr "Αριθμός ~σελίδας"
+msgstr "Ώ~ρα (μεταβλητή)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MENUITEM.TEXT
 #, fuzzy
 msgid  "~File Name"
 msgstr "Ό~νομα αρχείου"
-
-#: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Author"
-msgstr "Συν~τάκτης"
-
-#: ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Select Source..."
-msgstr "Επιλογή ~προέλευσης..."
-
-#: ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Request..."
-msgstr "~Αίτηση..."
-
-#: ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Sp~readsheet"
-msgstr "Υπολογιστικό φύ~λλο"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MENUITEM.TEXT
 #, fuzzy
@@ -4812,136 +1232,6 @@ msgstr "~Πλαίσιο..."
 #, fuzzy
 msgid  "~File..."
 msgstr "~Αρχείο..."
-
-#: ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MENUITEM.TEXT
-#, fuzzy
-msgid  "Fiel~ds"
-msgstr "Πε~δία"
-
-#: ui/app/menuids2_tmpl.src#22.#DEFINE.TEXT
-#, fuzzy
-msgid  "F~ormat"
-msgstr "Μορ~φοποίηση"
-
-#: ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "Te~xt..."
-msgstr "~Κείμενο..."
-
-#: ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "Dimen~sions..."
-msgstr "Δια~στάσεις..."
-
-#: ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Connector..."
-msgstr "Γραμμή σύν~δεσης..."
-
-#: ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Modify ~Layout..."
-msgstr "Τροποποίηση διάτα~ξης..."
-
-#: ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MENUITEM.TEXT
-#, fuzzy
-msgid  "Styl~es"
-msgstr "Π~ρότυπα"
-
-#: ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#DEFINE.TEXT
-#, fuzzy
-msgid  "~Tools"
-msgstr "Ερ~γαλεία"
-
-#: ui/app/menuids2_tmpl.src#26.#DEFINE.TEXT
-#, fuzzy
-msgid  "~Slide Show"
-msgstr "~Παρουσίαση οθόνης"
-
-#: ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Check..."
-msgstr "Έ~λεγχος..."
-
-#: ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MENUITEM.TEXT
-#, fuzzy
-msgid  "~AutoSpellcheck"
-msgstr "~Αυτόματος ορθογραφικός έλεγχος"
-
-#: ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Thesaurus..."
-msgstr "~Θησαυρός λέξεων..."
-
-#: ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Hyphenation"
-msgstr "Συλλα~βισμός"
-
-#: ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~AutoCorrect..."
-msgstr "~Αυτόματη Διόρθωση..."
-
-#: ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Slide Show Settings..."
-msgstr "Ρυθμίσεις ~παρουσίασης οθόνης..."
-
-#: ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Custom Slide Show..."
-msgstr "Προσαρμοσμέ~νη παρουσίαση οθόνης..."
-
-#: ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Animation"
-msgstr "~Εφέ κίνησης"
-
-#: ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Interaction..."
-msgstr "Αλλ~ηλεπίδραση..."
-
-#: ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Spellcheck"
-msgstr "Ο~ρθογραφικός έλεγχος"
-
-#: ui/app/menuids2_tmpl.src#24.#DEFINE.TEXT
-#, fuzzy
-msgid  "~Modify"
-msgstr "Τ~ροποποίηση"
-
-#: ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Bring ~Forward"
-msgstr "Μ~εταφορά ένα επίπεδο εμπρός"
-
-#: ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MENUITEM.TEXT
-#, fuzzy
-msgid  "Send Back~ward"
-msgstr "Μεταφορά ένα επίπεδο πί~σω"
-
-#: ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MENUITEM.TEXT
-#, fuzzy
-msgid  "In Front of ~Object"
-msgstr "Μπροστά από το α~ντικείμενο"
-
-#: ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MENUITEM.TEXT
-#, fuzzy
-msgid  "Be~hind Object"
-msgstr "Πί~σω από το αντικείμενο"
-
-#: ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Reverse"
-msgstr "Αντα~λλαγή"
-
-#: ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Eyedropper"
-msgstr "~Σταγονόμετρο"
 
 #: ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MENUITEM.TEXT
 #, fuzzy
@@ -4984,686 +1274,126 @@ msgid  "Pre~view Mode"
 msgstr "Κα~τάσταση προεπισκόπησης"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.CONTROL.TEXT
+#, fuzzy
 msgid  "Custom Animation"
 msgstr "Προσαρμοσμένα εφέ κίνησης"
 
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_EFFECT.FIXEDLINE.TEXT
-msgid  "Effect"
-msgstr "Εφέ"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_ADD_EFFECT.PUSHBUTTON.TEXT
-msgid  "~Add..."
-msgstr "~Προσθήκη..."
-
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_CHANGE_EFFECT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Change..."
 msgstr "Αλ~λαγή..."
 
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_REMOVE_EFFECT.PUSHBUTTON.TEXT
-msgid  "~Remove"
-msgstr "~Αφαίρεση"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_MODIFY.FIXEDLINE.TEXT
-msgid  "Modify effect"
-msgstr "Τροποποίηση εφέ"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_START.FIXEDTEXT.TEXT
-msgid  "~Start"
-msgstr "Έναρ~ξη"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM1.STRINGLIST.ITEM
-msgid  "On click"
-msgstr "Ενέργεια με κλικ του ποντικιού"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM2.STRINGLIST.ITEM
-msgid  "With previous"
-msgstr "Με προηγούμενο"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM3.STRINGLIST.ITEM
-msgid  "After previous"
-msgstr "Μετά το προηγούμενο"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_PROPERTY.FIXEDTEXT.TEXT
-msgid  "Property"
-msgstr "Ιδιότητα"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PUSHBUTTON.TEXT
-msgid  "~..."
-msgstr "~..."
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PUSHBUTTON.QUICKHELPTEXT
-msgid  "Effect Options"
-msgstr "Επιλογές εφέ"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_SPEED.FIXEDTEXT.TEXT
-msgid  "Sp~eed"
-msgstr "Τα~χύτητα"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_CHANGE_ORDER.FIXEDTEXT.TEXT
-msgid  "Change order:"
-msgstr "Αλλαγή σειράς:"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PLAY.PUSHBUTTON.TEXT
-msgid  "~Play"
-msgstr "Ανα~παραγωγή"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_SLIDE_SHOW.PUSHBUTTON.TEXT
-msgid  "Slide Sho~w"
-msgstr "~Παρουσίαση οθόνης"
-
-#: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.CB_AUTOPREVIEW.CHECKBOX.TEXT
-msgid  "Automatic pre~view"
-msgstr "Αυτόματη προε~πισκόπηση"
-
 #: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Custom Animation"
 msgstr "Προσαρμοσμένα εφέ κίνησης"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_ENTRANCE.PAGEITEM.TEXT
-msgid  "Entrance"
-msgstr "Είσοδος"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EMPHASIS.PAGEITEM.TEXT
-msgid  "Emphasis"
-msgstr "Έμφαση"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EXIT.PAGEITEM.TEXT
-msgid  "Exit"
-msgstr "Έξοδος"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MOTIONPATH.PAGEITEM.TEXT
-msgid  "Motion Paths"
-msgstr "Διαδρομές κίνησης"
-
-#: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MISCEFFECTS.PAGEITEM.TEXT
-msgid  "Misc Effects"
-msgstr "Διάφορα εφέ"
-
-#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.FT_SPEED.FIXEDTEXT.TEXT
-msgid  "Speed"
-msgstr "Ταχύτητα"
-
-#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.CBX_PREVIEW.CHECKBOX.TEXT
-msgid  "Automatic preview"
-msgstr "Αυτόματη προεπισκόπηση"
-
-#: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.STR_USERPATH.STRING.TEXT
-msgid  "User paths"
-msgstr "Διαδρομές χρήστη"
-
-#: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.TABDIALOG.TEXT
-msgid  "Effect Options"
-msgstr "Επιλογές εφέ"
 
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_EFFECT.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Effect"
 msgstr "Εφέ"
 
-#: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_DURATION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Timing"
-msgstr "Συγχρονισμός"
-
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_TEXT.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Text Animation"
 msgstr "Κινούμενο κείμενο"
 
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_SETTINGS.FIXEDLINE.TEXT
-msgid  "Settings"
-msgstr "Ρυθμίσεις"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_START.CHECKBOX.TEXT
-msgid  "Accelerated start"
-msgstr "Επιτάχυνση"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_END.CHECKBOX.TEXT
-msgid  "Decelerated end"
-msgstr "Επιβράδυνση"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_AUTORESTART.CHECKBOX.TEXT
-msgid  "Reverse automatically"
-msgstr "Αυτόματη αναστροφή"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_ENHANCEMENTS.FIXEDLINE.TEXT
-msgid  "Enhancement"
-msgstr "Βελτίωση"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_SOUND.FIXEDTEXT.TEXT
-msgid  "Sound"
-msgstr "Ήχος"
-
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_AFTER_EFFECT.FIXEDTEXT.TEXT
 msgid  "After animation "
-msgstr "Μετά τη κίνηση"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM1.STRINGLIST.ITEM
-msgid  "Don't dim"
-msgstr "Χωρίς σκοτείνιασμα"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM2.STRINGLIST.ITEM
-msgid  "Dim with color"
-msgstr "Σκοτείνιασμα με χρώμα"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM3.STRINGLIST.ITEM
-msgid  "Hide after animation"
-msgstr "Απόκρυψη μετά από κίνηση"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM4.STRINGLIST.ITEM
-msgid  "Hide on next animation"
-msgstr "Απόκρυψη στην επόμενη διαφάνεια"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_DIMCOLOR.FIXEDTEXT.TEXT
-msgid  "Dim Color"
-msgstr "Χρώμα σκοτεινιάσματος"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_ANIM.FIXEDTEXT.TEXT
-msgid  "Text animation"
-msgstr "Κινούμενο κείμενο"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM1.STRINGLIST.ITEM
-msgid  "All at once"
-msgstr "Όλα με μιας"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM2.STRINGLIST.ITEM
-msgid  "Word by word"
-msgstr "Λέξη - λέξη"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM3.STRINGLIST.ITEM
-msgid  "Letter by letter"
-msgstr "Γράμμα - γράμμα"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_DELAY.FIXEDTEXT.TEXT
-msgid  "delay between characters"
-msgstr "καθυστέρηση μεταξύ χατακτήρων"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.MF_TEXT_DELAY.METRICFIELD.CUSTOMUNITTEXT
-msgid  "%"
-msgstr "%"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START.FIXEDTEXT.TEXT
-msgid  "Start"
-msgstr "Έναρξη"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM1.STRINGLIST.ITEM
-msgid  "On click"
-msgstr "Ενέργεια με κλικ του ποντικιού"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM2.STRINGLIST.ITEM
-msgid  "With previous"
-msgstr "Με προηγούμενο"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM3.STRINGLIST.ITEM
-msgid  "After previous"
-msgstr "Μετά το προηγούμενο"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START_DELAY.FIXEDTEXT.TEXT
-msgid  "Delay"
-msgstr "Καθυστέρηση"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.MF_START_DELAY.METRICFIELD.CUSTOMUNITTEXT
-#, fuzzy
-msgid  "sec"
-msgstr "δευτ"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_DURATION.FIXEDTEXT.TEXT
-msgid  "Speed"
-msgstr "Ταχύτητα"
+msgstr "Ύστερα από το εφέ κίνησης "
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_REPEAT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Repeat"
 msgstr "Επανάληψη"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.CBX_REWIND.CHECKBOX.TEXT
-msgid  "Rewind when done playing"
-msgstr "Επανενέναρξη μετά την ολοκλήρωση"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FL_TRIGGER.FIXEDLINE.TEXT
-msgid  "Trigger"
-msgstr "Έναυσμα"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_CLICKSEQUENCE.RADIOBUTTON.TEXT
-msgid  "Animate as part of click sequence"
-msgstr "Κίνηση ως μέρος της αλληλουχίας κλικ ποντικιού"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_INTERACTIVE.RADIOBUTTON.TEXT
-msgid  "Start effect on click of"
-msgstr "Έναρξη εφέ με κλικ"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.FT_GROUP_TEXT.FIXEDTEXT.TEXT
-msgid  "Group text"
-msgstr "Ομαδοποίηση κειμένου"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM1.STRINGLIST.ITEM
-msgid  "As one object"
-msgstr "Ως ένα αντικείμενο"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM2.STRINGLIST.ITEM
-msgid  "All paragraphs at once"
-msgstr "Όλες οι παράγραφοι με μιας"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM3.STRINGLIST.ITEM
-msgid  "By 1st level paragraphs"
-msgstr "Κατά παραγράφους 1ου επιπέδου"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM4.STRINGLIST.ITEM
-msgid  "By 2nd level paragraphs"
-msgstr "Κατά παραγράφους 2ου επιπέδου"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM5.STRINGLIST.ITEM
-msgid  "By 3rd level paragraphs"
-msgstr "Κατά παραγράφους 3ου επιπέδου"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM6.STRINGLIST.ITEM
-msgid  "By 4th level paragraphs"
-msgstr "Κατά παραγράφους 4ου επιπέδου"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM7.STRINGLIST.ITEM
-msgid  "By 5th level paragraphs"
-msgstr "Κατά παραγράφους 5ου επιπέδου"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_GROUP_AUTO.CHECKBOX.TEXT
-msgid  "Automatically after"
-msgstr "Αυτόματα μετά"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_ANIMATE_FORM.CHECKBOX.TEXT
-msgid  "Animate attached shape"
-msgstr "Κίνηση συνημμένου σχήματος"
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_REVERSE.CHECKBOX.TEXT
-msgid  "In reverse order"
-msgstr "Σε αντίστροφη σειρά"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_CLICK.MENUITEM.TEXT
-msgid  "Start On ~Click"
-msgstr "Έναρξη με ~κλικ"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_PREVIOUS.MENUITEM.TEXT
-msgid  "Start ~With Previous"
-msgstr "Έναρξη ~με προηγούμενο"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_AFTER_PREVIOUS.MENUITEM.TEXT
-msgid  "Start ~After Previous"
-msgstr "Έναρξη ~μετά το προηγούμενο"
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_OPTIONS.MENUITEM.TEXT
-msgid  "~Effect Options..."
-msgstr "Επιλογές ε~φέ..."
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_DURATION.MENUITEM.TEXT
-msgid  "~Timing..."
-msgstr "Συ~γχρονισμός..."
-
-#: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_REMOVE.MENUITEM.TEXT
-msgid  "~Remove"
-msgstr "~Αφαίρεση"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_25.MENUITEM.TEXT
 #, fuzzy
 msgid  "Tiny"
 msgstr "Μικροσκοπικά"
 
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_50.MENUITEM.TEXT
-#, fuzzy
-msgid  "Smaller"
-msgstr "Μικρότερα"
-
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MENUITEM.TEXT
 #, fuzzy
 msgid  "Larger"
 msgstr "Μεγαλύτερα"
 
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MENUITEM.TEXT
-#, fuzzy
-msgid  "Extra large"
-msgstr "Πολύ μεγάλα"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_HORIZONTAL.MENUITEM.TEXT
-msgid  "Horizontal"
-msgstr "Οριζόντια"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_VERTICAL.MENUITEM.TEXT
-msgid  "Vertical"
-msgstr "Κατακόρυφα"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_BOTH.MENUITEM.TEXT
-msgid  "Both"
-msgstr "Και τα δύο"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_QUARTER_SPIN.MENUITEM.TEXT
-msgid  "Quarter spin"
-msgstr "Περιστροφή ενός τετάρτου"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_HALF_SPIN.MENUITEM.TEXT
-msgid  "Half spin"
-msgstr "Μισή περιστροφή"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_FULL_SPIN.MENUITEM.TEXT
-msgid  "Full spin"
-msgstr "Πλήρης περιστροφή"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_TWO_SPINS.MENUITEM.TEXT
-msgid  "Two spins"
-msgstr "Δύο περιστροφές"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_CLOCKWISE.MENUITEM.TEXT
-msgid  "Clockwise"
-msgstr "Δεξιόστροφα"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_COUNTERCLOCKWISE.MENUITEM.TEXT
-msgid  "Counter-clockwise"
-msgstr "Αριστερόστροφα"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_BOLD.MENUITEM.TEXT
-msgid  "Bold"
-msgstr "Έντονα"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_ITALIC.MENUITEM.TEXT
-msgid  "Italic"
-msgstr "Πλάγια"
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_UNDERLINED.MENUITEM.TEXT
-msgid  "Underlined"
-msgstr "Υπογραμμισμένο"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_SLOW.STRING.TEXT
-msgid  "Very slow"
-msgstr "Πολύ αργή"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_SLOW.STRING.TEXT
-msgid  "Slow"
-msgstr "Αργά"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_NORMAL.STRING.TEXT
-msgid  "Medium"
-msgstr "Μεσαίο"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_FAST.STRING.TEXT
-msgid  "Fast"
-msgstr "Γρήγορα"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_FAST.STRING.TEXT
-msgid  "Very fast"
-msgstr "Πολύ γρήγορη"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_NONE.STRING.TEXT
-msgid  "none"
-msgstr "κανένα"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_NEXT_CLICK.STRING.TEXT
-msgid  "Until next click"
-msgstr "Μέχρι το επόμενο κλικ"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_END_OF_SLIDE.STRING.TEXT
-msgid  "Until end of slide"
-msgstr "Μέχρι το τέλος της διαφάνειας"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DIRECTION_PROPERTY.STRING.TEXT
-msgid  "Direction"
-msgstr "Κατεύθυνση"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_ZOOM_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Zoom"
 msgstr "Μεγέθυνση"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SPOKES_PROPERTY.STRING.TEXT
-msgid  "Spokes"
-msgstr "Ακτίνες"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FIRST_COLOR_PROPERTY.STRING.TEXT
-msgid  "First color"
-msgstr "Πρώτο χρώμα"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SECOND_COLOR_PROPERTY.STRING.TEXT
-msgid  "Second color"
-msgstr "Δεύτερο χρώμα"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FILL_COLOR_PROPERTY.STRING.TEXT
-msgid  "Fill color"
-msgstr "Χρώμα γεμίσματος"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STYLE_PROPERTY.STRING.TEXT
 #, fuzzy
 msgid  "Style"
 msgstr "Πρότυπο"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_PROPERTY.STRING.TEXT
-msgid  "Font"
-msgstr "Γραμματοσειρά"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_COLOR_PROPERTY.STRING.TEXT
-msgid  "Font color"
-msgstr "Χρώμα γραμματοσειράς"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_STYLE_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Typeface"
 msgstr "Οικογένειες γραμματοσειρών"
 
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LINE_COLOR_PROPERTY.STRING.TEXT
-msgid  "Line color"
-msgstr "Χρώμα γραμμής"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SIZE_PROPERTY.STRING.TEXT
-msgid  "Font size"
-msgstr "Μέγεθος γραμματοσειράς"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SCALE_PROPERTY.STRING.TEXT
-msgid  "Size"
-msgstr "Μέγεθος"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_AMOUNT_PROPERTY.STRING.TEXT
-msgid  "Amount"
-msgstr "Αριθμός"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_COLOR_PROPERTY.STRING.TEXT
-msgid  "Color"
-msgstr "Χρώμα"
-
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_NO_SOUND.STRING.TEXT
 msgid  "(No sound)"
-msgstr "(χωρίς ήχο)"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STOP_PREVIOUS_SOUND.STRING.TEXT
-msgid  "(Stop previous sound)"
-msgstr "(Διακοπή προηγούμενου ήχου)"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_BROWSE_SOUND.STRING.TEXT
-msgid  "Other sound..."
-msgstr "Άλλος ήχος..."
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SAMPLE.STRING.TEXT
-msgid  "Sample"
-msgstr "Δείγμα"
+msgstr "(Χωρίς ήχο)"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_1_SPOKES.STRING.TEXT
 msgid  "1 Spoke"
-msgstr "1 ακτίνα"
+msgstr "1 Ακτίνα"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_2_SPOKES.STRING.TEXT
 msgid  "2 Spokes"
-msgstr "2 ακτίνες"
+msgstr "2 Ακτίνες"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_3_SPOKES.STRING.TEXT
 msgid  "3 Spokes"
-msgstr "3 ακτίνες"
+msgstr "3 Ακτίνες"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_4_SPOKES.STRING.TEXT
 msgid  "4 Spokes"
-msgstr "4 ακτίνες"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_8_SPOKES.STRING.TEXT
-msgid  "8 Spokes"
-msgstr "8 ακτίνες"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_INSTANT.STRING.TEXT
-msgid  "Instant"
-msgstr "Άμεση"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_GRADUAL.STRING.TEXT
-msgid  "Gradual"
-msgstr "Βαθμιαία"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_TRIGGER.STRING.TEXT
-msgid  "Trigger"
-msgstr "Έναυσμα"
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.STRING.TEXT
-msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr "Επιλέξτε πρώτα το στοιχείο της διαφάνειας και μετά πατήστε 'Προσθήκη...' για να προσθέσετε ένα εφέ κίνησης."
+msgstr "4 Ακτίνες"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CONTROL.TEXT
+#, fuzzy
 msgid  "Slide Transition"
 msgstr "Εναλλαγή διαφάνειας"
 
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_APPLY_TRANSITION.FIXEDLINE.TEXT
-msgid  "Apply to selected slides"
-msgstr "Εφαρμογή στις επιλεγμένες διαφάνειες"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_MODIFY_TRANSITION.FIXEDLINE.TEXT
-msgid  "Modify transition"
-msgstr "Τροποποίηση αλλαγής διαφανειών"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SPEED.FIXEDTEXT.TEXT
-msgid  "Speed"
-msgstr "Ταχύτητα"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM1.STRINGLIST.ITEM
-msgid  "Slow"
-msgstr "Αργά"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM2.STRINGLIST.ITEM
-msgid  "Medium"
-msgstr "Μεσαίο"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM3.STRINGLIST.ITEM
-msgid  "Fast"
-msgstr "Γρήγορα"
-
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SOUND.FIXEDTEXT.TEXT
 msgid  "Sound"
-msgstr "ήχος"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM1.STRINGLIST.ITEM
-msgid  "<No Sound>"
-msgstr "<Χωρίς ήχο>"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM2.STRINGLIST.ITEM
-msgid  "<Stop Previous Sound>"
-msgstr "<Διακοπή προεπισκόπησης ήχου>"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM3.STRINGLIST.ITEM
-msgid  "Other Sound..."
-msgstr "Άλλος ήχος..."
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_LOOP_SOUND.CHECKBOX.TEXT
-msgid  "Loop until next sound"
-msgstr "Κίνηση μέχρι τον επόμενο ήχο"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_ADVANCE_SLIDE.FIXEDLINE.TEXT
-msgid  "Advance slide"
-msgstr "Αλλαγή διαφάνειας"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_ON_MOUSE.RADIOBUTTON.TEXT
-msgid  "On mouse click"
-msgstr "Ενέργεια με κλικ του ποντικιού"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_AUTO.RADIOBUTTON.TEXT
-msgid  "Automatically after"
-msgstr "Αυτόματα μετά"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.MF_ADVANCE_AUTO_AFTER.METRICFIELD.CUSTOMUNITTEXT
-msgid  "sec"
-msgstr "δευτ"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_APPLY_TO_ALL.PUSHBUTTON.TEXT
-msgid  "Apply to All Slides"
-msgstr "Εφαρμογή σε όλες τις διαφάνειες"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_PLAY.PUSHBUTTON.TEXT
-msgid  "Play"
-msgstr "Αναπαραγωγή"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_SLIDE_SHOW.PUSHBUTTON.TEXT
-msgid  "Slide Show"
-msgstr "Παρουσίαση οθόνης"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_AUTO_PREVIEW.CHECKBOX.TEXT
-msgid  "Automatic preview"
-msgstr "Αυτόματη προεπισκόπηση"
-
-#: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.STR_NO_TRANSITION.STRING.TEXT
-msgid  "No Transition"
-msgstr "Χωρίς αλλαγή διαφανειών"
+msgstr "Ήχος"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_PAGES.STRING.TEXT
 msgid  "Drag and Drop Pages"
-msgstr ""
+msgstr "Σύρσιμο και απόθεση σελίδων"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_SLIDES.STRING.TEXT
 msgid  "Drag and Drop Slides"
-msgstr ""
+msgstr "Σύρσιμο και απόθεση διαφανειών"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND1.STRING.TEXT
 msgid  "Start Slide Show"
-msgstr ""
+msgstr "Έναρξη Slide Show"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND2_A.STRING.TEXT
 msgid  "Hide Slide"
-msgstr ""
+msgstr "Απόκρυψη διαφάνειας"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND2_B.STRING.TEXT
 msgid  "Show Slide"
-msgstr ""
+msgstr "Εμφάνιση διαφάνειας"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND3.STRING.TEXT
 msgid  "Duplicate Slide"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_GROUP_NAME.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME %s"
-msgstr "%PRODUCTNAME %s"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_CONTENT.STRING.TEXT
-#, fuzzy
-msgid  "Print content"
-msgstr "Εκτύπωση περιεχομένου"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_GROUP.STRING.TEXT
-#, fuzzy
-msgid  "Print"
-msgstr "Εκτύπωση"
+msgstr "Αναπαραγωγή διαφάνειας"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT.STRING.TEXT
 #, fuzzy
 msgid  "Document"
 msgstr "Έγγραφο"
 
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Slides"
-msgstr "Διαφάνειες"
-
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM2.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Handouts"
 msgstr "Σημειώματα"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM3.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Notes"
-msgstr "Σημειώσεις"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.ITEM4.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Outline"
-msgstr "Διάρθρωση"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE.STRING.TEXT
-#, fuzzy
-msgid  "Slides per page"
-msgstr "Διαφάνειες ανά σελίδα"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.ITEM1.ITEMLIST.ITEM
 #, fuzzy
@@ -5699,81 +1429,6 @@ msgstr "6"
 #, fuzzy
 msgid  "9"
 msgstr "9"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER.STRING.TEXT
-#, fuzzy
-msgid  "Order"
-msgstr "Σειρά"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Left to right, then down"
-msgstr "Από αριστερά προς δεξιά, μετά κάτω"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Top to bottom, then right"
-msgstr "Από πάνω προς κάτω, ύστερα δεξιά"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT.STRING.TEXT
-#, fuzzy
-msgid  "~Contents"
-msgstr "Περιεχόμε~να"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_NAME.STRING.TEXT
-#, fuzzy
-msgid  "~Slide name"
-msgstr "Όνομα δια~φάνειας"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_IS_PRINT_NAME.STRING.TEXT
-#, fuzzy
-msgid  "P~age name"
-msgstr "Όνομα ~σελίδας"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_DATE.STRING.TEXT
-#, fuzzy
-msgid  "~Date and time"
-msgstr "Ημε~ρομηνία και ώρα"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_HIDDEN.STRING.TEXT
-#, fuzzy
-msgid  "Hidden pages"
-msgstr "Κρυφές σελίδες"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_OUTPUT_OPTIONS_GROUP.STRING.TEXT
-#, fuzzy
-msgid  "Output options"
-msgstr "Επιλογές εξόδου"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY.STRING.TEXT
-#, fuzzy
-msgid  "Color"
-msgstr "Χρώμα"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Original colors"
-msgstr "Αρχικά χρώματα"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Grayscale"
-msgstr "Διαβαθμίσεις του γκρι"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.ITEM3.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Black & white"
-msgstr "Ασπρόμαυρο"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "~Size"
-msgstr "Μέγε~θος"
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Original size"
-msgstr "Αρχικό μέγεθος"
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM2.ITEMLIST.ITEM
 #, fuzzy
@@ -5845,11 +1500,6 @@ msgstr "Περιοχή εκτύπωσης"
 msgid  "~All slides"
 msgstr "Ό~λες οι διαφάνειες"
 
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "~Slides"
-msgstr "Δια~φάνειες"
-
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM3.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Se~lection"
@@ -5870,50 +1520,9 @@ msgstr "Σελί~δες"
 msgid  "Table Design"
 msgstr "Σχεδίαση πίνακα"
 
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS_1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Show"
-msgstr "Εμφάνιση"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Header Row"
-msgstr "Γραμμή κεφαλίδας"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Total Row"
-msgstr "Γραμμή συνόλου"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Banded Rows"
-msgstr "Ζώνες γραμμών"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "First Column"
-msgstr "Πρώτη στήλη"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Last Column"
-msgstr "Τελευταία στήλη"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS_1.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Banded Columns"
-msgstr "Ζώνες στηλών"
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES_1.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Styles"
-msgstr "Πρότυπα"
-
 #: ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DOCKINGWINDOW.TEXT
-#, fuzzy
 msgid  "Notes Window"
-msgstr "Παράθυρο σημειώσεων:"
+msgstr "Παράθυρο Σημειώσεων"
 
 #: core/glob.src#STR_LAYER_BCKGRND.STRING.TEXT
 #, fuzzy
@@ -5925,151 +1534,49 @@ msgstr "Φόντο"
 msgid  "Background objects"
 msgstr "Αντικείμενα φόντου"
 
-#: core/glob.src#STR_LAYER_LAYOUT.STRING.TEXT
-msgid  "Layout"
-msgstr "Διάταξη"
-
 #: core/glob.src#STR_LAYER_CONTROLS.STRING.TEXT
+#, fuzzy
 msgid  "Controls"
 msgstr "Στοιχεία ελέγχου"
-
-#: core/glob.src#STR_LAYER_MEASURELINES.STRING.TEXT
-msgid  "Dimension Lines"
-msgstr "Γραμμές διαστάσεων"
 
 #: core/glob.src#STR_PAGE.STRING.TEXT
 #, fuzzy
 msgid  "Slide"
 msgstr "Διαφάνεια"
 
-#: core/glob.src#STR_PAGE_NAME.STRING.TEXT
-msgid  "Page"
-msgstr "Σελίδα"
-
-#: core/glob.src#STR_NOTES.STRING.TEXT
-msgid  "(Notes)"
-msgstr "(Σημειώσεις)"
-
 #: core/glob.src#STR_HANDOUT.STRING.TEXT
+#, fuzzy
 msgid  "Handouts"
 msgstr "Σημείωμα"
 
-#: core/glob.src#STR_PRESOBJ_MPTITLE.STRING.TEXT
-msgid  "Click to edit the title text format"
-msgstr "Κάντε κλικ εδώ για την επεξεργασία της μορφής του κειμένου του τίτλου"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLINE.STRING.TEXT
-msgid  "Click to edit the outline text format"
-msgstr "Κάντε κλικ εδώ για την επεξεργασία της μορφής των κειμένων διάρθρωσης"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER2.STRING.TEXT
-msgid  "Second Outline Level"
-msgstr "Δεύτερο επίπεδο διάρθρωσης"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER3.STRING.TEXT
-msgid  "Third Outline Level"
-msgstr "Τρίτο επίπεδο διάρθρωσης"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER4.STRING.TEXT
-msgid  "Fourth Outline Level"
-msgstr "Τέταρτο επίπεδο διάρθρωσης"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER5.STRING.TEXT
-msgid  "Fifth Outline Level"
-msgstr "Πέμπτο επίπεδο διάρθρωσης"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER6.STRING.TEXT
-msgid  "Sixth Outline Level"
-msgstr "Έκτο επίπεδο διάρθρωσης"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER7.STRING.TEXT
-msgid  "Seventh Outline Level"
-msgstr "Έβδομο επίπεδο διάρθρωσης"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER8.STRING.TEXT
-msgid  "Eighth Outline Level"
-msgstr "Όγδοο επίπεδο διάρθρωσης"
-
-#: core/glob.src#STR_PRESOBJ_MPOUTLLAYER9.STRING.TEXT
-msgid  "Ninth Outline Level"
-msgstr "Ένατο επίπεδο διάρθρωσης"
-
 #: core/glob.src#STR_PRESOBJ_MPNOTESTITLE.STRING.TEXT
+#, fuzzy
 msgid  "Click to move the slide"
 msgstr "Κάντε κλικ εδώ για την μετακίνηση της διαφάνειας"
-
-#: core/glob.src#STR_PRESOBJ_MPNOTESTEXT.STRING.TEXT
-msgid  "Click to edit the notes format"
-msgstr "Κάντε κλικ εδώ για την επεξεργασία της μορφής των σημειώσεων"
-
-#: core/glob.src#STR_PRESOBJ_TITLE.STRING.TEXT
-msgid  "Click to add title"
-msgstr "Κάντε κλικ εδώ για την εισαγωγή τίτλου"
 
 #: core/glob.src#STR_PRESOBJ_OUTLINE.STRING.TEXT
 #, fuzzy
 msgid  "Click to add text"
 msgstr "Κλικ για προσθήκη κειμένου"
 
-#: core/glob.src#STR_PRESOBJ_NOTESTEXT.STRING.TEXT
-msgid  "Click to add notes"
-msgstr "Κάντε κλικ εδώ για την εισαγωγή σημειώσεων"
-
-#: core/glob.src#STR_PRESOBJ_GRAPHIC.STRING.TEXT
-msgid  "Double-click to add graphics"
-msgstr "Κάντε διπλό κλικ για την προσθήκη γραφικού"
-
-#: core/glob.src#STR_PRESOBJ_OBJECT.STRING.TEXT
-msgid  "Double-click to add an object"
-msgstr "Κάντε διπλό κλικ για τη προσθήκη αντικειμένου"
-
 #: core/glob.src#STR_PRESOBJ_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Double-click to add a chart"
 msgstr "Κάντε διπλό κλικ για τη προσθήκη διαγράμματος"
 
 #: core/glob.src#STR_PRESOBJ_ORGCHART.STRING.TEXT
 msgid  "Double-click to add an organization chart"
-msgstr "Προσθήκη διαγράμματος οργάνωσης με διπλό κλικ."
-
-#: core/glob.src#STR_PRESOBJ_TABLE.STRING.TEXT
-msgid  "Double-click to add a spreadsheet"
-msgstr "Προσθήκη υπολογιστικού φύλλου με διπλό κλικ"
+msgstr "Προσθήκη διαγράμματος οργάνωσης με διπλό κλικ"
 
 #: core/glob.src#STR_OUTLINEVIEWSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Outline View"
 msgstr "Κατάσταση διάρθρωσης"
 
 #: core/glob.src#STR_DRAWVIEWSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Drawing View"
 msgstr "Προβολή σχεδίασης"
-
-#: core/glob.src#STR_PRESVIEWSHELL.STRING.TEXT
-msgid  "Presentation mode"
-msgstr "Λειτουργία παρουσίασης"
-
-#: core/glob.src#STR_PREVIEWVIEWSHELL.STRING.TEXT
-msgid  "Preview Window"
-msgstr "Παράθυρο προεπισκόπησης"
-
-#: core/glob.src#STR_TEXTOBJECTBARSHELL.STRING.TEXT
-msgid  "Text Mode"
-msgstr "Λειτουργία κειμένου"
-
-#: core/glob.src#STR_STDOBJECTBARSHELL.STRING.TEXT
-msgid  "Document Mode"
-msgstr "Κατάσταση εγγράφου"
-
-#: core/glob.src#STR_BEZIEROBJECTBARSHELL.STRING.TEXT
-msgid  "Bézier mode"
-msgstr "Κατάσταση καμπύλης"
-
-#: core/glob.src#STR_APPLICATIONOBJECTBAR.STRING.TEXT
-msgid  "StarImpress 4.0"
-msgstr "StarImpress 4.0"
-
-#: core/glob.src#STR_GLUEPOINTSOBJECTBARSHELL.STRING.TEXT
-msgid  "Glue Points Mode"
-msgstr "Κατάσταση σημείων κόλλησης"
 
 #: core/glob.src#STR_LAYOUT_DEFAULT_NAME.STRING.TEXT
 #, fuzzy
@@ -6081,147 +1588,57 @@ msgstr "Προεπιλογή"
 msgid  "Title"
 msgstr "Τίτλος"
 
-#: core/glob.src#STR_BAD_PASSWORD_OR_FILE_CORRUPTED.STRING.TEXT
-msgid  "The password is incorrect or the file is damaged."
-msgstr "Ο κωδικός πρόσβασης είναι εσφαλμένος ή το αρχείο ελαττωματικό."
-
 #: core/glob.src#STR_UNDO_MOVEPAGES.STRING.TEXT
+#, fuzzy
 msgid  "Move slides"
 msgstr "Μετακίνηση διαφανειών"
 
-#: core/glob.src#STR_NOT_ENOUGH_MEMORY.STRING.TEXT
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "Δεν υπάρχει αρκετή μνήμη!\nΗ ενέργεια θα διακοπεί."
-
 #: core/glob.src#STR_POOLSHEET_MEASURE.STRING.TEXT
 msgid  "Dimension Line"
-msgstr "Γραμμή διαστάσεων"
+msgstr "Αντικείμενο χωρίς περιεχόμενο και γραμμή"
 
-#: core/glob.src#STR_POOLSHEET_OBJWITHARROW.STRING.TEXT
-msgid  "Object with arrow"
-msgstr "Αντικείμενο με βέλος"
-
-#: core/glob.src#STR_POOLSHEET_OBJWITHSHADOW.STRING.TEXT
-msgid  "Object with shadow"
-msgstr "Αντικείμενο με σκιά"
-
-#: core/glob.src#STR_POOLSHEET_OBJWITHOUTFILL.STRING.TEXT
-msgid  "Object without fill"
-msgstr "Αντικείμενο χωρίς γέμισμα"
-
-#: core/glob.src#STR_POOLSHEET_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr "Κείμενο"
-
-#: core/glob.src#STR_POOLSHEET_TEXTBODY.STRING.TEXT
-msgid  "Text body"
-msgstr "Σώμα κειμένου"
-
-#: core/glob.src#STR_POOLSHEET_TEXTBODY_JUSTIFY.STRING.TEXT
-msgid  "Text body justified"
-msgstr "Πλήρης στοίχιση σώματος κειμένου"
+#: core/glob.src#STR_POOLSHEET_OBJNOLINENOFILL.STRING.TEXT
+msgid  "Object with no fill and no line"
+msgstr "Αντικείμενο χωρίς περιεχόμενο και χωρίς γραμμή"
 
 #: core/glob.src#STR_POOLSHEET_TEXTBODY_INDENT.STRING.TEXT
+#, fuzzy
 msgid  "First line indent"
 msgstr "Εσοχή πρώτης γραμμής"
 
-#: core/glob.src#STR_POOLSHEET_TITLE1.STRING.TEXT
-msgid  "Title1"
-msgstr "Τίτλος1"
-
-#: core/glob.src#STR_POOLSHEET_TITLE2.STRING.TEXT
-msgid  "Title2"
-msgstr "Τίτλος2"
-
 #: core/glob.src#STR_POOLSHEET_HEADLINE.STRING.TEXT
+#, fuzzy
 msgid  "Heading"
 msgstr "Επικεφαλίδα"
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE1.STRING.TEXT
+#, fuzzy
 msgid  "Heading1"
 msgstr "Επικεφαλίδα1"
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE2.STRING.TEXT
+#, fuzzy
 msgid  "Heading2"
 msgstr "Επικεφαλίδα2"
 
-#: core/glob.src#STR_EMPTY_STYLESHEET_NAME.STRING.TEXT
-msgid  "Blank template"
-msgstr "Κενό πρότυπο"
-
-#: core/glob.src#STR_PSEUDOSHEET_SUBTITLE.STRING.TEXT
-msgid  "Subtitle"
-msgstr "Υπότιτλος"
-
-#: core/glob.src#STR_PSEUDOSHEET_OUTLINE.STRING.TEXT
-msgid  "Outline"
-msgstr "Διάρθρωση"
-
-#: core/glob.src#STR_PSEUDOSHEET_NOTES.STRING.TEXT
-msgid  "Notes"
-msgstr "Σημειώσεις"
-
-#: core/glob.src#STR_GRAFOBJECTBARSHELL.STRING.TEXT
-msgid  "Graphics mode"
-msgstr "Λειτουργία γραφικών"
-
 #: core/glob.src#STR_MEDIAOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Media Playback"
 msgstr "Εφαρμογή αναπαραγωγής πολυμέσων"
 
-#: core/glob.src#STR_TABLEOBJECTBARSHELL.STRING.TEXT
-msgid  "Table"
-msgstr "Πίνακας"
-
-#: core/glob.src#STR_POWERPOINT_IMPORT.STRING.TEXT
-msgid  "PowerPoint Import"
-msgstr "Εισαγωγή του PowerPoint"
-
-#: core/glob.src#STR_POOLSHEET_ARROW.STRING.TEXT
-msgid  "Arrow"
-msgstr "Βέλος"
-
-#: core/glob.src#STR_LOAD_DOC.STRING.TEXT
-msgid  "Load Document"
-msgstr "Φόρτωση εγγράφου"
-
-#: core/glob.src#STR_SAVE_DOC.STRING.TEXT
-msgid  "Save Document"
-msgstr "Αποθήκευση εγγράφου"
-
 #: core/glob.src#RID_SD_ERRHDL.ERR_CODE_(_ERRCODE_CLASS_READ_,_ERR_FORMAT_ROWCOL_).STRING.TEXT
 msgid  "File format error found at $(ARG1)(row,col)."
-msgstr "Βρέθηκε σφάλμα μορφοποίησης αρχείου στη θέση $(ARG1)(γραμμή,στήλη)"
+msgstr "Βρέθηκε σφάλμα μορφοποίησης αρχείου στη θέση $(ARG1)(γραμμή,στήλη)."
 
 #: core/glob.src#RID_SD_ERRHDL.ERR_CODE_(_ERRCODE_CLASS_READ_,_ERR_FORMAT_FILE_ROWCOL_).STRING.TEXT
-#, fuzzy
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr "Εντοπίστηκε ένα σφάλμα μορφοποίησης του αρχείου στο τμήμα κειμένου $(ARG1) στη θέση $(ARG2)(γραμμή, στήλη)"
+msgstr "Εντοπίστηκε ένα σφάλμα μορφοποίησης του αρχείου στο τμήμα κειμένου $(ARG1) στη θέση $(ARG2)(γραμμή,στήλη)."
 
 #: core/glob.src#STR_3DOBJECTBARSHELL.STRING.TEXT
 msgid  "3-D Settings"
-msgstr "Ρυθμίσεις 3-Δ"
+msgstr "Ρυθμίσεις 3-D"
 
 #: core/glob.src#STR_FONTWORKOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Fontwork"
 msgstr "Fontwork"
-
-#: core/glob.src#STR_POOLSHEET_BANDED_CELL.STRING.TEXT
-msgid  "Banding cell"
-msgstr "Ζώνες κελιού"
-
-#: core/glob.src#STR_POOLSHEET_HEADER.STRING.TEXT
-msgid  "Header"
-msgstr "Κεφαλίδα"
-
-#: core/glob.src#STR_POOLSHEET_TOTAL.STRING.TEXT
-msgid  "Total line"
-msgstr "Σύνολική γραμμή"
-
-#: core/glob.src#STR_POOLSHEET_FIRST_COLUMN.STRING.TEXT
-msgid  "First column"
-msgstr "Πρώτη στήλη"
-
-#: core/glob.src#STR_POOLSHEET_LAST_COLUMN.STRING.TEXT
-msgid  "Last column"
-msgstr "Τελευταία στήλη"

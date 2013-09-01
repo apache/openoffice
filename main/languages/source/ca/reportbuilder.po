@@ -49,7 +49,7 @@ msgstr "Diagrama d'informe de l'%productname% %formatversion%"
 
 #: ../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu#EXTENDEDCOLORSCHEME.ENTRYNAMES.SUNREPORTBUILDER.DISPLAYNAME
 msgid  "Apache OpenOffice Report Builder"
-msgstr "Constructor d'informes d'Oracle"
+msgstr ""
 
 #: ../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu#EXTENDEDCOLORSCHEME.ENTRYNAMES.SUNREPORTBUILDER.ENTRIES.REPORTHEADER.DISPLAYNAME
 msgid  "Report Header"
@@ -95,6 +95,21 @@ msgstr "Control superposat"
 msgid  "Text Box Bound Content"
 msgstr "Contingut lligat al quadre de text"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:COLUMNHEADERFOOTER.LABEL
+#, fuzzy
+msgid  "Column Header/Footer"
+msgstr "~Capçalera/Peu de la columna"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:CONDITIONALFORMATTING.LABEL
+#, fuzzy
+msgid  "Conditional Formatting..."
+msgstr "~Formatació condicional..."
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DBSORTINGANDGROUPING.LABEL
+#, fuzzy
+msgid  "Sorting and Grouping"
+msgstr "~Ordenació i grups"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DISTRIBUTION.LABEL
 msgid  "Distribution..."
 msgstr "Distribució..."
@@ -110,6 +125,11 @@ msgstr "Ajusta a l'alçada més gran"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:GREATESTWIDTH.LABEL
 msgid  "Fit to greatest width"
 msgstr "Ajusta a l'amplada més gran"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:INSERTDATETIMEFIELD.LABEL
+#, fuzzy
+msgid  "Date and Time..."
+msgstr "~Data i hora..."
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:PAGEHEADERFOOTER.LABEL
 msgid  "Page Header/Footer"
@@ -163,9 +183,19 @@ msgstr "Encongeix des de dalt"
 msgid  "Select all Formatted Fields"
 msgstr "Selecciona tots els camps formatats"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLINSECTION.LABEL
+#, fuzzy
+msgid  "Select Objects in Section"
+msgstr "~Selecciona els objectes a la secció"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLLABELS.LABEL
 msgid  "Select all Labels"
 msgstr "Selecciona totes les etiquetes"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTREPORT.LABEL
+#, fuzzy
+msgid  "Select Report"
+msgstr "~Selecciona l'informe"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SMALLESTHEIGHT.LABEL
 msgid  "Fit to smallest height"
@@ -178,6 +208,11 @@ msgstr "Ajusta a l'amplada més petita"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SPREADSHEET.LABEL
 msgid  "Spreadsheet Document"
 msgstr "Document de full de càlcul"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SUBREPORTINNEWWINDOW.LABEL
+#, fuzzy
+msgid  "Subreport in New Window..."
+msgstr "~Subinforme en una finestra nova..."
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:TEXTDOCUMENT.LABEL
 msgid  "Text Document"
@@ -220,8 +255,9 @@ msgid  "Object Resizing"
 msgstr "Canvi de mida dels objectes"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.POPUPS..UNO:REPORTCONTROLMENU.LABEL
+#, fuzzy
 msgid  "Report Controls"
-msgstr "Controls d'informe"
+msgstr "Controls de l'informe"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.POPUPS..UNO:RESIZEMENU.LABEL
 msgid  "Resize"

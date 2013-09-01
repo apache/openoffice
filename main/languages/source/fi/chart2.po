@@ -31,10 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.MODALDIALOG.TEXT
-msgid  "Data Table"
-msgstr "Arvopisteiden muokkaus"
-
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.TOOLBOXITEM.TEXT
 msgid  "Insert Row"
 msgstr "Lisää rivi"
@@ -67,13 +63,9 @@ msgstr "Siirrä riviä alas"
 msgid  "Data Ranges"
 msgstr "Tietoalueet"
 
-#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FIXEDLINE.TEXT
-msgid  "Axes"
-msgstr "Akselit"
-
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FIXEDLINE.TEXT
 msgid  "Major grids"
-msgstr "Pääruudukot"
+msgstr "Pääviivastot"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CHECKBOX.TEXT
 msgid  "~X axis"
@@ -87,13 +79,9 @@ msgstr "~Y-akseli"
 msgid  "~Z axis"
 msgstr "~Z-akseli"
 
-#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
-msgid  "Secondary axes"
-msgstr "Toissijaiset akselit"
-
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
 msgid  "Minor grids"
-msgstr "Apuruudukot"
+msgstr "Väliviivastot"
 
 #: controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TABDIALOG.TEXT
 msgid  "Character"
@@ -119,10 +107,6 @@ msgstr "Kappale"
 msgid  "Indents & Spacing"
 msgstr "Sisennykset ja välit"
 
-#: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-msgid  "Alignment"
-msgstr "Tasaus"
-
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
 msgid  "Asian Typography"
 msgstr "Aasialaiset merkit"
@@ -134,74 +118,6 @@ msgstr "Sarkain"
 #: controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TABDIALOG.TEXT
 msgid  "3D View"
 msgstr "Kolmiulotteinen näkymä"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM1.STRINGLIST.ITEM
-msgid  "Box"
-msgstr "Särmiö"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM2.STRINGLIST.ITEM
-msgid  "Cylinder"
-msgstr "Lieriö"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM3.STRINGLIST.ITEM
-msgid  "Cone"
-msgstr "Kartio"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM4.STRINGLIST.ITEM
-msgid  "Pyramid"
-msgstr "Pyramidi"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM1.STRINGLIST.ITEM
-msgid  "Best fit"
-msgstr "Paras sovitus"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM2.STRINGLIST.ITEM
-msgid  "Center"
-msgstr "Keskelle"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM3.STRINGLIST.ITEM
-msgid  "Above"
-msgstr "Yläpuolelle"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM4.STRINGLIST.ITEM
-msgid  "Top left"
-msgstr "Ylös vasemmalle"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM5.STRINGLIST.ITEM
-msgid  "Left"
-msgstr "Vasemmalle"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM6.STRINGLIST.ITEM
-msgid  "Bottom left"
-msgstr "Alas vasemmalle"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM7.STRINGLIST.ITEM
-msgid  "Below"
-msgstr "Alapuolelle"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM8.STRINGLIST.ITEM
-msgid  "Bottom right"
-msgstr "Alas oikealle"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM9.STRINGLIST.ITEM
-msgid  "Right"
-msgstr "Oikealle"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM10.STRINGLIST.ITEM
-msgid  "Top right"
-msgstr "Ylös oikealle"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM11.STRINGLIST.ITEM
-msgid  "Inside"
-msgstr "Sisäpuolelle"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM12.STRINGLIST.ITEM
-msgid  "Outside"
-msgstr "Ulkopuolelle"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM13.STRINGLIST.ITEM
-msgid  "Near origin"
-msgstr "Juureen"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_NUMBER.CHECKBOX.TEXT
 msgid  "Show value as ~number"
@@ -231,10 +147,6 @@ msgstr "Näytä seliteruutu"
 msgid  "Place~ment"
 msgstr "Sijoitus"
 
-#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FL_LABEL_ROTATE.FIXEDLINE.TEXT
-msgid  "Rotate Text"
-msgstr "Kierrä tekstiä"
-
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_DEGREES.FIXEDTEXT.TEXT
 msgid  "~Degrees"
 msgstr "~Astetta"
@@ -242,26 +154,6 @@ msgstr "~Astetta"
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"
 msgstr "Tekstin kirjoitussuunta"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.STRINGLIST.ITEM
-msgid  "Standard Error"
-msgstr "Keskivirhe"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.STRINGLIST.ITEM
-msgid  "Standard Deviation"
-msgstr "Keskihajonta"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.STRINGLIST.ITEM
-msgid  "Variance"
-msgstr "Varianssi"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.STRINGLIST.ITEM
-msgid  "Error Margin"
-msgstr "Virhemarginaali"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_ERROR.FIXEDLINE.TEXT
-msgid  "Error Category"
-msgstr "Virheluokka"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
 msgid  "~None"
@@ -279,10 +171,6 @@ msgstr "~Prosenttiosuus"
 msgid  "Cell ~Range"
 msgstr "Solualue"
 
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_PARAMETERS.FIXEDLINE.TEXT
-msgid  "Parameters"
-msgstr "Parametrit"
-
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_POSITIVE.FIXEDTEXT.TEXT
 msgid  "P~ositive (+)"
 msgstr "Positiivinen (+)"
@@ -290,14 +178,6 @@ msgstr "Positiivinen (+)"
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_NEGATIVE.FIXEDTEXT.TEXT
 msgid  "~Negative (-)"
 msgstr "Negatiivinen (-)"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).CB_SYN_POS_NEG.CHECKBOX.TEXT
-msgid  "Same value for both"
-msgstr "Sama arvo molemmissa"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_INDICATE.FIXEDLINE.TEXT
-msgid  "Error Indicator"
-msgstr "Virheilmaisin"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_BOTH.RADIOBUTTON.TEXT
 msgid  "Positive ~and Negative"
@@ -347,18 +227,6 @@ msgstr "Z-akseli"
 msgid  "Space"
 msgstr "Välilyönti"
 
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM2.STRINGLIST.ITEM
-msgid  "Comma"
-msgstr "Pilkku"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM3.STRINGLIST.ITEM
-msgid  "Semicolon"
-msgstr "Puolipiste"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM4.STRINGLIST.ITEM
-msgid  "New line"
-msgstr "Rivinvaihto"
-
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_MAINTITLE.FIXEDTEXT.TEXT
 msgid  "~Title"
 msgstr "Otsikko"
@@ -366,10 +234,6 @@ msgstr "Otsikko"
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_SUBTITLE.FIXEDTEXT.TEXT
 msgid  "~Subtitle"
 msgstr "~Alaotsikko"
-
-#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_AXES.FIXEDLINE.TEXT
-msgid  "Axes"
-msgstr "Akselit"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_X_AXIS.FIXEDTEXT.TEXT
 msgid  "~X axis"
@@ -382,10 +246,6 @@ msgstr "~Y-akseli"
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Z_AXIS.FIXEDTEXT.TEXT
 msgid  "~Z axis"
 msgstr "~Z-akseli"
-
-#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_SECONDARY_AXES.FIXEDLINE.TEXT
-msgid  "Secondary Axes"
-msgstr "Toissijaiset akselit"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_X_AXIS.FIXEDTEXT.TEXT
 msgid  "X ~axis"
@@ -419,10 +279,6 @@ msgstr "Eksponentiaalinen"
 msgid  "~Power"
 msgstr "Potenssiregressio"
 
-#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_EQUATION.FIXEDLINE.TEXT
-msgid  "Equation"
-msgstr "Yhtälö"
-
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_EQUATION.CHECKBOX.TEXT
 msgid  "Show ~equation"
 msgstr "Näytä yhtälö"
@@ -455,37 +311,9 @@ msgstr "~Viivojen lukumäärä"
 msgid  "Separator"
 msgstr "Erotinmerkki"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.STRING.TEXT
-msgid  "Column"
-msgstr "Pylväs"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.STRING.TEXT
-msgid  "Bar"
-msgstr "Palkki"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.STRING.TEXT
-msgid  "Area"
-msgstr "Alue"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.STRING.TEXT
-msgid  "Pie"
-msgstr "Ympyrä"
-
 #: controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.STRING.TEXT
 msgid  "Exploded Pie Chart"
 msgstr "Hajotettu ympyräkaavio"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.STRING.TEXT
-msgid  "Exploded Donut Chart"
-msgstr "Hajotettu rengaskaavio"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT.STRING.TEXT
-msgid  "Donut"
-msgstr "Rengas"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.STRING.TEXT
-msgid  "Line"
-msgstr "Viiva"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.STRING.TEXT
 msgid  "XY (Scatter)"
@@ -499,29 +327,9 @@ msgstr "Pisteet ja viivat"
 msgid  "Points Only"
 msgstr "Vain pisteet"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.STRING.TEXT
-msgid  "Lines Only"
-msgstr "Vain viivat"
-
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.STRING.TEXT
 msgid  "3D Lines"
 msgstr "Kolmiulotteiset viivat"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.STRING.TEXT
-msgid  "Column and Line"
-msgstr "Pylväs ja viiva"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.STRING.TEXT
-msgid  "Columns and Lines"
-msgstr "Pylväät ja viivat"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.STRING.TEXT
-msgid  "Stacked Columns and Lines"
-msgstr "Pinotut pylväät ja viivat"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
-msgid  "Net"
-msgstr "Verkko"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.STRING.TEXT
 msgid  "Stock"
@@ -542,34 +350,6 @@ msgstr "Pörssikaavio 3"
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.STRING.TEXT
 msgid  "Stock Chart 4"
 msgstr "Pörssikaavio 4"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
-msgid  "Normal"
-msgstr "Tavallinen"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
-msgid  "Stacked"
-msgstr "Pinottu"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
-msgid  "Percent Stacked"
-msgstr "Suhteellinen pinottu"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DEEP.STRING.TEXT
-msgid  "Deep"
-msgstr "Syvä"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_FILLED.STRING.TEXT
-msgid  "Filled"
-msgstr "Täytetty"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.STRING.TEXT
-msgid  "Bubble"
-msgstr "Kupla"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.STRING.TEXT
-msgid  "Bubble Chart"
-msgstr "Kuplakaavio"
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.STRING.TEXT
 msgid  "Numbers are required. Check your input."
@@ -595,13 +375,9 @@ msgstr "Päävälin on oltava suurempi kuin jakoväli. Tarkista syöte."
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
 msgstr "Päävälin ja jakovälin on oltava vähintään tarkkuuden suuruisia. Tarkista syöte."
 
-#: controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.STRING.TEXT
-msgid  "Chart Wizard"
-msgstr "Ohjattu kaavion luonti"
-
 #: controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.STRING.TEXT
 msgid  "Smooth Lines"
-msgstr "Pyöristetyt viivat"
+msgstr "Tasoitetut käyrät"
 
 #: controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.STRING.TEXT
 msgid  "Number Format for Percentage Value"
@@ -611,25 +387,13 @@ msgstr "Prosenttiosuuden lukumuoto"
 msgid  "Chart Type"
 msgstr "Kaaviotyyppi"
 
-#: controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.STRING.TEXT
-msgid  "Data Range"
-msgstr "Tietoalue"
-
 #: controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.STRING.TEXT
 msgid  "Chart Elements"
 msgstr "Kaavioelementit"
 
-#: controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.STRING.TEXT
-msgid  "Chart Location"
-msgstr "Kaavion sijainti"
-
 #: controller/dialogs/Strings.src#STR_PAGE_LINE.STRING.TEXT
 msgid  "Line"
 msgstr "Viiva"
-
-#: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
-msgid  "Borders"
-msgstr "Reunat"
 
 #: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
 msgid  "Area"
@@ -646,14 +410,6 @@ msgstr "Fontti"
 #: controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.STRING.TEXT
 msgid  "Font Effects"
 msgstr "Fonttitehosteet"
-
-#: controller/dialogs/Strings.src#STR_PAGE_NUMBERS.STRING.TEXT
-msgid  "Numbers"
-msgstr "Luku"
-
-#: controller/dialogs/Strings.src#STR_PAGE_POSITION.STRING.TEXT
-msgid  "Position"
-msgstr "Sijainti"
 
 #: controller/dialogs/Strings.src#STR_BUTTON_UP.STRING.TEXT
 msgid  "Up"
@@ -675,10 +431,6 @@ msgstr "Asetukset"
 msgid  "Scale"
 msgstr "Asteikko"
 
-#: controller/dialogs/Strings.src#STR_PAGE_POSITIONING.STRING.TEXT
-msgid  "Positioning"
-msgstr "Sijainti"
-
 #: controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.STRING.TEXT
 msgid  "Type"
 msgstr "Tyyppi"
@@ -687,18 +439,6 @@ msgstr "Tyyppi"
 msgid  "Y Error Bars"
 msgstr "Y-virhepalkit"
 
-#: controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.STRING.TEXT
-msgid  "Alignment"
-msgstr "Tasaus"
-
-#: controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.STRING.TEXT
-msgid  "Perspective"
-msgstr "Perspektiivi"
-
-#: controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.STRING.TEXT
-msgid  "Appearance"
-msgstr "Ulkoasu"
-
 #: controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.STRING.TEXT
 msgid  "Illumination"
 msgstr "Valaistus"
@@ -706,14 +446,6 @@ msgstr "Valaistus"
 #: controller/dialogs/Strings.src#STR_PAGE_ASIAN.STRING.TEXT
 msgid  "Asian Typography"
 msgstr "Aasialaiset merkit"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.STRING.TEXT
-msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr "Keskiarvoviiva keskiarvolla %AVERAGE_VALUE ja keskihajonnalla %STD_DEVIATION"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AXIS.STRING.TEXT
-msgid  "Axis"
-msgstr "Akseli"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.STRING.TEXT
 msgid  "X Axis"
@@ -727,53 +459,37 @@ msgstr "Y-akseli"
 msgid  "Z Axis"
 msgstr "Z-akseli"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.STRING.TEXT
-msgid  "Secondary X Axis"
-msgstr "Toissijainen X-akseli"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.STRING.TEXT
-msgid  "Secondary Y Axis"
-msgstr "Toissijainen Y-akseli"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AXES.STRING.TEXT
-msgid  "Axes"
-msgstr "Akselit"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_GRIDS.STRING.TEXT
 msgid  "Grids"
-msgstr "Ruudukot"
+msgstr "Viivastot"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID.STRING.TEXT
 msgid  "Grid"
-msgstr "Ruudukko"
+msgstr "Viivasto"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.STRING.TEXT
 msgid  "X Axis Major Grid"
-msgstr "X-akselin pääruudukko"
+msgstr "X-akselin pääviivasto"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Y.STRING.TEXT
 msgid  "Y Axis Major Grid"
-msgstr "Y-akselin pääruudukko"
+msgstr "Y-akselin pääviivasto"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Z.STRING.TEXT
 msgid  "Z Axis Major Grid"
-msgstr "Z-akselin pääruudukko"
+msgstr "Z-akselin pääviivasto"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_X.STRING.TEXT
 msgid  "X Axis Minor Grid"
-msgstr "X-akselin apuruudukko"
+msgstr "X-akselin väliviivasto"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Y.STRING.TEXT
 msgid  "Y Axis Minor Grid"
-msgstr "Y-akselin apuruudukko"
+msgstr "Y-akselin väliviivasto"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Z.STRING.TEXT
 msgid  "Z Axis Minor Grid"
-msgstr "Z-akselin apuruudukko"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_LEGEND.STRING.TEXT
-msgid  "Legend"
-msgstr "Selite"
+msgstr "Z-akselin väliviivasto"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE.STRING.TEXT
 msgid  "Title"
@@ -786,10 +502,6 @@ msgstr "Otsikot"
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.STRING.TEXT
 msgid  "Main Title"
 msgstr "Pääotsikko"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.STRING.TEXT
-msgid  "Subtitle"
-msgstr "Alaotsikko"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.STRING.TEXT
 msgid  "X Axis Title"
@@ -819,10 +531,6 @@ msgstr "Selitteet"
 msgid  "Data Labels"
 msgstr "Arvopisteiden otsikot"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.STRING.TEXT
-msgid  "Data Point"
-msgstr "Arvopiste"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.STRING.TEXT
 msgid  "Data Points"
 msgstr "Arvopisteet"
@@ -847,18 +555,6 @@ msgstr "Trendiviivat"
 msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
 msgstr "Trendiviiva %FORMULA tarkkuudella R² = %RSQUARED"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.STRING.TEXT
-msgid  "Mean Value Line"
-msgstr "Keskiarvoviiva"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.STRING.TEXT
-msgid  "Equation"
-msgstr "Yhtälö"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.STRING.TEXT
-msgid  "Error Bars"
-msgstr "Virhepalkit"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.STRING.TEXT
 msgid  "Stock Loss"
 msgstr "Pörssitappio"
@@ -870,18 +566,6 @@ msgstr "Pörssivoitto"
 #: controller/dialogs/Strings.src#STR_OBJECT_PAGE.STRING.TEXT
 msgid  "Chart Area"
 msgstr "Kaavioalue"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.STRING.TEXT
-msgid  "Chart"
-msgstr "Kaavio"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.STRING.TEXT
-msgid  "Chart Wall"
-msgstr "Kaavion tausta"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.STRING.TEXT
-msgid  "Chart Floor"
-msgstr "Kaavion pohja"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SHAPE.STRING.TEXT
 msgid  "Drawing Object"
@@ -902,14 +586,6 @@ msgstr "Valonlähde %LIGHTNUMBER"
 #: controller/dialogs/Strings.src#STR_TIP_DATASERIES.STRING.TEXT
 msgid  "Data Series '%SERIESNAME'"
 msgstr "Arvosarja '%SERIESNAME'"
-
-#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.STRING.TEXT
-msgid  "Data Point %POINTNUMBER"
-msgstr "Arvopiste %POINTNUMBER"
-
-#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.STRING.TEXT
-msgid  "Values: %POINTVALUES"
-msgstr "Arvot: %POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT.STRING.TEXT
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
@@ -957,7 +633,7 @@ msgstr "Selite käytössä / poissa käytöstä"
 
 #: controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.STRING.TEXT
 msgid  "Horizontal grid on/off"
-msgstr "Vaakaruudukko käytössä / poissa käytöstä"
+msgstr "Vaakaviivasto käytössä / poissa käytöstä"
 
 #: controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.STRING.TEXT
 msgid  "Scale Text"
@@ -975,14 +651,6 @@ msgstr "Tätä toimintoa ei voi käyttää valittujen objektien kanssa."
 msgid  "Edit text"
 msgstr "Muokkaa tekstiä"
 
-#: controller/dialogs/Strings.src#STR_COLUMN_LABEL.STRING.TEXT
-msgid  "Column %COLUMNNUMBER"
-msgstr "Sarake %COLUMNNUMBER"
-
-#: controller/dialogs/Strings.src#STR_ROW_LABEL.STRING.TEXT
-msgid  "Row %ROWNUMBER"
-msgstr "Rivi %ROWNUMBER"
-
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.STRING.TEXT
 msgid  "Name"
 msgstr "Nimi"
@@ -994,10 +662,6 @@ msgstr "X-arvot"
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y.STRING.TEXT
 msgid  "Y-Values"
 msgstr "Y-arvot"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.STRING.TEXT
-msgid  "Bubble Sizes"
-msgstr "Kuplien koko"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.STRING.TEXT
 msgid  "X-Error-Bars"
@@ -1031,25 +695,9 @@ msgstr "Avausarvot"
 msgid  "Close Values"
 msgstr "Sulkemisarvot"
 
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.STRING.TEXT
-msgid  "Low Values"
-msgstr "Alimmat arvot"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.STRING.TEXT
-msgid  "High Values"
-msgstr "Ylimmät arvot"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.STRING.TEXT
-msgid  "Categories"
-msgstr "Luokat"
-
 #: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.STRING.TEXT
 msgid  "Unnamed Series"
 msgstr "Nimetön sarja"
-
-#: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.STRING.TEXT
-msgid  "Unnamed Series %NUMBER"
-msgstr "Nimetön sarja %NUMBER"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.STRING.TEXT
 msgid  "Select Range for %VALUETYPE of %SERIESNAME"
@@ -1075,14 +723,6 @@ msgstr "Valitse alue negatiivisille virhepalkeille"
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
 msgstr "Viimeisin syöte on virheellinen.\nOhitetaanko tämä muutos ja suljetaan valintaikkuna?"
 
-#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.STRING.TEXT
-msgid  "Left-to-right"
-msgstr "Vasemmalta oikealle"
-
-#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.STRING.TEXT
-msgid  "Right-to-left"
-msgstr "Oikealta vasemmalle"
-
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.STRING.TEXT
 msgid  "Use superordinate object settings"
 msgstr "Käytä ensisijaista tekstin suuntaa"
@@ -1091,33 +731,21 @@ msgstr "Käytä ensisijaista tekstin suuntaa"
 msgid  "Negative and Positive"
 msgstr "Negatiivinen ja positiivinen"
 
-#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.STRING.TEXT
-msgid  "Negative"
-msgstr "Negatiivinen"
-
-#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
-msgid  "Positive"
-msgstr "Positiivinen"
-
-#: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
-msgid  "From Data Table"
-msgstr "Arvopistetaulukosta"
-
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.STRING.TEXT
 msgid  "Linear (%SERIESNAME)"
-msgstr "Lineaarinen regressio"
+msgstr "Lineaarinen (%SERIESNAME)"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LOG.STRING.TEXT
 msgid  "Logarithmic (%SERIESNAME)"
-msgstr "Logaritminen regressio"
+msgstr "Logaritminen (%SERIESNAME)"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_EXP.STRING.TEXT
 msgid  "Exponential (%SERIESNAME)"
-msgstr "Eksponentiaalinen regressio"
+msgstr "Eksponentiaalinen (%SERIESNAME)"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_POWER.STRING.TEXT
 msgid  "Power (%SERIESNAME)"
-msgstr "Potenssiregressio"
+msgstr "Potenssi (%SERIESNAME)"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_MEAN.STRING.TEXT
 msgid  "Mean (%SERIESNAME)"
@@ -1125,51 +753,47 @@ msgstr "Keskiarvo- (%SERIESNAME)"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FIXEDTEXT.TEXT
 msgid  "Sche~me"
-msgstr "Tyyppi"
+msgstr "~Tyyppi"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CHECKBOX.TEXT
 msgid  "~Shading"
-msgstr "Varjostus"
+msgstr "~Varjostus"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CHECKBOX.TEXT
 msgid  "~Object borders"
-msgstr "Objektin reunat"
+msgstr "~Objektin reunat"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.CHECKBOX.TEXT
 msgid  "~Rounded edges"
-msgstr "Pyöristetyt särmät"
-
-#: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
-msgid  " degrees"
-msgstr " astetta"
+msgstr "Pyö~ristetyt särmät"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
 msgid  "~Right-angled axes"
-msgstr "Suorakulmaiset akselit"
+msgstr "Suo~rakulmaiset akselit"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FIXEDTEXT.TEXT
 msgid  "~X rotation"
-msgstr "X-akselin kierto"
+msgstr "~X-akselin kierto"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FIXEDTEXT.TEXT
 msgid  "~Y rotation"
-msgstr "Y-akselin kierto"
+msgstr "~Y-akselin kierto"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FIXEDTEXT.TEXT
 msgid  "~Z rotation"
-msgstr "Z-akselin kierto"
+msgstr "~Z-akselin kierto"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CHECKBOX.TEXT
 msgid  "~Perspective"
-msgstr "Perspektiivi"
+msgstr "~Perspektiivi"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FIXEDTEXT.TEXT
 msgid  "~Light source"
-msgstr "Valonlähde"
+msgstr "Va~lonlähde"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FIXEDTEXT.TEXT
 msgid  "~Ambient light"
-msgstr "Taustavalo"
+msgstr "T~austavalo"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.STRING.TEXT
 msgid  "Light Preview"
@@ -1177,7 +801,7 @@ msgstr "Valon esikatselu"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CHECKBOX.TEXT
 msgid  "Sho~w labels"
-msgstr "Näytä akselin selitteet"
+msgstr "N~äytä akselin selitteet"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FIXEDLINE.TEXT
 msgid  "Text orientation"
@@ -1185,15 +809,11 @@ msgstr "Tekstin suunta"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TRISTATEBOX.TEXT
 msgid  "Ve~rtically stacked"
-msgstr "Kirjaimet päällekkäin"
+msgstr "Ki~rjaimet päällekkäin"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FIXEDTEXT.TEXT
 msgid  "~Degrees"
 msgstr "~Astetta"
-
-#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
-msgid  "Text flow"
-msgstr "Tekstin rivitys"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
 msgid  "O~verlap"
@@ -1221,39 +841,23 @@ msgstr "Lomita ~parilliset"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RADIOBUTTON.TEXT
 msgid  "A~utomatic"
-msgstr "Automaattinen"
+msgstr "A~utomaattinen"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"
-msgstr "Tekstin kirjoitussuunta"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FIXEDLINE.TEXT
-msgid  "Axis line"
-msgstr "Akseliviiva"
+msgstr "Tek~stin kirjoitussuunta"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FIXEDTEXT.TEXT
 msgid  "~Cross other axis at"
-msgstr "Leikkaa toinen akseli"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM1.STRINGLIST.ITEM
-msgid  "Start"
-msgstr "alussa"
+msgstr "Leikkaa ~toinen akseli"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM2.STRINGLIST.ITEM
 msgid  "End"
 msgstr "lopussa"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM3.STRINGLIST.ITEM
-msgid  "Value"
-msgstr "arvossa"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM4.STRINGLIST.ITEM
-msgid  "Category"
-msgstr "luokassa"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CHECKBOX.TEXT
 msgid  "Axis ~between categories"
-msgstr "Akseli luokkien välissä"
+msgstr "Akseli luokkien ~välissä"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FIXEDLINE.TEXT
 msgid  "Labels"
@@ -1261,67 +865,35 @@ msgstr "Selitteet"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FIXEDTEXT.TEXT
 msgid  "~Place labels"
-msgstr "Sijoita selitteet"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM1.STRINGLIST.ITEM
-msgid  "Near axis"
-msgstr "lähelle akselia"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM2.STRINGLIST.ITEM
-msgid  "Near axis (other side)"
-msgstr "lähelle akselia (toiselle puolelle)"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM3.STRINGLIST.ITEM
-msgid  "Outside start"
-msgstr "ulkopuolelle alkuun"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM4.STRINGLIST.ITEM
-msgid  "Outside end"
-msgstr "ulkopuolelle loppuun"
+msgstr "Si~joita selitteet"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FIXEDTEXT.TEXT
 msgid  "~Distance"
-msgstr "etäisyydelle"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FIXEDLINE.TEXT
-msgid  "Interval marks"
-msgstr "Akselimerkit"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FIXEDTEXT.TEXT
-msgid  "Major:"
-msgstr "Akselimerkit:"
+msgstr "etäisyy~delle"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CHECKBOX.TEXT
 msgid  "~Inner"
-msgstr "Sisempi"
+msgstr "S~isempi"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CHECKBOX.TEXT
 msgid  "~Outer"
-msgstr "Ulompi"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FIXEDTEXT.TEXT
-msgid  "Minor:"
-msgstr "Jakoviivat:"
+msgstr "Ul~ompi"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CHECKBOX.TEXT
 msgid  "I~nner"
-msgstr "Sisempi"
+msgstr "Sise~mpi"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.CHECKBOX.TEXT
 msgid  "O~uter"
-msgstr "Ulompi"
+msgstr "~Ulompi"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.FIXEDTEXT.TEXT
 msgid  "Place ~marks"
-msgstr "Sijoita merkit"
+msgstr "Sijoita ~merkit"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM1.STRINGLIST.ITEM
 msgid  "At labels"
 msgstr "selitteisiin"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM2.STRINGLIST.ITEM
-msgid  "At axis"
-msgstr "akselille"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM3.STRINGLIST.ITEM
 msgid  "At axis and labels"
@@ -1329,19 +901,19 @@ msgstr "akselille ja selitteisiin"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FIXEDLINE.TEXT
 msgid  "Grids"
-msgstr "Ruudukot"
+msgstr "Viivastot"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CHECKBOX.TEXT
 msgid  "Show major ~grid"
-msgstr "Näytä pääruudukko"
+msgstr "N~äytä pääviivasto"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.PUSHBUTTON.TEXT
 msgid  "Mo~re..."
-msgstr "Lisää..."
+msgstr "Lis~ää..."
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.CHECKBOX.TEXT
 msgid  "~Show minor grid"
-msgstr "Näytä apuruudukko"
+msgstr "Näytä väliviivasto"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.PUSHBUTTON.TEXT
 msgid  "Mor~e..."
@@ -1363,25 +935,9 @@ msgstr "3D-ulkoasu"
 msgid  "~Stack series"
 msgstr "Päällekkäiset sarjat"
 
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RADIOBUTTON.TEXT
-msgid  "On top"
-msgstr "Päällekkäin"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RADIOBUTTON.TEXT
-msgid  "Percent"
-msgstr "Prosenttia"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RADIOBUTTON.TEXT
-msgid  "Deep"
-msgstr "Syvä"
-
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CHECKBOX.TEXT
 msgid  "S~mooth lines"
-msgstr "Pyöristetyt viivat"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PUSHBUTTON.TEXT
-msgid  "Properties..."
-msgstr "Ominaisuudet..."
+msgstr "Tasoitetut käyrät"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CHECKBOX.TEXT
 msgid  "~Sort by X values"
@@ -1400,163 +956,191 @@ msgid  "~Resolution"
 msgstr "~Tarkkuus"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Degree of polynomials"
-msgstr "~Asteluku"
-
-#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
-msgid  "Customize data ranges for individual data series"
-msgstr "Mukauta yksittäisten arvosarjojen tietoalueita"
+msgstr "Polynomin asteluku"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~series"
 msgstr "Arvosarjat"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data ranges"
 msgstr "Tietoalueet"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ran~ge for %VALUETYPE"
 msgstr "Alue arvoille %VALUETYPE"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Categories"
 msgstr "Luokat"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~labels"
 msgstr "Arvopisteiden otsikot"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
 msgstr "Lisää"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Remove"
 msgstr "Poista"
 
-#: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "Sijainti"
-
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text orientation"
 msgstr "Tekstin suunta"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
 msgstr "Tekstin kirjoitussuunta"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Place chart"
 msgstr "Sijoita kaavio"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Insert in sheet"
 msgstr "Lisää taulukkoon"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Clockwise direction"
 msgstr "Myötäpäivään"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Starting angle"
 msgstr "Aloituskulma"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
 msgstr "~Astetta"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Plot options"
 msgstr "Piirtoasetukset"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include ~values from hidden cells"
 msgstr "Piirrä arvot myös piilotetuista soluista"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Choose a data range"
 msgstr "Valitse tietoalue"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data range"
 msgstr "Tietoalue"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Data series in ~rows"
 msgstr "Arvosarjat riveillä"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Data series in ~columns"
 msgstr "Arvosarjat sarakkeissa"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~First row as label"
 msgstr "Ensimmäinen rivi sisältää otsikoita"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "F~irst column as label"
 msgstr "Ensimmäinen sarake sisältää otsikoita"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Days"
 msgstr "päivää"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Months"
 msgstr "kuukautta"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Years"
 msgstr "vuotta"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Scale"
 msgstr "Asteikko"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Reverse direction"
 msgstr "Käänteinen suunta"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Logarithmic scale"
 msgstr "Logaritmiasteikko"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "T~ype"
 msgstr "T~yyppi"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Automatic"
 msgstr "automaattinen"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Text"
 msgstr "teksti"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Date"
 msgstr "päivämäärä"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Minimum"
 msgstr "~Vähintään:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Automatic"
 msgstr "Automaattinen"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ma~ximum"
 msgstr "E~nintään:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CHECKBOX.TEXT
+#, fuzzy
 msgid  "A~utomatic"
 msgstr "Automaattinen"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "R~esolution"
 msgstr "Tarkkuus"
 
@@ -1565,105 +1149,129 @@ msgid  "Automat~ic"
 msgstr "Automaattinen"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ma~jor interval"
 msgstr "Pääväli:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Au~tomatic"
 msgstr "Automaattinen"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Minor inter~val count"
 msgstr "Jako~välien lukumäärä"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Minor inter~val"
 msgstr "Jakoviivojen määrä:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Aut~omatic"
 msgstr "Automaattinen"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Re~ference value"
 msgstr "Vertailuarvo:"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Align data series to"
 msgstr "Tietolähteiden tasaus"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Primary Y axis"
 msgstr "Ensisijainen Y-akseli"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Secondary Y axis"
 msgstr "Toissijainen Y-akseli"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
 msgstr "Asetukset"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Overlap"
 msgstr "~Päällekkäin"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Spacing"
 msgstr "~Objektivälit"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Connection lines"
 msgstr "Yhteysviivat"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show ~bars side by side"
 msgstr "Näytä palkit vierekkäin"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Plot options"
 msgstr "Piirtoasetukset"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Plot missing values"
 msgstr "Puuttuvien arvojen esittäminen"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Leave gap"
 msgstr "Jätä aukko"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Assume zero"
 msgstr "Oleta nollaksi"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Continue line"
 msgstr "Jatka viivaa"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include ~values from hidden cells"
 msgstr "Piirrä arvot myös piilotetuista soluista"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TRISTATEBOX.TEXT
+#, fuzzy
 msgid  "Ve~rtically stacked"
 msgstr "Kirjaimet päällekkäin"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
 msgstr "~Astetta"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text orientation"
 msgstr "Tekstin suunta"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
 msgstr "Tekstin kirjoitussuunta"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Choose titles, legend, and grid settings"
-msgstr "Valitse otsikot, selitteet ja ruudukon asetukset"
+msgstr "Valitse otsikot, selitteet ja viivaston asetukset"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.FIXEDLINE.TEXT
 msgid  "Display grids"
-msgstr "Näytä ruudukot"
+msgstr "Näytä viivastot"

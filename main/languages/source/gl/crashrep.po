@@ -39,6 +39,22 @@ msgstr "%PRODUCTNAME% %PRODUCTVERSION% Informe de erros"
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Benvido(a) ao informador de erros de %PRODUCTNAME% %PRODUCTVERSION%"
 
+#: all/crashrep.ulf#_WELCOME_BODY1_
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr "Esta ferramenta para informes de erro recolle información sobre como está a traballar %PRODUCTNAME% e remítella a Apache OpenOffice para mellorar as versións futuras.\n\n"
+
+#: all/crashrep.ulf#_WELCOME_BODY2_
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr "É fácil. Só ten que enviar o informe premendo en 'Enviar' na seguinte caixa de diálogo, ou pode describir brevemente como ocorreu o erro e, a continuación, premer en 'Enviar'. Se quere ver o informe, prema no botón 'Amosar informe'. Se preme en 'Non enviar', non se enviará ningún dato.\n\n"
+
+#: all/crashrep.ulf#_WELCOME_BODY3_
+msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr "Privacidade do cliente\nA información recollida está limitada aos datos que concirnen ao estado do %PRODUCTNAME% %PRODUCTVERSION% cando se produce un erro. Non se recolle ningunha outra información sobre contrasinais ou contidos dos documentos.\n\nA información só se usará para mellorar a calidade de %PRODUCTNAME% e non será compartida con terceiros.\nPara informarse máis verbo da política de privacidade de Apache OpenOffice, ver\n"
+
+#: all/crashrep.ulf#_PRIVACY_URL_
+msgid  "http://www.openoffice.org/privacy.html"
+msgstr "http://www.openoffice.org/privacy.html"
+
 #: all/crashrep.ulf#_NEXT_BUTTON_
 msgid  "~Next >>"
 msgstr "~Seguinte >>"
@@ -55,9 +71,17 @@ msgstr "Aceptar"
 msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "Produciuse un erro durante a execución de %PRODUCTNAME% %PRODUCTVERSION%"
 
+#: all/crashrep.ulf#_REPORT_BODY_
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr "O informe de erro de %PRODUCTNAME% %PRODUCTVERSION% recolleu información que podería axudar a Apache OpenOffice na mellora de %PRODUCTNAME%.\nNos seguintes espazos, pode introducir un título para o informe de falla e describir a acción que estaba a efectuar cando se produciu o erro. Despois prema en 'Enviar'.\n"
+
 #: all/crashrep.ulf#_ENTER_TITLE_
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
 msgstr "Que tipo de documento (p.e. presentación) estaba a utilizar cando ocorreu o erro?"
+
+#: all/crashrep.ulf#_ALLOW_CONTACT_
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr "~Permito que Apache OpenOffice contacte comigo en relación con este informe."
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
 msgid  "Please enter your e-mail address."
@@ -91,9 +115,17 @@ msgstr "~Gardar informe..."
 msgid  "Save Report to"
 msgstr "Gardar informe en"
 
+#: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr "Non se puido enviar o informe de erros porque o programa predeterminado para o correo electrónico non admite MAPI.\n Utilice un programa de correo electrónico compatíbel con MAPI."
+
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr "Non se puido gardar temporalmente o informe de erros e, por iso, non se enviou."
+
+#: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
+msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr "Non se puido enviar o informe de erros porque non se iniciou 'Enviar correo electrónico'.\nComprobe a configuración de 'Enviar correo electrónico'."
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
@@ -135,6 +167,10 @@ msgstr "~Proxy HTTP"
 msgid  "~Port"
 msgstr "~Porto"
 
+#: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr "A ferramenta Informe de erros de %PRODUCTNAME% necesita estar conectada coa internet para enviar os informes.\n\nAs empresas acostuman usar servidores proxy xunto con barreiras de protección para protexer a rede.\n\nSe este é o seu caso, terá que especificar o enderezo e porto do servidor."
+
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
 msgid  "Sending Error Report"
 msgstr "Enviando informe de erros"
@@ -147,14 +183,18 @@ msgstr "Estado: Enviando informe de erros"
 msgid  "Status: The error report has been sent successfully."
 msgstr "Estado: O informe de erros enviouse satisfactoriamente."
 
-#: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
-msgid  "Usage:"
-msgstr "Uso:"
+#: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr "Marcou a opción 'Permito  que Apache OpenOffice contacte comigo en relación con este informe.'\nEscriba o seu enderezo de correo, por favor."
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
 msgid  "-p <process ID>"
-msgstr "-p <ID do proceso>"
+msgstr "-p <process ID>"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "Atribúe o ID do proceso (PID) de %PRODUCTNAME% á ferramenta Informe de erros"
+
+#: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
+msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr "Amosa este texto de axuda.\nPode atopar información detallada na Guía de configuración."

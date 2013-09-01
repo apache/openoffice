@@ -63,10 +63,6 @@ msgstr "~Categoria"
 msgid  "Function"
 msgstr "Funció"
 
-#: customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#DEFINE.TEXT
-msgid  "Functions"
-msgstr "Funcions"
-
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FIXEDLINE.TEXT
 msgid  "Shortcut keys"
 msgstr "Tecles de drecera"
@@ -85,7 +81,7 @@ msgstr "Desa la configuració del teclat"
 
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.STRING.TEXT
 msgid  "Configuration (*.cfg)"
-msgstr "Configuració"
+msgstr ""
 
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.STRING.TEXT
 msgid  "My Macros"
@@ -111,14 +107,6 @@ msgstr "Personalitza"
 msgid  "Menus"
 msgstr "Menús"
 
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_KEYBOARD.PAGEITEM.TEXT
-msgid  "Keyboard"
-msgstr "Teclat"
-
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_TOOLBARS.PAGEITEM.TEXT
-msgid  "Toolbars"
-msgstr "Barres d'eines"
-
 #: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_EVENTS.PAGEITEM.TEXT
 msgid  "Events"
 msgstr "Esdeveniments"
@@ -126,14 +114,6 @@ msgstr "Esdeveniments"
 #: customize/cfg.src#TEXT_MENU.#DEFINE.TEXT
 msgid  "Menu"
 msgstr "Menú"
-
-#: customize/cfg.src#TEXT_BEGIN_GROUP.#DEFINE.TEXT
-msgid  "Begin a Group"
-msgstr "Comença un grup"
-
-#: customize/cfg.src#TEXT_RENAME.#DEFINE.TEXT
-msgid  "Rename..."
-msgstr "Canvia el nom..."
 
 #: customize/cfg.src#TEXT_DELETE.#DEFINE.TEXT
 msgid  "Delete..."
@@ -143,10 +123,6 @@ msgstr "Suprimeix..."
 msgid  "Delete"
 msgstr "Suprimeix"
 
-#: customize/cfg.src#TEXT_MOVE.#DEFINE.TEXT
-msgid  "Move..."
-msgstr "Mou..."
-
 #: customize/cfg.src#TEXT_DEFAULT_STYLE.#DEFINE.TEXT
 msgid  "Restore Default Settings"
 msgstr "Restaura la configuració per defecte"
@@ -154,14 +130,6 @@ msgstr "Restaura la configuració per defecte"
 #: customize/cfg.src#TEXT_DEFAULT_COMMAND.#DEFINE.TEXT
 msgid  "Restore Default Command"
 msgstr "Restaura l'ordre per defecte"
-
-#: customize/cfg.src#TEXT_TEXT_ONLY.#DEFINE.TEXT
-msgid  "Text only"
-msgstr "Només text"
-
-#: customize/cfg.src#TEXT_TOOLBAR_NAME.#DEFINE.TEXT
-msgid  "Toolbar Name"
-msgstr "Nom de la barra d'eines"
 
 #: customize/cfg.src#TEXT_SAVE_IN.#DEFINE.TEXT
 msgid  "Save In"
@@ -171,45 +139,13 @@ msgstr "Desa a"
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr "Menús de l'%PRODUCTNAME %MODULENAME"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "Nou..."
-
 #: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_SEPARATOR.FIXEDLINE.TEXT
 msgid  "Menu Content"
 msgstr "Contingut del menú"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_ENTRIES.FIXEDTEXT.TEXT
-msgid  "Entries"
-msgstr "Entrades"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_ADD_COMMANDS.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "Afegeix..."
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_CHANGE_ENTRY.MENUBUTTON.TEXT
-msgid  "Modify"
-msgstr "Modifica"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Description"
-msgstr "Descripció"
-
 #: customize/cfg.src#MODIFY_ENTRY.ID_ADD_SUBMENU.MENUITEM.TEXT
 msgid  "Add Submenu..."
 msgstr "Afegeix un submenú..."
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_ONLY.MENUITEM.TEXT
-msgid  "Icons Only"
-msgstr "Només icones"
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_AND_TEXT.MENUITEM.TEXT
-msgid  "Icons & Text"
-msgstr "Icones i text"
-
-#: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_CHANGE_SYMBOL.MENUITEM.TEXT
-msgid  "Change Icon..."
-msgstr "Canvia la icona..."
 
 #: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_RESET_SYMBOL.MENUITEM.TEXT
 msgid  "Reset Icon"
@@ -218,10 +154,6 @@ msgstr "Reinicialitza la icona"
 #: customize/cfg.src#RID_SVXSTR_NEW_MENU.STRING.TEXT
 msgid  "New Menu %n"
 msgstr "Menú nou %n"
-
-#: customize/cfg.src#RID_SVXSTR_NEW_TOOLBAR.STRING.TEXT
-msgid  "New Toolbar %n"
-msgstr "Barra d'eines nova %n"
 
 #: customize/cfg.src#RID_SVXSTR_MOVE_MENU.STRING.TEXT
 msgid  "Move Menu"
@@ -250,22 +182,6 @@ msgstr "Nom del menú"
 #: customize/cfg.src#MD_MENU_ORGANISER.TXT_MENU.FIXEDTEXT.TEXT
 msgid  "Menu position"
 msgstr "Posició del menú"
-
-#: customize/cfg.src#MD_NEW_TOOLBAR.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "Nom"
-
-#: customize/cfg.src#MD_ICONSELECTOR.MODALDIALOG.TEXT
-msgid  "Change Icon"
-msgstr "Canvia la icona"
-
-#: customize/cfg.src#MD_ICONSELECTOR.FT_SYMBOLS.FIXEDTEXT.TEXT
-msgid  "Icons"
-msgstr "Icones"
-
-#: customize/cfg.src#MD_ICONSELECTOR.BTN_IMPORT.PUSHBUTTON.TEXT
-msgid  "Import..."
-msgstr "Importa..."
 
 #: customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FIXEDTEXT.TEXT
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
@@ -302,14 +218,6 @@ msgstr "Sí a tot"
 #: customize/cfg.src#RID_SVXSTR_PRODUCTNAME_TOOLBARS.STRING.TEXT
 msgid  "%PRODUCTNAME %MODULENAME Toolbars"
 msgstr "Barres d'eines de l'%PRODUCTNAME %MODULENAME"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR.STRING.TEXT
-msgid  "Toolbar"
-msgstr "Barra d'eines"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR_CONTENT.STRING.TEXT
-msgid  "Toolbar Content"
-msgstr "Contingut de la barra d'eines"
 
 #: customize/cfg.src#RID_SVXSTR_COMMANDS.STRING.TEXT
 msgid  "Commands"
@@ -351,10 +259,6 @@ msgstr "Nom ~nou"
 msgid  "Rename Menu"
 msgstr "Reanomena el menú"
 
-#: customize/cfg.src#RID_SVXSTR_RENAME_TOOLBAR.STRING.TEXT
-msgid  "Rename Toolbar"
-msgstr "Reanomena la barra d'eines"
-
 #: customize/cfg.src#BUTTON_STR_UP.STRING.TEXT
 msgid  "Up"
 msgstr "Amunt"
@@ -362,10 +266,6 @@ msgstr "Amunt"
 #: customize/cfg.src#BUTTON_STR_DOWN.STRING.TEXT
 msgid  "Down"
 msgstr "Avall"
-
-#: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "Esdeveniment"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -390,10 +290,6 @@ msgstr "Sup~rimeix"
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.TABPAGE.TEXT
 msgid  "Assign action"
 msgstr "Assigna una acció"
-
-#: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "Esdeveniment"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -422,10 +318,6 @@ msgstr "Assigna un component"
 #: customize/macropg.src#RID_SVXDLG_ASSIGNCOMPONENT.FT_METHOD.FIXEDTEXT.TEXT
 msgid  "Component method name"
 msgstr "Nom del mètode del component"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_STARTAPP.STRING.TEXT
-msgid  "Start Application"
-msgstr "Inicia l'aplicació"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEAPP.STRING.TEXT
 msgid  "Close Application"
@@ -495,10 +387,6 @@ msgstr "S'ha iniciat la fusió dels camps del formulari"
 msgid  "Merging of form fields finished"
 msgstr "Ha finalitzat la fusió dels camps del formulari"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_PAGECOUNTCHANGE.STRING.TEXT
-msgid  "Changing the page count"
-msgstr "Canvi del nombre de pàgines"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_SUBCOMPONENT_OPENED.STRING.TEXT
 msgid  "Loaded a sub component"
 msgstr "S'ha carregat un subcomponent"
@@ -515,33 +403,13 @@ msgstr "Emplenament de paràmetres"
 msgid  "Execute action"
 msgstr "Executa l'acció"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
-msgstr "Després d'actualitzar"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
 msgstr "Abans d'actualitzar"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
-msgstr "Abans de l'acció del registre"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
-msgstr "Després de l'acció del registre"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
 msgstr "En confirmar la supressió"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
-msgstr "S'ha produït un error"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
-msgstr "En ajustar"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
@@ -554,14 +422,6 @@ msgstr "En perdre el focus"
 #: customize/macropg.src#RID_SVXSTR_EVENT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
 msgstr "L'estat de l'element ha canviat"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
-msgstr "En prémer una tecla"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYUP.STRING.TEXT
-msgid  "Key released"
-msgstr "En deixar anar una tecla"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADED.STRING.TEXT
 msgid  "When loading"
@@ -599,14 +459,6 @@ msgstr "En prémer el botó del ratolí"
 msgid  "Mouse button released"
 msgstr "En deixar anar el botó del ratolí"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
-msgstr "Abans del canvi al registre"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONED.STRING.TEXT
-msgid  "After record change"
-msgstr "Després del canvi al registre"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_RESETTED.STRING.TEXT
 msgid  "After resetting"
 msgstr "Després de reinicialitzar"
@@ -619,14 +471,6 @@ msgstr "Abans de reinicialitzar"
 msgid  "Approve action"
 msgstr "Aprova l'acció"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_SUBMITTED.STRING.TEXT
-msgid  "Before submitting"
-msgstr "Abans d'enviar"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
-msgstr "En modificar text"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
 msgstr "Abans de descarregar"
@@ -634,10 +478,6 @@ msgstr "Abans de descarregar"
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADED.STRING.TEXT
 msgid  "When unloading"
 msgstr "En descarregar"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_CHANGED.STRING.TEXT
-msgid  "Changed"
-msgstr "Canviat"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CREATEDOC.STRING.TEXT
 msgid  "Document created"
@@ -739,18 +579,6 @@ msgstr "~Categoria"
 msgid  "Commands"
 msgstr "Ordres"
 
-#: customize/selector.src#STR_SELECTOR_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "Afegeix"
-
-#: customize/selector.src#STR_SELECTOR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "Executa"
-
-#: customize/selector.src#STR_SELECTOR_CLOSE.STRING.TEXT
-msgid  "Close"
-msgstr "Tanca"
-
 #: customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.STRING.TEXT
 msgid  "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customize dialog."
 msgstr "Per afegir una ordre a una barra d'eines, seleccioneu la categoria i després l'ordre. A continuació, arrossegueu l'ordre a la llista Ordres que es troba a la pestanya Barres d'eines del diàleg Personalitza."
@@ -771,17 +599,45 @@ msgstr "Biblioteca"
 msgid  "My Macros"
 msgstr "Les meves macros"
 
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_COMMANDS.FIXEDTEXT.TEXT
-msgid  "Macro name"
-msgstr "Nom de la macro"
-
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.GRP_SELECTOR_DESCRIPTION.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "Descripció"
-
 #: dialogs/about.src#RID_DEFAULTABOUT.MODALDIALOG.TEXT
 msgid  "About %FULLPRODUCTNAME"
 msgstr "Quant a l'%PRODUCTNAME"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PUSHBUTTON.TEXT
+msgid  "License..."
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT_VENDOR.STRING.TEXT
+msgid  "%OOOVENDOR"
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED.STRING.TEXT
+msgid  "This product was created by the OpenOffice community."
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED_VENDOR.STRING.TEXT
+msgid  "This product was created by %OOOVENDOR, based on Apache OpenOffice."
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_ACKNOWLEDGE.STRING.TEXT
+msgid  "The OpenOffice community acknowledges all contributing members, especially those mentioned at"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.MODALDIALOG.TEXT
+msgid  "Readme, License and Notice"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_READMEPAGE.PAGEITEM.TEXT
+msgid  "Readme"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_LICENSEPAGE.PAGEITEM.TEXT
+msgid  "License"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_NOTICEPAGE.PAGEITEM.TEXT
+msgid  "Notice"
+msgstr ""
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.MODALDIALOG.TEXT
 msgid  "Special Characters"
@@ -927,10 +783,6 @@ msgstr "~Text alternatiu"
 msgid  "~Description"
 msgstr "~Descripció"
 
-#: dialogs/dlgname.src#RID_SVXDLG_NAME.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "Nom"
-
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FIXEDTEXT.TEXT
 msgid  "~Name"
 msgstr "~Nom"
@@ -946,10 +798,6 @@ msgstr "~Títol"
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FIXEDTEXT.TEXT
 msgid  "~Description"
 msgstr "~Descripció"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.MODALDIALOG.TEXT
-msgid  "Record Search"
-msgstr "Cerca de registres"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FIXEDLINE.TEXT
 msgid  "Search for"
@@ -1015,10 +863,6 @@ msgstr "~Expressió comodí"
 msgid  "Regular expression"
 msgstr "Expressió ~regular"
 
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CHECKBOX.TEXT
-msgid  "Similarity Search"
-msgstr "Cerca per similitud"
-
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PUSHBUTTON.TEXT
 msgid  "..."
 msgstr "..."
@@ -1034,10 +878,6 @@ msgstr "Semblança fonètica (japonès)"
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FIXEDLINE.TEXT
 msgid  "State"
 msgstr "Estat"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FIXEDTEXT.TEXT
-msgid  "Record :"
-msgstr "Registre:"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PUSHBUTTON.TEXT
 msgid  "Search"
@@ -1111,18 +951,6 @@ msgstr "Fitxers"
 msgid  "Type:"
 msgstr "Tipus:"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FIXEDTEXT.TEXT
-msgid  "Location:"
-msgstr "Ubicació:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FIXEDTEXT.TEXT
-msgid  "Contents:"
-msgstr "Continguts:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FIXEDTEXT.TEXT
-msgid  "Modified:"
-msgstr "Modificat:"
-
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FIXEDTEXT.TEXT
 msgid  "~File type"
 msgstr "Tipus de ~fitxer"
@@ -1143,14 +971,6 @@ msgstr "~Afegeix-ho tot"
 msgid  "Pr~eview"
 msgstr "Pr~evisualització"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PUSHBUTTON.TEXT
-msgid  "Maddin1"
-msgstr "Maddin1"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PUSHBUTTON.TEXT
-msgid  "Maddin2"
-msgstr "Maddin2"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.MODALDIALOG.TEXT
 msgid  "Enter Title"
 msgstr "Introduïu el títol"
@@ -1159,21 +979,9 @@ msgstr "Introduïu el títol"
 msgid  "Title"
 msgstr "Títol"
 
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.MODALDIALOG.TEXT
-msgid  "Find"
-msgstr "Cerca"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FIXEDLINE.TEXT
-msgid  "Directory"
-msgstr "Directori"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FIXEDLINE.TEXT
 msgid  "File type"
 msgstr "Tipus de fitxer"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.MODALDIALOG.TEXT
-msgid  "Apply"
-msgstr "Aplica"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FIXEDLINE.TEXT
 msgid  "File"
@@ -1255,14 +1063,6 @@ msgstr "Envelliment"
 msgid  "Aging degree"
 msgstr "Grau d'envelliment"
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.MODALDIALOG.TEXT
-msgid  "Posterize"
-msgstr "Redueix la gamma de colors"
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FIXEDTEXT.TEXT
-msgid  "Poster colors"
-msgstr "Redueix el nombre de colors"
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.MODALDIALOG.TEXT
 msgid  "Relief"
 msgstr "Relleu"
@@ -1311,10 +1111,6 @@ msgstr "Han~ja"
 msgid  "Ha~nja"
 msgstr "Ha~nja"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_CONVERSION.FIXEDTEXT.TEXT
-msgid  "Conversion"
-msgstr "Conversió"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_HANGUL_ONLY.CHECKBOX.TEXT
 msgid  "Hangul ~only"
 msgstr "N~omés hangul"
@@ -1326,10 +1122,6 @@ msgstr "Nomé~s hanja"
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_REPLACE_BY_CHARACTER.CHECKBOX.TEXT
 msgid  "Replace b~y character"
 msgstr "Reemplaça pe~r un caràcter"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANGUL.STRING.TEXT
-msgid  "Hangul"
-msgstr "Hangul"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANJA.STRING.TEXT
 msgid  "Hanja"
@@ -1359,10 +1151,6 @@ msgstr "Mostra primer les entrades més recents"
 msgid  "Replace all unique entries automatically"
 msgstr "Reemplaça automàticament les entrades úniques"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "Nou..."
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_EDIT.PUSHBUTTON.TEXT
 msgid  "Edit..."
 msgstr "Edita..."
@@ -1371,53 +1159,21 @@ msgstr "Edita..."
 msgid  "Delete"
 msgstr "Suprimeix"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.MODALDIALOG.TEXT
-msgid  "New Dictionary"
-msgstr "Diccionari nou"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FL_NEWDICT.FIXEDLINE.TEXT
-msgid  "Dictionary"
-msgstr "Diccionari"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 msgid  "~Name"
 msgstr "~Nom"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.MODALDIALOG.TEXT
-msgid  "Edit Custom Dictionary"
-msgstr "Edita el diccionari personalitzat"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.STR_EDITHINT.STRING.TEXT
 msgid  "[Enter text here]"
 msgstr "[Introduïu el text]"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_BOOK.FIXEDTEXT.TEXT
-msgid  "Book"
-msgstr "Llibre"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_ORIGINAL.FIXEDTEXT.TEXT
 msgid  "Original"
 msgstr "Original"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_SUGGESTIONS.FIXEDTEXT.TEXT
-msgid  "Suggestions (max. 8)"
-msgstr "Suggeriments (màx. 8)"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_NEW.PUSHBUTTON.TEXT
-msgid  "New"
-msgstr "Nou"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CANCELBUTTON.TEXT
 msgid  "Close"
 msgstr "Tanca"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.MODALDIALOG.TEXT
-msgid  "Target in Document"
-msgstr "Objectiu en el document"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_APPLY.PUSHBUTTON.TEXT
-msgid  "Apply"
-msgstr "Aplica"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
@@ -1495,10 +1251,6 @@ msgstr "F~ormulari"
 msgid  "Text"
 msgstr "Text"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Button"
-msgstr "Botó"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FIXEDTEXT.TEXT
 msgid  "Te~xt"
 msgstr "Te~xt"
@@ -1510,10 +1262,6 @@ msgstr "N~om"
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Events"
 msgstr "Esdeveniments"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FIXEDLINE.TEXT
-msgid  "Mail & news"
-msgstr "Correu i notícies"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_MAIL.RADIOBUTTON.TEXT
 msgid  "~E-mail"
@@ -1535,10 +1283,6 @@ msgstr "~Assumpte"
 msgid  "Data Sources..."
 msgstr "Fonts de dades..."
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FIXEDLINE.TEXT
-msgid  "Document"
-msgstr "Document"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_PATH_DOC.FIXEDTEXT.TEXT
 msgid  "~Path"
 msgstr "~Camí"
@@ -1547,25 +1291,13 @@ msgstr "~Camí"
 msgid  "Open File"
 msgstr "Obre el fitxer"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_TARGET.FIXEDLINE.TEXT
-msgid  "Target in document"
-msgstr "Objectiu en el document"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TARGET_DOC.FIXEDTEXT.TEXT
 msgid  "Targ~et"
 msgstr "Objec~tiu"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_URL.FIXEDTEXT.TEXT
-msgid  "URL"
-msgstr "URL"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FIXEDTEXT.TEXT
 msgid  "Test text"
 msgstr "Text de verificació"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_NEWDOCUMENT.FIXEDLINE.TEXT
-msgid  "New document"
-msgstr "Document nou"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.RB_EDITNOW.RADIOBUTTON.TEXT
 msgid  "Edit ~now"
@@ -1586,10 +1318,6 @@ msgstr "~Tipus de fitxer"
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Select Path"
 msgstr "Selecciona el camí"
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_APPLYBUT.STRING.TEXT
-msgid  "Apply"
-msgstr "Aplica"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_CLOSEBUT.STRING.TEXT
 msgid  "Close"
@@ -1619,10 +1347,6 @@ msgstr "Internet"
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
 msgstr "Aquí podeu crear un enllaç a una pàgina web, a un servidor d'FTP o a una connexió telnet."
 
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.STRING.TEXT
-msgid  "Mail & News"
-msgstr "Correu i notícies"
-
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
 msgstr "Aquí podeu crear un enllaç a una adreça electrònica o a un grup de notícies."
@@ -1630,10 +1354,6 @@ msgstr "Aquí podeu crear un enllaç a una adreça electrònica o a un grup de n
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
 msgstr "Aquí podeu crear un enllaç a un document existent o a un objectiu dins d'un document."
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.STRING.TEXT
-msgid  "New Document"
-msgstr "Document nou"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.STRING.TEXT
 msgid  "This is where you create a new document to which the new link points."
@@ -1691,10 +1411,6 @@ msgstr "A~bans"
 msgid  "A~fter"
 msgstr "Desp~rés"
 
-#: dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "Posició"
-
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FIXEDTEXT.TEXT
 msgid  "~Number"
 msgstr "~Nombre"
@@ -1746,10 +1462,6 @@ msgstr "Fitxers"
 #: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_TITLE.STRING.TEXT
 msgid  "Select Archives"
 msgstr "Seleccioneu els arxius"
-
-#: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.STRING.TEXT
-msgid  "Archives"
-msgstr "Arxius"
 
 #: dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.STRING.TEXT
 msgid  "The file %1 already exists."
@@ -1835,10 +1547,6 @@ msgstr "Autor"
 msgid  "~Text"
 msgstr "~Text"
 
-#: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FIXEDLINE.TEXT
-msgid  "Contents"
-msgstr "Contingut"
-
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FIXEDTEXT.TEXT
 msgid  "~Insert"
 msgstr "~Insereix"
@@ -1899,17 +1607,9 @@ msgstr "Crea una biblioteca"
 msgid  "Enter the name for the new library."
 msgstr "Introduïu el nom per a la nova biblioteca."
 
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWMACRO.STRING.TEXT
-msgid  "Create Macro"
-msgstr "Crea una macro"
-
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_NEWMACRO.STRING.TEXT
 msgid  "Enter the name for the new macro."
 msgstr "Introduïu el nom per a la nova macro."
-
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_RENAME.STRING.TEXT
-msgid  "Rename"
-msgstr "Canvia el nom"
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_RENAME.STRING.TEXT
 msgid  "Enter the new name for the selected object."
@@ -1947,10 +1647,6 @@ msgstr " Ja existeix un objecte amb el mateix nom."
 msgid  " You do not have permission to create this object."
 msgstr " No teniu permís per crear aquest objecte."
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILED_TITLE.STRING.TEXT
-msgid  "Error Creating Object"
-msgstr "Error en crear l'objecte"
-
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED.STRING.TEXT
 msgid  "The object could not be renamed."
 msgstr "No s'ha pogut reanomenar l'objecte."
@@ -1958,10 +1654,6 @@ msgstr "No s'ha pogut reanomenar l'objecte."
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILEDPERM.STRING.TEXT
 msgid  " You do not have permission to rename this object."
 msgstr " No teniu permís per reanomenar l'objecte."
-
-#: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED_TITLE.STRING.TEXT
-msgid  "Error Renaming Object"
-msgstr "S'ha produït un error en canviar el nom de l'objecte"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME Error"
@@ -1999,10 +1691,6 @@ msgstr "S'ha produït un error en l'entorn d'scripts en executar l'script %LANGU
 msgid  "Type:"
 msgstr "Tipus:"
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_MESSAGE_LABEL.STRING.TEXT
-msgid  "Message:"
-msgstr "Missatge:"
-
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TABDIALOG.TEXT
 msgid  "Format Cells"
 msgstr "Formata les cel·les"
@@ -2014,14 +1702,6 @@ msgstr "Tipus de lletra"
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
 msgid  "Font Effects"
 msgstr "Efectes de lletra"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-msgid  "Borders"
-msgstr "Vores"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-msgid  "Background"
-msgstr "Fons"
 
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PUSHBUTTON.TEXT
 msgid  "Return"
@@ -2103,10 +1783,6 @@ msgstr "~Tanca"
 msgid  "Resu~me"
 msgstr "Contin~ua"
 
-#: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.STRING.TEXT
-msgid  "(no suggestions)"
-msgstr "(cap suggeriment)"
-
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.STRING.TEXT
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
 msgstr "Ortografia: $LANGUAGE ($LOCATION)"
@@ -2159,10 +1835,6 @@ msgstr "Tipus de lletra"
 msgid  "Font Effects"
 msgstr "Efectes de lletra"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-msgid  "Position"
-msgstr "Posició"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PAGEITEM.TEXT
 msgid  "Asian Layout"
 msgstr "Disposició asiàtica"
@@ -2183,21 +1855,9 @@ msgstr "Flux del text"
 msgid  "Asian Typography"
 msgstr "Tipografia asiàtica"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
-msgstr "Fons"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.MODALDIALOG.TEXT
-msgid  "Attributes"
-msgstr "Atributs"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FIXEDTEXT.TEXT
 msgid  "~Options"
 msgstr "~Opcions"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.MODALDIALOG.TEXT
-msgid  "Similarity Search"
-msgstr "Cerca per similitud"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FIXEDTEXT.TEXT
 msgid  "~Exchange characters"
@@ -2223,17 +1883,9 @@ msgstr "Paràmetres"
 msgid  "Paste Special"
 msgstr "Enganxament especial"
 
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FIXEDTEXT.TEXT
-msgid  "Source:"
-msgstr "Font:"
-
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RADIOBUTTON.TEXT
 msgid  "~Insert as"
 msgstr "~Insereix com a"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RADIOBUTTON.TEXT
-msgid  "Link to"
-msgstr "Enllaç a"
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CHECKBOX.TEXT
 msgid  "~As icon"
@@ -2246,10 +1898,6 @@ msgstr "~Una altra icona..."
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.FL_CHOICE.FIXEDLINE.TEXT
 msgid  "Selection"
 msgstr "Selecció"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.STRING.TEXT
-msgid  "Object"
-msgstr "Objecte"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.MODALDIALOG.TEXT
 msgid  "Edit Links"
@@ -2266,10 +1914,6 @@ msgstr "Element:"
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE.FIXEDTEXT.TEXT
 msgid  "Type"
 msgstr "Tipus"
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FIXEDTEXT.TEXT
-msgid  "Status"
-msgstr "Estat"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CANCELBUTTON.TEXT
 msgid  "~Close"
@@ -2423,10 +2067,6 @@ msgstr "~Desactivada"
 msgid  "Au~tomatic"
 msgstr "Au~tomàtic"
 
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FIXEDLINE.TEXT
-msgid  "Scroll bar"
-msgstr "Barra de desplaçament"
-
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RADIOBUTTON.TEXT
 msgid  "On"
 msgstr "Activada"
@@ -2434,10 +2074,6 @@ msgstr "Activada"
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_OFF.RADIOBUTTON.TEXT
 msgid  "Off"
 msgstr "Desactivada"
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FIXEDLINE.TEXT
-msgid  "Border"
-msgstr "Vora"
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FIXEDTEXT.TEXT
 msgid  "~Width"
@@ -2463,21 +2099,9 @@ msgstr "Espaiat al contingut"
 msgid  "Select File for Floating Frame"
 msgstr "Seleccioneu un fitxer per al marc flotant"
 
-#: dialogs/svuidlg.src#STR_EDIT_APPLET.STRING.TEXT
-msgid  "Edit Applet"
-msgstr "Edita la miniaplicació"
-
-#: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.MODALDIALOG.TEXT
-msgid  "Record Number"
-msgstr "Número de registre"
-
 #: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FIXEDTEXT.TEXT
 msgid  "go to record"
 msgstr "vés al registre"
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MODALDIALOG.TEXT
-msgid  "Thesaurus"
-msgstr "Tesaurus"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_WORD.FIXEDTEXT.TEXT
 msgid  "~Current word"
@@ -2494,10 +2118,6 @@ msgstr "~Alternatives"
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_REPL.FIXEDTEXT.TEXT
 msgid  "~Replace with"
 msgstr "~Reemplaça per"
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.BTN_THES_OK.OKBUTTON.TEXT
-msgid  "Replace"
-msgstr "Reemplaça"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.STR_ERR_TEXTNOTFOUND.STRING.TEXT
 msgid  "No alternatives found."
@@ -2559,10 +2179,6 @@ msgstr "Habilita la disponibilitat de connexions"
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "Controladors coneguts a l'%PRODUCTNAME"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FIXEDTEXT.TEXT
-msgid  "Current driver:"
-msgstr "Controlador actual:"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CHECKBOX.TEXT
 msgid  "Enable pooling for this driver"
 msgstr "Habilita les connexions disponibles per a aquest controlador"
@@ -2571,10 +2187,6 @@ msgstr "Habilita les connexions disponibles per a aquest controlador"
 msgid  "Timeout (seconds)"
 msgstr "Temps d'espera (segons)"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.STRING.TEXT
-msgid  "Driver name"
-msgstr "Nom del controlador"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.STRING.TEXT
 msgid  "Pool"
 msgstr "Disponibles"
@@ -2582,14 +2194,6 @@ msgstr "Disponibles"
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.STRING.TEXT
 msgid  "Timeout"
 msgstr "Temps d'espera"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.STRING.TEXT
-msgid  "Yes"
-msgstr "Sí"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.STRING.TEXT
-msgid  "No"
-msgstr "No"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.TABPAGE.TEXT
 msgid  "Registered databases"
@@ -2663,10 +2267,6 @@ msgstr "~Tipus de lletra"
 msgid  "Re~place with"
 msgstr "Reemplaça ~per"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.TOOLBOXITEM.TEXT
-msgid  "Apply"
-msgstr "Aplica"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.TOOLBOXITEM.TEXT
 msgid  "Delete"
 msgstr "Suprimeix"
@@ -2687,10 +2287,6 @@ msgstr "Només tipus de lletra no proporcionals"
 msgid  "~Size"
 msgstr "~Mida"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.STRING.TEXT
-msgid  "Always"
-msgstr "Sempre"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.STRING.TEXT
 msgid  "Screen only"
 msgstr "Pantalla"
@@ -2699,17 +2295,9 @@ msgstr "Pantalla"
 msgid  "Font"
 msgstr "Tipus de lletra"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.STRING.TEXT
-msgid  "Replace with"
-msgstr "Reemplaça per"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.STRING.TEXT
 msgid  "Automatic"
 msgstr "Automàtic"
-
-#: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FIXEDLINE.TEXT
-msgid  "Default text direction"
-msgstr "Direcció del text per defecte"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RADIOBUTTON.TEXT
 msgid  "~Left-to-right"
@@ -2754,10 +2342,6 @@ msgstr "Permet ~text animat"
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CHECKBOX.TEXT
 msgid  "~Help tips disappear after "
 msgstr "Els consells d'ajuda desapareixeran després de "
-
-#: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FIXEDTEXT.TEXT
-msgid  "seconds"
-msgstr "segons"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FIXEDLINE.TEXT
 msgid  "Options for high contrast appearance"
@@ -2831,10 +2415,6 @@ msgstr "Sense caràcter de canvi de fila definit per l'usuari"
 msgid  "Proxy"
 msgstr "Servidor intermediari"
 
-#: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TABPAGE.TEXT
-msgid  "Default Colors"
-msgstr "Colors per defecte"
-
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FIXEDLINE.TEXT
 msgid  "Chart colors"
 msgstr "Colors del diagrama"
@@ -2851,14 +2431,6 @@ msgstr "~Per defecte"
 msgid  "Data Series $(ROW)"
 msgstr "Sèrie de dades $(ROW)"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FIXEDLINE.TEXT
-msgid  "Color scheme"
-msgstr "Esquema de color"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FIXEDTEXT.TEXT
-msgid  "Scheme"
-msgstr "Esquema"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PUSHBUTTON.TEXT
 msgid  "Save..."
 msgstr "Desa..."
@@ -2866,10 +2438,6 @@ msgstr "Desa..."
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_DELETESCHEME.PUSHBUTTON.TEXT
 msgid  "Delete"
 msgstr "Suprimeix"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FIXEDLINE.TEXT
-msgid  "Custom colors"
-msgstr "Colors personalitzats"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.STRING.TEXT
 msgid  "On"
@@ -2887,26 +2455,6 @@ msgstr "Configuració de color"
 msgid  "Preview"
 msgstr "Previsualització"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FIXEDTEXT.TEXT
-msgid  "General"
-msgstr "General"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FIXEDTEXT.TEXT
-msgid  "Document background"
-msgstr "Fons del document"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CHECKBOX.TEXT
-msgid  "Text boundaries"
-msgstr "Límits del text"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FIXEDTEXT.TEXT
-msgid  "Application background"
-msgstr "Fons de l'aplicació"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CHECKBOX.TEXT
-msgid  "Object boundaries"
-msgstr "Límits de l'objecte"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CHECKBOX.TEXT
 msgid  "Table boundaries"
 msgstr "Marcs de taula"
@@ -2914,14 +2462,6 @@ msgstr "Marcs de taula"
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_FONTCOLOR.FIXEDTEXT.TEXT
 msgid  "Font color"
 msgstr "Color de la lletra"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CHECKBOX.TEXT
-msgid  "Unvisited links"
-msgstr "Enllaços no visitats"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CHECKBOX.TEXT
-msgid  "Visited links"
-msgstr "Enllaços visitats"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FIXEDTEXT.TEXT
 msgid  "AutoSpellcheck"
@@ -2955,10 +2495,6 @@ msgstr "Indicador d'script"
 msgid  "Section boundaries"
 msgstr "Límits de secció"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FIXEDTEXT.TEXT
-msgid  "Page and column breaks"
-msgstr "Salts de pàgina i columna"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FIXEDTEXT.TEXT
 msgid  "Direct cursor"
 msgstr "Cursor directe"
@@ -2979,18 +2515,6 @@ msgstr "Realçament dels comentaris"
 msgid  "Keyword highlighting"
 msgstr "Realçament de les paraules clau"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FIXEDTEXT.TEXT
-msgid  "Text"
-msgstr "Text"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FIXEDTEXT.TEXT
-msgid  "Spreadsheet"
-msgstr "Full de càlcul"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FIXEDTEXT.TEXT
-msgid  "Grid lines"
-msgstr "Línies de la graella"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FIXEDTEXT.TEXT
 msgid  "Page breaks"
 msgstr "Salts de pàgina"
@@ -3003,21 +2527,9 @@ msgstr "Salts de pàgina manuals"
 msgid  "Automatic page breaks"
 msgstr "Salts de pàgina automàtics"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FIXEDTEXT.TEXT
-msgid  "Detective"
-msgstr "Detectiu"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FIXEDTEXT.TEXT
 msgid  "Detective error"
 msgstr "Error detectiu"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FIXEDTEXT.TEXT
-msgid  "References"
-msgstr "Referències"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FIXEDTEXT.TEXT
-msgid  "Notes background"
-msgstr "Fons de les notes"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FIXEDTEXT.TEXT
 msgid  "Drawing / Presentation"
@@ -3051,14 +2563,6 @@ msgstr "Operador"
 msgid  "Reserved expression"
 msgstr "Expressió reservada"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FIXEDTEXT.TEXT
-msgid  "Error"
-msgstr "Error"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FIXEDTEXT.TEXT
-msgid  "SQL Syntax Highlighting"
-msgstr "Realçament de la sintaxi SQL"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FIXEDTEXT.TEXT
 msgid  "Keyword"
 msgstr "Paraula clau"
@@ -3091,10 +2595,6 @@ msgstr "Supressió de l'esquema de color"
 msgid  "Save scheme"
 msgstr "Desa l'esquema"
 
-#: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.STRING.TEXT
-msgid  "Name of color scheme"
-msgstr "Nom de l'esquema de color"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TABPAGE.TEXT
 msgid  "Complex Text Layout"
 msgstr "Disposició complexa de text"
@@ -3119,10 +2619,6 @@ msgstr "~Escriu i reemplaça"
 msgid  "Cursor control"
 msgstr "Control del cursor"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FIXEDTEXT.TEXT
-msgid  "Movement"
-msgstr "Moviment"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RADIOBUTTON.TEXT
 msgid  "Lo~gical"
 msgstr "Lò~gic"
@@ -3139,25 +2635,9 @@ msgstr "Opcions generals"
 msgid  "~Numerals"
 msgstr "~Numerals"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM1.STRINGLIST.ITEM
-msgid  "Arabic"
-msgstr "Àrab"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM2.STRINGLIST.ITEM
-msgid  "Hindi"
-msgstr "Hindi"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM3.STRINGLIST.ITEM
-msgid  "System"
-msgstr "Sistema"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM4.STRINGLIST.ITEM
 msgid  "Context"
 msgstr "Context"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.MODALDIALOG.TEXT
-msgid  "New Dictionary"
-msgstr "Diccionari nou"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 msgid  "~Name"
@@ -3170,14 +2650,6 @@ msgstr "~Llengua"
 #: options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CHECKBOX.TEXT
 msgid  "~Exception (-)"
 msgstr "~Excepció (-)"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FIXEDLINE.TEXT
-msgid  "Dictionary"
-msgstr "Diccionari"
-
-#: options/optdict.src#RID_SFXDLG_EDITDICT.MODALDIALOG.TEXT
-msgid  "Edit Custom Dictionary"
-msgstr "Edita el diccionari personalitzat"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FIXEDTEXT.TEXT
 msgid  "~Book"
@@ -3287,10 +2759,6 @@ msgstr "De l'Excel a l'%PRODUCTNAME Calc o a la inversa"
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
 msgstr "Del PowerPoint a l'%PRODUCTNAME Impress o a la inversa"
 
-#: options/optgdlg.src#OFA_TP_MISC.FL_HELP.FIXEDLINE.TEXT
-msgid  "Help"
-msgstr "Ajuda"
-
 #: options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CHECKBOX.TEXT
 msgid  "~Tips"
 msgstr "C~onsells"
@@ -3310,10 +2778,6 @@ msgstr "~Reinicialitza l'Agent d'ajuda"
 #: options/optgdlg.src#OFA_TP_MISC.FT_HELPFORMAT.FIXEDTEXT.TEXT
 msgid  "Help ~formatting"
 msgstr "~Format de l'ajuda"
-
-#: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM1.STRINGLIST.ITEM
-msgid  "Default"
-msgstr "Per defecte"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM2.STRINGLIST.ITEM
 msgid  "High Contrast #1"
@@ -3367,10 +2831,6 @@ msgstr "Diàlegs d'impressió"
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "Utilitza els ~diàlegs de l'%PRODUCTNAME"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FIXEDLINE.TEXT
-msgid  "User Interface"
-msgstr "Interfície d'usuari"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FIXEDTEXT.TEXT
 msgid  "Sc~aling"
 msgstr "Esc~ala"
@@ -3387,14 +2847,6 @@ msgstr "Mida de la icona"
 msgid  "Automatic"
 msgstr "Automàtic"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM2.STRINGLIST.ITEM
-msgid  "Small"
-msgstr "Petita"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM3.STRINGLIST.ITEM
-msgid  "Large"
-msgstr "Gran"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM2.STRINGLIST.ITEM
 msgid  "Galaxy (default)"
 msgstr "Galàxia (per defecte)"
@@ -3402,10 +2854,6 @@ msgstr "Galàxia (per defecte)"
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM3.STRINGLIST.ITEM
 msgid  "High Contrast"
 msgstr "Alt contrast"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM4.STRINGLIST.ITEM
-msgid  "Industrial"
-msgstr "Industrial"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM5.STRINGLIST.ITEM
 msgid  "Classic"
@@ -3422,10 +2870,6 @@ msgstr "Suavitza el tipus de lletra a la pantalla"
 #: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_LABEL.FIXEDTEXT.TEXT
 msgid  "from"
 msgstr "de"
-
-#: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FIXEDTEXT.TEXT
-msgid  "Pixels"
-msgstr "Píxels"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FIXEDLINE.TEXT
 msgid  "Menu"
@@ -3467,17 +2911,9 @@ msgstr "Accelera per maquinari"
 msgid  "Use Anti-Aliasing"
 msgstr "Usa l'antialiàsing"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FIXEDLINE.TEXT
-msgid  "Mouse"
-msgstr "Ratolí"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FIXEDTEXT.TEXT
 msgid  "Mouse positioning"
 msgstr "Posicionament del ratolí"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM1.STRINGLIST.ITEM
-msgid  "Default button"
-msgstr "Botó per defecte"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM2.STRINGLIST.ITEM
 msgid  "Dialog center"
@@ -3494,10 +2930,6 @@ msgstr "Botó central del ratolí"
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM1.STRINGLIST.ITEM
 msgid  "No function"
 msgstr "Cap funció"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM2.STRINGLIST.ITEM
-msgid  "Automatic scrolling"
-msgstr "Desplaçament automàtic"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM3.STRINGLIST.ITEM
 msgid  "Paste clipboard"
@@ -3575,10 +3007,6 @@ msgstr ""
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
 msgstr "S'ha actualitzat la configuració de la llengua de la interfície d'usuari. Els canvis s'aplicaran la propera vegada que inicieu l'%PRODUCTNAME %PRODUCTVERSION"
 
-#: options/optgenrl.src#RID_SFXPAGE_GENERAL.TABPAGE.TEXT
-msgid  "User Data"
-msgstr "Dades de l'usuari"
-
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FIXEDTEXT.TEXT
 msgid  "~Company"
 msgstr "~Empresa"
@@ -3638,6 +3066,10 @@ msgstr "Població/Estat/Codi postal"
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_QUERY_REG.STRING.TEXT
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
 msgstr "Tingueu en compte que el carrer, el codi postal i la població s'utilitzen per generar la clau de registre. No podreu tornar a canviar les dades de l'usuari fins que el registre s'hagi efectuat correctament. Voleu canviar ara les dades de l'usuari?"
+
+#: options/optgenrl.src#RID_SVXQB_CHANGEDATA.QUERYBOX.MESSAGE
+msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgstr ""
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FIXEDTEXT.TEXT
 msgid  "Size ~1"
@@ -3767,14 +3199,6 @@ msgstr "S~ervidor intermediari"
 msgid  "None"
 msgstr "Cap"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM2.STRINGLIST.ITEM
-msgid  "System"
-msgstr "Sistema"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM3.STRINGLIST.ITEM
-msgid  "Manual"
-msgstr "Manual"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.STRING.TEXT
 msgid  "Use browser settings"
 msgstr "Utilitza els paràmetres del navegador"
@@ -3811,14 +3235,6 @@ msgstr "Po~rt"
 msgid  "~No proxy for:"
 msgstr "~Sense servidor intermediari per a:"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FIXEDTEXT.TEXT
-msgid  "Separator ;"
-msgstr "Separador ;"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FIXEDLINE.TEXT
-msgid  "DNS server"
-msgstr "Servidor DNS"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RADIOBUTTON.TEXT
 msgid  "~Automatic"
 msgstr "~Automàtic"
@@ -3834,10 +3250,6 @@ msgstr "no és una entrada vàlida per aquest camp. Escriviu un valor entre 0 i 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_1.STRING.TEXT
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
 msgstr "no és una entrada vàlida per aquest camp. Escriviu un valor entre 1 i 255."
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TABPAGE.TEXT
-msgid  "Search"
-msgstr "Cerca"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FIXEDLINE.TEXT
 msgid  "Search in"
@@ -3879,14 +3291,6 @@ msgstr "~Separador"
 msgid  "~Case match"
 msgstr "~Majúsc./minúsc."
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM2.STRINGLIST.ITEM
-msgid  "Upper"
-msgstr "Majúscules"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM3.STRINGLIST.ITEM
-msgid  "Lower"
-msgstr "Minúscules"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PUSHBUTTON.TEXT
 msgid  "N~ew"
 msgstr "~Nou"
@@ -3906,10 +3310,6 @@ msgstr "~Suprimeix"
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.MSG_MODIFY.STRING.TEXT
 msgid  "Do you want to accept the current modification?"
 msgstr "Voleu acceptar la modificació actual?"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TABPAGE.TEXT
-msgid  "Security"
-msgstr "Seguretat"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FIXEDLINE.TEXT
 msgid  "Security options and warnings"
@@ -3947,10 +3347,6 @@ msgstr "Les contrasenyes estan protegides amb una contrasenya mestra. Se us dema
 msgid  "Master Password..."
 msgstr "Contrasenya mestra..."
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FIXEDLINE.TEXT
-msgid  "Macro security"
-msgstr "Seguretat de macros"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FIXEDTEXT.TEXT
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
 msgstr "Ajusteu el nivell de seguretat per macros en execució i especifiqueu desenvolupadors de macros fiables."
@@ -3962,6 +3358,11 @@ msgstr "Seguretat de macros..."
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.STRING.TEXT
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
 msgstr "Si inhabiliteu l'emmagatzematge permanent de contrasenyes, se suprimirà la llista de contrasenyes desades i es reinicialitzarà la contrasenya mestra.\n\nVoleu suprimir la llista de contrasenyes i reinicialitzar la contrasenya mestra?"
+
+#: options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
+msgstr "Valor no vàlid.\n\nEl valor màxim per a un número de port és 65535."
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FIXEDTEXT.TEXT
 msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
@@ -3982,10 +3383,6 @@ msgstr "Programa d~e correu"
 #: options/optinet2.src#RID_SVXPAGE_INET_MAIL.STR_DEFAULT_FILENAME.STRING.TEXT
 msgid  "All files (*.*)"
 msgstr "Tots els fitxers (*.*)"
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TABPAGE.TEXT
-msgid  "Java"
-msgstr "Java"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FIXEDLINE.TEXT
 msgid  "Java options"
@@ -4010,10 +3407,6 @@ msgstr "~Paràmetres..."
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_CLASSPATH.PUSHBUTTON.TEXT
 msgid  "~Class Path..."
 msgstr "~Camí a les classes..."
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.STRING.TEXT
-msgid  "Location: "
-msgstr "Ubicació: "
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.STRING.TEXT
 msgid  "with accessibility support"
@@ -4051,17 +3444,9 @@ msgstr "~Assigna"
 msgid  "Assig~ned start parameters"
 msgstr "Paràmetres d'inici assig~nats"
 
-#: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FIXEDTEXT.TEXT
-msgid  "For example: -Dmyprop=c:\\program files\\java"
-msgstr "Per exemple: -Dmyprop=c:\\fitxers de programa\\java"
-
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove"
 msgstr "Sup~rimeix"
-
-#: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.MODALDIALOG.TEXT
-msgid  "Class Path"
-msgstr "Camí a les classes"
 
 #: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FIXEDTEXT.TEXT
 msgid  "A~ssigned folders and archives"
@@ -4075,9 +3460,25 @@ msgstr "~Afegeix un arxiu..."
 msgid  "Add ~Folder"
 msgstr "A~fegeix una carpeta"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FIXEDLINE.TEXT
-msgid  "Treat as equal"
-msgstr "Tracta com a iguals"
+#: options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+msgstr "La carpeta que heu seleccionat no conté cap entorn d'execució del Java.\nSeleccioneu una altra carpeta."
+
+#: options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
+msgstr "L'entorn d'execució del Java seleccionat no és de la versió necessària.\nSeleccioneu una altra carpeta."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WARNINGBOX.MESSAGE
+#, fuzzy
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
+msgstr "Per tal que l'entorn d'execució del Java funcioni correctament, cal reiniciar l'%PRODUCTNAME.\nReinicieu l'%PRODUCTNAME."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WARNINGBOX.MESSAGE
+#, fuzzy
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
+msgstr "Heu de reiniciar l'%PRODUCTNAME per aplicar els valors nous o modificats.\nReinicieu l'%PRODUCTNAME."
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CHECKBOX.TEXT
 msgid  "~uppercase/lowercase"
@@ -4143,10 +3544,6 @@ msgstr "~ki/ku (tekisuto/tekusuto)"
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "Vocals perllon~gades (ka-/kaa)"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FIXEDLINE.TEXT
-msgid  "Ignore"
-msgstr "Ignora"
-
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CHECKBOX.TEXT
 msgid  "Pu~nctuation characters"
 msgstr "Caràcters de pu~ntuació"
@@ -4158,10 +3555,6 @@ msgstr "Caràcters d'~espaiat"
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_MIDDLE_DOT.CHECKBOX.TEXT
 msgid  "Midd~le dots"
 msgstr "Punts de~l mig"
-
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CHECKBOX.TEXT
-msgid  "Searching in Japanese"
-msgstr "Cerca en japonès"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.MODALDIALOG.TEXT
 msgid  "Edit Modules"
@@ -4202,10 +3595,6 @@ msgstr "Ortografia"
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_HYPH.STRING.TEXT
 msgid  "Hyphenation"
 msgstr "Partició de mots"
-
-#: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.STRING.TEXT
-msgid  "Thesaurus"
-msgstr "Tesaurus"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.STRING.TEXT
 msgid  "Grammar"
@@ -4259,21 +3648,9 @@ msgstr "~Opcions"
 msgid  "Edi~t..."
 msgstr "Edi~ta..."
 
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.STRING.TEXT
-msgid  "Check uppercase words"
-msgstr "Comprova les paraules en majúscules"
-
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.STRING.TEXT
 msgid  "Check words with numbers "
 msgstr "Verifica les paraules amb xifres "
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.STRING.TEXT
-msgid  "Check capitalization"
-msgstr "Comprova l'ús de majúscules"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.STRING.TEXT
-msgid  "Check special regions"
-msgstr "Comprova les regions especials"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.STRING.TEXT
 msgid  "Check spelling as you type"
@@ -4319,10 +3696,6 @@ msgstr "Edita les opcions"
 msgid  "Do you want to delete the dictionary?"
 msgstr "Voleu suprimir el diccionari?"
 
-#: options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FIXEDLINE.TEXT
-msgid  "Undo"
-msgstr "Desfés"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FIXEDTEXT.TEXT
 msgid  "Number of steps"
 msgstr "Nombre de passos"
@@ -4335,10 +3708,6 @@ msgstr "Memòria cau d'imatges"
 msgid  "Use for %PRODUCTNAME"
 msgstr "Utilitza per a l'%PRODUCTNAME"
 
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FIXEDTEXT.TEXT
-msgid  "MB"
-msgstr "MB"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FIXEDTEXT.TEXT
 msgid  "Memory per object"
 msgstr "Memòria per objecte"
@@ -4346,10 +3715,6 @@ msgstr "Memòria per objecte"
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME.FIXEDTEXT.TEXT
 msgid  "Remove from memory after"
 msgstr "Suprimeix de la memòria després de"
-
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FIXEDTEXT.TEXT
-msgid  "hh:mm"
-msgstr "hh:mm"
 
 #: options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FIXEDLINE.TEXT
 msgid  "Cache for inserted objects"
@@ -4399,6 +3764,11 @@ msgstr "Camins utilitzats per l'%PRODUCTNAME"
 msgid  "Edit Paths: %1"
 msgstr "Edita els camins: %1"
 
+#: options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
+msgstr "Els directoris de configuració i de correu han de ser diferents.\nIndiqueu un altre camí."
+
 #: options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.STRING.TEXT
 msgid  "Configuration"
 msgstr "Configuració"
@@ -4406,22 +3776,6 @@ msgstr "Configuració"
 #: options/optpath.src#RID_SVXSTR_KEY_WORK_PATH.STRING.TEXT
 msgid  "My Documents"
 msgstr "Els meus documents"
-
-#: options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.STRING.TEXT
-msgid  "Graphics"
-msgstr "Gràfics"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.STRING.TEXT
-msgid  "Icons"
-msgstr "Icones"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.STRING.TEXT
-msgid  "Palettes"
-msgstr "Paletes"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.STRING.TEXT
-msgid  "Backups"
-msgstr "Còpies de seguretat"
 
 #: options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.STRING.TEXT
 msgid  "Modules"
@@ -4435,33 +3789,13 @@ msgstr "Plantilles"
 msgid  "AutoText"
 msgstr "Text automàtic"
 
-#: options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.STRING.TEXT
-msgid  "Dictionaries"
-msgstr "Diccionaris"
-
-#: options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.STRING.TEXT
-msgid  "Help"
-msgstr "Ajuda"
-
 #: options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.STRING.TEXT
 msgid  "Gallery"
 msgstr "Galeria"
 
-#: options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.STRING.TEXT
-msgid  "Message Storage"
-msgstr "Emmagatzematge de missatges"
-
 #: options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.STRING.TEXT
 msgid  "Temporary files"
 msgstr "Fitxers temporals"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.STRING.TEXT
-msgid  "Plug-ins"
-msgstr "Connectors"
-
-#: options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.STRING.TEXT
-msgid  "Folder Bookmarks"
-msgstr "Carpeta d'adreces d'interès"
 
 #: options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.STRING.TEXT
 msgid  "Filters"
@@ -4514,10 +3848,6 @@ msgstr "Fes sempre una ~còpia de seguretat"
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_AUTOSAVE.CHECKBOX.TEXT
 msgid  "Save ~AutoRecovery information every"
 msgstr "Desa la informació de restabliment automàtic cada"
-
-#: options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FIXEDTEXT.TEXT
-msgid  "Minutes"
-msgstr "minuts"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CHECKBOX.TEXT
 msgid  "Save URLs relative to file system"
@@ -4575,10 +3905,6 @@ msgstr "Document HTML"
 msgid  "Master document"
 msgstr "Document mestre"
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.STRINGLIST.ITEM
-msgid  "Spreadsheet"
-msgstr "Full de càlcul"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.STRINGLIST.ITEM
 msgid  "Presentation"
 msgstr "Presentació"
@@ -4607,10 +3933,6 @@ msgstr "Verificació ortogràfica"
 msgid  "~Edit..."
 msgstr "~Edita..."
 
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FIXEDLINE.TEXT
-msgid  "Dictionaries"
-msgstr "Diccionaris"
-
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CHECKBOX.TEXT
 msgid  "~Capital words"
 msgstr "Paraules amb majús~cules"
@@ -4622,10 +3944,6 @@ msgstr "~Paraules amb xifres "
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_UPLOW.CHECKBOX.TEXT
 msgid  "~Case sensitive "
 msgstr "Majús~cules i minúscules"
-
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FIXEDLINE.TEXT
-msgid  "Check"
-msgstr "Comprova"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TABPAGE.TEXT
 msgid  "OnlineUpdate"
@@ -4783,14 +4101,6 @@ msgstr "Configureu aquí els paràmetres generals per accedir a fonts de dades e
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
 msgstr "Configureu aquí els paràmetres generals per obrir i desar documents en formats externs. Podeu controlar el comportament de les macros o dels objectes OLE als documents del Microsoft Office o definir els paràmetres per als documents HTML."
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ITEMLIST.ITEM
-msgid  "%PRODUCTNAME"
-msgstr "%PRODUCTNAME"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ITEMLIST.ITEM
-msgid  "User Data"
-msgstr "Dades de l'usuari"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ITEMLIST.ITEM
 msgid  "General"
 msgstr "General"
@@ -4811,17 +4121,9 @@ msgstr "Impressió"
 msgid  "Paths"
 msgstr "Camins"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ITEMLIST.ITEM
-msgid  "Colors"
-msgstr "Colors"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ITEMLIST.ITEM
 msgid  "Fonts"
 msgstr "Tipus de lletra"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ITEMLIST.ITEM
-msgid  "Security"
-msgstr "Seguretat"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ITEMLIST.ITEM
 msgid  "Appearance"
@@ -4831,10 +4133,6 @@ msgstr "Aparença"
 msgid  "Accessibility"
 msgstr "Accessibilitat"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ITEMLIST.ITEM
-msgid  "Java"
-msgstr "Java"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ITEMLIST.ITEM
 msgid  "Network Identity"
 msgstr "Identitat de xarxa"
@@ -4843,10 +4141,6 @@ msgstr "Identitat de xarxa"
 msgid  "Online Update"
 msgstr "Actualització en línia"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ITEMLIST.ITEM
-msgid  "Language Settings"
-msgstr "Configuració de la llengua"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ITEMLIST.ITEM
 msgid  "Languages"
 msgstr "Llengües"
@@ -4854,10 +4148,6 @@ msgstr "Llengües"
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SFXPAGE_LINGU.ITEMLIST.ITEM
 msgid  "Writing Aids"
 msgstr "Ajudes a l'escriptura"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ITEMLIST.ITEM
-msgid  "Searching in Japanese"
-msgstr "Cerca en japonès"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ITEMLIST.ITEM
 msgid  "Asian Layout"
@@ -4874,14 +4164,6 @@ msgstr "Internet"
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_PROXY.ITEMLIST.ITEM
 msgid  "Proxy"
 msgstr "Servidor intermediari"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ITEMLIST.ITEM
-msgid  "Search"
-msgstr "Cerca"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ITEMLIST.ITEM
-msgid  "E-mail"
-msgstr "Correu electrònic"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Writer"
@@ -4931,10 +4213,6 @@ msgstr "Adreça electrònica de la combinació de correu"
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ITEMLIST.ITEM
-msgid  "Background"
-msgstr "Fons"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Math"
 msgstr "%PRODUCTNAME Math"
@@ -4942,14 +4220,6 @@ msgstr "%PRODUCTNAME Math"
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.SID_SM_TP_PRINTOPTIONS.ITEMLIST.ITEM
 msgid  "Settings"
 msgstr "Paràmetres"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ITEMLIST.ITEM
-msgid  "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Calc"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ITEMLIST.ITEM
-msgid  "International"
-msgstr "Internacional"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ITEMLIST.ITEM
 msgid  "Calculate"
@@ -4967,25 +4237,9 @@ msgstr "%PRODUCTNAME Impress"
 msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME Draw"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ITEMLIST.ITEM
-msgid  "Charts"
-msgstr "Diagrames"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ITEMLIST.ITEM
-msgid  "Default Colors"
-msgstr "Colors per defecte"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ITEMLIST.ITEM
 msgid  "Load/Save"
 msgstr "Carrega/desa"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ITEMLIST.ITEM
-msgid  "VBA Properties"
-msgstr "Propietats VBA"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ITEMLIST.ITEM
-msgid  "Microsoft Office"
-msgstr "Microsoft Office"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ITEMLIST.ITEM
 msgid  "HTML Compatibility"
@@ -5006,10 +4260,6 @@ msgstr "Bases de dades"
 #: options/treeopt.src#RID_RIDER_SLL_SITE.STRING.TEXT
 msgid  "Site certificates"
 msgstr "Certificats de llocs"
-
-#: options/treeopt.src#RID_RIDER_SLL_PERSONAL.STRING.TEXT
-msgid  "Personal certificates"
-msgstr "Certificats de persones"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.MODALDIALOG.TEXT
 msgid  "Stored Web Connection Information"
@@ -5048,11 +4298,6 @@ msgstr "Nom d'usuari"
 msgid  "Alignment"
 msgstr "Alineació"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text alignment"
-msgstr "Alineació del text"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Hori~zontal"
@@ -5063,30 +4308,10 @@ msgstr "Horit~zontal"
 msgid  "Default"
 msgstr "Per defecte"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "Esquerra"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Center"
-msgstr "Centre"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "Dreta"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Justified"
 msgstr "Justificada"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Filled"
-msgstr "Emplenat"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5097,16 +4322,6 @@ msgstr "Sag~na"
 #, fuzzy
 msgid  "~Vertical"
 msgstr "~Vertical"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "Superior"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "Centre"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.STRINGLIST.ITEM
 #, fuzzy
@@ -5137,11 +4352,6 @@ msgstr "Vora de re~ferència"
 #, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "~Disposició vertical asiàtica"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Propietats"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TRISTATEBOX.TEXT
 #, fuzzy
@@ -5188,11 +4398,6 @@ msgstr "Correcció automàtica"
 msgid  "Replace"
 msgstr "Reemplaça"
 
-#: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Exceptions"
-msgstr "Excepcions"
-
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Options"
@@ -5228,11 +4433,6 @@ msgstr "Utilitza la taula de reemplaçament"
 msgid  "Correct TWo INitial CApitals"
 msgstr "Corregeix DUes MAjúscules al COmençament de PAraula"
 
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.STRING.TEXT
-#, fuzzy
-msgid  "Capitalize first letter of every sentence"
-msgstr "Converteix en majúscula la primera lletra de cada frase"
-
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.STRING.TEXT
 #, fuzzy
 msgid  "Automatic *bold* and _underline_"
@@ -5242,11 +4442,6 @@ msgstr "Converteix en *negreta* i _subratllat_ automàticament"
 #, fuzzy
 msgid  "Ignore double spaces"
 msgstr "Ignora els espais dobles"
-
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.STRING.TEXT
-#, fuzzy
-msgid  "URL Recognition"
-msgstr "Reconeix els URL"
 
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.STRING.TEXT
 #, fuzzy
@@ -5263,16 +4458,6 @@ msgstr "Paràmetres"
 msgid  "~Edit..."
 msgstr "~Edita..."
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "[M]"
-msgstr "[M]"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.STRING.TEXT
-#, fuzzy
-msgid  "[T]"
-msgstr "[T]"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "[M]: Replace while modifying existing text"
@@ -5287,11 +4472,6 @@ msgstr "[T]: Formata i corregeix automàticament mentre s'escriu"
 #, fuzzy
 msgid  "Remove blank paragraphs"
 msgstr "Suprimeix els paràgrafs en blanc"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.STRING.TEXT
-#, fuzzy
-msgid  "Replace Custom Styles"
-msgstr "Reemplaça els estils personalitzats"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.STRING.TEXT
 #, fuzzy
@@ -5317,11 +4497,6 @@ msgstr "Aplica una vora"
 #, fuzzy
 msgid  "Create table"
 msgstr "Crea una taula"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "Apply Styles"
-msgstr "Aplica els estils"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.STRING.TEXT
 #, fuzzy
@@ -5382,11 +4557,6 @@ msgstr "Abreviacions (sense majúscula a continuació)"
 #, fuzzy
 msgid  "~AutoInclude"
 msgstr "Inclusió a~utomàtica"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Words with TWo INitial CApitals"
-msgstr "Paraules amb dues majúscules inicials"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PUSHBUTTON.TEXT
 #, fuzzy
@@ -5488,11 +4658,6 @@ msgstr "Cometa inicial"
 msgid  "End quote"
 msgstr "Cometa final"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "Per defecte"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
 #, fuzzy
 msgid  "Single quotes default"
@@ -5578,30 +4743,15 @@ msgstr "Etiqueta el text amb etiquetes intel·ligents"
 msgid  "Currently installed smart tags"
 msgstr "Etiquetes intel·ligents instal·lades actualment"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Properties..."
-msgstr "Propietats..."
-
 #: tabpages/backgrnd.src#UNLINKED_IMAGE.#DEFINE.TEXT
 #, fuzzy
 msgid  "Unlinked graphic"
 msgstr "Gràfic no enllaçat"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TABPAGE.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Fons"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "A~s"
 msgstr "C~om a"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "Color"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -5613,35 +4763,10 @@ msgstr "Gràfic"
 msgid  "F~or"
 msgstr "P~er a"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cell"
-msgstr "Cel·la"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Row"
-msgstr "Fila"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Table"
-msgstr "Taula"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Paragraph"
-msgstr "Paràgraf"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Character"
 msgstr "Caràcter"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Background color"
-msgstr "Color del fons"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5698,26 +4823,6 @@ msgstr "Pre~visualització"
 msgid  "Find graphics"
 msgstr "Cerca gràfics"
 
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Border / Background"
-msgstr "Vora / fons"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Vores"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Fons"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.TABPAGE.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Vores"
-
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Line arrangement"
@@ -5732,11 +4837,6 @@ msgstr "Per ~defecte"
 #, fuzzy
 msgid  "~User-defined"
 msgstr "Definit per l'~usuari"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Línia"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5792,16 +4892,6 @@ msgstr "Distàn~cia"
 #, fuzzy
 msgid  "C~olor"
 msgstr "C~olor"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Shadow style"
-msgstr "Estil de l'ombra"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Propietats"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CHECKBOX.TEXT
 #, fuzzy
@@ -5873,31 +4963,6 @@ msgstr "Posa les vores inferior i superior i totes les línies interiors"
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr "Posa les vores esquerra i dreta i totes les línies interiors"
 
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.STRING.TEXT
-#, fuzzy
-msgid  "No Shadow"
-msgstr "Sense ombra"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Right"
-msgstr "Projecta l'ombra cap a la part inferior dreta"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Right"
-msgstr "Projecta l'ombra cap a la part superior dreta"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Left"
-msgstr "Projecta l'ombra cap a la part inferior esquerra"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Left"
-msgstr "Projecta l'ombra cap a la part superior esquerra"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Western text font"
@@ -5922,11 +4987,6 @@ msgstr "~Tipografia"
 #, fuzzy
 msgid  "Normal"
 msgstr "Normal"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Italic"
-msgstr "Cursiva"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -5978,11 +5038,6 @@ msgstr "T~ipografia"
 msgid  "Example"
 msgstr "Exemple"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color"
-msgstr "Color"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Font ~color"
@@ -6023,25 +5078,10 @@ msgstr "Minúscules"
 msgid  "Title"
 msgstr "Títol"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small capitals"
-msgstr "Versaletes"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Relief"
 msgstr "~Relleu"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Embossed"
-msgstr "Estampat en relleu"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Engraved"
-msgstr "Gravat"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TRISTATEBOX.TEXT
 #, fuzzy
@@ -6077,11 +5117,6 @@ msgstr "Únic"
 #, fuzzy
 msgid  "Double"
 msgstr "Doble"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Dotted"
-msgstr "Puntejat"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
 #, fuzzy
@@ -6153,16 +5188,6 @@ msgstr "Color del so~breratllat"
 msgid  "~Strikethrough"
 msgstr "~Ratllat"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With /"
-msgstr "Amb /"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_X.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With X"
-msgstr "Amb X"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Underlining"
@@ -6185,63 +5210,18 @@ msgstr "Marca ~emfàtica"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Dot"
-msgstr "Punt"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Circle"
-msgstr "Cercle"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Disc"
 msgstr "Disc"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Accent"
-msgstr "Accent"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Position"
 msgstr "~Posició"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above text"
-msgstr "Per sobre del text"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below text"
-msgstr "Per sota del text"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.STRING.TEXT
-#, fuzzy
-msgid  "Small Capitals"
-msgstr "Versaletes"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.STRING.TEXT
 #, fuzzy
 msgid  "Outline"
 msgstr "Contorn"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.STRING.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "Ombra"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_BLINKING.STRING.TEXT
-#, fuzzy
-msgid  "Blinking"
-msgstr "Parpelleig"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Posició"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RADIOBUTTON.TEXT
 #, fuzzy
@@ -6272,11 +5252,6 @@ msgstr "Mida de lletra relativa"
 #, fuzzy
 msgid  "Rotation / scaling"
 msgstr "Rotació / escalat"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scaling"
-msgstr "Escalat"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RADIOBUTTON.TEXT
 #, fuzzy
@@ -6310,16 +5285,6 @@ msgstr "Espaiat"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Default"
-msgstr "Per defecte"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Expanded"
-msgstr "Ampliat"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Condensed"
 msgstr "Condensat"
 
@@ -6332,11 +5297,6 @@ msgstr "~per"
 #, fuzzy
 msgid  "~Pair kerning"
 msgstr "Interlletratge ~parell"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Double-lined"
-msgstr "Línies dobles activades"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.CB_TWOLINES.CHECKBOX.TEXT
 #, fuzzy
@@ -6358,26 +5318,6 @@ msgstr "Caràcter i~nicial"
 msgid  "(None)"
 msgstr "(Cap)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  "("
-msgstr "("
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "["
-msgstr "["
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "<"
-msgstr "<"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "{"
-msgstr "{"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Other Characters..."
@@ -6388,26 +5328,6 @@ msgstr "Altres caràcters..."
 msgid  "Final charact~er"
 msgstr "Caràct~er final"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  ")"
-msgstr ")"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "]"
-msgstr "]"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  ">"
-msgstr ">"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "}"
-msgstr "}"
-
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.TABPAGE.TEXT
 #, fuzzy
 msgid  "Connector"
@@ -6417,11 +5337,6 @@ msgstr "Connector"
 #, fuzzy
 msgid  "~Type"
 msgstr "~Tipus"
-
-#: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DELTA.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line skew"
-msgstr "Desplaçament de línies"
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6508,11 +5423,6 @@ msgstr "~Dreta"
 msgid  "Vertical"
 msgstr "Vertical"
 
-#: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "C~ap"
-
 #: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Top"
@@ -6532,16 +5442,6 @@ msgstr "Es~paiat"
 #, fuzzy
 msgid  "~Bottom"
 msgstr "~Inferior"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.STRING.TEXT
-#, fuzzy
-msgid  "Left-to-right"
-msgstr "D'esquerra a dreta"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.STRING.TEXT
-#, fuzzy
-msgid  "Right-to-left"
-msgstr "De dreta a esquerra"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.STRING.TEXT
 #, fuzzy
@@ -6643,11 +5543,6 @@ msgstr "E~spaiat"
 msgid  "~Angle"
 msgstr "~Angle"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Free"
-msgstr "Lliure"
-
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.STRINGLIST.ITEM
 #, fuzzy
 msgid  "30 Degrees"
@@ -6677,16 +5572,6 @@ msgstr "~Extensió"
 #, fuzzy
 msgid  "Optimal"
 msgstr "Òptim"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "Des de la part superior"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From left"
-msgstr "Des de l'esquerra"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.1.STRINGLIST.ITEM
 #, fuzzy
@@ -6722,36 +5607,6 @@ msgstr "Ò~ptim"
 #, fuzzy
 msgid  "Straight Line"
 msgstr "Línia recta"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_2.STRING.TEXT
-#, fuzzy
-msgid  "Angled Line"
-msgstr "Línia angular"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_3.STRING.TEXT
-#, fuzzy
-msgid  "Angled Connector Line"
-msgstr "Línia angular de connexió"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_4.STRING.TEXT
-#, fuzzy
-msgid  "Double-angled line"
-msgstr "Línia angular amb dos angles"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_HORZ_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Top;Middle;Bottom"
-msgstr "Part superior;Centre;Part inferior"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_VERT_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Left;Middle;Right"
-msgstr "Esquerra;Centre;Dreta"
-
-#: tabpages/labdlg.src#_POS_SIZE_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "Posició i mida"
 
 #: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PAGEITEM.TEXT
 #, fuzzy
@@ -6798,11 +5653,6 @@ msgstr "Macros"
 msgid  "Dimensioning"
 msgstr "Dimensionament"
 
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Línia"
-
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_LINE_DIST.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Line ~distance"
@@ -6837,11 +5687,6 @@ msgstr "Mesura sota l'o~bjecte"
 #, fuzzy
 msgid  "Decimal places"
 msgstr "Nombre de decimals"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LABEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Legend"
-msgstr "Llegenda"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6885,58 +5730,13 @@ msgstr "~Categoria"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "All"
-msgstr "Tot"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "User-defined"
-msgstr "Definit per l'usuari"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "Nombre"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Percent"
-msgstr "Percentatge"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Currency"
-msgstr "Moneda"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "Data"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Time"
-msgstr "Temps"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Scientific"
 msgstr "Científic"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Fraction"
-msgstr "Fracció"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Boolean Value"
 msgstr "Valor booleà"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "Text"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_EDFORMAT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6988,11 +5788,6 @@ msgstr "~Llengua"
 msgid  "So~urce format"
 msgstr "Format de la f~ont"
 
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Add"
-msgstr "Afegeix"
-
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Remove"
@@ -7043,16 +5838,6 @@ msgstr "~Numeració"
 msgid  "1, 2, 3, ... "
 msgstr "1, 2, 3... "
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ... "
-msgstr "A, B, C... "
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c..."
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "I, II, III, ... "
@@ -7068,16 +5853,6 @@ msgstr "i, ii, iii... "
 msgid  "A, .., AA, .., AAA, ... "
 msgstr "A, .., AA, .., AAA... "
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, .., aa, .., aaa, ..."
-msgstr "a, .., aa, .., aaa..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bullet"
-msgstr "Pic"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Graphics"
@@ -7087,11 +5862,6 @@ msgstr "Gràfics"
 #, fuzzy
 msgid  "Linked graphics"
 msgstr "Gràfics enllaçats"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "Cap"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.12.STRINGLIST.ITEM
 #, fuzzy
@@ -7283,11 +6053,6 @@ msgstr "Centre del caràcter"
 msgid  "Bottom of character"
 msgstr "Part inferior del caràcter"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "Part superior de la línia"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -7297,11 +6062,6 @@ msgstr "Centre de la línia"
 #, fuzzy
 msgid  "Bottom of line"
 msgstr "Part inferior de la línia"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FL_SAME_LEVEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "All levels"
-msgstr "Tots els nivells"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.CB_SAME_LEVEL.CHECKBOX.TEXT
 #, fuzzy
@@ -7383,11 +6143,6 @@ msgstr "Sagnat a"
 msgid  "Default"
 msgstr "Per defecte"
 
-#: tabpages/numpages.src#RID_STR_EDIT_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Link"
-msgstr "Enllaça"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FL_PAPER_SIZE.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Paper format"
@@ -7433,11 +6188,6 @@ msgstr "Direcció del ~text"
 msgid  "Paper ~tray"
 msgstr "~Safata de paper"
 
-#: tabpages/page.src#RID_SVXPAGE_PAGE.FL_MARGIN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Margins"
-msgstr "Marges"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_LEFT_MARGIN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Left"
@@ -7470,58 +6220,13 @@ msgstr "Format de la pàgina"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Right and left"
-msgstr "Dreta i esquerra"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Mirrored"
 msgstr "Reflectit"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only right"
-msgstr "Només dreta"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only left"
-msgstr "Només esquerra"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "For~mat"
 msgstr "For~mat"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ..."
-msgstr "A, B, C..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "I, II, III, ..."
-msgstr "I, II, III..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "1, 2, 3, ..."
-msgstr "1, 2, 3..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "Cap"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_TBL_ALIGN.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7763,11 +6468,6 @@ msgstr "Pri~mera línia"
 msgid  "~Automatic"
 msgstr "~Automàtic"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_INDENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Indent"
-msgstr "Sagnat"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_TOPDIST.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Ab~ove paragraph"
@@ -7785,28 +6485,8 @@ msgstr "Espaiat"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Single"
-msgstr "Senzill"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "1.5 lines"
 msgstr "1,5 línies"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Double"
-msgstr "Doble"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Proportional"
-msgstr "Proporcional"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "At least"
-msgstr "Mínim"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -7883,21 +6563,6 @@ msgstr "Dre~ta/Sota"
 msgid  "~Last line"
 msgstr "Ú~ltima línia"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "Per defecte"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "Esquerra"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "Centrat"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Expand single word"
@@ -7928,35 +6593,15 @@ msgstr "Automàtica"
 msgid  "Base line"
 msgstr "Línia base"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "Superior"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "Centre"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM5.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Bottom"
 msgstr "Inferior"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Propietats"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_TEXTDIRECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Text ~direction"
 msgstr "~Direcció del text"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Text Flow"
-msgstr "Flux del text"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_HYPHEN.TRISTATEBOX.TEXT
 #, fuzzy
@@ -7983,11 +6628,6 @@ msgstr "Nombre màxim de ~guionets consecutius"
 msgid  "Hyphenation"
 msgstr "Partició de mots"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Breaks"
-msgstr "Salts"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGEBREAK.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Insert"
@@ -7998,30 +6638,10 @@ msgstr "Insereix"
 msgid  "~Type"
 msgstr "~Tipus"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Page"
-msgstr "Pàgina"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Column"
-msgstr "Columna"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKPOSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Position"
 msgstr "Posició"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Before"
-msgstr "Abans"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "After"
-msgstr "Després"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGECOLL.TRISTATEBOX.TEXT
 #, fuzzy
@@ -8093,11 +6713,6 @@ msgstr "Exemple"
 msgid  "Page Style"
 msgstr "Estil de pàgina"
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_GRADIENT.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the gradient:"
-msgstr "Inseriu aquí el nom per al degradat:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_GRADIENT.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the gradient?"
@@ -8128,11 +6743,6 @@ msgstr "Esteu segur que voleu suprimir el mapa de bits?"
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
 msgstr "El mapa de bits s'ha modificat sense haver-lo desat. \nModifiqueu el mapa de bits seleccionat o afegiu-ne un de nou."
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the line style:"
-msgstr "Inseriu aquí el nom per a l'estil de línia:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINESTYLE.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the line style?"
@@ -8143,11 +6753,6 @@ msgstr "Voleu realment suprimir l'estil de línia?"
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
 msgstr "L'estil de línia s'ha modificat sense desar-lo.\nPodeu modificar l'estil de línia seleccionat o afegir-ne un de nou."
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_HATCH.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the hatching:"
-msgstr "Inseriu aquí el nom per a l'ombreig:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_HATCH.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the hatching?"
@@ -8157,16 +6762,6 @@ msgstr "Voleu suprimir l'ombreig?"
 #, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
 msgstr "El tipus d'ombreig s'ha modificat sense haver-lo desat. \nModifiqueu el tipus d'ombreig seleccionat o afegiu-ne un nou tipus."
-
-#: tabpages/strings.src#RID_SVXSTR_CHANGE.STRING.TEXT
-#, fuzzy
-msgid  "Modify"
-msgstr "Modifica"
-
-#: tabpages/strings.src#RID_SVXSTR_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "Afegeix"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_COLOR.STRING.TEXT
 #, fuzzy
@@ -8223,16 +6818,6 @@ msgstr "Voleu suprimir l'extrem de la fletxa?"
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 msgstr "L'extrem de la fletxa s'ha modificat sense haver-lo desat.\nVoleu desar l'extrem de la fletxa ara?"
 
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "Posició i mida"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Mida"
-
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Width"
@@ -8247,11 +6832,6 @@ msgstr "A~lçada"
 #, fuzzy
 msgid  "~Keep ratio"
 msgstr "C~onserva la relació"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "Àncora"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOPAGE.RADIOBUTTON.TEXT
 #, fuzzy
@@ -8277,11 +6857,6 @@ msgstr "~Com a caràcter"
 #, fuzzy
 msgid  "To ~frame"
 msgstr "Al ~marc"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_PROTECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "Protegeix"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_POSITION.TRISTATEBOX.TEXT
 #, fuzzy
@@ -8380,11 +6955,6 @@ msgstr "El·lipsoide"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Quadratic"
-msgstr "Quadràtic"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Square"
 msgstr "Quadrat"
 
@@ -8409,7 +6979,6 @@ msgid  " degrees"
 msgstr " graus"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_BORDER.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Border"
 msgstr "~Vora"
 
@@ -8440,16 +7009,6 @@ msgstr "Emplenament"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "None"
-msgstr "Cap"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "Color"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Hatching"
 msgstr "Ombreig"
 
@@ -8473,11 +7032,6 @@ msgstr "Au~tomàtic"
 msgid  "~Background color"
 msgstr "Color del ~fons"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Mida"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_ORIGINAL.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Original"
@@ -8498,11 +7052,6 @@ msgstr "Ampla~da"
 msgid  "H~eight"
 msgstr "A~lçada"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Posició"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_OFFSET.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~X Offset"
@@ -8522,11 +7071,6 @@ msgstr "~Mosaic"
 #, fuzzy
 msgid  "Auto~Fit"
 msgstr "Aju~stament automàtic"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_OFFSET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Offset"
-msgstr "Desplaçament"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.RBT_ROW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -8663,11 +7207,6 @@ msgstr "Desa la llista de mapes de bits"
 msgid  "Gradients"
 msgstr "Degradats"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Rectangular"
-msgstr "Rectangular"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~From"
@@ -8788,11 +7327,6 @@ msgstr "~Amplada"
 msgid  "~Transparency"
 msgstr "~Transparència"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_LINE_ENDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Arrow styles"
-msgstr "Estils de fletxa"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_ENDS_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "St~yle"
@@ -8819,6 +7353,7 @@ msgid  "Synchroni~ze ends"
 msgstr "Sincronit~za les terminacions"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_EDGE_STYLE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Corner and cap styles"
 msgstr ""
 
@@ -8832,11 +7367,6 @@ msgstr "Estil de cantonada"
 msgid  "Rounded"
 msgstr "Arrodonit"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "- none -"
-msgstr "- cap -"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Mitered"
@@ -8848,14 +7378,17 @@ msgid  "Beveled"
 msgstr "Bisellat"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_CAP_STYLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ca~p style"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Flat"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Round"
 msgstr ""
 
@@ -8868,11 +7401,6 @@ msgstr "Quadrat"
 #, fuzzy
 msgid  "Icon"
 msgstr "Icona"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_NONE.MENUITEM.TEXT
-#, fuzzy
-msgid  "No Symbol"
-msgstr "Sense símbol"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_AUTO.MENUITEM.TEXT
 #, fuzzy
@@ -8949,16 +7477,6 @@ msgstr "Inici al centre"
 msgid  "End with center"
 msgstr "Final al centre"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.TABPAGE.TEXT
-#, fuzzy
-msgid  "Define line styles"
-msgstr "Defineix estils de línia"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FL_DEFINITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Propietats"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FT_TYPE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Type"
@@ -9013,11 +7531,6 @@ msgstr "~Modifica..."
 #, fuzzy
 msgid  "~Delete..."
 msgstr "~Suprimeix..."
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Load Line Styles"
-msgstr "Carrega els estils de línia"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
@@ -9089,26 +7602,6 @@ msgstr "Carrega els estils de fletxa"
 msgid  "Save Arrow Styles"
 msgstr "Desa els estils de fletxa"
 
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Línia"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "Ombra"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Line Styles"
-msgstr "Estils de línia"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Arrow Styles"
-msgstr "Estils de fletxa"
-
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.TABPAGE.TEXT
 #, fuzzy
 msgid  "Tabs"
@@ -9153,11 +7646,6 @@ msgstr "~Caràcter"
 #, fuzzy
 msgid  "Fill character"
 msgstr "Caràcter de farciment"
-
-#: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "C~ap"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_OTHER.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9224,41 +7712,6 @@ msgstr "Desplaçament lateral o vertical"
 msgid  "Scroll Back and Forth"
 msgstr "D'una banda a l'altra"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Scroll In"
-msgstr "Desplaçament cap a l'interior"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DIRECTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Direction"
-msgstr "Direcció"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_UP.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Top"
-msgstr "Cap amunt"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_LEFT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Left"
-msgstr "Cap a l'esquerra"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_RIGHT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Right"
-msgstr "Cap a la dreta"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_DOWN.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Bottom"
-msgstr "Cap a avall"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Propietats"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_START_INSIDE.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "S~tart inside"
@@ -9289,20 +7742,10 @@ msgstr "Increment"
 msgid  "~Pixels"
 msgstr "~Píxels"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DELAY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Delay"
-msgstr "Retard"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_AUTO.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Automatic"
 msgstr "~Automàtic"
-
-#: tabpages/textanim.src#RID_SVXDLG_TEXT.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Text"
 
 #: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
 #, fuzzy
@@ -9369,11 +7812,6 @@ msgstr "~Superior"
 msgid  "~Bottom"
 msgstr "~Inferior"
 
-#: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text anchor"
-msgstr "Àncora de text"
-
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TSB_FULL_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Full ~width"
@@ -9404,11 +7842,6 @@ msgstr "Posició ~Y"
 msgid  "Base point"
 msgstr "Punt base"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Mida"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Wi~dth"
@@ -9424,20 +7857,10 @@ msgstr "A~lçada"
 msgid  "~Keep ratio"
 msgstr "C~onserva la relació"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_PROTECT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "Protegeix"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_SIZEPROTECT.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Size"
 msgstr "~Mida"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ADJUST.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Adapt"
-msgstr "Adapta"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_AUTOGROW_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9449,60 +7872,20 @@ msgstr "~Ajusta el text a l'amplada"
 msgid  "Fit ~height to text"
 msgstr "Aj~usta el text a l'alçada"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "Àncora"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ANCHOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Anchor"
 msgstr "À~ncora"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To paragraph"
-msgstr "Al paràgraf"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "As character"
 msgstr "Com a caràcter"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To page"
-msgstr "A la pàgina"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To frame"
-msgstr "Al marc"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ORIENT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "P~osition"
 msgstr "P~osició"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "Des de la part superior"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above"
-msgstr "A sobre"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "Centrat"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below"
-msgstr "Sota"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM5.STRINGLIST.ITEM
 #, fuzzy
@@ -9519,11 +7902,6 @@ msgstr "Al centre del caràcter"
 msgid  "Bottom of character"
 msgstr "Sota el caràcter"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "Part superior de la línia"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM9.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -9533,11 +7911,6 @@ msgstr "Al centre de la línia"
 #, fuzzy
 msgid  "Bottom of line"
 msgstr "Sota la línia"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Angle"
-msgstr "Angle"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FL_POSITION.FIXEDLINE.TEXT
 #, fuzzy
@@ -9578,11 +7951,6 @@ msgstr "Angle de rotació"
 #, fuzzy
 msgid  "Slant & Corner Radius"
 msgstr "Inclinació i radi de la cantonada"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FL_RADIUS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Corner radius"
-msgstr "Radi de la cantonada"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FT_RADIUS.FIXEDTEXT.TEXT
 #, fuzzy

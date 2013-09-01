@@ -63,10 +63,6 @@ msgstr "ال~فئة"
 msgid  "Function"
 msgstr "الدالة"
 
-#: customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#DEFINE.TEXT
-msgid  "Functions"
-msgstr "الدوال"
-
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FIXEDLINE.TEXT
 msgid  "Shortcut keys"
 msgstr "مفاتيح الاختصار"
@@ -85,7 +81,7 @@ msgstr "حفظ تكوين لوحة المفاتيح"
 
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.STRING.TEXT
 msgid  "Configuration (*.cfg)"
-msgstr "تكوين"
+msgstr ""
 
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.STRING.TEXT
 msgid  "My Macros"
@@ -111,14 +107,6 @@ msgstr "تخصيص"
 msgid  "Menus"
 msgstr "القوائم"
 
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_KEYBOARD.PAGEITEM.TEXT
-msgid  "Keyboard"
-msgstr "لوحة المفاتيح"
-
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_TOOLBARS.PAGEITEM.TEXT
-msgid  "Toolbars"
-msgstr "أشرطة الأدوات"
-
 #: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_EVENTS.PAGEITEM.TEXT
 msgid  "Events"
 msgstr "الأحداث"
@@ -126,14 +114,6 @@ msgstr "الأحداث"
 #: customize/cfg.src#TEXT_MENU.#DEFINE.TEXT
 msgid  "Menu"
 msgstr "قائمة"
-
-#: customize/cfg.src#TEXT_BEGIN_GROUP.#DEFINE.TEXT
-msgid  "Begin a Group"
-msgstr "بدء مجموعة"
-
-#: customize/cfg.src#TEXT_RENAME.#DEFINE.TEXT
-msgid  "Rename..."
-msgstr "إعادة تسمية..."
 
 #: customize/cfg.src#TEXT_DELETE.#DEFINE.TEXT
 msgid  "Delete..."
@@ -143,10 +123,6 @@ msgstr "حذف..."
 msgid  "Delete"
 msgstr "حذف"
 
-#: customize/cfg.src#TEXT_MOVE.#DEFINE.TEXT
-msgid  "Move..."
-msgstr "نقل..."
-
 #: customize/cfg.src#TEXT_DEFAULT_STYLE.#DEFINE.TEXT
 msgid  "Restore Default Settings"
 msgstr "استعادة الإعدادات الافتراضية"
@@ -154,14 +130,6 @@ msgstr "استعادة الإعدادات الافتراضية"
 #: customize/cfg.src#TEXT_DEFAULT_COMMAND.#DEFINE.TEXT
 msgid  "Restore Default Command"
 msgstr "استعادة الأمر الافتراضي"
-
-#: customize/cfg.src#TEXT_TEXT_ONLY.#DEFINE.TEXT
-msgid  "Text only"
-msgstr "النص فقط"
-
-#: customize/cfg.src#TEXT_TOOLBAR_NAME.#DEFINE.TEXT
-msgid  "Toolbar Name"
-msgstr "اسم شريط الأدوات"
 
 #: customize/cfg.src#TEXT_SAVE_IN.#DEFINE.TEXT
 msgid  "Save In"
@@ -171,45 +139,13 @@ msgstr "حفظ في"
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr "قوائم %PRODUCTNAME %MODULENAME"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "جديد..."
-
 #: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_SEPARATOR.FIXEDLINE.TEXT
 msgid  "Menu Content"
 msgstr "محتويات القائمة"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_ENTRIES.FIXEDTEXT.TEXT
-msgid  "Entries"
-msgstr "مدخلات"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_ADD_COMMANDS.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "إضافة..."
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_CHANGE_ENTRY.MENUBUTTON.TEXT
-msgid  "Modify"
-msgstr "تعديل"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Description"
-msgstr "الوصف"
-
 #: customize/cfg.src#MODIFY_ENTRY.ID_ADD_SUBMENU.MENUITEM.TEXT
 msgid  "Add Submenu..."
 msgstr "إضافة قائمة فرعية..."
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_ONLY.MENUITEM.TEXT
-msgid  "Icons Only"
-msgstr "أيقونات فقط"
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_AND_TEXT.MENUITEM.TEXT
-msgid  "Icons & Text"
-msgstr "أيقونات ونص"
-
-#: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_CHANGE_SYMBOL.MENUITEM.TEXT
-msgid  "Change Icon..."
-msgstr "تغيير الأيقونة..."
 
 #: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_RESET_SYMBOL.MENUITEM.TEXT
 msgid  "Reset Icon"
@@ -218,10 +154,6 @@ msgstr "استعادة الأيقونة"
 #: customize/cfg.src#RID_SVXSTR_NEW_MENU.STRING.TEXT
 msgid  "New Menu %n"
 msgstr "%n قائمة جديدة"
-
-#: customize/cfg.src#RID_SVXSTR_NEW_TOOLBAR.STRING.TEXT
-msgid  "New Toolbar %n"
-msgstr "%n شريط أدوات جديد"
 
 #: customize/cfg.src#RID_SVXSTR_MOVE_MENU.STRING.TEXT
 msgid  "Move Menu"
@@ -250,22 +182,6 @@ msgstr "اسم القائمة"
 #: customize/cfg.src#MD_MENU_ORGANISER.TXT_MENU.FIXEDTEXT.TEXT
 msgid  "Menu position"
 msgstr "موضع القائمة"
-
-#: customize/cfg.src#MD_NEW_TOOLBAR.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "الاسم"
-
-#: customize/cfg.src#MD_ICONSELECTOR.MODALDIALOG.TEXT
-msgid  "Change Icon"
-msgstr "تغيير الرمز"
-
-#: customize/cfg.src#MD_ICONSELECTOR.FT_SYMBOLS.FIXEDTEXT.TEXT
-msgid  "Icons"
-msgstr "أيقونات"
-
-#: customize/cfg.src#MD_ICONSELECTOR.BTN_IMPORT.PUSHBUTTON.TEXT
-msgid  "Import..."
-msgstr "استيراد..."
 
 #: customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FIXEDTEXT.TEXT
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
@@ -302,14 +218,6 @@ msgstr "نعم للكل"
 #: customize/cfg.src#RID_SVXSTR_PRODUCTNAME_TOOLBARS.STRING.TEXT
 msgid  "%PRODUCTNAME %MODULENAME Toolbars"
 msgstr "أشرطة أدوات %PRODUCTNAME %MODULENAME"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR.STRING.TEXT
-msgid  "Toolbar"
-msgstr "شريط أدوات"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR_CONTENT.STRING.TEXT
-msgid  "Toolbar Content"
-msgstr "محتويات شريط أدوات"
 
 #: customize/cfg.src#RID_SVXSTR_COMMANDS.STRING.TEXT
 msgid  "Commands"
@@ -351,10 +259,6 @@ msgstr "اسم جديد~"
 msgid  "Rename Menu"
 msgstr "إعادة تسمية القائمة"
 
-#: customize/cfg.src#RID_SVXSTR_RENAME_TOOLBAR.STRING.TEXT
-msgid  "Rename Toolbar"
-msgstr "إعادة تسمية شريط الأدوات"
-
 #: customize/cfg.src#BUTTON_STR_UP.STRING.TEXT
 msgid  "Up"
 msgstr ""
@@ -362,10 +266,6 @@ msgstr ""
 #: customize/cfg.src#BUTTON_STR_DOWN.STRING.TEXT
 msgid  "Down"
 msgstr ""
-
-#: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "حدث"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -390,10 +290,6 @@ msgstr "إ~زالة"
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.TABPAGE.TEXT
 msgid  "Assign action"
 msgstr "تعيين أمر"
-
-#: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "حدث"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -422,10 +318,6 @@ msgstr "تعيين مكون"
 #: customize/macropg.src#RID_SVXDLG_ASSIGNCOMPONENT.FT_METHOD.FIXEDTEXT.TEXT
 msgid  "Component method name"
 msgstr "اسم طريقة المكون"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_STARTAPP.STRING.TEXT
-msgid  "Start Application"
-msgstr "تشغيل التطبيق"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEAPP.STRING.TEXT
 msgid  "Close Application"
@@ -495,10 +387,6 @@ msgstr "بدء دمج حقول النموذج"
 msgid  "Merging of form fields finished"
 msgstr "انتهى دمج حقول النموذج"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_PAGECOUNTCHANGE.STRING.TEXT
-msgid  "Changing the page count"
-msgstr "تغيير تعداد الصفحات"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_SUBCOMPONENT_OPENED.STRING.TEXT
 msgid  "Loaded a sub component"
 msgstr "تم تحميل مكون فرعي"
@@ -515,33 +403,13 @@ msgstr "معلمات التعبئة"
 msgid  "Execute action"
 msgstr "تنفيذ إجراء"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
-msgstr "بعد التحديث"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
 msgstr "قبل التحديث"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
-msgstr "قبل إجراء السجل"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
-msgstr "بعد إجراء السجل"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
 msgstr "تأكيد الحذف"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
-msgstr "حدث خطأ"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
-msgstr "أثناء الضبط"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
@@ -554,14 +422,6 @@ msgstr "عند فقدان التركيز"
 #: customize/macropg.src#RID_SVXSTR_EVENT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
 msgstr "تم تغيير حالة العنصر"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
-msgstr "الضغط على المفتاح"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYUP.STRING.TEXT
-msgid  "Key released"
-msgstr "تحرير المفتاح"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADED.STRING.TEXT
 msgid  "When loading"
@@ -599,14 +459,6 @@ msgstr "الضغط على زر الماوس"
 msgid  "Mouse button released"
 msgstr "تحرير زر الماوس"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
-msgstr "قبل تغيير السجل"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONED.STRING.TEXT
-msgid  "After record change"
-msgstr "بعد تغيير السجل"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_RESETTED.STRING.TEXT
 msgid  "After resetting"
 msgstr "بعد إعادة التعيين"
@@ -619,14 +471,6 @@ msgstr "قبل إعادة التعيين"
 msgid  "Approve action"
 msgstr "الموافقة على إجراء"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_SUBMITTED.STRING.TEXT
-msgid  "Before submitting"
-msgstr "قبل الإرسال"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
-msgstr "تعديل النص"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
 msgstr "قبل إلغاء التحميل"
@@ -634,10 +478,6 @@ msgstr "قبل إلغاء التحميل"
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADED.STRING.TEXT
 msgid  "When unloading"
 msgstr "عند إلغاء التحميل"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_CHANGED.STRING.TEXT
-msgid  "Changed"
-msgstr "تغيير"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CREATEDOC.STRING.TEXT
 msgid  "Document created"
@@ -739,18 +579,6 @@ msgstr "ال~فئة"
 msgid  "Commands"
 msgstr "تعليقات"
 
-#: customize/selector.src#STR_SELECTOR_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "إضافة"
-
-#: customize/selector.src#STR_SELECTOR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "تشغيل"
-
-#: customize/selector.src#STR_SELECTOR_CLOSE.STRING.TEXT
-msgid  "Close"
-msgstr "إغلاق"
-
 #: customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.STRING.TEXT
 msgid  "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customize dialog."
 msgstr "لإضافة أمر لشريط الأدوات، اختر التصنيف ثم الأمر. بعد ذلك إدراج الأمر في قائمة الأوامر من صفحة تبويب أشرطة الأدوات في تخصيص مربعات الحوار."
@@ -771,16 +599,44 @@ msgstr "المكتبة"
 msgid  "My Macros"
 msgstr "وحدات الماكرو"
 
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_COMMANDS.FIXEDTEXT.TEXT
-msgid  "Macro name"
-msgstr "اسم الماكرو"
-
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.GRP_SELECTOR_DESCRIPTION.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "الوصف"
-
 #: dialogs/about.src#RID_DEFAULTABOUT.MODALDIALOG.TEXT
 msgid  "About %FULLPRODUCTNAME"
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PUSHBUTTON.TEXT
+msgid  "License..."
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT_VENDOR.STRING.TEXT
+msgid  "%OOOVENDOR"
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED.STRING.TEXT
+msgid  "This product was created by the OpenOffice community."
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED_VENDOR.STRING.TEXT
+msgid  "This product was created by %OOOVENDOR, based on Apache OpenOffice."
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_ACKNOWLEDGE.STRING.TEXT
+msgid  "The OpenOffice community acknowledges all contributing members, especially those mentioned at"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.MODALDIALOG.TEXT
+msgid  "Readme, License and Notice"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_READMEPAGE.PAGEITEM.TEXT
+msgid  "Readme"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_LICENSEPAGE.PAGEITEM.TEXT
+msgid  "License"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_NOTICEPAGE.PAGEITEM.TEXT
+msgid  "Notice"
 msgstr ""
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.MODALDIALOG.TEXT
@@ -809,102 +665,127 @@ msgid  "~Delete"
 msgstr "ح~ذف"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Color Picker"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.PB_PICKER.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Pick a color from the document"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_RGB.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "RGB"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_RED.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Red"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_GREEN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Green"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BLUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Blue"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HEX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Hex ~#"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_HSB.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "HSB"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HUE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "H~ue"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_SATURATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Saturation"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BRIGHTNESS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bright~ness"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_CMYK.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "CMYK"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_CYAN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Cyan"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_MAGENTA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Magenta"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_YELLOW.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Yellow"
 msgstr ""
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_KEY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Key"
 msgstr ""
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Origi~nal"
 msgstr "ال~أصل"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_NEWWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Word"
 msgstr "~كلمة"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_SUGGESTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Suggestions"
 msgstr "ا~قتراحات"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_IGNORE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Ignore"
 msgstr "~تجاهل"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_IGNOREALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Always I~gnore"
 msgstr "الت~جاهل دائمًا"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_CHANGE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Replace"
 msgstr ""
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_CHANGEALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Always R~eplace"
 msgstr "الا~ستبدال دائمًا"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_OPTIONS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Options..."
 msgstr "خيارات..."
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_SPL_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
 msgstr "إ~غلاق"
 
@@ -938,11 +819,6 @@ msgstr "~نص بديل:"
 msgid  "~Description"
 msgstr "ال~وصف"
 
-#: dialogs/dlgname.src#RID_SVXDLG_NAME.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "الاسم"
-
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Name"
@@ -962,11 +838,6 @@ msgstr "الع~نوان"
 #, fuzzy
 msgid  "~Description"
 msgstr "ال~وصف"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Record Search"
-msgstr "البحث عن سجل"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FIXEDLINE.TEXT
 #, fuzzy
@@ -1048,11 +919,6 @@ msgstr "تعبير عنصر نائب"
 msgid  "Regular expression"
 msgstr "تعبير اعتيادي"
 
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Similarity Search"
-msgstr "البحث عن كلمات متشابهة"
-
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "..."
@@ -1072,11 +938,6 @@ msgstr "كتابة مشابهة (يابانية)"
 #, fuzzy
 msgid  "State"
 msgstr "الولاية"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Record :"
-msgstr "سجل:"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1168,21 +1029,6 @@ msgstr "ملفات"
 msgid  "Type:"
 msgstr "النوع:"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Location:"
-msgstr "الموقع:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Contents:"
-msgstr "المحتويات:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Modified:"
-msgstr "عُدّل:"
-
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~File type"
@@ -1208,16 +1054,6 @@ msgstr "إ~ضافة الكل"
 msgid  "Pr~eview"
 msgstr "م~عاينة"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Maddin1"
-msgstr "Maddin1"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Maddin2"
-msgstr "Maddin2"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Enter Title"
@@ -1228,25 +1064,10 @@ msgstr "إدخال العنوان"
 msgid  "Title"
 msgstr "المسمى الوظيفي"
 
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Find"
-msgstr "بحث"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Directory"
-msgstr "الدليل"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "File type"
 msgstr "نوع الملف"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "تطبيق"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FIXEDLINE.TEXT
 #, fuzzy
@@ -1348,16 +1169,6 @@ msgstr "تقادم"
 msgid  "Aging degree"
 msgstr "درجة التقادم"
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Posterize"
-msgstr "مُلصق"
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Poster colors"
-msgstr "ألوان المُلصق"
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Relief"
@@ -1418,11 +1229,6 @@ msgstr "هان~جا"
 msgid  "Ha~nja"
 msgstr "هان~جا"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_CONVERSION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Conversion"
-msgstr "تحويل"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_HANGUL_ONLY.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Hangul ~only"
@@ -1437,11 +1243,6 @@ msgstr "هانجا ~فقط"
 #, fuzzy
 msgid  "Replace b~y character"
 msgstr "التبديل حسب ال~حرف"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANGUL.STRING.TEXT
-#, fuzzy
-msgid  "Hangul"
-msgstr "هانغول"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANJA.STRING.TEXT
 #, fuzzy
@@ -1478,11 +1279,6 @@ msgstr "إظهار المُدخلات المستخدمة حديثًا أولاً
 msgid  "Replace all unique entries automatically"
 msgstr "استبدال جميع المُدخلات الفريدة تلقائيًا"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New..."
-msgstr "جديد..."
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Edit..."
@@ -1493,65 +1289,25 @@ msgstr "تحرير..."
 msgid  "Delete"
 msgstr "حذف"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Dictionary"
-msgstr "قاموس جديد"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FL_NEWDICT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionary"
-msgstr "القاموس"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Name"
 msgstr "الا~سم"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Edit Custom Dictionary"
-msgstr "تحرير القاموس المخصّص"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.STR_EDITHINT.STRING.TEXT
 #, fuzzy
 msgid  "[Enter text here]"
 msgstr "[إدخال النص هنا]"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_BOOK.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Book"
-msgstr "الكتاب"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_ORIGINAL.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Original"
 msgstr "الأصل"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_SUGGESTIONS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Suggestions (max. 8)"
-msgstr "اقتراحات (8 كحد أقصى)"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_NEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "جديد"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
 msgid  "Close"
 msgstr "إغلاق"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Target in Document"
-msgstr "الهدف في المستند"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_APPLY.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "تطبيق"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -1569,6 +1325,7 @@ msgid  "Couldn't open the document."
 msgstr "تعذر فتح المستند."
 
 #: dialogs/hlmarkwn.src#STR_MARK_TREE.STRING.TEXT
+#, fuzzy
 msgid  "Mark Tree"
 msgstr ""
 
@@ -1618,7 +1375,6 @@ msgid  "Anonymous ~user"
 msgstr "مستخدم ~مجهول"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_BROWSE.IMAGEBUTTON.TEXT
-#, fuzzy
 msgid  "WWW Browser"
 msgstr "استعراض WWWب"
 
@@ -1647,11 +1403,6 @@ msgstr "نموذ~ج"
 msgid  "Text"
 msgstr "النص"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Button"
-msgstr "زر"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Te~xt"
@@ -1666,11 +1417,6 @@ msgstr "الاسم"
 #, fuzzy
 msgid  "Events"
 msgstr "حدثث"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Mail & news"
-msgstr "بريد وأخبار"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_MAIL.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1697,11 +1443,6 @@ msgstr "المو~ضوع"
 msgid  "Data Sources..."
 msgstr "مصادر بيانات...ن"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Document"
-msgstr "المستند"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_PATH_DOC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Path"
@@ -1712,30 +1453,15 @@ msgstr "ال~مسار"
 msgid  "Open File"
 msgstr "فتح الملفف"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_TARGET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Target in document"
-msgstr "الهدف في المستند"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TARGET_DOC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Targ~et"
 msgstr "الهد~ف"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_URL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "URL"
-msgstr "عنوان URL"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Test text"
 msgstr "نص اختبار"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_NEWDOCUMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New document"
-msgstr "مستند جديد"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.RB_EDITNOW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -1761,11 +1487,6 @@ msgstr "~نوع الملف"
 #, fuzzy
 msgid  "Select Path"
 msgstr "تحديد النمطر"
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_APPLYBUT.STRING.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "تطبيق"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_CLOSEBUT.STRING.TEXT
 #, fuzzy
@@ -1802,11 +1523,6 @@ msgstr "إنترنت"
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
 msgstr "هنا تقوم بإنشاء ارتباط تشعبي لصفحة ويب، أو لخادم FTP أو لاتصال Telnet."
 
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.STRING.TEXT
-#, fuzzy
-msgid  "Mail & News"
-msgstr "بريد وأخبار"
-
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.STRING.TEXT
 #, fuzzy
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
@@ -1816,11 +1532,6 @@ msgstr "هنا تقوم بإنشاء ارتباط تشعبي لعنوان بري
 #, fuzzy
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
 msgstr "هنا حيث أنشأت وصلة فائقة لمستند موجود أو هدف بداخل المستند."
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.STRING.TEXT
-#, fuzzy
-msgid  "New Document"
-msgstr "مستند جديد"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.STRING.TEXT
 #, fuzzy
@@ -1892,11 +1603,6 @@ msgstr "~قبل"
 msgid  "A~fter"
 msgstr "~بعد"
 
-#: dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "الموضع"
-
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Number"
@@ -1961,11 +1667,6 @@ msgstr "ملفات"
 #, fuzzy
 msgid  "Select Archives"
 msgstr "اختيار الأرشيفات"
-
-#: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.STRING.TEXT
-#, fuzzy
-msgid  "Archives"
-msgstr "الأرشيفات"
 
 #: dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.STRING.TEXT
 #, fuzzy
@@ -2072,11 +1773,6 @@ msgstr "المؤلف"
 msgid  "~Text"
 msgstr "ال~نص"
 
-#: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Contents"
-msgstr "المحتويات"
-
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Insert"
@@ -2152,20 +1848,10 @@ msgstr "إنشاء مكتبة"
 msgid  "Enter the name for the new library."
 msgstr "ادخل اسم للمكتبة الجديدة"
 
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWMACRO.STRING.TEXT
-#, fuzzy
-msgid  "Create Macro"
-msgstr "إنشاء مكتبة"
-
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_NEWMACRO.STRING.TEXT
 #, fuzzy
 msgid  "Enter the name for the new macro."
 msgstr "أدخل اسم الماكرو الجديد."
-
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_RENAME.STRING.TEXT
-#, fuzzy
-msgid  "Rename"
-msgstr "إعادة تسمية"
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_RENAME.STRING.TEXT
 #, fuzzy
@@ -2212,11 +1898,6 @@ msgstr " هناك كائن له نفس الاسم موجود بالفعل."
 msgid  " You do not have permission to create this object."
 msgstr " ليست لك صلاحية لإنشاء هذا الكائن."
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILED_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Error Creating Object"
-msgstr "خطأ في إنشاء الكائن"
-
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED.STRING.TEXT
 #, fuzzy
 msgid  "The object could not be renamed."
@@ -2226,11 +1907,6 @@ msgstr "تعذر تغيير اسم الكائن."
 #, fuzzy
 msgid  " You do not have permission to rename this object."
 msgstr " ليس لك صلاحية تغيير اسم هذا الكائن."
-
-#: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Error Renaming Object"
-msgstr "خطأ في تغيير اسم الكائن"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TITLE.STRING.TEXT
 #, fuzzy
@@ -2277,11 +1953,6 @@ msgstr " حدث خطأ في إطار السكربت خلال تشغيل سكرب
 msgid  "Type:"
 msgstr "النوع:"
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_MESSAGE_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Message:"
-msgstr "رسالة:"
-
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TABDIALOG.TEXT
 #, fuzzy
 msgid  "Format Cells"
@@ -2296,16 +1967,6 @@ msgstr "الخط"
 #, fuzzy
 msgid  "Font Effects"
 msgstr "تأثيرات الخطوط"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "الحدود"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "الخلفية"
 
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PUSHBUTTON.TEXT
 #, fuzzy
@@ -2407,11 +2068,6 @@ msgstr "إ~غلاق"
 msgid  "Resu~me"
 msgstr "م~تابعة"
 
-#: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.STRING.TEXT
-#, fuzzy
-msgid  "(no suggestions)"
-msgstr "(لا اقتراحات)"
-
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.STRING.TEXT
 #, fuzzy
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
@@ -2477,11 +2133,6 @@ msgstr "الخط"
 msgid  "Font Effects"
 msgstr "تأثيرات الخطوط"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "الموضع"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Asian Layout"
@@ -2507,25 +2158,10 @@ msgstr "انسياب النص"
 msgid  "Asian Typography"
 msgstr "أسلوب الطباعة الآسيوية"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "الخلفية"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Attributes"
-msgstr "السمات"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Options"
 msgstr "~خيارات"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Similarity Search"
-msgstr "البحث عن كلمات متشابهة"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2557,20 +2193,10 @@ msgstr "إعدادات"
 msgid  "Paste Special"
 msgstr "لصق خاص"
 
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Source:"
-msgstr "مصدر:"
-
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Insert as"
 msgstr "إد~راج بنسق"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Link to"
-msgstr "ربط مع"
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CHECKBOX.TEXT
 #, fuzzy
@@ -2586,11 +2212,6 @@ msgstr "أ~يقونة أخرى..."
 #, fuzzy
 msgid  "Selection"
 msgstr "التحديد"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Object"
-msgstr "كائن"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.MODALDIALOG.TEXT
 #, fuzzy
@@ -2611,11 +2232,6 @@ msgstr "عنصر:"
 #, fuzzy
 msgid  "Type"
 msgstr "النوع"
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Status"
-msgstr "الحالة"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CANCELBUTTON.TEXT
 #, fuzzy
@@ -2807,11 +2423,6 @@ msgstr "إيقا~ف"
 msgid  "Au~tomatic"
 msgstr "ت~لقائي"
 
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scroll bar"
-msgstr "شريط تمرير"
-
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "On"
@@ -2821,11 +2432,6 @@ msgstr "تشغيل"
 #, fuzzy
 msgid  "Off"
 msgstr "إيقاف تشغيل"
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Border"
-msgstr "الحد"
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -2857,27 +2463,13 @@ msgstr "المسافة حتى المحتويات"
 msgid  "Select File for Floating Frame"
 msgstr "اختيار ملف للإطار العائم"
 
-#: dialogs/svuidlg.src#STR_EDIT_APPLET.STRING.TEXT
-#, fuzzy
-msgid  "Edit Applet"
-msgstr "تحرير البُريمج"
-
-#: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Record Number"
-msgstr "رقم السجل"
-
 #: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "go to record"
 msgstr "الانتقال إلى السجل"
 
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Thesaurus"
-msgstr "المرادفات"
-
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_WORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Current word"
 msgstr ""
 
@@ -2892,11 +2484,8 @@ msgid  "~Alternatives"
 msgstr "ال~بدائل"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_REPL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Replace with"
-msgstr ""
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.BTN_THES_OK.OKBUTTON.TEXT
-msgid  "Replace"
 msgstr ""
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.STR_ERR_TEXTNOTFOUND.STRING.TEXT
@@ -2974,11 +2563,6 @@ msgstr "تم تفعيل تجمّع الاتصال"
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "المشغّلات المعروفة في %PRODUCTNAME"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Current driver:"
-msgstr "المشغّل الحالي:"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Enable pooling for this driver"
@@ -2989,11 +2573,6 @@ msgstr "تفعيل التجمّع لهذا المشغّل"
 msgid  "Timeout (seconds)"
 msgstr "انتهاء الوقت (بالثواني)"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Driver name"
-msgstr "اسم المشغّل"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.STRING.TEXT
 #, fuzzy
 msgid  "Pool"
@@ -3003,16 +2582,6 @@ msgstr "تجمّع"
 #, fuzzy
 msgid  "Timeout"
 msgstr "انتهاء الوقت"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.STRING.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "نعم"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.STRING.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "لا"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.TABPAGE.TEXT
 #, fuzzy
@@ -3104,11 +2673,6 @@ msgstr "الخط~"
 msgid  "Re~place with"
 msgstr "استبد~ال بـ"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "تطبيق"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Delete"
@@ -3134,11 +2698,6 @@ msgstr "خطوط غير متناسبة فقط"
 msgid  "~Size"
 msgstr "ال~حجم"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "Always"
-msgstr "دائمًا"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.STRING.TEXT
 #, fuzzy
 msgid  "Screen only"
@@ -3149,20 +2708,10 @@ msgstr "الشاشة فقط"
 msgid  "Font"
 msgstr "الخط"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.STRING.TEXT
-#, fuzzy
-msgid  "Replace with"
-msgstr "استبدال بـ"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.STRING.TEXT
 #, fuzzy
 msgid  "Automatic"
 msgstr "تلقائي"
-
-#: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Default text direction"
-msgstr "اتجاه النص الافتراضي"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RADIOBUTTON.TEXT
 #, fuzzy
@@ -3218,11 +2767,6 @@ msgstr "السماح بال~نص المتحرك"
 #, fuzzy
 msgid  "~Help tips disappear after "
 msgstr "~تلميحات التعليمات تختفي بعد "
-
-#: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "seconds"
-msgstr "ثوانٍ"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FIXEDLINE.TEXT
 #, fuzzy
@@ -3314,11 +2858,6 @@ msgstr "بدون علامات فصل أسطر مخصصة"
 msgid  "Proxy"
 msgstr "بروكسي"
 
-#: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TABPAGE.TEXT
-#, fuzzy
-msgid  "Default Colors"
-msgstr "اﻷلوان الافتراضية"
-
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Chart colors"
@@ -3339,16 +2878,6 @@ msgstr "الا~فتراضي"
 msgid  "Data Series $(ROW)"
 msgstr "البيانات المتسلسلة $(ROW)"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color scheme"
-msgstr "نظام الألوان"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Scheme"
-msgstr "نظام"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Save..."
@@ -3358,11 +2887,6 @@ msgstr "حفظ..."
 #, fuzzy
 msgid  "Delete"
 msgstr "حذف"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Custom colors"
-msgstr "ألوان مخصّصة"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.STRING.TEXT
 #, fuzzy
@@ -3384,31 +2908,6 @@ msgstr "إعداد الألوان"
 msgid  "Preview"
 msgstr "معاينة"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "عام"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Document background"
-msgstr "خلفية المستند"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Text boundaries"
-msgstr "حدود النص"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Application background"
-msgstr "خلفية التطبيق"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Object boundaries"
-msgstr "حدود الكائنات"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Table boundaries"
@@ -3418,16 +2917,6 @@ msgstr "حدود الجدول"
 #, fuzzy
 msgid  "Font color"
 msgstr "لون الخط"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Unvisited links"
-msgstr "ارتباطات لم تتم زيارتها"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Visited links"
-msgstr "ارتباطات تمت زيارتها"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3469,11 +2958,6 @@ msgstr "مؤشر برنامج نصي"
 msgid  "Section boundaries"
 msgstr "حدود المقطع"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Page and column breaks"
-msgstr "فواصل صفحات وفواصل أعمدة"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Direct cursor"
@@ -3499,21 +2983,6 @@ msgstr "تمييز التعليق"
 msgid  "Keyword highlighting"
 msgstr "تمييز الكلمات الأساسية"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "النص"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "جدول بيانات"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Grid lines"
-msgstr "خطوط الشبكة"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Page breaks"
@@ -3529,25 +2998,10 @@ msgstr "فواصل صفحات يدوية"
 msgid  "Automatic page breaks"
 msgstr "فواصل صفحات تلقائية"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Detective"
-msgstr "التحرّي"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Detective error"
 msgstr "خطأ التحرّي"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "References"
-msgstr "المراجع"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Notes background"
-msgstr "خلفية الملاحظات"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3589,16 +3043,6 @@ msgstr "عامل التشغيل"
 msgid  "Reserved expression"
 msgstr "تعبير محجوز"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Error"
-msgstr "خطأ"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "SQL Syntax Highlighting"
-msgstr "تمييز بناء جملة SQL"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Keyword"
@@ -3639,11 +3083,6 @@ msgstr "حذف نظام الألوان"
 msgid  "Save scheme"
 msgstr "حفظ النظام"
 
-#: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.STRING.TEXT
-#, fuzzy
-msgid  "Name of color scheme"
-msgstr "اسم نظام الألوان"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TABPAGE.TEXT
 #, fuzzy
 msgid  "Complex Text Layout"
@@ -3674,11 +3113,6 @@ msgstr "~ اطبع واستبدل"
 msgid  "Cursor control"
 msgstr "التحكم بالمؤشر"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Movement"
-msgstr "الحركة"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Lo~gical"
@@ -3699,30 +3133,10 @@ msgstr "خيارات عامة"
 msgid  "~Numerals"
 msgstr "أ~رقام"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Arabic"
-msgstr "العربية"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Hindi"
-msgstr "الهندية"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "System"
-msgstr "النظام"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM4.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Context"
 msgstr "السياق"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Dictionary"
-msgstr "قاموس جديد"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3738,16 +3152,6 @@ msgstr "الل~غة"
 #, fuzzy
 msgid  "~Exception (-)"
 msgstr "ا~ستثناء (-)"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionary"
-msgstr "القاموس"
-
-#: options/optdict.src#RID_SFXDLG_EDITDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Edit Custom Dictionary"
-msgstr "تحرير القاموس المخصّص"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3884,11 +3288,6 @@ msgstr "Excel إلى %PRODUCTNAME Calc أو العكس"
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
 msgstr "PowerPoint إلى %PRODUCTNAME Impress أو العكس"
 
-#: options/optgdlg.src#OFA_TP_MISC.FL_HELP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "تعليمات"
-
 #: options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Tips"
@@ -3913,11 +3312,6 @@ msgstr "~إعادة تعيين أداة التعليمات"
 #, fuzzy
 msgid  "Help ~formatting"
 msgstr "ت~نسيق التعليمات"
-
-#: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "الافتراضي"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -3984,11 +3378,6 @@ msgstr "مربعات حوار الطباعة"
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "استخدام مربعات ~حوار %PRODUCTNAME"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User Interface"
-msgstr "واجهة المستخدم"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Sc~aling"
@@ -4009,16 +3398,6 @@ msgstr "حجم الأيقونة"
 msgid  "Automatic"
 msgstr "تلقائي"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small"
-msgstr "صغير"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Large"
-msgstr "كبير"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Galaxy (default)"
@@ -4028,11 +3407,6 @@ msgstr "Galaxy (الافتراضي)"
 #, fuzzy
 msgid  "High Contrast"
 msgstr "تباين عالٍ"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Industrial"
-msgstr "صناعي"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM5.STRINGLIST.ITEM
 #, fuzzy
@@ -4053,11 +3427,6 @@ msgstr "تحسين حواف خط الشاشة"
 #, fuzzy
 msgid  "from"
 msgstr "من"
-
-#: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Pixels"
-msgstr "نقاط"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FIXEDLINE.TEXT
 #, fuzzy
@@ -4109,20 +3478,10 @@ msgstr "استخدام التعزيز العتادي"
 msgid  "Use Anti-Aliasing"
 msgstr "استخدم مانع التشويش"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Mouse"
-msgstr "الماوس"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Mouse positioning"
 msgstr "تعيين موضع الماوس"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default button"
-msgstr "الزر الافتراضي"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -4143,11 +3502,6 @@ msgstr "زر الماوس الأوسط"
 #, fuzzy
 msgid  "No function"
 msgstr "لا توجد دالة"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Automatic scrolling"
-msgstr "التمرير التلقائي"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -4244,11 +3598,6 @@ msgstr "مُم~كّن لتخطيط النص المركّب (CTL)"
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
 msgstr "تعيين اللغة لواجهة المستخدم تم تحديثها وسوف يسري مفعولها في المرة القادمة التي تقوم فيها بتشغيل %PRODUCTNAME %PRODUCTVERSION"
 
-#: options/optgenrl.src#RID_SFXPAGE_GENERAL.TABPAGE.TEXT
-#, fuzzy
-msgid  "User Data"
-msgstr "بيانات المستخدم"
-
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Company"
@@ -4323,6 +3672,10 @@ msgstr "المدينة/البلد/الرمز البريدي"
 #, fuzzy
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
 msgstr "الرجاء ملاحظة أن البيانات الخاصة بالشارع والرمز البريدي والمدينة تدخل ضمن البيانات اللازمة لإنشاء مفتاح التسجيل. لن تستطيع تغيير بيانات المستخدم حتى يتم الانتهاء من التسجيل. هل تريد تعديل بيانات المستخدم الآن؟"
+
+#: options/optgenrl.src#RID_SVXQB_CHANGEDATA.QUERYBOX.MESSAGE
+msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgstr "تم تغيير بيانات المستخدم.\nلاحظ أنه إن استمررت، فسيصبح مفتاح التسجيل غير صالح.\nلذا، أنت بحاجة إلى مفتاح تسجيل جديد خلال 30 يومًا.\nيمكنك العثور على نموذج التسجيل في القائمة تعليمات - تسجيل...\nهل حقًا تريد تغيير بيانات المستخدم؟"
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4484,16 +3837,6 @@ msgstr "خادم بروكسي"
 msgid  "None"
 msgstr "بلا"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "System"
-msgstr "النظام"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Manual"
-msgstr "يدوي"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.STRING.TEXT
 #, fuzzy
 msgid  "Use browser settings"
@@ -4539,16 +3882,6 @@ msgstr "م~نفذ"
 msgid  "~No proxy for:"
 msgstr "~عدم استخدام بروكسي لـ:"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Separator ;"
-msgstr "الفاصل ;"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "DNS server"
-msgstr "خادم DNS"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Automatic"
@@ -4568,11 +3901,6 @@ msgstr "هو مُدخل غير صالح لهذا الحقل. الرجاء تحد
 #, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
 msgstr "هو مُدخل غير صالح لهذا الحقل. الرجاء إدخال قيمة تتراوح بين 1 و255."
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Search"
-msgstr "بحث"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FIXEDLINE.TEXT
 #, fuzzy
@@ -4624,16 +3952,6 @@ msgstr "~فاصل"
 msgid  "~Case match"
 msgstr "م~طابقة حالة الأحرف"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Upper"
-msgstr "كبير"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Lower"
-msgstr "صغير"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "N~ew"
@@ -4658,11 +3976,6 @@ msgstr "ح~ذف"
 #, fuzzy
 msgid  "Do you want to accept the current modification?"
 msgstr "هل تريد أن تقبل التعديل الحالي؟"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TABPAGE.TEXT
-#, fuzzy
-msgid  "Security"
-msgstr "الأمان"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FIXEDLINE.TEXT
 #, fuzzy
@@ -4709,11 +4022,6 @@ msgstr "تتم حماية كلمة المرور بواسطة كلمة مرور �
 msgid  "Master Password..."
 msgstr "كلمة مرور رئيسية..."
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Macro security"
-msgstr "أمان الماكرو"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
@@ -4728,6 +4036,11 @@ msgstr "أمان الماكرو..."
 #, fuzzy
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
 msgstr "تعطيل دالة حفظ كلمات المرور دائما يحذف قائمة كلمات المرور المحفوظة ويعيد ضبط كلمة المرور الرئيسية. \n\nهل تريد حذف قائمة كلمات المرور وإعادة ضبط الكلمة المرور الرئيسية؟"
+
+#: options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
+msgstr "قيمة غير صالحة!\n\nأقصى قيمة لرقم المنفذ هي 65535."
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4753,11 +4066,6 @@ msgstr "~برنامج البريد الإلكتروني"
 #, fuzzy
 msgid  "All files (*.*)"
 msgstr "كل الملفات (*.*)"
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TABPAGE.TEXT
-#, fuzzy
-msgid  "Java"
-msgstr "جافا"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FIXEDLINE.TEXT
 #, fuzzy
@@ -4788,11 +4096,6 @@ msgstr "ال~معاملات..."
 #, fuzzy
 msgid  "~Class Path..."
 msgstr "م~سار الفئات.."
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.STRING.TEXT
-#, fuzzy
-msgid  "Location: "
-msgstr "الموقع: "
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.STRING.TEXT
 #, fuzzy
@@ -4839,20 +4142,10 @@ msgstr "~تعيين"
 msgid  "Assig~ned start parameters"
 msgstr "تعيين معاملات التشغيل"
 
-#: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "For example: -Dmyprop=c:\\program files\\java"
-msgstr "على سبيل المثال: -Dmyprop=c:\\program files\\java"
-
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Remove"
 msgstr "إ~زالة"
-
-#: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Class Path"
-msgstr "مسار فئة"
 
 #: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4869,10 +4162,25 @@ msgstr "ا~ضافة أرشيف.."
 msgid  "Add ~Folder"
 msgstr "إضافة م~جلد"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FIXEDLINE.TEXT
+#: options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ERRORBOX.MESSAGE
 #, fuzzy
-msgid  "Treat as equal"
-msgstr "المعاملة كمثيل"
+msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+msgstr "المجلد الذي اخترته لا يحتوي على بيئة تشغيلية لجافا.\nالرجاء اختيار مجلد أخر."
+
+#: options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
+msgstr "البيئة التشغيلية لجافا المحددة ليست بالإصدار المطلوب.\nالرجاء اختيار مجلد أخر."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WARNINGBOX.MESSAGE
+#, fuzzy
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
+msgstr "لكي تعمل البيئة التشغيلية لجافا المحددة بشكل جيد يجب أن يعاد تشغيل %PRODUCTNAME.\nالرجاء إعادة تشغيل %PRODUCTNAME الآن."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WARNINGBOX.MESSAGE
+#, fuzzy
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
+msgstr "يجب أن تعيد تشغيل %PRODUCTNAME حتى يتم تفعيل القيم الجديدة أو المعدلة.\nالرجاء إعادة تشغيل %PRODUCTNAME الآن."
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CHECKBOX.TEXT
 #, fuzzy
@@ -4954,11 +4262,6 @@ msgstr "~ki/ku (tekisuto/tekusuto)"
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "حرو~ف علّة مطوّلة (ka-/kaa)"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Ignore"
-msgstr "تجاهل"
-
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Pu~nctuation characters"
@@ -4973,11 +4276,6 @@ msgstr "أح~رف المسافات"
 #, fuzzy
 msgid  "Midd~le dots"
 msgstr "نقا~ط وسطية"
-
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Searching in Japanese"
-msgstr "خيارات البحث للغة اليابانية"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.MODALDIALOG.TEXT
 #, fuzzy
@@ -5028,11 +4326,6 @@ msgstr "تدقيق إملائي"
 #, fuzzy
 msgid  "Hyphenation"
 msgstr "فصل المقاطع"
-
-#: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.STRING.TEXT
-#, fuzzy
-msgid  "Thesaurus"
-msgstr "المرادفات"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.STRING.TEXT
 #, fuzzy
@@ -5099,25 +4392,10 @@ msgstr "~خيارات"
 msgid  "Edi~t..."
 msgstr "تحر~ير..."
 
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.STRING.TEXT
-#, fuzzy
-msgid  "Check uppercase words"
-msgstr "تدقيق الكلمات المكتوبة بأحرف كبيرة"
-
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.STRING.TEXT
 #, fuzzy
 msgid  "Check words with numbers "
 msgstr "تدقيق الكلمات التي تحتوي على أرقام "
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.STRING.TEXT
-#, fuzzy
-msgid  "Check capitalization"
-msgstr "تدقيق الكتابة بأحرف كبيرة أو صغيرة"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.STRING.TEXT
-#, fuzzy
-msgid  "Check special regions"
-msgstr "تدقيق المناطق الخاصة"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.STRING.TEXT
 #, fuzzy
@@ -5165,6 +4443,7 @@ msgid  "Edit User-defined dictionaries"
 msgstr "القواميس المعرفة من قبل المستخدم"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_OPTIONS_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit Options"
 msgstr ""
 
@@ -5172,11 +4451,6 @@ msgstr ""
 #, fuzzy
 msgid  "Do you want to delete the dictionary?"
 msgstr "هل تريد حذف القاموس؟"
-
-#: options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Undo"
-msgstr "تراجع"
 
 #: options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5193,11 +4467,6 @@ msgstr "ذاكرة تخزين الرسومات المؤقّتة"
 msgid  "Use for %PRODUCTNAME"
 msgstr "استخدام في %PRODUCTNAME"
 
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "MB"
-msgstr "ميغابايت"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Memory per object"
@@ -5207,11 +4476,6 @@ msgstr "ذاكرة لكل كائن"
 #, fuzzy
 msgid  "Remove from memory after"
 msgstr "إزالة من الذاكرة بعد"
-
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "hh:mm"
-msgstr "hh:mm"
 
 #: options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FIXEDLINE.TEXT
 #, fuzzy
@@ -5273,6 +4537,11 @@ msgstr "مسارات يستخدمها %PRODUCTNAME"
 msgid  "Edit Paths: %1"
 msgstr "تحرير المسارات: %1"
 
+#: options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ERRORBOX.MESSAGE
+#, fuzzy
+msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
+msgstr "يجب تحديد أدلة منفصلة للتهيئة والبريد.\nالرجاء اختيار مسار جديد."
+
 #: options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.STRING.TEXT
 #, fuzzy
 msgid  "Configuration"
@@ -5282,26 +4551,6 @@ msgstr "تكوين"
 #, fuzzy
 msgid  "My Documents"
 msgstr "المستندات"
-
-#: options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "الرسومات"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Icons"
-msgstr "أيقونات"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Palettes"
-msgstr "ألواح الألوان"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Backups"
-msgstr "نسخ احتياطية"
 
 #: options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.STRING.TEXT
 #, fuzzy
@@ -5318,40 +4567,15 @@ msgstr "قوالب"
 msgid  "AutoText"
 msgstr "نص تلقائي"
 
-#: options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Dictionaries"
-msgstr "القواميس"
-
-#: options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "تعليمات"
-
 #: options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.STRING.TEXT
 #, fuzzy
 msgid  "Gallery"
 msgstr "معرض"
 
-#: options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Message Storage"
-msgstr "تخزين الرسائل"
-
 #: options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.STRING.TEXT
 #, fuzzy
 msgid  "Temporary files"
 msgstr "الملفات المؤقتة"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Plug-ins"
-msgstr "الأدوات الإضافية"
-
-#: options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Folder Bookmarks"
-msgstr "الإشارات المرجعية للمجلدات"
 
 #: options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.STRING.TEXT
 #, fuzzy
@@ -5417,11 +4641,6 @@ msgstr "ع~مل نسخة احتياطية دومًا"
 #, fuzzy
 msgid  "Save ~AutoRecovery information every"
 msgstr "حفظ معلومات الاسترجاع التلقائي كل"
-
-#: options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Minutes"
-msgstr "دقائق"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CHECKBOX.TEXT
 #, fuzzy
@@ -5493,11 +4712,6 @@ msgstr "مستند HTML"
 msgid  "Master document"
 msgstr "مستند شامل"
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "جدول بيانات"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Presentation"
@@ -5533,11 +4747,6 @@ msgstr "التدقيق الإملائي"
 msgid  "~Edit..."
 msgstr "ت~حرير..."
 
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionaries"
-msgstr "القواميس"
-
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Capital words"
@@ -5552,11 +4761,6 @@ msgstr "ال~كلمات التي تحتوي أرقام "
 #, fuzzy
 msgid  "~Case sensitive "
 msgstr "~حساس لحالة الأحرف "
-
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Check"
-msgstr "التدقيق"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TABPAGE.TEXT
 #, fuzzy
@@ -5753,16 +4957,6 @@ msgstr "يمكنك هنا تعريف الإعدادات العامة للوصو�
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
 msgstr "يمكنك هنا تعريف الإعدادات العامة الخاصة بفتح وحفظ المستندات بتنسياق خارجية. يمكنك التحكم في تصرّف وحدات الماكرو أو كائنات OLE الموجودة في وثائق Microsoft Office أو تعريف إعدادات وثائق HTML."
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "%PRODUCTNAME"
-msgstr "%PRODUCTNAME"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "User Data"
-msgstr "بيانات المستخدم"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ITEMLIST.ITEM
 #, fuzzy
 msgid  "General"
@@ -5788,20 +4982,10 @@ msgstr "طباعة"
 msgid  "Paths"
 msgstr "المسارات"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Colors"
-msgstr "الألوان"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Fonts"
 msgstr "الخطوط"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Security"
-msgstr "الأمان"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ITEMLIST.ITEM
 #, fuzzy
@@ -5813,11 +4997,6 @@ msgstr "المظهر"
 msgid  "Accessibility"
 msgstr "الموصليّة"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Java"
-msgstr "جافا"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Network Identity"
@@ -5828,11 +5007,6 @@ msgstr "هويّة الشبكة"
 msgid  "Online Update"
 msgstr "تحديث عبر الإنترنت"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Language Settings"
-msgstr "إعدادات اللغة"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Languages"
@@ -5842,11 +5016,6 @@ msgstr "اللغات"
 #, fuzzy
 msgid  "Writing Aids"
 msgstr "مساعدات الكتابة"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Searching in Japanese"
-msgstr "خيارات البحث للغة اليابانية"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ITEMLIST.ITEM
 #, fuzzy
@@ -5867,16 +5036,6 @@ msgstr "إنترنت"
 #, fuzzy
 msgid  "Proxy"
 msgstr "بروكسي"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Search"
-msgstr "بحث"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "E-mail"
-msgstr "البريد الإلكتروني"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ITEMLIST.ITEM
 #, fuzzy
@@ -5938,11 +5097,6 @@ msgstr "رسالة إلكترونيّة عبر دمج المراسلات"
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Background"
-msgstr "الخلفية"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "%PRODUCTNAME Math"
@@ -5952,16 +5106,6 @@ msgstr "%PRODUCTNAME Math"
 #, fuzzy
 msgid  "Settings"
 msgstr "إعدادات"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Calc"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "International"
-msgstr "دولي"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ITEMLIST.ITEM
 #, fuzzy
@@ -5983,30 +5127,10 @@ msgstr "%PRODUCTNAME Impress"
 msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME Draw"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Charts"
-msgstr "رسوم بيانية"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Default Colors"
-msgstr "اﻷلوان الافتراضية"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Load/Save"
 msgstr "تحميل/حفظ"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ITEMLIST.ITEM
-#, fuzzy
-msgid  "VBA Properties"
-msgstr "خصائص VBA"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Microsoft Office"
-msgstr "Microsoft Office"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ITEMLIST.ITEM
 #, fuzzy
@@ -6032,11 +5156,6 @@ msgstr "قواعد البيانات"
 #, fuzzy
 msgid  "Site certificates"
 msgstr "شهادات مواقع"
-
-#: options/treeopt.src#RID_RIDER_SLL_PERSONAL.STRING.TEXT
-#, fuzzy
-msgid  "Personal certificates"
-msgstr "شهادات شخصية"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.MODALDIALOG.TEXT
 #, fuzzy
@@ -6083,11 +5202,6 @@ msgstr "اسم المستخدم"
 msgid  "Alignment"
 msgstr "محاذاة"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text alignment"
-msgstr "محاذاة النص"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Hori~zontal"
@@ -6098,30 +5212,10 @@ msgstr "أ~فقي"
 msgid  "Default"
 msgstr "الافتراضي"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "يسار"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Center"
-msgstr "وسط"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "يمين"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Justified"
 msgstr "ضبط"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Filled"
-msgstr "ممتلئ"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6132,16 +5226,6 @@ msgstr "الإ~زاحة"
 #, fuzzy
 msgid  "~Vertical"
 msgstr "~رأسي"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "أعلى"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "وسط"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.STRINGLIST.ITEM
 #, fuzzy
@@ -6172,11 +5256,6 @@ msgstr "ال~حافة المرجع"
 #, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "و~ضع المظهر الآسيوي"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "خصائص"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TRISTATEBOX.TEXT
 #, fuzzy
@@ -6223,11 +5302,6 @@ msgstr "تصحيح تلقائي"
 msgid  "Replace"
 msgstr "استبدال"
 
-#: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Exceptions"
-msgstr "استثناءات"
-
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Options"
@@ -6263,11 +5337,6 @@ msgstr "استخدام جدول الاستبدال"
 msgid  "Correct TWo INitial CApitals"
 msgstr "تصحيح الحرفين الاستهلاليين"
 
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.STRING.TEXT
-#, fuzzy
-msgid  "Capitalize first letter of every sentence"
-msgstr "بدء كل جملة بحرف استهلالي"
-
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.STRING.TEXT
 #, fuzzy
 msgid  "Automatic *bold* and _underline_"
@@ -6277,11 +5346,6 @@ msgstr "*عريض* و_خط تحتي_ تلقائيًا"
 #, fuzzy
 msgid  "Ignore double spaces"
 msgstr "تجاهل المسافات المزدوجة"
-
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.STRING.TEXT
-#, fuzzy
-msgid  "URL Recognition"
-msgstr "التعرف على URL"
 
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.STRING.TEXT
 #, fuzzy
@@ -6298,16 +5362,6 @@ msgstr "إعدادات"
 msgid  "~Edit..."
 msgstr "ت~حرير..."
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "[M]"
-msgstr "[M]"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.STRING.TEXT
-#, fuzzy
-msgid  "[T]"
-msgstr "[T]"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "[M]: Replace while modifying existing text"
@@ -6322,11 +5376,6 @@ msgstr "[ك]: تنسيق تلقائي/تصحيح تلقائي أثناء الك�
 #, fuzzy
 msgid  "Remove blank paragraphs"
 msgstr "إزالة الفقرات الفارغة"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.STRING.TEXT
-#, fuzzy
-msgid  "Replace Custom Styles"
-msgstr "استبدال النماذج المخصصة"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.STRING.TEXT
 #, fuzzy
@@ -6352,11 +5401,6 @@ msgstr "تطبيق حدود"
 #, fuzzy
 msgid  "Create table"
 msgstr "إنشاء جدول"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "Apply Styles"
-msgstr "تطبيق أنماط"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.STRING.TEXT
 #, fuzzy
@@ -6418,11 +5462,6 @@ msgstr "اختصارات (لا تُتبع بحرف استهلالي)"
 msgid  "~AutoInclude"
 msgstr "إ~ضافة تلقائية"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Words with TWo INitial CApitals"
-msgstr "الكلمات التي تحتوي على حرفي استهلاليين"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Ne~w"
@@ -6439,18 +5478,22 @@ msgid  "A~utoInclude"
 msgstr "إضا~فة تلقائية"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWABBREV.STRING.TEXT
+#, fuzzy
 msgid  "New abbreviations"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELABBREV.STRING.TEXT
+#, fuzzy
 msgid  "Delete abbreviations"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWDOUBLECAPS.STRING.TEXT
+#, fuzzy
 msgid  "New words with two initial capitals"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELDOUBLECAPS.STRING.TEXT
+#, fuzzy
 msgid  "Delete words with two initial capitals"
 msgstr ""
 
@@ -6519,32 +5562,33 @@ msgstr "بدء الاقتباس"
 msgid  "End quote"
 msgstr "نهاية الاقتباس"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "الافتراضي"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
+#, fuzzy
 msgid  "Single quotes default"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
+#, fuzzy
 msgid  "Double quotes default"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
+#, fuzzy
 msgid  "Start quote of single quotes"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
+#, fuzzy
 msgid  "Start quote of double quotes"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
+#, fuzzy
 msgid  "End quote of single quotes"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
+#, fuzzy
 msgid  "End quote of double quotes"
 msgstr ""
 
@@ -6603,30 +5647,15 @@ msgstr "نص تسمية مع علامات ذكية"
 msgid  "Currently installed smart tags"
 msgstr "العلامات الذكية مثبته حاليًا"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Properties..."
-msgstr "خصائص..."
-
 #: tabpages/backgrnd.src#UNLINKED_IMAGE.#DEFINE.TEXT
 #, fuzzy
 msgid  "Unlinked graphic"
 msgstr "رسم غير مرتبط"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TABPAGE.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "الخلفية"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "A~s"
 msgstr "~كـ"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "اللون"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -6638,35 +5667,10 @@ msgstr "رسومات"
 msgid  "F~or"
 msgstr "~لـ"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cell"
-msgstr "خلية"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Row"
-msgstr "الصف"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Table"
-msgstr "الجدول"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Paragraph"
-msgstr "فقرة"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Character"
 msgstr "الحرف"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Background color"
-msgstr "لون الخلفية"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6723,26 +5727,6 @@ msgstr "م~عاينة"
 msgid  "Find graphics"
 msgstr "البحث عن الرسوم"
 
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Border / Background"
-msgstr "الحدود / الخلفية"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "الحدود"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "الخلفية"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.TABPAGE.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "الحدود"
-
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Line arrangement"
@@ -6757,11 +5741,6 @@ msgstr "الا~فتراضي"
 #, fuzzy
 msgid  "~User-defined"
 msgstr "~معرف من قبل المستخدم"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "الخط"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6817,16 +5796,6 @@ msgstr "ال~مسافة"
 #, fuzzy
 msgid  "C~olor"
 msgstr "لون~"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Shadow style"
-msgstr "نمط الظل"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "خصائص"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CHECKBOX.TEXT
 #, fuzzy
@@ -6898,31 +5867,6 @@ msgstr "وضع الحد الأعلى والأسفل، وجميع الخطوط ا
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr "وضع الحد الأيسر والأيمن، وجميع الخطوط الداخلية"
 
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.STRING.TEXT
-#, fuzzy
-msgid  "No Shadow"
-msgstr "بدون ظل"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Right"
-msgstr "الظل أسفل اليمين"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Right"
-msgstr "الظل أعلى اليمين"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Left"
-msgstr "الظل أسفل اليسار"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Left"
-msgstr "الظل أعلى اليسار"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Western text font"
@@ -6947,11 +5891,6 @@ msgstr "~نمط الخط"
 #, fuzzy
 msgid  "Normal"
 msgstr "عادي"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Italic"
-msgstr "مائل"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -7003,11 +5942,6 @@ msgstr "نم~ط الخط"
 msgid  "Example"
 msgstr "مثال"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color"
-msgstr "اللون"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Font ~color"
@@ -7048,25 +5982,10 @@ msgstr "أحرف صغيرة"
 msgid  "Title"
 msgstr "المسمى الوظيفي"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small capitals"
-msgstr "استهلالية صغيرة"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Relief"
 msgstr "ن~قش"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Embossed"
-msgstr "بارز "
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Engraved"
-msgstr "محفور"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TRISTATEBOX.TEXT
 #, fuzzy
@@ -7102,11 +6021,6 @@ msgstr "مفرد"
 #, fuzzy
 msgid  "Double"
 msgstr "مزدوج"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Dotted"
-msgstr "منقّط"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
 #, fuzzy
@@ -7178,16 +6092,6 @@ msgstr "لون ال~خط العلوي"
 msgid  "~Strikethrough"
 msgstr "يتوس~طه خط"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With /"
-msgstr "مع /"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_X.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With X"
-msgstr "مع س"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Underlining"
@@ -7210,63 +6114,18 @@ msgstr "علامة التو~كيد"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Dot"
-msgstr "نقطة"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Circle"
-msgstr "دائرة"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Disc"
 msgstr "قرص"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Accent"
-msgstr "شرطة"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Position"
 msgstr "الم~وضع"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above text"
-msgstr "فوق النص"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below text"
-msgstr "تحت النص"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.STRING.TEXT
-#, fuzzy
-msgid  "Small Capitals"
-msgstr "استهلالية صغيرة"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.STRING.TEXT
 #, fuzzy
 msgid  "Outline"
 msgstr "تخطيط"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.STRING.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "ظل"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_BLINKING.STRING.TEXT
-#, fuzzy
-msgid  "Blinking"
-msgstr "وميض"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "الموضع"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RADIOBUTTON.TEXT
 #, fuzzy
@@ -7297,11 +6156,6 @@ msgstr "الحجم النسبي للخط"
 #, fuzzy
 msgid  "Rotation / scaling"
 msgstr "استدارة / تحجيم"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scaling"
-msgstr "المقياس"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RADIOBUTTON.TEXT
 #, fuzzy
@@ -7335,16 +6189,6 @@ msgstr "تباعد"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Default"
-msgstr "الافتراضي"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Expanded"
-msgstr "موسع"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Condensed"
 msgstr "مكثف"
 
@@ -7357,11 +6201,6 @@ msgstr "بمقدا~ر"
 #, fuzzy
 msgid  "~Pair kerning"
 msgstr "تق~نين زوجي"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Double-lined"
-msgstr "سطران"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.CB_TWOLINES.CHECKBOX.TEXT
 #, fuzzy
@@ -7383,26 +6222,6 @@ msgstr "حر~ف البداية"
 msgid  "(None)"
 msgstr "(بدون)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  "("
-msgstr "("
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "["
-msgstr "["
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "<"
-msgstr "<"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "{"
-msgstr "{"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Other Characters..."
@@ -7413,26 +6232,6 @@ msgstr "أحرف أخرى..."
 msgid  "Final charact~er"
 msgstr "حر~ف النهاية"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  ")"
-msgstr ")"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "]"
-msgstr "]"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  ">"
-msgstr ">"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "}"
-msgstr "}"
-
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.TABPAGE.TEXT
 #, fuzzy
 msgid  "Connector"
@@ -7442,11 +6241,6 @@ msgstr "موصل"
 #, fuzzy
 msgid  "~Type"
 msgstr "ال~نوع"
-
-#: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DELTA.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line skew"
-msgstr "خط مائل"
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7533,11 +6327,6 @@ msgstr "ي~مين"
 msgid  "Vertical"
 msgstr "رأسي"
 
-#: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "لاش~يء"
-
 #: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Top"
@@ -7557,16 +6346,6 @@ msgstr "ال~تباعد"
 #, fuzzy
 msgid  "~Bottom"
 msgstr "أ~سفل"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.STRING.TEXT
-#, fuzzy
-msgid  "Left-to-right"
-msgstr "من اليسار إلى اليمين"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.STRING.TEXT
-#, fuzzy
-msgid  "Right-to-left"
-msgstr "يمين إلى اليسار"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.STRING.TEXT
 #, fuzzy
@@ -7668,11 +6447,6 @@ msgstr "تبا~عد"
 msgid  "~Angle"
 msgstr "الزاوية~"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Free"
-msgstr "حرّ"
-
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.STRINGLIST.ITEM
 #, fuzzy
 msgid  "30 Degrees"
@@ -7702,16 +6476,6 @@ msgstr "ا~متداد"
 #, fuzzy
 msgid  "Optimal"
 msgstr "الأمثل"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "من الأعلى"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From left"
-msgstr "من اليسار"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.1.STRINGLIST.ITEM
 #, fuzzy
@@ -7748,36 +6512,6 @@ msgstr "الأم~ثل"
 msgid  "Straight Line"
 msgstr "خط مستقيم"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_2.STRING.TEXT
-#, fuzzy
-msgid  "Angled Line"
-msgstr "خط ذو زاوية"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_3.STRING.TEXT
-#, fuzzy
-msgid  "Angled Connector Line"
-msgstr "خط رابط ذو زاوية واحدة"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_4.STRING.TEXT
-#, fuzzy
-msgid  "Double-angled line"
-msgstr "خط مزدوج الزوايا"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_HORZ_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Top;Middle;Bottom"
-msgstr "أعلى;وسط;أسفل"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_VERT_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Left;Middle;Right"
-msgstr "يسار;وسط;يمين"
-
-#: tabpages/labdlg.src#_POS_SIZE_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "الموضع والحجم"
-
 #: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Callout"
@@ -7799,6 +6533,7 @@ msgid  "Assigned macro"
 msgstr "الماكرو المعين"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Existing macros\n"
 msgstr ""
 
@@ -7821,11 +6556,6 @@ msgstr "وحدات الماكرو"
 #, fuzzy
 msgid  "Dimensioning"
 msgstr "قياس الأبعاد"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "الخط"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_LINE_DIST.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7861,11 +6591,6 @@ msgstr "الق~ياس أسفل الكائن"
 #, fuzzy
 msgid  "Decimal places"
 msgstr "المنازل العشرية"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LABEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Legend"
-msgstr "وسيلة الإيضاح"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7909,58 +6634,13 @@ msgstr "ال~فئة"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "All"
-msgstr "الكل"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "User-defined"
-msgstr "معرف من قبل المستخدم"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "الرقم"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Percent"
-msgstr "النسبة المئوية"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Currency"
-msgstr "عملة"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "التاريخ"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Time"
-msgstr "الوقت"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Scientific"
 msgstr "علمي"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Fraction"
-msgstr "كسر"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Boolean Value"
 msgstr "قيمة حقيقية"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "النص"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_EDFORMAT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8012,11 +6692,6 @@ msgstr "الل~غة"
 msgid  "So~urce format"
 msgstr "تنسيق ال~مصدر"
 
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Add"
-msgstr "إضافةة"
-
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Remove"
@@ -8067,16 +6742,6 @@ msgstr "التر~قيم"
 msgid  "1, 2, 3, ... "
 msgstr "1, 2, 3, ... "
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ... "
-msgstr "A, B, C, ... "
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "I, II, III, ... "
@@ -8092,16 +6757,6 @@ msgstr "i, ii, iii, ... "
 msgid  "A, .., AA, .., AAA, ... "
 msgstr "A, .., AA, .., AAA, ... "
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, .., aa, .., aaa, ..."
-msgstr "a, .., aa, .., aaa, ..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bullet"
-msgstr "نقطة"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Graphics"
@@ -8111,11 +6766,6 @@ msgstr "الرسومات"
 #, fuzzy
 msgid  "Linked graphics"
 msgstr "الصور المرتبطة"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "بلا"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.12.STRINGLIST.ITEM
 #, fuzzy
@@ -8307,11 +6957,6 @@ msgstr "وسط الحرف"
 msgid  "Bottom of character"
 msgstr "أسفل الحرف"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "أعلى السطر"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -8321,11 +6966,6 @@ msgstr "وسط السطر"
 #, fuzzy
 msgid  "Bottom of line"
 msgstr "أسفل السطر"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FL_SAME_LEVEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "All levels"
-msgstr "جميع المستويات"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.CB_SAME_LEVEL.CHECKBOX.TEXT
 #, fuzzy
@@ -8407,11 +7047,6 @@ msgstr "إزاحة إلى"
 msgid  "Default"
 msgstr "الافتراضي"
 
-#: tabpages/numpages.src#RID_STR_EDIT_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Link"
-msgstr "ارتباط"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FL_PAPER_SIZE.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Paper format"
@@ -8457,11 +7092,6 @@ msgstr "~اتجاه النص"
 msgid  "Paper ~tray"
 msgstr "~درج الورق"
 
-#: tabpages/page.src#RID_SVXPAGE_PAGE.FL_MARGIN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Margins"
-msgstr "هوامش"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_LEFT_MARGIN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Left"
@@ -8494,58 +7124,13 @@ msgstr "تخطيط الصفحة"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Right and left"
-msgstr "يمين ويسار"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Mirrored"
 msgstr "منعكس"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only right"
-msgstr "يمين فقط"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only left"
-msgstr "يسار فقط"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "For~mat"
 msgstr "~تنسيق"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ..."
-msgstr "A, B, C, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "I, II, III, ..."
-msgstr "I, II, III, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "1, 2, 3, ..."
-msgstr "1, 2, 3, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "بلا"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_TBL_ALIGN.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8787,11 +7372,6 @@ msgstr "ال~سطر الأول"
 msgid  "~Automatic"
 msgstr "تل~قائي"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_INDENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Indent"
-msgstr "إزاحة"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_TOPDIST.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Ab~ove paragraph"
@@ -8809,28 +7389,8 @@ msgstr "تباعد"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Single"
-msgstr "مفرد"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "1.5 lines"
 msgstr "سطر ونصف"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Double"
-msgstr "مزدوج"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Proportional"
-msgstr "تناسبي"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "At least"
-msgstr "على الأقل"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -8907,21 +7467,6 @@ msgstr "ي~مين/أسفل"
 msgid  "~Last line"
 msgstr "آ~خر سطر"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "الافتراضي"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "يسار"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "توسيط"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Expand single word"
@@ -8952,35 +7497,15 @@ msgstr "تلقائي"
 msgid  "Base line"
 msgstr "خط الأساس"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "أعلى"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "وسط"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM5.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Bottom"
 msgstr "أسفل"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "خصائص"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_TEXTDIRECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Text ~direction"
 msgstr "~اتجاه النص"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Text Flow"
-msgstr "انسياب النص"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_HYPHEN.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9007,11 +7532,6 @@ msgstr "العدد الأقصى للشرطات المتتالية‎"
 msgid  "Hyphenation"
 msgstr "فصل المقاطع"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Breaks"
-msgstr "فواصل"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGEBREAK.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Insert"
@@ -9022,30 +7542,10 @@ msgstr "إدراج"
 msgid  "~Type"
 msgstr "ال~نوع"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Page"
-msgstr "الصفحة"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Column"
-msgstr "العمود"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKPOSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Position"
 msgstr "الموضع"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Before"
-msgstr "قبل"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "After"
-msgstr "بعد"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGECOLL.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9113,13 +7613,9 @@ msgid  "Example"
 msgstr "مثال"
 
 #: tabpages/paragrph.src#STR_PAGE_STYLE.STRING.TEXT
+#, fuzzy
 msgid  "Page Style"
 msgstr ""
-
-#: tabpages/strings.src#RID_SVXSTR_DESC_GRADIENT.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the gradient:"
-msgstr "الرجاء إدخال اسم تدرج اللون:"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_GRADIENT.STRING.TEXT
 #, fuzzy
@@ -9151,11 +7647,6 @@ msgstr "هل أنت متأكد أنك تريد حذف الصورة النقطي�
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
 msgstr "تم تعديل الصورة النقطية دون حفظ .\nقم بتعديل الصورة المحددة أو إضافة صورة جديدة."
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the line style:"
-msgstr "الرجاء إدخال اسم نمط الخط هنا:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINESTYLE.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the line style?"
@@ -9166,11 +7657,6 @@ msgstr "هل تريد حذف نمط الخط؟"
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
 msgstr "نمط الخط عدل بدون حفظ .\nعدل نمط الخط المحدد أو أضف نمط جديد."
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_HATCH.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the hatching:"
-msgstr "الرجاء إدخال اسم للتظليل هنا:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_HATCH.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the hatching?"
@@ -9180,16 +7666,6 @@ msgstr "هل تريد بالفعل حذف التظليل؟"
 #, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
 msgstr "نوع التظليل قد عدل بدون حفظ.\nعدل نوع التظليل أو أضف نوع تظليل جديد."
-
-#: tabpages/strings.src#RID_SVXSTR_CHANGE.STRING.TEXT
-#, fuzzy
-msgid  "Modify"
-msgstr "تعديل"
-
-#: tabpages/strings.src#RID_SVXSTR_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "إضافة"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_COLOR.STRING.TEXT
 #, fuzzy
@@ -9246,16 +7722,6 @@ msgstr "هل تريد حذف رأس السهم؟"
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 msgstr "رأس السهم عدل بدون حفظ .\nهل تريد حفظ رأس السهم الآن؟"
 
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "الموضع والحجم"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "الحجم"
-
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Width"
@@ -9270,11 +7736,6 @@ msgstr "إ~رتفاع"
 #, fuzzy
 msgid  "~Keep ratio"
 msgstr "المحافظة على ~نسبة الحجم"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "إرساء"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOPAGE.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9300,11 +7761,6 @@ msgstr "كح~رف"
 #, fuzzy
 msgid  "To ~frame"
 msgstr "للإ~طار"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_PROTECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "حماية"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_POSITION.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9403,11 +7859,6 @@ msgstr "إهليجي"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Quadratic"
-msgstr "ثلاثي"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Square"
 msgstr "مربع"
 
@@ -9463,16 +7914,6 @@ msgstr "تعبئة"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "None"
-msgstr "بلا"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "اللون"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Hatching"
 msgstr "نقش"
 
@@ -9496,11 +7937,6 @@ msgstr "ت~لقائي"
 msgid  "~Background color"
 msgstr "لون الخلفية~"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "الحجم"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_ORIGINAL.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Original"
@@ -9521,11 +7957,6 @@ msgstr "العرض~"
 msgid  "H~eight"
 msgstr "إ~رتفاع"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "الموضع"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_OFFSET.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~X Offset"
@@ -9545,11 +7976,6 @@ msgstr "تجا~نب"
 #, fuzzy
 msgid  "Auto~Fit"
 msgstr "ملاءمة تلقائية"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_OFFSET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Offset"
-msgstr "الإزاحة"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.RBT_ROW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9686,11 +8112,6 @@ msgstr "حفظ قائمة الصور النقطيةة"
 msgid  "Gradients"
 msgstr "تدرجات"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Rectangular"
-msgstr "مستطيل"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~From"
@@ -9772,10 +8193,12 @@ msgid  "Bitmaps"
 msgstr "صور نقطية"
 
 #: tabpages/tabarea.src#STR_LB_HATCHINGSTYLE.STRING.TEXT
+#, fuzzy
 msgid  "Hatching Style"
 msgstr ""
 
 #: tabpages/tabarea.src#STR_CUI_COLORMODEL.STRING.TEXT
+#, fuzzy
 msgid  "Color Mode"
 msgstr ""
 
@@ -9808,11 +8231,6 @@ msgstr "ال~عرض"
 #, fuzzy
 msgid  "~Transparency"
 msgstr "ا~لشفافية"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_LINE_ENDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Arrow styles"
-msgstr "أنماط الأسهم"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_ENDS_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -9854,11 +8272,6 @@ msgstr "نم~ط"
 msgid  "Rounded"
 msgstr "مدوّر"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "- none -"
-msgstr "- بلا -"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Mitered"
@@ -9870,14 +8283,17 @@ msgid  "Beveled"
 msgstr "مائل"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_CAP_STYLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ca~p style"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Flat"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Round"
 msgstr ""
 
@@ -9890,11 +8306,6 @@ msgstr "مربع"
 #, fuzzy
 msgid  "Icon"
 msgstr "أيقونة"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_NONE.MENUITEM.TEXT
-#, fuzzy
-msgid  "No Symbol"
-msgstr "بدون رمز"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_AUTO.MENUITEM.TEXT
 #, fuzzy
@@ -9942,38 +8353,34 @@ msgid  "Style"
 msgstr "~نمط"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_LB_START_STYLE.STRING.TEXT
+#, fuzzy
 msgid  "Start style"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_LB_END_STYLE.STRING.TEXT
+#, fuzzy
 msgid  "End style"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_MTR_FLD_START_WIDTH.STRING.TEXT
+#, fuzzy
 msgid  "Start width"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_MTR_FLD_END_WIDTH.STRING.TEXT
+#, fuzzy
 msgid  "End width"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_CENTER_START.STRING.TEXT
+#, fuzzy
 msgid  "Start with center"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_CENTER_END.STRING.TEXT
+#, fuzzy
 msgid  "End with center"
 msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.TABPAGE.TEXT
-#, fuzzy
-msgid  "Define line styles"
-msgstr "تعريف أنماط الخطوط"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FL_DEFINITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "خصائص"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FT_TYPE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -10030,37 +8437,38 @@ msgstr "~تعديل..."
 msgid  "~Delete..."
 msgstr "~حذف..."
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Load Line Styles"
-msgstr "تحميل نمط الخطوطط"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Save Line Styles"
 msgstr "حفظ نمط الخطوطط"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Start type"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "End type"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_NUM.STRING.TEXT
+#, fuzzy
 msgid  "Start number"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_NUM.STRING.TEXT
+#, fuzzy
 msgid  "End number"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Start length"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "End length"
 msgstr ""
 
@@ -10098,26 +8506,6 @@ msgstr "تحميل نمط السهمط"
 #, fuzzy
 msgid  "Save Arrow Styles"
 msgstr "حفظ نمط السهمط"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "الخط"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "ظل"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Line Styles"
-msgstr "أنماط الخطوط"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Arrow Styles"
-msgstr "أنماط الأسهم"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.TABPAGE.TEXT
 #, fuzzy
@@ -10163,11 +8551,6 @@ msgstr "~محرف"
 #, fuzzy
 msgid  "Fill character"
 msgstr "Fill character"
-
-#: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "لاش~يء"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_OTHER.RADIOBUTTON.TEXT
 #, fuzzy
@@ -10234,41 +8617,6 @@ msgstr "تمرير عبر"
 msgid  "Scroll Back and Forth"
 msgstr "تمرير للأمام والخلف"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Scroll In"
-msgstr "تمرير داخل"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DIRECTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Direction"
-msgstr "الاتجاه"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_UP.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Top"
-msgstr "إلى أعلىى"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_LEFT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Left"
-msgstr "إلى اليسارر"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_RIGHT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Right"
-msgstr "إلى اليمينن"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_DOWN.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Bottom"
-msgstr "إلى أسفلل"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "خصائص"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_START_INSIDE.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "S~tart inside"
@@ -10299,20 +8647,10 @@ msgstr "التزايد"
 msgid  "~Pixels"
 msgstr "ن~قاط"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DELAY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Delay"
-msgstr "تأخير"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_AUTO.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Automatic"
 msgstr "تل~قائي"
-
-#: tabpages/textanim.src#RID_SVXDLG_TEXT.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "النص"
 
 #: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
 #, fuzzy
@@ -10379,11 +8717,6 @@ msgstr "أ~على"
 msgid  "~Bottom"
 msgstr "أ~سفل"
 
-#: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text anchor"
-msgstr "مرساة النص"
-
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TSB_FULL_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Full ~width"
@@ -10414,11 +8747,6 @@ msgstr "إحداثي~ ص"
 msgid  "Base point"
 msgstr "نقطة أساسيةق"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "الحجم"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Wi~dth"
@@ -10434,20 +8762,10 @@ msgstr "إ~رتفاع"
 msgid  "~Keep ratio"
 msgstr "المحافظة على ~نسبة الحجم"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_PROTECT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "حماية"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_SIZEPROTECT.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Size"
 msgstr "ال~حجم"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ADJUST.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Adapt"
-msgstr "يتكيّف"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_AUTOGROW_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
@@ -10459,60 +8777,20 @@ msgstr "~ملاءمة العرض مع النص"
 msgid  "Fit ~height to text"
 msgstr "~ملاءمة الارتفاع مع النص"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "إرساء"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ANCHOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Anchor"
 msgstr "إرسا~ء"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To paragraph"
-msgstr "إلى الفقرة"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "As character"
 msgstr "كحرف"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To page"
-msgstr "إلى الصفحة"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To frame"
-msgstr "إلى الإطار"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ORIENT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "P~osition"
 msgstr "الم~وضع"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "من الأعلى"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above"
-msgstr "فوق"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "توسيط"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below"
-msgstr "تحت"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM5.STRINGLIST.ITEM
 #, fuzzy
@@ -10529,11 +8807,6 @@ msgstr "وسط الحرف"
 msgid  "Bottom of character"
 msgstr "أسفل الحرف"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "أعلى السطر"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM9.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -10543,11 +8816,6 @@ msgstr "وسط السطر"
 #, fuzzy
 msgid  "Bottom of line"
 msgstr "أسفل السطر"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Angle"
-msgstr "الزاوية"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FL_POSITION.FIXEDLINE.TEXT
 #, fuzzy
@@ -10588,11 +8856,6 @@ msgstr "زاوية الاستدارةe"
 #, fuzzy
 msgid  "Slant & Corner Radius"
 msgstr "ميل ومركز نصف القطر"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FL_RADIUS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Corner radius"
-msgstr "نصف قطر الزاوية"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FT_RADIUS.FIXEDTEXT.TEXT
 #, fuzzy

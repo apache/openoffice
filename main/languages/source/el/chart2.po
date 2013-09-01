@@ -31,11 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Data Table"
-msgstr "Πίνακας δεδομένων"
-
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.TOOLBOXITEM.TEXT
 #, fuzzy
 msgid  "Insert Row"
@@ -76,35 +71,22 @@ msgstr "Μετακινήστε τις γραμμές προς τα κάτω"
 msgid  "Data Ranges"
 msgstr "Περιοχές δεδομένων"
 
-#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Axes"
-msgstr "Άξονες"
-
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Major grids"
 msgstr "Κύρια πλέγματα"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~X axis"
-msgstr "Άξονας ~X"
+msgstr "~X άξονας"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Y axis"
-msgstr "Άξονας ~Y"
+msgstr "~Y άξονας"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Z axis"
-msgstr "Άξονας ~Z"
-
-#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Secondary axes"
-msgstr "Δευτερεύοντες άξονες"
+msgstr "~Z άξονας"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
 #, fuzzy
@@ -141,11 +123,6 @@ msgstr "Παράγραφος"
 msgid  "Indents & Spacing"
 msgstr "Εσοχές & Διαστήματα"
 
-#: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Στοίχιση"
-
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Asian Typography"
@@ -157,94 +134,8 @@ msgid  "Tab"
 msgstr "Στηλοθέτης"
 
 #: controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TABDIALOG.TEXT
-#, fuzzy
 msgid  "3D View"
-msgstr "Προβολή 3Δ"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Box"
-msgstr "Κουτί"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cylinder"
-msgstr "Κύλινδρος"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cone"
-msgstr "Κώνος"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Pyramid"
-msgstr "Πυραμίδα"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Best fit"
-msgstr "Καλύτερο ταίριασμα"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Center"
-msgstr "Στο κέντρο"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above"
-msgstr "Προς τα πάνω"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top left"
-msgstr "Πάνω αριστερά"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "Αριστερά"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bottom left"
-msgstr "Κάτω αριστερά"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below"
-msgstr "Προς τα κάτω"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bottom right"
-msgstr "Κάτω δεξιά"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM9.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "Δεξιά"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top right"
-msgstr "Πάνω δεξιά"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM11.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Inside"
-msgstr "Εσωτερικά"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM12.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Outside"
-msgstr "Εξωτερικά"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM13.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Near origin"
-msgstr "Κοντά στο αρχικό"
+msgstr "Προβολή 3D"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_NUMBER.CHECKBOX.TEXT
 #, fuzzy
@@ -281,11 +172,6 @@ msgstr "Προβολή κλει~διού υπομνήματος"
 msgid  "Place~ment"
 msgstr "Τοπο~θέτηση"
 
-#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FL_LABEL_ROTATE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Rotate Text"
-msgstr "Περιστροφή κειμένου"
-
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_DEGREES.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Degrees"
@@ -295,31 +181,6 @@ msgstr "~Μοίρες"
 #, fuzzy
 msgid  "Te~xt direction"
 msgstr "Κατεύ~θυνση κειμένου"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Standard Error"
-msgstr "Τυπικό σφάλμα"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Standard Deviation"
-msgstr "Τυπική απόκλιση"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Variance"
-msgstr "Διακύμανση"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Error Margin"
-msgstr "Περιθώριο σφάλματος"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_ERROR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Error Category"
-msgstr "Κατηγορία σφάλματος"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
 #, fuzzy
@@ -341,11 +202,6 @@ msgstr "~Ποσοστό"
 msgid  "Cell ~Range"
 msgstr "Περιο~χή κελιού"
 
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_PARAMETERS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Parameters"
-msgstr "Παράμετροι"
-
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_POSITIVE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "P~ositive (+)"
@@ -355,16 +211,6 @@ msgstr "~Θετική (+)"
 #, fuzzy
 msgid  "~Negative (-)"
 msgstr "Α~ρνητική (-)"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).CB_SYN_POS_NEG.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Same value for both"
-msgstr "Ίδια τιμή"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_INDICATE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Error Indicator"
-msgstr "Ένδειξη σφάλματος"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_BOTH.RADIOBUTTON.TEXT
 #, fuzzy
@@ -407,39 +253,21 @@ msgid  "~Bottom"
 msgstr "~Κάτω"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_X_SECONDARY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "X ~axis"
-msgstr "Άξονας ~X"
+msgstr "~Χ άξονας"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Y_SECONDARY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Y ax~is"
-msgstr "Άξονας ~Y"
+msgstr "~Υ άξονας"
 
 #: controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES(_XPOS,_YPOS,_XOFFSET,_YOFFSET_).CB_Z_SECONDARY.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Z axi~s"
-msgstr "Άξονας ~Z"
+msgstr "~Ζ άξονας"
 
 #: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM1.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Space"
 msgstr "Διάστημα"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Comma"
-msgstr "Κόμμα"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Semicolon"
-msgstr "Άνω τελεία"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "New line"
-msgstr "Νέα γραμμή"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_MAINTITLE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -451,40 +279,25 @@ msgstr "~Τίτλος"
 msgid  "~Subtitle"
 msgstr "Υπό~τιτλος"
 
-#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_AXES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Axes"
-msgstr "Άξονες"
-
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_X_AXIS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~X axis"
-msgstr "Άξονας ~X"
+msgstr "~X άξονας"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Y_AXIS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Y axis"
-msgstr "Άξονας ~Y"
+msgstr "~Y άξονας"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Z_AXIS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Z axis"
-msgstr "Άξονας ~Z"
-
-#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_SECONDARY_AXES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Secondary Axes"
-msgstr "Δευτερεύοντες άξονες"
+msgstr "~Ζ άξονας"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_X_AXIS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "X ~axis"
-msgstr "Ά~ξονας X"
+msgstr "X ά~ξονας"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_Y_AXIS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Y ax~is"
-msgstr "Ά~ξονας Y"
+msgstr "Υ ά~ξονας"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_TYPE.FIXEDLINE.TEXT
 #, fuzzy
@@ -515,11 +328,6 @@ msgstr "Ε~κθετική"
 #, fuzzy
 msgid  "~Power"
 msgstr "~Δύναμη"
-
-#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_EQUATION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Equation"
-msgstr "Εξίσωση"
 
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_EQUATION.CHECKBOX.TEXT
 #, fuzzy
@@ -561,45 +369,10 @@ msgstr "Αρι~θμός γραμμών"
 msgid  "Separator"
 msgstr "Διαχωριστικό"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Column"
-msgstr "Στήλη"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.STRING.TEXT
-#, fuzzy
-msgid  "Bar"
-msgstr "Ράβδος"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.STRING.TEXT
-#, fuzzy
-msgid  "Area"
-msgstr "Περιοχή"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.STRING.TEXT
-#, fuzzy
-msgid  "Pie"
-msgstr "Πίτα"
-
 #: controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.STRING.TEXT
 #, fuzzy
 msgid  "Exploded Pie Chart"
 msgstr "Πίτα με απομακρυσμένα τμήματα"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.STRING.TEXT
-#, fuzzy
-msgid  "Exploded Donut Chart"
-msgstr "Δακτύλιος με απομακρυσμένα τμήματα"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT.STRING.TEXT
-#, fuzzy
-msgid  "Donut"
-msgstr "Δακτύλιος"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Γραμμή"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.STRING.TEXT
 #, fuzzy
@@ -616,35 +389,9 @@ msgstr "Σημεία και γραμμές"
 msgid  "Points Only"
 msgstr "Μόνο σημεία"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.STRING.TEXT
-#, fuzzy
-msgid  "Lines Only"
-msgstr "Μόνο γραμμές"
-
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.STRING.TEXT
-#, fuzzy
 msgid  "3D Lines"
-msgstr "Γραμμές 3Δ"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Column and Line"
-msgstr "Στήλη και γραμμή"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Columns and Lines"
-msgstr "Στήλες και γραμμές"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.STRING.TEXT
-#, fuzzy
-msgid  "Stacked Columns and Lines"
-msgstr "Στήλες και γραμμές σε στοίβα"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
-#, fuzzy
-msgid  "Net"
-msgstr "Δίκτυο"
+msgstr "Γραμμές 3D"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.STRING.TEXT
 #, fuzzy
@@ -671,41 +418,6 @@ msgstr "Διάγραμμα τιμών 3"
 msgid  "Stock Chart 4"
 msgstr "Διάγραμμα τιμών 4"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
-#, fuzzy
-msgid  "Normal"
-msgstr "Κανονικά"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
-#, fuzzy
-msgid  "Stacked"
-msgstr "Σε στοίβα"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
-#, fuzzy
-msgid  "Percent Stacked"
-msgstr "Ποσοστό σε στοίβα"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DEEP.STRING.TEXT
-#, fuzzy
-msgid  "Deep"
-msgstr "Σε βάθος"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_FILLED.STRING.TEXT
-#, fuzzy
-msgid  "Filled"
-msgstr "Με γέμισμα"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.STRING.TEXT
-#, fuzzy
-msgid  "Bubble"
-msgstr "Φούσκα"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.STRING.TEXT
-#, fuzzy
-msgid  "Bubble Chart"
-msgstr "Διάγραμμα φούσκας"
-
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.STRING.TEXT
 #, fuzzy
 msgid  "Numbers are required. Check your input."
@@ -728,16 +440,11 @@ msgstr "Το ελάχιστο πρέπει να είναι μικρότερο α
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.STRING.TEXT
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
-msgstr ""
+msgstr "Το κύριο διάστημα πρέπει να είναι μεγαλύτερο του δευτερεύοντος. Ελέγξτε την καταχώρησή σας."
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.STRING.TEXT
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
-msgstr ""
-
-#: controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.STRING.TEXT
-#, fuzzy
-msgid  "Chart Wizard"
-msgstr "Αυτόματος πιλότος διαγράμματος"
+msgstr "Το κύριο καθώς και το δευτερεύον διάστημα πρέπει να είναι μεγαλύτερα ή ίσα της ανάλυσης. Ελέγξτε την καταχώρησή σας."
 
 #: controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.STRING.TEXT
 #, fuzzy
@@ -754,30 +461,15 @@ msgstr "Μορφή αριθμών για ποσοστιαίες τιμές"
 msgid  "Chart Type"
 msgstr "Τύπος διαγράμματος"
 
-#: controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.STRING.TEXT
-#, fuzzy
-msgid  "Data Range"
-msgstr "Περιοχή δεδομένων"
-
 #: controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.STRING.TEXT
 #, fuzzy
 msgid  "Chart Elements"
 msgstr "Στοιχεία διαγράμματος"
 
-#: controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.STRING.TEXT
-#, fuzzy
-msgid  "Chart Location"
-msgstr "Θέση διαγράμματος"
-
 #: controller/dialogs/Strings.src#STR_PAGE_LINE.STRING.TEXT
 #, fuzzy
 msgid  "Line"
 msgstr "Γραμμή"
-
-#: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Περιγράμματα"
 
 #: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
 #, fuzzy
@@ -799,23 +491,13 @@ msgstr "Γραμματοσειρά"
 msgid  "Font Effects"
 msgstr "Εφέ γραμματοσειράς"
 
-#: controller/dialogs/Strings.src#STR_PAGE_NUMBERS.STRING.TEXT
-#, fuzzy
-msgid  "Numbers"
-msgstr "Αριθμοί"
-
-#: controller/dialogs/Strings.src#STR_PAGE_POSITION.STRING.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Θέση"
-
 #: controller/dialogs/Strings.src#STR_BUTTON_UP.STRING.TEXT
 msgid  "Up"
-msgstr ""
+msgstr "Επάνω"
 
 #: controller/dialogs/Strings.src#STR_BUTTON_DOWN.STRING.TEXT
 msgid  "Down"
-msgstr ""
+msgstr "Κάτω"
 
 #: controller/dialogs/Strings.src#STR_PAGE_LAYOUT.STRING.TEXT
 #, fuzzy
@@ -832,11 +514,6 @@ msgstr "Επιλογές"
 msgid  "Scale"
 msgstr "Κλίμακα"
 
-#: controller/dialogs/Strings.src#STR_PAGE_POSITIONING.STRING.TEXT
-#, fuzzy
-msgid  "Positioning"
-msgstr "Προσδιορισμός θέσης"
-
 #: controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.STRING.TEXT
 #, fuzzy
 msgid  "Type"
@@ -847,21 +524,6 @@ msgstr "Τύπος"
 msgid  "Y Error Bars"
 msgstr "Ράβδοι σφάλματος Υ"
 
-#: controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.STRING.TEXT
-#, fuzzy
-msgid  "Alignment"
-msgstr "Στοίχιση"
-
-#: controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.STRING.TEXT
-#, fuzzy
-msgid  "Perspective"
-msgstr "Προοπτική"
-
-#: controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.STRING.TEXT
-#, fuzzy
-msgid  "Appearance"
-msgstr "Εμφάνιση"
-
 #: controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.STRING.TEXT
 #, fuzzy
 msgid  "Illumination"
@@ -871,16 +533,6 @@ msgstr "Φωτισμός"
 #, fuzzy
 msgid  "Asian Typography"
 msgstr "Ασιατική τυπογραφία"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.STRING.TEXT
-#, fuzzy
-msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr "Γραμμή μέσης τιμής με τιμή %AVERAGE_VALUE και τυπική απόκλιση %STD_DEVIATION"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AXIS.STRING.TEXT
-#, fuzzy
-msgid  "Axis"
-msgstr "Άξονας"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.STRING.TEXT
 #, fuzzy
@@ -896,21 +548,6 @@ msgstr "Άξονας Y"
 #, fuzzy
 msgid  "Z Axis"
 msgstr "Άξονας Z"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.STRING.TEXT
-#, fuzzy
-msgid  "Secondary X Axis"
-msgstr "Δευτερεύων άξονας Χ"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.STRING.TEXT
-#, fuzzy
-msgid  "Secondary Y Axis"
-msgstr "Δευτερεύων άξονας Y"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AXES.STRING.TEXT
-#, fuzzy
-msgid  "Axes"
-msgstr "Άξονες"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRIDS.STRING.TEXT
 #, fuzzy
@@ -952,11 +589,6 @@ msgstr "Βοηθητικό πλέγμα στον άξονα Χ"
 msgid  "Z Axis Minor Grid"
 msgstr "Βοηθητικό πλέγμα στον άξονα Ζ"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_LEGEND.STRING.TEXT
-#, fuzzy
-msgid  "Legend"
-msgstr "Υπόμνημα"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE.STRING.TEXT
 #, fuzzy
 msgid  "Title"
@@ -971,11 +603,6 @@ msgstr "Τίτλοι"
 #, fuzzy
 msgid  "Main Title"
 msgstr "Κύριος τίτλος"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.STRING.TEXT
-#, fuzzy
-msgid  "Subtitle"
-msgstr "Υπότιτλος"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.STRING.TEXT
 #, fuzzy
@@ -1012,11 +639,6 @@ msgstr "Ετικέτα"
 msgid  "Data Labels"
 msgstr "Ετικέτες δεδομένων"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.STRING.TEXT
-#, fuzzy
-msgid  "Data Point"
-msgstr "Σημείο δεδομένων"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.STRING.TEXT
 #, fuzzy
 msgid  "Data Points"
@@ -1047,21 +669,6 @@ msgstr "Γραμμές τάσης"
 msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
 msgstr "Γραμμή τάσης %FORMULA με ακρίβεια R² = %RSQUARED"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.STRING.TEXT
-#, fuzzy
-msgid  "Mean Value Line"
-msgstr "Γραμμή μέσης τιμής"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.STRING.TEXT
-#, fuzzy
-msgid  "Equation"
-msgstr "Εξίσωση"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.STRING.TEXT
-#, fuzzy
-msgid  "Error Bars"
-msgstr "Ράβδοι σφάλματος"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.STRING.TEXT
 #, fuzzy
 msgid  "Stock Loss"
@@ -1076,21 +683,6 @@ msgstr "Κέρδος μετοχών"
 #, fuzzy
 msgid  "Chart Area"
 msgstr "Επιφάνεια διαγράμματος"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.STRING.TEXT
-#, fuzzy
-msgid  "Chart"
-msgstr "Διάγραμμα"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.STRING.TEXT
-#, fuzzy
-msgid  "Chart Wall"
-msgstr "Τοίχος διαγράμματος"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.STRING.TEXT
-#, fuzzy
-msgid  "Chart Floor"
-msgstr "Δάπεδο διαγράμματος"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SHAPE.STRING.TEXT
 #, fuzzy
@@ -1117,16 +709,6 @@ msgstr "Πηγή φωτός %LIGHTNUMBER"
 msgid  "Data Series '%SERIESNAME'"
 msgstr "Σειρά δεδομένων '%SERIESNAME'"
 
-#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.STRING.TEXT
-#, fuzzy
-msgid  "Data Point %POINTNUMBER"
-msgstr "Σημείο δεδομένων %POINTNUMBER"
-
-#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.STRING.TEXT
-#, fuzzy
-msgid  "Values: %POINTVALUES"
-msgstr "Τιμές: %POINTVALUES"
-
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT.STRING.TEXT
 #, fuzzy
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
@@ -1138,9 +720,8 @@ msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %
 msgstr "Επιλεγμένα σημεία δεδομένων %POINTNUMBER σε σειρές δεδομένων %SERIESNUMBER, τιμές: %POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.STRING.TEXT
-#, fuzzy
 msgid  "%OBJECTNAME selected"
-msgstr "Επιλεγμένο %OBJECTNAME"
+msgstr "%OBJECTNAME επιλεγμένο"
 
 #: controller/dialogs/Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.STRING.TEXT
 #, fuzzy
@@ -1168,9 +749,8 @@ msgid  "Edit data ranges"
 msgstr "Επεξεργασία περιοχής δεδομένων"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.STRING.TEXT
-#, fuzzy
 msgid  "Edit 3D view"
-msgstr "Επεξεργασία προβολής 3Δ"
+msgstr "Επεξεργασία προβολής 3D"
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.STRING.TEXT
 #, fuzzy
@@ -1178,14 +758,12 @@ msgid  "Edit chart data"
 msgstr "Επεξεργασία δεδομένων διαγράμματος"
 
 #: controller/dialogs/Strings.src#STR_ACTION_TOGGLE_LEGEND.STRING.TEXT
-#, fuzzy
 msgid  "Legend on/off"
-msgstr "Υπόμνημα Ναι/Όχι"
+msgstr "Υπόμνημα ναι/όχι"
 
 #: controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.STRING.TEXT
-#, fuzzy
 msgid  "Horizontal grid on/off"
-msgstr "Οριζόντιο πλέγμα Ναι/Όχι"
+msgstr "Οριζόντιο πλέγμα ναι/όχι"
 
 #: controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.STRING.TEXT
 #, fuzzy
@@ -1204,17 +782,7 @@ msgstr "Η λειτουργία δεν μπορεί να ολοκληρωθεί 
 
 #: controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.STRING.TEXT
 msgid  "Edit text"
-msgstr ""
-
-#: controller/dialogs/Strings.src#STR_COLUMN_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Column %COLUMNNUMBER"
-msgstr "Στήλη %COLUMNNUMBER"
-
-#: controller/dialogs/Strings.src#STR_ROW_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "Row %ROWNUMBER"
-msgstr "Γραμμή %ROWNUMBER"
+msgstr "Τροποποίηση κειμένου"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.STRING.TEXT
 #, fuzzy
@@ -1230,11 +798,6 @@ msgstr "Τιμές-Χ"
 #, fuzzy
 msgid  "Y-Values"
 msgstr "Τιμές-Χ"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.STRING.TEXT
-#, fuzzy
-msgid  "Bubble Sizes"
-msgstr "Μεγέθη φούσκας"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.STRING.TEXT
 #, fuzzy
@@ -1276,30 +839,10 @@ msgstr "Τιμές ανοίγματος"
 msgid  "Close Values"
 msgstr "Τιμές κλεισίματος"
 
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.STRING.TEXT
-#, fuzzy
-msgid  "Low Values"
-msgstr "Χαμηλές τιμές"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.STRING.TEXT
-#, fuzzy
-msgid  "High Values"
-msgstr "Υψηλές τιμές"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.STRING.TEXT
-#, fuzzy
-msgid  "Categories"
-msgstr "Κατηγορίες"
-
 #: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.STRING.TEXT
 #, fuzzy
 msgid  "Unnamed Series"
 msgstr "Ανώνυμες σειρές"
-
-#: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.STRING.TEXT
-#, fuzzy
-msgid  "Unnamed Series %NUMBER"
-msgstr "Ανώνυμες σειρές %NUMBER"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.STRING.TEXT
 #, fuzzy
@@ -1331,16 +874,6 @@ msgstr "Επιλογή περιοχής για αρνητικές γραμμές
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
 msgstr "Η τελευταία σας εισαγωγή είναι λάθος.\nΝα αγνοηθεί αυτή η αλλαγή και να κλείσει ο διάλογος;"
 
-#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.STRING.TEXT
-#, fuzzy
-msgid  "Left-to-right"
-msgstr "Αριστερά προς δεξιά"
-
-#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.STRING.TEXT
-#, fuzzy
-msgid  "Right-to-left"
-msgstr "Δεξιά προς αριστερά"
-
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.STRING.TEXT
 #, fuzzy
 msgid  "Use superordinate object settings"
@@ -1351,45 +884,25 @@ msgstr "Χρήση ρυθμίσεων ανωτέρου αντικειμένου"
 msgid  "Negative and Positive"
 msgstr "Αρνητικές και θετικές"
 
-#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.STRING.TEXT
-#, fuzzy
-msgid  "Negative"
-msgstr "Αρνητική απόκλιση"
-
-#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
-#, fuzzy
-msgid  "Positive"
-msgstr "Θετική απόκλιση"
-
-#: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
-#, fuzzy
-msgid  "From Data Table"
-msgstr "Από τον πίνακα δεδομένων"
-
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.STRING.TEXT
-#, fuzzy
 msgid  "Linear (%SERIESNAME)"
-msgstr "Γραμμική παλινδρόμηση"
+msgstr "Γραμμική (%SERIESNAME)"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LOG.STRING.TEXT
-#, fuzzy
 msgid  "Logarithmic (%SERIESNAME)"
-msgstr "Λογαριθμική παλινδρόμηση"
+msgstr "Λογαριθμική (%SERIESNAME)"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_EXP.STRING.TEXT
-#, fuzzy
 msgid  "Exponential (%SERIESNAME)"
-msgstr "Εκθετική παλινδρόμηση"
+msgstr "Εκθετική (%SERIESNAME)"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_POWER.STRING.TEXT
-#, fuzzy
 msgid  "Power (%SERIESNAME)"
-msgstr "Δυναμική παλινδρόμηση"
+msgstr "Δύναμη (%SERIESNAME)"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_MEAN.STRING.TEXT
-#, fuzzy
 msgid  "Mean (%SERIESNAME)"
-msgstr "Γραμμική παλινδρόμηση"
+msgstr "Μέσος όρος (%SERIESNAME)"
 
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1411,30 +924,22 @@ msgstr "Περιγράμματα α~ντικειμένου"
 msgid  "~Rounded edges"
 msgstr "~Στρογγυλεμένες γωνίες"
 
-#: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
-#, fuzzy
-msgid  " degrees"
-msgstr " μοίρες"
-
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Right-angled axes"
 msgstr "Άξονες δε~ξιάς γωνίας"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~X rotation"
-msgstr "Περιστροφή ~X"
+msgstr "~X περιστροφή"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Y rotation"
-msgstr "Περιστροφή ~Y"
+msgstr "~Y περιστροφή"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Z rotation"
-msgstr "Περιστροφή ~Z"
+msgstr "~Ζ περιστροφή"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CHECKBOX.TEXT
 #, fuzzy
@@ -1453,12 +958,11 @@ msgstr "Φωτισ. περ~ιβάλλοντος"
 
 #: controller/dialogs/tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.STRING.TEXT
 msgid  "Light Preview"
-msgstr ""
+msgstr "Γρήγορη Προεπισκόπιση"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Sho~w labels"
-msgstr "Εμφάνιση ετικετών"
+msgstr "Εμφά~νιση ετικετών"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FIXEDLINE.TEXT
 #, fuzzy
@@ -1474,11 +978,6 @@ msgstr "Συσσωρευμένα κά~θετα"
 #, fuzzy
 msgid  "~Degrees"
 msgstr "~Μοίρες"
-
-#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text flow"
-msgstr "Ροή κειμένου"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
 #, fuzzy
@@ -1516,39 +1015,18 @@ msgid  "A~utomatic"
 msgstr "Α~υτόματο"
 
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Te~xt direction"
-msgstr "Κατεύθυνση κειμένου"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Axis line"
-msgstr "Γραμμή άξονα"
+msgstr "Κατεύθ~υνση γραφής"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Cross other axis at"
 msgstr "~Διασταύρωση άλλου άξονα"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Start"
-msgstr "Έναρξη"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "End"
 msgstr "Τέλος"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Value"
-msgstr "Τιμή"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Category"
-msgstr "Κατηγορία"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CHECKBOX.TEXT
 #, fuzzy
@@ -1565,40 +1043,10 @@ msgstr "Ετικέτες"
 msgid  "~Place labels"
 msgstr "Τοπο~θέτηση ετικετών"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Near axis"
-msgstr "Κοντά στον άξονα"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Near axis (other side)"
-msgstr "Κοντά στον άξονα (άλλη πλευρά)"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Outside start"
-msgstr "Εξωτερική αρχή"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Outside end"
-msgstr "Εξωτερικό τέλος"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Distance"
 msgstr "~Απόσταση"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Interval marks"
-msgstr "Σημάδια διαστημάτων"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Major:"
-msgstr "Κύριο:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CHECKBOX.TEXT
 #, fuzzy
@@ -1609,11 +1057,6 @@ msgstr "Ε~σωτερικά"
 #, fuzzy
 msgid  "~Outer"
 msgstr "Ε~ξωτερικά"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Minor:"
-msgstr "Βοηθητικό:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CHECKBOX.TEXT
 #, fuzzy
@@ -1634,11 +1077,6 @@ msgstr "Τοποθέτηση ση~μαδιών"
 #, fuzzy
 msgid  "At labels"
 msgstr "Σε ετικέτες"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "At axis"
-msgstr "Στον άξονα"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -1681,39 +1119,18 @@ msgid  "X axis with Categories"
 msgstr "Άξονας Χ με κατηγορίες"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~3D Look"
-msgstr "Όψη ~3Δ"
+msgstr "Όψη ~3D"
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Stack series"
 msgstr "Σ~τοίβα δεδομένων"
 
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "On top"
-msgstr "Πάνω"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Percent"
-msgstr "Ποσοστό"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Deep"
-msgstr "Σε βάθος"
-
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CHECKBOX.TEXT
 #, fuzzy
 msgid  "S~mooth lines"
 msgstr "Ε~ξομάλυνση γραμμών"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Properties..."
-msgstr "Ιδιότητες..."
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CHECKBOX.TEXT
 #, fuzzy
@@ -1736,14 +1153,8 @@ msgid  "~Resolution"
 msgstr "Ανά~λυση"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Degree of polynomials"
-msgstr "Διάταξη ~σημείων καμπύλης"
-
-#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Customize data ranges for individual data series"
-msgstr "Προσαρμογή περιοχών δεδομένων για μεμονωμένες σειρές δεδομένων"
+msgstr "~Βαθμός πολυωνύμου"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1779,11 +1190,6 @@ msgstr "Προσ~θήκη"
 #, fuzzy
 msgid  "~Remove"
 msgstr "Α~φαίρεση"
-
-#: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Θέση"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
 #, fuzzy
@@ -1851,9 +1257,8 @@ msgid  "Data series in ~columns"
 msgstr "Σειρές δεδομένων σε ~στήλες"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~First row as label"
-msgstr "~Πρώτη γρα~μμή ως ετικέτα"
+msgstr "~Πρώτη γραμμή ως ετικέτα"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CHECKBOX.TEXT
 #, fuzzy
@@ -1862,15 +1267,15 @@ msgstr "Π~ρώτη στήλη ως ετικέτα"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM1.STRINGLIST.ITEM
 msgid  "Days"
-msgstr ""
+msgstr "Ημέρες"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM2.STRINGLIST.ITEM
 msgid  "Months"
-msgstr ""
+msgstr "Μήνες"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM3.STRINGLIST.ITEM
 msgid  "Years"
-msgstr ""
+msgstr "Έτη"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FIXEDLINE.TEXT
 #, fuzzy
@@ -1888,27 +1293,24 @@ msgid  "~Logarithmic scale"
 msgstr "~Λογαριθμική κλίμακα"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "T~ype"
-msgstr "Τύπος"
+msgstr "Τύ~πος"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM1.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Automatic"
-msgstr "Α~υτόματο"
+msgstr "Αυτόματο"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM2.STRINGLIST.ITEM
 msgid  "Text"
-msgstr ""
+msgstr "Κείμενο"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM3.STRINGLIST.ITEM
 msgid  "Date"
-msgstr ""
+msgstr "Ημερομηνία"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Minimum"
-msgstr "~Ελάχιστο:"
+msgstr "~Ελάχιστο"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CHECKBOX.TEXT
 #, fuzzy
@@ -1916,9 +1318,8 @@ msgid  "~Automatic"
 msgstr "~Αυτόματο"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Ma~ximum"
-msgstr "Μέ~γιστο:"
+msgstr "Μέ~γιστο"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CHECKBOX.TEXT
 #, fuzzy
@@ -1931,14 +1332,12 @@ msgid  "R~esolution"
 msgstr "Ανά~λυση"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Automat~ic"
 msgstr "Αυτό~ματο"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Ma~jor interval"
-msgstr "Κύριο ~διάστημα:"
+msgstr "Κύριο ~διάστημα"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CHECKBOX.TEXT
 #, fuzzy
@@ -1947,7 +1346,7 @@ msgstr "Αυ~τόματο"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FIXEDTEXT.TEXT
 msgid  "Minor inter~val count"
-msgstr ""
+msgstr "Πλήθος δευτερε~υόντων διαστημάτων"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1960,9 +1359,8 @@ msgid  "Aut~omatic"
 msgstr "Αυτό~ματο"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Re~ference value"
-msgstr "Τιμή παραπομ~πής:"
+msgstr "Τιμή παραπομ~πής"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
 #, fuzzy
@@ -2000,9 +1398,8 @@ msgid  "Connection lines"
 msgstr "Γραμμές σύνδεσης"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Show ~bars side by side"
-msgstr "Προβολή ράβδων δίπλα δίπλα"
+msgstr "Προβολή ~μπαρών δίπλα-δίπλα"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FIXEDLINE.TEXT
 #, fuzzy

@@ -41,7 +41,7 @@ msgstr "Alle ~Seiten"
 
 #: basicide/basicprint.src#RID_PRINTDLG_STRLIST.ITEM3.ITEMLIST.ITEM
 msgid  "Pa~ges"
-msgstr "Sei-ten"
+msgstr "~Seiten"
 
 #: basicide/basidesh.src#RID_STR_FILTER_ALLFILES.STRING.TEXT
 msgid  "<All>"
@@ -109,15 +109,11 @@ msgstr "'XX' wurde nicht hinzugefügt."
 
 #: basicide/basidesh.src#RID_STR_ENTERPASSWORD.STRING.TEXT
 msgid  "Enter password for 'XX'"
-msgstr "Kennwort eingeben für 'XX'"
+msgstr "Kennwort für 'XX' eingeben"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.STRING.TEXT
 msgid  "Name already exists"
-msgstr "Name bereits vergeben"
-
-#: basicide/basidesh.src#RID_STR_SIGNED.STRING.TEXT
-msgid  "(Signed)"
-msgstr "(Signiert)"
+msgstr "Name existiert bereits"
 
 #: basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.STRING.TEXT
 msgid  "Object with same name already exists"
@@ -129,7 +125,7 @@ msgstr "Die Datei 'XX' existiert schon"
 
 #: basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.STRING.TEXT
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "Aus Sicherheitsgründen ist dieses Makro nicht ausführbar.\n\nFür weitere Informationen überprüfen Sie die Sicherheitseinstellungen."
+msgstr "Aus Sicherheitsgründen ist dieses Makro nicht ausführbar.\n\nÜberprüfen Sie die Sicherheitseinstellungen."
 
 #: basicide/basidesh.src#RID_STR_COMPILEERROR.STRING.TEXT
 msgid  "Compile Error: "
@@ -177,7 +173,7 @@ msgstr "Erzeuge Quelltext"
 
 #: basicide/basidesh.src#RID_STR_FILENAME.STRING.TEXT
 msgid  "File name:"
-msgstr "Dateiname: "
+msgstr "Dateiname:"
 
 #: basicide/basidesh.src#RID_STR_APPENDLIBS.STRING.TEXT
 msgid  "Import Libraries"
@@ -211,25 +207,9 @@ msgstr "Objekt oder Methode nicht gefunden"
 msgid  "BASIC"
 msgstr "BASIC"
 
-#: basicide/basidesh.src#RID_STR_LINE.STRING.TEXT
-msgid  "Ln"
-msgstr "Zl"
-
-#: basicide/basidesh.src#RID_STR_COLUMN.STRING.TEXT
-msgid  "Col"
-msgstr "Sp"
-
-#: basicide/basidesh.src#RID_STR_DOC.STRING.TEXT
-msgid  "Document"
-msgstr "Dokument"
-
-#: basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.STRING.TEXT
-msgid  "Macro Bar"
-msgstr "Makro-Leiste"
-
 #: basicide/basidesh.src#RID_STR_CANNOTCLOSE.STRING.TEXT
 msgid  "The window cannot be closed while BASIC is running."
-msgstr "Das Fenster kann nicht geschlossen werden,\nwährend das BASIC-Programm läuft."
+msgstr "Das Fenster kann nicht geschlossen werden, während das BASIC-Programm läuft."
 
 #: basicide/basidesh.src#RID_STR_REPLACESTDLIB.STRING.TEXT
 msgid  "The default library cannot be replaced."
@@ -242,14 +222,6 @@ msgstr "Referenz auf 'XX' nicht möglich."
 #: basicide/basidesh.src#RID_STR_WATCHNAME.STRING.TEXT
 msgid  "Watch"
 msgstr "Beobachter"
-
-#: basicide/basidesh.src#RID_STR_WATCHVARIABLE.STRING.TEXT
-msgid  "Variable"
-msgstr "Variable"
-
-#: basicide/basidesh.src#RID_STR_WATCHVALUE.STRING.TEXT
-msgid  "Value"
-msgstr "Wert"
 
 #: basicide/basidesh.src#RID_STR_WATCHTYPE.STRING.TEXT
 msgid  "Type"
@@ -287,21 +259,13 @@ msgstr "Neues Modul"
 msgid  "New Dialog"
 msgstr "Neuer Dialog"
 
-#: basicide/basidesh.src#RID_STR_ALL.STRING.TEXT
-msgid  "All"
-msgstr "Alle"
-
-#: basicide/basidesh.src#RID_STR_PAGE.STRING.TEXT
-msgid  "Page"
-msgstr "Seite"
-
 #: basicide/basidesh.src#RID_STR_MACRONAMEREQ.STRING.TEXT
 msgid  "A name must be entered."
-msgstr "Es muss ein Name angegeben werden."
+msgstr "Name erforderlich."
 
 #: basicide/basidesh.src#RID_STR_WILLSTOPPRG.STRING.TEXT
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "Sie müssen nach dieser Änderung Ihr Programm neu starten.\nFortfahren?"
+msgstr "Das Programm muss neu gestartet werden.\nFortfahren?"
 
 #: basicide/basidesh.src#RID_STR_SEARCHALLMODULES.STRING.TEXT
 msgid  "Do you want to replace the text in all active modules?"
@@ -313,15 +277,11 @@ msgstr "Beobachter entfernen"
 
 #: basicide/basidesh.src#RID_STR_REMOVEWATCH.STRING.TEXT
 msgid  "Watch:"
-msgstr "Beobachter: "
+msgstr "Beobachter:"
 
 #: basicide/basidesh.src#RID_STR_STACK.STRING.TEXT
 msgid  "Calls: "
 msgstr "Aufrufe: "
-
-#: basicide/basidesh.src#RID_STR_USERMACROS.STRING.TEXT
-msgid  "My Macros"
-msgstr "Meine Makros"
 
 #: basicide/basidesh.src#RID_STR_USERDIALOGS.STRING.TEXT
 msgid  "My Dialogs"
@@ -379,29 +339,13 @@ msgstr "BASIC-Dialog"
 msgid  "Delete"
 msgstr "Löschen"
 
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MENUITEM.TEXT
-msgid  "Rename"
-msgstr "Umbenennen"
-
-#: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MENUITEM.TEXT
-msgid  "Hide"
-msgstr "Ausblenden"
-
 #: basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MENUITEM.TEXT
 msgid  "Modules..."
 msgstr "Module..."
 
-#: basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.STRING.TEXT
-msgid  "Do you want to overwrite the XX macro?"
-msgstr "Möchten Sie das Makro XX überschreiben?"
-
 #: basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.STRING.TEXT
 msgid  "<Not localized>"
 msgstr "<Nicht lokalisiert>"
-
-#: basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.STRING.TEXT
-msgid  "[Default Language]"
-msgstr "[Standardsprache]"
 
 #: basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.STRING.TEXT
 msgid  "Document Objects"
@@ -419,25 +363,13 @@ msgstr "Module"
 msgid  "Class Modules"
 msgstr "Klassenmodule"
 
-#: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.STRING.TEXT
-msgid  "Replace"
-msgstr "Ersetzen"
-
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.STRING.TEXT
 msgid  "Dialog Import - Name already used"
-msgstr "Dialog-Import - Der Name wird bereits verwendet"
+msgstr "Dialog-Import - Name wird bereits verwendet"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.STRING.TEXT
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr "Die Bibliothek enthält bereits einen Dialog mit gleichem Namen:\n$(ARG1)\n\nBenennen sie den Dialog um, um den vorhandenen beizubehalten\noder ersetzen Sie den gegenwärtigen Dialog.\n "
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "Hinzufügen"
-
-#: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.STRING.TEXT
-msgid  "Omit"
-msgstr "Auslassen"
+msgstr "Die Bibliothek enthält bereits einen Dialog mit dem Namen:\n$(ARG1)\n\nBenennen sie den Dialog um, um den vorhandenen beizubehalten\noder ersetzen Sie den gegenwärtigen Dialog.\n "
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.STRING.TEXT
 msgid  "Dialog Import - Language Mismatch"
@@ -445,11 +377,7 @@ msgstr "Dialog-Import - Sprachkonflikt"
 
 #: basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.STRING.TEXT
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr "Der zu importierende Dialog unterstützt andere Sprachen als die \nZielbibliothek.\n\nFügen Sie diese Sprachen zur Bibliothek hinzu, um zusätzliche Sprachressourcen \ndes Dialogs beizubehalten oder lassen Sie diese weg, um die aktuellen Sprachen \nder Bibliothek beizubehalten.\n\nHinweis: Für Sprachen, die durch den Dialog nicht unterstützt werden, wird die \nStandardsprache des Dialogs benutzt. "
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PUSHBUTTON.TEXT
-msgid  "New"
-msgstr "Neu"
+msgstr "Der zu importierende Dialog unterstützt andere Sprachen als die Zielbibliothek.\n\nFügen Sie diese Sprachen zur Bibliothek hinzu, um zusätzliche Sprachressourcen des Dialogs beizubehalten oder lassen Sie diese weg, um die aktuellen Sprachen der Bibliothek beizubehalten.\n\nHinweis: Für Sprachen, die durch den Dialog nicht unterstützt werden, wird die Standardsprache des Dialogs benutzt.\n "
 
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PUSHBUTTON.TEXT
 msgid  "Delete"
@@ -462,14 +390,6 @@ msgstr "Aktiv"
 #: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FIXEDTEXT.TEXT
 msgid  "Pass Count:"
 msgstr "Durchlauf:"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FIXEDTEXT.TEXT
-msgid  "Breakpoints"
-msgstr "Haltepunkte"
-
-#: basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NUMERICFIELD.TEXT
-msgid  "Manage Breakpoints"
-msgstr "Haltepunkte verwalten"
 
 #: basicide/macrodlg.src#RID_MACROCHOOSER.MODALDIALOG.TEXT
 msgid  "%PRODUCTNAME Basic Macros"
@@ -527,10 +447,6 @@ msgstr "~Löschen"
 msgid  "~Organizer..."
 msgstr "~Verwalten..."
 
-#: basicide/macrodlg.src#RID_STR_STDMACRONAME.STRING.TEXT
-msgid  "Macro"
-msgstr "Makro"
-
 #: basicide/macrodlg.src#RID_STR_BTNNEW.STRING.TEXT
 msgid  "~New"
 msgstr "~Neu"
@@ -538,10 +454,6 @@ msgstr "~Neu"
 #: basicide/macrodlg.src#RID_STR_CHOOSE.STRING.TEXT
 msgid  "Choose"
 msgstr "Auswählen"
-
-#: basicide/macrodlg.src#RID_STR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "Ausführen"
 
 #: basicide/macrodlg.src#RID_STR_RECORD.STRING.TEXT
 msgid  "~Save"
@@ -609,7 +521,7 @@ msgstr "E~xport..."
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FIXEDLINE.TEXT
 msgid  "Options"
-msgstr "Optionen"
+msgstr "Einstellungen"
 
 #: basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CHECKBOX.TEXT
 msgid  "Insert as reference (read-only)"
@@ -625,7 +537,7 @@ msgstr "~Name:"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.MODALDIALOG.TEXT
 msgid  "Export Basic library"
-msgstr "Basic Bibliothek exportieren"
+msgstr "BASIC-Bibliothek exportieren"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RADIOBUTTON.TEXT
 msgid  "Export as ~extension"
@@ -633,7 +545,7 @@ msgstr "Als ~Extension exportieren"
 
 #: basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RADIOBUTTON.TEXT
 msgid  "Export as BASIC library"
-msgstr "Als BASIC Bibliothek exportieren"
+msgstr "Als BASIC-Bibliothek exportieren"
 
 #: basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.STRING.TEXT
 msgid  "Export library as extension"
@@ -647,10 +559,6 @@ msgstr "Extension"
 msgid  "Description"
 msgstr "Beschreibung"
 
-#: basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FIXEDLINE.TEXT
-msgid  "Help information"
-msgstr "Hilfe-Informationen"
-
 #: basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FIXEDTEXT.TEXT
 msgid  "Help ID"
 msgstr "Hilfe-Identifikation"
@@ -659,17 +567,9 @@ msgstr "Hilfe-Identifikation"
 msgid  "Help file name"
 msgstr "Hilfe-Dateiname"
 
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.FLOATINGWINDOW.TEXT
-msgid  "Objects"
-msgstr "Objekte"
-
-#: basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.TOOLBOXITEM.TEXT
-msgid  "Show"
-msgstr "Zeigen"
-
 #: basicide/objdlg.src#RID_STR_TLB_MACROS.STRING.TEXT
 msgid  "Objects Tree"
-msgstr "Ojekt Pfad"
+msgstr "Objekt Pfad"
 
 #: dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 msgid  "Properties: "
@@ -685,23 +585,15 @@ msgstr "Mehrfachselektion"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.MODALDIALOG.TEXT
 msgid  "Manage User Interface Languages [$1]"
-msgstr "Verwalten der Sprachen der Benutzerschnittstelle [$1]"
+msgstr "Sprachen der Benutzerschnittstelle [$1] verwalten"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FIXEDTEXT.TEXT
 msgid  "Present Languages"
 msgstr "Verfügbare Sprachen"
 
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "Hinzufügen..."
-
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PUSHBUTTON.TEXT
 msgid  "Delete"
 msgstr "Löschen"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PUSHBUTTON.TEXT
-msgid  "Default"
-msgstr "Standard"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FIXEDTEXT.TEXT
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
@@ -710,10 +602,6 @@ msgstr "Die Standardsprache wird angezeigt, wenn für die Sprache der Benutzersc
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKBUTTON.TEXT
 msgid  "~Close"
 msgstr "~Schließen"
-
-#: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.STRING.TEXT
-msgid  "[Default Language]"
-msgstr "[Standardsprache]"
 
 #: dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.STRING.TEXT
 msgid  "~Delete"
@@ -727,13 +615,13 @@ msgstr "<'Hinzufügen' Schaltfläche klicken, um Sprachressourcen anzulegen>"
 msgid  "Delete Language Resources"
 msgstr "Sprachressourcen löschen"
 
+#: dlged/managelang.src#RID_QRYBOX_LANGUAGE.QUERYBOX.MESSAGE
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr "Sie sind im Begriff die Ressourcen der selektierten Sprache(n) zu löschen. Alle Texte der Benutzerschnittstelle dieser Sprache(n) werden gelöscht.\n\nMöchten Sie die Ressourcen der selektierten Sprache(n) löschen?"
+
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.MODALDIALOG.TEXT
 msgid  "Set Default User Interface Language"
-msgstr "Standardsprache für Benutzerschnittstelle festlegen"
-
-#: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FIXEDTEXT.TEXT
-msgid  "Default language"
-msgstr "Standardsprache"
+msgstr "Standardsprache der Benutzerschnittstelle festlegen"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FIXEDTEXT.TEXT
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
@@ -741,7 +629,7 @@ msgstr "Selektieren Sie eine Sprache, um die Standardsprache für die Benutzersc
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.STRING.TEXT
 msgid  "Add User Interface Languages"
-msgstr "Sprachen zur Benutzerschnittstelle hinzufügen"
+msgstr "Sprachen der Benutzerschnittstelle hinzufügen"
 
 #: dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.STRING.TEXT
 msgid  "Available Languages"

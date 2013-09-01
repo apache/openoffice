@@ -31,10 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.MODALDIALOG.TEXT
-msgid  "Data Table"
-msgstr "Datatabel"
-
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.TOOLBOXITEM.TEXT
 msgid  "Insert Row"
 msgstr "Indsæt række"
@@ -67,10 +63,6 @@ msgstr "Flyt række nedad"
 msgid  "Data Ranges"
 msgstr "Dataområder"
 
-#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FIXEDLINE.TEXT
-msgid  "Axes"
-msgstr "Akser"
-
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FIXEDLINE.TEXT
 msgid  "Major grids"
 msgstr "Overordnet gitter"
@@ -86,10 +78,6 @@ msgstr "~Y-akse"
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CHECKBOX.TEXT
 msgid  "~Z axis"
 msgstr "~Z-akse"
-
-#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
-msgid  "Secondary axes"
-msgstr "Sekundære akser"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
 msgid  "Minor grids"
@@ -119,10 +107,6 @@ msgstr "Afsnit"
 msgid  "Indents & Spacing"
 msgstr "Indrykning og afstand"
 
-#: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-msgid  "Alignment"
-msgstr "Justering"
-
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
 msgid  "Asian Typography"
 msgstr "Asiatisk typografi"
@@ -134,74 +118,6 @@ msgstr "Tabulering"
 #: controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TABDIALOG.TEXT
 msgid  "3D View"
 msgstr "3D-visning"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM1.STRINGLIST.ITEM
-msgid  "Box"
-msgstr "Boks"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM2.STRINGLIST.ITEM
-msgid  "Cylinder"
-msgstr "Cylinder"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM3.STRINGLIST.ITEM
-msgid  "Cone"
-msgstr "Kegle"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM4.STRINGLIST.ITEM
-msgid  "Pyramid"
-msgstr "Pyramide"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM1.STRINGLIST.ITEM
-msgid  "Best fit"
-msgstr "Passer bedst"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM2.STRINGLIST.ITEM
-msgid  "Center"
-msgstr "Centreret"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM3.STRINGLIST.ITEM
-msgid  "Above"
-msgstr "Over"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM4.STRINGLIST.ITEM
-msgid  "Top left"
-msgstr "Øverst til venstre"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM5.STRINGLIST.ITEM
-msgid  "Left"
-msgstr "Venstre"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM6.STRINGLIST.ITEM
-msgid  "Bottom left"
-msgstr "Nederst til venstre"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM7.STRINGLIST.ITEM
-msgid  "Below"
-msgstr "Under"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM8.STRINGLIST.ITEM
-msgid  "Bottom right"
-msgstr "Nederst til højre"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM9.STRINGLIST.ITEM
-msgid  "Right"
-msgstr "Højre"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM10.STRINGLIST.ITEM
-msgid  "Top right"
-msgstr "Øverst til højre"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM11.STRINGLIST.ITEM
-msgid  "Inside"
-msgstr "Indenfor"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM12.STRINGLIST.ITEM
-msgid  "Outside"
-msgstr "Udenfor"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM13.STRINGLIST.ITEM
-msgid  "Near origin"
-msgstr "Nær kilde"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_NUMBER.CHECKBOX.TEXT
 msgid  "Show value as ~number"
@@ -231,10 +147,6 @@ msgstr "~Vis signaturforklaring"
 msgid  "Place~ment"
 msgstr "Place~ring"
 
-#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FL_LABEL_ROTATE.FIXEDLINE.TEXT
-msgid  "Rotate Text"
-msgstr "Roter tekst"
-
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_DEGREES.FIXEDTEXT.TEXT
 msgid  "~Degrees"
 msgstr "~Grader"
@@ -242,26 +154,6 @@ msgstr "~Grader"
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"
 msgstr "Tekst~retning"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.STRINGLIST.ITEM
-msgid  "Standard Error"
-msgstr "Standardfejl"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.STRINGLIST.ITEM
-msgid  "Standard Deviation"
-msgstr "Standardafvigelse"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.STRINGLIST.ITEM
-msgid  "Variance"
-msgstr "Varians"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.STRINGLIST.ITEM
-msgid  "Error Margin"
-msgstr "Fejlmargen"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_ERROR.FIXEDLINE.TEXT
-msgid  "Error Category"
-msgstr "Fejlkategori"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
 msgid  "~None"
@@ -279,10 +171,6 @@ msgstr "~Procent"
 msgid  "Cell ~Range"
 msgstr "Celle~område"
 
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_PARAMETERS.FIXEDLINE.TEXT
-msgid  "Parameters"
-msgstr "Parametre"
-
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_POSITIVE.FIXEDTEXT.TEXT
 msgid  "P~ositive (+)"
 msgstr "P~ositiv (+)"
@@ -290,14 +178,6 @@ msgstr "P~ositiv (+)"
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_NEGATIVE.FIXEDTEXT.TEXT
 msgid  "~Negative (-)"
 msgstr "~Negativ (-)"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).CB_SYN_POS_NEG.CHECKBOX.TEXT
-msgid  "Same value for both"
-msgstr "Samme værdi for begge"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_INDICATE.FIXEDLINE.TEXT
-msgid  "Error Indicator"
-msgstr "Fejlindikator"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_BOTH.RADIOBUTTON.TEXT
 msgid  "Positive ~and Negative"
@@ -347,18 +227,6 @@ msgstr "Z-ak~se"
 msgid  "Space"
 msgstr "Mellemrum"
 
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM2.STRINGLIST.ITEM
-msgid  "Comma"
-msgstr "Komma"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM3.STRINGLIST.ITEM
-msgid  "Semicolon"
-msgstr "Semikolon"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM4.STRINGLIST.ITEM
-msgid  "New line"
-msgstr "Ny linje"
-
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_MAINTITLE.FIXEDTEXT.TEXT
 msgid  "~Title"
 msgstr "~Titel"
@@ -366,10 +234,6 @@ msgstr "~Titel"
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_SUBTITLE.FIXEDTEXT.TEXT
 msgid  "~Subtitle"
 msgstr "~Undertitel"
-
-#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_AXES.FIXEDLINE.TEXT
-msgid  "Axes"
-msgstr "Akser"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_X_AXIS.FIXEDTEXT.TEXT
 msgid  "~X axis"
@@ -382,10 +246,6 @@ msgstr "~Y-akse"
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Z_AXIS.FIXEDTEXT.TEXT
 msgid  "~Z axis"
 msgstr "~Z-akse"
-
-#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_SECONDARY_AXES.FIXEDLINE.TEXT
-msgid  "Secondary Axes"
-msgstr "Sekundære akser"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_X_AXIS.FIXEDTEXT.TEXT
 msgid  "X ~axis"
@@ -419,10 +279,6 @@ msgstr "E~ksponentiel"
 msgid  "~Power"
 msgstr "~Potens"
 
-#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_EQUATION.FIXEDLINE.TEXT
-msgid  "Equation"
-msgstr "Ligning"
-
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_EQUATION.CHECKBOX.TEXT
 msgid  "Show ~equation"
 msgstr "Vis ~ligning"
@@ -455,37 +311,9 @@ msgstr "~Antal kurver"
 msgid  "Separator"
 msgstr "Skilletegn"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.STRING.TEXT
-msgid  "Column"
-msgstr "Søjle"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.STRING.TEXT
-msgid  "Bar"
-msgstr "Bjælke"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.STRING.TEXT
-msgid  "Area"
-msgstr "Område"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.STRING.TEXT
-msgid  "Pie"
-msgstr "Cirkel"
-
 #: controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.STRING.TEXT
 msgid  "Exploded Pie Chart"
 msgstr "Adskilt cirkeldiagram"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.STRING.TEXT
-msgid  "Exploded Donut Chart"
-msgstr "Adskilt kransediagram"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT.STRING.TEXT
-msgid  "Donut"
-msgstr "Krans"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.STRING.TEXT
-msgid  "Line"
-msgstr "Streg"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.STRING.TEXT
 msgid  "XY (Scatter)"
@@ -499,29 +327,9 @@ msgstr "Punkter og kurver"
 msgid  "Points Only"
 msgstr "Kun punkter"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.STRING.TEXT
-msgid  "Lines Only"
-msgstr "Kun kurver"
-
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.STRING.TEXT
 msgid  "3D Lines"
 msgstr "3D-kurver"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.STRING.TEXT
-msgid  "Column and Line"
-msgstr "Søjle og kurve"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.STRING.TEXT
-msgid  "Columns and Lines"
-msgstr "Søjler og kurver"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.STRING.TEXT
-msgid  "Stacked Columns and Lines"
-msgstr "Stablede søjler og kurver"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
-msgid  "Net"
-msgstr "Radar"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.STRING.TEXT
 msgid  "Stock"
@@ -542,34 +350,6 @@ msgstr "Aktiediagram 3"
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.STRING.TEXT
 msgid  "Stock Chart 4"
 msgstr "Aktiediagram 4"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
-msgid  "Normal"
-msgstr "Normal"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
-msgid  "Stacked"
-msgstr "Stablet"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
-msgid  "Percent Stacked"
-msgstr "Stablet procent"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DEEP.STRING.TEXT
-msgid  "Deep"
-msgstr "Dyb"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_FILLED.STRING.TEXT
-msgid  "Filled"
-msgstr "Udfyldt"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.STRING.TEXT
-msgid  "Bubble"
-msgstr "Boble"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.STRING.TEXT
-msgid  "Bubble Chart"
-msgstr "Boblediagram"
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.STRING.TEXT
 msgid  "Numbers are required. Check your input."
@@ -595,10 +375,6 @@ msgstr "Det største interval skal være større end det mindste interval. Check
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
 msgstr "Det største og mindste interval skal være størrre end eller lig med opløsningen. Check dit input."
 
-#: controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.STRING.TEXT
-msgid  "Chart Wizard"
-msgstr "Diagramguide"
-
 #: controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.STRING.TEXT
 msgid  "Smooth Lines"
 msgstr "Udjævn kurver"
@@ -611,25 +387,13 @@ msgstr "Talformat for procentuel værdi"
 msgid  "Chart Type"
 msgstr "Diagramtype"
 
-#: controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.STRING.TEXT
-msgid  "Data Range"
-msgstr "Dataområde"
-
 #: controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.STRING.TEXT
 msgid  "Chart Elements"
 msgstr "Diagramelementer"
 
-#: controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.STRING.TEXT
-msgid  "Chart Location"
-msgstr "Diagramplacering"
-
 #: controller/dialogs/Strings.src#STR_PAGE_LINE.STRING.TEXT
 msgid  "Line"
 msgstr "Streg"
-
-#: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
-msgid  "Borders"
-msgstr "Kanter"
 
 #: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
 msgid  "Area"
@@ -646,14 +410,6 @@ msgstr "Skrifttype"
 #: controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.STRING.TEXT
 msgid  "Font Effects"
 msgstr "Skrifteffekter"
-
-#: controller/dialogs/Strings.src#STR_PAGE_NUMBERS.STRING.TEXT
-msgid  "Numbers"
-msgstr "Tal"
-
-#: controller/dialogs/Strings.src#STR_PAGE_POSITION.STRING.TEXT
-msgid  "Position"
-msgstr "Placering"
 
 #: controller/dialogs/Strings.src#STR_BUTTON_UP.STRING.TEXT
 msgid  "Up"
@@ -675,10 +431,6 @@ msgstr "Indstillinger"
 msgid  "Scale"
 msgstr "Skalering"
 
-#: controller/dialogs/Strings.src#STR_PAGE_POSITIONING.STRING.TEXT
-msgid  "Positioning"
-msgstr "Placering"
-
 #: controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.STRING.TEXT
 msgid  "Type"
 msgstr "Type"
@@ -687,18 +439,6 @@ msgstr "Type"
 msgid  "Y Error Bars"
 msgstr "Y-fejllinjer"
 
-#: controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.STRING.TEXT
-msgid  "Alignment"
-msgstr "Justering"
-
-#: controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.STRING.TEXT
-msgid  "Perspective"
-msgstr "Perspektiv"
-
-#: controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.STRING.TEXT
-msgid  "Appearance"
-msgstr "Udseende"
-
 #: controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.STRING.TEXT
 msgid  "Illumination"
 msgstr "Belysning"
@@ -706,14 +446,6 @@ msgstr "Belysning"
 #: controller/dialogs/Strings.src#STR_PAGE_ASIAN.STRING.TEXT
 msgid  "Asian Typography"
 msgstr "Asiatisk typografi"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.STRING.TEXT
-msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr "Middelværdikurve med værdien %AVERAGE_VALUE og standardafvigelsen %STD_DEVIATION"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AXIS.STRING.TEXT
-msgid  "Axis"
-msgstr "Akse"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.STRING.TEXT
 msgid  "X Axis"
@@ -726,18 +458,6 @@ msgstr "Y-akse"
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.STRING.TEXT
 msgid  "Z Axis"
 msgstr "Z-akse"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.STRING.TEXT
-msgid  "Secondary X Axis"
-msgstr "Sekundær X-akse"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.STRING.TEXT
-msgid  "Secondary Y Axis"
-msgstr "Sekundær Y-akse"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AXES.STRING.TEXT
-msgid  "Axes"
-msgstr "Akser"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRIDS.STRING.TEXT
 msgid  "Grids"
@@ -771,10 +491,6 @@ msgstr "Y-akse underordnet gitter"
 msgid  "Z Axis Minor Grid"
 msgstr "Z-akse underordnet gitter"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_LEGEND.STRING.TEXT
-msgid  "Legend"
-msgstr "Forklaring"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE.STRING.TEXT
 msgid  "Title"
 msgstr "Titel"
@@ -786,10 +502,6 @@ msgstr "Titler"
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.STRING.TEXT
 msgid  "Main Title"
 msgstr "Hovedoverskrift"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.STRING.TEXT
-msgid  "Subtitle"
-msgstr "Undertitel"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.STRING.TEXT
 msgid  "X Axis Title"
@@ -819,10 +531,6 @@ msgstr "Etiket"
 msgid  "Data Labels"
 msgstr "Dataetiketter"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.STRING.TEXT
-msgid  "Data Point"
-msgstr "Datapunkt"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.STRING.TEXT
 msgid  "Data Points"
 msgstr "Datapunkter"
@@ -847,18 +555,6 @@ msgstr "Tendenslinjer"
 msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
 msgstr "Tendenslinje %FORMULA med nøjagtighed R² = %RSQUARED"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.STRING.TEXT
-msgid  "Mean Value Line"
-msgstr "Middelværdilinje"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.STRING.TEXT
-msgid  "Equation"
-msgstr "Ligning"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.STRING.TEXT
-msgid  "Error Bars"
-msgstr "Fejlsøjler"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.STRING.TEXT
 msgid  "Stock Loss"
 msgstr "Aktietab"
@@ -870,18 +566,6 @@ msgstr "Aktietilvækst"
 #: controller/dialogs/Strings.src#STR_OBJECT_PAGE.STRING.TEXT
 msgid  "Chart Area"
 msgstr "Diagramområde"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.STRING.TEXT
-msgid  "Chart"
-msgstr "Diagram"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.STRING.TEXT
-msgid  "Chart Wall"
-msgstr "Diagramvæg"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.STRING.TEXT
-msgid  "Chart Floor"
-msgstr "Diagramgulv"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SHAPE.STRING.TEXT
 msgid  "Drawing Object"
@@ -902,14 +586,6 @@ msgstr "Lyskilde %LIGHTNUMBER"
 #: controller/dialogs/Strings.src#STR_TIP_DATASERIES.STRING.TEXT
 msgid  "Data Series '%SERIESNAME'"
 msgstr "Dataserie '%SERIESNAME'"
-
-#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.STRING.TEXT
-msgid  "Data Point %POINTNUMBER"
-msgstr "Datapunkt %POINTNUMBER"
-
-#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.STRING.TEXT
-msgid  "Values: %POINTVALUES"
-msgstr "Værdier: %POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT.STRING.TEXT
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
@@ -975,14 +651,6 @@ msgstr "Denne funktion kan ikke fuldføres med de markerede objekter."
 msgid  "Edit text"
 msgstr "Editer tekst"
 
-#: controller/dialogs/Strings.src#STR_COLUMN_LABEL.STRING.TEXT
-msgid  "Column %COLUMNNUMBER"
-msgstr "Kolonne %COLUMNNUMBER"
-
-#: controller/dialogs/Strings.src#STR_ROW_LABEL.STRING.TEXT
-msgid  "Row %ROWNUMBER"
-msgstr "Række %ROWNUMBER"
-
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.STRING.TEXT
 msgid  "Name"
 msgstr "Navn"
@@ -994,10 +662,6 @@ msgstr "X-værdier"
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y.STRING.TEXT
 msgid  "Y-Values"
 msgstr "Y-værdier"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.STRING.TEXT
-msgid  "Bubble Sizes"
-msgstr "Boble størrelser"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.STRING.TEXT
 msgid  "X-Error-Bars"
@@ -1031,25 +695,9 @@ msgstr "Åbn værdier"
 msgid  "Close Values"
 msgstr "Luk værdier"
 
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.STRING.TEXT
-msgid  "Low Values"
-msgstr "Lave værdier"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.STRING.TEXT
-msgid  "High Values"
-msgstr "Høje værdier"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.STRING.TEXT
-msgid  "Categories"
-msgstr "Kategorier"
-
 #: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.STRING.TEXT
 msgid  "Unnamed Series"
 msgstr "Unavngivet serie"
-
-#: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.STRING.TEXT
-msgid  "Unnamed Series %NUMBER"
-msgstr "Unavngivet serie %NUMBER"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.STRING.TEXT
 msgid  "Select Range for %VALUETYPE of %SERIESNAME"
@@ -1075,14 +723,6 @@ msgstr "Vælg område for negative fejllinjer"
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
 msgstr "Din sidste indtastning er ukorrekt.\nIgnorer denne ændring og luk dialogen?"
 
-#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.STRING.TEXT
-msgid  "Left-to-right"
-msgstr "Venstre mod højre"
-
-#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.STRING.TEXT
-msgid  "Right-to-left"
-msgstr "Højre mod venstre"
-
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.STRING.TEXT
 msgid  "Use superordinate object settings"
 msgstr "Brug indstillinger fra det overordnede objekt"
@@ -1090,18 +730,6 @@ msgstr "Brug indstillinger fra det overordnede objekt"
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.STRING.TEXT
 msgid  "Negative and Positive"
 msgstr "Negative og positive"
-
-#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.STRING.TEXT
-msgid  "Negative"
-msgstr "Negative"
-
-#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
-msgid  "Positive"
-msgstr "Positive"
-
-#: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
-msgid  "From Data Table"
-msgstr "Fra datatabel"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.STRING.TEXT
 msgid  "Linear (%SERIESNAME)"
@@ -1138,10 +766,6 @@ msgstr "O~bjektrammer"
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.CHECKBOX.TEXT
 msgid  "~Rounded edges"
 msgstr "~Afrundede kanter"
-
-#: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
-msgid  " degrees"
-msgstr "grader"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
 msgid  "~Right-angled axes"
@@ -1191,10 +815,6 @@ msgstr "~Lodret stablet"
 msgid  "~Degrees"
 msgstr "~Grader"
 
-#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
-msgid  "Text flow"
-msgstr "Tekstforløb"
-
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
 msgid  "O~verlap"
 msgstr "~Overlap"
@@ -1227,29 +847,13 @@ msgstr "~Automatisk"
 msgid  "Te~xt direction"
 msgstr "Tekst~retning"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FIXEDLINE.TEXT
-msgid  "Axis line"
-msgstr "Akselinje"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FIXEDTEXT.TEXT
 msgid  "~Cross other axis at"
 msgstr "~Skær anden akse ved"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM1.STRINGLIST.ITEM
-msgid  "Start"
-msgstr "Nedre grænse"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM2.STRINGLIST.ITEM
 msgid  "End"
 msgstr "Øvre grænse"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM3.STRINGLIST.ITEM
-msgid  "Value"
-msgstr "Værdi"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM4.STRINGLIST.ITEM
-msgid  "Category"
-msgstr "Kategori"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CHECKBOX.TEXT
 msgid  "Axis ~between categories"
@@ -1263,33 +867,9 @@ msgstr "Etiketter"
 msgid  "~Place labels"
 msgstr "~Placer etiketter"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM1.STRINGLIST.ITEM
-msgid  "Near axis"
-msgstr "Nær akse"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM2.STRINGLIST.ITEM
-msgid  "Near axis (other side)"
-msgstr "Nær akse (modsat side)"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM3.STRINGLIST.ITEM
-msgid  "Outside start"
-msgstr "Udenfor nedre grænse"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM4.STRINGLIST.ITEM
-msgid  "Outside end"
-msgstr "Udenfor øvre grænse"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FIXEDTEXT.TEXT
 msgid  "~Distance"
 msgstr "~Afstand"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FIXEDLINE.TEXT
-msgid  "Interval marks"
-msgstr "Intervalmarkeringer"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FIXEDTEXT.TEXT
-msgid  "Major:"
-msgstr "Overordnet:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CHECKBOX.TEXT
 msgid  "~Inner"
@@ -1298,10 +878,6 @@ msgstr "~Indre"
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CHECKBOX.TEXT
 msgid  "~Outer"
 msgstr "~Ydre"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FIXEDTEXT.TEXT
-msgid  "Minor:"
-msgstr "Underordnet:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CHECKBOX.TEXT
 msgid  "I~nner"
@@ -1318,10 +894,6 @@ msgstr "Placer ~markeringer"
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM1.STRINGLIST.ITEM
 msgid  "At labels"
 msgstr "På etiketter"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM2.STRINGLIST.ITEM
-msgid  "At axis"
-msgstr "På akse"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM3.STRINGLIST.ITEM
 msgid  "At axis and labels"
@@ -1363,25 +935,9 @@ msgstr "~3D-udseende"
 msgid  "~Stack series"
 msgstr "~Stabl serie"
 
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RADIOBUTTON.TEXT
-msgid  "On top"
-msgstr "Øverst"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RADIOBUTTON.TEXT
-msgid  "Percent"
-msgstr "Procent"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RADIOBUTTON.TEXT
-msgid  "Deep"
-msgstr "Dyb"
-
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CHECKBOX.TEXT
 msgid  "S~mooth lines"
 msgstr "~Udjævn kurver"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PUSHBUTTON.TEXT
-msgid  "Properties..."
-msgstr "Egenskaber..."
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CHECKBOX.TEXT
 msgid  "~Sort by X values"
@@ -1400,270 +956,325 @@ msgid  "~Resolution"
 msgstr "~Opløsning"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Degree of polynomials"
-msgstr "~Datapunktorden"
-
-#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
-msgid  "Customize data ranges for individual data series"
-msgstr "Tilpas dataområder for individuel dataserie"
+msgstr "~Graden of polynomier"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~series"
 msgstr "Data~serie"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data ranges"
 msgstr "~Dataområder"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ran~ge for %VALUETYPE"
 msgstr "Område for %VALUETYPE"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Categories"
 msgstr "~Kategorier"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~labels"
 msgstr "Data~etiketter"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
 msgstr "~Tilføj"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Remove"
 msgstr "~Fjern"
 
-#: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "Placering"
-
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text orientation"
 msgstr "Tekstretning"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
 msgstr "Tekst~retning"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Place chart"
 msgstr "Placer diagram"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Insert in sheet"
 msgstr "~Indsæt i arket"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Clockwise direction"
 msgstr "~Med urets retning"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Starting angle"
 msgstr "Startvinkel"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
 msgstr "~Grader"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Plot options"
 msgstr "Tegneindstillinger"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include ~values from hidden cells"
 msgstr "Inkluder ~værdier fra skjulte celler"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Choose a data range"
 msgstr "Vælg et dataområde"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data range"
 msgstr "~Dataområde"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Data series in ~rows"
 msgstr "Dataserie i ~rækker"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Data series in ~columns"
 msgstr "Dataserie i ~kolonner"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~First row as label"
 msgstr "Første ~række som etiket"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "F~irst column as label"
 msgstr "F~ørste kolonne som etiket"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Days"
 msgstr "Dage"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Months"
 msgstr "Måneder"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Years"
 msgstr "År"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Scale"
 msgstr "Skalering"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Reverse direction"
 msgstr "~Modsat retning"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Logarithmic scale"
 msgstr "~Logaritmisk skala"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "T~ype"
 msgstr "T~ype"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Automatic"
 msgstr "Automatisk"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Text"
 msgstr "Tekst"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Date"
 msgstr "Dato"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Minimum"
 msgstr "~Minimum:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Automatic"
 msgstr "~Automatisk"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ma~ximum"
 msgstr "~Maksimum:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CHECKBOX.TEXT
+#, fuzzy
 msgid  "A~utomatic"
 msgstr "~Automatisk"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "R~esolution"
 msgstr "~Opløsning"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Automat~ic"
 msgstr "Automat~isk"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ma~jor interval"
 msgstr "~Overinterval:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Au~tomatic"
 msgstr "~Automatisk"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Minor inter~val count"
 msgstr "~Antal underintervaller:"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Minor inter~val"
 msgstr "Mindste inter~val"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Aut~omatic"
 msgstr "Aut~omatisk"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Re~ference value"
 msgstr "Reference~værdi:"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Align data series to"
 msgstr "Juster dataserie til"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Primary Y axis"
 msgstr "Primær Y-akse"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Secondary Y axis"
 msgstr "Sekundær Y-akse"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
 msgstr "Indstillinger"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Overlap"
 msgstr "~Overlap"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Spacing"
 msgstr "~Afstand"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Connection lines"
 msgstr "Forbindelseslinjer"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show ~bars side by side"
 msgstr "Vis ~bjælker side om side"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Plot options"
 msgstr "Tegne indstillinger"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Plot missing values"
 msgstr "Tegn manglende værdier"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Leave gap"
 msgstr "Efter~lad kløft"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Assume zero"
 msgstr "~Antag nul"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Continue line"
 msgstr "~Fortsæt linje"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include ~values from hidden cells"
 msgstr "Inkluder ~værdier fra skjulte celler"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TRISTATEBOX.TEXT
+#, fuzzy
 msgid  "Ve~rtically stacked"
 msgstr "~Lodret stablet"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
 msgstr "~Grader"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text orientation"
 msgstr "Skriveretning"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
 msgstr "Tekst~retning"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Choose titles, legend, and grid settings"
 msgstr "Vælg titler, forklaring og gitterindstillinger"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Display grids"
 msgstr "Vis gitre"

@@ -63,10 +63,6 @@ msgstr "~Κατηγορία"
 msgid  "Function"
 msgstr "Συνάρτηση"
 
-#: customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#DEFINE.TEXT
-msgid  "Functions"
-msgstr "Συναρτήσεις"
-
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FIXEDLINE.TEXT
 msgid  "Shortcut keys"
 msgstr "Πλήκτρα συντόμευσης"
@@ -85,7 +81,7 @@ msgstr "Αποθήκευση διαμόρφωσης πληκτρολογίου"
 
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.STRING.TEXT
 msgid  "Configuration (*.cfg)"
-msgstr "Διαμόρφωση"
+msgstr "Ρυθμίσεις (*.cfg)"
 
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.STRING.TEXT
 msgid  "My Macros"
@@ -111,14 +107,6 @@ msgstr "Προσαρμογή"
 msgid  "Menus"
 msgstr "Μενού"
 
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_KEYBOARD.PAGEITEM.TEXT
-msgid  "Keyboard"
-msgstr "Πληκτρολόγιο"
-
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_TOOLBARS.PAGEITEM.TEXT
-msgid  "Toolbars"
-msgstr "Γραμμές εργαλείων"
-
 #: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_EVENTS.PAGEITEM.TEXT
 msgid  "Events"
 msgstr "Γεγονότα"
@@ -126,14 +114,6 @@ msgstr "Γεγονότα"
 #: customize/cfg.src#TEXT_MENU.#DEFINE.TEXT
 msgid  "Menu"
 msgstr "Μενού"
-
-#: customize/cfg.src#TEXT_BEGIN_GROUP.#DEFINE.TEXT
-msgid  "Begin a Group"
-msgstr "Έναρξη μιας ομάδας"
-
-#: customize/cfg.src#TEXT_RENAME.#DEFINE.TEXT
-msgid  "Rename..."
-msgstr "Μετονομασία..."
 
 #: customize/cfg.src#TEXT_DELETE.#DEFINE.TEXT
 msgid  "Delete..."
@@ -143,10 +123,6 @@ msgstr "Διαγραφή..."
 msgid  "Delete"
 msgstr "Διαγραφή"
 
-#: customize/cfg.src#TEXT_MOVE.#DEFINE.TEXT
-msgid  "Move..."
-msgstr "Μετακίνηση..."
-
 #: customize/cfg.src#TEXT_DEFAULT_STYLE.#DEFINE.TEXT
 msgid  "Restore Default Settings"
 msgstr "Επαναφορά προεπιλεγμένων ρυθμίσεων"
@@ -154,14 +130,6 @@ msgstr "Επαναφορά προεπιλεγμένων ρυθμίσεων"
 #: customize/cfg.src#TEXT_DEFAULT_COMMAND.#DEFINE.TEXT
 msgid  "Restore Default Command"
 msgstr "Επαναφορά προεπιλεγμένης εντολής"
-
-#: customize/cfg.src#TEXT_TEXT_ONLY.#DEFINE.TEXT
-msgid  "Text only"
-msgstr "Μόνο κείμενο"
-
-#: customize/cfg.src#TEXT_TOOLBAR_NAME.#DEFINE.TEXT
-msgid  "Toolbar Name"
-msgstr "Όνομα εργαλειοθήκης"
 
 #: customize/cfg.src#TEXT_SAVE_IN.#DEFINE.TEXT
 msgid  "Save In"
@@ -171,45 +139,13 @@ msgstr "Αποθήκευση σε"
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr "Μενού %PRODUCTNAME %MODULENAME"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "Δημιουργία..."
-
 #: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_SEPARATOR.FIXEDLINE.TEXT
 msgid  "Menu Content"
 msgstr "Περιεχόμενο μενού"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_ENTRIES.FIXEDTEXT.TEXT
-msgid  "Entries"
-msgstr "Εγγραφές"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_ADD_COMMANDS.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "Προσθήκη..."
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_CHANGE_ENTRY.MENUBUTTON.TEXT
-msgid  "Modify"
-msgstr "Τροποποίηση"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Description"
-msgstr "Περιγραφή"
-
 #: customize/cfg.src#MODIFY_ENTRY.ID_ADD_SUBMENU.MENUITEM.TEXT
 msgid  "Add Submenu..."
 msgstr "Προσθήκη υπομενού..."
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_ONLY.MENUITEM.TEXT
-msgid  "Icons Only"
-msgstr "Μόνο εικονίδια"
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_AND_TEXT.MENUITEM.TEXT
-msgid  "Icons & Text"
-msgstr "Εικονίδια & κείμενο"
-
-#: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_CHANGE_SYMBOL.MENUITEM.TEXT
-msgid  "Change Icon..."
-msgstr "Αλλαγή εικονιδίου..."
 
 #: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_RESET_SYMBOL.MENUITEM.TEXT
 msgid  "Reset Icon"
@@ -218,10 +154,6 @@ msgstr "Επαναφορά εικονιδίου"
 #: customize/cfg.src#RID_SVXSTR_NEW_MENU.STRING.TEXT
 msgid  "New Menu %n"
 msgstr "Δημιουργία μενού %n"
-
-#: customize/cfg.src#RID_SVXSTR_NEW_TOOLBAR.STRING.TEXT
-msgid  "New Toolbar %n"
-msgstr "Νέα γραμμή εργαλείων %n"
 
 #: customize/cfg.src#RID_SVXSTR_MOVE_MENU.STRING.TEXT
 msgid  "Move Menu"
@@ -237,7 +169,7 @@ msgstr "Όνομα υπομενού"
 
 #: customize/cfg.src#RID_SVXSTR_MENU_ADDCOMMANDS_DESCRIPTION.STRING.TEXT
 msgid  "To add a command to a menu, select the category and then the command. You can also drag the command to the Commands list of the Menus tab page in the Customize dialog."
-msgstr "Για να προσθέσετε μια εντολή στο μενού, επιλέξτε τη κατηγορία και μετά το μενού. Μπορείτε ακόμα να σύρετε την εντολή στη λίστα Εντολές της καρτέλας του μενού στο διάλογο Προσαρμογή"
+msgstr "Για να προσθέσετε μια εντολή στο μενού, επιλέξτε τη κατηγορία και μετά το μενού. Μπορείτε ακόμα να σύρετε την εντολή στη λίστα Εντολές της καρτέλας του μενού στο διάλογο Προσαρμογή."
 
 #: customize/cfg.src#MD_MENU_ORGANISER.MODALDIALOG.TEXT
 msgid  "New Menu"
@@ -250,22 +182,6 @@ msgstr "Όνομα μενού"
 #: customize/cfg.src#MD_MENU_ORGANISER.TXT_MENU.FIXEDTEXT.TEXT
 msgid  "Menu position"
 msgstr "Θέση μενού"
-
-#: customize/cfg.src#MD_NEW_TOOLBAR.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "Όνομα"
-
-#: customize/cfg.src#MD_ICONSELECTOR.MODALDIALOG.TEXT
-msgid  "Change Icon"
-msgstr "Αλλαγή εικονιδίου"
-
-#: customize/cfg.src#MD_ICONSELECTOR.FT_SYMBOLS.FIXEDTEXT.TEXT
-msgid  "Icons"
-msgstr "Εικονίδια"
-
-#: customize/cfg.src#MD_ICONSELECTOR.BTN_IMPORT.PUSHBUTTON.TEXT
-msgid  "Import..."
-msgstr "Εισαγωγή..."
 
 #: customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FIXEDTEXT.TEXT
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
@@ -289,7 +205,7 @@ msgstr "Θέλετε πραγματικά να διαγράψετε την ει�
 
 #: customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.STRING.TEXT
 msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
-msgstr "Το εικονίδιο %ICONNAME περιέχεται ήδη στη λίστα εικόνων. \nΘέλετε να αντικαταστήσετε το υπάρχον εικονίδιο;"
+msgstr "Το εικονίδιο %ICONNAME περιέχεται ήδη στη λίστα εικόνων.\nΘέλετε να αντικαταστήσετε το υπάρχον εικονίδιο;"
 
 #: customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.STRING.TEXT
 msgid  "Confirm Icon Replacement"
@@ -302,14 +218,6 @@ msgstr "Ναι σε όλα"
 #: customize/cfg.src#RID_SVXSTR_PRODUCTNAME_TOOLBARS.STRING.TEXT
 msgid  "%PRODUCTNAME %MODULENAME Toolbars"
 msgstr "Γραμμές εργαλείων %PRODUCTNAME %MODULENAME"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR.STRING.TEXT
-msgid  "Toolbar"
-msgstr "Γραμμή εργαλείων"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR_CONTENT.STRING.TEXT
-msgid  "Toolbar Content"
-msgstr "Περιεχόμενο γραμμής εργαλείων"
 
 #: customize/cfg.src#RID_SVXSTR_COMMANDS.STRING.TEXT
 msgid  "Commands"
@@ -329,7 +237,7 @@ msgstr "Δεν υπάρχουν πια εντολές σε αυτήν τη γρ�
 
 #: customize/cfg.src#QBX_CONFIRM_RESET.QUERYBOX.MESSAGE
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr "Η ρύθμιση του μενού για %SAVE IN SELECTION%  θα επιστρέψει στις αρχικές της ρυθμίσεις. Θέλετε να συνεχίσετε;"
+msgstr "Η ρύθμιση του μενού για %SAVE IN SELECTION% θα επιστρέψει στις αρχικές της ρυθμίσεις. Θέλετε να συνεχίσετε;"
 
 #: customize/cfg.src#RID_SVXSTR_CONFIRM_TOOLBAR_RESET.STRING.TEXT
 msgid  "The toolbar configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
@@ -351,21 +259,13 @@ msgstr "~Νέο όνομα"
 msgid  "Rename Menu"
 msgstr "Μετονομασία μενού"
 
-#: customize/cfg.src#RID_SVXSTR_RENAME_TOOLBAR.STRING.TEXT
-msgid  "Rename Toolbar"
-msgstr "Μετονομασία εργαλειοθήκης"
-
 #: customize/cfg.src#BUTTON_STR_UP.STRING.TEXT
 msgid  "Up"
-msgstr ""
+msgstr "Επάνω"
 
 #: customize/cfg.src#BUTTON_STR_DOWN.STRING.TEXT
 msgid  "Down"
-msgstr ""
-
-#: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "Γεγονός"
+msgstr "Κάτω"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -390,10 +290,6 @@ msgstr "~Αφαίρεση"
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.TABPAGE.TEXT
 msgid  "Assign action"
 msgstr "Ανάθεση ενέργειας"
-
-#: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "Γεγονός"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -422,10 +318,6 @@ msgstr "Ανάθεση στοιχείου"
 #: customize/macropg.src#RID_SVXDLG_ASSIGNCOMPONENT.FT_METHOD.FIXEDTEXT.TEXT
 msgid  "Component method name"
 msgstr "Όνομα μεθόδου στοιχείου"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_STARTAPP.STRING.TEXT
-msgid  "Start Application"
-msgstr "Εκκίνηση εφαρμογής"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEAPP.STRING.TEXT
 msgid  "Close Application"
@@ -477,7 +369,7 @@ msgstr "Εκτύπωση εγγράφου"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_MODIFYCHANGED.STRING.TEXT
 msgid  "'Modified' status was changed"
-msgstr "Η Κατάσταση τροποποίησης άλλαξε"
+msgstr "'Τροποποιημένη' κατάσταση άλλαξε"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_MAILMERGE.STRING.TEXT
 msgid  "Printing of form letters started"
@@ -495,17 +387,13 @@ msgstr "Η συγχώνευση των πεδίων φόρμας ξεκίνησ�
 msgid  "Merging of form fields finished"
 msgstr "Η συγχώνευση των πεδίων φόρμας ολοκληρώθηκε"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_PAGECOUNTCHANGE.STRING.TEXT
-msgid  "Changing the page count"
-msgstr "Αλλαγή της καταμέτρησης σελίδων"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_SUBCOMPONENT_OPENED.STRING.TEXT
 msgid  "Loaded a sub component"
 msgstr "Φορτώθηκε ένα υποστοιχείο"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SUBCOMPONENT_CLOSED.STRING.TEXT
 msgid  "Closed a sub component"
-msgstr "έκλεισε ένα υποστοιχείο"
+msgstr "Έκλεισε ένα υποστοιχείο"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEPARAMETER.STRING.TEXT
 msgid  "Fill parameters"
@@ -515,33 +403,13 @@ msgstr "Παράμετροι γεμίσματος"
 msgid  "Execute action"
 msgstr "Εκτέλεση ενέργειας"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
-msgstr "Μετά την ενημέρωση"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
 msgstr "Πριν την ενημέρωση"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
-msgstr "Πριν την ενέργεια εγγραφής"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
-msgstr "Μετά την ενέργεια εγγραφής"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
 msgstr "Επιβεβαίωση διαγραφής"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
-msgstr "Παρουσιάστηκε σφάλμα"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
-msgstr "Κατά την προσαρμογή"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
@@ -554,14 +422,6 @@ msgstr "Στην περίπτωση απώλειας εστίασης"
 #: customize/macropg.src#RID_SVXSTR_EVENT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
 msgstr "Η κατάσταση του αντικειμένου τροποποιήθηκε"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
-msgstr "Πλήκτρο πιεσμένο"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYUP.STRING.TEXT
-msgid  "Key released"
-msgstr "Πλήκτρο απελευθερωμένο"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADED.STRING.TEXT
 msgid  "When loading"
@@ -599,14 +459,6 @@ msgstr "Πλήκτρο ποντικιού πιεσμένο"
 msgid  "Mouse button released"
 msgstr "Πλήκτρο ποντικιού απελευθερωμένο"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
-msgstr "Πριν την αλλαγή εγγραφής"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONED.STRING.TEXT
-msgid  "After record change"
-msgstr "Μετά την αλλαγή εγγραφής"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_RESETTED.STRING.TEXT
 msgid  "After resetting"
 msgstr "Μετά από επαναφορά"
@@ -619,14 +471,6 @@ msgstr "Πριν την επαναφορά"
 msgid  "Approve action"
 msgstr "Έγκριση ενέργειας"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_SUBMITTED.STRING.TEXT
-msgid  "Before submitting"
-msgstr "Πριν την υποβολή"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
-msgstr "Τροποποίηση κειμένου"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
 msgstr "Πριν την αποφόρτωση"
@@ -634,10 +478,6 @@ msgstr "Πριν την αποφόρτωση"
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADED.STRING.TEXT
 msgid  "When unloading"
 msgstr "Κατά την αποφόρτωση"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_CHANGED.STRING.TEXT
-msgid  "Changed"
-msgstr "Τροποποιημένο"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CREATEDOC.STRING.TEXT
 msgid  "Document created"
@@ -653,7 +493,7 @@ msgstr "Η αποθήκευση του εγγράφου απέτυχε"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_SAVEASDOCFAILED.STRING.TEXT
 msgid  "'Save as' has failed"
-msgstr "Η 'Αποθήκευση ως' απέτυχε"
+msgstr "'Αποθήκευση ως' απέτυχε"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_COPYTODOC.STRING.TEXT
 msgid  "Storing or exporting copy of document"
@@ -739,21 +579,9 @@ msgstr "~Κατηγορία"
 msgid  "Commands"
 msgstr "Εντολές"
 
-#: customize/selector.src#STR_SELECTOR_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "Προσθήκη"
-
-#: customize/selector.src#STR_SELECTOR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "Εκτέλεση"
-
-#: customize/selector.src#STR_SELECTOR_CLOSE.STRING.TEXT
-msgid  "Close"
-msgstr "Κλείσιμο"
-
 #: customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.STRING.TEXT
 msgid  "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customize dialog."
-msgstr "Για να προσθέσετε μια εντολή στο μενού, επιλέξτε τη κατηγορία και μετά το μενού. Μπορείτε ακόμα να σύρετε την εντολή στη λίστα Εντολές της καρτέλας του μενού στο διάλογο Προσαρμογή"
+msgstr "Για να προσθέσετε μια εντολή στο μενού, επιλέξτε τη κατηγορία και μετά το μενού. Μπορείτε ακόμα να σύρετε την εντολή στη λίστα Εντολές της καρτέλας του μενού στο διάλογο Προσαρμογή."
 
 #: customize/selector.src#STR_BASICMACROS.STRING.TEXT
 msgid  "BASIC Macros"
@@ -771,17 +599,45 @@ msgstr "Βιβλιοθήκη"
 msgid  "My Macros"
 msgstr "Οι μακροεντολές μου"
 
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_COMMANDS.FIXEDTEXT.TEXT
-msgid  "Macro name"
-msgstr "Όνομα μακροεντολής"
-
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.GRP_SELECTOR_DESCRIPTION.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "Περιγραφή"
-
 #: dialogs/about.src#RID_DEFAULTABOUT.MODALDIALOG.TEXT
 msgid  "About %FULLPRODUCTNAME"
-msgstr ""
+msgstr "Πληροφορίες για το %FULLPRODUCTNAME"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PUSHBUTTON.TEXT
+msgid  "License..."
+msgstr "Άδεια χρήσης..."
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT_VENDOR.STRING.TEXT
+msgid  "%OOOVENDOR"
+msgstr "%OOOVENDOR"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED.STRING.TEXT
+msgid  "This product was created by the OpenOffice community."
+msgstr "Αυτό το πρόγραμμα δημιουργήθηκε από την κοινότητα του OpenOffice."
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED_VENDOR.STRING.TEXT
+msgid  "This product was created by %OOOVENDOR, based on Apache OpenOffice."
+msgstr "Αυτό το πρόγραμμα δημιουργήθηκε από τον/την %OOOVENDOR με βάση το Apache OpenOffice."
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_ACKNOWLEDGE.STRING.TEXT
+msgid  "The OpenOffice community acknowledges all contributing members, especially those mentioned at"
+msgstr "Η κοινότητα του OpenOffice είναι υπόχρεη σε κάθε μέλος που συνεισέφερε, ειδικά σε αυτά που αναφέρονται στο"
+
+#: dialogs/about.src#RID_CUI_README_DLG.MODALDIALOG.TEXT
+msgid  "Readme, License and Notice"
+msgstr "Σύντομες οδηγίες, Άδεια χρήσης και Σημειώσεις"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_READMEPAGE.PAGEITEM.TEXT
+msgid  "Readme"
+msgstr "Σύντομες οδηγίες"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_LICENSEPAGE.PAGEITEM.TEXT
+msgid  "License"
+msgstr "Άδεια χρήσης"
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_NOTICEPAGE.PAGEITEM.TEXT
+msgid  "Notice"
+msgstr "Σημειώσεις"
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.MODALDIALOG.TEXT
 msgid  "Special Characters"
@@ -805,67 +661,67 @@ msgstr "~Διαγραφή"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.MODALDIALOG.TEXT
 msgid  "Color Picker"
-msgstr ""
+msgstr "Επιλογέας χρωμάτων"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.PB_PICKER.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Pick a color from the document"
-msgstr ""
+msgstr "Επιλέγει χρώμα από το κείμενό σας"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_RGB.FIXEDLINE.TEXT
 msgid  "RGB"
-msgstr ""
+msgstr "RGB"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_RED.FIXEDTEXT.TEXT
 msgid  "~Red"
-msgstr ""
+msgstr "~Κόκκινο"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_GREEN.FIXEDTEXT.TEXT
 msgid  "~Green"
-msgstr ""
+msgstr "~Πράσινο"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BLUE.FIXEDTEXT.TEXT
 msgid  "~Blue"
-msgstr ""
+msgstr "~Μπλε"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HEX.FIXEDTEXT.TEXT
 msgid  "Hex ~#"
-msgstr ""
+msgstr "Δεκαεξαδικό ~#"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_HSB.FIXEDLINE.TEXT
 msgid  "HSB"
-msgstr ""
+msgstr "HSB"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_HUE.FIXEDTEXT.TEXT
 msgid  "H~ue"
-msgstr ""
+msgstr "~Χροιά"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_SATURATION.FIXEDTEXT.TEXT
 msgid  "~Saturation"
-msgstr ""
+msgstr "~Κορεσμός"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_BRIGHTNESS.FIXEDTEXT.TEXT
 msgid  "Bright~ness"
-msgstr ""
+msgstr "Φωτει~νότητα"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.FL_CMYK.FIXEDLINE.TEXT
 msgid  "CMYK"
-msgstr ""
+msgstr "CMYK"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_CYAN.FIXEDTEXT.TEXT
 msgid  "~Cyan"
-msgstr ""
+msgstr "Κ~υανό"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_MAGENTA.FIXEDTEXT.TEXT
 msgid  "~Magenta"
-msgstr ""
+msgstr "~Πορφυρό"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_YELLOW.FIXEDTEXT.TEXT
 msgid  "~Yellow"
-msgstr ""
+msgstr "Κί~τρινο"
 
 #: dialogs/colorpicker.src#RID_CUI_DIALOG_COLORPICKER.CT_KEY.FIXEDTEXT.TEXT
 msgid  "~Key"
-msgstr ""
+msgstr "~Μαύρο"
 
 #: dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FIXEDTEXT.TEXT
 msgid  "Origi~nal"
@@ -927,10 +783,6 @@ msgstr "Εναλλακτικό κείμε~νο"
 msgid  "~Description"
 msgstr "~Περιγραφή"
 
-#: dialogs/dlgname.src#RID_SVXDLG_NAME.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "Όνομα"
-
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FIXEDTEXT.TEXT
 msgid  "~Name"
 msgstr "Ό~νομα"
@@ -946,10 +798,6 @@ msgstr "~Τίτλος"
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FIXEDTEXT.TEXT
 msgid  "~Description"
 msgstr "~Περιγραφή"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.MODALDIALOG.TEXT
-msgid  "Record Search"
-msgstr "Αναζήτηση εγγραφής"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FIXEDLINE.TEXT
 msgid  "Search for"
@@ -1015,10 +863,6 @@ msgstr "Έκφραση συμβόλων κράτησης θέσης"
 msgid  "Regular expression"
 msgstr "Κανονική έκφραση"
 
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CHECKBOX.TEXT
-msgid  "Similarity Search"
-msgstr "Αναζήτηση ομοιότητας"
-
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PUSHBUTTON.TEXT
 msgid  "..."
 msgstr "..."
@@ -1034,10 +878,6 @@ msgstr "Παρόμοια γραφή (Ιαπων.)"
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FIXEDLINE.TEXT
 msgid  "State"
 msgstr "Νομός"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FIXEDTEXT.TEXT
-msgid  "Record :"
-msgstr "Εγγραφή :"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PUSHBUTTON.TEXT
 msgid  "Search"
@@ -1077,19 +917,19 @@ msgstr "Από κάτω"
 
 #: dialogs/fmsearch.src#RID_SVXERR_SEARCH_NORECORD.ERRORBOX.MESSAGE
 msgid  "No records corresponding to your data found."
-msgstr "Δεν βρέθηκαν εγγραφές, οι οποίες να εκπληρώνουν τα δεδομένα σας!"
+msgstr "Δεν βρέθηκαν εγγραφές, οι οποίες να εκπληρώνουν τα δεδομένα σας."
 
 #: dialogs/fmsearch.src#RID_SVXERR_SEARCH_GENERAL_ERROR.ERRORBOX.MESSAGE
 msgid  "An unknown error occurred. The search could not be finished."
-msgstr "Παρουσιάστηκε άγνωστο σφάλμα. Η αναζήτηση δεν ήταν δυνατόν να ολοκληρωθεί!"
+msgstr "Παρουσιάστηκε άγνωστο σφάλμα. Η αναζήτηση δεν ήταν δυνατόν να ολοκληρωθεί."
 
 #: dialogs/fmsearch.src#RID_STR_OVERFLOW_FORWARD.STRING.TEXT
 msgid  "Overflow, search continued at the beginning"
-msgstr "Υπερχείλιση, η αναζήτηση συνεχίστηκε από την αρχή."
+msgstr "Υπερχείλιση, η αναζήτηση συνεχίστηκε από την αρχή"
 
 #: dialogs/fmsearch.src#RID_STR_OVERFLOW_BACKWARD.STRING.TEXT
 msgid  "Overflow, search continued at the end"
-msgstr "Υπερχείλιση, η αναζήτηση συνεχίστηκε από την αρχή."
+msgstr "Υπερχείλιση, η αναζήτηση συνεχίστηκε από την αρχή"
 
 #: dialogs/fmsearch.src#RID_STR_SEARCH_COUNTING.STRING.TEXT
 msgid  "counting records"
@@ -1111,18 +951,6 @@ msgstr "Αρχεία"
 msgid  "Type:"
 msgstr "Τύπος:"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FIXEDTEXT.TEXT
-msgid  "Location:"
-msgstr "Τοποθεσία:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FIXEDTEXT.TEXT
-msgid  "Contents:"
-msgstr "Περιεχόμενο:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FIXEDTEXT.TEXT
-msgid  "Modified:"
-msgstr "Τροποποιήθηκε:"
-
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FIXEDTEXT.TEXT
 msgid  "~File type"
 msgstr "~Τύπος αρχείου"
@@ -1143,14 +971,6 @@ msgstr "Προσθήκη όλ~ων"
 msgid  "Pr~eview"
 msgstr "Πρ~οεπισκόπηση"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PUSHBUTTON.TEXT
-msgid  "Maddin1"
-msgstr "Maddin1"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PUSHBUTTON.TEXT
-msgid  "Maddin2"
-msgstr "Maddin2"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.MODALDIALOG.TEXT
 msgid  "Enter Title"
 msgstr "Εισαγωγή τίτλου"
@@ -1159,21 +979,9 @@ msgstr "Εισαγωγή τίτλου"
 msgid  "Title"
 msgstr "Τίτλος"
 
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.MODALDIALOG.TEXT
-msgid  "Find"
-msgstr "Εύρεση"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FIXEDLINE.TEXT
-msgid  "Directory"
-msgstr "Κατάλογος"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FIXEDLINE.TEXT
 msgid  "File type"
 msgstr "Τύπος αρχείου"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.MODALDIALOG.TEXT
-msgid  "Apply"
-msgstr "Εφαρμογή"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FIXEDLINE.TEXT
 msgid  "File"
@@ -1185,11 +993,11 @@ msgstr "Ενημέρωση"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_THEMEID.MODALDIALOG.TEXT
 msgid  "Theme ID"
-msgstr "Αναγνωριστικό (ID) θέματος"
+msgstr "Αναγνωριστικό ID Θέματος"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_THEMEID.FL_ID.FIXEDLINE.TEXT
 msgid  "ID"
-msgstr "Αναγνωριστικό"
+msgstr "ΑΝΑΓΝΩΡΙΣΤΙΚΌ ID"
 
 #: dialogs/gallery.src#RID_SVXSTR_GALLERY_NOFILES.STRING.TEXT
 msgid  "<No Files>"
@@ -1205,7 +1013,7 @@ msgstr "Αντικείμενο, Αντικείμενα"
 
 #: dialogs/gallery.src#RID_SVXSTR_GALLERY_READONLY.STRING.TEXT
 msgid  " (read-only)"
-msgstr "(μόνο για ανάγνωση)"
+msgstr " (μόνο για ανάγνωση)"
 
 #: dialogs/gallery.src#RID_SVXSTR_GALLERY_ALLFILES.STRING.TEXT
 msgid  "<All Files>"
@@ -1213,7 +1021,7 @@ msgstr "<Όλα τα αρχεία>"
 
 #: dialogs/gallery.src#RID_SVXSTR_GALLERY_ID_EXISTS.STRING.TEXT
 msgid  "This ID already exists..."
-msgstr "Αυτό το αναγνωριστικό ( ID) υπάρχει ήδη..."
+msgstr "Αυτό το Αναγνωριστικό ID υπάρχει ήδη..."
 
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.MODALDIALOG.TEXT
 msgid  "Mosaic"
@@ -1241,7 +1049,7 @@ msgstr "Έκθεση στο φως"
 
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.DLG_FILTERSOLARIZE_FT_THRESHOLD.FIXEDTEXT.TEXT
 msgid  "Threshold ~value"
-msgstr "Τιμή ορίου"
+msgstr "Τιμή ~ορίου"
 
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.DLG_FILTERSOLARIZE_CBX_INVERT.CHECKBOX.TEXT
 msgid  "~Invert"
@@ -1254,14 +1062,6 @@ msgstr "Γήρανση"
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SEPIA.DLG_FILTERSEPIA_FT_SEPIA.FIXEDTEXT.TEXT
 msgid  "Aging degree"
 msgstr "Βαθμός γήρανσης"
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.MODALDIALOG.TEXT
-msgid  "Posterize"
-msgstr "Αφίσα"
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FIXEDTEXT.TEXT
-msgid  "Poster colors"
-msgstr "Χρώματα αφίσας"
 
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.MODALDIALOG.TEXT
 msgid  "Relief"
@@ -1311,10 +1111,6 @@ msgstr "Han~ja"
 msgid  "Ha~nja"
 msgstr "Ha~nja"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_CONVERSION.FIXEDTEXT.TEXT
-msgid  "Conversion"
-msgstr "Μετατροπή"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_HANGUL_ONLY.CHECKBOX.TEXT
 msgid  "Hangul ~only"
 msgstr "Hangul ~μόνο"
@@ -1325,11 +1121,7 @@ msgstr "Hanja μό~νο"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_REPLACE_BY_CHARACTER.CHECKBOX.TEXT
 msgid  "Replace b~y character"
-msgstr "Αντικατάσταση αν~ά  χαρακτήρα"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANGUL.STRING.TEXT
-msgid  "Hangul"
-msgstr "Hangul"
+msgstr "Αντικατάσταση ~ανά χαρακτήρα"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANJA.STRING.TEXT
 msgid  "Hanja"
@@ -1349,7 +1141,7 @@ msgstr "Επιλογές"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.CB_IGNOREPOST.CHECKBOX.TEXT
 msgid  "Ignore post-positional word"
-msgstr "Αγνοήστε την μετά- θέση της λέξης"
+msgstr "Αγνοήστε την μετά-θέση της λέξης"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.CB_SHOWRECENTLYFIRST.CHECKBOX.TEXT
 msgid  "Show recently used entries first"
@@ -1359,10 +1151,6 @@ msgstr "Εμφάνιση των πρόσφατων εγγραφών πρώτα"
 msgid  "Replace all unique entries automatically"
 msgstr "Αντικατάσταση όλων των μοναδικών καταχωρίσεων αυτόματα"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "Δημιουργία..."
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_EDIT.PUSHBUTTON.TEXT
 msgid  "Edit..."
 msgstr "Επεξεργασία..."
@@ -1371,53 +1159,21 @@ msgstr "Επεξεργασία..."
 msgid  "Delete"
 msgstr "Διαγραφή"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.MODALDIALOG.TEXT
-msgid  "New Dictionary"
-msgstr "Νέο λεξικό"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FL_NEWDICT.FIXEDLINE.TEXT
-msgid  "Dictionary"
-msgstr "Λεξικό"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 msgid  "~Name"
 msgstr "Ό~νομα"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.MODALDIALOG.TEXT
-msgid  "Edit Custom Dictionary"
-msgstr "Επεξεργασία προσαρμοσμένου λεξικού"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.STR_EDITHINT.STRING.TEXT
 msgid  "[Enter text here]"
 msgstr "[Εισάγετε κείμενο εδώ]"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_BOOK.FIXEDTEXT.TEXT
-msgid  "Book"
-msgstr "Βιβλίο"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_ORIGINAL.FIXEDTEXT.TEXT
 msgid  "Original"
 msgstr "Αρχικό"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_SUGGESTIONS.FIXEDTEXT.TEXT
-msgid  "Suggestions (max. 8)"
-msgstr "Προτάσεις (το πολύ 8)"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_NEW.PUSHBUTTON.TEXT
-msgid  "New"
-msgstr "Δημιουργία"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CANCELBUTTON.TEXT
 msgid  "Close"
 msgstr "Κλείσιμο"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.MODALDIALOG.TEXT
-msgid  "Target in Document"
-msgstr "Σημείο προορισμού στο έγγραφο"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_APPLY.PUSHBUTTON.TEXT
-msgid  "Apply"
-msgstr "Εφαρμογή"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
@@ -1433,7 +1189,7 @@ msgstr "Δεν ήταν δυνατόν να ανοιχτεί το έγγραφο
 
 #: dialogs/hlmarkwn.src#STR_MARK_TREE.STRING.TEXT
 msgid  "Mark Tree"
-msgstr ""
+msgstr "Επιλογή Δένδρου"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.TABPAGE.TEXT
 msgid  "Hyperlink"
@@ -1495,10 +1251,6 @@ msgstr "Φό~ρμα"
 msgid  "Text"
 msgstr "Κείμενο"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Button"
-msgstr "Κουμπί"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FIXEDTEXT.TEXT
 msgid  "Te~xt"
 msgstr "Κεί~μενο"
@@ -1510,10 +1262,6 @@ msgstr "Όν~ομα"
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Events"
 msgstr "Γεγονότα"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FIXEDLINE.TEXT
-msgid  "Mail & news"
-msgstr "Αλληλογραφία και συζητήσεις"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_MAIL.RADIOBUTTON.TEXT
 msgid  "~E-mail"
@@ -1535,10 +1283,6 @@ msgstr "~Θέμα"
 msgid  "Data Sources..."
 msgstr "Προελεύσεις δεδομένων..."
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FIXEDLINE.TEXT
-msgid  "Document"
-msgstr "Έγγραφο"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_PATH_DOC.FIXEDTEXT.TEXT
 msgid  "~Path"
 msgstr "Δια~δρομή"
@@ -1547,25 +1291,13 @@ msgstr "Δια~δρομή"
 msgid  "Open File"
 msgstr "Άνοιγμα αρχείου"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_TARGET.FIXEDLINE.TEXT
-msgid  "Target in document"
-msgstr "Σημείο προορισμού στο έγγραφο"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TARGET_DOC.FIXEDTEXT.TEXT
 msgid  "Targ~et"
 msgstr "Προ~ορισμός"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_URL.FIXEDTEXT.TEXT
-msgid  "URL"
-msgstr "URL"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FIXEDTEXT.TEXT
 msgid  "Test text"
 msgstr "Δοκιμαστικό κείμενο"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_NEWDOCUMENT.FIXEDLINE.TEXT
-msgid  "New document"
-msgstr "Δημιουργία εγγράφου"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.RB_EDITNOW.RADIOBUTTON.TEXT
 msgid  "Edit ~now"
@@ -1586,10 +1318,6 @@ msgstr "~Τύπος αρχείου"
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Select Path"
 msgstr "Επιλογή διαδρομής"
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_APPLYBUT.STRING.TEXT
-msgid  "Apply"
-msgstr "Εφαρμογή"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_CLOSEBUT.STRING.TEXT
 msgid  "Close"
@@ -1619,21 +1347,13 @@ msgstr "Διαδίκτυο"
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
 msgstr "Εδώ μπορείτε να δημιουργήσετε μια υπερσύνδεση σε μια ιστοσελίδα, εξυπηρετητή FTP ή σύνδεση Telnet."
 
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.STRING.TEXT
-msgid  "Mail & News"
-msgstr "Αλληλογραφία και συζητήσεις"
-
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
-msgstr "Εδώ μπορείτε να δημιουργήσετε μια υπερσύνδεση σε μια διεύθυνση e-mail ή ομάδα συζήτησης"
+msgstr "Εδώ μπορείτε να δημιουργήσετε μια υπερσύνδεση σε μια διεύθυνση e-mail ή ομάδα συζήτησης."
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
-msgstr "Εδώ μπορείτε να δημιουργήσετε μια υπερσύνδεση σε ένα υπάρχον έγγραφο ή σε ένα προορισμό  σε ένα έγγραφο."
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.STRING.TEXT
-msgid  "New Document"
-msgstr "Δημιουργία εγγράφου"
+msgstr "Εδώ μπορείτε να δημιουργήσετε μια υπερσύνδεση σε ένα υπάρχον έγγραφο ή σε ένα προορισμό σε ένα έγγραφο."
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.STRING.TEXT
 msgid  "This is where you create a new document to which the new link points."
@@ -1657,7 +1377,7 @@ msgstr "~Λέξη"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CUT.OKBUTTON.TEXT
 msgid  "H~yphenate"
-msgstr "H"
+msgstr "Συλλα~βισμός"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CONTINUE.PUSHBUTTON.TEXT
 msgid  "~Skip"
@@ -1669,7 +1389,7 @@ msgstr "~Αφαίρεση"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_ALL.PUSHBUTTON.TEXT
 msgid  "Hyphenate ~All"
-msgstr "Συλλαβισμός Όλα"
+msgstr "Συλλαβι~σμός Όλα"
 
 #: dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CANCEL.CANCELBUTTON.TEXT
 msgid  "~Close"
@@ -1690,10 +1410,6 @@ msgstr "~Πριν από"
 #: dialogs/insrc.src#DLG_INS_ROW_COL.CB_POS_AFTER.RADIOBUTTON.TEXT
 msgid  "A~fter"
 msgstr "Με~τά από"
-
-#: dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "Θέση"
 
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FIXEDTEXT.TEXT
 msgid  "~Number"
@@ -1747,10 +1463,6 @@ msgstr "Αρχεία"
 msgid  "Select Archives"
 msgstr "Επιλογή αρχειοθηκών"
 
-#: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.STRING.TEXT
-msgid  "Archives"
-msgstr "Αρχειοθήκες"
-
 #: dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.STRING.TEXT
 msgid  "The file %1 already exists."
 msgstr "Το αρχείο %1 υπάρχει ήδη."
@@ -1777,7 +1489,7 @@ msgstr "Αρχείο"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_TO_OPEN.FIXEDTEXT.TEXT
 msgid  "~Enter password to open"
-msgstr "Enter στο"
+msgstr "~Εισάγετε κωδικό για άνοιγμα"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_REENTER_PASSWD_TO_OPEN.FIXEDTEXT.TEXT
 msgid  "Confirm password"
@@ -1813,15 +1525,15 @@ msgstr "Λι~γότερες επιλογές"
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_ONE_PASSWORD_MISMATCH.STRING.TEXT
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr "Ορισμός ανά in."
+msgstr "Ο κωδικός επιβεβαίωσης δεν ταιριάζει με το κωδικό. Ορίστε τον κωδικό ξανά εισάγοντας τον ίδιο κωδικό και στα δυο πλαίσια."
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_TWO_PASSWORDS_MISMATCH.STRING.TEXT
 msgid  "The confirmation passwords did not match the original passwords. Set the passwords again."
-msgstr "Ορισμός."
+msgstr "Οι κωδικοί επιβεβαίωσης δεν ταιριάζουν τους αρχικούς κωδικούς. Ορίστε τους κωδικούς ξανά."
 
 #: dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_INVALID_STATE_FOR_OK_BUTTON.STRING.TEXT
 msgid  "Please enter a password to open or to modify, or check the open read-only option to continue."
-msgstr "a στο ή στο ή στο."
+msgstr "Παρακαλώ εισάγετε έναν κωδικό για άνοιγμα ή τροποποίηση, ή τσεκάρετε την επιλογή άνοιγμα μόνο για ανάγνωση για να συνεχίσετε."
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.MODALDIALOG.TEXT
 msgid  "Note"
@@ -1834,10 +1546,6 @@ msgstr "Συντάκτης"
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_EDIT.FIXEDTEXT.TEXT
 msgid  "~Text"
 msgstr "~Κείμενο"
-
-#: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FIXEDLINE.TEXT
-msgid  "Contents"
-msgstr "Περιεχόμενα"
 
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FIXEDTEXT.TEXT
 msgid  "~Insert"
@@ -1899,17 +1607,9 @@ msgstr "Δημιουργία βιβλιοθήκης"
 msgid  "Enter the name for the new library."
 msgstr "Παρακαλώ εισάγετε το όνομα της νέας βιβλιοθήκης."
 
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWMACRO.STRING.TEXT
-msgid  "Create Macro"
-msgstr "Δημιουργία μακροεντολής"
-
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_NEWMACRO.STRING.TEXT
 msgid  "Enter the name for the new macro."
 msgstr "Παρακαλώ εισάγετε το όνομα της νέας μακροεντολής."
-
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_RENAME.STRING.TEXT
-msgid  "Rename"
-msgstr "Μετονομασία"
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_RENAME.STRING.TEXT
 msgid  "Enter the new name for the selected object."
@@ -1933,7 +1633,7 @@ msgstr " Δεν έχετε δικαιώματα για να διαγράψετε
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_DELFAILED_TITLE.STRING.TEXT
 msgid  "Error Deleting Object"
-msgstr "Σφάλμα κατά τη διαγραφή αντικειμένου."
+msgstr "Σφάλμα Διαγραφής Αντικειμένου"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILED.STRING.TEXT
 msgid  "The object could not be created."
@@ -1941,15 +1641,11 @@ msgstr "Δεν ήταν δυνατή η δημιουργία του αντικε
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILEDDUP.STRING.TEXT
 msgid  " Object with the same name already exists."
-msgstr "Υπάρχει ήδη ένα αντικείμενο με αυτό το όνομα"
+msgstr " Υπάρχει ήδη ένα αντικείμενο με αυτό το όνομα."
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILEDPERM.STRING.TEXT
 msgid  " You do not have permission to create this object."
 msgstr " Δεν έχετε δικαιώματα για να δημιουργήσετε αυτό το αντικείμενο."
-
-#: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILED_TITLE.STRING.TEXT
-msgid  "Error Creating Object"
-msgstr "Σφάλμα κατά την δημιουργία αντικειμένου"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED.STRING.TEXT
 msgid  "The object could not be renamed."
@@ -1959,17 +1655,13 @@ msgstr "Το αντικείμενο δεν μπορεί να μετονομασ�
 msgid  " You do not have permission to rename this object."
 msgstr " Δεν έχετε δικαιώματα για να μετονομάσετε αυτό το αντικείμενο."
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED_TITLE.STRING.TEXT
-msgid  "Error Renaming Object"
-msgstr "Σφάλμα μετονομασίας αντικειμένου"
-
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME Error"
 msgstr "Σφάλμα %PRODUCTNAME"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_LANG_NOT_SUPPORTED.STRING.TEXT
 msgid  "The scripting language %LANGUAGENAME is not supported."
-msgstr "Η γλώσσα δέσμης εντολών %LANGUAGENAME δεν υποστηρίζεται"
+msgstr "Η γλώσσα δέσμης εντολών %LANGUAGENAME δεν υποστηρίζεται."
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_RUNNING.STRING.TEXT
 msgid  "An error occurred while running the %LANGUAGENAME script %SCRIPTNAME."
@@ -1999,10 +1691,6 @@ msgstr "Παρουσιάστηκε ένα σφάλμα Scripting Framework κα�
 msgid  "Type:"
 msgstr "Τύπος:"
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_MESSAGE_LABEL.STRING.TEXT
-msgid  "Message:"
-msgstr "Μήνυμα:"
-
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TABDIALOG.TEXT
 msgid  "Format Cells"
 msgstr "Μορφοποίηση κελιών"
@@ -2015,21 +1703,13 @@ msgstr "Γραμματοσειρά"
 msgid  "Font Effects"
 msgstr "Εφέ γραμματοσειράς"
 
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-msgid  "Borders"
-msgstr "Περιγράμματα"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-msgid  "Background"
-msgstr "Φόντο"
-
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PUSHBUTTON.TEXT
 msgid  "Return"
 msgstr "Εκτέλεση"
 
 #: dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.1.FIXEDTEXT.TEXT
 msgid  "The following columns are currently hidden. Please mark the fields you want to show and choose OK."
-msgstr "Οι ακόλουθες στήλες είναι κρυφές προς το παρόν. Παρακαλώ επιλέξτε αυτές που επιθυμείτε να εμφανιστούν και πατήστε στη συνέχεια το 'OK'"
+msgstr "Οι ακόλουθες στήλες είναι κρυφές προς το παρόν. Παρακαλώ επιλέξτε αυτές που επιθυμείτε να εμφανιστούν και πατήστε στη συνέχεια το OK."
 
 #: dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.CANCELBUTTON.TEXT
 msgid  "Show columns"
@@ -2037,7 +1717,7 @@ msgstr "Εμφάνιση στηλών"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.MODELESSDIALOG.TEXT
 msgid  "Spellcheck: "
-msgstr "Ορθογραφικός έλεγχος:"
+msgstr "Ορθογραφικός έλεγχος: "
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_LANGUAGE.FIXEDTEXT.TEXT
 msgid  "Text languag~e"
@@ -2045,7 +1725,7 @@ msgstr "Γλώσσα κειμέ~νου"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_NOTINDICT.FIXEDTEXT.TEXT
 msgid  "~Not in dictionary"
-msgstr "~Δεν είναι στο λεξικό."
+msgstr "~Δεν είναι στο λεξικό"
 
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_SUGGESTION.FIXEDTEXT.TEXT
 msgid  "~Suggestions"
@@ -2103,10 +1783,6 @@ msgstr "Κ~λείσιμο"
 msgid  "Resu~me"
 msgstr "Συνέ~χεια"
 
-#: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.STRING.TEXT
-msgid  "(no suggestions)"
-msgstr "(δεν υπάρχουν προτάσεις)"
-
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.STRING.TEXT
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
 msgstr "Ορθογραφία: $LANGUAGE ($LOCATION)"
@@ -2159,10 +1835,6 @@ msgstr "Γραμματοσειρά"
 msgid  "Font Effects"
 msgstr "Εφέ γραμματοσειράς"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-msgid  "Position"
-msgstr "Θέση"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PAGEITEM.TEXT
 msgid  "Asian Layout"
 msgstr "Ασιατική διάταξη"
@@ -2183,21 +1855,9 @@ msgstr "Ροή κειμένου"
 msgid  "Asian Typography"
 msgstr "Ασιατική τυπογραφία"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
-msgstr "Φόντο"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.MODALDIALOG.TEXT
-msgid  "Attributes"
-msgstr "Ιδιότητες"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FIXEDTEXT.TEXT
 msgid  "~Options"
 msgstr "~Επιλογές"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.MODALDIALOG.TEXT
-msgid  "Similarity Search"
-msgstr "Αναζήτηση ομοιότητας"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FIXEDTEXT.TEXT
 msgid  "~Exchange characters"
@@ -2223,21 +1883,13 @@ msgstr "Ρυθμίσεις"
 msgid  "Paste Special"
 msgstr "Ειδική επικόλληση"
 
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FIXEDTEXT.TEXT
-msgid  "Source:"
-msgstr "Προέλευση:"
-
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RADIOBUTTON.TEXT
 msgid  "~Insert as"
 msgstr "~Εισαγωγή ως"
 
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RADIOBUTTON.TEXT
-msgid  "Link to"
-msgstr "Σύνδεση σε"
-
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CHECKBOX.TEXT
 msgid  "~As icon"
-msgstr "Ω~ς εικονίδιο"
+msgstr "~Ως εικονίδιο"
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.PB_CHANGE_ICON.PUSHBUTTON.TEXT
 msgid  "~Other Icon..."
@@ -2246,10 +1898,6 @@ msgstr "Άλλο ~εικονίδιο..."
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.FL_CHOICE.FIXEDLINE.TEXT
 msgid  "Selection"
 msgstr "Επιλογή"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.STRING.TEXT
-msgid  "Object"
-msgstr "Αντικείμενο"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.MODALDIALOG.TEXT
 msgid  "Edit Links"
@@ -2266,10 +1914,6 @@ msgstr "Στοιχείο:"
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE.FIXEDTEXT.TEXT
 msgid  "Type"
 msgstr "Τύπος"
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FIXEDTEXT.TEXT
-msgid  "Status"
-msgstr "Κατάσταση"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CANCELBUTTON.TEXT
 msgid  "~Close"
@@ -2423,10 +2067,6 @@ msgstr "Ό~χι"
 msgid  "Au~tomatic"
 msgstr "Αυ~τόματο"
 
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FIXEDLINE.TEXT
-msgid  "Scroll bar"
-msgstr "Γραμμή κύλισης"
-
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RADIOBUTTON.TEXT
 msgid  "On"
 msgstr "Ναι"
@@ -2434,10 +2074,6 @@ msgstr "Ναι"
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_OFF.RADIOBUTTON.TEXT
 msgid  "Off"
 msgstr "Όχι"
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FIXEDLINE.TEXT
-msgid  "Border"
-msgstr "Περίγραμμα"
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FIXEDTEXT.TEXT
 msgid  "~Width"
@@ -2463,21 +2099,9 @@ msgstr "Απόσταση από περιεχόμενα"
 msgid  "Select File for Floating Frame"
 msgstr "Επιλογή αρχείου για πλωτό πλαίσιο"
 
-#: dialogs/svuidlg.src#STR_EDIT_APPLET.STRING.TEXT
-msgid  "Edit Applet"
-msgstr "Επεξεργασία μικροεφαρμογής"
-
-#: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.MODALDIALOG.TEXT
-msgid  "Record Number"
-msgstr "Αριθμός εγγραφής"
-
 #: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FIXEDTEXT.TEXT
 msgid  "go to record"
 msgstr "μετάβαση στην εγγραφή"
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MODALDIALOG.TEXT
-msgid  "Thesaurus"
-msgstr "Θησαυρός λέξεων"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_WORD.FIXEDTEXT.TEXT
 msgid  "~Current word"
@@ -2494,10 +2118,6 @@ msgstr "Ενα~λλακτικές"
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_REPL.FIXEDTEXT.TEXT
 msgid  "~Replace with"
 msgstr "Αντικατάσταση μ~ε"
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.BTN_THES_OK.OKBUTTON.TEXT
-msgid  "Replace"
-msgstr "Αντικατάσταση"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.STR_ERR_TEXTNOTFOUND.STRING.TEXT
 msgid  "No alternatives found."
@@ -2562,11 +2182,6 @@ msgstr "Η ομαδοποίηση συνδέσεων ενεργοποιήθηκ�
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "Γνωστά προγράμματα οδήγησης στο %PRODUCTNAME"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Current driver:"
-msgstr "Τρέχον πρόγρ. οδήγησης:"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Enable pooling for this driver"
@@ -2577,11 +2192,6 @@ msgstr "Ενεργοποίηση ομαδοποίησης για αυτό το �
 msgid  "Timeout (seconds)"
 msgstr "Χρονικό όριο (δευτερόλ.)"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Driver name"
-msgstr "Όνομα προγράμματος οδήγησης"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.STRING.TEXT
 #, fuzzy
 msgid  "Pool"
@@ -2591,16 +2201,6 @@ msgstr "Ομάδα"
 #, fuzzy
 msgid  "Timeout"
 msgstr "Χρονικό όριο"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.STRING.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "Ναι"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.STRING.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "Όχι"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.TABPAGE.TEXT
 #, fuzzy
@@ -2618,9 +2218,8 @@ msgid  "Database file"
 msgstr "Αρχείο βάσης δεδομένων"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~New..."
-msgstr "Δημιουργία."
+msgstr "~Νέο..."
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
@@ -2633,38 +2232,46 @@ msgid  "~Delete"
 msgstr "~Διαγραφή"
 
 #: options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_URL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Database file"
 msgstr "Αρχείο ~βάσης δεδομένων"
 
 #: options/doclinkdialog.src#DLG_DOCUMENTLINK.PB_BROWSEFILE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Browse..."
 msgstr "Ανα~ζήτηση..."
 
 #: options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Registered ~name"
 msgstr "Δηλωμένο ό~νομα"
 
 #: options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_EDIT_LINK.STRING.TEXT
+#, fuzzy
 msgid  "Edit Database Link"
 msgstr "Επεξεργασία σύνδεσης βάσης δεδομένων"
 
 #: options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_NEW_LINK.STRING.TEXT
+#, fuzzy
 msgid  "Create Database Link"
 msgstr "Δημιουργία σύνδεσης στη βάση δεδομένων"
 
 #: options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.STRING.TEXT
 msgid  "The file\n$file$\ndoes not exist."
-msgstr "Το αρχείο\n\"$file$\"\nδεν υπάρχει."
+msgstr "Το αρχείο\n$file$\nδεν υπάρχει."
 
 #: options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The file\n$file$\ndoes not exist in the local file system."
 msgstr "Το αρχείο\n$file$\nδεν υπάρχει στο τοπικό σας σύστημα."
 
 #: options/doclinkdialog.src#STR_NAME_CONFLICT.STRING.TEXT
+#, fuzzy
 msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
 msgstr "Το όνομα '$file$' χρησιμοποιείται ήδη για άλλη βάση δεδομένων.\nΠαρακαλώ χρησιμοποιήστε ένα άλλο όνομα."
 
 #: options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to delete the entry?"
 msgstr "Θέλετε να γίνει διαγραφή της εγγραφής;"
 
@@ -2682,11 +2289,6 @@ msgstr "Γραμ~ματοσειρά"
 #, fuzzy
 msgid  "Re~place with"
 msgstr "Αντικατάστα~ση με"
-
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Εφαρμογή"
 
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.TOOLBOXITEM.TEXT
 #, fuzzy
@@ -2713,52 +2315,42 @@ msgstr "Μόνο μη-αναλογικές γραμματοσειρές"
 msgid  "~Size"
 msgstr "Μέγε~θος"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "Always"
-msgstr "Πάντα"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.STRING.TEXT
-#, fuzzy
 msgid  "Screen only"
-msgstr "Μόνο οθόνη..."
+msgstr "Μόνο οθόνη"
 
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER3.STRING.TEXT
 #, fuzzy
 msgid  "Font"
 msgstr "Γραμματοσειρά"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.STRING.TEXT
-#, fuzzy
-msgid  "Replace with"
-msgstr "Αντικατάσταση με"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.STRING.TEXT
 #, fuzzy
 msgid  "Automatic"
 msgstr "Αυτόματα"
 
-#: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FIXEDLINE.TEXT
-msgid  "Default text direction"
-msgstr "Προεπιλεγμένη κατεύθυνση κειμένου"
-
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Left-to-right"
 msgstr "Α~ριστερά προς τα δεξιά"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_RIGHT2LEFT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Right-to-left"
 msgstr "~Δεξιά πρός αριστερά"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_SHEETVIEW.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Sheet view"
 msgstr "Προβολή φύλλου"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_RIGHT2LEFT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Right-~to-left"
 msgstr "Δε~ξιά πρός αριστερά"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_CURRENTDOCONLY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Current document only"
 msgstr "~Τρέχον έγγραφο μόνο"
 
@@ -2791,11 +2383,6 @@ msgstr "Να επιτρέπεται το κινούμενο ~κείμενο"
 #, fuzzy
 msgid  "~Help tips disappear after "
 msgstr "~Οι συμβουλές βοήθειας να εξαφανίζονται μετά από "
-
-#: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "seconds"
-msgstr "δευτερόλεπτα"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FIXEDLINE.TEXT
 #, fuzzy
@@ -2883,14 +2470,8 @@ msgid  "Without user-defined line break symbols"
 msgstr "Χωρίς προσωπικούς χαρακτήρες αλλαγής σειράς"
 
 #: options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Proxy"
-msgstr "Διαμεσολαβητής (proxy)"
-
-#: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TABPAGE.TEXT
-#, fuzzy
-msgid  "Default Colors"
-msgstr "Βασικά χρώματα"
+msgstr "Διαμεσολαβητής-proxy"
 
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FIXEDLINE.TEXT
 #, fuzzy
@@ -2912,87 +2493,58 @@ msgstr "~Προεπιλογή"
 msgid  "Data Series $(ROW)"
 msgstr "Σειρά δεδομένων $(ROW)"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FIXEDLINE.TEXT
-msgid  "Color scheme"
-msgstr "Σχήμα χρωμάτων"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FIXEDTEXT.TEXT
-msgid  "Scheme"
-msgstr "Σχήμα"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Save..."
 msgstr "Αποθήκευση..."
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_DELETESCHEME.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Delete"
 msgstr "Διαγραφή"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FIXEDLINE.TEXT
-msgid  "Custom colors"
-msgstr "Προσαρμοσμένα χρώματα"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.STRING.TEXT
+#, fuzzy
 msgid  "On"
 msgstr "Ναι"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_UIELEM.STRING.TEXT
+#, fuzzy
 msgid  "User interface elements"
 msgstr "Στοιχεία γραφικού περιβάλλοντος"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_COLSET.STRING.TEXT
+#, fuzzy
 msgid  "Color setting"
 msgstr "Ρύθμιση χρώματος"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_PREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Preview"
 msgstr "Προεπισκόπηση"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FIXEDTEXT.TEXT
-msgid  "General"
-msgstr "Γενικά"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FIXEDTEXT.TEXT
-msgid  "Document background"
-msgstr "Φόντο εγγράφου"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CHECKBOX.TEXT
-msgid  "Text boundaries"
-msgstr "Όρια κειμένου"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FIXEDTEXT.TEXT
-msgid  "Application background"
-msgstr "Φόντο εφαρμογής"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CHECKBOX.TEXT
-msgid  "Object boundaries"
-msgstr "Όρια αντικειμένου"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Table boundaries"
 msgstr "Όρια πίνακα"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_FONTCOLOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Font color"
 msgstr "Χρώμα γραμματοσειράς"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CHECKBOX.TEXT
-msgid  "Unvisited links"
-msgstr "Μη αναγνωσμένοι σύνδεσμοι"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CHECKBOX.TEXT
-msgid  "Visited links"
-msgstr "Αναγνωσμένοι σύνδεσμοι"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "AutoSpellcheck"
 msgstr "Αυτόματος ορθογραφικός έλεγχος"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SMARTTAGS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Smart Tags"
 msgstr "Έξυπνες ετικέτες"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Text Document"
 msgstr "Έγγραφο κειμένου"
 
@@ -3002,90 +2554,76 @@ msgid  "Grid"
 msgstr "Πλέγμα"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERFIELDSHADINGS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Field shadings"
 msgstr "Σκίαση πεδίων"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERIDXSHADINGS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Index and table shadings"
 msgstr "Σκιάσεις πεδίου και πίνακα"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERSCRIPTINDICATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Script indicator"
 msgstr "Ένδειξη δέσμης εντολών"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERSECTIONBOUNDARIES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Section boundaries"
 msgstr "Όρια ενότητας"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FIXEDTEXT.TEXT
-msgid  "Page and column breaks"
-msgstr "Αλλαγές σελίδας και στήλης"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Direct cursor"
 msgstr "Άμεσος δρομέας"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTML.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "HTML Document"
 msgstr "Έγγραφο HTML"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLSGML.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "SGML syntax highlighting"
 msgstr "Επισήμανση σύνταξης SGML"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLCOMMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comment highlighting"
 msgstr "Επισήμανση σχολίων"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLKEYWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Keyword highlighting"
 msgstr "Επισήμανση λέξης - κλειδί"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FIXEDTEXT.TEXT
-msgid  "Text"
-msgstr "Κείμενο"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FIXEDTEXT.TEXT
-msgid  "Spreadsheet"
-msgstr "Υπολογιστικό φύλλο"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FIXEDTEXT.TEXT
-msgid  "Grid lines"
-msgstr "Γραμμές πλέγματος"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Page breaks"
 msgstr "Αλλαγές σελίδων"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKMANUAL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Manual page breaks"
 msgstr "Χειροκίνητες αλλαγές σελίδων"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKAUTO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Automatic page breaks"
 msgstr "Αυτόματες αλλαγές σελίδων"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FIXEDTEXT.TEXT
-msgid  "Detective"
-msgstr "Ανίχνευση"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FIXEDTEXT.TEXT
 msgid  "Detective error"
-msgstr "Σφάλμα Detective"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FIXEDTEXT.TEXT
-msgid  "References"
-msgstr "Παραπομπές"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FIXEDTEXT.TEXT
-msgid  "Notes background"
-msgstr "Φόντο σημειώσεων"
+msgstr "Σφάλμα ανίχνευσης"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Drawing / Presentation"
 msgstr "Σχεδίαση / Παρουσίαση"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASIC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Basic Syntax Highlighting"
 msgstr "Επισήμανση βασικής σύνταξης"
 
@@ -3110,121 +2648,106 @@ msgid  "String"
 msgstr "Συμβολοσειρά"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICOPERATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Operator"
 msgstr "Τελεστής"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICKEYWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Reserved expression"
 msgstr "Κρατημένη έκφραση"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FIXEDTEXT.TEXT
-msgid  "Error"
-msgstr "Σφάλμα"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FIXEDTEXT.TEXT
-msgid  "SQL Syntax Highlighting"
-msgstr "Επισήμανση σύνταξης SQL"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Keyword"
 msgstr "Λέξη-κλειδί"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLPARAMETER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Parameter"
 msgstr "Παράμετρος"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_EXTENSION.STRING.TEXT
+#, fuzzy
 msgid  "Colorsettings of the Extensions"
 msgstr "Ρυθμίσεις χρωμάτων για επεκτάσεις"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_SPELL_CHECK_HIGHLIGHTING.STRING.TEXT
 msgid  "Spell check highlighting"
-msgstr "Επισήμανση ορθογραφικού ελέγχου "
+msgstr "Επισήμανση ορθογραφικού ελέγχου"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_GRAMMAR_CHECK_HIGHLIGHTING.STRING.TEXT
 msgid  "Grammar check highlighting"
-msgstr "Επισήμανση γραμματικού ελέγχου "
+msgstr "Επισήμανση γραμματικού ελέγχου"
 
 #: options/optcolor.src#RID_SVXQB_DELETE_COLOR_CONFIG.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you really want to delete the color scheme?"
 msgstr "Θέλετε σίγουρα να διαγράψετε το στυλ χρώματος;"
 
 #: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Color Scheme Deletion"
 msgstr "Διαγραφή στυλ χρώματος"
 
 #: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE1.STRING.TEXT
+#, fuzzy
 msgid  "Save scheme"
 msgstr "Αποθήκευση στυλ"
 
-#: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.STRING.TEXT
-msgid  "Name of color scheme"
-msgstr "Όνομα του σχήματος χρωμάτων"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TABPAGE.TEXT
+#, fuzzy
 msgid  "Complex Text Layout"
 msgstr "Διάταξη σύνθετης γραφής"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_SEQUENCECHECKING.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Sequence checking"
 msgstr "Έλεγχος ακολουθίας"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_SEQUENCECHECKING.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use se~quence checking"
 msgstr "Χρήση ελέ~γχου ακολουθίας"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_RESTRICTED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Restricted"
 msgstr "Με περιορισμό"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_TYPE_REPLACE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Type and replace"
 msgstr "~Πληκτρολόγηση και αντικατάσταση"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_CURSORCONTROL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Cursor control"
 msgstr "Έλεγχος δρομέα"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FIXEDTEXT.TEXT
-msgid  "Movement"
-msgstr "Κίνηση"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Lo~gical"
 msgstr "Λο~γική"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_VISUAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Visual"
 msgstr "~Οπτική"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_GENERAL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "General options"
 msgstr "Γενικές επιλογές"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_NUMERALS.FIXEDTEXT.TEXT
 msgid  "~Numerals"
-msgstr "~Αριθμητικά (μόνο σε κείμενο)"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM1.STRINGLIST.ITEM
-msgid  "Arabic"
-msgstr "Αραβικά"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM2.STRINGLIST.ITEM
-msgid  "Hindi"
-msgstr "Ινδικά"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM3.STRINGLIST.ITEM
-msgid  "System"
-msgstr "Σύστημα"
+msgstr "~Αριθμητικά"
 
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Context"
 msgstr "Περιβάλλον"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New Dictionary"
-msgstr "Δημιουργία"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3240,16 +2763,6 @@ msgstr "~Γλώσσα"
 #, fuzzy
 msgid  "~Exception (-)"
 msgstr "Εξ~αίρεση (-)"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionary"
-msgstr "Λεξικό"
-
-#: options/optdict.src#RID_SFXDLG_EDITDICT.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Edit Custom Dictionary"
-msgstr "Επεξεργασία προσαρμοσμένου λεξικού"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3267,9 +2780,8 @@ msgid  "Replace ~By:"
 msgstr "Αντικατά~σταση από:"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.PB_NEW_REPLACE.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~New"
-msgstr "Δημιουργία"
+msgstr "~Νέο"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.PB_DELETE_REPLACE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -3292,9 +2804,8 @@ msgid  "The specified name already exists.\nPlease enter a new name."
 msgstr "Το όνομα υπάρχει ήδη.\nΠαρακαλώ επιλέξτε κάποιο άλλο όνομα."
 
 #: options/optdict.src#RID_SFXQB_SET_LANGUAGE.QUERYBOX.MESSAGE
-#, fuzzy
 msgid  "Do you want to change the '%1' dictionary language?"
-msgstr "Θέλετε να αλλάξετε την γλώσσα του λεξικού '%1';"
+msgstr "Θέλετε να αλλάξετε την γλώσσα '%1' του λεξικού;"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_WORD.FIXEDLINE.TEXT
 #, fuzzy
@@ -3337,9 +2848,8 @@ msgid  "Microsoft PowerPoint 97/2000/XP"
 msgstr "Microsoft PowerPoint 97/2000/XP"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_CODE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Load Ba~sic code"
-msgstr "Φόρτωση κώδικα Ba~sic "
+msgstr "Φόρτωση κώδικα Ba~sic"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_STG.CHECKBOX.TEXT
 #, fuzzy
@@ -3367,29 +2877,20 @@ msgid  "[S]: Convert and save the object"
 msgstr "[S]: Μετατροπή και αποθήκευση αντικειμένου"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_MATH.STRING.TEXT
-#, fuzzy
 msgid  "MathType to %PRODUCTNAME Math or reverse"
-msgstr "στο Math ή"
+msgstr "MathType στο %PRODUCTNAME Math ή αντίστροφα"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_WRITER.STRING.TEXT
-#, fuzzy
 msgid  "WinWord to %PRODUCTNAME Writer or reverse"
-msgstr "στο ή"
+msgstr "WinWord στο %PRODUCTNAME Writer ή αντίστροφα"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_CALC.STRING.TEXT
-#, fuzzy
 msgid  "Excel to %PRODUCTNAME Calc or reverse"
-msgstr "Excel στο ή"
+msgstr "Excel στο %PRODUCTNAME Calc ή αντίστροφα"
 
 #: options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_IMPRESS.STRING.TEXT
-#, fuzzy
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
-msgstr "PowerPoint στο ή"
-
-#: options/optgdlg.src#OFA_TP_MISC.FL_HELP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "Βοήθεια"
+msgstr "PowerPoint στο %PRODUCTNAME Impress ή αντίστροφα"
 
 #: options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CHECKBOX.TEXT
 #, fuzzy
@@ -3415,11 +2916,6 @@ msgstr "Επανα~φορά βοηθού"
 #, fuzzy
 msgid  "Help ~formatting"
 msgstr "Μορφοποίηση βοή~θειας"
-
-#: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "Προεπιλογή"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -3462,9 +2958,8 @@ msgid  "~Printing sets \"document modified\" status"
 msgstr "~Η εκτύπωση ορίζει την κατάσταση \"το έγγραφο τροποποιήθηκε\""
 
 #: options/optgdlg.src#OFA_TP_MISC.FL_TWOFIGURE.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Year (two digits)"
-msgstr "Έτος (Δύο ψηφία)"
+msgstr "Έτος (δύο ψηφία)"
 
 #: options/optgdlg.src#OFA_TP_MISC.FT_INTERPRET.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3486,11 +2981,6 @@ msgstr "Διάλογοι εκτύπωσης"
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "~Χρήση παραθύρων διαλόγου του %PRODUCTNAME"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "User Interface"
-msgstr "Περιβάλλον χρήσης"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Sc~aling"
@@ -3511,16 +3001,6 @@ msgstr "Μέγεθος εικονιδίων"
 msgid  "Automatic"
 msgstr "Αυτόματα"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small"
-msgstr "Μικρό"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Large"
-msgstr "Μεγάλο"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Galaxy (default)"
@@ -3530,11 +3010,6 @@ msgstr "Γαλαξίας (προεπιλογή)"
 #, fuzzy
 msgid  "High Contrast"
 msgstr "Υψηλή αντίθεση"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Industrial"
-msgstr "Industrial"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM5.STRINGLIST.ITEM
 #, fuzzy
@@ -3555,11 +3030,6 @@ msgstr "Εξομάλυνση γραμματοσειράς οθόνης"
 #, fuzzy
 msgid  "from"
 msgstr "από"
-
-#: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Pixels"
-msgstr "Εικονοστοιχεία"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FIXEDLINE.TEXT
 #, fuzzy
@@ -3611,20 +3081,10 @@ msgstr "Χρήση επιτάχυνσης υλικού"
 msgid  "Use Anti-Aliasing"
 msgstr "Χρήση εξομάλυνσης γραμματοσειρών"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Mouse"
-msgstr "Ποντίκι"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Mouse positioning"
 msgstr "Τοποθέτηση ποντικιού"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default button"
-msgstr "Προεπιλεγμένο κουμπί"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -3645,11 +3105,6 @@ msgstr "Μεσαίο πλήκτρο ποντικιού"
 #, fuzzy
 msgid  "No function"
 msgstr "Καμία συνάρτηση"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Automatic scrolling"
-msgstr "Αυτόματη κύλιση"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -3687,14 +3142,12 @@ msgid  "Locale setting"
 msgstr "Τοπικές ρυθμίσεις"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.FT_DECIMALSEPARATOR.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Decimal separator key"
-msgstr "~Διαχωριστικό δεκαδικών"
+msgstr "Διαχωριστικό δεκαδικών"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_DECIMALSEPARATOR.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Same as locale setting ( %1 )"
-msgstr "'Ι~διο όπως οι ρυθμίσεις γλώσσας ( %1 )"
+msgstr "Ί~διο όπως οι ρυθμίσεις γλώσσας ( %1 )"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.FT_CURRENCY.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3717,9 +3170,8 @@ msgid  "Asian"
 msgstr "Ασιατικές"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.FT_COMPLEX_LANG.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "C~TL"
-msgstr "Σύν~θετες γραφές"
+msgstr "C~TL"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_CURRENT_DOC.CHECKBOX.TEXT
 #, fuzzy
@@ -3732,83 +3184,93 @@ msgid  "Enhanced language support"
 msgstr "Εμπλουτισμένη υποστήριξη γλωσσών"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_ASIANSUPPORT.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Show UI elements for East Asia~n writings"
-msgstr "Ε~νεργή για Ασιατικές γλώσσες"
+msgstr "Εμφάνιση στοιχείων UI για Α~σιατικές γλώσσες"
 
 #: options/optgdlg.src#OFA_TP_LANGUAGES.CB_CTLSUPPORT.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Show UI elements for B~i-Directional writing"
-msgstr "Ενερ~γή για διάταξη σύνθετης γραφής (CTL)"
+msgstr "Εμφάνιση UI στοιχείων για διάταξη σύνθετης γραφής"
 
 #: options/optgdlg.src#RID_SVX_MSGBOX_LANGUAGE_RESTART.INFOBOX.MESSAGE
 #, fuzzy
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Η ρύθμιση γλώσσας του περιβάλλοντος χρήσης ενημερώθηκε και θα πραγματοποιηθεί την επόμενη φορά που θα ξεκινήσετε το %PRODUCTNAME %PRODUCTVERSION"
 
-#: options/optgenrl.src#RID_SFXPAGE_GENERAL.TABPAGE.TEXT
-msgid  "User Data"
-msgstr "Δεδομένα χρήστη"
-
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Company"
 msgstr "Ε~ταιρία"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "First/Last ~name/Initials"
 msgstr "Όνομα/Επώνυμο/Αρ~χικά"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_RUSS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Last Name/First name/Father's name/Initials"
 msgstr "Επίθετο/Όνομα/Όνομα πατέρα/Αρχικά"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_EASTERN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Last/First ~name/Initials"
 msgstr "Επώνυμο/Ό~νομα/Αρχικά"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Street"
 msgstr "Ο~δός"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET_RUSS.FIXEDTEXT.TEXT
 msgid  "Street/Apartment number"
-msgstr "Οδός/ αριθμός διαμερίσματος"
+msgstr "Οδός/Αριθμός διαμερίσματος"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_CITY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Zip/City"
 msgstr "Τ.Κ./Πόλη"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COUNTRY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Country/Region"
 msgstr "Χώρα/περιοχή"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_TITLEPOS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title/Position"
 msgstr "~Τίτλος/Θέση"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_PHONE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Tel. (Home/Work)"
 msgstr "Τηλ. (Οικία/Εργασία)"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_FAXMAIL.FIXEDTEXT.TEXT
 msgid  "Fa~x / E-mail"
-msgstr "Φα~ξ/E-mail"
+msgstr "Φα~ξ / E-mail"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.GB_ADDRESS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Address "
 msgstr "Διεύθυνση "
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.CB_USEDATA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use data for document properties"
 msgstr "Χρήση δεδομένων για τις ιδιότητες του εγγράφου"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_US_STATE.STRING.TEXT
 msgid  "City/State/Zip"
-msgstr "Πόλη/Χώρα/Τ.Κ."
+msgstr "Πόλη/Χώρα/Τ.Κ"
 
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_QUERY_REG.STRING.TEXT
+#, fuzzy
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
 msgstr "Σημειώστε ότι η οδός, ο ταχυδρομικός κώδικας και η πόλη χρησιμοποιούνται για τη δημιουργία του κλειδιού δήλωσης. Δεν θα μπορέσετε να αλλάξετε τα δεδομένα χρήστη ξανά μέχρι να ολοκληρωθεί η δήλωση. Θέλετε να τροποποιήσετε τα δεδομένα χρήστη τώρα;"
+
+#: options/optgenrl.src#RID_SVXQB_CHANGEDATA.QUERYBOX.MESSAGE
+msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgstr "Τα Δεδομένα του Χρήστη άλλαξαν.\nΘέλετε πραγματικά να αλλάξετε τα Δεδομένα σας;"
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3921,9 +3383,8 @@ msgid  "~No, I do not wish to participate"
 msgstr "Ό~χι δεν θέλω να συμμετέχω"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FL_DATA.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Tracked Data"
-msgstr "Δεδομένα υπό επιτήρηση:"
+msgstr "Δεδομένα υπό Επιτήρηση"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_REPORTS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -3931,9 +3392,8 @@ msgid  "Number of reports sent:"
 msgstr "Αριθμός αναφορών που στάλθηκαν:"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_ACTIONS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Number of tracked actions:"
-msgstr "Αριθμός επιτηρούμενων ενεργειών: "
+msgstr "Αριθμός επιτηρούμενων ενεργειών:"
 
 #: options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.PB_SHOWDATA.PUSHBUTTON.TEXT
 #, fuzzy
@@ -3952,13 +3412,15 @@ msgstr "Περισσότερες πληροφορίες"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.TABPAGE.TEXT
 msgid  "Proxy"
-msgstr "Διαμεσολαβητής (proxy)"
+msgstr "Διαμεσολαβητής-proxy"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_SETTINGS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
 msgstr "Ρυθμίσεις"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_PROXYMODE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Proxy s~erver"
 msgstr "~Διαμεσολαβητής"
 
@@ -3967,27 +3429,22 @@ msgstr "~Διαμεσολαβητής"
 msgid  "None"
 msgstr "Κανένα"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM2.STRINGLIST.ITEM
-msgid  "System"
-msgstr "Σύστημα"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM3.STRINGLIST.ITEM
-msgid  "Manual"
-msgstr "Χειροκίνητα"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.STRING.TEXT
+#, fuzzy
 msgid  "Use browser settings"
 msgstr "Χρήση των ρυθμίσεων του προγράμματος περιήγησης"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PROXY.FIXEDTEXT.TEXT
 msgid  "HT~TP proxy"
-msgstr "Διαμεσολαβητής  H~TTP"
+msgstr "Διαμεσολαβητής H~TTP"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PORT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Port"
 msgstr "~Θύρα"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PROXY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "HTTP~S proxy"
 msgstr "HTTP~S proxy"
 
@@ -3997,202 +3454,205 @@ msgid  "P~ort"
 msgstr "Θύρ~α"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PROXY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~FTP proxy"
 msgstr "Pr~oxy - FTP"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PROXY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~SOCKS proxy"
 msgstr "Pro~xy SOCKS"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PORT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Po~rt"
 msgstr "Θύρ~α"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_NOPROXYFOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~No proxy for:"
 msgstr "~Χωρίς διαμεσολαβητή για:"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FIXEDTEXT.TEXT
-msgid  "Separator ;"
-msgstr "Διαχωριστικό ;"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FIXEDLINE.TEXT
-msgid  "DNS server"
-msgstr "Διακομιστής DNS"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Automatic"
 msgstr "Α~υτόματα"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_MANUAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Manual"
 msgstr "~Χειροκίνητα"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_0.STRING.TEXT
+#, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 0 and 255."
 msgstr "δεν είναι έγκυρη καταχώριση για αυτό το πεδίο. Παρακαλώ εισάγετε μια τιμή μεταξύ του 0 και 255."
 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_1.STRING.TEXT
+#, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
 msgstr "δεν είναι έγκυρη καταχώριση για αυτό το πεδίο. Παρακαλώ εισάγετε μια τιμή μεταξύ του 1 και 255."
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TABPAGE.TEXT
-msgid  "Search"
-msgstr "Αναζήτηση"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Search in"
 msgstr "Αναζήτηση σε"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
 msgstr "Ό~νομα"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type"
 msgstr "Τύπος"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_AND.RADIOBUTTON.TEXT
 msgid  "~And"
-msgstr "Και"
+msgstr "~Και"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Or"
 msgstr "~Είτε"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_EXACT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "E~xact"
 msgstr "Α~κριβώς"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_URL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Prefix"
 msgstr "~Πρόθημα"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_POSTFIX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Su~ffix"
 msgstr "Κατάλη~ξη"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEPARATOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Separator"
 msgstr "~Διαχωριστικό"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_CASE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Case match"
 msgstr "~Στυλ γραφής"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM2.STRINGLIST.ITEM
-msgid  "Upper"
-msgstr "Κεφαλαία"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM3.STRINGLIST.ITEM
-msgid  "Lower"
-msgstr "Πεζά"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "N~ew"
 msgstr "~Δημιουργία"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
 msgstr "Προσ~θήκη"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_CHANGE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Modify"
 msgstr "Τ~ροποποίηση"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Διαγραφή"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.MSG_MODIFY.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to accept the current modification?"
 msgstr "Θέλετε να αποδεχτείτε την τρέχουσα τροποποίηση;"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TABPAGE.TEXT
-msgid  "Security"
-msgstr "Ασφάλεια"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Security options and warnings"
 msgstr "Επιλογές ασφαλείας και προειδοποιήσεις"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_SECURITYOPTIONS.FIXEDTEXT.TEXT
 msgid  "Adjust security related options and define warnings for hidden information in documents."
-msgstr "Ρύθμιση επιλογών σχετικών με την ασφάλεια και προσδιορισμός προειδοποιήσεων για κρυφές πληροφορίες σε έγγραφα"
+msgstr "Ρύθμιση επιλογών σχετικών με την ασφάλεια και προσδιορισμός προειδοποιήσεων για κρυφές πληροφορίες σε έγγραφα."
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_SECURITYOPTIONS.PUSHBUTTON.TEXT
 msgid  "Options..."
-msgstr "Επιλογές."
+msgstr "Επιλογές..."
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_PASSWORDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Passwords for web connections"
 msgstr "Κωδικοί πρόσβασης για διαδικτυακές συνδέσεις"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_SAVEPASSWORDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Persistently save passwords for web connections"
 msgstr "Μόνιμη αποθήκευση κωδικών για συνδέσεις ιστού"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_CONNECTIONS.PUSHBUTTON.TEXT
 msgid  "Connections..."
-msgstr "Συνδέσεις"
+msgstr "Συνδέσεις..."
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_MASTERPASSWORD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Protected by a master password (recommended)"
 msgstr "Προστασία από ένα κύριο κωδικό (συνιστάται)"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MASTERPASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Passwords are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
 msgstr "Οι κωδικοί είναι προστατευμένοι με έναν κύριο κωδικό. Θα σας ζητηθεί να τους εισάγετε σε κάθε συνεδρία, εάν το %PRODUCTNAME τους ανακτεί από την λίστα των προστατευμένων κωδικών."
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MASTERPASSWORD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Master Password..."
 msgstr "Κύριος κωδικός..."
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FIXEDLINE.TEXT
-msgid  "Macro security"
-msgstr "Ασφάλεια μακροεντολών"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FIXEDTEXT.TEXT
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
-msgstr "Ρύθμιση του επιπέδου ασφαλείας για την εκτέλεση των μακροεντολών"
+msgstr "Ρύθμιση του επιπέδου ασφαλείας για την εκτέλεση των μακροεντολών."
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MACROSEC.PUSHBUTTON.TEXT
 msgid  "Macro Security..."
-msgstr "Ασφάλεια μακροε/λών"
+msgstr "Ασφάλεια μακροε/λών..."
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.STRING.TEXT
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr "Η απενεργοποίηση της λειτουργίας μόνιμης αποθήκευσης κωδικών θα διαγράψει την λίστα των κωδικών που είναι αποθηκευμένοι και θα μηδενίσει τον κύριο κωδικό.\n\nΕίστε σίγουρος/η ότι θέλετε να διαγράψετε την λίστα και να μηδενίσετε τον κύριο κωδικό?"
+msgstr "Η απενεργοποίηση της λειτουργίας μόνιμης αποθήκευσης κωδικών θα διαγράψει την λίστα των κωδικών που είναι αποθηκευμένοι και θα μηδενίσει τον κύριο κωδικό.\n\nΕίστε σίγουρος/η ότι θέλετε να διαγράψετε την λίστα και να μηδενίσετε τον κύριο κωδικό;"
+
+#: options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ERRORBOX.MESSAGE
+msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
+msgstr "Μη έγκυρη τιμή!\n\nΗ μέγιστη τιμή αριθμού θύρας είναι 65535."
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
 msgstr "Παρακαλώ προσέξτε ότι με την απενεργοποίηση της Java\nγίνεται και απενεργοποίηση και της Javascript.\n\nΘέλετε να γίνει απενεργοποίηση της Java;"
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Don't show warning again"
 msgstr "~Να μην εμφανιστεί ξανά αυτό το μήνυμα"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_MAIL.FL_MAIL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Sending documents as e-mail attachments"
 msgstr "Αποστολή εγγράφων ως συνημμένα στο e-mail"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_MAIL.FT_MAILERURL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~E-mail program"
 msgstr "Εφαρμογή η~λ. αλληλογραφίας"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_MAIL.STR_DEFAULT_FILENAME.STRING.TEXT
+#, fuzzy
 msgid  "All files (*.*)"
 msgstr "Όλα τα αρχεία (*.*)"
 
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TABPAGE.TEXT
-#, fuzzy
-msgid  "Java"
-msgstr "Java"
-
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Java options"
-msgstr "Επιλογές Java"
+msgstr "Επιλογές java"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.CB_JAVA_ENABLE.CHECKBOX.TEXT
 #, fuzzy
@@ -4218,11 +3678,6 @@ msgstr "~Παράμετροι..."
 #, fuzzy
 msgid  "~Class Path..."
 msgstr "~Διαδρομή κλάσης..."
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.STRING.TEXT
-#, fuzzy
-msgid  "Location: "
-msgstr "Τοποθεσία: "
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.STRING.TEXT
 #, fuzzy
@@ -4255,9 +3710,8 @@ msgid  "Java Start Parameters"
 msgstr "Παράμετροι εκκίνησης Java"
 
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_PARAMETER.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Java start ~parameter"
-msgstr "~Παράμετρος εκκίνησης Java"
+msgstr "~Παράμετρος εκκίνησης java"
 
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_ASSIGN.PUSHBUTTON.TEXT
 #, fuzzy
@@ -4269,20 +3723,10 @@ msgstr "~Ανάθεση"
 msgid  "Assig~ned start parameters"
 msgstr "Αντιστοί~χιση παραμέτρων εκκίνησης"
 
-#: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "For example: -Dmyprop=c:\\program files\\java"
-msgstr "Για παράδειγμα: -Dmyprop=c:\\program files\\java"
-
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Remove"
 msgstr "~Αφαίρεση"
-
-#: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Class Path"
-msgstr "Διαδρομή κλάσης"
 
 #: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4299,93 +3743,114 @@ msgstr "Προσ~θήκη αρχείου..."
 msgid  "Add ~Folder"
 msgstr "Προσθήκη ~φάκελου"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FIXEDLINE.TEXT
-msgid  "Treat as equal"
-msgstr "Χωρίς διάκριση"
+#: options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ERRORBOX.MESSAGE
+msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+msgstr "Ο φάκελος που επιλέξατε δεν περιέχει ένα Java runtime environment.\nΠαρακαλώ επιλέξτε ένα διαφορετικό φάκελο."
+
+#: options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ERRORBOX.MESSAGE
+msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
+msgstr "Το Java runtime environment που επιλέξατε δεν είναι η απαιτούμενη έκδοση.\nΠαρακαλώ επιλέξτε ένα διαφορετικό φάκελο."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WARNINGBOX.MESSAGE
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
+msgstr "Για να λειτουργήσει σωστά το επιλεγμένο Java runtime environment, θα πρέπει να επανεκκινηθεί το %PRODUCTNAME.\nΠαρακαλώ επανεκκινήστε το %PRODUCTNAME τώρα."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WARNINGBOX.MESSAGE
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
+msgstr "Θα πρέπει να επανεκκινήσετε το %PRODUCTNAME, για να εφαρμοσθούν οι τροποποιημένες τιμές.\nΠαρακαλώ επανεκκινήστε το %PRODUCTNAME τώρα."
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~uppercase/lowercase"
 msgstr "~κεφαλαία/πεζά"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_FULL_HALF_WIDTH.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~full-width/half-width forms"
 msgstr "φόρμες κα~νονικού/μισού πλάτους"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HIRAGANA_KATAKANA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~hiragana/katakana"
 msgstr "~hiragana/katakana"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CONTRACTIONS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~contractions (yo-on, sokuon)"
 msgstr "~συναιρέσεις (yo-on, sokuon)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_MINUS_DASH_CHOON.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~minus/dash/cho-on"
 msgstr "~μείον/παύλα/cho-on"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_REPEAT_CHAR_MARKS.CHECKBOX.TEXT
 msgid  "'re~peat character' marks"
-msgstr "σημάδια \"επανα~λαμβ. χαρακτήρων\""
+msgstr "'ε~παναλαμβ. χαρακτήρων' σημάδια"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_VARIANT_FORM_KANJI.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~variant-form kanji (itaiji)"
 msgstr "~φόρμες-παραλλαγών kanji (itaiji)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_OLD_KANA_FORMS.CHECKBOX.TEXT
 msgid  "~old Kana forms"
-msgstr "~παλιές μορφές kana"
+msgstr "~παλιές μορφές Kana"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_DIZI_DUZU.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~di/zi, du/zu"
 msgstr "~di/zi, du/zu"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_BAVA_HAFA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~ba/va, ha/fa"
 msgstr "~ba/va, ha/fa"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_TSITHICHI_DHIZI.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~tsi/thi/chi, dhi/zi"
 msgstr "~tsi/thi/chi, dhi/zi"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HYUFYU_BYUVYU.CHECKBOX.TEXT
+#, fuzzy
 msgid  "h~yu/fyu, byu/vyu"
 msgstr "h~yu/fyu, byu/vyu"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_SESHE_ZEJE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~se/she, ze/je"
 msgstr "~se/she, ze/je"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_IAIYA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~ia/iya (piano/piyano)"
 msgstr "~ia/iya (piano/piyano)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_KIKU.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~ki/ku (tekisuto/tekusuto)"
 msgstr "~ki/ku (tekisuto/tekusuto)"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_PROLONGED_SOUNDMARK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "Prolon~ged vowels (ka-/kaa)"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FIXEDLINE.TEXT
-msgid  "Ignore"
-msgstr "Παράβλεψη"
-
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Pu~nctuation characters"
 msgstr "Χαρακτήρες στί~ξης"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_WHITESPACES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Whitespace characters"
 msgstr "~Χαρακτήρες κενού διαστήματος"
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_MIDDLE_DOT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Midd~le dots"
 msgstr "Τ~ελείες στη μέση"
-
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CHECKBOX.TEXT
-msgid  "Searching in Japanese"
-msgstr "Αναζήτηση στα Ιαπωνικά"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.MODALDIALOG.TEXT
 #, fuzzy
@@ -4437,11 +3902,6 @@ msgstr "Ορθογραφία"
 msgid  "Hyphenation"
 msgstr "Συλλαβισμός"
 
-#: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.STRING.TEXT
-#, fuzzy
-msgid  "Thesaurus"
-msgstr "Θησαυρός λέξεων"
-
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.STRING.TEXT
 #, fuzzy
 msgid  "Grammar"
@@ -4468,9 +3928,8 @@ msgid  "Writing aids"
 msgstr "Βοηθήματα γραφής"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_MODULES.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Available language modules"
-msgstr "Διαθέσιμα  αρθρώματα γλώσσας"
+msgstr "Διαθέσιμα αρθρώματα γλώσσας"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_MODULES_EDIT.PUSHBUTTON.TEXT
 #, fuzzy
@@ -4483,9 +3942,8 @@ msgid  "User-defined dictionaries"
 msgstr "Λεξικά χρήστη"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_NEW_DIC.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~New..."
-msgstr "Δημιουργία."
+msgstr "~Δημιουργία..."
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_EDIT_DIC.PUSHBUTTON.TEXT
 #, fuzzy
@@ -4507,25 +3965,9 @@ msgstr "Επιλογές"
 msgid  "Edi~t..."
 msgstr "Επεξε~ργασία..."
 
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.STRING.TEXT
-#, fuzzy
-msgid  "Check uppercase words"
-msgstr "Έλεγχος λέξεων με κεφαλαία"
-
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.STRING.TEXT
-#, fuzzy
 msgid  "Check words with numbers "
-msgstr "Έλεγχος λέξεων με αριθμούς"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.STRING.TEXT
-#, fuzzy
-msgid  "Check capitalization"
-msgstr "Έλεγχος κεφαλαία/πεζά"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.STRING.TEXT
-#, fuzzy
-msgid  "Check special regions"
-msgstr "Έλεγχος ειδικών περιοχών"
+msgstr "Έλεγχος λέξεων με αριθμούς "
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.STRING.TEXT
 #, fuzzy
@@ -4543,14 +3985,12 @@ msgid  "Minimal number of characters for hyphenation: "
 msgstr "Ελάχιστο μήκος λέξης για τον συλλαβισμό: "
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_PRE_BREAK.STRING.TEXT
-#, fuzzy
 msgid  "Characters before line break: "
-msgstr "Χαρακτήρες πριν την αλλαγή γραμμής:"
+msgstr "Χαρακτήρες πριν την αλλαγή γραμμής: "
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_POST_BREAK.STRING.TEXT
-#, fuzzy
 msgid  "Characters after line break: "
-msgstr "Χαρακτήρες μετά την αλλαγή γραμμής:"
+msgstr "Χαρακτήρες μετά την αλλαγή γραμμής: "
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_AUTO.STRING.TEXT
 #, fuzzy
@@ -4563,9 +4003,8 @@ msgid  "Hyphenate special regions"
 msgstr "Συλλαβισμός ειδικών περιοχών"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_MODULES_EDIT.STRING.TEXT
-#, fuzzy
 msgid  "Edit Available language modules"
-msgstr "Διαθέσιμα  αρθρώματα γλώσσας"
+msgstr "Διαχείριση διαθέσιμων λειτουργιών γλωσσών"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_DICS_EDIT_DIC.STRING.TEXT
 #, fuzzy
@@ -4574,17 +4013,12 @@ msgstr "Λεξικά χρήστη"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_OPTIONS_EDIT.STRING.TEXT
 msgid  "Edit Options"
-msgstr ""
+msgstr "Επιλογές Επεξεργασίας"
 
 #: options/optlingu.src#RID_SFXQB_DELDICT.QUERYBOX.MESSAGE
 #, fuzzy
 msgid  "Do you want to delete the dictionary?"
 msgstr "Θέλετε να διαγραφεί το λεξικό;"
-
-#: options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Undo"
-msgstr "Αναίρεση"
 
 #: options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FIXEDTEXT.TEXT
 #, fuzzy
@@ -4601,11 +4035,6 @@ msgstr "Λανθάνουσα μνήμη γραφικών"
 msgid  "Use for %PRODUCTNAME"
 msgstr "Χρήση για %PRODUCTNAME"
 
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "MB"
-msgstr "MB"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Memory per object"
@@ -4615,11 +4044,6 @@ msgstr "Μνήμη ανά αντικείμενο"
 #, fuzzy
 msgid  "Remove from memory after"
 msgstr "Κατάργηση από τη μνήμη μετά από"
-
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "hh:mm"
-msgstr "hh:mm"
 
 #: options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FIXEDLINE.TEXT
 #, fuzzy
@@ -4681,6 +4105,10 @@ msgstr "Διαδρομές που χρησιμοποιούνται από το %
 msgid  "Edit Paths: %1"
 msgstr "Επεξεργασία διαδρομών: %1"
 
+#: options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ERRORBOX.MESSAGE
+msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
+msgstr "Οι κατάλογοι διαμόρφωσης και αλληλογραφίας πρέπει να είναι διαφορετικοί.\nΠαρακαλώ επιλέξτε μια νέα διαδρομή."
+
 #: options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.STRING.TEXT
 #, fuzzy
 msgid  "Configuration"
@@ -4690,26 +4118,6 @@ msgstr "Διαμόρφωση"
 #, fuzzy
 msgid  "My Documents"
 msgstr "Τα έγγραφά μου"
-
-#: options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Graphics"
-msgstr "Γραφικά"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Icons"
-msgstr "Εικονίδια"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Palettes"
-msgstr "Παλέτες"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Backups"
-msgstr "Αντίγραφα ασφαλείας"
 
 #: options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.STRING.TEXT
 #, fuzzy
@@ -4726,40 +4134,15 @@ msgstr "Πρότυπα"
 msgid  "AutoText"
 msgstr "Αυτόματο κείμενο"
 
-#: options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Dictionaries"
-msgstr "Λεξικά"
-
-#: options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "Βοήθεια"
-
 #: options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.STRING.TEXT
 #, fuzzy
 msgid  "Gallery"
 msgstr "Συλλογή"
 
-#: options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Message Storage"
-msgstr "Αποθήκευση μηνυμάτων"
-
 #: options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.STRING.TEXT
 #, fuzzy
 msgid  "Temporary files"
 msgstr "Προσωρινά αρχεία"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.STRING.TEXT
-#, fuzzy
-msgid  "Plug-ins"
-msgstr "Πρόσθετες λειτουργίες"
-
-#: options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Folder Bookmarks"
-msgstr "Σελιδοδείκτες καταλόγων"
 
 #: options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.STRING.TEXT
 #, fuzzy
@@ -4826,11 +4209,6 @@ msgstr "Πάντα δημιουργία αντιγράφου α~σφαλείας
 msgid  "Save ~AutoRecovery information every"
 msgstr "Αποθήκευση πληροφ. α~υτόματης ανάκτησης κάθε"
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Minutes"
-msgstr "Λεπτά"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Save URLs relative to file system"
@@ -4867,9 +4245,8 @@ msgid  "1.2 Extended (recommended)"
 msgstr "1.2 Εκτεταμένο (συνιστάται)"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_NOPRETTYPRINTING.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Size optimization for ODF format"
-msgstr "Βελτιστοποίηση μεγέθους για μορφή ODF "
+msgstr "Βελτιστοποίηση μεγέθους για μορφή ODF"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_WARNALIENFORMAT.CHECKBOX.TEXT
 #, fuzzy
@@ -4900,11 +4277,6 @@ msgstr "Έγγραφο HTML"
 #, fuzzy
 msgid  "Master document"
 msgstr "Πρωτεύον έγγραφο"
-
-#: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "Υπολογιστικό φύλλο"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.STRINGLIST.ITEM
 #, fuzzy
@@ -4941,11 +4313,6 @@ msgstr "Ορθογραφικός έλεγχος"
 msgid  "~Edit..."
 msgstr "~Επεξεργασία..."
 
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Dictionaries"
-msgstr "Λεξικά"
-
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Capital words"
@@ -4960,11 +4327,6 @@ msgstr "Λέ~ξεις με αριθμούς "
 #, fuzzy
 msgid  "~Case sensitive "
 msgstr "Συμ~φωνία πεζών-κεφαλαίων "
-
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Check"
-msgstr "Έλεγχος"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TABPAGE.TEXT
 #, fuzzy
@@ -5082,9 +4444,8 @@ msgid  "Recommend password protection on saving"
 msgstr "Συνίσταται προστασία με κωδικό πρόσβασης κατά την αποθήκευση"
 
 #: options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_CTRLHYPERLINK.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Ctrl-click required to follow hyperlinks"
-msgstr "Απαιτείται Ctrl-click για το άνοιγμα υπερσυνδέσεων"
+msgstr "Απαιτείται ctrl-click για το άνοιγμα υπερσυνδέσεων"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE.MODALDIALOG.TEXT
 #, fuzzy
@@ -5132,9 +4493,8 @@ msgid  "This is where you define various global settings for spreadsheets. For e
 msgstr "Εδώ καθορίζετε διάφορες καθολικές ρυθμίσεις για υπολογιστικά φύλλα. Για παράδειγμα, μπορείτε να καθορίσετε τα περιεχόμενα που θέλετε να εμφανίζονται και την κατεύθυνση προς την οποία θα κινηθεί ο δρομέας αφού εισάγετε δεδομένα σε ένα κελί. Καθορίζετε επίσης λίστες ταξινόμησης, τον αριθμό των δεκαδικών ψηφίων που εμφανίζονται κ.λπ."
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SD_EDITOPTIONS.ITEMLIST.ITEM
-#, fuzzy
 msgid  "This is where you define the settings that apply to all newly saved presentations. Among other things, you decide which contents are displayed on the slides, which default unit of measure is used, if and how grid alignment is used, and if notes and handouts are always printed."
-msgstr "Εδώ έχετε τη δυνατότητα να ορίσετε τις ιδιότητες που θα ισχύουν για τα έγγραφα παρουσίασης. Μεταξύ άλλων ορίζετε τα περιεχόμενα που θα εμφανίζονται στις διαφάνειες, την κλίμακά τους, αν και με ποιό τρόπο θα γίνει η στοίχιση ως προς το πλέγμα και επίσης καθορίζετε τα περιεχόμενα που θα εκτυπώνονται (σημειώσεις, σημειώματα, κτλ.)."
+msgstr "Εδώ έχετε τη δυνατότητα να ορίσετε τις ιδιότητες που θα ισχύουν για τα έγγραφα παρουσίασης. Μεταξύ άλλων ορίζετε τα περιεχόμενα που θα εμφανίζονται στις διαφάνειες, την κλίμακά τους, αν και με ποίο τρόπο θα γίνει η στοίχιση ως προς το πλέγμα και καθορίζετε τα περιεχόμενα που θα εκτυπώνονται."
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SD_GRAPHIC_OPTIONS.ITEMLIST.ITEM
 #, fuzzy
@@ -5161,16 +4521,6 @@ msgstr "Εδώ καθορίζετε γενικές ρυθμίσεις για τ�
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
 msgstr "Εδώ καθορίζετε γενικές ρυθμίσεις για το άνοιγμα και την αποθήκευση εγγράφων σε εξωτερικές μορφές. Μπορείτε να ελέγξετε τη συμπεριφορά μακροεντολών ή αντικειμένων OLE σε έγγραφα του Microsoft Office ή να καθορίσετε ρυθμίσεις για έγγραφα HTML."
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "%PRODUCTNAME"
-msgstr "%PRODUCTNAME"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "User Data"
-msgstr "Δεδομένα χρήστη"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ITEMLIST.ITEM
 #, fuzzy
 msgid  "General"
@@ -5196,20 +4546,10 @@ msgstr "Εκτύπωση"
 msgid  "Paths"
 msgstr "Διαδρομές"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Colors"
-msgstr "Χρώματα"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Fonts"
 msgstr "Γραμματοσειρές"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Security"
-msgstr "Ασφάλεια"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ITEMLIST.ITEM
 #, fuzzy
@@ -5221,11 +4561,6 @@ msgstr "Εμφάνιση"
 msgid  "Accessibility"
 msgstr "Προσιτότητα"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Java"
-msgstr "Java"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Network Identity"
@@ -5236,11 +4571,6 @@ msgstr "Δικτυακή ταυτότητα"
 msgid  "Online Update"
 msgstr "Ενημέρωση μέσω διαδικτύου"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Language Settings"
-msgstr "Ρυθμίσεις γλώσσας"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Languages"
@@ -5250,11 +4580,6 @@ msgstr "Γλώσσες"
 #, fuzzy
 msgid  "Writing Aids"
 msgstr "Βοηθήματα γραφής"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Searching in Japanese"
-msgstr "Αναζήτηση στα Ιαπωνικά"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ITEMLIST.ITEM
 #, fuzzy
@@ -5272,19 +4597,8 @@ msgid  "Internet"
 msgstr "Διαδίκτυο"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_PROXY.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Proxy"
-msgstr "Διαμεσολαβητής (proxy)"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Search"
-msgstr "Αναζήτηση"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "E-mail"
-msgstr "Ηλεκτρονική διεύθυνση"
+msgstr "Διαμεσολαβητής"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ITEMLIST.ITEM
 #, fuzzy
@@ -5346,11 +4660,6 @@ msgstr "Συγχώνευση ηλεκτρονικής αλληλογραφίας
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Background"
-msgstr "Φόντο"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "%PRODUCTNAME Math"
@@ -5360,16 +4669,6 @@ msgstr "%PRODUCTNAME Math"
 #, fuzzy
 msgid  "Settings"
 msgstr "Ρυθμίσεις"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Calc"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ITEMLIST.ITEM
-#, fuzzy
-msgid  "International"
-msgstr "Διεθνή"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ITEMLIST.ITEM
 #, fuzzy
@@ -5391,30 +4690,10 @@ msgstr "%PRODUCTNAME Impress"
 msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME Draw"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Charts"
-msgstr "Διαγράμματα"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Default Colors"
-msgstr "Βασικά χρώματα"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Load/Save"
 msgstr "Φόρτωση/Αποθήκευση"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ITEMLIST.ITEM
-#, fuzzy
-msgid  "VBA Properties"
-msgstr "Ιδιότητες VBA"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Microsoft Office"
-msgstr "Microsoft Office"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ITEMLIST.ITEM
 #, fuzzy
@@ -5441,20 +4720,14 @@ msgstr "Βάση δεδομένων"
 msgid  "Site certificates"
 msgstr "Πιστοποιητικά σελίδας"
 
-#: options/treeopt.src#RID_RIDER_SLL_PERSONAL.STRING.TEXT
-#, fuzzy
-msgid  "Personal certificates"
-msgstr "Προσωπικά πιστοποιητικά"
-
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Stored Web Connection Information"
 msgstr "Αποθηκευμένες πληροφορίες σύνδεσης Web"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.FI_NEVERSHOWN.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Web login information (passwords are never shown)"
-msgstr "Πληροφορίες σύνδεσης Web (δεν εμφανίζονται κωδικοί)"
+msgstr "Πληροφορίες σύνδεσης web (δεν εμφανίζονται κωδικοί)"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_REMOVE.PUSHBUTTON.TEXT
 #, fuzzy
@@ -5467,9 +4740,8 @@ msgid  "Remove All"
 msgstr "Αφαίρεση όλων"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_CHANGE.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "Change Password..."
-msgstr "Αλλαγή κωδικού πρόσβασης"
+msgstr "Αλλαγή Κωδικού Πρόσβασης..."
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_CLOSE.CANCELBUTTON.TEXT
 #, fuzzy
@@ -5491,11 +4763,6 @@ msgstr "Όνομα χρήστη"
 msgid  "Alignment"
 msgstr "Στοίχιση"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text alignment"
-msgstr "Στοίχιση κειμένου"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Hori~zontal"
@@ -5506,30 +4773,10 @@ msgstr "Ορι~ζόντια"
 msgid  "Default"
 msgstr "Προεπιλογή"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "Αριστερά"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Center"
-msgstr "Στο κέντρο"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Right"
-msgstr "Δεξιά"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Justified"
 msgstr "Πλήρης στοίχιση"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Filled"
-msgstr "Με γέμισμα"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -5540,16 +4787,6 @@ msgstr "Εσο~χή"
 #, fuzzy
 msgid  "~Vertical"
 msgstr "Κατακόρυ~φα"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "Πάνω"
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "Μέση"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.STRINGLIST.ITEM
 #, fuzzy
@@ -5581,11 +4818,6 @@ msgstr "Άκρο ανα~φοράς"
 msgid  "Asian layout ~mode"
 msgstr "Λειτουργία α~σιατικής διάταξης"
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Ιδιότητες"
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Wrap text automatically"
@@ -5607,19 +4839,16 @@ msgid  "Te~xt direction"
 msgstr "Κατεύ~θυνση κειμένου"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_BOTTOMLOCK.STRING.TEXT
-#, fuzzy
 msgid  "Text Extension From Lower Cell Border"
-msgstr "Επιμήκυνση κειμένου από κάτω άκρη κελιού."
+msgstr "Επιμήκυνση Κειμένου από Κάτω Άκρη Κελιού"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_TOPLOCK.STRING.TEXT
-#, fuzzy
 msgid  "Text Extension From Upper Cell Border"
-msgstr "Επιμήκυνση κειμένου από πάνω άκρη κελιού."
+msgstr "Επιμήκυνση Κειμένου από Πάνω Άκρη Κελιού"
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_CELLLOCK.STRING.TEXT
-#, fuzzy
 msgid  "Text Extension Inside Cell"
-msgstr "Επιμήκυνση κειμένου μόνο στο εσωτερικό του κελιού."
+msgstr "Επιμήκυνση Κειμένου μόνο στο Εσωτερικό του Κελιού"
 
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.TABDIALOG.TEXT
 #, fuzzy
@@ -5630,11 +4859,6 @@ msgstr "Αυτόματη διόρθωση"
 #, fuzzy
 msgid  "Replace"
 msgstr "Αντικατάσταση"
-
-#: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Exceptions"
-msgstr "Εξαιρέσεις"
 
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PAGEITEM.TEXT
 #, fuzzy
@@ -5671,11 +4895,6 @@ msgstr "Χρήση του πίνακα αντικατάστασης"
 msgid  "Correct TWo INitial CApitals"
 msgstr "Διόρθωση ΔΥο κεφαλαίων γραμμάτων στην ΑΡχή της λέξης"
 
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.STRING.TEXT
-#, fuzzy
-msgid  "Capitalize first letter of every sentence"
-msgstr "Εκκίνηση κάθε πρότασης με κεφαλαίο γράμμα"
-
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.STRING.TEXT
 #, fuzzy
 msgid  "Automatic *bold* and _underline_"
@@ -5685,11 +4904,6 @@ msgstr "Αυτομάτως *έντονα* και _υπογράμμιση_"
 #, fuzzy
 msgid  "Ignore double spaces"
 msgstr "Παράβλεψη διπλών κενών"
-
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.STRING.TEXT
-#, fuzzy
-msgid  "URL Recognition"
-msgstr "Αναγνώριση URL"
 
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.STRING.TEXT
 #, fuzzy
@@ -5706,35 +4920,19 @@ msgstr "Ρυθμίσεις"
 msgid  "~Edit..."
 msgstr "~Επεξεργασία..."
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.STRING.TEXT
-#, fuzzy
-msgid  "[M]"
-msgstr "[M]"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.STRING.TEXT
-#, fuzzy
-msgid  "[T]"
-msgstr "[T]"
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "[M]: Replace while modifying existing text"
 msgstr "[M]: Αντικατάσταση κατά την τροποποίηση"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER2_EXPLANATION.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "[T]: AutoFormat/AutoCorrect while typing"
-msgstr "[T]: Αυτόματη Μορφοποίηση/ Διόρθωση"
+msgstr "[T]: Αυτόματη Μορφοποίηση/Διόρθωση"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_DEL_EMPTY_PARA.STRING.TEXT
 #, fuzzy
 msgid  "Remove blank paragraphs"
 msgstr "Απομάκρυνση κενών παραγράφων"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.STRING.TEXT
-#, fuzzy
-msgid  "Replace Custom Styles"
-msgstr "Αντικατάσταση προσαρμοσμένων προτύπων"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.STRING.TEXT
 #, fuzzy
@@ -5747,9 +4945,8 @@ msgid  "Combine single line paragraphs if length greater than"
 msgstr "Συνδυασμός μονόγραμμων παραγράφων αν το μάκρος είναι μεγαλύτερο από"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_NUM.STRING.TEXT
-#, fuzzy
 msgid  "Apply numbering - symbol: "
-msgstr "Εφαρμογή αρίθμησης - Σύμβολο: "
+msgstr "Εφαρμογή αρίθμησης - σύμβολο: "
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_BORDER.STRING.TEXT
 #, fuzzy
@@ -5760,11 +4957,6 @@ msgstr "Εφαρμογή περιγράμματος"
 #, fuzzy
 msgid  "Create table"
 msgstr "Δημιουργία πίνακα"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "Apply Styles"
-msgstr "Εφαρμογή προτύπων"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.STRING.TEXT
 #, fuzzy
@@ -5817,19 +5009,13 @@ msgid  "~Replace"
 msgstr "Α~ντικατάσταση"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_ABBREV.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Abbreviations (no subsequent capital)"
-msgstr "Συντομεύσεις, (μετά τις οποίες δεν ακολουθεί κεφαλαίο γράμμα)."
+msgstr "Συντομεύσεις (μετά τις οποίες δεν ακολουθεί κεφαλαίο γράμμα)"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOABBREV.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~AutoInclude"
 msgstr "~Αυτόματη προσθήκη"
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Words with TWo INitial CApitals"
-msgstr "Λέξεις που αρχίζουν με ΔΥο ΚΕφαλαία ΓΡάμματα"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PUSHBUTTON.TEXT
 #, fuzzy
@@ -5848,19 +5034,19 @@ msgstr "Α~υτόματη προσθήκη"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWABBREV.STRING.TEXT
 msgid  "New abbreviations"
-msgstr ""
+msgstr "Νέες συντομογραφίες"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELABBREV.STRING.TEXT
 msgid  "Delete abbreviations"
-msgstr ""
+msgstr "Διαγραφή συντομογραφιών"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_NEWDOUBLECAPS.STRING.TEXT
 msgid  "New words with two initial capitals"
-msgstr ""
+msgstr "Νέες λέξεις με διπλά αρχικά"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.STR_PB_DELDOUBLECAPS.STRING.TEXT
 msgid  "Delete words with two initial capitals"
-msgstr ""
+msgstr "Διαγραφή λέξεων με διπλά αρχικά"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.STRING.TEXT
 #, fuzzy
@@ -5868,9 +5054,8 @@ msgid  "Add non breaking space before specific punctuation marks in french text"
 msgstr "Προσθήκη διαστημάτων χωρίς αλλαγή πριν των σημείων στίξης σε γαλλικό κείμενο"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_ORDINAL.STRING.TEXT
-#, fuzzy
 msgid  "Format ordinal numbers suffixes (1st -> 1^st)"
-msgstr "Μορφοποίηση καταλήξεων τακτικών αριθμητικών  (1st -> 1^st)"
+msgstr "Μορφοποίηση καταλήξεων τακτικών αριθμητικών (1st -> 1^st)"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_SINGLE.FIXEDLINE.TEXT
 #, fuzzy
@@ -5908,9 +5093,8 @@ msgid  "Start q~uote:"
 msgstr "Στην αρ~χή της λέξης:"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_ENDQUOTE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "E~nd quote:"
-msgstr "Στο τέλος της λέξη~ς:"
+msgstr "Στο τέλος της λέ~ξης:"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_DBL_STD.PUSHBUTTON.TEXT
 #, fuzzy
@@ -5923,38 +5107,32 @@ msgid  "Start quote"
 msgstr "Χαρακτήρας για την αρχή της παράθεσης"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_CHANGE_END.STRING.TEXT
-#, fuzzy
 msgid  "End quote"
-msgstr "Χαρακτήρας για το τέλος της παράθεσης "
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
-#, fuzzy
-msgid  "Default"
-msgstr "Προεπιλογή"
+msgstr "Χαρακτήρας για το τέλος της παράθεσης"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
 msgid  "Single quotes default"
-msgstr ""
+msgstr "Μονά εισαγωγικά ως προεπιλογή"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_STD.STRING.TEXT
 msgid  "Double quotes default"
-msgstr ""
+msgstr "Διπλά εισαγωγικά ως προεπιλογή"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_START.STRING.TEXT
 msgid  "Start quote of single quotes"
-msgstr ""
+msgstr "Αρχή παράθεσης μονών εισαγωγικών"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_START.STRING.TEXT
 msgid  "Start quote of double quotes"
-msgstr ""
+msgstr "Αρχή παράθεσης με διπλά εισαγωγικά"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_END.STRING.TEXT
 msgid  "End quote of single quotes"
-msgstr ""
+msgstr "Τέλος παράθεσης με μονά εισαγωγικά"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_DBL_END.STRING.TEXT
 msgid  "End quote of double quotes"
-msgstr ""
+msgstr "Τέλος παράθεσης με διπλά εισαγωγικά"
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CHECKBOX.TEXT
 #, fuzzy
@@ -6011,30 +5189,15 @@ msgstr "Κείμενο ετικέτας με έξυπνες ετικέτες"
 msgid  "Currently installed smart tags"
 msgstr "Προς το παρόν εγκατεστημένες έξυπνες ετικέτες"
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Properties..."
-msgstr "Ιδιότητες..."
-
 #: tabpages/backgrnd.src#UNLINKED_IMAGE.#DEFINE.TEXT
 #, fuzzy
 msgid  "Unlinked graphic"
 msgstr "Γραφικό χωρίς σύνδεση"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TABPAGE.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Φόντο"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "A~s"
 msgstr "Ω~ς"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "Χρώμα"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -6046,35 +5209,10 @@ msgstr "Γραφικό"
 msgid  "F~or"
 msgstr "~Για"
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Cell"
-msgstr "Κελί"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Row"
-msgstr "Γραμμή"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Table"
-msgstr "Πίνακας"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Paragraph"
-msgstr "Παράγραφος"
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Character"
 msgstr "Χαρακτήρας"
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Background color"
-msgstr "Χρώμα φόντου"
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6131,26 +5269,6 @@ msgstr "Προ~επισκόπηση"
 msgid  "Find graphics"
 msgstr "Αναζήτηση γραφικού"
 
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Border / Background"
-msgstr "Πλαίσιο / Φόντο"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Περιγράμματα"
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Background"
-msgstr "Φόντο"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.TABPAGE.TEXT
-#, fuzzy
-msgid  "Borders"
-msgstr "Περιγράμματα"
-
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Line arrangement"
@@ -6165,11 +5283,6 @@ msgstr "~Προεπιλογή"
 #, fuzzy
 msgid  "~User-defined"
 msgstr "Καθ~ορισμένο από χρήστη"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Γραμμή"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6225,16 +5338,6 @@ msgstr "Α~πόσταση"
 #, fuzzy
 msgid  "C~olor"
 msgstr "Χ~ρώμα"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Shadow style"
-msgstr "Στυλ σκιάς"
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Ιδιότητες"
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CHECKBOX.TEXT
 #, fuzzy
@@ -6306,31 +5409,6 @@ msgstr "Καθορισμός πάνω και κάτω περιγραμμάτων
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr "Ορισμός αριστερού και δεξιού περιγράμματος, και όλων των εσωτερικών γραμμών"
 
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.STRING.TEXT
-#, fuzzy
-msgid  "No Shadow"
-msgstr "Χωρίς σκιά"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Right"
-msgstr "Σκιά προς τα κάτω δεξιά"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Right"
-msgstr "Σκιά προς τα πάνω δεξιά"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Bottom Left"
-msgstr "Σκιά προς τα κάτω αριστερά"
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.STRING.TEXT
-#, fuzzy
-msgid  "Cast Shadow to Top Left"
-msgstr "Σκιά προς τα πάνω αριστερά"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Western text font"
@@ -6356,20 +5434,14 @@ msgstr "~Οικογένειες γραμματοσειρών"
 msgid  "Normal"
 msgstr "Κανονικά"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Italic"
-msgstr "Πλάγια"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Bold"
 msgstr "Έντονα"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM4.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Bold italic"
-msgstr "Πλάγια Έντονα"
+msgstr "Πλάγια έντονα"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6411,11 +5483,6 @@ msgstr "Οι~κογένειες"
 msgid  "Example"
 msgstr "Παράδειγμα"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Color"
-msgstr "Χρώμα"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Font ~color"
@@ -6456,25 +5523,10 @@ msgstr "Πεζά"
 msgid  "Title"
 msgstr "Τίτλος"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Small capitals"
-msgstr "Μικρά κεφαλαία"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Relief"
 msgstr "~Aνάγλυφο"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Embossed"
-msgstr "Ανάγλυφο"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Engraved"
-msgstr "Χαραγμένο"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TRISTATEBOX.TEXT
 #, fuzzy
@@ -6510,11 +5562,6 @@ msgstr "Απλό"
 #, fuzzy
 msgid  "Double"
 msgstr "Διπλό"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Dotted"
-msgstr "Διάστικτη"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
 #, fuzzy
@@ -6586,16 +5633,6 @@ msgstr "Χρώμα διαγρά~μμισης"
 msgid  "~Strikethrough"
 msgstr "Δια~κριτή γραφή"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With /"
-msgstr "Με /"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_X.STRINGLIST.ITEM
-#, fuzzy
-msgid  "With X"
-msgstr "Με X"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Underlining"
@@ -6618,63 +5655,18 @@ msgstr "Χαρακτήρας ~τονισμού"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Dot"
-msgstr "Τελεία"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Circle"
-msgstr "Κύκλος"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Disc"
 msgstr "Δίσκος"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Accent"
-msgstr "Έμφαση"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Position"
 msgstr "~Θέση"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above text"
-msgstr "Πάνω από κείμενο"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below text"
-msgstr "Κάτω από το κείμενο"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.STRING.TEXT
-#, fuzzy
-msgid  "Small Capitals"
-msgstr "Μικρά κεφαλαία"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.STRING.TEXT
 #, fuzzy
 msgid  "Outline"
 msgstr "Διάρθρωση"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.STRING.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "Σκιά"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_BLINKING.STRING.TEXT
-#, fuzzy
-msgid  "Blinking"
-msgstr "Εφέ φλας"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Θέση"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RADIOBUTTON.TEXT
 #, fuzzy
@@ -6697,19 +5689,13 @@ msgid  "A~utomatic"
 msgstr "Α~υτόματα"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FT_FONTSIZE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Relative font size"
-msgstr "Σχετικό μέγεθος γραμματοσειράς "
+msgstr "Σχετικό μέγεθος γραμματοσειράς"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_ROTATION_SCALING.FIXEDLINE.TEXT
 #, fuzzy
 msgid  "Rotation / scaling"
 msgstr "Περιστροφή / κλιμάκωση"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Scaling"
-msgstr "Κλιμάκωση"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RADIOBUTTON.TEXT
 #, fuzzy
@@ -6743,16 +5729,6 @@ msgstr "Απόσταση"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Default"
-msgstr "Προεπιλογή"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Expanded"
-msgstr "Διευρυμένα"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Condensed"
 msgstr "Συμπυκνωμένα"
 
@@ -6765,11 +5741,6 @@ msgstr "κ~ατά"
 #, fuzzy
 msgid  "~Pair kerning"
 msgstr "Δια~γραμμάτωση ανά ζεύγη"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Double-lined"
-msgstr "Δίγραμμη"
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.CB_TWOLINES.CHECKBOX.TEXT
 #, fuzzy
@@ -6791,26 +5762,6 @@ msgstr "Αρχικός χαρακτήρας"
 msgid  "(None)"
 msgstr "(Kανένα)"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  "("
-msgstr "("
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "["
-msgstr "["
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "<"
-msgstr "<"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "{"
-msgstr "{"
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Other Characters..."
@@ -6821,26 +5772,6 @@ msgstr "Άλλοι χαρακτήρες..."
 msgid  "Final charact~er"
 msgstr "Τ~ελικός χαρακτήρας"
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-#, fuzzy
-msgid  ")"
-msgstr ")"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "]"
-msgstr "]"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-#, fuzzy
-msgid  ">"
-msgstr ">"
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-#, fuzzy
-msgid  "}"
-msgstr "}"
-
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.TABPAGE.TEXT
 #, fuzzy
 msgid  "Connector"
@@ -6850,11 +5781,6 @@ msgstr "Γραμμή σύνδεσης"
 #, fuzzy
 msgid  "~Type"
 msgstr "~Τύπος"
-
-#: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DELTA.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line skew"
-msgstr "Ασυμμετρία γραμμής"
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FIXEDTEXT.TEXT
 #, fuzzy
@@ -6941,11 +5867,6 @@ msgstr "~Δεξιά"
 msgid  "Vertical"
 msgstr "Κατακόρυφα"
 
-#: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "Κα~νένα"
-
 #: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Top"
@@ -6965,16 +5886,6 @@ msgstr "Από~σταση"
 #, fuzzy
 msgid  "~Bottom"
 msgstr "~Κάτω"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.STRING.TEXT
-#, fuzzy
-msgid  "Left-to-right"
-msgstr "Αριστερά προς δεξιά"
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.STRING.TEXT
-#, fuzzy
-msgid  "Right-to-left"
-msgstr "Δεξιά προς αριστερά"
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.STRING.TEXT
 #, fuzzy
@@ -7076,20 +5987,13 @@ msgstr "~Απόσταση"
 msgid  "~Angle"
 msgstr "~Γωνία περιστροφής"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Free"
-msgstr "Ελεύθερα"
-
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.STRINGLIST.ITEM
-#, fuzzy
 msgid  "30 Degrees"
-msgstr "30 μοίρες"
+msgstr "30 Μοίρες"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.4500.STRINGLIST.ITEM
-#, fuzzy
 msgid  "45 Degrees"
-msgstr "45 μοίρες"
+msgstr "45 Μοίρες"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.6000.STRINGLIST.ITEM
 #, fuzzy
@@ -7097,9 +6001,8 @@ msgid  "60 Degrees"
 msgstr "60 Μοίρες"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.9000.STRINGLIST.ITEM
-#, fuzzy
 msgid  "90 Degrees"
-msgstr "90 μοίρες"
+msgstr "90 Μοίρες"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_ANSATZ.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7110,16 +6013,6 @@ msgstr "Ε~πέκταση"
 #, fuzzy
 msgid  "Optimal"
 msgstr "Βέλτιστο"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "Από πάνω"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From left"
-msgstr "Από αριστερά"
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.1.STRINGLIST.ITEM
 #, fuzzy
@@ -7156,36 +6049,6 @@ msgstr "Βέ~λτιστα"
 msgid  "Straight Line"
 msgstr "Ευθεία γραμμή"
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_2.STRING.TEXT
-#, fuzzy
-msgid  "Angled Line"
-msgstr "Γραμμή με γωνία"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_3.STRING.TEXT
-#, fuzzy
-msgid  "Angled Connector Line"
-msgstr "Γραμμή σύνδεσης υπό γωνία"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_4.STRING.TEXT
-#, fuzzy
-msgid  "Double-angled line"
-msgstr "Γραμμή με 2 γωνίες"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_HORZ_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Top;Middle;Bottom"
-msgstr "Πάνω;Κέντρο;Κάτω"
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_VERT_LIST.STRING.TEXT
-#, fuzzy
-msgid  "Left;Middle;Right"
-msgstr "Αριστερά;Κέντρο;Δεξιά"
-
-#: tabpages/labdlg.src#_POS_SIZE_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "Θέση και μέγεθος"
-
 #: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PAGEITEM.TEXT
 #, fuzzy
 msgid  "Callout"
@@ -7207,9 +6070,8 @@ msgid  "Assigned macro"
 msgstr "Ανατιθέμενη μακροεντολή"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Existing macros\n"
-msgstr "Υπάρ~χουσες μακροεντολές σε:\n"
+msgstr "Υπάρ~χουσες μακροεντολές σε\n"
 
 #: tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PUSHBUTTON.TEXT
 #, fuzzy
@@ -7230,11 +6092,6 @@ msgstr "Μακροεντολές"
 #, fuzzy
 msgid  "Dimensioning"
 msgstr "Διαστασιολόγηση"
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LINE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Γραμμή"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_LINE_DIST.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7271,11 +6128,6 @@ msgstr "Αντικείμενο ~μέτρησης από κάτω"
 msgid  "Decimal places"
 msgstr "Δεκαδικά ψηφία"
 
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LABEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Legend"
-msgstr "Υπόμνημα"
-
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_POSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Text position"
@@ -7297,9 +6149,8 @@ msgid  "~Parallel to line"
 msgstr "Παράλληλα στη ~γραμμή"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.TSB_SHOW_UNIT.TRISTATEBOX.TEXT
-#, fuzzy
 msgid  "Show ~meas. units"
-msgstr "Εμφάν. μονά~δ. μέτρ."
+msgstr "Εμφάνιση μονά~δων μέτρησης"
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.STR_MEASURE_AUTOMATIC.STRING.TEXT
 #, fuzzy
@@ -7318,58 +6169,13 @@ msgstr "~Κατηγορία"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "All"
-msgstr "Όλα"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "User-defined"
-msgstr "Καθορισμένο από το χρήστη"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "Αριθμός"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Percent"
-msgstr "Ποσοστό"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Currency"
-msgstr "Νόμισμα"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "Ημερομηνία"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Time"
-msgstr "Ώρα"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Scientific"
 msgstr "Δεκαδικά"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Fraction"
-msgstr "Κλάσμα"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Boolean Value"
 msgstr "Λογική τιμή"
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "Κείμενο"
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_EDFORMAT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7421,11 +6227,6 @@ msgstr "~Γλώσσα"
 msgid  "So~urce format"
 msgstr "Μορφή προέ~λευσης"
 
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Add"
-msgstr "Προσθήκη"
-
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Remove"
@@ -7447,14 +6248,12 @@ msgid  "Selection"
 msgstr "Επιλογή"
 
 #: tabpages/numpages.src#RID_SVXPAGE_PICK_BMP.CB_LINKED.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Link graphics"
-msgstr "Σύνδεση γραφικών"
+msgstr "~Σύνδεση γραφικών"
 
 #: tabpages/numpages.src#RID_SVXPAGE_PICK_BMP.FT_ERROR.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "The Gallery theme 'Bullets' is empty (no graphics)."
-msgstr "Δεν υπάρχουν γραφικά στο θέμα 'Κουκίδες' στη Συλλογή."
+msgstr "Το Θέμα της συλλογής 'Κουκίδες' είναι άδειο (χωρίς γραφικά)."
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_LEVEL.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7467,49 +6266,24 @@ msgid  "Format"
 msgstr "Μορφή"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_FMT.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Numbering"
-msgstr "Αρίθμηση"
+msgstr "~Αρίθμηση"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.4.STRINGLIST.ITEM
-#, fuzzy
 msgid  "1, 2, 3, ... "
-msgstr "1, 2, 3, ..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ... "
-msgstr "A, B, C, ... "
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
+msgstr "1, 2, 3, ... "
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.2.STRINGLIST.ITEM
-#, fuzzy
 msgid  "I, II, III, ... "
-msgstr "I, II, III, ..."
+msgstr "I, II, III, ... "
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.3.STRINGLIST.ITEM
-#, fuzzy
 msgid  "i, ii, iii, ... "
-msgstr "i, ii, iii, ..."
+msgstr "i, ii, iii, ... "
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.9.STRINGLIST.ITEM
-#, fuzzy
 msgid  "A, .., AA, .., AAA, ... "
-msgstr "Α, .., ΑΑ, .., ΑΑΑ, ..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, .., aa, .., aaa, ..."
-msgstr "a, .., aa, .., aaa, ..."
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Bullet"
-msgstr "Κουκίδα"
+msgstr "A, .., AA, .., AAA, ... "
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.8.STRINGLIST.ITEM
 #, fuzzy
@@ -7520,11 +6294,6 @@ msgstr "Γραφικά"
 #, fuzzy
 msgid  "Linked graphics"
 msgstr "Συνδεδεμένα γραφικά"
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "Κανένα"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.12.STRINGLIST.ITEM
 #, fuzzy
@@ -7537,14 +6306,12 @@ msgid  "А, Б, .., Аа, Аб, ... (Bulgarian)"
 msgstr "А, Б, .., Аа, Аб, ... (Βουλγαρικά)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.39.STRINGLIST.ITEM
-#, fuzzy
 msgid  "а, б, .., аа, аб, ... (Bulgarian)"
-msgstr "а, б, .., аа, аб, ...(Βουλγαρικά)"
+msgstr "а, б, .., аа, аб, ... (Βουλγαρικά)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.40.STRINGLIST.ITEM
-#, fuzzy
 msgid  "А, Б, .., Аа, Бб, ... (Bulgarian)"
-msgstr "А, Б, .., Аа, Бб, ...(Βουλγαρικά)"
+msgstr "А, Б, .., Аа, Бб, ... (Βουλγαρικά)"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.41.STRINGLIST.ITEM
 #, fuzzy
@@ -7716,11 +6483,6 @@ msgstr "Χαρακτήρας - στο κέντρο"
 msgid  "Bottom of character"
 msgstr "Χαρακτήρας - κάτω"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "Γραμμή πάνω"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM8.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -7731,20 +6493,14 @@ msgstr "Γραμμή κεντραρισμένη"
 msgid  "Bottom of line"
 msgstr "Γραμμή κάτω"
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FL_SAME_LEVEL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "All levels"
-msgstr "Όλα τα επίπεδα"
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.CB_SAME_LEVEL.CHECKBOX.TEXT
 #, fuzzy
 msgid  "~Consecutive numbering"
 msgstr "Σ~υνεχόμενη αρίθμηση"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.ST_POPUP_EMPTY_ENTRY.STRING.TEXT
-#, fuzzy
 msgid  "There are no graphics in the 'Bullets' Gallery theme."
-msgstr "Δεν υπάρχουν γραφικά στο θέμα \"Κουκκίδες\" στη Συλλογή."
+msgstr "Δεν υπάρχουν γραφικά στο θέμα 'Κουκκίδες' στη Συλλογή."
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FL_POSITION.FIXEDLINE.TEXT
 #, fuzzy
@@ -7757,9 +6513,8 @@ msgid  "Indent"
 msgstr "Εσοχή"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.CB_RELATIVE.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Relati~ve"
-msgstr "Σχετικά"
+msgstr "Σχετ~ικά"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_INDENT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7767,9 +6522,8 @@ msgid  "Width of numbering"
 msgstr "Πλάτος αρίθμησης"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_NUMDIST.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Minimum space numbering <-> text"
-msgstr "Ελάχιστη απόσταση Αριθμός <-> Κείμενο"
+msgstr "Ελάχιστη απόσταση αρίθμησης <-> κείμενο"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.FT_ALIGN.FIXEDTEXT.TEXT
 #, fuzzy
@@ -7782,9 +6536,8 @@ msgid  "Numbering followed by"
 msgstr "Αρίθμηση ακολουθείται από"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_LABEL_FOLLOWED_BY.ITEM1.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Tab stop"
-msgstr "Θέση στηλοθ."
+msgstr "Τέλος στηλοθέτη"
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_LABEL_FOLLOWED_BY.ITEM2.STRINGLIST.ITEM
 #, fuzzy
@@ -7815,11 +6568,6 @@ msgstr "Εσοχή σε"
 #, fuzzy
 msgid  "Default"
 msgstr "Προεπιλογή"
-
-#: tabpages/numpages.src#RID_STR_EDIT_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Link"
-msgstr "Σύνδεση"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FL_PAPER_SIZE.FIXEDLINE.TEXT
 #, fuzzy
@@ -7866,11 +6614,6 @@ msgstr "~Κατεύθυνση κειμένου"
 msgid  "Paper ~tray"
 msgstr "~Θήκη χαρτιού"
 
-#: tabpages/page.src#RID_SVXPAGE_PAGE.FL_MARGIN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Margins"
-msgstr "Περιθώρια"
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_LEFT_MARGIN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Left"
@@ -7903,58 +6646,13 @@ msgstr "Διάταξη σελίδας"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Right and left"
-msgstr "Δεξιά και αριστερά"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Mirrored"
 msgstr "Με κατόπτριση"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only right"
-msgstr "Μόνο δεξιά"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Only left"
-msgstr "Μόνο αριστερά"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "For~mat"
 msgstr "~Μορφή"
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "A, B, C, ..."
-msgstr "A, B, C, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "I, II, III, ..."
-msgstr "I, II, III, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "1, 2, 3, ..."
-msgstr "1, 2, 3, ..."
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "Κανένα"
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_TBL_ALIGN.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8002,39 +6700,32 @@ msgid  "The margin settings are out of print range.\n\nDo you still want to appl
 msgstr "Οι ρυθμίσεις των περιθωρίων είναι εκτός της περιοχής εκτύπωσης.\n\nΘέλετε να εφαρμοστούν οι ρυθμίσεις παρ΄όλα αυτά;"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A6"
-msgstr "A5"
+msgstr "A6"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A5.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A5"
-msgstr "A4"
+msgstr "A5"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A4.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A4"
-msgstr "A3"
+msgstr "A4"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A3.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A3"
-msgstr "A2"
+msgstr "A3"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B6_ISO.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B6 (ISO)"
-msgstr "B5 (ISO)"
+msgstr "B6 (ISO)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B5_ISO.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B5 (ISO)"
-msgstr "B4 (ISO)"
+msgstr "B5 (ISO)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B4_ISO.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B4 (ISO)"
-msgstr "Επιστολή"
+msgstr "B4 (ISO)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LETTER.ITEMLIST.ITEM
 #, fuzzy
@@ -8042,9 +6733,8 @@ msgid  "Letter"
 msgstr "Legal"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LEGAL.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Legal"
-msgstr "Long Bond"
+msgstr "Νομική σημείωση"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_LEGAL2.ITEMLIST.ITEM
 #, fuzzy
@@ -8052,49 +6742,40 @@ msgid  "Long Bond"
 msgstr "Tabloid"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_TABLOID.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Tabloid"
-msgstr "B6 (JIS)"
+msgstr "Tabloid"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B6_JIS.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B6 (JIS)"
-msgstr "B5 (JIS)"
+msgstr "B6 (JIS)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B5_JIS.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B5 (JIS)"
-msgstr "B4 (JIS)"
+msgstr "B5 (JIS)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B4_JIS.ITEMLIST.ITEM
-#, fuzzy
 msgid  "B4 (JIS)"
-msgstr "16 Kai"
+msgstr "B4 (JIS)"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI16.ITEMLIST.ITEM
-#, fuzzy
 msgid  "16 Kai"
-msgstr "32 Kai"
+msgstr "16 Kai"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI32.ITEMLIST.ITEM
-#, fuzzy
 msgid  "32 Kai"
-msgstr "Big 32 Kai"
+msgstr "32 Kai"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI32BIG.ITEMLIST.ITEM
-#, fuzzy
 msgid  "Big 32 Kai"
-msgstr "Χρήστης"
+msgstr "Μεγάλο 32 Kai"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_USER.ITEMLIST.ITEM
-#, fuzzy
 msgid  "User"
-msgstr "DL Envelope"
+msgstr "Χρήστης"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_DL.ITEMLIST.ITEM
-#, fuzzy
 msgid  "DL Envelope"
-msgstr "C6 Envelope"
+msgstr "Φάκελος DL"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C6.ITEMLIST.ITEM
 #, fuzzy
@@ -8102,64 +6783,52 @@ msgid  "C6 Envelope"
 msgstr "C6/5 Envelope"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C65.ITEMLIST.ITEM
-#, fuzzy
 msgid  "C6/5 Envelope"
-msgstr "C5 Envelope"
+msgstr "C6/5 Φάκελος"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C5.ITEMLIST.ITEM
-#, fuzzy
 msgid  "C5 Envelope"
-msgstr "C4 Envelope"
+msgstr "C5 Φάκελος"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C4.ITEMLIST.ITEM
-#, fuzzy
 msgid  "C4 Envelope"
-msgstr "Dia Slide"
+msgstr "Φάκελος C4"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM675.ITEMLIST.ITEM
-#, fuzzy
 msgid  "#6 3/4 (Personal) Envelope"
-msgstr "#8 (Monarch) Envelope"
+msgstr "#6 3/4 (Προσωπικός) Φάκελος"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_MONARCH.ITEMLIST.ITEM
-#, fuzzy
 msgid  "#8 (Monarch) Envelope"
-msgstr "#9 Envelope"
+msgstr "#8 (Monarch) Φάκελος"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM9.ITEMLIST.ITEM
-#, fuzzy
 msgid  "#9 Envelope"
-msgstr "#10 Envelope"
+msgstr "#9 Φάκελος"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM10.ITEMLIST.ITEM
-#, fuzzy
 msgid  "#10 Envelope"
-msgstr "#11 Envelope"
+msgstr "Φάκελος #10"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM11.ITEMLIST.ITEM
-#, fuzzy
 msgid  "#11 Envelope"
-msgstr "#12 Envelope"
+msgstr "Φάκελος #11"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM12.ITEMLIST.ITEM
-#, fuzzy
 msgid  "#12 Envelope"
-msgstr "#11 Envelope"
+msgstr "#12 Φάκελος"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A2.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A2"
-msgstr "A1"
+msgstr "A2"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A1.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A1"
-msgstr "A0"
+msgstr "A1"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_A0.ITEMLIST.ITEM
-#, fuzzy
 msgid  "A0"
-msgstr "B6 (ISO)"
+msgstr "A0"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_DIA.ITEMLIST.ITEM
 #, fuzzy
@@ -8168,7 +6837,7 @@ msgstr "Οθόνη"
 
 #: tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_SCREEN.ITEMLIST.ITEM
 msgid  "Screen"
-msgstr ""
+msgstr "Οθόνη"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TABPAGE.TEXT
 #, fuzzy
@@ -8195,15 +6864,9 @@ msgstr "Πρώτη ~γραμμή"
 msgid  "~Automatic"
 msgstr "Α~υτόματα"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_INDENT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Indent"
-msgstr "Εσοχή"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_TOPDIST.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Ab~ove paragraph"
-msgstr "Πά~νω "
+msgstr "Πά~νω παράγραφος"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_BOTTOMDIST.FIXEDTEXT.TEXT
 #, fuzzy
@@ -8216,29 +6879,8 @@ msgid  "Spacing"
 msgstr "Απόσταση"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Single"
-msgstr "Απλό"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "1.5 lines"
-msgstr "1,5 γραμμή"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Double"
-msgstr "Διπλό"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Proportional"
-msgstr "Αναλογικό"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "At least"
-msgstr "Τουλάχιστον"
+msgstr "1.5 γραμμή"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -8311,29 +6953,12 @@ msgid  "Righ~t/Bottom"
 msgstr "Δε~ξιά/Κάτω"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_LASTLINE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Last line"
-msgstr "Τελευταία γραμμή"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Default"
-msgstr "Προεπιλογή"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Left"
-msgstr "Αριστερά"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "Στο κέντρο"
+msgstr "~Τελευταία γραμμή"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CHECKBOX.TEXT
-#, fuzzy
 msgid  "~Expand single word"
-msgstr "Επέκταση μεμονωμένης λέξη~ς"
+msgstr "~Επέκταση μεμονωμένης λέξης"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_SNAP.CHECKBOX.TEXT
 #, fuzzy
@@ -8360,35 +6985,15 @@ msgstr "Αυτόματα"
 msgid  "Base line"
 msgstr "Γραμμή βάσης"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top"
-msgstr "Πάνω"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Middle"
-msgstr "Μέση"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM5.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Bottom"
 msgstr "Κάτω"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Ιδιότητες"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_TEXTDIRECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Text ~direction"
 msgstr "Κατεύ~θυνση κειμένου"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.TABPAGE.TEXT
-#, fuzzy
-msgid  "Text Flow"
-msgstr "Ροή κειμένου"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_HYPHEN.TRISTATEBOX.TEXT
 #, fuzzy
@@ -8415,11 +7020,6 @@ msgstr "Μέγιστος αριθμός διαδοχικών θέσ~εων δι�
 msgid  "Hyphenation"
 msgstr "Συλλαβισμός"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Breaks"
-msgstr "Αλλαγές"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGEBREAK.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Insert"
@@ -8430,30 +7030,10 @@ msgstr "Εισαγωγή"
 msgid  "~Type"
 msgstr "~Τύπος"
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Page"
-msgstr "Σελίδα"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Column"
-msgstr "Στήλη"
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKPOSITION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Position"
 msgstr "Θέση"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Before"
-msgstr "Πριν από"
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "After"
-msgstr "Μετά"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGECOLL.TRISTATEBOX.TEXT
 #, fuzzy
@@ -8501,9 +7081,8 @@ msgid  "Line change"
 msgstr "Αλλαγή γραμμής"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_PARA_ASIAN.CB_AS_FORBIDDEN.TRISTATEBOX.TEXT
-#, fuzzy
 msgid  "Apply list of forbidden characters to the beginning and end of lines"
-msgstr "Να ληφθεί υπόψη η ~λίστα μη επιτρεπόμενων χαρακτήρων σε αρχή και τέλος σειράς"
+msgstr "Να ληφθεί υπόψη η λίστα μη επιτρεπόμενων χαρακτήρων σε αρχή και τέλος σειράς"
 
 #: tabpages/paragrph.src#RID_SVXPAGE_PARA_ASIAN.CB_AS_HANG_PUNC.TRISTATEBOX.TEXT
 #, fuzzy
@@ -8522,12 +7101,7 @@ msgstr "Παράδειγμα"
 
 #: tabpages/paragrph.src#STR_PAGE_STYLE.STRING.TEXT
 msgid  "Page Style"
-msgstr ""
-
-#: tabpages/strings.src#RID_SVXSTR_DESC_GRADIENT.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the gradient:"
-msgstr "Παρακαλώ εισάγετε το όνομα για την διαβάθμιση του χρώματος:"
+msgstr "Μορφοποίηση σελίδας"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_GRADIENT.STRING.TEXT
 #, fuzzy
@@ -8540,29 +7114,20 @@ msgid  "The gradient was modified without saving. \nModify the selected gradient
 msgstr "Η διαβάθμιση χρώματος τροποποιήθηκε χωρίς να αποθηκευτεί. \nΤροποποιήστε την επιλεγμένη διαβάθμιση χρώματος ή προσθέστε μια νέα διαβάθμιση."
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.STRING.TEXT
-#, fuzzy
 msgid  "Please enter a name for the bitmap:"
-msgstr "Παρακαλώ εισάγετε ένα όνομα για το Βitmap:"
+msgstr "Παρακαλώ εισάγετε ένα όνομα για το bitmap:"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_EXT_BITMAP.STRING.TEXT
-#, fuzzy
 msgid  "Please enter a name for the external bitmap:"
-msgstr "Παρακαλώ εισάγετε ένα όνομα για το εξωτερικό Βitmap:"
+msgstr "Παρακαλώ εισάγετε ένα όνομα για το εξωτερικό bitmap:"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_BITMAP.STRING.TEXT
-#, fuzzy
 msgid  "Are you sure you want to delete the bitmap?"
-msgstr "Θέλετε πραγματικά να διαγράψετε το Bitmap;"
+msgstr "Θέλετε πραγματικά να διαγράψετε το bitmap;"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.STRING.TEXT
-#, fuzzy
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr "Το bitmap τροποποιήθηκε χωρίς να γίνει αποθήκευση. \nΜπορείτε να αλλάξετε την επιλεγμένη bitmap \nή να προσθέσετε μια καινούρια bitmap."
-
-#: tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the line style:"
-msgstr "Παρακαλώ εισάγετε ένα όνομα για το στυλ γραμμής:"
+msgstr "Το bitmap τροποποιήθηκε χωρίς να γίνει αποθήκευση. \nΜπορείτε να αλλάξετε την επιλεγμένη bitmap ή να προσθέσετε μια καινούρια bitmap."
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINESTYLE.STRING.TEXT
 #, fuzzy
@@ -8574,11 +7139,6 @@ msgstr "Θέλετε σίγουρα να διαγραφεί το στυλ γρα
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
 msgstr "Το στυλ γραμμής τροποποιήθηκε χωρίς να αποθηκευτεί. \nΤροποποιήστε το επιλεγμένο στυλ γραμμής ή προσθέστε ένα νέο στυλ γραμμής."
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_HATCH.STRING.TEXT
-#, fuzzy
-msgid  "Please enter a name for the hatching:"
-msgstr "Παρακαλώ εισάγετε ένα όνομα για τη γραμμοσκίαση:"
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_HATCH.STRING.TEXT
 #, fuzzy
 msgid  "Do you want to delete the hatching?"
@@ -8588,16 +7148,6 @@ msgstr "Θέλετε να διαγραφεί η γραμμοσκίαση;"
 #, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
 msgstr "Ο τύπος διαγράμμισης τροποποιήθηκε αλλά δεν αποθηκεύτηκε. \nΤροποποιήστε τον επιλεγμένο τύπο διαγράμμισης ή προσθέστε ένα νέο τύπο διαγράμμισης."
-
-#: tabpages/strings.src#RID_SVXSTR_CHANGE.STRING.TEXT
-#, fuzzy
-msgid  "Modify"
-msgstr "Τροποποίηση"
-
-#: tabpages/strings.src#RID_SVXSTR_ADD.STRING.TEXT
-#, fuzzy
-msgid  "Add"
-msgstr "Προσθήκη"
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_COLOR.STRING.TEXT
 #, fuzzy
@@ -8610,9 +7160,8 @@ msgid  "Do you want to delete the color?"
 msgstr "Θέλετε σίγουρα να διαγραφεί το χρώμα;"
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.STRING.TEXT
-#, fuzzy
 msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr "Το χρώμα τροποποιήθηκε χωρίς να γίνει αποθήκευση. \nΜπορείτε να αλλάξετε το επιλεγμένο χρώμα \nή να προσθέσετε ένα καινούριο χρώμα."
+msgstr "Το χρώμα τροποποιήθηκε χωρίς να γίνει αποθήκευση.\nΜπορείτε να αλλάξετε το επιλεγμένο χρώμα ή να προσθέσετε ένα καινούριο."
 
 #: tabpages/strings.src#RID_SVXSTR_TABLE.STRING.TEXT
 #, fuzzy
@@ -8630,9 +7179,8 @@ msgid  "The file could not be loaded!"
 msgstr "Δεν ήταν δυνατόν να φορτωθεί το αρχείο!"
 
 #: tabpages/strings.src#RID_SVXSTR_WARN_TABLE_OVERWRITE.STRING.TEXT
-#, fuzzy
 msgid  "The list was modified without saving. Would you like to save the list now?"
-msgstr "Η λίστα τροποποιήθηκε και δεν αποθηκεύτηκε.\nΘέλετε να την αποθηκεύσετε τώρα;"
+msgstr "Η λίστα τροποποιήθηκε χωρίς αποθήκευση. Θέλετε να την αποθηκεύσετε τώρα;"
 
 #: tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.STRING.TEXT
 #, fuzzy
@@ -8654,16 +7202,6 @@ msgstr "Θέλετε πραγματικά να διαγραφεί το τέλο�
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 msgstr "Το άκρο γραμμής τροποποιήθηκε χωρίς αποθήκευση.\nΘέλετε να αποθηκεύσετε το άκρο γραμμής τώρα;"
 
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Position and Size"
-msgstr "Θέση και μέγεθος"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Μέγεθος"
-
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Width"
@@ -8678,11 +7216,6 @@ msgstr "Ύ~ψος"
 #, fuzzy
 msgid  "~Keep ratio"
 msgstr "~Διατήρηση αναλογίας"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "Αγκύρωση"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOPAGE.RADIOBUTTON.TEXT
 #, fuzzy
@@ -8708,11 +7241,6 @@ msgstr "~Ως χαρακτήρας"
 #, fuzzy
 msgid  "To ~frame"
 msgstr "Σε ~πλαίσιο"
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_PROTECTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "Προστασία"
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_POSITION.TRISTATEBOX.TEXT
 #, fuzzy
@@ -8811,11 +7339,6 @@ msgstr "Έλλειψη"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
-msgid  "Quadratic"
-msgstr "Τετράεδρα"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Square"
 msgstr "Τετράγωνο"
 
@@ -8850,9 +7373,8 @@ msgid  "~Start value"
 msgstr "Αρ~χική τιμή"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_END_VALUE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~End value"
-msgstr "Τελική τιμή"
+msgstr "~Τελική τιμή"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.CONTROL.TEXT
 #, fuzzy
@@ -8868,16 +7390,6 @@ msgstr "Περιοχή"
 #, fuzzy
 msgid  "Fill"
 msgstr "Γέμισμα"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "None"
-msgstr "Κανένα"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Color"
-msgstr "Χρώμα"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -8904,11 +7416,6 @@ msgstr "Α~υτόματα"
 msgid  "~Background color"
 msgstr "Χρώμα ~φόντου"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Μέγεθος"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_ORIGINAL.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Original"
@@ -8929,11 +7436,6 @@ msgstr "Π~λάτος"
 msgid  "H~eight"
 msgstr "Ύ~ψος"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Position"
-msgstr "Θέση"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_OFFSET.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~X Offset"
@@ -8950,14 +7452,8 @@ msgid  "~Tile"
 msgstr "Σε ~παράθεση"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_STRETCH.TRISTATEBOX.TEXT
-#, fuzzy
 msgid  "Auto~Fit"
-msgstr "Αυτόματη προσαρμογή"
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_OFFSET.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Offset"
-msgstr "Μετατόπιση"
+msgstr "Αυτόματη ~Προσαρμογή"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.RBT_ROW.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9010,9 +7506,8 @@ msgid  "A~ngle"
 msgstr "Γ~ωνία"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_TYPE.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Line type"
-msgstr "Τύπος γραμμής"
+msgstr "~Τύπος γραμμής"
 
 #: tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
@@ -9094,11 +7589,6 @@ msgstr "Αποθήκευση λίστας με Bitmap"
 msgid  "Gradients"
 msgstr "Διαβαθμίσεις"
 
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Rectangular"
-msgstr "Ορθογώνια"
-
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~From"
@@ -9175,17 +7665,16 @@ msgid  "Save Color List"
 msgstr "Αποθήκευση λίστας χρωμάτων"
 
 #: tabpages/tabarea.src#RID_SVXDLG_AREA.1.RID_SVXPAGE_BITMAP.PAGEITEM.TEXT
-#, fuzzy
 msgid  "Bitmaps"
-msgstr "Σχέδια Bitmap"
+msgstr "Σχέδια bitmap"
 
 #: tabpages/tabarea.src#STR_LB_HATCHINGSTYLE.STRING.TEXT
 msgid  "Hatching Style"
-msgstr ""
+msgstr "Στύλ διαγράμμισης"
 
 #: tabpages/tabarea.src#STR_CUI_COLORMODEL.STRING.TEXT
 msgid  "Color Mode"
-msgstr ""
+msgstr "Έγχρωμο"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.TABPAGE.TEXT
 #, fuzzy
@@ -9217,11 +7706,6 @@ msgstr "Π~λάτος"
 msgid  "~Transparency"
 msgstr "Δια~φάνεια"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_LINE_ENDS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Arrow styles"
-msgstr "Άκρα γραμμής"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_ENDS_STYLE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "St~yle"
@@ -9233,9 +7717,8 @@ msgid  "Wi~dth"
 msgstr "Π~λάτος"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.TSB_CENTER_START.TRISTATEBOX.TEXT
-#, fuzzy
 msgid  "Ce~nter"
-msgstr "στο κέντρο"
+msgstr "Στο κέ~ντρο"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.TSB_CENTER_END.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9262,11 +7745,6 @@ msgstr "Στυ~λ"
 msgid  "Rounded"
 msgstr "Στρογγυλεμένο"
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "- none -"
-msgstr "- κανένα -"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Mitered"
@@ -9279,15 +7757,15 @@ msgstr "Λοξά"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_CAP_STYLE.FIXEDTEXT.TEXT
 msgid  "Ca~p style"
-msgstr ""
+msgstr "Στυλ αρ~χικογράμματος"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.DEFAULT.STRINGLIST.ITEM
 msgid  "Flat"
-msgstr ""
+msgstr "Επίπεδο"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.ITEM2.STRINGLIST.ITEM
 msgid  "Round"
-msgstr ""
+msgstr "Στρογγυλεμένο"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_CAP_STYLE.ITEM3.STRINGLIST.ITEM
 #, fuzzy
@@ -9298,11 +7776,6 @@ msgstr "Τετράγωνο"
 #, fuzzy
 msgid  "Icon"
 msgstr "Εικονίδιο"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_NONE.MENUITEM.TEXT
-#, fuzzy
-msgid  "No Symbol"
-msgstr "Κανένα σύμβολο"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_AUTO.MENUITEM.TEXT
 #, fuzzy
@@ -9345,43 +7818,32 @@ msgid  "Keep ratio"
 msgstr "Διατήρηση αναλογίας"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_STYLE.STRING.TEXT
-#, fuzzy
 msgid  "Style"
-msgstr "~Πρότυπο"
+msgstr "Στυλ"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_LB_START_STYLE.STRING.TEXT
 msgid  "Start style"
-msgstr ""
+msgstr "Στυλ έναρξης"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_LB_END_STYLE.STRING.TEXT
 msgid  "End style"
-msgstr ""
+msgstr "Στυλ τέλους"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_MTR_FLD_START_WIDTH.STRING.TEXT
 msgid  "Start width"
-msgstr ""
+msgstr "Πλάτος τέλους"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_MTR_FLD_END_WIDTH.STRING.TEXT
 msgid  "End width"
-msgstr ""
+msgstr "Πλάτος γραμμής τέλους"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_CENTER_START.STRING.TEXT
 msgid  "Start with center"
-msgstr ""
+msgstr "Ξεκίνημα στο κέντρο"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.STR_CENTER_END.STRING.TEXT
 msgid  "End with center"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.TABPAGE.TEXT
-#, fuzzy
-msgid  "Define line styles"
-msgstr "Ορισμός στυλ γραμμών"
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FL_DEFINITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Ιδιότητες"
+msgstr "Τελείωμα στο κέντρο"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FT_TYPE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -9438,11 +7900,6 @@ msgstr "Τρο~ποποίηση..."
 msgid  "~Delete..."
 msgstr "~Διαγραφή..."
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Load Line Styles"
-msgstr "Φόρτωση λίστας με στυλ γραμμών"
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
 #, fuzzy
 msgid  "Save Line Styles"
@@ -9450,27 +7907,27 @@ msgstr "Αποθήκευση λίστας με στυλ γραμμών"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_TYPE.STRING.TEXT
 msgid  "Start type"
-msgstr ""
+msgstr "Τύπος αρχής"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_TYPE.STRING.TEXT
 msgid  "End type"
-msgstr ""
+msgstr "Τύπος τέλους"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_NUM.STRING.TEXT
 msgid  "Start number"
-msgstr ""
+msgstr "Αρχή αρίθμησης από"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_NUM.STRING.TEXT
 msgid  "End number"
-msgstr ""
+msgstr "Τέλος αρίθμισης"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_START_LENGTH.STRING.TEXT
 msgid  "Start length"
-msgstr ""
+msgstr "Αρχικό μήκος"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.STR_END_LENGTH.STRING.TEXT
 msgid  "End length"
-msgstr ""
+msgstr "Μήκος τέλους"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.TABPAGE.TEXT
 #, fuzzy
@@ -9503,29 +7960,8 @@ msgid  "Load Arrow Styles"
 msgstr "Φόρτωση στυλ βελών"
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINEEND_DEF.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
 msgid  "Save Arrow Styles"
-msgstr "Αποθήκευση  στυλ βελών"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Line"
-msgstr "Γραμμή"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Shadow"
-msgstr "Σκιά"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Line Styles"
-msgstr "Στυλ γραμμής"
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Arrow Styles"
-msgstr "Άκρα γραμμής"
+msgstr "Αποθήκευση Στυλ Βελών"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.TABPAGE.TEXT
 #, fuzzy
@@ -9571,11 +8007,6 @@ msgstr "~Χαρακτήρας"
 #, fuzzy
 msgid  "Fill character"
 msgstr "Χαρακτήρας γεμίσματος"
-
-#: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~one"
-msgstr "Κα~νένα"
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_OTHER.RADIOBUTTON.TEXT
 #, fuzzy
@@ -9642,41 +8073,6 @@ msgstr "Κύλιση δια μέσου"
 msgid  "Scroll Back and Forth"
 msgstr "Κύλιση εμπρός και πίσω"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Scroll In"
-msgstr "Κίνηση εντός"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DIRECTION.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Direction"
-msgstr "Κατεύθυνση"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_UP.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Top"
-msgstr "Προς τα πάνω"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_LEFT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Left"
-msgstr "Προς τα αριστερά"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_RIGHT.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Right"
-msgstr "Προς τα δεξιά"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_DOWN.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "To Bottom"
-msgstr "Προς τα κάτω"
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FL_PROPERTIES.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Properties"
-msgstr "Ιδιότητες"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_START_INSIDE.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "S~tart inside"
@@ -9707,20 +8103,10 @@ msgstr "Βήμα"
 msgid  "~Pixels"
 msgstr "~Pixel"
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DELAY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Delay"
-msgstr "Καθυστέρηση"
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_AUTO.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Automatic"
 msgstr "Α~υτόματα"
-
-#: tabpages/textanim.src#RID_SVXDLG_TEXT.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Text"
-msgstr "Κείμενο"
 
 #: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
 #, fuzzy
@@ -9787,11 +8173,6 @@ msgstr "~Πάνω"
 msgid  "~Bottom"
 msgstr "~Κάτω"
 
-#: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_POSITION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Text anchor"
-msgstr "Αγκύρωση κειμένου"
-
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TSB_FULL_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "Full ~width"
@@ -9813,19 +8194,13 @@ msgid  "Position ~X"
 msgstr "Θέση ~X"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_Y.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Position ~Y"
-msgstr "Θέση  ~Y"
+msgstr "Θέση ~Y"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Base point"
 msgstr "Σημείο βάσης"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Size"
-msgstr "Μέγεθος"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_WIDTH.FIXEDTEXT.TEXT
 #, fuzzy
@@ -9842,20 +8217,10 @@ msgstr "Ύ~ψος"
 msgid  "~Keep ratio"
 msgstr "~Διατήρηση αναλογίας"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_PROTECT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Protect"
-msgstr "Προστασία"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_SIZEPROTECT.TRISTATEBOX.TEXT
 #, fuzzy
 msgid  "~Size"
 msgstr "Μέγε~θος"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ADJUST.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Adapt"
-msgstr "Προσαρμογή"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_AUTOGROW_WIDTH.TRISTATEBOX.TEXT
 #, fuzzy
@@ -9867,60 +8232,20 @@ msgstr "Προσαρμογή πλάτο~υς στο κείμενο"
 msgid  "Fit ~height to text"
 msgstr "Προσαρμογή ύ~ψους στο κείμενο"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ANCHOR.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Anchor"
-msgstr "Αγκύρωση"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ANCHOR.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Anchor"
 msgstr "Αγ~κύρωση"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To paragraph"
-msgstr "Σε παράγραφο"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM2.STRINGLIST.ITEM
 #, fuzzy
 msgid  "As character"
 msgstr "Ως χαρακτήρας"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To page"
-msgstr "Στη σελίδα"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "To frame"
-msgstr "Στο πλαίσιο"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ORIENT.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "P~osition"
 msgstr "Θέση"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "From top"
-msgstr "Από πάνω"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Above"
-msgstr "Πάνω από"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Centered"
-msgstr "Στο κέντρο"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Below"
-msgstr "Κάτω από"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM5.STRINGLIST.ITEM
 #, fuzzy
@@ -9937,11 +8262,6 @@ msgstr "Χαρακτήρας - στο κέντρο"
 msgid  "Bottom of character"
 msgstr "Χαρακτήρας - κάτω"
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Top of line"
-msgstr "Γραμμή πάνω"
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM9.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Center of line"
@@ -9951,11 +8271,6 @@ msgstr "Γραμμή κεντραρισμένη"
 #, fuzzy
 msgid  "Bottom of line"
 msgstr "Γραμμή κάτω"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.TABPAGE.TEXT
-#, fuzzy
-msgid  "Angle"
-msgstr "Γωνία"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FL_POSITION.FIXEDLINE.TEXT
 #, fuzzy
@@ -9996,11 +8311,6 @@ msgstr "Rotation Angle"
 #, fuzzy
 msgid  "Slant & Corner Radius"
 msgstr "Λοξά / Ακτίνα γωνίας"
-
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FL_RADIUS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Corner radius"
-msgstr "Ακτίνα γωνίας"
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FT_RADIUS.FIXEDTEXT.TEXT
 #, fuzzy

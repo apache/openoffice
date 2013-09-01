@@ -30,3 +30,267 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
+
+#: minimizer/minimizer.src#STR_PRESENTATION_MINIMIZER.STRING.TEXT
+msgid  "Presentation Minimizer"
+msgstr "Ελαχιστοποιητής παρουσίασης"
+
+#: minimizer/minimizer.src#STR_INFO_DIALOG.STRING.TEXT
+msgid  "Presentation Minimizer - Result"
+msgstr "Αποτελέσματα Ελαχιστοποιητή παρουσίασης"
+
+#: minimizer/minimizer.src#STR_STEPS.STRING.TEXT
+msgid  "Steps"
+msgstr "Βήματα"
+
+#: minimizer/minimizer.src#STR_HELP.STRING.TEXT
+msgid  "~Help"
+msgstr "~Βοήθεια"
+
+#: minimizer/minimizer.src#STR_BACK.STRING.TEXT
+msgid  "< ~Back"
+msgstr "< ~Πίσω"
+
+#: minimizer/minimizer.src#STR_NEXT.STRING.TEXT
+msgid  "~Next >"
+msgstr "~Επόμενο >"
+
+#: minimizer/minimizer.src#STR_FINISH.STRING.TEXT
+msgid  "~Finish"
+msgstr "~Τέλος"
+
+#: minimizer/minimizer.src#STR_CANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr "Ακύρωση"
+
+#: minimizer/minimizer.src#STR_INTRODUCTION.STRING.TEXT
+msgid  "Introduction"
+msgstr "Εισαγωγή"
+
+#: minimizer/minimizer.src#STR_INTRODUCTION_T.STRING.TEXT
+msgid  "The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.\nAt the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
+msgstr "Ο Ελαχιστοποιητής παρουσίασης χρησιμοποιείται για τη μείωση του μεγέθους της τρέχουσας παρουσίασης. Μερικές από τις λειτουργίες που περιλαμβάνει είναι η συμπίεση εικόνων, η διαγραφή δεδομένων που δεν χρησιμοποιούνται κλπ.\n Στο τελευταίο βήμα ο οδηγός σας επιτρέπει να εφαρμόσετε τις μεταβολές στην τρέχουσα παρουσίαση ή να δημιουργήσετε νέα έκδοση σε διαφορετικό αρχείο."
+
+#: minimizer/minimizer.src#STR_CHOSE_SETTINGS.STRING.TEXT
+msgid  "~Choose settings for Presentation Minimizer"
+msgstr "Επιλέξτε παραμέτρους για τον Ελαχιστοποιητή παρουσιάσεων"
+
+#: minimizer/minimizer.src#STR_REMOVE.STRING.TEXT
+msgid  "~Delete"
+msgstr "Διαγραφή"
+
+#: minimizer/minimizer.src#STR_GRAPHIC_OPTIMIZATION.STRING.TEXT
+msgid  "Choose settings for optimizing pictures and graphics"
+msgstr "Επιλέξτε παραμέτρους βελτιστοποίησης εικόνων και γραφικών"
+
+#: minimizer/minimizer.src#STR_IMAGE_OPTIMIZATION.STRING.TEXT
+msgid  "Graphics"
+msgstr "Γραφικά"
+
+#: minimizer/minimizer.src#STR_LOSSLESS_COMPRESSION.STRING.TEXT
+msgid  "~Lossless compression"
+msgstr "Συμπίεση χωρίς απώλειες"
+
+#: minimizer/minimizer.src#STR_JPEG_COMPRESSION.STRING.TEXT
+msgid  "~JPEG compression"
+msgstr "Συμπίεση ~JPEG"
+
+#: minimizer/minimizer.src#STR_QUALITY.STRING.TEXT
+msgid  "~Quality in %"
+msgstr "Ποιότητα στο %"
+
+#: minimizer/minimizer.src#STR_REMOVE_CROP_AREA.STRING.TEXT
+msgid  "~Delete cropped graphic areas"
+msgstr "Διαγραφή περικομμένων περιοχών γραφικών"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION.STRING.TEXT
+msgid  "Reduce ~image resolution"
+msgstr "Μείωση ανάλυσης ε~ικόνας"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_0.STRING.TEXT
+msgid  "<no change>"
+msgstr "<no change>"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_1.STRING.TEXT
+msgid  "90;90 DPI (screen resolution)"
+msgstr "90;90 DPI (ανάλυση οθόνης)"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_2.STRING.TEXT
+msgid  "150;150 DPI (projector resolution)"
+msgstr "150,150 DPI (ανάλυση προβολέα)"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_3.STRING.TEXT
+msgid  "300;300 DPI (print resolution)"
+msgstr "300,300 DPI (ανάλυση εκτύπωσης)"
+
+#: minimizer/minimizer.src#STR_EMBED_LINKED_GRAPHICS.STRING.TEXT
+msgid  "~Break links to external graphics"
+msgstr "~Κατάργηση δεσμών σε εξωτερικά γραφικά"
+
+#: minimizer/minimizer.src#STR_OLE_OBJECTS.STRING.TEXT
+msgid  "OLE Objects"
+msgstr "Αντικείμενα OLE"
+
+#: minimizer/minimizer.src#STR_OLE_OPTIMIZATION.STRING.TEXT
+msgid  "Choose settings for replacing OLE objects"
+msgstr "Επιλογή ρυθμίσεων για την αντικατάσταση αντικειμένων OLE"
+
+#: minimizer/minimizer.src#STR_OLE_REPLACE.STRING.TEXT
+msgid  "Create static replacement graphics for OLE objects"
+msgstr "Δημιουργία στατικών γραφικών αντικατάστασης για αντικείμενα OLE"
+
+#: minimizer/minimizer.src#STR_ALL_OLE_OBJECTS.STRING.TEXT
+msgid  "For ~all OLE objects"
+msgstr "Για ό~λα τα αντικείμενα OLE"
+
+#: minimizer/minimizer.src#STR_ALIEN_OLE_OBJECTS_ONLY.STRING.TEXT
+msgid  "~For OLE objects not based on OpenDocument format"
+msgstr "Για αντικείμενα ~OLE που δεν βασίζονται στο πρότυπο OpenDocument"
+
+#: minimizer/minimizer.src#STR_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains OLE objects."
+msgstr "Object Linking and Embedding (OLE) είναι μια τεχνολογία που επιτρέπει ενσωμάτωση και σύνδεση εγγράφων και άλλων αντικειμένων.\nΗ τρέχουσα παρουσίαση περιέχει αντικείμενα OLE."
+
+#: minimizer/minimizer.src#STR_NO_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains no OLE objects."
+msgstr "Object Linking and Embedding (OLE) είναι μια τεχνολογία που επιτρέπει ενσωμάτωση και σύνδεση με έγγραφα και άλλα αντικείμενα.\nΗ τρέχουσα παρουσίαση δεν περιέχει αντικείμενα OLE."
+
+#: minimizer/minimizer.src#STR_SLIDES.STRING.TEXT
+msgid  "Slides"
+msgstr "Διαφάνειες"
+
+#: minimizer/minimizer.src#STR_CHOOSE_SLIDES.STRING.TEXT
+msgid  "Choose which slides to delete"
+msgstr "Επιλέξτε ποίες διαφάνειες θα διαγραφούν"
+
+#: minimizer/minimizer.src#STR_MASTER_PAGES.STRING.TEXT
+msgid  "Master Pages"
+msgstr "Κύριες Σελίδες"
+
+#: minimizer/minimizer.src#STR_DELETE_MASTER_PAGES.STRING.TEXT
+msgid  "Delete unused ~master pages"
+msgstr "Διαγραφή αχρησιμοποίητων ~κύριων σελίδων"
+
+#: minimizer/minimizer.src#STR_DELETE_NOTES_PAGES.STRING.TEXT
+msgid  "~Clear notes"
+msgstr "Ε~κκαθάριση σημειώσεων"
+
+#: minimizer/minimizer.src#STR_DELETE_HIDDEN_SLIDES.STRING.TEXT
+msgid  "Delete hidden ~slides"
+msgstr "Διαγραφή κρυ~φών διαφανειών"
+
+#: minimizer/minimizer.src#STR_CUSTOM_SHOW.STRING.TEXT
+msgid  "Delete slides that are not used for the ~custom slide show"
+msgstr "Διαγραφή διαφανειών που δεν χρησιμοποιούνται στην ~προσαρμοσμένη παρουσίαση οθόνης"
+
+#: minimizer/minimizer.src#STR_SUMMARY.STRING.TEXT
+msgid  "Summary"
+msgstr "Περίληψη"
+
+#: minimizer/minimizer.src#STR_SUMMARY_TITLE.STRING.TEXT
+msgid  "Choose where to apply the following changes"
+msgstr "Επιλέξτε που θα εφαρμοστούν οι ακόλουθες αλλαγές"
+
+#: minimizer/minimizer.src#STR_PROGRESS.STRING.TEXT
+msgid  "Progress"
+msgstr "Πρόοδος"
+
+#: minimizer/minimizer.src#STR_OBJECTS_OPTIMIZED.STRING.TEXT
+msgid  "Objects optimized"
+msgstr "Βελτιστοποιημένα αντικείμενα"
+
+#: minimizer/minimizer.src#STR_APPLY_TO_CURRENT.STRING.TEXT
+msgid  "~Apply changes to current presentation"
+msgstr "Ε~φαρμογή αλλαγών στην τρέχουσα παρουσίαση"
+
+#: minimizer/minimizer.src#STR_AUTOMATICALLY_OPEN.STRING.TEXT
+msgid  "~Open newly created presentation"
+msgstr "Άν~οιγμα πρόσφατης παρουσίασης"
+
+#: minimizer/minimizer.src#STR_SAVE_SETTINGS.STRING.TEXT
+msgid  "~Save settings as"
+msgstr "~Αποθήκευση ρυθμίσεων ως"
+
+#: minimizer/minimizer.src#STR_SAVE_AS.STRING.TEXT
+msgid  "~Duplicate presentation before applying changes"
+msgstr "~Δημιουργία διπλότυπου της παρουσίασης πριν την εφαρμογή των αλλαγών"
+
+#: minimizer/minimizer.src#STR_DELETE_SLIDES.STRING.TEXT
+msgid  "Delete %SLIDES slides."
+msgstr "Διαγραφή διαφανειών %SLIDES."
+
+#: minimizer/minimizer.src#STR_OPTIMIZE_IMAGES.STRING.TEXT
+msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
+msgstr "Βελτιστοποίηση γραφικών %IMAGES σε ποιότητα JPEG %QUALITY% σε %RESOLUTION DPI."
+
+#: minimizer/minimizer.src#STR_CREATE_REPLACEMENT.STRING.TEXT
+msgid  "Create replacement graphics for %OLE objects."
+msgstr "Δημιουργία γραφικών αντικατάστασης για αντικείμενα %OLE."
+
+#: minimizer/minimizer.src#STR_CURRENT_FILESIZE.STRING.TEXT
+msgid  "Current file size:"
+msgstr "Τρέχον μέγεθος αρχείου:"
+
+#: minimizer/minimizer.src#STR_ESTIMATED_FILESIZE.STRING.TEXT
+msgid  "Estimated new file size:"
+msgstr "Νέο μέγεθος αρχείου κατά προσέγγιση:"
+
+#: minimizer/minimizer.src#STR_MB.STRING.TEXT
+msgid  "%1 MB"
+msgstr "%1 MB"
+
+#: minimizer/minimizer.src#STR_MY_SETTINGS.STRING.TEXT
+msgid  "My Settings "
+msgstr "Οι Ρυθμίσεις Μου "
+
+#: minimizer/minimizer.src#STR_DEFAULT_SESSION.STRING.TEXT
+msgid  "default session"
+msgstr "προεπιλεγμένη συνεδρία"
+
+#: minimizer/minimizer.src#STR_MODIFY_WARNING.STRING.TEXT
+msgid  "The optimization will modify the current document. Do you want to continue?"
+msgstr "Η βελτιστοποίηση θα τροποποιήσει το τρέχον έγγραφο. Θέλετε να συνεχίσετε;"
+
+#: minimizer/minimizer.src#STR_YES.STRING.TEXT
+msgid  "~Yes"
+msgstr "Ναι"
+
+#: minimizer/minimizer.src#STR_OK.STRING.TEXT
+msgid  "OK"
+msgstr "OK"
+
+#: minimizer/minimizer.src#STR_INFO_1.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
+msgstr "Ο Ελαχιστοποιητής παρουσιάσεων ενημέρωσε με επιτυχία την παρουσίαση '%TITLE'. Το μέγεθος του αρχείου μεταβλήθηκε από %OLDFILESIZE MB σε %NEWFILESIZE MB."
+
+#: minimizer/minimizer.src#STR_INFO_2.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
+msgstr "Ο Ελαχιστοποιητής παρουσιάσεων ενημέρωσε με επιτυχία την παρουσίαση '%TITLE'. Το μέγεθος του αρχείου μεταβλήθηκε από %OLDFILESIZE MB σε %NEWFILESIZE MB."
+
+#: minimizer/minimizer.src#STR_INFO_3.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
+msgstr "Ο Ελαχιστοποιητής παρουσιάσεων ενημέρωσε με επιτυχία την παρουσίαση '%TITLE'. Το μέγεθος του αρχείου μεταβλήθηκε σε %NEWFILESIZE MB."
+
+#: minimizer/minimizer.src#STR_INFO_4.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
+msgstr "Ο Ελαχιστοποιητής παρουσιάσεων ενημέρωσε με επιτυχία την παρουσίαση '%TITLE'. Το μέγεθος του αρχείου μεταβλήθηκε σε περίπου %NEWFILESIZE MB."
+
+#: minimizer/minimizer.src#STR_DUPLICATING_PRESENTATION.STRING.TEXT
+msgid  "Duplicating presentation..."
+msgstr "Αναπαραγωγή παρουσίασης..."
+
+#: minimizer/minimizer.src#STR_DELETING_SLIDES.STRING.TEXT
+msgid  "Deleting slides..."
+msgstr "Διαγραφή διαφανειών..."
+
+#: minimizer/minimizer.src#STR_OPTIMIZING_GRAPHICS.STRING.TEXT
+msgid  "Optimizing graphics..."
+msgstr "Βελτιστοποίηση γραφικών..."
+
+#: minimizer/minimizer.src#STR_CREATING_OLE_REPLACEMENTS.STRING.TEXT
+msgid  "Creating replacement graphics for OLE objects..."
+msgstr "Δημιουργία γραφικών αντικατάστασης για αντικείμενα OLE..."
+
+#: minimizer/minimizer.src#STR_FILESIZESEPARATOR.STRING.TEXT
+msgid  "."
+msgstr "."

@@ -31,93 +31,21 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Create New Directory"
-msgstr "Sortu direktorio berria"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_LISTVIEW.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "List"
-msgstr "Zerrenda"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_DETAILSVIEW.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Details"
-msgstr "Xehetasunak"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_UP.MENUBUTTON.QUICKHELPTEXT
-msgid  "Up One Level"
-msgstr "Igo maila bat"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_STANDARD.MENUBUTTON.QUICKHELPTEXT
-msgid  "Default Directory"
-msgstr "Direktorio lehenetsia"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
-msgid  "File ~name:"
-msgstr "~Fitxategi-izena:"
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILETYPE.FIXEDTEXT.TEXT
 msgid  "File ~type:"
 msgstr "~Fitxategi mota:"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_READONLY.CHECKBOX.TEXT
-msgid  "~Read-only"
-msgstr "~Irakurtzeko soilik"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_PASSWORD.CHECKBOX.TEXT
 msgid  "Save with password"
 msgstr "Gorde pasahitzarekin"
 
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_AUTO_EXTENSION.CHECKBOX.TEXT
-msgid  "~Automatic file name extension"
-msgstr "~Fitxategi-izenaren luzapen automatikoa"
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_OPTIONS.CHECKBOX.TEXT
 msgid  "Edit ~filter settings"
 msgstr "Editatu ~iragazki-ezarpenak"
 
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_OPEN.PUSHBUTTON.TEXT
-msgid  "~Open"
-msgstr "~Ireki"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_OPEN.STRING.TEXT
-msgid  "Open"
-msgstr "Ireki"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_SAVE.STRING.TEXT
-msgid  "Save as"
-msgstr "Gorde honela"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_BUTTONSAVE.STRING.TEXT
-msgid  "~Save"
-msgstr "~Gorde"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHNAME.STRING.TEXT
-msgid  "~Path:"
-msgstr "~Bide-izena:"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHSELECT.STRING.TEXT
-msgid  "Select path"
-msgstr "Hautatu bide-izena"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_BUTTONSELECT.STRING.TEXT
-msgid  "~Select"
-msgstr "~Hautatu"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_ACTUALVERSION.STRING.TEXT
-msgid  "Current version"
-msgstr "Uneko bertsioa"
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PREVIEW.STRING.TEXT
 msgid  "File Preview"
 msgstr "Artxiboaren aurre-bista"
-
-#: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FT_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDTEXT.TEXT
-msgid  "Na~me"
-msgstr "~Izena"
-
-#: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FL_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDLINE.TEXT
-msgid  "Create new folder"
-msgstr "Sortu karpeta berria"
 
 #: office/iodlg.src#RID_FILEOPEN_INVALIDFOLDER.STRING.TEXT
 msgid  "$name$ does not exist."
@@ -127,17 +55,9 @@ msgstr "$name$ ez dago."
 msgid  "The file $name$ does not exist.\nMake sure you have entered the correct file name."
 msgstr "$name$ fitxategia ez dago.\nZiurtatu fitxategi-izen zuzena adierazi duzula."
 
-#: office/iodlg.src#STR_FILTERNAME_ALL.STRING.TEXT
-msgid  "All files (*.*)"
-msgstr "Fitxategi guztiak (*.*)"
-
 #: office/iodlg.src#STR_SVT_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
 msgstr "Fitxategia badago lehendik. Gainidatzi?"
-
-#: office/iodlg.src#STR_SVT_NEW_FOLDER.STRING.TEXT
-msgid  "Folder"
-msgstr "Karpeta"
 
 #: office/iodlg.src#STR_SVT_NOREMOVABLEDEVICE.STRING.TEXT
 msgid  "No removable storage device detected.\nMake sure it is plugged in properly and try again."
@@ -147,57 +67,21 @@ msgstr "Ez da detektatu ken daitekeen biltegi-gailurik.\nZiurtatu behar bezala k
 msgid  "All Formats"
 msgstr "Formatu guztiak"
 
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_AUTO_EXTENSION.STRING.TEXT
-msgid  "~Automatic file name extension"
-msgstr "~Fitxategi-izenaren luzapen automatikoa"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_PASSWORD.STRING.TEXT
-msgid  "Save with pass~word"
-msgstr "Gorde ~pasahitzarekin"
-
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_OPTIONS.STRING.TEXT
 msgid  "~Edit filter settings"
 msgstr "Editatu ~iragazki-ezarpenak"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_READONLY.STRING.TEXT
-msgid  "~Read-only"
-msgstr "~Irakurtzeko soilik"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_INSERT_AS_LINK.STRING.TEXT
-msgid  "~Link"
-msgstr "E~stekatu"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_SHOW_PREVIEW.STRING.TEXT
-msgid  "Pr~eview"
-msgstr "Aurr~ebista"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_PLAY.STRING.TEXT
 msgid  "~Play"
 msgstr "~Erreproduzitu"
 
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_VERSION.STRING.TEXT
-msgid  "~Version:"
-msgstr "~Bertsioa:"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_TEMPLATES.STRING.TEXT
-msgid  "S~tyles:"
-msgstr "Es~tiloak:"
-
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_IMAGE_TEMPLATE.STRING.TEXT
 msgid  "Style:"
 msgstr "Estiloa:"
 
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_SELECTION.STRING.TEXT
-msgid  "~Selection"
-msgstr "~Hautapena"
-
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_TITLE.STRING.TEXT
 msgid  "File ~type:"
 msgstr "~Fitxategi mota:"
-
-#: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_TITLE.STRING.TEXT
-msgid  "Select Path"
-msgstr "Hautatu bide-izena"
 
 #: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_DESCRIPTION.STRING.TEXT
 msgid  "Please select a folder."

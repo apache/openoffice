@@ -31,14 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.ITEM1.ITEMLIST.ITEM
-msgid  "Greek"
-msgstr "Grec"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.ITEM2.ITEMLIST.ITEM
-msgid  "Special"
-msgstr "Especial"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM1.ITEMLIST.ITEM
 msgid  "alpha"
 msgstr "alfa"
@@ -66,10 +58,6 @@ msgstr "GAMMA"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM7.ITEMLIST.ITEM
 msgid  "delta"
 msgstr "delta"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM8.ITEMLIST.ITEM
-msgid  "DELTA"
-msgstr "DELTA"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM9.ITEMLIST.ITEM
 msgid  "epsilon"
@@ -103,10 +91,6 @@ msgstr "theta"
 msgid  "THETA"
 msgstr "THETA"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM17.ITEMLIST.ITEM
-msgid  "iota"
-msgstr "iota"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM18.ITEMLIST.ITEM
 msgid  "IOTA"
 msgstr "IOTA"
@@ -127,49 +111,25 @@ msgstr "lambda"
 msgid  "LAMBDA"
 msgstr "LAMBDA"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM23.ITEMLIST.ITEM
-msgid  "mu"
-msgstr "mu"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM24.ITEMLIST.ITEM
 msgid  "MU"
 msgstr "MU"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM25.ITEMLIST.ITEM
-msgid  "nu"
-msgstr "nu"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM26.ITEMLIST.ITEM
 msgid  "NU"
 msgstr "NU"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM27.ITEMLIST.ITEM
-msgid  "xi"
-msgstr "xi"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM28.ITEMLIST.ITEM
 msgid  "XI"
 msgstr "XI"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM29.ITEMLIST.ITEM
-msgid  "omicron"
-msgstr "òmicron"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM30.ITEMLIST.ITEM
 msgid  "OMICRON"
 msgstr "ÒMICRON"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM31.ITEMLIST.ITEM
-msgid  "pi"
-msgstr "pi"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM32.ITEMLIST.ITEM
 msgid  "PI"
 msgstr "PI"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM33.ITEMLIST.ITEM
-msgid  "rho"
-msgstr "rho"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM34.ITEMLIST.ITEM
 msgid  "RHO"
@@ -190,10 +150,6 @@ msgstr "tau"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM38.ITEMLIST.ITEM
 msgid  "TAU"
 msgstr "TAU"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM39.ITEMLIST.ITEM
-msgid  "upsilon"
-msgstr "ípsilon"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM40.ITEMLIST.ITEM
 msgid  "UPSILON"
@@ -230,30 +186,6 @@ msgstr "omega"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM48.ITEMLIST.ITEM
 msgid  "OMEGA"
 msgstr "OMEGA"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM49.ITEMLIST.ITEM
-msgid  "varepsilon"
-msgstr "varèpsilon"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM50.ITEMLIST.ITEM
-msgid  "vartheta"
-msgstr "vartheta"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM51.ITEMLIST.ITEM
-msgid  "varpi"
-msgstr "varpi"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM52.ITEMLIST.ITEM
-msgid  "varrho"
-msgstr "varrho"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM53.ITEMLIST.ITEM
-msgid  "varsigma"
-msgstr "varsigma"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM54.ITEMLIST.ITEM
-msgid  "varphi"
-msgstr "varfi"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM55.ITEMLIST.ITEM
 msgid  "element"
@@ -1023,61 +955,13 @@ msgstr "Punts cap amunt"
 msgid  "Dots to Bottom"
 msgstr "Punts cap avall"
 
-#: commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MENUITEM.TEXT
-msgid  "~Unary/Binary Operators"
-msgstr "~Operadors unaris i binaris"
-
-#: commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MENUITEM.TEXT
-msgid  "~Relations"
-msgstr "~Relacions"
-
-#: commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MENUITEM.TEXT
-msgid  "~Set Operations"
-msgstr "~Operacions amb conjunts"
-
-#: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MENUITEM.TEXT
-msgid  "~Functions"
-msgstr "~Funcions"
-
 #: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MENUITEM.TEXT
 msgid  "More"
 msgstr "Més"
 
-#: commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MENUITEM.TEXT
-msgid  "O~perators"
-msgstr "O~peradors"
-
-#: commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MENUITEM.TEXT
-msgid  "~Attributes"
-msgstr "~Atributs"
-
-#: commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MENUITEM.TEXT
-msgid  "~Brackets"
-msgstr "~Claudàtors"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MENUITEM.TEXT
-msgid  "For~mats"
-msgstr "For~mats"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MENUITEM.TEXT
-msgid  "New Line"
-msgstr "Línia nova"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MENUITEM.TEXT
-msgid  "Small Gap"
-msgstr "Separació petita"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MENUITEM.TEXT
-msgid  "Gap"
-msgstr "Separació"
-
 #: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MENUITEM.TEXT
 msgid  "nospace {...}"
 msgstr "sense espai {...}"
-
-#: commands.src#RID_COMMANDMENU.RID_MISC_MENU.MENUITEM.TEXT
-msgid  "~Others"
-msgstr "~Altres"
 
 #: smres.src#RID_FONTDIALOG.MODALDIALOG.TEXT
 msgid  "Fonts"
@@ -1087,81 +971,17 @@ msgstr "Tipus de lletra"
 msgid  "~Font"
 msgstr "~Tipus de lletra"
 
-#: smres.src#RID_FONTDIALOG.1.CHECKBOX.TEXT
-msgid  "~Bold"
-msgstr "~Negreta"
-
-#: smres.src#RID_FONTDIALOG.2.CHECKBOX.TEXT
-msgid  "~Italic"
-msgstr "~Cursiva"
-
-#: smres.src#RID_FONTDIALOG.2.FIXEDTEXT.TEXT
-msgid  "Attributes"
-msgstr "Atributs"
-
-#: smres.src#RID_FONTSIZEDIALOG.MODALDIALOG.TEXT
-msgid  "Font Sizes"
-msgstr "Mides de lletra"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "Base ~size"
-msgstr "Mida de la ~base"
-
 #: smres.src#RID_FONTSIZEDIALOG.4.FIXEDTEXT.TEXT
 msgid  "~Text"
 msgstr "~Text"
-
-#: smres.src#RID_FONTSIZEDIALOG.5.FIXEDTEXT.TEXT
-msgid  "~Indexes"
-msgstr "Í~ndexs"
 
 #: smres.src#RID_FONTSIZEDIALOG.6.FIXEDTEXT.TEXT
 msgid  "~Functions"
 msgstr "~Funcions"
 
-#: smres.src#RID_FONTSIZEDIALOG.7.FIXEDTEXT.TEXT
-msgid  "~Operators"
-msgstr "~Operadors"
-
-#: smres.src#RID_FONTSIZEDIALOG.8.FIXEDTEXT.TEXT
-msgid  "~Limits"
-msgstr "~Límits"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Relative sizes"
-msgstr "Mides relatives"
-
 #: smres.src#RID_FONTSIZEDIALOG.1.PUSHBUTTON.TEXT
 msgid  "~Default"
 msgstr "Per ~defecte"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Formula fonts"
-msgstr "Tipus de lletra de les fórmules"
-
-#: smres.src#RID_FONTTYPEDIALOG.2.FIXEDLINE.TEXT
-msgid  "Custom fonts"
-msgstr "Tipus de lletra d'usuari"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Variables"
-msgstr "~Variables"
-
-#: smres.src#RID_FONTTYPEDIALOG.3.FIXEDTEXT.TEXT
-msgid  "~Numbers"
-msgstr "~Números"
-
-#: smres.src#RID_FONTTYPEDIALOG.5.FIXEDTEXT.TEXT
-msgid  "~Serif"
-msgstr "~Serif"
-
-#: smres.src#RID_FONTTYPEDIALOG.6.FIXEDTEXT.TEXT
-msgid  "S~ans"
-msgstr "S~ans"
-
-#: smres.src#RID_FONTTYPEDIALOG.7.FIXEDTEXT.TEXT
-msgid  "F~ixed"
-msgstr "Amplada f~ixa"
 
 #: smres.src#RID_FONTTYPEDIALOG.1.MENUBUTTON.TEXT
 msgid  "~Modify"
@@ -1171,21 +991,9 @@ msgstr "~Modifica"
 msgid  "Spacing"
 msgstr "Espaiat"
 
-#: smres.src#RID_DISTANCEDIALOG.1.METRICFIELD.CUSTOMUNITTEXT
-msgid  "%"
-msgstr "%"
-
-#: smres.src#RID_DISTANCEDIALOG.1.CHECKBOX.TEXT
-msgid  "Scale all brackets"
-msgstr "Dimensiona tots els claudàtors"
-
 #: smres.src#RID_DISTANCEDIALOG.1.MENUBUTTON.TEXT
 msgid  "~Category"
 msgstr "~Categoria"
-
-#: smres.src#RID_DISTANCEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Category"
-msgstr "Categoria"
 
 #: smres.src#RID_DISTANCEDIALOG.1.2.STRING.TEXT
 msgid  "~Spacing"
@@ -1203,81 +1011,29 @@ msgstr "Espaiat de l'a~rrel"
 msgid  "Indexes"
 msgstr "Índexs"
 
-#: smres.src#RID_DISTANCEDIALOG.2.2.STRING.TEXT
-msgid  "~Superscript"
-msgstr "~Superíndex"
-
-#: smres.src#RID_DISTANCEDIALOG.2.3.STRING.TEXT
-msgid  "S~ubscript"
-msgstr "S~ubíndex"
-
 #: smres.src#RID_DISTANCEDIALOG.3.1.STRING.TEXT
 msgid  "Fractions"
 msgstr "Fraccions"
-
-#: smres.src#RID_DISTANCEDIALOG.3.2.STRING.TEXT
-msgid  "~Numerator"
-msgstr "~Numerador"
-
-#: smres.src#RID_DISTANCEDIALOG.3.3.STRING.TEXT
-msgid  "~Denominator"
-msgstr "~Denominador"
-
-#: smres.src#RID_DISTANCEDIALOG.4.1.STRING.TEXT
-msgid  "Fraction bar"
-msgstr "Barra de fraccions"
 
 #: smres.src#RID_DISTANCEDIALOG.4.2.STRING.TEXT
 msgid  "~Excess length"
 msgstr "Longitud de l'~excés"
 
-#: smres.src#RID_DISTANCEDIALOG.4.3.STRING.TEXT
-msgid  "~Weight"
-msgstr "~Pes"
-
 #: smres.src#RID_DISTANCEDIALOG.5.1.STRING.TEXT
 msgid  "Limits"
 msgstr "Límits"
-
-#: smres.src#RID_DISTANCEDIALOG.5.2.STRING.TEXT
-msgid  "~Upper limit"
-msgstr "Límit s~uperior"
-
-#: smres.src#RID_DISTANCEDIALOG.5.3.STRING.TEXT
-msgid  "~Lower limit"
-msgstr "~Límit inferior"
 
 #: smres.src#RID_DISTANCEDIALOG.6.1.STRING.TEXT
 msgid  "Brackets"
 msgstr "Claudàtors"
 
-#: smres.src#RID_DISTANCEDIALOG.6.2.STRING.TEXT
-msgid  "~Excess size (left/right)"
-msgstr "Mida de l'~excés (esquerra/dreta)"
-
 #: smres.src#RID_DISTANCEDIALOG.6.5.STRING.TEXT
 msgid  "~Excess size"
 msgstr "Mida de l'~excés"
 
-#: smres.src#RID_DISTANCEDIALOG.7.1.STRING.TEXT
-msgid  "Matrix"
-msgstr "Matriu"
-
-#: smres.src#RID_DISTANCEDIALOG.7.3.STRING.TEXT
-msgid  "~Column spacing"
-msgstr "Espaiat de la ~columna"
-
 #: smres.src#RID_DISTANCEDIALOG.8.1.STRING.TEXT
 msgid  "Symbols"
 msgstr "Símbols"
-
-#: smres.src#RID_DISTANCEDIALOG.8.2.STRING.TEXT
-msgid  "~Primary height"
-msgstr "Alçada ~primària"
-
-#: smres.src#RID_DISTANCEDIALOG.8.3.STRING.TEXT
-msgid  "~Minimum spacing"
-msgstr "Espaiat ~mínim"
 
 #: smres.src#RID_DISTANCEDIALOG.9.1.STRING.TEXT
 msgid  "Operators"
@@ -1295,49 +1051,9 @@ msgstr "~Esquerra"
 msgid  "~Right"
 msgstr "~Dreta"
 
-#: smres.src#RID_DISTANCEDIALOG.10.4.STRING.TEXT
-msgid  "~Top"
-msgstr "~Superior"
-
-#: smres.src#RID_DISTANCEDIALOG.10.5.STRING.TEXT
-msgid  "~Bottom"
-msgstr "~Inferior"
-
-#: smres.src#RID_ALIGNDIALOG.MODALDIALOG.TEXT
-msgid  "Alignment"
-msgstr "Alineació"
-
-#: smres.src#RID_ALIGNDIALOG.2.RADIOBUTTON.TEXT
-msgid  "~Centered"
-msgstr "~Centrat"
-
-#: smres.src#RID_ALIGNDIALOG.1.FIXEDLINE.TEXT
-msgid  "Horizontal"
-msgstr "Horitzontal"
-
-#: smres.src#RID_PRINTOPTIONPAGE.TABPAGE.TEXT
-msgid  "Formula Options:Settings"
-msgstr "Opcions de fórmula: Configuració"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.FIXEDLINE.TEXT
-msgid  "Print options"
-msgstr "Opcions d'impressió"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.CHECKBOX.TEXT
-msgid  "~Title row"
-msgstr "~Fila del títol"
-
 #: smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CHECKBOX.TEXT
 msgid  "~Formula text"
 msgstr "~Text de la fórmula"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CHECKBOX.TEXT
-msgid  "B~order"
-msgstr "V~ora"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINT_FORMAT.FIXEDLINE.TEXT
-msgid  "Print format"
-msgstr "Format d'impressió"
 
 #: smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RADIOBUTTON.TEXT
 msgid  "O~riginal size"
@@ -1351,10 +1067,6 @@ msgstr "Ajusta a la ~pàgina"
 msgid  "~Scaling"
 msgstr "Redimen~sionament"
 
-#: smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FIXEDLINE.TEXT
-msgid  "Miscellaneous options"
-msgstr "Altres opcions"
-
 #: smres.src#RID_PRINTOPTIONPAGE.CB_IGNORE_SPACING.CHECKBOX.TEXT
 msgid  "Ig~nore ~~ and ` at the end of the line"
 msgstr "Ig~nora ~~ i ` a final de línia"
@@ -1363,73 +1075,21 @@ msgstr "Ig~nora ~~ i ` a final de línia"
 msgid  "Embed only used symbols (smaller file size)"
 msgstr "Incrusta només els símbols utilitzats (mida del fitxer més petita)"
 
-#: smres.src#RID_SYMBOLDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Symbol set"
-msgstr "Conjunt de ~símbols"
-
 #: smres.src#RID_SYMBOLDIALOG.2.FIXEDTEXT.TEXT
 msgid  "Unknown"
 msgstr "Desconegut"
-
-#: smres.src#RID_SYMBOLDIALOG.2.PUSHBUTTON.TEXT
-msgid  "~Insert"
-msgstr "~Insereix"
-
-#: smres.src#RID_SYMBOLDIALOG.3.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Tanca"
-
-#: smres.src#RID_SYMBOLDIALOG.1.PUSHBUTTON.TEXT
-msgid  "~Edit..."
-msgstr "~Edita..."
-
-#: smres.src#RID_SYMDEFINEDIALOG.MODALDIALOG.TEXT
-msgid  "Edit Symbols"
-msgstr "Edita símbols"
-
-#: smres.src#RID_SYMDEFINEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Old symbol"
-msgstr "Símb~ol anterior"
-
-#: smres.src#RID_SYMDEFINEDIALOG.2.FIXEDTEXT.TEXT
-msgid  "O~ld symbol set"
-msgstr "Conjunt de símbo~ls anterior"
-
-#: smres.src#RID_SYMDEFINEDIALOG.9.FIXEDTEXT.TEXT
-msgid  "~Symbol"
-msgstr "~Símbol"
-
-#: smres.src#RID_SYMDEFINEDIALOG.10.FIXEDTEXT.TEXT
-msgid  "Symbol s~et"
-msgstr "Con~junt de símbols"
-
-#: smres.src#RID_SYMDEFINEDIALOG.FT_FONTS_SUBSET.FIXEDTEXT.TEXT
-msgid  "~Subset"
-msgstr "~Subconjunt"
-
-#: smres.src#RID_SYMDEFINEDIALOG.4.FIXEDTEXT.TEXT
-msgid  "~Typeface"
-msgstr "T~ipografia"
 
 #: smres.src#RID_SYMDEFINEDIALOG.1.PUSHBUTTON.TEXT
 msgid  "~Add"
 msgstr "~Afegeix"
 
-#: smres.src#RID_SYMDEFINEDIALOG.3.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "~Suprimeix"
+#: smres.src#RID_NOMATHTYPEFACEWARNING.WARNINGBOX.MESSAGE
+msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr "No teniu instal·lat el tipus de lletra \"StarMath\".\nSense aquest tipus de lletra l'%PRODUCTNAME Math no funcionarà correctament.\nInstal·leu aquest tipus de lletra i reinicieu l'%PRODUCTNAME Math."
 
-#: smres.src#RID_FONTREGULAR.STRING.TEXT
-msgid  "Standard"
-msgstr "Estàndard"
-
-#: smres.src#RID_FONTITALIC.STRING.TEXT
-msgid  "Italic"
-msgstr "Cursiva"
-
-#: smres.src#RID_FONTBOLD.STRING.TEXT
-msgid  "Bold"
-msgstr "Negreta"
+#: smres.src#RID_DEFAULTSAVEQUERY.QUERYBOX.MESSAGE
+msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
+msgstr "Voleu desar els canvis com a valors per defecte?\n\nAquests canvis tindran efecte en totes les fórmules noves."
 
 #: smres.src#RID_VIEWMENU.SID_VIEW050.MENUITEM.TEXT
 msgid  "~View 50%"
@@ -1451,153 +1111,17 @@ msgstr "~Amplia"
 msgid  "Zoom ~Out"
 msgstr "~Redueix"
 
-#: smres.src#RID_VIEWMENU.SID_ADJUST.MENUITEM.TEXT
-msgid  "~Display All"
-msgstr "~Mostra-ho tot"
-
-#: smres.src#RID_VIEWMENU.SID_DRAW.MENUITEM.TEXT
-msgid  "U~pdate"
-msgstr "Act~ualitza"
-
-#: smres.src#RID_DISTANCEMENU.4.MENUITEM.TEXT
-msgid  "Fraction Bars"
-msgstr "Barres de fracció"
-
-#: smres.src#RID_DISTANCEMENU.7.MENUITEM.TEXT
-msgid  "Matrices"
-msgstr "Matrius"
-
-#: smres.src#RID_FONTMENU.1.MENUITEM.TEXT
-msgid  "Variables"
-msgstr "Variables"
-
-#: smres.src#RID_FONTMENU.2.MENUITEM.TEXT
-msgid  "Functions"
-msgstr "Funcions"
-
-#: smres.src#RID_FONTMENU.3.MENUITEM.TEXT
-msgid  "Numbers"
-msgstr "Números"
-
-#: smres.src#RID_FONTMENU.4.MENUITEM.TEXT
-msgid  "Text"
-msgstr "Text"
-
-#: smres.src#RID_FONTMENU.5.MENUITEM.TEXT
-msgid  "Serif"
-msgstr "Serif"
-
-#: smres.src#RID_FONTMENU.6.MENUITEM.TEXT
-msgid  "Sans"
-msgstr "Sans"
-
-#: smres.src#RID_FONTMENU.7.MENUITEM.TEXT
-msgid  "Fixed"
-msgstr "Amplada fixa"
-
-#: smres.src#CMDBOXWINDOW_TEXT.#DEFINE.TEXT
-msgid  "Commands"
-msgstr "Ordres"
-
-#: smres.src#RID_DOCUMENTSTR.STRING.TEXT
-msgid  "Formula"
-msgstr "Fórmula"
-
-#: smres.src#STR_STATSTR_READING.STRING.TEXT
-msgid  "Loading document..."
-msgstr "S'està carregant el document..."
-
-#: smres.src#STR_STATSTR_WRITING.STRING.TEXT
-msgid  "Saving document..."
-msgstr "S'està desant el document..."
-
-#: smres.src#STR_MATH_DOCUMENT_FULLTYPE_CURRENT.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Formula"
-msgstr "Fórmula de l'%PRODUCTNAME %PRODUCTVERSION"
-
-#: smres.src#RID_SYMBOLFILESSTR.STRING.TEXT
-msgid  "Symbol files (*.sms)"
-msgstr "Fitxers de símbols (*.sms)"
-
-#: smres.src#RID_ALLFILESSTR.STRING.TEXT
-msgid  "All Files (*.*)"
-msgstr "Tots els fitxers (*.*)"
-
 #: smres.src#RID_ERR_IDENT.STRING.TEXT
 msgid  "ERROR : "
 msgstr "ERROR : "
-
-#: smres.src#RID_ERR_UNKOWN.STRING.TEXT
-msgid  "Unknown error occurred"
-msgstr "S'ha produït un error desconegut"
 
 #: smres.src#RID_ERR_UNEXPECTEDCHARACTER.STRING.TEXT
 msgid  "Unexpected character"
 msgstr "Caràcter no esperat"
 
-#: smres.src#RID_ERR_OVERFLOW.STRING.TEXT
-msgid  "Formula entry too complex"
-msgstr "La fórmula és massa complexa"
-
-#: smres.src#RID_ERR_LGROUPEXPECTED.STRING.TEXT
-msgid  "'{' expected"
-msgstr "S'esperava '{'"
-
-#: smres.src#RID_ERR_RGROUPEXPECTED.STRING.TEXT
-msgid  "'}' expected"
-msgstr "S'esperava '}'"
-
-#: smres.src#RID_ERR_LBRACEEXPECTED.STRING.TEXT
-msgid  "'(' expected"
-msgstr "S'esperava '('"
-
-#: smres.src#RID_ERR_RBRACEEXPECTED.STRING.TEXT
-msgid  "')' expected"
-msgstr "S'esperava ')'"
-
-#: smres.src#RID_ERR_FUNCEXPECTED.STRING.TEXT
-msgid  "Function expected"
-msgstr "S'esperava una funció"
-
-#: smres.src#RID_ERR_UNOPEREXPECTED.STRING.TEXT
-msgid  "Unary operator expected"
-msgstr "S'esperava un operador unari"
-
-#: smres.src#RID_ERR_BINOPEREXPECTED.STRING.TEXT
-msgid  "Binary operator expected"
-msgstr "S'esperava un operador binari"
-
-#: smres.src#RID_ERR_SYMBOLEXPECTED.STRING.TEXT
-msgid  "Symbol expected"
-msgstr "S'esperava un símbol"
-
-#: smres.src#RID_ERR_IDENTEXPECTED.STRING.TEXT
-msgid  "Identifier expected"
-msgstr "S'esperava un identificador"
-
-#: smres.src#RID_ERR_POUNDEXPECTED.STRING.TEXT
-msgid  "'#' expected"
-msgstr "S'esperava '#'"
-
-#: smres.src#RID_ERR_COLOREXPECTED.STRING.TEXT
-msgid  "Color required"
-msgstr "Es necessita un color"
-
-#: smres.src#RID_ERR_LPARENTEXPECTED.STRING.TEXT
-msgid  "Left limit expected"
-msgstr "S'esperava el límit per l'esquerra"
-
-#: smres.src#RID_ERR_RPARENTEXPECTED.STRING.TEXT
-msgid  "Right limit expected"
-msgstr "S'esperava el límit per la dreta"
-
 #: smres.src#RID_ERR_RIGHTEXPECTED.STRING.TEXT
 msgid  "'RIGHT' expected"
 msgstr "S'esperava 'RIGHT'"
-
-#: smres.src#RID_MATH_TOOLBOX.STRING.TEXT
-msgid  "Main Toolbar"
-msgstr "Barra d'eines principal"
 
 #: smres.src#RID_PRINTUIOPTIONS.ITEM1.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME %s"

@@ -39,6 +39,25 @@ msgstr "Доклад за грешка в %PRODUCTNAME% %PRODUCTVERSION%"
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Добре дошли при инструмента за докладване на грешки на %PRODUCTNAME% %PRODUCTVERSION%"
 
+#: all/crashrep.ulf#_WELCOME_BODY1_
+#, fuzzy
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr "Инструментът за докладване на грешки събира информация относно работата на %PRODUCTNAME% и я изпраща на Oracle с цел подпомагане усъвършенстването на бъдещите версии.\n\n"
+
+#: all/crashrep.ulf#_WELCOME_BODY2_
+#, fuzzy
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr "Лесно е - можете просто да изпратите доклада без повече бъдещи ангажименти от Ваша страна, като натиснете бутона \"Изпращане\" в следващия диалогов прозорец, или да опишете накратко как е възникнала грешката и след това да натиснете \"Изпращане\". Ако искате да видите доклада, натиснете \"Показване доклад\". Ако натиснете \"Без изпращане\", няма да бъдат изпратени никакви данни.\n\n"
+
+#: all/crashrep.ulf#_WELCOME_BODY3_
+#, fuzzy
+msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr "Защита на личните данни\nСъбраната информация е ограничена само до състоянието на %PRODUCTNAME% %PRODUCTVERSION% при възникването на грешката. Не се събира друга информация относно пароли или съдържание на документи.\n\nИнформацията ще бъде използвана само за подобряване качеството на %PRODUCTNAME% и няма да бъде споделяна с трети страни.\nЗа повече информация относно политиката на Oracle за защита на личните данни, посетете\n"
+
+#: all/crashrep.ulf#_PRIVACY_URL_
+msgid  "http://www.openoffice.org/privacy.html"
+msgstr ""
+
 #: all/crashrep.ulf#_NEXT_BUTTON_
 msgid  "~Next >>"
 msgstr "На~пред >>"
@@ -55,9 +74,19 @@ msgstr "OK"
 msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "Възникнала е грешка при изпълнение на %PRODUCTNAME% %PRODUCTVERSION%"
 
+#: all/crashrep.ulf#_REPORT_BODY_
+#, fuzzy
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr "В доклада за грешка в %PRODUCTNAME% %PRODUCTVERSION% е събрана информация, която може да помогне на Oracle да подобри %PRODUCTNAME%.\nВ долните полета можете да въведете заглавие на доклада и да опишете действията, които сте се опитвали да извършите, когато е възникнала грешката. След това натиснете \"Изпращане\".\n"
+
 #: all/crashrep.ulf#_ENTER_TITLE_
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
 msgstr "Какъв тип документ (напр. презентация) ползвахте при възникване на грешката?"
+
+#: all/crashrep.ulf#_ALLOW_CONTACT_
+#, fuzzy
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr "~Съгласен съм да бъда търсен от Oracle във връзка с доклада."
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
 msgid  "Please enter your e-mail address."
@@ -91,9 +120,19 @@ msgstr "~Съхраняване на доклада..."
 msgid  "Save Report to"
 msgstr "Съхраняване на доклада в"
 
+#: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
+#, fuzzy
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr "Докладът за грешка не може да бъде изпратен, защото стандартната пощенска програма не поддържа MAPI.\n Моля, използвайте пощенска програма, съвместима с MAPI."
+
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr "Докладът за грешка не може да бъде временно записан и съответно - изпратен."
+
+#: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
+#, fuzzy
+msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr "Докладът за грешка не може да бъде изпратен, защото не може да бъде стартирана \"sendmail\".\nМоля, проверете настройките на \"sendmail\"."
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
@@ -135,6 +174,11 @@ msgstr "~HTTP прокси"
 msgid  "~Port"
 msgstr "~Порт"
 
+#: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
+#, fuzzy
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr "Инструментът за докладване на грешки в %PRODUCTNAME% трябва да се свърже с Интернет, за да може да изпрати доклада.\n\nЧесто компаниите използват прокси сървъри, съчетани със защитна стена, за да предпазят мрежата си.\n\nАко Вашият случай е такъв, трябва да посочите адреса и порта на сървъра."
+
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
 msgid  "Sending Error Report"
 msgstr "Изпращане на доклад за грешки"
@@ -147,9 +191,10 @@ msgstr "Състояние: докладът за грешка се изпращ
 msgid  "Status: The error report has been sent successfully."
 msgstr "Състояние: докладът за грешка беше изпратен успешно."
 
-#: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
-msgid  "Usage:"
-msgstr "Употреба:"
+#: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
+#, fuzzy
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr "Отметнали сте полето \"Съгласен съм да бъда търсен отOracle във връзка с доклада.\"\nМоля, въведете адрес за е-поща."
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
 msgid  "-p <process ID>"
@@ -158,3 +203,8 @@ msgstr "-p <идентификатор на процес>"
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "Приписва идентификатора на процеса (PID) на %PRODUCTNAME% на инструмента за докладване на грешки"
+
+#: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
+#, fuzzy
+msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr "Показва този помощен текст.\nПодробна информация можете да намерите в упътването за инсталиране."

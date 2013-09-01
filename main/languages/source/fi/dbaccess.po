@@ -59,10 +59,6 @@ msgstr "Yhteyttä ulkoiseen tietolähteeseen ei saatu muodostettua. SDBC-ajuria 
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
 msgstr "Yhteyttä ulkoiseen tietolähteeseen ei saatu muodostettua. SDBC-ajurinhallintaa ei voitu ladata."
 
-#: core/resource/strings.src#RID_STR_FORM.STRING.TEXT
-msgid  "Form"
-msgstr "Lomake"
-
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
 msgstr "Raportti"
@@ -297,7 +293,7 @@ msgstr "Tietokanta-asiakirjojen upottamista ei tueta."
 
 #: core/resource/strings.src#RID_STR_CONNECTION_REQUEST.STRING.TEXT
 msgid  "A connection for the following URL was requested \"$name$\"."
-msgstr "Yritettiin muodostaa yhteyttä URL-osoitteeseen \"$name\"."
+msgstr "Yritettiin muodostaa yhteyttä URL-osoitteeseen \"$name$\"."
 
 #: core/resource/strings.src#RID_STR_MISSING_EXTENSION.STRING.TEXT
 msgid  "The extension is not installed."
@@ -573,7 +569,7 @@ msgstr "kirjastoja muunnetaan ..."
 
 #: ext/macromigration/macromigration.src#STR_OOO_BASIC.STRING.TEXT
 msgid  "%PRODUCTNAME Basic"
-msgstr "%PRODUCTNAME% Basic"
+msgstr "%PRODUCTNAME Basic"
 
 #: ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.STRING.TEXT
 msgid  "JavaScript"
@@ -627,14 +623,6 @@ msgstr "Toimintoa ei voi suorittaa kirjoitussuojatuille asiakirjoille."
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 msgstr "Taululle ja kyselylle ei voi antaa samaa nimeä. Valitse nimi, joka ei vielä ole kyselyn tai taulun käytössä."
 
-#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Taulu"
-
-#: sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.STRING.TEXT
-msgid  "Query"
-msgstr "Kysely"
-
 #: sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.STRING.TEXT
 msgid  "The given connection is no valid query and/or tables supplier."
 msgstr "Annettu yhteys ei ole kelvollinen kyselyiden tai taulujen toimittaja."
@@ -655,10 +643,6 @@ msgstr "Virheellinen komennon tyyppi: vain TABLE ja QUERY ryhmästä com.sun.sta
 msgid  "Create Form in Design View..."
 msgstr "Luo lomake rakennenäkymässä..."
 
-#: ui/app/app.src#RID_STR_NEW_FORM_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Form..."
-msgstr "Luo lomake ohjatulla toiminnolla..."
-
 #: ui/app/app.src#RID_STR_NEW_REPORT_AUTO.STRING.TEXT
 msgid  "Use Wizard to Create Report..."
 msgstr "Luo raportti ohjatulla toiminnolla..."
@@ -675,25 +659,9 @@ msgstr "Luo kysely rakennenäkymässä..."
 msgid  "Create Query in SQL View..."
 msgstr "Luo kysely SQL-näkymässä..."
 
-#: ui/app/app.src#RID_STR_NEW_QUERY_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Query..."
-msgstr "Luo kysely ohjatulla toiminnolla..."
-
 #: ui/app/app.src#RID_STR_NEW_TABLE.STRING.TEXT
 msgid  "Create Table in Design View..."
 msgstr "Luo taulu rakennenäkymässä..."
-
-#: ui/app/app.src#RID_STR_NEW_TABLE_AUTO.STRING.TEXT
-msgid  "Use Wizard to Create Table..."
-msgstr "Luo taulu ohjatulla toiminnolla..."
-
-#: ui/app/app.src#RID_STR_NEW_VIEW.STRING.TEXT
-msgid  "Create View..."
-msgstr "Luo näkymä..."
-
-#: ui/app/app.src#RID_STR_FORMS_CONTAINER.STRING.TEXT
-msgid  "Forms"
-msgstr "Lomakkeet"
 
 #: ui/app/app.src#RID_STR_REPORTS_CONTAINER.STRING.TEXT
 msgid  "Reports"
@@ -719,14 +687,6 @@ msgstr "Liitä määräten..."
 msgid  "Delete"
 msgstr "Poista"
 
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MENUITEM.TEXT
-msgid  "Rename"
-msgstr "Nimeä uudelleen"
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MENUITEM.TEXT
-msgid  "Edit"
-msgstr "Muokkaa"
-
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MENUITEM.TEXT
 msgid  "Edit in SQL View..."
 msgstr "Muokkaa SQL-näkymässä..."
@@ -734,10 +694,6 @@ msgstr "Muokkaa SQL-näkymässä..."
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MENUITEM.TEXT
 msgid  "Open"
 msgstr "Avaa"
-
-#: ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MENUITEM.TEXT
-msgid  "Create as View"
-msgstr "Luo näkymänä"
 
 #: ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MENUITEM.TEXT
 msgid  "Form Wizard..."
@@ -815,17 +771,9 @@ msgstr "Valitse yritys- ja henkilökohtaisten taulujen mallivalikoimasta muokkaa
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
 msgstr "Luo näkymä määrittelemällä taulut ja kenttien nimet, joiden haluat näkyvän."
 
-#: ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.STRING.TEXT
-msgid  "Opens the view wizard"
-msgstr "Avaa ohjatun näkymätoiminnon"
-
 #: ui/app/app.src#STR_DATABASE.STRING.TEXT
 msgid  "Database"
 msgstr "Tietokanta"
-
-#: ui/app/app.src#STR_TASKS.STRING.TEXT
-msgid  "Tasks"
-msgstr "Tehtävät"
 
 #: ui/app/app.src#STR_DESCRIPTION.STRING.TEXT
 msgid  "Description"
@@ -839,21 +787,13 @@ msgstr "Esikatselu"
 msgid  "Disable Preview"
 msgstr "Poista esikatselu käytöstä"
 
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MENUITEM.TEXT
-msgid  "None"
-msgstr "Ei mitään"
+#: ui/app/app.src#APP_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The database has been modified.\nDo you want to save the changes?"
+msgstr "Tietokantaa on muokattu.\nHaluatko tallentaa muutokset?"
 
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.MENUITEM.TEXT
-msgid  "Document Information"
-msgstr "Asiakirjan tiedot"
-
-#: ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MENUITEM.TEXT
-msgid  "Document"
-msgstr "Asiakirja"
-
-#: ui/app/app.src#RID_STR_FORM.STRING.TEXT
-msgid  "Form"
-msgstr "Lomake"
+#: ui/app/app.src#APP_CLOSEDOCUMENTS.QUERYBOX.MESSAGE
+msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
+msgstr "Yhteyden tyyppiä on muutettu.\nMuutosten voimaan tulemiseksi kaikki lomakkeet, raportit, kyselyt ja taulut on suljettava.\n\nHaluatko sulkea kaikki asiakirjat nyt?"
 
 #: ui/app/app.src#RID_STR_REPORT.STRING.TEXT
 msgid  "Report"
@@ -891,9 +831,9 @@ msgstr "Erityyppisiä kohteita ei voi valita samanaikaisesti."
 msgid  "Unsupported object type found ($type$)."
 msgstr "Tyyppiä $type$ olevia objekteja ei tueta."
 
-#: ui/browser/bcommon.src#RID_STR_TBL_TITLE.STRING.TEXT
-msgid  "Table #"
-msgstr "Taulu #"
+#: ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The current record has been changed.\nDo you want to save the changes?"
+msgstr "Nykyistä tietuetta on muutettu.\nHaluatko tallentaa muutokset?"
 
 #: ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QUERYBOX.MESSAGE
 msgid  "Do you want to delete the selected data?"
@@ -914,14 +854,6 @@ msgstr "Virhe suodatusehtojen määrityksessä"
 #: ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.STRING.TEXT
 msgid  "Connection lost"
 msgstr "Yhteys katkennut"
-
-#: ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.STRING.TEXT
-msgid  "Queries"
-msgstr "Kyselyt"
-
-#: ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.STRING.TEXT
-msgid  "Tables"
-msgstr "Taulut"
 
 #: ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#DEFINE.TEXT
 msgid  "Edit ~Database File..."
@@ -979,10 +911,6 @@ msgstr "Taulumuotoa ei löytynyt."
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "Yhteyttä tietolähteeseen $name$ ei voitu muodostaa."
 
-#: ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MENUITEM.TEXT
-msgid  "Rebuild"
-msgstr "Kokoa uudestaan"
-
 #: ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MENUITEM.TEXT
 msgid  "Column ~Format..."
 msgstr "Sarake~muoto..."
@@ -995,29 +923,9 @@ msgstr "Kopioi sarakkeen ~kuvaus"
 msgid  "Table Format..."
 msgstr "Taulukon muotoilu..."
 
-#: ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MENUITEM.TEXT
-msgid  "Row Height..."
-msgstr "Rivikorkeus..."
-
-#: ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.STRING.TEXT
-msgid  "Undo: Data Input"
-msgstr "Peruuta: tietojen syöttö"
-
 #: ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.STRING.TEXT
 msgid  "Save current record"
 msgstr "Tallenna nykyinen tietue"
-
-#: ui/browser/sbagrid.src#STR_QRY_TITLE.STRING.TEXT
-msgid  "Query #"
-msgstr "Kysely #"
-
-#: ui/browser/sbagrid.src#STR_TBL_TITLE.STRING.TEXT
-msgid  "Table #"
-msgstr "Taulu #"
-
-#: ui/browser/sbagrid.src#STR_VIEW_TITLE.STRING.TEXT
-msgid  "View #"
-msgstr "Näytä #"
 
 #: ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.STRING.TEXT
 msgid  "The name \"#\" already exists."
@@ -1039,85 +947,13 @@ msgstr "Tietolähteen taulunäkymä"
 msgid  "Shows the selected table or query."
 msgstr "Näyttää valitun taulun tai kyselyn."
 
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.STRING.TEXT
-msgid  "Table name"
-msgstr "Taulun nimi"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.STRING.TEXT
-msgid  "Insert data"
-msgstr "Lisää tietoja"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.STRING.TEXT
-msgid  "Delete data"
-msgstr "Poista tiedot"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.STRING.TEXT
-msgid  "Modify data"
-msgstr "Muuta tietoja"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.STRING.TEXT
-msgid  "Alter structure"
-msgstr "Muuta rakennetta"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.STRING.TEXT
-msgid  "Read data"
-msgstr "Lue tietoja"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.STRING.TEXT
-msgid  "Modify references"
-msgstr "Muuta viitteitä"
-
-#: ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.STRING.TEXT
-msgid  "Drop structure"
-msgstr "Poista rakenne"
-
-#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MENUITEM.TEXT
-msgid  "Sort Ascending"
-msgstr "Nouseva lajittelu"
-
-#: ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MENUITEM.TEXT
-msgid  "Sort Descending"
-msgstr "Laskeva lajittelu"
-
-#: ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.STRING.TEXT
-msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr "Yhteyden muodostaminen SDBC-ajurien hallintaan ei onnistu (#servicename#)."
-
 #: ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.STRING.TEXT
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "Ajuria ei ole rekisteröity URL-osoitteelle #connurl#."
 
-#: ui/control/tabletree.src#STR_COULDNOTCONNECT.STRING.TEXT
-msgid  "No connection could be established for the URL #connurl#."
-msgstr "Yhteyden muodostaminen URL-osoitteeseen #connurl# epäonnistui."
-
-#: ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.STRING.TEXT
-msgid  "Please check the current settings, for example user name and password."
-msgstr "Tarkista, että nykyiset asetukset, esimerkiksi salasana- ja käyttäjätunnusasetukset, ovat oikeat."
-
-#: ui/control/tabletree.src#STR_NOTABLEINFO.STRING.TEXT
-msgid  "Successfully connected, but information about database tables is not available."
-msgstr "Yhteys on muodostettu, mutta tietokannan taulutiedot eivät ole käytettävissä."
-
-#: ui/control/tabletree.src#STR_ALL_TABLES.STRING.TEXT
-msgid  "All tables"
-msgstr "Kaikki taulut"
-
-#: ui/control/tabletree.src#STR_ALL_VIEWS.STRING.TEXT
-msgid  "All views"
-msgstr "Kaikki näkymät"
-
-#: ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.STRING.TEXT
-msgid  "All tables and views"
-msgstr "Kaikki taulut ja näkymät"
-
 #: ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.STRING.TEXT
 msgid  "Modify SQL statement(s)"
 msgstr "Muuta SQL-lausetta tai -lauseita"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FIXEDLINE.TEXT
-msgid  "Database files"
-msgstr "Tietokantatiedostot"
 
 #: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FIXEDTEXT.TEXT
 msgid  "S~YSDEVSPACE:"
@@ -1131,49 +967,9 @@ msgstr "~TRANSACTIONLOG:"
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FIXEDLINE.TEXT
-msgid  "Database sizes"
-msgstr "Tietokantojen koot"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FIXEDTEXT.TEXT
-msgid  "S~ize (MB):"
-msgstr "K~oko (Mt):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FIXEDTEXT.TEXT
-msgid  "~Free memory space (MB):"
-msgstr "~Vapaata muistia (Mt):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FIXEDTEXT.TEXT
-msgid  "~Memory utilization (in %):"
-msgstr "~Muistin käyttö (%):"
-
-#: ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKBUTTON.TEXT
-msgid  "Database Statistics"
-msgstr "Tietokannan tilastotiedot"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.STRING.TEXT
-msgid  "Contains the system tables"
-msgstr "Sisältää järjestelmätaulut"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.STRING.TEXT
-msgid  "Contains information about transaction"
-msgstr "Sisältää tietoja tapahtumasta"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.STRING.TEXT
-msgid  "Contains all data files"
-msgstr "Sisältää kaikki datatiedostot"
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.STRING.TEXT
-msgid  "Total size of the database files"
-msgstr "Tietokantatiedostojen kokonaiskoko"
-
 #: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.STRING.TEXT
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Käytettävissä oleva tila ennen uuden datadev-tiedoston luontia."
-
-#: ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.STRING.TEXT
-msgid  "Currently used memory"
-msgstr "Käytössä oleva muisti"
 
 #: ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.STRING.TEXT
 msgid  "No information could be displayed because no access rights exist for the required system tables."
@@ -1195,10 +991,6 @@ msgstr "Palvelin"
 msgid  "~Port"
 msgstr "Portti"
 
-#: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FIXEDTEXT.TEXT
-msgid  "Default: 3306"
-msgstr "Oletus: 3306"
-
 #: ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RADIOBUTTON.TEXT
 msgid  "So~cket"
 msgstr "Pistoke"
@@ -1207,34 +999,6 @@ msgstr "Pistoke"
 msgid  "Named p~ipe"
 msgstr "Nimetty putki"
 
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RADIOBUTTON.TEXT
-msgid  "Tables"
-msgstr "Taulut"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RADIOBUTTON.TEXT
-msgid  "Queries"
-msgstr "Kyselyt"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PUSHBUTTON.TEXT
-msgid  "~Add"
-msgstr "Lis~ää"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Sulje"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.STRING.TEXT
-msgid  "Add Tables"
-msgstr "Lisää tauluja"
-
-#: ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.STRING.TEXT
-msgid  "Add Table or Query"
-msgstr "Lisää taulu tai kysely"
-
-#: ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Asetukset"
-
 #: ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CHECKBOX.TEXT
 msgid  "Use SQL92 naming constraints"
 msgstr "Käytä SQL92:n nimeämisrajoitteita"
@@ -1242,10 +1006,6 @@ msgstr "Käytä SQL92:n nimeämisrajoitteita"
 #: ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CHECKBOX.TEXT
 msgid  "Append the table alias name on SELECT statements"
 msgstr "Liitä taulun alias-nimi SELECT -lausekkeisiin"
-
-#: ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CHECKBOX.TEXT
-msgid  "Use keyword AS before table alias names"
-msgstr "Käytä AS-määrettä ennen taulun aliasnimiä"
 
 #: ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CHECKBOX.TEXT
 msgid  "Use Outer Join syntax '{OJ }'"
@@ -1258,10 +1018,6 @@ msgstr "Ohita tietokanta-ajurin antamat oikeudet"
 #: ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CHECKBOX.TEXT
 msgid  "Replace named parameters with '?'"
 msgstr "Korvaa nimetyt parametri merkillä '?'"
-
-#: ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CHECKBOX.TEXT
-msgid  "Display version columns (when available)"
-msgstr "Näytä versiosarakkeet (kun käytettävissä)"
 
 #: ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CHECKBOX.TEXT
 msgid  "Use catalog name in SELECT statements"
@@ -1315,10 +1071,6 @@ msgstr "Yhdistetty"
 msgid  "MS Access"
 msgstr "MS Access"
 
-#: ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FIXEDTEXT.TEXT
-msgid  "Comparison of Boolean values"
-msgstr "Boolen arvojen vertailu"
-
 #: ui/dlg/advancedsettings.src#AUTO_MAXROWSCAN(AUTO_Y).FT_MAXROWSCAN.FIXEDTEXT.TEXT
 msgid  "Rows to scan column types"
 msgstr "Saraketyypin päättelyyn käytettävät rivit"
@@ -1335,14 +1087,6 @@ msgstr "~Nouda luodut arvot"
 msgid  "~Auto-increment statement"
 msgstr "Kasvata lauseketta ~automaattisesti"
 
-#: ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FIXEDTEXT.TEXT
-msgid  "~Query of generated values"
-msgstr "~Kysely luoduista arvoista"
-
-#: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.STRING.TEXT
-msgid  "Generated Values"
-msgstr "Luodut arvot"
-
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.STRING.TEXT
 msgid  "Special Settings"
 msgstr "Erikoisasetukset"
@@ -1350,22 +1094,6 @@ msgstr "Erikoisasetukset"
 #: ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STRING.TEXT
 msgid  "Advanced Settings"
 msgstr "Lisäominaisuudet"
-
-#: ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to the dBASE files"
-msgstr "Polku dBASE-tiedostoihin"
-
-#: ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to the text files"
-msgstr "Polku tekstitiedostoihin"
-
-#: ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to the spreadsheet document"
-msgstr "Polku laskentataulukko-asiakirjaan"
-
-#: ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.STRING.TEXT
-msgid  "Name of the ODBC data source on your system"
-msgstr "ODBC -tietolähteen nimi järjestelmässäsi"
 
 #: ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the MySQL database"
@@ -1378,10 +1106,6 @@ msgstr "Oracle -tietokannan nimi"
 #: ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.STRING.TEXT
 msgid  "Name of the Adabas D database"
 msgstr "Adabas D -tietokannan nimi"
-
-#: ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.STRING.TEXT
-msgid  "Microsoft Access database file"
-msgstr "Microsoft Access -tietokantatiedosto"
 
 #: ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.STRING.TEXT
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
@@ -1399,10 +1123,6 @@ msgstr "Palvelimen ~nimi"
 msgid  "~Mozilla profile name"
 msgstr "~Mozillan profiilin nimi"
 
-#: ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.STRING.TEXT
-msgid  "~Thunderbird profile name"
-msgstr "~Thunderbirdin profiilin nimi"
-
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP(_AUTO_X,_AUTO_Y,_AUTOPAGE_X,_AUTO_HID,_AUTO_HID2).PB_AUTOBROWSEURL.PUSHBUTTON.TEXT
 msgid  "Browse"
 msgstr "Selaa"
@@ -1414,14 +1134,6 @@ msgstr "Tietokannan nimi"
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOHOSTNAME.FIXEDTEXT.TEXT
 msgid  "Server"
 msgstr "Palvelin"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOBASEDN.FIXEDTEXT.TEXT
-msgid  "Base ~DN"
-msgstr "Perustoimialueen ~nimi"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP(AUTO_Y,_AUTO_HID).FT_AUTOPORTNUMBER.FIXEDTEXT.TEXT
-msgid  "~Port number"
-msgstr "Po~rtin numero"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_CHARSET(_AUTO_Y,_AUTOPAGE_X_).FL_DATACONVERT.FIXEDLINE.TEXT
 msgid  "Data conversion"
@@ -1435,17 +1147,9 @@ msgstr "~Merkistö"
 msgid  "Specify the type of files you want to access"
 msgstr "Määrittele minkä tyyppisiä tiedostoja haluat käyttää"
 
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RADIOBUTTON.TEXT
-msgid  "Plain text files (*.txt)"
-msgstr "Vain teksti -tiedostoja (*.txt)"
-
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCCSVFILES.RADIOBUTTON.TEXT
 msgid  "'Comma separated value' files (*.csv)"
 msgstr "Tekstitiedostot pilkuilla erotetuilla kentillä (*.csv)"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSOTHERS.RADIOBUTTON.TEXT
-msgid  "Custom:"
-msgstr "Oma:"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOOWNEXTENSIONAPPENDIX.FIXEDTEXT.TEXT
 msgid  "Custom: *.abc"
@@ -1471,13 +1175,9 @@ msgstr "Desimaalierotin"
 msgid  "Thousands separator"
 msgstr "Tuhatlukuerotin"
 
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).CB_AUTOHEADER.CHECKBOX.TEXT
-msgid  "~Text contains headers"
-msgstr "~Teksti sisältää otsikot"
-
-#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOTEXT_FIELD_SEP_NONE.STRING.TEXT
-msgid  "{None}"
-msgstr "{None}"
+#: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.STRING.TEXT
+msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
 
 #: ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.STRING.TEXT
 msgid  "#1 must be set."
@@ -1503,65 +1203,21 @@ msgstr "Testiluokka"
 msgid  "Socket"
 msgstr "Pistoke"
 
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.MODALDIALOG.TEXT
-msgid  "Save"
-msgstr "Tallenna"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Create New Directory"
-msgstr "Luo uusi hakemisto"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Up One Level"
-msgstr "Tasoa ylemmäs"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
-msgid  "File ~name:"
-msgstr "Tiedoston ~nimi:"
-
-#: ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.STRING.TEXT
-msgid  "~Path:"
-msgstr "~Polku:"
-
-#: ui/dlg/CollectionView.src#STR_NEW_FOLDER.STRING.TEXT
-msgid  "Folder"
-msgstr "Kansio"
-
 #: ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
 msgstr "Tiedosto on jo olemassa. Korvataanko?"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "General"
-msgstr "Yleistä"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FIXEDTEXT.TEXT
 msgid  "~Host name"
 msgstr "Palvelimen ~nimi"
 
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "User authentication"
-msgstr "Käyttäjän tunnistus"
-
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FIXEDTEXT.TEXT
 msgid  "~User name"
 msgstr "K~äyttäjätunnus"
 
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
-msgid  "Password required"
-msgstr "Salasana vaaditaan"
-
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FIXEDLINE.TEXT
 msgid  "JDBC properties"
 msgstr "JDBC-ominaisuudet"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "~JDBC driver class"
-msgstr "~JDBC-ajuriluokka"
-
-#: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
-msgid  "Test Class"
-msgstr "Testaa luokka"
 
 #: ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PUSHBUTTON.TEXT
 msgid  "Test Connection"
@@ -1611,21 +1267,9 @@ msgstr "Hakemistoa \n\n$path$\n\nei ole. Luodaanko hakemisto?"
 msgid  "The directory $name$ could not be created."
 msgstr "Hakemiston $name$ luominen ei onnistunut."
 
-#: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.MODALDIALOG.TEXT
-msgid  "Convert Database"
-msgstr "Muunna tietokanta"
-
 #: ui/dlg/dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.FIXEDLINE.TEXT
 msgid  "Please enter the ~password for the user 'DOMAIN'."
 msgstr "Anna ~salasana käyttäjälle 'DOMAIN'."
-
-#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.TABPAGE.TEXT
-msgid  "Tables Filter"
-msgstr "Taulujen suodatin"
-
-#: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.FIXEDLINE.TEXT
-msgid  "Tables and table filter"
-msgstr "Taulut ja taulujen suodatin"
 
 #: ui/dlg/dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Mark the tables that should be visible for the applications."
@@ -1634,10 +1278,6 @@ msgstr "Merkitse taulut, jotka näkyvät sovelluksille."
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.MODALDIALOG.TEXT
 msgid  "Database Wizard"
 msgstr "Ohjattu tietokantamääritys"
-
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.STRING.TEXT
-msgid  "Select database"
-msgstr "Valitse tietokanta"
 
 #: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.STRING.TEXT
 msgid  "Set up dBASE connection"
@@ -1691,14 +1331,6 @@ msgstr "Määritä käyttäjän tunnistaminen"
 msgid  "Set up MySQL server data"
 msgstr "Määritä MySQL-palvelimen asetukset"
 
-#: ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.STRING.TEXT
-msgid  "Save and proceed"
-msgstr "Tallenna ja etene"
-
-#: ui/dlg/dbadminsetup.src#STR_DATABASEDEFAULTNAME.STRING.TEXT
-msgid  "New Database"
-msgstr "Uusi tietokanta"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to a MySQL database"
 msgstr "Määritä yhteys MySQL-tietokantaan"
@@ -1731,10 +1363,6 @@ msgstr "Määritä käyttäjän tunnistaminen"
 msgid  "Some databases require you to enter a user name."
 msgstr "Osa tietokannoista vaatii käyttäjätunnuksen syöttämisen."
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FIXEDTEXT.TEXT
-msgid  "~User name"
-msgstr "K~äyttäjätunnus"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "Password re~quired"
 msgstr "Salasana ta~rvitaan"
@@ -1743,13 +1371,9 @@ msgstr "Salasana ta~rvitaan"
 msgid  "~Test Connection"
 msgstr "~Testaa yhteys"
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.FIXEDTEXT.TEXT
-msgid  "Decide how to proceed after saving the database"
-msgstr "Valitse miten haluat edetä tietokannan tallentamisen jälkeen"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
-msgstr "Haluatko että tietokanta rekisteröidään %PRODUCTNAME-ohjelmistoon?"
+msgstr "Haluatko että tietokanta rekisteröidään %PRODUCTNAME -ohjelmistoon?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "~Yes, register the database for me"
@@ -1758,10 +1382,6 @@ msgstr "~Kyllä, rekisteröi tietokanta puolestani"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.RADIOBUTTON.TEXT
 msgid  "N~o, do not register the database"
 msgstr "E~i, älä rekisteröi tietokantaa"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.FIXEDTEXT.TEXT
-msgid  "After the database file has been saved, what do you want to do?"
-msgstr "Kun tietokanta on tallennettu, mitä haluat tehdä?"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.CHECKBOX.TEXT
 msgid  "Open the database for editing"
@@ -1781,11 +1401,7 @@ msgstr "Määritä yhteys MySQL-tietokantaan käyttämällä JDBC:tä"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Anna tarvittavat tiedot MySQL-tietokantaan JDBC-yhteydellä yhdistämiseksi. Huomaa, että JDBC-ajuriluokan tulee olla asennettuna järjestelmääsi ja rekisteröitynä %PRODUCTNAMEissa.\nOta yhteyttä järjestelmänvalvojaan, jos et ole varma seuraavista asetuksista."
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.STRING.TEXT
-msgid  "MySQL JDBC d~river class:"
-msgstr "MySQL JDBC -ajuri~luokka:"
+msgstr "Anna tarvittavat tiedot MySQL-tietokantaan JDBC-yhteydellä yhdistämiseksi. Huomaa, että JDBC-ajuriluokan tulee olla asennettuna järjestelmääsi ja rekisteröitynä %PRODUCTNAMEssa.\nOta yhteyttä järjestelmänvalvojaan, jos et ole varma seuraavista asetuksista."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.STRING.TEXT
 msgid  "Default: 3306"
@@ -1811,17 +1427,9 @@ msgstr "Valitse kansio, minne dBASE-tiedostot on tallennettu."
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
 msgstr "Valitse kansio, johon CSV (pilkuin erotetut) -tekstitiedostot on tallennettu. %PRODUCTNAME Base avaa nämä tiedostot kirjoitussuojattuna."
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.STRING.TEXT
-msgid  "Path to text files"
-msgstr "Tekstitiedostojen polku"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a Microsoft Access database"
 msgstr "Määritä yhteys Microsoft Access -tietokantaan"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.STRING.TEXT
-msgid  "Please select the Microsoft Access file you want to access."
-msgstr "Valitse Microsoft Access -tiedosto, jota haluat käyttää."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Set up a connection to an LDAP directory"
@@ -1830,10 +1438,6 @@ msgstr "Määritä yhteys LDAP-hakemistoon"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FIXEDTEXT.TEXT
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr "Anna tarvittavat tiedot LDAP-hakemistoon yhdistämiseksi.\nOta yhteyttä järjestelmänvalvojaan, jos et ole varma seuraavista asetuksista."
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.STRING.TEXT
-msgid  "Default: 389"
-msgstr "Oletus: 389"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.CHECKBOX.TEXT
 msgid  "Use ~secure connection (SSL)"
@@ -1845,7 +1449,7 @@ msgstr "Määritä yhteys Adabas D -tietokantaan"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.STRING.TEXT
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr "Anna yhdistettävän Adabas D -tietokannan nimi.\nNapsauta 'Selaa...' valitaksesi Adabas D -tietokannan, joka on jo rekisteröity %PRODUCTNAMEissa."
+msgstr "Anna yhdistettävän Adabas D -tietokannan nimi.\nNapsauta 'Selaa...' valitaksesi Adabas D -tietokannan, joka on jo rekisteröity %PRODUCTNAMEssa."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to an ADO database"
@@ -1861,7 +1465,7 @@ msgstr "Määritä yhteys ODBC-tietokantaan"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.STRING.TEXT
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Anna yhdistettävän ODBC-tietokannan nimi.\nNapsauta 'Selaa...' valitaksesi ODBC-tietokannan, joka on jo rekisteröity %PRODUCTNAMEissa.\nOta yhteyttä järjestelmän ylläpitäjään, jos et ole varma seuraavista asetuksista."
+msgstr "Anna yhdistettävän ODBC-tietokannan nimi.\nNapsauta 'Selaa...' valitaksesi ODBC-tietokannan, joka on jo rekisteröity %PRODUCTNAMEssa.\nOta yhteyttä järjestelmän ylläpitäjään, jos et ole varma seuraavista asetuksista."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to a JDBC database"
@@ -1875,17 +1479,9 @@ msgstr "Anna tarvittavat tiedot JDBC-tietokantaan yhdistämiseksi.\nOta yhteytt�
 msgid  "Set up a connection to an Oracle database"
 msgstr "Määritä yhteys Oracle-tietokantaan"
 
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.STRING.TEXT
-msgid  "Default: 1521"
-msgstr "Oletus: 1521"
-
-#: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.STRING.TEXT
-msgid  "Oracle JDBC ~driver class"
-msgstr "Oracle JDBC -ajuri~luokka"
-
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.STRING.TEXT
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Anna tarvittavat tiedot Oracle-tietokantaan yhdistämiseksi. Huomaa, että JDBC-ajuriluokan tulee olla asennettuna järjestelmään ja rekisteröitynä %PRODUCTNAMEiin.\nOta yhteyttä järjestelmän ylläpitäjään, jos et ole varma seuraavista asetuksista."
+msgstr "Anna tarvittavat tiedot Oracle-tietokantaan yhdistämiseksi. Huomaa, että JDBC-ajuriluokan tulee olla asennettuna järjestelmään ja rekisteröitynä %PRODUCTNAMEen.\nOta yhteyttä järjestelmän ylläpitäjään, jos et ole varma seuraavista asetuksista."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.STRING.TEXT
 msgid  "Set up a connection to spreadsheets"
@@ -1893,7 +1489,7 @@ msgstr "Määritä yhteys laskentataulukoihin"
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.STRING.TEXT
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr "Napsauta  'Selaa...' valitaksesi %PRODUCTNAME-laskentataulukon tai Microsoft Excel -työkirjan.\n%PRODUCTNAME avaa tämän tiedoston kirjoitussuojattuna."
+msgstr "Napsauta  'Selaa...' valitaksesi %PRODUCTNAME -laskentataulukon tai Microsoft Excel -työkirjan.\n%PRODUCTNAME avaa tämän tiedoston kirjoitussuojattuna."
 
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.STRING.TEXT
 msgid  "~Location and file name"
@@ -1902,10 +1498,6 @@ msgstr "Si~jainti ja tiedostonnimi"
 #: ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.CHECKBOX.TEXT
 msgid  "~Password required"
 msgstr "S~alasana pakollinen"
-
-#: ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CHECKBOX.TEXT
-msgid  "Use catalog for file-based databases"
-msgstr "Käytä luetteloa tiedostopohjaisissa tietokannoissa"
 
 #: ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Connection Settings"
@@ -1931,61 +1523,21 @@ msgstr "Lisäasetukset"
 msgid  "Connection settings"
 msgstr "Yhteysasetukset"
 
-#: ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STRING.TEXT
-msgid  "Database properties"
-msgstr "Tietokannan ominaisuudet"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.FIXEDTEXT.TEXT
 msgid  "Welcome to the %PRODUCTNAME Database Wizard"
-msgstr "Tervetuloa %PRODUCTNAMEin tietokantojen ohjattuun toimintoon"
+msgstr "Tervetuloa %PRODUCTNAMEn tietokantojen ohjattuun toimintoon"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FIXEDTEXT.TEXT
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
 msgstr "Voit käyttää tietokantojen ohjattua toimintoa uuden tietokannan luomiseen, olemassa olevan avaamiseen ja yhteyden muodostamiseen palvelimella sijaitsevaan tietokantaan."
 
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FIXEDTEXT.TEXT
-msgid  "What do you want to do?"
-msgstr "Mitä haluat tehdä?"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.RADIOBUTTON.TEXT
-msgid  "Create a n~ew database"
-msgstr "Luoda ~uuden tietokannan"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.RADIOBUTTON.TEXT
-msgid  "Open an existing database ~file"
-msgstr "Avata ~olemassa olevan tietokantatiedoston"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.FIXEDTEXT.TEXT
-msgid  "Recently used"
-msgstr "Äskettäin käytetty"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.RADIOBUTTON.TEXT
-msgid  "Connect to an e~xisting database"
-msgstr "Muodostaa yhteyden o~lemassa olevaan tietokantaan"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FIXEDTEXT.TEXT
 msgid  "Select the type of database to which you want to establish a connection."
 msgstr "Valitse minkä tyyppiseen tietokantaan haluat muodostaa yhteyden."
 
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FIXEDTEXT.TEXT
-msgid  "Database ~type "
-msgstr "Tietokannan t~yyppi "
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.FIXEDTEXT.TEXT
-msgid  "Database"
-msgstr "Tietokanta"
-
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FIXEDTEXT.TEXT
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
 msgstr "Seuraavilla sivulla voit tehdä yhteyden yksityiskohtaiset asetukset.\n\nTekemäsi uudet asetukset korvaavat olemassa olevat asetuksesi."
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.STRING.TEXT
-msgid  "MySQL"
-msgstr "MySQL"
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.STRING.TEXT
-msgid  "Data Source Properties: #"
-msgstr "Tietolähteen ominaisuudet: #"
 
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.STRING.TEXT
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
@@ -1994,10 +1546,6 @@ msgstr "Ohjelmakirjaston #lib# lataaminen ei onnistunut tai kirjasto on turmeltu
 #: ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.STRING.TEXT
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
 msgstr "Tämä käyttöympäristö ei tue tätä tietolähdettä.\nVoit muuttaa asetuksia, mutta et todennäköisesti pysty muodostamaan yhteyttä tietokantaan."
-
-#: ui/dlg/dbadmin.src#PAGE_GENERAL.STRING.TEXT
-msgid  "General"
-msgstr "Yleistä"
 
 #: ui/dlg/dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.FIXEDLINE.TEXT
 msgid  "Optional settings"
@@ -2019,65 +1567,17 @@ msgstr "Indeksit..."
 msgid  "Optional Settings"
 msgstr "Valinnaiset asetukset"
 
-#: ui/dlg/dbadmin.src#PAGE_ODBC.FT_OPTIONS.FIXEDTEXT.TEXT
-msgid  "ODBC ~options"
-msgstr "ODBC-~asetukset"
-
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.FIXEDTEXT.TEXT
 msgid  "Data ~buffer size (MB)"
 msgstr "Tieto~puskurin koko (Mt)"
 
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.FIXEDTEXT.TEXT
-msgid  "~Data increment (MB)"
-msgstr "Tietojen ~kasvatusaskel (Mt)"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "Administration"
-msgstr "Hallinta"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.FIXEDTEXT.TEXT
-msgid  "Control ~user name"
-msgstr "Hallinta~käyttäjän nimi"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.FIXEDTEXT.TEXT
-msgid  "Control ~password"
-msgstr "Hallinta~salasana"
-
 #: ui/dlg/dbadmin.src#PAGE_ADABAS.CB_SHUTDB.CHECKBOX.TEXT
 msgid  "~Shut down service when closing %PRODUCTNAME"
-msgstr "~Sulje palvelu %PRODUCTNAMEin sulkemisen yhteydessä"
-
-#: ui/dlg/dbadmin.src#PAGE_ADABAS.PB_STAT.PUSHBUTTON.TEXT
-msgid  "E~xtended..."
-msgstr "~Lisäasetukset..."
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "MySQL JDBC d~river class"
-msgstr "MySQL JDBC -ajuri~luokka"
+msgstr "~Sulje palvelu %PRODUCTNAMEn sulkemisen yhteydessä"
 
 #: ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PUSHBUTTON.TEXT
 msgid  "Test class"
 msgstr "Testiluokka"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FIXEDLINE.TEXT
-msgid  "User authentication"
-msgstr "Käyttäjän tunnistus"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.FIXEDTEXT.TEXT
-msgid  "~User name"
-msgstr "K~äyttäjätunnus"
-
-#: ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.CHECKBOX.TEXT
-msgid  "Password required"
-msgstr "Salasana vaaditaan"
-
-#: ui/dlg/dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.FIXEDTEXT.TEXT
-msgid  "Oracle JDBC d~river class"
-msgstr "Oracle JDBC -aj~uriluokka"
-
-#: ui/dlg/dbadmin.src#PAGE_LDAP.FT_BASEDN.FIXEDTEXT.TEXT
-msgid  "~Base DN"
-msgstr "~Perustoimialueen nimi"
 
 #: ui/dlg/dbadmin.src#PAGE_LDAP.CB_USESSL.CHECKBOX.TEXT
 msgid  "Use secure connection(SSL)"
@@ -2099,49 +1599,9 @@ msgstr "Ajuri~asetukset"
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
 msgstr "Valitse 'Muodostetaan yhteys olemassa olevaan tietokantaan' muodostaaksesi yhteyden olemassa olevaan tietokantaan."
 
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.MODALDIALOG.TEXT
-msgid  "Indexes"
-msgstr "Indeksit"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.FIXEDTEXT.TEXT
-msgid  "~Table"
-msgstr "~Taulu"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.FIXEDLINE.TEXT
-msgid  "Assignment"
-msgstr "Yhdistäminen"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.FIXEDTEXT.TEXT
-msgid  "T~able indexes"
-msgstr "T~aulun indeksit"
-
-#: ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.FIXEDTEXT.TEXT
-msgid  "~Free indexes"
-msgstr "~Vapaat indeksit"
-
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FIXEDLINE.TEXT
 msgid  "SQL command"
 msgstr "SQL-lause"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_SQL.FIXEDTEXT.TEXT
-msgid  "Command to execute"
-msgstr "Suoritettava lause"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_EXECUTE.PUSHBUTTON.TEXT
-msgid  "Execute"
-msgstr "Suorita"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FT_HISTORY.FIXEDTEXT.TEXT
-msgid  "Previous commands"
-msgstr "Edelliset lauseet"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.FL_STATUS.FIXEDLINE.TEXT
-msgid  "Status"
-msgstr "Tila"
-
-#: ui/dlg/directsql.src#DLG_DIRECTSQL.PB_CLOSE.PUSHBUTTON.TEXT
-msgid  "Close"
-msgstr "Sulje"
 
 #: ui/dlg/directsql.src#DLG_DIRECTSQL.PUSHBUTTON.TEXT
 msgid  "Execute SQL Statement"
@@ -2159,165 +1619,33 @@ msgstr "Tietokantayhteys katkesi. Tämä valintaikkuna suljetaan."
 msgid  "Field Format"
 msgstr "Kentän muoto"
 
-#: ui/dlg/dlgattr.src#DLG_ATTR.1.PUSHBUTTON.TEXT
-msgid  "Bac~k"
-msgstr "Edellin~en"
-
 #: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.STRING.TEXT
 msgid  "Font"
 msgstr "Fontti"
-
-#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.STRING.TEXT
-msgid  "Format"
-msgstr "Muotoilu"
-
-#: ui/dlg/dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.STRING.TEXT
-msgid  "Alignment"
-msgstr "Tasaus"
 
 #: ui/dlg/dlgattr.src#DLG_ATTR.ST_ROW.STRING.TEXT
 msgid  "Table Format"
 msgstr "Taulun muotoilu"
 
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.MODALDIALOG.TEXT
-msgid  "Save As"
-msgstr "Tallenna nimellä"
-
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.FIXEDTEXT.TEXT
 msgid  "Please enter a name for the object to be created:"
 msgstr "Anna luotavan objektin nimi:"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_CATALOG.FIXEDTEXT.TEXT
-msgid  "~Catalog"
-msgstr "~Luettelo"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.FIXEDTEXT.TEXT
-msgid  "~Schema"
-msgstr "~Rakenne"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.STRING.TEXT
-msgid  "~Table Name"
-msgstr "Ta~ulun nimi"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.STRING.TEXT
-msgid  "~Name of table view"
-msgstr "Taulu~näkymän nimi"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.STRING.TEXT
-msgid  "~Query name"
-msgstr "K~yselyn nimi"
-
-#: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.STRING.TEXT
-msgid  "Rename to"
-msgstr "Nimeä uudelleen"
 
 #: ui/dlg/dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.STRING.TEXT
 msgid  "Insert as"
 msgstr "Lisää nimellä"
 
-#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.FIXEDTEXT.TEXT
-msgid  "~Height"
-msgstr "~Korkeus"
-
 #: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.CHECKBOX.TEXT
 msgid  "~Automatic"
 msgstr "~Automaattinen"
-
-#: ui/dlg/dlgsize.src#DLG_ROWHEIGHT.HELPBUTTON.TEXT
-msgid  "Row Height"
-msgstr "Rivin korkeus"
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.FT_VALUE.FIXEDTEXT.TEXT
-msgid  "~Width"
-msgstr "~Leveys"
-
-#: ui/dlg/dlgsize.src#DLG_COLWIDTH.HELPBUTTON.TEXT
-msgid  "Column Width"
-msgstr "Sarakkeen leveys"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.MODALDIALOG.TEXT
-msgid  "Data Source"
-msgstr "Tietolähde"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Choose a data source:"
-msgstr "Valitse tietolähde:"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.PUSHBUTTON.TEXT
-msgid  "Organize..."
-msgstr "Järjestä..."
 
 #: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.PUSHBUTTON.TEXT
 msgid  "Create..."
 msgstr "Luo..."
 
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.STRING.TEXT
-msgid  "Local Databases"
-msgstr "Paikalliset tietokannat"
-
-#: ui/dlg/dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.STRING.TEXT
-msgid  "Choose a database"
-msgstr "Valitse tietokanta"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.MODALDIALOG.TEXT
-msgid  "Indexes"
-msgstr "Indeksit"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.TOOLBOXITEM.TEXT
-msgid  "New Index"
-msgstr "Uusi indeksi"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.TOOLBOXITEM.TEXT
-msgid  "Delete Current Index"
-msgstr "Poista nykyinen indeksi"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.TOOLBOXITEM.TEXT
-msgid  "Rename Current Index"
-msgstr "Nimeä nykyinen indeksi uudelleen"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.TOOLBOXITEM.TEXT
-msgid  "Save Current Index"
-msgstr "Tallenna nykyinen indeksi"
-
 #: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.TOOLBOXITEM.TEXT
 msgid  "Reset Current Index"
 msgstr "Palauta nykyisen indeksin asetukset"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.FIXEDLINE.TEXT
-msgid  "Index details"
-msgstr "Indeksin tiedot"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.FIXEDTEXT.TEXT
-msgid  "Index identifier:"
-msgstr "Indeksin tunniste:"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.CHECKBOX.TEXT
-msgid  "~Unique"
-msgstr "~Yksilöllinen"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.FIXEDTEXT.TEXT
-msgid  "Fields"
-msgstr "Kentät"
-
-#: ui/dlg/indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Sulje"
-
-#: ui/dlg/indexdialog.src#STR_TAB_INDEX_SORTORDER.STRING.TEXT
-msgid  "Sort order"
-msgstr "Lajittelujärjestys"
-
-#: ui/dlg/indexdialog.src#STR_TAB_INDEX_FIELD.STRING.TEXT
-msgid  "Index field"
-msgstr "Indeksikenttä"
-
-#: ui/dlg/indexdialog.src#STR_ORDER_ASCENDING.STRING.TEXT
-msgid  "Ascending"
-msgstr "Nouseva"
-
-#: ui/dlg/indexdialog.src#STR_ORDER_DESCENDING.STRING.TEXT
-msgid  "Descending"
-msgstr "Laskeva"
 
 #: ui/dlg/indexdialog.src#STR_CONFIRM_DROP_INDEX.STRING.TEXT
 msgid  "Do you really want to delete the index '$name$'?"
@@ -2327,10 +1655,6 @@ msgstr "Haluatko varmasti poistaa indeksin '$name$'?"
 msgid  "index"
 msgstr "indeksi"
 
-#: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.TITLE
-msgid  "Save Index"
-msgstr "Tallenna indeksi"
-
 #: ui/dlg/indexdialog.src#ERR_NEED_INDEX_FIELDS.ERRORBOX.MESSAGE
 msgid  "The index must contain at least one field."
 msgstr "Indeksissä on oltava vähintään yksi kenttä."
@@ -2338,10 +1662,6 @@ msgstr "Indeksissä on oltava vähintään yksi kenttä."
 #: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.TITLE
 msgid  "Exit Index Design"
 msgstr "Poistu indeksin määrityksestä"
-
-#: ui/dlg/indexdialog.src#QUERY_SAVE_CURRENT_INDEX.QUERYBOX.MESSAGE
-msgid  "Do you want to save the changes made to the current index?"
-msgstr "Haluatko tallentaa nykyiseen indeksiin tehdyt muutokset?"
 
 #: ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.STRING.TEXT
 msgid  "There is already another index named \"$name$\"."
@@ -2355,14 +1675,6 @@ msgstr "Taulun sarakkeet voivat esiintyä vain kertaalleen indeksin määrityksi
 msgid  "~Parameters"
 msgstr "~Parametrit"
 
-#: ui/dlg/paramdialog.src#DLG_PARAMETERS.FT_VALUE.FIXEDTEXT.TEXT
-msgid  "~Value"
-msgstr "~Arvo"
-
-#: ui/dlg/paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.PUSHBUTTON.TEXT
-msgid  "~Next"
-msgstr "~Seuraava"
-
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.CANCELBUTTON.TEXT
 msgid  "Parameter Input"
 msgstr "Parametrin syöttö"
@@ -2370,10 +1682,6 @@ msgstr "Parametrin syöttö"
 #: ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.STRING.TEXT
 msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
 msgstr "Merkintää ei voitu muuttaa sarakkeen $name$ kelvolliseksi arvoksi"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.MODALDIALOG.TEXT
-msgid  "Standard Filter"
-msgstr "Oletussuodatin"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.DEFAULT.STRINGLIST.ITEM
 msgid  "AND"
@@ -2383,25 +1691,9 @@ msgstr "JA"
 msgid  "OR"
 msgstr "TAI"
 
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.FIXEDTEXT.TEXT
-msgid  "Field name"
-msgstr "Kentän nimi"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.FIXEDTEXT.TEXT
-msgid  "Condition"
-msgstr "Ehto"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.FIXEDTEXT.TEXT
-msgid  "Value"
-msgstr "Arvo"
-
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.FIXEDTEXT.TEXT
 msgid  "Operator"
 msgstr "Operaattori"
-
-#: ui/dlg/queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.FIXEDLINE.TEXT
-msgid  "Criteria"
-msgstr "Ehto"
 
 #: ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "- none -"
@@ -2411,10 +1703,6 @@ msgstr "- ei mitään -"
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;kuten;ei kuten;tyhjä;ei tyhjä"
 
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.MODALDIALOG.TEXT
-msgid  "Sort Order"
-msgstr "Lajittelujärjestys"
-
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "ascending"
 msgstr "nouseva"
@@ -2422,10 +1710,6 @@ msgstr "nouseva"
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.DEFAULT.STRINGLIST.ITEM
 msgid  "descending"
 msgstr "laskeva"
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.FIXEDTEXT.TEXT
-msgid  "Field name"
-msgstr "Kentän nimi"
 
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.FIXEDTEXT.TEXT
 msgid  "and then"
@@ -2435,41 +1719,13 @@ msgstr "ja sitten"
 msgid  "Operator"
 msgstr "Operaattori"
 
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.FIXEDTEXT.TEXT
-msgid  "Order"
-msgstr "Järjestys"
-
-#: ui/dlg/queryorder.src#DLG_ORDERCRIT.FL_ORDER.FIXEDLINE.TEXT
-msgid  "Sort order"
-msgstr "Lajittelujärjestys"
-
 #: ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.STRING.TEXT
 msgid  "<none>"
 msgstr "<ei mitään>"
 
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.MODALDIALOG.TEXT
-msgid  "Relations"
-msgstr "Yhteydet"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
-msgid  "Tables involved"
-msgstr "Sisällytetyt taulut"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
-msgid  "Fields involved"
-msgstr "Sisällytetyt kentät"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.FIXEDLINE.TEXT
-msgid  "Update options"
-msgstr "Päivitä asetukset"
-
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.RADIOBUTTON.TEXT
 msgid  "~No action"
 msgstr "~Ei toimintoa"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.RADIOBUTTON.TEXT
-msgid  "~Update cascade"
-msgstr "~Päivitä lomitus"
 
 #: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RADIOBUTTON.TEXT
 msgid  "~Set null"
@@ -2479,53 +1735,17 @@ msgstr "~Määritä tyhjäksi"
 msgid  "Set ~default"
 msgstr "Määritä ~oletusarvo"
 
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FIXEDLINE.TEXT
-msgid  "Delete options"
-msgstr "Poista asetukset"
-
-#: ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.RADIOBUTTON.TEXT
-msgid  "Delete ~cascade"
-msgstr "Poista ~lomitus"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.MODALDIALOG.TEXT
-msgid  "%PRODUCTNAME Base"
-msgstr "%PRODUCTNAME - Tietokanta"
-
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FIXEDLINE.TEXT
 msgid  "Details"
 msgstr "Yksityiskohdat"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FIXEDTEXT.TEXT
-msgid  "Error ~list:"
-msgstr "Virhe~luettelo:"
-
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "~Description:"
-msgstr "~Kuvaus:"
 
 #: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.STRING.TEXT
 msgid  "SQL Status"
 msgstr "SQL-tila"
 
-#: ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.STRING.TEXT
-msgid  "Error code"
-msgstr "Virhekoodi"
-
 #: ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.STRING.TEXT
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
 msgstr "Yleinen syy tälle virheelle on tietokannassa käytetylle kielelle soveltumaton merkistöasetus. Tarkista asetus valitsemalla Muokkaa - Tietokanta - Ominaisuudet."
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.STRING.TEXT
-msgid  "Error"
-msgstr "Virhe"
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_WARNING.STRING.TEXT
-msgid  "Warning"
-msgstr "Varoitus"
-
-#: ui/dlg/sqlmessage.src#STR_EXCEPTION_INFO.STRING.TEXT
-msgid  "Information"
-msgstr "Tiedot"
 
 #: ui/dlg/textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.MODALDIALOG.TEXT
 msgid  "Text Connection Settings"
@@ -2535,34 +1755,6 @@ msgstr "Tekstiyhteysasetukset"
 msgid  "User Settings"
 msgstr "Käyttäjän asetukset"
 
-#: ui/dlg/UserAdminDlg.src#DLG_DATABASE_USERADMIN.STRING.TEXT
-msgid  "User administration"
-msgstr "Käyttäjähallinta"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.FIXEDLINE.TEXT
-msgid  "User selection"
-msgstr "Käyttäjän valinta"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.FIXEDTEXT.TEXT
-msgid  "Us~er:"
-msgstr "K~äyttäjä:"
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.PUSHBUTTON.TEXT
-msgid  "~Add User..."
-msgstr "Uu~si käyttäjä..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.PUSHBUTTON.TEXT
-msgid  "Change ~Password..."
-msgstr "M~uuta salasana..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.PUSHBUTTON.TEXT
-msgid  "~Delete User..."
-msgstr "P~oista käyttäjä..."
-
-#: ui/dlg/UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.FIXEDLINE.TEXT
-msgid  "Access rights for selected user"
-msgstr "Valitun käyttäjän käyttöoikeudet"
-
 #: ui/dlg/UserAdmin.src#QUERY_USERADMIN_DELETE_USER.QUERYBOX.MESSAGE
 msgid  "Do you really want to delete the user?"
 msgstr "Haluatko varmasti poistaa käyttäjän?"
@@ -2571,33 +1763,13 @@ msgstr "Haluatko varmasti poistaa käyttäjän?"
 msgid  "The database does not support user administration."
 msgstr "Tietokanta ei tue käyttäjän hallintaa."
 
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FIXEDLINE.TEXT
-msgid  "User \"$name$:  $\""
-msgstr "Käyttäjä \"$name$:  $\""
-
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FIXEDTEXT.TEXT
-msgid  "Old p~assword"
-msgstr "Vanha ~salasana"
-
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.FIXEDTEXT.TEXT
-msgid  "~Password"
-msgstr "~Salasana"
-
 #: ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.FIXEDTEXT.TEXT
 msgid  "~Confirm  password"
 msgstr "V~ahvista salasana"
 
-#: ui/dlg/UserAdmin.src#DLG_PASSWORD.HELPBUTTON.TEXT
-msgid  "Change Password"
-msgstr "Muuta salasana"
-
 #: ui/dlg/UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
 msgid  "The passwords do not match. Please enter the password again."
 msgstr "Salasanat eivät ole identtiset. Anna salasana uudestaan."
-
-#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#DEFINE.TEXT
-msgid  "Refresh"
-msgstr "Päivitä"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#DEFINE.TEXT
 msgid  "New ~View Design"
@@ -2607,45 +1779,17 @@ msgstr "Uusi taulu~näkymä"
 msgid  "New ~Table Design"
 msgstr "Uusi ~taulu"
 
-#: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#DEFINE.TEXT
-msgid  "Query AutoPilot..."
-msgstr "Kyselyn ohjattu luominen..."
-
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#DEFINE.TEXT
 msgid  "New ~Query (Design View)"
 msgstr "Uusi ~kysely (suunnittelunäkymä)"
-
-#: ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#DEFINE.TEXT
-msgid  "~Edit Query"
-msgstr "~Muokkaa kyselyä"
 
 #: ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#DEFINE.TEXT
 msgid  "New Query (~SQL View)"
 msgstr "Uusi ~kysely (SQL-näkymä)"
 
-#: ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#DEFINE.TEXT
-msgid  "Edit..."
-msgstr "Muokkaa..."
-
-#: ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#DEFINE.TEXT
-msgid  "Column ~Width..."
-msgstr "Sarakkeen ~leveys..."
-
 #: ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#DEFINE.TEXT
 msgid  "Report Wizard..."
 msgstr "Raportin ohjattu luominen..."
-
-#: ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#DEFINE.TEXT
-msgid  "Form AutoPilot..."
-msgstr "Lomakkeen ohjattu luominen..."
-
-#: ui/misc/dbumiscres.src#RSC_CHARSETS.1.STRING.TEXT
-msgid  "System"
-msgstr "Järjestelmä"
-
-#: ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.STRING.TEXT
-msgid  "Error during creation"
-msgstr "Virhe luonnin aikana"
 
 #: ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.STRING.TEXT
 msgid  "An unexpected error occurred. The operation could not be performed."
@@ -2662,10 +1806,6 @@ msgstr "Taulua ei voi poistaa, koska tietokantayhteys ei tue poistamista."
 #: ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.STRING.TEXT
 msgid  "~All"
 msgstr "~Kaikki"
-
-#: ui/misc/dbumiscres.src#STR_UNDO_COLON.STRING.TEXT
-msgid  "Undo:"
-msgstr "Peruuta:"
 
 #: ui/misc/dbumiscres.src#STR_REDO_COLON.STRING.TEXT
 msgid  "Redo:"
@@ -2691,53 +1831,17 @@ msgstr "Nimi '$#$' on jo olemassa.\nAnna toinen nimi."
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr "Raportti \"$file$\" vaatii Sun Report Builder -lisäosan."
 
-#: ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.STRING.TEXT
-msgid  "Apply columns"
-msgstr "Käytä sarakkeita"
-
 #: ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.STRING.TEXT
 msgid  "Type formatting"
 msgstr "Tyypin muotoilu"
-
-#: ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.STRING.TEXT
-msgid  "The following fields have already been set as primary keys:\n"
-msgstr "Seuraavat kentät on jo määritetty perusavaimiksi:\n"
-
-#: ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.STRING.TEXT
-msgid  "Assign columns"
-msgstr "Sido sarakkeet"
 
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.MODALDIALOG.TEXT
 msgid  "Copy RTF Table"
 msgstr "Kopioi RTF-taulukko"
 
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HELPBUTTON.TEXT
-msgid  "~Help"
-msgstr "~Ohje"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CANCELBUTTON.TEXT
-msgid  "~Cancel"
-msgstr "~Peruuta"
-
 #: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PUSHBUTTON.TEXT
 msgid  "< ~Back"
 msgstr "< ~Edellinen"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PUSHBUTTON.TEXT
-msgid  "~Next>"
-msgstr "~Seuraava>"
-
-#: ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKBUTTON.TEXT
-msgid  "C~reate"
-msgstr "~Luo"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FIXEDLINE.TEXT
-msgid  "Existing columns"
-msgstr "Olemassa olevat sarakkeet"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FIXEDLINE.TEXT
-msgid  "Column information"
-msgstr "Saraketiedot"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FIXEDLINE.TEXT
 msgid  "Automatic type recognition"
@@ -2747,45 +1851,9 @@ msgstr "Automaattinen tyypin tunnistus"
 msgid  "Lines (ma~x)"
 msgstr "Rivejä (~enintään)"
 
-#: ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
-msgid  "Primary Key"
-msgstr "Perusavain"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FIXEDTEXT.TEXT
-msgid  "Source table: \n"
-msgstr "Lähdetaulu: \n"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FIXEDTEXT.TEXT
-msgid  "Destination table: \n"
-msgstr "Kohdetaulu: \n"
-
 #: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PUSHBUTTON.TEXT
 msgid  "~All"
 msgstr "~Kaikki"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PUSHBUTTON.TEXT
-msgid  "Non~e"
-msgstr "~Ei mitään"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FIXEDTEXT.TEXT
-msgid  "Ta~ble name"
-msgstr "Ta~ulun nimi"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Asetukset"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RADIOBUTTON.TEXT
-msgid  "De~finition and data"
-msgstr "M~ääritys ja tiedot"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RADIOBUTTON.TEXT
-msgid  "Def~inition"
-msgstr "~Määritys"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RADIOBUTTON.TEXT
-msgid  "A~s table view"
-msgstr "~Taulunäkymänä"
 
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RADIOBUTTON.TEXT
 msgid  "Append ~data"
@@ -2794,14 +1862,6 @@ msgstr "~Lisää tiedot loppuun"
 #: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CHECKBOX.TEXT
 msgid  "Use first ~line as column names"
 msgstr "Käytä ensimmäistä riviä sarakkeiden niminä"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CHECKBOX.TEXT
-msgid  "Crea~te primary key"
-msgstr "Luo p~erusavain"
-
-#: ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FIXEDTEXT.TEXT
-msgid  "Name"
-msgstr "Nimi"
 
 #: ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.STRING.TEXT
 msgid  "Copy table"
@@ -2818,14 +1878,6 @@ msgstr "Tee valinta 'Lisää tiedot' ensimmäisellä sivulla lisätäksesi tiedo
 #: ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.STRING.TEXT
 msgid  "Please change the table name. It is too long."
 msgstr "Muuta taulun nimi. Se on liian pitkä."
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FIXEDLINE.TEXT
-msgid  "Options"
-msgstr "Asetukset"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FIXEDTEXT.TEXT
-msgid  "~Type"
-msgstr "~Tyyppi"
 
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.STRINGLIST.ITEM
 msgid  "Inner join"
@@ -2850,18 +1902,6 @@ msgstr "Ristiliitos"
 #: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CHECKBOX.TEXT
 msgid  "Natural"
 msgstr "Luonnollinen"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FIXEDLINE.TEXT
-msgid  "Tables involved"
-msgstr "Sisällytetyt taulut"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FIXEDLINE.TEXT
-msgid  "Fields involved"
-msgstr "Sisällytetyt kentät"
-
-#: ui/querydesign/querydlg.src#DLG_QRY_JOIN.HELPBUTTON.TEXT
-msgid  "Join Properties"
-msgstr "Liitoksen ominaisuudet"
 
 #: ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.STRING.TEXT
 msgid  "Please note that some databases may not support this join type."
@@ -2891,10 +1931,6 @@ msgstr "Sisältää yhden sarakkeen jokaista samannimisten sarakkeiden paria koh
 msgid  "Add Table Window"
 msgstr "Lisää tauluikkuna"
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.STRING.TEXT
-msgid  "Move table window"
-msgstr "Siirrä tauluikkunaa"
-
 #: ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.STRING.TEXT
 msgid  "Insert Join"
 msgstr "Lisää liitos"
@@ -2902,22 +1938,6 @@ msgstr "Lisää liitos"
 #: ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.STRING.TEXT
 msgid  "Delete Join"
 msgstr "Poista liitos"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.STRING.TEXT
-msgid  "Resize table window"
-msgstr "Muuta tauluikkunan kokoa"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.STRING.TEXT
-msgid  "Delete Column"
-msgstr "Poista sarake"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.STRING.TEXT
-msgid  "Move column"
-msgstr "Siirrä saraketta"
-
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.STRING.TEXT
-msgid  "Add Column"
-msgstr "Lisää sarake"
 
 #: ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.STRING.TEXT
 msgid  "Invalid expression, table '$name$' does not exist."
@@ -2931,25 +1951,13 @@ msgstr "Virheellinen lauseke. Kenttää $name$ ei ole."
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "Kysely käsittelee #num# taulua. Valittu tietokantatyyppi voi kuitenkin käsitellä enintään #maxnum# taulua kussakin lausekkeessa."
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.STRING.TEXT
-msgid  "Delete Table Window"
-msgstr "Poista tauluikkuna"
-
 #: ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.STRING.TEXT
 msgid  "Edit Column Description"
 msgstr "Muokkaa sarakkeen kuvausta"
 
-#: ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.STRING.TEXT
-msgid  "Adjust column width"
-msgstr "Säädä sarakkeen leveys"
-
 #: ui/querydesign/query.src#STR_QUERY_SORTTEXT.STRING.TEXT
 msgid  "(not sorted);ascending;descending"
 msgstr "(ei lajiteltu);nouseva;laskeva"
-
-#: ui/querydesign/query.src#STR_QUERY_FUNCTIONS.STRING.TEXT
-msgid  "(no function);Group"
-msgstr "(ei funktiota);Ryhmä"
 
 #: ui/querydesign/query.src#STR_QUERY_NOTABLE.STRING.TEXT
 msgid  "(no table)"
@@ -2959,22 +1967,6 @@ msgstr "(ei taulua)"
 msgid  "The database only supports sorting for visible fields."
 msgstr "Tietokanta tukee vain näkyvien kenttien lajittelua."
 
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MENUITEM.TEXT
-msgid  "Functions"
-msgstr "Funktiot"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MENUITEM.TEXT
-msgid  "Table Name"
-msgstr "Taulun nimi"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MENUITEM.TEXT
-msgid  "Alias"
-msgstr "Tunnus"
-
-#: ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MENUITEM.TEXT
-msgid  "Distinct Values"
-msgstr "Erityisarvot"
-
 #: ui/querydesign/query.src#STR_QUERY_HANDLETEXT.STRING.TEXT
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Kenttä;Tunnus;Taulu;Lajittele;Näkyvissä;Funktio;Ehto;Tai;Tai"
@@ -2983,25 +1975,13 @@ msgstr "Kenttä;Tunnus;Taulu;Lajittele;Näkyvissä;Funktio;Ehto;Tai;Tai"
 msgid  "There are too many columns."
 msgstr "Sarakkeita on liikaa."
 
-#: ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ERRORBOX.MESSAGE
-msgid  "A condition cannot be applied to field [*]"
-msgstr "Ehtoa ei voi käyttää kenttään [*]"
-
 #: ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.STRING.TEXT
 msgid  "The SQL statement created is too long."
 msgstr "Luotu SQL-lauseke on liian pitkä."
 
-#: ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.STRING.TEXT
-msgid  "Query is too complex"
-msgstr "Kysely on liian monimutkainen"
-
 #: ui/querydesign/query.src#STR_QRY_NOSELECT.STRING.TEXT
 msgid  "Nothing has been selected."
 msgstr "Mitään ei ole valittuna."
-
-#: ui/querydesign/query.src#STR_QRY_TOOMANYCOND.STRING.TEXT
-msgid  "Too many search criteria"
-msgstr "Liian monta hakuehtoa"
 
 #: ui/querydesign/query.src#STR_QRY_SYNTAX.STRING.TEXT
 msgid  "SQL syntax error"
@@ -3018,14 +1998,6 @@ msgstr "Tauluja on liikaa."
 #: ui/querydesign/query.src#STR_QRY_NATIVE.STRING.TEXT
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "Kun kysely lähetetään tietokannan SQL-kielellä, lauseketta ei käytetä."
-
-#: ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ERRORBOX.MESSAGE
-msgid  "Field name not found or not unique"
-msgstr "Kentän nimeä ei löytynyt tai nimi ei ole yksilöllinen"
-
-#: ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.STRING.TEXT
-msgid  "Join could not be processed"
-msgstr "Liitosta ei voitu suorittaa"
 
 #: ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.STRING.TEXT
 msgid  "Syntax error in SQL statement"
@@ -3073,7 +2045,7 @@ msgstr "Saraketta ei löytynyt. Huomaa, että tietokanta on aakkoslajit erottava
 
 #: ui/querydesign/query.src#STR_QUERYDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: Query Design"
-msgstr " - %PRODUCTNAME Base: Kyselyn suunnittelu"
+msgstr "  - %PRODUCTNAME Base: Kyselyn suunnittelu"
 
 #: ui/querydesign/query.src#STR_VIEWDESIGN.STRING.TEXT
 msgid  " - %PRODUCTNAME Base: View Design"
@@ -3086,62 +2058,69 @@ msgstr "$object$ on muuttunut.\nHaluatko tallentaa muutokset?"
 #: ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.STRING.TEXT
 #, fuzzy
 msgid  "$object$ is based on an SQL command which could not be parsed."
-msgstr "Objektin $object$ määrittävää SQL-komentoa ei kyetty jäsentämään."
+msgstr "Objekti $object$ määrittyy SQL-komennossa, jota ei kyetty jäsentämään.(paitsi \"SQL-komentona\", joka ei sovi tähän) lisätään."
 
 #: ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.STRING.TEXT
 #, fuzzy
 msgid  "$object$ will be opened in SQL view."
-msgstr "$object$ avataan SQL-näkymässä."
-
-#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.STRING.TEXT
-msgid  "The table view"
-msgstr "taulunäkymä"
-
-#: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.STRING.TEXT
-msgid  "The query"
-msgstr "kysely"
+msgstr "$object$ avataan SQL-näkymässä.(paitsi \"SQL-komento\", joka ei sovi tähän) lisätään."
 
 #: ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "The SQL statement"
 msgstr "SQL-lauseke"
 
 #: ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.STRING.TEXT
+#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
 msgstr "Kysely ei luo tulosjoukkoa, joten sitä ei voida käyttää toisen kyselyn osana."
 
 #: ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.STRING.TEXT
+#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "Parametrit ActiveConnection ja DataSourceName puuttuvat tai ovat väärin. Kyselyn suunnittelua ei voitu alustaa."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.STRING.TEXT
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "Relaatio on jo olemassa. Haluatko muokata sitä vai luoda uuden?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit..."
 msgstr "Muokkaa..."
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.STRING.TEXT
+#, fuzzy
 msgid  "Create..."
 msgstr "Luo uusi..."
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " - %PRODUCTNAME Base: Yhteyksien suunnittelu"
 
 #: ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "The database does not support relations."
 msgstr "Tietokanta ei tue yhteyksiä."
 
+#: ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The relation design has been changed.\nDo you want to save the changes?"
+msgstr "Yhteyksien rakennetta on muutettu.\nHaluatko tallentaa muutokset?"
+
 #: ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.STRING.TEXT
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "Kun poistat tämän taulun, kaikki siihen liittyvät relaatiot poistetaan myös. Jatketaanko?"
 
 #: ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.STRING.TEXT
+#, fuzzy
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
 msgstr "Relaation luominen tietokantaan ei onnistunut. Mahdollisesti tämän tyyppisille tauluille ei voi tehdä viiteavaimia.\nTarkista asia tietokantaohjelmistosi ohjeista."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.STRING.TEXT
+#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 msgstr "Tuntematon;Teksti;Luku;Päivämäärä/Kellonaika;Päivämäärä;Kellonaika;Kyllä/Ei;Valuutta;Muistio;Laskin;Kuva;Teksti (kiinteä);Desimaali;Binääri (kiinteä);Binääri;BigInt;Kaksoistarkkuuden liukuluku;Liukuluku;Reaaliluku;Kokonaisluku;Pieni (small) kokonaisluku;Pieni (tiny) kokonaisluku;SQL-tyhjä;Objekti;Erityis;Rakenne;Kenttä;BLOB;CLOB;REF;OTHER;Bitti (kiinteä)"
 
@@ -3150,315 +2129,259 @@ msgstr "Tuntematon;Teksti;Luku;Päivämäärä/Kellonaika;Päivämäärä;Kellon
 msgid  "Insert/remove primary key"
 msgstr "Lisää tai poista perusavain"
 
-#: ui/tabledesign/table.src#STR_VALUE_YES.STRING.TEXT
-msgid  "Yes"
-msgstr "Kyllä"
-
-#: ui/tabledesign/table.src#STR_VALUE_NO.STRING.TEXT
-msgid  "No"
-msgstr "Ei"
-
-#: ui/tabledesign/table.src#STR_VALUE_ASC.STRING.TEXT
-msgid  "Ascending"
-msgstr "Nouseva"
-
-#: ui/tabledesign/table.src#STR_VALUE_DESC.STRING.TEXT
-msgid  "Descending"
-msgstr "Laskeva"
-
 #: ui/tabledesign/table.src#STR_VALUE_NONE.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
 msgstr "<ei mitään>"
 
-#: ui/tabledesign/table.src#STR_TAB_FIELD_NAME.STRING.TEXT
-msgid  "Field name"
-msgstr "Kentän nimi"
-
-#: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.STRING.TEXT
-msgid  "Field Name"
-msgstr "Kentän nimi"
-
-#: ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.STRING.TEXT
-msgid  "Field ~type"
-msgstr "Kenttätyyppi"
-
 #: ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.STRING.TEXT
+#, fuzzy
 msgid  "Field Type"
 msgstr "Kenttätyyppi"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Field length"
 msgstr "Kentän pituus"
 
-#: ui/tabledesign/table.src#STR_TAB_HELP_TEXT.STRING.TEXT
-msgid  "Description"
-msgstr "Kuvaus"
-
 #: ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Column Description"
 msgstr "Sarakkeen kuvaus"
 
 #: ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.STRING.TEXT
+#, fuzzy
 msgid  "Input required"
 msgstr "Syöttö pakollinen"
 
-#: ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.STRING.TEXT
-msgid  "~AutoValue"
-msgstr "~Automaattinen arvo"
-
-#: ui/tabledesign/table.src#STR_TAB_PROPERTIES.STRING.TEXT
-msgid  "Field Properties"
-msgstr "Kentän ominaisuudet"
-
-#: ui/tabledesign/table.src#STR_TABPAGE_GENERAL.STRING.TEXT
-msgid  "General"
-msgstr "Yleistä"
-
-#: ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.STRING.TEXT
-msgid  "Description:"
-msgstr "Kuvaus:"
-
-#: ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.STRING.TEXT
-msgid  "Table properties"
-msgstr "Taulun ominaisuudet"
-
 #: ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The text you entered is not a list element. "
 msgstr "Syötetty teksti ei ole luettelon elementti. "
 
 #: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Insert Rows"
 msgstr "Lisää rivit"
 
-#: ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MENUITEM.TEXT
-msgid  "Primary Key"
-msgstr "Perusavain"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.STRING.TEXT
-msgid  "Modify cell"
-msgstr "Muuta solua"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.STRING.TEXT
-msgid  "Delete row"
-msgstr "Poista rivi"
-
-#: ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.STRING.TEXT
-msgid  "Modify field type"
-msgstr "Muuta kenttätyyppiä"
-
 #: ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert row"
 msgstr "Lisää rivi"
 
 #: ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.STRING.TEXT
+#, fuzzy
 msgid  "Insert new row"
 msgstr "Lisää uusi rivi"
-
-#: ui/tabledesign/table.src#STR_DEFAULT_VALUE.STRING.TEXT
-msgid  "~Default value"
-msgstr "~Oletusarvo"
-
-#: ui/tabledesign/table.src#STR_FIELD_REQUIRED.STRING.TEXT
-msgid  "~Entry required"
-msgstr "~Merkintä pakollinen"
 
 #: ui/tabledesign/table.src#STR_TEXT_LENGTH.STRING.TEXT
 #, fuzzy
 msgid  "~Length"
 msgstr "~Pituus"
 
-#: ui/tabledesign/table.src#STR_NUMERIC_TYPE.STRING.TEXT
-msgid  "~Type"
-msgstr "~Tyyppi"
-
-#: ui/tabledesign/table.src#STR_SCALE.STRING.TEXT
-msgid  "Decimal ~places"
-msgstr "~Desimaaleja"
-
-#: ui/tabledesign/table.src#STR_FORMAT.STRING.TEXT
-msgid  "Format example"
-msgstr "Muotoiluesimerkki"
-
 #: ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
 msgstr "Valitse arvo, joka näkyy kaikissa uusissa tietueissa oletuksena.\nJos kenttään ei tule oletusarvoa, valitse tyhjä merkkijono."
 
 #: ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
 msgstr "Syötä oletusarvo tätä kenttää varten.\n\nTätä merkkijonoa käytetään valitun kentän jokaisessa uudessa tietueessa, kun tietoja syötetään tauluun. Oletusarvon tulee siksi myös vastata solun muotoa, joka määritellään alapuolella."
 
 #: ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
 msgstr "Aktivoi tämä asetus, jos kenttä ei voi sisältää tyhjiä arvoja, eli jos käyttäjän on aina syötettävä tietoja."
 
 #: ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Enter the maximum text length permitted."
 msgstr "Syötä tekstin sallittu enimmäispituus."
 
 #: ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Enter the number format."
 msgstr "Syötä lukumuoto."
 
 #: ui/tabledesign/table.src#STR_HELP_LENGTH.STRING.TEXT
+#, fuzzy
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
 msgstr "Määritä tietojen mahdollinen pituus tässä kentässä.\n\nJos tiedot ovat desimaalikenttiä, määritä syötettävän luvun enimmäispituus; jos ne ovat binäärikenttiä, syötä tietolohkon enimmäispituus.\nArvo korjataan määrityksen mukaan, jos se ylittää tietokannan enimmäisarvon."
 
 #: ui/tabledesign/table.src#STR_HELP_SCALE.STRING.TEXT
+#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
 msgstr "Määritä sallittujen desimaalien määrä tässä kentässä."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.STRING.TEXT
+#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
 msgstr "Tässä näytetään kuinka tiedot näytettäisiin käyttäen nykyistä muotomääritystä (voit muokata muotoa käyttämällä painiketta oikealla)."
 
 #: ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "This is where you determine the output format of the data."
 msgstr "Tässä voit määrittää tietojen tulostusmuodon."
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.STRING.TEXT
+#, fuzzy
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
 msgstr "Valitse, tuleeko tämän kentän sisältää automaattisesti kasvava lukuarvo.\n\nTämän tyyppisiin kenttiin ei voi syöttää tietoja. Kullekin tietueelle määritetään automaattisesti arvo, joka saadaan kasvattamalla edellisen tietueen arvoa yhdellä."
 
 #: ui/tabledesign/table.src#PB_FORMAT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "Taulua ei voi tallentaa, koska sarakkeen nimi \"$column$\" määritettiin kahdesti."
 
 #: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "Sarake \"$column$\" on osa perusavainta. Jos poistat tämän sarakkeen, myös perusavain poistetaan. Haluatko varmasti jatkaa?"
 
-#: ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.STRING.TEXT
-msgid  "Primary Key Affected"
-msgstr "Vaikutus kohdistunut perusavaimeen"
+#: ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QUERYBOX.MESSAGE
+msgid  "The table has been changed.\nDo you want to save the changes?"
+msgstr "Taulua on muutettu.\nHaluatko tallentaa muutokset?"
 
-#: ui/tabledesign/table.src#STR_COLUMN_NAME.STRING.TEXT
-msgid  "Column"
-msgstr "Sarake"
-
-#: ui/tabledesign/table.src#STR_QRY_CONTINUE.STRING.TEXT
-msgid  "Continue anyway?"
-msgstr "Jatketaanko silti?"
-
-#: ui/tabledesign/table.src#STR_STAT_WARNING.STRING.TEXT
-msgid  "Warning!"
-msgstr "Varoitus!"
+#: ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QUERYBOX.MESSAGE
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
+msgstr "Yhteys tietokantaan on katkennut. Taulun suunnittelutoimintoa voi käyttää vain rajoitetusti ilman yhteyttä.\nMuodostetaanko yhteys uudelleen?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
 msgstr "Taulua ei voitu tallentaa, koska tietokantaan ei voitu muodostaa yhteyttä."
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.STRING.TEXT
+#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
 msgstr "Taulujen suodatusta ei voitu säätää, koska tietolähde on poistettu."
 
-#: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.STRING.TEXT
-msgid  "No primary key"
-msgstr "Ei perusavainta"
+#: ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QUERYBOX.MESSAGE
+msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
+msgstr "Taulu on tallennettava ennen kuin sen indeksejä voi muokata.\nTallennetaanko muutokset nyt?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.STRING.TEXT
+#, fuzzy
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
 msgstr "Tässä tietokannassa on oltava yksilöllinen indeksi tai perusavain tietueiden tunnistamista varten.\nTähän tauluun voi syöttää tietoja vain, jos jompikumpi näistä on määritetty.\n\nHaluatko luoda perusavaimen nyt?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " - %PRODUCTNAME Base: Taulun suunnittelu"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr "Saraketta \"$column$\" ei voitu muuttaa. Poistetaanko sarake ja käytetään uutta muotoa?"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "Virhe tallennettaessa taulun rakennetta"
 
 #: ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.STRING.TEXT
+#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "Saraketta $column$ ei voitu poistaa."
 
 #: ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
 msgstr "Yritit poistaa taulun kaikki sarakkeet. Taulua ei voi olla olemassa ilman sarakkeita. Poistetaanko taulu tietokannasta? Jos ei, taulua ei muuteta."
 
 #: ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "Kasvata lauseketta a~utomaattisesti"
 
 #: ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
 msgstr "Anna automaattisesti kasvatettavalle kentälle SQL-lauseke.\n\nTämä lauseke siirretään suoraan tietokantaan kun taulu luodaan."
 
 #: ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.STRING.TEXT
+#, fuzzy
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
 msgstr "Tietokannasta ei saatu noudettua tyyppitietoja.\nTaulun suunnittelutila ei ole käytettävissä tälle tietolähteelle."
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.STRING.TEXT
+#, fuzzy
 msgid  "change field name"
 msgstr "vaihda kentän nimeä"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "change field type"
 msgstr "vaihda kentän tyyppiä"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "change field description"
 msgstr "vaihda kentän kuvausta"
 
 #: ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.STRING.TEXT
+#, fuzzy
 msgid  "change field attribute"
 msgstr "vaihda kentän määritteitä"
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "Kohdetietokanta ei tue näkymiä."
 
 #: ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "Kohdetietokanta ei tue perusavaimia."
 
 #: ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.STRING.TEXT
+#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "riittävät tiedot sisältävää tietokantayhteyden alustusmäärittelyä ei löytynyt"
 
 #: ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "Toistaiseksi vain taulujen ja kyselyiden käyttö on mahdollista."
 
 #: ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.STRING.TEXT
+#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "Kopion lähteen tulosjoukon on tuettava kirjanmerkkejä."
 
 #: ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "Sarakkeen $pos$ lähdesarakkeen tyyppiä ($type$) ei tueta."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "Virheellinen määrä alustusparametreja."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "Alustuksessa tapahtui virhe."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.STRING.TEXT
+#, fuzzy
 msgid  "Unsupported setting in the copy source descriptor: $name$."
 msgstr "Kopioinnin lähteessä on tuntematon asetus $name$."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "To copy a query, your connection must be able to provide queries."
 msgstr "Kyselyjä voi kopioida vain, jos tietokantayhteys tukee niitä."
 
 #: ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.STRING.TEXT
+#, fuzzy
 msgid  "The given interaction handler is invalid."
 msgstr "Annettu toimenpiteen suorittava objekti on virheellinen."
-
-#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.STRING.TEXT
-msgid  "~Remember password until end of session"
-msgstr "~Muista salasana istunnon loppuun asti"
-
-#: ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.STRING.TEXT
-msgid  "~Remember password"
-msgstr "~Muista salasana"

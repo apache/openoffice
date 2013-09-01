@@ -47,10 +47,6 @@ msgstr "заменен"
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
 msgstr "Възникна грешка при зареждане на елемента за управление. Поради това той беше заменен със запазено място."
 
-#: resource/strings.src#RID_STR_READERROR.STRING.TEXT
-msgid  "Error reading data from database"
-msgstr "Грешка при четене на данни от базата от данни"
-
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
 msgid  "Connection failed"
 msgstr "Свързването бе неуспешно"
@@ -63,22 +59,6 @@ msgstr "Зареждането на данните бе невъзможно."
 msgid  "The data content could not be updated"
 msgstr "Обновяването на данните бе невъзможно"
 
-#: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
-msgid  "Error inserting the new record"
-msgstr "Грешка при вмъкване на новия запис"
-
-#: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
-msgid  "Error updating the current record"
-msgstr "Грешка при актуализиране на текущия запис"
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
-msgid  "Error deleting the current record"
-msgstr "Грешка при изтриване на текущия запис"
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
-msgid  "Error deleting the specified records"
-msgstr "Грешка при изтриването на посочените записи"
-
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
 msgid  "The object cannot be NULL."
 msgstr "Обектът не може да бъде NULL."
@@ -87,17 +67,9 @@ msgstr "Обектът не може да бъде NULL."
 msgid  "Insert graphics from..."
 msgstr "Вмъкване на графика от..."
 
-#: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
-msgid  "Remove graphics"
-msgstr "Премахване на графика"
-
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
 msgid  "The given stream is invalid."
 msgstr "Даденият поток е невалиден."
-
-#: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
-msgid  "Syntax error in query expression"
-msgstr "Синтактична грешка в израза на заявката"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
@@ -207,29 +179,9 @@ msgstr "Низът не може да е по-дълъг от $2 знака."
 msgid  "String"
 msgstr "Низ"
 
-#: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
-msgid  "Hyperlink"
-msgstr "Хипервръзка"
-
-#: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
-msgid  "True/False (Boolean)"
-msgstr "Истина/лъжа (Boolean)"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
-msgid  "Decimal"
-msgstr "Десетични числа"
-
-#: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
-msgid  "Floating point"
-msgstr "Плаваща запетая"
-
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
 msgid  "Double"
 msgstr "Двойна точност"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
-msgid  "Date"
-msgstr "Дата"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
 msgid  "Time"
@@ -247,26 +199,6 @@ msgstr "Месец и година"
 msgid  "Year"
 msgstr "Година"
 
-#: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
-msgid  "Month and day"
-msgstr "Месец и ден"
-
-#: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
-msgid  "Month"
-msgstr "Месец"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
-msgid  "Day"
-msgstr "Ден"
-
-#: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
-msgid  "Error during evaluation"
-msgstr "Грешка по време на изчисляване"
-
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
 msgid  "The string '$1' does not match the required regular expression '$2'."
 msgstr "Низът \"$1\" не отговаря на изисквания регулярен израз \"$2\"."
-
-#: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
-msgstr "Обвързване"

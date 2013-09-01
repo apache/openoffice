@@ -41,23 +41,15 @@ msgstr "Βοήθεια πρόσ~θετων λειτουργιών"
 
 #: classes/resource.src#STR_MENU_HEADFOOTALL.STRING.TEXT
 msgid  "All"
-msgstr "Όλα:"
-
-#: classes/resource.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
-msgstr "~Ενημέρωση"
+msgstr "Όλα"
 
 #: classes/resource.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
 msgid  "~Close & Return to "
-msgstr "~Κλείσιμο και επιστροφή σε"
-
-#: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MENUITEM.TEXT
-msgid  "Visible ~Buttons"
-msgstr "Ορατά ~κουμπιά"
+msgstr "~Κλείσιμο και Επιστροφή σε "
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MENUITEM.TEXT
 msgid  "~Customize Toolbar..."
-msgstr "~Προσαρμογή εργαλειοθήκης"
+msgstr "~Προσαρμογή Εργαλειοθήκης..."
 
 #: classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.MENUITEM.TEXT
 msgid  "~Dock Toolbar"
@@ -77,11 +69,15 @@ msgstr "~Κλείσιμο εργαλειοθήκης"
 
 #: classes/resource.src#STR_SAVECOPYDOC.STRING.TEXT
 msgid  "Save Copy ~as..."
-msgstr "Αποθήκευση αντιγράφου ~ως... "
+msgstr "Αποθήκευση Αντιγράφου ~ως..."
 
-#: classes/resource.src#STR_NODOCUMENT.STRING.TEXT
-msgid  "No Documents"
-msgstr "Δεν υπάρχουν έγγραφα"
+#: classes/resource.src#STR_CLEAR_RECENT_FILES.STRING.TEXT
+msgid  "Clear List"
+msgstr "Καθαρισμός Λίστας"
+
+#: classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.STRING.TEXT
+msgid  "Clears the list with the most recently opened files. This action can not be undone."
+msgstr "Καθαρίζει τη λίστα των πιό πρόσφατων αρχείων. Η αναίρεση της ενέργειας δεν είναι δυνατή."
 
 #: classes/resource.src#STR_TOOLBAR_TITLE_ADDON.STRING.TEXT
 msgid  "Add-On %num%"
@@ -115,17 +111,9 @@ msgstr "2."
 msgid  "Accept the License Agreement."
 msgstr "Αποδοχή της άδειας χρήσης."
 
-#: classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
-msgstr "Απο~δοχή"
-
 #: classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.STRING.TEXT
 msgid  "Decline"
 msgstr "Απόρριψη"
-
-#: classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.STRING.TEXT
-msgid  "Retry"
-msgstr "Προσπάθεια ξανά"
 
 #: classes/resource.src#STR_FULL_DISC_MSG.STRING.TEXT
 msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
@@ -137,15 +125,15 @@ msgstr "Επανα~φορά"
 
 #: classes/resource.src#STR_CORRUPT_UICFG_SHARE.STRING.TEXT
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "Προέκυψε σφάλμα κατά την φόρτωση των δεδομένων ρύθμισης του γραφικού περιβάλλοντος χρήσης. Η εφαρμογή θα τερματιστεί. \nΠαρακαλώ προσπαθήστε να εγκαταστήσετε πάλι την εφαρμογή."
+msgstr "Προέκυψε σφάλμα κατά την φόρτωση των δεδομένων ρύθμισης του γραφικού περιβάλλοντος χρήσης. Η εφαρμογή θα τερματιστεί.\nΠαρακαλώ προσπαθήστε να εγκαταστήσετε πάλι την εφαρμογή."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_USER.STRING.TEXT
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "Προέκυψε σφάλμα κατά την φόρτωση των δεδομένων ρύθμισης του γραφικού περιβάλλοντος χρήσης. Η εφαρμογή θα τερματιστεί. \nΠαρακαλώ προσπαθήστε να διαγράψετε το δικό σας προφίλ χρήστη από την εφαρμογή."
+msgstr "Προέκυψε σφάλμα κατά την φόρτωση των δεδομένων ρύθμισης του γραφικού περιβάλλοντος χρήσης. Η εφαρμογή θα τερματιστεί.\nΠαρακαλώ προσπαθήστε να διαγράψετε το δικό σας προφίλ χρήστη από την εφαρμογή."
 
 #: classes/resource.src#STR_CORRUPT_UICFG_GENERAL.STRING.TEXT
 msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "Προέκυψε σφάλμα κατά την φόρτωση των δεδομένων ρύθμισης του γραφικού περιβάλλοντος χρήσης. Η εφαρμογή θα τερματιστεί. \nΠαρακαλώ προσπαθήστε πρώτα να διαγράψετε το δικό σας προφίλ χρήστη από την εφαρμογή ή προσπαθήστε να την εγκαταστήσετε πάλι."
+msgstr "Προέκυψε σφάλμα κατά την φόρτωση των δεδομένων ρύθμισης του γραφικού περιβάλλοντος χρήσης. Η εφαρμογή θα τερματιστεί.\nΠαρακαλώ προσπαθήστε πρώτα να διαγράψετε το δικό σας προφίλ χρήστη από την εφαρμογή ή προσπαθήστε να την εγκαταστήσετε πάλι."
 
 #: classes/resource.src#STR_UNTITLED_DOCUMENT.STRING.TEXT
 msgid  "Untitled"

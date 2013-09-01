@@ -31,30 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
-msgid  "Configuration Menu"
-msgstr "Configuration Menu"
-
-#: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
-msgid  "~Add-Ons"
-msgstr "~Add-Ons"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
-msgid  "Cu~t"
-msgstr "Cu~t"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
-msgid  "~Copy"
-msgstr "~Copy"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
-msgid  "~Paste"
-msgstr "~Paste"
-
-#: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
-msgid  "Leave Full-Screen Mode"
-msgstr "Leave Full-Screen Mode"
-
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
 msgid  "Add-~On Help"
 msgstr "Add-~On Help"
@@ -71,73 +47,25 @@ msgstr "(none)"
 msgid  "~Thesaurus..."
 msgstr "~Thesaurus..."
 
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
-msgid  "My Templates"
-msgstr "My Templates"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
-msgid  "Business Correspondence"
-msgstr "Business Correspondence"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
-msgid  "Other Business Documents"
-msgstr "Other Business Documents"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
-msgid  "Personal Correspondence and Documents"
-msgstr "Personal Correspondence and Documents"
-
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
 msgid  "Forms and Contracts"
 msgstr "Forms and Contracts"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
-msgid  "Finances"
-msgstr "Finances"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
-msgid  "Education"
-msgstr "Education"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
-msgid  "Presentation Backgrounds"
-msgstr "Presentation Backgrounds"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
-msgid  "Presentations"
-msgstr "Presentations"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
-msgid  "Miscellaneous"
-msgstr "Miscellaneous"
-
-#: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
-msgid  "The templates are being initialized for first-time usage."
-msgstr "The templates are being initialised for first-time usage."
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
 msgid  "Templates"
 msgstr "Templates"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
-msgid  "New template"
-msgstr "New template"
-
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 msgid  "~Categories"
 msgstr "~Categories"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
-msgid  "~Templates"
-msgstr "~Templates"
+#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr ""
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr "~Edit"
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
-msgid  "~Organizer..."
-msgstr "~Organiser..."
+#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr ""
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
 msgid  "Are you sure you want to delete the region \"$1\"?"
@@ -147,137 +75,45 @@ msgstr "Are you sure you want to delete the region \"$1\"?"
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "Are you sure you want to delete the entry \"$1\"?"
 
-#: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-
-#: doc/doc.src#STR_STYLES.STRING.TEXT
-msgid  "Styles"
-msgstr "Styles"
-
-#: doc/doc.src#STR_MACROS.STRING.TEXT
-msgid  "Macros"
-msgstr "Macros"
-
-#: doc/doc.src#STR_CONFIG.STRING.TEXT
-msgid  "Configuration"
-msgstr "Configuration"
+#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr ""
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
 msgid  "Styles in "
 msgstr "Styles in "
 
-#: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
-msgid  "Printing Styles"
-msgstr "Printing Styles"
-
-#: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
-msgid  "The print job could not be started."
-msgstr "The print job could not be started."
-
-#: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
-msgid  "Copy"
-msgstr "Copy"
-
-#: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
-msgid  "The template could not be opened."
-msgstr "The template could not be opened."
-
-#: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
-msgid  "Document already open for editing."
-msgstr "Document already open for editing."
-
-#: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
-msgid  "Error recording document "
-msgstr "Error recording document "
-
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
 msgid  "Templates"
 msgstr "Templates"
-
-#: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "Error copying template \"$1\". \nA template with this name may already exist."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
 msgid  "The template \"$1\" can not be deleted."
 msgstr "The template \"$1\" can not be deleted."
 
-#: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
-msgid  "Error moving template \"$1\"."
-msgstr "Error moving template \"$1\"."
-
-#: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
-msgid  "The update could not be saved."
-msgstr "The update could not be saved."
-
-#: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-msgid  "Error saving template "
-msgstr "Error saving template "
-
-#: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
-msgid  "Error renaming template."
-msgstr "Error renaming template."
-
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
 msgid  "Error renaming template category."
 msgstr "Error renaming template category."
 
-#: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
-msgid  "Please specify a name."
-msgstr "Please specify a name."
+#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr ""
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr "Should the template \"$(TEXT)\" become the default template?"
 
-#: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
-msgid  "Do you want to reset the default template?"
-msgstr "Do you want to reset the default template?"
-
-#: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
-msgid  "Document info cannot be read."
-msgstr "Document info cannot be read."
-
-#: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
-msgid  "The selected file has an incorrect format."
-msgstr "The selected file has an incorrect format."
+#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr ""
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
 msgstr "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
 
-#: doc/doc.src#STR_SAVEDOC.STRING.TEXT
-msgid  "~Save"
-msgstr "~Save"
-
-#: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
-msgstr "~Update"
-
-#: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
-msgid  "Save ~As..."
-msgstr "Save ~As..."
-
-#: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
-msgid  "Save Copy ~as..."
-msgstr "Save Copy ~as..."
-
-#: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
-msgid  "~Close"
-msgstr "~Close"
-
-#: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-msgid  "~Close & Return to "
-msgstr "~Close & Return to "
-
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
 msgid  " AutoPilot"
 msgstr " AutoPilot"
-
-#: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
-msgid  "Configurations"
-msgstr "Configurations"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
 msgid  "%PRODUCTNAME Basic libraries"
@@ -287,209 +123,37 @@ msgstr "%PRODUCTNAME Basic libraries"
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "Should the \"$(ARG1)\" Style be replaced?"
 
-#: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
-msgid  "Loading Document"
-msgstr "Loading Document"
-
-#: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
-msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr "Connection to: $(HOST). Waiting for response..."
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
-msgid  "Opening $(TARGET) at $(HOST)"
-msgstr "Opening $(TARGET) at $(HOST)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
-msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
-msgid  "Disconnected"
-msgstr "Disconnected"
-
-#: doc/doc.src#STR_EDIT.STRING.TEXT
-msgid  "Edit"
-msgstr "Edit"
-
-#: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
-msgid  "%PRODUCTNAME Documents"
-msgstr "%PRODUCTNAME Documents"
+#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr ""
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
 msgid  "Propert~ies..."
 msgstr "Propert~ies..."
 
-#: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
-msgid  "HTML (FrameSet)"
-msgstr "HTML (FrameSet)"
-
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME Frame Document"
-
-#: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
-msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "The template \"$(TEMPLATE)\" has not been found. Should the template be searched for the next time that the document is opened ?"
 
-#: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
-msgid  "Automatically saved version"
-msgstr "Automatically saved version"
-
-#: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
-msgid  "Text Document"
-msgstr "Text Document"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
-msgid  "HTML Document"
-msgstr "HTML Document"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
-msgid  "Master Document"
-msgstr "Master Document"
-
-#: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
-msgid  "Spreadsheet"
-msgstr "Spreadsheet"
-
-#: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
-msgid  "Presentation"
-msgstr "Presentation"
-
-#: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
-msgid  "Drawing"
-msgstr "Drawing"
-
-#: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
-msgid  "Message"
-msgstr "Message"
-
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
 msgid  "~Discard"
 msgstr "~Discard"
-
-#: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
-msgid  "Access to the current data medium not possible."
-msgstr "Access to the current data medium not possible."
-
-#: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
-msgid  "Insert the next data carrier and click OK."
-msgstr "Insert the next data carrier and click OK."
-
-#: doc/doc.src#STR_OBJECT.STRING.TEXT
-msgid  "Object"
-msgstr "Object"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
-msgid  "Run Macro"
-msgstr "Run Macro"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
-msgid  "This document contains macros. $(TEXT)"
-msgstr "This document contains macros. $(TEXT)"
-
-#: doc/doc.src#BTN_OK.STRING.TEXT
-msgid  "Run"
-msgstr "Run"
-
-#: doc/doc.src#BTN_CANCEL.STRING.TEXT
-msgid  "Do Not Run"
-msgstr "Do Not Run"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 
-#: doc/doc.src#FT_OK.STRING.TEXT
-msgid  "Do you want to allow these macros to be run?"
-msgstr "Do you want to allow these macros to be run?"
-
-#: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
-msgid  "Export as PDF"
-msgstr "Export as PDF"
-
-#: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
-msgid  "Export..."
-msgstr "Export..."
-
-#: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
-msgid  "Export"
-msgstr "Export"
-
-#: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
-msgid  "Add this directory to the list of secure paths: "
-msgstr "Add this directory to the list of secure paths: "
-
-#: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
-msgid  "File format:"
-msgstr "File format:"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
-msgid  "This document contains:\n\n"
-msgstr "This document contains:\n\n"
-
-#: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
-msgid  "Recorded changes"
-msgstr "Recorded changes"
-
-#: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
-msgid  "Notes"
-msgstr "Notes"
-
-#: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
-msgid  "Document versions"
-msgstr "Document versions"
-
-#: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
-msgid  "Fields"
-msgstr "Fields"
-
-#: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
-msgid  "Linked data..."
-msgstr "Linked data..."
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
-msgid  "Do you want to continue saving the document?"
-msgstr "Do you want to continue saving the document?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
-msgid  "Do you want to continue printing the document?"
-msgstr "Do you want to continue printing the document?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
-msgid  "Do you want to continue signing the document?"
-msgstr "Do you want to continue signing the document?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
-msgid  "Do you want to continue creating a PDF file?"
-msgstr "Do you want to continue creating a PDF file?"
-
-#: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
-msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "If you do not want to overwrite the original document, you should save your work under a new filename."
-
-#: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
-msgid  "Some template files are protected and can not be deleted."
-msgstr "Some template files are protected and can not be deleted."
-
-#: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
-msgid  "Info %1"
-msgstr "Info %1"
-
 #: doc/doc.src#STR_SHARED.STRING.TEXT
 msgid  " (shared)"
 msgstr " (shared)"
 
-#: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
-msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools - Options - Load/Save - General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-
-#: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
-msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr "The template '$(ARG1)', on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
+#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr ""
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
 msgid  "~Update Styles"
@@ -499,18 +163,6 @@ msgstr "~Update Styles"
 msgid  "~Keep Old Styles"
 msgstr "~Keep Old Styles"
 
-#: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
-msgid  "Template Management"
-msgstr "Template Management"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
-msgid  "Close"
-msgstr "Close"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
-msgid  "~File..."
-msgstr "~File..."
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
 msgid  "~Address Book..."
 msgstr "~Address Book..."
@@ -519,25 +171,9 @@ msgstr "~Address Book..."
 msgid  "Templates"
 msgstr "Templates"
 
-#: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Documents"
-msgstr "Documents"
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
 msgid  "Commands"
 msgstr "Commands"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
-msgid  "~New"
-msgstr "~New"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
-msgid  "~Delete"
-msgstr "~Delete"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
-msgid  "~Edit"
-msgstr "~Edit"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
 msgid  "Import Template..."
@@ -546,10 +182,6 @@ msgstr "Import Template..."
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MENUITEM.TEXT
 msgid  "Export Template..."
 msgstr "Export Template..."
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
-msgid  "~Print"
-msgstr "~Print"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
 msgid  "Printer Settings..."
@@ -567,153 +199,29 @@ msgstr "Set As Default Template"
 msgid  "Reset Default Template"
 msgstr "Reset Default Template"
 
-#: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
-msgid  "New"
-msgstr "New"
-
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
 msgid  "~Categories"
 msgstr "~Categories"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
-msgid  "T~emplates"
-msgstr "T~emplates"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
 msgid  "~More"
 msgstr "~More"
 
-#: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
-msgid  "Pre~view"
-msgstr "Pre~view"
-
-#: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "Description"
-
-#: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
-msgid  "Te~xt"
-msgstr "Te~xt"
-
-#: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
-msgid  "~Frame"
-msgstr "~Frame"
-
-#: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
-msgid  "~Pages"
-msgstr "~Pages"
-
-#: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
-msgid  "N~umbering"
-msgstr "N~umbering"
-
-#: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
-msgid  "~Overwrite"
-msgstr "~Overwrite"
-
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
 msgid  "From File..."
 msgstr "From File..."
-
-#: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
-msgid  "Load Styles"
-msgstr "Load Styles"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
-msgid  "~Title"
-msgstr "~Title"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
 msgid  "Subject"
 msgstr "Subject"
 
-#: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
-msgid  "~Key words"
-msgstr "~Key words"
-
-#: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
-msgid  "~Description"
-msgstr "~Description"
-
-#: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-
-#: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "The selected filter $(FILTER) is not included in your edition.\nYou can find more information about it on our homepage."
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
-msgid  "Reduce print data"
-msgstr "Reduce print data"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
-msgid  "Settings for"
-msgstr "Settings for"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
-msgid  "~Printer"
-msgstr "~Printer"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
-msgid  "Print to ~file"
-msgstr "Print to ~file"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
-msgid  "~Reduce transparency"
-msgstr "~Reduce transparency"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
-msgid  "Auto~matically"
-msgstr "Auto~matically"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
-msgid  "~No transparency"
-msgstr "~No transparency"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
-msgid  "Reduce ~gradients"
-msgstr "Reduce ~gradients"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
 msgid  "Gradient ~stripes"
 msgstr "Gradient ~stripes"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
-msgid  "Intermediate ~color"
-msgstr "Intermediate ~colour"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
-msgid  "Reduce ~bitmaps"
-msgstr "Reduce ~bitmaps"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
-msgid  "~High print quality"
-msgstr "~High print quality"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
-msgid  "N~ormal print quality"
-msgstr "N~ormal print quality"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
 msgid  "Reso~lution"
 msgstr "Reso~lution"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "72 DPI"
-msgstr "72 DPI"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "96 DPI"
-msgstr "96 DPI"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "150 DPI (Fax)"
-msgstr "150 DPI (Fax)"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "200 DPI (default)"
-msgstr "200 DPI (default)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 msgid  "300 DPI"
@@ -723,69 +231,17 @@ msgstr "300 DPI"
 msgid  "600 DPI"
 msgstr "600 DPI"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
-msgid  "Include transparent ob~jects"
-msgstr "Include transparent ob~jects"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
 msgid  "Con~vert colors to grayscale"
 msgstr "Con~vert colours to greyscale"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
-msgid  "Printer warnings"
-msgstr "Printer warnings"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
-msgid  "P~aper size"
-msgstr "P~aper size"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
 msgid  "Pap~er orientation"
 msgstr "Pap~er orientation"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
-msgid  "~Transparency"
-msgstr "~Transparency"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
-msgid  "Warning"
-msgstr "Warning"
-
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
-msgid  "~Yes"
-msgstr "~Yes"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
-msgid  "~No"
-msgstr "~No"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
-msgid  "~Cancel"
-msgstr "~Cancel"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
-msgid  "~Do not show warning again"
-msgstr "~Do not show warning again"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
-msgid  "Style Catalog"
-msgstr "Style Catalogue"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
-msgid  "~Organizer..."
-msgstr "~Organiser..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
-msgid  "~Delete..."
-msgstr "~Delete..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
-msgid  "~Modify..."
-msgstr "~Modify..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
 msgid  "~New..."
@@ -795,25 +251,9 @@ msgstr "~New..."
 msgid  "Style List"
 msgstr "Style List"
 
-#: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
-msgid  "Hierarchical"
-msgstr "Hierarchical"
-
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
 msgid  "Styles and Formatting"
 msgstr "Styles and Formatting"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
-msgid  "Fill Format Mode"
-msgstr "Fill Format Mode"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
-msgid  "New Style from Selection"
-msgstr "New Style from Selection"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
-msgid  "Update Style"
-msgstr "Update Style"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 msgid  "File encryption password"
@@ -875,89 +315,13 @@ msgstr "Unprotect Records"
 msgid  "Incorrect password"
 msgstr "Incorrect password"
 
-#: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
-msgid  "New versions"
-msgstr "New versions"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
-msgid  "Save ~New Version"
-msgstr "Save ~New Version"
-
-#: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
-msgid  "~Always save a version on closing"
-msgstr "~Always save a version on closing"
-
-#: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
-msgid  "Existing versions"
-msgstr "Existing versions"
-
-#: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
-msgid  "Date and time"
-msgstr "Date and time"
-
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
 msgid  "Saved by"
 msgstr "Saved by"
 
-#: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
-msgid  "Comments"
-msgstr "Comments"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
-msgstr "Close"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
-msgid  "Open"
-msgstr "Open"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
-msgid  "~Show..."
-msgstr "~Show..."
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "~Delete"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
-msgid  "Compare"
-msgstr "Compare"
-
-#: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
-msgid  "Versions of"
-msgstr "Versions of"
-
-#: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
-msgid  "Date and time : "
-msgstr "Date and time : "
-
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
 msgid  "Saved by "
 msgstr "Saved by "
-
-#: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Close"
-
-#: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
-msgid  "Insert Version Comment"
-msgstr "Insert Version Comment"
-
-#: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
-msgid  "Version comment"
-msgstr "Version comment"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
-msgid  "~Name"
-msgstr "~Name"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
-msgid  "~AutoUpdate"
-msgstr "~AutoUpdate"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
-msgid  "Ne~xt Style"
-msgstr "Ne~xt Style"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
 msgid  "Linked with"
@@ -967,133 +331,21 @@ msgstr "Linked with"
 msgid  "~Category"
 msgstr "~Category"
 
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
-msgid  "Contains"
-msgstr "Contains"
-
-#: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
-msgid  "Current version"
-msgstr "Current version"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
-msgid  "Export"
-msgstr "Export"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Insert"
-
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
 msgid  "~Insert"
 msgstr "~Insert"
-
-#: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
-msgid  "<All formats>"
-msgstr "<All formats>"
-
-#: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
-msgid  "~Automatic file name extension"
-msgstr "~Automatic file name extension"
-
-#: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
-msgid  "~Selection"
-msgstr "~Selection"
-
-#: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
-msgid  "~Link"
-msgstr "~Link"
-
-#: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
-msgid  "Pr~eview"
-msgstr "Pr~eview"
-
-#: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
-msgid  "~Read-only"
-msgstr "~Read-only"
-
-#: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
-msgid  "Save with ~password"
-msgstr "Save with ~password"
-
-#: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
-msgid  "Edit ~filter settings"
-msgstr "Edit ~filter settings"
-
-#: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
-msgid  "~Play"
-msgstr "~Play"
-
-#: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
-msgid  "Sto~p"
-msgstr "Sto~p"
-
-#: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
-msgid  "~Open"
-msgstr "~Open"
-
-#: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
-msgid  "~Save"
-msgstr "~Save"
-
-#: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
-msgid  "Style:"
-msgstr "Style:"
-
-#: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
-msgid  "~Templates:"
-msgstr "~Templates:"
-
-#: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
-msgid  "~Version:"
-msgstr "~Version:"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
 msgid  "Find on this Page"
 msgstr "Find on this Page"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-msgid  "~Search for"
-msgstr "~Search for"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
-msgid  "~Whole words only"
-msgstr "~Whole words only"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
-msgid  "~Match case"
-msgstr "~Match case"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
 msgid  "Wrap ~around"
 msgstr "Wrap ~around"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
-msgid  "~Backwards"
-msgstr "~Backwards"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
 msgid  "~Find"
 msgstr "~Find"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Close"
-
-#: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
-msgid  "Enter Password"
-msgstr "Enter Password"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
-msgid  "~User"
-msgstr "~User"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
-msgid  "~Password"
-msgstr "~Password"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
-msgid  "~Confirm"
-msgstr "~Confirm"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
 msgid  "Password"
@@ -1111,46 +363,6 @@ msgstr "Confir~m"
 msgid  "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME document"
 
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
-msgid  "~Title"
-msgstr "~Title"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
-msgid  "~Subject"
-msgstr "~Subject"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
-msgid  "~Keywords"
-msgstr "~Keywords"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
-msgid  "~Comments"
-msgstr "~Comments"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
-msgid  "Type:"
-msgstr "Type:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
-msgid  "~Read-only"
-msgstr "~Read-only"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
-msgid  "Location:"
-msgstr "Location:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
-msgid  "Size:"
-msgstr "Size:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
-msgid  "Created:"
-msgstr "Created:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
-msgid  "Modified:"
-msgstr "Modified:"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
 msgid  "Digitally signed:"
 msgstr "Digitally signed:"
@@ -1158,22 +370,6 @@ msgstr "Digitally signed:"
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PUSHBUTTON.TEXT
 msgid  "Digital Signature..."
 msgstr "Digital Signature..."
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
-msgid  "Multiply signed document"
-msgstr "Multiply signed document"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
-msgid  "Last printed:"
-msgstr "Last printed:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
-msgid  "Total editing time:"
-msgstr "Total editing time:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
-msgid  "Revision number:"
-msgstr "Revision number:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
 msgid  "Reset"
@@ -1183,33 +379,13 @@ msgstr "Reset"
 msgid  "~Apply user data"
 msgstr "~Apply user data"
 
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
-msgid  "Template:"
-msgstr "Template:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
-msgid  "unknown"
-msgstr "unknown"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
 msgid  "File Name"
 msgstr "File Name"
 
-#: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
-msgid  "~Info fields..."
-msgstr "~Info fields..."
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
-msgid  "Do not refresh automatically"
-msgstr "Do not refresh automatically"
-
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
 msgid  "Refresh this document"
 msgstr "Refresh this document"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
-msgid  "every"
-msgstr "every"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
 msgid  "seconds"
@@ -1218,14 +394,6 @@ msgstr "seconds"
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RADIOBUTTON.TEXT
 msgid  "Redirect from this document"
 msgstr "Redirect from this document"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
-msgid  "after"
-msgstr "after"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
-msgid  "to URL"
-msgstr "to URL"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
 msgid  "to frame"
@@ -1239,165 +407,17 @@ msgstr "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
 msgid  "~Properties"
 msgstr "~Properties"
 
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
-msgid  "Name"
-msgstr "Name"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
-msgid  "Type"
-msgstr "Type"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
-msgid  "Value"
-msgstr "Value"
-
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
 msgid  "~Add"
 msgstr "~Add"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
-msgid  "Property Name"
-msgstr "Property Name"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
-msgid  "Checked by"
-msgstr "Checked by"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
-msgid  "Client"
-msgstr "Client"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
-msgid  "Date completed"
-msgstr "Date completed"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
-msgid  "Department"
-msgstr "Department"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
-msgid  "Destinations"
-msgstr "Destinations"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
-msgid  "Disposition"
-msgstr "Disposition"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
-msgid  "Division"
-msgstr "Division"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
-msgid  "Document number"
-msgstr "Document number"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
-msgid  "Editor"
-msgstr "Editor"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
-msgid  "E-Mail"
-msgstr "E-Mail"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
-msgid  "Forward to"
-msgstr "Forward to"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
-msgid  "Group"
-msgstr "Group"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
-msgid  "Info"
-msgstr "Info"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
-msgid  "Language"
-msgstr "Language"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
-msgid  "Mailstop"
-msgstr "Mailstop"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
-msgid  "Matter"
-msgstr "Matter"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
-msgid  "Office"
-msgstr "Office"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
-msgid  "Owner"
-msgstr "Owner"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
-msgid  "Project"
-msgstr "Project"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
-msgid  "Publisher"
-msgstr "Publisher"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
-msgid  "Purpose"
-msgstr "Purpose"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
-msgid  "Received from"
-msgstr "Received from"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
-msgid  "Recorded by"
-msgstr "Recorded by"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
-msgid  "Recorded date"
-msgstr "Recorded date"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
-msgid  "Reference"
-msgstr "Reference"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
-msgid  "Source"
-msgstr "Source"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
-msgid  "Status"
-msgstr "Status"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
-msgid  "Telephone number"
-msgstr "Telephone number"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
-msgid  "Typist"
-msgstr "Typist"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
-msgid  "URL"
-msgstr "URL"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
-msgid  "Text"
-msgstr "Text"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 msgid  "DateTime"
 msgstr "DateTime"
 
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
-msgid  "Date"
-msgstr "Date"
-
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
 msgid  "Duration"
 msgstr "Duration"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
-msgid  "Number"
-msgstr "Number"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
 msgid  "Yes or no"
@@ -1407,37 +427,9 @@ msgstr "Yes or no"
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
-msgid  "Yes"
-msgstr "Yes"
-
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
-msgid  "No"
-msgstr "No"
-
-#: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Remove Property"
-msgstr "Remove Property"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
-msgid  "Properties of "
-msgstr "Properties of "
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
-msgid  "General"
-msgstr "General"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
-msgid  "Description"
-msgstr "Description"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
-msgid  "Custom Properties"
-msgstr "Custom Properties"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
-msgid  "Internet"
-msgstr "Internet"
+#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr ""
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 msgid  "Security"
@@ -1471,10 +463,6 @@ msgstr "H~ours"
 msgid  "Min~utes"
 msgstr "Min~utes"
 
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
-msgid  "~Seconds"
-msgstr "~Seconds"
-
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 msgid  "Millise~conds"
 msgstr "Millise~conds"
@@ -1482,22 +470,6 @@ msgstr "Millise~conds"
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.MODALDIALOG.TEXT
 msgid  "Edit Field Names"
 msgstr "Edit Field Names"
-
-#: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
-msgid  "Names"
-msgstr "Names"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
-msgid  "Create Style"
-msgstr "Create Style"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
-msgid  "Style name"
-msgstr "Style name"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
-msgid  "Style already exists. Overwrite?"
-msgstr "Style already exists. Overwrite?"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
 msgid  "Record Macro"
@@ -1515,61 +487,29 @@ msgstr "Cancel Recording"
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
 msgstr "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
 
-#: dialog/dialog.src#STR_RESET.STRING.TEXT
-msgid  "~Reset"
-msgstr "~Reset"
-
-#: dialog/dialog.src#STR_APPLY.STRING.TEXT
-msgid  "Apply"
-msgstr "Apply"
-
-#: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
-msgid  "Organizer"
-msgstr "Organiser"
-
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
 msgid  "This name is already in use."
 msgstr "This name is already in use."
 
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
-msgid  "This Style does not exist."
-msgstr "This Style does not exist."
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr ""
+
+#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr ""
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 msgid  "Do you really want to delete Style $1?"
 msgstr "Do you really want to delete Style $1?"
 
-#: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
-msgid  "You are deleting an applied Style!\n"
-msgstr "You are deleting an applied Style!\n"
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
-msgid  "New..."
-msgstr "New..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
-msgid  "Modify..."
-msgstr "Modify..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
-msgid  "Delete..."
-msgstr "Delete..."
-
-#: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
-msgid  "Navigator"
-msgstr "Navigator"
-
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 msgid  "Task Pane"
 msgstr "Task Pane"
 
-#: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
-msgid  "Faulty password confirmation"
-msgstr "Faulty password confirmation"
-
-#: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
-msgid  "Send"
-msgstr "Send"
+#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
+msgid  "Sidebar"
+msgstr ""
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 msgid  "Dock"
@@ -1595,57 +535,9 @@ msgstr "This document may contain formatting or content that cannot be saved in 
 msgid  "~Keep Current Format"
 msgstr "~Keep Current Format"
 
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
-msgid  "~Save in ODF Format"
-msgstr "~Save in ODF Format"
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
-msgid  "~More Information..."
-msgstr "~More Information..."
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
-msgid  "~Ask when not saving in ODF format"
-msgstr "~Ask when not saving in ODF format"
-
-#: view/view.src#STR_NODEFPRINTER.STRING.TEXT
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "No default printer found.\nPlease choose a printer and try again."
-
-#: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "Could not start printer.\nPlease check your printer configuration."
-
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
 msgstr "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-
-#: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
-msgid  "Options..."
-msgstr "Options..."
-
-#: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
-msgid  "Printer Options"
-msgstr "Printer Options"
-
-#: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
-msgid  "Printer busy"
-msgstr "Printer busy"
-
-#: view/view.src#STR_ERROR_PRINT.STRING.TEXT
-msgid  "Error while printing"
-msgstr "Error while printing"
-
-#: view/view.src#STR_PRINTING.STRING.TEXT
-msgid  "Printing"
-msgstr "Printing"
-
-#: view/view.src#STR_PAGE.STRING.TEXT
-msgid  "Page "
-msgstr "Page "
-
-#: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-msgid  "Error saving template "
-msgstr "Error saving template "
 
 #: view/view.src#STR_READONLY.STRING.TEXT
 msgid  " (read-only)"
@@ -1663,53 +555,45 @@ msgstr "The page size has been modified.\nShould the new settings be saved\nin t
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 
-#: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
-msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr ""
 
-#: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
-msgid  "Print Monitor"
-msgstr "Print Monitor"
-
-#: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
-msgid  "is being printed on"
-msgstr "is being printed on"
-
-#: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
-msgid  "is being prepared for printing"
-msgstr "is being prepared for printing"
+#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 
-#: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
-msgid  " (repaired document)"
-msgstr " (repaired document)"
-
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default location requested during the browser installation."
 
-#: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
-msgid  "Modify Link"
-msgstr "Modify Link"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
+msgid  "Customization"
+msgstr ""
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
-msgid  "~Application:"
-msgstr "~Application:"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
+msgid  "Restore Default"
+msgstr ""
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
-msgid  "~File:"
-msgstr "~File:"
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
+msgid  "More Options"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
+msgid  "Close Sidebar Deck"
+msgstr ""
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
+msgid  "Panel: "
+msgstr ""
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
 msgid  "~Category:"
 msgstr "~Category:"
-
-#: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
-msgid  "Modify link"
-msgstr "Modify link"
 
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
 msgid  "%PRODUCTNAME"
@@ -1751,37 +635,9 @@ msgstr "GB"
 msgid  "Cancel all changes?"
 msgstr "Cancel all changes?"
 
-#: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
-msgid  "Document already open."
-msgstr "Document already open."
-
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default location requested during the browser installation."
-
-#: appl/app.src#GID_INTERN.STRING.TEXT
-msgid  "Internal"
-msgstr "Internal"
-
-#: appl/app.src#GID_APPLICATION.STRING.TEXT
-msgid  "Application"
-msgstr "Application"
-
-#: appl/app.src#GID_VIEW.STRING.TEXT
-msgid  "View"
-msgstr "View"
-
-#: appl/app.src#GID_DOCUMENT.STRING.TEXT
-msgid  "Documents"
-msgstr "Documents"
-
-#: appl/app.src#GID_EDIT.STRING.TEXT
-msgid  "Edit"
-msgstr "Edit"
-
-#: appl/app.src#GID_MACRO.STRING.TEXT
-msgid  "BASIC"
-msgstr "BASIC"
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
 msgid  "Options"
@@ -1791,49 +647,9 @@ msgstr "Options"
 msgid  "Math"
 msgstr "Math"
 
-#: appl/app.src#GID_NAVIGATOR.STRING.TEXT
-msgid  "Navigate"
-msgstr "Navigate"
-
-#: appl/app.src#GID_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Insert"
-
-#: appl/app.src#GID_FORMAT.STRING.TEXT
-msgid  "Format"
-msgstr "Format"
-
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
 msgid  "Templates"
 msgstr "Templates"
-
-#: appl/app.src#GID_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr "Text"
-
-#: appl/app.src#GID_FRAME.STRING.TEXT
-msgid  "Frame"
-msgstr "Frame"
-
-#: appl/app.src#GID_GRAPHIC.STRING.TEXT
-msgid  "Graphic"
-msgstr "Graphic"
-
-#: appl/app.src#GID_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Table"
-
-#: appl/app.src#GID_ENUMERATION.STRING.TEXT
-msgid  "Numbering"
-msgstr "Numbering"
-
-#: appl/app.src#GID_DATA.STRING.TEXT
-msgid  "Data"
-msgstr "Data"
-
-#: appl/app.src#GID_SPECIAL.STRING.TEXT
-msgid  "Special Functions"
-msgstr "Special Functions"
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
 msgid  "Image"
@@ -1843,101 +659,29 @@ msgstr "Image"
 msgid  "Chart"
 msgstr "Chart"
 
-#: appl/app.src#GID_EXPLORER.STRING.TEXT
-msgid  "Explorer"
-msgstr "Explorer"
-
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
 msgid  "Connector"
 msgstr "Connector"
 
-#: appl/app.src#GID_MODIFY.STRING.TEXT
-msgid  "Modify"
-msgstr "Modify"
-
-#: appl/app.src#GID_DRAWING.STRING.TEXT
-msgid  "Drawing"
-msgstr "Drawing"
-
-#: appl/app.src#GID_CONTROLS.STRING.TEXT
-msgid  "Controls"
-msgstr "Controls"
-
-#: appl/app.src#STR_ISMODIFIED.STRING.TEXT
-msgid  "Do you want to save the changes to %1?"
-msgstr "Do you want to save the changes to %1?"
-
-#: appl/app.src#STR_QUITAPP.STRING.TEXT
-msgid  "E~xit"
-msgstr "E~xit"
-
-#: appl/app.src#RID_STR_HELP.STRING.TEXT
-msgid  "Help"
-msgstr "Help"
-
-#: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
-msgid  "No automatic start at 'XX'"
-msgstr "No automatic start at 'XX'"
-
-#: appl/app.src#RID_HELPBAR.STRING.TEXT
-msgid  "Help Bar"
-msgstr "Help Bar"
-
-#: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
-msgid  "The help file for this topic is not installed."
-msgstr "The help file for this topic is not installed."
-
-#: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
-msgid  "Function Bar"
-msgstr "Function Bar"
+#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr ""
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr "An error has occurred in the special configuration.\nPlease contact your administrator."
 
-#: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
-msgid  "Exit Quickstarter"
-msgstr "Exit Quickstarter"
-
-#: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
 msgid  "Open Document..."
 msgstr "Open Document..."
-
-#: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
-msgid  "From Template..."
-msgstr "From Template..."
-
-#: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
-msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr "Load %PRODUCTNAME During System Start-Up"
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
 msgid  "Disable Quickstarter"
 msgstr "Disable systray Quickstarter"
 
-#: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
-msgid  "File"
-msgstr "File"
-
-#: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
-msgid  "Startcenter"
-msgstr "Startcentre"
-
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
 msgid  "Recent Documents"
 msgstr "Recent Documents"
-
-#: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
-msgid  "Update all links?"
-msgstr "Update all links?"
 
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
 msgid  "DDE link to % for % area % are not available."
@@ -1947,9 +691,17 @@ msgstr "DDE link to % for % area % are not available."
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "This hyperlink is going to open \"%s\". Do you want to proceed?"
 
-#: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
-msgid  "Security Warning"
-msgstr "Security Warning"
+#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr ""
+
+#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr ""
+
+#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr ""
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
@@ -1958,10 +710,6 @@ msgstr "This document must be saved in OpenDocument file format before it can be
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
 msgid  " (Signed)"
 msgstr " (Signed)"
-
-#: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
-msgid  "Document"
-msgstr "Document"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
 msgid  "- None -"
@@ -2003,49 +751,21 @@ msgstr "Graphics filter not found"
 msgid  "Not enough memory to insert graphic"
 msgstr "Not enough memory to insert graphic"
 
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
-msgid  "Contents"
-msgstr "Contents"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
-msgid  "Index"
-msgstr "Index"
-
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
 msgid  "Find"
 msgstr "Find"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
-msgid  "Bookmarks"
-msgstr "Bookmarks"
-
-#: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
-msgid  "~Search term"
-msgstr "~Search term"
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
 msgid  "~Display"
 msgstr "~Display"
 
-#: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-msgid  "S~earch term"
-msgstr "S~earch term"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
 msgid  "~Find"
 msgstr "~Find"
 
-#: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
-msgid  "~Complete words only"
-msgstr "~Complete words only"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
 msgid  "Find in ~headings only"
 msgstr "Find in ~headings only"
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
-msgid  "~Bookmarks"
-msgstr "~Bookmarks"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME Help"
@@ -2059,77 +779,21 @@ msgstr "Show Navigation Pane"
 msgid  "Hide Navigation Pane"
 msgstr "Hide Navigation Pane"
 
-#: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
-msgid  "First Page"
-msgstr "First Page"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
-msgid  "Previous Page"
-msgstr "Previous Page"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
-msgid  "Next Page"
-msgstr "Next Page"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
-msgid  "Print..."
-msgstr "Print..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
-msgid  "Add to Bookmarks..."
-msgstr "Add to Bookmarks..."
-
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
 msgid  "Find on this Page..."
 msgstr "Find on this Page..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
-msgid  "HTML Source"
-msgstr "HTML Source"
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
 msgid  "The Help is being started..."
 msgstr "The Help is being started..."
 
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
-msgid  "Select Text"
-msgstr "Select Text"
-
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
-msgid  "~Copy"
-msgstr "~Copy"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
-msgid  "Add to Bookmarks"
-msgstr "Add to Bookmarks"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
-msgid  "Bookmark:"
-msgstr "Bookmark:"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
-msgid  "Rename Bookmark"
-msgstr "Rename Bookmark"
-
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
 msgid  "Display"
 msgstr "Display"
 
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
-msgid  "Rename..."
-msgstr "Rename..."
-
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
-msgid  "Delete"
-msgstr "Delete"
-
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
 msgid  "No topics found."
 msgstr "No topics found."
-
-#: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
-msgid  "The text you entered was not found."
-msgstr "The text that you entered was not found."
 
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
 msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"

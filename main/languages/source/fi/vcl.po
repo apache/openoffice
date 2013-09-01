@@ -31,14 +31,694 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: src/btntext.src#SV_BUTTONTEXT_OK.STRING.TEXT
+msgid  "OK"
+msgstr "OK"
+
+#: src/btntext.src#SV_BUTTONTEXT_CANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr "Peruuta"
+
+#: src/btntext.src#SV_BUTTONTEXT_YES.STRING.TEXT
+msgid  "~Yes"
+msgstr "K~yllä"
+
+#: src/btntext.src#SV_BUTTONTEXT_NO.STRING.TEXT
+msgid  "~No"
+msgstr "~Ei"
+
+#: src/btntext.src#SV_BUTTONTEXT_RETRY.STRING.TEXT
+msgid  "~Retry"
+msgstr "~Yritä uudelleen"
+
+#: src/btntext.src#SV_BUTTONTEXT_HELP.STRING.TEXT
+msgid  "~Help"
+msgstr "~Ohje"
+
 #: src/btntext.src#SV_BUTTONTEXT_MORE.STRING.TEXT
 msgid  "~More"
-msgstr "~Lisää"
+msgstr "~Enemmän"
 
-#: src/helptext.src#SV_HELPTEXT_HELP.STRING.TEXT
-msgid  "Help"
-msgstr "Ohje"
+#: src/btntext.src#SV_BUTTONTEXT_IGNORE.STRING.TEXT
+msgid  "~Ignore"
+msgstr "Oh~ita"
+
+#: src/btntext.src#SV_BUTTONTEXT_ABORT.STRING.TEXT
+msgid  "~Abort"
+msgstr "~Peruuta"
+
+#: src/helptext.src#SV_HELPTEXT_CLOSE.STRING.TEXT
+msgid  "Close"
+msgstr "Sulje"
+
+#: src/helptext.src#SV_HELPTEXT_CLOSEDOCUMENT.STRING.TEXT
+msgid  "Close Document"
+msgstr "Sulje asiakirja"
+
+#: src/helptext.src#SV_HELPTEXT_MINIMIZE.STRING.TEXT
+msgid  "Minimize"
+msgstr "Pienennä"
+
+#: src/helptext.src#SV_HELPTEXT_MAXIMIZE.STRING.TEXT
+msgid  "Maximize"
+msgstr "Suurenna"
+
+#: src/helptext.src#SV_HELPTEXT_RESTORE.STRING.TEXT
+msgid  "Restore"
+msgstr "Palauta"
+
+#: src/helptext.src#SV_HELPTEXT_ROLLDOWN.STRING.TEXT
+msgid  "Drop down"
+msgstr "Pudota"
+
+#: src/helptext.src#SV_HELPTEXT_ROLLUP.STRING.TEXT
+msgid  "Roll up"
+msgstr "Vieritä ylös"
+
+#: src/helptext.src#SV_HELPTEXT_ALWAYSVISIBLE.STRING.TEXT
+msgid  "Always visible"
+msgstr "Aina näkyvissä"
+
+#: src/helptext.src#SV_HELPTEXT_FADEIN.STRING.TEXT
+msgid  "Show"
+msgstr "Näytä"
+
+#: src/helptext.src#SV_HELPTEXT_FADEOUT.STRING.TEXT
+msgid  "Hide"
+msgstr "Piilota"
+
+#: src/helptext.src#SV_HELPTEXT_SPLITFLOATING.STRING.TEXT
+msgid  "Floating"
+msgstr "Irrallinen"
+
+#: src/helptext.src#SV_HELPTEXT_SPLITFIXED.STRING.TEXT
+msgid  "Stick"
+msgstr "Kiinnitetty"
+
+#: src/helptext.src#SV_SHORTCUT_CONTEXTHELP.STRING.TEXT
+msgid  "Context Help"
+msgstr "Mikä tämä on?"
+
+#: src/helptext.src#SV_SHORTCUT_ACTIVEHELP.STRING.TEXT
+msgid  "Extended Tips"
+msgstr "Laajennetut vihjeet"
+
+#: src/helptext.src#SV_SHORTCUT_DOCKUNDOCK.STRING.TEXT
+msgid  "Dock/Undock Windows"
+msgstr "Telakoi/irrota ikkunat"
+
+#: src/helptext.src#SV_SHORTCUT_NEXTSUBWINDOW.STRING.TEXT
+msgid  "To Next Toolbar/Window"
+msgstr "Seuraavaan työkaluriviin/ikkunaan"
+
+#: src/helptext.src#SV_SHORTCUT_PREVSUBWINDOW.STRING.TEXT
+msgid  "To Previous Toolbar/Window"
+msgstr "Edelliseen työkaluriviin/ikkunaan"
+
+#: src/helptext.src#SV_SHORTCUT_TODOCUMENT.STRING.TEXT
+msgid  "To Document"
+msgstr "Asiakirjaan"
+
+#: src/helptext.src#SV_SHORTCUT_MENUBAR.STRING.TEXT
+msgid  "To Menu Bar"
+msgstr "Valikkoriviin"
+
+#: src/helptext.src#SV_SHORTCUT_SPLITTER.STRING.TEXT
+msgid  "Split window separator"
+msgstr "Jaa ikkunaerotin"
+
+#: src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.STRING.TEXT
+msgid  "<No selection possible>"
+msgstr "<Valinta ei mahdollinen >"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MENUITEM.TEXT
+msgid  "~Undo"
+msgstr "~Kumoa"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MENUITEM.TEXT
+msgid  "Cu~t"
+msgstr "~Leikkaa"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MENUITEM.TEXT
+msgid  "~Copy"
+msgstr "K~opioi"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MENUITEM.TEXT
+msgid  "~Paste"
+msgstr "Lii~tä"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MENUITEM.TEXT
+msgid  "~Delete"
+msgstr "~Poista"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MENUITEM.TEXT
+msgid  "Select ~All"
+msgstr "~Valitse kaikki"
+
+#: src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MENUITEM.TEXT
+msgid  "~Special Character..."
+msgstr "Er~ikoismerkki..."
+
+#: src/menu.src#SV_MENU_MAC_SERVICES.STRING.TEXT
+msgid  "Services"
+msgstr "Palvelut"
+
+#: src/menu.src#SV_MENU_MAC_HIDEAPP.STRING.TEXT
+msgid  "Hide %PRODUCTNAME"
+msgstr "Piilota %PRODUCTNAME"
+
+#: src/menu.src#SV_MENU_MAC_HIDEALL.STRING.TEXT
+msgid  "Hide Others"
+msgstr "Piilota muut"
+
+#: src/menu.src#SV_MENU_MAC_SHOWALL.STRING.TEXT
+msgid  "Show All"
+msgstr "Näytä kaikki"
+
+#: src/menu.src#SV_MENU_MAC_QUITAPP.STRING.TEXT
+msgid  "Quit %PRODUCTNAME"
+msgstr "Sulje %PRODUCTNAME"
+
+#: src/print.src#SV_DLG_PRINT.MODALDIALOG.TEXT
+msgid  "Print"
+msgstr "Tulosta"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKBUTTON.TEXT
+msgid  "~Print"
+msgstr "Tulosta"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FIXEDTEXT.TEXT
+msgid  "/ %n"
+msgstr "/ %n"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.STRING.TEXT
+msgid  "No pages"
+msgstr "Ei sivuja"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.STRING.TEXT
+msgid  "Print to File..."
+msgstr "Tulosta tiedostoon..."
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.STRING.TEXT
+msgid  "Default printer"
+msgstr "Oletustulostin"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.STRING.TEXT
+msgid  "Print preview"
+msgstr "Tulostuksen esikatselu"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.TABPAGE.TEXT
+msgid  "Page Layout"
+msgstr "Sivun asettelu"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FIXEDLINE.TEXT
+msgid  "Layout"
+msgstr "Asettelu"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RADIOBUTTON.TEXT
+msgid  "Pa~ges per sheet"
+msgstr "Sivuja arkille"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.STRINGLIST.ITEM
+msgid  "1"
+msgstr "1"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.STRINGLIST.ITEM
+msgid  "2"
+msgstr "2"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.STRINGLIST.ITEM
+msgid  "4"
+msgstr "4"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.STRINGLIST.ITEM
+msgid  "6"
+msgstr "6"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.STRINGLIST.ITEM
+msgid  "9"
+msgstr "9"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.STRINGLIST.ITEM
+msgid  "16"
+msgstr "16"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0XFFFF.STRINGLIST.ITEM
+msgid  "Custom"
+msgstr "Mukautettu"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FIXEDTEXT.TEXT
+msgid  "P~ages"
+msgstr "Sivuja"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FIXEDTEXT.TEXT
+msgid  "b~y"
+msgstr "kertaa"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FIXEDTEXT.TEXT
+msgid  "~Distance"
+msgstr "Etäisyys"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FIXEDTEXT.TEXT
+msgid  "between pages"
+msgstr "sivujen välillä"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FIXEDTEXT.TEXT
+msgid  "~Margin"
+msgstr "Marginaali"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FIXEDTEXT.TEXT
+msgid  "to sheet border"
+msgstr "arkin reunaan"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FIXEDTEXT.TEXT
+msgid  "~Orientation"
+msgstr "Suunta"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.STRINGLIST.ITEM
+msgid  "Automatic"
+msgstr "Automaattinen"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.STRINGLIST.ITEM
+msgid  "Portrait"
+msgstr "Pystysivu"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.STRINGLIST.ITEM
+msgid  "Landscape"
+msgstr "Vaakasivu"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FIXEDTEXT.TEXT
+msgid  "Order"
+msgstr "Järjestys"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.STRINGLIST.ITEM
+msgid  "left to right, then down"
+msgstr "vasemmalta oikealle, sitten alas"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.STRINGLIST.ITEM
+msgid  "top to bottom, then right"
+msgstr "ylhäältä alas, sitten oikealle"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBRL.STRINGLIST.ITEM
+msgid  "top to bottom, then left"
+msgstr "ylhäältä alas, sitten vasemmalle"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_RLTB.STRINGLIST.ITEM
+msgid  "right to left, then down"
+msgstr "oikealta vasemmalle, sitten alas"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_BORDER_CB.CHECKBOX.TEXT
+msgid  "Draw a border around each page"
+msgstr "Piirrä reunus jokaisen sivun ympärille"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.TABPAGE.TEXT
+msgid  "General"
+msgstr "Yleistä"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRINTERS_FL.FIXEDLINE.TEXT
+msgid  "Prin~ter"
+msgstr "Tulostin"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_DETAILS_BTN.CHECKBOX.TEXT
+msgid  "Details"
+msgstr "Tiedot"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_STATUS_TXT.FIXEDTEXT.TEXT
+msgid  "Status:"
+msgstr "Tila:"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_LOCATION_TXT.FIXEDTEXT.TEXT
+msgid  "Location:"
+msgstr "Sijainti:"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COMMENT_TXT.FIXEDTEXT.TEXT
+msgid  "Comment:"
+msgstr "Huomautus:"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRT_SETUP.PUSHBUTTON.TEXT
+msgid  "Properties..."
+msgstr "Ominaisuudet..."
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPIES.FIXEDLINE.TEXT
+msgid  "Range and copies"
+msgstr "Alue ja kopiot"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPYCOUNT.FIXEDTEXT.TEXT
+msgid  "Number of copies"
+msgstr "Kopioiden määrä"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COLLATE.CHECKBOX.TEXT
+msgid  "Collate"
+msgstr "Lajittele"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_OPT_REVERSE.CHECKBOX.TEXT
+msgid  "Print in ~reverse page order"
+msgstr "Tulosta sivut käänteisessä järjestyksessä"
 
 #: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.TABPAGE.TEXT
 msgid  "Options"
 msgstr "Valinnat"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_TOFILE.CHECKBOX.TEXT
+msgid  "Print to ~file"
+msgstr "Tulosta tiedostoon"
+
+#: src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_SINGLEJOBS.CHECKBOX.TEXT
+msgid  "~Create single print jobs for collated output"
+msgstr "Luo erilliset tulostustyöt lajitelluille tulostuksille"
+
+#: src/print.src#SV_DLG_PRINT_PROGRESS.MODELESSDIALOG.TEXT
+msgid  "Printing"
+msgstr "Tulostetaan"
+
+#: src/print.src#SV_DLG_PRINT_PROGRESS.SV_PRINT_PROGRESS_TEXT.FIXEDTEXT.TEXT
+msgid  "Page %p of %n"
+msgstr "Sivu %p / %n"
+
+#: src/print.src#SV_PRINT_NOPRINTERWARNING.ERRORBOX.MESSAGE
+msgid  "No default printer found.\nPlease choose a printer and try again."
+msgstr "Oletustulostinta ei ole.\nValitse tulostin ja yritä uudelleen."
+
+#: src/print.src#SV_PRINT_NOCONTENT.ERRORBOX.MESSAGE
+msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
+msgstr "Tulostettavia sivuja ei ole. Tarkista, että asiakirjan tulostusalueet on oikein asetettu."
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM1.ITEMLIST.ITEM
+msgid  "Preview"
+msgstr "Esikatselu"
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM2.ITEMLIST.ITEM
+msgid  "Page number"
+msgstr "Sivunumero"
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM3.ITEMLIST.ITEM
+msgid  "Number of pages"
+msgstr "Sivujen määrä"
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM4.ITEMLIST.ITEM
+msgid  "More"
+msgstr "Enemmän"
+
+#: src/print.src#SV_PRINT_NATIVE_STRINGS.ITEM5.ITEMLIST.ITEM
+msgid  "Print selection only"
+msgstr "Tulosta vain nykyinen valinta"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM1.ITEMLIST.ITEM
+msgid  "A0"
+msgstr "A0"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM2.ITEMLIST.ITEM
+msgid  "A1"
+msgstr "A1"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM3.ITEMLIST.ITEM
+msgid  "A2"
+msgstr "A2"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM4.ITEMLIST.ITEM
+msgid  "A3"
+msgstr "A3"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM5.ITEMLIST.ITEM
+msgid  "A4"
+msgstr "A4"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM6.ITEMLIST.ITEM
+msgid  "A5"
+msgstr "A5"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM7.ITEMLIST.ITEM
+msgid  "B4 (ISO)"
+msgstr "B4 (ISO)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM8.ITEMLIST.ITEM
+msgid  "B5 (ISO)"
+msgstr "B5 (ISO)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM9.ITEMLIST.ITEM
+msgid  "Letter"
+msgstr "Letter"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM10.ITEMLIST.ITEM
+msgid  "Legal"
+msgstr "Legal"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM11.ITEMLIST.ITEM
+msgid  "Tabloid"
+msgstr "Tabloidi"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM12.ITEMLIST.ITEM
+msgid  "User Defined"
+msgstr "Käyttäjän määrittämät"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM13.ITEMLIST.ITEM
+msgid  "B6 (ISO)"
+msgstr "B6 (ISO)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM14.ITEMLIST.ITEM
+msgid  "C4 Envelope"
+msgstr "C4-kirjekuori"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM15.ITEMLIST.ITEM
+msgid  "C5 Envelope"
+msgstr "C5-kirjekuori"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM16.ITEMLIST.ITEM
+msgid  "C6 Envelope"
+msgstr "C6-kirjekuori"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM17.ITEMLIST.ITEM
+msgid  "C6/5 Envelope"
+msgstr "C6/5-kirjekuori"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM18.ITEMLIST.ITEM
+msgid  "DL Envelope"
+msgstr "DL-kirjekuori"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM19.ITEMLIST.ITEM
+msgid  "Dia Slide"
+msgstr "Diakuva"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM20.ITEMLIST.ITEM
+msgid  "Screen"
+msgstr "Näyttö"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM21.ITEMLIST.ITEM
+msgid  "C"
+msgstr "C"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM22.ITEMLIST.ITEM
+msgid  "D"
+msgstr "D"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM23.ITEMLIST.ITEM
+msgid  "E"
+msgstr "E"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM24.ITEMLIST.ITEM
+msgid  "Executive"
+msgstr "Executive"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM25.ITEMLIST.ITEM
+msgid  "Long Bond"
+msgstr "Long Bond"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM26.ITEMLIST.ITEM
+msgid  "#8 (Monarch) Envelope"
+msgstr "Nro 8 (Monarch) -kirjekuori"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM27.ITEMLIST.ITEM
+msgid  "#6 3/4 (Personal) Envelope"
+msgstr "Nro 6 3/4 (Personal) -kirjekuori"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM28.ITEMLIST.ITEM
+msgid  "#9 Envelope"
+msgstr "Nro 9 kirjekuori"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM29.ITEMLIST.ITEM
+msgid  "#10 Envelope"
+msgstr "Nro 10 kirjekuori"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM30.ITEMLIST.ITEM
+msgid  "#11 Envelope"
+msgstr "Nro 11 kirjekuori"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM31.ITEMLIST.ITEM
+msgid  "#12 Envelope"
+msgstr "Nro 12 kirjekuori"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM32.ITEMLIST.ITEM
+msgid  "16 Kai"
+msgstr "16 kai"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM33.ITEMLIST.ITEM
+msgid  "32 Kai"
+msgstr "32 kai"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM34.ITEMLIST.ITEM
+msgid  "Big 32 Kai"
+msgstr "Big 32 kai"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM35.ITEMLIST.ITEM
+msgid  "B4 (JIS)"
+msgstr "B4 (JIS)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM36.ITEMLIST.ITEM
+msgid  "B5 (JIS)"
+msgstr "B5 (JIS)"
+
+#: src/print.src#RID_STR_PAPERNAMES.ITEM37.ITEMLIST.ITEM
+msgid  "B6 (JIS)"
+msgstr "B6 (JIS)"
+
+#: src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.STRING.TEXT
+msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
+msgstr "Komponenttia (%s) ei voitu ladata.\nKäynnistä asennusohjelma ja valitse sen korjausasetus."
+
+#: src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.STRING.TEXT
+msgid  "Do not show this information again."
+msgstr "Älä näytä tätä tietoa vastaisuudessa."
+
+#: src/stdtext.src#SV_STDTEXT_DONTASKAGAIN.STRING.TEXT
+msgid  "Do not show this question again."
+msgstr "Älä tee tätä kysymystä vastaisuudessa."
+
+#: src/stdtext.src#SV_STDTEXT_DONTWARNAGAIN.STRING.TEXT
+msgid  "Do not show warning again."
+msgstr "Älä näytä varoitusta uudestaan."
+
+#: src/stdtext.src#SV_ACCESSERROR_WRONG_VERSION.STRING.TEXT
+msgid  "Wrong Version"
+msgstr "Väärä versio"
+
+#: src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.STRING.TEXT
+msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
+msgstr "%PRODUCTNAME %PRODUCTVERSION vaatii esteettömyyden tukemiseen Java Access Bridge -ohjelman version 1.0.3 tai myöhemmän."
+
+#: src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.STRING.TEXT
+msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
+msgstr "Paina '%OK' käynnistääksesi %PRODUCTNAME %PRODUCTVERSION -ohjelman ilman esteettömyystukea, tai napsauta '%CANCEL' poistuaksesi %PRODUCTNAME %PRODUCTVERSION -ohjelmasta."
+
+#: src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.STRING.TEXT
+msgid  "No Java Access Bridge"
+msgstr "Ei Java Access Bridge -ohjelmaa"
+
+#: src/stdtext.src#SV_ACCESSERROR_FAULTY_JAVA.STRING.TEXT
+msgid  "Faulty Java Installation"
+msgstr "Virheellinen Java-asennus"
+
+#: src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.STRING.TEXT
+msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
+msgstr "%PRODUCTNAME %PRODUCTVERSION vaatii esteettömyyden tukemiseen Java versio 1.4.0_02:n tai myöhemmän."
+
+#: src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.STRING.TEXT
+msgid  "No Java Installation"
+msgstr "Ei Java-asennusta"
+
+#: src/stdtext.src#SV_ACCESSERROR_JAVA_NOT_CONFIGURED.STRING.TEXT
+msgid  "Missing Java Configuration"
+msgstr "Puuttuva Java-kokoonpano"
+
+#: src/stdtext.src#SV_ACCESSERROR_JAVA_DISABLED.STRING.TEXT
+msgid  "Java Disabled"
+msgstr "Java poistettu käytöstä"
+
+#: src/stdtext.src#SV_ACCESSERROR_TURNAROUND_MSG.STRING.TEXT
+msgid  "The Java Access Bridge could not be started."
+msgstr "Java Access Bridge -ohjelmaa ei saatu käynnistettyä."
+
+#: src/stdtext.src#SV_ACCESSERROR_NO_FONTS.STRING.TEXT
+msgid  "No fonts could be found on the system."
+msgstr "Tietokoneelta ei löytynyt fontteja."
+
+#: src/stdtext.src#SV_STDTEXT_ABOUT.STRING.TEXT
+msgid  "About %PRODUCTNAME"
+msgstr "Tietoja %PRODUCTNAME -ohjelmistosta"
+
+#: src/stdtext.src#SV_STDTEXT_PREFERENCES.STRING.TEXT
+msgid  "Preferences..."
+msgstr "Asetukset..."
+
+#: src/stdtext.src#SV_EDIT_WARNING_BOX.WARNINGBOX.MESSAGE
+msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
+msgstr "Lisätty teksti oli liian pitkä tähän kenttään. Teksti katkaistiin."
+
+#: src/stdtext.src#SV_MAC_SCREENNNAME.STRING.TEXT
+msgid  "Screen %d"
+msgstr "Näyttö %d"
+
+#: src/stdtext.src#SV_STDTEXT_ALLFILETYPES.STRING.TEXT
+msgid  "Any type"
+msgstr "Kaikki tiedostotyypit"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_MM.ITEMLIST.ITEM
+msgid  "mm"
+msgstr "mm"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_CM.ITEMLIST.ITEM
+msgid  "cm"
+msgstr "cm"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_M.ITEMLIST.ITEM
+msgid  "m"
+msgstr "m"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_KM.ITEMLIST.ITEM
+msgid  "km"
+msgstr "km"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
+msgid  "twips"
+msgstr "twips"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ITEMLIST.ITEM
+msgid  "twip"
+msgstr "twip"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_POINT.ITEMLIST.ITEM
+msgid  "pt"
+msgstr "pt"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_PICA.ITEMLIST.ITEM
+msgid  "pi"
+msgstr "pi"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
+msgid  "\""
+msgstr "\""
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
+msgid  "in"
+msgstr "tuuma"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ITEMLIST.ITEM
+msgid  "inch"
+msgstr "tuuma"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
+msgid  "'"
+msgstr "'"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
+msgid  "ft"
+msgstr "jalka"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
+msgid  "foot"
+msgstr "jalka"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ITEMLIST.ITEM
+msgid  "feet"
+msgstr "jalkaa"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
+msgid  "miles"
+msgstr "mailia"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ITEMLIST.ITEM
+msgid  "mile"
+msgstr "maili"
+
+#: src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ITEMLIST.ITEM
+msgid  "%"
+msgstr "%"

@@ -783,81 +783,9 @@ msgstr "Ominaisuudet: "
 msgid  "No Control marked"
 msgstr "Ei merkittyä ohjausobjektia"
 
-#: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
-msgid  "Multiselection"
-msgstr "Monivalinta"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
-msgstr "Kuvan ohjaus"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-msgid  "Label field"
-msgstr "Selitekenttä"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
-msgid  "Line"
-msgstr "Viiva"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid  "Formatted Field"
-msgstr "Muotoiltu kenttä"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
-msgid  "Shape"
-msgstr "Kuvio"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
-msgid  "Report"
-msgstr "Raportti"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
-msgid  "Section"
-msgstr "Osa"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
-msgid  "Function"
-msgstr "Funktio"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
-msgid  "Group"
-msgstr "Ryhmä"
-
-#: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
-msgid  "Show ruler"
-msgstr "Näytä viivain"
-
-#: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
-msgid  "Show grid"
-msgstr "Näytä ruudukko"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
-msgid  "Change Object"
-msgstr "Muuta objektia"
-
 #: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
 msgid  "Move Group(s)"
 msgstr "Siirrä ryhmiä"
-
-#: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
-msgid  "Conditional Formatting"
-msgstr "Ehdollinen muotoilu"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Remove report header / report footer"
-msgstr "Poista raportin ylä- tai alatunniste"
-
-#: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Add report header / report footer"
-msgstr "Lisää raportin ylä- tai alatunniste"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Remove page header / page footer"
-msgstr "Poista sivun ylä- tai alatunniste"
-
-#: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Add page header / page footer"
-msgstr "Lisää sivun ylä- tai alatunniste"
 
 #: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
 msgid  "Change property '#'"
@@ -879,105 +807,9 @@ msgstr "Lisää ryhmän alatunniste"
 msgid  "Remove group footer "
 msgstr "Poista ryhmän alatunniste"
 
-#: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
-msgid  "Add function"
-msgstr "Lisää funktio"
-
-#: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
-msgid  "Delete function"
-msgstr "Poista funktio"
-
-#: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
-msgid  "Design"
-msgstr "Suunnittelu"
-
-#: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
-msgid  "Preview"
-msgstr "Esikatselu"
-
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
 msgid  "Report #"
 msgstr "Raportti nro"
-
-#: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
-msgid  "~Report name"
-msgstr "R~aportin nimi"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
-msgid  "Delete Group"
-msgstr "Poista ryhmä"
-
-#: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
-msgid  "Add Group"
-msgstr "Lisää ryhmä"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
-msgid  "Delete Selection"
-msgstr "Poista valinta"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
-msgid  "Delete Function"
-msgstr "Poista funktio"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
-msgid  "Change Size"
-msgstr "Muuta kokoa"
-
-#: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
-msgid  "Paste"
-msgstr "Liitä"
-
-#: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
-msgid  "Insert Control"
-msgstr "Lisää ohjausobjekti"
-
-#: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
-msgid  "Delete Control"
-msgstr "Poista ohjausobjekti"
-
-#: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
-msgid  "Insert Group"
-msgstr "Lisää ryhmä"
-
-#: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
-msgid  "GroupHeader"
-msgstr "Ryhmän ylätunniste"
-
-#: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
-msgid  "GroupFooter"
-msgstr "Ryhmän alatunniste"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
-msgid  "Sorting and Grouping..."
-msgstr "Lajittelu ja ryhmittely..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
-msgid  "Background Color..."
-msgstr "Taustaväri..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
-msgid  "Ruler..."
-msgstr "~Viivaimet..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
-msgid  "Grid..."
-msgstr "Kohdistusruudukko..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
-msgid  "~Arrange"
-msgstr "~Järjestä"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
-msgid  "Bring ~Forward"
-msgstr "Siirrä ~eteenpäin"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
-msgid  "Send Back~ward"
-msgstr "Siirrä taakse~päin"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
-msgid  "~Object Resizing"
-msgstr "Objektin koon muuttaminen"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
 msgid  "~Fit to smallest width"
@@ -987,85 +819,13 @@ msgstr "Sovita ~pienimpään leveyteen"
 msgid  "~Fit to greatest width"
 msgstr "Sovita suurimpaan ~leveyteen"
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
-msgid  "~Fit to smallest height"
-msgstr "Sovita pienimpään ~korkeuteen"
-
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
 msgid  "~Fit to greatest height"
 msgstr "Sovita suurimpaan korkeuteen"
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
-msgid  "Shrink"
-msgstr "Kutista"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
-msgid  "Shrink from top"
-msgstr "Kutista ylhäältä"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
-msgid  "Shrink from bottom"
-msgstr "Kutista alhaalta"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
-msgid  "Distribution..."
-msgstr "Välien tasaus..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
-msgstr "Ominaisuudet..."
-
-#: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Add field:"
-msgstr "Kenttävalinta:"
-
-#: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
-msgid  "Filter"
-msgstr "Suodatus"
-
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base Report"
-msgstr " - %PRODUCTNAME Base raportti"
-
-#: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
-msgid  "Untitled"
-msgstr "Nimetön"
-
-#: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
-msgid  "Change Alignment"
-msgstr "Muuta tasausta"
-
-#: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
-msgid  "# Header"
-msgstr "# Ylätunniste"
-
-#: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
-msgid  "# Footer"
-msgstr "# Alatunniste"
-
-#: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
-msgid  "Insert graphics"
-msgstr "Lisää grafiikka"
-
-#: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
-msgid  "Delete"
-msgstr "Poista"
-
-#: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
-msgid  "An error occurred while creating the report."
-msgstr "On ilmennyt virhe raporttia luotaessa."
-
-#: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
-msgid  "An exception of type $type$ was caught."
-msgstr "Havaittu tyyppiä $type$ oleva poikkeus."
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
-msgid  "Change font"
-msgstr "Fontin vaihtuminen"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
-msgid  "Change page attributes"
-msgstr "Muuta sivun märeitä"
+msgstr " - %PRODUCTNAME Base -raportti"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Page Header/Footer"
@@ -1090,42 +850,6 @@ msgstr "Poista raportin ylä- tai alatunniste"
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Report Header/Footer"
 msgstr "Poista raportin ylä- tai alatunniste"
-
-#: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
-msgid  "The report can not be executed unless it is bound to content."
-msgstr "Raporttia ei voida suorittaa, ellei se ole sidottu sisältöön."
-
-#: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
-msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr "Raporttia ei voida suorittaa, ellei vähintään yhtä kohdetta ole lisätty."
-
-#: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
-msgid  "Shrink Section"
-msgstr "Kutista osa"
-
-#: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
-msgid  "Detail"
-msgstr "Tiedot"
-
-#: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
-msgid  "Page Header"
-msgstr "Sivun ylätunniste"
-
-#: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
-msgid  "Page Footer"
-msgstr "Sivun alatunniste"
-
-#: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
-msgid  "Report Header"
-msgstr "Raportin ylätunniste"
-
-#: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
-msgid  "Report Footer"
-msgstr "Raportin alatunniste"
-
-#: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Lisää"
 
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
 msgid  "Detail"

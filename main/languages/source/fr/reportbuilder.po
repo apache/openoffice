@@ -49,7 +49,7 @@ msgstr "Diagramme de rapport %productname% %formatversion%"
 
 #: ../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu#EXTENDEDCOLORSCHEME.ENTRYNAMES.SUNREPORTBUILDER.DISPLAYNAME
 msgid  "Apache OpenOffice Report Builder"
-msgstr "Oracle Report Builder"
+msgstr "Générateur de rapport Apache OpenOffice"
 
 #: ../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu#EXTENDEDCOLORSCHEME.ENTRYNAMES.SUNREPORTBUILDER.ENTRIES.REPORTHEADER.DISPLAYNAME
 msgid  "Report Header"
@@ -95,6 +95,18 @@ msgstr "Contrôle chevauché"
 msgid  "Text Box Bound Content"
 msgstr "Contenu lié de zone de texte"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:COLUMNHEADERFOOTER.LABEL
+msgid  "Column Header/Footer"
+msgstr "En-tête/pied de page de colonne"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:CONDITIONALFORMATTING.LABEL
+msgid  "Conditional Formatting..."
+msgstr "Formatage conditionnel..."
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DBSORTINGANDGROUPING.LABEL
+msgid  "Sorting and Grouping"
+msgstr "Tri et groupement"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DISTRIBUTION.LABEL
 msgid  "Distribution..."
 msgstr "Répartition..."
@@ -110,6 +122,10 @@ msgstr "Adapter à la plus grande hauteur"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:GREATESTWIDTH.LABEL
 msgid  "Fit to greatest width"
 msgstr "Adapter à la plus grande largeur"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:INSERTDATETIMEFIELD.LABEL
+msgid  "Date and Time..."
+msgstr "Date et heure..."
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:PAGEHEADERFOOTER.LABEL
 msgid  "Page Header/Footer"
@@ -163,9 +179,17 @@ msgstr "Réduire à partir du haut"
 msgid  "Select all Formatted Fields"
 msgstr "Sélectionner tous les champs formatés"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLINSECTION.LABEL
+msgid  "Select Objects in Section"
+msgstr "Sélectionner les objets dans la section"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLLABELS.LABEL
 msgid  "Select all Labels"
 msgstr "Sélectionner toutes les étiquettes"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTREPORT.LABEL
+msgid  "Select Report"
+msgstr "Sélectionner un rapport"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SMALLESTHEIGHT.LABEL
 msgid  "Fit to smallest height"
@@ -178,6 +202,10 @@ msgstr "Adapter à la plus petite largeur"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SPREADSHEET.LABEL
 msgid  "Spreadsheet Document"
 msgstr "Document de classeur"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SUBREPORTINNEWWINDOW.LABEL
+msgid  "Subreport in New Window..."
+msgstr "Sous-rapport dans une nouvelle fenêtre..."
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:TEXTDOCUMENT.LABEL
 msgid  "Text Document"
@@ -221,7 +249,7 @@ msgstr "Redimensionnement de l'objet"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.POPUPS..UNO:REPORTCONTROLMENU.LABEL
 msgid  "Report Controls"
-msgstr "Contrôles de rapport"
+msgstr "Contrôles du rapport"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.POPUPS..UNO:RESIZEMENU.LABEL
 msgid  "Resize"

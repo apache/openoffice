@@ -47,6 +47,10 @@ msgstr "UND"
 msgid  "OR"
 msgstr "ODER"
 
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_XOR.STRING.TEXT
+msgid  "XOR"
+msgstr "XOR"
+
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NOT.STRING.TEXT
 msgid  "NOT"
 msgstr "NICHT"
@@ -158,6 +162,22 @@ msgstr "ARCTANHYP"
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COT_HYP.STRING.TEXT
 msgid  "ACOTH"
 msgstr "ARCCOTHYP"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.STRING.TEXT
+msgid  "CSC"
+msgstr "CSC"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.STRING.TEXT
+msgid  "SEC"
+msgstr "SEC"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.STRING.TEXT
+msgid  "CSCH"
+msgstr "CSCH"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.STRING.TEXT
+msgid  "SECH"
+msgstr "SECH"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.STRING.TEXT
 msgid  "EXP"
@@ -767,6 +787,22 @@ msgstr "ZÄHLENWENN"
 msgid  "SUMIF"
 msgstr "SUMMEWENN"
 
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IF.STRING.TEXT
+msgid  "AVERAGEIF"
+msgstr "MITTELWERTWENN"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_IFS.STRING.TEXT
+msgid  "SUMIFS"
+msgstr "SUMMEWENNS"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IFS.STRING.TEXT
+msgid  "AVERAGEIFS"
+msgstr "MITTELWERTWENNS"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_IFS.STRING.TEXT
+msgid  "COUNTIFS"
+msgstr "ZÄHLENWENNS"
+
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOOKUP.STRING.TEXT
 msgid  "LOOKUP"
 msgstr "VERWEIS"
@@ -830,6 +866,22 @@ msgstr "SUCHEN"
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MID.STRING.TEXT
 msgid  "MID"
 msgstr "TEIL"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LENB.STRING.TEXT
+msgid  "LENB"
+msgstr "LENB"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RIGHTB.STRING.TEXT
+msgid  "RIGHTB"
+msgstr "RECHTSB"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LEFTB.STRING.TEXT
+msgid  "LEFTB"
+msgstr "LINKSB"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIDB.STRING.TEXT
+msgid  "MIDB"
+msgstr "LINKSB"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TEXT.STRING.TEXT
 msgid  "TEXT"
@@ -1261,7 +1313,7 @@ msgstr "Funktions-Assistent"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE2.STRING.TEXT
 msgid  "Function Wizard  -"
-msgstr "Funktions-Assistent -"
+msgstr "Funktions-Assistent  -"
 
 #: ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_END.STRING.TEXT
 msgid  "~End"

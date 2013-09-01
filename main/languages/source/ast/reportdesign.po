@@ -783,81 +783,9 @@ msgstr "Propiedaes: "
 msgid  "No Control marked"
 msgstr "Ensin nengún control marcáu"
 
-#: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
-msgid  "Multiselection"
-msgstr "Seleición múltiple"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
-msgstr "Control d'imaxe"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-msgid  "Label field"
-msgstr "Campu d'etiqueta"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
-msgid  "Line"
-msgstr "Llinia"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid  "Formatted Field"
-msgstr "Campu con formatu"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
-msgid  "Shape"
-msgstr "Forma"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
-msgid  "Report"
-msgstr "Informe"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
-msgid  "Section"
-msgstr "Seición"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
-msgid  "Function"
-msgstr "Función"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
-msgid  "Group"
-msgstr "Grupu"
-
-#: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
-msgid  "Show ruler"
-msgstr "Amosar regla"
-
-#: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
-msgid  "Show grid"
-msgstr "Amosar enrexáu"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
-msgid  "Change Object"
-msgstr "Cambear Oxetu"
-
 #: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
 msgid  "Move Group(s)"
 msgstr "Mover grupu(os)"
-
-#: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
-msgid  "Conditional Formatting"
-msgstr "Fomatu condicional"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Remove report header / report footer"
-msgstr "Desaniciar testera/pie d'informe"
-
-#: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Add report header / report footer"
-msgstr "Amestar testera/pie d'informe"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Remove page header / page footer"
-msgstr "Desaniciar testera/pie de páxina"
-
-#: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Add page header / page footer"
-msgstr "Amestar testera/pie de páxina"
 
 #: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
 msgid  "Change property '#'"
@@ -879,105 +807,9 @@ msgstr "Amestar pie de grupu "
 msgid  "Remove group footer "
 msgstr "Desaniciar pie de grupu "
 
-#: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
-msgid  "Add function"
-msgstr "Amestar función"
-
-#: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
-msgid  "Delete function"
-msgstr "Desaniciar función"
-
-#: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
-msgid  "Design"
-msgstr "Diseñu"
-
-#: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
-msgid  "Preview"
-msgstr "Vista previa"
-
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
 msgid  "Report #"
 msgstr "Informe #"
-
-#: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
-msgid  "~Report name"
-msgstr "Nome de l'info~rme"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
-msgid  "Delete Group"
-msgstr "Desaniciar grupu"
-
-#: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
-msgid  "Add Group"
-msgstr "Amestar grupu"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
-msgid  "Delete Selection"
-msgstr "Desaniciar seleición"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
-msgid  "Delete Function"
-msgstr "Desaniciar función"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
-msgid  "Change Size"
-msgstr "Cambear tamañu"
-
-#: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
-msgid  "Paste"
-msgstr "Pegar"
-
-#: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
-msgid  "Insert Control"
-msgstr "Inxertar Control"
-
-#: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
-msgid  "Delete Control"
-msgstr "Desaniciar Control"
-
-#: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
-msgid  "Insert Group"
-msgstr "Inxertar grupu"
-
-#: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
-msgid  "GroupHeader"
-msgstr "TesteraGrupu"
-
-#: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
-msgid  "GroupFooter"
-msgstr "PieGrupu"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
-msgid  "Sorting and Grouping..."
-msgstr "Axeitando y agrupando..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
-msgid  "Background Color..."
-msgstr "Color del fondu..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
-msgid  "Ruler..."
-msgstr "Regla..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
-msgid  "Grid..."
-msgstr "Enrexáu"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
-msgid  "~Arrange"
-msgstr "~Arreglar"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
-msgid  "Bring ~Forward"
-msgstr "Poner alantre (Alt+~F)"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
-msgid  "Send Back~ward"
-msgstr "Poner atrás (Alt+~w)"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
-msgid  "~Object Resizing"
-msgstr "Redimensionar l'~oxetu"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
 msgid  "~Fit to smallest width"
@@ -987,85 +819,13 @@ msgstr "Axus~tar a l'anchu menor"
 msgid  "~Fit to greatest width"
 msgstr "Axus~tar a l'anchu mayor"
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
-msgid  "~Fit to smallest height"
-msgstr "Axus~tar a l'altura menor"
-
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
 msgid  "~Fit to greatest height"
 msgstr "Axus~tar a l'altura mayor"
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
-msgid  "Shrink"
-msgstr "Encoyer"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
-msgid  "Shrink from top"
-msgstr "Encoyer dende arriba"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
-msgid  "Shrink from bottom"
-msgstr "Encoyer dende abaxo"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
-msgid  "Distribution..."
-msgstr "Distribución..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
-msgstr "Propiedaes..."
-
-#: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Add field:"
-msgstr "Amestar campu:"
-
-#: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
-msgid  "Filter"
-msgstr "Filtru"
-
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base Report"
 msgstr " Informe de  - %PRODUCTNAME Base"
-
-#: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
-msgid  "Untitled"
-msgstr "Ensin títulu"
-
-#: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
-msgid  "Change Alignment"
-msgstr "Cambear Alliniación"
-
-#: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
-msgid  "# Header"
-msgstr "# Testera"
-
-#: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
-msgid  "# Footer"
-msgstr "# Pie"
-
-#: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
-msgid  "Insert graphics"
-msgstr "Inxertar imaxes"
-
-#: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
-msgid  "Delete"
-msgstr "Desaniciar"
-
-#: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
-msgid  "An error occurred while creating the report."
-msgstr "Hebo un fallu na creación de l'informe."
-
-#: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
-msgid  "An exception of type $type$ was caught."
-msgstr "Atopóse una esceición de tipu $type$."
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
-msgid  "Change font"
-msgstr "Cambear la fonte"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
-msgid  "Change page attributes"
-msgstr "Cambear los atributos de la páxina"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Page Header/Footer"
@@ -1090,42 +850,6 @@ msgstr "Inxertar testera/pie d'informe"
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Report Header/Footer"
 msgstr "Desaniciar testera/pie d'informe"
-
-#: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
-msgid  "The report can not be executed unless it is bound to content."
-msgstr "L'informe pue nun ser executáu a menos que se deba al conteníu."
-
-#: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
-msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr "L'informe nun pue executase, sacantes que, a lo menos, s'inxerte un oxetu."
-
-#: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
-msgid  "Shrink Section"
-msgstr "Encoyer seición"
-
-#: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
-msgid  "Detail"
-msgstr "Detalle"
-
-#: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
-msgid  "Page Header"
-msgstr "Encabezáu de páxina"
-
-#: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
-msgid  "Page Footer"
-msgstr "Pie de páxina"
-
-#: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
-msgid  "Report Header"
-msgstr "Encabezáu d'informe"
-
-#: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
-msgid  "Report Footer"
-msgstr "Pie d'informe"
-
-#: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Inxertar"
 
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
 msgid  "Detail"

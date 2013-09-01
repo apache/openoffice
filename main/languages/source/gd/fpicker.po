@@ -31,93 +31,21 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_NEWFOLDER.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Create New Directory"
-msgstr "Cruthaich eòlaire ùr"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_LISTVIEW.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "List"
-msgstr "Liosta"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_DETAILSVIEW.BUTTONIMAGE.QUICKHELPTEXT
-msgid  "Details"
-msgstr "Mion-fhiosrachadh"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_UP.MENUBUTTON.QUICKHELPTEXT
-msgid  "Up One Level"
-msgstr "Suas aon leibheil"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_STANDARD.MENUBUTTON.QUICKHELPTEXT
-msgid  "Default Directory"
-msgstr "An t-eòlaire bunaiteach"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILENAME.FIXEDTEXT.TEXT
-msgid  "File ~name:"
-msgstr "Ainm a~n fhaidhle:"
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.FT_EXPLORERFILE_FILETYPE.FIXEDTEXT.TEXT
 msgid  "File ~type:"
 msgstr "Seòrsa an fhai~dhle:"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_READONLY.CHECKBOX.TEXT
-msgid  "~Read-only"
-msgstr "~Ri leughadh a-mhàin"
 
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_EXPLORERFILE_PASSWORD.CHECKBOX.TEXT
 msgid  "Save with password"
 msgstr "Sàbhail le facal-faire"
 
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_AUTO_EXTENSION.CHECKBOX.TEXT
-msgid  "~Automatic file name extension"
-msgstr "~Leudachan ainm an fhaidhle gu fèin-obrachail"
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.CB_OPTIONS.CHECKBOX.TEXT
 msgid  "Edit ~filter settings"
 msgstr "Deasaich ~roghainnean na criathraig"
 
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.BTN_EXPLORERFILE_OPEN.PUSHBUTTON.TEXT
-msgid  "~Open"
-msgstr "F~osgail"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_OPEN.STRING.TEXT
-msgid  "Open"
-msgstr "Fosgail"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_SAVE.STRING.TEXT
-msgid  "Save as"
-msgstr "Sàbhail mar"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_EXPLORERFILE_BUTTONSAVE.STRING.TEXT
-msgid  "~Save"
-msgstr "~Sàbhail"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHNAME.STRING.TEXT
-msgid  "~Path:"
-msgstr "S~lighe:"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PATHSELECT.STRING.TEXT
-msgid  "Select path"
-msgstr "Tagh slighe"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_BUTTONSELECT.STRING.TEXT
-msgid  "~Select"
-msgstr "T~agh"
-
-#: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_ACTUALVERSION.STRING.TEXT
-msgid  "Current version"
-msgstr "An tionndadh làithreach"
-
 #: office/iodlg.src#DLG_SVT_EXPLORERFILE.STR_PREVIEW.STRING.TEXT
 msgid  "File Preview"
 msgstr "Ro-shealladh an fhaidhle"
-
-#: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FT_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDTEXT.TEXT
-msgid  "Na~me"
-msgstr "Ain~m"
-
-#: office/iodlg.src#DLG_SVT_QUERYFOLDERNAME.FL_SVT_QUERYFOLDERNAME_DLG_NAME.FIXEDLINE.TEXT
-msgid  "Create new folder"
-msgstr "Cruthaich pasgan ùr"
 
 #: office/iodlg.src#RID_FILEOPEN_INVALIDFOLDER.STRING.TEXT
 msgid  "$name$ does not exist."
@@ -127,17 +55,9 @@ msgstr "Chan eil $name$ ann."
 msgid  "The file $name$ does not exist.\nMake sure you have entered the correct file name."
 msgstr "Chan eil am faidhle $name$ ann.\nDèan cinnteach gu do chuir thu a-steach ainm ceart an fhaidhle."
 
-#: office/iodlg.src#STR_FILTERNAME_ALL.STRING.TEXT
-msgid  "All files (*.*)"
-msgstr "A h-uile faidhle (*.*)"
-
 #: office/iodlg.src#STR_SVT_ALREADYEXISTOVERWRITE.STRING.TEXT
 msgid  "The file already exists. Overwrite?"
 msgstr "Tha am faidhle seo ann mu thràth. A bheil thu airson sgrìobhadh thairis air?"
-
-#: office/iodlg.src#STR_SVT_NEW_FOLDER.STRING.TEXT
-msgid  "Folder"
-msgstr "Pasgan"
 
 #: office/iodlg.src#STR_SVT_NOREMOVABLEDEVICE.STRING.TEXT
 msgid  "No removable storage device detected.\nMake sure it is plugged in properly and try again."
@@ -147,57 +67,21 @@ msgstr "Cha deach inneal stòrais so-ghluasadach a lorg.\nDèan cinnteach gun do
 msgid  "All Formats"
 msgstr "Gach fòrmat"
 
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_AUTO_EXTENSION.STRING.TEXT
-msgid  "~Automatic file name extension"
-msgstr "Leudachan ~ainm an fhaidhle gu fèin-obrachail"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_PASSWORD.STRING.TEXT
-msgid  "Save with pass~word"
-msgstr "Sàbhail le ~facal-faire"
-
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_OPTIONS.STRING.TEXT
 msgid  "~Edit filter settings"
 msgstr "D~easaich roghainnean na criathraige"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_READONLY.STRING.TEXT
-msgid  "~Read-only"
-msgstr "Ri leughadh a-~mhàin"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_INSERT_AS_LINK.STRING.TEXT
-msgid  "~Link"
-msgstr "Cea~ngal"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_SHOW_PREVIEW.STRING.TEXT
-msgid  "Pr~eview"
-msgstr "R~o-shealladh"
 
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_PLAY.STRING.TEXT
 msgid  "~Play"
 msgstr "~Cluich"
 
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_VERSION.STRING.TEXT
-msgid  "~Version:"
-msgstr "Tio~nndadh:"
-
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_TEMPLATES.STRING.TEXT
-msgid  "S~tyles:"
-msgstr "S~toidhlichean:"
-
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_IMAGE_TEMPLATE.STRING.TEXT
 msgid  "Style:"
 msgstr "Stoidhle:"
 
-#: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_SELECTION.STRING.TEXT
-msgid  "~Selection"
-msgstr "Taghad~h"
-
 #: office/OfficeFilePicker.src#STR_SVT_FILEPICKER_FILTER_TITLE.STRING.TEXT
 msgid  "File ~type:"
 msgstr "~Seòrsa an fhaidhle:"
-
-#: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_TITLE.STRING.TEXT
-msgid  "Select Path"
-msgstr "Tagh slighe"
 
 #: office/OfficeFilePicker.src#STR_SVT_FOLDERPICKER_DEFAULT_DESCRIPTION.STRING.TEXT
 msgid  "Please select a folder."

@@ -97,7 +97,7 @@ msgstr "Δεν υπάρχει αρκετή μνήμη στοίβας."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROC_UNDEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Sub-procedure or function procedure not defined."
-msgstr "Δεν καθορίστηκε υπο-διαδικασία (Sub) ή διαδικασία λειτουργίας (Function)."
+msgstr "Δεν καθορίστηκε υπό-διαδικασία ή συνάρτηση διαδικασίας."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_DLL_LOAD_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error loading DLL file."
@@ -129,7 +129,7 @@ msgstr "Το αρχείο είναι ήδη ανοιχτό."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_IO_ERROR_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Device I/O error."
-msgstr "Σφάλμα συσκευής εισόδου/εξόδου."
+msgstr "Σφάλμα συσκευής εισόδου I/O εξόδου."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_FILE_EXISTS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "File already exists."
@@ -145,7 +145,7 @@ msgstr "Η δισκέτα ή ο σκληρός δίσκος είναι πλήρ�
 
 #: classes/sb.src#RID_BASIC_START.SBERR_READ_PAST_EOF_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Reading exceeds EOF."
-msgstr "Ανάγνωση πέρα από το τέλος του αρχείου."
+msgstr "Ανάγνωση πέρα από το τέλος του αρχείου EOF."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_RECORD_NUMBER_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Incorrect record number."
@@ -253,7 +253,7 @@ msgstr "Η σύνδεση DDE διακόπηκε ή τροποποιήθηκε."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_NO_CHANNEL_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "DDE method invoked with no channel open."
-msgstr "Μέθοδος DDE ενεργοποιήθηκε χωρίς ανοιχτό κανάλι DDE."
+msgstr "Η μέθοδος DDE ενεργοποιήθηκε χωρίς ανοιχτό κανάλι."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_DDE_INVALID_LINK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Invalid DDE link format."
@@ -421,7 +421,7 @@ msgstr "Η μεταβλητή $(ARG1) έχει ήδη ορισθεί."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_PROC_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Sub procedure or function procedure $(ARG1) already defined."
-msgstr "Η υπο-διαδικασία (Sub) ή η διαδικασία λειτουργίας (Function) $(ARG1) έχει ήδη ορισθεί."
+msgstr "Η υπό-διαδικασία ή η συνάρτηση διαδικασίας $(ARG1) έχει ήδη ορισθεί."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_LABEL_DEFINED_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Label $(ARG1) already defined."
@@ -453,7 +453,7 @@ msgstr "Αναμένεται έξοδος του $(ARG1)."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_BLOCK_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Statement block still open: $(ARG1) missing."
-msgstr "Το μπλοκ πρότασης είναι ακόμα ανοικτό: Το $(ARG1) παραμένει ανοιχτό."
+msgstr "Το μπλοκ πρότασης είναι ακόμα ανοικτό: το $(ARG1) αγνοείτε."
 
 #: classes/sb.src#RID_BASIC_START.SBERR_BAD_BRACKETS_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Parentheses do not match."
@@ -527,13 +527,9 @@ msgstr "Η έκφραση είναι πολύ περίπλοκη."
 msgid  "Can't perform requested operation."
 msgstr "Αδυναμία εκτέλεσης της αιτούμενης διεργασίας."
 
-#: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL_&_ERRCODE_RES_MASK.STRING.TEXT
-msgid  "Too many DLL application clients."
-msgstr "Υπάρχουν πάρα πολύ πελάτες εφαρμογής DLL."
-
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "For loop not initialized."
-msgstr "Ο βρόγχος For δεν έχει αρχικοποιηθεί."
+msgstr "Ο βρόγχος for δεν έχει αρχικοποιηθεί."
 
 #: classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "$(ARG1)"
@@ -557,7 +553,7 @@ msgstr "Σφάλμα κατά την αποθήκευση της βιβλιοθ�
 
 #: classes/sb.src#ERRCODE_BASMGR_MGROPEN_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
-msgstr "Δεν ήταν δυνατόν να γίνει αναγνώριση του BASIC από το αρχείο '$(ARG1)'."
+msgstr "Δεν ήταν δυνατόν να γίνει αναγνώριση του BASIC από το '$(ARG1)' αρχείο."
 
 #: classes/sb.src#ERRCODE_BASMGR_MGRSAVE_&_ERRCODE_RES_MASK.STRING.TEXT
 msgid  "Error saving BASIC: '$(ARG1)'."

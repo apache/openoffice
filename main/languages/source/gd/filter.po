@@ -39,10 +39,6 @@ msgstr "Teamplaid cliath-dhuilleige ODF"
 msgid  "ODF Spreadsheet"
 msgstr "Cliath-dhuilleag ODF"
 
-#: config/fragments/filters/calc_HTML_WebQuery_ui.xcu#CALC_HTML_WEBQUERY.UINAME
-msgid  "Web Page Query (%productname% Calc)"
-msgstr "Ceist làraich-lìn (%productname% Calc)"
-
 #: config/fragments/filters/calc_MS_Excel_2007_Binary_ui.xcu#CALC_MS_EXCEL_2007_BINARY.UINAME
 msgid  "Microsoft Excel 2007 Binary"
 msgstr "Microsoft Excel 2007 Binary"
@@ -57,7 +53,7 @@ msgstr "Microsoft Excel 2007 XML"
 
 #: config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#CALC_STAROFFICE_XML_CALC_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
-msgstr "Teamplaid cliath-dhuilleige %productname% %formatversion%"
+msgstr "Teamplaid cliath-dhuilleige %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/chart8_ui.xcu#CHART8.UINAME
 msgid  "ODF Chart"
@@ -77,7 +73,7 @@ msgstr "Sgrìobhainn HTML (%productname% Draw)"
 
 #: config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#DRAW_STAROFFICE_XML_DRAW_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
-msgstr "Teamplaid tarraing %productname% %formatversion%"
+msgstr "Teamplaid tarraing %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/HTML_MasterDoc_ui.xcu#HTML_MASTERDOC.UINAME
 msgid  "HTML Document (%productname% Master Document)"
@@ -121,11 +117,11 @@ msgstr "Microsoft PowerPoint 2007 XML"
 
 #: config/fragments/filters/impress_StarOffice_XML_Draw_ui.xcu#IMPRESS_STAROFFICE_XML_DRAW.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
-msgstr "Tarraing %productname% %formatversion% (%productname% Impress)"
+msgstr "Tarraing %oooxmlformatname% %oooxmlformatversion% (%productname% Impress)"
 
 #: config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#IMPRESS_STAROFFICE_XML_IMPRESS_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
-msgstr "Teamplaid taisbeanaidh %productname% %formatversion%"
+msgstr "Teamplaid taisbeanaidh %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/math8_ui.xcu#MATH8.UINAME
 msgid  "ODF Formula"
@@ -159,10 +155,6 @@ msgstr "Teamplaid Microsoft PowerPoint 97/2000/XP"
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
 
-#: config/fragments/filters/MS_Word_2007_XML_Template_ui.xcu#MS_WORD_2007_XML_TEMPLATE.UINAME
-msgid  "Microsoft Word 2007 XML Template"
-msgstr "Teamplaid XML Microsoft Word 2007"
-
 #: config/fragments/filters/MS_Word_2007_XML_ui.xcu#MS_WORD_2007_XML.UINAME
 msgid  "Microsoft Word 2007 XML"
 msgstr "Microsoft Word 2007 XML"
@@ -174,6 +166,18 @@ msgstr "Teamplaid Microsoft Word 95"
 #: config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS_WORD_97_VORLAGE.UINAME
 msgid  "Microsoft Word 97/2000/XP Template"
 msgstr "Teamplaid Microsoft Word 97/2000/XP"
+
+#: config/fragments/filters/NSO_Calc_UOF2_ui.xcu#NSO_CALC_UOF2.UINAME
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr "Cliath-dhuilleag Uniform Office Format 2"
+
+#: config/fragments/filters/NSO_Impress_UOF2_ui.xcu#NSO_IMPRESS_UOF2.UINAME
+msgid  "Uniform Office Format 2 presentation"
+msgstr "Taisbeanadh Uniform Office Format 2"
+
+#: config/fragments/filters/NSO_Writer_UOF2_ui.xcu#NSO_WRITER_UOF2.UINAME
+msgid  "Uniform Office Format 2 Text"
+msgstr "Teacsa Uniform Office Format 2"
 
 #: config/fragments/filters/StarCalc_3_0_Vorlage_Template_ui.xcu#STARCALC_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarCalc 3.0 Template"
@@ -219,6 +223,30 @@ msgstr "Teamplaid StarImpress 5.0"
 msgid  "ODF Database"
 msgstr "Stòr-dàta ODF"
 
+#: config/fragments/filters/StarOffice_XML__Calc__ui.xcu#STAROFFICE_XML_(CALC).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet"
+msgstr "Cliath-dhuilleag %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Chart__ui.xcu#STAROFFICE_XML_(CHART).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Chart"
+msgstr "Cairt %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Draw__ui.xcu#STAROFFICE_XML_(DRAW).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing"
+msgstr "Tarraing %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Impress__ui.xcu#STAROFFICE_XML_(IMPRESS).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation"
+msgstr "Taisbeanadh %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Math__ui.xcu#STAROFFICE_XML_(MATH).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Formula"
+msgstr "Foirmle %oooxmlformatname% %oooxmlformatversion%"
+
+#: config/fragments/filters/StarOffice_XML__Writer__ui.xcu#STAROFFICE_XML_(WRITER).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
+msgstr "Sgrìobhainn teacsa %oooxmlformatname% %oooxmlformatversion%"
+
 #: config/fragments/filters/StarWriter_3_0_Vorlage_Template_ui.xcu#STARWRITER_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarWriter 3.0 Template"
 msgstr "Teamplaid StarWriter 3.0"
@@ -259,17 +287,9 @@ msgstr "Teacsa còdaichte (%productname% Writer/Web)"
 msgid  "Text Encoded"
 msgstr "Teacsa còdaichte"
 
-#: config/fragments/filters/Text__StarWriter_Web__ui.xcu#TEXT_(STARWRITER/WEB).UINAME
-msgid  "Text (%productname% Writer/Web)"
-msgstr "Teacsa (%productname% Writer/Web)"
-
 #: config/fragments/filters/Text___txt___csv__StarCalc__ui.xcu#TEXT_-_TXT_-_CSV_(STARCALC).UINAME
 msgid  "Text CSV"
 msgstr "Teacsa CSV"
-
-#: config/fragments/filters/Text_ui.xcu#TEXT.UINAME
-msgid  "Text"
-msgstr "Teacsa"
 
 #: config/fragments/filters/UOF_presentation_ui.xcu#UOF_PRESENTATION.UINAME
 msgid  "Unified Office Format presentation"
@@ -301,15 +321,15 @@ msgstr "Sgrìobhainn teacsa ODF"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER_GLOBALDOCUMENT.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
-msgstr "Prìomh-sgrìobhainn %productname% %formatversion%"
+msgstr "Prìomh-sgrìobhainn %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
-msgstr "Sgrìobhainn teacsa %productname% %formatversion%"
+msgstr "Sgrìobhainn teacsa %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#WRITER_STAROFFICE_XML_WRITER_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
-msgstr "Teamplaid sgrìobhainn teacsa %productname% %formatversion%"
+msgstr "Teamplaid sgrìobhainn teacsa %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/filters/writerweb8_writer_template_ui.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 msgid  "HTML Document Template"
@@ -321,11 +341,11 @@ msgstr "Teacsa %productname% (%productname% Writer/Web)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
-msgstr "Sgrìobhainn teacsa %productname% %formatversion% (%productname% Writer/Web)"
+msgstr "Sgrìobhainn teacsa %oooxmlformatname% %oooxmlformatversion% (%productname% Writer/Web)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER_WEB_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
-msgstr "Teamplaid HTML%productname% %formatversion%"
+msgstr "Teamplaid HTML %oooxmlformatname% %oooxmlformatversion%"
 
 #: config/fragments/internalgraphicfilters/bmp_Export.xcu#BMP_EXPORT.UINAME
 msgid  "BMP - Windows Bitmap"
@@ -515,6 +535,10 @@ msgstr "Calc 8"
 msgid  "Microsoft Excel 2003 XML"
 msgstr "Microsoft Excel 2003 XML"
 
+#: config/fragments/types/calc_NSO_UOF2.xcu#CALC_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr "Cliath-dhuilleag Uniform Office Format 2"
+
 #: config/fragments/types/chart8.xcu#CHART8.UINAME
 msgid  "Chart 8"
 msgstr "Chart 8"
@@ -534,6 +558,10 @@ msgstr "Teamplaid Impress 8"
 #: config/fragments/types/impress8.xcu#IMPRESS8.UINAME
 msgid  "Impress 8"
 msgstr "Impress 8"
+
+#: config/fragments/types/impress_NSO_UOF2.xcu#IMPRESS_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 presentation"
+msgstr "Taisbeanadh Uniform Office Format 2"
 
 #: config/fragments/types/math8.xcu#MATH8.UINAME
 msgid  "Math 8"
@@ -559,6 +587,10 @@ msgstr "Prìomh-sgrìobhainn Writer 8"
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
 
+#: config/fragments/types/writer_NSO_UOF2.xcu#WRITER_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 text"
+msgstr "Teacsa Uniform Office Format 2"
+
 #: config/fragments/types/writerweb8_writer_template.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 msgid  "Writer/Web 8 Template"
 msgstr "Teamplaid Writer/Web 8"
@@ -574,10 +606,6 @@ msgstr "1: càileachd as lugha\n100: càileachd as motha"
 #: graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.STRING.TEXT
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
 msgstr "Rabhadh: Cha deach gach grafaig EPS a dh'ion-phortaich thu a shàbhaladh\naig leibheil 1 a chionn 's gu bheil cuid dhiubh aig ìre nas àirde!"
-
-#: pdf/impdialog.src#STR_PDF_EXPORT.STRING.TEXT
-msgid  "E~xport"
-msgstr "Às-~phortaich"
 
 #: pdf/impdialog.src#STR_PDF_EXPORT_UDPWD.STRING.TEXT
 msgid  "Set open password"
@@ -599,18 +627,6 @@ msgstr "Rainse"
 msgid  "~All"
 msgstr "~A h-uile"
 
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_RANGE.RADIOBUTTON.TEXT
-msgid  "~Pages"
-msgstr "~Duilleagan"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_SELECTION.RADIOBUTTON.TEXT
-msgid  "~Selection"
-msgstr "~Taghadh"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FL_IMAGES.FIXEDLINE.TEXT
-msgid  "Images"
-msgstr "Ìomhaighean"
-
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_LOSSLESSCOMPRESSION.RADIOBUTTON.TEXT
 msgid  "~Lossless compression"
 msgstr "Dùmhlachadh gun cha~ll"
@@ -618,14 +634,6 @@ msgstr "Dùmhlachadh gun cha~ll"
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_JPEGCOMPRESSION.RADIOBUTTON.TEXT
 msgid  "~JPEG compression"
 msgstr "Dùmhlachadh ~JPEG"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_QUALITY.FIXEDTEXT.TEXT
-msgid  "~Quality"
-msgstr "~Càileachd"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_REDUCEIMAGERESOLUTION.CHECKBOX.TEXT
-msgid  "~Reduce image resolution"
-msgstr "Ìslich dùmhlachd-bh~reacaidh na h-ìomhaighe"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_PDFA_1B_SELECT.CHECKBOX.TEXT
 msgid  "P~DF/A-1a"
@@ -638,10 +646,6 @@ msgstr "PDF ~tagaichte"
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTFORMFIELDS.CHECKBOX.TEXT
 msgid  "~Create PDF form"
 msgstr "~Cruthaich foirm PDF"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_FORMSFORMAT.FIXEDTEXT.TEXT
-msgid  "Submit ~format"
-msgstr "~Fòrmat tagraidh"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ALLOWDUPLICATEFIELDNAMES.CHECKBOX.TEXT
 msgid  "Allow duplicate field ~names"
@@ -668,15 +672,16 @@ msgid  "E~mbed standard fonts"
 msgstr "Leabaich cruthan-clò bun-to~mhasach"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ADDSTREAM.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Embed this document ~inside the PDF"
-msgstr "Cruthaich ~faidhle tar-chinealach"
+msgstr "Leaba~ich an sgrìobhainn seo am broinn a' PDF"
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.TITLE
+#, fuzzy
 msgid  "PDF/A Export"
 msgstr "Às-phortadh PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.MESSAGE
+#, fuzzy
 msgid  "PDF/A does not allow encryption. The exported PDF file will not be password protected."
 msgstr "Chan eil dubh-cheileadh ceadaichte ann am PDF/A. Cha bhi am faidhle PDF fo dhìon facail-fhaire."
 
@@ -686,70 +691,77 @@ msgid  "Initial View"
 msgstr "An sealladh tùsail"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_INITVIEW.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Panes"
 msgstr "Leòsain"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_PAGEONLY.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Page only"
 msgstr "An ~duilleag a-mhàin"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_OUTLINE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Bookmarks and page"
 msgstr "Na comharran-lea~bhair is an duilleag"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_THUMBS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Thumbnails and page"
 msgstr "~Na dealbhagan is an duilleag"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FT_MAGNF_INITIAL_PAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Open on page"
 msgstr "Fosgailte air an duilleag"
 
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_MAGNIFICATION.FIXEDLINE.TEXT
-msgid  "Magnification"
-msgstr "Meudachadh"
-
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Default"
 msgstr "An roghainn bhunai~teach"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_WIND.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Fit in window"
 msgstr "Co-~fhreagair ris an uinneag"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_WIDTH.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Fit ~width"
 msgstr "Co-fhreagair ~ris an leud"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_VISIBLE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Fit ~visible"
 msgstr "~Co-fhreagair ris a' mheud fhaicsinneach"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_ZOOM.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Zoom factor"
 msgstr "Ìre an t-~sùim"
 
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_PAGE_LAYOUT.FIXEDLINE.TEXT
-msgid  "Page layout"
-msgstr "Co-dhealbhachd na duilleige"
-
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "D~efault"
 msgstr "An roghainn bhunait~each"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_SINGPG.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Single page"
 msgstr "Duilleag ~shingilte"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_CONT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Continuous"
 msgstr "~Leanailteach"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_CONTFAC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "C~ontinuous facing"
 msgstr "Le~anailteach is aghaidh air aghaidh"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.CB_PGLY_FIRSTLEFT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "First page is ~left"
 msgstr "A' chiad dui~lleag air an taobh chlì"
 
@@ -758,475 +770,443 @@ msgstr "A' chiad dui~lleag air an taobh chlì"
 msgid  "User Interface"
 msgstr "Eadar-aghaidh a' chleachdaiche"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_WINOPT.FIXEDLINE.TEXT
-msgid  "Window options"
-msgstr "Roghainnean na h-uinneige"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_RESINIT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Resize window to initial page"
 msgstr "Ath-mheudaich an uinneag ~ris an duilleag thùsail"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_CNTRWIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Center window on screen"
 msgstr "Meadhanai~ch an uinneag air an sgrìn"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_OPNFULL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Open in full screen mode"
 msgstr "F~osgail sa mhodh làn-sgrìn"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_DISPDOCTITLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Display document title"
 msgstr "~Seall tiotal na sgrìobhainne"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_USRIFOPT.FIXEDLINE.TEXT
-msgid  "User interface options"
-msgstr "Roghainnean eadar-aghaidh a' chleachdaiche"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVMENUBAR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Hide ~menubar"
 msgstr "Cuir a~m falach bàr a' chlàir-thaice"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVTOOLBAR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Hide ~toolbar"
 msgstr "Cuir am falach ~bàr nan innealan"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVWINCTRL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Hide ~window controls"
 msgstr "~Cuir am falach innealan-smachd na h-uinneige"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_TRANSITIONS.FIXEDLINE.TEXT
-msgid  "Transitions"
-msgstr "Tar-mhùthaidhean"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_TRANSITIONEFFECTS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Use transition effects"
 msgstr "Cleachd b~uaidhean tar-mùthaidh"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_BOOKMARKS.FIXEDLINE.TEXT
-msgid  "Bookmarks"
-msgstr "Comharran-leabhair"
-
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_ALLBOOKMARKLEVELS.RADIOBUTTON.TEXT
-msgid  "All bookmark levels"
-msgstr "Comharran-leabhair de gach ìre"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_VISIBLEBOOKMARKLEVELS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Visible bookmark levels"
 msgstr "Ìrean nan comharran-leabhair a tha ri am faicinn"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.TABPAGE.TEXT
-msgid  "Security"
-msgstr "Tèarainteachd"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PWD_GROUP.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "File encryption and permission"
 msgstr "Dubh-cheileadh faidhle is ceadan"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.BTN_SET_PWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set ~passwords..."
 msgstr "Suidhich ~faclan-faire..."
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_SET_PWD.STRING.TEXT
+#, fuzzy
 msgid  "Set passwords"
 msgstr "Suidhich faclan-faire"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_SET.STRING.TEXT
+#, fuzzy
 msgid  "Open password set"
 msgstr "Fosgail seata de dh'fhaclan-faire"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_ENC.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will be encrypted"
 msgstr "Thèid an sgrìobhainn PDF a dhubh-cheileadh"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNSET.STRING.TEXT
+#, fuzzy
 msgid  "No open password set"
 msgstr "Cha deach facal-faire fosgailte a shuidheachadh"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNENC.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will not be encrypted"
 msgstr "Cha dèid an sgrìobhainn PDF a dhubh-cheileadh"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will not be encrypted due to PDF/A export."
 msgstr "Cha dèid an sgrìobhainn PDF a dhubh-cheileadh air sgàth 's gur e às-phortachadh PDF/A a tha ann."
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_SET.STRING.TEXT
+#, fuzzy
 msgid  "Permission password set"
 msgstr "Chaidh facal-faire nan cead a shuidheachadh"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_REST.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will be restricted"
 msgstr "Bidh an sgrìobhainn PDF cuingealaichte"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNSET.STRING.TEXT
+#, fuzzy
 msgid  "No permission password set"
 msgstr "Cha deach facal-faire nan cead a shuidheachadh"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNREST.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will be unrestricted"
 msgstr "Cha bhi cuingealachadh air an sgrìobhainn PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will not be restricted due to PDF/A export."
 msgstr "Cha dèid an sgrìobhainn PDF a chuingeachadh air sgàth 's gur e às-phortachadh PDF/A a tha ann."
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.FIXEDLINE.TEXT
-msgid  "Printing"
-msgstr "'Ga chlò-bhualadh"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_NONE.RADIOBUTTON.TEXT
-msgid  "~Not permitted"
-msgstr "~Chan eil seo ceadaichte"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_LOWRES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Low resolution (150 dpi)"
 msgstr "Dùmh~lachd-bhreacaidh ìseal (150 dpi)"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_HIGHRES.RADIOBUTTON.TEXT
-msgid  "~High resolution"
-msgstr "Dùm~hlachd-bhreacaidh àrd"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_CHANGES_ALLOWED.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Changes"
 msgstr "Atharrachaidhean"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_NONE.RADIOBUTTON.TEXT
-msgid  "No~t permitted"
-msgstr "Chan eil seo ceadaich~te"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_INSDEL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Inserting, deleting, and rotating pages"
 msgstr "A' cur a-steach, a' sguabadh às ~is a' cuairteachadh duilleagan"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_FILLFORM.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Filling in form fields"
 msgstr "Lìonadh nan raointean ~foirme"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_COMMENT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Commenting, filling in form fields"
 msgstr "Toirt bea~chdan, lìonadh nan raointean foirme"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_ANY_NOCOPY.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Any except extracting pages"
 msgstr "~A h-uile gin ach duilleagan às-tharraingeach"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENDAB_COPY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Ena~ble copying of content"
 msgstr "Cuir an comas leth~bhric de shusbaint"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENAB_ACCESS.CHECKBOX.TEXT
-msgid  "Enable text access for acce~ssibility tools"
-msgstr "Cuir an coma~s inntrigeadh do theacsa airson innealan so-ruigsinneachd"
-
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.TABPAGE.TEXT
+#, fuzzy
 msgid  "---"
 msgstr "---"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_EXP_BMRK_TO_DEST.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Export bookmarks as named destinations"
 msgstr "Às-phortaich na comharran-leabhair mar chinn-uidhe ainmichte"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_CNV_OOO_DOCTOPDF.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Convert document references to PDF targets"
 msgstr "Iompaich co-chomharran sgrìobhainne 'nan targaidean PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_ENAB_RELLINKFSYS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Export URLs relative to file system"
 msgstr "Às-phortaich URLaichen dàimheach ri siostam nam faidhle"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.FL_DEFAULT_LINK_ACTION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Cross-document links"
 msgstr "Ceanglaichean tar-sgrìobhainne"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Default mode"
 msgstr "Am modh bunaiteach"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_APPLICATION.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Open with PDF reader application"
 msgstr "Fosgail leis an leughadair PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_BROWSER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Open with Internet browser"
 msgstr "Fosgail le brabhsair-lìn"
 
 #: pdf/impdialog.src#RID_PDF_EXPORT_DLG.TABDIALOG.TEXT
+#, fuzzy
 msgid  "PDF Options"
 msgstr "Roghainnean PDF"
 
 #: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_LINKS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Links"
 msgstr "Ceanglaichean"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Problems during PDF export"
 msgstr "Dh'èirich duilgheadas rè às-phortadh PDF"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.FT_PROCESS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "During PDF export the following problems occurred:"
 msgstr "Dh'èirich na duilgheadasan a leanas rè às-phortadh a' PDF:"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA_SHORT.STRING.TEXT
+#, fuzzy
 msgid  "PDF/A transparency"
 msgstr "Trìd-shoilleireachd PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "PDF/A forbids transparency. A transparent object was painted opaque instead."
 msgstr "Chan eil trìd-shoilleireachd ceadaichte ann am PDF/A. Chaidh oibseact trìd-shoilleir a dhèanamh trìd-dhoilleir 'na àite."
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.STRING.TEXT
+#, fuzzy
 msgid  "PDF version conflict"
 msgstr "Còmhstri nan tionndadh PDF"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.STRING.TEXT
+#, fuzzy
 msgid  "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
 msgstr "Chan eil trìd-shoilleireachd ceadaichte ann an tionndaidhean nas sine na PDF 1.4. Chaidh oibseact trìd-shoilleir a dhèanamh trìd-dhoilleir 'na àite"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.STRING.TEXT
+#, fuzzy
 msgid  "PDF/A form action"
 msgstr "Gnìomh foirm PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "A form control contained an action not supported by the PDF/A standard. The action was skipped"
 msgstr "Bha gnìomh ann an inneal-smachd foirm nach eil taic ann dha sa bhun-tomhas PDF/A. Chaidh leum a ghearradh thairis air a' ghnìomh"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.STRING.TEXT
+#, fuzzy
 msgid  "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
 msgstr "Chaidh cuid dhe na h-oibseactan iompachadh 'nan dealbhan gus trìd-shoilleireachd a thoirt air falbh. Chan eil am PDF uidhe a' toirt taic do thrìd-shoilleireachd. Faodaidh gum bi toradh nas fhearr agad ma bheir thu às na h-oibseactan trìd-shoilleir mus às-phortaich thu iad."
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED_SHORT.STRING.TEXT
+#, fuzzy
 msgid  "Transparencies removed"
 msgstr "Chaidh na trìd-shoilleireachdan a thoirt às"
 
 #: pdf/pdf.src#PDF_PROGRESS_BAR.STRING.TEXT
+#, fuzzy
 msgid  "Export as PDF"
 msgstr "Às-phortaich mar PDF"
 
 #: t602/t602filter.src#T602FILTER_STR_IMPORT_DIALOG_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Settings for T602 import"
 msgstr "Roghainnean ion-phortadh T602"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Encoding"
 msgstr "Còdachadh"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
 msgstr "Fèin-obrachail"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_CP852.STRING.TEXT
+#, fuzzy
 msgid  "CP852 (Latin2)"
 msgstr "CP852 (Latin2)"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_CP895.STRING.TEXT
+#, fuzzy
 msgid  "CP895 (KEYB2CS, Kamenicky)"
 msgstr "CP895 (KEYB2CS, Kamenicky)"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_KOI8CS2.STRING.TEXT
+#, fuzzy
 msgid  "KOI8 CS2"
 msgstr "KOI8 CS2"
 
 #: t602/t602filter.src#T602FILTER_STR_CYRILLIC_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Mode for Russian language (Cyrillic)"
 msgstr "Modh na Ruisise (Cirileach)"
 
 #: t602/t602filter.src#T602FILTER_STR_REFORMAT_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Reformat the text"
 msgstr "Fòrmataich an teacsa a-rithist"
 
 #: t602/t602filter.src#T602FILTER_STR_DOT_COMMANDS.STRING.TEXT
+#, fuzzy
 msgid  "Display dot commands"
 msgstr "Seall na h-àitheantan dotaige"
 
 #: t602/t602filter.src#T602FILTER_STR_CANCEL_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
 msgstr "Sguir dheth"
 
 #: t602/t602filter.src#T602FILTER_STR_OK_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "OK"
 msgstr "Ceart ma-thà"
 
 #: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.WORKWINDOW.TEXT
+#, fuzzy
 msgid  "XML Filter output"
 msgstr "Às-chur na criathraige XML"
 
-#: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PUSHBUTTON.TEXT
-msgid  "~Validate"
-msgstr "~Dearbhaich"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.STRING.TEXT
-msgid  "Name"
-msgstr "Ainm"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type"
 msgstr "Seòrsa"
 
-#: xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.STRING.TEXT
-msgid  "Unknown"
-msgstr "Neo-aithnichte"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "import filter"
 msgstr "criathrag ion-phortaidh"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_EXPORT.STRING.TEXT
+#, fuzzy
 msgid  "import/export filter"
 msgstr "criathrag ion-phortaidh/às-phortaidh"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_EXPORT_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "export filter"
 msgstr "criathrag às-phortaidh"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
 msgstr "A bheil thu cinnteach gu bheil thu airson a' chriathrag XML '%s' a sguabadh às? Cha ghabh an gnìomh seo a neo-dhèanamh."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
 msgstr "Tha criathrag XML ann mu thràth air a bheil '%s'. Cuir a-steach ainm eile."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
 msgstr "Tha an t-ainm airson eadar-aghaidh a' chleachdaiche '%s1' 'ga chleachdadh leis a' chriathrag XML '%s2' mu thràth. Cuir a-steach ainm eile."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The DTD could not be found. Please enter a valid path."
 msgstr "Cha deach an DTD a lorg. Cuir a-steach slighe dhligheach."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_EXPORT_XSLT_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The XSLT for export cannot be found. Please enter a valid path."
 msgstr "Cha deach an XSLT às-phortaidh a lorg. Cuir a-steach slighe dhligheach."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_XSLT_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The XSLT for import cannot be found. Please enter a valid path."
 msgstr "Cha deach an XSLT ion-phortaidh a lorg. Cuir a-steach slighe dhligheach."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_TEMPLATE_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The given import template cannot be found. Please enter a valid path."
 msgstr "Cha deach an teamplaid ion-phortaidh a lorg. Cuir a-steach slighe dhligheach."
 
-#: xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.STRING.TEXT
-msgid  "Not specified"
-msgstr "Gun sònrachadh"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.STRING.TEXT
-msgid  "New Filter"
-msgstr "Criathrag ùr"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.STRING.TEXT
-msgid  "Untitled"
-msgstr "Gun tiotal"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "undefined filter"
 msgstr "criathrag gun socrachadh"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_HAS_BEEN_SAVED.STRING.TEXT
+#, fuzzy
 msgid  "The XML filter '%s' has been saved as package '%s'. "
 msgstr "Chaidh a' chriathrag XML '%s' a shàbhaladh mar a' phacaid '%s'. "
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_HAVE_BEEN_SAVED.STRING.TEXT
+#, fuzzy
 msgid  "%s XML filters have been saved in the package '%s'."
 msgstr "Chaidh na criathragan %s XML a shàbhaladh sa phacaid '%s'."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_PACKAGE.STRING.TEXT
+#, fuzzy
 msgid  "XSLT filter package"
 msgstr "Pacaid criathraige XSLT"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_INSTALLED.STRING.TEXT
+#, fuzzy
 msgid  "The XML filter '%s' has been installed successfully."
 msgstr "Chaidh a' chraithrag XML '%s' a stàladh gu soirbheachail."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_INSTALLED.STRING.TEXT
+#, fuzzy
 msgid  "%s XML filters have been installed successfully."
 msgstr "Chaidh %s criathragan XML a stàladh gu soirbheachail."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
 msgstr "Cha deach criathrag XML a stàladh a chionn 's nach eil criathrag XML sam bith sa phacaid '%s'."
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.WORKWINDOW.TEXT
+#, fuzzy
 msgid  "XML Filter Settings"
 msgstr "Roghainnean na criathraige XML"
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
 msgstr "Ù~r..."
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit..."
 msgstr "D~easaich..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PUSHBUTTON.TEXT
-msgid  "~Test XSLTs..."
-msgstr "XSL~Tan Deuchainn..."
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete..."
-msgstr "Sgua~b às..."
-
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Save as Package..."
 msgstr "~Sàbhail mar phacaid..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PUSHBUTTON.TEXT
-msgid  "~Open Package..."
-msgstr "F~osgail pacaid..."
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Dùin"
-
 #: xsltdialog/xmlfiltersettingsdialog.src#STR_XML_FILTER_LISTBOX.STRING.TEXT
+#, fuzzy
 msgid  "XML Filter List"
 msgstr "Liosta nan criathragan XML"
 
 #: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.TABDIALOG.TEXT
+#, fuzzy
 msgid  "XML Filter: %s"
 msgstr "Criathrag XML: %s"
 
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.PAGEITEM.TEXT
-msgid  "General"
-msgstr "Coitcheann"
-
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PAGEITEM.TEXT
-msgid  "Transformation"
-msgstr "Tar-mhùthadh"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TABPAGE.TEXT
-msgid  "General"
-msgstr "Coitcheann"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FIXEDTEXT.TEXT
-msgid  "Filter name"
-msgstr "AInm na criathraige"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FIXEDTEXT.TEXT
-msgid  "Application"
-msgstr "Prògram"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FIXEDTEXT.TEXT
-msgid  "Name of\nfile type"
-msgstr "Ainm seòrsa\nan fhaidhle"
-
 #: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "File extension"
 msgstr "Leudachan an fhaidhle"
 
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Comments"
-msgstr "Beachdan"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TABPAGE.TEXT
-msgid  "Transformation"
-msgstr "Cruth-atharrachadh"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.FIXEDTEXT.TEXT
-msgid  "DocType"
-msgstr "DocType"
-
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DTD_SCHEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "DTD"
 msgstr "DTD"
 
@@ -1235,70 +1215,32 @@ msgstr "DTD"
 msgid  "Browse..."
 msgstr "Brabhsaich..."
 
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FIXEDTEXT.TEXT
-msgid  "XSLT for export"
-msgstr "XSLT airson às-phortadh"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FIXEDTEXT.TEXT
-msgid  "XSLT for import"
-msgstr "XSLT airson ion-phortadh"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-msgid  "Template for import"
-msgstr "Teamplaid an ion-phortaidh"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.MODALDIALOG.TEXT
-msgid  "Test XML Filter: %s"
-msgstr "Criathrag deuchainne XML: %s"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FIXEDLINE.TEXT
-msgid  "Export"
-msgstr "Às-phortaich"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FIXEDTEXT.TEXT
-msgid  "XSLT for export"
-msgstr "XSLT airson às-phortadh"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FIXEDTEXT.TEXT
-msgid  "Transform document"
-msgstr "Cruth-atharraich an sgrìobhainn"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Browse..."
 msgstr "~Brabhsaich..."
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CURRENT_DOCUMENT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Current Document"
 msgstr "~An sgrìobhainn làithreach"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_IMPORT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Import"
 msgstr "Ion-phortaich"
 
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FIXEDTEXT.TEXT
-msgid  "XSLT for import"
-msgstr "XSLT ion-phortaidh"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-msgid  "Template for import"
-msgstr "An teamplaid ion-phortaidh"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FIXEDTEXT.TEXT
-msgid  "Transform file"
-msgstr "Cruth-atharraich am faidhle"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Display source"
 msgstr "Seall a~m bun-tùs"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_IMPORT_BROWSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "B~rowse..."
 msgstr "B~rabhsaich..."
 
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PUSHBUTTON.TEXT
-msgid  "~Recent File"
-msgstr "~Fosgailte o chionn ghoirid"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
 msgstr "~Dùin"

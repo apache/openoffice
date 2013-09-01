@@ -31,14 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.ITEM1.ITEMLIST.ITEM
-msgid  "Greek"
-msgstr "Griego"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.ITEM2.ITEMLIST.ITEM
-msgid  "Special"
-msgstr "Especial"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM1.ITEMLIST.ITEM
 msgid  "alpha"
 msgstr "alfa"
@@ -66,10 +58,6 @@ msgstr "GAMMA"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM7.ITEMLIST.ITEM
 msgid  "delta"
 msgstr "delta"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM8.ITEMLIST.ITEM
-msgid  "DELTA"
-msgstr "DELTA"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM9.ITEMLIST.ITEM
 msgid  "epsilon"
@@ -103,10 +91,6 @@ msgstr "zeta"
 msgid  "THETA"
 msgstr "ZETA"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM17.ITEMLIST.ITEM
-msgid  "iota"
-msgstr "iota"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM18.ITEMLIST.ITEM
 msgid  "IOTA"
 msgstr "IOTA"
@@ -127,49 +111,25 @@ msgstr "lambda"
 msgid  "LAMBDA"
 msgstr "LAMBDA"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM23.ITEMLIST.ITEM
-msgid  "mu"
-msgstr "mi"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM24.ITEMLIST.ITEM
 msgid  "MU"
 msgstr "MI"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM25.ITEMLIST.ITEM
-msgid  "nu"
-msgstr "ni"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM26.ITEMLIST.ITEM
 msgid  "NU"
 msgstr "NI"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM27.ITEMLIST.ITEM
-msgid  "xi"
-msgstr "xi"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM28.ITEMLIST.ITEM
 msgid  "XI"
 msgstr "XI"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM29.ITEMLIST.ITEM
-msgid  "omicron"
-msgstr "ómicron"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM30.ITEMLIST.ITEM
 msgid  "OMICRON"
 msgstr "ÓMICRON"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM31.ITEMLIST.ITEM
-msgid  "pi"
-msgstr "pi"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM32.ITEMLIST.ITEM
 msgid  "PI"
 msgstr "PI"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM33.ITEMLIST.ITEM
-msgid  "rho"
-msgstr "ro"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM34.ITEMLIST.ITEM
 msgid  "RHO"
@@ -190,10 +150,6 @@ msgstr "tau"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM38.ITEMLIST.ITEM
 msgid  "TAU"
 msgstr "TAU"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM39.ITEMLIST.ITEM
-msgid  "upsilon"
-msgstr "ípsilon"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM40.ITEMLIST.ITEM
 msgid  "UPSILON"
@@ -230,30 +186,6 @@ msgstr "omega"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM48.ITEMLIST.ITEM
 msgid  "OMEGA"
 msgstr "OMEGA"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM49.ITEMLIST.ITEM
-msgid  "varepsilon"
-msgstr "varépsilon"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM50.ITEMLIST.ITEM
-msgid  "vartheta"
-msgstr "varzeta"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM51.ITEMLIST.ITEM
-msgid  "varpi"
-msgstr "varpi"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM52.ITEMLIST.ITEM
-msgid  "varrho"
-msgstr "varrho"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM53.ITEMLIST.ITEM
-msgid  "varsigma"
-msgstr "varsigma"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM54.ITEMLIST.ITEM
-msgid  "varphi"
-msgstr "varfi"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM55.ITEMLIST.ITEM
 msgid  "element"
@@ -649,19 +581,19 @@ msgstr "Valor absoluto"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARSINHX.TOOLBOXITEM.TEXT
 msgid  "Area Hyperbolic Sine"
-msgstr "Argumento seno hiperbólico"
+msgstr "Seno hiperbólico inverso"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOSHX.TOOLBOXITEM.TEXT
 msgid  "Area Hyperbolic Cosine"
-msgstr "Argumento coseno hiperbólico"
+msgstr "Coseno hiperbólico inverso"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARTANHX.TOOLBOXITEM.TEXT
 msgid  "Area Hyperbolic Tangent"
-msgstr "Argumento tangente hiperbólica"
+msgstr "Tangente hiperbólica inversa"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOTHX.TOOLBOXITEM.TEXT
 msgid  "Area Hyperbolic Cotangent"
-msgstr "Argumento cotangente hiperbólica"
+msgstr "Cotangente hiperbólica inversa"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_FACTX.TOOLBOXITEM.TEXT
 msgid  "Factorial"
@@ -1023,61 +955,13 @@ msgstr "Puntos arriba"
 msgid  "Dots to Bottom"
 msgstr "Puntos hacia abajo"
 
-#: commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MENUITEM.TEXT
-msgid  "~Unary/Binary Operators"
-msgstr "Operadores ~unarios/binarios"
-
-#: commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MENUITEM.TEXT
-msgid  "~Relations"
-msgstr "~Relaciones"
-
-#: commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MENUITEM.TEXT
-msgid  "~Set Operations"
-msgstr "~Operadores de conjuntos"
-
-#: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MENUITEM.TEXT
-msgid  "~Functions"
-msgstr "~Funciones"
-
 #: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MENUITEM.TEXT
 msgid  "More"
 msgstr "Más"
 
-#: commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MENUITEM.TEXT
-msgid  "O~perators"
-msgstr "Op~eradores"
-
-#: commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MENUITEM.TEXT
-msgid  "~Attributes"
-msgstr "~Atributos"
-
-#: commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MENUITEM.TEXT
-msgid  "~Brackets"
-msgstr "~Paréntesis"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MENUITEM.TEXT
-msgid  "For~mats"
-msgstr "For~matos"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MENUITEM.TEXT
-msgid  "New Line"
-msgstr "Nueva línea"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MENUITEM.TEXT
-msgid  "Small Gap"
-msgstr "Espacio pequeño"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MENUITEM.TEXT
-msgid  "Gap"
-msgstr "Espacio"
-
 #: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MENUITEM.TEXT
 msgid  "nospace {...}"
 msgstr "nospace {...}"
-
-#: commands.src#RID_COMMANDMENU.RID_MISC_MENU.MENUITEM.TEXT
-msgid  "~Others"
-msgstr "O~tros"
 
 #: smres.src#RID_FONTDIALOG.MODALDIALOG.TEXT
 msgid  "Fonts"
@@ -1087,81 +971,17 @@ msgstr "Fuentes"
 msgid  "~Font"
 msgstr "~Fuente"
 
-#: smres.src#RID_FONTDIALOG.1.CHECKBOX.TEXT
-msgid  "~Bold"
-msgstr "~Negrita"
-
-#: smres.src#RID_FONTDIALOG.2.CHECKBOX.TEXT
-msgid  "~Italic"
-msgstr "~Cursiva"
-
-#: smres.src#RID_FONTDIALOG.2.FIXEDTEXT.TEXT
-msgid  "Attributes"
-msgstr "Atributos"
-
-#: smres.src#RID_FONTSIZEDIALOG.MODALDIALOG.TEXT
-msgid  "Font Sizes"
-msgstr "Tamaños de fuente"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "Base ~size"
-msgstr "Tamaño de ~base"
-
 #: smres.src#RID_FONTSIZEDIALOG.4.FIXEDTEXT.TEXT
 msgid  "~Text"
 msgstr "~Texto"
-
-#: smres.src#RID_FONTSIZEDIALOG.5.FIXEDTEXT.TEXT
-msgid  "~Indexes"
-msgstr "Í~ndices"
 
 #: smres.src#RID_FONTSIZEDIALOG.6.FIXEDTEXT.TEXT
 msgid  "~Functions"
 msgstr "~Funciones"
 
-#: smres.src#RID_FONTSIZEDIALOG.7.FIXEDTEXT.TEXT
-msgid  "~Operators"
-msgstr "~Operadores"
-
-#: smres.src#RID_FONTSIZEDIALOG.8.FIXEDTEXT.TEXT
-msgid  "~Limits"
-msgstr "~Límites"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Relative sizes"
-msgstr "Tamaños relativos"
-
 #: smres.src#RID_FONTSIZEDIALOG.1.PUSHBUTTON.TEXT
 msgid  "~Default"
-msgstr "Pre~determinado"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Formula fonts"
-msgstr "Fuentes de fórmula"
-
-#: smres.src#RID_FONTTYPEDIALOG.2.FIXEDLINE.TEXT
-msgid  "Custom fonts"
-msgstr "Fuentes del usuario"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Variables"
-msgstr "~Variables"
-
-#: smres.src#RID_FONTTYPEDIALOG.3.FIXEDTEXT.TEXT
-msgid  "~Numbers"
-msgstr "~Números"
-
-#: smres.src#RID_FONTTYPEDIALOG.5.FIXEDTEXT.TEXT
-msgid  "~Serif"
-msgstr "~Serif"
-
-#: smres.src#RID_FONTTYPEDIALOG.6.FIXEDTEXT.TEXT
-msgid  "S~ans"
-msgstr "S~ans"
-
-#: smres.src#RID_FONTTYPEDIALOG.7.FIXEDTEXT.TEXT
-msgid  "F~ixed"
-msgstr "F~ijo"
+msgstr "~Predeterminado"
 
 #: smres.src#RID_FONTTYPEDIALOG.1.MENUBUTTON.TEXT
 msgid  "~Modify"
@@ -1171,21 +991,9 @@ msgstr "~Modificar"
 msgid  "Spacing"
 msgstr "Espacios"
 
-#: smres.src#RID_DISTANCEDIALOG.1.METRICFIELD.CUSTOMUNITTEXT
-msgid  "%"
-msgstr "%"
-
-#: smres.src#RID_DISTANCEDIALOG.1.CHECKBOX.TEXT
-msgid  "Scale all brackets"
-msgstr "Dimensionar todos los paréntesis"
-
 #: smres.src#RID_DISTANCEDIALOG.1.MENUBUTTON.TEXT
 msgid  "~Category"
 msgstr "~Categoría"
-
-#: smres.src#RID_DISTANCEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Category"
-msgstr "Categoría"
 
 #: smres.src#RID_DISTANCEDIALOG.1.2.STRING.TEXT
 msgid  "~Spacing"
@@ -1203,81 +1011,29 @@ msgstr "Intervalo de ~raíz"
 msgid  "Indexes"
 msgstr "Índices"
 
-#: smres.src#RID_DISTANCEDIALOG.2.2.STRING.TEXT
-msgid  "~Superscript"
-msgstr "~Superíndice"
-
-#: smres.src#RID_DISTANCEDIALOG.2.3.STRING.TEXT
-msgid  "S~ubscript"
-msgstr "S~ubíndice"
-
 #: smres.src#RID_DISTANCEDIALOG.3.1.STRING.TEXT
 msgid  "Fractions"
 msgstr "Fracciones"
-
-#: smres.src#RID_DISTANCEDIALOG.3.2.STRING.TEXT
-msgid  "~Numerator"
-msgstr "Altura del ~numerador"
-
-#: smres.src#RID_DISTANCEDIALOG.3.3.STRING.TEXT
-msgid  "~Denominator"
-msgstr "~Altura del denominador"
-
-#: smres.src#RID_DISTANCEDIALOG.4.1.STRING.TEXT
-msgid  "Fraction bar"
-msgstr "Líneas de fracción"
 
 #: smres.src#RID_DISTANCEDIALOG.4.2.STRING.TEXT
 msgid  "~Excess length"
 msgstr "Longitud en ~exceso"
 
-#: smres.src#RID_DISTANCEDIALOG.4.3.STRING.TEXT
-msgid  "~Weight"
-msgstr "Espesor del ~trazo"
-
 #: smres.src#RID_DISTANCEDIALOG.5.1.STRING.TEXT
 msgid  "Limits"
 msgstr "Límites"
-
-#: smres.src#RID_DISTANCEDIALOG.5.2.STRING.TEXT
-msgid  "~Upper limit"
-msgstr "~Límite superior"
-
-#: smres.src#RID_DISTANCEDIALOG.5.3.STRING.TEXT
-msgid  "~Lower limit"
-msgstr "Lí~mite inferior"
 
 #: smres.src#RID_DISTANCEDIALOG.6.1.STRING.TEXT
 msgid  "Brackets"
 msgstr "Paréntesis"
 
-#: smres.src#RID_DISTANCEDIALOG.6.2.STRING.TEXT
-msgid  "~Excess size (left/right)"
-msgstr "~Sobredimensión (izquierda/derecha)"
-
 #: smres.src#RID_DISTANCEDIALOG.6.5.STRING.TEXT
 msgid  "~Excess size"
 msgstr "~Sobredimensión"
 
-#: smres.src#RID_DISTANCEDIALOG.7.1.STRING.TEXT
-msgid  "Matrix"
-msgstr "Matrices"
-
-#: smres.src#RID_DISTANCEDIALOG.7.3.STRING.TEXT
-msgid  "~Column spacing"
-msgstr "Distancia entre ~columnas"
-
 #: smres.src#RID_DISTANCEDIALOG.8.1.STRING.TEXT
 msgid  "Symbols"
-msgstr "Ornamentos"
-
-#: smres.src#RID_DISTANCEDIALOG.8.2.STRING.TEXT
-msgid  "~Primary height"
-msgstr "Altura ~primaria"
-
-#: smres.src#RID_DISTANCEDIALOG.8.3.STRING.TEXT
-msgid  "~Minimum spacing"
-msgstr "Distancia ~mínima"
+msgstr "Símbolos"
 
 #: smres.src#RID_DISTANCEDIALOG.9.1.STRING.TEXT
 msgid  "Operators"
@@ -1285,7 +1041,7 @@ msgstr "Operadores"
 
 #: smres.src#RID_DISTANCEDIALOG.10.1.STRING.TEXT
 msgid  "Borders"
-msgstr "Márgenes"
+msgstr "Bordes"
 
 #: smres.src#RID_DISTANCEDIALOG.10.2.STRING.TEXT
 msgid  "~Left"
@@ -1295,53 +1051,13 @@ msgstr "~Izquierda"
 msgid  "~Right"
 msgstr "~Derecha"
 
-#: smres.src#RID_DISTANCEDIALOG.10.4.STRING.TEXT
-msgid  "~Top"
-msgstr "~Arriba"
-
-#: smres.src#RID_DISTANCEDIALOG.10.5.STRING.TEXT
-msgid  "~Bottom"
-msgstr "~Abajo"
-
-#: smres.src#RID_ALIGNDIALOG.MODALDIALOG.TEXT
-msgid  "Alignment"
-msgstr "Alineación"
-
-#: smres.src#RID_ALIGNDIALOG.2.RADIOBUTTON.TEXT
-msgid  "~Centered"
-msgstr "~Centrado"
-
-#: smres.src#RID_ALIGNDIALOG.1.FIXEDLINE.TEXT
-msgid  "Horizontal"
-msgstr "Horizontal"
-
-#: smres.src#RID_PRINTOPTIONPAGE.TABPAGE.TEXT
-msgid  "Formula Options:Settings"
-msgstr "Opciones de fórmulas: Configuración"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.FIXEDLINE.TEXT
-msgid  "Print options"
-msgstr "Opciones de impresión"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.CHECKBOX.TEXT
-msgid  "~Title row"
-msgstr "~Fila del título"
-
 #: smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CHECKBOX.TEXT
 msgid  "~Formula text"
 msgstr "Texto de la ~fórmula"
 
-#: smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CHECKBOX.TEXT
-msgid  "B~order"
-msgstr "B~orde"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINT_FORMAT.FIXEDLINE.TEXT
-msgid  "Print format"
-msgstr "Formato de impresión"
-
 #: smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RADIOBUTTON.TEXT
 msgid  "O~riginal size"
-msgstr "T~amaño original"
+msgstr "Tamaño o~riginal"
 
 #: smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RADIOBUTTON.TEXT
 msgid  "Fit to ~page"
@@ -1349,11 +1065,7 @@ msgstr "Ajustar a la ~página"
 
 #: smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RADIOBUTTON.TEXT
 msgid  "~Scaling"
-msgstr "~Escalado"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FIXEDLINE.TEXT
-msgid  "Miscellaneous options"
-msgstr "Otras opciones"
+msgstr "~Escala"
 
 #: smres.src#RID_PRINTOPTIONPAGE.CB_IGNORE_SPACING.CHECKBOX.TEXT
 msgid  "Ig~nore ~~ and ` at the end of the line"
@@ -1363,73 +1075,21 @@ msgstr "Ignorar ~~ y ` al ~final de la línea"
 msgid  "Embed only used symbols (smaller file size)"
 msgstr "Incluir únicamente los símbolos usados (archivo más pequeño)"
 
-#: smres.src#RID_SYMBOLDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Symbol set"
-msgstr "Conjunto de ~símbolos"
-
 #: smres.src#RID_SYMBOLDIALOG.2.FIXEDTEXT.TEXT
 msgid  "Unknown"
 msgstr "Desconocido"
-
-#: smres.src#RID_SYMBOLDIALOG.2.PUSHBUTTON.TEXT
-msgid  "~Insert"
-msgstr "~Aplicar"
-
-#: smres.src#RID_SYMBOLDIALOG.3.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Cerrar"
-
-#: smres.src#RID_SYMBOLDIALOG.1.PUSHBUTTON.TEXT
-msgid  "~Edit..."
-msgstr "~Editar..."
-
-#: smres.src#RID_SYMDEFINEDIALOG.MODALDIALOG.TEXT
-msgid  "Edit Symbols"
-msgstr "Editar símbolos"
-
-#: smres.src#RID_SYMDEFINEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Old symbol"
-msgstr "~Símbolo anterior"
-
-#: smres.src#RID_SYMDEFINEDIALOG.2.FIXEDTEXT.TEXT
-msgid  "O~ld symbol set"
-msgstr "C~onjunto de símbolos anterior"
-
-#: smres.src#RID_SYMDEFINEDIALOG.9.FIXEDTEXT.TEXT
-msgid  "~Symbol"
-msgstr "Sím~bolo"
-
-#: smres.src#RID_SYMDEFINEDIALOG.10.FIXEDTEXT.TEXT
-msgid  "Symbol s~et"
-msgstr "Con~junto de símbolos"
-
-#: smres.src#RID_SYMDEFINEDIALOG.FT_FONTS_SUBSET.FIXEDTEXT.TEXT
-msgid  "~Subset"
-msgstr "~Subconjunto"
-
-#: smres.src#RID_SYMDEFINEDIALOG.4.FIXEDTEXT.TEXT
-msgid  "~Typeface"
-msgstr "~Estilo"
 
 #: smres.src#RID_SYMDEFINEDIALOG.1.PUSHBUTTON.TEXT
 msgid  "~Add"
 msgstr "~Añadir"
 
-#: smres.src#RID_SYMDEFINEDIALOG.3.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "~Eliminar"
+#: smres.src#RID_NOMATHTYPEFACEWARNING.WARNINGBOX.MESSAGE
+msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr "La tipografía 'StarMath' no está instalada.\n%PRODUCTNAME Math no funcionará correctamente sin esta tipografía.\nInstale la tipografía y reinicie %PRODUCTNAME Math."
 
-#: smres.src#RID_FONTREGULAR.STRING.TEXT
-msgid  "Standard"
-msgstr "Normal"
-
-#: smres.src#RID_FONTITALIC.STRING.TEXT
-msgid  "Italic"
-msgstr "Cursiva"
-
-#: smres.src#RID_FONTBOLD.STRING.TEXT
-msgid  "Bold"
-msgstr "Negrita"
+#: smres.src#RID_DEFAULTSAVEQUERY.QUERYBOX.MESSAGE
+msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
+msgstr "¿Desea guardar los cambios como predeterminados?\n\nEstos cambios tendrán efecto en todas las nuevas fórmulas."
 
 #: smres.src#RID_VIEWMENU.SID_VIEW050.MENUITEM.TEXT
 msgid  "~View 50%"
@@ -1451,153 +1111,17 @@ msgstr "~Aumentar"
 msgid  "Zoom ~Out"
 msgstr "~Reducir"
 
-#: smres.src#RID_VIEWMENU.SID_ADJUST.MENUITEM.TEXT
-msgid  "~Display All"
-msgstr "Mostrar ~todo"
-
-#: smres.src#RID_VIEWMENU.SID_DRAW.MENUITEM.TEXT
-msgid  "U~pdate"
-msgstr "A~ctualizar"
-
-#: smres.src#RID_DISTANCEMENU.4.MENUITEM.TEXT
-msgid  "Fraction Bars"
-msgstr "Barras de fracción"
-
-#: smres.src#RID_DISTANCEMENU.7.MENUITEM.TEXT
-msgid  "Matrices"
-msgstr "Matrices"
-
-#: smres.src#RID_FONTMENU.1.MENUITEM.TEXT
-msgid  "Variables"
-msgstr "Variables"
-
-#: smres.src#RID_FONTMENU.2.MENUITEM.TEXT
-msgid  "Functions"
-msgstr "Funciones"
-
-#: smres.src#RID_FONTMENU.3.MENUITEM.TEXT
-msgid  "Numbers"
-msgstr "Números"
-
-#: smres.src#RID_FONTMENU.4.MENUITEM.TEXT
-msgid  "Text"
-msgstr "Texto"
-
-#: smres.src#RID_FONTMENU.5.MENUITEM.TEXT
-msgid  "Serif"
-msgstr "Serif"
-
-#: smres.src#RID_FONTMENU.6.MENUITEM.TEXT
-msgid  "Sans"
-msgstr "Sans"
-
-#: smres.src#RID_FONTMENU.7.MENUITEM.TEXT
-msgid  "Fixed"
-msgstr "Fijo"
-
-#: smres.src#CMDBOXWINDOW_TEXT.#DEFINE.TEXT
-msgid  "Commands"
-msgstr "Órdenes"
-
-#: smres.src#RID_DOCUMENTSTR.STRING.TEXT
-msgid  "Formula"
-msgstr "Fórmula"
-
-#: smres.src#STR_STATSTR_READING.STRING.TEXT
-msgid  "Loading document..."
-msgstr "Cargando el documento..."
-
-#: smres.src#STR_STATSTR_WRITING.STRING.TEXT
-msgid  "Saving document..."
-msgstr "Guardando el documento..."
-
-#: smres.src#STR_MATH_DOCUMENT_FULLTYPE_CURRENT.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Formula"
-msgstr "%PRODUCTNAME %PRODUCTVERSION Fórmula"
-
-#: smres.src#RID_SYMBOLFILESSTR.STRING.TEXT
-msgid  "Symbol files (*.sms)"
-msgstr "Archivos de símbolos (*.sms)"
-
-#: smres.src#RID_ALLFILESSTR.STRING.TEXT
-msgid  "All Files (*.*)"
-msgstr "Todos los archivos (*.*)"
-
 #: smres.src#RID_ERR_IDENT.STRING.TEXT
 msgid  "ERROR : "
 msgstr "ERROR :  "
-
-#: smres.src#RID_ERR_UNKOWN.STRING.TEXT
-msgid  "Unknown error occurred"
-msgstr "Se ha producido un error desconocido"
 
 #: smres.src#RID_ERR_UNEXPECTEDCHARACTER.STRING.TEXT
 msgid  "Unexpected character"
 msgstr "Carácter no esperado"
 
-#: smres.src#RID_ERR_OVERFLOW.STRING.TEXT
-msgid  "Formula entry too complex"
-msgstr "La fórmula es muy compleja"
-
-#: smres.src#RID_ERR_LGROUPEXPECTED.STRING.TEXT
-msgid  "'{' expected"
-msgstr "Se requiere '{'"
-
-#: smres.src#RID_ERR_RGROUPEXPECTED.STRING.TEXT
-msgid  "'}' expected"
-msgstr "Se requiere '}'"
-
-#: smres.src#RID_ERR_LBRACEEXPECTED.STRING.TEXT
-msgid  "'(' expected"
-msgstr "Se requiere '(' "
-
-#: smres.src#RID_ERR_RBRACEEXPECTED.STRING.TEXT
-msgid  "')' expected"
-msgstr "Se requiere ')'"
-
-#: smres.src#RID_ERR_FUNCEXPECTED.STRING.TEXT
-msgid  "Function expected"
-msgstr "Se requiere una función"
-
-#: smres.src#RID_ERR_UNOPEREXPECTED.STRING.TEXT
-msgid  "Unary operator expected"
-msgstr "Se espera un operador unario"
-
-#: smres.src#RID_ERR_BINOPEREXPECTED.STRING.TEXT
-msgid  "Binary operator expected"
-msgstr "Se espera un operador binario"
-
-#: smres.src#RID_ERR_SYMBOLEXPECTED.STRING.TEXT
-msgid  "Symbol expected"
-msgstr "Se necesita un símbolo"
-
-#: smres.src#RID_ERR_IDENTEXPECTED.STRING.TEXT
-msgid  "Identifier expected"
-msgstr "Se requiere un identificador"
-
-#: smres.src#RID_ERR_POUNDEXPECTED.STRING.TEXT
-msgid  "'#' expected"
-msgstr "Se requiere '#'"
-
-#: smres.src#RID_ERR_COLOREXPECTED.STRING.TEXT
-msgid  "Color required"
-msgstr "Se requiere un color"
-
-#: smres.src#RID_ERR_LPARENTEXPECTED.STRING.TEXT
-msgid  "Left limit expected"
-msgstr "Se requiere el límite izquierdo"
-
-#: smres.src#RID_ERR_RPARENTEXPECTED.STRING.TEXT
-msgid  "Right limit expected"
-msgstr "Se requiere el límite derecho"
-
 #: smres.src#RID_ERR_RIGHTEXPECTED.STRING.TEXT
 msgid  "'RIGHT' expected"
 msgstr "Se requiere 'RIGHT'"
-
-#: smres.src#RID_MATH_TOOLBOX.STRING.TEXT
-msgid  "Main Toolbar"
-msgstr "Barra de herramientas"
 
 #: smres.src#RID_PRINTUIOPTIONS.ITEM1.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME %s"

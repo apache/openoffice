@@ -47,10 +47,6 @@ msgstr "Sustituyíu"
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
 msgstr "Hebo un fallu al cargar esti control. Camudóse por un comodín."
 
-#: resource/strings.src#RID_STR_READERROR.STRING.TEXT
-msgid  "Error reading data from database"
-msgstr "Fallu al lleer los datos de la base datos"
-
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
 msgid  "Connection failed"
 msgstr "Falló conexón"
@@ -63,22 +59,6 @@ msgstr "Nun se pudieron cargar los conteníos de los datos."
 msgid  "The data content could not be updated"
 msgstr "Nun se pudieron anovar los conteníos de los datos."
 
-#: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
-msgid  "Error inserting the new record"
-msgstr "Fallu al inxertar un rexistru nuevu de datos."
-
-#: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
-msgid  "Error updating the current record"
-msgstr "Fallu al escribir el rexistru actual de datos."
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
-msgid  "Error deleting the current record"
-msgstr "Fallu al desaniciar el rexistru actual de datos."
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
-msgid  "Error deleting the specified records"
-msgstr "Fallu al desaniciar los rexistros de datos indicaos."
-
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
 msgid  "The object cannot be NULL."
 msgstr "L'oxetu nun puede ser NULL."
@@ -87,17 +67,9 @@ msgstr "L'oxetu nun puede ser NULL."
 msgid  "Insert graphics from..."
 msgstr "Inxertar imaxe de..."
 
-#: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
-msgid  "Remove graphics"
-msgstr "Desaniciar imaxe"
-
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
 msgid  "The given stream is invalid."
 msgstr "La secuencia indicada nun val."
-
-#: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
-msgid  "Syntax error in query expression"
-msgstr "Hebo un fallu al analizar la espresión de la consulta"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
@@ -207,29 +179,9 @@ msgstr "La cadena sólo puede tener $2 caráuteres de llargor como máximu."
 msgid  "String"
 msgstr "Cadena"
 
-#: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
-msgid  "Hyperlink"
-msgstr "Hiperenllaz"
-
-#: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
-msgid  "True/False (Boolean)"
-msgstr "Verdaderu/Falsu (booleano)"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
-msgid  "Decimal"
-msgstr "Decimal"
-
-#: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
-msgid  "Floating point"
-msgstr "Coma flotante"
-
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
 msgid  "Double"
 msgstr "Doble"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
-msgid  "Date"
-msgstr "Data"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
 msgid  "Time"
@@ -247,26 +199,6 @@ msgstr "Mes y añu"
 msgid  "Year"
 msgstr "Añu"
 
-#: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
-msgid  "Month and day"
-msgstr "Mes y día"
-
-#: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
-msgid  "Month"
-msgstr "Mes"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
-msgid  "Day"
-msgstr "día"
-
-#: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
-msgid  "Error during evaluation"
-msgstr "Fallu na evaluación"
-
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
 msgid  "The string '$1' does not match the required regular expression '$2'."
 msgstr "La cadena '$1' nun coincido cola espresión regular que se necesita '$2'."
-
-#: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
-msgstr "Enllaz"

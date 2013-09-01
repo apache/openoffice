@@ -31,36 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
-#, fuzzy
-msgid  "Configuration Menu"
-msgstr "Μενού ρύθμισης"
-
-#: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
-#, fuzzy
-msgid  "~Add-Ons"
-msgstr "~Πρόσθετα"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Cu~t"
-msgstr "~Αποκοπή"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Copy"
-msgstr "Αντι~γραφή"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Paste"
-msgstr "Επ~ικόλληση"
-
-#: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
-#, fuzzy
-msgid  "Leave Full-Screen Mode"
-msgstr "Έξοδος από τη λειτουργία πλήρους οθόνης"
-
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
 #, fuzzy
 msgid  "Add-~On Help"
@@ -81,530 +51,121 @@ msgstr "(κανένα)"
 msgid  "~Thesaurus..."
 msgstr "~Θησαυρός..."
 
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
-#, fuzzy
-msgid  "My Templates"
-msgstr "Τα πρότυπα μου"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Business Correspondence"
-msgstr "Επαγγελματική αλληλογραφία"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Other Business Documents"
-msgstr "Διάφορα επαγγελματικά έγγραφα"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Personal Correspondence and Documents"
-msgstr "Προσωπική αλληλογραφία και προσωπικά έγγραφα"
-
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
 #, fuzzy
 msgid  "Forms and Contracts"
 msgstr "Φόρμες και Συμβόλαια"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Finances"
-msgstr "Οικονομικά"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Education"
-msgstr "Εκπαίδευση"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Presentation Backgrounds"
-msgstr "Φόντα παρουσιάσεων"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Presentations"
-msgstr "Παρουσιάσεις"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
-#, fuzzy
-msgid  "Miscellaneous"
-msgstr "Διάφορα"
-
-#: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
-#, fuzzy
-msgid  "The templates are being initialized for first-time usage."
-msgstr "Τα πρότυπα αρχικοποιούνται για να χρησιμοποιηθούν για πρώτη φορά."
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
 #, fuzzy
 msgid  "Templates"
 msgstr "Πρότυπα"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New template"
-msgstr "Δημιουργία προτύπου"
-
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Categories"
 msgstr "~Κατηγορίες"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Templates"
-msgstr "~Πρότυπα"
+#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr "Κατά την αποθήκευση σε εξωτερική μορφή \n μπορεί να προέκυψε απώλεια πληροφοριών. Θέλετε να το κλείσετε;"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Επεξεργασία"
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Organizer..."
-msgstr "Δ~ιαχείριση..."
+#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr "Υπάρχει ήδη ένα πρότυπο με αυτό το όνομα.\nΘέλετε να το αντικαταστήσετε;"
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
-#, fuzzy
 msgid  "Are you sure you want to delete the region \"$1\"?"
-msgstr "Θέλετε σίγουρα να διαγραφεί η κατηγορία $1;"
+msgstr "Θέλετε σίγουρα να διαγραφεί η κατηγορία \"$1\";"
 
 #: doc/doc.src#STR_DELETE_TEMPLATE.STRING.TEXT
-#, fuzzy
 msgid  "Are you sure you want to delete the entry \"$1\"?"
-msgstr "Θέλετε πραγματικά να διαγραφεί η καταχώριση $1;"
+msgstr "Θέλετε πραγματικά να διαγραφεί η καταχώριση \"$1\";"
 
-#: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "Το αρχείο \"$(DOC)\" τροποποιήθηκε.\nΘέλετε να αποθηκευτούν οι αλλαγές;"
-
-#: doc/doc.src#STR_STYLES.STRING.TEXT
-#, fuzzy
-msgid  "Styles"
-msgstr "Πρότυπα"
-
-#: doc/doc.src#STR_MACROS.STRING.TEXT
-#, fuzzy
-msgid  "Macros"
-msgstr "Μακροεντολές"
-
-#: doc/doc.src#STR_CONFIG.STRING.TEXT
-#, fuzzy
-msgid  "Configuration"
-msgstr "Διαμόρφωση"
+#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr "Η κατηγορία δεν είναι κενή.\nΝα διαφραφεί;"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
-#, fuzzy
 msgid  "Styles in "
-msgstr "Πρότυπα μορφοποίησης στο  "
-
-#: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
-#, fuzzy
-msgid  "Printing Styles"
-msgstr "Εκτύπωση των προτύπων μορφοποίησης"
-
-#: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "The print job could not be started."
-msgstr "Δεν ήταν δυνατόν να γίνει εκκίνηση της διαδικασίας εκτύπωσης."
-
-#: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
-#, fuzzy
-msgid  "Copy"
-msgstr "Αντίγραφο"
-
-#: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "The template could not be opened."
-msgstr "Δεν ήταν δυνατόν να ανοιχθεί το πρότυπο του εγγράφου."
-
-#: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "Document already open for editing."
-msgstr "Το έγγραφο είναι ήδη ανοιχτό για την επεξεργασία."
-
-#: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "Error recording document "
-msgstr "Σφάλμα κατά την εγγραφή του εγγράφου "
+msgstr "Πρότυπα μορφοποίησης στο "
 
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
 #, fuzzy
 msgid  "Templates"
 msgstr "Πρότυπα"
 
-#: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "Σφάλμα κατά την αντιγραφή του προτύπου \"$1\". \nΊσως το πρότυπο αυτό να υπάρχει ήδη."
-
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
-#, fuzzy
 msgid  "The template \"$1\" can not be deleted."
-msgstr "Αδύνατον να διαγραφεί το πρότυπο \"$1\"."
-
-#: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error moving template \"$1\"."
-msgstr "Σφάλμα κατά την μετακίνηση του προτύπου \"$1\"."
-
-#: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "The update could not be saved."
-msgstr "Δεν ήταν δυνατόν να αποθηκευτούν τα δεδομένα των ενημερώσεων."
-
-#: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error saving template "
-msgstr "Σφάλμα κατά την εγγραφή του προτύπου "
-
-#: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Error renaming template."
-msgstr "Σφάλμα κατά την μετονομασία του προτύπου."
+msgstr "Αδύνατον να διαγραφεί το \"$1\" πρότυπο."
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
 #, fuzzy
 msgid  "Error renaming template category."
 msgstr "Σφάλμα κατά την μετονομασία της κατηγορίας."
 
-#: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Please specify a name."
-msgstr "Πρέπει να εισάγετε ένα όνομα."
+#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr "Πρέπει να εισαχθεί ένα μοναδικό όνομα.\nΔεν θα γίνουν διακρίσεις μεταξύ κεφαλαίων και πεζών γραμμάτων."
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
-#, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
-msgstr "Θέλετε να οριστεί το πρότυπο $(TEXT) ως πρότυπο προεπιλογής;"
+msgstr "Θέλετε να οριστεί το πρότυπο \"$(TEXT)\" ως πρότυπο προεπιλογής;"
 
-#: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "Do you want to reset the default template?"
-msgstr "Θέλετε να επαναφέρεται το πρότυπο προεπιλογής;"
-
-#: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "Document info cannot be read."
-msgstr "Δεν είναι δυνατόν να γίνει ανάγνωση των ιδιοτήτων του εγγράφου."
-
-#: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
-#, fuzzy
-msgid  "The selected file has an incorrect format."
-msgstr "Η μορφή του επιλεγμένου αρχείου δεν είναι έγκυρη."
+#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr "Ο κατάλογος των προτύπων\n$(DIR)\nδεν υπάρχει."
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
-#, fuzzy
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr "Τα έγγραφα δεν είναι δυνατόν να αποθηκευτούν με τη μορφή $(FORMAT).\n Θέλετε να αποθηκευτεί το έγγραφο με τη μορφή $(OWNFORMAT);"
-
-#: doc/doc.src#STR_SAVEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Save"
-msgstr "Αποθήκευ~ση"
-
-#: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Update"
-msgstr "Ενημέ~ρωση"
-
-#: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
-#, fuzzy
-msgid  "Save ~As..."
-msgstr "Αποθήκευση ω~ς..."
-
-#: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
-#, fuzzy
-msgid  "Save Copy ~as..."
-msgstr "Αποθήκευση ~αντιγράφου ως..."
-
-#: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~Κλείσιμο"
-
-#: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-#, fuzzy
-msgid  "~Close & Return to "
-msgstr "~Κλείσιμο και επιστροφή σε "
+msgstr "Τα έγγραφα δεν είναι δυνατόν να αποθηκευτούν με τη $(FORMAT) μορφή. Θέλετε να\nαποθηκευτεί το έγγραφο με τη $(OWNFORMAT) μορφή;"
 
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
-#, fuzzy
 msgid  " AutoPilot"
-msgstr "Αυτόματος πιλότος"
-
-#: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
-#, fuzzy
-msgid  "Configurations"
-msgstr "Διαμορφώσεις"
+msgstr " Αυτόματος Πιλότος"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
-#, fuzzy
 msgid  "%PRODUCTNAME Basic libraries"
-msgstr "%PRODUCTNAME Basic Βιβλιοθήκες"
+msgstr "%PRODUCTNAME Basic βιβλιοθήκες"
 
 #: doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.STRING.TEXT
-#, fuzzy
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
-msgstr "Να αντικατασταθεί το στυλ $(ARG1);"
+msgstr "Να αντικατασταθεί το \"$(ARG1)\" στυλ;"
 
-#: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
-#, fuzzy
-msgid  "Loading Document"
-msgstr "Φόρτωση εγγράφου"
-
-#: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
-#, fuzzy
-msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr "Σύνδεση με: $(HOST). Περιμένοντας απάντηση..."
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
-#, fuzzy
-msgid  "Opening $(TARGET) at $(HOST)"
-msgstr "Άνοιγμα: $(TARGET) στο $(HOST)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
-#, fuzzy
-msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "Μετάδοση: $(TARGET) από $(HOST). Έγινε ανάγνωση: $(BYTE)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
-#, fuzzy
-msgid  "Disconnected"
-msgstr "Τερματισμός σύνδεσης"
-
-#: doc/doc.src#STR_EDIT.STRING.TEXT
-#, fuzzy
-msgid  "Edit"
-msgstr "Επεξεργασία"
-
-#: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
-#, fuzzy
-msgid  "%PRODUCTNAME Documents"
-msgstr "%PRODUCTNAME - Έγγραφα"
+#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr "Δεν είναι δυνατόν να ανοιχτεί το έγγραφο για την επεξεργασία.\nΘέλετε να το ανοίξετε μόνο για ανάγνωση;"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
-#, fuzzy
 msgid  "Propert~ies..."
-msgstr "Ι~διότητες ..."
-
-#: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
-#, fuzzy
-msgid  "HTML (FrameSet)"
-msgstr "HTML (FrameSet)"
+msgstr "Ι~διότητες..."
 
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
 #, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "Έγγραφο του %PRODUCTNAME Frame"
 
-#: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
-#, fuzzy
-msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr "Το πρότυπο \"$(TEMPLATE)\" δεν βρέθηκε στην αρχική θέση. Υπάρχει πρότυπο με το ίδιο όνομα στο \"$(FOUND)\". Θέλετε να χρησιμοποιείται αυτό το πρότυπο στο μέλλον κατά τη σύγκριση;"
-
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
-#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr "Το πρότυπο $(TEMPLATE) δεν βρέθηκε. Θέλετε να γίνει και μελλοντικά αναζήτηση αυτού του προτύπου;"
-
-#: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
-#, fuzzy
-msgid  "Automatically saved version"
-msgstr "Αυτομάτως αποθηκευμένη έκδοση"
-
-#: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
-#, fuzzy
-msgid  "Text Document"
-msgstr "Έγγραφο κειμένου"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
-#, fuzzy
-msgid  "HTML Document"
-msgstr "Έγγραφο HTML"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
-#, fuzzy
-msgid  "Master Document"
-msgstr "Κύριο έγγραφο"
-
-#: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
-#, fuzzy
-msgid  "Spreadsheet"
-msgstr "Υπολογιστικό φύλλο"
-
-#: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
-#, fuzzy
-msgid  "Presentation"
-msgstr "Παρουσίαση"
-
-#: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
-#, fuzzy
-msgid  "Drawing"
-msgstr "Σχεδίαση"
-
-#: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
-#, fuzzy
-msgid  "Message"
-msgstr "Μήνυμα"
+msgstr "Το πρότυπο \"$(TEMPLATE)\" δεν βρέθηκε. Θέλετε να γίνει και μελλοντικά αναζήτηση αυτού του προτύπου;"
 
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
 #, fuzzy
 msgid  "~Discard"
 msgstr "Α~πόρριψη"
 
-#: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
-#, fuzzy
-msgid  "Access to the current data medium not possible."
-msgstr "Δεν ήταν δυνατή η πρόσβαση στον τρέχων δίσκο."
-
-#: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
-#, fuzzy
-msgid  "Insert the next data carrier and click OK."
-msgstr "Εισάγετε τον επόμενο φορέα δεδομένων και επιλέξτε το πεδίο OK."
-
-#: doc/doc.src#STR_OBJECT.STRING.TEXT
-#, fuzzy
-msgid  "Object"
-msgstr "Αντικείμενο"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
-#, fuzzy
-msgid  "Run Macro"
-msgstr "Εκτέλεση μακροεντολών"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "This document contains macros. $(TEXT)"
-msgstr "Αυτό το έγγραφο περιλαμβάνει μακροεντολές. $(TEXT)"
-
-#: doc/doc.src#BTN_OK.STRING.TEXT
-#, fuzzy
-msgid  "Run"
-msgstr "Εκτέλεση"
-
-#: doc/doc.src#BTN_CANCEL.STRING.TEXT
-#, fuzzy
-msgid  "Do Not Run"
-msgstr "Να μην γίνει εκτέλεση"
-
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
 #, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "Σύμφωνα με τις ρυθμίσεις ασφαλείας, οι μακροεντολές αυτού του εγγράφου δεν θα πρέπει να εκτελεστούν. Είστε βέβαιοι ότι θέλετε να τις εκτελέσετε;"
 
-#: doc/doc.src#FT_OK.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to allow these macros to be run?"
-msgstr "Θέλετε να επιτρέψετε την εκτέλεση αυτών των μακροεντολών;"
-
-#: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Export as PDF"
-msgstr "Εξαγωγή ως PDF"
-
-#: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Export..."
-msgstr "Εξαγωγή..."
-
-#: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "Εξαγωγή"
-
-#: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
-#, fuzzy
-msgid  "Add this directory to the list of secure paths: "
-msgstr "Προσθήκη αυτού του καταλόγου στη λίστα ασφαλών διαδρομών: "
-
-#: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
-#, fuzzy
-msgid  "File format:"
-msgstr "Μορφή αρχείου:"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
-#, fuzzy
-msgid  "This document contains:\n\n"
-msgstr "Αυτό το έγγραφο περιέχει:\n\n"
-
-#: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
-#, fuzzy
-msgid  "Recorded changes"
-msgstr "Καταγεγραμμένες αλλαγές"
-
-#: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
-#, fuzzy
-msgid  "Notes"
-msgstr "Σημειώσεις"
-
-#: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
-#, fuzzy
-msgid  "Document versions"
-msgstr "Εκδόσεις εγγράφου"
-
-#: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
-#, fuzzy
-msgid  "Fields"
-msgstr "Πεδία"
-
-#: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
-#, fuzzy
-msgid  "Linked data..."
-msgstr "Συνδεδεμένα δεδομένα..."
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue saving the document?"
-msgstr "Θέλετε να συνεχίσετε την αποθήκευση του εγγράφου;"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue printing the document?"
-msgstr "Θέλετε να συνεχίσετε την εκτύπωση του εγγράφου;"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue signing the document?"
-msgstr "Θέλετε να συνεχίσετε την υπογραφή του εγγράφου;"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
-#, fuzzy
-msgid  "Do you want to continue creating a PDF file?"
-msgstr "Θέλετε να συνεχιστεί η δημιουργία αρχείου PDF;"
-
-#: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "Αν δεν θέλετε να αντικαταστήσετε το αρχικό έγγραφο, θα πρέπει να αποθηκεύσετε την εργασία σας με ένα νέο όνομα αρχείου."
-
-#: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
-#, fuzzy
-msgid  "Some template files are protected and can not be deleted."
-msgstr "Μερικά πρότυπα αρχεία είναι προστατευμένα και δεν πορούν να διαγραφούν."
-
-#: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
-#, fuzzy
-msgid  "Info %1"
-msgstr "Πληροφορίες %1"
-
 #: doc/doc.src#STR_SHARED.STRING.TEXT
-#, fuzzy
 msgid  " (shared)"
-msgstr "(κοινόχρηστα)"
+msgstr " (κοινόχρηστα)"
 
-#: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
-#, fuzzy
-msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr "Η μορφή εγγράφου εκδοχή έχει οριστεί σε ODF 1.1 (OpenOffice.org 2.x) στο Εργαλεία-Επιλογές -Φόρτωση/Αποθήκευση-Γενικά. Η υπογραφή εγγράφων απαιτεί ODF 1.2 (OpenOffice.org 3.x)."
-
-#: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
-#, fuzzy
-msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr "Το πρότυπο '$(ARG1)' στο οποίο βασίζεται το παρόν έγγραφο, έχει τροποποιηθεί. Θέλετε να ενημερώσετε το στυλ σύμγφωνα με τις μορφοποιήσεις του τροποποιημένου προτύπου;"
+#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr "Το έγγραφο πρέπει να αποθηκευτεί πριν μπορέσει να υπογραφεί. Η αποθήκευση του έγγραφου αφαιρει όλες τις υπάρχουσες υπογραφές.\nΘέλετε να αποθηκεύσετε το έγγραφο;"
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
 #, fuzzy
@@ -616,55 +177,19 @@ msgstr "Ε~νημέρωση στυλ"
 msgid  "~Keep Old Styles"
 msgstr "~Διατήρηση παλιών στυλ"
 
-#: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Template Management"
-msgstr "Διαχείριση πρότυπων"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "Κλείσιμο"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~File..."
-msgstr "~Αρχείο..."
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~Address Book..."
-msgstr "~Βιβλίο διευθύνσεων"
+msgstr "~Βιβλίο Διευθύνσεων..."
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Templates"
 msgstr "Πρότυπα"
 
-#: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Documents"
-msgstr "Έγγραφα"
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
 #, fuzzy
 msgid  "Commands"
 msgstr "Εντολές"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "~New"
-msgstr "~Δημιουργία"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "Διαγρα~φή"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Επεξεργασία"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
 #, fuzzy
@@ -675,11 +200,6 @@ msgstr "Εισαγωγή προτύπου..."
 #, fuzzy
 msgid  "Export Template..."
 msgstr "Εξαγωγή προτύπων..."
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
-#, fuzzy
-msgid  "~Print"
-msgstr "Εκ~τύπωση"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
 #, fuzzy
@@ -701,165 +221,30 @@ msgstr "Ορισμός ως προεπιλεγμένου προτύπου"
 msgid  "Reset Default Template"
 msgstr "Επαναφορά προεπιλεγμένου προτύπου"
 
-#: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "New"
-msgstr "Δημιουργία"
-
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Categories"
 msgstr "~Κατηγορίες"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "T~emplates"
-msgstr "Π~ρότυπα"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
 #, fuzzy
 msgid  "~More"
 msgstr "~Περισσότερα"
 
-#: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Pre~view"
-msgstr "Προ~επισκόπηση"
-
-#: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "Περιγραφή"
-
-#: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Te~xt"
-msgstr "Κεί~μενο"
-
-#: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Frame"
-msgstr "~Πλαίσιο"
-
-#: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Pages"
-msgstr "~Σελίδες"
-
-#: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "N~umbering"
-msgstr "Α~ρίθμηση"
-
-#: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Overwrite"
-msgstr "~Αντικατάσταση"
-
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "From File..."
 msgstr "Από αρχείο..."
-
-#: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Load Styles"
-msgstr "Φόρτωση προτύπων"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "~Τίτλος"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Subject"
 msgstr "Θέμα"
 
-#: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Key words"
-msgstr "Λέ~ξεις-κλειδιά"
-
-#: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Description"
-msgstr "~Περιγραφή"
-
-#: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
-#, fuzzy
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "Το επιλεγμένο φίλτρο $(FILTER) δεν έχει εγκατασταθεί.\nΘέλετε να εγκατασταθεί τώρα;"
-
-#: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
-#, fuzzy
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "Το επιλεγμένο φίλτρο $(FILTER) δεν περιέχεται στην έκδοσή σας.\nΠληροφορίες για δυνατότητες παραγγελίας θα βρείτε στην αρχική μας σελίδα."
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Reduce print data"
-msgstr "Μείωση δεδομένων εκτύπωσης"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Settings for"
-msgstr "Ρυθμίσεις για"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~Printer"
-msgstr "~Εκτυπωτής"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Print to ~file"
-msgstr "Εκτύπωσ~η σε αρχείο"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Reduce transparency"
-msgstr "~Σμίκρυνση διαφάνειας"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Auto~matically"
-msgstr "Αυτό~ματα"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~No transparency"
-msgstr "~Χωρίς διαφάνεια"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Reduce ~gradients"
-msgstr "Μείωση ~διαβαθμίσεων"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Gradient ~stripes"
 msgstr "Λ~ωρίδες με διαβαθμίσεις"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Intermediate ~color"
-msgstr "Ενδιάμεσο χ~ρώμα"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Reduce ~bitmaps"
-msgstr "Μείωση ~bitmap"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "~High print quality"
-msgstr "~Υψηλή ποιότητα εκτύπωσης"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "N~ormal print quality"
-msgstr "Κα~νονική ποιότητα εκτύπωσης"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
 #, fuzzy
@@ -867,114 +252,26 @@ msgid  "Reso~lution"
 msgstr "Ανά~λυση"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "72 DPI"
-msgstr "72 DPI"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "96 DPI"
-msgstr "96 DPI"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "150 DPI (Fax)"
-msgstr "150 DPI (Φαξ)"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
-msgid  "200 DPI (default)"
-msgstr "200 DPI (προεπιλογή)"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
 msgid  "300 DPI"
-msgstr "300 dpi"
+msgstr "300 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-#, fuzzy
 msgid  "600 DPI"
-msgstr "600 dpi"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "Include transparent ob~jects"
-msgstr "Προσθήκη διαφανών αντι~κειμένων"
+msgstr "600 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Con~vert colors to grayscale"
-msgstr "Μετατροπή χρωμάτων σε διαβα~Θ. γκρι"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Printer warnings"
-msgstr "Προειδοποιήσεις εκτυπωτή"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "P~aper size"
-msgstr "Μέγεθος χ~αρτιού"
+msgstr "Μ~ετατροπή χρωμάτων σε διαβαθμίσεις του γκρι"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Pap~er orientation"
 msgstr "Προσανατολισμός χαρ~τιού"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Transparency"
-msgstr "Δια~φάνεια"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Warning"
-msgstr "Προειδοποίηση"
-
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr "Το έγγραφό σας περιέχει διαφανή αντικείμενα.\nΑυτό μπορεί να έχει ως αποτέλεσμα να απαιτείται περισσότερος χρόνος για εκτύπωση \nσε ορισμένους εκτυπωτές. Θέλετε να μειωθεί το χαρακτηριστικό της \nδιαφάνειας;"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
-#, fuzzy
-msgid  "~Yes"
-msgstr "~Ναι"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~No"
-msgstr "Ό~χι"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Cancel"
-msgstr "Α~κύρωση"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Do not show warning again"
-msgstr "~Να μην εμφανιστεί ξανά αυτή η προειδοποίηση"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Style Catalog"
-msgstr "Κατάλογος προτύπων"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Organizer..."
-msgstr "~Διαχείριση..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete..."
-msgstr "Δια~γραφή..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Modify..."
-msgstr "Τρο~ποποίηση..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
 #, fuzzy
@@ -983,32 +280,12 @@ msgstr "~Δημιουργία..."
 
 #: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
 msgid  "Style List"
-msgstr ""
-
-#: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
-#, fuzzy
-msgid  "Hierarchical"
-msgstr "Ιεραρχικά"
+msgstr "Λίστα Προτύπων"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
 #, fuzzy
 msgid  "Styles and Formatting"
 msgstr "Πρότυπα και μορφοποίηση"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Fill Format Mode"
-msgstr "Κατάσταση γεμίσματος"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "New Style from Selection"
-msgstr "Νέο πρότυπο από επιλογή"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
-#, fuzzy
-msgid  "Update Style"
-msgstr "Ενημέρωση προτύπου"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 #, fuzzy
@@ -1066,9 +343,8 @@ msgid  "~Unprotect..."
 msgstr "Ά~ρση προστασίας..."
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.STRING.TEXT
-#, fuzzy
 msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
-msgstr "Αυτή η ενέργεια θα τερματίσει τη λειτουργία καταγραφής.\nΌλες οι πληροφορίες για τις αλλαγές θα χαθούν.\n\nνα γίνει έξοδος από τη λειτουργία καταγραφής?\n\n"
+msgstr "Αυτή η ενέργεια θα τερματίσει τη λειτουργία καταγραφής.\nΌλες οι πληροφορίες για τις αλλαγές θα χαθούν.\n\nνα γίνει έξοδος από τη λειτουργία καταγραφής;\n\n"
 
 #: dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.STRING.TEXT
 #, fuzzy
@@ -1085,110 +361,13 @@ msgstr "Άρση προστασίας εγγραφών"
 msgid  "Incorrect password"
 msgstr "Μη έγκυρος κωδικός"
 
-#: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "New versions"
-msgstr "Νέες εκδόσεις"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Save ~New Version"
-msgstr "Αποθήκευση ~νέας έκδοσης"
-
-#: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Always save a version on closing"
-msgstr "Κατά το κλείσιμο να αποθηκεύεται ~πάντα η έκδοση"
-
-#: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Existing versions"
-msgstr "Υπάρχουσες εκδόσεις"
-
-#: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Date and time"
-msgstr "Ημερομηνία και ώρα"
-
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Saved by"
-msgstr "αποθήκευση από"
-
-#: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Comments"
-msgstr "Σχόλια"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "Κλείσιμο"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Open"
-msgstr "Άνοιγμα"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Show..."
-msgstr "Προ~βολή..."
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Delete"
-msgstr "~Διαγραφή"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Compare"
-msgstr "Σύγκριση"
-
-#: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Versions of"
-msgstr "Εκδόσεις σε"
-
-#: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Date and time : "
-msgstr "Ημερομηνία και ώρα : "
+msgstr "Αποθήκευση από"
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Saved by "
-msgstr "αποθήκευση από "
-
-#: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~Κλείσιμο"
-
-#: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "Insert Version Comment"
-msgstr "Εισαγωγή σχολίου έκδοσης"
-
-#: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
-#, fuzzy
-msgid  "Version comment"
-msgstr "Σχόλιο έκδοσης"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Name"
-msgstr "Ό~νομα"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~AutoUpdate"
-msgstr "~Αυτόματη ενημέρωση"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Ne~xt Style"
-msgstr "Επόμενο πρότ~υπο"
+msgstr "Αποθήκευση από "
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1200,175 +379,33 @@ msgstr "Σύνδεση με"
 msgid  "~Category"
 msgstr "~Κατηγορία"
 
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Contains"
-msgstr "Περιέχει"
-
-#: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
-#, fuzzy
-msgid  "Current version"
-msgstr "Τρέχουσα έκδοση"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
-#, fuzzy
-msgid  "Export"
-msgstr "Εξαγωγή"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
-#, fuzzy
-msgid  "Insert"
-msgstr "Εισαγωγή"
-
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
 #, fuzzy
 msgid  "~Insert"
 msgstr "~Εισαγωγή"
-
-#: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
-#, fuzzy
-msgid  "<All formats>"
-msgstr "<Όλες οι μορφές>"
-
-#: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
-#, fuzzy
-msgid  "~Automatic file name extension"
-msgstr "~Αυτόματη επέκταση ονόματος αρχείων"
-
-#: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
-#, fuzzy
-msgid  "~Selection"
-msgstr "~Επιλογή"
-
-#: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
-#, fuzzy
-msgid  "~Link"
-msgstr "~Σύνδεση"
-
-#: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
-#, fuzzy
-msgid  "Pr~eview"
-msgstr "Πρ~οεπισκόπηση"
-
-#: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
-#, fuzzy
-msgid  "~Read-only"
-msgstr "Μό~νο για ανάγνωση"
-
-#: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
-#, fuzzy
-msgid  "Save with ~password"
-msgstr "Αποθήκευση με ~κωδικό πρόσβασης"
-
-#: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "Edit ~filter settings"
-msgstr "Επεξεργασία ρυθμίσεων ~φίλτρου"
-
-#: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
-#, fuzzy
-msgid  "~Play"
-msgstr "~Αναπαραγωγή"
-
-#: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
-#, fuzzy
-msgid  "Sto~p"
-msgstr "Διακο~πή"
-
-#: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
-#, fuzzy
-msgid  "~Open"
-msgstr "Ά~νοιγμα"
-
-#: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
-#, fuzzy
-msgid  "~Save"
-msgstr "Απο~θήκευση"
-
-#: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Style:"
-msgstr "Στυλ:"
-
-#: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
-#, fuzzy
-msgid  "~Templates:"
-msgstr "~Πρότυπα:"
-
-#: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
-#, fuzzy
-msgid  "~Version:"
-msgstr "Έ~κδοση:"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
 #, fuzzy
 msgid  "Find on this Page"
 msgstr "Εύρεση σε αυτήν τη σελίδα"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Search for"
-msgstr "Ανα~ζήτηση για"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Whole words only"
-msgstr "Μόνο ο~λόκληρες λέξεις"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Match case"
-msgstr "~Ταίριασμα πεζών/κεφαλαίων"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Wrap ~around"
 msgstr "Αναδίπλωση ~γύρω"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Backwards"
-msgstr "~Προς τα πίσω"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Find"
 msgstr "Εύρε~ση"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Close"
-msgstr "~Κλείσιμο"
-
-#: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Enter Password"
-msgstr "Εισαγωγή κωδικού πρόσβασης"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~User"
-msgstr "~Χρήστης"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Password"
-msgstr "Κ~ωδικός πρόσβασης"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Confirm"
-msgstr "Επι~βεβαίωση"
-
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
-#, fuzzy
 msgid  "Password"
-msgstr "Κωδικός πρόσβασης"
+msgstr "Κωδικός"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "P~assword"
-msgstr "Κωδικός πρόσβασης"
+msgstr "Κωδι~κός"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1376,59 +413,8 @@ msgid  "Confir~m"
 msgstr "Επι~βεβαίωση"
 
 #: dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.STRING.TEXT
-#, fuzzy
 msgid  "%PRODUCTNAME document"
-msgstr "Έγγραφο %PRODUCTNAME"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Title"
-msgstr "~Τίτλος"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Subject"
-msgstr "Θέ~μα"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Keywords"
-msgstr "Λέξεις-κλειδιά"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Comments"
-msgstr "Σ~χόλια"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Type:"
-msgstr "Τύπος:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Read-only"
-msgstr "Μό~νο για ανάγνωση"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Location:"
-msgstr "Τοποθεσία:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Size:"
-msgstr "Μέγεθος:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Created:"
-msgstr "Δημιουργήθηκε τη:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Modified:"
-msgstr "Τροποποιήθηκε τη:"
+msgstr "%PRODUCTNAME έγγραφο"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1440,26 +426,6 @@ msgstr "Με ψηφιακή υπογραφή:"
 msgid  "Digital Signature..."
 msgstr "Ψηφιακή υπογραφή..."
 
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
-#, fuzzy
-msgid  "Multiply signed document"
-msgstr "Πολλαπλασιασμός υπογεγραμμένου εγγράφου"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Last printed:"
-msgstr "Εκτυπώθηκε τη:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Total editing time:"
-msgstr "Συν. χρόνος επεξεργασίας:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Revision number:"
-msgstr "Αριθμός αναθεώρησης:"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Reset"
@@ -1470,39 +436,14 @@ msgstr "Επαναφορά"
 msgid  "~Apply user data"
 msgstr "Χρήση ~προσωπικών δεδομένων"
 
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Template:"
-msgstr "Πρότυπο:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
-#, fuzzy
-msgid  "unknown"
-msgstr "άγνωστο"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
 msgid  "File Name"
-msgstr ""
-
-#: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Info fields..."
-msgstr "Πεδία πλη~ροφοριών..."
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Do not refresh automatically"
-msgstr "Όχι αυτόματη ανανέωση"
+msgstr "Όνομα Αρχείου"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "Refresh this document"
 msgstr "Ανανέωση αυτού του εγγράφου"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "every"
-msgstr "κάθε"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
 #, fuzzy
@@ -1514,280 +455,47 @@ msgstr "δευτερόλεπτα"
 msgid  "Redirect from this document"
 msgstr "Αναδρομολόγηση από αυτό το έγγραφο"
 
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "after"
-msgstr "μετά από"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "to URL"
-msgstr "στο URL"
-
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "to frame"
 msgstr "στο πλαίσιο"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.STRING.TEXT
-#, fuzzy
 msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
-msgstr "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "Εάν επιλέξετε την επιλογή \"%PLACEHOLDER%\", θα πρέπει να εισάγετε μια διεύθυνση URL."
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Properties"
 msgstr "~Ιδιότητες"
 
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
-#, fuzzy
-msgid  "Name"
-msgstr "Όνομα"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
-#, fuzzy
-msgid  "Type"
-msgstr "Τύπος"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
-#, fuzzy
-msgid  "Value"
-msgstr "Ποσό"
-
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Add"
 msgstr "~Προσθήκη"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
-#, fuzzy
-msgid  "Property Name"
-msgstr "Όνομα Ιδιότητας"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Checked by"
-msgstr "Ελέγχθηκε από"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Client"
-msgstr "Πελάτης"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date completed"
-msgstr "Ημερομηνία ολοκλήρωσης"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Department"
-msgstr "Τμήμα"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Destinations"
-msgstr "Προορισμοί"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Disposition"
-msgstr "Διάθεση"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Division"
-msgstr "Διαίρεση"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Document number"
-msgstr "Αριθμός εγγράφου"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Editor"
-msgstr "Συντάκτης"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
-#, fuzzy
-msgid  "E-Mail"
-msgstr "Ηλεκτρονικό ταχυδρομείο"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Forward to"
-msgstr "Προώθηση σε"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Group"
-msgstr "Ομάδα"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Info"
-msgstr "Πληροφορίες"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Language"
-msgstr "Γλώσσα"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Mailstop"
-msgstr "Mailstop"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Matter"
-msgstr "Θέμα"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Office"
-msgstr "Γραφείο"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Owner"
-msgstr "Ιδιοκτήτης"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Project"
-msgstr "Εργασία"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Publisher"
-msgstr "Συντάκτης"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Purpose"
-msgstr "Σκοπός"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Received from"
-msgstr "Λήφθηκε από"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Recorded by"
-msgstr "Καταγράφηκε από"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Recorded date"
-msgstr "Ημερομηνία καταγραφής"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Reference"
-msgstr "Αναφορά"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Source"
-msgstr "Πηγή"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Status"
-msgstr "Κατάσταση"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Telephone number"
-msgstr "Αριθμός τηλεφώνου"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Typist"
-msgstr "Δακτυλογράφος"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
-#, fuzzy
-msgid  "URL"
-msgstr "URL"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Text"
-msgstr "Κείμενο"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 #, fuzzy
 msgid  "DateTime"
 msgstr "Ημερομηνία ώρα"
 
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Date"
-msgstr "Ημερομηνία"
-
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
 #, fuzzy
 msgid  "Duration"
 msgstr "Διάρκεια"
 
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
-#, fuzzy
-msgid  "Number"
-msgstr "Αριθμός"
-
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
-#, fuzzy
 msgid  "Yes or no"
-msgstr "Ναι ή όχι "
+msgstr "Ναι ή όχι"
 
 #: dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.STRING.TEXT
 #, fuzzy
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "Yes"
-msgstr "Ναι"
-
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
-#, fuzzy
-msgid  "No"
-msgstr "Όχι"
-
-#: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
-#, fuzzy
-msgid  "Remove Property"
-msgstr "Αφαίρεση ιδιότητας"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
-#, fuzzy
-msgid  "Properties of "
-msgstr "Ιδιότητες του "
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "General"
-msgstr "Γενικά"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "Περιγραφή"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Custom Properties"
-msgstr "Προσαρμοσμένες ιδιότητες"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
-#, fuzzy
-msgid  "Internet"
-msgstr "Διαδίκτυο"
+#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr "Το ποσό που εισήχθηκε δεν ταιριάζει με τον διευκρινισμένο τύπο.\nΤο ποσό θα αποθηκευτεί ως κείμενο."
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 #, fuzzy
@@ -1829,11 +537,6 @@ msgstr "Ώ~ρες"
 msgid  "Min~utes"
 msgstr "Λε~πτά"
 
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Seconds"
-msgstr "Δε~υτερόλεπτα"
-
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Millise~conds"
@@ -1844,115 +547,48 @@ msgstr "Χιλιοστά δευτερο~λέπτου"
 msgid  "Edit Field Names"
 msgstr "Επεξεργασία ονόματος πληροφορίας"
 
-#: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Names"
-msgstr "Ονόματα"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Create Style"
-msgstr "Δημιουργία προτύπου"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Style name"
-msgstr "Όνομα στυλ"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
-#, fuzzy
-msgid  "Style already exists. Overwrite?"
-msgstr "Το πρότυπο υπάρχει ήδη. Να αντικατασταθεί;"
-
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
 #, fuzzy
 msgid  "Record Macro"
 msgstr "Καταγραφή Μακροεντολής"
 
 #: dialog/recfloat.src#STR_MACRO_LOSS.STRING.TEXT
-#, fuzzy
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
+msgstr "Είστε σίγουροι ότι θέλετε να ακυρώσετε την εγγραφή; Όλα τα καταγεγραμμένα βήματα μέχρι αυτό το σημείο θα χαθούν."
 
 #: dialog/recfloat.src#STR_CANCEL_RECORDING.STRING.TEXT
-#, fuzzy
 msgid  "Cancel Recording"
-msgstr "Cancel Recording"
+msgstr "Ακύρωση Έγγραφης"
 
 #: dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ERRORBOX.MESSAGE
-#, fuzzy
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr "Το %PRODUCTNAME δεν μπόρεσε να βρεί μια σωστή ρύθμιση e-mail. Παρακαλώ αποθηκεύστε αυτό το έγγραφο τοπικά και επισυνάψτε το από την εφαρμογή ηλ. αλληλογραφίας σας."
-
-#: dialog/dialog.src#STR_RESET.STRING.TEXT
-#, fuzzy
-msgid  "~Reset"
-msgstr "Επανα~φορά"
-
-#: dialog/dialog.src#STR_APPLY.STRING.TEXT
-#, fuzzy
-msgid  "Apply"
-msgstr "Εφαρμογή"
-
-#: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
-#, fuzzy
-msgid  "Organizer"
-msgstr "Διαχείριση"
+msgstr "%PRODUCTNAME δεν μπόρεσε να βρεί μια σωστή ρύθμιση e-mail. Παρακαλώ αποθηκεύστε αυτό το έγγραφο τοπικά και επισυνάψτε το από την εφαρμογή ηλ. αλληλογραφίας σας."
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
 #, fuzzy
 msgid  "This name is already in use."
 msgstr "Το όνομα αυτό χρησιμοποιείται ήδη για ένα πρότυπο."
 
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "This Style does not exist."
-msgstr "Το πρότυπο δεν υπάρχει."
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr "Δεν είναι δυνατόν να χρησιμοποιηθεί αυτό πρότυπο ως βασικό πρότυπο\nεπειδή προκύπτει μία αναδρομική λειτουργία."
+
+#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr "Το όνομα αυτό υπάρχει ήδη ως όνομα προτύπου προεπιλογής.\nΠαρακαλώ επιλέξτε άλλο όνομα."
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
-#, fuzzy
 msgid  "Do you really want to delete Style $1?"
-msgstr "Θέλετε σίγουρα να διαγράψετε το πρότυπο $1?"
-
-#: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
-#, fuzzy
-msgid  "You are deleting an applied Style!\n"
-msgstr "Διαγράφετε ένα πρότυπο που εφαρμόστηκε!\n"
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
-#, fuzzy
-msgid  "New..."
-msgstr "Δημιουργία..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
-#, fuzzy
-msgid  "Modify..."
-msgstr "Τροποποίηση..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Delete..."
-msgstr "Διαγραφή..."
-
-#: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
-#, fuzzy
-msgid  "Navigator"
-msgstr "Περιήγηση"
+msgstr "Θέλετε σίγουρα να διαγράψετε το πρότυπο $1;"
 
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 #, fuzzy
 msgid  "Task Pane"
 msgstr "Πίνακας εργασιών"
 
-#: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
-#, fuzzy
-msgid  "Faulty password confirmation"
-msgstr "Εσφαλμένη επιβεβαίωση του κωδικού πρόσβασης"
-
-#: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
-#, fuzzy
-msgid  "Send"
-msgstr "Αποστολή"
+#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
+msgid  "Sidebar"
+msgstr "Πλευρική μπάρα"
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 #, fuzzy
@@ -1984,488 +620,258 @@ msgstr "Αυτό το έγγραφο μπορεί να περιέχει μορφ
 msgid  "~Keep Current Format"
 msgstr "~Διατήρηση τρέχουσας μορφής"
 
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "~Save in ODF Format"
-msgstr "Απο~θήκευση σε μορφή ODF"
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
-#, fuzzy
-msgid  "~More Information..."
-msgstr "Πρό~σθετες πληροφορίες..."
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Ask when not saving in ODF format"
-msgstr "Ε~ρώτηση όταν δεν γίνεται αποθήκευση σε μορφή ODF"
-
-#: view/view.src#STR_NODEFPRINTER.STRING.TEXT
-#, fuzzy
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "Δεν βρέθηκε προεπιλεγμένος εκτυπωτής.\nΠαρακαλώ επιλέξτε έναν εκτυπωτή και προσπαθήστε ξανά."
-
-#: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
-#, fuzzy
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "Δεν ήταν δυνατόν να τεθεί σε λειτουργία ο εκτυπωτής.\nΠαρακαλώ ελέγξτε τις ρυθμίσεις του."
-
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
-#, fuzzy
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr "Το έγγραφο έχει διαμορφωθεί για τον εκτυπωτή $1. Ο εκτυπωτής αυτός δεν είναι διαθέσιμος. Να χρησιμοποιηθεί ο προεπιλεγμένος εκτυπωτής $2;"
-
-#: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "Options..."
-msgstr "Επιλογές..."
-
-#: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
-#, fuzzy
-msgid  "Printer Options"
-msgstr "Επιλογές εκτυπωτή"
-
-#: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
-#, fuzzy
-msgid  "Printer busy"
-msgstr "Ο εκτυπωτής είναι απασχολημένος"
-
-#: view/view.src#STR_ERROR_PRINT.STRING.TEXT
-#, fuzzy
-msgid  "Error while printing"
-msgstr "Σφάλμα κατά την εκτύπωση"
-
-#: view/view.src#STR_PRINTING.STRING.TEXT
-#, fuzzy
-msgid  "Printing"
-msgstr "Εκτύπωση"
-
-#: view/view.src#STR_PAGE.STRING.TEXT
-#, fuzzy
-msgid  "Page "
-msgstr "Σελίδα "
-
-#: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-#, fuzzy
-msgid  "Error saving template "
-msgstr "Σφάλμα κατά την αποθήκευση του προτύπου "
+msgstr "Το έγγραφο έχει διαμορφωθεί για τον εκτυπωτή $1. Ο εκτυπωτής αυτός δεν είναι διαθέσιμος. \nΝα χρησιμοποιηθεί ο προεπιλεγμένος εκτυπωτής $2;"
 
 #: view/view.src#STR_READONLY.STRING.TEXT
-#, fuzzy
 msgid  " (read-only)"
-msgstr "(μόνο για ανάγνωση)"
+msgstr " (μόνο για ανάγνωση)"
 
 #: view/view.src#STR_PRINT_NEWORI.STRING.TEXT
-#, fuzzy
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr "Έχετε αλλάξει το μέγεθος και τον \nπροσανατολισμό της σελίδας.\nΘέλετε να αποθηκευτούν οι νέες \nρυθμίσεις στο τρέχον έγγραφο;"
+msgstr "Έχετε αλλάξει το μέγεθος και τον προσανατολισμό της σελίδας.\nΘέλετε να αποθηκευτούν οι νέες \nρυθμίσεις στο τρέχον έγγραφο;"
 
 #: view/view.src#STR_PRINT_NEWSIZE.STRING.TEXT
-#, fuzzy
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr "Αλλάξατε το μέγεθος της σελίδας.\nΝα εφαρμοστεί αυτή η αλλαγή στο έγγραφο;"
+msgstr "Αλλάξατε το μέγεθος της σελίδας.\nΝα εφαρμοστεί αυτή η αλλαγή\nστο έγγραφο;"
 
 #: view/view.src#STR_PREVIEW_DOCINFO.STRING.TEXT
 #, fuzzy
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Τίτλος:</b><dd>$(TITEL)<dt><b>Θέμα:</b><dd>$(THEME)<dt><b>Λέξεις-κλειδιά:</b><dd>$(KEYWORDS)<dt><b>Περιγραφή:</b><dd>$(TEXT)</dl></font></body></html>"
 
-#: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
-#, fuzzy
-msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Δεν βρέθηκαν ιδιότητες εγγράφου.</B></FONT></P></BODY></HTML>"
+#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr "Δεν είναι δυνατόν να κλείσετε αυτό το έγγραφο\n επειδή εκτελείται μια εργασία εκτύπωσης."
 
-#: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
-#, fuzzy
-msgid  "Print Monitor"
-msgstr "Εκτύπωση οθόνης"
-
-#: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "is being printed on"
-msgstr "εκτυπώνεται στο"
-
-#: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
-#, fuzzy
-msgid  "is being prepared for printing"
-msgstr "προετοιμάζεται για εκτύπωση"
+#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr "Παρουσιάστηκε σφάλμα κατά την αποστολή του μηνύματος. Αυτό μπορεί να συμβαίνει επειδή δεν υπάρχει λογαριασμός χρήστη ή επειδή η εγκατάσταση είναι ελαττωματική.\nΕλέγξτε τις ρυθμίσεις του %PRODUCTNAME ή του προγράμματος ηλεκτρονικού ταχυδρομείου."
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
-#, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr "Δεν είναι δυνατό το άνοιγμα του εγγράφου για επεξεργασία, πιθανώς λόγω \nέλλειψης δικαιωμάτων πρόσβασης. Θέλετε να το χρησιμοποιήσετε ως πρότυπο\nγια για ένα νέο έγγραφο;"
-
-#: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
-#, fuzzy
-msgid  " (repaired document)"
-msgstr " (επιδιορθωμένο έγγραφο)"
+msgstr "Δεν είναι δυνατό το άνοιγμα του εγγράφου για επεξεργασία, πιθανώς λόγω έλλειψης δικαιωμάτων πρόσβασης. Θέλετε να το χρησιμοποιήσετε ως πρότυπο για ένα νέο έγγραφο;"
 
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
-#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr "Δεν ήταν δυνατή η εύρεση περιηγητή δικτύου στο σύστημα σας από το %PRODUCTNAME. Παρακαλώ ελέγξτε τις Προτιμήσεις στην επιφάνεια εργασίας σας ή εγκαταστήστε έναν περιηγητή δικτύου (για παράδειγμα, το Mozilla) στην προεπιλεγμένη τοποθεσία που απαιτείται κατά τη διάρκεια της εγκατάστασης του περιηγητή."
+msgstr "Δεν ήταν δυνατή η εύρεση περιηγητή δικτύου στο σύστημα σας από το %PRODUCTNAME. Παρακαλώ ελέγξτε τις Προτιμήσεις στην επιφάνεια εργασίας σας ή εγκαταστήστε έναν περιηγητή δικτύου (για παράδειγμα, το Mozilla) στην προεπιλεγμένη  τοποθεσία που απαιτείται κατά τη διάρκεια της εγκατάστασης του περιηγητή."
 
-#: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
-msgid  "Modify Link"
-msgstr "Τροποποίηση δεσμού"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
+msgid  "Customization"
+msgstr "Προσαρμογή"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
-msgid  "~Application:"
-msgstr "Ε~φαρμογή:"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
+msgid  "Restore Default"
+msgstr "Επαναφορά Προεπιλογών"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
-msgid  "~File:"
-msgstr "Αρ~χείο:"
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
+msgid  "More Options"
+msgstr "Περισσότερες Επιλογές"
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
+msgid  "Close Sidebar Deck"
+msgstr "Κλείσιμο Πλευρικής Εργαλειοθήκης"
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
+msgid  "Panel: "
+msgstr "Πίνακας: "
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Category:"
 msgstr "~Κατηγορία:"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
-msgid  "Modify link"
-msgstr "Τροποποίηση σύνδεσης"
-
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
 msgid  "%PRODUCTNAME"
-msgstr ""
+msgstr "%PRODUCTNAME"
 
 #: appl/app.src#STR_NONAME.STRING.TEXT
 msgid  "Untitled"
-msgstr ""
+msgstr "Ανώνυμο"
 
 #: appl/app.src#STR_CLOSE.STRING.TEXT
 msgid  "Close"
-msgstr ""
+msgstr "Κλείσιμο"
 
 #: appl/app.src#STR_STYLE_FILTER_AUTO.STRING.TEXT
 msgid  "Automatic"
-msgstr ""
+msgstr "Αυτόματο"
 
 #: appl/app.src#STR_STANDARD_SHORTCUT.STRING.TEXT
 msgid  "Standard"
-msgstr ""
+msgstr "Βασική"
 
 #: appl/app.src#STR_BYTES.STRING.TEXT
 msgid  "Bytes"
-msgstr ""
+msgstr "Bytes"
 
 #: appl/app.src#STR_KB.STRING.TEXT
 msgid  "KB"
-msgstr ""
+msgstr "KB"
 
 #: appl/app.src#STR_MB.STRING.TEXT
 msgid  "MB"
-msgstr ""
+msgstr "MB"
 
 #: appl/app.src#STR_GB.STRING.TEXT
 msgid  "GB"
-msgstr ""
+msgstr "GB"
 
 #: appl/app.src#MSG_QUERY_LASTVERSION.QUERYBOX.MESSAGE
 msgid  "Cancel all changes?"
-msgstr ""
-
-#: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
-msgid  "Document already open."
-msgstr "Το έγγραφο είναι ήδη ανοικτό."
+msgstr "Ακύρωση όλων των αλλαγών;"
 
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr "Δεν ήταν δυνατή η εύρεση περιηγητή δικτύου στο σύστημα σας από το %PRODUCTNAME. Παρακαλώ ελέγξτε τις Προτιμήσεις στην επιφάνεια εργασίας σας ή εγκαταστήστε έναν περιηγητή δικτύου (για παράδειγμα, το Mozilla) στην προεπιλεγμένη τοποθεσία που απαιτείται κατά τη διάρκεια της εγκατάστασης του περιηγητή."
-
-#: appl/app.src#GID_INTERN.STRING.TEXT
-msgid  "Internal"
-msgstr "Εσωτερικά"
-
-#: appl/app.src#GID_APPLICATION.STRING.TEXT
-msgid  "Application"
-msgstr "Εφαρμογή"
-
-#: appl/app.src#GID_VIEW.STRING.TEXT
-msgid  "View"
-msgstr "Προβολή"
-
-#: appl/app.src#GID_DOCUMENT.STRING.TEXT
-msgid  "Documents"
-msgstr "Έγγραφα"
-
-#: appl/app.src#GID_EDIT.STRING.TEXT
-msgid  "Edit"
-msgstr "Επεξεργασία"
-
-#: appl/app.src#GID_MACRO.STRING.TEXT
-msgid  "BASIC"
-msgstr "BASIC"
+msgstr "Δεν ήταν δυνατή η εύρεση περιηγητή δικτύου στο σύστημα σας από το %PRODUCTNAME. Παρακαλώ ελέγξτε τις Προτιμήσεις στην επιφάνεια εργασίας σας ή εγκαταστήστε έναν περιηγητή δικτύου (για παράδειγμα, το Mozilla) στην προεπιλεγμένη  τοποθεσία που απαιτείται κατά τη διάρκεια της εγκατάστασης του περιηγητή."
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options"
 msgstr "Επιλογές"
 
 #: appl/app.src#GID_MATH.STRING.TEXT
+#, fuzzy
 msgid  "Math"
 msgstr "Math"
 
-#: appl/app.src#GID_NAVIGATOR.STRING.TEXT
-msgid  "Navigate"
-msgstr "Περιήγηση"
-
-#: appl/app.src#GID_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Εισαγωγή"
-
-#: appl/app.src#GID_FORMAT.STRING.TEXT
-msgid  "Format"
-msgstr "Μορφή"
-
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Templates"
 msgstr "Πρότυπα"
 
-#: appl/app.src#GID_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr "Κείμενο"
-
-#: appl/app.src#GID_FRAME.STRING.TEXT
-msgid  "Frame"
-msgstr "Πλαίσιο"
-
-#: appl/app.src#GID_GRAPHIC.STRING.TEXT
-#, fuzzy
-msgid  "Graphic"
-msgstr "Γραφικό"
-
-#: appl/app.src#GID_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Πίνακας"
-
-#: appl/app.src#GID_ENUMERATION.STRING.TEXT
-msgid  "Numbering"
-msgstr "Αρίθμηση"
-
-#: appl/app.src#GID_DATA.STRING.TEXT
-msgid  "Data"
-msgstr "Δεδομένα"
-
-#: appl/app.src#GID_SPECIAL.STRING.TEXT
-msgid  "Special Functions"
-msgstr "Ειδικές λειτουργίες"
-
 #: appl/app.src#GID_IMAGE.STRING.TEXT
+#, fuzzy
 msgid  "Image"
 msgstr "Εικόνα"
 
 #: appl/app.src#GID_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Chart"
 msgstr "Διάγραμμα"
 
-#: appl/app.src#GID_EXPLORER.STRING.TEXT
-msgid  "Explorer"
-msgstr "Εξερευνητής"
-
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
+#, fuzzy
 msgid  "Connector"
 msgstr "Γραμμή σύνδεσης"
 
-#: appl/app.src#GID_MODIFY.STRING.TEXT
-msgid  "Modify"
-msgstr "Τροποποίηση"
-
-#: appl/app.src#GID_DRAWING.STRING.TEXT
-msgid  "Drawing"
-msgstr "Σχεδίαση"
-
-#: appl/app.src#GID_CONTROLS.STRING.TEXT
-msgid  "Controls"
-msgstr "Στοιχεία ελέγχου"
-
-#: appl/app.src#STR_ISMODIFIED.STRING.TEXT
-msgid  "Do you want to save the changes to %1?"
-msgstr "Θέλετε να αποθηκευτούν οι αλλαγές στο %1;"
-
-#: appl/app.src#STR_QUITAPP.STRING.TEXT
-msgid  "E~xit"
-msgstr "Έ~ξοδος"
-
-#: appl/app.src#RID_STR_HELP.STRING.TEXT
-msgid  "Help"
-msgstr "Βοήθεια"
-
-#: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
-msgid  "No automatic start at 'XX'"
-msgstr "Όχι αυτόματη εκκίνηση στο 'XX'"
-
-#: appl/app.src#RID_HELPBAR.STRING.TEXT
-msgid  "Help Bar"
-msgstr "Γραμμή βοήθειας"
-
-#: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
-msgid  "The help file for this topic is not installed."
-msgstr "Δεν έχει γίνει εγκατάσταση της βοήθειας για αυτό το θέμα."
-
-#: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
-msgid  "Function Bar"
-msgstr "Γραμμή λειτουργιών"
+#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr "Προς το παρόν είναι αδύνατον να τερματιστεί αυτή η εφαρμογή.\nΠαρακαλώ περιμένετε μέχρι να εκτελεστούν όλες οι εργασίες εκτύπωσης και/ή\nOLE ενέργειες έχουν ολοκληρωθεί και κλείστε όλα τα παράθυρα διαλόγου."
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr "Παρουσιάστηκε σφάλμα στην ειδική διαμόρφωση.\nΠαρακαλώ απευθυνθείτε στον διαχειριστή του δικτύου."
 
-#: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
-msgid  "Exit Quickstarter"
-msgstr "Έξοδος από την γρήγορη εκκίνηση"
-
-#: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "Γρήγορη εκκίνηση του %PRODUCTNAME %PRODUCTVERSION"
-
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
 msgid  "Open Document..."
-msgstr "Αποθήκευση εγγράφου"
-
-#: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
-msgid  "From Template..."
-msgstr "Από πρότυπο..."
-
-#: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
-msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr "Φόρτωση του %PRODUCTNAME κατά την εκκίνηση του συστήματος"
+msgstr "Άνοιγμα Εγγράφου..."
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
 msgid  "Disable Quickstarter"
-msgstr "Έξοδος από την γρήγορη εκκίνηση"
-
-#: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
-msgid  "File"
-msgstr "Αρχείο"
-
-#: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
-msgid  "Startcenter"
-msgstr "Startcenter"
+msgstr "Απενεργοποίηση Γρήγορης Εκκίνησης"
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
+#, fuzzy
 msgid  "Recent Documents"
 msgstr "Πρόσφατα έγγραφα"
 
-#: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
-msgid  "Update all links?"
-msgstr "Ενημέρωση όλων των συνδέσεων;"
-
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
 msgid  "DDE link to % for % area % are not available."
-msgstr "Δεν είναι δυνατόν να δημιουργηθεί η σύνδεση DDE προς % για % περιοχή %."
+msgstr "Δεν είναι δυνατόν να δημιουργηθεί η σύνδεση προς % για % περιοχή % DDE."
 
 #: appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WARNINGBOX.MESSAGE
+#, fuzzy
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "Ο δεσμός πρόκειται να ανοίξει το \"%s\". Θέλετε να συνεχίσετε;"
 
-#: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
-msgid  "Security Warning"
-msgstr "Προειδοποίηση ασφαλείας"
+#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr "Για λόγους ασφαλείας δεν είναι δυνατή η εκτέλεση της υπερσύνδεσης.\nΔεν είναι δυνατό το άνοιγμα της διεύθυνσης."
+
+#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr "Η αποθήκευση θα απομακρύνει όλες τις υπάρχουσες υπογραφές.\nΘέλετε να συνεχίσετε με την αποθήκευση του εγγράφου;"
+
+#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr "Το έγγραφο πρέπει να αποθηκευτεί πριν την υπογραφή.\nΘέλετε να αποθηκεύσετε το έγγραφο;"
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr "Το έγγραφο πρέπει να αποθηκευτεί σε μορφή αρχείου OpenDocument  πριν να υπογραφεί ψηφιακά."
+msgstr "Το έγγραφο πρέπει να αποθηκευτεί σε μορφή αρχείου OpenDocument πριν να υπογραφεί ψηφιακά."
 
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
 msgid  " (Signed)"
-msgstr "(Υπογεγραμμένο) "
-
-#: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
-msgid  "Document"
-msgstr "Έγγραφο"
+msgstr " (Υπογεγραμμένο)"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
 msgid  "- None -"
-msgstr ""
+msgstr "- Κανένα -"
 
 #: appl/app.src#STR_SFX_FILTERNAME_ALL.STRING.TEXT
 msgid  "All files (*.*)"
-msgstr ""
+msgstr "All files (*.*)"
 
 #: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
+#, fuzzy
 msgid  "Link graphics"
 msgstr "Σύνδεση γραφικών"
 
 #: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
 msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr ""
+msgstr "Μια κατάλληλη μέθοδος στοιχείου %1\nδε μπορεί να βρεθεί.\n\nΕλέγξτε την ορθογραφία του ονόματος μεθόδου."
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics file cannot be opened"
 msgstr "Δεν είναι δυνατόν το άνοιγμα του αρχείου γραφικών"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics file cannot be read"
 msgstr "Αδυναμία ανάγνωσης του αρχείου γραφικών"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.STRING.TEXT
+#, fuzzy
 msgid  "Unknown graphics format"
 msgstr "Άγνωστος τύπος γραφικών"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.STRING.TEXT
+#, fuzzy
 msgid  "This version of the graphics file is not supported"
 msgstr "Αυτή η έκδοση του αρχείου γραφικών δεν υποστηρίζεται"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics filter not found"
 msgstr "Δεν βρέθηκε το φίλτρο γραφικών"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.STRING.TEXT
+#, fuzzy
 msgid  "Not enough memory to insert graphic"
 msgstr "Δεν υπάρχει αρκετή μνήμη για την εισαγωγή γραφικού"
 
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
-msgid  "Contents"
-msgstr "Περιεχόμενα"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
-msgid  "Index"
-msgstr "Ευρετήριο"
-
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Find"
 msgstr "Εύρεση"
 
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
-msgid  "Bookmarks"
-msgstr "Σελιδοδείκτες"
-
-#: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
-msgid  "~Search term"
-msgstr "Όρος αναζήτη~σης"
-
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
-#, fuzzy
 msgid  "~Display"
 msgstr "Εμ~φάνιση"
-
-#: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "S~earch term"
-msgstr "Όρος αναζήτη~σης"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "~Find"
 msgstr "Εύ~ρεση"
 
-#: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Complete words only"
-msgstr "~Μόνο ολόκληρες λέξεις"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
 #, fuzzy
 msgid  "Find in ~headings only"
 msgstr "Εύρεση μόνο στις ~επικεφαλίδες"
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Bookmarks"
-msgstr "~Σελιδοδείκτες"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
 #, fuzzy
@@ -2482,95 +888,23 @@ msgstr "Εμφάνιση παραθύρου περιήγησης"
 msgid  "Hide Navigation Pane"
 msgstr "Απόκρυψη παραθύρου περιήγησης"
 
-#: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
-#, fuzzy
-msgid  "First Page"
-msgstr "Πρώτη σελίδα"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
-#, fuzzy
-msgid  "Previous Page"
-msgstr "Προηγούμενη σελίδα"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
-#, fuzzy
-msgid  "Next Page"
-msgstr "Επόμενη σελίδα"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
-#, fuzzy
-msgid  "Print..."
-msgstr "Εκτύπωση..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
-#, fuzzy
-msgid  "Add to Bookmarks..."
-msgstr "Προσθήκη στους σελιδοδείκτες..."
-
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
 #, fuzzy
 msgid  "Find on this Page..."
 msgstr "Εύρεση σε αυτήν τη σελίδα..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
-#, fuzzy
-msgid  "HTML Source"
-msgstr "Κώδικας HTML"
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
 #, fuzzy
 msgid  "The Help is being started..."
 msgstr "Γίνεται εκκίνηση της Βοήθειας..."
 
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
-#, fuzzy
-msgid  "Select Text"
-msgstr "Επιλογή Κειμένου"
-
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
-#, fuzzy
-msgid  "~Copy"
-msgstr "Αντι~γραφή"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "Add to Bookmarks"
-msgstr "Προσθήκη στους σελιδοδείκτες"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Bookmark:"
-msgstr "Σελιδοδείκτης:"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
-#, fuzzy
-msgid  "Rename Bookmark"
-msgstr "Μετονομασία σελιδοδείκτη"
-
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
-#, fuzzy
 msgid  "Display"
-msgstr "Εμφάνιση..."
-
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
-#, fuzzy
-msgid  "Rename..."
-msgstr "Μετονομασία..."
-
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
-#, fuzzy
-msgid  "Delete"
-msgstr "Διαγραφή"
+msgstr "Εμφάνιση"
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
-#, fuzzy
 msgid  "No topics found."
-msgstr "Δεν βρέθηκαν θέματα"
-
-#: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
-#, fuzzy
-msgid  "The text you entered was not found."
-msgstr "Το κείμενο που εισαγάγατε δεν βρέθηκε."
+msgstr "Δεν βρέθηκαν θέματα."
 
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
 #, fuzzy

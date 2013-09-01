@@ -31,21 +31,9 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.1.STRING.TEXT
-msgid  "Calculates the number of weeks in a specific period"
-msgstr "Denboraldi jakin bateko aste kopurua kalkulatzen du"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.2.STRING.TEXT
-msgid  "Start date"
-msgstr "Hasiera-data"
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.3.STRING.TEXT
 msgid  "First day of the period"
 msgstr "Denboraldiaren lehen eguna"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.4.STRING.TEXT
-msgid  "End date"
-msgstr "Amaiera-data"
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.5.STRING.TEXT
 msgid  "Last day of the period"
@@ -54,34 +42,6 @@ msgstr "Denboraldiaren azken eguna"
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.6.STRING.TEXT
 msgid  "Type"
 msgstr "Mota"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFWEEKS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr "Kalkulu mota: mota=0 denbora-tartea da, mota=1 egutegiko asteak."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.1.STRING.TEXT
-msgid  "Determines the number of months in a specific period."
-msgstr "Denboraldi jakin bateko hilabete kopurua kalkulatzen du"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.3.STRING.TEXT
-msgid  "First day of the period."
-msgstr "Denboraldiaren lehen eguna."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.5.STRING.TEXT
-msgid  "Last day of the period."
-msgstr "Denboraldiaren azken eguna."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFMONTHS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr "Kalkulu mota: mota=0 denbora-tartea da, mota=1 egutegiko hilabeteak."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.1.STRING.TEXT
-msgid  "Calculates the number of years in a specific period."
-msgstr "Denboraldi jakin bateko urte kopurua kalkulatzen du"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DIFFYEARS.7.STRING.TEXT
-msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr "Kalkulu mota: mota=0 denbora-tartea da, mota=1 egutegiko urteak."
 
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ISLEAPYEAR.1.STRING.TEXT
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
@@ -99,46 +59,6 @@ msgstr "Nahi den urteko edozein egun"
 msgid  "Returns the number of days of the month in which the date entered occurs"
 msgstr "Adierazitako datako hilabeteak zenbat egun dituen esaten du"
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINMONTH.3.STRING.TEXT
-msgid  "Any day in the desired month"
-msgstr "Nahi den hilabeteko edozein egun"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DAYSINYEAR.1.STRING.TEXT
-msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr "Adierazitako datako urteak zenbat egun dituen esaten du."
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WEEKSINYEAR.1.STRING.TEXT
-msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr "Adierazitako datako urteak zenbat aste dituen esaten du"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.1.STRING.TEXT
-msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr "Testu bat enkriptatzen edo desenkriptatzen du, ROT13 algoritmoaren bidez"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.2.STRING.TEXT
-msgid  "Text"
-msgstr "Testua"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_ROT13.3.STRING.TEXT
-msgid  "Text to be encrypted or text already encrypted"
-msgstr "Enkriptatu beharreko testua edo enkriptatuta dagoena"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFWEEKS.STRING.TEXT
-msgid  "WEEKS"
-msgstr "WEEKS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFMONTHS.STRING.TEXT
-msgid  "MONTHS"
-msgstr "MONTHS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DIFFYEARS.STRING.TEXT
-msgid  "YEARS"
-msgstr "YEARS"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ISLEAPYEAR.STRING.TEXT
-msgid  "ISLEAPYEAR"
-msgstr "ISLEAPYEAR"
-
 #: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DAYSINMONTH.STRING.TEXT
 msgid  "DAYSINMONTH"
 msgstr "DAYSINMONTH"
@@ -147,193 +67,9 @@ msgstr "DAYSINMONTH"
 msgid  "DAYSINYEAR"
 msgstr "DAYSINYEAR"
 
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WEEKSINYEAR.STRING.TEXT
-msgid  "WEEKSINYEAR"
-msgstr "WEEKSINYEAR"
-
-#: datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_ROT13.STRING.TEXT
-msgid  "ROT13"
-msgstr "ROT13"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WORKDAY.STRING.TEXT
-msgid  "WORKDAY"
-msgstr "WORKDAY"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YEARFRAC.STRING.TEXT
-msgid  "YEARFRAC"
-msgstr "YEARFRAC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EDATE.STRING.TEXT
-msgid  "EDATE"
-msgstr "EDATE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_WEEKNUM.STRING.TEXT
-msgid  "WEEKNUM"
-msgstr "WEEKNUM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EOMONTH.STRING.TEXT
-msgid  "EOMONTH"
-msgstr "EOMONTH"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NETWORKDAYS.STRING.TEXT
-msgid  "NETWORKDAYS"
-msgstr "NETWORKDAYS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORDEGRC.STRING.TEXT
-msgid  "AMORDEGRC"
-msgstr "AMORDEGRC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_AMORLINC.STRING.TEXT
-msgid  "AMORLINC"
-msgstr "AMORLINC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINT.STRING.TEXT
-msgid  "ACCRINT"
-msgstr "ACCRINT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ACCRINTM.STRING.TEXT
-msgid  "ACCRINTM"
-msgstr "ACCRINTM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RECEIVED.STRING.TEXT
-msgid  "RECEIVED"
-msgstr "RECEIVED"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DISC.STRING.TEXT
-msgid  "DISC"
-msgstr "DISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DURATION.STRING.TEXT
-msgid  "DURATION"
-msgstr "DURATION"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_EFFECT.STRING.TEXT
-msgid  "EFFECT"
-msgstr "EFFECT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMPRINC.STRING.TEXT
-msgid  "CUMPRINC"
-msgstr "CUMPRINC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CUMIPMT.STRING.TEXT
-msgid  "CUMIPMT"
-msgstr "CUMIPMT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICE.STRING.TEXT
-msgid  "PRICE"
-msgstr "PRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEDISC.STRING.TEXT
-msgid  "PRICEDISC"
-msgstr "PRICEDISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_PRICEMAT.STRING.TEXT
-msgid  "PRICEMAT"
-msgstr "PRICEMAT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MDURATION.STRING.TEXT
-msgid  "MDURATION"
-msgstr "MDURATION"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_NOMINAL.STRING.TEXT
-msgid  "NOMINAL"
-msgstr "NOMINAL"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARFR.STRING.TEXT
-msgid  "DOLLARFR"
-msgstr "DOLLARFR"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DOLLARDE.STRING.TEXT
-msgid  "DOLLARDE"
-msgstr "DOLLARDE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELD.STRING.TEXT
-msgid  "YIELD"
-msgstr "YIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDDISC.STRING.TEXT
-msgid  "YIELDDISC"
-msgstr "YIELDDISC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_YIELDMAT.STRING.TEXT
-msgid  "YIELDMAT"
-msgstr "YIELDMAT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLEQ.STRING.TEXT
-msgid  "TBILLEQ"
-msgstr "TBILLEQ"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLPRICE.STRING.TEXT
-msgid  "TBILLPRICE"
-msgstr "TBILLPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_TBILLYIELD.STRING.TEXT
-msgid  "TBILLYIELD"
-msgstr "TBILLYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFPRICE.STRING.TEXT
-msgid  "ODDFPRICE"
-msgstr "ODDFPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDFYIELD.STRING.TEXT
-msgid  "ODDFYIELD"
-msgstr "ODDFYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLPRICE.STRING.TEXT
-msgid  "ODDLPRICE"
-msgstr "ODDLPRICE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ODDLYIELD.STRING.TEXT
-msgid  "ODDLYIELD"
-msgstr "ODDLYIELD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XIRR.STRING.TEXT
-msgid  "XIRR"
-msgstr "XIRR"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_XNPV.STRING.TEXT
-msgid  "XNPV"
-msgstr "XNPV"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_INTRATE.STRING.TEXT
-msgid  "INTRATE"
-msgstr "INTRATE"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNCD.STRING.TEXT
-msgid  "COUPNCD"
-msgstr "COUPNCD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYS.STRING.TEXT
-msgid  "COUPDAYS"
-msgstr "COUPDAYS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYSNC.STRING.TEXT
-msgid  "COUPDAYSNC"
-msgstr "COUPDAYSNC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPDAYBS.STRING.TEXT
-msgid  "COUPDAYBS"
-msgstr "COUPDAYBS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPPCD.STRING.TEXT
-msgid  "COUPPCD"
-msgstr "COUPPCD"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COUPNUM.STRING.TEXT
-msgid  "COUPNUM"
-msgstr "COUPNUM"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FVSCHEDULE.STRING.TEXT
-msgid  "FVSCHEDULE"
-msgstr "FVSCHEDULE"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISEVEN.STRING.TEXT
 msgid  "ISEVEN"
 msgstr "ISEVEN"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ISODD.STRING.TEXT
-msgid  "ISODD"
-msgstr "ISODD"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GCD.STRING.TEXT
 msgid  "GCD"
@@ -343,45 +79,9 @@ msgstr "GCD"
 msgid  "LCM"
 msgstr "LCM"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MULTINOMIAL.STRING.TEXT
-msgid  "MULTINOMIAL"
-msgstr "MULTINOMIAL"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SERIESSUM.STRING.TEXT
-msgid  "SERIESSUM"
-msgstr "SERIESSUM"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_QUOTIENT.STRING.TEXT
 msgid  "QUOTIENT"
 msgstr "QUOTIENT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_MROUND.STRING.TEXT
-msgid  "MROUND"
-msgstr "MROUND"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_SQRTPI.STRING.TEXT
-msgid  "SQRTPI"
-msgstr "SQRTPI"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_RANDBETWEEN.STRING.TEXT
-msgid  "RANDBETWEEN"
-msgstr "RANDBETWEEN"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELI.STRING.TEXT
-msgid  "BESSELI"
-msgstr "BESSELI"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELJ.STRING.TEXT
-msgid  "BESSELJ"
-msgstr "BESSELJ"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELK.STRING.TEXT
-msgid  "BESSELK"
-msgstr "BESSELK"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BESSELY.STRING.TEXT
-msgid  "BESSELY"
-msgstr "BESSELY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_BIN2DEC.STRING.TEXT
 msgid  "BIN2DEC"
@@ -395,10 +95,6 @@ msgstr "BIN2HEX"
 msgid  "BIN2OCT"
 msgstr "BIN2OCT"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DELTA.STRING.TEXT
-msgid  "DELTA"
-msgstr "DELTA"
-
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2BIN.STRING.TEXT
 msgid  "DEC2BIN"
 msgstr "DEC2BIN"
@@ -410,18 +106,6 @@ msgstr "DEC2HEX"
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_DEC2OCT.STRING.TEXT
 msgid  "DEC2OCT"
 msgstr "DEC2OCT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERF.STRING.TEXT
-msgid  "ERF"
-msgstr "ERF"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_ERFC.STRING.TEXT
-msgid  "ERFC"
-msgstr "ERFC"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_GESTEP.STRING.TEXT
-msgid  "GESTEP"
-msgstr "GESTEP"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_HEX2BIN.STRING.TEXT
 msgid  "HEX2BIN"
@@ -438,10 +122,6 @@ msgstr "HEX2OCT"
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMABS.STRING.TEXT
 msgid  "IMABS"
 msgstr "IMABS"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMAGINARY.STRING.TEXT
-msgid  "IMAGINARY"
-msgstr "IMAGINARY"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMPOWER.STRING.TEXT
 msgid  "IMPOWER"
@@ -503,9 +183,37 @@ msgstr "IMSUM"
 msgid  "IMSQRT"
 msgstr "IMSQRT"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_COMPLEX.STRING.TEXT
-msgid  "COMPLEX"
-msgstr "COMPLEX"
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMTAN.STRING.TEXT
+msgid  "IMTAN"
+msgstr "IMTAN"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSEC.STRING.TEXT
+msgid  "IMSEC"
+msgstr "IMSEC"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSC.STRING.TEXT
+msgid  "IMCSC"
+msgstr "IMCSC"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOT.STRING.TEXT
+msgid  "IMCOT"
+msgstr "IMCOT"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSINH.STRING.TEXT
+msgid  "IMSINH"
+msgstr "IMSINH"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCOSH.STRING.TEXT
+msgid  "IMCOSH"
+msgstr "IMCOSH"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMSECH.STRING.TEXT
+msgid  "IMSECH"
+msgstr "IMSECH"
+
+#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_IMCSCH.STRING.TEXT
+msgid  "IMCSCH"
+msgstr "IMCSCH"
 
 #: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_OCT2BIN.STRING.TEXT
 msgid  "OCT2BIN"
@@ -519,41 +227,17 @@ msgstr "OCT2DEC"
 msgid  "OCT2HEX"
 msgstr "OCT2HEX"
 
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_CONVERT.STRING.TEXT
-msgid  "CONVERT"
-msgstr "CONVERT"
-
-#: analysis/analysis_funcnames.src#RID_ANALYSIS_FUNCTION_NAMES.ANALYSIS_FUNCNAME_FACTDOUBLE.STRING.TEXT
-msgid  "FACTDOUBLE"
-msgstr "FACTDOUBLE"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.1.STRING.TEXT
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
 msgstr "Zehaztutako lanegun kopuruaren aurreko edo ondorengo dataren serie-zenbakia ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.2.STRING.TEXT
-msgid  "Start date"
-msgstr "Hasiera-data"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.3.STRING.TEXT
 msgid  "The start date"
 msgstr "Hasierako data"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.4.STRING.TEXT
-msgid  "Days"
-msgstr "Egunak"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.5.STRING.TEXT
-msgid  "The number of workdays before or after the start date"
-msgstr "Zenbat lanegun hasiera-dataren aurretik edo ondoren."
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.6.STRING.TEXT
 msgid  "Holidays"
 msgstr "Jaiegunak"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WORKDAY.7.STRING.TEXT
-msgid  "List of date values of days off (vacation, holidays, etc.)"
-msgstr "Jaiegun berezien zerrenda (oporrak, festak, etab.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.1.STRING.TEXT
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
@@ -563,61 +247,13 @@ msgstr "'Hasiera-data' eta 'amaiera-data' arteko egunek osatzen duten urte-zatia
 msgid  "End date"
 msgstr "Amaiera-data"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.5.STRING.TEXT
-msgid  "The end date"
-msgstr "Amaierako data"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.6.STRING.TEXT
 msgid  "Basis"
 msgstr "Oinarria"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YEARFRAC.7.STRING.TEXT
-msgid  "Basis for determining the interest days"
-msgstr "Egunak kontatzeko oinarria"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.1.STRING.TEXT
-msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr "Hasiera-datatik hilabete kopuru jakin bat aurrera edo atzera dagoen dataren serie-zenbakia ematen du."
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.4.STRING.TEXT
-msgid  "Months"
-msgstr "Hilabeteak"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EDATE.5.STRING.TEXT
 msgid  "Number of months before or after the start date"
 msgstr "Zenbat hilabete hasiera-dataren aurretik edo ondoren"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.1.STRING.TEXT
-msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr "Data bat urteko zenbatgarren astekoa den kalkulatzen du."
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.2.STRING.TEXT
-msgid  "Date"
-msgstr "Data"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.3.STRING.TEXT
-msgid  "The date"
-msgstr "Data"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.4.STRING.TEXT
-msgid  "Return type"
-msgstr "Metodoa"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_WEEKNUM.5.STRING.TEXT
-msgid  "A number from 1 to 3 that specifies the day with which a week begins"
-msgstr "1 eta 3 bitarteko zenbaki bat, astea zein egunetan hasten den adierazten duena"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EOMONTH.1.STRING.TEXT
-msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr "Hasiera-datatik hilabete kopuru jakin bat lehenago edo beranduago dagoen hilabeteko azken egunari dagokion dataren serie-zenbakia ematen du."
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.1.STRING.TEXT
-msgid  "Returns the number of workdays between two dates"
-msgstr "Bi dataren arteko lanegun kopurua ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NETWORKDAYS.7.STRING.TEXT
-msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr "Jaiegunen zerrenda (oporrak, festak, etab.)"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ISEVEN.1.STRING.TEXT
 msgid  "Returns the value 'true' if the number is even"
@@ -635,57 +271,17 @@ msgstr "Zenbakia"
 msgid  "Returns the value 'true' if the number is odd"
 msgstr "'Egiazko' balioa ematen du, zenbakia bakoitia bada"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.1.STRING.TEXT
-msgid  "Returns the multinomial coefficient of a set of numbers"
-msgstr "Zenbaki multzo baten koefiziente multinominala ematen du"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.2.STRING.TEXT
 msgid  "Number(s)"
 msgstr "Zenbakia(k)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MULTINOMIAL.3.STRING.TEXT
-msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr "Koefiziente multinominala kalkulatu nahi diozun zenbakia edo zenbaki-zerrenda"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.1.STRING.TEXT
-msgid  "Returns the sum of a power series"
-msgstr "Berretura-serie baten batura ematen du"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.2.STRING.TEXT
 msgid  "X"
 msgstr "X"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.3.STRING.TEXT
-msgid  "The independent variable of the power series"
-msgstr "Berretura-seriearen aldagai independentea"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.4.STRING.TEXT
 msgid  "N"
 msgstr "N"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.5.STRING.TEXT
-msgid  "The initial power to which x is to be raised"
-msgstr "X berretzeko hasierako potentzia"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.6.STRING.TEXT
-msgid  "M"
-msgstr "M"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.7.STRING.TEXT
-msgid  "The increment by which to increase n for each term in the series"
-msgstr "N zenbatean gehitu behar den serieko termino bakoitzeko"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.8.STRING.TEXT
-msgid  "Coefficients"
-msgstr "Koefizienteak"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SERIESSUM.9.STRING.TEXT
-msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr "X aldagaiaren elkarren ondoko berretura bakoitza biderkatzeko erabiliko den koefiziente multzoa"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.1.STRING.TEXT
-msgid  "Returns the integer portion of a division"
-msgstr "Zatiketa baten zati osoa ematen du"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.2.STRING.TEXT
 msgid  "Numerator"
@@ -695,17 +291,9 @@ msgstr "Zenbakitzailea"
 msgid  "The dividend"
 msgstr "Zatikizuna"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.4.STRING.TEXT
-msgid  "Denominator"
-msgstr "Izendatzailea"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_QUOTIENT.5.STRING.TEXT
 msgid  "The divisor"
 msgstr "Zatitzailea"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.1.STRING.TEXT
-msgid  "Returns a number rounded to a specified multiple"
-msgstr "Zehaztutako multiplora biribildutako zenbakia ematen du"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.3.STRING.TEXT
 msgid  "The number to round off"
@@ -715,53 +303,13 @@ msgstr "Biribildu beharreko zenbakia"
 msgid  "Multiple"
 msgstr "Multiploa"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_MROUND.5.STRING.TEXT
-msgid  "The multiple to which you want to round number"
-msgstr "Zein multiplotara biribildu nahi duzu zenbakia"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.1.STRING.TEXT
-msgid  "Returns the square root of a number which has been multiplied by pi"
-msgstr "Pi-rekin biderkatutako zenbakiaren erro karratua ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_SQRTPI.3.STRING.TEXT
-msgid  "The number by which pi is multiplied"
-msgstr "Pi-rekin biderkatuko den zenbakia"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.1.STRING.TEXT
 msgid  "Returns a random integer between the numbers you specify"
 msgstr "Zuk zehaztutako zenbakien arteko ausazko osoko zenbaki bat ematen du"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.2.STRING.TEXT
-msgid  "Bottom"
-msgstr "Txikiena"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.3.STRING.TEXT
-msgid  "The smallest integer returned"
-msgstr "Eman dezakeen balio txikiena"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.4.STRING.TEXT
-msgid  "Top"
-msgstr "Handiena"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RANDBETWEEN.5.STRING.TEXT
-msgid  "The largest integer returned"
-msgstr "Eman dezakeen balio handiena"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.1.STRING.TEXT
-msgid  "Returns the greatest common divisor"
-msgstr "Zatitzaile komunetako handiena ematen du"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GCD.3.STRING.TEXT
 msgid  "Number or list of numbers"
 msgstr "Zenbakia edo zenbaki-zerrenda"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_LCM.1.STRING.TEXT
-msgid  "Returns the least common multiple"
-msgstr "Multiplo komunetako txikiena ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.1.STRING.TEXT
-msgid  "Returns the modified Bessel function In(x)"
-msgstr "Bessel In(x) funtzio aldatua kalkulatzen du"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.3.STRING.TEXT
 msgid  "The value at which the function is to be evaluated"
@@ -770,18 +318,6 @@ msgstr "Funtzioa kalkulatzeko erabiliko den balioa"
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELI.5.STRING.TEXT
 msgid  "The order of the Bessel function"
 msgstr "Bessel funtzioaren ordena"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELJ.1.STRING.TEXT
-msgid  "Returns the Bessel function Jn(x)"
-msgstr "Bessel Jn(x) funtzioa kalkulatzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELK.1.STRING.TEXT
-msgid  "Returns the Bessel function Kn(x)"
-msgstr "Bessel Kn(x) funtzioa kalkulatzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BESSELY.1.STRING.TEXT
-msgid  "Returns the Bessel function Yn(x)"
-msgstr "Bessel Yn(x) funtzioa kalkulatzen du"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2OCT.1.STRING.TEXT
 msgid  "Converts a binary number to an octal number"
@@ -803,89 +339,21 @@ msgstr "Zenbat zifra erabiliko diren"
 msgid  "Converts a binary number to a decimal number"
 msgstr "Zenbaki bitarra zenbaki hamartar bihurtzen du"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.1.STRING.TEXT
-msgid  "Converts a binary number to a hexadecimal number"
-msgstr "Zenbaki bitarra zenbaki hamaseitar bihurtzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_BIN2HEX.5.STRING.TEXT
-msgid  "Number of places used."
-msgstr "Zenbat zifra erabiliko diren"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.1.STRING.TEXT
-msgid  "Converts an octal number to a binary number"
-msgstr "Zenbaki zortzitarra zenbaki bitar bihurtzen du"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2BIN.3.STRING.TEXT
 msgid  "The octal number to be converted (as text)"
 msgstr "Zenbaki zortzitarra (testu gisa)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2DEC.1.STRING.TEXT
-msgid  "Converts an octal number to a decimal number"
-msgstr "Zenbaki zortzitarra zenbaki hamartar bihurtzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_OCT2HEX.1.STRING.TEXT
-msgid  "Converts an octal number to a hexadecimal number"
-msgstr "Zenbaki zortzitarra zenbaki hamaseitar bihurtzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.1.STRING.TEXT
-msgid  "Converts a decimal number to a binary number"
-msgstr "Zenbaki hamartarra zenbaki bitar bihurtzen du"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2BIN.3.STRING.TEXT
 msgid  "The decimal integer to be converted"
 msgstr "Bihurtu beharreko zenbaki hamartarra"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2HEX.1.STRING.TEXT
-msgid  "Converts a decimal number to a hexadecimal number"
-msgstr "Zenbaki hamartarra zenbaki hamaseitar bihurtzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.1.STRING.TEXT
-msgid  "Converts a decimal number into an octal number"
-msgstr "Zenbaki hamartarra zenbaki zortzitar bihurtzen du"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DEC2OCT.3.STRING.TEXT
 msgid  "The decimal number"
 msgstr "Zenbaki dezimala"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to a binary number"
-msgstr "Zenbaki hamaseitarra zenbaki bitar bihurtzen du"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2BIN.3.STRING.TEXT
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "Bihurtu beharreko zenbaki hamaseitarra (testu gisa)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2DEC.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to a decimal number"
-msgstr "Zenbaki hamaseitarra zenbaki hamartar bihurtzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_HEX2OCT.1.STRING.TEXT
-msgid  "Converts a hexadecimal number to an octal number"
-msgstr "Zenbaki hamaseitarra zenbaki zortzitar bihurtzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.1.STRING.TEXT
-msgid  "Tests whether two values are equal"
-msgstr "Bi zenbaki berdinak diren begiratzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.2.STRING.TEXT
-msgid  "Number 1"
-msgstr "1 zenbakia"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.3.STRING.TEXT
-msgid  "The first number"
-msgstr "Lehen zenbakia"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.4.STRING.TEXT
-msgid  "Number 2"
-msgstr "2 zenbakia"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DELTA.5.STRING.TEXT
-msgid  "The second number"
-msgstr "Bigarren zenbakia"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.1.STRING.TEXT
-msgid  "Returns the error function"
-msgstr "Gauss-en errore-funtzioa ematen du"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.2.STRING.TEXT
 msgid  "Lower limit"
@@ -895,89 +363,21 @@ msgstr "Behe-muga"
 msgid  "The lower limit for integration"
 msgstr "Integrazioko beheko muga"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.4.STRING.TEXT
-msgid  "Upper limit"
-msgstr "Goi-muga"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERF.5.STRING.TEXT
-msgid  "The upper limit for integration"
-msgstr "Integrazioko goiko muga"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ERFC.1.STRING.TEXT
-msgid  "Returns the complementary error function"
-msgstr "Gauss-en errore-funtzio osagarria ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.1.STRING.TEXT
-msgid  "Tests whether a number is greater than a threshold value"
-msgstr "Zenbaki bat atalaseko balioa baino handiagoa ote den probatzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.3.STRING.TEXT
-msgid  "The value to test against step"
-msgstr "Atalaseko balioarekin konparatu beharreko balioa"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.4.STRING.TEXT
-msgid  "Step"
-msgstr "Atalasea"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_GESTEP.5.STRING.TEXT
-msgid  "The threshhold value"
-msgstr "Atalaseko balioa"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FACTDOUBLE.1.STRING.TEXT
-msgid  "Returns the double factorial of Number"
-msgstr "Zenbaki baten faktorial bikoitza ematen du"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.1.STRING.TEXT
 msgid  "Returns the absolute value (modulus) of a complex number"
 msgstr "Zenbaki konplexu baten balio absolutua (modulua) ematen du"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.2.STRING.TEXT
 msgid  "Complex number"
-msgstr ""
+msgstr "Zenbaki konplexua"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMABS.3.STRING.TEXT
 msgid  "The complex number"
 msgstr "Zenbaki konplexua"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMAGINARY.1.STRING.TEXT
-msgid  "Returns the imaginary coefficient of a complex number"
-msgstr "Zenbaki konplexu baten koefiziente irudikaria ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.1.STRING.TEXT
-msgid  "Returns a complex number raised to an integer power"
-msgstr "Zenbaki konplexu bat berretzen du osoko zenbaki batekin"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPOWER.5.STRING.TEXT
-msgid  "Power to which the complex number is raised"
-msgstr "Zenbaki konplexuaren berretzailea"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.1.STRING.TEXT
-msgid  "Returns the argument theta, an angle expressed in radians"
-msgstr "Zenbaki konplexu baten theta argumentua ematen du, radianetan adierazitako angelua"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMARGUMENT.3.STRING.TEXT
 msgid  "A complex number"
-msgstr ""
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOS.1.STRING.TEXT
-msgid  "Returns the cosine of a complex number"
-msgstr "Zenbaki konplexu baten kosinua ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMDIV.1.STRING.TEXT
-msgid  "Returns the quotient of two complex numbers"
-msgstr "Bi zenbaki konplexuren zatidura ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMEXP.1.STRING.TEXT
-msgid  "Returns the algebraic form of the exponential of a complex number"
-msgstr "Zenbaki konplexu baten esponentzialaren forma aljebraikoa ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCONJUGATE.1.STRING.TEXT
-msgid  "Returns the complex conjugate of a complex number"
-msgstr "Zenbaki konplexu baten konplexu konjugatua ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLN.1.STRING.TEXT
-msgid  "Returns the natural logarithm of a complex number"
-msgstr "Zenbaki konplexu baten logaritmo naturala ematen du"
+msgstr "Zenbaki konplexu bat"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMLOG10.1.STRING.TEXT
 msgid  "Returns the base-10 logarithm of a complex number"
@@ -987,30 +387,6 @@ msgstr "Zenbaki konplexu baten logaritmo hamartarra ematen du"
 msgid  "Returns the base-2 logarithm of a complex number"
 msgstr "Zenbaki konplexu baten logaritmo bitarra ematen du"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.1.STRING.TEXT
-msgid  "Returns the product of several complex numbers"
-msgstr "Hainbat zenbaki konplexuren biderkadura ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.3.STRING.TEXT
-msgid  "The first complex number"
-msgstr "Lehen zenbaki konplexua"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMPRODUCT.5.STRING.TEXT
-msgid  "Another complex number"
-msgstr "Beste zenbaki konplexu bat"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMREAL.1.STRING.TEXT
-msgid  "Returns the real coefficient of a complex number"
-msgstr "Zenbaki konplexu baten koefiziente erreala ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSIN.1.STRING.TEXT
-msgid  "Returns the sine of a complex number"
-msgstr "Zenbaki konplexu baten sinua ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.1.STRING.TEXT
-msgid  "Returns the difference of two complex numbers"
-msgstr "Bi zenbaki konplexuren diferentzia ematen du"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUB.2.STRING.TEXT
 msgid  "Complex number 1"
 msgstr "1. zenbaki konplexua"
@@ -1019,61 +395,37 @@ msgstr "1. zenbaki konplexua"
 msgid  "Complex number 2"
 msgstr "2. zenbaki konplexua"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSQRT.1.STRING.TEXT
-msgid  "Returns the square root of a complex number"
-msgstr "Zenbaki konplexu baten erro karratua ematen du"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMTAN.1.STRING.TEXT
+msgid  "Returns the tangent of a complex number"
+msgstr "Zenbaki konplexu baten tangentea ematen du"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSUM.1.STRING.TEXT
-msgid  "Returns the sum of complex numbers"
-msgstr "Zenbaki konplexuen batura ematen du"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSEC.1.STRING.TEXT
+msgid  "Returns the secant of a complex number"
+msgstr "Zenbaki konplexu baten sekantea ematen du"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.1.STRING.TEXT
-msgid  "Converts real and imaginary coefficients into a complex number"
-msgstr "Koefiziente erreal eta irudikariak zenbaki konplexu bihurtzen ditu"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSC.1.STRING.TEXT
+msgid  "Returns the cosecant of a complex number"
+msgstr "Zenbaki konplexu baten kosekantea ematen du"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.2.STRING.TEXT
-msgid  "Real num"
-msgstr "Zati erreala"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOT.1.STRING.TEXT
+msgid  "Returns the cotangent of a complex number"
+msgstr "Zenbaki konplexu baten kotangentea ematen du"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.3.STRING.TEXT
-msgid  "The real coefficient"
-msgstr "Koefiziente erreala"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSINH.1.STRING.TEXT
+msgid  "Returns the hyperbolic sine of a complex number"
+msgstr "Zenbaki konplexu baten sinu hiperbolikoa ematen du"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.4.STRING.TEXT
-msgid  "I num"
-msgstr "Zati irudikaria"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCOSH.1.STRING.TEXT
+msgid  "Returns the hyperbolic cosine of a complex number"
+msgstr "Zenbaki konplexu baten kosinu hiperbolikoa ematen du"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.5.STRING.TEXT
-msgid  "The imaginary coefficient"
-msgstr "Koefiziente irudikaria"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMSECH.1.STRING.TEXT
+msgid  "Returns the hyperbolic secant of a complex number"
+msgstr "Zenbaki konplexu baten sekantea ematen du"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.6.STRING.TEXT
-msgid  "Suffix"
-msgstr "Atzizkia"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COMPLEX.7.STRING.TEXT
-msgid  "The suffix"
-msgstr "Atzizkia"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.1.STRING.TEXT
-msgid  "Converts a number from one measurement system to another"
-msgstr "Zenbaki bat neurri-sistema batetik beste batera aldatzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.4.STRING.TEXT
-msgid  "From unit"
-msgstr "Unitate honetatik:"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.5.STRING.TEXT
-msgid  "Unit of measure for number"
-msgstr "Zenbakiaren neurri-unitatea"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.6.STRING.TEXT
-msgid  "To unit"
-msgstr "Unitate honetara:"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CONVERT.7.STRING.TEXT
-msgid  "Unit of measure for the result"
-msgstr "Emaitzako neurri-unitatea"
+#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_IMCSCH.1.STRING.TEXT
+msgid  "Returns the hyperbolic cosecant of a complex number"
+msgstr "Zenbaki konplexu baten kosekantea ematen du"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.1.STRING.TEXT
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
@@ -1099,22 +451,6 @@ msgstr "Ondasuna erosi zen data"
 msgid  "First period"
 msgstr "Lehen denboraldia"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.7.STRING.TEXT
-msgid  "Date the first period ends"
-msgstr "Lehen denboraldiaren amaiera-data"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.8.STRING.TEXT
-msgid  "Salvage"
-msgstr "Hondar-balioa"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.9.STRING.TEXT
-msgid  "Salvage value of an asset at the end of its life"
-msgstr "Ondasunari amaieran geratuko zaion hondar-balioa."
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.10.STRING.TEXT
-msgid  "Period"
-msgstr "Denboraldia"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORDEGRC.11.STRING.TEXT
 msgid  "The period"
 msgstr "Denboraldia"
@@ -1131,33 +467,9 @@ msgstr "Amortizazio-tasa"
 msgid  "The year basis to be used"
 msgstr "Erabili beharreko urte-oinarria"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.7.STRING.TEXT
-msgid  "The date the first period ends"
-msgstr "Lehen denboraldiaren amaiera-data"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_AMORLINC.9.STRING.TEXT
-msgid  "The salvage value of an asset at the end of its life"
-msgstr "Ondasunari amaieran geratzen zaion hondar-balioa."
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.1.STRING.TEXT
-msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr "Interes periodikoak ordaintzen dituen titulu baten interes metatuak ematen ditu"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.2.STRING.TEXT
 msgid  "Issue"
 msgstr "Jaulkipena"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.3.STRING.TEXT
-msgid  "Issue date of the security"
-msgstr "Tituluaren jaulkipen-data"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.4.STRING.TEXT
-msgid  "First interest"
-msgstr "Lehen interesa"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.5.STRING.TEXT
-msgid  "First interest date of the security"
-msgstr "Tituluaren lehen interesaren data"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.6.STRING.TEXT
 msgid  "Settlement"
@@ -1179,10 +491,6 @@ msgstr "Balio nominala"
 msgid  "The par value"
 msgstr "Balio nominala"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.12.STRING.TEXT
-msgid  "Frequency"
-msgstr "Maiztasuna"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINT.13.STRING.TEXT
 msgid  "The frequency"
 msgstr "Maiztasuna"
@@ -1198,14 +506,6 @@ msgstr "Interesak mugaegunean ordaintzen dituen titulu baten interes metatuak em
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ACCRINTM.3.STRING.TEXT
 msgid  "The issue date"
 msgstr "Jaulkipen-data"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.1.STRING.TEXT
-msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr "Erabat inbertitutako titulu baten mugaegunean, jaso den kopurua ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.4.STRING.TEXT
-msgid  "Maturity"
-msgstr "Mugaeguna"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_RECEIVED.5.STRING.TEXT
 msgid  "The maturity"
@@ -1227,10 +527,6 @@ msgstr "Deskontua"
 msgid  "The discount"
 msgstr "Deskontua"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.1.STRING.TEXT
-msgid  "Returns the discount rate for a security"
-msgstr "Titulu baten deskontu-tasa ematen du"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DISC.6.STRING.TEXT
 msgid  "Price"
 msgstr "Prezioa"
@@ -1247,14 +543,6 @@ msgstr "Diru-itzulketa"
 msgid  "The redemption value"
 msgstr "Itzuliko den balioa"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.1.STRING.TEXT
-msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr "Interes-ordainketa periodikoa egiten duen titulu baten urteko Macaulay iraupena ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.6.STRING.TEXT
-msgid  "Coupon"
-msgstr "Interes nominala"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DURATION.7.STRING.TEXT
 msgid  "The coupon rate"
 msgstr "Urteko interes-tasa nominala"
@@ -1267,18 +555,6 @@ msgstr "Etekina"
 msgid  "The yield"
 msgstr "Urteko etekina"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.1.STRING.TEXT
-msgid  "Returns the effective annual interest rate"
-msgstr "Urteko interes-tasa efektiboa ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.2.STRING.TEXT
-msgid  "Nominal rate"
-msgstr "Interes nominala"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.3.STRING.TEXT
-msgid  "The nominal rate"
-msgstr "Interes-tasa nominala"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.4.STRING.TEXT
 msgid  "Npery"
 msgstr "Denboraldiak"
@@ -1286,14 +562,6 @@ msgstr "Denboraldiak"
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_EFFECT.5.STRING.TEXT
 msgid  "The periods"
 msgstr "Denboraldiak"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.1.STRING.TEXT
-msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr "Bi denboraldiren artean amortizatuko den maileguaren printzipal metatua ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.4.STRING.TEXT
-msgid  "Nper"
-msgstr "D.kop"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.5.STRING.TEXT
 msgid  "Number of payment periods"
@@ -1306,10 +574,6 @@ msgstr "Pv"
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.7.STRING.TEXT
 msgid  "The present value"
 msgstr "Uneko balioa (present value)"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.8.STRING.TEXT
-msgid  "Start period"
-msgstr "Hasierako denboraldia"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMPRINC.9.STRING.TEXT
 msgid  "The start period"
@@ -1331,14 +595,6 @@ msgstr "Mota"
 msgid  "The type of maturity"
 msgstr "Mugaegun mota"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_CUMIPMT.1.STRING.TEXT
-msgid  "Returns the cumulative interest to be paid between two periods"
-msgstr "Bi denboraldiren artean ordaindu beharreko interes metatua ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICE.1.STRING.TEXT
-msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr "Interes periodikoak ordaintzen dituen titulu baten prezioa ematen du, 100 moneta-unitateko balio nominalean oinarrituta."
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_PRICEDISC.1.STRING.TEXT
 msgid  "Returns the price per 100 currency units face value of a discounted security"
 msgstr "100 moneta-unitateko balio nominaleko eta interesik gabeko titulu baten prezioa ematen du"
@@ -1351,57 +607,9 @@ msgstr "Interesak mugaegunean ordaintzen dituen titulu baten prezioa ematen du, 
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
 msgstr "100 moneta-unitateko balio nominaleko tituluaren Macaulay iraupen aldatua ematen du"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.1.STRING.TEXT
-msgid  "Returns the annual nominal interest rate"
-msgstr "Urteko interes-tasa nominala ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.2.STRING.TEXT
-msgid  "Effective rate"
-msgstr "Tasa efektiboa"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_NOMINAL.3.STRING.TEXT
-msgid  "The effective interest rate"
-msgstr "Interes-tasa efektiboa"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.1.STRING.TEXT
-msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr "Dezimal moduan adierazitako prezio bat frakzio moduan adierazitako prezio bihurtzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.2.STRING.TEXT
-msgid  "Decimal dollar"
-msgstr "Zenbakia"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARFR.4.STRING.TEXT
 msgid  "Fraction"
 msgstr "Frakzioa"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.1.STRING.TEXT
-msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr "Frakzio moduan adierazitako prezio bat dezimal moduan adierazitako prezio bihurtzen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.2.STRING.TEXT
-msgid  "Fractional dollar"
-msgstr "Zenbakia"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_DOLLARDE.3.STRING.TEXT
-msgid  "The number as a fraction"
-msgstr "Frakzio moduan adierazitako zenbakia"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELD.1.STRING.TEXT
-msgid  "Returns the yield on a security that pays periodic interest"
-msgstr "Interes periodikoak ordaintzen dituen titulu baten etekina ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDDISC.1.STRING.TEXT
-msgid  "Returns the annual yield for a discounted security"
-msgstr "Titulu deskontatu baten urteko etekina ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_YIELDMAT.1.STRING.TEXT
-msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr "Interesak mugaegunean ordaintzen dituen titulu baten urteko etekina ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.1.STRING.TEXT
-msgid  "Returns the bond-equivalent yield for a treasury bill"
-msgstr "Altxor-letra baten urteko etekina kalkulatzen du"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLEQ.7.STRING.TEXT
 msgid  "The discount rate"
@@ -1410,10 +618,6 @@ msgstr "Deskontu-tasa"
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLPRICE.1.STRING.TEXT
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
 msgstr "100 moneta-unitateko balio nominaleko altxor-letra baten prezioa ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_TBILLYIELD.1.STRING.TEXT
-msgid  "Returns the yield for a treasury bill"
-msgstr "Altxor-letra baten etekina ematen du"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFPRICE.1.STRING.TEXT
 msgid  "Returns the price per $100 face value of a security with an odd first period"
@@ -1427,29 +631,13 @@ msgstr "Lehen interesa"
 msgid  "The first coupon date"
 msgstr "Lehenengo interesaren data"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDFYIELD.1.STRING.TEXT
-msgid  "Returns the yield of a security with an odd first period"
-msgstr "Lehen denboraldia irregularra duen titulu baten etekina ematen du"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.1.STRING.TEXT
 msgid  "Returns the price per $100 face value of a security with an odd last period"
 msgstr "Azken denboraldia irregularra duen titulu baten prezioa ematen du, 100 moneta-unitateko balio nominala oinarri hartuta"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.6.STRING.TEXT
-msgid  "Last interest"
-msgstr "Azken interesa"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLPRICE.7.STRING.TEXT
 msgid  "The last interest date"
 msgstr "Azken interesaren data"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_ODDLYIELD.1.STRING.TEXT
-msgid  "Returns the yield of a security with an odd last period"
-msgstr "Azken denboraldia irregularra duen titulu baten etekina ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.1.STRING.TEXT
-msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr "Periodikoak ez diren ordainketa batzuen barneko errendimendu-tasa ematen du"
 
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.2.STRING.TEXT
 msgid  "Values"
@@ -1467,62 +655,6 @@ msgstr "Datak"
 msgid  "The dates"
 msgstr "Datak"
 
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.6.STRING.TEXT
-msgid  "Guess"
-msgstr "Zenbatetsia"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XIRR.7.STRING.TEXT
-msgid  "The guess"
-msgstr "Balio zenbatetsia"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_XNPV.1.STRING.TEXT
-msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr "Periodikoak ez diren ordainketa batzuen uneko balio garbia ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_INTRATE.1.STRING.TEXT
-msgid  "Returns the interest rate for a fully invested security"
-msgstr "Erabat inbertitutako titulu baten interes-tasa ematen du"
-
 #: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNCD.1.STRING.TEXT
 msgid  "Returns the first coupon date after the settlement date"
 msgstr "Likidazio-dataren ondorengo lehen interes-epea ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYS.1.STRING.TEXT
-msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr "Likidazio-data barne hartzen duen interes-denboraldiaren egun kopurua ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYSNC.1.STRING.TEXT
-msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr "Likidazio-egunaren eta hurrengo interes-epearen arteko egun kopurua ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPDAYBS.1.STRING.TEXT
-msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr "Interes-denboraldiaren hasieratik likidazio-eguna arte dagoen egun kopurua ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPPCD.1.STRING.TEXT
-msgid  "Returns the last coupon date preceding the settlement date"
-msgstr "Likidazioaren aurreko azken interes-epea ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_COUPNUM.1.STRING.TEXT
-msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr "Likidazioaren eta mugaegunen artean interesak zenbat aldiz ordainduko diren ematen du"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.1.STRING.TEXT
-msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr "Hasierako kapitalaren etorkizuneko balioa ematen du, interes konposatu batzuk aplikatuta"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.2.STRING.TEXT
-msgid  "Principal"
-msgstr "Kapitala"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.3.STRING.TEXT
-msgid  "The principal"
-msgstr "Kapitala"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.4.STRING.TEXT
-msgid  "Schedule"
-msgstr "Interesak"
-
-#: analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_FVSCHEDULE.5.STRING.TEXT
-msgid  "The schedule"
-msgstr "Interesak"

@@ -31,27 +31,293 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WARNINGBOX.MESSAGE
+msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
+msgstr "نمی‌توان از کارکرد امضای دیجیتال استفاده کرد زیرا شرح‌حال کاربری موزیلا پیدا نشد. لطفاً نصب موزیلا را بررسی کنید."
+
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.MODALDIALOG.TEXT
+msgid  "Select Certificate"
+msgstr "انتخاب گواهی"
+
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FIXEDTEXT.TEXT
+msgid  "Select the certificate you want to use for signing"
+msgstr "گواهی‌ای که می‌خواهید برای امضا استفاده کنید را انتخاب کنید"
+
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.STRING.TEXT
+msgid  "Issued to\tIssued by\tExpiration date"
+msgstr "صادرشده برای\t صادرشده توسط\t تاریخ انقضا"
+
+#: dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PUSHBUTTON.TEXT
+msgid  "View Certificate..."
+msgstr "نمایش گواهی..."
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TABDIALOG.TEXT
+msgid  "View Certificate"
+msgstr "نمایش گواهی"
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.PAGEITEM.TEXT
+msgid  "General"
+msgstr "عمومی"
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.PAGEITEM.TEXT
+msgid  "Details"
+msgstr "جزئیات"
+
+#: dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.PAGEITEM.TEXT
+msgid  "Certification Path"
+msgstr "مسیر گواهی"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.FIXEDTEXT.TEXT
+msgid  " Certificate Information"
+msgstr " اطلاعات گواهی"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.FIXEDTEXT.TEXT
+msgid  "This certificate is intended for the following purpose(s):"
+msgstr "این گواهی برای هدف (یا اهداف) زیر در نظر گرفته شده است:"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.FIXEDTEXT.TEXT
+msgid  "Issued to:"
+msgstr "صادر شده برای:"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.FIXEDTEXT.TEXT
+msgid  "Issued by:"
+msgstr "صادر شده توسط:"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.FIXEDTEXT.TEXT
+msgid  "Valid from %SDATE% to %EDATE%"
+msgstr "معتبر از %SDATE% تا %EDATE%"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FIXEDTEXT.TEXT
+msgid  "You have a private key that corresponds to this certificate."
+msgstr "شما یک کلید خصوصیِ مربوط به این گواهی دارید."
+
 #: dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.STRING.TEXT
 #, fuzzy
 msgid  "The certificate could not be validated."
 msgstr "سنجش اعتبار گواهی ممکن نیست."
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.STRING.TEXT
+msgid  "Field\tValue"
+msgstr "فیلد\tمقدار"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.STRING.TEXT
+msgid  "Version"
+msgstr "نسخه"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.STRING.TEXT
+msgid  "Serial Number"
+msgstr "شمارهٔ سریال"
 
 #: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.STRING.TEXT
 #, fuzzy
 msgid  "Signature Algorithm"
 msgstr "الگوریتم امضا"
 
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.STRING.TEXT
+msgid  "Issuer"
+msgstr "صادر کننده"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.STRING.TEXT
+msgid  "Issuer Unique ID"
+msgstr "شناسهٔ یکتای صادر کننده"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.STRING.TEXT
+msgid  "Valid From"
+msgstr "شروع اعتبار"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.STRING.TEXT
+msgid  "Valid to"
+msgstr "پایان اعتبار"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.STRING.TEXT
+msgid  "Subject"
+msgstr "موضوع"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.STRING.TEXT
+msgid  "Subject Unique ID"
+msgstr "شناسهٔ یکتای موضوع"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.STRING.TEXT
+msgid  "Subject Algorithm"
+msgstr "الگوریتم موضوع"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.STRING.TEXT
+msgid  "Public Key"
+msgstr "کلید عمومی"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.STRING.TEXT
+msgid  "Thumbprint SHA1"
+msgstr "اثر انگشت SHA1"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.STRING.TEXT
+msgid  "Thumbprint MD5"
+msgstr "اثر انگشت MD5"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.FIXEDTEXT.TEXT
+msgid  "Certification path"
+msgstr "مسیر گواهی"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.PUSHBUTTON.TEXT
+msgid  "View Certificate..."
+msgstr "نمایش گواهی..."
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.FIXEDTEXT.TEXT
+msgid  "Certification status"
+msgstr "وضعیت گواهی"
+
+#: dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.STRING.TEXT
+msgid  "The certificate is OK."
+msgstr "گواهی اشکالی ندارد."
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.MODALDIALOG.TEXT
+msgid  "Digital Signatures"
+msgstr "امضاهای دیجیتال"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.FIXEDTEXT.TEXT
+msgid  "The following have signed the document content:"
+msgstr "این اسامی محتویات نوشتار را امضا کرده‌اند:"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.FIXEDTEXT.TEXT
+msgid  "The following have signed the document macro:"
+msgstr "این اسامی ماکروی نوشتار را امضا کرده‌اند:"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.FIXEDTEXT.TEXT
+msgid  "The following have signed this package:"
+msgstr "این اسامی این بسته را امضا کرده‌اند:"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.STRING.TEXT
+msgid  "\tSigned by\tDigital ID issued by\tDate"
+msgstr "\t صاحب امضا\t شناسهٔ دیجیتال صادر شده توسط\t تاریخ"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.STRING.TEXT
+msgid  "Valid signature"
+msgstr "امضای معتبر"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.STRING.TEXT
+msgid  "Certificate could not be validated"
+msgstr "سنجش اعتبار گواهی ممکن نیست"
+
 #: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.STRING.TEXT
-#, fuzzy
 msgid  "The signatures in this document are invalid"
+msgstr "امضاهای موجود در این سند نامعتبرند"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FIXEDTEXT.TEXT
+msgid  "The signatures in this document are valid"
 msgstr "امضاهای موجود در این نوشتار معتبرند"
 
-#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Add..."
-msgstr "اضافه..."
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.FIXEDTEXT.TEXT
+msgid  "Not all parts of the document are signed"
+msgstr "بعضی بخش‌های سند امضا نشده‌اند"
 
-#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.PUSHBUTTON.TEXT
-#, fuzzy
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.PUSHBUTTON.TEXT
+msgid  "View Certificate..."
+msgstr "نمایش گواهی..."
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.PUSHBUTTON.TEXT
+msgid  "Sign Document..."
+msgstr "امضای سند..."
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.PUSHBUTTON.TEXT
 msgid  "Remove"
 msgstr "حذف"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.OKBUTTON.TEXT
+msgid  "Close"
+msgstr "بستن"
+
+#: dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ERRORBOX.MESSAGE
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgstr "این سند شامل امضاهایی در قالب ODF 1.1 (اُپن‌آفیس 2.x) است. امضای اسناد در %PRODUCTNAME %PRODUCTVERSION نیاز به قالبِ نسخه‌ی ODF 1.2 دارد. بنابراین نمیتوان هیچ امضایی به این سند اضافه یا از آن حذف کرد.\n\nسند را در قالب ODF 1.2 ذخیره و امضاهای مورد نظر را دوباره اضافه کنید."
+
+#: dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
+msgstr "اضافه یا حذف کردن امضای یک ماکرو باعث حذف همه امضاهای سند خواهد شد.\nآیا شما واقعاً می خواهید ادامه دهید؟"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TABDIALOG.TEXT
+msgid  "Macro Security"
+msgstr "امنیت ماکرو"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.PAGEITEM.TEXT
+msgid  "Security Level"
+msgstr "سطح امنیتی"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.PAGEITEM.TEXT
+msgid  "Trusted Sources"
+msgstr "منابع مورد اعتماد"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.PUSHBUTTON.TEXT
+msgid  "Reset"
+msgstr "بازگرداندن به حالت اولیه"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RADIOBUTTON.TEXT
+msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr "~بسیار بالا..\nفقط ماکروهای از محل فایل‌های مطمئن اجازه اجرا دارند. تمام ماکروهای دیگر، بدون در نظر گرفتن اینکه آیا امضا شده اند یا نه، غیرفعال هستند."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RADIOBUTTON.TEXT
+msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr "ب~الا.\nفقط ماکروهای ثبت شده از منابع مورد اعتماد اجازه اجرا دارند. ماکروهای ثبت نشده غیرفعالند."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RADIOBUTTON.TEXT
+msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
+msgstr "~متوسط.\nقبل از اجرای ماکروها از منابع بدون اعتبار, تایید مورد نیاز است."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RADIOBUTTON.TEXT
+msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr "~پایین (پیشنهاد نمی شود).\nتمام ماکروها بدون تایید اجرا شوند. از این ویژگی تنها در صورتی استفاده کنید که مطمئن هستید تمامی اسنادی که باز می‌شوند امن هستند. "
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FIXEDLINE.TEXT
+msgid  "Trusted certificates"
+msgstr "گواهی‌های مورد اعتماد"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.STRING.TEXT
+msgid  "Issued to\tIssued by\tExpiration date"
+msgstr "صادر شده برای\t صادر شده توسط\t تاریخ انقضا"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.PUSHBUTTON.TEXT
+msgid  "View..."
+msgstr "نمایش..."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.FIXEDLINE.TEXT
+msgid  "Trusted file locations"
+msgstr "مکان‌های مورد اعتماد"
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FIXEDTEXT.TEXT
+msgid  "Document macros are always executed if they have been opened from one of the following locations."
+msgstr "ماکروهای نوشتار اگر از مکان‌های زیر باز شده باشند همیشه اجرا خواهند شد."
+
+#: dialogs/macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.STRING.TEXT
+msgid  "This setting is protected by the Administrator"
+msgstr "این گزینه توسط مدیر محافظت می‌شود"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.MODALDIALOG.TEXT
+msgid  "Security Warning"
+msgstr "اخطار امنیتی"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.FIXEDTEXT.TEXT
+msgid  "The document contains document macros signed by:"
+msgstr "سند شامل ماکروهای سند ثبت شده توسط:"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.FIXEDTEXT.TEXT
+msgid  "The document contains document macros."
+msgstr "این سند شامل ماکروهای سند است."
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.PUSHBUTTON.TEXT
+msgid  "View Signatures..."
+msgstr "نمایش امضا‌ها..."
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr "ماکروها ممکن است محتوی ویروس‌ باشند. غیرفعال کردن ماکروها برای یک سند همیشه امن است. اگر شما ماکروها را غیرفعال کنید ممکن است قابلیت‌های ارائه شده توسط ماکروهای سند را از دست بدهید. "
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CHECKBOX.TEXT
+msgid  "Always trust macros from this source"
+msgstr "همیشه به ماکروهای از این منبع اعتماد کن"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.PUSHBUTTON.TEXT
+msgid  "Enable Macros"
+msgstr "فعال کردن ماکروها"
+
+#: dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.CANCELBUTTON.TEXT
+msgid  "Disable Macros"
+msgstr "غیرفعال کردن ماکروها"

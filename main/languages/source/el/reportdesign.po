@@ -165,7 +165,7 @@ msgstr "Διάστημα"
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.STRING.TEXT
 msgid  "Select a field or type an expression to sort or group on."
-msgstr "Επιλέξτε ένα πεδίο ή πληκτρολογήστε μια έκφραση για ταξινόμηση ή ομαδοποίηση,"
+msgstr "Επιλέξτε ένα πεδίο ή πληκτρολογήστε μια έκφραση για ταξινόμηση ή ομαδοποίηση."
 
 #: ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.STRING.TEXT
 msgid  "Display a header for this group?"
@@ -333,11 +333,11 @@ msgstr "Ταξινόμηση και ομαδοποίηση..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MENUITEM.TEXT
 msgid  "Page Header/Footer..."
-msgstr "Κεφαλίδα / υποσέλιδο σελίδας..."
+msgstr "Κεφαλίδα/Υποσέλιδο σελίδας..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MENUITEM.TEXT
 msgid  "Report Header/Footer..."
-msgstr "Κεφαλίδα / υποσέλιδο αναφοράς..."
+msgstr "Κεφαλίδα/Υποσέλιδο αναφοράς..."
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MENUITEM.TEXT
 msgid  "New Function"
@@ -365,7 +365,7 @@ msgstr "όχι μεταξύ"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.STRINGLIST.ITEM
 msgid  "equal to"
-msgstr "Ίσον με"
+msgstr "ισούται με"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.STRINGLIST.ITEM
 msgid  "not equal to"
@@ -405,7 +405,7 @@ msgstr "~Βοήθεια"
 
 #: ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.STRING.TEXT
 msgid  "Condition $number$"
-msgstr "$number$ συνθήκης"
+msgstr "Συνθήκη $number$"
 
 #: ui/dlg/CondFormat.src#STR_COLOR_WHITE.STRING.TEXT
 msgid  "White"
@@ -613,7 +613,7 @@ msgstr "Deep traversing"
 
 #: ui/inspection/inspection.src#RID_STR_PREEVALUATED.STRING.TEXT
 msgid  "Pre evaluation"
-msgstr "Προ-εκτίμηση "
+msgstr "Προ-εκτίμηση"
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONX.STRING.TEXT
 msgid  "Position X"
@@ -665,7 +665,7 @@ msgstr "Δεν επιτρέπεται η λειτουργία. Το στοιχε
 
 #: ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.STRING.TEXT
 msgid  "This position can not be set. It is invalid."
-msgstr "Δεν είναι δυνατός ο ορισμός της θέσης. Δεν είναι έγκυρος"
+msgstr "Δεν είναι δυνατός ο ορισμός της θέσης. Δεν είναι έγκυρος."
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.STRING.TEXT
 msgid  "Group: %1"
@@ -717,7 +717,7 @@ msgstr "Αναφορά"
 
 #: ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.STRING.TEXT
 msgid  "Preview Row(s)"
-msgstr "Προεπισκόπηση γραμμών"
+msgstr "Προεπισκόπηση Γραμμής(-ων)"
 
 #: ui/inspection/inspection.src#RID_STR_AREA.STRING.TEXT
 msgid  "Area"
@@ -729,7 +729,7 @@ msgstr "Τύπος αρχείου αναφοράς"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICALALIGN.STRING.TEXT
 msgid  "Vert. Alignment"
-msgstr "Κατακ. στοίχιση"
+msgstr "Κατακ. Στοίχιση"
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.STRING.TEXT
 msgid  "Top"
@@ -745,7 +745,7 @@ msgstr "Κάτω"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST.STRING.TEXT
 msgid  "Horz. Alignment"
-msgstr "Οριζ. στοίχιση"
+msgstr "Οριζ. Στοίχιση"
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.STRING.TEXT
 msgid  "Left"
@@ -777,207 +777,39 @@ msgstr "Μέγιστο"
 
 #: ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.STRING.TEXT
 msgid  "Properties: "
-msgstr "Ιδιότητες:"
+msgstr "Ιδιότητες: "
 
 #: ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.STRING.TEXT
 msgid  "No Control marked"
 msgstr "Δεν έχει σημειωθεί πεδίο ελέγχου"
 
-#: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
-msgid  "Multiselection"
-msgstr "Πολλαπλή επιλογή"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
-msgstr "Γραφικό πεδίο ελέγχου"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-msgid  "Label field"
-msgstr "Πεδίο ετικέτας"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
-msgid  "Line"
-msgstr "Γραμμή"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid  "Formatted Field"
-msgstr "Μορφοποιημένο πεδίο"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
-msgid  "Shape"
-msgstr "Σχήμα"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
-msgid  "Report"
-msgstr "Αναφορά"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
-msgid  "Section"
-msgstr "Ενότητα"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
-msgid  "Function"
-msgstr "Συνάρτηση"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
-msgid  "Group"
-msgstr "Ομαδοποίηση"
-
-#: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
-msgid  "Show ruler"
-msgstr "Προβολή χάρακα"
-
-#: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
-msgid  "Show grid"
-msgstr "Προβολή πλέγματος"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
-msgid  "Change Object"
-msgstr "Αλλαγή αντικειμένου"
-
 #: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
 msgid  "Move Group(s)"
-msgstr "Μετακίνηση ομάδων"
-
-#: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
-msgid  "Conditional Formatting"
-msgstr "Μορφοποίηση υπό συνθήκες"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Remove report header / report footer"
-msgstr "Απομάκρυνση κεφαλίδας / υποσέλιδου αναφοράς"
-
-#: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Add report header / report footer"
-msgstr "Προσθήκη κεφαλίδας / υποσέλιδου αναφοράς"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Remove page header / page footer"
-msgstr "Απομάκρυνση κεφαλίδας / υποσέλιδου σελίδας"
-
-#: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Add page header / page footer"
-msgstr "Προσθήκη κεφαλίδας / υποσέλιδου σελίδας"
+msgstr "Μετακίνηση Ομάδας(-ων)"
 
 #: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
 msgid  "Change property '#'"
-msgstr "Αλλαγή ιδιότητας  '#'"
+msgstr "Αλλαγή ιδιότητας '#'"
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.STRING.TEXT
 msgid  "Add group header "
-msgstr "Προσθήκη κεφαλίδας ομάδας"
+msgstr "Προσθήκη κεφαλίδας ομάδας "
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.STRING.TEXT
 msgid  "Remove group header "
-msgstr "Απομάκρυνση κεφαλίδας ομάδας"
+msgstr "Απομάκρυνση κεφαλίδας ομάδας "
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.STRING.TEXT
 msgid  "Add group footer "
-msgstr "Προσθήκη υποσέλιδου ομάδας"
+msgstr "Προσθήκη υποσέλιδο ομάδας "
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.STRING.TEXT
 msgid  "Remove group footer "
-msgstr "Απομάκρυνση υποσέλιδου ομάδας"
-
-#: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
-msgid  "Add function"
-msgstr "Προσθήκη συνάρτησης"
-
-#: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
-msgid  "Delete function"
-msgstr "Διαγραφή συνάρτησης"
-
-#: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
-msgid  "Design"
-msgstr "Σχέδιο"
-
-#: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
-msgid  "Preview"
-msgstr "Προεπισκόπηση"
+msgstr "Απομάκρυνση υποσέλιδου ομάδας "
 
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
 msgid  "Report #"
-msgstr "Αναφορά  #"
-
-#: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
-msgid  "~Report name"
-msgstr "Όν~oμα αναφοράς"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
-msgid  "Delete Group"
-msgstr "Διαγραφή ομάδας"
-
-#: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
-msgid  "Add Group"
-msgstr "Προσθήκη ομάδας"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
-msgid  "Delete Selection"
-msgstr "Διαγραφή επιλογής"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
-msgid  "Delete Function"
-msgstr "Διαγραφή συνάρτησης"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
-msgid  "Change Size"
-msgstr "Αλλαγή μεγέθους"
-
-#: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
-msgid  "Paste"
-msgstr "Επικόλληση"
-
-#: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
-msgid  "Insert Control"
-msgstr "Εισαγωγή στοιχείου ελέγχου"
-
-#: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
-msgid  "Delete Control"
-msgstr "Διαγραφή στοιχείου ελέγχου"
-
-#: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
-msgid  "Insert Group"
-msgstr "Εισαγωγή ομαδας"
-
-#: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
-msgid  "GroupHeader"
-msgstr "Κεφαλίδα ομάδας"
-
-#: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
-msgid  "GroupFooter"
-msgstr "Υποσέλιδο ομάδας"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
-msgid  "Sorting and Grouping..."
-msgstr "Ταξινόμηση και ομαδοποίηση..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
-msgid  "Background Color..."
-msgstr "Χρώμα φόντου..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
-msgid  "Ruler..."
-msgstr "Χάρακας..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
-msgid  "Grid..."
-msgstr "Πλέγμα..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
-msgid  "~Arrange"
-msgstr "Τα~κτοποίηση"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
-msgid  "Bring ~Forward"
-msgstr "Μ~εταφορά ένα επίπεδο εμπρός"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
-msgid  "Send Back~ward"
-msgstr "Μετα~φορά ένα επίπεδο πίσω"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
-msgid  "~Object Resizing"
-msgstr "Αλλα~γή μεγέθους αντικειμένου"
+msgstr "Αναφορά #"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
 msgid  "~Fit to smallest width"
@@ -987,145 +819,37 @@ msgstr "~Προσαρμογή στο μικρότερο πλάτος"
 msgid  "~Fit to greatest width"
 msgstr "~Προσαρμογή στο μέγιστο πλάτος"
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
-msgid  "~Fit to smallest height"
-msgstr "~Προσαρμογή στο μικρότερο ύψος"
-
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
 msgid  "~Fit to greatest height"
 msgstr "~Προσαρμογή στο μεγαλύτερο ύψος"
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
-msgid  "Shrink"
-msgstr "Σμίκρυνση"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
-msgid  "Shrink from top"
-msgstr "Σμίκρυνση από πάνω"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
-msgid  "Shrink from bottom"
-msgstr "Σμίκρυνση από κάτω"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
-msgid  "Distribution..."
-msgstr "Κατανομή..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
-msgstr "Ιδιότητες..."
-
-#: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Add field:"
-msgstr "Επιλογή πεδίου:"
-
-#: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
-msgid  "Filter"
-msgstr "Φίλτρο"
-
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base Report"
-msgstr " - Αναφορά %PRODUCTNAME Base "
-
-#: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
-msgid  "Untitled"
-msgstr "Δίχως όνομα"
-
-#: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
-msgid  "Change Alignment"
-msgstr "Αλλαγή στοίχισης"
-
-#: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
-msgid  "# Header"
-msgstr "# Κεφαλίδα"
-
-#: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
-msgid  "# Footer"
-msgstr "# Υποσέλιδο"
-
-#: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
-msgid  "Insert graphics"
-msgstr "Εισαγωγή γραφικού"
-
-#: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
-msgid  "Delete"
-msgstr "Διαγραφή"
-
-#: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
-msgid  "An error occurred while creating the report."
-msgstr "Σφάλμα κατά την δημιουργία της αναφοράς."
-
-#: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
-msgid  "An exception of type $type$ was caught."
-msgstr "Δημιουργήθηκε μια εξαίρεση του τύπου $type$."
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
-msgid  "Change font"
-msgstr "Αλλαγή γραμματοσειράς"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
-msgid  "Change page attributes"
-msgstr "Αλλαγή ιδιοτήτων σελίδας"
+msgstr " - Αναφορά %PRODUCTNAME Base"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Page Header/Footer"
-msgstr "Εισαγωγή κεφαλίδας / υποσέλιδου σελίδας"
+msgstr "Εισαγωγή Κεφαλίδας/Υποσέλιδου Σελίδας"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Page Header/Footer"
-msgstr "Διαγραφή κεφαλίδας / υποσέλιδου σελίδας"
+msgstr "Διαγραφή Κεφαλίδας/Υποσέλιδου Σελίδας"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Column Header/Footer"
-msgstr "Εισαγωγή κεφαλίδας / υποσέλιδου στήλης"
+msgstr "Εισαγωγή Κεφαλίδας/Υποσέλιδου Στήλης"
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Column Header/Footer"
-msgstr "Διαγραφή κεφαλίδας / υποσέλιδου στήλης"
+msgstr "Διαγραφή Κεφαλίδας/Υποσέλιδου Στήλης"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Report Header/Footer"
-msgstr "Εισαγωγή κεφαλίδας / υποσέλιδου αναφοράς"
+msgstr "Εισαγωγή Κεφαλίδας/Υποσέλιδου Αναφοράς"
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Report Header/Footer"
-msgstr "Διαγραφή κεφαλίδας / υποσέλιδου αναφοράς"
-
-#: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
-msgid  "The report can not be executed unless it is bound to content."
-msgstr "Δεν είναι δυνατή η εκτέλεση της αναφοράς αν δεν έχει δεσμευθεί στο περιεχόμενο."
-
-#: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
-msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr "Δεν είναι δυνατή η εκτέλεση της αναφοράς αν δεν έχει εισαχθεί τουλάχιστον ένα αντικείμενο."
-
-#: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
-msgid  "Shrink Section"
-msgstr "Σμίκρυνση ενότητας"
-
-#: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
-msgid  "Detail"
-msgstr "Λεπτομέρεια"
-
-#: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
-msgid  "Page Header"
-msgstr "Κεφαλίδα σελίδας"
-
-#: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
-msgid  "Page Footer"
-msgstr "Υποσέλιδο σελίδας"
-
-#: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
-msgid  "Report Header"
-msgstr "Κεφαλίδα αναφοράς"
-
-#: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
-msgid  "Report Footer"
-msgstr "Υποσέλιδο αναφοράς"
-
-#: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Εισαγωγή"
+msgstr "Διαγραφή Κεφαλίδας/Υποσέλιδου Αναφοράς"
 
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
 msgid  "Detail"
@@ -1161,7 +885,7 @@ msgstr "Το όνομα '#1' υπάρχει ήδη και δεν μπορεί ν
 
 #: core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.STRING.TEXT
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr "Προσπαθήσατε να ορίσετε μια μη έκυρη παράμετρο. Παρακαλώ δείτε το  '#1' για έγκυρες παραμέτρους."
+msgstr "Προσπαθήσατε να ορίσετε μια μη έγκυρη παράμετρο. Παρακαλώ δείτε το '#1' για έγκυρες παραμέτρους."
 
 #: core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.STRING.TEXT
 msgid  "The element is invalid."

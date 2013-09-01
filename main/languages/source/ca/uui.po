@@ -31,10 +31,642 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: alreadyopen.src#STR_ALREADYOPEN_MSG.STRING.TEXT
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
+msgstr "El fitxer de document '$(ARG1)' l'heu bloquejat per a edició en un altre sistema des del $(ARG2)\n\nObriu el document com a només de lectura, o ignoreu el vostre propi bloqueig i obriu el document per a edició.\n\n"
+
+#: alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.STRING.TEXT
+msgid  "Open ~Read-Only"
+msgstr "Obre només de ~lectura"
+
+#: alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.STRING.TEXT
+msgid  "~Open"
+msgstr "~Obre"
+
+#: alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.STRING.TEXT
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
+msgstr "El fitxer de document '$(ARG1)' l'heu bloquejat per a edició en un altre sistema des del $(ARG2)\n\nTanqueu el document en l'altre sistema i torneu a provar de desar-lo, o ignoreu el vostre propi bloqueig i deseu el document actual.\n\n"
+
+#: alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.STRING.TEXT
+msgid  "~Retry Saving"
+msgstr "~Reintenta desar"
+
+#: alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.STRING.TEXT
+msgid  "~Save"
+msgstr "De~sa"
+
 #: cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RADIOBUTTON.TEXT
 msgid  "~Send"
 msgstr "~Envia"
 
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RADIOBUTTON.TEXT
+msgid  "I~gnore"
+msgstr "I~gnora"
+
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RADIOBUTTON.TEXT
+msgid  "I~nteractive"
+msgstr "I~nteractiu"
+
+#: cookiedg.src#DLG_COOKIES.GB_INFUTURE.GROUPBOX.TEXT
+msgid  "Future Cookie Handling"
+msgstr "Gestió de les futures galetes"
+
+#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PUSHBUTTON.TEXT
+msgid  "~Ignore"
+msgstr "~Ignora"
+
+#: cookiedg.src#STR_COOKIES_RECV_START.STRING.TEXT
+msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr "El servidor '${HOST}' vol configurar una o més galetes.\nLes galetes contenen informació referent a determinats tipus d'URL. Si més endavant l'%PRODUCTNAME demana un document que correspon a un tipus de galeta que ja ha configurat, l'%PRODUCTNAME envia aquesta informació al servidor. D'aquesta manera els servidors poden recordar l'estat d'una aplicació www (p. ex. quan es compra en línia).\n\nS'han de configurar les galetes següents:\n\n"
+
 #: cookiedg.src#STR_COOKIES_RECV_COOKIES.STRING.TEXT
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "Domini: ${DOMAIN}, Camí: ${PATH}, Galeta: ${COOKIE}.\n"
+
+#: cookiedg.src#STR_COOKIES_RECV_TITLE.STRING.TEXT
+msgid  "Cookie Reception"
+msgstr "Recepció de galetes"
+
+#: cookiedg.src#STR_COOKIES_SEND_START.STRING.TEXT
+msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr "L'%PRODUCTNAME ha desat les galetes per al servidor '${HOST}' que s'enviaran quan es demani el document ${PATH}.\nLes galetes contenen informació referent a determinats tipus d'URL. Alguns servidors les envien a l'%PRODUCTNAME, on es desen en accedir a determinats documents. Si més endavant l'%PRODUCTNAME carrega un document que, segons l'URL, correspon a un tipus de galeta ja rebuda, l'%PRODUCTNAME enviarà aquesta informació al servidor. D'aquesta manera els servidors poden fer un seguiment de l'estat d'una aplicació web (p. ex. quan es compra en línia).\n\nÉs recomanable configurar les galetes següents:\n\n"
+
+#: cookiedg.src#STR_COOKIES_SEND_TITLE.STRING.TEXT
+msgid  "Send Cookies"
+msgstr "Envia les galetes"
+
+#: filechanged.src#STR_FILECHANGED_TITLE.STRING.TEXT
+msgid  "Document Has Been Changed by Others"
+msgstr "El document ha estat modificat per altres"
+
+#: filechanged.src#STR_FILECHANGED_MSG.STRING.TEXT
+msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
+msgstr "El fitxer s'ha modificat des que el vau obrir per a edició a l'%PRODUCTNAME. Si deseu la vostra versió del document, se sobreescriuran els canvis fets per altri.\n\nVoleu desar-lo igualment?\n\n"
+
+#: filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.STRING.TEXT
+msgid  "~Save Anyway"
+msgstr "De~sa igualment"
+
+#: fltdlg.src#DLG_FILTER_SELECT.MODALDIALOG.TEXT
+msgid  "Filter Selection"
+msgstr "Selecció de filtres"
+
+#: ids.src#RID_KEEP_PASSWORD.STRING.TEXT
+msgid  "~Remember password until end of session"
+msgstr "~Recorda la contrasenya fins a la fi de la sessió"
+
+#: ids.src#RID_SAVE_PASSWORD.STRING.TEXT
+msgid  "~Remember password"
+msgstr "~Recorda la contrasenya"
+
+#: ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.STRING.TEXT
+msgid  "Invalid Document Signature"
+msgstr "Signatura de document no vàlida"
+
+#: ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.STRING.TEXT
+msgid  "Non-Encrypted Streams"
+msgstr "Seqüències de dades no xifrades"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation executed on $(ARG1) was aborted."
+msgstr "S'ha interromput l'operació executada a $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Access to $(ARG1) was denied."
+msgstr "S'ha denegat l'accés a $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) already exists."
+msgstr "$(ARG1) ja existeix."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Target already exists."
+msgstr "La destinació ja existeix."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr "Esteu a punt de desar/exportar una biblioteca de basic protegida amb contrasenya que conté els mòduls \n$(ARG1)\nque són massa grans per poder-se desar en format binari. Si voleu que els usuaris que no tinguin accés a la contrasenya puguin executar macros d'aquests mòduls, heu de dividir la biblioteca en mòduls més petits. Voleu continuar desant/exportant la biblioteca?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The data from $(ARG1) has an incorrect checksum."
+msgstr "Les dades de $(ARG1) tenen una suma de verificació incorrecta."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgstr "No s'ha pogut crear l'objecte $(ARG1) al directori $(ARG2)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Data of $(ARG1) could not be read."
+msgstr "No es poden llegir les dades de $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The seek operation on $(ARG1) could not be performed."
+msgstr "No s'ha pogut completar la cerca a $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The tell operation on $(ARG1) could not be performed."
+msgstr "No s'ha pogut executar l'operació tell a $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Data for $(ARG1) could not be written."
+msgstr "No s'han pogut escriure les dades per a $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Action impossible: $(ARG1) is the current directory."
+msgstr "Acció no permesa: $(ARG1) és el directori actual."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not ready."
+msgstr "$(ARG1) no està preparat."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr "Acció no permesa: $(ARG1) i $(ARG2) són dispositius diferents (unitats)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "General input/output error while accessing $(ARG1)."
+msgstr "Error general d'entrada/sortida en accedir a $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "An attempt was made to access $(ARG1) in an invalid way."
+msgstr "S'ha intentat accedir de manera no vàlida a $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) contains invalid characters."
+msgstr "$(ARG1) conté caràcters no vàlids."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The device (drive) $(ARG1) is invalid."
+msgstr "El dispositiu (unitat) $(ARG1) no és vàlid."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The data from $(ARG1) has an invalid length."
+msgstr "Les dades de $(ARG1) tenen una longitud incorrecta."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) was started with an invalid parameter."
+msgstr "S'ha iniciat l'operació a $(ARG1) amb un paràmetre no vàlid."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
+msgstr "L'operació no es pot realitzar perquè $(ARG1) conté caràcters comodí."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Error during shared access to $(ARG1)."
+msgstr "Error durant l'accés compartit a $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) contains misplaced characters."
+msgstr "$(ARG1) conté caràcters col·locats de manera incorrecta."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The name $(ARG1) contains too many characters."
+msgstr "El nom $(ARG1) conté massa caràcters."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) does not exist."
+msgstr "$(ARG1) no existeix."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The path $(ARG1) does not exist."
+msgstr "El camí $(ARG1) no existeix."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) is not supported on this operating system."
+msgstr "L'operació a $(ARG1) no és permesa en aquest sistema operatiu."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not a directory."
+msgstr "$(ARG1) no és un directori."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not a file."
+msgstr "$(ARG1) no és un fitxer."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "There is no space left on device $(ARG1)."
+msgstr "No hi ha espai lliure al dispositiu $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
+msgstr "L'operació a $(ARG1) no es pot realitzar perquè hi ha massa fitxers oberts."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
+msgstr "L'operació a $(ARG1) no es pot realitzar perquè no hi ha prou memòria."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr "L'operació a $(ARG1) no pot continuar perquè hi ha dades pendents."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) cannot be copied into itself."
+msgstr "$(ARG1) no es pot copiar dins de sí mateix."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Unknown input/output error while accessing $(ARG1)."
+msgstr "Error desconegut d'entrada/sortida en accedir a $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is write protected."
+msgstr "$(ARG1) està protegit contra escriptura."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not in the correct format."
+msgstr "$(ARG1) té un format incorrecte."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The version of $(ARG1) is not correct."
+msgstr "La versió de $(ARG1) és incorrecta."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Drive $(ARG1) does not exist."
+msgstr "La unitat $(ARG1) no existeix."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Folder $(ARG1) does not exist."
+msgstr "La carpeta $(ARG1) no existeix."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The installed Java version is not supported."
+msgstr "No es permet la versió instal·lada del Java."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The installed Java version $(ARG1) is not supported."
+msgstr "No es permet la versió instal·lada del Java $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
+msgstr "No es permet la versió del Java instal·lada, es requereix com a mínim la versió $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
+msgstr "No es permet la versió del Java $(ARG1), es requereix com a mínim la versió $(ARG2)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The data associated with the partnership is corrupted."
+msgstr "Les dades de l'associació estan malmeses."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The data associated with the partnership $(ARG1) is corrupted."
+msgstr "Les dades de l'associació $(ARG1) estan malmeses."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Volume $(ARG1) is not ready."
+msgstr "El volum $(ARG1) no està a punt."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not ready; please insert a storage medium."
+msgstr "$(ARG1) no està a punt; inseriu un mitjà d'emmagatzematge."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
+msgstr "El volum $(ARG1) no està a punt; inseriu un mitjà d'emmagatzematge."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Please insert disk $(ARG1)."
+msgstr "Inseriu el disc $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The object cannot be created in directory $(ARG1)."
+msgstr "No es pot crear l'objecte al directori $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
+msgstr "L'%PRODUCTNAME no pot protegir els fitxers de la sobreescriptura quan s'utilitza aquest protocol de transmissió. Voleu continuar?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
+msgstr "El fitxer '$(ARG1)' és corrupte i per tant no es pot obrir. L'%PRODUCTNAME pot intentar reparar el fitxer.\n\nLa corrupció podria ser el resultat de la manipulació del document o de danys en l'estructura del document deguts a la transmissió de dades.\n\nRecomanem que no confieu en el contingut del document reparat.\nL'execució de macros està inhabilitada per a aquest document.\n\nVoleu que l'%PRODUCTNAME repari el fitxer?\n"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgstr "El fitxer '$(ARG1)' no es pot reparar i per tant no es pot obrir."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr "La configuració de les dades a $(ARG1) ha quedat malmesa. Sense aquestes dades algunes funcions potser no operen correctament.\nEsteu segurs de voler iniciar l'%PRODUCTNAME sense les dades corruptes de configuració?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr "El fitxer de la configuració personal '$(ARG1)' ha quedat malmès i s'ha d'eliminar per continuar. Part de la configuració personal es pot perdre\nEsteu segur de voler iniciar l'%PRODUCTNAME sense les dades de configuració que han quedat malmeses?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
+msgstr "La font de les dades de configuració '$(ARG1) no està disponible. Sense aquestes dades, algunes funcions poden funcionar de manera incorrecta."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr "La font de les dades de configuració '$(ARG1) no està disponible. Sense aquestes dades, algunes funcions poden funcionar de manera incorrecta. \nEsteu segurs de voler iniciar l'%PRODUCTNAME sense les dades de configuració que falten?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The form contains invalid data. Do you still want to continue?"
+msgstr "El formulari conté dades incorrectes. Esteu segur de voler continuar?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
+msgstr "El fitxer $(ARG1) està bloquejat per un altre usuari. Actualment no es pot donar cap altre accés d'escriptura en aquest fitxer."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
+msgstr "Teniu bloquejat el fitxer $(ARG1). Actualment no es pot donar cap altre accés d'escriptura en aquest fitxer."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file $(ARG1) is currently not locked by yourself."
+msgstr "Actualment no teniu bloquejat el fitxer $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgstr "El bloqueig obtingut anteriorment per al fitxer $(ARG1) ha vençut.\nAixò pot passar si hi ha problemes al servidor que gestiona el bloqueig del fitxer. No es pot garantir que les operacions d'escriptura en aquest fitxer no sobreescriguin els canvis que altres usuaris hagin pogut fer."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.TEXT
+msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr "No s'ha pogut verificar la identitat del lloc $(ARG1).\n\nAbans d'acceptar aquest certificat, hauríeu d'examinar-lo amb deteniment. Voleu acceptar aquest certificat amb el propòsit d'identificar el lloc web $(ARG1)?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.TEXT
+msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
+msgstr "$(ARG1) és un lloc que empra un certificat de seguretat per xifrar les dades durant la transmissió, però el certificat va expirar el $(ARG2).\n\nComproveu que l'hora de l'ordinador és correcta."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.TEXT
+msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
+msgstr "Heu intentat establir una connexió amb $(ARG1), però el certificat de seguretat presentat pertany a $(ARG2). És possible, tot i que poc probable, que algú estigui provant d'interceptar la vostra comunicació amb aquest lloc web.\n\nSi sospiteu que el certificat mostrat no pertany a $(ARG1), cancel·leu la connexió i notifiqueu l'administrador del lloc.\n\nVoleu continuar igualment?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.TEXT
+msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr "No s'ha pogut validar el certificat. Examineu el certificat d'aquest lloc amb deteniment.\n\nSi sospiteu del certificat mostrat, cancel·leu la connexió i notifiqueu l'administrador del lloc."
+
+#: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.TEXT
+msgid  "Security Warning: Domain Name Mismatch"
+msgstr "Avís de seguretat: els noms de domini no coincideixen"
+
+#: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.TEXT
+msgid  "Security Warning: Server Certificate Expired"
+msgstr "Avís de seguretat: el certificat del servidor ha expirat"
+
+#: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.TEXT
+msgid  "Security Warning: Server Certificate Invalid"
+msgstr "Avís de seguretat: el certificat del servidor no és vàlid"
+
+#: lockfailed.src#STR_LOCKFAILED_MSG.STRING.TEXT
+msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
+msgstr "L'%PRODUCTNAME no ha pogut bloquejar el fitxer per a accés exclusiu, atès que no teniu permisos per crear un fitxer de bloqueig en aquesta ubicació."
+
+#: logindlg.src#DLG_UUI_LOGIN.MODALDIALOG.TEXT
+msgid  "Authentication Required"
+msgstr "Es necessita autenticació"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FIXEDTEXT.TEXT
+msgid  "Message from server:"
+msgstr "Missatge del servidor:"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FIXEDTEXT.TEXT
+msgid  "Enter user name and password for: \n%1"
+msgstr "Introduïu el nom d'usuari i la contrasenya per a: \n%1"
+
+#: logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.STRING.TEXT
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "Introduïu el nom d'usuari i la contrasenya per a: \n\"%2\" en %1"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FIXEDTEXT.TEXT
+msgid  "~Path"
+msgstr "~Camí"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FIXEDTEXT.TEXT
+msgid  "~User name"
+msgstr "Nom d'~usuari"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FIXEDTEXT.TEXT
+msgid  "Pass~word"
+msgstr "Contra~senya"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FIXEDTEXT.TEXT
+msgid  "A~ccount"
+msgstr "~Compte"
+
+#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CHECKBOX.TEXT
+msgid  "~Remember password"
+msgstr "~Recorda la contrasenya"
+
+#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.CHECKBOX.TEXT
+msgid  "~Use system credentials"
+msgstr "~Usa les credencials del sistema"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.MODALDIALOG.TEXT
+msgid  "Set Master Password"
+msgstr "Establiu la contrasenya mestra"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FIXEDTEXT.TEXT
+msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
+msgstr "Les contrasenyes per a les connexions web estan protegides per una contrasenya mestra. Se us demanarà que la introduïu un cop per sessió, si és que l'%PRODUCTNAME recupera una contrasenya de la llista de contrasenyes protegides."
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FIXEDTEXT.TEXT
+msgid  "~Enter password"
+msgstr "~Introduïu la contrasenya"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FIXEDTEXT.TEXT
+msgid  "~Reenter password"
+msgstr "~Torneu a introduir la contrasenya"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FIXEDTEXT.TEXT
+msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
+msgstr "Precaució: assegureu-vos de recordar la contrasenya mestra que heu configurat. Si l'oblideu, no podreu accedir a cap informació protegida per aquesta. Les contrasenyes distingeixen majúscules de minúscules i han de tenir com a mínim cinc caràcters."
+
+#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FIXEDTEXT.TEXT
+msgid  "Enter password"
+msgstr "Introduïu la contrasenya"
+
+#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HELPBUTTON.TEXT
+msgid  "Enter Master Password"
+msgstr "Introduïu la contrasenya mestra"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.MODALDIALOG.TEXT
+msgid  "File Exists"
+msgstr "El fitxer existeix"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.PUSHBUTTON.TEXT
+msgid  "Replace"
+msgstr "Reemplaça"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.PUSHBUTTON.TEXT
+msgid  "Rename"
+msgstr "Canvia el nom"
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.MODALDIALOG.TEXT
+msgid  "%PRODUCTNAME Update Available"
+msgstr "Hi ha una actualització de l'%PRODUCTNAME disponible"
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FIXEDTEXT.TEXT
+msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr "Aquest document s'ha creat amb una versió més nova de l'%PRODUCTNAME. Pot contenir característiques no compatibles amb la vostra versió.\n\nFeu clic a 'Actualitza ara...' per executar l'actualització en línia i obtenir la darrera versió de l'%PRODUCTNAME."
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PUSHBUTTON.TEXT
+msgid  "~Update Now..."
+msgstr "~Actualitza ara..."
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CANCELBUTTON.TEXT
+msgid  "~Later"
+msgstr "~Més tard"
+
+#: openlocked.src#STR_OPENLOCKED_TITLE.STRING.TEXT
+msgid  "Document in Use"
+msgstr "Document en ús"
+
+#: openlocked.src#STR_OPENLOCKED_MSG.STRING.TEXT
+msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
+msgstr "El fitxer de document '$(ARG1)' està bloquejat per a edició per:\n\n$(ARG2)\n\nObriu el document en mode només de lectura o obriu una còpia del document per editar-lo.\n\n"
+
+#: openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.STRING.TEXT
+msgid  "Open ~Read-Only"
+msgstr "Obre només de ~lectura"
+
+#: openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.STRING.TEXT
+msgid  "Open ~Copy"
+msgstr "Obre una ~còpia"
+
+#: openlocked.src#STR_UNKNOWNUSER.STRING.TEXT
+msgid  "Unknown User"
+msgstr "Usuari desconegut"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.STRING.TEXT
+msgid  "Enter password to open file: \n"
+msgstr "Introduïu la contrasenya per obrir el fitxer: \n"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.STRING.TEXT
+msgid  "Enter password to modify file: \n"
+msgstr "Introduïu la contrasenya per modificar el fitxer: \n"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.STRING.TEXT
+msgid  "Enter password: "
+msgstr "Introduïu la contrasenya: "
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.STRING.TEXT
+msgid  "Confirm password: "
+msgstr "Confirmeu la contrasenya: "
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.STRING.TEXT
+msgid  "Set Password"
+msgstr "Establiu la contrasenya"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.STRING.TEXT
+msgid  "Enter Password"
+msgstr "Introduïu la contrasenya"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.STRING.TEXT
+msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
+msgstr "La contrasenya de confirmació no coincideix amb la contrasenya. Establiu novament la contrasenya introduint la mateixa contrasenya en ambdós camps."
+
+#: passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.STRING.TEXT
+msgid  "The password is incorrect. The file cannot be opened."
+msgstr "La contrasenya és incorrecta. No es pot obrir el fitxer."
+
+#: passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.STRING.TEXT
+msgid  "The password is incorrect. The file cannot be modified."
+msgstr "La contrasenya és incorrecta. No es pot modificar el fitxer."
+
+#: passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.STRING.TEXT
+msgid  "The master password is incorrect."
+msgstr "Heu introduït una contrasenya mestra equivocada. L'%PRODUCTNAME no ha pogut accedir a la informació d'inici de sessió web protegida per la contrasenya mestra.\n\nNota: les contrasenyes distingeixen majúscules de minúscules i tenen com a mínim cinc caràcters."
+
+#: passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.STRING.TEXT
+msgid  "The password is incorrect."
+msgstr "La contrasenya no és correcta."
+
+#: passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
+msgid  "The password confirmation does not match."
+msgstr "La confirmació de contrasenya no coincideix."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.MODALDIALOG.TEXT
+msgid  "%PRODUCTNAME - Security Warning"
+msgstr "%PRODUCTNAME - Avís de seguretat"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.FIXEDTEXT.TEXT
+msgid  "The document contains document macros signed by:"
+msgstr "El document conté macros de document signades per:"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.FIXEDTEXT.TEXT
+msgid  "The document contains document macros."
+msgstr "El document conté macros de document."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.PUSHBUTTON.TEXT
+msgid  "View Signatures..."
+msgstr "Visualitza signatures..."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FIXEDTEXT.TEXT
+msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr "Les macros poden contenir virus. Sempre és segur inhabilitar les macros en els documents. Si inhabiliteu les macros podeu perdre la funcionalitat que proporcionen les macros de document."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CHECKBOX.TEXT
+msgid  "Always trust macros from this source"
+msgstr "Confia sempre en les macros d'aquest origen"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.OKBUTTON.TEXT
+msgid  "~Enable Macros"
+msgstr "~Habilita les macros"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.CANCELBUTTON.TEXT
+msgid  "~Disable Macros"
+msgstr "~Inhabilita les macros"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.MODALDIALOG.TEXT
+msgid  "Security Warning: "
+msgstr "Avís de seguretat: "
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.FIXEDTEXT.TEXT
+msgid  "No Text"
+msgstr "Sense text"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.PUSHBUTTON.TEXT
+msgid  "View Certificate"
+msgstr "Visualitza el certificat"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.CANCELBUTTON.TEXT
+msgid  "Cancel Connection"
+msgstr "Cancel·la la connexió"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.PUSHBUTTON.TEXT
+msgid  "Continue"
+msgstr "Continua"
+
+#: trylater.src#STR_TRYLATER_TITLE.STRING.TEXT
+msgid  "Document in Use"
+msgstr "Document en ús"
+
+#: trylater.src#STR_TRYLATER_MSG.STRING.TEXT
+msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
+msgstr "El fitxer de document '$(ARG1)' està bloquejat per a edició per:\n\n$(ARG2)\n\nTorneu a provar de desar el document més tard o deseu-ne una còpia.\n\n"
+
+#: trylater.src#STR_TRYLATER_RETRYSAVING_BTN.STRING.TEXT
+msgid  "~Retry Saving"
+msgstr "~Reintenta desar"
+
+#: trylater.src#STR_TRYLATER_SAVEAS_BTN.STRING.TEXT
+msgid  "~Save As..."
+msgstr "Anomena i de~sa..."
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.MODALDIALOG.TEXT
+msgid  "Website Certified by an Unknown Authority"
+msgstr "Lloc web certificat per una autoritat desconeguda"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.PUSHBUTTON.TEXT
+msgid  "Examine Certificate..."
+msgstr "Examina el certificat..."
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.HELPBUTTON.TEXT
+msgid  "Help"
+msgstr "Ajuda"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.PUSHBUTTON.TEXT
+msgid  "OK"
+msgstr "D'acord"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.RADIOBUTTON.TEXT
+msgid  "Accept this certificate temporarily for this session"
+msgstr "Accepta aquest certificat temporalment per a aquesta sessió"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RADIOBUTTON.TEXT
+msgid  "Do not accept this certificate and do not connect to this Web site"
+msgstr "No acceptis aquest certificat i no et connectis a aquest lloc web"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FIXEDTEXT.TEXT
+msgid  "No Text"
+msgstr "Sense text"

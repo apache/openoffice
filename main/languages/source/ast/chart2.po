@@ -31,10 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.MODALDIALOG.TEXT
-msgid  "Data Table"
-msgstr "Tabla de datos"
-
 #: controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.TOOLBOXITEM.TEXT
 msgid  "Insert Row"
 msgstr "Inxertar filera"
@@ -67,10 +63,6 @@ msgstr "Baxar la filera"
 msgid  "Data Ranges"
 msgstr "Rangos de datos"
 
-#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FIXEDLINE.TEXT
-msgid  "Axes"
-msgstr "Exes"
-
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FIXEDLINE.TEXT
 msgid  "Major grids"
 msgstr "Cuadrícules principales"
@@ -86,10 +78,6 @@ msgstr "Exa ~Y"
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CHECKBOX.TEXT
 msgid  "~Z axis"
 msgstr "Exa ~Z"
-
-#: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FIXEDLINE.TEXT
-msgid  "Secondary axes"
-msgstr "Exes secundaries"
 
 #: controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FIXEDLINE.TEXT
 msgid  "Minor grids"
@@ -119,10 +107,6 @@ msgstr "Párrafu"
 msgid  "Indents & Spacing"
 msgstr "Sangría y espaciáu"
 
-#: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
-msgid  "Alignment"
-msgstr "Alliñamientu"
-
 #: controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
 msgid  "Asian Typography"
 msgstr "Tipografía Asiática"
@@ -134,74 +118,6 @@ msgstr "Tabulación"
 #: controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TABDIALOG.TEXT
 msgid  "3D View"
 msgstr "Vista en 3D"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM1.STRINGLIST.ITEM
-msgid  "Box"
-msgstr "Caxa"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM2.STRINGLIST.ITEM
-msgid  "Cylinder"
-msgstr "Cilindru"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM3.STRINGLIST.ITEM
-msgid  "Cone"
-msgstr "Conu"
-
-#: controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.ITEM4.STRINGLIST.ITEM
-msgid  "Pyramid"
-msgstr "Pirámide"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM1.STRINGLIST.ITEM
-msgid  "Best fit"
-msgstr "Meyor axuste"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM2.STRINGLIST.ITEM
-msgid  "Center"
-msgstr "Centrar"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM3.STRINGLIST.ITEM
-msgid  "Above"
-msgstr "Enriba"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM4.STRINGLIST.ITEM
-msgid  "Top left"
-msgstr "Arriba izquierda"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM5.STRINGLIST.ITEM
-msgid  "Left"
-msgstr "Izquierda"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM6.STRINGLIST.ITEM
-msgid  "Bottom left"
-msgstr "Abaxo izquierda"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM7.STRINGLIST.ITEM
-msgid  "Below"
-msgstr "Abaxo"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM8.STRINGLIST.ITEM
-msgid  "Bottom right"
-msgstr "Abaxo drecha"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM9.STRINGLIST.ITEM
-msgid  "Right"
-msgstr "Drecha"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM10.STRINGLIST.ITEM
-msgid  "Top right"
-msgstr "Arriba drecha"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM11.STRINGLIST.ITEM
-msgid  "Inside"
-msgstr "Dientro"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM12.STRINGLIST.ITEM
-msgid  "Outside"
-msgstr "Fuera"
-
-#: controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.ITEM13.STRINGLIST.ITEM
-msgid  "Near origin"
-msgstr "Averao al orixe"
 
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).CB_VALUE_AS_NUMBER.CHECKBOX.TEXT
 msgid  "Show value as ~number"
@@ -231,10 +147,6 @@ msgstr "Amosar guía de ~lleenda"
 msgid  "Place~ment"
 msgstr "Alluga~mientu"
 
-#: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FL_LABEL_ROTATE.FIXEDLINE.TEXT
-msgid  "Rotate Text"
-msgstr "Xirar testu"
-
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_DEGREES.FIXEDTEXT.TEXT
 msgid  "~Degrees"
 msgstr "~Graos"
@@ -242,26 +154,6 @@ msgstr "~Graos"
 #: controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL(_XPOS,_YPOS_).FT_LABEL_TEXTDIR.FIXEDTEXT.TEXT
 msgid  "Te~xt direction"
 msgstr "Direición del te~stu"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.STRINGLIST.ITEM
-msgid  "Standard Error"
-msgstr "Error estándar"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.STRINGLIST.ITEM
-msgid  "Standard Deviation"
-msgstr "Esviación estándar"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.STRINGLIST.ITEM
-msgid  "Variance"
-msgstr "Varianza"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.STRINGLIST.ITEM
-msgid  "Error Margin"
-msgstr "Marxe d'error"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_ERROR.FIXEDLINE.TEXT
-msgid  "Error Category"
-msgstr "Categoría de fallu"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_NONE.RADIOBUTTON.TEXT
 msgid  "~None"
@@ -279,10 +171,6 @@ msgstr "~Porcentaxe"
 msgid  "Cell ~Range"
 msgstr "~Rangu de caxella"
 
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_PARAMETERS.FIXEDLINE.TEXT
-msgid  "Parameters"
-msgstr "Parámetros"
-
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_POSITIVE.FIXEDTEXT.TEXT
 msgid  "P~ositive (+)"
 msgstr "P~ositivu (+)"
@@ -290,14 +178,6 @@ msgstr "P~ositivu (+)"
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FT_NEGATIVE.FIXEDTEXT.TEXT
 msgid  "~Negative (-)"
 msgstr "~Negativu (-)"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).CB_SYN_POS_NEG.CHECKBOX.TEXT
-msgid  "Same value for both"
-msgstr "El mesmu valor pa dambos"
-
-#: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).FL_INDICATE.FIXEDLINE.TEXT
-msgid  "Error Indicator"
-msgstr "Indicador de fallos"
 
 #: controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(AVAILABLEWIDTH,_YOFFSET).RB_BOTH.RADIOBUTTON.TEXT
 msgid  "Positive ~and Negative"
@@ -347,18 +227,6 @@ msgstr "E~xa Z"
 msgid  "Space"
 msgstr "Espaciu"
 
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM2.STRINGLIST.ITEM
-msgid  "Comma"
-msgstr "Coma"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM3.STRINGLIST.ITEM
-msgid  "Semicolon"
-msgstr "Puntu y coma"
-
-#: controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.ITEM4.STRINGLIST.ITEM
-msgid  "New line"
-msgstr "Llinia nueva"
-
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_MAINTITLE.FIXEDTEXT.TEXT
 msgid  "~Title"
 msgstr "~Títulu"
@@ -366,10 +234,6 @@ msgstr "~Títulu"
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_SUBTITLE.FIXEDTEXT.TEXT
 msgid  "~Subtitle"
 msgstr "~Subtítulu"
-
-#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_AXES.FIXEDLINE.TEXT
-msgid  "Axes"
-msgstr "Exes"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_X_AXIS.FIXEDTEXT.TEXT
 msgid  "~X axis"
@@ -382,10 +246,6 @@ msgstr "Exa ~Y"
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_Z_AXIS.FIXEDTEXT.TEXT
 msgid  "~Z axis"
 msgstr "Exa ~Z"
-
-#: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FL_SECONDARY_AXES.FIXEDLINE.TEXT
-msgid  "Secondary Axes"
-msgstr "Exes secundaries"
 
 #: controller/dialogs/res_Titlesx_tmpl.hrc#TITLES(_XPOS,_YPOS,_AVAILABLEWIDTH,_INDENTLABEL,_FIXEDLINESHEIGHT_).FT_TITLE_SECONDARY_X_AXIS.FIXEDTEXT.TEXT
 msgid  "X ~axis"
@@ -419,10 +279,6 @@ msgstr "E~sponencial"
 msgid  "~Power"
 msgstr "~Poder"
 
-#: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).FL_EQUATION.FIXEDLINE.TEXT
-msgid  "Equation"
-msgstr "Ecuación"
-
 #: controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(AVAILABLEWIDTH,_YOFFSET).CB_SHOW_EQUATION.CHECKBOX.TEXT
 msgid  "Show ~equation"
 msgstr "Amosar ~ecuación"
@@ -455,37 +311,9 @@ msgstr "~Númberu de llinies"
 msgid  "Separator"
 msgstr "Separtador"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.STRING.TEXT
-msgid  "Column"
-msgstr "Columna"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.STRING.TEXT
-msgid  "Bar"
-msgstr "Barra"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.STRING.TEXT
-msgid  "Area"
-msgstr "Área"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.STRING.TEXT
-msgid  "Pie"
-msgstr "Tarta"
-
 #: controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.STRING.TEXT
 msgid  "Exploded Pie Chart"
 msgstr "Gráficu de tarta espardíu"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.STRING.TEXT
-msgid  "Exploded Donut Chart"
-msgstr "Gráficu d'aniellos espardíu"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DONUT.STRING.TEXT
-msgid  "Donut"
-msgstr "Aniellu"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.STRING.TEXT
-msgid  "Line"
-msgstr "Llinia"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.STRING.TEXT
 msgid  "XY (Scatter)"
@@ -499,29 +327,9 @@ msgstr "Puntos y llinies"
 msgid  "Points Only"
 msgstr "Sólo puntos"
 
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.STRING.TEXT
-msgid  "Lines Only"
-msgstr "Sólo llinies"
-
 #: controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.STRING.TEXT
 msgid  "3D Lines"
 msgstr "Llinies 3D"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.STRING.TEXT
-msgid  "Column and Line"
-msgstr "Columna y llinia"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.STRING.TEXT
-msgid  "Columns and Lines"
-msgstr "Columnes y llinies"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.STRING.TEXT
-msgid  "Stacked Columns and Lines"
-msgstr "Columnes y llinies apilaes"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.STRING.TEXT
-msgid  "Net"
-msgstr "Rede"
 
 #: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.STRING.TEXT
 msgid  "Stock"
@@ -542,34 +350,6 @@ msgstr "Gráficu de cotizaciones 3"
 #: controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.STRING.TEXT
 msgid  "Stock Chart 4"
 msgstr "Gráficu de cotizaciones 4"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.STRING.TEXT
-msgid  "Normal"
-msgstr "Normal"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_STACKED.STRING.TEXT
-msgid  "Stacked"
-msgstr "Apiláu"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.STRING.TEXT
-msgid  "Percent Stacked"
-msgstr "Porcentaxe apiláu"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_DEEP.STRING.TEXT
-msgid  "Deep"
-msgstr "Fondu"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_FILLED.STRING.TEXT
-msgid  "Filled"
-msgstr "Rellenu"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.STRING.TEXT
-msgid  "Bubble"
-msgstr "Burbuxa"
-
-#: controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.STRING.TEXT
-msgid  "Bubble Chart"
-msgstr "Gráficu de Burbuxa"
 
 #: controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.STRING.TEXT
 msgid  "Numbers are required. Check your input."
@@ -595,10 +375,6 @@ msgstr "L'intervalu mayor tien de ser mayor que'l intervalu menor. Revisa la to 
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
 msgstr "Los intervalos mayor y menor tienen de ser mayores o iguales que la resolución. Revisa la to entrada."
 
-#: controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.STRING.TEXT
-msgid  "Chart Wizard"
-msgstr "Asistente de gráficu"
-
 #: controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.STRING.TEXT
 msgid  "Smooth Lines"
 msgstr "Llinies suaves"
@@ -611,25 +387,13 @@ msgstr "Formatu de númberu pa valor de porcentaxe."
 msgid  "Chart Type"
 msgstr "Triba de gráficu"
 
-#: controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.STRING.TEXT
-msgid  "Data Range"
-msgstr "Rangu de datos"
-
 #: controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.STRING.TEXT
 msgid  "Chart Elements"
 msgstr "Elementos del gráficu"
 
-#: controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.STRING.TEXT
-msgid  "Chart Location"
-msgstr "Allugamientu del gráficu"
-
 #: controller/dialogs/Strings.src#STR_PAGE_LINE.STRING.TEXT
 msgid  "Line"
 msgstr "Llinia"
-
-#: controller/dialogs/Strings.src#STR_PAGE_BORDER.STRING.TEXT
-msgid  "Borders"
-msgstr "Llendes"
 
 #: controller/dialogs/Strings.src#STR_PAGE_AREA.STRING.TEXT
 msgid  "Area"
@@ -646,14 +410,6 @@ msgstr "Fonte"
 #: controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.STRING.TEXT
 msgid  "Font Effects"
 msgstr "Efeutos de fonte"
-
-#: controller/dialogs/Strings.src#STR_PAGE_NUMBERS.STRING.TEXT
-msgid  "Numbers"
-msgstr "Númberos"
-
-#: controller/dialogs/Strings.src#STR_PAGE_POSITION.STRING.TEXT
-msgid  "Position"
-msgstr "Allugamientu"
 
 #: controller/dialogs/Strings.src#STR_BUTTON_UP.STRING.TEXT
 msgid  "Up"
@@ -675,10 +431,6 @@ msgstr "Opciones"
 msgid  "Scale"
 msgstr "Escala"
 
-#: controller/dialogs/Strings.src#STR_PAGE_POSITIONING.STRING.TEXT
-msgid  "Positioning"
-msgstr "Posición"
-
 #: controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.STRING.TEXT
 msgid  "Type"
 msgstr "Triba"
@@ -687,18 +439,6 @@ msgstr "Triba"
 msgid  "Y Error Bars"
 msgstr "Barres d'error Y"
 
-#: controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.STRING.TEXT
-msgid  "Alignment"
-msgstr "Alliñamientu"
-
-#: controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.STRING.TEXT
-msgid  "Perspective"
-msgstr "Perspeutiva"
-
-#: controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.STRING.TEXT
-msgid  "Appearance"
-msgstr "Aspeutu"
-
 #: controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.STRING.TEXT
 msgid  "Illumination"
 msgstr "Illuminación"
@@ -706,14 +446,6 @@ msgstr "Illuminación"
 #: controller/dialogs/Strings.src#STR_PAGE_ASIAN.STRING.TEXT
 msgid  "Asian Typography"
 msgstr "Tipografía Asiática"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.STRING.TEXT
-msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr "La llinia del valor mediu con un valor de %AVERAGE_VALUE y una esviación estándar del %STD_DEVIATION"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AXIS.STRING.TEXT
-msgid  "Axis"
-msgstr "Exa"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.STRING.TEXT
 msgid  "X Axis"
@@ -726,18 +458,6 @@ msgstr "Exa Y"
 #: controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.STRING.TEXT
 msgid  "Z Axis"
 msgstr "Exa Z"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.STRING.TEXT
-msgid  "Secondary X Axis"
-msgstr "Exa X secundaria"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.STRING.TEXT
-msgid  "Secondary Y Axis"
-msgstr "Exa Y secundaria"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_AXES.STRING.TEXT
-msgid  "Axes"
-msgstr "Exes"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_GRIDS.STRING.TEXT
 msgid  "Grids"
@@ -771,10 +491,6 @@ msgstr "Cuadricula menor de la exa Y"
 msgid  "Z Axis Minor Grid"
 msgstr "Cuadricula menor de la exa Z"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_LEGEND.STRING.TEXT
-msgid  "Legend"
-msgstr "Lleenda"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE.STRING.TEXT
 msgid  "Title"
 msgstr "Títulu"
@@ -786,10 +502,6 @@ msgstr "Títulos"
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.STRING.TEXT
 msgid  "Main Title"
 msgstr "Títulu principal"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.STRING.TEXT
-msgid  "Subtitle"
-msgstr "Subtítulu"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.STRING.TEXT
 msgid  "X Axis Title"
@@ -819,10 +531,6 @@ msgstr "Etiqueta"
 msgid  "Data Labels"
 msgstr "Etiquetes de Datos"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.STRING.TEXT
-msgid  "Data Point"
-msgstr "Puntu de datos"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.STRING.TEXT
 msgid  "Data Points"
 msgstr "Puntos de datos"
@@ -847,18 +555,6 @@ msgstr "Curves de tendencia"
 msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
 msgstr "Curva de regresión %FORMULA con exactitú R² = %RSQUARED"
 
-#: controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.STRING.TEXT
-msgid  "Mean Value Line"
-msgstr "Llinia del valor mediu"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.STRING.TEXT
-msgid  "Equation"
-msgstr "Ecuación"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.STRING.TEXT
-msgid  "Error Bars"
-msgstr "Barres d'error"
-
 #: controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.STRING.TEXT
 msgid  "Stock Loss"
 msgstr "Perda"
@@ -870,18 +566,6 @@ msgstr "Ganancia"
 #: controller/dialogs/Strings.src#STR_OBJECT_PAGE.STRING.TEXT
 msgid  "Chart Area"
 msgstr "Área de gráficos"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.STRING.TEXT
-msgid  "Chart"
-msgstr "Gráficu"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.STRING.TEXT
-msgid  "Chart Wall"
-msgstr "Planu llateral del gráficu"
-
-#: controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.STRING.TEXT
-msgid  "Chart Floor"
-msgstr "Planu baxeru del gráficu"
 
 #: controller/dialogs/Strings.src#STR_OBJECT_SHAPE.STRING.TEXT
 msgid  "Drawing Object"
@@ -902,14 +586,6 @@ msgstr "Fonte de lluz %LIGHTNUMBER"
 #: controller/dialogs/Strings.src#STR_TIP_DATASERIES.STRING.TEXT
 msgid  "Data Series '%SERIESNAME'"
 msgstr "Serie de datos '%SERIESNAME'"
-
-#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.STRING.TEXT
-msgid  "Data Point %POINTNUMBER"
-msgstr "Puntu de datos %POINTNUMBER"
-
-#: controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.STRING.TEXT
-msgid  "Values: %POINTVALUES"
-msgstr "Valores: %POINTVALUES"
 
 #: controller/dialogs/Strings.src#STR_TIP_DATAPOINT.STRING.TEXT
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
@@ -975,14 +651,6 @@ msgstr "Nun se ye quien a completar esta función colos oxetos esbillaos."
 msgid  "Edit text"
 msgstr "Editar testu"
 
-#: controller/dialogs/Strings.src#STR_COLUMN_LABEL.STRING.TEXT
-msgid  "Column %COLUMNNUMBER"
-msgstr "Columna %COLUMNNUMBER"
-
-#: controller/dialogs/Strings.src#STR_ROW_LABEL.STRING.TEXT
-msgid  "Row %ROWNUMBER"
-msgstr "Filera %ROWNUMBER"
-
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.STRING.TEXT
 msgid  "Name"
 msgstr "Nome"
@@ -994,10 +662,6 @@ msgstr "Valores-X"
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_Y.STRING.TEXT
 msgid  "Y-Values"
 msgstr "Valores-Y"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.STRING.TEXT
-msgid  "Bubble Sizes"
-msgstr "Tamaños de burbuxa"
 
 #: controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.STRING.TEXT
 msgid  "X-Error-Bars"
@@ -1031,25 +695,9 @@ msgstr "Abrir valores"
 msgid  "Close Values"
 msgstr "Zarrar valores"
 
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.STRING.TEXT
-msgid  "Low Values"
-msgstr "Valores baxos"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.STRING.TEXT
-msgid  "High Values"
-msgstr "Valores altos"
-
-#: controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.STRING.TEXT
-msgid  "Categories"
-msgstr "Categoríes"
-
 #: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.STRING.TEXT
 msgid  "Unnamed Series"
 msgstr "Serie ensin nome"
-
-#: controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.STRING.TEXT
-msgid  "Unnamed Series %NUMBER"
-msgstr "Serie ensin nome %NUMBER"
 
 #: controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.STRING.TEXT
 msgid  "Select Range for %VALUETYPE of %SERIESNAME"
@@ -1075,14 +723,6 @@ msgstr "Esbillar rangu pa barres d'error negatives"
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
 msgstr "La to cabera entrada ye incorreuta.\n¿Inorar esti cambéu y zarrar el diálogu?"
 
-#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.STRING.TEXT
-msgid  "Left-to-right"
-msgstr "Esquierda-a-drecha"
-
-#: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.STRING.TEXT
-msgid  "Right-to-left"
-msgstr "Drecha-a-esquierda"
-
 #: controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.STRING.TEXT
 msgid  "Use superordinate object settings"
 msgstr "Usar les configuraciones del oxetu superior"
@@ -1090,18 +730,6 @@ msgstr "Usar les configuraciones del oxetu superior"
 #: controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.STRING.TEXT
 msgid  "Negative and Positive"
 msgstr "Negativu y Positivu"
-
-#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.STRING.TEXT
-msgid  "Negative"
-msgstr "Negativu"
-
-#: controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.STRING.TEXT
-msgid  "Positive"
-msgstr "Positivu"
-
-#: controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.STRING.TEXT
-msgid  "From Data Table"
-msgstr "Dende la tabla de datos"
 
 #: controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.STRING.TEXT
 msgid  "Linear (%SERIESNAME)"
@@ -1138,10 +766,6 @@ msgstr "Bordes del ~oxetu"
 #: controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.CHECKBOX.TEXT
 msgid  "~Rounded edges"
 msgstr "Bordes a~rrondiaos"
-
-#: controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#DEFINE.CUSTOMUNITTEXT
-msgid  " degrees"
-msgstr " graos"
 
 #: controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CHECKBOX.TEXT
 msgid  "~Right-angled axes"
@@ -1191,10 +815,6 @@ msgstr "Disposición ve~rtical"
 msgid  "~Degrees"
 msgstr "~Graos"
 
-#: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FIXEDLINE.TEXT
-msgid  "Text flow"
-msgstr "Fluxu del testu"
-
 #: controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CHECKBOX.TEXT
 msgid  "O~verlap"
 msgstr "So~breponer"
@@ -1227,29 +847,13 @@ msgstr "A~utomáticu"
 msgid  "Te~xt direction"
 msgstr "Dir~eición d'escritura"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FIXEDLINE.TEXT
-msgid  "Axis line"
-msgstr "Llinia d'exes"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FIXEDTEXT.TEXT
 msgid  "~Cross other axis at"
 msgstr "~Crucia otres exes en"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM1.STRINGLIST.ITEM
-msgid  "Start"
-msgstr "Aniciu"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM2.STRINGLIST.ITEM
 msgid  "End"
 msgstr "Fin"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM3.STRINGLIST.ITEM
-msgid  "Value"
-msgstr "Valor"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.ITEM4.STRINGLIST.ITEM
-msgid  "Category"
-msgstr "Categoría"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CHECKBOX.TEXT
 msgid  "Axis ~between categories"
@@ -1263,33 +867,9 @@ msgstr "Etiquetes"
 msgid  "~Place labels"
 msgstr "~Allugar etiquetes"
 
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM1.STRINGLIST.ITEM
-msgid  "Near axis"
-msgstr "Cerca de la exa"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM2.STRINGLIST.ITEM
-msgid  "Near axis (other side)"
-msgstr "Cerca de la exa (al otru llau)"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM3.STRINGLIST.ITEM
-msgid  "Outside start"
-msgstr "Aniciu esterior"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.ITEM4.STRINGLIST.ITEM
-msgid  "Outside end"
-msgstr "Fin esterior"
-
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FIXEDTEXT.TEXT
 msgid  "~Distance"
 msgstr "~Distancia"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FIXEDLINE.TEXT
-msgid  "Interval marks"
-msgstr "Marques d'intervalu"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FIXEDTEXT.TEXT
-msgid  "Major:"
-msgstr "Mayor:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CHECKBOX.TEXT
 msgid  "~Inner"
@@ -1298,10 +878,6 @@ msgstr "~Interior"
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CHECKBOX.TEXT
 msgid  "~Outer"
 msgstr "~Esterior"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FIXEDTEXT.TEXT
-msgid  "Minor:"
-msgstr "Menor:"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CHECKBOX.TEXT
 msgid  "I~nner"
@@ -1318,10 +894,6 @@ msgstr "Allugar ~marques"
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM1.STRINGLIST.ITEM
 msgid  "At labels"
 msgstr "N'etiquetes"
-
-#: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM2.STRINGLIST.ITEM
-msgid  "At axis"
-msgstr "N'exes"
 
 #: controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.ITEM3.STRINGLIST.ITEM
 msgid  "At axis and labels"
@@ -1363,25 +935,9 @@ msgstr "Vista ~3D"
 msgid  "~Stack series"
 msgstr "~Serie apilada"
 
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RADIOBUTTON.TEXT
-msgid  "On top"
-msgstr "Enriba"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RADIOBUTTON.TEXT
-msgid  "Percent"
-msgstr "Porcentax"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RADIOBUTTON.TEXT
-msgid  "Deep"
-msgstr "Fondu"
-
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CHECKBOX.TEXT
 msgid  "S~mooth lines"
 msgstr "Llinies s~uaves"
-
-#: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PUSHBUTTON.TEXT
-msgid  "Properties..."
-msgstr "Propiedaes..."
 
 #: controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CHECKBOX.TEXT
 msgid  "~Sort by X values"
@@ -1400,270 +956,325 @@ msgid  "~Resolution"
 msgstr "~Resolución"
 
 #: controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "~Degree of polynomials"
-msgstr "~Orde de los puntos de datos"
-
-#: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
-msgid  "Customize data ranges for individual data series"
-msgstr "Personalizar los rangos de datos pa cada serie individual"
+msgstr "Grau ~de los polinomios"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~series"
 msgstr "Serie de ~datos"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data ranges"
 msgstr "~Rangos de datos"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ran~ge for %VALUETYPE"
 msgstr "Ran~gu pa %VALUETYPE"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Categories"
 msgstr "~Categoríes"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data ~labels"
 msgstr "Etiquetes de ~datos"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
 msgstr "~Amestar"
 
 #: controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Remove"
 msgstr "~Desaniciar"
 
-#: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "Allugamientu"
-
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text orientation"
 msgstr "Orientación del testu"
 
 #: controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
 msgstr "Direi~ción d'escritura"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Place chart"
 msgstr "Llantar gráficu"
 
 #: controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Insert in sheet"
 msgstr "~Inxertar nuna fueya"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Clockwise direction"
 msgstr "~Sen horariu"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Starting angle"
 msgstr "Ángulu anicial"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
 msgstr "~Graos"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Plot options"
 msgstr "Opciones del dibuxu"
 
 #: controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include ~values from hidden cells"
 msgstr "Incluyir ~valores de les caxelles anubríes"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Choose a data range"
 msgstr "Escueyi un rangu de datos"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Data range"
 msgstr "~Rangu de datos"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Data series in ~rows"
 msgstr "Serie de datos en ~fileres"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Data series in ~columns"
 msgstr "Serie de datos en ~columnes"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~First row as label"
 msgstr "Primera ~filera como etiqueta"
 
 #: controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "F~irst column as label"
 msgstr "Primera c~olumna como etiqueta"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Days"
 msgstr "Díes"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Months"
 msgstr "Meses"
 
 #: controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Years"
 msgstr "Años"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Scale"
 msgstr "Escala"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Reverse direction"
 msgstr "~Direición inversa"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Logarithmic scale"
 msgstr "Escala ~llogarítmica"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "T~ype"
 msgstr "Tr~iba"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Automatic"
 msgstr "Automáticu"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Text"
 msgstr "Testu"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Date"
 msgstr "Data"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Minimum"
 msgstr "~Mínimu"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Automatic"
 msgstr "~Automáticu"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ma~ximum"
 msgstr "Má~ximu"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CHECKBOX.TEXT
+#, fuzzy
 msgid  "A~utomatic"
 msgstr "A~utomáticu"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "R~esolution"
 msgstr "R~esolución"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Automat~ic"
 msgstr "Automát~icu"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ma~jor interval"
 msgstr "~Intervalu mayor"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Au~tomatic"
 msgstr "Aut~omáticu"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Minor inter~val count"
 msgstr "~Cuenta d'intervalu menor"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Minor inter~val"
 msgstr "Inter~valu menor"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Aut~omatic"
 msgstr "Automá~ticu"
 
 #: controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Re~ference value"
 msgstr "Valor de re~ferencia"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Align data series to"
 msgstr "Alliñar serie de datos a"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Primary Y axis"
 msgstr "Exa-Y primaria"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Secondary Y axis"
 msgstr "Exa Y secundaria"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
 msgstr "Preferencies"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Overlap"
 msgstr "~Sobreponer"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Spacing"
 msgstr "E~spaciáu"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Connection lines"
 msgstr "Llinies coneutores"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show ~bars side by side"
 msgstr "Amosar ~barres llau con llau"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Plot options"
 msgstr "Opciones de dibuxu"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Plot missing values"
 msgstr "Dibuxar valores que falten"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Leave gap"
 msgstr "~Dexar espaciu"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Assume zero"
 msgstr "~Asumir cero"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Continue line"
 msgstr "~Continuar la llinia"
 
 #: controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include ~values from hidden cells"
 msgstr "Incluyir ~valores de les caxelles anubríes"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TRISTATEBOX.TEXT
+#, fuzzy
 msgid  "Ve~rtically stacked"
 msgstr "Apiláu ve~rtical"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Degrees"
 msgstr "~Graos"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text orientation"
 msgstr "Orientación del testu"
 
 #: controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Te~xt direction"
 msgstr "Direición d'escrit~ura"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Choose titles, legend, and grid settings"
 msgstr "Escoyer títulos, lleendes y configuracion de cuadrícula"
 
 #: controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Display grids"
 msgstr "Amosar cuadrícules"

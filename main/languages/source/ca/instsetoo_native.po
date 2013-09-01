@@ -31,81 +31,17 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: Property.ulf#OOO_ARPCOMMENTSTEMPLATE
-msgid  "Comment in the Add-Remove-Programs Applet"
-msgstr "Comenta a la miniaplicació d'Afegeix o suprimeix programes"
-
-#: Property.ulf#OOO_ARPCONTACTTEMPLATE
-msgid  "Department for technical support"
-msgstr "Departament d'assistència tècnica"
-
 #: Property.ulf#OOO_ARPHELPLINKTEMPLATE
 msgid  "http://www.openoffice.org"
 msgstr "http://www.openoffice.org"
-
-#: Property.ulf#OOO_ARPHELPTELEPHONETEMPLATE
-msgid  "x-xxx-xxx-xxx"
-msgstr "x-xxx-xxx-xxx"
-
-#: Property.ulf#OOO_STR_NEW_DISPLAY_NAME
-msgid  "~New"
-msgstr "~Nou"
-
-#: Property.ulf#OOO_STR_EDIT
-msgid  "~Edit"
-msgstr "~Edita"
-
-#: Property.ulf#OOO_STR_MS_WORD_DOCUMENT
-msgid  "Microsoft Word Document"
-msgstr "Document del Microsoft Word"
-
-#: Property.ulf#OOO_STR_MS_WORD_TEMPLATE
-msgid  "Microsoft Word Template"
-msgstr "Plantilla del Microsoft Word"
 
 #: Property.ulf#OOO_STR_MS_EXCEL_WORKSHEET
 msgid  "Microsoft Excel Worksheet"
 msgstr "Full de càlcul del Microsoft Excel"
 
-#: Property.ulf#OOO_STR_MS_EXCEL_TEMPLATE
-msgid  "Microsoft Excel Template"
-msgstr "Plantilla del Microsoft Excel"
-
-#: Property.ulf#OOO_STR_MS_POWERPOINT_PRESENTATION
-msgid  "Microsoft PowerPoint Presentation"
-msgstr "Presentació del Microsoft PowerPoint"
-
-#: Property.ulf#OOO_STR_MS_POWERPOINT_TEMPLATE
-msgid  "Microsoft PowerPoint Template"
-msgstr "Plantilla del Microsoft PowerPoint"
-
-#: Property.ulf#OOO_STR_MS_POWERPOINT_SHOW
-msgid  "Microsoft PowerPoint Show"
-msgstr "Exposició del Microsoft PowerPoint"
-
-#: Property.ulf#OOO_STR_INSTALLATION_WIZARD
-msgid  "Installation Wizard"
-msgstr "Auxiliar d'instal·lació"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_1
-msgid  "{&MSSansBold8}&Modify"
-msgstr "{&MSSansBold8}&Modifica"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_2
-msgid  "{&MSSansBold8}Re&pair"
-msgstr "{&MSSansBold8}&Repara"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_3
-msgid  "{&MSSansBold8}&Remove"
-msgstr "{&MSSansBold8}&Elimina"
-
 #: RadioBut.ulf#OOO_RADIOBUTTON_4
 msgid  "{&MSSansBold8}&Typical"
 msgstr "{&MSSansBold8}&Típica"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_5
-msgid  "{&MSSansBold8}Cu&stom"
-msgstr "{&MSSansBold8}&Personalitzada"
 
 #: RadioBut.ulf#OOO_RADIOBUTTON_6
 msgid  "I &do not accept the terms in the license agreement"
@@ -115,53 +51,9 @@ msgstr "&No accepto les condicions d'aquest acord de llicència"
 msgid  "I &accept the terms in the license agreement"
 msgstr "&Accepto les condicions d'aquest acord de llicència"
 
-#: RadioBut.ulf#OOO_RADIOBUTTON_8
-msgid  "&Anyone who uses this computer (all users)"
-msgstr "Per a qu&alsevol persona que utilitzi aquest ordinador (tots els usuaris)"
-
-#: RadioBut.ulf#OOO_RADIOBUTTON_9
-msgid  "Only for &me ([USERNAME])"
-msgstr "Només per a &mi ([USERNAME])"
-
-#: Error.ulf#OOO_ERROR_1
-msgid  "{{Fatal error: }}"
-msgstr "{{Error fatal: }}"
-
-#: Error.ulf#OOO_ERROR_2
-msgid  "Error [1]."
-msgstr "Error [1]."
-
-#: Error.ulf#OOO_ERROR_3
-msgid  "Warning [1]."
-msgstr "Advertència [1]."
-
-#: Error.ulf#OOO_ERROR_4
-msgid  "Info [1]."
-msgstr "Info [1]."
-
-#: Error.ulf#OOO_ERROR_5
-msgid  "Internal Error [1]. [2]{, [3]}{, [4]}"
-msgstr "Error intern [1]. [2]{, [3]}{, [4]}"
-
-#: Error.ulf#OOO_ERROR_6
-msgid  "{{Disk full: }}"
-msgstr "{{Disc ple: }}"
-
 #: Error.ulf#OOO_ERROR_7
 msgid  "Action [Time]: [1]. [2]"
 msgstr "Acció [Time]: [1]. [2]"
-
-#: Error.ulf#OOO_ERROR_8
-msgid  "[ProductName]"
-msgstr "[ProductName]"
-
-#: Error.ulf#OOO_ERROR_9
-msgid  "{[2]}{, [3]}{, [4]}"
-msgstr "{[2]}{, [3]}{, [4]}"
-
-#: Error.ulf#OOO_ERROR_10
-msgid  "Message type: [1], Argument: [2]"
-msgstr "Tipus de missatge: [1], Paràmetre: [2]"
 
 #: Error.ulf#OOO_ERROR_11
 msgid  "=== Logging started: [Date]  [Time] ==="
@@ -175,41 +67,9 @@ msgstr "=== S'ha aturat el registre: [Date]  [Time] ==="
 msgid  "Action start [Time]: [1]."
 msgstr "S'ha iniciat l'acció [Time]: [1]."
 
-#: Error.ulf#OOO_ERROR_14
-msgid  "Action ended [Time]: [1]. Return value [2]."
-msgstr "Acció acabada [Time]: [1]. Valor de retorn [2]."
-
-#: Error.ulf#OOO_ERROR_15
-msgid  "Time remaining: {[1] minutes }{[2] seconds}"
-msgstr "Temps restant: {[1] minut(s) }{[2] segon(s)}"
-
 #: Error.ulf#OOO_ERROR_16
 msgid  "Out of memory. Shut down other applications before retrying."
 msgstr "No hi ha prou memòria. Tanca algunes aplicacions abans de tornar-ho a intentar."
-
-#: Error.ulf#OOO_ERROR_17
-msgid  "Installer is no longer responding."
-msgstr "L'instal·lador no està responent."
-
-#: Error.ulf#OOO_ERROR_18
-msgid  "Installer terminated prematurely."
-msgstr "L'instal·lador ha acabat de manera prematura."
-
-#: Error.ulf#OOO_ERROR_19
-msgid  "Please wait while Windows configures [ProductName]"
-msgstr "Espereu mentre el Windows configura l'[ProductName]"
-
-#: Error.ulf#OOO_ERROR_20
-msgid  "Gathering required information..."
-msgstr "S'està obtenint la informació requerida..."
-
-#: Error.ulf#OOO_ERROR_21
-msgid  "Removing older versions of this application"
-msgstr "S'estan eliminant versions anteriors d'aquesta aplicació"
-
-#: Error.ulf#OOO_ERROR_22
-msgid  "Preparing to remove older versions of this application"
-msgstr "S'està preparant per eliminar versions anteriors d'aquesta aplicació"
 
 #: Error.ulf#OOO_ERROR_23
 msgid  "{[ProductName] }Setup completed successfully."
@@ -226,10 +86,6 @@ msgstr "S'ha produït un error en llegir el fitxer: [2]. {{ Error del sistema [3
 #: Error.ulf#OOO_ERROR_26
 msgid  "Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location."
 msgstr "No es pot crear el fitxer [3]. Ja existeix un directori amb aquest nom. Cancel·leu la instal·lació i intenteu instal·lar-ho a una ubicació diferent."
-
-#: Error.ulf#OOO_ERROR_27
-msgid  "Please insert the disk: [2]"
-msgstr "Inseriu el disc: [2]"
 
 #: Error.ulf#OOO_ERROR_28
 msgid  "The installer has insufficient privileges to access this directory: [2].  The installation cannot continue.  Log on as an administrator or contact your system administrator."
@@ -275,37 +131,9 @@ msgstr "No es pot crear el directori [2]. Existeix un fitxer amb el mateix nom. 
 msgid  "The volume [2] is currently unavailable.  Please select another."
 msgstr "El volum [2] no es troba disponible. Seleccioneu-ne un altre."
 
-#: Error.ulf#OOO_ERROR_39
-msgid  "The specified path [2] is unavailable."
-msgstr "El camí especificat [2] no es troba disponible."
-
-#: Error.ulf#OOO_ERROR_40
-msgid  "Unable to write to the specified folder [2]."
-msgstr "No es pot escriure a la carpeta especificada [2]."
-
-#: Error.ulf#OOO_ERROR_41
-msgid  "A network error occurred while attempting to read from the file [2]"
-msgstr "S'ha produït un error de xarxa en intentar llegir del fitxer [2]"
-
-#: Error.ulf#OOO_ERROR_42
-msgid  "An error occurred while attempting to create the directory [2]"
-msgstr "S'ha produït un error en intentar crear el directori [2]"
-
 #: Error.ulf#OOO_ERROR_43
 msgid  "A network error occurred while attempting to create the directory [2]"
 msgstr "S'ha produït un error de xarxa en intentar crear el directori [2]"
-
-#: Error.ulf#OOO_ERROR_44
-msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr "S'ha produït un error de xarxa en intentar obrir el fitxer font de la calaixera [2]."
-
-#: Error.ulf#OOO_ERROR_45
-msgid  "The specified path is too long [2]."
-msgstr "El camí especificat és massa llarg [2]."
-
-#: Error.ulf#OOO_ERROR_46
-msgid  "The Installer has insufficient privileges to modify the file [2]."
-msgstr "L'instal·lador no té privilegis suficients per modificar el fitxer [2]."
 
 #: Error.ulf#OOO_ERROR_47
 msgid  "A portion of the path [2] exceeds the length allowed by the system."
@@ -319,45 +147,9 @@ msgstr "El camí [2] conté paraules que no só vàlides a les carpetes."
 msgid  "The path [2] contains an invalid character."
 msgstr "El camí [2] conté caràcters que no són vàlids."
 
-#: Error.ulf#OOO_ERROR_50
-msgid  "[2] is not a valid short file name."
-msgstr "[2] no és un nom curt de fitxer vàlid."
-
-#: Error.ulf#OOO_ERROR_51
-msgid  "Error getting file security: [3] GetLastError: [2]"
-msgstr "S'ha produït un error en obtenir la seguretat del fitxer: [3] GetLastError: [2]"
-
-#: Error.ulf#OOO_ERROR_52
-msgid  "Invalid Drive: [2]"
-msgstr "La unitat no és vàlida: [2]"
-
-#: Error.ulf#OOO_ERROR_53
-msgid  "Error applying patch to file [2].  It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor.  {{System Error: [3]}}"
-msgstr "S'ha produït un error en aplicar el pedaç a un fitxer [2]. Molt probablement s'ha actualitzat d'alguna altra manera, i ja no es pot actualitzar amb aquest pedaç. Si voleu més informació, poseu-vos en contacte amb el creador del pedaç.  {{Error del sistema: [3]}}"
-
-#: Error.ulf#OOO_ERROR_54
-msgid  "Could not create key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "No es pot crear la clau [2]. {{ Error del sistema [3].}} Verifiqueu que podeu accedir a la clau, o poseu-vos en contacte amb el personal d'assistència tècnica."
-
-#: Error.ulf#OOO_ERROR_55
-msgid  "Could not open key: [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "No es pot obrir la clau [2]. {{ Error del sistema [3].}} Verifiqueu que podeu accedir a la clau, o poseu-vos en contacte amb el personal d'assistència tècnica."
-
-#: Error.ulf#OOO_ERROR_56
-msgid  "Could not delete value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "No es pot eliminar el valor [2] de la clau  [3]. {{ Error del sistema [4].}}  Verifiqueu que podeu accedir a la clau, o poseu-vos en contacte amb el personal d'assistència tècnica."
-
-#: Error.ulf#OOO_ERROR_57
-msgid  "Could not delete key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "No es pot eliminar la clau [2]. {{ Error del sistema [3].}}  Verifiqueu que podeu accedir a la clau, o poseu-vos en contacte amb el personal d'assistència tècnica."
-
 #: Error.ulf#OOO_ERROR_58
 msgid  "Could not read value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
 msgstr "No es pot llegir el valor [2] de la clau [3]. {{ Error del sistema [4].}}  Verifiqueu que podeu accedir a la clau, o poseu-vos en contacte amb el personal d'assistència tècnica."
-
-#: Error.ulf#OOO_ERROR_59
-msgid  "Could not write value [2] to key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr "No es pot escriure el valor [2] a la clau [3]. {{ Error del sistema [4].}}  Verifiqueu que podeu accedir a la clau, o poseu-vos en contacte amb el personal d'assistència tècnica."
 
 #: Error.ulf#OOO_ERROR_60
 msgid  "Could not get value names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
@@ -375,61 +167,9 @@ msgstr "No es pot llegir la informació de seguretat de la clau [2]. {{ Error de
 msgid  "Could not increase the available registry space. [2] KB of free registry space is required for the installation of this application."
 msgstr "No es pot incrementar l'espai de registre disponible. Es necessiten [2] KB d'espai de registre per poder instal·lar aquesta aplicació."
 
-#: Error.ulf#OOO_ERROR_64
-msgid  "Another installation is in progress. You must complete that installation before continuing this one."
-msgstr "Hi ha una altra instal·lació que s'està executant. Heu de completar l'altra instal·lació abans de poder continuar amb aquesta."
-
-#: Error.ulf#OOO_ERROR_65
-msgid  "Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again."
-msgstr "S'ha produït un error en accedir a dades segures. Assegureu-vos que l'Instal·lador del Windows està correctament configurat i torneu a intentar aquest procés més endavant."
-
-#: Error.ulf#OOO_ERROR_66
-msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.  Your current installation will now continue."
-msgstr "L'usuari [2] ha iniciat prèviament la instal·lació del producte [3]. Aquest usuari haurà d'executar la instal·lació una altra vegada abans de poder utilitzar aquell producte. Aquesta instal·lació actual continuarà."
-
-#: Error.ulf#OOO_ERROR_67
-msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product."
-msgstr "L'usuari [2] ha iniciat prèviament la instal·lació del producte [3]. Aquest usuari haurà d'executar la instal·lació una altra vegada abans de poder utilitzar aquell producte."
-
-#: Error.ulf#OOO_ERROR_68
-msgid  "Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB.  Free some disk space and retry."
-msgstr "No hi ha prou espai al disc -- Volum: '[2]'; espai necessari: [3] KB; espai disponible: [4] KB.  Allibereu espai de disc abans de reintentar-ho."
-
-#: Error.ulf#OOO_ERROR_69
-msgid  "Are you sure you want to cancel?"
-msgstr "Esteu segur que voleu cancel·lar?"
-
-#: Error.ulf#OOO_ERROR_70
-msgid  "The file [2][3] is being held in use {by the following process: Name: [4], ID: [5], Window Title: [6]}.  Close that application and retry."
-msgstr "El fitxer [2][3] està en ús {pel procés següent: Nom: [4], ID: [5], Títol de la finestra: [6]}. Tanqueu aquesta aplicació i torneu-ho a provar."
-
-#: Error.ulf#OOO_ERROR_71
-msgid  "The product [2] is already installed, preventing the installation of this product.  The two products are incompatible."
-msgstr "El producte [2] ja està instal·lat i impedeix la instal·lació d'aquest producte. Els dos productes són incompatibles."
-
-#: Error.ulf#OOO_ERROR_72
-msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
-msgstr "No hi ha prou espai al disc -- Volum: '[2]'; espai necessari: [3] KB; espai disponible: [4] KB.  Si la còpia de seguretat no està activada, hi ha prou espai de disc disponible. Feu clic a Cancel·la per sortir, Reintenta per comprovar l'espai de disc un altre cop, o Ignora per continuar sense còpia de seguretat."
-
-#: Error.ulf#OOO_ERROR_73
-msgid  "Could not access network location [2]."
-msgstr "No es pot accedir a la ubicació de xarxa [2]."
-
-#: Error.ulf#OOO_ERROR_74
-msgid  "The following applications should be closed before continuing the installation:"
-msgstr "S'han de tancar les aplicacions següents per poder continuar amb aquesta instal·lació:"
-
-#: Error.ulf#OOO_ERROR_75
-msgid  "Could not find any previously installed compliant products on the machine for installing this product."
-msgstr "No s'ha pogut trobar cap producte compatible instal·lat en aquest ordinador per poder instal·lar aquest producte."
-
 #: Error.ulf#OOO_ERROR_76
 msgid  "The key [2] is not valid.  Verify that you entered the correct key."
 msgstr "La clau [2] no és vàlida. Verifiqueu que heu introduït la clau correcta."
-
-#: Error.ulf#OOO_ERROR_77
-msgid  "The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later."
-msgstr "L'Instal·lador ha de reiniciar el sistema abans de poder continuar amb la configuració de l'[2]. Feu clic a Sí per reiniciar ara o a No si voleu reiniciar després."
 
 #: Error.ulf#OOO_ERROR_78
 msgid  "You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later."
@@ -443,26 +183,6 @@ msgstr "La instal·lació de l'[2] es troba en suspens. Heu de desfer els canvis
 msgid  "A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
 msgstr "Una instal·lació prèvia del producte es troba executant-se.  Voleu desfer aquests canvis fets per l'altra instal·lació per continuar.  Voleu desfer aquells canvis?"
 
-#: Error.ulf#OOO_ERROR_81
-msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
-msgstr "No s'han pogut trobar les fonts d'aquest producte [2].  L'Instal·lador del Windows no pot continuar."
-
-#: Error.ulf#OOO_ERROR_82
-msgid  "Installation operation completed successfully."
-msgstr "El procés d'instal·lació ha finalitzat correctament."
-
-#: Error.ulf#OOO_ERROR_83
-msgid  "Installation operation failed."
-msgstr "El procés d'instal·lació ha fallat."
-
-#: Error.ulf#OOO_ERROR_84
-msgid  "Product: [2] -- [3]"
-msgstr "Producte: [2] -- [3]"
-
-#: Error.ulf#OOO_ERROR_85
-msgid  "You may either restore your computer to its previous state or continue the installation later. Would you like to restore?"
-msgstr "Podeu restaurar l'ordinador a l'estat anterior o bé continuar aquesta instal·lació més endavant. La voleu restaurar?"
-
 #: Error.ulf#OOO_ERROR_86
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
 msgstr "S'ha produït un error en escriure la informació d'instal·lació al disc. Comproveu que hi ha espai de disc suficient, i feu clic a Reintenta o a Cancel·la per finalitzar la instal·lació."
@@ -470,10 +190,6 @@ msgstr "S'ha produït un error en escriure la informació d'instal·lació al di
 #: Error.ulf#OOO_ERROR_87
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
 msgstr "No es poden trobar un o més fitxers necessaris per poder restaurar l'ordinador al seu estat anterior. La restauració no és possible."
-
-#: Error.ulf#OOO_ERROR_88
-msgid  "[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}"
-msgstr "[2] no pot instal·lar un dels productes requerits. Poseu-vos en contacte amb el grup d'assistència tècnica.  {{Error del sistema: [3].}}"
 
 #: Error.ulf#OOO_ERROR_89
 msgid  "The older version of [2] cannot be removed.  Contact your technical support group.  {{System Error [3].}}"
@@ -494,22 +210,6 @@ msgstr "No hi ha cap disc a la unitat [2]. Inseriu-ne un i feu clic a Reintenta,
 #: Error.ulf#OOO_ERROR_94
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
 msgstr "La carpeta [2] no existeix. Seleccioneu un camí a una carpeta existent."
-
-#: Error.ulf#OOO_ERROR_95
-msgid  "You have insufficient privileges to read this folder."
-msgstr "No teniu prou privilegis per llegir aquesta carpeta."
-
-#: Error.ulf#OOO_ERROR_96
-msgid  "A valid destination folder for the installation could not be determined."
-msgstr "No es pot determinar una carpeta de destí vàlida per a la instal·lació."
-
-#: Error.ulf#OOO_ERROR_97
-msgid  "Error attempting to read from the source installation database: [2]."
-msgstr "S'ha produït un error en intentar llegir la base de dades de la instal·lació: [2]."
-
-#: Error.ulf#OOO_ERROR_98
-msgid  "Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation."
-msgstr "S'està programant l'operació de reinici: Canvi de nom del fitxer [2] a [3]. S'ha de reiniciar per tal de completar el procés."
 
 #: Error.ulf#OOO_ERROR_99
 msgid  "Scheduling reboot operation: Deleting file [2]. Must reboot to complete operation."
@@ -535,14 +235,6 @@ msgstr "No es pot registrar el tipus de lletra [2]. Verifiqueu que teniu permiso
 msgid  "Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts."
 msgstr "No es pot desregistrar el tipus de lletra [2]. Verifiqueu que teniu permisos suficients per eliminar tipus de lletra."
 
-#: Error.ulf#OOO_ERROR_105
-msgid  "Could not create shortcut [2]. Verify that the destination folder exists and that you can access it."
-msgstr "No es crear la drecera [2]. Verifiqueu que la carpeta de destí existeix i que hi teniu accés."
-
-#: Error.ulf#OOO_ERROR_106
-msgid  "Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it."
-msgstr "No es pot eliminar la drecera [2]. Verifiqueu que el fitxer de destí existeix i que hi teniu accés."
-
 #: Error.ulf#OOO_ERROR_107
 msgid  "Could not register type library for file [2].  Contact your support personnel."
 msgstr "No es pot registrar la biblioteca de tipus per al fitxer [2]. Poseu-vos en contacte amb el personal d'assistència tècnica."
@@ -566,18 +258,6 @@ msgstr "S'ha produït un error en eliminar el gestor del controlador ODBC, error
 #: Error.ulf#OOO_ERROR_112
 msgid  "Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
 msgstr "S'ha produït un error en instal·lar el gestor del controlador ODBC, error d'ODBC [2]: [3]. Poseu-vos en contacte amb el personal d'assistència tècnica."
-
-#: Error.ulf#OOO_ERROR_113
-msgid  "Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers."
-msgstr "S'ha produït un error en eliminar el controlador ODBC [4], error d'ODBC [2]: [3]. Verifiqueu que teniu privilegis suficients per eliminar controladors ODBC."
-
-#: Error.ulf#OOO_ERROR_114
-msgid  "Error installing ODBC driver [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr "S'ha produït un error en instal·lar el controlador ODBC [4], error d'ODBC [2]: [3]. Verifiqueu que el fitxer [4] existeix i que hi podeu accedir."
-
-#: Error.ulf#OOO_ERROR_115
-msgid  "Error configuring ODBC data source [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr "S'ha produït un error en configurar la font de dades ODBC [4], error d'ODBC [2]: [3]. Verifiqueu que el fitxer [4] existeix i que hi podeu accedir."
 
 #: Error.ulf#OOO_ERROR_116
 msgid  "Service [2] ([3]) failed to start.  Verify that you have sufficient privileges to start system services."
@@ -635,165 +315,25 @@ msgstr "El servei de l'Instal·lador del Windows no pot actualitzar el fitxer pr
 msgid  "This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher."
 msgstr "Aquest programa d'instal·lació necessita l'Internet Information Server 4.0 o superior per tal de configurar les Arrels Virtuals de l'IIS. Assegureu-vos que disposeu d'IIS 4.0 o superior."
 
-#: Error.ulf#OOO_ERROR_130
-msgid  "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-msgstr "Aquest programa d'instal·lació necessita privilegis d'administrador per tal de configurar les Arrels Virtuals de l'IIS."
-
 #: CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
 msgstr "S'ha trobat una versió més nova de l'[ProductName]. Per instal·lar una versió més antiga, primer heu d'eliminar la versió més nova."
-
-#: CustomAc.ulf#OOO_CUSTOMACTION_2
-msgid  "The same version of this product is already installed."
-msgstr "Ja hi ha instal·lada la mateixa versió del producte."
 
 #: CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
 msgstr "S'ha trobat una versió anterior de l'[ProductName]. Per instal·lar una versió més nova, primer heu d'eliminar la versió més antiga."
 
-#: CustomAc.ulf#OOO_CUSTOMACTION_4
-msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr "Tanqueu l'[DEFINEDPRODUCT] [DEFINEDVERSION] i l'Inici ràpid de l'[DEFINEDPRODUCT] [DEFINEDVERSION] abans de continuar. Si esteu emprant un sistema multiusuari, assegureu-vos també que cap altre usuari no té l'[DEFINEDPRODUCT] [DEFINEDVERSION] obert."
-
-#: UIText.ulf#OOO_UITEXT_1
-msgid  "bytes"
-msgstr "bytes"
-
-#: UIText.ulf#OOO_UITEXT_2
-msgid  "GB"
-msgstr "GB"
-
-#: UIText.ulf#OOO_UITEXT_3
-msgid  "KB"
-msgstr "KB"
-
-#: UIText.ulf#OOO_UITEXT_4
-msgid  "MB"
-msgstr "MB"
-
-#: UIText.ulf#OOO_UITEXT_5
-msgid  "This feature will not be available."
-msgstr "Aquesta característica no estarà disponible."
-
-#: UIText.ulf#OOO_UITEXT_6
-msgid  "This feature will be installed when required."
-msgstr "Aquesta característica s'instal·larà quan es necessiti."
-
-#: UIText.ulf#OOO_UITEXT_7
-msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr "Aquesta característica, i totes les subcaracterístiques, s'instal·laran per tal d'executar-se des del CD."
-
-#: UIText.ulf#OOO_UITEXT_8
-msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr "Aquesta característica, i totes les subcaracterístiques, s'instal·laran al disc dur."
-
-#: UIText.ulf#OOO_UITEXT_9
-msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr "Aquesta característica, i totes les subcaracterístiques, s'instal·laran per tal d'executar-se des de la xarxa."
-
 #: UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
 msgstr "Aquesta característica s'instal·larà per tal d'executar-se des del CD."
-
-#: UIText.ulf#OOO_UITEXT_11
-msgid  "This feature will be installed on local hard drive."
-msgstr "Aquesta característica s'instal·larà al disc dur."
-
-#: UIText.ulf#OOO_UITEXT_12
-msgid  "This feature will be installed to run from network."
-msgstr "Aquesta característica s'instal·larà per tal d'executar-se des de la xarxa."
-
-#: UIText.ulf#OOO_UITEXT_13
-msgid  "Fldr|New Folder"
-msgstr "Fldr|Carpeta nova"
-
-#: UIText.ulf#OOO_UITEXT_14
-msgid  "This feature will remain uninstalled."
-msgstr "Aquesta característica continuarà desinstal·lada."
 
 #: UIText.ulf#OOO_UITEXT_15
 msgid  "This feature will be set to be installed when required."
 msgstr "Aquesta característica es marcarà per ser instal·lada quan sigui necessària."
 
-#: UIText.ulf#OOO_UITEXT_17
-msgid  "This feature will be installed on the local hard drive."
-msgstr "Aquesta característica s'instal·larà en el disc dur local."
-
-#: UIText.ulf#OOO_UITEXT_18
-msgid  "This feature will be installed to run from the network."
-msgstr "Aquesta característica s'instal·larà per ser executada des de la xarxa."
-
-#: UIText.ulf#OOO_UITEXT_19
-msgid  "This feature will become unavailable."
-msgstr "Aquesta característica esdevindrà no disponible."
-
-#: UIText.ulf#OOO_UITEXT_20
-msgid  "Will be installed when required."
-msgstr "S'instal·larà quan sigui necessari."
-
-#: UIText.ulf#OOO_UITEXT_21
-msgid  "This feature will be available to run from CD."
-msgstr "Aquesta característica estarà disponible per executar-se des del CD."
-
-#: UIText.ulf#OOO_UITEXT_22
-msgid  "This feature will be installed on your local hard drive."
-msgstr "Aquesta característica s'instal·larà en el disc dur local."
-
-#: UIText.ulf#OOO_UITEXT_23
-msgid  "This feature will be available to run from the network."
-msgstr "Aquesta característica estarà disponible per executar-se des de la xarxa."
-
-#: UIText.ulf#OOO_UITEXT_24
-msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr "Aquesta característica es desinstal·larà completament, i no la podreu executar des del CD."
-
 #: UIText.ulf#OOO_UITEXT_25
 msgid  "This feature was run from the CD but will be set to be installed when required."
 msgstr "Aquesta característica s'ha executat des del CD però es marcarà per instal·lar-se quan sigui necessari."
-
-#: UIText.ulf#OOO_UITEXT_26
-msgid  "This feature will continue to be run from the CD"
-msgstr "Aquesta característica es continuarà executant des del CD"
-
-#: UIText.ulf#OOO_UITEXT_27
-msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr "Aquesta característica s'ha executat des del CD però s'instal·larà en el disc dur local."
-
-#: UIText.ulf#OOO_UITEXT_28
-msgid  "This feature frees up [1] on your hard drive."
-msgstr "Aquesta característica allibera [1] del disc dur."
-
-#: UIText.ulf#OOO_UITEXT_29
-msgid  "This feature requires [1] on your hard drive."
-msgstr "Aquesta característica requereix [1] del disc dur."
-
-#: UIText.ulf#OOO_UITEXT_30
-msgid  "Compiling cost for this feature..."
-msgstr "S'està determinant el cost d'aquesta característica..."
-
-#: UIText.ulf#OOO_UITEXT_31
-msgid  "This feature will be completely removed."
-msgstr "Aquesta característica s'eliminarà completament."
-
-#: UIText.ulf#OOO_UITEXT_32
-msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr "Aquesta característica s'eliminarà del disc dur local però es marcarà per instal·lar-se quan es necessiti."
-
-#: UIText.ulf#OOO_UITEXT_33
-msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr "Aquesta característica s'eliminarà del disc dur local però encara estarà disponible des del CD."
-
-#: UIText.ulf#OOO_UITEXT_34
-msgid  "This feature will remain on your local hard drive."
-msgstr "Aquesta característica es mantindrà en el disc dur local."
-
-#: UIText.ulf#OOO_UITEXT_35
-msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr "Aquesta característica s'eliminarà del disc dur local, però encara estarà disponible des de la xarxa."
-
-#: UIText.ulf#OOO_UITEXT_36
-msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr "Aquesta característica es desinstal·larà completament, i no la podreu executar des de la xarxa."
 
 #: UIText.ulf#OOO_UITEXT_37
 msgid  "This feature was run from the network but will be installed when required."
@@ -807,81 +347,9 @@ msgstr "Aquesta característica s'ha executat des de la xarxa, però s'instal·l
 msgid  "This feature will continue to be run from the network"
 msgstr "Aquesta característica es continuarà executant des de la xarxa"
 
-#: UIText.ulf#OOO_UITEXT_40
-msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr "Aquesta característica allibera [1] del disc dur. Té [2] de [3] subcaracterístiques seleccionades, que alliberen [4] del disc dur."
-
-#: UIText.ulf#OOO_UITEXT_41
-msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr "Aquesta característica allibera [1] del disc dur. Té [2] de [3] subcaracterístiques seleccionades, que requereixen [4] del disc dur."
-
-#: UIText.ulf#OOO_UITEXT_42
-msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr "Aquesta característica requereix [1] del disc dur. Té [2] de [3] subcaracterístiques seleccionades, que alliberen [4] del disc dur."
-
-#: UIText.ulf#OOO_UITEXT_43
-msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr "Aquesta característica requereix [1] del disc dur. Té [2] de [3] subcaracterístiques seleccionades, que requereixen [4] del disc dur."
-
-#: UIText.ulf#OOO_UITEXT_44
-msgid  "Time remaining: {[1] min }[2] sec"
-msgstr "Temps restant: {[1] min }[2] sec"
-
-#: UIText.ulf#OOO_UITEXT_45
-msgid  "Available"
-msgstr "Disponible"
-
-#: UIText.ulf#OOO_UITEXT_46
-msgid  "Differences"
-msgstr "Diferències"
-
-#: UIText.ulf#OOO_UITEXT_47
-msgid  "Required"
-msgstr "Requerit"
-
-#: UIText.ulf#OOO_UITEXT_48
-msgid  "Disk Size"
-msgstr "Mida del disc"
-
-#: UIText.ulf#OOO_UITEXT_49
-msgid  "Volume"
-msgstr "Volum"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_1
-msgid  "Advertising application"
-msgstr "S'està anunciant l'aplicació"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_2
-msgid  "Allocating registry space"
-msgstr "S'està allotjant espai al registre"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_3
-msgid  "Free space: [1]"
-msgstr "Espai lliure: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_4
-msgid  "Searching for installed applications"
-msgstr "S'estan cercant les aplicacions instal·lades"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_5
-msgid  "Property: [1], Signature: [2]"
-msgstr "Propietat: [1], Signatura: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_6
-msgid  "Binding executables"
-msgstr "Executables enllaçats"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_7
 msgid  "File: [1]"
 msgstr "Fitxer: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_8
-msgid  "Creating IIS Virtual Roots..."
-msgstr "S'estan creant les arrels virtuals de l'IIS..."
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_9
-msgid  "Removing IIS Virtual Roots..."
-msgstr "S'estan eliminant les arrels virtuals de l'IIS..."
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_10
 msgid  "Searching for qualifying products"
@@ -891,117 +359,21 @@ msgstr "S'estan cercant els productes qualificats"
 msgid  "Computing space requirements"
 msgstr "S'estan comptabilitzant els requeriments d'espai"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_13
-msgid  "Creating folders"
-msgstr "S'estan creant les carpetes"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_14
-msgid  "Folder: [1]"
-msgstr "Carpeta: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_15
-msgid  "Creating shortcuts"
-msgstr "S'estan creant les dreceres"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_16
-msgid  "Shortcut: [1]"
-msgstr "Drecera: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_17
-msgid  "Deleting services"
-msgstr "S'estan suprimint els serveis"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_18
 msgid  "Service: [1]"
 msgstr "Servei: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_19
-msgid  "Creating duplicate files"
-msgstr "S'estan creant els fitxers duplicats"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_20
 msgid  "File: [1],  Directory: [9],  Size: [6]"
 msgstr "Fitxer: [1], Directori: [9], Mida: [6]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_22
-msgid  "Searching for related applications"
-msgstr "S'estan cercant aplicacions relacionades"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_23
-msgid  "Found application"
-msgstr "S'ha trobat l'aplicació"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_24
-msgid  "Generating script operations for action:"
-msgstr "S'estan generant les operacions d'script per actuar:"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_25
-msgid  "[1]"
-msgstr "[1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_26
-msgid  "Copying files to the network"
-msgstr "S'estan copiant els fitxers a la xarxa"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_27
-msgid  "File: [1], Directory: [9], Size: [6]"
-msgstr "Fitxer: [1], Directori: [9], Mida: [6]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_28
-msgid  "Copying new files"
-msgstr "S'estan copiant els fitxers nous"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_30
-msgid  "Installing ODBC components"
-msgstr "S'estan instal·lant els components ODBC"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_31
-msgid  "Installing new services"
-msgstr "S'estan instal·lant els serveis nous"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_32
-msgid  "Service: [2]"
-msgstr "Servei: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_33
-msgid  "Installing system catalog"
-msgstr "S'està instal·lant el catàleg del sistema"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_34
 msgid  "File: [1],  Dependencies: [2]"
 msgstr "Fitxer: [1],  Dependències: [2]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_35
-msgid  "Validating install"
-msgstr "S'està validant la instal·lació"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_36
-msgid  "Evaluating launch conditions"
-msgstr "S'estan avaluant les condicions de llançament"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_37
-msgid  "Migrating feature states from related applications"
-msgstr "S'estan migrant els estats de funcionalitats a aplicacions relacionades"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_38
-msgid  "Application: [1]"
-msgstr "Programes: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_39
-msgid  "Moving files"
-msgstr "S'estan movent els fitxers"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_41
-msgid  "Patching files"
-msgstr "S'estan apedaçant els fitxers"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_42
 msgid  "File: [1],  Directory: [2],  Size: [3]"
 msgstr "Fitxer: [1],  Directori: [2],  Mida: [3]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_43
-msgid  "Updating component registration"
-msgstr "S'està actualitzant el registre de components"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_44
 msgid  "Publishing qualified components"
@@ -1011,37 +383,9 @@ msgstr "S'estan publicant els components qualificats"
 msgid  "Component ID: [1], Qualifier: [2]"
 msgstr "Identificador del component: [1], Qualificador: [2]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_46
-msgid  "Publishing product features"
-msgstr "S'estan publicant les característiques del producte"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_47
-msgid  "Feature: [1]"
-msgstr "Funcionalitat: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_48
-msgid  "Publishing product information"
-msgstr "S'està publicant la informació del producte"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_49
-msgid  "Registering class servers"
-msgstr "S'estan registrant els serveis de classe"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_50
 msgid  "Class ID: [1]"
 msgstr "Identificador de classe: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_51
-msgid  "Registering COM+ Applications and Components"
-msgstr "S'estan registrant les aplicacions COM+ i els seus components"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_52
-msgid  "AppId: [1]{{, AppType: [2], Users: [3], RSN: [4]}}"
-msgstr "Identificador d'aplicació [1]{{ Tipus d'aplicació [2], Usuaris: [3], RSN: [4]}}"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_53
-msgid  "Registering extension servers"
-msgstr "S'estan registrant les extensions dels servidors"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_54
 msgid  "Extension: [1]"
@@ -1063,33 +407,13 @@ msgstr "S'està registrant la informació el tipus MIME"
 msgid  "MIME Content Type: [1], Extension: [2]"
 msgstr "Tipus de contingut MIME: [1], Extensió: [2]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_59
-msgid  "Registering product"
-msgstr "S'està registrant el producte"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_61
-msgid  "Registering program identifiers"
-msgstr "S'estan registrant els identificadors del programa"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_62
 msgid  "ProgID: [1]"
 msgstr "ProgID: [1]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_63
-msgid  "Registering type libraries"
-msgstr "S'estan registrant les biblioteques de tipus"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_64
 msgid  "LibID: [1]"
 msgstr "LibID: [1]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_65
-msgid  "Registering user"
-msgstr "S'està registrant l'usuari"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_67
-msgid  "Removing duplicated files"
-msgstr "S'estan eliminant els fitxers duplicats"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_68
 msgid  "File: [1], Directory: [9]"
@@ -1103,22 +427,6 @@ msgstr "S'estan actualitzant les cadenes d'entorn"
 msgid  "Name: [1], Value: [2], Action [3]"
 msgstr "Nom: [1], Valor: [2], Acció [3]"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_71
-msgid  "Removing applications"
-msgstr "S'estan eliminant les aplicacions"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_72
-msgid  "Application: [1], Command line: [2]"
-msgstr "Aplicació: [1], Línia d'ordres: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_73
-msgid  "Removing files"
-msgstr "S'estan eliminant els fitxers"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_75
-msgid  "Removing folders"
-msgstr "S'estan eliminant les carpetes"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_77
 msgid  "Removing INI file entries"
 msgstr "S'estan eliminant les entrades dels fitxers INI"
@@ -1126,66 +434,6 @@ msgstr "S'estan eliminant les entrades dels fitxers INI"
 #: ActionTe.ulf#OOO_ACTIONTEXT_78
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
 msgstr "Fitxer: [1],  Secció: [2],  Clau: [3], Valor: [4]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_79
-msgid  "Removing ODBC components"
-msgstr "S'estan eliminant els components ODBC"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_80
-msgid  "Removing system registry values"
-msgstr "S'estan eliminant els valors de registre del sistema"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_81
-msgid  "Key: [1], Name: [2]"
-msgstr "Clau: [1], Nom: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_82
-msgid  "Removing shortcuts"
-msgstr "S'estan eliminant les dreceres"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_85
-msgid  "Rolling back action:"
-msgstr "S'està desfent l'acció:"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_87
-msgid  "Removing backup files"
-msgstr "S'estan eliminant els fitxers de còpia de seguretat"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_89
-msgid  "Registering modules"
-msgstr "S'estan registrant els mòduls"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_90
-msgid  "File: [1], Folder: [2]"
-msgstr "Fitxer: [1], Carpeta: [2]"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_91
-msgid  "Unregistering modules"
-msgstr "S'estan desregistrant els mòduls"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_93
-msgid  "Initializing ODBC directories"
-msgstr "S'estan inicialitzant els directoris ODBC"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_94
-msgid  "Starting services"
-msgstr "S'estan iniciant els serveis"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_96
-msgid  "Stopping services"
-msgstr "S'estan aturant els serveis"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_98
-msgid  "Removing moved files"
-msgstr "S'estan eliminant els fitxers moguts"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_100
-msgid  "Unpublishing Qualified Components"
-msgstr "S'estan despublicant els components qualificats"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_102
-msgid  "Unpublishing product features"
-msgstr "S'estan despublicant les característiques del producte"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_104
 msgid  "Unpublishing product information"
@@ -1195,69 +443,21 @@ msgstr "S'està despublicant la informació del producte"
 msgid  "Unregister class servers"
 msgstr "S'estan desregistrant els serveis de classe"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_107
-msgid  "Unregistering COM+ Applications and Components"
-msgstr "S'estan desregistrant les aplicacions COM+ i els components"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_108
-msgid  "AppId: [1]{{, AppType: [2]}}"
-msgstr "Identificador d'aplicació: [1]{{, Tipus d'aplicació: [2]}}"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_109
-msgid  "Unregistering extension servers"
-msgstr "S'estan desregistrant els servidors d'extensió"
-
 #: ActionTe.ulf#OOO_ACTIONTEXT_111
 msgid  "Unregistering fonts"
 msgstr "S'estan desregistrant els tipus de lletra"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_113
-msgid  "Unregistering MIME info"
-msgstr "S'està desregistrant la informació MIME"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_115
-msgid  "Unregistering program identifiers"
-msgstr "S'estan desregistrant els identificadors de programa"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_117
-msgid  "Unregistering type libraries"
-msgstr "S'estan desregistrant les biblioteques de tipus"
 
 #: ActionTe.ulf#OOO_ACTIONTEXT_121
 msgid  "Writing INI file values"
 msgstr "S'estan escrivint els valors del fitxer INI"
 
-#: ActionTe.ulf#OOO_ACTIONTEXT_123
-msgid  "Writing system registry values"
-msgstr "S'estan escrivint els valors del registre del sistema"
-
-#: ActionTe.ulf#OOO_ACTIONTEXT_124
-msgid  "Key: [1], Name: [2], Value: [3]"
-msgstr "Clau: [1], Nom: [2], Valor: [3]"
-
-#: LaunchCo.ulf#OOO_LAUNCH_1
-msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr "L'auxiliar d'instal·lació no es pot executar correctament perquè el vostre usuari no té suficients drets d'administració en aquest sistema."
-
 #: LaunchCo.ulf#OOO_LAUNCH_2
 msgid  "Please use the file setup.exe to start the installation."
 msgstr "Utilitzeu el fitxer setup.exe per iniciar la instal·lació."
 
-#: Nsis.ulf#SETUPCAPTION
-msgid  "%PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr "Preparació de la instal·lació de l'%PRODUCTNAME %PRODUCTVERSION"
-
-#: Nsis.ulf#MUI_TEXT_WELCOME_INFO_TITLE
-msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
-msgstr "Gràcies per baixar l'%PRODUCTNAME %PRODUCTVERSION."
-
 #: Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
 msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\n\\r\nClick \\'Next\\' to continue."
 msgstr "Els fitxers d'instal·lació s'han de descomprimir i copiar al disc dur per poder preparar la instal·lació. Després d'això, la instal·lació de l'%PRODUCTNAME s'iniciarà automàticament.\r\n\r\nFeu clic a \\'Següent\\' per continuar."
-
-#: Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
-msgid  "Select Folder"
-msgstr "Seleccioneu una carpeta"
 
 #: Nsis.ulf#MUI_TEXT_DIRECTORY_SUBTITLE
 msgid  "Select the folder in which to save the unpacked files."
@@ -1270,10 +470,6 @@ msgstr "&Descomprimeix"
 #: Nsis.ulf#DIRTEXT
 msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
 msgstr "Els fitxers d'instal·lació de l'%PRODUCTNAME %PRODUCTVERSION es descomprimiran i es desaran a la carpeta que es mostra a continuació. Si voleu desar l'%PRODUCTNAME en una carpeta diferent, feu clic a \\'Navega\\' i seleccioneu-la."
-
-#: Nsis.ulf#DIRSUBTEXT
-msgid  "Destination Folder"
-msgstr "Carpeta de destí"
 
 #: Nsis.ulf#SPACEREQUIRED
 msgid  "Space required: "
@@ -1291,41 +487,14 @@ msgstr "S'està descomprimint"
 msgid  "Please wait while the installation files are being unpacked."
 msgstr "Espereu mentre es descomprimeixen els fitxers d'instal·lació."
 
-#: Nsis.ulf#EXTRACT
-msgid  "Extract: "
-msgstr "S'està extraient: "
-
-#: Nsis.ulf#MUI_TEXT_ABORTWARNING
-msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr "Esteu segur que voleu sortir de la preparació de la instal·lació de l'%PRODUCTNAME %PRODUCTVERSION?"
-
 #: SIS.ulf#OOO_SIS_TITLE
 msgid  "Installation database"
 msgstr "Base de dades d'instal·lació"
 
-#: SIS.ulf#OOO_SIS_AUTHOR
-msgid  "Author"
-msgstr "Autor"
-
-#: SIS.ulf#OOO_SIS_SUBJECT
-msgid  "Subject"
-msgstr "Assumpte"
-
-#: SIS.ulf#OOO_SIS_COMMENT
-msgid  "Comment"
-msgstr "Comentari"
-
-#: SIS.ulf#OOO_SIS_KEYWORDS
-msgid  "Install,MSI"
-msgstr "Install,MSI"
-
-#: SIS.ulf#OOO_SIS_APPNAME
-msgid  "Windows Installer"
-msgstr "Windows Installer"
-
 #: Control.ulf#OOO_CONTROL_3
+#, fuzzy
 msgid  "Cancel"
-msgstr "Cancel·la"
+msgstr "Per tal de seleccionar una carpeta diferent, feu clic"
 
 #: Control.ulf#OOO_CONTROL_5
 msgid  "&Look in:"
@@ -1339,10 +508,6 @@ msgstr "Navegueu per la carpeta de destí."
 msgid  "{&MSSansBold8}Change Current Destination Folder"
 msgstr "{&MSSansBold8}Canvia la carpeta actual de destí"
 
-#: Control.ulf#OOO_CONTROL_9
-msgid  "Create new folder|"
-msgstr "Crea una carpeta nova|"
-
 #: Control.ulf#OOO_CONTROL_10
 msgid  "OK"
 msgstr "D'acord"
@@ -1350,10 +515,6 @@ msgstr "D'acord"
 #: Control.ulf#OOO_CONTROL_12
 msgid  "&Folder name:"
 msgstr "&Nom de la carpeta:"
-
-#: Control.ulf#OOO_CONTROL_13
-msgid  "Up one level|"
-msgstr "Amunt un nivell|"
 
 #: Control.ulf#OOO_CONTROL_14
 msgid  "< &Back"
@@ -1363,25 +524,13 @@ msgstr "< &Enrere"
 msgid  "&Change..."
 msgstr "&Canvia..."
 
-#: Control.ulf#OOO_CONTROL_19
-msgid  "Specify a network location for the server image of the product."
-msgstr "Especifiqueu una ubicació de xarxa per a la imatge de servidor del producte."
-
 #: Control.ulf#OOO_CONTROL_20
 msgid  "Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard."
 msgstr "Introduïu la localització de xarxa o feu clic a Canvia per navegar a una ubicació. Feu clic a Instal·la per crear una imatge de servidor de [ProductName] a la ubicació de xarxa especificada, o feu clic a Cancel·la per sortir de l'auxiliar."
 
-#: Control.ulf#OOO_CONTROL_21
-msgid  "{&MSSansBold8}Network Location"
-msgstr "{&MSSansBold8}Ubicació de xarxa"
-
 #: Control.ulf#OOO_CONTROL_22
 msgid  "&Install"
 msgstr "&Instal·la"
-
-#: Control.ulf#OOO_CONTROL_23
-msgid  "&Network location:"
-msgstr "&Ubicació de xarxa:"
 
 #: Control.ulf#OOO_CONTROL_26
 msgid  "&Next >"
@@ -1391,153 +540,29 @@ msgstr "&Següent >"
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
 msgstr "{&TahomaBold10}Us donem la benvinguda a l'auxiliar d'instal·lació de l'[ProductName]"
 
-#: Control.ulf#OOO_CONTROL_28
-msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr "L'auxiliar d'instal·lació crearà una imatge de servidor de l'[ProductName] a la ubicació de xarxa especificada. Per continuar, feu clic a Següent."
-
 #: Control.ulf#OOO_CONTROL_29
 msgid  "&No"
 msgstr "&No"
-
-#: Control.ulf#OOO_CONTROL_30
-msgid  "Are you sure you want to cancel [ProductName] installation?"
-msgstr "Esteu segur que voleu cancel·lar la instal·lació de l'[ProductName]?"
-
-#: Control.ulf#OOO_CONTROL_31
-msgid  "&Yes"
-msgstr "&Sí"
 
 #: Control.ulf#OOO_CONTROL_36
 msgid  "{\\Tahoma8}{80}"
 msgstr "{\\Tahoma8}{80}"
 
-#: Control.ulf#OOO_CONTROL_37
-msgid  "&Organization:"
-msgstr "&Organització:"
-
-#: Control.ulf#OOO_CONTROL_38
-msgid  "Please enter your information."
-msgstr "Introduïu la vostra informació."
-
-#: Control.ulf#OOO_CONTROL_39
-msgid  "Install this application for:"
-msgstr "Aquesta aplicació s'instal·larà:"
-
-#: Control.ulf#OOO_CONTROL_40
-msgid  "{&MSSansBold8}Customer Information"
-msgstr "{&MSSansBold8}Informació del client"
-
 #: Control.ulf#OOO_CONTROL_41
 msgid  "{\\Tahoma8}{50}"
 msgstr "{\\Tahoma8}{50}"
-
-#: Control.ulf#OOO_CONTROL_42
-msgid  "&User Name:"
-msgstr "Nom d'&usuari:"
-
-#: Control.ulf#OOO_CONTROL_45
-msgid  "&Serial Number:"
-msgstr "&Número de sèrie:"
-
-#: Control.ulf#OOO_CONTROL_51
-msgid  "&Space"
-msgstr "Es&pai"
-
-#: Control.ulf#OOO_CONTROL_52
-msgid  "Select the program features you want installed."
-msgstr "Seleccioneu les característiques del programa que voleu instal·lar."
-
-#: Control.ulf#OOO_CONTROL_53
-msgid  "Click on an icon in the list below to change how a feature is installed."
-msgstr "Feu clic a una icona de la llista de sota per canviar com s'instal·la una característica."
-
-#: Control.ulf#OOO_CONTROL_54
-msgid  "{&MSSansBold8}Custom Setup"
-msgstr "{&MSSansBold8}Instal·lació personalitzada"
-
-#: Control.ulf#OOO_CONTROL_55
-msgid  "Feature Description:"
-msgstr "Descripció de la característica:"
-
-#: Control.ulf#OOO_CONTROL_56
-msgid  "&Help"
-msgstr "&Ajuda"
-
-#: Control.ulf#OOO_CONTROL_57
-msgid  "Install to:"
-msgstr "Instal·la a:"
-
-#: Control.ulf#OOO_CONTROL_58
-msgid  "Multiline description of the currently selected item"
-msgstr "Descripció de múltiples línies de l'element actualment seleccionat"
 
 #: Control.ulf#OOO_CONTROL_59
 msgid  "<selected feature path>"
 msgstr "<camí de la característica seleccionada>"
 
-#: Control.ulf#OOO_CONTROL_61
-msgid  "Feature size"
-msgstr "Mida de la característica"
-
 #: Control.ulf#OOO_CONTROL_64
 msgid  "Custom Setup allows you to selectively install program features."
 msgstr "La instal·lació personalitzada permet instal·lar selectivament les característiques del programa."
 
-#: Control.ulf#OOO_CONTROL_65
-msgid  "{&MSSansBold8}Custom Setup Tips"
-msgstr "{&MSSansBold8}Consells de la instal·lació personalitzada"
-
-#: Control.ulf#OOO_CONTROL_66
-msgid  "Will not be installed."
-msgstr "No s'instal·larà."
-
-#: Control.ulf#OOO_CONTROL_67
-msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr "S'instal·larà en el primer ús. (Només disponible si la característica accepta aquesta opció)"
-
-#: Control.ulf#OOO_CONTROL_68
-msgid  "This install state means the feature..."
-msgstr "Aquest estat d'instal·lació significa que la característica..."
-
-#: Control.ulf#OOO_CONTROL_69
-msgid  "Will be completely installed to the local hard drive."
-msgstr "S'instal·larà completament al disc dur local."
-
-#: Control.ulf#OOO_CONTROL_70
-msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr "La icona del costat del nom de la característica indica l'estat d'instal·lació de la característica. Feu clic a la icona per desplegar el menú d'estat de cada característica."
-
-#: Control.ulf#OOO_CONTROL_71
-msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr "S'instal·larà per tal d'executar-se des de la xarxa. (Només disponible si la característica accepta aquesta opció.)"
-
-#: Control.ulf#OOO_CONTROL_73
-msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr "Tindrà algunes subcaracterístiques instal·lades al disc dur local. (Només disponible si la característica accepta aquesta opció.)"
-
 #: Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
 msgstr "Fes clic a Següent per instal·lar-lo en aquesta carpeta, o Canvia per instal·lar-lo a una carpeta diferent."
-
-#: Control.ulf#OOO_CONTROL_80
-msgid  "{&MSSansBold8}Database Folder"
-msgstr "{&MSSansBold8}Carpeta de la base de dades"
-
-#: Control.ulf#OOO_CONTROL_81
-msgid  "[DATABASEDIR]"
-msgstr "[DATABASEDIR]"
-
-#: Control.ulf#OOO_CONTROL_82
-msgid  "Install [ProductName] database to:"
-msgstr "Instal·la la base de dades del [ProductName] a:"
-
-#: Control.ulf#OOO_CONTROL_90
-msgid  "{&MSSansBold8}Destination Folder"
-msgstr "{&MSSansBold8}Carpeta de destí"
-
-#: Control.ulf#OOO_CONTROL_91
-msgid  "[INSTALLDIR]"
-msgstr "[INSTALLDIR]"
 
 #: Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
@@ -1551,26 +576,6 @@ msgstr "L'espai en disc necessari per tal d'instal·lar les característiques se
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
 msgstr "Les unitats realçades no tenen prou espai en disc disponible per les característiques que heu seleccionat. Podeu eliminar fitxers de les unitats realçades, instal·lar menys característiques a les unitats locals, o bé seleccionar una unitat de destinació diferent."
 
-#: Control.ulf#OOO_CONTROL_98
-msgid  "{&MSSansBold8}Disk Space Requirements"
-msgstr "{&MSSansBold8}Requeriments d'espai en disc"
-
-#: Control.ulf#OOO_CONTROL_103
-msgid  "Some files that need to be updated are currently in use."
-msgstr "Alguns fitxers que s'han d'actualitzar es troben actualment en ús."
-
-#: Control.ulf#OOO_CONTROL_104
-msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
-msgstr "Les aplicacions següents estan utilitzant fitxers que aquest programa necessita actualitzar. Tanqueu aquestes aplicacions i feu clic a Reintenta per continuar."
-
-#: Control.ulf#OOO_CONTROL_105
-msgid  "{&MSSansBold8}Files in Use"
-msgstr "{&MSSansBold8}Fitxers en ús"
-
-#: Control.ulf#OOO_CONTROL_106
-msgid  "&Exit"
-msgstr "&Surt"
-
 #: Control.ulf#OOO_CONTROL_107
 msgid  "&Ignore"
 msgstr "&Ignora"
@@ -1579,45 +584,9 @@ msgstr "&Ignora"
 msgid  "&Retry"
 msgstr "&Reintenta"
 
-#: Control.ulf#OOO_CONTROL_117
-msgid  "Create New Folder|"
-msgstr "Crea una carpeta nova|"
-
-#: Control.ulf#OOO_CONTROL_121
-msgid  "Up One Level|"
-msgstr "Amunt un nivell|"
-
 #: Control.ulf#OOO_CONTROL_124
 msgid  "This Program is based on the 'Apache OpenOffice' project which is supported by members of the Apache Community. For credits please see: http://www.openoffice.org/welcome/credits.html"
 msgstr ""
-
-#: Control.ulf#OOO_CONTROL_127
-msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr "L'auxiliar d'instal·lació instal·larà l'[ProductName] a l'ordinador. Per continuar, feu clic a Següent."
-
-#: Control.ulf#OOO_CONTROL_132
-msgid  "Please read the following license agreement carefully."
-msgstr "Llegiu aquest acord de llicència atentament."
-
-#: Control.ulf#OOO_CONTROL_133
-msgid  "{&MSSansBold8}License Agreement"
-msgstr "{&MSSansBold8}Acord de llicència"
-
-#: Control.ulf#OOO_CONTROL_139
-msgid  "Modify, repair, or remove the program."
-msgstr "Modifica, repara o elimina el programa."
-
-#: Control.ulf#OOO_CONTROL_140
-msgid  "{&MSSansBold8}Program Maintenance"
-msgstr "{&MSSansBold8}Manteniment del programa"
-
-#: Control.ulf#OOO_CONTROL_143
-msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
-msgstr "Canvia les característiques del programa que s'instal·laran. Aquesta opció mostra la finestra de la Selecció personalitzada, on podreu canviar la manera com s'instal·len les característiques."
-
-#: Control.ulf#OOO_CONTROL_144
-msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
-msgstr "Repara errors d'instal·lació del programa. Aquesta opció arregla els fitxers, les dreceres i les entrades del registre desapareguts o malmesos."
 
 #: Control.ulf#OOO_CONTROL_145
 msgid  "Remove [ProductName] from your computer."
@@ -1627,81 +596,21 @@ msgstr "Elimina l'[ProductName] de l'ordinador."
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
 msgstr "L'auxiliar d'instal·lació us permetrà modificar, reparar, o eliminar l'[ProductName]. Per continuar, feu clic a Següent."
 
-#: Control.ulf#OOO_CONTROL_153
-msgid  "Disk space required for the installation exceeds available disk space."
-msgstr "L'espai de disc necessari per poder instal·lar és més gran que l'espai de disc disponible."
-
 #: Control.ulf#OOO_CONTROL_155
 msgid  "{&MSSansBold8}Out of Disk Space"
 msgstr "{&MSSansBold8}Sense espai en disc"
-
-#: Control.ulf#OOO_CONTROL_156
-msgid  "{120}{70}{70}{70}{70}"
-msgstr "{120}{70}{70}{70}{70}"
-
-#: Control.ulf#OOO_CONTROL_160
-msgid  "&Update >"
-msgstr "&Actualitza >"
-
-#: Control.ulf#OOO_CONTROL_161
-msgid  "{&TahomaBold10}Welcome to the Patch for [ProductName]"
-msgstr "{&TahomaBold10}Us donem la benvinguda al pedaç per l'[ProductName]"
 
 #: Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
 msgstr "L'auxiliar d'instal·lació instal·larà el pedaç per a l'[ProductName] a l'ordinador. Per continuar, feu clic a Actualitza."
 
-#: Control.ulf#OOO_CONTROL_167
-msgid  "The wizard is ready to begin installation."
-msgstr "L'auxiliar està preparat per iniciar la instal·lació."
-
-#: Control.ulf#OOO_CONTROL_168
-msgid  "Click Install to begin the installation."
-msgstr "Feu clic a Instal·la per iniciar la instal·lació."
-
 #: Control.ulf#OOO_CONTROL_169
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
 msgstr "Si voleu revisar o canviar cap dels paràmetres d'instal·lació, feu clic a Enrere. Feu clic a Cancel·la per sortir de l'auxiliar."
 
-#: Control.ulf#OOO_CONTROL_170
-msgid  "{&MSSansBold8}Ready to Modify the Program"
-msgstr "{&MSSansBold8}S'està a punt per modificar el programa"
-
-#: Control.ulf#OOO_CONTROL_171
-msgid  "{&MSSansBold8}Ready to Repair the Program"
-msgstr "{&MSSansBold8}S'està a punt per reparar el programa"
-
-#: Control.ulf#OOO_CONTROL_172
-msgid  "{&MSSansBold8}Ready to Install the Program"
-msgstr "{&MSSansBold8}S'està a punt per instal·lar el programa"
-
-#: Control.ulf#OOO_CONTROL_178
-msgid  "You have chosen to remove the program from your system."
-msgstr "Heu seleccionat eliminar el programa del sistema."
-
-#: Control.ulf#OOO_CONTROL_179
-msgid  "Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use."
-msgstr "Feu clic a Elimina per eliminar l'[ProductName] de l'ordinador. Després d'eliminar-lo, el programa ja no estarà disponible."
-
-#: Control.ulf#OOO_CONTROL_180
-msgid  "If you want to review or change any settings, click Back."
-msgstr "Si voleu revisar o canviar cap paràmetre, feu clic a Enrere."
-
-#: Control.ulf#OOO_CONTROL_181
-msgid  "{&MSSansBold8}Remove the Program"
-msgstr "{&MSSansBold8}Elimina el programa"
-
-#: Control.ulf#OOO_CONTROL_182
-msgid  "&Remove"
-msgstr "&Elimina"
-
 #: Control.ulf#OOO_CONTROL_185
 msgid  "&Finish"
 msgstr "&Finalitza"
-
-#: Control.ulf#OOO_CONTROL_186
-msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr "El sistema no s'ha modificat. Per completar la instal·lació en un altre moment, torneu a executar el programa d'instal·lació."
 
 #: Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
@@ -1723,45 +632,9 @@ msgstr "{&TahomaBold10}L'auxiliar d'instal·lació ha finalitzat"
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
 msgstr "L'auxiliar s'ha interromput abans de poder instal·lar l'[ProductName] completament."
 
-#: Control.ulf#OOO_CONTROL_194
-msgid  "&Yes, check for program updates (Recommended) after the setup completes."
-msgstr "&Sí, comprova si hi ha actualitzacions del programa (recomanat) en finalitzar la instal·lació."
-
-#: Control.ulf#OOO_CONTROL_195
-msgid  "Launch the program"
-msgstr "Executa el programa"
-
-#: Control.ulf#OOO_CONTROL_196
-msgid  "Show the readme file"
-msgstr "Mostra el fitxer amb informació"
-
-#: Control.ulf#OOO_CONTROL_199
-msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr "L'auxiliar d'instal·lació ha instal·lat l'[ProductName] de manera satisfactòria. Feu clic a Finalitza per sortir de l'auxiliar."
-
-#: Control.ulf#OOO_CONTROL_200
-msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr "L'auxiliar d'instal·lació ha desinstal·lat l'[ProductName] de manera satisfactòria. Feu clic a Finalitza per sortir de l'auxiliar."
-
 #: Control.ulf#OOO_CONTROL_201
 msgid  "Setup has finished installing [ProductName]."
 msgstr "El programa d'instal·lació ha acabat d'instal·lar l'[ProductName]."
-
-#: Control.ulf#OOO_CONTROL_202
-msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
-msgstr "Alguns dels fitxers del programa poden haver canviat des del moment que vau comprar la vostra còpia de l'[ProductName]."
-
-#: Control.ulf#OOO_CONTROL_203
-msgid  "Your Internet connection can be used to make sure that you have the latest updates."
-msgstr "Es pot utilitzar la connexió a Internet per comprovar que teniu les últimes actualitzacions."
-
-#: Control.ulf#OOO_CONTROL_204
-msgid  "&Abort"
-msgstr "&Interromp"
-
-#: Control.ulf#OOO_CONTROL_205
-msgid  "&Cancel"
-msgstr "&Cancel·la"
 
 #: Control.ulf#OOO_CONTROL_206
 msgid  "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
@@ -1775,109 +648,21 @@ msgstr "&D'acord"
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
 msgstr "El programa d'instal·lació de l'[ProductName] està preparant l'auxiliar d'instal·lació que us guiarà a través del procés d'instal·lació. Espereu."
 
-#: Control.ulf#OOO_CONTROL_222
-msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr "El sistema no s'ha modificat. Per tornar a instal·lar aquest programa més endavant, torneu a executar el programa d'instal·lació."
-
-#: Control.ulf#OOO_CONTROL_228
-msgid  "Progress done"
-msgstr "S'ha acabat el progrés"
-
-#: Control.ulf#OOO_CONTROL_234
-msgid  "The program features you selected are being installed."
-msgstr "S'estan instal·lant les característiques del programa que heu seleccionat."
-
-#: Control.ulf#OOO_CONTROL_235
-msgid  "The program features you selected are being uninstalled."
-msgstr "S'estan desinstal·lant les característiques del programa que heu seleccionat."
-
-#: Control.ulf#OOO_CONTROL_236
-msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
-msgstr "Espereu mentre l'auxiliar d'instal·lació instal·la l'[ProductName]. Aquest procés pot durar uns quants minuts."
-
-#: Control.ulf#OOO_CONTROL_237
-msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
-msgstr "Espereu mentre l'auxiliar d'instal·lació instal·la l'[ProductName]. Aquest procés pot durar uns quants minuts."
-
-#: Control.ulf#OOO_CONTROL_238
-msgid  "{&MSSansBold8}Installing [ProductName]"
-msgstr "{&MSSansBold8}S'està instal·lant l'[ProductName]"
-
 #: Control.ulf#OOO_CONTROL_239
 msgid  "{&MSSansBold8}Uninstalling [ProductName]"
 msgstr "{&MSSansBold8}S'està desinstal·lant l'[ProductName]"
-
-#: Control.ulf#OOO_CONTROL_240
-msgid  "Sec."
-msgstr "Sec."
-
-#: Control.ulf#OOO_CONTROL_241
-msgid  "Status:"
-msgstr "Estat:"
-
-#: Control.ulf#OOO_CONTROL_244
-msgid  "Estimated time remaining:"
-msgstr "Temps restant estimat:"
-
-#: Control.ulf#OOO_CONTROL_248
-msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr "L'auxiliar d'instal·lació completarà la instal·lació de l'[Productname] a l'ordinador. Per continuar, feu clic a Següent."
-
-#: Control.ulf#OOO_CONTROL_249
-msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr "L'auxiliar d'instal·lació completarà la instal·lació suspesa de l'[ProductName] a l'ordinador. Per continuar, feu clic a Següent."
-
-#: Control.ulf#OOO_CONTROL_250
-msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}S'està continuant L'auxiliar d'instal·lació de l'[ProductName]"
 
 #: Control.ulf#OOO_CONTROL_255
 msgid  "The main components will be installed. Recommended for most users."
 msgstr "S'instal·laran els components principals. Recomanat per a la majoria d'usuaris."
 
-#: Control.ulf#OOO_CONTROL_256
-msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr "Seleccioneu les característiques del programa que voleu instal·lar i on s'instal·laran. Recomanat per a usuaris avançats."
-
-#: Control.ulf#OOO_CONTROL_257
-msgid  "Choose the setup type that best suits your needs."
-msgstr "Seleccioneu el tipus d'instal·lació més adient a les vostres necessitats."
-
-#: Control.ulf#OOO_CONTROL_258
-msgid  "Please select a setup type."
-msgstr "Seleccioneu un tipus d'instal·lació."
-
-#: Control.ulf#OOO_CONTROL_259
-msgid  "{&MSSansBold8}Setup Type"
-msgstr "{&MSSansBold8}Tipus d'instal·lació"
-
 #: Control.ulf#OOO_CONTROL_267
 msgid  "Please select the product language for [ProductName]."
 msgstr "Seleccioneu una llengua de producte per a l'[ProductName]."
 
-#: Control.ulf#OOO_CONTROL_268
-msgid  "{&MSSansBold8}Language Selection"
-msgstr "{&MSSansBold8}Selecció de llengua"
-
-#: Control.ulf#OOO_CONTROL_269
-msgid  "Repair or remove the program."
-msgstr "Repara o suprimeix el programa."
-
-#: Control.ulf#OOO_CONTROL_270
-msgid  "&Microsoft Word Documents"
-msgstr "Documents del Microsoft &Word"
-
-#: Control.ulf#OOO_CONTROL_271
-msgid  "Microsoft &Excel Spreadsheets"
-msgstr "Fulls de càlcul del Microsoft &Excel"
-
 #: Control.ulf#OOO_CONTROL_272
 msgid  "Microsoft Po&werPoint Presentations"
 msgstr "Presentacions del Microsoft &PowerPoint"
-
-#: Control.ulf#OOO_CONTROL_273
-msgid  "&[ProductName] Writer/Web"
-msgstr "&[ProductName] Writer/Web"
 
 #: Control.ulf#OOO_CONTROL_274
 msgid  "Set [DEFINEDPRODUCT] to be the default application for Microsoft Office file types."
@@ -1887,78 +672,22 @@ msgstr "Estableix l'[DEFINEDPRODUCT] com a aplicació per defecte per als tipus 
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
 msgstr "L'[ProductName] es pot configurar com a aplicació per defecte per obrir els fitxers del Microsoft Office. Això vol dir que, per exemple, si feu doble clic en un d'aquests fitxers, serà l'[ProductName] qui l'obrirà en lloc del programa que l'obre actualment."
 
-#: Control.ulf#OOO_CONTROL_276
-msgid  "File types"
-msgstr "Tipus de fitxer"
-
-#: Control.ulf#OOO_CONTROL_277
-msgid  "Default HTML editor"
-msgstr "Editor HTML per defecte"
-
-#: Control.ulf#OOO_CONTROL_278
-msgid  "{&MSSansBold8}File Type"
-msgstr "{&MSSansBold8}Tipus de fitxer"
-
 #: Control.ulf#OOO_CONTROL_300
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
 msgstr "L'auxiliar d'instal·lació de l'[ProductName] ha trobat una versió de l'[DEFINEDPRODUCT] [DEFINEDVERSION]. Aquesta versió s'actualitzarà."
-
-#: Control.ulf#OOO_CONTROL_301
-msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
-msgstr "La carpeta de destinació especificada no conté una versió de l'[DEFINEDPRODUCT] [DEFINEDVERSION]."
 
 #: Control.ulf#OOO_CONTROL_302
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
 msgstr "S'ha trobat una nova versió de l'[DEFINEDPRODUCT] [DEFINEDVERSION]."
 
-#: Control.ulf#OOO_CONTROL_303
-msgid  "The version specified in the folder below cannot be updated."
-msgstr "La versió especificada a la carpeta no es pot actualitzar."
-
 #: Control.ulf#OOO_CONTROL_304
 msgid  "Check the destination folder."
 msgstr "Comproveu la carpeta de destinació."
-
-#: Control.ulf#OOO_CONTROL_305
-msgid  "To continue, click \"Next\"."
-msgstr "Per tal de continuar, feu clic"
-
-#: Control.ulf#OOO_CONTROL_306
-msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
-msgstr "Per tal de seleccionar una versió diferent, feu clic"
-
-#: Control.ulf#OOO_CONTROL_307
-msgid  "To select a different folder, click \"Change\"."
-msgstr "Per tal de seleccionar una carpeta diferent, feu clic"
 
 #: Control.ulf#OOO_CONTROL_309
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
 msgstr "Si només esteu provant l'[ProductName] segurament no voldreu que passi això, així que deixeu les caselles sense marcar."
 
-#: Control.ulf#OOO_CONTROL_317
-msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."
-msgstr "No heu seleccionat cap llengua per a la instal·lació. Feu clic a D'acord per seleccionar una o més llengües."
-
-#: Control.ulf#OOO_CONTROL_318
-msgid  "No applications have been selected for installation. Click OK to select one or more applications for installation."
-msgstr "No heu seleccionat cap aplicació per a la instal·lació. Feu clic a D'acord per seleccionar una o més aplicacions."
-
 #: Control.ulf#OOO_CONTROL_319
 msgid  "Create a start link on desktop"
 msgstr "Crea una drecera a l'escriptori"
-
-#: Control.ulf#OOO_CONTROL_320
-msgid  "Remove all older product versions"
-msgstr "Elimina totes les versions anteriors del producte"
-
-#: Control.ulf#OOO_CONTROL_LANG_1033
-msgid  "English"
-msgstr "Anglès"
-
-#: Control.ulf#OOO_CONTROL_LANG_1031
-msgid  "German"
-msgstr "Alemany"
-
-#: Control.ulf#OOO_CONTROL_LANG_1034
-msgid  "Spanish"
-msgstr "Espanyol"

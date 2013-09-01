@@ -47,10 +47,6 @@ msgstr "ersetzt"
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
 msgstr "Beim Laden dieses Controls trat ein Fehler auf. Es wurde daher durch einen Platzhalter ersetzt."
 
-#: resource/strings.src#RID_STR_READERROR.STRING.TEXT
-msgid  "Error reading data from database"
-msgstr "Fehler beim Lesen von Daten aus der Datenbank"
-
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
 msgid  "Connection failed"
 msgstr "Verbindungsaufbau gescheitert"
@@ -63,22 +59,6 @@ msgstr "Die Dateninhalte konnten nicht geladen werden."
 msgid  "The data content could not be updated"
 msgstr "Die Dateninhalte konnten nicht aktualisiert werden."
 
-#: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
-msgid  "Error inserting the new record"
-msgstr "Fehler beim Einfügen des neuen Datensatzs"
-
-#: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
-msgid  "Error updating the current record"
-msgstr "Fehler beim Schreiben des aktuellen Datensatzes"
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
-msgid  "Error deleting the current record"
-msgstr "Fehler beim Löschen des aktuellen Datensatzes"
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
-msgid  "Error deleting the specified records"
-msgstr "Fehler beim Löschen der angegebenen Datensätze"
-
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
 msgid  "The object cannot be NULL."
 msgstr "Das Objekt darf nicht NULL sein."
@@ -87,17 +67,9 @@ msgstr "Das Objekt darf nicht NULL sein."
 msgid  "Insert graphics from..."
 msgstr "Grafik einfügen aus..."
 
-#: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
-msgid  "Remove graphics"
-msgstr "Grafik entfernen"
-
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
 msgid  "The given stream is invalid."
 msgstr "Die übergebene Stream-Komponente ist ungültig."
-
-#: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
-msgid  "Syntax error in query expression"
-msgstr "Fehler bei der Analyse des Anfrageausdrucks"
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
@@ -205,31 +177,11 @@ msgstr "Zeichenkette darf höchstens $2 Zeichen lang sein."
 
 #: resource/xforms.src#RID_STR_DATATYPE_STRING.STRING.TEXT
 msgid  "String"
-msgstr "Text (String)"
-
-#: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
-msgid  "Hyperlink"
-msgstr "Hyperlink"
-
-#: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
-msgid  "True/False (Boolean)"
-msgstr "Wahr/Falsch (Boolean)"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
-msgid  "Decimal"
-msgstr "Dezimal"
-
-#: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
-msgid  "Floating point"
-msgstr "Fließkomma"
+msgstr "Zeichenkette"
 
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
 msgid  "Double"
-msgstr "Fließkomma (doppelt genau)"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
-msgid  "Date"
-msgstr "Datum"
+msgstr "Doppelt"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
 msgid  "Time"
@@ -247,26 +199,6 @@ msgstr "Monat und Jahr"
 msgid  "Year"
 msgstr "Jahr"
 
-#: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
-msgid  "Month and day"
-msgstr "Monat und Tag"
-
-#: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
-msgid  "Month"
-msgstr "Monat"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
-msgid  "Day"
-msgstr "Tag"
-
-#: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
-msgid  "Error during evaluation"
-msgstr "Fehler bei der Auswertung"
-
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
 msgid  "The string '$1' does not match the required regular expression '$2'."
 msgstr "Die Zeichenkette '$1' entspricht nicht dem geforderten regulären Ausdruck '$2'."
-
-#: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
-msgstr "Bindung"

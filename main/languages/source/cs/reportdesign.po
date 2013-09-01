@@ -783,81 +783,9 @@ msgstr "Vlastnosti:"
 msgid  "No Control marked"
 msgstr "Není označen ovládací prvek"
 
-#: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
-msgid  "Multiselection"
-msgstr "Vícenásobný výběr"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
-msgstr "Obrázek"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-msgid  "Label field"
-msgstr "Popisek"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
-msgid  "Line"
-msgstr "Čára"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid  "Formatted Field"
-msgstr "Formátované pole"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
-msgid  "Shape"
-msgstr "Tvar"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
-msgid  "Report"
-msgstr "Sestava"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
-msgid  "Section"
-msgstr "Sekce"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
-msgid  "Function"
-msgstr "Funkce"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
-msgid  "Group"
-msgstr "Skupina"
-
-#: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
-msgid  "Show ruler"
-msgstr "Zobrazit pravítko"
-
-#: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
-msgid  "Show grid"
-msgstr "Zobrazit mřížku"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
-msgid  "Change Object"
-msgstr "Změnit objekt"
-
 #: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
 msgid  "Move Group(s)"
 msgstr "Přesunout skupinu"
-
-#: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
-msgid  "Conditional Formatting"
-msgstr "Podmíněné formátování"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Remove report header / report footer"
-msgstr "Odstranit záhlaví/zápatí sestavy"
-
-#: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Add report header / report footer"
-msgstr "Přidat záhlaví/zápatí sestavy"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Remove page header / page footer"
-msgstr "Odstranit záhlaví/zápatí stránky"
-
-#: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Add page header / page footer"
-msgstr "Přidat záhlaví/zápatí stránky"
 
 #: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
 msgid  "Change property '#'"
@@ -879,105 +807,9 @@ msgstr "Přidat zápatí skupiny"
 msgid  "Remove group footer "
 msgstr "Odstranit zápatí skupiny"
 
-#: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
-msgid  "Add function"
-msgstr "Přidat funkci"
-
-#: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
-msgid  "Delete function"
-msgstr "Odebrat funkci"
-
-#: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
-msgid  "Design"
-msgstr "Návrh"
-
-#: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
-msgid  "Preview"
-msgstr "Náhled"
-
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
 msgid  "Report #"
 msgstr "Sestava #"
-
-#: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
-msgid  "~Report name"
-msgstr "Název sestavy"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
-msgid  "Delete Group"
-msgstr "Odebrat skupinu"
-
-#: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
-msgid  "Add Group"
-msgstr "Přidat skupinu"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
-msgid  "Delete Selection"
-msgstr "Odebrat výběr"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
-msgid  "Delete Function"
-msgstr "Odebrat funkci"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
-msgid  "Change Size"
-msgstr "Změnit velikost"
-
-#: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
-msgid  "Paste"
-msgstr "Vložit"
-
-#: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
-msgid  "Insert Control"
-msgstr "Vložit ovládací prvek"
-
-#: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
-msgid  "Delete Control"
-msgstr "Odebrat ovládací prvek"
-
-#: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
-msgid  "Insert Group"
-msgstr "Vložit skupinu"
-
-#: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
-msgid  "GroupHeader"
-msgstr "Záhlaví skupiny"
-
-#: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
-msgid  "GroupFooter"
-msgstr "Zápatí skupiny"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
-msgid  "Sorting and Grouping..."
-msgstr "Řazení a seskupení..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
-msgid  "Background Color..."
-msgstr "Barva pozadí..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
-msgid  "Ruler..."
-msgstr "Pravítko..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
-msgid  "Grid..."
-msgstr "Mřížka..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
-msgid  "~Arrange"
-msgstr "Uspořádat"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
-msgid  "Bring ~Forward"
-msgstr "Přenést blíž"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
-msgid  "Send Back~ward"
-msgstr "Odsunout dál"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
-msgid  "~Object Resizing"
-msgstr "Změna velikosti objektu"
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
 msgid  "~Fit to smallest width"
@@ -987,85 +819,13 @@ msgstr "Přizpůsobit nejmenší šířce"
 msgid  "~Fit to greatest width"
 msgstr "Přizpůsobit největší šířce"
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
-msgid  "~Fit to smallest height"
-msgstr "Přizpůsobit nejmenší výšce"
-
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
 msgid  "~Fit to greatest height"
 msgstr "Přizpůsobit největší výšce"
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
-msgid  "Shrink"
-msgstr "Zmenšit"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
-msgid  "Shrink from top"
-msgstr "Zmenšit seshora"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
-msgid  "Shrink from bottom"
-msgstr "Zmenšit zdola"
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
-msgid  "Distribution..."
-msgstr "Rozmístit..."
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-msgid  "Properties..."
-msgstr "Vlastnosti..."
-
-#: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Add field:"
-msgstr "Přidat pole:"
-
-#: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
-msgid  "Filter"
-msgstr "Filtr"
-
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
 msgid  " - %PRODUCTNAME Base Report"
 msgstr " - Sestava %PRODUCTNAME Base"
-
-#: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
-msgid  "Untitled"
-msgstr "Nepojmenované"
-
-#: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
-msgid  "Change Alignment"
-msgstr "Změnit zarovnání"
-
-#: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
-msgid  "# Header"
-msgstr "# Záhlaví"
-
-#: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
-msgid  "# Footer"
-msgstr "# Zápatí"
-
-#: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
-msgid  "Insert graphics"
-msgstr "Vložit obrázek"
-
-#: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
-msgid  "Delete"
-msgstr "Odstranit"
-
-#: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
-msgid  "An error occurred while creating the report."
-msgstr "Při vytváření sestavy došlo k chybě."
-
-#: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
-msgid  "An exception of type $type$ was caught."
-msgstr "Byla zachycena výjimka typu $type$."
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
-msgid  "Change font"
-msgstr "Změna písma"
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
-msgid  "Change page attributes"
-msgstr "Změna vlastností stránky"
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
 msgid  "Insert Page Header/Footer"
@@ -1090,42 +850,6 @@ msgstr "Vložit záhlaví/zápatí sestavy"
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
 msgid  "Delete Report Header/Footer"
 msgstr "Odebrat záhlaví/zápatí sestavy"
-
-#: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
-msgid  "The report can not be executed unless it is bound to content."
-msgstr "Sestavu nelze provést, pokud není spojena s obsahem."
-
-#: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
-msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr "Sestavu nelze provést, pokud není vložen alespoň jeden objekt."
-
-#: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
-msgid  "Shrink Section"
-msgstr "Zmenšit sekci"
-
-#: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
-msgid  "Detail"
-msgstr "Podrobnosti"
-
-#: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
-msgid  "Page Header"
-msgstr "Záhlaví stránky"
-
-#: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
-msgid  "Page Footer"
-msgstr "Zápatí stránky"
-
-#: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
-msgid  "Report Header"
-msgstr "Záhlaví sestavy"
-
-#: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
-msgid  "Report Footer"
-msgstr "Zápatí sestavy"
-
-#: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Vložit"
 
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
 msgid  "Detail"

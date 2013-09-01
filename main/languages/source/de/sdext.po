@@ -30,3 +30,267 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: genLang\n"
 
+
+#: minimizer/minimizer.src#STR_PRESENTATION_MINIMIZER.STRING.TEXT
+msgid  "Presentation Minimizer"
+msgstr "Presentation Minimizer"
+
+#: minimizer/minimizer.src#STR_INFO_DIALOG.STRING.TEXT
+msgid  "Presentation Minimizer - Result"
+msgstr "Ergebnisse des Presentations Wizard"
+
+#: minimizer/minimizer.src#STR_STEPS.STRING.TEXT
+msgid  "Steps"
+msgstr "Schritte"
+
+#: minimizer/minimizer.src#STR_HELP.STRING.TEXT
+msgid  "~Help"
+msgstr "~Hilfe"
+
+#: minimizer/minimizer.src#STR_BACK.STRING.TEXT
+msgid  "< ~Back"
+msgstr "< ~Zurück"
+
+#: minimizer/minimizer.src#STR_NEXT.STRING.TEXT
+msgid  "~Next >"
+msgstr "~Weiter >"
+
+#: minimizer/minimizer.src#STR_FINISH.STRING.TEXT
+msgid  "~Finish"
+msgstr "~Fertigstellen"
+
+#: minimizer/minimizer.src#STR_CANCEL.STRING.TEXT
+msgid  "Cancel"
+msgstr "Abbrechen"
+
+#: minimizer/minimizer.src#STR_INTRODUCTION.STRING.TEXT
+msgid  "Introduction"
+msgstr "Einführung"
+
+#: minimizer/minimizer.src#STR_INTRODUCTION_T.STRING.TEXT
+msgid  "The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.\nAt the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
+msgstr "Der Presentation Minimizer wird verwendet, um die Dateigröße der aktuellen Präsentation zu reduzieren. Bilder werden komprimiert und nicht mehr benötigte Daten werden entfernt.\nIm letzten Schritt des Assistenten können Sie wählen, ob die Änderungen auf die aktuelle Präsentation angewendet werden sollen oder eine optimierte Version der Präsentation neu erstellt werden soll."
+
+#: minimizer/minimizer.src#STR_CHOSE_SETTINGS.STRING.TEXT
+msgid  "~Choose settings for Presentation Minimizer"
+msgstr "~Einstellungen für Presentation Minimizer auswählen"
+
+#: minimizer/minimizer.src#STR_REMOVE.STRING.TEXT
+msgid  "~Delete"
+msgstr "~Löschen"
+
+#: minimizer/minimizer.src#STR_GRAPHIC_OPTIMIZATION.STRING.TEXT
+msgid  "Choose settings for optimizing pictures and graphics"
+msgstr "Wählen Sie die Einstellungen, um Bilder und Grafiken zu optimieren"
+
+#: minimizer/minimizer.src#STR_IMAGE_OPTIMIZATION.STRING.TEXT
+msgid  "Graphics"
+msgstr "Grafiken"
+
+#: minimizer/minimizer.src#STR_LOSSLESS_COMPRESSION.STRING.TEXT
+msgid  "~Lossless compression"
+msgstr "~Verlustfreie Komprimierung"
+
+#: minimizer/minimizer.src#STR_JPEG_COMPRESSION.STRING.TEXT
+msgid  "~JPEG compression"
+msgstr "~JPEG-Komprimierung"
+
+#: minimizer/minimizer.src#STR_QUALITY.STRING.TEXT
+msgid  "~Quality in %"
+msgstr "~Qualität in %"
+
+#: minimizer/minimizer.src#STR_REMOVE_CROP_AREA.STRING.TEXT
+msgid  "~Delete cropped graphic areas"
+msgstr "Abgeschnittene Grafikbereiche ~entfernen"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION.STRING.TEXT
+msgid  "Reduce ~image resolution"
+msgstr "Grafik~auflösung verringern"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_0.STRING.TEXT
+msgid  "<no change>"
+msgstr "<keine Änderung>"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_1.STRING.TEXT
+msgid  "90;90 DPI (screen resolution)"
+msgstr "90;90 DPI (Bildschirmauflösung)"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_2.STRING.TEXT
+msgid  "150;150 DPI (projector resolution)"
+msgstr "150;150 DPI (Projektorauflösung)"
+
+#: minimizer/minimizer.src#STR_IMAGE_RESOLUTION_3.STRING.TEXT
+msgid  "300;300 DPI (print resolution)"
+msgstr "300;300 DPI (Druckauflösung)"
+
+#: minimizer/minimizer.src#STR_EMBED_LINKED_GRAPHICS.STRING.TEXT
+msgid  "~Break links to external graphics"
+msgstr "~Verknüpfungen zu externen Graphiken lösen"
+
+#: minimizer/minimizer.src#STR_OLE_OBJECTS.STRING.TEXT
+msgid  "OLE Objects"
+msgstr "OLE-Objekte"
+
+#: minimizer/minimizer.src#STR_OLE_OPTIMIZATION.STRING.TEXT
+msgid  "Choose settings for replacing OLE objects"
+msgstr "Wählen Sie die Einstellungen, um OLE-Objekte zu ersetzen"
+
+#: minimizer/minimizer.src#STR_OLE_REPLACE.STRING.TEXT
+msgid  "Create static replacement graphics for OLE objects"
+msgstr "Erzeuge statische Ersatzdarstellungen für OLE-Objekte"
+
+#: minimizer/minimizer.src#STR_ALL_OLE_OBJECTS.STRING.TEXT
+msgid  "For ~all OLE objects"
+msgstr "Für ~alle OLE-Objekte"
+
+#: minimizer/minimizer.src#STR_ALIEN_OLE_OBJECTS_ONLY.STRING.TEXT
+msgid  "~For OLE objects not based on OpenDocument format"
+msgstr "Fü~r OLE-Objekte, die nicht auf dem OpenDocument Format basieren"
+
+#: minimizer/minimizer.src#STR_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains OLE objects."
+msgstr "Object Linking and Embedding (OLE) ist eine Technologie, die das Einbetten von und die Verlinkung mit Dokumenten und anderen Objekten ermöglicht.\nDie aktuelle Präsentation enthält OLE-Objekte."
+
+#: minimizer/minimizer.src#STR_NO_OLE_OBJECTS_DESC.STRING.TEXT
+msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects.\nThe current presentation contains no OLE objects."
+msgstr "Object Linking and Embedding (OLE) ist eine Technologie, die das Einbetten von und die Verlinkung mit Dokumenten und anderen Objekten ermöglicht.\nDie aktuelle Präsentation enthält keine OLE-Objekte."
+
+#: minimizer/minimizer.src#STR_SLIDES.STRING.TEXT
+msgid  "Slides"
+msgstr "Folien"
+
+#: minimizer/minimizer.src#STR_CHOOSE_SLIDES.STRING.TEXT
+msgid  "Choose which slides to delete"
+msgstr "Wählen Sie die Folien, die gelöscht werden sollen"
+
+#: minimizer/minimizer.src#STR_MASTER_PAGES.STRING.TEXT
+msgid  "Master Pages"
+msgstr "Masterfolien"
+
+#: minimizer/minimizer.src#STR_DELETE_MASTER_PAGES.STRING.TEXT
+msgid  "Delete unused ~master pages"
+msgstr "Nicht verwendete ~Masterfolien löschen"
+
+#: minimizer/minimizer.src#STR_DELETE_NOTES_PAGES.STRING.TEXT
+msgid  "~Clear notes"
+msgstr "~Notizen entfernen"
+
+#: minimizer/minimizer.src#STR_DELETE_HIDDEN_SLIDES.STRING.TEXT
+msgid  "Delete hidden ~slides"
+msgstr "~Ausgeblendete Folien löschen"
+
+#: minimizer/minimizer.src#STR_CUSTOM_SHOW.STRING.TEXT
+msgid  "Delete slides that are not used for the ~custom slide show"
+msgstr "Folien löschen, die nicht zur ~individuellen Bildschirmpräsentation gehören"
+
+#: minimizer/minimizer.src#STR_SUMMARY.STRING.TEXT
+msgid  "Summary"
+msgstr "Zusammenfassung"
+
+#: minimizer/minimizer.src#STR_SUMMARY_TITLE.STRING.TEXT
+msgid  "Choose where to apply the following changes"
+msgstr "Wählen Sie, wo die aufgeführten Änderungen angewendet werden sollen"
+
+#: minimizer/minimizer.src#STR_PROGRESS.STRING.TEXT
+msgid  "Progress"
+msgstr "Fortschritt"
+
+#: minimizer/minimizer.src#STR_OBJECTS_OPTIMIZED.STRING.TEXT
+msgid  "Objects optimized"
+msgstr "Optimiertes Object"
+
+#: minimizer/minimizer.src#STR_APPLY_TO_CURRENT.STRING.TEXT
+msgid  "~Apply changes to current presentation"
+msgstr "Änderungen auf die ~aktuelle Präsentation anwenden"
+
+#: minimizer/minimizer.src#STR_AUTOMATICALLY_OPEN.STRING.TEXT
+msgid  "~Open newly created presentation"
+msgstr "N~eu erzeugtes Dokument öffnen"
+
+#: minimizer/minimizer.src#STR_SAVE_SETTINGS.STRING.TEXT
+msgid  "~Save settings as"
+msgstr "~Einstellungen speichern unter"
+
+#: minimizer/minimizer.src#STR_SAVE_AS.STRING.TEXT
+msgid  "~Duplicate presentation before applying changes"
+msgstr "~Dokument duplizieren bevor die Änderungen angewendet werden"
+
+#: minimizer/minimizer.src#STR_DELETE_SLIDES.STRING.TEXT
+msgid  "Delete %SLIDES slides."
+msgstr "%SLIDES Folien löschen."
+
+#: minimizer/minimizer.src#STR_OPTIMIZE_IMAGES.STRING.TEXT
+msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
+msgstr "%IMAGES Bilder auf %QUALITY% JPEG Qualität bei %RESOLUTION DPI optimieren."
+
+#: minimizer/minimizer.src#STR_CREATE_REPLACEMENT.STRING.TEXT
+msgid  "Create replacement graphics for %OLE objects."
+msgstr "Ersatzdarstellung für %OLE Objekte erzeugen."
+
+#: minimizer/minimizer.src#STR_CURRENT_FILESIZE.STRING.TEXT
+msgid  "Current file size:"
+msgstr "Aktuelle Dateigröße:"
+
+#: minimizer/minimizer.src#STR_ESTIMATED_FILESIZE.STRING.TEXT
+msgid  "Estimated new file size:"
+msgstr "Geschätzte neue Dateigröße:"
+
+#: minimizer/minimizer.src#STR_MB.STRING.TEXT
+msgid  "%1 MB"
+msgstr "%1 MB"
+
+#: minimizer/minimizer.src#STR_MY_SETTINGS.STRING.TEXT
+msgid  "My Settings "
+msgstr "Meine Einstellungen "
+
+#: minimizer/minimizer.src#STR_DEFAULT_SESSION.STRING.TEXT
+msgid  "default session"
+msgstr "Grundeinstellung"
+
+#: minimizer/minimizer.src#STR_MODIFY_WARNING.STRING.TEXT
+msgid  "The optimization will modify the current document. Do you want to continue?"
+msgstr "Die Optimierung wird das aktuelle Dokument ändern. Wollen Sie fortfahren?"
+
+#: minimizer/minimizer.src#STR_YES.STRING.TEXT
+msgid  "~Yes"
+msgstr "~Ja"
+
+#: minimizer/minimizer.src#STR_OK.STRING.TEXT
+msgid  "OK"
+msgstr "OK"
+
+#: minimizer/minimizer.src#STR_INFO_1.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
+msgstr "Das Dokument '%TITLE' wurde erfolgreich vom Presentation Minimizer überarbeitet. Die Dateigröße wurde dabei von %OLDFILESIZE MB auf %NEWFILESIZE MB geändert."
+
+#: minimizer/minimizer.src#STR_INFO_2.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
+msgstr "Das Dokument '%TITLE' wurde erfolgreich vom Presentation Minimizer überarbeitet. Die Dateigröße wurde dabei von %OLDFILESIZE MB auf etwa %NEWFILESIZE MB geändert."
+
+#: minimizer/minimizer.src#STR_INFO_3.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
+msgstr "Das Dokument '%TITLE' wurde erfolgreich vom Presentation Minimizer überarbeitet. Die neue Dateigröße beträgt %NEWFILESIZE MB."
+
+#: minimizer/minimizer.src#STR_INFO_4.STRING.TEXT
+msgid  "The Presentation Minimizer has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
+msgstr "Das Dokument '%TITLE' wurde erfolgreich vom Presentation Minimizer überarbeitet. Die neue Dateigröße beträgt etwa %NEWFILESIZE MB."
+
+#: minimizer/minimizer.src#STR_DUPLICATING_PRESENTATION.STRING.TEXT
+msgid  "Duplicating presentation..."
+msgstr "Dokument duplizieren..."
+
+#: minimizer/minimizer.src#STR_DELETING_SLIDES.STRING.TEXT
+msgid  "Deleting slides..."
+msgstr "Folien löschen..."
+
+#: minimizer/minimizer.src#STR_OPTIMIZING_GRAPHICS.STRING.TEXT
+msgid  "Optimizing graphics..."
+msgstr "Grafiken optimieren..."
+
+#: minimizer/minimizer.src#STR_CREATING_OLE_REPLACEMENTS.STRING.TEXT
+msgid  "Creating replacement graphics for OLE objects..."
+msgstr "Ersatzdarstellungen für OLE-Objekte erzeugen..."
+
+#: minimizer/minimizer.src#STR_FILESIZESEPARATOR.STRING.TEXT
+msgid  "."
+msgstr "."

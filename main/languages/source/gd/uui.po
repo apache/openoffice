@@ -31,10 +31,642 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: alreadyopen.src#STR_ALREADYOPEN_MSG.STRING.TEXT
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
+msgstr "Chaidh am faidhle '$(ARG1)' a ghlasadh ro dheasachadh leat-sa air siostam eile a-mach o $(ARG2)\n\nFosgail an sgrìobhainn sa mhodh leughaidh a-mhàin no leig seachad a' ghlas a chuir thu fhèin ann agus fosgail an sgrìobhainn a chum deasachaidh.\n\n"
+
+#: alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.STRING.TEXT
+msgid  "Open ~Read-Only"
+msgstr "~Fosgail a chum leughaidh a-mhain"
+
+#: alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.STRING.TEXT
+msgid  "~Open"
+msgstr "F~osgail"
+
+#: alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.STRING.TEXT
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
+msgstr "Chaidh am faidhle '$(ARG1)' a ghlasadh ro dheasachadh leat-sa air siostam eile a-mach o $(ARG2)\n\nDùin an sgrìobhainn air an t-siostam eile 's feuch ris a shàbhaladh a-rithist no leig seachad a' ghlas a chuir thu fhèin ann agus sàbhail an sgrìobhainn làithreach.\n\n"
+
+#: alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.STRING.TEXT
+msgid  "~Retry Saving"
+msgstr "Feuch ~ris a shàbhaladh a-rithist"
+
+#: alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.STRING.TEXT
+msgid  "~Save"
+msgstr "~Sàbhail"
+
 #: cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RADIOBUTTON.TEXT
 msgid  "~Send"
 msgstr "C~uir"
 
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RADIOBUTTON.TEXT
+msgid  "I~gnore"
+msgstr "Leig ~seachad"
+
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RADIOBUTTON.TEXT
+msgid  "I~nteractive"
+msgstr "~Eadar-obrachail"
+
+#: cookiedg.src#DLG_COOKIES.GB_INFUTURE.GROUPBOX.TEXT
+msgid  "Future Cookie Handling"
+msgstr "Làimhseachadh nam briosgaidean sam àm ri teachd"
+
+#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PUSHBUTTON.TEXT
+msgid  "~Ignore"
+msgstr "Le~ig seachad"
+
+#: cookiedg.src#STR_COOKIES_RECV_START.STRING.TEXT
+msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr "Tha am frithealaiche '${HOST}' airson briosgaidean a shuidheachadh.\nTha fiosrachadh ann am briosgaidean a thaobh clasaichean de dh'URLaichean àraidh. Ma dh'iarras %PRODUCTNAME sgrìobhainn aig URL a tha a' freagairt ri clas de bhriosgaid a chaidh a shuidheachadh roimhe, cuiridh %PRODUCTNAME am fiosrachadh seo dhan fhrithealaiche. Leigidh an gleus seo le frithealaiche aplacaid-lìn aithneachadh, m.e. nuair a bhios thu a' ceannach rudan air loidhne.\n\nBu chòir gun dèid na briosgaidean a leanas a shuidheachadh:\n\n"
+
 #: cookiedg.src#STR_COOKIES_RECV_COOKIES.STRING.TEXT
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "Àrainn-lìn: ${DOMAIN}, Slighe: ${PATH}, Briosgaid: ${COOKIE}.\n"
+
+#: cookiedg.src#STR_COOKIES_RECV_TITLE.STRING.TEXT
+msgid  "Cookie Reception"
+msgstr "Faighinn nam briosgaidean"
+
+#: cookiedg.src#STR_COOKIES_SEND_START.STRING.TEXT
+msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr "Shàbhail %PRODUCTNAME briosgaidean airson an fhrithealaiche '${HOST}' agus thèid an cur a-null nuair a dh'iarrar an sgrìobhainn ${PATH}.\nTha fiosrachadh ann am briosgaidean a thaobh clasaichean de dh'URLaichean àraidh. Tha cuid a dh'fhrithealaichean 'gan cur do %PRODUCTNAME far an dèid a shàbhaladh nuair a dh'fhosglar iad. Ma dh'iarras %PRODUCTNAME sgrìobhainn aig URL a tha a' freagairt ri clas de bhriosgaid a chaidh a shuidheachadh roimhe, cuiridh %PRODUCTNAME am fiosrachadh seo dhan fhrithealaiche. Leigidh an gleus seo le frithealaiche aplacaid-lìn aithneachadh, m.e. nuair a bhios thu a' ceannach rudan air loidhne.\n\nBu chòir gun dèid na briosgaidean a leanas a shuidheachadh:\n\n"
+
+#: cookiedg.src#STR_COOKIES_SEND_TITLE.STRING.TEXT
+msgid  "Send Cookies"
+msgstr "Cuir na briosgaidean"
+
+#: filechanged.src#STR_FILECHANGED_TITLE.STRING.TEXT
+msgid  "Document Has Been Changed by Others"
+msgstr "Chaidh an sgrìobhainn atharrachadh le cuideigin eile"
+
+#: filechanged.src#STR_FILECHANGED_MSG.STRING.TEXT
+msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
+msgstr "Chaidh am faidhle atharrachadh on a chaidh fhosgladh ann an %PRODUCTNAME airson a dheasachadh. Ma shàbhaileas tu an tionndadh agad-sa dhen sgrìobhainn seo, thèid a shàbhaladh an àite nan atharraichean a rinn càch.\n\nA bheil thu airson a shàbhaladh co-dhiù?\n\n"
+
+#: filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.STRING.TEXT
+msgid  "~Save Anyway"
+msgstr "~Sàbhail e co-dhiù"
+
+#: fltdlg.src#DLG_FILTER_SELECT.MODALDIALOG.TEXT
+msgid  "Filter Selection"
+msgstr "Taghadh na criathraige"
+
+#: ids.src#RID_KEEP_PASSWORD.STRING.TEXT
+msgid  "~Remember password until end of session"
+msgstr "Cui~mhnich am facal-faire gu deireadh an t-seisein"
+
+#: ids.src#RID_SAVE_PASSWORD.STRING.TEXT
+msgid  "~Remember password"
+msgstr "Cuimhnich am ~facal-faire"
+
+#: ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.STRING.TEXT
+msgid  "Invalid Document Signature"
+msgstr "Soidhneadh mì-dhligheach aig an sgrìobhainn"
+
+#: ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.STRING.TEXT
+msgid  "Non-Encrypted Streams"
+msgstr "Sruthain gun dubh-cheileadh"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation executed on $(ARG1) was aborted."
+msgstr "Chaidh crìoch a chur air a' ghnìomh air $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Access to $(ARG1) was denied."
+msgstr "Chaidh inntrigeadh do $(ARG1) a dhiùltadh."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) already exists."
+msgstr "Tha $(ARG1) ann mu thràth."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Target already exists."
+msgstr "Tha an targaid seo ann mu thràth."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr "Tha thu an impis leabhar-lann a tha fo dhìon facail-fhaire a shàbhaladh no às-phortadh sa bheil mòideal(an) a leanas \n$(ARG1)\nagus a tha ro mhòr airson a stòradh ann am fòrmat bìnearaidh. Ma tha thu airson 's gun urrainn do chleachdaichean aig nach eil inntrigeadh do dh'fhacal-faire na leabhar-lainn macrothan a ruith sna mòidealan sin, bidh agad ri an sgoltadh ann am mòidealan nas lugha. A bheil thu airson leantainn ort le sàbhaladh/às-phortadh na leabhar-lainn seo?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The data from $(ARG1) has an incorrect checksum."
+msgstr "Tha checksum cearr aig an dàta o $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgstr "Chan urrainn dhut an t-oibseact $(ARG1) a chruthachadh san eòlaire $(ARG2)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Data of $(ARG1) could not be read."
+msgstr "Cha do ghabh an dàta o $(ARG1) a leughadh."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The seek operation on $(ARG1) could not be performed."
+msgstr "Cha do ghabh an lorg air $(ARG1) a thoirt gu buil."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The tell operation on $(ARG1) could not be performed."
+msgstr "Cha do ghabh an gnìomh \"tell\" a thoirt gu buil air $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Data for $(ARG1) could not be written."
+msgstr "Cha do ghabh an dàta airson $(ARG1) a sgrìobhadh."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Action impossible: $(ARG1) is the current directory."
+msgstr "Do-dhèanta: Tha $(ARG1) 'na eòlaire làithreach."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not ready."
+msgstr "Chan eil $(ARG1) deiseil."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr "Do-dhèanta: Tha $(ARG1) is $(ARG2) 'nan diofar innealan (draibhean)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "General input/output error while accessing $(ARG1)."
+msgstr "Mearachd ion-chuir/às-chuir choitcheann nuair a rinneadh inntrigeadh do $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "An attempt was made to access $(ARG1) in an invalid way."
+msgstr "Dh'fheuch thu ri inntrigeadh mì-dhligheach a dhèanamh do $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) contains invalid characters."
+msgstr "Tha caractairean mì-dhligheach ann an $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The device (drive) $(ARG1) is invalid."
+msgstr "Tha an t-inneal (draibh) $(ARG1) mì-dhligheach."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The data from $(ARG1) has an invalid length."
+msgstr "Tha faid mhì-dhligheach aig an dàta o $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) was started with an invalid parameter."
+msgstr "Chaidh an t-obrachadh air $(ARG1) a thòiseachadh le paramadair mì-dhligheach."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
+msgstr "Cha ghabh an t-obrachadh a dhèanamh a chionn 's gu bheil saoragan ann an $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Error during shared access to $(ARG1)."
+msgstr "Mearachd an cois inntrigidh cho-roinnte do $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) contains misplaced characters."
+msgstr "Tha caractairea ann an $(ARG1) a tha san àite chearr."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The name $(ARG1) contains too many characters."
+msgstr "Tha cur charactairean ann an $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) does not exist."
+msgstr "Chan eil $(ARG1) ann."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The path $(ARG1) does not exist."
+msgstr "Chan eil slighe do $(ARG1) ann."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) is not supported on this operating system."
+msgstr "Chan eil an siostam-obrachaidh seo a' cur taic ris a' ghnìomh seo air $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not a directory."
+msgstr "Chan eil $(ARG1) 'na eòlaire."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not a file."
+msgstr "Chan eil $(ARG1) 'na fhaidhle."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "There is no space left on device $(ARG1)."
+msgstr "Chan eil àite air fhàgail air an inneal $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
+msgstr "Cha ghabh an gnìomh air $(ARG1) a dhèanamh a chionn 's gu bheil cus fhaidhlichean fosgailte agad."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
+msgstr "Cha ghabh an gnìomh air $(ARG1) a dhèanamh a chionn 's nach eil cuimhne air fhàgail agad."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr "Cha ghabh an gnìomh air $(ARG1) leantainn air adhart a chionn 's gu bheilear a' feitheamh ri barrachd dàta."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) cannot be copied into itself."
+msgstr "Chan urrainn dhut lethbhreac de $(ARG1) a chur dha fhèin."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Unknown input/output error while accessing $(ARG1)."
+msgstr "Mearachd ion-chuir/às-chuir neo-aithnichte nuair a rinneadh inntrigeadh do $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is write protected."
+msgstr "Tha $(ARG1) fo dhìon sgrìobhaidh."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not in the correct format."
+msgstr "Chan eil $(ARG1) san fhòrmat cheart."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The version of $(ARG1) is not correct."
+msgstr "Chan eil an tionndadh de $(ARG1) ceart."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Drive $(ARG1) does not exist."
+msgstr "Chan eil an draibh $(ARG1) ann."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Folder $(ARG1) does not exist."
+msgstr "Chan eil am pasgan $(ARG1) ann."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The installed Java version is not supported."
+msgstr "Chan eil taic ris an tionndadh de Java a tha air a stàladh agad."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The installed Java version $(ARG1) is not supported."
+msgstr "Chan eil taic ris an tionndadh Java $(ARG1) a tha air a stàladh agad."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
+msgstr "Chan eil taic ris an tionndadh de Java, feumaidh tu $(ARG1) air a' char as lugha."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
+msgstr "Chan eil taic ris an tionndadh Java $(ARG1), feumaidh tu $(ARG2) air a' char as lugha."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The data associated with the partnership is corrupted."
+msgstr "Tha an dàta coirbte a tha co-cheangailte ris a' chom-pàirteachas."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The data associated with the partnership $(ARG1) is corrupted."
+msgstr "Tha an dàta coirbte a tha co-cheangailte ris a' chom-pàirteachas $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Volume $(ARG1) is not ready."
+msgstr "Chan eil $(ARG1) deiseil."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not ready; please insert a storage medium."
+msgstr "Chan eil $(ARG1) deiseil; cuir a-steach inneal stòrais."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
+msgstr "Chan eil $(ARG1) deiseil; cuir a-steach inneal stòrais."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Please insert disk $(ARG1)."
+msgstr "Cuir a-steach an diosg $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The object cannot be created in directory $(ARG1)."
+msgstr "Chan urrainn dhut an t-oibseact a chruthachadh san eòlaire $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
+msgstr "Chan urrainn do %PRODUCTNAME faidhlichean a dhìon o thar-sgrìobhadh ma thèid am pròtacal tar-chuir seo a chleachdadh. A bheil thu airson leantainn air adhart co-dhiù?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
+msgstr "Tha am faidhle '$(ARG1)' coirbte agus cha ghabh fhosgladh. 'S urrainn do %PRODUCTNAME oidhirp a dhèanamh am faidhle a chàradh.\n\nFaodaidh gun deach a mhilleadh an cois droch-làimhseachadh na sgrìobhainne no an cois dochann a thachair rè tar-chur an dàta.\n\nMholamaid dhut gun a bhith a' cur earbsa ann an susbaint na sgrìobhainne a chaidh a chàradh.\nChaidh macrothan a chur à comais san sgrìobhainn seo.\n\nA bheil thu airson 's gum feuch %PRODUCTNAME am faidhle a chàradh?\n"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgstr "Cha do ghabh am faidhle '$(ARG1)' a chàradh agus cha ghabh fhosgladh air sgàth sin."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr "Tha an dàta rèiteachaidh ann an '$(ARG1)' coirbte. Faodaidh nach obraich cuid dhe na feartan mar bu chòir as aonais an dàta seo.\nA bheil thu airson leantainn air adhart le tòiseachadh %PRODUCTNAME as aonais an dàta rèiteachaidh choirbte seo?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr "Tha am faidhle rèiteachaidh pearsanta '$(ARG1)' coirbte agus tha feum air a sguabadh às mus urrainn dhut leantainn air adhart. Faodaidh gun dèid cuid dhe na roghainnean pearsanta agad air chall.\nA bheil thu airson leantainn air adhart le tòiseachadh %PRODUCTNAME as aonais an dàta rèiteachaidh choirbte seo?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
+msgstr "Chan eil tùs an dàta rèiteachaidh '$(ARG1)' ri làimh. Faodaidh nach obraich cuid dhe na feartan mar bu chòir as aonais an dàta seo."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr "Chan eil an dàta rèiteachaidh ann an '$(ARG1)' ri làimh. Faodaidh nach obraich cuid dhe na feartan mar bu chòir as aonais an dàta seo.\nA bheil thu airson leantainn air adhart le tòiseachadh %PRODUCTNAME as aonais an dàta rèiteachaidh air a bheil feum?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The form contains invalid data. Do you still want to continue?"
+msgstr "Tha dàta mì-dhligheach san fhoirm seo. A bheil thu airson leantainn air adhart?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
+msgstr "Chaidh am faidhle $(ARG1) a ghlasadh le cleachdaiche eile. Chan urrainn dhut cead-sgrìobhaidh a thoirt seachad airson an fhaidhle seo an-dràsta."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
+msgstr "Chaidh am faidhle $(ARG1) a ghlasadh leat fhèin. Chan urrainn dhut cead-sgrìobhaidh a thoirt seachad airson an fhaidhle seo an-dràsta."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file $(ARG1) is currently not locked by yourself."
+msgstr "Cha deach am faidhle $(ARG1) a ghlasadh leat fhèin."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgstr "Dh'fhalbh an ùine air seann-ghlas an fhaidhle $(ARG1).\nTachraidh seo uaireannan ma bhios duilgheadasan aig an fhrithealaiche a stiùireas glas an fhaidhle. Chan urrainn dhuinn a dhol an urra nach dèid rudan a dh'atharraicheas tu san fhaidhle seo a sgrìobhadh thairis air atharraichean le cleachdaichean eile!"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.TEXT
+msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr "Cha ghabh dearbh-aithne na làraich $(ARG1) a dhearbhadh.\n\nMus gabh thu ris an teisteanas seo, bu chòir dhut sùil gheur a chur air teisteanas na làraich seo. A bheil thu deònach gabhail ris an teisteanas seo mar dhearbhadh dearbh-aithne na làraich-lìn $(ARG1)?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.TEXT
+msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
+msgstr "Tha $(ARG1) 'na làrach a chleachdas teisteanas tèarainteachd gus dàta a dhubh-cheileadh rè tar-chur an dàta ach dh'fhalbh an ùine air $(ARG2).\n\nBu chòir dhut dèanamh cinnteach gu bheil an t-àm ceart air a' choimpiutair agad."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.TEXT
+msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
+msgstr "Dh'fheuch thu ri ceangal a stèidheachadh ri $(ARG1). Ge-tà 's ann aig $(ARG2) a tha an teisteanas tèarainteachd a tha e a' nochdadh. Ged nach eil seo ro bhuailteach, faodaidh gu bheil cuideigin a' feuchainn ri do chonaltradh leis an làrach-lìn seo a ghlacadh.\n\nMa bhios amharas agad nach ann aig $(ARG1) a tha an teisteanas seo, sguir dhen cheangal agus leig fios do rianaire na làraich.\n\nA bheil thu airson leantainn air adhart co-dhiù?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.TEXT
+msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr "Cha do ghabh an teisteanas a dhearbhadh. Bu chòir dhut sùil gheur a chur air teisteanas na làraich seo.\n\nMa bhios amharas agad mun teisteanas seo, sguir dhen cheangal agus leig fios do rianaire na làraich."
+
+#: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.TEXT
+msgid  "Security Warning: Domain Name Mismatch"
+msgstr "Rabhadh tèarainteachd: Chan eil na h-àrainnean-lìn a' freagairt ri chèile"
+
+#: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.TEXT
+msgid  "Security Warning: Server Certificate Expired"
+msgstr "Rabhadh tèarainteachd: Dh'fhalbh an ùine air teisteanas an fhrithealaiche"
+
+#: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.TEXT
+msgid  "Security Warning: Server Certificate Invalid"
+msgstr "Rabhadh tèarainteachd: Tha teisteanas an fhrithealaiche mì-dhligheach"
+
+#: lockfailed.src#STR_LOCKFAILED_MSG.STRING.TEXT
+msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
+msgstr "Cha do ghabh am faidhle a ghlasadh (airson inntrigeadh le %PRODUCTNAME a-mhàin) air sgàth cead a tha a dhìth mus urrainn dhut faidhle a ghlasadh san àite sin."
+
+#: logindlg.src#DLG_UUI_LOGIN.MODALDIALOG.TEXT
+msgid  "Authentication Required"
+msgstr "Tha feum air dearbhadh"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FIXEDTEXT.TEXT
+msgid  "Message from server:"
+msgstr "Teachdaireachd on fhrithealaiche:"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FIXEDTEXT.TEXT
+msgid  "Enter user name and password for: \n%1"
+msgstr "Cuir a-steach an t-ainm-cleachdaiche 's am facal-faire airson: \n%1"
+
+#: logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.STRING.TEXT
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "Cuir a-steach an t-ainm-cleachdaiche 's am facal-faire airson: \n\"%2\" air %1"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FIXEDTEXT.TEXT
+msgid  "~Path"
+msgstr "~Slighe"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FIXEDTEXT.TEXT
+msgid  "~User name"
+msgstr "~Ainm-cleachdaiche"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FIXEDTEXT.TEXT
+msgid  "Pass~word"
+msgstr "~Facal-faire"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FIXEDTEXT.TEXT
+msgid  "A~ccount"
+msgstr "Cunn~tas"
+
+#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CHECKBOX.TEXT
+msgid  "~Remember password"
+msgstr "Cuimhnich ~am facal-faire"
+
+#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.CHECKBOX.TEXT
+msgid  "~Use system credentials"
+msgstr "~Cleachd teisteas an t-siostaim"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.MODALDIALOG.TEXT
+msgid  "Set Master Password"
+msgstr "Suidhich am prìomh-fhacal-faire"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FIXEDTEXT.TEXT
+msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
+msgstr "Tha faclan-faire airson ceanglaichean-lìn fo dhìon le prìomh-fhacal-faire. Thèid iarraidh ort a chur a-steach turas gach seisean ma dh'iarras %PRODUCTNAME facal-faire o liosta nam faclan-faire fo dhìon."
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FIXEDTEXT.TEXT
+msgid  "~Enter password"
+msgstr "Cuir a-st~each facal-faire"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FIXEDTEXT.TEXT
+msgid  "~Reenter password"
+msgstr "Cuir a-steach am ~facal-faire a-rithist"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FIXEDTEXT.TEXT
+msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
+msgstr "An aire: Ma dhìochuimhnicheas tu am prìomh-fhacal-faire, chan urrainn dhut gin dhen dàta a ruigsinn a tha e 'ga dhìon. Tha aire do litrichean mòra is beaga ann am prìomh-fhaclan-faire."
+
+#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FIXEDTEXT.TEXT
+msgid  "Enter password"
+msgstr "Cuir a-steach facal-faire"
+
+#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HELPBUTTON.TEXT
+msgid  "Enter Master Password"
+msgstr "Cuir a-steach am prìomh-fhacal-faire"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.MODALDIALOG.TEXT
+msgid  "File Exists"
+msgstr "Tha am faidhle ann mu thràth"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.PUSHBUTTON.TEXT
+msgid  "Replace"
+msgstr "Cuir 'na àite"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.PUSHBUTTON.TEXT
+msgid  "Rename"
+msgstr "Cuir ainm ùr air"
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.MODALDIALOG.TEXT
+msgid  "%PRODUCTNAME Update Available"
+msgstr "Tha ùrachadh ri fhaighinn airson %PRODUCTNAME"
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FIXEDTEXT.TEXT
+msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr "Chaidh an sgrìobhainn seo a chruthachadh le tionndadh nas ùire de %PRODUCTNAME. Faodaidh gu bheil rudan ann nach obraich san tionndadh làithreach agad.\n\nBriog air \"Ùraich an-dràsts...\" gus an tionndadh as ùire de %PRODUCTNAME fhaighinn on lìon."
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PUSHBUTTON.TEXT
+msgid  "~Update Now..."
+msgstr "Ùr~aich an-dràsta..."
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CANCELBUTTON.TEXT
+msgid  "~Later"
+msgstr "An ~ceann tàmaill"
+
+#: openlocked.src#STR_OPENLOCKED_TITLE.STRING.TEXT
+msgid  "Document in Use"
+msgstr "Tha an sgrìobhainn 'ga chleachdadh"
+
+#: openlocked.src#STR_OPENLOCKED_MSG.STRING.TEXT
+msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
+msgstr "Chaidh glas deasachaidh a chur air an fhaidhle '$(ARG1)' le:\n\n$(ARG2)\n\nFosgail an sgrìobhainn a chum leughaidh a-mhàin no fosgail lethbhreac dhen sgrìobhainn a chum deasachaidh.\n\n"
+
+#: openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.STRING.TEXT
+msgid  "Open ~Read-Only"
+msgstr "Fosgail a chu~m leughaidh a-mhàin"
+
+#: openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.STRING.TEXT
+msgid  "Open ~Copy"
+msgstr "Fosgail ~lethbhreac dheth"
+
+#: openlocked.src#STR_UNKNOWNUSER.STRING.TEXT
+msgid  "Unknown User"
+msgstr "Cleachdaiche neo-aithnichte"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.STRING.TEXT
+msgid  "Enter password to open file: \n"
+msgstr "Cuir a-steach am facal-faire gus am faidhle fhosgladh: \n"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.STRING.TEXT
+msgid  "Enter password to modify file: \n"
+msgstr "Cuir a-steach am facal-faire gus am faidhle atharrachadh: \n"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.STRING.TEXT
+msgid  "Enter password: "
+msgstr "Cuir a-steach facal-faire: "
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.STRING.TEXT
+msgid  "Confirm password: "
+msgstr "Dearbhaich am facal-faire: "
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.STRING.TEXT
+msgid  "Set Password"
+msgstr "Suidhich facal-faire"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.STRING.TEXT
+msgid  "Enter Password"
+msgstr "Cuir a-steach facal-faire"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.STRING.TEXT
+msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
+msgstr "Chan eil am facal-faire dearbhaidh a' freagairt ris an fhacal-fhaire. Suidhich am facal-faire a-rithist 's tu a' cur a-steach an dearbh-fhacal-faire san dà bhogsa."
+
+#: passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.STRING.TEXT
+msgid  "The password is incorrect. The file cannot be opened."
+msgstr "Tha am facal-faire cearr. Cha ghabh am faidhle fhosgladh."
+
+#: passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.STRING.TEXT
+msgid  "The password is incorrect. The file cannot be modified."
+msgstr "Tha am facal-faire cearr. Cha ghabh am faidhle atharrachadh."
+
+#: passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.STRING.TEXT
+msgid  "The master password is incorrect."
+msgstr "Tha am prìomh-fhacal-faire cearr."
+
+#: passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.STRING.TEXT
+msgid  "The password is incorrect."
+msgstr "Tha am facal-faire cearr."
+
+#: passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
+msgid  "The password confirmation does not match."
+msgstr "Chan eil an dà fhacal-faire a' freagairt ri chèile."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.MODALDIALOG.TEXT
+msgid  "%PRODUCTNAME - Security Warning"
+msgstr "%PRODUCTNAME - Rabhadh tèarainteachd"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.FIXEDTEXT.TEXT
+msgid  "The document contains document macros signed by:"
+msgstr "Tha macrothan san sgrìobhainn seo a tha air a shoidhneadh le:"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.FIXEDTEXT.TEXT
+msgid  "The document contains document macros."
+msgstr "Tha macrothan san sgrìobhainn seo."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.PUSHBUTTON.TEXT
+msgid  "View Signatures..."
+msgstr "Seall na soidhneachaidhean..."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FIXEDTEXT.TEXT
+msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr "Faodaidh bìorasan a bhith ann am macrothan. Tha e sàbhailte an-còmhnaidh na macrothan a chur à comas ann an sgrìobhainn. Ma chuireas tu na macrothan à comas, faodaidh gun caill thu feartan a bheireadh na macrothan dhut."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CHECKBOX.TEXT
+msgid  "Always trust macros from this source"
+msgstr "Cuir earbsa ann am macrothan leis an tùs seo an-còmhnaidh"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.OKBUTTON.TEXT
+msgid  "~Enable Macros"
+msgstr "~Cuir na macrothan an comas"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.CANCELBUTTON.TEXT
+msgid  "~Disable Macros"
+msgstr "C~uir na macrothan à comas"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.MODALDIALOG.TEXT
+msgid  "Security Warning: "
+msgstr "Rabhadh tèarainteachd: "
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.FIXEDTEXT.TEXT
+msgid  "No Text"
+msgstr "Gun teacsa"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.PUSHBUTTON.TEXT
+msgid  "View Certificate"
+msgstr "Seall an teisteanas"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.CANCELBUTTON.TEXT
+msgid  "Cancel Connection"
+msgstr "Sguir dhen cheangal"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.PUSHBUTTON.TEXT
+msgid  "Continue"
+msgstr "Lean air adhart"
+
+#: trylater.src#STR_TRYLATER_TITLE.STRING.TEXT
+msgid  "Document in Use"
+msgstr "Tha an sgrìobhainn 'ga chleachdadh"
+
+#: trylater.src#STR_TRYLATER_MSG.STRING.TEXT
+msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
+msgstr "Chaidh glas deasachaidh a chur air an fhaidhle '$(ARG1)' le:\n\n$(ARG2)\n\nFeuch ris a shàbhaladh an ceann tàmaill no sàbhail lethbhreac dhen sgrìobhainn.\n\n"
+
+#: trylater.src#STR_TRYLATER_RETRYSAVING_BTN.STRING.TEXT
+msgid  "~Retry Saving"
+msgstr "Feuch ~ris a shàbhaladh a-rithist"
+
+#: trylater.src#STR_TRYLATER_SAVEAS_BTN.STRING.TEXT
+msgid  "~Save As..."
+msgstr "Sàbh~ail mar..."
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.MODALDIALOG.TEXT
+msgid  "Website Certified by an Unknown Authority"
+msgstr "Teisteanas làraich-lìn le ùghdarras neo-aithnichte"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.PUSHBUTTON.TEXT
+msgid  "Examine Certificate..."
+msgstr "Thoir sùil air an teisteanas..."
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.HELPBUTTON.TEXT
+msgid  "Help"
+msgstr "Cobhair"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.PUSHBUTTON.TEXT
+msgid  "OK"
+msgstr "Ceart ma-thà"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.RADIOBUTTON.TEXT
+msgid  "Accept this certificate temporarily for this session"
+msgstr "Gabh ris an teisteanas seo gu sealach rè an t-seisein seo"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RADIOBUTTON.TEXT
+msgid  "Do not accept this certificate and do not connect to this Web site"
+msgstr "Na gabh ris an teisteanas seo agus na ceangail ris an làrach-lìn seo"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FIXEDTEXT.TEXT
+msgid  "No Text"
+msgstr "Gun teacsa"

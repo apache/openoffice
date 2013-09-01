@@ -31,30 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
-msgid  "Configuration Menu"
-msgstr "Kokoonpanovalikko"
-
-#: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
-msgid  "~Add-Ons"
-msgstr "L~isäosat"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
-msgid  "Cu~t"
-msgstr "~Leikkaa"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
-msgid  "~Copy"
-msgstr "K~opioi"
-
-#: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
-msgid  "~Paste"
-msgstr "Lii~tä"
-
-#: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
-msgid  "Leave Full-Screen Mode"
-msgstr "Poistu ruutunäytön tilasta"
-
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
 msgid  "Add-~On Help"
 msgstr "Lisäosien ~ohje"
@@ -71,73 +47,25 @@ msgstr "(ei mitään)"
 msgid  "~Thesaurus..."
 msgstr "Synonyymisanasto..."
 
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
-msgid  "My Templates"
-msgstr "Omat mallit"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
-msgid  "Business Correspondence"
-msgstr "Liikekirjeenvaihto"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
-msgid  "Other Business Documents"
-msgstr "Muut liikeasiakirjat"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
-msgid  "Personal Correspondence and Documents"
-msgstr "Yksityinen kirjeenvaihto ja asiakirjat"
-
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
 msgid  "Forms and Contracts"
 msgstr "Lomakkeet ja sopimukset"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
-msgid  "Finances"
-msgstr "Talous"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
-msgid  "Education"
-msgstr "Koulutus"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
-msgid  "Presentation Backgrounds"
-msgstr "Esitystaustat"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
-msgid  "Presentations"
-msgstr "Esitykset"
-
-#: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
-msgid  "Miscellaneous"
-msgstr "Sekalaiset"
-
-#: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
-msgid  "The templates are being initialized for first-time usage."
-msgstr "Malleja alustetaan ensimmäistä käyttökertaa varten."
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
 msgid  "Templates"
 msgstr "Mallit"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
-msgid  "New template"
-msgstr "Uusi malli"
-
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 msgid  "~Categories"
 msgstr "~Luokat"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
-msgid  "~Templates"
-msgstr "M~allit"
+#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr "Tallennus ulkoiseen muotoon on saattanut\naiheuttaa joidenkin tietojen katoamisen. Haluatko silti sulkea?"
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
-msgid  "~Edit"
-msgstr "~Muokkaa"
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
-msgid  "~Organizer..."
-msgstr "~Järjestelytyökalu..."
+#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr "Nimi on jo käytössä.\nHaluatko korvata asiakirjan mallin?"
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
 msgid  "Are you sure you want to delete the region \"$1\"?"
@@ -147,137 +75,45 @@ msgstr "Haluatko varmasti poistaa alueen $1?"
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "Haluatko varmasti poistaa merkinnän $1?"
 
-#: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "Asiakirjaa $(DOC) on muokattu.\nHaluatko tallentaa muutokset?"
-
-#: doc/doc.src#STR_STYLES.STRING.TEXT
-msgid  "Styles"
-msgstr "Tyylit"
-
-#: doc/doc.src#STR_MACROS.STRING.TEXT
-msgid  "Macros"
-msgstr "Makrot"
-
-#: doc/doc.src#STR_CONFIG.STRING.TEXT
-msgid  "Configuration"
-msgstr "Kokoonpano"
+#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr "Luokka ei ole tyhjä.\nPoistetaanko luokka?"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
 msgid  "Styles in "
 msgstr "Tyylit "
 
-#: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
-msgid  "Printing Styles"
-msgstr "Tulostustyylit"
-
-#: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
-msgid  "The print job could not be started."
-msgstr "Tulostustyön aloittaminen ei onnistu."
-
-#: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
-msgid  "Copy"
-msgstr "Kopioi"
-
-#: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
-msgid  "The template could not be opened."
-msgstr "Mallia ei voitu avata."
-
-#: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
-msgid  "Document already open for editing."
-msgstr "Asiakirja on jo avattu muokattavaksi."
-
-#: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
-msgid  "Error recording document "
-msgstr "On ilmennyt virhe tallennettaessa asiakirjaa "
-
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
 msgid  "Templates"
 msgstr "Mallit"
-
-#: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "On ilmennyt virhe siirrettäessä mallia $1. \nTämän niminen malli saattaa olla jo olemassa."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
 msgid  "The template \"$1\" can not be deleted."
 msgstr "Mallia $1 ei voi poistaa."
 
-#: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
-msgid  "Error moving template \"$1\"."
-msgstr "On ilmennyt virhe siirrettäessä mallia $1."
-
-#: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
-msgid  "The update could not be saved."
-msgstr "Päivityksiä ei voitu tallentaa."
-
-#: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-msgid  "Error saving template "
-msgstr "On ilmennyt virhe tallennettaessa mallia "
-
-#: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
-msgid  "Error renaming template."
-msgstr "On ilmennyt virhe nimettäessä mallia uudelleen."
-
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
 msgid  "Error renaming template category."
 msgstr "On ilmennyt virhe nimettäessä malliluokkaa uudelleen."
 
-#: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
-msgid  "Please specify a name."
-msgstr "Määritä nimi."
+#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr "Määritä yksilöllinen nimi.\nMerkintöjen kirjainkokoa ei eritellä."
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr "Tehdäänkö mallista $(TEXT) oletusmalli?"
 
-#: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
-msgid  "Do you want to reset the default template?"
-msgstr "Haluatko palauttaa oletusmallit?"
-
-#: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
-msgid  "Document info cannot be read."
-msgstr "Asiakirjan tietoja ei voi lukea."
-
-#: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
-msgid  "The selected file has an incorrect format."
-msgstr "Valitun tiedoston muoto ei ole kelvollinen."
+#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr "Mallihakemistoa \n$(DIR)\nei ole."
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
 msgstr "Asiakirjoja ei voi tallentaa muodossa $(FORMAT). Haluatko\ntallentaa muutokset käyttämällä muotoa $(OWNFORMAT)?"
 
-#: doc/doc.src#STR_SAVEDOC.STRING.TEXT
-msgid  "~Save"
-msgstr "~Tallenna"
-
-#: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
-msgid  "~Update"
-msgstr "~Päivitä"
-
-#: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
-msgid  "Save ~As..."
-msgstr "Tallenna ni~mellä..."
-
-#: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
-msgid  "Save Copy ~as..."
-msgstr "Tallenna ~kopio nimellä..."
-
-#: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
-msgid  "~Close"
-msgstr "~Sulje"
-
-#: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
-msgid  "~Close & Return to "
-msgstr "Sulje ja ~palauta "
-
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
 msgid  " AutoPilot"
 msgstr " Ohjattu toiminto"
-
-#: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
-msgid  "Configurations"
-msgstr "Kokoonpano"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
 msgid  "%PRODUCTNAME Basic libraries"
@@ -287,209 +123,37 @@ msgstr "%PRODUCTNAME Basic -kirjastot"
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "Korvataanko tyyli $(ARG1)?"
 
-#: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
-msgid  "Loading Document"
-msgstr "Ladataan asiakirja"
-
-#: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
-msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr "Yhdistetään kohteeseen: $(HOST). Odotetaan vastausta..."
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
-msgid  "Opening $(TARGET) at $(HOST)"
-msgstr "Avataan $(TARGET) koneelta $(HOST)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
-msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "Ladataan: $(TARGET) kohteesta $(HOST). Ladattu: $(BYTE)"
-
-#: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
-msgid  "Disconnected"
-msgstr "Istunto lopetettu"
-
-#: doc/doc.src#STR_EDIT.STRING.TEXT
-msgid  "Edit"
-msgstr "Muokkaa"
-
-#: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
-msgid  "%PRODUCTNAME Documents"
-msgstr "%PRODUCTNAME -asiakirjat"
+#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr "Asiakirjaa ei voi avata muokattavaksi.\nHaluatko avata sen kirjoitussuojattuna?"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
 msgid  "Propert~ies..."
 msgstr "Ominaisuu~det..."
 
-#: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
-msgid  "HTML (FrameSet)"
-msgstr "HTML (kehysasettelu)"
-
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME -kehysasiakirja"
-
-#: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
-msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr "Mallia $(TEMPLATE) ei löytynyt alkuperäisestä sijainnista. Samanniminen malli on kohteessa $(FOUND). Käytetäänkö tätä mallia vastaisuudessa vertailuihin?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "Mallia $(TEMPLATE) ei löytynyt. Etsitäänkö mallia seuraavan kerran, kun asiakirja avataan?"
 
-#: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
-msgid  "Automatically saved version"
-msgstr "Automaattisesti tallennettu versio"
-
-#: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
-msgid  "Text Document"
-msgstr "Tekstiasiakirja"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
-msgid  "HTML Document"
-msgstr "HTML-asiakirja"
-
-#: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
-msgid  "Master Document"
-msgstr "Perusasiakirja"
-
-#: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
-msgid  "Spreadsheet"
-msgstr "Laskentataulukko"
-
-#: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
-msgid  "Presentation"
-msgstr "Esitys"
-
-#: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
-msgid  "Drawing"
-msgstr "Piirros"
-
-#: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
-msgid  "Message"
-msgstr "Viesti"
-
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
 msgid  "~Discard"
 msgstr "~Hylkää"
-
-#: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
-msgid  "Access to the current data medium not possible."
-msgstr "Nykyinen tietojen tallennusväline ei ole käytettävissä."
-
-#: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
-msgid  "Insert the next data carrier and click OK."
-msgstr "Lisää seuraava tietoväline ja valitse OK."
-
-#: doc/doc.src#STR_OBJECT.STRING.TEXT
-msgid  "Object"
-msgstr "Objekti"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
-msgid  "Run Macro"
-msgstr "Suorita makro"
-
-#: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
-msgid  "This document contains macros. $(TEXT)"
-msgstr "Tämä asiakirja sisältää makroja. $(TEXT)"
-
-#: doc/doc.src#BTN_OK.STRING.TEXT
-msgid  "Run"
-msgstr "Suorita"
-
-#: doc/doc.src#BTN_CANCEL.STRING.TEXT
-msgid  "Do Not Run"
-msgstr "Älä suorita"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "Suojausasetusten mukaan tämän asiakirjan makroja ei tulisi suorittaa. Suoritetaanko ne siitä huolimatta?"
 
-#: doc/doc.src#FT_OK.STRING.TEXT
-msgid  "Do you want to allow these macros to be run?"
-msgstr "Haluatko sallia kaikkien makrojen suorittamisen?"
-
-#: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
-msgid  "Export as PDF"
-msgstr "Vie PDF-asiakirjana"
-
-#: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
-msgid  "Export..."
-msgstr "Vie..."
-
-#: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
-msgid  "Export"
-msgstr "Vienti"
-
-#: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
-msgid  "Add this directory to the list of secure paths: "
-msgstr "Lisää seuraava hakemisto turvallisten polkujen listaan: "
-
-#: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
-msgid  "File format:"
-msgstr "Tiedostomuoto:"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
-msgid  "This document contains:\n\n"
-msgstr "Tämä asiakirja sisältää:\n\n"
-
-#: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
-msgid  "Recorded changes"
-msgstr "Kirjatut muutokset"
-
-#: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
-msgid  "Notes"
-msgstr "Huomautukset"
-
-#: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
-msgid  "Document versions"
-msgstr "Asiakirjan versiot"
-
-#: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
-msgid  "Fields"
-msgstr "Kentät"
-
-#: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
-msgid  "Linked data..."
-msgstr "Linkitetyt tiedot..."
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
-msgid  "Do you want to continue saving the document?"
-msgstr "Haluatko jatkaa asiakirjan tallentamista?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
-msgid  "Do you want to continue printing the document?"
-msgstr "Haluatko jatkaa asiakirjan tulostamista?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
-msgid  "Do you want to continue signing the document?"
-msgstr "Haluatko jatkaa asiakirjan allekirjoittamista?"
-
-#: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
-msgid  "Do you want to continue creating a PDF file?"
-msgstr "Haluatko jatkaa PDF-tiedoston luontia?"
-
-#: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
-msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "Jos et halua tallentaa alkuperäisen asiakirjan päälle, täytyy asiakirja tallentaa uudella nimellä."
-
-#: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
-msgid  "Some template files are protected and can not be deleted."
-msgstr "Jotkin mallitiedostoista ovat suojattuja, eikä niitä voi poistaa."
-
-#: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
-msgid  "Info %1"
-msgstr "Info %1"
-
 #: doc/doc.src#STR_SHARED.STRING.TEXT
 msgid  " (shared)"
 msgstr " (jaettu)"
 
-#: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
-msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr "Asiakirjan ODF-tiedostomuodon versio on asetettu arvoon 1.1 (OpenOffice.org 2.x). Asetusta voi muuttaa valitsemalla Työkalut-Asetukset-Lataus ja tallennus-Yleistä. Asiakirjojen allekirjoittaminen vaatii ODF-version 1.2 (OpenOffice.org 3.x) käyttöä."
-
-#: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
-msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr "Mallia '$(ARG1)', johon tämä asiakirja pohjautuu, on muokattu. Haluatko päivittää tyyleihin perustuvat muotoilut muokatun mallin mukaisiksi?"
+#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr "Asiakirja on tallennettava ennen allekirjoittamista. Tallentaminen poistaa kaikki nykyiset allekirjoitukset.\nHaluatko tallentaa asiakirjan?"
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
 msgid  "~Update Styles"
@@ -499,18 +163,6 @@ msgstr "Päivitä tyylit"
 msgid  "~Keep Old Styles"
 msgstr "Säilytä vanhat tyylit"
 
-#: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
-msgid  "Template Management"
-msgstr "Mallien hallinta"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
-msgid  "Close"
-msgstr "Sulje"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
-msgid  "~File..."
-msgstr "Tie~dosto..."
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
 msgid  "~Address Book..."
 msgstr "O~soitekirja..."
@@ -519,25 +171,9 @@ msgstr "O~soitekirja..."
 msgid  "Templates"
 msgstr "Mallit"
 
-#: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Documents"
-msgstr "Asiakirjat"
-
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
 msgid  "Commands"
 msgstr "Komennot"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
-msgid  "~New"
-msgstr "~Uusi"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
-msgid  "~Delete"
-msgstr "~Poista"
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
-msgid  "~Edit"
-msgstr "~Muokkaa"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
 msgid  "Import Template..."
@@ -546,10 +182,6 @@ msgstr "Tuo malli..."
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MENUITEM.TEXT
 msgid  "Export Template..."
 msgstr "Vie malli..."
-
-#: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
-msgid  "~Print"
-msgstr "Tu~losta"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
 msgid  "Printer Settings..."
@@ -567,153 +199,29 @@ msgstr "Aseta oletusmalliksi"
 msgid  "Reset Default Template"
 msgstr "Palauta oletusmalli"
 
-#: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
-msgid  "New"
-msgstr "Uusi"
-
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
 msgid  "~Categories"
 msgstr "~Luokat"
 
-#: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
-msgid  "T~emplates"
-msgstr "~Mallit"
-
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
 msgid  "~More"
-msgstr "~Lisää"
-
-#: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
-msgid  "Pre~view"
-msgstr "Esi~katselu"
-
-#: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "Kuvaus"
-
-#: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
-msgid  "Te~xt"
-msgstr "Teks~ti"
-
-#: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
-msgid  "~Frame"
-msgstr "~Kehys"
-
-#: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
-msgid  "~Pages"
-msgstr "~Sivut"
-
-#: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
-msgid  "N~umbering"
-msgstr "~Numerointi"
-
-#: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
-msgid  "~Overwrite"
-msgstr "K~orvaa"
+msgstr "~Enemmän"
 
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
 msgid  "From File..."
 msgstr "Tiedostosta..."
 
-#: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
-msgid  "Load Styles"
-msgstr "Lataa tyylit"
-
-#: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
-msgid  "~Title"
-msgstr "~Otsikko"
-
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
 msgid  "Subject"
 msgstr "Aihe"
-
-#: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
-msgid  "~Key words"
-msgstr "Avain~sanat"
-
-#: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
-msgid  "~Description"
-msgstr "Ku~vaus"
-
-#: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "Valittua suodatinta $(FILTER) ei ole asennettu.\nHaluatko asentaa suodattimen nyt?"
-
-#: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "Valittu suodatin $(FILTER) ei sisälly laitokseen.\nTilausohjeet ovat kotisivullamme."
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
-msgid  "Reduce print data"
-msgstr "Karsi tulostuksessa"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
-msgid  "Settings for"
-msgstr "Tulostustavalle"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
-msgid  "~Printer"
-msgstr "~Tulostin"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
-msgid  "Print to ~file"
-msgstr "Tulosta tie~dostoon"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
-msgid  "~Reduce transparency"
-msgstr "~Heikennä läpinäkyvyyttä"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
-msgid  "Auto~matically"
-msgstr "A~utomaattisesti"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
-msgid  "~No transparency"
-msgstr "~Ei läpinäkyvyyttä"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
-msgid  "Reduce ~gradients"
-msgstr "~Pienennä liukuvärjäystä"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
 msgid  "Gradient ~stripes"
 msgstr "Liukuvär~jäysviivoja"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
-msgid  "Intermediate ~color"
-msgstr "Käytä väli~väriä"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
-msgid  "Reduce ~bitmaps"
-msgstr "Pienennä ~bittikarttaa"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
-msgid  "~High print quality"
-msgstr "H~yvä tulostuslaatu"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
-msgid  "N~ormal print quality"
-msgstr "~Normaali tulostuslaatu"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
 msgid  "Reso~lution"
 msgstr "Ta~rkkuus"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "72 DPI"
-msgstr "72 DPI"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "96 DPI"
-msgstr "96 DPI"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "150 DPI (Fax)"
-msgstr "150 DPI (faksi)"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
-msgid  "200 DPI (default)"
-msgstr "200 DPI (oletus)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
 msgid  "300 DPI"
@@ -723,69 +231,17 @@ msgstr "300 DPI"
 msgid  "600 DPI"
 msgstr "600 DPI"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
-msgid  "Include transparent ob~jects"
-msgstr "Lis~ää läpinäkyvät objektit"
-
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
 msgid  "Con~vert colors to grayscale"
 msgstr "~Muunna värit harmaasävyiksi"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
-msgid  "Printer warnings"
-msgstr "Tulostinvaroitukset"
-
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
-msgid  "P~aper size"
-msgstr "Paperi~koko"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
 msgid  "Pap~er orientation"
 msgstr "Paperin ~suunta"
 
-#: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
-msgid  "~Transparency"
-msgstr "~Läpinäkyvyys"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
-msgid  "Warning"
-msgstr "Varoitus"
-
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr "Asiakirjassa on läpinäkyviä objekteja.\nTämä saattaa hidastaa tulostusta joissakin\ntulostimissa. Vähennetäänkö\nläpinäkyvyyttä?"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
-msgid  "~Yes"
-msgstr "Kyllä"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
-msgid  "~No"
-msgstr "~Ei"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
-msgid  "~Cancel"
-msgstr "~Peruuta"
-
-#: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
-msgid  "~Do not show warning again"
-msgstr "~Älä näytä varoitusta vastaisuudessa"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
-msgid  "Style Catalog"
-msgstr "Tyyliluettelo"
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
-msgid  "~Organizer..."
-msgstr "~Järjestelytyökalu..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
-msgid  "~Delete..."
-msgstr "~Poista..."
-
-#: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
-msgid  "~Modify..."
-msgstr "~Muuta..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
 msgid  "~New..."
@@ -795,25 +251,9 @@ msgstr "~Uusi..."
 msgid  "Style List"
 msgstr "Tyyliluettelo"
 
-#: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
-msgid  "Hierarchical"
-msgstr "Hierarkkinen"
-
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
 msgid  "Styles and Formatting"
 msgstr "Tyylit ja muotoilut"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
-msgid  "Fill Format Mode"
-msgstr "Täyttömuotoilutila"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
-msgid  "New Style from Selection"
-msgstr "Uusi tyyli valinnasta"
-
-#: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
-msgid  "Update Style"
-msgstr "Päivitä tyyli"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 msgid  "File encryption password"
@@ -875,89 +315,13 @@ msgstr "Poista muutoshistorian suojaus"
 msgid  "Incorrect password"
 msgstr "Väärä salasana"
 
-#: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
-msgid  "New versions"
-msgstr "Uudet versiot"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
-msgid  "Save ~New Version"
-msgstr "Tallenna ~uusi versio"
-
-#: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
-msgid  "~Always save a version on closing"
-msgstr "Tallenna versio ~aina suljettaessa"
-
-#: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
-msgid  "Existing versions"
-msgstr "Nykyiset versiot"
-
-#: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
-msgid  "Date and time"
-msgstr "Päivämäärä ja aika"
-
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
 msgid  "Saved by"
 msgstr "Tallentanut"
 
-#: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
-msgid  "Comments"
-msgstr "Huomautukset"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
-msgid  "Close"
-msgstr "Sulje"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
-msgid  "Open"
-msgstr "Avaa"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
-msgid  "~Show..."
-msgstr "~Näytä..."
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "~Poista"
-
-#: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
-msgid  "Compare"
-msgstr "Vertaa"
-
-#: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
-msgid  "Versions of"
-msgstr "Versiot"
-
-#: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
-msgid  "Date and time : "
-msgstr "Päivämäärä ja aika: "
-
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
 msgid  "Saved by "
 msgstr "Tallentanut "
-
-#: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Sulje"
-
-#: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
-msgid  "Insert Version Comment"
-msgstr "Lisää versiohuomautus"
-
-#: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
-msgid  "Version comment"
-msgstr "Versiohuomautus"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
-msgid  "~Name"
-msgstr "~Nimi"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
-msgid  "~AutoUpdate"
-msgstr "~Automaattinen päivitys"
-
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
-msgid  "Ne~xt Style"
-msgstr "Seu~raava tyyli"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
 msgid  "Linked with"
@@ -967,133 +331,21 @@ msgstr "Perusta"
 msgid  "~Category"
 msgstr "~Luokka"
 
-#: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
-msgid  "Contains"
-msgstr "Sisältö"
-
-#: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
-msgid  "Current version"
-msgstr "Nykyinen versio"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
-msgid  "Export"
-msgstr "Vienti"
-
-#: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Lisää"
-
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
 msgid  "~Insert"
 msgstr "~Lisää"
-
-#: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
-msgid  "<All formats>"
-msgstr "<Kaikki muodot>"
-
-#: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
-msgid  "~Automatic file name extension"
-msgstr "Automaattinen tiedoston ~tunniste"
-
-#: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
-msgid  "~Selection"
-msgstr "V~alinta"
-
-#: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
-msgid  "~Link"
-msgstr "~Linkitä"
-
-#: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
-msgid  "Pr~eview"
-msgstr "Esi~katselu"
-
-#: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
-msgid  "~Read-only"
-msgstr "~Kirjoitussuojattu"
-
-#: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
-msgid  "Save with ~password"
-msgstr "Tallenna ~myös salasana"
-
-#: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
-msgid  "Edit ~filter settings"
-msgstr "Muokkaa ~suodatusasetuksia"
-
-#: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
-msgid  "~Play"
-msgstr "~Toista"
-
-#: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
-msgid  "Sto~p"
-msgstr "Py~säytä"
-
-#: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
-msgid  "~Open"
-msgstr "~Avaa"
-
-#: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
-msgid  "~Save"
-msgstr "~Tallenna"
-
-#: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
-msgid  "Style:"
-msgstr "Tyyli:"
-
-#: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
-msgid  "~Templates:"
-msgstr "~Mallit:"
-
-#: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
-msgid  "~Version:"
-msgstr "~Versio:"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
 msgid  "Find on this Page"
 msgstr "Etsi tältä sivulta"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-msgid  "~Search for"
-msgstr "~Etsittävä"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
-msgid  "~Whole words only"
-msgstr "~Vain kokonaiset sanat"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
-msgid  "~Match case"
-msgstr "~Sama kirjainkoko"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
 msgid  "Wrap ~around"
 msgstr "Jatka ~lopusta alkuun / alusta loppuun"
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
-msgid  "~Backwards"
-msgstr "~Taaksepäin"
-
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
 msgid  "~Find"
 msgstr "~Etsi"
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Sulje"
-
-#: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
-msgid  "Enter Password"
-msgstr "Anna salasana"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
-msgid  "~User"
-msgstr "~Käyttäjä"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
-msgid  "~Password"
-msgstr "~Salasana"
-
-#: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
-msgid  "~Confirm"
-msgstr "~Vahvista"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
 msgid  "Password"
@@ -1109,47 +361,7 @@ msgstr "Vahvista"
 
 #: dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.STRING.TEXT
 msgid  "%PRODUCTNAME document"
-msgstr "%PRODUCTNAME-asiakirja"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
-msgid  "~Title"
-msgstr "~Otsikko"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
-msgid  "~Subject"
-msgstr "A~ihe"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
-msgid  "~Keywords"
-msgstr "A~vainsanat"
-
-#: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
-msgid  "~Comments"
-msgstr "~Huomautuksia"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
-msgid  "Type:"
-msgstr "Tyyppi:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
-msgid  "~Read-only"
-msgstr "~Kirjoitussuojattu"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
-msgid  "Location:"
-msgstr "Sijainti:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
-msgid  "Size:"
-msgstr "Koko:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
-msgid  "Created:"
-msgstr "Luotu:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
-msgid  "Modified:"
-msgstr "Muokattu:"
+msgstr "%PRODUCTNAME -asiakirja"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
 msgid  "Digitally signed:"
@@ -1159,22 +371,6 @@ msgstr "Digitaalisesti allekirjoitettu:"
 msgid  "Digital Signature..."
 msgstr "Digitaalinen allekirjoitus..."
 
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
-msgid  "Multiply signed document"
-msgstr "Useaan kertaan allekirjoitettu asiakirja"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
-msgid  "Last printed:"
-msgstr "Tulostettu:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
-msgid  "Total editing time:"
-msgstr "Muokkausaika yhteensä:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
-msgid  "Revision number:"
-msgstr "Muokkauskertoja:"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
 msgid  "Reset"
 msgstr "P~alauta"
@@ -1183,33 +379,13 @@ msgstr "P~alauta"
 msgid  "~Apply user data"
 msgstr "Käytä ~käyttäjätietoja"
 
-#: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
-msgid  "Template:"
-msgstr "Malli:"
-
-#: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
-msgid  "unknown"
-msgstr "tuntematon"
-
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
 msgid  "File Name"
 msgstr "Tiedoston nimi"
 
-#: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
-msgid  "~Info fields..."
-msgstr "~Tietokentät..."
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
-msgid  "Do not refresh automatically"
-msgstr "Älä päivitä automaattisesti"
-
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
 msgid  "Refresh this document"
 msgstr "Päivitä asiakirja"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
-msgid  "every"
-msgstr "joka"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
 msgid  "seconds"
@@ -1218,14 +394,6 @@ msgstr "sekunnin jälkeen"
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RADIOBUTTON.TEXT
 msgid  "Redirect from this document"
 msgstr "Ohjaa uudelleen tästä asiakirjasta"
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
-msgid  "after"
-msgstr " "
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
-msgid  "to URL"
-msgstr "URL-osoitteeseen"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
 msgid  "to frame"
@@ -1239,165 +407,17 @@ msgstr "Jos valitset \"%PLACEHOLDER%\", täytyy URL-osoite antaa."
 msgid  "~Properties"
 msgstr "Ominaisuudet"
 
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
-msgid  "Name"
-msgstr "Nimi"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
-msgid  "Type"
-msgstr "Tyyppi"
-
-#: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
-msgid  "Value"
-msgstr "Arvo"
-
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
 msgid  "~Add"
 msgstr "Lisää"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
-msgid  "Property Name"
-msgstr "Ominaisuuden nimi"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
-msgid  "Checked by"
-msgstr "Tarkistaja"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
-msgid  "Client"
-msgstr "Asiakas"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
-msgid  "Date completed"
-msgstr "Valmistumispäivä"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
-msgid  "Department"
-msgstr "Osasto"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
-msgid  "Destinations"
-msgstr "Vastaanottajat"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
-msgid  "Disposition"
-msgstr "Käyttöoikeus"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
-msgid  "Division"
-msgstr "Jaosto"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
-msgid  "Document number"
-msgstr "Asiakirjan numero"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
-msgid  "Editor"
-msgstr "Toimittaja"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
-msgid  "E-Mail"
-msgstr "Sähköposti"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
-msgid  "Forward to"
-msgstr "Toimita edelleen"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
-msgid  "Group"
-msgstr "Ryhmä"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
-msgid  "Info"
-msgstr "Tietoja"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
-msgid  "Language"
-msgstr "Kieli"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
-msgid  "Mailstop"
-msgstr "Jakelupiste"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
-msgid  "Matter"
-msgstr "Aihe"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
-msgid  "Office"
-msgstr "Toimisto"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
-msgid  "Owner"
-msgstr "Omistaja"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
-msgid  "Project"
-msgstr "Projekti"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
-msgid  "Publisher"
-msgstr "Julkaisija"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
-msgid  "Purpose"
-msgstr "Tarkoitus"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
-msgid  "Received from"
-msgstr "Alkup. lähettäjä"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
-msgid  "Recorded by"
-msgstr "Nauhoittaja"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
-msgid  "Recorded date"
-msgstr "Nauhoituspäivä"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
-msgid  "Reference"
-msgstr "Viite"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
-msgid  "Source"
-msgstr "Lähde"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
-msgid  "Status"
-msgstr "Tila"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
-msgid  "Telephone number"
-msgstr "Puhelinnumero"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
-msgid  "Typist"
-msgstr "Puhtaaksikirjoittaja"
-
-#: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
-msgid  "URL"
-msgstr "URL-osoite"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
-msgid  "Text"
-msgstr "Teksti"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 msgid  "DateTime"
 msgstr "Päivämäärä ja kellonaika"
 
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
-msgid  "Date"
-msgstr "Päivämäärä"
-
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
 msgid  "Duration"
 msgstr "Kesto"
-
-#: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
-msgid  "Number"
-msgstr "Numero"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
 msgid  "Yes or no"
@@ -1407,37 +427,9 @@ msgstr "Kyllä tai ei"
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
-msgid  "Yes"
-msgstr "Kyllä"
-
-#: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
-msgid  "No"
-msgstr "Ei"
-
-#: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Remove Property"
-msgstr "Poista ominaisuus"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
-msgid  "Properties of "
-msgstr "Ominaisuudet: "
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
-msgid  "General"
-msgstr "Yleistä"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
-msgid  "Description"
-msgstr "Kuvaus"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
-msgid  "Custom Properties"
-msgstr "Mukautetut ominaisuudet"
-
-#: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
-msgid  "Internet"
-msgstr "Internet"
+#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr "Annettu arvo ei ole oikeaa tyyppiä.\nArvo tallennetaan tekstinä."
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 msgid  "Security"
@@ -1471,10 +463,6 @@ msgstr "Tuntia"
 msgid  "Min~utes"
 msgstr "Minuuttia"
 
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
-msgid  "~Seconds"
-msgstr "Sekuntia"
-
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 msgid  "Millise~conds"
 msgstr "Millisekuntia"
@@ -1482,22 +470,6 @@ msgstr "Millisekuntia"
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.MODALDIALOG.TEXT
 msgid  "Edit Field Names"
 msgstr "Muokkaa kenttänimiä"
-
-#: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
-msgid  "Names"
-msgstr "Nimet"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
-msgid  "Create Style"
-msgstr "Luo tyyli"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
-msgid  "Style name"
-msgstr "Tyylin nimi"
-
-#: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
-msgid  "Style already exists. Overwrite?"
-msgstr "Tyyli on jo olemassa. Korvataanko?"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
 msgid  "Record Macro"
@@ -1515,61 +487,29 @@ msgstr "Peruuta nauhoitus"
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
 msgstr "%PRODUCTNAME ei tunnistanut toimivia sähköpostiasetuksia. Tallenna asiakirja paikalliselle tallennusmedialle."
 
-#: dialog/dialog.src#STR_RESET.STRING.TEXT
-msgid  "~Reset"
-msgstr "P~alauta"
-
-#: dialog/dialog.src#STR_APPLY.STRING.TEXT
-msgid  "Apply"
-msgstr "Käytä"
-
-#: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
-msgid  "Organizer"
-msgstr "Järjestelytyökalu"
-
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
 msgid  "This name is already in use."
 msgstr "Nimi on jo käytössä."
 
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
-msgid  "This Style does not exist."
-msgstr "Tätä tyyliä ei ole olemassa."
+#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr "Tyyliä ei voi tallentaa perustyylinä.\nTästä seuraisi rekursiivinen viite."
+
+#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr "Nimi on jo määritetty oletustyylille.\nValitse toinen nimi."
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 msgid  "Do you really want to delete Style $1?"
 msgstr "Haluatko varmasti poistaa tyylin $1?"
 
-#: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
-msgid  "You are deleting an applied Style!\n"
-msgstr "Olet poistamassa käytössä olevaa tyyliä.\n"
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
-msgid  "New..."
-msgstr "Uusi..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
-msgid  "Modify..."
-msgstr "Muuta..."
-
-#: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
-msgid  "Delete..."
-msgstr "Poista..."
-
-#: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
-msgid  "Navigator"
-msgstr "Rakenneselain"
-
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 msgid  "Task Pane"
 msgstr "Tehtäväpaneeli"
 
-#: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
-msgid  "Faulty password confirmation"
-msgstr "Salasanan vahvistus ei täsmää"
-
-#: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
-msgid  "Send"
-msgstr "Lähetä"
+#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
+msgid  "Sidebar"
+msgstr "Sivupalkki"
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 msgid  "Dock"
@@ -1595,57 +535,9 @@ msgstr "Tämä asiakirja saattaa sisältää muotoiluja tai tietoja, joita ei vo
 msgid  "~Keep Current Format"
 msgstr "Säilytä nykyinen muoto"
 
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
-msgid  "~Save in ODF Format"
-msgstr "Tallenna ODF-muodossa"
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
-msgid  "~More Information..."
-msgstr "~Lisätietoja..."
-
-#: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
-msgid  "~Ask when not saving in ODF format"
-msgstr "Kysy tallennettaessa muuhun kuin ODF-muotoon"
-
-#: view/view.src#STR_NODEFPRINTER.STRING.TEXT
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "Oletustulostinta ei ole.\nValitse tulostin ja yritä uudelleen."
-
-#: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "Tulostinta ei voi käynnistää.\nTarkista tulostimen määritykset."
-
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
 msgstr "Asiakirja on muotoiltu tulostinta $1 varten. Määritetty tulostin ei ole käytettävissä. \nHaluatko käyttää vakiotulostinta $2?"
-
-#: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
-msgid  "Options..."
-msgstr "Asetukset..."
-
-#: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
-msgid  "Printer Options"
-msgstr "Tulostimen määritykset"
-
-#: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
-msgid  "Printer busy"
-msgstr "Tulostin käytössä"
-
-#: view/view.src#STR_ERROR_PRINT.STRING.TEXT
-msgid  "Error while printing"
-msgstr "Virhe tulostettaessa"
-
-#: view/view.src#STR_PRINTING.STRING.TEXT
-msgid  "Printing"
-msgstr "Tulostetaan"
-
-#: view/view.src#STR_PAGE.STRING.TEXT
-msgid  "Page "
-msgstr "Sivu "
-
-#: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
-msgid  "Error saving template "
-msgstr "On ilmennyt virhe tallennettaessa mallia "
 
 #: view/view.src#STR_READONLY.STRING.TEXT
 msgid  " (read-only)"
@@ -1663,53 +555,45 @@ msgstr "Sivun kokoa on muutettu.\nTallennetaanko uudet asetukset\naktiiviseen as
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Otsikko:</b><dd>$(TITEL)<dt><b>Aihe:</b><dd>$(THEME)<dt><b>Avainsanat:</b><dd>$(KEYWORDS)<dt><b>Kuvaus:</b><dd>$(TEXT)</dl></font></body></html>"
 
-#: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
-msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Asiakirjan ominaisuuksia ei löydy.</B></FONT></P></BODY></HTML>"
+#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr "Asiakirjaa ei voitu sulkea, koska\ntulostustyö on kesken."
 
-#: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
-msgid  "Print Monitor"
-msgstr "Tulostuksenvalvonta"
-
-#: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
-msgid  "is being printed on"
-msgstr "tulostuu tulostimessa"
-
-#: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
-msgid  "is being prepared for printing"
-msgstr "valmistellaan tulostettavaksi"
+#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr "Virhe viestiä lähetettäessä. Syitä voivat olla puuttuva käyttäjätili tai virheelliset asetukset.\nTarkista %PRODUCTNAMEn tai sähköpostiohjelmasi asetukset."
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr "Asiakirjaa ei voi avata muokattavaksi, käyttöoikeudet\nsaattavat olla puutteelliset. Haluatko käyttää asiakirjaa uuden\nasiakirjan mallina?"
-
-#: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
-msgid  " (repaired document)"
-msgstr " (korjattu asiakirja)"
+msgstr "Asiakirjaa ei voi avata muokattavaksi, käyttöoikeudet saattavat olla puutteelliset. Haluatko muokata asiakirjan kopiota?"
 
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME ei löydä web-selainta. Tarkista työpöytäympäristösi asetukset tai asenna web-selain (esimerkiksi Mozilla)."
 
-#: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
-msgid  "Modify Link"
-msgstr "Muuta linkkiä"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
+msgid  "Customization"
+msgstr "Mukauttaminen"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
-msgid  "~Application:"
-msgstr "~Sovellus:"
+#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
+msgid  "Restore Default"
+msgstr "Palauta oletus"
 
-#: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
-msgid  "~File:"
-msgstr "Tie~dosto:"
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
+msgid  "More Options"
+msgstr "Enemmän valintoja"
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
+msgid  "Close Sidebar Deck"
+msgstr "Sulje sivupalkin pakka"
+
+#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
+msgid  "Panel: "
+msgstr "Paneeli"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
 msgid  "~Category:"
 msgstr "~Luokka:"
-
-#: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
-msgid  "Modify link"
-msgstr "Muuta linkkiä"
 
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
 msgid  "%PRODUCTNAME"
@@ -1751,37 +635,9 @@ msgstr "Gt"
 msgid  "Cancel all changes?"
 msgstr "Perutaanko kaikki muutokset?"
 
-#: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
-msgid  "Document already open."
-msgstr "Asiakirja on jo avattu."
-
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME ei löydä web-selainta. Tarkista työpöytäympäristösi asetukset tai asenna web-selain (esimerkiksi Mozilla)."
-
-#: appl/app.src#GID_INTERN.STRING.TEXT
-msgid  "Internal"
-msgstr "Sisäinen"
-
-#: appl/app.src#GID_APPLICATION.STRING.TEXT
-msgid  "Application"
-msgstr "Sovellus"
-
-#: appl/app.src#GID_VIEW.STRING.TEXT
-msgid  "View"
-msgstr "Näytä"
-
-#: appl/app.src#GID_DOCUMENT.STRING.TEXT
-msgid  "Documents"
-msgstr "Asiakirjat"
-
-#: appl/app.src#GID_EDIT.STRING.TEXT
-msgid  "Edit"
-msgstr "Muokkaa"
-
-#: appl/app.src#GID_MACRO.STRING.TEXT
-msgid  "BASIC"
-msgstr "BASIC"
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
 msgid  "Options"
@@ -1791,49 +647,9 @@ msgstr "Asetukset"
 msgid  "Math"
 msgstr "Math"
 
-#: appl/app.src#GID_NAVIGATOR.STRING.TEXT
-msgid  "Navigate"
-msgstr "Siirry"
-
-#: appl/app.src#GID_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr "Lisää"
-
-#: appl/app.src#GID_FORMAT.STRING.TEXT
-msgid  "Format"
-msgstr "Muotoilu"
-
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
 msgid  "Templates"
 msgstr "Mallit"
-
-#: appl/app.src#GID_TEXT.STRING.TEXT
-msgid  "Text"
-msgstr "Teksti"
-
-#: appl/app.src#GID_FRAME.STRING.TEXT
-msgid  "Frame"
-msgstr "Kehys"
-
-#: appl/app.src#GID_GRAPHIC.STRING.TEXT
-msgid  "Graphic"
-msgstr "Grafiikka"
-
-#: appl/app.src#GID_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Taulukko"
-
-#: appl/app.src#GID_ENUMERATION.STRING.TEXT
-msgid  "Numbering"
-msgstr "Numerointi"
-
-#: appl/app.src#GID_DATA.STRING.TEXT
-msgid  "Data"
-msgstr "Tiedot"
-
-#: appl/app.src#GID_SPECIAL.STRING.TEXT
-msgid  "Special Functions"
-msgstr "Erikoistoiminnot"
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
 msgid  "Image"
@@ -1843,101 +659,29 @@ msgstr "Kuva"
 msgid  "Chart"
 msgstr "Kaavio"
 
-#: appl/app.src#GID_EXPLORER.STRING.TEXT
-msgid  "Explorer"
-msgstr "Resurssienhallinta"
-
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
 msgid  "Connector"
 msgstr "Yhdysviiva"
 
-#: appl/app.src#GID_MODIFY.STRING.TEXT
-msgid  "Modify"
-msgstr "Muuta"
-
-#: appl/app.src#GID_DRAWING.STRING.TEXT
-msgid  "Drawing"
-msgstr "Piirros"
-
-#: appl/app.src#GID_CONTROLS.STRING.TEXT
-msgid  "Controls"
-msgstr "Ohjausobjektit"
-
-#: appl/app.src#STR_ISMODIFIED.STRING.TEXT
-msgid  "Do you want to save the changes to %1?"
-msgstr "Haluatko tallentaa muutokset objektiin %1?"
-
-#: appl/app.src#STR_QUITAPP.STRING.TEXT
-msgid  "E~xit"
-msgstr "Lo~peta"
-
-#: appl/app.src#RID_STR_HELP.STRING.TEXT
-msgid  "Help"
-msgstr "Ohje"
-
-#: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
-msgid  "No automatic start at 'XX'"
-msgstr "Ei automaattista aloitusta kohteessa 'XX'"
-
-#: appl/app.src#RID_HELPBAR.STRING.TEXT
-msgid  "Help Bar"
-msgstr "Ohjerivi"
-
-#: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
-msgid  "The help file for this topic is not installed."
-msgstr "Tämän aiheen ohjetiedostoja ei ole asennettu."
-
-#: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
-msgid  "Function Bar"
-msgstr "Toimintorivi"
+#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr "Sovelluksen lopettaminen ei onnistu.\nOdota, että kaikki tulostustyöt ja/tai\nOLE-toiminnot ovat valmiit ja sulje kaikki valintaikkunat."
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr "Erityiskokoonpanossa on ilmennyt virhe.\nOta yhteys pääkäyttäjään."
 
-#: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
-msgid  "Exit Quickstarter"
-msgstr "Lopeta pikakäynnistys"
-
-#: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "%PRODUCTNAME %PRODUCTVERSION -pikakäynnistys"
-
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
 msgid  "Open Document..."
 msgstr "Avaa asiakirja..."
 
-#: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
-msgid  "From Template..."
-msgstr "Mallista..."
-
-#: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
-msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr "Lataa %PRODUCTNAME järjestelmän käynnistyksen yhteydessä"
-
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
 msgid  "Disable Quickstarter"
-msgstr "Poista pikakäynnistys käytöstä"
-
-#: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
-msgid  "File"
-msgstr "Tiedosto"
-
-#: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
-msgid  "Startcenter"
-msgstr "Aloitusnäyttö"
+msgstr "Estä pikakäynnistys"
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
 msgid  "Recent Documents"
 msgstr "Viimeisimmät asiakirjat"
-
-#: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
-msgid  "Update all links?"
-msgstr "Päivitetäänkö kaikki linkit?"
 
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
 msgid  "DDE link to % for % area % are not available."
@@ -1947,9 +691,17 @@ msgstr "DDE-linkki kohteeseen % kohteesta % alueeseen % ei ole käytettävissä.
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "Tämä hyperlinkki avaa kohteen \"%s\". Haluatko jatkaa?"
 
-#: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
-msgid  "Security Warning"
-msgstr "Suojausvaroitus"
+#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr "Hyperlinkkiä ei voida suorittaa turvallisuussyistä.\nAnnettua osoitetta ei avata."
+
+#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr "Tallentaminen poistaa kaikki olemassa olevat allekirjoitukset.\nHaluatko silti tallentaa asiakirjan?"
+
+#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr "Asiakirja täytyy tallentaa ennen kuin se voidaan allekirjoittaa.\nHaluatko tallentaa asiakirjan?"
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
@@ -1958,10 +710,6 @@ msgstr "Ennen kuin asiakirjaan voidaan liittää digitaalinen allekirjoitus se t
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
 msgid  " (Signed)"
 msgstr " (Allekirjoitettu)"
-
-#: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
-msgid  "Document"
-msgstr "Asiakirja"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
 msgid  "- None -"
@@ -2003,49 +751,21 @@ msgstr "Grafiikkasuodatinta ei löytynyt"
 msgid  "Not enough memory to insert graphic"
 msgstr "Muisti ei riitä kuvan lisäämiseen"
 
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
-msgid  "Contents"
-msgstr "Sisältö"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
-msgid  "Index"
-msgstr "Hakemisto"
-
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
 msgid  "Find"
 msgstr "Etsi"
-
-#: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
-msgid  "Bookmarks"
-msgstr "Kirjanmerkit"
-
-#: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
-msgid  "~Search term"
-msgstr "Etsittävä ~termi"
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
 msgid  "~Display"
 msgstr "~Näytä"
 
-#: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
-msgid  "S~earch term"
-msgstr "E~tsittävä termi"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
 msgid  "~Find"
 msgstr "~Etsi"
 
-#: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
-msgid  "~Complete words only"
-msgstr "Vain ~kokonaiset sanat"
-
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
 msgid  "Find in ~headings only"
 msgstr "Etsi ~vain otsikoista"
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
-msgid  "~Bookmarks"
-msgstr "Kirjan~merkit"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME Help"
@@ -2059,78 +779,22 @@ msgstr "Näytä siirtymisruutu"
 msgid  "Hide Navigation Pane"
 msgstr "Piilota siirtymisruutu"
 
-#: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
-msgid  "First Page"
-msgstr "Ensimmäinen sivu"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
-msgid  "Previous Page"
-msgstr "Edellinen sivu"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
-msgid  "Next Page"
-msgstr "Seuraava sivu"
-
-#: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
-msgid  "Print..."
-msgstr "Tulosta..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
-msgid  "Add to Bookmarks..."
-msgstr "Lisää kirjanmerkkeihin..."
-
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
 msgid  "Find on this Page..."
 msgstr "Etsi tältä sivulta..."
-
-#: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
-msgid  "HTML Source"
-msgstr "HTML-lähde"
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
 msgid  "The Help is being started..."
 msgstr "Ohjetoiminto käynnistetään..."
 
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
-msgid  "Select Text"
-msgstr "Valitse teksti"
-
-#: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
-msgid  "~Copy"
-msgstr "K~opioi"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
-msgid  "Add to Bookmarks"
-msgstr "Lisää kirjanmerkkeihin"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
-msgid  "Bookmark:"
-msgstr "Kirjanmerkki:"
-
-#: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
-msgid  "Rename Bookmark"
-msgstr "Nimeä kirjanmerkki uudelleen"
-
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
 msgid  "Display"
 msgstr "Näytä"
-
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
-msgid  "Rename..."
-msgstr "Nimeä uudelleen..."
-
-#: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
-msgid  "Delete"
-msgstr "Poista"
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
 msgid  "No topics found."
 msgstr "Aiheita ei löytynyt."
 
-#: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
-msgid  "The text you entered was not found."
-msgstr "Etsimääsi tekstiä ei löytynyt."
-
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
 msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
-msgstr "~Näytä %PRODUCTNAME %MODULENAMEin käyttöohje käynnistyksessä"
+msgstr "~Näytä %PRODUCTNAME %MODULENAMEn käyttöohje käynnistyksessä"

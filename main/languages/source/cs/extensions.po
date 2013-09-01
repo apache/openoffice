@@ -35,17 +35,9 @@ msgstr ""
 msgid  "Address Book Data Source Wizard"
 msgstr "Průvodce zdrojem dat databáze kontaktů"
 
-#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.STRING.TEXT
-msgid  "Address book type"
-msgstr "Typ databáze kontaktů"
-
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.STRING.TEXT
 msgid  "Connection Settings"
 msgstr "Nastavení spojení"
-
-#: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.STRING.TEXT
-msgid  "Table selection"
-msgstr "Výběr tabulky"
 
 #: abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.STRING.TEXT
 msgid  "Field Assignment"
@@ -66,10 +58,6 @@ msgstr "Zvolte si, prosím, typ své externí databáze kontaktů:"
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RADIOBUTTON.TEXT
 msgid  "Evolution"
 msgstr "Evolution"
-
-#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RADIOBUTTON.TEXT
-msgid  "Groupwise"
-msgstr "Groupwise"
 
 #: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RADIOBUTTON.TEXT
 msgid  "Evolution LDAP"
@@ -103,10 +91,6 @@ msgstr "Databáze kontaktů programu Outlook"
 msgid  "Windows system address book"
 msgstr "Systémová databáze kontaktů systému Windows"
 
-#: abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RADIOBUTTON.TEXT
-msgid  "Other external data source"
-msgstr "Jiný externí zdroj dat"
-
 #: abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FIXEDTEXT.TEXT
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
 msgstr "Pro vytvoření nového datového zdroje je třeba poskytnout další informace.\n\nKlepnutím na tlačítko otevřete dialog, ve kterém zadáte potřebné upřesňující informace."
@@ -131,10 +115,6 @@ msgstr "K využití databáze kontaktů v šablonách %PRODUCTNAME, musíte nast
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
 msgstr "Nyní jsou zadány všechny údaje potřebné pro integraci stávajícího zdroje dat do %PRODUCTNAME.\n\nPoslední co zbývá zadat je jméno, pod kterým má být databáze kontaktů viditelná v %PRODUCTNAME."
 
-#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FIXEDTEXT.TEXT
-msgid  "Location"
-msgstr "Umístění"
-
 #: abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PUSHBUTTON.TEXT
 msgid  "Browse..."
 msgstr "Procházet..."
@@ -142,10 +122,6 @@ msgstr "Procházet..."
 #: abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CHECKBOX.TEXT
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
 msgstr "Povolte přístup k této databázi kontaktů ze všech modulů %PRODUCTNAME."
-
-#: abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FIXEDTEXT.TEXT
-msgid  "Address book name"
-msgstr "Název databáze kontaktů"
 
 #: abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FIXEDTEXT.TEXT
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
@@ -155,13 +131,9 @@ msgstr "Jiný zdroj dat již používá tento název. Jelikož zdroje dat musí 
 msgid  "Please select a type of address book."
 msgstr "Zvolte, prosím, typ databáze kontaktů."
 
-#: abpilot/abspilot.src#RID_STR_DEFAULT_NAME.STRING.TEXT
-msgid  "Addresses"
-msgstr "Adresy"
-
-#: abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.STRING.TEXT
-msgid  "Create Address Data Source"
-msgstr "Vytvořit databázi kontaktů"
+#: abpilot/abspilot.src#RID_QRY_NOTABLES.QUERYBOX.MESSAGE
+msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
+msgstr "Zvolený datový zdroj neobsahuje žádné tabulky.\nChcete je přesto použít jako zdroj dat pro databázi kontaktů?"
 
 #: abpilot/abspilot.src#RID_STR_NOCONNECTION.STRING.TEXT
 msgid  "The connection could not be established."
@@ -171,21 +143,9 @@ msgstr "Spojení nelze navázat."
 msgid  "Please check the settings made for the data source."
 msgstr "Zkontrolujte, prosím, nastavení provedená pro zdroj dat."
 
-#: abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.STRING.TEXT
-msgid  "Address Data - Field Assignment"
-msgstr "Položky adresy - přiřazení polí"
-
 #: abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.STRING.TEXT
 msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
 msgstr "Nejsou přiřazena žádná pole.\nJe možné je přiřadit nyní a nebo kdykoliv později z menu:\n\"Soubor - Šablony - Zdroj databáze kontaktů...\""
-
-#: bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Field selection:"
-msgstr "Výběr polí:"
-
-#: bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.STRING.TEXT
-msgid  "Table;Query;Sql;Sql [Native]"
-msgstr "Tabulka;Dotaz;Sql;Sql [Nativní]"
 
 #: bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.STRING.TEXT
 msgid  "Bibliography Database"
@@ -195,37 +155,9 @@ msgstr "Seznam použité literatury"
 msgid  "Do you want to edit the column arrangement?"
 msgstr "Přejete si upravit uspořádání sloupců?"
 
-#: bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FIXEDLINE.TEXT
-msgid  "Column names"
-msgstr "Názvy sloupců"
-
 #: bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.STRING.TEXT
 msgid  "<none>"
 msgstr "<nic>"
-
-#: bibliography/datman.src#RID_DLG_MAPPING.STRING.TEXT
-msgid  "Column Layout for Table %1"
-msgstr "Rozložení sloupců pro tabulku %1"
-
-#: bibliography/datman.src#RID_DLG_DBCHANGE.MODALDIALOG.TEXT
-msgid  "Choose Data Source"
-msgstr "Vybrat zdroj dat..."
-
-#: bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.STRING.TEXT
-msgid  "Entry"
-msgstr "Položka"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.STRING.TEXT
-msgid  "The following column names could not be assigned:\n"
-msgstr "Následující názvy sloupců nelze přiřadit:\n"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.STRING.TEXT
-msgid  "Article"
-msgstr "Článek"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.STRING.TEXT
-msgid  "Book"
-msgstr "Kniha"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.STRING.TEXT
 msgid  "Brochures"
@@ -243,10 +175,6 @@ msgstr "Výtah z knihy"
 msgid  "Book excerpt with title"
 msgstr "Výtah z knihy s nadpisem"
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.STRING.TEXT
-msgid  "Journal"
-msgstr "Časopis"
-
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.STRING.TEXT
 msgid  "Techn. documentation"
 msgstr "Technická dokumentace"
@@ -254,10 +182,6 @@ msgstr "Technická dokumentace"
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.STRING.TEXT
 msgid  "Thesis"
 msgstr "Diplomová práce"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.STRING.TEXT
-msgid  "Miscellaneous"
-msgstr "Různé"
 
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.STRING.TEXT
 msgid  "Dissertation"
@@ -267,10 +191,6 @@ msgstr "Disertace"
 msgid  "Research report"
 msgstr "Vědecká zpráva"
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.STRING.TEXT
-msgid  "Unpublished"
-msgstr "Neuveřejněno"
-
 #: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.STRING.TEXT
 msgid  "e-mail"
 msgstr "e-mail"
@@ -279,77 +199,17 @@ msgstr "e-mail"
 msgid  "WWW document"
 msgstr "WWW dokument"
 
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.STRING.TEXT
-msgid  "User-defined1"
-msgstr "Volné pole 1"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.STRING.TEXT
-msgid  "User-defined2"
-msgstr "Volné pole 2"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.STRING.TEXT
-msgid  "User-defined3"
-msgstr "Volné pole 3"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.STRING.TEXT
-msgid  "User-defined4"
-msgstr "Volné pole 4"
-
-#: bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.STRING.TEXT
-msgid  "User-defined5"
-msgstr "Volné pole 5"
-
-#: bibliography/sections.src#RID_TP_GENERAL.STRING.TEXT
-msgid  "General"
-msgstr "Obecné"
-
-#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MENUITEM.TEXT
-msgid  "Insert Section..."
-msgstr "Vložit sekci..."
-
-#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MENUITEM.TEXT
-msgid  "Delete Section..."
-msgstr "Odstranit sekci..."
-
-#: bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MENUITEM.TEXT
-msgid  "Modify Name..."
-msgstr "Změnit název..."
-
-#: bibliography/sections.src#ST_IDENTIFIER.STRING.TEXT
-msgid  "~Short name"
-msgstr "Krátký název"
-
-#: bibliography/sections.src#ST_AUTHTYPE.STRING.TEXT
-msgid  "~Type"
-msgstr "Typ"
-
-#: bibliography/sections.src#ST_YEAR.STRING.TEXT
-msgid  "~Year"
-msgstr "Rok"
-
 #: bibliography/sections.src#ST_AUTHOR.STRING.TEXT
 msgid  "Author(s)"
 msgstr "Autor(ři)"
-
-#: bibliography/sections.src#ST_TITLE.STRING.TEXT
-msgid  "Tit~le"
-msgstr "Titul"
 
 #: bibliography/sections.src#ST_PUBLISHER.STRING.TEXT
 msgid  "~Publisher"
 msgstr "Vydavatel"
 
-#: bibliography/sections.src#ST_ADDRESS.STRING.TEXT
-msgid  "A~ddress"
-msgstr "Adresa"
-
 #: bibliography/sections.src#ST_ISBN.STRING.TEXT
 msgid  "~ISBN"
 msgstr "ISBN"
-
-#: bibliography/sections.src#ST_CHAPTER.STRING.TEXT
-msgid  "~Chapter"
-msgstr "Kapitola"
 
 #: bibliography/sections.src#ST_PAGE.STRING.TEXT
 msgid  "Pa~ge(s)"
@@ -363,25 +223,9 @@ msgstr "Redaktor"
 msgid  "Ed~ition"
 msgstr "Edice"
 
-#: bibliography/sections.src#ST_BOOKTITLE.STRING.TEXT
-msgid  "~Book title"
-msgstr "Název knihy"
-
-#: bibliography/sections.src#ST_VOLUME.STRING.TEXT
-msgid  "Volume"
-msgstr "Svazek"
-
 #: bibliography/sections.src#ST_HOWPUBLISHED.STRING.TEXT
 msgid  "Publication t~ype"
 msgstr "Druh publikace"
-
-#: bibliography/sections.src#ST_ORGANIZATION.STRING.TEXT
-msgid  "Organi~zation"
-msgstr "Organizace"
-
-#: bibliography/sections.src#ST_INSTITUTION.STRING.TEXT
-msgid  "Instit~ution"
-msgstr "Instituce"
 
 #: bibliography/sections.src#ST_SCHOOL.STRING.TEXT
 msgid  "University"
@@ -391,29 +235,13 @@ msgstr "Univerzita"
 msgid  "Type of re~port"
 msgstr "Typ zprávy"
 
-#: bibliography/sections.src#ST_MONTH.STRING.TEXT
-msgid  "~Month"
-msgstr "Měsíc"
-
-#: bibliography/sections.src#ST_JOURNAL.STRING.TEXT
-msgid  "~Journal"
-msgstr "Časopis"
-
 #: bibliography/sections.src#ST_NUMBER.STRING.TEXT
 msgid  "Numb~er"
 msgstr "Číslo"
 
-#: bibliography/sections.src#ST_SERIES.STRING.TEXT
-msgid  "Se~ries"
-msgstr "Série"
-
 #: bibliography/sections.src#ST_ANNOTE.STRING.TEXT
 msgid  "Ann~otation"
 msgstr "Anotace"
-
-#: bibliography/sections.src#ST_NOTE.STRING.TEXT
-msgid  "~Note"
-msgstr "Poznámka"
 
 #: bibliography/sections.src#ST_URL.STRING.TEXT
 msgid  "URL"
@@ -439,61 +267,25 @@ msgstr "Volné pole 4"
 msgid  "User-defined field ~5"
 msgstr "Volné pole 5"
 
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.TOOLBOXITEM.TEXT
-msgid  "Table"
-msgstr "Tabulka"
-
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.TOOLBOXITEM.TEXT
 msgid  "Search Key"
 msgstr "Hledat klíčové slovo"
-
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.TOOLBOXITEM.TEXT
-msgid  "AutoFilter"
-msgstr "Automatický filtr"
 
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.TOOLBOXITEM.TEXT
 msgid  "Standard Filter"
 msgstr "Výchozí filtr"
 
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.TOOLBOXITEM.TEXT
-msgid  "Remove Filter"
-msgstr "Odstranit filtr"
-
 #: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.TOOLBOXITEM.TEXT
 msgid  "Column Arrangement"
 msgstr "Uspořádání sloupců"
-
-#: bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.TOOLBOXITEM.TEXT
-msgid  "Data Source"
-msgstr "Zdroj dat"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TABPAGE.TEXT
-msgid  "Data"
-msgstr "Data"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
 msgstr "V současné době není formulář, ke kterému je ovládací prvek vázán, propojen se zdrojem dat.\n\nVšimněte si, prosím, že nastavení provedená na této stránce se projeví okamžitě po jejím opuštění."
 
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FIXEDTEXT.TEXT
-msgid  "~Data source:"
-msgstr "Zdroj dat:"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PUSHBUTTON.TEXT
-msgid  "~..."
-msgstr "..."
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FIXEDTEXT.TEXT
-msgid  "~Table / Query:"
-msgstr "Tabulka / Dotaz:"
-
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TABPAGE.TEXT
 msgid  "Database Field"
 msgstr "Databázové pole"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FIXEDTEXT.TEXT
-msgid  "Do you want to save the value in a database field?"
-msgstr "Přejete si uložit hodnotu do databázového pole?"
 
 #: dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, I want to save it in the following database field:"
@@ -503,97 +295,17 @@ msgstr "Ano, chci ji uložit do tohoto pole v databázi:"
 msgid  "~No, I only want to save the value in the form."
 msgstr "Ne, hodnota bude uložena jen ve formuláři."
 
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FIXEDLINE.TEXT
-msgid  "Form"
-msgstr "Formulář"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FIXEDTEXT.TEXT
-msgid  "Data source"
-msgstr "Zdroj dat"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FIXEDTEXT.TEXT
-msgid  "Content type"
-msgstr "Typ obsahu"
-
-#: dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FIXEDTEXT.TEXT
-msgid  "Content"
-msgstr "Obsah"
-
-#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.STRING.TEXT
-msgid  "Table"
-msgstr "Tabulka"
-
-#: dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.STRING.TEXT
-msgid  "Query"
-msgstr "Dotaz"
-
 #: dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.STRING.TEXT
 msgid  "SQL command"
 msgstr "SQL příkaz"
-
-#: dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.MODALDIALOG.TEXT
-msgid  "Group Element Wizard"
-msgstr "Průvodce prvkem skupiny"
-
-#: dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.MODALDIALOG.TEXT
-msgid  "Table Element Wizard"
-msgstr "Průvodce prvkem tabulky"
-
-#: dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.STRING.TEXT
-msgid  "List Box Wizard"
-msgstr "Průvodce seznamem"
-
-#: dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.STRING.TEXT
-msgid  "Combo Box Wizard"
-msgstr "Průvodce rozbalovacím seznamem"
 
 #: dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.STRING.TEXT
 msgid  "The table connection to the data source could not be established."
 msgstr "Spojení tabulky se zdrojem dat nelze navázat."
 
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TABPAGE.TEXT
-msgid  "Field Selection"
-msgstr "Výběr polí"
-
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FIXEDLINE.TEXT
-msgid  "Table element"
-msgstr "Tabulkový prvek"
-
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FIXEDTEXT.TEXT
-msgid  "Existing fields"
-msgstr "Existující pole"
-
-#: dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FIXEDTEXT.TEXT
-msgid  "Selected fields"
-msgstr "Vybraná pole"
-
-#: dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.STRING.TEXT
-msgid  " (Date)"
-msgstr " (Datum)"
-
-#: dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.STRING.TEXT
-msgid  " (Time)"
-msgstr " (Čas)"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TABPAGE.TEXT
-msgid  "Data"
-msgstr "Data"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FIXEDTEXT.TEXT
-msgid  "Which ~names do you want to give the option fields?"
-msgstr "Jaké názvy chcete přiřadit jednotlivým volbám?"
-
 #: dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FIXEDTEXT.TEXT
 msgid  "~Option fields"
 msgstr "Pole voleb"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TABPAGE.TEXT
-msgid  "Default Field Selection"
-msgstr "Výběr výchozího pole"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FIXEDTEXT.TEXT
-msgid  "Should one option field be selected as a default?"
-msgstr "Má být jedno pole volby vybrané jako výchozí?"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RADIOBUTTON.TEXT
 msgid  "~Yes, the following:"
@@ -603,10 +315,6 @@ msgstr "Ano, následující:"
 msgid  "No, one particular field is not going to be selected."
 msgstr "Ne, žádné pole nebude vybráno."
 
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TABPAGE.TEXT
-msgid  "Field Values"
-msgstr "Hodnoty polí"
-
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FIXEDTEXT.TEXT
 msgid  "When you select an option, the option group is given a specific value."
 msgstr "Pokud vyberete jednu z voleb, celá skupina získá určitou hodnotu."
@@ -614,10 +322,6 @@ msgstr "Pokud vyberete jednu z voleb, celá skupina získá určitou hodnotu."
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FIXEDTEXT.TEXT
 msgid  "Which ~value do you want to assign to each option?"
 msgstr "Jaké hodnoty chcete přiřadit jednotlivým volbám?"
-
-#: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TABPAGE.TEXT
-msgid  "Create Option Group"
-msgstr "Vytvořit skupinu voleb"
 
 #: dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FIXEDTEXT.TEXT
 msgid  "Which ~caption is to be given to your option group?"
@@ -630,14 +334,6 @@ msgstr "Toto jsou všechny informace potřebné pro vytvoření pole voleb."
 #: dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
 msgstr "Buď je možné vybranou hodnotu uložit do pole v databázi a nebo ji použít k nějaké další akci."
-
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TABPAGE.TEXT
-msgid  "Table Selection"
-msgstr "Výběr tabulky"
-
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FIXEDLINE.TEXT
-msgid  "Control"
-msgstr "Ovládací prvek"
 
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FIXEDTEXT.TEXT
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
@@ -663,41 +359,13 @@ msgstr "Obsah vybraného pole bude zobrazen v rozbalovacím seznamu."
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
 msgstr "Obsah vybraného pole bude zobrazen v seznamu, pokud jsou propojená pole identická."
 
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TABPAGE.TEXT
-msgid  "Field Link"
-msgstr "Propojení polí"
-
 #: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FIXEDTEXT.TEXT
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
 msgstr "Zde vybíráte pole s odpovídajícím obsahem tak, aby se ukázala hodnota z políčka zobrazení."
 
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FIXEDTEXT.TEXT
-msgid  "Field from the ~Value Table"
-msgstr "Pole z tabulky hodnot"
-
-#: dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FIXEDTEXT.TEXT
-msgid  "Field from the ~List Table"
-msgstr "Pole z tabulky seznamu"
-
 #: dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.STRING.TEXT
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
 msgstr "Buď je možné vybranou hodnotu uložit do pole v databázi a nebo ji použít k nějaké další akci."
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PUSHBUTTON.TEXT
-msgid  "<< Back"
-msgstr "<< Zpět"
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PUSHBUTTON.TEXT
-msgid  "Next >>"
-msgstr "Další >>"
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.STRING.TEXT
-msgid  "Accept"
-msgstr "Přijmout"
-
-#: preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.STRING.TEXT
-msgid  "Finish"
-msgstr "Dokončit"
 
 #: preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.STRING.TEXT
 msgid  " - Software License Agreement"
@@ -712,132 +380,111 @@ msgid  "Welcome"
 msgstr "Vítejte"
 
 #: preload/preload.src#RID_TP_WELCOME.FT_INFO.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
-msgstr "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the OpenOffice website \n\nhttp://www.openoffice.org."
 
 #: preload/preload.src#RID_TP_LICENSE.TABPAGE.TEXT
+#, fuzzy
 msgid  "License Agreement"
 msgstr "Licenční ujednání"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Please follow these steps to proceed with the installation:"
 msgstr "Pro pokračování instalace proveďte následující kroky:"
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr "Přečtěte si celé licenční ujednání. Použijte, prosím, posuvnou lištu nebo tlačítko '%PAGEDOWN' v tomto dialogu pro přečtení celého textu licenčního ujednání."
 
-#: preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PUSHBUTTON.TEXT
-msgid  "Page Down"
-msgstr "Další stránka"
-
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: preload/preload.src#RID_TP_LICENSE.FT_INFO3.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Accept the License Agreement."
 msgstr "Přijmout licenci."
 
 #: preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "I accept the terms of the Agreement."
 msgstr "Přijímám podmínky ujednání."
 
-#: preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.STRING.TEXT
-msgid  "~Accept"
-msgstr "Přijmout"
-
 #: preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.STRING.TEXT
+#, fuzzy
 msgid  "Decline"
 msgstr "Zrušit"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Character"
 msgstr "Znak"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font"
 msgstr "Písmo"
 
 #: propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font Effects"
 msgstr "Efekty pro písmo"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Link fields"
 msgstr "Propojit pole"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
 msgstr "Podformuláře lze využít k zobrazení podrobných údajů o aktuálním záznamu hlavního formuláře. Je možné určit, které sloupce podformuláře a hlavní formuláře si odpovídají."
 
-#: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PUSHBUTTON.TEXT
-msgid  "Suggest"
-msgstr "Doporučit"
-
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Sub Form"
 msgstr "Podformulář"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.STRING.TEXT
+#, fuzzy
 msgid  "Master Form"
 msgstr "Hlavní formulář"
 
 #: propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.STRING.TEXT
+#, fuzzy
 msgid  "The columns of '#' could not be retrieved."
 msgstr "Nelze získat sloupce '#'."
-
-#: propctrlr/formres.src#RID_STR_EDITMASK.STRING.TEXT
-msgid  "Edit mask"
-msgstr "Upravit masku"
-
-#: propctrlr/formres.src#RID_STR_LITERALMASK.STRING.TEXT
-msgid  "Literal mask"
-msgstr "Znaková maska"
 
 #: propctrlr/formres.src#RID_STR_READONLY.STRING.TEXT
 #, fuzzy
 msgid  "Read-only"
 msgstr "Pouze pro čtení"
 
-#: propctrlr/formres.src#RID_STR_ENABLED.STRING.TEXT
-msgid  "Enabled"
-msgstr "Zapnuto"
-
 #: propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.STRING.TEXT
+#, fuzzy
 msgid  "Visible"
 msgstr "Viditelné"
 
-#: propctrlr/formres.src#RID_STR_AUTOCOMPLETE.STRING.TEXT
-msgid  "AutoFill"
-msgstr "Automatické vyplňování"
-
-#: propctrlr/formres.src#RID_STR_LINECOUNT.STRING.TEXT
-msgid  "Line count"
-msgstr "Počet řádek"
-
-#: propctrlr/formres.src#RID_STR_MAXTEXTLEN.STRING.TEXT
-msgid  "Max. text length"
-msgstr "Maximální délka textu"
-
 #: propctrlr/formres.src#RID_STR_SPIN.STRING.TEXT
+#, fuzzy
 msgid  "Spin Button"
 msgstr "Rolovací tlačítko"
 
 #: propctrlr/formres.src#RID_STR_STRICTFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Strict format"
 msgstr "Přesný formát"
 
-#: propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.STRING.TEXT
-msgid  "Thousands separator"
-msgstr "Oddělovač tisíců"
-
 #: propctrlr/formres.src#RID_STR_PRINTABLE.STRING.TEXT
+#, fuzzy
 msgid  "Printable"
 msgstr "Tisknutelná"
 
@@ -851,367 +498,133 @@ msgstr "URL"
 msgid  "Frame"
 msgstr "Rámec"
 
-#: propctrlr/formres.src#RID_STR_HELPTEXT.STRING.TEXT
-msgid  "Help text"
-msgstr "Pomocný text"
-
-#: propctrlr/formres.src#RID_STR_HELPURL.STRING.TEXT
-msgid  "Help URL"
-msgstr "URL nápovědy"
-
-#: propctrlr/formres.src#RID_STR_TAG.STRING.TEXT
-msgid  "Additional information"
-msgstr "Další informace"
-
 #: propctrlr/formres.src#RID_STR_ECHO_CHAR.STRING.TEXT
+#, fuzzy
 msgid  "Password character"
 msgstr "Znak hesla"
 
 #: propctrlr/formres.src#RID_STR_TRISTATE.STRING.TEXT
+#, fuzzy
 msgid  "Tristate"
 msgstr "Trojstav"
 
 #: propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.STRING.TEXT
+#, fuzzy
 msgid  "Empty string is NULL"
 msgstr "Prázdný řetězec je NULL"
 
-#: propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.STRING.TEXT
-msgid  "Decimal accuracy"
-msgstr "Desetinná přesnost"
-
-#: propctrlr/formres.src#RID_STR_IMAGE_URL.STRING.TEXT
-msgid  "Graphics"
-msgstr "Obrázek"
-
-#: propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.STRING.TEXT
-msgid  "Default selection"
-msgstr "Výchozí výběr"
-
-#: propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.STRING.TEXT
-msgid  "Default button"
-msgstr "Výchozí tlačítko"
-
-#: propctrlr/formres.src#RID_STR_LABELCONTROL.STRING.TEXT
-msgid  "Label Field"
-msgstr "Popisek"
-
-#: propctrlr/formres.src#RID_STR_LABEL.STRING.TEXT
-msgid  "Label"
-msgstr "Popisek"
-
-#: propctrlr/formres.src#RID_STR_ALIGN.STRING.TEXT
-msgid  "Alignment"
-msgstr "Zarovnání"
-
 #: propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.STRING.TEXT
+#, fuzzy
 msgid  "Vert. Alignment"
 msgstr "Svislé zarovnání"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.STRING.TEXT
-msgid  "Top"
-msgstr "Nahoru"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.STRING.TEXT
-msgid  "Middle"
-msgstr "Na střed"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.STRING.TEXT
-msgid  "Bottom"
-msgstr "Dolů"
-
-#: propctrlr/formres.src#RID_STR_IMAGEPOSITION.STRING.TEXT
-msgid  "Graphics alignment"
-msgstr "Zarovnání obrázku"
-
 #: propctrlr/formres.src#RID_STR_FONT.STRING.TEXT
+#, fuzzy
 msgid  "Font"
 msgstr "Písmo"
 
-#: propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.STRING.TEXT
-msgid  "Background color"
-msgstr "Barva pozadí"
-
-#: propctrlr/formres.src#RID_STR_BORDER.STRING.TEXT
-msgid  "Border"
-msgstr "Ohraničení"
-
-#: propctrlr/formres.src#RID_STR_ICONSIZE.STRING.TEXT
-msgid  "Icon size"
-msgstr "Velikost ikony"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Small"
 msgstr "Malá"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Large"
 msgstr "Velká"
 
-#: propctrlr/formres.src#RID_STR_SHOW_POSITION.STRING.TEXT
-msgid  "Positioning"
-msgstr "Umístění"
-
-#: propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.STRING.TEXT
-msgid  "Navigation"
-msgstr "Navigace"
-
 #: propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Acting on a record"
 msgstr "Činnost na záznamu"
 
-#: propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.STRING.TEXT
-msgid  "Filtering / Sorting"
-msgstr "Filtrování / třídění"
-
-#: propctrlr/formres.src#RID_STR_HSCROLL.STRING.TEXT
-msgid  "Horizontal scroll bar"
-msgstr "Vodorovný posuvník"
-
-#: propctrlr/formres.src#RID_STR_VSCROLL.STRING.TEXT
-msgid  "Vertical scroll bar"
-msgstr "Svislý posuvník"
-
-#: propctrlr/formres.src#RID_STR_WORDBREAK.STRING.TEXT
-msgid  "Word break"
-msgstr "Zalomení slova"
-
-#: propctrlr/formres.src#RID_STR_MULTILINE.STRING.TEXT
-msgid  "Multiline input"
-msgstr "Víceřádkový vstup"
-
-#: propctrlr/formres.src#RID_STR_MULTISELECTION.STRING.TEXT
-msgid  "Multiselection"
-msgstr "Vícenásobný výběr"
-
-#: propctrlr/formres.src#RID_STR_NAME.STRING.TEXT
-msgid  "Name"
-msgstr "Název"
-
 #: propctrlr/formres.src#RID_STR_TABINDEX.STRING.TEXT
+#, fuzzy
 msgid  "Tab order"
 msgstr "Pořadí aktivace"
 
 #: propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.STRING.TEXT
+#, fuzzy
 msgid  "Mouse wheel scroll"
 msgstr "Posun kolečkem myši"
 
-#: propctrlr/formres.src#RID_STR_FILTER.STRING.TEXT
-msgid  "Filter"
-msgstr "Filtr"
-
-#: propctrlr/formres.src#RID_STR_SORT_CRITERIA.STRING.TEXT
-msgid  "Sort"
-msgstr "Řadit"
-
-#: propctrlr/formres.src#RID_STR_RECORDMARKER.STRING.TEXT
-msgid  "Record marker"
-msgstr "Značka záznamu"
-
-#: propctrlr/formres.src#RID_STR_FILTERPROPOSAL.STRING.TEXT
-msgid  "Filter proposal"
-msgstr "Návrh filtru"
-
 #: propctrlr/formres.src#RID_STR_NAVIGATION.STRING.TEXT
+#, fuzzy
 msgid  "Navigation bar"
 msgstr "Navigační panel"
 
-#: propctrlr/formres.src#RID_STR_CYCLE.STRING.TEXT
-msgid  "Cycle"
-msgstr "Cyklus"
-
 #: propctrlr/formres.src#RID_STR_TABSTOP.STRING.TEXT
+#, fuzzy
 msgid  "Tabstop"
 msgstr "Krok tabulátoru"
 
-#: propctrlr/formres.src#RID_STR_CONTROLSOURCE.STRING.TEXT
-msgid  "Data field"
-msgstr "Datové pole"
-
-#: propctrlr/formres.src#RID_STR_DROPDOWN.STRING.TEXT
-msgid  "Dropdown"
-msgstr "Rozbalit"
-
-#: propctrlr/formres.src#RID_STR_BOUNDCOLUMN.STRING.TEXT
-msgid  "Bound field"
-msgstr "Svázané pole"
-
-#: propctrlr/formres.src#RID_STR_LISTSOURCE.STRING.TEXT
-msgid  "List content"
-msgstr "Obsah seznamu"
-
-#: propctrlr/formres.src#RID_STR_LISTSOURCETYPE.STRING.TEXT
-msgid  "Type of list contents"
-msgstr "Druh obsahu seznamu"
-
-#: propctrlr/formres.src#RID_STR_CURSORSOURCE.STRING.TEXT
-msgid  "Content"
-msgstr "Obsah"
-
 #: propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.STRING.TEXT
+#, fuzzy
 msgid  "Content type"
 msgstr "Typ obsahu"
 
-#: propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.STRING.TEXT
-msgid  "Allow additions"
-msgstr "Povolit přidávání"
-
-#: propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.STRING.TEXT
-msgid  "Allow deletions"
-msgstr "Povolit mazání"
-
-#: propctrlr/formres.src#RID_STR_ALLOW_EDITS.STRING.TEXT
-msgid  "Allow modifications"
-msgstr "Povolit změny"
-
-#: propctrlr/formres.src#RID_STR_DATAENTRY.STRING.TEXT
-msgid  "Add data only"
-msgstr "Pouze přidat data"
-
-#: propctrlr/formres.src#RID_STR_DATASOURCE.STRING.TEXT
-msgid  "Data source"
-msgstr "Zdroj dat"
-
-#: propctrlr/formres.src#RID_STR_MASTERFIELDS.STRING.TEXT
-msgid  "Link master fields"
-msgstr "Propojit hlavní pole"
-
-#: propctrlr/formres.src#RID_STR_SLAVEFIELDS.STRING.TEXT
-msgid  "Link slave fields"
-msgstr "Propojit závislá pole"
-
 #: propctrlr/formres.src#RID_STR_VALUEMIN.STRING.TEXT
+#, fuzzy
 msgid  "Value min."
 msgstr "Min. hodnota"
 
 #: propctrlr/formres.src#RID_STR_VALUEMAX.STRING.TEXT
+#, fuzzy
 msgid  "Value max."
 msgstr "Max. hodnota"
 
-#: propctrlr/formres.src#RID_STR_VALUESTEP.STRING.TEXT
-msgid  "Incr./decrement value"
-msgstr "Zvýšit/snížit hodnotu"
-
-#: propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.STRING.TEXT
-msgid  "Currency symbol"
-msgstr "Symbol měny"
-
 #: propctrlr/formres.src#RID_STR_DATEMIN.STRING.TEXT
+#, fuzzy
 msgid  "Date min."
 msgstr "Min. datum"
 
 #: propctrlr/formres.src#RID_STR_DATEMAX.STRING.TEXT
+#, fuzzy
 msgid  "Date max."
 msgstr "Max. datum"
 
-#: propctrlr/formres.src#RID_STR_DATEFORMAT.STRING.TEXT
-msgid  "Date format"
-msgstr "Formát data"
-
-#: propctrlr/formres.src#RID_STR_SELECTEDITEMS.STRING.TEXT
-msgid  "Selection"
-msgstr "Výběr"
-
 #: propctrlr/formres.src#RID_STR_TIMEMIN.STRING.TEXT
+#, fuzzy
 msgid  "Time min."
 msgstr "Min. čas"
 
 #: propctrlr/formres.src#RID_STR_TIMEMAX.STRING.TEXT
+#, fuzzy
 msgid  "Time max."
 msgstr "Max. čas"
 
-#: propctrlr/formres.src#RID_STR_TIMEFORMAT.STRING.TEXT
-msgid  "Time format"
-msgstr "Formát času"
-
-#: propctrlr/formres.src#RID_STR_CURRSYM_POSITION.STRING.TEXT
-msgid  "Prefix symbol"
-msgstr "Symbol pro předponu"
-
-#: propctrlr/formres.src#RID_STR_VALUE.STRING.TEXT
-msgid  "Value"
-msgstr "Hodnota"
-
-#: propctrlr/formres.src#RID_STR_FORMATKEY.STRING.TEXT
-msgid  "Formatting"
-msgstr "Formátování"
-
 #: propctrlr/formres.src#RID_STR_CLASSID.STRING.TEXT
+#, fuzzy
 msgid  "Class ID"
 msgstr "ID třídy"
 
 #: propctrlr/formres.src#RID_STR_HEIGHT.STRING.TEXT
+#, fuzzy
 msgid  "Height"
 msgstr "Výška"
 
-#: propctrlr/formres.src#RID_STR_WIDTH.STRING.TEXT
-msgid  "Width"
-msgstr "Šířka"
-
-#: propctrlr/formres.src#RID_STR_LISTINDEX.STRING.TEXT
-msgid  "List index"
-msgstr "Index seznamu"
-
 #: propctrlr/formres.src#RID_STR_ROWHEIGHT.STRING.TEXT
+#, fuzzy
 msgid  "Row height"
 msgstr "Výška řádku"
 
-#: propctrlr/formres.src#RID_STR_FILLCOLOR.STRING.TEXT
-msgid  "Fill color"
-msgstr "Barva výplně"
-
-#: propctrlr/formres.src#RID_STR_LINECOLOR.STRING.TEXT
-msgid  "Line color"
-msgstr "Barva čáry"
-
-#: propctrlr/formres.src#RID_STR_REFVALUE.STRING.TEXT
-msgid  "Reference value (on)"
-msgstr "Referenční hodnota (zapn)"
-
-#: propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.STRING.TEXT
-msgid  "Reference value (off)"
-msgstr "Referenční hodnota (vyp)"
-
-#: propctrlr/formres.src#RID_STR_STRINGITEMLIST.STRING.TEXT
-msgid  "List entries"
-msgstr "Seznam záznamů"
-
-#: propctrlr/formres.src#RID_STR_BUTTONTYPE.STRING.TEXT
-msgid  "Action"
-msgstr "Činnost"
-
-#: propctrlr/formres.src#RID_STR_SUBMIT_METHOD.STRING.TEXT
-msgid  "Type of submission"
-msgstr "Typ odeslání"
-
 #: propctrlr/formres.src#RID_STR_DEFAULT_STATE.STRING.TEXT
+#, fuzzy
 msgid  "Default status"
 msgstr "Výchozí stav"
 
 #: propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.STRING.TEXT
+#, fuzzy
 msgid  "Submission encoding"
 msgstr "Kódování pro odeslání"
 
-#: propctrlr/formres.src#RID_STR_DEFAULTVALUE.STRING.TEXT
-msgid  "Default value"
-msgstr "Výchozí hodnota"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTTEXT.STRING.TEXT
-msgid  "Default text"
-msgstr "Výchozí text"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTDATE.STRING.TEXT
-msgid  "Default date"
-msgstr "Výchozí datum"
-
-#: propctrlr/formres.src#RID_STR_DEFAULTTIME.STRING.TEXT
-msgid  "Default time"
-msgstr "Výchozí čas"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Without frame"
 msgstr "Bez rámce"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "3D look"
 msgstr "3D vzhled"
 
@@ -1221,6 +634,7 @@ msgid  "Flat"
 msgstr "Plochý"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "Valuelist"
 msgstr "Seznam hodnot"
 
@@ -1235,26 +649,27 @@ msgid  "Query"
 msgstr "Dotaz"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Sql"
 msgstr "SQL"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "Sql [Native]"
 msgstr "SQL [nativní]"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.STRING.TEXT
+#, fuzzy
 msgid  "Tablefields"
 msgstr "Pole tabulky"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.STRING.TEXT
+#, fuzzy
 msgid  "Left"
 msgstr "Vlevo"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.STRING.TEXT
-msgid  "Center"
-msgstr "Na střed"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.STRING.TEXT
+#, fuzzy
 msgid  "Right"
 msgstr "Vpravo"
 
@@ -1263,62 +678,77 @@ msgid  "None"
 msgstr "Nic"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Submit form"
 msgstr "Odeslat formulář"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Reset form"
 msgstr "Vyčistit formulář"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Open document/web page"
 msgstr "Otevřít dokument/web stránku"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "First record"
 msgstr "První záznam"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.STRING.TEXT
+#, fuzzy
 msgid  "Previous record"
 msgstr "Předchozí záznam"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.STRING.TEXT
+#, fuzzy
 msgid  "Next record"
 msgstr "Další záznam"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.STRING.TEXT
+#, fuzzy
 msgid  "Last record"
 msgstr "Poslední záznam"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.STRING.TEXT
+#, fuzzy
 msgid  "Save record"
 msgstr "Uložit záznam"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.STRING.TEXT
+#, fuzzy
 msgid  "Undo data entry"
 msgstr "Zpět zadání dat"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.STRING.TEXT
+#, fuzzy
 msgid  "New record"
 msgstr "Nový záznam"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.STRING.TEXT
+#, fuzzy
 msgid  "Delete record"
 msgstr "Odstranit záznam"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.STRING.TEXT
+#, fuzzy
 msgid  "Refresh form"
 msgstr "Obnovit formulář"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.STRING.TEXT
+#, fuzzy
 msgid  "Get"
 msgstr "Get"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.STRING.TEXT
+#, fuzzy
 msgid  "Post"
 msgstr "Post"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.STRING.TEXT
+#, fuzzy
 msgid  "Multipart"
 msgstr "Multipart"
 
@@ -1328,90 +758,112 @@ msgid  "Text"
 msgstr "Text"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short)"
 msgstr "Standardní (krátké)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short YY)"
 msgstr "Standardní (krátké RR)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short YYYY)"
 msgstr "Standardní (krátké RRRR)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.STRING.TEXT
+#, fuzzy
 msgid  "Standard (long)"
 msgstr "Standardní (dlouhé)"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.STRING.TEXT
+#, fuzzy
 msgid  "DD/MM/YY"
 msgstr "DD/MM/RR"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.STRING.TEXT
+#, fuzzy
 msgid  "MM/DD/YY"
 msgstr "MM/DD/RR"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.STRING.TEXT
+#, fuzzy
 msgid  "YY/MM/DD"
 msgstr "RR/MM/DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.STRING.TEXT
+#, fuzzy
 msgid  "DD/MM/YYYY"
 msgstr "DD/MM/RRRR"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.STRING.TEXT
+#, fuzzy
 msgid  "MM/DD/YYYY"
 msgstr "MM/DD/RRRR"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.STRING.TEXT
+#, fuzzy
 msgid  "YYYY/MM/DD"
 msgstr "RRRR/MM/DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.STRING.TEXT
+#, fuzzy
 msgid  "YY-MM-DD"
 msgstr "RR-MM-DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.STRING.TEXT
+#, fuzzy
 msgid  "YYYY-MM-DD"
 msgstr "RRRR-MM-DD"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.STRING.TEXT
+#, fuzzy
 msgid  "13:45"
 msgstr "13:45"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.STRING.TEXT
+#, fuzzy
 msgid  "13:45:00"
 msgstr "13:45:00"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.STRING.TEXT
+#, fuzzy
 msgid  "01:45 PM"
 msgstr "01:45 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.STRING.TEXT
+#, fuzzy
 msgid  "01:45:00 PM"
 msgstr "01:45:00 PM"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.STRING.TEXT
+#, fuzzy
 msgid  "Not Selected"
 msgstr "Nevybráno"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.STRING.TEXT
+#, fuzzy
 msgid  "Selected"
 msgstr "Vybráno"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.STRING.TEXT
+#, fuzzy
 msgid  "Not Defined"
 msgstr "Nedefinováno"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.STRING.TEXT
+#, fuzzy
 msgid  "All records"
 msgstr "Všechny záznamy"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.STRING.TEXT
+#, fuzzy
 msgid  "Active record"
 msgstr "Stávající záznam"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.STRING.TEXT
+#, fuzzy
 msgid  "Current page"
 msgstr "Stávající stránka"
 
@@ -1421,228 +873,129 @@ msgid  "No"
 msgstr "Ne"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
 msgstr "Ano"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.STRING.TEXT
+#, fuzzy
 msgid  "Parent Form"
 msgstr "Zdrojový formulář"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Single"
 msgstr "Jeden"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Multi"
 msgstr "Více"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "Range"
 msgstr "Rozsah"
 
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.STRING.TEXT
+#, fuzzy
 msgid  "Fill parameters"
 msgstr "Vyplnit parametry"
 
 #: propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.STRING.TEXT
+#, fuzzy
 msgid  "Execute action"
 msgstr "Provést akci"
 
-#: propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
-msgstr "Po aktualizaci"
-
-#: propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.STRING.TEXT
-msgid  "Before updating"
-msgstr "Před aktualizací"
-
-#: propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
-msgstr "Před záznamem"
-
-#: propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
-msgstr "Po záznamu"
-
-#: propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.STRING.TEXT
-msgid  "Confirm deletion"
-msgstr "Potvrdit odstranění"
-
-#: propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
-msgstr "Došlo k chybě"
-
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.STRING.TEXT
+#, fuzzy
 msgid  "When receiving focus"
 msgstr "Při zaměření"
 
 #: propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.STRING.TEXT
+#, fuzzy
 msgid  "When losing focus"
 msgstr "Při ztrátě zaměření"
 
 #: propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.STRING.TEXT
+#, fuzzy
 msgid  "Item status changed"
 msgstr "Změna stavu položky"
 
-#: propctrlr/formres.src#RID_STR_EVT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
-msgstr "Klávesa stisknuta"
-
-#: propctrlr/formres.src#RID_STR_EVT_KEYUP.STRING.TEXT
-msgid  "Key released"
-msgstr "Klávesa uvolněna"
-
 #: propctrlr/formres.src#RID_STR_EVT_LOADED.STRING.TEXT
+#, fuzzy
 msgid  "When loading"
 msgstr "Při načítání"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADING.STRING.TEXT
+#, fuzzy
 msgid  "Before reloading"
 msgstr "Před opětovným načtením"
 
 #: propctrlr/formres.src#RID_STR_EVT_RELOADED.STRING.TEXT
+#, fuzzy
 msgid  "When reloading"
 msgstr "Při opětovném načtení"
 
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.STRING.TEXT
-msgid  "Mouse moved while key pressed"
-msgstr "Myš se pohnula spolu se stisknutou klávesou"
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.STRING.TEXT
-msgid  "Mouse inside"
-msgstr "Myš uvnitř"
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.STRING.TEXT
-msgid  "Mouse outside"
-msgstr "Myš vně"
-
-#: propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.STRING.TEXT
-msgid  "Mouse moved"
-msgstr "Posuv myši"
-
 #: propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.STRING.TEXT
+#, fuzzy
 msgid  "Mouse button pressed"
 msgstr "Stisknuto tlačítko myši"
 
-#: propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.STRING.TEXT
-msgid  "Mouse button released"
-msgstr "Uvolněno tlačítko myši"
-
-#: propctrlr/formres.src#RID_STR_EVT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
-msgstr "Před změnou záznamu"
-
-#: propctrlr/formres.src#RID_STR_EVT_POSITIONED.STRING.TEXT
-msgid  "After record change"
-msgstr "Po změně záznamu"
-
-#: propctrlr/formres.src#RID_STR_EVT_RESETTED.STRING.TEXT
-msgid  "After resetting"
-msgstr "Po přenastavení"
-
-#: propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.STRING.TEXT
-msgid  "Prior to reset"
-msgstr "Před přenastavením"
-
 #: propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.STRING.TEXT
+#, fuzzy
 msgid  "Approve action"
 msgstr "Schválit akci"
 
 #: propctrlr/formres.src#RID_STR_EVT_SUBMITTED.STRING.TEXT
+#, fuzzy
 msgid  "Before submitting"
 msgstr "Před odesláním"
 
-#: propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
-msgstr "Text změněn"
-
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Before unloading"
 msgstr "Před uvolněním"
 
 #: propctrlr/formres.src#RID_STR_EVT_UNLOADED.STRING.TEXT
+#, fuzzy
 msgid  "When unloading"
 msgstr "Při uvolnění"
 
-#: propctrlr/formres.src#RID_STR_EVT_CHANGED.STRING.TEXT
-msgid  "Changed"
-msgstr "Změněno"
-
-#: propctrlr/formres.src#RID_STR_EVENTS.STRING.TEXT
-msgid  "Events"
-msgstr "Události"
-
 #: propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.STRING.TEXT
+#, fuzzy
 msgid  "Analyze SQL command"
 msgstr "Analyzovat SQL příkaz"
 
-#: propctrlr/formres.src#RID_STR_POSITIONX.STRING.TEXT
-msgid  "PositionX"
-msgstr "PoziceX"
-
-#: propctrlr/formres.src#RID_STR_POSITIONY.STRING.TEXT
-msgid  "PositionY"
-msgstr "PoziceY"
-
-#: propctrlr/formres.src#RID_STR_TITLE.STRING.TEXT
-msgid  "Title"
-msgstr "Titulek"
-
-#: propctrlr/formres.src#RID_STR_STEP.STRING.TEXT
-msgid  "Page (step)"
-msgstr "Stránka (krok)"
-
-#: propctrlr/formres.src#RID_STR_PROGRESSVALUE.STRING.TEXT
-msgid  "Progress value"
-msgstr "Hodnota průběhu"
-
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.STRING.TEXT
+#, fuzzy
 msgid  "Progress value min."
 msgstr "Min. hodnota průběhu"
 
 #: propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Progress value max."
 msgstr "Max. hodnota průběhu"
 
-#: propctrlr/formres.src#RID_STR_SCROLLVALUE.STRING.TEXT
-msgid  "Scroll value"
-msgstr "Hodnota posunu"
-
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Scroll value max."
 msgstr "Max. hodnota posunu"
 
 #: propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.STRING.TEXT
+#, fuzzy
 msgid  "Scroll value min."
 msgstr "Min. hodnota posunu"
 
-#: propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.STRING.TEXT
-msgid  "Default scroll value"
-msgstr "Výchozí hodnota posunu"
-
-#: propctrlr/formres.src#RID_STR_LINEINCREMENT.STRING.TEXT
-msgid  "Small change"
-msgstr "Malá změna"
-
-#: propctrlr/formres.src#RID_STR_BLOCKINCREMENT.STRING.TEXT
-msgid  "Large change"
-msgstr "Velká změna"
-
-#: propctrlr/formres.src#RID_STR_REPEAT_DELAY.STRING.TEXT
-msgid  "Delay"
-msgstr "Pozdržet"
-
 #: propctrlr/formres.src#RID_STR_REPEAT.STRING.TEXT
+#, fuzzy
 msgid  "Repeat"
 msgstr "Opakovat"
 
 #: propctrlr/formres.src#RID_STR_VISIBLESIZE.STRING.TEXT
+#, fuzzy
 msgid  "Visible size"
 msgstr "Viditelná velikost"
-
-#: propctrlr/formres.src#RID_STR_ORIENTATION.STRING.TEXT
-msgid  "Orientation"
-msgstr "Orientace"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.STRING.TEXT
 msgid  "Horizontal"
@@ -1652,379 +1005,258 @@ msgstr "Vodorovné"
 msgid  "Vertical"
 msgstr "Svislé"
 
-#: propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
-msgstr "Při úpravě"
-
-#: propctrlr/formres.src#RID_STR_DATE.STRING.TEXT
-msgid  "Date"
-msgstr "Datum"
-
 #: propctrlr/formres.src#RID_STR_STATE.STRING.TEXT
+#, fuzzy
 msgid  "State"
 msgstr "Stav"
 
-#: propctrlr/formres.src#RID_STR_TIME.STRING.TEXT
-msgid  "Time"
-msgstr "Čas"
-
-#: propctrlr/formres.src#RID_STR_SCALEIMAGE.STRING.TEXT
-msgid  "Scale"
-msgstr "Měřítko"
-
-#: propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.STRING.TEXT
-msgid  "Button type"
-msgstr "Typ tlačítka"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.STRING.TEXT
-msgid  "Default"
-msgstr "Výchozí"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "OK"
 msgstr "OK"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
 msgstr "Zrušit"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.STRING.TEXT
-msgid  "Help"
-msgstr "Nápověda"
-
 #: propctrlr/formres.src#RID_STR_UNABLETOCONNECT.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "Nepodařilo se připojení k datovému zdroji \"$name$\"."
 
 #: propctrlr/formres.src#RID_STR_BOUND_CELL.STRING.TEXT
+#, fuzzy
 msgid  "Linked cell"
 msgstr "Spojená buňka"
 
-#: propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.STRING.TEXT
-msgid  "Source cell range"
-msgstr "Rozsah zdrojové buňky"
-
 #: propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Contents of the linked cell"
 msgstr "Obsah spojené buňky"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "The selected entry"
 msgstr "Zvolená položka"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "Position of the selected entry"
 msgstr "Pozice zvolené položky"
 
-#: propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.STRING.TEXT
-msgid  "Scrollbars"
-msgstr "Posuvníky"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.STRING.TEXT
-msgid  "Single-line"
-msgstr "Jednořádkový"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.STRING.TEXT
-msgid  "Multi-line"
-msgstr "Víceřádkový"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.STRING.TEXT
-msgid  "Multi-line with formatting"
-msgstr "Víceřádkový s formátováním"
-
-#: propctrlr/formres.src#RID_STR_SYMBOLCOLOR.STRING.TEXT
-msgid  "Symbol color"
-msgstr "Barva symbolu"
-
-#: propctrlr/formres.src#RID_STR_LINEEND_FORMAT.STRING.TEXT
-msgid  "Text lines end with"
-msgstr "Textové řádky zakončeny"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.STRING.TEXT
-msgid  "LF (Unix)"
-msgstr "LF (Unix)"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.STRING.TEXT
-msgid  "CR+LF (Windows)"
-msgstr "CR+LF (Windows)"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.STRING.TEXT
-msgid  "Both"
-msgstr "Oboje"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.STRING.TEXT
+#, fuzzy
 msgid  "SQL command"
 msgstr "SQL příkaz"
 
-#: propctrlr/formres.src#RID_STR_TOGGLE.STRING.TEXT
-msgid  "Toggle"
-msgstr "Přepnout"
-
 #: propctrlr/formres.src#RID_STR_FOCUSONCLICK.STRING.TEXT
+#, fuzzy
 msgid  "Take Focus on Click"
 msgstr "Při klepnutí získat zaměření"
 
-#: propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.STRING.TEXT
-msgid  "Hide selection"
-msgstr "Skrýt výběr"
-
-#: propctrlr/formres.src#RID_STR_VISUALEFFECT.STRING.TEXT
-msgid  "Style"
-msgstr "Styl"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.STRING.TEXT
+#, fuzzy
 msgid  "3D"
 msgstr "3D"
 
-#: propctrlr/formres.src#RID_STR_BORDERCOLOR.STRING.TEXT
-msgid  "Border color"
-msgstr "Barva ohraničení"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.STRING.TEXT
+#, fuzzy
 msgid  "Left top"
 msgstr "Vlevo nahoře"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.STRING.TEXT
+#, fuzzy
 msgid  "Left centered"
 msgstr "Vlevo uprostřed"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.STRING.TEXT
+#, fuzzy
 msgid  "Left bottom"
 msgstr "Vlevo dole"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.STRING.TEXT
+#, fuzzy
 msgid  "Right top"
 msgstr "Vpravo nahoře"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.STRING.TEXT
+#, fuzzy
 msgid  "Right centered"
 msgstr "Vpravo uprostřed"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.STRING.TEXT
+#, fuzzy
 msgid  "Right bottom"
 msgstr "Vpravo dole"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.STRING.TEXT
+#, fuzzy
 msgid  "Above left"
 msgstr "Vlevo nad"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.STRING.TEXT
-msgid  "Above centered"
-msgstr "Uprostřed nad"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.STRING.TEXT
+#, fuzzy
 msgid  "Above right"
 msgstr "Vpravo nad"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.STRING.TEXT
+#, fuzzy
 msgid  "Below left"
 msgstr "Vlevo pod"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.STRING.TEXT
-msgid  "Below centered"
-msgstr "Uprostřed pod"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.STRING.TEXT
+#, fuzzy
 msgid  "Below right"
 msgstr "Vpravo pod"
 
-#: propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.STRING.TEXT
-msgid  "Centered"
-msgstr "Uprostřed"
-
-#: propctrlr/formres.src#RID_STR_AUTOLINEBREAK.STRING.TEXT
-msgid  "Wrap text automatically"
-msgstr "Automaticky zalomit text"
-
-#: propctrlr/formres.src#RID_STR_TEXTTYPE.STRING.TEXT
-msgid  "Text type"
-msgstr "Typ textu"
-
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.STRING.TEXT
+#, fuzzy
 msgid  "Hide"
 msgstr "Skrýt"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.STRING.TEXT
+#, fuzzy
 msgid  "Show"
 msgstr "Zobrazit"
 
 #: propctrlr/formres.src#RID_STR_XML_DATA_MODEL.STRING.TEXT
+#, fuzzy
 msgid  "XML data model"
 msgstr "Datový model XML"
 
-#: propctrlr/formres.src#RID_STR_BIND_EXPRESSION.STRING.TEXT
-msgid  "Binding expression"
-msgstr "Vazební výraz"
-
-#: propctrlr/formres.src#RID_STR_XSD_REQUIRED.STRING.TEXT
-msgid  "Required"
-msgstr "Vyžadováno"
-
-#: propctrlr/formres.src#RID_STR_LIST_BINDING.STRING.TEXT
-msgid  "List entry source"
-msgstr "Zdroj seznamu"
-
-#: propctrlr/formres.src#RID_STR_XSD_RELEVANT.STRING.TEXT
-msgid  "Relevant"
-msgstr "Relevantní"
-
-#: propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.STRING.TEXT
-msgid  "Constraint"
-msgstr "Omezení"
-
-#: propctrlr/formres.src#RID_STR_XSD_CALCULATION.STRING.TEXT
-msgid  "Calculation"
-msgstr "Výpočet"
-
 #: propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Data type"
 msgstr "Datový typ"
 
-#: propctrlr/formres.src#RID_STR_XSD_WHITESPACES.STRING.TEXT
-msgid  "Whitespaces"
-msgstr "Mezery"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.STRING.TEXT
-msgid  "Preserve"
-msgstr "Zachovat"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.STRING.TEXT
-msgid  "Replace"
-msgstr "Nahradit"
-
-#: propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.STRING.TEXT
-msgid  "Collapse"
-msgstr "Skrýt všechno"
-
-#: propctrlr/formres.src#RID_STR_XSD_PATTERN.STRING.TEXT
-msgid  "Pattern"
-msgstr "Vzorek"
-
-#: propctrlr/formres.src#RID_STR_XSD_LENGTH.STRING.TEXT
-msgid  "Length"
-msgstr "Délka"
-
-#: propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.STRING.TEXT
-msgid  "Length (at least)"
-msgstr "Délka (nejméně)"
-
-#: propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.STRING.TEXT
-msgid  "Length (at most)"
-msgstr "Délka (nejvíce)"
-
-#: propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.STRING.TEXT
-msgid  "Digits (total)"
-msgstr "Číslice (celkem)"
-
 #: propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.STRING.TEXT
+#, fuzzy
 msgid  "Digits (fraction)"
 msgstr "Číslice (zlomek)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.STRING.TEXT
+#, fuzzy
 msgid  "Max. (inclusive)"
 msgstr "Max. (včetně)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.STRING.TEXT
+#, fuzzy
 msgid  "Max. (exclusive)"
 msgstr "Max. (kromě)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.STRING.TEXT
+#, fuzzy
 msgid  "Min. (inclusive)"
 msgstr "Min. (včetně)"
 
 #: propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.STRING.TEXT
+#, fuzzy
 msgid  "Min. (exclusive)"
 msgstr "Min. (kromě)"
 
-#: propctrlr/formres.src#RID_STR_SUBMISSION_ID.STRING.TEXT
-msgid  "Submission"
-msgstr "Odeslání"
-
-#: propctrlr/formres.src#RID_STR_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
-msgstr "Vazba"
-
 #: propctrlr/formres.src#RID_STR_SELECTION_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Selection type"
 msgstr "Druh výběru"
 
 #: propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.STRING.TEXT
+#, fuzzy
 msgid  "Root displayed"
 msgstr "Zobrazit kořen"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_HANDLES.STRING.TEXT
+#, fuzzy
 msgid  "Show handles"
 msgstr "Zobrazit úchyty"
 
 #: propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.STRING.TEXT
+#, fuzzy
 msgid  "Show root handles"
 msgstr "Zobrazit úchyt kořene"
 
 #: propctrlr/formres.src#RID_STR_EDITABLE.STRING.TEXT
+#, fuzzy
 msgid  "Editable"
 msgstr "Upravitelné"
 
 #: propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.STRING.TEXT
+#, fuzzy
 msgid  "Invokes stop node editing"
 msgstr "Vyvolá konec editace"
 
 #: propctrlr/formres.src#RID_STR_DECORATION.STRING.TEXT
+#, fuzzy
 msgid  "With title bar"
 msgstr "S titulní lištou"
 
 #: propctrlr/formres.src#RID_STR_NOLABEL.STRING.TEXT
+#, fuzzy
 msgid  "No Label"
 msgstr "Bez popisku"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.STRING.TEXT
+#, fuzzy
 msgid  "Keep Ratio"
 msgstr "Zachovat poměr"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.STRING.TEXT
+#, fuzzy
 msgid  "Fit to Size"
 msgstr "Přizpůsobit velikosti"
 
 #: propctrlr/formres.src#RID_STR_INPUT_REQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Input required"
 msgstr "Požadován vstup"
 
 #: propctrlr/formres.src#RID_STR_WRITING_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Text direction"
 msgstr "Směr textu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.STRING.TEXT
+#, fuzzy
 msgid  "Left-to-right"
 msgstr "Zleva doprava"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.STRING.TEXT
+#, fuzzy
 msgid  "Right-to-left"
 msgstr "Zprava doleva"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.STRING.TEXT
+#, fuzzy
 msgid  "Use superordinate object settings"
 msgstr "Použít nastavení nadřazeného objektu"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.STRING.TEXT
+#, fuzzy
 msgid  "Never"
 msgstr "Nikdy"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.STRING.TEXT
+#, fuzzy
 msgid  "When focused"
 msgstr "Při zaměření"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.STRING.TEXT
+#, fuzzy
 msgid  "Always"
 msgstr "Vždy"
 
 #: propctrlr/formres.src#RID_STR_ANCHOR_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Anchor"
 msgstr "Ukotvení"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.STRING.TEXT
+#, fuzzy
 msgid  "To Paragraph"
 msgstr "K odstavci"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "As Character"
 msgstr "Jako znak"
 
@@ -2034,418 +1266,312 @@ msgid  "To Page"
 msgstr "Ke stránce"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.STRING.TEXT
+#, fuzzy
 msgid  "To Frame"
 msgstr "K rámci"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.STRING.TEXT
+#, fuzzy
 msgid  "To Character"
 msgstr "Ke znaku"
 
 #: propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.STRING.TEXT
+#, fuzzy
 msgid  "To Cell"
 msgstr "K buňce"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.STRING.TEXT
+#, fuzzy
 msgid  "Regular"
 msgstr "Běžné"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.STRING.TEXT
+#, fuzzy
 msgid  "Bold Italic"
 msgstr "Tučná kurzíva"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.STRING.TEXT
+#, fuzzy
 msgid  "Italic"
 msgstr "Kurzíva"
 
 #: propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.STRING.TEXT
+#, fuzzy
 msgid  "Bold"
 msgstr "Tučné"
 
-#: propctrlr/formres.src#RID_STR_FONT_DEFAULT.STRING.TEXT
-msgid  "(Default)"
-msgstr "(Výchozí)"
-
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "New Data Type"
 msgstr "Nový datový typ"
 
 #: propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type a name for the new data type:"
 msgstr "Zadejte název nového datového typu:"
 
 #: propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
 msgstr "Chcete z modelu odstranit datový typ '#type#'?\nTím ovlivníte všechny ovládací prvky, které jsou navázány na tento datový typ."
 
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.STRING.TEXT
-msgid  "Button"
-msgstr "Tlačítko"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.STRING.TEXT
-msgid  "Option Button"
-msgstr "Tlačítko volby"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.STRING.TEXT
-msgid  "Check Box"
-msgstr "Zaškrtávací políčko"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-msgid  "Label Field"
-msgstr "Popisek"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.STRING.TEXT
-msgid  "Group Box"
-msgstr "Seskupení"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.STRING.TEXT
-msgid  "Text Box"
-msgstr "Textové pole"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid  "Formatted Field"
-msgstr "Formátované pole"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.STRING.TEXT
-msgid  "List Box"
-msgstr "Seznam"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.STRING.TEXT
-msgid  "Combo Box"
-msgstr "Kombinované pole"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.STRING.TEXT
-msgid  "Image Button"
-msgstr "Obrázkové tlačítko"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.STRING.TEXT
-msgid  "Hidden Control"
-msgstr "Skrytý ovládací prvek"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.STRING.TEXT
-msgid  "Control (unknown type)"
-msgstr "Ovládací prvek (neznámý)"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
-msgstr "Ovládací pole obrázku"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.STRING.TEXT
-msgid  "File Selection"
-msgstr "Výběr souboru"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.STRING.TEXT
-msgid  "Date Field"
-msgstr "Pole pro datum"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.STRING.TEXT
-msgid  "Time Field"
-msgstr "Pole pro čas"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.STRING.TEXT
-msgid  "Numeric Field"
-msgstr "Číselné pole"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.STRING.TEXT
-msgid  "Currency Field"
-msgstr "Měnové pole"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.STRING.TEXT
-msgid  "Pattern Field"
-msgstr "Pole vzorku"
-
-#: propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.STRING.TEXT
-msgid  "Table Control "
-msgstr "Prvek tabulky "
-
-#: propctrlr/propres.src#RID_STR_STANDARD.STRING.TEXT
-msgid  "Default"
-msgstr "Výchozí"
-
-#: propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
-msgid  "General"
-msgstr "Obecné"
-
-#: propctrlr/propres.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
-msgid  "Data"
-msgstr "Data"
-
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.STRING.TEXT
+#, fuzzy
 msgid  "No"
 msgstr "Ne"
 
 #: propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
 msgstr "Ano"
 
-#: propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.STRING.TEXT
-msgid  "Help"
-msgstr "Nápověda"
-
 #: propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.STRING.TEXT
+#, fuzzy
 msgid  "<Embedded-Image>"
 msgstr "<Embedded-Image>"
 
-#: propctrlr/propres.src#RID_STR_TEXT_FORMAT.STRING.TEXT
-msgid  "Text"
-msgstr "Text"
-
 #: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
 msgstr "Toto jsou ovládací pole, které mohou být použity jako pole popisků pro $control_class$ $control_name$."
 
-#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CHECKBOX.TEXT
-msgid  "~No assignment"
-msgstr "Bez přiřazení"
-
-#: propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CANCELBUTTON.TEXT
-msgid  "Label Field Selection"
-msgstr "Výběr pole pro popisek"
-
-#: propctrlr/selectlabeldialog.src#RID_STR_FORMS.STRING.TEXT
-msgid  "Forms"
-msgstr "Formuláře"
-
 #: propctrlr/taborder.src#RID_DLG_TABORDER.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Tab Order"
 msgstr "Pořadí aktivace"
 
-#: propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FIXEDTEXT.TEXT
-msgid  "Controls"
-msgstr "Ovládací prvky"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PUSHBUTTON.TEXT
-msgid  "Move Up"
-msgstr "Přesunout nahoru"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PUSHBUTTON.TEXT
-msgid  "Move Down"
-msgstr "Přesunout dolů"
-
-#: propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PUSHBUTTON.TEXT
-msgid  "Automatic Sort"
-msgstr "Automaticky seřadit"
-
 #: scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set"
 msgstr "Nastavit"
 
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.STRING.TEXT
-msgid  "Linear ascending"
-msgstr "Lineárně stoupající"
-
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.STRING.TEXT
-msgid  "Linear descending"
-msgstr "Lineárně klesající"
-
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.STRING.TEXT
-msgid  "Original values"
-msgstr "Původní hodnoty"
-
-#: scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.STRING.TEXT
-msgid  "Exponential increasing"
-msgstr "Exponenciálně rostoucí"
-
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PUSHBUTTON.TEXT
-msgid  "About\n Dev~ice"
-msgstr "O\n zařízení"
-
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Create\nPreview"
 msgstr "Vytvořit\nnáhled"
 
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FIXEDLINE.TEXT
-msgid  "Preview"
-msgstr "Náhled"
-
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FIXEDLINE.TEXT
-msgid  "Scan area"
-msgstr "Skenovat oblast"
-
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Left:"
 msgstr "Vlevo:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Top:"
 msgstr "Nahoře:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Right:"
 msgstr "Vpravo:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bottom:"
 msgstr "Dole:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Device used:"
 msgstr "Použité zařízení:"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Resolution [~DPI]"
 msgstr "Rozlišení [DPI]"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Show advanced options"
 msgstr "Zobrazit pokročilé volby"
 
-#: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FIXEDTEXT.TEXT
-msgid  "Options:"
-msgstr "Volby:"
-
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Vector element"
 msgstr "Vektorový element"
 
 #: scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set"
 msgstr "Nastavit"
 
-#: scanner/sanedlg.src#RID_SANE_DIALOG.BITMAP.TEXT
-msgid  "Scanner"
-msgstr "Skener"
-
 #: scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.STRING.TEXT
+#, fuzzy
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
 msgstr "Zařízení: %s\nDodavatel: %s\nModel: %s\nTyp: %s"
 
 #: scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.STRING.TEXT
+#, fuzzy
 msgid  "An error occurred while scanning."
 msgstr "Došlo k chybě během skenování."
 
 #: scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.STRING.TEXT
+#, fuzzy
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
 msgstr "Toto zařízení nenabízí možnost náhledu, tudíž bude pro náhled použito normální skenování, což může zabrat delší dobu."
 
 #: scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.STRING.TEXT
+#, fuzzy
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
 msgstr "Nelze inicializovat rozhraní SANE. Skenování není dostupné."
 
 #: update/check/Addons.xcu#ADDONS.ADDONUI.OFFICEHELP.UPDATECHECKJOB.TITLE
+#, fuzzy
 msgid  "Check for ~Updates..."
 msgstr "Zkontrolovat aktualizace..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.STRING.TEXT
+#, fuzzy
 msgid  "Checking..."
 msgstr "Kontrola..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.STRING.TEXT
+#, fuzzy
 msgid  "Checking for an update failed."
 msgstr "Selhala kontrola aktualizací."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION je aktuální."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
 msgstr "K dispozici je %PRODUCTNAME %NEXTVERSION.\n\nNainstalovaná verze je %PRODUCTNAME %PRODUCTVERSION.\n\nPoznámka: Před stažením aktualizace se ujistěte, zda máte dostatečná oprávnění k instalaci.\nMůže být vyžadováno heslo, obvykle heslo administrátora nebo správce."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Check for Updates"
 msgstr "Kontrola aktualizací"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.STRING.TEXT
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
 msgstr "Stahování %PRODUCTNAME %NEXTVERSION pozastaveno na..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.STRING.TEXT
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "Stahování %PRODUCTNAME %NEXTVERSION přerušeno na..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.STRING.TEXT
+#, fuzzy
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
 msgstr "Adresář pro uložení staženého souboru: %DOWNLOAD_PATH.\n\nAdresář můžete změnit v Nástroje - Volby - %PRODUCTNAME - Online aktualizace."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.STRING.TEXT
+#, fuzzy
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "Soubor %FILE_NAME byl stažen do adresáře %DOWNLOAD_PATH."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.STRING.TEXT
+#, fuzzy
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
 msgstr "Automatické stažení aktualizace momentálně není k dispozici.\n\nKlepnutím na 'Stáhnout...' ručně stáhnete %PRODUCTNAME %NEXTVERSION z webové stránky."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
 msgstr "Stahuji %PRODUCTNAME %NEXTVERSION..."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.STRING.TEXT
+#, fuzzy
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
 msgstr "Stahování %PRODUCTNAME %NEXTVERSION dokončeno. Připraveno k instalaci."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to cancel the download?"
 msgstr "Opravdu chcete stahování zrušit?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.STRING.TEXT
+#, fuzzy
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
 msgstr "Před instalací aktualizace je třeba zavřít %PRODUCTNAME %PRODUCTVERSION. Chcete nyní nainstalovat aktualizaci?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.STRING.TEXT
+#, fuzzy
 msgid  "Install ~now"
 msgstr "Instalovat nyní"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.STRING.TEXT
+#, fuzzy
 msgid  "Install ~later"
 msgstr "Instalovat později"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
 msgstr "Nelze spustit instalátor, spusťte prosím ručně soubor %FILE_NAME v adresáři %DOWNLOAD_PATH."
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
 msgstr "Soubor stejného jména již existuje! Chcete přepsat existující soubor?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.STRING.TEXT
+#, fuzzy
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
 msgstr "Soubor pojmenovaný  '%FILENAME' již v adresáři '%DOWNLOAD_PATH' existuje! Chcete pokračovat ve stahování nebo soubor odstranit a stáhnout znovu?"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.STRING.TEXT
+#, fuzzy
 msgid  "Reload File"
 msgstr "Stáhnout znovu"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.STRING.TEXT
+#, fuzzy
 msgid  "Continue"
 msgstr "Pokračovat"
 
 #: update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.STRING.TEXT
+#, fuzzy
 msgid  "%PERCENT%"
 msgstr "%PERCENT%"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "Status"
 msgstr "Stav"
 
 #: update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.STRING.TEXT
+#, fuzzy
 msgid  "Description"
 msgstr "Popis"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close"
 msgstr "Zavřít"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.STRING.TEXT
+#, fuzzy
 msgid  "~Download"
 msgstr "Stáhnout"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.STRING.TEXT
+#, fuzzy
 msgid  "~Install"
 msgstr "Instalovat"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.STRING.TEXT
+#, fuzzy
 msgid  "~Pause"
 msgstr "Pozastavit"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.STRING.TEXT
+#, fuzzy
 msgid  "~Resume"
 msgstr "Pokračovat"
 
 #: update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
 msgstr "Zrušit"
 
@@ -2455,6 +1581,7 @@ msgid  "%PRODUCTNAME update available"
 msgstr "Nalezena aktualizace %PRODUCTNAME"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Click here to start the download."
 msgstr "Klepněte zde pro stažení."
 
@@ -2464,33 +1591,41 @@ msgid  "Click here for more information."
 msgstr "Klepněte zde pro více informací."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.STRING.TEXT
+#, fuzzy
 msgid  "Download of update begins."
 msgstr "Začíná stahování aktualizace."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Download of update in progress"
 msgstr "Probíhá stahování aktualizace."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.STRING.TEXT
+#, fuzzy
 msgid  "Download of update paused"
 msgstr "Stahování aktualizace pozastaveno"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.STRING.TEXT
+#, fuzzy
 msgid  "Click here to resume."
 msgstr "Klepněte zde pro pokračování."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Download of update stalled"
 msgstr "Stahování aktualizace přerušeno"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Download of update completed"
 msgstr "Stahování aktualizace dokončeno"
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Click here to start the installation."
 msgstr "Klepněte zde pro spuštění instalace."
 
 #: update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.STRING.TEXT
+#, fuzzy
 msgid  "Updates for extensions available"
 msgstr "Aktualizace pro rozšíření jsou k dispozici"

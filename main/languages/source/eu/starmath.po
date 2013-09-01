@@ -31,14 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.ITEM1.ITEMLIST.ITEM
-msgid  "Greek"
-msgstr "Grekoa"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.ITEM2.ITEMLIST.ITEM
-msgid  "Special"
-msgstr "Berezia"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM1.ITEMLIST.ITEM
 msgid  "alpha"
 msgstr "alfa"
@@ -66,10 +58,6 @@ msgstr "GAMMA"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM7.ITEMLIST.ITEM
 msgid  "delta"
 msgstr "delta"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM8.ITEMLIST.ITEM
-msgid  "DELTA"
-msgstr "DELTA"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM9.ITEMLIST.ITEM
 msgid  "epsilon"
@@ -103,10 +91,6 @@ msgstr "teta"
 msgid  "THETA"
 msgstr "TETA"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM17.ITEMLIST.ITEM
-msgid  "iota"
-msgstr "iota"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM18.ITEMLIST.ITEM
 msgid  "IOTA"
 msgstr "IOTA"
@@ -127,49 +111,25 @@ msgstr "lambda"
 msgid  "LAMBDA"
 msgstr "LAMBDA"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM23.ITEMLIST.ITEM
-msgid  "mu"
-msgstr "mu"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM24.ITEMLIST.ITEM
 msgid  "MU"
 msgstr "MU"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM25.ITEMLIST.ITEM
-msgid  "nu"
-msgstr "nu"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM26.ITEMLIST.ITEM
 msgid  "NU"
 msgstr "NU"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM27.ITEMLIST.ITEM
-msgid  "xi"
-msgstr "xi"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM28.ITEMLIST.ITEM
 msgid  "XI"
 msgstr "XI"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM29.ITEMLIST.ITEM
-msgid  "omicron"
-msgstr "omikron"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM30.ITEMLIST.ITEM
 msgid  "OMICRON"
 msgstr "OMIKRON"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM31.ITEMLIST.ITEM
-msgid  "pi"
-msgstr "pi"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM32.ITEMLIST.ITEM
 msgid  "PI"
 msgstr "PI"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM33.ITEMLIST.ITEM
-msgid  "rho"
-msgstr "ro"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM34.ITEMLIST.ITEM
 msgid  "RHO"
@@ -190,10 +150,6 @@ msgstr "tau"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM38.ITEMLIST.ITEM
 msgid  "TAU"
 msgstr "TAU"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM39.ITEMLIST.ITEM
-msgid  "upsilon"
-msgstr "upsilon"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM40.ITEMLIST.ITEM
 msgid  "UPSILON"
@@ -230,30 +186,6 @@ msgstr "omega"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM48.ITEMLIST.ITEM
 msgid  "OMEGA"
 msgstr "OMEGA"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM49.ITEMLIST.ITEM
-msgid  "varepsilon"
-msgstr "varepsilon"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM50.ITEMLIST.ITEM
-msgid  "vartheta"
-msgstr "varteta"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM51.ITEMLIST.ITEM
-msgid  "varpi"
-msgstr "varpi"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM52.ITEMLIST.ITEM
-msgid  "varrho"
-msgstr "varro"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM53.ITEMLIST.ITEM
-msgid  "varsigma"
-msgstr "varsigma"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM54.ITEMLIST.ITEM
-msgid  "varphi"
-msgstr "varfi"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM55.ITEMLIST.ITEM
 msgid  "element"
@@ -1023,61 +955,13 @@ msgstr "Puntuak gora"
 msgid  "Dots to Bottom"
 msgstr "Puntuak behera"
 
-#: commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MENUITEM.TEXT
-msgid  "~Unary/Binary Operators"
-msgstr "~Eragile unarioak/bitarrak"
-
-#: commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MENUITEM.TEXT
-msgid  "~Relations"
-msgstr "~Erlazioak"
-
-#: commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MENUITEM.TEXT
-msgid  "~Set Operations"
-msgstr "~Multzo-eragiketak"
-
-#: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MENUITEM.TEXT
-msgid  "~Functions"
-msgstr "~Funtzioak"
-
 #: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MENUITEM.TEXT
 msgid  "More"
 msgstr "Gehiago"
 
-#: commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MENUITEM.TEXT
-msgid  "O~perators"
-msgstr "~Eragileak"
-
-#: commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MENUITEM.TEXT
-msgid  "~Attributes"
-msgstr "~Atributuak"
-
-#: commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MENUITEM.TEXT
-msgid  "~Brackets"
-msgstr "~Parentesiak"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MENUITEM.TEXT
-msgid  "For~mats"
-msgstr "For~matuak"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MENUITEM.TEXT
-msgid  "New Line"
-msgstr "Marra berria"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MENUITEM.TEXT
-msgid  "Small Gap"
-msgstr "Tarte txikia"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MENUITEM.TEXT
-msgid  "Gap"
-msgstr "Tartea"
-
 #: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MENUITEM.TEXT
 msgid  "nospace {...}"
 msgstr "Zuriunerik ez {...}"
-
-#: commands.src#RID_COMMANDMENU.RID_MISC_MENU.MENUITEM.TEXT
-msgid  "~Others"
-msgstr "~Bestelakoak"
 
 #: smres.src#RID_FONTDIALOG.MODALDIALOG.TEXT
 msgid  "Fonts"
@@ -1087,81 +971,17 @@ msgstr "Letra-tipoak"
 msgid  "~Font"
 msgstr "Letra-~tipoa"
 
-#: smres.src#RID_FONTDIALOG.1.CHECKBOX.TEXT
-msgid  "~Bold"
-msgstr "~Lodia"
-
-#: smres.src#RID_FONTDIALOG.2.CHECKBOX.TEXT
-msgid  "~Italic"
-msgstr "~Etzana"
-
-#: smres.src#RID_FONTDIALOG.2.FIXEDTEXT.TEXT
-msgid  "Attributes"
-msgstr "Atributuak"
-
-#: smres.src#RID_FONTSIZEDIALOG.MODALDIALOG.TEXT
-msgid  "Font Sizes"
-msgstr "Letra-tamainak"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "Base ~size"
-msgstr "~Oinarri-tamaina"
-
 #: smres.src#RID_FONTSIZEDIALOG.4.FIXEDTEXT.TEXT
 msgid  "~Text"
 msgstr "~Testua"
-
-#: smres.src#RID_FONTSIZEDIALOG.5.FIXEDTEXT.TEXT
-msgid  "~Indexes"
-msgstr "~Indizeak"
 
 #: smres.src#RID_FONTSIZEDIALOG.6.FIXEDTEXT.TEXT
 msgid  "~Functions"
 msgstr "~Funtzioak"
 
-#: smres.src#RID_FONTSIZEDIALOG.7.FIXEDTEXT.TEXT
-msgid  "~Operators"
-msgstr "~Eragileak"
-
-#: smres.src#RID_FONTSIZEDIALOG.8.FIXEDTEXT.TEXT
-msgid  "~Limits"
-msgstr "~Mugak"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Relative sizes"
-msgstr "Tamaina erlatiboak"
-
 #: smres.src#RID_FONTSIZEDIALOG.1.PUSHBUTTON.TEXT
 msgid  "~Default"
 msgstr "~Lehenetsia"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Formula fonts"
-msgstr "Formularen letra-tipoak"
-
-#: smres.src#RID_FONTTYPEDIALOG.2.FIXEDLINE.TEXT
-msgid  "Custom fonts"
-msgstr "Letra-tipo pertsonalak"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Variables"
-msgstr "~Aldagaiak"
-
-#: smres.src#RID_FONTTYPEDIALOG.3.FIXEDTEXT.TEXT
-msgid  "~Numbers"
-msgstr "~Zenbakiak"
-
-#: smres.src#RID_FONTTYPEDIALOG.5.FIXEDTEXT.TEXT
-msgid  "~Serif"
-msgstr "~Serif"
-
-#: smres.src#RID_FONTTYPEDIALOG.6.FIXEDTEXT.TEXT
-msgid  "S~ans"
-msgstr "S~ans"
-
-#: smres.src#RID_FONTTYPEDIALOG.7.FIXEDTEXT.TEXT
-msgid  "F~ixed"
-msgstr "~Finkoa"
 
 #: smres.src#RID_FONTTYPEDIALOG.1.MENUBUTTON.TEXT
 msgid  "~Modify"
@@ -1171,21 +991,9 @@ msgstr "~Aldatu"
 msgid  "Spacing"
 msgstr "Tartea"
 
-#: smres.src#RID_DISTANCEDIALOG.1.METRICFIELD.CUSTOMUNITTEXT
-msgid  "%"
-msgstr "%"
-
-#: smres.src#RID_DISTANCEDIALOG.1.CHECKBOX.TEXT
-msgid  "Scale all brackets"
-msgstr "Eskalatu parentesi guztiak"
-
 #: smres.src#RID_DISTANCEDIALOG.1.MENUBUTTON.TEXT
 msgid  "~Category"
 msgstr "~Kategoria"
-
-#: smres.src#RID_DISTANCEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Category"
-msgstr "Kategoria"
 
 #: smres.src#RID_DISTANCEDIALOG.1.2.STRING.TEXT
 msgid  "~Spacing"
@@ -1203,81 +1011,29 @@ msgstr "~Erroko tartea"
 msgid  "Indexes"
 msgstr "Indizeak"
 
-#: smres.src#RID_DISTANCEDIALOG.2.2.STRING.TEXT
-msgid  "~Superscript"
-msgstr "~Goi-indizea"
-
-#: smres.src#RID_DISTANCEDIALOG.2.3.STRING.TEXT
-msgid  "S~ubscript"
-msgstr "A~zpindizea"
-
 #: smres.src#RID_DISTANCEDIALOG.3.1.STRING.TEXT
 msgid  "Fractions"
 msgstr "Frakzioak"
-
-#: smres.src#RID_DISTANCEDIALOG.3.2.STRING.TEXT
-msgid  "~Numerator"
-msgstr "~Zenbakitzailea"
-
-#: smres.src#RID_DISTANCEDIALOG.3.3.STRING.TEXT
-msgid  "~Denominator"
-msgstr "~Izendatzailea"
-
-#: smres.src#RID_DISTANCEDIALOG.4.1.STRING.TEXT
-msgid  "Fraction bar"
-msgstr "Frakzio-barra"
 
 #: smres.src#RID_DISTANCEDIALOG.4.2.STRING.TEXT
 msgid  "~Excess length"
 msgstr "~Luzeegia"
 
-#: smres.src#RID_DISTANCEDIALOG.4.3.STRING.TEXT
-msgid  "~Weight"
-msgstr "~Lodiera"
-
 #: smres.src#RID_DISTANCEDIALOG.5.1.STRING.TEXT
 msgid  "Limits"
 msgstr "Mugak"
-
-#: smres.src#RID_DISTANCEDIALOG.5.2.STRING.TEXT
-msgid  "~Upper limit"
-msgstr "~Goiko muga"
-
-#: smres.src#RID_DISTANCEDIALOG.5.3.STRING.TEXT
-msgid  "~Lower limit"
-msgstr "~Beheko muga"
 
 #: smres.src#RID_DISTANCEDIALOG.6.1.STRING.TEXT
 msgid  "Brackets"
 msgstr "Parentesiak"
 
-#: smres.src#RID_DISTANCEDIALOG.6.2.STRING.TEXT
-msgid  "~Excess size (left/right)"
-msgstr "~Handiegia (ezker/eskuin)"
-
 #: smres.src#RID_DISTANCEDIALOG.6.5.STRING.TEXT
 msgid  "~Excess size"
 msgstr "~Tamaina handiegia"
 
-#: smres.src#RID_DISTANCEDIALOG.7.1.STRING.TEXT
-msgid  "Matrix"
-msgstr "Matrizea"
-
-#: smres.src#RID_DISTANCEDIALOG.7.3.STRING.TEXT
-msgid  "~Column spacing"
-msgstr "~Zutabe arteko tartea"
-
 #: smres.src#RID_DISTANCEDIALOG.8.1.STRING.TEXT
 msgid  "Symbols"
 msgstr "Ikurrak"
-
-#: smres.src#RID_DISTANCEDIALOG.8.2.STRING.TEXT
-msgid  "~Primary height"
-msgstr "~Lehen mailako altuera"
-
-#: smres.src#RID_DISTANCEDIALOG.8.3.STRING.TEXT
-msgid  "~Minimum spacing"
-msgstr "~Gutxieneko tartea"
 
 #: smres.src#RID_DISTANCEDIALOG.9.1.STRING.TEXT
 msgid  "Operators"
@@ -1295,65 +1051,21 @@ msgstr "E~zkerrean"
 msgid  "~Right"
 msgstr "E~skuinean"
 
-#: smres.src#RID_DISTANCEDIALOG.10.4.STRING.TEXT
-msgid  "~Top"
-msgstr "~Goian"
-
-#: smres.src#RID_DISTANCEDIALOG.10.5.STRING.TEXT
-msgid  "~Bottom"
-msgstr "~Behean"
-
-#: smres.src#RID_ALIGNDIALOG.MODALDIALOG.TEXT
-msgid  "Alignment"
-msgstr "Lerrokatzea"
-
-#: smres.src#RID_ALIGNDIALOG.2.RADIOBUTTON.TEXT
-msgid  "~Centered"
-msgstr "~Erdian"
-
-#: smres.src#RID_ALIGNDIALOG.1.FIXEDLINE.TEXT
-msgid  "Horizontal"
-msgstr "Horizontala"
-
-#: smres.src#RID_PRINTOPTIONPAGE.TABPAGE.TEXT
-msgid  "Formula Options:Settings"
-msgstr "Formula-aukerak:ezarpenak"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.FIXEDLINE.TEXT
-msgid  "Print options"
-msgstr "Inprimatzeko aukerak"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.CHECKBOX.TEXT
-msgid  "~Title row"
-msgstr "~Tituluaren errenkada"
-
 #: smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CHECKBOX.TEXT
 msgid  "~Formula text"
 msgstr "Dokumentuaren izena inprimatuko den edo ez zehazten du."
 
-#: smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CHECKBOX.TEXT
-msgid  "B~order"
-msgstr "~Ertza"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINT_FORMAT.FIXEDLINE.TEXT
-msgid  "Print format"
-msgstr "Inprimatzeko formatua"
-
 #: smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RADIOBUTTON.TEXT
 msgid  "O~riginal size"
-msgstr "J~atorrizko tamaina"
+msgstr "E~rtzak"
 
 #: smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RADIOBUTTON.TEXT
 msgid  "Fit to ~page"
-msgstr "Doitu ~orrialdeari"
+msgstr "Ertz mehe bat aplikatzen dio formularen areari inprimatzean."
 
 #: smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RADIOBUTTON.TEXT
 msgid  "~Scaling"
-msgstr "~Eskala"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FIXEDLINE.TEXT
-msgid  "Miscellaneous options"
-msgstr "Hainbat aukera"
+msgstr "Tamaina"
 
 #: smres.src#RID_PRINTOPTIONPAGE.CB_IGNORE_SPACING.CHECKBOX.TEXT
 msgid  "Ig~nore ~~ and ` at the end of the line"
@@ -1363,73 +1075,21 @@ msgstr "~Ez ikusi egin ~~ eta ` ikurrei lerro amaieran"
 msgid  "Embed only used symbols (smaller file size)"
 msgstr "Sartu bakarrik erabilitako ikurrak (fitxategi txikiagoa)"
 
-#: smres.src#RID_SYMBOLDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Symbol set"
-msgstr "~Ikur multzoa"
-
 #: smres.src#RID_SYMBOLDIALOG.2.FIXEDTEXT.TEXT
 msgid  "Unknown"
 msgstr "Ezezaguna"
-
-#: smres.src#RID_SYMBOLDIALOG.2.PUSHBUTTON.TEXT
-msgid  "~Insert"
-msgstr "T~xertatu"
-
-#: smres.src#RID_SYMBOLDIALOG.3.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "It~xi"
-
-#: smres.src#RID_SYMBOLDIALOG.1.PUSHBUTTON.TEXT
-msgid  "~Edit..."
-msgstr "~Editatu..."
-
-#: smres.src#RID_SYMDEFINEDIALOG.MODALDIALOG.TEXT
-msgid  "Edit Symbols"
-msgstr "Editatu ikurrak"
-
-#: smres.src#RID_SYMDEFINEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Old symbol"
-msgstr "~Ikur zaharra"
-
-#: smres.src#RID_SYMDEFINEDIALOG.2.FIXEDTEXT.TEXT
-msgid  "O~ld symbol set"
-msgstr "Ikur ~zaharren multzoa"
-
-#: smres.src#RID_SYMDEFINEDIALOG.9.FIXEDTEXT.TEXT
-msgid  "~Symbol"
-msgstr "~Ikurra"
-
-#: smres.src#RID_SYMDEFINEDIALOG.10.FIXEDTEXT.TEXT
-msgid  "Symbol s~et"
-msgstr "Ikur-m~ultzoa"
-
-#: smres.src#RID_SYMDEFINEDIALOG.FT_FONTS_SUBSET.FIXEDTEXT.TEXT
-msgid  "~Subset"
-msgstr "~Azpimultzoa"
-
-#: smres.src#RID_SYMDEFINEDIALOG.4.FIXEDTEXT.TEXT
-msgid  "~Typeface"
-msgstr "~Estiloa"
 
 #: smres.src#RID_SYMDEFINEDIALOG.1.PUSHBUTTON.TEXT
 msgid  "~Add"
 msgstr "Ba~tuketa"
 
-#: smres.src#RID_SYMDEFINEDIALOG.3.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "E~zabatu"
+#: smres.src#RID_NOMATHTYPEFACEWARNING.WARNINGBOX.MESSAGE
+msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr "'StarMath' letra-tipoa ez dago instalaturik.\nLetra-tipo hori gabe %PRODUCTNAME Math ez da behar bezala ibiliko.\nInstalatu letra-tipo hori eta berrabiarazi %PRODUCTNAME Math."
 
-#: smres.src#RID_FONTREGULAR.STRING.TEXT
-msgid  "Standard"
-msgstr "Estandarra"
-
-#: smres.src#RID_FONTITALIC.STRING.TEXT
-msgid  "Italic"
-msgstr "Etzana"
-
-#: smres.src#RID_FONTBOLD.STRING.TEXT
-msgid  "Bold"
-msgstr "Lodia"
+#: smres.src#RID_DEFAULTSAVEQUERY.QUERYBOX.MESSAGE
+msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
+msgstr "Aldaketak lehenespen gisa gorde behar dira?\n\nAldaketa horiek formula berri guztiei aplikatuko zaizkie."
 
 #: smres.src#RID_VIEWMENU.SID_VIEW050.MENUITEM.TEXT
 msgid  "~View 50%"
@@ -1451,153 +1111,17 @@ msgstr "~Handiagotu"
 msgid  "Zoom ~Out"
 msgstr "~Txikiagotu"
 
-#: smres.src#RID_VIEWMENU.SID_ADJUST.MENUITEM.TEXT
-msgid  "~Display All"
-msgstr "~Bistaratu dena"
-
-#: smres.src#RID_VIEWMENU.SID_DRAW.MENUITEM.TEXT
-msgid  "U~pdate"
-msgstr "E~guneratu"
-
-#: smres.src#RID_DISTANCEMENU.4.MENUITEM.TEXT
-msgid  "Fraction Bars"
-msgstr "Frakzio-barrak"
-
-#: smres.src#RID_DISTANCEMENU.7.MENUITEM.TEXT
-msgid  "Matrices"
-msgstr "Matrizeak"
-
-#: smres.src#RID_FONTMENU.1.MENUITEM.TEXT
-msgid  "Variables"
-msgstr "Aldagaiak"
-
-#: smres.src#RID_FONTMENU.2.MENUITEM.TEXT
-msgid  "Functions"
-msgstr "Funtzioak"
-
-#: smres.src#RID_FONTMENU.3.MENUITEM.TEXT
-msgid  "Numbers"
-msgstr "Zenbakiak"
-
-#: smres.src#RID_FONTMENU.4.MENUITEM.TEXT
-msgid  "Text"
-msgstr "Testua"
-
-#: smres.src#RID_FONTMENU.5.MENUITEM.TEXT
-msgid  "Serif"
-msgstr "Serif"
-
-#: smres.src#RID_FONTMENU.6.MENUITEM.TEXT
-msgid  "Sans"
-msgstr "Sans"
-
-#: smres.src#RID_FONTMENU.7.MENUITEM.TEXT
-msgid  "Fixed"
-msgstr "Finkoa"
-
-#: smres.src#CMDBOXWINDOW_TEXT.#DEFINE.TEXT
-msgid  "Commands"
-msgstr "Komandoak"
-
-#: smres.src#RID_DOCUMENTSTR.STRING.TEXT
-msgid  "Formula"
-msgstr "Formula"
-
-#: smres.src#STR_STATSTR_READING.STRING.TEXT
-msgid  "Loading document..."
-msgstr "Dokumentua kargatzen..."
-
-#: smres.src#STR_STATSTR_WRITING.STRING.TEXT
-msgid  "Saving document..."
-msgstr "Dokumentua gordetzen..."
-
-#: smres.src#STR_MATH_DOCUMENT_FULLTYPE_CURRENT.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Formula"
-msgstr "%PRODUCTNAME %PRODUCTVERSION formula"
-
-#: smres.src#RID_SYMBOLFILESSTR.STRING.TEXT
-msgid  "Symbol files (*.sms)"
-msgstr "Ikur-fitxategiak (*.sms)"
-
-#: smres.src#RID_ALLFILESSTR.STRING.TEXT
-msgid  "All Files (*.*)"
-msgstr "Fitxategi guztiak (*.*)"
-
 #: smres.src#RID_ERR_IDENT.STRING.TEXT
 msgid  "ERROR : "
 msgstr "ERROREA : "
-
-#: smres.src#RID_ERR_UNKOWN.STRING.TEXT
-msgid  "Unknown error occurred"
-msgstr "Errore ezezaguna gertatu da"
 
 #: smres.src#RID_ERR_UNEXPECTEDCHARACTER.STRING.TEXT
 msgid  "Unexpected character"
 msgstr "Ustekabeko karakterea"
 
-#: smres.src#RID_ERR_OVERFLOW.STRING.TEXT
-msgid  "Formula entry too complex"
-msgstr "Formula-sarrera konplexuegia"
-
-#: smres.src#RID_ERR_LGROUPEXPECTED.STRING.TEXT
-msgid  "'{' expected"
-msgstr "'{' espero dena"
-
-#: smres.src#RID_ERR_RGROUPEXPECTED.STRING.TEXT
-msgid  "'}' expected"
-msgstr "'}' espero zen"
-
-#: smres.src#RID_ERR_LBRACEEXPECTED.STRING.TEXT
-msgid  "'(' expected"
-msgstr "'(' espero zen"
-
-#: smres.src#RID_ERR_RBRACEEXPECTED.STRING.TEXT
-msgid  "')' expected"
-msgstr "')' espero zen"
-
-#: smres.src#RID_ERR_FUNCEXPECTED.STRING.TEXT
-msgid  "Function expected"
-msgstr "Funtzioa espero zen"
-
-#: smres.src#RID_ERR_UNOPEREXPECTED.STRING.TEXT
-msgid  "Unary operator expected"
-msgstr "Eragile unarioa espero zen"
-
-#: smres.src#RID_ERR_BINOPEREXPECTED.STRING.TEXT
-msgid  "Binary operator expected"
-msgstr "Eragile bitarra espero zen"
-
-#: smres.src#RID_ERR_SYMBOLEXPECTED.STRING.TEXT
-msgid  "Symbol expected"
-msgstr "Ikurra espero zen"
-
-#: smres.src#RID_ERR_IDENTEXPECTED.STRING.TEXT
-msgid  "Identifier expected"
-msgstr "Identifikadorea espero zen"
-
-#: smres.src#RID_ERR_POUNDEXPECTED.STRING.TEXT
-msgid  "'#' expected"
-msgstr "'#' espero zen"
-
-#: smres.src#RID_ERR_COLOREXPECTED.STRING.TEXT
-msgid  "Color required"
-msgstr "Kolorea behar da"
-
-#: smres.src#RID_ERR_LPARENTEXPECTED.STRING.TEXT
-msgid  "Left limit expected"
-msgstr "Ezker-muga espero zen"
-
-#: smres.src#RID_ERR_RPARENTEXPECTED.STRING.TEXT
-msgid  "Right limit expected"
-msgstr "Eskuin-muga espero zen"
-
 #: smres.src#RID_ERR_RIGHTEXPECTED.STRING.TEXT
 msgid  "'RIGHT' expected"
 msgstr "'RIGHT' espero zen"
-
-#: smres.src#RID_MATH_TOOLBOX.STRING.TEXT
-msgid  "Main Toolbar"
-msgstr "Tresna-barra nagusia"
 
 #: smres.src#RID_PRINTUIOPTIONS.ITEM1.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME %s"

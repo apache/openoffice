@@ -49,7 +49,7 @@ msgstr "Диаграма за справка на %productname% %formatversion%"
 
 #: ../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu#EXTENDEDCOLORSCHEME.ENTRYNAMES.SUNREPORTBUILDER.DISPLAYNAME
 msgid  "Apache OpenOffice Report Builder"
-msgstr "Oracle Report Builder"
+msgstr ""
 
 #: ../registry/data/org/openoffice/Office/ExtendedColorScheme.xcu#EXTENDEDCOLORSCHEME.ENTRYNAMES.SUNREPORTBUILDER.ENTRIES.REPORTHEADER.DISPLAYNAME
 msgid  "Report Header"
@@ -95,6 +95,21 @@ msgstr "Припокрит елемент"
 msgid  "Text Box Bound Content"
 msgstr "Обвързано съдържание на текстово поле"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:COLUMNHEADERFOOTER.LABEL
+#, fuzzy
+msgid  "Column Header/Footer"
+msgstr "~Колонтитули на колона"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:CONDITIONALFORMATTING.LABEL
+#, fuzzy
+msgid  "Conditional Formatting..."
+msgstr "~Условно форматиране..."
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DBSORTINGANDGROUPING.LABEL
+#, fuzzy
+msgid  "Sorting and Grouping"
+msgstr "~Сортиране и групиране"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:DISTRIBUTION.LABEL
 msgid  "Distribution..."
 msgstr "Разпределяне..."
@@ -110,6 +125,11 @@ msgstr "Побиране в най-голямата височина"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:GREATESTWIDTH.LABEL
 msgid  "Fit to greatest width"
 msgstr "Побиране в най-голямата ширина"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:INSERTDATETIMEFIELD.LABEL
+#, fuzzy
+msgid  "Date and Time..."
+msgstr "Дата и ~час..."
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:PAGEHEADERFOOTER.LABEL
 msgid  "Page Header/Footer"
@@ -163,9 +183,19 @@ msgstr "Свиване от горе"
 msgid  "Select all Formatted Fields"
 msgstr "Избор на всички форматирани полета"
 
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLINSECTION.LABEL
+#, fuzzy
+msgid  "Select Objects in Section"
+msgstr "~Избиране на обектите в раздел"
+
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTALLLABELS.LABEL
 msgid  "Select all Labels"
 msgstr "Избор на всички етикети"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SELECTREPORT.LABEL
+#, fuzzy
+msgid  "Select Report"
+msgstr "~Избор на справка"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SMALLESTHEIGHT.LABEL
 msgid  "Fit to smallest height"
@@ -178,6 +208,11 @@ msgstr "Побиране в най-малката ширина"
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SPREADSHEET.LABEL
 msgid  "Spreadsheet Document"
 msgstr "Електронна таблица"
+
+#: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:SUBREPORTINNEWWINDOW.LABEL
+#, fuzzy
+msgid  "Subreport in New Window..."
+msgstr "~Подсправка в нов прозорец..."
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.COMMANDS..UNO:TEXTDOCUMENT.LABEL
 msgid  "Text Document"
@@ -220,8 +255,9 @@ msgid  "Object Resizing"
 msgstr "Преоразмеряване на обект"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.POPUPS..UNO:REPORTCONTROLMENU.LABEL
+#, fuzzy
 msgid  "Report Controls"
-msgstr "Елементи за управление за справка"
+msgstr "Елементи за управление за справки"
 
 #: ../registry/data/org/openoffice/Office/UI/ReportCommands.xcu#REPORTCOMMANDS.USERINTERFACE.POPUPS..UNO:RESIZEMENU.LABEL
 msgid  "Resize"

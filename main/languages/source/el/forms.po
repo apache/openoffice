@@ -33,7 +33,7 @@ msgstr ""
 
 #: resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.STRING.TEXT
 msgid  "The contents of a combo box or list field could not be determined."
-msgstr "Δεν ήταν δυνατόν να γίνει αναγνώριση του περιεχομένου ενός πλαισίου συνδυασμού ή ενός πεδίου καταλόγου"
+msgstr "Δεν ήταν δυνατόν να γίνει αναγνώριση του περιεχομένου ενός πλαισίου συνδυασμού ή ενός πεδίου καταλόγου."
 
 #: resource/strings.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
 msgid  "Insert graphics"
@@ -47,10 +47,6 @@ msgstr "αντικαταστάθηκε"
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
 msgstr "Προέκυψε σφάλμα κατά τη φόρτωση αυτού του στοιχείου ελέγχου. Για αυτόν τον λόγο αντικαταστάθηκε με ένα πλαίσιο δείκτη τοποθέτησης."
 
-#: resource/strings.src#RID_STR_READERROR.STRING.TEXT
-msgid  "Error reading data from database"
-msgstr "Σφάλμα κατά την ανάγνωση δεδομένων από τη βάση δεδομένων"
-
 #: resource/strings.src#RID_STR_CONNECTERROR.STRING.TEXT
 msgid  "Connection failed"
 msgstr "Η σύνδεση απέτυχε"
@@ -61,47 +57,23 @@ msgstr "Δεν ήταν δυνατόν να γίνει φόρτωση των π�
 
 #: resource/strings.src#RID_ERR_REFRESHING_FORM.STRING.TEXT
 msgid  "The data content could not be updated"
-msgstr "Δεν ήταν δυνατόν να γίνει ενημέρωση των περιεχομένων των δεδομένων."
-
-#: resource/strings.src#RID_STR_ERR_INSERTRECORD.STRING.TEXT
-msgid  "Error inserting the new record"
-msgstr "Σφάλμα κατά την εισαγωγή της νέας εγγραφής"
-
-#: resource/strings.src#RID_STR_ERR_UPDATERECORD.STRING.TEXT
-msgid  "Error updating the current record"
-msgstr "Σφάλμα κατά την εγγραφή της τρέχουσας εγγραφής"
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORD.STRING.TEXT
-msgid  "Error deleting the current record"
-msgstr "Σφάλμα κατά την διαγραφή της τρέχουσας εγγραφής"
-
-#: resource/strings.src#RID_STR_ERR_DELETERECORDS.STRING.TEXT
-msgid  "Error deleting the specified records"
-msgstr "Σφάλμα κατά την διαγραφή των επιλεγμένων εγγραφών"
+msgstr "Δεν ήταν δυνατόν να γίνει ενημέρωση των περιεχομένων των δεδομένων"
 
 #: resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.STRING.TEXT
 msgid  "The object cannot be NULL."
-msgstr "Το αντικείμενο δεν μπορεί να είναι ΚΕΝΟ."
+msgstr "Το αντικείμενο δεν μπορεί να είναι NULL-ΚΕΝΟ."
 
 #: resource/strings.src#RID_STR_OPEN_GRAPHICS.STRING.TEXT
 msgid  "Insert graphics from..."
 msgstr "Εισαγωγή γραφικών από..."
 
-#: resource/strings.src#RID_STR_CLEAR_GRAPHICS.STRING.TEXT
-msgid  "Remove graphics"
-msgstr "Κατάργηση γραφικών"
-
 #: resource/strings.src#RID_STR_INVALIDSTREAM.STRING.TEXT
 msgid  "The given stream is invalid."
-msgstr "Δεν ήταν δυνατόν να γίνει αναγνώριση του περιεχομένου ενός πλαισίου συνδυασμού ή ενός πεδίου καταλόγου"
-
-#: resource/strings.src#RID_STR_SYNTAXERROR.STRING.TEXT
-msgid  "Syntax error in query expression"
-msgstr "Σφάλμα κατά την ανάλυση του ορίσματος του ερωτήματος"
+msgstr "Δεν ήταν δυνατόν να γίνει αναγνώριση του περιεχομένου ενός πλαισίου συνδυασμού ή ενός πεδίου καταλόγου."
 
 #: resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.STRING.TEXT
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr "Οι τύποι τιμών που υποστηρίζονται από τη διασύνδεση (binding) δεν μπορούν να χρησιμοποιηθούν για ανταλλαγή δεδομέμων με αυτό το πεδίο ελέγχου."
+msgstr "Οι τύποι τιμών που υποστηρίζονται από τη binding διασύνδεση δεν μπορούν να χρησιμοποιηθούν για ανταλλαγή δεδομένων με αυτό το πεδίο ελέγχου."
 
 #: resource/strings.src#RID_STR_LABEL_RECORD.STRING.TEXT
 msgid  "Record"
@@ -129,7 +101,7 @@ msgstr "Σφάλμα κατά την εισαγωγή των κριτηρίων 
 
 #: resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.STRING.TEXT
 msgid  "To execute this function, parameters are needed."
-msgstr "Απαιτούνται παράμετροι για την εκτέλεση αυτής της λειτουργίας. "
+msgstr "Απαιτούνται παράμετροι για την εκτέλεση αυτής της λειτουργίας."
 
 #: resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.STRING.TEXT
 msgid  "This function cannot be executed, but is only for status queries."
@@ -137,7 +109,7 @@ msgstr "Αυτή η εντολή δεν μπορεί να εκτελεστεί �
 
 #: resource/strings.src#RID_STR_FEATURE_UNKNOWN.STRING.TEXT
 msgid  "Unknown function."
-msgstr "Αγνωστη συναρτηση"
+msgstr "Άγνωστη συνάρτηση."
 
 #: resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.STRING.TEXT
 msgid  "Please enter a binding expression."
@@ -157,7 +129,7 @@ msgstr "Απαιτείται μια τιμή."
 
 #: resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.STRING.TEXT
 msgid  "The constraint '$1' not validated."
-msgstr "Ο περιορισμός '$1'  δεν επικυρώνεται."
+msgstr "Ο περιορισμός '$1' δεν επικυρώνεται."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.STRING.TEXT
 msgid  "The value is not of the type '$2'."
@@ -185,11 +157,11 @@ msgstr "Η τιμή δεν ταιριάζει με το μοτίβο '$2'."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.STRING.TEXT
 msgid  "$2 digits allowed at most."
-msgstr "Επιτρέπονται το περισσότερο $2 ψηφία"
+msgstr "επιτρέπονται το περισσότερο $2 ψηφία."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.STRING.TEXT
 msgid  "$2 fraction digits allowed at most."
-msgstr "Επιτρέπονται το περισσότερο $2 κλασματικά ψηφία."
+msgstr "επιτρέπονται το περισσότερο $2 κλασματικά ψηφία."
 
 #: resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.STRING.TEXT
 msgid  "The string must be $2 characters long."
@@ -207,29 +179,9 @@ msgstr "Το αλφαριθμητικό πρέπει να είναι το περ
 msgid  "String"
 msgstr "Συμβολοσειρά"
 
-#: resource/xforms.src#RID_STR_DATATYPE_URL.STRING.TEXT
-msgid  "Hyperlink"
-msgstr "Υπερσύνδεση"
-
-#: resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.STRING.TEXT
-msgid  "True/False (Boolean)"
-msgstr "Αληθής/Ψευδής (Boolean)"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DECIMAL.STRING.TEXT
-msgid  "Decimal"
-msgstr "Δεκαδικό"
-
-#: resource/xforms.src#RID_STR_DATATYPE_FLOAT.STRING.TEXT
-msgid  "Floating point"
-msgstr "Κινητή υποδιαστολή"
-
 #: resource/xforms.src#RID_STR_DATATYPE_DOUBLE.STRING.TEXT
 msgid  "Double"
 msgstr "Διπλό"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DATE.STRING.TEXT
-msgid  "Date"
-msgstr "Ημερομηνία"
 
 #: resource/xforms.src#RID_STR_DATATYPE_TIME.STRING.TEXT
 msgid  "Time"
@@ -247,26 +199,6 @@ msgstr "Μήνας και έτος"
 msgid  "Year"
 msgstr "Έτος"
 
-#: resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.STRING.TEXT
-msgid  "Month and day"
-msgstr "Μήνας και ημέρα"
-
-#: resource/xforms.src#RID_STR_DATATYPE_MONTH.STRING.TEXT
-msgid  "Month"
-msgstr "Μήνας"
-
-#: resource/xforms.src#RID_STR_DATATYPE_DAY.STRING.TEXT
-msgid  "Day"
-msgstr "Ημέρα"
-
-#: resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.STRING.TEXT
-msgid  "Error during evaluation"
-msgstr "Σφάλμα κατά την αποτίμηση"
-
 #: resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.STRING.TEXT
 msgid  "The string '$1' does not match the required regular expression '$2'."
-msgstr "Το αλφαριθμητικό '$1' δεν ταιριάζει με την απαιτούμενη κανονική έκφραση  '$2'."
-
-#: resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.STRING.TEXT
-msgid  "Binding"
-msgstr "Περιορισμός"
+msgstr "Το αλφαριθμητικό '$1' δεν ταιριάζει με την απαιτούμενη κανονική έκφραση '$2'."

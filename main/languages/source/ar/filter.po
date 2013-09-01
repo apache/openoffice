@@ -39,10 +39,6 @@ msgstr "قالب جدول بيانات ODF"
 msgid  "ODF Spreadsheet"
 msgstr "جدول بيانات ODF"
 
-#: config/fragments/filters/calc_HTML_WebQuery_ui.xcu#CALC_HTML_WEBQUERY.UINAME
-msgid  "Web Page Query (%productname% Calc)"
-msgstr "استعلام صفحة ويب (%productname% Calc)"
-
 #: config/fragments/filters/calc_MS_Excel_2007_Binary_ui.xcu#CALC_MS_EXCEL_2007_BINARY.UINAME
 msgid  "Microsoft Excel 2007 Binary"
 msgstr "ثنائي Microsoft Excel 2007"
@@ -57,7 +53,7 @@ msgstr "Microsoft Excel 2007 XML"
 
 #: config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#CALC_STAROFFICE_XML_CALC_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
-msgstr "قالب جدول بيانات %productname% %formatversion%"
+msgstr ""
 
 #: config/fragments/filters/chart8_ui.xcu#CHART8.UINAME
 msgid  "ODF Chart"
@@ -77,7 +73,7 @@ msgstr "مستند HTML (رسم %productname%)"
 
 #: config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#DRAW_STAROFFICE_XML_DRAW_TEMPLATE.UINAME
 msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
-msgstr "قالب رسم %productname% %formatversion%"
+msgstr ""
 
 #: config/fragments/filters/HTML_MasterDoc_ui.xcu#HTML_MASTERDOC.UINAME
 msgid  "HTML Document (%productname% Master Document)"
@@ -124,8 +120,9 @@ msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)
 msgstr "رسم %productname% %formatversion% (%productname% Impress)"
 
 #: config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#IMPRESS_STAROFFICE_XML_IMPRESS_TEMPLATE.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
-msgstr "قالب عرض %productname% %formatversion% التقديمي"
+msgstr ""
 
 #: config/fragments/filters/math8_ui.xcu#MATH8.UINAME
 msgid  "ODF Formula"
@@ -159,10 +156,6 @@ msgstr "قالب Microsoft PowerPoint 97/2000/XP"
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
 
-#: config/fragments/filters/MS_Word_2007_XML_Template_ui.xcu#MS_WORD_2007_XML_TEMPLATE.UINAME
-msgid  "Microsoft Word 2007 XML Template"
-msgstr "قالبMicrosoft Word 2007 XML"
-
 #: config/fragments/filters/MS_Word_2007_XML_ui.xcu#MS_WORD_2007_XML.UINAME
 msgid  "Microsoft Word 2007 XML"
 msgstr "Microsoft Word 2007 XML"
@@ -174,6 +167,21 @@ msgstr "قالب Microsoft Word 95"
 #: config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS_WORD_97_VORLAGE.UINAME
 msgid  "Microsoft Word 97/2000/XP Template"
 msgstr "قالب Microsoft Word 97/2000/XP"
+
+#: config/fragments/filters/NSO_Calc_UOF2_ui.xcu#NSO_CALC_UOF2.UINAME
+#, fuzzy
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr "العرض التقديمي لتنسيق Office موحد"
+
+#: config/fragments/filters/NSO_Impress_UOF2_ui.xcu#NSO_IMPRESS_UOF2.UINAME
+#, fuzzy
+msgid  "Uniform Office Format 2 presentation"
+msgstr "العرض التقديمي لتنسيق Office الموحد"
+
+#: config/fragments/filters/NSO_Writer_UOF2_ui.xcu#NSO_WRITER_UOF2.UINAME
+#, fuzzy
+msgid  "Uniform Office Format 2 Text"
+msgstr "نص تنسيق Office موحد"
 
 #: config/fragments/filters/StarCalc_3_0_Vorlage_Template_ui.xcu#STARCALC_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarCalc 3.0 Template"
@@ -219,6 +227,30 @@ msgstr "قالب StarImpress 5.0"
 msgid  "ODF Database"
 msgstr "قاعدة بيانات ODF"
 
+#: config/fragments/filters/StarOffice_XML__Calc__ui.xcu#STAROFFICE_XML_(CALC).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet"
+msgstr ""
+
+#: config/fragments/filters/StarOffice_XML__Chart__ui.xcu#STAROFFICE_XML_(CHART).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Chart"
+msgstr ""
+
+#: config/fragments/filters/StarOffice_XML__Draw__ui.xcu#STAROFFICE_XML_(DRAW).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing"
+msgstr ""
+
+#: config/fragments/filters/StarOffice_XML__Impress__ui.xcu#STAROFFICE_XML_(IMPRESS).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation"
+msgstr ""
+
+#: config/fragments/filters/StarOffice_XML__Math__ui.xcu#STAROFFICE_XML_(MATH).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Formula"
+msgstr ""
+
+#: config/fragments/filters/StarOffice_XML__Writer__ui.xcu#STAROFFICE_XML_(WRITER).UINAME
+msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
+msgstr ""
+
 #: config/fragments/filters/StarWriter_3_0_Vorlage_Template_ui.xcu#STARWRITER_3.0_VORLAGE/TEMPLATE.UINAME
 msgid  "StarWriter 3.0 Template"
 msgstr "قالب StarWriter 3.0"
@@ -259,17 +291,9 @@ msgstr "نص مشفر (%productname% Writer/Web)"
 msgid  "Text Encoded"
 msgstr "نص مشفر"
 
-#: config/fragments/filters/Text__StarWriter_Web__ui.xcu#TEXT_(STARWRITER/WEB).UINAME
-msgid  "Text (%productname% Writer/Web)"
-msgstr "نص (%productname% Writer/Web)"
-
 #: config/fragments/filters/Text___txt___csv__StarCalc__ui.xcu#TEXT_-_TXT_-_CSV_(STARCALC).UINAME
 msgid  "Text CSV"
 msgstr "قيم CSV نصية"
-
-#: config/fragments/filters/Text_ui.xcu#TEXT.UINAME
-msgid  "Text"
-msgstr "النص"
 
 #: config/fragments/filters/UOF_presentation_ui.xcu#UOF_PRESENTATION.UINAME
 msgid  "Unified Office Format presentation"
@@ -300,16 +324,19 @@ msgid  "ODF Text Document"
 msgstr "مستند نص ODF"
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER_GLOBALDOCUMENT.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
-msgstr "مستند %productname% %formatversion% رئيسي"
+msgstr ""
 
 #: config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#WRITER_GLOBALDOCUMENT_STAROFFICE_XML_WRITER.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
-msgstr "مستند %productname% %formatversion% نصي"
+msgstr ""
 
 #: config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#WRITER_STAROFFICE_XML_WRITER_TEMPLATE.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
-msgstr "قالب مستند %productname% %formatversion% نصي"
+msgstr ""
 
 #: config/fragments/filters/writerweb8_writer_template_ui.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 msgid  "HTML Document Template"
@@ -324,8 +351,9 @@ msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Wr
 msgstr "مستند %productname% %formatversion% نصي (%productname% Writer/Web)"
 
 #: config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#WRITER_WEB_STAROFFICE_XML_WRITER_WEB_TEMPLATE.UINAME
+#, fuzzy
 msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
-msgstr "قالب %productname% %formatversion% HTML"
+msgstr ""
 
 #: config/fragments/internalgraphicfilters/bmp_Export.xcu#BMP_EXPORT.UINAME
 msgid  "BMP - Windows Bitmap"
@@ -515,6 +543,10 @@ msgstr "Calc 8"
 msgid  "Microsoft Excel 2003 XML"
 msgstr "Microsoft Excel 2003 XML"
 
+#: config/fragments/types/calc_NSO_UOF2.xcu#CALC_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr ""
+
 #: config/fragments/types/chart8.xcu#CHART8.UINAME
 msgid  "Chart 8"
 msgstr "Chart 8"
@@ -534,6 +566,10 @@ msgstr "قالب Impress 8"
 #: config/fragments/types/impress8.xcu#IMPRESS8.UINAME
 msgid  "Impress 8"
 msgstr "Impress 8"
+
+#: config/fragments/types/impress_NSO_UOF2.xcu#IMPRESS_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 presentation"
+msgstr ""
 
 #: config/fragments/types/math8.xcu#MATH8.UINAME
 msgid  "Math 8"
@@ -559,6 +595,10 @@ msgstr "مستند Writer 8 رئيسي"
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
 
+#: config/fragments/types/writer_NSO_UOF2.xcu#WRITER_NSO_UOF2.UINAME
+msgid  "Uniform Office Format 2 text"
+msgstr ""
+
 #: config/fragments/types/writerweb8_writer_template.xcu#WRITERWEB8_WRITER_TEMPLATE.UINAME
 msgid  "Writer/Web 8 Template"
 msgstr "قالب Writer/Web 8"
@@ -574,10 +614,6 @@ msgstr "1: أقل جودة\n100: أعلى جودة"
 #: graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.STRING.TEXT
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
 msgstr "تحذير: لا يمكن حفظ جميع رسومات EPS المستوردة في المستوى 1\nنظرًا لأن بعضها ينتمي إلى مستوى أعلى!"
-
-#: pdf/impdialog.src#STR_PDF_EXPORT.STRING.TEXT
-msgid  "E~xport"
-msgstr "ت~صدير"
 
 #: pdf/impdialog.src#STR_PDF_EXPORT_UDPWD.STRING.TEXT
 msgid  "Set open password"
@@ -599,18 +635,6 @@ msgstr "النطاق"
 msgid  "~All"
 msgstr "ال~كل"
 
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_RANGE.RADIOBUTTON.TEXT
-msgid  "~Pages"
-msgstr "ال~صفحات"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_SELECTION.RADIOBUTTON.TEXT
-msgid  "~Selection"
-msgstr "ال~تحديد"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FL_IMAGES.FIXEDLINE.TEXT
-msgid  "Images"
-msgstr "الصور"
-
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_LOSSLESSCOMPRESSION.RADIOBUTTON.TEXT
 msgid  "~Lossless compression"
 msgstr "~ضغط بدون فقد للبيانات"
@@ -618,14 +642,6 @@ msgstr "~ضغط بدون فقد للبيانات"
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.RB_JPEGCOMPRESSION.RADIOBUTTON.TEXT
 msgid  "~JPEG compression"
 msgstr "ض~غط JPEG"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_QUALITY.FIXEDTEXT.TEXT
-msgid  "~Quality"
-msgstr "الجود~ة"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_REDUCEIMAGERESOLUTION.CHECKBOX.TEXT
-msgid  "~Reduce image resolution"
-msgstr "ت~قليص دقة الصورة"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_PDFA_1B_SELECT.CHECKBOX.TEXT
 msgid  "P~DF/A-1a"
@@ -638,10 +654,6 @@ msgstr "PDF ب~علامات"
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTFORMFIELDS.CHECKBOX.TEXT
 msgid  "~Create PDF form"
 msgstr "إ~نشاء نموذج PDF"
-
-#: pdf/impdialog.src#RID_PDF_TAB_GENER.FT_FORMSFORMAT.FIXEDTEXT.TEXT
-msgid  "Submit ~format"
-msgstr "تن~سيق الإرسال"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ALLOWDUPLICATEFIELDNAMES.CHECKBOX.TEXT
 msgid  "Allow duplicate field ~names"
@@ -668,15 +680,16 @@ msgid  "E~mbed standard fonts"
 msgstr "ت~ضمين الخطوط القياسية"
 
 #: pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ADDSTREAM.CHECKBOX.TEXT
-#, fuzzy
 msgid  "Embed this document ~inside the PDF"
-msgstr "إنشاء ~ملف هجين"
+msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.TITLE
+#, fuzzy
 msgid  "PDF/A Export"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WARNINGBOX.MESSAGE
+#, fuzzy
 msgid  "PDF/A does not allow encryption. The exported PDF file will not be password protected."
 msgstr ""
 
@@ -686,70 +699,77 @@ msgid  "Initial View"
 msgstr "عرض أولي"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_INITVIEW.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Panes"
 msgstr "الأجزاء"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_PAGEONLY.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Page only"
 msgstr "~صفحة فقط"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_OUTLINE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Bookmarks and page"
 msgstr "الإ~شارات المرجعية والصفحة"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_THUMBS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Thumbnails and page"
 msgstr "ال~مصغرات والصفحة"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FT_MAGNF_INITIAL_PAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Open on page"
 msgstr "فتح في صفحة"
 
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_MAGNIFICATION.FIXEDLINE.TEXT
-msgid  "Magnification"
-msgstr "تكبير"
-
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Default"
 msgstr "الا~فتراضي"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_WIND.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Fit in window"
 msgstr "ملاء~مة في الإطار"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_WIDTH.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Fit ~width"
 msgstr "ملاءمة ال~عرض"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_VISIBLE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Fit ~visible"
 msgstr "م~لاءمة الرؤية"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_ZOOM.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Zoom factor"
 msgstr "~عامل التكبير/التصغير"
 
-#: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_PAGE_LAYOUT.FIXEDLINE.TEXT
-msgid  "Page layout"
-msgstr "تخطيط الصفحة"
-
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "D~efault"
 msgstr "الا~فتراضي"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_SINGPG.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Single page"
 msgstr "~صفحة واحدة"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_CONT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Continuous"
 msgstr "م~تتابع"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_CONTFAC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "C~ontinuous facing"
 msgstr "مواجهة ~متتابعة"
 
 #: pdf/impdialog.src#RID_PDF_TAB_OPNFTR.CB_PGLY_FIRSTLEFT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "First page is ~left"
 msgstr "أول صفحة ل~ليسار"
 
@@ -758,475 +778,443 @@ msgstr "أول صفحة ل~ليسار"
 msgid  "User Interface"
 msgstr "واجهة المستخدم"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_WINOPT.FIXEDLINE.TEXT
-msgid  "Window options"
-msgstr "خيارات الإطار"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_RESINIT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Resize window to initial page"
 msgstr "تغيير ~حجم الإطار وفقًا للصفحة الأولية"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_CNTRWIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Center window on screen"
 msgstr "تو~سيط الإطار على الشاشة"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_OPNFULL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Open in full screen mode"
 msgstr "~فتح في وضع ملء الشاشة"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_DISPDOCTITLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Display document title"
 msgstr "~عرض عنوان المستند"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_USRIFOPT.FIXEDLINE.TEXT
-msgid  "User interface options"
-msgstr "خيارات واجهة المستخدم"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVMENUBAR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Hide ~menubar"
 msgstr "إخفاء ~شريط القوائم"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVTOOLBAR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Hide ~toolbar"
 msgstr "إ~خفاء شريط الأدوات"
 
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVWINCTRL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Hide ~window controls"
 msgstr "إخفاء ~عناصر التحكم بالإطار"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_TRANSITIONS.FIXEDLINE.TEXT
-msgid  "Transitions"
-msgstr "الانتقالات"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_TRANSITIONEFFECTS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Use transition effects"
 msgstr "ا~ستخدام تأثيرات الانتقال"
 
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_BOOKMARKS.FIXEDLINE.TEXT
-msgid  "Bookmarks"
-msgstr "الإشارات المرجعية"
-
-#: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_ALLBOOKMARKLEVELS.RADIOBUTTON.TEXT
-msgid  "All bookmark levels"
-msgstr "كل مستويات الإشارات المرجعية"
-
 #: pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_VISIBLEBOOKMARKLEVELS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Visible bookmark levels"
 msgstr "مستويات الإشارات المرجعية المرئية"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.TABPAGE.TEXT
-msgid  "Security"
-msgstr "الأمان"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PWD_GROUP.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "File encryption and permission"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.BTN_SET_PWD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Set ~passwords..."
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_SET_PWD.STRING.TEXT
+#, fuzzy
 msgid  "Set passwords"
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_SET.STRING.TEXT
+#, fuzzy
 msgid  "Open password set"
 msgstr "تعيين كلمة مرور مفتوحة"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_ENC.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will be encrypted"
 msgstr "سيتم تشفير مستند PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNSET.STRING.TEXT
+#, fuzzy
 msgid  "No open password set"
 msgstr "لم يتم تعيين كلمة مرور مفتوحة"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNENC.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will not be encrypted"
 msgstr "لن يتم تشفير مستند PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will not be encrypted due to PDF/A export."
 msgstr ""
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_SET.STRING.TEXT
+#, fuzzy
 msgid  "Permission password set"
 msgstr "تعيين كلمة مرور الإذن"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_REST.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will be restricted"
 msgstr "سيتم تقييد مستند PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNSET.STRING.TEXT
+#, fuzzy
 msgid  "No permission password set"
 msgstr "لم يتم تعيين كلمة مرور الإذن"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNREST.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will be unrestricted"
 msgstr "سيتم إلغاء تقييد مستند PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "PDF document will not be restricted due to PDF/A export."
 msgstr ""
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.FIXEDLINE.TEXT
-msgid  "Printing"
-msgstr "طباعة"
-
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_NONE.RADIOBUTTON.TEXT
-msgid  "~Not permitted"
-msgstr "~غير مسموح"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_LOWRES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Low resolution (150 dpi)"
 msgstr "~دقة منخفضة (150 نقطة في البوصة)"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_HIGHRES.RADIOBUTTON.TEXT
-msgid  "~High resolution"
-msgstr "د~قة عالية"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_CHANGES_ALLOWED.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Changes"
 msgstr "التغييرات"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_NONE.RADIOBUTTON.TEXT
-msgid  "No~t permitted"
-msgstr "غير ~مسموح"
-
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_INSDEL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Inserting, deleting, and rotating pages"
 msgstr "إ~دراج صفحات وحذفها وتدويرها"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_FILLFORM.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Filling in form fields"
 msgstr "~ملء حقول النموذج"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_COMMENT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Commenting, filling in form fields"
 msgstr "ال~تعليق على حقول النموذج وملؤها"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_ANY_NOCOPY.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Any except extracting pages"
 msgstr "أية صفحات با~ستثناء صفحات الاستخراج"
 
 #: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENDAB_COPY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Ena~ble copying of content"
 msgstr "تمكي~ن نسخ المحتوى"
 
-#: pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENAB_ACCESS.CHECKBOX.TEXT
-msgid  "Enable text access for acce~ssibility tools"
-msgstr "تم~كين الوصول إلى النص لأدوات الوصول."
-
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.TABPAGE.TEXT
+#, fuzzy
 msgid  "---"
 msgstr "---"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_EXP_BMRK_TO_DEST.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Export bookmarks as named destinations"
 msgstr "تصدير الإشارات المرجعية كوجهات محددة"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_CNV_OOO_DOCTOPDF.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Convert document references to PDF targets"
 msgstr "تحويل مراجع المستند إلى أهداف PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_ENAB_RELLINKFSYS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Export URLs relative to file system"
 msgstr "تصدير عناوين URL ذات الصلة بنظام الملفات"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.FL_DEFAULT_LINK_ACTION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Cross-document links"
 msgstr "ارتباطات عبر المستند"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Default mode"
 msgstr "الوضع الافتراضي"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_APPLICATION.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Open with PDF reader application"
 msgstr "فتح تطبيق قارئ PDF"
 
 #: pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_BROWSER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Open with Internet browser"
 msgstr "فتح بمستعرض الإنترنت"
 
 #: pdf/impdialog.src#RID_PDF_EXPORT_DLG.TABDIALOG.TEXT
+#, fuzzy
 msgid  "PDF Options"
 msgstr "خيارات PDF"
 
 #: pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_LINKS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Links"
 msgstr "الارتباطات"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Problems during PDF export"
 msgstr "مشكلات أثناء تصدير PDF"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.FT_PROCESS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "During PDF export the following problems occurred:"
 msgstr "حدثت المشكلات التالية أثناء تصدير PDF:"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA_SHORT.STRING.TEXT
+#, fuzzy
 msgid  "PDF/A transparency"
 msgstr "شفافية PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "PDF/A forbids transparency. A transparent object was painted opaque instead."
 msgstr "يحظر PDF/A الشفافية. تم طلاء كائن شفاف بلون شفاف بدلاً من ذلك."
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.STRING.TEXT
+#, fuzzy
 msgid  "PDF version conflict"
 msgstr "تعارض إصدارات PDF"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.STRING.TEXT
+#, fuzzy
 msgid  "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
 msgstr "الشفافية غير مدعومة في إصدارات PDF السابقة للإصدار PDF 1.4. لذلك تمت طباعة كائن شفاف كغير شفاف بدلاً من طباعته ككائن شفاف"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.STRING.TEXT
+#, fuzzy
 msgid  "PDF/A form action"
 msgstr "إجراء نموذج PDF/A"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.STRING.TEXT
+#, fuzzy
 msgid  "A form control contained an action not supported by the PDF/A standard. The action was skipped"
 msgstr "يحتوى عنصر تحكم النموذج على إجراء غير مدعوم من قبل معيار PDF/A. وبالتالي تم تجاوز الإجراء"
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.STRING.TEXT
+#, fuzzy
 msgid  "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
 msgstr "تم تحويل بعض الكائنات إلى صورة لإزالة الشفافيات، لأن تنسيق PDF المستهدف لا يدعم الشفافيات. قد يُمكنك الحصول على نتائج أفضل إذا قمت بإزالة الكائنات الشفافة قبل التصدير."
 
 #: pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED_SHORT.STRING.TEXT
+#, fuzzy
 msgid  "Transparencies removed"
 msgstr "تمت إزالة الشفافيات"
 
 #: pdf/pdf.src#PDF_PROGRESS_BAR.STRING.TEXT
+#, fuzzy
 msgid  "Export as PDF"
 msgstr "تصدير بتنسيق PDF"
 
 #: t602/t602filter.src#T602FILTER_STR_IMPORT_DIALOG_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Settings for T602 import"
 msgstr "إعدادات لاستيراد T602"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_LABEL.STRING.TEXT
+#, fuzzy
 msgid  "Encoding"
 msgstr "ترميز"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
 msgstr "تلقائي"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_CP852.STRING.TEXT
+#, fuzzy
 msgid  "CP852 (Latin2)"
 msgstr "CP852 (اللاتينية 2)"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_CP895.STRING.TEXT
+#, fuzzy
 msgid  "CP895 (KEYB2CS, Kamenicky)"
 msgstr "CP895 (KEYB2CS، ترميز Kamenicky)"
 
 #: t602/t602filter.src#T602FILTER_STR_ENCODING_KOI8CS2.STRING.TEXT
+#, fuzzy
 msgid  "KOI8 CS2"
 msgstr "KOI8 CS2"
 
 #: t602/t602filter.src#T602FILTER_STR_CYRILLIC_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Mode for Russian language (Cyrillic)"
 msgstr "وضع اللغة الروسية (السيريلية)"
 
 #: t602/t602filter.src#T602FILTER_STR_REFORMAT_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Reformat the text"
 msgstr "إعادة تنسيق النص"
 
 #: t602/t602filter.src#T602FILTER_STR_DOT_COMMANDS.STRING.TEXT
+#, fuzzy
 msgid  "Display dot commands"
 msgstr "عرض أوامر نقطية"
 
 #: t602/t602filter.src#T602FILTER_STR_CANCEL_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Cancel"
 msgstr "إلغاء الأمر"
 
 #: t602/t602filter.src#T602FILTER_STR_OK_BUTTON.STRING.TEXT
+#, fuzzy
 msgid  "OK"
 msgstr "موافق"
 
 #: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.WORKWINDOW.TEXT
+#, fuzzy
 msgid  "XML Filter output"
 msgstr "إخراج عامل تصفية XML"
 
-#: xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PUSHBUTTON.TEXT
-msgid  "~Validate"
-msgstr "مصاد~قة"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.STRING.TEXT
-msgid  "Name"
-msgstr "الاسم"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type"
 msgstr "النوع"
 
-#: xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.STRING.TEXT
-msgid  "Unknown"
-msgstr "غير معروف"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "import filter"
 msgstr "عامل تصفية الاستيراد"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_EXPORT.STRING.TEXT
+#, fuzzy
 msgid  "import/export filter"
 msgstr "عامل تصفية الاستيراد/التصدير"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_EXPORT_ONLY.STRING.TEXT
+#, fuzzy
 msgid  "export filter"
 msgstr "عامل تصفية التصدير"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
 msgstr "هل تريد بالفعل حذف عامل تصفية XML '%s'؟ لا يمكن التراجع عن هذا الإجراء."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
 msgstr "يوجد بالفعل عامل تصفية XML بالاسم '%s'. الرجاء إدخال اسم مختلف."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
 msgstr "اسم واجهة المستخدم '%s1' مستخدم بالفعل من قِبل عامل تصفية XML '%s2'. الرجاء إدخال اسم مختلف."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The DTD could not be found. Please enter a valid path."
 msgstr "تعذر العثور على DTD. الرجاء إدخال مسار صالح."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_EXPORT_XSLT_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The XSLT for export cannot be found. Please enter a valid path."
 msgstr "لا يمكن العثور على XSLT للتصدير. الرجاء إدخال مسار صالح."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_XSLT_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The XSLT for import cannot be found. Please enter a valid path."
 msgstr "لا يمكن العثور على XSLT للاستيراد. الرجاء إدخال مسار صالح."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_TEMPLATE_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "The given import template cannot be found. Please enter a valid path."
 msgstr "لا يمكن العثور على قالب الاستيراد المقدم. الرجاء إدخال مسار صالح."
 
-#: xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.STRING.TEXT
-msgid  "Not specified"
-msgstr "غير محدد"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.STRING.TEXT
-msgid  "New Filter"
-msgstr "عامل تصفية جديد"
-
-#: xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.STRING.TEXT
-msgid  "Untitled"
-msgstr "بلا عنوان"
-
 #: xsltdialog/xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "undefined filter"
 msgstr "عامل تصفية غير معرف"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_HAS_BEEN_SAVED.STRING.TEXT
+#, fuzzy
 msgid  "The XML filter '%s' has been saved as package '%s'. "
 msgstr "تم حفظ عامل تصفية XML '%s' كحزمة '%s'. "
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_HAVE_BEEN_SAVED.STRING.TEXT
+#, fuzzy
 msgid  "%s XML filters have been saved in the package '%s'."
 msgstr "تم حفظ عوامل تصفية %s XML في الحزمة '%s'."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_PACKAGE.STRING.TEXT
+#, fuzzy
 msgid  "XSLT filter package"
 msgstr "حزمة عوامل تصفية XSLT"
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_INSTALLED.STRING.TEXT
+#, fuzzy
 msgid  "The XML filter '%s' has been installed successfully."
 msgstr "تم تثبيت عامل تصفية XML '%s' بنجاح."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_INSTALLED.STRING.TEXT
+#, fuzzy
 msgid  "%s XML filters have been installed successfully."
 msgstr "تم تثبيت عوامل تصفية XML %s بنجاح."
 
 #: xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
 msgstr "تعذر تثبيت عامل تصفية XML لأن الحزمة '%s' لا تتضمن أية عوامل تصفية XML."
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.WORKWINDOW.TEXT
+#, fuzzy
 msgid  "XML Filter Settings"
 msgstr "إعدادات عامل تصفية XML"
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
 msgstr "~جديد..."
 
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit..."
 msgstr "ت~حرير..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PUSHBUTTON.TEXT
-msgid  "~Test XSLTs..."
-msgstr "ا~ختبار وحدات XSLT..."
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PUSHBUTTON.TEXT
-msgid  "~Delete..."
-msgstr "~حذف..."
-
 #: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Save as Package..."
 msgstr "ح~فظ كحزمة..."
 
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PUSHBUTTON.TEXT
-msgid  "~Open Package..."
-msgstr "فتح الحز~مة..."
-
-#: xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "إ~غلاق"
-
 #: xsltdialog/xmlfiltersettingsdialog.src#STR_XML_FILTER_LISTBOX.STRING.TEXT
+#, fuzzy
 msgid  "XML Filter List"
 msgstr ""
 
 #: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.TABDIALOG.TEXT
+#, fuzzy
 msgid  "XML Filter: %s"
 msgstr "عامل تصفية XML: %s"
 
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.PAGEITEM.TEXT
-msgid  "General"
-msgstr "عام"
-
-#: xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PAGEITEM.TEXT
-msgid  "Transformation"
-msgstr "التحويل"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TABPAGE.TEXT
-msgid  "General"
-msgstr "عام"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FIXEDTEXT.TEXT
-msgid  "Filter name"
-msgstr "اسم عامل التصفية"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FIXEDTEXT.TEXT
-msgid  "Application"
-msgstr "التطبيق"
-
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FIXEDTEXT.TEXT
-msgid  "Name of\nfile type"
-msgstr "اسم\nنوع الملف"
-
 #: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "File extension"
 msgstr "امتداد الملف"
 
-#: xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Comments"
-msgstr "تعليقات"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TABPAGE.TEXT
-msgid  "Transformation"
-msgstr "التحويل"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.FIXEDTEXT.TEXT
-msgid  "DocType"
-msgstr "DocType"
-
 #: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DTD_SCHEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "DTD"
 msgstr "DTD"
 
@@ -1235,70 +1223,32 @@ msgstr "DTD"
 msgid  "Browse..."
 msgstr "استعراض..."
 
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FIXEDTEXT.TEXT
-msgid  "XSLT for export"
-msgstr "XSLT للتصدير"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FIXEDTEXT.TEXT
-msgid  "XSLT for import"
-msgstr "XSLT للاستيراد"
-
-#: xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-msgid  "Template for import"
-msgstr "قالب الاستيراد"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.MODALDIALOG.TEXT
-msgid  "Test XML Filter: %s"
-msgstr "اختبار عامل تصفية XML: %s"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FIXEDLINE.TEXT
-msgid  "Export"
-msgstr "تصدير"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FIXEDTEXT.TEXT
-msgid  "XSLT for export"
-msgstr "XSLT للتصدير"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FIXEDTEXT.TEXT
-msgid  "Transform document"
-msgstr "تحويل المستند"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Browse..."
 msgstr "ا~ستعراض..."
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CURRENT_DOCUMENT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Current Document"
 msgstr "المستند ال~حالي"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_IMPORT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Import"
 msgstr "استيراد"
 
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FIXEDTEXT.TEXT
-msgid  "XSLT for import"
-msgstr "XSLT للاستيراد"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FIXEDTEXT.TEXT
-msgid  "Template for import"
-msgstr "قالب الاستيراد"
-
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FIXEDTEXT.TEXT
-msgid  "Transform file"
-msgstr "تحويل الملف"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Display source"
 msgstr "مصدر ال~عرض"
 
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_IMPORT_BROWSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "B~rowse..."
 msgstr "اس~تعراض..."
 
-#: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PUSHBUTTON.TEXT
-msgid  "~Recent File"
-msgstr "الملف الأ~خير"
-
 #: xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
 msgstr "إ~غلاق"

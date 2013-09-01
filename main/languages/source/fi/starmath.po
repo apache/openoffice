@@ -31,14 +31,6 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.ITEM1.ITEMLIST.ITEM
-msgid  "Greek"
-msgstr "Kreikkalaiset"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.ITEM2.ITEMLIST.ITEM
-msgid  "Special"
-msgstr "Erikoiset"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM1.ITEMLIST.ITEM
 msgid  "alpha"
 msgstr "alpha"
@@ -66,10 +58,6 @@ msgstr "GAMMA"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM7.ITEMLIST.ITEM
 msgid  "delta"
 msgstr "delta"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM8.ITEMLIST.ITEM
-msgid  "DELTA"
-msgstr "DELTA"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM9.ITEMLIST.ITEM
 msgid  "epsilon"
@@ -103,10 +91,6 @@ msgstr "theta"
 msgid  "THETA"
 msgstr "THETA"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM17.ITEMLIST.ITEM
-msgid  "iota"
-msgstr "iota"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM18.ITEMLIST.ITEM
 msgid  "IOTA"
 msgstr "IOTA"
@@ -127,49 +111,25 @@ msgstr "lambda"
 msgid  "LAMBDA"
 msgstr "LAMBDA"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM23.ITEMLIST.ITEM
-msgid  "mu"
-msgstr "mu"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM24.ITEMLIST.ITEM
 msgid  "MU"
 msgstr "MU"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM25.ITEMLIST.ITEM
-msgid  "nu"
-msgstr "nu"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM26.ITEMLIST.ITEM
 msgid  "NU"
 msgstr "NU"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM27.ITEMLIST.ITEM
-msgid  "xi"
-msgstr "xi"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM28.ITEMLIST.ITEM
 msgid  "XI"
 msgstr "XI"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM29.ITEMLIST.ITEM
-msgid  "omicron"
-msgstr "omicron"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM30.ITEMLIST.ITEM
 msgid  "OMICRON"
 msgstr "OMICRON"
 
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM31.ITEMLIST.ITEM
-msgid  "pi"
-msgstr "pi"
-
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM32.ITEMLIST.ITEM
 msgid  "PI"
 msgstr "PI"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM33.ITEMLIST.ITEM
-msgid  "rho"
-msgstr "rho"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM34.ITEMLIST.ITEM
 msgid  "RHO"
@@ -190,10 +150,6 @@ msgstr "tau"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM38.ITEMLIST.ITEM
 msgid  "TAU"
 msgstr "TAU"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM39.ITEMLIST.ITEM
-msgid  "upsilon"
-msgstr "upsilon"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM40.ITEMLIST.ITEM
 msgid  "UPSILON"
@@ -230,30 +186,6 @@ msgstr "omega"
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM48.ITEMLIST.ITEM
 msgid  "OMEGA"
 msgstr "OMEGA"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM49.ITEMLIST.ITEM
-msgid  "varepsilon"
-msgstr "varepsilon"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM50.ITEMLIST.ITEM
-msgid  "vartheta"
-msgstr "vartheta"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM51.ITEMLIST.ITEM
-msgid  "varpi"
-msgstr "varpi"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM52.ITEMLIST.ITEM
-msgid  "varrho"
-msgstr "varrho"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM53.ITEMLIST.ITEM
-msgid  "varsigma"
-msgstr "varsigma"
-
-#: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM54.ITEMLIST.ITEM
-msgid  "varphi"
-msgstr "varphi"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.ITEM55.ITEMLIST.ITEM
 msgid  "element"
@@ -1023,61 +955,13 @@ msgstr "Nousevat pisteet"
 msgid  "Dots to Bottom"
 msgstr "Laskevat pisteet"
 
-#: commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MENUITEM.TEXT
-msgid  "~Unary/Binary Operators"
-msgstr "~Yksi- ja kaksipaikkaiset operaattorit"
-
-#: commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MENUITEM.TEXT
-msgid  "~Relations"
-msgstr "~Relaatiot"
-
-#: commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MENUITEM.TEXT
-msgid  "~Set Operations"
-msgstr "~Joukko-operaattorit"
-
-#: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MENUITEM.TEXT
-msgid  "~Functions"
-msgstr "~Funktiot"
-
 #: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MENUITEM.TEXT
 msgid  "More"
-msgstr "Lisää"
-
-#: commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MENUITEM.TEXT
-msgid  "O~perators"
-msgstr "~Operaattorit"
-
-#: commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MENUITEM.TEXT
-msgid  "~Attributes"
-msgstr "~Määritteet"
-
-#: commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MENUITEM.TEXT
-msgid  "~Brackets"
-msgstr "~Sulkeet"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MENUITEM.TEXT
-msgid  "For~mats"
-msgstr "~Muotoilu"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MENUITEM.TEXT
-msgid  "New Line"
-msgstr "Rivinvaihto"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MENUITEM.TEXT
-msgid  "Small Gap"
-msgstr "Kapea väli"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MENUITEM.TEXT
-msgid  "Gap"
-msgstr "Väli"
+msgstr "Enemmän"
 
 #: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MENUITEM.TEXT
 msgid  "nospace {...}"
 msgstr "nospace {...}"
-
-#: commands.src#RID_COMMANDMENU.RID_MISC_MENU.MENUITEM.TEXT
-msgid  "~Others"
-msgstr "~Muut"
 
 #: smres.src#RID_FONTDIALOG.MODALDIALOG.TEXT
 msgid  "Fonts"
@@ -1087,81 +971,17 @@ msgstr "Fontit"
 msgid  "~Font"
 msgstr "~Fontti"
 
-#: smres.src#RID_FONTDIALOG.1.CHECKBOX.TEXT
-msgid  "~Bold"
-msgstr "~Lihavoi"
-
-#: smres.src#RID_FONTDIALOG.2.CHECKBOX.TEXT
-msgid  "~Italic"
-msgstr "~Kursivoi"
-
-#: smres.src#RID_FONTDIALOG.2.FIXEDTEXT.TEXT
-msgid  "Attributes"
-msgstr "Määritteet"
-
-#: smres.src#RID_FONTSIZEDIALOG.MODALDIALOG.TEXT
-msgid  "Font Sizes"
-msgstr "Fonttikoot"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "Base ~size"
-msgstr "~Peruskoko"
-
 #: smres.src#RID_FONTSIZEDIALOG.4.FIXEDTEXT.TEXT
 msgid  "~Text"
 msgstr "~Teksti"
-
-#: smres.src#RID_FONTSIZEDIALOG.5.FIXEDTEXT.TEXT
-msgid  "~Indexes"
-msgstr "~Indeksit"
 
 #: smres.src#RID_FONTSIZEDIALOG.6.FIXEDTEXT.TEXT
 msgid  "~Functions"
 msgstr "~Funktiot"
 
-#: smres.src#RID_FONTSIZEDIALOG.7.FIXEDTEXT.TEXT
-msgid  "~Operators"
-msgstr "Op~eraattorit"
-
-#: smres.src#RID_FONTSIZEDIALOG.8.FIXEDTEXT.TEXT
-msgid  "~Limits"
-msgstr "~Rajat"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Relative sizes"
-msgstr "Suhteelliset koot"
-
 #: smres.src#RID_FONTSIZEDIALOG.1.PUSHBUTTON.TEXT
 msgid  "~Default"
 msgstr "O~letus"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Formula fonts"
-msgstr "Kaavafontit"
-
-#: smres.src#RID_FONTTYPEDIALOG.2.FIXEDLINE.TEXT
-msgid  "Custom fonts"
-msgstr "Mukautetut fontit"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Variables"
-msgstr "M~uuttujat"
-
-#: smres.src#RID_FONTTYPEDIALOG.3.FIXEDTEXT.TEXT
-msgid  "~Numbers"
-msgstr "~Numerot"
-
-#: smres.src#RID_FONTTYPEDIALOG.5.FIXEDTEXT.TEXT
-msgid  "~Serif"
-msgstr "~Antiikva"
-
-#: smres.src#RID_FONTTYPEDIALOG.6.FIXEDTEXT.TEXT
-msgid  "S~ans"
-msgstr "~Groteski"
-
-#: smres.src#RID_FONTTYPEDIALOG.7.FIXEDTEXT.TEXT
-msgid  "F~ixed"
-msgstr "Kiinte~ä"
 
 #: smres.src#RID_FONTTYPEDIALOG.1.MENUBUTTON.TEXT
 msgid  "~Modify"
@@ -1171,21 +991,9 @@ msgstr "~Muuta"
 msgid  "Spacing"
 msgstr "Välit"
 
-#: smres.src#RID_DISTANCEDIALOG.1.METRICFIELD.CUSTOMUNITTEXT
-msgid  "%"
-msgstr "%"
-
-#: smres.src#RID_DISTANCEDIALOG.1.CHECKBOX.TEXT
-msgid  "Scale all brackets"
-msgstr "Skaalaa kaikki sulkeet"
-
 #: smres.src#RID_DISTANCEDIALOG.1.MENUBUTTON.TEXT
 msgid  "~Category"
 msgstr "~Luokka"
-
-#: smres.src#RID_DISTANCEDIALOG.1.FIXEDLINE.TEXT
-msgid  "Category"
-msgstr "Luokka"
 
 #: smres.src#RID_DISTANCEDIALOG.1.2.STRING.TEXT
 msgid  "~Spacing"
@@ -1203,81 +1011,29 @@ msgstr "~Juurimerkkivälit"
 msgid  "Indexes"
 msgstr "Indeksit"
 
-#: smres.src#RID_DISTANCEDIALOG.2.2.STRING.TEXT
-msgid  "~Superscript"
-msgstr "~Yläindeksi"
-
-#: smres.src#RID_DISTANCEDIALOG.2.3.STRING.TEXT
-msgid  "S~ubscript"
-msgstr "~Alaindeksi"
-
 #: smres.src#RID_DISTANCEDIALOG.3.1.STRING.TEXT
 msgid  "Fractions"
 msgstr "Murtoluvut"
-
-#: smres.src#RID_DISTANCEDIALOG.3.2.STRING.TEXT
-msgid  "~Numerator"
-msgstr "~Osoittaja"
-
-#: smres.src#RID_DISTANCEDIALOG.3.3.STRING.TEXT
-msgid  "~Denominator"
-msgstr "~Nimittäjä"
-
-#: smres.src#RID_DISTANCEDIALOG.4.1.STRING.TEXT
-msgid  "Fraction bar"
-msgstr "Jakoviiva"
 
 #: smres.src#RID_DISTANCEDIALOG.4.2.STRING.TEXT
 msgid  "~Excess length"
 msgstr "~Lisäpituus"
 
-#: smres.src#RID_DISTANCEDIALOG.4.3.STRING.TEXT
-msgid  "~Weight"
-msgstr "Pa~ksuus"
-
 #: smres.src#RID_DISTANCEDIALOG.5.1.STRING.TEXT
 msgid  "Limits"
 msgstr "Rajat"
-
-#: smres.src#RID_DISTANCEDIALOG.5.2.STRING.TEXT
-msgid  "~Upper limit"
-msgstr "~Yläraja"
-
-#: smres.src#RID_DISTANCEDIALOG.5.3.STRING.TEXT
-msgid  "~Lower limit"
-msgstr "~Alaraja"
 
 #: smres.src#RID_DISTANCEDIALOG.6.1.STRING.TEXT
 msgid  "Brackets"
 msgstr "Sulkeet"
 
-#: smres.src#RID_DISTANCEDIALOG.6.2.STRING.TEXT
-msgid  "~Excess size (left/right)"
-msgstr "~Lisäkoko (vaakasuunnassa)"
-
 #: smres.src#RID_DISTANCEDIALOG.6.5.STRING.TEXT
 msgid  "~Excess size"
 msgstr "~Lisäkoko"
 
-#: smres.src#RID_DISTANCEDIALOG.7.1.STRING.TEXT
-msgid  "Matrix"
-msgstr "Matriisi"
-
-#: smres.src#RID_DISTANCEDIALOG.7.3.STRING.TEXT
-msgid  "~Column spacing"
-msgstr "~Sarakkeiden välit"
-
 #: smres.src#RID_DISTANCEDIALOG.8.1.STRING.TEXT
 msgid  "Symbols"
 msgstr "Symbolit"
-
-#: smres.src#RID_DISTANCEDIALOG.8.2.STRING.TEXT
-msgid  "~Primary height"
-msgstr "~Ensisijainen korkeus"
-
-#: smres.src#RID_DISTANCEDIALOG.8.3.STRING.TEXT
-msgid  "~Minimum spacing"
-msgstr "~Vähimmäisväli"
 
 #: smres.src#RID_DISTANCEDIALOG.9.1.STRING.TEXT
 msgid  "Operators"
@@ -1295,49 +1051,9 @@ msgstr "~Vasen"
 msgid  "~Right"
 msgstr "~Oikea"
 
-#: smres.src#RID_DISTANCEDIALOG.10.4.STRING.TEXT
-msgid  "~Top"
-msgstr "~Yläreuna"
-
-#: smres.src#RID_DISTANCEDIALOG.10.5.STRING.TEXT
-msgid  "~Bottom"
-msgstr "~Alareuna"
-
-#: smres.src#RID_ALIGNDIALOG.MODALDIALOG.TEXT
-msgid  "Alignment"
-msgstr "Tasaus"
-
-#: smres.src#RID_ALIGNDIALOG.2.RADIOBUTTON.TEXT
-msgid  "~Centered"
-msgstr "~Keskitetty"
-
-#: smres.src#RID_ALIGNDIALOG.1.FIXEDLINE.TEXT
-msgid  "Horizontal"
-msgstr "Vaakataso"
-
-#: smres.src#RID_PRINTOPTIONPAGE.TABPAGE.TEXT
-msgid  "Formula Options:Settings"
-msgstr "Kaava-asetukset:Asetukset"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.FIXEDLINE.TEXT
-msgid  "Print options"
-msgstr "Tulostusasetukset"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.CHECKBOX.TEXT
-msgid  "~Title row"
-msgstr "Otsikko~rivi"
-
 #: smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CHECKBOX.TEXT
 msgid  "~Formula text"
 msgstr "Kaavan teksti"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CHECKBOX.TEXT
-msgid  "B~order"
-msgstr "Re~unus"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINT_FORMAT.FIXEDLINE.TEXT
-msgid  "Print format"
-msgstr "Tulostusmuoto"
 
 #: smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RADIOBUTTON.TEXT
 msgid  "O~riginal size"
@@ -1351,10 +1067,6 @@ msgstr "Sovita sivulle"
 msgid  "~Scaling"
 msgstr "~Skaalaus"
 
-#: smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FIXEDLINE.TEXT
-msgid  "Miscellaneous options"
-msgstr "Muut valinnat"
-
 #: smres.src#RID_PRINTOPTIONPAGE.CB_IGNORE_SPACING.CHECKBOX.TEXT
 msgid  "Ig~nore ~~ and ` at the end of the line"
 msgstr "Ohita ~merkit ~~ ja ` rivin lopussa"
@@ -1363,73 +1075,21 @@ msgstr "Ohita ~merkit ~~ ja ` rivin lopussa"
 msgid  "Embed only used symbols (smaller file size)"
 msgstr "Sisällytä vain käytetyt symbolit (pienempi tiedostokoko)"
 
-#: smres.src#RID_SYMBOLDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Symbol set"
-msgstr "S~ymbolijoukko"
-
 #: smres.src#RID_SYMBOLDIALOG.2.FIXEDTEXT.TEXT
 msgid  "Unknown"
 msgstr "tuntematon"
-
-#: smres.src#RID_SYMBOLDIALOG.2.PUSHBUTTON.TEXT
-msgid  "~Insert"
-msgstr "~Lisää"
-
-#: smres.src#RID_SYMBOLDIALOG.3.PUSHBUTTON.TEXT
-msgid  "~Close"
-msgstr "~Sulje"
-
-#: smres.src#RID_SYMBOLDIALOG.1.PUSHBUTTON.TEXT
-msgid  "~Edit..."
-msgstr "~Muokkaa..."
-
-#: smres.src#RID_SYMDEFINEDIALOG.MODALDIALOG.TEXT
-msgid  "Edit Symbols"
-msgstr "Muokkaa symboleja"
-
-#: smres.src#RID_SYMDEFINEDIALOG.1.FIXEDTEXT.TEXT
-msgid  "~Old symbol"
-msgstr "~Vanha symboli"
-
-#: smres.src#RID_SYMDEFINEDIALOG.2.FIXEDTEXT.TEXT
-msgid  "O~ld symbol set"
-msgstr "Va~nha symbolijoukko"
-
-#: smres.src#RID_SYMDEFINEDIALOG.9.FIXEDTEXT.TEXT
-msgid  "~Symbol"
-msgstr "~Symboli"
-
-#: smres.src#RID_SYMDEFINEDIALOG.10.FIXEDTEXT.TEXT
-msgid  "Symbol s~et"
-msgstr "S~ymbolijoukko"
-
-#: smres.src#RID_SYMDEFINEDIALOG.FT_FONTS_SUBSET.FIXEDTEXT.TEXT
-msgid  "~Subset"
-msgstr "~Osajoukko"
-
-#: smres.src#RID_SYMDEFINEDIALOG.4.FIXEDTEXT.TEXT
-msgid  "~Typeface"
-msgstr "~Kirjasinlaji"
 
 #: smres.src#RID_SYMDEFINEDIALOG.1.PUSHBUTTON.TEXT
 msgid  "~Add"
 msgstr "Lis~ää"
 
-#: smres.src#RID_SYMDEFINEDIALOG.3.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr "~Poista"
+#: smres.src#RID_NOMATHTYPEFACEWARNING.WARNINGBOX.MESSAGE
+msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr "\"StarMath\"-fonttia ei ole asennettu.\n%PRODUCTNAME Math ei toimi kunnolla ilman tätä fonttia.\nAsenna fontti ja käynnistä %PRODUCTNAME Math uudelleen."
 
-#: smres.src#RID_FONTREGULAR.STRING.TEXT
-msgid  "Standard"
-msgstr "Normaali"
-
-#: smres.src#RID_FONTITALIC.STRING.TEXT
-msgid  "Italic"
-msgstr "Kursivointi"
-
-#: smres.src#RID_FONTBOLD.STRING.TEXT
-msgid  "Bold"
-msgstr "Lihavointi"
+#: smres.src#RID_DEFAULTSAVEQUERY.QUERYBOX.MESSAGE
+msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
+msgstr "Tallennetaanko muutokset oletuksiksi?\n\nAsetuksia käytetään kaikkiin uusiin kaavoihin."
 
 #: smres.src#RID_VIEWMENU.SID_VIEW050.MENUITEM.TEXT
 msgid  "~View 50%"
@@ -1451,153 +1111,17 @@ msgstr "~Lähennä"
 msgid  "Zoom ~Out"
 msgstr "L~oitonna"
 
-#: smres.src#RID_VIEWMENU.SID_ADJUST.MENUITEM.TEXT
-msgid  "~Display All"
-msgstr "~Näytä kaikki"
-
-#: smres.src#RID_VIEWMENU.SID_DRAW.MENUITEM.TEXT
-msgid  "U~pdate"
-msgstr "~Päivitä"
-
-#: smres.src#RID_DISTANCEMENU.4.MENUITEM.TEXT
-msgid  "Fraction Bars"
-msgstr "Jakoviivat"
-
-#: smres.src#RID_DISTANCEMENU.7.MENUITEM.TEXT
-msgid  "Matrices"
-msgstr "Matriisit"
-
-#: smres.src#RID_FONTMENU.1.MENUITEM.TEXT
-msgid  "Variables"
-msgstr "Muuttujat"
-
-#: smres.src#RID_FONTMENU.2.MENUITEM.TEXT
-msgid  "Functions"
-msgstr "Funktiot"
-
-#: smres.src#RID_FONTMENU.3.MENUITEM.TEXT
-msgid  "Numbers"
-msgstr "Luvut"
-
-#: smres.src#RID_FONTMENU.4.MENUITEM.TEXT
-msgid  "Text"
-msgstr "Teksti"
-
-#: smres.src#RID_FONTMENU.5.MENUITEM.TEXT
-msgid  "Serif"
-msgstr "Antiikva"
-
-#: smres.src#RID_FONTMENU.6.MENUITEM.TEXT
-msgid  "Sans"
-msgstr "Groteski"
-
-#: smres.src#RID_FONTMENU.7.MENUITEM.TEXT
-msgid  "Fixed"
-msgstr "Kiinteä"
-
-#: smres.src#CMDBOXWINDOW_TEXT.#DEFINE.TEXT
-msgid  "Commands"
-msgstr "Komennot"
-
-#: smres.src#RID_DOCUMENTSTR.STRING.TEXT
-msgid  "Formula"
-msgstr "Kaava"
-
-#: smres.src#STR_STATSTR_READING.STRING.TEXT
-msgid  "Loading document..."
-msgstr "Ladataan asiakirjaa..."
-
-#: smres.src#STR_STATSTR_WRITING.STRING.TEXT
-msgid  "Saving document..."
-msgstr "Tallennetaan asiakirjaa..."
-
-#: smres.src#STR_MATH_DOCUMENT_FULLTYPE_CURRENT.STRING.TEXT
-msgid  "%PRODUCTNAME %PRODUCTVERSION Formula"
-msgstr "%PRODUCTNAME %PRODUCTVERSION -kaava"
-
-#: smres.src#RID_SYMBOLFILESSTR.STRING.TEXT
-msgid  "Symbol files (*.sms)"
-msgstr "Symbolitiedostot (*.sms)"
-
-#: smres.src#RID_ALLFILESSTR.STRING.TEXT
-msgid  "All Files (*.*)"
-msgstr "Kaikki tiedostot (*.*)"
-
 #: smres.src#RID_ERR_IDENT.STRING.TEXT
 msgid  "ERROR : "
 msgstr "VIRHE: "
-
-#: smres.src#RID_ERR_UNKOWN.STRING.TEXT
-msgid  "Unknown error occurred"
-msgstr "Ilmeni tuntematon virhe"
 
 #: smres.src#RID_ERR_UNEXPECTEDCHARACTER.STRING.TEXT
 msgid  "Unexpected character"
 msgstr "Odottamaton merkki"
 
-#: smres.src#RID_ERR_OVERFLOW.STRING.TEXT
-msgid  "Formula entry too complex"
-msgstr "Kaavamerkintä liian monimutkainen"
-
-#: smres.src#RID_ERR_LGROUPEXPECTED.STRING.TEXT
-msgid  "'{' expected"
-msgstr "Tähän tarvitaan '{'"
-
-#: smres.src#RID_ERR_RGROUPEXPECTED.STRING.TEXT
-msgid  "'}' expected"
-msgstr "Tähän tarvitaan '}'"
-
-#: smres.src#RID_ERR_LBRACEEXPECTED.STRING.TEXT
-msgid  "'(' expected"
-msgstr "Tähän tarvitaan '('"
-
-#: smres.src#RID_ERR_RBRACEEXPECTED.STRING.TEXT
-msgid  "')' expected"
-msgstr "Tähän tarvitaan ')'"
-
-#: smres.src#RID_ERR_FUNCEXPECTED.STRING.TEXT
-msgid  "Function expected"
-msgstr "Tähän tarvitaan funktio"
-
-#: smres.src#RID_ERR_UNOPEREXPECTED.STRING.TEXT
-msgid  "Unary operator expected"
-msgstr "Tähän tarvitaan yksipaikkainen operaattori"
-
-#: smres.src#RID_ERR_BINOPEREXPECTED.STRING.TEXT
-msgid  "Binary operator expected"
-msgstr "Tähän tarvitaan kaksipaikkainen operaattori"
-
-#: smres.src#RID_ERR_SYMBOLEXPECTED.STRING.TEXT
-msgid  "Symbol expected"
-msgstr "Tähän tarvitaan symboli"
-
-#: smres.src#RID_ERR_IDENTEXPECTED.STRING.TEXT
-msgid  "Identifier expected"
-msgstr "Tähän tarvitaan tunniste"
-
-#: smres.src#RID_ERR_POUNDEXPECTED.STRING.TEXT
-msgid  "'#' expected"
-msgstr "Tähän tarvitaan '#'"
-
-#: smres.src#RID_ERR_COLOREXPECTED.STRING.TEXT
-msgid  "Color required"
-msgstr "Tähän tarvitaan väri"
-
-#: smres.src#RID_ERR_LPARENTEXPECTED.STRING.TEXT
-msgid  "Left limit expected"
-msgstr "Tähän tarvitaan vasen raja"
-
-#: smres.src#RID_ERR_RPARENTEXPECTED.STRING.TEXT
-msgid  "Right limit expected"
-msgstr "Tähän tarvitaan oikean puoleinen raja"
-
 #: smres.src#RID_ERR_RIGHTEXPECTED.STRING.TEXT
 msgid  "'RIGHT' expected"
 msgstr "Tähän tarvitaan 'RIGHT'"
-
-#: smres.src#RID_MATH_TOOLBOX.STRING.TEXT
-msgid  "Main Toolbar"
-msgstr "Päätyökalurivi"
 
 #: smres.src#RID_PRINTUIOPTIONS.ITEM1.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME %s"

@@ -36,35 +36,10 @@ msgstr ""
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Καλώς ήλθατε στο %PRODUCTNAME %PRODUCTVERSION"
 
-#: migration/wizard.src#STR_STATE_WELCOME.STRING.TEXT
-#, fuzzy
-msgid  "Welcome"
-msgstr "Καλώς ήλθατε"
-
-#: migration/wizard.src#STR_STATE_LICENSE.STRING.TEXT
-#, fuzzy
-msgid  "License Agreement"
-msgstr "Άδεια χρήσης"
-
-#: migration/wizard.src#STR_STATE_MIGRATION.STRING.TEXT
-#, fuzzy
-msgid  "Personal Data"
-msgstr "Προσωπικά δεδομένα"
-
-#: migration/wizard.src#STR_STATE_USER.STRING.TEXT
-#, fuzzy
-msgid  "User name"
-msgstr "Όνομα χρήστη"
-
 #: migration/wizard.src#STR_STATE_UPDATE_CHECK.STRING.TEXT
 #, fuzzy
 msgid  "Online Update"
 msgstr "Ενημέρωση μέσω διαδικτύου"
-
-#: migration/wizard.src#STR_STATE_REGISTRATION.STRING.TEXT
-#, fuzzy
-msgid  "Registration"
-msgstr "Δήλωση προϊόντος"
 
 #: migration/wizard.src#STR_WELCOME_MIGRATION.STRING.TEXT
 #, fuzzy
@@ -72,19 +47,17 @@ msgid  "This wizard will guide you through the license agreement, the transfer o
 msgstr "Αυτός ο Αυτόματος πιλότος θα σας οδηγήσει στην άδεια χρήσης, τη μεταφορά των δεδομένων χρήστη από την %OLD_VERSION και την δήλωση του %PRODUCTNAME.\n\nΠατήστε 'Επόμενο' για συνέχεια."
 
 #: migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.STRING.TEXT
-#, fuzzy
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Αυτός ο αυτόματος πιλότος θα σας καθοδηγήσει στην άδεια χρήσης και την δήλωση του %PRODUCTNAME.\n\nΠατήστε 'Επόμενο' για συνέχεια. "
-
-#: migration/wizard.src#STR_FINISH.STRING.TEXT
-#, fuzzy
-msgid  "~Finish"
-msgstr "Τέ~λος"
+msgstr "Αυτός ο αυτόματος πιλότος θα σας καθοδηγήσει στην άδεια χρήσης και την δήλωση του %PRODUCTNAME.\n\nΠατήστε 'Επόμενο' για συνέχεια."
 
 #: migration/wizard.src#STR_REGISTRATION_OOO.STRING.TEXT
 #, fuzzy
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
 msgstr "Τώρα έχετε την ευκαιρία να υποστηρίξετε και να βοηθήσετε την πιο γρήγορα αναπτυσσόμενη κοινότητα του ελεύθερου λογισμικού σε όλο τον κόσμο.\n\nΒοηθήστε μας να αποδείξουμε ότι το %PRODUCTNAME έχει κερδίσει ήδη ένα σημαντικό μερίδιο της αγοράς και εγγραφείτε ως χρήστης της εφαρμογής.\n\nΗ δήλωση εγγραφής είναι εθελοντική και δεν σας δεσμεύει με κάποια υποχρέωση."
+
+#: migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ERRORBOX.MESSAGE
+msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr "Παρουσιάστηκε σφάλμα κατά την εκκίνηση του προγράμματος ανάγνωσης ιστοσελίδων.\nΠαρακαλούμε ελέγξτε το %PRODUCTNAME και τις ρυθμίσεις του περιηγητή σας."
 
 #: migration/wizard.src#QB_ASK_DECLINE.QUERYBOX.MESSAGE
 #, fuzzy
@@ -92,9 +65,8 @@ msgid  "Do you really want to decline?"
 msgstr "Θέλετε σίγουρα να την αρνηθείτε;"
 
 #: migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "Αυτός ο αυτόματος πιλότος θα σας καθοδηγήσει στην άδεια χρήσης και την δήλωση του %PRODUCTNAME.\n\nΠατήστε 'Επόμενο' για συνέχεια. "
+msgstr "Αυτός ο αυτόματος πιλότος θα σας καθοδηγήσει στην άδεια χρήσης και την δήλωση του %PRODUCTNAME.\n\nΠατήστε 'Επόμενο' για συνέχεια."
 
 #: migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
@@ -121,16 +93,6 @@ msgstr "2."
 msgid  "Click 'Accept' to accept the terms of the Agreement."
 msgstr "Κάντε κλικ στην 'Αποδοχή' για να αποδεχτείτε τους όρους της Άδειας."
 
-#: migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Scroll Do~wn"
-msgstr "Κύλιση κάτ~ω"
-
-#: migration/wizard.src#STR_LICENSE_ACCEPT.STRING.TEXT
-#, fuzzy
-msgid  "~Accept"
-msgstr "~Αποδοχή"
-
 #: migration/wizard.src#STR_LICENSE_DECLINE.STRING.TEXT
 #, fuzzy
 msgid  "~Decline"
@@ -147,14 +109,8 @@ msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODU
 msgstr "Τα περισσότερα προσωπικά δεδομένα από την εγκατάσταση του %OLDPRODUCT μπορούν να ξαναχρησιμοποιηθούν στο %PRODUCTNAME %PRODUCTVERSION.\n\nΑν δεν θέλετε να ξαναχρησιμοποιηθεί καμία ρύθμιση στο %PRODUCTNAME %PRODUCTVERSION, απενεργοποιείστε το πλαίσιο ελέγχου."
 
 #: migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr "Το %PRODUCTNAME ελέγχει αυτόματα ανά τακτά χρονικά διαστήματα για νέες εκδόσεις.\nΗ Ενημέρωση μέσω διαδικτύου δεν αποστέλλει προσωπικά δεδομένα.\nΘα ειδοποιηθείτε μόλις υπάρχει διαθέσιμη μια νέα έκδοση.\n\nΜπορείτε να ρυθμίσετε αυτή τη λειτουργία μέσω του μενού Εργαλεία / Επιλογές... / %PRODUCTNAME / Ενημέρωση μέσω διαδικτύου."
-
-#: migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Check for updates automatically"
-msgstr "Αυτόματος έλε~γχος για ενημερώσεις"
+msgstr "Το %PRODUCTNAME ελέγχει αυτόματα ανά τακτά χρονικά διαστήματα για νέες εκδόσεις.\nΗ Ενημέρωση μέσω διαδικτύου δεν αποστέλλει προσωπικά δεδομένα.\nΘα ειδοποιηθείτε μόλις υπάρχει διαθέσιμη μια νέα έκδοση.\n\nΜπορείτε να ρυθμίσετε αυτή τη λειτουργία μέσω του μενού Εργαλεία / Επιλογές... / %PRODUCTNAME / Ενημέρωση μέσω Διαδικτύου."
 
 #: migration/wizard.src#TP_USER.FT_USER_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
@@ -165,26 +121,6 @@ msgstr "Δώστε το όνομά σας και τα αρχικά σας παρ
 #, fuzzy
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
 msgstr "Το όνομα χρήστη θα χρησιμοποιηθεί στις ιδιότητες των εγγράφων, στα πρότυπα και όταν κάνετε καταγραφή των αλλαγών στα έγγραφα."
-
-#: migration/wizard.src#TP_USER.FT_USER_FIRST.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~First name"
-msgstr "Ό~νομα"
-
-#: migration/wizard.src#TP_USER.FT_USER_LAST.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Last name"
-msgstr "Ε~πίθετο"
-
-#: migration/wizard.src#TP_USER.FT_USER_INITIALS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Initials"
-msgstr "Αρχ~ικά"
-
-#: migration/wizard.src#TP_USER.FT_USER_FATHER.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "~Father's name"
-msgstr "Όνομα πα~τρός"
 
 #: migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
@@ -218,91 +154,103 @@ msgstr "Ελπίζουμε πως θα απολαύσετε το %PRODUCTNAME.\n
 
 #: app/desktop.src#STR_RECOVER_QUERY.STRING.TEXT
 msgid  "Should the file \"$1\" be restored?"
-msgstr "Να γίνει επαναφορά του αρχείου \"$1\";"
+msgstr "Να γίνει επαναφορά του \"$1\" αρχείου;"
 
-#: app/desktop.src#STR_RECOVER_TITLE.STRING.TEXT
-msgid  "File Recovery"
-msgstr "Ανάκτηση αρχείου"
+#: app/desktop.src#STR_RECOVER_PREPARED.WARNINGBOX.MESSAGE
+msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
+msgstr "Παρουσιάστηκε ανεπανόρθωτο σφάλμα.\n\nΌλα τα τροποποιημένα αρχεία έχουν αποθηκευτεί και μπορούν\nπιθανότατα να ανακτηθούν κατά την επανεκκίνηση του προγράμματος."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.STRING.TEXT
 msgid  "The application cannot be started. "
-msgstr "Δεν είναι δυνατή η εκκίνηση της εφαρμογής."
+msgstr "Δεν είναι δυνατή η εκκίνηση της εφαρμογής. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.STRING.TEXT
 msgid  "The configuration directory \"$1\" could not be found."
-msgstr "Δεν ήταν δυνατή η εύρεση του καταλόγου παραμέτρων \"$1\"."
+msgstr "Δεν ήταν δυνατή η εύρεση του καταλόγου \"$1\" παραμέτρων."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.STRING.TEXT
+#, fuzzy
 msgid  "The installation path is invalid."
 msgstr "Η διαδρομή εγκατάστασης δεν είναι έγκυρη."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.STRING.TEXT
+#, fuzzy
 msgid  "The installation path is not available."
 msgstr "Η διαδρομή εγκατάστασης δεν είναι διαθέσιμη."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.STRING.TEXT
+#, fuzzy
 msgid  "An internal error occurred."
 msgstr "Παρουσιάστηκε εσωτερικό σφάλμα."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.STRING.TEXT
+#, fuzzy
 msgid  "The configuration file \"$1\" is corrupt."
 msgstr "Το αρχείο διαμόρφωσης \"$1\" είναι κατεστραμμένο."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.STRING.TEXT
 msgid  "The configuration file \"$1\" was not found."
-msgstr "Δεν ήταν δυνατή η εύρεση του αρχείου διαμόρφωσης \"$1\"."
+msgstr "Δεν ήταν δυνατή η εύρεση του αρχείου \"$1\" διαμόρφωσης."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.STRING.TEXT
+#, fuzzy
 msgid  "The configuration file \"$1\" does not support the current version."
 msgstr "Το αρχείο διαμόρφωσης \"$1\" δεν υποστηρίζει την τρέχουσα έκδοση."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "The user interface language cannot be determined."
 msgstr "Δεν είναι δυνατός ο εντοπισμός της γλώσσας του γλωσσικού περιβάλοντος του χρήστη."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.STRING.TEXT
+#, fuzzy
 msgid  "The component manager is not available."
 msgstr "Η διαχείριση στοιχείων δεν είναι διαθέσιμη."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.STRING.TEXT
+#, fuzzy
 msgid  "The configuration service is not available."
 msgstr "Η υπηρεσία διαμόρφωσης δεν είναι διαθέσιμη."
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.STRING.TEXT
 msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
-msgstr ""
+msgstr "Το πρόγραμμα ήδη εκτελείται σε άλλη διεργασία. Βγείτε και από την άλλη διεργασία και ξαναδοκιμάστε."
 
 #: app/desktop.src#STR_ASK_START_SETUP_MANUALLY.STRING.TEXT
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr "Εκτελέστε την εφαρμογή εγκατάστασης για να επιδιορθώσετε την εγκατάσταση από το CD ή το φάκελο όπου περιέχονται τα πακέτα εγκατάστασης. "
+msgstr "Εκτελέστε την εφαρμογή εγκατάστασης για να επιδιορθώσετε την εγκατάσταση από το CD ή το φάκελο όπου περιέχονται τα πακέτα εγκατάστασης."
 
 #: app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.STRING.TEXT
+#, fuzzy
 msgid  "The startup settings for accessing the central configuration are incomplete. "
 msgstr "Οι ρυθμίσεις εκκίνησης για την προσπέλαση της κεντρικής διαμόρφωσης δεν είναι ολοκληρωμένες. "
 
 #: app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.STRING.TEXT
 msgid  "A connection to the central configuration could not be established. "
-msgstr "Η σύνδεση μα την κεντρική διαμόρφωση δεν είναι δυνατόν να δημιουργηθεί."
+msgstr "Η σύνδεση μα την κεντρική διαμόρφωση δεν είναι δυνατόν να δημιουργηθεί. "
 
 #: app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.STRING.TEXT
+#, fuzzy
 msgid  "You cannot access the central configuration because of missing access rights. "
 msgstr "Δεν ήταν δυνατή η προσπέλαση της κεντρικής διαμόρφωσης λόγω ελλιπών άδειων. "
 
 #: app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.STRING.TEXT
+#, fuzzy
 msgid  "A general error occurred while accessing your central configuration. "
 msgstr "Παρουσιάστηκε γενικό σφάλμα κατά την προσπέλαση της κεντρικής διαμόρφωσης. "
 
 #: app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.STRING.TEXT
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr "Δεν είναι δυνατή η αποθήκευση των προσωπικών σας ρυθμίσεων λόγω ελλιπών αδειών."
+msgstr "Δεν είναι δυνατή η αποθήκευση των προσωπικών σας ρυθμίσεων λόγω ελλιπών αδειών. "
 
 #: app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
 msgstr "Είναι αδύνατη η εκκίνηση του %PRODUCTNAME λόγω σφάλματος προσπέλασης των δεδομένων διαμόρφωσης του %PRODUCTNAME.\n\nΠαρακαλούμε επικοινωνήστε με το διαχειριστή του συστήματός σας."
 
-#: app/desktop.src#STR_INTERNAL_ERRMSG.STRING.TEXT
-msgid  "The following internal error has occurred: "
-msgstr "Παρουσιάστηκε το ακόλουθο εσωτερικό σφάλμα: "
+#: app/desktop.src#QBX_USERDATALOCKED.QUERYBOX.MESSAGE
+msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
+msgstr "Είτε μια άλλη διεργασία του %PRODUCTNAME χρησιμοποιεί ήδη τα προσωπικά σας δεδομένα ή αυτά είναι κλειδωμένα.\nΗ ταυτόχρονη προσπέλασή τους μπορεί να οδηγήσει σε ασυνέπειες των προσωπικών σας δεδομένων. Πριν συνεχίσετε, σιγουρευτείτε ότι ο χρήστης '$u' έχει κλείσει το %PRODUCTNAME στον υπολογιστή '$h'.\n\nΘέλετε πραγματικά να συνεχίσετε;"
 
 #: app/desktop.src#STR_TITLE_USERDATALOCKED.STRING.TEXT
 #, fuzzy
@@ -310,18 +258,25 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: app/desktop.src#EBX_ERR_PRINTDISABLED.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Printing is disabled. No documents can be printed."
 msgstr "Η εκτύπωση απενεργοποιήθηκε. Δεν είναι δυνατή η εκτύπωση εγγράφων."
 
+#: app/desktop.src#INFOBOX_EXPIRED.INFOBOX.MESSAGE
+msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
+msgstr "Η Δοκιμαστική Περίοδος έχει λήξει. Για περισσότερες πληροφορίες αναφορικά με το %PRODUCTNAME,\nεπισκεφθείτε την ιστοσελίδα http://www.openoffice.org"
+
 #: app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.STRING.TEXT
+#, fuzzy
 msgid  "The path manager is not available.\n"
 msgstr "Η διαχείριση διαδρομών δεν είναι διαθέσιμη.\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.STRING.TEXT
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr "Η εγκατάσταση από το χρήστη του  %PRODUCTNAME δεν ολοκληρώθηκε λόγω ανεπαρκούς ελεύθερου χώρου. Παρακαλώ ελευθερώστε αρκετό χώρο στην παρακάτω τοποθεσία και επανεκκινήστε το  %PRODUCTNAME:\n\n"
+msgstr "Η εγκατάσταση από το χρήστη του %PRODUCTNAME δεν ολοκληρώθηκε λόγω ανεπαρκούς ελεύθερου χώρου. Παρακαλώ ελευθερώστε αρκετό χώρο στην παρακάτω τοποθεσία και επανεκκινήστε το %PRODUCTNAME:\n\n"
 
 #: app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
 msgstr "Η εγκατάσταση από το χρήστη του %PRODUCTNAME δεν ολοκληρώθηκε λόγω ανεπαρκών προνομίων πρόσβασης. Παρακαλώ βεβαιωθείτε ότι έχετε επαρκή προνόμια πρόσβασης στην παρακάτω τοποθεσία και επανεκκινήστε το %PRODUCTNAME:\n\n"
 
@@ -345,20 +300,10 @@ msgstr "[Εισάγετε \"yes\" ή \"no\"]:"
 msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "Δεν ήταν σωστή η πληκτρολόγηση σας. Παρακαλώ εισάγετε \"yes\" ή \"no\":"
 
-#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.STRING.TEXT
-#, fuzzy
-msgid  "YES"
-msgstr "YES"
-
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.STRING.TEXT
 #, fuzzy
 msgid  "Y"
 msgstr "Y"
-
-#: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.STRING.TEXT
-#, fuzzy
-msgid  "NO"
-msgstr "NO"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.STRING.TEXT
 #, fuzzy
@@ -371,24 +316,16 @@ msgid  "unopkg cannot be started. The lock file indicates it as already running.
 msgstr "αδυναμία εκκίνησης unopkg. Το αρχείο κλειδώματος δείχνει ότι εκτελείται ήδη. Αν αυτό δεν ισχύει, διαγράψτε το αρχείο κλειδώματος που βρίσκεται στο:"
 
 #: deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.STRING.TEXT
-#, fuzzy
 msgid  "ERROR: "
-msgstr "ΣΦΑΛΜΑ:"
-
-#: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.STRING.TEXT
-#, fuzzy
-msgid  "Unknown"
-msgstr "Άγνωστη"
+msgstr "ΣΦΑΛΜΑ - ERROR: "
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.STRING.TEXT
-#, fuzzy
 msgid  "Extension requires at least Apache OpenOffice %VERSION"
-msgstr "Οι επεκτάσεις απαιτούν να είναι εγκατεστημένη η OpenOffice.org %VERSION τουλάχιστον."
+msgstr "Οι επεκτάσεις απαιτούν να είναι εγκατεστημένη τουλάχιστον η έκδοση του Apache OpenOffice %VERSION"
 
 #: deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.STRING.TEXT
-#, fuzzy
 msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
-msgstr "Οι επεκτάσεις δεν υποστηρίζουν εκδόσεις μεγαλύτερες από: OpenOffice.org %VERSION"
+msgstr "Η επέκταση δεν υποστηρίζει εκδόσεις μεγαλύτερες από την OpenOffice.org %VERSION"
 
 #: deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.STRING.TEXT
 #, fuzzy
@@ -411,59 +348,17 @@ msgid  "This library name already exists. Please choose a different name."
 msgstr "Το όνομα της βιβλιοθήκης υπάρχει ήδη. Παρακαλούμε επιλέξτε διαφορετικό όνομα."
 
 #: deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.STRING.TEXT
-#, fuzzy
 msgid  "Enabling: "
-msgstr "Ενεργοποίηση:"
+msgstr "Ενεργοποίηση: "
 
 #: deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.STRING.TEXT
-#, fuzzy
 msgid  "Disabling: "
-msgstr "Απενεργοποίηση:"
-
-#: deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.STRING.TEXT
-#, fuzzy
-msgid  "Cannot detect media-type: "
-msgstr "Αδύνατη η ανίχνευση του τύπου του μέσου: "
-
-#: deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.STRING.TEXT
-#, fuzzy
-msgid  "This media-type is not supported: "
-msgstr "Αυτός ο τύπος μέσου δεν υποστηρίζεται: "
-
-#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.STRING.TEXT
-#, fuzzy
-msgid  "An error occurred while enabling: "
-msgstr "Παρουσιάστηκε ένα σφάλμα κατά την ενεργοποίηση: "
-
-#: deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.STRING.TEXT
-#, fuzzy
-msgid  "An error occurred while disabling: "
-msgstr "Παρουσιάστηκε ένα σφάλμα κατά την απενεργοποίηση: "
-
-#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.STRING.TEXT
-#, fuzzy
-msgid  "Configuration Schema"
-msgstr "Σχήμα ρύθμισης"
-
-#: deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.STRING.TEXT
-#, fuzzy
-msgid  "Configuration Data"
-msgstr "Δεδομένα ρύθμισης"
-
-#: deployment/registry/help/dp_help.src#RID_STR_HELP.STRING.TEXT
-#, fuzzy
-msgid  "Help"
-msgstr "Βοήθεια"
+msgstr "Απενεργοποίηση: "
 
 #: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.STRING.TEXT
 #, fuzzy
 msgid  "The extension cannot be installed because:\n"
 msgstr "Δεν είναι δυνατή η εγκατάσταση της επέκτασης λόγω:\n"
-
-#: deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.STRING.TEXT
-#, fuzzy
-msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr "Η επέκταση δεν θα εγκατασταθεί επειδή προέκυψε ένα σφάλμα στα αρχεία Βοήθειας:\n"
 
 #: deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.STRING.TEXT
 #, fuzzy
@@ -492,12 +387,11 @@ msgstr "Στοιχείο UNO Python"
 
 #: deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.STRING.TEXT
 msgid  "UNO Components"
-msgstr ""
+msgstr "Στοιχεία UNO"
 
 #: deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.STRING.TEXT
-#, fuzzy
 msgid  "UNO RDB Type Library"
-msgstr "Βιβλιοθήκη τύπου UNO Python"
+msgstr "Βιβλιοθήκη Tύπου UNO RDB"
 
 #: deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.STRING.TEXT
 #, fuzzy
@@ -505,19 +399,16 @@ msgid  "UNO Java Type Library"
 msgstr "Βιβλιοθήκη τύπου UNO Java"
 
 #: deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.STRING.TEXT
-#, fuzzy
 msgid  "Copying: "
-msgstr "Αντιγραφή:"
+msgstr "Αντιγραφή: "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.STRING.TEXT
-#, fuzzy
 msgid  "Error while adding: "
-msgstr "Σφάλμα κατά την προσθήκη:"
+msgstr "Σφάλμα κατά την προσθήκη: "
 
 #: deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.STRING.TEXT
-#, fuzzy
 msgid  "Error while removing: "
-msgstr "Σφάλμα κατά την απομάκρυνση:"
+msgstr "Σφάλμα κατά την απομάκρυνση: "
 
 #: deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.STRING.TEXT
 #, fuzzy
@@ -534,25 +425,29 @@ msgstr "Αυτή η επέκταση δεν υπάρχει: "
 msgid  "Synchronizing repository for %NAME extensions"
 msgstr "Γίνεται συγχρονισμός αποθετηρίου για επεκτάσεις %NAME"
 
+#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WARNINGBOX.MESSAGE
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
+msgstr "Πρόκειται να εγκαταστήσετε μια έκδοση $NEW της επέκτασης \\'$NAME\\'.\nΗ νεότερη έκδοση $DEPLOYED είναι ήδη εγκατεστημένη.\nΠατήστε \\'OK\\' για να συνεχίσετε με την εγκατάσταση.\nΠατήστε \\'Ακύρωση\\' για να εγκαταλείψετε την εγκατάσταση."
+
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.STRING.TEXT
-#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Πρόκειται να εγκαταστήσετε μια έκδοση $NEW της  επέκτασης \\'$NAME\\'.\nΗ νεότερη έκδοση $DEPLOYED  με το όνομα \\'$OLDNAME\\' είναι ήδη εγκατεστημένη.\nΠατήστε  \\'OK\\' για να αντικαταστήσετε την εγκατεστημένη  επέκταση.\nΠατήστε \\'Ακύρωση\\' για να εγκαταλείψετε την εγκατάσταση."
+msgstr "Πρόκειται να εγκαταστήσετε μια έκδοση $NEW της επέκτασης \\'$NAME\\'.\nΗ νεότερη έκδοση $DEPLOYED με το όνομα \\'$OLDNAME\\', είναι ήδη εγκατεστημένη.\nΠατήστε \\'OK\\' για να αντικαταστήσετε την εγκατεστημένη επέκταση.\nΠατήστε \\'Ακύρωση\\' για να εγκαταλείψετε την εγκατάσταση."
+
+#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WARNINGBOX.MESSAGE
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
+msgstr "Πρόκειται να εγκαταστήσετε μια έκδοση $NEW της επέκτασης \\'$NAME\\'.\nΑυτή η έκδοση είναι ήδη εγκατεστημένη.\nΠατήστε \\'OK\\' για να αντικαταστήσετε την εγκατεστημένη επέκταση.\nΠατήστε \\'Ακύρωση\\' για να εγκαταλείψετε την εγκατάσταση."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.STRING.TEXT
-#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThat version, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Πρόκειται να εγκαταστήσετε μια έκδοση $NEW της  επέκτασης \\'$NAME\\'.\n  Αυτή η έκδοση με το όνομα \\'$OLDNAME\\', είναι ήδη εγκατεστημένη.\nΠατήστε  \\'OK\\'  για να αντικαταστήσετε την εγκατεστημένη  επέκταση.\nΠατήστε \\'Ακύρωση\\' για να εγκαταλείψετε την εγκατάσταση."
+msgstr "Πρόκειται να εγκαταστήσετε μια έκδοση $NEW της επέκτασης \\'$NAME\\'.\nΑυτή η έκδοση με το όνομα \\'$OLDNAME\\', είναι ήδη εγκατεστημένη.\nΠατήστε \\'OK\\' για να αντικαταστήσετε την εγκατεστημένη επέκταση.\nΠατήστε \\'Ακύρωση\\' για να εγκαταλείψετε την εγκατάσταση."
+
+#: deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WARNINGBOX.MESSAGE
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
+msgstr "Πρόκειται να εγκαταστήσετε μια έκδοση $NEW της επέκτασης \\'$NAME\\'.\nΗ νεότερη έκδοση $DEPLOYED είναι ήδη εγκατεστημένη.\nΠατήστε \\'OK\\' για να αντικαταστήσετε την εγκατεστημένη επέκταση.\nΠατήστε \\'Ακύρωση\\' για να εγκαταλείψετε την εγκατάσταση."
 
 #: deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.STRING.TEXT
-#, fuzzy
 msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\nClick \\'OK\\' to replace the installed extension.\nClick \\'Cancel\\' to stop the installation."
-msgstr "Πρόκειται να εγκαταστήσετε μια έκδοση $NEW της  επέκτασης \\'$NAME\\'.\nΗ παλαιότερη έκδοση $DEPLOYED με το όνομα \\'$OLDNAME\\', είναι ήδη εγκατεστημένη.\nΠατήστε  \\'OK\\'  για να αντικαταστήσετε την εγκατεστημένη  επέκταση.\nΠατήστε \\'Ακύρωση\\' για να εγκαταλείψετε την εγκατάσταση."
-
-#: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.MODALDIALOG.TEXT
-#, fuzzy
-msgid  "System dependencies check"
-msgstr "Έλεγχος εξαρτήσεων συστήματος"
+msgstr "Πρόκειται να εγκαταστήσετε μια έκδοση $NEW της επέκτασης \\'$NAME\\'.\nΗ παλαιότερη έκδοση $DEPLOYED με το όνομα \\'$OLDNAME\\', είναι ήδη εγκατεστημένη.\nΠατήστε \\'OK\\' για να αντικαταστήσετε την εγκατεστημένη επέκταση.\nΠατήστε \\'Ακύρωση\\' για να εγκαταλείψετε την εγκατάσταση."
 
 #: deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FIXEDTEXT.TEXT
 #, fuzzy
@@ -560,54 +455,13 @@ msgid  "The extension cannot be installed as the following\nsystem dependencies 
 msgstr "Δεν είναι δυνατή η εγκατάσταση της επέκτασης μιας και δεν ικανοποιούνται\nοι παρακάτω εξαρτήσεις του συστήματος:"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.STRING.TEXT
-#, fuzzy
 msgid  "Add Extension(s)"
-msgstr "Προσθήκη επεκτάσεων"
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.STRING.TEXT
-#, fuzzy
-msgid  "~Remove"
-msgstr "Απο~μάκρυνση"
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.STRING.TEXT
-#, fuzzy
-msgid  "~Enable"
-msgstr "~Ενεργοποίηση"
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.STRING.TEXT
-#, fuzzy
-msgid  "~Disable"
-msgstr "Α~πενεργοποίηση"
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.STRING.TEXT
-#, fuzzy
-msgid  "~Update..."
-msgstr "Εν~ημέρωση..."
-
-#: deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.STRING.TEXT
-#, fuzzy
-msgid  "~Options..."
-msgstr "Επι~λογές..."
+msgstr "Προσθήκη Επέκτασης(-ων)"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.STRING.TEXT
 #, fuzzy
 msgid  "Adding %EXTENSION_NAME"
 msgstr "Προσθήκη %EXTENSION_NAME"
-
-#: deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.STRING.TEXT
-#, fuzzy
-msgid  "Removing %EXTENSION_NAME"
-msgstr "Απομάκρυνση %EXTENSION_NAME"
-
-#: deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.STRING.TEXT
-#, fuzzy
-msgid  "Enabling %EXTENSION_NAME"
-msgstr "Ενεργοποίηση %EXTENSION_NAME"
-
-#: deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.STRING.TEXT
-#, fuzzy
-msgid  "Disabling %EXTENSION_NAME"
-msgstr "Απενεργοποίηση %EXTENSION_NAME"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.STRING.TEXT
 #, fuzzy
@@ -618,11 +472,6 @@ msgstr "Αποδοχή άδειας χρήσης για %EXTENSION_NAME"
 #, fuzzy
 msgid  "~For all users"
 msgstr "Για ό~λους τους χρήστες"
-
-#: deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.STRING.TEXT
-#, fuzzy
-msgid  "~Only for me"
-msgstr "~Μόνο για μένα"
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.STRING.TEXT
 #, fuzzy
@@ -656,12 +505,11 @@ msgstr "Αυτή η επέκταση είναι απενεργοποιημένη
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.STRING.TEXT
 msgid  "Show license"
-msgstr ""
+msgstr "Εμφάνηση άδειας χρήσης"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.MODALDIALOG.TEXT
-#, fuzzy
 msgid  "Extension Software License Agreement"
-msgstr "Άδεια χρήσης λογισμικού επέκτασης"
+msgstr "Επέκταση Άδειας χρήσης λογισμικού"
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FIXEDTEXT.TEXT
 #, fuzzy
@@ -684,24 +532,33 @@ msgid  "2."
 msgstr "2."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
-msgstr "Αποδεχτείτε την άδεια χρήσης για την επέκταση, πατώντας το κουμπί \\'Αποδοχή\\'"
-
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Scroll Down"
-msgstr "~Κύλιση κάτω"
-
-#: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Accept"
-msgstr "Αποδοχή"
+msgstr "Αποδεχτείτε την άδεια χρήσης για την επέκταση, πατώντας \\'Αποδοχή\\' κουμπί."
 
 #: deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CANCELBUTTON.TEXT
 #, fuzzy
 msgid  "Decline"
 msgstr "Απόρριψη"
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "You are about to install the extension \\'%NAME\\'.\nClick \\'OK\\' to proceed with the installation.\nClick \\'Cancel\\' to stop the installation."
+msgstr "Πρόκειται να εγκαταστήσετε την επέκταση \\'%NAME\\'.\nΠατήστε \\'OK\\' για να συνεχίσετε με την εγκατάσταση.\nΠατήστε \\'Ακύρωση\\' για να εγκαταλείψετε την εγκατάσταση."
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "You are about to remove the extension \\'%NAME\\'.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
+msgstr "Πρόκειται να απομακρύνετε την επέκταση \\'%NAME\\'.\nΠατήστε \\'OK\\' για να απομακρύνετε την επέκταση.\nΠατήστε \\'Ακύρωση\\' για να διακόψετε την απομάκρυνση της επέκτασης."
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to remove the extension.\nClick \\'Cancel\\' to stop removing the extension."
+msgstr "Βεβαιωθείτε ότι δεν εργάζονται άλλοι χρήστες με το ίδιο %PRODUCTNAME, όταν γίνεται αλλαγή κοινοχρήστων επεκτάσεων σε ένα πολυχρηστικό περιβάλλον.\nΠατήστε \\'OK\\' για να ενημερώσετε τις επεκτάσεις.\nΠατήστε \\'Ακύρωση\\' για να διακόψετε την ενημέρωση των επεκτάσεων."
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to enable the extension.\nClick \\'Cancel\\' to stop enabling the extension."
+msgstr "Βεβαιωθείτε ότι δεν εργάζονται άλλοι χρήστες με το ίδιο %PRODUCTNAME, όταν γίνεται αλλαγή κοινοχρήστων επεκτάσεων σε ένα πολυχρηστικό περιβάλλον.\nΠατήστε \\'OK\\' για να ενημερώσετε τις επεκτάσεις.\nΠατήστε \\'Ακύρωση\\' για να διακόψετε την ενημέρωση των επεκτάσεων."
+
+#: deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to disable the extension.\nClick \\'Cancel\\' to stop disabling the extension."
+msgstr "Βεβαιωθείτε ότι δεν εργάζονται άλλοι χρήστες με το ίδιο %PRODUCTNAME, όταν γίνεται αλλαγή κοινοχρήστων επεκτάσεων σε ένα πολυχρηστικό περιβάλλον.\nΠατήστε \\'OK\\' για να ενημερώσετε τις επεκτάσεις.\nΠατήστε \\'Ακύρωση\\' για να διακόψετε την ενημέρωση των επεκτάσεων."
 
 #: deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.STRING.TEXT
 #, fuzzy
@@ -718,30 +575,14 @@ msgstr "Λήψη και εγκατάσταση"
 msgid  "Downloading extensions..."
 msgstr "Λήψη επεκτάσεων..."
 
-#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Result"
-msgstr "Αποτέλεσμα"
-
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKBUTTON.TEXT
-#, fuzzy
 msgid  "OK"
-msgstr "ΟΚ"
-
-#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CANCELBUTTON.TEXT
-#, fuzzy
-msgid  "Cancel Update"
-msgstr "Ακύρωση ενημέρωσης"
+msgstr "OK"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.STRING.TEXT
 #, fuzzy
 msgid  "Installing extensions..."
 msgstr "Εγκατάσταση επεκτάσεων..."
-
-#: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.STRING.TEXT
-#, fuzzy
-msgid  "Installation finished"
-msgstr "Η εγκατάσταση ολοκληρώθηκε"
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.STRING.TEXT
 #, fuzzy
@@ -754,9 +595,8 @@ msgid  "Error while downloading extension %NAME. "
 msgstr "Σφάλμα κατά τη λήψη της επέκτασης %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.STRING.TEXT
-#, fuzzy
 msgid  "The error message is: "
-msgstr "Το μήνυμα σφάλματος είναι:"
+msgstr "Το μήνυμα σφάλματος είναι: "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.STRING.TEXT
 #, fuzzy
@@ -764,9 +604,8 @@ msgid  "Error while installing extension %NAME. "
 msgstr "Σφάλμα κατά την εγκατάσταση της επέκτασης %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.STRING.TEXT
-#, fuzzy
 msgid  "The license agreement for extension %NAME was refused. "
-msgstr "Υπήρξε απόρριψη της άδειας χρήσης για την επέκταση %NAME."
+msgstr "Υπήρξε απόρριψη της άδειας χρήσης για την επέκταση %NAME. "
 
 #: deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.STRING.TEXT
 #, fuzzy
@@ -778,70 +617,29 @@ msgstr "Η επέκταση δεν θα εγκατασταθεί."
 msgid  "Extension Update"
 msgstr "Ενημέρωση επέκτασης"
 
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Checking..."
-msgstr "Έλεγχος..."
-
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "~Available extension updates"
 msgstr "Δοα~θέσιμες ενημερώσεις επεκτάσεων"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CHECKBOX.TEXT
-#, fuzzy
-msgid  "~Show all updates"
-msgstr "Προ~βολή όλων των ενημερώσεων"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FIXEDLINE.TEXT
-#, fuzzy
-msgid  "Description"
-msgstr "Περιγραφή"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "Publisher:"
-msgstr "Εκδότης:"
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FIXEDTEXT.TEXT
-#, fuzzy
-msgid  "What is new:"
-msgstr "Τι νέο υπάρχει:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FIXEDTEXT.TEXT
 #, fuzzy
 msgid  "Release Notes"
 msgstr "Σημειώσεις έκδοσης"
 
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Install"
-msgstr "Ε~γκατάσταση"
-
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PUSHBUTTON.TEXT
 #, fuzzy
 msgid  "Close"
 msgstr "Κλείσιμο"
 
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.STRING.TEXT
-#, fuzzy
-msgid  "Error"
-msgstr "Σφάλμα"
-
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.STRING.TEXT
-#, fuzzy
 msgid  "No new updates are available."
-msgstr "Δεν υπάρχουν διαθέσιμες νέες ενημερώσεις"
+msgstr "Δεν υπάρχουν διαθέσιμες νέες ενημερώσεις."
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.STRING.TEXT
 #, fuzzy
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
 msgstr "Δεν υπάρχουν ενημερώσεις για εγκατάσταση. Για να δείτε όλες τις ενημερώσεις κάντε κλικ στο πεδίο 'Προβολή όλων των ενημερώσεων'."
-
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.STRING.TEXT
-#, fuzzy
-msgid  "An error occurred:"
-msgstr "Προέκυψε ένα σφάλμα:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.STRING.TEXT
 #, fuzzy
@@ -859,50 +657,42 @@ msgid  "The extension cannot be updated because:"
 msgstr "Δεν είναι δυνατή η ενημέρωση της επέκτασης λόγω του ότι:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.STRING.TEXT
-#, fuzzy
 msgid  "Required Apache OpenOffice version doesn't match:"
-msgstr "Η απαιτούμενη έκδοση του OpenOffice.org  δεν ταιριάζει:"
+msgstr "Η έκδοση του Apache OpenOffice που ζητήθηκε, δεν ταιριάζει:"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.STRING.TEXT
-#, fuzzy
 msgid  "You have Apache OpenOffice %VERSION"
-msgstr "Έχετε το OpenOffice.org %VERSION"
+msgstr "Η εγκατεστημένη έκδοση του OpenOffice είναι %VERSION"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.STRING.TEXT
 #, fuzzy
 msgid  "browser based update"
 msgstr "ενημέρωση βάσει περιηγητή"
 
-#: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.STRING.TEXT
-#, fuzzy
-msgid  "Version"
-msgstr "Έκδοση"
-
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.STRING.TEXT
 msgid  "Ignore this Update"
-msgstr ""
+msgstr "Να παραληφθεί η ενημέρωση"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.STRING.TEXT
 msgid  "Ignore all Updates"
-msgstr ""
+msgstr "Παράληψη όλων των ενημερώσεων"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.STRING.TEXT
 msgid  "Enable Updates"
-msgstr ""
+msgstr "Ενεργοποίηση ανανεώσεων"
 
 #: deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.STRING.TEXT
 msgid  "This update will be ignored.\n"
-msgstr ""
+msgstr "Αυτή η ανανέωση δεν θα εγκατασταθεί.\n"
+
+#: deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WARNINGBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \\'OK\\' to update the extensions.\nClick \\'Cancel\\' to stop updating the extensions."
+msgstr "Βεβαιωθείτε ότι δεν εργάζονται άλλοι χρήστες με το ίδιο %PRODUCTNAME, όταν γίνεται αλλαγή κοινοχρήστων επεκτάσεων σε ένα πολυχρηστικό περιβάλλον.\nΠατήστε \\'OK\\' για να ενημερώσετε τις επεκτάσεις.\nΠατήστε \\'Ακύρωση\\' για να διακόψετε την ενημέρωση των επεκτάσεων."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.MODELESSDIALOG.TEXT
 #, fuzzy
 msgid  "Extension Manager"
 msgstr "Διαχείριση επεκτάσεων"
-
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "~Add..."
-msgstr "Προσ~θήκη..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PUSHBUTTON.TEXT
 #, fuzzy
@@ -915,14 +705,8 @@ msgid  "Get more extensions online..."
 msgstr "Λάβετε περισσότερες επεκτάσεις online..."
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.FIXEDTEXT.TEXT
-#, fuzzy
 msgid  "Adding %EXTENSION_NAME"
 msgstr "Γίνεται προσθήκη %EXTENSION_NAME"
-
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKBUTTON.TEXT
-#, fuzzy
-msgid  "Close"
-msgstr "Κλείσιμο"
 
 #: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.MODALDIALOG.TEXT
 #, fuzzy
@@ -934,15 +718,9 @@ msgstr "Απαιτείται η ενημέρωση επέκτασης"
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
 msgstr "Το %PRODUCTNAME ενημερώθηκε σε μια πιο πρόσφατη έκδοση. Μερικές εγκατεστημένες επεκτάσεις του %PRODUCTNAME δεν είναι συμβατές με αυτή την έκδοση και πρέπει να ενημερωθούν πριν να τις χρησιμοποιήσετε."
 
-#: deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PUSHBUTTON.TEXT
-#, fuzzy
-msgid  "Disable all"
-msgstr "Απενεργοποίηση όλων"
-
-#: ../win32/source/rebase/rebasegui.ulf#_APP_TITLE_
-#, fuzzy
-msgid  "Installation Status"
-msgstr "Κατάσταση εγκατάστασης"
+#: deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QUERYBOX.MESSAGE
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
+msgstr "Βεβαιωθείτε ότι δεν εργάζονται άλλοι χρήστες με το %PRODUCTNAME, όταν κάνετε εγκατάσταση μιας επέκτασης για όλους τους χρήστες σε ένα πολυχρηστικό περιβάλλον.\n\nΓια ποιόν θέλετε να εγκαταστήσετε την επέκταση;\n"
 
 #: ../win32/source/rebase/rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_
 #, fuzzy
@@ -980,9 +758,8 @@ msgid  "Setup was unable to find the msi package."
 msgstr "Η εγκατάσταση δεν μπόρεσε να βρει το πακέτο msi."
 
 #: ../win32/source/setup/setup.ulf#_USER_CANCELLED_
-#, fuzzy
 msgid  "Setup was cancelled"
-msgstr "Η εγκατάσταση ακυρώθηκε."
+msgstr "Η εγκατάσταση ακυρώθηκε"
 
 #: ../win32/source/setup/setup.ulf#_REQUIRES_ADMIN_PRIV_
 #, fuzzy
@@ -999,15 +776,22 @@ msgstr "Η εγκατάσταση δεν μπόρεσε να βρει το αρ�
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "Μη έγκυρη παράμετρος γραμμής εντολών '%s'. Παρακαλούμε χρησιμοποιήστε το '/?' για βοήθεια."
 
+#: ../win32/source/setup/setup.ulf#_SETUP_TO_OLD_
+msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
+msgstr "Αυτό το πακέτο απαιτεί την έκδοση '%s' τουλάχιστον του Windows Installer. \nΈχετε εγκατεστημένη την έκδοση '%s' στο σύστημα σας!"
+
+#: ../win32/source/setup/setup.ulf#_SETUP_NOT_FOUND_
+msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
+msgstr "Αυτό το πακέτο απαιτεί τον Windows Installer. \nΠρέπει να έχετε εγκατεστημένη την έκδοση '%s' στο σύστημα σας!"
+
+#: ../win32/source/setup/setup.ulf#_USAGE_
+msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr "Χρήση:\n   /? :  Εμφάνιση αυτού του διαλόγου.\n   /a :  Εκτέλεση εγκατάστασης διαχειριστή.\n   /j[u|m] :  Εκτέλεση εγκατάστασης επίδειξης.\n   /q[n] : Να μην εμφανιστεί γραφικό περιβάλλον (silent mode).\n"
+
 #: ../win32/source/setup/setup.ulf#_ALREADY_RUNNING_
 #, fuzzy
 msgid  "There is already a setup process running."
 msgstr "Μία διεργασία εγκατάστασης εκτελείται ήδη."
-
-#: ../win32/source/setup/setup.ulf#_UNKNOWN_ERROR_
-#, fuzzy
-msgid  "An Unknown Error occured!"
-msgstr "Παρουσιάστηκε ένα Άγνωστο σφάλμα!"
 
 #: ../win32/source/setup/setup.ulf#_INVALID_PROFILE_
 #, fuzzy
@@ -1019,132 +803,16 @@ msgstr "Μη έγκυρο ή μη ολοκληρωμένο προφίλ."
 msgid  "Unknown Language: %d"
 msgstr "Άγνωστη γλώσσα: %d"
 
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_TW_
-#, fuzzy
-msgid  "Chinese (traditional)"
-msgstr "Κινέζικα (παραδοσιακά)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_CS_
-#, fuzzy
-msgid  "Czech"
-msgstr "Τσέχικα"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_DA_
-#, fuzzy
-msgid  "Danish"
-msgstr "Δανέζικα"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_DE_DE_
-#, fuzzy
-msgid  "German (Germany)"
-msgstr "Γερμανικά (Γερμανίας)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_EL_
-#, fuzzy
-msgid  "Greek"
-msgstr "Ελληνικά"
-
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_EN_US_
-#, fuzzy
 msgid  "English (USA)"
-msgstr "Αγγλικά (ΗΠΑ)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_ES_
-#, fuzzy
-msgid  "Spanish (Spain)"
-msgstr "Ισπανικά (Ισπανίας)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_FI_
-#, fuzzy
-msgid  "Finnish"
-msgstr "Φινλανδικά"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_FR_FR_
-#, fuzzy
-msgid  "French (France)"
-msgstr "Γαλλικά (Γαλλίας)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_HE_
-#, fuzzy
-msgid  "Hebrew"
-msgstr "Εβραϊκά"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_HU_
-#, fuzzy
-msgid  "Hungarian"
-msgstr "Ουγγρικά"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_IT_IT_
-#, fuzzy
-msgid  "Italian (Italy)"
-msgstr "Ιταλικά (Ιταλίας)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_JA_
-#, fuzzy
-msgid  "Japanese"
-msgstr "Ιαπωνικά"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_KO_
-#, fuzzy
-msgid  "Korean"
-msgstr "Κορεάτικα"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_NL_NL_
-#, fuzzy
-msgid  "Dutch (Netherlands)"
-msgstr "Ολλανδικά (Ολλανδίας)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_NO_NO_
-#, fuzzy
-msgid  "Norwegian (Bokmål)"
-msgstr "Νορβηγικά (Bokmål)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_PL_
-#, fuzzy
-msgid  "Polish"
-msgstr "Πολωνικά"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_BR_
-#, fuzzy
-msgid  "Portuguese (Brazil)"
-msgstr "Πορτογαλικά (Βραζιλίας)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_RU_
-#, fuzzy
-msgid  "Russian"
-msgstr "Ρώσικα"
+msgstr "Αγγλικά (USA)"
 
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_SK_
 #, fuzzy
 msgid  "Slovak"
 msgstr "Σλοβακικά"
 
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_SV_SE_
-#, fuzzy
-msgid  "Swedish (Sweden)"
-msgstr "Σουηδικά (Σουηδίας)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_TH_
-#, fuzzy
-msgid  "Thai"
-msgstr "Ταϊλανδικά"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_TR_
-#, fuzzy
-msgid  "Turkish"
-msgstr "Τουρκικά"
-
 #: ../win32/source/setup/setup.ulf#_LANGUAGE_ET_
 #, fuzzy
 msgid  "Estonian"
 msgstr "Εσθονικά"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_ZH_CN_
-#, fuzzy
-msgid  "Chinese (Simplified)"
-msgstr "Κινέζικα (απλοποιημένα)"
-
-#: ../win32/source/setup/setup.ulf#_LANGUAGE_PT_PT_
-#, fuzzy
-msgid  "Portuguese (Portugal)"
-msgstr "Πορτογαλικά (Πορτογαλίας)"

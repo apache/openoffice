@@ -233,6 +233,7 @@ msgid  "Left"
 msgstr "چپ"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Center"
 msgstr ""
 
@@ -242,18 +243,22 @@ msgid  "Right"
 msgstr "راست"
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show Number on First Page"
 msgstr ""
 
 #: ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
 msgstr ""
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "\"Page \" & #PAGENUMBER#"
 msgstr ""
 
 #: ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.STRING.TEXT
+#, fuzzy
 msgid  " & \" of \" & #PAGECOUNT#"
 msgstr ""
 
@@ -278,10 +283,12 @@ msgid  "Return"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Section Setup"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Character Settings"
 msgstr ""
 
@@ -296,14 +303,17 @@ msgid  "Font Effects"
 msgstr "جلوه‌های قلم"
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Position"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Asian Layout"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Alignment"
 msgstr ""
 
@@ -318,38 +328,47 @@ msgid  "Line"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Line Styles"
 msgstr ""
 
 #: ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Arrow Styles"
 msgstr ""
 
 #: ui/dlg/Navigator.src#RID_NAVIGATOR.FLOATINGWINDOW.TEXT
+#, fuzzy
 msgid  "Report navigator"
 msgstr ""
 
 #: ui/dlg/Navigator.src#RID_STR_FUNCTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Functions"
 msgstr ""
 
 #: ui/dlg/Navigator.src#RID_STR_GROUPS.STRING.TEXT
+#, fuzzy
 msgid  "Groups"
 msgstr ""
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sorting and Grouping..."
 msgstr ""
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Page Header/Footer..."
 msgstr ""
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Report Header/Footer..."
 msgstr ""
 
 #: ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MENUITEM.TEXT
+#, fuzzy
 msgid  "New Function"
 msgstr ""
 
@@ -359,110 +378,137 @@ msgid  "Properties..."
 msgstr "ویژگی‌ها"
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Field Value Is"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Expression Is"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "between"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "not between"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "equal to"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "not equal to"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "greater than"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "less than"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.STRINGLIST.ITEM
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.STRINGLIST.ITEM
+#, fuzzy
 msgid  "less than or equal to"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "and"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.WINDOW.TEXT
+#, fuzzy
 msgid  "Example"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Conditional Formatting"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.STRING.TEXT
+#, fuzzy
 msgid  "Condition $number$"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#STR_COLOR_WHITE.STRING.TEXT
+#, fuzzy
 msgid  "White"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#STR_CHARCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Font color"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#STR_CHARBACKGROUND.STRING.TEXT
+#, fuzzy
 msgid  "Background"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#STR_TRANSPARENT.STRING.TEXT
+#, fuzzy
 msgid  "No Fill"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Sort Ascending"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Sort Descending"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Remove sorting"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Insert"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Help"
 msgstr ""
 
 #: ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr ""
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Date and Time"
 msgstr ""
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include Date"
 msgstr ""
 
@@ -472,18 +518,22 @@ msgid  "Format"
 msgstr ""
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include Time"
 msgstr ""
 
 #: ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~Help"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.STRING.TEXT
+#, fuzzy
 msgid  "General"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Data"
 msgstr ""
 
@@ -493,10 +543,12 @@ msgid  "No"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_BOOL.2.STRING.TEXT
+#, fuzzy
 msgid  "Yes"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Force New Page"
 msgstr ""
 
@@ -506,158 +558,197 @@ msgid  "None"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Before Section"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "After Section"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.STRING.TEXT
+#, fuzzy
 msgid  "Before & After Section"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_NEWROWORCOL.STRING.TEXT
+#, fuzzy
 msgid  "New Row Or Column"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.STRING.TEXT
+#, fuzzy
 msgid  "Keep Together"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Whole Group"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "With First Detail"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_CANGROW.STRING.TEXT
+#, fuzzy
 msgid  "Can Grow"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_CANSHRINK.STRING.TEXT
+#, fuzzy
 msgid  "Can Shrink"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_REPEATSECTION.STRING.TEXT
+#, fuzzy
 msgid  "Repeat Section"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.STRING.TEXT
+#, fuzzy
 msgid  "Print repeated values"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.STRING.TEXT
+#, fuzzy
 msgid  "Conditional Print Expression"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Start new column"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Start new page"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.STRING.TEXT
+#, fuzzy
 msgid  "Reset page number"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_CHARTTYPE.STRING.TEXT
+#, fuzzy
 msgid  "Chart type"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.STRING.TEXT
+#, fuzzy
 msgid  "Print When Group Change"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_VISIBLE.STRING.TEXT
+#, fuzzy
 msgid  "Visible"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.STRING.TEXT
+#, fuzzy
 msgid  "Group keep together"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.STRING.TEXT
+#, fuzzy
 msgid  "Per Page"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Per Column"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Section"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.STRING.TEXT
+#, fuzzy
 msgid  "Page header"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.STRING.TEXT
+#, fuzzy
 msgid  "Page footer"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.STRING.TEXT
+#, fuzzy
 msgid  "All Pages"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Not With Report Header"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "Not With Report Footer"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.STRING.TEXT
+#, fuzzy
 msgid  "Not With Report Header/Footer"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.STRING.TEXT
+#, fuzzy
 msgid  "Deep traversing"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PREEVALUATED.STRING.TEXT
+#, fuzzy
 msgid  "Pre evaluation"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONX.STRING.TEXT
+#, fuzzy
 msgid  "Position X"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_POSITIONY.STRING.TEXT
+#, fuzzy
 msgid  "Position Y"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_WIDTH.STRING.TEXT
+#, fuzzy
 msgid  "Width"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_HEIGHT.STRING.TEXT
+#, fuzzy
 msgid  "Height"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_INITIALFORMULA.STRING.TEXT
+#, fuzzy
 msgid  "Initial value"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PRESERVEIRI.STRING.TEXT
+#, fuzzy
 msgid  "Preserve as Link"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_FORMULA.STRING.TEXT
+#, fuzzy
 msgid  "Formula"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_DATAFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Data field"
 msgstr ""
 
@@ -667,6 +758,7 @@ msgid  "Font"
 msgstr "قلم"
 
 #: ui/inspection/inspection.src#RID_STR_BACKCOLOR.STRING.TEXT
+#, fuzzy
 msgid  "Background color"
 msgstr ""
 
@@ -676,14 +768,17 @@ msgid  "Background Transparent"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.STRING.TEXT
+#, fuzzy
 msgid  "This operation is not allowed. The control overlaps with another one."
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.STRING.TEXT
+#, fuzzy
 msgid  "This position can not be set. It is invalid."
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.STRING.TEXT
+#, fuzzy
 msgid  "Group: %1"
 msgstr ""
 
@@ -693,102 +788,127 @@ msgid  "Function"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_SCOPE.STRING.TEXT
+#, fuzzy
 msgid  "Scope"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Data Field Type"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.STRING.TEXT
+#, fuzzy
 msgid  "Field or Formula"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "Counter"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.STRING.TEXT
+#, fuzzy
 msgid  "User defined Function"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_MASTERFIELDS.STRING.TEXT
+#, fuzzy
 msgid  "Link master fields"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_DETAILFIELDS.STRING.TEXT
+#, fuzzy
 msgid  "Link slave fields"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_EXPLANATION.STRING.TEXT
+#, fuzzy
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_DETAILLABEL.STRING.TEXT
+#, fuzzy
 msgid  "Chart"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_MASTERLABEL.STRING.TEXT
+#, fuzzy
 msgid  "Report"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.STRING.TEXT
+#, fuzzy
 msgid  "Preview Row(s)"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_AREA.STRING.TEXT
+#, fuzzy
 msgid  "Area"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_MIMETYPE.STRING.TEXT
+#, fuzzy
 msgid  "Report Output Format"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_VERTICALALIGN.STRING.TEXT
+#, fuzzy
 msgid  "Vert. Alignment"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.STRING.TEXT
+#, fuzzy
 msgid  "Top"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Middle"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "Bottom"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST.STRING.TEXT
+#, fuzzy
 msgid  "Horz. Alignment"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.STRING.TEXT
+#, fuzzy
 msgid  "Left"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.STRING.TEXT
+#, fuzzy
 msgid  "Right"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.STRING.TEXT
+#, fuzzy
 msgid  "Block"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.STRING.TEXT
+#, fuzzy
 msgid  "Center"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.STRING.TEXT
+#, fuzzy
 msgid  "Accumulation"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_F_MINIMUM.STRING.TEXT
+#, fuzzy
 msgid  "Minimum"
 msgstr ""
 
 #: ui/inspection/inspection.src#RID_STR_F_MAXIMUM.STRING.TEXT
+#, fuzzy
 msgid  "Maximum"
 msgstr ""
 
@@ -802,416 +922,167 @@ msgstr "ویژگی‌ها: "
 msgid  "No Control marked"
 msgstr "کنترلی علامت نخورده"
 
-#: ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.STRING.TEXT
-#, fuzzy
-msgid  "Multiselection"
-msgstr "چندانتخابی"
-
-#: ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.STRING.TEXT
-msgid  "Image Control"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.STRING.TEXT
-msgid  "Label field"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.STRING.TEXT
-msgid  "Line"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.STRING.TEXT
-msgid  "Formatted Field"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_PROPTITLE_SHAPE.STRING.TEXT
-msgid  "Shape"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_PROPTITLE_REPORT.STRING.TEXT
-msgid  "Report"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_PROPTITLE_SECTION.STRING.TEXT
-#, fuzzy
-msgid  "Section"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.STRING.TEXT
-#, fuzzy
-msgid  "Function"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_PROPTITLE_GROUP.STRING.TEXT
-msgid  "Group"
-msgstr ""
-
-#: ui/report/report.src#STR_SHOW_RULER.STRING.TEXT
-msgid  "Show ruler"
-msgstr ""
-
-#: ui/report/report.src#STR_SHOW_GRID.STRING.TEXT
-msgid  "Show grid"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.STRING.TEXT
-msgid  "Change Object"
-msgstr ""
-
 #: ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.STRING.TEXT
+#, fuzzy
 msgid  "Move Group(s)"
 msgstr ""
 
-#: ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.STRING.TEXT
-msgid  "Conditional Formatting"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Remove report header / report footer"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.STRING.TEXT
-msgid  "Add report header / report footer"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Remove page header / page footer"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.STRING.TEXT
-msgid  "Add page header / page footer"
-msgstr ""
-
 #: ui/report/report.src#RID_STR_UNDO_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Change property '#'"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Add group header "
 msgstr ""
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Remove group header "
 msgstr ""
 
 #: ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Add group footer "
 msgstr ""
 
 #: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Remove group footer "
 msgstr ""
 
-#: ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.STRING.TEXT
-msgid  "Add function"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.STRING.TEXT
-msgid  "Delete function"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_DESIGN_VIEW.STRING.TEXT
-msgid  "Design"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_PREVIEW_VIEW.STRING.TEXT
-msgid  "Preview"
-msgstr ""
-
 #: ui/report/report.src#STR_RPT_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Report #"
 msgstr ""
 
-#: ui/report/report.src#STR_RPT_LABEL.STRING.TEXT
-#, fuzzy
-msgid  "~Report name"
-msgstr "نام ~گزارش"
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.STRING.TEXT
-#, fuzzy
-msgid  "Delete Group"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.STRING.TEXT
-msgid  "Add Group"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.STRING.TEXT
-msgid  "Delete Selection"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.STRING.TEXT
-msgid  "Delete Function"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.STRING.TEXT
-msgid  "Change Size"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_PASTE.STRING.TEXT
-msgid  "Paste"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.STRING.TEXT
-msgid  "Insert Control"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.STRING.TEXT
-msgid  "Delete Control"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_GROUP.STRING.TEXT
-msgid  "Insert Group"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_GROUPHEADER.STRING.TEXT
-msgid  "GroupHeader"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_GROUPFOOTER.STRING.TEXT
-msgid  "GroupFooter"
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MENUITEM.TEXT
-msgid  "Sorting and Grouping..."
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MENUITEM.TEXT
-msgid  "Background Color..."
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_RULER.MENUITEM.TEXT
-msgid  "Ruler..."
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MENUITEM.TEXT
-msgid  "Grid..."
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MENUITEM.TEXT
-msgid  "~Arrange"
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MENUITEM.TEXT
-msgid  "Bring ~Forward"
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MENUITEM.TEXT
-msgid  "Send Back~ward"
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MENUITEM.TEXT
-msgid  "~Object Resizing"
-msgstr ""
-
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Fit to smallest width"
 msgstr ""
 
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Fit to greatest width"
 msgstr ""
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MENUITEM.TEXT
-msgid  "~Fit to smallest height"
-msgstr ""
-
 #: ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Fit to greatest height"
 msgstr ""
 
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MENUITEM.TEXT
-msgid  "Shrink"
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MENUITEM.TEXT
-msgid  "Shrink from top"
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MENUITEM.TEXT
-msgid  "Shrink from bottom"
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MENUITEM.TEXT
-msgid  "Distribution..."
-msgstr ""
-
-#: ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MENUITEM.TEXT
-#, fuzzy
-msgid  "Properties..."
-msgstr "ویژگی‌ها: "
-
-#: ui/report/report.src#RID_STR_FIELDSELECTION.STRING.TEXT
-msgid  "Add field:"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_FILTER.STRING.TEXT
-msgid  "Filter"
-msgstr ""
-
 #: ui/report/report.src#RID_APP_TITLE.STRING.TEXT
+#, fuzzy
 msgid  " - %PRODUCTNAME Base Report"
 msgstr ""
 
-#: ui/report/report.src#RID_APP_NEW_DOC.STRING.TEXT
-msgid  "Untitled"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_ALIGNMENT.STRING.TEXT
-msgid  "Change Alignment"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_HEADER.STRING.TEXT
-msgid  "# Header"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_FOOTER.STRING.TEXT
-msgid  "# Footer"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_IMPORT_GRAPHIC.STRING.TEXT
-msgid  "Insert graphics"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_DELETE.STRING.TEXT
-msgid  "Delete"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.STRING.TEXT
-msgid  "An error occurred while creating the report."
-msgstr ""
-
-#: ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.STRING.TEXT
-msgid  "An exception of type $type$ was caught."
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEFONT.STRING.TEXT
-msgid  "Change font"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.STRING.TEXT
-msgid  "Change page attributes"
-msgstr ""
-
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert Page Header/Footer"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Page Header/Footer"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert Column Header/Footer"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Column Header/Footer"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert Report Header/Footer"
 msgstr ""
 
 #: ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Report Header/Footer"
 msgstr ""
 
-#: ui/report/report.src#RID_ERR_NO_COMMAND.STRING.TEXT
-msgid  "The report can not be executed unless it is bound to content."
-msgstr ""
-
-#: ui/report/report.src#RID_ERR_NO_OBJECTS.STRING.TEXT
-msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
-
-#: ui/report/report.src#RID_STR_UNDO_SHRINK.STRING.TEXT
-msgid  "Shrink Section"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_DETAIL.STRING.TEXT
-msgid  "Detail"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_PAGE_HEADER.STRING.TEXT
-msgid  "Page Header"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_PAGE_FOOTER.STRING.TEXT
-msgid  "Page Footer"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_REPORT_HEADER.STRING.TEXT
-msgid  "Report Header"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_REPORT_FOOTER.STRING.TEXT
-msgid  "Report Footer"
-msgstr ""
-
-#: ui/report/report.src#RID_STR_INSERT.STRING.TEXT
-msgid  "Insert"
-msgstr ""
-
 #: core/resource/strings.src#RID_STR_DETAIL.STRING.TEXT
+#, fuzzy
 msgid  "Detail"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_PAGE_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Page Header"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_PAGE_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Page Footer"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_GROUP_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Group Header"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_GROUP_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Group Footer"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_REPORT_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Report Header"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_REPORT_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Report Footer"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.STRING.TEXT
+#, fuzzy
 msgid  "The name '#1' already exists and can not be asssigned again."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.STRING.TEXT
+#, fuzzy
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.STRING.TEXT
+#, fuzzy
 msgid  "The element is invalid."
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_FIXEDTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Label field"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_FORMATTEDFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Formatted field"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_IMAGECONTROL.STRING.TEXT
+#, fuzzy
 msgid  "Image control"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_REPORT.STRING.TEXT
+#, fuzzy
 msgid  "Report"
 msgstr "گزارش"
 
 #: core/resource/strings.src#RID_STR_SHAPE.STRING.TEXT
+#, fuzzy
 msgid  "Shape"
 msgstr ""
 
 #: core/resource/strings.src#RID_STR_FIXEDLINE.STRING.TEXT
+#, fuzzy
 msgid  "Fixed line"
 msgstr ""

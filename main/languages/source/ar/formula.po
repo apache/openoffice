@@ -47,6 +47,10 @@ msgstr "AND"
 msgid  "OR"
 msgstr "OR"
 
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_XOR.STRING.TEXT
+msgid  "XOR"
+msgstr ""
+
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_NOT.STRING.TEXT
 msgid  "NOT"
 msgstr "NOT"
@@ -158,6 +162,22 @@ msgstr "ATANH"
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_ARC_COT_HYP.STRING.TEXT
 msgid  "ACOTH"
 msgstr "ACOTH"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.STRING.TEXT
+msgid  "CSC"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.STRING.TEXT
+msgid  "SEC"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.STRING.TEXT
+msgid  "CSCH"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.STRING.TEXT
+msgid  "SECH"
+msgstr ""
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.STRING.TEXT
 msgid  "EXP"
@@ -767,6 +787,25 @@ msgstr "COUNTIF"
 msgid  "SUMIF"
 msgstr "SUMIF"
 
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IF.STRING.TEXT
+#, fuzzy
+msgid  "AVERAGEIF"
+msgstr "AVERAGE"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SUM_IFS.STRING.TEXT
+#, fuzzy
+msgid  "SUMIFS"
+msgstr "SUMIF"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_AVERAGE_IFS.STRING.TEXT
+msgid  "AVERAGEIFS"
+msgstr ""
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COUNT_IFS.STRING.TEXT
+#, fuzzy
+msgid  "COUNTIFS"
+msgstr "COUNTIF"
+
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LOOKUP.STRING.TEXT
 msgid  "LOOKUP"
 msgstr "LOOKUP"
@@ -829,6 +868,26 @@ msgstr "SEARCH"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MID.STRING.TEXT
 msgid  "MID"
+msgstr "MID"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LENB.STRING.TEXT
+#, fuzzy
+msgid  "LENB"
+msgstr "LEN"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_RIGHTB.STRING.TEXT
+#, fuzzy
+msgid  "RIGHTB"
+msgstr "RIGHT"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_LEFTB.STRING.TEXT
+#, fuzzy
+msgid  "LEFTB"
+msgstr "LEFT"
+
+#: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_MIDB.STRING.TEXT
+#, fuzzy
+msgid  "MIDB"
 msgstr "MID"
 
 #: core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_TEXT.STRING.TEXT

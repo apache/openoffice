@@ -31,12 +31,686 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: alreadyopen.src#STR_ALREADYOPEN_MSG.STRING.TEXT
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
+msgstr "تم تأمين ملف المستند '$(ARG1)' لتحريره بنفسك على نظام آخر منذ $(ARG2)\n\n. قم بفتح المستند للقراءة فقط، أو تجاهل تأمين الملف وافتح المستند لتحريره.\n\n"
+
+#: alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.STRING.TEXT
+msgid  "Open ~Read-Only"
+msgstr "فتح لل~قراءة فقط"
+
+#: alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.STRING.TEXT
+msgid  "~Open"
+msgstr "~فتح"
+
+#: alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.STRING.TEXT
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
+msgstr "تم تأمين ملف المستند '$(ARG1)' لتحريره بنفسك على نظام آخر منذ $(ARG2)\n\n أغلق المستند على نظام آخر، وأعد محاولة الحفظ أو تجاهل تأمين الملف واحفظ المستند الحالي.\n\n"
+
+#: alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.STRING.TEXT
+msgid  "~Retry Saving"
+msgstr "إ~عادة محاولة الحفظ"
+
+#: alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.STRING.TEXT
+msgid  "~Save"
+msgstr "حف~ظ"
+
 #: cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RADIOBUTTON.TEXT
 #, fuzzy
 msgid  "~Send"
 msgstr "إ~رسال"
 
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RADIOBUTTON.TEXT
+msgid  "I~gnore"
+msgstr "~تجاهل"
+
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RADIOBUTTON.TEXT
+msgid  "I~nteractive"
+msgstr "ت~فاعل"
+
+#: cookiedg.src#DLG_COOKIES.GB_INFUTURE.GROUPBOX.TEXT
+msgid  "Future Cookie Handling"
+msgstr "التعامل مع الكوكيز مستقبلاً"
+
+#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PUSHBUTTON.TEXT
+msgid  "~Ignore"
+msgstr "~تجاهل"
+
+#: cookiedg.src#STR_COOKIES_RECV_START.STRING.TEXT
+msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr "الخادم '${HOST}' يرغب بوضع واحد أو أكثر من الكوكيز.\nتحتوي الكوكيز معلومات تشير إلى فئات عناوين URL معيّنة. إن قام %PRODUCTNAME لاحقًا بطلب مستند ذي عنوان URL موافق لفئة كوكي موضوعة مسبقًا، فسيرسل %PRODUCTNAME هذه المعلومات إلى الخادم. يسمح هذا للخادم بالتعرف على وضع تطبيق الويب WWW، مثلاً، عند التسوّق عبر الإنترنت.\n\nيجب وضع الكوكيز التالية:\n\n"
+
 #: cookiedg.src#STR_COOKIES_RECV_COOKIES.STRING.TEXT
 #, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "نطاق: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+
+#: cookiedg.src#STR_COOKIES_RECV_TITLE.STRING.TEXT
+msgid  "Cookie Reception"
+msgstr "استقبال كوكي"
+
+#: cookiedg.src#STR_COOKIES_SEND_START.STRING.TEXT
+msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr "قام %PRODUCTNAME بحفظ كوكيز للخادم '${HOST}' والتي سوف ترسل عند طلب المستند ${PATH}.\nتحتوي الكوكيز معلومات تشير إلى فئات عناوين URL معينة. وهي ترسل من قبل بعض الخادمات إلى %PRODUCTNAME حيث تحفظ عند الوصول إلى مستندات معيّنة. إن قام %PRODUCTNAME يتحميل مستند يوافق فئة أحد الكوكيز المستلمة مسبقا، بناء على عنوان URL، فسيقوم %PRODUCTNAME بإرسال هذه المعلومات إلى الخادم. يمكن هذا الخادم من تتبع وضع تطبيق الويب WWW، مثلاً، عند التسوّق عبر الإنترنت.\n\nالكوكيز التالية يجب وضعها:\n\n"
+
+#: cookiedg.src#STR_COOKIES_SEND_TITLE.STRING.TEXT
+msgid  "Send Cookies"
+msgstr "إرسال الكوكيز"
+
+#: filechanged.src#STR_FILECHANGED_TITLE.STRING.TEXT
+msgid  "Document Has Been Changed by Others"
+msgstr ""
+
+#: filechanged.src#STR_FILECHANGED_MSG.STRING.TEXT
+msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
+msgstr "تم تغيير الملف منذ فتحه للتحرير في %PRODUCTNAME. سيؤدي حفظ الإصدار من الملف إلى استبدال التغييرات التي قام بها الآخرون.\n\nهل تريد الحفظ على أية حال؟\n\n"
+
+#: filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.STRING.TEXT
+msgid  "~Save Anyway"
+msgstr "الح~فظ على أية حال"
+
+#: fltdlg.src#DLG_FILTER_SELECT.MODALDIALOG.TEXT
+msgid  "Filter Selection"
+msgstr "اختيار المصفاة"
+
+#: ids.src#RID_KEEP_PASSWORD.STRING.TEXT
+msgid  "~Remember password until end of session"
+msgstr "~تذكر كلمة المرور حتى نهاية الجلسة"
+
+#: ids.src#RID_SAVE_PASSWORD.STRING.TEXT
+msgid  "~Remember password"
+msgstr "ت~ذكر كلمة المرور"
+
+#: ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.STRING.TEXT
+msgid  "Invalid Document Signature"
+msgstr "توقيع المستند غير صالح"
+
+#: ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.STRING.TEXT
+msgid  "Non-Encrypted Streams"
+msgstr "تدفقات غير مشفرة"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation executed on $(ARG1) was aborted."
+msgstr "تمَّ إنهاء العمليَّة المنفَّذة على $(ARG1) ."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Access to $(ARG1) was denied."
+msgstr "رفِضَ الوصول إلى $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) already exists."
+msgstr "$(ARG1) موجود بالفعل."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Target already exists."
+msgstr "الهدف موجود بالفعل."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr "أنت بصدد حفظ/تصدير وحدة (ات) المحتوية على مكتبة الاساسية لحماية كلمة المرور \n$(ARG1)\nالتي هي كبيرة جدا لتخزينها في هيئة ثنائية. إذا رغبت للمستخدمين الذين لا يملكون الوصول إلى مكتبة كلمة المرور في القدرة على تشغيل ماكروات في هذه الوحدة(ات) يجب عليك تقسيم هذه الوحدات لعدد أصغر من الوحدات. هل ترغب في الاستمرار في حفظ/تصدير هذه المكتبة ؟"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The data from $(ARG1) has an incorrect checksum."
+msgstr "جموع فحص البيانات من $(ARG1) خاطئة."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgstr "لا يمكن إنشاء الكائن $(ARG1) في الدليل $(ARG2)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Data of $(ARG1) could not be read."
+msgstr "من الممكن ألا تقرأ بيانات $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The seek operation on $(ARG1) could not be performed."
+msgstr "لم تؤدى عملية الإستدعاء على $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The tell operation on $(ARG1) could not be performed."
+msgstr "لم تؤدى عمليّة الإخبار على $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Data for $(ARG1) could not be written."
+msgstr "لم يكتب الوقت لـ $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Action impossible: $(ARG1) is the current directory."
+msgstr "إجراء مستحيل: $(ARG1) المجلد الحالي."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not ready."
+msgstr "$(ARG1) غير مستعد."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr "الإجراء مستحيل: $(ARG1) و$(ARG2) أجزة مختلفة (مشغّلات)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "General input/output error while accessing $(ARG1)."
+msgstr "حدث خطأ دخْل/خرْج عامّ أثناء محاولة النفاذ إلى $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "An attempt was made to access $(ARG1) in an invalid way."
+msgstr "محاولة نفاذ إلى $(ARG1)بطريق غير سليم."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) contains invalid characters."
+msgstr "يحتوي $(ARG1) على حروف غير صالحة."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The device (drive) $(ARG1) is invalid."
+msgstr "الجهاز (المشغّل) $(ARG1) غير صالح."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The data from $(ARG1) has an invalid length."
+msgstr "طول بيانات $(ARG1) غير صالحة."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) was started with an invalid parameter."
+msgstr "لقد بدأت العملية على $(ARG1) بمعامل غير صالح."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
+msgstr "لا يمكن آداء العملية لأنّ $(ARG1) يحوي رموز التعميم."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Error during shared access to $(ARG1)."
+msgstr "خطأ أثناء الوصول المشترك لـ$(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) contains misplaced characters."
+msgstr "يحتوي $(ARG1) حروف موضوعة خطأً."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The name $(ARG1) contains too many characters."
+msgstr "الاسم $(ARG1) يحتوي أيضا على العديد من الحروف."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) does not exist."
+msgstr " $(ARG1) غير موجود."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The path $(ARG1) does not exist."
+msgstr "المسار $(ARG1) غير موجود."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) is not supported on this operating system."
+msgstr "لا يدعم هذا النظام العملية على $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not a directory."
+msgstr " $(ARG1) ليس دليلاًً."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not a file."
+msgstr " $(ARG1) ليس ملفًا."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "There is no space left on device $(ARG1)."
+msgstr "لم يعد هناك أية مساحة شاغرة في الجهاز $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
+msgstr "لا يمكن آداء العملية على $(ARG1) "
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
+msgstr "لم تؤدى العمليّة على $(ARG1) لعدم توفّر ذاكرة. "
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr "العملية على $(ARG1) لا تستطيع الاستمرار بسبب وجود بيانات كثيرة في الانتظار."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) cannot be copied into itself."
+msgstr "لا يمكن نسخ $(ARG1) على نفسه."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Unknown input/output error while accessing $(ARG1)."
+msgstr "خطأ إدخال/إخراج غير معروف أثناء وصول $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is write protected."
+msgstr "$(ARG1) محمي من الكتابة."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not in the correct format."
+msgstr "$(ARG1) ليس مكتوبًا بالصيغة الصحيحة."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The version of $(ARG1) is not correct."
+msgstr "نسخة $(ARG1) غير صحيحة."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Drive $(ARG1) does not exist."
+msgstr "محرك الأقراص $(ARG1) غير موجود."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Folder $(ARG1) does not exist."
+msgstr "المجلد $(ARG1) غير موجود."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The installed Java version is not supported."
+msgstr "نسخة جافا المثبتة غير مدعومة."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The installed Java version $(ARG1) is not supported."
+msgstr "نسخة الجافا $(ARG1) المثبتة غير مدعومة."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
+msgstr "نسخة الجافا المثبتة غير مدعومة، يجب أن تكون على الأقل النسخة $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
+msgstr "نسخة الجافا $(ARG1) المثبتة غير مدعومة، يجب أن تكون على الأقل النسخة $(ARG2)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The data associated with the partnership is corrupted."
+msgstr "البيانات المقترنة بالشراكة تالفة."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The data associated with the partnership $(ARG1) is corrupted."
+msgstr "البيانات المقترنة بالشراكة $(ARG1) تالفة."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Volume $(ARG1) is not ready."
+msgstr "الكتلة $(ARG1) غير جاهزة."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "$(ARG1) is not ready; please insert a storage medium."
+msgstr "$(ARG1) غير جاهز؛ الرجاء إدخال جهاز التخزين."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
+msgstr "الكتلة $(ARG1) غير جاهزة؛ الرجاء إدخال جهاز التخزين."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Please insert disk $(ARG1)."
+msgstr "الرجاء إدخال القرص $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The object cannot be created in directory $(ARG1)."
+msgstr "تعذر إنشاء الكائن في الدليل $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
+msgstr "لا يمكن لـ%PRODUCTNAME المحافظة على الملفّات من الكتابة عليها عندما يستخدم بروتوكول النقل هذا. هل تريد الاستمرار على أية حال؟"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
+msgstr "الملف '$(ARG1)' تالف ولذلك لا يمكن فتحه. يمكن لـ %PRODUCTNAME محاولة إصلاح الملف.\n\nويمكن أن يكون التلف ناتجًا عن معالجة الملف أو تلف بنية المستند نتيجة نقل البيانات.\n\nوننصح بعدم الثقة في محتوى المستند الذي تم إصلاحه.\nتم تعطيل تنفيذ وحدات الماكرو لهذا المستند.\n\nهل ينبغي على %PRODUCTNAME إصلاح المستند؟\n"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgstr "الملف '$(ARG1(' لا يمكن اصلاحه وبالتالي لا يمكن فتحه."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr "بيانات التهيئة في '$(ARG1)' فاسدة. بدون هذه البيانات قد لا تعمل بعض الدوال بشكل صحيح.\nهل تريد الاستمرار في بدء تشغيل %PRODUCTNAME دون معلومات التهيئة الفاسدة؟"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr "ملف التهيئة الشخصي '$(ARG1)' فاسد ويجب حذفه للاستمرار. قد تخسر بعض إعداداتك الشخصية.\nهل تريد الاستمرار ببدء تشغيل %PRODUCTNAME دون معلومات التهيئة الفاسدة؟"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
+msgstr "مصدر بيانات التهيئة '$(ARG1)' غير متوفر. بدون هذه البيانات قد لا تعمل بعض الدوال بشكل صحيح."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr "مصدر بيانات التهيئة '$(ARG1)' غير متوفر. بدونه قد لا تعمل بعض الدوال بشكل صحيح.\nهل تريد الاستمرار ببدء تشغيل %PRODUCTNAME دون بيانات التهيئة المفقودة؟"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The form contains invalid data. Do you still want to continue?"
+msgstr "تحتوي النموذج على بيانات غير صالحة؟ هل لازلت تريد الاستمرار؟"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
+msgstr "تم تأمين الملف $(ARG1) بواسطة مستخدم آخر. ولا يمكن حاليًا منح وصول آخر للإضافة والحذف لهذا الملف."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
+msgstr "لقد قمت بتأمين الملف $(ARG1). ولا يمكن حاليًا منح وصول آخر للإضافة والحذف لهذا الملف."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The file $(ARG1) is currently not locked by yourself."
+msgstr "لم تقم بتأمين الملف $(ARG1) حاليًا."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED_&_ERRCODE_RES_MASK).STRING.TEXT
+msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgstr "انتهت صلاحية التأمين الذي تم الحصول عليه مسبقًا للملف $(ARG1).\nويمكن أن يحدث ذلك نتيجة لمشكلات على الخادم الذي يقوم بإدارة تأمين الملف. ولا يمكن ضمان أن عمليات الكتابة على هذا الملف لن تستبدل التغييرات التي تمت بواسطة مستخدمين آخرين!"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.TEXT
+msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr "تعذر التحقق من هوية الموقع $(ARG1).\n\nقبل أن تقبل هذه الشهادة، عليك أن تقوم بتفحص شهادة الموقع بتمعن. هل تنوي قبول هذه الشهادة بغرض التعرف على الموقع $(ARG1)?"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.TEXT
+msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
+msgstr "الموقع $(ARG1) يستخدم شهادة أمانية لتشفير البيانات أثناء نقلها، إلا أن هذا الشهادة انتهت صلاحيتها في $(ARG2).\n\nيجب أن تتحقّق من أن توقيت جهازك صحيح."
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.TEXT
+msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
+msgstr "لقد حاولت الاتصال بـ$(ARG1). إلا أن الشهادة الأمانية المقدمة هي خاصة بـ$(ARG2). قد يكون، ولو في حالات نادرة، أن أحدًا ما يحاول اعتراض اتصالك مع الموقع.\n\nإن كنت تشك بأن الشهادة المقدمة خاصة بـ$(ARG1)، فرجاء ألغ اتصالك وأعلم المسؤول عن الموقع.\n\nهل تريد الاستمرار على أي حال؟"
+
+#: ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.TEXT
+msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr "تعذر التحقق من صلاحية الشهادة. يجب عليك التحقق منها بنفسك بتمعن.\n\nإن كنت تشك بأن الشهادة المقدمة، فرجاء ألغ اتصالك وأعلم المسؤول عن الموقع."
+
+#: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.TEXT
+msgid  "Security Warning: Domain Name Mismatch"
+msgstr "تحذير أماني: اسم النطاق غير مطابق"
+
+#: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.TEXT
+msgid  "Security Warning: Server Certificate Expired"
+msgstr "تحذير أماني: انتهت صلاحية شهادة الخادم"
+
+#: ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.TEXT
+msgid  "Security Warning: Server Certificate Invalid"
+msgstr "تحذير أماني: شهادة الخادم غير صالحة"
+
+#: lockfailed.src#STR_LOCKFAILED_MSG.STRING.TEXT
+msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
+msgstr "تعذر تأمين الملف للوصول الحصري بواسطة %PRODUCTNAME، وذلك نتيجة لعدم وجود إذن لإنشاء ملف تأمين على موقع الملف هذا."
+
+#: logindlg.src#DLG_UUI_LOGIN.MODALDIALOG.TEXT
+msgid  "Authentication Required"
+msgstr "المصادقة مطلوبة"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FIXEDTEXT.TEXT
+msgid  "Message from server:"
+msgstr "رسالة من الخادم:"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FIXEDTEXT.TEXT
+msgid  "Enter user name and password for: \n%1"
+msgstr "أدخل اسم المستخدم وكلمة المرور لـ: \n%1"
+
+#: logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.STRING.TEXT
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "أدخل اسم المستخدم وكلمة المرور لـ: \n\"%2\" على %1"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FIXEDTEXT.TEXT
+msgid  "~Path"
+msgstr "ال~مسار"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FIXEDTEXT.TEXT
+msgid  "~User name"
+msgstr "ا~سم المستخدم"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FIXEDTEXT.TEXT
+msgid  "Pass~word"
+msgstr "كلمة ال~مرور"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FIXEDTEXT.TEXT
+msgid  "A~ccount"
+msgstr "ح~ساب"
+
+#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CHECKBOX.TEXT
+msgid  "~Remember password"
+msgstr "ت~ذكر كلمة المرور"
+
+#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.CHECKBOX.TEXT
+msgid  "~Use system credentials"
+msgstr "~استخدام بيانات اعتماد النظام"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.MODALDIALOG.TEXT
+msgid  "Set Master Password"
+msgstr "تعيين كلمة مرور رئيسية"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FIXEDTEXT.TEXT
+msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
+msgstr "تتم حماية كلمات المرور الخاصة باتصالات ويب بواسطة كلمة مرور رئيسية. سيُطلب منك إدخالها مرة واحدة لكل جلسة، إذا قام %PRODUCTNAME باستعادة كلمة مرور من قائمة كلمات المرور المحمية."
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FIXEDTEXT.TEXT
+msgid  "~Enter password"
+msgstr "أدخل ك~لمة المرور"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FIXEDTEXT.TEXT
+msgid  "~Reenter password"
+msgstr "إعادة إد~خال كلمة المرور"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FIXEDTEXT.TEXT
+msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
+msgstr ""
+
+#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Enter password"
+msgstr "أدخل ك~لمة المرور"
+
+#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HELPBUTTON.TEXT
+#, fuzzy
+msgid  "Enter Master Password"
+msgstr "أدخل كلمة المرور الرئيسية"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.MODALDIALOG.TEXT
+msgid  "File Exists"
+msgstr ""
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.PUSHBUTTON.TEXT
+msgid  "Replace"
+msgstr ""
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.PUSHBUTTON.TEXT
+msgid  "Rename"
+msgstr ""
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.MODALDIALOG.TEXT
+#, fuzzy
+msgid  "%PRODUCTNAME Update Available"
+msgstr "تحديث متوفر لـ %PRODUCTNAME"
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr "يتم إنشاء هذا المستند بواسطة نسخة أحدث من %PRODUCTNAME. ربما يحتوي على مميزات ليست مدعومة بواسطة نسختك الحالية. \n\nانقر \" حدث الآن ...\" لتشغيل المحدث المباشر، واحصل على آخر نسخة من %PRODUCTNAME."
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "~Update Now..."
+msgstr "ت~حديث الآن..."
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CANCELBUTTON.TEXT
+#, fuzzy
+msgid  "~Later"
+msgstr "ّ~لاحقًا"
+
+#: openlocked.src#STR_OPENLOCKED_TITLE.STRING.TEXT
+#, fuzzy
+msgid  "Document in Use"
+msgstr "المستند قيد الاستخدام"
+
+#: openlocked.src#STR_OPENLOCKED_MSG.STRING.TEXT
+#, fuzzy
+msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
+msgstr "يتم تأمين ملف المستند '$(ARG1)' للتحرير بواسطة:\n\n$(ARG2)\n\n. افتح المستند للقراءة فقط، أو افتح نسخة من المستند للتحرير.\n\n"
+
+#: openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.STRING.TEXT
+#, fuzzy
+msgid  "Open ~Read-Only"
+msgstr "فتح لل~قراءة فقط"
+
+#: openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.STRING.TEXT
+#, fuzzy
+msgid  "Open ~Copy"
+msgstr "~فتح نسخة"
+
+#: openlocked.src#STR_UNKNOWNUSER.STRING.TEXT
+#, fuzzy
+msgid  "Unknown User"
+msgstr "مستخدم غير معروف"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.STRING.TEXT
+#, fuzzy
+msgid  "Enter password to open file: \n"
+msgstr "أدخل كلمة مرور لفتح الملف: \n"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.STRING.TEXT
+#, fuzzy
+msgid  "Enter password to modify file: \n"
+msgstr "أدخل كلمة المرور لتعديل الملف: \n"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.STRING.TEXT
+#, fuzzy
+msgid  "Enter password: "
+msgstr "إدخال كلمة المرور"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.STRING.TEXT
+msgid  "Confirm password: "
+msgstr ""
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.STRING.TEXT
+msgid  "Set Password"
+msgstr ""
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.STRING.TEXT
+#, fuzzy
+msgid  "Enter Password"
+msgstr "إدخال كلمة المرور"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.STRING.TEXT
+msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
+msgstr ""
+
+#: passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.STRING.TEXT
+#, fuzzy
+msgid  "The password is incorrect. The file cannot be opened."
+msgstr "كلمة المرور غير صحيحة. لا يمكن فتح الملف."
+
+#: passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.STRING.TEXT
+#, fuzzy
+msgid  "The password is incorrect. The file cannot be modified."
+msgstr "كلمة المرور غير صحيحة. لا يمكن تعديل الملف."
+
+#: passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.STRING.TEXT
+msgid  "The master password is incorrect."
+msgstr ""
+
+#: passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.STRING.TEXT
+msgid  "The password is incorrect."
+msgstr ""
+
+#: passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.STRING.TEXT
+#, fuzzy
+msgid  "The password confirmation does not match."
+msgstr "تأكيد كلمة المرور غير متطابق."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.MODALDIALOG.TEXT
+#, fuzzy
+msgid  "%PRODUCTNAME - Security Warning"
+msgstr "%PRODUCTNAME - تحذير أماني"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "The document contains document macros signed by:"
+msgstr "يحتوي المستند وحدات ماكرو موقعة من قبل:"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "The document contains document macros."
+msgstr "يحتوي المستند على وحدات ماكرو."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "View Signatures..."
+msgstr "عرض التواقيع..."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr "ربما تحوي وحدات الماكرو على فيروسات. تعطيل وحدات الماكرو يكون دائما آمن. إذا عطلت وحدات الماكرو ربما تفقد بعض الوظائف التي تقدم عن طريق وحدات الماكرو."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CHECKBOX.TEXT
+#, fuzzy
+msgid  "Always trust macros from this source"
+msgstr "الوثوق دائمًا بوحدات الماكرو من هذا المصدر"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.OKBUTTON.TEXT
+#, fuzzy
+msgid  "~Enable Macros"
+msgstr "تم~كين الماكروات"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.CANCELBUTTON.TEXT
+#, fuzzy
+msgid  "~Disable Macros"
+msgstr "تع~طيل الماكروات"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.MODALDIALOG.TEXT
+#, fuzzy
+msgid  "Security Warning: "
+msgstr "تحذر أماني: "
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "No Text"
+msgstr "لا يوجد نص"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "View Certificate"
+msgstr "عرض الشهادة"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
+msgid  "Cancel Connection"
+msgstr "ألغ الاتصال"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "Continue"
+msgstr "متابعة"
+
+#: trylater.src#STR_TRYLATER_TITLE.STRING.TEXT
+#, fuzzy
+msgid  "Document in Use"
+msgstr "المستند قيد الاستخدام"
+
+#: trylater.src#STR_TRYLATER_MSG.STRING.TEXT
+#, fuzzy
+msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
+msgstr "تم تأمين ملف المستند '$(ARG1)' للتحرير بواسطة :\n\n$(ARG2)\n\n حاول مرة أخرى حفظ المستند، أو حفظ نسخة من ذلك المستند.\n\n"
+
+#: trylater.src#STR_TRYLATER_RETRYSAVING_BTN.STRING.TEXT
+#, fuzzy
+msgid  "~Retry Saving"
+msgstr "إ~عادة محاولة الحفظ"
+
+#: trylater.src#STR_TRYLATER_SAVEAS_BTN.STRING.TEXT
+#, fuzzy
+msgid  "~Save As..."
+msgstr "~حفظ باسم..."
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.MODALDIALOG.TEXT
+#, fuzzy
+msgid  "Website Certified by an Unknown Authority"
+msgstr "الموقع مصادق عليه من قبل جهة مجهولة"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "Examine Certificate..."
+msgstr "تفحص الشهادة..."
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.HELPBUTTON.TEXT
+#, fuzzy
+msgid  "Help"
+msgstr "تعليمات"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.PUSHBUTTON.TEXT
+#, fuzzy
+msgid  "OK"
+msgstr "موافق"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.RADIOBUTTON.TEXT
+#, fuzzy
+msgid  "Accept this certificate temporarily for this session"
+msgstr "إقبل هذه الشهادة مؤقتًا لهذه الجلسة"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RADIOBUTTON.TEXT
+#, fuzzy
+msgid  "Do not accept this certificate and do not connect to this Web site"
+msgstr "لا تقبل هذه الشهادة ولا تقم بالاتصال بهذا الموقع"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FIXEDTEXT.TEXT
+#, fuzzy
+msgid  "No Text"
+msgstr "لا يوجد نص"

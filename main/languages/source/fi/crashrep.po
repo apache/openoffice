@@ -33,11 +33,27 @@ msgstr ""
 
 #: all/crashrep.ulf#_WELCOME_CAPTION_
 msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "%PRODUCTNAME% %PRODUCTVERSION% Virheraportti"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% -virheraportti"
 
 #: all/crashrep.ulf#_WELCOME_HEADER_
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "Tervetuloa %PRODUCTNAME% %PRODUCTVERSION%:n virheraportointiin"
+msgstr "Tervetuloa %PRODUCTNAME% %PRODUCTVERSION% -virheraportointiin"
+
+#: all/crashrep.ulf#_WELCOME_BODY1_
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr "Tämä virheilmoitusten raportointityökalu kerää tietoja siitä, miten %PRODUCTNAME% toimii käyttäjällä ja lähettää tiedot Apache OpenOfficelle tulevien versioiden kehitystyön tueksi.\n\n"
+
+#: all/crashrep.ulf#_WELCOME_BODY2_
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr "Käyttö on helppoa - voit lähettää raportin ilman enempiä toimenpiteitä napsauttamalla 'Lähetä' -nappia seuraavassa valintaikkunassa. Voit myös lyhyesti kuvata, mitä olit tekemässä, kun virhe ilmeni. Jos haluat nähdä, mitä tietoja raportissa on, paina 'Näytä raportti'-painiketta. Tietoja ei lähetetä, jos painat 'Älä lähetä'-painiketta.\n\n"
+
+#: all/crashrep.ulf#_WELCOME_BODY3_
+msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr "Yksityisyyden suoja\nKerättävät tiedot on rajoitettu tietoihin %PRODUCTNAME% %PRODUCTVERSION% -ohjelmiston tilasta virheen ilmetessä. Tietoja salasanoista tai dokumenttien sisällöstä ei kerätä.\n\nTietoja käytetään ainoastaan parantamaan %PRODUCTNAME% -ohjelmiston laatua; niitä ei luovuteta kolmannelle osapuolelle.\nLisätietoja Apache OpenOfficen käytännöistä tietojen suojaamiseksi saat verkkosivulta\n"
+
+#: all/crashrep.ulf#_PRIVACY_URL_
+msgid  "http://www.openoffice.org/privacy.html"
+msgstr "http://www.openoffice.org/privacy.html (englanniksi)"
 
 #: all/crashrep.ulf#_NEXT_BUTTON_
 msgid  "~Next >>"
@@ -55,9 +71,17 @@ msgstr "OK"
 msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "Virhe suoritettaessa %PRODUCTNAME% %PRODUCTVERSION% -ohjelmaa"
 
+#: all/crashrep.ulf#_REPORT_BODY_
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% -virheraportointityökalu on kerännyt tietoja, jotka voivat auttaa Apache OpenOfficea parantamaan %PRODUCTNAME% -tuotetta.\nVoit kirjoittaa otsikon virheraportille ja kuvailla mitä yritit tehdä virheen ilmetessä alla olevaan tilaan. Tämän jälkeen napsauta 'Lähetä'.\n"
+
 #: all/crashrep.ulf#_ENTER_TITLE_
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
 msgstr "Minkä tyyppistä asiakirjaa (esim. esitysgrafiikka) olit muokkaamassa, kun virhe ilmeni?"
+
+#: all/crashrep.ulf#_ALLOW_CONTACT_
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr "~Apache OpenOffice saa ottaa yhteyttä lähettäjään tähän virheraporttiin liittyvissä kysymyksissä."
 
 #: all/crashrep.ulf#_ENTER_EMAIL_
 msgid  "Please enter your e-mail address."
@@ -65,7 +89,7 @@ msgstr "Täytä sähköpostiosoitteesi, kiitos."
 
 #: all/crashrep.ulf#_ENTER_DESCRIPTION_
 msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr "~Kuinka käytit %PRODUCTNAME%-ohjelmaa virheen ilmetessä?"
+msgstr "~Kuinka käytit %PRODUCTNAME% -ohjelmaa virheen ilmetessä?"
 
 #: all/crashrep.ulf#_BACK_BUTTON_
 msgid  " << ~Back"
@@ -91,9 +115,17 @@ msgstr "~Tallenna raportti..."
 msgid  "Save Report to"
 msgstr "Tallenna raportti nimellä"
 
+#: all/crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
+msgstr "Virheraporttia ei voitu lähettää, koska oletussähköpostiohjelma ei tue MAPI-rajapintaa.\n Käytä MAPI-yhteensopivaa sähköpostiohjelmaa."
+
 #: all/crashrep.ulf#_ERROR_MSG_DISK_FULL_
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr "Virheraporttia ei voitu tilapäisesti tallentaa ja sitä ei siten voitu lähettää."
+
+#: all/crashrep.ulf#_ERROR_MSG_SENDMAIL_
+msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
+msgstr "Virheraporttia ei voitu lähettää, koska 'sendmail'-ohjelmaa ei voitu käynnistää.\nTarkista 'sendmail'-ohjelman asetukset."
 
 #: all/crashrep.ulf#_ERROR_MSG_PROXY_
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
@@ -135,6 +167,10 @@ msgstr "~HTTP-välityspalvelin"
 msgid  "~Port"
 msgstr "Por~tti"
 
+#: all/crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr "%PRODUCTNAME% -virheraporttityökalu tarvitsee yhteyden Internetiin voidakseen lähettää virheraportteja.\n\nYrityksillä on usein oma välityspalvelin palomuurin yhteydessä suojaamassa yrityksen verkkoa.\n\nMikäli tapauksessasi on näin, sinun täytyy määritellä välityspalvelimen osoite ja portti."
+
 #: all/crashrep.ulf#_SENDING_REPORT_HEADER_
 msgid  "Sending Error Report"
 msgstr "Virheraporttia lähetetään"
@@ -147,9 +183,9 @@ msgstr "Tila: Virheraporttia lähetetään"
 msgid  "Status: The error report has been sent successfully."
 msgstr "Tila: Virheraportti lähetetty onnistuneesti."
 
-#: all/crashrep.ulf#_MSG_CMDLINE_USAGE_
-msgid  "Usage:"
-msgstr "Käyttö:"
+#: all/crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr "Olet tehnyt valinnan, joka sallii Apache OpenOfficen ottaa sinuun yhteyttä tähän raporttiin liittyvissä kysymyksissä.\nOle hyvä ja anna sähköpostiosoitteesi."
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_
 msgid  "-p <process ID>"
@@ -157,4 +193,8 @@ msgstr "-p <process ID>"
 
 #: all/crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr "Liittää %PRODUCTNAME%-prosessin numeron raportointityökaluun"
+msgstr "Liittää %PRODUCTNAME%- prosessin numeron raportointityökaluun"
+
+#: all/crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_
+msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr "Näyttää tämän ohjetekstin.\nTarkemmat ohjeet on löydettävissä asennusoppaasta."

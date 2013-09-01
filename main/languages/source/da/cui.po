@@ -63,10 +63,6 @@ msgstr "~Kategori"
 msgid  "Function"
 msgstr "Funktion"
 
-#: customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#DEFINE.TEXT
-msgid  "Functions"
-msgstr "Funktioner"
-
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FIXEDLINE.TEXT
 msgid  "Shortcut keys"
 msgstr "Genvejstaster"
@@ -85,7 +81,7 @@ msgstr "Gem tastaturkonfiguration"
 
 #: customize/acccfg.src#RID_SVXPAGE_KEYBOARD.STR_FILTERNAME_CFG.STRING.TEXT
 msgid  "Configuration (*.cfg)"
-msgstr "Konfiguration"
+msgstr "Konfiguration (*.cfg)"
 
 #: customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_MYMACROS.STRING.TEXT
 msgid  "My Macros"
@@ -111,14 +107,6 @@ msgstr "Tilpas"
 msgid  "Menus"
 msgstr "Menuer"
 
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_KEYBOARD.PAGEITEM.TEXT
-msgid  "Keyboard"
-msgstr "Tastatur"
-
-#: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_TOOLBARS.PAGEITEM.TEXT
-msgid  "Toolbars"
-msgstr "Værktøjslinjer"
-
 #: customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_EVENTS.PAGEITEM.TEXT
 msgid  "Events"
 msgstr "Hændelser"
@@ -126,14 +114,6 @@ msgstr "Hændelser"
 #: customize/cfg.src#TEXT_MENU.#DEFINE.TEXT
 msgid  "Menu"
 msgstr "Menu"
-
-#: customize/cfg.src#TEXT_BEGIN_GROUP.#DEFINE.TEXT
-msgid  "Begin a Group"
-msgstr "Start en gruppe"
-
-#: customize/cfg.src#TEXT_RENAME.#DEFINE.TEXT
-msgid  "Rename..."
-msgstr "Omdøb..."
 
 #: customize/cfg.src#TEXT_DELETE.#DEFINE.TEXT
 msgid  "Delete..."
@@ -143,10 +123,6 @@ msgstr "Slet..."
 msgid  "Delete"
 msgstr "Slet"
 
-#: customize/cfg.src#TEXT_MOVE.#DEFINE.TEXT
-msgid  "Move..."
-msgstr "Flyt..."
-
 #: customize/cfg.src#TEXT_DEFAULT_STYLE.#DEFINE.TEXT
 msgid  "Restore Default Settings"
 msgstr "Gendan standardindstillinger"
@@ -154,14 +130,6 @@ msgstr "Gendan standardindstillinger"
 #: customize/cfg.src#TEXT_DEFAULT_COMMAND.#DEFINE.TEXT
 msgid  "Restore Default Command"
 msgstr "Gendan standardkommando"
-
-#: customize/cfg.src#TEXT_TEXT_ONLY.#DEFINE.TEXT
-msgid  "Text only"
-msgstr "Kun tekst"
-
-#: customize/cfg.src#TEXT_TOOLBAR_NAME.#DEFINE.TEXT
-msgid  "Toolbar Name"
-msgstr "Værktøjslinjenavn"
 
 #: customize/cfg.src#TEXT_SAVE_IN.#DEFINE.TEXT
 msgid  "Save In"
@@ -171,45 +139,13 @@ msgstr "Gem i"
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr "%PRODUCTNAME %MODULENAME-menuer"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "Ny..."
-
 #: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_SEPARATOR.FIXEDLINE.TEXT
 msgid  "Menu Content"
 msgstr "Menuindhold"
 
-#: customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENU_ENTRIES.FIXEDTEXT.TEXT
-msgid  "Entries"
-msgstr "Elementer"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_ADD_COMMANDS.PUSHBUTTON.TEXT
-msgid  "Add..."
-msgstr "Tilføj..."
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.BTN_CHANGE_ENTRY.MENUBUTTON.TEXT
-msgid  "Modify"
-msgstr "Modificer"
-
-#: customize/cfg.src#RID_SVXPAGE_MENUS.FT_DESCRIPTION.FIXEDTEXT.TEXT
-msgid  "Description"
-msgstr "Beskrivelse"
-
 #: customize/cfg.src#MODIFY_ENTRY.ID_ADD_SUBMENU.MENUITEM.TEXT
 msgid  "Add Submenu..."
 msgstr "Tilføj undermenu..."
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_ONLY.MENUITEM.TEXT
-msgid  "Icons Only"
-msgstr "Kun ikoner"
-
-#: customize/cfg.src#MODIFY_TOOLBAR.ID_ICONS_AND_TEXT.MENUITEM.TEXT
-msgid  "Icons & Text"
-msgstr "Ikoner og tekst"
-
-#: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_CHANGE_SYMBOL.MENUITEM.TEXT
-msgid  "Change Icon..."
-msgstr "Skift ikon..."
 
 #: customize/cfg.src#MODIFY_TOOLBAR_CONTENT.ID_RESET_SYMBOL.MENUITEM.TEXT
 msgid  "Reset Icon"
@@ -218,10 +154,6 @@ msgstr "Nulstil ikon"
 #: customize/cfg.src#RID_SVXSTR_NEW_MENU.STRING.TEXT
 msgid  "New Menu %n"
 msgstr "Ny menu %n"
-
-#: customize/cfg.src#RID_SVXSTR_NEW_TOOLBAR.STRING.TEXT
-msgid  "New Toolbar %n"
-msgstr "Ny værktøjslinje %n"
 
 #: customize/cfg.src#RID_SVXSTR_MOVE_MENU.STRING.TEXT
 msgid  "Move Menu"
@@ -250,22 +182,6 @@ msgstr "Menunavn"
 #: customize/cfg.src#MD_MENU_ORGANISER.TXT_MENU.FIXEDTEXT.TEXT
 msgid  "Menu position"
 msgstr "Menuplacering"
-
-#: customize/cfg.src#MD_NEW_TOOLBAR.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "Navn"
-
-#: customize/cfg.src#MD_ICONSELECTOR.MODALDIALOG.TEXT
-msgid  "Change Icon"
-msgstr "Skift ikon"
-
-#: customize/cfg.src#MD_ICONSELECTOR.FT_SYMBOLS.FIXEDTEXT.TEXT
-msgid  "Icons"
-msgstr "Ikoner"
-
-#: customize/cfg.src#MD_ICONSELECTOR.BTN_IMPORT.PUSHBUTTON.TEXT
-msgid  "Import..."
-msgstr "Importer..."
 
 #: customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FIXEDTEXT.TEXT
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
@@ -302,14 +218,6 @@ msgstr "Ja til alle"
 #: customize/cfg.src#RID_SVXSTR_PRODUCTNAME_TOOLBARS.STRING.TEXT
 msgid  "%PRODUCTNAME %MODULENAME Toolbars"
 msgstr "%PRODUCTNAME %MODULENAME-værktøjslinjer"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR.STRING.TEXT
-msgid  "Toolbar"
-msgstr "Værktøjslinje"
-
-#: customize/cfg.src#RID_SVXSTR_TOOLBAR_CONTENT.STRING.TEXT
-msgid  "Toolbar Content"
-msgstr "Værktøjslinjeindhold"
 
 #: customize/cfg.src#RID_SVXSTR_COMMANDS.STRING.TEXT
 msgid  "Commands"
@@ -351,10 +259,6 @@ msgstr "~Nyt navn"
 msgid  "Rename Menu"
 msgstr "Omdøb menu"
 
-#: customize/cfg.src#RID_SVXSTR_RENAME_TOOLBAR.STRING.TEXT
-msgid  "Rename Toolbar"
-msgstr "Omdøb værktøjslinje"
-
 #: customize/cfg.src#BUTTON_STR_UP.STRING.TEXT
 msgid  "Up"
 msgstr "Op"
@@ -362,10 +266,6 @@ msgstr "Op"
 #: customize/cfg.src#BUTTON_STR_DOWN.STRING.TEXT
 msgid  "Down"
 msgstr "Ned"
-
-#: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "Hændelse"
 
 #: customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -390,10 +290,6 @@ msgstr "~Fjern"
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.TABPAGE.TEXT
 msgid  "Assign action"
 msgstr "Tildel handling"
-
-#: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_EVENT.STRING.TEXT
-msgid  "Event"
-msgstr "Hændelse"
 
 #: customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_ASSMACRO.STRING.TEXT
 msgid  "Assigned Action"
@@ -422,10 +318,6 @@ msgstr "Tildel komponent"
 #: customize/macropg.src#RID_SVXDLG_ASSIGNCOMPONENT.FT_METHOD.FIXEDTEXT.TEXT
 msgid  "Component method name"
 msgstr "Komponentmetodenavn"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_STARTAPP.STRING.TEXT
-msgid  "Start Application"
-msgstr "Start programmet"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CLOSEAPP.STRING.TEXT
 msgid  "Close Application"
@@ -495,10 +387,6 @@ msgstr "Fletning af formularfelter startet"
 msgid  "Merging of form fields finished"
 msgstr "Fletning af formularfelter færdig"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_PAGECOUNTCHANGE.STRING.TEXT
-msgid  "Changing the page count"
-msgstr "Ændre sideantallet"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_SUBCOMPONENT_OPENED.STRING.TEXT
 msgid  "Loaded a sub component"
 msgstr "Hentede en underkomponent"
@@ -515,33 +403,13 @@ msgstr "Udfyld parametre"
 msgid  "Execute action"
 msgstr "Udfør handling"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_AFTERUPDATE.STRING.TEXT
-msgid  "After updating"
-msgstr "Efter opdatering"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_BEFOREUPDATE.STRING.TEXT
 msgid  "Before updating"
 msgstr "Før opdatering"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_APPROVEROWCHANGE.STRING.TEXT
-msgid  "Before record action"
-msgstr "Før dataposthandling"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ROWCHANGE.STRING.TEXT
-msgid  "After record action"
-msgstr "Efter dataposthandling"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_CONFIRMDELETE.STRING.TEXT
 msgid  "Confirm deletion"
 msgstr "Bekræft sletning"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ERROROCCURED.STRING.TEXT
-msgid  "Error occurred"
-msgstr "Fejl opstod"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_ADJUSTMENTVALUECHANGED.STRING.TEXT
-msgid  "While adjusting"
-msgstr "Ved justering"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_FOCUSGAINED.STRING.TEXT
 msgid  "When receiving focus"
@@ -554,14 +422,6 @@ msgstr "Ved mistet fokus"
 #: customize/macropg.src#RID_SVXSTR_EVENT_ITEMSTATECHANGED.STRING.TEXT
 msgid  "Item status changed"
 msgstr "Elementstatus ændret"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYTYPED.STRING.TEXT
-msgid  "Key pressed"
-msgstr "Tast trykket ned"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_KEYUP.STRING.TEXT
-msgid  "Key released"
-msgstr "Tast sluppet"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_LOADED.STRING.TEXT
 msgid  "When loading"
@@ -599,14 +459,6 @@ msgstr "Museknap trykket"
 msgid  "Mouse button released"
 msgstr "Museknap sluppet"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONING.STRING.TEXT
-msgid  "Before record change"
-msgstr "Før ændring af datapost"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_POSITIONED.STRING.TEXT
-msgid  "After record change"
-msgstr "Efter ændring af datapost"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_RESETTED.STRING.TEXT
 msgid  "After resetting"
 msgstr "Efter nulstilling"
@@ -619,14 +471,6 @@ msgstr "Før nulstilling"
 msgid  "Approve action"
 msgstr "Godkend handling"
 
-#: customize/macropg.src#RID_SVXSTR_EVENT_SUBMITTED.STRING.TEXT
-msgid  "Before submitting"
-msgstr "Før afsendelse"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_TEXTCHANGED.STRING.TEXT
-msgid  "Text modified"
-msgstr "Tekst ændret"
-
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADING.STRING.TEXT
 msgid  "Before unloading"
 msgstr "Før fjernelse"
@@ -634,10 +478,6 @@ msgstr "Før fjernelse"
 #: customize/macropg.src#RID_SVXSTR_EVENT_UNLOADED.STRING.TEXT
 msgid  "When unloading"
 msgstr "Ved fjernelse"
-
-#: customize/macropg.src#RID_SVXSTR_EVENT_CHANGED.STRING.TEXT
-msgid  "Changed"
-msgstr "Ændret"
 
 #: customize/macropg.src#RID_SVXSTR_EVENT_CREATEDOC.STRING.TEXT
 msgid  "Document created"
@@ -739,18 +579,6 @@ msgstr "~Kategori"
 msgid  "Commands"
 msgstr "Kommandoer"
 
-#: customize/selector.src#STR_SELECTOR_ADD.STRING.TEXT
-msgid  "Add"
-msgstr "Tilføj"
-
-#: customize/selector.src#STR_SELECTOR_RUN.STRING.TEXT
-msgid  "Run"
-msgstr "Udfør"
-
-#: customize/selector.src#STR_SELECTOR_CLOSE.STRING.TEXT
-msgid  "Close"
-msgstr "Luk"
-
 #: customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.STRING.TEXT
 msgid  "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customize dialog."
 msgstr "For at føje en kommando til en værktøjslinje skal du vælge kategorien og så kommandoen. Træk dernæst kommandoen til listen Kommandoer på fanebladet Værktøjslinjer i dialogen Tilpas."
@@ -771,17 +599,45 @@ msgstr "Bibliotek"
 msgid  "My Macros"
 msgstr "Mine makroer"
 
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.TXT_SELECTOR_COMMANDS.FIXEDTEXT.TEXT
-msgid  "Macro name"
-msgstr "Makronavn"
-
-#: customize/selector.src#RID_DLG_SCRIPTSELECTOR.GRP_SELECTOR_DESCRIPTION.FIXEDLINE.TEXT
-msgid  "Description"
-msgstr "Beskrivelse"
-
 #: dialogs/about.src#RID_DEFAULTABOUT.MODALDIALOG.TEXT
 msgid  "About %FULLPRODUCTNAME"
 msgstr "Om %PRODUCTNAME"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PUSHBUTTON.TEXT
+msgid  "License..."
+msgstr "Licens..."
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT_VENDOR.STRING.TEXT
+msgid  "%OOOVENDOR"
+msgstr "%OOOVENDOR"
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED.STRING.TEXT
+msgid  "This product was created by the OpenOffice community."
+msgstr "Dette produkt er lavet af OpenOffice sammenslutningen."
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_CREATED_VENDOR.STRING.TEXT
+msgid  "This product was created by %OOOVENDOR, based on Apache OpenOffice."
+msgstr ""
+
+#: dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_ACKNOWLEDGE.STRING.TEXT
+msgid  "The OpenOffice community acknowledges all contributing members, especially those mentioned at"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.MODALDIALOG.TEXT
+msgid  "Readme, License and Notice"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_READMEPAGE.PAGEITEM.TEXT
+msgid  "Readme"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_LICENSEPAGE.PAGEITEM.TEXT
+msgid  "License"
+msgstr ""
+
+#: dialogs/about.src#RID_CUI_README_DLG.RID_CUI_README_TBCTL.RID_CUI_NOTICEPAGE.PAGEITEM.TEXT
+msgid  "Notice"
+msgstr ""
 
 #: dialogs/charmap.src#RID_SVXDLG_CHARMAP.MODALDIALOG.TEXT
 msgid  "Special Characters"
@@ -927,10 +783,6 @@ msgstr "Alternativ ~tekst"
 msgid  "~Description"
 msgstr "Be~skrivelse"
 
-#: dialogs/dlgname.src#RID_SVXDLG_NAME.MODALDIALOG.TEXT
-msgid  "Name"
-msgstr "Navn"
-
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FIXEDTEXT.TEXT
 msgid  "~Name"
 msgstr "~Navn"
@@ -946,10 +798,6 @@ msgstr "~Titel"
 #: dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FIXEDTEXT.TEXT
 msgid  "~Description"
 msgstr "Be~skrivelse"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.MODALDIALOG.TEXT
-msgid  "Record Search"
-msgstr "Datapostsøgning"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FIXEDLINE.TEXT
 msgid  "Search for"
@@ -1015,10 +863,6 @@ msgstr "Jokertegnsudtryk"
 msgid  "Regular expression"
 msgstr "Regulært udtryk"
 
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CHECKBOX.TEXT
-msgid  "Similarity Search"
-msgstr "Søg lignende"
-
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PUSHBUTTON.TEXT
 msgid  "..."
 msgstr "..."
@@ -1034,10 +878,6 @@ msgstr "Lyder som (japansk)"
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FIXEDLINE.TEXT
 msgid  "State"
 msgstr "Tilstand"
-
-#: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FIXEDTEXT.TEXT
-msgid  "Record :"
-msgstr "Datapost :"
 
 #: dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PUSHBUTTON.TEXT
 msgid  "Search"
@@ -1111,18 +951,6 @@ msgstr "Filer"
 msgid  "Type:"
 msgstr "Type:"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FIXEDTEXT.TEXT
-msgid  "Location:"
-msgstr "Placering:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FIXEDTEXT.TEXT
-msgid  "Contents:"
-msgstr "Indhold:"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FIXEDTEXT.TEXT
-msgid  "Modified:"
-msgstr "Ændret:"
-
 #: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FIXEDTEXT.TEXT
 msgid  "~File type"
 msgstr "~Filtype"
@@ -1143,14 +971,6 @@ msgstr "Tilføj ~alle"
 msgid  "Pr~eview"
 msgstr "~Forhåndsvisning"
 
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PUSHBUTTON.TEXT
-msgid  "Maddin1"
-msgstr "Maddin1"
-
-#: dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PUSHBUTTON.TEXT
-msgid  "Maddin2"
-msgstr "Maddin2"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.MODALDIALOG.TEXT
 msgid  "Enter Title"
 msgstr "Indtast titel"
@@ -1159,21 +979,9 @@ msgstr "Indtast titel"
 msgid  "Title"
 msgstr "Titel"
 
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.MODALDIALOG.TEXT
-msgid  "Find"
-msgstr "Søg"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FIXEDLINE.TEXT
-msgid  "Directory"
-msgstr "Mappe"
-
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FIXEDLINE.TEXT
 msgid  "File type"
 msgstr "Filtype"
-
-#: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.MODALDIALOG.TEXT
-msgid  "Apply"
-msgstr "Anvend"
 
 #: dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FIXEDLINE.TEXT
 msgid  "File"
@@ -1255,14 +1063,6 @@ msgstr "Sepia"
 msgid  "Aging degree"
 msgstr "Sepiagrad"
 
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.MODALDIALOG.TEXT
-msgid  "Posterize"
-msgstr "Plakat"
-
-#: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FIXEDTEXT.TEXT
-msgid  "Poster colors"
-msgstr "Plakatfarver"
-
 #: dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.MODALDIALOG.TEXT
 msgid  "Relief"
 msgstr "Relief"
@@ -1311,10 +1111,6 @@ msgstr "Han~ja"
 msgid  "Ha~nja"
 msgstr "Ha~nja"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_CONVERSION.FIXEDTEXT.TEXT
-msgid  "Conversion"
-msgstr "Konvertering"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_HANGUL_ONLY.CHECKBOX.TEXT
 msgid  "Hangul ~only"
 msgstr "Kun Han~gul"
@@ -1326,10 +1122,6 @@ msgstr "Kun Han~ja"
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_REPLACE_BY_CHARACTER.CHECKBOX.TEXT
 msgid  "Replace b~y character"
 msgstr "Erstat med tegn"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANGUL.STRING.TEXT
-msgid  "Hangul"
-msgstr "Hangul"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANJA.STRING.TEXT
 msgid  "Hanja"
@@ -1359,10 +1151,6 @@ msgstr "Vis senest anvendte indtastninger først"
 msgid  "Replace all unique entries automatically"
 msgstr "Erstat alle unikke elementer automatisk"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_NEW.PUSHBUTTON.TEXT
-msgid  "New..."
-msgstr "Ny..."
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_EDIT.PUSHBUTTON.TEXT
 msgid  "Edit..."
 msgstr "Rediger..."
@@ -1371,53 +1159,21 @@ msgstr "Rediger..."
 msgid  "Delete"
 msgstr "Slet"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.MODALDIALOG.TEXT
-msgid  "New Dictionary"
-msgstr "Ny brugerordbog"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FL_NEWDICT.FIXEDLINE.TEXT
-msgid  "Dictionary"
-msgstr "Ordbog"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 msgid  "~Name"
 msgstr "~Navn"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.MODALDIALOG.TEXT
-msgid  "Edit Custom Dictionary"
-msgstr "Rediger brugerordbog"
 
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.STR_EDITHINT.STRING.TEXT
 msgid  "[Enter text here]"
 msgstr "[Indtast tekst her]"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_BOOK.FIXEDTEXT.TEXT
-msgid  "Book"
-msgstr "Bog"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_ORIGINAL.FIXEDTEXT.TEXT
 msgid  "Original"
 msgstr "Oprindelig"
 
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_SUGGESTIONS.FIXEDTEXT.TEXT
-msgid  "Suggestions (max. 8)"
-msgstr "Forslag (maks. 8)"
-
-#: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_NEW.PUSHBUTTON.TEXT
-msgid  "New"
-msgstr "Ny(t)"
-
 #: dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CANCELBUTTON.TEXT
 msgid  "Close"
 msgstr "Luk"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.MODALDIALOG.TEXT
-msgid  "Target in Document"
-msgstr "Mål i dokument"
-
-#: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_APPLY.PUSHBUTTON.TEXT
-msgid  "Apply"
-msgstr "Anvend"
 
 #: dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_CLOSE.PUSHBUTTON.TEXT
 msgid  "Close"
@@ -1495,10 +1251,6 @@ msgstr "F~ormular"
 msgid  "Text"
 msgstr "Tekst"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.DEFAULT.STRINGLIST.ITEM
-msgid  "Button"
-msgstr "Knap"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FIXEDTEXT.TEXT
 msgid  "Te~xt"
 msgstr "~Tekst"
@@ -1510,10 +1262,6 @@ msgstr "N~avn"
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Events"
 msgstr "Hændelser"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FIXEDLINE.TEXT
-msgid  "Mail & news"
-msgstr "E-mail og nyhedsgrupper"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_MAIL.RADIOBUTTON.TEXT
 msgid  "~E-mail"
@@ -1535,10 +1283,6 @@ msgstr "~Emne"
 msgid  "Data Sources..."
 msgstr "Datakilder..."
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FIXEDLINE.TEXT
-msgid  "Document"
-msgstr "Dokument"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_PATH_DOC.FIXEDTEXT.TEXT
 msgid  "~Path"
 msgstr "~Sti"
@@ -1547,25 +1291,13 @@ msgstr "~Sti"
 msgid  "Open File"
 msgstr "Åbn fil"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_TARGET.FIXEDLINE.TEXT
-msgid  "Target in document"
-msgstr "Mål i dokument"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TARGET_DOC.FIXEDTEXT.TEXT
 msgid  "Targ~et"
 msgstr "~Mål"
 
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_URL.FIXEDTEXT.TEXT
-msgid  "URL"
-msgstr "URL"
-
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FIXEDTEXT.TEXT
 msgid  "Test text"
 msgstr "Testtekst"
-
-#: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.GRP_NEWDOCUMENT.FIXEDLINE.TEXT
-msgid  "New document"
-msgstr "Nyt dokument"
 
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.RB_EDITNOW.RADIOBUTTON.TEXT
 msgid  "Edit ~now"
@@ -1586,10 +1318,6 @@ msgstr "Fil~type"
 #: dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Select Path"
 msgstr "Vælg sti"
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_APPLYBUT.STRING.TEXT
-msgid  "Apply"
-msgstr "Anvend"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPDLG_CLOSEBUT.STRING.TEXT
 msgid  "Close"
@@ -1619,10 +1347,6 @@ msgstr "Internet"
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
 msgstr "Her opretter du et hyperlink til en webside, FTP-server eller Telnet-forbindelse."
 
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.STRING.TEXT
-msgid  "Mail & News"
-msgstr "E-mail og nyhedsgrupper"
-
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
 msgstr "Her opretter du et hyperlink til en e-mail-adresse eller nyhedsgruppe."
@@ -1630,10 +1354,6 @@ msgstr "Her opretter du et hyperlink til en e-mail-adresse eller nyhedsgruppe."
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.STRING.TEXT
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
 msgstr "Her opretter du et hyperlink til et eksisterende dokument eller et mål inde i et dokument."
-
-#: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.STRING.TEXT
-msgid  "New Document"
-msgstr "Nyt dokument"
 
 #: dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.STRING.TEXT
 msgid  "This is where you create a new document to which the new link points."
@@ -1691,10 +1411,6 @@ msgstr "~Foran"
 msgid  "A~fter"
 msgstr "E~fter"
 
-#: dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr "Placering"
-
 #: dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FIXEDTEXT.TEXT
 msgid  "~Number"
 msgstr "~Tal"
@@ -1746,10 +1462,6 @@ msgstr "Filer"
 #: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_TITLE.STRING.TEXT
 msgid  "Select Archives"
 msgstr "Vælg arkiver"
-
-#: dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.STRING.TEXT
-msgid  "Archives"
-msgstr "Arkiver"
 
 #: dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.STRING.TEXT
 msgid  "The file %1 already exists."
@@ -1835,10 +1547,6 @@ msgstr "Forfatter"
 msgid  "~Text"
 msgstr "~Tekst"
 
-#: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FIXEDLINE.TEXT
-msgid  "Contents"
-msgstr "Indhold"
-
 #: dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FIXEDTEXT.TEXT
 msgid  "~Insert"
 msgstr "~Indsæt"
@@ -1899,17 +1607,9 @@ msgstr "Opret bibliotek"
 msgid  "Enter the name for the new library."
 msgstr "Indtast navnet på det nye bibliotek."
 
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_NEWMACRO.STRING.TEXT
-msgid  "Create Macro"
-msgstr "Opret makro"
-
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_NEWMACRO.STRING.TEXT
 msgid  "Enter the name for the new macro."
 msgstr "Indtast navnet på den nye makro."
-
-#: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_RENAME.STRING.TEXT
-msgid  "Rename"
-msgstr "Omdøb"
 
 #: dialogs/scriptdlg.src#RID_DLG_NEWLIB.STR_FT_RENAME.STRING.TEXT
 msgid  "Enter the new name for the selected object."
@@ -1947,10 +1647,6 @@ msgstr "Et objekt med samme navn findes allerede."
 msgid  " You do not have permission to create this object."
 msgstr "Du har ikke rettigheder til at oprette dette objekt."
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_CREATEFAILED_TITLE.STRING.TEXT
-msgid  "Error Creating Object"
-msgstr "Fejl under oprettelse af objekt"
-
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED.STRING.TEXT
 msgid  "The object could not be renamed."
 msgstr "Objektet kunne ikke omdøbes."
@@ -1958,10 +1654,6 @@ msgstr "Objektet kunne ikke omdøbes."
 #: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILEDPERM.STRING.TEXT
 msgid  " You do not have permission to rename this object."
 msgstr "Du har ikke rettigheder til at omdøbe dette objekt."
-
-#: dialogs/scriptdlg.src#RID_SVXSTR_RENAMEFAILED_TITLE.STRING.TEXT
-msgid  "Error Renaming Object"
-msgstr "Fejl ved omdøbning af objekt"
 
 #: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME Error"
@@ -1999,10 +1691,6 @@ msgstr "Der opstod en fejl i scriptframeworket under udførelse af %LANGUAGENAME
 msgid  "Type:"
 msgstr "Type:"
 
-#: dialogs/scriptdlg.src#RID_SVXSTR_ERROR_MESSAGE_LABEL.STRING.TEXT
-msgid  "Message:"
-msgstr "Meddelelse:"
-
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TABDIALOG.TEXT
 msgid  "Format Cells"
 msgstr "Formater celler"
@@ -2014,14 +1702,6 @@ msgstr "Skrifttype"
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
 msgid  "Font Effects"
 msgstr "Skrifteffekter"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-msgid  "Borders"
-msgstr "Kanter"
-
-#: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-msgid  "Background"
-msgstr "Baggrund"
 
 #: dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PUSHBUTTON.TEXT
 msgid  "Return"
@@ -2103,10 +1783,6 @@ msgstr "~Luk"
 msgid  "Resu~me"
 msgstr "~Genoptag"
 
-#: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.STRING.TEXT
-msgid  "(no suggestions)"
-msgstr "(ingen forslag)"
-
 #: dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.STRING.TEXT
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
 msgstr "Stavekontrol: $LANGUAGE ($LOCATION)"
@@ -2159,10 +1835,6 @@ msgstr "Skrifttype"
 msgid  "Font Effects"
 msgstr "Skrifteffekter"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
-msgid  "Position"
-msgstr "Placering"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PAGEITEM.TEXT
 msgid  "Asian Layout"
 msgstr "Asiatisk layout"
@@ -2183,21 +1855,9 @@ msgstr "Tekstforløb"
 msgid  "Asian Typography"
 msgstr "Asiatisk typografi"
 
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
-msgstr "Baggrund"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.MODALDIALOG.TEXT
-msgid  "Attributes"
-msgstr "Attributter"
-
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FIXEDTEXT.TEXT
 msgid  "~Options"
 msgstr "~Indstillinger"
-
-#: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.MODALDIALOG.TEXT
-msgid  "Similarity Search"
-msgstr "Søg lignende"
 
 #: dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FIXEDTEXT.TEXT
 msgid  "~Exchange characters"
@@ -2223,17 +1883,9 @@ msgstr "Indstillinger"
 msgid  "Paste Special"
 msgstr "Indsæt speciel"
 
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FIXEDTEXT.TEXT
-msgid  "Source:"
-msgstr "Kilde:"
-
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RADIOBUTTON.TEXT
 msgid  "~Insert as"
 msgstr "~Indsæt som"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RADIOBUTTON.TEXT
-msgid  "Link to"
-msgstr "Hyperlink til"
 
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CHECKBOX.TEXT
 msgid  "~As icon"
@@ -2246,10 +1898,6 @@ msgstr "~Andet ikon..."
 #: dialogs/svuidlg.src#MD_PASTE_OBJECT.FL_CHOICE.FIXEDLINE.TEXT
 msgid  "Selection"
 msgstr "Markering"
-
-#: dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.STRING.TEXT
-msgid  "Object"
-msgstr "Objekt"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.MODALDIALOG.TEXT
 msgid  "Edit Links"
@@ -2266,10 +1914,6 @@ msgstr "Element:"
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE.FIXEDTEXT.TEXT
 msgid  "Type"
 msgstr "Type"
-
-#: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FIXEDTEXT.TEXT
-msgid  "Status"
-msgstr "Status"
 
 #: dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CANCELBUTTON.TEXT
 msgid  "~Close"
@@ -2423,10 +2067,6 @@ msgstr "~Fra"
 msgid  "Au~tomatic"
 msgstr "~Automatisk"
 
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FIXEDLINE.TEXT
-msgid  "Scroll bar"
-msgstr "Rullebjælke"
-
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RADIOBUTTON.TEXT
 msgid  "On"
 msgstr "Til"
@@ -2434,10 +2074,6 @@ msgstr "Til"
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_OFF.RADIOBUTTON.TEXT
 msgid  "Off"
 msgstr "Fra"
-
-#: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FIXEDLINE.TEXT
-msgid  "Border"
-msgstr "Kant"
 
 #: dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FIXEDTEXT.TEXT
 msgid  "~Width"
@@ -2463,21 +2099,9 @@ msgstr "Afstand til indhold"
 msgid  "Select File for Floating Frame"
 msgstr "Vælg fil til objektramme"
 
-#: dialogs/svuidlg.src#STR_EDIT_APPLET.STRING.TEXT
-msgid  "Edit Applet"
-msgstr "Rediger applet"
-
-#: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.MODALDIALOG.TEXT
-msgid  "Record Number"
-msgstr "Datapostnummer"
-
 #: dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FIXEDTEXT.TEXT
 msgid  "go to record"
 msgstr "gå til datapost"
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.MODALDIALOG.TEXT
-msgid  "Thesaurus"
-msgstr "Synonymordbog"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_WORD.FIXEDTEXT.TEXT
 msgid  "~Current word"
@@ -2494,10 +2118,6 @@ msgstr "~Alternativer"
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.FT_REPL.FIXEDTEXT.TEXT
 msgid  "~Replace with"
 msgstr "Erstat med"
-
-#: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.BTN_THES_OK.OKBUTTON.TEXT
-msgid  "Replace"
-msgstr "~Erstat"
 
 #: dialogs/thesdlg.src#RID_SVXDLG_THESAURUS.STR_ERR_TEXTNOTFOUND.STRING.TEXT
 msgid  "No alternatives found."
@@ -2559,10 +2179,6 @@ msgstr "Forbindelsespulje aktiveret"
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "Kendte drivere i %PRODUCTNAME"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FIXEDTEXT.TEXT
-msgid  "Current driver:"
-msgstr "Nuværende driver:"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CHECKBOX.TEXT
 msgid  "Enable pooling for this driver"
 msgstr "Aktiver pulje for denne driver"
@@ -2571,10 +2187,6 @@ msgstr "Aktiver pulje for denne driver"
 msgid  "Timeout (seconds)"
 msgstr "Tidsudløb (sekunder)"
 
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.STRING.TEXT
-msgid  "Driver name"
-msgstr "Drivernavn"
-
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.STRING.TEXT
 msgid  "Pool"
 msgstr "Forbindelsespulje"
@@ -2582,14 +2194,6 @@ msgstr "Forbindelsespulje"
 #: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.STRING.TEXT
 msgid  "Timeout"
 msgstr "Tidsudløb"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.STRING.TEXT
-msgid  "Yes"
-msgstr "Ja"
-
-#: options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.STRING.TEXT
-msgid  "No"
-msgstr "Nej"
 
 #: options/dbregister.src#RID_SFXPAGE_DBREGISTER.TABPAGE.TEXT
 msgid  "Registered databases"
@@ -2663,10 +2267,6 @@ msgstr "~Skrifttype"
 msgid  "Re~place with"
 msgstr "E~rstat med"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.TOOLBOXITEM.TEXT
-msgid  "Apply"
-msgstr "Anvend"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.TOOLBOXITEM.TEXT
 msgid  "Delete"
 msgstr "Slet"
@@ -2687,10 +2287,6 @@ msgstr "Kun ikke-proportionelle skrifttyper"
 msgid  "~Size"
 msgstr "~Størrelse"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.STRING.TEXT
-msgid  "Always"
-msgstr "Altid"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.STRING.TEXT
 msgid  "Screen only"
 msgstr "Kun skærm"
@@ -2699,17 +2295,9 @@ msgstr "Kun skærm"
 msgid  "Font"
 msgstr "Skrifttype"
 
-#: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.STRING.TEXT
-msgid  "Replace with"
-msgstr "Erstat med"
-
 #: options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.STRING.TEXT
 msgid  "Automatic"
 msgstr "Automatisk"
-
-#: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FIXEDLINE.TEXT
-msgid  "Default text direction"
-msgstr "Standardtekstretning"
 
 #: options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RADIOBUTTON.TEXT
 msgid  "~Left-to-right"
@@ -2754,10 +2342,6 @@ msgstr "Tillad animeret ~tekst"
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CHECKBOX.TEXT
 msgid  "~Help tips disappear after "
 msgstr "~Hjælpetips forsvinder efter "
-
-#: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FIXEDTEXT.TEXT
-msgid  "seconds"
-msgstr "sekunder"
 
 #: options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FIXEDLINE.TEXT
 msgid  "Options for high contrast appearance"
@@ -2831,10 +2415,6 @@ msgstr "Uden brugerdefinerede linjeskiftstegn"
 msgid  "Proxy"
 msgstr "Proxy"
 
-#: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TABPAGE.TEXT
-msgid  "Default Colors"
-msgstr "Standardfarver"
-
 #: options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FIXEDLINE.TEXT
 msgid  "Chart colors"
 msgstr "Diagramfarver"
@@ -2851,14 +2431,6 @@ msgstr "Standar~d"
 msgid  "Data Series $(ROW)"
 msgstr "Dataserie $(ROW)"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FIXEDLINE.TEXT
-msgid  "Color scheme"
-msgstr "Farveskema"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FIXEDTEXT.TEXT
-msgid  "Scheme"
-msgstr "Skema"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PUSHBUTTON.TEXT
 msgid  "Save..."
 msgstr "Gem..."
@@ -2866,10 +2438,6 @@ msgstr "Gem..."
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_DELETESCHEME.PUSHBUTTON.TEXT
 msgid  "Delete"
 msgstr "Slet"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FIXEDLINE.TEXT
-msgid  "Custom colors"
-msgstr "Brugerdefinerede farver"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.STRING.TEXT
 msgid  "On"
@@ -2887,26 +2455,6 @@ msgstr "Farveindstilling"
 msgid  "Preview"
 msgstr "Forhåndsvisning"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FIXEDTEXT.TEXT
-msgid  "General"
-msgstr "Generelt"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FIXEDTEXT.TEXT
-msgid  "Document background"
-msgstr "Dokumentbaggrund"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CHECKBOX.TEXT
-msgid  "Text boundaries"
-msgstr "Tekstgrænser"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FIXEDTEXT.TEXT
-msgid  "Application background"
-msgstr "Programbaggrund"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CHECKBOX.TEXT
-msgid  "Object boundaries"
-msgstr "Objektgrænser"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CHECKBOX.TEXT
 msgid  "Table boundaries"
 msgstr "Tabelgrænser"
@@ -2914,14 +2462,6 @@ msgstr "Tabelgrænser"
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_FONTCOLOR.FIXEDTEXT.TEXT
 msgid  "Font color"
 msgstr "Skriftfarve"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CHECKBOX.TEXT
-msgid  "Unvisited links"
-msgstr "Ubesøgte hyperlinks"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CHECKBOX.TEXT
-msgid  "Visited links"
-msgstr "Besøgte hyperlinks"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FIXEDTEXT.TEXT
 msgid  "AutoSpellcheck"
@@ -2955,10 +2495,6 @@ msgstr "Scriptindikator"
 msgid  "Section boundaries"
 msgstr "Sektionsgrænser"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FIXEDTEXT.TEXT
-msgid  "Page and column breaks"
-msgstr "Side- og spalteskift"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FIXEDTEXT.TEXT
 msgid  "Direct cursor"
 msgstr "Direkte markør"
@@ -2979,18 +2515,6 @@ msgstr "Fremhævelse af kommentarer"
 msgid  "Keyword highlighting"
 msgstr "Fremhævelse af nøgleord"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FIXEDTEXT.TEXT
-msgid  "Text"
-msgstr "Tekst"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FIXEDTEXT.TEXT
-msgid  "Spreadsheet"
-msgstr "Regneark"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FIXEDTEXT.TEXT
-msgid  "Grid lines"
-msgstr "Gitterlinjer"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FIXEDTEXT.TEXT
 msgid  "Page breaks"
 msgstr "Sideskift"
@@ -3003,21 +2527,9 @@ msgstr "Manuelle sideskift"
 msgid  "Automatic page breaks"
 msgstr "Automatiske sideskift"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FIXEDTEXT.TEXT
-msgid  "Detective"
-msgstr "Detektiv"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FIXEDTEXT.TEXT
 msgid  "Detective error"
 msgstr "Detektivfejl"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FIXEDTEXT.TEXT
-msgid  "References"
-msgstr "Henvisninger"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FIXEDTEXT.TEXT
-msgid  "Notes background"
-msgstr "Kommentarbaggrund"
 
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FIXEDTEXT.TEXT
 msgid  "Drawing / Presentation"
@@ -3051,14 +2563,6 @@ msgstr "Operator"
 msgid  "Reserved expression"
 msgstr "Reserveret udtryk"
 
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FIXEDTEXT.TEXT
-msgid  "Error"
-msgstr "Fejl"
-
-#: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FIXEDTEXT.TEXT
-msgid  "SQL Syntax Highlighting"
-msgstr "SQL-syntaksfremhævelse"
-
 #: options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FIXEDTEXT.TEXT
 msgid  "Keyword"
 msgstr "Nøgleord"
@@ -3091,10 +2595,6 @@ msgstr "Sletning af farveskema"
 msgid  "Save scheme"
 msgstr "Gem farveskema"
 
-#: options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.STRING.TEXT
-msgid  "Name of color scheme"
-msgstr "Navn på farveskema"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TABPAGE.TEXT
 msgid  "Complex Text Layout"
 msgstr "Complex Text Layout (CTL)"
@@ -3119,10 +2619,6 @@ msgstr "~Skriv og erstat"
 msgid  "Cursor control"
 msgstr "Markørkontrol"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FIXEDTEXT.TEXT
-msgid  "Movement"
-msgstr "Bevægelse"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RADIOBUTTON.TEXT
 msgid  "Lo~gical"
 msgstr "Lo~gisk"
@@ -3139,25 +2635,9 @@ msgstr "Generelle indstillinger"
 msgid  "~Numerals"
 msgstr "~Tal"
 
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM1.STRINGLIST.ITEM
-msgid  "Arabic"
-msgstr "Arabisk"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM2.STRINGLIST.ITEM
-msgid  "Hindi"
-msgstr "Hindi"
-
-#: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM3.STRINGLIST.ITEM
-msgid  "System"
-msgstr "System"
-
 #: options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.ITEM4.STRINGLIST.ITEM
 msgid  "Context"
 msgstr "Kontekst"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.MODALDIALOG.TEXT
-msgid  "New Dictionary"
-msgstr "Ny ordbog"
 
 #: options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FIXEDTEXT.TEXT
 msgid  "~Name"
@@ -3170,14 +2650,6 @@ msgstr "S~prog"
 #: options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CHECKBOX.TEXT
 msgid  "~Exception (-)"
 msgstr "~Undtagelse (-)"
-
-#: options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FIXEDLINE.TEXT
-msgid  "Dictionary"
-msgstr "Ordbog"
-
-#: options/optdict.src#RID_SFXDLG_EDITDICT.MODALDIALOG.TEXT
-msgid  "Edit Custom Dictionary"
-msgstr "Rediger brugerordbog"
 
 #: options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FIXEDTEXT.TEXT
 msgid  "~Book"
@@ -3287,10 +2759,6 @@ msgstr "Excel til %PRODUCTNAME Calc eller omvendt"
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
 msgstr "PowerPoint til %PRODUCTNAME Impress eller omvendt"
 
-#: options/optgdlg.src#OFA_TP_MISC.FL_HELP.FIXEDLINE.TEXT
-msgid  "Help"
-msgstr "Hjælp"
-
 #: options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CHECKBOX.TEXT
 msgid  "~Tips"
 msgstr "~Tips"
@@ -3310,10 +2778,6 @@ msgstr "~Nulstil hjælpeagenten"
 #: options/optgdlg.src#OFA_TP_MISC.FT_HELPFORMAT.FIXEDTEXT.TEXT
 msgid  "Help ~formatting"
 msgstr "Formatering af Hjælp"
-
-#: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM1.STRINGLIST.ITEM
-msgid  "Default"
-msgstr "Standard"
 
 #: options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.ITEM2.STRINGLIST.ITEM
 msgid  "High Contrast #1"
@@ -3367,10 +2831,6 @@ msgstr "Udskriftsdialoger"
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "Brug %PRODUCTNAME~dialoger"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FIXEDLINE.TEXT
-msgid  "User Interface"
-msgstr "Brugergrænseflade"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FIXEDTEXT.TEXT
 msgid  "Sc~aling"
 msgstr "~Skalering"
@@ -3387,14 +2847,6 @@ msgstr "Ikonstørrelse"
 msgid  "Automatic"
 msgstr "Automatisk"
 
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM2.STRINGLIST.ITEM
-msgid  "Small"
-msgstr "Lille"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.ITEM3.STRINGLIST.ITEM
-msgid  "Large"
-msgstr "Stor"
-
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM2.STRINGLIST.ITEM
 msgid  "Galaxy (default)"
 msgstr "Galaxy (standard)"
@@ -3402,10 +2854,6 @@ msgstr "Galaxy (standard)"
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM3.STRINGLIST.ITEM
 msgid  "High Contrast"
 msgstr "Høj kontrast"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM4.STRINGLIST.ITEM
-msgid  "Industrial"
-msgstr "Industriel"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.ITEM5.STRINGLIST.ITEM
 msgid  "Classic"
@@ -3422,10 +2870,6 @@ msgstr "Trim skærmskrifttyper"
 #: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_LABEL.FIXEDTEXT.TEXT
 msgid  "from"
 msgstr "fra"
-
-#: options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FIXEDTEXT.TEXT
-msgid  "Pixels"
-msgstr "Billedpunkter"
 
 #: options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FIXEDLINE.TEXT
 msgid  "Menu"
@@ -3467,17 +2911,9 @@ msgstr "Brug hardwareacceleration"
 msgid  "Use Anti-Aliasing"
 msgstr "Brug Anti-aliasing"
 
-#: options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FIXEDLINE.TEXT
-msgid  "Mouse"
-msgstr "Mus"
-
 #: options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FIXEDTEXT.TEXT
 msgid  "Mouse positioning"
 msgstr "Museplacering"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM1.STRINGLIST.ITEM
-msgid  "Default button"
-msgstr "Standardknap"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.ITEM2.STRINGLIST.ITEM
 msgid  "Dialog center"
@@ -3494,10 +2930,6 @@ msgstr "Midterste museknap"
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM1.STRINGLIST.ITEM
 msgid  "No function"
 msgstr "Ingen funktion"
-
-#: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM2.STRINGLIST.ITEM
-msgid  "Automatic scrolling"
-msgstr "Automatisk rulning"
 
 #: options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.ITEM3.STRINGLIST.ITEM
 msgid  "Paste clipboard"
@@ -3575,10 +3007,6 @@ msgstr "Vis UI elements for B~i-directional skrivning"
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Sprogindstillingen for brugergrænsefladen er opdateret, og ændringen vil træde i kraft, næste gang du starter %PRODUCTNAME %PRODUCTVERSION"
 
-#: options/optgenrl.src#RID_SFXPAGE_GENERAL.TABPAGE.TEXT
-msgid  "User Data"
-msgstr "Brugerdata"
-
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FIXEDTEXT.TEXT
 msgid  "~Company"
 msgstr "~Firma"
@@ -3638,6 +3066,10 @@ msgstr "By/Delstat/Postnummer"
 #: options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_QUERY_REG.STRING.TEXT
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
 msgstr "Vær opmærksom på, at gade, postnummer og by anvendes til beregning af registreringsnøglen. Indtil registreringen er gennemført kan disse brugerdata ikke ændres. Vil du ændre disse brugerdata nu?"
+
+#: options/optgenrl.src#RID_SVXQB_CHANGEDATA.QUERYBOX.MESSAGE
+msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgstr "Bruger data er ændret.\nVil du virkelig ændre dine bruger data?"
 
 #: options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FIXEDTEXT.TEXT
 msgid  "Size ~1"
@@ -3767,14 +3199,6 @@ msgstr "Pro~xy-server"
 msgid  "None"
 msgstr "Ingen"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM2.STRINGLIST.ITEM
-msgid  "System"
-msgstr "System"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.ITEM3.STRINGLIST.ITEM
-msgid  "Manual"
-msgstr "Manuelt"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.STRING.TEXT
 msgid  "Use browser settings"
 msgstr "Brug browserindstillinger"
@@ -3811,14 +3235,6 @@ msgstr "P~ort"
 msgid  "~No proxy for:"
 msgstr "~Ingen proxy for:"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FIXEDTEXT.TEXT
-msgid  "Separator ;"
-msgstr "Skilletegn ;"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FIXEDLINE.TEXT
-msgid  "DNS server"
-msgstr "DNS-server"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RADIOBUTTON.TEXT
 msgid  "~Automatic"
 msgstr "~Automatisk"
@@ -3834,10 +3250,6 @@ msgstr "er ikke en gyldig indtastning i dette felt. Angiv en værdi mellem 0 og 
 #: options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_1.STRING.TEXT
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
 msgstr "er ikke en gyldig indtastning i dette felt. Angiv en værdi mellem 1 og 255."
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TABPAGE.TEXT
-msgid  "Search"
-msgstr "Søg"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FIXEDLINE.TEXT
 msgid  "Search in"
@@ -3879,14 +3291,6 @@ msgstr "~Skilletegn"
 msgid  "~Case match"
 msgstr "~STORE/små"
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM2.STRINGLIST.ITEM
-msgid  "Upper"
-msgstr "Store bogstaver"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.ITEM3.STRINGLIST.ITEM
-msgid  "Lower"
-msgstr "Små bogstaver"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PUSHBUTTON.TEXT
 msgid  "N~ew"
 msgstr "~Ny"
@@ -3906,10 +3310,6 @@ msgstr "~Slet"
 #: options/optinet2.src#RID_SVXPAGE_INET_SEARCH.MSG_MODIFY.STRING.TEXT
 msgid  "Do you want to accept the current modification?"
 msgstr "Skal den nuværende ændring anvendes?"
-
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TABPAGE.TEXT
-msgid  "Security"
-msgstr "Sikkerhed"
 
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FIXEDLINE.TEXT
 msgid  "Security options and warnings"
@@ -3947,10 +3347,6 @@ msgstr "Adganskoder beskyttes med en hovedadgangskode. Du bliver bedt om at indt
 msgid  "Master Password..."
 msgstr "Hovedadgangskode..."
 
-#: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FIXEDLINE.TEXT
-msgid  "Macro security"
-msgstr "Makrosikkerhed"
-
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FIXEDTEXT.TEXT
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
 msgstr "Juster sikkerhedsniveauet for udførelse af makroer og angiv betroede makroudviklere."
@@ -3962,6 +3358,10 @@ msgstr "Makrosikkerhed..."
 #: options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.STRING.TEXT
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
 msgstr "Deaktivering af funktionen med at gemme adgangskoder sletter den gemte liste af adgangskoder og nulstiller hovedadgangskoden.\n\nVil du slette adgangskodelisten og nulstille hovedadgangskoden?"
+
+#: options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ERRORBOX.MESSAGE
+msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
+msgstr "Ugyldig værdi!\n\nEt portnummer kan højst være 65535."
 
 #: options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FIXEDTEXT.TEXT
 msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
@@ -3982,10 +3382,6 @@ msgstr "~E-mail-program"
 #: options/optinet2.src#RID_SVXPAGE_INET_MAIL.STR_DEFAULT_FILENAME.STRING.TEXT
 msgid  "All files (*.*)"
 msgstr "Alle filer (*.*)"
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TABPAGE.TEXT
-msgid  "Java"
-msgstr "Java"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FIXEDLINE.TEXT
 msgid  "Java options"
@@ -4010,10 +3406,6 @@ msgstr "~Parametre..."
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_CLASSPATH.PUSHBUTTON.TEXT
 msgid  "~Class Path..."
 msgstr "~Klassesti..."
-
-#: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.STRING.TEXT
-msgid  "Location: "
-msgstr "Placering:"
 
 #: options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.STRING.TEXT
 msgid  "with accessibility support"
@@ -4051,17 +3443,9 @@ msgstr "T~ildel"
 msgid  "Assig~ned start parameters"
 msgstr "Tildelte ~startparametre"
 
-#: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FIXEDTEXT.TEXT
-msgid  "For example: -Dmyprop=c:\\program files\\java"
-msgstr "For eksempel: -Dmyprop=c:\\programmer\\java"
-
 #: options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PUSHBUTTON.TEXT
 msgid  "~Remove"
 msgstr "~Fjern"
-
-#: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.MODALDIALOG.TEXT
-msgid  "Class Path"
-msgstr "Klasse-sti"
 
 #: options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FIXEDTEXT.TEXT
 msgid  "A~ssigned folders and archives"
@@ -4075,9 +3459,21 @@ msgstr "~Tilføj arkiv..."
 msgid  "Add ~Folder"
 msgstr "Tilføj ~mappe"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FIXEDLINE.TEXT
-msgid  "Treat as equal"
-msgstr "Opfat som identisk"
+#: options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ERRORBOX.MESSAGE
+msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+msgstr "Den valgte mappe indeholder ikke et Java-afviklingsmiljø (Java Runtime Environment - JRE).\nVælg en anden mappe."
+
+#: options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ERRORBOX.MESSAGE
+msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
+msgstr "Det Java-afviklingsmiljø (Java Runtime Environment - JRE), som du valgte, er ikke den krævede version.\nVælg en anden mappe."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WARNINGBOX.MESSAGE
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
+msgstr "%PRODUCTNAME skal genstartes, for at det valgte Java-afviklingsmiljø (Java Runtime Environment - JRE) fungerer korrekt.\nGenstart %PRODUCTNAME nu."
+
+#: options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WARNINGBOX.MESSAGE
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
+msgstr "Du skal genstarte %PRODUCTNAME, så de nye eller ændrede værdier kan træde i kraft.\nGenstart %PRODUCTNAME nu."
 
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CHECKBOX.TEXT
 msgid  "~uppercase/lowercase"
@@ -4143,10 +3539,6 @@ msgstr "Ki/k~u (tekisuto/tekusuto)"
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "Lange vokaler (ka-/kaa)"
 
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FIXEDLINE.TEXT
-msgid  "Ignore"
-msgstr "Ignorer"
-
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CHECKBOX.TEXT
 msgid  "Pu~nctuation characters"
 msgstr "Sætningstegn"
@@ -4158,10 +3550,6 @@ msgstr "~Blanktegn"
 #: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_MIDDLE_DOT.CHECKBOX.TEXT
 msgid  "Midd~le dots"
 msgstr "~Punkter i midten"
-
-#: options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CHECKBOX.TEXT
-msgid  "Searching in Japanese"
-msgstr "Søgeindstillinger for japansk"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.MODALDIALOG.TEXT
 msgid  "Edit Modules"
@@ -4202,10 +3590,6 @@ msgstr "Stavekontrol"
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_HYPH.STRING.TEXT
 msgid  "Hyphenation"
 msgstr "Orddeling"
-
-#: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.STRING.TEXT
-msgid  "Thesaurus"
-msgstr "Synonymordbog"
 
 #: options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.STRING.TEXT
 msgid  "Grammar"
@@ -4259,21 +3643,9 @@ msgstr "~Indstillinger"
 msgid  "Edi~t..."
 msgstr "Redi~ger..."
 
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.STRING.TEXT
-msgid  "Check uppercase words"
-msgstr "Kontroller ord med STORE bogstaver"
-
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.STRING.TEXT
 msgid  "Check words with numbers "
 msgstr "Kontroller ord med tal"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.STRING.TEXT
-msgid  "Check capitalization"
-msgstr "Kontroller store og små bogstaver"
-
-#: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.STRING.TEXT
-msgid  "Check special regions"
-msgstr "Kontroller i specialområder"
 
 #: options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.STRING.TEXT
 msgid  "Check spelling as you type"
@@ -4319,10 +3691,6 @@ msgstr "Editer optioner"
 msgid  "Do you want to delete the dictionary?"
 msgstr "Vil du slette ordbogen?"
 
-#: options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FIXEDLINE.TEXT
-msgid  "Undo"
-msgstr "Fortryd"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FIXEDTEXT.TEXT
 msgid  "Number of steps"
 msgstr "Antal trin"
@@ -4335,10 +3703,6 @@ msgstr "Grafikmellemlager"
 msgid  "Use for %PRODUCTNAME"
 msgstr "Anvend til %PRODUCTNAME"
 
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FIXEDTEXT.TEXT
-msgid  "MB"
-msgstr "MB"
-
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FIXEDTEXT.TEXT
 msgid  "Memory per object"
 msgstr "Hukommelse pr. objekt"
@@ -4346,10 +3710,6 @@ msgstr "Hukommelse pr. objekt"
 #: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME.FIXEDTEXT.TEXT
 msgid  "Remove from memory after"
 msgstr "Fjern fra hukommelse efter"
-
-#: options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FIXEDTEXT.TEXT
-msgid  "hh:mm"
-msgstr "tt:mm"
 
 #: options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FIXEDLINE.TEXT
 msgid  "Cache for inserted objects"
@@ -4399,6 +3759,10 @@ msgstr "Stier brugt af %PRODUCTNAME"
 msgid  "Edit Paths: %1"
 msgstr "Rediger stier: %1"
 
+#: options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ERRORBOX.MESSAGE
+msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
+msgstr "Konfiguration og mail må ikke ligge i samme katalog.\nVælg venligst en ny sti."
+
 #: options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.STRING.TEXT
 msgid  "Configuration"
 msgstr "Konfiguration"
@@ -4406,22 +3770,6 @@ msgstr "Konfiguration"
 #: options/optpath.src#RID_SVXSTR_KEY_WORK_PATH.STRING.TEXT
 msgid  "My Documents"
 msgstr "Dokumenter"
-
-#: options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.STRING.TEXT
-msgid  "Graphics"
-msgstr "Grafik"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.STRING.TEXT
-msgid  "Icons"
-msgstr "Ikoner"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.STRING.TEXT
-msgid  "Palettes"
-msgstr "Paletter"
-
-#: options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.STRING.TEXT
-msgid  "Backups"
-msgstr "Sikkerhedskopier"
 
 #: options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.STRING.TEXT
 msgid  "Modules"
@@ -4435,33 +3783,13 @@ msgstr "Skabeloner"
 msgid  "AutoText"
 msgstr "Autotekst"
 
-#: options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.STRING.TEXT
-msgid  "Dictionaries"
-msgstr "Ordbøger"
-
-#: options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.STRING.TEXT
-msgid  "Help"
-msgstr "Hjælp"
-
 #: options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.STRING.TEXT
 msgid  "Gallery"
 msgstr "Galleri"
 
-#: options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.STRING.TEXT
-msgid  "Message Storage"
-msgstr "Meddelelseslager"
-
 #: options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.STRING.TEXT
 msgid  "Temporary files"
 msgstr "Midlertidige filer"
-
-#: options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.STRING.TEXT
-msgid  "Plug-ins"
-msgstr "Plugins"
-
-#: options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.STRING.TEXT
-msgid  "Folder Bookmarks"
-msgstr "Mappe-bogmærker"
 
 #: options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.STRING.TEXT
 msgid  "Filters"
@@ -4514,10 +3842,6 @@ msgstr "Opret altid sikkerhedskopi"
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_AUTOSAVE.CHECKBOX.TEXT
 msgid  "Save ~AutoRecovery information every"
 msgstr "~Gem automatisk gendannelsesinformation hvert"
-
-#: options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FIXEDTEXT.TEXT
-msgid  "Minutes"
-msgstr "Minutter"
 
 #: options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CHECKBOX.TEXT
 msgid  "Save URLs relative to file system"
@@ -4575,10 +3899,6 @@ msgstr "HTML-dokument"
 msgid  "Master document"
 msgstr "Hoveddokument"
 
-#: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.STRINGLIST.ITEM
-msgid  "Spreadsheet"
-msgstr "Regneark"
-
 #: options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.STRINGLIST.ITEM
 msgid  "Presentation"
 msgstr "Præsentation"
@@ -4607,10 +3927,6 @@ msgstr "Stavekontrol"
 msgid  "~Edit..."
 msgstr "~Rediger..."
 
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FIXEDLINE.TEXT
-msgid  "Dictionaries"
-msgstr "Ordbøger"
-
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CHECKBOX.TEXT
 msgid  "~Capital words"
 msgstr "~Ord med store bogstaver"
@@ -4622,10 +3938,6 @@ msgstr "~Ord med tal "
 #: options/optspell.src#RID_SFXPAGE_SPELL.BTN_UPLOW.CHECKBOX.TEXT
 msgid  "~Case sensitive "
 msgstr "STORE og små b~ogstaver"
-
-#: options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FIXEDLINE.TEXT
-msgid  "Check"
-msgstr "Kontroller"
 
 #: options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TABPAGE.TEXT
 msgid  "OnlineUpdate"
@@ -4783,14 +4095,6 @@ msgstr "Her definerer du generelle indstillinger for adgang til eksterne datakil
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
 msgstr "Her definerer du generelle indstillinger for åbning og lagring af dokumenter i fremmede formater. Du kan styre makroers eller OLE-objekters adfærd i Microsoft Office-dokumenter eller definere indstillinger for HTML-dokumenter."
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ITEMLIST.ITEM
-msgid  "%PRODUCTNAME"
-msgstr "%PRODUCTNAME"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ITEMLIST.ITEM
-msgid  "User Data"
-msgstr "Brugerdata"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ITEMLIST.ITEM
 msgid  "General"
 msgstr "Generelt"
@@ -4811,17 +4115,9 @@ msgstr "Udskriv"
 msgid  "Paths"
 msgstr "Stier"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ITEMLIST.ITEM
-msgid  "Colors"
-msgstr "Farver"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ITEMLIST.ITEM
 msgid  "Fonts"
 msgstr "Skrifttyper"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ITEMLIST.ITEM
-msgid  "Security"
-msgstr "Sikkerhed"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ITEMLIST.ITEM
 msgid  "Appearance"
@@ -4831,10 +4127,6 @@ msgstr "Udseende"
 msgid  "Accessibility"
 msgstr "Tilgængelighed"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ITEMLIST.ITEM
-msgid  "Java"
-msgstr "Java"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ITEMLIST.ITEM
 msgid  "Network Identity"
 msgstr "Netværksidentifikation"
@@ -4843,10 +4135,6 @@ msgstr "Netværksidentifikation"
 msgid  "Online Update"
 msgstr "Onlineopdatering"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ITEMLIST.ITEM
-msgid  "Language Settings"
-msgstr "Sprogindstillinger"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ITEMLIST.ITEM
 msgid  "Languages"
 msgstr "Sprog"
@@ -4854,10 +4142,6 @@ msgstr "Sprog"
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SFXPAGE_LINGU.ITEMLIST.ITEM
 msgid  "Writing Aids"
 msgstr "Skrivehjælp"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ITEMLIST.ITEM
-msgid  "Searching in Japanese"
-msgstr "Søgeindstillinger for japansk"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ITEMLIST.ITEM
 msgid  "Asian Layout"
@@ -4874,14 +4158,6 @@ msgstr "Internet"
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_PROXY.ITEMLIST.ITEM
 msgid  "Proxy"
 msgstr "Proxy"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ITEMLIST.ITEM
-msgid  "Search"
-msgstr "Søg"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ITEMLIST.ITEM
-msgid  "E-mail"
-msgstr "E-mail"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Writer"
@@ -4931,10 +4207,6 @@ msgstr "Brevfletning e-mail"
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ITEMLIST.ITEM
-msgid  "Background"
-msgstr "Baggrund"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ITEMLIST.ITEM
 msgid  "%PRODUCTNAME Math"
 msgstr "%PRODUCTNAME Math"
@@ -4942,14 +4214,6 @@ msgstr "%PRODUCTNAME Math"
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.SID_SM_TP_PRINTOPTIONS.ITEMLIST.ITEM
 msgid  "Settings"
 msgstr "Indstillinger"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ITEMLIST.ITEM
-msgid  "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Calc"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ITEMLIST.ITEM
-msgid  "International"
-msgstr "International"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ITEMLIST.ITEM
 msgid  "Calculate"
@@ -4967,25 +4231,9 @@ msgstr "%PRODUCTNAME Impress"
 msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME Draw"
 
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ITEMLIST.ITEM
-msgid  "Charts"
-msgstr "Diagrammer"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ITEMLIST.ITEM
-msgid  "Default Colors"
-msgstr "Standardfarver"
-
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ITEMLIST.ITEM
 msgid  "Load/Save"
 msgstr "Indlæs/gem"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ITEMLIST.ITEM
-msgid  "VBA Properties"
-msgstr "VBA-egenskaber"
-
-#: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ITEMLIST.ITEM
-msgid  "Microsoft Office"
-msgstr "Microsoft Office"
 
 #: options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ITEMLIST.ITEM
 msgid  "HTML Compatibility"
@@ -5006,10 +4254,6 @@ msgstr "Databaser"
 #: options/treeopt.src#RID_RIDER_SLL_SITE.STRING.TEXT
 msgid  "Site certificates"
 msgstr "Webstedcertifikater"
-
-#: options/treeopt.src#RID_RIDER_SLL_PERSONAL.STRING.TEXT
-msgid  "Personal certificates"
-msgstr "Personlige certifikater"
 
 #: options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.MODALDIALOG.TEXT
 msgid  "Stored Web Connection Information"
@@ -5047,10 +4291,6 @@ msgstr "Brugernavn"
 msgid  "Alignment"
 msgstr ""
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FIXEDLINE.TEXT
-msgid  "Text alignment"
-msgstr ""
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FIXEDTEXT.TEXT
 msgid  "Hori~zontal"
 msgstr ""
@@ -5059,24 +4299,8 @@ msgstr ""
 msgid  "Default"
 msgstr ""
 
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.STRINGLIST.ITEM
-msgid  "Left"
-msgstr ""
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.STRINGLIST.ITEM
-msgid  "Center"
-msgstr ""
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.STRINGLIST.ITEM
-msgid  "Right"
-msgstr ""
-
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.STRINGLIST.ITEM
 msgid  "Justified"
-msgstr ""
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.STRINGLIST.ITEM
-msgid  "Filled"
 msgstr ""
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FIXEDTEXT.TEXT
@@ -5085,14 +4309,6 @@ msgstr ""
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_VERALIGN.FIXEDTEXT.TEXT
 msgid  "~Vertical"
-msgstr ""
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.STRINGLIST.ITEM
-msgid  "Top"
-msgstr ""
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.STRINGLIST.ITEM
-msgid  "Middle"
 msgstr ""
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.STRINGLIST.ITEM
@@ -5117,10 +4333,6 @@ msgstr ""
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_ASIAN_VERTICAL.TRISTATEBOX.TEXT
 msgid  "Asian layout ~mode"
-msgstr ""
-
-#: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FIXEDLINE.TEXT
-msgid  "Properties"
 msgstr ""
 
 #: tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TRISTATEBOX.TEXT
@@ -5159,10 +4371,6 @@ msgstr ""
 msgid  "Replace"
 msgstr ""
 
-#: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PAGEITEM.TEXT
-msgid  "Exceptions"
-msgstr ""
-
 #: tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PAGEITEM.TEXT
 msgid  "Options"
 msgstr ""
@@ -5191,20 +4399,12 @@ msgstr ""
 msgid  "Correct TWo INitial CApitals"
 msgstr ""
 
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.STRING.TEXT
-msgid  "Capitalize first letter of every sentence"
-msgstr ""
-
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.STRING.TEXT
 msgid  "Automatic *bold* and _underline_"
 msgstr ""
 
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.STR_NO_DBL_SPACES.STRING.TEXT
 msgid  "Ignore double spaces"
-msgstr ""
-
-#: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.STRING.TEXT
-msgid  "URL Recognition"
 msgstr ""
 
 #: tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.STRING.TEXT
@@ -5219,14 +4419,6 @@ msgstr ""
 msgid  "~Edit..."
 msgstr ""
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.STRING.TEXT
-msgid  "[M]"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.STRING.TEXT
-msgid  "[T]"
-msgstr ""
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FIXEDTEXT.TEXT
 msgid  "[M]: Replace while modifying existing text"
 msgstr ""
@@ -5237,10 +4429,6 @@ msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_DEL_EMPTY_PARA.STRING.TEXT
 msgid  "Remove blank paragraphs"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.STRING.TEXT
-msgid  "Replace Custom Styles"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.STRING.TEXT
@@ -5261,10 +4449,6 @@ msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_TABLE.STRING.TEXT
 msgid  "Create table"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.STRING.TEXT
-msgid  "Apply Styles"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.STRING.TEXT
@@ -5313,10 +4497,6 @@ msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOABBREV.CHECKBOX.TEXT
 msgid  "~AutoInclude"
-msgstr ""
-
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FIXEDLINE.TEXT
-msgid  "Words with TWo INitial CApitals"
 msgstr ""
 
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PUSHBUTTON.TEXT
@@ -5399,10 +4579,6 @@ msgstr ""
 msgid  "End quote"
 msgstr ""
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.STRING.TEXT
-msgid  "Default"
-msgstr ""
-
 #: tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_PB_SGL_STD.STRING.TEXT
 msgid  "Single quotes default"
 msgstr ""
@@ -5471,24 +4647,12 @@ msgstr ""
 msgid  "Currently installed smart tags"
 msgstr ""
 
-#: tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PUSHBUTTON.TEXT
-msgid  "Properties..."
-msgstr ""
-
 #: tabpages/backgrnd.src#UNLINKED_IMAGE.#DEFINE.TEXT
 msgid  "Unlinked graphic"
 msgstr ""
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TABPAGE.TEXT
-msgid  "Background"
-msgstr ""
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FIXEDTEXT.TEXT
 msgid  "A~s"
-msgstr ""
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
-msgid  "Color"
 msgstr ""
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.DEFAULT.STRINGLIST.ITEM
@@ -5499,28 +4663,8 @@ msgstr ""
 msgid  "F~or"
 msgstr ""
 
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM1.STRINGLIST.ITEM
-msgid  "Cell"
-msgstr ""
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM2.STRINGLIST.ITEM
-msgid  "Row"
-msgstr ""
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.ITEM3.STRINGLIST.ITEM
-msgid  "Table"
-msgstr ""
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM1.STRINGLIST.ITEM
-msgid  "Paragraph"
-msgstr ""
-
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.ITEM2.STRINGLIST.ITEM
 msgid  "Character"
-msgstr ""
-
-#: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FIXEDLINE.TEXT
-msgid  "Background color"
 msgstr ""
 
 #: tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_COL_TRANS.FIXEDTEXT.TEXT
@@ -5567,22 +4711,6 @@ msgstr ""
 msgid  "Find graphics"
 msgstr ""
 
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.TABDIALOG.TEXT
-msgid  "Border / Background"
-msgstr ""
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PAGEITEM.TEXT
-msgid  "Borders"
-msgstr ""
-
-#: tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PAGEITEM.TEXT
-msgid  "Background"
-msgstr ""
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.TABPAGE.TEXT
-msgid  "Borders"
-msgstr ""
-
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FL_BORDER.FIXEDLINE.TEXT
 msgid  "Line arrangement"
 msgstr ""
@@ -5593,10 +4721,6 @@ msgstr ""
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_USERDEF.FIXEDTEXT.TEXT
 msgid  "~User-defined"
-msgstr ""
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FIXEDLINE.TEXT
-msgid  "Line"
 msgstr ""
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FIXEDTEXT.TEXT
@@ -5641,14 +4765,6 @@ msgstr ""
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWCOLOR.FIXEDTEXT.TEXT
 msgid  "C~olor"
-msgstr ""
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_SHADOW.FIXEDLINE.TEXT
-msgid  "Shadow style"
-msgstr ""
-
-#: tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FIXEDLINE.TEXT
-msgid  "Properties"
 msgstr ""
 
 #: tabpages/border.src#RID_SVXPAGE_BORDER.CB_MERGEWITHNEXT.CHECKBOX.TEXT
@@ -5707,26 +4823,6 @@ msgstr ""
 msgid  "Set Left and Right Borders, and All Inner Lines"
 msgstr ""
 
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_NONE.STRING.TEXT
-msgid  "No Shadow"
-msgstr ""
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMRIGHT.STRING.TEXT
-msgid  "Cast Shadow to Bottom Right"
-msgstr ""
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPRIGHT.STRING.TEXT
-msgid  "Cast Shadow to Top Right"
-msgstr ""
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_BOTTOMLEFT.STRING.TEXT
-msgid  "Cast Shadow to Bottom Left"
-msgstr ""
-
-#: tabpages/border.src#RID_SVXSTR_SHADOW_STYLE_TOPLEFT.STRING.TEXT
-msgid  "Cast Shadow to Top Left"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FIXEDLINE.TEXT
 msgid  "Western text font"
 msgstr ""
@@ -5745,10 +4841,6 @@ msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM1.STRINGLIST.ITEM
 msgid  "Normal"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM2.STRINGLIST.ITEM
-msgid  "Italic"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.ITEM3.STRINGLIST.ITEM
@@ -5791,10 +4883,6 @@ msgstr ""
 msgid  "Example"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FIXEDLINE.TEXT
-msgid  "Color"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FIXEDTEXT.TEXT
 msgid  "Font ~color"
 msgstr ""
@@ -5827,20 +4915,8 @@ msgstr ""
 msgid  "Title"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.DEFAULT.STRINGLIST.ITEM
-msgid  "Small capitals"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FIXEDTEXT.TEXT
 msgid  "~Relief"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-msgid  "Embossed"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.DEFAULT.STRINGLIST.ITEM
-msgid  "Engraved"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TRISTATEBOX.TEXT
@@ -5869,10 +4945,6 @@ msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLE.STRINGLIST.ITEM
 msgid  "Double"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.STRINGLIST.ITEM
-msgid  "Dotted"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.STRINGLIST.ITEM
@@ -5931,14 +5003,6 @@ msgstr ""
 msgid  "~Strikethrough"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_SLASH.STRINGLIST.ITEM
-msgid  "With /"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_X.STRINGLIST.ITEM
-msgid  "With X"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FIXEDTEXT.TEXT
 msgid  "~Underlining"
 msgstr ""
@@ -5956,51 +5020,15 @@ msgid  "Emp~hasis mark"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-msgid  "Dot"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-msgid  "Circle"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
 msgid  "Disc"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.DEFAULT.STRINGLIST.ITEM
-msgid  "Accent"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FIXEDTEXT.TEXT
 msgid  "~Position"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.STRINGLIST.ITEM
-msgid  "Above text"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.STRINGLIST.ITEM
-msgid  "Below text"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SMALL.STRING.TEXT
-msgid  "Small Capitals"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.STRING.TEXT
 msgid  "Outline"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.STRING.TEXT
-msgid  "Shadow"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_BLINKING.STRING.TEXT
-msgid  "Blinking"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_HIGHPOS.RADIOBUTTON.TEXT
@@ -6025,10 +5053,6 @@ msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_ROTATION_SCALING.FIXEDLINE.TEXT
 msgid  "Rotation / scaling"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FIXEDLINE.TEXT
-msgid  "Scaling"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RADIOBUTTON.TEXT
@@ -6056,14 +5080,6 @@ msgid  "Spacing"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-msgid  "Default"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
-msgid  "Expanded"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.DEFAULT.STRINGLIST.ITEM
 msgid  "Condensed"
 msgstr ""
 
@@ -6073,10 +5089,6 @@ msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.CB_PAIRKERNING.CHECKBOX.TEXT
 msgid  "~Pair kerning"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FIXEDLINE.TEXT
-msgid  "Double-lined"
 msgstr ""
 
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.CB_TWOLINES.CHECKBOX.TEXT
@@ -6095,22 +5107,6 @@ msgstr ""
 msgid  "(None)"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-msgid  "("
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-msgid  "["
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-msgid  "<"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-msgid  "{"
-msgstr ""
-
 #: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_SPECIAL_CHAR.STRINGLIST.ITEM
 msgid  "Other Characters..."
 msgstr ""
@@ -6119,32 +5115,12 @@ msgstr ""
 msgid  "Final charact~er"
 msgstr ""
 
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_ROUND.STRINGLIST.ITEM
-msgid  ")"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_SQUARE.STRINGLIST.ITEM
-msgid  "]"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_POINTED.STRINGLIST.ITEM
-msgid  ">"
-msgstr ""
-
-#: tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_CURVED.STRINGLIST.ITEM
-msgid  "}"
-msgstr ""
-
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.TABPAGE.TEXT
 msgid  "Connector"
 msgstr ""
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_TYPE.FIXEDTEXT.TEXT
 msgid  "~Type"
-msgstr ""
-
-#: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FL_DELTA.FIXEDLINE.TEXT
-msgid  "Line skew"
 msgstr ""
 
 #: tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FIXEDTEXT.TEXT
@@ -6215,10 +5191,6 @@ msgstr ""
 msgid  "Vertical"
 msgstr ""
 
-#: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RADIOBUTTON.TEXT
-msgid  "N~one"
-msgstr ""
-
 #: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RADIOBUTTON.TEXT
 msgid  "~Top"
 msgstr ""
@@ -6233,14 +5205,6 @@ msgstr ""
 
 #: tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_BOTTOM.RADIOBUTTON.TEXT
 msgid  "~Bottom"
-msgstr ""
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.STRING.TEXT
-msgid  "Left-to-right"
-msgstr ""
-
-#: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.STRING.TEXT
-msgid  "Right-to-left"
 msgstr ""
 
 #: tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.STRING.TEXT
@@ -6323,10 +5287,6 @@ msgstr ""
 msgid  "~Angle"
 msgstr ""
 
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.1.STRINGLIST.ITEM
-msgid  "Free"
-msgstr ""
-
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.STRINGLIST.ITEM
 msgid  "30 Degrees"
 msgstr ""
@@ -6349,14 +5309,6 @@ msgstr ""
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.4.STRINGLIST.ITEM
 msgid  "Optimal"
-msgstr ""
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-msgid  "From top"
-msgstr ""
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.STRINGLIST.ITEM
-msgid  "From left"
 msgstr ""
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.1.STRINGLIST.ITEM
@@ -6385,30 +5337,6 @@ msgstr ""
 
 #: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_1.STRING.TEXT
 msgid  "Straight Line"
-msgstr ""
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_2.STRING.TEXT
-msgid  "Angled Line"
-msgstr ""
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_3.STRING.TEXT
-msgid  "Angled Connector Line"
-msgstr ""
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_CAPTTYPE_4.STRING.TEXT
-msgid  "Double-angled line"
-msgstr ""
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_HORZ_LIST.STRING.TEXT
-msgid  "Top;Middle;Bottom"
-msgstr ""
-
-#: tabpages/labdlg.src#RID_SVXPAGE_CAPTION.STR_VERT_LIST.STRING.TEXT
-msgid  "Left;Middle;Right"
-msgstr ""
-
-#: tabpages/labdlg.src#_POS_SIZE_TEXT.#DEFINE.TEXT
-msgid  "Position and Size"
 msgstr ""
 
 #: tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PAGEITEM.TEXT
@@ -6447,10 +5375,6 @@ msgstr ""
 msgid  "Dimensioning"
 msgstr ""
 
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LINE.FIXEDLINE.TEXT
-msgid  "Line"
-msgstr ""
-
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_LINE_DIST.FIXEDTEXT.TEXT
 msgid  "Line ~distance"
 msgstr ""
@@ -6477,10 +5401,6 @@ msgstr ""
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_DECIMALPLACES.FIXEDTEXT.TEXT
 msgid  "Decimal places"
-msgstr ""
-
-#: tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LABEL.FIXEDLINE.TEXT
-msgid  "Legend"
 msgstr ""
 
 #: tabpages/measure.src#RID_SVXPAGE_MEASURE.FT_POSITION.FIXEDTEXT.TEXT
@@ -6516,47 +5436,11 @@ msgid  "~Category"
 msgstr ""
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "All"
-msgstr ""
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "User-defined"
-msgstr ""
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Number"
-msgstr ""
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Percent"
-msgstr ""
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Currency"
-msgstr ""
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Date"
-msgstr ""
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Time"
-msgstr ""
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 msgid  "Scientific"
 msgstr ""
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Fraction"
-msgstr ""
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
 msgid  "Boolean Value"
-msgstr ""
-
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.DEFAULT.STRINGLIST.ITEM
-msgid  "Text"
 msgstr ""
 
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_EDFORMAT.FIXEDTEXT.TEXT
@@ -6599,10 +5483,6 @@ msgstr ""
 msgid  "So~urce format"
 msgstr ""
 
-#: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Add"
-msgstr ""
-
 #: tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Remove"
 msgstr ""
@@ -6643,14 +5523,6 @@ msgstr ""
 msgid  "1, 2, 3, ... "
 msgstr ""
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0.STRINGLIST.ITEM
-msgid  "A, B, C, ... "
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.1.STRINGLIST.ITEM
-msgid  "a, b, c, ..."
-msgstr ""
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.2.STRINGLIST.ITEM
 msgid  "I, II, III, ... "
 msgstr ""
@@ -6663,24 +5535,12 @@ msgstr ""
 msgid  "A, .., AA, .., AAA, ... "
 msgstr ""
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.10.STRINGLIST.ITEM
-msgid  "a, .., aa, .., aaa, ..."
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.6.STRINGLIST.ITEM
-msgid  "Bullet"
-msgstr ""
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.8.STRINGLIST.ITEM
 msgid  "Graphics"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.0X88.STRINGLIST.ITEM
 msgid  "Linked graphics"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.5.STRINGLIST.ITEM
-msgid  "None"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.12.STRINGLIST.ITEM
@@ -6835,20 +5695,12 @@ msgstr ""
 msgid  "Bottom of character"
 msgstr ""
 
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM7.STRINGLIST.ITEM
-msgid  "Top of line"
-msgstr ""
-
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM8.STRINGLIST.ITEM
 msgid  "Center of line"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.ITEM9.STRINGLIST.ITEM
 msgid  "Bottom of line"
-msgstr ""
-
-#: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FL_SAME_LEVEL.FIXEDLINE.TEXT
-msgid  "All levels"
 msgstr ""
 
 #: tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.CB_SAME_LEVEL.CHECKBOX.TEXT
@@ -6915,10 +5767,6 @@ msgstr ""
 msgid  "Default"
 msgstr ""
 
-#: tabpages/numpages.src#RID_STR_EDIT_GRAPHIC.STRING.TEXT
-msgid  "Link"
-msgstr ""
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FL_PAPER_SIZE.FIXEDLINE.TEXT
 msgid  "Paper format"
 msgstr ""
@@ -6955,10 +5803,6 @@ msgstr ""
 msgid  "Paper ~tray"
 msgstr ""
 
-#: tabpages/page.src#RID_SVXPAGE_PAGE.FL_MARGIN.FIXEDLINE.TEXT
-msgid  "Margins"
-msgstr ""
-
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_LEFT_MARGIN.FIXEDTEXT.TEXT
 msgid  "~Left"
 msgstr ""
@@ -6984,47 +5828,11 @@ msgid  "Page layout"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-msgid  "Right and left"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
 msgid  "Mirrored"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-msgid  "Only right"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.DEFAULT.STRINGLIST.ITEM
-msgid  "Only left"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FIXEDTEXT.TEXT
 msgid  "For~mat"
-msgstr ""
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-msgid  "A, B, C, ..."
-msgstr ""
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-msgid  "a, b, c, ..."
-msgstr ""
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-msgid  "I, II, III, ..."
-msgstr ""
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-msgid  "i, ii, iii, ..."
-msgstr ""
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-msgid  "1, 2, 3, ..."
-msgstr ""
-
-#: tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.DEFAULT.STRINGLIST.ITEM
-msgid  "None"
 msgstr ""
 
 #: tabpages/page.src#RID_SVXPAGE_PAGE.FT_TBL_ALIGN.FIXEDTEXT.TEXT
@@ -7219,10 +6027,6 @@ msgstr ""
 msgid  "~Automatic"
 msgstr ""
 
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_INDENT.FIXEDLINE.TEXT
-msgid  "Indent"
-msgstr ""
-
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FT_TOPDIST.FIXEDTEXT.TEXT
 msgid  "Ab~ove paragraph"
 msgstr ""
@@ -7236,23 +6040,7 @@ msgid  "Spacing"
 msgstr ""
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-msgid  "Single"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
 msgid  "1.5 lines"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-msgid  "Double"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-msgid  "Proportional"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
-msgid  "At least"
 msgstr ""
 
 #: tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.DEFAULT.STRINGLIST.ITEM
@@ -7315,18 +6103,6 @@ msgstr ""
 msgid  "~Last line"
 msgstr ""
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-msgid  "Default"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-msgid  "Left"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.DEFAULT.STRINGLIST.ITEM
-msgid  "Centered"
-msgstr ""
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.CB_EXPAND.CHECKBOX.TEXT
 msgid  "~Expand single word"
 msgstr ""
@@ -7351,28 +6127,12 @@ msgstr ""
 msgid  "Base line"
 msgstr ""
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM3.STRINGLIST.ITEM
-msgid  "Top"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM4.STRINGLIST.ITEM
-msgid  "Middle"
-msgstr ""
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.ITEM5.STRINGLIST.ITEM
 msgid  "Bottom"
 msgstr ""
 
-#: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_PROPERTIES.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr ""
-
 #: tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_TEXTDIRECTION.FIXEDTEXT.TEXT
 msgid  "Text ~direction"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.TABPAGE.TEXT
-msgid  "Text Flow"
 msgstr ""
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_HYPHEN.TRISTATEBOX.TEXT
@@ -7395,10 +6155,6 @@ msgstr ""
 msgid  "Hyphenation"
 msgstr ""
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_BREAKS.FIXEDLINE.TEXT
-msgid  "Breaks"
-msgstr ""
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGEBREAK.TRISTATEBOX.TEXT
 msgid  "Insert"
 msgstr ""
@@ -7407,24 +6163,8 @@ msgstr ""
 msgid  "~Type"
 msgstr ""
 
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.0.STRINGLIST.ITEM
-msgid  "Page"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.1.STRINGLIST.ITEM
-msgid  "Column"
-msgstr ""
-
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKPOSITION.FIXEDTEXT.TEXT
 msgid  "Position"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.0.STRINGLIST.ITEM
-msgid  "Before"
-msgstr ""
-
-#: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKPOSITION.1.STRINGLIST.ITEM
-msgid  "After"
 msgstr ""
 
 #: tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGECOLL.TRISTATEBOX.TEXT
@@ -7483,10 +6223,6 @@ msgstr ""
 msgid  "Page Style"
 msgstr ""
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_GRADIENT.STRING.TEXT
-msgid  "Please enter a name for the gradient:"
-msgstr ""
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_GRADIENT.STRING.TEXT
 msgid  "Do you want to delete the gradient?"
 msgstr ""
@@ -7511,10 +6247,6 @@ msgstr ""
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
 msgstr ""
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.STRING.TEXT
-msgid  "Please enter a name for the line style:"
-msgstr ""
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_LINESTYLE.STRING.TEXT
 msgid  "Do you want to delete the line style?"
 msgstr ""
@@ -7523,24 +6255,12 @@ msgstr ""
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
 msgstr ""
 
-#: tabpages/strings.src#RID_SVXSTR_DESC_HATCH.STRING.TEXT
-msgid  "Please enter a name for the hatching:"
-msgstr ""
-
 #: tabpages/strings.src#RID_SVXSTR_ASK_DEL_HATCH.STRING.TEXT
 msgid  "Do you want to delete the hatching?"
 msgstr ""
 
 #: tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.STRING.TEXT
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr ""
-
-#: tabpages/strings.src#RID_SVXSTR_CHANGE.STRING.TEXT
-msgid  "Modify"
-msgstr ""
-
-#: tabpages/strings.src#RID_SVXSTR_ADD.STRING.TEXT
-msgid  "Add"
 msgstr ""
 
 #: tabpages/strings.src#RID_SVXSTR_DESC_COLOR.STRING.TEXT
@@ -7587,14 +6307,6 @@ msgstr ""
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 msgstr ""
 
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.TABPAGE.TEXT
-msgid  "Position and Size"
-msgstr ""
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_SIZE.FIXEDLINE.TEXT
-msgid  "Size"
-msgstr ""
-
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FT_WIDTH.FIXEDTEXT.TEXT
 msgid  "~Width"
 msgstr ""
@@ -7605,10 +6317,6 @@ msgstr ""
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_KEEPRATIO.CHECKBOX.TEXT
 msgid  "~Keep ratio"
-msgstr ""
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_ANCHOR.FIXEDLINE.TEXT
-msgid  "Anchor"
 msgstr ""
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOPAGE.RADIOBUTTON.TEXT
@@ -7629,10 +6337,6 @@ msgstr ""
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.RB_TOFRAME.RADIOBUTTON.TEXT
 msgid  "To ~frame"
-msgstr ""
-
-#: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.FL_PROTECTION.FIXEDLINE.TEXT
-msgid  "Protect"
 msgstr ""
 
 #: tabpages/swpossizetabpage.src#RID_SVXPAGE_SWPOSSIZE.CB_POSITION.TRISTATEBOX.TEXT
@@ -7712,10 +6416,6 @@ msgid  "Ellipsoid"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Quadratic"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
 msgid  "Square"
 msgstr ""
 
@@ -7760,14 +6460,6 @@ msgid  "Fill"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "None"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
-msgid  "Color"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.DEFAULT.STRINGLIST.ITEM
 msgid  "Hatching"
 msgstr ""
 
@@ -7787,10 +6479,6 @@ msgstr ""
 msgid  "~Background color"
 msgstr ""
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_SIZE.FIXEDLINE.TEXT
-msgid  "Size"
-msgstr ""
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_ORIGINAL.TRISTATEBOX.TEXT
 msgid  "~Original"
 msgstr ""
@@ -7807,10 +6495,6 @@ msgstr ""
 msgid  "H~eight"
 msgstr ""
 
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Position"
-msgstr ""
-
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.FT_X_OFFSET.FIXEDTEXT.TEXT
 msgid  "~X Offset"
 msgstr ""
@@ -7825,10 +6509,6 @@ msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.TSB_STRETCH.TRISTATEBOX.TEXT
 msgid  "Auto~Fit"
-msgstr ""
-
-#: tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_OFFSET.FIXEDLINE.TEXT
-msgid  "Offset"
 msgstr ""
 
 #: tabpages/tabarea.src#RID_SVXPAGE_AREA.RBT_ROW.RADIOBUTTON.TEXT
@@ -7939,10 +6619,6 @@ msgstr ""
 msgid  "Gradients"
 msgstr ""
 
-#: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.DEFAULT.STRINGLIST.ITEM
-msgid  "Rectangular"
-msgstr ""
-
 #: tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FT_COLOR_FROM.FIXEDTEXT.TEXT
 msgid  "~From"
 msgstr ""
@@ -8039,10 +6715,6 @@ msgstr ""
 msgid  "~Transparency"
 msgstr ""
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_LINE_ENDS.FIXEDLINE.TEXT
-msgid  "Arrow styles"
-msgstr ""
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FT_LINE_ENDS_STYLE.FIXEDTEXT.TEXT
 msgid  "St~yle"
 msgstr ""
@@ -8075,10 +6747,6 @@ msgstr ""
 msgid  "Rounded"
 msgstr ""
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM2.STRINGLIST.ITEM
-msgid  "- none -"
-msgstr ""
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.LB_EDGE_STYLE.ITEM3.STRINGLIST.ITEM
 msgid  "Mitered"
 msgstr ""
@@ -8105,10 +6773,6 @@ msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.FL_SYMBOL_FORMAT.FIXEDLINE.TEXT
 msgid  "Icon"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_NONE.MENUITEM.TEXT
-msgid  "No Symbol"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.MN_SYMBOLS_AUTO.MENUITEM.TEXT
@@ -8171,14 +6835,6 @@ msgstr ""
 msgid  "End with center"
 msgstr ""
 
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.TABPAGE.TEXT
-msgid  "Define line styles"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FL_DEFINITION.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr ""
-
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.FT_TYPE.FIXEDTEXT.TEXT
 msgid  "~Type"
 msgstr ""
@@ -8221,10 +6877,6 @@ msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_DELETE.PUSHBUTTON.TEXT
 msgid  "~Delete..."
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_LOAD.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "Load Line Styles"
 msgstr ""
 
 #: tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_SAVE.IMAGEBUTTON.QUICKHELPTEXT
@@ -8283,22 +6935,6 @@ msgstr ""
 msgid  "Save Arrow Styles"
 msgstr ""
 
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TABDIALOG.TEXT
-msgid  "Line"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
-msgid  "Shadow"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE_DEF.PAGEITEM.TEXT
-msgid  "Line Styles"
-msgstr ""
-
-#: tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINEEND_DEF.PAGEITEM.TEXT
-msgid  "Arrow Styles"
-msgstr ""
-
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.TABPAGE.TEXT
 msgid  "Tabs"
 msgstr ""
@@ -8333,10 +6969,6 @@ msgstr ""
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.FL_FILLCHAR.FIXEDLINE.TEXT
 msgid  "Fill character"
-msgstr ""
-
-#: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_NO.RADIOBUTTON.TEXT
-msgid  "N~one"
 msgstr ""
 
 #: tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_OTHER.RADIOBUTTON.TEXT
@@ -8391,34 +7023,6 @@ msgstr ""
 msgid  "Scroll Back and Forth"
 msgstr ""
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.DEFAULT.STRINGLIST.ITEM
-msgid  "Scroll In"
-msgstr ""
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DIRECTION.FIXEDTEXT.TEXT
-msgid  "Direction"
-msgstr ""
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_UP.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "To Top"
-msgstr ""
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_LEFT.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "To Left"
-msgstr ""
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_RIGHT.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "To Right"
-msgstr ""
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.BTN_DOWN.IMAGEBUTTON.QUICKHELPTEXT
-msgid  "To Bottom"
-msgstr ""
-
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FL_PROPERTIES.FIXEDLINE.TEXT
-msgid  "Properties"
-msgstr ""
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_START_INSIDE.TRISTATEBOX.TEXT
 msgid  "S~tart inside"
 msgstr ""
@@ -8443,16 +7047,8 @@ msgstr ""
 msgid  "~Pixels"
 msgstr ""
 
-#: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_DELAY.FIXEDTEXT.TEXT
-msgid  "Delay"
-msgstr ""
-
 #: tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TSB_AUTO.TRISTATEBOX.TEXT
 msgid  "~Automatic"
-msgstr ""
-
-#: tabpages/textanim.src#RID_SVXDLG_TEXT.TABDIALOG.TEXT
-msgid  "Text"
 msgstr ""
 
 #: tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
@@ -8507,10 +7103,6 @@ msgstr ""
 msgid  "~Bottom"
 msgstr ""
 
-#: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_POSITION.FIXEDLINE.TEXT
-msgid  "Text anchor"
-msgstr ""
-
 #: tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TSB_FULL_WIDTH.TRISTATEBOX.TEXT
 msgid  "Full ~width"
 msgstr ""
@@ -8535,10 +7127,6 @@ msgstr ""
 msgid  "Base point"
 msgstr ""
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FIXEDLINE.TEXT
-msgid  "Size"
-msgstr ""
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_WIDTH.FIXEDTEXT.TEXT
 msgid  "Wi~dth"
 msgstr ""
@@ -8551,16 +7139,8 @@ msgstr ""
 msgid  "~Keep ratio"
 msgstr ""
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_PROTECT.FIXEDLINE.TEXT
-msgid  "Protect"
-msgstr ""
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_SIZEPROTECT.TRISTATEBOX.TEXT
 msgid  "~Size"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ADJUST.FIXEDLINE.TEXT
-msgid  "Adapt"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TSB_AUTOGROW_WIDTH.TRISTATEBOX.TEXT
@@ -8571,48 +7151,16 @@ msgstr ""
 msgid  "Fit ~height to text"
 msgstr ""
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_ANCHOR.FIXEDLINE.TEXT
-msgid  "Anchor"
-msgstr ""
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ANCHOR.FIXEDTEXT.TEXT
 msgid  "~Anchor"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM1.STRINGLIST.ITEM
-msgid  "To paragraph"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM2.STRINGLIST.ITEM
 msgid  "As character"
 msgstr ""
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM3.STRINGLIST.ITEM
-msgid  "To page"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ANCHOR.ITEM4.STRINGLIST.ITEM
-msgid  "To frame"
-msgstr ""
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_ORIENT.FIXEDTEXT.TEXT
 msgid  "P~osition"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM1.STRINGLIST.ITEM
-msgid  "From top"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM2.STRINGLIST.ITEM
-msgid  "Above"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM3.STRINGLIST.ITEM
-msgid  "Centered"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM4.STRINGLIST.ITEM
-msgid  "Below"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM5.STRINGLIST.ITEM
@@ -8627,20 +7175,12 @@ msgstr ""
 msgid  "Bottom of character"
 msgstr ""
 
-#: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM8.STRINGLIST.ITEM
-msgid  "Top of line"
-msgstr ""
-
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM9.STRINGLIST.ITEM
 msgid  "Center of line"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.LB_ORIENT.ITEM10.STRINGLIST.ITEM
 msgid  "Bottom of line"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.TABPAGE.TEXT
-msgid  "Angle"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FL_POSITION.FIXEDLINE.TEXT
@@ -8673,10 +7213,6 @@ msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.TABPAGE.TEXT
 msgid  "Slant & Corner Radius"
-msgstr ""
-
-#: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FL_RADIUS.FIXEDLINE.TEXT
-msgid  "Corner radius"
 msgstr ""
 
 #: tabpages/transfrm.src#RID_SVXPAGE_SLANT.FT_RADIUS.FIXEDTEXT.TEXT
