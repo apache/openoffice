@@ -412,19 +412,158 @@ bool l10nMem_impl::convFilterWarning(const std::string& sSourceFile,
                                      const std::string& sKey,
                                      const std::string& sMsgId)
 {
-  if (sMsgId == "-")
+  // silent ignore deleted messages
+  if (sMsgId == "-" || sMsgId == "")
     return true;
 
-  if (msModuleName == "basic")
+  if (msModuleName == "help_sbasic")
   {
-    if (sSourceFile == "basic.src"    ||
-        sSourceFile == "basmsg.src"   ||
-        sSourceFile == "svtmsg.src"   ||
-        sSourceFile == "testtool.src" ||
-        sSourceFile == "ttmsg.src"    )
+    if (sSourceFile == "sbasic.tree")
       return true;
   }
-
+  if (msModuleName == "help_scalc")
+  {
+    if (sSourceFile == "scalc.tree")
+      return true;
+  }
+  if (msModuleName == "help_schart")
+  {
+    if (sSourceFile == "schart.tree")
+      return true;
+  }
+  if (msModuleName == "help_shared")
+  {
+    if (sSourceFile == "shared.tree")
+      return true;
+  }
+  if (msModuleName == "help_simpress")
+  {
+    if (sSourceFile == "simpress.tree")
+      return true;
+  }
+  if (msModuleName == "help_smath")
+  {
+    if (sSourceFile == "smath.tree")
+      return true;
+  }
+  if (msModuleName == "help_swriter")
+  {
+    if (sSourceFile == "swriter.tree")
+      return true;
+  }
+  if (msModuleName == "officecfg")
+  {
+    if (sSourceFile == "registry/data/org/openoffice/Office/Writer.xcu" && sKey == "Writer.Insert.Caption.CaptionOrderNumberingFirst")
+      return true;
+    if (sSourceFile == "registry/data/org/openoffice/Office/Writer.xcu" && sKey == "Writer.Layout.Other.TabStop")
+      return true;
+    if (sSourceFile == "registry/data/org/openoffice/Office/UI/WriterCommands.xcu" && sKey == "WriterCommands.UserInterface.Commands..uno:FlipVertical.Label")
+      return true;
+    if (sSourceFile == "registry/data/org/openoffice/Office/UI/WriterCommands.xcu" && sKey == "WriterCommands.UserInterface.Commands..uno:FlipHorizontal.Label")
+      return true;
+    if (sSourceFile == "registry/data/org/openoffice/Office/Common.xcu" && sKey == "Common.View.Localisation.AutoMnemonic")
+      return true;
+    if (sSourceFile == "registry/data/org/openoffice/Office/Common.xcu" && sKey == "Common.View.Localisation.DialogScale")
+      return true;
+    if (sSourceFile == "registry/data/org/openoffice/Office/UI/ImpressWindowState.xcu" && sKey == "ImpressWindowState.UIElements.States.private:resource/toolpanel/DrawingFramework/SlideTransitions.UIName")
+      return true;
+    if (sSourceFile == "registry/data/org/openoffice/Office/UI/ImpressWindowState.xcu" && sKey == "ImpressWindowState.UIElements.States.private:resource/toolpanel/DrawingFramework/CustomAnimations.UIName")
+      return true;
+    if (sSourceFile == "registry/data/org/openoffice/Office/UI/ImpressWindowState.xcu" && sKey == "ImpressWindowState.UIElements.States.private:resource/toolpanel/DrawingFramework/MasterPages.UIName")
+      return true;
+    if (sSourceFile == "registry/data/org/openoffice/Office/UI/ImpressWindowState.xcu" && sKey == "ImpressWindowState.UIElements.States.private:resource/toolpanel/DrawingFramework/Layouts.UIName")
+      return true;
+    if (sSourceFile == "registry/data/org/openoffice/Office/UI/ImpressWindowState.xcu" && sKey == "ImpressWindowState.UIElements.States.private:resource/toolpanel/DrawingFramework/TableDesign.UIName")
+      return true;
+  }
+  if (msModuleName == "readlicense_oo")
+  {
+    if (sSourceFile == "docs/readme/readme.xrm")
+    { 
+      if (sKey == "BDB11")
+        return true;
+      if (sKey == "BDB2a")
+        return true;
+      if (sKey == "BDB3a")
+        return true;
+      if (sKey == "BDB4a")
+        return true;
+    } 
+  }
+  if (msModuleName == "scp2")
+  {
+    if (sSourceFile == "source/binfilter/module_binfilter.ulf")
+      return true;
+    if (sSourceFile == "source/binfilter/registryitem_binfilter.ulf")
+      return true;
+  }
+  if (msModuleName == "sdext")
+  {
+    if (sSourceFile == "source/minimizer/registry/data/org/openoffice/Office/Addons.xcu")
+      return true;
+    if (sSourceFile == "source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu")
+      return true;
+    if (sSourceFile == "source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp")
+      return true;
+    if (sSourceFile == "source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu")
+      return true;
+  }
+  if (msModuleName == "sd")
+  {
+    if (sSourceFile == "source/ui/dlg/celltempl.src")
+      return true;
+  }
+  if (msModuleName == "svx")
+  {
+    if (sSourceFile == "source/dialog/fontwork.src")
+    {
+      if (sKey == "RID_SVXSTR_FONTWORK_FORM1.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_FONTWORK_FORM2.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_FONTWORK_FORM3.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_FONTWORK_FORM4.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_FONTWORK_FORM5.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_FONTWORK_FORM6.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_FONTWORK_FORM7.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_FONTWORK_FORM8.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_FONTWORK_FORM9.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_FONTWORK_FORM10.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_FONTWORK_FORM11.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_FONTWORK_FORM12.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_FONTWORK_UNDOCREATE.String.Text")
+        return true;
+    }
+    if (sSourceFile == "source/dialog/sdstring.src")
+    {
+      if (sKey == "RID_SVXSTR_LIGHTGREY.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_LIGHTBLUE.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_LIGHTGREEN.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_LIGHTCYAN.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_LIGHTRED.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_LIGHTMAGENTA.String.Text")
+        return true;
+      if (sKey == "RID_SVXSTR_COLOR_SUN.String.Text")
+        return true;
+    }
+    if (sSourceFile == "source/svdraw/svdstr.src" && sKey == "SIP_XA_FORMTXTSTDFORM.String.Text")
+        return true;
+  }
   return false;
 }
 
@@ -444,8 +583,8 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
   int              curFileIndex, curENUSindex, i, iSize;
 
 
-  // silent ignore deleted messages
-  if (sMsgId == "-" || sMsgId == "")
+  // filter out dummy messages, silently
+  if (convFilterWarning(sSourceFile, sKey, sMsgId))
     return;
 
   // check for directory names in file name
@@ -534,12 +673,4 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
     curL.mbFuzzy  = bIsFuzzy;
     curE.meState  = l10nMem::ENTRY_CHANGED;
   }
-
-
-
-#if 0
-  // filter out dummy messages, silently
-  if (convFilterWarning(sSourceFile, sKey, sMsgId))
-    return;
-#endif
 }
