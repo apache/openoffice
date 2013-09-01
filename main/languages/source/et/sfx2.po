@@ -32,32 +32,39 @@ msgstr ""
 
 
 #: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
+#, fuzzy
 msgid  "Configuration Menu"
-msgstr ""
+msgstr "Sätete menüü"
 
 #: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
+#, fuzzy
 msgid  "~Add-Ons"
-msgstr ""
+msgstr "Lisandprogrammid"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Cu~t"
-msgstr ""
+msgstr "Lõika"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Copy"
-msgstr ""
+msgstr "Kopeeri"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Paste"
-msgstr ""
+msgstr "Aseta"
 
 #: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
+#, fuzzy
 msgid  "Leave Full-Screen Mode"
-msgstr ""
+msgstr "Lahku täisekraanirežiimist"
 
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
+#, fuzzy
 msgid  "Add-~On Help"
-msgstr ""
+msgstr "Lisandprogrammide abitekst"
 
 #: menu/menu.src#STR_MENU_SYNONYMS.STRING.TEXT
 msgid  "Synonyms"
@@ -72,788 +79,933 @@ msgid  "~Thesaurus..."
 msgstr ""
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
+#, fuzzy
 msgid  "My Templates"
-msgstr ""
+msgstr "Minu mallid"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Business Correspondence"
-msgstr ""
+msgstr "Ärikirjad"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Other Business Documents"
-msgstr ""
+msgstr "Muud äridokumendid"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Personal Correspondence and Documents"
-msgstr ""
+msgstr "Erakirjad ja -dokumendid"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Forms and Contracts"
-msgstr ""
+msgstr "Vormid ja lepingud"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Finances"
-msgstr ""
+msgstr "Finantsasjad"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Education"
-msgstr ""
+msgstr "Haridus"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Presentation Backgrounds"
-msgstr ""
+msgstr "Esitluste taustad"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Presentations"
-msgstr ""
+msgstr "Esitlused"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Miscellaneous"
-msgstr ""
+msgstr "Mitmesugust"
 
 #: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
+#, fuzzy
 msgid  "The templates are being initialized for first-time usage."
-msgstr ""
+msgstr "Mallid initsialiseeritakse esmakordseks kasutamiseks."
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "Mallid"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "New template"
-msgstr ""
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FIXEDLINE.TEXT
-msgid  "Templates"
-msgstr ""
+msgstr "Uus mall"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Categories"
-msgstr ""
+msgstr "~Kategooriad"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Templates"
-msgstr ""
+msgstr "~Mallid"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "~Redigeeri"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Organizer..."
-msgstr ""
-
-#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
-msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
-
-#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
-msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "K~orraldaja..."
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to delete the region \"$1\"?"
-msgstr ""
+msgstr "Kas sa tõesti soovid kustutada regiooni \"$1\"?"
 
 #: doc/doc.src#STR_DELETE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to delete the entry \"$1\"?"
-msgstr ""
-
-#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
-msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "Kas sa tõesti soovid kustutada kirjet \"$1\"?"
 
 #: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "Dokumenti \"$(DOC)\" on muudetud.\nKas soovid dokumenti salvestada?"
 
 #: doc/doc.src#STR_STYLES.STRING.TEXT
+#, fuzzy
 msgid  "Styles"
-msgstr ""
+msgstr "Stiilid"
 
 #: doc/doc.src#STR_MACROS.STRING.TEXT
+#, fuzzy
 msgid  "Macros"
-msgstr ""
+msgstr "Makrod"
 
 #: doc/doc.src#STR_CONFIG.STRING.TEXT
+#, fuzzy
 msgid  "Configuration"
-msgstr ""
+msgstr "Häälestus"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Styles in "
-msgstr ""
+msgstr "Stiilid kataloogis "
 
 #: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
+#, fuzzy
 msgid  "Printing Styles"
-msgstr ""
+msgstr "Printimise stiilid"
 
 #: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The print job could not be started."
-msgstr ""
+msgstr "Prinditöö alustamine ei õnnestunud."
 
 #: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
+#, fuzzy
 msgid  "Copy"
-msgstr ""
+msgstr "Kopeeri"
 
 #: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "The template could not be opened."
-msgstr ""
+msgstr "Malli avamine ei õnnestunud."
 
 #: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "Document already open for editing."
-msgstr ""
+msgstr "Dokument on juba avatud redigeerimiseks."
 
 #: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "Error recording document "
-msgstr ""
+msgstr "Dokumendi salvestamisel tekkis viga"
 
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "Mallid"
 
 #: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr ""
+msgstr "Malli \"$1\" kopeerimisel tekkis tõrge. \nSellise nimega mall on juba olemas."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "The template \"$1\" can not be deleted."
-msgstr ""
+msgstr "Malli \"$1\" pole võimalik kustutada."
 
 #: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error moving template \"$1\"."
-msgstr ""
+msgstr "Malli \"$1\" liigutamisel tekkis viga."
 
 #: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The update could not be saved."
-msgstr ""
+msgstr "Uuenduste salvestamine ei õnnestunud."
 
 #: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error saving template "
-msgstr ""
+msgstr "Malli salvestamisel tekkis viga"
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Error renaming template."
-msgstr ""
+msgstr "Malli ümbernimetamisel tekkis viga."
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Error renaming template category."
-msgstr ""
+msgstr "Mallide kategooria ümbernimetamisel tekkis viga."
 
 #: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Please specify a name."
-msgstr ""
-
-#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
-msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "Palun sisesta nimi."
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
-msgstr ""
+msgstr "Kas \"$(TEXT)\" peaks saama vaikimisi malliks?"
 
 #: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to reset the default template?"
-msgstr ""
-
-#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
-msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "Kas sa soovid lähtestada vaikimisi malli?"
 
 #: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "Document info cannot be read."
-msgstr ""
+msgstr "Dokumendi infot pole võimalik lugeda."
 
 #: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
+#, fuzzy
 msgid  "The selected file has an incorrect format."
-msgstr ""
+msgstr "Valitud fail on tundmatus vormingus."
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Dokumenti pole võimalik salvestada vormingusse $(FORMAT).\nKas sa soovid seda salvestada vormingusse $(OWNFORMAT)?"
 
 #: doc/doc.src#STR_SAVEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Save"
-msgstr ""
+msgstr "~Salvesta"
 
 #: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Update"
-msgstr ""
+msgstr "~Värskenda"
 
 #: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
+#, fuzzy
 msgid  "Save ~As..."
-msgstr ""
+msgstr "Salvesta ~kui..."
 
 #: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
+#, fuzzy
 msgid  "Save Copy ~as..."
-msgstr ""
+msgstr "S~alvesta koopia kui..."
 
 #: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "Sul~ge"
 
 #: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
+#, fuzzy
 msgid  "~Close & Return to "
-msgstr ""
+msgstr "~Sulge ja liigu tagasi "
 
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  " AutoPilot"
-msgstr ""
+msgstr " Nõustaja"
 
 #: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
+#, fuzzy
 msgid  "Configurations"
-msgstr ""
+msgstr "Sätted"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Basic libraries"
-msgstr ""
+msgstr "%PRODUCTNAME BASICu teegid"
 
 #: doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.STRING.TEXT
+#, fuzzy
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
-msgstr ""
+msgstr "Kas asendada stiil \"$(ARG1)\"?"
 
 #: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
+#, fuzzy
 msgid  "Loading Document"
-msgstr ""
+msgstr "Dokumendi laadimine"
 
 #: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
+#, fuzzy
 msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr ""
+msgstr "Ühendus serverisse $(HOST). Vastuse ootamine..."
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
+#, fuzzy
 msgid  "Opening $(TARGET) at $(HOST)"
-msgstr ""
+msgstr "Dokumendi $(TARGET) avamine serverist $(HOST)"
 
 #: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr ""
+msgstr "Laadimine: $(TARGET) serverist $(HOST). Laaditud: $(BYTE)"
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
+#, fuzzy
 msgid  "Disconnected"
-msgstr ""
-
-#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
-msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "Katkestatud"
 
 #: doc/doc.src#STR_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit"
-msgstr ""
+msgstr "Redigeerimine"
 
 #: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Documents"
-msgstr ""
+msgstr "%PRODUCTNAME-i dokumendid"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Propert~ies..."
-msgstr ""
+msgstr "Omad~used..."
 
 #: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
+#, fuzzy
 msgid  "HTML (FrameSet)"
-msgstr ""
+msgstr "HTML (Paneelistik)"
 
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
-msgstr ""
+msgstr "%PRODUCTNAME-i paneeli dokument"
 
 #: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr ""
+msgstr "Malli \"$(TEMPLATE)\" ei leitud algsest asukohast. Sama nimega mall asub kataloogis \"$(FOUND)\". Kas tulevikus peaks kasutama võrdlemisel seda malli?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgstr "Malli \"$(TEMPLATE)\" ei leitud. Kas seda malli peaks otsima järgmine kord dokumenti avades ?"
 
 #: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
+#, fuzzy
 msgid  "Automatically saved version"
-msgstr ""
+msgstr "Automaatselt salvestatud versioon"
 
 #: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
+#, fuzzy
 msgid  "Text Document"
-msgstr ""
+msgstr "Tekstidokument"
 
 #: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
+#, fuzzy
 msgid  "HTML Document"
-msgstr ""
+msgstr "HTML-dokument"
 
 #: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
+#, fuzzy
 msgid  "Master Document"
-msgstr ""
+msgstr "Põhidokument"
 
 #: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
+#, fuzzy
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "Arvutustabel"
 
 #: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
+#, fuzzy
 msgid  "Presentation"
-msgstr ""
+msgstr "Esitlus"
 
 #: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
+#, fuzzy
 msgid  "Drawing"
-msgstr ""
+msgstr "Joonistus"
 
 #: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "Message"
-msgstr ""
+msgstr "Kiri"
 
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
+#, fuzzy
 msgid  "~Discard"
-msgstr ""
+msgstr "Ära salvesta"
 
 #: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
+#, fuzzy
 msgid  "Access to the current data medium not possible."
-msgstr ""
+msgstr "Aktiivsele andmekandjale puudub juurdepääs."
 
 #: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
+#, fuzzy
 msgid  "Insert the next data carrier and click OK."
-msgstr ""
+msgstr "Sisesta järgmine andmekandja ja klõpsa nupule Sobib."
 
 #: doc/doc.src#STR_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Object"
-msgstr ""
+msgstr "Objekt"
 
 #: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
+#, fuzzy
 msgid  "Run Macro"
-msgstr ""
+msgstr "Käivita makro"
 
 #: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "This document contains macros. $(TEXT)"
-msgstr ""
+msgstr "See dokument sisaldab makrosid. $(TEXT)"
 
 #: doc/doc.src#BTN_OK.STRING.TEXT
+#, fuzzy
 msgid  "Run"
-msgstr ""
+msgstr "Käivita"
 
 #: doc/doc.src#BTN_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "Do Not Run"
-msgstr ""
+msgstr "Ära käivita"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "Vastavalt turvasätetele ei tohi selle dokumendi makrosid käivitada. Kas käivitada siiski?"
 
 #: doc/doc.src#FT_OK.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to allow these macros to be run?"
-msgstr ""
+msgstr "Kas sa lubad neid makrosid käivitada?"
 
 #: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Export as PDF"
-msgstr ""
+msgstr "Ekspordi PDF-ina"
 
 #: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Export..."
-msgstr ""
+msgstr "Ekspordi..."
 
 #: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Export"
-msgstr ""
+msgstr "Ekspordi"
 
 #: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
+#, fuzzy
 msgid  "Add this directory to the list of secure paths: "
-msgstr ""
+msgstr "Lisa see kataloog turvaliste asukohtade nimekirja: "
 
 #: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "File format:"
-msgstr ""
+msgstr "Failivorming:"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
+#, fuzzy
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "See dokument sisaldab:\n\n"
 
 #: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
+#, fuzzy
 msgid  "Recorded changes"
-msgstr ""
+msgstr "Salvestatud muudatused"
 
 #: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
+#, fuzzy
 msgid  "Notes"
-msgstr ""
+msgstr "Märkused"
 
 #: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
+#, fuzzy
 msgid  "Document versions"
-msgstr ""
+msgstr "Dokumendiversioonid"
 
 #: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
+#, fuzzy
 msgid  "Fields"
-msgstr ""
+msgstr "Väljad"
 
 #: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
+#, fuzzy
 msgid  "Linked data..."
-msgstr ""
+msgstr "Lingitud andmed..."
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue saving the document?"
-msgstr ""
+msgstr "Soovid sa jätkata dokumendi salvestamist?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue printing the document?"
-msgstr ""
+msgstr "Soovid sa jätkata dokumendi printimist?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue signing the document?"
-msgstr ""
+msgstr "Soovid sa jätkata dokumendi allkirjastamist?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue creating a PDF file?"
-msgstr ""
+msgstr "Soovid sa jätkata PDF-faili loomist?"
 
 #: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr ""
+msgstr "Kui sa ei taha algdokumenti üle kirjutada, salvesta oma töö uue nimega faili."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
+#, fuzzy
 msgid  "Some template files are protected and can not be deleted."
-msgstr ""
+msgstr "Mõned mallid on kaitstud ja neid ei saa kustutada."
 
 #: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Info %1"
-msgstr ""
+msgstr "Teave %1"
 
 #: doc/doc.src#STR_SHARED.STRING.TEXT
+#, fuzzy
 msgid  " (shared)"
-msgstr ""
+msgstr " (jagatud)"
 
 #: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
+#, fuzzy
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr ""
-
-#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
-msgstr ""
+msgstr "Dokumendi vormingu versiooniks on dialoogis Tööriistad - Sätted - Laadimine ja salvestamine - Üldine määratud ODF 1.1 (OpenOffice.org 2.x). Dokumentide allkirjastamiseks on vaja versiooni ODF 1.2 (OpenOffice.org 3.x)."
 
 #: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr ""
+msgstr "Malli '$(ARG1)', millel dokument põhineb, on muudetud. Kas soovid värskendada stiilidel põhinevat vormindust vastavalt muudetud mallile?"
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
+#, fuzzy
 msgid  "~Update Styles"
-msgstr ""
+msgstr "~Värskenda stiile"
 
 #: doc/doc.src#STR_QRYTEMPL_KEEP_BTN.STRING.TEXT
+#, fuzzy
 msgid  "~Keep Old Styles"
-msgstr ""
+msgstr "Säilita vanad stiilid"
 
 #: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Template Management"
-msgstr ""
+msgstr "Mallide korraldamine"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Sulge"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~File..."
-msgstr ""
+msgstr "~Fail..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Address Book..."
-msgstr ""
+msgstr "~Aadressiraamat..."
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "Mallid"
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Documents"
-msgstr ""
-
-#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Templates"
-msgstr ""
-
-#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Documents"
-msgstr ""
+msgstr "Dokumendid"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
+#, fuzzy
 msgid  "Commands"
-msgstr ""
+msgstr "Käsud"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "~New"
-msgstr ""
+msgstr "Uus"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "Kustuta"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "Redigeeri"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
+#, fuzzy
 msgid  "Import Template..."
-msgstr ""
+msgstr "Impordi mall..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MENUITEM.TEXT
+#, fuzzy
 msgid  "Export Template..."
-msgstr ""
+msgstr "Ekspordi mall..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Print"
-msgstr ""
+msgstr "Prindi"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "Printer Settings..."
-msgstr ""
+msgstr "Printeri sätted..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Update"
-msgstr ""
+msgstr "Uuenda"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Set As Default Template"
-msgstr ""
+msgstr "Säti vaikimisi malliks"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Reset Default Template"
-msgstr ""
+msgstr "Lähtesta vaikimisi mall"
 
 #: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "New"
-msgstr ""
+msgstr "Uus"
 
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Categories"
-msgstr ""
+msgstr "Kategooriad"
 
 #: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "T~emplates"
-msgstr ""
+msgstr "Mallid"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
+#, fuzzy
 msgid  "~More"
-msgstr ""
+msgstr "~Rohkem"
 
 #: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Pre~view"
-msgstr ""
+msgstr "Eelvaade"
 
 #: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "Kirjeldus"
 
 #: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Te~xt"
-msgstr ""
+msgstr "Tekst"
 
 #: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Frame"
-msgstr ""
+msgstr "Paneel"
 
 #: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Pages"
-msgstr ""
+msgstr "Leheküljed"
 
 #: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "N~umbering"
-msgstr ""
+msgstr "Nummerdus"
 
 #: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Overwrite"
-msgstr ""
+msgstr "Ülekirjutamine"
 
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "From File..."
-msgstr ""
+msgstr "Failist..."
 
 #: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Load Styles"
-msgstr ""
+msgstr "Stiilide laadimine"
 
 #: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "Tiitel"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Subject"
-msgstr ""
+msgstr "Teema"
 
 #: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Key words"
-msgstr ""
+msgstr "Võtmesõnad"
 
 #: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Description"
-msgstr ""
+msgstr "Kirjeldus"
 
 #: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
+#, fuzzy
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "Valitud filter $(FILTER) pole paigaldatud.\nKas sa soovid seda kohe teha?"
 
 #: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
+#, fuzzy
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "Valitud filter $(FILTER) ei ole kaasatud sellesse versiooni.\nTellimisinfo leiad meie kodulehelt."
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Reduce print data"
-msgstr ""
+msgstr "Prinditavate andmete vähendamine"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Settings for"
-msgstr ""
+msgstr "Sätted"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Printer"
-msgstr ""
+msgstr "Printerile"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Print to ~file"
-msgstr ""
+msgstr "Faili printimine"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Reduce transparency"
-msgstr ""
+msgstr "Vähendatakse läbipaistvust"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Auto~matically"
-msgstr ""
+msgstr "Automaatselt"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~No transparency"
-msgstr ""
+msgstr "Läbipaistmatu"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Reduce ~gradients"
-msgstr ""
+msgstr "Vähendatakse üleminekuid"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Gradient ~stripes"
-msgstr ""
+msgstr "Ülemineku triipe"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Intermediate ~color"
-msgstr ""
+msgstr "Vahevärv"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Reduce ~bitmaps"
-msgstr ""
+msgstr "Vähendatakse bittrastreid"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~High print quality"
-msgstr ""
+msgstr "Kõrge prindikvaliteet"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "N~ormal print quality"
-msgstr ""
+msgstr "Tavaline prindikvaliteet"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Reso~lution"
-msgstr ""
+msgstr "Eraldusvõime"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "72 DPI"
-msgstr ""
+msgstr "72 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "96 DPI"
-msgstr ""
+msgstr "96 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "150 DPI (Fax)"
-msgstr ""
+msgstr "150 DPI (faks)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "200 DPI (default)"
-msgstr ""
+msgstr "200 DPI (vaikimisi)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "300 DPI"
-msgstr ""
+msgstr "300 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "600 DPI"
-msgstr ""
+msgstr "600 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include transparent ob~jects"
-msgstr ""
+msgstr "Kaasa arvatud läbipaistvad objektid"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Con~vert colors to grayscale"
-msgstr ""
+msgstr "Värvid teisendatakse halltoonideks"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Printer warnings"
-msgstr ""
+msgstr "Printeri hoiatused"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "P~aper size"
-msgstr ""
+msgstr "Paberi suurus"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Pap~er orientation"
-msgstr ""
+msgstr "Paberi suund"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Transparency"
-msgstr ""
+msgstr "Läbipaistvus"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Warning"
-msgstr ""
+msgstr "Hoiatus"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr "Dokument sisaldab läbipaistvaid objekte. See võib mõningate\nprinterite puhul pikendada printimisele kuluvat aega.\nKas vähendada läbipaistvuse taset?"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Yes"
-msgstr ""
+msgstr "~Jah"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~No"
-msgstr ""
+msgstr "~Ei"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Cancel"
-msgstr ""
+msgstr "Loobu"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Do not show warning again"
-msgstr ""
+msgstr "Seda hoiatust rohkem ei näidata"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Style Catalog"
-msgstr ""
+msgstr "Stiilikataloog"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Organizer..."
-msgstr ""
+msgstr "Korraldaja..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete..."
-msgstr ""
+msgstr "Kustuta..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Modify..."
-msgstr ""
+msgstr "Muuda..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
-msgstr ""
+msgstr "Uus..."
 
 #: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
 msgid  "Style List"
 msgstr ""
 
 #: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
+#, fuzzy
 msgid  "Hierarchical"
-msgstr ""
+msgstr "Hierarhiline"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
+#, fuzzy
 msgid  "Styles and Formatting"
-msgstr ""
+msgstr "Stiilid ja vormindus"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Fill Format Mode"
-msgstr ""
+msgstr "Valamisrežiim"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "New Style from Selection"
-msgstr ""
+msgstr "Uus stiil valikust"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Update Style"
-msgstr ""
+msgstr "Uuenda stiili"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 msgid  "File encryption password"
@@ -916,536 +1068,653 @@ msgid  "Incorrect password"
 msgstr ""
 
 #: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "New versions"
-msgstr ""
+msgstr "Uued versioonid"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Save ~New Version"
-msgstr ""
+msgstr "Salvesta uus versioon"
 
 #: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Always save a version on closing"
-msgstr ""
+msgstr "Sulgemisel salvestatakse alati uus versioon"
 
 #: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Existing versions"
-msgstr ""
+msgstr "Olemasolevad versioonid"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Date and time"
-msgstr ""
+msgstr "Kuupäev ja kellaaeg"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Saved by"
-msgstr ""
+msgstr "Salvestaja"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comments"
-msgstr ""
+msgstr "Kommentaarid"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Sulge"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Open"
-msgstr ""
+msgstr "Ava"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Show..."
-msgstr ""
+msgstr "Näita..."
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "~Kustuta"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Compare"
-msgstr ""
+msgstr "Võrdle"
 
 #: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Versions of"
-msgstr ""
+msgstr "Versioonid: "
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Date and time : "
-msgstr ""
+msgstr "Kuupäev ja kellaaeg : "
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Saved by "
-msgstr ""
+msgstr "Salvestaja "
 
 #: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "Sulge"
 
 #: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Insert Version Comment"
-msgstr ""
+msgstr "Versiooni kommentaari lisamine"
 
 #: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
+#, fuzzy
 msgid  "Version comment"
-msgstr ""
+msgstr "Versiooni kommentaar"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "Nimi"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~AutoUpdate"
-msgstr ""
+msgstr "Automaatne värskendus"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ne~xt Style"
-msgstr ""
+msgstr "Järgmine stiil"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Linked with"
-msgstr ""
+msgstr "Lingitud stiiliga"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Category"
-msgstr ""
+msgstr "Kategooria"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Contains"
-msgstr ""
+msgstr "Sisu"
 
 #: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
+#, fuzzy
 msgid  "Current version"
-msgstr ""
+msgstr "Praegune versioon"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
+#, fuzzy
 msgid  "Export"
-msgstr ""
+msgstr "Eksportimine"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr "Lisamine"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
+#, fuzzy
 msgid  "~Insert"
-msgstr ""
+msgstr "Lisa"
 
 #: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
+#, fuzzy
 msgid  "<All formats>"
-msgstr ""
+msgstr "<Kõik vormingud>"
 
 #: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
+#, fuzzy
 msgid  "~Automatic file name extension"
-msgstr ""
+msgstr "Automaatne failinime laiend"
 
 #: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
+#, fuzzy
 msgid  "~Selection"
-msgstr ""
+msgstr "Valik"
 
 #: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
+#, fuzzy
 msgid  "~Link"
-msgstr ""
+msgstr "Link"
 
 #: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Pr~eview"
-msgstr ""
+msgstr "Eelvaade"
 
 #: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "~Read-only"
-msgstr ""
+msgstr "Kirjutuskaitstud"
 
 #: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "Save with ~password"
-msgstr ""
+msgstr "Salvestatakse parooliga"
 
 #: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Edit ~filter settings"
-msgstr ""
+msgstr "Filtri sätete redigeerimine"
 
 #: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
+#, fuzzy
 msgid  "~Play"
-msgstr ""
+msgstr "Esita"
 
 #: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
+#, fuzzy
 msgid  "Sto~p"
-msgstr ""
+msgstr "Peata"
 
 #: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
+#, fuzzy
 msgid  "~Open"
-msgstr ""
+msgstr "Ava"
 
 #: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "~Save"
-msgstr ""
+msgstr "Salvesta"
 
 #: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Style:"
-msgstr ""
+msgstr "Laad:"
 
 #: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
+#, fuzzy
 msgid  "~Templates:"
-msgstr ""
+msgstr "Mallid:"
 
 #: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
+#, fuzzy
 msgid  "~Version:"
-msgstr ""
+msgstr "Versioon:"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
+#, fuzzy
 msgid  "Find on this Page"
-msgstr ""
+msgstr "Otsimine aktiivselt lehelt"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Search for"
-msgstr ""
+msgstr "Otsitav"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Whole words only"
-msgstr ""
+msgstr "Ainult terved sõnad"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Match case"
-msgstr ""
+msgstr "Tõstutundlik"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Wrap ~around"
-msgstr ""
+msgstr "Jätkatakse algusest"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Backwards"
-msgstr ""
+msgstr "Tagasisuunas"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
-msgstr ""
+msgstr "Otsi"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.STRING.TEXT
-msgid  "Wrap ~around"
-msgstr ""
+msgstr "Sulge"
 
 #: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Enter Password"
-msgstr ""
+msgstr "Parooli sisestamine"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User"
-msgstr ""
+msgstr "Kasutaja"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Password"
-msgstr ""
+msgstr "Parool"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Confirm"
-msgstr ""
+msgstr "Kinnitus"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Password"
-msgstr ""
+msgstr "Parool"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "P~assword"
-msgstr ""
+msgstr "Parool"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Confir~m"
-msgstr ""
-
-#: dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.STRING.TEXT
-msgid  "Password"
-msgstr ""
+msgstr "Kinnitus"
 
 #: dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME document"
-msgstr ""
+msgstr "%PRODUCTNAME dokument"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "Tiitel"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Subject"
-msgstr ""
+msgstr "Teema"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Keywords"
-msgstr ""
+msgstr "Võtmesõnad"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Comments"
-msgstr ""
+msgstr "Kirjeldus"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type:"
-msgstr ""
+msgstr "Tüüp:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Read-only"
-msgstr ""
+msgstr "Kirjutuskaitstud"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Location:"
-msgstr ""
+msgstr "Asukoht:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Size:"
-msgstr ""
+msgstr "Suurus:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Created:"
-msgstr ""
+msgstr "Loodud:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Modified:"
-msgstr ""
+msgstr "Muudetud:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Digitally signed:"
-msgstr ""
+msgstr "Digiallkirjastatud:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Digital Signature..."
-msgstr ""
+msgstr "Digiallkiri..."
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
+#, fuzzy
 msgid  "Multiply signed document"
-msgstr ""
+msgstr "Mitmekordselt allkirjastatud dokument"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Last printed:"
-msgstr ""
+msgstr "Prinditud:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Total editing time:"
-msgstr ""
+msgstr "Redigeerimisaega kokku:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Revision number:"
-msgstr ""
+msgstr "Versiooninumber:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Reset"
-msgstr ""
+msgstr "Lähtesta"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Apply user data"
-msgstr ""
+msgstr "Rakendatakse isikuandmeid"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Template:"
-msgstr ""
+msgstr "Mall:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
+#, fuzzy
 msgid  "unknown"
-msgstr ""
+msgstr "tundmatu"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
 msgid  "File Name"
 msgstr ""
 
 #: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Info fields..."
-msgstr ""
+msgstr "Infoväljad..."
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Do not refresh automatically"
-msgstr ""
+msgstr "Ei värskendata automaatselt"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Refresh this document"
-msgstr ""
+msgstr "Dokumenti värskendatakse"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "every"
-msgstr ""
+msgstr "iga"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "seconds"
-msgstr ""
+msgstr "sekundi möödumist"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Redirect from this document"
-msgstr ""
+msgstr "Sellelt dokumendilt suunatakse edasi"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "after"
-msgstr ""
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FIXEDTEXT.TEXT
-msgid  "seconds"
-msgstr ""
+msgstr "pärast"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "to URL"
-msgstr ""
+msgstr "URL-ile"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "to frame"
-msgstr ""
+msgstr "paneelile"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.STRING.TEXT
+#, fuzzy
 msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
-msgstr ""
+msgstr "Kui valid \"%PLACEHOLDER%\", siis pead ka URL-i sisestama."
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Properties"
-msgstr ""
+msgstr "Omadused"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "Nimi"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "Tüüp"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Value"
-msgstr ""
+msgstr "Väärtus"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
-msgstr ""
+msgstr "~Lisa"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
+#, fuzzy
 msgid  "Property Name"
-msgstr ""
+msgstr "Omaduse nimi"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Checked by"
-msgstr ""
+msgstr "Kontrollija"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Client"
-msgstr ""
+msgstr "Klient"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Date completed"
-msgstr ""
+msgstr "Lõpetamise kuupäev"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Department"
-msgstr ""
+msgstr "Osakond"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Destinations"
-msgstr ""
+msgstr "Sihtkohad"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Disposition"
-msgstr ""
+msgstr "Paigutus"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Division"
-msgstr ""
+msgstr "Allüksus"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Document number"
-msgstr ""
+msgstr "Dokumendi number"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Editor"
-msgstr ""
+msgstr "Toimetaja"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
+#, fuzzy
 msgid  "E-Mail"
-msgstr ""
+msgstr "E-post"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Forward to"
-msgstr ""
+msgstr "Edastamine"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Group"
-msgstr ""
+msgstr "Rühm"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Info"
-msgstr ""
+msgstr "Teave"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Language"
-msgstr ""
+msgstr "Keel"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Mailstop"
-msgstr ""
+msgstr "Indeksi laiend"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Matter"
-msgstr ""
+msgstr "Teema"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Office"
-msgstr ""
+msgstr "Kontor"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Owner"
-msgstr ""
+msgstr "Omanik"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Project"
-msgstr ""
+msgstr "Projekt"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Publisher"
-msgstr ""
+msgstr "Kirjastaja"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Purpose"
-msgstr ""
+msgstr "Otstarve"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Received from"
-msgstr ""
+msgstr "Saatja"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Recorded by"
-msgstr ""
+msgstr "Protokollija"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Recorded date"
-msgstr ""
+msgstr "Protokollimise kuupäev"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Reference"
-msgstr ""
+msgstr "Viide"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Source"
-msgstr ""
+msgstr "Allikas"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Status"
-msgstr ""
+msgstr "Olek"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Telephone number"
-msgstr ""
+msgstr "Telefoninumber"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Typist"
-msgstr ""
+msgstr "Masikakirjutaja"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
+#, fuzzy
 msgid  "URL"
-msgstr ""
+msgstr "URL"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
+#, fuzzy
 msgid  "DateTime"
-msgstr ""
+msgstr "Kuupäev"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Date"
-msgstr ""
+msgstr "Arv"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Duration"
-msgstr ""
+msgstr "Jah või ei"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
 msgid  "Number"
@@ -1460,40 +1729,44 @@ msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr "Jah"
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "Ei"
 
 #: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Remove Property"
-msgstr ""
-
-#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
-msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
-msgstr ""
+msgstr "Eemalda omadus"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Properties of "
-msgstr ""
+msgstr "Omadused: "
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "Üldine"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "Kirjeldus"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Custom Properties"
-msgstr ""
+msgstr "Kohandatud omadused"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 msgid  "Security"
@@ -1501,10 +1774,6 @@ msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.MODALDIALOG.TEXT
 msgid  "Edit Duration"
-msgstr ""
-
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FIXEDLINE.TEXT
-msgid  "Duration"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CHECKBOX.TEXT
@@ -1532,116 +1801,127 @@ msgid  "Min~utes"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Seconds"
-msgstr ""
+msgstr "sekundi möödumist"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 msgid  "Millise~conds"
 msgstr ""
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Edit Field Names"
-msgstr ""
+msgstr "Väljade nimede redigeerimine"
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Names"
-msgstr ""
+msgstr "Nimed"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Create Style"
-msgstr ""
+msgstr "Stiili loomine"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Style name"
-msgstr ""
+msgstr "Stiili nimi"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Style already exists. Overwrite?"
-msgstr ""
+msgstr "Stiil on juba olemas. Kirjutame üle?"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
+#, fuzzy
 msgid  "Record Macro"
-msgstr ""
+msgstr "Salvesta makro"
 
 #: dialog/recfloat.src#STR_MACRO_LOSS.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "Kas sa tõesti soovid salvestamist katkestada? Kõik selle hetkeni salvestatud sammud unustatakse."
 
 #: dialog/recfloat.src#STR_CANCEL_RECORDING.STRING.TEXT
+#, fuzzy
 msgid  "Cancel Recording"
-msgstr ""
+msgstr "Katkesta salvestamine"
 
 #: dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAME ei leidnud kehtivat e-posti häälestust. Palun salvesta see dokument kettale ja lisa manusena oma e-posti rakenduses koostatud kirjale."
 
 #: dialog/dialog.src#STR_RESET.STRING.TEXT
+#, fuzzy
 msgid  "~Reset"
-msgstr ""
+msgstr "Lähtesta"
 
 #: dialog/dialog.src#STR_APPLY.STRING.TEXT
+#, fuzzy
 msgid  "Apply"
-msgstr ""
+msgstr "Rakenda"
 
 #: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
+#, fuzzy
 msgid  "Organizer"
-msgstr ""
+msgstr "Korraldaja"
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This name is already in use."
-msgstr ""
+msgstr "See nimi on juba kasutusel."
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This Style does not exist."
-msgstr ""
-
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
-msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
-
-#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
-msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "Seda stiili pole olemas."
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to delete Style $1?"
-msgstr ""
+msgstr "Kas sa tõesti soovid kustutada stiili $1?"
 
 #: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
+#, fuzzy
 msgid  "You are deleting an applied Style!\n"
-msgstr ""
+msgstr "Sa soovid kustutada rakendatud stiili!\n"
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "New..."
-msgstr ""
+msgstr "Uus..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Modify..."
-msgstr ""
+msgstr "Muuda..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete..."
-msgstr ""
+msgstr "Kustuta..."
 
 #: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
+#, fuzzy
 msgid  "Navigator"
-msgstr ""
+msgstr "Navigaator"
 
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 msgid  "Task Pane"
 msgstr ""
 
-#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
-msgid  "Sidebar"
-msgstr ""
-
 #: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Faulty password confirmation"
-msgstr ""
+msgstr "Vigane parooli kinnitus"
 
 #: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
+#, fuzzy
 msgid  "Send"
-msgstr ""
+msgstr "Saatmine"
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 msgid  "Dock"
@@ -1660,452 +1940,492 @@ msgid  "Tasks"
 msgstr ""
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "See dokument võib sisaldada vormindust või sisu, mida ei saa salvestada %FORMATNAME failivormingusse. Soovid sa dokumenti siiski sellesse vormingusse salvestada?\n\nKui soovid olla kindel, et faili sisu ja selle vormindus salvestatakse korrektselt, kasuta uusimat ODF-failivormingut."
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Keep Current Format"
-msgstr ""
+msgstr "Säilita ~praegune vorming"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Save in ODF Format"
-msgstr ""
+msgstr "~Salvesta ODF-vormingusse"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~More Information..."
-msgstr ""
+msgstr "Rohkem teavet..."
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Ask when not saving in ODF format"
-msgstr ""
+msgstr "Kinnituse küsimine, kui ei salvestata ODF-vormingusse"
 
 #: view/view.src#STR_NODEFPRINTER.STRING.TEXT
+#, fuzzy
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Vaikimisi printerit ei leitud.\nPalun vali vaikimisi printer ja proovi siis uuesti."
 
 #: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
+#, fuzzy
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "Printeri käivitamine ei õnnestunud.\nPalun kontrolli printeri sätteid."
 
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
+#, fuzzy
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "See dokument on vormindatud printeri $1 jaoks, kuid see printer pole saadaval.\nKas sa soovid kasutada standardset printerit $2 ?"
 
 #: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options..."
-msgstr ""
+msgstr "Sätted..."
 
 #: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Printer Options"
-msgstr ""
+msgstr "Prindisätted"
 
 #: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
+#, fuzzy
 msgid  "Printer busy"
-msgstr ""
+msgstr "Printer on hõivatud"
 
 #: view/view.src#STR_ERROR_PRINT.STRING.TEXT
+#, fuzzy
 msgid  "Error while printing"
-msgstr ""
+msgstr "Printimisel tekkis viga"
 
 #: view/view.src#STR_PRINTING.STRING.TEXT
+#, fuzzy
 msgid  "Printing"
-msgstr ""
+msgstr "Printimine"
 
 #: view/view.src#STR_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Page "
-msgstr ""
+msgstr "Lehekülg "
 
 #: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error saving template "
-msgstr ""
+msgstr "Malli salvestamisel tekkis viga"
 
 #: view/view.src#STR_READONLY.STRING.TEXT
+#, fuzzy
 msgid  " (read-only)"
-msgstr ""
+msgstr "(kirjutuskaitstud)"
 
 #: view/view.src#STR_PRINT_NEWORI.STRING.TEXT
+#, fuzzy
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "Lehekülje suunda ja suurust on muudetud.\nKas salvestada uued sätted aktiivsesse\ndokumenti?"
 
 #: view/view.src#STR_PRINT_NEWSIZE.STRING.TEXT
+#, fuzzy
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
-
-#: view/view.src#STR_PRINT_NEWORISIZE.STRING.TEXT
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "Lehekülje suurust on muudetud.\nKas salvestada uued sätted aktiivsesse\ndokumenti?"
 
 #: view/view.src#STR_PREVIEW_DOCINFO.STRING.TEXT
+#, fuzzy
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Pealkiri:</b><dd>$(TITEL)<dt><b>Teema:</b><dd>$(THEME)<dt><b>Võtmesõnad:</b><dd>$(KEYWORDS)<dt><b>Kirjeldus:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
+#, fuzzy
 msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
-
-#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
-msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Dokumendi omadusi ei leitud.</B></FONT></P></BODY></HTML>"
 
 #: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
+#, fuzzy
 msgid  "Print Monitor"
-msgstr ""
+msgstr "Prindimonitor"
 
 #: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "is being printed on"
-msgstr ""
+msgstr "saadeti printerile"
 
 #: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
+#, fuzzy
 msgid  "is being prepared for printing"
-msgstr ""
-
-#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
+msgstr "valmistatakse ette printimiseks"
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "Dokumenti ei saa redigeerimiseks avada, kuna arvatavasti pole sul piisavalt õigusi. Soovid sa redigeerida dokumendi koopiat?"
 
 #: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  " (repaired document)"
-msgstr ""
+msgstr " (parandatud dokument)"
 
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
-
-#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
-msgid  "Customization"
-msgstr ""
-
-#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
-msgid  "Restore Default"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
-msgid  "More Options"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
-msgid  "Close Sidebar Deck"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
-msgid  "Panel: "
-msgstr ""
+msgstr "%PRODUCTNAME ei leidnud süsteemist veebibrauserit. Palun kontrolli oma töölaua sätteid või paigalda veebibrauser (näiteks Mozilla) selle paigaldamise käigus pakutavasse vaikimisi asukohta."
 
 #: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Modify Link"
-msgstr ""
+msgstr "Lingi muutmine"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Application:"
-msgstr ""
+msgstr "R~akendus:"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~File:"
-msgstr ""
+msgstr "~Fail:"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Category:"
-msgstr ""
+msgstr "~Kategooria:"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Modify link"
-msgstr ""
+msgstr "Muuda linki"
 
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
 msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: appl/app.src#STR_NONAME.STRING.TEXT
+#, fuzzy
 msgid  "Untitled"
-msgstr ""
+msgstr "Nimetu"
 
 #: appl/app.src#STR_CLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Sulge"
 
 #: appl/app.src#STR_STYLE_FILTER_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
-msgstr ""
+msgstr "Automaatne"
 
 #: appl/app.src#STR_STANDARD_SHORTCUT.STRING.TEXT
+#, fuzzy
 msgid  "Standard"
-msgstr ""
+msgstr "Standardne"
 
 #: appl/app.src#STR_BYTES.STRING.TEXT
+#, fuzzy
 msgid  "Bytes"
-msgstr ""
+msgstr "baiti"
 
 #: appl/app.src#STR_KB.STRING.TEXT
+#, fuzzy
 msgid  "KB"
-msgstr ""
+msgstr "kB"
 
 #: appl/app.src#STR_MB.STRING.TEXT
+#, fuzzy
 msgid  "MB"
-msgstr ""
+msgstr "MB"
 
 #: appl/app.src#STR_GB.STRING.TEXT
+#, fuzzy
 msgid  "GB"
-msgstr ""
+msgstr "GB"
 
 #: appl/app.src#MSG_QUERY_LASTVERSION.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Cancel all changes?"
-msgstr ""
+msgstr "Kas loobuda kõigist muudatustest?"
 
 #: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "Document already open."
-msgstr ""
+msgstr "Dokument on juba avatud."
 
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "%PRODUCTNAME  ei leidnud süsteemist veebibrauserit. Palun kontrolli oma töölaua eelistusi või paigalda veebibrauser (nt Mozilla). "
 
 #: appl/app.src#GID_INTERN.STRING.TEXT
+#, fuzzy
 msgid  "Internal"
-msgstr ""
+msgstr "Sisemine"
 
 #: appl/app.src#GID_APPLICATION.STRING.TEXT
+#, fuzzy
 msgid  "Application"
-msgstr ""
+msgstr "Rakendus"
 
 #: appl/app.src#GID_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "View"
-msgstr ""
+msgstr "Vaade"
 
 #: appl/app.src#GID_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "Documents"
-msgstr ""
+msgstr "Dokumendid"
 
 #: appl/app.src#GID_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit"
-msgstr ""
+msgstr "Redigeerimine"
 
 #: appl/app.src#GID_MACRO.STRING.TEXT
+#, fuzzy
 msgid  "BASIC"
-msgstr ""
+msgstr "BASIC"
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "Sätted"
 
 #: appl/app.src#GID_MATH.STRING.TEXT
+#, fuzzy
 msgid  "Math"
-msgstr ""
+msgstr "Math"
 
 #: appl/app.src#GID_NAVIGATOR.STRING.TEXT
+#, fuzzy
 msgid  "Navigate"
-msgstr ""
+msgstr "Navigeerimine"
 
 #: appl/app.src#GID_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr "Lisamine"
 
 #: appl/app.src#GID_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "Vormindus"
 
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "Mallid"
 
 #: appl/app.src#GID_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: appl/app.src#GID_FRAME.STRING.TEXT
+#, fuzzy
 msgid  "Frame"
-msgstr ""
+msgstr "Paneel"
 
 #: appl/app.src#GID_GRAPHIC.STRING.TEXT
+#, fuzzy
 msgid  "Graphic"
-msgstr ""
+msgstr "Pilt"
 
 #: appl/app.src#GID_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "Tabel"
 
 #: appl/app.src#GID_ENUMERATION.STRING.TEXT
+#, fuzzy
 msgid  "Numbering"
-msgstr ""
+msgstr "Nummerdus"
 
 #: appl/app.src#GID_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Data"
-msgstr ""
+msgstr "Andmed"
 
 #: appl/app.src#GID_SPECIAL.STRING.TEXT
+#, fuzzy
 msgid  "Special Functions"
-msgstr ""
+msgstr "Erifunktsioonid"
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
+#, fuzzy
 msgid  "Image"
-msgstr ""
+msgstr "Pilt"
 
 #: appl/app.src#GID_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Chart"
-msgstr ""
+msgstr "Diagramm"
 
 #: appl/app.src#GID_EXPLORER.STRING.TEXT
+#, fuzzy
 msgid  "Explorer"
-msgstr ""
+msgstr "Explorer"
 
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
+#, fuzzy
 msgid  "Connector"
-msgstr ""
+msgstr "Konnektor"
 
 #: appl/app.src#GID_MODIFY.STRING.TEXT
+#, fuzzy
 msgid  "Modify"
-msgstr ""
+msgstr "Muuda"
 
 #: appl/app.src#GID_DRAWING.STRING.TEXT
+#, fuzzy
 msgid  "Drawing"
-msgstr ""
+msgstr "Joonistus"
 
 #: appl/app.src#GID_CONTROLS.STRING.TEXT
+#, fuzzy
 msgid  "Controls"
-msgstr ""
-
-#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
-msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "Juhtelemendid"
 
 #: appl/app.src#STR_ISMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to save the changes to %1?"
-msgstr ""
+msgstr "Kas sa soovid salvestada faili %1 muudatusi?"
 
 #: appl/app.src#STR_QUITAPP.STRING.TEXT
+#, fuzzy
 msgid  "E~xit"
-msgstr ""
+msgstr "Väl~ju"
 
 #: appl/app.src#RID_STR_HELP.STRING.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "Abi"
 
 #: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
+#, fuzzy
 msgid  "No automatic start at 'XX'"
-msgstr ""
+msgstr "Kohal 'XX' pole automaatset käivitust"
 
 #: appl/app.src#RID_HELPBAR.STRING.TEXT
+#, fuzzy
 msgid  "Help Bar"
-msgstr ""
+msgstr "Abiriba"
 
 #: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
+#, fuzzy
 msgid  "The help file for this topic is not installed."
-msgstr ""
+msgstr "Selle teema abifail pole paigaldatud."
 
 #: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Function Bar"
-msgstr ""
+msgstr "Funktsiooniriba"
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "Erihäälestuses tekkis tõrge.\nPalun võta ühendust oma administraatoriga."
 
 #: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
+#, fuzzy
 msgid  "Exit Quickstarter"
-msgstr ""
+msgstr "Välju kiirkäivitajast"
 
 #: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION kiirkäivitaja"
 
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
+#, fuzzy
 msgid  "Open Document..."
-msgstr ""
+msgstr "Ava dokument..."
 
 #: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "From Template..."
-msgstr ""
+msgstr "Mallist..."
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
+#, fuzzy
 msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr ""
+msgstr "Laadi %PRODUCTNAME sisselogimisel"
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
+#, fuzzy
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "Keela kiirkäivitaja"
 
 #: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
+#, fuzzy
 msgid  "File"
-msgstr ""
+msgstr "Fail"
 
 #: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
+#, fuzzy
 msgid  "Startcenter"
-msgstr ""
+msgstr "Käivitusekraan"
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
+#, fuzzy
 msgid  "Recent Documents"
-msgstr ""
+msgstr "Hiljutised dokumendid"
 
 #: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
+#, fuzzy
 msgid  "Update all links?"
-msgstr ""
+msgstr "Kas värskendada kõiki linke?"
 
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "DDE link to % for % area % are not available."
-msgstr ""
+msgstr "DDE link %-le % ala % jaoks ei ole saadaval."
 
 #: appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WARNINGBOX.MESSAGE
+#, fuzzy
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
-msgstr ""
-
-#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
-msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "See hüperlink soovib avada saiti \"%s\". Kas sa soovid jätkata?"
 
 #: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Security Warning"
-msgstr ""
-
-#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
-msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
-
-#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "Turvahoiatus"
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "Digitaalseks allkirjastamiseks peab dokument olema salvestatud OpenDocument-failivormingus."
 
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
+#, fuzzy
 msgid  " (Signed)"
-msgstr ""
-
-#: appl/app.src#STR_STANDARD.STRING.TEXT
-msgid  "Standard"
-msgstr ""
+msgstr " (allkirjastatud)"
 
 #: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "Dokumendid"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
+#, fuzzy
 msgid  "- None -"
-msgstr ""
-
-#: appl/app.src#RID_SVXSTR_GRAFIKLINK.STRING.TEXT
-msgid  "Graphic"
-msgstr ""
+msgstr "- Puudub -"
 
 #: appl/app.src#STR_SFX_FILTERNAME_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All files (*.*)"
-msgstr ""
+msgstr "Kõik failid (*.*)"
 
 #: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
 msgid  "Link graphics"
 msgstr ""
 
 #: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
+#, fuzzy
 msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr ""
+msgstr "Sobivat meetodit %1\nei leitud.\n\nKontrolli meetodi nime."
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT
 msgid  "Graphics file cannot be opened"
@@ -2132,141 +2452,166 @@ msgid  "Not enough memory to insert graphic"
 msgstr ""
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Contents"
-msgstr ""
+msgstr "Sisukord"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Index"
-msgstr ""
+msgstr "Register"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Find"
-msgstr ""
+msgstr "Otsing"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Bookmarks"
-msgstr ""
+msgstr "Järjehoidjad"
 
 #: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Search term"
-msgstr ""
+msgstr "~Otsitav termin"
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Display"
-msgstr ""
+msgstr "~Näita"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~earch term"
-msgstr ""
+msgstr "O~tsitav termin"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
-msgstr ""
+msgstr "~Otsi"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Complete words only"
-msgstr ""
+msgstr "~Ainult terved sõnad"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Find in ~headings only"
-msgstr ""
-
-#: appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PUSHBUTTON.TEXT
-msgid  "~Display"
-msgstr ""
+msgstr "Otsitakse ainult ~pealkirjadest"
 
 #: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Bookmarks"
-msgstr ""
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PUSHBUTTON.TEXT
-msgid  "~Display"
-msgstr ""
+msgstr "~Järjehoidjad"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Help"
-msgstr ""
+msgstr "%PRODUCTNAME-i abitekst"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.STRING.TEXT
+#, fuzzy
 msgid  "Show Navigation Pane"
-msgstr ""
+msgstr "Näita navigeerimispaneeli"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.STRING.TEXT
+#, fuzzy
 msgid  "Hide Navigation Pane"
-msgstr ""
+msgstr "Peida navigeerimispaneel"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
+#, fuzzy
 msgid  "First Page"
-msgstr ""
+msgstr "Esimene lehekülg"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
+#, fuzzy
 msgid  "Previous Page"
-msgstr ""
+msgstr "Eelmine lehekülg"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
+#, fuzzy
 msgid  "Next Page"
-msgstr ""
+msgstr "Järgmine lehekülg"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
+#, fuzzy
 msgid  "Print..."
-msgstr ""
+msgstr "Prindi..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
+#, fuzzy
 msgid  "Add to Bookmarks..."
-msgstr ""
+msgstr "Lisa järjehoidjatesse..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
+#, fuzzy
 msgid  "Find on this Page..."
-msgstr ""
+msgstr "Otsi sellelt lehelt..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
+#, fuzzy
 msgid  "HTML Source"
-msgstr ""
+msgstr "HTML-lähtetekst"
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "The Help is being started..."
-msgstr ""
+msgstr "Abisüsteemi käivitamine..."
 
 #: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Select Text"
-msgstr ""
+msgstr "Vali tekst"
 
 #: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
+#, fuzzy
 msgid  "~Copy"
-msgstr ""
+msgstr "Kopeeri"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Add to Bookmarks"
-msgstr ""
+msgstr "Lisamine järjehoidjatesse"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bookmark:"
-msgstr ""
+msgstr "Järjehoidja:"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
+#, fuzzy
 msgid  "Rename Bookmark"
-msgstr ""
+msgstr "Järjehoidja ümbernimetamine"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Display"
-msgstr ""
+msgstr "Näita"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rename..."
-msgstr ""
+msgstr "Muuda nime..."
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "Kustuta"
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "No topics found."
-msgstr ""
+msgstr "Teemasid ei leitud."
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "The text you entered was not found."
-msgstr ""
+msgstr "Sisestatud teksti ei leitud."
 
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
-msgstr ""
+msgstr "Rakenduse (%PRODUCTNAME %MODULENAME) abi kuvamine käivitamisel"

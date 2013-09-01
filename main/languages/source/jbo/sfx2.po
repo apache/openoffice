@@ -123,10 +123,6 @@ msgstr ""
 msgid  "New template"
 msgstr ""
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FIXEDLINE.TEXT
-msgid  "Templates"
-msgstr ""
-
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 msgid  "~Categories"
 msgstr ""
@@ -143,24 +139,12 @@ msgstr ""
 msgid  "~Organizer..."
 msgstr ""
 
-#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
-msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
-
-#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
-msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
-
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
 msgid  "Are you sure you want to delete the region \"$1\"?"
 msgstr ""
 
 #: doc/doc.src#STR_DELETE_TEMPLATE.STRING.TEXT
 msgid  "Are you sure you want to delete the entry \"$1\"?"
-msgstr ""
-
-#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
-msgid  "The category is not empty.\nDelete anyway?"
 msgstr ""
 
 #: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
@@ -243,20 +227,12 @@ msgstr ""
 msgid  "Please specify a name."
 msgstr ""
 
-#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
-msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
-
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr ""
 
 #: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
 msgid  "Do you want to reset the default template?"
-msgstr ""
-
-#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
-msgid  "Template directory\n$(DIR)\ndoes not exist."
 msgstr ""
 
 #: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
@@ -329,10 +305,6 @@ msgstr ""
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
 msgid  "Disconnected"
-msgstr ""
-
-#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
-msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
 msgstr ""
 
 #: doc/doc.src#STR_EDIT.STRING.TEXT
@@ -515,10 +487,6 @@ msgstr ""
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
 msgstr ""
 
-#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
-msgstr ""
-
 #: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
 msgstr ""
@@ -552,14 +520,6 @@ msgid  "Templates"
 msgstr ""
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Documents"
-msgstr ""
-
-#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Templates"
-msgstr ""
-
-#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
 msgid  "Documents"
 msgstr ""
 
@@ -1119,10 +1079,6 @@ msgstr ""
 msgid  "~Close"
 msgstr ""
 
-#: dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.STRING.TEXT
-msgid  "Wrap ~around"
-msgstr ""
-
 #: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
 msgid  "Enter Password"
 msgstr ""
@@ -1149,10 +1105,6 @@ msgstr ""
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FIXEDTEXT.TEXT
 msgid  "Confir~m"
-msgstr ""
-
-#: dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.STRING.TEXT
-msgid  "Password"
 msgstr ""
 
 #: dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.STRING.TEXT
@@ -1269,10 +1221,6 @@ msgstr ""
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
 msgid  "after"
-msgstr ""
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FIXEDTEXT.TEXT
-msgid  "seconds"
 msgstr ""
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
@@ -1471,10 +1419,6 @@ msgstr ""
 msgid  "Remove Property"
 msgstr ""
 
-#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
-msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
-msgstr ""
-
 #: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
 msgid  "Properties of "
 msgstr ""
@@ -1501,10 +1445,6 @@ msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.MODALDIALOG.TEXT
 msgid  "Edit Duration"
-msgstr ""
-
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FIXEDLINE.TEXT
-msgid  "Duration"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CHECKBOX.TEXT
@@ -1595,14 +1535,6 @@ msgstr ""
 msgid  "This Style does not exist."
 msgstr ""
 
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
-msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
-
-#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
-msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
-
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 msgid  "Do you really want to delete Style $1?"
 msgstr ""
@@ -1629,10 +1561,6 @@ msgstr ""
 
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 msgid  "Task Pane"
-msgstr ""
-
-#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
-msgid  "Sidebar"
 msgstr ""
 
 #: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
@@ -1731,20 +1659,12 @@ msgstr ""
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
 msgstr ""
 
-#: view/view.src#STR_PRINT_NEWORISIZE.STRING.TEXT
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
-
 #: view/view.src#STR_PREVIEW_DOCINFO.STRING.TEXT
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr ""
 
 #: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
 msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
-
-#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
-msgid  "The document cannot be closed because a\n print job is being carried out."
 msgstr ""
 
 #: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
@@ -1759,10 +1679,6 @@ msgstr ""
 msgid  "is being prepared for printing"
 msgstr ""
 
-#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
-
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr ""
@@ -1773,26 +1689,6 @@ msgstr ""
 
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
-
-#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
-msgid  "Customization"
-msgstr ""
-
-#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
-msgid  "Restore Default"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
-msgid  "More Options"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
-msgid  "Close Sidebar Deck"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
-msgid  "Panel: "
 msgstr ""
 
 #: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
@@ -1967,10 +1863,6 @@ msgstr ""
 msgid  "Controls"
 msgstr ""
 
-#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
-msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
-
 #: appl/app.src#STR_ISMODIFIED.STRING.TEXT
 msgid  "Do you want to save the changes to %1?"
 msgstr ""
@@ -2055,20 +1947,8 @@ msgstr ""
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr ""
 
-#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
-msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
-
 #: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
 msgid  "Security Warning"
-msgstr ""
-
-#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
-msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
-
-#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
 msgstr ""
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
@@ -2079,20 +1959,12 @@ msgstr ""
 msgid  " (Signed)"
 msgstr ""
 
-#: appl/app.src#STR_STANDARD.STRING.TEXT
-msgid  "Standard"
-msgstr ""
-
 #: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
 msgid  "Document"
 msgstr ""
 
 #: appl/app.src#STR_NONE.STRING.TEXT
 msgid  "- None -"
-msgstr ""
-
-#: appl/app.src#RID_SVXSTR_GRAFIKLINK.STRING.TEXT
-msgid  "Graphic"
 msgstr ""
 
 #: appl/app.src#STR_SFX_FILTERNAME_ALL.STRING.TEXT
@@ -2171,16 +2043,8 @@ msgstr ""
 msgid  "Find in ~headings only"
 msgstr ""
 
-#: appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PUSHBUTTON.TEXT
-msgid  "~Display"
-msgstr ""
-
 #: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
 msgid  "~Bookmarks"
-msgstr ""
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PUSHBUTTON.TEXT
-msgid  "~Display"
 msgstr ""
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT

@@ -123,10 +123,6 @@ msgstr ""
 msgid  "New template"
 msgstr ""
 
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FIXEDLINE.TEXT
-msgid  "Templates"
-msgstr ""
-
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
 msgid  "~Categories"
 msgstr ""
@@ -136,19 +132,12 @@ msgid  "~Templates"
 msgstr ""
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "Fasal"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
 msgid  "~Organizer..."
-msgstr ""
-
-#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
-msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
-
-#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
-msgid  "Name already in use.\nDo you want to overwrite document template?"
 msgstr ""
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
@@ -157,10 +146,6 @@ msgstr ""
 
 #: doc/doc.src#STR_DELETE_TEMPLATE.STRING.TEXT
 msgid  "Are you sure you want to delete the entry \"$1\"?"
-msgstr ""
-
-#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
-msgid  "The category is not empty.\nDelete anyway?"
 msgstr ""
 
 #: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
@@ -176,8 +161,9 @@ msgid  "Macros"
 msgstr ""
 
 #: doc/doc.src#STR_CONFIG.STRING.TEXT
+#, fuzzy
 msgid  "Configuration"
-msgstr ""
+msgstr "Fasal"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
 msgid  "Styles in "
@@ -192,8 +178,9 @@ msgid  "The print job could not be started."
 msgstr ""
 
 #: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
+#, fuzzy
 msgid  "Copy"
-msgstr ""
+msgstr "Bere"
 
 #: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
 msgid  "The template could not be opened."
@@ -243,20 +230,12 @@ msgstr ""
 msgid  "Please specify a name."
 msgstr ""
 
-#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
-msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
-
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr ""
 
 #: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
 msgid  "Do you want to reset the default template?"
-msgstr ""
-
-#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
-msgid  "Template directory\n$(DIR)\ndoes not exist."
 msgstr ""
 
 #: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
@@ -288,8 +267,9 @@ msgid  "Save Copy ~as..."
 msgstr ""
 
 #: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "Daabu"
 
 #: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
 msgid  "~Close & Return to "
@@ -300,8 +280,9 @@ msgid  " AutoPilot"
 msgstr ""
 
 #: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
+#, fuzzy
 msgid  "Configurations"
-msgstr ""
+msgstr "Fasal"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
 msgid  "%PRODUCTNAME Basic libraries"
@@ -331,13 +312,10 @@ msgstr ""
 msgid  "Disconnected"
 msgstr ""
 
-#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
-msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
-
 #: doc/doc.src#STR_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit"
-msgstr ""
+msgstr "Fasal"
 
 #: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
 msgid  "%PRODUCTNAME Documents"
@@ -380,8 +358,9 @@ msgid  "Master Document"
 msgstr ""
 
 #: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
+#, fuzzy
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "Kabuwalha"
 
 #: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
 msgid  "Presentation"
@@ -440,12 +419,14 @@ msgid  "Export as PDF"
 msgstr ""
 
 #: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Export..."
-msgstr ""
+msgstr " Cendi ka sanba..."
 
 #: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Export"
-msgstr ""
+msgstr "  Cendi ka sanba..."
 
 #: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
 msgid  "Add this directory to the list of secure paths: "
@@ -464,8 +445,9 @@ msgid  "Recorded changes"
 msgstr ""
 
 #: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
+#, fuzzy
 msgid  "Notes"
-msgstr ""
+msgstr " Hantum kaddasey"
 
 #: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
 msgid  "Document versions"
@@ -515,10 +497,6 @@ msgstr ""
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
 msgstr ""
 
-#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
-msgstr ""
-
 #: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
 msgstr ""
@@ -536,8 +514,9 @@ msgid  "Template Management"
 msgstr ""
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Daabu"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
 msgid  "~File..."
@@ -548,36 +527,32 @@ msgid  "~Address Book..."
 msgstr ""
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Templates"
 msgstr ""
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Documents"
-msgstr ""
-
-#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Templates"
-msgstr ""
-
-#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Documents"
-msgstr ""
+msgstr " Takaddawey"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
 msgid  "Commands"
 msgstr ""
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "~New"
-msgstr ""
+msgstr "Itaaga"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
 msgid  "~Delete"
 msgstr ""
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "Fasal"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
 msgid  "Import Template..."
@@ -608,8 +583,9 @@ msgid  "Reset Default Template"
 msgstr ""
 
 #: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "New"
-msgstr ""
+msgstr "Itaaga"
 
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
 msgid  "~Categories"
@@ -628,8 +604,9 @@ msgid  "Pre~view"
 msgstr ""
 
 #: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "Taka / Alhaali"
 
 #: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
 msgid  "Te~xt"
@@ -664,16 +641,18 @@ msgid  "~Title"
 msgstr ""
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Subject"
-msgstr ""
+msgstr "Dalil"
 
 #: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
 msgid  "~Key words"
 msgstr ""
 
 #: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Description"
-msgstr ""
+msgstr "Taka / Alhaali"
 
 #: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
@@ -788,16 +767,18 @@ msgid  "~Transparency"
 msgstr ""
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Warning"
-msgstr ""
+msgstr "Hawgay-yan / Hawgay / Laasaabu"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr ""
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Yes"
-msgstr ""
+msgstr " Ayyo"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
 msgid  "~No"
@@ -820,16 +801,18 @@ msgid  "~Organizer..."
 msgstr ""
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete..."
-msgstr ""
+msgstr " Tuusu..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
 msgid  "~Modify..."
 msgstr ""
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
-msgstr ""
+msgstr " Itaaga..."
 
 #: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
 msgid  "Style List"
@@ -944,12 +927,14 @@ msgid  "Comments"
 msgstr ""
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Daabu"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Open"
-msgstr ""
+msgstr "Feeri"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
 msgid  "~Show..."
@@ -976,8 +961,9 @@ msgid  "Saved by "
 msgstr ""
 
 #: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "Daabu"
 
 #: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
 msgid  "Insert Version Comment"
@@ -988,8 +974,9 @@ msgid  "Version comment"
 msgstr ""
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "Maa"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
 msgid  "~AutoUpdate"
@@ -1008,24 +995,28 @@ msgid  "~Category"
 msgstr ""
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Contains"
-msgstr ""
+msgstr " Goo nda"
 
 #: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
 msgid  "Current version"
 msgstr ""
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
+#, fuzzy
 msgid  "Export"
-msgstr ""
+msgstr "  Cendi ka sanba..."
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr " Daŋ"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
+#, fuzzy
 msgid  "~Insert"
-msgstr ""
+msgstr " Daŋ"
 
 #: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
 msgid  "<All formats>"
@@ -1068,8 +1059,9 @@ msgid  "Sto~p"
 msgstr ""
 
 #: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
+#, fuzzy
 msgid  "~Open"
-msgstr ""
+msgstr "Feeri"
 
 #: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
 msgid  "~Save"
@@ -1104,6 +1096,7 @@ msgid  "~Match case"
 msgstr ""
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Wrap ~around"
 msgstr ""
 
@@ -1116,12 +1109,9 @@ msgid  "~Find"
 msgstr ""
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.STRING.TEXT
-msgid  "Wrap ~around"
-msgstr ""
+msgstr "Daabu"
 
 #: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
 msgid  "Enter Password"
@@ -1132,27 +1122,26 @@ msgid  "~User"
 msgstr ""
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Password"
-msgstr ""
+msgstr "Sennikufal"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
 msgid  "~Confirm"
 msgstr ""
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Password"
-msgstr ""
+msgstr "Sennikufal"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "P~assword"
-msgstr ""
+msgstr "Sennikufal"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FIXEDTEXT.TEXT
 msgid  "Confir~m"
-msgstr ""
-
-#: dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.STRING.TEXT
-msgid  "Password"
 msgstr ""
 
 #: dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.STRING.TEXT
@@ -1176,8 +1165,9 @@ msgid  "~Comments"
 msgstr ""
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type:"
-msgstr ""
+msgstr "Dumi"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
 msgid  "~Read-only"
@@ -1260,8 +1250,9 @@ msgid  "every"
 msgstr ""
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "seconds"
-msgstr ""
+msgstr " segonduyaŋ"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RADIOBUTTON.TEXT
 msgid  "Redirect from this document"
@@ -1269,10 +1260,6 @@ msgstr ""
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
 msgid  "after"
-msgstr ""
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FIXEDTEXT.TEXT
-msgid  "seconds"
 msgstr ""
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
@@ -1292,12 +1279,14 @@ msgid  "~Properties"
 msgstr ""
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "Maa"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "Dumi"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
 msgid  "Value"
@@ -1316,8 +1305,9 @@ msgid  "Checked by"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Client"
-msgstr ""
+msgstr "Daykaw"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
 msgid  "Date completed"
@@ -1356,16 +1346,19 @@ msgid  "Forward to"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Group"
-msgstr ""
+msgstr " Kuray"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Info"
-msgstr ""
+msgstr " Alhabar"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Language"
-msgstr ""
+msgstr " Senni-tiira"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
 msgid  "Mailstop"
@@ -1412,12 +1405,14 @@ msgid  "Reference"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Source"
-msgstr ""
+msgstr " Tiiraa programu harfey:"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Status"
-msgstr ""
+msgstr " Alhaali"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
 msgid  "Telephone number"
@@ -1432,18 +1427,21 @@ msgid  "URL"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "Cawhaya"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 msgid  "DateTime"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Date"
-msgstr ""
+msgstr " Han"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Duration"
 msgstr ""
 
@@ -1460,19 +1458,17 @@ msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr " Ayyo"
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "Kala"
 
 #: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
 msgid  "Remove Property"
-msgstr ""
-
-#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
-msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
 msgstr ""
 
 #: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
@@ -1480,20 +1476,23 @@ msgid  "Properties of "
 msgstr ""
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr " Dumi kul"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "Taka / Alhaali"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
 msgid  "Custom Properties"
 msgstr ""
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Internet"
-msgstr ""
+msgstr "Interneti"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 msgid  "Security"
@@ -1501,10 +1500,6 @@ msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.MODALDIALOG.TEXT
 msgid  "Edit Duration"
-msgstr ""
-
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FIXEDLINE.TEXT
-msgid  "Duration"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CHECKBOX.TEXT
@@ -1532,8 +1527,9 @@ msgid  "Min~utes"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Seconds"
-msgstr ""
+msgstr " segonduyaŋ"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 msgid  "Millise~conds"
@@ -1544,8 +1540,9 @@ msgid  "Edit Field Names"
 msgstr ""
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Names"
-msgstr ""
+msgstr "Maa"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
 msgid  "Create Style"
@@ -1595,14 +1592,6 @@ msgstr ""
 msgid  "This Style does not exist."
 msgstr ""
 
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
-msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
-
-#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
-msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
-
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
 msgid  "Do you really want to delete Style $1?"
 msgstr ""
@@ -1612,16 +1601,18 @@ msgid  "You are deleting an applied Style!\n"
 msgstr ""
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "New..."
-msgstr ""
+msgstr " Itaaga..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
 msgid  "Modify..."
 msgstr ""
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete..."
-msgstr ""
+msgstr " Tuusu..."
 
 #: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
 msgid  "Navigator"
@@ -1631,17 +1622,14 @@ msgstr ""
 msgid  "Task Pane"
 msgstr ""
 
-#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
-msgid  "Sidebar"
-msgstr ""
-
 #: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
 msgid  "Faulty password confirmation"
 msgstr ""
 
 #: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
+#, fuzzy
 msgid  "Send"
-msgstr ""
+msgstr " Sanba"
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 msgid  "Dock"
@@ -1724,15 +1712,12 @@ msgid  " (read-only)"
 msgstr ""
 
 #: view/view.src#STR_PRINT_NEWORI.STRING.TEXT
+#, fuzzy
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
 msgstr ""
 
 #: view/view.src#STR_PRINT_NEWSIZE.STRING.TEXT
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
-
-#: view/view.src#STR_PRINT_NEWORISIZE.STRING.TEXT
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
 msgstr ""
 
 #: view/view.src#STR_PREVIEW_DOCINFO.STRING.TEXT
@@ -1741,10 +1726,6 @@ msgstr ""
 
 #: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
 msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
-
-#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
-msgid  "The document cannot be closed because a\n print job is being carried out."
 msgstr ""
 
 #: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
@@ -1759,10 +1740,6 @@ msgstr ""
 msgid  "is being prepared for printing"
 msgstr ""
 
-#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
-
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr ""
@@ -1775,33 +1752,14 @@ msgstr ""
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr ""
 
-#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
-msgid  "Customization"
-msgstr ""
-
-#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
-msgid  "Restore Default"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
-msgid  "More Options"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
-msgid  "Close Sidebar Deck"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
-msgid  "Panel: "
-msgstr ""
-
 #: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
 msgid  "Modify Link"
 msgstr ""
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Application:"
-msgstr ""
+msgstr "Programu"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
 msgid  "~File:"
@@ -1824,12 +1782,14 @@ msgid  "Untitled"
 msgstr ""
 
 #: appl/app.src#STR_CLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Daabu"
 
 #: appl/app.src#STR_STYLE_FILTER_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
-msgstr ""
+msgstr "Boŋdirandi"
 
 #: appl/app.src#STR_STANDARD_SHORTCUT.STRING.TEXT
 msgid  "Standard"
@@ -1840,16 +1800,19 @@ msgid  "Bytes"
 msgstr ""
 
 #: appl/app.src#STR_KB.STRING.TEXT
+#, fuzzy
 msgid  "KB"
-msgstr ""
+msgstr "  KB"
 
 #: appl/app.src#STR_MB.STRING.TEXT
+#, fuzzy
 msgid  "MB"
-msgstr ""
+msgstr "  MB"
 
 #: appl/app.src#STR_GB.STRING.TEXT
+#, fuzzy
 msgid  "GB"
-msgstr ""
+msgstr "GB"
 
 #: appl/app.src#MSG_QUERY_LASTVERSION.QUERYBOX.MESSAGE
 msgid  "Cancel all changes?"
@@ -1868,28 +1831,33 @@ msgid  "Internal"
 msgstr ""
 
 #: appl/app.src#GID_APPLICATION.STRING.TEXT
+#, fuzzy
 msgid  "Application"
-msgstr ""
+msgstr "Programu"
 
 #: appl/app.src#GID_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "View"
-msgstr ""
+msgstr "Guna"
 
 #: appl/app.src#GID_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "Documents"
-msgstr ""
+msgstr " Takaddawey"
 
 #: appl/app.src#GID_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit"
-msgstr ""
+msgstr "Fasal"
 
 #: appl/app.src#GID_MACRO.STRING.TEXT
 msgid  "BASIC"
 msgstr ""
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "Fondawey"
 
 #: appl/app.src#GID_MATH.STRING.TEXT
 msgid  "Math"
@@ -1900,48 +1868,56 @@ msgid  "Navigate"
 msgstr ""
 
 #: appl/app.src#GID_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr " Daŋ"
 
 #: appl/app.src#GID_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "Kaddasu fasalyan"
 
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
 msgid  "Templates"
 msgstr ""
 
 #: appl/app.src#GID_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "Cawhaya"
 
 #: appl/app.src#GID_FRAME.STRING.TEXT
+#, fuzzy
 msgid  "Frame"
-msgstr ""
+msgstr "Frame"
 
 #: appl/app.src#GID_GRAPHIC.STRING.TEXT
+#, fuzzy
 msgid  "Graphic"
 msgstr ""
 
 #: appl/app.src#GID_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "Taabal / Daarumi"
 
 #: appl/app.src#GID_ENUMERATION.STRING.TEXT
 msgid  "Numbering"
 msgstr ""
 
 #: appl/app.src#GID_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Data"
-msgstr ""
+msgstr "Tiira alhabar / Bayhayey"
 
 #: appl/app.src#GID_SPECIAL.STRING.TEXT
 msgid  "Special Functions"
 msgstr ""
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
+#, fuzzy
 msgid  "Image"
-msgstr ""
+msgstr "Bii"
 
 #: appl/app.src#GID_CHART.STRING.TEXT
 msgid  "Chart"
@@ -1956,8 +1932,9 @@ msgid  "Connector"
 msgstr ""
 
 #: appl/app.src#GID_MODIFY.STRING.TEXT
+#, fuzzy
 msgid  "Modify"
-msgstr ""
+msgstr "Barmay"
 
 #: appl/app.src#GID_DRAWING.STRING.TEXT
 msgid  "Drawing"
@@ -1965,10 +1942,6 @@ msgstr ""
 
 #: appl/app.src#GID_CONTROLS.STRING.TEXT
 msgid  "Controls"
-msgstr ""
-
-#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
-msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
 msgstr ""
 
 #: appl/app.src#STR_ISMODIFIED.STRING.TEXT
@@ -1980,8 +1953,9 @@ msgid  "E~xit"
 msgstr ""
 
 #: appl/app.src#RID_STR_HELP.STRING.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "Faaba"
 
 #: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
 msgid  "No automatic start at 'XX'"
@@ -2032,8 +2006,9 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
+#, fuzzy
 msgid  "File"
-msgstr ""
+msgstr "Tiira"
 
 #: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
 msgid  "Startcenter"
@@ -2055,20 +2030,8 @@ msgstr ""
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr ""
 
-#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
-msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
-
 #: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
 msgid  "Security Warning"
-msgstr ""
-
-#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
-msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
-
-#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
 msgstr ""
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
@@ -2079,25 +2042,19 @@ msgstr ""
 msgid  " (Signed)"
 msgstr ""
 
-#: appl/app.src#STR_STANDARD.STRING.TEXT
-msgid  "Standard"
-msgstr ""
-
 #: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr " Takaddawey"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
 msgid  "- None -"
 msgstr ""
 
-#: appl/app.src#RID_SVXSTR_GRAFIKLINK.STRING.TEXT
-msgid  "Graphic"
-msgstr ""
-
 #: appl/app.src#STR_SFX_FILTERNAME_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All files (*.*)"
-msgstr ""
+msgstr " Tiirawey kul (*.*)"
 
 #: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
 msgid  "Link graphics"
@@ -2132,36 +2089,42 @@ msgid  "Not enough memory to insert graphic"
 msgstr ""
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Contents"
-msgstr ""
+msgstr " Tiira kunahere"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Index"
-msgstr ""
+msgstr "Maa-boŋ"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Find"
-msgstr ""
+msgstr "Guna"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Bookmarks"
-msgstr ""
+msgstr " Šilbawey"
 
 #: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
 msgid  "~Search term"
 msgstr ""
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Display"
-msgstr ""
+msgstr "Maršin-diji"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
 msgid  "S~earch term"
 msgstr ""
 
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
-msgstr ""
+msgstr "Guna"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
 msgid  "~Complete words only"
@@ -2171,17 +2134,10 @@ msgstr ""
 msgid  "Find in ~headings only"
 msgstr ""
 
-#: appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PUSHBUTTON.TEXT
-msgid  "~Display"
-msgstr ""
-
 #: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Bookmarks"
-msgstr ""
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PUSHBUTTON.TEXT
-msgid  "~Display"
-msgstr ""
+msgstr " Šilbawey"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
 msgid  "%PRODUCTNAME Help"
@@ -2208,8 +2164,9 @@ msgid  "Next Page"
 msgstr ""
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
+#, fuzzy
 msgid  "Print..."
-msgstr ""
+msgstr "  Hantum"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
 msgid  "Add to Bookmarks..."
@@ -2240,24 +2197,27 @@ msgid  "Add to Bookmarks"
 msgstr ""
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bookmark:"
-msgstr ""
+msgstr " Šilbawey"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
 msgid  "Rename Bookmark"
 msgstr ""
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Display"
-msgstr ""
+msgstr "Maršin-diji"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
 msgid  "Rename..."
 msgstr ""
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "Tuusu"
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
 msgid  "No topics found."

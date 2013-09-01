@@ -32,8 +32,9 @@ msgstr ""
 
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.ITEM1.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Greek"
-msgstr ""
+msgstr " Grek"
 
 #: symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.ITEM2.ITEMLIST.ITEM
 msgid  "Special"
@@ -448,10 +449,12 @@ msgid  "Is Orthogonal To"
 msgstr ""
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Is Less Than Or Equal To"
 msgstr ""
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Is Greater Than Or Equal To"
 msgstr ""
 
@@ -461,14 +464,6 @@ msgstr ""
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQUIVY.TOOLBOXITEM.TEXT
 msgid  "Is Congruent To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLEY.TOOLBOXITEM.TEXT
-msgid  "Is Less Than Or Equal To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGEY.TOOLBOXITEM.TEXT
-msgid  "Is Greater Than Or Equal To"
 msgstr ""
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPROPY.TOOLBOXITEM.TEXT
@@ -580,15 +575,12 @@ msgid  "Complex Numbers Set"
 msgstr ""
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EX.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Exponential Function"
 msgstr ""
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LNX.TOOLBOXITEM.TEXT
 msgid  "Natural Logarithm"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EXPX.TOOLBOXITEM.TEXT
-msgid  "Exponential Function"
 msgstr ""
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LOGX.TOOLBOXITEM.TEXT
@@ -748,8 +740,9 @@ msgid  "Breve"
 msgstr ""
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CIRCLEX.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Circle"
-msgstr ""
+msgstr "Windira"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_VECX.TOOLBOXITEM.TEXT
 msgid  "Vector Arrow"
@@ -816,8 +809,9 @@ msgid  "Italic Font"
 msgstr ""
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_SIZEXY.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Resize"
-msgstr ""
+msgstr "Kuuyan nda hayyan hanseyan"
 
 #: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_FONTXY.TOOLBOXITEM.TEXT
 msgid  "Change Font"
@@ -1092,20 +1086,24 @@ msgid  "~Others"
 msgstr ""
 
 #: smres.src#RID_FONTDIALOG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Fonts"
-msgstr ""
+msgstr " Sigirawey"
 
 #: smres.src#RID_FONTDIALOG.1.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Font"
 msgstr ""
 
 #: smres.src#RID_FONTDIALOG.1.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Bold"
-msgstr ""
+msgstr " I gaabanta"
 
 #: smres.src#RID_FONTDIALOG.2.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Italic"
-msgstr ""
+msgstr " Itaaliq"
 
 #: smres.src#RID_FONTDIALOG.2.FIXEDTEXT.TEXT
 msgid  "Attributes"
@@ -1120,14 +1118,16 @@ msgid  "Base ~size"
 msgstr ""
 
 #: smres.src#RID_FONTSIZEDIALOG.4.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Text"
-msgstr ""
+msgstr "Cawhaya"
 
 #: smres.src#RID_FONTSIZEDIALOG.5.FIXEDTEXT.TEXT
 msgid  "~Indexes"
 msgstr ""
 
 #: smres.src#RID_FONTSIZEDIALOG.6.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Functions"
 msgstr ""
 
@@ -1144,11 +1144,8 @@ msgid  "Relative sizes"
 msgstr ""
 
 #: smres.src#RID_FONTSIZEDIALOG.1.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Default"
-msgstr ""
-
-#: smres.src#RID_FONTTYPEDIALOG.MODALDIALOG.TEXT
-msgid  "Fonts"
 msgstr ""
 
 #: smres.src#RID_FONTTYPEDIALOG.1.FIXEDLINE.TEXT
@@ -1163,16 +1160,8 @@ msgstr ""
 msgid  "~Variables"
 msgstr ""
 
-#: smres.src#RID_FONTTYPEDIALOG.2.FIXEDTEXT.TEXT
-msgid  "~Functions"
-msgstr ""
-
 #: smres.src#RID_FONTTYPEDIALOG.3.FIXEDTEXT.TEXT
 msgid  "~Numbers"
-msgstr ""
-
-#: smres.src#RID_FONTTYPEDIALOG.4.FIXEDTEXT.TEXT
-msgid  "~Text"
 msgstr ""
 
 #: smres.src#RID_FONTTYPEDIALOG.5.FIXEDTEXT.TEXT
@@ -1188,35 +1177,22 @@ msgid  "F~ixed"
 msgstr ""
 
 #: smres.src#RID_FONTTYPEDIALOG.1.MENUBUTTON.TEXT
+#, fuzzy
 msgid  "~Modify"
 msgstr ""
 
-#: smres.src#RID_FONTTYPEDIALOG.2.PUSHBUTTON.TEXT
-msgid  "~Default"
-msgstr ""
-
 #: smres.src#RID_DISTANCEDIALOG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Spacing"
 msgstr ""
 
 #: smres.src#RID_DISTANCEDIALOG.1.METRICFIELD.CUSTOMUNITTEXT
-msgid  "%"
-msgstr ""
-
-#: smres.src#RID_DISTANCEDIALOG.2.METRICFIELD.CUSTOMUNITTEXT
+#, fuzzy
 msgid  "%"
 msgstr ""
 
 #: smres.src#RID_DISTANCEDIALOG.1.CHECKBOX.TEXT
 msgid  "Scale all brackets"
-msgstr ""
-
-#: smres.src#RID_DISTANCEDIALOG.3.METRICFIELD.CUSTOMUNITTEXT
-msgid  "%"
-msgstr ""
-
-#: smres.src#RID_DISTANCEDIALOG.1.PUSHBUTTON.TEXT
-msgid  "~Default"
 msgstr ""
 
 #: smres.src#RID_DISTANCEDIALOG.1.MENUBUTTON.TEXT
@@ -1227,15 +1203,13 @@ msgstr ""
 msgid  "Category"
 msgstr ""
 
-#: smres.src#RID_DISTANCEDIALOG.1.1.STRING.TEXT
-msgid  "Spacing"
-msgstr ""
-
 #: smres.src#RID_DISTANCEDIALOG.1.2.STRING.TEXT
+#, fuzzy
 msgid  "~Spacing"
 msgstr ""
 
 #: smres.src#RID_DISTANCEDIALOG.1.3.STRING.TEXT
+#, fuzzy
 msgid  "~Line spacing"
 msgstr ""
 
@@ -1244,6 +1218,7 @@ msgid  "~Root spacing"
 msgstr ""
 
 #: smres.src#RID_DISTANCEDIALOG.2.1.STRING.TEXT
+#, fuzzy
 msgid  "Indexes"
 msgstr ""
 
@@ -1256,6 +1231,7 @@ msgid  "S~ubscript"
 msgstr ""
 
 #: smres.src#RID_DISTANCEDIALOG.3.1.STRING.TEXT
+#, fuzzy
 msgid  "Fractions"
 msgstr ""
 
@@ -1280,6 +1256,7 @@ msgid  "~Weight"
 msgstr ""
 
 #: smres.src#RID_DISTANCEDIALOG.5.1.STRING.TEXT
+#, fuzzy
 msgid  "Limits"
 msgstr ""
 
@@ -1292,6 +1269,7 @@ msgid  "~Lower limit"
 msgstr ""
 
 #: smres.src#RID_DISTANCEDIALOG.6.1.STRING.TEXT
+#, fuzzy
 msgid  "Brackets"
 msgstr ""
 
@@ -1299,11 +1277,8 @@ msgstr ""
 msgid  "~Excess size (left/right)"
 msgstr ""
 
-#: smres.src#RID_DISTANCEDIALOG.6.3.STRING.TEXT
-msgid  "~Spacing"
-msgstr ""
-
 #: smres.src#RID_DISTANCEDIALOG.6.5.STRING.TEXT
+#, fuzzy
 msgid  "~Excess size"
 msgstr ""
 
@@ -1311,15 +1286,12 @@ msgstr ""
 msgid  "Matrix"
 msgstr ""
 
-#: smres.src#RID_DISTANCEDIALOG.7.2.STRING.TEXT
-msgid  "~Line spacing"
-msgstr ""
-
 #: smres.src#RID_DISTANCEDIALOG.7.3.STRING.TEXT
 msgid  "~Column spacing"
 msgstr ""
 
 #: smres.src#RID_DISTANCEDIALOG.8.1.STRING.TEXT
+#, fuzzy
 msgid  "Symbols"
 msgstr ""
 
@@ -1332,26 +1304,22 @@ msgid  "~Minimum spacing"
 msgstr ""
 
 #: smres.src#RID_DISTANCEDIALOG.9.1.STRING.TEXT
+#, fuzzy
 msgid  "Operators"
 msgstr ""
 
-#: smres.src#RID_DISTANCEDIALOG.9.2.STRING.TEXT
-msgid  "~Excess size"
-msgstr ""
-
-#: smres.src#RID_DISTANCEDIALOG.9.3.STRING.TEXT
-msgid  "~Spacing"
-msgstr ""
-
 #: smres.src#RID_DISTANCEDIALOG.10.1.STRING.TEXT
+#, fuzzy
 msgid  "Borders"
 msgstr ""
 
 #: smres.src#RID_DISTANCEDIALOG.10.2.STRING.TEXT
+#, fuzzy
 msgid  "~Left"
 msgstr ""
 
 #: smres.src#RID_DISTANCEDIALOG.10.3.STRING.TEXT
+#, fuzzy
 msgid  "~Right"
 msgstr ""
 
@@ -1367,24 +1335,12 @@ msgstr ""
 msgid  "Alignment"
 msgstr ""
 
-#: smres.src#RID_ALIGNDIALOG.1.RADIOBUTTON.TEXT
-msgid  "~Left"
-msgstr ""
-
 #: smres.src#RID_ALIGNDIALOG.2.RADIOBUTTON.TEXT
 msgid  "~Centered"
 msgstr ""
 
-#: smres.src#RID_ALIGNDIALOG.3.RADIOBUTTON.TEXT
-msgid  "~Right"
-msgstr ""
-
 #: smres.src#RID_ALIGNDIALOG.1.FIXEDLINE.TEXT
 msgid  "Horizontal"
-msgstr ""
-
-#: smres.src#RID_ALIGNDIALOG.1.PUSHBUTTON.TEXT
-msgid  "~Default"
 msgstr ""
 
 #: smres.src#RID_PRINTOPTIONPAGE.TABPAGE.TEXT
@@ -1392,14 +1348,16 @@ msgid  "Formula Options:Settings"
 msgstr ""
 
 #: smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Print options"
-msgstr ""
+msgstr " Hantumandiyaŋ fondawey..."
 
 #: smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.CHECKBOX.TEXT
 msgid  "~Title row"
 msgstr ""
 
 #: smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Formula text"
 msgstr ""
 
@@ -1412,14 +1370,17 @@ msgid  "Print format"
 msgstr ""
 
 #: smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "O~riginal size"
 msgstr ""
 
 #: smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Fit to ~page"
 msgstr ""
 
 #: smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Scaling"
 msgstr ""
 
@@ -1433,10 +1394,6 @@ msgstr ""
 
 #: smres.src#RID_PRINTOPTIONPAGE.CB_SAVE_ONLY_USED_SYMBOLS.CHECKBOX.TEXT
 msgid  "Embed only used symbols (smaller file size)"
-msgstr ""
-
-#: smres.src#RID_SYMBOLDIALOG.MODALDIALOG.TEXT
-msgid  "Symbols"
 msgstr ""
 
 #: smres.src#RID_SYMBOLDIALOG.1.FIXEDTEXT.TEXT
@@ -1479,10 +1436,6 @@ msgstr ""
 msgid  "Symbol s~et"
 msgstr ""
 
-#: smres.src#RID_SYMDEFINEDIALOG.3.FIXEDTEXT.TEXT
-msgid  "~Font"
-msgstr ""
-
 #: smres.src#RID_SYMDEFINEDIALOG.FT_FONTS_SUBSET.FIXEDTEXT.TEXT
 msgid  "~Subset"
 msgstr ""
@@ -1495,20 +1448,8 @@ msgstr ""
 msgid  "~Add"
 msgstr ""
 
-#: smres.src#RID_SYMDEFINEDIALOG.2.PUSHBUTTON.TEXT
-msgid  "~Modify"
-msgstr ""
-
 #: smres.src#RID_SYMDEFINEDIALOG.3.PUSHBUTTON.TEXT
 msgid  "~Delete"
-msgstr ""
-
-#: smres.src#RID_NOMATHTYPEFACEWARNING.WARNINGBOX.MESSAGE
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
-
-#: smres.src#RID_DEFAULTSAVEQUERY.QUERYBOX.MESSAGE
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
 msgstr ""
 
 #: smres.src#RID_FONTREGULAR.STRING.TEXT
@@ -1516,12 +1457,14 @@ msgid  "Standard"
 msgstr ""
 
 #: smres.src#RID_FONTITALIC.STRING.TEXT
+#, fuzzy
 msgid  "Italic"
-msgstr ""
+msgstr " Itaaliq"
 
 #: smres.src#RID_FONTBOLD.STRING.TEXT
+#, fuzzy
 msgid  "Bold"
-msgstr ""
+msgstr " I gaabanta"
 
 #: smres.src#RID_VIEWMENU.SID_VIEW050.MENUITEM.TEXT
 msgid  "~View 50%"
@@ -1551,44 +1494,12 @@ msgstr ""
 msgid  "U~pdate"
 msgstr ""
 
-#: smres.src#RID_DISTANCEMENU.WORKARROUND_1.MENUITEM.TEXT
-msgid  "Spacing"
-msgstr ""
-
-#: smres.src#RID_DISTANCEMENU.2.MENUITEM.TEXT
-msgid  "Indexes"
-msgstr ""
-
-#: smres.src#RID_DISTANCEMENU.WORKARROUND_3.MENUITEM.TEXT
-msgid  "Fractions"
-msgstr ""
-
 #: smres.src#RID_DISTANCEMENU.4.MENUITEM.TEXT
 msgid  "Fraction Bars"
 msgstr ""
 
-#: smres.src#RID_DISTANCEMENU.5.MENUITEM.TEXT
-msgid  "Limits"
-msgstr ""
-
-#: smres.src#RID_DISTANCEMENU.6.MENUITEM.TEXT
-msgid  "Brackets"
-msgstr ""
-
 #: smres.src#RID_DISTANCEMENU.7.MENUITEM.TEXT
 msgid  "Matrices"
-msgstr ""
-
-#: smres.src#RID_DISTANCEMENU.8.MENUITEM.TEXT
-msgid  "Symbols"
-msgstr ""
-
-#: smres.src#RID_DISTANCEMENU.9.MENUITEM.TEXT
-msgid  "Operators"
-msgstr ""
-
-#: smres.src#RID_DISTANCEMENU.WORKARROUND_10.MENUITEM.TEXT
-msgid  "Borders"
 msgstr ""
 
 #: smres.src#RID_FONTMENU.1.MENUITEM.TEXT
@@ -1604,8 +1515,9 @@ msgid  "Numbers"
 msgstr ""
 
 #: smres.src#RID_FONTMENU.4.MENUITEM.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "Cawhaya"
 
 #: smres.src#RID_FONTMENU.5.MENUITEM.TEXT
 msgid  "Serif"
@@ -1735,26 +1647,10 @@ msgstr ""
 msgid  "~Title"
 msgstr ""
 
-#: smres.src#RID_PRINTUIOPTIONS.ITEM4.ITEMLIST.ITEM
-msgid  "~Formula text"
-msgstr ""
-
 #: smres.src#RID_PRINTUIOPTIONS.ITEM5.ITEMLIST.ITEM
 msgid  "B~orders"
 msgstr ""
 
 #: smres.src#RID_PRINTUIOPTIONS.ITEM6.ITEMLIST.ITEM
 msgid  "Size"
-msgstr ""
-
-#: smres.src#RID_PRINTUIOPTIONS.ITEM7.ITEMLIST.ITEM
-msgid  "O~riginal size"
-msgstr ""
-
-#: smres.src#RID_PRINTUIOPTIONS.ITEM8.ITEMLIST.ITEM
-msgid  "Fit to ~page"
-msgstr ""
-
-#: smres.src#RID_PRINTUIOPTIONS.ITEM9.ITEMLIST.ITEM
-msgid  "~Scaling"
 msgstr ""

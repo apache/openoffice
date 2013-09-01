@@ -41,7 +41,7 @@ msgstr ""
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.STRING.TEXT
 msgid  "Date modified"
-msgstr ""
+msgstr "Өзгерту мезгiлi"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.STRING.TEXT
 msgid  "Type"
@@ -49,23 +49,23 @@ msgstr ""
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.STRING.TEXT
 msgid  "Could not create the folder %1."
-msgstr ""
+msgstr "%1 буманы жасауға мүмкiндiк жоқ."
 
 #: contnr/fileview.src#STR_SVT_BYTES.STRING.TEXT
 msgid  "Bytes"
-msgstr ""
+msgstr "байт"
 
 #: contnr/fileview.src#STR_SVT_KB.STRING.TEXT
 msgid  "KB"
-msgstr ""
+msgstr "Кб"
 
 #: contnr/fileview.src#STR_SVT_MB.STRING.TEXT
 msgid  "MB"
-msgstr ""
+msgstr "Мб"
 
 #: contnr/fileview.src#STR_SVT_GB.STRING.TEXT
 msgid  "GB"
-msgstr ""
+msgstr "Гб"
 
 #: contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.MENUITEM.TEXT
 msgid  "~Delete"
@@ -73,91 +73,87 @@ msgstr ""
 
 #: contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.MENUITEM.TEXT
 msgid  "~Rename"
-msgstr ""
+msgstr "~Атын өзгерту "
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.MODALDIALOG.TEXT
 msgid  "Confirm Delete"
-msgstr ""
+msgstr "Жоюны растату"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_ENTRY.FIXEDTEXT.TEXT
 msgid  "Entry:"
-msgstr ""
+msgstr "Элементi:"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.FIXEDTEXT.TEXT
 msgid  "Are you sure you want to delete the selected data?"
-msgstr ""
-
-#: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr ""
+msgstr "Таңдалған деректердi Сiз жойғыңыз келедi ме?"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.PUSHBUTTON.TEXT
 msgid  "Delete ~All"
-msgstr ""
+msgstr "~Барлығын жою"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_NO.PUSHBUTTON.TEXT
 msgid  "Do ~Not Delete"
-msgstr ""
+msgstr "~Жоймау"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_TABLISTBOX.STRING.TEXT
 msgid  "Row: %1, Column: %2"
-msgstr ""
+msgstr "Қатары: %1 Бағаны: %2"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FILEVIEW.STRING.TEXT
 msgid  ", Type: %1, URL: %2"
-msgstr ""
+msgstr ", Түрi: %1, URL: %2"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FOLDER.STRING.TEXT
 msgid  "Folder"
-msgstr ""
+msgstr "Топтама"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FILE.STRING.TEXT
 msgid  "File"
-msgstr ""
+msgstr "Файл"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_EMPTY_FIELD.STRING.TEXT
 msgid  "Empty Field"
-msgstr ""
+msgstr "Бос өрiс"
 
 #: contnr/templwin.src#STR_SVT_NEWDOC.STRING.TEXT
 msgid  "New Document"
-msgstr ""
+msgstr "Құжатты жасау"
 
 #: contnr/templwin.src#STR_SVT_MYDOCS.STRING.TEXT
 msgid  "My Documents"
-msgstr ""
+msgstr "Менiң құжаттарым"
 
 #: contnr/templwin.src#STR_SVT_TEMPLATES.STRING.TEXT
 msgid  "Templates"
-msgstr ""
+msgstr "Қалыптар"
 
 #: contnr/templwin.src#STR_SVT_SAMPLES.STRING.TEXT
 msgid  "Samples"
-msgstr ""
+msgstr "Мысалдар"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_BACK.TOOLBOXITEM.TEXT
 msgid  "Back"
-msgstr ""
+msgstr "Керi"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PREV.TOOLBOXITEM.TEXT
 msgid  "Up One Level"
-msgstr ""
+msgstr "Деңгейiмен жоғары"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PRINT.TOOLBOXITEM.TEXT
 msgid  "Print"
-msgstr ""
+msgstr "Баспа"
 
 #: contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_DOCINFO.TOOLBOXITEM.TEXT
 msgid  "Document Properties"
-msgstr ""
+msgstr "Құжатың қасиеттерi"
 
 #: contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_PREVIEW.TOOLBOXITEM.TEXT
 msgid  "Preview"
-msgstr ""
+msgstr "Алдын-ала көрiп шығу"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.MODALDIALOG.TEXT
 msgid  "Templates and Documents"
-msgstr ""
+msgstr "Қалыптар мен құжаттар"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.FT_DOCTEMPLATE_LINK.FIXEDTEXT.TEXT
 msgid  "~Get more templates online..."
@@ -165,15 +161,15 @@ msgstr ""
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_MANAGE.PUSHBUTTON.TEXT
 msgid  "Organi~ze..."
-msgstr ""
+msgstr "~Басқару"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_EDIT.PUSHBUTTON.TEXT
 msgid  "~Edit"
-msgstr ""
+msgstr "~Өзгерту"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_OPEN.OKBUTTON.TEXT
 msgid  "~Open"
-msgstr ""
+msgstr "~Ашу"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_TITLE.ITEMLIST.ITEM
 msgid  "Title"
@@ -181,19 +177,19 @@ msgstr ""
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_FROM.ITEMLIST.ITEM
 msgid  "By"
-msgstr ""
+msgstr "Автор"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DATE.ITEMLIST.ITEM
 msgid  "Date"
-msgstr ""
+msgstr "Мезгiлi"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_KEYWORDS.ITEMLIST.ITEM
 msgid  "Keywords"
-msgstr ""
+msgstr "Кiлттi сөздер"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DESCRIPTION.ITEMLIST.ITEM
 msgid  "Description"
-msgstr ""
+msgstr "Сипаттамасы"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MIMETYPE.ITEMLIST.ITEM
 msgid  "Type"
@@ -201,23 +197,23 @@ msgstr ""
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDDATE.ITEMLIST.ITEM
 msgid  "Modified on"
-msgstr ""
+msgstr "Өзгерту мезгiлi"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDBY.ITEMLIST.ITEM
 msgid  "Modified by"
-msgstr ""
+msgstr "Өзгертiлген"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTDATE.ITEMLIST.ITEM
 msgid  "Printed on"
-msgstr ""
+msgstr "Баспадан шығару мезгiлi"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTBY.ITEMLIST.ITEM
 msgid  "Printed by"
-msgstr ""
+msgstr "Баспадан шығарылған"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_THEME.ITEMLIST.ITEM
 msgid  "Subject"
-msgstr ""
+msgstr "Тақырыбы"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_SIZE.ITEMLIST.ITEM
 msgid  "Size"
@@ -225,39 +221,39 @@ msgstr ""
 
 #: contnr/templwin.src#STR_SVT_NEWDOC_HELP.STRING.TEXT
 msgid  "Click here to create new documents."
-msgstr ""
+msgstr "Жаңа құжатты жасау үшiн өсерде шертiңiз"
 
 #: contnr/templwin.src#STR_SVT_MYDOCS_HELP.STRING.TEXT
 msgid  "Contains your letters, reports and other documents"
-msgstr ""
+msgstr "Сiздiң хаттарыңыз, есептердi және басқа құжаттар бар."
 
 #: contnr/templwin.src#STR_SVT_TEMPLATES_HELP.STRING.TEXT
 msgid  "Contains templates for creating new documents"
-msgstr ""
+msgstr "Жаңа құжаттарды жасау қалыптары бар."
 
 #: contnr/templwin.src#STR_SVT_SAMPLES_HELP.STRING.TEXT
 msgid  "Contains a selection of sample letters, reports and other documents"
-msgstr ""
+msgstr "Үлгi хаттардың, мәлiмдемелер және басқа құжаттар таңдауы бар.\n"
 
 #: control/calendar.src#STR_SVT_CALENDAR_DAY.STRING.TEXT
 msgid  "Day"
-msgstr ""
+msgstr "Күнi"
 
 #: control/calendar.src#STR_SVT_CALENDAR_WEEK.STRING.TEXT
 msgid  "Week"
-msgstr ""
+msgstr "Аптасы"
 
 #: control/calendar.src#STR_SVT_CALENDAR_TODAY.STRING.TEXT
 msgid  "Today"
-msgstr ""
+msgstr "Бүгiн"
 
 #: control/calendar.src#STR_SVT_CALENDAR_NONE.STRING.TEXT
 msgid  "None"
-msgstr ""
+msgstr "Бос"
 
 #: control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.STRING.TEXT
 msgid  "Automatic"
-msgstr ""
+msgstr "Өздiктiк"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.STRING.TEXT
 msgid  "Alphanumeric"
@@ -265,11 +261,11 @@ msgstr ""
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_NORMAL.STRING.TEXT
 msgid  "Normal"
-msgstr ""
+msgstr "Қалыпты"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_CHARSET.STRING.TEXT
 msgid  "Character set"
-msgstr ""
+msgstr "Кодтауы"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.STRING.TEXT
 msgid  "Dictionary"
@@ -289,7 +285,7 @@ msgstr ""
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_UNICODE.STRING.TEXT
 msgid  "Unicode"
-msgstr ""
+msgstr "Юникоды"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.STRING.TEXT
 msgid  "Zhuyin"
@@ -297,115 +293,91 @@ msgstr ""
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONEBOOK.STRING.TEXT
 msgid  "Phone book"
-msgstr ""
+msgstr "Сымтетiктер кiтапшасы"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_F.STRING.TEXT
 msgid  "Phonetic (alphanumeric first)"
-msgstr ""
+msgstr "Фонетикалық (бiрiншi әлiпбилiк-цифрлiк)\n"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.STRING.TEXT
 msgid  "Phonetic (alphanumeric last)"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.STRING.TEXT
-msgid  "Alphanumeric"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.STRING.TEXT
-msgid  "Dictionary"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.STRING.TEXT
-msgid  "Pinyin"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.STRING.TEXT
-msgid  "Radical"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.STRING.TEXT
-msgid  "Stroke"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.STRING.TEXT
-msgid  "Zhuyin"
-msgstr ""
+msgstr "Фонетикалық (соңғы әлiпбилiк-цифрлiк)\n"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.STRING.TEXT
 msgid  "Phonetic (alphanumeric first, grouped by syllables)"
-msgstr ""
+msgstr "Фонетикалық (бiрiншi әлiпбилiк-цифрлiк, буындар бойынша топтастырылған)\n"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FC.STRING.TEXT
 msgid  "Phonetic (alphanumeric first, grouped by consonants)"
-msgstr ""
+msgstr "Фонетикалық (әлiпбилiк-цифрлiк, буындар бойынша топтастырылған)"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LS.STRING.TEXT
 msgid  "Phonetic (alphanumeric last, grouped by syllables)"
-msgstr ""
+msgstr "Фонетикалық (әлiпбилiк-цифрлiк, буындар бойынша топтастырылған)"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LC.STRING.TEXT
 msgid  "Phonetic (alphanumeric last, grouped by consonants)"
-msgstr ""
+msgstr "Фонетикалық (әлiпбилiк-цифрлiк, буындар бойынша топтастырылған)"
 
 #: control/ctrltool.src#STR_SVT_STYLE_LIGHT.STRING.TEXT
 msgid  "Light"
-msgstr ""
+msgstr "Жұқа"
 
 #: control/ctrltool.src#STR_SVT_STYLE_LIGHT_ITALIC.STRING.TEXT
 msgid  "Light Italic"
-msgstr ""
+msgstr "Жұқа қиғаш"
 
 #: control/ctrltool.src#STR_SVT_STYLE_NORMAL.STRING.TEXT
 msgid  "Regular"
-msgstr ""
+msgstr "Кәдiмгi"
 
 #: control/ctrltool.src#STR_SVT_STYLE_NORMAL_ITALIC.STRING.TEXT
 msgid  "Italic"
-msgstr ""
+msgstr "Қиғаш"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BOLD.STRING.TEXT
 msgid  "Bold"
-msgstr ""
+msgstr "Қалын"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BOLD_ITALIC.STRING.TEXT
 msgid  "Bold Italic"
-msgstr ""
+msgstr "Қалын қиғаш"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BLACK.STRING.TEXT
 msgid  "Black"
-msgstr ""
+msgstr "Қара"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BLACK_ITALIC.STRING.TEXT
 msgid  "Black Italic"
-msgstr ""
+msgstr "Қара қиғаш"
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_BOTH.STRING.TEXT
 msgid  "The same font will be used on both your printer and your screen."
-msgstr ""
+msgstr "Баспа және бейне бетiне шығуына тура сол қарiп қолданылады."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_PRINTERONLY.STRING.TEXT
 msgid  "This is a printer font. The screen image may differ."
-msgstr ""
+msgstr "Баспа құрылғысының қарiпi. Бейнелеуi  бейне бетiнде басқаша болуы мүмкiн."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_SCREENONLY.STRING.TEXT
 msgid  "This is a screen font. The printer image may differ."
-msgstr ""
+msgstr "Экранның қарiпi. Баспадан шығару барысында айырмашылықтары болуы мүмкiн."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.STRING.TEXT
 msgid  "This font size has not been installed. The closest available size will be used."
-msgstr ""
+msgstr "Осындай қарiптiң өлшемi орнатылмаған. Ең ұқсас өлшемi қолданылады."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.STRING.TEXT
 msgid  "This font style will be simulated or the closest matching style will be used."
-msgstr ""
+msgstr "Осындай қарiптер мәнерi құрастырылады немесе ең ұқсасы қолданылады."
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.STRING.TEXT
 msgid  "This font has not been installed. The closest available font will be used."
-msgstr ""
+msgstr "Бұл қарiп орнатылмаған.  Ең ұқсасы қолданылады."
 
 #: control/filectrl.src#STR_FILECTRL_BUTTONTEXT.STRING.TEXT
 msgid  "Browse..."
-msgstr ""
+msgstr "Шолу..."
 
 #: control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVET0HOME.STRING.TEXT
 msgid  "Move To Home"
@@ -425,331 +397,331 @@ msgstr ""
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.MODALDIALOG.TEXT
 msgid  "Templates: Address Book Assignment"
-msgstr ""
+msgstr "Қалыптар: мекен-жай кiтапшасының тағайындалуы"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FIXEDLINE.TEXT
 msgid  "Address Book Source"
-msgstr ""
+msgstr "Мекен-жай кiтап деректерiнiң көзi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FIXEDTEXT.TEXT
 msgid  "Data source"
-msgstr ""
+msgstr "Деректер көзi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PUSHBUTTON.TEXT
 msgid  "~Address Data Source..."
-msgstr ""
+msgstr "~Басқару..."
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FIXEDTEXT.TEXT
 msgid  "Table"
-msgstr ""
+msgstr "Кесте"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FIXEDTEXT.TEXT
 msgid  "Field assignment"
-msgstr ""
+msgstr "Өрiстердiң тағайындауы"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.STRING.TEXT
 msgid  "<none>"
-msgstr ""
+msgstr "<жоқ>"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.STRING.TEXT
 msgid  "Company"
-msgstr ""
+msgstr "Мекеме"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.STRING.TEXT
 msgid  "Department"
-msgstr ""
+msgstr "Бөлiм"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.STRING.TEXT
 msgid  "First name"
-msgstr ""
+msgstr "Аты"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.STRING.TEXT
 msgid  "Last name"
-msgstr ""
+msgstr "Аты-жөнi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.STRING.TEXT
 msgid  "Street"
-msgstr ""
+msgstr "Көшесi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.STRING.TEXT
 msgid  "Country"
-msgstr ""
+msgstr "Елi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.STRING.TEXT
 msgid  "ZIP Code"
-msgstr ""
+msgstr "Пошталық индексi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.STRING.TEXT
 msgid  "City"
-msgstr ""
+msgstr "Қаласы"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.STRING.TEXT
 msgid  "Title"
-msgstr ""
+msgstr "Дәрежесi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.STRING.TEXT
 msgid  "Position"
-msgstr ""
+msgstr "Қызметi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.STRING.TEXT
 msgid  "Addr. Form"
-msgstr ""
+msgstr "Қаратпа сөз"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.STRING.TEXT
 msgid  "Initials"
-msgstr ""
+msgstr "Әрiпесiмдер"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.STRING.TEXT
 msgid  "Complimentary close"
-msgstr ""
+msgstr "Сәлемдесу"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.STRING.TEXT
 msgid  "Tel: Home"
-msgstr ""
+msgstr "Сымтетiгi (үй.)"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.STRING.TEXT
 msgid  "Tel: Work"
-msgstr ""
+msgstr "Сымтетiгi (жұмыс.)"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.STRING.TEXT
 msgid  "FAX"
-msgstr ""
+msgstr "Факсi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.STRING.TEXT
 msgid  "E-mail"
-msgstr ""
+msgstr "Электрондық пошта"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.STRING.TEXT
 msgid  "URL"
-msgstr ""
+msgstr "URL"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.STRING.TEXT
 msgid  "Note"
-msgstr ""
+msgstr "Ескертпе"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.STRING.TEXT
 msgid  "User 1"
-msgstr ""
+msgstr "1 пайдаланушы"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.STRING.TEXT
 msgid  "User 2"
-msgstr ""
+msgstr "2 пайдаланушы"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.STRING.TEXT
 msgid  "User 3"
-msgstr ""
+msgstr "3 пайдаланушы"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.STRING.TEXT
 msgid  "User 4"
-msgstr ""
+msgstr "4 пайдаланушы"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.STRING.TEXT
 msgid  "ID"
-msgstr ""
+msgstr "Жалпылауыш"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.STRING.TEXT
 msgid  "State"
-msgstr ""
+msgstr "Облысы"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.STRING.TEXT
 msgid  "Tel: Office"
-msgstr ""
+msgstr "Телефон (жұм.)"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.STRING.TEXT
 msgid  "Pager"
-msgstr ""
+msgstr "Пейджер"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.STRING.TEXT
 msgid  "Mobile"
-msgstr ""
+msgstr "Ұялы сымтетiк"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.STRING.TEXT
 msgid  "Tel: Other"
-msgstr ""
+msgstr "Сымтетiгi (басқа)"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.STRING.TEXT
 msgid  "Calendar"
-msgstr ""
+msgstr "Күнтізбек"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.STRING.TEXT
 msgid  "Invite"
-msgstr ""
+msgstr "Шақыру"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_SELECT.STRING.TEXT
 msgid  "Select Directory"
-msgstr ""
+msgstr "Топтаманы таңдау"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.STRING.TEXT
 msgid  "Cannot change to directory"
-msgstr ""
+msgstr "Топтаманы өзгертуге мүмкiндiк жоқ."
 
 #: dialogs/filedlg2.src#STR_FILEDLG_OPEN.STRING.TEXT
 msgid  "Open"
-msgstr ""
+msgstr "Ашу"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_FILE.STRING.TEXT
 msgid  "~File"
-msgstr ""
+msgstr "~Файл"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_DIR.STRING.TEXT
 msgid  "~Directory"
-msgstr ""
+msgstr "~Топтама"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_TYPE.STRING.TEXT
 msgid  "File ~type"
-msgstr ""
+msgstr "Файлдың ~түрi "
 
 #: dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.STRING.TEXT
 msgid  "Can't open file"
-msgstr ""
+msgstr "Файлды ашуға мүмкiндiк жоқ."
 
 #: dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.STRING.TEXT
 msgid  "Can't open directory"
-msgstr ""
+msgstr "Топтаманы ашуға мүмкiндiк жоқ."
 
 #: dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.STRING.TEXT
 msgid  "This file already exists. \nOverwrite ?"
-msgstr ""
+msgstr "Файл бұрынан бар. \n Жаңадан жазу керек пе?"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_GOUP.STRING.TEXT
 msgid  "Up One Level"
-msgstr ""
+msgstr "Деңгейiмен жоғары"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_SAVE.STRING.TEXT
 msgid  "Save"
-msgstr ""
+msgstr "Сақтау"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_DRIVES.STRING.TEXT
 msgid  "D~rive"
-msgstr ""
+msgstr "~Дискi"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_HOME.STRING.TEXT
 msgid  "User Directory"
-msgstr ""
+msgstr "Пайдаланушының топтамасы"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.STRING.TEXT
 msgid  "Create Directory"
-msgstr ""
+msgstr "Топтаманы  ~жасау"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.STRING.TEXT
 msgid  "Do you want the directory %s to be created ?"
-msgstr ""
+msgstr "%s топтаманы жасау керек пе?"
 
 #: dialogs/formats.src#STR_FORMAT_STRING.STRING.TEXT
 msgid  "Unformatted text"
-msgstr ""
+msgstr "Мәтiн пiшiмдеусiз"
 
 #: dialogs/formats.src#STR_FORMAT_BITMAP.STRING.TEXT
 msgid  "Bitmap"
-msgstr ""
+msgstr "Растрлiк бейне"
 
 #: dialogs/formats.src#STR_FORMAT_GDIMETAFILE.STRING.TEXT
 msgid  "GDI metafile"
-msgstr ""
+msgstr "GDI метафайлi"
 
 #: dialogs/formats.src#STR_FORMAT_RTF.STRING.TEXT
 msgid  "Formatted text [RTF]"
-msgstr ""
+msgstr " [RTF] пiшiмiндегi мәтiн"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DRAWING.STRING.TEXT
 msgid  "Drawing format"
-msgstr ""
+msgstr "Суретсалу пiшiмi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SVXB.STRING.TEXT
 msgid  "SVXB (StarView bitmap/animation)"
-msgstr ""
+msgstr "SVXB (StarView растрлiк/Анимация)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.STRING.TEXT
 msgid  "Status Info from Svx Internal Link"
-msgstr ""
+msgstr "Svx iшкi байланыс күйi туралы ақпарат"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SOLK.STRING.TEXT
 msgid  "SOLK (%PRODUCTNAME Link)"
-msgstr ""
+msgstr "SOLK (%PRODUCTNAME сiлтемесi)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.STRING.TEXT
 msgid  "Netscape Bookmark"
-msgstr ""
+msgstr "Netscape бетбелгiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARSERVER.STRING.TEXT
 msgid  "Star server format"
-msgstr ""
+msgstr "Star серверiнiң пiшiмi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.STRING.TEXT
 msgid  "Star object format"
-msgstr ""
+msgstr "Star нысанының пiшiмi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.STRING.TEXT
 msgid  "Applet object"
-msgstr ""
+msgstr "Апплетiнiң нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.STRING.TEXT
 msgid  "Plug-in object"
-msgstr ""
+msgstr "Қосылу модулiнiң нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.STRING.TEXT
 msgid  "StarWriter 3.0 object"
-msgstr ""
+msgstr "StarWriter 3.0 нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.STRING.TEXT
 msgid  "StarWriter 4.0 object"
-msgstr ""
+msgstr "StarWriter 4.0 нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.STRING.TEXT
 msgid  "StarWriter 5.0 object"
-msgstr ""
+msgstr "StarWriter 5.0 нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.STRING.TEXT
 msgid  "StarWriter/Web 4.0 object"
-msgstr ""
+msgstr "StarWriter/Web 4.0 нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.STRING.TEXT
 msgid  "StarWriter/Web 5.0 object"
-msgstr ""
+msgstr "StarWriter/Web 5.0 нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.STRING.TEXT
 msgid  "StarWriter/Master 4.0 object"
-msgstr ""
+msgstr "StarWriter/Master 4.0 нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.STRING.TEXT
 msgid  "StarWriter/Master 5.0 object"
-msgstr ""
+msgstr "StarWriter/Master 5.0 нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW.STRING.TEXT
 msgid  "StarDraw object"
-msgstr ""
+msgstr "StarDraw нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.STRING.TEXT
 msgid  "StarDraw 4.0 object"
-msgstr ""
+msgstr "StarDraw 4.0 нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.STRING.TEXT
 msgid  "StarImpress 5.0 object"
-msgstr ""
+msgstr "StarImpress 5.0 нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.STRING.TEXT
 msgid  "StarDraw 5.0 object"
-msgstr ""
+msgstr "StarDraw 5.0 нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC.STRING.TEXT
 msgid  "StarCalc object"
-msgstr ""
+msgstr "StarCalc нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.STRING.TEXT
 msgid  "StarCalc  4.0 object"
-msgstr ""
+msgstr "StarCalc  4.0 нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.STRING.TEXT
 msgid  "StarCalc 5.0 object"
-msgstr ""
+msgstr "StarCalc 5.0 нысаны"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART.STRING.TEXT
 msgid  "StarChart object"
-msgstr ""
+msgstr "StarChart обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.STRING.TEXT
 msgid  "StarChart 4.0 object"
-msgstr ""
+msgstr "StarChart 4.0 обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.STRING.TEXT
 msgid  "StarChart 5.0 object"
@@ -757,259 +729,255 @@ msgstr ""
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.STRING.TEXT
 msgid  "StarImage object"
-msgstr ""
+msgstr "StarImage обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.STRING.TEXT
 msgid  "StarImage 4.0 object"
-msgstr ""
+msgstr "StarImage 4.0 обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.STRING.TEXT
 msgid  "StarImage 5.0 object"
-msgstr ""
+msgstr "StarImage 5.0 обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH.STRING.TEXT
 msgid  "StarMath object"
-msgstr ""
+msgstr "StarMath обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.STRING.TEXT
 msgid  "StarMath 4.0 object"
-msgstr ""
+msgstr "StarMath 4.0 обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.STRING.TEXT
 msgid  "StarMath 5.0 object"
-msgstr ""
+msgstr "StarMath 5.0 обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.STRING.TEXT
 msgid  "StarObject Paint object"
-msgstr ""
+msgstr "StarObject Paint обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_HTML.STRING.TEXT
 msgid  "HTML (HyperText Markup Language)"
-msgstr ""
+msgstr "HTML (гипермәтiндiк белгiлеу тiлi)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.STRING.TEXT
 msgid  "HTML format"
-msgstr ""
+msgstr "HTML пiшiн"
 
 #: dialogs/formats.src#STR_FORMAT_ID_BIFF_5.STRING.TEXT
 msgid  "Biff5 (Microsoft Excel 5.0/95)"
-msgstr ""
+msgstr "Biff5 (Microsoft Excel 5.0/95)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_BIFF_8.STRING.TEXT
 msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
-msgstr ""
+msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SYLK.STRING.TEXT
 msgid  "Sylk"
-msgstr ""
+msgstr "Sylk"
 
 #: dialogs/formats.src#STR_FORMAT_ID_LINK.STRING.TEXT
 msgid  "DDE link"
-msgstr ""
+msgstr "DDE байланыс"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DIF.STRING.TEXT
 msgid  "DIF"
-msgstr ""
+msgstr "DIF"
 
 #: dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.STRING.TEXT
 msgid  "Microsoft Word object"
-msgstr ""
+msgstr "Microsoft Word обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.STRING.TEXT
 msgid  "StarFrameSet object"
-msgstr ""
+msgstr "StarFrameSet обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.STRING.TEXT
 msgid  "Office document object"
-msgstr ""
+msgstr "Office құжатының обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.STRING.TEXT
 msgid  "Notes document info"
-msgstr ""
+msgstr "Ескерту ақпараты"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.STRING.TEXT
 msgid  "Sfx document"
-msgstr ""
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.STRING.TEXT
-msgid  "StarChart 5.0 object"
-msgstr ""
+msgstr "Sfx құжаты"
 
 #: dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.STRING.TEXT
 msgid  "Graphic object"
-msgstr ""
+msgstr "Графикалық обьектi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 Writer обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 Writer/Web обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 Writer/Master обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 Draw обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 Impress обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 Calc обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 Chart обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 Math обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_WMF.STRING.TEXT
 msgid  "Windows metafile"
-msgstr ""
+msgstr "Windows метафайл"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.STRING.TEXT
 msgid  "Data source object"
-msgstr ""
+msgstr "Бастапқы деректер обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.STRING.TEXT
 msgid  "Data source table"
-msgstr ""
+msgstr "Бастапқы деректер обьектiсi"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.STRING.TEXT
 msgid  "SQL query"
-msgstr ""
+msgstr "SQL сұраныс"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 сұқбат"
 
 #: dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.STRING.TEXT
 msgid  "Link"
-msgstr ""
+msgstr "Сiлтеме"
 
 #: dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.STRING.TEXT
 msgid  "HTML format without comments"
-msgstr ""
+msgstr "HTML пiшiнi түсiндiрмесiз"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_READY.STRING.TEXT
 msgid  "Ready"
-msgstr ""
+msgstr "Дайын"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAUSED.STRING.TEXT
 msgid  "Paused"
-msgstr ""
+msgstr "Тоқтатылған"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PENDING.STRING.TEXT
 msgid  "Pending deletion"
-msgstr ""
+msgstr "Жою кейiнге қалдырылды"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_BUSY.STRING.TEXT
 msgid  "Busy"
-msgstr ""
+msgstr "Бос емес"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_INITIALIZING.STRING.TEXT
 msgid  "Initializing"
-msgstr ""
+msgstr "Бастапқы күйiне келтiру"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_WAITING.STRING.TEXT
 msgid  "Waiting"
-msgstr ""
+msgstr "Күту"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_WARMING_UP.STRING.TEXT
 msgid  "Warming up"
-msgstr ""
+msgstr "Бастауға дайындалу"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PROCESSING.STRING.TEXT
 msgid  "Processing"
-msgstr ""
+msgstr "Өңдеу"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PRINTING.STRING.TEXT
 msgid  "Printing"
-msgstr ""
+msgstr "Басу"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OFFLINE.STRING.TEXT
 msgid  "Offline"
-msgstr ""
+msgstr "Офлайн"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_ERROR.STRING.TEXT
 msgid  "Error"
-msgstr ""
+msgstr "Қате"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_SERVER_UNKNOWN.STRING.TEXT
 msgid  "Unknown Server"
-msgstr ""
+msgstr "Белгiсiз сервер"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_JAM.STRING.TEXT
 msgid  "Paper jam"
-msgstr ""
+msgstr "Қағазды шайнау"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_OUT.STRING.TEXT
 msgid  "Not enough paper"
-msgstr ""
+msgstr "Қағаз жетiспеушiлiгi"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_MANUAL_FEED.STRING.TEXT
 msgid  "Manual feed"
-msgstr ""
+msgstr "Қағазды қолдан беру"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_PROBLEM.STRING.TEXT
 msgid  "Paper problem"
-msgstr ""
+msgstr "Қағаз мәселесi"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_IO_ACTIVE.STRING.TEXT
 msgid  "I/O active"
-msgstr ""
+msgstr "Белсендi кiру/шығу"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OUTPUT_BIN_FULL.STRING.TEXT
 msgid  "Output bin full"
-msgstr ""
+msgstr "Кiру науасы тола"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_TONER_LOW.STRING.TEXT
 msgid  "Toner low"
-msgstr ""
+msgstr "Бояу аяқталуда"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_NO_TONER.STRING.TEXT
 msgid  "No toner"
-msgstr ""
+msgstr "Бояу жоқ"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAGE_PUNT.STRING.TEXT
 msgid  "Delete Page"
-msgstr ""
+msgstr "Парақты жою"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_USER_INTERVENTION.STRING.TEXT
 msgid  "User intervention necessary"
-msgstr ""
+msgstr "Қолданушының кiрiсуi қажет"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OUT_OF_MEMORY.STRING.TEXT
 msgid  "Insufficient memory"
-msgstr ""
+msgstr "Жады жетiспейдi"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_DOOR_OPEN.STRING.TEXT
 msgid  "Cover open"
-msgstr ""
+msgstr "Науаның қақпағы ашық"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_POWER_SAVE.STRING.TEXT
 msgid  "Power save mode"
-msgstr ""
+msgstr "Қуатты үнемдеу тәртiбi"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_DEFPRINTER.STRING.TEXT
 msgid  "Default printer"
-msgstr ""
+msgstr "Баспа үнсiз келiсiм бойынша"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_JOBCOUNT.STRING.TEXT
 msgid  "%d documents"
-msgstr ""
+msgstr "%d құжаттары"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.MODALDIALOG.TEXT
 msgid  "Printer Setup"
-msgstr ""
+msgstr "Баспаны баптау"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FL_PRINTER.FIXEDLINE.TEXT
 msgid  "Printer"
@@ -1045,67 +1013,67 @@ msgstr ""
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_GENERALERROR&S_MAX.STRING.TEXT
 msgid  "General OLE error."
-msgstr ""
+msgstr "OLE ортақ қатесi"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANT_BINDTOSOURCE&S_MAX.STRING.TEXT
 msgid  "The connection to the object cannot be established."
-msgstr ""
+msgstr "Обьектiмен байланыс жасау қажет"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOCACHE_UPDATED&S_MAX.STRING.TEXT
 msgid  "No cache files were updated."
-msgstr ""
+msgstr "Кэш файлдары жаңармаған"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_SOMECACHES_NOTUPDATED&S_MAX.STRING.TEXT
 msgid  "Some cache files were not updated."
-msgstr ""
+msgstr "Кэтiң кейбiр файлдары жаңармаған"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_UNAVAILABLE&S_MAX.STRING.TEXT
 msgid  "Status of object cannot be determined in a timely manner."
-msgstr ""
+msgstr "Орнатылған уақыт iшiнде обьектiнiң күйiн орнату мүмкiн емес"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_E_CLASSDIFF&S_MAX.STRING.TEXT
 msgid  "Source of the OLE link has been converted."
-msgstr ""
+msgstr "OLE байланыс көзi түрлендiрiлген"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_OBJECT&S_MAX.STRING.TEXT
 msgid  "The object could not be found."
-msgstr ""
+msgstr "Обьектiнi табу мүмкiн емес"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_EXCEEDED_DEADLINE&S_MAX.STRING.TEXT
 msgid  "The process could not be completed within the specified time period."
-msgstr ""
+msgstr "Орнатылған уақыт iшiнде операцияны аяқтау мүмкiн емес"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_MANUALLY&S_MAX.STRING.TEXT
 msgid  "OLE could not connect to a network device (server)."
-msgstr ""
+msgstr "OLE жүйелiк құрылғыға қосылу мүмкiн емес (серверге)"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED&S_MAX.STRING.TEXT
 msgid  "The object found does not support the interface required for the desired operation."
-msgstr ""
+msgstr "Табылған обьект сұралған функцияға интерфейстi сүйемелдемейдi"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE&S_MAX.STRING.TEXT
 msgid  "Interface not supported."
-msgstr ""
+msgstr "Интерфейс сүйемелденбейдi"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OUT_OF_MEMORY&S_MAX.STRING.TEXT
 msgid  "Insufficient memory."
-msgstr ""
+msgstr "Жады жетiспейдi"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_SYNTAX&S_MAX.STRING.TEXT
 msgid  "The connection name could not be processed."
-msgstr ""
+msgstr "Байланыс атын өңдеу мүмкiн емес"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_REDUCED_TO_SELF&S_MAX.STRING.TEXT
 msgid  "The connection name could not be reduced further."
-msgstr ""
+msgstr "Байланыс атын әрi қарай қысқарту мүмкiн емес"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_INVERSE&S_MAX.STRING.TEXT
 msgid  "The connection name has no inverse."
-msgstr ""
+msgstr "Байланыс атының керi көрiнiсi жоқ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_PREFIX&S_MAX.STRING.TEXT
 msgid  "No common prefix exists."
-msgstr ""
+msgstr "Ортақ префикс жоқ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM&S_MAX.STRING.TEXT
 msgid  "The connection name is contained in the other one."
@@ -1113,179 +1081,175 @@ msgstr ""
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US&S_MAX.STRING.TEXT
 msgid  "The connection names (the receiver and the other moniker) are identical."
-msgstr ""
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME&S_MAX.STRING.TEXT
-msgid  "The connection name is contained in the other one."
-msgstr ""
+msgstr "Бiрдей байланыс аты"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE&S_MAX.STRING.TEXT
 msgid  "The connection name cannot be connected. This is a relative name."
-msgstr ""
+msgstr "Байланыс атын қосу мүмкiн емес. Жақын ат жайлы айтылып тұр"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_IMPLEMENTED&S_MAX.STRING.TEXT
 msgid  "Operation not implemented."
-msgstr ""
+msgstr "Операция орындалған жоқ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_STORAGE&S_MAX.STRING.TEXT
 msgid  "No storage."
-msgstr ""
+msgstr "Сақтау орны жоқ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_FALSE&S_MAX.STRING.TEXT
 msgid  "False."
-msgstr ""
+msgstr "Жалған"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NEED_GENERIC&S_MAX.STRING.TEXT
 msgid  "Monikers must be composed generically."
-msgstr ""
+msgstr "Ортақ аттар құрылуы тиiс"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_PENDING&S_MAX.STRING.TEXT
 msgid  "Data not available at this time."
-msgstr ""
+msgstr "Дәл қарiз деректер рұсат емес"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_INPLACEACTIVE_&_S_MAX.STRING.TEXT
 msgid  "Object could not be activated InPlace."
-msgstr ""
+msgstr "InPlace тәртiбiнде обьектiнi белсендiру мүмкiн емес"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_LINDEX_&_S_MAX.STRING.TEXT
 msgid  "Invalid index."
-msgstr ""
+msgstr "Дұрыс емес индекс"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANNOT_DOVERB_NOW_&_S_MAX.STRING.TEXT
 msgid  "The action cannot be executed in the object's current state."
-msgstr ""
+msgstr "Бұл күйде обьект амалды орындай алмайды"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OLEOBJ_INVALIDHWND_&_S_MAX.STRING.TEXT
 msgid  "An invalid window was passed when activated."
-msgstr ""
+msgstr "Белсендiру кезiнде дұрыс емес терезе берiлген"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOVERBS_&_S_MAX.STRING.TEXT
 msgid  "The object does not support any actions."
-msgstr ""
+msgstr "Бұл обьект ешқандай амалды сүйемелдемейдi"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_INVALIDVERB_&_S_MAX.STRING.TEXT
 msgid  "The action is not defined. The default action will be executed."
-msgstr ""
+msgstr "Амал белгiсiз. Үнсiз келiсiм бойынша амалы орындалады"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_&_S_MAX.STRING.TEXT
 msgid  "A link to the network could not be re-established."
-msgstr ""
+msgstr "Қосылуды бастапқы күйiне келтiру мүмкiн емес"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOTIMPL_&_S_MAX.STRING.TEXT
 msgid  "Object does not support this action."
-msgstr ""
+msgstr "Обьект бұл амалды сүйемелдемейдi"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CANTOPENFILE_&_S_MAX.STRING.TEXT
 msgid  "The specified file could not be opened."
-msgstr ""
+msgstr "Тапсырылған файлды ашу мүмкiн емес"
 
 #: dialogs/so3res.src#RID_SO_ERRCTX.ERRCTX_SO_DOVERB.STRING.TEXT
 msgid  "$(ERR) activating object"
-msgstr ""
+msgstr "$(ERR) обьектiнi белсендiрген кезде"
 
 #: dialogs/so3res.src#STR_INS_OBJECT.STRING.TEXT
 msgid  "Inserts a new %1-Object into your document."
-msgstr ""
+msgstr "%1құжатына жаңа обьектi қыстырады."
 
 #: dialogs/so3res.src#STR_INS_OBJECT_ICON.STRING.TEXT
 msgid  "Inserts a new %1-Object into your document as a symbol."
-msgstr ""
+msgstr "%құжатқа жаңа обьектiнi таңба ретiнде қыстырады"
 
 #: dialogs/so3res.src#STR_INS_FILE.STRING.TEXT
 msgid  "Inserts the contents of the file into your document to enable later editing in the original application."
-msgstr ""
+msgstr "Файлдың құрамын құжатқа қыстырады. Бұлай, кейiнiрек бастапқы қосымшаның түзетуi жалғасады"
 
 #: dialogs/so3res.src#STR_INS_PLUGIN.STRING.TEXT
 msgid  "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
-msgstr ""
+msgstr "Құжатқа қосылатын модуль обьектiсiн қыстырады. Егер бұл обьектiнi белсендiрсе, қосылатын модуль iске қосылады"
 
 #: dialogs/so3res.src#STR_INS_APPLET.STRING.TEXT
 msgid  "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
-msgstr ""
+msgstr "Құжатқа апплет обьектiсiн қыстырады. Обьектi белсендiрiлген кезде апплет iске қосылады"
 
 #: dialogs/so3res.src#STR_INS_FILE_ICON.STRING.TEXT
 msgid  "Inserts the contents of the file as an icon into your document."
-msgstr ""
+msgstr "Құжатқа белгiше қыстырады, ол файлдың мазмұнын көрсетедi"
 
 #: dialogs/so3res.src#STR_INS_FILE_LINK.STRING.TEXT
 msgid  "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
-msgstr ""
+msgstr "Файлдың мазмұнын құжатқа қыстырады және бастапқы файлға сiлтеменi орнатады. бастапқы файлдардың өзгерiсi сiздiң құжатыңызда көрiнедi"
 
 #: dialogs/so3res.src#STR_INS_FILE_ICON_LINK.STRING.TEXT
 msgid  "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
-msgstr ""
+msgstr "Файлдың мазмұнын көрсететiн құжатқа белгiше қыстырады. Бастапқы файлдардың өзгерiсi сiздiң құжатыңызда көрiнедi"
 
 #: dialogs/so3res.src#STR_PASTE.STRING.TEXT
 msgid  "Pastes the contents of the clipboard as %1 in your document."
-msgstr ""
+msgstr "%1ретiнде Алмасу буферiнiң мазмұнын құжатқа қыстырады."
 
 #: dialogs/so3res.src#STR_CONVERT_TO.STRING.TEXT
 msgid  "Converts the selected %1object to the object type %2."
-msgstr ""
+msgstr "%1 ерекшелендiрiлген обьекiсiн  %2 түрiне түрлендiредi."
 
 #: dialogs/so3res.src#STR_ACTIVATE_AS.STRING.TEXT
 msgid  "All objects of type %1 are activated as %2, but not converted"
-msgstr ""
+msgstr "%1 түрiнiң барлық обьектiлерi %2 ретiнде белсендiрiледi, бiрақ түрленбейдi"
 
 #: dialogs/so3res.src#STR_VERB_OPEN.STRING.TEXT
 msgid  "~Open"
-msgstr ""
+msgstr "~Ашу"
 
 #: dialogs/so3res.src#STR_VERB_PROPS.STRING.TEXT
 msgid  "~Properties"
-msgstr ""
+msgstr "~Қасиеттерi"
 
 #: dialogs/so3res.src#STR_PLUGIN_CANT_SHOW.STRING.TEXT
 msgid  "Plug-in % cannot be displayed."
-msgstr ""
+msgstr "% қосылатын модулiн көрсету мүмкiн емес."
 
 #: dialogs/so3res.src#STR_ERROR_DDE.STRING.TEXT
 msgid  "DDE link to % for % area % are not available."
-msgstr ""
+msgstr " DDE бойынша % мен  %  аймағы % үшiн байланыс жасау мүмкiн емес."
 
 #: dialogs/so3res.src#STR_ERROR_OBJNOCREATE.STRING.TEXT
 msgid  "Object % could not be inserted."
-msgstr ""
+msgstr "% нысанын кiрiстiруге мүмкiншiлiк болмай тұр."
 
 #: dialogs/so3res.src#STR_ERROR_OBJNOCREATE_FROM_FILE.STRING.TEXT
 msgid  "Object from file % could not be inserted."
-msgstr ""
+msgstr "Нысанды % файлдан кiрiстiруге мүмкiндiк болмай тұр."
 
 #: dialogs/so3res.src#STR_ERROR_OBJNOCREATE_PLUGIN.STRING.TEXT
 msgid  "Plug-in from document % could not be inserted."
-msgstr ""
+msgstr "% құжатынан қосылатын модульдi кiрiстiру мүмкiн емес."
 
 #: dialogs/so3res.src#STR_QUERYUPDATELINKS.STRING.TEXT
 msgid  "Update all links?"
-msgstr ""
+msgstr "Барлық сiлтемелердi жаңарту керек пе?"
 
 #: dialogs/so3res.src#STR_FURTHER_OBJECT.STRING.TEXT
 msgid  "Further objects"
-msgstr ""
+msgstr "Қосымша нысандар"
 
 #: dialogs/so3res.src#STR_EDIT_APPLET.STRING.TEXT
 msgid  "Edit Applet"
-msgstr ""
+msgstr "Апплетi өзгерту"
 
 #: dialogs/so3res.src#MI_PLUGIN.MI_PLUGIN_DEACTIVATE.MENUITEM.TEXT
 msgid  "Deactivate"
-msgstr ""
+msgstr "Керiснше белсендiру"
 
 #: dialogs/so3res.src#STR_UNKNOWN_SOURCE.STRING.TEXT
 msgid  "Unknown source"
-msgstr ""
+msgstr "Белгiсiз көз"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_FINISH.STRING.TEXT
 msgid  "~Finish"
-msgstr ""
+msgstr "~Дайын"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_NEXT.STRING.TEXT
 msgid  "~Next >>"
-msgstr ""
+msgstr "~Келесi>>"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_PREVIOUS.STRING.TEXT
 msgid  "<< Bac~k"
-msgstr ""
+msgstr "<<~ Керi"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_ROADMAP_TITLE.STRING.TEXT
 msgid  "Steps"
@@ -1325,26 +1289,6 @@ msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_SIZEY.FIXEDTEXT.TEXT
 msgid  "Height:"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM1.STRINGLIST.ITEM
-msgid  "inches"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.DEFAULT.STRINGLIST.ITEM
-msgid  "cm"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM3.STRINGLIST.ITEM
-msgid  "mm"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM4.STRINGLIST.ITEM
-msgid  "points"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM5.STRINGLIST.ITEM
-msgid  "pixels"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_RESOLUTION.FIXEDTEXT.TEXT
@@ -1455,10 +1399,6 @@ msgstr ""
 msgid  "Text"
 msgstr ""
 
-#: filter/exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.FIXEDLINE.TEXT
-msgid  "Preview"
-msgstr ""
-
 #: filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_TIFF.CHECKBOX.TEXT
 msgid  "Image Preview (TIFF)"
 msgstr ""
@@ -1553,39 +1493,39 @@ msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.STRING.TEXT
 msgid  "Source code"
-msgstr ""
+msgstr "Бастапқы коды"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.STRING.TEXT
 msgid  "Bookmark file"
-msgstr ""
+msgstr "Бетбелгiлер файлы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.STRING.TEXT
 msgid  "Graphics"
-msgstr ""
+msgstr "Сызбалық нысандар"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.STRING.TEXT
 msgid  "Configuration file"
-msgstr ""
+msgstr "Файлдың құрылымы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.STRING.TEXT
 msgid  "Application"
-msgstr ""
+msgstr "Қосымшасы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.STRING.TEXT
 msgid  "Database table"
-msgstr ""
+msgstr "Деректер қорының кестесi"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.STRING.TEXT
 msgid  "System file"
-msgstr ""
+msgstr "Жүйелiк файл"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.STRING.TEXT
 msgid  "MS Word document"
-msgstr ""
+msgstr "MS Word құжаты"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.STRING.TEXT
 msgid  "Help file"
-msgstr ""
+msgstr "Анықтама файлы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.STRING.TEXT
 msgid  "HTML document"
@@ -1593,83 +1533,79 @@ msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.STRING.TEXT
 msgid  "Archive file"
-msgstr ""
+msgstr "Архив файлы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.STRING.TEXT
 msgid  "Log file"
-msgstr ""
+msgstr "Журналы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.STRING.TEXT
 msgid  "%STAROFFICE Database"
-msgstr ""
+msgstr "%STAROFFICE деректер қоры"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.STRING.TEXT
 msgid  "StarWriter 4.0 / 5.0 Master Document"
-msgstr ""
+msgstr "%PRODUCTNAME мазмұндық мәтiндiк құжат"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.STRING.TEXT
 msgid  "%STAROFFICE Image"
-msgstr ""
+msgstr "%STAROFFICE Бейнесi"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.STRING.TEXT
 msgid  "Text file"
-msgstr ""
+msgstr "Мәтiндiк файл"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_LINK.STRING.TEXT
 msgid  "Link"
-msgstr ""
+msgstr "Сiлтемесi"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.STRING.TEXT
 msgid  "%STAROFFICE 3.0 - 5.0 Template"
-msgstr ""
+msgstr "%PRODUCTNAME қалыпы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.STRING.TEXT
 msgid  "MS Excel document"
-msgstr ""
+msgstr "MS Excel құжаты"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.STRING.TEXT
 msgid  "MS Excel template"
-msgstr ""
+msgstr "MS Excel қалыпы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.STRING.TEXT
 msgid  "Batch file"
-msgstr ""
+msgstr "Топтамалық файл"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FILE.STRING.TEXT
 msgid  "File"
-msgstr ""
+msgstr "Файл"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FOLDER.STRING.TEXT
 msgid  "Folder"
-msgstr ""
+msgstr "Бума"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.STRING.TEXT
 msgid  "Text Document"
-msgstr ""
+msgstr "Мәтiндiк құжат"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.STRING.TEXT
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "электрондық кесте"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.STRING.TEXT
 msgid  "Presentation"
-msgstr ""
+msgstr "Презентация"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.STRING.TEXT
 msgid  "Drawing"
-msgstr ""
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.STRING.TEXT
-msgid  "HTML document"
-msgstr ""
+msgstr "Сурет"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.STRING.TEXT
 msgid  "Master document"
-msgstr ""
+msgstr "Мазмұндық құжат"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.STRING.TEXT
 msgid  "Formula"
-msgstr ""
+msgstr "Формула"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.STRING.TEXT
 msgid  "Database"
@@ -1677,123 +1613,123 @@ msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION электрондық кестесiнiң қалпы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION сурет қалыпы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION презентация қалыпы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION мәтiнiң қалпы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.STRING.TEXT
 msgid  "Local drive"
-msgstr ""
+msgstr "Жергiлiктi дискжетекшiсi"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.STRING.TEXT
 msgid  "Disk drive"
-msgstr ""
+msgstr "Дискжетек"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.STRING.TEXT
 msgid  "CD-ROM drive"
-msgstr ""
+msgstr "Компак-дискiлер үшiн жетек"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.STRING.TEXT
 msgid  "Network connection"
-msgstr ""
+msgstr "Жүйелiк қосылысы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.STRING.TEXT
 msgid  "MS PowerPoint Document"
-msgstr ""
+msgstr "MS PowerPoint құжат"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.STRING.TEXT
 msgid  "MS PowerPoint Template"
-msgstr ""
+msgstr "MS PowerPoint қалпы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.STRING.TEXT
 msgid  "MS PowerPoint Show"
-msgstr ""
+msgstr "MS PowerPoint көрсету"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION формуласы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Диаграмма"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION суретi"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr ""
+msgstr " %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION электрондық кестесi"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION презентациясы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION мәтiндiк құжаты"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION мазмұндық құжат"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.STRING.TEXT
 msgid  "MathML Document"
-msgstr ""
+msgstr "MathML құжаты"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.STRING.TEXT
 msgid  "OpenDocument Database"
-msgstr ""
+msgstr "OpenDocument деректер негiзi"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.STRING.TEXT
 msgid  "OpenDocument Drawing"
-msgstr ""
+msgstr "OpenDocument суретi"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.STRING.TEXT
 msgid  "OpenDocument Formula"
-msgstr ""
+msgstr "OpenDocument формуласы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.STRING.TEXT
 msgid  "OpenDocument Master Document"
-msgstr ""
+msgstr "OpenDocument мазмұндық құжат"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.STRING.TEXT
 msgid  "OpenDocument Presentation"
-msgstr ""
+msgstr "OpenDocument презентациясы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.STRING.TEXT
 msgid  "OpenDocument Spreadsheet"
-msgstr ""
+msgstr "OpenDocument электрондық кестесi"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.STRING.TEXT
 msgid  "OpenDocument Text"
-msgstr ""
+msgstr "OpenDocument мәтiндiк құжаты"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.STRING.TEXT
 msgid  "OpenDocument Spreadsheet Template"
-msgstr ""
+msgstr "OpenDocument электрондық кестесiнiң қалпы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.STRING.TEXT
 msgid  "OpenDocument Drawing Template"
-msgstr ""
+msgstr "OpenDocument сурет қалыпы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.STRING.TEXT
 msgid  "OpenDocument Presentation Template"
-msgstr ""
+msgstr "OpenDocument презентация қалыпы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.STRING.TEXT
 msgid  "OpenDocument Text Template"
-msgstr ""
+msgstr "OpenDocument мәтiндiк құжатының қалыпы"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.STRING.TEXT
 msgid  "%PRODUCTNAME Extension"
@@ -2065,10 +2001,6 @@ msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PAIREDLIST.ITEM
 msgid  "Faroese"
-msgstr ""
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.PAIREDLIST.ITEM
-msgid  "Persian"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PAIREDLIST.ITEM
@@ -2977,87 +2909,87 @@ msgstr ""
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_SHOW.TOOLBOXITEM.TEXT
 msgid  "Display IDs"
-msgstr ""
+msgstr "Дисплейдiң идентификаторлары"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_OUTPUT.TOOLBOXITEM.TEXT
 msgid  "This is the input window"
-msgstr ""
+msgstr "Бұл кiру терезесi\n"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_SEND_DATA.TOOLBOXITEM.TEXT
 msgid  "Transfer to TestTool"
-msgstr ""
+msgstr "Сайманды тексеруiне өтiңiз\n"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_ALLWIN.TOOLBOXITEM.TEXT
 msgid  "Show all windows"
-msgstr ""
+msgstr "Барлық терезелердi көрсету"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_KURZNAME.TOOLBOXITEM.TEXT
 msgid  "Show short names (if available)"
-msgstr ""
+msgstr "Қысқа аттарды көрсету (егерде мүмкiн болса)"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_LANGNAME.TOOLBOXITEM.TEXT
 msgid  "Always show long-name"
-msgstr ""
+msgstr "Көрсетуiнiң әрқашанда өте ұзын аты\n"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TOOLBOXITEM.TEXT
 msgid  "DisplayHID"
-msgstr ""
+msgstr "HID дисплейi"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GROUPBOX.TEXT
 msgid  "Translation"
-msgstr ""
+msgstr "Трасляторы"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.EDIT.TEXT
 msgid  "~Edit"
-msgstr ""
+msgstr "~Түзету"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FIXEDTEXT.TEXT
 msgid  "Original Text"
-msgstr ""
+msgstr "Тұпнұсқалық мәтiн"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GROUPBOX.TEXT
 msgid  "Comment"
-msgstr ""
+msgstr "Түсініктеме"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.EDIT.TEXT
 msgid  "~Comment"
-msgstr ""
+msgstr "~Түсініктеме"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PUSHBUTTON.TEXT
 msgid  "~Select"
-msgstr ""
+msgstr "~Сұрыптау"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PUSHBUTTON.TEXT
 msgid  "~Restore"
-msgstr ""
+msgstr "~Қалпына келтiру"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PUSHBUTTON.TEXT
 msgid  "~Accept"
-msgstr ""
+msgstr "~Қабылдау"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PUSHBUTTON.TEXT
 msgid  "~Next"
-msgstr ""
+msgstr "~Келесi"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.PUSHBUTTON.TEXT
 msgid  "Inplace Translation"
-msgstr ""
+msgstr "Жарамды аударма"
 
 #: plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MESSBOX.MESSAGE
 msgid  "The Translation will be lost. Proceed anyway?"
-msgstr ""
+msgstr "Аудармасы жоғалады. Қалай болғанда да өтесiзбе?\n"
 
 #: plugapp/testtool.src#TT_NO_CONTROL.ERRORBOX.MESSAGE
 msgid  "The Control is no longer valid. The Translation cannot be saved."
-msgstr ""
+msgstr "Бақылауы басқа жұмыс iстемейдi. Аудармаңызды сақтауға мүмкiндiк жоқ.\n"
 
 #: plugapp/testtool.src#TT_GPF.STRING.TEXT
 msgid  "GPF occurred"
-msgstr ""
+msgstr "GPF кездескен"
 
 #: plugapp/testtool.src#TT_ALTERNATE_CAPTION.STRING.TEXT
 msgid  "HelpID does not match UniqueID: "
-msgstr ""
+msgstr "HelpID  UniqueID қосылған жоқ: "
 
 #: toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_FWD.STRING.TEXT
 msgid  "Tab Panel Scroll Button, backward"

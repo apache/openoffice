@@ -32,32 +32,39 @@ msgstr ""
 
 
 #: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
+#, fuzzy
 msgid  "Configuration Menu"
-msgstr ""
+msgstr "Opstelkieslys"
 
 #: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
+#, fuzzy
 msgid  "~Add-Ons"
-msgstr ""
+msgstr "~Byvoegsels"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Cu~t"
-msgstr ""
+msgstr "Kni~p"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Copy"
-msgstr ""
+msgstr "~Kopieer"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Paste"
-msgstr ""
+msgstr "~Plak"
 
 #: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
+#, fuzzy
 msgid  "Leave Full-Screen Mode"
-msgstr ""
+msgstr "Verlaat volskermmodus"
 
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
+#, fuzzy
 msgid  "Add-~On Help"
-msgstr ""
+msgstr "Byvoegsel-~hulp"
 
 #: menu/menu.src#STR_MENU_SYNONYMS.STRING.TEXT
 msgid  "Synonyms"
@@ -72,788 +79,933 @@ msgid  "~Thesaurus..."
 msgstr ""
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
+#, fuzzy
 msgid  "My Templates"
-msgstr ""
+msgstr "My sjablone"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Business Correspondence"
-msgstr ""
+msgstr "Sakekorrespondensie"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Other Business Documents"
-msgstr ""
+msgstr "Ander sakedokumente"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Personal Correspondence and Documents"
-msgstr ""
+msgstr "Persoonlike korrespondensie en dokumente"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Forms and Contracts"
-msgstr ""
+msgstr "Vorms en kontrakte"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Finances"
-msgstr ""
+msgstr "Finansies"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Education"
-msgstr ""
+msgstr "Opleiding"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Presentation Backgrounds"
-msgstr ""
+msgstr "Aanbiedingsagtergronde"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Presentations"
-msgstr ""
+msgstr "Voorleggings"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Miscellaneous"
-msgstr ""
+msgstr "Allerlei"
 
 #: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
+#, fuzzy
 msgid  "The templates are being initialized for first-time usage."
-msgstr ""
+msgstr "Die sjablone word vir eerste gebruik geïnisialiseer."
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "Sjablone"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "New template"
-msgstr ""
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FIXEDLINE.TEXT
-msgid  "Templates"
-msgstr ""
+msgstr "Nuwe sjabloon"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Categories"
-msgstr ""
+msgstr "~Kategorieë"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Templates"
-msgstr ""
+msgstr "~Sjablone"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "~Redigeer"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Organizer..."
-msgstr ""
-
-#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
-msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
-
-#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
-msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "~Organiseerder..."
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to delete the region \"$1\"?"
-msgstr ""
+msgstr "Is u seker u wil die gebied \"$1\" skrap?"
 
 #: doc/doc.src#STR_DELETE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to delete the entry \"$1\"?"
-msgstr ""
-
-#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
-msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "Is u seker u wil die inskrywing \"$1\" skrap?"
 
 #: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "Die dokument \"$(DOC)\" is gewysig.\nWil u u wysigings stoor?"
 
 #: doc/doc.src#STR_STYLES.STRING.TEXT
+#, fuzzy
 msgid  "Styles"
-msgstr ""
+msgstr "Style"
 
 #: doc/doc.src#STR_MACROS.STRING.TEXT
+#, fuzzy
 msgid  "Macros"
-msgstr ""
+msgstr "Makro's"
 
 #: doc/doc.src#STR_CONFIG.STRING.TEXT
+#, fuzzy
 msgid  "Configuration"
-msgstr ""
+msgstr "Opstelling"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Styles in "
-msgstr ""
+msgstr "Style in "
 
 #: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
+#, fuzzy
 msgid  "Printing Styles"
-msgstr ""
+msgstr "Drukstyle"
 
 #: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The print job could not be started."
-msgstr ""
+msgstr "Die druktaak kon nie begin word nie."
 
 #: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
+#, fuzzy
 msgid  "Copy"
-msgstr ""
+msgstr "Kopieer"
 
 #: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "The template could not be opened."
-msgstr ""
+msgstr "Die sjabloon kon nie oopgemaak word nie."
 
 #: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "Document already open for editing."
-msgstr ""
+msgstr "Dokument reeds oop vir redigering."
 
 #: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "Error recording document "
-msgstr ""
+msgstr "Fout by opname van dokument "
 
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "Sjablone"
 
 #: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr ""
+msgstr "Sjabloon \"$1\" kon nie gekopieer word nie. \n'n Sjabloon met hierdie naam bestaan miskien reeds."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "The template \"$1\" can not be deleted."
-msgstr ""
+msgstr "Die sjabloon \"$1\" kan nie geskrap word nie."
 
 #: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error moving template \"$1\"."
-msgstr ""
+msgstr "Sjabloon \"$1\" kon nie geskuif word nie."
 
 #: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The update could not be saved."
-msgstr ""
+msgstr "Die bywerking kon nie gestoor word nie."
 
 #: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error saving template "
-msgstr ""
+msgstr "Fout by stoor van sjabloon "
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Error renaming template."
-msgstr ""
+msgstr "Die sjabloon kon nie hernoem word nie."
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Error renaming template category."
-msgstr ""
+msgstr "Die sjabloonkategorie kon nie hernoem word nie."
 
 #: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Please specify a name."
-msgstr ""
-
-#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
-msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "Spesifiseer asseblief 'n naam."
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
-msgstr ""
+msgstr "Moet die sjabloon \"$(TEXT)\" die verstek sjabloon word?"
 
 #: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to reset the default template?"
-msgstr ""
-
-#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
-msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "Wil u die verstek sjabloon terugstel?"
 
 #: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "Document info cannot be read."
-msgstr ""
+msgstr "Dokumentinligting is nie leesbaar nie."
 
 #: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
+#, fuzzy
 msgid  "The selected file has an incorrect format."
-msgstr ""
+msgstr "Die geselekteerde lêer het 'n foutiewe formaat."
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Dokumente kan nie in $(FORMAT)-formaat gestoor word nie. Wil u\n u veranderings met die $(OWNFORMAT)-formaat stoor?"
 
 #: doc/doc.src#STR_SAVEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Save"
-msgstr ""
+msgstr "~Stoor"
 
 #: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Update"
-msgstr ""
+msgstr "~Bywerk"
 
 #: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
+#, fuzzy
 msgid  "Save ~As..."
-msgstr ""
+msgstr "Stoor ~as..."
 
 #: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
+#, fuzzy
 msgid  "Save Copy ~as..."
-msgstr ""
+msgstr "Stoor kopie ~as..."
 
 #: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "~Sluit"
 
 #: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
+#, fuzzy
 msgid  "~Close & Return to "
-msgstr ""
+msgstr "~Sluit en keer terug na "
 
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  " AutoPilot"
-msgstr ""
+msgstr " OutoLoods"
 
 #: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
+#, fuzzy
 msgid  "Configurations"
-msgstr ""
+msgstr "Opstellings"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Basic libraries"
-msgstr ""
+msgstr "%PRODUCTNAME Basic-biblioteke"
 
 #: doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.STRING.TEXT
+#, fuzzy
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
-msgstr ""
+msgstr "Moet die \"$(ARG1)\"-styl vervang word?"
 
 #: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
+#, fuzzy
 msgid  "Loading Document"
-msgstr ""
+msgstr "Dokument word gelaai"
 
 #: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
+#, fuzzy
 msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr ""
+msgstr "Besig om te koppel aan: $(HOST). Wag op antwoord..."
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
+#, fuzzy
 msgid  "Opening $(TARGET) at $(HOST)"
-msgstr ""
+msgstr "Besig om $(TARGET) by $(HOST) oop te maak"
 
 #: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr ""
+msgstr "$(TARGET) vanaf $(HOST) word gelaai. Gelaai: $(BYTE)"
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
+#, fuzzy
 msgid  "Disconnected"
-msgstr ""
-
-#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
-msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "Nie verbind nie"
 
 #: doc/doc.src#STR_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit"
-msgstr ""
+msgstr "Redigeer"
 
 #: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Documents"
-msgstr ""
+msgstr "%PRODUCTNAME-dokumente"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Propert~ies..."
-msgstr ""
+msgstr "Eien~skappe..."
 
 #: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
+#, fuzzy
 msgid  "HTML (FrameSet)"
-msgstr ""
+msgstr "HTML (RaamStelling)"
 
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
-msgstr ""
+msgstr "%PRODUCTNAME-raamdokument"
 
 #: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr ""
+msgstr "Die sjabloon \"$(TEMPLATE)\" is nie in sy oorspronklike ligging gevind nie. 'n Sjabloon met selfde naam bestaan by \"$(FOUND)\". Moet hierdie sjabloon in die toekoms vir vergelykings gebruik word?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgstr "Die sjabloon \"$(TEMPLATE)\" is nie gevind nie. Moet die sjabloon in die toekoms gesoek word wanneer u die dokument oopmaak?"
 
 #: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
+#, fuzzy
 msgid  "Automatically saved version"
-msgstr ""
+msgstr "Outomaties gestoorde weergawe"
 
 #: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
+#, fuzzy
 msgid  "Text Document"
-msgstr ""
+msgstr "Teksdokument"
 
 #: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
+#, fuzzy
 msgid  "HTML Document"
-msgstr ""
+msgstr "HTML-dokument"
 
 #: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
+#, fuzzy
 msgid  "Master Document"
-msgstr ""
+msgstr "Meesterdokument"
 
 #: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
+#, fuzzy
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "Sigblad"
 
 #: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
+#, fuzzy
 msgid  "Presentation"
-msgstr ""
+msgstr "Voorlegging"
 
 #: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
+#, fuzzy
 msgid  "Drawing"
-msgstr ""
+msgstr "Tekening"
 
 #: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "Message"
-msgstr ""
+msgstr "Boodskap"
 
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
+#, fuzzy
 msgid  "~Discard"
-msgstr ""
+msgstr "~Verwerp"
 
 #: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
+#, fuzzy
 msgid  "Access to the current data medium not possible."
-msgstr ""
+msgstr "Toegang tot die huidige datamedium is nie moontlik nie."
 
 #: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
+#, fuzzy
 msgid  "Insert the next data carrier and click OK."
-msgstr ""
+msgstr "Sit die volgende datadraer in en kliek OK."
 
 #: doc/doc.src#STR_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Object"
-msgstr ""
+msgstr "Objek"
 
 #: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
+#, fuzzy
 msgid  "Run Macro"
-msgstr ""
+msgstr "Laat loop makro"
 
 #: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "This document contains macros. $(TEXT)"
-msgstr ""
+msgstr "Hierdie dokument bevat makro's. $(TEXT)"
 
 #: doc/doc.src#BTN_OK.STRING.TEXT
+#, fuzzy
 msgid  "Run"
-msgstr ""
+msgstr "Laat loop"
 
 #: doc/doc.src#BTN_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "Do Not Run"
-msgstr ""
+msgstr "Moenie laat loop nie"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "Volgens die veiligheidsinstellings moet die makro's in hierdie dokument nie laat loop word nie. Wil u dit nogtans laat loop?"
 
 #: doc/doc.src#FT_OK.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to allow these macros to be run?"
-msgstr ""
+msgstr "Wil u hierdie makro's laat loop?"
 
 #: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Export as PDF"
-msgstr ""
+msgstr "Uitvoer as PDF"
 
 #: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Export..."
-msgstr ""
+msgstr "Voer uit..."
 
 #: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Export"
-msgstr ""
+msgstr "Uitvoer"
 
 #: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
+#, fuzzy
 msgid  "Add this directory to the list of secure paths: "
-msgstr ""
+msgstr "Voeg hierdie gids by die lys veilige paaie: "
 
 #: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "File format:"
-msgstr ""
+msgstr "Lêerformaat:"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
+#, fuzzy
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "Hierdie dokument bevat:\n\n"
 
 #: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
+#, fuzzy
 msgid  "Recorded changes"
-msgstr ""
+msgstr "Aangebringde veranderinge"
 
 #: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
+#, fuzzy
 msgid  "Notes"
-msgstr ""
+msgstr "Notas"
 
 #: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
+#, fuzzy
 msgid  "Document versions"
-msgstr ""
+msgstr "Dokumentweergawes"
 
 #: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
+#, fuzzy
 msgid  "Fields"
-msgstr ""
+msgstr "Velde"
 
 #: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
+#, fuzzy
 msgid  "Linked data..."
-msgstr ""
+msgstr "Geskakelde data..."
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue saving the document?"
-msgstr ""
+msgstr "Wil u voortgaan om die dokument te stoor?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue printing the document?"
-msgstr ""
+msgstr "Wil u voortgaan om die dokument te druk?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue signing the document?"
-msgstr ""
+msgstr "Wil u voortgaan om die dokument te onderteken?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue creating a PDF file?"
-msgstr ""
+msgstr "Wil u voortgaan om 'n PDF-lêer te skep?"
 
 #: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr ""
+msgstr "Indien u nie die oorspronklike dokument wil oorheenskryf nie, moet u u werk onder 'n nuwe lêernaam stoor."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
+#, fuzzy
 msgid  "Some template files are protected and can not be deleted."
-msgstr ""
+msgstr "Sommige sjabloonlêers word beskerm en kan nie geskrap word nie."
 
 #: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Info %1"
-msgstr ""
+msgstr "Inligting %1"
 
 #: doc/doc.src#STR_SHARED.STRING.TEXT
+#, fuzzy
 msgid  " (shared)"
-msgstr ""
+msgstr " (gedeel)"
 
 #: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
+#, fuzzy
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr ""
-
-#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
-msgstr ""
+msgstr "Die dokumentformaatweergawe is gestel as ODF 1.1 (OpenOffice.org 2.x) in Nuts - Opsies - Laai/stoor - Algemeen. Om dokumente te onderteken, kort u ODF 1.2 (OpenOffice.org 3.x)."
 
 #: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr ""
+msgstr "Die sjabloon '$(ARG1)' waarop hierdie dokument gebaseer is, is gewysig. Wil u stylgebaseerde formatering bywerk op grond van die gewysigde sjabloon?"
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
+#, fuzzy
 msgid  "~Update Styles"
-msgstr ""
+msgstr "~Werk style by"
 
 #: doc/doc.src#STR_QRYTEMPL_KEEP_BTN.STRING.TEXT
+#, fuzzy
 msgid  "~Keep Old Styles"
-msgstr ""
+msgstr "~Behou ou style"
 
 #: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Template Management"
-msgstr ""
+msgstr "Sjabloonbestuur"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Sluit"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~File..."
-msgstr ""
+msgstr "~Lêer..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Address Book..."
-msgstr ""
+msgstr "~Adresboek..."
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "Sjablone"
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Documents"
-msgstr ""
-
-#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Templates"
-msgstr ""
-
-#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Documents"
-msgstr ""
+msgstr "Dokumente"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
+#, fuzzy
 msgid  "Commands"
-msgstr ""
+msgstr "Bevele"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "~New"
-msgstr ""
+msgstr "~Nuwe"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "~Skrap"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "~Redigeer"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
+#, fuzzy
 msgid  "Import Template..."
-msgstr ""
+msgstr "Voer sjabloon in..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MENUITEM.TEXT
+#, fuzzy
 msgid  "Export Template..."
-msgstr ""
+msgstr "Voer sjabloon uit..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Print"
-msgstr ""
+msgstr "~Druk"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "Printer Settings..."
-msgstr ""
+msgstr "Drukkerinstellings..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Update"
-msgstr ""
+msgstr "Bywerk"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Set As Default Template"
-msgstr ""
+msgstr "Stel as verstek sjabloon"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Reset Default Template"
-msgstr ""
+msgstr "Stel verstek sjabloon terug"
 
 #: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "New"
-msgstr ""
+msgstr "Nuwe"
 
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Categories"
-msgstr ""
+msgstr "~Kategorieë"
 
 #: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "T~emplates"
-msgstr ""
+msgstr "Sjablon~e"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
+#, fuzzy
 msgid  "~More"
-msgstr ""
+msgstr "~Meer"
 
 #: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Pre~view"
-msgstr ""
+msgstr "~Voorskou"
 
 #: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "Beskrywing"
 
 #: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Te~xt"
-msgstr ""
+msgstr "Te~ks"
 
 #: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Frame"
-msgstr ""
+msgstr "~Raam"
 
 #: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Pages"
-msgstr ""
+msgstr "~Bladsye"
 
 #: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "N~umbering"
-msgstr ""
+msgstr "N~ommering"
 
 #: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Overwrite"
-msgstr ""
+msgstr "~Oorheenskryf"
 
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "From File..."
-msgstr ""
+msgstr "Vanaf lêer..."
 
 #: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Load Styles"
-msgstr ""
+msgstr "Laai style"
 
 #: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "~Titel"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Subject"
-msgstr ""
+msgstr "Onderwerp"
 
 #: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Key words"
-msgstr ""
+msgstr "~Sleutelwoorde"
 
 #: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Description"
-msgstr ""
+msgstr "~Beskrywing"
 
 #: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
+#, fuzzy
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "Die filter $(FILTER) wat u gekies het, is nie geïnstalleer nie.\nWil u dit nou installeer?"
 
 #: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
+#, fuzzy
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "Die filter $(FILTER) wat u gekies het is nie in u weergawe ingesluit nie.\nU kan inligting oor bestellings op ons tuisblad kry."
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Reduce print data"
-msgstr ""
+msgstr "Verminder drukdata"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Settings for"
-msgstr ""
+msgstr "Instellings vir"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Printer"
-msgstr ""
+msgstr "~Drukker"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Print to ~file"
-msgstr ""
+msgstr "Druk na ~lêer"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Reduce transparency"
-msgstr ""
+msgstr "~Verminder deursigtigheid"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Auto~matically"
-msgstr ""
+msgstr "Outo~maties"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~No transparency"
-msgstr ""
+msgstr "~Geen deursigtigheid"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Reduce ~gradients"
-msgstr ""
+msgstr "Verminder ~gradiënte"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Gradient ~stripes"
-msgstr ""
+msgstr "Gradiënt~strepe"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Intermediate ~color"
-msgstr ""
+msgstr "Tussen~kleur"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Reduce ~bitmaps"
-msgstr ""
+msgstr "Verklein ~biskaarte"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~High print quality"
-msgstr ""
+msgstr "~Hoë drukkwaliteit"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "N~ormal print quality"
-msgstr ""
+msgstr "N~ormale drukkwaliteit"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Reso~lution"
-msgstr ""
+msgstr "Reso~lusie"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "72 DPI"
-msgstr ""
+msgstr "72 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "96 DPI"
-msgstr ""
+msgstr "96 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "150 DPI (Fax)"
-msgstr ""
+msgstr "150 DPI (faks)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "200 DPI (default)"
-msgstr ""
+msgstr "200 DPI (verstek)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "300 DPI"
-msgstr ""
+msgstr "300 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "600 DPI"
-msgstr ""
+msgstr "600 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include transparent ob~jects"
-msgstr ""
+msgstr "Sluit deursigtige ob~jekte in"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Con~vert colors to grayscale"
-msgstr ""
+msgstr "Ska~kel kleure om na grysskaal"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Printer warnings"
-msgstr ""
+msgstr "Drukkerwaarskuwings"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "P~aper size"
-msgstr ""
+msgstr "P~apiergrootte"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Pap~er orientation"
-msgstr ""
+msgstr "Papi~eroriëntasie"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Transparency"
-msgstr ""
+msgstr "Deur~sigtigheid"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Warning"
-msgstr ""
+msgstr "Waarskuwing"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr "U dokument bevat deursigtige objekte.\nBy sekere\ndrukkers kan dit tot langer druktye lei. Moet die graad van deursigtigheid\nverminder word?"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Yes"
-msgstr ""
+msgstr "~Ja"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~No"
-msgstr ""
+msgstr "~Nee"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Cancel"
-msgstr ""
+msgstr "~Kanselleer"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Do not show warning again"
-msgstr ""
+msgstr "~Moenie hierdie waarskuwing weer vertoon nie"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Style Catalog"
-msgstr ""
+msgstr "Stylkatalogus"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Organizer..."
-msgstr ""
+msgstr "~Organiseerder..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete..."
-msgstr ""
+msgstr "~Skrap..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Modify..."
-msgstr ""
+msgstr "~Wysig..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
-msgstr ""
+msgstr "~Nuwe..."
 
 #: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
 msgid  "Style List"
 msgstr ""
 
 #: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
+#, fuzzy
 msgid  "Hierarchical"
-msgstr ""
+msgstr "Hiërargies"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
+#, fuzzy
 msgid  "Styles and Formatting"
-msgstr ""
+msgstr "Style en formatering"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Fill Format Mode"
-msgstr ""
+msgstr "Invulformaat-modus"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "New Style from Selection"
-msgstr ""
+msgstr "Nuwe styl uit seleksie"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Update Style"
-msgstr ""
+msgstr "Werk styl by"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 msgid  "File encryption password"
@@ -916,595 +1068,714 @@ msgid  "Incorrect password"
 msgstr ""
 
 #: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "New versions"
-msgstr ""
+msgstr "Nuwe weergawes"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Save ~New Version"
-msgstr ""
+msgstr "Stoor ~nuwe weergawe"
 
 #: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Always save a version on closing"
-msgstr ""
+msgstr "S~toor altyd 'n weergawe by sluiting"
 
 #: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Existing versions"
-msgstr ""
+msgstr "Bestaande weergawes"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Date and time"
-msgstr ""
+msgstr "Datum en tyd"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Saved by"
-msgstr ""
+msgstr "Gestoor deur"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comments"
-msgstr ""
+msgstr "Opmerkings"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Sluit"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Open"
-msgstr ""
+msgstr "Open"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Show..."
-msgstr ""
+msgstr "~Vertoon..."
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "~Skrap"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Compare"
-msgstr ""
+msgstr "Vergelyk"
 
 #: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Versions of"
-msgstr ""
+msgstr "Weergawes van"
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Date and time : "
-msgstr ""
+msgstr "Datum en tyd : "
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Saved by "
-msgstr ""
+msgstr "Gestoor deur "
 
 #: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "~Sluit"
 
 #: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Insert Version Comment"
-msgstr ""
+msgstr "Voeg weergaweopmerking in"
 
 #: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
+#, fuzzy
 msgid  "Version comment"
-msgstr ""
+msgstr "Weergawekommentaar"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "~Naam"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~AutoUpdate"
-msgstr ""
+msgstr "~OutoBywerking"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ne~xt Style"
-msgstr ""
+msgstr "Vol~gende styl"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Linked with"
-msgstr ""
+msgstr "Gekoppel aan"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Category"
-msgstr ""
+msgstr "~Kategorie"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Contains"
-msgstr ""
+msgstr "Bevat"
 
 #: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
+#, fuzzy
 msgid  "Current version"
-msgstr ""
+msgstr "Huidige weergawe"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
+#, fuzzy
 msgid  "Export"
-msgstr ""
+msgstr "Uitvoer"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr "Voeg in"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
+#, fuzzy
 msgid  "~Insert"
-msgstr ""
+msgstr "~Voeg in"
 
 #: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
+#, fuzzy
 msgid  "<All formats>"
-msgstr ""
+msgstr "<Alle formate>"
 
 #: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
+#, fuzzy
 msgid  "~Automatic file name extension"
-msgstr ""
+msgstr "~Outomatiese veldnaamuitbreiding"
 
 #: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
+#, fuzzy
 msgid  "~Selection"
-msgstr ""
+msgstr "~Seleksie"
 
 #: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
+#, fuzzy
 msgid  "~Link"
-msgstr ""
+msgstr "~Skakel"
 
 #: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Pr~eview"
-msgstr ""
+msgstr "Voo~rskou"
 
 #: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "~Read-only"
-msgstr ""
+msgstr "~Leesalleen"
 
 #: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "Save with ~password"
-msgstr ""
+msgstr "Stoor met ~wagwoord"
 
 #: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Edit ~filter settings"
-msgstr ""
+msgstr "Redigeer ~filterinstellings"
 
 #: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
+#, fuzzy
 msgid  "~Play"
-msgstr ""
+msgstr "Spee~l"
 
 #: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
+#, fuzzy
 msgid  "Sto~p"
-msgstr ""
+msgstr "Sto~p"
 
 #: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
+#, fuzzy
 msgid  "~Open"
-msgstr ""
+msgstr "~Open"
 
 #: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "~Save"
-msgstr ""
+msgstr "~Stoor"
 
 #: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Style:"
-msgstr ""
+msgstr "Styl:"
 
 #: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
+#, fuzzy
 msgid  "~Templates:"
-msgstr ""
+msgstr "~Sjablone:"
 
 #: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
+#, fuzzy
 msgid  "~Version:"
-msgstr ""
+msgstr "~Weergawe:"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
+#, fuzzy
 msgid  "Find on this Page"
-msgstr ""
+msgstr "Vind op hierdie bladsy"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Search for"
-msgstr ""
+msgstr "~Soek vir"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Whole words only"
-msgstr ""
+msgstr "~Slegs hele woorde"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Match case"
-msgstr ""
+msgstr "~Selfde kas"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Wrap ~around"
-msgstr ""
+msgstr "Vou ~om"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Backwards"
-msgstr ""
+msgstr "~Terugwaarts"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
-msgstr ""
+msgstr "~Vind"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.STRING.TEXT
-msgid  "Wrap ~around"
-msgstr ""
+msgstr "~Sluit"
 
 #: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Enter Password"
-msgstr ""
+msgstr "Tik wagwoord in"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User"
-msgstr ""
+msgstr "~Gebruiker"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Password"
-msgstr ""
+msgstr "Wagwoord"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Confirm"
-msgstr ""
+msgstr "~Bevestig"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Password"
-msgstr ""
+msgstr "Wagwoord"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "P~assword"
-msgstr ""
+msgstr "Wagwoord"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Confir~m"
-msgstr ""
-
-#: dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.STRING.TEXT
-msgid  "Password"
-msgstr ""
+msgstr "~Bevestig"
 
 #: dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME document"
-msgstr ""
+msgstr "%PRODUCTNAME-dokument"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "~Titel"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Subject"
-msgstr ""
+msgstr "~Onderwerp"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Keywords"
-msgstr ""
+msgstr "~Sleutelwoorde"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Comments"
-msgstr ""
+msgstr "~Opmerkings"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type:"
-msgstr ""
+msgstr "Tipe:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Read-only"
-msgstr ""
+msgstr "~Leesalleen"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Location:"
-msgstr ""
+msgstr "Ligging:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Size:"
-msgstr ""
+msgstr "Grootte:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Created:"
-msgstr ""
+msgstr "Geskep:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Modified:"
-msgstr ""
+msgstr "Gewysig:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Digitally signed:"
-msgstr ""
+msgstr "Digitaal onderteken:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Digital Signature..."
-msgstr ""
+msgstr "Digitale handtekening..."
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
+#, fuzzy
 msgid  "Multiply signed document"
-msgstr ""
+msgstr "Vermenigvuldig ondergetekende dokument"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Last printed:"
-msgstr ""
+msgstr "Laas gedruk:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Total editing time:"
-msgstr ""
+msgstr "Totale redigeertyd:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Revision number:"
-msgstr ""
+msgstr "Hersiennommer:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Reset"
-msgstr ""
+msgstr "Stel terug"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Apply user data"
-msgstr ""
+msgstr "~Pas gebruikerdata toe"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Template:"
-msgstr ""
+msgstr "Sjabloon:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
+#, fuzzy
 msgid  "unknown"
-msgstr ""
+msgstr "onbekend"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
 msgid  "File Name"
 msgstr ""
 
 #: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Info fields..."
-msgstr ""
+msgstr "~Inligtingsvelde..."
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Do not refresh automatically"
-msgstr ""
+msgstr "Moenie outomaties verfris nie"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Refresh this document"
-msgstr ""
+msgstr "Verfris hierdie dokument"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "every"
-msgstr ""
+msgstr "elke"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "seconds"
-msgstr ""
+msgstr "sekondes"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Redirect from this document"
-msgstr ""
+msgstr "Stuur vanaf hierdie dokument aan"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "after"
-msgstr ""
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FIXEDTEXT.TEXT
-msgid  "seconds"
-msgstr ""
+msgstr "na"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "to URL"
-msgstr ""
+msgstr "aan URL"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "to frame"
-msgstr ""
+msgstr "na raam"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.STRING.TEXT
+#, fuzzy
 msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
-msgstr ""
+msgstr "As u die opsie \"%PLACEHOLDER%\" kies, moet u 'n URL intik."
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Properties"
-msgstr ""
+msgstr "~Eienskappe"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "Naam"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "Soort"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Value"
-msgstr ""
+msgstr "Waarde"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
-msgstr ""
+msgstr "~Voeg by"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
+#, fuzzy
 msgid  "Property Name"
-msgstr ""
+msgstr "Eienskapnaam"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Checked by"
-msgstr ""
+msgstr "Gekontroleer deur"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Client"
-msgstr ""
+msgstr "Kliënt"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Date completed"
-msgstr ""
+msgstr "Datum voltooi"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Department"
-msgstr ""
+msgstr "Afdeling"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Destinations"
-msgstr ""
+msgstr "Bestemmings"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Disposition"
-msgstr ""
+msgstr "Disposisie"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Division"
-msgstr ""
+msgstr "Verdeling"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Document number"
-msgstr ""
+msgstr "Dokumentnommer"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Editor"
-msgstr ""
+msgstr "Redakteur"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
+#, fuzzy
 msgid  "E-Mail"
-msgstr ""
+msgstr "E-pos"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Forward to"
-msgstr ""
+msgstr "Gaan vorentoe na"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Group"
-msgstr ""
+msgstr "Groepeer"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Info"
-msgstr ""
+msgstr "Inligting"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Language"
-msgstr ""
+msgstr "Taal"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Mailstop"
-msgstr ""
+msgstr "Posstop"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Matter"
-msgstr ""
+msgstr "Materie"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Office"
-msgstr ""
+msgstr "Kantoor"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Owner"
-msgstr ""
+msgstr "Eienaar"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Project"
-msgstr ""
+msgstr "Projek"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Publisher"
-msgstr ""
+msgstr "Uitgewer"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Purpose"
-msgstr ""
+msgstr "Doel"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Received from"
-msgstr ""
+msgstr "Ontvang deur"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Recorded by"
-msgstr ""
+msgstr "Opgeneem deur"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Recorded date"
-msgstr ""
+msgstr "Opgeneemde datum"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Reference"
-msgstr ""
+msgstr "Verwysing"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Source"
-msgstr ""
+msgstr "Bron"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Status"
-msgstr ""
+msgstr "Status"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Telephone number"
-msgstr ""
+msgstr "Telefoonnommer"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Typist"
-msgstr ""
+msgstr "Tikster"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
+#, fuzzy
 msgid  "URL"
-msgstr ""
+msgstr "URL"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "Teks"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 msgid  "DateTime"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Date"
-msgstr ""
+msgstr "Datum"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Duration"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Number"
-msgstr ""
+msgstr "Nommer"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Yes or no"
-msgstr ""
+msgstr "Ja of nee"
 
 #: dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.STRING.TEXT
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "Nee"
 
 #: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Remove Property"
-msgstr ""
-
-#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
-msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
-msgstr ""
+msgstr "Verwyder eienskap"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Properties of "
-msgstr ""
+msgstr "Eienskappe van "
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "Algemeen"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "Beskrywing"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Custom Properties"
-msgstr ""
+msgstr "Doelgemaakte eienskappe"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Security"
-msgstr ""
+msgstr "Sekuriteit"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.MODALDIALOG.TEXT
 msgid  "Edit Duration"
-msgstr ""
-
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FIXEDLINE.TEXT
-msgid  "Duration"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CHECKBOX.TEXT
@@ -1532,116 +1803,126 @@ msgid  "Min~utes"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Seconds"
-msgstr ""
+msgstr "sekondes"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 msgid  "Millise~conds"
 msgstr ""
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Edit Field Names"
-msgstr ""
+msgstr "Redigeer veldname"
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Names"
-msgstr ""
+msgstr "Name"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Create Style"
-msgstr ""
+msgstr "Skep styl"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Style name"
-msgstr ""
+msgstr "Stylnaam"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
 msgid  "Style already exists. Overwrite?"
 msgstr ""
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
+#, fuzzy
 msgid  "Record Macro"
-msgstr ""
+msgstr "Neem makro op"
 
 #: dialog/recfloat.src#STR_MACRO_LOSS.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "Wil u werklik die opname kanselleer? Alle stappe wat tot op hierdie stadium opgeneem is, sal verlore gaan."
 
 #: dialog/recfloat.src#STR_CANCEL_RECORDING.STRING.TEXT
+#, fuzzy
 msgid  "Cancel Recording"
-msgstr ""
+msgstr "Kanselleer opname"
 
 #: dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAME kon nie 'n werkende e-posopstelling vind nie. Stoor asseblief hierdie dokument plaaslik en heg dit van binne u e-poskliënt af aan."
 
 #: dialog/dialog.src#STR_RESET.STRING.TEXT
+#, fuzzy
 msgid  "~Reset"
-msgstr ""
+msgstr "~Stel terug"
 
 #: dialog/dialog.src#STR_APPLY.STRING.TEXT
+#, fuzzy
 msgid  "Apply"
-msgstr ""
+msgstr "Pas toe"
 
 #: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
+#, fuzzy
 msgid  "Organizer"
-msgstr ""
+msgstr "Organiseerder"
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This name is already in use."
-msgstr ""
+msgstr "Hierdie naam is reeds in gebruik."
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This Style does not exist."
-msgstr ""
-
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
-msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
-
-#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
-msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "Hierdie styl bestaan nie."
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to delete Style $1?"
-msgstr ""
+msgstr "Wil u werklik styl $1 skrap?"
 
 #: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
+#, fuzzy
 msgid  "You are deleting an applied Style!\n"
-msgstr ""
+msgstr "U is besig om 'n toegepaste styl te skrap!\n"
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "New..."
-msgstr ""
+msgstr "Nuwe..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Modify..."
-msgstr ""
+msgstr "Wysig..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete..."
-msgstr ""
+msgstr "Skrap..."
 
 #: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
+#, fuzzy
 msgid  "Navigator"
-msgstr ""
+msgstr "Navigator"
 
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 msgid  "Task Pane"
 msgstr ""
 
-#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
-msgid  "Sidebar"
-msgstr ""
-
 #: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Faulty password confirmation"
-msgstr ""
+msgstr "Foutiewe wagwoordbevestiging"
 
 #: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
+#, fuzzy
 msgid  "Send"
-msgstr ""
+msgstr "Stuur"
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 msgid  "Dock"
@@ -1652,460 +1933,501 @@ msgid  "Undock"
 msgstr ""
 
 #: dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "View"
-msgstr ""
+msgstr "Bekyk"
 
 #: dialog/taskpane.src#STR_SFX_TASKS.STRING.TEXT
 msgid  "Tasks"
 msgstr ""
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "Hierdie dokument bevat dalk formatering of inhoud wat nie in die %FORMATNAME-lêerformaat gestoor kan word nie. Wil u die dokument in elk geval in hierdie formaat stoor?\n\nGebruik die jongste ODF -lêerformaat om te verseker dat alle formatering en inhoud korrek gestoor word."
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Keep Current Format"
-msgstr ""
+msgstr "~Behou huidige formaat"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Save in ODF Format"
-msgstr ""
+msgstr "~Stoor in ODF-formaat"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~More Information..."
-msgstr ""
+msgstr "~Meer inligting..."
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Ask when not saving in ODF format"
-msgstr ""
+msgstr "~Vra wanneer nie in ODF-formaat stoor nie"
 
 #: view/view.src#STR_NODEFPRINTER.STRING.TEXT
+#, fuzzy
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Geen verstek drukker gevind nie.\nKies asseblief 'n drukker en probeer weer."
 
 #: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
+#, fuzzy
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "Kon nie drukker aansit nie.\nGaan asseblief u drukkeropstelling na."
 
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
+#, fuzzy
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "Hierdie dokument is vir drukker $1 geformateer. Die gespesifiseerde drukker is nie beskikbaar nie.\nWil u die standaard drukker $2 gebruik?"
 
 #: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options..."
-msgstr ""
+msgstr "Opsies..."
 
 #: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Printer Options"
-msgstr ""
+msgstr "Drukkeropsies"
 
 #: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
+#, fuzzy
 msgid  "Printer busy"
-msgstr ""
+msgstr "Drukker besig"
 
 #: view/view.src#STR_ERROR_PRINT.STRING.TEXT
+#, fuzzy
 msgid  "Error while printing"
-msgstr ""
+msgstr "Fout tydens druk"
 
 #: view/view.src#STR_PRINTING.STRING.TEXT
+#, fuzzy
 msgid  "Printing"
-msgstr ""
+msgstr "Druk"
 
 #: view/view.src#STR_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Page "
-msgstr ""
+msgstr "Bladsy "
 
 #: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error saving template "
-msgstr ""
+msgstr "Fout by stoor van sjabloon "
 
 #: view/view.src#STR_READONLY.STRING.TEXT
+#, fuzzy
 msgid  " (read-only)"
-msgstr ""
+msgstr " (leesalleen)"
 
 #: view/view.src#STR_PRINT_NEWORI.STRING.TEXT
+#, fuzzy
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "Die bladsygrootte en -oriëntering is gewysig.\nMoet die nuwe instellings \nin die aktiewe dokument gestoor word?"
 
 #: view/view.src#STR_PRINT_NEWSIZE.STRING.TEXT
+#, fuzzy
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
-
-#: view/view.src#STR_PRINT_NEWORISIZE.STRING.TEXT
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "Die bladsygrootte is gewysig.\nMoet die nuwe instellings in die \naktiewe dokument gestoor word?"
 
 #: view/view.src#STR_PREVIEW_DOCINFO.STRING.TEXT
+#, fuzzy
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Titel:</b><dd>$(TITEL)<dt><b>Onderwerp:</b><dd>$(THEME)<dt><b>Sleutelwoorde:</b><dd>$(KEYWORDS)<dt><b>Beskrywing:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
+#, fuzzy
 msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
-
-#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
-msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Geen dokumenteienskappe gevind nie.</B></FONT></P></BODY></HTML>"
 
 #: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
+#, fuzzy
 msgid  "Print Monitor"
-msgstr ""
+msgstr "Drukmonitor"
 
 #: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "is being printed on"
-msgstr ""
+msgstr "word nou gedruk op"
 
 #: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
+#, fuzzy
 msgid  "is being prepared for printing"
-msgstr ""
-
-#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
+msgstr "word nou voorberei vir druk"
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "Hierdie dokument kan nie geredigeer word nie, moontlik omdat die toegangsregte ontbreek. Wil u 'n kopie van die dokument redigeer?"
 
 #: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  " (repaired document)"
-msgstr ""
+msgstr "  (herstelde dokument)"
 
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
-
-#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
-msgid  "Customization"
-msgstr ""
-
-#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
-msgid  "Restore Default"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
-msgid  "More Options"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
-msgid  "Close Sidebar Deck"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
-msgid  "Panel: "
-msgstr ""
+msgstr "%PRODUCTNAME kon nie 'n webblaaier op u stelsel vind nie. Kontroleer u werkskermvoorkeure of installeer 'n webblaaier (byvoorbeeld Mozilla) in die verstek ligging wat deur die blaaier se installeerder voorgestel word."
 
 #: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Modify Link"
-msgstr ""
+msgstr "Wysig skakel"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Application:"
-msgstr ""
+msgstr "~Toepassing:"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~File:"
-msgstr ""
+msgstr "~Lêer:"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Category:"
-msgstr ""
+msgstr "~Kategorie:"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Modify link"
-msgstr ""
+msgstr "Wysig skakel"
 
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
 msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: appl/app.src#STR_NONAME.STRING.TEXT
+#, fuzzy
 msgid  "Untitled"
-msgstr ""
+msgstr "Titelloos"
 
 #: appl/app.src#STR_CLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "Sluit"
 
 #: appl/app.src#STR_STYLE_FILTER_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
-msgstr ""
+msgstr "Outomaties"
 
 #: appl/app.src#STR_STANDARD_SHORTCUT.STRING.TEXT
+#, fuzzy
 msgid  "Standard"
-msgstr ""
+msgstr "Standaard"
 
 #: appl/app.src#STR_BYTES.STRING.TEXT
+#, fuzzy
 msgid  "Bytes"
-msgstr ""
+msgstr "Grepe"
 
 #: appl/app.src#STR_KB.STRING.TEXT
+#, fuzzy
 msgid  "KB"
-msgstr ""
+msgstr "kilogreep"
 
 #: appl/app.src#STR_MB.STRING.TEXT
+#, fuzzy
 msgid  "MB"
-msgstr ""
+msgstr "megagreep"
 
 #: appl/app.src#STR_GB.STRING.TEXT
+#, fuzzy
 msgid  "GB"
-msgstr ""
+msgstr "gigagreep"
 
 #: appl/app.src#MSG_QUERY_LASTVERSION.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Cancel all changes?"
-msgstr ""
+msgstr "Kanselleer alle wysigings?"
 
 #: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "Document already open."
-msgstr ""
+msgstr "Dokument reeds oop."
 
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "%PRODUCTNAME kon nie 'n webblaaier op u stelsel vind nie. Kontroleer u werkskermvoorkeure of installeer 'n webblaaier (byvoorbeeld Mozilla) in die verstek ligging wat deur die blaaier se installeerder voorgestel word."
 
 #: appl/app.src#GID_INTERN.STRING.TEXT
+#, fuzzy
 msgid  "Internal"
-msgstr ""
+msgstr "Interne"
 
 #: appl/app.src#GID_APPLICATION.STRING.TEXT
+#, fuzzy
 msgid  "Application"
-msgstr ""
+msgstr "Toepassing"
 
 #: appl/app.src#GID_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "View"
-msgstr ""
+msgstr "Bekyk"
 
 #: appl/app.src#GID_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "Documents"
-msgstr ""
+msgstr "Dokumente"
 
 #: appl/app.src#GID_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit"
-msgstr ""
+msgstr "Redigeer"
 
 #: appl/app.src#GID_MACRO.STRING.TEXT
+#, fuzzy
 msgid  "BASIC"
-msgstr ""
+msgstr "BASIC"
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "Opsies"
 
 #: appl/app.src#GID_MATH.STRING.TEXT
+#, fuzzy
 msgid  "Math"
-msgstr ""
+msgstr "Wiskunde"
 
 #: appl/app.src#GID_NAVIGATOR.STRING.TEXT
+#, fuzzy
 msgid  "Navigate"
-msgstr ""
+msgstr "Navigeer"
 
 #: appl/app.src#GID_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr "Voeg in"
 
 #: appl/app.src#GID_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "Formaat"
 
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "Sjablone"
 
 #: appl/app.src#GID_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "Teks"
 
 #: appl/app.src#GID_FRAME.STRING.TEXT
+#, fuzzy
 msgid  "Frame"
-msgstr ""
+msgstr "Raam"
 
 #: appl/app.src#GID_GRAPHIC.STRING.TEXT
+#, fuzzy
 msgid  "Graphic"
-msgstr ""
+msgstr "Grafika"
 
 #: appl/app.src#GID_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "Tabel"
 
 #: appl/app.src#GID_ENUMERATION.STRING.TEXT
+#, fuzzy
 msgid  "Numbering"
-msgstr ""
+msgstr "Nommering"
 
 #: appl/app.src#GID_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Data"
-msgstr ""
+msgstr "Data"
 
 #: appl/app.src#GID_SPECIAL.STRING.TEXT
+#, fuzzy
 msgid  "Special Functions"
-msgstr ""
+msgstr "Spesiale funksies"
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
+#, fuzzy
 msgid  "Image"
-msgstr ""
+msgstr "Beeld"
 
 #: appl/app.src#GID_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Chart"
-msgstr ""
+msgstr "Grafiek"
 
 #: appl/app.src#GID_EXPLORER.STRING.TEXT
+#, fuzzy
 msgid  "Explorer"
-msgstr ""
+msgstr "Explorer"
 
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
+#, fuzzy
 msgid  "Connector"
-msgstr ""
+msgstr "Verbinder"
 
 #: appl/app.src#GID_MODIFY.STRING.TEXT
+#, fuzzy
 msgid  "Modify"
-msgstr ""
+msgstr "Wysig"
 
 #: appl/app.src#GID_DRAWING.STRING.TEXT
+#, fuzzy
 msgid  "Drawing"
-msgstr ""
+msgstr "Tekening"
 
 #: appl/app.src#GID_CONTROLS.STRING.TEXT
+#, fuzzy
 msgid  "Controls"
-msgstr ""
-
-#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
-msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "Kontroles"
 
 #: appl/app.src#STR_ISMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to save the changes to %1?"
-msgstr ""
+msgstr "Wil u die wysigings aan %1 stoor?"
 
 #: appl/app.src#STR_QUITAPP.STRING.TEXT
+#, fuzzy
 msgid  "E~xit"
-msgstr ""
+msgstr "Af~sluit"
 
 #: appl/app.src#RID_STR_HELP.STRING.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "Hulp"
 
 #: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
+#, fuzzy
 msgid  "No automatic start at 'XX'"
-msgstr ""
+msgstr "Geen outomatiese begin by 'XX' nie"
 
 #: appl/app.src#RID_HELPBAR.STRING.TEXT
+#, fuzzy
 msgid  "Help Bar"
-msgstr ""
+msgstr "Hulpbalk"
 
 #: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
+#, fuzzy
 msgid  "The help file for this topic is not installed."
-msgstr ""
+msgstr "Die hulplêer vir hierdie toepassing is nie geïnstalleer nie."
 
 #: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Function Bar"
-msgstr ""
+msgstr "Funksiebalk"
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "'n Fout het in die spesiale opstelling voorgekom.\nRaadpleeg asseblief u administrateur."
 
 #: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
+#, fuzzy
 msgid  "Exit Quickstarter"
-msgstr ""
+msgstr "Verlaat Snelbeginner"
 
 #: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION-snelbeginner"
 
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
+#, fuzzy
 msgid  "Open Document..."
-msgstr ""
+msgstr "OpenDokument..."
 
 #: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "From Template..."
-msgstr ""
+msgstr "Vanaf sjabloon..."
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
+#, fuzzy
 msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr ""
+msgstr "Laai %PRODUCTNAME wanneer rekenaar aanskakel"
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
+#, fuzzy
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "Deaktiveer Snelbeginner in stelsellaai"
 
 #: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
+#, fuzzy
 msgid  "File"
-msgstr ""
+msgstr "Lêer"
 
 #: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
+#, fuzzy
 msgid  "Startcenter"
-msgstr ""
+msgstr "Beginsentrum"
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
+#, fuzzy
 msgid  "Recent Documents"
-msgstr ""
+msgstr "Onlangse dokumente"
 
 #: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
+#, fuzzy
 msgid  "Update all links?"
-msgstr ""
+msgstr "Werk alle skakels by?"
 
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "DDE link to % for % area % are not available."
-msgstr ""
+msgstr "DDE-skakel na % vir % ruimte % is nie beskikbaar nie."
 
 #: appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WARNINGBOX.MESSAGE
+#, fuzzy
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
-msgstr ""
-
-#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
-msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "Hierdie hiperskakel sal \"%s\" oopmaak. Wil u voortgaan?"
 
 #: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Security Warning"
-msgstr ""
-
-#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
-msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
-
-#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "Sekuriteitswaarskuwing"
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "Hierdie dokument moet in OpenDocument-lêerformaat gestoor wees voor dit digitaal onderteken kan word."
 
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
+#, fuzzy
 msgid  " (Signed)"
-msgstr ""
-
-#: appl/app.src#STR_STANDARD.STRING.TEXT
-msgid  "Standard"
-msgstr ""
+msgstr " (Onderteken)"
 
 #: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "Dokumente"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
+#, fuzzy
 msgid  "- None -"
-msgstr ""
-
-#: appl/app.src#RID_SVXSTR_GRAFIKLINK.STRING.TEXT
-msgid  "Graphic"
-msgstr ""
+msgstr "- Geen -"
 
 #: appl/app.src#STR_SFX_FILTERNAME_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All files (*.*)"
-msgstr ""
+msgstr "Alle lêers (*.*)"
 
 #: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
 msgid  "Link graphics"
 msgstr ""
 
 #: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
+#, fuzzy
 msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr ""
+msgstr "'n Geskikte komponentmetode %1\nkon nie gevind word nie.\n\nKontroleer die spelling van die metodenaam."
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT
 msgid  "Graphics file cannot be opened"
@@ -2132,141 +2454,166 @@ msgid  "Not enough memory to insert graphic"
 msgstr ""
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Contents"
-msgstr ""
+msgstr "Inhoud"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Index"
-msgstr ""
+msgstr "Indeks"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Find"
-msgstr ""
+msgstr "Vind"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Bookmarks"
-msgstr ""
+msgstr "Boekmerke"
 
 #: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Search term"
-msgstr ""
+msgstr "~Soekterm"
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Display"
-msgstr ""
+msgstr "~Vertoon"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~earch term"
-msgstr ""
+msgstr "So~ekterm"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
-msgstr ""
+msgstr "~Vind"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Complete words only"
-msgstr ""
+msgstr "Sle~gs volledige woorde"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Find in ~headings only"
-msgstr ""
-
-#: appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PUSHBUTTON.TEXT
-msgid  "~Display"
-msgstr ""
+msgstr "Vind slegs in ~opskrifte"
 
 #: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Bookmarks"
-msgstr ""
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PUSHBUTTON.TEXT
-msgid  "~Display"
-msgstr ""
+msgstr "~Boekmerke"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Help"
-msgstr ""
+msgstr "%PRODUCTNAME-hulp"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.STRING.TEXT
+#, fuzzy
 msgid  "Show Navigation Pane"
-msgstr ""
+msgstr "Vertoon navigasiepaneel"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.STRING.TEXT
+#, fuzzy
 msgid  "Hide Navigation Pane"
-msgstr ""
+msgstr "Versteek navigasiepaneel"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
+#, fuzzy
 msgid  "First Page"
-msgstr ""
+msgstr "Eerste bladsy"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
+#, fuzzy
 msgid  "Previous Page"
-msgstr ""
+msgstr "Vorige bladsy"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
+#, fuzzy
 msgid  "Next Page"
-msgstr ""
+msgstr "Volgende bladsy"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
+#, fuzzy
 msgid  "Print..."
-msgstr ""
+msgstr "Druk..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
+#, fuzzy
 msgid  "Add to Bookmarks..."
-msgstr ""
+msgstr "Voeg by boekmerke..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
+#, fuzzy
 msgid  "Find on this Page..."
-msgstr ""
+msgstr "Vind op hierdie bladsy..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
+#, fuzzy
 msgid  "HTML Source"
-msgstr ""
+msgstr "HTML-bronkode"
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "The Help is being started..."
-msgstr ""
+msgstr "Die hulp word begin..."
 
 #: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Select Text"
-msgstr ""
+msgstr "Selekteer teks"
 
 #: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
+#, fuzzy
 msgid  "~Copy"
-msgstr ""
+msgstr "~Kopieer"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Add to Bookmarks"
-msgstr ""
+msgstr "Voeg by boekmerke"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bookmark:"
-msgstr ""
+msgstr "Boekmerk:"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
+#, fuzzy
 msgid  "Rename Bookmark"
-msgstr ""
+msgstr "Hernoem boekmerk"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Display"
-msgstr ""
+msgstr "Vertoon"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rename..."
-msgstr ""
+msgstr "Hernoem..."
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "Skrap"
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "No topics found."
-msgstr ""
+msgstr "Geen onderwerpe gevind nie."
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "The text you entered was not found."
-msgstr ""
+msgstr "Die teks wat u ingetik het, is nie gevind nie."
 
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
-msgstr ""
+msgstr "~Vertoon %PRODUCTNAME %MODULENAME-hulp tydens laai"

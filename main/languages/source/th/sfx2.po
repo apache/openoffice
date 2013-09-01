@@ -32,32 +32,39 @@ msgstr ""
 
 
 #: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
+#, fuzzy
 msgid  "Configuration Menu"
-msgstr ""
+msgstr "เมนูโครงแบบ"
 
 #: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
+#, fuzzy
 msgid  "~Add-Ons"
-msgstr ""
+msgstr "โ~ปรแกรมเสริม"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Cu~t"
-msgstr ""
+msgstr "ตั~ด"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Copy"
-msgstr ""
+msgstr "~คัดลอก"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Paste"
-msgstr ""
+msgstr "~วาง"
 
 #: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
+#, fuzzy
 msgid  "Leave Full-Screen Mode"
-msgstr ""
+msgstr "Leave Full-Screen Mode"
 
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
+#, fuzzy
 msgid  "Add-~On Help"
-msgstr ""
+msgstr "Add-~On Help"
 
 #: menu/menu.src#STR_MENU_SYNONYMS.STRING.TEXT
 msgid  "Synonyms"
@@ -72,436 +79,509 @@ msgid  "~Thesaurus..."
 msgstr ""
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
+#, fuzzy
 msgid  "My Templates"
-msgstr ""
+msgstr "ค่าเริ่มต้น"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Business Correspondence"
-msgstr ""
+msgstr "การโต้ตอบทางธุรกิจ"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Other Business Documents"
-msgstr ""
+msgstr "เอกสารธุรกิจอื่น ๆ"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Personal Correspondence and Documents"
-msgstr ""
+msgstr "การโต้ตอบและเอกสารส่วนตัว"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Forms and Contracts"
-msgstr ""
+msgstr "แบบฟอร์มและสัญญา"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Finances"
-msgstr ""
+msgstr "การเงิน"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Education"
-msgstr ""
+msgstr "การศึกษา"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Presentation Backgrounds"
-msgstr ""
+msgstr "พื้นหลังการนำเสนอ"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Presentations"
-msgstr ""
+msgstr "การนำเสนอ"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Miscellaneous"
-msgstr ""
+msgstr "เบ็ดเตล็ด"
 
 #: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
+#, fuzzy
 msgid  "The templates are being initialized for first-time usage."
-msgstr ""
+msgstr "เริ่มแม่แบบสำหรับการใช้ครั้งแรก"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "แม่แบบ"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "New template"
-msgstr ""
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FIXEDLINE.TEXT
-msgid  "Templates"
-msgstr ""
+msgstr "แม่แบบใหม่"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Categories"
-msgstr ""
+msgstr "~ประเภท"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Templates"
-msgstr ""
+msgstr "แ~ม่แบบ"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "แ~ก้ไข"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Organizer..."
-msgstr ""
-
-#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
-msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
-
-#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
-msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "~ตัวจัดระเบียบ..."
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to delete the region \"$1\"?"
-msgstr ""
+msgstr "คุณแน่ใจหรือไม่ที่จะลบบริเวณ \"$1\"?"
 
 #: doc/doc.src#STR_DELETE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to delete the entry \"$1\"?"
-msgstr ""
-
-#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
-msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "คุณแน่ใจหรือไม่ที่ต้องการจะลบรายการ \"$1\"?"
 
 #: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "เอกสาร \"$(DOC)\" ถูกแก้ไขแล้ว\nคุณต้องการบันทึกการเปลี่ยนแปลงหรือไม่?"
 
 #: doc/doc.src#STR_STYLES.STRING.TEXT
+#, fuzzy
 msgid  "Styles"
-msgstr ""
+msgstr "ลักษณะ"
 
 #: doc/doc.src#STR_MACROS.STRING.TEXT
+#, fuzzy
 msgid  "Macros"
-msgstr ""
+msgstr "แมโคร"
 
 #: doc/doc.src#STR_CONFIG.STRING.TEXT
+#, fuzzy
 msgid  "Configuration"
-msgstr ""
+msgstr "โครงแบบ"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Styles in "
-msgstr ""
+msgstr "ลักษณะใน "
 
 #: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
+#, fuzzy
 msgid  "Printing Styles"
-msgstr ""
+msgstr "ลักษณะการพิมพ์"
 
 #: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The print job could not be started."
-msgstr ""
+msgstr "ไม่สามารถเริ่มงานพิมพ์"
 
 #: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
+#, fuzzy
 msgid  "Copy"
-msgstr ""
+msgstr "คัดลอก"
 
 #: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "The template could not be opened."
-msgstr ""
+msgstr "ไม่สามารถเปิดแม่แบบ"
 
 #: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "Document already open for editing."
-msgstr ""
+msgstr "เปิดเอกสารสำหรับการแก้ไขแล้ว"
 
 #: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "Error recording document "
-msgstr ""
+msgstr "เอกสารการบันทึกผิดพลาด "
 
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "แม่แบบ"
 
 #: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr ""
+msgstr "คัดลอกแม่แบบ \"$1\"ผิดพลาด \nชื่อแม่แบบนี้อาจมีอยู่แล้ว"
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "The template \"$1\" can not be deleted."
-msgstr ""
+msgstr "ไม่สามารถลบแม่แบบ \"$1\" ได้"
 
 #: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error moving template \"$1\"."
-msgstr ""
+msgstr "ย้ายแม่แบบ \"$1\"ผิดพลาด"
 
 #: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The update could not be saved."
-msgstr ""
+msgstr "ไม่สามารถบันทึกการปรับข้อมูลได้"
 
 #: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error saving template "
-msgstr ""
+msgstr "บันทึกแม่แบบผิดพลาด "
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Error renaming template."
-msgstr ""
+msgstr "เปลี่ยนชื่อแม่แบบผิดพลาด"
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Error renaming template category."
-msgstr ""
+msgstr "เปลี่ยนชื่อประเภทแม่แบบผิดพลาด"
 
 #: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Please specify a name."
-msgstr ""
-
-#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
-msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "กรุณาระบุชื่อ"
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
-msgstr ""
+msgstr "ต้องการให้แม่แบบ \"$(TEXT)\" กลายเป็นค่าปริยายแม่แบบหรือไม่?"
 
 #: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to reset the default template?"
-msgstr ""
-
-#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
-msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "คุณต้องการตั้งค่าปริยายแม่แบบใหม่หรือไม่?"
 
 #: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "Document info cannot be read."
-msgstr ""
+msgstr "ไม่สามารถอ่านข้อมูลเอกสารได้"
 
 #: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
+#, fuzzy
 msgid  "The selected file has an incorrect format."
-msgstr ""
+msgstr "แฟ้มที่เลือกมีรูปแบบไม่ถูกต้อง"
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "ไม่สามารถบันทึกเอกสารในรูปแบบ $(FORMAT)  คุณ\nต้องการบันทึกการเปลี่ยนแปลงการใช้รูปแบบ $(OWNFORMAT) หรือไม่?"
 
 #: doc/doc.src#STR_SAVEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Save"
-msgstr ""
+msgstr "~บันทึก"
 
 #: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Update"
-msgstr ""
+msgstr "~ปรับข้อมูล"
 
 #: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
+#, fuzzy
 msgid  "Save ~As..."
-msgstr ""
+msgstr "บันทึกเ~ป็น..."
 
 #: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
+#, fuzzy
 msgid  "Save Copy ~as..."
-msgstr ""
+msgstr "บันทึกสำเนาเ~ป็น..."
 
 #: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "~ปิด"
 
 #: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
+#, fuzzy
 msgid  "~Close & Return to "
-msgstr ""
+msgstr "~ปิดและกลับไปยัง "
 
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  " AutoPilot"
-msgstr ""
+msgstr " นำร่องอัตโนมัติ"
 
 #: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
+#, fuzzy
 msgid  "Configurations"
-msgstr ""
+msgstr "โครงแบบ"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Basic libraries"
-msgstr ""
+msgstr "ไลบรารีพื้นฐาน %PRODUCTNAME "
 
 #: doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.STRING.TEXT
+#, fuzzy
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
-msgstr ""
+msgstr "ต้องการแทนที่ลักษณะ \"$(ARG1)\" หรือไม่?"
 
 #: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
+#, fuzzy
 msgid  "Loading Document"
-msgstr ""
+msgstr "กำลังโหลดเอกสาร"
 
 #: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
+#, fuzzy
 msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr ""
+msgstr "เชื่อมต่อ: $(HOST) กำลังรอการตอบสนอง..."
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
+#, fuzzy
 msgid  "Opening $(TARGET) at $(HOST)"
-msgstr ""
+msgstr "กำลังเปิด $(TARGET) ที่ $(HOST)"
 
 #: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr ""
+msgstr "กำลังโหลด: $(TARGET) จาก $(HOST). โหลด: $(BYTE)"
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
+#, fuzzy
 msgid  "Disconnected"
-msgstr ""
-
-#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
-msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "ไม่เชื่อมต่อ"
 
 #: doc/doc.src#STR_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit"
-msgstr ""
+msgstr "แก้ไข"
 
 #: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Documents"
-msgstr ""
+msgstr "เอกสาร %PRODUCTNAME "
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Propert~ies..."
-msgstr ""
+msgstr "คุณ~สมบัติ ..."
 
 #: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
+#, fuzzy
 msgid  "HTML (FrameSet)"
-msgstr ""
+msgstr "HTML (FrameSet)"
 
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
-msgstr ""
+msgstr "เอกสารกรอบ%PRODUCTNAME "
 
 #: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr ""
+msgstr "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?ไม่พบแม่แบบ \"$(TEMPLATE)\" ที่ที่ตั้งเดิม  มีชื่อแม่แบบเหมือนกันอยู่ที่ \"$(FOUND)\" ต้องการใช้แม่แบบนี้ในอนาคตเมื่อทำการเปรียบเทียบหรือไม่?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgstr "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?ไม่พบแม่แบบ \"$(TEMPLATE)\"   ต้องการมองหาแม่แบบสำหรับเอกสารครั้งถัดไปที่ถูกเปิดหรือไม่ ?"
 
 #: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
+#, fuzzy
 msgid  "Automatically saved version"
-msgstr ""
+msgstr "บันทึกรุ่นอัตโนมัติ"
 
 #: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
+#, fuzzy
 msgid  "Text Document"
-msgstr ""
+msgstr "เอกสารข้อความ"
 
 #: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
+#, fuzzy
 msgid  "HTML Document"
-msgstr ""
+msgstr "เอกสาร HTML "
 
 #: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
+#, fuzzy
 msgid  "Master Document"
-msgstr ""
+msgstr "ต้นแบบเอกสาร"
 
 #: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
+#, fuzzy
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "ตารางคำนวณ"
 
 #: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
+#, fuzzy
 msgid  "Presentation"
-msgstr ""
+msgstr "การนำเสนอ"
 
 #: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
+#, fuzzy
 msgid  "Drawing"
-msgstr ""
+msgstr "วาดรูป"
 
 #: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "Message"
-msgstr ""
+msgstr "ข้อความ"
 
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
+#, fuzzy
 msgid  "~Discard"
-msgstr ""
+msgstr "~ละทิ้ง"
 
 #: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
+#, fuzzy
 msgid  "Access to the current data medium not possible."
-msgstr ""
+msgstr "การเข้าถึงสื่อข้อมูลปัจจุบันเป็นไปไม่ได้"
 
 #: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
+#, fuzzy
 msgid  "Insert the next data carrier and click OK."
-msgstr ""
+msgstr "แทรกข้อมูลถัดไป และกด ตกลง"
 
 #: doc/doc.src#STR_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Object"
-msgstr ""
+msgstr "วัตถุ"
 
 #: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
+#, fuzzy
 msgid  "Run Macro"
-msgstr ""
+msgstr "Run Macro"
 
 #: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "This document contains macros. $(TEXT)"
-msgstr ""
+msgstr "เอกสารนี้มีแมโคร $(TEXT)"
 
 #: doc/doc.src#BTN_OK.STRING.TEXT
+#, fuzzy
 msgid  "Run"
-msgstr ""
+msgstr "ใช้งาน"
 
 #: doc/doc.src#BTN_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "Do Not Run"
-msgstr ""
+msgstr "ไม่ใช้งาน"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?จากการตั้งค่าความปลอดภัย, แมโครในเอกสารนี้ไม่ควรใช้งาน. คุณต้องการใช้งานมันอยู่ดีหรือไม่?"
 
 #: doc/doc.src#FT_OK.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to allow these macros to be run?"
-msgstr ""
+msgstr "คุณจะอนุญาตให้ใช้งานแมโครดังกล่าวหรือไม่?"
 
 #: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Export as PDF"
-msgstr ""
+msgstr "ส่งออกเป็น PDF"
 
 #: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Export..."
-msgstr ""
+msgstr "ส่งออก..."
 
 #: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Export"
-msgstr ""
+msgstr "ส่งออก"
 
 #: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
+#, fuzzy
 msgid  "Add this directory to the list of secure paths: "
-msgstr ""
+msgstr "เพิ่มไดเรกทอรีนี้ในรายการไดเรกทอรีที่ปลอดภัย: "
 
 #: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "File format:"
-msgstr ""
+msgstr "รูปแบบแฟ้ม:"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
+#, fuzzy
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "This document contains:\n\n"
 
 #: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
+#, fuzzy
 msgid  "Recorded changes"
-msgstr ""
+msgstr "Recorded changes"
 
 #: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
+#, fuzzy
 msgid  "Notes"
-msgstr ""
+msgstr "บันทึก"
 
 #: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
+#, fuzzy
 msgid  "Document versions"
-msgstr ""
+msgstr "หมายเลขรุ่นเอกสาร"
 
 #: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
+#, fuzzy
 msgid  "Fields"
-msgstr ""
+msgstr "Fields"
 
 #: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
+#, fuzzy
 msgid  "Linked data..."
-msgstr ""
+msgstr "Linked data..."
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue saving the document?"
-msgstr ""
+msgstr "Do you want to continue saving the document?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue printing the document?"
-msgstr ""
+msgstr "Do you want to continue printing the document?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue signing the document?"
-msgstr ""
+msgstr "Do you want to continue signing the document?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue creating a PDF file?"
-msgstr ""
+msgstr "Do you want to continue creating a PDF file?"
 
 #: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr ""
+msgstr "If you do not want to overwrite the original document, you should save your work under a new filename."
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
+#, fuzzy
 msgid  "Some template files are protected and can not be deleted."
-msgstr ""
+msgstr "Some template files are protected and can not be deleted."
 
 #: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
 msgid  "Info %1"
@@ -513,10 +593,6 @@ msgstr ""
 
 #: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr ""
-
-#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
 msgstr ""
 
 #: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
@@ -532,328 +608,398 @@ msgid  "~Keep Old Styles"
 msgstr ""
 
 #: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Template Management"
-msgstr ""
+msgstr "การจัดการแม่แบบ"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "ปิด"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~File..."
-msgstr ""
+msgstr "แ~ฟ้ม..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Address Book..."
-msgstr ""
+msgstr "สมุด~ที่อยู่..."
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "แม่แบบ"
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Documents"
-msgstr ""
-
-#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Templates"
-msgstr ""
-
-#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Documents"
-msgstr ""
+msgstr "เอกสาร"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
+#, fuzzy
 msgid  "Commands"
-msgstr ""
+msgstr "คำสั่ง"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "~New"
-msgstr ""
+msgstr "ใ~หม่"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "~ลบ"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "แ~ก้ไข"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
+#, fuzzy
 msgid  "Import Template..."
-msgstr ""
+msgstr "นำเข้าแม่แบบ..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MENUITEM.TEXT
+#, fuzzy
 msgid  "Export Template..."
-msgstr ""
+msgstr "ส่งออกแม่แบบ..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Print"
-msgstr ""
+msgstr "~พิมพ์"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "Printer Settings..."
-msgstr ""
+msgstr "ตั้งค่าเครื่องพิมพ์..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Update"
-msgstr ""
+msgstr "ปรับข้อมูล"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Set As Default Template"
-msgstr ""
+msgstr "ตั้งเป็นค่าปริยายแม่แบบ"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Reset Default Template"
-msgstr ""
+msgstr "ตั้งค่าปริยายแม่แบบใหม่"
 
 #: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "New"
-msgstr ""
+msgstr "ใหม่"
 
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Categories"
-msgstr ""
+msgstr "~ประเภท"
 
 #: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "T~emplates"
-msgstr ""
+msgstr "แม่แ~บบ"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
+#, fuzzy
 msgid  "~More"
-msgstr ""
+msgstr "~รายละเอียด"
 
 #: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Pre~view"
-msgstr ""
+msgstr "แสด~งตัวอย่าง"
 
 #: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "คำอธิบาย"
 
 #: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Te~xt"
-msgstr ""
+msgstr "ข้อ~ความ"
 
 #: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Frame"
-msgstr ""
+msgstr "~กรอบ"
 
 #: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Pages"
-msgstr ""
+msgstr "~หน้า"
 
 #: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "N~umbering"
-msgstr ""
+msgstr "ลำดับ~ตัวเลข"
 
 #: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Overwrite"
-msgstr ""
+msgstr "เ~ขียนทับ"
 
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "From File..."
-msgstr ""
+msgstr "จากแฟ้ม..."
 
 #: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Load Styles"
-msgstr ""
+msgstr "โหลดแม่แบบ"
 
 #: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "~ชื่อ"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Subject"
-msgstr ""
+msgstr "ชื่อเรื่อง"
 
 #: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Key words"
-msgstr ""
+msgstr "คำ~สำคัญ"
 
 #: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Description"
-msgstr ""
+msgstr "~คำอธิบาย"
 
 #: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
+#, fuzzy
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "ตัวแปลงที่เลือก $(FILTER) ยังไม่ได้มีการติดตั้ง\nคุณต้องการติดตั้งขณะนี้หรือไม่?"
 
 #: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
+#, fuzzy
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Reduce print data"
-msgstr ""
+msgstr "ลดข้อมูลการพิมพ์"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Settings for"
-msgstr ""
+msgstr "กำหนดสำหรับ"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Printer"
-msgstr ""
+msgstr "เ~ครื่องพิมพ์"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Print to ~file"
-msgstr ""
+msgstr "พิมพ์ถึงแ~ฟ้ม"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Reduce transparency"
-msgstr ""
+msgstr "~ลดความโปร่งแสง"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Auto~matically"
-msgstr ""
+msgstr "อย่างอัตโน~มัติ"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~No transparency"
-msgstr ""
+msgstr "ไ~ม่โปร่งแสง"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Reduce ~gradients"
-msgstr ""
+msgstr "ลดตัวไ~ล่ระดับสี"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Gradient ~stripes"
-msgstr ""
+msgstr "~ลายทางไล่ระดับสี"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Intermediate ~color"
-msgstr ""
+msgstr "~สีระดับกลาง"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Reduce ~bitmaps"
-msgstr ""
+msgstr "ลด~บิตแมป"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~High print quality"
-msgstr ""
+msgstr "คุณภาพการพิมพ์~สูง"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "N~ormal print quality"
-msgstr ""
+msgstr "คุณภาพการพิมพ์ป~กติ"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Reso~lution"
-msgstr ""
+msgstr "ความ~ละเอียด"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "72 DPI"
-msgstr ""
+msgstr "72 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "96 DPI"
-msgstr ""
+msgstr "96 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "150 DPI (Fax)"
-msgstr ""
+msgstr "150 DPI (โทรสาร)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "200 DPI (default)"
-msgstr ""
+msgstr "200 DPI (ค่าปริยาย)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "300 DPI"
-msgstr ""
+msgstr "300 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "600 DPI"
-msgstr ""
+msgstr "600 DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include transparent ob~jects"
-msgstr ""
+msgstr "รวมวัต~ถุโปร่งแสง"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Con~vert colors to grayscale"
-msgstr ""
+msgstr "แ~ปลงสีเป็นระดับสีเทา"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Printer warnings"
-msgstr ""
+msgstr "คำเตือนเครื่องพิมพ์"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "P~aper size"
-msgstr ""
+msgstr "~ขนาดกระดาษ"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Pap~er orientation"
-msgstr ""
+msgstr "แ~นวกระดาษ"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Transparency"
-msgstr ""
+msgstr "โ~ปร่งแสง"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Warning"
-msgstr ""
+msgstr "คำเตือน"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr "เอกสารของคุณมีวัตถุโปร่งแสง\nซึ่งจะทำให้การพิมพ์ใช้เวลานาน\nต้องการลดการใช้ความโปร่งแสงหรือไม่?"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Yes"
-msgstr ""
+msgstr "ใ~ช่"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~No"
-msgstr ""
+msgstr "ใ~ม่ใช่"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Cancel"
-msgstr ""
+msgstr "~ยกเลิก"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Do not show warning again"
-msgstr ""
+msgstr "~ไม่ต้องแสดงคำเตือนอีก"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Style Catalog"
-msgstr ""
+msgstr "รายการลักษณะ"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Organizer..."
-msgstr ""
+msgstr "~ตัวจัดระเบียบ..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete..."
-msgstr ""
+msgstr "~ลบ..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Modify..."
-msgstr ""
+msgstr "~แก้ไข..."
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
-msgstr ""
+msgstr "ใ~หม่..."
 
 #: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
 msgid  "Style List"
 msgstr ""
 
 #: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
+#, fuzzy
 msgid  "Hierarchical"
-msgstr ""
+msgstr "ลำดับชั้น"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
+#, fuzzy
 msgid  "Styles and Formatting"
-msgstr ""
+msgstr "รูปแบบและการจัดรูปแบบ"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Fill Format Mode"
-msgstr ""
+msgstr "โหมดเติมรูปแบบ"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "New Style from Selection"
-msgstr ""
+msgstr "ลักษณะใหม่จากที่เลือก"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Update Style"
-msgstr ""
+msgstr "ปรับข้อมูลรูปแบบ"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 msgid  "File encryption password"
@@ -916,388 +1062,468 @@ msgid  "Incorrect password"
 msgstr ""
 
 #: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "New versions"
-msgstr ""
+msgstr "รุ่นใหม่"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Save ~New Version"
-msgstr ""
+msgstr "บันทึกรุ่นให~ม่"
 
 #: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Always save a version on closing"
-msgstr ""
+msgstr "บันทึกรุ่น~ขณะปิดเสมอ"
 
 #: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Existing versions"
-msgstr ""
+msgstr "รุ่นที่มีอยู่"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Date and time"
-msgstr ""
+msgstr "วันที่และเวลา"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Saved by"
-msgstr ""
+msgstr "บันทึกโดย"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comments"
-msgstr ""
+msgstr "ข้อคิดเห็น"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "~ปิด"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Open"
-msgstr ""
+msgstr "เปิด"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Show..."
-msgstr ""
+msgstr "แ~สดง..."
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "~ลบ"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Compare"
-msgstr ""
+msgstr "เปรียบเทียบ"
 
 #: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Versions of"
-msgstr ""
+msgstr "รุ่นของ"
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Date and time : "
-msgstr ""
+msgstr "วันที่และเวลา : "
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Saved by "
-msgstr ""
+msgstr "บันทึกโดย "
 
 #: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "~ปิด"
 
 #: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Insert Version Comment"
-msgstr ""
+msgstr "แทรกข้อคิดเห็นของรุ่น"
 
 #: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
+#, fuzzy
 msgid  "Version comment"
-msgstr ""
+msgstr "ข้อคิดเห็นของรุ่น"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "~ชื่อ"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~AutoUpdate"
-msgstr ""
+msgstr "ปรับข้อมูล~อัตโนมัติ"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ne~xt Style"
-msgstr ""
+msgstr "ลักษณะถั~ดไป"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Linked with"
-msgstr ""
+msgstr "บน~พื้นฐาน"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Category"
-msgstr ""
+msgstr "~ประเภท"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Contains"
-msgstr ""
+msgstr "มี"
 
 #: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
+#, fuzzy
 msgid  "Current version"
-msgstr ""
+msgstr "รุ่นปัจจุบัน"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
+#, fuzzy
 msgid  "Export"
-msgstr ""
+msgstr "ส่งออก"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr "แทรก"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
+#, fuzzy
 msgid  "~Insert"
-msgstr ""
+msgstr "แ~ทรก"
 
 #: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
+#, fuzzy
 msgid  "<All formats>"
-msgstr ""
+msgstr "<รูปแบบทั้งหมด>"
 
 #: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
+#, fuzzy
 msgid  "~Automatic file name extension"
-msgstr ""
+msgstr "ส่วนขยายชื่อแฟ้ม~อัตโนมัติ"
 
 #: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
+#, fuzzy
 msgid  "~Selection"
-msgstr ""
+msgstr "เ~ลือก"
 
 #: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
+#, fuzzy
 msgid  "~Link"
-msgstr ""
+msgstr "~ลิงก์"
 
 #: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Pr~eview"
-msgstr ""
+msgstr "แสด~งตัวอย่าง"
 
 #: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "~Read-only"
-msgstr ""
+msgstr "~อ่านอย่างเดียว"
 
 #: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "Save with ~password"
-msgstr ""
+msgstr "บันทึกด้วย~รหัสผ่าน"
 
 #: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Edit ~filter settings"
-msgstr ""
+msgstr "แก้ไขการกำหนด~ตัวแปลง"
 
 #: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
+#, fuzzy
 msgid  "~Play"
-msgstr ""
+msgstr "เ~ล่น"
 
 #: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
+#, fuzzy
 msgid  "Sto~p"
-msgstr ""
+msgstr "หยุ~ด"
 
 #: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
+#, fuzzy
 msgid  "~Open"
-msgstr ""
+msgstr "เ~ปิด"
 
 #: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "~Save"
-msgstr ""
+msgstr "~บันทึก"
 
 #: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Style:"
-msgstr ""
+msgstr "ลักษณะ:"
 
 #: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
+#, fuzzy
 msgid  "~Templates:"
-msgstr ""
+msgstr "แ~ม่แบบ:"
 
 #: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
+#, fuzzy
 msgid  "~Version:"
-msgstr ""
+msgstr "เ~วอร์ชั่น:"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
+#, fuzzy
 msgid  "Find on this Page"
-msgstr ""
+msgstr "Find on this Page"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Search for"
-msgstr ""
+msgstr "~ค้นหาสำหรับ"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Whole words only"
-msgstr ""
+msgstr "~Whole words only"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Match case"
-msgstr ""
+msgstr "~Match case"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Wrap ~around"
-msgstr ""
+msgstr "Wrap ~around"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Backwards"
-msgstr ""
+msgstr "~ย้อนกลับ"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
-msgstr ""
+msgstr "~หา"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.STRING.TEXT
-msgid  "Wrap ~around"
-msgstr ""
+msgstr "~ปิด"
 
 #: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Enter Password"
-msgstr ""
+msgstr "ใส่รหัสผ่าน"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User"
-msgstr ""
+msgstr "~ผู้ใช้"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Password"
-msgstr ""
+msgstr "~รหัสผ่าน"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Confirm"
-msgstr ""
+msgstr "~ยืนยัน"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Password"
-msgstr ""
+msgstr "รหัสผ่าน"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "P~assword"
-msgstr ""
+msgstr "รหัสผ่าน"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Confir~m"
-msgstr ""
-
-#: dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.STRING.TEXT
-msgid  "Password"
-msgstr ""
+msgstr "~ยืนยัน"
 
 #: dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME document"
-msgstr ""
+msgstr "%PRODUCTNAME document"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "~ชื่อ"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Subject"
-msgstr ""
+msgstr "~ชื่อเรื่อง"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Keywords"
-msgstr ""
+msgstr "~คำสำคัญ"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Comments"
-msgstr ""
+msgstr "~ข้อคิดเห็น"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type:"
-msgstr ""
+msgstr "ชนิด:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Read-only"
-msgstr ""
+msgstr "~อ่านอย่างเดียว"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Location:"
-msgstr ""
+msgstr "ตำแหน่งแฟ้ม:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Size:"
-msgstr ""
+msgstr "ขนาด:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Created:"
-msgstr ""
+msgstr "สร้าง:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Modified:"
-msgstr ""
+msgstr "แก้ไข:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Digitally signed:"
-msgstr ""
+msgstr "ลงลายมือชื่ออิเล็กทรอนิกส์:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Digital Signature..."
-msgstr ""
+msgstr "ลายมือชื่ออิเล็กทรอนิกส์..."
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
+#, fuzzy
 msgid  "Multiply signed document"
-msgstr ""
+msgstr "เอกสารที่ลงลายมือชื่อหลายคน"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Last printed:"
-msgstr ""
+msgstr "พิมพ์ครั้งสุดท้าย:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Total editing time:"
-msgstr ""
+msgstr "เวลาที่ใช้แก้ไขทั้งหมด:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Revision number:"
-msgstr ""
+msgstr "หมายเลขรุ่นการแก้ไข:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Reset"
-msgstr ""
+msgstr "ตั้~งค่าใหม่"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Apply user data"
-msgstr ""
+msgstr "ใ~ช้ข้อมูลผู้ใช้"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Template:"
-msgstr ""
+msgstr "แม่แบบ:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
+#, fuzzy
 msgid  "unknown"
-msgstr ""
+msgstr "ไม่รู้จัก"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
 msgid  "File Name"
 msgstr ""
 
 #: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Info fields..."
-msgstr ""
+msgstr "กำหนดชื่อหัวข้อเขตข้อมูล..."
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Do not refresh automatically"
-msgstr ""
+msgstr "ไม่ต้องแสดงผลใหม่อัตโนมัติ"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Refresh this document"
-msgstr ""
+msgstr "แสดงผลเอกสารนี้ใหม่"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "every"
-msgstr ""
+msgstr "ทั้งหมด"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "seconds"
-msgstr ""
+msgstr "วินาที"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Redirect from this document"
-msgstr ""
+msgstr "เปลี่ยนทางจากเอกสารนี้"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "after"
-msgstr ""
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FIXEDTEXT.TEXT
-msgid  "seconds"
-msgstr ""
+msgstr "หลังจาก"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "to URL"
-msgstr ""
+msgstr "ไปยัง URL"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "to frame"
-msgstr ""
+msgstr "ไปยังเฟรม"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.STRING.TEXT
+#, fuzzy
 msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
-msgstr ""
+msgstr "ถ้าคุณเลือกตัวเลือก \"%PLACEHOLDER%\" คุณต้องป้อน URL"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Properties"
-msgstr ""
+msgstr "คุณสมบัติ"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "ชื่อ"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "ชนิด:"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
 msgid  "Value"
@@ -1444,6 +1670,7 @@ msgid  "Date"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Duration"
 msgstr ""
 
@@ -1460,8 +1687,9 @@ msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr "~Yes"
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
 msgid  "No"
@@ -1471,29 +1699,29 @@ msgstr ""
 msgid  "Remove Property"
 msgstr ""
 
-#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
-msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
-msgstr ""
-
 #: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Properties of "
-msgstr ""
+msgstr "คุณสมบัติของ "
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "ทั่วไป"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "คำอธิบาย"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
 msgid  "Custom Properties"
 msgstr ""
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Internet"
-msgstr ""
+msgstr "อินเทอร์เน็ต"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 msgid  "Security"
@@ -1501,10 +1729,6 @@ msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.MODALDIALOG.TEXT
 msgid  "Edit Duration"
-msgstr ""
-
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FIXEDLINE.TEXT
-msgid  "Duration"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CHECKBOX.TEXT
@@ -1532,112 +1756,122 @@ msgid  "Min~utes"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Seconds"
-msgstr ""
+msgstr "วินาที"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 msgid  "Millise~conds"
 msgstr ""
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Edit Field Names"
-msgstr ""
+msgstr "แก้ไขชื่อเขตข้อมูล"
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Names"
-msgstr ""
+msgstr "ชื่อ"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Create Style"
-msgstr ""
+msgstr "สร้างลักษณะ"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Style name"
-msgstr ""
+msgstr "ชื่อลักษณะ"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Style already exists. Overwrite?"
-msgstr ""
+msgstr "ลักษณะมีอยู่แล้ว  เขียนทับหรือไม่?"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
+#, fuzzy
 msgid  "Record Macro"
-msgstr ""
+msgstr "บันทึกแมโคร"
 
 #: dialog/recfloat.src#STR_MACRO_LOSS.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "Do you really want to cancel the recording? Any steps recorded up to this point will be lost.Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
 
 #: dialog/recfloat.src#STR_CANCEL_RECORDING.STRING.TEXT
+#, fuzzy
 msgid  "Cancel Recording"
-msgstr ""
+msgstr "ยกเลิกการบันทึก"
 
 #: dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
 
 #: dialog/dialog.src#STR_RESET.STRING.TEXT
+#, fuzzy
 msgid  "~Reset"
-msgstr ""
+msgstr "~ตั้งค่าใหม่"
 
 #: dialog/dialog.src#STR_APPLY.STRING.TEXT
+#, fuzzy
 msgid  "Apply"
-msgstr ""
+msgstr "เริ่มใช้"
 
 #: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
+#, fuzzy
 msgid  "Organizer"
-msgstr ""
+msgstr "ตัวจัดระเบียบ"
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This name is already in use."
-msgstr ""
+msgstr "ชื่อนี้ถูกใช้อยู่แล้ว"
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This Style does not exist."
-msgstr ""
-
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
-msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
-
-#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
-msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "ไม่มีรูปแบบนี้อยู่"
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to delete Style $1?"
-msgstr ""
+msgstr "คุณต้องการลบรูปแบบ $1 จริงหรือไม่?"
 
 #: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
+#, fuzzy
 msgid  "You are deleting an applied Style!\n"
-msgstr ""
+msgstr "คุณกำลังลบรูปแบบประยุกต์!\n"
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "New..."
-msgstr ""
+msgstr "ใหม่..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Modify..."
-msgstr ""
+msgstr "เปลี่ยนแปลง..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete..."
-msgstr ""
+msgstr "ลบ..."
 
 #: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
+#, fuzzy
 msgid  "Navigator"
-msgstr ""
+msgstr "ตัวนำทาง"
 
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 msgid  "Task Pane"
 msgstr ""
 
-#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
-msgid  "Sidebar"
-msgstr ""
-
 #: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Faulty password confirmation"
-msgstr ""
+msgstr "ยืนยันรหัสผ่านไม่ถูกต้อง"
 
 #: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
 msgid  "Send"
@@ -1660,8 +1894,9 @@ msgid  "Tasks"
 msgstr ""
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\n- Click 'Yes' to save in %FORMATNAME file format.\n- Click 'No' to use the latest OpenDocument file format and be sure all formatting and content is saved correctly."
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKBUTTON.TEXT
 msgid  "~Keep Current Format"
@@ -1672,364 +1907,405 @@ msgid  "~Save in ODF Format"
 msgstr ""
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~More Information..."
-msgstr ""
+msgstr "~More Information..."
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
 msgid  "~Ask when not saving in ODF format"
 msgstr ""
 
 #: view/view.src#STR_NODEFPRINTER.STRING.TEXT
+#, fuzzy
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "ไม่พบเครื่องพิมพ์ปริยาย\nกรุณาเลือกเครื่องพิมพ์และลองอีกครั้ง"
 
 #: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
+#, fuzzy
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "ไม่สามารถเริ่มเครื่องพิมพ์ได้\nกรุณาตรวจสอบการกำหนดค่าติดตั้งเครื่องพิมพ์"
 
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
+#, fuzzy
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "จัดรูปแบบเอกสานี้สำหรับเครื่องพิมพ์ $1 แล้ว เครื่องพิมพ์ที่ระบุไม่สามารถใช้งานได้ \nคุณต้องการใช้เครื่องพิมพ์มาตรฐาน $2 หรือไม่?"
 
 #: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options..."
-msgstr ""
+msgstr "ตัวเลือก..."
 
 #: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Printer Options"
-msgstr ""
+msgstr "ตัวเลือกเครื่องพิมพ์"
 
 #: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
+#, fuzzy
 msgid  "Printer busy"
-msgstr ""
+msgstr "เครื่องพิมพ์ไม่ว่าง"
 
 #: view/view.src#STR_ERROR_PRINT.STRING.TEXT
+#, fuzzy
 msgid  "Error while printing"
-msgstr ""
+msgstr "ผิดพลาดขณะพิมพ์"
 
 #: view/view.src#STR_PRINTING.STRING.TEXT
+#, fuzzy
 msgid  "Printing"
-msgstr ""
+msgstr "กำลังพิมพ์"
 
 #: view/view.src#STR_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Page "
-msgstr ""
+msgstr "หน้า "
 
 #: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error saving template "
-msgstr ""
+msgstr "บันทึกแม่แบบผิดพลาด "
 
 #: view/view.src#STR_READONLY.STRING.TEXT
+#, fuzzy
 msgid  " (read-only)"
-msgstr ""
+msgstr " (อ่านอย่างเดียว)"
 
 #: view/view.src#STR_PRINT_NEWORI.STRING.TEXT
+#, fuzzy
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "แก้ไขขนาดและการวางแนวหน้ากระดาษ\n. ต้องการบันทึกการกำหนดใหม่ใน\nเอกสารที่ใช้งานอยู่หรือไม่?"
 
 #: view/view.src#STR_PRINT_NEWSIZE.STRING.TEXT
+#, fuzzy
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
-
-#: view/view.src#STR_PRINT_NEWORISIZE.STRING.TEXT
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "แก้ไขขนาดหน้ากระดาษ\nต้องการบันทึกการกำหนดใหม่\nในเอกสารที่ใช้งานอยู่หรือไม่?"
 
 #: view/view.src#STR_PREVIEW_DOCINFO.STRING.TEXT
+#, fuzzy
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>ชื่อเรื่อง:</b><dd>$(TITEL)<dt><b>หัวเรื่อง:</b><dd>$(THEME)<dt><b>คำสำคัญ:</b><dd>$(KEYWORDS)<dt><b>คำอธิบาย:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
+#, fuzzy
 msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
-
-#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
-msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML><HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>ไม่พบคุณสมบัติของเอกสาร</B></FONT></P></BODY></HTML>"
 
 #: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
+#, fuzzy
 msgid  "Print Monitor"
-msgstr ""
+msgstr "จอการพิมพ์"
 
 #: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "is being printed on"
-msgstr ""
+msgstr "กำลังพิมพ์บน"
 
 #: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
 msgid  "is being prepared for printing"
 msgstr ""
 
-#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
-
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "ไม่สามารถเปิดเอกสารเพื่อแก้ไขได้  เนื่องจาก\nสิทธิในการเข้าถึงอาจผิดพลาด คุณต้องการใช้มันเป็นแม่แบบ\nสำหรับเอกสารใหม่หรือไม่?"
 
 #: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  " (repaired document)"
-msgstr ""
+msgstr " (repaired document)"
 
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr ""
 
-#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
-msgid  "Customization"
-msgstr ""
-
-#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
-msgid  "Restore Default"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
-msgid  "More Options"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
-msgid  "Close Sidebar Deck"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
-msgid  "Panel: "
-msgstr ""
-
 #: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Modify Link"
-msgstr ""
+msgstr "ดัดแปลงแก้ไขการเชื่อมโยง"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Application:"
-msgstr ""
+msgstr "โ~ปรแกรมประยุกต์:"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~File:"
-msgstr ""
+msgstr "แ~ฟ้ม:"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Category:"
-msgstr ""
+msgstr "หมวดรายการ"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Modify link"
-msgstr ""
+msgstr "ดัดแปลงแก้ไขการเชื่อมโยง"
 
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
 msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: appl/app.src#STR_NONAME.STRING.TEXT
+#, fuzzy
 msgid  "Untitled"
-msgstr ""
+msgstr "ไม่มีชื่อ"
 
 #: appl/app.src#STR_CLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "ปิด"
 
 #: appl/app.src#STR_STYLE_FILTER_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
-msgstr ""
+msgstr "อัตโนมัติ"
 
 #: appl/app.src#STR_STANDARD_SHORTCUT.STRING.TEXT
+#, fuzzy
 msgid  "Standard"
-msgstr ""
+msgstr "มาตรฐาน"
 
 #: appl/app.src#STR_BYTES.STRING.TEXT
+#, fuzzy
 msgid  "Bytes"
-msgstr ""
+msgstr "ไบต์"
 
 #: appl/app.src#STR_KB.STRING.TEXT
+#, fuzzy
 msgid  "KB"
-msgstr ""
+msgstr "KB"
 
 #: appl/app.src#STR_MB.STRING.TEXT
+#, fuzzy
 msgid  "MB"
-msgstr ""
+msgstr "MB"
 
 #: appl/app.src#STR_GB.STRING.TEXT
+#, fuzzy
 msgid  "GB"
-msgstr ""
+msgstr "GB"
 
 #: appl/app.src#MSG_QUERY_LASTVERSION.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Cancel all changes?"
-msgstr ""
+msgstr "ยกเลิกการเปลี่ยนทั้งหมดหรือไม่?"
 
 #: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "Document already open."
-msgstr ""
+msgstr "เปิดเอกสารแล้ว"
 
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 
 #: appl/app.src#GID_INTERN.STRING.TEXT
+#, fuzzy
 msgid  "Internal"
-msgstr ""
+msgstr "ภายใน"
 
 #: appl/app.src#GID_APPLICATION.STRING.TEXT
+#, fuzzy
 msgid  "Application"
-msgstr ""
+msgstr "โปรแกรม"
 
 #: appl/app.src#GID_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "View"
-msgstr ""
+msgstr "มุมมอง"
 
 #: appl/app.src#GID_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "Documents"
-msgstr ""
+msgstr "เอกสาร"
 
 #: appl/app.src#GID_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit"
-msgstr ""
+msgstr "แก้ไข"
 
 #: appl/app.src#GID_MACRO.STRING.TEXT
+#, fuzzy
 msgid  "BASIC"
-msgstr ""
+msgstr "BASIC"
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "ตัวเลือก"
 
 #: appl/app.src#GID_MATH.STRING.TEXT
+#, fuzzy
 msgid  "Math"
-msgstr ""
+msgstr "คณิตศาสตร์"
 
 #: appl/app.src#GID_NAVIGATOR.STRING.TEXT
+#, fuzzy
 msgid  "Navigate"
-msgstr ""
+msgstr "นำทาง"
 
 #: appl/app.src#GID_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr "แทรก"
 
 #: appl/app.src#GID_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "รูปแบบ"
 
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "แม่แบบ"
 
 #: appl/app.src#GID_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "ข้อความ"
 
 #: appl/app.src#GID_FRAME.STRING.TEXT
+#, fuzzy
 msgid  "Frame"
-msgstr ""
+msgstr "กรอบ"
 
 #: appl/app.src#GID_GRAPHIC.STRING.TEXT
+#, fuzzy
 msgid  "Graphic"
-msgstr ""
+msgstr "กราฟิก"
 
 #: appl/app.src#GID_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "ตาราง"
 
 #: appl/app.src#GID_ENUMERATION.STRING.TEXT
+#, fuzzy
 msgid  "Numbering"
-msgstr ""
+msgstr "รายการลำดับ"
 
 #: appl/app.src#GID_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Data"
-msgstr ""
+msgstr "ข้อมูล"
 
 #: appl/app.src#GID_SPECIAL.STRING.TEXT
+#, fuzzy
 msgid  "Special Functions"
-msgstr ""
+msgstr "ฟังก์ชันพิเศษ"
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
+#, fuzzy
 msgid  "Image"
-msgstr ""
+msgstr "ภาพ"
 
 #: appl/app.src#GID_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Chart"
-msgstr ""
+msgstr "แผนภูมิ"
 
 #: appl/app.src#GID_EXPLORER.STRING.TEXT
+#, fuzzy
 msgid  "Explorer"
-msgstr ""
+msgstr "ตัวสำรวจ"
 
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
+#, fuzzy
 msgid  "Connector"
-msgstr ""
+msgstr "ตัวเชื่อมต่อ"
 
 #: appl/app.src#GID_MODIFY.STRING.TEXT
+#, fuzzy
 msgid  "Modify"
-msgstr ""
+msgstr "เปลี่ยนแปลง"
 
 #: appl/app.src#GID_DRAWING.STRING.TEXT
+#, fuzzy
 msgid  "Drawing"
-msgstr ""
+msgstr "การวาด"
 
 #: appl/app.src#GID_CONTROLS.STRING.TEXT
+#, fuzzy
 msgid  "Controls"
-msgstr ""
-
-#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
-msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "ตัวควบคุม"
 
 #: appl/app.src#STR_ISMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to save the changes to %1?"
-msgstr ""
+msgstr "คุณต้องการบันทึกการเปลี่ยนแปลงไปยัง %1 หรือไม่?"
 
 #: appl/app.src#STR_QUITAPP.STRING.TEXT
+#, fuzzy
 msgid  "E~xit"
-msgstr ""
+msgstr "ออ~ก"
 
 #: appl/app.src#RID_STR_HELP.STRING.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "ช่วยเหลือ"
 
 #: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
+#, fuzzy
 msgid  "No automatic start at 'XX'"
-msgstr ""
+msgstr "ไม่เริ่มอัตโนมัติที่ 'XX'"
 
 #: appl/app.src#RID_HELPBAR.STRING.TEXT
+#, fuzzy
 msgid  "Help Bar"
-msgstr ""
+msgstr "แถบช่วยเหลือ"
 
 #: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
+#, fuzzy
 msgid  "The help file for this topic is not installed."
-msgstr ""
+msgstr "แฟ้มช่วยเหลือสำหรับหัวข้อนี้ไม่ได้มีการติดตั้ง"
 
 #: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Function Bar"
-msgstr ""
+msgstr "แถบฟังก์ชัน"
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "เกิดข้อผิดพลาดขึ้นในการกำหนดค่าพิเศษ\nกรุณาติดต่อผู้ดูแลระบบของคุณ"
 
 #: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
+#, fuzzy
 msgid  "Exit Quickstarter"
-msgstr ""
+msgstr "ออกจากตัวเรียกโปรแกรมด่วน"
 
 #: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr ""
+msgstr "ตัวเรียกโปรแกรมด่วน %PRODUCTNAME %PRODUCTVERSION"
 
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
+#, fuzzy
 msgid  "Open Document..."
-msgstr ""
+msgstr "เปิดเอกสาร"
 
 #: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "From Template..."
-msgstr ""
+msgstr "จากแม่แบบ"
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
+#, fuzzy
 msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr ""
+msgstr "โหลด %PRODUCTNAME ในระหว่างเริ่มระบบ"
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
+#, fuzzy
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "ปิดใช้งานตัวเรียกโปรแกรมด่วน"
 
 #: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
 msgid  "File"
@@ -2044,68 +2320,58 @@ msgid  "Recent Documents"
 msgstr ""
 
 #: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
+#, fuzzy
 msgid  "Update all links?"
-msgstr ""
+msgstr "ปรับข้อมูลการเชื่อมโยงทั้งหมดหรือไม่?"
 
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "DDE link to % for % area % are not available."
-msgstr ""
+msgstr "DDE link to % for % area % are not available."
 
 #: appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WARNINGBOX.MESSAGE
+#, fuzzy
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
-msgstr ""
-
-#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
-msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "This hyperlink is going to open \"%s\". Do you want to proceed?"
 
 #: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Security Warning"
-msgstr ""
-
-#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
-msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
-
-#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "การเตือนความปลอดภัย"
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "เอกสารนี้จะต้องมีการบันทึกในรูปแบบแฟ้ม OpenDocument มาก่อนจึงจะสามารถลงลายมือชื่อแบบดิจิทัลได้"
 
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
+#, fuzzy
 msgid  " (Signed)"
-msgstr ""
-
-#: appl/app.src#STR_STANDARD.STRING.TEXT
-msgid  "Standard"
-msgstr ""
+msgstr "(Signed)"
 
 #: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "เอกสาร"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
+#, fuzzy
 msgid  "- None -"
-msgstr ""
-
-#: appl/app.src#RID_SVXSTR_GRAFIKLINK.STRING.TEXT
-msgid  "Graphic"
-msgstr ""
+msgstr "- ไม่มี -"
 
 #: appl/app.src#STR_SFX_FILTERNAME_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All files (*.*)"
-msgstr ""
+msgstr "All files (*.*)"
 
 #: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
 msgid  "Link graphics"
 msgstr ""
 
 #: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
+#, fuzzy
 msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr ""
+msgstr "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT
 msgid  "Graphics file cannot be opened"
@@ -2132,141 +2398,166 @@ msgid  "Not enough memory to insert graphic"
 msgstr ""
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Contents"
-msgstr ""
+msgstr "เนื้อหา"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Index"
-msgstr ""
+msgstr "ดัชนี"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Find"
-msgstr ""
+msgstr "หา"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Bookmarks"
-msgstr ""
+msgstr "ตัวคั่น"
 
 #: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Search term"
-msgstr ""
+msgstr "~คำค้นหา"
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Display"
-msgstr ""
+msgstr "แ~สดงผล"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~earch term"
-msgstr ""
+msgstr "คำ~ค้นหา"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
-msgstr ""
+msgstr "~หา"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Complete words only"
-msgstr ""
+msgstr "คำที่~สมบูรณ์เท่านั้น"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Find in ~headings only"
-msgstr ""
-
-#: appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PUSHBUTTON.TEXT
-msgid  "~Display"
-msgstr ""
+msgstr "หาใน~ส่วนหัวอย่างเดียว"
 
 #: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Bookmarks"
-msgstr ""
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PUSHBUTTON.TEXT
-msgid  "~Display"
-msgstr ""
+msgstr "~ตัวคั่น"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Help"
-msgstr ""
+msgstr "ตัวช่วย %PRODUCTNAME "
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.STRING.TEXT
+#, fuzzy
 msgid  "Show Navigation Pane"
-msgstr ""
+msgstr "Show Navigation Pane"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.STRING.TEXT
+#, fuzzy
 msgid  "Hide Navigation Pane"
-msgstr ""
+msgstr "Hide Navigation Pane"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
+#, fuzzy
 msgid  "First Page"
-msgstr ""
+msgstr "หน้าแรก"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
+#, fuzzy
 msgid  "Previous Page"
-msgstr ""
+msgstr "หน้าก่อนหน้า"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
+#, fuzzy
 msgid  "Next Page"
-msgstr ""
+msgstr "หน้าถัดไป"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
+#, fuzzy
 msgid  "Print..."
-msgstr ""
+msgstr "พิมพ์..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
+#, fuzzy
 msgid  "Add to Bookmarks..."
-msgstr ""
+msgstr "เพิ่มไปยังคั่นหน้า..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
+#, fuzzy
 msgid  "Find on this Page..."
-msgstr ""
+msgstr "ค้นหาที่หน้านี้"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
+#, fuzzy
 msgid  "HTML Source"
-msgstr ""
+msgstr "แหล่ง HTML "
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "The Help is being started..."
-msgstr ""
+msgstr "เริ่มตัวช่วย..."
 
 #: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Select Text"
-msgstr ""
+msgstr "เลือกข้อความ"
 
 #: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
+#, fuzzy
 msgid  "~Copy"
-msgstr ""
+msgstr "~Copy"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Add to Bookmarks"
-msgstr ""
+msgstr "เพิ่มไปยังคั่นหน้า"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bookmark:"
-msgstr ""
+msgstr "คั่นหน้า:"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
+#, fuzzy
 msgid  "Rename Bookmark"
-msgstr ""
+msgstr "เปลี่ยนชื่อคั่นหน้า"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Display"
-msgstr ""
+msgstr "แสดงผล"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rename..."
-msgstr ""
+msgstr "เปลี่ยนชื่อ..."
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "ลบ"
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "No topics found."
-msgstr ""
+msgstr "ไม่พบหัวข้อ"
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "The text you entered was not found."
-msgstr ""
+msgstr "ไม่พบหัวข้อที่คุณใส่มา"
 
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
-msgstr ""
+msgstr "~Display %PRODUCTNAME %MODULENAME Help at Startup"

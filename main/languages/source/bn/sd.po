@@ -32,1610 +32,1978 @@ msgstr ""
 
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "HTML Export"
-msgstr ""
+msgstr "এইচটিএমএল রপ্তানি করুন"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_TITEL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Assign design"
-msgstr ""
+msgstr "ডিজাইন বরাদ্দ করুন"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_NEW_DESIGN.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "New design"
-msgstr ""
+msgstr "নতুন ডিজাইন"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_OLD_DESIGN.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Existing design"
-msgstr ""
+msgstr "বিদ্যমান নকশা"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_DEL_DESIGN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Delete Selected Design"
-msgstr ""
+msgstr "নির্বাচিত ডিজাইন মুছে ফেলুন"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_DESC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Select an existing design or create a new one"
-msgstr ""
+msgstr "একটি বিদ্যমান ডিজাইন নির্বাচন করুন বা নতুন ডিজাইন তৈরি করুন"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Publication type"
-msgstr ""
+msgstr "প্রকাশনার ধরন"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_STANDARD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Standard H~TML format"
-msgstr ""
+msgstr "আদর্শ HTML বিন্যাস (~T)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_FRAMES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Standard HTML with ~frames"
-msgstr ""
+msgstr "ফ্রেম সহ আদর্শ HTML (~f)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Automatic"
-msgstr ""
+msgstr "স্বয়ংক্রিয় (~A)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~WebCast"
-msgstr ""
+msgstr "WebCast (~W)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_HTML.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "পছন্দসমূহ"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CONTENT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Create title page"
-msgstr ""
+msgstr "শিরোনাম পৃষ্ঠা তৈরি করুন"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_NOTES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show notes"
-msgstr ""
+msgstr "নোটসমূহ দেখান"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_KIOSK.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Advance slides"
-msgstr ""
+msgstr "উন্নত স্লাইডসমূহ"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~As stated in document"
-msgstr ""
-
-#: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_AUTO.RADIOBUTTON.TEXT
-msgid  "~Automatic"
-msgstr ""
+msgstr "নথিতে বর্ণনানুযায়ী (~A)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Slide view time:"
-msgstr ""
+msgstr "স্লাইড প্রদর্শনের সময় (~S)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TMF.TIMEFIELD.QUICKHELPTEXT
+#, fuzzy
 msgid  "~Duration of page"
-msgstr ""
+msgstr "পৃষ্ঠার স্থায়িত্ব (~D)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ENDLESS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Endless"
-msgstr ""
+msgstr "অফুরন্ত (~E)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_WEBCAST.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "WebCast"
-msgstr ""
+msgstr "WebCast"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ASP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Active Server Pages (ASP)"
-msgstr ""
+msgstr "সক্রিয় সার্ভার পৃষ্ঠাসমূহ (ASP) (~A)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_PERL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Perl"
-msgstr ""
+msgstr "পার্ল"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_INDEX_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~URL for listeners"
-msgstr ""
+msgstr "শ্রোতাদের জন্য URL (~U)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_URL_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "URL for ~presentation:"
-msgstr ""
+msgstr "উপস্থাপনার জন্য URL (~p):"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CGI_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "URL for ~Perl scripts:"
-msgstr ""
+msgstr "পার্ল স্ক্রিপ্টের জন্য URL (~P):"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Save graphics as"
-msgstr ""
+msgstr "এভাবে গ্রাফিক্স সংরক্ষণ করুন"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_PNG.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~PNG"
-msgstr ""
+msgstr "PNG (~P)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_GIF.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~GIF"
-msgstr ""
+msgstr "GIF (~G)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_JPG.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~JPG"
-msgstr ""
+msgstr "JPG (~J)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_QUALITY_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Quality"
-msgstr ""
+msgstr "বৈশিষ্ট্য"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_2.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Monitor resolution"
-msgstr ""
+msgstr "মনিটর রেসুলেশন"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_1.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Low resolution (~640x480 pixels)"
-msgstr ""
+msgstr "নিম্ন রেসুলেশন (640x480 পিক্সেল) (~6)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_2.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Medium resolution (~800x600 pixels)"
-msgstr ""
+msgstr "মধ্যম রেসুলেশন (800x600 পিক্সেল) (~8)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_3.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "High resolution (~1024x768 pixels)"
-msgstr ""
+msgstr "উচ্চ রেসুলেশন (1024x768 পিক্সেল) (~1) "
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_3.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Effects"
-msgstr ""
+msgstr "প্রভাব"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_SLD_SOUND.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Export sounds when slide advances"
-msgstr ""
+msgstr "স্লাইড অগ্রসর হওয়ার সময় শব্দ সংযোজন করুন (~E) "
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_HIDDEN_SLIDES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Export ~hidden slides"
-msgstr ""
+msgstr "লুকানো স্লাইডসমূহ রপ্তানি করুন (~h)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Information for the title page"
-msgstr ""
+msgstr "শিরোনাম পৃষ্ঠার জন্য তথ্য"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_AUTHOR_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Author"
-msgstr ""
+msgstr "লেখক (~A)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_EMAIL_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "E-~mail address"
-msgstr ""
+msgstr "ই-মেইল ঠিকানা (~m)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_WWW_TXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Your hom~epage"
-msgstr ""
+msgstr "আপনার আদ্যপৃষ্ঠা (~e)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Additional ~information"
-msgstr ""
+msgstr "অতিরিক্ত তথ্য (~i)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_DOWNLOAD.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Link to a copy of the ~original presentation"
-msgstr ""
+msgstr "মূল উপস্থাপনার একটি অনুলিপি সংযুক্ত করুন (~o)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_CREATED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Note: 'Created with %PRODUCTNAME'"
-msgstr ""
+msgstr "নোট: '%PRODUCTNAME' দ্বারা তৈরি করা হয়েছে'"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TITEL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Select button style"
-msgstr ""
+msgstr "বোতাম শৈলী নির্বাচন করুন"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TEXTONLY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Text only"
-msgstr ""
+msgstr "শুধুমাত্র পাঠ (~T)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TITEL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Select color scheme"
-msgstr ""
+msgstr "রংয়ের বিন্যাস নির্বাচন করুন"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DOCCOLORS.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Apply color scheme from document"
-msgstr ""
+msgstr "নথি থেকে রংয়ের বিন্যাস নির্বাচন করুন (~A)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DEFAULT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Use ~browser colors"
-msgstr ""
+msgstr "ব্রাউজারের রং ব্যবহার করুন (~b)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_USER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Use custom color scheme"
-msgstr ""
+msgstr "স্বনির্বাচিত রংয়ের বিন্যাস নির্বাচন করুন (~U)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "পাঠ"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_LINK.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Hyper~link"
-msgstr ""
+msgstr "হাইপারলিংক (~l)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_ALINK.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Active Li~nk"
-msgstr ""
+msgstr "সক্রিয় লিংক (~n)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_VLINK.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Visited Link"
-msgstr ""
+msgstr "পরিদর্শিত লিংক (~V)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_BACK.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Bac~kground"
-msgstr ""
+msgstr "প্রেক্ষাপট (~k)"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_LAST.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "<< Back"
-msgstr ""
+msgstr "<< পিছনে"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_NEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Next >>"
-msgstr ""
+msgstr "পরবর্তী >>"
 
 #: filter/html/pubdlg.src#DLG_PUBLISHING.BUT_FINISH.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Create"
-msgstr ""
+msgstr "তৈরি করুন (~C)"
 
 #: filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_SAVE.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Save"
-msgstr ""
+msgstr "সংরক্ষণ করুন (~S)"
 
 #: filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_NOSAVE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Do Not Save"
-msgstr ""
+msgstr "সংরক্ষণ করবেন না"
 
 #: filter/html/pubdlg.src#DLG_DESIGNNAME.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Name HTML Design"
-msgstr ""
+msgstr "এইচটিএমএল নকশার নাম"
 
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Select a slide design"
-msgstr ""
+msgstr "স্লাইডের নকশা নির্বাচন করুন (~S)"
 
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.CBX_MASTER_PAGE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Exchange background page"
-msgstr ""
+msgstr "প্রেক্ষাপট পৃষ্ঠা পরিবর্তন করুন (~E)"
 
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.CBX_CHECK_MASTERS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Delete unused backgrounds"
-msgstr ""
+msgstr "অব্যবহৃত প্রেক্ষাপটসমূহ মুছে ফেলুন (~D)"
 
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.BTN_LOAD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Load..."
-msgstr ""
+msgstr "লোড... (_L)"
 
 #: ui/dlg/sdpreslt.src#DLG_PRESLT.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Slide Design"
-msgstr ""
+msgstr "স্লাইড নকশা"
 
 #: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Insert Slides/Objects"
-msgstr ""
+msgstr "স্লাইড/অবজেক্টসমূহ প্রবেশ করান"
 
 #: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.CBX_LINK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Link"
-msgstr ""
+msgstr "সংযুক্ত করুন (~L)"
 
 #: ui/dlg/inspagob.src#DLG_INSERT_PAGES_OBJS.CBX_CHECK_MASTERS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Delete unused backg~rounds"
-msgstr ""
+msgstr "অব্যবহৃত প্রেক্ষাপট মুছে ফেলুন (~r)"
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "New Snap Object"
-msgstr ""
+msgstr "নতুন স্ন্যাপ অবজেক্ট"
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.BTN_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "মুছে ফেলুন... (~D)"
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.FL_POSITION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "অবস্থান"
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.FL_DIRECTION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "ধরন"
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_POINT.IMAGERADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Point"
-msgstr ""
+msgstr "বিন্দু (~P)"
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_VERTICAL.IMAGERADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Vertical"
-msgstr ""
+msgstr "উলম্ব (~V)"
 
 #: ui/dlg/dlgsnap.src#DLG_SNAPLINE.RB_HORIZONTAL.IMAGERADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Hori~zontal"
-msgstr ""
+msgstr "অনুভূমিক (~z)"
 
 #: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.GRP_TYPE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Field type"
-msgstr ""
+msgstr "ক্ষেত্রের ধরন"
 
 #: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.RBT_FIX.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Fixed"
-msgstr ""
+msgstr "স্থির (~F)"
 
 #: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.RBT_VAR.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Variable"
-msgstr ""
+msgstr "ভেরিয়েবল (~V)"
 
 #: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.FT_LANGUAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Language"
-msgstr ""
+msgstr "ভাষা (~L)"
 
 #: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.FT_FORMAT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "F~ormat"
-msgstr ""
+msgstr "বিন্যাস (~o)"
 
 #: ui/dlg/dlgfield.src#DLG_FIELD_MODIFY.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Edit Field"
-msgstr ""
+msgstr "ক্ষেত্র সম্পাদনা করুন"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Convert to Polygon"
-msgstr ""
+msgstr "বহুভুজে রূপান্তর করুন"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.BTN_PREVIEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Preview"
-msgstr ""
+msgstr "প্রাকদর্শন"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.GRP_SETTINGS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "বিন্যাসনসমূহ"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_LAYERS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Number of colors:"
-msgstr ""
+msgstr "রংয়ের সংখ্যা:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_REDUCE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Point reduction:"
-msgstr ""
+msgstr "বিন্দু হ্রাসকরণ:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CB_FILLHOLES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Fill holes:"
-msgstr ""
+msgstr "গর্ত পূরণ করুন (~F):"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_FILLHOLES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Tile size:"
-msgstr ""
+msgstr "টালির আকার:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_ORIGINAL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Source picture:"
-msgstr ""
+msgstr "উৎস ছবির:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CTL_BMP.CONTROL.TEXT
+#, fuzzy
 msgid  "Source picture"
-msgstr ""
+msgstr "উৎস ছবির:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.FT_VECTORIZED.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Vectorized image:"
-msgstr ""
+msgstr "ভেক্টরকৃত চিত্র:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.CTL_WMF.CONTROL.TEXT
+#, fuzzy
 msgid  "Vectorized image"
-msgstr ""
+msgstr "ভেক্টরকৃত চিত্র:"
 
 #: ui/dlg/vectdlg.src#DLG_VECTORIZE.GRP_PRGS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Progress"
-msgstr ""
-
-#: ui/dlg/vectdlg.src#DLG_VECTORIZE.WND_PRGS.WINDOW.TEXT
-msgid  "Progress"
-msgstr ""
+msgstr "অগ্রগতি"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Graphics Styles"
-msgstr ""
+msgstr "গ্রাফিক্স শৈলীসমূহ"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Line"
-msgstr ""
+msgstr "রেখা"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Area"
-msgstr ""
+msgstr "এলাকা"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Shadowing"
-msgstr ""
+msgstr "ছায়াকরণ"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Transparency"
-msgstr ""
+msgstr "স্বচ্ছতা"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "ফন্ট"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font Effect"
-msgstr ""
+msgstr "ফন্টের প্রভাব"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Indents & Spacing"
-msgstr ""
+msgstr "ইন্ডেট এবং ফাঁকাকরণ"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "পাঠ"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TEXTANIMATION.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Text Animation"
-msgstr ""
+msgstr "পাঠ অ্যানিমেশন"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_MEASURE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Dimensioning"
-msgstr ""
+msgstr "মাত্রাকীকরণ"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_CONNECTION.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Connector"
-msgstr ""
+msgstr "সংযোজক"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "প্রান্তিককরণ"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Asian Typography"
-msgstr ""
+msgstr "এশিয়ান মুদ্রণ শৈলী"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Tabs"
-msgstr ""
+msgstr "ট্যাব"
 
 #: ui/dlg/tabtempl.src#TAB_TEMPLATE.1.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Back"
-msgstr ""
+msgstr "পিছনে"
 
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
-msgstr ""
+msgstr "নতুন... (~N)"
 
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit..."
-msgstr ""
+msgstr "সম্পাদনা... (~E)"
 
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_REMOVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "মুছে ফেলুন... (~D)"
 
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_COPY.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Cop~y"
-msgstr ""
+msgstr "অনুলিপি করুন (~y)"
 
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_STARTSHOW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Start"
-msgstr ""
+msgstr "শুরু করুন (~S)"
 
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.BTN_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "বন্ধ করুন (~C)"
 
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.LB_CUSTOMSHOWS.LISTBOX.QUICKHELPTEXT
 msgid  "Custom Screen Show"
 msgstr ""
 
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.CBX_USE_CUSTOMSHOW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Use Custom Slide Show"
-msgstr ""
+msgstr "পছন্দসই স্লাইড প্রদর্শন ব্যবহার করুন"
 
 #: ui/dlg/custsdlg.src#DLG_CUSTOMSHOW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Custom Slide Shows"
-msgstr ""
+msgstr "পছন্দসই স্লাইড প্রদর্শন"
 
 #: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "নাম"
 
 #: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_PAGES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Existing slides"
-msgstr ""
+msgstr "বিদ্যমান স্লাইডগুলো"
 
 #: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FT_CUSTOM_PAGES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Selected slides"
-msgstr ""
+msgstr "নির্বাচিত স্লাইডগুলো"
 
 #: ui/dlg/custsdlg.src#DLG_DEFINE_CUSTOMSHOW.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Define Custom Slide Show"
-msgstr ""
+msgstr "পছন্দসই স্লাইড প্রদর্শন উল্লেখ করুন"
 
 #: ui/dlg/dlgass.src#DLG_ASS.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Presentation Wizard"
-msgstr ""
+msgstr "উপস্থাপনা উইজার্ড"
 
 #: ui/dlg/dlgass.src#DLG_ASS.CB_PREVIEW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Previe~w"
-msgstr ""
+msgstr "প্রাকদর্শন"
 
 #: ui/dlg/dlgass.src#DLG_ASS.CB_STARTWITH.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Do not show this wizard again"
-msgstr ""
+msgstr "এই উইজার্ডটি পুনরায় দেখাবেন না (~D)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE1_ARTGROUP.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "ধরন"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_EMPTY.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Empty presentation"
-msgstr ""
+msgstr "খালি উপস্থাপনা (~E)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_TEMPLATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~From template"
-msgstr ""
+msgstr "খসড়া হতে (~F)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE1_OPEN.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "O~pen existing presentation"
-msgstr ""
+msgstr "বিদ্যমান উপস্থাপনাটি খুলুন (~O)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE2_LAYOUT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "~Select a slide design"
-msgstr ""
+msgstr "একটি স্লাইড নকশা নির্বাচন করুন (~S)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE2_OUTPUTTYPES.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Select an output medium"
-msgstr ""
+msgstr "একটি আউটপুট মাধ্যম নির্বাচন করুন"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM5.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Original"
-msgstr ""
+msgstr "মূল (~O)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM1.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Sc~reen"
-msgstr ""
+msgstr "পর্দা (~r)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM2.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Sli~de"
-msgstr ""
+msgstr "স্লাইড (~d)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM3.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "O~verhead sheet"
-msgstr ""
+msgstr "অতিরিক্ত শীট (~v)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE2_MEDIUM4.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "P~aper"
-msgstr ""
+msgstr "কাগজ (~a)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE3_EFFECT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Select a slide transition"
-msgstr ""
+msgstr "একটি স্লাইড স্থানান্তরণ নির্বাচন করুন"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_EFFECT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Effect"
-msgstr ""
+msgstr "প্রভাব (~E)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_SPEED.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Speed"
-msgstr ""
+msgstr "গতি (~S)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE3_PRESTYPE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Select the presentation type"
-msgstr ""
+msgstr "উপস্থাপনার ধরন নির্বাচন করুন"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE3_LIVE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Default"
-msgstr ""
+msgstr "পূর্বনির্ধারিত (~D)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.RB_PAGE3_KIOSK.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Automatic"
-msgstr ""
+msgstr "স্বয়ংক্রিয় (~A)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_TIME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "D~uration of page"
-msgstr ""
+msgstr "পৃষ্ঠার স্থিতিকাল (~u)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE3_BREAK.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Du~ration of pause"
-msgstr ""
+msgstr "বিরতি স্থিতিকাল (~r)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.CB_PAGE3_LOGO.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Sh~ow logo"
-msgstr ""
+msgstr "লোগো দেখান (~o)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FL_PAGE4_PERSONAL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Describe your basic ideas"
-msgstr ""
+msgstr "আপনার মৌলিক ধারনাসমূহ বর্ণনা করুন"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKNAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "What is your name or the name of your company?"
-msgstr ""
+msgstr "আপনার অথবা আপনার সংগঠনের নাম কি?"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKTOPIC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "What is the subject of your presentation?"
-msgstr ""
+msgstr "আপনার উপস্থাপনার বিষয় কি?"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKINFORMATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Further ideas to be presented?"
-msgstr ""
+msgstr "উপস্থাপন করার আর কোনো ধারনা আছে কি?"
 
 #: ui/dlg/dlgass.src#DLG_ASS.FT_PAGE5_PAGELIST.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ch~oose your pages"
-msgstr ""
+msgstr "আপনার পৃষ্ঠাগুলো পছন্দ করুন (~o)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.CB_PAGE5_SUMMARY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "C~reate summary"
-msgstr ""
+msgstr "সারমর্ম তৈরী করুন (~r)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.BUT_LAST.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "<< ~Back"
-msgstr ""
+msgstr "<< পিছনে (~B)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.BUT_NEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Next >>"
-msgstr ""
+msgstr "পরবর্তী >> (~N)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.BUT_FINISH.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Create"
-msgstr ""
+msgstr "তৈরি করুন (~C)"
 
 #: ui/dlg/dlgass.src#DLG_ASS.STR_OPEN.STRING.TEXT
 msgid  "~Open"
 msgstr ""
 
-#: ui/dlg/dlgass.src#DLG_ASS.STR_CREATE.STRING.TEXT
-msgid  "~Create"
-msgstr ""
-
 #: ui/dlg/PaneDockingWindow.src#FLT_LEFT_PANE_IMPRESS_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
+#, fuzzy
 msgid  "Slide Pane"
-msgstr ""
+msgstr "স্লাইড প্যান"
 
 #: ui/dlg/PaneDockingWindow.src#FLT_LEFT_PANE_DRAW_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
+#, fuzzy
 msgid  "Page Pane"
-msgstr ""
+msgstr "পৃষ্ঠা প্যান"
 
 #: ui/dlg/PaneDockingWindow.src#FLT_TOOL_PANEL_DOCKING_WINDOW.DOCKINGWINDOW.TEXT
+#, fuzzy
 msgid  "Task Pane"
-msgstr ""
+msgstr "কার্য প্যান"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Header and Footer"
-msgstr ""
+msgstr "প্রান্তটিকা ও পাদটিকা"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.1.RID_SD_TABPAGE_HEADERFOOTER_SLIDE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Slide"
-msgstr ""
+msgstr "স্লাইড"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_DLG_HEADERFOOTER.1.RID_SD_TABPAGE_HEADERFOOTER_NOTESHANDOUT.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Notes and Handouts"
-msgstr ""
+msgstr "নোট এবং বিলিপত্রসমূহ"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FL_INCLUDE_ON_PAGE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Include on slide"
-msgstr ""
+msgstr "স্লাইডে অন্তর্ভূক্ত করুন"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_HEADER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Header"
-msgstr ""
+msgstr "প্রান্তটিকা"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_HEADER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Header text"
-msgstr ""
+msgstr "প্রান্তটিকা টেক্সট"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_DATETIME.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Date and time"
-msgstr ""
+msgstr "তারিখ এবং সময় (~D)"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.RB_DATETIME_FIXED.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Fi~xed"
-msgstr ""
+msgstr "নির্ধারিত (~x)"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.RB_DATETIME_AUTOMATIC.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Variable"
-msgstr ""
+msgstr "ভেরিয়েবল (~V)"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_DATETIME_LANGUAGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Language:"
-msgstr ""
+msgstr "ভাষা (~L):"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_FOOTER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Footer"
-msgstr ""
+msgstr "পাদটিকা"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.FT_FOOTER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Footer text"
-msgstr ""
+msgstr "পাদটিকা পাঠ"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_SLIDENUMBER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Slide number"
-msgstr ""
+msgstr "স্লাইড নম্বর"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.CB_NOTONTITLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Do not show on first slide"
-msgstr ""
+msgstr "প্রথম স্লাইডে দেখাবেন না"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.BT_APPLYTOALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Apply to All"
-msgstr ""
+msgstr "প্রত্যেকটিতে প্রয়োগ করুন"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.BT_APPLY.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Apply"
-msgstr ""
+msgstr "প্রয়োগ করুন"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.STR_PAGE_NUMBER.STRING.TEXT
+#, fuzzy
 msgid  "Page number"
-msgstr ""
+msgstr "পৃষ্ঠা নম্বর"
 
 #: ui/dlg/headerfooterdlg.src#RID_SD_TABPAGE_HEADERFOOTER.STR_INCLUDE_ON_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Include on page"
-msgstr ""
+msgstr "পৃষ্ঠায় অন্তর্ভুক্ত করুন"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Slide Show"
-msgstr ""
+msgstr "স্লাইড প্রদর্শন"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_RANGE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Range"
-msgstr ""
+msgstr "সীমা"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_ALL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "All ~slides"
-msgstr ""
+msgstr "সকল স্লাইড (~s)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_AT_DIA.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~From:"
-msgstr ""
+msgstr "হতে (~F):"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_CUSTOMSHOW.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Custom Slide Show"
-msgstr ""
+msgstr "পছন্দসই স্লাইড প্রদর্শন (~C)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_KIND.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "ধরন"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_STANDARD.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Default"
-msgstr ""
+msgstr "পূর্বনির্ধারিত (~D)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_WINDOW.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Window"
-msgstr ""
+msgstr "উইন্ডো (~W)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.RBT_AUTO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "A~uto"
-msgstr ""
+msgstr "স্বয়ংক্রিয় (~u)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.TMF_PAUSE.TIMEFIELD.QUICKHELPTEXT
+#, fuzzy
 msgid  "Duration of pause"
-msgstr ""
+msgstr "বিরতির স্থিতিকাল"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_AUTOLOGO.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Show ~logo"
-msgstr ""
+msgstr "লোগো দেখান (~l)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_OPTIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "পছন্দসমূহ"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_MANUEL.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Change slides ~manually"
-msgstr ""
+msgstr "স্লাইডগুলো হস্তচালিতভাবে পরিবর্তন করুন (~m)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_MOUSEPOINTER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Mouse pointer ~visible"
-msgstr ""
+msgstr "মাউস নির্দেশক দৃশ্যমান (~v)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_PEN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Mouse pointer as ~pen"
-msgstr ""
+msgstr "মাউস নির্দেশক কলমের মতে (~p)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_NAVIGATOR.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Navigator visible"
-msgstr ""
+msgstr "পরিক্রমক দৃশ্যমান (~N)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_ANIMATION_ALLOWED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Animations allowed"
-msgstr ""
+msgstr "অ্যানিমেশন অনুমোদিত (~A)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_CHANGE_PAGE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Change slides by clic~king on background"
-msgstr ""
+msgstr "প্রেক্ষাপটে ক্লিক করে স্লাইডগুলো পরিবর্তন করুন (~k)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.CBX_ALWAYS_ON_TOP.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Presentation always ~on top"
-msgstr ""
+msgstr "উপস্থাপনা সব সময় উপরে (~o)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.GRP_MONITOR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Multiple displays"
-msgstr ""
+msgstr "বহুবিধ প্রদর্শনসমূহ"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.FT_MONITOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "P~resentation display"
-msgstr ""
+msgstr "উপস্থাপনা প্রদর্শন করুন (~r)"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.STR_PRIMARY_MONITOR.STRING.TEXT
+#, fuzzy
 msgid  "Display %1 (primary)"
-msgstr ""
+msgstr "%1 (প্রাথমিক) প্রদর্শন করুন"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.STR_MONITOR.STRING.TEXT
+#, fuzzy
 msgid  "Display %1"
-msgstr ""
+msgstr "%1 প্রদর্শন করুন"
 
 #: ui/dlg/present.src#DLG_START_PRESENTATION.STR_ALL_MONITORS.STRING.TEXT
+#, fuzzy
 msgid  "All displays"
-msgstr ""
+msgstr "সব প্রদর্শনসমূহ"
 
 #: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Bullets and Numbering"
-msgstr ""
+msgstr "বুলেট এবং ক্রমিকায়ণ"
 
 #: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_BULLET.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Bullets"
-msgstr ""
+msgstr "বুলেটগুলো"
 
 #: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_SINGLE_NUM.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Numbering type"
-msgstr ""
+msgstr "ক্রমিকায়ণের নমুনা"
 
 #: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_PICK_BMP.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Graphics"
-msgstr ""
+msgstr "গ্রাফিক্স"
 
 #: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_NUM_POSITION.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "অবস্থান"
 
 #: ui/dlg/dlgolbul.src#TAB_OUTLINEBULLET.1.RID_SVXPAGE_NUM_OPTIONS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Customize"
-msgstr ""
+msgstr "পছন্দসই বিন্যাস করুন"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Presentation Layout"
-msgstr ""
+msgstr "উপস্থাপনা বর্হিবিন্যাস"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_LINE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Line"
-msgstr ""
+msgstr "লাইন"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Area"
-msgstr ""
+msgstr "এলাকা"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_SHADOW.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Shadow"
-msgstr ""
+msgstr "ছায়া"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TRANSPARENCE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Transparency"
-msgstr ""
+msgstr "স্বচ্ছতা"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "ফন্ট"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font Effects"
-msgstr ""
+msgstr "ফন্টের প্রভাব"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Indents & Spacing"
-msgstr ""
+msgstr "ইন্ডেট এবং ফাঁকাকরণ"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TEXTATTR.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "পাঠ"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_BULLET.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Bullets"
-msgstr ""
+msgstr "বুলেটগুলো"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_SINGLE_NUM.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Numbering type"
-msgstr ""
+msgstr "ক্রমিকায়ণের নমুনা"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PICK_BMP.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Graphics"
-msgstr ""
+msgstr "গ্রাফিক্স"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_NUM_OPTIONS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Customize"
-msgstr ""
+msgstr "পছন্দসই বিন্যাস করুন"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "প্রান্তিককরণ"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Asian Typography"
-msgstr ""
+msgstr "এশিয়ান মুদ্রণ শৈলী"
 
 #: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Tabs"
-msgstr ""
-
-#: ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE_BACKGROUND.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
-msgid  "Area"
-msgstr ""
+msgstr "ট্যাব"
 
 #: ui/dlg/copydlg.src#DLG_COPY.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Duplicate"
-msgstr ""
+msgstr "অনুরুপ"
 
 #: ui/dlg/copydlg.src#DLG_COPY.FT_COPIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Number of ~copies"
-msgstr ""
+msgstr "অনুলিপি সংখ্যা (~c)"
 
 #: ui/dlg/copydlg.src#DLG_COPY.BTN_SET_VIEWDATA.BUTTONIMAGE.QUICKHELPTEXT
+#, fuzzy
 msgid  "Values from Selection"
-msgstr ""
+msgstr "নির্বাচনের মান"
 
 #: ui/dlg/copydlg.src#DLG_COPY.BTN_SET_DEFAULT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Default"
-msgstr ""
+msgstr "পূর্বনির্ধারিত (~D)"
 
 #: ui/dlg/copydlg.src#DLG_COPY.MTR_FLD_ANGLE.METRICFIELD.CUSTOMUNITTEXT
+#, fuzzy
 msgid  " degrees"
-msgstr ""
+msgstr "ডিগ্রিসমূহ"
 
 #: ui/dlg/copydlg.src#DLG_COPY.FT_ANGLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Angle"
-msgstr ""
+msgstr "কোণ (~A)"
 
 #: ui/dlg/copydlg.src#DLG_COPY.FT_MOVE_X.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~X axis"
-msgstr ""
+msgstr "X অক্ষ (~X)"
 
 #: ui/dlg/copydlg.src#DLG_COPY.FT_MOVE_Y.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Y axis"
-msgstr ""
+msgstr "Y অক্ষ (~Y)"
 
 #: ui/dlg/copydlg.src#DLG_COPY.FT_WIDTH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Width"
-msgstr ""
+msgstr "প্রস্থ (~W)"
 
 #: ui/dlg/copydlg.src#DLG_COPY.FT_HEIGHT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Height"
-msgstr ""
+msgstr "উচ্চতা (~H)"
 
 #: ui/dlg/copydlg.src#DLG_COPY.GRP_MOVEMENT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Placement"
-msgstr ""
+msgstr "অবস্থিতিকরণ"
 
 #: ui/dlg/copydlg.src#DLG_COPY.GRP_ENLARGEMENT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Enlargement"
-msgstr ""
+msgstr "বৃদ্ধিকরণ"
 
 #: ui/dlg/copydlg.src#DLG_COPY.GRP_COLOR.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Colors"
-msgstr ""
+msgstr "রং"
 
 #: ui/dlg/copydlg.src#DLG_COPY.FT_START_COLOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Start"
-msgstr ""
+msgstr "শুরু (~S)"
 
 #: ui/dlg/copydlg.src#DLG_COPY.FT_END_COLOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~End"
-msgstr ""
+msgstr "শেষ (~E)"
 
 #: ui/dlg/paragr.src#TAB_PARAGRAPH.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Paragraph"
-msgstr ""
+msgstr "অনুচ্ছেদ"
 
 #: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Indents & Spacing"
-msgstr ""
+msgstr "ইন্ডেট এবং ফাঁকাকরণ"
 
 #: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "প্রান্তিককরণ"
 
 #: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Asian Typography"
-msgstr ""
+msgstr "এশিয়ান মুদ্রণ শৈলী"
 
 #: ui/dlg/paragr.src#TAB_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Tabs"
-msgstr ""
+msgstr "ট্যাব"
 
 #: ui/dlg/paragr.src#TAB_PARAGRAPH.1.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Return"
-msgstr ""
+msgstr "ফেরত পাঠান"
 
 #: ui/dlg/dlg_char.src#TAB_CHAR.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Character"
-msgstr ""
+msgstr "বর্ণচিহ্ন"
 
 #: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_NAME.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "ফন্ট"
 
 #: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Font Effects"
-msgstr ""
+msgstr "ফন্টের প্রভাব"
 
 #: ui/dlg/dlg_char.src#TAB_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "অবস্থান"
 
 #: ui/dlg/dlg_char.src#TAB_CHAR.1.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Return"
-msgstr ""
+msgstr "ফেরত পাঠান"
 
 #: ui/dlg/dlgpage.src#TAB_PAGE.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Page Setup"
-msgstr ""
+msgstr "পৃষ্ঠা বিন্যাকরণ"
 
 #: ui/dlg/dlgpage.src#TAB_PAGE.1.RID_SVXPAGE_PAGE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Page"
-msgstr ""
+msgstr "পৃষ্ঠা"
 
 #: ui/dlg/dlgpage.src#TAB_PAGE.1.RID_SVXPAGE_AREA.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Background"
-msgstr ""
+msgstr "প্রেক্ষাপট"
 
 #: ui/dlg/dlgpage.src#TAB_PAGE.1.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Return"
-msgstr ""
+msgstr "ফেরত পাঠান"
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.FT_ACTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Action at mouse click"
-msgstr ""
+msgstr "মাউস ক্লিকের কাজ"
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.BTN_SEARCH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Browse..."
-msgstr ""
+msgstr "ব্রাউজ করুন ... (~B)"
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.BTN_SEEK.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
-msgstr ""
+msgstr "খুঁজুন (~F)"
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.STR_PATHNAME.STRING.TEXT
 msgid  "Path Name"
 msgstr ""
 
 #: ui/dlg/tpaction.src#TP_ANIMATION.STRING.TEXT
+#, fuzzy
 msgid  "Interaction"
-msgstr ""
+msgstr "মিথক্রিয়া"
 
 #: ui/dlg/brkdlg.src#DLG_BREAK.FT_OBJ_INFO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Processing metafile:"
-msgstr ""
+msgstr "মেটাফাইল প্রক্রিয়া করা হচ্ছে:"
 
 #: ui/dlg/brkdlg.src#DLG_BREAK.FT_ACT_INFO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Broken down metaobjects:"
-msgstr ""
+msgstr "বিযুক্ত মেটাঅবজেক্ট:"
 
 #: ui/dlg/brkdlg.src#DLG_BREAK.FT_INS_INFO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Inserted drawing objects:"
-msgstr ""
+msgstr "সন্নিবেশিত অংকন অবজেক্ট:"
 
 #: ui/dlg/brkdlg.src#DLG_BREAK.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Break"
-msgstr ""
+msgstr "বিরতি"
 
 #: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.FL_PLACEHOLDERS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Placeholders"
-msgstr ""
+msgstr "স্থানধারক"
 
 #: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_HEADER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Header"
-msgstr ""
+msgstr "প্রান্তটিকা"
 
 #: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_DATE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Date/time"
-msgstr ""
+msgstr "তারিখ/সময়"
 
 #: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_FOOTER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Footer"
-msgstr ""
+msgstr "পাদটিকা"
 
 #: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.CB_PAGE_NUMBER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Page number"
-msgstr ""
+msgstr "পৃষ্ঠা নম্বর"
 
 #: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.STR_SLIDE_NUMBER.STRING.TEXT
+#, fuzzy
 msgid  "Slide number"
-msgstr ""
+msgstr "স্লাইড নম্বর"
 
 #: ui/dlg/masterlayoutdlg.src#RID_SD_DLG_MASTER_LAYOUT.STR_MASTER_LAYOUT_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Master Elements"
-msgstr ""
+msgstr "মূল উপাদান"
 
 #: ui/dlg/tpoption.src#SCALE_TEXT.#DEFINE.TEXT
+#, fuzzy
 msgid  "Scale"
-msgstr ""
+msgstr "স্কেল"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TABPAGE.TEXT
+#, fuzzy
 msgid  "Contents"
-msgstr ""
+msgstr "বিষয়বস্তুসমূহ"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.GRP_DISPLAY.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Display"
-msgstr ""
+msgstr "প্রদর্শন করুন"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_RULER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Rulers visible"
-msgstr ""
+msgstr "মাপদন্ডসমূহ দৃশ্যমান (~R)"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_HELPLINES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Guides when moving"
-msgstr ""
+msgstr "সরানোর সময় নির্দেশনা দেয় (~G)"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_HANDLES_BEZIER.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~All control points in Bézier editor"
-msgstr ""
+msgstr "সকল নিয়ন্ত্রণ বেজিয়ার সংস্করণে নির্দেশ করে (~A)"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.CBX_MOVE_OUTLINE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Contour of each individual object"
-msgstr ""
+msgstr "প্রতিটি ভিন্ন অবজেক্টের দেহরেখা (~C)"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.TABPAGE.TEXT
+#, fuzzy
 msgid  "Other"
-msgstr ""
+msgstr "অন্যান্য"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_TEXT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Text objects"
-msgstr ""
+msgstr "পাঠ অবজেক্টসমূহ"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_QUICKEDIT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Allow quick editing"
-msgstr ""
+msgstr "দ্রুত সম্পাদনা অনুমোদন করুন"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_PICKTHROUGH.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Only text area selectable"
-msgstr ""
+msgstr "শুধুমাত্র পাঠ এলাকা নির্বাচনযোগ্য"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_PROGRAMSTART.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "New document"
-msgstr ""
+msgstr "নতুন নথি"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_TEMPLATE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Start with ~wizard"
-msgstr ""
+msgstr "উইজার্ড দ্বারা শুরু করুন (~w)"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_SETTINGS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "বিন্যাসনসমূহ"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_MASTERPAGE_CACHE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Use background cache"
-msgstr ""
+msgstr "প্রেক্ষাপট ক্যাশে ব্যবহার করুন"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_COPY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Copy when moving"
-msgstr ""
+msgstr "সরানোর সময় অনুলিপি করুন"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_MARKED_HIT_MOVES_ALWAYS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Objects always moveable"
-msgstr ""
+msgstr "অবজেক্ট সবসময় স্থানান্তরযোগ্য"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_CROOK_NO_CONTORTION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Do not distort objects in curve"
-msgstr ""
+msgstr "অবজেক্টসমূহকে কার্ভে বিকৃত করবেন না"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_METRIC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Unit of ~measurement"
-msgstr ""
+msgstr "পরিমাপের একক (~m)"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_TABSTOP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ta~b stops"
-msgstr ""
+msgstr "ট্যাব থামানো হয়েছে (~b)"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.GRP_START_WITH_ACTUAL_PAGE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Start presentation"
-msgstr ""
+msgstr "উপস্থাপনা শুরু করুন"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_ACTUAL_PAGE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Always with current page"
-msgstr ""
-
-#: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CBX_START_WITH_PRESENTER_SCREEN.CHECKBOX.TEXT
-msgid  "With Presenter Screen"
-msgstr ""
+msgstr "সবসময় বর্তমান পৃষ্ঠার সাথে"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_COMPATIBILITY.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Compatibility"
-msgstr ""
+msgstr "সুসংগতি"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CB_USE_PRINTER_METRICS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Us~e printer metrics for document formatting"
-msgstr ""
+msgstr "নথি বিন্যাসকরণের জন্য মুদ্রক পরিমাপক ব্যবহার করুন (~e)"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.CB_MERGE_PARA_DIST.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Add ~spacing between paragraphs and tables (in current document)"
-msgstr ""
+msgstr "অনুচ্ছেদ এবং সারণীর মাঝে ফাঁকা জায়গা যোগ করুন (বর্তমান নথিতে)"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_ORIGINAL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Original"
-msgstr ""
+msgstr "মূল"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_EQUIVALENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Equivalent to"
-msgstr ""
+msgstr "সমান"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_SCALE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Drawing scale"
-msgstr ""
+msgstr "অংকন স্কেল (~D)"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEWIDTH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Page ~width"
-msgstr ""
+msgstr "পৃষ্ঠার প্রস্থ (~w)"
 
 #: ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Page ~height"
-msgstr ""
+msgstr "পৃষ্ঠার উচ্চতা (~h)"
 
 #: ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "বিন্যাসনসমূহ"
 
 #: ui/dlg/morphdlg.src#DLG_MORPH.FT_STEPS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Increments"
-msgstr ""
+msgstr "বৃদ্ধি"
 
 #: ui/dlg/morphdlg.src#DLG_MORPH.CBX_ATTRIBUTES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Cross-fade attributes"
-msgstr ""
+msgstr "পরস্পরের সাথে মিশে যাওয়ার বৈশিষ্ট্য"
 
 #: ui/dlg/morphdlg.src#DLG_MORPH.CBX_ORIENTATION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Same orientation"
-msgstr ""
+msgstr "একই পরিস্থিতি"
 
 #: ui/dlg/morphdlg.src#DLG_MORPH.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Cross-fading"
-msgstr ""
+msgstr "পরস্পরের সাথে মিশে যাওয়া"
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_PEN.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Pointer"
-msgstr ""
+msgstr "নির্দেশক"
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_FIRST.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "First Slide"
-msgstr ""
+msgstr "প্রথম স্লাইড"
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_PREVIOUS.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Previous Slide"
-msgstr ""
+msgstr "পূর্ববর্তী স্লাইড"
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_NEXT.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Next Slide"
-msgstr ""
+msgstr "পরবর্তী স্লাইড"
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_LAST.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Last Slide"
-msgstr ""
+msgstr "শেষ স্লাইড"
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_DRAGTYPE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Drag Mode"
-msgstr ""
+msgstr "টানার ধরন"
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.1.TBI_SHAPE_FILTER.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Show Shapes"
-msgstr ""
+msgstr "আকৃতিসমূহ দেখান"
 
 #: ui/dlg/navigatr.src#FLT_NAVIGATOR.LB_DOCS.LISTBOX.QUICKHELPTEXT
+#, fuzzy
 msgid  "Documents"
-msgstr ""
+msgstr "নথিসমূহ"
 
 #: ui/dlg/navigatr.src#STR_OBJECTS_TREE.STRING.TEXT
 msgid  "Page Tree"
 msgstr ""
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Insert Layer"
-msgstr ""
+msgstr "স্তর প্রবেশ করান"
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "নাম (~N)"
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "শিরোনাম (~T)"
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.FT_DESCRIPTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Description"
-msgstr ""
+msgstr "বর্ণনা (~D)"
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_VISIBLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Visible"
-msgstr ""
+msgstr "দৃশ্যমান (~V)"
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_PRINTABLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Printable"
-msgstr ""
+msgstr "মুদ্রনযোগ্য (~P)"
 
 #: ui/dlg/layeroptionsdlg.src#DLG_INSERT_LAYER.CBX_LOCKED.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Locked"
-msgstr ""
+msgstr "আবদ্ধ (~L)"
 
 #: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.FL_POSITION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "অবস্থান"
 
 #: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RB_BEFORE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Before"
-msgstr ""
+msgstr "পূর্বে (~B)"
 
 #: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RB_AFTER.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "A~fter"
-msgstr ""
+msgstr "পরে (~f)"
 
 #: ui/dlg/ins_paste.src#DLG_INSERT_PASTE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Insert Slides"
-msgstr ""
+msgstr "স্লাইডসমূহ প্রবেশ করান"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.DOCKINGWINDOW.TEXT
+#, fuzzy
 msgid  "Animation"
-msgstr ""
+msgstr "এ্যানিমেশন"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "First Image"
-msgstr ""
+msgstr "প্রথম চিত্র"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Backwards"
-msgstr ""
+msgstr "পশ্চাগামী"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Stop"
-msgstr ""
+msgstr "থামুন"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Play"
-msgstr ""
+msgstr "শুরু করুন"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Last Image"
-msgstr ""
+msgstr "শেষ চিত্র"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NUMERICFIELD.QUICKHELPTEXT
+#, fuzzy
 msgid  "Image Number"
-msgstr ""
+msgstr "চিত্র নম্বর"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TIMEFIELD.QUICKHELPTEXT
+#, fuzzy
 msgid  "Duration"
-msgstr ""
+msgstr "স্থিতিকাল"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "1"
-msgstr ""
+msgstr "১"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "2"
-msgstr ""
+msgstr "২"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "3"
-msgstr ""
+msgstr "৩"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "4"
-msgstr ""
+msgstr "৪"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "5"
-msgstr ""
+msgstr "৫"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM6.STRINGLIST.ITEM
+#, fuzzy
 msgid  "6"
-msgstr ""
+msgstr "৬"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM7.STRINGLIST.ITEM
+#, fuzzy
 msgid  "7"
-msgstr ""
+msgstr "৭"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM8.STRINGLIST.ITEM
+#, fuzzy
 msgid  "8"
-msgstr ""
+msgstr "৮"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM9.STRINGLIST.ITEM
+#, fuzzy
 msgid  "9"
-msgstr ""
+msgstr "৯"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM10.STRINGLIST.ITEM
+#, fuzzy
 msgid  "10"
-msgstr ""
+msgstr "১০"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM11.STRINGLIST.ITEM
+#, fuzzy
 msgid  "12"
-msgstr ""
+msgstr "১২"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM12.STRINGLIST.ITEM
+#, fuzzy
 msgid  "15"
-msgstr ""
+msgstr "১৫"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM13.STRINGLIST.ITEM
+#, fuzzy
 msgid  "20"
-msgstr ""
+msgstr "২০"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM14.STRINGLIST.ITEM
+#, fuzzy
 msgid  "25"
-msgstr ""
+msgstr "২৫"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM15.STRINGLIST.ITEM
+#, fuzzy
 msgid  "50"
-msgstr ""
+msgstr "৫০"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM16.STRINGLIST.ITEM
+#, fuzzy
 msgid  "100"
-msgstr ""
+msgstr "১০০"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM17.STRINGLIST.ITEM
+#, fuzzy
 msgid  "500"
-msgstr ""
+msgstr "৫০০"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM18.STRINGLIST.ITEM
+#, fuzzy
 msgid  "1000"
-msgstr ""
+msgstr "১০০০"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.ITEM19.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Max."
-msgstr ""
+msgstr "সর্বোচ্চ"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.STRINGLIST.QUICKHELPTEXT
+#, fuzzy
 msgid  "Loop Count"
-msgstr ""
+msgstr "লুপ গণনা করুন"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.BUTTONIMAGE.QUICKHELPTEXT
+#, fuzzy
 msgid  "Apply Object"
-msgstr ""
+msgstr "অবজেক্ট প্রয়োগ করুন"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.BUTTONIMAGE.QUICKHELPTEXT
+#, fuzzy
 msgid  "Apply Objects Individually"
-msgstr ""
+msgstr "অবজেক্ট পৃথকভাবে প্রয়োগ করুন"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.BUTTONIMAGE.QUICKHELPTEXT
+#, fuzzy
 msgid  "Delete Current Image"
-msgstr ""
+msgstr "বর্তমান চিত্র মুছে ফেলুন"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.BUTTONIMAGE.QUICKHELPTEXT
+#, fuzzy
 msgid  "Delete All Images"
-msgstr ""
+msgstr "সকল চিত্র মুছে ফেলুন"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Number"
-msgstr ""
+msgstr "সংখ্যা"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Image"
-msgstr ""
+msgstr "চিত্র"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Group object"
-msgstr ""
+msgstr "দলগত অবজেক্ট"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Bitmap object"
-msgstr ""
+msgstr "বিটম্যাপ অবজেক্ট"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Alignment"
-msgstr ""
+msgstr "প্রান্তিককরণ"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Top Left"
-msgstr ""
+msgstr "উপরে বামে"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Left"
-msgstr ""
+msgstr "বামে"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Bottom Left"
-msgstr ""
+msgstr "নীচে বামে"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Top"
-msgstr ""
+msgstr "উপরে"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Centered"
-msgstr ""
+msgstr "কেন্দ্রীয়"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Bottom"
-msgstr ""
+msgstr "নীচে"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Top Right"
-msgstr ""
+msgstr "উপরে ডানে"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Right"
-msgstr ""
+msgstr "ডানে"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Bottom Right"
-msgstr ""
+msgstr "নীচে ডানে"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Create"
-msgstr ""
+msgstr "তৈরি করুন"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Animation group"
-msgstr ""
+msgstr "এ্যানিমেশন দল"
 
 #: ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.STRING.TEXT
+#, fuzzy
 msgid  "Preview"
-msgstr ""
+msgstr "প্রাকদর্শন"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TABPAGE.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "পছন্দসমুহ"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PRINT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Contents"
-msgstr ""
+msgstr "বিষয়বস্তুসমূহ"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_DRAW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Drawing"
-msgstr ""
+msgstr "চিত্র (~D)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_NOTES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Notes"
-msgstr ""
+msgstr "নোটসমূহ (~N)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_HANDOUTS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Hando~uts"
-msgstr ""
+msgstr "বিলিপত্র (~u)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_OUTLINE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Out~line"
-msgstr ""
+msgstr "আউটলাইন (~l)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_OUTPUT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Quality"
-msgstr ""
+msgstr "বৈশিষ্ট্য"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "পূর্বনির্ধারিত"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Gra~yscale"
-msgstr ""
+msgstr "ধূসর (~y)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_BLACKWHITE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Black & ~white"
-msgstr ""
+msgstr "কালো ও সাদা (~w)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PRINT_EXT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Print"
-msgstr ""
+msgstr "মুদ্রন করুন"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_PAGENAME.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Page name"
-msgstr ""
+msgstr "পৃষ্ঠার নাম (~P)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_DATE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "D~ate"
-msgstr ""
+msgstr "তারিখ (~a)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_TIME.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Ti~me"
-msgstr ""
+msgstr "সময় (~m)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_HIDDEN_PAGES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "H~idden pages"
-msgstr ""
+msgstr "লুকানো পৃষ্ঠাসমূহ (~i)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.GRP_PAGE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Page options"
-msgstr ""
-
-#: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_DEFAULT.RADIOBUTTON.TEXT
-msgid  "Default"
-msgstr ""
+msgstr "পৃষ্ঠার পছন্দসমূহ"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_PAGESIZE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Fit to page"
-msgstr ""
+msgstr "পৃষ্ঠায় মানানসই করুন (~F)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_PAGETILE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Tile pages"
-msgstr ""
+msgstr "টালি পৃষ্ঠাসমূহ (~T)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_BOOKLET.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "B~rochure"
-msgstr ""
+msgstr "কার্যাবলী সম্বলিত পুস্তিকা (~r)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_FRONT.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Fr~ont"
-msgstr ""
+msgstr "সম্নূখ ভাগ (~o)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_BACK.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Ba~ck"
-msgstr ""
+msgstr "পিছনে (~c)"
 
 #: ui/dlg/prntopts.src#TP_PRINT_OPTIONS.CBX_PAPERBIN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Paper tray from printer s~ettings"
-msgstr ""
+msgstr "মুদ্রণ বিন্যাসনসমূহের কাগজের ট্রে (~e)"
 
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_REPLYTO_POSTIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Reply"
 msgstr ""
 
@@ -1664,6 +2032,7 @@ msgid  "~Paste"
 msgstr ""
 
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Delete Comment"
 msgstr ""
 
@@ -1672,23 +2041,12 @@ msgid  "Delete All Comments b~y %1"
 msgstr ""
 
 #: ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALL_POSTIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete ~All Comments"
-msgstr ""
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_REPLYTO_POSTIT.MENUITEM.TEXT
-msgid  "~Reply"
-msgstr ""
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETE_POSTIT.MENUITEM.TEXT
-msgid  "~Delete Comment"
 msgstr ""
 
 #: ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MENUITEM.TEXT
 msgid  "Delete All Comments ~by %1"
-msgstr ""
-
-#: ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETEALL_POSTIT.MENUITEM.TEXT
-msgid  "Delete ~All Comments"
 msgstr ""
 
 #: ui/annotations/annotations.src#STR_ANNOTATION_TODAY.STRING.TEXT
@@ -1744,72 +2102,84 @@ msgid  "Reply to %1"
 msgstr ""
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.STRING.TEXT
+#, fuzzy
 msgid  "Drawing View"
-msgstr ""
+msgstr "অংকন প্রদর্শন"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.STRING.TEXT
+#, fuzzy
 msgid  "This is where you create and edit drawings."
-msgstr ""
-
-#: ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_N.STRING.TEXT
-msgid  "Drawing View"
-msgstr ""
+msgstr "এখানে আপনি অংকন তৈরী ও সম্পাদনা করেন।"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_D.STRING.TEXT
+#, fuzzy
 msgid  "This is where you create and edit slides."
-msgstr ""
+msgstr "এখানে আপনি স্লাইড তৈরী ও সম্পাদনা করেন।"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_N.STRING.TEXT
+#, fuzzy
 msgid  "Outline View"
-msgstr ""
+msgstr "আউটলাইন প্রদর্শন"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_D.STRING.TEXT
+#, fuzzy
 msgid  "This is where you enter or edit text in list form."
-msgstr ""
+msgstr "এখানে আপনি তালিকা ফর্মে পাঠ প্রবেশ ও সম্পাদনা করেন"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_N.STRING.TEXT
+#, fuzzy
 msgid  "Slides View"
-msgstr ""
+msgstr "স্লাইডসমূহের প্রদর্শন"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_D.STRING.TEXT
+#, fuzzy
 msgid  "This is where you sort slides."
-msgstr ""
+msgstr "এখানে আপনি স্লাইড সাজান।"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_N.STRING.TEXT
+#, fuzzy
 msgid  "Notes View"
-msgstr ""
+msgstr "নোটসমুহের প্রদর্শন"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_D.STRING.TEXT
+#, fuzzy
 msgid  "This is where you enter and view notes."
-msgstr ""
+msgstr "এখানে আপনি নোটসমূহ প্রবেশ ও প্রদর্শন করেন।"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_N.STRING.TEXT
+#, fuzzy
 msgid  "Handout View"
-msgstr ""
+msgstr "বিলিপত্রের প্রদর্শন"
 
 #: ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_D.STRING.TEXT
+#, fuzzy
 msgid  "This is where you decide on the layout for handouts."
-msgstr ""
+msgstr "এখানে আপনি বিলিপত্রের জন্য বর্হিবিন্যাসে সিদ্ধান্ত নেন।"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Next"
-msgstr ""
+msgstr "পরবর্তী (~N)"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Previous"
-msgstr ""
+msgstr "পূর্ববর্তী (~P)"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Go to Slide"
-msgstr ""
+msgstr "স্লাইডে যান (~G)"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~First Slide"
-msgstr ""
+msgstr "প্রথম স্লাইড (~F)"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Last Slide"
-msgstr ""
+msgstr "শেষ স্লাইড (~L)"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PEN_MODE.MENUITEM.TEXT
 msgid  "Mouse pointer as ~Pen"
@@ -1848,240 +2218,279 @@ msgid  "~Erase all ink on Slide"
 msgstr ""
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Screen"
-msgstr ""
+msgstr "পর্দা (~S)"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Black"
-msgstr ""
+msgstr "কালো (~B)"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~White"
-msgstr ""
+msgstr "সাদা (~W)"
 
 #: ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MENUITEM.TEXT
+#, fuzzy
 msgid  "~End Show"
-msgstr ""
+msgstr "প্রদর্শন শেষ (~E)"
 
 #: ui/app/menuids4_tmpl.src#MNSUB_GRAPHIC_PORTAL.MN_SUB_GRAPHIC.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Graphics"
-msgstr ""
+msgstr "গ্রাফিক্স (~G)"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.SID_FORMAT_TABLE_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Table..."
-msgstr ""
+msgstr "সারণী... (~T)"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Cell"
-msgstr ""
+msgstr "কক্ষ (~C)"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Merge"
-msgstr ""
+msgstr "একত্রিত করুন (~M)"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Split..."
-msgstr ""
+msgstr "বিভক্ত করুন... (~S)"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Top"
-msgstr ""
+msgstr "উপরে (~T)"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MENUITEM.TEXT
+#, fuzzy
 msgid  "C~enter"
-msgstr ""
+msgstr "কেন্দ্রে (~e)"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Bottom"
-msgstr ""
+msgstr "নিচে (~B)"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Row"
-msgstr ""
+msgstr "সারি (~R)"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Space ~Equally"
-msgstr ""
+msgstr "সমান ফাঁকা রাখুন (~E)"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Select"
-msgstr ""
+msgstr "নির্বাচন করুন (~S)"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Insert..."
 msgstr ""
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "মুছে ফেলুন (~D)"
 
 #: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "Colu~mn"
-msgstr ""
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MENUITEM.TEXT
-msgid  "Space ~Equally"
-msgstr ""
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_COL.MENUITEM.TEXT
-msgid  "~Select"
-msgstr ""
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_COL_DLG.MENUITEM.TEXT
-msgid  "~Insert..."
-msgstr ""
-
-#: ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MENUITEM.TEXT
-msgid  "~Delete"
-msgstr ""
+msgstr "স্তম্ভ (~m)"
 
 #: ui/app/strings.src#STR_DRAW_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Drawings Toolbar"
-msgstr ""
+msgstr "অংকন টুলবার"
 
 #: ui/app/strings.src#STR_GRAPHIC_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Draw toolbar/Graphics"
-msgstr ""
+msgstr "চিত্র টুলবার/গ্রাফিক্স"
 
 #: ui/app/strings.src#STR_SLIDE_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Slide Bar"
-msgstr ""
+msgstr "স্লাইড বার"
 
 #: ui/app/strings.src#STR_OUTLINE_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Outline Bar"
-msgstr ""
+msgstr "আউটলাইন বার"
 
 #: ui/app/strings.src#STR_DRAW_OBJ_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Draw Object Bar"
-msgstr ""
+msgstr "অবজেক্ট বার আঁকুন"
 
 #: ui/app/strings.src#STR_GRAPHIC_OBJ_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Draw object bar/Graphics"
-msgstr ""
+msgstr "অবজেক্ট বার/গ্রাফিক্স আঁকুন"
 
 #: ui/app/strings.src#STR_DRAW_OPTIONS_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Options Bar"
-msgstr ""
+msgstr "পছন্দসমূহের বার"
 
 #: ui/app/strings.src#STR_GRAPHIC_OPTIONS_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Options bar/Graphics"
-msgstr ""
+msgstr "পছন্দসমূহের বার/গ্রাফিক্স"
 
 #: ui/app/strings.src#STR_DRAW_COMMONTASK_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Presentation"
-msgstr ""
+msgstr "উপস্থাপনা"
 
 #: ui/app/strings.src#STR_SLIDE_OBJ_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Slide Object Bar"
-msgstr ""
+msgstr "স্লাইড অবজেক্ট বার"
 
 #: ui/app/strings.src#STR_BEZIER_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Bézier object bar"
-msgstr ""
+msgstr "বেজিয়ার অবজেক্ট বার"
 
 #: ui/app/strings.src#STR_GLUEPOINTS_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Glue Point Object Bar"
-msgstr ""
+msgstr "সংযোগ বিন্দুর অবজেক্ট বার"
 
 #: ui/app/strings.src#STR_DRAW_TEXT_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Text Object Bar"
-msgstr ""
+msgstr "পাঠ অবজেক্ট বার"
 
 #: ui/app/strings.src#STR_GRAPHIC_TEXT_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Text Object Bar/Draw"
-msgstr ""
+msgstr "পাঠ অবজেক্ট বার/চিত্র"
 
 #: ui/app/strings.src#STR_NULL.STRING.TEXT
+#, fuzzy
 msgid  "None"
-msgstr ""
+msgstr "কোনোটি না"
 
 #: ui/app/strings.src#STR_INSERTPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Insert Slide"
-msgstr ""
+msgstr "স্লাইড প্রবেশ করান"
 
 #: ui/app/strings.src#STR_INSERTLAYER.STRING.TEXT
+#, fuzzy
 msgid  "Insert Layer"
-msgstr ""
+msgstr "স্তর প্রবেশ করান"
 
 #: ui/app/strings.src#STR_MODIFYLAYER.STRING.TEXT
+#, fuzzy
 msgid  "Modify Layer"
-msgstr ""
+msgstr "স্তর পরিবর্তন করুন"
 
 #: ui/app/strings.src#STR_UNDO_SLIDE_PARAMS.STRING.TEXT
+#, fuzzy
 msgid  "Slide parameter"
-msgstr ""
+msgstr "স্লাইড প্যারামিটার"
 
 #: ui/app/strings.src#STR_UNDO_SLIDE_MOVE.STRING.TEXT
+#, fuzzy
 msgid  "Move slide"
-msgstr ""
+msgstr "স্লাইড সরান"
 
 #: ui/app/strings.src#STR_UNDO_CUT.STRING.TEXT
+#, fuzzy
 msgid  "Cut"
-msgstr ""
+msgstr "কাটুন"
 
 #: ui/app/strings.src#STR_UNDO_REPLACE.STRING.TEXT
+#, fuzzy
 msgid  "Replace"
-msgstr ""
+msgstr "প্রতিস্থাপন করুন"
 
 #: ui/app/strings.src#STR_UNDO_DRAGDROP.STRING.TEXT
+#, fuzzy
 msgid  "Drag and Drop"
-msgstr ""
+msgstr "টানুন এবং ছাড়ুন"
 
 #: ui/app/strings.src#STR_INSERTGRAPHIC.STRING.TEXT
+#, fuzzy
 msgid  "Insert picture"
-msgstr ""
+msgstr "ছবি প্রবেশ করান"
 
 #: ui/app/strings.src#STR_SLOW.STRING.TEXT
+#, fuzzy
 msgid  "Slow"
-msgstr ""
+msgstr "ধিরে"
 
 #: ui/app/strings.src#STR_MEDIUM.STRING.TEXT
+#, fuzzy
 msgid  "Medium"
-msgstr ""
+msgstr "মধ্যম"
 
 #: ui/app/strings.src#STR_FAST.STRING.TEXT
+#, fuzzy
 msgid  "Fast"
-msgstr ""
+msgstr "দ্রুত"
 
 #: ui/app/strings.src#STR_UNDO_BEZCLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close Polygon"
-msgstr ""
+msgstr "বহুভুজ বন্ধ করুন"
 
 #: ui/app/strings.src#STR_SLIDE_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Slide Sorter"
-msgstr ""
+msgstr "স্লাইড বাছাইকারী"
 
 #: ui/app/strings.src#STR_DRAW_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Normal"
-msgstr ""
+msgstr "সাধারণ"
 
 #: ui/app/strings.src#STR_OUTLINE_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Outline"
-msgstr ""
+msgstr "আউটলাইন"
 
 #: ui/app/strings.src#STR_NOTES_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Notes"
-msgstr ""
+msgstr "নোট"
 
 #: ui/app/strings.src#STR_HANDOUT_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Handout"
-msgstr ""
+msgstr "বিলিপত্র"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_NONE.STRING.TEXT
+#, fuzzy
 msgid  "Blank Slide"
-msgstr ""
+msgstr "খালি স্লাইড"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_ONLY_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Title Only"
-msgstr ""
+msgstr "শুধুমাত্র শিরোনাম"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_ONLY_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Centered Text"
-msgstr ""
+msgstr "কেন্দ্রীয় পাঠ্য"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Title Slide"
-msgstr ""
+msgstr "শিরোনাম স্লাইড"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_CONTENT.STRING.TEXT
 msgid  "Title, Content"
@@ -2120,932 +2529,1127 @@ msgid  "Title, 6 Content"
 msgstr ""
 
 #: ui/app/strings.src#STR_AL_TITLE_VERT_OUTLINE.STRING.TEXT
+#, fuzzy
 msgid  "Title, Vertical Text"
-msgstr ""
+msgstr "শিরোনাম, উলম্ব পাঠ"
 
 #: ui/app/strings.src#STR_AL_TITLE_VERT_OUTLINE_CLIPART.STRING.TEXT
+#, fuzzy
 msgid  "Title, Vertical Text, Clipart"
-msgstr ""
+msgstr "শিরোনাম, উলম্ব পাঠ, ক্লিপআর্ট"
 
 #: ui/app/strings.src#STR_AL_VERT_TITLE_TEXT_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Vertical Title, Text, Chart"
-msgstr ""
+msgstr "উলম্ব শিরোনাম, পাঠ, ছক"
 
 #: ui/app/strings.src#STR_AL_VERT_TITLE_VERT_OUTLINE.STRING.TEXT
+#, fuzzy
 msgid  "Vertical Title, Vertical Text"
-msgstr ""
+msgstr "উলম্ব শিরোনাম, উলম্ব পাঠ"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT1.STRING.TEXT
+#, fuzzy
 msgid  "One Slide"
-msgstr ""
+msgstr "একটি স্লাইড"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT2.STRING.TEXT
+#, fuzzy
 msgid  "Two Slides"
-msgstr ""
+msgstr "দুইটি স্লাইড"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT3.STRING.TEXT
+#, fuzzy
 msgid  "Three Slides"
-msgstr ""
+msgstr "তিনটি স্লাইড"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT4.STRING.TEXT
+#, fuzzy
 msgid  "Four Slides"
-msgstr ""
+msgstr "চারটি স্লাইড"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT6.STRING.TEXT
+#, fuzzy
 msgid  "Six Slides"
-msgstr ""
+msgstr "ছয়টি স্লাইড"
 
 #: ui/app/strings.src#STR_AUTOLAYOUT_HANDOUT9.STRING.TEXT
+#, fuzzy
 msgid  "Nine Slides"
-msgstr ""
-
-#: ui/app/strings.src#STR_AUTOLAYOUT_NOTES.STRING.TEXT
-msgid  "Notes"
-msgstr ""
+msgstr "নয়টি স্লাইড"
 
 #: ui/app/strings.src#STR_TRANSFORM.STRING.TEXT
+#, fuzzy
 msgid  "transform"
-msgstr ""
+msgstr "রূপান্তর করুন"
 
 #: ui/app/strings.src#STR_LINEEND.STRING.TEXT
+#, fuzzy
 msgid  "Line Ends"
-msgstr ""
+msgstr "লাইন শেষ"
 
 #: ui/app/strings.src#STR_DESC_LINEEND.STRING.TEXT
+#, fuzzy
 msgid  "Please enter a name for the new arrowhead:"
-msgstr ""
+msgstr "অনুগ্রহ করে নতুন তীরের-অগ্রভাগের জন্য একটি নাম দিন"
 
 #: ui/app/strings.src#STR_WARN_NAME_DUPLICATE.STRING.TEXT
+#, fuzzy
 msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr ""
+msgstr "নির্বাচিত নামটি ইতোমধ্যে বিদ্যমান।\nঅনুগ্রহ করে আরেকটি নাম দিন।"
 
 #: ui/app/strings.src#STR_UNDO_ANIMATION.STRING.TEXT
+#, fuzzy
 msgid  "Animation parameters"
-msgstr ""
+msgstr "অ্যানিমেশন প্যারামিটার"
 
 #: ui/app/strings.src#STR_EXPORT_HTML_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Web Page"
-msgstr ""
+msgstr "ওয়েব পেজ"
 
 #: ui/app/strings.src#STR_EXPORT_DIALOG_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Export"
-msgstr ""
+msgstr "রপ্তানি করুন"
 
 #: ui/app/strings.src#STR_UNDO_COPYOBJECTS.STRING.TEXT
+#, fuzzy
 msgid  "Duplicate"
-msgstr ""
+msgstr "অনুরুপ"
 
 #: ui/app/strings.src#STR_TITLE_NAMEGROUP.STRING.TEXT
+#, fuzzy
 msgid  "Name Object"
-msgstr ""
+msgstr "নাম অবজেক্ট"
 
 #: ui/app/strings.src#STR_DESC_NAMEGROUP.STRING.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "নাম"
 
 #: ui/app/strings.src#STR_WARN_PAGE_EXISTS.STRING.TEXT
+#, fuzzy
 msgid  "The slide name already exists or is invalid. Please enter another name."
-msgstr ""
+msgstr "স্লাইডের নামটি ইতোমধ্যে বিদ্যমান বা অবৈধ। অনুগ্রহ করে আরেকটি নাম দিন।"
 
 #: ui/app/strings.src#STR_SNAPDLG_SETLINE.STRING.TEXT
+#, fuzzy
 msgid  "Edit Snap Line"
-msgstr ""
+msgstr "স্ন্যাপ লাইন সম্পাদনা করুন"
 
 #: ui/app/strings.src#STR_SNAPDLG_SETPOINT.STRING.TEXT
+#, fuzzy
 msgid  "Edit Snap Point"
-msgstr ""
+msgstr "স্ন্যাপ বিন্দু সম্পাদনা করুন"
 
 #: ui/app/strings.src#STR_POPUP_EDIT_SNAPLINE.STRING.TEXT
+#, fuzzy
 msgid  "Edit Snap Line..."
-msgstr ""
+msgstr "স্ন্যাপ লাইন সম্পাদনা করুন..."
 
 #: ui/app/strings.src#STR_POPUP_EDIT_SNAPPOINT.STRING.TEXT
+#, fuzzy
 msgid  "Edit Snap Point..."
-msgstr ""
+msgstr "স্ন্যাপ বিন্দু সম্পাদনা করুন..."
 
 #: ui/app/strings.src#STR_POPUP_DELETE_SNAPLINE.STRING.TEXT
+#, fuzzy
 msgid  "Delete Snap Line"
-msgstr ""
+msgstr "স্ন্যাপ লাইন মুছে ফেলুন"
 
 #: ui/app/strings.src#STR_POPUP_DELETE_SNAPPOINT.STRING.TEXT
+#, fuzzy
 msgid  "Delete Snap Point"
-msgstr ""
+msgstr "স্ন্যাপ বিন্দু মুছে ফেলুন"
 
 #: ui/app/strings.src#STR_IMPRESS.STRING.TEXT
+#, fuzzy
 msgid  "StarImpress 4.0"
-msgstr ""
+msgstr "StarImpress ৪.০"
 
 #: ui/app/strings.src#STR_LAYER.STRING.TEXT
+#, fuzzy
 msgid  "Layer"
-msgstr ""
+msgstr "স্তর"
 
 #: ui/app/strings.src#STR_UNDO_DELETEPAGES.STRING.TEXT
+#, fuzzy
 msgid  "Delete slides"
-msgstr ""
+msgstr "স্লাইডসমূহ মুছে ফেলুন"
 
 #: ui/app/strings.src#STR_UNDO_INSERTPAGES.STRING.TEXT
+#, fuzzy
 msgid  "Insert slides"
-msgstr ""
+msgstr "স্লাইডসমূহ প্রবেশ করান"
 
 #: ui/app/strings.src#STR_ASK_DELETE_LAYER.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgstr "আপনি কি নিশ্চিত যে আপনি \"$\" স্তর মুছে ফেলতে চান?\nনোট: এই স্তরের সকল অবজেক্ট মুছে যাবে!"
 
 #: ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to delete all images?"
-msgstr ""
+msgstr "আপনি কি সত্যিই সকল চিত্র মুছে ফেলতে চান?"
 
 #: ui/app/strings.src#STR_UNDO_CHANGE_TITLE_AND_LAYOUT.STRING.TEXT
+#, fuzzy
 msgid  "Modify title and outline"
-msgstr ""
+msgstr "শিরোনাম এবং আউটলাইন পরিবর্তন করুন"
 
 #: ui/app/strings.src#STR_WAV_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Sound"
-msgstr ""
+msgstr "শব্দ"
 
 #: ui/app/strings.src#STR_MIDI_FILE.STRING.TEXT
+#, fuzzy
 msgid  "MIDI"
-msgstr ""
+msgstr "এমআইডিআই"
 
 #: ui/app/strings.src#STR_AU_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Sun/NeXT Audio"
-msgstr ""
+msgstr "সান/পরবর্তী অডিও"
 
 #: ui/app/strings.src#STR_VOC_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Creative Labs Audio"
-msgstr ""
+msgstr "ক্রিয়েটিভ ল্যাবের অডিও"
 
 #: ui/app/strings.src#STR_AIFF_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Apple/SGI Audio"
-msgstr ""
+msgstr "অ্যাপেল/এসজিআই অডিও"
 
 #: ui/app/strings.src#STR_SVX_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Amiga SVX Audio"
-msgstr ""
+msgstr "অ্যামিগা এসভিএক্স অডিও"
 
 #: ui/app/strings.src#STR_SD_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Slide"
-msgstr ""
+msgstr "স্লাইড"
 
 #: ui/app/strings.src#STR_ALL_FILES.STRING.TEXT
+#, fuzzy
 msgid  "All files (*.*)"
-msgstr ""
+msgstr "সকল ফাইল (*.*)"
 
 #: ui/app/strings.src#STR_UNDO_INSERT_TEXTFRAME.STRING.TEXT
+#, fuzzy
 msgid  "Insert text frame"
-msgstr ""
+msgstr "পাঠ কাঠামো প্রবেশ করান"
 
 #: ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.STRING.TEXT
+#, fuzzy
 msgid  "This function cannot be run \nwith the selected objects."
-msgstr ""
+msgstr "নির্বাচিত অবজেক্টের সাথে\nএই ফাংশনটি চালানো যায় না।"
 
 #: ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Insert File"
-msgstr ""
+msgstr "ফাইল প্রবেশ করান"
 
 #: ui/app/strings.src#STR_READ_DATA_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "The file could not be loaded!"
-msgstr ""
+msgstr "ফাইলটি লোড করা যাবে না!"
 
 #: ui/app/strings.src#STR_SCALE_OBJECTS.STRING.TEXT
+#, fuzzy
 msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "নতুন পৃষ্ঠাসমূহের বিন্যাস অভিযোজিত করা হবে।\nআপনি কি অবজেক্টও অভিযোজন করতে চান?"
 
 #: ui/app/strings.src#STR_CREATE_PAGES.STRING.TEXT
+#, fuzzy
 msgid  "Create slides"
-msgstr ""
+msgstr "স্লাইড তৈরি করুন"
 
 #: ui/app/strings.src#STR_UNDO_CHANGE_PAGEFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Modify page format"
-msgstr ""
+msgstr "পৃষ্ঠা বিন্যাস পরিবর্তন করুন"
 
 #: ui/app/strings.src#STR_UNDO_CHANGE_PAGEBORDER.STRING.TEXT
+#, fuzzy
 msgid  "Modify page margins"
-msgstr ""
+msgstr "পৃষ্ঠা মার্জিন পরিবর্তন করুন"
 
 #: ui/app/strings.src#STR_EDIT_OBJ.STRING.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "সম্পাদনা করুন (~E)"
 
 #: ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr ""
+msgstr "এই ক্রিয়াটি পূর্বের অবসথায় আনা সম্ভব ক্রিয়াগুলির তালিকাকে মুছে দেয়।\nডকুমেন্টটিতে আগে যেসব পরিবর্তন করা হয়েছে সেগুলি এখনও বৈধ,\nকিন্তু পূর্বাবস্থায় আনা সম্ভব নয়। আপনি কি চালিয়ে যেতে চান এবং\nনতুন স্লাইড ডিজাইনটি কার্যকর করতে চান?"
 
 #: ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Do not show this warning again"
-msgstr ""
+msgstr "এই সতর্কতাবাণী পরবর্তীতে আর দেখাবেন না (~D)"
 
 #: ui/app/strings.src#RID_UNDO_DELETE_WARNING.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
-
-#: ui/app/strings.src#STR_DELETE_PAGES.STRING.TEXT
-msgid  "Delete slides"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: ui/app/strings.src#STR_WARN_PRINTFORMAT_FAILURE.STRING.TEXT
+#, fuzzy
 msgid  "The document format could not be set on the specified printer."
-msgstr ""
+msgstr "উল্লেখিত মুদ্রকে নথির বিন্যাস নির্ধারণ করা যায়নি।"
 
 #: ui/app/strings.src#STR_REMOVE_LINK.STRING.TEXT
+#, fuzzy
 msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "এই গ্রাফিকটি একটি নথিতে সংযুক্ত করা হয়েছে।\nআপনি কি এটি সম্পাদনা করার জন্য গ্রাফিকটির সংযোগ বাদ দিতে চান?"
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics file cannot be opened"
-msgstr ""
+msgstr "গ্রাফিক্স ফাইল খোলা যায় না"
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_IOERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics file cannot be read"
-msgstr ""
+msgstr "গ্রাফিক্স ফাইল পড়া যায় না"
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_FORMATERROR.STRING.TEXT
+#, fuzzy
 msgid  "Unknown graphics format"
-msgstr ""
+msgstr "অজানা গ্রাফিক্স বিন্যাস"
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_VERSIONERROR.STRING.TEXT
+#, fuzzy
 msgid  "This graphics file version is not supported"
-msgstr ""
+msgstr "এই গ্রাফিক্স ফাইলটির সংস্করণ সমর্থিত নয়"
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_FILTERERROR.STRING.TEXT
+#, fuzzy
 msgid  "Graphics filter not found"
-msgstr ""
+msgstr "গ্রাফিক্স ফিল্টার খুঁজে পাওয়া যায়নি"
 
 #: ui/app/strings.src#STR_IMPORT_GRFILTER_TOOBIG.STRING.TEXT
+#, fuzzy
 msgid  "Not enough memory to import graphics"
-msgstr ""
+msgstr "গ্রাফিক্স আমদানি করার মত যথেষ্ট স্মৃতি খালি নেই"
 
 #: ui/app/strings.src#STR_OBJECTS.STRING.TEXT
+#, fuzzy
 msgid  "Objects"
-msgstr ""
+msgstr "অবজেক্ট"
 
 #: ui/app/strings.src#STR_END_SEARCHING.STRING.TEXT
+#, fuzzy
 msgid  "The document search is finished."
-msgstr ""
+msgstr "নথিটির অনুসন্ধান সম্পন্ন হয়েছে।"
 
 #: ui/app/strings.src#STR_END_SPELLING.STRING.TEXT
+#, fuzzy
 msgid  "Spellcheck of entire document has been completed."
-msgstr ""
+msgstr "পুরো নথির বানান পরীক্ষণ সম্পন্ন হয়েছে।"
 
 #: ui/app/strings.src#STR_END_SPELLING_OBJ.STRING.TEXT
+#, fuzzy
 msgid  "The spellcheck for the selected objects has been completed."
-msgstr ""
+msgstr "নির্বাচিত অবজেক্টগুলোর বানান পরীক্ষণ সম্পন্ন হয়েছে।"
 
 #: ui/app/strings.src#STR_NOLANGUAGE.STRING.TEXT
+#, fuzzy
 msgid  "The selected language is not available."
-msgstr ""
+msgstr "নির্বাচিত ভাষাটি সহজলভ্য নয়।"
 
 #: ui/app/strings.src#STR_ASK_FOR_CONVERT_TO_BEZIER.STRING.TEXT
+#, fuzzy
 msgid  "Convert selected object to curve?"
-msgstr ""
+msgstr "নির্বাচিত অবজেক্টকে কার্ভে রুপান্তর করুন?"
 
 #: ui/app/strings.src#STR_UNDO_CHANGE_PRES_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Modify presentation object '$'"
-msgstr ""
+msgstr "'$' উপস্থাপনা অবজেক্টকে পরিবর্তন করুন"
 
 #: ui/app/strings.src#STR_UNDO_MODIFY_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Slide layout"
-msgstr ""
+msgstr "স্লাইড বর্হিবিন্যাস"
 
 #: ui/app/strings.src#STR_STATSTR_PRINT.STRING.TEXT
+#, fuzzy
 msgid  "Printing..."
-msgstr ""
+msgstr "মুদ্রন হচ্ছে..."
 
 #: ui/app/strings.src#STR_UNDO_INSERT_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Insert file"
-msgstr ""
+msgstr "ফাইল প্রবেশ করান"
 
 #: ui/app/strings.src#STR_SCALE_OBJS_TO_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Should the graphics be scaled to the new slide format?"
-msgstr ""
+msgstr "গ্রাফিক্সটি কি নতুন বিন্যাস অনুযায়ী পরিমাপ করা হবে?"
 
 #: ui/app/strings.src#STR_UNDO_INSERT_SPECCHAR.STRING.TEXT
+#, fuzzy
 msgid  "Insert special character"
-msgstr ""
+msgstr "বিশেষ বর্ণচিহ্ন প্রবেশ করান"
 
 #: ui/app/strings.src#STR_UNDO_SET_PRESLAYOUT.STRING.TEXT
+#, fuzzy
 msgid  "Apply presentation layout"
-msgstr ""
+msgstr "উপস্থাপনা বর্হিবিন্যাস প্রয়োগ করুন"
 
 #: ui/app/strings.src#STR_STRING_NOTFOUND.STRING.TEXT
+#, fuzzy
 msgid  "Search key not found."
-msgstr ""
+msgstr "অনুসন্ধান কী খুঁজে পাওয়া যায়নি।"
 
 #: ui/app/strings.src#STR_PLAY.STRING.TEXT
+#, fuzzy
 msgid  "~Play"
-msgstr ""
+msgstr "চালান (~P)"
 
 #: ui/app/strings.src#STR_STOP.STRING.TEXT
+#, fuzzy
 msgid  "Sto~p"
-msgstr ""
+msgstr "থামান (~p)"
 
 #: ui/app/strings.src#STR_UNDO_ORIGINALSIZE.STRING.TEXT
+#, fuzzy
 msgid  "Original Size"
-msgstr ""
+msgstr "মূল আকার"
 
 #: ui/app/strings.src#STR_PRINT_DRAWING.STRING.TEXT
+#, fuzzy
 msgid  " (Drawing)"
-msgstr ""
+msgstr "(অংকন)"
 
 #: ui/app/strings.src#STR_PRINT_NOTES.STRING.TEXT
+#, fuzzy
 msgid  " (Notes)"
-msgstr ""
+msgstr "(নোটসমূহ)"
 
 #: ui/app/strings.src#STR_PRINT_HANDOUT.STRING.TEXT
+#, fuzzy
 msgid  " (Handout)"
-msgstr ""
+msgstr "(বিলিপত্র)"
 
 #: ui/app/strings.src#STR_PRINT_OUTLINE.STRING.TEXT
+#, fuzzy
 msgid  " (Outline)"
-msgstr ""
+msgstr "(আউটলাইন)"
 
 #: ui/app/strings.src#STR_WARN_SCALE_FAIL.STRING.TEXT
+#, fuzzy
 msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr ""
+msgstr "উল্লেখিত স্কেল অবৈধ।\nআপনি কি নতুন একটি প্রবেশ করাতে চান?"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_NONE.STRING.TEXT
+#, fuzzy
 msgid  "No action"
-msgstr ""
+msgstr "কোনো ক্রিয়া নেই"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_PREVPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Go to previous slide"
-msgstr ""
+msgstr "পূর্ববর্তী স্লাইডে যান"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_NEXTPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Go to next slide"
-msgstr ""
+msgstr "পরবর্তী স্লাইডে যান"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_FIRSTPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Go to first slide"
-msgstr ""
+msgstr "প্রথম স্লাইডে যান"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_LASTPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Go to last slide"
-msgstr ""
+msgstr "শেষ স্লাইডে যান"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_BOOKMARK.STRING.TEXT
+#, fuzzy
 msgid  "Go to page or object"
-msgstr ""
+msgstr "পৃষ্ঠা বা অবজেক্টে যান"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "Go to document"
-msgstr ""
+msgstr "নথিতে যান"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_VANISH.STRING.TEXT
+#, fuzzy
 msgid  "Fade object"
-msgstr ""
+msgstr "অবজেক্ট বর্ণহীন করুন"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_INVISIBLE.STRING.TEXT
+#, fuzzy
 msgid  "Hide object"
-msgstr ""
+msgstr "অবজেক্ট লুকান"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_SOUND.STRING.TEXT
+#, fuzzy
 msgid  "Play sound"
-msgstr ""
+msgstr "শব্দ বাজান"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_VERB.STRING.TEXT
+#, fuzzy
 msgid  "Start object action"
-msgstr ""
+msgstr "অবজেক্ট কাজ শুরু করুন"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_PROGRAM.STRING.TEXT
+#, fuzzy
 msgid  "Run program"
-msgstr ""
+msgstr "প্রোগ্রাম চালান"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_MACRO.STRING.TEXT
+#, fuzzy
 msgid  "Run macro"
-msgstr ""
+msgstr "ম্যাক্রো চালান"
 
 #: ui/app/strings.src#STR_CLICK_ACTION_STOPPRESENTATION.STRING.TEXT
+#, fuzzy
 msgid  "Exit presentation"
-msgstr ""
+msgstr "উপস্থাপনা ত।যাগ করুন"
 
 #: ui/app/strings.src#STR_EFFECTDLG_JUMP.STRING.TEXT
+#, fuzzy
 msgid  "Target"
-msgstr ""
+msgstr "লক্ষ্য"
 
 #: ui/app/strings.src#STR_EFFECTDLG_ACTION.STRING.TEXT
+#, fuzzy
 msgid  "Act~ion"
-msgstr ""
-
-#: ui/app/strings.src#STR_EFFECTDLG_SOUND.STRING.TEXT
-msgid  "Sound"
-msgstr ""
+msgstr "কার্য (~i)"
 
 #: ui/app/strings.src#STR_EFFECTDLG_PAGE_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Slide / Object"
-msgstr ""
+msgstr "স্লাইড / অবজেক্ট"
 
 #: ui/app/strings.src#STR_EFFECTDLG_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "নথি"
 
 #: ui/app/strings.src#STR_EFFECTDLG_PROGRAM.STRING.TEXT
+#, fuzzy
 msgid  "Program"
-msgstr ""
+msgstr "প্রোগ্রাম"
 
 #: ui/app/strings.src#STR_EFFECTDLG_MACRO.STRING.TEXT
+#, fuzzy
 msgid  "Macro"
-msgstr ""
+msgstr "ম্যাক্রো"
 
 #: ui/app/strings.src#STR_EFFECT_NONE.STRING.TEXT
+#, fuzzy
 msgid  "No Effect"
-msgstr ""
+msgstr "কোনো প্রভাব নেই"
 
 #: ui/app/strings.src#STR_INSERT_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Insert Text"
-msgstr ""
+msgstr "পাঠ প্রবেশ করান"
 
 #: ui/app/strings.src#STR_SLIDE_SINGULAR.STRING.TEXT
+#, fuzzy
 msgid  " Slide"
-msgstr ""
+msgstr "স্লাইড"
 
 #: ui/app/strings.src#STR_SLIDE_PLURAL.STRING.TEXT
+#, fuzzy
 msgid  " Slides"
-msgstr ""
+msgstr "স্লাইডসমূহ"
 
 #: ui/app/strings.src#STR_LOAD_PRESENTATION_LAYOUT.STRING.TEXT
+#, fuzzy
 msgid  "Load Slide Design"
-msgstr ""
+msgstr "স্লাইডের নকশা লোড করুন"
 
 #: ui/app/strings.src#STR_DRAGTYPE_URL.STRING.TEXT
+#, fuzzy
 msgid  "Insert as hyperlink"
-msgstr ""
+msgstr "হাইপারলিঙ্ক হিসেবে প্রবেশ করান"
 
 #: ui/app/strings.src#STR_DRAGTYPE_EMBEDDED.STRING.TEXT
+#, fuzzy
 msgid  "Insert as copy"
-msgstr ""
+msgstr "অনুলিপি হিসেবে প্রবেশ করান"
 
 #: ui/app/strings.src#STR_DRAGTYPE_LINK.STRING.TEXT
+#, fuzzy
 msgid  "Insert as link"
-msgstr ""
+msgstr "লিঙ্ক হিসেবে প্রবেশ করান"
 
 #: ui/app/strings.src#STR_GLUE_ESCDIR_SMART.STRING.TEXT
+#, fuzzy
 msgid  "Smart"
-msgstr ""
+msgstr "স্মার্ট"
 
 #: ui/app/strings.src#STR_GLUE_ESCDIR_LEFT.STRING.TEXT
+#, fuzzy
 msgid  "Left"
-msgstr ""
+msgstr "বামে"
 
 #: ui/app/strings.src#STR_GLUE_ESCDIR_RIGHT.STRING.TEXT
+#, fuzzy
 msgid  "Right"
-msgstr ""
+msgstr "ডানে"
 
 #: ui/app/strings.src#STR_GLUE_ESCDIR_TOP.STRING.TEXT
+#, fuzzy
 msgid  "Top"
-msgstr ""
+msgstr "উপরে"
 
 #: ui/app/strings.src#STR_GLUE_ESCDIR_BOTTOM.STRING.TEXT
+#, fuzzy
 msgid  "Bottom"
-msgstr ""
+msgstr "নিচে"
 
 #: ui/app/strings.src#STR_GLUE_ESCDIR_LO.STRING.TEXT
+#, fuzzy
 msgid  "Top Left?"
-msgstr ""
+msgstr "উপরে বামে?"
 
 #: ui/app/strings.src#STR_GLUE_ESCDIR_LU.STRING.TEXT
+#, fuzzy
 msgid  "Bottom Left?"
-msgstr ""
+msgstr "নিচে বামে?"
 
 #: ui/app/strings.src#STR_GLUE_ESCDIR_RO.STRING.TEXT
+#, fuzzy
 msgid  "Top Right?"
-msgstr ""
+msgstr "উপরে ডানে?"
 
 #: ui/app/strings.src#STR_GLUE_ESCDIR_RU.STRING.TEXT
+#, fuzzy
 msgid  "Bottom Right?"
-msgstr ""
+msgstr "নিচে ডানে?"
 
 #: ui/app/strings.src#STR_GLUE_ESCDIR_HORZ.STRING.TEXT
+#, fuzzy
 msgid  "Horizontal"
-msgstr ""
+msgstr "অনুভূমিক"
 
 #: ui/app/strings.src#STR_GLUE_ESCDIR_VERT.STRING.TEXT
+#, fuzzy
 msgid  "Vertical"
-msgstr ""
+msgstr "উলম্ব"
 
 #: ui/app/strings.src#STR_GLUE_ESCDIR_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All?"
-msgstr ""
+msgstr "সকল?"
 
 #: ui/app/strings.src#STR_CANT_PERFORM_IN_LIVEMODE.STRING.TEXT
+#, fuzzy
 msgid  "This action can't be run in the live mode."
-msgstr ""
+msgstr "এই কার্যটি সরাসরি পরিমন্ডলে চালানো যায় না।"
 
 #: ui/app/strings.src#STR_PUBLISH_BACK.STRING.TEXT
+#, fuzzy
 msgid  "Back"
-msgstr ""
+msgstr "পিছনে"
 
 #: ui/app/strings.src#STR_PUBLISH_NEXT.STRING.TEXT
+#, fuzzy
 msgid  "Continue"
-msgstr ""
+msgstr "অব্যাহত"
 
 #: ui/app/strings.src#STR_PUBLISH_OUTLINE.STRING.TEXT
+#, fuzzy
 msgid  "Overview"
-msgstr ""
+msgstr "সারসংক্ষেপ"
 
 #: ui/app/strings.src#STR_EYEDROPPER.STRING.TEXT
 msgid  "Color Replacer"
 msgstr ""
 
 #: ui/app/strings.src#STR_UNDO_MORPHING.STRING.TEXT
+#, fuzzy
 msgid  "Cross-fading"
-msgstr ""
+msgstr "পরস্পরের সাথে মিলে যাবে"
 
 #: ui/app/strings.src#STR_UNDO_COLORRESOLUTION.STRING.TEXT
+#, fuzzy
 msgid  "Color resolution"
-msgstr ""
+msgstr "রং রেসুলেশন"
 
 #: ui/app/strings.src#STR_UNDO_EXPAND_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Expand Slide"
-msgstr ""
+msgstr "স্লাইড বর্ধিত করুন"
 
 #: ui/app/strings.src#STR_UNDO_SUMMARY_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Table of Contents Slide"
-msgstr ""
+msgstr "সূচিপত্রের স্লাইড"
 
 #: ui/app/strings.src#STR_TWAIN_NO_SOURCE_UNX.STRING.TEXT
+#, fuzzy
 msgid  "No SANE source is available at the moment."
-msgstr ""
+msgstr "এই মূহুর্তে কোনো SANE উৎস সহজলভ্য নেই।"
 
 #: ui/app/strings.src#STR_TWAIN_NO_SOURCE.STRING.TEXT
+#, fuzzy
 msgid  "At present, no TWAIN source is available."
-msgstr ""
+msgstr "বর্তমানে, কোনো TWAIN উৎস সহজলভ্য নেই।"
 
 #: ui/app/strings.src#STR_FIX.STRING.TEXT
+#, fuzzy
 msgid  "Fixed"
-msgstr ""
+msgstr "অপরিবর্তনীয়"
 
 #: ui/app/strings.src#STR_VAR.STRING.TEXT
+#, fuzzy
 msgid  "Variable"
-msgstr ""
+msgstr "ভেরিয়েবল"
 
 #: ui/app/strings.src#STR_STANDARD_NORMAL.STRING.TEXT
+#, fuzzy
 msgid  "Standard"
-msgstr ""
+msgstr "আদর্শ"
 
 #: ui/app/strings.src#STR_STANDARD_SMALL.STRING.TEXT
+#, fuzzy
 msgid  "Standard (short)"
-msgstr ""
+msgstr "আদর্শ (ছোট)"
 
 #: ui/app/strings.src#STR_STANDARD_BIG.STRING.TEXT
+#, fuzzy
 msgid  "Standard (long)"
-msgstr ""
+msgstr "আদর্শ (বড়)"
 
 #: ui/app/strings.src#STR_FILEFORMAT_NAME_EXT.STRING.TEXT
+#, fuzzy
 msgid  "File name"
-msgstr ""
+msgstr "ফাইলের নাম"
 
 #: ui/app/strings.src#STR_FILEFORMAT_FULLPATH.STRING.TEXT
+#, fuzzy
 msgid  "Path/File name"
-msgstr ""
+msgstr "পথ/ফাইল নাম"
 
 #: ui/app/strings.src#STR_FILEFORMAT_PATH.STRING.TEXT
+#, fuzzy
 msgid  "Path"
-msgstr ""
+msgstr "পথ"
 
 #: ui/app/strings.src#STR_FILEFORMAT_NAME.STRING.TEXT
+#, fuzzy
 msgid  "File name without extension"
-msgstr ""
+msgstr "সংযোজন ব্যতীত ফাইল নাম"
 
 #: ui/app/strings.src#STR_RELEASE_GRAPHICLINK.STRING.TEXT
+#, fuzzy
 msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "গ্রাফিকটি একটি নথিতে সংযুক্ত করা আছে। আপনি কি এটি সম্পাদনা করার জন্য গ্রাফিকটির সংযোগ বিচ্ছিন্ন করতে চান?"
 
 #: ui/app/strings.src#STR_NEW_CUSTOMSHOW.STRING.TEXT
+#, fuzzy
 msgid  "New Custom Slide Show"
-msgstr ""
+msgstr "নতুন পছন্দসই স্লাইড প্রদর্শন"
 
 #: ui/app/strings.src#STR_COPY_CUSTOMSHOW.STRING.TEXT
+#, fuzzy
 msgid  "Copy "
-msgstr ""
-
-#: ui/app/strings.src#STR_IMPRESS_DOCUMENT.STRING.TEXT
-msgid  "Presentation"
-msgstr ""
+msgstr "অনুলিপি"
 
 #: ui/app/strings.src#STR_IMPRESS_DOCUMENT_FULLTYPE_60.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Presentation"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION এর উপস্থাপনা"
 
 #: ui/app/strings.src#STR_GRAPHIC_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "Drawing"
-msgstr ""
+msgstr "অংকন"
 
 #: ui/app/strings.src#STR_GRAPHIC_DOCUMENT_FULLTYPE_60.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Drawing"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION এর চিত্র"
 
 #: ui/app/strings.src#STR_BREAK_METAFILE.STRING.TEXT
+#, fuzzy
 msgid  "Ungroup Metafile(s)..."
-msgstr ""
+msgstr "দলহীন মেটাফাইল(সমূহ)..."
 
 #: ui/app/strings.src#STR_BREAK_FAIL.STRING.TEXT
+#, fuzzy
 msgid  "It was not possible to ungroup all drawing objects."
-msgstr ""
+msgstr "সকল অংকন অবজেক্টকে দলহীন করা সম্ভব হয়নি।"
 
 #: ui/app/strings.src#STR_PUBDLG_SAMENAME.STRING.TEXT
+#, fuzzy
 msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr ""
+msgstr "এই নামে একটি নকশা ইতোমধ্যে বিদ্যমান।\nআপনি কি এটি প্রতিস্থাপন করতে চান?"
 
 #: ui/app/strings.src#STR_HTMLATTR_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "পাঠ"
 
 #: ui/app/strings.src#STR_HTMLATTR_LINK.STRING.TEXT
+#, fuzzy
 msgid  "Hyperlink"
-msgstr ""
+msgstr "হাইপারলিঙ্ক"
 
 #: ui/app/strings.src#STR_HTMLATTR_VLINK.STRING.TEXT
+#, fuzzy
 msgid  "Visited link"
-msgstr ""
+msgstr "পরিদর্শন করা লিঙ্ক"
 
 #: ui/app/strings.src#STR_HTMLATTR_ALINK.STRING.TEXT
+#, fuzzy
 msgid  "Active link"
-msgstr ""
-
-#: ui/app/strings.src#STR_HTMLEXP_NOTES.STRING.TEXT
-msgid  "Notes"
-msgstr ""
+msgstr "কার্যকর লিঙ্ক"
 
 #: ui/app/strings.src#STR_HTMLEXP_CONTENTS.STRING.TEXT
+#, fuzzy
 msgid  "Table of contents"
-msgstr ""
+msgstr "সূচিপত্র"
 
 #: ui/app/strings.src#STR_HTMLEXP_CLICKSTART.STRING.TEXT
+#, fuzzy
 msgid  "Click here to start"
-msgstr ""
+msgstr "শুরু করার জন্য এখানে ক্লিক করুন"
 
 #: ui/app/strings.src#STR_HTMLEXP_AUTHOR.STRING.TEXT
+#, fuzzy
 msgid  "Author"
-msgstr ""
+msgstr "লেখক"
 
 #: ui/app/strings.src#STR_HTMLEXP_EMAIL.STRING.TEXT
+#, fuzzy
 msgid  "E-mail"
-msgstr ""
+msgstr "ই-মেইল"
 
 #: ui/app/strings.src#STR_HTMLEXP_HOMEPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Homepage"
-msgstr ""
+msgstr "আদ্যপৃষ্ঠা"
 
 #: ui/app/strings.src#STR_HTMLEXP_INFO.STRING.TEXT
+#, fuzzy
 msgid  "Further information"
-msgstr ""
+msgstr "আরও তথ্য"
 
 #: ui/app/strings.src#STR_HTMLEXP_DOWNLOAD.STRING.TEXT
+#, fuzzy
 msgid  "Download presentation"
-msgstr ""
+msgstr "উপস্থাপনা ডাউনলোড করুন"
 
 #: ui/app/strings.src#STR_HTMLEXP_NOFRAMES.STRING.TEXT
+#, fuzzy
 msgid  "Unfortunately your browser does not support floating frames."
-msgstr ""
+msgstr "দূর্ভাগ্যজনকভাবে আপনার ব্রাউজার ফ্লোটিং কাঠামো সমর্থন করে না।"
 
 #: ui/app/strings.src#STR_HTMLEXP_FIRSTPAGE.STRING.TEXT
+#, fuzzy
 msgid  "First page"
-msgstr ""
+msgstr "প্রথম পৃষ্ঠা"
 
 #: ui/app/strings.src#STR_HTMLEXP_LASTPAGE.STRING.TEXT
+#, fuzzy
 msgid  "Last page"
-msgstr ""
-
-#: ui/app/strings.src#STR_HTMLEXP_SETTEXT.STRING.TEXT
-msgid  "Text"
-msgstr ""
+msgstr "শেষ পৃষ্ঠা"
 
 #: ui/app/strings.src#STR_HTMLEXP_SETGRAPHIC.STRING.TEXT
+#, fuzzy
 msgid  "Graphics"
-msgstr ""
+msgstr "গ্রাফিক্স"
 
 #: ui/app/strings.src#STR_HTMLEXP_OUTLINE.STRING.TEXT
+#, fuzzy
 msgid  "With contents"
-msgstr ""
+msgstr "বিষয়বস্তু সহ"
 
 #: ui/app/strings.src#STR_HTMLEXP_NOOUTLINE.STRING.TEXT
+#, fuzzy
 msgid  "Without contents"
-msgstr ""
+msgstr "বিষয়বস্তু ব্যতিত"
 
 #: ui/app/strings.src#STR_WEBVIEW_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "To given page"
-msgstr ""
+msgstr "প্রদত্ত পৃষ্ঠায়"
 
 #: ui/app/strings.src#STR_UNDO_VECTORIZE.STRING.TEXT
+#, fuzzy
 msgid  "Convert bitmap to polygon"
-msgstr ""
+msgstr "বিটম্যাপকে বহুভুজে রূপান্তর করুন"
 
 #: ui/app/strings.src#STR_PRES_SOFTEND.STRING.TEXT
+#, fuzzy
 msgid  "Click to exit presentation..."
-msgstr ""
+msgstr "উপস্থাপনা ত্যাগ করতে ক্লিক করুন..."
 
 #: ui/app/strings.src#STR_PRES_PAUSE.STRING.TEXT
+#, fuzzy
 msgid  "Pause..."
-msgstr ""
+msgstr "বিরতি..."
 
 #: ui/app/strings.src#STR_WIZARD_ORIGINAL.STRING.TEXT
+#, fuzzy
 msgid  "<Original>"
-msgstr ""
+msgstr "<Original>"
 
 #: ui/app/strings.src#STR_ISLOADING.STRING.TEXT
+#, fuzzy
 msgid  "Loading..."
-msgstr ""
+msgstr "লোড হচ্ছে..."
 
 #: ui/app/strings.src#STR_DRAW_GRAF_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Graphics Object Bar"
-msgstr ""
+msgstr "গ্রাফিক্স অবজেক্ট বার"
 
 #: ui/app/strings.src#STR_UNDO_APPLY_3D_FAVOURITE.STRING.TEXT
+#, fuzzy
 msgid  "Apply 3D favorite"
-msgstr ""
+msgstr "ত্রিমাত্রিক পছন্দ প্রয়োগ করুন"
 
 #: ui/app/strings.src#STR_UNDO_GRAFFILTER.STRING.TEXT
+#, fuzzy
 msgid  "Graphics filter"
-msgstr ""
+msgstr "গ্রাফিক্স পরিশ্রুতক"
 
 #: ui/app/strings.src#STR_WARNING_NOSOUNDFILE.STRING.TEXT
+#, fuzzy
 msgid  "The file %\nis not a valid sound file !"
-msgstr ""
+msgstr "% ফাইলটি\nবৈধ সাউন্ড ফাইল নয় !"
 
 #: ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.STRING.TEXT
+#, fuzzy
 msgid  "Convert to metafile"
-msgstr ""
+msgstr "মেটাফাইলে রূপান্তর করুন"
 
 #: ui/app/strings.src#STR_UNDO_CONVERT_TO_BITMAP.STRING.TEXT
+#, fuzzy
 msgid  "Convert to bitmap"
-msgstr ""
+msgstr "বিটম্যাপে রূপান্তর করুন"
 
 #: ui/app/strings.src#STR_HTMLEXP_ERROR_CREATE_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Cannot create the file $(URL1)."
-msgstr ""
+msgstr "$(URL1) ফাইল তৈরি করা সম্ভব হয়নি।"
 
 #: ui/app/strings.src#STR_HTMLEXP_ERROR_OPEN_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Could not open the file $(URL1)."
-msgstr ""
+msgstr "$(URL1) ফাইলটি খোলা যাবে না।"
 
 #: ui/app/strings.src#STR_HTMLEXP_ERROR_COPY_FILE.STRING.TEXT
+#, fuzzy
 msgid  "The file $(URL1) could not be copied to $(URL2)"
-msgstr ""
+msgstr "$(URL1) ফাইলটি $(URL2) এ কপি করা যায়নি"
 
 #: ui/app/strings.src#STR_PAGE_BACKGROUND_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Page Settings"
-msgstr ""
+msgstr "পৃষ্ঠা বিন্যাসন"
 
 #: ui/app/strings.src#STR_PAGE_BACKGROUND_TXT.STRING.TEXT
+#, fuzzy
 msgid  "Background settings for all pages?"
-msgstr ""
+msgstr "সকল পৃষ্ঠার জন্য প্রেক্ষাপট বিন্যাসন?"
 
 #: ui/app/strings.src#STR_TITLE_RENAMESLIDE.STRING.TEXT
+#, fuzzy
 msgid  "Rename Slide"
-msgstr ""
+msgstr "স্লাইড পুনঃ নামকরণ করুন"
 
 #: ui/app/strings.src#STR_TITLE_SAVE_AS_PICTURE.STRING.TEXT
+#, fuzzy
 msgid  "Save as Picture"
-msgstr ""
-
-#: ui/app/strings.src#STR_DESC_RENAMESLIDE.STRING.TEXT
-msgid  "Name"
-msgstr ""
+msgstr "ছবি হিসেবে সংরক্ষণ করুন"
 
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Title Area for AutoLayouts"
-msgstr ""
+msgstr "AutoLayouts এর জন্য শিরোনামের জায়গা"
 
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_OUTLINE.STRING.TEXT
+#, fuzzy
 msgid  "Object Area for AutoLayouts"
-msgstr ""
+msgstr "AutoLayouts এর জন্য অবজেক্টের জায়গা"
 
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "Footer Area"
-msgstr ""
+msgstr "পাদটিকার জায়গা"
 
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Header Area"
-msgstr ""
+msgstr "প্রান্তটিকার জায়গা"
 
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_DATETIME.STRING.TEXT
+#, fuzzy
 msgid  "Date Area"
-msgstr ""
+msgstr "তারিখের জায়গা"
 
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_SLIDE.STRING.TEXT
+#, fuzzy
 msgid  "Slide Number Area"
-msgstr ""
+msgstr "স্লাইড নম্বরের জায়গা"
 
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_NUMBER.STRING.TEXT
+#, fuzzy
 msgid  "Page Number Area"
-msgstr ""
+msgstr "পৃষ্ঠা নম্বরের জায়গা"
 
 #: ui/app/strings.src#STR_FIELD_PLACEHOLDER_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "<header>"
-msgstr ""
+msgstr "<header>"
 
 #: ui/app/strings.src#STR_FIELD_PLACEHOLDER_FOOTER.STRING.TEXT
+#, fuzzy
 msgid  "<footer>"
-msgstr ""
+msgstr "<footer>"
 
 #: ui/app/strings.src#STR_FIELD_PLACEHOLDER_DATETIME.STRING.TEXT
+#, fuzzy
 msgid  "<date/time>"
-msgstr ""
+msgstr "<তারিখ/সময়>"
 
 #: ui/app/strings.src#STR_FIELD_PLACEHOLDER_NUMBER.STRING.TEXT
+#, fuzzy
 msgid  "<number>"
-msgstr ""
+msgstr "<number>"
 
 #: ui/app/strings.src#STR_FIELD_PLACEHOLDER_COUNT.STRING.TEXT
 msgid  "<count>"
 msgstr ""
 
 #: ui/app/strings.src#STR_PLACEHOLDER_DESCRIPTION_NOTES.STRING.TEXT
+#, fuzzy
 msgid  "Notes Area"
-msgstr ""
+msgstr "নোটের জায়গা"
 
 #: ui/app/strings.src#STR_UNDO_HANGULHANJACONVERSION.STRING.TEXT
+#, fuzzy
 msgid  "Hangul/Hanja Conversion"
-msgstr ""
+msgstr "হাঙ্গুল/হানজা রূপান্তরণ"
 
 #: ui/app/strings.src#STR_LEFT_PANE_IMPRESS_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Slides"
-msgstr ""
+msgstr "স্লাইডসমূহ"
 
 #: ui/app/strings.src#STR_LEFT_PANE_DRAW_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Pages"
-msgstr ""
+msgstr "পৃষ্ঠাসমূহ"
 
 #: ui/app/strings.src#STR_RIGHT_PANE_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Tasks"
-msgstr ""
+msgstr "কাজসমূহ"
 
 #: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Master Pages"
-msgstr ""
+msgstr "মাস্টার পৃষ্ঠাসমূহ"
 
 #: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "View"
-msgstr ""
+msgstr "প্রদর্শন"
 
 #: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_LOCK.STRING.TEXT
+#, fuzzy
 msgid  "~Dock Task Pane"
-msgstr ""
+msgstr "ডক কার্য পেন (~D)"
 
 #: ui/app/strings.src#STR_TASKPANEL_MASTER_PAGE_MENU_UNLOCK.STRING.TEXT
+#, fuzzy
 msgid  "~Undock Task Pane"
-msgstr ""
+msgstr "কার্য পেন বিমুক্ত করুন (~U)"
 
 #: ui/app/strings.src#STR_TASKPANEL_CURRENT_MASTER_PAGES_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Used in This Presentation"
-msgstr ""
+msgstr "এই উপস্থাপনায় ব্যবহার করা হয়েছে"
 
 #: ui/app/strings.src#STR_TASKPANEL_RECENT_MASTER_PAGES_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Recently Used"
-msgstr ""
+msgstr "সম্প্রতি ব্যবহার করা হয়েছে"
 
 #: ui/app/strings.src#STR_TASKPANEL_ALL_MASTER_PAGES_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Available for Use"
-msgstr ""
+msgstr "ব্যবহারের জন্য সহজলভ্য"
 
 #: ui/app/strings.src#STR_TASKPANEL_NOT_AVAILABLE_SUBSTITUTION.STRING.TEXT
+#, fuzzy
 msgid  "Preview not available"
-msgstr ""
+msgstr "প্রাকদর্শন সহজলভ্য নয়"
 
 #: ui/app/strings.src#STR_TASKPANEL_PREPARING_PREVIEW_SUBSTITUTION.STRING.TEXT
+#, fuzzy
 msgid  "Preparing preview"
-msgstr ""
+msgstr "প্রাকদর্শন তৈরি করা হচ্ছে"
 
 #: ui/app/strings.src#STR_TASKPANEL_LAYOUT_MENU_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Layouts"
-msgstr ""
+msgstr "বর্হিবিন্যাসসমূহ"
 
 #: ui/app/strings.src#STR_GRAPHICS_STYLE_FAMILY.STRING.TEXT
+#, fuzzy
 msgid  "Graphics Styles"
-msgstr ""
+msgstr "গ্রাফিক্স শৈলীসমূহ"
 
 #: ui/app/strings.src#STR_CELL_STYLE_FAMILY.STRING.TEXT
+#, fuzzy
 msgid  "Cell Styles"
-msgstr ""
+msgstr "কক্ষ শৈলীসমূহ"
 
 #: ui/app/strings.src#DLG_TABLEDESIGNPANE.STRING.TEXT
+#, fuzzy
 msgid  "Table Designs"
-msgstr ""
+msgstr "সারণী নকশাসমূহ"
 
 #: ui/app/strings.src#STR_CUSTOMANIMATIONPANE.STRING.TEXT
+#, fuzzy
 msgid  "Custom Animation"
-msgstr ""
+msgstr "পছন্দসই অ্যানিমেশন..."
 
 #: ui/app/strings.src#STR_SLIDE_TRANSITION_PANE.STRING.TEXT
+#, fuzzy
 msgid  "Slide Transition"
-msgstr ""
+msgstr "স্লাইড পরিবর্তন (~T)"
 
 #: ui/app/strings.src#STR_NAVIGATOR_SHOW_NAMED_SHAPES.STRING.TEXT
+#, fuzzy
 msgid  "Named shapes"
-msgstr ""
+msgstr "নামের আকৃতিসমূহ"
 
 #: ui/app/strings.src#STR_NAVIGATOR_SHOW_ALL_SHAPES.STRING.TEXT
+#, fuzzy
 msgid  "All shapes"
-msgstr ""
+msgstr "সকল আকৃতি"
 
 #: ui/app/strings.src#STR_NAVIGATOR_SHAPE_BASE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Shape %1"
-msgstr ""
+msgstr "%1 আকৃতি"
 
 #: ui/app/strings.src#STR_SET_BACKGROUND_PICTURE.STRING.TEXT
+#, fuzzy
 msgid  "Set Background Picture for Slide ..."
-msgstr ""
+msgstr "স্লাইডের জন্য প্রেক্ষাপট চিত্র নির্ধারণ করুন ..."
 
 #: ui/app/strings.src#STR_ACC_DIALOG_DESC.STRING.TEXT
 msgid  "Select a template from which to import page designs."
@@ -3060,28 +3664,32 @@ msgid  "Reset Slide Layout"
 msgstr ""
 
 #: ui/app/strings.src#STR_INSERT_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Insert Table"
-msgstr ""
+msgstr "ফাইল প্রবেশ করান"
 
 #: ui/app/strings.src#STR_INSERT_CHART.STRING.TEXT
 msgid  "Insert Chart"
 msgstr ""
 
 #: ui/app/strings.src#STR_INSERT_PICTURE.STRING.TEXT
+#, fuzzy
 msgid  "Insert Picture"
-msgstr ""
+msgstr "ছবি প্রবেশ করান"
 
 #: ui/app/strings.src#STR_INSERT_MOVIE.STRING.TEXT
 msgid  "Insert Movie"
 msgstr ""
 
 #: ui/app/res_bmp.src#SFXSTYLEFAMILIESRES1.#DEFINE.TEXT
+#, fuzzy
 msgid  "Graphics Styles"
-msgstr ""
+msgstr "গ্রাফিক্স শৈলী"
 
 #: ui/app/res_bmp.src#SFXSTYLEFAMILIESRES2.#DEFINE.TEXT
+#, fuzzy
 msgid  "Presentation Styles"
-msgstr ""
+msgstr "উপস্থাপনা শৈলী"
 
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_USED.STRING.TEXT
 msgid  "Applied Styles"
@@ -3092,1820 +3700,2098 @@ msgid  "Custom Styles"
 msgstr ""
 
 #: ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All Styles"
-msgstr ""
+msgstr "কক্ষ শৈলীসমূহ"
 
 #: ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Distribution..."
-msgstr ""
+msgstr "বিতরণ... (~D)"
 
 #: ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Drawing View"
-msgstr ""
+msgstr "অংকন দৃশ্য (~D)"
 
 #: ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Outline View"
-msgstr ""
+msgstr "আউটলাইন দৃশ্য (~O)"
 
 #: ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Slide Sorter"
-msgstr ""
+msgstr "স্লাইড ক্রমসজ্জাকারী (~S)"
 
 #: ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MENUITEM.TEXT
+#, fuzzy
 msgid  "Slide Sho~w"
-msgstr ""
+msgstr "স্লাইড প্রদর্শন (~w)"
 
 #: ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Insert Snap Point/Line..."
-msgstr ""
+msgstr "স্ন্যাপ বিন্দু/রেখা প্রবেশ করান... (~I)"
 
 #: ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Edit..."
-msgstr ""
+msgstr "সম্পাদনা করুন... (~E)"
 
 #: ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "মুছে ফেলুন (~D)"
 
 #: ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Slide ~Layout"
-msgstr ""
+msgstr "স্লাইড বর্হিবিন্যাস (~L)"
 
 #: ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Page Setup..."
-msgstr ""
+msgstr "পৃষ্ঠা বিন্যাসন... (~P)"
 
 #: ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~New Slide"
-msgstr ""
+msgstr "নতুন স্লাইড (~N)"
 
 #: ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~New Master"
-msgstr ""
+msgstr "নতুন মাস্টার (~N)"
 
 #: ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~New Page"
-msgstr ""
+msgstr "নতুন পৃষ্ঠা (~N)"
 
 #: ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MENUITEM.TEXT
+#, fuzzy
 msgid  "Set Background Picture for Slide ..."
-msgstr ""
+msgstr "স্লাইডের জন্য প্রেক্ষাপট চিত্র নির্ধারণ করুন..."
 
 #: ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MENUITEM.TEXT
+#, fuzzy
 msgid  "Display Background of Master"
-msgstr ""
+msgstr "মাস্টারের প্রেক্ষাপট প্রদর্শন করুন"
 
 #: ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Display Objects from Master"
-msgstr ""
+msgstr "মাস্টার হতে অবজেক্টসমূহ প্রদর্শন করুন"
 
 #: ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "Pag~e"
-msgstr ""
+msgstr "পৃষ্ঠা (~e)"
 
 #: ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "Slid~e"
-msgstr ""
+msgstr "স্লাইড (~e)"
 
 #: ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Rename Layer..."
-msgstr ""
+msgstr "স্তর পুনঃ নামকরণ করুন... (~R)"
 
 #: ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "D~elete Slide"
-msgstr ""
+msgstr "স্লাইড মুছে ফেলুন (~e)"
 
 #: ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "D~elete Master"
-msgstr ""
+msgstr "মাস্টার মুছে ফেলুন (~e)"
 
 #: ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "D~elete Page"
-msgstr ""
+msgstr "পৃষ্ঠা মুছে ফেলুন (~e)"
 
 #: ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Rename Slide"
-msgstr ""
+msgstr "স্লাইড পুনঃ নামকরণ করুন... (~R)"
 
 #: ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Rename Master"
-msgstr ""
+msgstr "মাস্টার পুনঃ নামকরণ করুন... (~R)"
 
 #: ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Rename Page"
-msgstr ""
+msgstr "পৃষ্টা পুনঃ নামকরণ করুন... (~R)"
 
 #: ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MENUITEM.TEXT
+#, fuzzy
 msgid  "L~ine..."
-msgstr ""
+msgstr "রেখা... (~i)"
 
 #: ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Area..."
-msgstr ""
+msgstr "এলাকা... (~A)"
 
 #: ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Text..."
-msgstr ""
+msgstr "পাঠ... (~T)"
 
 #: ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Connector..."
-msgstr ""
+msgstr "সংযোজক... (~C)"
 
 #: ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Reset ~Routing"
-msgstr ""
+msgstr "রাউটিং পুনরায় স্থাপন করুন (~R)"
 
 #: ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "Dimen~sions..."
-msgstr ""
+msgstr "মাত্রসমূহ... (~s)"
 
 #: ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MENUITEM.TEXT
+#, fuzzy
 msgid  "Position and Si~ze..."
-msgstr ""
+msgstr "অবস্থান এবং আকার... (~z)"
 
 #: ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Edit ~Points"
-msgstr ""
+msgstr "বিন্দুগুলো সম্পাদনা করুন (~P)"
 
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MENUITEM.TEXT
+#, fuzzy
 msgid  "Arra~nge"
-msgstr ""
+msgstr "সাজান (~n)"
 
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Bring to Front"
-msgstr ""
+msgstr "সামনে আনুন (~B)"
 
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Bring ~Forward"
-msgstr ""
+msgstr "অগ্রগামী করুন (~F)"
 
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MENUITEM.TEXT
+#, fuzzy
 msgid  "Send Back~ward"
-msgstr ""
+msgstr "পশ্চাৎগামী করুন (~w)"
 
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Send to Back"
-msgstr ""
+msgstr "পিছের পাঠান (~S)"
 
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MENUITEM.TEXT
+#, fuzzy
 msgid  "In Front of ~Object"
-msgstr ""
+msgstr "অবজেক্টের সামনে (~O)"
 
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MENUITEM.TEXT
+#, fuzzy
 msgid  "Be~hind Object"
-msgstr ""
+msgstr "অবজেক্টের পিছনে (~h)"
 
 #: ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Reverse"
-msgstr ""
+msgstr "বিপরীত (~R)"
 
 #: ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "C~haracter..."
-msgstr ""
+msgstr "বর্ণচিহ্ন... (~h)"
 
 #: ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "P~aragraph..."
-msgstr ""
+msgstr "অনুচ্ছেদ... (~a)"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Font"
-msgstr ""
+msgstr "ফন্ট (~F)"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Size"
-msgstr ""
+msgstr "আকার (~S)"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "St~yle"
-msgstr ""
+msgstr "শৈলী (~y)"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Bold"
-msgstr ""
+msgstr "মোটা"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Italic"
-msgstr ""
+msgstr "বাঁকা"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_OVERLINE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Overline"
-msgstr ""
+msgstr "উর্দ্ধরেখা"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Underline"
-msgstr ""
+msgstr "নিম্নরেখা"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Strikethrough"
-msgstr ""
+msgstr "অবচ্ছেদন"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MENUITEM.TEXT
+#, fuzzy
 msgid  "Shadow"
-msgstr ""
+msgstr "ছায়া"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Contour"
-msgstr ""
+msgstr "দেহরেখা (~C)"
 
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Line Spacing"
-msgstr ""
+msgstr "লাইন ফাঁকাকরণ (~L)"
 
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MENUITEM.TEXT
+#, fuzzy
 msgid  "Single Line Spacing"
-msgstr ""
+msgstr "এক লাইন ফাঁকাকরণ"
 
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MENUITEM.TEXT
+#, fuzzy
 msgid  "1.5 Lines"
-msgstr ""
+msgstr "১.৫ লাইন"
 
 #: ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Double"
-msgstr ""
+msgstr "দ্বিগুন (~D)"
 
 #: ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MENUITEM.TEXT
+#, fuzzy
 msgid  "S~pecial Character..."
-msgstr ""
+msgstr "বিশেষ বর্ণচিহ্ন... (~p)"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "A~lignment"
-msgstr ""
+msgstr "প্রান্তিককরণ (~l)"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Left"
-msgstr ""
+msgstr "বাম (~L)"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Right"
-msgstr ""
+msgstr "ডান (~R)"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Centered"
-msgstr ""
+msgstr "কেন্দ্রীয় (~C)"
 
 #: ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MENUITEM.TEXT
+#, fuzzy
 msgid  "Justified"
-msgstr ""
+msgstr "প্রান্তিককৃত"
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Al~ignment"
-msgstr ""
-
-#: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_LEFT.MENUITEM.TEXT
-msgid  "~Left"
-msgstr ""
-
-#: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_CENTER.MENUITEM.TEXT
-msgid  "~Centered"
-msgstr ""
-
-#: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MENUITEM.TEXT
-msgid  "~Right"
-msgstr ""
+msgstr "প্রান্তিককরণ (~l)"
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Top"
-msgstr ""
+msgstr "উপর (~T)"
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MENUITEM.TEXT
+#, fuzzy
 msgid  "C~enter"
-msgstr ""
+msgstr "কেন্দ্র (~e)"
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Bottom"
-msgstr ""
+msgstr "নিচ (~B)"
 
 #: ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Close ~Object"
-msgstr ""
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MENUITEM.TEXT
-msgid  "Edit ~Points"
-msgstr ""
+msgstr "অবজেক্ট বন্ধ করুন (~O)"
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Move Points"
-msgstr ""
+msgstr "বিন্দুগুলো সরান (~M)"
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Insert ~Points"
-msgstr ""
+msgstr "বিন্দুসমূহ প্রবেশ করান (~P)"
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Delete Points"
-msgstr ""
-
-#: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CLOSE.MENUITEM.TEXT
-msgid  "Close ~Object"
-msgstr ""
+msgstr "বিন্দুগুলো মুছে ফেলুন (~D)"
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Split Curve"
-msgstr ""
+msgstr "কার্ভ বিভক্ত করুন (~S)"
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Con~vert to Curve"
-msgstr ""
+msgstr "কার্ভে রুপান্তর করুন (~v)"
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Corner"
-msgstr ""
+msgstr "কোণা (~C)"
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MENUITEM.TEXT
+#, fuzzy
 msgid  "Smoot~h"
-msgstr ""
+msgstr "মসৃণ (~h)"
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MENUITEM.TEXT
+#, fuzzy
 msgid  "S~ymmetric"
-msgstr ""
+msgstr "প্রতিসম (~y)"
 
 #: ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Reduce Points"
-msgstr ""
+msgstr "বিন্দু কমান (~R)"
 
 #: ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Group"
-msgstr ""
+msgstr "দল (~G)"
 
 #: ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Ungroup"
-msgstr ""
+msgstr "দলভঙ্গ (~U)"
 
 #: ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Comb~ine"
-msgstr ""
+msgstr "একত্রিত করুন (~i)"
 
 #: ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Split"
-msgstr ""
+msgstr "বিভক্ত করুন (~S)"
 
 #: ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Enter Group"
-msgstr ""
+msgstr "দল প্রবেশ করান (~E)"
 
 #: ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "E~xit Group"
-msgstr ""
+msgstr "দল ত্যাগ করুন (~x)"
 
 #: ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "Name..."
-msgstr ""
+msgstr "নাম..."
 
 #: ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MENUITEM.TEXT
+#, fuzzy
 msgid  "Description..."
-msgstr ""
+msgstr "বিবরণ..."
 
 #: ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Rehearse Timings"
-msgstr ""
+msgstr "মহড়ার সময় (~R)"
 
 #: ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Custom Animation..."
-msgstr ""
+msgstr "পছন্দসই অ্যানিমেশন..."
 
 #: ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Int~eraction..."
-msgstr ""
+msgstr "মিথস্ক্রিয়া... (~e)"
 
 #: ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Presentation ~Object..."
-msgstr ""
-
-#: ui/app/menuids_tmpl.src#MN_DELETE.SID_DELETE.MENUITEM.TEXT
-msgid  "~Delete"
-msgstr ""
+msgstr "উপস্থাপনা অবজেক্ট... (~O)"
 
 #: ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Default"
-msgstr ""
+msgstr "পূর্বনির্ধারিত (~D)"
 
 #: ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MENUITEM.TEXT
+#, fuzzy
 msgid  "F~ontwork"
-msgstr ""
+msgstr "ফন্টওয়ার্ক (~o)"
 
 #: ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Original Size"
-msgstr ""
+msgstr "মূল আকার (~O)"
 
 #: ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MENUITEM.TEXT
+#, fuzzy
 msgid  "Save as Picture..."
-msgstr ""
+msgstr "ছবি হিসেবে সংরক্ষণ করুন..."
 
 #: ui/app/menuids_tmpl.src#MN_CROP.SID_ATTR_GRAF_CROP.MENUITEM.TEXT
+#, fuzzy
 msgid  "Crop Picture..."
-msgstr ""
+msgstr "ছবি কাটুন..."
 
 #: ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MENUITEM.TEXT
+#, fuzzy
 msgid  "Na~vigator"
-msgstr ""
+msgstr "পরিক্রমক (~v)"
 
 #: ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Insert ~Point"
-msgstr ""
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_LEFT.SID_GLUE_ESCDIR_LEFT.MENUITEM.TEXT
-msgid  "~Left"
-msgstr ""
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_TOP.SID_GLUE_ESCDIR_TOP.MENUITEM.TEXT
-msgid  "~Top"
-msgstr ""
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_RIGHT.SID_GLUE_ESCDIR_RIGHT.MENUITEM.TEXT
-msgid  "~Right"
-msgstr ""
-
-#: ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_BOTTOM.SID_GLUE_ESCDIR_BOTTOM.MENUITEM.TEXT
-msgid  "~Bottom"
-msgstr ""
+msgstr "বিন্দু প্রবেশ করান (~P)"
 
 #: ui/app/menuids_tmpl.src#MN_GLUE_PERCENT.SID_GLUE_PERCENT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Adapt Position to Object"
-msgstr ""
+msgstr "অবজেক্ট অনুযায়ী অবস্থান নির্ধারণ করুন (~A)"
 
 #: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_LEFT.SID_GLUE_HORZALIGN_LEFT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Fixed ~Horizontal Left"
-msgstr ""
+msgstr "অপরিবর্তনীয় অনুভূমিক বামে (~H)"
 
 #: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_CENTER.SID_GLUE_HORZALIGN_CENTER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Fixed Horizontal ~Center"
-msgstr ""
+msgstr "অপরিবর্তনীয় অনুভূমিক কেন্দ্রে (~C)"
 
 #: ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_RIGHT.SID_GLUE_HORZALIGN_RIGHT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Fixed Hori~zontal Right"
-msgstr ""
+msgstr "অপরিবর্তনীয় অনুভূমিক ডানে (~z)"
 
 #: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_TOP.SID_GLUE_VERTALIGN_TOP.MENUITEM.TEXT
+#, fuzzy
 msgid  "Fixed ~Vertical Top"
-msgstr ""
+msgstr "অপরিবর্তনীয় উলম্ব উপরে (~V)"
 
 #: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_CENTER.SID_GLUE_VERTALIGN_CENTER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Fixed V~ertical Center"
-msgstr ""
+msgstr "অপরিবর্তনীয় উলম্ব কেন্দ্রে (~e)"
 
 #: ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_BOTTOM.SID_GLUE_VERTALIGN_BOTTOM.MENUITEM.TEXT
+#, fuzzy
 msgid  "Fixed Ver~tical Bottom"
-msgstr ""
+msgstr "অপরিবর্তনীয় উলম্ব নিচে (~t)"
 
 #: ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Visible Grid"
-msgstr ""
+msgstr "দর্শনযোগ্য গরাদ (~V)"
 
 #: ui/app/menuids_tmpl.src#MN_GRID_USE.SID_GRID_USE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Snap to Grid"
-msgstr ""
+msgstr "গরাদের স্ন্যাপ"
 
 #: ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Grid to ~Front"
-msgstr ""
+msgstr "সামনে পর্যন্ত গরাদ (~F)"
 
 #: ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "~Grid"
-msgstr ""
+msgstr "গরাদ (~G)"
 
 #: ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Snap Lines Visible"
-msgstr ""
+msgstr "স্ন্যাপ রেখাগুলো দর্শনীয় (~S)"
 
 #: ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Snap to Snap Lines"
-msgstr ""
+msgstr "স্ন্যাপ লাইনসমূহের স্ন্যাপ নিন"
 
 #: ui/app/menuids_tmpl.src#MN_HELPLINES_FRONT.SID_HELPLINES_FRONT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Snap Lines to Front"
-msgstr ""
+msgstr "লাইনগুলোকে সামনে স্ন্যাপ করুন"
 
 #: ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "~Snap Lines"
-msgstr ""
+msgstr "স্ন্যাপ লাইনসমূহ (~S)"
 
 #: ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Propert~ies..."
-msgstr ""
+msgstr "বৈশিষ্ট্যসমূহ... (~i)"
 
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_THRESHOLD.SID_CONVERT_TO_1BIT_THRESHOLD.MENUITEM.TEXT
+#, fuzzy
 msgid  "1Bit ~Threshold"
-msgstr ""
+msgstr "১ বিট থ্রেশহোল্ড (~T)"
 
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MENUITEM.TEXT
+#, fuzzy
 msgid  "1 Bit ~Dithering"
-msgstr ""
+msgstr "১ বিট ডিদারিং (~D)"
 
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MENUITEM.TEXT
+#, fuzzy
 msgid  "4 Bit G~rayscales"
-msgstr ""
+msgstr "৪ বিট ধূসর (~r)"
 
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MENUITEM.TEXT
+#, fuzzy
 msgid  "4 Bit ~Color Palette"
-msgstr ""
+msgstr "৪ বিট রং প্যালেট (~C)"
 
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MENUITEM.TEXT
+#, fuzzy
 msgid  "8 Bit Gr~ayscales"
-msgstr ""
+msgstr "৮ বিট ধূসর (~a)"
 
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MENUITEM.TEXT
+#, fuzzy
 msgid  "8 Bit C~olor Palette"
-msgstr ""
+msgstr "৮ বিট রং প্যালেট (~o)"
 
 #: ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "24 Bit ~True Colors"
-msgstr ""
+msgstr "২৪ বিট আসল রং (~T)"
 
 #: ui/app/menuids_tmpl.src#MN_COLORRESOLUTION.DUMMY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "~Color Resolution"
-msgstr ""
+msgstr "রং রেসলেশন (~C)"
 
 #: ui/app/menuids_tmpl.src#MNSUB_CONVERT.SID_CONVERT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Con~vert"
-msgstr ""
+msgstr "রুপান্তর করুন (~v)"
 
 #: ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Flip"
-msgstr ""
+msgstr "উল্টান (~F)"
 
 #: ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Rotate"
-msgstr ""
+msgstr "ঘুরান (~R)"
 
 #: ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MENUITEM.TEXT
+#, fuzzy
 msgid  "C~onnect"
-msgstr ""
+msgstr "সংযুক্ত করুন (~o)"
 
 #: ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Break"
-msgstr ""
+msgstr "বিরতি (~B)"
 
 #: ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Edit Style..."
-msgstr ""
+msgstr "শৈলী সম্পাদনা করুন..."
 
 #: ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MENUITEM.TEXT
+#, fuzzy
 msgid  "H~yperlink..."
-msgstr ""
+msgstr "হাইপারলিঙ্ক... (~y)"
 
 #: ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Poi~nts"
-msgstr ""
+msgstr "বিন্দুসমূহ (~n)"
 
 #: ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Glue Points"
-msgstr ""
+msgstr "সংযোগ বিন্দু (~G)"
 
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "La~yer"
-msgstr ""
+msgstr "স্তর (~y)"
 
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Insert"
-msgstr ""
+msgstr "প্রবেশ করান (~I)"
 
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Modify"
-msgstr ""
+msgstr "পরিবর্তন করান (~M)"
 
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_DELETE_LAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "মুছে ফেলুন"
 
 #: ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Rename"
-msgstr ""
+msgstr "পুনঃ নামকরণ (~R)"
 
 #: ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MENUITEM.TEXT
+#, fuzzy
 msgid  "To ~Curve"
-msgstr ""
+msgstr "কার্ভে (~C)"
 
 #: ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MENUITEM.TEXT
+#, fuzzy
 msgid  "To ~Polygon"
-msgstr ""
+msgstr "বহুভূজে (~P)"
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MENUITEM.TEXT
+#, fuzzy
 msgid  "To C~ontour"
-msgstr ""
+msgstr "দেহরেখায় (~o)"
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MENUITEM.TEXT
+#, fuzzy
 msgid  "To 3~D"
-msgstr ""
+msgstr "ত্রিমাত্রিক এ (~D)"
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MENUITEM.TEXT
+#, fuzzy
 msgid  "To ~Bitmap"
-msgstr ""
+msgstr "বিটম্যাপে (~B)"
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MENUITEM.TEXT
+#, fuzzy
 msgid  "To ~Metafile"
-msgstr ""
+msgstr "মেটাফাইলে (~M)"
 
 #: ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MENUITEM.TEXT
+#, fuzzy
 msgid  "To 3D ~Rotation Object"
-msgstr ""
+msgstr "ত্রিমাত্রিক ঘূর্ণায়মান অবজেক্ট (~R)"
 
 #: ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Vertically"
-msgstr ""
+msgstr "উলম্বভাবে (~V)"
 
 #: ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Horizontally"
-msgstr ""
+msgstr "অনুভূমিকভাবে (~H)"
 
 #: ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MENUITEM.TEXT
+#, fuzzy
 msgid  "~3D Effects"
-msgstr ""
+msgstr "ত্রিমাত্রিক প্রভাব (~3)"
 
 #: ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Slide Design"
-msgstr ""
+msgstr "স্লাইড নকশা (~S)"
 
 #: ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Slide ~Transition"
-msgstr ""
+msgstr "স্লাইড পরিবর্তন (~T)"
 
 #: ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Show Slide"
-msgstr ""
+msgstr "স্লাইড দেখান (~S)"
 
 #: ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Hide Slide"
-msgstr ""
+msgstr "স্লাইড লুকান (~H)"
 
 #: ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Group"
-msgstr ""
+msgstr "দল (~G)"
 
 #: ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Ungroup"
-msgstr ""
+msgstr "দলভঙ্গ করুন (~U)"
 
 #: ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Edit Group"
-msgstr ""
+msgstr "দল সম্পাদনা করুন (~E)"
 
 #: ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "E~xit group"
-msgstr ""
-
-#: ui/app/menuids3_tmpl.src#MNSUB_GROUP.MN_SUB_GROUP.MENUITEM.TEXT
-msgid  "~Group"
-msgstr ""
+msgstr "দল ত্যাগ করুন (~x)"
 
 #: ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Toolbars"
-msgstr ""
+msgstr "টুলবারসমূহ (~T)"
 
 #: ui/app/toolbox.src#RID_DRAW_VIEWER_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Function Bar (viewing mode)"
-msgstr ""
-
-#: ui/app/toolbox.src#RID_GRAPHIC_VIEWER_TOOLBOX.STRING.TEXT
-msgid  "Function Bar (viewing mode)"
-msgstr ""
+msgstr "ফাংশন বার (প্রদর্শন পরিমন্ডল)"
 
 #: ui/app/toolbox.src#RID_DRAW_MEDIA_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Media Playback"
-msgstr ""
+msgstr "মিডিয়া প্লে-বেক"
 
 #: ui/app/toolbox.src#RID_DRAW_TABLE_TOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "সারণী"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.SID_FORMAT_TABLE_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Table..."
-msgstr ""
+msgstr "সারণী... (~T)"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Cell"
-msgstr ""
+msgstr "কক্ষ (~C)"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Merge"
-msgstr ""
+msgstr "একত্রিত করুন (~M)"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SPLIT_CELLS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Split..."
-msgstr ""
+msgstr "বিভক্ত করুন... (~S)"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_NONE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Top"
-msgstr ""
+msgstr "উপর (~T)"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_CENTER.MENUITEM.TEXT
+#, fuzzy
 msgid  "C~enter"
-msgstr ""
+msgstr "কেন্দ্র (~e)"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_VERT_BOTTOM.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Bottom"
-msgstr ""
+msgstr "নিচ (~B)"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Row"
-msgstr ""
+msgstr "সারি (~R)"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Space ~Equally"
-msgstr ""
+msgstr "সমান ফাঁকা রাখুন (~E)"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Select"
-msgstr ""
+msgstr "নির্বাচন করুন (~S)"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Insert..."
 msgstr ""
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "মুছে ফেলুন (~D)"
 
 #: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MENUITEM.TEXT
+#, fuzzy
 msgid  "Colu~mn"
-msgstr ""
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MENUITEM.TEXT
-msgid  "Space ~Equally"
-msgstr ""
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_COL.MENUITEM.TEXT
-msgid  "~Select"
-msgstr ""
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_COL_DLG.MENUITEM.TEXT
-msgid  "~Insert..."
-msgstr ""
-
-#: ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MENUITEM.TEXT
-msgid  "~Delete"
-msgstr ""
+msgstr "স্তম্ভ (~m)"
 
 #: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_INSERTLAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Insert Layer..."
-msgstr ""
+msgstr "স্তর প্রবেশ করান... (~I)"
 
 #: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_MODIFYLAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Modify La~yer..."
-msgstr ""
+msgstr "স্তর পরিবর্তন করুন... (~y)"
 
 #: ui/app/popup.src#RID_LAYERTAB_POPUP.SID_DELETE_LAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete ~Layer..."
-msgstr ""
+msgstr "স্তর মুছে ফেলুন... (~L)"
 
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Apply to All Slides"
-msgstr ""
+msgstr "সব স্লাইডে প্রয়োগ করুন (~A)"
 
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MENUITEM.TEXT
+#, fuzzy
 msgid  "Apply to ~Selected Slides"
-msgstr ""
+msgstr "নির্বাচিত স্লাইডগুলোতে প্রয়োগ করুন (~S)"
 
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Show ~Large Preview"
-msgstr ""
+msgstr "বড় প্রাকদর্শন প্রদর্শন করুন (~L)"
 
 #: ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Show S~mall Preview"
-msgstr ""
-
-#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MENUITEM.TEXT
-msgid  "~Apply to All Slides"
-msgstr ""
-
-#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MENUITEM.TEXT
-msgid  "Apply to ~Selected Slides"
-msgstr ""
+msgstr "ছোট প্রাকদর্শন প্রদর্শন করুন (~m)"
 
 #: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MENUITEM.TEXT
 msgid  "~Edit Master..."
 msgstr ""
 
-#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MENUITEM.TEXT
-msgid  "Show ~Large Preview"
-msgstr ""
-
-#: ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MENUITEM.TEXT
-msgid  "Show S~mall Preview"
-msgstr ""
-
-#: ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MENUITEM.TEXT
-msgid  "Apply to ~Selected Slides"
-msgstr ""
-
 #: ui/app/popup.src#RID_TASKPANE_LAYOUTMENU_POPUP.SID_INSERTPAGE_LAYOUT_MENU.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Insert Slide"
-msgstr ""
+msgstr "স্লাইড প্রবেশ করান (~I)"
 
 #: ui/app/sdstring.src#STR_SAR_NOT_FOUND.STRING.TEXT
+#, fuzzy
 msgid  "Search key not found."
-msgstr ""
+msgstr "অনুসন্ধান কী পাওয়া যায়নি"
 
 #: ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME এর ইমপ্রেস উপস্থাপনাটির শেষ পর্যন্ত খোঁজা হয়েছে। আপনি কি শুরু থেকে খোঁজা অব্যাহত রাখতে চান?"
 
 #: ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME এর ইমপ্রেস উপস্থাপনাটির শুরু পর্যন্ত খোঁজা হয়েছে। আপনি কি শেষ থেকে খোঁজা অব্যাহত রাখতে চান?"
 
 #: ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME এর চিত্র নথিটির শেষ পর্যন্ত খোঁজা হয়েছে। আপনি কি শুরু থেকে খোঁজা অব্যাহত রাখতে চান?"
 
 #: ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME এর চিত্র নথিটির শুরু পর্যন্ত খোঁজা হয়েছে। আপনি কি শে‌ষ থেকে খোঁজা অব্যাহত রাখতে চান?"
 
 #: ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~New"
-msgstr ""
+msgstr "নতুন (~N)"
 
 #: ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Export..."
-msgstr ""
+msgstr "রপ্তানি করুন... (~E)"
 
 #: ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MENUITEM.TEXT
+#, fuzzy
 msgid  "Export as PDF..."
-msgstr ""
+msgstr "পিডিএফ হিসেবে রপ্তানি করুন..."
 
 #: ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sen~d"
-msgstr ""
+msgstr "পাঠান (~d)"
 
 #: ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Page..."
-msgstr ""
+msgstr "পৃষ্ঠা... (~P)"
 
 #: ui/app/menuids2_tmpl.src#20.#DEFINE.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "সম্পাদনা করুন (~E)"
 
 #: ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MENUITEM.TEXT
+#, fuzzy
 msgid  "Paste ~Special..."
-msgstr ""
+msgstr "বিশেষ প্রতিলেপন... (~S)"
 
 #: ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Duplicat~e..."
-msgstr ""
+msgstr "অনুরুপ... (~e)"
 
 #: ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MENUITEM.TEXT
+#, fuzzy
 msgid  "Cross-fading..."
-msgstr ""
+msgstr "পারস্পরিক-ফেডিং..."
 
 #: ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MENUITEM.TEXT
+#, fuzzy
 msgid  "F~ields..."
-msgstr ""
+msgstr "ক্ষেত্রসমূহ... (~i)"
 
 #: ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete ~Layer..."
-msgstr ""
+msgstr "স্তর মুছে ফেলুন... (~L)"
 
 #: ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Lin~ks..."
-msgstr ""
+msgstr "লিংকসমূহ... (~k)"
 
 #: ui/app/menuids2_tmpl.src#23.#DEFINE.TEXT
+#, fuzzy
 msgid  "~View"
-msgstr ""
+msgstr "প্রদর্শন করুন (~V)"
 
 #: ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MENUITEM.TEXT
+#, fuzzy
 msgid  "Main ~Toolbar"
-msgstr ""
+msgstr "প্রধান টুলবার (~T)"
 
 #: ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MENUITEM.TEXT
+#, fuzzy
 msgid  "Optio~n Bar"
-msgstr ""
+msgstr "পছন্দ বার (~n)"
 
 #: ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Presentation"
-msgstr ""
+msgstr "উপস্থাপনা (~P)"
 
 #: ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MENUITEM.TEXT
+#, fuzzy
 msgid  "Customi~ze..."
-msgstr ""
+msgstr "বিন্যাসন করুন... (~z)"
 
 #: ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Rulers"
-msgstr ""
+msgstr "পরিমাপকসমূহ (~R)"
 
 #: ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Notes View"
-msgstr ""
+msgstr "নোটসমূহের প্রদর্শন (~N)"
 
 #: ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Handout View"
-msgstr ""
+msgstr "বিলিপত্রর প্রদর্শন (~H)"
 
 #: ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Preview"
-msgstr ""
+msgstr "প্রাকদর্শন (~P)"
 
 #: ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MENUITEM.TEXT
+#, fuzzy
 msgid  "S~lide"
-msgstr ""
+msgstr "স্লাইড (~l)"
 
 #: ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Slide Master"
-msgstr ""
+msgstr "স্লাইড মাস্টার (~S)"
 
 #: ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "শিরোনাম (~T)"
 
 #: ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Notes"
-msgstr ""
+msgstr "নোটসমূহ (~N)"
 
 #: ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Handout"
-msgstr ""
+msgstr "বিলিপত্র (~H)"
 
 #: ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MENUITEM.TEXT
+#, fuzzy
 msgid  "La~yer"
-msgstr ""
+msgstr "স্তর (~y)"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "Wor~kspace"
-msgstr ""
+msgstr "কর্মপরিসর (~k)"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Master"
-msgstr ""
+msgstr "মাস্টার (~M)"
 
 #: ui/app/menuids2_tmpl.src#21.#DEFINE.TEXT
+#, fuzzy
 msgid  "~Insert"
-msgstr ""
+msgstr "প্রবেশ করান (~I)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Slid~e..."
-msgstr ""
+msgstr "স্লাইড... (~e)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Slid~e"
-msgstr ""
+msgstr "স্লাইড (~e)"
 
 #: ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "D~uplicate Slide"
-msgstr ""
+msgstr "অনুরুপ স্লাইড (~u)"
 
 #: ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "E~xpand Slide"
-msgstr ""
+msgstr "বর্ধিত স্লাইড (~x)"
 
 #: ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Su~mmary Slide"
-msgstr ""
+msgstr "সারসংক্ষেপ স্লাইড (~m)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Layer..."
-msgstr ""
+msgstr "স্তর... (~L)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Date (fixed)"
-msgstr ""
+msgstr "তারিখ (অপরিবর্তনীয়) (~D)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MENUITEM.TEXT
+#, fuzzy
 msgid  "Dat~e (variable)"
-msgstr ""
+msgstr "তারিখ (ভেরিয়েবল) (~e)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Time (fixed)"
-msgstr ""
+msgstr "সময় (অপরিবর্তনীয়) (~T)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MENUITEM.TEXT
+#, fuzzy
 msgid  "T~ime (variable)"
-msgstr ""
+msgstr "সময় (ভেরিয়েবল) (~i)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Page Number"
-msgstr ""
+msgstr "পৃষ্ঠা নম্বর (~P)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~File Name"
-msgstr ""
+msgstr "ফাইলের নাম (~F)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Author"
-msgstr ""
+msgstr "লেখক (~A)"
 
 #: ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Select Source..."
-msgstr ""
+msgstr "উৎস নির্বাচন করুন... (~S)"
 
 #: ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Request..."
-msgstr ""
+msgstr "অনুরোধ... (~R)"
 
 #: ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Sp~readsheet"
-msgstr ""
+msgstr "স্প্রেডশীট (~r)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MENUITEM.TEXT
+#, fuzzy
 msgid  "From ~File..."
-msgstr ""
+msgstr "ফাইল থেকে... (~F)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MENUITEM.TEXT
+#, fuzzy
 msgid  "Chart"
-msgstr ""
+msgstr "ছক"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Float~ing Frame..."
-msgstr ""
+msgstr "ফ্লোটিং কাঠামো... (~i)"
 
 #: ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~File..."
-msgstr ""
+msgstr "ফাইল... (~F)"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MENUITEM.TEXT
+#, fuzzy
 msgid  "Fiel~ds"
-msgstr ""
+msgstr "ক্ষেত্রসমূহ (~d)"
 
 #: ui/app/menuids2_tmpl.src#22.#DEFINE.TEXT
+#, fuzzy
 msgid  "F~ormat"
-msgstr ""
+msgstr "বিন্যাস (~o)"
 
 #: ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "Te~xt..."
-msgstr ""
+msgstr "পাঠ... (~x)"
 
 #: ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "Dimen~sions..."
-msgstr ""
+msgstr "মাত্রাসমূহ... (~s)"
 
 #: ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Connector..."
-msgstr ""
-
-#: ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MENUITEM.TEXT
-msgid  "~Layer..."
-msgstr ""
+msgstr "সংযোজক... (~C)"
 
 #: ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Modify ~Layout..."
-msgstr ""
+msgstr "বর্হিবিন্যাস পরিবর্তন করুন... (~L)"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MENUITEM.TEXT
+#, fuzzy
 msgid  "Styl~es"
-msgstr ""
+msgstr "শৈলীসমূহ (~e)"
 
 #: ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#DEFINE.TEXT
+#, fuzzy
 msgid  "~Tools"
-msgstr ""
+msgstr "টুলসমূহ (~T)"
 
 #: ui/app/menuids2_tmpl.src#26.#DEFINE.TEXT
+#, fuzzy
 msgid  "~Slide Show"
-msgstr ""
+msgstr "স্লাইড প্রদর্শন (~S)"
 
 #: ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Check..."
-msgstr ""
+msgstr "পরীক্ষা করুন... (~C)"
 
 #: ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MENUITEM.TEXT
+#, fuzzy
 msgid  "~AutoSpellcheck"
-msgstr ""
+msgstr "স্বAutoSpellcheck (~A)"
 
 #: ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Thesaurus..."
-msgstr ""
+msgstr "অভিধান... (~T)"
 
 #: ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Hyphenation"
-msgstr ""
+msgstr "যোজকচিহ্ন প্রদান করুন (~H)"
 
 #: ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "~AutoCorrect..."
-msgstr ""
+msgstr "AutoCorrect... (~A)"
 
 #: ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Slide Show Settings..."
-msgstr ""
+msgstr "স্লাইড প্রদর্শনের বিন্যাসনসমূহ... (~S)"
 
 #: ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Custom Slide Show..."
-msgstr ""
+msgstr "পছন্দসই স্লাইড প্রদর্শন... (~C)"
 
 #: ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Animation"
-msgstr ""
+msgstr "অ্যানিমেশন (~A)"
 
 #: ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Interaction..."
-msgstr ""
+msgstr "মিথস্ক্রিয়া... (~I)"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Spellcheck"
-msgstr ""
+msgstr "বানান-পরীক্ষণ (~S)"
 
 #: ui/app/menuids2_tmpl.src#24.#DEFINE.TEXT
+#, fuzzy
 msgid  "~Modify"
-msgstr ""
+msgstr "পরিবর্তন করুন (~M)"
 
 #: ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Bring ~Forward"
-msgstr ""
+msgstr "সামনে আনুন (~F)"
 
 #: ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MENUITEM.TEXT
+#, fuzzy
 msgid  "Send Back~ward"
-msgstr ""
+msgstr "পিছনে পাঠান (~w)"
 
 #: ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MENUITEM.TEXT
+#, fuzzy
 msgid  "In Front of ~Object"
-msgstr ""
+msgstr "অবজেক্টের সামনে (~O)"
 
 #: ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MENUITEM.TEXT
+#, fuzzy
 msgid  "Be~hind Object"
-msgstr ""
+msgstr "অবজেক্টের পিছনে (~h)"
 
 #: ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Reverse"
-msgstr ""
+msgstr "উল্টান (~R)"
 
 #: ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Eyedropper"
-msgstr ""
+msgstr "আইড্রপার (~E)"
 
 #: ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Gallery"
-msgstr ""
+msgstr "গ্যালারি (~G)"
 
 #: ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Color"
-msgstr ""
+msgstr "রং (~C)"
 
 #: ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Grayscale"
-msgstr ""
+msgstr "ধূসর (~G)"
 
 #: ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Black and White"
-msgstr ""
+msgstr "সাদা ও কালো (~B)"
 
 #: ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MENUITEM.TEXT
+#, fuzzy
 msgid  "~High Contrast"
-msgstr ""
-
-#: ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MENUITEM.TEXT
-msgid  "~Color"
-msgstr ""
-
-#: ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MENUITEM.TEXT
-msgid  "~Grayscale"
-msgstr ""
-
-#: ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MENUITEM.TEXT
-msgid  "~Black and White"
-msgstr ""
-
-#: ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MENUITEM.TEXT
-msgid  "~High Contrast"
-msgstr ""
+msgstr "উচ্চ বৈসাদৃশ্য (~H)"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Arrange"
-msgstr ""
+msgstr "সাজান (~A)"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "~Display Quality"
-msgstr ""
+msgstr "প্রদর্শন বৈশিষ্ট্য (~D)"
 
 #: ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ITEMLIST.TEXT
+#, fuzzy
 msgid  "Pre~view Mode"
-msgstr ""
+msgstr "প্রাকদর্শন পরিমন্ডল (~v)"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.CONTROL.TEXT
+#, fuzzy
 msgid  "Custom Animation"
-msgstr ""
+msgstr "স্বয়ংক্রিয় অ্যানিমেশন"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_EFFECT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Effect"
-msgstr ""
+msgstr "প্রভাব"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_ADD_EFFECT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add..."
-msgstr ""
+msgstr "যুক্ত করুন...(~A)"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_CHANGE_EFFECT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Change..."
-msgstr ""
+msgstr "পরিবর্তন করুন...(~C)"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_REMOVE_EFFECT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Remove"
-msgstr ""
+msgstr "অপসারণ করুন (~R)"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FL_MODIFY.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Modify effect"
-msgstr ""
+msgstr "প্রভাব পরিবর্তন করুন"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_START.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Start"
-msgstr ""
+msgstr "শুরু করুন (~S)"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "On click"
-msgstr ""
+msgstr "ক্লিক করে"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "With previous"
-msgstr ""
+msgstr "পূর্বের সাথে"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.LB_START.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "After previous"
-msgstr ""
+msgstr "পরবর্তীর পর"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_PROPERTY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Property"
-msgstr ""
+msgstr "বৈশিষ্ট"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~..."
-msgstr ""
+msgstr "... (~.)"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PROPERTY_MORE.PUSHBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Effect Options"
-msgstr ""
+msgstr "প্রভাবের পছন্দসমূহ"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_SPEED.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Sp~eed"
-msgstr ""
+msgstr "গতি (~e)"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.FT_CHANGE_ORDER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Change order:"
-msgstr ""
+msgstr "ক্রম পরিবর্তন করুন:"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_PLAY.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Play"
-msgstr ""
+msgstr "শুরু করুন (~P)"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.PB_SLIDE_SHOW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Slide Sho~w"
-msgstr ""
+msgstr "স্লাইড প্রদর্শন (~w)"
 
 #: ui/animations/CustomAnimationPane.src#DLG_CUSTOMANIMATIONPANE.CB_AUTOPREVIEW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Automatic pre~view"
-msgstr ""
+msgstr "স্বয়ংক্রিয় প্রাকদর্শন (~v)"
 
 #: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Custom Animation"
-msgstr ""
+msgstr "পছন্দসই অ্যানিমেশন"
 
 #: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_ENTRANCE.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Entrance"
-msgstr ""
+msgstr "প্রবেশ"
 
 #: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EMPHASIS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Emphasis"
-msgstr ""
+msgstr "গুরুত্ব দিন"
 
 #: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EXIT.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Exit"
-msgstr ""
+msgstr "প্রস্থান"
 
 #: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MOTIONPATH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Motion Paths"
-msgstr ""
+msgstr "গতিশীল পথ"
 
 #: ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MISCEFFECTS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Misc Effects"
-msgstr ""
+msgstr "Misc প্রভাবসমূহ"
 
 #: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.FT_SPEED.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Speed"
-msgstr ""
+msgstr "গতি"
 
 #: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.CBX_PREVIEW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Automatic preview"
-msgstr ""
+msgstr "স্বয়ংক্রিয় প্রাকদর্শন"
 
 #: ui/animations/CustomAnimationCreateDialog.src#RID_TP_CUSTOMANIMATION_ENTRANCE.STR_USERPATH.STRING.TEXT
+#, fuzzy
 msgid  "User paths"
-msgstr ""
+msgstr "ব্যবহারকারীর পথ"
 
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Effect Options"
-msgstr ""
+msgstr "প্রভাব পছন্দসমূহ"
 
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_EFFECT.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Effect"
-msgstr ""
+msgstr "প্রভাব"
 
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_DURATION.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Timing"
-msgstr ""
+msgstr "সময়"
 
 #: ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_TEXT.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Text Animation"
-msgstr ""
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.TABPAGE.TEXT
-msgid  "Effect"
-msgstr ""
+msgstr "পাঠ অ্যানিমেশন"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_SETTINGS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Settings"
-msgstr ""
+msgstr "বিন্যাসনসমূহ"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_START.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Accelerated start"
-msgstr ""
+msgstr "ত্বরান্বিত আরম্ভ"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_SMOOTH_END.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Decelerated end"
-msgstr ""
+msgstr "গতিহীন সমাপ্তি"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.CB_AUTORESTART.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Reverse automatically"
-msgstr ""
+msgstr "স্বয়ংক্রিয়ভাবে উল্টান"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FL_ENHANCEMENTS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Enhancement"
-msgstr ""
+msgstr "বর্ধিতকরণ"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_SOUND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Sound"
-msgstr ""
+msgstr "শব্দ"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_AFTER_EFFECT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "After animation "
-msgstr ""
+msgstr "অ্যানিমেশনের পরে"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Don't dim"
-msgstr ""
+msgstr "অনুজ্জল করবেন না"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Dim with color"
-msgstr ""
+msgstr "রং অনুযায়ী অনুজ্জল করুন"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Hide after animation"
-msgstr ""
+msgstr "অ্যানিমেশনের পর লুকান"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_AFTER_EFFECT.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Hide on next animation"
-msgstr ""
+msgstr "পরবর্তী অ্যানিমেশনে লুকান"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_DIMCOLOR.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Dim Color"
-msgstr ""
+msgstr "অনুজ্জল রং"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_ANIM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Text animation"
-msgstr ""
+msgstr "পাঠ অ্যানিমেশন"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "All at once"
-msgstr ""
+msgstr "সব এক সাথে"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Word by word"
-msgstr ""
+msgstr "শব্দানুযায়ী"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.LB_TEXT_ANIM.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Letter by letter"
-msgstr ""
+msgstr "বর্ণানুযায়ী"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.FT_TEXT_DELAY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "delay between characters"
-msgstr ""
+msgstr "বর্ণগুলোর মাঝে বিলম্ব করুন"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.MF_TEXT_DELAY.METRICFIELD.CUSTOMUNITTEXT
+#, fuzzy
 msgid  "%"
-msgstr ""
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.TABPAGE.TEXT
-msgid  "Timing"
-msgstr ""
+msgstr "%"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Start"
-msgstr ""
+msgstr "শুরু করুন"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "On click"
-msgstr ""
+msgstr "ক্লিক করে"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "With previous"
-msgstr ""
+msgstr "পূর্বের সাথে"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.LB_START.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "After previous"
-msgstr ""
+msgstr "পরবর্তীর পরে"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_START_DELAY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Delay"
-msgstr ""
+msgstr "বিলম্ব"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.MF_START_DELAY.METRICFIELD.CUSTOMUNITTEXT
+#, fuzzy
 msgid  "sec"
-msgstr ""
+msgstr "সেকেন্ড"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_DURATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Speed"
-msgstr ""
+msgstr "গতি"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_REPEAT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Repeat"
-msgstr ""
+msgstr "পুনরাবৃত্তি"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.CBX_REWIND.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Rewind when done playing"
-msgstr ""
+msgstr "চালানো সম্পন্ন হলে পুনরায় চালান"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FL_TRIGGER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Trigger"
-msgstr ""
+msgstr "ট্রিগার"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_CLICKSEQUENCE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Animate as part of click sequence"
-msgstr ""
+msgstr "ক্লিক ক্রমের অংশ হিসেবে অ্যানিমেট করুন"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.RB_INTERACTIVE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Start effect on click of"
-msgstr ""
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.TABPAGE.TEXT
-msgid  "Text Animation"
-msgstr ""
+msgstr "ক্লিকে প্রভাব শুরু করুন"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.FT_GROUP_TEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Group text"
-msgstr ""
+msgstr "গ্রুপ পাঠ"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "As one object"
-msgstr ""
+msgstr "একটি অবজেক্ট হিসেবে"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "All paragraphs at once"
-msgstr ""
+msgstr "একবারে সব অনুচ্ছেদ"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "By 1st level paragraphs"
-msgstr ""
+msgstr "১ম স্তরের অনুচ্ছেদ অনুযায়ী"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "By 2nd level paragraphs"
-msgstr ""
+msgstr "২য় স্তরের অনুচ্ছেদ অনুযায়ী"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "By 3rd level paragraphs"
-msgstr ""
+msgstr "৩য় স্তরের অনুচ্ছেদ অনুযায়ী"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM6.STRINGLIST.ITEM
+#, fuzzy
 msgid  "By 4th level paragraphs"
-msgstr ""
+msgstr "৪র্থ স্তরের অনুচ্ছেদ অনুযায়ী"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT.ITEM7.STRINGLIST.ITEM
+#, fuzzy
 msgid  "By 5th level paragraphs"
-msgstr ""
+msgstr "৫ম স্তরের অনুচ্ছেদ অনুযায়ী"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_GROUP_AUTO.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Automatically after"
-msgstr ""
-
-#: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.MF_GROUP_AUTO.METRICFIELD.CUSTOMUNITTEXT
-msgid  "sec"
-msgstr ""
+msgstr "স্বয়ংক্রিয়ভাবে পরে"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_ANIMATE_FORM.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Animate attached shape"
-msgstr ""
+msgstr "অ্যানিমেটে সংযুক্ত আকৃতি"
 
 #: ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_TEXT.CBX_REVERSE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "In reverse order"
-msgstr ""
+msgstr "বিপরীত বিন্যাসে"
 
 #: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_CLICK.MENUITEM.TEXT
+#, fuzzy
 msgid  "Start On ~Click"
-msgstr ""
+msgstr "ক্লিক করলে শুরু করুন (~C)"
 
 #: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_PREVIOUS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Start ~With Previous"
-msgstr ""
+msgstr "পূর্ববর্তীর সাথে শুরু করুন (~W)"
 
 #: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_AFTER_PREVIOUS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Start ~After Previous"
-msgstr ""
+msgstr "পূর্ববর্তীর পরে শুরু করুন (~A)"
 
 #: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_OPTIONS.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Effect Options..."
-msgstr ""
+msgstr "প্রভাবের পছন্দসমূহ... (~E)"
 
 #: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_DURATION.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Timing..."
-msgstr ""
+msgstr "সময়... (~T)"
 
 #: ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_REMOVE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Remove"
-msgstr ""
+msgstr "অপসারণ করুন (~R)"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_25.MENUITEM.TEXT
+#, fuzzy
 msgid  "Tiny"
-msgstr ""
+msgstr "অতিক্ষুদ্র"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_50.MENUITEM.TEXT
+#, fuzzy
 msgid  "Smaller"
-msgstr ""
+msgstr "অপেক্ষাকৃত ক্ষুদ্র"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MENUITEM.TEXT
+#, fuzzy
 msgid  "Larger"
-msgstr ""
+msgstr "অপেক্ষাকৃত বৃহৎ"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MENUITEM.TEXT
+#, fuzzy
 msgid  "Extra large"
-msgstr ""
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_25.MENUITEM.TEXT
-msgid  "Tiny"
-msgstr ""
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_50.MENUITEM.TEXT
-msgid  "Smaller"
-msgstr ""
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_150.MENUITEM.TEXT
-msgid  "Larger"
-msgstr ""
-
-#: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_400.MENUITEM.TEXT
-msgid  "Extra large"
-msgstr ""
+msgstr "অতিরিক্ত বড়"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_HORIZONTAL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Horizontal"
-msgstr ""
+msgstr "অনুভূমিক"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_VERTICAL.MENUITEM.TEXT
+#, fuzzy
 msgid  "Vertical"
-msgstr ""
+msgstr "উলম্ব"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_BOTH.MENUITEM.TEXT
+#, fuzzy
 msgid  "Both"
-msgstr ""
+msgstr "উভয়"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_QUARTER_SPIN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Quarter spin"
-msgstr ""
+msgstr "একচতুর্থাংশ ঘুরান"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_HALF_SPIN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Half spin"
-msgstr ""
+msgstr "অর্ধেক ঘুরান"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_FULL_SPIN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Full spin"
-msgstr ""
+msgstr "সম্পূর্ণ ঘুরান"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_TWO_SPINS.MENUITEM.TEXT
+#, fuzzy
 msgid  "Two spins"
-msgstr ""
+msgstr "দুইবার ঘুরান"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_CLOCKWISE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Clockwise"
-msgstr ""
+msgstr "ঘড়ির কাঁটার দিকে"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_COUNTERCLOCKWISE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Counter-clockwise"
-msgstr ""
+msgstr "ঘড়ির কাঁটার বিপরীতে"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_BOLD.MENUITEM.TEXT
+#, fuzzy
 msgid  "Bold"
-msgstr ""
+msgstr "মোটা"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_ITALIC.MENUITEM.TEXT
+#, fuzzy
 msgid  "Italic"
-msgstr ""
+msgstr "বাঁকা"
 
 #: ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_UNDERLINED.MENUITEM.TEXT
+#, fuzzy
 msgid  "Underlined"
-msgstr ""
+msgstr "নিম্নরেখাঙ্কিত"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_SLOW.STRING.TEXT
+#, fuzzy
 msgid  "Very slow"
-msgstr ""
+msgstr "খুব ধীরে"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_SLOW.STRING.TEXT
+#, fuzzy
 msgid  "Slow"
-msgstr ""
+msgstr "ধীরে"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_NORMAL.STRING.TEXT
+#, fuzzy
 msgid  "Medium"
-msgstr ""
+msgstr "মাঝারী"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_FAST.STRING.TEXT
+#, fuzzy
 msgid  "Fast"
-msgstr ""
+msgstr "দ্রুত"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_FAST.STRING.TEXT
+#, fuzzy
 msgid  "Very fast"
-msgstr ""
+msgstr "খুব দ্রুত"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_NONE.STRING.TEXT
+#, fuzzy
 msgid  "none"
-msgstr ""
+msgstr "কোনোটি না"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_NEXT_CLICK.STRING.TEXT
+#, fuzzy
 msgid  "Until next click"
-msgstr ""
+msgstr "পরবর্তী ক্লিক পর্ষন্ত"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_END_OF_SLIDE.STRING.TEXT
+#, fuzzy
 msgid  "Until end of slide"
-msgstr ""
+msgstr "স্লাইড শেষ পর্যন্ত"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DIRECTION_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Direction"
-msgstr ""
+msgstr "নির্দশনা"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_ZOOM_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Zoom"
-msgstr ""
+msgstr "জুম"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SPOKES_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Spokes"
-msgstr ""
+msgstr "স্পোকসমূহ"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FIRST_COLOR_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "First color"
-msgstr ""
+msgstr "প্রথম রং"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SECOND_COLOR_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Second color"
-msgstr ""
+msgstr "দ্বিতীয় রং"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FILL_COLOR_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Fill color"
-msgstr ""
+msgstr "পূরণ রং"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STYLE_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Style"
-msgstr ""
+msgstr "শৈলী"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Font"
-msgstr ""
+msgstr "ফন্ট"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_COLOR_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Font color"
-msgstr ""
-
-#: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_SIZE_STYLE_PROPERTY.STRING.TEXT
-msgid  "Style"
-msgstr ""
+msgstr "ফন্টের রং"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_STYLE_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Typeface"
-msgstr ""
+msgstr "টাইপফেইস"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LINE_COLOR_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Line color"
-msgstr ""
+msgstr "লাইনের রং"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SIZE_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Font size"
-msgstr ""
+msgstr "ফন্টের আকার"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SCALE_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Size"
-msgstr ""
+msgstr "আকার"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_AMOUNT_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Amount"
-msgstr ""
+msgstr "পরিমাণ"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_COLOR_PROPERTY.STRING.TEXT
+#, fuzzy
 msgid  "Color"
-msgstr ""
+msgstr "রং"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_NO_SOUND.STRING.TEXT
+#, fuzzy
 msgid  "(No sound)"
-msgstr ""
+msgstr "(শব্দহীন)"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STOP_PREVIOUS_SOUND.STRING.TEXT
+#, fuzzy
 msgid  "(Stop previous sound)"
-msgstr ""
+msgstr "(পূর্ববর্তী শব্দ থামান)"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_BROWSE_SOUND.STRING.TEXT
+#, fuzzy
 msgid  "Other sound..."
-msgstr ""
+msgstr "অন্যান্য শব্দ ..."
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SAMPLE.STRING.TEXT
+#, fuzzy
 msgid  "Sample"
-msgstr ""
+msgstr "নমুনা"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_1_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "1 Spoke"
-msgstr ""
+msgstr "১ টি স্পোক"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_2_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "2 Spokes"
-msgstr ""
+msgstr "২ টি স্পোক "
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_3_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "3 Spokes"
-msgstr ""
+msgstr "৩ টি স্পোক"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_4_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "4 Spokes"
-msgstr ""
+msgstr "৪ টি স্পোক "
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_8_SPOKES.STRING.TEXT
+#, fuzzy
 msgid  "8 Spokes"
-msgstr ""
+msgstr "৮ টি স্পোক "
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_INSTANT.STRING.TEXT
+#, fuzzy
 msgid  "Instant"
-msgstr ""
+msgstr "তাৎক্ষণিক"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_GRADUAL.STRING.TEXT
+#, fuzzy
 msgid  "Gradual"
-msgstr ""
+msgstr "ক্রমিক"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_TRIGGER.STRING.TEXT
+#, fuzzy
 msgid  "Trigger"
-msgstr ""
+msgstr "ট্রিগার"
 
 #: ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.STRING.TEXT
+#, fuzzy
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr ""
+msgstr "একটি অ্যানিমেশন প্রভাব যোগ করতে প্রথমে স্লাইড উপাদান নির্বাচন করুন এবং তারপর 'যুক্ত করুন...' ক্লিক করুন।"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CONTROL.TEXT
+#, fuzzy
 msgid  "Slide Transition"
-msgstr ""
+msgstr "স্লাইড স্থানান্তরণ"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_APPLY_TRANSITION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Apply to selected slides"
-msgstr ""
+msgstr "নির্বাচিত স্লাইডসমূহে প্রয়োগ করুন"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_MODIFY_TRANSITION.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Modify transition"
-msgstr ""
+msgstr "স্থানান্তরণ পরিবর্তন করুন"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SPEED.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Speed"
-msgstr ""
+msgstr "গতি"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Slow"
-msgstr ""
+msgstr "ধীরে"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Medium"
-msgstr ""
+msgstr "মধ্যম"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SPEED.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Fast"
-msgstr ""
+msgstr "দ্রুত"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FT_SOUND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Sound"
-msgstr ""
+msgstr "শব্দ"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "<No Sound>"
-msgstr ""
+msgstr "<শব্দহীন>"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "<Stop Previous Sound>"
-msgstr ""
+msgstr "<পূর্ববর্তী শব্দ থামান>"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.LB_SOUND.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Other Sound..."
-msgstr ""
+msgstr "অন্যান্য শব্দ..."
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_LOOP_SOUND.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Loop until next sound"
-msgstr ""
+msgstr "পরবর্তী শব্দ না আসা পর্যন্ত ঘুরান"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.FL_ADVANCE_SLIDE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Advance slide"
-msgstr ""
+msgstr "উন্নত স্লাইড"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_ON_MOUSE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "On mouse click"
-msgstr ""
+msgstr "মাউস ক্লিকে"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.RB_ADVANCE_AUTO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Automatically after"
-msgstr ""
+msgstr "পরবর্তীতে স্বয়ংক্রিয়ভাবে "
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.MF_ADVANCE_AUTO_AFTER.METRICFIELD.CUSTOMUNITTEXT
+#, fuzzy
 msgid  "sec"
-msgstr ""
+msgstr "সেকেন্ড"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_APPLY_TO_ALL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Apply to All Slides"
-msgstr ""
+msgstr "সকল স্লাইডে প্রয়োগ করুন"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_PLAY.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Play"
-msgstr ""
+msgstr "শুরু করুন"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.PB_SLIDE_SHOW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Slide Show"
-msgstr ""
+msgstr "স্লাইড প্রদর্শন"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.CB_AUTO_PREVIEW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Automatic preview"
-msgstr ""
+msgstr "স্বয়ংক্রিয় প্রাকদর্শন"
 
 #: ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.STR_NO_TRANSITION.STRING.TEXT
+#, fuzzy
 msgid  "No Transition"
-msgstr ""
+msgstr "কোনো স্থানান্তরণ নেই"
 
 #: ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_PAGES.STRING.TEXT
 msgid  "Drag and Drop Pages"
@@ -5056,27 +5942,17 @@ msgid  "Original size"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM2.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Fit to printable page"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM3.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Distribute on multiple sheets of paper"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.ITEM4.ITEMLIST.ITEM
 msgid  "Tile sheet of paper with repeated slides"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.ITEM1.ITEMLIST.ITEM
-msgid  "Original size"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.ITEM2.ITEMLIST.ITEM
-msgid  "Fit to printable page"
-msgstr ""
-
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.ITEM3.ITEMLIST.ITEM
-msgid  "Distribute on multiple sheets of paper"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.ITEM4.ITEMLIST.ITEM
@@ -5128,6 +6004,7 @@ msgid  "~Slides"
 msgstr ""
 
 #: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.ITEM3.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Se~lection"
 msgstr ""
 
@@ -5139,394 +6016,413 @@ msgstr ""
 msgid  "Pa~ges"
 msgstr ""
 
-#: ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.ITEM3.ITEMLIST.ITEM
-msgid  "Se~lection"
-msgstr ""
-
 #: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CONTROL.TEXT
+#, fuzzy
 msgid  "Table Design"
-msgstr ""
+msgstr "সারণীর নকশা"
 
 #: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS_1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Show"
-msgstr ""
+msgstr "প্রদর্শন করুন"
 
 #: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW_1.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Header Row"
-msgstr ""
+msgstr "শিরোনাম সারি"
 
 #: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW_1.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Total Row"
-msgstr ""
+msgstr "মোট সারি"
 
 #: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS_1.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Banded Rows"
-msgstr ""
+msgstr "বাধাগ্রস্থ সারিসমূহ"
 
 #: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN_1.CHECKBOX.TEXT
+#, fuzzy
 msgid  "First Column"
-msgstr ""
+msgstr "প্রথম স্তম্ভ"
 
 #: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN_1.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Last Column"
-msgstr ""
+msgstr "শেষ স্তম্ভ"
 
 #: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS_1.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Banded Columns"
-msgstr ""
+msgstr "বাধাগ্রস্থ স্তম্ভসমূহ"
 
 #: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES_1.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Styles"
-msgstr ""
-
-#: ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.MODALDIALOG.TEXT
-msgid  "Table Design"
-msgstr ""
+msgstr "শৈলীসমূহ"
 
 #: ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DOCKINGWINDOW.TEXT
+#, fuzzy
 msgid  "Notes Window"
-msgstr ""
+msgstr "নোটের উইন্ডো"
 
 #: core/glob.src#STR_LAYER_BCKGRND.STRING.TEXT
+#, fuzzy
 msgid  "Background"
-msgstr ""
+msgstr "প্রেক্ষাপট"
 
 #: core/glob.src#STR_LAYER_BCKGRNDOBJ.STRING.TEXT
+#, fuzzy
 msgid  "Background objects"
-msgstr ""
+msgstr "প্রেক্ষাপট অবজেক্ট"
 
 #: core/glob.src#STR_LAYER_LAYOUT.STRING.TEXT
 msgid  "Layout"
-msgstr ""
+msgstr "বর্হিবিন্যাস"
 
 #: core/glob.src#STR_LAYER_CONTROLS.STRING.TEXT
 msgid  "Controls"
-msgstr ""
+msgstr "নিয়ন্ত্রণসমূহ"
 
 #: core/glob.src#STR_LAYER_MEASURELINES.STRING.TEXT
 msgid  "Dimension Lines"
-msgstr ""
+msgstr "মাত্রা রেখাসমূহ"
 
 #: core/glob.src#STR_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Slide"
-msgstr ""
+msgstr "স্লাইড"
 
 #: core/glob.src#STR_PAGE_NAME.STRING.TEXT
 msgid  "Page"
-msgstr ""
-
-#: core/glob.src#STR_SLIDE_NAME.STRING.TEXT
-msgid  "Slide"
-msgstr ""
-
-#: core/glob.src#STR_MASTERPAGE.STRING.TEXT
-msgid  "Background"
-msgstr ""
+msgstr "পৃষ্ঠা"
 
 #: core/glob.src#STR_NOTES.STRING.TEXT
 msgid  "(Notes)"
-msgstr ""
+msgstr "(নোটসমূহ)"
 
 #: core/glob.src#STR_HANDOUT.STRING.TEXT
 msgid  "Handouts"
-msgstr ""
+msgstr "বিলিপত্র"
 
 #: core/glob.src#STR_PRESOBJ_MPTITLE.STRING.TEXT
 msgid  "Click to edit the title text format"
-msgstr ""
+msgstr "শিরোনাম পাঠ বিন্যাস সম্পাদনা করতে ক্লিক করুন"
 
 #: core/glob.src#STR_PRESOBJ_MPOUTLINE.STRING.TEXT
 msgid  "Click to edit the outline text format"
-msgstr ""
+msgstr "আউটলাইন পাঠ বিন্যাস সম্পাদনা করতে ক্লিক করুন"
 
 #: core/glob.src#STR_PRESOBJ_MPOUTLLAYER2.STRING.TEXT
 msgid  "Second Outline Level"
-msgstr ""
+msgstr "দ্বিতীয় আউটলাইন স্তর"
 
 #: core/glob.src#STR_PRESOBJ_MPOUTLLAYER3.STRING.TEXT
 msgid  "Third Outline Level"
-msgstr ""
+msgstr "তৃতীয় আউটলাইন স্তর"
 
 #: core/glob.src#STR_PRESOBJ_MPOUTLLAYER4.STRING.TEXT
 msgid  "Fourth Outline Level"
-msgstr ""
+msgstr "চতুর্থ আউটলাইন স্তর"
 
 #: core/glob.src#STR_PRESOBJ_MPOUTLLAYER5.STRING.TEXT
 msgid  "Fifth Outline Level"
-msgstr ""
+msgstr "পঞ্চম আউটলাইন স্তর"
 
 #: core/glob.src#STR_PRESOBJ_MPOUTLLAYER6.STRING.TEXT
 msgid  "Sixth Outline Level"
-msgstr ""
+msgstr "ষষ্ঠ আউটলাইন স্তর"
 
 #: core/glob.src#STR_PRESOBJ_MPOUTLLAYER7.STRING.TEXT
 msgid  "Seventh Outline Level"
-msgstr ""
+msgstr "সপ্তম আউটলাইন স্তর"
 
 #: core/glob.src#STR_PRESOBJ_MPOUTLLAYER8.STRING.TEXT
 msgid  "Eighth Outline Level"
-msgstr ""
+msgstr "অস্টম আউটলাইন স্তর"
 
 #: core/glob.src#STR_PRESOBJ_MPOUTLLAYER9.STRING.TEXT
 msgid  "Ninth Outline Level"
-msgstr ""
+msgstr "নবম আউটলাইন স্তর"
 
 #: core/glob.src#STR_PRESOBJ_MPNOTESTITLE.STRING.TEXT
 msgid  "Click to move the slide"
-msgstr ""
+msgstr "স্লাইড সরাতে ক্লিক করুন"
 
 #: core/glob.src#STR_PRESOBJ_MPNOTESTEXT.STRING.TEXT
 msgid  "Click to edit the notes format"
-msgstr ""
+msgstr "নোটের বিন্যাস সম্পাদনা করার জন্য ক্লিক করুন"
 
 #: core/glob.src#STR_PRESOBJ_TITLE.STRING.TEXT
 msgid  "Click to add title"
-msgstr ""
+msgstr "শিরোনাম সংযোজনের জন্য ক্লিক করুন"
 
 #: core/glob.src#STR_PRESOBJ_OUTLINE.STRING.TEXT
+#, fuzzy
 msgid  "Click to add text"
-msgstr ""
-
-#: core/glob.src#STR_PRESOBJ_TEXT.STRING.TEXT
-msgid  "Click to add text"
-msgstr ""
+msgstr "পাঠ সংযোজনের জন্য ক্লিক করুন"
 
 #: core/glob.src#STR_PRESOBJ_NOTESTEXT.STRING.TEXT
+#, fuzzy
 msgid  "Click to add notes"
-msgstr ""
+msgstr "নোট সংযোজনের জন্য ক্লিক করুন"
 
 #: core/glob.src#STR_PRESOBJ_GRAPHIC.STRING.TEXT
+#, fuzzy
 msgid  "Double-click to add graphics"
-msgstr ""
+msgstr "গ্রাফিক্স সংযোজনের জন্য দুবার-ক্লিক করুন"
 
 #: core/glob.src#STR_PRESOBJ_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Double-click to add an object"
-msgstr ""
+msgstr "একটি অবজেক্ট সংযোজনের জন্য দুবার-ক্লিক করুন"
 
 #: core/glob.src#STR_PRESOBJ_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Double-click to add a chart"
-msgstr ""
+msgstr "ছক সংযোজনের জন্য দুবার-ক্লিক করুন"
 
 #: core/glob.src#STR_PRESOBJ_ORGCHART.STRING.TEXT
+#, fuzzy
 msgid  "Double-click to add an organization chart"
-msgstr ""
+msgstr "একটি প্রতিষ্ঠানের ছক সংযোজনের জন্য দুবার-ক্লিক করুন "
 
 #: core/glob.src#STR_PRESOBJ_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Double-click to add a spreadsheet"
-msgstr ""
+msgstr "একটি স্প্রেডশিট সংযোজনের জন্য দুবার-ক্লিক করুন "
 
 #: core/glob.src#STR_OUTLINEVIEWSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Outline View"
-msgstr ""
+msgstr "রূপরেখার প্রদর্শন"
 
 #: core/glob.src#STR_DRAWVIEWSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Drawing View"
-msgstr ""
+msgstr "অঙ্কন প্রদর্শন"
 
 #: core/glob.src#STR_PRESVIEWSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Presentation mode"
-msgstr ""
+msgstr "উপস্থাপনা পরিমন্ডল"
 
 #: core/glob.src#STR_PREVIEWVIEWSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Preview Window"
-msgstr ""
+msgstr "প্রাকদর্শন উইন্ডো"
 
 #: core/glob.src#STR_TEXTOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Text Mode"
-msgstr ""
+msgstr "পাঠ পরিমন্ডল"
 
 #: core/glob.src#STR_STDOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Document Mode"
-msgstr ""
+msgstr "নথি পরিমন্ডল"
 
 #: core/glob.src#STR_BEZIEROBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Bézier mode"
-msgstr ""
+msgstr "বেজিয়ার পরিমন্ডল"
 
 #: core/glob.src#STR_APPLICATIONOBJECTBAR.STRING.TEXT
+#, fuzzy
 msgid  "StarImpress 4.0"
-msgstr ""
+msgstr "StarImpress ৪.০"
 
 #: core/glob.src#STR_GLUEPOINTSOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Glue Points Mode"
-msgstr ""
+msgstr "সধযোগ বিন্দুর পরিমন্ডল"
 
 #: core/glob.src#STR_LAYOUT_DEFAULT_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "পূর্বনির্ধারিত"
 
 #: core/glob.src#STR_LAYOUT_DEFAULT_TITLE_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Title"
-msgstr ""
-
-#: core/glob.src#STR_STANDARD_STYLESHEET_NAME.STRING.TEXT
-msgid  "Default"
-msgstr ""
+msgstr "শিরোনাম"
 
 #: core/glob.src#STR_BAD_PASSWORD_OR_FILE_CORRUPTED.STRING.TEXT
+#, fuzzy
 msgid  "The password is incorrect or the file is damaged."
-msgstr ""
+msgstr "গুপ্তসংকেত ভুল বা ফাইলটি ক্ষতিগ্রস্ত।"
 
 #: core/glob.src#STR_UNDO_MOVEPAGES.STRING.TEXT
+#, fuzzy
 msgid  "Move slides"
-msgstr ""
+msgstr "স্লাইডগুলো সরান"
 
 #: core/glob.src#STR_NOT_ENOUGH_MEMORY.STRING.TEXT
+#, fuzzy
 msgid  "Not enough memory!\nThe action will be aborted."
-msgstr ""
+msgstr "য়থেষ্ট স্মৃতি নেই!\nকাজটি বাতিল করা হবে"
 
 #: core/glob.src#STR_POOLSHEET_MEASURE.STRING.TEXT
+#, fuzzy
 msgid  "Dimension Line"
-msgstr ""
-
-#: core/glob.src#STR_POOLSHEET_OBJNOLINENOFILL.STRING.TEXT
-msgid  "Object with no fill and no line"
-msgstr ""
+msgstr "মাত্র রেখা"
 
 #: core/glob.src#STR_POOLSHEET_OBJWITHARROW.STRING.TEXT
+#, fuzzy
 msgid  "Object with arrow"
-msgstr ""
+msgstr "তীরচিহ্নযুক্ত অবজেক্ট"
 
 #: core/glob.src#STR_POOLSHEET_OBJWITHSHADOW.STRING.TEXT
+#, fuzzy
 msgid  "Object with shadow"
-msgstr ""
+msgstr "ছায়াযুক্ত অবজেক্ট"
 
 #: core/glob.src#STR_POOLSHEET_OBJWITHOUTFILL.STRING.TEXT
+#, fuzzy
 msgid  "Object without fill"
-msgstr ""
+msgstr "পূরণ ব্যতিত অবজেক্ট"
 
 #: core/glob.src#STR_POOLSHEET_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "পাঠ"
 
 #: core/glob.src#STR_POOLSHEET_TEXTBODY.STRING.TEXT
+#, fuzzy
 msgid  "Text body"
-msgstr ""
+msgstr "মূল পাঠ"
 
 #: core/glob.src#STR_POOLSHEET_TEXTBODY_JUSTIFY.STRING.TEXT
+#, fuzzy
 msgid  "Text body justified"
-msgstr ""
+msgstr "মূল পাঠ প্রান্তিককৃত"
 
 #: core/glob.src#STR_POOLSHEET_TEXTBODY_INDENT.STRING.TEXT
+#, fuzzy
 msgid  "First line indent"
-msgstr ""
-
-#: core/glob.src#STR_POOLSHEET_TITLE.STRING.TEXT
-msgid  "Title"
-msgstr ""
+msgstr "প্রথম লাইন ইন্ডেন্ট করুন"
 
 #: core/glob.src#STR_POOLSHEET_TITLE1.STRING.TEXT
+#, fuzzy
 msgid  "Title1"
-msgstr ""
+msgstr "শিরোনাম ১"
 
 #: core/glob.src#STR_POOLSHEET_TITLE2.STRING.TEXT
+#, fuzzy
 msgid  "Title2"
-msgstr ""
+msgstr "শিরোনাম ২"
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE.STRING.TEXT
+#, fuzzy
 msgid  "Heading"
-msgstr ""
+msgstr "শিরোনাম"
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE1.STRING.TEXT
+#, fuzzy
 msgid  "Heading1"
-msgstr ""
+msgstr "শিরোনাম১"
 
 #: core/glob.src#STR_POOLSHEET_HEADLINE2.STRING.TEXT
+#, fuzzy
 msgid  "Heading2"
-msgstr ""
+msgstr "শিরোনাম২"
 
 #: core/glob.src#STR_EMPTY_STYLESHEET_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Blank template"
-msgstr ""
-
-#: core/glob.src#STR_PSEUDOSHEET_TITLE.STRING.TEXT
-msgid  "Title"
-msgstr ""
+msgstr "ফাঁকা খসড়া"
 
 #: core/glob.src#STR_PSEUDOSHEET_SUBTITLE.STRING.TEXT
+#, fuzzy
 msgid  "Subtitle"
-msgstr ""
+msgstr "উপ-শিরোনাম"
 
 #: core/glob.src#STR_PSEUDOSHEET_OUTLINE.STRING.TEXT
+#, fuzzy
 msgid  "Outline"
-msgstr ""
-
-#: core/glob.src#STR_PSEUDOSHEET_BACKGROUNDOBJECTS.STRING.TEXT
-msgid  "Background objects"
-msgstr ""
-
-#: core/glob.src#STR_PSEUDOSHEET_BACKGROUND.STRING.TEXT
-msgid  "Background"
-msgstr ""
+msgstr "রূপরেখা"
 
 #: core/glob.src#STR_PSEUDOSHEET_NOTES.STRING.TEXT
+#, fuzzy
 msgid  "Notes"
-msgstr ""
+msgstr "নোটসমূহ"
 
 #: core/glob.src#STR_GRAFOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Graphics mode"
-msgstr ""
+msgstr "নকশার পরিমন্ডল"
 
 #: core/glob.src#STR_MEDIAOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Media Playback"
-msgstr ""
+msgstr "মিডিযা প্লেব্যাক"
 
 #: core/glob.src#STR_TABLEOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "সারণী"
 
 #: core/glob.src#STR_POWERPOINT_IMPORT.STRING.TEXT
+#, fuzzy
 msgid  "PowerPoint Import"
-msgstr ""
+msgstr "PowerPoint আমদানি করুন"
 
 #: core/glob.src#STR_POOLSHEET_ARROW.STRING.TEXT
+#, fuzzy
 msgid  "Arrow"
-msgstr ""
+msgstr "তীরচিহ্ন"
 
 #: core/glob.src#STR_LOAD_DOC.STRING.TEXT
+#, fuzzy
 msgid  "Load Document"
-msgstr ""
+msgstr "নথি লোড করুন"
 
 #: core/glob.src#STR_SAVE_DOC.STRING.TEXT
+#, fuzzy
 msgid  "Save Document"
-msgstr ""
+msgstr "নথি সংরক্ষণ করুন "
 
 #: core/glob.src#RID_SD_ERRHDL.ERR_CODE_(_ERRCODE_CLASS_READ_,_ERR_FORMAT_ROWCOL_).STRING.TEXT
+#, fuzzy
 msgid  "File format error found at $(ARG1)(row,col)."
-msgstr ""
+msgstr "$(ARG1)(row,col) এ ফাইল বিন্যাস ত্রুটি খুঁজে পাওয়া গেছে।"
 
 #: core/glob.src#RID_SD_ERRHDL.ERR_CODE_(_ERRCODE_CLASS_READ_,_ERR_FORMAT_FILE_ROWCOL_).STRING.TEXT
+#, fuzzy
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
-
-#: core/glob.src#RID_SD_ERRHDL.ERR_CODE_(_ERRCODE_CLASS_READ_,_WARN_FORMAT_FILE_ROWCOL_).STRING.TEXT
-msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "ফাইলের $(ARG1) উপ-নথির $(ARG2)(row,col) অবস্থানে বিন্যাস ত্রুটি আবিষ্কার করা হয়েছে।"
 
 #: core/glob.src#STR_3DOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "3-D Settings"
-msgstr ""
+msgstr "ত্রিমাত্রিক বিন্যাসনসমূহ"
 
 #: core/glob.src#STR_FONTWORKOBJECTBARSHELL.STRING.TEXT
+#, fuzzy
 msgid  "Fontwork"
-msgstr ""
+msgstr "ফন্টওয়ার্ক"
 
 #: core/glob.src#STR_POOLSHEET_BANDED_CELL.STRING.TEXT
+#, fuzzy
 msgid  "Banding cell"
-msgstr ""
+msgstr "আবদ্ধ কক্ষ"
 
 #: core/glob.src#STR_POOLSHEET_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Header"
-msgstr ""
+msgstr "প্রান্তটিকা"
 
 #: core/glob.src#STR_POOLSHEET_TOTAL.STRING.TEXT
+#, fuzzy
 msgid  "Total line"
-msgstr ""
+msgstr "মোট রেখা"
 
 #: core/glob.src#STR_POOLSHEET_FIRST_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "First column"
-msgstr ""
+msgstr "প্রথম স্তম্ভ"
 
 #: core/glob.src#STR_POOLSHEET_LAST_COLUMN.STRING.TEXT
+#, fuzzy
 msgid  "Last column"
-msgstr ""
+msgstr "শেষ স্তম্ভ"

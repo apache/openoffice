@@ -33,379 +33,351 @@ msgstr ""
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.STRING.TEXT
 msgid  "Title"
-msgstr ""
+msgstr "ခေါင်းစဉ်"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.STRING.TEXT
 msgid  "Size"
-msgstr ""
+msgstr "အရွယ်အစား"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.STRING.TEXT
 msgid  "Date modified"
-msgstr ""
+msgstr "အချက်အလက်များအထူးပြုခြင်း"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.STRING.TEXT
 msgid  "Type"
-msgstr ""
+msgstr "အမျိုးအစား"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.STRING.TEXT
 msgid  "Could not create the folder %1."
-msgstr ""
+msgstr "ဖိုင်တွဲ %၁ ကိုမဖန်တီးနိုင်ပါ။"
 
 #: contnr/fileview.src#STR_SVT_BYTES.STRING.TEXT
 msgid  "Bytes"
-msgstr ""
+msgstr "ဘိုက်များ"
 
 #: contnr/fileview.src#STR_SVT_KB.STRING.TEXT
 msgid  "KB"
-msgstr ""
+msgstr "ကီလိုဘိုက်"
 
 #: contnr/fileview.src#STR_SVT_MB.STRING.TEXT
 msgid  "MB"
-msgstr ""
+msgstr "မီကာဘိုက်"
 
 #: contnr/fileview.src#STR_SVT_GB.STRING.TEXT
 msgid  "GB"
-msgstr ""
+msgstr "ဂစ်ဂါဘိုက်"
 
 #: contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.MENUITEM.TEXT
 msgid  "~Delete"
-msgstr ""
+msgstr "~ဖျက်ပါ"
 
 #: contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.MENUITEM.TEXT
 msgid  "~Rename"
-msgstr ""
+msgstr "~အမည်ပြန်ပေးပါ"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.MODALDIALOG.TEXT
 msgid  "Confirm Delete"
-msgstr ""
+msgstr "ဖျက်ခြင်းကိုအတည်ပြုပါ"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_ENTRY.FIXEDTEXT.TEXT
 msgid  "Entry:"
-msgstr ""
+msgstr "အဝင်-"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.FIXEDTEXT.TEXT
 msgid  "Are you sure you want to delete the selected data?"
-msgstr ""
-
-#: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr ""
+msgstr "ရွေးချယ်ထားသည့် အချက်အလက်များကိုဖျက်ရန် ဆန္ဒရှိပါသလား?"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.PUSHBUTTON.TEXT
 msgid  "Delete ~All"
-msgstr ""
+msgstr "အားလုံး ဖျက်ပါ"
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_NO.PUSHBUTTON.TEXT
 msgid  "Do ~Not Delete"
-msgstr ""
+msgstr "မဖျက်ပါနှင့်"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_TABLISTBOX.STRING.TEXT
 msgid  "Row: %1, Column: %2"
-msgstr ""
+msgstr "အတန်း %၁၊ ကော်လံ %၂"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FILEVIEW.STRING.TEXT
 msgid  ", Type: %1, URL: %2"
-msgstr ""
+msgstr ", အမျိုးအစာ: %၁, URL: %၂"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FOLDER.STRING.TEXT
 msgid  "Folder"
-msgstr ""
+msgstr "ဖိုင်တွဲ"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FILE.STRING.TEXT
 msgid  "File"
-msgstr ""
+msgstr "ဖိုင်"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_EMPTY_FIELD.STRING.TEXT
 msgid  "Empty Field"
-msgstr ""
+msgstr "နေရာကွက်အလွတ်"
 
 #: contnr/templwin.src#STR_SVT_NEWDOC.STRING.TEXT
 msgid  "New Document"
-msgstr ""
+msgstr "မှတ်တမ်းမှတ်ရာအသစ်"
 
 #: contnr/templwin.src#STR_SVT_MYDOCS.STRING.TEXT
 msgid  "My Documents"
-msgstr ""
+msgstr "ကျွန်ုပ်၏မှတ်တမ်းမှတ်ရာများ"
 
 #: contnr/templwin.src#STR_SVT_TEMPLATES.STRING.TEXT
 msgid  "Templates"
-msgstr ""
+msgstr "ပုံစံပြားများ"
 
 #: contnr/templwin.src#STR_SVT_SAMPLES.STRING.TEXT
 msgid  "Samples"
-msgstr ""
+msgstr "နမူနာများ"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_BACK.TOOLBOXITEM.TEXT
 msgid  "Back"
-msgstr ""
+msgstr "အနောက်"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PREV.TOOLBOXITEM.TEXT
 msgid  "Up One Level"
-msgstr ""
+msgstr "တစ်ဆင့်တက်"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PRINT.TOOLBOXITEM.TEXT
 msgid  "Print"
-msgstr ""
+msgstr "ပရင့်ထုတ်ပါ"
 
 #: contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_DOCINFO.TOOLBOXITEM.TEXT
 msgid  "Document Properties"
-msgstr ""
+msgstr "မှတ်တမ်းမှတ်ရာ ဂုဏ်သတ္တိများ"
 
 #: contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_PREVIEW.TOOLBOXITEM.TEXT
 msgid  "Preview"
-msgstr ""
+msgstr "အစမ်းကြည့်ပါ"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.MODALDIALOG.TEXT
 msgid  "Templates and Documents"
-msgstr ""
+msgstr "ပုံစံပြားများနှင့် မှတ်တမ်းမှတ်ရာများ"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.FT_DOCTEMPLATE_LINK.FIXEDTEXT.TEXT
 msgid  "~Get more templates online..."
-msgstr ""
+msgstr "~အွန်လိုင်းမှပုံစံပြားများရယူပါ"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_MANAGE.PUSHBUTTON.TEXT
 msgid  "Organi~ze..."
-msgstr ""
+msgstr "စီစဉ်ပါ"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_EDIT.PUSHBUTTON.TEXT
 msgid  "~Edit"
-msgstr ""
+msgstr "~တည်းဖြတ်ပါ"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_OPEN.OKBUTTON.TEXT
 msgid  "~Open"
-msgstr ""
+msgstr "~ဖွင့်ပါ"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_TITLE.ITEMLIST.ITEM
 msgid  "Title"
-msgstr ""
+msgstr "ခေါင်းစဉ်"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_FROM.ITEMLIST.ITEM
 msgid  "By"
-msgstr ""
+msgstr "အားဖြင့်"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DATE.ITEMLIST.ITEM
 msgid  "Date"
-msgstr ""
+msgstr "ရက်စွဲ"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_KEYWORDS.ITEMLIST.ITEM
 msgid  "Keywords"
-msgstr ""
+msgstr "အဓိကသော့ချက်စာလုံးများ"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DESCRIPTION.ITEMLIST.ITEM
 msgid  "Description"
-msgstr ""
+msgstr "ဖော်ပြချက်"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MIMETYPE.ITEMLIST.ITEM
 msgid  "Type"
-msgstr ""
+msgstr "အမျိုးအစား"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDDATE.ITEMLIST.ITEM
 msgid  "Modified on"
-msgstr ""
+msgstr "ပေါ်တွင်အထူးပြုထားသည်"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDBY.ITEMLIST.ITEM
 msgid  "Modified by"
-msgstr ""
+msgstr "အားဖြင့် အထူးပြုထားသည်"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTDATE.ITEMLIST.ITEM
 msgid  "Printed on"
-msgstr ""
+msgstr "ပေါ်တွင် ပရင့်ထုတ်ထားသည်"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTBY.ITEMLIST.ITEM
 msgid  "Printed by"
-msgstr ""
+msgstr "အားဖြင့် ပရင့်ထုတ်ထားသည်"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_THEME.ITEMLIST.ITEM
 msgid  "Subject"
-msgstr ""
+msgstr "အကြောင်းကိစ္စ"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_SIZE.ITEMLIST.ITEM
 msgid  "Size"
-msgstr ""
+msgstr "အရွယ်အစား"
 
 #: contnr/templwin.src#STR_SVT_NEWDOC_HELP.STRING.TEXT
 msgid  "Click here to create new documents."
-msgstr ""
+msgstr "မှတ်တမ်းမှတ်ရာအသစ်များ ဖန်တီးရန် ဤနေရာတွင် ကလစ်နှိပ်ပါ။"
 
 #: contnr/templwin.src#STR_SVT_MYDOCS_HELP.STRING.TEXT
 msgid  "Contains your letters, reports and other documents"
-msgstr ""
+msgstr "သင်၏စာများ၊ အစီရင်ခံစာများနှင့် အခြားမှတ်တမ်းမှတ်ရာများပါဝင်သည်"
 
 #: contnr/templwin.src#STR_SVT_TEMPLATES_HELP.STRING.TEXT
 msgid  "Contains templates for creating new documents"
-msgstr ""
+msgstr "မှတ်တမ်းမှတ်ရာအသစ်ဖန်တီးရန်အတွက် ပုံစံပြား ပါဝင်သည်"
 
 #: contnr/templwin.src#STR_SVT_SAMPLES_HELP.STRING.TEXT
 msgid  "Contains a selection of sample letters, reports and other documents"
-msgstr ""
+msgstr "လက်ရွေးစင်နမူနာစာများ၊ အစီရင်ခံစာများနှင့် အခြား မှတ်တမ်းမှတ်ရာများ ပါဝင်သည်"
 
 #: control/calendar.src#STR_SVT_CALENDAR_DAY.STRING.TEXT
 msgid  "Day"
-msgstr ""
+msgstr "နေ့"
 
 #: control/calendar.src#STR_SVT_CALENDAR_WEEK.STRING.TEXT
 msgid  "Week"
-msgstr ""
+msgstr "ရက်သတ္တပါတ်"
 
 #: control/calendar.src#STR_SVT_CALENDAR_TODAY.STRING.TEXT
 msgid  "Today"
-msgstr ""
+msgstr "ယနေ့"
 
 #: control/calendar.src#STR_SVT_CALENDAR_NONE.STRING.TEXT
 msgid  "None"
-msgstr ""
+msgstr "ဘာမျှမရှိပါ"
 
 #: control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.STRING.TEXT
 msgid  "Automatic"
-msgstr ""
+msgstr "အလိုအလျောက်"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.STRING.TEXT
 msgid  "Alphanumeric"
-msgstr ""
+msgstr "အက္ခရာနံပါတ်စဉ်"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_NORMAL.STRING.TEXT
 msgid  "Normal"
-msgstr ""
+msgstr "သာမာန်"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_CHARSET.STRING.TEXT
 msgid  "Character set"
-msgstr ""
+msgstr "အက္ခရာအစု"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.STRING.TEXT
 msgid  "Dictionary"
-msgstr ""
+msgstr "စာလုံးပေါင်းသတ်ပုံကျမ်း"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PINYIN.STRING.TEXT
 msgid  "Pinyin"
-msgstr ""
+msgstr "Pinyin"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_STROKE.STRING.TEXT
 msgid  "Stroke"
-msgstr ""
+msgstr "မျဉ်းကြောင်း"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_RADICAL.STRING.TEXT
 msgid  "Radical"
-msgstr ""
+msgstr "အခြေခံကျသော"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_UNICODE.STRING.TEXT
 msgid  "Unicode"
-msgstr ""
+msgstr "ယူနီကုတ်"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.STRING.TEXT
 msgid  "Zhuyin"
-msgstr ""
+msgstr "Zhuyin"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONEBOOK.STRING.TEXT
 msgid  "Phone book"
-msgstr ""
+msgstr "ဖုန်းစာအုပ်"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_F.STRING.TEXT
 msgid  "Phonetic (alphanumeric first)"
-msgstr ""
+msgstr "အသံထွက်သင်္ကေတ(ပထမဆုံးအက္ခရာနံပါတ်စဉ်)"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.STRING.TEXT
 msgid  "Phonetic (alphanumeric last)"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.STRING.TEXT
-msgid  "Alphanumeric"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.STRING.TEXT
-msgid  "Dictionary"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.STRING.TEXT
-msgid  "Pinyin"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.STRING.TEXT
-msgid  "Radical"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.STRING.TEXT
-msgid  "Stroke"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.STRING.TEXT
-msgid  "Zhuyin"
-msgstr ""
+msgstr "အသံထွက်သင်္ကေတ(ပထမဆုံးအက္ခရာနံပါတ်စဉ်)"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.STRING.TEXT
 msgid  "Phonetic (alphanumeric first, grouped by syllables)"
-msgstr ""
+msgstr "အသံထွက်သင်္ကေတ(အသံထွက်စာလုံးအားဖြင့်ပထမဆုံးအက္ခရာနံပါတ်စဉ်၊အုပ်စုဖွဲ့သည်)"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FC.STRING.TEXT
 msgid  "Phonetic (alphanumeric first, grouped by consonants)"
-msgstr ""
+msgstr "အသံထွက်သင်္ကေတ(ဗျည်းအက္ခရာများအားဖြင့်ပထမဆုံးအက္ခရာနံပါတ်စဉ်၊အုပ်စုဖွဲ့သည်)"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LS.STRING.TEXT
 msgid  "Phonetic (alphanumeric last, grouped by syllables)"
-msgstr ""
+msgstr "အသံထွက်သင်္ကေတ(အသံထွက်စာလုံးအားဖြင့်နောက်ဆုံးအက္ခရာနံပါတ်စဉ်၊အုပ်စုဖွဲ့သည်)"
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LC.STRING.TEXT
 msgid  "Phonetic (alphanumeric last, grouped by consonants)"
-msgstr ""
+msgstr "အသံထွက်သင်္ကေတ(ဗျည်းအက္ခရာများအားဖြင့်နောက်ဆုံးအက္ခရာနံပါတ်စဉ်၊အုပ်စုဖွဲ့သည်)"
 
 #: control/ctrltool.src#STR_SVT_STYLE_LIGHT.STRING.TEXT
 msgid  "Light"
-msgstr ""
+msgstr "အလင်း"
 
 #: control/ctrltool.src#STR_SVT_STYLE_LIGHT_ITALIC.STRING.TEXT
 msgid  "Light Italic"
-msgstr ""
+msgstr "လင်းသော စာလုံးစောင်း"
 
 #: control/ctrltool.src#STR_SVT_STYLE_NORMAL.STRING.TEXT
 msgid  "Regular"
-msgstr ""
+msgstr "ပုံမှန်"
 
 #: control/ctrltool.src#STR_SVT_STYLE_NORMAL_ITALIC.STRING.TEXT
 msgid  "Italic"
-msgstr ""
+msgstr "စာလုံးစောင်း"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BOLD.STRING.TEXT
 msgid  "Bold"
-msgstr ""
+msgstr "စာလုံးမဲ"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BOLD_ITALIC.STRING.TEXT
 msgid  "Bold Italic"
-msgstr ""
+msgstr "စာလုံးစောင်းအမဲ"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BLACK.STRING.TEXT
 msgid  "Black"
-msgstr ""
+msgstr "အနက်ရောင်"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BLACK_ITALIC.STRING.TEXT
 msgid  "Black Italic"
-msgstr ""
+msgstr "အနက်ရောင်စာလုံးစောင်း"
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_BOTH.STRING.TEXT
 msgid  "The same font will be used on both your printer and your screen."
-msgstr ""
+msgstr "သင့်ပရင်တာနှင့်ကွန်ပျူတာတွင်တူညီသောစာလုံးသုံးရလိမ့်မည်။"
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_PRINTERONLY.STRING.TEXT
 msgid  "This is a printer font. The screen image may differ."
-msgstr ""
+msgstr "ဤစာလုံးသည်ပရင်တာစာလုံးတစ်ခုဖြစ်သည်။ဖန်သားမျက်နှာပြင်တွင် ပေါ်လာသောပုံရိပ်နှင့်ခြားနားလိမ့်မည်။"
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_SCREENONLY.STRING.TEXT
 msgid  "This is a screen font. The printer image may differ."
-msgstr ""
+msgstr "ဤစာလုံးသည်ပရင်တာစာလုံးတစ်ခုဖြစ်သည်။ ဖန်သားမျက်နှာပြင်တွင် ပေါ်လာသောပုံရိပ်နှင့်ခြားနားလိမ့်မည်။"
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.STRING.TEXT
 msgid  "This font size has not been installed. The closest available size will be used."
-msgstr ""
+msgstr "ဤစာလုံး‌အရွယ်အစားကိုမထည့်သွင်းနိုင်ပါ။ အနီးစပ်ဆုံးစာလုံးကိုအသုံးပြုရလိမ့်မည်။"
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.STRING.TEXT
 msgid  "This font style will be simulated or the closest matching style will be used."
-msgstr ""
+msgstr "ဤစာလုံးပုံစံဖြစ်ဟန်ရှိသည်(သို့)အနီးစပ်ဆုံးကိုက်ညီမှုရှိသည့်ပုံစံကိုသုံးလိမ့်မည်။"
 
 #: control/ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.STRING.TEXT
 msgid  "This font has not been installed. The closest available font will be used."
-msgstr ""
+msgstr "ဤစာလုံး‌မထည့်သွင်းနိုင်ပါ။အနီးစပ်ဆုံးစာလုံးကိုအသုံးပြုရလိမ့်မည်။"
 
 #: control/filectrl.src#STR_FILECTRL_BUTTONTEXT.STRING.TEXT
 msgid  "Browse..."
-msgstr ""
+msgstr "ဝင်ရောက်ကြည့်ရှုရှာဖွေရန်နေရာ.."
 
 #: control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVET0HOME.STRING.TEXT
 msgid  "Move To Home"
@@ -424,872 +396,1052 @@ msgid  "Move To End"
 msgstr ""
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Templates: Address Book Assignment"
-msgstr ""
+msgstr "ပုံစံပြားများ-လိပ်စာစာအုပ်နေရာချထားခြင်း"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Address Book Source"
-msgstr ""
+msgstr "လိပ်စာစာအုပ်မူရင်း"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Data source"
-msgstr ""
+msgstr "အချက်အလက်မူရင်း"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Address Data Source..."
-msgstr ""
+msgstr "~လိပ်စာအချက်အလက်များမူရင်း"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "ဇယား"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Field assignment"
-msgstr ""
+msgstr "နေရာကွက်သတ်မှတ်ခြင်း"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
-msgstr ""
+msgstr "<ဘာမျှမရှိပါ>"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.STRING.TEXT
+#, fuzzy
 msgid  "Company"
-msgstr ""
+msgstr "ကုမ္ပဏီ"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.STRING.TEXT
+#, fuzzy
 msgid  "Department"
-msgstr ""
+msgstr "ဌာန"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.STRING.TEXT
+#, fuzzy
 msgid  "First name"
-msgstr ""
+msgstr "ပထမဆုံးအမည်"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.STRING.TEXT
+#, fuzzy
 msgid  "Last name"
-msgstr ""
+msgstr "နောက်ဆုံးအမည်"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.STRING.TEXT
+#, fuzzy
 msgid  "Street"
-msgstr ""
+msgstr "လမ်း"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.STRING.TEXT
+#, fuzzy
 msgid  "Country"
-msgstr ""
+msgstr "နိုင်ငံ"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.STRING.TEXT
+#, fuzzy
 msgid  "ZIP Code"
-msgstr ""
+msgstr "စာပို့သင်္ကေတ"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.STRING.TEXT
+#, fuzzy
 msgid  "City"
-msgstr ""
+msgstr "မြို့"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Title"
-msgstr ""
+msgstr "ခေါင်းစဉ်"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.STRING.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr "တည်နေရာ"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.STRING.TEXT
+#, fuzzy
 msgid  "Addr. Form"
-msgstr ""
+msgstr "Addr. ပုံစံ"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.STRING.TEXT
+#, fuzzy
 msgid  "Initials"
-msgstr ""
+msgstr "လက်မှတ်တိုများ"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.STRING.TEXT
+#, fuzzy
 msgid  "Complimentary close"
-msgstr ""
+msgstr "အပိတ်နှုတ်ဆက်စကား"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.STRING.TEXT
+#, fuzzy
 msgid  "Tel: Home"
-msgstr ""
+msgstr "တယ်လီဖုန်း-အိမ်"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.STRING.TEXT
+#, fuzzy
 msgid  "Tel: Work"
-msgstr ""
+msgstr "တယ်လီဖုန်း-အလုပ်"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.STRING.TEXT
+#, fuzzy
 msgid  "FAX"
-msgstr ""
+msgstr "ဖက်စ်"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.STRING.TEXT
+#, fuzzy
 msgid  "E-mail"
-msgstr ""
+msgstr "အီးမေးလ်"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.STRING.TEXT
+#, fuzzy
 msgid  "URL"
-msgstr ""
+msgstr "URL"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.STRING.TEXT
+#, fuzzy
 msgid  "Note"
-msgstr ""
+msgstr "မှတ်ချက်"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.STRING.TEXT
+#, fuzzy
 msgid  "User 1"
-msgstr ""
+msgstr "အသုံးပြုသူ ၁"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.STRING.TEXT
+#, fuzzy
 msgid  "User 2"
-msgstr ""
+msgstr "အသုံးပြုသူ ၂"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.STRING.TEXT
+#, fuzzy
 msgid  "User 3"
-msgstr ""
+msgstr "အသုံးပြုသူ ၃"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.STRING.TEXT
+#, fuzzy
 msgid  "User 4"
-msgstr ""
+msgstr "အသုံးပြုသူ ၄"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.STRING.TEXT
+#, fuzzy
 msgid  "ID"
-msgstr ""
+msgstr "ID"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.STRING.TEXT
+#, fuzzy
 msgid  "State"
-msgstr ""
+msgstr "ပြည်နယ်"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.STRING.TEXT
+#, fuzzy
 msgid  "Tel: Office"
-msgstr ""
+msgstr "တယ်လီဖုန်း-ရုံး"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.STRING.TEXT
+#, fuzzy
 msgid  "Pager"
-msgstr ""
+msgstr "ပေဂျာ"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.STRING.TEXT
+#, fuzzy
 msgid  "Mobile"
-msgstr ""
+msgstr "မိုဘိုင်း"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.STRING.TEXT
+#, fuzzy
 msgid  "Tel: Other"
-msgstr ""
+msgstr "တယ်လီဖုန်း-အခြား"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.STRING.TEXT
+#, fuzzy
 msgid  "Calendar"
-msgstr ""
+msgstr "ပြက္ခဒိန်"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.STRING.TEXT
+#, fuzzy
 msgid  "Invite"
-msgstr ""
+msgstr "ဖိတ်ခေါ်သည်"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_SELECT.STRING.TEXT
+#, fuzzy
 msgid  "Select Directory"
-msgstr ""
+msgstr "ဒိုင်ယာထရီရွေးချယ်ပါ"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.STRING.TEXT
+#, fuzzy
 msgid  "Cannot change to directory"
-msgstr ""
+msgstr "ဒိုင်ယာထရီမပြောင်းနိုင်ပါ"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_OPEN.STRING.TEXT
+#, fuzzy
 msgid  "Open"
-msgstr ""
+msgstr "ဖွင့်ပါ"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_FILE.STRING.TEXT
+#, fuzzy
 msgid  "~File"
-msgstr ""
+msgstr "~ဖိုင်"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_DIR.STRING.TEXT
+#, fuzzy
 msgid  "~Directory"
-msgstr ""
+msgstr "~ဒိုင်ယာထရီ"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "File ~type"
-msgstr ""
+msgstr "ဖိုင်အမျိုးအစား"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.STRING.TEXT
+#, fuzzy
 msgid  "Can't open file"
-msgstr ""
+msgstr "ဖိုင်မဖွင့်နိုင်ပါ"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.STRING.TEXT
+#, fuzzy
 msgid  "Can't open directory"
-msgstr ""
+msgstr "ဒိုင်ယာထရီမဖွင့်နိုင်ပါ"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.STRING.TEXT
+#, fuzzy
 msgid  "This file already exists. \nOverwrite ?"
-msgstr ""
+msgstr "ဤဖိုင်အဆင်သင့်တည်ရှိသည်။ \nအဟောင်းကိုဖျက်ပြီးအသစ်ဖြင့်အစားထိုးလိုပါသလား"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_GOUP.STRING.TEXT
+#, fuzzy
 msgid  "Up One Level"
-msgstr ""
+msgstr "တစ်ဆင့်တက်"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "Save"
-msgstr ""
+msgstr "သိမ်းပါ"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_DRIVES.STRING.TEXT
+#, fuzzy
 msgid  "D~rive"
-msgstr ""
+msgstr "ဒရိုက်"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_HOME.STRING.TEXT
+#, fuzzy
 msgid  "User Directory"
-msgstr ""
+msgstr "ဒိုင်ယာထရီအသုံးပြုသူ"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.STRING.TEXT
+#, fuzzy
 msgid  "Create Directory"
-msgstr ""
+msgstr "ဒိုင်ယာထရီဖန်တီးပါ"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.STRING.TEXT
+#, fuzzy
 msgid  "Do you want the directory %s to be created ?"
-msgstr ""
+msgstr "ဒိုင်ယာထရီ %s ကိုဖန်တီးလိုပါသလား ?"
 
 #: dialogs/formats.src#STR_FORMAT_STRING.STRING.TEXT
+#, fuzzy
 msgid  "Unformatted text"
-msgstr ""
+msgstr "စီစဉ်ဖွဲ့စည်းမှုပုံစံမရှိသောစာသား"
 
 #: dialogs/formats.src#STR_FORMAT_BITMAP.STRING.TEXT
+#, fuzzy
 msgid  "Bitmap"
-msgstr ""
+msgstr "ပုံရိပ်"
 
 #: dialogs/formats.src#STR_FORMAT_GDIMETAFILE.STRING.TEXT
+#, fuzzy
 msgid  "GDI metafile"
-msgstr ""
+msgstr "GDI မီတာဖိုင်"
 
 #: dialogs/formats.src#STR_FORMAT_RTF.STRING.TEXT
+#, fuzzy
 msgid  "Formatted text [RTF]"
-msgstr ""
+msgstr "စီစဉ်ဖွဲ့စည်းပြီးပုံစံစာသား[RTF]"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DRAWING.STRING.TEXT
+#, fuzzy
 msgid  "Drawing format"
-msgstr ""
+msgstr "ပုံရေးဆွဲခြင်းစီစဉ်ဖွဲ့စည်းမှုပုံစံ"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SVXB.STRING.TEXT
+#, fuzzy
 msgid  "SVXB (StarView bitmap/animation)"
-msgstr ""
+msgstr "SVXB (StarView ပုံရိပ် /ပုံရိပ်လှုပ်ရှားမှု)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.STRING.TEXT
+#, fuzzy
 msgid  "Status Info from Svx Internal Link"
-msgstr ""
+msgstr "Svxအတွင်းပိုင်းချိတ်ဆက်မှုမှသတင်းအချက်အလက်အခြေအနေ"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SOLK.STRING.TEXT
+#, fuzzy
 msgid  "SOLK (%PRODUCTNAME Link)"
-msgstr ""
+msgstr "SOLK (%PRODUCTNAME ချိတ်ဆက်မှု)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.STRING.TEXT
+#, fuzzy
 msgid  "Netscape Bookmark"
-msgstr ""
+msgstr "Netscape စာညှပ်"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARSERVER.STRING.TEXT
+#, fuzzy
 msgid  "Star server format"
-msgstr ""
+msgstr "ကြယ်ပုံစံဆာဗာချိတ်ဆက်ခြင်းစီစဉ်ဖွဲ့စည်းမှုပုံစံ"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Star object format"
-msgstr ""
+msgstr "ကြယ်အရာဝတ္ထုစီစဉ်ဖွဲ့စည်းမှုပုံစံ"
 
 #: dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Applet object"
-msgstr ""
+msgstr "Applet အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Plug-in object"
-msgstr ""
+msgstr "အရာဝတ္ထုထည့်သွင်းခြင်း"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.STRING.TEXT
+#, fuzzy
 msgid  "StarWriter 3.0 object"
-msgstr ""
+msgstr "StarWriter 3.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.STRING.TEXT
+#, fuzzy
 msgid  "StarWriter 4.0 object"
-msgstr ""
+msgstr "StarWriter 4.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.STRING.TEXT
+#, fuzzy
 msgid  "StarWriter 5.0 object"
-msgstr ""
+msgstr "StarWriter 5.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.STRING.TEXT
+#, fuzzy
 msgid  "StarWriter/Web 4.0 object"
-msgstr ""
+msgstr "StarWriter/Web 4.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.STRING.TEXT
+#, fuzzy
 msgid  "StarWriter/Web 5.0 object"
-msgstr ""
+msgstr "StarWriter/Web 5.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.STRING.TEXT
+#, fuzzy
 msgid  "StarWriter/Master 4.0 object"
-msgstr ""
+msgstr "StarWriter/Master 4.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.STRING.TEXT
+#, fuzzy
 msgid  "StarWriter/Master 5.0 object"
-msgstr ""
+msgstr "StarWriter/Master 5.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW.STRING.TEXT
+#, fuzzy
 msgid  "StarDraw object"
-msgstr ""
+msgstr "StarDraw အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.STRING.TEXT
+#, fuzzy
 msgid  "StarDraw 4.0 object"
-msgstr ""
+msgstr "StarDraw 4.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.STRING.TEXT
+#, fuzzy
 msgid  "StarImpress 5.0 object"
-msgstr ""
+msgstr "StarImpress 5.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.STRING.TEXT
+#, fuzzy
 msgid  "StarDraw 5.0 object"
-msgstr ""
+msgstr "StarDraw 5.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC.STRING.TEXT
+#, fuzzy
 msgid  "StarCalc object"
-msgstr ""
+msgstr "StarCalc အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.STRING.TEXT
+#, fuzzy
 msgid  "StarCalc  4.0 object"
-msgstr ""
+msgstr "StarCalc  4.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.STRING.TEXT
+#, fuzzy
 msgid  "StarCalc 5.0 object"
-msgstr ""
+msgstr "StarCalc 5.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART.STRING.TEXT
+#, fuzzy
 msgid  "StarChart object"
-msgstr ""
+msgstr "StarChart အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.STRING.TEXT
+#, fuzzy
 msgid  "StarChart 4.0 object"
-msgstr ""
+msgstr "StarChart 4.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.STRING.TEXT
+#, fuzzy
 msgid  "StarChart 5.0 object"
-msgstr ""
+msgstr "StarChart 5.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.STRING.TEXT
+#, fuzzy
 msgid  "StarImage object"
-msgstr ""
+msgstr "StarImage အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.STRING.TEXT
+#, fuzzy
 msgid  "StarImage 4.0 object"
-msgstr ""
+msgstr "StarImage 4.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.STRING.TEXT
+#, fuzzy
 msgid  "StarImage 5.0 object"
-msgstr ""
+msgstr "StarImage 5.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH.STRING.TEXT
+#, fuzzy
 msgid  "StarMath object"
-msgstr ""
+msgstr "StarMath အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.STRING.TEXT
+#, fuzzy
 msgid  "StarMath 4.0 object"
-msgstr ""
+msgstr "StarMath 4.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.STRING.TEXT
+#, fuzzy
 msgid  "StarMath 5.0 object"
-msgstr ""
+msgstr "StarMath 5.0 အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.STRING.TEXT
+#, fuzzy
 msgid  "StarObject Paint object"
-msgstr ""
+msgstr "StarObject Paint အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_HTML.STRING.TEXT
+#, fuzzy
 msgid  "HTML (HyperText Markup Language)"
-msgstr ""
+msgstr "HTML (HyperText Markup Language)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.STRING.TEXT
+#, fuzzy
 msgid  "HTML format"
-msgstr ""
+msgstr "HTML စီစဉ်ဖွဲ့စည်းမှုပုံစံ"
 
 #: dialogs/formats.src#STR_FORMAT_ID_BIFF_5.STRING.TEXT
+#, fuzzy
 msgid  "Biff5 (Microsoft Excel 5.0/95)"
-msgstr ""
+msgstr "Biff5 (Microsoft Excel 5.0/95)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_BIFF_8.STRING.TEXT
+#, fuzzy
 msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
-msgstr ""
+msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SYLK.STRING.TEXT
+#, fuzzy
 msgid  "Sylk"
-msgstr ""
+msgstr "Sylk"
 
 #: dialogs/formats.src#STR_FORMAT_ID_LINK.STRING.TEXT
+#, fuzzy
 msgid  "DDE link"
-msgstr ""
+msgstr "DDEချိတ်ဆက်မှု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DIF.STRING.TEXT
+#, fuzzy
 msgid  "DIF"
-msgstr ""
+msgstr "DIF"
 
 #: dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.STRING.TEXT
+#, fuzzy
 msgid  "Microsoft Word object"
-msgstr ""
+msgstr "Microsoft Word အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.STRING.TEXT
+#, fuzzy
 msgid  "StarFrameSet object"
-msgstr ""
+msgstr "StarFrameSet အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.STRING.TEXT
+#, fuzzy
 msgid  "Office document object"
-msgstr ""
+msgstr "ရုံး၊ဌာနဆိုင်ရာမှတ်တမ်းမှတ်ရာ"
 
 #: dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.STRING.TEXT
+#, fuzzy
 msgid  "Notes document info"
-msgstr ""
+msgstr "သတင်းအချက်အလက်မှတ်တမ်းမှတ်ရာမှတ်စုများ"
 
 #: dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.STRING.TEXT
+#, fuzzy
 msgid  "Sfx document"
-msgstr ""
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.STRING.TEXT
-msgid  "StarChart 5.0 object"
-msgstr ""
+msgstr "Sfx မှတ်တမ်းမှတ်ရာ"
 
 #: dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.STRING.TEXT
+#, fuzzy
 msgid  "Graphic object"
-msgstr ""
+msgstr "ပန်းချီဒီဇိုင်းအရာဝတ္ထု "
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION အရာဝတ္ထု ရေးသူ"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION ရေးသူ /ကွန်ရက်အရာဝတ္ထု "
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION ရေးသူ/ပင်မအရာဝတ္ထု "
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION အရာဝတ္ထု ရေးဆွဲခြင်း"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION အရာဝတ္ထု ခပ်နှိတ်ပါ"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION ပုံစံကားချပ်အရာ၀တ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION သင်္ချာ အရာဝတ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_WMF.STRING.TEXT
+#, fuzzy
 msgid  "Windows metafile"
-msgstr ""
+msgstr "ဝင်းဒိုးများ၏မီတာဖိုင်"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.STRING.TEXT
+#, fuzzy
 msgid  "Data source object"
-msgstr ""
+msgstr "အချက်အလက်မူရင်းအရာ၀တ္ထု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Data source table"
-msgstr ""
+msgstr "အချက်အလက်မူရင်းဇယား"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.STRING.TEXT
+#, fuzzy
 msgid  "SQL query"
-msgstr ""
+msgstr "SQL ကွာရီ"
 
 #: dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION ဒိုင်ယာလော့ဒ်"
 
 #: dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.STRING.TEXT
+#, fuzzy
 msgid  "Link"
-msgstr ""
+msgstr "ချိတ်ဆက်မှု"
 
 #: dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.STRING.TEXT
+#, fuzzy
 msgid  "HTML format without comments"
-msgstr ""
+msgstr "ထင်မြင်သုံးသပ်ချက်များ မပါသည့် HTML စီစဉ်ဖွဲ့စည်းမှုပုံစံ"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_READY.STRING.TEXT
 msgid  "Ready"
-msgstr ""
+msgstr "အဆင်သင့်"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAUSED.STRING.TEXT
 msgid  "Paused"
-msgstr ""
+msgstr "ခေတ္တရပ်နားသည်"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PENDING.STRING.TEXT
 msgid  "Pending deletion"
-msgstr ""
+msgstr "ပယ်ဖျက်ခြင်းမတိုင်မီအတောအတွင်း"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_BUSY.STRING.TEXT
 msgid  "Busy"
-msgstr ""
+msgstr "အလုပ်များသော"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_INITIALIZING.STRING.TEXT
 msgid  "Initializing"
-msgstr ""
+msgstr "အစပျိုးပြင်ဆင်သည်"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_WAITING.STRING.TEXT
 msgid  "Waiting"
-msgstr ""
+msgstr "စောင့်နေသည်"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_WARMING_UP.STRING.TEXT
 msgid  "Warming up"
-msgstr ""
+msgstr "နှိုးပေးထားပါ"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PROCESSING.STRING.TEXT
 msgid  "Processing"
-msgstr ""
+msgstr "လုပ်ဆောင်နေသည်"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PRINTING.STRING.TEXT
 msgid  "Printing"
-msgstr ""
+msgstr "ပရင့်ထုတ်သည်"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OFFLINE.STRING.TEXT
 msgid  "Offline"
-msgstr ""
+msgstr "ဆက်သွယ်မှုမရှိပါ"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_ERROR.STRING.TEXT
 msgid  "Error"
-msgstr ""
+msgstr "အမှား"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_SERVER_UNKNOWN.STRING.TEXT
 msgid  "Unknown Server"
-msgstr ""
+msgstr "မသိသောဆာဗာ"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_JAM.STRING.TEXT
 msgid  "Paper jam"
-msgstr ""
+msgstr "စာရွက်ညပ်သည်"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_OUT.STRING.TEXT
 msgid  "Not enough paper"
-msgstr ""
+msgstr "စာရွက်မလုံလောက်ပါ"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_MANUAL_FEED.STRING.TEXT
 msgid  "Manual feed"
-msgstr ""
+msgstr "လက်ဖြင့်ဖြည့်သွင်းရေးသားချက်"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_PROBLEM.STRING.TEXT
 msgid  "Paper problem"
-msgstr ""
+msgstr "စာရွက်ပြဿနာ"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_IO_ACTIVE.STRING.TEXT
 msgid  "I/O active"
-msgstr ""
+msgstr "I/O အလုပ်လုပ်နေသည်"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OUTPUT_BIN_FULL.STRING.TEXT
 msgid  "Output bin full"
-msgstr ""
+msgstr "အချက်အလက်များထုတ်သည့်အမှိုက်ပုံးပြည့်သည်"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_TONER_LOW.STRING.TEXT
 msgid  "Toner low"
-msgstr ""
+msgstr "တိုနာနည်းနေသည်"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_NO_TONER.STRING.TEXT
 msgid  "No toner"
-msgstr ""
+msgstr "တိုနာမရှိပါ"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_PAGE_PUNT.STRING.TEXT
 msgid  "Delete Page"
-msgstr ""
+msgstr "စာမျက်နှာဖျက်ပါ"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_USER_INTERVENTION.STRING.TEXT
 msgid  "User intervention necessary"
-msgstr ""
+msgstr "ကြားဝင်အသုံးပြုသူလိုအပ်သည်"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OUT_OF_MEMORY.STRING.TEXT
 msgid  "Insufficient memory"
-msgstr ""
+msgstr "မှတ်ဉာဏ်လုံလောက်မှုမရှိ"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_DOOR_OPEN.STRING.TEXT
 msgid  "Cover open"
-msgstr ""
+msgstr "အဖုံးဖွင့်ပါ"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_POWER_SAVE.STRING.TEXT
 msgid  "Power save mode"
-msgstr ""
+msgstr "သိမ်းဆည်းမှုနည်းလမ်း"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_DEFPRINTER.STRING.TEXT
 msgid  "Default printer"
-msgstr ""
+msgstr "နဂိုမူလပရင်တာ "
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_JOBCOUNT.STRING.TEXT
 msgid  "%d documents"
-msgstr ""
+msgstr "%d မှတ်တမ်းမှတ်ရာများ"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Printer Setup"
-msgstr ""
+msgstr "ပရင်တာစတင်အသုံးပြုရန်စီမံသည်"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FL_PRINTER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Printer"
-msgstr ""
+msgstr "ပရင်တာ"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "~အမည်"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_PROPERTIES.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Propert~ies..."
-msgstr ""
+msgstr "ဂုဏ်သတ္တိများ"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_STATUS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Status"
-msgstr ""
+msgstr "လက်ရှိအခြေအနေ"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_TYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "အမျိုအစား"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_LOCATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Location"
-msgstr ""
+msgstr "တည်နေရာ"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_COMMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comment"
-msgstr ""
+msgstr "ထင်မြင်သုံးသပ်ချက်"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_OPTIONS.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Options..."
-msgstr ""
+msgstr "~ရွေးပိုင်ခွင့်များ..."
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_GENERALERROR&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "General OLE error."
-msgstr ""
+msgstr "အထွေထွေ OLE အမှား"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANT_BINDTOSOURCE&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The connection to the object cannot be established."
-msgstr ""
+msgstr "အရာဝတ္ထုသို့ ချိတ်ဆက်တည်ဆောက်မှုမရှိပါ။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOCACHE_UPDATED&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "No cache files were updated."
-msgstr ""
+msgstr "ကက်ခ်ျဖိုင်များနောက်ဆုံးပေါ်အခြေအနေမရှိပါ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_SOMECACHES_NOTUPDATED&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Some cache files were not updated."
-msgstr ""
+msgstr "ကက်ခ်ျဖိုင်အချို့နောက်ဆုံးပေါ်အခြေအနေမရှိပါ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_UNAVAILABLE&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Status of object cannot be determined in a timely manner."
-msgstr ""
+msgstr "အချိန်အတိုင်းအတာတစ်ခုတွင် အရာဝတ္ထု၏အခြေအနေကို မဆုံးဖြတ်နိုင်ပါ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_E_CLASSDIFF&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Source of the OLE link has been converted."
-msgstr ""
+msgstr "OLE ချိတ်ဆက်မှုမူရင်းသို့ ကူးပြောင်းပြီးဖြစ်သည်"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_OBJECT&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The object could not be found."
-msgstr ""
+msgstr "အရာဝတ္ထု ရှာမတွေ့နိုင်ပါ။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_EXCEEDED_DEADLINE&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The process could not be completed within the specified time period."
-msgstr ""
+msgstr "သတ်မှတ်ထားသည့်အချိန်ကာလအတွင်းလုပ်ဆောင်ချက်များမပြည့်စုံပါ။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_MANUALLY&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "OLE could not connect to a network device (server)."
-msgstr ""
+msgstr "ကွန်ယက်ကိရိယာ(ဆာဗာ)သို့ OLE မချိတ်ဆက်နိုင်ပါ။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The object found does not support the interface required for the desired operation."
-msgstr ""
+msgstr "ဆန္ဒရှိသည့်လုပ်ဆောင်ချက်များပြုရန်အတွက်လိုအပ်သည့်ကြားခံတစ်ခုကိုအရာ၀တ္ထုမှ မထောက်ပံ့နိုင်ပါ။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Interface not supported."
-msgstr ""
+msgstr "ကြားခံဆက်သွယ်ပေးသည့်စနစ်အထောက်အကူမပြုပါ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OUT_OF_MEMORY&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Insufficient memory."
-msgstr ""
+msgstr "မှတ်ဉာဏ်လုံလောက်မှုမရှိ။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_SYNTAX&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The connection name could not be processed."
-msgstr ""
+msgstr "အချိတ်အဆက်အမည်မလုပ်ဆောင်နိုင်ပါ။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_REDUCED_TO_SELF&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The connection name could not be reduced further."
-msgstr ""
+msgstr "အချိတ်အဆက် အမည် ပို၍ မလျှော့ချနိုင်ပါ။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_INVERSE&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The connection name has no inverse."
-msgstr ""
+msgstr "ချိတ်ဆက်မှုအမည်ပြောင်းပြန်မဟုတ်ပါ။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_PREFIX&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "No common prefix exists."
-msgstr ""
+msgstr "ဘုံအသုံးပြုသောရှေ့ဆက်မတည်ရှိပါ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The connection name is contained in the other one."
-msgstr ""
+msgstr "ချိတ်ဆက်မှုအမည်တစ်ခုသည် အခြားအမည်တစ်ခုတွင် ပါဝင်နေသည်။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The connection names (the receiver and the other moniker) are identical."
-msgstr ""
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME&S_MAX.STRING.TEXT
-msgid  "The connection name is contained in the other one."
-msgstr ""
+msgstr "အချိတ်အဆက်အမည်များ(လက်ခံရှိသူနှင့်အခြားmoniker)ထပ်တူဖြစ်ကြသည်။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The connection name cannot be connected. This is a relative name."
-msgstr ""
+msgstr "ဤအမည်ဖြင့်ချိတ်ဆက်မှုမပြု နိုင်ပါ။ ဤအရာသည်နှီးနွယ်ဆက်စပ်လျက်ရှိသောအမည်တစ်ခုဖြစ်သည်။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_IMPLEMENTED&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Operation not implemented."
-msgstr ""
+msgstr "လုပ်ဆောင်မှုအထမမြောက်ပါ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_STORAGE&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "No storage."
-msgstr ""
+msgstr "မသိုလှောင်ပါ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_FALSE&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "False."
-msgstr ""
+msgstr "အမှား"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NEED_GENERIC&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Monikers must be composed generically."
-msgstr ""
+msgstr "Monikersကိုယေဘူယျအနေဖြင့်ရေးသားရလိမ့်မည်"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_PENDING&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Data not available at this time."
-msgstr ""
+msgstr "ဤအချိန်တွင်အချက်အလက်များအသုံးမပြု နိုင်ပါ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_INPLACEACTIVE_&_S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Object could not be activated InPlace."
-msgstr ""
+msgstr "နေရာတွင်အရာဝတ္ထုခလုတ်မဖွင့်နိုင်ပါ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_LINDEX_&_S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Invalid index."
-msgstr ""
+msgstr "မှားယွင်းသောညွှန်ကြားချက်"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANNOT_DOVERB_NOW_&_S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The action cannot be executed in the object's current state."
-msgstr ""
+msgstr "အရာ၀တ္ထု၏လက်ရှိအခြေအနေတွင် လုပ်ဆောင်ချက်များမပြု နိုင်ပါ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OLEOBJ_INVALIDHWND_&_S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "An invalid window was passed when activated."
-msgstr ""
+msgstr "မှားယွင်းသောဝင်းဒိုးတစ်ခုသည်လုပ်ဆောင်မှုများပြုသောအခါကျော်သွားသည်။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOVERBS_&_S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The object does not support any actions."
-msgstr ""
+msgstr "မည်သည့်လှုပ်ရှားမှုများကိုမဆိုအရာဝတ္ထုသည်မထောက်ပံ့ပါ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_INVALIDVERB_&_S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The action is not defined. The default action will be executed."
-msgstr ""
+msgstr "လုပ်ဆောင်ချက်သတ်မှတ်မထားပါ။ နဂိုမူလလုပ်ဆောင်ချက်သာ သက်ရောက်မှုရှိလိမ့်မည်။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_&_S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "A link to the network could not be re-established."
-msgstr ""
+msgstr "ကွန်ရက်စနစ်သို့ ပြန်လည်မချိတ်ဆက်နိုင်ပါ။"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOTIMPL_&_S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "Object does not support this action."
-msgstr ""
+msgstr "ဤလုပ်ဆောင်ချက်သည်အရာဝတ္ထုကိုမထောက်ပံ့ပါ"
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CANTOPENFILE_&_S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The specified file could not be opened."
-msgstr ""
+msgstr "သီးခြားပြဌာန်းထားသည့်ဖိုင်မဖွင့်နိုင်ပါ"
 
 #: dialogs/so3res.src#RID_SO_ERRCTX.ERRCTX_SO_DOVERB.STRING.TEXT
+#, fuzzy
 msgid  "$(ERR) activating object"
-msgstr ""
+msgstr "$(ERR) လုပ်ဆောင်မှုပြုနေသောအရာဝတ္ထု "
 
 #: dialogs/so3res.src#STR_INS_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Inserts a new %1-Object into your document."
-msgstr ""
+msgstr "သင့်မှတ်တမ်းမှတ်ရာအတွင်းသို့ အသစ် %၁ အရာဝတ္ထုကိုထပ်ထည့်သည်။"
 
 #: dialogs/so3res.src#STR_INS_OBJECT_ICON.STRING.TEXT
+#, fuzzy
 msgid  "Inserts a new %1-Object into your document as a symbol."
-msgstr ""
+msgstr "သင့်မှတ်တမ်းမှတ်ရာအတွင်းသို့ အသစ် %၁ အရာဝတ္ထုကို သင်္ကေတတစ်ခုအဖြစ် ထပ်ထည့်သည်။"
 
 #: dialogs/so3res.src#STR_INS_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Inserts the contents of the file into your document to enable later editing in the original application."
-msgstr ""
+msgstr "မူလအသုံးချပရိုဂရမ်ရှိ နောက်ပိုင်းပြင်ဆင်တည်းဖြတ်မှုများကို အသုံးပြုရန် သင့်မှတ်တမ်းမှတ်ရာအတွင်းသို့ ဖိုင်မာတိကာများ ထပ်ထည့်သည်။ "
 
 #: dialogs/so3res.src#STR_INS_PLUGIN.STRING.TEXT
+#, fuzzy
 msgid  "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
-msgstr ""
+msgstr "သင့်မှတ်တမ်းမှတ်ရာအတွင်းသို့ အချက်အလက်များရေးသွင်းသည့် ရည်ညွှန်းချက်များနှင့်အတူ အရာ၀တ္ထုထပ်ထည့်သည်။ အရာ၀တ္ထုလုပ်ဆောင်မှုပြုသောအခါ ပလပ်သွင်းမှု ကို အလိုအလျောက် လုပ်ဆောင်မှုပြုခဲ့သည်။ "
 
 #: dialogs/so3res.src#STR_INS_APPLET.STRING.TEXT
+#, fuzzy
 msgid  "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
-msgstr ""
+msgstr "သင့်မှတ်တမ်းမှတ်ရာအတွင်းသို့ appletအရာဝတ္ထုတစ်ခုထပ်ထည့်သည်။ အရာဝတ္ထုလုပ်ဆောင်မှုပြုသောအခါ applet မှ အလိုအလျောက်စီမံဆောင်ရွက်သည်။"
 
 #: dialogs/so3res.src#STR_INS_FILE_ICON.STRING.TEXT
+#, fuzzy
 msgid  "Inserts the contents of the file as an icon into your document."
-msgstr ""
+msgstr "သင့်မှတ်တမ်းမှတ်ရာအတွင်းသို့ အိုင်ကွန်ကဲ့သို့သော ဖိုင်မာတိကာများ ထပ်ထည့်သည်။"
 
 #: dialogs/so3res.src#STR_INS_FILE_LINK.STRING.TEXT
+#, fuzzy
 msgid  "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
-msgstr ""
+msgstr "သင့်မှတ်တမ်းမှတ်ရာအတွင်းသို့ ဖိုင်၏မာတိကာများထပ်ထည့်ပြီး မူရင်းဖိုင်သို့ ချိတ်ဆက်တည်ဆောက်သည်။  သင့်မှတ်တမ်းမှတ်ရာရှိ ပြန်ပေါ်လာသည့် အချက်အလက်မူရင်း ဖိုင်ကို ပြောင်းလဲသည်။ "
 
 #: dialogs/so3res.src#STR_INS_FILE_ICON_LINK.STRING.TEXT
+#, fuzzy
 msgid  "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
-msgstr ""
+msgstr "ဖော်ပြထားသည့် ဖိုင်ရှိ သင့်မှတ်တမ်းမှတ်ရာအတွင်းသို့ အိုင်ကွန်တစ်ခုထပ်ထည့်သည်။ သင့်မှတ်တမ်းမှတ်ရာရှိ ပြန်ပေါ်လာသည့် အချက်အလက်မူရင်း ဖိုင်ကို ပြောင်းလဲသည်။ "
 
 #: dialogs/so3res.src#STR_PASTE.STRING.TEXT
+#, fuzzy
 msgid  "Pastes the contents of the clipboard as %1 in your document."
-msgstr ""
+msgstr "သင့်မှတ်တမ်းမှတ်ရာတွင် %1အဖြစ်ကလစ်ဘုတ်၏ မာတိကာများပြန်ကူးထည့်ပါ။"
 
 #: dialogs/so3res.src#STR_CONVERT_TO.STRING.TEXT
+#, fuzzy
 msgid  "Converts the selected %1object to the object type %2."
-msgstr ""
+msgstr "ရွေးချယ်ထားသည့် အရာ၀တ္ထု %၁မှ အရာ၀တ္ထုအမျိုးအစား %၂သို့ ကူပြောင်းသည်"
 
 #: dialogs/so3res.src#STR_ACTIVATE_AS.STRING.TEXT
+#, fuzzy
 msgid  "All objects of type %1 are activated as %2, but not converted"
-msgstr ""
+msgstr "%၂ ကဲ့သို့ ပုံစံ%၁၏ အရာဝတ္ထုများ လုပ်ဆောင်မှုရှိသည်၊ သို့သော် မကူးပြောင်းပါ "
 
 #: dialogs/so3res.src#STR_VERB_OPEN.STRING.TEXT
+#, fuzzy
 msgid  "~Open"
-msgstr ""
+msgstr "~ဖွင့်ပါ"
 
 #: dialogs/so3res.src#STR_VERB_PROPS.STRING.TEXT
+#, fuzzy
 msgid  "~Properties"
-msgstr ""
+msgstr "⁠~ဂုဏ်သတ္တိများ"
 
 #: dialogs/so3res.src#STR_PLUGIN_CANT_SHOW.STRING.TEXT
+#, fuzzy
 msgid  "Plug-in % cannot be displayed."
-msgstr ""
+msgstr "% ပလပ်သွင်းခြင်း မပြသနိုင်ပါ။"
 
 #: dialogs/so3res.src#STR_ERROR_DDE.STRING.TEXT
+#, fuzzy
 msgid  "DDE link to % for % area % are not available."
-msgstr ""
+msgstr "% ဧရိယာ % အတွက် % သို့ DDEချိတ်ဆက်မှု အသုံးမပြု နိုင်ပါ။"
 
 #: dialogs/so3res.src#STR_ERROR_OBJNOCREATE.STRING.TEXT
+#, fuzzy
 msgid  "Object % could not be inserted."
-msgstr ""
+msgstr "အရာဝတ္ထု % မထည့်သွင်းနိုင်ပါ။"
 
 #: dialogs/so3res.src#STR_ERROR_OBJNOCREATE_FROM_FILE.STRING.TEXT
+#, fuzzy
 msgid  "Object from file % could not be inserted."
-msgstr ""
+msgstr "% ဖိုင်မှ အရာဝတ္ထု မထည့်သွင်းနိုင်ပါ။"
 
 #: dialogs/so3res.src#STR_ERROR_OBJNOCREATE_PLUGIN.STRING.TEXT
+#, fuzzy
 msgid  "Plug-in from document % could not be inserted."
-msgstr ""
+msgstr "% မှတ်တမ်းမှတ်ရာမှ ပလပ်သွင်းမှု မထည့်သွင်းနိုင်ပါ။"
 
 #: dialogs/so3res.src#STR_QUERYUPDATELINKS.STRING.TEXT
+#, fuzzy
 msgid  "Update all links?"
-msgstr ""
+msgstr "နောက်ဆုံးပေါ်ချိတ်ဆက်မှုများအားလုံး"
 
 #: dialogs/so3res.src#STR_FURTHER_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Further objects"
-msgstr ""
+msgstr "အရာဝတ္ထုများ"
 
 #: dialogs/so3res.src#STR_EDIT_APPLET.STRING.TEXT
+#, fuzzy
 msgid  "Edit Applet"
-msgstr ""
+msgstr "Applet တည်းဖြတ်ပါ"
 
 #: dialogs/so3res.src#MI_PLUGIN.MI_PLUGIN_DEACTIVATE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Deactivate"
-msgstr ""
+msgstr "ခလုတ်မဖွင့်ပါ"
 
 #: dialogs/so3res.src#STR_UNKNOWN_SOURCE.STRING.TEXT
+#, fuzzy
 msgid  "Unknown source"
-msgstr ""
+msgstr "မသိသောအချက်အလက်မူရင်း"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_FINISH.STRING.TEXT
+#, fuzzy
 msgid  "~Finish"
-msgstr ""
+msgstr "~ပြီးစီးသည်"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_NEXT.STRING.TEXT
+#, fuzzy
 msgid  "~Next >>"
-msgstr ""
+msgstr "~ရှေ့>>"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_PREVIOUS.STRING.TEXT
+#, fuzzy
 msgid  "<< Bac~k"
-msgstr ""
+msgstr "<<အနောက်"
 
 #: dialogs/wizardmachine.src#STR_WIZDLG_ROADMAP_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Steps"
-msgstr ""
+msgstr "အဆင့်များ"
 
 #: filter/exportdialog.src#DLG_EXPORT_TITLE.STRING.TEXT
 msgid  " Options"
@@ -1304,14 +1456,17 @@ msgid  "Width:"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "inches"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "cm"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "mm"
 msgstr ""
 
@@ -1320,31 +1475,12 @@ msgid  "points"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "pixels"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_SIZEY.FIXEDTEXT.TEXT
 msgid  "Height:"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM1.STRINGLIST.ITEM
-msgid  "inches"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.DEFAULT.STRINGLIST.ITEM
-msgid  "cm"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM3.STRINGLIST.ITEM
-msgid  "mm"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM4.STRINGLIST.ITEM
-msgid  "points"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM5.STRINGLIST.ITEM
-msgid  "pixels"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_RESOLUTION.FIXEDTEXT.TEXT
@@ -1455,10 +1591,6 @@ msgstr ""
 msgid  "Text"
 msgstr ""
 
-#: filter/exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.FIXEDLINE.TEXT
-msgid  "Preview"
-msgstr ""
-
 #: filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_TIFF.CHECKBOX.TEXT
 msgid  "Image Preview (TIFF)"
 msgstr ""
@@ -1512,1376 +1644,1706 @@ msgid  "The file size is %1 KB."
 msgstr ""
 
 #: java/javaerror.src#WARNINGBOX_JAVANOTFOUND.WARNINGBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. Please install a JRE and restart %PRODUCTNAME."
-msgstr ""
+msgstr "%PRODUCTNAMEအနေဖြင့်လုပ်ငန်းများဆောင်ရွက်နိုင်ရန် ဂျာဗားလုပ်ဆောင်မှုဝန်းကျင်(JRE)ကိုလိုအပ်သည်။ JREကိုထည့်သွင်းပြီး %PRODUCTNAME ပြန်လည်စတင်ပေးပါ။"
 
 #: java/javaerror.src#WARNINGBOX_INVALIDJAVASETTINGS.WARNINGBOX.MESSAGE
+#, fuzzy
 msgid  "The %PRODUCTNAME configuration has been changed. Under Tools - Options - %PRODUCTNAME - Java, select the Java runtime environment you want to have used by %PRODUCTNAME."
-msgstr ""
+msgstr "%PRODUCTNAME အစိတ်အပိုင်းများ ဖွဲ့စည်းပုံ ပြောင်းလဲနေသည်။ %PRODUCTNAME အားဖြင့် အသုံးပြုရန် ဆန္ဒရှိပါက ကိရိယာများ‌ - ရွေးပိုင်ခွင့်များ- %PRODUCTNAME – ဂျာဗားအောက်မှ ဂျာဗာလုပ်ဆောင်မှုဝန်းကျင်ကို ရွေးချယ်ပါ။"
 
 #: java/javaerror.src#QBX_JAVADISABLED.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. However, use of a JRE has been disabled. Do you want to enable the use of a JRE now?"
-msgstr ""
+msgstr "%PRODUCTNAMEအနေဖြင့်လုပ်ငန်းများဆောင်ရွက်နိုင်ရန် ဂျာဗားလုပ်ဆောင်မှုဝန်းကျင်(JRE)ကိုလိုအပ်သည်။ သို့သော် JREကိုအသုံးမပြု နိုင်ပါ။ ယခုအသုံးပြုရန် ဆန္ဒရှိပါသလား။"
 
 #: java/javaerror.src#ERRORBOX_JVMCREATIONFAILED.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. The selected JRE is defective. Please select another version or install a new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
-msgstr ""
+msgstr "%PRODUCTNAMEအနေဖြင့်လုပ်ငန်းများဆောင်ရွက်နိုင်ရန် ဂျာဗားလုပ်ဆောင်မှုဝန်းကျင်(JRE)ကိုလိုအပ်သည်။ ရွေးချယ်ထားသော JREတွင် ချို့ယွင်းမှု ရှိနေသည်။ အခြားဗားရှင်းတစ်ခု(သို့)JREအသစ်တစ်ခုကို ရွေးချယ်ထည့်သွင်းနိုင်ရန် ‘ကိရိယာများ’အောက်မှ -‘ရွေးပိုင်ခွင့်များ’-%PRODUCTNAME-ဂျားဗားကို ရွေးပါ။"
 
 #: java/javaerror.src#ERRORBOX_RESTARTREQUIRED.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted. Please restart %PRODUCTNAME now."
-msgstr ""
+msgstr "ရွေးချယ်ထားသော ဂျာဗားလုပ်ဆောင်မှုဝန်းကျင် ကောင်းမွန်စွာ လုပ်ကိုင်နိုင်စေရန် %PRODUCTNAME ပြန်လည်စတင်ရမည်။ %PRODUCTNAMEကို ယခု ပြန်လည်စတင်ပေးပါ။"
 
 #: java/javaerror.src#STR_WARNING_JAVANOTFOUND.STRING.TEXT
+#, fuzzy
 msgid  "JRE Required"
-msgstr ""
+msgstr "JRE လိုအပ်သည်"
 
 #: java/javaerror.src#STR_WARNING_INVALIDJAVASETTINGS.STRING.TEXT
+#, fuzzy
 msgid  "Select JRE"
-msgstr ""
+msgstr "JREကိုရွေးချယ်ပါ"
 
 #: java/javaerror.src#STR_ERROR_RESTARTREQUIRED.STRING.TEXT
+#, fuzzy
 msgid  "Restart Required"
-msgstr ""
+msgstr "ပြန်လည်စတင်ရန်လိုအပ်သည်"
 
 #: java/javaerror.src#STR_QUESTION_JAVADISABLED.STRING.TEXT
+#, fuzzy
 msgid  "Enable JRE"
-msgstr ""
+msgstr "JRE အသုံးပြု နိုင်သည်"
 
 #: java/javaerror.src#STR_ERROR_JVMCREATIONFAILED.STRING.TEXT
+#, fuzzy
 msgid  "JRE is Defective"
-msgstr ""
+msgstr "JRE ချွတ်ယွင်းသည်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.STRING.TEXT
+#, fuzzy
 msgid  "Source code"
-msgstr ""
+msgstr "မူရင်းကုဒ်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.STRING.TEXT
+#, fuzzy
 msgid  "Bookmark file"
-msgstr ""
+msgstr "စာညှပ်ဖိုင် "
 
 #: misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.STRING.TEXT
+#, fuzzy
 msgid  "Graphics"
-msgstr ""
+msgstr "ရုပ်ပုံဒီဇိုင်း"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.STRING.TEXT
+#, fuzzy
 msgid  "Configuration file"
-msgstr ""
+msgstr "ဖိုင်အစိတ်အပိုင်းများဖွဲ့စည်းပုံ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.STRING.TEXT
+#, fuzzy
 msgid  "Application"
-msgstr ""
+msgstr "အသုံးပြုပရိုဂရမ်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Database table"
-msgstr ""
+msgstr "ဒေတာဘေ့စ်ဇယား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.STRING.TEXT
+#, fuzzy
 msgid  "System file"
-msgstr ""
+msgstr "စနစ်ဖိုင်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.STRING.TEXT
+#, fuzzy
 msgid  "MS Word document"
-msgstr ""
+msgstr "MS Word မှတ်တမ်းမှတ်ရာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.STRING.TEXT
+#, fuzzy
 msgid  "Help file"
-msgstr ""
+msgstr "အကူဖိုင်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.STRING.TEXT
+#, fuzzy
 msgid  "HTML document"
-msgstr ""
+msgstr "HTML မှတ်တမ်းမှတ်ရာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.STRING.TEXT
+#, fuzzy
 msgid  "Archive file"
-msgstr ""
+msgstr "ဖိသိပ်သိုလှောင်ထားသည့်ဖိုင်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.STRING.TEXT
+#, fuzzy
 msgid  "Log file"
-msgstr ""
+msgstr "ကွန်ပျူတာမှတ်တမ်းဖိုင်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.STRING.TEXT
+#, fuzzy
 msgid  "%STAROFFICE Database"
-msgstr ""
+msgstr "%STAROFFICE ဒေတာဘေ့စ်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.STRING.TEXT
+#, fuzzy
 msgid  "StarWriter 4.0 / 5.0 Master Document"
-msgstr ""
+msgstr "StarWriter 4.0 / 5.0 ပင်မ မှတ်တမ်းမှတ်ရာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.STRING.TEXT
+#, fuzzy
 msgid  "%STAROFFICE Image"
-msgstr ""
+msgstr "%STAROFFICE ပုံရိပ်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.STRING.TEXT
+#, fuzzy
 msgid  "Text file"
-msgstr ""
+msgstr "စာသားဖိုင်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_LINK.STRING.TEXT
+#, fuzzy
 msgid  "Link"
-msgstr ""
+msgstr "ကွင်းဆက်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.STRING.TEXT
+#, fuzzy
 msgid  "%STAROFFICE 3.0 - 5.0 Template"
-msgstr ""
+msgstr "%STAROFFICE 3.0 - 5.0 ပုံစံပြား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.STRING.TEXT
+#, fuzzy
 msgid  "MS Excel document"
-msgstr ""
+msgstr "MS Excel မှတ်တမ်းမှတ်ရာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.STRING.TEXT
+#, fuzzy
 msgid  "MS Excel template"
-msgstr ""
+msgstr "MS Excel ပုံစံပြား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.STRING.TEXT
+#, fuzzy
 msgid  "Batch file"
-msgstr ""
+msgstr "အစီအစဉ်လိုက်ဆောင်ရွက်ပေးသောအစုဖိုင်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FILE.STRING.TEXT
+#, fuzzy
 msgid  "File"
-msgstr ""
+msgstr "ဖိုင်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FOLDER.STRING.TEXT
+#, fuzzy
 msgid  "Folder"
-msgstr ""
+msgstr "ဖိုင်တွဲ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.STRING.TEXT
+#, fuzzy
 msgid  "Text Document"
-msgstr ""
+msgstr "မှတ်တမ်းမှတ်ရာ စာသား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.STRING.TEXT
+#, fuzzy
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "စာရွက်အချပ်လွှာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.STRING.TEXT
+#, fuzzy
 msgid  "Presentation"
-msgstr ""
+msgstr "တင်ဆက်မှုပုံစံ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.STRING.TEXT
+#, fuzzy
 msgid  "Drawing"
-msgstr ""
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.STRING.TEXT
-msgid  "HTML document"
-msgstr ""
+msgstr "ပုံဆွဲခြင်း"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.STRING.TEXT
+#, fuzzy
 msgid  "Master document"
-msgstr ""
+msgstr "ပင်မ မှတ်တမ်းမှတ်ရာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.STRING.TEXT
+#, fuzzy
 msgid  "Formula"
-msgstr ""
+msgstr "ပုံသေနည်း"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "Database"
-msgstr ""
+msgstr "ဒေတာဘေ့စ်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION စာရွက်အချပ်လွှာပုံစံပြား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION ရေးဆွဲခြင်းပုံစံပြား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION တင်ပြချက် ပုံစံပြား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION စာသားမှတ်တမ်းမှတ်ရာပုံစံပြား  "
 
 #: misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.STRING.TEXT
+#, fuzzy
 msgid  "Local drive"
-msgstr ""
+msgstr "အတွင်းရှိဒရိုက်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.STRING.TEXT
+#, fuzzy
 msgid  "Disk drive"
-msgstr ""
+msgstr "ဒစ်ခ်ဒရိုက်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.STRING.TEXT
+#, fuzzy
 msgid  "CD-ROM drive"
-msgstr ""
+msgstr "စီဒီရွမ်ဒရိုက်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.STRING.TEXT
+#, fuzzy
 msgid  "Network connection"
-msgstr ""
+msgstr "ကွန်ရက်စနစ် ချိတ်ဆက်မှု"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.STRING.TEXT
+#, fuzzy
 msgid  "MS PowerPoint Document"
-msgstr ""
+msgstr "MS PowerPoint မှတ်တမ်းမှတ်ရာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "MS PowerPoint Template"
-msgstr ""
+msgstr "MS PowerPoint ပုံစံပြား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.STRING.TEXT
+#, fuzzy
 msgid  "MS PowerPoint Show"
-msgstr ""
+msgstr "MS PowerPoint ပြသည်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION ပုံသေနည်း"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION ပုံစံကားချပ်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION ပုံဆွဲခြင်း"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION စာရွက်အချပ်လွှာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION တင်ပြချက်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION စာသားမှတ်တမ်းမှတ်ရာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION ပင်မ မှတ်တမ်းမှတ်ရာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.STRING.TEXT
+#, fuzzy
 msgid  "MathML Document"
-msgstr ""
+msgstr "MathML မှတ်တမ်းမှတ်ရာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.STRING.TEXT
+#, fuzzy
 msgid  "OpenDocument Database"
-msgstr ""
+msgstr "OpenDocument ဒေတာဘေ့စ်"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.STRING.TEXT
+#, fuzzy
 msgid  "OpenDocument Drawing"
-msgstr ""
+msgstr "OpenDocument ပုံဆွဲခြင်း"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.STRING.TEXT
+#, fuzzy
 msgid  "OpenDocument Formula"
-msgstr ""
+msgstr "OpenDocument ပုံသေနည်း"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.STRING.TEXT
+#, fuzzy
 msgid  "OpenDocument Master Document"
-msgstr ""
+msgstr "OpenDocument ပင်မ မှတ်တမ်းမှတ်ရာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.STRING.TEXT
+#, fuzzy
 msgid  "OpenDocument Presentation"
-msgstr ""
+msgstr "OpenDocument တင်ဆက်မှုပုံစံ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.STRING.TEXT
+#, fuzzy
 msgid  "OpenDocument Spreadsheet"
-msgstr ""
+msgstr "OpenDocument စာရွက်အချပ်လွှာ"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.STRING.TEXT
+#, fuzzy
 msgid  "OpenDocument Text"
-msgstr ""
+msgstr "OpenDocument စာသား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "OpenDocument Spreadsheet Template"
-msgstr ""
+msgstr "OpenDocument စာရွက်အချပ်လွှာ ပုံစံပြား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "OpenDocument Drawing Template"
-msgstr ""
+msgstr "OpenDocument ပုံဆွဲခြင်း ပုံစံပြား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "OpenDocument Presentation Template"
-msgstr ""
+msgstr "OpenDocument တင်ဆက်မှု ပုံစံပြား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "OpenDocument Text Template"
-msgstr ""
+msgstr "OpenDocument စာသား ပုံစံပြား"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Extension"
-msgstr ""
+msgstr "%PRODUCTNAME တိုးချဲ့မှု"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "[None]"
-msgstr ""
+msgstr "(ဘာမျှမရှိပါ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Unknown"
-msgstr ""
+msgstr "မသိပါ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "နဂိုမူလ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Afrikaans (South Africa)"
-msgstr ""
+msgstr "အာဖရိကန်(တောင်အာဖရိက)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Albanian"
-msgstr ""
+msgstr "အဲဘေးနီးယန်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic"
-msgstr ""
+msgstr "အာရဗစ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Algeria)"
-msgstr ""
+msgstr "အာရဗစ်(အဲဂျေးရီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Bahrain)"
-msgstr ""
+msgstr "အာရဗစ်(ဘာရိမ်း)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Chad)"
-msgstr ""
+msgstr "အာရဗစ် (ချက်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Comoros)"
-msgstr ""
+msgstr "အာရဗစ် (ခိုမိုရိုစ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Djibouti)"
-msgstr ""
+msgstr "အာရဗစ် (ဒီဂျီဘောတီ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Egypt)"
-msgstr ""
+msgstr "အာရဗစ်(အီဂျစ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Eritrea)"
-msgstr ""
+msgstr "အာရဗစ် (အီသီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Iraq)"
-msgstr ""
+msgstr "အာရဗစ်(အီရတ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Israel)"
-msgstr ""
+msgstr "အာရဗစ် (အစ်စရေး)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Jordan)"
-msgstr ""
+msgstr "အာရဗစ်(ဂျော်ဒန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Kuwait)"
-msgstr ""
+msgstr "အာရဗစ်(ကူဝိတ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Lebanon)"
-msgstr ""
+msgstr "အာရဗစ်(လဘနွန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Libya)"
-msgstr ""
+msgstr "အာရဗစ်(လစ်ဗျား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Mauritania)"
-msgstr ""
+msgstr "အာရဗစ် (မောရီတနီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Morocco)"
-msgstr ""
+msgstr "အာရဗစ်(မော်ရကို)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Oman)"
-msgstr ""
+msgstr "အာရဗစ်(အိုမန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Palestine)"
-msgstr ""
+msgstr "အာရဗစ် (ပါလက်စတိုင်း)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Qatar)"
-msgstr ""
+msgstr "အာရဗစ်(ကာတာ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Saudi Arabia)"
-msgstr ""
+msgstr "အာရဗစ်(ဆောဒီအာရေးဗီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Somalia)"
-msgstr ""
+msgstr "အာရဗစ် (ဆိုမာလီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Sudan)"
-msgstr ""
+msgstr "အာရဗစ် (ဆူဒန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Syria)"
-msgstr ""
+msgstr "အာရဗစ်(ဆီရီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Tunisia)"
-msgstr ""
+msgstr "အာရဗစ်(တူနီဆီးရား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (UAE)"
-msgstr ""
+msgstr "အာရဗစ်(ယူအေအီး)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic (Yemen)"
-msgstr ""
+msgstr "အာရဗစ်(ရဲမန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Armenian"
-msgstr ""
+msgstr "အာမေးနီးယန်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Assami"
-msgstr ""
+msgstr "အာဆာမိ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Azerbaijani Latin"
-msgstr ""
+msgstr "အေဇာဘဂျနီ လက်တင်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Azerbaijani Cyrillic"
-msgstr ""
+msgstr "အေဇာဘဂျနီ ဆီးရီးလစ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Basque"
-msgstr ""
+msgstr "ဘက်စ်ကျူ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Bengali (India)"
-msgstr ""
+msgstr "ဘင်္ဂါလီ(အိန္ဒိယ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Bulgarian"
-msgstr ""
+msgstr "ဘာဂါရီယန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Belarusian"
-msgstr ""
+msgstr "ဘလာရုဆီယန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Catalan"
-msgstr ""
+msgstr "ကတလန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Chinese (traditional)"
-msgstr ""
+msgstr "တရုတ်(ရိုးရာ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Chinese (simplified)"
-msgstr ""
+msgstr "တရုတ်(ရိုးရိုး)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Chinese (Hong Kong)"
-msgstr ""
+msgstr "တရုတ်(ဟောင်ကောင်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Chinese (Singapore)"
-msgstr ""
+msgstr "တရုတ်(စင်္ကာပူ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Chinese (Macau)"
-msgstr ""
+msgstr "တရုတ်(မက်ကော)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Croatian"
-msgstr ""
+msgstr "ခရိုအေတီယန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Czech"
-msgstr ""
+msgstr "ချက်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Danish"
-msgstr ""
+msgstr "ဒက်နစ်ခ်ျ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Dutch (Netherlands)"
-msgstr ""
+msgstr "ဒတ်ခ်ျ (နယ်သာလန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Dutch (Belgium)"
-msgstr ""
+msgstr "ဒတ်ခ်ျ(ဘယ်ဂျီယန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (USA)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(ယူအက်စ်အေ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (UK)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(ယူကေ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (Australia)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(ဩစတေးလျ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (Canada)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(ကနေဒါ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (New Zealand)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(နယူးဇီလန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (Eire)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(အိုင်ယာ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (South Africa)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(တောင်အာဖရိက)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (Jamaica)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(ဂျမေကာ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (Caribbean)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(ကာရီဘီယန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (Belize)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(ဘဲလီဇီ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (Trinidad)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(ထရီနီဒတ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (Zimbabwe)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(ဇင်ဘာဘွေ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (Philippines)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(ဖိလစ်ပိုင်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (India)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(အိန္ဒိယ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Estonian"
-msgstr ""
+msgstr "အက်စတိုနီယန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Finnish"
-msgstr ""
+msgstr "ဖစ်နစ်ခ်ျ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Faroese"
-msgstr ""
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.PAIREDLIST.ITEM
-msgid  "Persian"
-msgstr ""
+msgstr "ဖာရိုစ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "French (France)"
-msgstr ""
+msgstr "ပြင်သစ်(ဖရန့်စ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "French (Belgium)"
-msgstr ""
+msgstr "ပြင်သစ်(ဘယ်လဂျီယန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "French (Canada)"
-msgstr ""
+msgstr "ပြင်သစ်(ကနေဒါ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "French (Switzerland)"
-msgstr ""
+msgstr "ပြင်သစ်(ဆွစ်ဇလန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "French (Luxembourg)"
-msgstr ""
+msgstr "ပြင်သစ်(လူဇမ်ဘက်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "French (Monaco)"
-msgstr ""
+msgstr "ပြင်သစ်(မိုနာကို)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Gascon"
-msgstr ""
+msgstr "ဂက်စ်ကွန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "German (Germany)"
-msgstr ""
+msgstr "ဂျာမန်(ဂျာမနီ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "German (Switzerland)"
-msgstr ""
+msgstr "ဂျာမန်(ဆွစ်ဇလန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "German (Austria)"
-msgstr ""
+msgstr "ဂျာမန်(ဩစတေးလျ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "German (Luxembourg)"
-msgstr ""
+msgstr "ဂျာမန်(လူဇန်ဘက်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "German (Liechtenstein)"
-msgstr ""
+msgstr "ဂျာမန်(လိုင်ခ်ျတန်တိန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Greek"
-msgstr ""
+msgstr "ဂရိ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Gujarati"
-msgstr ""
+msgstr "ဂူဂျာရတီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Hebrew"
-msgstr ""
+msgstr "ဟီဘရူး"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Hindi"
-msgstr ""
+msgstr "ဟင်ဒီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Hungarian"
-msgstr ""
+msgstr "ဟောဂေးရီးယန်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Icelandic"
-msgstr ""
+msgstr "အန္တလန်တစ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Indonesian"
-msgstr ""
+msgstr "အင်ဒိုနီးရှား"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Italian (Italy)"
-msgstr ""
+msgstr "အီတလီလျန်(အီတလီ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Italian (Switzerland)"
-msgstr ""
+msgstr "အီတလီလျန် (ဆွစ်ဇလန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Japanese"
-msgstr ""
+msgstr "ဂျပန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kannada"
-msgstr ""
+msgstr "ကနေဒါ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kashmiri (Kashmir)"
-msgstr ""
+msgstr "ကတ်ခ်ျမီရီ(ကတ်ခ်ျမီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kashmiri (India)"
-msgstr ""
+msgstr "ကတ်ခ်ျမီရီ(အိန္တိယ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kazak"
-msgstr ""
+msgstr "ကဇက်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Konkani"
-msgstr ""
+msgstr "ကွန်ကာနီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Korean (RoK)"
-msgstr ""
+msgstr "ကိုရီးယား(ရော့ခ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Latvian"
-msgstr ""
+msgstr "လာဗီးယန်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Lithuanian"
-msgstr ""
+msgstr "လီသူနေးနီးယန်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Macedonian"
-msgstr ""
+msgstr "မက်ဆီဒိုးနီးယန်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Malay (Malaysia)"
-msgstr ""
+msgstr "မလေး(မလေးရှား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Malay (Brunei Darussalam)"
-msgstr ""
+msgstr "မလေး (ဘရူနိုင်း ဒါရုဆလင်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Malayalam"
-msgstr ""
+msgstr "မလေးအလမ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Manipuri"
-msgstr ""
+msgstr "မနီပျူရီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Marathi"
-msgstr ""
+msgstr "မာရာသီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Nepali (Nepal)"
-msgstr ""
+msgstr "နီပလီ(နီပေါ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Nepali (India)"
-msgstr ""
+msgstr "နီပလီ(အိန္ဒိယ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Norwegian, Bokmål"
-msgstr ""
+msgstr "နော်ဝေဂျီယန်၊ ဘော့မဲ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Norwegian, Nynorsk"
-msgstr ""
+msgstr "နော်ဝေဂျီယန်၊ နီနော့"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Oriya"
-msgstr ""
+msgstr "အိုရီယ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Polish"
-msgstr ""
+msgstr "ပိုလစ်ခ်ျ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Portuguese (Portugal)"
-msgstr ""
+msgstr "ပေါ်တူဂီ(ပေါ်တူဂယ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Portuguese (Brazil)"
-msgstr ""
+msgstr "ပေါ်တူဂီ(ဘရာဇီး)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Punjabi"
-msgstr ""
+msgstr "ပန်ချာဘီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Rhaeto-Romance"
-msgstr ""
+msgstr "ရဟေတို-ရောမ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Romanian"
-msgstr ""
+msgstr "ရိုမေးနီးယန်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Russian"
-msgstr ""
+msgstr "ရှရား"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sanskrit"
-msgstr ""
+msgstr "ဆန်းစကစ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Serbian Cyrillic (Serbia and Montenegro)"
-msgstr ""
+msgstr "ဆာဗီးယန်း ဆီးရီးလစ်(ဆာဗီးယားနှင့်မွန်တာနီဂရို)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Serbian Latin (Serbia and Montenegro)"
-msgstr ""
+msgstr "ဆာဗီးယန်း လက်တင်(ဆာဗီးယားနှင့်မွန်တာနီဂရို)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Serbian Cyrillic (Serbia)"
-msgstr ""
+msgstr "ဆာဗီယန်း ဆီးရီးလစ် (ဆာဗီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Serbian Latin (Serbia)"
-msgstr ""
+msgstr "ဆာဗီယန်း လက်တင် (ဆာဗီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Serbian Cyrillic (Montenegro)"
-msgstr ""
+msgstr "ဆာဗီယန်း ဆီးရီးလစ် (မွန်တီနီဂရိုး)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Serbian Latin (Montenegro)"
-msgstr ""
+msgstr "ဆာဗီယန်း လက်တင် (မွန်တီနီဂရိုး)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sindhi"
-msgstr ""
+msgstr "စင်ဒီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVAK.PAIREDLIST.ITEM
 msgid  "Slovak"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Slovenian"
-msgstr ""
+msgstr "ဆလိုဗေးနီးယန်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Spain)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (စပိန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Mexico)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (မက်ဆီကို)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Guatemala)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ဂေါတီမာလ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Costa Rica)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ကော့စတာ ရီကာ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Panama)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ပနားမား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Dom. Rep.)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ဒမ် ရပ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Venezuela)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ဗင်နီဇွဲလား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Colombia)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ကိုလမ်ဘီယာ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Peru)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ပီရူး)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Argentina)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (အာဂျင်တီးနား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Ecuador)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (အီကူအေဒါ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Chile)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ချီလီ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Uruguay)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ဥရုဂွေး)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Paraguay)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ပါရာဂွေး)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Bolivia)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ဘောဗီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (El Salvador)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (အီးအိုင် ဆာဗေးဒါ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Honduras)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ဟွန်ဒူရက်စ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Nicaragua)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (နီကာရဂူရ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Puerto Rico)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ပရက်တို ရီကို)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Swahili (Kenya)"
-msgstr ""
+msgstr "ဆွာဟီလီ(ကင်ညာ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Swedish (Sweden)"
-msgstr ""
+msgstr "ဆွာဟီလီ(ဆွီဒင်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Swedish (Finland)"
-msgstr ""
+msgstr "ဆွာဟီလီ(ဖင်လန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tajik"
-msgstr ""
+msgstr "တာဂျစ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tamil"
-msgstr ""
+msgstr "တမေးလ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tatar"
-msgstr ""
+msgstr "တတာ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Telugu"
-msgstr ""
+msgstr "တီလူဂု"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Thai"
-msgstr ""
+msgstr "ထိုင်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Turkish"
-msgstr ""
+msgstr "တာကစ်ခ်ျ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Urdu (Pakistan)"
-msgstr ""
+msgstr "အာဒု (ပါကစ်စတန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Urdu (India)"
-msgstr ""
+msgstr "အာဒု (အိန္ဒိယ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Ukrainian"
-msgstr ""
+msgstr "ယူကနေးနီးယန်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Uzbek Latin"
-msgstr ""
+msgstr "ဥဇဘက် လက်တင်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Welsh"
-msgstr ""
+msgstr "ဝီလက်ခ်ျ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "User 1"
-msgstr ""
+msgstr "အသုံးပြုသူ ၁"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "User 2"
-msgstr ""
+msgstr "အသုံးပြုသူ ၂"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "User 3"
-msgstr ""
+msgstr "အသုံးပြုသူ ၃"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "User 4"
-msgstr ""
+msgstr "အသုံးပြုသူ ၄"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "User 5"
-msgstr ""
+msgstr "အသုံးပြုသူ ၅"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "User 6"
-msgstr ""
+msgstr "အသုံးပြုသူ ၆"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "User 7"
-msgstr ""
+msgstr "အသုံးပြုသူ ၇"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "User 8"
-msgstr ""
+msgstr "အသုံးပြုသူ ၈"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "User 9"
-msgstr ""
+msgstr "အသုံးပြုသူ ၉"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Latin"
-msgstr ""
+msgstr "လက်တင်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Esperanto"
-msgstr ""
+msgstr "အက်စပရန်တို"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kinyarwanda (Rwanda)"
-msgstr ""
+msgstr "ကင်ညာဝန်ဒ (၀ရမ်ဒ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Maori (New Zealand)"
-msgstr ""
+msgstr "မောရိ(နရူးဇီလန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Galician"
-msgstr ""
+msgstr "ဂယ်လ်ဆီယန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Dhivehi"
-msgstr ""
+msgstr "ဒဟီဗီဟီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Northern Sotho"
-msgstr ""
+msgstr "တောင်ဘက်ဆောသို"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Gaelic (Scotland)"
-msgstr ""
+msgstr "ဂေးလစ်(စကော့တလန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Mongolian"
-msgstr ""
+msgstr "မွန်ဂိုလီယန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Interlingua"
-msgstr ""
+msgstr "အင်တာလင်ဂွာ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Bosnian"
-msgstr ""
+msgstr "ဘော့စနီးယန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Bengali (Bangladesh)"
-msgstr ""
+msgstr "ဘင်္ဂါလီ(ဘင်္ဂါးလားဒေ့ရှေ့)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Occitan"
-msgstr ""
+msgstr "အောဆီတန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Khmer"
-msgstr ""
+msgstr "ခမာ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kurdish (Turkey)"
-msgstr ""
+msgstr "ကူဒစ်ခ်ျ(တာကီ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kurdish (Syria)"
-msgstr ""
+msgstr "ကူဒစ်ခ်ျ(ဆီရီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kurdish (Iraq)"
-msgstr ""
+msgstr "ကူဒစ်ခ်ျ(အီရတ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kurdish (Iran)"
-msgstr ""
+msgstr "ကူဒစ်ခ်ျ(အီရန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sardinian"
-msgstr ""
+msgstr "ဆာဒီနီယန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Dzongkha"
-msgstr ""
+msgstr "ဒဇွန်းခ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Swahili (Tanzania)"
-msgstr ""
+msgstr "ဆွာဟီလီ(တန်ဇနီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Lao"
-msgstr ""
+msgstr "လာအို"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Irish"
-msgstr ""
+msgstr "အီရစ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tibetan (PR China)"
-msgstr ""
+msgstr "တီဘီတန်(ပီအာ တရုတ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Georgian"
-msgstr ""
+msgstr "ဂျော်ဂျီယန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Frisian"
-msgstr ""
+msgstr "ဖရီဆီယန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tswana (South Africa)"
-msgstr ""
+msgstr "တဆွန်န (တောင်အာဖရိက)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Zulu"
-msgstr ""
+msgstr "ဇူလူ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Vietnamese"
-msgstr ""
+msgstr "ဗီနာမိစ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Breton"
-msgstr ""
+msgstr "ဘရီတန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kalaallisut"
-msgstr ""
+msgstr "ကလလီဆွတ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Ndebele, South"
-msgstr ""
+msgstr "နဒီဘလီ (တောင်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Southern Sotho"
-msgstr ""
+msgstr "တောင်ဘက် ဆော်သို"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Swazi"
-msgstr ""
+msgstr "ဆွာဇီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tsonga"
-msgstr ""
+msgstr "တဆွန်ဂ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Venda"
-msgstr ""
+msgstr "ဗန်ဒ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tswana (Botswana)"
-msgstr ""
+msgstr "တက်စ်၀န (ဘော့စ်၀န)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Xhosa"
-msgstr ""
+msgstr "ဇောစ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sinhala"
-msgstr ""
+msgstr "စင်ဟလာ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Moore"
-msgstr ""
+msgstr "မိုးရီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Bambara"
-msgstr ""
+msgstr "ဘန်ဘရာ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Akan"
-msgstr ""
+msgstr "အာကန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Luxembourgish"
-msgstr ""
+msgstr "လူဇန်ဘက်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Friulian"
-msgstr ""
+msgstr "ဖရူလီယန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Fijian"
-msgstr ""
+msgstr "ဖီဂျီယန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Afrikaans (Namibia)"
-msgstr ""
+msgstr "အာဖရိကန် (နမီဘီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (Namibia)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(နမီဘီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Walloon"
-msgstr ""
+msgstr "ဝေါလွန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Coptic"
-msgstr ""
+msgstr "ကော့တစ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tigrigna (Eritrea)"
-msgstr ""
+msgstr "တီဂျစ်နား (အီသီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tigrigna (Ethiopia)"
-msgstr ""
+msgstr "တီဂျစ်နား (အီသီးယိုးပီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Amharic"
-msgstr ""
+msgstr "အမ်ဟရစ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kirghiz"
-msgstr ""
+msgstr "ကီးဟစ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "German (Belgium)"
-msgstr ""
+msgstr "ဂျာမန်(ဘယ်လ်ဂျီယန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Chuvash"
-msgstr ""
+msgstr "ကောဗက်ခ်ျ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Burmese"
-msgstr ""
+msgstr "မြန်မာ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Hausa (Nigeria)"
-msgstr ""
+msgstr "ဟောစ(နိုင်ဂျေးရီးယား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Hausa (Ghana)"
-msgstr ""
+msgstr "ဟောစ (ဂဟန)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Éwé"
-msgstr ""
+msgstr "Éwé"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "English (Ghana)"
-msgstr ""
+msgstr "အင်္ဂလိပ်(ဂမ်န)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sango"
-msgstr ""
+msgstr "ဆန်းဂို"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tagalog"
-msgstr ""
+msgstr "တာဂလော့"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Ganda"
-msgstr ""
+msgstr "ဂမ်ဒ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Lingala"
-msgstr ""
+msgstr "လင်ဂလာ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Low German"
-msgstr ""
+msgstr "ဂျာမန် အောက်ဘက်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Hiligaynon"
-msgstr ""
+msgstr "ဟီလီဂေနွန်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Nyanja"
-msgstr ""
+msgstr "နီယန်ဂျာ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kashubian"
-msgstr ""
+msgstr "ကက်စဘီးယန်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Spanish (Cuba)"
-msgstr ""
+msgstr "စပိန်နစ်ခ်ျ (ကူဘ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tetun (Indonesia)"
-msgstr ""
+msgstr "တီထွန်း(အင်ဒိုနီးရှား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Quechua (Bolivia, North)"
-msgstr ""
+msgstr "ကူကွခ်ျ(ဘောလ်ဗီးယား၊ မြောက်ဘက်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Quechua (Bolivia, South)"
-msgstr ""
+msgstr "ကူကွခ်ျ(ဘောလ်ဗီးယား၊ တောင်ဘက်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Somali"
-msgstr ""
+msgstr "ဆိုမာလီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sami, Inari (Finland)"
-msgstr ""
+msgstr "ဆမီ၊ အီနာရီ (ဖင်လန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sami, Lule (Norway)"
-msgstr ""
+msgstr "ဆမီ၊ လူလဲ့ (နော်ဝေ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sami, Lule (Sweden)"
-msgstr ""
+msgstr "ဆမီ၊ လူလဲ့ (ဆွီဒင်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sami, Northern (Finland)"
-msgstr ""
+msgstr "ဆမီ၊ နော်သန် (ဖင်လန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sami, Northern (Norway)"
-msgstr ""
+msgstr "ဆမီ၊​ နော်သန်​ (နော်ဝေ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sami, Northern (Sweden)"
-msgstr ""
+msgstr "ဆမီ၊ နော်သန်​(ဆွီဒင်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sami, Skolt (Finland)"
-msgstr ""
+msgstr "ဆမီ၊ စကော့ (ဖင်လန်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sami, Southern (Norway)"
-msgstr ""
+msgstr "ဆမီ၊ တောင်ဘက်​ (နော်ဝေ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sami, Southern (Sweden)"
-msgstr ""
+msgstr "ဆမီ၊ တောင်ဘက် (ဆွီဒင်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sami, Kildin (Russia)"
-msgstr ""
+msgstr "ဆာမိ၊ ကေဒင်(ရှရှား)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Guaraní, Paraguayan"
-msgstr ""
+msgstr "ဂူရ်နယ်၊ ပါရာဂူရမ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Bodo"
-msgstr ""
+msgstr "ဘိုဒို"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Dogri"
-msgstr ""
+msgstr "ဒေါ့ရိ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Maithili"
-msgstr ""
+msgstr "မာသီလီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Santali"
-msgstr ""
+msgstr "ဆန်တလီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tetun (Timor-Leste)"
-msgstr ""
+msgstr "တီထွန်း(တိမော-လက်စ်တီ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Turkmen"
-msgstr ""
+msgstr "တာမန်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Maltese"
-msgstr ""
+msgstr "မောတိစ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tok Pisin"
-msgstr ""
+msgstr "တော့က် ပီဆင်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Shuswap"
-msgstr ""
+msgstr "ရူဆွပ်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_OROMO.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Oromo"
-msgstr ""
+msgstr "အိုရိုမို"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ANCIENT_GREEK.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Greek, Ancient"
-msgstr ""
+msgstr "ဂရိ၊ အေးရှင့်"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YIDDISH.PAIREDLIST.ITEM
 msgid  "Yiddish (Israel)"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_QUECHUA_ECUADOR.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Quechua (Ecuador)"
-msgstr ""
+msgstr "ကူကွခ်ျ(အီကူအေဒါ)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UIGHUR_CHINA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Uyghur"
-msgstr ""
+msgstr "ယူဂါ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ASTURIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Asturian"
-msgstr ""
+msgstr "ဩစတေးနီးယန်း"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UPPER_SORBIAN_GERMANY.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sorbian, Upper"
-msgstr ""
+msgstr "ဆော်ဘီးယန်း (အပေါ်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LOWER_SORBIAN_GERMANY.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sorbian, Lower"
-msgstr ""
+msgstr "ဆော်ဗီးယန် (အောက်ဘက်)"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LATGALIAN.PAIREDLIST.ITEM
 msgid  "Latgalian"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Maore"
-msgstr ""
+msgstr "မိုးရီ"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BUSHI.PAIREDLIST.ITEM
 msgid  "Bushi"
@@ -2976,88 +3438,109 @@ msgid  "~Repeat: "
 msgstr ""
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_SHOW.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Display IDs"
-msgstr ""
+msgstr "IDs ပြသပါ"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_OUTPUT.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "This is the input window"
-msgstr ""
+msgstr "ဤအရာသည် ဝင်းဒိုးသွင်းမှု တစ်ခုဖြစ်သည်"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_SEND_DATA.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Transfer to TestTool"
-msgstr ""
+msgstr "စစ်ဆေး ကိရိယာသို့ ပြောင်းရွှေ့ပါ"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_ALLWIN.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Show all windows"
-msgstr ""
+msgstr "ဝင်းဒိုးများအားလုံး ပြပါ"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_KURZNAME.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Show short names (if available)"
-msgstr ""
+msgstr "အမည်တိုများပြပါ (အသုံးပြု လိုလျှင်)"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TT_LANGNAME.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Always show long-name"
-msgstr ""
+msgstr "အမြဲတမ်းအမည်ရှည်ပြသပါ"
 
 #: plugapp/testtool.src#DISPLAYHIDTOOLBOX.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "DisplayHID"
-msgstr ""
+msgstr "HID ပြသပါ"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GROUPBOX.TEXT
+#, fuzzy
 msgid  "Translation"
-msgstr ""
+msgstr "ဘာသာပြန်ဆိုချက်"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.EDIT.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "~တည်းဖြတ်ပါ"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Original Text"
-msgstr ""
+msgstr "မူလစာသား"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GROUPBOX.TEXT
+#, fuzzy
 msgid  "Comment"
-msgstr ""
+msgstr "ထင်မြင်သုံးသပ်ချက်"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.EDIT.TEXT
+#, fuzzy
 msgid  "~Comment"
-msgstr ""
+msgstr "~ထင်မြင်သုံးသပ်ချက်"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Select"
-msgstr ""
+msgstr "~ရွေးချယ်ပါ"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Restore"
-msgstr ""
+msgstr "~ပြန်လည်သိုမှီးပါ"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Accept"
-msgstr ""
+msgstr "~လက်ခံပါ"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Next"
-msgstr ""
+msgstr "⁠~နောက်ထပ်"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Inplace Translation"
-msgstr ""
+msgstr "ဘာသာပြန်ဆိုချက် နေရာတကျထားပါ"
 
 #: plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MESSBOX.MESSAGE
+#, fuzzy
 msgid  "The Translation will be lost. Proceed anyway?"
-msgstr ""
+msgstr "ဘာသာပြန်ဆိုချက် ပျောက်ဆုံးလိမ့်မည်။ တနည်းနည်းဖြင့် လုပ်ဆောင်လိုပါသလား။"
 
 #: plugapp/testtool.src#TT_NO_CONTROL.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The Control is no longer valid. The Translation cannot be saved."
-msgstr ""
+msgstr "ထိန်းချုပ်မှု ကြာရှည် မခံပါ။ ဘာသာပြန်ခြင်;ကို သိမ်းမထားနိုင်ပါ။"
 
 #: plugapp/testtool.src#TT_GPF.STRING.TEXT
+#, fuzzy
 msgid  "GPF occurred"
-msgstr ""
+msgstr "GPF တွေ့ရှိသည်"
 
 #: plugapp/testtool.src#TT_ALTERNATE_CAPTION.STRING.TEXT
+#, fuzzy
 msgid  "HelpID does not match UniqueID: "
-msgstr ""
+msgstr "HelpID နှင့် UniqueID ကိုက်ညီမှုမရှိပါ"
 
 #: toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_FWD.STRING.TEXT
 msgid  "Tab Panel Scroll Button, backward"
@@ -3068,21 +3551,26 @@ msgid  "Tab Panel Scroll Button, forward"
 msgstr ""
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Roadmap Skeleton Demo"
-msgstr ""
+msgstr "Roadmap Skeleton Demo"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.STRING.TEXT
+#, fuzzy
 msgid  "Welcome"
-msgstr ""
+msgstr "ကြိုဆိုပါ၏"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.STRING.TEXT
+#, fuzzy
 msgid  "Prepare"
-msgstr ""
+msgstr "ပြင်ဆင်ပါ"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.STRING.TEXT
+#, fuzzy
 msgid  "Setup"
-msgstr ""
+msgstr "စတင်ပါ"
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.STRING.TEXT
+#, fuzzy
 msgid  "Finish"
-msgstr ""
+msgstr "ပြီးပြီ"

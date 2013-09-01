@@ -37,7 +37,7 @@ msgstr ""
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.STRING.TEXT
 msgid  "Size"
-msgstr ""
+msgstr "Hinna/Beeriyan / Hiisa "
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.STRING.TEXT
 msgid  "Date modified"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.STRING.TEXT
 msgid  "Type"
-msgstr ""
+msgstr "Dumi"
 
 #: contnr/fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.STRING.TEXT
 msgid  "Could not create the folder %1."
@@ -57,15 +57,15 @@ msgstr ""
 
 #: contnr/fileview.src#STR_SVT_KB.STRING.TEXT
 msgid  "KB"
-msgstr ""
+msgstr "  KB"
 
 #: contnr/fileview.src#STR_SVT_MB.STRING.TEXT
 msgid  "MB"
-msgstr ""
+msgstr "  MB"
 
 #: contnr/fileview.src#STR_SVT_GB.STRING.TEXT
 msgid  "GB"
-msgstr ""
+msgstr "GB"
 
 #: contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.MENUITEM.TEXT
 msgid  "~Delete"
@@ -85,10 +85,6 @@ msgstr ""
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.FIXEDTEXT.TEXT
 msgid  "Are you sure you want to delete the selected data?"
-msgstr ""
-
-#: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.PUSHBUTTON.TEXT
-msgid  "~Delete"
 msgstr ""
 
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.PUSHBUTTON.TEXT
@@ -113,7 +109,7 @@ msgstr ""
 
 #: contnr/svcontnr.src#STR_SVT_ACC_DESC_FILE.STRING.TEXT
 msgid  "File"
-msgstr ""
+msgstr "Tiira"
 
 #: contnr/svcontnr.src#STR_SVT_ACC_EMPTY_FIELD.STRING.TEXT
 msgid  "Empty Field"
@@ -137,7 +133,7 @@ msgstr ""
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_BACK.TOOLBOXITEM.TEXT
 msgid  "Back"
-msgstr ""
+msgstr " Banda"
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PREV.TOOLBOXITEM.TEXT
 msgid  "Up One Level"
@@ -145,7 +141,7 @@ msgstr ""
 
 #: contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PRINT.TOOLBOXITEM.TEXT
 msgid  "Print"
-msgstr ""
+msgstr "Kar"
 
 #: contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_DOCINFO.TOOLBOXITEM.TEXT
 msgid  "Document Properties"
@@ -153,7 +149,7 @@ msgstr ""
 
 #: contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_PREVIEW.TOOLBOXITEM.TEXT
 msgid  "Preview"
-msgstr ""
+msgstr " Alhaaloo guna"
 
 #: contnr/templwin.src#DLG_DOCTEMPLATE.MODALDIALOG.TEXT
 msgid  "Templates and Documents"
@@ -185,7 +181,7 @@ msgstr ""
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DATE.ITEMLIST.ITEM
 msgid  "Date"
-msgstr ""
+msgstr " Han"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_KEYWORDS.ITEMLIST.ITEM
 msgid  "Keywords"
@@ -193,11 +189,11 @@ msgstr ""
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DESCRIPTION.ITEMLIST.ITEM
 msgid  "Description"
-msgstr ""
+msgstr "Taka / Alhaali"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MIMETYPE.ITEMLIST.ITEM
 msgid  "Type"
-msgstr ""
+msgstr "Dumi"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDDATE.ITEMLIST.ITEM
 msgid  "Modified on"
@@ -217,11 +213,11 @@ msgstr ""
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_THEME.ITEMLIST.ITEM
 msgid  "Subject"
-msgstr ""
+msgstr "Dalil"
 
 #: contnr/templwin.src#STRARY_SVT_DOCINFO.DI_SIZE.ITEMLIST.ITEM
 msgid  "Size"
-msgstr ""
+msgstr "Hinna/Beeriyan / Hiisa "
 
 #: contnr/templwin.src#STR_SVT_NEWDOC_HELP.STRING.TEXT
 msgid  "Click here to create new documents."
@@ -245,19 +241,19 @@ msgstr ""
 
 #: control/calendar.src#STR_SVT_CALENDAR_WEEK.STRING.TEXT
 msgid  "Week"
-msgstr ""
+msgstr " Hebu"
 
 #: control/calendar.src#STR_SVT_CALENDAR_TODAY.STRING.TEXT
 msgid  "Today"
-msgstr ""
+msgstr " Hõo zaaroo"
 
 #: control/calendar.src#STR_SVT_CALENDAR_NONE.STRING.TEXT
 msgid  "None"
-msgstr ""
+msgstr "Baa affoo"
 
 #: control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.STRING.TEXT
 msgid  "Automatic"
-msgstr ""
+msgstr "Boŋdirandi"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.STRING.TEXT
 msgid  "Alphanumeric"
@@ -265,7 +261,7 @@ msgstr ""
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_NORMAL.STRING.TEXT
 msgid  "Normal"
-msgstr ""
+msgstr "Serranta"
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_CHARSET.STRING.TEXT
 msgid  "Character set"
@@ -307,30 +303,6 @@ msgstr ""
 msgid  "Phonetic (alphanumeric last)"
 msgstr ""
 
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.STRING.TEXT
-msgid  "Alphanumeric"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.STRING.TEXT
-msgid  "Dictionary"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.STRING.TEXT
-msgid  "Pinyin"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.STRING.TEXT
-msgid  "Radical"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.STRING.TEXT
-msgid  "Stroke"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.STRING.TEXT
-msgid  "Zhuyin"
-msgstr ""
-
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.STRING.TEXT
 msgid  "Phonetic (alphanumeric first, grouped by syllables)"
 msgstr ""
@@ -361,11 +333,11 @@ msgstr ""
 
 #: control/ctrltool.src#STR_SVT_STYLE_NORMAL_ITALIC.STRING.TEXT
 msgid  "Italic"
-msgstr ""
+msgstr " Itaaliq"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BOLD.STRING.TEXT
 msgid  "Bold"
-msgstr ""
+msgstr " I gaabanta"
 
 #: control/ctrltool.src#STR_SVT_STYLE_BOLD_ITALIC.STRING.TEXT
 msgid  "Bold Italic"
@@ -405,7 +377,7 @@ msgstr ""
 
 #: control/filectrl.src#STR_FILECTRL_BUTTONTEXT.STRING.TEXT
 msgid  "Browse..."
-msgstr ""
+msgstr " Ceeci ka koy..."
 
 #: control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVET0HOME.STRING.TEXT
 msgid  "Move To Home"
@@ -440,16 +412,18 @@ msgid  "~Address Data Source..."
 msgstr ""
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "Taabal / Daarumi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FIXEDTEXT.TEXT
 msgid  "Field assignment"
 msgstr ""
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.STRING.TEXT
+#, fuzzy
 msgid  "<none>"
-msgstr ""
+msgstr " Haya kul si"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.STRING.TEXT
 msgid  "Company"
@@ -460,36 +434,41 @@ msgid  "Department"
 msgstr ""
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.STRING.TEXT
+#, fuzzy
 msgid  "First name"
-msgstr ""
+msgstr " Maa jinaa"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.STRING.TEXT
+#, fuzzy
 msgid  "Last name"
-msgstr ""
+msgstr " Zamu"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.STRING.TEXT
 msgid  "Street"
 msgstr ""
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.STRING.TEXT
+#, fuzzy
 msgid  "Country"
-msgstr ""
+msgstr " Koyraa laamaa"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.STRING.TEXT
 msgid  "ZIP Code"
 msgstr ""
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.STRING.TEXT
+#, fuzzy
 msgid  "City"
-msgstr ""
+msgstr " Galloo"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.STRING.TEXT
 msgid  "Title"
 msgstr ""
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.STRING.TEXT
+#, fuzzy
 msgid  "Position"
-msgstr ""
+msgstr " Kayandi doo"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.STRING.TEXT
 msgid  "Addr. Form"
@@ -516,8 +495,9 @@ msgid  "FAX"
 msgstr ""
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.STRING.TEXT
+#, fuzzy
 msgid  "E-mail"
-msgstr ""
+msgstr " Email adreesoo "
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.STRING.TEXT
 msgid  "URL"
@@ -560,16 +540,18 @@ msgid  "Pager"
 msgstr ""
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.STRING.TEXT
+#, fuzzy
 msgid  "Mobile"
-msgstr ""
+msgstr " Telefoon bila šiširi"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.STRING.TEXT
 msgid  "Tel: Other"
 msgstr ""
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.STRING.TEXT
+#, fuzzy
 msgid  "Calendar"
-msgstr ""
+msgstr "Hantiira"
 
 #: dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.STRING.TEXT
 msgid  "Invite"
@@ -584,8 +566,9 @@ msgid  "Cannot change to directory"
 msgstr ""
 
 #: dialogs/filedlg2.src#STR_FILEDLG_OPEN.STRING.TEXT
+#, fuzzy
 msgid  "Open"
-msgstr ""
+msgstr "Feeri"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_FILE.STRING.TEXT
 msgid  "~File"
@@ -616,8 +599,9 @@ msgid  "Up One Level"
 msgstr ""
 
 #: dialogs/filedlg2.src#STR_FILEDLG_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "Save"
-msgstr ""
+msgstr " Gaabu"
 
 #: dialogs/filedlg2.src#STR_FILEDLG_DRIVES.STRING.TEXT
 msgid  "D~rive"
@@ -752,6 +736,7 @@ msgid  "StarChart 4.0 object"
 msgstr ""
 
 #: dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.STRING.TEXT
+#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr ""
 
@@ -829,10 +814,6 @@ msgstr ""
 
 #: dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.STRING.TEXT
 msgid  "Sfx document"
-msgstr ""
-
-#: dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.STRING.TEXT
-msgid  "StarChart 5.0 object"
 msgstr ""
 
 #: dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.STRING.TEXT
@@ -913,7 +894,7 @@ msgstr ""
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_BUSY.STRING.TEXT
 msgid  "Busy"
-msgstr ""
+msgstr "Goo goy ra"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_INITIALIZING.STRING.TEXT
 msgid  "Initializing"
@@ -937,11 +918,11 @@ msgstr ""
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_OFFLINE.STRING.TEXT
 msgid  "Offline"
-msgstr ""
+msgstr " Goy nda ciyari jaŋay"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_ERROR.STRING.TEXT
 msgid  "Error"
-msgstr ""
+msgstr "Firka"
 
 #: dialogs/prnsetup.src#STR_SVT_PRNDLG_SERVER_UNKNOWN.STRING.TEXT
 msgid  "Unknown Server"
@@ -1012,8 +993,9 @@ msgid  "Printer Setup"
 msgstr ""
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FL_PRINTER.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Printer"
-msgstr ""
+msgstr "Karyan maršin"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_NAME.FIXEDTEXT.TEXT
 msgid  "~Name"
@@ -1024,20 +1006,24 @@ msgid  "Propert~ies..."
 msgstr ""
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_STATUS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Status"
-msgstr ""
+msgstr " Alhaali"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_TYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "Dumi"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_LOCATION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Location"
-msgstr ""
+msgstr "Doo jisidoo, kanandiyan"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_COMMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comment"
-msgstr ""
+msgstr "  Filla"
 
 #: dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_OPTIONS.PUSHBUTTON.TEXT
 msgid  "~Options..."
@@ -1108,15 +1094,12 @@ msgid  "No common prefix exists."
 msgstr ""
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM&S_MAX.STRING.TEXT
+#, fuzzy
 msgid  "The connection name is contained in the other one."
 msgstr ""
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US&S_MAX.STRING.TEXT
 msgid  "The connection names (the receiver and the other moniker) are identical."
-msgstr ""
-
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME&S_MAX.STRING.TEXT
-msgid  "The connection name is contained in the other one."
 msgstr ""
 
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE&S_MAX.STRING.TEXT
@@ -1228,8 +1211,9 @@ msgid  "All objects of type %1 are activated as %2, but not converted"
 msgstr ""
 
 #: dialogs/so3res.src#STR_VERB_OPEN.STRING.TEXT
+#, fuzzy
 msgid  "~Open"
-msgstr ""
+msgstr "Feeri"
 
 #: dialogs/so3res.src#STR_VERB_PROPS.STRING.TEXT
 msgid  "~Properties"
@@ -1304,14 +1288,17 @@ msgid  "Width:"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "inches"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "cm"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "mm"
 msgstr ""
 
@@ -1320,31 +1307,12 @@ msgid  "points"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.ITEM5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "pixels"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_SIZEY.FIXEDTEXT.TEXT
 msgid  "Height:"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM1.STRINGLIST.ITEM
-msgid  "inches"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.DEFAULT.STRINGLIST.ITEM
-msgid  "cm"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM3.STRINGLIST.ITEM
-msgid  "mm"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM4.STRINGLIST.ITEM
-msgid  "points"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM5.STRINGLIST.ITEM
-msgid  "pixels"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.FT_RESOLUTION.FIXEDTEXT.TEXT
@@ -1455,10 +1423,6 @@ msgstr ""
 msgid  "Text"
 msgstr ""
 
-#: filter/exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.FIXEDLINE.TEXT
-msgid  "Preview"
-msgstr ""
-
 #: filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_TIFF.CHECKBOX.TEXT
 msgid  "Image Preview (TIFF)"
 msgstr ""
@@ -1552,8 +1516,9 @@ msgid  "JRE is Defective"
 msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.STRING.TEXT
+#, fuzzy
 msgid  "Source code"
-msgstr ""
+msgstr "Porogaramu-harfey / Linji harfu"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.STRING.TEXT
 msgid  "Bookmark file"
@@ -1568,16 +1533,18 @@ msgid  "Configuration file"
 msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.STRING.TEXT
+#, fuzzy
 msgid  "Application"
-msgstr ""
+msgstr "Programu"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.STRING.TEXT
 msgid  "Database table"
 msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.STRING.TEXT
+#, fuzzy
 msgid  "System file"
-msgstr ""
+msgstr "Sistemu tiira / Dabariɲnaa tiira"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.STRING.TEXT
 msgid  "MS Word document"
@@ -1588,6 +1555,7 @@ msgid  "Help file"
 msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.STRING.TEXT
+#, fuzzy
 msgid  "HTML document"
 msgstr ""
 
@@ -1636,8 +1604,9 @@ msgid  "Batch file"
 msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FILE.STRING.TEXT
+#, fuzzy
 msgid  "File"
-msgstr ""
+msgstr "Tiira"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FOLDER.STRING.TEXT
 msgid  "Folder"
@@ -1648,8 +1617,9 @@ msgid  "Text Document"
 msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.STRING.TEXT
+#, fuzzy
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "Kabuwalha"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.STRING.TEXT
 msgid  "Presentation"
@@ -1657,10 +1627,6 @@ msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.STRING.TEXT
 msgid  "Drawing"
-msgstr ""
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.STRING.TEXT
-msgid  "HTML document"
 msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.STRING.TEXT
@@ -1672,8 +1638,9 @@ msgid  "Formula"
 msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.STRING.TEXT
+#, fuzzy
 msgid  "Database"
-msgstr ""
+msgstr "Tiira-hugu"
 
 #: misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.STRING.TEXT
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
@@ -1808,8 +1775,9 @@ msgid  "Unknown"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Default"
-msgstr ""
+msgstr "Tilasu / Tilasu ra / Tilasu mate"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PAIREDLIST.ITEM
 msgid  "Afrikaans (South Africa)"
@@ -1820,8 +1788,9 @@ msgid  "Albanian"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Arabic"
-msgstr ""
+msgstr " Laaraw senni"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PAIREDLIST.ITEM
 msgid  "Arabic (Algeria)"
@@ -1924,8 +1893,9 @@ msgid  "Arabic (Yemen)"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Armenian"
-msgstr ""
+msgstr " Armeeni senni"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PAIREDLIST.ITEM
 msgid  "Assami"
@@ -2067,10 +2037,6 @@ msgstr ""
 msgid  "Faroese"
 msgstr ""
 
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.PAIREDLIST.ITEM
-msgid  "Persian"
-msgstr ""
-
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PAIREDLIST.ITEM
 msgid  "French (France)"
 msgstr ""
@@ -2120,16 +2086,19 @@ msgid  "German (Liechtenstein)"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Greek"
-msgstr ""
+msgstr " Grek"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Gujarati"
-msgstr ""
+msgstr "Gujarati"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Hebrew"
-msgstr ""
+msgstr " Ebere"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PAIREDLIST.ITEM
 msgid  "Hindi"
@@ -2156,12 +2125,14 @@ msgid  "Italian (Switzerland)"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Japanese"
-msgstr ""
+msgstr " Japonee"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Kannada"
-msgstr ""
+msgstr "Kannada"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PAIREDLIST.ITEM
 msgid  "Kashmiri (Kashmir)"
@@ -2204,8 +2175,9 @@ msgid  "Malay (Brunei Darussalam)"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Malayalam"
-msgstr ""
+msgstr "Malayalam"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.PAIREDLIST.ITEM
 msgid  "Manipuri"
@@ -2232,8 +2204,9 @@ msgid  "Norwegian, Nynorsk"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Oriya"
-msgstr ""
+msgstr "Oriya"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PAIREDLIST.ITEM
 msgid  "Polish"
@@ -2396,24 +2369,28 @@ msgid  "Tajik"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Tamil"
-msgstr ""
+msgstr "Tamil"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.PAIREDLIST.ITEM
 msgid  "Tatar"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Telugu"
-msgstr ""
+msgstr "Telugu"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Thai"
-msgstr ""
+msgstr "Tay"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Turkish"
-msgstr ""
+msgstr " Turk senni"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.PAIREDLIST.ITEM
 msgid  "Urdu (Pakistan)"
@@ -2504,8 +2481,9 @@ msgid  "Gaelic (Scotland)"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Mongolian"
-msgstr ""
+msgstr " Mongoli"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.PAIREDLIST.ITEM
 msgid  "Interlingua"
@@ -2524,8 +2502,9 @@ msgid  "Occitan"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Khmer"
-msgstr ""
+msgstr "Khmer"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.PAIREDLIST.ITEM
 msgid  "Kurdish (Turkey)"
@@ -2556,8 +2535,9 @@ msgid  "Swahili (Tanzania)"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Lao"
-msgstr ""
+msgstr " Laawo"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.PAIREDLIST.ITEM
 msgid  "Irish"
@@ -2568,8 +2548,9 @@ msgid  "Tibetan (PR China)"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Georgian"
-msgstr ""
+msgstr " Zeorzi"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.PAIREDLIST.ITEM
 msgid  "Frisian"
@@ -2584,8 +2565,9 @@ msgid  "Zulu"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Vietnamese"
-msgstr ""
+msgstr " Vietnam senni"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.PAIREDLIST.ITEM
 msgid  "Breton"
@@ -2624,8 +2606,9 @@ msgid  "Xhosa"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PAIREDLIST.ITEM
+#, fuzzy
 msgid  "Sinhala"
-msgstr ""
+msgstr "Sinhala"
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.PAIREDLIST.ITEM
 msgid  "Moore"
@@ -3016,12 +2999,14 @@ msgid  "Original Text"
 msgstr ""
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GROUPBOX.TEXT
+#, fuzzy
 msgid  "Comment"
-msgstr ""
+msgstr "  Filla"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.EDIT.TEXT
+#, fuzzy
 msgid  "~Comment"
-msgstr ""
+msgstr "  Filla"
 
 #: plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PUSHBUTTON.TEXT
 msgid  "~Select"
@@ -3084,5 +3069,6 @@ msgid  "Setup"
 msgstr ""
 
 #: ../workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.STRING.TEXT
+#, fuzzy
 msgid  "Finish"
-msgstr ""
+msgstr " Benandi"

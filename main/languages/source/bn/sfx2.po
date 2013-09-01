@@ -32,32 +32,39 @@ msgstr ""
 
 
 #: menu/menu.src#STR_MENU_CFGITEM.STRING.TEXT
+#, fuzzy
 msgid  "Configuration Menu"
-msgstr ""
+msgstr "বহি:বিন্যাস তালিকা"
 
 #: menu/menu.src#STR_MENU_ADDONS.STRING.TEXT
+#, fuzzy
 msgid  "~Add-Ons"
-msgstr ""
+msgstr "অতিরিক্ত উপাদানসমূহ (~A)"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Cu~t"
-msgstr ""
+msgstr "কেটে ফেলুন (~t)"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Copy"
-msgstr ""
+msgstr "অনুলিপি করুন (~c)"
 
 #: menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Paste"
-msgstr ""
+msgstr "প্রতিলেপন করুন (~p)"
 
 #: menu/menu.src#SID_WIN_FULLSCREEN.STRING.TEXT
+#, fuzzy
 msgid  "Leave Full-Screen Mode"
-msgstr ""
+msgstr "সম্পুর্ণ পর্দা জুড়ে দেখানো বাদ দিন"
 
 #: menu/menu.src#STR_MENU_ADDONHELP.STRING.TEXT
+#, fuzzy
 msgid  "Add-~On Help"
-msgstr ""
+msgstr "এড-অন সহায়তা (~O)"
 
 #: menu/menu.src#STR_MENU_SYNONYMS.STRING.TEXT
 msgid  "Synonyms"
@@ -72,788 +79,933 @@ msgid  "~Thesaurus..."
 msgstr ""
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM1.ITEMLIST.ITEM
+#, fuzzy
 msgid  "My Templates"
-msgstr ""
+msgstr "আমার খসড়াসমূহ"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM2.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Business Correspondence"
-msgstr ""
+msgstr "ব্যবসা সাদৃশ্য"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM3.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Other Business Documents"
-msgstr ""
+msgstr "অন্যান্য ব্যবসার নথিসমূহ"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM4.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Personal Correspondence and Documents"
-msgstr ""
+msgstr "ব্যক্তিগত সাদৃশ্য এবং নথিসমূহ"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM5.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Forms and Contracts"
-msgstr ""
+msgstr "ফর্ম এবং যোগাযোগসমূহ"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM6.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Finances"
-msgstr ""
+msgstr "অর্থনীতি ও ব্যবস্থাপনা বিদ্যা"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM7.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Education"
-msgstr ""
+msgstr "শিক্ষা"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM8.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Presentation Backgrounds"
-msgstr ""
+msgstr "উপস্থাপনার প্রেক্ষাপটসমূহ"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM9.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Presentations"
-msgstr ""
+msgstr "উপস্থাপনাসমূহ"
 
 #: doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.ITEM10.ITEMLIST.ITEM
+#, fuzzy
 msgid  "Miscellaneous"
-msgstr ""
+msgstr "বিবিধ"
 
 #: doc/doctempl.src#RID_CNT_STR_WAITING.STRING.TEXT
+#, fuzzy
 msgid  "The templates are being initialized for first-time usage."
-msgstr ""
+msgstr "খসড়াসমূহ প্রথম-বার ব্যাবহারের জন্য প্রস্তুত করা হযেছে।"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "খসড়াসমূহ"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "New template"
-msgstr ""
-
-#: doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FIXEDLINE.TEXT
-msgid  "Templates"
-msgstr ""
+msgstr "নতুন খসড়া"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Categories"
-msgstr ""
+msgstr "শ্রেনীবিভাগসমূহ (~C)"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Templates"
-msgstr ""
+msgstr "খসড়াসমূহ (~T)"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "সম্পাদনা করুন (~E)"
 
 #: doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Organizer..."
-msgstr ""
-
-#: doc/doc.src#MSG_CONFIRM_FILTER.QUERYBOX.MESSAGE
-msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
-
-#: doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QUERYBOX.MESSAGE
-msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "সংগঠক... (~O)"
 
 #: doc/doc.src#STR_DELETE_REGION.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to delete the region \"$1\"?"
-msgstr ""
+msgstr "আপনি কি নিশ্চিত আপনি \"$1\" এলাকা মুছে ফেলতে চান?"
 
 #: doc/doc.src#STR_DELETE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Are you sure you want to delete the entry \"$1\"?"
-msgstr ""
-
-#: doc/doc.src#MSG_REGION_NOTEMPTY.QUERYBOX.MESSAGE
-msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "আপনি কি নিশ্চিত আপনি \"$1\" এন্ট্রি মুছে ফেলতে চান?"
 
 #: doc/doc.src#STR_QUERY_SAVE_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "\"$(DOC)\" নথি পরিবর্তন করা হয়েছে।\nআপনি কি আপনার পরিরর্তনসমূহ সংরক্ষণ করতে চান?"
 
 #: doc/doc.src#STR_STYLES.STRING.TEXT
+#, fuzzy
 msgid  "Styles"
-msgstr ""
+msgstr "শৈলীসমূহ"
 
 #: doc/doc.src#STR_MACROS.STRING.TEXT
+#, fuzzy
 msgid  "Macros"
-msgstr ""
+msgstr "ম্যাক্রোসমূহ"
 
 #: doc/doc.src#STR_CONFIG.STRING.TEXT
+#, fuzzy
 msgid  "Configuration"
-msgstr ""
+msgstr "পছন্দসই বিন্যাসন"
 
 #: doc/doc.src#STR_PRINT_STYLES_HEADER.STRING.TEXT
+#, fuzzy
 msgid  "Styles in "
-msgstr ""
+msgstr "শৈলীসমূহ তে"
 
 #: doc/doc.src#STR_PRINT_STYLES.STRING.TEXT
+#, fuzzy
 msgid  "Printing Styles"
-msgstr ""
+msgstr "মুদ্রণ শৈলীসমূহ"
 
 #: doc/doc.src#MSG_PRINT_ERROR.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The print job could not be started."
-msgstr ""
+msgstr "মুদ্রণ কার্য আরম্ভ করা যাবে না।"
 
 #: doc/doc.src#STR_BACKUP_COPY.STRING.TEXT
+#, fuzzy
 msgid  "Copy"
-msgstr ""
+msgstr "অনুলিপি করুন"
 
 #: doc/doc.src#MSG_CANT_OPEN_TEMPLATE.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "The template could not be opened."
-msgstr ""
+msgstr "খসড়াটি খোলা যাবে না।"
 
 #: doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "Document already open for editing."
-msgstr ""
+msgstr "নথি ইতোমধ্যে সম্পাদনার জন্য খোলা হয়েছে।"
 
 #: doc/doc.src#STR_ERROR_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "Error recording document "
-msgstr ""
+msgstr "নথিটি রেকর্ডের সময়ের ত্রুটি"
 
 #: doc/doc.src#STR_TEMPLATE_FILTER.STRING.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "খসড়াসমূহ"
 
 #: doc/doc.src#STR_ERROR_COPY_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr ""
+msgstr "\"$1\" খসড়া অনুলিপি করার সময়ের ত্রুটি।\nএই নামের একটি খসড়া ইতোমধ্যে বিদ্যমান।"
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "The template \"$1\" can not be deleted."
-msgstr ""
+msgstr "\"$1\" খসড়াটি মুছে ফেলা যায় না।"
 
 #: doc/doc.src#STR_ERROR_MOVE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error moving template \"$1\"."
-msgstr ""
+msgstr "\"$1\" খসড়া সরানোর সময় ত্রুটি।"
 
 #: doc/doc.src#MSG_ERROR_RESCAN.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "The update could not be saved."
-msgstr ""
+msgstr "হালনাগাদ সংরক্ষন করা যাবে না।"
 
 #: doc/doc.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error saving template "
-msgstr ""
+msgstr "খসড়া সংরক্ষণ করার সময় ত্রুটি।"
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Error renaming template."
-msgstr ""
+msgstr "খসড়া পুনঃ নামকরণ করার সময় ত্রুটি।"
 
 #: doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Error renaming template category."
-msgstr ""
+msgstr "খসড়ার শ্রেনীবিন্যাস পুনঃ নামকরণ করার সময় ত্রুটি।"
 
 #: doc/doc.src#MSG_ERROR_EMPTY_NAME.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Please specify a name."
-msgstr ""
-
-#: doc/doc.src#MSG_ERROR_UNIQ_NAME.ERRORBOX.MESSAGE
-msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "অনুগ্রহ করে একটি নাম নির্ধারণ করুন।"
 
 #: doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
-msgstr ""
+msgstr "\"$(TEXT)\" খসড়াটি কি পূর্বনির্ধারিত খসড়ায় পরিণত হবে?"
 
 #: doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Do you want to reset the default template?"
-msgstr ""
-
-#: doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.INFOBOX.MESSAGE
-msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "আপনি কি পূর্বনির্ধারিত খসড়া পুনঃ বিন্যাস করতে চান?"
 
 #: doc/doc.src#MSG_DOCINFO_CANTREAD.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "Document info cannot be read."
-msgstr ""
+msgstr "নথির তথ্য পাঠ করা যায় না।"
 
 #: doc/doc.src#STR_ERROR_NOSTORAGE.STRING.TEXT
+#, fuzzy
 msgid  "The selected file has an incorrect format."
-msgstr ""
+msgstr "নির্বাচিত ফাইলের একটি ভুল বিন্যাস আছে।"
 
 #: doc/doc.src#STR_QUERY_MUSTOWNFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "নথিসমূহ $(FORMAT) বিন্যাসে সংরক্ষণ করা যাবে না। আপনি কি\n$(OWNFORMAT) বিন্যাস ব্যবহার করে আপনার পরিবর্তনসমূহ সংরক্ষণ করতে চান?"
 
 #: doc/doc.src#STR_SAVEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Save"
-msgstr ""
+msgstr "সংরক্ষণ করুন (~S)"
 
 #: doc/doc.src#STR_UPDATEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Update"
-msgstr ""
+msgstr "হালনাগাদ করুন (~U)"
 
 #: doc/doc.src#STR_SAVEASDOC.STRING.TEXT
+#, fuzzy
 msgid  "Save ~As..."
-msgstr ""
+msgstr "এভাবে সংরক্ষণ করুন... (~A)"
 
 #: doc/doc.src#STR_SAVECOPYDOC.STRING.TEXT
+#, fuzzy
 msgid  "Save Copy ~as..."
-msgstr ""
+msgstr "এভাবে অনুলিপি সংরক্ষণ করুন... (~A)"
 
 #: doc/doc.src#STR_CLOSEDOC.STRING.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "বন্ধ করুন (~C)"
 
 #: doc/doc.src#STR_CLOSEDOC_ANDRETURN.STRING.TEXT
+#, fuzzy
 msgid  "~Close & Return to "
-msgstr ""
+msgstr "বন্ধ করুন & ফেরত পাঠান (~C)"
 
 #: doc/doc.src#STR_WIZARD.STRING.TEXT
+#, fuzzy
 msgid  " AutoPilot"
-msgstr ""
+msgstr " AutoPilot"
 
 #: doc/doc.src#RID_STR_FILTCONFIG.STRING.TEXT
+#, fuzzy
 msgid  "Configurations"
-msgstr ""
+msgstr "পছন্দসই বিন্যাসনসমূহ"
 
 #: doc/doc.src#RID_STR_FILTBASIC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Basic libraries"
-msgstr ""
+msgstr "%PRODUCTNAME এর মৌলিক সংগ্রহশালাসমূহ"
 
 #: doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.STRING.TEXT
+#, fuzzy
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
-msgstr ""
+msgstr "\"$(ARG1)\" শৈলী কি প্রতিস্থাপন করবে?"
 
 #: doc/doc.src#STR_DOC_LOADING.STRING.TEXT
+#, fuzzy
 msgid  "Loading Document"
-msgstr ""
+msgstr "নথি লোড করছে"
 
 #: doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.STRING.TEXT
+#, fuzzy
 msgid  "Connection to: $(HOST). Waiting for response..."
-msgstr ""
+msgstr "সংযোগ করছে: $(HOST)। সাড়া পাওয়ার জন্য অপেক্ষা করছে..."
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.STRING.TEXT
+#, fuzzy
 msgid  "Opening $(TARGET) at $(HOST)"
-msgstr ""
+msgstr "$(HOST) এ $(TARGET) খুলছে"
 
 #: doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.STRING.TEXT
+#, fuzzy
 msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr ""
+msgstr "লোড করছে: $(HOST) থেকে $(TARGET)। লোডকৃত: $(BYTE)"
 
 #: doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.STRING.TEXT
+#, fuzzy
 msgid  "Disconnected"
-msgstr ""
-
-#: doc/doc.src#MSG_OPEN_READONLY.QUERYBOX.MESSAGE
-msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "বিচ্ছিন্ন"
 
 #: doc/doc.src#STR_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit"
-msgstr ""
+msgstr "সম্পাদনা করুন"
 
 #: doc/doc.src#RID_OFFICEFILTER.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Documents"
-msgstr ""
+msgstr "%PRODUCTNAME এর নথিসমূহ"
 
 #: doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.STRING.TEXT
+#, fuzzy
 msgid  "Propert~ies..."
-msgstr ""
+msgstr "বৈশিষ্ট্যসমূহ... (~i)"
 
 #: doc/doc.src#STR_FSET_FILTERNAME0.STRING.TEXT
+#, fuzzy
 msgid  "HTML (FrameSet)"
-msgstr ""
+msgstr "HTML (FrameSet)"
 
 #: doc/doc.src#STR_FSET_FILTERNAME1.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
-msgstr ""
+msgstr "%PRODUCTNAME এর ফ্রেম নথি"
 
 #: doc/doc.src#STR_TEMPL_MOVED.STRING.TEXT
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
-msgstr ""
+msgstr "প্রকৃত অবস্থানে \"$(TEMPLATE)\" খসড়াটি খুঁজে পাওয়া যায়নি। \"$(FOUND)\" এ একই নামের একটি খসড়া বিদ্যমান। এই খসড়াটি কি পরর্তীতে তুলনা করার সময় ব্যবহৃত হবে?"
 
 #: doc/doc.src#STR_TEMPL_RESET.STRING.TEXT
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgstr "\"$(TEMPLATE)\" খসড়াটি খুঁজে পাওয়া যায়নি। পরবর্তীতে নথিটি খোলা হলে খসড়াটি কি আবদ্ধ থাকবে?"
 
 #: doc/doc.src#STR_AUTOMATICVERSION.STRING.TEXT
+#, fuzzy
 msgid  "Automatically saved version"
-msgstr ""
+msgstr "স্বয়ংক্রিয়ভাবে সংরক্ষিত সংষ্করণ"
 
 #: doc/doc.src#STR_DOCTYPENAME_SW.STRING.TEXT
+#, fuzzy
 msgid  "Text Document"
-msgstr ""
+msgstr "পাঠ নথি"
 
 #: doc/doc.src#STR_DOCTYPENAME_SWWEB.STRING.TEXT
+#, fuzzy
 msgid  "HTML Document"
-msgstr ""
+msgstr "HTML নথি"
 
 #: doc/doc.src#STR_DOCTYPENAME_SWGLOB.STRING.TEXT
+#, fuzzy
 msgid  "Master Document"
-msgstr ""
+msgstr "প্রধান নথি"
 
 #: doc/doc.src#STR_DOCTYPENAME_SC.STRING.TEXT
+#, fuzzy
 msgid  "Spreadsheet"
-msgstr ""
+msgstr "স্প্রেডশীট"
 
 #: doc/doc.src#STR_DOCTYPENAME_SI.STRING.TEXT
+#, fuzzy
 msgid  "Presentation"
-msgstr ""
+msgstr "উপস্থাপনা"
 
 #: doc/doc.src#STR_DOCTYPENAME_SD.STRING.TEXT
+#, fuzzy
 msgid  "Drawing"
-msgstr ""
+msgstr "অঙ্কন"
 
 #: doc/doc.src#STR_DOCTYPENAME_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "Message"
-msgstr ""
+msgstr "বার্তা"
 
 #: doc/doc.src#STR_NOSAVEANDCLOSE.STRING.TEXT
+#, fuzzy
 msgid  "~Discard"
-msgstr ""
+msgstr "বাতিল করুন (~D)"
 
 #: doc/doc.src#STR_PACKNGO_NOACCESS.STRING.TEXT
+#, fuzzy
 msgid  "Access to the current data medium not possible."
-msgstr ""
+msgstr "বর্তমান উপাত্ত মাধ্যমে প্রবেশ সম্ভব নয়।"
 
 #: doc/doc.src#STR_PACKNGO_NEWMEDIUM.STRING.TEXT
+#, fuzzy
 msgid  "Insert the next data carrier and click OK."
-msgstr ""
+msgstr "পরবর্তী উপাত্ত পরিবাহক প্রবেশ করান এবং 'ঠিক আছে' ক্লিক করুন।"
 
 #: doc/doc.src#STR_OBJECT.STRING.TEXT
+#, fuzzy
 msgid  "Object"
-msgstr ""
+msgstr "অবজেক্ট"
 
 #: doc/doc.src#DLG_MACROQUERY.QUERYBOX.TITLE
+#, fuzzy
 msgid  "Run Macro"
-msgstr ""
+msgstr "ম্যাক্রো চালান"
 
 #: doc/doc.src#DLG_MACROQUERY.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "This document contains macros. $(TEXT)"
-msgstr ""
+msgstr "এই নথিটি ম্যাক্রোসমূহ ধারন করে।  $(TEXT)"
 
 #: doc/doc.src#BTN_OK.STRING.TEXT
+#, fuzzy
 msgid  "Run"
-msgstr ""
+msgstr "চালান"
 
 #: doc/doc.src#BTN_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "Do Not Run"
-msgstr ""
+msgstr "চালাবেন না"
 
 #: doc/doc.src#FT_CANCEL.STRING.TEXT
+#, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "নিরাপত্তা বিন্যাসন অনুসারে, এই নথির ম্যাক্রোসমূহ চালানো উচিত নয়। যাই হোক, আপনি কি এদেরকে চালাতে চান?"
 
 #: doc/doc.src#FT_OK.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to allow these macros to be run?"
-msgstr ""
+msgstr "আপনি কি এই ম্যাক্রোসমূহ চালানোর সম্মতি দিতে চান?"
 
 #: doc/doc.src#STR_EXPORTASPDF_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Export as PDF"
-msgstr ""
+msgstr "PDF হিসেবে রপ্তানী করুন"
 
 #: doc/doc.src#STR_EXPORTWITHCFGBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Export..."
-msgstr ""
+msgstr "রপ্তানী করুন..."
 
 #: doc/doc.src#STR_EXPORTBUTTON.STRING.TEXT
+#, fuzzy
 msgid  "Export"
-msgstr ""
+msgstr "রপ্তানী করুন"
 
 #: doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.STRING.TEXT
+#, fuzzy
 msgid  "Add this directory to the list of secure paths: "
-msgstr ""
+msgstr "নিরাপদ পথসমূহের তালিকায় এই নির্দেশিকাটি যুক্ত করুন:"
 
 #: doc/doc.src#STR_LABEL_FILEFORMAT.STRING.TEXT
+#, fuzzy
 msgid  "File format:"
-msgstr ""
+msgstr "ফাইল বিন্যাস:"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTAINS.STRING.TEXT
+#, fuzzy
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "এই নথিটি ধারণ করে:\n\n"
 
 #: doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.STRING.TEXT
+#, fuzzy
 msgid  "Recorded changes"
-msgstr ""
+msgstr "রেকর্ডকৃত পরির্তনসমূহ"
 
 #: doc/doc.src#STR_HIDDENINFO_NOTES.STRING.TEXT
+#, fuzzy
 msgid  "Notes"
-msgstr ""
+msgstr "নোট"
 
 #: doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.STRING.TEXT
+#, fuzzy
 msgid  "Document versions"
-msgstr ""
+msgstr "নথির সংষ্করণসমূহ"
 
 #: doc/doc.src#STR_HIDDENINFO_FIELDS.STRING.TEXT
+#, fuzzy
 msgid  "Fields"
-msgstr ""
+msgstr "ক্ষেত্রসমূহ"
 
 #: doc/doc.src#STR_HIDDENINFO_LINKDATA.STRING.TEXT
+#, fuzzy
 msgid  "Linked data..."
-msgstr ""
+msgstr "সংযোগকৃত ডাটা..."
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue saving the document?"
-msgstr ""
+msgstr "আপনি কি নথিটি সংরক্ষণ অব্যাহত রাখতে চান?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue printing the document?"
-msgstr ""
+msgstr "আপনি কি নথিটির মুদ্রণ অব্যাহত রাখতে চান?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue signing the document?"
-msgstr ""
+msgstr "আপনি কি নথিটিতে স্বাক্ষর করা অব্যাহত রাখতে চান?"
 
 #: doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to continue creating a PDF file?"
-msgstr ""
+msgstr "আপনি কি PDF ফাইল তৈরি করা অব্যাহত রাখতে চান?"
 
 #: doc/doc.src#STR_NEW_FILENAME_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr ""
+msgstr "আপনি যদি প্রকৃত নথিটি উপরিলিখন করতে না চান, তবে আপনাকে আপনার কার্য একটি নতুন ফাইল নামের অধীনে সংরক্ষন করতে হবে। "
 
 #: doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.STRING.TEXT
+#, fuzzy
 msgid  "Some template files are protected and can not be deleted."
-msgstr ""
+msgstr "কিছু খসড়া ফাইলসমূহ সংরক্ষিত এবং মুছে ফেলা যাবে না।"
 
 #: doc/doc.src#STR_DOCINFO_INFOFIELD.STRING.TEXT
+#, fuzzy
 msgid  "Info %1"
-msgstr ""
+msgstr "%1 তথ্য"
 
 #: doc/doc.src#STR_SHARED.STRING.TEXT
+#, fuzzy
 msgid  " (shared)"
-msgstr ""
+msgstr " (শেয়ারকৃত)"
 
 #: doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.STRING.TEXT
+#, fuzzy
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr ""
-
-#: doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
-msgstr ""
+msgstr "নথিটির বিন্যাস সংস্করণ টুল-পছন্দ-লোড/সংরক্ষণ-সাধারণ এর ODF 1.1 (OpenOffice.org 2.x) এ নির্ধারণ করা আছে। স্বাক্ষরকরণ নথিসমূহের ODF 1.2 (OpenOffice.org 3.x) প্রয়োজন।"
 
 #: doc/doc.src#STR_QRYTEMPL_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr ""
+msgstr "মাপনদন্ড '$(ARG1)' যার উপর নথিটির ভিত্তি,সেটি পরিবর্তন করা হয়েছে। পরিবর্তিত খসড়া অনুসারে কি আপনি শৈলী ভিত্তিক বিন্যাসন হালনাগাদ করতে চান?"
 
 #: doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.STRING.TEXT
+#, fuzzy
 msgid  "~Update Styles"
-msgstr ""
+msgstr "হালনাগাদকরণ শৈলীসমূহ (~U)"
 
 #: doc/doc.src#STR_QRYTEMPL_KEEP_BTN.STRING.TEXT
+#, fuzzy
 msgid  "~Keep Old Styles"
-msgstr ""
+msgstr "পুরাতন শৈলীসমূহ রাখুন (~U)"
 
 #: doc/docvor.src#DLG_ORGANIZE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Template Management"
-msgstr ""
+msgstr "খসড়া ব্যবস্থাপনা"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "বন্ধ করুন"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~File..."
-msgstr ""
+msgstr "ফাইল... (~F)"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Address Book..."
-msgstr ""
+msgstr "ঠিকানা বই... (~A)"
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "খসড়াসমূহ"
 
 #: doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.DEFAULT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Documents"
-msgstr ""
-
-#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Templates"
-msgstr ""
-
-#: doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.DEFAULT.STRINGLIST.ITEM
-msgid  "Documents"
-msgstr ""
+msgstr "নথিসমূহ"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MENUBUTTON.TEXT
+#, fuzzy
 msgid  "Commands"
-msgstr ""
+msgstr "আদেশসমূহ"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "~New"
-msgstr ""
+msgstr "নতুন (~N)"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "মুছে ফেলুন (~D)"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Edit"
-msgstr ""
+msgstr "সম্পাদনা করুন (~E)"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MENUITEM.TEXT
+#, fuzzy
 msgid  "Import Template..."
-msgstr ""
+msgstr "খসড়া আমদানি করুন..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MENUITEM.TEXT
+#, fuzzy
 msgid  "Export Template..."
-msgstr ""
+msgstr "খসড়া রপ্তানী করুন..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MENUITEM.TEXT
+#, fuzzy
 msgid  "~Print"
-msgstr ""
+msgstr "মুদ্রণ করুন (~P)"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MENUITEM.TEXT
+#, fuzzy
 msgid  "Printer Settings..."
-msgstr ""
+msgstr "মুদ্রক বিন্যাসনসমূহ..."
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Update"
-msgstr ""
+msgstr "হালনাগাদ করুন"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Set As Default Template"
-msgstr ""
+msgstr "পূর্বনির্ধারিত খসড়া হিসেবে নির্ধারণ করুন"
 
 #: doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Reset Default Template"
-msgstr ""
+msgstr "পূর্বনির্ধারিত খসড়া পুনঃনির্ধারণ করুন"
 
 #: doc/new.src#DLG_NEW_FILE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "New"
-msgstr ""
+msgstr "নতুন"
 
 #: doc/new.src#DLG_NEW_FILE.FT_REGION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Categories"
-msgstr ""
+msgstr "শ্রেনীবিভাগসমূহ (~C)"
 
 #: doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "T~emplates"
-msgstr ""
+msgstr "খসড়াসমূহ (~e)"
 
 #: doc/new.src#DLG_NEW_FILE.BT_MORE.MOREBUTTON.TEXT
+#, fuzzy
 msgid  "~More"
-msgstr ""
+msgstr "আরও (~M)"
 
 #: doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Pre~view"
-msgstr ""
+msgstr "প্রাকবীক্ষণ (~v)"
 
 #: doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "বর্ণনা"
 
 #: doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Te~xt"
-msgstr ""
+msgstr "পাঠ (~x)"
 
 #: doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Frame"
-msgstr ""
+msgstr "কাঠামো (~F)"
 
 #: doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Pages"
-msgstr ""
+msgstr "পৃষ্ঠাসমূহ (~P)"
 
 #: doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "N~umbering"
-msgstr ""
+msgstr "ক্রমিকায়ণ (~u)"
 
 #: doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Overwrite"
-msgstr ""
+msgstr "উপরিলিখন (~O)"
 
 #: doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "From File..."
-msgstr ""
+msgstr "ফাইল থেকে..."
 
 #: doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Load Styles"
-msgstr ""
+msgstr "শৈলীসমুহ লোড করুন"
 
 #: doc/new.src#DLG_NEW_FILE.FT_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "শিরোনাম (~T)"
 
 #: doc/new.src#DLG_NEW_FILE.FT_THEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Subject"
-msgstr ""
+msgstr "বিষয়"
 
 #: doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Key words"
-msgstr ""
+msgstr "মূল শব্দসমূহ (~K)"
 
 #: doc/new.src#DLG_NEW_FILE.FT_DESC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Description"
-msgstr ""
+msgstr "বর্ণনা (~D)"
 
 #: bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.STRING.TEXT
+#, fuzzy
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "নির্বাচিত পরিশ্রুতক $(FILTER) সংস্থাপিত হয়নি।\nআপনি কি এটি এখন করতে চান?"
 
 #: bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.STRING.TEXT
+#, fuzzy
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "নির্বাচিত ফিল্টার $(FILTER) আপনার সংস্করণে অন্তর্ভুক্ত নয়। \nআমাদের হোমপেজ হতে ক্রমানুসার সম্পর্কে আপনার তথ্য খুজে পেতে পারেন।"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Reduce print data"
-msgstr ""
+msgstr "মুদ্রণ উপাত্ত কমান"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Settings for"
-msgstr ""
+msgstr "এর জন্য বিন্যাসনসমূহ"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~Printer"
-msgstr ""
+msgstr "মুদ্রক (~P)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Print to ~file"
-msgstr ""
+msgstr "ফাইলে মুদ্রণ করুন (~f)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Reduce transparency"
-msgstr ""
+msgstr "স্বচ্ছতা হ্রাস করুন (~R)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Auto~matically"
-msgstr ""
+msgstr "স্বয়ংক্রিয়ভাবে (~m)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~No transparency"
-msgstr ""
+msgstr "কোনো স্বচ্ছতা নেই  (~N)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Reduce ~gradients"
-msgstr ""
+msgstr "ঢালের মাত্রা হ্রাস করুন (~g)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Gradient ~stripes"
-msgstr ""
+msgstr "ঢালের মাত্রার ডোরাকাটাসমূহ (~s)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Intermediate ~color"
-msgstr ""
+msgstr "মধ্যবর্তী রং (~c)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Reduce ~bitmaps"
-msgstr ""
+msgstr "বিটম্যাপসমূহ হ্রাস করুন (~b)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "~High print quality"
-msgstr ""
+msgstr "উচ্চ মুদ্রণ গুনমান (~H)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "N~ormal print quality"
-msgstr ""
+msgstr "সাধারণ মুদ্রন গুনমান (~o)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Reso~lution"
-msgstr ""
+msgstr "রেসুলেশন (~l)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "72 DPI"
-msgstr ""
+msgstr "৭২ DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "96 DPI"
-msgstr ""
+msgstr "৯৬ DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "150 DPI (Fax)"
-msgstr ""
+msgstr "১৫০ DPI (ফ্যাক্স)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "200 DPI (default)"
-msgstr ""
+msgstr "২০০ DPI (পূর্ব নির্ধারিত)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "300 DPI"
-msgstr ""
+msgstr "৩০০ DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.STRINGLIST.ITEM
+#, fuzzy
 msgid  "600 DPI"
-msgstr ""
+msgstr "৬০০ DPI"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Include transparent ob~jects"
-msgstr ""
+msgstr "স্বচ্ছ অবজেক্টসমূহ অন্তর্ভক্ত করুন (~j)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Con~vert colors to grayscale"
-msgstr ""
+msgstr "ধূসর রং এ রুপান্তর করুন। (~v)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Printer warnings"
-msgstr ""
+msgstr "মুদ্রক সতর্কতাসমূহ"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "P~aper size"
-msgstr ""
+msgstr "কাগজের আকার (~a)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Pap~er orientation"
-msgstr ""
+msgstr "কাগজের পরিস্থিতি (~e)"
 
 #: dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Transparency"
-msgstr ""
+msgstr "স্বচ্ছতা (~T)"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Warning"
-msgstr ""
+msgstr "সতর্কতা"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr "আপনার নথি স্বচ্ছ অবজেক্টসমূহ ধারণ করে।\nএটি সম্ভবত কিছু মুদ্রকসমূহে মুদ্রনের জন্য দীর্ঘ সময় নিতে পারে।\nস্বচ্ছতার এই দৃষ্টিভঙ্গি কি হ্রাস করা হবে?"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Yes"
-msgstr ""
+msgstr "হ্যাঁ (~y)"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~No"
-msgstr ""
+msgstr "না (~n)"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Cancel"
-msgstr ""
+msgstr "বাতিল করুন (~C)"
 
 #: dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Do not show warning again"
-msgstr ""
+msgstr "পুনরায় সতর্কতা প্রদর্শন করবেন না (~D)"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Style Catalog"
-msgstr ""
+msgstr "শৈলীর সুবিন্যস্ত তালিকা"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Organizer..."
-msgstr ""
+msgstr "সংগঠক... (~O)"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete..."
-msgstr ""
+msgstr "মুছে ফেলুন... (~D)"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Modify..."
-msgstr ""
+msgstr "পরিবর্তন করুন... (~M)"
 
 #: dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~New..."
-msgstr ""
+msgstr "নতুন... (~N)"
 
 #: dialog/templdlg.src#STR_STYLE_ELEMTLIST.STRING.TEXT
 msgid  "Style List"
 msgstr ""
 
 #: dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.STRING.TEXT
+#, fuzzy
 msgid  "Hierarchical"
-msgstr ""
+msgstr "ক্রমবিভক্ত"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.DOCKINGWINDOW.TEXT
+#, fuzzy
 msgid  "Styles and Formatting"
-msgstr ""
+msgstr "শৈলীসমূহ এবং বিন্যাসকরণ"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Fill Format Mode"
-msgstr ""
+msgstr "বিন্যাস পরিমন্ডল পূরণ করুন"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "New Style from Selection"
-msgstr ""
+msgstr "নির্বাচন থেকে নতুন শৈলী"
 
 #: dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.TOOLBOXITEM.TEXT
+#, fuzzy
 msgid  "Update Style"
-msgstr ""
+msgstr "শৈলী হালনাগাদ করুন"
 
 #: dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FIXEDLINE.TEXT
 msgid  "File encryption password"
@@ -916,584 +1068,706 @@ msgid  "Incorrect password"
 msgstr ""
 
 #: dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "New versions"
-msgstr ""
+msgstr "নতুন সংষ্করণসমূহ"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Save ~New Version"
-msgstr ""
+msgstr "নতুন সংষ্করণ সংরক্ষণ করুন (~N)"
 
 #: dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Always save a version on closing"
-msgstr ""
+msgstr "বন্ধ করার সময় সবসময় একটি সংষ্করণ সংরক্ষণ করুন (~A)"
 
 #: dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Existing versions"
-msgstr ""
+msgstr "বিদ্যমান সংষ্করণসমূহ "
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Date and time"
-msgstr ""
+msgstr "তারিখ এবং সময়"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Saved by"
-msgstr ""
+msgstr "এর দ্বারা সংরক্ষিত"
 
 #: dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Comments"
-msgstr ""
+msgstr "মন্তব্যসমূহ"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "বন্ধ করুন"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Open"
-msgstr ""
+msgstr "খুলুন"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Show..."
-msgstr ""
+msgstr "দেখান... (~S)"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "মুছে ফেলুন (~D)"
 
 #: dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Compare"
-msgstr ""
+msgstr "তুলনা করুন"
 
 #: dialog/versdlg.src#DLG_VERSIONS.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Versions of"
-msgstr ""
+msgstr "এর সংস্করণ"
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Date and time : "
-msgstr ""
+msgstr "তারিখ এবং সময় :"
 
 #: dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Saved by "
-msgstr ""
+msgstr "এর দ্বারা সংরক্ষিত"
 
 #: dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
+msgstr "বন্ধ করুন (~C)"
 
 #: dialog/versdlg.src#DLG_COMMENTS.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "Insert Version Comment"
-msgstr ""
+msgstr "সংস্করণ মন্তব্য প্রবেশ করান"
 
 #: dialog/versdlg.src#DLG_COMMENTS.STRING.TEXT
+#, fuzzy
 msgid  "Version comment"
-msgstr ""
+msgstr "সংস্করণ মন্তব্য"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Name"
-msgstr ""
+msgstr "নাম (~N)"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~AutoUpdate"
-msgstr ""
+msgstr "AutoUpdate (~A)"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Ne~xt Style"
-msgstr ""
+msgstr "পরবর্তী শৈলী (~x)"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Linked with"
-msgstr ""
+msgstr "এর সঙ্গে সংযুক্ত"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Category"
-msgstr ""
+msgstr "প্রকারভেদ (~C)"
 
 #: dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Contains"
-msgstr ""
+msgstr "ধারণ করে"
 
 #: dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.STRING.TEXT
+#, fuzzy
 msgid  "Current version"
-msgstr ""
+msgstr "বর্তমান সংষ্করণ"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.STRING.TEXT
+#, fuzzy
 msgid  "Export"
-msgstr ""
+msgstr "রপ্তানি করুন"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr "প্রবেশ করান"
 
 #: dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.STRING.TEXT
+#, fuzzy
 msgid  "~Insert"
-msgstr ""
+msgstr "প্রবেশ করান (~I)"
 
 #: dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.STRING.TEXT
+#, fuzzy
 msgid  "<All formats>"
-msgstr ""
+msgstr "<সব বিন্যাস>"
 
 #: dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.STRING.TEXT
+#, fuzzy
 msgid  "~Automatic file name extension"
-msgstr ""
+msgstr "স্বয়ংক্রিয় ফাইল নামের সংযোজন (~A)"
 
 #: dialog/filedlghelper.src#STR_CB_SELECTION.STRING.TEXT
+#, fuzzy
 msgid  "~Selection"
-msgstr ""
+msgstr "নির্বাচন (~S)"
 
 #: dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.STRING.TEXT
+#, fuzzy
 msgid  "~Link"
-msgstr ""
+msgstr "সংযোগ (~L)"
 
 #: dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.STRING.TEXT
+#, fuzzy
 msgid  "Pr~eview"
-msgstr ""
+msgstr "প্রাকবীক্ষণ (~e)"
 
 #: dialog/filedlghelper.src#STR_CB_READONLY.STRING.TEXT
+#, fuzzy
 msgid  "~Read-only"
-msgstr ""
+msgstr "শুধুমাত্র-পাঠযোগ্য (~R)"
 
 #: dialog/filedlghelper.src#STR_CB_PASSWORD.STRING.TEXT
+#, fuzzy
 msgid  "Save with ~password"
-msgstr ""
+msgstr "গুপ্তসংকেত সহ সংরক্ষণ করুন (~p)"
 
 #: dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Edit ~filter settings"
-msgstr ""
+msgstr "পরিশ্রুতক বিন্যাসনসমূহ সম্পাদনা করুন (~f)"
 
 #: dialog/filedlghelper.src#STR_PB_PLAY.STRING.TEXT
+#, fuzzy
 msgid  "~Play"
-msgstr ""
+msgstr "শুরু করুন (~P)"
 
 #: dialog/filedlghelper.src#STR_PB_STOP.STRING.TEXT
+#, fuzzy
 msgid  "Sto~p"
-msgstr ""
+msgstr "থামুন (~p)"
 
 #: dialog/filedlghelper.src#STR_PB_OPEN.STRING.TEXT
+#, fuzzy
 msgid  "~Open"
-msgstr ""
+msgstr "খুলুন (~O)"
 
 #: dialog/filedlghelper.src#STR_PB_SAVE.STRING.TEXT
+#, fuzzy
 msgid  "~Save"
-msgstr ""
+msgstr "সংরক্ষণ করুন (~S)"
 
 #: dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Style:"
-msgstr ""
+msgstr "শৈলী:"
 
 #: dialog/filedlghelper.src#STR_LB_TEMPLATES.STRING.TEXT
+#, fuzzy
 msgid  "~Templates:"
-msgstr ""
+msgstr "খসড়াসমূহ (~T):"
 
 #: dialog/filedlghelper.src#STR_LB_VERSION.STRING.TEXT
+#, fuzzy
 msgid  "~Version:"
-msgstr ""
+msgstr "সংষ্করণ (~V):"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.MODELESSDIALOG.TEXT
+#, fuzzy
 msgid  "Find on this Page"
-msgstr ""
+msgstr "এই পৃষ্ঠায় খুঁজুন"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Search for"
-msgstr ""
+msgstr "এর জন্য অনুসন্ধান করুন (~S)"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Whole words only"
-msgstr ""
+msgstr "শুধুমাত্র সম্পূর্ণ শব্দ (~W)"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Match case"
-msgstr ""
+msgstr "সাদৃশ্যতা মেলানো (~M)"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Wrap ~around"
-msgstr ""
+msgstr "চারিদিকে গুটিয়ে ফেলুন (~a)"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Backwards"
-msgstr ""
+msgstr "পশ্চাৎগামী (~B)"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
-msgstr ""
+msgstr "খুঁজুন (~F)"
 
 #: dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Close"
-msgstr ""
-
-#: dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.STRING.TEXT
-msgid  "Wrap ~around"
-msgstr ""
+msgstr "বন্ধ করুন (~C)"
 
 #: dialog/passwd.src#DLG_PASSWD.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Enter Password"
-msgstr ""
+msgstr "গুপ্তসংকেত প্রবেশ করান"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~User"
-msgstr ""
+msgstr "ব্যবহারকারী (~U)"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Password"
-msgstr ""
+msgstr "গুপ্তসংকেত (~P)"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Confirm"
-msgstr ""
+msgstr "নিশ্চিত করুন (~C)"
 
 #: dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Password"
-msgstr ""
+msgstr "গুপ্তসংকেত"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "P~assword"
-msgstr ""
+msgstr "গুপ্তসংকেত"
 
 #: dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Confir~m"
-msgstr ""
-
-#: dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.STRING.TEXT
-msgid  "Password"
-msgstr ""
+msgstr "নিশ্চিত করুন (~C)"
 
 #: dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME document"
-msgstr ""
+msgstr "%PRODUCTNAME এর নথি"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Title"
-msgstr ""
+msgstr "শিরোনাম (~T)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Subject"
-msgstr ""
+msgstr "বিষয় (~S)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Keywords"
-msgstr ""
+msgstr "মূলশব্দসমূহ (~K)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Comments"
-msgstr ""
+msgstr "মন্তব্যসমূহ (~C)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Type:"
-msgstr ""
+msgstr "ধরন:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Read-only"
-msgstr ""
+msgstr "শুধুমাত্র-পাঠযোগ্য (~R)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Location:"
-msgstr ""
+msgstr "অবস্থান:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Size:"
-msgstr ""
+msgstr "আকার:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Created:"
-msgstr ""
+msgstr "তৈরি:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Modified:"
-msgstr ""
+msgstr "পরিবর্তীত:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Digitally signed:"
-msgstr ""
+msgstr "আঙ্কিকভাবে স্বাক্ষরিত:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Digital Signature..."
-msgstr ""
+msgstr "আঙ্কিক স্বাক্ষর..."
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.STRING.TEXT
+#, fuzzy
 msgid  "Multiply signed document"
-msgstr ""
+msgstr "বহুবিধ স্বাক্ষরিত নথি"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Last printed:"
-msgstr ""
+msgstr "সর্বশেষ মুদ্রিত:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Total editing time:"
-msgstr ""
+msgstr "সর্বমোট সম্পাদনার সময়:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Revision number:"
-msgstr ""
+msgstr "পুনর্বিবেচনা সংখ্যা:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "Reset"
-msgstr ""
+msgstr "পুনঃ বিন্যাস করুন"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Apply user data"
-msgstr ""
+msgstr "ব্যবহারকারীর উপাত্ত প্রয়োগ করুন (~A)"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Template:"
-msgstr ""
+msgstr "খসড়া:"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.STRING.TEXT
+#, fuzzy
 msgid  "unknown"
-msgstr ""
+msgstr "অজানা"
 
 #: dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.STRING.TEXT
 msgid  "File Name"
 msgstr ""
 
 #: dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Info fields..."
-msgstr ""
+msgstr "তথ্য ক্ষেত্রসমূহ... (~I)"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Do not refresh automatically"
-msgstr ""
+msgstr "স্বয়ংক্রিয়ভাবে সতেজ করবেন না"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Refresh this document"
-msgstr ""
+msgstr "এই নথিটি সতেজ করুন"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "every"
-msgstr ""
+msgstr "প্রতিটি"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "seconds"
-msgstr ""
+msgstr "সেকেন্ড"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Redirect from this document"
-msgstr ""
+msgstr "এই নথি থেকে পুনঃ নির্দেশনা নিন"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "after"
-msgstr ""
-
-#: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FIXEDTEXT.TEXT
-msgid  "seconds"
-msgstr ""
+msgstr "পরে"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "to URL"
-msgstr ""
+msgstr "URL এ"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "to frame"
-msgstr ""
+msgstr "কাঠামো তে"
 
 #: dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.STRING.TEXT
+#, fuzzy
 msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
-msgstr ""
+msgstr "আপনি যদি \"%PLACEHOLDER%\" পছন্দটি নির্বাচন করেন, আপনাকে অবশ্যই একটি URL প্রবেশ করাতে হবে।"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Properties"
-msgstr ""
+msgstr "বৈশিষ্ট্যসমূহ (~P)"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.STRING.TEXT
+#, fuzzy
 msgid  "Name"
-msgstr ""
+msgstr "নাম"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.STRING.TEXT
+#, fuzzy
 msgid  "Type"
-msgstr ""
+msgstr "ধরন"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.STRING.TEXT
+#, fuzzy
 msgid  "Value"
-msgstr ""
+msgstr "মান"
 
 #: dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Add"
-msgstr ""
+msgstr "যোগ করুন (~A)"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.COMBOBOX.QUICKHELPTEXT
+#, fuzzy
 msgid  "Property Name"
-msgstr ""
+msgstr "বৈশিষ্ট্যের নাম"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM1.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Checked by"
-msgstr ""
+msgstr "এর দ্বারা তৈরি"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM2.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Client"
-msgstr ""
+msgstr "গ্রাহক"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM3.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Date completed"
-msgstr ""
+msgstr "তারিখ সম্পন্ন"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM4.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Department"
-msgstr ""
+msgstr "বিভাগ"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM5.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Destinations"
-msgstr ""
+msgstr "গন্তব্যসমূহ"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM6.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Disposition"
-msgstr ""
+msgstr "বিন্যাস"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM7.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Division"
-msgstr ""
+msgstr "বিভাগ"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM8.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Document number"
-msgstr ""
+msgstr "নথির নম্বর"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM9.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Editor"
-msgstr ""
+msgstr "সম্পাদক"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM10.STRINGLIST.ITEM
+#, fuzzy
 msgid  "E-Mail"
-msgstr ""
+msgstr "ই-মেইল"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM11.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Forward to"
-msgstr ""
+msgstr "সামনে পাঠান"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM12.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Group"
-msgstr ""
+msgstr "দল"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM13.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Info"
-msgstr ""
+msgstr "তথ্য"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM14.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Language"
-msgstr ""
+msgstr "ভাষা"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM15.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Mailstop"
-msgstr ""
+msgstr "মেইল-স্টপ"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM16.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Matter"
-msgstr ""
+msgstr "বিষয়"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM17.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Office"
-msgstr ""
+msgstr "অফিস"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM18.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Owner"
-msgstr ""
+msgstr "মালিক"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM19.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Project"
-msgstr ""
+msgstr "প্রকল্প"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM20.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Publisher"
-msgstr ""
+msgstr "প্রকাশক"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM21.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Purpose"
-msgstr ""
+msgstr "উদ্দেশ্য"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM22.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Received from"
-msgstr ""
+msgstr "এর থেকে গৃহীত"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM23.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Recorded by"
-msgstr ""
+msgstr "এর দ্বারা রেকর্ডকৃত"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM24.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Recorded date"
-msgstr ""
+msgstr "রেকর্ডকৃত তারিখ"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM25.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Reference"
-msgstr ""
+msgstr "তথ্যসম্পর্ক"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM26.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Source"
-msgstr ""
+msgstr "উৎস"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM27.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Status"
-msgstr ""
+msgstr "অবস্থা"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM28.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Telephone number"
-msgstr ""
+msgstr "টেলিফোন নম্বর"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM29.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Typist"
-msgstr ""
+msgstr "মুদ্রাক্ষরিক"
 
 #: dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ITEM30.STRINGLIST.ITEM
+#, fuzzy
 msgid  "URL"
-msgstr ""
+msgstr "URL"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "পাঠ"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.STRINGLIST.ITEM
 msgid  "DateTime"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Date"
-msgstr ""
+msgstr "তারিখ"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Duration"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Number"
-msgstr ""
+msgstr "সংখ্যা"
 
 #: dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.STRINGLIST.ITEM
+#, fuzzy
 msgid  "Yes or no"
-msgstr ""
+msgstr "হ্যাঁ বা না"
 
 #: dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.STRING.TEXT
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "Yes"
-msgstr ""
+msgstr "হ্যাঁ"
 
 #: dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RADIOBUTTON.TEXT
+#, fuzzy
 msgid  "No"
-msgstr ""
+msgstr "না"
 
 #: dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.IMAGEBUTTON.QUICKHELPTEXT
+#, fuzzy
 msgid  "Remove Property"
-msgstr ""
-
-#: dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QUERYBOX.MESSAGE
-msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
-msgstr ""
+msgstr "বৈশিষ্ট্য অপসারণ করুন"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.TABDIALOG.TEXT
+#, fuzzy
 msgid  "Properties of "
-msgstr ""
+msgstr "এর বৈশিষ্ট্যাবলী"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PAGEITEM.TEXT
+#, fuzzy
 msgid  "General"
-msgstr ""
+msgstr "সাধারণ"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Description"
-msgstr ""
+msgstr "বর্ণনা"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Custom Properties"
-msgstr ""
+msgstr "পছন্দসই বৈশিষ্ট্যসমূহ"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Internet"
-msgstr ""
+msgstr "ইন্টারনেট"
 
 #: dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PAGEITEM.TEXT
 msgid  "Security"
@@ -1501,10 +1775,6 @@ msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.MODALDIALOG.TEXT
 msgid  "Edit Duration"
-msgstr ""
-
-#: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FIXEDLINE.TEXT
-msgid  "Duration"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CHECKBOX.TEXT
@@ -1532,116 +1802,127 @@ msgid  "Min~utes"
 msgstr ""
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Seconds"
-msgstr ""
+msgstr "সেকেন্ডসমূহ"
 
 #: dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FIXEDTEXT.TEXT
 msgid  "Millise~conds"
 msgstr ""
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Edit Field Names"
-msgstr ""
+msgstr "ক্ষেত্র নামসমূহ সম্পাদনা করুন"
 
 #: dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Names"
-msgstr ""
+msgstr "নামসমূহ"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Create Style"
-msgstr ""
+msgstr "শৈলী তৈরি করুন"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Style name"
-msgstr ""
+msgstr "শৈলীর নাম"
 
 #: dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Style already exists. Overwrite?"
-msgstr ""
+msgstr "শৈলীটি ইতোমধ্যে বিদ্যমান। উপরিলিখন করতে চান?"
 
 #: dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FLOATINGWINDOW.TEXT
+#, fuzzy
 msgid  "Record Macro"
-msgstr ""
+msgstr "ম্যাক্রো রেকর্ড করুন"
 
 #: dialog/recfloat.src#STR_MACRO_LOSS.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "আপনি কি আসলেই রেকর্ডকরণ বাতিল করতে চান? এ পর্যন্ত রেকর্ডকৃত যেকোনো পদক্ষেপ হারিয়ে যাবে।"
 
 #: dialog/recfloat.src#STR_CANCEL_RECORDING.STRING.TEXT
+#, fuzzy
 msgid  "Cancel Recording"
-msgstr ""
+msgstr "রেকর্ডকরণ বাতিল করুন"
 
 #: dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAME একটি সক্রিয় ই-মেইল বিন্যাসন খুঁজে পেতে অক্ষম ছিল। অনুগ্রহ করে বিকল্প হিসেবে এই নথিটি স্থানীয়ভাবে সংরক্ষণ করুন এবং এবং এটি আপনার ই-বার্তা গ্রাহক হতে সংযোজন করুন।"
 
 #: dialog/dialog.src#STR_RESET.STRING.TEXT
+#, fuzzy
 msgid  "~Reset"
-msgstr ""
+msgstr "পুনঃ নির্ধারণ করুন (~R)"
 
 #: dialog/dialog.src#STR_APPLY.STRING.TEXT
+#, fuzzy
 msgid  "Apply"
-msgstr ""
+msgstr "প্রয়োগ করুন"
 
 #: dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.STRING.TEXT
+#, fuzzy
 msgid  "Organizer"
-msgstr ""
+msgstr "সংগঠক"
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This name is already in use."
-msgstr ""
+msgstr "এই নামটি ইতোমধ্যে ব্যবহৃত হচ্ছে।"
 
 #: dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This Style does not exist."
-msgstr ""
-
-#: dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.INFOBOX.MESSAGE
-msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
-
-#: dialog/dialog.src#MSG_POOL_STYLE_NAME.INFOBOX.MESSAGE
-msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "এই শৈলীটি বিদ্যমান নেই।"
 
 #: dialog/dialog.src#STR_DELETE_STYLE.STRING.TEXT
+#, fuzzy
 msgid  "Do you really want to delete Style $1?"
-msgstr ""
+msgstr "আপনি কি সত্যিই $1 শৈলী মুছে ফেলতে চান?"
 
 #: dialog/dialog.src#STR_DELETE_STYLE_USED.STRING.TEXT
+#, fuzzy
 msgid  "You are deleting an applied Style!\n"
-msgstr ""
+msgstr "আপনি একটি প্রয়োগকৃত শৈলী মুছে ফেলছেন!\n"
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MENUITEM.TEXT
+#, fuzzy
 msgid  "New..."
-msgstr ""
+msgstr "নতুন..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MENUITEM.TEXT
+#, fuzzy
 msgid  "Modify..."
-msgstr ""
+msgstr "পরিবর্তন করুন..."
 
 #: dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete..."
-msgstr ""
+msgstr "মুছে ফেলুন..."
 
 #: dialog/dialog.src#SID_NAVIGATOR.STRING.TEXT
+#, fuzzy
 msgid  "Navigator"
-msgstr ""
+msgstr "পরিক্রমক"
 
 #: dialog/dialog.src#SID_TASKPANE.STRING.TEXT
 msgid  "Task Pane"
 msgstr ""
 
-#: dialog/dialog.src#SID_SIDEBAR.STRING.TEXT
-msgid  "Sidebar"
-msgstr ""
-
 #: dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "Faulty password confirmation"
-msgstr ""
+msgstr "ত্রুটিপূর্ণ গুপ্তসংকেত নিশ্চিতকরণ"
 
 #: dialog/dialog.src#STR_PDF_EXPORT_SEND.STRING.TEXT
+#, fuzzy
 msgid  "Send"
-msgstr ""
+msgstr "প্রেরণ করুন"
 
 #: dialog/taskpane.src#STR_SFX_DOCK.STRING.TEXT
 msgid  "Dock"
@@ -1660,452 +1941,491 @@ msgid  "Tasks"
 msgstr ""
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "এই নথিটি সম্ভবত বিন্যাসকরণ বা বিষয়বস্তু ধারণ করে যা %FORMATNAME এর ফাইল বিন্যাসে সংরক্ষিত হতে পারে না। যাই হোক আপনি কি নথিটি এই বিন্যাসে সংরক্ষণ করতে চান?\n\nসাম্প্রতিক ODF নথি বিন্যাস ব্যবহার করুন এবং নিশ্চিত হোন যে সব বিন্যাসকরণ এবং বিষয়বস্তু সঠিকভাবে সংরক্ষিত হয়েছে।"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKBUTTON.TEXT
+#, fuzzy
 msgid  "~Keep Current Format"
-msgstr ""
+msgstr "বর্তমান বিন্যাস রাখুন (~K)"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CANCELBUTTON.TEXT
+#, fuzzy
 msgid  "~Save in ODF Format"
-msgstr ""
+msgstr "ODF বিন্যাসে সংরক্ষণ করুন (~S)"
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HELPBUTTON.TEXT
+#, fuzzy
 msgid  "~More Information..."
-msgstr ""
+msgstr "আরও তথ্য (~M)..."
 
 #: dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Ask when not saving in ODF format"
-msgstr ""
+msgstr "যখন ODF বিন্যাসে সংরক্ষণ হবে না তখন জিজ্ঞাসা করুন (~A)"
 
 #: view/view.src#STR_NODEFPRINTER.STRING.TEXT
+#, fuzzy
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "কোনো পূর্ব নির্ধারিত মুদ্রক খুঁজে পাওয়া যায়নি।\nঅনুগ্রহ করে একটি মুদ্রক  পছন্দ করুন এবং আবার চেষ্টা করুন। "
 
 #: view/view.src#STR_NOSTARTPRINTER.STRING.TEXT
+#, fuzzy
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "মুদ্রক চালু করা যাবেনা।\nঅনুগ্রহ করে আপনার মুদ্রকের বিন্যাসন পরীক্ষা করুন।"
 
 #: view/view.src#STR_PRINTER_NOTAVAIL.STRING.TEXT
+#, fuzzy
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "নথিটি মুদ্রক $1 এর জন্য বিন্যস্ত করা হয়েছে। নির্ধারিত  মুদ্রক প্রাপ্তিসাধ্য নয়।\nআপনি কি আদর্শ মুদ্রক $2 ব্যবহার করতে চান?"
 
 #: view/view.src#STR_PRINT_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options..."
-msgstr ""
+msgstr "পছন্দসমূহ..."
 
 #: view/view.src#STR_PRINT_OPTIONS_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Printer Options"
-msgstr ""
+msgstr "মুদ্রক পছন্দসমূহ"
 
 #: view/view.src#STR_ERROR_PRINTER_BUSY.STRING.TEXT
+#, fuzzy
 msgid  "Printer busy"
-msgstr ""
+msgstr "মুদ্রকটি ব্যস্ত"
 
 #: view/view.src#STR_ERROR_PRINT.STRING.TEXT
+#, fuzzy
 msgid  "Error while printing"
-msgstr ""
+msgstr "মুদ্রনের সময় ত্রুটি ছিল"
 
 #: view/view.src#STR_PRINTING.STRING.TEXT
+#, fuzzy
 msgid  "Printing"
-msgstr ""
+msgstr "মুদ্রিত হচ্ছে"
 
 #: view/view.src#STR_PAGE.STRING.TEXT
+#, fuzzy
 msgid  "Page "
-msgstr ""
+msgstr "পৃষ্ঠা"
 
 #: view/view.src#STR_ERROR_SAVE_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Error saving template "
-msgstr ""
+msgstr "ত্রুটি সংরক্ষন মাপনদন্ড "
 
 #: view/view.src#STR_READONLY.STRING.TEXT
+#, fuzzy
 msgid  " (read-only)"
-msgstr ""
+msgstr " (শুধু পাঠযোগ্য)"
 
 #: view/view.src#STR_PRINT_NEWORI.STRING.TEXT
+#, fuzzy
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "পৃষ্ঠার আকৃতি এবং পরিস্থিতি পরিবর্তন করা হয়েছে।\nআপনি কি নতুন বিন্যাসন সক্রিয় নথিতে সংরক্ষন করতে চান?"
 
 #: view/view.src#STR_PRINT_NEWSIZE.STRING.TEXT
+#, fuzzy
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
-
-#: view/view.src#STR_PRINT_NEWORISIZE.STRING.TEXT
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "পৃষ্ঠার আকৃতি পরিবর্তন করা হয়েছে।\nনতুন বিন্যাসন কি সক্রিয় নথিতে সংরক্ষন করা প্রয়োজন?"
 
 #: view/view.src#STR_PREVIEW_DOCINFO.STRING.TEXT
+#, fuzzy
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgstr "<html><বডি BGCOLOR=\"#c0c0c0\"><ফন্ট ফেস=\"এরিয়াল\"><dl><dt><b>শিরোনাম:</b><dd>$(শিরোনাম)<dt><b>বিষয়:</b><dd>$(রুপরেখা)<dt><b>মূলশব্দ:</b><dd>$(মূলশব্দ)<dt><b>বর্ণনা:</b><dd>$(পাঠ্য)</dl></font></body></html>"
 
 #: view/view.src#STR_PREVIEW_NODOCINFO.STRING.TEXT
+#, fuzzy
 msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
-
-#: view/view.src#MSG_CANT_CLOSE.INFOBOX.MESSAGE
-msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><ফন্ট ফেস=\"এরিয়াল\"><B>কোনো নথি বৈশিষ্ট্য খুজে পাওয়া যায়নি। </B></FONT></P></BODY></HTML>"
 
 #: view/view.src#DLG_PRINTMONITOR_TEXT.#DEFINE.TEXT
+#, fuzzy
 msgid  "Print Monitor"
-msgstr ""
+msgstr "মুদ্রক মনিটর"
 
 #: view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "is being printed on"
-msgstr ""
+msgstr "মুদ্রন চলছে"
 
 #: view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.STRING.TEXT
+#, fuzzy
 msgid  "is being prepared for printing"
-msgstr ""
-
-#: view/view.src#MSG_ERROR_SEND_MAIL.INFOBOX.MESSAGE
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
+msgstr "মুদ্রনের জন্য তৈরি হচ্ছে"
 
 #: view/view.src#MSG_QUERY_OPENASTEMPLATE.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "সম্ভবত প্রবেশাধিকার হারিয়ে যাবার ফলে এই নথিটি সম্পাদনা করা যাবেনা। আপনি কি নথিটির একটি অনুলিপি সম্পাদনা করতে চান?"
 
 #: view/view.src#STR_REPAIREDDOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  " (repaired document)"
-msgstr ""
+msgstr "(পুনঃমেরামতকৃত নথি)"
 
 #: view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
-
-#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_CUSTOMIZATION.STRING.TEXT
-msgid  "Customization"
-msgstr ""
-
-#: sidebar/Sidebar.src#RID_SIDEBAR_RESOURCE.STRING_RESTORE.STRING.TEXT
-msgid  "Restore Default"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_MORE_OPTIONS.STRING.TEXT
-msgid  "More Options"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_CLOSE_DECK.STRING.TEXT
-msgid  "Close Sidebar Deck"
-msgstr ""
-
-#: sidebar/Sidebar.src#SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX.STRING.TEXT
-msgid  "Panel: "
-msgstr ""
+msgstr "%PRODUCTNAME আপনার পদ্ধতিতে  কোনো ওয়েব ব্রাউজার খুঁজে পায়নি। অনুগ্রহ করে ডেস্কটপ পছন্দসমূহ  পরীক্ষা করে দেখুন অথবা ব্রাউজার সংস্থাপনের সময় অনুরোধকৃত পূর্ব নির্ধারিত অবস্থানে একটি ওযেব ব্রাউজার (উদহারণস্বরুপ, মজিলা) সংস্থাপন করুন।"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Modify Link"
-msgstr ""
+msgstr "সংযোগ পরিবর্তন করুন"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Application:"
-msgstr ""
+msgstr "প্রয়োগন (~A):"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~File:"
-msgstr ""
+msgstr "নথি (~F):"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Category:"
-msgstr ""
+msgstr "শ্রেনীবিন্যাস (~C):"
 
 #: appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FIXEDLINE.TEXT
+#, fuzzy
 msgid  "Modify link"
-msgstr ""
+msgstr "সংযোগ পরিবর্তন করুন"
 
 #: appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.STRING.TEXT
 msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: appl/app.src#STR_NONAME.STRING.TEXT
+#, fuzzy
 msgid  "Untitled"
-msgstr ""
+msgstr "শিরোনামহীন"
 
 #: appl/app.src#STR_CLOSE.STRING.TEXT
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "বন্ধ করুন"
 
 #: appl/app.src#STR_STYLE_FILTER_AUTO.STRING.TEXT
+#, fuzzy
 msgid  "Automatic"
-msgstr ""
+msgstr "স্বয়ংক্রিয়"
 
 #: appl/app.src#STR_STANDARD_SHORTCUT.STRING.TEXT
+#, fuzzy
 msgid  "Standard"
-msgstr ""
+msgstr "আদর্শ"
 
 #: appl/app.src#STR_BYTES.STRING.TEXT
+#, fuzzy
 msgid  "Bytes"
-msgstr ""
+msgstr "বাইটসমূহ"
 
 #: appl/app.src#STR_KB.STRING.TEXT
+#, fuzzy
 msgid  "KB"
-msgstr ""
+msgstr "কিলোবাইট"
 
 #: appl/app.src#STR_MB.STRING.TEXT
+#, fuzzy
 msgid  "MB"
-msgstr ""
+msgstr "মেগাবাইট"
 
 #: appl/app.src#STR_GB.STRING.TEXT
+#, fuzzy
 msgid  "GB"
-msgstr ""
+msgstr "গিগাবাইট"
 
 #: appl/app.src#MSG_QUERY_LASTVERSION.QUERYBOX.MESSAGE
+#, fuzzy
 msgid  "Cancel all changes?"
-msgstr ""
+msgstr "সব পরিবর্তনসমূহ বাতিল করতে চান?"
 
 #: appl/app.src#RID_DOCALREADYLOADED_DLG.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "Document already open."
-msgstr ""
+msgstr "নথিটি ইতিমধ্যে খোলা আছে।"
 
 #: appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ERRORBOX.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "%PRODUCTNAME আপনার পদ্ধতিতে কোনো ওযেব ব্রাউজার খুঁজে পায়নি। অনুগ্রহ করে আপনার ডেস্কটপ প্রসঙ্গতিসমূহ পরীক্ষা করুন অথবা পূর্বনির্ধারিত স্থানে ব্রাউজার সংস্থাপনের সময় অনুরোধকৃত স্থানে একটি ওযেব ব্রাউজার (উদহারনস্বরুপ, মজিলা)  সংস্থাপন করুন।"
 
 #: appl/app.src#GID_INTERN.STRING.TEXT
+#, fuzzy
 msgid  "Internal"
-msgstr ""
+msgstr "অভ্যন্তরীন"
 
 #: appl/app.src#GID_APPLICATION.STRING.TEXT
+#, fuzzy
 msgid  "Application"
-msgstr ""
+msgstr "প্রয়োগন"
 
 #: appl/app.src#GID_VIEW.STRING.TEXT
+#, fuzzy
 msgid  "View"
-msgstr ""
+msgstr "প্রদর্শন"
 
 #: appl/app.src#GID_DOCUMENT.STRING.TEXT
+#, fuzzy
 msgid  "Documents"
-msgstr ""
+msgstr "নথিসমূহ"
 
 #: appl/app.src#GID_EDIT.STRING.TEXT
+#, fuzzy
 msgid  "Edit"
-msgstr ""
+msgstr "সম্পাদনা করুন"
 
 #: appl/app.src#GID_MACRO.STRING.TEXT
+#, fuzzy
 msgid  "BASIC"
-msgstr ""
+msgstr "মূল"
 
 #: appl/app.src#GID_OPTIONS.STRING.TEXT
+#, fuzzy
 msgid  "Options"
-msgstr ""
+msgstr "পছন্দসমূহ"
 
 #: appl/app.src#GID_MATH.STRING.TEXT
+#, fuzzy
 msgid  "Math"
-msgstr ""
+msgstr "গনিত"
 
 #: appl/app.src#GID_NAVIGATOR.STRING.TEXT
+#, fuzzy
 msgid  "Navigate"
-msgstr ""
+msgstr "বিমান চালনা করা"
 
 #: appl/app.src#GID_INSERT.STRING.TEXT
+#, fuzzy
 msgid  "Insert"
-msgstr ""
+msgstr "প্রবেশ করান"
 
 #: appl/app.src#GID_FORMAT.STRING.TEXT
+#, fuzzy
 msgid  "Format"
-msgstr ""
+msgstr "বিন্যাস করা"
 
 #: appl/app.src#GID_TEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "Templates"
-msgstr ""
+msgstr "মাপনদন্ডসমূহ"
 
 #: appl/app.src#GID_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "Text"
-msgstr ""
+msgstr "পাঠ্য"
 
 #: appl/app.src#GID_FRAME.STRING.TEXT
+#, fuzzy
 msgid  "Frame"
-msgstr ""
+msgstr "কাঠামো"
 
 #: appl/app.src#GID_GRAPHIC.STRING.TEXT
+#, fuzzy
 msgid  "Graphic"
-msgstr ""
+msgstr "গ্রাফিক"
 
 #: appl/app.src#GID_TABLE.STRING.TEXT
+#, fuzzy
 msgid  "Table"
-msgstr ""
+msgstr "সারণী"
 
 #: appl/app.src#GID_ENUMERATION.STRING.TEXT
+#, fuzzy
 msgid  "Numbering"
-msgstr ""
+msgstr "ক্রমিকায়ন"
 
 #: appl/app.src#GID_DATA.STRING.TEXT
+#, fuzzy
 msgid  "Data"
-msgstr ""
+msgstr "উপাত্ত"
 
 #: appl/app.src#GID_SPECIAL.STRING.TEXT
+#, fuzzy
 msgid  "Special Functions"
-msgstr ""
+msgstr "বিশেষ কার্যক্রমসমূহ"
 
 #: appl/app.src#GID_IMAGE.STRING.TEXT
+#, fuzzy
 msgid  "Image"
-msgstr ""
+msgstr "প্রতিমা"
 
 #: appl/app.src#GID_CHART.STRING.TEXT
+#, fuzzy
 msgid  "Chart"
-msgstr ""
+msgstr "ছক"
 
 #: appl/app.src#GID_EXPLORER.STRING.TEXT
+#, fuzzy
 msgid  "Explorer"
-msgstr ""
+msgstr "এক্সপ্লোরার"
 
 #: appl/app.src#GID_CONNECTOR.STRING.TEXT
+#, fuzzy
 msgid  "Connector"
-msgstr ""
+msgstr "সংযোজক"
 
 #: appl/app.src#GID_MODIFY.STRING.TEXT
+#, fuzzy
 msgid  "Modify"
-msgstr ""
+msgstr "পরিবর্তন সাধন করা"
 
 #: appl/app.src#GID_DRAWING.STRING.TEXT
+#, fuzzy
 msgid  "Drawing"
-msgstr ""
+msgstr "অঙ্কণ"
 
 #: appl/app.src#GID_CONTROLS.STRING.TEXT
+#, fuzzy
 msgid  "Controls"
-msgstr ""
-
-#: appl/app.src#MSG_CANT_QUIT.INFOBOX.MESSAGE
-msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "নিয়ন্ত্রণসমূহ"
 
 #: appl/app.src#STR_ISMODIFIED.STRING.TEXT
+#, fuzzy
 msgid  "Do you want to save the changes to %1?"
-msgstr ""
+msgstr "আপনি কি  %1 এ  পরিবর্তনসমূহ সংরক্ষন করতে চান?"
 
 #: appl/app.src#STR_QUITAPP.STRING.TEXT
+#, fuzzy
 msgid  "E~xit"
-msgstr ""
+msgstr "প্রস্থান (~x)"
 
 #: appl/app.src#RID_STR_HELP.STRING.TEXT
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "সহায়তা"
 
 #: appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.STRING.TEXT
+#, fuzzy
 msgid  "No automatic start at 'XX'"
-msgstr ""
+msgstr "'XX' এ কোনো স্বয়ংক্রিয় আরম্ভ নয়"
 
 #: appl/app.src#RID_HELPBAR.STRING.TEXT
+#, fuzzy
 msgid  "Help Bar"
-msgstr ""
+msgstr "সহায়তা বার"
 
 #: appl/app.src#RID_STR_HLPFILENOTEXIST.STRING.TEXT
+#, fuzzy
 msgid  "The help file for this topic is not installed."
-msgstr ""
+msgstr "এই আলোচ্য বিষয়ের সহায়তা ফাইলটি সংস্থাপিত হয়নি। "
 
 #: appl/app.src#RID_ENVTOOLBOX.STRING.TEXT
+#, fuzzy
 msgid  "Function Bar"
-msgstr ""
+msgstr "ফাংশন বার"
 
 #: appl/app.src#RID_SPECIALCONFIG_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "বিশেষ বহি:বিন্যাসে একটি ত্রুটির উৎপত্তি হয়েছে।\nঅনুগ্রহ করে আপনার প্রশাসকের সাথে যোগাযোগ করুন।"
 
 #: appl/app.src#STR_QUICKSTART_EXIT.STRING.TEXT
+#, fuzzy
 msgid  "Exit Quickstarter"
-msgstr ""
+msgstr "দ্রুতচালক প্রস্থান করুন"
 
 #: appl/app.src#STR_QUICKSTART_TIP.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION দ্রুতচালক"
 
 #: appl/app.src#STR_QUICKSTART_FILEOPEN.STRING.TEXT
+#, fuzzy
 msgid  "Open Document..."
-msgstr ""
+msgstr "নথিটি খুলুন..."
 
 #: appl/app.src#STR_QUICKSTART_FROMTEMPLATE.STRING.TEXT
+#, fuzzy
 msgid  "From Template..."
-msgstr ""
+msgstr "মাপনদন্ড থেকে..."
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH.STRING.TEXT
+#, fuzzy
 msgid  "Load %PRODUCTNAME During System Start-Up"
-msgstr ""
+msgstr "পদ্ধতি শুরুর সময় %PRODUCTNAME লোড করুন"
 
 #: appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.STRING.TEXT
+#, fuzzy
 msgid  "Disable Quickstarter"
-msgstr ""
+msgstr "সিসট্রে দ্রুতচালক অক্ষম করুন"
 
 #: appl/app.src#STR_QUICKSTART_LNKNAME.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: appl/app.src#STR_QUICKSTART_FILE.STRING.TEXT
+#, fuzzy
 msgid  "File"
-msgstr ""
+msgstr "নথি"
 
 #: appl/app.src#STR_QUICKSTART_STARTCENTER.STRING.TEXT
+#, fuzzy
 msgid  "Startcenter"
-msgstr ""
+msgstr "আরম্ভকেন্দ্র"
 
 #: appl/app.src#STR_QUICKSTART_RECENTDOC.STRING.TEXT
 msgid  "Recent Documents"
 msgstr ""
 
 #: appl/app.src#STR_QUERY_UPDATE_LINKS.STRING.TEXT
+#, fuzzy
 msgid  "Update all links?"
-msgstr ""
+msgstr "সব সংযোগসমূহ হালনাগাদ করবেন?"
 
 #: appl/app.src#STR_DDE_ERROR.STRING.TEXT
+#, fuzzy
 msgid  "DDE link to % for % area % are not available."
-msgstr ""
+msgstr "% area % এর জন্য  % DDE সংযোগ প্রাপ্তিসাধ্য নয়।"
 
 #: appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WARNINGBOX.MESSAGE
+#, fuzzy
 msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
-msgstr ""
-
-#: appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WARNINGBOX.MESSAGE
-msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "হাইপারলিঙ্কটি \"%s\" খুলতে যাচ্ছে। আপনি কি অগ্রসর হতে চান?"
 
 #: appl/app.src#RID_SECURITY_WARNING_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "Security Warning"
-msgstr ""
-
-#: appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QUERYBOX.MESSAGE
-msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
-
-#: appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QUERYBOX.MESSAGE
-msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "নিরাপত্তা সতর্কতা"
 
 #: appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "আঙ্কিকভাবে সংরক্ষন করার আগে নথিটি অবশ্যই OpenDocument নথি বিন্যাসে সংরক্ষিত হতে হবে।"
 
 #: appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.STRING.TEXT
+#, fuzzy
 msgid  " (Signed)"
-msgstr ""
-
-#: appl/app.src#STR_STANDARD.STRING.TEXT
-msgid  "Standard"
-msgstr ""
+msgstr " (স্বাক্ষরিত)"
 
 #: appl/app.src#RID_SVXSTR_FILELINK.STRING.TEXT
+#, fuzzy
 msgid  "Document"
-msgstr ""
+msgstr "নথিসমূহ"
 
 #: appl/app.src#STR_NONE.STRING.TEXT
+#, fuzzy
 msgid  "- None -"
-msgstr ""
-
-#: appl/app.src#RID_SVXSTR_GRAFIKLINK.STRING.TEXT
-msgid  "Graphic"
-msgstr ""
+msgstr "- একটিও না -"
 
 #: appl/app.src#STR_SFX_FILTERNAME_ALL.STRING.TEXT
+#, fuzzy
 msgid  "All files (*.*)"
-msgstr ""
+msgstr "সব ফাইলসমূহ (*.*)"
 
 #: appl/app.src#RID_SVXSTR_EDITGRFLINK.STRING.TEXT
 msgid  "Link graphics"
 msgstr ""
 
 #: appl/app.src#STR_ERRUNOEVENTBINDUNG.STRING.TEXT
+#, fuzzy
 msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr ""
+msgstr "একটি যথায়থ উপাদান পদ্ধতি %1 খুঁজে পাওয়া যায়নি।\n\nপদ্ধতির নামের বানান পরীক্ষা করুন।"
 
 #: appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.STRING.TEXT
 msgid  "Graphics file cannot be opened"
@@ -2132,141 +2452,166 @@ msgid  "Not enough memory to insert graphic"
 msgstr ""
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Contents"
-msgstr ""
+msgstr "বিষয়বস্তুসমূহ"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Index"
-msgstr ""
+msgstr "ইনডেক্স"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Find"
-msgstr ""
+msgstr "খুঁজুন"
 
 #: appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PAGEITEM.TEXT
+#, fuzzy
 msgid  "Bookmarks"
-msgstr ""
+msgstr "বুকমার্কসমূহ"
 
 #: appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Search term"
-msgstr ""
+msgstr "সন্ধান কার্যকাল (~S)"
 
 #: appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Display"
-msgstr ""
+msgstr "প্রদর্শন করুন (~D)"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "S~earch term"
-msgstr ""
+msgstr "সন্ধান কার্যকাল (~e)"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PUSHBUTTON.TEXT
+#, fuzzy
 msgid  "~Find"
-msgstr ""
+msgstr "খুঁজুন (~F)"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CHECKBOX.TEXT
+#, fuzzy
 msgid  "~Complete words only"
-msgstr ""
+msgstr "শুধুমাত্র সম্পাদিত শব্দসমূহ (~C)"
 
 #: appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CHECKBOX.TEXT
+#, fuzzy
 msgid  "Find in ~headings only"
-msgstr ""
-
-#: appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PUSHBUTTON.TEXT
-msgid  "~Display"
-msgstr ""
+msgstr "শুধুমাত্র শিরোনামে খুঁজে পাওয়া গেছে (~h)"
 
 #: appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "~Bookmarks"
-msgstr ""
-
-#: appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PUSHBUTTON.TEXT
-msgid  "~Display"
-msgstr ""
+msgstr "বুকমার্কসমূহ (~B)"
 
 #: appl/newhelp.src#STR_HELP_WINDOW_TITLE.STRING.TEXT
+#, fuzzy
 msgid  "%PRODUCTNAME Help"
-msgstr ""
+msgstr "%PRODUCTNAME সহায়তা"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.STRING.TEXT
+#, fuzzy
 msgid  "Show Navigation Pane"
-msgstr ""
+msgstr "নৌচালনা পেন দেখান"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.STRING.TEXT
+#, fuzzy
 msgid  "Hide Navigation Pane"
-msgstr ""
+msgstr "নৌচালনা পেন লুকিয়ে রাখুন"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_START.STRING.TEXT
+#, fuzzy
 msgid  "First Page"
-msgstr ""
+msgstr "প্রথম পৃষ্ঠা"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PREV.STRING.TEXT
+#, fuzzy
 msgid  "Previous Page"
-msgstr ""
+msgstr "পূর্ববর্তী পৃষ্ঠা"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_NEXT.STRING.TEXT
+#, fuzzy
 msgid  "Next Page"
-msgstr ""
+msgstr "পরবর্তী পৃষ্ঠা"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_PRINT.STRING.TEXT
+#, fuzzy
 msgid  "Print..."
-msgstr ""
+msgstr "মুদ্রন করুন"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.STRING.TEXT
+#, fuzzy
 msgid  "Add to Bookmarks..."
-msgstr ""
+msgstr "বুকমার্কে যুক্ত করুন"
 
 #: appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.STRING.TEXT
+#, fuzzy
 msgid  "Find on this Page..."
-msgstr ""
+msgstr "এই পৃষ্ঠায় খুজুঁন..."
 
 #: appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.STRING.TEXT
+#, fuzzy
 msgid  "HTML Source"
-msgstr ""
+msgstr "HTML উৎস"
 
 #: appl/newhelp.src#STR_HELP_FIRST_MESSAGE.STRING.TEXT
+#, fuzzy
 msgid  "The Help is being started..."
-msgstr ""
+msgstr "সহায়তাটি আরম্ভ হযেছে..."
 
 #: appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.STRING.TEXT
+#, fuzzy
 msgid  "Select Text"
-msgstr ""
+msgstr "নির্বাচিত পাঠ্য"
 
 #: appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.STRING.TEXT
+#, fuzzy
 msgid  "~Copy"
-msgstr ""
+msgstr "অনুলিপি করুন (~C)"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.MODALDIALOG.TEXT
+#, fuzzy
 msgid  "Add to Bookmarks"
-msgstr ""
+msgstr "টিকাসমূহ যুক্ত করুন"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FIXEDTEXT.TEXT
+#, fuzzy
 msgid  "Bookmark:"
-msgstr ""
+msgstr "টিকা:"
 
 #: appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.STRING.TEXT
+#, fuzzy
 msgid  "Rename Bookmark"
-msgstr ""
+msgstr "টিকা নতুন নামকরণ করুন"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MENUITEM.TEXT
+#, fuzzy
 msgid  "Display"
-msgstr ""
+msgstr "প্রদর্শন করুন"
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MENUITEM.TEXT
+#, fuzzy
 msgid  "Rename..."
-msgstr ""
+msgstr "পুনরায় নামকরণ করুন..."
 
 #: appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MENUITEM.TEXT
+#, fuzzy
 msgid  "Delete"
-msgstr ""
+msgstr "মুছে ফেলুন"
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "No topics found."
-msgstr ""
+msgstr "কোনো বিষয় খুঁজে পাওয়া যায়নি।"
 
 #: appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.INFOBOX.MESSAGE
+#, fuzzy
 msgid  "The text you entered was not found."
-msgstr ""
+msgstr "আপনার প্রবেশকৃত পাঠ্যটি খুঁজে পাওয়া যায়নি।"
 
 #: appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.STRING.TEXT
+#, fuzzy
 msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
-msgstr ""
+msgstr "শুরু তে %PRODUCTNAME %MODULENAME সহায়তা  প্রদর্শন করুন (~D)"

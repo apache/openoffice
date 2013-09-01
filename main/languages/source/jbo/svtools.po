@@ -87,10 +87,6 @@ msgstr ""
 msgid  "Are you sure you want to delete the selected data?"
 msgstr ""
 
-#: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.PUSHBUTTON.TEXT
-msgid  "~Delete"
-msgstr ""
-
 #: contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.PUSHBUTTON.TEXT
 msgid  "Delete ~All"
 msgstr ""
@@ -305,30 +301,6 @@ msgstr ""
 
 #: control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.STRING.TEXT
 msgid  "Phonetic (alphanumeric last)"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.STRING.TEXT
-msgid  "Alphanumeric"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.STRING.TEXT
-msgid  "Dictionary"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.STRING.TEXT
-msgid  "Pinyin"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.STRING.TEXT
-msgid  "Radical"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.STRING.TEXT
-msgid  "Stroke"
-msgstr ""
-
-#: control/ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.STRING.TEXT
-msgid  "Zhuyin"
 msgstr ""
 
 #: control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.STRING.TEXT
@@ -831,10 +803,6 @@ msgstr ""
 msgid  "Sfx document"
 msgstr ""
 
-#: dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.STRING.TEXT
-msgid  "StarChart 5.0 object"
-msgstr ""
-
 #: dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.STRING.TEXT
 msgid  "Graphic object"
 msgstr ""
@@ -1115,10 +1083,6 @@ msgstr ""
 msgid  "The connection names (the receiver and the other moniker) are identical."
 msgstr ""
 
-#: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME&S_MAX.STRING.TEXT
-msgid  "The connection name is contained in the other one."
-msgstr ""
-
 #: dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE&S_MAX.STRING.TEXT
 msgid  "The connection name cannot be connected. This is a relative name."
 msgstr ""
@@ -1327,26 +1291,6 @@ msgstr ""
 msgid  "Height:"
 msgstr ""
 
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM1.STRINGLIST.ITEM
-msgid  "inches"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.DEFAULT.STRINGLIST.ITEM
-msgid  "cm"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM3.STRINGLIST.ITEM
-msgid  "mm"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM4.STRINGLIST.ITEM
-msgid  "points"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.ITEM5.STRINGLIST.ITEM
-msgid  "pixels"
-msgstr ""
-
 #: filter/exportdialog.src#DLG_EXPORT.FT_RESOLUTION.FIXEDTEXT.TEXT
 msgid  "Resolution:"
 msgstr ""
@@ -1453,10 +1397,6 @@ msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.RB_TEXT.RADIOBUTTON.TEXT
 msgid  "Text"
-msgstr ""
-
-#: filter/exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.FIXEDLINE.TEXT
-msgid  "Preview"
 msgstr ""
 
 #: filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_TIFF.CHECKBOX.TEXT
@@ -1657,10 +1597,6 @@ msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.STRING.TEXT
 msgid  "Drawing"
-msgstr ""
-
-#: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.STRING.TEXT
-msgid  "HTML document"
 msgstr ""
 
 #: misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.STRING.TEXT
@@ -2065,10 +2001,6 @@ msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PAIREDLIST.ITEM
 msgid  "Faroese"
-msgstr ""
-
-#: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.PAIREDLIST.ITEM
-msgid  "Persian"
 msgstr ""
 
 #: misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PAIREDLIST.ITEM
