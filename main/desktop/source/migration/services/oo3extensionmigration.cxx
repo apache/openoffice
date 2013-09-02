@@ -46,6 +46,10 @@
 #include <com/sun/star/beans/NamedValue.hpp>
 #include <com/sun/star/deployment/ExtensionManager.hpp>
 
+#include <com/sun/star/deployment/VersionException.hpp>
+#include <dp_gui_handleversionexception.hxx>
+#include <com/sun/star/deployment/DeploymentException.hpp>
+
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
 
@@ -361,6 +365,12 @@ bool OO3ExtensionMigration::migrateExtension( const ::rtl::OUString& sSourceDir 
         catch ( lang::IllegalArgumentException& )
         {
         }
+        catch ( deployment::DeploymentException& )
+        {
+        }
+        catch ( uno::RuntimeException & )
+        {
+        }
     }
 
     return false;
@@ -516,6 +526,15 @@ void TmpRepositoryCommandEnv::handle(
     
     bool approve = true;
     bool abort   = false;
+
+    deployment::VersionException verExc;
+    if ( xRequest->getRequest() >>= verExc )
+    {
+        // choose newest version, if an extension is already been installed.
+        const bool bChooseNewestVersion = true;
+        approve = handleVersionException( verExc, 0, bChooseNewestVersion );
+        abort = !approve;
+    }
 
     // select:
     uno::Sequence< Reference< task::XInteractionContinuation > > conts(

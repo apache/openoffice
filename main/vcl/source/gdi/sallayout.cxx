@@ -1863,15 +1863,18 @@ void MultiSalLayout::AdjustLayout( ImplLayoutArgs& rArgs )
     }
     mnLevel = nLevel;
 
-    // merge the fallback levels
+    // prepare merge the fallback levels
     long nXPos = 0;
     double fUnitMul = 1.0;
     for( n = 0; n < nLevel; ++n )
         maFallbackRuns[n].ResetPos();
+    // get the next codepoint index that needs fallback
     int nActiveCharPos = nCharPos[0];
+    // get the end index of the active run
     int nLastRunEndChar = (vRtl[nActiveCharPos - mnMinCharPos])?
         rArgs.mnEndCharPos : rArgs.mnMinCharPos - 1;
     int nRunVisibleEndChar = nCharPos[0];
+    // merge the fallback levels
     while( nValid[0] && (nLevel > 0))
     {
         // find best fallback level
@@ -2075,8 +2078,6 @@ void MultiSalLayout::AdjustLayout( ImplLayoutArgs& rArgs )
                 }
             }
         }
-//            if( !maFallbackRuns[i].PosIsInRun( nActiveCharPos ) )
-//                maFallbackRuns[i].NextRun();
     }
 
     mpLayouts[0]->Simplify( true );

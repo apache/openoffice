@@ -76,16 +76,13 @@ FunctionReference FuOutlineBullet::Create( ViewShell* pViewSh, ::sd::Window* pWi
 
 void FuOutlineBullet::DoExecute( SfxRequest& rReq )
 {
-	sal_uInt16 nSId = rReq.GetSlot();
-	if (nSId == FN_SVX_SET_BULLET){
-		SetCurrentBullet(rReq);
-		return;
-	}
-	else if (nSId == FN_SVX_SET_NUMBER){
-		SetCurrentNumbering(rReq);
-		return;
-	}
-	
+    const sal_uInt16 nSId = rReq.GetSlot();
+    if ( nSId == FN_SVX_SET_BULLET || nSId == FN_SVX_SET_NUMBER )
+    {
+        SetCurrentBulletsNumbering(rReq);
+        return;
+    }
+
 	const SfxItemSet* pArgs = rReq.GetArgs();
 
 	if( !pArgs )
@@ -153,305 +150,172 @@ void FuOutlineBullet::DoExecute( SfxRequest& rReq )
 */
 }
 
-void FuOutlineBullet::SetCurrentNumbering(SfxRequest& rReq)
+void FuOutlineBullet::SetCurrentBulletsNumbering(SfxRequest& rReq)
 {
-	if (!mpDoc || !mpView)
-		return;	
+    if (!mpDoc || !mpView)
+        return;
 
-	SfxItemSet aEditAttr( mpDoc->GetPool() );
-	mpView->GetAttributes( aEditAttr );		
+    const sal_uInt16 nSId = rReq.GetSlot();
+    if ( nSId != FN_SVX_SET_BULLET && nSId != FN_SVX_SET_NUMBER )
+    {
+        // unexpected SfxRequest
+        return;
+    }
 
-	SfxItemSet aNewAttr( mpViewShell->GetPool(),
-							 EE_ITEMS_START, EE_ITEMS_END );
-	aNewAttr.Put( aEditAttr, sal_False );
+    SFX_REQUEST_ARG( rReq, pItem, SfxUInt16Item, nSId, sal_False );
+    if ( !pItem )
+    {
+        rReq.Done();
+        return;
+    }
 
-	SfxItemSet aSetAttr( mpViewShell->GetPool(),
-							 EE_ITEMS_START, EE_ITEMS_END );
+    SfxItemSet aNewAttr( mpViewShell->GetPool(), EE_ITEMS_START, EE_ITEMS_END );
+    {
+        SfxItemSet aEditAttr( mpDoc->GetPool() );
+        mpView->GetAttributes( aEditAttr );
+        aNewAttr.Put( aEditAttr, sal_False );
+    }
 
-	//Init bullet level in "Customize" tab page in bullet dialog in master page view
-	if( mpView && mpViewShell && mpViewShell->ISA(DrawViewShell) 
-		&& ((DrawViewShell *)mpViewShell)->GetEditMode() == EM_MASTERPAGE )
-	{
-		SdrObject* pObj = mpView->GetTextEditObject();
-		if( pObj && pObj->GetObjIdentifier() == OBJ_OUTLINETEXT )
-		{
-			sal_uInt16 nLevel = mpView->GetSelectionLevel();
-			if( nLevel != 0xFFFF )
-			{
+    const DrawViewShell* pDrawViewShell = dynamic_cast< DrawViewShell* >(mpViewShell);
+    //Init bullet level in "Customize" tab page in bullet dialog in master page view
+    const bool bInMasterView = pDrawViewShell && pDrawViewShell->GetEditMode() == EM_MASTERPAGE;
+    if ( bInMasterView )
+    {
+        SdrObject* pObj = mpView->GetTextEditObject();
+        if( pObj && pObj->GetObjIdentifier() == OBJ_OUTLINETEXT )
+        {
+            const sal_uInt16 nLevel = mpView->GetSelectionLevel();
+            if( nLevel != 0xFFFF )
+            {
+                //save the itemset value
+                SfxItemSet aStoreSet( aNewAttr );
+                aNewAttr.ClearItem();
+                //extend range
+                aNewAttr.MergeRange( SID_PARAM_NUM_PRESET, SID_PARAM_CUR_NUM_LEVEL );
+                aNewAttr.Put( aStoreSet );
+                //put current level user selected
+                aNewAttr.Put( SfxUInt16Item( SID_PARAM_CUR_NUM_LEVEL, nLevel ) );
+            }
+        }
+    }
 
-				SfxItemSet aStoreSet( aNewAttr );
-				aNewAttr.ClearItem();
-				//extend range
-				aNewAttr.MergeRange( SID_PARAM_NUM_PRESET, SID_PARAM_CUR_NUM_LEVEL );
-				aNewAttr.Put( aStoreSet );
-				//put current level user selected
-				aNewAttr.Put( SfxUInt16Item( SID_PARAM_CUR_NUM_LEVEL, nLevel ) );
-			}
-		}
-	}
-	//End of add
+    sal_uInt16 nIdx = pItem->GetValue();
+    bool bToggle = false;
+    bool bSwitchOff = false;
+    if( nIdx == (sal_uInt16)0xFFFF )
+    {
+        // If the nIdx is (sal_uInt16)0xFFFF, means set bullet status to on/off
+        nIdx = 1;
+        bToggle = true;
+    }
+    else if (nIdx == DEFAULT_NONE)
+    {
+        bSwitchOff = true;
+    }
+    nIdx--;
 
-	sal_uInt16 nActNumLvl = (sal_uInt16)0xFFFF;	
-	SvxNumRule* pNumRule = NULL;
-	const SfxPoolItem* pTmpItem=NULL;
-	sal_uInt32 nNumItemId = SID_ATTR_NUMBERING_RULE;
+    sal_uInt32 nNumItemId = SID_ATTR_NUMBERING_RULE;
+    const SfxPoolItem* pTmpItem = GetNumBulletItem( aNewAttr, nNumItemId );
+    SvxNumRule* pNumRule = NULL;
+    if ( pTmpItem )
+    {
+        pNumRule = new SvxNumRule(*((SvxNumBulletItem*)pTmpItem)->GetNumRule());
 
-	if(SFX_ITEM_SET == aNewAttr.GetItemState(SID_PARAM_CUR_NUM_LEVEL, sal_False, &pTmpItem))
-		nActNumLvl = ((const SfxUInt16Item*)pTmpItem)->GetValue();
-	
-	pTmpItem=GetNumBulletItem(aNewAttr, nNumItemId);
+        // get numbering rule corresponding to <nIdx> and apply the needed number formats to <pNumRule>
+        NBOTypeMgrBase* pNumRuleMgr =
+            NBOutlineTypeMgrFact::CreateInstance(
+                nSId == FN_SVX_SET_BULLET ? eNBOType::MIXBULLETS : eNBOType::NUMBERING );
+        if ( pNumRuleMgr )
+        {
+            sal_uInt16 nActNumLvl = (sal_uInt16)0xFFFF;
+            const SfxPoolItem* pNumLevelItem = NULL;
+            if(SFX_ITEM_SET == aNewAttr.GetItemState(SID_PARAM_CUR_NUM_LEVEL, sal_False, &pNumLevelItem))
+                nActNumLvl = ((const SfxUInt16Item*)pNumLevelItem)->GetValue();
 
-	if (pTmpItem)
-		pNumRule = new SvxNumRule(*((SvxNumBulletItem*)pTmpItem)->GetNumRule());		
-		
-	SFX_REQUEST_ARG( rReq, pItem, SfxUInt16Item, FN_SVX_SET_NUMBER , sal_False );
-	if (pItem && pNumRule)
-	{
-		sal_uInt16 nIdx = pItem->GetValue();
-		// If the nIdx is (sal_uInt16)0xFFFF, means set bullet status to on/off
-		// And the bullet default status is 1.
-		bool bBulletSwitch = false;
-        sal_Bool isRemoveNum =false;
-		if( nIdx == (sal_uInt16)0xFFFF )
-		{
-			nIdx = 1;
-			bBulletSwitch = true;
-		}
-		if (nIdx == DEFAULT_NONE) 
-		{
-			bBulletSwitch = false;
-			isRemoveNum = true;
-		}
-		nIdx--;
-		
-		NBOTypeMgrBase* pNumbering = NBOutlineTypeMgrFact::CreateInstance(eNBOType::NUMBERING);
-		if ( pNumbering )
-		{
-			//Sym3_2508, set unit attribute to NB Manager
-			pNumbering->SetItems(&aNewAttr);
-			SvxNumRule aTmpRule( *pNumRule );
-			pNumbering->ApplyNumRule(aTmpRule,nIdx,nActNumLvl);
-			sal_uInt16 nMask = 1;
-			for(sal_uInt16 i = 0; i < pNumRule->GetLevelCount(); i++)
-			{
-				if(nActNumLvl & nMask)
-				{
-					SvxNumberFormat aFmt(aTmpRule.GetLevel(i));
-					pNumRule->SetLevel(i, aFmt);
-				}
-				nMask <<= 1 ;
-			}
-			aSetAttr.Put(SvxNumBulletItem( *pNumRule ), nNumItemId); 
-			OutlinerView* pOLV = mpView->GetTextEditOutlinerView();
+            pNumRuleMgr->SetItems(&aNewAttr);
+            SvxNumRule aTmpRule( *pNumRule );
+            if ( nSId == FN_SVX_SET_BULLET && bToggle && nIdx==0 )
+            {
+                // for toggling bullets get default numbering rule
+                pNumRuleMgr->ApplyNumRule( aTmpRule, nIdx, nActNumLvl, true );
+            }
+            else
+            {
+                pNumRuleMgr->ApplyNumRule( aTmpRule, nIdx, nActNumLvl );
+            }
 
-	       	 std::auto_ptr< OutlineViewModelChangeGuard > aGuard;
+            sal_uInt16 nMask = 1;
+            for(sal_uInt16 i = 0; i < pNumRule->GetLevelCount(); i++)
+            {
+                if(nActNumLvl & nMask)
+                {
+                    SvxNumberFormat aFmt(aTmpRule.GetLevel(i));
+                    pNumRule->SetLevel(i, aFmt);
+                }
+                nMask <<= 1;
+            }
+        }
+    }
 
-	        	if (mpView->ISA(OutlineView))
-	        	{
-			        pOLV = static_cast<OutlineView*>(mpView)
-	                    ->GetViewByWindow(mpViewShell->GetActiveWindow());
+    OutlinerView* pOLV = mpView->GetTextEditOutlinerView();
+    std::auto_ptr< OutlineViewModelChangeGuard > aGuard;
+    {
+        if (mpView->ISA(OutlineView))
+        {
+            pOLV = static_cast<OutlineView*>(mpView)
+                ->GetViewByWindow(mpViewShell->GetActiveWindow());
 
-			        aGuard.reset( new OutlineViewModelChangeGuard( static_cast<OutlineView&>(*mpView) ) );
-	        	}
+            aGuard.reset( new OutlineViewModelChangeGuard( static_cast<OutlineView&>(*mpView) ) );
+        }
+    }
 
-            		SdrOutliner* pOwner = mpView->GetTextEditOutliner();
-			bool bMasterView = false;
+    SdrOutliner* pOwner = bInMasterView ? mpView->GetTextEditOutliner() : 0;
+    const bool bOutlinerUndoEnabled = pOwner && !pOwner->IsInUndo() && pOwner->IsUndoEnabled();
+    SdrModel* pSdrModel = bInMasterView ? mpView->GetModel() : 0;
+    const bool bModelUndoEnabled = pSdrModel && pSdrModel->IsUndoEnabled();
 
-			DrawViewShell* pDrawViewShell = static_cast< DrawViewShell* >(mpViewShell);
-			
-			if ( pOwner && pDrawViewShell && pDrawViewShell->GetEditMode() == EM_MASTERPAGE )					
-				bMasterView = !pOwner->IsInUndo() && pOwner->IsUndoEnabled();
+    if ( bOutlinerUndoEnabled )
+    {
+        pOwner->UndoActionStart( OLUNDO_ATTR );
+    }
+    else if ( bModelUndoEnabled )
+    {
+        pSdrModel->BegUndo();
+    }
 
-			if( bMasterView )
-			{
-				pOwner->UndoActionStart( OLUNDO_ATTR );
-				pOLV->ToggleBullets( bBulletSwitch, sal_False, bMasterView, pNumRule,isRemoveNum);
-				mpView->SetAttributes(aSetAttr); //Modify for Sym2_3151
-				pOwner->UndoActionEnd( OLUNDO_ATTR );
-			}
-			else if( pOLV )                
-				pOLV->ToggleBullets( bBulletSwitch, sal_False, bMasterView, pNumRule ,isRemoveNum);						
-			else
-			{
-				sal_Bool bInMasterView = pDrawViewShell && pDrawViewShell->GetEditMode() == EM_MASTERPAGE;
-				SdrModel* pSdrModel = mpView->GetModel();
-				sal_Bool bModelUndoEnabled = pSdrModel ? pSdrModel->IsUndoEnabled() : sal_False;
-				if (bInMasterView && bModelUndoEnabled)
-				{
-					pSdrModel->BegUndo();
-				}
-				mpView->ToggleMarkedObjectsBullets(bBulletSwitch, sal_False, bInMasterView, pNumRule,isRemoveNum);
-				if (bInMasterView)
-				{
-					mpView->SetAttributes(aSetAttr);
-				}
-				if (bInMasterView && bModelUndoEnabled)
-				{
-					pSdrModel->EndUndo();
-				}
-			}
-		}
-		//End
-	}
-	delete pNumRule;
-	rReq.Done();
-}
+    if ( pOLV )
+    {
+        if ( bSwitchOff )
+        {
+            pOLV->SwitchOffBulletsNumbering( true );
+        }
+        else
+        {
+            pOLV->ToggleBulletsNumbering( bToggle, nSId == FN_SVX_SET_BULLET, bInMasterView ? 0 : pNumRule );
+        }
+    }
+    else
+    {
+        mpView->ChangeMarkedObjectsBulletsNumbering( bToggle, nSId == FN_SVX_SET_BULLET, bInMasterView ? 0 : pNumRule, bSwitchOff );
+    }
+    if ( bInMasterView )
+    {
+        SfxItemSet aSetAttr( mpViewShell->GetPool(), EE_ITEMS_START, EE_ITEMS_END );
+        aSetAttr.Put(SvxNumBulletItem( *pNumRule ), nNumItemId);
+        mpView->SetAttributes(aSetAttr);
+    }
 
-void FuOutlineBullet::SetCurrentBullet(SfxRequest& rReq)
-{
-	if (!mpDoc || !mpView)
-		return;	
+    if( bOutlinerUndoEnabled )
+    {
+        pOwner->UndoActionEnd( OLUNDO_ATTR );
+    }
+    else if ( bModelUndoEnabled )
+    {
+        pSdrModel->EndUndo();
+    }
 
-	SfxItemSet aEditAttr( mpDoc->GetPool() );
-	mpView->GetAttributes( aEditAttr );		
-
-	SfxItemSet aNewAttr( mpViewShell->GetPool(),
-							 EE_ITEMS_START, EE_ITEMS_END );
-	aNewAttr.Put( aEditAttr, sal_False );
-
-	//Add for Sym2_3151, should add new attributes in an empty item set, then use this item set as parameter in SetAttributes()
-	SfxItemSet aSetAttr( mpViewShell->GetPool(),
-							 EE_ITEMS_START, EE_ITEMS_END );
-
-	//Init bullet level in "Customize" tab page in bullet dialog in master page view
-	if( mpView && mpViewShell && mpViewShell->ISA(DrawViewShell) 
-		&& ((DrawViewShell *)mpViewShell)->GetEditMode() == EM_MASTERPAGE )
-	{
-		SdrObject* pObj = mpView->GetTextEditObject();
-		if( pObj && pObj->GetObjIdentifier() == OBJ_OUTLINETEXT )
-		{
-			sal_uInt16 nLevel = mpView->GetSelectionLevel();
-			if( nLevel != 0xFFFF )
-			{
-				//aNewAttr.MergeRange( SID_ATTR_NUMBERING_RULE, SID_PARAM_CUR_NUM_LEVEL );
-				//aNewAttr.Put( SfxUInt16Item( SID_PARAM_CUR_NUM_LEVEL, nLevel ) );
-				//save the itemset value
-				SfxItemSet aStoreSet( aNewAttr );
-				aNewAttr.ClearItem();
-				//extend range
-				aNewAttr.MergeRange( SID_PARAM_NUM_PRESET, SID_PARAM_CUR_NUM_LEVEL );
-				aNewAttr.Put( aStoreSet );
-				//put current level user selected
-				aNewAttr.Put( SfxUInt16Item( SID_PARAM_CUR_NUM_LEVEL, nLevel ) );
-			}
-		}
-	}
-	//End of add
-
-	sal_uInt16 nActNumLvl = (sal_uInt16)0xFFFF;	
-	SvxNumRule* pNumRule = NULL;	
-	const SfxPoolItem* pTmpItem=NULL;
-	sal_uInt32 nNumItemId = SID_ATTR_NUMBERING_RULE;
-
-	if(SFX_ITEM_SET == aNewAttr.GetItemState(SID_PARAM_CUR_NUM_LEVEL, sal_False, &pTmpItem))
-		nActNumLvl = ((const SfxUInt16Item*)pTmpItem)->GetValue();
-	
-	pTmpItem=GetNumBulletItem(aNewAttr, nNumItemId);
-
-	if (pTmpItem)
-		pNumRule = new SvxNumRule(*((SvxNumBulletItem*)pTmpItem)->GetNumRule());
-		
-	SFX_REQUEST_ARG( rReq, pItem, SfxUInt16Item, FN_SVX_SET_BULLET , sal_False );
-	if (pItem && pNumRule)
-	{
-		sal_uInt16 nIdx = pItem->GetValue();
-		// If the nIdx is (sal_uInt16)0xFFFF, means set bullet status to on/off
-		// And the bullet default status is 2.
-		bool bBulletSwitch = false;
-        sal_Bool isRemoveNum =false;
-		if( nIdx == (sal_uInt16)0xFFFF )
-		{
-			nIdx = 1;
-			bBulletSwitch = true;
-		}
-		if (nIdx == DEFAULT_NONE) 
-		{
-			bBulletSwitch = false;
-			isRemoveNum = true;
-		}
-
-		nIdx--;
-		//Modified for Numbering&Bullets Dialog UX Enh(Story 992) by chengjh,2011.8.7
-		
-		NBOTypeMgrBase* pBullets = NBOutlineTypeMgrFact::CreateInstance(eNBOType::MIXBULLETS);
-		if ( pBullets )
-		{
-			//Sym3_2508, set unit attribute to NB Manager
-			pBullets->SetItems(&aNewAttr);
-			SvxNumRule aTmpRule( *pNumRule );
-			//Sym3_3423 Always apply the "." if wants a default numbering rule
-			if (bBulletSwitch==true && nIdx==0) //want to reset bullet
-			{
-				pBullets->ApplyNumRule(aTmpRule,nIdx,nActNumLvl,true);
-			}
-			else {
-				pBullets->ApplyNumRule(aTmpRule,nIdx,nActNumLvl);
-			}
-			sal_uInt16 nMask = 1;
-			for(sal_uInt16 i = 0; i < pNumRule->GetLevelCount(); i++)
-			{
-				if(nActNumLvl & nMask)
-				{
-					SvxNumberFormat aFmt(aTmpRule.GetLevel(i));					
-					pNumRule->SetLevel(i, aFmt);
-				}
-				nMask <<= 1;
-			}
-			aSetAttr.Put(SvxNumBulletItem( *pNumRule ), nNumItemId);
-
-			OutlinerView* pOLV = mpView->GetTextEditOutlinerView();
-
-	        	std::auto_ptr< OutlineViewModelChangeGuard > aGuard;
-
-		       if (mpView->ISA(OutlineView))
-		       {
-			        pOLV = static_cast<OutlineView*>(mpView)
-	                    ->GetViewByWindow(mpViewShell->GetActiveWindow());
-
-			        aGuard.reset( new OutlineViewModelChangeGuard( static_cast<OutlineView&>(*mpView) ) );
-		       }
-	
-			SdrOutliner* pOwner = mpView->GetTextEditOutliner();
-			bool bMasterView = false;
-
-			DrawViewShell* pDrawViewShell = static_cast< DrawViewShell* >(mpViewShell);
-			
-			if ( pOwner && pDrawViewShell && pDrawViewShell->GetEditMode() == EM_MASTERPAGE )
-				bMasterView = !pOwner->IsInUndo() && pOwner->IsUndoEnabled();
-
-			if( bMasterView )
-			{
-				pOwner->UndoActionStart( OLUNDO_ATTR );			
-				pOLV->ToggleBullets( bBulletSwitch, sal_True, bMasterView, pNumRule, isRemoveNum );
-				mpView->SetAttributes(aSetAttr); //Modify for Sym2_3151	
-				pOwner->UndoActionEnd( OLUNDO_ATTR );
-			}
-			else if( pOLV )	            
-				pOLV->ToggleBullets( bBulletSwitch, sal_True, bMasterView, pNumRule, isRemoveNum );
-			else
-			{	
-				sal_Bool bInMasterView = pDrawViewShell && pDrawViewShell->GetEditMode() == EM_MASTERPAGE;
-				SdrModel* pSdrModel = mpView->GetModel();
-				sal_Bool bModelUndoEnabled = pSdrModel ? pSdrModel->IsUndoEnabled() : sal_False;
-				if (bInMasterView && bModelUndoEnabled)
-				{
-					pSdrModel->BegUndo();
-				}
-				mpView->ToggleMarkedObjectsBullets(bBulletSwitch, sal_True, bInMasterView, pNumRule, isRemoveNum );
-				if (bInMasterView)
-				{
-					mpView->SetAttributes(aSetAttr);
-				}
-				if (bInMasterView && bModelUndoEnabled)
-				{
-					pSdrModel->EndUndo();
-				}
-			}
-		}
-		//End
-	}
-	delete pNumRule;
-	rReq.Done();
+    delete pNumRule;
+    rReq.Done();
 }
 
 const SfxPoolItem* FuOutlineBullet::GetNumBulletItem(SfxItemSet& aNewAttr, sal_uInt32& nNumItemId)

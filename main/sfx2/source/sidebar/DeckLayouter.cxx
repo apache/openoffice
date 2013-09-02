@@ -262,6 +262,7 @@ sal_Int32 DeckLayouter::PlacePanels (
 
             // Place the panel.
             rPanel.SetPosSizePixel(0, nY, nWidth, nPanelHeight);
+            rPanel.Invalidate();
             
             nY += nPanelHeight;
         }
@@ -328,7 +329,7 @@ void DeckLayouter::GetRequestedSizes (
                 if (xPanel.is())
                     aLayoutSize = xPanel->getHeightForWidth(rContentBox.GetWidth());
                 else
-                    aLayoutSize = ui::LayoutSize(MinimalPanelHeight, 0, -1);
+                    aLayoutSize = ui::LayoutSize(MinimalPanelHeight, -1, 0);
             }
         }
         iItem->maLayoutSize = aLayoutSize;

@@ -13,17 +13,18 @@ Globals
             UNIXBASISROOTNAME openoffice
             HIDELICENSEDIALOG 1
             PACKAGEPREFIX 
-            BASISPACKAGEPREFIX aoobasis
-            UREPACKAGEPREFIX apacheopenoffice
-            SOLSUREPACKAGEPREFIX apacheopenoffice
+            BASISPACKAGEPREFIX openoffice
+            UREPACKAGEPREFIX openoffice
+            SOLSUREPACKAGEPREFIX openoffice
             USE_FILEVERSION 1
             LIBRARYVERSION 10.0.0
             POOLPRODUCT 1
             PROGRESSBARCOLOR 14,133,205
-            PROGRESSSIZE 320,7
-            PROGRESSPOSITION 185,206
+            PROGRESSSIZE 432,4
+            PROGRESSPOSITION 60,180
             PROGRESSFRAMECOLOR 207,208,211
-            NATIVEPROGRESS true
+            SHOWPROGRESSFRAME false
+            NATIVEPROGRESS false
             REGISTRYLAYERNAME Layers
             SERVICEPACK 1
             UPDATE_DATABASE 1
@@ -71,7 +72,7 @@ Apache_OpenOffice
             ABOUTBOXPRODUCTVERSION 4.0.0
             BASEPRODUCTVERSION 4.0
             PCPFILENAME openoffice.pcp
-            UPDATEURL https://ooo-site.apache.org/projects/update/aoo40/check.Update
+            UPDATEURL https://ooo-updates.apache.org/aoo40/check.Update
             ADD_INCLUDE_FILES cliureversion.mk,clioootypesversion.mk,userland.txt,version.lst
             REMOVE_UPGRADE_CODE_FILE upgradecode_remove_ooo.txt
             ADDSYSTEMINTEGRATION 1
@@ -193,7 +194,7 @@ Apache_OpenOffice_Dev
             ABOUTBOXPRODUCTVERSION 4.0.0
             BASEPRODUCTVERSION 4.0
             DEVELOPMENTPRODUCT 1
-            BASISPACKAGEPREFIX aoobasis-dev
+            BASISPACKAGEPREFIX aoodev
             UREPACKAGEPREFIX aoodev
             SOLSUREPACKAGEPREFIX aoodev
             REGISTRYLAYERNAME LayerDev
@@ -351,7 +352,7 @@ Apache_OpenOffice_Dev_SDK
             BRANDPACKAGEVERSION 4
             PACKAGEVERSION 4.0.0
             PACKAGEREVISION {milestone}
-            BASISPACKAGEPREFIX aoobasis-dev
+            BASISPACKAGEPREFIX aoodev
             UREPACKAGEPREFIX aoodev
             SOLSUREPACKAGEPREFIX aoodev
             REGISTRYLAYERNAME LayerDev

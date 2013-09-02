@@ -409,26 +409,8 @@ namespace drawinglayer
 				}
 			}
 
-			// decompose matrix to check for shear, rotate and mirroring
-			basegfx::B2DVector aScale, aTranslate;
-			double fRotate, fShearX;
-
-            aLocalTransform.decompose(aScale, aTranslate, fRotate, fShearX);
-
-            const bool bRotated(!basegfx::fTools::equalZero(fRotate));
-            const bool bSheared(!basegfx::fTools::equalZero(fShearX));
-
-			if(!aBitmapEx.IsTransparent() && (bSheared || bRotated))
-			{
-				// parts will be uncovered, extend aBitmapEx with a mask bitmap
-				const Bitmap aContent(aBitmapEx.GetBitmap());
-#if defined(MACOSX)
-				const AlphaMask aMaskBmp( aContent.GetSizePixel());
-#else
-				const Bitmap aMaskBmp( aContent.GetSizePixel(), 1);
-#endif
-				aBitmapEx = BitmapEx(aContent, aMaskBmp);
-			}
+            // #122923# do no longer add Alpha channel here; the right place to do this is when really 
+            // the own transformer is used (see OutputDevice::DrawTransformedBitmapEx).
 
             // draw using OutputDevice'sDrawTransformedBitmapEx
             mpOutputDevice->DrawTransformedBitmapEx(aLocalTransform, aBitmapEx);
@@ -1279,7 +1261,10 @@ namespace drawinglayer
             {
                 const basegfx::BColor aColorA(maBColorModifierStack.getModifiedColor(rCandidate.getColorA()));
                 const basegfx::BColor aColorB(maBColorModifierStack.getModifiedColor(rCandidate.getColorB()));
-                const double fDiscreteUnit((getViewInformation2D().getInverseObjectToViewTransformation() * basegfx::B2DVector(1.0, 0.0)).getLength());
+
+                // calculate discrete unit in WorldCoordinates; use diagonal (1.0, 1.0) and divide by sqrt(2)
+                const basegfx::B2DVector aDiscreteVector(getViewInformation2D().getInverseObjectToViewTransformation() * basegfx::B2DVector(1.0, 1.0));
+                const double fDiscreteUnit(aDiscreteVector.getLength() * (1.0 / 1.414213562373));
 
                 // use color distance and discrete lengths to calculate step count
                 const sal_uInt32 nSteps(calculateStepsForSvgGradient(aColorA, aColorB, fDelta, fDiscreteUnit));
@@ -1321,7 +1306,10 @@ namespace drawinglayer
             {
                 const basegfx::BColor aColorA(maBColorModifierStack.getModifiedColor(rCandidate.getColorA()));
                 const basegfx::BColor aColorB(maBColorModifierStack.getModifiedColor(rCandidate.getColorB()));
-                const double fDiscreteUnit((getViewInformation2D().getInverseObjectToViewTransformation() * basegfx::B2DVector(1.0, 0.0)).getLength());
+
+                // calculate discrete unit in WorldCoordinates; use diagonal (1.0, 1.0) and divide by sqrt(2)
+                const basegfx::B2DVector aDiscreteVector(getViewInformation2D().getInverseObjectToViewTransformation() * basegfx::B2DVector(1.0, 1.0));
+                const double fDiscreteUnit(aDiscreteVector.getLength() * (1.0 / 1.414213562373));
 
                 // use color distance and discrete lengths to calculate step count
                 const sal_uInt32 nSteps(calculateStepsForSvgGradient(aColorA, aColorB, fDeltaScale, fDiscreteUnit));

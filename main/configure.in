@@ -1866,7 +1866,7 @@ if test "$DMAKE" = "no"; then
        AC_MSG_RESULT([dmake will be downloaded and compiled in bootstrap])
        DMAKE=
     else
-       AC_MSG_ERROR([no URL for dmake source code specified, either.])
+       AC_MSG_ERROR([no URL for dmake source code specified, either. Use --with-dmake-url to supply an URL; run configure with the --help option for a list of possible URLs.])
        BUILD_DMAKE=YES
     fi
 else
@@ -2916,19 +2916,8 @@ dnl ===================================================================
 dnl system stl sanity tests
 dnl ===================================================================
 if test "$USE_SYSTEM_STL" = "YES"; then
-   AC_MSG_CHECKING([if hash_map will be in __gnu_cxx namespace])
+   AC_MSG_CHECKING([system stl sanity])
    AC_LANG_PUSH([C++])
-
-   AC_TRY_COMPILE([#include <ext/hash_map>
-using namespace __gnu_cxx;
-],[hash_map<int, int> t; return 0;],
-  ac_cv_cxx_have_ext_hash_map=yes, ac_cv_cxx_have_ext_hash_map=no)
-
-   if test "$ac_cv_cxx_have_ext_hash_map" = "no"; then
-      AC_MSG_ERROR([Can't find hash_map. Try with --with-stlport])
-   else
-      AC_MSG_RESULT([$ac_cv_cxx_have_ext_hash_map])
-   fi
 
    if test "$HAVE_GCC_VISIBILITY_FEATURE" = "TRUE"; then
       AC_MSG_CHECKING([if STL headers are visibility safe])
@@ -3543,7 +3532,7 @@ if test "$enable_epm" = "yes"; then
          BUILD_TYPE="$BUILD_TYPE EPM"
       else
          if test "$EPM" = "no" ; then
-	    AC_MSG_ERROR([no. Install ESP Package Manager (http://www.msweet.org/projects.php?Z2) and/or specify the path to the right epm (--with-epm). Or specify an Url to an epm-3.7 source package (--with-epm-url)])
+	    AC_MSG_ERROR([no. Install ESP Package Manager (http://www.msweet.org/projects.php?Z2) and/or specify the path to the right epm (--with-epm). Or specify an URL to an epm-3.7 source package (--with-epm-url); run configure with the --help option for a list of possible URLs.])
 	 else
 	    # Gentoo has some epm which is something different...
             AC_MSG_CHECKING([whether the found epm is the right epm])
@@ -3800,7 +3789,8 @@ if test "z$enable_odk" = "z" -o "$enable_odk" != "no"; then
          AC_MSG_ERROR([for rebuilding unowinreg.dll you need the mingw32 C++ compiler.
          Specify mingw32 g++ executable name with --with-mingwin.
          Or use prebuilt one from http://tools.openoffice.org/unowinreg_prebuild/680/ and
-         put it into external/unowinreg])
+         put it into external/unowinreg using your browser or a command equivalent to:
+         wget -O external/unowinreg/unowinreg.dll http://www.openoffice.org/tools/unowinreg_prebuild/680/unowinreg.dll])
       fi
       if echo "$WITH_MINGWIN" | $EGREP -q "/"; then
          if ! test -x "$WITH_MINGWIN"; then MINGWCXX=false; else MINGWCXX=`basename $WITH_MINGWIN`; fi
@@ -4090,16 +4080,17 @@ if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
    with_system_python=yes
 
    _python="/Library/Frameworks/Python.framework/Versions/Current/bin/python" 
-   _python_version=`$_python -c "import platform; print platform.python_version();"`
+   _python_hexversion=`$_python -c "import sys; print(sys.hexversion);"`
    
-   if test "$_python_version" = "2.7.4" ; then
+   dnl hex version of Python 2.7.1 = 34013680
+   if test $_python_hexversion -ge 34013680 ; then
       AC_MSG_RESULT([compiling against system python (version $_python_version)])
 
 	  _python_ver=`$_python -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('VERSION'));"`
 	  
    	  PYTHON_CFLAGS="-I/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"
    else
-		AC_MSG_ERROR([Python 2.7.4 is required])
+		AC_MSG_ERROR([Python 2.7.1 or higher is required])
    fi
 
    PYTHON_LIBS="-framework Python"
@@ -5687,6 +5678,9 @@ dnl Check if this is the right SDK.
         WINDOWS_VISTA_PSDK=TRUE
     elif echo $PSDK_HOME | grep "v6.0" >/dev/null 2>/dev/null; then
         AC_MSG_RESULT([Found Windows SDK 6.0 ($PSDK_HOME)])
+        WINDOWS_VISTA_PSDK=TRUE
+    elif echo $PSDK_HOME | grep "v7.0" >/dev/null 2>/dev/null; then
+        AC_MSG_RESULT([Found Windows SDK 7.0 ($PSDK_HOME)])
         WINDOWS_VISTA_PSDK=TRUE
     else
         AC_MSG_RESULT([Found Legacy Windows Platform SDK ($PSDK_HOME)])

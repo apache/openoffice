@@ -1,0 +1,11 @@
+--- misc/serf-1.2.1/configure.in	2013-06-03 14:52:41.000000000 -0300
++++ misc/build/serf-1.2.1/configure.in	2013-06-07 12:27:36.914098933 -0300
+@@ -257,7 +257,7 @@ AC_SEARCH_LIBS(fabs, m)
+ 
+ libs=""
+ if test -n "$apu_config"; then
+-  APR_ADDTO(libs, [`$apu_config --link-libtool --libs`])
++  APR_ADDTO(libs, [`$apu_config --link-libtool`])
+ fi
+ APR_ADDTO(libs, [`$apr_config --link-libtool --libs` $LIBS])
+ 

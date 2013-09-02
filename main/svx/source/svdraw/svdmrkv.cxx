@@ -55,6 +55,7 @@
 #include <svx/sdrpagewindow.hxx>
 #include <svx/sdrhittesthelper.hxx>
 #include <svx/svdocapt.hxx>
+#include <svx/svdograf.hxx>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // predefines
@@ -717,34 +718,41 @@ void SdrMarkView::SetMarkHandles()
 			}
 		}
 
-        // #122142# for captions in TextEdit, force to FrameHdls to get the special text selection
-        if(!bFrmHdl && pMarkedObj && bSingleTextObjMark && dynamic_cast< SdrCaptionObj* >(pMarkedObj))
+        // check if text edit or ole is active and handles need to be suppressed. This may be the case
+        // when a single object is selected
+        // Using a strict return statement is okay here; no handles means *no* handles.
+        if(pMarkedObj)
         {
-            bFrmHdl = true;
-        }
-		
-		if (bFrmHdl) 
-		{
-			Rectangle aRect(GetMarkedObjRect());
+            // formally #i33755#: If TextEdit is active the EditEngine will directly paint
+            // to the window, so suppress Overlay and handles completely; a text frame for
+            // the active text edit will be painted by the repaitnt mechanism in
+            // SdrObjEditView::ImpPaintOutlinerView in this case. This needs to be reworked
+            // in the future
+            // Also formally #122142#: Pretty much the same for SdrCaptionObj's in calc.
+            if(((SdrView*)this)->IsTextEdit())
+            {
+                const SdrTextObj* pSdrTextObj = dynamic_cast< const SdrTextObj* >(pMarkedObj);
 
-			// #i33755#
-			const sal_Bool bHideHandlesWhenInTextEdit(
-				((SdrView*)this)->IsTextEdit()
-				&& pMarkedObj 
-				&& pMarkedObj->ISA(SdrTextObj) 
-				&& ((SdrTextObj*)pMarkedObj)->IsInEditMode());
-			
-            // #i118524# if inplace activated OLE is selected,
-            // suppress handles
-            bool bHideHandlesWhenOleActive(false);
+                if(pSdrTextObj && pSdrTextObj->IsInEditMode())
+                {
+                    return;
+                }
+            }
+
+            // formally #i118524#: if inplace activated OLE is selected, suppress handles
             const SdrOle2Obj* pSdrOle2Obj = dynamic_cast< const SdrOle2Obj* >(pMarkedObj);
 
             if(pSdrOle2Obj && (pSdrOle2Obj->isInplaceActive() || pSdrOle2Obj->isUiActive()))
             {
-                bHideHandlesWhenOleActive = true;
+                return;
             }
+        }
 
-            if(!aRect.IsEmpty() && !bHideHandlesWhenInTextEdit && !bHideHandlesWhenOleActive) 
+        if (bFrmHdl) 
+		{
+			Rectangle aRect(GetMarkedObjRect());
+
+            if(!aRect.IsEmpty()) 
 			{ // sonst nix gefunden
                 if( bSingleTextObjMark )
                 {
@@ -761,6 +769,56 @@ void SdrMarkView::SetMarkHandles()
                 }
                 else if( eDragMode==SDRDRAG_CROP )
 				{
+                    const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(pMarkedObj);
+
+                    if(pSdrGrafObj)
+                    {
+                        const SdrGrafCropItem& rCrop = static_cast< const SdrGrafCropItem& >(pSdrGrafObj->GetMergedItem(SDRATTR_GRAFCROP));
+
+                        if(rCrop.GetLeft() || rCrop.GetTop() || rCrop.GetRight() ||rCrop.GetBottom())
+                        {
+                            basegfx::B2DHomMatrix aMatrix;
+                            basegfx::B2DPolyPolygon aPolyPolygon;
+
+                            pSdrGrafObj->TRGetBaseGeometry(aMatrix, aPolyPolygon);
+
+                            // decompose to have current translate and scale
+                            basegfx::B2DVector aScale, aTranslate;
+                            double fRotate, fShearX;
+
+                            aMatrix.decompose(aScale, aTranslate, fRotate, fShearX);
+
+                            if(!aScale.equalZero())
+                            {
+                                // get crop scale
+                                const basegfx::B2DVector aCropScaleFactor(
+                                    pSdrGrafObj->GetGraphicObject().calculateCropScaling(
+                                        aScale.getX(),
+                                        aScale.getY(),
+                                        rCrop.GetLeft(),
+                                        rCrop.GetTop(),
+                                        rCrop.GetRight(),
+                                        rCrop.GetBottom()));
+
+                                // apply crop scale
+                                const double fCropLeft(rCrop.GetLeft() * aCropScaleFactor.getX());
+                                const double fCropTop(rCrop.GetTop() * aCropScaleFactor.getY());
+                                const double fCropRight(rCrop.GetRight() * aCropScaleFactor.getX());
+                                const double fCropBottom(rCrop.GetBottom() * aCropScaleFactor.getY());
+
+                                aHdl.AddHdl(
+                                    new SdrCropViewHdl(
+                                        aMatrix,
+                                        pSdrGrafObj->GetGraphicObject().GetGraphic(),
+                                        fCropLeft,
+                                        fCropTop,
+                                        fCropRight,
+                                        fCropBottom,
+                                        pSdrGrafObj->IsMirrored()));
+                            }
+                        }
+                    }
+    
 					aHdl.AddHdl(new SdrCropHdl(aRect.TopLeft()     ,HDL_UPLFT));
 					aHdl.AddHdl(new SdrCropHdl(aRect.TopCenter()   ,HDL_UPPER));
 					aHdl.AddHdl(new SdrCropHdl(aRect.TopRight()    ,HDL_UPRGT));

@@ -302,14 +302,14 @@ short lcl_AskRedlineMode(Window *pWin)
 void SwTextShell::Execute(SfxRequest &rReq)
 {
     sal_Bool bUseDialog = sal_True;
-	const SfxItemSet *pArgs = rReq.GetArgs();
-	SwWrtShell& rWrtSh = GetShell();
-	const SfxPoolItem* pItem = 0;
-	sal_uInt16 nSlot = rReq.GetSlot();
-	if(pArgs)
-		pArgs->GetItemState(GetPool().GetWhich(nSlot), sal_False, &pItem);
-	switch( nSlot )
-	{
+    const SfxItemSet *pArgs = rReq.GetArgs();
+    SwWrtShell& rWrtSh = GetShell();
+    const SfxPoolItem* pItem = 0;
+    sal_uInt16 nSlot = rReq.GetSlot();
+    if(pArgs)
+        pArgs->GetItemState(GetPool().GetWhich(nSlot), sal_False, &pItem);
+    switch( nSlot )
+    {
         case SID_LANGUAGE_STATUS:
         {
             // get the language
@@ -318,44 +318,45 @@ void SwTextShell::Execute(SfxRequest &rReq)
             if (pItem2)
                 aNewLangTxt = pItem2->GetValue();
 
-			//!! Remember the view frame right now...
-			//!! (call to GetView().GetViewFrame() will break if the
-			//!! SwTextShell got destroyed meanwhile.)
-			SfxViewFrame *pViewFrame = GetView().GetViewFrame();
+            //!! Remember the view frame right now...
+            //!! (call to GetView().GetViewFrame() will break if the
+            //!! SwTextShell got destroyed meanwhile.)
+            SfxViewFrame *pViewFrame = GetView().GetViewFrame();
 
             if (aNewLangTxt.EqualsAscii( "*" ))
-			{
+            {
                 // open the dialog "Tools/Options/Language Settings - Language"
-				// to set the documents default language
-				SfxAbstractDialogFactory* pFact = SfxAbstractDialogFactory::Create();
-				if (pFact)
-				{
+                // to set the documents default language
+                SfxAbstractDialogFactory* pFact = SfxAbstractDialogFactory::Create();
+                if (pFact)
+                {
                     VclAbstractDialog* pDlg = pFact->CreateVclDialog( GetView().GetWindow(), SID_LANGUAGE_OPTIONS );
-					pDlg->Execute();
-					delete pDlg;
-				}
-			}
-			else
-			{
-				//!! We have to use StartAction / EndAction bracketing in
-				//!! order to prevent possible destruction of the SwTextShell
-				//!! due to the selection changes coming below.
-				rWrtSh.StartAction();
-				// prevent view from jumping because of (temporary) selection changes
-				rWrtSh.LockView( sal_True );
-				// save selection for later restoration
-				rWrtSh.Push();
+                    pDlg->Execute();
+                    delete pDlg;
+                }
+            }
+            else
+            {
+                //!! We have to use StartAction / EndAction bracketing in
+                //!! order to prevent possible destruction of the SwTextShell
+                //!! due to the selection changes coming below.
+                rWrtSh.StartAction();
+                // prevent view from jumping because of (temporary) selection changes
+                rWrtSh.LockView( sal_True );
+
+                // save selection for later restoration
+                rWrtSh.Push();
 
                 // setting the new language...
                 if (aNewLangTxt.Len() > 0)
-				{
+                {
                     const String aSelectionLangPrefix( String::CreateFromAscii("Current_") );
                     const String aParagraphLangPrefix( String::CreateFromAscii("Paragraph_") );
                     const String aDocumentLangPrefix( String::CreateFromAscii("Default_") );
-					const String aStrNone( String::CreateFromAscii("LANGUAGE_NONE") );
-					const String aStrResetLangs( String::CreateFromAscii("RESET_LANGUAGES") );
+                    const String aStrNone( String::CreateFromAscii("LANGUAGE_NONE") );
+                    const String aStrResetLangs( String::CreateFromAscii("RESET_LANGUAGES") );
 
-					SfxItemSet aCoreSet( GetPool(),
+                    SfxItemSet aCoreSet( GetPool(),
                             RES_CHRATR_LANGUAGE,        RES_CHRATR_LANGUAGE,
                             RES_CHRATR_CJK_LANGUAGE,    RES_CHRATR_CJK_LANGUAGE,
                             RES_CHRATR_CTL_LANGUAGE,    RES_CHRATR_CTL_LANGUAGE,
@@ -365,11 +366,11 @@ void SwTextShell::Execute(SfxRequest &rReq)
                     bool bForSelection = true;
                     bool bForParagraph = false;
                     if (STRING_NOTFOUND != (nPos = aNewLangTxt.Search( aSelectionLangPrefix, 0 )))
-	                {
+                    {
                         // ... for the current selection
                         aNewLangTxt = aNewLangTxt.Erase( nPos, aSelectionLangPrefix.Len() );
                         bForSelection = true;
-					}
+                    }
                     else if (STRING_NOTFOUND != (nPos = aNewLangTxt.Search( aParagraphLangPrefix , 0 )))
                     {
                         // ... for the current paragraph language
@@ -378,40 +379,44 @@ void SwTextShell::Execute(SfxRequest &rReq)
                         bForParagraph = true;
                     }
                     else if (STRING_NOTFOUND != (nPos = aNewLangTxt.Search( aDocumentLangPrefix , 0 )))
-	                {
+                    {
                         // ... as default document language
                         aNewLangTxt = aNewLangTxt.Erase( nPos, aDocumentLangPrefix.Len() );
                         bForSelection = false;
-					}
+                    }
 
                     if (bForParagraph)
                         SwLangHelper::SelectCurrentPara( rWrtSh );
 
-					if (!bForSelection) // document language to be changed...
+                    if (!bForSelection) // document language to be changed...
                     {
-						rWrtSh.SelAll();
+                        rWrtSh.SelAll();
                         rWrtSh.ExtendedSelectAll();
                     }
+
+                    rWrtSh.StartUndo( ( !bForParagraph && !bForSelection ) ? UNDO_SETDEFTATTR : UNDO_EMPTY );
                     if (aNewLangTxt == aStrNone)
                         SwLangHelper::SetLanguage_None( rWrtSh, bForSelection, aCoreSet );
                     else if (aNewLangTxt == aStrResetLangs)
                         SwLangHelper::ResetLanguages( rWrtSh, bForSelection );
                     else
                         SwLangHelper::SetLanguage( rWrtSh, aNewLangTxt, bForSelection, aCoreSet );
-				}
+                    rWrtSh.EndUndo();
 
-				// restore selection...
-				rWrtSh.Pop( sal_False );
+                }
 
-				rWrtSh.LockView( sal_False );
-				rWrtSh.EndAction();
-			}
+                // restore selection...
+                rWrtSh.Pop( sal_False );
+
+                rWrtSh.LockView( sal_False );
+                rWrtSh.EndAction();
+            }
 
             // invalidate slot to get the new language displayed
-			pViewFrame->GetBindings().Invalidate( nSlot );
+            pViewFrame->GetBindings().Invalidate( nSlot );
 
             rReq.Done();
-			break;
+            break;
         }
 
         case SID_THES:

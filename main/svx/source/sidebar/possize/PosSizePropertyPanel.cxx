@@ -22,6 +22,7 @@
 #include <sfx2/sidebar/ResourceDefinitions.hrc>
 #include <sfx2/sidebar/Theme.hxx>
 #include <sfx2/sidebar/ControlFactory.hxx>
+#include <sfx2/sidebar/Layouter.hxx>
 #include "PosSizePropertyPanel.hxx"
 #include "PosSizePropertyPanel.hrc"
 #include <svx/sidebar/SidebarDialControl.hxx>
@@ -44,6 +45,7 @@
 
 using namespace css;
 using namespace cssu;
+using ::sfx2::sidebar::Layouter;
 using ::sfx2::sidebar::Theme;
 
 #define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
@@ -122,7 +124,8 @@ PosSizePropertyPanel::PosSizePropertyPanel(
     mbAutoHeight(false),
     mbAdjustEnabled(false),
     mbIsFlip(false),
-    mxSidebar(rxSidebar)
+    mxSidebar(rxSidebar),
+    maLayouter(*this)
 {
     Initialize();
     FreeResource();
@@ -131,6 +134,47 @@ PosSizePropertyPanel::PosSizePropertyPanel(
     mpBindings->Update( SID_ATTR_TRANSFORM_HEIGHT );
     mpBindings->Update( SID_ATTR_TRANSFORM_PROTECT_SIZE );
     mpBindings->Update( SID_ATTR_METRIC );
+
+    // Setup the grid layouter.
+    const sal_Int32 nMappedMboxWidth (Layouter::MapWidth(*this, MBOX_WIDTH));
+
+    maLayouter.GetCell(0,0).SetControl(*mpFtPosX);
+    maLayouter.GetCell(1,0).SetControl(*mpMtrPosX);
+
+    maLayouter.GetCell(0,2).SetControl(*mpFtPosY);
+    maLayouter.GetCell(1,2).SetControl(*mpMtrPosY);
+
+    maLayouter.GetCell(2,0).SetControl(*mpFtWidth);
+    maLayouter.GetCell(3,0).SetControl(*mpMtrWidth);
+    
+    maLayouter.GetCell(2,2).SetControl(*mpFtHeight);
+    maLayouter.GetCell(3,2).SetControl(*mpMtrHeight);
+    
+    maLayouter.GetCell(4,0).SetControl(*mpCbxScale).SetGridWidth(3);
+    maLayouter.GetCell(5,0).SetControl(*mpFtAngle).SetGridWidth(3);
+        
+
+    maLayouter.GetColumn(0)
+        .SetWeight(1)
+        .SetLeftPadding(Layouter::MapWidth(*this,SECTIONPAGE_MARGIN_HORIZONTAL))
+        .SetMinimumWidth(nMappedMboxWidth);
+    maLayouter.GetColumn(1)
+        .SetWeight(0)
+        .SetMinimumWidth(Layouter::MapWidth(*this, CONTROL_SPACING_HORIZONTAL));
+    maLayouter.GetColumn(2)
+        .SetWeight(1)
+        .SetRightPadding(Layouter::MapWidth(*this,SECTIONPAGE_MARGIN_HORIZONTAL))
+        .SetMinimumWidth(nMappedMboxWidth);
+
+    // Make controls that display text handle short widths more
+    // graceful.
+    Layouter::PrepareForLayouting(*mpFtPosX);
+    Layouter::PrepareForLayouting(*mpFtPosY);
+    Layouter::PrepareForLayouting(*mpFtWidth);
+    Layouter::PrepareForLayouting(*mpFtHeight);
+    Layouter::PrepareForLayouting(*mpCbxScale);
+    Layouter::PrepareForLayouting(*mpFtAngle);
+
 }
 
 
@@ -153,6 +197,43 @@ void PosSizePropertyPanel::ShowMenu (void)
             pDispatcher->Execute(SID_ATTR_TRANSFORM, SFX_CALLMODE_ASYNCHRON);
     }
 }
+
+
+
+namespace
+{
+    bool hasText(const SdrView& rSdrView)
+    {
+        const SdrMarkList& rMarkList = rSdrView.GetMarkedObjectList();
+
+        if(1 == rMarkList.GetMarkCount())
+        {
+            const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
+            const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
+
+            if((pObj->GetObjInventor() == SdrInventor) && (OBJ_TEXT == eKind || OBJ_TITLETEXT == eKind || OBJ_OUTLINETEXT == eKind))
+            {
+                const SdrTextObj* pSdrTextObj = dynamic_cast< const SdrTextObj* >(pObj);
+
+                if(pSdrTextObj && pSdrTextObj->HasText())
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+} // end of anonymous namespace
+
+
+
+
+void PosSizePropertyPanel::Resize (void)
+{
+    maLayouter.Layout();
+}
+
 
 
 
@@ -228,18 +309,7 @@ void PosSizePropertyPanel::Initialize()
     if ( mpView != NULL )
     {
         maUIScale = mpView->GetModel()->GetUIScale();
-
-        const SdrMarkList& rMarkList = mpView->GetMarkedObjectList();
-        if(1 == rMarkList.GetMarkCount())
-        {
-            const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
-            const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
-
-            if((pObj->GetObjInventor() == SdrInventor) && (OBJ_TEXT == eKind || OBJ_TITLETEXT == eKind || OBJ_OUTLINETEXT == eKind) && ((SdrTextObj*)pObj)->HasText())
-            {
-                mbAdjustEnabled = true;
-            }
-        }
+        mbAdjustEnabled = hasText(*mpView);
     }
     
     mePoolUnit = maTransfWidthControl.GetCoreMetric();
@@ -705,20 +775,12 @@ void PosSizePropertyPanel::NotifyItemUpdate(
     if ( mpView == NULL )
         return;
 
-    const SdrMarkList& rMarkList = mpView->GetMarkedObjectList();
+    mbAdjustEnabled = hasText(*mpView);
 
-    if(1 == rMarkList.GetMarkCount())
-    {
-        const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
-        const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
-
-        if((pObj->GetObjInventor() == SdrInventor) && (OBJ_TEXT == eKind || OBJ_TITLETEXT == eKind || OBJ_OUTLINETEXT == eKind) && ((SdrTextObj*)pObj)->HasText())
-            mbAdjustEnabled = true;
-        else
-            mbAdjustEnabled = false;
-    }
-    else
-        mbAdjustEnabled = false;
+    // Pool unit and dialog unit may have changed, make sure that we
+    // have the current values.
+    mePoolUnit = maTransfWidthControl.GetCoreMetric();
+    meDlgUnit = GetModuleFieldUnit();
 
     switch (nSID)
     {
@@ -732,6 +794,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                     long mlOldWidth1 = pWidthItem->GetValue();
 
                     mlOldWidth1 = Fraction( mlOldWidth1 ) / maUIScale;
+                    SetFieldUnit( *mpMtrWidth, meDlgUnit, true );
                     SetMetricValue( *mpMtrWidth, mlOldWidth1, mePoolUnit );
                     mlOldWidth = mlOldWidth1;
                     break;
@@ -751,6 +814,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                     long mlOldHeight1 = pHeightItem->GetValue();
 
                     mlOldHeight1 = Fraction( mlOldHeight1 ) / maUIScale;
+                    SetFieldUnit( *mpMtrHeight, meDlgUnit, true );
                     SetMetricValue( *mpMtrHeight, mlOldHeight1, mePoolUnit );
                     mlOldHeight = mlOldHeight1;
                     break;
@@ -769,6 +833,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                 {
                     long nTmp = pItem->GetValue(); 
                     nTmp = Fraction( nTmp ) / maUIScale;
+                    SetFieldUnit( *mpMtrPosX, meDlgUnit, true );
                     SetMetricValue( *mpMtrPosX, nTmp, mePoolUnit );
                     break;
                 }
@@ -786,6 +851,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                 {
                     long nTmp = pItem->GetValue(); 
                     nTmp = Fraction( nTmp ) / maUIScale;
+                    SetFieldUnit( *mpMtrPosY, meDlgUnit, true );
                     SetMetricValue( *mpMtrPosY, nTmp, mePoolUnit );
                     break;
                 }
@@ -933,6 +999,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
     }
 
     const sal_Int32 nCombinedContext(maContext.GetCombinedContext_DI());
+    const SdrMarkList& rMarkList = mpView->GetMarkedObjectList();
 
     switch (rMarkList.GetMarkCount())
     {

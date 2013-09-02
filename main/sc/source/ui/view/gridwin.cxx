@@ -3564,6 +3564,13 @@ sal_Int8 ScGridWindow::AcceptDrop( const AcceptDropEvent& rEvt )
 		else
 		{
 			sal_Int8 nMyAction = rEvt.mnAction;
+			
+			// clear DND_ACTION_LINK when other actions are set. The usage below cannot handle
+			// multiple set values
+			if((nMyAction & DND_ACTION_LINK) && (nMyAction & (DND_ACTION_COPYMOVE)))
+			{
+			    nMyAction &= ~DND_ACTION_LINK;
+			}
 
 			if ( !rData.pDrawTransfer ||
 					!IsMyModel(rData.pDrawTransfer->GetDragSourceView()) )		// drawing within the document
@@ -3573,7 +3580,7 @@ sal_Int8 ScGridWindow::AcceptDrop( const AcceptDropEvent& rEvt )
 			ScDocument* pThisDoc = pViewData->GetDocument();
 			SdrObject* pHitObj = pThisDoc->GetObjectAtPoint(
 						pViewData->GetTabNo(), PixelToLogic(rEvt.maPosPixel) );
-			if ( pHitObj && nMyAction == DND_ACTION_LINK && !rData.pDrawTransfer )
+			if ( pHitObj && nMyAction == DND_ACTION_LINK ) // && !rData.pDrawTransfer )
 			{
 				if ( IsDropFormatSupported(SOT_FORMATSTR_ID_SVXB)
 					|| IsDropFormatSupported(SOT_FORMAT_GDIMETAFILE)
@@ -4191,8 +4198,9 @@ sal_Int8 ScGridWindow::ExecuteDrop( const ExecuteDropEvent& rEvt )
 	}
 
 	Point aLogicPos = PixelToLogic(aPos);
+	sal_Bool bIsLink = ( rEvt.mnAction == DND_ACTION_LINK );
 
-	if (rData.pDrawTransfer)
+	if (!bIsLink && rData.pDrawTransfer)
 	{
 		sal_uInt16 nFlags = rData.pDrawTransfer->GetDragSourceFlags();
 
@@ -4227,8 +4235,6 @@ sal_Int8 ScGridWindow::ExecuteDrop( const ExecuteDropEvent& rEvt )
 			return rEvt.mnAction;
 		}
 	}
-
-	sal_Bool bIsLink = ( rEvt.mnAction == DND_ACTION_LINK );
 
 	ScDocument* pThisDoc = pViewData->GetDocument();
 	SdrObject* pHitObj = pThisDoc->GetObjectAtPoint( pViewData->GetTabNo(), PixelToLogic(aPos) );
@@ -4443,10 +4449,12 @@ void ScGridWindow::UpdateFormulas()
 
     aOutputData.FindChanged();
 
-    PolyPolygon aChangedPoly( aOutputData.GetChangedArea() );   // logic (PixelToLogic)
-    if ( aChangedPoly.Count() )
+    // #122149# do not use old GetChangedArea() which used polygon-based Regions, but use
+    // the region-band based new version; anyways, only rectangles are added
+    Region aChangedRegion( aOutputData.GetChangedAreaRegion() );   // logic (PixelToLogic)
+    if(!aChangedRegion.IsEmpty())
     {
-        Invalidate( aChangedPoly );
+        Invalidate(aChangedRegion);
     }
 
     CheckNeedsRepaint();    // #i90362# used to be called via Draw() - still needed here

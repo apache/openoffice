@@ -86,7 +86,7 @@ public class GraphicPro_Border {
 			{LineStyle.SOLID,"Continuous", colorList[1], LineStyle.SOLID,"Continuous", colorList[1]},
 			{LineStyle.DASH,"Ultrafine Dashed", colorList[2], LineStyle.DASH,"Ultrafine Dashed", colorList[2]},
 			{LineStyle.DASH,"Fine Dashed", colorList[3], LineStyle.DASH,"Fine Dashed", colorList[3]},
-			{LineStyle.DASH,"Ultrafine 2 dots 3 dashes", colorList[4], LineStyle.DASH,"Ultrafine 2 Dots 3 Dashes", colorList[4]},
+			{LineStyle.DASH,"Ultrafine 2 Dots 3 Dashes", colorList[4], LineStyle.DASH,"Ultrafine 2 Dots 3 Dashes", colorList[4]},
 			{LineStyle.DASH,"Fine Dotted", colorList[5],  LineStyle.DASH,"Fine Dotted", colorList[5]},
 			{LineStyle.DASH,"Line with Fine Dots", colorList[6], LineStyle.DASH,"Line with Fine Dots", colorList[6]},
 			{LineStyle.DASH,"Fine Dashed (var)", colorList[7], LineStyle.DASH,"Fine Dashed (var)", colorList[7]},

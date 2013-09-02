@@ -51,18 +51,21 @@ public:
 };
 
 //====================================================================
+class SfxLinkUndoAction;
 
 class SVL_DLLPUBLIC SfxUndoAction
 {
-	sal_Bool bLinked;
+private:
+    SfxLinkUndoAction*      mpSfxLinkUndoAction;
+
 public:
 							TYPEINFO();
 							SfxUndoAction();
 	virtual 				~SfxUndoAction();
 
-	virtual sal_Bool            IsLinked();
-	virtual void            SetLinked( sal_Bool bIsLinked = sal_True );
-	virtual void			Undo();
+    virtual void SetLinkToSfxLinkUndoAction(SfxLinkUndoAction* pSfxLinkUndoAction);
+
+    virtual void			Undo();
     virtual void            UndoWithContext( SfxUndoContext& i_context );
 	virtual void			Redo();
     virtual void            RedoWithContext( SfxUndoContext& i_context );
@@ -239,6 +242,7 @@ namespace svl
 
         virtual size_t          GetRedoActionCount( bool const i_currentLevel = CurrentLevel ) const = 0;
         virtual UniString       GetRedoActionComment( size_t nNo=0, bool const i_currentLevel = CurrentLevel ) const = 0;
+        virtual SfxUndoAction*  GetRedoAction( size_t nNo=0, bool const i_currentLevel = CurrentLevel ) const = 0;
 
         virtual sal_Bool        Undo() = 0;
         virtual sal_Bool        Redo() = 0;
@@ -357,6 +361,7 @@ public:
     virtual SfxUndoAction*  GetUndoAction( size_t nNo=0 ) const;
     virtual size_t          GetRedoActionCount( bool const i_currentLevel = CurrentLevel ) const;
     virtual UniString       GetRedoActionComment( size_t nNo=0, bool const i_currentLevel = CurrentLevel ) const;
+    virtual SfxUndoAction*  GetRedoAction( size_t nNo=0, bool const i_currentLevel = CurrentLevel ) const;
     virtual sal_Bool        Undo();
     virtual sal_Bool        Redo();
     virtual void            Clear();
@@ -448,6 +453,10 @@ class SVL_DLLPUBLIC SfxLinkUndoAction : public SfxUndoAction
 */
 
 {
+private:
+    friend class SfxUndoAction;
+    void LinkedSfxUndoActionDestructed(const SfxUndoAction& rCandidate);
+
 public:
 							TYPEINFO();
                             SfxLinkUndoAction(::svl::IUndoManager *pManager);

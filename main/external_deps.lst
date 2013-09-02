@@ -126,9 +126,9 @@ if ( true )
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )
-    SHA1 = 30b29bd9214d50887abcc20cf82096aaaf5d1d61
-    name = serf-1.2.0.tar.bz2
-    URL1 = http://serf.googlecode.com/files/serf-1.2.0.tar.bz2
+    SHA1 = f65fbbd72926c8e7cf0dbd4ada03b0d226f461fd
+    name = serf-1.2.1.tar.bz2
+    URL1 = http://serf.googlecode.com/files/serf-1.2.1.tar.bz2
     URL2 = $(OOO_EXTRAS)$(SHA1)-$(name)
 
 if (SOLAR_JAVA==TRUE && (ENABLE_MEDIAWIKI==YES || ENABLE_REPORTBUILDER==YES))
@@ -168,20 +168,20 @@ if ( true )
     URL1 = http://archive.apache.org/dist/apr/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
-if ( true )
+if ( USE_SYSTEM_STL != YES )
     MD5 = c441926f3a552ed3e5b274b62e86af16
     name = STLport-4.0.tar.gz
     # This seems to be the original host, but the MD5 sum does not match.
     # URL1 = http://sourceforge.net/projects/stlport/files/STLport%20archive/STLport%204/STLport-4.0.tar.gz/download
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
-if ( true )
+if ( USE_SYSTEM_STL != YES )
     MD5 = 18f577b374d60b3c760a3a3350407632
     name = STLport-4.5.tar.gz
     URL1 = http://sourceforge.net/projects/stlport/files/STLport%20archive/STLport%204/STLport-4.5.tar.gz/download
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
-if ( true )
+if ( USE_SYSTEM_STL != YES )
     MD5 = 7376930b0d3f3d77a685d94c4a3acda8
     name = STLport-4.5-0119.tar.gz
     URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
@@ -217,9 +217,9 @@ if (ENABLE_MEDIAWIKI == YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_PYTHON != YES)
-    MD5 = 62704ea0f125923208d84ff0568f7d50
-    name = Python-2.7.4.tar.bz2
-    URL1 = http://www.python.org/ftp/python/2.7.4/Python-2.7.4.tar.bz2
+    MD5 =  6334b666b7ff2038c761d7b27ba699c1
+    name = Python-2.7.5.tar.bz2
+    URL1 = http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tar.bz2
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_BOOST!=YES || (OS==SOLARIS && COM!=GCC))

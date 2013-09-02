@@ -547,7 +547,7 @@ void SvxTextAttrPage::Construct()
 				case OBJ_OUTLINETEXT :
 				case OBJ_CAPTION :
 				{
-					if ( ((SdrTextObj*)pObj)->HasText() )
+					if(pObj->HasText())
 					{
 						// Konturfluss ist NICHT bei reinen Textobjekten m�glich
 						bContourEnabled = sal_False;

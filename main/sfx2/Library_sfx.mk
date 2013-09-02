@@ -65,7 +65,7 @@ $(eval $(call gb_Library_add_linked_libs,sfx,\
 	stl \
 	svl \
 	svt \
-	tk \
+	ootk \
 	tl \
 	ucbhelper \
 	utl \
@@ -213,11 +213,14 @@ $(eval $(call gb_Library_add_exception_objects,sfx,\
 	sfx2/source/menu/virtmenu \
 	sfx2/source/notify/eventsupplier \
 	sfx2/source/notify/hintpost \
+	sfx2/source/sidebar/Sidebar \
 	sfx2/source/sidebar/SidebarChildWindow \
 	sfx2/source/sidebar/SidebarDockingWindow \
 	sfx2/source/sidebar/SidebarController \
 	sfx2/source/sidebar/SidebarPanelBase \
 	sfx2/source/sidebar/SidebarToolBox \
+	sfx2/source/sidebar/Accessible \
+	sfx2/source/sidebar/AccessibleTitleBar \
 	sfx2/source/sidebar/AsynchronousCall \
 	sfx2/source/sidebar/CommandInfoProvider \
 	sfx2/source/sidebar/Context \
@@ -234,9 +237,11 @@ $(eval $(call gb_Library_add_exception_objects,sfx,\
 	sfx2/source/sidebar/DrawHelper \
 	sfx2/source/sidebar/EnumContext \
 	sfx2/source/sidebar/FocusManager \
+	sfx2/source/sidebar/GridLayouter \
 	sfx2/source/sidebar/MenuButton \
 	sfx2/source/sidebar/IContextChangeReceiver \
 	sfx2/source/sidebar/ILayoutableWindow \
+	sfx2/source/sidebar/Layouter \
 	sfx2/source/sidebar/Paint \
 	sfx2/source/sidebar/Panel \
 	sfx2/source/sidebar/PanelDescriptor \

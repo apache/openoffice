@@ -227,6 +227,7 @@ protected:
 	sal_uInt32          nMaxUndoCount;
 	FASTBOOL        bSaveNative;
 	sal_Bool            bStarDrawPreviewMode;
+    bool            mbDisableTextEditUsesCommonUndoManager;
 
 
 //////////////////////////////////////////////////////////////////////////////
@@ -678,6 +679,9 @@ public:
 
 	void 	SetStarDrawPreviewMode(sal_Bool bPreview);
 	sal_Bool 	IsStarDrawPreviewMode() { return bStarDrawPreviewMode; }
+
+    bool GetDisableTextEditUsesCommonUndoManager() const { return mbDisableTextEditUsesCommonUndoManager; }
+    void SetDisableTextEditUsesCommonUndoManager(bool bNew) { mbDisableTextEditUsesCommonUndoManager = bNew; }
 
 	SotStorage*	GetModelStorage() const { return pModelStorage; }
 	void		SetModelStorage( SotStorage* pStor ) { pModelStorage = pStor; }

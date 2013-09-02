@@ -31,7 +31,7 @@
 # the name has to be specified after the URL enclosed in double quotes.
 
 
-# Some extensions that are installed indepently of the language.
+# Some extensions that are installed independently of the language.
 
 # the presenter console extension
 # [ language=all && ENABLE_XXX ]
@@ -39,7 +39,7 @@
 
 # English dictionary
 [ language=en.* || language=de || language=it ]
-    b7ce02d25eb302e5b23572cdccaea461 http://numbertext.org/tmp/dict-en.oxt
+    3c3f841f5d40403bcc4d6bb685a38160 http://sourceforge.net/projects/aoo-extensions/files/17102/1/dict-en.oxt/download "dict-en.oxt"
 
 # English (USA, en_US) dictionary
 [ language==nl || language==ru ]
@@ -77,6 +77,10 @@
 # Russian dictionary.
 [ language=ru ]
     a63512bc487d7378bbe2e44f59d5ef45 http://sourceforge.net/projects/aoo-extensions/files/3233/2/dict_ru_RU-0.3.6.oxt/download "dict_ru_RU-0.3.6.oxt"
+
+# Slovak dictionary.
+[ language=sk ]
+    5a7cec122a215c9f6a906ecb8ad46ee6 http://sourceforge.net/projects/aoo-extensions/files/1143/11/dict-sk.oxt/download "dict-sk.oxt"
 
 # Slovenian dictionary.
 [ language=sl ]
@@ -117,7 +121,7 @@
 
 # Swedish.
 [ language=sv ]
-    249b3bd3d9de4928ab8c809623dc9c4f http://sourceforge.net/projects/aoo-extensions/files/5959/0/dict-sv.oxt/download "dict-sv.oxt"
+    32ab4edf1496a7cf5469ee1643eb0128 http://sourceforge.net/projects/aoo-extensions/files/5959/1/dict-sv.oxt/download "dict-sv.oxt"
 
 # Korean.
 [ language=ko ]

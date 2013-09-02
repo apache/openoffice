@@ -393,25 +393,42 @@ public:
         @param rTransformation
         The back transformation for each pixel in (0 .. fWidth),(0 .. fHeight) to
         local pixel coordiantes
+
+        @param bSmooth
+        Defines if pixel interpolation is to be used to create the result 
     */
     BitmapEx TransformBitmapEx(
         double fWidth,
         double fHeight,
-        const basegfx::B2DHomMatrix& rTransformation) const;
+        const basegfx::B2DHomMatrix& rTransformation,
+        bool bSmooth = true) const;
 
     /** Create transformed Bitmap
 
         @param rTransformation
-        The transformation from unit coordinates to target
+        The transformation from unit coordinates to the unit range
+
+        @param rVisibleRange
+        The relative visible range in unit coordinates, relative to (0,0,1,1) which
+        defines the whole target area
 
         @param fMaximumArea
         A limitation for the maximum size of pixels to use for the result
+
+        @param bSmooth
+        Defines if pixel interpolation is to be used to create the result 
+
+        The traget size of the result bitmap is defined by transforming the given
+        rTargetRange with the given rTransformation; the area of the result is
+        linearly scaled to not exceed the given fMaximumArea
 
         @return The transformed bitmap
     */
     BitmapEx getTransformed(
         const basegfx::B2DHomMatrix& rTransformation, 
-        double fMaximumArea = 500000.0) const;
+        const basegfx::B2DRange& rVisibleRange,
+        double fMaximumArea = 500000.0,
+        bool bSmooth = true) const;
 
     /** Create ColorStack-modified version of this BitmapEx
 
@@ -420,5 +437,37 @@ public:
     */
     BitmapEx ModifyBitmapEx(const basegfx::BColorModifierStack& rBColorModifierStack) const;
 };
+
+// ------------------------------------------------------------------
+/** Create a blend frame as BitmapEx
+
+    @param nAlpha
+    The blend value defines how strong the frame will be blended with the
+    existing content, 255 == full coverage, 0 == no frame will be drawn
+
+    @param aColorTopLeft, aColorBottomRight, aColorTopRight, aColorBottomLeft
+    The colors defining the frame. If the version without aColorTopRight and
+    aColorBottomLeft is used, these colors are linearly interpolated from
+    aColorTopLeft and aColorBottomRight using the width and height of the area
+
+    @param rSize
+    The size of the frame in pixels
+    */
+
+BitmapEx VCL_DLLPUBLIC createBlendFrame(
+    const Size& rSize, 
+    sal_uInt8 nAlpha,
+    Color aColorTopLeft, 
+    Color aColorBottomRight);
+
+BitmapEx VCL_DLLPUBLIC createBlendFrame(
+    const Size& rSize, 
+    sal_uInt8 nAlpha,
+    Color aColorTopLeft, 
+    Color aColorTopRight, 
+    Color aColorBottomRight, 
+    Color aColorBottomLeft);
+
+// ------------------------------------------------------------------
 
 #endif // _SV_BITMAPEX_HXX

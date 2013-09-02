@@ -2176,7 +2176,16 @@ rtl::OUString SAL_CALL ScChart2DataProvider::convertRangeFromXML( const rtl::OUS
     }
 
     OUString aRet;
-    ScRangeStringConverter::GetStringFromXMLRangeString(aRet, sXMLRange, m_pDocument);
+
+    // #118840# Only interpret range string when the ScDocument is not just used 
+    // temporary (e.g. for transporting a chart over the clipboard). In that case, the local
+    // cell data would be invalid; despite the fact that a 'Sheet1' exists (just because
+    // it's the default)
+    if(!m_pDocument->IsTemporary())
+    {
+        ScRangeStringConverter::GetStringFromXMLRangeString(aRet, sXMLRange, m_pDocument);
+    }
+
     return aRet;
 }
 
@@ -2525,6 +2534,7 @@ void ScChart2DataSequence::BuildDataCache()
 
             SCCOL nLastCol = -1;
             SCROW nLastRow = -1;
+
             for (SCTAB nTab = aRange.aStart.Tab(); nTab <= aRange.aEnd.Tab(); ++nTab)
             {
                 for (SCCOL nCol = aRange.aStart.Col(); nCol <= aRange.aEnd.Col(); ++nCol)
@@ -2554,6 +2564,7 @@ void ScChart2DataSequence::BuildDataCache()
                             continue;
     
                         if (pCell->HasStringData())
+
                             rItem.maString = pCell->GetStringData();
                         else
                         {    
@@ -3009,51 +3020,12 @@ uno::Sequence< double > SAL_CALL ScChart2DataSequence::getNumericalData()
     ::rtl::math::setNan(&fNAN);
 
     sal_Int32 nCount = m_aDataArray.size();
-    // i121058: if there's too many points need to be painted, it doens't need to get all points for performance consideration
-    // and so many points are not useful for users to understand the chart. So only picked some points to paint
-    sal_Int32 nStep = nCount >= 10000 ? 50 : 1;
-    nCount = nCount >= 10000 ? ((nCount - nCount % nStep) / nStep) : nCount;
-    sal_Int32 nRealCount = nStep == 1 ? nCount : nCount * 2;
-    uno::Sequence<double> aSeq(nRealCount);
-    double* pArr = aSeq.getArray();
-    ::std::list<Item>::const_iterator itr = m_aDataArray.begin(), itrEnd = m_aDataArray.end();
-    for (sal_Int32 i = 0; i < nCount; i++)
-    {
-        if (nStep == 1)
-        {
-            *pArr++ = itr->mbIsValue ? itr->mfValue : fNAN;
-            itr++;
-        }
-        else
-        {
-            sal_Int32 nMax = 0, nMin = 0, nMaxStep = 0, nMinStep = 0;
-            for (sal_Int32 j = 0; j < nStep; j++)
-            {
-                sal_Int32 nValue = itr->mbIsValue ? itr->mfValue : fNAN;
-                if (nValue > nMax)
-                {
-                    nMax = nValue;
-                    nMaxStep = j;
-                }
-                if (nValue < nMin)
-                {
-                    nMin = nValue;
-                    nMinStep = j;
-                }
-                itr++;
-            }
-            if (nMaxStep > nMinStep)
-            {
-                *pArr++ = nMin;
-                *pArr++ = nMax;
-            }
-            else
-            {
-                *pArr++ = nMax;
-                *pArr++ = nMin;
-            }
-        }
-    }
+    uno::Sequence<double> aSeq(nCount);
+     double* pArr = aSeq.getArray();
+     ::std::list<Item>::const_iterator itr = m_aDataArray.begin(), itrEnd = m_aDataArray.end();
+    for (; itr != itrEnd; ++itr, ++pArr)
+        *pArr = itr->mbIsValue ? itr->mfValue : fNAN;
+
     return aSeq;
 }
 

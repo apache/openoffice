@@ -1128,6 +1128,9 @@ public:
 	Rectangle GetBLIPSizeRectangle() const;
 	void SetBLIPSizeRectangle( const Rectangle& aRect );
 
+    // #121917#
+    virtual bool HasText() const;
+
 //IAccessibility2 Implementation 2009-----
 	const SdrObject* GetCaptionObj() const;
 //-----IAccessibility2 Implementation 2009

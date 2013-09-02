@@ -97,7 +97,13 @@ public class AppTool extends Tester {
 		submitSaveDlg(getPath(path));
 		if (alienFormatDlg.exists(3))
 			alienFormatDlg.ok();
-		app.waitSlot(5 * 60); // 10 minutes
+		if( activeMsgBox.exists(1)) {
+			String msg = activeMsgBox.getMessage();
+			// #i123142# confirm overwriting of test files
+			if( msg.indexOf( "overwrite changes") >= 0)
+				activeMsgBox.yes();
+		}
+		app.waitSlot(5 * 60); // 5 minutes
 	}
 	
 	public static void close() {

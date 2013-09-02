@@ -236,9 +236,15 @@ void TabBar::Layout (void)
 
 void TabBar::HighlightDeck (const ::rtl::OUString& rsDeckId)
 {
-    Item* pItem = GetItemForId(rsDeckId);
-    if (pItem != NULL)
-        pItem->mpButton->Check();
+    for (ItemContainer::iterator iItem(maItems.begin()),iEnd(maItems.end());
+         iItem!=iEnd;
+         ++iItem)
+    {
+        if (iItem->msDeckId.equals(rsDeckId))
+            iItem->mpButton->Check(sal_True);
+        else
+            iItem->mpButton->Check(sal_False);
+    }
 }
 
 
@@ -379,9 +385,11 @@ void TabBar::UpdateFocusManager (FocusManager& rFocusManager)
 
 IMPL_LINK(TabBar, OnToolboxClicked, void*, EMPTYARG)
 {
-    ::std::vector<DeckMenuData> aSelectionData;
-    ::std::vector<DeckMenuData> aShowData;
-    
+    if ( ! mpMenuButton)
+        return 0;
+
+    ::std::vector<DeckMenuData> aMenuData;
+
     for(ItemContainer::const_iterator iItem(maItems.begin()),iEnd(maItems.end());
         iItem!=iEnd;
         ++iItem)
@@ -389,18 +397,14 @@ IMPL_LINK(TabBar, OnToolboxClicked, void*, EMPTYARG)
         const DeckDescriptor* pDeckDescriptor = ResourceManager::Instance().GetDeckDescriptor(iItem->msDeckId);
         if (pDeckDescriptor != NULL)
         {
-            if ( ! iItem->mbIsHidden)
-                aSelectionData.push_back(
-                    DeckMenuData(
-                        pDeckDescriptor->msTitle,
-                        pDeckDescriptor->msId,
-                        iItem->mpButton->IsChecked()));
+            DeckMenuData aData;
+            aData.msDisplayName = pDeckDescriptor->msTitle;
+            aData.msDeckId = pDeckDescriptor->msId;
+            aData.mbIsCurrentDeck = iItem->mpButton->IsChecked();
+            aData.mbIsActive = !iItem->mbIsHidden;
+            aData.mbIsEnabled = iItem->mpButton->IsEnabled();
 
-            aShowData.push_back(
-                DeckMenuData(
-                    pDeckDescriptor->msTitle,
-                    pDeckDescriptor->msId,
-                    !iItem->mbIsHidden));
+            aMenuData.push_back(aData);
         }
     }
 
@@ -408,8 +412,8 @@ IMPL_LINK(TabBar, OnToolboxClicked, void*, EMPTYARG)
         Rectangle(
             mpMenuButton->GetPosPixel(),
             mpMenuButton->GetSizePixel()),
-        aSelectionData,
-        aShowData);
+        aMenuData);
+    mpMenuButton->Check(sal_False);
     
     return 0;
 }
