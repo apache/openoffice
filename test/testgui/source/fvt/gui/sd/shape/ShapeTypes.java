@@ -60,11 +60,11 @@ public class ShapeTypes {
 
 	@After
 	public void tearDown() throws Exception {
-		sleep(3);
 		//close navigator
 		if (sdNavigatorDlg.exists()) {
 			app.dispatch(".uno:Navigator");
 		}
+		AppTool.discard();
 		app.stop();
 	}
 
@@ -101,9 +101,8 @@ public class ShapeTypes {
 		typeKeys("<enter>");
 		allShapes=sdNavigator.getAllItemsText();
 		assertEquals(4, allShapes.length);
-
-
 	}
+
 	/**
 	 * Insert a new Star shape
 	 * @throws Exception
@@ -137,7 +136,6 @@ public class ShapeTypes {
 		typeKeys("<enter>");
 		allShapes=sdNavigator.getAllItemsText();
 		assertEquals(4, allShapes.length);
-
 	}
 
 }
