@@ -34,6 +34,7 @@ import static testlib.gui.UIMap.*;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.HashMap;
+import java.util.logging.Level;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -184,6 +185,7 @@ public class FileTypeAboutWriter {
 		HashMap<String, Object>  perf = aoo.getPerfData();
 		xmlResult.addRow("Data",testname.getMethodName(), i, (end - start),
 				perf.get("vsz"), perf.get("rss"), perf.get("handles"));
+		log.log( Level.INFO, "\t"+testname.getMethodName()+"["+i+"] took "+(end-start)+"ms");
 	}
 
 	
