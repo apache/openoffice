@@ -126,8 +126,9 @@ public class FileTypeAboutWriter {
 			swInsertLineButtonOnToolbar.click();
 			writer.focus();
 			for(int j=0;j<10;j++){
-			writer.drag(150+j, 150+j*10, 200+j, 200+j*10);
-			sleep(2);
+				// due to snap-to-grid the lines below will not all be parallel!
+				writer.drag( 150+j, 150+j*10, 200+j, 200+j*10);
+				sleep( 0.5);
 			}
 			typeKeys("<esc>");
 			sleep(2);
