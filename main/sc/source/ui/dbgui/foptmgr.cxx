@@ -174,24 +174,24 @@ void ScFilterOptionsMgr::Init()
 
 		theDbArea = theAreaStr;
 
-		if ( pDBColl )
-		{
-			ScAddress&	rStart	= theCurArea.aStart;
-			ScAddress&	rEnd	= theCurArea.aEnd;
-			ScDBData*	pDBData = pDBColl->GetDBAtArea(	rStart.Tab(),
-														rStart.Col(), rStart.Row(),
-														rEnd.Col(),   rEnd.Row() );
-			if ( pDBData )
-			{
-				rBtnHeader.Check( pDBData->HasHeader() );
-				pDBData->GetName( theDbName );
+        if ( pDBColl )
+        {
+            ScAddress&	rStart	= theCurArea.aStart;
+            ScAddress&	rEnd	= theCurArea.aEnd;
+            ScDBData*	pDBData = pDBColl->GetDBAtArea(
+                rStart.Tab(), rStart.Col(), rStart.Row(), rEnd.Col(), rEnd.Row() );
+            if ( pDBData )
+            {
+                rBtnHeader.Check( pDBData->HasHeader() );
+                pDBData->GetName( theDbName );
 
-                if ( !pDBData->IsBuildin() )
-				{
-					rBtnHeader.Disable();
-				}
-			}
-		}
+                if ( !pDBData->IsInternalUnnamed()
+                     && !pDBData->IsInternalForAutoFilter() )
+                {
+                    rBtnHeader.Disable();
+                }
+            }
+        }
 
 		theDbArea.AppendAscii(RTL_CONSTASCII_STRINGPARAM(" ("));
 		theDbArea += theDbName;
