@@ -111,94 +111,101 @@ void ScDocShell::DBAreaDeleted( SCTAB nTab, SCCOL nX1, SCROW nY1, SCCOL nX2, SCR
     aDocument.BroadcastUno( SfxSimpleHint( SFX_HINT_DATACHANGED ) );
 }
 
-ScDBData* lcl_GetDBNearCursor( ScDBCollection* pColl, SCCOL nCol, SCROW nRow, SCTAB nTab )
+
+ScDBData* lcl_GetDBNearCursor(
+    const ScDBCollection* pColl,
+    const SCCOL nCol,
+    const SCROW nRow,
+    const SCTAB nTab )
 {
-	//!	nach document/dbcolect verschieben
+    //!	nach document/dbcolect verschieben
 
-	if (!pColl)
-		return NULL;
+    if (!pColl)
+        return NULL;
 
-	ScDBData* pNoNameData = NULL;
-	ScDBData* pNearData = NULL;
-	sal_uInt16 nCount = pColl->GetCount();
-	String aNoName = ScGlobal::GetRscString( STR_DB_NONAME );
-	SCTAB nAreaTab;
-	SCCOL nStartCol, nEndCol;
-	SCROW nStartRow, nEndRow;
-	for (sal_uInt16 i = 0; i < nCount; i++)
-	{
-		ScDBData* pDB = (*pColl)[i];
-		pDB->GetArea( nAreaTab, nStartCol, nStartRow, nEndCol, nEndRow );
-		if ( nTab == nAreaTab && nCol+1 >= nStartCol && nCol <= nEndCol+1 &&
-								 nRow+1 >= nStartRow && nRow <= nEndRow+1 )
-		{
-			if ( pDB->GetName() == aNoName )
-				pNoNameData = pDB;
-			else if ( nCol < nStartCol || nCol > nEndCol || nRow < nStartRow || nRow > nEndRow )
-			{
-				if (!pNearData)
-					pNearData = pDB;	// ersten angrenzenden Bereich merken
-			}
-			else
-				return pDB;				// nicht "unbenannt" und Cursor steht wirklich drin
-		}
-	}
-	if (pNearData)
-		return pNearData;				// angrenzender, wenn nichts direkt getroffen
-	return pNoNameData;					// "unbenannt" nur zurueck, wenn sonst nichts gefunden
+    ScDBData* pInternalDBData = NULL;
+    ScDBData* pNearData = NULL;
+    sal_uInt16 nCount = pColl->GetCount();
+    SCTAB nAreaTab;
+    SCCOL nStartCol, nEndCol;
+    SCROW nStartRow, nEndRow;
+    for (sal_uInt16 i = 0; i < nCount; i++)
+    {
+        ScDBData* pDB = (*pColl)[i];
+        pDB->GetArea( nAreaTab, nStartCol, nStartRow, nEndCol, nEndRow );
+        if ( nTab == nAreaTab
+             && nCol+1 >= nStartCol
+             && nCol <= nEndCol+1
+             && nRow+1 >= nStartRow
+             && nRow <= nEndRow+1 )
+        {
+            if ( pDB->IsInternalUnnamed()
+                 || pDB->IsInternalForAutoFilter() )
+            {
+                pInternalDBData = pDB;
+            }
+            else if ( nCol < nStartCol || nCol > nEndCol || nRow < nStartRow || nRow > nEndRow )
+            {
+                if ( !pNearData )
+                    pNearData = pDB;	// ersten angrenzenden Bereich merken
+            }
+            else
+                return pDB;				// nicht "unbenannt" und Cursor steht wirklich drin
+        }
+    }
+    if (pNearData)
+        return pNearData;				// angrenzender, wenn nichts direkt getroffen
+    return pInternalDBData;
 }
 
 ScDBData* ScDocShell::GetDBData( const ScRange& rMarked, ScGetDBMode eMode, ScGetDBSelection eSel )
 {
-    if ( eMode == SC_DB_MAKE_FILTER || eMode == SC_DB_MAKE_SORT || eMode == SC_DB_MAKE_SUBTOTAL || eMode == SC_DB_OLD_FILTER )
-        return GetDBDataAdd(rMarked, eMode, eSel);
-	SCCOL nCol = rMarked.aStart.Col();
-	SCROW nRow = rMarked.aStart.Row();
-	SCTAB nTab = rMarked.aStart.Tab();
+    const SCCOL nCol = rMarked.aStart.Col();
+    const SCROW nRow = rMarked.aStart.Row();
+    const SCTAB nTab = rMarked.aStart.Tab();
 
-	SCCOL nStartCol = nCol;
-	SCROW nStartRow = nRow;
-	SCTAB nStartTab = nTab;
-	SCCOL nEndCol = rMarked.aEnd.Col();
-	SCROW nEndRow = rMarked.aEnd.Row();
-	SCTAB nEndTab = rMarked.aEnd.Tab();
+    SCCOL nStartCol = nCol;
+    SCROW nStartRow = nRow;
+    SCCOL nEndCol = rMarked.aEnd.Col();
+    SCROW nEndRow = rMarked.aEnd.Row();
 
-	//	Wegen #49655# nicht einfach GetDBAtCursor: Der zusammenhaengende Datenbereich
-	//	fuer "unbenannt" (GetDataArea) kann neben dem Cursor legen, also muss auch ein
-	//	benannter DB-Bereich dort gesucht werden.
+    ScDBData* pFoundDBData = aDocument.GetDBAtArea( nTab, nStartCol, nStartRow, nEndCol, nEndRow );
+    if ( pFoundDBData == NULL )
+    {
+        pFoundDBData = lcl_GetDBNearCursor( aDocument.GetDBCollection(), nCol, nRow, nTab );
+    }
 
-	ScDBData* pData = aDocument.GetDBAtArea( nTab, nStartCol, nStartRow, nEndCol, nEndRow );
-	if (!pData)
-		pData = lcl_GetDBNearCursor( aDocument.GetDBCollection(), nCol, nRow, nTab );
+    const bool bSelected =
+        ( eSel == SC_DBSEL_FORCE_MARK
+          || ( rMarked.aStart != rMarked.aEnd
+               && eSel != SC_DBSEL_ROW_DOWN ) );
+    const bool bOnlyDown = ( !bSelected
+                             && eSel == SC_DBSEL_ROW_DOWN
+                             && rMarked.aStart.Row() == rMarked.aEnd.Row());
 
-	sal_Bool bSelected = ( eSel == SC_DBSEL_FORCE_MARK ||
-            (rMarked.aStart != rMarked.aEnd && eSel != SC_DBSEL_ROW_DOWN) );
-    bool bOnlyDown = (!bSelected && eSel == SC_DBSEL_ROW_DOWN && rMarked.aStart.Row() == rMarked.aEnd.Row());
+    bool bUseFoundDBData = false;
+    if ( pFoundDBData )
+    {
+        // check, if found database range can be used
+        SCTAB nDummy;
+        SCCOL nOldCol1;
+        SCROW nOldRow1;
+        SCCOL nOldCol2;
+        SCROW nOldRow2;
+        pFoundDBData->GetArea( nDummy, nOldCol1, nOldRow1, nOldCol2, nOldRow2 );
 
-	sal_Bool bUseThis = sal_False;
-	if (pData)
-	{
-		//		Bereich nehmen, wenn nichts anderes markiert
-
-		SCTAB nDummy;
-		SCCOL nOldCol1;
-		SCROW nOldRow1;
-		SCCOL nOldCol2;
-		SCROW nOldRow2;
-		pData->GetArea( nDummy, nOldCol1,nOldRow1, nOldCol2,nOldRow2 );
-//		sal_Bool bIsNoName = ( pData->GetName() == ScGlobal::GetRscString( STR_DB_NONAME ) );
-		sal_Bool bIsNoName = pData->IsBuildin();
-
-		if (!bSelected)
-		{
-			bUseThis = sal_True;
-			if ( bIsNoName && eMode == SC_DB_MAKE )
-			{
-                // If nothing marked or only one row marked, adapt 
-                // "unbenannt"/"unnamed" to contiguous area.
+        const bool bIsUnnamedOne = pFoundDBData->IsInternalUnnamed();
+        const bool bIsInternalForAutoFilter = pFoundDBData->IsInternalForAutoFilter();
+        if ( !bSelected )
+        {
+            bUseFoundDBData = true;
+            if ( ( bIsUnnamedOne || bIsInternalForAutoFilter )
+                 && ( eMode == SC_DB_MAKE || eMode == SC_DB_MAKE_AUTOFILTER ) )
+            {
+                // If nothing marked or only one row marked, adapt found database range to contiguous area.
                 nStartCol = nCol;
                 nStartRow = nRow;
-                if (bOnlyDown)
+                if ( bOnlyDown )
                 {
                     nEndCol = rMarked.aEnd.Col();
                     nEndRow = rMarked.aEnd.Row();
@@ -208,54 +215,67 @@ ScDBData* ScDocShell::GetDBData( const ScRange& rMarked, ScGetDBMode eMode, ScGe
                     nEndCol = nStartCol;
                     nEndRow = nStartRow;
                 }
-				aDocument.GetDataArea( nTab, nStartCol, nStartRow, nEndCol, nEndRow, sal_False, bOnlyDown );
-				if ( nOldCol1 != nStartCol || nOldCol2 != nEndCol || nOldRow1 != nStartRow )
-					bUseThis = sal_False;				// passt gar nicht
-				else if ( nOldRow2 != nEndRow )
-				{
-					//	Bereich auf neue End-Zeile erweitern
-					pData->SetArea( nTab, nOldCol1,nOldRow1, nOldCol2,nEndRow );
-				}
-			}
-		}
-		else
-		{
-			if ( nOldCol1 == nStartCol && nOldRow1 == nStartRow &&
-				 nOldCol2 == nEndCol && nOldRow2 == nEndRow )				// genau markiert?
-				bUseThis = sal_True;
-			else
-				bUseThis = sal_False;			// immer Markierung nehmen (Bug 11964)
-		}
+                aDocument.GetDataArea( nTab, nStartCol, nStartRow, nEndCol, nEndRow, sal_False, bOnlyDown );
+                if ( nOldCol1 != nStartCol || nOldCol2 != nEndCol || nOldRow1 != nStartRow )
+                {
+                    bUseFoundDBData = false;
+                }
+                else if ( nOldRow2 != nEndRow )
+                {
+                    // adapt found internal database range to new end row
+                    pFoundDBData->SetArea( nTab, nOldCol1,nOldRow1, nOldCol2,nEndRow );
+                }
+            }
+        }
+        else
+        {
+            if ( nOldCol1 == nStartCol
+                 && nOldRow1 == nStartRow
+                 && nOldCol2 == nEndCol
+                 && nOldRow2 == nEndRow )
+            {
+                bUseFoundDBData = true;
+            }
+            else
+            {
+                bUseFoundDBData = false;
+            }
+        }
 
-		//		fuer Import nie "unbenannt" nehmen
+        // adapt internal unnamed database range to an auto filter one
+        // otherwise the auto filter is lost when the internal unnamed one is changed/reused/deleted
+        if ( bUseFoundDBData
+             && eMode == SC_DB_MAKE_AUTOFILTER
+             && bIsUnnamedOne )
+        {
+            pFoundDBData->SetName( aDocument.GetDBCollection()->GetNewDefaultDBName() );
+        }
 
-		if ( bUseThis && eMode == SC_DB_IMPORT && bIsNoName )
-			bUseThis = sal_False;
-	}
+        // no internal database range for Import
+        if ( bUseFoundDBData
+             && eMode == SC_DB_IMPORT
+             && ( bIsUnnamedOne || bIsInternalForAutoFilter ) )
+        {
+            bUseFoundDBData = false;
+        }
+    }
 
-	if ( bUseThis )
-	{
-		pData->GetArea( nStartTab, nStartCol,nStartRow, nEndCol,nEndRow );
-		nEndTab = nStartTab;
-	}
-	else if ( eMode == SC_DB_OLD )
-	{
-		pData = NULL;							// nichts gefunden
-		nStartCol = nEndCol = nCol;
-		nStartRow = nEndRow = nRow;
-		nStartTab = nEndTab = nTab;
-//		bMark = sal_False;							// nichts zu markieren
-	}
-	else
-	{
-		if ( bSelected )
-		{
-//			bMark = sal_False;
-		}
-		else
-		{										// zusammenhaengender Bereich
-			nStartCol = nCol;
-			nStartRow = nRow;
+    if ( bUseFoundDBData )
+    {
+        return pFoundDBData;
+    }
+
+    if ( eMode == SC_DB_OLD )
+    {
+        // no existing database range found
+        return NULL;
+    }
+    else // eMode == SC_DB_MAKE||SC_DB_IMPORT||SC_DB_MAKE_AUTOFILTER
+    {
+        if ( !bSelected )
+        {
+            nStartCol = nCol;
+            nStartRow = nRow;
             if (bOnlyDown)
             {
                 nEndCol = rMarked.aEnd.Col();
@@ -266,255 +286,112 @@ ScDBData* ScDocShell::GetDBData( const ScRange& rMarked, ScGetDBMode eMode, ScGe
                 nEndCol = nStartCol;
                 nEndRow = nStartRow;
             }
-			aDocument.GetDataArea( nTab, nStartCol, nStartRow, nEndCol, nEndRow, sal_False, bOnlyDown );
-		}
+            aDocument.GetDataArea( nTab, nStartCol, nStartRow, nEndCol, nEndRow, sal_False, bOnlyDown );
+        }
 
-		sal_Bool bHasHeader = aDocument.HasColHeader( nStartCol,nStartRow, nEndCol,nEndRow, nTab );
+        const sal_Bool bHasHeader = aDocument.HasColHeader( nStartCol, nStartRow, nEndCol, nEndRow, nTab );
 
-		ScDBData* pNoNameData;
-		sal_uInt16 nNoNameIndex;
-		ScDBCollection* pColl = aDocument.GetDBCollection();
-		if ( eMode != SC_DB_IMPORT &&
-				pColl->SearchName( ScGlobal::GetRscString( STR_DB_NONAME ), nNoNameIndex ) )
-		{
-			pNoNameData = (*pColl)[nNoNameIndex];
+        ScDBData* pDBData = NULL;
+        sal_uInt16 nUnnamedDBIndex;
+        ScDBCollection* pColl = aDocument.GetDBCollection();
+        if ( eMode == SC_DB_MAKE &&
+             pColl->SearchName( ScGlobal::GetRscString( STR_DB_NONAME ), nUnnamedDBIndex ) )
+        {
+            // adapt existing unnamed database range
+            pDBData = (*pColl)[nUnnamedDBIndex];
 
             if ( !pOldAutoDBRange )
             {
                 // store the old unnamed database range with its settings for undo
                 // (store at the first change, get the state before all changes)
-                pOldAutoDBRange = new ScDBData( *pNoNameData );
+                pOldAutoDBRange = new ScDBData( *pDBData );
             }
 
-			SCCOL nOldX1;									// alten Bereich sauber wegnehmen
-			SCROW nOldY1;									//! (UNDO ???)
-			SCCOL nOldX2;
-			SCROW nOldY2;
-			SCTAB nOldTab;
-			pNoNameData->GetArea( nOldTab, nOldX1, nOldY1, nOldX2, nOldY2 );
-			DBAreaDeleted( nOldTab, nOldX1, nOldY1, nOldX2, nOldY2 );
-
-			pNoNameData->SetSortParam( ScSortParam() ); 			// Parameter zuruecksetzen
-			pNoNameData->SetQueryParam( ScQueryParam() );
-			pNoNameData->SetSubTotalParam( ScSubTotalParam() );
-
-			pNoNameData->SetArea( nTab, nStartCol,nStartRow, nEndCol,nEndRow ); 	// neu setzen
-			pNoNameData->SetByRow( sal_True );
-			pNoNameData->SetHeader( bHasHeader );
-			pNoNameData->SetAutoFilter( sal_False );
-		}
-		else
-		{
-			ScDBCollection* pUndoColl = NULL;
-
-			String aNewName;
-			if (eMode==SC_DB_IMPORT)
-			{
-				aDocument.CompileDBFormula( sal_True );			// CreateFormulaString
-				pUndoColl = new ScDBCollection( *pColl );	// Undo fuer Import1-Bereich
-
-				String aImport = ScGlobal::GetRscString( STR_DBNAME_IMPORT );
-				long nCount = 0;
-				sal_uInt16 nDummy;
-				do
-				{
-					++nCount;
-					aNewName = aImport;
-					aNewName += String::CreateFromInt32( nCount );
-				}
-				while (pColl->SearchName( aNewName, nDummy ));
-			}
-			else
-				//aNewName = ScGlobal::GetRscString( STR_DB_NONAME );
-				aNewName = pColl->GetNewDefaultDBName();
-
-			pNoNameData = new ScDBData( aNewName, nTab,
-								nStartCol,nStartRow, nEndCol,nEndRow,
-								sal_True, bHasHeader );
-			pColl->Insert( pNoNameData );
-
-			if ( pUndoColl )
-			{
-				aDocument.CompileDBFormula( sal_False );		// CompileFormulaString
-
-				ScDBCollection* pRedoColl = new ScDBCollection( *pColl );
-				GetUndoManager()->AddUndoAction( new ScUndoDBData( this, pUndoColl, pRedoColl ) );
-			}
-
-			//	neuen Bereich am Sba anmelden nicht mehr noetig
-
-			//	"Import1" etc am Navigator bekanntmachen
-			if (eMode==SC_DB_IMPORT)
-				SFX_APP()->Broadcast( SfxSimpleHint( SC_HINT_DBAREAS_CHANGED ) );
-		}
-		pData = pNoNameData;
-	}
-
-//	if (bMark)
-//		MarkRange( ScRange( nStartCol, nStartRow, nTab, nEndCol, nEndRow, nTab ), sal_False );
-
-	return pData;
-}
-
-ScDBData* ScDocShell::GetDBDataAdd( const ScRange& rMarked, ScGetDBMode eMode, ScGetDBSelection eSel )
-{
-    SCCOL nCol = rMarked.aStart.Col();
-    SCROW nRow = rMarked.aStart.Row();
-    SCTAB nTab = rMarked.aStart.Tab();
-
-    SCCOL nStartCol = nCol;
-    SCROW nStartRow = nRow;
-    SCCOL nEndCol = rMarked.aEnd.Col();
-    SCROW nEndRow = rMarked.aEnd.Row();
-
-    ScDBData* pData = NULL;
-    ScDBData* pCursorData;
-    pCursorData = aDocument.GetDBAtArea( nTab, nStartCol, nStartRow, nEndCol, nEndRow );
-    if ( !pCursorData )
-        pCursorData = aDocument.GetDBAtCursor( nStartCol, nStartRow, nTab );
-
-    //Get DBData at current table
-    ScDBData* pTableData = aDocument.GetDBAtTable( nTab, eMode );
-
-    if ( eMode == SC_DB_OLD_FILTER )
-        return pTableData;
-
-    sal_Bool bSelected = ( eSel == SC_DBSEL_FORCE_MARK || rMarked.aStart != rMarked.aEnd ); 
-    bool bOnlyDown = (!bSelected && eSel == SC_DBSEL_ROW_DOWN && rMarked.aStart.Row() == rMarked.aEnd.Row());
-
-	sal_Bool bUseThis = sal_False;
-    if (pCursorData)
-    {
-        SCTAB nDummy;
-        SCCOL nOldCol1;
-        SCROW nOldRow1;
-        SCCOL nOldCol2;
-        SCROW nOldRow2;
-        pCursorData->GetArea( nDummy, nOldCol1,nOldRow1, nOldCol2,nOldRow2 );
-        if ( !bSelected )
-        {    
-              ScRange tmpRange;
-              if ( !pCursorData->IsBuildin() && pCursorData->GetAdvancedQuerySource(tmpRange))	 
-                   bUseThis = sal_True;			   
-              else
-             {  
-                 nStartCol = nCol;
-                 nStartRow = nRow;
-                 nEndCol = nStartCol;
-                 nEndRow = nStartRow;
-				aDocument.GetDataArea( nTab, nStartCol, nStartRow, nEndCol, nEndRow, sal_False, bOnlyDown );
-                 if ( nOldCol1 != nStartCol || nOldCol2 != nEndCol || nOldRow1 != nStartRow )
-                     bUseThis = sal_False;
-                 else
-                 {
-                     bUseThis = sal_True;
-                     if ( nOldRow2 != nEndRow )// Range of new end-line expand
-                     pCursorData->SetArea( nTab, nOldCol1,nOldRow1, nOldCol2,nEndRow );
-                 }
-            }
-
-        }
-        else
-        {
-            if ( nOldCol1 == nStartCol && nOldRow1 == nStartRow && nOldCol2 == nEndCol && nOldRow2 == nEndRow )
-				bUseThis = sal_True;
-            else
-				bUseThis = sal_False;			// Always take mark (Bug 11964)
-        }
-    }
-
-    if ( bUseThis )
-    {
-        pData = pCursorData;
-        if ( pTableData && eMode == SC_DB_MAKE_FILTER && !(*pTableData == *pCursorData ) )
-        {
-            if ( !pOldAutoDBRange )
-                pOldAutoDBRange = new ScDBData(*pTableData);
             SCCOL nOldX1;
             SCROW nOldY1;
             SCCOL nOldX2;
             SCROW nOldY2;
             SCTAB nOldTab;
-            pTableData->GetArea( nOldTab, nOldX1, nOldY1, nOldX2, nOldY2 );
-
-            if (pTableData->HasQueryParam())
-            {
-                ScQueryParam    aParam;
-                pTableData->GetQueryParam(aParam);
-                SCSIZE nEC = aParam.GetEntryCount();
-                for (SCSIZE i=0; i<nEC; i++)
-                    aParam.GetEntry(i).bDoQuery = sal_False;
-                aParam.bDuplicate = sal_True;
-                ScDBDocFunc aDBDocFunc( *this );
-                aDBDocFunc.Query( nTab, aParam, NULL, sal_False, sal_False );
-            }
-
+            pDBData->GetArea( nOldTab, nOldX1, nOldY1, nOldX2, nOldY2 );
             DBAreaDeleted( nOldTab, nOldX1, nOldY1, nOldX2, nOldY2 );
-            pTableData->SetQueryParam( ScQueryParam() );
-            pTableData->SetAutoFilter( sal_False );
-        }
 
-    }
-    else
-    {
-        if ( bSelected )
-        {
-//			bMark = sal_False;
+            pDBData->SetSortParam( ScSortParam() );
+            pDBData->SetQueryParam( ScQueryParam() );
+            pDBData->SetSubTotalParam( ScSubTotalParam() );
+
+            pDBData->SetArea( nTab, nStartCol,nStartRow, nEndCol,nEndRow );
+            pDBData->SetByRow( sal_True );
+            pDBData->SetHeader( bHasHeader );
+            pDBData->SetAutoFilter( sal_False );
         }
         else
         {
-            nStartCol = nCol;
-            nStartRow = nRow;
-            nEndCol = nStartCol;
-            nEndRow = nStartRow;
-			aDocument.GetDataArea( nTab, nStartCol, nStartRow, nEndCol, nEndRow, sal_False, bOnlyDown );
-        }
-        sal_Bool bHasHeader = aDocument.HasColHeader( nStartCol,nStartRow, nEndCol,nEndRow, nTab );
-        ScDBCollection* pColl = aDocument.GetDBCollection();
-        if ( pTableData )
-        {
-            if ( !pOldAutoDBRange )
-                pOldAutoDBRange = new ScDBData(*pTableData);
-            SCCOL nOldX1;
-            SCROW nOldY1;
-            SCCOL nOldX2;
-            SCROW nOldY2;
-            SCTAB nOldTab;
-            pTableData->GetArea( nOldTab, nOldX1, nOldY1, nOldX2, nOldY2 );
+            ScDBCollection* pUndoColl = NULL;
 
-            if (pTableData->HasQueryParam())
+            String aNewName;
+            switch ( eMode )
             {
-                ScQueryParam    aParam;
-                pTableData->GetQueryParam(aParam);
-                SCSIZE nEC = aParam.GetEntryCount();
-                for (SCSIZE i=0; i<nEC; i++)
-                    aParam.GetEntry(i).bDoQuery = sal_False;
-                aParam.bDuplicate = sal_True;
-                ScDBDocFunc aDBDocFunc( *this );
-                aDBDocFunc.Query( nTab, aParam, NULL, sal_False, sal_False );
+            case SC_DB_IMPORT:
+            {
+                aDocument.CompileDBFormula( sal_True );
+                pUndoColl = new ScDBCollection( *pColl );
+
+                String aImport = ScGlobal::GetRscString( STR_DBNAME_IMPORT );
+                long nCount = 0;
+                sal_uInt16 nDummy;
+                do
+                {
+                    ++nCount;
+                    aNewName = aImport;
+                    aNewName += String::CreateFromInt32( nCount );
+                }
+                while (pColl->SearchName( aNewName, nDummy ));
+            }
+            break;
+
+            case SC_DB_MAKE_AUTOFILTER:
+            {
+                aDocument.CompileDBFormula( sal_True );
+                pUndoColl = new ScDBCollection( *pColl );
+
+                aNewName = pColl->GetNewDefaultDBName();
+            }
+            break;
+
+            case SC_DB_MAKE:
+            {
+                aNewName = ScGlobal::GetRscString( STR_DB_NONAME );
+            }
+            break;
+
+            default:
+                DBG_ERROR( "<ScDocShell::GetDBData(..)> - unexcepted <eMode>" );
+                break;
             }
 
-                DBAreaDeleted( nOldTab, nOldX1, nOldY1, nOldX2, nOldY2 );
+            pDBData = new ScDBData(
+                aNewName, nTab, nStartCol, nStartRow, nEndCol, nEndRow, sal_True, bHasHeader );
+            pColl->Insert( pDBData );
 
-            pTableData->SetSortParam( ScSortParam() );
-            pTableData->SetQueryParam( ScQueryParam() );
-            pTableData->SetSubTotalParam( ScSubTotalParam() );
+            if ( pUndoColl )
+            {
+                aDocument.CompileDBFormula( sal_False );
 
-            pTableData->SetArea( nTab, nStartCol, nStartRow, nEndCol, nEndRow );
-            pTableData->SetByRow( sal_True );
-            pTableData->SetHeader( bHasHeader );
-            pTableData->SetAutoFilter( sal_False );
+                ScDBCollection* pRedoColl = new ScDBCollection( *pColl );
+                GetUndoManager()->AddUndoAction( new ScUndoDBData( this, pUndoColl, pRedoColl ) );
+            }
+
+            // notify Navigator about database range "Import[X]"
+            if ( eMode==SC_DB_IMPORT )
+            {
+                SFX_APP()->Broadcast( SfxSimpleHint( SC_HINT_DBAREAS_CHANGED ) );
+            }
         }
-        else
-        {
-            String aNewName = pColl->GetNewDefaultDBName();
-            pTableData = new ScDBData( aNewName, nTab, nStartCol,nStartRow, nEndCol,nEndRow, sal_True, bHasHeader );
-            pColl->Insert( pTableData );
-        }
-        pData = pTableData;
+
+        return pDBData;
     }
 
-    return pData;
+    return NULL; // never reached
 }
 
 
@@ -656,21 +533,22 @@ void ScDocShell::RefreshPivotTables( const ScRange& rSource )
 
 String lcl_GetAreaName( ScDocument* pDoc, ScArea* pArea )
 {
-	String aName;
-	sal_Bool bOk = sal_False;
-	ScDBData* pData = pDoc->GetDBAtArea( pArea->nTab, pArea->nColStart, pArea->nRowStart,
-														pArea->nColEnd, pArea->nRowEnd );
-	if (pData)
-	{
-		pData->GetName( aName );
-		if ( aName != ScGlobal::GetRscString( STR_DB_NONAME ) )
-			bOk = sal_True;
-	}
+    String aName;
+    bool bOk = false;
+    ScDBData* pData = pDoc->GetDBAtArea( pArea->nTab, pArea->nColStart, pArea->nRowStart, pArea->nColEnd, pArea->nRowEnd );
+    if (pData)
+    {
+        pData->GetName( aName );
+        if ( !pData->IsInternalUnnamed() )
+            bOk = true;
+    }
 
-	if (!bOk)
-		pDoc->GetName( pArea->nTab, aName );
+    if (!bOk)
+    {
+        pDoc->GetName( pArea->nTab, aName );
+    }
 
-	return aName;
+    return aName;
 }
 
 void ScDocShell::DoConsolidate( const ScConsolidateParam& rParam, sal_Bool bRecord )
