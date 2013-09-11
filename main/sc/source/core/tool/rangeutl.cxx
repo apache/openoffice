@@ -997,8 +997,7 @@ sal_Bool ScArea::operator==( const ScArea& r ) const
 
 //------------------------------------------------------------------------
 
-ScAreaNameIterator::ScAreaNameIterator( ScDocument* pDoc ) :
-	aStrNoName( ScGlobal::GetRscString(STR_DB_NONAME) )
+ScAreaNameIterator::ScAreaNameIterator( ScDocument* pDoc )
 {
 	pRangeName = pDoc->GetRangeName();
 	pDBCollection = pDoc->GetDBCollection();
@@ -1008,42 +1007,43 @@ ScAreaNameIterator::ScAreaNameIterator( ScDocument* pDoc ) :
 
 sal_Bool ScAreaNameIterator::Next( String& rName, ScRange& rRange )
 {
-	for (;;)
-	{
-		if ( bFirstPass )									// erst Bereichsnamen
-		{
-			if ( pRangeName && nPos < pRangeName->GetCount() )
-			{
-				ScRangeData* pData = (*pRangeName)[nPos++];
-				if ( pData && pData->IsValidReference(rRange) )
-				{
-					rName = pData->GetName();
-					return sal_True;							// gefunden
-				}
-			}
-			else
-			{
-				bFirstPass = sal_False;
-				nPos = 0;
-			}
-		}
-		if ( !bFirstPass )									// dann DB-Bereiche
-		{
-			if ( pDBCollection && nPos < pDBCollection->GetCount() )
-			{
-				ScDBData* pData = (*pDBCollection)[nPos++];
-//				if (pData && pData->GetName() != aStrNoName)
-				if (pData && !pData->IsBuildin())
-				{
-					pData->GetArea( rRange );
-					rName = pData->GetName();
-					return sal_True;							// gefunden
-				}
-			}
-			else
-				return sal_False;								// gibt nichts mehr
-		}
-	}
+    for (;;)
+    {
+        if ( bFirstPass )									// erst Bereichsnamen
+        {
+            if ( pRangeName && nPos < pRangeName->GetCount() )
+            {
+                ScRangeData* pData = (*pRangeName)[nPos++];
+                if ( pData && pData->IsValidReference(rRange) )
+                {
+                    rName = pData->GetName();
+                    return sal_True;							// gefunden
+                }
+            }
+            else
+            {
+                bFirstPass = sal_False;
+                nPos = 0;
+            }
+        }
+        if ( !bFirstPass )									// dann DB-Bereiche
+        {
+            if ( pDBCollection && nPos < pDBCollection->GetCount() )
+            {
+                ScDBData* pData = (*pDBCollection)[nPos++];
+                if ( pData
+                     && !pData->IsInternalUnnamed()
+                     && !pData->IsInternalForAutoFilter() )
+                {
+                    pData->GetArea( rRange );
+                    rName = pData->GetName();
+                    return sal_True;							// gefunden
+                }
+            }
+            else
+                return sal_False;								// gibt nichts mehr
+        }
+    }
 }
 
 
