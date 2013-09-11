@@ -160,7 +160,6 @@ ScDbNameDlg::ScDbNameDlg( SfxBindings* pB, SfxChildWindow* pCW, Window* pParent,
 
 		aStrAdd			( ScResId( STR_ADD ) ),
 		aStrModify		( ScResId( STR_MODIFY ) ),
-		aStrNoName		( ScGlobal::GetRscString(STR_DB_NONAME) ),
 		aStrInvalid		( ScResId( STR_DB_INVALID ) ),
 		//
 		pViewData		( ptrViewData ),
@@ -205,87 +204,91 @@ __EXPORT ScDbNameDlg::~ScDbNameDlg()
 
 void ScDbNameDlg::Init()
 {
-	aBtnHeader.Check( sal_True );		// Default: mit Spaltenkoepfen
+    aBtnHeader.Check( sal_True );		// Default: mit Spaltenkoepfen
 
     aBtnMore.AddWindow( &aFlOptions );
-	aBtnMore.AddWindow( &aBtnHeader );
-	aBtnMore.AddWindow( &aBtnDoSize );
-	aBtnMore.AddWindow( &aBtnKeepFmt );
-	aBtnMore.AddWindow( &aBtnStripData );
-	aBtnMore.AddWindow( &aFTSource );
-	aBtnMore.AddWindow( &aFTOperations );
+    aBtnMore.AddWindow( &aBtnHeader );
+    aBtnMore.AddWindow( &aBtnDoSize );
+    aBtnMore.AddWindow( &aBtnKeepFmt );
+    aBtnMore.AddWindow( &aBtnStripData );
+    aBtnMore.AddWindow( &aFTSource );
+    aBtnMore.AddWindow( &aFTOperations );
 
-	String	theAreaStr;
-	SCCOL	nStartCol 	= 0;
-	SCROW	nStartRow 	= 0;
-	SCTAB	nStartTab 	= 0;
-	SCCOL	nEndCol 	= 0;
-	SCROW	nEndRow		= 0;
-	SCTAB	nEndTab 	= 0;
+    String	theAreaStr;
+    SCCOL	nStartCol 	= 0;
+    SCROW	nStartRow 	= 0;
+    SCTAB	nStartTab 	= 0;
+    SCCOL	nEndCol 	= 0;
+    SCROW	nEndRow		= 0;
+    SCTAB	nEndTab 	= 0;
 
-	aBtnOk.SetClickHdl		( LINK( this, ScDbNameDlg, OkBtnHdl ) );
-	aBtnCancel.SetClickHdl	( LINK( this, ScDbNameDlg, CancelBtnHdl ) );
-	aBtnAdd.SetClickHdl		( LINK( this, ScDbNameDlg, AddBtnHdl ) );
-	aBtnRemove.SetClickHdl	( LINK( this, ScDbNameDlg, RemoveBtnHdl ) );
-	aEdName.SetModifyHdl	( LINK( this, ScDbNameDlg, NameModifyHdl ) );
-	aEdAssign.SetModifyHdl	( LINK( this, ScDbNameDlg, AssModifyHdl ) );
-	UpdateNames();
+    aBtnOk.SetClickHdl		( LINK( this, ScDbNameDlg, OkBtnHdl ) );
+    aBtnCancel.SetClickHdl	( LINK( this, ScDbNameDlg, CancelBtnHdl ) );
+    aBtnAdd.SetClickHdl		( LINK( this, ScDbNameDlg, AddBtnHdl ) );
+    aBtnRemove.SetClickHdl	( LINK( this, ScDbNameDlg, RemoveBtnHdl ) );
+    aEdName.SetModifyHdl	( LINK( this, ScDbNameDlg, NameModifyHdl ) );
+    aEdAssign.SetModifyHdl	( LINK( this, ScDbNameDlg, AssModifyHdl ) );
+    UpdateNames();
 
-	if ( pViewData && pDoc )
-	{
-		ScDBCollection*	pDBColl	= pDoc->GetDBCollection();
-		ScDBData*		pDBData = NULL;
+    if ( pViewData && pDoc )
+    {
+        ScDBCollection*	pDBColl	= pDoc->GetDBCollection();
+        ScDBData*		pDBData = NULL;
 
-		pViewData->GetSimpleArea( nStartCol, nStartRow, nStartTab,
-								  nEndCol,	 nEndRow,  nEndTab );
+        pViewData->GetSimpleArea( nStartCol, nStartRow, nStartTab,
+            nEndCol,	 nEndRow,  nEndTab );
 
-		theCurArea = ScRange( ScAddress( nStartCol, nStartRow, nStartTab ),
-							  ScAddress( nEndCol,   nEndRow,   nEndTab ) );
+        theCurArea = ScRange( ScAddress( nStartCol, nStartRow, nStartTab ),
+            ScAddress( nEndCol,   nEndRow,   nEndTab ) );
 
-		theCurArea.Format( theAreaStr, ABS_DREF3D, pDoc, aAddrDetails );
+        theCurArea.Format( theAreaStr, ABS_DREF3D, pDoc, aAddrDetails );
 
-		if ( pDBColl )
-		{
-			// Feststellen, ob definierter DB-Bereich markiert wurde:
-			pDBData = pDBColl->GetDBAtCursor( nStartCol, nStartRow, nStartTab, sal_True );
-			if ( pDBData )
-			{
-				String		theDbName;
-				ScAddress&	rStart = theCurArea.aStart;
-				ScAddress&	rEnd   = theCurArea.aEnd;
+        if ( pDBColl )
+        {
+            // Feststellen, ob definierter DB-Bereich markiert wurde:
+            pDBData = pDBColl->GetDBAtCursor( nStartCol, nStartRow, nStartTab, sal_True );
+            if ( pDBData )
+            {
+                String		theDbName;
+                ScAddress&	rStart = theCurArea.aStart;
+                ScAddress&	rEnd   = theCurArea.aEnd;
                 SCCOL nCol1;
                 SCCOL  nCol2;
                 SCROW  nRow1;
                 SCROW  nRow2;
                 SCTAB  nTab;
 
-				pDBData->GetArea( nTab, nCol1, nRow1, nCol2, nRow2 );
+                pDBData->GetArea( nTab, nCol1, nRow1, nCol2, nRow2 );
 
-				if (   (rStart.Tab() == nTab)
-					&& (rStart.Col() == nCol1) && (rStart.Row() == nRow1)
-					&& (rEnd.Col()   == nCol2) && (rEnd.Row()   == nRow2 ) )
-				{
-					pDBData->GetName( theDbName );
-					//if ( theDbName != aStrNoName )
-					if ( !pDBData->IsBuildin() )
-						aEdName.SetText( theDbName );
-					else
-						aEdName.SetText( EMPTY_STRING );
-					aBtnHeader.Check( pDBData->HasHeader() );
-					aBtnDoSize.Check( pDBData->IsDoSize() );
-					aBtnKeepFmt.Check( pDBData->IsKeepFmt() );
-					aBtnStripData.Check( pDBData->IsStripData() );
-					SetInfoStrings( pDBData );
-				}
-			}
-		}
-	}
+                if (   (rStart.Tab() == nTab)
+                    && (rStart.Col() == nCol1) && (rStart.Row() == nRow1)
+                    && (rEnd.Col()   == nCol2) && (rEnd.Row()   == nRow2 ) )
+                {
+                    pDBData->GetName( theDbName );
+                    if ( !pDBData->IsInternalUnnamed()
+                         && !pDBData->IsInternalForAutoFilter() )
+                    {
+                        aEdName.SetText( theDbName );
+                    }
+                    else
+                    {
+                        aEdName.SetText( EMPTY_STRING );
+                    }
+                    aBtnHeader.Check( pDBData->HasHeader() );
+                    aBtnDoSize.Check( pDBData->IsDoSize() );
+                    aBtnKeepFmt.Check( pDBData->IsKeepFmt() );
+                    aBtnStripData.Check( pDBData->IsStripData() );
+                    SetInfoStrings( pDBData );
+                }
+            }
+        }
+    }
 
-	aEdAssign.SetText( theAreaStr );
-	aEdName.GrabFocus();
-	bSaved=sal_True;
-	pSaveObj->Save();
-	NameModifyHdl( 0 );
+    aEdAssign.SetText( theAreaStr );
+    aEdName.GrabFocus();
+    bSaved=sal_True;
+    pSaveObj->Save();
+    NameModifyHdl( 0 );
 }
 
 
@@ -361,39 +364,39 @@ void ScDbNameDlg::SetActive()
 
 void ScDbNameDlg::UpdateNames()
 {
-	sal_uInt16	nNameCount = aLocalDbCol.GetCount();
+    sal_uInt16	nNameCount = aLocalDbCol.GetCount();
 
-	aEdName.SetUpdateMode( sal_False );
-	//-----------------------------------------------------------
-	aEdName.Clear();
-	aEdAssign.SetText( EMPTY_STRING );
+    aEdName.SetUpdateMode( sal_False );
+    //-----------------------------------------------------------
+    aEdName.Clear();
+    aEdAssign.SetText( EMPTY_STRING );
 
-	if ( nNameCount > 0 )
-	{
-		ScDBData*	pDbData = NULL;
-		String		aString;
+    if ( nNameCount > 0 )
+    {
+        ScDBData*	pDbData = NULL;
+        String		aString;
 
-		for ( sal_uInt16 i=0; i<nNameCount; i++ )
-		{
-			pDbData = (ScDBData*)(aLocalDbCol.At( i ));
-			if ( pDbData )
-			{
-				pDbData->GetName( aString );
-				//if ( aString != aStrNoName )
-				if ( !pDbData->IsBuildin() )
-					aEdName.InsertEntry( aString );
-			}
-		}
-	}
-	else
-	{
-		aBtnAdd.SetText( aStrAdd );
-		aBtnAdd.Disable();
-		aBtnRemove.Disable();
-	}
-	//-----------------------------------------------------------
-	aEdName.SetUpdateMode( sal_True );
-	aEdName.Invalidate();
+        for ( sal_uInt16 i=0; i<nNameCount; i++ )
+        {
+            pDbData = (ScDBData*)(aLocalDbCol.At( i ));
+            if ( pDbData )
+            {
+                pDbData->GetName( aString );
+                if ( !pDbData->IsInternalUnnamed()
+                     && !pDbData->IsInternalForAutoFilter() )
+                    aEdName.InsertEntry( aString );
+            }
+        }
+    }
+    else
+    {
+        aBtnAdd.SetText( aStrAdd );
+        aBtnAdd.Disable();
+        aBtnRemove.Disable();
+    }
+    //-----------------------------------------------------------
+    aEdName.SetUpdateMode( sal_True );
+    aEdName.Invalidate();
 }
 
 //------------------------------------------------------------------------
