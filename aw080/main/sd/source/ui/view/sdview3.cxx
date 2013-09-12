@@ -610,13 +610,22 @@ bool View::InsertData( const TransferableDataHelper& rDataHelper,
 							}
 						}
 					}
-					else
-					{
-						pOwnData->SetInternalMove( true );
-						MoveMarkedObj(maDropPos - pOwnData->GetStartPos(), bCopy );
-						bReturn = true;
-					}
-				}
+                    else
+                    {
+                        const basegfx::B2DVector aDelta(maDropPos - pOwnData->GetStartPos());
+                        const double fMoveLength(aDelta.getLength());
+
+                        pOwnData->SetInternalMove( true );
+
+                        // only move when the minimum move distance is travelled
+                        if(fMoveLength > getMinMovLog())
+                        {
+                            MoveMarkedObj(maDropPos - pOwnData->GetStartPos(), bCopy );
+                        }
+
+                        bReturn = true;
+                    }
+                }
 			}
 			else
 			{

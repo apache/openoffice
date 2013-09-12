@@ -159,8 +159,11 @@ namespace sdr
 		void Selection::delayedSelectionChanged()
 		{
 			// trigger a delayed selection change
-			SetTimeout(1);
-			Start();
+			if(!IsActive())
+			{
+                SetTimeout(1);
+                Start();
+            }
 		}
 
 		bool Selection::isSelectionChangePending() const
@@ -528,7 +531,7 @@ namespace sdr
 
 		sdr::selection::Indices Selection::getIndicesForSdrObject(const SdrObject& rObject, bool bPoints) const 
 		{
-			const IndicesMap& rIndices = bPoints ? maPointIndices : maGlueIndices;
+            const IndicesMap& rIndices = bPoints ? maPointIndices : maGlueIndices;
 
 			if(!rIndices.empty())
 			{
@@ -638,7 +641,7 @@ namespace sdr
 
 		bool Selection::hasIndices(bool bPoints) const
 		{
-			const IndicesMap& rIndices = bPoints ? maPointIndices : maGlueIndices;
+            const IndicesMap& rIndices = bPoints ? maPointIndices : maGlueIndices;
 
 			return !rIndices.empty();
 		}
