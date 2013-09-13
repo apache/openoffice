@@ -1568,7 +1568,7 @@ public:
 				// ein ESCHER_Sp wird geschrieben ( Ein ESCHER_DgContainer muss dazu geoeffnet sein !!)
 		virtual void AddShape( sal_uInt32 nShpInstance, sal_uInt32 nFlagIds, sal_uInt32 nShapeID = 0 );
 
-		virtual void Commit( 
+        virtual void Commit( 
             EscherPropertyContainer& rProps, 
             const basegfx::B2DRange& rObjectRange);
 

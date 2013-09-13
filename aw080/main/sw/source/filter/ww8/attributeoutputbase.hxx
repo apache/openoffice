@@ -320,9 +320,9 @@ public:
         sal_Int16 nIndentAt,
         sal_Int16 nFirstLineIndex,
         sal_Int16 nListTabPos,
-        const String &rNumberingString ,
-	const SvxBrushItem* pBrush = 0) = 0;//For i120928,to export graphic of bullet
-    
+        const String &rNumberingString,
+        const SvxBrushItem* pBrush = 0) = 0;//For i120928,to export graphic of bullet
+
 protected:
 
     void GetNumberPara( String& rStr, const SwField& rFld );
