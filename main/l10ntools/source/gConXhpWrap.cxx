@@ -34,9 +34,9 @@
 convert_xhp::convert_xhp(l10nMem& crMemory)
                         : convert_gen_impl(crMemory),
                           meExpectValue(VALUE_NOT_USED),
-                          miCntLanguages(0),
+                          msLangText(NULL),
                           mcOutputFiles(NULL),
-                          msLangText(NULL)
+                          miCntLanguages(0)
 {
   // xhp files are written through a local routine
   mbLoadMode = true;

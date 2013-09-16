@@ -128,6 +128,10 @@ IDENT [\.a-zA-Z0-9_-]+
 
 .|\n {
   LOCptr->copySourceSpecial(yytext, 0);
+
+  // Just to please compiler.
+  if (false)
+    REJECT;
 }
 
 

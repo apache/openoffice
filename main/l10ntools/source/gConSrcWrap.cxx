@@ -339,6 +339,9 @@ void convert_src::insertLanguagePart(std::string& sKey, std::string& sTextType)
   std::string sLang, sText, sTagText;
 
 
+  // just to please compiler
+  sKey = sKey;
+
   // prepare to read all languages
   mcMemory.prepareMerge();
   for (; mcMemory.getMergeLang(sLang, sText);)

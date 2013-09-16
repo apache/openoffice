@@ -209,7 +209,7 @@ void convert_po::startSave(const std::string& sLanguage,
           << "\"Last-Translator: genLang (build process)\\n\""                 << std::endl
           << "\"Language-Team: \\n\""                                          << std::endl
           << "\"MIME-Version: 1.0\\n\""                                        << std::endl
-          << "\"Content-Type: text/plain; charset=iso-8859-1\\n\""             << std::endl
+          << "\"Content-Type: text/plain; charset=UTF-8\\n\""                  << std::endl
           << "\"Content-Transfer-Encoding: 8bit\\n\""                          << std::endl
           << "\"X-Generator: genLang\\n\""                                     << std::endl
           << std::endl;

@@ -290,6 +290,10 @@ void handler::runExtract()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runMerge(bool bKid)
 {
+  // just to satisfy compiler
+  if (bKid)
+    return;
+
   // no convert 
   mcMemory.setConvert(false, false);
 

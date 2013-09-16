@@ -239,9 +239,11 @@ void l10nMem_impl::setSourceKey(int                iLineNo,
 void l10nMem_impl::saveTemplates(l10nMem& cMem, const std::string& sTargetDir, bool bKid, bool bForce)
 {
   int iE, iEsize  = mcDb.mcENUSlist.size();
-  int iCntDeleted = 0, iCntChanged = 0, iCntAdded = 0;
   std::string sFileName = msModuleName + ".pot";
- 
+
+  // Dummy to satisfy compiler
+  if (bKid)
+    return;
 
   // and reorganize db if needed
    mcDb.miCurFileInx = 0;
@@ -277,7 +279,6 @@ void l10nMem_impl::saveLanguages(l10nMem& cMem, const std::string& sTargetDir, b
 {
   int iE, iEsize  = mcDb.mcENUSlist.size();
   int iL, iLsize  = mcDb.mcLangList.size();
-  int iCntDeleted = 0, iCntChanged = 0, iCntAdded = 0;
   std::string sFileName = msModuleName + ".po";
  
 
@@ -349,8 +350,6 @@ void l10nMem_impl::dumpMem(const std::string& sFileName)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem_impl::formatAndShowText(const std::string& sType, int iLineNo, const std::string& sText)
 {
-  std::string& cFile = mcDb.mcFileList[mcDb.miCurFileInx].msFileName;
-
   std::cout << sType;
   if (mcDb.miCurFileInx > 0)
     std::cout << " in " << mcDb.mcFileList[mcDb.miCurFileInx].msFileName;

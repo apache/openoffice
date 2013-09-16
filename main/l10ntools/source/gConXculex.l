@@ -124,6 +124,10 @@ FIN   [^/>]*">"
 
 . {
   IMPLptr->copySource(yytext, LOCptr->mbNoCollectingData);
+
+  // Just to please compiler.
+  if (false)
+    REJECT;
 }
 
 

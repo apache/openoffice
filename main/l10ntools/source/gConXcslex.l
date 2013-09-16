@@ -78,6 +78,10 @@
 
 .|\n {
   IMPLptr->copySource(yytext);
+
+  // Just to please compiler.
+  if (false)
+    REJECT;
 }
 %%
 

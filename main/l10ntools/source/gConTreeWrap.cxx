@@ -32,11 +32,12 @@
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 convert_tree::convert_tree(l10nMem& crMemory)
-                          : meStateTag(STATE_TAG_NONE),
-                            meStateVal(STATE_VAL_NONE),
-                            miCntLanguages(0),
+                          : convert_gen_impl(crMemory),
                             mcOutputFiles(NULL),
-                            convert_gen_impl(crMemory)
+                            meStateTag(STATE_TAG_NONE),
+                            meStateVal(STATE_VAL_NONE),
+                            miCntLanguages(0)
+                            
 {
   // tree files are written through a local routine
   mbLoadMode = true;

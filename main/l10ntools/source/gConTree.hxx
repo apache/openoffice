@@ -66,10 +66,10 @@ class convert_tree : public convert_gen_impl
     std::string     msLine;
     std::string     msId;
     std::string     msAppl;
+    std::ofstream  *mcOutputFiles;
     STATE_TAG       meStateTag;
     STATE_VAL       meStateVal;
     int             miCntLanguages;
-    std::ofstream  *mcOutputFiles;
 
     void execute();
 };

@@ -35,6 +35,7 @@
 #define OS_ACCESS(x,y) _access(x,y)
 #define OS_MKDIR(x) _mkdir(x)
 #else
+#include <unistd.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #define OS_ACCESS(x,y) access(x,y)
@@ -194,7 +195,7 @@ bool convert_gen::createDir(std::string& sDir, std::string& sFile)
   for (oldPos = 0;; oldPos = newPos +1)
   {
     newPos = sFile.find_first_of("/\\", oldPos);
-    if (newPos == std::string::npos)
+    if (newPos == (int)std::string::npos)
       break;
 
     sNewDir += sFile.substr(oldPos, newPos-oldPos) + "/";

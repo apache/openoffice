@@ -139,13 +139,16 @@ SPACE [ \t]*
 
 \n {
   LOCptr->handleNL();
+
+  // Just to please compiler.
+  if (false)
+    REJECT;
 }
 
 
 .|\n {
 }
 %%
-
 
 
 void dummyJustForCompiler()

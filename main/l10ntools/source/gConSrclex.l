@@ -302,6 +302,10 @@ KEYID [a-zA-Z0-9_-]+
 
 . {
   IMPLptr->copySource(yytext);
+
+  // Just to please compiler.
+  if (false)
+    REJECT;
 }
 
 %%
