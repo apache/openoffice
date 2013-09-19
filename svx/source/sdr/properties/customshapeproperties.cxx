@@ -37,198 +37,202 @@
 
 namespace sdr
 {
-	namespace properties
-	{
-		void CustomShapeProperties::UpdateTextFrameStatus()
-		{
-			SdrTextObj& rObj = (SdrTextObj&)GetSdrObject();
-			SdrTextAutoGrowHeightItem& rAutoGrowHeightItem =
-				(SdrTextAutoGrowHeightItem&)rObj.GetMergedItem( SDRATTR_TEXT_AUTOGROWHEIGHT );
-			rObj.bTextFrame = rAutoGrowHeightItem.GetValue() != 0;
+    namespace properties
+    {
+        void CustomShapeProperties::UpdateTextFrameStatus()
+        {
+            SdrObjCustomShape& rObj = static_cast< SdrObjCustomShape& >(GetSdrObject());
+            const bool bOld(rObj.bTextFrame);
 
-			if ( rObj.bTextFrame )
-				rObj.NbcAdjustTextFrameWidthAndHeight();
-		}
+            rObj.bTextFrame = 0 != static_cast< const SdrTextAutoGrowHeightItem& >(GetObjectItemSet().Get(SDRATTR_TEXT_AUTOGROWHEIGHT)).GetValue();
 
-		SfxItemSet& CustomShapeProperties::CreateObjectSpecificItemSet(SfxItemPool& rPool)
-		{
-			return *(new SfxItemSet(rPool,
+            if(rObj.bTextFrame != bOld)
+            {
+                rObj.InvalidateRenderGeometry();
 
-				// ranges from SdrAttrObj
-				SDRATTR_START, SDRATTR_SHADOW_LAST,
-				SDRATTR_MISC_FIRST, SDRATTR_MISC_LAST,
-				SDRATTR_TEXTDIRECTION, SDRATTR_TEXTDIRECTION,
+                // #115391# Potential recursuin, since it calls SetObjectItemSet again, but rObj.bTextFrame 
+                // will not change again, thus it will be only one level and terminate
+                rObj.AdaptTextMinSize(); 
+            }
+        }
 
-				// Graphic Attributes
-				SDRATTR_GRAF_FIRST, SDRATTR_GRAF_LAST,
+        SfxItemSet& CustomShapeProperties::CreateObjectSpecificItemSet(SfxItemPool& rPool)
+        {
+            return *(new SfxItemSet(rPool,
 
-				// 3d Properties
-				SDRATTR_3D_FIRST, SDRATTR_3D_LAST,
+                // ranges from SdrAttrObj
+                SDRATTR_START, SDRATTR_SHADOW_LAST,
+                SDRATTR_MISC_FIRST, SDRATTR_MISC_LAST,
+                SDRATTR_TEXTDIRECTION, SDRATTR_TEXTDIRECTION,
 
-				// CustomShape properties
-				SDRATTR_CUSTOMSHAPE_FIRST, SDRATTR_CUSTOMSHAPE_LAST,
+                // Graphic Attributes
+                SDRATTR_GRAF_FIRST, SDRATTR_GRAF_LAST,
 
-				// range from SdrTextObj
-				EE_ITEMS_START, EE_ITEMS_END,
+                // 3d Properties
+                SDRATTR_3D_FIRST, SDRATTR_3D_LAST,
 
-				// end
-				0, 0));
-		}
-		sal_Bool CustomShapeProperties::AllowItemChange(const sal_uInt16 nWhich, const SfxPoolItem* pNewItem ) const
-		{
-			sal_Bool bAllowItemChange = sal_True;
-			if ( !pNewItem )
-			{
-				if ( ( nWhich >= SDRATTR_CUSTOMSHAPE_FIRST ) && ( nWhich <= SDRATTR_CUSTOMSHAPE_LAST ) )
-					bAllowItemChange = sal_False;
-			}
-			if ( bAllowItemChange )
-				bAllowItemChange = TextProperties::AllowItemChange( nWhich, pNewItem );
-			return bAllowItemChange;
-		}
-		void CustomShapeProperties::ClearObjectItem(const sal_uInt16 nWhich)
-		{
-			if ( !nWhich )
-			{
-				SfxWhichIter aIter( *mpItemSet );
-				sal_uInt16 nWhich2 = aIter.FirstWhich();
-				while( nWhich2 )
-				{
-					TextProperties::ClearObjectItemDirect( nWhich2 );
-					nWhich2 = aIter.NextWhich();
-				}
-				SfxItemSet aSet((SfxItemPool&)(*GetSdrObject().GetObjectItemPool()));
-				ItemSetChanged(aSet);
-			}
-			else
-				TextProperties::ClearObjectItem( nWhich );
-		}
-		void CustomShapeProperties::ClearObjectItemDirect(const sal_uInt16 nWhich)
-		{
-			if ( !nWhich )
-			{
-				SfxWhichIter aIter( *mpItemSet );
-				sal_uInt16 nWhich2 = aIter.FirstWhich();
-				while( nWhich2 )
-				{
-					TextProperties::ClearObjectItemDirect( nWhich2 );
-					nWhich2 = aIter.NextWhich();
-				}
-			}
-			else
-				TextProperties::ClearObjectItemDirect( nWhich );
-		}
-		void CustomShapeProperties::ItemSetChanged(const SfxItemSet& rSet)
-		{
-			SdrObjCustomShape& rObj = (SdrObjCustomShape&)GetSdrObject();
+                // CustomShape properties
+                SDRATTR_CUSTOMSHAPE_FIRST, SDRATTR_CUSTOMSHAPE_LAST,
 
-			if( SFX_ITEM_SET == rSet.GetItemState( SDRATTR_TEXT_AUTOGROWHEIGHT ) )
-			{
-				rObj.bTextFrame = ((SdrTextAutoGrowHeightItem&)rSet.Get( SDRATTR_TEXT_AUTOGROWHEIGHT )).GetValue() != 0;
-			}
+                // range from SdrTextObj
+                EE_ITEMS_START, EE_ITEMS_END,
 
-			// call parent
-			TextProperties::ItemSetChanged(rSet);
+                // end
+                0, 0));
+        }
 
-			// local changes, removing cached objects
-			rObj.InvalidateRenderGeometry();
-		}
-		void CustomShapeProperties::ItemChange(const sal_uInt16 nWhich, const SfxPoolItem* pNewItem)
-		{
-			SdrObjCustomShape& rObj = (SdrObjCustomShape&)GetSdrObject();
-			//OutlinerParaObject* pParaObj = rObj.GetOutlinerParaObject();
+        sal_Bool CustomShapeProperties::AllowItemChange(const sal_uInt16 nWhich, const SfxPoolItem* pNewItem ) const
+        {
+            sal_Bool bAllowItemChange = sal_True;
+            if ( !pNewItem )
+            {
+                if ( ( nWhich >= SDRATTR_CUSTOMSHAPE_FIRST ) && ( nWhich <= SDRATTR_CUSTOMSHAPE_LAST ) )
+                    bAllowItemChange = sal_False;
+            }
+            if ( bAllowItemChange )
+                bAllowItemChange = TextProperties::AllowItemChange( nWhich, pNewItem );
+            return bAllowItemChange;
+        }
 
-			if( pNewItem && ( SDRATTR_TEXT_AUTOGROWHEIGHT == nWhich ) )
-			{
-				rObj.bTextFrame = ((SdrTextAutoGrowHeightItem*)pNewItem)->GetValue() != 0;
-			}
-			// call parent
-			TextProperties::ItemChange( nWhich, pNewItem );
+        void CustomShapeProperties::ClearObjectItem(const sal_uInt16 nWhich)
+        {
+            if ( !nWhich )
+            {
+                SfxWhichIter aIter( *mpItemSet );
+                sal_uInt16 nWhich2 = aIter.FirstWhich();
+                while( nWhich2 )
+                {
+                    TextProperties::ClearObjectItemDirect( nWhich2 );
+                    nWhich2 = aIter.NextWhich();
+                }
+                SfxItemSet aSet((SfxItemPool&)(*GetSdrObject().GetObjectItemPool()));
+                ItemSetChanged(aSet);
+            }
+            else
+                TextProperties::ClearObjectItem( nWhich );
+        }
 
-			rObj.InvalidateRenderGeometry();
-		}
-		void CustomShapeProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr)
-		{
-			TextProperties::SetStyleSheet( pNewStyleSheet, bDontRemoveHardAttr );
-			UpdateTextFrameStatus();
-		}
-		void CustomShapeProperties::ForceDefaultAttributes()
-		{
-			UpdateTextFrameStatus();
+        void CustomShapeProperties::ClearObjectItemDirect(const sal_uInt16 nWhich)
+        {
+            if ( !nWhich )
+            {
+                SfxWhichIter aIter( *mpItemSet );
+                sal_uInt16 nWhich2 = aIter.FirstWhich();
+                while( nWhich2 )
+                {
+                    TextProperties::ClearObjectItemDirect( nWhich2 );
+                    nWhich2 = aIter.NextWhich();
+                }
+            }
+            else
+                TextProperties::ClearObjectItemDirect( nWhich );
+        }
 
-/* SJ: Following is no good if creating customshapes, leading to objects that are white after loading via xml
+        void CustomShapeProperties::ItemSetChanged(const SfxItemSet& rSet)
+        {
+            // call parent
+            TextProperties::ItemSetChanged(rSet);
 
-			SdrTextObj& rObj = (SdrTextObj&)GetSdrObject();
-			sal_Bool bTextFrame(rObj.IsTextFrame());
+            // update bTextFrame and RenderGeometry
+            UpdateTextFrameStatus();
+        }
 
-			// force ItemSet
-			GetObjectItemSet();
+        void CustomShapeProperties::PostItemChange(const sal_uInt16 nWhich)
+        {
+            switch(nWhich)
+            {
+                case SDRATTR_TEXT_AUTOGROWHEIGHT:
+                {
+                    // #115391#  update bTextFrame and RenderGeometry using AdaptTextMinSize()
+                    UpdateTextFrameStatus();
+                    break;
+                }
+                default:
+                {
+                    break;
+                }
+            }
 
-			if(bTextFrame)
-			{
-				mpItemSet->Put(XLineStyleItem(XLINE_NONE));
-				mpItemSet->Put(XFillColorItem(String(), Color(COL_WHITE)));
-				mpItemSet->Put(XFillStyleItem(XFILL_NONE));
-			}
-			else
-			{
-				mpItemSet->Put(SvxAdjustItem(SVX_ADJUST_CENTER));
-				mpItemSet->Put(SdrTextHorzAdjustItem(SDRTEXTHORZADJUST_CENTER));
-				mpItemSet->Put(SdrTextVertAdjustItem(SDRTEXTVERTADJUST_CENTER));
-			}
-*/
-		}
-		CustomShapeProperties::CustomShapeProperties(SdrObject& rObj)
-		:	TextProperties(rObj)
-		{
-		}
+            // call parent
+            TextProperties::PostItemChange(nWhich);
+        }
 
-		CustomShapeProperties::CustomShapeProperties(const CustomShapeProperties& rProps, SdrObject& rObj)
-		:	TextProperties(rProps, rObj)
-		{
-		}
+        void CustomShapeProperties::ItemChange(const sal_uInt16 nWhich, const SfxPoolItem* pNewItem)
+        {
+            // call parent
+            TextProperties::ItemChange( nWhich, pNewItem );
 
-		CustomShapeProperties::~CustomShapeProperties()
-		{
-		}
+            // update bTextFrame and RenderGeometry
+            UpdateTextFrameStatus();
+        }
 
-		BaseProperties& CustomShapeProperties::Clone(SdrObject& rObj) const
-		{
-			return *(new CustomShapeProperties(*this, rObj));
-		}
-		void CustomShapeProperties::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
-		{
-			TextProperties::Notify( rBC, rHint );
+        void CustomShapeProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr)
+        {
+            // call parent
+            TextProperties::SetStyleSheet( pNewStyleSheet, bDontRemoveHardAttr );
 
-			sal_Bool bRemoveRenderGeometry = sal_False;
+            // update bTextFrame and RenderGeometry
+            UpdateTextFrameStatus();
+        }
 
-			const SfxStyleSheetHint *pStyleHint = PTR_CAST( SfxStyleSheetHint, &rHint );
-			const SfxSimpleHint *pSimpleHint = PTR_CAST( SfxSimpleHint, &rHint );
-			if ( pStyleHint && pStyleHint->GetStyleSheet() == GetStyleSheet() )
-			{
-				switch( pStyleHint->GetHint() )
-				{
-					case SFX_STYLESHEET_MODIFIED :
-					case SFX_STYLESHEET_CHANGED	 :
-						bRemoveRenderGeometry = sal_True;
-					break;
-				};
-			}
-			else if ( pSimpleHint && pSimpleHint->GetId() == SFX_HINT_DATACHANGED )
-			{
-				bRemoveRenderGeometry = sal_True;
-			}
-			if ( bRemoveRenderGeometry )
-			{
-				UpdateTextFrameStatus();
+        void CustomShapeProperties::ForceDefaultAttributes()
+        {
+            // update bTextFrame and RenderGeometry
+            UpdateTextFrameStatus();
 
-				// local changes, removing cached objects
-				SdrObjCustomShape& rObj = (SdrObjCustomShape&)GetSdrObject();
-				rObj.InvalidateRenderGeometry();
-			}
+            // SJ: Following is no good if creating customshapes, leading to objects that are white after loading via xml
+            // This means: Do *not* call parent here is by purpose...
+        }
 
-		}
-	} // end of namespace properties
+        CustomShapeProperties::CustomShapeProperties(SdrObject& rObj)
+        :   TextProperties(rObj)
+        {
+        }
+
+        CustomShapeProperties::CustomShapeProperties(const CustomShapeProperties& rProps, SdrObject& rObj)
+        :   TextProperties(rProps, rObj)
+        {
+        }
+
+        CustomShapeProperties::~CustomShapeProperties()
+        {
+        }
+
+        BaseProperties& CustomShapeProperties::Clone(SdrObject& rObj) const
+        {
+            return *(new CustomShapeProperties(*this, rObj));
+        }
+
+        void CustomShapeProperties::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
+        {
+            TextProperties::Notify( rBC, rHint );
+
+            sal_Bool bRemoveRenderGeometry = sal_False;
+            const SfxStyleSheetHint *pStyleHint = PTR_CAST( SfxStyleSheetHint, &rHint );
+            const SfxSimpleHint *pSimpleHint = PTR_CAST( SfxSimpleHint, &rHint );
+
+            if ( pStyleHint && pStyleHint->GetStyleSheet() == GetStyleSheet() )
+            {
+                switch( pStyleHint->GetHint() )
+                {
+                    case SFX_STYLESHEET_MODIFIED :
+                    case SFX_STYLESHEET_CHANGED	 :
+                        bRemoveRenderGeometry = sal_True;
+                    break;
+                };
+            }
+            else if ( pSimpleHint && pSimpleHint->GetId() == SFX_HINT_DATACHANGED )
+            {
+                bRemoveRenderGeometry = sal_True;
+            }
+
+            if ( bRemoveRenderGeometry )
+            {
+                // update bTextFrame and RenderGeometry
+                UpdateTextFrameStatus();
+            }
+        }
+    } // end of namespace properties
 } // end of namespace sdr
 
 //////////////////////////////////////////////////////////////////////////////
