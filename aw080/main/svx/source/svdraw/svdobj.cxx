@@ -2608,17 +2608,17 @@ void SdrObject::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransfo
 	//	pGPL->SetReallyAbsolute(false,*this);
 	//}
 
-	if(rTransformation != maSdrObjectTransformation.getB2DHomMatrix())
-	{
-		if(GetGluePointList()) 
-		{
-			ForceGluePointList()->TransformGluePoints(rTransformation, sdr::legacy::GetSnapRange(*this));
-		}
+    if(rTransformation != getSdrObjectTransformation())
+    {
+        if(GetGluePointList()) 
+        {
+            ForceGluePointList()->TransformGluePoints(rTransformation, sdr::legacy::GetSnapRange(*this));
+        }
 
         const SdrObjectChangeBroadcaster aSdrObjectChangeBroadcaster(*this);
-		maSdrObjectTransformation.setB2DHomMatrix(rTransformation);
-		SetChanged();
-	}
+        maSdrObjectTransformation.setB2DHomMatrix(rTransformation);
+        SetChanged();
+    }
 }
 
 bool SdrObject::HasFillStyle() const

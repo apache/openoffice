@@ -45,9 +45,9 @@ using namespace com::sun::star;
  
 namespace
 {
-    sal_Int16 getPageNumber(const uno::Reference< drawing::XDrawPage >& rxDrawPage)
+    sal_uInt32 getPageNumber(const uno::Reference< drawing::XDrawPage >& rxDrawPage)
     {
-        sal_Int16 nRetval(0);
+        sal_uInt32 nRetval(0);
         uno::Reference< beans::XPropertySet > xSet(rxDrawPage, uno::UNO_QUERY);
 
         if (xSet.is())
@@ -55,7 +55,10 @@ namespace
             try
             {
                 const uno::Any aNumber(xSet->getPropertyValue(::rtl::OUString::createFromAscii("Number")));
-                aNumber >>= nRetval;
+                sal_Int16 aTemp(0);
+
+                aNumber >>= aTemp;
+                nRetval = aTemp;
             }
             catch(const uno::Exception&)
             {
@@ -66,23 +69,24 @@ namespace
         return nRetval;
     }
 
-    sal_Int16 getPageCount(const uno::Reference< drawing::XDrawPage >& rxDrawPage)
+    sal_uInt32 getPageCount(const uno::Reference< drawing::XDrawPage >& rxDrawPage)
     {
-        sal_Int16 nRetval(0);
+        sal_uInt32 nRetval(0);
         SdrPage* pPage = GetSdrPageFromXDrawPage(rxDrawPage);
 
         if(pPage)
         {
-			if( (pPage->GetPageNumber() == 0) && !pPage->IsMasterPage() )
-			{
-				// handout page!
-				return pPage->getSdrModelFromSdrPage().getHandoutPageCount();
-			}
-			else
-			{
-				const sal_uInt32 nPageCount(pPage->getSdrModelFromSdrPage().GetPageCount());
-				nRetval = ((sal_Int16)nPageCount - 1) / 2;
-			}
+            if( (pPage->GetPageNumber() == 0) && !pPage->IsMasterPage() )
+            {
+                // handout page!
+                return pPage->getSdrModelFromSdrPage().getHandoutPageCount();
+            }
+            else
+            {
+                const sal_uInt32 nPageCount(pPage->getSdrModelFromSdrPage().GetPageCount());
+
+                nRetval = (nPageCount - 1) / 2;
+            }
         }
 
         return nRetval;
@@ -136,8 +140,8 @@ namespace drawinglayer
 			bool bCurrentlyVisualizingPageIsSet(false);
 			Color aNewTextBackgroundColor;
 			bool bNewTextBackgroundColorIsSet(false);
-            sal_Int16 nCurrentlyValidPageNumber(0);
-            sal_Int16 nCurrentlyValidPageCount(0);
+            sal_uInt32 nCurrentlyValidPageNumber(0);
+            sal_uInt32 nCurrentlyValidPageCount(0);
 
 			if(getBuffered2DDecomposition().hasElements())
             {

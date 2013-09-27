@@ -2107,63 +2107,76 @@ void SdrTableObj::AdjustToMaxRange( const basegfx::B2DRange& rMaxRange, bool /* 
 
 void SdrTableObj::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransformation)
 {
-	// remember original scaling
-	const basegfx::B2DVector aScaleBefore(basegfx::absolute(getSdrObjectScale()));
+    if(rTransformation != getSdrObjectTransformation())
+    {
+        // remember original scaling
+        const basegfx::B2DVector aScaleBefore(basegfx::absolute(getSdrObjectScale()));
 
-	// call parent
-	SdrTextObj::setSdrObjectTransformation(rTransformation);
+        // call parent
+        SdrTextObj::setSdrObjectTransformation(rTransformation);
 
-    // get new scaling
-    const basegfx::B2DVector aNewSize(basegfx::absolute(getSdrObjectScale()));
+        // get new scaling
+        const basegfx::B2DVector aNewSize(basegfx::absolute(getSdrObjectScale()));
 
-	if(!aScaleBefore.equal(aNewSize))
-	{
-		// react on scale change
-		AdjustTextFrameWidthAndHeight(
-			basegfx::fTools::equal(aScaleBefore.getY(), aNewSize.getY()),
-			basegfx::fTools::equal(aScaleBefore.getX(), aNewSize.getX()));
-	}
+        if(!aScaleBefore.equal(aNewSize))
+        {
+            // react on scale change
+            AdjustTextFrameWidthAndHeight();
+        }
 
-	if( mpImpl )
-	{
-		Rectangle aRectangle(sdr::legacy::GetLogicRect(*this));
-		mpImpl->UpdateCells( aRectangle );
-	}
+        if( mpImpl )
+        {
+            Rectangle aRectangle(sdr::legacy::GetLogicRect(*this));
+            mpImpl->UpdateCells( aRectangle );
+        }
+    }
 }
 
 // --------------------------------------------------------------------
 
-bool SdrTableObj::AdjustTextFrameWidthAndHeight(bool bHgt, bool bWdt)
+void SdrTableObj::AdjustTextFrameWidthAndHeight()
 {
-    const basegfx::B2DRange aOldRange(getSdrObjectTranslate(), getSdrObjectTranslate() + basegfx::absolute(getSdrObjectScale()));
-    const basegfx::B2DRange aNewRange(AdjustTextFrameWidthAndHeight(aOldRange, bHgt, bWdt));
+    if(mbAdjustingTextFrameWidthAndHeight)
+    {
+        return;
+    }
 
-	if(!aOldRange.equal(aNewRange))
-	{
-		sdr::legacy::SetLogicRange(*this, aNewRange);
+    mbAdjustingTextFrameWidthAndHeight = true;
 
-        return true;
-	}
+    const basegfx::B2DRange aOldRange(
+        getSdrObjectTranslate(), 
+        getSdrObjectTranslate() + basegfx::absolute(getSdrObjectScale()));
+    const basegfx::B2DRange aNewTextRange(
+        AdjustTextFrameWidthAndHeight(aOldRange));
 
-    return false;
+    if(!aOldRange.equal(aNewTextRange))
+    {
+        // adapt transformation to new range and apply to object
+        setSdrObjectTransformation(
+            basegfx::tools::adaptB2DHomMatrixToB2DRange(
+                getSdrObjectTransformation(),
+                aNewTextRange));
+    }
+
+    mbAdjustingTextFrameWidthAndHeight = false;
 }
 
 // --------------------------------------------------------------------
 
-basegfx::B2DRange SdrTableObj::AdjustTextFrameWidthAndHeight(const basegfx::B2DRange& rRange, bool bHeight, bool bWidth) const
+basegfx::B2DRange SdrTableObj::AdjustTextFrameWidthAndHeight(const basegfx::B2DRange& rRange) const
 {
-	if(rRange.isEmpty() || !mpImpl || !mpImpl->mxTable.is())
+    basegfx::B2DRange aRetval(rRange);
+
+    if(rRange.isEmpty() || !mpImpl || !mpImpl->mxTable.is())
     {
         // no change
-		return rRange;
     }
     else
     {
-        basegfx::B2DRange aNewRange(rRange);
-
-        mpImpl->LayoutTable(aNewRange, !bWidth, !bHeight);
-        return aNewRange;
+        mpImpl->LayoutTable(aRetval, false, false);
     }
+
+    return aRetval;
 }
 
 // --------------------------------------------------------------------

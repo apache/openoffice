@@ -420,41 +420,39 @@ const basegfx::B2DHomMatrix& SdrObjGroup::getSdrObjectTransformation() const
 
 void SdrObjGroup::setSdrObjectTransformation(const basegfx::B2DHomMatrix& rTransformation)
 {
-	const basegfx::B2DHomMatrix& rCurrent = getSdrObjectTransformation();
+    if(rTransformation != getSdrObjectTransformation())
+    {
+        const sal_uInt32 nCount(GetObjCount());
+        
+        if(nCount) 
+        {
+            // to apply the transformation to sub-objects, remove current transformation
+            // by using it's inverse, then transform by the new transformation. Prepare
+            // inverse combined with transformation
+            basegfx::B2DHomMatrix aTransform(getSdrObjectTransformation());
 
-	if(rTransformation != rCurrent)
-	{
-		const sal_uInt32 nCount(GetObjCount());
-		
-		if(nCount) 
-		{
-			// to apply the transformation to sub-objects, remove current transformation
-			// by using it's inverse, then transform by the new transformation. Prepare
-			// inverse combined with transformation
-			basegfx::B2DHomMatrix aTransform(rCurrent);
+            aTransform.invert();
+            aTransform = rTransformation * aTransform;
 
-			aTransform.invert();
-			aTransform = rTransformation * aTransform;
+            // apply to all sub-objects
+            for(sal_uInt32 a(0); a < nCount; a++)
+            {
+                SdrObject* pCandidate = GetObj(a);
+                pCandidate->setSdrObjectTransformation(aTransform * pCandidate->getSdrObjectTransformation());
+            }
 
-			// apply to all sub-objects
-			for(sal_uInt32 a(0); a < nCount; a++)
-			{
-				SdrObject* pCandidate = GetObj(a);
-				pCandidate->setSdrObjectTransformation(aTransform * pCandidate->getSdrObjectTransformation());
-			}
+            // call parent; needed to trigger invalidateObjectRange and others
+            SdrObject::setSdrObjectTransformation(rTransformation);
 
-			// call parent; needed to trigger invalidateObjectRange and others
-			SdrObject::setSdrObjectTransformation(rTransformation);
-
-			// reset local transformation since it's a sum-up of the content
-			maSdrObjectTransformation.setB2DHomMatrix(basegfx::B2DHomMatrix());
-		}
-		else
-		{
-			// no sub-objects; set directly
-			SdrObject::setSdrObjectTransformation(rTransformation);
-		}
-	}
+            // reset local transformation since it's a sum-up of the content
+            maSdrObjectTransformation.setB2DHomMatrix(basegfx::B2DHomMatrix());
+        }
+        else
+        {
+            // no sub-objects; set directly
+            SdrObject::setSdrObjectTransformation(rTransformation);
+        }
+    }
 }
 
 void SdrObjGroup::SetAnchorPos(const basegfx::B2DPoint& rPnt)

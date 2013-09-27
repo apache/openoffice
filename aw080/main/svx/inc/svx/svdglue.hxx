@@ -19,8 +19,6 @@
  * 
  *************************************************************/
 
-
-
 #ifndef _SVDGLUE_HXX
 #define _SVDGLUE_HXX
 
@@ -29,6 +27,91 @@
 #include "svx/svxdllapi.h"
 #include <basegfx/point/b2dpoint.hxx>
 #include <basegfx/range/b2drange.hxx>
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+namespace sdr
+{
+    namespace glue
+    {
+        class SVX_DLLPUBLIC Point
+        {
+        public:
+            enum Alignment
+            {
+                Alignment_None,
+                Alignment_Minimum,
+                Alignment_Center,
+                Alignment_Maximum
+            };
+
+        private:
+            // position in unit coordinates [0.0 .. 1.0] in X,Y
+            basegfx::B2DPoint               maUnitPosition;
+
+            // escape direction vector. If zero, escape direction is smart. Else
+            // it will be normalized
+            basegfx::B2DVector              maEscapeVector;
+
+            // horizontal and vertical alignments. If != Alignment_None the
+            // position will change as distance from the defined anchor position.
+            // If == Alignment_None position is relative
+            Alignment                       meHorizontalAlignment;
+            Alignment                       meVerticalAlignment;
+
+            // unique identifier ID. All Points in one list need unique identifiers
+            // and will be sorted by these. This is administrated by the List class
+            sal_uInt32                      maID;
+
+            /// bitfield
+
+            // needed to separate user-defined points from the ones from CustomShapes
+            bool                            mbUserDefined : 1;
+
+            // write access to ID is limited to list class only
+            void setID(sal_uInt32 nNew) { maID = nNew; }
+
+        protected:
+        public:
+            Point(
+                const basegfx::B2DPoint& rUnitPosition = basegfx::B2DPoint(0.5, 0.5),
+                const basegfx::B2DVector& rEscapeVector = basegfx::B2DVector(0.0, 0.0),
+                Alignment eHorizontalAlignment = Alignment_None,
+                Alignment eVerticalAlignment = Alignment_None,
+                bool bUserDefined = true)
+            :   maUnitPosition(rUnitPosition),
+                maEscapeVector(rEscapeVector),
+                meHorizontalAlignment(eHorizontalAlignment),
+                meVerticalAlignment(eVerticalAlignment),
+                maID(0),
+                mbUserDefined(bUserDefined)
+            {
+            }
+
+            // get/set UnitPosition. Always in [0.0 .. 1.0] in Y and Y, will be truncated at set
+            const basegfx::B2DPoint& getUnitPosition() const { return maUnitPosition; }
+            void setUnitPosition(const basegfx::B2DPoint& rNew);
+
+            // get/set EscapeVector. Set willl normalize the vector
+            const basegfx::B2DVector& getEscapeVector() const { return maEscapeVector; }
+            void setEscapeVector(const basegfx::B2DVector& rNew);
+
+            // get/set HorizontalAlignment
+            Alignment getHorizontalAlignment() const { return meHorizontalAlignment; }
+            void setHorizontalAlignment(Alignment eNew) { meHorizontalAlignment = eNew; }
+
+            // get/set VerticalAlignment
+            Alignment getVerticalAlignment() const { return meVerticalAlignment; }
+            void setVerticalAlignment(Alignment eNew) { meVerticalAlignment = eNew; }
+
+            // read access to ID (write is private and limitied to list class)
+            sal_uInt32 getID() const { return maID; }
+        };
+
+
+
+    } // end of namespace glue
+} // end of namespace sdr
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -63,66 +146,66 @@
 class SVX_DLLPUBLIC SdrGluePoint 
 {
 private:
-	// Bezugspunkt ist SdrObject::GetSnapRect().Center()
-	// bNoPercent=false: Position ist -5000..5000 (1/100)% bzw. 0..10000 (je nach Align)
-	// bNoPercent=true : Position ist in log Einh, rel zum Bezugspunkt
-	basegfx::B2DPoint		maPos;
-	sal_uInt16				mnEscDir;
-	sal_uInt32				mnId;
-	sal_uInt16				mnAlign;
+    // Bezugspunkt ist SdrObject::GetSnapRect().Center()
+    // bNoPercent=false: Position ist -5000..5000 (1/100)% bzw. 0..10000 (je nach Align)
+    // bNoPercent=true : Position ist in log Einh, rel zum Bezugspunkt
+    basegfx::B2DPoint		maPos;
+    sal_uInt16				mnEscDir;
+    sal_uInt32				mnId;
+    sal_uInt16				mnAlign;
 
-	/// bitfield
-	bool					mbNoPercent : 1;
-	bool					mbReallyAbsolute : 1; // Temporaer zu setzen fuer Transformationen am Bezugsobjekt
-	bool					mbUserDefined : 1; // #i38892#
+    /// bitfield
+    bool					mbNoPercent : 1;
+    bool					mbReallyAbsolute : 1; // Temporaer zu setzen fuer Transformationen am Bezugsobjekt
+    bool					mbUserDefined : 1; // #i38892#
 
 public:
-	SdrGluePoint();
-	SdrGluePoint(const basegfx::B2DPoint& rNewPos, bool bNewPercent = true, sal_uInt16 nNewAlign = 0);
+    SdrGluePoint();
+    SdrGluePoint(const basegfx::B2DPoint& rNewPos, bool bNewPercent = true, sal_uInt16 nNewAlign = 0);
 
-	bool operator==(const SdrGluePoint& rCmpGP) const;
-	bool operator!=(const SdrGluePoint& rCmpGP) const   { return !operator==(rCmpGP); }
+    bool operator==(const SdrGluePoint& rCmpGP) const;
+    bool operator!=(const SdrGluePoint& rCmpGP) const   { return !operator==(rCmpGP); }
 
-	const basegfx::B2DPoint& GetPos() const { return maPos; }
-	void SetPos(const basegfx::B2DPoint& rNewPos) { if(maPos != rNewPos) maPos = rNewPos; }
+    const basegfx::B2DPoint& GetPos() const { return maPos; }
+    void SetPos(const basegfx::B2DPoint& rNewPos) { if(maPos != rNewPos) maPos = rNewPos; }
 
-	sal_uInt16 GetEscDir() const { return mnEscDir; }
-	void SetEscDir(sal_uInt16 nNewEsc) { if(mnEscDir != nNewEsc) mnEscDir = nNewEsc; }
-	
-	sal_uInt32 GetId() const { return mnId; }
-	void SetId(sal_uInt32 nNewId) { if(mnId != nNewId) mnId = nNewId; }
-	
-	bool IsPercent() const { return !mbNoPercent; }
-	void SetPercent(bool bOn) { if(mbNoPercent == bOn) mbNoPercent = !bOn; }
-	
-	// Temporaer zu setzen fuer Transformationen am Bezugsobjekt
-	bool IsReallyAbsolute() const { return mbReallyAbsolute; }
+    sal_uInt16 GetEscDir() const { return mnEscDir; }
+    void SetEscDir(sal_uInt16 nNewEsc) { if(mnEscDir != nNewEsc) mnEscDir = nNewEsc; }
+    
+    sal_uInt32 GetId() const { return mnId; }
+    void SetId(sal_uInt32 nNewId) { if(mnId != nNewId) mnId = nNewId; }
+    
+    bool IsPercent() const { return !mbNoPercent; }
+    void SetPercent(bool bOn) { if(mbNoPercent == bOn) mbNoPercent = !bOn; }
+    
+    // Temporaer zu setzen fuer Transformationen am Bezugsobjekt
+    bool IsReallyAbsolute() const { return mbReallyAbsolute; }
 
-	// #i38892#
-	bool IsUserDefined() const { return mbUserDefined; }
-	void SetUserDefined(bool bNew) { if(mbUserDefined != bNew) mbUserDefined = bNew; }
+    // #i38892#
+    bool IsUserDefined() const { return mbUserDefined; }
+    void SetUserDefined(bool bNew) { if(mbUserDefined != bNew) mbUserDefined = bNew; }
 
-	sal_uInt16 GetAlign() const { return mnAlign; }
-	void SetAlign(sal_uInt16 nAlg) { if(mnAlign != nAlg) mnAlign = nAlg; }
-	
-	sal_uInt16 GetHorzAlign() const { return mnAlign & 0x00FF; }
-	void SetHorzAlign(sal_uInt16 nAlg) { if((mnAlign & 0x00FF) != nAlg) mnAlign = (mnAlign & 0xFF00)|(nAlg & 0x00FF); }
-	
-	sal_uInt16 GetVertAlign() const { return mnAlign & 0xFF00; }
-	void SetVertAlign(sal_uInt16 nAlg) { if((mnAlign & 0xFF00) != nAlg) mnAlign = (mnAlign & 0x00FF)|(nAlg & 0xFF00); }
+    sal_uInt16 GetAlign() const { return mnAlign; }
+    void SetAlign(sal_uInt16 nAlg) { if(mnAlign != nAlg) mnAlign = nAlg; }
+    
+    sal_uInt16 GetHorzAlign() const { return mnAlign & 0x00FF; }
+    void SetHorzAlign(sal_uInt16 nAlg) { if((mnAlign & 0x00FF) != nAlg) mnAlign = (mnAlign & 0xFF00)|(nAlg & 0x00FF); }
+    
+    sal_uInt16 GetVertAlign() const { return mnAlign & 0xFF00; }
+    void SetVertAlign(sal_uInt16 nAlg) { if((mnAlign & 0xFF00) != nAlg) mnAlign = (mnAlign & 0x00FF)|(nAlg & 0xFF00); }
 
-	bool IsHit(const basegfx::B2DPoint& rPnt, double fTolLog, const basegfx::B2DRange& rObjectRange) const;
+    bool IsHit(const basegfx::B2DPoint& rPnt, double fTolLog, const basegfx::B2DRange& rObjectRange) const;
 
-	basegfx::B2DPoint GetAbsolutePos(const basegfx::B2DRange& rObjectRange) const;
-	void SetAbsolutePos(const basegfx::B2DPoint& rNewPos, const basegfx::B2DRange& rObjectRange);
+    basegfx::B2DPoint GetAbsolutePos(const basegfx::B2DRange& rObjectRange) const;
+    void SetAbsolutePos(const basegfx::B2DPoint& rNewPos, const basegfx::B2DRange& rObjectRange);
 
-	sal_Int32 GetAlignAngle() const;
-	void SetAlignAngle(sal_Int32 nWink);
-	
-	sal_Int32 EscDirToAngle(sal_uInt16 nEsc) const;
-	sal_uInt16 EscAngleToDir(sal_Int32 nWink) const;
+    sal_Int32 GetAlignAngle() const;
+    void SetAlignAngle(sal_Int32 nWink);
+    
+    sal_Int32 EscDirToAngle(sal_uInt16 nEsc) const;
+    sal_uInt16 EscAngleToDir(sal_Int32 nWink) const;
 
-	void Transform(const basegfx::B2DHomMatrix& rTransformation, const basegfx::B2DRange& rObjectRange);
+    void Transform(const basegfx::B2DHomMatrix& rTransformation, const basegfx::B2DRange& rObjectRange);
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -131,34 +214,34 @@ class SVX_DLLPUBLIC SdrGluePointList
 {
 private:
     typedef ::std::vector< SdrGluePoint* > SdrGluePointContainerType;
-	SdrGluePointContainerType	maList;
+    SdrGluePointContainerType	maList;
 
 protected:
-	SdrGluePoint* GetObject(sal_uInt32 i) const;
+    SdrGluePoint* GetObject(sal_uInt32 i) const;
 
 public:
-	SdrGluePointList();
-	SdrGluePointList(const SdrGluePointList& rSrcList);
-	~SdrGluePointList();
-	
-	void                Clear();
-	void                operator=(const SdrGluePointList& rSrcList);
-	
-	sal_uInt32 GetCount() const { return maList.size(); }
+    SdrGluePointList();
+    SdrGluePointList(const SdrGluePointList& rSrcList);
+    ~SdrGluePointList();
+    
+    void                Clear();
+    void                operator=(const SdrGluePointList& rSrcList);
+    
+    sal_uInt32 GetCount() const { return maList.size(); }
 
-	// Beim Insert wird dem Objekt (also dem GluePoint) automatisch eine Id zugewiesen.
-	// ReturnCode ist der Index des neuen GluePoints in der Liste
-	sal_uInt32 Insert(const SdrGluePoint& rGP);
-	void Delete(sal_uInt32 nPos);
-	
-	SdrGluePoint& operator[](sal_uInt32 nPos) { return *GetObject(nPos); }
-	const SdrGluePoint& operator[](sal_uInt32 nPos) const { return *GetObject(nPos); }
-	
-	sal_uInt32 FindGluePoint(sal_uInt32 nId) const;
-	sal_uInt32 GPLHitTest(const basegfx::B2DPoint& rPnt, double fTolLog, const basegfx::B2DRange& rObjectRange, bool bBack = false) const;
-	
-	// Temporaer zu setzen fuer Transformationen am Bezugsobjekt
-	void TransformGluePoints(const basegfx::B2DHomMatrix& rTransformation, const basegfx::B2DRange& rObjectRange);
+    // Beim Insert wird dem Objekt (also dem GluePoint) automatisch eine Id zugewiesen.
+    // ReturnCode ist der Index des neuen GluePoints in der Liste
+    sal_uInt32 Insert(const SdrGluePoint& rGP);
+    void Delete(sal_uInt32 nPos);
+    
+    SdrGluePoint& operator[](sal_uInt32 nPos) { return *GetObject(nPos); }
+    const SdrGluePoint& operator[](sal_uInt32 nPos) const { return *GetObject(nPos); }
+    
+    sal_uInt32 FindGluePoint(sal_uInt32 nId) const;
+    sal_uInt32 GPLHitTest(const basegfx::B2DPoint& rPnt, double fTolLog, const basegfx::B2DRange& rObjectRange, bool bBack = false) const;
+    
+    // Temporaer zu setzen fuer Transformationen am Bezugsobjekt
+    void TransformGluePoints(const basegfx::B2DHomMatrix& rTransformation, const basegfx::B2DRange& rObjectRange);
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

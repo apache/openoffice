@@ -241,7 +241,7 @@ sal_Bool DlgEdFunc::KeyInput( const KeyEvent& rKEvt )
 				const SdrHdlList& rHdlList = pView->GetHdlList();
 				SdrHdl* pHdl = rHdlList.GetFocusHdl();
 
-				if ( pHdl == 0 )
+				if(!pHdl)
 				{
 					// no handle selected
 					if ( pView->IsMoveAllowed() )
@@ -287,54 +287,57 @@ sal_Bool DlgEdFunc::KeyInput( const KeyEvent& rKEvt )
 				}
 				else
 				{
-					// move the handle
-					if ( pHdl && !aMove.equalZero() )
-					{
-						const basegfx::B2DPoint aStartPoint( pHdl->getPosition() );
-						const basegfx::B2DPoint aEndPoint( pHdl->getPosition() + aMove );
-						const SdrDragStat& rDragStat = pView->GetDragStat();
+                    // move the handle
+                    pView->MoveHandleByVector(*pHdl, aMove, pWindow, 0);
 
-						// start dragging
-						pView->BegDragObj( aStartPoint, pHdl, 0.0 );
-
-					    if ( pView->IsDragObj() )
-						{
-							const bool bWasNoSnap(rDragStat.IsNoSnap());
-							const bool bWasSnapEnabled(pView->IsSnapEnabled());
-
-							// switch snapping off
-							if ( !bWasNoSnap )
-							{
-								((SdrDragStat&)rDragStat).SetNoSnap(true);
-							}
-
-							if ( bWasSnapEnabled )
-							{
-								pView->SetSnapEnabled( false );
-							}
-
-							pView->MovAction( aEndPoint );
-							pView->EndDragObj();
-						
-							// restore snap
-							if ( !bWasNoSnap )
-							{
-								((SdrDragStat&)rDragStat).SetNoSnap( bWasNoSnap );
-							}
-
-							if ( bWasSnapEnabled )
-							{
-								pView->SetSnapEnabled( bWasSnapEnabled );
-						    }
-						}
-
-						// make moved handle visible
-						const basegfx::B2DRange aVisRange(
-							aEndPoint - basegfx::B2DPoint(100.0, 100.0),
-							aEndPoint + basegfx::B2DPoint(100.0, 100.0));
-
-						pView->MakeVisibleAtView( aVisRange, *pWindow );
-					}
+                    // TTTT:HANDLE
+					//if ( pHdl && !aMove.equalZero() )
+					//{
+					//	const basegfx::B2DPoint aStartPoint( pHdl->getPosition() );
+					//	const basegfx::B2DPoint aEndPoint( pHdl->getPosition() + aMove );
+					//	const SdrDragStat& rDragStat = pView->GetDragStat();
+                    //
+					//	// start dragging
+					//	pView->BegDragObj( aStartPoint, pHdl, 0.0 );
+                    //
+					//    if ( pView->IsDragObj() )
+					//	{
+					//		const bool bWasNoSnap(rDragStat.IsNoSnap());
+					//		const bool bWasSnapEnabled(pView->IsSnapEnabled());
+                    //
+					//		// switch snapping off
+					//		if ( !bWasNoSnap )
+					//		{
+					//			((SdrDragStat&)rDragStat).SetNoSnap(true);
+					//		}
+                    //
+					//		if ( bWasSnapEnabled )
+					//		{
+					//			pView->SetSnapEnabled( false );
+					//		}
+                    //
+					//		pView->MovAction( aEndPoint );
+					//		pView->EndDragObj();
+					//	
+					//		// restore snap
+					//		if ( !bWasNoSnap )
+					//		{
+					//			((SdrDragStat&)rDragStat).SetNoSnap( bWasNoSnap );
+					//		}
+                    //
+					//		if ( bWasSnapEnabled )
+					//		{
+					//			pView->SetSnapEnabled( bWasSnapEnabled );
+					//	    }
+					//	}
+                    //
+					//	// make moved handle visible
+					//	const basegfx::B2DRange aVisRange(
+					//		aEndPoint - basegfx::B2DPoint(100.0, 100.0),
+					//		aEndPoint + basegfx::B2DPoint(100.0, 100.0));
+                    //
+					//	pView->MakeVisibleAtView( aVisRange, *pWindow );
+					//}
 				}
 			}
 			else

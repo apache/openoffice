@@ -54,36 +54,12 @@ String SdrTextObj::getSpecialDragComment(const SdrDragStat& /*rDrag*/) const
 
 bool SdrTextObj::EndCreate(SdrDragStat& rStat, SdrCreateCmd eCmd)
 {
-	bool bRetval(SdrAttrObj::EndCreate(rStat, eCmd));
+    bool bRetval(SdrAttrObj::EndCreate(rStat, eCmd));
 
-	if(bTextFrame) 
-    {
-		const bool bAutoGrowHeight(IsAutoGrowHeight());
-		const bool bAutoGrowWidth(IsAutoGrowWidth());
+    // #115391# TTTT: Calls setSdrObjectTransformation and thus AdaptTextMinSize automatically
+    // AdaptTextMinSize();
 
-		if(bAutoGrowHeight || bAutoGrowWidth) 
-        {
-			const basegfx::B2DVector aAbsScale(basegfx::absolute(getSdrObjectScale()));
-
-			if(bAutoGrowHeight) 
-            {
-		    	// MinTextHeight
-	    		SetMinTextFrameHeight(basegfx::fround(aAbsScale.getY()));
-    		}
-		
-			if(bAutoGrowWidth) 
-			{
-			    // MinTextWidth
-				SetMinTextFrameWidth(basegfx::fround(aAbsScale.getX()));
-		    }
-		
-    		// Textrahmen neu berechnen
-			AdjustTextFrameWidthAndHeight();
-			ActionChanged();
-	    }
-	}
-
-	return bRetval;
+    return bRetval;
 }
 
 void SdrTextObj::BrkCreate(SdrDragStat& /*rStat*/)
