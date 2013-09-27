@@ -2588,7 +2588,7 @@ Writer& OutHTML_SwTxtNode( Writer& rWrt, const SwCntntNode& rNode )
 							pTxtHt = pHt;
 							sal_uInt16 nFldWhich;
 							if( RES_TXTATR_FIELD != pHt->Which() ||
-								( RES_POSTITFLD != (nFldWhich = ((const SwFmtFld&)pHt->GetAttr()).GetFld()->Which()) &&
+								( RES_POSTITFLD != (nFldWhich = ((const SwFmtFld&)pHt->GetAttr()).GetField()->Which()) &&
 								RES_SCRIPTFLD != nFldWhich ) )
 								bWriteBreak = sal_False;
 						}
@@ -3415,13 +3415,13 @@ SwAttrFnTab aHTMLAttrFnTab = {
 /* RES_TXTATR_UNKNOWN_CONTAINER */  0,
 /* RES_TXTATR_DUMMY5 */             0,
 
-/* RES_TXTATR_FIELD	*/          	OutHTML_SwFmtFld,
-/* RES_TXTATR_FLYCNT */ 			OutHTML_SwFlyCnt,
-/* RES_TXTATR_FTN */				OutHTML_SwFmtFtn,
+/* RES_TXTATR_FIELD	*/              OutHTML_SwFmtFld,
+/* RES_TXTATR_FLYCNT */             OutHTML_SwFlyCnt,
+/* RES_TXTATR_FTN */                OutHTML_SwFmtFtn,
 /* RES_TXTATR_DUMMY4 */             0,
 /* RES_TXTATR_DUMMY3 */             0,
-/* RES_TXTATR_DUMMY1 */        	    0, // Dummy:
-/* RES_TXTATR_DUMMY2 */        	    0, // Dummy:
+/* RES_TXTATR_DUMMY1 */             0, // Dummy:
+/* RES_TXTATR_DUMMY2 */             0, // Dummy:
 
 /* RES_PARATR_LINESPACING	*/      0,
 /* RES_PARATR_ADJUST	*/          OutHTML_SvxAdjust,

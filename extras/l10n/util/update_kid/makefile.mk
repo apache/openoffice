@@ -38,7 +38,7 @@ MYTEMP:=$(mktmp )
 
 
 blah:
-	$(LOCALIZE_SL) -e -l en-US -f $(MYTEMP)
+	cd $(SRC_ROOT) && localize -e -l en-US -f $(MYTEMP)
 	$(RM) 	$(PRJ)$/source$/kid$/localize.sdf
 	$(PERL) $(SOLARVER)$/$(INPATH)$/bin$(UPDMINOREXT)$/keyidGen.pl $(MYTEMP) $(PRJ)$/source$/kid$/localize.sdf_tmp
 	$(TYPE) lic.header $(PRJ)$/source$/kid$/localize.sdf_tmp | sed -e "s/\ten-US\t/\tkid\t/" > $(PRJ)$/source$/kid$/localize.sdf

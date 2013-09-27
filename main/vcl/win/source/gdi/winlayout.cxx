@@ -1845,30 +1845,39 @@ int UniscribeLayout::GetNextGlyphs( int nLen, sal_GlyphId* pGlyphs, Point& rPos,
            nXOffset += mpJustifications[ nStart ] - mpGlyphAdvances[ nStart ];
     }
 
-    // create mpGlyphs2Chars[] if it is needed later
-    if( pCharPosAry && !mpGlyphs2Chars )
-    {
-        // create and reset the new array
-        mpGlyphs2Chars = new int[ mnGlyphCapacity ];
-        for( int i = 0; i < mnGlyphCount; ++i )
-            mpGlyphs2Chars[i] = -1;
-        // calculate the char->glyph mapping
-        for( nItem = 0; nItem < mnItemCount; ++nItem )
-        {
-            // ignore invisible visual items
-            const VisualItem& rVI = mpVisualItems[ nItem ];
-            if( rVI.IsEmpty() )
-                continue;
-            // calculate the mapping by using mpLogClusters[]
-            // mpGlyphs2Chars[] should obey the logical order
-            // => reversing the loop does this by overwriting higher logicals
-            for( c = rVI.mnEndCharPos; --c >= rVI.mnMinCharPos; )
-            {
-                int i = mpLogClusters[c] + rVI.mnMinGlyphPos;
-                mpGlyphs2Chars[i] = c;
-            }
-        }
-    }
+	// create mpGlyphs2Chars[] if it is needed later
+	if( pCharPosAry && !mpGlyphs2Chars )
+	{
+		// create and reset the new array
+		mpGlyphs2Chars = new int[ mnGlyphCapacity ];
+		static const int CHARPOS_NONE = -1;
+		for( int i = 0; i < mnGlyphCount; ++i )
+			mpGlyphs2Chars[i] = CHARPOS_NONE;
+		// calculate the char->glyph mapping
+		for( nItem = 0; nItem < mnItemCount; ++nItem )
+		{
+			// ignore invisible visual items
+			const VisualItem& rVI = mpVisualItems[ nItem ];
+			if( rVI.IsEmpty() )
+				continue;
+			// calculate the mapping by using mpLogClusters[]
+			// mpGlyphs2Chars[] should obey the logical order
+			// => reversing the loop does this by overwriting higher logicals
+			for( c = rVI.mnEndCharPos; --c >= rVI.mnMinCharPos; )
+			{
+				int i = mpLogClusters[c] + rVI.mnMinGlyphPos;
+				mpGlyphs2Chars[i] = c;
+			}
+			// use a heuristic to fill the gaps in the glyphs2chars array
+			c = !rVI.IsRTL() ? rVI.mnMinCharPos : rVI.mnEndCharPos - 1;
+			for( int i = rVI.mnMinGlyphPos; i < rVI.mnEndGlyphPos; ++i ) {
+				if( mpGlyphs2Chars[i] == CHARPOS_NONE )
+					mpGlyphs2Chars[i] = c;
+				else 
+					c = mpGlyphs2Chars[i];
+			}
+		}
+	}
 
     // calculate the absolute position of the first result glyph in pixel units
     const GOFFSET aGOffset = mpGlyphOffsets[ nStart ];

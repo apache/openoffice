@@ -186,9 +186,10 @@ public class ChartLegend {
 		String chartName = "testChart";
 		String cellRangeName = "A1:D4";
 		Boolean result = true;
-		int delta = 4;//Save as .xls file, the legend position may change a little, set acceptable range.
+		int delta = 1; // tolerate legend position changes from integer rounding
 
 		if (fileType.equalsIgnoreCase("xls")) {
+			delta = 4; // increase tolerance for legend position changes in the XLS roundtrip
 			chartName = "Object 1";			
 		}
 		
@@ -221,15 +222,8 @@ public class ChartLegend {
 		
 		assertTrue("Chart legend has not been enabled in ." + fileType + " file.", result);
 		
-		if (fileType.equalsIgnoreCase("xls")) {
-			assertEquals("Incorrect chart legend position X got in ." + fileType + " file.", aPoint.X, resultPoint.X, delta);
-			assertEquals("Incorrect chart legend position X got in ." + fileType + " file.", aPoint.Y, resultPoint.Y, delta);
-		}
-		else {
-			assertEquals("Incorrect chart legend position X got in ." + fileType + " file.", aPoint.X, resultPoint.X);
-			assertEquals("Incorrect chart legend position X got in ." + fileType + " file.", aPoint.Y, resultPoint.Y);
-		}
-		
+		assertEquals("Incorrect chart legend position X got in ." + fileType + " file.", aPoint.X, resultPoint.X, delta);
+		assertEquals("Incorrect chart legend position Y got in ." + fileType + " file.", aPoint.Y, resultPoint.Y, delta);
 	}
 
 }

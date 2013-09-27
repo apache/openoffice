@@ -1130,7 +1130,7 @@ void SwTxtNode::DestroyAttr( SwTxtAttr* pAttr )
 			{
 				// Wenn wir ein HiddenParaField sind, dann muessen wir
 				// ggf. fuer eine Neuberechnung des Visible-Flags sorgen.
-				const SwField* pFld = pAttr->GetFld().GetFld();
+				const SwField* pFld = pAttr->GetFmtFld().GetField();
 
 				//JP 06-08-95: DDE-Felder bilden eine Ausnahme
 				ASSERT( RES_DDEFLD == pFld->GetTyp()->Which() ||
@@ -1160,7 +1160,7 @@ void SwTxtNode::DestroyAttr( SwTxtAttr* pAttr )
 					break;
 				case RES_POSTITFLD:
 					{
-						const_cast<SwFmtFld&>(pAttr->GetFld()).Broadcast( SwFmtFldHint( &((SwTxtFld*)pAttr)->GetFld(), SWFMTFLD_REMOVED ) );
+						const_cast<SwFmtFld&>(pAttr->GetFmtFld()).Broadcast( SwFmtFldHint( &((SwTxtFld*)pAttr)->GetFmtFld(), SWFMTFLD_REMOVED ) );
 						break;
 					}
 				}
@@ -1435,7 +1435,7 @@ bool SwTxtNode::InsertHint( SwTxtAttr * const pAttr, const SetAttrMode nMode )
 					// fuer HiddenParaFields Benachrichtigungsmechanismus
 					// anwerfen
 					if( RES_HIDDENPARAFLD ==
-						pAttr->GetFld().GetFld()->GetTyp()->Which() )
+						pAttr->GetFmtFld().GetField()->GetTyp()->Which() )
 					bHiddenPara = sal_True;
 				}
 				break;
@@ -2425,21 +2425,21 @@ void SwTxtNode::FmtToTxtAttr( SwTxtNode* pNd )
 void SwpHints::CalcFlags()
 {
     m_bDDEFields = m_bFootnote = false;
-	const sal_uInt16 nSize = Count();
-	const SwTxtAttr* pAttr;
-	for( sal_uInt16 nPos = 0; nPos < nSize; ++nPos )
+    const sal_uInt16 nSize = Count();
+    const SwTxtAttr* pAttr;
+    for( sal_uInt16 nPos = 0; nPos < nSize; ++nPos )
     {
-		switch( ( pAttr = (*this)[ nPos ])->Which() )
-		{
-		case RES_TXTATR_FTN:
+        switch( ( pAttr = (*this)[ nPos ])->Which() )
+        {
+        case RES_TXTATR_FTN:
             m_bFootnote = true;
             if ( m_bDDEFields )
                 return;
-			break;
-		case RES_TXTATR_FIELD:
-			{
-				const SwField* pFld = pAttr->GetFld().GetFld();
-				if( RES_DDEFLD == pFld->GetTyp()->Which() )
+            break;
+        case RES_TXTATR_FIELD:
+            {
+                const SwField* pFld = pAttr->GetFmtFld().GetField();
+                if( RES_DDEFLD == pFld->GetTyp()->Which() )
                 {
                     m_bDDEFields = true;
                     if ( m_bFootnote )
@@ -2470,10 +2470,10 @@ bool SwpHints::CalcHiddenParaField()
 
 		if( RES_TXTATR_FIELD == nWhich )
 		{
-			const SwFmtFld& rFld = pTxtHt->GetFld();
-            if( RES_HIDDENPARAFLD == rFld.GetFld()->GetTyp()->Which() )
+			const SwFmtFld& rFld = pTxtHt->GetFmtFld();
+            if( RES_HIDDENPARAFLD == rFld.GetField()->GetTyp()->Which() )
 			{
-				if( !((SwHiddenParaField*)rFld.GetFld())->IsHidden() )
+				if( !((SwHiddenParaField*)rFld.GetField())->IsHidden() )
                 {
                     SetHiddenParaField(false);
                     return bOldHasHiddenParaField != bNewHasHiddenParaField;
@@ -2706,7 +2706,7 @@ bool SwpHints::TryInsertHint( SwTxtAttr* const pHint, SwTxtNode &rNode,
 			sal_Bool bDelFirst = 0 != ((SwTxtFld*)pHint)->GetpTxtNode();
 			((SwTxtFld*)pHint)->ChgTxtNode( &rNode );
 			SwDoc* pDoc = rNode.GetDoc();
-			const SwField* pFld = ((SwTxtFld*)pHint)->GetFld().GetFld();
+			const SwField* pFld = ((SwTxtFld*)pHint)->GetFmtFld().GetField();
 
 			if( !pDoc->IsNewFldLst() )
 			{
@@ -2734,51 +2734,50 @@ bool SwpHints::TryInsertHint( SwTxtAttr* const pHint, SwTxtNode &rNode,
 				}
 			}
 
-			// gehts ins normale Nodes-Array?
-			if( rNode.GetNodes().IsDocNodes() )
-			{
-				sal_Bool bInsFldType = sal_False;
-				switch( pFld->GetTyp()->Which() )
-				{
-				case RES_SETEXPFLD:
-					bInsFldType = ((SwSetExpFieldType*)pFld->GetTyp())->IsDeleted();
-					if( nsSwGetSetExpType::GSE_SEQ & ((SwSetExpFieldType*)pFld->GetTyp())->GetType() )
-					{
-						// bevor die ReferenzNummer gesetzt wird, sollte
-						// das Feld am richtigen FeldTypen haengen!
-						SwSetExpFieldType* pFldType = (SwSetExpFieldType*)
-									pDoc->InsertFldType( *pFld->GetTyp() );
-						if( pFldType != pFld->GetTyp() )
-						{
-							SwFmtFld* pFmtFld = (SwFmtFld*)&((SwTxtFld*)pHint)
-																->GetFld();
+            // gehts ins normale Nodes-Array?
+            if( rNode.GetNodes().IsDocNodes() )
+            {
+                sal_Bool bInsFldType = sal_False;
+                switch( pFld->GetTyp()->Which() )
+                {
+                case RES_SETEXPFLD:
+                    bInsFldType = ((SwSetExpFieldType*)pFld->GetTyp())->IsDeleted();
+                    if( nsSwGetSetExpType::GSE_SEQ & ((SwSetExpFieldType*)pFld->GetTyp())->GetType() )
+                    {
+                        // bevor die ReferenzNummer gesetzt wird, sollte
+                        // das Feld am richtigen FeldTypen haengen!
+                        SwSetExpFieldType* pFldType = (SwSetExpFieldType*)
+                                    pDoc->InsertFldType( *pFld->GetTyp() );
+                        if( pFldType != pFld->GetTyp() )
+                        {
+                            SwFmtFld* pFmtFld = (SwFmtFld*)&((SwTxtFld*)pHint)->GetFmtFld();
                             pFmtFld->RegisterToFieldType( *pFldType );
-							pFmtFld->GetFld()->ChgTyp( pFldType );
-						}
-						pFldType->SetSeqRefNo( *(SwSetExpField*)pFld );
-					}
-					break;
-				case RES_USERFLD:
-					bInsFldType = ((SwUserFieldType*)pFld->GetTyp())->IsDeleted();
-					break;
+                            pFmtFld->GetField()->ChgTyp( pFldType );
+                        }
+                        pFldType->SetSeqRefNo( *(SwSetExpField*)pFld );
+                    }
+                    break;
+                case RES_USERFLD:
+                    bInsFldType = ((SwUserFieldType*)pFld->GetTyp())->IsDeleted();
+                    break;
 
-				case RES_DDEFLD:
-					if( pDoc->IsNewFldLst() )
-						((SwDDEFieldType*)pFld->GetTyp())->IncRefCnt();
-					bInsFldType = ((SwDDEFieldType*)pFld->GetTyp())->IsDeleted();
-					break;
+                case RES_DDEFLD:
+                    if( pDoc->IsNewFldLst() )
+                        ((SwDDEFieldType*)pFld->GetTyp())->IncRefCnt();
+                    bInsFldType = ((SwDDEFieldType*)pFld->GetTyp())->IsDeleted();
+                    break;
 
-				case RES_POSTITFLD:
-					if ( pDoc->GetDocShell() )
-						pDoc->GetDocShell()->Broadcast( SwFmtFldHint( &((SwTxtFld*)pHint)->GetFld(), SWFMTFLD_INSERTED ) );
-					break;
-				}
-				if( bInsFldType )
-					pDoc->InsDeletedFldType( *pFld->GetTyp() );
-			}
-		}
-		break;
-	case RES_TXTATR_FTN :
+                case RES_POSTITFLD:
+                    if ( pDoc->GetDocShell() )
+                        pDoc->GetDocShell()->Broadcast( SwFmtFldHint( &((SwTxtFld*)pHint)->GetFmtFld(), SWFMTFLD_INSERTED ) );
+                    break;
+                }
+                if( bInsFldType )
+                    pDoc->InsDeletedFldType( *pFld->GetTyp() );
+            }
+        }
+        break;
+    case RES_TXTATR_FTN :
 		((SwTxtFtn*)pHint)->ChgTxtNode( &rNode );
 		break;
 	case RES_TXTATR_REFMARK:
@@ -2966,23 +2965,23 @@ bool SwpHints::TryInsertHint( SwTxtAttr* const pHint, SwTxtNode &rNode,
 void SwpHints::DeleteAtPos( const sal_uInt16 nPos )
 {
     SwTxtAttr *pHint = GetTextHint(nPos);
-	// ChainDelete( pHint );
+    // ChainDelete( pHint );
     NoteInHistory( pHint );
-	SwpHintsArray::DeleteAtPos( nPos );
+    SwpHintsArray::DeleteAtPos( nPos );
 
-	if( RES_TXTATR_FIELD == pHint->Which() )
-	{
-		SwFieldType* pFldTyp = ((SwTxtFld*)pHint)->GetFld().GetFld()->GetTyp();
-		if( RES_DDEFLD == pFldTyp->Which() )
-		{
-			const SwTxtNode* pNd = ((SwTxtFld*)pHint)->GetpTxtNode();
-			if( pNd && pNd->GetNodes().IsDocNodes() )
-				((SwDDEFieldType*)pFldTyp)->DecRefCnt();
-			((SwTxtFld*)pHint)->ChgTxtNode( 0 );
-		}
-		else if( RES_POSTITFLD == pFldTyp->Which() )
-		{
-			const_cast<SwFmtFld&>(((SwTxtFld*)pHint)->GetFld()).Broadcast( SwFmtFldHint( &((SwTxtFld*)pHint)->GetFld(), SWFMTFLD_REMOVED ) );
+    if( RES_TXTATR_FIELD == pHint->Which() )
+    {
+        const SwFieldType* pFldTyp = ((SwTxtFld*)pHint)->GetFmtFld().GetField()->GetTyp();
+        if( RES_DDEFLD == pFldTyp->Which() )
+        {
+            const SwTxtNode* pNd = ((SwTxtFld*)pHint)->GetpTxtNode();
+            if( pNd && pNd->GetNodes().IsDocNodes() )
+                ((SwDDEFieldType*)pFldTyp)->DecRefCnt();
+            ((SwTxtFld*)pHint)->ChgTxtNode( 0 );
+        }
+        else if( RES_POSTITFLD == pFldTyp->Which() )
+        {
+            const_cast<SwFmtFld&>(((SwTxtFld*)pHint)->GetFmtFld()).Broadcast( SwFmtFldHint( &((SwTxtFld*)pHint)->GetFmtFld(), SWFMTFLD_REMOVED ) );
         }
         else if ( m_bHasHiddenParaField &&
                  RES_HIDDENPARAFLD == pFldTyp->Which() )
@@ -2991,8 +2990,8 @@ void SwpHints::DeleteAtPos( const sal_uInt16 nPos )
         }
     }
 
-	CalcFlags();
-	CHECK;
+    CalcFlags();
+    CHECK;
 }
 
 // Ist der Hint schon bekannt, dann suche die Position und loesche ihn.
@@ -3125,7 +3124,7 @@ sal_Unicode GetCharOfTxtAttr( const SwTxtAttr& rAttr )
 
             // #i78149: PostIt fields should not break words for spell and grammar checking
             if (rAttr.Which() == RES_TXTATR_FIELD && 
-                RES_POSTITFLD == rAttr.GetFld().GetFld()->GetTyp()->Which())
+                RES_POSTITFLD == rAttr.GetFmtFld().GetField()->GetTyp()->Which())
                 cRet = CH_TXTATR_INWORD;
         }
         break;

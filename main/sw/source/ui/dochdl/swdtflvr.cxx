@@ -87,6 +87,7 @@
 #include <IDocumentUndoRedo.hxx>
 #include <pagedesc.hxx>
 #include <IMark.hxx>
+#include <bookmrk.hxx>
 #include <docary.hxx>
 #include <section.hxx>
 #include <ndtxt.hxx>
@@ -3771,12 +3772,6 @@ sal_Bool SwTrnsfrDdeLink::WriteData( SvStream& rStrm )
     rStrm.Write( pMem, nLen );
     delete[] pMem;
 
-    //if( bDelBookmrk )
-    //{
-    //  // er wird das erstemal abgeholt, also ins Undo mitaufnehmen
-    //  // aber wie??
-    //}
-
     IDocumentMarkAccess* const pMarkAccess = pDocShell->GetDoc()->getIDocumentMarkAccess();
     IDocumentMarkAccess::const_iterator_t ppMark = pMarkAccess->findMark(sName);
     if(ppMark != pMarkAccess->getMarksEnd()
@@ -3818,17 +3813,17 @@ sal_Bool SwTrnsfrDdeLink::WriteData( SvStream& rStrm )
 
 void SwTrnsfrDdeLink::Disconnect( sal_Bool bRemoveDataAdvise )
 {
-	//JP 29.01.96 Bug 24432:
-	//		kein DataChanged mehr entgegen nehmen, wenn man
-	//		sich schon im Disconnet befindet!
-	// 		(DTOR vom Bookmark verschickt einen DataChanged!)
-	sal_Bool bOldDisconnect = bInDisconnect;
-	bInDisconnect = sal_True;
+    //JP 29.01.96 Bug 24432:
+    //		kein DataChanged mehr entgegen nehmen, wenn man
+    //		sich schon im Disconnet befindet!
+    // 		(DTOR vom Bookmark verschickt einen DataChanged!)
+    const sal_Bool bOldDisconnect = bInDisconnect;
+    bInDisconnect = sal_True;
 
-	// den nicht verwendeten Bookmark wieder zerstoeren (ohne Undo!)?
-	if( bDelBookmrk && refObj.Is() && FindDocShell() )
-	{
-		SwDoc* pDoc = pDocShell->GetDoc();
+    // den nicht verwendeten Bookmark wieder zerstoeren (ohne Undo!)?
+    if( bDelBookmrk && refObj.Is() && FindDocShell() )
+    {
+        SwDoc* pDoc = pDocShell->GetDoc();
         ::sw::UndoGuard const undoGuard(pDoc->GetIDocumentUndoRedo());
 
         // --> OD, CD, OS 2005-11-25 #i58448#
@@ -3838,30 +3833,37 @@ void SwTrnsfrDdeLink::Disconnect( sal_Bool bRemoveDataAdvise )
         sal_Bool bIsModified = pDoc->IsModified();
 
         IDocumentMarkAccess* const pMarkAccess = pDoc->getIDocumentMarkAccess();
-        pMarkAccess->deleteMark(pMarkAccess->findMark(sName));
+        // check, if DdeBookmark is already in its desctruction
+        IDocumentMarkAccess::const_iterator_t ppMark = pMarkAccess->findMark(sName);
+        if ( ppMark != pMarkAccess->getMarksEnd() )
+        {
+            ::sw::mark::DdeBookmark* const pDdeBookmark = dynamic_cast< ::sw::mark::DdeBookmark* >(ppMark->get());
+            if ( pDdeBookmark && !pDdeBookmark->IsInDestruction() )
+            {
+                pMarkAccess->deleteMark(ppMark);
+            }
+        }
 
-		if( !bIsModified )
-			pDoc->ResetModified();
-        // --> OD, CD, OS 2005-11-25 #i58448#
+        if( !bIsModified )
+            pDoc->ResetModified();
         pDoc->SetOle2Link( aSavedOle2Link );
-        // <--
 
-		bDelBookmrk = sal_False;
-	}
+        bDelBookmrk = sal_False;
+    }
 
-	if( refObj.Is() )
-	{
-		refObj->SetUpdateTimeout( nOldTimeOut );
-		refObj->RemoveConnectAdvise( this );
-		if( bRemoveDataAdvise )
-			// in einem DataChanged darf das SelectionObject NIE geloescht
-			// werden; wird schon von der Basisklasse erledigt
-			// (ADVISEMODE_ONLYONCE!!!!)
-			// Im normalen Disconnet aber schon!
-			refObj->RemoveAllDataAdvise( this );
-		refObj.Clear();
-	}
-	bInDisconnect = bOldDisconnect;
+    if( refObj.Is() )
+    {
+        refObj->SetUpdateTimeout( nOldTimeOut );
+        refObj->RemoveConnectAdvise( this );
+        if( bRemoveDataAdvise )
+            // in einem DataChanged darf das SelectionObject NIE geloescht
+            // werden; wird schon von der Basisklasse erledigt
+            // (ADVISEMODE_ONLYONCE!!!!)
+            // Im normalen Disconnet aber schon!
+            refObj->RemoveAllDataAdvise( this );
+        refObj.Clear();
+    }
+    bInDisconnect = bOldDisconnect;
 }
 
 // -----------------------------------------------------------------------
