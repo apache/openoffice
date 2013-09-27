@@ -269,7 +269,7 @@ void VCLXAccessibleBox::ProcessWindowEvent (const VclWindowEvent& rVclWindowEven
 		// MT: Not sending VCLEVENT_LISTBOX_STATEUPDATE, see comment in ListBox::SelectEntryPos
 		case VCLEVENT_LISTBOX_STATEUPDATE:
 		{
-			// Need to update the INDETERMINATE state sometimes, Sym2_1986
+			// Need to update the INDETERMINATE state sometimes
 			if (m_bIsDropDownBox && m_aBoxType==LISTBOX)
 			{
 				sal_Int32 nSelectedEntryCount = 0;

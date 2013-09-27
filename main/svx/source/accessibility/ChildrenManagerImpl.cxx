@@ -1056,7 +1056,7 @@ void ChildrenManagerImpl::UpdateSelection (void)
     */
 	Window *pParentWidow = maShapeTreeInfo.GetWindow();
 	bool bShapeActive= false;
-	// Sym2_6146, For table cell, the table's parent must be checked to make sure it has focus. 
+	// For table cell, the table's parent must be checked to make sure it has focus. 
 	Window *pPWindow = pParentWidow->GetParent();
 	if (pParentWidow && ( pParentWidow->HasFocus() || (pPWindow && pPWindow->HasFocus())))
 	{

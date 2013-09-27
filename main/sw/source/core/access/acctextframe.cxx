@@ -189,7 +189,6 @@ void SAL_CALL
     SwAccessibleContext::release ();
 }
 
-// added by qiuhd,
 //
 //=====  XAccessibleSelection  ============================================
 //

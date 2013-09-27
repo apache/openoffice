@@ -480,7 +480,7 @@ private:
 	sal_Bool			bInSelection;
 	sal_Bool			bIsInUndo;
 	sal_Bool			bUpdate;
-	//Sym2_5587, IAccessible2 migration fix
+	// IAccessible2 migration fix
 	sal_Bool			bUpdateForAcc;
 	sal_Bool			bUndoEnabled;
 	sal_Bool			bOwnerOfRefDev;

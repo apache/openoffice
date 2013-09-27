@@ -326,9 +326,6 @@ public:
     SAL_DLLPRIVATE void TakeFrameOwnerShip_Impl();
     SAL_DLLPRIVATE sal_Bool ExecKey_Impl(const KeyEvent& aKey);
 #endif
-	// IAccessibility2 implementation 2009. ------
-	virtual sal_Bool IsEditorEnableAutoSpell() const { return sal_False; } 
-	// ------ IAccessibility2 implementation 2009.
 };
 
 //========================================================================

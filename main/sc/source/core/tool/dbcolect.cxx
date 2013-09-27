@@ -948,20 +948,20 @@ ScDBData* ScDBCollection::GetDBAtTable(SCTAB nTab, ScGetDBMode eMode) const
         for (unsigned short i = 0; i < nCount; i++)
         {
             ScDBData* pDBTemp = (ScDBData*)pItems[i];
-            if ( pDBTemp->nTable == nTab )						//Sym2_7885 mod
+            if ( pDBTemp->nTable == nTab )
             {
                 sal_Bool bImport = pDBTemp->HasImportParam();
                 sal_Bool bFilter = pDBTemp->HasAutoFilter() || pDBTemp->HasQueryParam();
                 sal_Bool bSort = pDBTemp->HasSortParam();
                 sal_Bool bSubtotal = pDBTemp->HasSubTotalParam();
                 sal_Bool bAnyParam = bImport || bFilter || bSort || bSubtotal;
-                if ( ((eMode == SC_DB_MAKE_SORT)    && bSort && !bFilter) ||      //Sym2_7334 mod 20100420
+                if ( ((eMode == SC_DB_MAKE_SORT)    && bSort && !bFilter) ||
                     ((eMode == SC_DB_MAKE_SUBTOTAL) && bSubtotal && !bFilter ) ||
                     ((eMode == SC_DB_MAKE_FILTER || eMode == SC_DB_OLD_FILTER) && bFilter ) )
                 {
                     return pDBTemp;
                 }
-                else if ( pDBTemp->IsBuildin() && !bAnyParam )	//Sym2_7885 mod
+                else if ( pDBTemp->IsBuildin() && !bAnyParam )
                 {
                     pDataEmpty = pDBTemp;
                 }

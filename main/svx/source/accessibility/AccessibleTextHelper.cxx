@@ -76,10 +76,10 @@
 #include "editeng/AccessibleEditableTextPara.hxx"
 #include <svx/svdmodel.hxx>
 #include <svx/svdpntv.hxx>
-// SD table ACC----, added by Steve Yin
+//IAccessibility2 Implementation 2009-----
 #include "../table/cell.hxx"
 #include "../table/accessiblecell.hxx"
-// ----SD table ACC
+//-----IAccessibility2 Implementation 2009
 #include <editeng/editdata.hxx>
 #include <editeng/editeng.hxx>
 #include <editeng/editview.hxx>
@@ -512,20 +512,20 @@ namespace accessibility
         {
             if( bHaveFocus )
             {
-				// SD table ACC----, added by Steve Yin
+				//IAccessibility2 Implementation 2009-----
 				if( mxFrontEnd.is() )
 				{
 					AccessibleCell* pAccessibleCell = dynamic_cast< AccessibleCell* > ( mxFrontEnd.get() );
 					if ( !pAccessibleCell )
 						GotPropertyEvent( uno::makeAny(AccessibleStateType::FOCUSED), AccessibleEventId::STATE_CHANGED );
-					else	// Sym2_6108, the focus event on cell should be fired on table directly
+					else	// the focus event on cell should be fired on table directly
 					{
 						AccessibleTableShape* pAccTable = pAccessibleCell->GetParentTable();
 						if (pAccTable)
 							pAccTable->SetStateDirectly(AccessibleStateType::FOCUSED);
 					}
 				}
-				// ----SD table ACC
+				//-----IAccessibility2 Implementation 2009
                 DBG_TRACE("AccessibleTextHelper_Impl::SetShapeFocus(): Parent object received focus" );
             }
             else
@@ -597,7 +597,7 @@ namespace accessibility
             if( !pViewForwarder )
                 return sal_False;
 
-			// SD table ACC----, added by Steve Yin
+			//IAccessibility2 Implementation 2009-----
 			if( mxFrontEnd.is() )
 			{
 				AccessibleCell* pAccessibleCell = dynamic_cast< AccessibleCell* > ( mxFrontEnd.get() );
@@ -608,7 +608,7 @@ namespace accessibility
 						return xCell->IsTextEditActive();
 				}
 			}
-			// ----SD table ACC
+			//-----IAccessibility2 Implementation 2009
             if( pViewForwarder->IsValid() )
                 return sal_True;
             else

@@ -72,7 +72,6 @@ public:
 
 	// The object is not visible an longer and should be destroyed
 	virtual void Dispose( sal_Bool bRecursive = sal_False );
-	//Added by yangzhh for SODC_3622, 2006/06/14
 	virtual sal_Bool SetSelectedState( sal_Bool bSeleted );
 	//-----IAccessibility2 Implementation 2009
 };

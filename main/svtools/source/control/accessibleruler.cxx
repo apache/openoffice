@@ -29,11 +29,10 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svtools.hxx"
 
-//add by duan mei hua, 2006/09/04, for issue 174
 #ifndef _SVTRULERACCESSIBLE_HXX
 #include <svtools/accessibleruler.hxx>
 #endif
-//end add by duan mei hua, 2006/09/04, for issue 174
+
 #ifndef _COM_SUN_STAR_ACCESSIBILITY_ACCESSIBLEROLE_HPP_
 #include <com/sun/star/accessibility/AccessibleRole.hpp>
 #endif
@@ -503,10 +502,9 @@ Rectangle SvtRulerAccessible::GetBoundingBoxOnScreen( void ) throw( RuntimeExcep
 
 	ThrowExceptionIfNotAlive();
 //IAccessibility2 Implementation 2009-----
-	//Modified by Li Xing, 2007/03/26, SODC_7333, the absolute on screen pixel is wrong
+	//the absolute on screen pixel is wrong
 	//return Rectangle( mpRepr->GetParent()->OutputToScreenPixel( mpRepr->GetPosPixel() ), mpRepr->GetSizePixel() );
 	return Rectangle( mpRepr->GetParent()->OutputToAbsoluteScreenPixel( mpRepr->GetPosPixel() ), mpRepr->GetSizePixel() );
-	//Ended by Li Xing, 2007/03/26, SODC_7333.
 //-----IAccessibility2 Implementation 2009
 }
 

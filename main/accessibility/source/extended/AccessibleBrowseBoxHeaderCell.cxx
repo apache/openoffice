@@ -65,7 +65,7 @@ AccessibleBrowseBoxHeaderCell::AccessibleBrowseBoxHeaderCell(sal_Int32 _nColumnR
 		// SHOWING done with mxParent
 		if( implIsShowing() )
 			pStateSetHelper->AddState( AccessibleStateType::SHOWING );
-		mpBrowseBox->FillAccessibleStateSet( *pStateSetHelper, getType() ); //Added by yangzhh for SODC_2056
+		mpBrowseBox->FillAccessibleStateSet( *pStateSetHelper, getType() );
 		BBSolarGuard aSolarGuard;
 		pStateSetHelper->AddState( AccessibleStateType::VISIBLE );
 		pStateSetHelper->AddState( AccessibleStateType::FOCUSABLE );

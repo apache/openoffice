@@ -1625,7 +1625,7 @@ vos::OGuard aGuard(Application::GetSolarMutex());
 
 	// already get the caret postion
 
-	// Sym2_5073----, modified by Steve Yin
+	//IAccessibility2 Implementation 2009-----
 	/*SwFrm* pTFrm = const_cast<SwFrm*>(GetFrm());
 	com::sun::star::uno::Sequence< ::com::sun::star::style::TabStop > tabs = 
 		pTFrm->GetTabStopInfo(aCoreRect.Left());*/
@@ -1637,7 +1637,7 @@ vos::OGuard aGuard(Application::GetSolarMutex());
 		SwFrm* pTFrm = const_cast<SwFrm*>(GetFrm());
 		tabs = pTFrm->GetTabStopInfo(aCoreRect.Left());
 	}
-	// ----Sym2_5073
+	//-----IAccessibility2 Implementation 2009
 
 	if( tabs.hasElements() )
 	{
@@ -3458,7 +3458,6 @@ sal_Int32 SAL_CALL SwAccessibleParagraph::getHyperLinkCount()
 	}
 
 	//IAccessibility2 Implementation 2009-----
-	// Added by qiuhd, 2007/02/28, for SODC_6986
 	/* Can't fin the function "GetTOCFirstWordEndIndex" declaration in sym2.0 (Added by yanjun)
 	if( GetTOXSortTabBase()  )
 	{
@@ -3467,7 +3466,6 @@ sal_Int32 SAL_CALL SwAccessibleParagraph::getHyperLinkCount()
 			nCount++; 
 	}
 	*/
-	// End by qiuhd, 2007/02/28, for SODC_6986
 	//-----IAccessibility2 Implementation 2009
 	return nCount;
 }
@@ -3489,7 +3487,6 @@ uno::Reference< XAccessibleHyperlink > SAL_CALL
 	sal_Int32 nARCount = 0;
 	sal_Int32 nARIndex = 0;
 	sal_Int32 nTIndex = -1;
-	// Added by qiuhd, 2007/02/28, for SODC_6986
 	sal_Int32 nTOCEndIndex = -1;
 	SwTxtNode* pNode = NULL;
 	SwTOXSortTabBase* pTBase = GetTOXSortTabBase();
@@ -3500,15 +3497,12 @@ uno::Reference< XAccessibleHyperlink > SAL_CALL
 	nTOCEndIndex = -1;
 	//if(pNode)
 	//	nTOCEndIndex = pNode->GetTOCFirstWordEndIndex();
-	// End by qiuhd, 2007/02/28, for SODC_6986
 	SwTxtAttr* pHt = (SwTxtAttr*)(aHIter.next());
 	while( (nLinkIndex < getHyperLinkCount()) && nTIndex < nLinkIndex)
 	{
 		// no candidates, exit
-		// modified by qiuhd, 2007/02/28, for SODC_6986
 		//if( (!pHt) && (nARIndex >= nARCount) && nTOCEndIndex <= 0)
 		//	break;
-		// end by qiuhd, 2007/02/28, for SODC_6986
 
 		sal_Int32 nHStt = -1;
 		sal_Int32 nAStt = -1;
@@ -3525,15 +3519,13 @@ uno::Reference< XAccessibleHyperlink > SAL_CALL
 			aARHelper.getPosition( nARIndex, nAStt, nAEnd );
 			*/
 		}
-		// Added by qiuhd, 2007/02/28, for SODC_6986
 		sal_Bool bTOC = sal_False;		
 		// Inside TOC & get the first link
 		if( pTBase && nTIndex == -1 )
 		{
 			nTIndex++;
 			bTOC = sal_True;
-		}		
-		// End by qiuhd, 2007/02/28, for SODC_6986
+		}
 		else
 		{		
 			if( nHStt >=0 && nAStt >=0 )
@@ -3562,8 +3554,6 @@ uno::Reference< XAccessibleHyperlink > SAL_CALL
 			{	// it's a hyperlink
 				if( pHt )
 				{
-
-					// Added by Zijie Jia ,9/8/2006 , CR_ID:SODC_5061
 //                    const SwField* pFFld = pHt->GetFld().GetFld();
                     {
 						if( !pHyperTextData )
@@ -3597,12 +3587,10 @@ uno::Reference< XAccessibleHyperlink > SAL_CALL
 					}
 				}
 			}
-			// Added by qiuhd, 2007/02/28, for SODC_6986
 			else if( bTOC )
 			{
 				//xRet = new SwAccessibleTOCLink( this );
 			}
-			// End by qiuhd, 2007/02/28, for SODC_6986
 			else if( bA )
 			{
 				/*
@@ -3727,7 +3715,6 @@ sal_Int32 SAL_CALL SwAccessibleParagraph::getHyperLinkIndex( sal_Int32 nCharInde
 			nRet = nPos;
 	}
 	//IAccessibility2 Implementation 2009-----
-	// Added by qiuhd, 2007/02/28, for SODC_6986
 	/* Added by yanjun for acc miagration
 	if( nRet == -1 && GetTOXSortTabBase() )
 	{
@@ -3736,7 +3723,6 @@ sal_Int32 SAL_CALL SwAccessibleParagraph::getHyperLinkIndex( sal_Int32 nCharInde
 			nRet = 0;
 	}
 	*/
-	// End by qiuhd, 2007/02/28, for SODC_6986
 
 	if (nRet == -1)
 		throw lang::IndexOutOfBoundsException();

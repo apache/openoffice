@@ -213,10 +213,8 @@ void SwAccessibleTableData_Impl::CollectRowHeaderData( const SwFrm *pFrm )
 					pLine = pLine->GetUpper()->GetUpper();
 
 				// Headerline?
-				//begin of comment wangguoyang for errata table header SODC_6033 11/27/2006
 				//if(mpTabFrm->GetTable()->GetTabLines()[ 0 ] != pLine)
 				//return ;
-				//end of comment wangguoyang for errata table header SODC_6033 11/27/2006
 
 				maRows.insert( pLower->Frm().Top() - maTabFrmPos.Y() );
 		
@@ -1185,7 +1183,7 @@ uno::Reference< XAccessibleTable > SAL_CALL
 		{
 			//for errata table header
 			SwAccessibleTableData_Impl *mpHeadTableData = new SwAccessibleTableData_Impl( pTabFrm, sal_False, sal_True);
-			//end modified by duan mei hua, 2006/10/25, for errata table header
+			//for errata table header
 			SwAccessibleTable *pHeadAccessibleTable = new SwAccessibleTable(GetMap(),pTabFrm);
 			pHeadAccessibleTable->SetTableData(mpHeadTableData);
 			xRet = pHeadAccessibleTable;

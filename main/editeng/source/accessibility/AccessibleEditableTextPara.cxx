@@ -77,13 +77,14 @@
 
 #include <svtools/colorcfg.hxx>
 //IAccessibility2 Implementation 2009-----
-#ifndef _ACCESSIBLEHYPERLINK_HXX
-#include <Accessiblehyperlink.hxx>
-#endif
 #include <algorithm>
 using namespace std;
-//-----IAccessibility2 Implementation 2009
+#include "editeng.hrc"
+#include <editeng/eerdll.hxx>
 #include <editeng/numitem.hxx>
+#include <sfx2/viewfrm.hxx>
+#include <sfx2/viewsh.hxx>
+//-----IAccessibility2 Implementation 2009
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::beans;
@@ -99,8 +100,6 @@ using namespace ::com::sun::star::accessibility;
 namespace accessibility
 {
 //IAccessibility2 Implementation 2009-----
-	//Window* GetCurrentEditorWnd();
-//-----IAccessibility2 Implementation 2009
 
     const SvxItemPropertySet* ImplGetSvxCharAndParaPropertiesSet()
     {
@@ -942,19 +941,67 @@ namespace accessibility
     ::rtl::OUString SAL_CALL AccessibleEditableTextPara::getAccessibleDescription() throw (uno::RuntimeException)
     {
         DBG_CHKTHIS( AccessibleEditableTextPara, NULL );
+	//IAccessibility2 Implementation 2009-----
+        ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
-//        ::vos::OGuard aGuard( Application::GetSolarMutex() );
+        // append first 40 characters from text, or first line, if shorter
+        // (writer takes first sentence here, but that's not supported
+        // from EditEngine)
+        // throws if defunc
+        ::rtl::OUString aLine;
 
-        return ::rtl::OUString();
+        if( getCharacterCount() )
+            aLine = getTextAtIndex(0, AccessibleTextType::LINE).SegmentText;
+
+        // Get the string from the resource for the specified id.
+        String sStr = ::rtl::OUString( String( EditResId (RID_SVXSTR_A11Y_PARAGRAPH_DESCRIPTION ) ) );
+        String sParaIndex = ::rtl::OUString::valueOf( GetParagraphIndex() );
+		sStr.SearchAndReplace( String::CreateFromAscii( RTL_CONSTASCII_STRINGPARAM( "$(ARG)" )),
+                               sParaIndex );
+
+        if( aLine.getLength() > MaxDescriptionLen )
+        {
+            ::rtl::OUString aCurrWord;
+            sal_Int32 i;
+
+            // search backward from MaxDescriptionLen for previous word start
+            for( aCurrWord=getTextAtIndex(MaxDescriptionLen, AccessibleTextType::WORD).SegmentText,
+                     i=MaxDescriptionLen,
+                     aLine=::rtl::OUString();
+                 i>=0;
+                 --i )
+            {
+                if( getTextAtIndex(i, AccessibleTextType::WORD).SegmentText != aCurrWord )
+                {
+                    if( i == 0 )
+                        // prevent completely empty string
+                        aLine = getTextAtIndex(0, AccessibleTextType::WORD).SegmentText;
+                    else
+                        aLine = getTextRange(0, i);
+                }
+            }
+        }
+
+        return ::rtl::OUString( sStr ) + aLine;
+	//-----IAccessibility2 Implementation 2009
     }
 
     ::rtl::OUString SAL_CALL AccessibleEditableTextPara::getAccessibleName() throw (uno::RuntimeException)
     {
         DBG_CHKTHIS( AccessibleEditableTextPara, NULL );
 
-//        ::vos::OGuard aGuard( Application::GetSolarMutex() );
+        ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
-        return ::rtl::OUString();
+        // throws if defunc
+        sal_Int32 nPara( GetParagraphIndex() );
+
+        // Get the string from the resource for the specified id.
+        String sStr = ::rtl::OUString( String( EditResId (RID_SVXSTR_A11Y_PARAGRAPH_NAME) ) );
+        String sParaIndex = ::rtl::OUString::valueOf( nPara );
+		sStr.SearchAndReplace( String::CreateFromAscii( RTL_CONSTASCII_STRINGPARAM( "$(ARG)" )),
+                               sParaIndex );
+
+        return ::rtl::OUString( sStr );
     }
 
     uno::Reference< XAccessibleRelationSet > SAL_CALL AccessibleEditableTextPara::getAccessibleRelationSet() throw (uno::RuntimeException)
@@ -1383,14 +1430,14 @@ namespace accessibility
 		case SVX_PAGEFIELD:
 			strFldType = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("page-number"));
 			break;
-		//Sym2_8508, support the sheet name & pages fields
+		//support the sheet name & pages fields
 		case SVX_PAGESFIELD:
 				strFldType = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("page-count"));
 			break;
 		case SVX_TABLEFIELD:
 				strFldType = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("sheet-name"));
 			break;
-		//End of Sym2_8508
+		//End
 		case SVX_TIMEFIELD:
 			strFldType = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("time"));
 			break;
@@ -1435,7 +1482,6 @@ namespace accessibility
 		if (nIndex != 0)
 			CheckIndex(nIndex);	// may throw IndexOutOfBoundsException
 
-		// refactored by Steve Yin
 		bool bSupplementalMode = false;
 		uno::Sequence< ::rtl::OUString > aPropertyNames = rRequestedAttributes;
 		if (aPropertyNames.getLength() == 0)
@@ -1986,8 +2032,7 @@ namespace accessibility
 				bExtend = sal_True;
 			}
 			if( bExtend )
-			{
-				//Modified by yanjun for sym2_7393
+			{				
 				//If there is a bullet before the field, should add the bullet length into the segment.
 				EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo(sal_uInt16(nParaIndex));
 				int nBulletLen = aBulletInfo.aText.Len();
@@ -2003,8 +2048,7 @@ namespace accessibility
 						Segment.SegmentStart -= nBulletLen;
 				}
 				else
-					Segment.SegmentText = GetTextRange(Segment.SegmentStart, Segment.SegmentEnd);
-				//End
+					Segment.SegmentText = GetTextRange(Segment.SegmentStart, Segment.SegmentEnd);				
 			}
 		}
 		return bExtend;

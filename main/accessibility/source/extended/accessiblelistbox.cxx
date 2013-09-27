@@ -429,7 +429,6 @@ namespace accessibility
 		if ( pEntry )
 		{
 			if( pEntry->HasChildsOnDemand() || getListBox()->GetChildCount(pEntry) > 0  )
-			//end add by duan mei hua, 2007/01/27, for sodc_6862
 			{
 				nCase = 1;
 				return nCase;

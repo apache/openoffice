@@ -1047,7 +1047,6 @@ Document::retrieveCharacterAttributes(
 	{
 		aAttribs[i].Name = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("CharColor"));
 		aAttribs[i].Handle = -1;
-		// Sym2_6109, 
 		//aAttribs[i].Value = mapFontColor( aFont.GetColor() );
 		aAttribs[i].Value = mapFontColor( m_rEngine.GetTextColor() );
 		aAttribs[i].State = ::css::beans::PropertyState_DIRECT_VALUE;
@@ -1154,7 +1153,7 @@ Document::retrieveCharacterAttributes(
 
     ::css::uno::Sequence< ::css::beans::PropertyValue > aRes = convertHashMapToSequence( aCharAttrSeq );
 
-	// Sym2_6109, sort the attributes
+	// sort the attributes
 	sal_Int32 nLength = aRes.getLength();
 	const ::css::beans::PropertyValue* pPairs = aRes.getConstArray();
 	sal_Int32* pIndices = new sal_Int32[nLength];

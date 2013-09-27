@@ -2096,7 +2096,6 @@ sal_Bool InitAccessBridge( sal_Bool bShowCancel, sal_Bool &rCancelled )
 #ifdef WNT
 sal_Bool HasAtHook()
 {
-	// Added by Steve Yin
 	sal_Int32 bIsRuning=0;
 	// BOOL WINAPI SystemParametersInfo(
 	//	  __in     UINT uiAction,

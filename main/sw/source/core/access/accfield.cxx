@@ -55,7 +55,6 @@
 #include <accfield.hxx>
 #endif
 
-//Add by qinsh && Li Xing, fix bug SODC_3508,2006/6/22
 #include <comphelper/processfactory.hxx>
 
 #ifndef _COM_SUN_STAR_FRAME_XDESKTOP_HPP_

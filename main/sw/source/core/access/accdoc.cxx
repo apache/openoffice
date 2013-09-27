@@ -894,10 +894,10 @@ uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes()
 sal_Int32 SAL_CALL SwAccessibleDocument::getBackground() 
 		throw (::com::sun::star::uno::RuntimeException)
 {
-	// Sym2_3241----, added by Steve Yin
+	//IAccessibility2 Implementation 2009-----
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	return SW_MOD()->GetColorConfig().GetColorValue( ::svtools::DOCCOLOR ).nColor;
-	// ----Sym2_3241
+	//-----IAccessibility2 Implementation 2009
 }
 
 ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >

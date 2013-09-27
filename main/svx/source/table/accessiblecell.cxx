@@ -251,7 +251,7 @@ Reference<XAccessibleStateSet> SAL_CALL AccessibleCell::getAccessibleStateSet (v
 				pStateSet->AddState(AccessibleStateType::VISIBLE);
 
 
-			//Sym2_6167, IAccessibility2 Implementation 2009-----
+			//IAccessibility2 Implementation 2009-----
 			//Solution:Just when the parent table is not read-only,set states EDITABLE,RESIZABLE,MOVEABLE
 		    ::com::sun::star::uno::Reference<XAccessible> xTempAcc = getAccessibleParent();
 		    if( xTempAcc.is() )
@@ -602,7 +602,7 @@ sal_Int32 SAL_CALL AccessibleCell::getAccessibleIndexInParent (void) throw (Runt
     return mnIndexInParent;
 }
 
-// SD table ACC----, added by Steve Yin
+//IAccessibility2 Implementation 2009-----
 sdr::table::CellRef AccessibleCell::getCellRef()
 {
 	return mxCell;
@@ -666,7 +666,7 @@ void AccessibleCell::UpdateChildren()
 	if (mpText)						
 		mpText->UpdateChildren();
 }
-// ----SD table ACC
+//-----IAccessibility2 Implementation 2009
 
 /* MT: Above getAccessibleName was introduced with IA2 CWS, while below was introduce in 3.3 meanwhile. Check which one is correct
 If this is correct, we also don't need 	sdr::table::CellRef getCellRef(), UpdateChildren(), getCellName( sal_Int32 nCol, sal_Int32 nRow ) above

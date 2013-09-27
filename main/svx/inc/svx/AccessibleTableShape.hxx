@@ -36,10 +36,8 @@
 #include <svx/AccessibleShape.hxx>
 //IAccessibility2 Implementation 2009-----
 #include <com/sun/star/view/XSelectionChangeListener.hpp>
-// SD table ACC----, added by Steve Yin
 #include <com/sun/star/accessibility/XAccessibleTableSelection.hpp>
 #include <cppuhelper/compbase5.hxx>
-// ----SD table ACC
 //-----IAccessibility2 Implementation 2009
 
 #include <boost/noncopyable.hpp>
@@ -117,7 +115,7 @@ public:
     virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  ) throw ( ::com::sun::star::uno::RuntimeException );
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex ) throw ( ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
     virtual void SAL_CALL deselectAccessibleChild( sal_Int32 nChildIndex )  throw ( ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException );
-	// SD table ACC----, added by Steve Yin
+	//IAccessibility2 Implementation 2009-----
 	//=====  XAccessibleTableSelection ============================================
 	virtual sal_Bool SAL_CALL selectRow( sal_Int32 row ) 
 		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) ;
@@ -127,7 +125,7 @@ public:
 		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) ;
 	virtual sal_Bool SAL_CALL unselectColumn( sal_Int32 column ) 
 		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) ;
-	// ----SD table ACC
+	//-----IAccessibility2 Implementation 2009
 
 	// XServiceInfo
 	virtual ::rtl::OUString SAL_CALL getImplementationName( ) throw(::com::sun::star::uno::RuntimeException);
@@ -144,11 +142,11 @@ public:
         throw (::com::sun::star::uno::RuntimeException);
 	sal_Int32 mnPreviousSelectionCount;
 	using AccessibleShape::disposing;
-	// SD table ACC----, added by Steve Yin
+	//IAccessibility2 Implementation 2009-----
 	friend class AccessibleTableHeaderShape;
-	// Sym2_6134
+	
 	void getColumnAndRow( sal_Int32 nChildIndex, sal_Int32& rnColumn, sal_Int32& rnRow ) throw (::com::sun::star::lang::IndexOutOfBoundsException );
-	//Sym2_6108, overwrite the SetState & ResetState to do special operation for table cell's internal text
+	// overwrite the SetState & ResetState to do special operation for table cell's internal text
 	virtual sal_Bool SetState (sal_Int16 aState);
 	virtual sal_Bool ResetState (sal_Int16 aState);
 	// The following two methods are used to set state directly on table object, instread of the internal cell or paragraph. 
@@ -156,7 +154,7 @@ public:
 	sal_Bool ResetStateDirectly (sal_Int16 aState);
 	// Get the currently active cell which is text editing
 	AccessibleCell* GetActiveAccessibleCell();
-	// ----SD table ACC
+	//-----IAccessibility2 Implementation 2009
 
 protected:
 	virtual ::rtl::OUString CreateAccessibleBaseName(void) throw (::com::sun::star::uno::RuntimeException);
@@ -164,17 +162,17 @@ protected:
 	sdr::table::SvxTableController* getTableController();
 
 	void checkCellPosition( sal_Int32 nCol, sal_Int32 nRow ) throw ( ::com::sun::star::lang::IndexOutOfBoundsException );
-	// Sym2_6134, move to public
+	//IAccessibility2 Implementation 2009, move to public
 	//void getColumnAndRow( sal_Int32 nChildIndex, sal_Int32& rnColumn, sal_Int32& rnRow ) throw (::com::sun::star::lang::IndexOutOfBoundsException );
 
 private:
 	rtl::Reference< AccessibleTableShapeImpl > mxImpl;
-	// SD table ACC----, added by Steve Yin
+	//IAccessibility2 Implementation 2009-----
 	sal_Int32 GetIndexOfSelectedChild( sal_Int32 nSelectedChildIndex ) const;
-	// ----SD table ACC
+	//-----IAccessibility2 Implementation 2009
 };
 
-// SD table ACC----, added by Steve Yin
+//IAccessibility2 Implementation 2009-----
 typedef ::cppu::WeakImplHelper5<
 			::com::sun::star::accessibility::XAccessible,
 			::com::sun::star::accessibility::XAccessibleComponent,
@@ -254,7 +252,7 @@ private:
 	sal_Bool mbRow;
 	rtl::Reference< AccessibleTableShape > mpTable;
 };
-// ----SD table ACC
+//-----IAccessibility2 Implementation 2009
 
 } // end of namespace accessibility
 
